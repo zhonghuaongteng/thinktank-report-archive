@@ -98,6 +98,29 @@ class GenericParserTests(unittest.TestCase):
         self.assertEqual(detail.authors, ["Ada Chen"])
         self.assertEqual(detail.summary, "A governance note.")
 
+    def test_parse_generic_detail_strips_matching_site_title_suffix(self):
+        html = """
+        <html><head>
+          <meta property="og:title" content="Measuring AI R&amp;D Automation | GovAI">
+        </head><body><main><p>AI R&D automation and governance.</p></main></body></html>
+        """
+        institution = Institution(
+            slug="govai",
+            name="Institute for AI Policy and Strategy",
+            chinese_name="AI治理研究所",
+            country_region="International",
+            institution_type="think_tank",
+            priority="P0",
+            batch=2,
+            homepage="https://www.governance.ai/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(html, "https://www.governance.ai/research-paper/measuring-ai-r-d-automation", institution)
+
+        self.assertEqual(detail.title, "Measuring AI R&D Automation")
+
     def test_parse_generic_detail_falls_back_to_time_datetime(self):
         html = """
         <html><head><title>Semiconductor policy</title></head>

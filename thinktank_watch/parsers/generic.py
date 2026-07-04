@@ -217,6 +217,31 @@ def first_nonempty(*values: list[str] | str | None) -> str:
     return ""
 
 
+def _title_token(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", value.lower())
+
+
+def clean_detail_title(title: str, institution: Institution) -> str:
+    title = norm(title)
+    if not title:
+        return ""
+    host = _normalized_host(institution.homepage)
+    host_labels = [part for part in host.split(".") if part not in {"org", "com", "net", "edu", "ai", "uk", "eu"}]
+    allowed_suffixes = {
+        _title_token(institution.slug),
+        _title_token(institution.name),
+        _title_token(institution.chinese_name),
+        *(_title_token(label) for label in host_labels),
+    }
+    for separator in (" | ", " - ", " – ", " — "):
+        if separator not in title:
+            continue
+        left, right = title.rsplit(separator, 1)
+        if _title_token(right) in allowed_suffixes:
+            return left.strip()
+    return title
+
+
 def _normalized_host(value: str) -> str:
     parsed = urlparse(value if "://" in value else f"https://{value}")
     host = (parsed.netloc or parsed.path).lower().strip("/")
@@ -275,12 +300,15 @@ def looks_like_detail_url(url: str, text: str = "") -> bool:
 def parse_generic_detail(html_text: str, url: str, institution: Institution) -> ArticleCandidate:
     soup = BeautifulSoup(html_text, "lxml")
     json_primary = json_ld_primary(json_ld_items(soup))
-    title = first_nonempty(
-        meta_values(soup, "citation_title"),
-        meta_values(soup, "og:title"),
-        meta_values(soup, "twitter:title"),
-        json_primary.get("headline") or json_primary.get("name"),
-        soup.title.get_text(" ", strip=True) if soup.title else "",
+    title = clean_detail_title(
+        first_nonempty(
+            meta_values(soup, "citation_title"),
+            meta_values(soup, "og:title"),
+            meta_values(soup, "twitter:title"),
+            json_primary.get("headline") or json_primary.get("name"),
+            soup.title.get_text(" ", strip=True) if soup.title else "",
+        ),
+        institution,
     )
     summary = first_nonempty(
         meta_values(soup, "description"),
