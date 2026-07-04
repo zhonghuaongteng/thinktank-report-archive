@@ -1,10 +1,15 @@
 import unittest
 
 from thinktank_watch.models import Institution
-from thinktank_watch.parsers.generic import extract_list_links, parse_generic_detail
+from thinktank_watch.parsers.generic import extract_list_links, norm, parse_generic_detail
 
 
 class GenericParserTests(unittest.TestCase):
+    def test_norm_strips_html_from_feed_titles(self):
+        value = '<a href="https://www.hoover.org/research/china-ai" hreflang="en">China AI Policy</a>'
+
+        self.assertEqual(norm(value), "China AI Policy")
+
     def test_extract_list_links_skips_navigation_and_category_pages(self):
         html = """
         <html><body>
@@ -161,6 +166,60 @@ class GenericParserTests(unittest.TestCase):
         detail = parse_generic_detail(html, "https://www.csis.org/analysis/what-know-about-chinese-ai-models", institution)
 
         self.assertEqual(detail.published_date, "2026-07-02")
+
+    def test_parse_generic_detail_ignores_external_reference_pdfs(self):
+        html = """
+        <html><head><title>AI governance brief</title></head>
+        <body>
+          <main>
+            <p>AI governance brief text.</p>
+            <a href="https://example.org/reports/source.pdf">Cited source report</a>
+          </main>
+        </body></html>
+        """
+        institution = Institution(
+            slug="interface",
+            name="interface",
+            chinese_name="interface欧洲科技政策智库",
+            country_region="European Union",
+            institution_type="think_tank",
+            priority="P0",
+            batch=2,
+            homepage="https://www.interface-eu.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(html, "https://www.interface-eu.org/publications/ai-governance-brief", institution)
+
+        self.assertEqual(detail.pdf_url, "")
+
+    def test_parse_generic_detail_accepts_download_pdf_links(self):
+        html = """
+        <html><head><title>AI governance brief</title></head>
+        <body>
+          <main>
+            <p>AI governance brief text.</p>
+            <a href="https://cdn.example.org/brief.pdf">Download PDF</a>
+          </main>
+        </body></html>
+        """
+        institution = Institution(
+            slug="example",
+            name="Example",
+            chinese_name="示例",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://example.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(html, "https://example.org/publications/ai-governance-brief", institution)
+
+        self.assertEqual(detail.pdf_url, "https://cdn.example.org/brief.pdf")
 
 
 if __name__ == "__main__":

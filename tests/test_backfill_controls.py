@@ -1,6 +1,11 @@
+import sqlite3
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from types import SimpleNamespace
+from unittest.mock import patch
 import unittest
 
-from thinktank_watch.cli import institution_fetch_limit, priority_allows, sort_for_writing, write_limit_reached
+from thinktank_watch.cli import institution_fetch_limit, priority_allows, run_daily, sort_for_writing, write_limit_reached
 from thinktank_watch.models import ArticleCandidate, Institution
 
 
@@ -44,6 +49,66 @@ class BackfillControlTests(unittest.TestCase):
         ordered = sort_for_writing(candidates)
 
         self.assertEqual([item.title for item in ordered], ["P0 item", "P1 high", "P1 item", "P3 item"])
+
+    def test_run_daily_records_detail_error_without_archiving(self):
+        institution = Institution(
+            slug="hoover-tpa",
+            name="Hoover Technology Policy Accelerator",
+            chinese_name="胡佛技术政策加速器",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P1",
+            batch=3,
+            homepage="https://www.hoover.org/research-teams/technology-policy-accelerator",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+        candidate = ArticleCandidate(
+            institution_slug="hoover-tpa",
+            institution_name="Hoover Technology Policy Accelerator",
+            institution_type="think_tank",
+            title="China AI external story",
+            url="https://www.hoover.org/research/external-ai-story",
+            priority="P1",
+            score=8,
+            fetch_status="detail_error:ExternalSourceError",
+        )
+
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            state_path = root / "state" / "articles.sqlite"
+            args = SimpleNamespace(
+                date="2026-07-04",
+                batch=None,
+                institution=None,
+                state=str(state_path),
+                archive_root=str(root / "archive"),
+                brief_root=str(root / "briefs"),
+                skip_kb=True,
+                kb_root=str(root / "kb"),
+                limit=5,
+                min_priority="P1",
+                write_limit=0,
+                refresh=False,
+            )
+            with (
+                patch("thinktank_watch.cli._load_config", return_value=([institution], [], object())),
+                patch("thinktank_watch.cli.collect_candidates", return_value=[candidate]),
+                patch("thinktank_watch.cli.score_candidate", side_effect=lambda item, topics, priorities: item),
+            ):
+                run_daily(args)
+
+            self.assertEqual(list((root / "archive").rglob("*.md")), [])
+            conn = sqlite3.connect(state_path)
+            try:
+                row = conn.execute(
+                    "SELECT fetch_status, archive_path FROM articles WHERE url = ?",
+                    (candidate.url,),
+                ).fetchone()
+            finally:
+                conn.close()
+
+            self.assertEqual(row, ("detail_error:ExternalSourceError", ""))
 
 
 if __name__ == "__main__":

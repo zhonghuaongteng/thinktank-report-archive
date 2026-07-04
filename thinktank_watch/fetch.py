@@ -39,6 +39,10 @@ SOURCE_PATH_DENY_SEGMENTS = {
 }
 
 
+class ExternalSourceError(httpx.HTTPError):
+    """Raised when an allowed source URL redirects to an external page."""
+
+
 def _normalized_host(value: str) -> str:
     parsed = urlparse(value if "://" in value else f"https://{value}")
     host = (parsed.netloc or parsed.path).lower().strip("/")
@@ -197,6 +201,8 @@ def fetch_sitemap_candidates(
 def fetch_detail(client: httpx.Client, institution: Institution, candidate: ArticleCandidate) -> ArticleCandidate:
     response = client.get(candidate.url, timeout=30, follow_redirects=True)
     response.raise_for_status()
+    if not source_url_allowed(str(response.url), institution):
+        raise ExternalSourceError(f"detail redirected outside allowed domains: {response.url}")
     if institution.parser == "rand":
         detail = parse_rand_detail(response.text, str(response.url))
     else:

@@ -120,7 +120,10 @@ VISIBLE_DATE_RE = re.compile(
 
 
 def norm(value: str | None) -> str:
-    return re.sub(r"\s+", " ", html.unescape(value or "")).strip()
+    text = html.unescape(value or "")
+    if "<" in text and ">" in text:
+        text = BeautifulSoup(text, "lxml").get_text(" ")
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def canonical_date(value: str) -> str:
@@ -214,6 +217,43 @@ def first_nonempty(*values: list[str] | str | None) -> str:
     return ""
 
 
+def _normalized_host(value: str) -> str:
+    parsed = urlparse(value if "://" in value else f"https://{value}")
+    host = (parsed.netloc or parsed.path).lower().strip("/")
+    return host[4:] if host.startswith("www.") else host
+
+
+def _host_matches(host: str, allowed: str) -> bool:
+    return host == allowed or host.endswith(f".{allowed}")
+
+
+def _source_pdf_link(url: str, page_url: str, institution: Institution) -> bool:
+    pdf_host = _normalized_host(url)
+    page_host = _normalized_host(page_url)
+    allowed_hosts = [_normalized_host(institution.homepage)]
+    allowed_hosts.extend(_normalized_host(domain) for domain in institution.allowed_domains)
+    return _host_matches(pdf_host, page_host) or any(_host_matches(pdf_host, host) for host in allowed_hosts)
+
+
+def _download_pdf_label(text: str) -> bool:
+    label = text.lower()
+    if label in {"pdf", "download", "download pdf", "full report", "report pdf"}:
+        return True
+    return any(token in label for token in ("download pdf", "download report", "full report"))
+
+
+def extract_pdf_url(soup: BeautifulSoup, page_url: str, institution: Institution) -> str:
+    for node in soup.find_all("a", href=True):
+        href = node["href"]
+        if ".pdf" not in href.lower():
+            continue
+        absolute = urljoin(page_url, href)
+        text = norm(node.get_text(" "))
+        if _download_pdf_label(text) or _source_pdf_link(absolute, page_url, institution):
+            return absolute
+    return ""
+
+
 def looks_like_detail_url(url: str, text: str = "") -> bool:
     parsed = urlparse(url)
     path_segments = [segment for segment in parsed.path.split("/") if segment]
@@ -266,8 +306,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
     for raw in meta_values(soup, "keywords"):
         keywords.extend([norm(part) for part in raw.split(",") if norm(part)])
 
-    pdf_link = next((node["href"] for node in soup.find_all("a", href=True) if ".pdf" in node["href"].lower()), "")
-    pdf_url = urljoin(url, pdf_link) if pdf_link else ""
+    pdf_url = extract_pdf_url(soup, url, institution)
 
     for node in soup(["script", "style", "nav", "footer", "header", "form"]):
         node.decompose()

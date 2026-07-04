@@ -75,6 +75,14 @@ def sort_for_writing(candidates: list[ArticleCandidate]) -> list[ArticleCandidat
     )
 
 
+def detail_fetch_failed(candidate: ArticleCandidate) -> bool:
+    return candidate.fetch_status.startswith("detail_error")
+
+
+def should_archive_candidate(candidate: ArticleCandidate) -> bool:
+    return candidate.priority in {"P0", "P1", "P2"} and not detail_fetch_failed(candidate)
+
+
 def collect_candidates(
     institutions: list[Institution],
     limit: int,
@@ -159,8 +167,11 @@ def run_daily(args: argparse.Namespace) -> int:
                 continue
             if write_limit_reached(len(written), args.write_limit):
                 break
+            if detail_fetch_failed(item):
+                state.upsert(item, "")
+                continue
             archive_path = ""
-            if item.priority in {"P0", "P1", "P2"}:
+            if should_archive_candidate(item):
                 archive_path = str(write_article(args.archive_root, item))
             state.upsert(item, archive_path)
             written.append(item)
@@ -190,8 +201,11 @@ def backfill(args: argparse.Namespace) -> int:
                 continue
             if write_limit_reached(len(written), args.write_limit):
                 break
+            if detail_fetch_failed(item):
+                state.upsert(item, "")
+                continue
             archive_path = ""
-            if item.priority in {"P0", "P1", "P2"}:
+            if should_archive_candidate(item):
                 archive_path = str(write_article(args.archive_root, item))
             state.upsert(item, archive_path)
             written.append(item)

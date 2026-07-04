@@ -3,8 +3,10 @@ import unittest
 import httpx
 
 from thinktank_watch.fetch import _date_from_feed
+from thinktank_watch.fetch import fetch_detail
 from thinktank_watch.fetch import fetch_sitemap_candidates
 from thinktank_watch.fetch import source_url_allowed
+from thinktank_watch.models import ArticleCandidate
 from thinktank_watch.models import Institution
 
 
@@ -86,6 +88,46 @@ class FetchCandidateTests(unittest.TestCase):
         self.assertEqual(len(candidates), 1)
         self.assertEqual(candidates[0].url, "https://example.org/research/2026/07/ai-governance-and-cyber-risk")
         self.assertEqual(candidates[0].published_date, "2026-07-02")
+
+    def test_fetch_detail_rejects_external_redirects(self):
+        def handler(request: httpx.Request) -> httpx.Response:
+            if str(request.url) == "https://www.hoover.org/research/external-ai-story":
+                return httpx.Response(
+                    302,
+                    headers={"Location": "https://www.cnbc.com/2026/06/17/g7-ai.html"},
+                    request=request,
+                )
+            return httpx.Response(
+                200,
+                text="<html><head><title>External AI story</title></head><body>outside source</body></html>",
+                request=request,
+            )
+
+        institution = Institution(
+            slug="hoover-tpa",
+            name="Hoover Technology Policy Accelerator",
+            chinese_name="胡佛技术政策加速器",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P1",
+            batch=3,
+            homepage="https://www.hoover.org/research-teams/technology-policy-accelerator",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+        candidate = ArticleCandidate(
+            institution_slug="hoover-tpa",
+            institution_name="Hoover Technology Policy Accelerator",
+            institution_type="think_tank",
+            title="External AI story",
+            url="https://www.hoover.org/research/external-ai-story",
+        )
+
+        with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+            with self.assertRaises(httpx.HTTPError) as raised:
+                fetch_detail(client, institution, candidate)
+
+        self.assertIn("outside allowed domains", str(raised.exception))
 
 
 if __name__ == "__main__":
