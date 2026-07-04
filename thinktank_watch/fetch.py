@@ -23,8 +23,12 @@ USER_AGENT = (
 
 TRACKING_PARAMS = {"fbclid", "gclid", "mc_cid", "mc_eid"}
 SOURCE_PATH_DENY_SEGMENTS = {
+    "categories",
+    "category",
     "events",
     "event",
+    "issue",
+    "issues",
     "people",
     "person",
     "podcast",
@@ -33,6 +37,12 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "videos",
     "webinars",
 }
+
+
+def _normalized_host(value: str) -> str:
+    parsed = urlparse(value if "://" in value else f"https://{value}")
+    host = (parsed.netloc or parsed.path).lower().strip("/")
+    return host[4:] if host.startswith("www.") else host
 
 
 def canonical_url(url: str) -> str:
@@ -59,13 +69,10 @@ def dedupe_key(url: str) -> str:
 
 def source_url_allowed(url: str, institution: Institution) -> bool:
     parsed_source = urlparse(url)
-    source_host = parsed_source.netloc.lower()
-    home_host = urlparse(institution.homepage).netloc.lower()
-    if source_host.startswith("www."):
-        source_host = source_host[4:]
-    if home_host.startswith("www."):
-        home_host = home_host[4:]
-    if source_host != home_host and not source_host.endswith(f".{home_host}"):
+    source_host = _normalized_host(parsed_source.netloc)
+    allowed_hosts = [_normalized_host(institution.homepage)]
+    allowed_hosts.extend(_normalized_host(domain) for domain in institution.allowed_domains)
+    if not any(source_host == host or source_host.endswith(f".{host}") for host in allowed_hosts):
         return False
     path_segments = {segment.lower() for segment in parsed_source.path.split("/") if segment}
     return not (path_segments & SOURCE_PATH_DENY_SEGMENTS)
@@ -81,7 +88,7 @@ def _date_from_feed(value: str) -> str:
     try:
         return datetime.fromisoformat(value.replace("Z", "+00:00")).date().isoformat()
     except ValueError:
-        return value[:10]
+        return canonical_date(value)
 
 
 def fetch_feed_candidates(institution: Institution, limit: int = 20) -> list[ArticleCandidate]:

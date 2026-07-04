@@ -8,11 +8,11 @@ batch: 2
 homepage: https://www.ceps.eu/ceps-topics/
 parser: generic
 copyright_boundary: private_archive
-feeds:
-  - https://www.ceps.eu/feed/
+feeds: []
 list_pages:
+  - https://www.ceps.eu/ceps-publications/
   - https://www.ceps.eu/ceps-topics/
-  - https://www.ceps.eu/publications/
 topic_pages:
   - https://www.ceps.eu/ceps-topics/digital-economy/
-notes: EU digital policy, AI governance, industrial policy, and China-related EU policy.
+run_limit: 6
+notes: EU digital policy, AI governance, industrial policy, and China-related EU policy. RSS is disabled because CEPS returns a WordPress no-feed error to static requests.

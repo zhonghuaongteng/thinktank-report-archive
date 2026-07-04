@@ -8,11 +8,15 @@ batch: 2
 homepage: https://www.aspi.org.au/
 parser: generic
 copyright_boundary: private_archive
+allowed_domains:
+  - https://www.aspistrategist.org.au/
 feeds:
-  - https://www.aspi.org.au/rss.xml
+  - https://www.aspistrategist.org.au/feed/
+  - https://www.aspistrategist.org.au/tag/technology/feed/
 list_pages:
   - https://www.aspi.org.au/report
   - https://www.aspi.org.au/opinion
 topic_pages:
   - https://www.aspi.org.au/topic/technology
-notes: Technology, cyber, defense, China, and Indo-Pacific security analysis.
+run_limit: 6
+notes: Technology, cyber, defense, China, and Indo-Pacific security analysis. Main ASPI site currently returns Cloudflare 403 to static fetches; The Strategist is configured as an official auxiliary ASPI source.

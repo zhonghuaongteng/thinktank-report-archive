@@ -30,11 +30,13 @@ def load_institutions(config_dir: str | Path) -> list[Institution]:
                 homepage=data["homepage"],
                 parser=data.get("parser", "generic"),
                 copyright_boundary=data.get("copyright_boundary", "private_archive"),
+                allowed_domains=list(data.get("allowed_domains") or []),
                 feeds=list(data.get("feeds") or []),
                 list_pages=list(data.get("list_pages") or []),
                 topic_pages=list(data.get("topic_pages") or []),
                 sitemap_urls=list(data.get("sitemap_urls") or []),
                 sitemap_include_keywords=list(data.get("sitemap_include_keywords") or []),
+                run_limit=int(data.get("run_limit") or 0),
                 notes=data.get("notes", ""),
             )
         )

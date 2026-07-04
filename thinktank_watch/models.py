@@ -15,11 +15,13 @@ class Institution:
     homepage: str
     parser: str
     copyright_boundary: str
+    allowed_domains: list[str] = field(default_factory=list)
     feeds: list[str] = field(default_factory=list)
     list_pages: list[str] = field(default_factory=list)
     topic_pages: list[str] = field(default_factory=list)
     sitemap_urls: list[str] = field(default_factory=list)
     sitemap_include_keywords: list[str] = field(default_factory=list)
+    run_limit: int = 0
     notes: str = ""
 
 

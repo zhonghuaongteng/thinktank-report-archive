@@ -44,6 +44,13 @@ Candidate source URLs are restricted to the institution's own site or subdomains
 
 The local Codex automation `国际科技智库每日抓取` runs at 10:00 Beijing time. It executes tests, runs source health audit, runs `scripts\run_daily.ps1`, checks brief outputs, fills Chinese title and summary fields for new P0/P1 Markdown files when generated, then commits and pushes tracked `archive/` and `briefs/` outputs to the private GitHub repository.
 
+## Source Status Notes
+
+- Second-batch P0/P1 sources now have guarded configs for CSIS, ASPI, Ada Lovelace, interface, Atlantic Council, Bruegel, ECIPE, and GovAI.
+- ASPI's main site returns Cloudflare 403 to static requests; The Strategist is configured as an explicit auxiliary ASPI domain.
+- CEPS RSS and detail pages are unstable or blocked for static requests. CEPS remains in the institution table, but this source should be treated as metadata/health-check first until a browser-backed parser is added.
+- Slow or high-noise sources can set `run_limit` in `config/institutions/*.yaml`; auxiliary official domains can be listed under `allowed_domains`.
+
 ## Copyright Boundary
 
 The intended GitHub repository is private. Public reuse should only use metadata, source links, short summaries, and original analysis. Commercial or paid sources such as Gartner are tracked as metadata-only unless separately authorized.

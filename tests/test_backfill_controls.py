@@ -1,7 +1,7 @@
 import unittest
 
-from thinktank_watch.cli import priority_allows, sort_for_writing, write_limit_reached
-from thinktank_watch.models import ArticleCandidate
+from thinktank_watch.cli import institution_fetch_limit, priority_allows, sort_for_writing, write_limit_reached
+from thinktank_watch.models import ArticleCandidate, Institution
 
 
 class BackfillControlTests(unittest.TestCase):
@@ -14,6 +14,24 @@ class BackfillControlTests(unittest.TestCase):
         self.assertFalse(write_limit_reached(99, 0))
         self.assertFalse(write_limit_reached(1, None))
         self.assertTrue(write_limit_reached(3, 3))
+
+    def test_institution_fetch_limit_honors_configured_run_limit(self):
+        institution = Institution(
+            slug="ecipe",
+            name="ECIPE",
+            chinese_name="欧洲国际政治经济中心",
+            country_region="European Union",
+            institution_type="think_tank",
+            priority="P1",
+            batch=2,
+            homepage="https://ecipe.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+            run_limit=3,
+        )
+
+        self.assertEqual(institution_fetch_limit(institution, 20), 3)
+        self.assertEqual(institution_fetch_limit(institution, 2), 2)
 
     def test_sort_for_writing_prioritizes_priority_then_score(self):
         candidates = [

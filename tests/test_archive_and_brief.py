@@ -43,12 +43,14 @@ class ArchiveAndBriefTests(unittest.TestCase):
             chinese_summary="该报告讨论人工智能能源供应链脆弱性。",
             pdf_url="https://www.rand.org/content/dam/rand/example.pdf",
             translation_level="full_or_long",
+            fetch_status="detail_ok",
         )
 
         markdown = build_markdown(candidate)
 
         self.assertIn("institution: RAND", markdown)
         self.assertIn("priority: P1", markdown)
+        self.assertIn("fetch_status: detail_ok", markdown)
         self.assertIn("# 供应链、能源与人工智能交汇", markdown)
         self.assertIn("## 中文摘要与研判", markdown)
         self.assertIn("## English Source Material", markdown)

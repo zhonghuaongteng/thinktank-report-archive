@@ -87,13 +87,21 @@ CONTENT_TYPE_SEGMENTS = {
     "resources",
 }
 EXCLUDED_LAST_SEGMENT_PREFIXES = ("call-", "deadline-", "apply-", "registration")
+EXCLUDED_LAST_SEGMENT_SUBSTRINGS = ("integrity-statement", "research-priorities")
 EXCLUDED_PATH_SEGMENTS = {
     "about",
     "books",
+    "categories",
+    "category",
     "community",
     "experts",
+    "how-we-work",
+    "issue",
+    "issues",
     "knowledge-bases",
+    "our-work",
     "people",
+    "programs",
     "podcasts",
     "staff",
     "working-group-data-governance",
@@ -119,7 +127,7 @@ def canonical_date(value: str) -> str:
     value = norm(value)
     if not value:
         return ""
-    if "T" in value:
+    if re.match(r"^\d{4}-\d{2}-\d{2}T", value):
         value = value.split("T", 1)[0]
     for fmt in ("%Y-%m-%d", "%Y/%m/%d", "%Y%m%d", "%B %d, %Y", "%b %d, %Y", "%d %B %Y", "%d %b %Y"):
         try:
@@ -131,7 +139,11 @@ def canonical_date(value: str) -> str:
     if match:
         year, month, day = match.groups()
         return f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
-    return value[:10]
+    match = re.search(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b", value)
+    if match:
+        month, day, year = match.groups()
+        return f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
+    return ""
 
 
 def visible_date(text: str) -> str:
@@ -207,9 +219,12 @@ def looks_like_detail_url(url: str, text: str = "") -> bool:
     path_segments = [segment for segment in parsed.path.split("/") if segment]
     if len(path_segments) < 2 or path_segments[-1].lower() in BROAD_ENDPOINTS:
         return False
-    if path_segments[-1].lower().startswith(EXCLUDED_LAST_SEGMENT_PREFIXES):
+    last_segment = path_segments[-1].lower()
+    if last_segment.startswith(EXCLUDED_LAST_SEGMENT_PREFIXES):
         return False
-    if any(segment.lower() in EXCLUDED_PATH_SEGMENTS for segment in path_segments):
+    if any(token in last_segment for token in EXCLUDED_LAST_SEGMENT_SUBSTRINGS):
+        return False
+    if any(segment.lower() in EXCLUDED_PATH_SEGMENTS or segment.lower().startswith("about-") for segment in path_segments):
         return False
     haystack = f"{path_segments[-1]} {text}".lower()
     return any(term in haystack for term in ALLOW_TERMS) or any(

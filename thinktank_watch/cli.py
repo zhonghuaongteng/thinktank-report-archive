@@ -56,6 +56,12 @@ def write_limit_reached(written_count: int, write_limit: int | None) -> bool:
     return bool(write_limit) and written_count >= write_limit
 
 
+def institution_fetch_limit(institution: Institution, limit: int) -> int:
+    if institution.run_limit > 0:
+        return min(limit, institution.run_limit)
+    return limit
+
+
 def sort_for_writing(candidates: list[ArticleCandidate]) -> list[ArticleCandidate]:
     return sorted(
         candidates,
@@ -79,19 +85,20 @@ def collect_candidates(
     seen_urls: set[str] = set()
     with make_client() as client:
         for institution in institutions:
+            item_limit = institution_fetch_limit(institution, limit)
             if backfill:
                 base = [
-                    *fetch_feed_candidates(institution, limit=limit),
-                    *fetch_list_candidates(client, institution, limit=limit),
-                    *fetch_sitemap_candidates(client, institution, limit=limit),
+                    *fetch_feed_candidates(institution, limit=item_limit),
+                    *fetch_list_candidates(client, institution, limit=item_limit),
+                    *fetch_sitemap_candidates(client, institution, limit=item_limit),
                 ]
             else:
-                base = fetch_feed_candidates(institution, limit=limit)
+                base = fetch_feed_candidates(institution, limit=item_limit)
                 if not base:
-                    base = fetch_list_candidates(client, institution, limit=limit)
+                    base = fetch_list_candidates(client, institution, limit=item_limit)
             institution_count = 0
             for candidate in base:
-                if institution_count >= limit:
+                if institution_count >= item_limit:
                     break
                 if candidate.url in seen_urls:
                     continue

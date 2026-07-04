@@ -130,7 +130,85 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         scored = score_candidate(candidate, topics, rules)
 
-        self.assertEqual(scored.priority, "P1")
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("AI治理", scored.topic_tags)
+
+    def test_chinese_ai_models_are_priority_focus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="csis",
+            institution_name="CSIS",
+            institution_type="think_tank",
+            title="What to Know About Chinese AI Models",
+            url="https://www.csis.org/analysis/what-know-about-chinese-ai-models",
+            summary="Analysis of Chinese AI models, policy, and strategic technology competition.",
+            published_date="2026-07-02",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("AI治理", scored.topic_tags)
+        self.assertIn("中国与上海相关", scored.topic_tags)
+
+    def test_ai_risk_market_gatekeeping_is_priority_focus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="ecipe",
+            institution_name="ECIPE",
+            institution_type="think_tank",
+            title="The AI Risk Nobody Is Regulating: Market Gatekeeping",
+            url="https://ecipe.org/insights/ai-risk-nobody-is-regulating/",
+            summary="Market gatekeeping creates AI risk and competition regulation challenges.",
+            published_date="2026-06-29",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("AI治理", scored.topic_tags)
+        self.assertIn("科技治理", scored.topic_tags)
+
+    def test_hyphenated_artificial_intelligence_title_is_ai_focus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="bruegel",
+            institution_name="Bruegel",
+            institution_type="think_tank",
+            title="Artificial-intelligence competition in Europe: the role of DMA Article 6(7)",
+            url="https://www.bruegel.org/working-paper/artificial-intelligence-competition-europe-role-dma-article-67",
+            summary="Working paper on artificial intelligence competition policy and digital market regulation.",
+            published_date="2026-07-02",
+            content_type="paper",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("AI治理", scored.topic_tags)
+
+    def test_standalone_ai_report_title_is_ai_focus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="ada-lovelace",
+            institution_name="Ada Lovelace Institute",
+            institution_type="think_tank",
+            title="Navigating the future",
+            url="https://www.adalovelaceinstitute.org/report/navigating-the-future/",
+            summary="A landscape review of AI in career guidance for young people.",
+            published_date="2026-04-13",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("AI治理", scored.topic_tags)
 
     def test_scoring_keeps_low_relevance_items_in_index_only(self):

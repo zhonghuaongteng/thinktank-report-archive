@@ -24,6 +24,9 @@ class GenericParserTests(unittest.TestCase):
           <a href="/publications/knowledge-bases/to-do-list/">Tech Policy To-Do List</a>
           <a href="/publications/knowledge-bases/attack-tracker/">Non-Tariff Attack Tracker</a>
           <a href="/research/partners">Research Partners</a>
+          <a href="/ceps-publications/ceps-research-priorities-2024-2025/">Research Priorities 2024-2025</a>
+          <a href="/about-ceps/ceps-integrity-statement/">CEPS Integrity Statement</a>
+          <a href="/our-work/how-we-work/public-participation-research/">Public Participation Research</a>
           <a href="/en/community/hector-de-rivoire">See all posts</a>
           <a href="/en/working-group-innovation-and-commercialisation">Working Group on Innovation and Commercialisation</a>
           <a href="/people/jon-bateman">Jon Bateman commentary</a>
@@ -44,6 +47,22 @@ class GenericParserTests(unittest.TestCase):
                 "https://example.org/article/china-semiconductor-policy/",
                 "https://example.org/research/2026/advanced-manufacturing-report",
             ],
+        )
+
+    def test_extract_list_links_rejects_category_pages_even_when_anchor_mentions_reports(self):
+        html = """
+        <html><body>
+          <a href="/issue/artificial-intelligence/">Reports and research on artificial intelligence</a>
+          <a href="/programs/cyber-statecraft-initiative/">Cyber research program</a>
+          <a href="/in-depth-research-reports/report/commission-on-ai/">Commission on AI report</a>
+        </body></html>
+        """
+
+        links = extract_list_links(html, "https://www.atlanticcouncil.org/issue/artificial-intelligence/", limit=5)
+
+        self.assertEqual(
+            links,
+            ["https://www.atlanticcouncil.org/in-depth-research-reports/report/commission-on-ai/"],
         )
 
     def test_parse_generic_detail_uses_json_ld_date_and_authors(self):
@@ -118,6 +137,30 @@ class GenericParserTests(unittest.TestCase):
         detail = parse_generic_detail(html, "https://example.org/wonk/ai-sandbox-policy", institution)
 
         self.assertEqual(detail.published_date, "2026-03-18")
+
+    def test_parse_generic_detail_handles_weekday_numeric_publication_date(self):
+        html = """
+        <html><head>
+          <title>Chinese AI Models</title>
+          <meta name="citation_publication_date" content="Thu, 07/02/2026 - 12:00">
+        </head><body><main><p>Chinese AI models and governance.</p></main></body></html>
+        """
+        institution = Institution(
+            slug="csis",
+            name="CSIS",
+            chinese_name="战略与国际研究中心",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=2,
+            homepage="https://www.csis.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(html, "https://www.csis.org/analysis/what-know-about-chinese-ai-models", institution)
+
+        self.assertEqual(detail.published_date, "2026-07-02")
 
 
 if __name__ == "__main__":

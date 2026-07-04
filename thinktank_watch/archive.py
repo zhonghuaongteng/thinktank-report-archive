@@ -63,6 +63,7 @@ def build_markdown(candidate: ArticleCandidate) -> str:
         f"score: {candidate.score}",
         f"translation_level: {candidate.translation_level}",
         f"copyright_boundary: {candidate.copyright_boundary}",
+        f"fetch_status: {candidate.fetch_status}",
         "---",
         "",
     ]
