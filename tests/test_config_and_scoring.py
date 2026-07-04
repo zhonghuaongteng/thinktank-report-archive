@@ -230,6 +230,25 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("AI治理", scored.topic_tags)
 
+    def test_gpai_policy_title_is_ai_governance_focus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="govai",
+            institution_name="GovAI",
+            institution_type="think_tank",
+            title="Requirements for Model Specifications in the EU GPAI Code of Practice",
+            url="https://www.governance.ai/research-paper/gpai-code-model-specifications",
+            summary="Analysis of general-purpose AI model specification requirements and compliance practice.",
+            published_date="2026-03-14",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("AI治理", scored.topic_tags)
+
     def test_dotted_ai_abbreviation_is_governance_focus(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")

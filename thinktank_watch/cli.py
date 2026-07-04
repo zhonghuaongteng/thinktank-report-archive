@@ -72,6 +72,17 @@ def published_date_sort_value(value: str) -> int:
         return 0
 
 
+def candidate_is_future(candidate: ArticleCandidate, run_date: str) -> bool:
+    if len(candidate.published_date or "") < 10 or len(run_date or "") < 10:
+        return False
+    try:
+        published = date.fromisoformat(candidate.published_date[:10])
+        current = date.fromisoformat(run_date[:10])
+    except ValueError:
+        return False
+    return published > current
+
+
 def sort_for_writing(candidates: list[ArticleCandidate]) -> list[ArticleCandidate]:
     return sorted(
         candidates,
@@ -182,6 +193,8 @@ def run_daily(args: argparse.Namespace) -> int:
         for item in scored:
             if not priority_allows(item.priority, args.min_priority):
                 continue
+            if candidate_is_future(item, run_date):
+                continue
             if state.seen(item.url) and not args.refresh:
                 continue
             if write_limit_reached(len(written), args.write_limit):
@@ -215,6 +228,8 @@ def backfill(args: argparse.Namespace) -> int:
         scored = sort_for_writing([score_candidate(item, topics, priorities) for item in candidates])
         for item in scored:
             if not priority_allows(item.priority, args.min_priority):
+                continue
+            if candidate_is_future(item, run_date):
                 continue
             if state.seen(item.url) and not args.refresh:
                 continue

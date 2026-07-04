@@ -5,7 +5,14 @@ from types import SimpleNamespace
 from unittest.mock import patch
 import unittest
 
-from thinktank_watch.cli import institution_fetch_limit, priority_allows, run_daily, sort_for_writing, write_limit_reached
+from thinktank_watch.cli import (
+    candidate_is_future,
+    institution_fetch_limit,
+    priority_allows,
+    run_daily,
+    sort_for_writing,
+    write_limit_reached,
+)
 from thinktank_watch.models import ArticleCandidate, Institution
 
 
@@ -77,6 +84,81 @@ class BackfillControlTests(unittest.TestCase):
         ordered = sort_for_writing(candidates)
 
         self.assertEqual([item.title for item in ordered], ["Newer AI governance item", "Older AI governance item"])
+
+    def test_candidate_is_future_only_for_valid_later_dates(self):
+        candidate = ArticleCandidate(
+            "govai",
+            "GovAI",
+            "think_tank",
+            "Future AI Act analysis",
+            "https://example.org/future",
+            published_date="2026-08-02",
+        )
+
+        self.assertTrue(candidate_is_future(candidate, "2026-07-05"))
+
+        candidate.published_date = "2026-07-05"
+        self.assertFalse(candidate_is_future(candidate, "2026-07-05"))
+
+        candidate.published_date = ""
+        self.assertFalse(candidate_is_future(candidate, "2026-07-05"))
+
+    def test_run_daily_skips_future_dated_candidates_without_recording_state(self):
+        institution = Institution(
+            slug="govai",
+            name="GovAI",
+            chinese_name="AI治理研究所",
+            country_region="United Kingdom",
+            institution_type="think_tank",
+            priority="P0",
+            batch=2,
+            homepage="https://www.governance.ai/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+        candidate = ArticleCandidate(
+            institution_slug="govai",
+            institution_name="GovAI",
+            institution_type="think_tank",
+            title="Labeling of AI Agent Activity in Article 50 of the EU AI Act",
+            url="https://www.governance.ai/research-paper/labeling-of-ai-agent-activity",
+            published_date="2026-08-02",
+            priority="P1",
+            score=8,
+        )
+
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            state_path = root / "state" / "articles.sqlite"
+            args = SimpleNamespace(
+                date="2026-07-05",
+                batch=None,
+                institution=None,
+                state=str(state_path),
+                archive_root=str(root / "archive"),
+                brief_root=str(root / "briefs"),
+                skip_kb=True,
+                kb_root=str(root / "kb"),
+                limit=5,
+                min_priority="P1",
+                write_limit=0,
+                refresh=False,
+            )
+            with (
+                patch("thinktank_watch.cli._load_config", return_value=([institution], [], object())),
+                patch("thinktank_watch.cli.collect_candidates", return_value=[candidate]),
+                patch("thinktank_watch.cli.score_candidate", side_effect=lambda item, topics, priorities: item),
+            ):
+                run_daily(args)
+
+            self.assertEqual(list((root / "archive").rglob("*.md")), [])
+            conn = sqlite3.connect(state_path)
+            try:
+                count = conn.execute("SELECT COUNT(*) FROM articles").fetchone()[0]
+            finally:
+                conn.close()
+
+            self.assertEqual(count, 0)
 
     def test_run_daily_records_detail_error_without_archiving(self):
         institution = Institution(
