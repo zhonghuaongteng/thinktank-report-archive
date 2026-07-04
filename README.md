@@ -26,6 +26,7 @@ C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli audit --batch 1 --limit 5
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli run-daily --batch 1 --limit 20
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli backfill --batch 1 --limit 5 --min-priority P1 --write-limit 8
+C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli rebuild-state --archive-root archive --state state\articles.sqlite
 powershell -ExecutionPolicy Bypass -File scripts\run_backfill_batch.ps1 -Batch 1 -Limit 5 -MinPriority P1 -WriteLimit 8
 ```
 
@@ -39,6 +40,8 @@ Candidate source URLs are restricted to the institution's own site or subdomains
 - `reports/{date}_source_health.csv`: read-only source health report.
 - Knowledge-base index target: `C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库\06_数据资产\研报_国际智库抓取索引.csv`.
 - Institution schema target: `C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库\06_数据资产\研报_国际科技智库机构口径表.csv`.
+
+`state/articles.sqlite` is local runtime state and is not committed. If the repository is cloned on another machine or local state is lost, rebuild it from tracked Markdown archives with `rebuild-state` before running daily or backfill jobs.
 
 ## Automation
 

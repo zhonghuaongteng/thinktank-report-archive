@@ -14,6 +14,7 @@ from .config import load_institutions, load_priority_rules, load_topics
 from .fetch import check_pdf, fetch_detail, fetch_feed_candidates, fetch_list_candidates, fetch_sitemap_candidates, make_client
 from .kb import append_kb_index, write_institution_table
 from .models import ArticleCandidate, Institution
+from .restore import rebuild_state_from_archive
 from .scoring import score_candidate
 from .state import ArticleState
 
@@ -219,6 +220,12 @@ def backfill(args: argparse.Namespace) -> int:
     return 0
 
 
+def rebuild_state(args: argparse.Namespace) -> int:
+    count = rebuild_state_from_archive(args.archive_root, args.state)
+    print(f"archive_root={args.archive_root} state={args.state} records_restored={count}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="thinktank-watch")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -270,6 +277,11 @@ def build_parser() -> argparse.ArgumentParser:
     backfill_parser.add_argument("--state", default="state/articles.sqlite")
     backfill_parser.add_argument("--kb-root", default=str(Path(r"C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库")))
     backfill_parser.set_defaults(func=backfill)
+
+    rebuild_parser = sub.add_parser("rebuild-state", help="Rebuild local dedupe state from archived Markdown files.")
+    rebuild_parser.add_argument("--archive-root", default="archive")
+    rebuild_parser.add_argument("--state", default="state/articles.sqlite")
+    rebuild_parser.set_defaults(func=rebuild_state)
 
     return parser
 
