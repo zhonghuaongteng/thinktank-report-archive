@@ -32,6 +32,8 @@ powershell -ExecutionPolicy Bypass -File scripts\run_backfill_batch.ps1 -Batch 1
 
 Candidate source URLs are restricted to the institution's own site or subdomains. Event, people, podcast, project, topic, video, webinar, broad index, and announcement-style pages are filtered out before scoring. Backfill runs interleave feed, list/topic page, and sitemap candidates so one source type does not exhaust the per-institution limit.
 
+When a detail page exposes a source PDF and the extracted HTML body is short or does not match the article title, the crawler extracts bounded PDF text as the English source material. This prevents archive pollution from related-article blocks, navigation text, and institution landing-page recommendations.
+
 ## Outputs
 
 - `archive/{institution}/{year}/`: one Markdown file per article/report.

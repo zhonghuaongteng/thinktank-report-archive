@@ -1,10 +1,12 @@
 import unittest
+from io import BytesIO
 
 import httpx
+from reportlab.pdfgen import canvas
 
 from thinktank_watch.fetch import canonical_url, dedupe_key, make_client
-from thinktank_watch.fetch import check_pdf
-from thinktank_watch.models import ArticleCandidate
+from thinktank_watch.fetch import check_pdf, enrich_detail_text_from_pdf, fetch_detail
+from thinktank_watch.models import ArticleCandidate, Institution
 
 
 class StateAndDedupeTests(unittest.TestCase):
@@ -48,6 +50,70 @@ class StateAndDedupeTests(unittest.TestCase):
 
         self.assertEqual(checked.pdf_status, "200 application/pdf")
         self.assertEqual(checked.published_date, "2026-06-29")
+
+    def test_pdf_text_fallback_replaces_misaligned_html_body(self):
+        pdf_buffer = BytesIO()
+        pdf = canvas.Canvas(pdf_buffer)
+        pdf.drawString(72, 760, "China-U.S. Cyber-Nuclear C3 Stability")
+        pdf.drawString(72, 740, "This report examines cyber risks to nuclear command and control.")
+        pdf.save()
+        pdf_bytes = pdf_buffer.getvalue()
+
+        html = """
+        <html><head>
+          <meta property="og:title" content="China-U.S. Cyber-Nuclear C3 Stability">
+        </head><body>
+          <main>
+            <a href="/files/c3.pdf">Download PDF</a>
+            <p>Unrelated site recommendation text about a different commentary.</p>
+          </main>
+        </body></html>
+        """
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            if str(request.url).endswith("/article"):
+                return httpx.Response(200, text=html, request=request)
+            if request.method == "HEAD":
+                return httpx.Response(
+                    200,
+                    headers={"content-type": "application/pdf"},
+                    request=request,
+                )
+            return httpx.Response(
+                200,
+                headers={"content-type": "application/pdf"},
+                content=pdf_bytes,
+                request=request,
+            )
+
+        institution = Institution(
+            slug="carnegie-tech",
+            name="Carnegie Technology and International Affairs Program",
+            chinese_name="卡内基技术与国际事务项目",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://example.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+        candidate = ArticleCandidate(
+            institution_slug=institution.slug,
+            institution_name=institution.name,
+            institution_type=institution.institution_type,
+            title="China-U.S. Cyber-Nuclear C3 Stability",
+            url="https://example.org/article",
+        )
+
+        with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+            detail = fetch_detail(client, institution, candidate)
+            detail = check_pdf(client, detail)
+            detail = enrich_detail_text_from_pdf(client, detail)
+
+        self.assertIn("China-U.S. Cyber-Nuclear C3 Stability", detail.detail_text)
+        self.assertIn("nuclear command and control", detail.detail_text)
+        self.assertNotIn("Unrelated site recommendation", detail.detail_text)
 
 
 if __name__ == "__main__":

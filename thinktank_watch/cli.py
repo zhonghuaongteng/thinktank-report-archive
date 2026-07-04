@@ -13,6 +13,7 @@ from .brief import load_daily_brief_candidates, write_daily_brief
 from .config import load_institutions, load_priority_rules, load_topics
 from .fetch import (
     check_pdf,
+    enrich_detail_text_from_pdf,
     fetch_detail,
     fetch_feed_candidates,
     fetch_list_candidates,
@@ -156,6 +157,7 @@ def collect_candidates(
                     try:
                         candidate = fetch_detail(client, institution, candidate)
                         candidate = check_pdf(client, candidate)
+                        candidate = enrich_detail_text_from_pdf(client, candidate)
                     except httpx.HTTPError as exc:
                         candidate.fetch_status = fetch_status_from_http_error(exc)
                 collected.append(candidate)

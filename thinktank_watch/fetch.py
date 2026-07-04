@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import hashlib
+from io import BytesIO
+import math
+import re
 from datetime import datetime
 from email.utils import parsedate_to_datetime
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
@@ -8,6 +11,7 @@ from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 import feedparser
 import httpx
 from bs4 import BeautifulSoup
+from pypdf import PdfReader
 
 from .models import ArticleCandidate, Institution
 from .parsers.generic import (
@@ -26,6 +30,45 @@ USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36 "
     "thinktank-watch/0.1"
 )
+PDF_TEXT_MAX_PAGES = 10
+PDF_TEXT_MAX_CHARS = 24000
+TITLE_STOP_WORDS = {
+    "about",
+    "after",
+    "again",
+    "against",
+    "amid",
+    "analysis",
+    "and",
+    "are",
+    "between",
+    "brief",
+    "center",
+    "from",
+    "has",
+    "how",
+    "into",
+    "its",
+    "latest",
+    "lesson",
+    "new",
+    "not",
+    "note",
+    "policy",
+    "primer",
+    "report",
+    "research",
+    "should",
+    "that",
+    "the",
+    "their",
+    "this",
+    "through",
+    "what",
+    "when",
+    "where",
+    "with",
+}
 
 
 TRACKING_PARAMS = {"fbclid", "gclid", "mc_cid", "mc_eid"}
@@ -290,6 +333,68 @@ def check_pdf(client: httpx.Client, candidate: ArticleCandidate) -> ArticleCandi
             candidate.published_date = _date_from_feed(response.headers.get("last-modified", ""))
     except httpx.HTTPError as exc:
         candidate.pdf_status = f"error:{exc.__class__.__name__}"
+    return candidate
+
+
+def _title_terms(title: str) -> list[str]:
+    terms: list[str] = []
+    for token in re.findall(r"[a-z0-9]+", title.lower()):
+        if len(token) < 3 or token in TITLE_STOP_WORDS:
+            continue
+        terms.append(token)
+    return list(dict.fromkeys(terms))
+
+
+def detail_text_matches_title(text: str, title: str) -> bool:
+    terms = _title_terms(title)
+    if not terms:
+        return True
+    haystack = (text or "").lower()
+    matches = sum(1 for term in terms if term in haystack)
+    required = max(1, min(3, math.ceil(len(terms) * 0.5)))
+    return matches >= required
+
+
+def needs_pdf_text_fallback(candidate: ArticleCandidate) -> bool:
+    if not candidate.pdf_url:
+        return False
+    if not candidate.detail_text:
+        return True
+    if len(candidate.detail_text) < 800:
+        return True
+    return not detail_text_matches_title(candidate.detail_text[:4000], candidate.title)
+
+
+def extract_pdf_text(client: httpx.Client, pdf_url: str) -> str:
+    response = client.get(pdf_url, timeout=45, follow_redirects=True)
+    response.raise_for_status()
+    content_type = response.headers.get("content-type", "")
+    if "pdf" not in content_type.lower() and not response.content.startswith(b"%PDF"):
+        return ""
+    reader = PdfReader(BytesIO(response.content))
+    parts: list[str] = []
+    for page in reader.pages[:PDF_TEXT_MAX_PAGES]:
+        text = page.extract_text() or ""
+        text = norm(text)
+        if text:
+            parts.append(text)
+        if sum(len(part) for part in parts) >= PDF_TEXT_MAX_CHARS:
+            break
+    return norm(" ".join(parts))[:PDF_TEXT_MAX_CHARS]
+
+
+def enrich_detail_text_from_pdf(client: httpx.Client, candidate: ArticleCandidate) -> ArticleCandidate:
+    if not needs_pdf_text_fallback(candidate):
+        return candidate
+    try:
+        pdf_text = extract_pdf_text(client, candidate.pdf_url)
+    except Exception as exc:  # PDF text is a quality fallback; failed extraction should not block archiving.
+        suffix = f"text_error:{exc.__class__.__name__}"
+        candidate.pdf_status = f"{candidate.pdf_status}; {suffix}" if candidate.pdf_status else suffix
+        return candidate
+    if pdf_text and detail_text_matches_title(pdf_text[:4000], candidate.title):
+        candidate.detail_text = pdf_text
+        candidate.source_completeness = "full_text"
     return candidate
 
 
