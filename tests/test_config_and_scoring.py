@@ -76,6 +76,63 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertEqual(scored.topic_tags, ["中国与上海相关"])
         self.assertEqual(scored.translation_level, "summary")
 
+    def test_ai_index_report_is_priority_focus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="stanford-hai",
+            institution_name="Stanford HAI",
+            institution_type="university_research_center",
+            title="The 2026 AI Index Report",
+            url="https://example.org/ai-index/2026-ai-index-report",
+            summary="Annual measurement report on artificial intelligence trends, governance, investment, and research.",
+            published_date="2026-05-12",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("AI治理", scored.topic_tags)
+
+    def test_ai_surveillance_is_governance_focus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="carnegie-tech",
+            institution_name="Carnegie Technology and International Affairs Program",
+            institution_type="think_tank",
+            title="The Global Expansion of AI Surveillance",
+            url="https://example.org/research/ai-surveillance",
+            summary="A report on artificial intelligence surveillance and governance risks.",
+            published_date="2019-09-17",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("AI治理", scored.topic_tags)
+
+    def test_ai_standards_are_governance_focus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="brookings-cti",
+            institution_name="Brookings Center for Technology Innovation",
+            institution_type="think_tank",
+            title="G7 should accept AI standards offer, but make it enforceable",
+            url="https://example.org/articles/g7-ai-standards",
+            summary="AI standards and enforceable governance commitments for advanced economies.",
+            published_date="2026-07-01",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("AI治理", scored.topic_tags)
+
     def test_scoring_keeps_low_relevance_items_in_index_only(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")

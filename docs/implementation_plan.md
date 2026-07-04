@@ -14,6 +14,7 @@
 
 ```powershell
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli evaluate --batch 1 --limit 3
+C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli evaluate --institution carnegie-tech --limit 30 --backfill
 ```
 
 机构健康审计：
@@ -40,3 +41,10 @@ powershell -ExecutionPolicy Bypass -File scripts\run_backfill_batch.ps1 -Batch 1
 - `briefs/daily/<年份>/`：每日Markdown、HTML与PDF简报，进入私有GitHub仓库。
 - `state/articles.sqlite`：URL去重与抓取状态。
 - `C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库\06_数据资产\研报_国际智库抓取索引.csv`：知识库索引。
+
+## 质量控制
+
+- 候选源URL默认限制在机构自有域名或子域名内；外部媒体链接只作为正文或PDF线索，不作为独立归档源。
+- 活动、人物、播客、视频、网络研讨会和公告型页面在评分前过滤。
+- 对只有PDF但页面缺日期的报告，使用PDF `Last-Modified` 作为日期兜底，并在后续人工复核中保留修正空间。
+- 对全站 sitemap 较宽的机构，可配置 `sitemap_include_keywords`，先按URL技术主题词收窄，再进入评分。

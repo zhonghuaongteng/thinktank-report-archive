@@ -22,6 +22,17 @@ USER_AGENT = (
 
 
 TRACKING_PARAMS = {"fbclid", "gclid", "mc_cid", "mc_eid"}
+SOURCE_PATH_DENY_SEGMENTS = {
+    "events",
+    "event",
+    "people",
+    "person",
+    "podcast",
+    "podcasts",
+    "video",
+    "videos",
+    "webinars",
+}
 
 
 def canonical_url(url: str) -> str:
@@ -46,6 +57,20 @@ def dedupe_key(url: str) -> str:
     return hashlib.sha256(canonical_url(url).encode("utf-8")).hexdigest()[:16]
 
 
+def source_url_allowed(url: str, institution: Institution) -> bool:
+    parsed_source = urlparse(url)
+    source_host = parsed_source.netloc.lower()
+    home_host = urlparse(institution.homepage).netloc.lower()
+    if source_host.startswith("www."):
+        source_host = source_host[4:]
+    if home_host.startswith("www."):
+        home_host = home_host[4:]
+    if source_host != home_host and not source_host.endswith(f".{home_host}"):
+        return False
+    path_segments = {segment.lower() for segment in parsed_source.path.split("/") if segment}
+    return not (path_segments & SOURCE_PATH_DENY_SEGMENTS)
+
+
 def _date_from_feed(value: str) -> str:
     if not value:
         return ""
@@ -66,6 +91,8 @@ def fetch_feed_candidates(institution: Institution, limit: int = 20) -> list[Art
         for entry in parsed.entries[:limit]:
             link = getattr(entry, "link", "") or getattr(entry, "id", "")
             if not link:
+                continue
+            if not source_url_allowed(link, institution):
                 continue
             candidates.append(
                 ArticleCandidate(
@@ -100,6 +127,8 @@ def fetch_list_candidates(
             continue
         links = extract_list_links(response.text, page, limit)
         for link in links:
+            if not source_url_allowed(link, institution):
+                continue
             candidates.append(
                 ArticleCandidate(
                     institution_slug=institution.slug,
@@ -130,7 +159,14 @@ def fetch_sitemap_candidates(
         soup = BeautifulSoup(response.text, "xml")
         for node in soup.find_all("url"):
             loc = norm(node.loc.get_text()) if node.loc else ""
-            if not loc or not looks_like_detail_url(loc):
+            if not loc:
+                continue
+            if not source_url_allowed(loc, institution):
+                continue
+            if institution.sitemap_include_keywords:
+                if not any(keyword.lower() in loc.lower() for keyword in institution.sitemap_include_keywords):
+                    continue
+            elif not looks_like_detail_url(loc):
                 continue
             lastmod = canonical_date(node.lastmod.get_text()) if node.lastmod else ""
             candidates.append(
@@ -175,6 +211,8 @@ def check_pdf(client: httpx.Client, candidate: ArticleCandidate) -> ArticleCandi
     try:
         response = client.head(candidate.pdf_url, timeout=20, follow_redirects=True)
         candidate.pdf_status = f"{response.status_code} {response.headers.get('content-type', '')}".strip()
+        if not candidate.published_date:
+            candidate.published_date = _date_from_feed(response.headers.get("last-modified", ""))
     except httpx.HTTPError as exc:
         candidate.pdf_status = f"error:{exc.__class__.__name__}"
     return candidate

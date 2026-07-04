@@ -34,6 +34,7 @@ def load_institutions(config_dir: str | Path) -> list[Institution]:
                 list_pages=list(data.get("list_pages") or []),
                 topic_pages=list(data.get("topic_pages") or []),
                 sitemap_urls=list(data.get("sitemap_urls") or []),
+                sitemap_include_keywords=list(data.get("sitemap_include_keywords") or []),
                 notes=data.get("notes", ""),
             )
         )

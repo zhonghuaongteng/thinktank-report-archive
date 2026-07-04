@@ -24,6 +24,10 @@ class GenericParserTests(unittest.TestCase):
           <a href="/publications/knowledge-bases/to-do-list/">Tech Policy To-Do List</a>
           <a href="/publications/knowledge-bases/attack-tracker/">Non-Tariff Attack Tracker</a>
           <a href="/research/partners">Research Partners</a>
+          <a href="/en/community/hector-de-rivoire">See all posts</a>
+          <a href="/en/working-group-innovation-and-commercialisation">Working Group on Innovation and Commercialisation</a>
+          <a href="/people/jon-bateman">Jon Bateman commentary</a>
+          <a href="/en/wonk/call-ai-in-gov">Deadline extension: Global call for AI in government</a>
           <a href="/research/defense/resourcing-and-building-the-future-force">Resourcing and Building the Future Force</a>
           <a href="/publications/2026/ai-governance-export-controls/">AI governance report</a>
           <a href="/article/china-semiconductor-policy/">China semiconductor policy article</a>
@@ -92,6 +96,28 @@ class GenericParserTests(unittest.TestCase):
 
         self.assertEqual(detail.published_date, "2026-07-02")
         self.assertEqual(detail.title, "Semiconductor policy")
+
+    def test_parse_generic_detail_falls_back_to_visible_month_date(self):
+        html = """
+        <html><head><title>AI sandbox policy</title></head>
+        <body><main><p class="meta">March 18, 2026 — 8 minute read</p><p>AI governance sandbox text.</p></main></body></html>
+        """
+        institution = Institution(
+            slug="example",
+            name="Example",
+            chinese_name="示例",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P1",
+            batch=1,
+            homepage="https://example.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(html, "https://example.org/wonk/ai-sandbox-policy", institution)
+
+        self.assertEqual(detail.published_date, "2026-03-18")
 
 
 if __name__ == "__main__":

@@ -19,6 +19,7 @@ class Institution:
     list_pages: list[str] = field(default_factory=list)
     topic_pages: list[str] = field(default_factory=list)
     sitemap_urls: list[str] = field(default_factory=list)
+    sitemap_include_keywords: list[str] = field(default_factory=list)
     notes: str = ""
 
 

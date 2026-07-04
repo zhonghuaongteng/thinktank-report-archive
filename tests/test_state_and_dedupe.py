@@ -1,6 +1,10 @@
 import unittest
 
+import httpx
+
 from thinktank_watch.fetch import canonical_url, dedupe_key, make_client
+from thinktank_watch.fetch import check_pdf
+from thinktank_watch.models import ArticleCandidate
 
 
 class StateAndDedupeTests(unittest.TestCase):
@@ -21,6 +25,29 @@ class StateAndDedupeTests(unittest.TestCase):
 
         self.assertIn("Mozilla/5.0", user_agent)
         self.assertIn("thinktank-watch", user_agent)
+
+    def test_check_pdf_uses_last_modified_as_missing_date_fallback(self):
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(
+                200,
+                headers={"content-type": "application/pdf", "last-modified": "Mon, 29 Jun 2026 17:46:20 GMT"},
+                request=request,
+            )
+
+        candidate = ArticleCandidate(
+            institution_slug="stanford-hai",
+            institution_name="Stanford HAI",
+            institution_type="university_research_center",
+            title="The 2026 AI Index Report",
+            url="https://example.org/report",
+            pdf_url="https://example.org/report.pdf",
+        )
+
+        with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+            checked = check_pdf(client, candidate)
+
+        self.assertEqual(checked.pdf_status, "200 application/pdf")
+        self.assertEqual(checked.published_date, "2026-06-29")
 
 
 if __name__ == "__main__":

@@ -110,7 +110,7 @@ def collect_candidates(
 def evaluate(args: argparse.Namespace) -> int:
     institutions, topics, priorities = _load_config()
     selected = _select_institutions(institutions, args.batch, args.institution)
-    candidates = collect_candidates(selected, args.limit, include_details=not args.no_details)
+    candidates = collect_candidates(selected, args.limit, include_details=not args.no_details, backfill=args.backfill)
     scored = [score_candidate(item, topics, priorities) for item in candidates]
     for item in sorted(scored, key=lambda row: (row.priority, -row.score, row.institution_slug)):
         print(
@@ -207,6 +207,7 @@ def build_parser() -> argparse.ArgumentParser:
     eval_parser.add_argument("--institution")
     eval_parser.add_argument("--limit", type=int, default=5)
     eval_parser.add_argument("--no-details", action="store_true")
+    eval_parser.add_argument("--backfill", action="store_true", help="Evaluate feeds, lists, and sitemap backfill sources without writing.")
     eval_parser.add_argument("--dry-run", action="store_true", help="Alias for evaluate compatibility.")
     eval_parser.set_defaults(func=evaluate)
 

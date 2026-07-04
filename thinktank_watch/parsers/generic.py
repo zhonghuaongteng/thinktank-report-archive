@@ -86,7 +86,29 @@ CONTENT_TYPE_SEGMENTS = {
     "resource",
     "resources",
 }
-EXCLUDED_PATH_SEGMENTS = {"books", "knowledge-bases", "podcasts"}
+EXCLUDED_LAST_SEGMENT_PREFIXES = ("call-", "deadline-", "apply-", "registration")
+EXCLUDED_PATH_SEGMENTS = {
+    "about",
+    "books",
+    "community",
+    "experts",
+    "knowledge-bases",
+    "people",
+    "podcasts",
+    "staff",
+    "working-group-data-governance",
+    "working-group-future-of-work",
+    "working-group-innovation-and-commercialisation",
+    "working-group-responsible-ai",
+}
+VISIBLE_DATE_RE = re.compile(
+    r"\b("
+    r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+20\d{2}"
+    r"|"
+    r"\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+20\d{2}"
+    r")\b",
+    re.IGNORECASE,
+)
 
 
 def norm(value: str | None) -> str:
@@ -99,9 +121,10 @@ def canonical_date(value: str) -> str:
         return ""
     if "T" in value:
         value = value.split("T", 1)[0]
-    for fmt in ("%Y-%m-%d", "%Y/%m/%d", "%Y%m%d"):
+    for fmt in ("%Y-%m-%d", "%Y/%m/%d", "%Y%m%d", "%B %d, %Y", "%b %d, %Y", "%d %B %Y", "%d %b %Y"):
         try:
-            return datetime.strptime(value[:10], fmt).date().isoformat()
+            parse_value = value[:10] if fmt in {"%Y-%m-%d", "%Y/%m/%d", "%Y%m%d"} else value.replace(".", "")
+            return datetime.strptime(parse_value, fmt).date().isoformat()
         except ValueError:
             pass
     match = re.search(r"(\d{4})[/-](\d{1,2})[/-](\d{1,2})", value)
@@ -109,6 +132,11 @@ def canonical_date(value: str) -> str:
         year, month, day = match.groups()
         return f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
     return value[:10]
+
+
+def visible_date(text: str) -> str:
+    match = VISIBLE_DATE_RE.search(norm(text))
+    return canonical_date(match.group(1)) if match else ""
 
 
 def meta_values(soup: BeautifulSoup, key: str) -> list[str]:
@@ -179,6 +207,8 @@ def looks_like_detail_url(url: str, text: str = "") -> bool:
     path_segments = [segment for segment in parsed.path.split("/") if segment]
     if len(path_segments) < 2 or path_segments[-1].lower() in BROAD_ENDPOINTS:
         return False
+    if path_segments[-1].lower().startswith(EXCLUDED_LAST_SEGMENT_PREFIXES):
+        return False
     if any(segment.lower() in EXCLUDED_PATH_SEGMENTS for segment in path_segments):
         return False
     haystack = f"{path_segments[-1]} {text}".lower()
@@ -207,12 +237,14 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
     time_node = soup.find("time")
     if time_node:
         time_date = norm(time_node.get("datetime") or time_node.get_text(" "))
+    body_text = norm(soup.get_text(" "))
     published = first_nonempty(
         meta_values(soup, "citation_publication_date"),
         meta_values(soup, "article:published_time"),
         meta_values(soup, "date"),
         json_primary.get("datePublished") or json_primary.get("dateCreated") or json_primary.get("dateModified"),
         time_date,
+        visible_date(body_text),
     )
     authors = meta_values(soup, "citation_author") or meta_values(soup, "author") or authors_from_json_ld(json_primary)
     keywords: list[str] = []
