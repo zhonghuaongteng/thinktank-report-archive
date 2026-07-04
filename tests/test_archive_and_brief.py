@@ -111,6 +111,31 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("新增索引", brief)
         self.assertIn("制造业", brief)
 
+    def test_render_daily_brief_limits_expanded_priority_items(self):
+        candidates = [
+            ArticleCandidate(
+                institution_slug="govai",
+                institution_name="GovAI",
+                institution_type="think_tank",
+                title=f"AI governance report {index}",
+                chinese_title=f"AI治理报告{index}",
+                url=f"https://example.org/{index}",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P1",
+                topic_tags=["AI治理"],
+                chinese_summary=f"摘要{index}",
+            )
+            for index in range(1, 15)
+        ]
+
+        brief = render_daily_brief_markdown("2026-07-04", candidates)
+
+        self.assertEqual(brief.count("### [P1]"), 12)
+        self.assertIn("### [P1] AI治理报告12", brief)
+        self.assertNotIn("### [P1] AI治理报告13", brief)
+        self.assertIn("- [P1] GovAI｜AI治理报告13｜https://example.org/13", brief)
+
     def test_write_daily_brief_creates_pdf_when_reportlab_is_available(self):
         try:
             import reportlab  # noqa: F401

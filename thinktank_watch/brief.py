@@ -8,9 +8,14 @@ from textwrap import wrap
 from .models import ArticleCandidate
 
 
+MAX_EXPANDED_PRIORITY_ITEMS = 12
+
+
 def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
     priority_items = [item for item in candidates if item.priority in {"P0", "P1"}]
-    index_items = [item for item in candidates if item.priority not in {"P0", "P1"}]
+    expanded_priority_items = priority_items[:MAX_EXPANDED_PRIORITY_ITEMS]
+    overflow_priority_items = priority_items[MAX_EXPANDED_PRIORITY_ITEMS:]
+    index_items = [*overflow_priority_items, *[item for item in candidates if item.priority not in {"P0", "P1"}]]
     topic_counter: Counter[str] = Counter(tag for item in candidates for tag in item.topic_tags)
 
     lines = [
@@ -29,7 +34,7 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
     if not priority_items:
         lines.extend(["本日无P0/P1新增重点。", ""])
     else:
-        for item in priority_items:
+        for item in expanded_priority_items:
             title = item.chinese_title or item.title
             lines.extend(
                 [
