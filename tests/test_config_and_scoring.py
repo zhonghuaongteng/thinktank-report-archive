@@ -327,6 +327,25 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertEqual(scored.priority, "P3")
         self.assertEqual(scored.translation_level, "index_only")
 
+    def test_single_incidental_ai_mention_does_not_promote_general_article(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="csis",
+            institution_name="CSIS",
+            institution_type="think_tank",
+            title="Russian Blood and Treasure: The Ballooning Costs of Putin's War",
+            url="https://www.csis.org/analysis/russian-blood-and-treasure-ballooning-costs-putins-war",
+            summary="Ukraine conducted deep strikes into Russian territory, including with AI-enabled drones.",
+            published_date="2026-07-01",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P3")
+        self.assertNotIn("AI治理", scored.topic_tags)
+
 
 if __name__ == "__main__":
     unittest.main()

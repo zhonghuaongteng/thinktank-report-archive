@@ -89,6 +89,24 @@ class GenericParserTests(unittest.TestCase):
             ["https://oecd.ai/en/wonk/sandboxes-matter-responsible-innovation-public-trust"],
         )
 
+    def test_extract_list_links_skips_publication_collection_pages(self):
+        html = """
+        <html><body>
+          <a href="/publications/working-papers">Working Papers</a>
+          <a href="/publications/policy-briefs">Policy Briefs</a>
+          <a href="/publications/analyses">Analyses</a>
+          <a href="/dataset/european-natural-gas-imports">European natural gas imports</a>
+          <a href="/working-paper/artificial-intelligence-competition-europe-role-dma-article-67">Artificial-intelligence competition in Europe</a>
+        </body></html>
+        """
+
+        links = extract_list_links(html, "https://www.bruegel.org/publications", limit=10)
+
+        self.assertEqual(
+            links,
+            ["https://www.bruegel.org/working-paper/artificial-intelligence-competition-europe-role-dma-article-67"],
+        )
+
     def test_parse_generic_detail_uses_json_ld_date_and_authors(self):
         html = """
         <html><head>
@@ -271,6 +289,43 @@ class GenericParserTests(unittest.TestCase):
             detail.detail_text,
             "Companies need trustworthy AI systems. The guidance helps businesses manage AI risks across value chains.",
         )
+
+    def test_parse_generic_detail_skips_short_article_shell_for_main_body(self):
+        html = """
+        <html><head>
+          <title>AI Has a Memory Problem</title>
+          <meta name="description" content="Memory capacity is a constraint for AI deployment.">
+        </head><body>
+          <article><h1>AI Has a Memory Problem</h1><p>Photo: Stock image</p></article>
+          <main>
+            <p>AI data centers increasingly depend on high-bandwidth memory supply.</p>
+            <p>Advanced memory chips and packaging capacity are becoming a bottleneck for AI deployment.</p>
+            <p>Policy responses should expand manufacturing capacity, improve supply-chain visibility, and support industrial competitiveness.</p>
+            <p>Public strategy should treat memory as part of the AI infrastructure stack rather than a generic semiconductor input.</p>
+            <p>These constraints affect data centers, cloud providers, and national AI strategies across advanced economies.</p>
+            <p>Without a resilient memory supply base, AI diffusion could slow even when compute investment remains strong.</p>
+          </main>
+        </body></html>
+        """
+        institution = Institution(
+            slug="csis",
+            name="CSIS",
+            chinese_name="战略与国际研究中心",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=2,
+            homepage="https://www.csis.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(html, "https://www.csis.org/analysis/ai-has-memory-problem", institution)
+
+        self.assertIn("high-bandwidth memory supply", detail.detail_text)
+        self.assertIn("AI infrastructure stack", detail.detail_text)
+        self.assertNotEqual(detail.detail_text, "AI Has a Memory Problem Photo: Stock image")
+        self.assertEqual(detail.source_completeness, "full_text")
 
     def test_parse_generic_detail_ignores_external_reference_pdfs(self):
         html = """

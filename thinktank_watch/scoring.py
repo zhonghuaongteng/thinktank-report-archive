@@ -17,6 +17,7 @@ REPORT_TYPES = {
 }
 CONTEXT_ONLY_TOPICS = {"中国与上海相关"}
 CONTEXT_ONLY_PRIORITY_CAP = "P2"
+STANDALONE_AI_KEYWORDS = {"AI", "A.I."}
 
 
 def _contains_keyword(text: str, keyword: str) -> bool:
@@ -53,7 +54,12 @@ def score_candidate(
     )
     topic_scores: dict[str, int] = {}
     for topic in topics:
-        matches = sum(1 for keyword in topic.keywords if _contains_keyword(text, keyword))
+        matched_keywords = [keyword for keyword in topic.keywords if _contains_keyword(text, keyword)]
+        if topic.name == "AI治理" and set(matched_keywords) <= STANDALONE_AI_KEYWORDS:
+            title_mentions_ai = any(_contains_keyword(scored.title, keyword) for keyword in STANDALONE_AI_KEYWORDS)
+            if not title_mentions_ai and scored.content_type not in REPORT_TYPES:
+                matched_keywords = []
+        matches = len(matched_keywords)
         if matches:
             topic_scores[topic.name] = topic.weight + max(0, matches - 1)
 

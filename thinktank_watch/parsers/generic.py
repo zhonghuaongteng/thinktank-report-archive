@@ -16,6 +16,7 @@ ALLOW_TERMS = (
     "report",
     "research",
     "analysis",
+    "analyses",
     "article",
     "brief",
     "paper",
@@ -61,19 +62,26 @@ BROAD_ENDPOINTS = {
     "research-programs",
     "resource",
     "resources",
+    "datasets",
     "testimonies-filings",
     "topic",
     "topics",
+    "working-papers",
+    "policy-briefs",
 }
 NON_CONTENT_LAST_SEGMENTS = {
     "ai-publications",
+    "analyses",
     "copyright",
+    "datasets",
     "incidents",
     "overview",
+    "policy-briefs",
     "privacy",
     "privacy-policy",
     "terms",
     "terms-of-use",
+    "working-papers",
 }
 CONTENT_TYPE_SEGMENTS = {
     "analysis",
@@ -138,6 +146,7 @@ DETAIL_TEXT_SELECTORS = (
     ".content-body",
     "main",
 )
+MIN_DETAIL_TEXT_LENGTH = 500
 
 
 def norm(value: str | None) -> str:
@@ -304,13 +313,16 @@ def extract_pdf_url(soup: BeautifulSoup, page_url: str, institution: Institution
 def extract_detail_text(soup: BeautifulSoup) -> str:
     for node in soup(["script", "style", "nav", "footer", "header", "form", "aside", "noscript", "svg"]):
         node.decompose()
+    candidates: list[str] = []
     for selector in DETAIL_TEXT_SELECTORS:
-        node = soup.select_one(selector)
-        if not node:
-            continue
-        text = norm(node.get_text(" "))
-        if text:
-            return text
+        for node in soup.select(selector):
+            text = norm(node.get_text(" "))
+            if len(text) >= MIN_DETAIL_TEXT_LENGTH:
+                return text
+            if text:
+                candidates.append(text)
+    if candidates:
+        return max(candidates, key=len)
     return norm(soup.get_text(" "))
 
 
@@ -374,6 +386,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
     pdf_url = extract_pdf_url(soup, url, institution)
 
     text = extract_detail_text(soup)
+    completeness = "full_text" if pdf_url or len(text) >= MIN_DETAIL_TEXT_LENGTH else "summary_only"
 
     return ArticleCandidate(
         institution_slug=institution.slug,
@@ -387,7 +400,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
         authors=authors,
         keywords=keywords,
         pdf_url=pdf_url,
-        source_completeness="summary_only" if not pdf_url else "full_text",
+        source_completeness=completeness,
         copyright_boundary=institution.copyright_boundary,
         detail_text=text,
         fetch_status="detail_ok",

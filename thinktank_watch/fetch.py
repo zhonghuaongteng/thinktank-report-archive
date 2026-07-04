@@ -32,6 +32,7 @@ USER_AGENT = (
 )
 PDF_TEXT_MAX_PAGES = 10
 PDF_TEXT_MAX_CHARS = 24000
+PDF_TEXT_MIN_HTML_CHARS = 5000
 TITLE_STOP_WORDS = {
     "about",
     "after",
@@ -96,7 +97,10 @@ SOURCE_PATH_DENY_SEGMENTS = {
 }
 SOURCE_LAST_SEGMENT_DENY = {
     "commentary",
+    "analyses",
+    "datasets",
     "index",
+    "policy-briefs",
     "publication",
     "publications",
     "pubs",
@@ -104,6 +108,7 @@ SOURCE_LAST_SEGMENT_DENY = {
     "research-and-commentary",
     "topic",
     "topics",
+    "working-papers",
 }
 
 
@@ -360,7 +365,7 @@ def needs_pdf_text_fallback(candidate: ArticleCandidate) -> bool:
         return False
     if not candidate.detail_text:
         return True
-    if len(candidate.detail_text) < 800:
+    if len(candidate.detail_text) < PDF_TEXT_MIN_HTML_CHARS:
         return True
     return not detail_text_matches_title(candidate.detail_text[:4000], candidate.title)
 
