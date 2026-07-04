@@ -29,6 +29,30 @@ class FetchCandidateTests(unittest.TestCase):
         self.assertFalse(source_url_allowed("https://www.cnbc.com/2026/06/17/g7-ai.html", institution))
         self.assertFalse(source_url_allowed("https://www.brookings.edu/podcast/ai-governance/", institution))
 
+    def test_source_url_allowed_rejects_policy_and_platform_index_pages(self):
+        institution = Institution(
+            slug="itif",
+            name="Information Technology and Innovation Foundation",
+            chinese_name="信息技术与创新基金会",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://itif.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(source_url_allowed("https://itif.org/publications/2015/01/10/privacy/", institution))
+        self.assertFalse(source_url_allowed("https://itif.org/publications/2015/01/10/copyright/", institution))
+        self.assertFalse(source_url_allowed("https://itif.org/en/ai-publications", institution))
+        self.assertTrue(
+            source_url_allowed(
+                "https://itif.org/publications/2026/06/24/economic-consequences-of-section-232-tariffs-on-semiconductor-imports/",
+                institution,
+            )
+        )
+
     def test_source_url_allowed_accepts_configured_auxiliary_domains(self):
         institution = Institution(
             slug="aspi",

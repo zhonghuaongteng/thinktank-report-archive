@@ -24,6 +24,7 @@ ALLOW_TERMS = (
     "insight",
 )
 BROAD_ENDPOINTS = {
+    "ai-publications",
     "analysis",
     "article",
     "articles",
@@ -64,6 +65,16 @@ BROAD_ENDPOINTS = {
     "topic",
     "topics",
 }
+NON_CONTENT_LAST_SEGMENTS = {
+    "ai-publications",
+    "copyright",
+    "incidents",
+    "overview",
+    "privacy",
+    "privacy-policy",
+    "terms",
+    "terms-of-use",
+}
 CONTENT_TYPE_SEGMENTS = {
     "analysis",
     "article",
@@ -85,6 +96,7 @@ CONTENT_TYPE_SEGMENTS = {
     "research_reports",
     "resource",
     "resources",
+    "wonk",
 }
 EXCLUDED_LAST_SEGMENT_PREFIXES = ("call-", "deadline-", "apply-", "registration")
 EXCLUDED_LAST_SEGMENT_SUBSTRINGS = ("integrity-statement", "research-priorities")
@@ -116,6 +128,15 @@ VISIBLE_DATE_RE = re.compile(
     r"\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+20\d{2}"
     r")\b",
     re.IGNORECASE,
+)
+DETAIL_TEXT_SELECTORS = (
+    ".article-wrapper",
+    "article",
+    ".article-body",
+    ".post-content",
+    ".entry-content",
+    ".content-body",
+    "main",
 )
 
 
@@ -279,12 +300,27 @@ def extract_pdf_url(soup: BeautifulSoup, page_url: str, institution: Institution
     return ""
 
 
+def extract_detail_text(soup: BeautifulSoup) -> str:
+    for node in soup(["script", "style", "nav", "footer", "header", "form", "aside", "noscript", "svg"]):
+        node.decompose()
+    for selector in DETAIL_TEXT_SELECTORS:
+        node = soup.select_one(selector)
+        if not node:
+            continue
+        text = norm(node.get_text(" "))
+        if text:
+            return text
+    return norm(soup.get_text(" "))
+
+
 def looks_like_detail_url(url: str, text: str = "") -> bool:
     parsed = urlparse(url)
     path_segments = [segment for segment in parsed.path.split("/") if segment]
     if len(path_segments) < 2 or path_segments[-1].lower() in BROAD_ENDPOINTS:
         return False
     last_segment = path_segments[-1].lower()
+    if last_segment in NON_CONTENT_LAST_SEGMENTS:
+        return False
     if last_segment.startswith(EXCLUDED_LAST_SEGMENT_PREFIXES):
         return False
     if any(token in last_segment for token in EXCLUDED_LAST_SEGMENT_SUBSTRINGS):
@@ -336,9 +372,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
 
     pdf_url = extract_pdf_url(soup, url, institution)
 
-    for node in soup(["script", "style", "nav", "footer", "header", "form"]):
-        node.decompose()
-    text = norm(soup.get_text(" "))
+    text = extract_detail_text(soup)
 
     return ArticleCandidate(
         institution_slug=institution.slug,

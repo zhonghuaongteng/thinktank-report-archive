@@ -70,6 +70,25 @@ class GenericParserTests(unittest.TestCase):
             ["https://www.atlanticcouncil.org/in-depth-research-reports/report/commission-on-ai/"],
         )
 
+    def test_extract_list_links_skips_platform_index_and_policy_pages(self):
+        html = """
+        <html><body>
+          <a href="/en/ai-publications">Papers & Publications</a>
+          <a href="/en/incidents">OECD AI Incidents Monitor</a>
+          <a href="/en/transparency/overview">HAIP Reporting Framework</a>
+          <a href="/publications/2015/01/10/copyright/">Copyright Notice</a>
+          <a href="/publications/2015/01/10/privacy/">Privacy Policy</a>
+          <a href="/en/wonk/sandboxes-matter-responsible-innovation-public-trust">Why AI Sandboxes matter for responsible innovation and public trust</a>
+        </body></html>
+        """
+
+        links = extract_list_links(html, "https://oecd.ai/en/wonk", limit=10)
+
+        self.assertEqual(
+            links,
+            ["https://oecd.ai/en/wonk/sandboxes-matter-responsible-innovation-public-trust"],
+        )
+
     def test_parse_generic_detail_uses_json_ld_date_and_authors(self):
         html = """
         <html><head>
@@ -189,6 +208,42 @@ class GenericParserTests(unittest.TestCase):
         detail = parse_generic_detail(html, "https://www.csis.org/analysis/what-know-about-chinese-ai-models", institution)
 
         self.assertEqual(detail.published_date, "2026-07-02")
+
+    def test_parse_generic_detail_prefers_article_body_container(self):
+        html = """
+        <html><head>
+          <title>Responsible AI guidance</title>
+          <meta name="description" content="Responsible AI guidance summary.">
+        </head><body>
+          <div class="policy-menu">AI Incidents Policy areas Papers & Publications</div>
+          <main>
+            <div class="article-wrapper">
+              <p>Companies need trustworthy AI systems.</p>
+              <p>The guidance helps businesses manage AI risks across value chains.</p>
+            </div>
+          </main>
+          <aside>Related posts and navigation links</aside>
+        </body></html>
+        """
+        institution = Institution(
+            slug="oecd-ai",
+            name="OECD.AI Policy Observatory",
+            chinese_name="经合组织人工智能政策观察站",
+            country_region="International",
+            institution_type="intergovernmental",
+            priority="P0",
+            batch=1,
+            homepage="https://oecd.ai/",
+            parser="generic",
+            copyright_boundary="metadata_summary_archive",
+        )
+
+        detail = parse_generic_detail(html, "https://oecd.ai/en/wonk/responsible-ai-guidance", institution)
+
+        self.assertEqual(
+            detail.detail_text,
+            "Companies need trustworthy AI systems. The guidance helps businesses manage AI risks across value chains.",
+        )
 
     def test_parse_generic_detail_ignores_external_reference_pdfs(self):
         html = """

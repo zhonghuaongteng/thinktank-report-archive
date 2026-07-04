@@ -211,6 +211,26 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("AI治理", scored.topic_tags)
 
+    def test_national_security_alone_does_not_create_defense_ai_tag(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="Information Technology and Innovation Foundation",
+            institution_type="think_tank",
+            title="Economic Consequences of Section 232 Tariffs on Semiconductor Imports",
+            url="https://itif.org/publications/semiconductor-tariffs/",
+            summary="Semiconductor tariffs imposed on national security grounds would raise ICT prices and reduce economic growth.",
+            published_date="2026-06-24",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn("半导体", scored.topic_tags)
+        self.assertIn("科技治理", scored.topic_tags)
+        self.assertNotIn("国防AI", scored.topic_tags)
+
     def test_scoring_keeps_low_relevance_items_in_index_only(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")

@@ -10,7 +10,14 @@ import httpx
 from bs4 import BeautifulSoup
 
 from .models import ArticleCandidate, Institution
-from .parsers.generic import canonical_date, extract_list_links, looks_like_detail_url, norm, parse_generic_detail
+from .parsers.generic import (
+    NON_CONTENT_LAST_SEGMENTS,
+    canonical_date,
+    extract_list_links,
+    looks_like_detail_url,
+    norm,
+    parse_generic_detail,
+)
 from .parsers.rand import parse_rand_detail
 
 
@@ -79,7 +86,8 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
     if not any(source_host == host or source_host.endswith(f".{host}") for host in allowed_hosts):
         return False
     path_segments = {segment.lower() for segment in parsed_source.path.split("/") if segment}
-    return not (path_segments & SOURCE_PATH_DENY_SEGMENTS)
+    last_segment = parsed_source.path.rstrip("/").split("/")[-1].lower()
+    return not (path_segments & SOURCE_PATH_DENY_SEGMENTS) and last_segment not in NON_CONTENT_LAST_SEGMENTS
 
 
 def _date_from_feed(value: str) -> str:
