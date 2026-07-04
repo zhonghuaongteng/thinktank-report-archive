@@ -12,7 +12,7 @@ pdf_url: https://www.adalovelaceinstitute.org/wp-content/uploads/pdfs/34179/navi
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: ["Emily Tanner", "Renate Samson", "Emily Tanner", "Renate Samson"]
-keywords: []
+keywords: ["AI治理"]
 subjects: []
 topic_tags: ["AI治理"]
 priority: P1

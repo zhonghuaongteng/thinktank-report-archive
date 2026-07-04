@@ -12,7 +12,7 @@ pdf_url: https://s3.us-east-1.amazonaws.com/files.cnas.org/documents/Promethean-
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: []
-keywords: []
+keywords: ["AI治理", "中国与上海相关"]
 subjects: []
 topic_tags: ["AI治理", "中国与上海相关"]
 priority: P0

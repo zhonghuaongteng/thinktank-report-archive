@@ -37,10 +37,15 @@ def yaml_list(values: list[str]) -> str:
     return "[" + ", ".join('"' + value.replace('"', '\\"') + '"' for value in values) + "]"
 
 
+def yaml_scalar(key: str, value: str) -> str:
+    return f"{key}: {value}" if value else f"{key}:"
+
+
 def build_markdown(candidate: ArticleCandidate) -> str:
     title = candidate.chinese_title or candidate.title
     english_title = candidate.title.replace('"', '\\"')
     chinese_title = title.replace('"', '\\"')
+    effective_keywords = candidate.keywords or candidate.subjects or candidate.topic_tags
     frontmatter = [
         "---",
         f"institution: {candidate.institution_name}",
@@ -50,13 +55,13 @@ def build_markdown(candidate: ArticleCandidate) -> str:
         f"source_completeness: {candidate.source_completeness}",
         f"english_title: \"{english_title}\"",
         f"chinese_title: \"{chinese_title}\"",
-        f"published_date: {candidate.published_date}",
+        yaml_scalar("published_date", candidate.published_date),
         f"source_url: {candidate.url}",
-        f"pdf_url: {candidate.pdf_url}",
-        f"pdf_status: {candidate.pdf_status}",
-        f"external_source_url: {candidate.external_source_url}",
+        yaml_scalar("pdf_url", candidate.pdf_url),
+        yaml_scalar("pdf_status", candidate.pdf_status),
+        yaml_scalar("external_source_url", candidate.external_source_url),
         f"authors: {yaml_list(candidate.authors)}",
-        f"keywords: {yaml_list(candidate.keywords)}",
+        f"keywords: {yaml_list(effective_keywords)}",
         f"subjects: {yaml_list(candidate.subjects)}",
         f"topic_tags: {yaml_list(candidate.topic_tags)}",
         f"priority: {candidate.priority}",
@@ -83,7 +88,7 @@ def build_markdown(candidate: ArticleCandidate) -> str:
         f"- 发布日期：{candidate.published_date or '待核验'}",
         f"- 来源链接：{candidate.url}",
         f"- PDF链接：{candidate.pdf_url or '无'}",
-        f"- 关键词：{', '.join(candidate.keywords or candidate.subjects) or '待抽取'}",
+        f"- 关键词：{', '.join(effective_keywords) or '待抽取'}",
         f"- 主题标签：{', '.join(candidate.topic_tags) or '待分类'}",
         f"- 优先级：{candidate.priority}",
         "",

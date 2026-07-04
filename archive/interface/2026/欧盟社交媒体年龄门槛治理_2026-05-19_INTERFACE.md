@@ -12,7 +12,7 @@ pdf_url: https://www.senato.it/leg/19/BGT/Schede/FascicoloSchedeDDL/ebook/58233.
 pdf_status: 202 text/html; charset=UTF-8
 external_source_url: 
 authors: []
-keywords: []
+keywords: ["AI治理", "数字经济"]
 subjects: []
 topic_tags: ["AI治理", "数字经济"]
 priority: P1

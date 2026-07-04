@@ -12,7 +12,7 @@ pdf_url: https://www.eurohpc-ju.europa.eu/document/download/47492db7-592e-4ad8-b
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: []
-keywords: []
+keywords: ["AI治理", "半导体", "数字经济"]
 subjects: []
 topic_tags: ["AI治理", "半导体", "数字经济"]
 priority: P0

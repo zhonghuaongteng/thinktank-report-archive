@@ -12,7 +12,7 @@ pdf_url: https://www.atlanticcouncil.org/wp-content/uploads/2026/06/atlantic-cou
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: ["Nancy Messieh"]
-keywords: []
+keywords: ["AI治理"]
 subjects: []
 topic_tags: ["AI治理"]
 priority: P1

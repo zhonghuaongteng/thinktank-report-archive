@@ -12,13 +12,14 @@ pdf_url: https://assets.carnegieendowment.org/static/files/files__WP-Feldstein-A
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: ["Feldstein, Steve"]
-keywords: []
+keywords: ["AI治理", "科技治理", "数字经济"]
 subjects: []
 topic_tags: ["AI治理", "科技治理", "数字经济"]
 priority: P1
 score: 5
 translation_level: full_or_long
 copyright_boundary: private_archive
+fetch_status: detail_ok
 ---
 
 # AI监控的全球扩张

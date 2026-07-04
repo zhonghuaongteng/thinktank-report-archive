@@ -12,13 +12,14 @@ pdf_url:
 pdf_status: none
 external_source_url: 
 authors: []
-keywords: []
+keywords: ["AI治理", "科技创新"]
 subjects: []
 topic_tags: ["AI治理", "科技创新"]
 priority: P1
 score: 5
 translation_level: full_or_long
 copyright_boundary: private_archive
+fetch_status: detail_ok
 ---
 
 # 全球研究者竞逐组织AI未来议题

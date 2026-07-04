@@ -12,13 +12,14 @@ pdf_url:
 pdf_status: none
 external_source_url: 
 authors: []
-keywords: []
+keywords: ["AI治理", "科技治理"]
 subjects: []
 topic_tags: ["AI治理", "科技治理"]
 priority: P1
 score: 8
 translation_level: full_or_long
 copyright_boundary: private_archive
+fetch_status: detail_ok
 ---
 
 # G7应接受AI标准提议但强化可执行性

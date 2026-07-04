@@ -12,13 +12,14 @@ pdf_url: https://assets.carnegieendowment.org/static/files/files__WP_Borghard_Fi
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: ["Borghard, Erica"]
-keywords: []
+keywords: ["数字经济", "科技治理", "国防AI"]
 subjects: []
 topic_tags: ["数字经济", "科技治理", "国防AI"]
 priority: P1
 score: 7
 translation_level: full_or_long
 copyright_boundary: private_archive
+fetch_status: detail_ok
 ---
 
 # 将金融机构网络威胁作为国家安全问题应对

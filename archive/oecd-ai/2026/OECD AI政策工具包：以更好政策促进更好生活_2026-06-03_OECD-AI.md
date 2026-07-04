@@ -12,13 +12,14 @@ pdf_url:
 pdf_status: none
 external_source_url: 
 authors: []
-keywords: []
+keywords: ["AI治理", "科技治理"]
 subjects: []
 topic_tags: ["AI治理", "科技治理"]
 priority: P1
 score: 5
 translation_level: full_or_long
 copyright_boundary: metadata_summary_archive
+fetch_status: detail_ok
 ---
 
 # OECD AI政策工具包：以更好政策促进更好生活

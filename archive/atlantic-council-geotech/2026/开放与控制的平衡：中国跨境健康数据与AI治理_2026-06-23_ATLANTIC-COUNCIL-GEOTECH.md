@@ -12,7 +12,7 @@ pdf_url: https://www.atlanticcouncil.org/wp-content/uploads/2026/06/cross-border
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: ["Nitansha"]
-keywords: []
+keywords: ["AI治理", "中国与上海相关", "国防AI"]
 subjects: []
 topic_tags: ["AI治理", "中国与上海相关", "国防AI"]
 priority: P0

@@ -56,6 +56,26 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("## 中文摘要与研判", markdown)
         self.assertIn("## English Source Material", markdown)
 
+    def test_build_markdown_uses_topic_tags_as_keyword_fallback(self):
+        candidate = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="ITIF",
+            institution_type="think_tank",
+            title="AI policy note",
+            chinese_title="AI政策笔记",
+            url="https://example.org/publications/2026/ai-policy-note/",
+            published_date="2026-07-01",
+            priority="P1",
+            topic_tags=["AI治理", "科技创新"],
+        )
+
+        markdown = build_markdown(candidate)
+
+        self.assertIn('keywords: ["AI治理", "科技创新"]', markdown)
+        self.assertIn("- 关键词：AI治理, 科技创新", markdown)
+        self.assertIn("\npdf_url:\n", markdown)
+        self.assertNotIn("pdf_url: \n", markdown)
+
     def test_write_article_uses_undated_directory_for_missing_dates(self):
         candidate = ArticleCandidate(
             institution_slug="itif",

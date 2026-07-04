@@ -12,7 +12,7 @@ pdf_url: https://www.adalovelaceinstitute.org/wp-content/uploads/pdfs/32617/the-
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: ["Harry Farmer", "Julia Smakman", "Michael Birtwistle", "Harry Farmer", "Julia Smakman", "Michael Birtwistle"]
-keywords: []
+keywords: ["AI治理"]
 subjects: []
 topic_tags: ["AI治理"]
 priority: P1

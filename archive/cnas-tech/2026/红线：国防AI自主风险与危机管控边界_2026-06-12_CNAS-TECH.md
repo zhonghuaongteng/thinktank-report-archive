@@ -12,13 +12,14 @@ pdf_url: https://s3.us-east-1.amazonaws.com/files.cnas.org/documents/Red-Lines_T
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: []
-keywords: []
+keywords: ["AI治理", "中国与上海相关", "国防AI"]
 subjects: []
 topic_tags: ["AI治理", "中国与上海相关", "国防AI"]
 priority: P0
 score: 13
 translation_level: full_or_long
 copyright_boundary: private_archive
+fetch_status: detail_ok
 ---
 
 # 红线：国防AI自主风险与危机管控边界

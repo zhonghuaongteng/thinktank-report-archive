@@ -12,7 +12,7 @@ pdf_url: https://startupgenome.com/contents/report/gser-2025_8468.pdf
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: []
-keywords: []
+keywords: ["AI治理", "数字经济"]
 subjects: []
 topic_tags: ["AI治理", "数字经济"]
 priority: P1

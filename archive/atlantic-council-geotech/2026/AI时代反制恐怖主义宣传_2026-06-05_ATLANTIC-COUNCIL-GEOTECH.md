@@ -12,7 +12,7 @@ pdf_url: https://gifct.org/wp-content/uploads/2025/02/GIFCT-24WG-1224-HSDR-Chall
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: ["awalker"]
-keywords: []
+keywords: ["AI治理"]
 subjects: []
 topic_tags: ["AI治理"]
 priority: P1

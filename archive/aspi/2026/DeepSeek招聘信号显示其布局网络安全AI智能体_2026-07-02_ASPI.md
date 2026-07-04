@@ -12,7 +12,7 @@ pdf_url: https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1230/20251230000
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: ["Alex Colville"]
-keywords: []
+keywords: ["AI治理", "中国与上海相关", "数字经济"]
 subjects: []
 topic_tags: ["AI治理", "中国与上海相关", "数字经济"]
 priority: P0

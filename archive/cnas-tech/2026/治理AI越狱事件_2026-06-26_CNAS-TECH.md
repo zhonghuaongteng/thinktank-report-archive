@@ -12,7 +12,7 @@ pdf_url: https://www-cdn.anthropic.com/2f9323abbcc4abe219577539efe19a623c9ca2bd/
 pdf_status: 200 application/pdf
 external_source_url: 
 authors: []
-keywords: []
+keywords: ["AI治理"]
 subjects: []
 topic_tags: ["AI治理"]
 priority: P1

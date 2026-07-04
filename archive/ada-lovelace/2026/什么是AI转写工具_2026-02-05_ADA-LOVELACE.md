@@ -12,7 +12,7 @@ pdf_url:
 pdf_status: none
 external_source_url: 
 authors: ["Oliver Bruff", "Lara Groves", "Mavis Machirori", "Oliver Bruff", "Lara Groves", "Mavis Machirori"]
-keywords: []
+keywords: ["AI治理"]
 subjects: []
 topic_tags: ["AI治理"]
 priority: P1
