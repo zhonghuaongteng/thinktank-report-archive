@@ -211,6 +211,25 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("AI治理", scored.topic_tags)
 
+    def test_genai_usage_trends_are_ai_governance_focus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="oecd-ai",
+            institution_name="OECD.AI Policy Observatory",
+            institution_type="intergovernmental",
+            title="How people are using GenAI chatbots: Evidence from web traffic data",
+            url="https://oecd.ai/en/wonk/how-people-are-using-genai-chatbots-evidence-from-web-traffic-data",
+            summary="Evidence from web traffic data on chatbot usage and diffusion.",
+            published_date="2026-06-30",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("AI治理", scored.topic_tags)
+
     def test_national_security_alone_does_not_create_defense_ai_tag(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")

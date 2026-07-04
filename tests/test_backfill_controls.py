@@ -50,6 +50,34 @@ class BackfillControlTests(unittest.TestCase):
 
         self.assertEqual([item.title for item in ordered], ["P0 item", "P1 high", "P1 item", "P3 item"])
 
+    def test_sort_for_writing_prefers_newer_items_when_priority_and_score_match(self):
+        candidates = [
+            ArticleCandidate(
+                "oecd-ai",
+                "OECD.AI",
+                "intergovernmental",
+                "Older AI governance item",
+                "https://example.org/old",
+                published_date="2024-12-03",
+                priority="P1",
+                score=5,
+            ),
+            ArticleCandidate(
+                "oecd-ai",
+                "OECD.AI",
+                "intergovernmental",
+                "Newer AI governance item",
+                "https://example.org/new",
+                published_date="2026-06-30",
+                priority="P1",
+                score=5,
+            ),
+        ]
+
+        ordered = sort_for_writing(candidates)
+
+        self.assertEqual([item.title for item in ordered], ["Newer AI governance item", "Older AI governance item"])
+
     def test_run_daily_records_detail_error_without_archiving(self):
         institution = Institution(
             slug="hoover-tpa",

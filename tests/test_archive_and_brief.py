@@ -171,6 +171,40 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         self.assertLess(brief.index("### [P0] 高分条目"), brief.index("### [P1] 低分条目"))
 
+    def test_render_daily_brief_prefers_newer_items_when_priority_and_score_match(self):
+        candidates = [
+            ArticleCandidate(
+                institution_slug="oecd-ai",
+                institution_name="OECD.AI",
+                institution_type="intergovernmental",
+                title="Older governance item",
+                chinese_title="较旧治理材料",
+                url="https://example.org/old",
+                published_date="2024-12-03",
+                content_type="article",
+                priority="P1",
+                score=5,
+                topic_tags=["AI治理"],
+            ),
+            ArticleCandidate(
+                institution_slug="oecd-ai",
+                institution_name="OECD.AI",
+                institution_type="intergovernmental",
+                title="Newer governance item",
+                chinese_title="较新治理材料",
+                url="https://example.org/new",
+                published_date="2026-06-30",
+                content_type="article",
+                priority="P1",
+                score=5,
+                topic_tags=["AI治理"],
+            ),
+        ]
+
+        brief = render_daily_brief_markdown("2026-07-04", candidates)
+
+        self.assertLess(brief.index("### [P1] 较新治理材料"), brief.index("### [P1] 较旧治理材料"))
+
     def test_load_daily_brief_candidates_uses_kb_run_date_and_archive_summaries(self):
         from thinktank_watch.archive import write_article
         from thinktank_watch.brief import load_daily_brief_candidates

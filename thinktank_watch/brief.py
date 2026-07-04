@@ -15,6 +15,15 @@ MAX_EXPANDED_PRIORITY_ITEMS = 12
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 
 
+def published_date_sort_value(value: str) -> int:
+    if len(value or "") < 10:
+        return 0
+    try:
+        return int(value[:10].replace("-", ""))
+    except ValueError:
+        return 0
+
+
 def sort_brief_candidates(candidates: list[ArticleCandidate]) -> list[ArticleCandidate]:
     indexed = list(enumerate(candidates))
     return [
@@ -24,6 +33,7 @@ def sort_brief_candidates(candidates: list[ArticleCandidate]) -> list[ArticleCan
             key=lambda pair: (
                 PRIORITY_ORDER.get(pair[1].priority, 99),
                 -pair[1].score,
+                -published_date_sort_value(pair[1].published_date),
                 pair[0],
             ),
         )

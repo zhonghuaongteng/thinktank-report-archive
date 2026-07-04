@@ -63,14 +63,23 @@ def institution_fetch_limit(institution: Institution, limit: int) -> int:
     return limit
 
 
+def published_date_sort_value(value: str) -> int:
+    if len(value or "") < 10:
+        return 0
+    try:
+        return int(value[:10].replace("-", ""))
+    except ValueError:
+        return 0
+
+
 def sort_for_writing(candidates: list[ArticleCandidate]) -> list[ArticleCandidate]:
     return sorted(
         candidates,
         key=lambda item: (
             PRIORITY_ORDER.get(item.priority, 99),
             -item.score,
+            -published_date_sort_value(item.published_date),
             item.institution_slug,
-            item.published_date or "",
             item.title,
         ),
     )
