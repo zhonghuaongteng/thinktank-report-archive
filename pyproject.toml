@@ -1,0 +1,16 @@
+[project]
+name = "thinktank-watch"
+version = "0.1.0"
+description = "International technology think-tank monitoring and local knowledge-base integration"
+requires-python = ">=3.13"
+dependencies = [
+  "beautifulsoup4",
+  "feedparser",
+  "httpx",
+  "lxml",
+  "PyYAML",
+  "reportlab",
+]
+
+[tool.setuptools]
+packages = ["thinktank_watch", "thinktank_watch.parsers"]
