@@ -11,7 +11,15 @@ from .audit import write_audit_report
 from .archive import write_article
 from .brief import load_daily_brief_candidates, write_daily_brief
 from .config import load_institutions, load_priority_rules, load_topics
-from .fetch import check_pdf, fetch_detail, fetch_feed_candidates, fetch_list_candidates, fetch_sitemap_candidates, make_client
+from .fetch import (
+    check_pdf,
+    fetch_detail,
+    fetch_feed_candidates,
+    fetch_list_candidates,
+    fetch_sitemap_candidates,
+    interleave_candidate_groups,
+    make_client,
+)
 from .kb import append_kb_index, write_institution_table
 from .models import ArticleCandidate, Institution
 from .restore import rebuild_state_from_archive
@@ -125,11 +133,13 @@ def collect_candidates(
         for institution in institutions:
             item_limit = institution_fetch_limit(institution, limit)
             if backfill:
-                base = [
-                    *fetch_feed_candidates(institution, limit=item_limit),
-                    *fetch_list_candidates(client, institution, limit=item_limit),
-                    *fetch_sitemap_candidates(client, institution, limit=item_limit),
-                ]
+                base = interleave_candidate_groups(
+                    [
+                        fetch_feed_candidates(institution, limit=item_limit),
+                        fetch_list_candidates(client, institution, limit=item_limit),
+                        fetch_sitemap_candidates(client, institution, limit=item_limit),
+                    ]
+                )
             else:
                 base = fetch_feed_candidates(institution, limit=item_limit)
                 if not base:

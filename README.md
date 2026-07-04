@@ -30,7 +30,7 @@ C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank
 powershell -ExecutionPolicy Bypass -File scripts\run_backfill_batch.ps1 -Batch 1 -Limit 5 -MinPriority P1 -WriteLimit 8
 ```
 
-Candidate source URLs are restricted to the institution's own site or subdomains. Event, people, podcast, video, webinar, and announcement-style pages are filtered out before scoring.
+Candidate source URLs are restricted to the institution's own site or subdomains. Event, people, podcast, project, topic, video, webinar, broad index, and announcement-style pages are filtered out before scoring. Backfill runs interleave feed, list/topic page, and sitemap candidates so one source type does not exhaust the per-institution limit.
 
 ## Outputs
 

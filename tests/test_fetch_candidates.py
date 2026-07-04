@@ -4,7 +4,9 @@ import httpx
 
 from thinktank_watch.fetch import _date_from_feed
 from thinktank_watch.fetch import fetch_detail
+from thinktank_watch.fetch import fetch_list_candidates
 from thinktank_watch.fetch import fetch_sitemap_candidates
+from thinktank_watch.fetch import interleave_candidate_groups
 from thinktank_watch.fetch import source_url_allowed
 from thinktank_watch.models import ArticleCandidate
 from thinktank_watch.models import Institution
@@ -125,6 +127,37 @@ class FetchCandidateTests(unittest.TestCase):
         )
         self.assertFalse(source_url_allowed("https://example.com/china-ai", institution))
 
+    def test_source_url_allowed_rejects_index_topic_and_year_pages(self):
+        institution = Institution(
+            slug="rand",
+            name="RAND Corporation",
+            chinese_name="兰德公司",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://www.rand.org/",
+            parser="rand",
+            copyright_boundary="private_fulltext_archive",
+        )
+
+        self.assertFalse(source_url_allowed("https://www.rand.org/zh-hans/publications.html", institution))
+        self.assertFalse(source_url_allowed("https://www.rand.org/zh-hans/publications/2016.html", institution))
+        self.assertFalse(source_url_allowed("https://www.rand.org/topics/artificial-intelligence.html", institution))
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.rand.org/hsrd/projects/emerging-technologies-and-risk-analysis.html",
+                institution,
+            )
+        )
+        self.assertTrue(
+            source_url_allowed(
+                "https://www.rand.org/zh-hans/publications/2016/exploring-the-course-and-consequences-of-a-sino-us-war.html",
+                institution,
+            )
+        )
+        self.assertTrue(source_url_allowed("https://www.rand.org/pubs/research_reports/RRA3892-2.html", institution))
+
     def test_date_from_feed_handles_weekday_numeric_publication_date(self):
         self.assertEqual(_date_from_feed("Fri, 07/03/2026 - 09:20"), "2026-07-03")
 
@@ -161,6 +194,69 @@ class FetchCandidateTests(unittest.TestCase):
         self.assertEqual(len(candidates), 1)
         self.assertEqual(candidates[0].url, "https://example.org/research/2026/07/ai-governance-and-cyber-risk")
         self.assertEqual(candidates[0].published_date, "2026-07-02")
+
+    def test_list_candidates_include_configured_topic_pages(self):
+        pages = {
+            "https://example.org/publications": """
+                <a href="/publications/2026/07/digital-policy-report/">Digital policy report</a>
+            """,
+            "https://example.org/topics/artificial-intelligence": """
+                <a href="/publications/2026/07/ai-governance-report/">AI governance report</a>
+                <a href="/publications/2026/07/digital-policy-report/">Digital policy report</a>
+            """,
+        }
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(200, text=pages[str(request.url)], request=request)
+
+        institution = Institution(
+            slug="example",
+            name="Example",
+            chinese_name="示例",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://example.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+            list_pages=["https://example.org/publications"],
+            topic_pages=["https://example.org/topics/artificial-intelligence"],
+        )
+
+        with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+            candidates = fetch_list_candidates(client, institution, limit=10)
+
+        self.assertEqual(
+            [item.url for item in candidates],
+            [
+                "https://example.org/publications/2026/07/digital-policy-report/",
+                "https://example.org/publications/2026/07/ai-governance-report/",
+            ],
+        )
+
+    def test_interleave_candidate_groups_preserves_source_diversity_and_dedupes_urls(self):
+        def candidate(title: str, url: str) -> ArticleCandidate:
+            return ArticleCandidate("example", "Example", "think_tank", title, url)
+
+        candidates = interleave_candidate_groups(
+            [
+                [
+                    candidate("Feed one", "https://example.org/research/feed-one/"),
+                    candidate("Feed two", "https://example.org/research/feed-two/"),
+                ],
+                [
+                    candidate("List one", "https://example.org/research/list-one/"),
+                    candidate("Duplicate feed one", "https://example.org/research/feed-one"),
+                ],
+                [candidate("Sitemap one", "https://example.org/research/sitemap-one/")],
+            ]
+        )
+
+        self.assertEqual(
+            [item.title for item in candidates],
+            ["Feed one", "List one", "Sitemap one", "Feed two"],
+        )
 
     def test_fetch_detail_rejects_external_redirects(self):
         def handler(request: httpx.Request) -> httpx.Response:

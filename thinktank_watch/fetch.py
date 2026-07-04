@@ -41,11 +41,26 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "person",
     "podcast",
     "podcasts",
+    "project",
+    "projects",
     "program",
     "programs",
+    "topic",
+    "topics",
     "video",
     "videos",
     "webinars",
+}
+SOURCE_LAST_SEGMENT_DENY = {
+    "commentary",
+    "index",
+    "publication",
+    "publications",
+    "pubs",
+    "research",
+    "research-and-commentary",
+    "topic",
+    "topics",
 }
 
 
@@ -81,6 +96,23 @@ def dedupe_key(url: str) -> str:
     return hashlib.sha256(canonical_url(url).encode("utf-8")).hexdigest()[:16]
 
 
+def interleave_candidate_groups(groups: list[list[ArticleCandidate]]) -> list[ArticleCandidate]:
+    candidates: list[ArticleCandidate] = []
+    seen: set[str] = set()
+    max_length = max((len(group) for group in groups), default=0)
+    for index in range(max_length):
+        for group in groups:
+            if index >= len(group):
+                continue
+            candidate = group[index]
+            key = dedupe_key(candidate.url)
+            if key in seen:
+                continue
+            seen.add(key)
+            candidates.append(candidate)
+    return candidates
+
+
 def source_url_allowed(url: str, institution: Institution) -> bool:
     parsed_source = urlparse(url)
     source_host = _normalized_host(parsed_source.netloc)
@@ -90,7 +122,16 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
         return False
     path_segments = {segment.lower() for segment in parsed_source.path.split("/") if segment}
     last_segment = parsed_source.path.rstrip("/").split("/")[-1].lower()
-    return not (path_segments & SOURCE_PATH_DENY_SEGMENTS) and last_segment not in NON_CONTENT_LAST_SEGMENTS
+    last_stem = last_segment[:-5] if last_segment.endswith(".html") else last_segment
+    if path_segments & SOURCE_PATH_DENY_SEGMENTS:
+        return False
+    if last_segment in NON_CONTENT_LAST_SEGMENTS or last_stem in NON_CONTENT_LAST_SEGMENTS:
+        return False
+    if last_stem in SOURCE_LAST_SEGMENT_DENY:
+        return False
+    if len(last_stem) == 4 and last_stem.isdigit():
+        return False
+    return True
 
 
 def _date_from_feed(value: str) -> str:
@@ -141,7 +182,9 @@ def fetch_list_candidates(
     limit: int = 10,
 ) -> list[ArticleCandidate]:
     candidates: list[ArticleCandidate] = []
-    for page in institution.list_pages[:3]:
+    seen: set[str] = set()
+    pages = [*institution.list_pages[:3], *institution.topic_pages[:5]]
+    for page in pages:
         try:
             response = client.get(page, timeout=30)
             response.raise_for_status()
@@ -151,6 +194,10 @@ def fetch_list_candidates(
         for link in links:
             if not source_url_allowed(link, institution):
                 continue
+            key = dedupe_key(link)
+            if key in seen:
+                continue
+            seen.add(key)
             candidates.append(
                 ArticleCandidate(
                     institution_slug=institution.slug,
@@ -163,6 +210,10 @@ def fetch_list_candidates(
                     fetch_status="list_ok",
                 )
             )
+            if len(candidates) >= limit:
+                break
+        if len(candidates) >= limit:
+            break
     return candidates[:limit]
 
 
