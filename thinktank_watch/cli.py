@@ -19,6 +19,7 @@ from .state import ArticleState
 
 
 DEFAULT_CONFIG = Path("config")
+PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 
 
 def _load_config():
@@ -30,10 +31,10 @@ def _load_config():
 
 def _select_institutions(institutions: list[Institution], batch: int | None, slug: str | None) -> list[Institution]:
     selected = institutions
+    if slug:
+        return [item for item in selected if item.slug == slug]
     if batch is not None:
         selected = [item for item in selected if item.batch <= batch]
-    if slug:
-        selected = [item for item in selected if item.slug == slug]
     return selected
 
 
@@ -41,6 +42,31 @@ def fetch_status_from_http_error(exc: httpx.HTTPError) -> str:
     if isinstance(exc, httpx.HTTPStatusError):
         return f"detail_error:{exc.response.status_code}"
     return f"detail_error:{exc.__class__.__name__}"
+
+
+def priority_allows(priority: str, minimum: str = "P3") -> bool:
+    if priority not in PRIORITY_ORDER:
+        return False
+    if minimum not in PRIORITY_ORDER:
+        raise ValueError(f"Unsupported priority: {minimum}")
+    return PRIORITY_ORDER[priority] <= PRIORITY_ORDER[minimum]
+
+
+def write_limit_reached(written_count: int, write_limit: int | None) -> bool:
+    return bool(write_limit) and written_count >= write_limit
+
+
+def sort_for_writing(candidates: list[ArticleCandidate]) -> list[ArticleCandidate]:
+    return sorted(
+        candidates,
+        key=lambda item: (
+            PRIORITY_ORDER.get(item.priority, 99),
+            -item.score,
+            item.institution_slug,
+            item.published_date or "",
+            item.title,
+        ),
+    )
 
 
 def collect_candidates(
@@ -118,10 +144,14 @@ def run_daily(args: argparse.Namespace) -> int:
     written: list[ArticleCandidate] = []
     try:
         candidates = collect_candidates(selected, args.limit, include_details=True)
-        for item in candidates:
-            item = score_candidate(item, topics, priorities)
+        scored = sort_for_writing([score_candidate(item, topics, priorities) for item in candidates])
+        for item in scored:
+            if not priority_allows(item.priority, args.min_priority):
+                continue
             if state.seen(item.url) and not args.refresh:
                 continue
+            if write_limit_reached(len(written), args.write_limit):
+                break
             archive_path = ""
             if item.priority in {"P0", "P1", "P2"}:
                 archive_path = str(write_article(args.archive_root, item))
@@ -145,10 +175,14 @@ def backfill(args: argparse.Namespace) -> int:
     written: list[ArticleCandidate] = []
     try:
         candidates = collect_candidates(selected, args.limit, include_details=True, backfill=True)
-        for item in candidates:
-            item = score_candidate(item, topics, priorities)
+        scored = sort_for_writing([score_candidate(item, topics, priorities) for item in candidates])
+        for item in scored:
+            if not priority_allows(item.priority, args.min_priority):
+                continue
             if state.seen(item.url) and not args.refresh:
                 continue
+            if write_limit_reached(len(written), args.write_limit):
+                break
             archive_path = ""
             if item.priority in {"P0", "P1", "P2"}:
                 archive_path = str(write_article(args.archive_root, item))
@@ -192,6 +226,8 @@ def build_parser() -> argparse.ArgumentParser:
     daily.add_argument("--date")
     daily.add_argument("--refresh", action="store_true")
     daily.add_argument("--skip-kb", action="store_true")
+    daily.add_argument("--min-priority", choices=sorted(PRIORITY_ORDER), default="P3")
+    daily.add_argument("--write-limit", type=int, default=0, help="Maximum number of new allowed records to write. 0 means unlimited.")
     daily.add_argument("--archive-root", default="archive")
     daily.add_argument("--brief-root", default="briefs")
     daily.add_argument("--state", default="state/articles.sqlite")
@@ -205,6 +241,8 @@ def build_parser() -> argparse.ArgumentParser:
     backfill_parser.add_argument("--date")
     backfill_parser.add_argument("--refresh", action="store_true")
     backfill_parser.add_argument("--skip-kb", action="store_true")
+    backfill_parser.add_argument("--min-priority", choices=sorted(PRIORITY_ORDER), default="P3")
+    backfill_parser.add_argument("--write-limit", type=int, default=0, help="Maximum number of new allowed records to write. 0 means unlimited.")
     backfill_parser.add_argument("--archive-root", default="archive")
     backfill_parser.add_argument("--brief-root", default="briefs")
     backfill_parser.add_argument("--state", default="state/articles.sqlite")

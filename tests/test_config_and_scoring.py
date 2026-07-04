@@ -1,6 +1,7 @@
 import unittest
 
 from thinktank_watch.config import load_institutions, load_priority_rules, load_topics
+from thinktank_watch.cli import _select_institutions
 from thinktank_watch.models import ArticleCandidate
 from thinktank_watch.scoring import score_candidate
 
@@ -23,6 +24,12 @@ class ConfigAndScoringTests(unittest.TestCase):
             {item.institution_type for item in institutions if item.slug == "gartner"},
             {"commercial_research"},
         )
+
+    def test_selecting_explicit_institution_ignores_batch_filter(self):
+        institutions = load_institutions("config/institutions")
+        selected = _select_institutions(institutions, batch=1, slug="csis")
+
+        self.assertEqual([item.slug for item in selected], ["csis"])
 
     def test_scoring_promotes_ai_china_governance_items_to_p0(self):
         topics = load_topics("config/topics.yaml")
@@ -48,6 +55,26 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("半导体", scored.topic_tags)
         self.assertIn("中国与上海相关", scored.topic_tags)
         self.assertEqual(scored.translation_level, "full_or_long")
+
+    def test_china_context_alone_does_not_promote_to_priority_focus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="csis",
+            institution_name="CSIS",
+            institution_type="think_tank",
+            title="Statesmen's Forum: Wang Yi, Minister of Foreign Affairs, PRC",
+            url="https://example.org/event",
+            summary="A foreign affairs event focused on diplomatic exchange and bilateral relations.",
+            published_date="2016-02-19",
+            content_type="event",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P2")
+        self.assertEqual(scored.topic_tags, ["中国与上海相关"])
+        self.assertEqual(scored.translation_level, "summary")
 
     def test_scoring_keeps_low_relevance_items_in_index_only(self):
         topics = load_topics("config/topics.yaml")

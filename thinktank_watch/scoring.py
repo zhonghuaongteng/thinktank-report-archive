@@ -15,6 +15,8 @@ REPORT_TYPES = {
     "paper",
     "external_publication",
 }
+CONTEXT_ONLY_TOPICS = {"中国与上海相关"}
+CONTEXT_ONLY_PRIORITY_CAP = "P2"
 
 
 def _contains_keyword(text: str, keyword: str) -> bool:
@@ -68,6 +70,10 @@ def score_candidate(
         priority = "P2"
     else:
         priority = "P3"
+
+    substantive_topics = set(topic_scores) - CONTEXT_ONLY_TOPICS
+    if topic_scores and not substantive_topics and priority in {"P0", "P1"}:
+        priority = CONTEXT_ONLY_PRIORITY_CAP
 
     scored.score = total
     scored.priority = priority
