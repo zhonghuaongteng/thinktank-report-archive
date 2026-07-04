@@ -230,6 +230,45 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("AI治理", scored.topic_tags)
 
+    def test_dotted_ai_abbreviation_is_governance_focus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="China Seeks A.I. Independence, Weakening Trump’s Leverage",
+            url="https://cset.georgetown.edu/article/china-seeks-a-i-independence-weakening-trumps-leverage/",
+            summary="Analysis of Chinese technology policy and model development strategy.",
+            published_date="2026-05-12",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("AI治理", scored.topic_tags)
+        self.assertIn("中国与上海相关", scored.topic_tags)
+
+    def test_data_factor_policy_is_digital_economy_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title='Three-Year Action Plan for "Data Factor of Production ×"',
+            url="https://cset.georgetown.edu/publication/china-data-3-year-action-plan-2024-2026/",
+            summary="Policy translation on data factor deployment and digital economic transformation.",
+            published_date="2026-05-07",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P1", "P2"})
+        self.assertIn("数字经济", scored.topic_tags)
+
     def test_national_security_alone_does_not_create_defense_ai_tag(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")

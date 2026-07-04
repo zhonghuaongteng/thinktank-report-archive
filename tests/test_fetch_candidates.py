@@ -80,6 +80,28 @@ class FetchCandidateTests(unittest.TestCase):
             )
         )
 
+    def test_source_url_allowed_rejects_pagination_index_pages(self):
+        institution = Institution(
+            slug="cset",
+            name="Center for Security and Emerging Technology",
+            chinese_name="乔治城安全与新兴技术中心",
+            country_region="United States",
+            institution_type="university_research_center",
+            priority="P0",
+            batch=1,
+            homepage="https://cset.georgetown.edu/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(source_url_allowed("https://cset.georgetown.edu/publications/page/2/", institution))
+        self.assertTrue(
+            source_url_allowed(
+                "https://cset.georgetown.edu/article/china-seeks-a-i-independence-weakening-trumps-leverage/",
+                institution,
+            )
+        )
+
     def test_source_url_allowed_accepts_configured_auxiliary_domains(self):
         institution = Institution(
             slug="aspi",

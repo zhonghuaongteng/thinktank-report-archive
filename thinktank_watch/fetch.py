@@ -36,6 +36,7 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "event",
     "issue",
     "issues",
+    "page",
     "people",
     "person",
     "podcast",
