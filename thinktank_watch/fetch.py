@@ -3,7 +3,7 @@ from __future__ import annotations
 import hashlib
 from datetime import datetime
 from email.utils import parsedate_to_datetime
-from urllib.parse import urljoin
+from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 
 import feedparser
 import httpx
@@ -14,11 +14,36 @@ from .parsers.generic import canonical_date, extract_list_links, looks_like_deta
 from .parsers.rand import parse_rand_detail
 
 
-USER_AGENT = "thinktank-watch/0.1 (+private local research archive)"
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36 "
+    "thinktank-watch/0.1"
+)
+
+
+TRACKING_PARAMS = {"fbclid", "gclid", "mc_cid", "mc_eid"}
+
+
+def canonical_url(url: str) -> str:
+    parsed = urlparse(url.strip())
+    path = re_sub_slashes(parsed.path).rstrip("/") or "/"
+    query_pairs = [
+        (key, value)
+        for key, value in parse_qsl(parsed.query, keep_blank_values=True)
+        if not key.lower().startswith("utm_") and key.lower() not in TRACKING_PARAMS
+    ]
+    query = urlencode(query_pairs, doseq=True)
+    return urlunparse((parsed.scheme.lower(), parsed.netloc.lower(), path, "", query, ""))
+
+
+def re_sub_slashes(path: str) -> str:
+    while "//" in path:
+        path = path.replace("//", "/")
+    return path
 
 
 def dedupe_key(url: str) -> str:
-    return hashlib.sha256(url.encode("utf-8")).hexdigest()[:16]
+    return hashlib.sha256(canonical_url(url).encode("utf-8")).hexdigest()[:16]
 
 
 def _date_from_feed(value: str) -> str:
@@ -156,4 +181,10 @@ def check_pdf(client: httpx.Client, candidate: ArticleCandidate) -> ArticleCandi
 
 
 def make_client() -> httpx.Client:
-    return httpx.Client(headers={"User-Agent": USER_AGENT}, follow_redirects=True)
+    return httpx.Client(
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        },
+        follow_redirects=True,
+    )

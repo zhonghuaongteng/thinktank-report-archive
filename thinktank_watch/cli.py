@@ -7,6 +7,7 @@ from pathlib import Path
 
 import httpx
 
+from .audit import write_audit_report
 from .archive import write_article
 from .brief import write_daily_brief
 from .config import load_institutions, load_priority_rules, load_topics
@@ -34,6 +35,12 @@ def _select_institutions(institutions: list[Institution], batch: int | None, slu
     if slug:
         selected = [item for item in selected if item.slug == slug]
     return selected
+
+
+def fetch_status_from_http_error(exc: httpx.HTTPError) -> str:
+    if isinstance(exc, httpx.HTTPStatusError):
+        return f"detail_error:{exc.response.status_code}"
+    return f"detail_error:{exc.__class__.__name__}"
 
 
 def collect_candidates(
@@ -69,7 +76,7 @@ def collect_candidates(
                         candidate = fetch_detail(client, institution, candidate)
                         candidate = check_pdf(client, candidate)
                     except httpx.HTTPError as exc:
-                        candidate.fetch_status = f"detail_error:{exc.__class__.__name__}"
+                        candidate.fetch_status = fetch_status_from_http_error(exc)
                 collected.append(candidate)
     return collected
 
@@ -88,6 +95,18 @@ def evaluate(args: argparse.Namespace) -> int:
             print(f"  topics: {', '.join(item.topic_tags)}")
         if item.pdf_url:
             print(f"  pdf: {item.pdf_url} ({item.pdf_status})")
+    return 0
+
+
+def audit(args: argparse.Namespace) -> int:
+    run_date = args.date or date.today().isoformat()
+    institutions, topics, priorities = _load_config()
+    selected = _select_institutions(institutions, args.batch, args.institution)
+    candidates = collect_candidates(selected, args.limit, include_details=not args.no_details)
+    scored = [score_candidate(item, topics, priorities) for item in candidates]
+    output = Path(args.output) if args.output else Path("reports") / f"{run_date}_source_health.csv"
+    path = write_audit_report(output, scored)
+    print(f"audit_date={run_date} institutions={len(selected)} candidates={len(scored)} report={path}")
     return 0
 
 
@@ -156,6 +175,15 @@ def build_parser() -> argparse.ArgumentParser:
     eval_parser.add_argument("--no-details", action="store_true")
     eval_parser.add_argument("--dry-run", action="store_true", help="Alias for evaluate compatibility.")
     eval_parser.set_defaults(func=evaluate)
+
+    audit_parser = sub.add_parser("audit", help="Fetch candidates and write a source health CSV without archiving.")
+    audit_parser.add_argument("--batch", type=int, default=1)
+    audit_parser.add_argument("--institution")
+    audit_parser.add_argument("--limit", type=int, default=5)
+    audit_parser.add_argument("--date")
+    audit_parser.add_argument("--no-details", action="store_true")
+    audit_parser.add_argument("--output")
+    audit_parser.set_defaults(func=audit)
 
     daily = sub.add_parser("run-daily", help="Run daily fetch, archive, brief, and KB index update.")
     daily.add_argument("--batch", type=int, default=1)

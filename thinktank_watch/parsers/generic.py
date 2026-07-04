@@ -97,6 +97,8 @@ def canonical_date(value: str) -> str:
     value = norm(value)
     if not value:
         return ""
+    if "T" in value:
+        value = value.split("T", 1)[0]
     for fmt in ("%Y-%m-%d", "%Y/%m/%d", "%Y%m%d"):
         try:
             return datetime.strptime(value[:10], fmt).date().isoformat()
@@ -119,6 +121,59 @@ def meta_values(soup: BeautifulSoup, key: str) -> list[str]:
     return values
 
 
+def json_ld_items(soup: BeautifulSoup) -> list[dict]:
+    items: list[dict] = []
+    for node in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(node.get_text())
+        except json.JSONDecodeError:
+            continue
+        if isinstance(data, dict) and isinstance(data.get("@graph"), list):
+            items.extend(item for item in data["@graph"] if isinstance(item, dict))
+        elif isinstance(data, list):
+            items.extend(item for item in data if isinstance(item, dict))
+        elif isinstance(data, dict):
+            items.append(data)
+    return items
+
+
+def json_ld_primary(items: list[dict]) -> dict:
+    for item in items:
+        kind = item.get("@type")
+        if isinstance(kind, list):
+            kinds = set(kind)
+        else:
+            kinds = {kind}
+        if kinds & {"Article", "NewsArticle", "Report", "ScholarlyArticle", "BlogPosting"}:
+            return item
+    return items[0] if items else {}
+
+
+def authors_from_json_ld(item: dict) -> list[str]:
+    author = item.get("author")
+    if isinstance(author, list):
+        return [norm(node.get("name")) for node in author if isinstance(node, dict) and node.get("name")]
+    if isinstance(author, dict) and author.get("name"):
+        return [norm(author["name"])]
+    if isinstance(author, str):
+        return [norm(author)]
+    return []
+
+
+def first_nonempty(*values: list[str] | str | None) -> str:
+    for value in values:
+        if isinstance(value, list):
+            for item in value:
+                cleaned = norm(item)
+                if cleaned:
+                    return cleaned
+        else:
+            cleaned = norm(value)
+            if cleaned:
+                return cleaned
+    return ""
+
+
 def looks_like_detail_url(url: str, text: str = "") -> bool:
     parsed = urlparse(url)
     path_segments = [segment for segment in parsed.path.split("/") if segment]
@@ -134,25 +189,32 @@ def looks_like_detail_url(url: str, text: str = "") -> bool:
 
 def parse_generic_detail(html_text: str, url: str, institution: Institution) -> ArticleCandidate:
     soup = BeautifulSoup(html_text, "lxml")
-    title = (
-        meta_values(soup, "citation_title")
-        or meta_values(soup, "og:title")
-        or meta_values(soup, "twitter:title")
-        or [norm(soup.title.get_text(" ", strip=True)) if soup.title else ""]
-    )[0]
-    summary = (
-        meta_values(soup, "description")
-        or meta_values(soup, "og:description")
-        or meta_values(soup, "twitter:description")
-        or [""]
-    )[0]
-    published = (
-        meta_values(soup, "citation_publication_date")
-        or meta_values(soup, "article:published_time")
-        or meta_values(soup, "date")
-        or [""]
-    )[0]
-    authors = meta_values(soup, "citation_author") or meta_values(soup, "author")
+    json_primary = json_ld_primary(json_ld_items(soup))
+    title = first_nonempty(
+        meta_values(soup, "citation_title"),
+        meta_values(soup, "og:title"),
+        meta_values(soup, "twitter:title"),
+        json_primary.get("headline") or json_primary.get("name"),
+        soup.title.get_text(" ", strip=True) if soup.title else "",
+    )
+    summary = first_nonempty(
+        meta_values(soup, "description"),
+        meta_values(soup, "og:description"),
+        meta_values(soup, "twitter:description"),
+        json_primary.get("description"),
+    )
+    time_date = ""
+    time_node = soup.find("time")
+    if time_node:
+        time_date = norm(time_node.get("datetime") or time_node.get_text(" "))
+    published = first_nonempty(
+        meta_values(soup, "citation_publication_date"),
+        meta_values(soup, "article:published_time"),
+        meta_values(soup, "date"),
+        json_primary.get("datePublished") or json_primary.get("dateCreated") or json_primary.get("dateModified"),
+        time_date,
+    )
+    authors = meta_values(soup, "citation_author") or meta_values(soup, "author") or authors_from_json_ld(json_primary)
     keywords: list[str] = []
     for raw in meta_values(soup, "keywords"):
         keywords.extend([norm(part) for part in raw.split(",") if norm(part)])

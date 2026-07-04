@@ -15,6 +15,12 @@
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli evaluate --batch 1 --limit 3
 ```
 
+机构健康审计：
+
+```powershell
+C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli audit --batch 1 --limit 5
+```
+
 每日抓取：
 
 ```powershell
