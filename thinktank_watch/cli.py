@@ -9,7 +9,7 @@ import httpx
 
 from .audit import write_audit_report
 from .archive import write_article
-from .brief import write_daily_brief
+from .brief import load_daily_brief_candidates, write_daily_brief
 from .config import load_institutions, load_priority_rules, load_topics
 from .fetch import check_pdf, fetch_detail, fetch_feed_candidates, fetch_list_candidates, fetch_sitemap_candidates, make_client
 from .kb import append_kb_index, write_institution_table
@@ -82,6 +82,15 @@ def detail_fetch_failed(candidate: ArticleCandidate) -> bool:
 
 def should_archive_candidate(candidate: ArticleCandidate) -> bool:
     return candidate.priority in {"P0", "P1", "P2"} and not detail_fetch_failed(candidate)
+
+
+def write_run_brief(args: argparse.Namespace, run_date: str, written: list[ArticleCandidate]) -> None:
+    candidates = written
+    if not args.skip_kb:
+        indexed = load_daily_brief_candidates(args.archive_root, args.kb_root, run_date)
+        if indexed:
+            candidates = indexed
+    write_daily_brief(args.brief_root, run_date, candidates)
 
 
 def collect_candidates(
@@ -176,10 +185,10 @@ def run_daily(args: argparse.Namespace) -> int:
                 archive_path = str(write_article(args.archive_root, item))
             state.upsert(item, archive_path)
             written.append(item)
-        write_daily_brief(args.brief_root, run_date, written)
         if not args.skip_kb:
             append_kb_index(written, run_date, args.kb_root)
             write_institution_table(institutions, args.kb_root)
+        write_run_brief(args, run_date, written)
     finally:
         state.close()
     print(f"run_date={run_date} institutions={len(selected)} candidates_written={len(written)}")
@@ -210,10 +219,10 @@ def backfill(args: argparse.Namespace) -> int:
                 archive_path = str(write_article(args.archive_root, item))
             state.upsert(item, archive_path)
             written.append(item)
-        write_daily_brief(args.brief_root, run_date, written)
         if not args.skip_kb:
             append_kb_index(written, run_date, args.kb_root)
             write_institution_table(institutions, args.kb_root)
+        write_run_brief(args, run_date, written)
     finally:
         state.close()
     print(f"backfill_date={run_date} institutions={len(selected)} candidates_written={len(written)}")

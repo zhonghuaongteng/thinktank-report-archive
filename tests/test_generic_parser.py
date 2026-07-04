@@ -140,6 +140,33 @@ class GenericParserTests(unittest.TestCase):
 
         self.assertEqual(detail.title, "Measuring AI R&D Automation")
 
+    def test_parse_generic_detail_strips_extended_site_title_suffix(self):
+        html = """
+        <html><head>
+          <title>Beyond P(doom) for AI Risk: Quantifying Uncertainty Without Probability | Center for Security and Emerging Technology Georgetown AI</title>
+        </head><body><main><p>AI risk uncertainty and governance.</p></main></body></html>
+        """
+        institution = Institution(
+            slug="cset",
+            name="Center for Security and Emerging Technology",
+            chinese_name="乔治城安全与新兴技术中心",
+            country_region="United States",
+            institution_type="university_research_center",
+            priority="P0",
+            batch=1,
+            homepage="https://cset.georgetown.edu/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://cset.georgetown.edu/publication/beyond-pdoom-for-ai-risk-quantifying-uncertainty-without-probability/",
+            institution,
+        )
+
+        self.assertEqual(detail.title, "Beyond P(doom) for AI Risk: Quantifying Uncertainty Without Probability")
+
     def test_parse_generic_detail_falls_back_to_time_datetime(self):
         html = """
         <html><head><title>Semiconductor policy</title></head>

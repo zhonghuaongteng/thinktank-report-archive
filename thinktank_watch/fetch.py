@@ -40,6 +40,8 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "person",
     "podcast",
     "podcasts",
+    "program",
+    "programs",
     "video",
     "videos",
     "webinars",

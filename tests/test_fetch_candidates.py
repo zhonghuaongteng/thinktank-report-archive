@@ -53,6 +53,33 @@ class FetchCandidateTests(unittest.TestCase):
             )
         )
 
+    def test_source_url_allowed_rejects_program_pages_even_when_relevant(self):
+        institution = Institution(
+            slug="atlantic-council-geotech",
+            name="Atlantic Council GeoTech Center and Cyber Statecraft Initiative",
+            chinese_name="大西洋理事会GeoTech与网络治国项目",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=2,
+            homepage="https://www.atlanticcouncil.org/programs/geotech-center/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.atlanticcouncil.org/programs/cyber-statecraft-initiative/capacity-building-initiative/",
+                institution,
+            )
+        )
+        self.assertTrue(
+            source_url_allowed(
+                "https://www.atlanticcouncil.org/in-depth-research-reports/report/balancing-openness-and-control-cross-border-health-data-and-ai-governance-in-china/",
+                institution,
+            )
+        )
+
     def test_source_url_allowed_accepts_configured_auxiliary_domains(self):
         institution = Institution(
             slug="aspi",

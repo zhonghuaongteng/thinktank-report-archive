@@ -258,7 +258,8 @@ def clean_detail_title(title: str, institution: Institution) -> str:
         if separator not in title:
             continue
         left, right = title.rsplit(separator, 1)
-        if _title_token(right) in allowed_suffixes:
+        right_token = _title_token(right)
+        if right_token in allowed_suffixes or any(token and token in right_token for token in allowed_suffixes):
             return left.strip()
     return title
 

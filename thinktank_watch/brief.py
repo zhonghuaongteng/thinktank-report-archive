@@ -1,21 +1,41 @@
 from __future__ import annotations
 
+import csv
 from collections import Counter
 from html import escape
 from pathlib import Path
 from textwrap import wrap
 
 from .models import ArticleCandidate
+from .kb import INDEX_RELATIVE
+from .restore import parse_archive_markdown
 
 
 MAX_EXPANDED_PRIORITY_ITEMS = 12
+PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
+
+
+def sort_brief_candidates(candidates: list[ArticleCandidate]) -> list[ArticleCandidate]:
+    indexed = list(enumerate(candidates))
+    return [
+        item
+        for _, item in sorted(
+            indexed,
+            key=lambda pair: (
+                PRIORITY_ORDER.get(pair[1].priority, 99),
+                -pair[1].score,
+                pair[0],
+            ),
+        )
+    ]
 
 
 def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
-    priority_items = [item for item in candidates if item.priority in {"P0", "P1"}]
+    ordered_candidates = sort_brief_candidates(candidates)
+    priority_items = [item for item in ordered_candidates if item.priority in {"P0", "P1"}]
     expanded_priority_items = priority_items[:MAX_EXPANDED_PRIORITY_ITEMS]
     overflow_priority_items = priority_items[MAX_EXPANDED_PRIORITY_ITEMS:]
-    index_items = [*overflow_priority_items, *[item for item in candidates if item.priority not in {"P0", "P1"}]]
+    index_items = [*overflow_priority_items, *[item for item in ordered_candidates if item.priority not in {"P0", "P1"}]]
     topic_counter: Counter[str] = Counter(tag for item in candidates for tag in item.topic_tags)
 
     lines = [
@@ -70,6 +90,38 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
 
     lines.extend(["", "## 后续推进", "", "- 对P0/P1条目补充中文研判、页码级证据和可复用表述。"])
     return "\n".join(lines) + "\n"
+
+
+def load_daily_brief_candidates(
+    archive_root: str | Path,
+    kb_root: str | Path,
+    run_date: str,
+) -> list[ArticleCandidate]:
+    index_path = Path(kb_root) / INDEX_RELATIVE
+    if not index_path.exists():
+        return []
+
+    urls: list[str] = []
+    seen_urls: set[str] = set()
+    with index_path.open("r", encoding="utf-8-sig", newline="") as handle:
+        for row in csv.DictReader(handle):
+            url = row.get("原始链接", "")
+            if row.get("抓取日期") != run_date or not url or url in seen_urls:
+                continue
+            seen_urls.add(url)
+            urls.append(url)
+
+    if not urls:
+        return []
+
+    archived: dict[str, ArticleCandidate] = {}
+    for path in sorted(Path(archive_root).rglob("*.md")):
+        try:
+            candidate = parse_archive_markdown(path)
+        except (KeyError, ValueError, OSError):
+            continue
+        archived[candidate.url] = candidate
+    return [archived[url] for url in urls if url in archived]
 
 
 def markdown_to_html(markdown_text: str, title: str) -> str:

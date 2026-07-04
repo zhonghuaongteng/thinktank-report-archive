@@ -1,4 +1,5 @@
 import unittest
+import csv
 from pathlib import Path
 import tempfile
 
@@ -135,6 +136,126 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("### [P1] AI治理报告12", brief)
         self.assertNotIn("### [P1] AI治理报告13", brief)
         self.assertIn("- [P1] GovAI｜AI治理报告13｜https://example.org/13", brief)
+
+    def test_render_daily_brief_orders_priority_items_by_priority_and_score(self):
+        candidates = [
+            ArticleCandidate(
+                institution_slug="old",
+                institution_name="Old Source",
+                institution_type="think_tank",
+                title="Lower score",
+                chinese_title="低分条目",
+                url="https://example.org/low",
+                published_date="2026-07-01",
+                content_type="article",
+                priority="P1",
+                score=5,
+                topic_tags=["AI治理"],
+            ),
+            ArticleCandidate(
+                institution_slug="cset",
+                institution_name="CSET",
+                institution_type="university_research_center",
+                title="Higher score",
+                chinese_title="高分条目",
+                url="https://example.org/high",
+                published_date="2026-07-02",
+                content_type="report",
+                priority="P0",
+                score=11,
+                topic_tags=["AI治理"],
+            ),
+        ]
+
+        brief = render_daily_brief_markdown("2026-07-04", candidates)
+
+        self.assertLess(brief.index("### [P0] 高分条目"), brief.index("### [P1] 低分条目"))
+
+    def test_load_daily_brief_candidates_uses_kb_run_date_and_archive_summaries(self):
+        from thinktank_watch.archive import write_article
+        from thinktank_watch.brief import load_daily_brief_candidates
+        from thinktank_watch.kb import INDEX_FIELDS, INDEX_RELATIVE
+
+        first = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="CSET",
+            institution_type="university_research_center",
+            title="AI safety standard",
+            chinese_title="生成式AI安全基本要求",
+            url="https://cset.georgetown.edu/publication/china-gen-ai-safety-standard-final/",
+            published_date="2026-05-28",
+            content_type="report",
+            priority="P0",
+            topic_tags=["AI治理", "中国与上海相关"],
+            chinese_summary="该标准材料涉及生成式AI服务安全要求。",
+            fetch_status="detail_ok",
+        )
+        second = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="ITIF",
+            institution_type="think_tank",
+            title="AI jobs",
+            chinese_title="AI就业影响新证据",
+            url="https://itif.org/publications/2026/06/30/ai-jobs/",
+            published_date="2026-06-30",
+            content_type="article",
+            priority="P1",
+            topic_tags=["AI治理"],
+            chinese_summary="该文讨论AI对就业的实证影响。",
+            fetch_status="detail_ok",
+        )
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            archive_root = root / "archive"
+            kb_root = root / "kb"
+            write_article(archive_root, first)
+            write_article(archive_root, second)
+            index_path = kb_root / INDEX_RELATIVE
+            index_path.parent.mkdir(parents=True)
+            with index_path.open("w", encoding="utf-8-sig", newline="") as handle:
+                writer = csv.DictWriter(handle, fieldnames=INDEX_FIELDS)
+                writer.writeheader()
+                writer.writerow(
+                    {
+                        "抓取日期": "2026-07-04",
+                        "机构": first.institution_name,
+                        "机构类型": first.institution_type,
+                        "优先级": first.priority,
+                        "主题标签": "；".join(first.topic_tags),
+                        "中文题名": first.chinese_title,
+                        "英文题名": first.title,
+                        "发布日期": first.published_date,
+                        "原始链接": first.url,
+                        "PDF链接": "",
+                        "翻译层级": "full_or_long",
+                        "版权边界": "private_archive",
+                        "抓取状态": "detail_ok",
+                    }
+                )
+                writer.writerow(
+                    {
+                        "抓取日期": "2026-07-03",
+                        "机构": second.institution_name,
+                        "机构类型": second.institution_type,
+                        "优先级": second.priority,
+                        "主题标签": "；".join(second.topic_tags),
+                        "中文题名": second.chinese_title,
+                        "英文题名": second.title,
+                        "发布日期": second.published_date,
+                        "原始链接": second.url,
+                        "PDF链接": "",
+                        "翻译层级": "full_or_long",
+                        "版权边界": "private_archive",
+                        "抓取状态": "detail_ok",
+                    }
+                )
+
+            candidates = load_daily_brief_candidates(archive_root, kb_root, "2026-07-04")
+
+        self.assertEqual([item.url for item in candidates], [first.url])
+        self.assertEqual(candidates[0].chinese_title, "生成式AI安全基本要求")
+        self.assertEqual(candidates[0].chinese_summary, "该标准材料涉及生成式AI服务安全要求。")
 
     def test_write_daily_brief_creates_pdf_when_reportlab_is_available(self):
         try:

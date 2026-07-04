@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import ast
+import re
 from pathlib import Path
 
 from .models import ArticleCandidate
@@ -47,9 +48,20 @@ def _int(value: str) -> int:
         return 0
 
 
+def _section(text: str, heading: str) -> str:
+    marker = f"## {heading}"
+    if marker not in text:
+        return ""
+    after_heading = text.split(marker, 1)[1]
+    match = re.search(r"\n##\s+", after_heading)
+    section = after_heading[: match.start()] if match else after_heading
+    return section.strip()
+
+
 def parse_archive_markdown(path: str | Path) -> ArticleCandidate:
     path = Path(path)
-    data = _frontmatter(path.read_text(encoding="utf-8"))
+    text = path.read_text(encoding="utf-8")
+    data = _frontmatter(text)
     return ArticleCandidate(
         institution_slug=data["institution_slug"],
         institution_name=data["institution"],
@@ -58,6 +70,7 @@ def parse_archive_markdown(path: str | Path) -> ArticleCandidate:
         url=data["source_url"],
         published_date=data.get("published_date", ""),
         summary="",
+        chinese_summary=_section(text, "中文摘要与研判"),
         content_type=data.get("content_type", "article"),
         chinese_title=_scalar(data.get("chinese_title", "")),
         authors=_list(data.get("authors", "[]")),
