@@ -171,14 +171,14 @@ class ArchiveAndBriefTests(unittest.TestCase):
                 priority="P2",
                 topic_tags=["科技治理"],
             )
-            for index in range(1, 63)
+            for index in range(1, 104)
         ]
 
         brief = render_daily_brief_markdown("2026-07-04", candidates)
 
-        self.assertIn("- [P2] Source｜索引条目60｜https://example.org/index/60", brief)
-        self.assertNotIn("- [P2] Source｜索引条目61｜https://example.org/index/61", brief)
-        self.assertIn("其余 2 条已写入私有归档和知识库索引", brief)
+        self.assertIn("- [P2] Source｜索引条目100｜https://example.org/index/100", brief)
+        self.assertNotIn("- [P2] Source｜索引条目101｜https://example.org/index/101", brief)
+        self.assertIn("其余 3 条已写入私有归档和知识库索引", brief)
 
     def test_render_daily_brief_keeps_innovation_support_items_visible_when_priority_overflows(self):
         candidates = [

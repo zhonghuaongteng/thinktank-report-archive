@@ -12,7 +12,7 @@ from .restore import parse_archive_markdown
 
 
 MAX_EXPANDED_PRIORITY_ITEMS = 12
-MAX_INDEX_ITEMS = 60
+MAX_INDEX_ITEMS = 100
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 INNOVATION_SUPPORT_TAGS = {"科技创新", "先进制造", "数字经济", "半导体", "科技人才"}
 
@@ -135,7 +135,7 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
     lines.extend(["", "## 广义科技创新支撑", ""])
     support_items = select_innovation_support_items(ordered_candidates)
     if support_items:
-        for item in support_items[:8]:
+        for item in support_items[:12]:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}")
     else:
         lines.append("本日未检出区域创新、先进制造、数字基础设施、半导体或科技人才相关条目。")
