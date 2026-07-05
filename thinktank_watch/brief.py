@@ -19,7 +19,8 @@ from .restore import parse_archive_markdown
 
 
 MAX_EXPANDED_PRIORITY_ITEMS = 12
-MIN_EXPANDED_INNOVATION_SUPPORT_ITEMS = 5
+MIN_EXPANDED_INNOVATION_SUPPORT_ITEMS = 8
+MAX_EXPANDED_GOVERNANCE_ONLY_ITEMS = 4
 MAX_INDEX_ITEMS = 100
 MAX_RECENT_WRITE_ITEMS = 8
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
@@ -101,6 +102,7 @@ def select_expanded_priority_items(
     priority_items: list[ArticleCandidate],
     limit: int = MAX_EXPANDED_PRIORITY_ITEMS,
     min_innovation_support: int = MIN_EXPANDED_INNOVATION_SUPPORT_ITEMS,
+    max_governance_only: int = MAX_EXPANDED_GOVERNANCE_ONLY_ITEMS,
 ) -> list[ArticleCandidate]:
     selected_urls: set[str] = set()
     selected: list[ArticleCandidate] = []
@@ -114,10 +116,16 @@ def select_expanded_priority_items(
     support_items = [item for item in priority_items if is_innovation_support_candidate(item)]
     for item in support_items[:min_innovation_support]:
         add(item)
+
+    governance_only_count = 0
+    governance_cap_enabled = bool(support_items)
     for item in priority_items:
+        if is_governance_only_candidate(item) and governance_cap_enabled:
+            if governance_only_count >= max_governance_only:
+                continue
+            governance_only_count += 1
         add(item)
-    selected_set = set(selected_urls)
-    return [item for item in priority_items if item.url in selected_set][:limit]
+    return selected[:limit]
 
 
 def select_recent_write_items(candidates: list[ArticleCandidate], limit: int = MAX_RECENT_WRITE_ITEMS) -> list[ArticleCandidate]:

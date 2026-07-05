@@ -84,6 +84,8 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("科技创新", profile.topic_tags_any)
         self.assertIn("先进制造", profile.topic_tags_any)
         self.assertIn("数字经济", profile.topic_tags_any)
+        self.assertIn("科技人才", profile.topic_tags_any)
+        self.assertIn("国防AI", profile.topic_tags_any)
 
     def test_daily_and_backfill_cli_default_to_broad_innovation_support_profile(self):
         parser = build_parser()
@@ -1347,6 +1349,32 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("先进制造", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_grid_and_data_center_infrastructure_enter_broad_innovation_profile(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        profile = load_search_profiles("config/search_profiles.yaml")["broad_innovation_support"]
+        candidate = ArticleCandidate(
+            institution_slug="orf-america",
+            institution_name="ORF America Technology Policy",
+            institution_type="think_tank",
+            title="Grids and Data Centers for AI-Ready Infrastructure",
+            url="https://orfamerica.org/newresearch/grids-data-centers-ai-infrastructure",
+            summary=(
+                "A policy brief on renewable energy, smart grids, microgrids, battery storage, "
+                "grid interconnection, data centers, and workforce development for AI-ready infrastructure."
+            ),
+            published_date="2026-01-08",
+            content_type="brief",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("先进制造", scored.topic_tags)
+        self.assertIn("数字经济", scored.topic_tags)
+        self.assertIn("科技人才", scored.topic_tags)
+        self.assertTrue(candidate_matches_search_profile(scored, profile))
 
     def test_cloud_services_and_dma_are_digital_technology_policy_signals(self):
         topics = load_topics("config/topics.yaml")

@@ -349,10 +349,51 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         brief = render_daily_brief_markdown("2026-07-04", candidates)
 
-        self.assertEqual(brief.count("### ["), 12)
+        self.assertEqual(brief.count("### ["), 5)
         self.assertIn("### [P1] 创新支撑体系", brief)
         self.assertIn("- 创新支撑条目：1", brief)
         self.assertIn("- 纯治理条目：14", brief)
+
+    def test_render_daily_brief_caps_pure_governance_when_innovation_support_exists(self):
+        candidates = [
+            ArticleCandidate(
+                institution_slug="govai",
+                institution_name="GovAI",
+                institution_type="think_tank",
+                title=f"AI governance report {index}",
+                chinese_title=f"AI治理报告{index}",
+                url=f"https://example.org/ai/{index}",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P0",
+                score=10,
+                topic_tags=["AI治理"],
+            )
+            for index in range(1, 21)
+        ]
+        candidates.extend(
+            ArticleCandidate(
+                institution_slug=f"source-{index}",
+                institution_name=f"Source {index}",
+                institution_type="think_tank",
+                title=f"Innovation support report {index}",
+                chinese_title=f"创新支撑报告{index}",
+                url=f"https://example.org/innovation/{index}",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P1",
+                score=5,
+                topic_tags=["科技创新"],
+            )
+            for index in range(1, 9)
+        )
+
+        brief = render_daily_brief_markdown("2026-07-04", candidates)
+        priority_section = brief.split("## P0/P1重点", 1)[1].split("## 科技创新支撑重点", 1)[0]
+
+        self.assertEqual(priority_section.count("### ["), 12)
+        self.assertEqual(priority_section.count("### [P1] 创新支撑报告"), 8)
+        self.assertEqual(priority_section.count("### [P0] AI治理报告"), 4)
 
     def test_render_daily_brief_orders_priority_items_by_priority_and_score(self):
         candidates = [
