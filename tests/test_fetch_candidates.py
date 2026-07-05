@@ -7,6 +7,7 @@ from thinktank_watch.fetch import fetch_detail
 from thinktank_watch.fetch import fetch_list_candidates
 from thinktank_watch.fetch import fetch_sitemap_candidates
 from thinktank_watch.fetch import interleave_candidate_groups
+from thinktank_watch.fetch import needs_pdf_text_fallback
 from thinktank_watch.fetch import sitemap_include_keyword_matches
 from thinktank_watch.fetch import source_url_allowed
 from thinktank_watch.models import ArticleCandidate
@@ -235,6 +236,22 @@ class FetchCandidateTests(unittest.TestCase):
                 institution,
             )
         )
+
+    def test_pdf_fallback_prefers_pdf_when_html_has_related_industry_briefs(self):
+        candidate = ArticleCandidate(
+            institution_slug="stanford-hai",
+            institution_name="Stanford HAI",
+            institution_type="university_research_center",
+            title="Human-Centered Large Language Models",
+            url="https://hai.stanford.edu/industry/human-centered-large-language-models",
+            pdf_url="https://hai.stanford.edu/assets/files/hai_industry_report_llms_2026.pdf",
+            detail_text=(
+                "Large language models have moved from research laboratories into everyday infrastructure. "
+                "Related Industry Briefs Sustainability and AI Stanford HAI Robotics and AI Stanford HAI"
+            ),
+        )
+
+        self.assertTrue(needs_pdf_text_fallback(candidate))
 
     def test_source_url_allowed_rejects_news_pages_before_sitemap_scoring(self):
         institution = Institution(

@@ -167,6 +167,42 @@ class GenericParserTests(unittest.TestCase):
         self.assertEqual(detail.authors, ["Ada Chen"])
         self.assertEqual(detail.summary, "A governance note.")
 
+    def test_parse_generic_detail_uses_body_summary_when_meta_summary_missing(self):
+        html = """
+        <html><head><title>Taxation and competitiveness | Bruegel</title></head>
+        <body><main>
+          <p>One of the main objectives of the project is to examine how tax policy and tax
+          administration shape European Union competitiveness. This includes exploring emerging
+          drivers of competitiveness, such as investment incentives, innovation and digitalisation.</p>
+          <p>The research aims to generate actionable and evidence-based insights that support
+          coherent, forward-looking and future-proof tax strategies for the EU and its member
+          states.</p>
+          <p>Additional methodological notes provide context for the research programme, expert
+          workshops, analytical scope, country comparisons, and supporting datasets that are used
+          to assess investment, growth, and competitiveness effects across member states.</p>
+        </main></body></html>
+        """
+        institution = Institution(
+            slug="bruegel",
+            name="Bruegel",
+            chinese_name="布鲁盖尔研究所",
+            country_region="European Union",
+            institution_type="think_tank",
+            priority="P1",
+            batch=1,
+            homepage="https://www.bruegel.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://www.bruegel.org/anthology/taxation-and-competitiveness",
+            institution,
+        )
+
+        self.assertIn("investment incentives, innovation and digitalisation", detail.summary)
+
     def test_parse_generic_detail_strips_matching_site_title_suffix(self):
         html = """
         <html><head>

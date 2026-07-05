@@ -487,6 +487,8 @@ def needs_pdf_text_fallback(candidate: ArticleCandidate) -> bool:
         return False
     if not candidate.detail_text:
         return True
+    if "related industry briefs" in candidate.detail_text[:5000].lower():
+        return True
     if len(candidate.detail_text) < PDF_TEXT_MIN_HTML_CHARS:
         return True
     return not detail_text_matches_title(candidate.detail_text[:4000], candidate.title)

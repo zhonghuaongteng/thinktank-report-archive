@@ -1,7 +1,7 @@
 import unittest
 
 from thinktank_watch.config import load_institutions, load_priority_rules, load_search_profiles, load_topics
-from thinktank_watch.cli import _select_institutions, build_parser
+from thinktank_watch.cli import _select_institutions, build_parser, candidate_matches_search_profile
 from thinktank_watch.models import ArticleCandidate
 from thinktank_watch.scoring import score_candidate
 
@@ -157,6 +157,73 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("AI治理", scored.topic_tags)
+
+    def test_ai_index_economy_chapter_is_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        profile = load_search_profiles("config/search_profiles.yaml")["broad_innovation_support"]
+        candidate = ArticleCandidate(
+            institution_slug="stanford-hai",
+            institution_name="Stanford HAI",
+            institution_type="university_research_center",
+            title="Economy | The 2026 AI Index Report",
+            url="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy",
+            summary=(
+                "This chapter analyzes the economic footprint of AI across the private sector and "
+                "its implications for labor markets, productivity, and the future of work."
+            ),
+            published_date="2026-06-29",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("数字经济", scored.topic_tags)
+        self.assertIn("科技人才", scored.topic_tags)
+        self.assertTrue(candidate_matches_search_profile(scored, profile))
+
+    def test_hai_llm_industry_brief_is_technology_innovation_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="stanford-hai",
+            institution_name="Stanford HAI",
+            institution_type="university_research_center",
+            title="Human-Centered Large Language Models",
+            url="https://hai.stanford.edu/industry/human-centered-large-language-models",
+            summary=(
+                "Large language models have moved from research laboratories into everyday "
+                "infrastructure, powering developer tools, healthcare assistants, and enterprise agents."
+            ),
+            published_date="2026-07-01",
+            content_type="brief",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+
+    def test_research_culture_is_science_system_support_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="nistep",
+            institution_name="NISTEP",
+            institution_type="government_research_institute",
+            title="Research Culture in Dialogue and Practice",
+            url="https://www.nistep.go.jp/en/?p=5926",
+            summary="Toward a nationwide survey of researchers on wellbeing and research culture.",
+            published_date="2025-12-26",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertIn("科技人才", scored.topic_tags)
 
     def test_ai_surveillance_is_governance_focus(self):
         topics = load_topics("config/topics.yaml")

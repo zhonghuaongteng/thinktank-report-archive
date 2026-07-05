@@ -554,7 +554,9 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
 
     text = extract_detail_text(soup)
     summary = raw_summary
-    if summary_looks_generic(summary):
+    if not summary:
+        summary = summary_from_detail_text(text)
+    elif summary_looks_generic(summary):
         summary = summary_from_detail_text(text) or summary
     pdf_url = extract_pdf_url(soup, url, institution, title)
     content_type = infer_content_type(url, json_primary)
