@@ -317,6 +317,10 @@ def looks_like_special_report(raw_summary: str, text: str) -> bool:
     return re.search(r"\bspecial report no\.?\s*\d+", f"{raw_summary} {text[:300]}", re.IGNORECASE) is not None
 
 
+def looks_like_publication_teaser(text: str) -> bool:
+    return re.search(r"\bread the publication\b", text, re.IGNORECASE) is not None
+
+
 def authors_from_json_ld(item: dict) -> list[str]:
     author = item.get("author")
     if isinstance(author, list):
@@ -405,6 +409,10 @@ def _download_pdf_label(text: str) -> bool:
     return any(token in label for token in ("download pdf", "download report", "full report"))
 
 
+def _publication_pdf_label(text: str) -> bool:
+    return text.lower() in {"read the publication", "read publication"}
+
+
 def _match_terms(value: str) -> set[str]:
     terms = set()
     for term in re.findall(r"[a-z0-9]+", unquote(value).lower()):
@@ -431,6 +439,8 @@ def extract_pdf_url(soup: BeautifulSoup, page_url: str, institution: Institution
         absolute = urljoin(page_url, href)
         text = norm(node.get_text(" "))
         if _download_pdf_label(text):
+            return absolute
+        if _publication_pdf_label(text) and _pdf_link_matches_title(absolute, text, page_url, title):
             return absolute
         if _source_pdf_link(absolute, page_url, institution) and _pdf_link_matches_title(
             absolute,
@@ -560,7 +570,9 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
         summary = summary_from_detail_text(text) or summary
     pdf_url = extract_pdf_url(soup, url, institution, title)
     content_type = infer_content_type(url, json_primary)
-    completeness = "full_text" if pdf_url or len(text) >= MIN_DETAIL_TEXT_LENGTH else "summary_only"
+    completeness = "full_text" if len(text) >= MIN_DETAIL_TEXT_LENGTH else "summary_only"
+    if looks_like_publication_teaser(text):
+        completeness = "summary_only"
     if content_type == "external_publication" and not pdf_url:
         completeness = "summary_only"
     if content_type == "article" and looks_like_special_report(raw_summary, text):

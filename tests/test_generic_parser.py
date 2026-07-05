@@ -374,6 +374,46 @@ class GenericParserTests(unittest.TestCase):
         self.assertEqual(detail.content_type, "external_publication")
         self.assertEqual(detail.source_completeness, "summary_only")
 
+    def test_parse_generic_detail_marks_read_publication_teaser_as_summary_only(self):
+        html = """
+        <html><head>
+          <title>Navigating the Global Politics of Artificial Intelligence and Healthcare</title>
+          <meta name="description" content="While AI offers transformative potential, it can exacerbate health inequities.">
+        </head><body>
+          <main>
+            <h1>Navigating the Global Politics of Artificial Intelligence and Healthcare</h1>
+            <p>While AI offers transformative potential, it can exacerbate health inequities and contribute to negative health outcomes along its opaque, transnational value chain.</p>
+            <a href="https://www.thebritishacademy.ac.uk/documents/6045/Navigating_the_global_politics_of_artificial_intelligence_and_healthcare.pdf">Read the Publication</a>
+            <p>About the Author</p>
+            <p>More Work from Carnegie Endowment for International Peace. Related article cards and navigation text make this page longer than the minimum detail threshold, but it is still only a landing page.</p>
+          </main>
+        </body></html>
+        """
+        institution = Institution(
+            slug="carnegie-tech",
+            name="Carnegie Technology and International Affairs Program",
+            chinese_name="卡内基国际和平基金会技术与国际事务项目",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://carnegieendowment.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://carnegieendowment.org/research/2026/02/navigating-the-global-politics-of-artificial-intelligence-and-healthcare",
+            institution,
+        )
+
+        self.assertEqual(detail.source_completeness, "summary_only")
+        self.assertEqual(
+            detail.pdf_url,
+            "https://www.thebritishacademy.ac.uk/documents/6045/Navigating_the_global_politics_of_artificial_intelligence_and_healthcare.pdf",
+        )
+
     def test_parse_generic_detail_falls_back_to_visible_month_date(self):
         html = """
         <html><head><title>AI sandbox policy</title></head>

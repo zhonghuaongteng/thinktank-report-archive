@@ -443,7 +443,7 @@ def fetch_detail(client: httpx.Client, institution: Institution, candidate: Arti
         detail.pdf_status = candidate.pdf_status
     if not detail.external_source_url:
         detail.external_source_url = candidate.external_source_url
-    if detail.pdf_url and detail.source_completeness == "summary_only":
+    if institution.slug == "stepi" and detail.pdf_url and detail.source_completeness == "summary_only":
         detail.source_completeness = "full_text"
     detail.copyright_boundary = institution.copyright_boundary
     return detail
