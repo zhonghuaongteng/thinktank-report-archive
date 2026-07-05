@@ -212,6 +212,8 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
         return False
     if last_stem in SOURCE_LAST_SEGMENT_DENY:
         return False
+    if re.search(r"(?:^|-)annual-reports?(?:-|$)", last_stem):
+        return False
     if len(last_stem) == 4 and last_stem.isdigit():
         return False
     if len(ordered_path_segments) == 2:

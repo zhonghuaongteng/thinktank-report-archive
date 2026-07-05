@@ -276,6 +276,7 @@ class FetchCandidateTests(unittest.TestCase):
         self.assertFalse(source_url_allowed("https://cset.georgetown.edu/research-area/biotech/", institution))
         self.assertFalse(source_url_allowed("https://cset.georgetown.edu/research-areas/", institution))
         self.assertFalse(source_url_allowed("https://cset.georgetown.edu/job/research-analysts/", institution))
+        self.assertFalse(source_url_allowed("https://cset.georgetown.edu/publication/2025-annual-report/", institution))
         self.assertTrue(
             source_url_allowed(
                 "https://cset.georgetown.edu/article/china-seeks-a-i-independence-weakening-trumps-leverage/",
