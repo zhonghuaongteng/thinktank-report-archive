@@ -20,7 +20,7 @@ class ConfigAndScoringTests(unittest.TestCase):
             {item.batch for item in institutions if item.slug == "rand"},
             {1},
         )
-        for slug in {"belfer", "ida-stpi", "nistep", "stepi"}:
+        for slug in {"aspi", "belfer", "bruegel", "csis", "ecipe", "ida-stpi", "nistep", "orf-america", "stepi"}:
             self.assertEqual(
                 {item.batch for item in institutions if item.slug == slug},
                 {1},
@@ -677,6 +677,72 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         self.assertEqual(scored.priority, "P1")
         self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_metascience_and_research_productivity_are_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="ida-stpi",
+            institution_name="IDA Science and Technology Policy Institute",
+            institution_type="government_research_institute",
+            title="Metascience, Research Productivity, and Federal R&D Evaluation",
+            url="https://www.ida.org/research/metascience-research-productivity",
+            summary=(
+                "A report on science of science, research assessment, research productivity, "
+                "and federal R&D evaluation."
+            ),
+            published_date="2026-05-20",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_innovation_agencies_and_spinouts_are_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="bruegel",
+            institution_name="Bruegel",
+            institution_type="think_tank",
+            title="Innovation Agencies, University Spinouts, and Technology Transfer Offices",
+            url="https://www.bruegel.org/policy-brief/innovation-agencies-university-spinouts",
+            summary=(
+                "A policy brief on innovation agencies, technology transfer offices, "
+                "IP commercialization, and university spinout companies."
+            ),
+            published_date="2026-04-15",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_researcher_mobility_and_human_capital_are_talent_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="nistep",
+            institution_name="National Institute of Science and Technology Policy Japan",
+            institution_type="government_research_institute",
+            title="High-Skilled Mobility and Science Human Capital",
+            url="https://www.nistep.go.jp/en/publication/high-skilled-mobility",
+            summary="A report on researcher mobility, scientific mobility, talent attraction, and talent retention.",
+            published_date="2026-03-11",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("科技人才", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
     def test_value_chain_capacity_and_skills_are_innovation_support(self):

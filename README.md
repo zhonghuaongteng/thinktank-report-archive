@@ -19,7 +19,7 @@ This repository tracks public research outputs from selected international think
 
 P1 is intentionally broader than AI governance. The default priority queue covers reports that support technology innovation and development: technology innovation capacity, public or private R&D, innovation systems, technology adoption and diffusion, research infrastructure, commercialization, industrial competitiveness, advanced manufacturing, digital transformation, STEM talent, productivity, and related policy instruments. A report, paper, or policy brief with any substantive technology topic is treated as at least P1 even when it does not contain AI governance language.
 
-The July 2026 scope update widens future retrieval further toward technology-innovation support systems. Science and technology indicators, public R&D budgets, strategic public investment, research organizations, innovation platforms, industrial value chains, production capacity, supply-chain resilience, public compute, data sharing, skills development, and high-skilled mobility are all treated as substantive innovation-support signals. Historical backfill already archived under the narrower AI-governance-heavy mix is not rewritten by this rule; new daily and backfill runs use the broader scoring and write-order policy.
+The July 2026 scope update widens future retrieval further toward technology-innovation support systems. Science and technology indicators, public R&D budgets, strategic public investment, research organizations, innovation platforms, metascience, research productivity, technology transfer offices, university spinouts, international research collaboration, industrial value chains, production capacity, supply-chain resilience, public compute, data sharing, skills development, human capital, and high-skilled mobility are all treated as substantive innovation-support signals. Historical backfill already archived under the narrower AI-governance-heavy mix is not rewritten by this rule; new daily and backfill runs use the broader scoring and write-order policy.
 
 Within the same priority bucket, the write queue and daily brief priority section prefer candidates tagged with technology innovation, semiconductors, advanced manufacturing, digital economy, or science and technology talent before pure AI-governance items. This keeps small daily write limits and the visible P0/P1 brief from being exhausted by governance-only material when innovation-support reports are available.
 
@@ -62,7 +62,8 @@ The local Codex automation `国际科技智库每日抓取` runs at 10:00 Beijin
 
 ## Source Status Notes
 
-- Second-batch P0/P1 sources now have guarded configs for CSIS, ASPI, Ada Lovelace, interface, Atlantic Council, Bruegel, ECIPE, and GovAI.
+- The default first-batch pool now includes broad innovation-support sources CSIS, Bruegel, ECIPE, ASPI, and ORF America in addition to RAND, CSET, ITIF, Stanford HAI, Carnegie, Brookings, CNAS, MERICS, OECD.AI, Belfer STPP, IDA STPI, NISTEP, and STEPI.
+- Remaining second-batch P0/P1 sources have guarded configs for Ada Lovelace, interface, Atlantic Council, CEPS, and GovAI.
 - ASPI's main site returns Cloudflare 403 to static requests; The Strategist is configured as an explicit auxiliary ASPI domain.
 - Belfer uses Drupal sitemap indexes; sitemap candidates are sorted by `lastmod` before truncation so recent science, technology, cyber, innovation, and space materials are not crowded out by older sitemap pages.
 - CEPS RSS and detail pages are unstable or blocked for static requests. CEPS remains in the institution table, but this source should be treated as metadata/health-check first until a browser-backed parser is added.
