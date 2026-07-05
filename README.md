@@ -23,7 +23,7 @@ The July 2026 scope update widens future retrieval further toward technology-inn
 
 Within the same priority bucket, the write queue and daily brief priority section prefer candidates tagged with technology innovation, semiconductors, advanced manufacturing, digital economy, science and technology talent, or defense AI before pure governance items. When a backfill or daily command uses `--write-limit`, at least half of the limited batch is reserved for innovation-support candidates when enough such candidates are available, so pure governance sources do not crowd out broader technology-development material. The daily brief also reserves visible P0/P1 slots for innovation-support reports when governance material is numerically dominant.
 
-Search profiles in `config/search_profiles.yaml` make this scope explicit. `broad_innovation_support` keeps candidates tagged as technology innovation, semiconductors, advanced manufacturing, digital economy, science and technology talent, or defense AI, and excludes candidates that only carry AI governance or technology governance tags. `ai_governance_watch` remains available for dedicated governance monitoring. The daily and batch backfill scripts default to `broad_innovation_support`; use `--search-profile ai_governance_watch` or `-SearchProfile ai_governance_watch` only for a dedicated governance watch.
+Search profiles in `config/search_profiles.yaml` make this scope explicit. `broad_innovation_support` keeps candidates tagged as technology innovation, semiconductors, advanced manufacturing, digital economy, science and technology talent, or defense AI, and excludes candidates that only carry AI governance or technology governance tags. `ai_governance_watch` remains available for dedicated governance monitoring. The Python `run-daily` and `backfill` commands and their PowerShell wrappers default to `broad_innovation_support`; use `--search-profile ai_governance_watch` or `-SearchProfile ai_governance_watch` only for a dedicated governance watch.
 
 China/Shanghai relevance is treated as a context signal. It can raise priority only when paired with a substantive technology, AI, semiconductor, manufacturing, digital economy, innovation, governance, or talent signal; China-only diplomacy or event pages are capped at P2.
 
@@ -40,7 +40,7 @@ C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank
 powershell -ExecutionPolicy Bypass -File scripts\run_backfill_batch.ps1 -Batch 1 -Limit 5 -MinPriority P1 -WriteLimit 8 -LookbackYears 3
 ```
 
-Candidate source URLs are restricted to the institution's own site or subdomains. Event, people, podcast, project, topic, video, webinar, broad index, and announcement-style pages are filtered out before scoring. Backfill runs interleave feed, list/topic page, and sitemap candidates so one source type does not exhaust the per-institution limit.
+Candidate source URLs are restricted to the institution's own site or subdomains. Event, people, podcast, project, topic, video, webinar, broad index, award-news, and announcement-style pages are filtered out before scoring. Non-report book announcements are capped below P1 even when they mention technology competition. Backfill runs interleave feed, list/topic page, and sitemap candidates so one source type does not exhaust the per-institution limit.
 
 Historical backfill is bounded to the last three years by default. Candidates without a verifiable publication date, candidates dated before the lookback window, and future-dated candidates are skipped during backfill runs.
 

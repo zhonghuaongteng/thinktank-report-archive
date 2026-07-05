@@ -34,6 +34,7 @@ DEFAULT_CONFIG = Path("config")
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 DEFAULT_BACKFILL_LOOKBACK_YEARS = 3
 DEFAULT_DAILY_LOOKBACK_DAYS = 30
+DEFAULT_EXPANDED_SEARCH_PROFILE = "broad_innovation_support"
 
 
 def _load_config():
@@ -504,7 +505,7 @@ def build_parser() -> argparse.ArgumentParser:
     daily.add_argument("--write-limit", type=int, default=0, help="Maximum number of new allowed records to write. 0 means unlimited.")
     daily.add_argument("--lookback-days", type=int, default=DEFAULT_DAILY_LOOKBACK_DAYS)
     daily.add_argument("--include-term", dest="include_terms", action="append", default=[])
-    daily.add_argument("--search-profile")
+    daily.add_argument("--search-profile", default=DEFAULT_EXPANDED_SEARCH_PROFILE)
     daily.add_argument("--archive-root", default="archive")
     daily.add_argument("--brief-root", default="briefs")
     daily.add_argument("--state", default="state/articles.sqlite")
@@ -521,7 +522,7 @@ def build_parser() -> argparse.ArgumentParser:
     backfill_parser.add_argument("--min-priority", choices=sorted(PRIORITY_ORDER), default="P3")
     backfill_parser.add_argument("--write-limit", type=int, default=0, help="Maximum number of new allowed records to write. 0 means unlimited.")
     backfill_parser.add_argument("--include-term", dest="include_terms", action="append", default=[])
-    backfill_parser.add_argument("--search-profile")
+    backfill_parser.add_argument("--search-profile", default=DEFAULT_EXPANDED_SEARCH_PROFILE)
     backfill_parser.add_argument("--lookback-years", type=int, default=DEFAULT_BACKFILL_LOOKBACK_YEARS)
     backfill_parser.add_argument("--archive-root", default="archive")
     backfill_parser.add_argument("--brief-root", default="briefs")

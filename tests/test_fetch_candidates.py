@@ -283,6 +283,12 @@ class FetchCandidateTests(unittest.TestCase):
                 institution,
             )
         )
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.belfercenter.org/publication/david-mccord-dets-program-research-assistant-receives-award-american-astronautical",
+                institution,
+            )
+        )
         self.assertTrue(
             source_url_allowed(
                 "https://www.belfercenter.org/research-analysis/another-technology-race-us-china-quantum-computing-landscape",

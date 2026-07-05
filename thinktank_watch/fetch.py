@@ -214,6 +214,8 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
         return False
     if re.search(r"(?:^|-)annual-reports?(?:-|$)", last_stem):
         return False
+    if re.search(r"(?:^|-)(receives?-award|wins?-award|award-winners?|award-recipients?)(?:-|$)", last_stem):
+        return False
     if institution.slug == "hoover-tpa" and last_stem.startswith("articles-"):
         return False
     if institution.slug == "itif" and "canada-post" in last_stem:

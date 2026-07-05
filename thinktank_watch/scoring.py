@@ -65,6 +65,14 @@ STRONG_DIGITAL_INNOVATION_SUPPORT_KEYWORDS = {
 }
 PDF_OR_REPORT_PRIORITY_CAP_SOURCES = {"orf-america"}
 PDF_OR_REPORT_PRIORITY_CAP = "P2"
+BOOK_ANNOUNCEMENT_PRIORITY_CAP = "P2"
+BOOK_ANNOUNCEMENT_KEYWORDS = {
+    "new book",
+    "book launch",
+    "book talk",
+    "book review",
+    "new volume",
+}
 STANDALONE_AI_KEYWORDS = {"AI", "A.I."}
 WEAK_DEFENSE_AI_KEYWORDS = {"defense technology", "national security", "国家安全"}
 STRONG_DEFENSE_AI_KEYWORDS = {
@@ -131,6 +139,12 @@ def _has_substantive_standalone_ai_context(text: str) -> bool:
 
 def _has_strong_digital_innovation_support(text: str) -> bool:
     return any(_contains_keyword(text, keyword) for keyword in STRONG_DIGITAL_INNOVATION_SUPPORT_KEYWORDS)
+
+
+def _is_book_announcement(candidate: ArticleCandidate, text: str) -> bool:
+    if candidate.content_type in REPORT_TYPES:
+        return False
+    return any(_contains_keyword(text, keyword) for keyword in BOOK_ANNOUNCEMENT_KEYWORDS)
 
 
 def score_candidate(
@@ -201,6 +215,8 @@ def score_candidate(
         and priority in {"P0", "P1"}
     ):
         priority = PDF_OR_REPORT_PRIORITY_CAP
+    if _is_book_announcement(scored, text) and priority in {"P0", "P1"}:
+        priority = BOOK_ANNOUNCEMENT_PRIORITY_CAP
 
     scored.score = total
     scored.priority = priority

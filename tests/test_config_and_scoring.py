@@ -1,7 +1,7 @@
 import unittest
 
 from thinktank_watch.config import load_institutions, load_priority_rules, load_search_profiles, load_topics
-from thinktank_watch.cli import _select_institutions
+from thinktank_watch.cli import _select_institutions, build_parser
 from thinktank_watch.models import ArticleCandidate
 from thinktank_watch.scoring import score_candidate
 
@@ -76,6 +76,15 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("科技创新", profile.topic_tags_any)
         self.assertIn("先进制造", profile.topic_tags_any)
         self.assertIn("数字经济", profile.topic_tags_any)
+
+    def test_daily_and_backfill_cli_default_to_broad_innovation_support_profile(self):
+        parser = build_parser()
+
+        daily_args = parser.parse_args(["run-daily"])
+        backfill_args = parser.parse_args(["backfill"])
+
+        self.assertEqual(daily_args.search_profile, "broad_innovation_support")
+        self.assertEqual(backfill_args.search_profile, "broad_innovation_support")
 
     def test_scoring_promotes_ai_china_governance_items_to_p0(self):
         topics = load_topics("config/topics.yaml")
@@ -667,6 +676,28 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("先进制造", scored.topic_tags)
         self.assertIn("数字经济", scored.topic_tags)
+
+    def test_non_report_book_announcement_is_capped_below_p1(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="belfer",
+            institution_name="Harvard Belfer Center Science, Technology, and Public Policy",
+            institution_type="university_research_center",
+            title="Jimmy Carter and China: Multilateral Competition in the Global Cold War",
+            url="https://www.belfercenter.org/research-analysis/jimmy-carter-and-china-multilateral-competition-global-cold-war",
+            summary=(
+                "Sheng Peng's new book highlights global supply chains for defense and dual-use "
+                "technologies, technological competition, and US-China relations."
+            ),
+            published_date="2026-06-01",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P2")
+        self.assertIn("科技创新", scored.topic_tags)
 
     def test_advanced_compute_access_is_digital_infrastructure_signal(self):
         topics = load_topics("config/topics.yaml")
