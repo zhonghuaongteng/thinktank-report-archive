@@ -356,6 +356,26 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("科技创新", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
+    def test_core_innovation_support_article_enters_p1_without_ai_governance(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="Information Technology and Innovation Foundation",
+            institution_type="think_tank",
+            title="Canada's Research Budget Does Not Match Its Innovation Strategy",
+            url="https://itif.org/publications/2026/06/16/canadas-research-budget/",
+            summary="A short analysis of research budget choices and innovation strategy.",
+            published_date="2026-06-16",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
     def test_innovation_support_system_terms_enter_p1_without_governance_language(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")

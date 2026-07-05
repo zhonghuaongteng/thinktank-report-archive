@@ -19,6 +19,8 @@ TOPIC_MATCH_EXTRA_CAP = 2
 CONTEXT_ONLY_TOPICS = {"中国与上海相关"}
 CONTEXT_ONLY_PRIORITY_CAP = "P2"
 SUBSTANTIVE_REPORT_PRIORITY_FLOOR = "P1"
+CORE_INNOVATION_SUPPORT_PRIORITY_FLOOR = "P1"
+CORE_INNOVATION_SUPPORT_TAGS = {"科技创新", "半导体", "科技人才"}
 PDF_OR_REPORT_PRIORITY_CAP_SOURCES = {"orf-america"}
 PDF_OR_REPORT_PRIORITY_CAP = "P2"
 STANDALONE_AI_KEYWORDS = {"AI", "A.I."}
@@ -140,6 +142,8 @@ def score_candidate(
     substantive_topics = set(topic_scores) - CONTEXT_ONLY_TOPICS
     if substantive_topics and scored.content_type in REPORT_TYPES and priority not in {"P0", "P1"}:
         priority = SUBSTANTIVE_REPORT_PRIORITY_FLOOR
+    if substantive_topics & CORE_INNOVATION_SUPPORT_TAGS and priority not in {"P0", "P1"}:
+        priority = CORE_INNOVATION_SUPPORT_PRIORITY_FLOOR
     if topic_scores and not substantive_topics and priority in {"P0", "P1"}:
         priority = CONTEXT_ONLY_PRIORITY_CAP
     if (
