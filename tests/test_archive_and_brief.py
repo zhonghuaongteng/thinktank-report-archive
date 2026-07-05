@@ -128,6 +128,7 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         self.assertIn("# 国际科技智库动态简报（2026-07-04）", brief)
         self.assertIn("P0/P1重点", brief)
+        self.assertIn("科技创新支撑与AI治理", brief)
         self.assertIn("AI安全", brief)
         self.assertIn("新增索引", brief)
         self.assertIn("制造业", brief)
@@ -215,6 +216,46 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         self.assertIn("广义科技创新支撑", brief)
         self.assertIn("- [P2] Brookings CTI｜NSF区域创新引擎", brief)
+
+    def test_render_daily_brief_reserves_priority_slots_for_innovation_support(self):
+        candidates = [
+            ArticleCandidate(
+                institution_slug="govai",
+                institution_name="GovAI",
+                institution_type="think_tank",
+                title=f"AI governance report {index}",
+                chinese_title=f"AI治理报告{index}",
+                url=f"https://example.org/ai/{index}",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P0",
+                score=9,
+                topic_tags=["AI治理"],
+            )
+            for index in range(1, 15)
+        ]
+        candidates.append(
+            ArticleCandidate(
+                institution_slug="ida-stpi",
+                institution_name="IDA STPI",
+                institution_type="federally_funded_research_center",
+                title="Innovation Support Systems",
+                chinese_title="创新支撑体系",
+                url="https://example.org/innovation-support",
+                published_date="2026-06-20",
+                content_type="report",
+                priority="P1",
+                score=5,
+                topic_tags=["科技创新"],
+            )
+        )
+
+        brief = render_daily_brief_markdown("2026-07-04", candidates)
+
+        self.assertEqual(brief.count("### ["), 12)
+        self.assertIn("### [P1] 创新支撑体系", brief)
+        self.assertIn("- 创新支撑条目：1", brief)
+        self.assertIn("- 纯治理条目：14", brief)
 
     def test_render_daily_brief_orders_priority_items_by_priority_and_score(self):
         candidates = [

@@ -7,12 +7,19 @@ from pathlib import Path
 from textwrap import wrap
 
 from .models import ArticleCandidate
-from .focus import INNOVATION_SUPPORT_TAGS, innovation_support_sort_rank
+from .focus import (
+    GOVERNANCE_ONLY_TAGS,
+    INNOVATION_SUPPORT_TAGS,
+    innovation_support_sort_rank,
+    is_governance_only_candidate,
+    is_innovation_support_candidate,
+)
 from .kb import INDEX_RELATIVE
 from .restore import parse_archive_markdown
 
 
 MAX_EXPANDED_PRIORITY_ITEMS = 12
+MIN_EXPANDED_INNOVATION_SUPPORT_ITEMS = 5
 MAX_INDEX_ITEMS = 100
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 
@@ -87,13 +94,39 @@ def select_innovation_support_items(candidates: list[ArticleCandidate], limit: i
     return selected[:limit]
 
 
+def select_expanded_priority_items(
+    priority_items: list[ArticleCandidate],
+    limit: int = MAX_EXPANDED_PRIORITY_ITEMS,
+    min_innovation_support: int = MIN_EXPANDED_INNOVATION_SUPPORT_ITEMS,
+) -> list[ArticleCandidate]:
+    selected_urls: set[str] = set()
+    selected: list[ArticleCandidate] = []
+
+    def add(item: ArticleCandidate) -> None:
+        if len(selected) >= limit or item.url in selected_urls:
+            return
+        selected.append(item)
+        selected_urls.add(item.url)
+
+    support_items = [item for item in priority_items if is_innovation_support_candidate(item)]
+    for item in support_items[:min_innovation_support]:
+        add(item)
+    for item in priority_items:
+        add(item)
+    selected_set = set(selected_urls)
+    return [item for item in priority_items if item.url in selected_set][:limit]
+
+
 def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
     ordered_candidates = sort_brief_candidates(candidates)
     priority_items = [item for item in ordered_candidates if item.priority in {"P0", "P1"}]
-    expanded_priority_items = priority_items[:MAX_EXPANDED_PRIORITY_ITEMS]
-    overflow_priority_items = priority_items[MAX_EXPANDED_PRIORITY_ITEMS:]
+    expanded_priority_items = select_expanded_priority_items(priority_items)
+    expanded_priority_urls = {item.url for item in expanded_priority_items}
+    overflow_priority_items = [item for item in priority_items if item.url not in expanded_priority_urls]
     index_items = [*overflow_priority_items, *[item for item in ordered_candidates if item.priority not in {"P0", "P1"}]]
     topic_counter: Counter[str] = Counter(tag for item in candidates for tag in item.topic_tags)
+    innovation_support_count = sum(1 for item in candidates if is_innovation_support_candidate(item))
+    governance_only_count = sum(1 for item in candidates if is_governance_only_candidate(item))
 
     lines = [
         f"# 国际科技智库动态简报（{date}）",
@@ -102,6 +135,8 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
         "",
         f"- 新增条目：{len(candidates)}",
         f"- P0/P1重点：{len(priority_items)}",
+        f"- 创新支撑条目：{innovation_support_count}",
+        f"- 纯治理条目：{governance_only_count}",
         f"- 涉及机构：{len({item.institution_slug for item in candidates})}",
         f"- 高频主题：{', '.join(name for name, _ in topic_counter.most_common(6)) or '无'}",
         "",
@@ -125,13 +160,14 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
                 ]
             )
 
-    lines.extend(["## 科技创新与AI治理", ""])
-    tech_items = [item for item in ordered_candidates if {"AI治理", "科技创新", "科技治理"} & set(item.topic_tags)]
+    lines.extend(["## 科技创新支撑与AI治理", ""])
+    tech_focus_tags = INNOVATION_SUPPORT_TAGS | GOVERNANCE_ONLY_TAGS
+    tech_items = [item for item in ordered_candidates if tech_focus_tags & set(item.topic_tags)]
     if tech_items:
         for item in tech_items[:8]:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}")
     else:
-        lines.append("本日未检出科技创新与AI治理强相关条目。")
+        lines.append("本日未检出科技创新支撑或AI治理强相关条目。")
 
     lines.extend(["", "## 广义科技创新支撑", ""])
     support_items = select_innovation_support_items(ordered_candidates)

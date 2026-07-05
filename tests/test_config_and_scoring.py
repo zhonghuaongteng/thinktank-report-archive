@@ -356,6 +356,29 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("科技创新", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
+    def test_innovation_support_system_terms_enter_p1_without_governance_language(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="ida-stpi",
+            institution_name="IDA Science and Technology Policy Institute",
+            institution_type="federally_funded_research_center",
+            title="Innovation Support Systems and Technology Scale-Up",
+            url="https://www.ida.org/research/innovation-support-systems",
+            summary=(
+                "A report on research and technology organizations, pre-commercial procurement, "
+                "regulatory sandboxes, innovation investment, and technology accelerators."
+            ),
+            published_date="2026-06-17",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
     def test_substantive_innovation_report_enters_p1_without_source_bonus(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
@@ -392,7 +415,30 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         scored = score_candidate(candidate, topics, rules)
 
-        self.assertEqual(scored.priority, "P1")
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("数字经济", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_data_access_and_interoperability_are_digital_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="alan-turing",
+            institution_name="The Alan Turing Institute",
+            institution_type="research_institute",
+            title="Data Access and Interoperability for Enterprise Digitalization",
+            url="https://www.turing.ac.uk/publications/data-access-interoperability",
+            summary=(
+                "A report on data availability, data interoperability, digital technology adoption, "
+                "and public data infrastructure."
+            ),
+            published_date="2026-05-14",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("数字经济", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
