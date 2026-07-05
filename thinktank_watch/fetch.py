@@ -292,6 +292,7 @@ def fetch_sitemap_candidates(
     limit: int = 200,
 ) -> list[ArticleCandidate]:
     candidates: list[ArticleCandidate] = []
+    seen: set[str] = set()
     for sitemap_url in institution.sitemap_urls:
         for soup in sitemap_soups(client, sitemap_url):
             for node in soup.find_all("url"):
@@ -305,6 +306,10 @@ def fetch_sitemap_candidates(
                         continue
                 elif not looks_like_detail_url(loc):
                     continue
+                key = dedupe_key(loc)
+                if key in seen:
+                    continue
+                seen.add(key)
                 lastmod = canonical_date(node.lastmod.get_text()) if node.lastmod else ""
                 candidates.append(
                     ArticleCandidate(
@@ -319,11 +324,16 @@ def fetch_sitemap_candidates(
                         fetch_status="sitemap_ok",
                     )
                 )
-                if len(candidates) >= limit:
-                    break
-            if len(candidates) >= limit:
-                break
-    return candidates[:limit]
+    return sorted(candidates, key=lambda item: _date_sort_key(item.published_date), reverse=True)[:limit]
+
+
+def _date_sort_key(value: str) -> int:
+    if len(value or "") < 10:
+        return 0
+    try:
+        return int(value[:10].replace("-", ""))
+    except ValueError:
+        return 0
 
 
 def sitemap_soups(client: httpx.Client, sitemap_url: str) -> list[BeautifulSoup]:

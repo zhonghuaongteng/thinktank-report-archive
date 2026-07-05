@@ -335,6 +335,52 @@ class FetchCandidateTests(unittest.TestCase):
 
         self.assertEqual([item.url for item in candidates], ["https://example.org/publication/quantum-technology-report"])
 
+    def test_sitemap_candidates_prefer_newer_urls_across_child_sitemaps(self):
+        sitemap_index = """<?xml version="1.0" encoding="UTF-8"?>
+        <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          <sitemap><loc>https://example.org/sitemap-old.xml</loc></sitemap>
+          <sitemap><loc>https://example.org/sitemap-new.xml</loc></sitemap>
+        </sitemapindex>
+        """
+        old_sitemap = """<?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          <url><loc>https://example.org/publication/innovation-policy-old</loc><lastmod>2024-05-01</lastmod></url>
+        </urlset>
+        """
+        new_sitemap = """<?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          <url><loc>https://example.org/publication/innovation-policy-new</loc><lastmod>2026-06-01</lastmod></url>
+        </urlset>
+        """
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            pages = {
+                "https://example.org/sitemap.xml": sitemap_index,
+                "https://example.org/sitemap-old.xml": old_sitemap,
+                "https://example.org/sitemap-new.xml": new_sitemap,
+            }
+            return httpx.Response(200, text=pages[str(request.url)], request=request)
+
+        institution = Institution(
+            slug="example",
+            name="Example",
+            chinese_name="示例",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P1",
+            batch=1,
+            homepage="https://example.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+            sitemap_urls=["https://example.org/sitemap.xml"],
+            sitemap_include_keywords=["innovation"],
+        )
+
+        with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+            candidates = fetch_sitemap_candidates(client, institution, limit=1)
+
+        self.assertEqual([item.url for item in candidates], ["https://example.org/publication/innovation-policy-new"])
+
     def test_list_candidates_include_configured_topic_pages(self):
         pages = {
             "https://example.org/publications": """

@@ -60,6 +60,7 @@ The local Codex automation `国际科技智库每日抓取` runs at 10:00 Beijin
 
 - Second-batch P0/P1 sources now have guarded configs for CSIS, ASPI, Ada Lovelace, interface, Atlantic Council, Bruegel, ECIPE, and GovAI.
 - ASPI's main site returns Cloudflare 403 to static requests; The Strategist is configured as an explicit auxiliary ASPI domain.
+- Belfer uses Drupal sitemap indexes; sitemap candidates are sorted by `lastmod` before truncation so recent science, technology, cyber, innovation, and space materials are not crowded out by older sitemap pages.
 - CEPS RSS and detail pages are unstable or blocked for static requests. CEPS remains in the institution table, but this source should be treated as metadata/health-check first until a browser-backed parser is added.
 - Slow or high-noise sources can set `run_limit` in `config/institutions/*.yaml`; auxiliary official domains can be listed under `allowed_domains`.
 
