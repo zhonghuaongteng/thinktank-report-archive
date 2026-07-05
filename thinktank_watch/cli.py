@@ -22,7 +22,7 @@ from .fetch import (
     interleave_candidate_groups,
     make_client,
 )
-from .focus import innovation_support_sort_rank
+from .focus import innovation_support_sort_rank, is_innovation_support_candidate
 from .kb import append_kb_index, write_institution_table
 from .models import ArticleCandidate, Institution
 from .restore import rebuild_state_from_archive
@@ -67,6 +67,12 @@ def priority_allows(priority: str, minimum: str = "P3") -> bool:
 
 def write_limit_reached(written_count: int, write_limit: int | None) -> bool:
     return bool(write_limit) and written_count >= write_limit
+
+
+def innovation_support_quota(write_limit: int | None) -> int:
+    if not write_limit:
+        return 0
+    return max(1, write_limit // 2)
 
 
 def candidate_matches_include_terms(candidate: ArticleCandidate, include_terms: list[str] | None) -> bool:
@@ -171,6 +177,32 @@ def sort_for_writing(candidates: list[ArticleCandidate]) -> list[ArticleCandidat
             item.title,
         ),
     )
+
+
+def balance_limited_write_queue(candidates: list[ArticleCandidate], write_limit: int | None) -> list[ArticleCandidate]:
+    ordered = sort_for_writing(candidates)
+    quota = innovation_support_quota(write_limit)
+    if not quota:
+        return ordered
+
+    selected: list[ArticleCandidate] = []
+    selected_urls: set[str] = set()
+    support_count = 0
+
+    for item in ordered:
+        if support_count >= quota:
+            break
+        if is_innovation_support_candidate(item):
+            selected.append(item)
+            selected_urls.add(item.url)
+            support_count += 1
+
+    for item in ordered:
+        if item.url in selected_urls:
+            continue
+        selected.append(item)
+        selected_urls.add(item.url)
+    return selected
 
 
 def detail_fetch_failed(candidate: ArticleCandidate) -> bool:
@@ -289,12 +321,13 @@ def run_daily(args: argparse.Namespace) -> int:
     written: list[ArticleCandidate] = []
     try:
         candidates = collect_candidates(selected, args.limit, include_details=True)
-        scored = sort_for_writing(
+        scored = balance_limited_write_queue(
             [
                 item
                 for item in [score_candidate(item, topics, priorities) for item in candidates]
                 if candidate_matches_include_terms(item, getattr(args, "include_terms", None))
-            ]
+            ],
+            args.write_limit,
         )
         for item in scored:
             if not priority_allows(item.priority, args.min_priority):
@@ -331,12 +364,13 @@ def backfill(args: argparse.Namespace) -> int:
     written: list[ArticleCandidate] = []
     try:
         candidates = collect_candidates(selected, args.limit, include_details=True, backfill=True)
-        scored = sort_for_writing(
+        scored = balance_limited_write_queue(
             [
                 item
                 for item in [score_candidate(item, topics, priorities) for item in candidates]
                 if candidate_matches_include_terms(item, getattr(args, "include_terms", None))
-            ]
+            ],
+            args.write_limit,
         )
         for item in scored:
             if not priority_allows(item.priority, args.min_priority):

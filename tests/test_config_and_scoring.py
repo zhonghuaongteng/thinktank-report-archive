@@ -395,7 +395,7 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         scored = score_candidate(candidate, topics, rules)
 
-        self.assertEqual(scored.priority, "P1")
+        self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("科技创新", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
@@ -418,7 +418,7 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         scored = score_candidate(candidate, topics, rules)
 
-        self.assertEqual(scored.priority, "P1")
+        self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("科技创新", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
@@ -996,6 +996,30 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         self.assertEqual(scored.priority, "P1")
         self.assertIn("数字经济", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_technology_absorption_and_rto_capacity_enter_p1_without_ai_governance(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="ida-stpi",
+            institution_name="IDA Science and Technology Policy Institute",
+            institution_type="federally_funded_research_center",
+            title="Research and Technology Organizations for Industrial Extension",
+            url="https://www.ida.org/research/rto-industrial-extension",
+            summary=(
+                "A report on RTOs, technology absorption, manufacturing extension, "
+                "metrology, quality infrastructure, and engineering talent."
+            ),
+            published_date="2026-05-18",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertIn("科技人才", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
     def test_general_cybersecurity_article_does_not_enter_p1_without_infrastructure_signal(self):

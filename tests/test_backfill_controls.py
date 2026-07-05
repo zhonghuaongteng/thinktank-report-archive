@@ -8,12 +8,14 @@ import unittest
 from thinktank_watch.cli import (
     backfill,
     backfill_window_start,
+    balance_limited_write_queue,
     candidate_is_future,
     candidate_matches_include_terms,
     candidate_within_backfill_window,
     filter_unseen_candidates,
     include_term_matches_haystack,
     institution_fetch_limit,
+    innovation_support_quota,
     priority_allows,
     run_daily,
     sort_for_writing,
@@ -33,6 +35,12 @@ class BackfillControlTests(unittest.TestCase):
         self.assertFalse(write_limit_reached(99, 0))
         self.assertFalse(write_limit_reached(1, None))
         self.assertTrue(write_limit_reached(3, 3))
+
+    def test_innovation_support_quota_reserves_half_of_limited_write_batch(self):
+        self.assertEqual(innovation_support_quota(0), 0)
+        self.assertEqual(innovation_support_quota(None), 0)
+        self.assertEqual(innovation_support_quota(1), 1)
+        self.assertEqual(innovation_support_quota(8), 4)
 
     def test_institution_fetch_limit_honors_configured_run_limit(self):
         institution = Institution(
@@ -122,6 +130,59 @@ class BackfillControlTests(unittest.TestCase):
         ordered = sort_for_writing(candidates)
 
         self.assertEqual([item.title for item in ordered], ["Newer AI governance item", "Older AI governance item"])
+
+    def test_limited_write_queue_reserves_innovation_support_over_pure_governance(self):
+        candidates = [
+            ArticleCandidate(
+                "govai",
+                "GovAI",
+                "think_tank",
+                f"Pure AI governance paper {index}",
+                f"https://example.org/governance-{index}",
+                priority="P0",
+                score=10,
+                topic_tags=["AI治理"],
+            )
+            for index in range(6)
+        ]
+        candidates.extend(
+            [
+                ArticleCandidate(
+                    "itif",
+                    "ITIF",
+                    "think_tank",
+                    "Research infrastructure and technology diffusion",
+                    "https://example.org/innovation-1",
+                    priority="P1",
+                    score=5,
+                    topic_tags=["科技创新"],
+                ),
+                ArticleCandidate(
+                    "stepi",
+                    "STEPI",
+                    "government_research_institute",
+                    "Industrial capacity and skills development",
+                    "https://example.org/innovation-2",
+                    priority="P1",
+                    score=5,
+                    topic_tags=["先进制造", "科技人才"],
+                ),
+            ]
+        )
+
+        ordered = balance_limited_write_queue(candidates, 4)
+
+        self.assertEqual(
+            [item.title for item in ordered[:2]],
+            [
+                "Research infrastructure and technology diffusion",
+                "Industrial capacity and skills development",
+            ],
+        )
+        self.assertEqual(
+            sum(1 for item in ordered[:4] if set(item.topic_tags) & {"科技创新", "先进制造", "数字经济", "半导体", "科技人才"}),
+            2,
+        )
 
     def test_candidate_is_future_only_for_valid_later_dates(self):
         candidate = ArticleCandidate(
