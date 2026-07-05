@@ -42,6 +42,10 @@ STRONG_DIGITAL_INNOVATION_SUPPORT_KEYWORDS = {
     "data interoperability",
     "open data",
     "cloud infrastructure",
+    "AI data center",
+    "AI data centers",
+    "data center",
+    "data centers",
     "broadband",
     "digital technology adoption",
     "enterprise AI adoption",
@@ -55,6 +59,8 @@ STRONG_DIGITAL_INNOVATION_SUPPORT_KEYWORDS = {
     "数据共享",
     "数据互操作",
     "开放数据",
+    "AI数据中心",
+    "数据中心",
     "数字技术采用",
 }
 PDF_OR_REPORT_PRIORITY_CAP_SOURCES = {"orf-america"}

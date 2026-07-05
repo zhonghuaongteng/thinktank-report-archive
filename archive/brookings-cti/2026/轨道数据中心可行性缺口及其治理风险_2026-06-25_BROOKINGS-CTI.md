@@ -15,9 +15,9 @@ authors: []
 keywords: ["数字经济", "AI基础设施", "数据中心", "空间通信治理", "竞争政策"]
 subjects: []
 topic_tags: ["数字经济", "科技治理"]
-priority: P2
+priority: P1
 score: 3
-translation_level: summary
+translation_level: full_or_long
 copyright_boundary: private_archive
 fetch_status: detail_ok
 ---
@@ -36,7 +36,7 @@ fetch_status: detail_ok
 - PDF链接：无
 - 关键词：数字经济，AI基础设施，数据中心，空间通信治理，竞争政策
 - 主题标签：数字经济, 科技治理
-- 优先级：P2
+- 优先级：P1
 
 ## English Source Material
 

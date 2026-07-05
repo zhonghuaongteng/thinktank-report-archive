@@ -15,9 +15,9 @@ authors: []
 keywords: ["科技创新"]
 subjects: []
 topic_tags: ["科技创新"]
-priority: P2
-score: 4
-translation_level: summary
+priority: P1
+score: 6
+translation_level: full_or_long
 copyright_boundary: private_archive
 fetch_status: detail_ok
 ---
@@ -38,7 +38,7 @@ Brookings 评估美国国家科学基金会（NSF）Regional Innovation Engines 
 - PDF链接：无
 - 关键词：科技创新
 - 主题标签：科技创新
-- 优先级：P2
+- 优先级：P1
 
 ## English Source Material
 

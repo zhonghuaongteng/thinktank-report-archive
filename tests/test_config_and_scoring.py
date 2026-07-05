@@ -633,7 +633,30 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         scored = score_candidate(candidate, topics, rules)
 
-        self.assertIn(scored.priority, {"P0", "P1", "P2"})
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("数字经济", scored.topic_tags)
+
+    def test_power_grid_resilience_article_enters_p1_as_innovation_infrastructure(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="belfer",
+            institution_name="Harvard Belfer Center Science, Technology, and Public Policy",
+            institution_type="university_research_center",
+            title="Navigating the Grid's Perfect Storm: Building a Resilient and Reliable Power System",
+            url="https://www.belfercenter.org/research-analysis/navigating-grids-perfect-storm-building-resilient-and-reliable-power-system",
+            summary=(
+                "A policy article on grid resilience, power systems, AI data centers, "
+                "energy infrastructure, and electricity infrastructure."
+            ),
+            published_date="2025-11-19",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("先进制造", scored.topic_tags)
         self.assertIn("数字经济", scored.topic_tags)
 
     def test_advanced_compute_access_is_digital_infrastructure_signal(self):
