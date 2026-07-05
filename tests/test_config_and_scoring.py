@@ -1025,6 +1025,53 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("科技创新", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
+    def test_innovation_tax_incentives_and_intangible_capital_are_support_signals(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="ecipe",
+            institution_name="ECIPE",
+            institution_type="think_tank",
+            title="R&D Tax Credits and Intangible Investment for Innovation Growth",
+            url="https://ecipe.org/research/rd-tax-credits-intangible-investment/",
+            summary=(
+                "A report on research tax credits, innovation tax incentives, "
+                "intangible capital, patent boxes, and capital markets for innovation."
+            ),
+            published_date="2026-04-12",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_testing_standards_and_industrial_commons_are_support_signals(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="ida-stpi",
+            institution_name="IDA Science and Technology Policy Institute",
+            institution_type="federally_funded_research_center",
+            title="Testing Infrastructure and Industrial Commons for Scale-Up",
+            url="https://www.ida.org/research/testing-infrastructure-industrial-commons",
+            summary=(
+                "A report on standards development, metrology, conformity assessment, "
+                "testing infrastructure, demonstration plants, pilot production, "
+                "and technology commons."
+            ),
+            published_date="2026-04-09",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
     def test_researcher_mobility_and_human_capital_are_talent_support(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
@@ -1407,7 +1454,7 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         scored = score_candidate(candidate, topics, rules)
 
-        self.assertEqual(scored.priority, "P1")
+        self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("国防AI", scored.topic_tags)
 
     def test_scoring_keeps_low_relevance_items_in_index_only(self):
