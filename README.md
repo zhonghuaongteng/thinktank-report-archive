@@ -44,6 +44,8 @@ Candidate source URLs are restricted to the institution's own site or subdomains
 
 Historical backfill is bounded to the last three years by default. Candidates without a verifiable publication date, candidates dated before the lookback window, and future-dated candidates are skipped during backfill runs.
 
+Daily incremental runs use a 30-day freshness window by default. Older unseen items should enter through explicit backfill commands, which keeps daily briefs focused on current signals and prevents stale sitemap or aggregate-page candidates from being treated as same-day updates.
+
 When a detail page exposes a source PDF and the extracted HTML body is short or does not match the article title, the crawler extracts bounded PDF text as the English source material. This prevents archive pollution from related-article blocks, navigation text, and institution landing-page recommendations.
 
 ## Outputs

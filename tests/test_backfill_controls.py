@@ -12,7 +12,9 @@ from thinktank_watch.cli import (
     candidate_is_future,
     candidate_matches_include_terms,
     candidate_matches_search_profile,
+    candidate_within_daily_window,
     candidate_within_backfill_window,
+    daily_window_start,
     filter_unseen_candidates,
     include_term_matches_haystack,
     institution_fetch_limit,
@@ -256,6 +258,27 @@ class BackfillControlTests(unittest.TestCase):
         candidate.published_date = ""
         self.assertFalse(candidate_within_backfill_window(candidate, "2026-07-05", 3))
 
+    def test_daily_window_starts_at_configured_day_limit(self):
+        self.assertEqual(daily_window_start("2026-07-06", 30).isoformat(), "2026-06-06")
+
+    def test_candidate_within_daily_window_requires_recent_valid_date(self):
+        candidate = ArticleCandidate(
+            "bruegel",
+            "Bruegel",
+            "think_tank",
+            "Recent innovation policy",
+            "https://example.org/recent",
+            published_date="2026-06-06",
+        )
+
+        self.assertTrue(candidate_within_daily_window(candidate, "2026-07-06", 30))
+
+        candidate.published_date = "2026-06-05"
+        self.assertFalse(candidate_within_daily_window(candidate, "2026-07-06", 30))
+
+        candidate.published_date = ""
+        self.assertFalse(candidate_within_daily_window(candidate, "2026-07-06", 30))
+
     def test_candidate_matches_include_terms_uses_title_url_and_topics(self):
         candidate = ArticleCandidate(
             "carnegie-tech",
@@ -391,6 +414,64 @@ class BackfillControlTests(unittest.TestCase):
                 min_priority="P1",
                 write_limit=0,
                 refresh=False,
+            )
+            with (
+                patch("thinktank_watch.cli._load_config", return_value=([institution], [], object())),
+                patch("thinktank_watch.cli.collect_candidates", return_value=[candidate]),
+                patch("thinktank_watch.cli.score_candidate", side_effect=lambda item, topics, priorities: item),
+            ):
+                run_daily(args)
+
+            self.assertEqual(list((root / "archive").rglob("*.md")), [])
+            conn = sqlite3.connect(state_path)
+            try:
+                count = conn.execute("SELECT COUNT(*) FROM articles").fetchone()[0]
+            finally:
+                conn.close()
+
+            self.assertEqual(count, 0)
+
+    def test_run_daily_skips_stale_candidates_without_recording_state(self):
+        institution = Institution(
+            slug="cnas-tech",
+            name="CNAS Technology and National Security",
+            chinese_name="新美国安全中心技术与国家安全项目",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://www.cnas.org/research/technology-and-national-security",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+        candidate = ArticleCandidate(
+            institution_slug="cnas-tech",
+            institution_name="CNAS Technology and National Security",
+            institution_type="think_tank",
+            title="How the Five Eyes Can Harness Commercial Innovation",
+            url="https://www.cnas.org/publications/commentary/how-the-five-eyes-can-harness-commercial-innovation",
+            published_date="2018-07-27",
+            priority="P1",
+            score=6,
+        )
+
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            state_path = root / "state" / "articles.sqlite"
+            args = SimpleNamespace(
+                date="2026-07-06",
+                batch=None,
+                institution=None,
+                state=str(state_path),
+                archive_root=str(root / "archive"),
+                brief_root=str(root / "briefs"),
+                skip_kb=True,
+                kb_root=str(root / "kb"),
+                limit=5,
+                min_priority="P1",
+                write_limit=0,
+                refresh=False,
+                lookback_days=30,
             )
             with (
                 patch("thinktank_watch.cli._load_config", return_value=([institution], [], object())),

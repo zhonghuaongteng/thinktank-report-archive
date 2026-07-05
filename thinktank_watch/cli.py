@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 import re
 import sys
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 import httpx
@@ -33,6 +33,7 @@ from .state import ArticleState
 DEFAULT_CONFIG = Path("config")
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 DEFAULT_BACKFILL_LOOKBACK_YEARS = 3
+DEFAULT_DAILY_LOOKBACK_DAYS = 30
 
 
 def _load_config():
@@ -193,6 +194,23 @@ def candidate_within_backfill_window(candidate: ArticleCandidate, run_date: str,
     if not published or not current:
         return False
     return backfill_window_start(run_date, lookback_years) <= published <= current
+
+
+def daily_window_start(run_date: str, lookback_days: int) -> date:
+    current = parse_candidate_date(run_date)
+    if not current:
+        raise ValueError(f"Invalid run date: {run_date}")
+    if lookback_days < 1:
+        raise ValueError("lookback_days must be positive")
+    return current - timedelta(days=lookback_days)
+
+
+def candidate_within_daily_window(candidate: ArticleCandidate, run_date: str, lookback_days: int) -> bool:
+    published = parse_candidate_date(candidate.published_date)
+    current = parse_candidate_date(run_date)
+    if not published or not current:
+        return False
+    return daily_window_start(run_date, lookback_days) <= published <= current
 
 
 def sort_for_writing(candidates: list[ArticleCandidate]) -> list[ArticleCandidate]:
@@ -369,11 +387,17 @@ def run_daily(args: argparse.Namespace) -> int:
                 continue
             if state.seen(item.url) and not args.refresh:
                 continue
-            if write_limit_reached(len(written), args.write_limit):
-                break
             if detail_fetch_failed(item):
                 state.upsert(item, "")
                 continue
+            if not candidate_within_daily_window(
+                item,
+                run_date,
+                getattr(args, "lookback_days", DEFAULT_DAILY_LOOKBACK_DAYS),
+            ):
+                continue
+            if write_limit_reached(len(written), args.write_limit):
+                break
             archive_path = ""
             if should_archive_candidate(item):
                 archive_path = str(write_article(args.archive_root, item))
@@ -478,6 +502,7 @@ def build_parser() -> argparse.ArgumentParser:
     daily.add_argument("--skip-kb", action="store_true")
     daily.add_argument("--min-priority", choices=sorted(PRIORITY_ORDER), default="P3")
     daily.add_argument("--write-limit", type=int, default=0, help="Maximum number of new allowed records to write. 0 means unlimited.")
+    daily.add_argument("--lookback-days", type=int, default=DEFAULT_DAILY_LOOKBACK_DAYS)
     daily.add_argument("--include-term", dest="include_terms", action="append", default=[])
     daily.add_argument("--search-profile")
     daily.add_argument("--archive-root", default="archive")

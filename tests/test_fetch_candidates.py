@@ -122,6 +122,12 @@ class FetchCandidateTests(unittest.TestCase):
             )
         )
         self.assertFalse(source_url_allowed("https://www.hoover.org/commentary/focus-areas", institution))
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.hoover.org/research/articles-china-ai-trade-europe-manufacturing-critical-minerals-taiwan-and-global-markets",
+                institution,
+            )
+        )
         self.assertFalse(source_url_allowed("https://www.hoover.org/commentary/multimedia", institution))
         self.assertFalse(
             source_url_allowed(

@@ -13,6 +13,8 @@ class RepositoryPolicyTests(unittest.TestCase):
         script = Path("scripts/run_daily.ps1").read_text(encoding="utf-8")
 
         self.assertIn('[string]$SearchProfile = "broad_innovation_support"', script)
+        self.assertIn("[int]$LookbackDays = 30", script)
+        self.assertIn('"--lookback-days", $LookbackDays', script)
 
 
 if __name__ == "__main__":

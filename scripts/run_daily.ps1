@@ -1,6 +1,7 @@
 param(
     [int]$Batch = 1,
     [int]$Limit = 20,
+    [int]$LookbackDays = 30,
     [string]$SearchProfile = "broad_innovation_support",
     [string]$Python = "C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe"
 )
@@ -12,7 +13,8 @@ Set-Location $repo
 $args = @(
     "-m", "thinktank_watch.cli", "run-daily",
     "--batch", $Batch,
-    "--limit", $Limit
+    "--limit", $Limit,
+    "--lookback-days", $LookbackDays
 )
 if ($SearchProfile) {
     $args += @("--search-profile", $SearchProfile)
