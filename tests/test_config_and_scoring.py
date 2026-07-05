@@ -770,6 +770,67 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("科技人才", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
+    def test_qubits_report_title_is_quantum_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cnas-tech",
+            institution_name="CNAS Technology and National Security",
+            institution_type="think_tank",
+            title="The Quest for Qubits",
+            url="https://www.cnas.org/publications/reports/the-quest-for-qubits",
+            summary="A report on quantum leadership and industrial technology competition.",
+            published_date="2024-05-28",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_biopower_report_title_is_biotechnology_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cnas-tech",
+            institution_name="CNAS Technology and National Security",
+            institution_type="think_tank",
+            title="Biopower",
+            url="https://www.cnas.org/publications/reports/biopower",
+            summary="A report on biodata, life sciences, and biotechnology competitiveness.",
+            published_date="2025-01-15",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_clean_energy_supply_chains_are_advanced_manufacturing_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="orf-america",
+            institution_name="ORF America Technology Policy",
+            institution_type="think_tank",
+            title="India's Role in Diversifying Global Clean Energy Supply Chains",
+            url="https://orfamerica.org/newresearch/india-global-clean-energy-supply-chains",
+            summary="A report on clean energy, solar photovoltaics, green hydrogen, and supply chain resilience.",
+            published_date="2024-06-24",
+            content_type="report",
+            pdf_url="https://orfamerica.org/s/ORF-Full-Volume-on-India-Energy-061424.pdf",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("先进制造", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
     def test_cloud_services_and_dma_are_digital_technology_policy_signals(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
