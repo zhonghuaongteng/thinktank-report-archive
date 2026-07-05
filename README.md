@@ -19,6 +19,10 @@ This repository tracks public research outputs from selected international think
 
 P1 is intentionally broader than AI governance. The default priority queue covers reports that support technology innovation and development: technology innovation capacity, public or private R&D, innovation systems, technology adoption and diffusion, research infrastructure, commercialization, industrial competitiveness, advanced manufacturing, digital transformation, STEM talent, productivity, and related policy instruments. A report, paper, or policy brief with any substantive technology topic is treated as at least P1 even when it does not contain AI governance language.
 
+The July 2026 scope update widens future retrieval further toward technology-innovation support systems. Science and technology indicators, public R&D budgets, strategic public investment, research organizations, innovation platforms, industrial value chains, production capacity, supply-chain resilience, public compute, data sharing, skills development, and high-skilled mobility are all treated as substantive innovation-support signals. Historical backfill already archived under the narrower AI-governance-heavy mix is not rewritten by this rule; new daily and backfill runs use the broader scoring and write-order policy.
+
+Within the same priority bucket, the write queue prefers candidates tagged with technology innovation, semiconductors, advanced manufacturing, digital economy, or science and technology talent before pure AI-governance items. This keeps small daily write limits from being exhausted by governance-only material when innovation-support reports are available.
+
 China/Shanghai relevance is treated as a context signal. It can raise priority only when paired with a substantive technology, AI, semiconductor, manufacturing, digital economy, innovation, governance, or talent signal; China-only diplomacy or event pages are capped at P2.
 
 ## Core Commands

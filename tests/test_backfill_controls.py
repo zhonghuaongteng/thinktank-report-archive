@@ -64,6 +64,37 @@ class BackfillControlTests(unittest.TestCase):
 
         self.assertEqual([item.title for item in ordered], ["P0 item", "P1 high", "P1 item", "P3 item"])
 
+    def test_sort_for_writing_prefers_innovation_support_within_same_priority(self):
+        candidates = [
+            ArticleCandidate(
+                "govai",
+                "GovAI",
+                "think_tank",
+                "High-score AI governance paper",
+                "https://example.org/ai-governance",
+                priority="P1",
+                score=8,
+                topic_tags=["AI治理"],
+            ),
+            ArticleCandidate(
+                "nistep",
+                "NISTEP",
+                "government_research_institute",
+                "Science indicators and innovation capacity report",
+                "https://example.org/innovation-support",
+                priority="P1",
+                score=5,
+                topic_tags=["科技创新"],
+            ),
+        ]
+
+        ordered = sort_for_writing(candidates)
+
+        self.assertEqual(
+            [item.title for item in ordered],
+            ["Science indicators and innovation capacity report", "High-score AI governance paper"],
+        )
+
     def test_sort_for_writing_prefers_newer_items_when_priority_and_score_match(self):
         candidates = [
             ArticleCandidate(

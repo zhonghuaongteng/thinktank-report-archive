@@ -20,6 +20,12 @@ class ConfigAndScoringTests(unittest.TestCase):
             {item.batch for item in institutions if item.slug == "rand"},
             {1},
         )
+        for slug in {"belfer", "ida-stpi", "nistep", "stepi"}:
+            self.assertEqual(
+                {item.batch for item in institutions if item.slug == slug},
+                {1},
+                f"{slug} should be in the broad innovation-support daily pool",
+            )
         self.assertEqual(
             {item.institution_type for item in institutions if item.slug == "gartner"},
             {"commercial_research"},
@@ -649,6 +655,54 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         self.assertIn(scored.priority, {"P1", "P2"})
         self.assertIn("科技创新", scored.topic_tags)
+
+    def test_public_investment_and_sti_indicators_are_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="nistep",
+            institution_name="National Institute of Science and Technology Policy Japan",
+            institution_type="government_research_institute",
+            title="Science and Technology Indicators and Strategic Public Investment",
+            url="https://www.nistep.go.jp/en/publication/science-technology-indicators",
+            summary=(
+                "A report on STI indicators, public investment, research budgets, "
+                "scientific capacity, and innovation performance."
+            ),
+            published_date="2026-06-08",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_value_chain_capacity_and_skills_are_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="stepi",
+            institution_name="Science and Technology Policy Institute Korea",
+            institution_type="government_research_institute",
+            title="Industrial Value Chains and Skills Development for Future Industries",
+            url="https://www.stepi.re.kr/site/stepien/publication/value-chain-skills",
+            summary=(
+                "A report on industrial capacity, supply chains, value chains, "
+                "skills development, reskilling, and technology development programs."
+            ),
+            published_date="2026-04-27",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertIn("先进制造", scored.topic_tags)
+        self.assertIn("科技人才", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
 
     def test_cloud_services_and_dma_are_digital_technology_policy_signals(self):
         topics = load_topics("config/topics.yaml")

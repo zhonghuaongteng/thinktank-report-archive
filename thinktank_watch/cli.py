@@ -32,6 +32,7 @@ from .state import ArticleState
 DEFAULT_CONFIG = Path("config")
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 DEFAULT_BACKFILL_LOOKBACK_YEARS = 3
+INNOVATION_SUPPORT_TOPICS = {"科技创新", "半导体", "先进制造", "数字经济", "科技人才"}
 
 
 def _load_config():
@@ -163,12 +164,18 @@ def sort_for_writing(candidates: list[ArticleCandidate]) -> list[ArticleCandidat
         candidates,
         key=lambda item: (
             PRIORITY_ORDER.get(item.priority, 99),
+            innovation_support_sort_rank(item),
             -item.score,
             -published_date_sort_value(item.published_date),
             item.institution_slug,
             item.title,
         ),
     )
+
+
+def innovation_support_sort_rank(candidate: ArticleCandidate) -> int:
+    """Prefer broad innovation-support items inside the same P bucket."""
+    return 0 if set(candidate.topic_tags) & INNOVATION_SUPPORT_TOPICS else 1
 
 
 def detail_fetch_failed(candidate: ArticleCandidate) -> bool:
@@ -249,7 +256,7 @@ def evaluate(args: argparse.Namespace) -> int:
         ]
     if getattr(args, "unseen_only", False):
         scored = filter_unseen_candidates(scored, getattr(args, "state", "state/articles.sqlite"))
-    for item in sorted(scored, key=lambda row: (row.priority, -row.score, row.institution_slug)):
+    for item in sort_for_writing(scored):
         print(
             f"[{item.priority}/{item.score}] {item.institution_slug} | "
             f"{item.published_date or 'undated'} | {item.title} | {item.url}"

@@ -35,6 +35,8 @@ PDF_TEXT_MAX_PAGES = 10
 PDF_TEXT_MAX_CHARS = 24000
 PDF_TEXT_MIN_HTML_CHARS = 5000
 SITEMAP_INDEX_MAX_CHILDREN = 20
+LIST_PAGE_FETCH_CAP = 3
+TOPIC_PAGE_FETCH_CAP = 8
 TITLE_STOP_WORDS = {
     "about",
     "after",
@@ -254,7 +256,7 @@ def fetch_list_candidates(
 ) -> list[ArticleCandidate]:
     candidates: list[ArticleCandidate] = []
     seen: set[str] = set()
-    pages = [*institution.list_pages[:3], *institution.topic_pages[:5]]
+    pages = [*institution.list_pages[:LIST_PAGE_FETCH_CAP], *institution.topic_pages[:TOPIC_PAGE_FETCH_CAP]]
     for page in pages:
         try:
             response = client.get(page, timeout=30)
