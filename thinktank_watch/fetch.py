@@ -23,6 +23,7 @@ from .parsers.generic import (
     parse_generic_detail,
 )
 from .parsers.rand import parse_rand_detail
+from .parsers.stepi import extract_stepi_publication_candidates, parse_stepi_detail
 
 
 USER_AGENT = (
@@ -259,6 +260,21 @@ def fetch_list_candidates(
             response.raise_for_status()
         except httpx.HTTPError:
             continue
+        if institution.slug == "stepi":
+            page_candidates = extract_stepi_publication_candidates(response.text, page, institution, limit)
+            for candidate in page_candidates:
+                if not source_url_allowed(candidate.url, institution):
+                    continue
+                key = dedupe_key(candidate.url)
+                if key in seen:
+                    continue
+                seen.add(key)
+                candidates.append(candidate)
+                if len(candidates) >= limit:
+                    break
+            if len(candidates) >= limit:
+                break
+            continue
         links = extract_list_links(response.text, page, limit)
         for link in links:
             if not source_url_allowed(link, institution):
@@ -362,6 +378,8 @@ def fetch_detail(client: httpx.Client, institution: Institution, candidate: Arti
         raise ExternalSourceError(f"detail redirected outside allowed domains: {response.url}")
     if institution.parser == "rand":
         detail = parse_rand_detail(response.text, str(response.url))
+    elif institution.slug == "stepi":
+        detail = parse_stepi_detail(response.text, str(response.url), institution)
     else:
         detail = parse_generic_detail(response.text, str(response.url), institution)
     if not detail.title:
@@ -370,6 +388,20 @@ def fetch_detail(client: httpx.Client, institution: Institution, candidate: Arti
         detail.summary = candidate.summary
     if not detail.published_date:
         detail.published_date = candidate.published_date
+    if not detail.authors:
+        detail.authors = candidate.authors
+    if not detail.keywords:
+        detail.keywords = candidate.keywords
+    if not detail.subjects:
+        detail.subjects = candidate.subjects
+    if not detail.pdf_url:
+        detail.pdf_url = candidate.pdf_url
+    if not detail.pdf_status:
+        detail.pdf_status = candidate.pdf_status
+    if not detail.external_source_url:
+        detail.external_source_url = candidate.external_source_url
+    if detail.pdf_url and detail.source_completeness == "summary_only":
+        detail.source_completeness = "full_text"
     detail.copyright_boundary = institution.copyright_boundary
     return detail
 
