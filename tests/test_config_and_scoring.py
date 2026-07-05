@@ -406,6 +406,44 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("科技人才", scored.topic_tags)
         self.assertIn("科技治理", scored.topic_tags)
 
+    def test_chinese_technology_is_innovation_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="merics",
+            institution_name="MERICS Industrial Policy and Technology",
+            institution_type="think_tank",
+            title="EU: Shepherded by Brussels, Europe awakens to Chinese technology",
+            url="https://merics.org/en/report/eu-shepherded-brussels-europe-awakens-chinese-technology",
+            summary="Europe's policy response to Chinese technology competition.",
+            published_date="2026-06-30",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertIn("中国与上海相关", scored.topic_tags)
+
+    def test_lunar_crewed_landing_is_space_technology_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="NASA's lunar success sharpens focus on China's 2030 crewed landing goal",
+            url="https://cset.georgetown.edu/article/china-2030-crewed-landing",
+            summary="Analysis of space technology competition and China's lunar program.",
+            published_date="2026-04-08",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertIn("中国与上海相关", scored.topic_tags)
+
     def test_national_security_alone_does_not_create_defense_ai_tag(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")

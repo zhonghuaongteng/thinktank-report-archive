@@ -36,6 +36,7 @@ When a detail page exposes a source PDF and the extracted HTML body is short or 
 
 ## Outputs
 
+- Local workspace target: `C:\Users\WINDOWS\OneDrive\知识库\智库信息爬虫`.
 - `archive/{institution}/{year}/`: one Markdown file per article/report.
 - `briefs/daily/{year}/`: daily Markdown, HTML, and PDF briefs.
 - `state/articles.sqlite`: dedupe and run state.
