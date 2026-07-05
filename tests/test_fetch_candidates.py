@@ -204,6 +204,13 @@ class FetchCandidateTests(unittest.TestCase):
                 institution,
             )
         )
+        self.assertFalse(source_url_allowed("https://www.csis.org/economic-security-and-technology", institution))
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.csis.org/economic-security-and-technology/staff-and-experts",
+                institution,
+            )
+        )
         self.assertTrue(
             source_url_allowed(
                 "https://www.csis.org/analysis/old-new-making-innovation-work-everyone",

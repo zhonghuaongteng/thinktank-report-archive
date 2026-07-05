@@ -135,6 +135,7 @@ SOURCE_LAST_SEGMENT_DENY = {
     "pubs",
     "research",
     "research-and-commentary",
+    "staff-and-experts",
     "topic",
     "topics",
     "working-papers",
@@ -216,6 +217,8 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
     if len(ordered_path_segments) == 2:
         if ordered_path_segments[0] == "publications" and institution.slug != "ecipe":
             return False
+    if institution.slug == "csis" and len(ordered_path_segments) == 1:
+        return False
     return True
 
 

@@ -21,6 +21,7 @@ from .restore import parse_archive_markdown
 MAX_EXPANDED_PRIORITY_ITEMS = 12
 MIN_EXPANDED_INNOVATION_SUPPORT_ITEMS = 5
 MAX_INDEX_ITEMS = 100
+MAX_RECENT_WRITE_ITEMS = 8
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 
 
@@ -119,10 +120,15 @@ def select_expanded_priority_items(
     return [item for item in priority_items if item.url in selected_set][:limit]
 
 
+def select_recent_write_items(candidates: list[ArticleCandidate], limit: int = MAX_RECENT_WRITE_ITEMS) -> list[ArticleCandidate]:
+    return list(reversed(candidates[-limit:])) if candidates else []
+
+
 def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
     ordered_candidates = sort_brief_candidates(candidates)
     priority_items = [item for item in ordered_candidates if item.priority in {"P0", "P1"}]
     expanded_priority_items = select_expanded_priority_items(priority_items)
+    recent_write_items = select_recent_write_items(candidates)
     expanded_priority_urls = {item.url for item in expanded_priority_items}
     overflow_priority_items = [item for item in priority_items if item.url not in expanded_priority_urls]
     index_items = [*overflow_priority_items, *[item for item in ordered_candidates if item.priority not in {"P0", "P1"}]]
@@ -142,9 +148,21 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
         f"- 涉及机构：{len({item.institution_slug for item in candidates})}",
         f"- 高频主题：{', '.join(name for name, _ in topic_counter.most_common(6)) or '无'}",
         "",
-        "## P0/P1重点",
+        "## 最近写入",
         "",
     ]
+    if recent_write_items:
+        for item in recent_write_items:
+            lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
+    else:
+        lines.append("本日暂无新增写入。")
+    lines.extend(
+        [
+            "",
+            "## P0/P1重点",
+            "",
+        ]
+    )
     if not priority_items:
         lines.extend(["本日无P0/P1新增重点。", ""])
     else:

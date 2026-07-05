@@ -195,10 +195,49 @@ class ArchiveAndBriefTests(unittest.TestCase):
         ]
 
         brief = render_daily_brief_markdown("2026-07-04", candidates)
+        index_section = brief.split("## 新增索引", 1)[1].split("## 后续推进", 1)[0]
 
-        self.assertIn("- [P2] Source｜索引条目100｜https://example.org/index/100", brief)
-        self.assertNotIn("- [P2] Source｜索引条目101｜https://example.org/index/101", brief)
+        self.assertIn("- [P2] Source｜索引条目100｜https://example.org/index/100", index_section)
+        self.assertNotIn("- [P2] Source｜索引条目101｜https://example.org/index/101", index_section)
         self.assertIn("其余 3 条已写入私有归档和知识库索引", brief)
+
+    def test_render_daily_brief_surfaces_recent_writes_when_index_overflows(self):
+        candidates = [
+            ArticleCandidate(
+                institution_slug="source",
+                institution_name="Source",
+                institution_type="think_tank",
+                title=f"Older priority item {index}",
+                chinese_title=f"旧重点条目{index}",
+                url=f"https://example.org/priority/{index}",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P1",
+                score=8,
+                topic_tags=["科技创新"],
+            )
+            for index in range(1, 130)
+        ]
+        candidates.append(
+            ArticleCandidate(
+                institution_slug="belfer",
+                institution_name="Belfer",
+                institution_type="university_research_center",
+                title="Arctic technical cooperation",
+                chinese_title="地缘碎片化下的北极技术合作",
+                url="https://example.org/recent-arctic",
+                published_date="2026-06-08",
+                content_type="article",
+                priority="P1",
+                score=4,
+                topic_tags=["科技创新"],
+            )
+        )
+
+        brief = render_daily_brief_markdown("2026-07-05", candidates)
+
+        recent_section = brief.split("## 最近写入", 1)[1].split("## P0/P1重点", 1)[0]
+        self.assertIn("地缘碎片化下的北极技术合作", recent_section)
 
     def test_render_daily_brief_keeps_innovation_support_items_visible_when_priority_overflows(self):
         candidates = [
