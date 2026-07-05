@@ -330,6 +330,46 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("科技创新", scored.topic_tags)
 
+    def test_broad_innovation_support_report_enters_p1_without_ai_governance(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="bruegel",
+            institution_name="Bruegel",
+            institution_type="think_tank",
+            title="Productivity Growth Through Technology Diffusion",
+            url="https://www.bruegel.org/policy-brief/productivity-growth-through-technology-diffusion",
+            summary="A policy brief on technology diffusion and productivity growth.",
+            published_date="2026-06-22",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_biomanufacturing_and_industrial_competitiveness_are_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cnas-tech",
+            institution_name="CNAS Technology and National Security",
+            institution_type="think_tank",
+            title="Biomanufacturing and Industrial Competitiveness",
+            url="https://www.cnas.org/publications/reports/biomanufacturing-industrial-competitiveness",
+            summary="Report on biotechnology leadership, innovation capacity, supply chain resilience, and public R&D.",
+            published_date="2026-05-18",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertIn("先进制造", scored.topic_tags)
+
     def test_data_centers_are_digital_infrastructure_signal(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
@@ -405,6 +445,25 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         self.assertIn("科技人才", scored.topic_tags)
         self.assertIn("科技治理", scored.topic_tags)
+
+    def test_research_funding_and_lab_talent_are_innovation_support_signals(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="Information Technology and Innovation Foundation",
+            institution_type="think_tank",
+            title="NIH Researchers and Research Funding Changes",
+            url="https://itif.org/publications/2026/06/29/nih-researchers-research-funding-changes/",
+            summary="Research labs lost NIH researchers after science funding and research grants changed.",
+            published_date="2026-06-29",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertIn("科技人才", scored.topic_tags)
 
     def test_chinese_technology_is_innovation_signal(self):
         topics = load_topics("config/topics.yaml")
@@ -501,6 +560,63 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         self.assertEqual(scored.priority, "P3")
         self.assertEqual(scored.translation_level, "index_only")
+
+    def test_single_incidental_technology_word_does_not_promote_report(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="bruegel",
+            institution_name="Bruegel",
+            institution_type="think_tank",
+            title="Annual economic outlook with one technology reference",
+            url="https://example.org/economic-outlook",
+            summary="The report mentions technology once while focusing on fiscal balances and monetary policy.",
+            published_date="2026-07-01",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P3")
+        self.assertEqual(scored.topic_tags, [])
+
+    def test_generic_regulation_word_does_not_create_technology_governance(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="bruegel",
+            institution_name="Bruegel",
+            institution_type="think_tank",
+            title="European Union capital requirements on megabanks",
+            url="https://www.bruegel.org/working-paper/european-union-capital-requirements-megabanks",
+            summary="Working paper on financial regulation, bank capital, and monetary stability.",
+            published_date="2026-07-03",
+            content_type="paper",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P3")
+        self.assertNotIn("科技治理", scored.topic_tags)
+
+    def test_generic_data_policy_fragment_does_not_create_technology_governance(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="bruegel",
+            institution_name="Bruegel",
+            institution_type="think_tank",
+            title="European natural gas imports",
+            url="https://www.bruegel.org/dataset/european-natural-gas-imports",
+            summary="Dataset page with energy storage charts and a generic data policy footer fragment.",
+            published_date="2026-07-02",
+            content_type="dataset",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P3")
+        self.assertNotIn("科技治理", scored.topic_tags)
 
     def test_single_incidental_ai_mention_does_not_promote_general_article(self):
         topics = load_topics("config/topics.yaml")

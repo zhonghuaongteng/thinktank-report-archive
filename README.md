@@ -7,15 +7,19 @@ This repository tracks public research outputs from selected international think
 ## Scope
 
 - Technology innovation
+- Science, R&D, innovation systems, research infrastructure, and technology diffusion
 - AI governance
 - Science and technology governance
 - Defense AI and cyber
 - Digital economy and digital trade
 - Industrial policy
 - Semiconductors and advanced manufacturing
+- STEM talent, innovation workforce, productivity, and industrial competitiveness
 - China and Shanghai relevance
 
-China/Shanghai relevance is treated as a context signal. It can raise priority only when paired with a substantive technology, AI, semiconductor, manufacturing, digital economy, governance, or talent signal; China-only diplomacy or event pages are capped at P2.
+P1 is intentionally broader than AI governance. Reports can enter the priority queue when they materially address technology innovation capacity, public or private R&D, innovation systems, technology adoption and diffusion, research infrastructure, industrial competitiveness, advanced manufacturing, digital transformation, STEM talent, or related policy instruments.
+
+China/Shanghai relevance is treated as a context signal. It can raise priority only when paired with a substantive technology, AI, semiconductor, manufacturing, digital economy, innovation, governance, or talent signal; China-only diplomacy or event pages are capped at P2.
 
 ## Core Commands
 

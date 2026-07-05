@@ -28,6 +28,29 @@ STRONG_DEFENSE_AI_KEYWORDS = {
     "军事人工智能",
     "自主武器",
 }
+WEAK_TECH_GOVERNANCE_KEYWORDS = {"standards", "regulation", "tariff", "tariffs", "data policy"}
+STRONG_TECH_GOVERNANCE_KEYWORDS = {
+    "technology governance",
+    "tech governance",
+    "digital governance",
+    "technology policy",
+    "export controls",
+    "Section 232",
+    "competition regulation",
+    "market gatekeeping",
+    "cross-border data",
+    "cross-border data flow",
+    "cross-border data flows",
+    "data flow policy",
+    "data security program",
+    "supply chain security",
+    "data governance",
+    "techno-economic war",
+    "科技治理",
+    "数字治理",
+    "标准治理",
+    "出口管制",
+}
 
 
 def _contains_keyword(text: str, keyword: str) -> bool:
@@ -73,14 +96,21 @@ def score_candidate(
             has_strong_defense_ai_signal = any(_contains_keyword(text, keyword) for keyword in STRONG_DEFENSE_AI_KEYWORDS)
             if not has_strong_defense_ai_signal:
                 matched_keywords = []
+        if topic.name == "科技治理" and set(matched_keywords) <= WEAK_TECH_GOVERNANCE_KEYWORDS:
+            has_strong_tech_governance_signal = any(
+                _contains_keyword(text, keyword) for keyword in STRONG_TECH_GOVERNANCE_KEYWORDS
+            )
+            if not has_strong_tech_governance_signal:
+                matched_keywords = []
         matches = len(matched_keywords)
         if matches:
             topic_scores[topic.name] = topic.weight + max(0, matches - 1)
 
     total = sum(topic_scores.values())
-    if scored.content_type in REPORT_TYPES:
-        total += rules.report_bonus
-    total += int(rules.source_priority_bonus.get(scored.institution_slug, 0))
+    if topic_scores:
+        if scored.content_type in REPORT_TYPES:
+            total += rules.report_bonus
+        total += int(rules.source_priority_bonus.get(scored.institution_slug, 0))
 
     if total >= rules.p0_threshold:
         priority = "P0"
