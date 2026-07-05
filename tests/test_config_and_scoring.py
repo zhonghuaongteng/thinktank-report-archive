@@ -350,6 +350,66 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("科技创新", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
+    def test_substantive_innovation_report_enters_p1_without_source_bonus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="rand",
+            institution_name="RAND",
+            institution_type="think_tank",
+            title="Strengthening Regional Innovation Systems",
+            url="https://www.rand.org/pubs/research_reports/innovation-systems.html",
+            summary="A research report on regional innovation systems and technology diffusion.",
+            published_date="2026-06-20",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_digital_transformation_report_enters_p1_without_ai_governance(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="rand",
+            institution_name="RAND",
+            institution_type="think_tank",
+            title="Digital Transformation and Public Service Productivity",
+            url="https://www.rand.org/pubs/research_reports/digital-transformation.html",
+            summary="A research report on digital transformation and digital infrastructure.",
+            published_date="2026-06-21",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("数字经济", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_china_context_report_alone_remains_below_p1(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="csis",
+            institution_name="CSIS",
+            institution_type="think_tank",
+            title="China and Europe Diplomatic Dialogue",
+            url="https://example.org/report/china-europe-dialogue",
+            summary="A report on diplomatic relations and ministerial exchanges with PRC officials.",
+            published_date="2026-06-22",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P2")
+        self.assertEqual(scored.topic_tags, ["中国与上海相关"])
+        self.assertEqual(scored.translation_level, "summary")
+
     def test_regional_innovation_support_report_enters_p1_without_governance_terms(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")

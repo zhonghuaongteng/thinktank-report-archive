@@ -17,7 +17,7 @@ This repository tracks public research outputs from selected international think
 - STEM talent, innovation workforce, productivity, and industrial competitiveness
 - China and Shanghai relevance
 
-P1 is intentionally broader than AI governance. Reports can enter the priority queue when they materially address technology innovation capacity, public or private R&D, innovation systems, technology adoption and diffusion, research infrastructure, industrial competitiveness, advanced manufacturing, digital transformation, STEM talent, or related policy instruments.
+P1 is intentionally broader than AI governance. The default priority queue covers reports that support technology innovation and development: technology innovation capacity, public or private R&D, innovation systems, technology adoption and diffusion, research infrastructure, commercialization, industrial competitiveness, advanced manufacturing, digital transformation, STEM talent, productivity, and related policy instruments. A report, paper, or policy brief with any substantive technology topic is treated as at least P1 even when it does not contain AI governance language.
 
 China/Shanghai relevance is treated as a context signal. It can raise priority only when paired with a substantive technology, AI, semiconductor, manufacturing, digital economy, innovation, governance, or talent signal; China-only diplomacy or event pages are capped at P2.
 
