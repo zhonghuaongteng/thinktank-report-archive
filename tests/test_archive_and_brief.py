@@ -76,6 +76,25 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("\npdf_url:\n", markdown)
         self.assertNotIn("pdf_url: \n", markdown)
 
+    def test_build_markdown_uses_summary_for_summary_only_sources(self):
+        candidate = ArticleCandidate(
+            institution_slug="iiss",
+            institution_name="IISS",
+            institution_type="think_tank",
+            title="Critical minerals analysis",
+            chinese_title="关键矿产分析",
+            url="https://example.org/critical-minerals",
+            summary="Official public abstract about critical minerals and industrial strategy.",
+            detail_text="Critical minerals analysis",
+            source_completeness="summary_only",
+        )
+
+        markdown = build_markdown(candidate)
+
+        english_section = markdown.split("## English Source Material", 1)[1]
+        self.assertIn("Official public abstract about critical minerals and industrial strategy.", english_section)
+        self.assertNotIn("\nCritical minerals analysis\n\n", english_section)
+
     def test_write_article_uses_undated_directory_for_missing_dates(self):
         candidate = ArticleCandidate(
             institution_slug="itif",

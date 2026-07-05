@@ -73,7 +73,10 @@ def build_markdown(candidate: ArticleCandidate) -> str:
         "",
     ]
     chinese_summary = candidate.chinese_summary or "待由 Codex 自动化补充中文摘要与研判。"
-    english_material = candidate.detail_text or candidate.summary or "No source text extracted."
+    if candidate.source_completeness == "full_text" and candidate.detail_text:
+        english_material = candidate.detail_text
+    else:
+        english_material = candidate.summary or candidate.detail_text or "No source text extracted."
     parts = [
         *frontmatter,
         f"# {title}",
