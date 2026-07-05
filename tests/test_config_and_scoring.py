@@ -349,6 +349,63 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P1", "P2"})
         self.assertIn("数字经济", scored.topic_tags)
 
+    def test_advanced_compute_access_is_digital_infrastructure_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="The National Security Case for Limiting China's Access to Advanced U.S. Compute",
+            url="https://cset.georgetown.edu/article/advanced-compute-access",
+            summary="Evidence from PLA procurement documents about advanced compute access and AI development.",
+            published_date="2026-04-20",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn("数字经济", scored.topic_tags)
+        self.assertIn("中国与上海相关", scored.topic_tags)
+
+    def test_advanced_industries_are_manufacturing_and_innovation_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="Information Technology and Innovation Foundation",
+            institution_type="think_tank",
+            title="China Is Rapidly Becoming a Leading Innovator in Advanced Industries",
+            url="https://itif.org/publications/advanced-industries",
+            summary="Advanced industries, technology competition, and national power industries shape industrial policy.",
+            published_date="2024-09-16",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertIn("先进制造", scored.topic_tags)
+
+    def test_stem_research_policy_is_talent_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="Information Technology and Innovation Foundation",
+            institution_type="think_tank",
+            title="Mobilizing for Techno-Economic War, Part 5: Transforming STEM Research Policy",
+            url="https://itif.org/publications/stem-research-policy",
+            summary="STEM research policy, technology talent, and techno-economic war.",
+            published_date="2026-06-17",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn("科技人才", scored.topic_tags)
+        self.assertIn("科技治理", scored.topic_tags)
+
     def test_national_security_alone_does_not_create_defense_ai_tag(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
