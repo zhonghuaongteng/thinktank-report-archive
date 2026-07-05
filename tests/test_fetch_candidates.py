@@ -138,6 +138,34 @@ class FetchCandidateTests(unittest.TestCase):
         )
         self.assertFalse(source_url_allowed("https://www.hoover.org/get-involved/subscriptions", institution))
 
+    def test_source_url_allowed_rejects_grant_and_definition_pages(self):
+        institution = Institution(
+            slug="stanford-hai",
+            name="Stanford HAI",
+            chinese_name="斯坦福以人为本人工智能研究院",
+            country_region="United States",
+            institution_type="university_research_center",
+            priority="P0",
+            batch=1,
+            homepage="https://hai.stanford.edu/ai-index",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(
+            source_url_allowed(
+                "https://hai.stanford.edu/research/grant-programs/hoffman-yee-research-grants",
+                institution,
+            )
+        )
+        self.assertFalse(source_url_allowed("https://hai.stanford.edu/ai-definitions/what-are-robotics", institution))
+        self.assertTrue(
+            source_url_allowed(
+                "https://hai.stanford.edu/ai-index/2026-ai-index-report/research-and-development",
+                institution,
+            )
+        )
+
     def test_source_url_allowed_rejects_itif_canada_post_public_service_reform(self):
         institution = Institution(
             slug="itif",

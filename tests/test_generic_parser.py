@@ -54,6 +54,8 @@ class GenericParserTests(unittest.TestCase):
           <a href="/en/community/hector-de-rivoire">See all posts</a>
           <a href="/en/working-group-innovation-and-commercialisation">Working Group on Innovation and Commercialisation</a>
           <a href="/people/jon-bateman">Jon Bateman commentary</a>
+          <a href="/research/grant-programs/hoffman-yee-research-grants">Research grants</a>
+          <a href="/ai-definitions/what-are-robotics">What are robotics?</a>
           <a href="/en/wonk/call-ai-in-gov">Deadline extension: Global call for AI in government</a>
           <a href="/research/defense/resourcing-and-building-the-future-force">Resourcing and Building the Future Force</a>
           <a href="/publications/2026/ai-governance-export-controls/">AI governance report</a>
