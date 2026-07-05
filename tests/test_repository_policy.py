@@ -9,6 +9,11 @@ class RepositoryPolicyTests(unittest.TestCase):
         self.assertNotIn("archive/", ignore_text)
         self.assertNotIn("briefs/", ignore_text)
 
+    def test_daily_script_defaults_to_broad_innovation_support_profile(self):
+        script = Path("scripts/run_daily.ps1").read_text(encoding="utf-8")
+
+        self.assertIn('[string]$SearchProfile = "broad_innovation_support"', script)
+
 
 if __name__ == "__main__":
     unittest.main()

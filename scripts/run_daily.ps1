@@ -1,7 +1,7 @@
 param(
     [int]$Batch = 1,
     [int]$Limit = 20,
-    [string]$SearchProfile = "",
+    [string]$SearchProfile = "broad_innovation_support",
     [string]$Python = "C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe"
 )
 
