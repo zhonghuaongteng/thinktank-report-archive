@@ -451,6 +451,28 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("科技创新", scored.topic_tags)
         self.assertIn("先进制造", scored.topic_tags)
 
+    def test_defense_industrial_base_is_advanced_manufacturing_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="aspi",
+            institution_name="Australian Strategic Policy Institute",
+            institution_type="think_tank",
+            title="Australia's defence industry needs a government investment fund",
+            url="https://www.aspistrategist.org.au/australias-defence-industry-needs-a-government-investment-fund/",
+            summary=(
+                "Analysis of industrial depth, a self-reliant industrial base, "
+                "defence industry development, sustainment, and prolonged operations."
+            ),
+            published_date="2026-07-03",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("先进制造", scored.topic_tags)
+
     def test_stem_research_policy_is_talent_signal(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")

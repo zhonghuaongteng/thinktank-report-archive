@@ -343,13 +343,25 @@ def clean_detail_title(title: str, institution: Institution) -> str:
     title = norm(title)
     if not title:
         return ""
-    host = _normalized_host(institution.homepage)
-    host_labels = [part for part in host.split(".") if part not in {"org", "com", "net", "edu", "ai", "uk", "eu"}]
+    hosts = [_normalized_host(institution.homepage), *[_normalized_host(domain) for domain in institution.allowed_domains]]
+    host_labels = [
+        part
+        for host in hosts
+        for part in host.split(".")
+        if part not in {"org", "com", "net", "edu", "ai", "uk", "eu"}
+    ]
+    host_label_variants = set()
+    slug_token = _title_token(institution.slug)
+    for label in host_labels:
+        label_token = _title_token(label)
+        if slug_token and label_token.startswith(slug_token) and len(label_token) > len(slug_token):
+            host_label_variants.add(label_token[len(slug_token) :])
     allowed_suffixes = {
         _title_token(institution.slug),
         _title_token(institution.name),
         _title_token(institution.chinese_name),
         *(_title_token(label) for label in host_labels),
+        *host_label_variants,
     }
     for separator in (" | ", " - ", " – ", " — "):
         if separator not in title:

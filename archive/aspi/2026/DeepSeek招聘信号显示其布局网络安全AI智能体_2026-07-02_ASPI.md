@@ -4,7 +4,7 @@ institution_slug: aspi
 institution_type: think_tank
 content_type: article
 source_completeness: full_text
-english_title: "Job ads show DeepSeek aims for an AI agent with cybersecurity capabilities | The Strategist"
+english_title: "Job ads show DeepSeek aims for an AI agent with cybersecurity capabilities"
 chinese_title: "DeepSeek招聘信号显示其布局网络安全AI智能体"
 published_date: 2026-07-02
 source_url: https://www.aspistrategist.org.au/deepseek-plans-to-build-an-ai-agent-with-cybersecurity-capabilities/
@@ -30,7 +30,7 @@ fetch_status: detail_ok
 
 ## 元数据
 
-- 原始标题：Job ads show DeepSeek aims for an AI agent with cybersecurity capabilities | The Strategist
+- 原始标题：Job ads show DeepSeek aims for an AI agent with cybersecurity capabilities
 - 发布日期：2026-07-02
 - 来源链接：https://www.aspistrategist.org.au/deepseek-plans-to-build-an-ai-agent-with-cybersecurity-capabilities/
 - PDF链接：https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1230/2025123000017.pdf

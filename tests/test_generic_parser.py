@@ -217,6 +217,34 @@ class GenericParserTests(unittest.TestCase):
 
         self.assertEqual(detail.title, "Beyond P(doom) for AI Risk: Quantifying Uncertainty Without Probability")
 
+    def test_parse_generic_detail_strips_site_suffix_from_auxiliary_domain_label(self):
+        html = """
+        <html><head>
+          <title>Australia's defence industry needs a government investment fund | The Strategist</title>
+        </head><body><main><p>Defence industry and industrial base policy text.</p></main></body></html>
+        """
+        institution = Institution(
+            slug="aspi",
+            name="Australian Strategic Policy Institute",
+            chinese_name="澳大利亚战略政策研究所",
+            country_region="Australia",
+            institution_type="think_tank",
+            priority="P0",
+            batch=2,
+            homepage="https://www.aspi.org.au/",
+            allowed_domains=["https://www.aspistrategist.org.au/"],
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://www.aspistrategist.org.au/australias-defence-industry-needs-a-government-investment-fund/",
+            institution,
+        )
+
+        self.assertEqual(detail.title, "Australia's defence industry needs a government investment fund")
+
     def test_parse_generic_detail_falls_back_to_time_datetime(self):
         html = """
         <html><head><title>Semiconductor policy</title></head>
