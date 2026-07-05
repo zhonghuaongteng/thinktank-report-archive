@@ -326,6 +326,35 @@ class FetchCandidateTests(unittest.TestCase):
         )
         self.assertTrue(source_url_allowed("https://www.rand.org/pubs/research_reports/RRA3892-2.html", institution))
 
+    def test_source_url_allowed_rejects_tag_pages_and_media_post_queries(self):
+        institution = Institution(
+            slug="ecipe",
+            name="European Centre for International Political Economy",
+            chinese_name="欧洲国际政治经济中心",
+            country_region="European Union",
+            institution_type="think_tank",
+            priority="P1",
+            batch=1,
+            homepage="https://ecipe.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(source_url_allowed("https://ecipe.org/publications/tag/digital-economy/", institution))
+        self.assertFalse(
+            source_url_allowed(
+                "https://ecipe.org/?ecipemediapost=turning-regulation-into-data-digital-trade-restrictiveness-index",
+                institution,
+            )
+        )
+        self.assertTrue(source_url_allowed("https://ecipe.org/insights/dma-ai-interoperability-paradox/", institution))
+        self.assertTrue(
+            source_url_allowed(
+                "https://ecipe.org/publications/trade-in-information-technology-goods-adapting-the-itata-to-21st-century-technological-change/",
+                institution,
+            )
+        )
+
     def test_date_from_feed_handles_weekday_numeric_publication_date(self):
         self.assertEqual(_date_from_feed("Fri, 07/03/2026 - 09:20"), "2026-07-03")
 

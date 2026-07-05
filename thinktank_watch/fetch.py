@@ -107,6 +107,7 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "topic",
     "topics",
     "research-teams",
+    "tag",
     "video",
     "videos",
     "webinars",
@@ -187,6 +188,8 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
     parsed_source = urlparse(url)
     if parsed_source.path.lower().endswith(".pdf"):
         return False
+    if any(key.lower() == "ecipemediapost" for key, _ in parse_qsl(parsed_source.query, keep_blank_values=True)):
+        return False
     source_host = _normalized_host(parsed_source.netloc)
     allowed_hosts = [_normalized_host(institution.homepage)]
     allowed_hosts.extend(_normalized_host(domain) for domain in institution.allowed_domains)
@@ -205,7 +208,7 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
     if len(last_stem) == 4 and last_stem.isdigit():
         return False
     if len(ordered_path_segments) == 2:
-        if ordered_path_segments[0] == "publications":
+        if ordered_path_segments[0] == "publications" and institution.slug != "ecipe":
             return False
     return True
 
