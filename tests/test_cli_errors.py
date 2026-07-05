@@ -37,6 +37,7 @@ class CliErrorTests(unittest.TestCase):
             institution_type="think_tank",
             title="Shared gains, secure links",
             url="https://www.ceps.eu/ceps-publications/shared-gains-secure-links-rethinking-eu-asia-digital-cooperation/",
+            published_date="2026-06-01",
             priority="P3",
             score=1,
             fetch_status="detail_error:403",

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from datetime import date
 from pathlib import Path
@@ -30,6 +31,7 @@ from .state import ArticleState
 
 DEFAULT_CONFIG = Path("config")
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
+DEFAULT_BACKFILL_LOOKBACK_YEARS = 3
 
 
 def _load_config():
@@ -83,7 +85,21 @@ def candidate_matches_include_terms(candidate: ArticleCandidate, include_terms: 
             " ".join(candidate.topic_tags),
         ]
     ).lower()
-    return any(term in haystack for term in terms)
+    return any(include_term_matches_haystack(term, haystack) for term in terms)
+
+
+def include_term_matches_haystack(term: str, haystack: str) -> bool:
+    if re.fullmatch(r"[a-z0-9]{1,3}", term):
+        return re.search(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", haystack) is not None
+    return term in haystack
+
+
+def filter_unseen_candidates(candidates: list[ArticleCandidate], state_path: str | Path) -> list[ArticleCandidate]:
+    state = ArticleState(state_path)
+    try:
+        return [item for item in candidates if not state.seen(item.url)]
+    finally:
+        state.close()
 
 
 def institution_fetch_limit(institution: Institution, limit: int) -> int:
@@ -101,15 +117,45 @@ def published_date_sort_value(value: str) -> int:
         return 0
 
 
-def candidate_is_future(candidate: ArticleCandidate, run_date: str) -> bool:
-    if len(candidate.published_date or "") < 10 or len(run_date or "") < 10:
-        return False
+def parse_candidate_date(value: str) -> date | None:
+    if len(value or "") < 10:
+        return None
     try:
-        published = date.fromisoformat(candidate.published_date[:10])
-        current = date.fromisoformat(run_date[:10])
+        return date.fromisoformat(value[:10])
     except ValueError:
+        return None
+
+
+def candidate_is_future(candidate: ArticleCandidate, run_date: str) -> bool:
+    published = parse_candidate_date(candidate.published_date)
+    current = parse_candidate_date(run_date)
+    if not published or not current:
         return False
     return published > current
+
+
+def subtract_years(value: date, years: int) -> date:
+    try:
+        return value.replace(year=value.year - years)
+    except ValueError:
+        return value.replace(year=value.year - years, day=28)
+
+
+def backfill_window_start(run_date: str, lookback_years: int) -> date:
+    current = parse_candidate_date(run_date)
+    if not current:
+        raise ValueError(f"Invalid run date: {run_date}")
+    if lookback_years < 1:
+        raise ValueError("lookback_years must be positive")
+    return subtract_years(current, lookback_years)
+
+
+def candidate_within_backfill_window(candidate: ArticleCandidate, run_date: str, lookback_years: int) -> bool:
+    published = parse_candidate_date(candidate.published_date)
+    current = parse_candidate_date(run_date)
+    if not published or not current:
+        return False
+    return backfill_window_start(run_date, lookback_years) <= published <= current
 
 
 def sort_for_writing(candidates: list[ArticleCandidate]) -> list[ArticleCandidate]:
@@ -193,6 +239,16 @@ def evaluate(args: argparse.Namespace) -> int:
         for item in [score_candidate(item, topics, priorities) for item in candidates]
         if candidate_matches_include_terms(item, getattr(args, "include_terms", None))
     ]
+    if args.backfill:
+        run_date = getattr(args, "date", None) or date.today().isoformat()
+        lookback_years = getattr(args, "lookback_years", DEFAULT_BACKFILL_LOOKBACK_YEARS)
+        scored = [
+            item
+            for item in scored
+            if candidate_within_backfill_window(item, run_date, lookback_years)
+        ]
+    if getattr(args, "unseen_only", False):
+        scored = filter_unseen_candidates(scored, getattr(args, "state", "state/articles.sqlite"))
     for item in sorted(scored, key=lambda row: (row.priority, -row.score, row.institution_slug)):
         print(
             f"[{item.priority}/{item.score}] {item.institution_slug} | "
@@ -283,7 +339,7 @@ def backfill(args: argparse.Namespace) -> int:
         for item in scored:
             if not priority_allows(item.priority, args.min_priority):
                 continue
-            if candidate_is_future(item, run_date):
+            if not candidate_within_backfill_window(item, run_date, args.lookback_years):
                 continue
             if state.seen(item.url) and not args.refresh:
                 continue
@@ -324,6 +380,10 @@ def build_parser() -> argparse.ArgumentParser:
     eval_parser.add_argument("--no-details", action="store_true")
     eval_parser.add_argument("--backfill", action="store_true", help="Evaluate feeds, lists, and sitemap backfill sources without writing.")
     eval_parser.add_argument("--include-term", dest="include_terms", action="append", default=[])
+    eval_parser.add_argument("--date", help="Run date used for the backfill lookback window.")
+    eval_parser.add_argument("--lookback-years", type=int, default=DEFAULT_BACKFILL_LOOKBACK_YEARS)
+    eval_parser.add_argument("--unseen-only", action="store_true", help="Only print candidates absent from the local state database.")
+    eval_parser.add_argument("--state", default="state/articles.sqlite")
     eval_parser.add_argument("--dry-run", action="store_true", help="Alias for evaluate compatibility.")
     eval_parser.set_defaults(func=evaluate)
 
@@ -363,6 +423,7 @@ def build_parser() -> argparse.ArgumentParser:
     backfill_parser.add_argument("--min-priority", choices=sorted(PRIORITY_ORDER), default="P3")
     backfill_parser.add_argument("--write-limit", type=int, default=0, help="Maximum number of new allowed records to write. 0 means unlimited.")
     backfill_parser.add_argument("--include-term", dest="include_terms", action="append", default=[])
+    backfill_parser.add_argument("--lookback-years", type=int, default=DEFAULT_BACKFILL_LOOKBACK_YEARS)
     backfill_parser.add_argument("--archive-root", default="archive")
     backfill_parser.add_argument("--brief-root", default="briefs")
     backfill_parser.add_argument("--state", default="state/articles.sqlite")

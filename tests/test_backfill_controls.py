@@ -6,8 +6,13 @@ from unittest.mock import patch
 import unittest
 
 from thinktank_watch.cli import (
+    backfill,
+    backfill_window_start,
     candidate_is_future,
     candidate_matches_include_terms,
+    candidate_within_backfill_window,
+    filter_unseen_candidates,
+    include_term_matches_haystack,
     institution_fetch_limit,
     priority_allows,
     run_daily,
@@ -15,6 +20,7 @@ from thinktank_watch.cli import (
     write_limit_reached,
 )
 from thinktank_watch.models import ArticleCandidate, Institution
+from thinktank_watch.state import ArticleState
 
 
 class BackfillControlTests(unittest.TestCase):
@@ -104,6 +110,27 @@ class BackfillControlTests(unittest.TestCase):
         candidate.published_date = ""
         self.assertFalse(candidate_is_future(candidate, "2026-07-05"))
 
+    def test_backfill_window_starts_three_years_before_run_date(self):
+        self.assertEqual(backfill_window_start("2026-07-05", 3).isoformat(), "2023-07-05")
+
+    def test_candidate_within_backfill_window_requires_valid_recent_date(self):
+        candidate = ArticleCandidate(
+            "bruegel",
+            "Bruegel",
+            "think_tank",
+            "Artificial intelligence competition",
+            "https://example.org/recent",
+            published_date="2023-07-05",
+        )
+
+        self.assertTrue(candidate_within_backfill_window(candidate, "2026-07-05", 3))
+
+        candidate.published_date = "2023-07-04"
+        self.assertFalse(candidate_within_backfill_window(candidate, "2026-07-05", 3))
+
+        candidate.published_date = ""
+        self.assertFalse(candidate_within_backfill_window(candidate, "2026-07-05", 3))
+
     def test_candidate_matches_include_terms_uses_title_url_and_topics(self):
         candidate = ArticleCandidate(
             "carnegie-tech",
@@ -119,6 +146,43 @@ class BackfillControlTests(unittest.TestCase):
         self.assertTrue(candidate_matches_include_terms(candidate, ["科技治理"]))
         self.assertFalse(candidate_matches_include_terms(candidate, ["semiconductor"]))
         self.assertTrue(candidate_matches_include_terms(candidate, []))
+
+    def test_short_include_terms_match_word_boundaries(self):
+        self.assertTrue(include_term_matches_haystack("ai", "ai governance and model evaluation"))
+        self.assertFalse(include_term_matches_haystack("ai", "development aid evaluation"))
+        self.assertFalse(include_term_matches_haystack("ai", "shared gains and secure links"))
+
+    def test_filter_unseen_candidates_uses_state_dedupe(self):
+        seen = ArticleCandidate(
+            "aspi",
+            "ASPI",
+            "think_tank",
+            "China military AI logistics",
+            "https://example.org/seen",
+            published_date="2026-07-02",
+            priority="P1",
+        )
+        unseen = ArticleCandidate(
+            "aspi",
+            "ASPI",
+            "think_tank",
+            "DeepSeek cybersecurity agent",
+            "https://example.org/unseen",
+            published_date="2026-07-02",
+            priority="P1",
+        )
+
+        with TemporaryDirectory() as tmp:
+            state = Path(tmp) / "state.sqlite"
+            article_state = ArticleState(state)
+            try:
+                article_state.upsert(seen, "")
+            finally:
+                article_state.close()
+
+            filtered = filter_unseen_candidates([seen, unseen], state)
+
+        self.assertEqual(filtered, [unseen])
 
     def test_run_daily_skips_future_dated_candidates_without_recording_state(self):
         institution = Institution(
@@ -176,6 +240,86 @@ class BackfillControlTests(unittest.TestCase):
                 conn.close()
 
             self.assertEqual(count, 0)
+
+    def test_backfill_skips_items_outside_three_year_window(self):
+        institution = Institution(
+            slug="bruegel",
+            name="Bruegel",
+            chinese_name="布鲁盖尔研究所",
+            country_region="European Union",
+            institution_type="think_tank",
+            priority="P1",
+            batch=2,
+            homepage="https://www.bruegel.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+        recent = ArticleCandidate(
+            institution_slug="bruegel",
+            institution_name="Bruegel",
+            institution_type="think_tank",
+            title="Artificial intelligence competition in Europe",
+            url="https://example.org/recent-ai",
+            published_date="2023-07-05",
+            priority="P1",
+            score=8,
+            fetch_status="detail_ok",
+        )
+        old = ArticleCandidate(
+            institution_slug="bruegel",
+            institution_name="Bruegel",
+            institution_type="think_tank",
+            title="Old AI competition report",
+            url="https://example.org/old-ai",
+            published_date="2023-07-04",
+            priority="P1",
+            score=8,
+            fetch_status="detail_ok",
+        )
+        undated = ArticleCandidate(
+            institution_slug="bruegel",
+            institution_name="Bruegel",
+            institution_type="think_tank",
+            title="Undated AI report",
+            url="https://example.org/undated-ai",
+            priority="P1",
+            score=8,
+            fetch_status="detail_ok",
+        )
+
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            state_path = root / "state" / "articles.sqlite"
+            args = SimpleNamespace(
+                date="2026-07-05",
+                batch=None,
+                institution=None,
+                state=str(state_path),
+                archive_root=str(root / "archive"),
+                brief_root=str(root / "briefs"),
+                skip_kb=True,
+                kb_root=str(root / "kb"),
+                limit=5,
+                min_priority="P1",
+                write_limit=0,
+                refresh=False,
+                lookback_years=3,
+            )
+            with (
+                patch("thinktank_watch.cli._load_config", return_value=([institution], [], object())),
+                patch("thinktank_watch.cli.collect_candidates", return_value=[old, undated, recent]),
+                patch("thinktank_watch.cli.score_candidate", side_effect=lambda item, topics, priorities: item),
+            ):
+                backfill(args)
+
+            self.assertEqual(len(list((root / "archive").rglob("*.md"))), 1)
+            conn = sqlite3.connect(state_path)
+            try:
+                rows = conn.execute("SELECT url FROM articles ORDER BY url").fetchall()
+            finally:
+                conn.close()
+
+            self.assertEqual(rows, [(recent.url,)])
 
     def test_run_daily_records_detail_error_without_archiving(self):
         institution = Institution(

@@ -22,15 +22,17 @@ China/Shanghai relevance is treated as a context signal. It can raise priority o
 ```powershell
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m unittest discover -s tests -v
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli evaluate --batch 1 --limit 5 --dry-run
-C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli evaluate --institution carnegie-tech --limit 30 --backfill
+C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli evaluate --institution carnegie-tech --limit 30 --backfill --lookback-years 3 --unseen-only
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli audit --batch 1 --limit 5
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli run-daily --batch 1 --limit 20
-C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli backfill --batch 1 --limit 5 --min-priority P1 --write-limit 8
+C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli backfill --batch 1 --limit 5 --min-priority P1 --write-limit 8 --lookback-years 3
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli rebuild-state --archive-root archive --state state\articles.sqlite
-powershell -ExecutionPolicy Bypass -File scripts\run_backfill_batch.ps1 -Batch 1 -Limit 5 -MinPriority P1 -WriteLimit 8
+powershell -ExecutionPolicy Bypass -File scripts\run_backfill_batch.ps1 -Batch 1 -Limit 5 -MinPriority P1 -WriteLimit 8 -LookbackYears 3
 ```
 
 Candidate source URLs are restricted to the institution's own site or subdomains. Event, people, podcast, project, topic, video, webinar, broad index, and announcement-style pages are filtered out before scoring. Backfill runs interleave feed, list/topic page, and sitemap candidates so one source type does not exhaust the per-institution limit.
+
+Historical backfill is bounded to the last three years by default. Candidates without a verifiable publication date, candidates dated before the lookback window, and future-dated candidates are skipped during backfill runs.
 
 When a detail page exposes a source PDF and the extracted HTML body is short or does not match the article title, the crawler extracts bounded PDF text as the English source material. This prevents archive pollution from related-article blocks, navigation text, and institution landing-page recommendations.
 
