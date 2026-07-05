@@ -126,6 +126,19 @@ class GenericParserTests(unittest.TestCase):
             ["https://www.bruegel.org/working-paper/artificial-intelligence-competition-europe-role-dma-article-67"],
         )
 
+    def test_extract_list_links_accepts_wordpress_post_query_links(self):
+        html = """
+        <html><body>
+          <a href="/en/?page_id=3800">Reports</a>
+          <a href="/en/?cat=3">News & Events</a>
+          <a href="/en/?p=5827">Digest of Japanese Science and Technology Indicators 2025</a>
+        </body></html>
+        """
+
+        links = extract_list_links(html, "https://www.nistep.go.jp/en/", limit=10)
+
+        self.assertEqual(links, ["https://www.nistep.go.jp/en/?p=5827"])
+
     def test_parse_generic_detail_uses_json_ld_date_and_authors(self):
         html = """
         <html><head>

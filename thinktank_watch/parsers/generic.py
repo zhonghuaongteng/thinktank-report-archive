@@ -4,7 +4,7 @@ import html
 import json
 import re
 from datetime import datetime
-from urllib.parse import unquote, urldefrag, urljoin, urlparse
+from urllib.parse import parse_qsl, unquote, urldefrag, urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
@@ -458,6 +458,12 @@ def looks_like_detail_url(url: str, text: str = "") -> bool:
     if parsed.path.lower().endswith(".pdf"):
         return False
     path_segments = [segment for segment in parsed.path.split("/") if segment]
+    query = dict(parse_qsl(parsed.query, keep_blank_values=True))
+    if query.get("p", "").isdigit():
+        label = norm(text)
+        lowered_label = label.lower()
+        if len(re.findall(r"[a-z0-9]", lowered_label)) >= 8 and lowered_label not in {"more", "read more", "see more"}:
+            return True
     if len(path_segments) < 2 or path_segments[-1].lower() in BROAD_ENDPOINTS:
         return False
     last_segment = path_segments[-1].lower()

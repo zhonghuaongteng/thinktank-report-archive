@@ -296,6 +296,45 @@ class FetchCandidateTests(unittest.TestCase):
         self.assertEqual(candidates[0].url, "https://example.org/research/2026/07/ai-governance-and-cyber-risk")
         self.assertEqual(candidates[0].published_date, "2026-07-02")
 
+    def test_sitemap_candidates_expand_sitemap_indexes(self):
+        sitemap_index = """<?xml version="1.0" encoding="UTF-8"?>
+        <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          <sitemap><loc>https://example.org/sitemap-posts.xml</loc></sitemap>
+        </sitemapindex>
+        """
+        child_sitemap = """<?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          <url><loc>https://example.org/publication/quantum-technology-report</loc><lastmod>2026-05-01</lastmod></url>
+        </urlset>
+        """
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            if str(request.url) == "https://example.org/sitemap.xml":
+                return httpx.Response(200, text=sitemap_index, request=request)
+            if str(request.url) == "https://example.org/sitemap-posts.xml":
+                return httpx.Response(200, text=child_sitemap, request=request)
+            return httpx.Response(404, request=request)
+
+        institution = Institution(
+            slug="example",
+            name="Example",
+            chinese_name="示例",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P1",
+            batch=1,
+            homepage="https://example.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+            sitemap_urls=["https://example.org/sitemap.xml"],
+            sitemap_include_keywords=["quantum"],
+        )
+
+        with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+            candidates = fetch_sitemap_candidates(client, institution, limit=10)
+
+        self.assertEqual([item.url for item in candidates], ["https://example.org/publication/quantum-technology-report"])
+
     def test_list_candidates_include_configured_topic_pages(self):
         pages = {
             "https://example.org/publications": """

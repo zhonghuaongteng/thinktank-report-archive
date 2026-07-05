@@ -33,6 +33,7 @@ USER_AGENT = (
 PDF_TEXT_MAX_PAGES = 10
 PDF_TEXT_MAX_CHARS = 24000
 PDF_TEXT_MIN_HTML_CHARS = 5000
+SITEMAP_INDEX_MAX_CHILDREN = 20
 TITLE_STOP_WORDS = {
     "about",
     "after",
@@ -78,6 +79,7 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "blog",
     "blogs",
     "categories",
+    "careers",
     "connect-with-us",
     "category",
     "cyber-statecraft-initiative",
@@ -101,6 +103,7 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "video",
     "videos",
     "webinars",
+    "jobs",
 }
 SOURCE_LAST_SEGMENT_DENY = {
     "commentary",
@@ -290,40 +293,56 @@ def fetch_sitemap_candidates(
 ) -> list[ArticleCandidate]:
     candidates: list[ArticleCandidate] = []
     for sitemap_url in institution.sitemap_urls:
-        try:
-            response = client.get(sitemap_url, timeout=30)
-            response.raise_for_status()
-        except httpx.HTTPError:
-            continue
-        soup = BeautifulSoup(response.text, "xml")
-        for node in soup.find_all("url"):
-            loc = norm(node.loc.get_text()) if node.loc else ""
-            if not loc:
-                continue
-            if not source_url_allowed(loc, institution):
-                continue
-            if institution.sitemap_include_keywords:
-                if not any(keyword.lower() in loc.lower() for keyword in institution.sitemap_include_keywords):
+        for soup in sitemap_soups(client, sitemap_url):
+            for node in soup.find_all("url"):
+                loc = norm(node.loc.get_text()) if node.loc else ""
+                if not loc:
                     continue
-            elif not looks_like_detail_url(loc):
-                continue
-            lastmod = canonical_date(node.lastmod.get_text()) if node.lastmod else ""
-            candidates.append(
-                ArticleCandidate(
-                    institution_slug=institution.slug,
-                    institution_name=institution.name,
-                    institution_type=institution.institution_type,
-                    title=loc.rstrip("/").split("/")[-1].replace("-", " ").replace(".html", "").title(),
-                    url=loc,
-                    published_date=lastmod,
-                    content_type="sitemap_item",
-                    copyright_boundary=institution.copyright_boundary,
-                    fetch_status="sitemap_ok",
+                if not source_url_allowed(loc, institution):
+                    continue
+                if institution.sitemap_include_keywords:
+                    if not any(keyword.lower() in loc.lower() for keyword in institution.sitemap_include_keywords):
+                        continue
+                elif not looks_like_detail_url(loc):
+                    continue
+                lastmod = canonical_date(node.lastmod.get_text()) if node.lastmod else ""
+                candidates.append(
+                    ArticleCandidate(
+                        institution_slug=institution.slug,
+                        institution_name=institution.name,
+                        institution_type=institution.institution_type,
+                        title=loc.rstrip("/").split("/")[-1].replace("-", " ").replace(".html", "").title(),
+                        url=loc,
+                        published_date=lastmod,
+                        content_type="sitemap_item",
+                        copyright_boundary=institution.copyright_boundary,
+                        fetch_status="sitemap_ok",
+                    )
                 )
-            )
+                if len(candidates) >= limit:
+                    break
             if len(candidates) >= limit:
                 break
     return candidates[:limit]
+
+
+def sitemap_soups(client: httpx.Client, sitemap_url: str) -> list[BeautifulSoup]:
+    try:
+        response = client.get(sitemap_url, timeout=30)
+        response.raise_for_status()
+    except httpx.HTTPError:
+        return []
+    soup = BeautifulSoup(response.text, "xml")
+    soups = [soup]
+    child_urls = [norm(node.loc.get_text()) for node in soup.find_all("sitemap") if node.loc]
+    for child_url in child_urls[:SITEMAP_INDEX_MAX_CHILDREN]:
+        try:
+            child_response = client.get(child_url, timeout=30)
+            child_response.raise_for_status()
+        except httpx.HTTPError:
+            continue
+        soups.append(BeautifulSoup(child_response.text, "xml"))
+    return soups
 
 
 def fetch_detail(client: httpx.Client, institution: Institution, candidate: ArticleCandidate) -> ArticleCandidate:

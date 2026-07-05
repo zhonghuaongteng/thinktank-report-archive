@@ -15,6 +15,7 @@ REPORT_TYPES = {
     "paper",
     "external_publication",
 }
+TOPIC_MATCH_EXTRA_CAP = 2
 CONTEXT_ONLY_TOPICS = {"中国与上海相关"}
 CONTEXT_ONLY_PRIORITY_CAP = "P2"
 STANDALONE_AI_KEYWORDS = {"AI", "A.I."}
@@ -104,7 +105,7 @@ def score_candidate(
                 matched_keywords = []
         matches = len(matched_keywords)
         if matches:
-            topic_scores[topic.name] = topic.weight + max(0, matches - 1)
+            topic_scores[topic.name] = topic.weight + min(max(0, matches - 1), TOPIC_MATCH_EXTRA_CAP)
 
     total = sum(topic_scores.values())
     if topic_scores:

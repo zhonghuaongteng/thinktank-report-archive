@@ -350,6 +350,30 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("科技创新", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
+    def test_regional_innovation_support_report_enters_p1_without_governance_terms(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="belfer",
+            institution_name="Harvard Belfer Center Science, Technology, and Public Policy",
+            institution_type="university_research_center",
+            title="Building Regional Innovation Engines",
+            url="https://www.belfercenter.org/publication/regional-innovation-engines",
+            summary=(
+                "A report on place-based innovation, research universities, technology transfer, "
+                "innovation finance, and university-industry collaboration."
+            ),
+            published_date="2026-06-18",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+        self.assertNotIn("科技治理", scored.topic_tags)
+
     def test_biomanufacturing_and_industrial_competitiveness_are_innovation_support(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
