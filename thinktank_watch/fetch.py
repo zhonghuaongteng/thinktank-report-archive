@@ -83,6 +83,8 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "blogs",
     "categories",
     "careers",
+    "center",
+    "centers",
     "connect-with-us",
     "category",
     "cyber-statecraft-initiative",

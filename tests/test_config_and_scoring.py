@@ -54,6 +54,14 @@ class ConfigAndScoringTests(unittest.TestCase):
         for keyword in {"compute", "supply-chain", "talent", "innovation", "research", "technology"}:
             self.assertIn(keyword, cset.sitemap_include_keywords)
 
+    def test_rand_sitemap_prefers_publication_paths_not_center_pages(self):
+        institutions = load_institutions("config/institutions")
+        rand = next(item for item in institutions if item.slug == "rand")
+
+        self.assertIn("/pubs/research_reports/", rand.sitemap_include_keywords)
+        self.assertIn("/pubs/external_publications/", rand.sitemap_include_keywords)
+        self.assertNotIn("center", rand.sitemap_include_keywords)
+
     def test_selecting_explicit_institution_ignores_batch_filter(self):
         institutions = load_institutions("config/institutions")
         selected = _select_institutions(institutions, batch=1, slug="csis")
@@ -725,6 +733,49 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         self.assertIn("科技创新", scored.topic_tags)
         self.assertIn("科技人才", scored.topic_tags)
+
+    def test_public_trust_in_science_is_science_system_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="rand",
+            institution_name="RAND",
+            institution_type="think_tank",
+            title="Public Trust in Science and Scientific Trustworthiness",
+            url="https://www.rand.org/pubs/external_publications/public-trust-in-science.html",
+            summary=(
+                "A report on science communication, research integrity, and evidence-based policy "
+                "as foundations of the research ecosystem."
+            ),
+            published_date="2026-06-26",
+            content_type="external_publication",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_stem_pipeline_is_talent_support_without_ai_governance(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="rand",
+            institution_name="RAND",
+            institution_type="think_tank",
+            title="Aspire to STEM: Evaluation Report",
+            url="https://www.rand.org/pubs/external_publications/stem-aspire.html",
+            summary="A report on STEM outreach, STEM participation, STEM pipeline, and science literacy.",
+            published_date="2026-06-26",
+            content_type="external_publication",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("科技人才", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
 
     def test_government_funded_research_is_innovation_support_signal(self):
         topics = load_topics("config/topics.yaml")

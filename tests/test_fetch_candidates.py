@@ -322,6 +322,12 @@ class FetchCandidateTests(unittest.TestCase):
                 institution,
             )
         )
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.rand.org/education-employment-infrastructure/centers/veterans-policy-research.html",
+                institution,
+            )
+        )
         self.assertTrue(
             source_url_allowed(
                 "https://www.rand.org/zh-hans/publications/2016/exploring-the-course-and-consequences-of-a-sino-us-war.html",
