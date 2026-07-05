@@ -853,6 +853,48 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("科技人才", scored.topic_tags)
 
+    def test_ai_job_market_skills_report_is_talent_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="AI Ethics and Governance in the Job Market: Trends, Skills, and Sectoral Demand",
+            url="https://cset.georgetown.edu/publication/ai-ethics-and-governance-in-the-job-market-trends-skills-and-sectoral-demand/",
+            summary=(
+                "Demand for an AI-literate workforce has surged to counter a growing skills gap "
+                "and sectoral demand for AI ethics skills."
+            ),
+            published_date="2025-05-20",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("AI治理", scored.topic_tags)
+        self.assertIn("科技人才", scored.topic_tags)
+
+    def test_military_civil_fusion_is_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="Pulling Back the Curtain on China's Military-Civil Fusion",
+            url="https://cset.georgetown.edu/publication/pulling-back-the-curtain-on-chinas-military-civil-fusion/",
+            summary="A report on China's military-civil fusion, dual-use technology, and defense technology ecosystem.",
+            published_date="2025-09-02",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+
     def test_value_chain_capacity_and_skills_are_innovation_support(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
