@@ -69,3 +69,12 @@ class PriorityRules:
     report_bonus: int
     source_priority_bonus: dict[str, int]
     translation_by_priority: dict[str, str]
+
+
+@dataclass(slots=True)
+class SearchProfile:
+    name: str
+    description: str = ""
+    include_terms: list[str] = field(default_factory=list)
+    topic_tags_any: list[str] = field(default_factory=list)
+    exclude_governance_only: bool = False

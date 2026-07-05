@@ -1,6 +1,6 @@
 import unittest
 
-from thinktank_watch.config import load_institutions, load_priority_rules, load_topics
+from thinktank_watch.config import load_institutions, load_priority_rules, load_search_profiles, load_topics
 from thinktank_watch.cli import _select_institutions
 from thinktank_watch.models import ArticleCandidate
 from thinktank_watch.scoring import score_candidate
@@ -67,6 +67,15 @@ class ConfigAndScoringTests(unittest.TestCase):
         selected = _select_institutions(institutions, batch=1, slug="csis")
 
         self.assertEqual([item.slug for item in selected], ["csis"])
+
+    def test_loads_broad_innovation_support_search_profile(self):
+        profiles = load_search_profiles("config/search_profiles.yaml")
+        profile = profiles["broad_innovation_support"]
+
+        self.assertTrue(profile.exclude_governance_only)
+        self.assertIn("科技创新", profile.topic_tags_any)
+        self.assertIn("先进制造", profile.topic_tags_any)
+        self.assertIn("数字经济", profile.topic_tags_any)
 
     def test_scoring_promotes_ai_china_governance_items_to_p0(self):
         topics = load_topics("config/topics.yaml")

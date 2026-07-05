@@ -11,7 +11,7 @@ import httpx
 from .audit import write_audit_report
 from .archive import write_article
 from .brief import load_daily_brief_candidates, write_daily_brief
-from .config import load_institutions, load_priority_rules, load_topics
+from .config import load_institutions, load_priority_rules, load_search_profiles, load_topics
 from .fetch import (
     check_pdf,
     enrich_detail_text_from_pdf,
@@ -40,6 +40,17 @@ def _load_config():
     topics = load_topics(DEFAULT_CONFIG / "topics.yaml")
     priorities = load_priority_rules(DEFAULT_CONFIG / "priorities.yaml")
     return institutions, topics, priorities
+
+
+def resolve_search_profile(name: str | None):
+    if not name:
+        return None
+    profiles = load_search_profiles(DEFAULT_CONFIG / "search_profiles.yaml")
+    try:
+        return profiles[name]
+    except KeyError as exc:
+        available = ", ".join(sorted(profiles)) or "none"
+        raise ValueError(f"Unsupported search profile: {name}. Available profiles: {available}") from exc
 
 
 def _select_institutions(institutions: list[Institution], batch: int | None, slug: str | None) -> list[Institution]:
@@ -93,6 +104,25 @@ def candidate_matches_include_terms(candidate: ArticleCandidate, include_terms: 
         ]
     ).lower()
     return any(include_term_matches_haystack(term, haystack) for term in terms)
+
+
+def candidate_matches_search_profile(candidate: ArticleCandidate, profile) -> bool:
+    if profile is None:
+        return True
+    if profile.include_terms and not candidate_matches_include_terms(candidate, profile.include_terms):
+        return False
+    if profile.topic_tags_any and not (set(profile.topic_tags_any) & set(candidate.topic_tags)):
+        return False
+    if profile.exclude_governance_only and innovation_support_sort_rank(candidate) == 2:
+        return False
+    return True
+
+
+def candidate_matches_filters(candidate: ArticleCandidate, args: argparse.Namespace, profile=None) -> bool:
+    return candidate_matches_search_profile(candidate, profile) and candidate_matches_include_terms(
+        candidate,
+        getattr(args, "include_terms", None),
+    )
 
 
 def include_term_matches_haystack(term: str, haystack: str) -> bool:
@@ -266,12 +296,13 @@ def collect_candidates(
 
 def evaluate(args: argparse.Namespace) -> int:
     institutions, topics, priorities = _load_config()
+    profile = resolve_search_profile(getattr(args, "search_profile", None))
     selected = _select_institutions(institutions, args.batch, args.institution)
     candidates = collect_candidates(selected, args.limit, include_details=not args.no_details, backfill=args.backfill)
     scored = [
         item
         for item in [score_candidate(item, topics, priorities) for item in candidates]
-        if candidate_matches_include_terms(item, getattr(args, "include_terms", None))
+        if candidate_matches_filters(item, args, profile)
     ]
     if args.backfill:
         run_date = getattr(args, "date", None) or date.today().isoformat()
@@ -300,12 +331,13 @@ def evaluate(args: argparse.Namespace) -> int:
 def audit(args: argparse.Namespace) -> int:
     run_date = args.date or date.today().isoformat()
     institutions, topics, priorities = _load_config()
+    profile = resolve_search_profile(getattr(args, "search_profile", None))
     selected = _select_institutions(institutions, args.batch, args.institution)
     candidates = collect_candidates(selected, args.limit, include_details=not args.no_details)
     scored = [
         item
         for item in [score_candidate(item, topics, priorities) for item in candidates]
-        if candidate_matches_include_terms(item, getattr(args, "include_terms", None))
+        if candidate_matches_filters(item, args, profile)
     ]
     output = Path(args.output) if args.output else Path("reports") / f"{run_date}_source_health.csv"
     path = write_audit_report(output, scored)
@@ -316,6 +348,7 @@ def audit(args: argparse.Namespace) -> int:
 def run_daily(args: argparse.Namespace) -> int:
     run_date = args.date or date.today().isoformat()
     institutions, topics, priorities = _load_config()
+    profile = resolve_search_profile(getattr(args, "search_profile", None))
     selected = _select_institutions(institutions, args.batch, args.institution)
     state = ArticleState(args.state)
     written: list[ArticleCandidate] = []
@@ -325,7 +358,7 @@ def run_daily(args: argparse.Namespace) -> int:
             [
                 item
                 for item in [score_candidate(item, topics, priorities) for item in candidates]
-                if candidate_matches_include_terms(item, getattr(args, "include_terms", None))
+                if candidate_matches_filters(item, args, profile)
             ],
             args.write_limit,
         )
@@ -359,6 +392,7 @@ def run_daily(args: argparse.Namespace) -> int:
 def backfill(args: argparse.Namespace) -> int:
     run_date = args.date or date.today().isoformat()
     institutions, topics, priorities = _load_config()
+    profile = resolve_search_profile(getattr(args, "search_profile", None))
     selected = _select_institutions(institutions, args.batch, args.institution)
     state = ArticleState(args.state)
     written: list[ArticleCandidate] = []
@@ -368,7 +402,7 @@ def backfill(args: argparse.Namespace) -> int:
             [
                 item
                 for item in [score_candidate(item, topics, priorities) for item in candidates]
-                if candidate_matches_include_terms(item, getattr(args, "include_terms", None))
+                if candidate_matches_filters(item, args, profile)
             ],
             args.write_limit,
         )
@@ -416,6 +450,7 @@ def build_parser() -> argparse.ArgumentParser:
     eval_parser.add_argument("--no-details", action="store_true")
     eval_parser.add_argument("--backfill", action="store_true", help="Evaluate feeds, lists, and sitemap backfill sources without writing.")
     eval_parser.add_argument("--include-term", dest="include_terms", action="append", default=[])
+    eval_parser.add_argument("--search-profile")
     eval_parser.add_argument("--date", help="Run date used for the backfill lookback window.")
     eval_parser.add_argument("--lookback-years", type=int, default=DEFAULT_BACKFILL_LOOKBACK_YEARS)
     eval_parser.add_argument("--unseen-only", action="store_true", help="Only print candidates absent from the local state database.")
@@ -430,6 +465,7 @@ def build_parser() -> argparse.ArgumentParser:
     audit_parser.add_argument("--date")
     audit_parser.add_argument("--no-details", action="store_true")
     audit_parser.add_argument("--include-term", dest="include_terms", action="append", default=[])
+    audit_parser.add_argument("--search-profile")
     audit_parser.add_argument("--output")
     audit_parser.set_defaults(func=audit)
 
@@ -443,6 +479,7 @@ def build_parser() -> argparse.ArgumentParser:
     daily.add_argument("--min-priority", choices=sorted(PRIORITY_ORDER), default="P3")
     daily.add_argument("--write-limit", type=int, default=0, help="Maximum number of new allowed records to write. 0 means unlimited.")
     daily.add_argument("--include-term", dest="include_terms", action="append", default=[])
+    daily.add_argument("--search-profile")
     daily.add_argument("--archive-root", default="archive")
     daily.add_argument("--brief-root", default="briefs")
     daily.add_argument("--state", default="state/articles.sqlite")
@@ -459,6 +496,7 @@ def build_parser() -> argparse.ArgumentParser:
     backfill_parser.add_argument("--min-priority", choices=sorted(PRIORITY_ORDER), default="P3")
     backfill_parser.add_argument("--write-limit", type=int, default=0, help="Maximum number of new allowed records to write. 0 means unlimited.")
     backfill_parser.add_argument("--include-term", dest="include_terms", action="append", default=[])
+    backfill_parser.add_argument("--search-profile")
     backfill_parser.add_argument("--lookback-years", type=int, default=DEFAULT_BACKFILL_LOOKBACK_YEARS)
     backfill_parser.add_argument("--archive-root", default="archive")
     backfill_parser.add_argument("--brief-root", default="briefs")

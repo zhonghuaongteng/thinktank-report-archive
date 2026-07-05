@@ -23,6 +23,8 @@ The July 2026 scope update widens future retrieval further toward technology-inn
 
 Within the same priority bucket, the write queue and daily brief priority section prefer candidates tagged with technology innovation, semiconductors, advanced manufacturing, digital economy, science and technology talent, or defense AI before pure governance items. When a backfill or daily command uses `--write-limit`, at least half of the limited batch is reserved for innovation-support candidates when enough such candidates are available, so pure governance sources do not crowd out broader technology-development material. The daily brief also reserves visible P0/P1 slots for innovation-support reports when governance material is numerically dominant.
 
+Search profiles in `config/search_profiles.yaml` make this scope explicit. `broad_innovation_support` keeps candidates tagged as technology innovation, semiconductors, advanced manufacturing, digital economy, science and technology talent, or defense AI, and excludes candidates that only carry AI governance or technology governance tags. `ai_governance_watch` remains available for dedicated governance monitoring. The batch backfill script defaults to `broad_innovation_support`; daily monitoring stays unfiltered unless `--search-profile` is supplied.
+
 China/Shanghai relevance is treated as a context signal. It can raise priority only when paired with a substantive technology, AI, semiconductor, manufacturing, digital economy, innovation, governance, or talent signal; China-only diplomacy or event pages are capped at P2.
 
 ## Core Commands
@@ -30,10 +32,10 @@ China/Shanghai relevance is treated as a context signal. It can raise priority o
 ```powershell
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m unittest discover -s tests -v
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli evaluate --batch 1 --limit 5 --dry-run
-C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli evaluate --institution carnegie-tech --limit 30 --backfill --lookback-years 3 --unseen-only
+C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli evaluate --institution carnegie-tech --limit 30 --backfill --lookback-years 3 --unseen-only --search-profile broad_innovation_support
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli audit --batch 1 --limit 5
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli run-daily --batch 1 --limit 20
-C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli backfill --batch 1 --limit 5 --min-priority P1 --write-limit 8 --lookback-years 3
+C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli backfill --batch 1 --limit 5 --min-priority P1 --write-limit 8 --lookback-years 3 --search-profile broad_innovation_support
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli rebuild-state --archive-root archive --state state\articles.sqlite
 powershell -ExecutionPolicy Bypass -File scripts\run_backfill_batch.ps1 -Batch 1 -Limit 5 -MinPriority P1 -WriteLimit 8 -LookbackYears 3
 ```

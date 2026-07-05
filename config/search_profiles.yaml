@@ -1,0 +1,23 @@
+profiles:
+  broad_innovation_support:
+    description: >
+      后续展开检索的默认宽口径。保留支撑科技创新发展的报告、论文和政策简报，
+      覆盖研发体系、科研基础设施、技术扩散、成果转化、产业化、关键产业、
+      数字基础设施、科技人才和国防创新；排除只命中AI治理或科技治理的纯治理候选。
+    topic_tags_any:
+      - 科技创新
+      - 半导体
+      - 先进制造
+      - 数字经济
+      - 科技人才
+      - 国防AI
+    exclude_governance_only: true
+  ai_governance_watch:
+    description: >
+      AI治理专题监测画像。用于需要集中检查AI治理、科技治理、国防AI和涉华AI政策材料的场景。
+    topic_tags_any:
+      - AI治理
+      - 科技治理
+      - 国防AI
+      - 中国与上海相关
+    exclude_governance_only: false

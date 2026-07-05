@@ -11,6 +11,7 @@ from thinktank_watch.cli import (
     balance_limited_write_queue,
     candidate_is_future,
     candidate_matches_include_terms,
+    candidate_matches_search_profile,
     candidate_within_backfill_window,
     filter_unseen_candidates,
     include_term_matches_haystack,
@@ -18,6 +19,7 @@ from thinktank_watch.cli import (
     innovation_support_quota,
     priority_allows,
     run_daily,
+    resolve_search_profile,
     sort_for_writing,
     write_limit_reached,
 )
@@ -274,6 +276,48 @@ class BackfillControlTests(unittest.TestCase):
         self.assertTrue(include_term_matches_haystack("ai", "ai governance and model evaluation"))
         self.assertFalse(include_term_matches_haystack("ai", "development aid evaluation"))
         self.assertFalse(include_term_matches_haystack("ai", "shared gains and secure links"))
+
+    def test_broad_innovation_support_profile_excludes_pure_governance(self):
+        profile = resolve_search_profile("broad_innovation_support")
+        innovation = ArticleCandidate(
+            "itif",
+            "ITIF",
+            "think_tank",
+            "Research infrastructure and technology diffusion",
+            "https://example.org/innovation",
+            priority="P1",
+            topic_tags=["科技创新"],
+        )
+        governance = ArticleCandidate(
+            "govai",
+            "GovAI",
+            "think_tank",
+            "AI governance and model evaluations",
+            "https://example.org/governance",
+            priority="P1",
+            topic_tags=["AI治理"],
+        )
+
+        self.assertTrue(candidate_matches_search_profile(innovation, profile))
+        self.assertFalse(candidate_matches_search_profile(governance, profile))
+
+    def test_ai_governance_watch_profile_keeps_governance_candidates(self):
+        profile = resolve_search_profile("ai_governance_watch")
+        candidate = ArticleCandidate(
+            "govai",
+            "GovAI",
+            "think_tank",
+            "AI governance and model evaluations",
+            "https://example.org/governance",
+            priority="P1",
+            topic_tags=["AI治理"],
+        )
+
+        self.assertTrue(candidate_matches_search_profile(candidate, profile))
+
+    def test_unknown_search_profile_raises_clear_error(self):
+        with self.assertRaisesRegex(ValueError, "Unsupported search profile"):
+            resolve_search_profile("missing-profile")
 
     def test_filter_unseen_candidates_uses_state_dedupe(self):
         seen = ArticleCandidate(

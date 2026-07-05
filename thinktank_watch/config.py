@@ -5,7 +5,7 @@ from typing import Any
 
 import yaml
 
-from .models import Institution, PriorityRules, TopicRule
+from .models import Institution, PriorityRules, SearchProfile, TopicRule
 
 
 def _read_yaml(path: str | Path) -> Any:
@@ -67,3 +67,17 @@ def load_priority_rules(path: str | Path) -> PriorityRules:
         source_priority_bonus=dict(data.get("source_priority_bonus") or {}),
         translation_by_priority=dict(data.get("translation_by_priority") or {}),
     )
+
+
+def load_search_profiles(path: str | Path) -> dict[str, SearchProfile]:
+    data = _read_yaml(path)
+    profiles: dict[str, SearchProfile] = {}
+    for name, item in (data.get("profiles") or {}).items():
+        profiles[name] = SearchProfile(
+            name=name,
+            description=item.get("description", ""),
+            include_terms=list(item.get("include_terms") or []),
+            topic_tags_any=list(item.get("topic_tags_any") or []),
+            exclude_governance_only=bool(item.get("exclude_governance_only", False)),
+        )
+    return profiles
