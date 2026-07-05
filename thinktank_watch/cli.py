@@ -22,6 +22,7 @@ from .fetch import (
     interleave_candidate_groups,
     make_client,
 )
+from .focus import innovation_support_sort_rank
 from .kb import append_kb_index, write_institution_table
 from .models import ArticleCandidate, Institution
 from .restore import rebuild_state_from_archive
@@ -32,7 +33,6 @@ from .state import ArticleState
 DEFAULT_CONFIG = Path("config")
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 DEFAULT_BACKFILL_LOOKBACK_YEARS = 3
-INNOVATION_SUPPORT_TOPICS = {"科技创新", "半导体", "先进制造", "数字经济", "科技人才"}
 
 
 def _load_config():
@@ -171,11 +171,6 @@ def sort_for_writing(candidates: list[ArticleCandidate]) -> list[ArticleCandidat
             item.title,
         ),
     )
-
-
-def innovation_support_sort_rank(candidate: ArticleCandidate) -> int:
-    """Prefer broad innovation-support items inside the same P bucket."""
-    return 0 if set(candidate.topic_tags) & INNOVATION_SUPPORT_TOPICS else 1
 
 
 def detail_fetch_failed(candidate: ArticleCandidate) -> bool:

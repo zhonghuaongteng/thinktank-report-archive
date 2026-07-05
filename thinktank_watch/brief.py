@@ -7,6 +7,7 @@ from pathlib import Path
 from textwrap import wrap
 
 from .models import ArticleCandidate
+from .focus import INNOVATION_SUPPORT_TAGS, innovation_support_sort_rank
 from .kb import INDEX_RELATIVE
 from .restore import parse_archive_markdown
 
@@ -14,7 +15,6 @@ from .restore import parse_archive_markdown
 MAX_EXPANDED_PRIORITY_ITEMS = 12
 MAX_INDEX_ITEMS = 100
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
-INNOVATION_SUPPORT_TAGS = {"科技创新", "先进制造", "数字经济", "半导体", "科技人才"}
 
 
 def published_date_sort_value(value: str) -> int:
@@ -34,6 +34,7 @@ def sort_brief_candidates(candidates: list[ArticleCandidate]) -> list[ArticleCan
             indexed,
             key=lambda pair: (
                 PRIORITY_ORDER.get(pair[1].priority, 99),
+                innovation_support_sort_rank(pair[1]),
                 -pair[1].score,
                 -published_date_sort_value(pair[1].published_date),
                 pair[0],

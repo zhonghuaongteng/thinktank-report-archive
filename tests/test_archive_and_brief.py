@@ -250,6 +250,40 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         self.assertLess(brief.index("### [P0] 高分条目"), brief.index("### [P1] 低分条目"))
 
+    def test_render_daily_brief_prefers_innovation_support_within_same_priority(self):
+        candidates = [
+            ArticleCandidate(
+                institution_slug="govai",
+                institution_name="GovAI",
+                institution_type="think_tank",
+                title="High-score AI governance paper",
+                chinese_title="高分AI治理论文",
+                url="https://example.org/ai-governance",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P1",
+                score=10,
+                topic_tags=["AI治理"],
+            ),
+            ArticleCandidate(
+                institution_slug="nistep",
+                institution_name="NISTEP",
+                institution_type="government_research_institute",
+                title="Science indicators and innovation capacity",
+                chinese_title="科技指标与创新能力",
+                url="https://example.org/innovation-capacity",
+                published_date="2026-06-30",
+                content_type="report",
+                priority="P1",
+                score=5,
+                topic_tags=["科技创新"],
+            ),
+        ]
+
+        brief = render_daily_brief_markdown("2026-07-04", candidates)
+
+        self.assertLess(brief.index("### [P1] 科技指标与创新能力"), brief.index("### [P1] 高分AI治理论文"))
+
     def test_render_daily_brief_prefers_newer_items_when_priority_and_score_match(self):
         candidates = [
             ArticleCandidate(

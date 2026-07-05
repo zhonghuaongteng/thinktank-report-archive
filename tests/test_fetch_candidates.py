@@ -211,6 +211,45 @@ class FetchCandidateTests(unittest.TestCase):
             )
         )
 
+    def test_source_url_allowed_rejects_belfer_news_fellowship_and_program_pages(self):
+        institution = Institution(
+            slug="belfer",
+            name="Harvard Belfer Center Science, Technology, and Public Policy",
+            chinese_name="哈佛贝尔弗中心科技与公共政策项目",
+            country_region="United States",
+            institution_type="university_research_center",
+            priority="P1",
+            batch=1,
+            homepage="https://www.belfercenter.org/programs/science-technology-and-public-policy",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.belfercenter.org/belfer-news/belfer-center-and-cfr-launch-new-task-force-energy-security-technological-innovation",
+                institution,
+            )
+        )
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.belfercenter.org/fellowship/energy-climate-and-technology-policy",
+                institution,
+            )
+        )
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.belfercenter.org/programs/science-technology-and-public-policy",
+                institution,
+            )
+        )
+        self.assertTrue(
+            source_url_allowed(
+                "https://www.belfercenter.org/research-analysis/another-technology-race-us-china-quantum-computing-landscape",
+                institution,
+            )
+        )
+
     def test_source_url_allowed_rejects_pagination_index_pages(self):
         institution = Institution(
             slug="cset",
