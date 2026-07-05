@@ -373,6 +373,43 @@ class GenericParserTests(unittest.TestCase):
         self.assertNotEqual(detail.detail_text, "AI Has a Memory Problem Photo: Stock image")
         self.assertEqual(detail.source_completeness, "full_text")
 
+    def test_parse_generic_detail_replaces_generic_site_description_with_body_excerpt(self):
+        html = """
+        <html><head>
+          <title>Government-Funded Research Seeds Entire Industries. What Would Be Lost Without It.</title>
+          <meta name="description" content="The place to find CSET's publications, reports, and people">
+        </head><body>
+          <main>
+            <div class="l-sidebar__main post-content">
+              <p>CSET experts examined proposed funding cuts to the National Institutes of Health.</p>
+              <p>NIH-backed research plays a foundational role in driving medical innovation, biotechnology growth, and U.S. competitiveness.</p>
+            </div>
+          </main>
+        </body></html>
+        """
+        institution = Institution(
+            slug="cset",
+            name="Center for Security and Emerging Technology",
+            chinese_name="乔治城安全与新兴技术中心",
+            country_region="United States",
+            institution_type="university_research_center",
+            priority="P0",
+            batch=1,
+            homepage="https://cset.georgetown.edu/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://cset.georgetown.edu/article/government-funded-research-seeds-entire-industries-what-would-be-lost-without-it/",
+            institution,
+        )
+
+        self.assertIn("NIH-backed research", detail.summary)
+        self.assertNotIn("publications, reports, and people", detail.summary)
+        self.assertIn("medical innovation", detail.detail_text)
+
     def test_parse_generic_detail_ignores_external_reference_pdfs(self):
         html = """
         <html><head><title>AI governance brief</title></head>

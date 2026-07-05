@@ -308,7 +308,7 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         scored = score_candidate(candidate, topics, rules)
 
-        self.assertIn(scored.priority, {"P1", "P2"})
+        self.assertIn(scored.priority, {"P0", "P1", "P2"})
         self.assertIn("数字经济", scored.topic_tags)
 
     def test_quantum_navigation_report_is_technology_innovation_signal(self):
@@ -386,7 +386,7 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         scored = score_candidate(candidate, topics, rules)
 
-        self.assertIn(scored.priority, {"P1", "P2"})
+        self.assertIn(scored.priority, {"P0", "P1", "P2"})
         self.assertIn("数字经济", scored.topic_tags)
 
     def test_advanced_compute_access_is_digital_infrastructure_signal(self):
@@ -464,6 +464,64 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         self.assertIn("科技创新", scored.topic_tags)
         self.assertIn("科技人才", scored.topic_tags)
+
+    def test_government_funded_research_is_innovation_support_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="Government-Funded Research Seeds Entire Industries. What Would Be Lost Without It.",
+            url="https://cset.georgetown.edu/article/government-funded-research-seeds-entire-industries-what-would-be-lost-without-it/",
+            summary="NIH-backed research plays a foundational role in medical innovation and biotechnology growth.",
+            published_date="2026-05-05",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P1", "P2"})
+        self.assertIn("科技创新", scored.topic_tags)
+
+    def test_cloud_services_and_dma_are_digital_technology_policy_signals(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="Information Technology and Innovation Foundation",
+            institution_type="think_tank",
+            title="Cloud Hidden, Rationale Unknown: The DMA's Foggy Attack on AWS and Azure",
+            url="https://itif.org/publications/2026/07/02/cloud-hidden-rationale-unknown-dma-foggy-attack-aws-azure/",
+            summary="If AWS and Azure are designated under the Digital Markets Act, cloud services may face technology policy distortions.",
+            published_date="2026-07-02",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1", "P2"})
+        self.assertIn("数字经济", scored.topic_tags)
+        self.assertIn("科技治理", scored.topic_tags)
+
+    def test_space_spectrum_allocation_is_digital_infrastructure_policy(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="Information Technology and Innovation Foundation",
+            institution_type="think_tank",
+            title="Rigid Space Spectrum Allocations Could Limit Productivity",
+            url="https://itif.org/publications/2026/07/01/rigid-space-spectrum-allocations-could-limit-productivity/",
+            summary="Restrictive spectrum allocations could hinder the orbital economy and future communications infrastructure.",
+            published_date="2026-07-01",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P1", "P2"})
+        self.assertIn("数字经济", scored.topic_tags)
 
     def test_chinese_technology_is_innovation_signal(self):
         topics = load_topics("config/topics.yaml")

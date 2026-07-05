@@ -199,6 +199,13 @@ PDF_MATCH_STOP_WORDS = {
     "with",
 }
 MIN_DETAIL_TEXT_LENGTH = 500
+GENERIC_SUMMARY_PATTERNS = (
+    "the place to find",
+    "publications, reports, and people",
+    "provides decision-makers with",
+    "publishes rigorous, data-driven research",
+    "through our written products",
+)
 
 
 def norm(value: str | None) -> str:
@@ -416,6 +423,20 @@ def extract_pdf_url(soup: BeautifulSoup, page_url: str, institution: Institution
     return ""
 
 
+def summary_looks_generic(value: str) -> bool:
+    text = norm(value).lower()
+    return any(pattern in text for pattern in GENERIC_SUMMARY_PATTERNS)
+
+
+def summary_from_detail_text(value: str) -> str:
+    text = norm(value)
+    if not text:
+        return ""
+    sentences = re.split(r"(?<=[.!?])\s+", text)
+    summary = " ".join(sentences[:2]).strip()
+    return summary[:700].rstrip()
+
+
 def extract_detail_text(soup: BeautifulSoup) -> str:
     for node in soup(["script", "style", "nav", "footer", "header", "form", "aside", "noscript", "svg"]):
         node.decompose()
@@ -471,7 +492,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
         ),
         institution,
     )
-    summary = first_nonempty(
+    raw_summary = first_nonempty(
         meta_values(soup, "description"),
         meta_values(soup, "og:description"),
         meta_values(soup, "twitter:description"),
@@ -495,9 +516,11 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
     for raw in meta_values(soup, "keywords"):
         keywords.extend([norm(part) for part in raw.split(",") if norm(part)])
 
-    pdf_url = extract_pdf_url(soup, url, institution, title)
-
     text = extract_detail_text(soup)
+    summary = raw_summary
+    if summary_looks_generic(summary):
+        summary = summary_from_detail_text(text) or summary
+    pdf_url = extract_pdf_url(soup, url, institution, title)
     completeness = "full_text" if pdf_url or len(text) >= MIN_DETAIL_TEXT_LENGTH else "summary_only"
 
     return ArticleCandidate(
