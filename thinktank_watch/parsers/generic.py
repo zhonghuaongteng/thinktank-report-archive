@@ -4,7 +4,7 @@ import html
 import json
 import re
 from datetime import datetime
-from urllib.parse import urldefrag, urljoin, urlparse
+from urllib.parse import unquote, urldefrag, urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
@@ -163,6 +163,41 @@ DETAIL_TEXT_SELECTORS = (
     ".content-body",
     "main",
 )
+PDF_MATCH_STOP_WORDS = {
+    "about",
+    "after",
+    "agenda",
+    "analysis",
+    "and",
+    "are",
+    "brief",
+    "comment",
+    "comments",
+    "for",
+    "from",
+    "has",
+    "how",
+    "into",
+    "next",
+    "not",
+    "of",
+    "on",
+    "over",
+    "paper",
+    "policy",
+    "report",
+    "research",
+    "should",
+    "that",
+    "the",
+    "their",
+    "this",
+    "to",
+    "what",
+    "when",
+    "where",
+    "with",
+}
 MIN_DETAIL_TEXT_LENGTH = 500
 
 
@@ -344,14 +379,39 @@ def _download_pdf_label(text: str) -> bool:
     return any(token in label for token in ("download pdf", "download report", "full report"))
 
 
-def extract_pdf_url(soup: BeautifulSoup, page_url: str, institution: Institution) -> str:
+def _match_terms(value: str) -> set[str]:
+    terms = set()
+    for term in re.findall(r"[a-z0-9]+", unquote(value).lower()):
+        if term == "ai" or (len(term) > 2 and term not in PDF_MATCH_STOP_WORDS):
+            terms.add(term)
+    return terms
+
+
+def _pdf_link_matches_title(pdf_url: str, link_text: str, page_url: str, title: str) -> bool:
+    title_terms = _match_terms(f"{title} {urlparse(page_url).path}")
+    if not title_terms:
+        return False
+    candidate_terms = _match_terms(f"{urlparse(pdf_url).path} {link_text}")
+    matched = title_terms & candidate_terms
+    required = 1 if len(title_terms) <= 2 else 2
+    return len(matched) >= required
+
+
+def extract_pdf_url(soup: BeautifulSoup, page_url: str, institution: Institution, title: str = "") -> str:
     for node in soup.find_all("a", href=True):
         href = node["href"]
         if ".pdf" not in href.lower():
             continue
         absolute = urljoin(page_url, href)
         text = norm(node.get_text(" "))
-        if _download_pdf_label(text) or _source_pdf_link(absolute, page_url, institution):
+        if _download_pdf_label(text):
+            return absolute
+        if _source_pdf_link(absolute, page_url, institution) and _pdf_link_matches_title(
+            absolute,
+            text,
+            page_url,
+            title,
+        ):
             return absolute
     return ""
 
@@ -435,7 +495,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
     for raw in meta_values(soup, "keywords"):
         keywords.extend([norm(part) for part in raw.split(",") if norm(part)])
 
-    pdf_url = extract_pdf_url(soup, url, institution)
+    pdf_url = extract_pdf_url(soup, url, institution, title)
 
     text = extract_detail_text(soup)
     completeness = "full_text" if pdf_url or len(text) >= MIN_DETAIL_TEXT_LENGTH else "summary_only"

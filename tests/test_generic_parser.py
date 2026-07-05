@@ -400,6 +400,72 @@ class GenericParserTests(unittest.TestCase):
 
         self.assertEqual(detail.pdf_url, "")
 
+    def test_parse_generic_detail_ignores_same_site_reference_pdf_when_title_mismatches(self):
+        html = """
+        <html><head><title>A Techno-Economic Agenda for the Next Administration</title></head>
+        <body>
+          <main>
+            <p>A techno-economic agenda should support innovation, competition, and industrial capacity.</p>
+            <a href="https://www2.itif.org/2017-rd-tax-credit.pdf">R&D tax credit background paper</a>
+          </main>
+        </body></html>
+        """
+        institution = Institution(
+            slug="itif",
+            name="Information Technology and Innovation Foundation",
+            chinese_name="信息技术与创新基金会",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://itif.org/",
+            allowed_domains=["www2.itif.org"],
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://itif.org/publications/2024/06/10/a-techno-economic-agenda-for-the-next-administration/",
+            institution,
+        )
+
+        self.assertEqual(detail.pdf_url, "")
+
+    def test_parse_generic_detail_accepts_same_site_pdf_when_title_matches(self):
+        html = """
+        <html><head><title>Stack battles: the US-China artificial-intelligence rivalry is moving beyond chips alone</title></head>
+        <body>
+          <main>
+            <p>Artificial intelligence competition increasingly concerns the whole technology stack.</p>
+            <a href="https://www.bruegel.org/sites/default/files/2026-06/stack-battles-the-us-china-artificial-intelligence-rivalry-is-moving-beyond-chips-alone.pdf">Brief file</a>
+          </main>
+        </body></html>
+        """
+        institution = Institution(
+            slug="bruegel",
+            name="Bruegel",
+            chinese_name="布鲁盖尔研究所",
+            country_region="European Union",
+            institution_type="think_tank",
+            priority="P1",
+            batch=2,
+            homepage="https://www.bruegel.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://www.bruegel.org/analysis/stack-battles-us-china-artificial-intelligence-rivalry-moving-beyond-chips-alone",
+            institution,
+        )
+
+        self.assertEqual(
+            detail.pdf_url,
+            "https://www.bruegel.org/sites/default/files/2026-06/stack-battles-the-us-china-artificial-intelligence-rivalry-is-moving-beyond-chips-alone.pdf",
+        )
+
     def test_parse_generic_detail_accepts_download_pdf_links(self):
         html = """
         <html><head><title>AI governance brief</title></head>
