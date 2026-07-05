@@ -73,6 +73,16 @@ BOOK_ANNOUNCEMENT_KEYWORDS = {
     "book review",
     "new volume",
 }
+MEDIA_MENTION_PRIORITY_CAP = "P2"
+MEDIA_MENTION_PATTERNS = (
+    r"\bshared (?:his|her|their) expert (?:perspective|insights?)\b",
+    r"\bprovided expert insights?\b",
+    r"\bwas quoted\b",
+    r"\bin an op-ed published by\b",
+    r"\bin a newsletter published by\b",
+    r"\bin a public radio segment\b",
+    r"\bappeared on\b",
+)
 STANDALONE_AI_KEYWORDS = {"AI", "A.I."}
 WEAK_DEFENSE_AI_KEYWORDS = {"defense technology", "national security", "国家安全"}
 STRONG_DEFENSE_AI_KEYWORDS = {
@@ -147,6 +157,11 @@ def _is_book_announcement(candidate: ArticleCandidate, text: str) -> bool:
     return any(_contains_keyword(text, keyword) for keyword in BOOK_ANNOUNCEMENT_KEYWORDS)
 
 
+def _is_media_mention(text: str) -> bool:
+    haystack = text.lower()
+    return any(re.search(pattern, haystack) for pattern in MEDIA_MENTION_PATTERNS)
+
+
 def score_candidate(
     candidate: ArticleCandidate,
     topics: list[TopicRule],
@@ -217,6 +232,8 @@ def score_candidate(
         priority = PDF_OR_REPORT_PRIORITY_CAP
     if _is_book_announcement(scored, text) and priority in {"P0", "P1"}:
         priority = BOOK_ANNOUNCEMENT_PRIORITY_CAP
+    if _is_media_mention(text) and priority in {"P0", "P1"}:
+        priority = MEDIA_MENTION_PRIORITY_CAP
 
     scored.score = total
     scored.priority = priority

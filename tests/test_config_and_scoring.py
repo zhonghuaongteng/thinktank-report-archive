@@ -774,6 +774,28 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertEqual(scored.priority, "P2")
         self.assertIn("科技创新", scored.topic_tags)
 
+    def test_media_mention_is_capped_below_p1(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="The AI arms race's sneakiest tactic",
+            url="https://cset.georgetown.edu/article/the-ai-arms-races-sneakiest-tactic/",
+            summary=(
+                "CSET's Kyle Miller shared his expert insight in a newsletter published by Politico. "
+                "The newsletter examines Chinese efforts to replicate AI capabilities and strategic technology competition."
+            ),
+            published_date="2026-04-29",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P2")
+        self.assertIn("AI治理", scored.topic_tags)
+
     def test_advanced_compute_access_is_digital_infrastructure_signal(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
