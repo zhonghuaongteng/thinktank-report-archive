@@ -353,9 +353,48 @@ class FetchCandidateTests(unittest.TestCase):
                 institution,
             )
         )
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.belfercenter.org/research-analysis/qlab-spring-2026-session-1",
+                institution,
+            )
+        )
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.belfercenter.org/research-analysis/navigating-grids-perfect-storm-webinar-andy-sun",
+                institution,
+            )
+        )
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.belfercenter.org/research-analysis/new-geopolitics-energy-foreign-policy-live",
+                institution,
+            )
+        )
         self.assertTrue(
             source_url_allowed(
                 "https://www.belfercenter.org/research-analysis/another-technology-race-us-china-quantum-computing-landscape",
+                institution,
+            )
+        )
+
+    def test_source_url_allowed_rejects_known_bruegel_ai_cold_war_false_positive(self):
+        institution = Institution(
+            slug="bruegel",
+            name="Bruegel",
+            chinese_name="布鲁盖尔研究所",
+            country_region="European Union",
+            institution_type="think_tank",
+            priority="P1",
+            batch=1,
+            homepage="https://www.bruegel.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.bruegel.org/opinion-piece/ai-cold-war-needs-nonaligned-movement",
                 institution,
             )
         )

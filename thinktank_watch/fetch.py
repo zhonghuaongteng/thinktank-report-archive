@@ -229,6 +229,10 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
         return False
     if institution.slug == "itif" and "canada-post" in last_stem:
         return False
+    if institution.slug == "bruegel" and last_stem == "ai-cold-war-needs-nonaligned-movement":
+        return False
+    if institution.slug == "belfer" and re.search(r"(?:^|-)(qlab|webinar|foreign-policy-live)(?:-|$)", last_stem):
+        return False
     if len(last_stem) == 4 and last_stem.isdigit():
         return False
     if len(ordered_path_segments) == 2:
