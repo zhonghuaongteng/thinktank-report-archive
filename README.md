@@ -71,6 +71,7 @@ The local Codex automation `国际科技智库每日抓取` runs at 10:00 Beijin
 - Remaining second-batch P0/P1 sources have guarded configs for Ada Lovelace, interface, and GovAI; GovAI is capped with `run_limit` because it is a specialist governance source.
 - ASPI's main site returns Cloudflare 403 to static requests; The Strategist is configured as an explicit auxiliary ASPI domain.
 - Belfer uses Drupal sitemap indexes; sitemap candidates are sorted by `lastmod` before truncation so recent science, technology, cyber, innovation, and space materials are not crowded out by older sitemap pages.
+- RUSI uses `https://www.rusi.org/sitemap-index.xml` for defense technology, cyber, AI, China, supply-chain, and innovation-support backfill. Media mentions, networks, event recordings, and booking-form pages are filtered before scoring.
 - CEPS RSS and detail pages are unstable or blocked for static requests. CEPS remains in the institution table, but this source should be treated as metadata/health-check first until a browser-backed parser is added.
 - Slow or high-noise sources can set `run_limit` in `config/institutions/*.yaml`; auxiliary official domains can be listed under `allowed_domains`.
 

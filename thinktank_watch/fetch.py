@@ -96,7 +96,11 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "get-involved",
     "issue",
     "issues",
+    "in-the-news",
     "news",
+    "news-and-comment",
+    "network",
+    "networks",
     "page",
     "people",
     "person",
@@ -117,6 +121,7 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "job",
     "research-area",
     "research-areas",
+    "research-event-recordings",
 }
 SOURCE_LAST_SEGMENT_DENY = {
     "commentary",
@@ -213,6 +218,8 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
     if last_stem in SOURCE_LAST_SEGMENT_DENY:
         return False
     if re.search(r"(?:^|-)annual-reports?(?:-|$)", last_stem):
+        return False
+    if last_stem.endswith("booking-form"):
         return False
     if re.search(r"(?:^|-)(receives?-award|wins?-award|award-winners?|award-recipients?)(?:-|$)", last_stem):
         return False

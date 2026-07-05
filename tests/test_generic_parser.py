@@ -295,6 +295,49 @@ class GenericParserTests(unittest.TestCase):
 
         self.assertEqual(detail.content_type, "paper")
 
+        rusi_detail = parse_generic_detail(
+            html,
+            "https://www.rusi.org/explore-our-research/publications/research-papers/china-and-rare-earth-supply-chains",
+            institution,
+        )
+
+        self.assertEqual(rusi_detail.content_type, "paper")
+
+    def test_parse_generic_detail_marks_external_publication_without_pdf_as_summary_only(self):
+        html = """
+        <html><head>
+          <title>Europe urgently needs cohesion on high-risk technology vendors</title>
+          <meta name="description" content="A short RUSI page linking to an external op-ed.">
+        </head><body>
+          <main>
+            <p>A common European approach to managing risks from Chinese technology vendors is vital.</p>
+            <p>Read the OpEd.</p>
+            <p>Topics Cyber Security and Resilience Technology, Security and Intelligence China.</p>
+          </main>
+        </body></html>
+        """
+        institution = Institution(
+            slug="rusi",
+            name="RUSI Artificial Intelligence and National Security",
+            chinese_name="皇家联合军种研究所人工智能与国家安全",
+            country_region="United Kingdom",
+            institution_type="think_tank",
+            priority="P1",
+            batch=3,
+            homepage="https://www.rusi.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://www.rusi.org/explore-our-research/publications/external-publications/europe-urgently-needs-cohesion-on-high-risk-technology-vendors",
+            institution,
+        )
+
+        self.assertEqual(detail.content_type, "external_publication")
+        self.assertEqual(detail.source_completeness, "summary_only")
+
     def test_parse_generic_detail_falls_back_to_visible_month_date(self):
         html = """
         <html><head><title>AI sandbox policy</title></head>

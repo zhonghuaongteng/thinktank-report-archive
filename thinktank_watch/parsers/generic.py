@@ -298,11 +298,13 @@ def infer_content_type(url: str, json_primary: dict) -> str:
         return "post"
 
     segments = [segment.lower() for segment in urlparse(url).path.split("/") if segment]
+    if "external-publications" in segments:
+        return "external_publication"
     if any(segment in {"report", "reports", "research_reports", "research-report", "research-reports"} for segment in segments):
         return "report"
     if any(segment.endswith("-report") or segment.endswith("-reports") for segment in segments):
         return "report"
-    if any(segment in {"paper", "papers", "working-paper", "working-papers"} for segment in segments):
+    if any(segment in {"paper", "papers", "research-paper", "research-papers", "working-paper", "working-papers"} for segment in segments):
         return "paper"
     if any(segment in {"brief", "briefs", "policy-brief", "policy-briefs", "issue-brief", "issue-briefs"} for segment in segments):
         return "brief"
@@ -555,8 +557,10 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
     if summary_looks_generic(summary):
         summary = summary_from_detail_text(text) or summary
     pdf_url = extract_pdf_url(soup, url, institution, title)
-    completeness = "full_text" if pdf_url or len(text) >= MIN_DETAIL_TEXT_LENGTH else "summary_only"
     content_type = infer_content_type(url, json_primary)
+    completeness = "full_text" if pdf_url or len(text) >= MIN_DETAIL_TEXT_LENGTH else "summary_only"
+    if content_type == "external_publication" and not pdf_url:
+        completeness = "summary_only"
     if content_type == "article" and looks_like_special_report(raw_summary, text):
         content_type = "report"
 

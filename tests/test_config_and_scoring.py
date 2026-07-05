@@ -54,6 +54,14 @@ class ConfigAndScoringTests(unittest.TestCase):
         for keyword in {"compute", "supply-chain", "talent", "innovation", "research", "technology"}:
             self.assertIn(keyword, cset.sitemap_include_keywords)
 
+    def test_rusi_sitemap_is_enabled_for_defense_technology_backfill(self):
+        institutions = load_institutions("config/institutions")
+        rusi = next(item for item in institutions if item.slug == "rusi")
+
+        self.assertIn("https://www.rusi.org/sitemap-index.xml", rusi.sitemap_urls)
+        for keyword in {"artificial-intelligence", "cyber", "defence", "technology", "china"}:
+            self.assertIn(keyword, rusi.sitemap_include_keywords)
+
     def test_rand_sitemap_prefers_publication_paths_not_center_pages(self):
         institutions = load_institutions("config/institutions")
         rand = next(item for item in institutions if item.slug == "rand")

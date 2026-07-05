@@ -210,6 +210,25 @@ class FetchCandidateTests(unittest.TestCase):
         self.assertFalse(source_url_allowed("https://www.rusi.org/publications/research-papers", institution))
         self.assertFalse(source_url_allowed("https://www.rusi.org/publications/rusi-journal", institution))
         self.assertFalse(source_url_allowed("https://www.rusi.org/publications/whitehall-papers", institution))
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.rusi.org/news-and-comment/in-the-news/could-mythos-prompt-trump-admin-u-turn-ai-regulation",
+                institution,
+            )
+        )
+        self.assertFalse(source_url_allowed("https://www.rusi.org/networks/uk-cyber-effects-network", institution))
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.rusi.org/research-event-recordings/recording-understanding-cyber-operations",
+                institution,
+            )
+        )
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.rusi.org/rusi-combat-air-conference-2023-online-member-ticket-booking-form",
+                institution,
+            )
+        )
         self.assertTrue(
             source_url_allowed(
                 "https://www.rusi.org/explore-our-research/publications/commentary/future-ai-enabled-defence",
