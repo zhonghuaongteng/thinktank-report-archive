@@ -125,6 +125,7 @@ SOURCE_LAST_SEGMENT_DENY = {
     "index",
     "multimedia",
     "newsletter-subscriptions",
+    "our-research",
     "subscriptions",
     "policy-briefs",
     "publication",
