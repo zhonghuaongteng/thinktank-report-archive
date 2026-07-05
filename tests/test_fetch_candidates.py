@@ -137,6 +137,33 @@ class FetchCandidateTests(unittest.TestCase):
         )
         self.assertFalse(source_url_allowed("https://www.hoover.org/get-involved/subscriptions", institution))
 
+    def test_source_url_allowed_rejects_itif_canada_post_public_service_reform(self):
+        institution = Institution(
+            slug="itif",
+            name="Information Technology and Innovation Foundation",
+            chinese_name="信息技术与创新基金会",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://itif.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(
+            source_url_allowed(
+                "https://itif.org/publications/2026/04/01/reforming-canada-post-for-a-lower-volume-era/",
+                institution,
+            )
+        )
+        self.assertTrue(
+            source_url_allowed(
+                "https://itif.org/publications/2025/10/14/rethinking-antitrust-the-case-for-dynamic-competition-policy/",
+                institution,
+            )
+        )
+
     def test_source_url_allowed_rejects_pdf_and_download_endpoints(self):
         institution = Institution(
             slug="stepi",
