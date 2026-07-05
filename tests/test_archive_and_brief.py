@@ -344,6 +344,43 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         self.assertLess(brief.index("### [P1] 科技指标与创新能力"), brief.index("### [P1] 高分AI治理论文"))
 
+    def test_render_daily_brief_treats_defense_ai_as_innovation_support(self):
+        candidates = [
+            ArticleCandidate(
+                institution_slug="govai",
+                institution_name="GovAI",
+                institution_type="think_tank",
+                title="AI governance",
+                chinese_title="AI治理",
+                url="https://example.org/ai-governance",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P1",
+                score=9,
+                topic_tags=["AI治理"],
+            ),
+            ArticleCandidate(
+                institution_slug="cset",
+                institution_name="CSET",
+                institution_type="university_research_center",
+                title="China's Military AI Wish List",
+                chinese_title="中国军方AI需求清单",
+                url="https://example.org/defense-ai",
+                published_date="2026-07-02",
+                content_type="report",
+                priority="P1",
+                score=5,
+                topic_tags=["国防AI", "AI治理"],
+            ),
+        ]
+
+        brief = render_daily_brief_markdown("2026-07-04", candidates)
+
+        self.assertLess(brief.index("### [P1] 中国军方AI需求清单"), brief.index("### [P1] AI治理"))
+        self.assertIn("- 创新支撑条目：1", brief)
+        self.assertIn("- 纯治理条目：1", brief)
+        self.assertIn("- [P1] CSET｜中国军方AI需求清单", brief)
+
     def test_render_daily_brief_prefers_newer_items_when_priority_and_score_match(self):
         candidates = [
             ArticleCandidate(

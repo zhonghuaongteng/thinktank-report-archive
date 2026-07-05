@@ -103,6 +103,37 @@ class BackfillControlTests(unittest.TestCase):
             ["Science indicators and innovation capacity report", "High-score AI governance paper"],
         )
 
+    def test_sort_for_writing_treats_defense_ai_as_innovation_support(self):
+        candidates = [
+            ArticleCandidate(
+                "govai",
+                "GovAI",
+                "think_tank",
+                "High-score AI governance paper",
+                "https://example.org/ai-governance",
+                priority="P1",
+                score=9,
+                topic_tags=["AI治理"],
+            ),
+            ArticleCandidate(
+                "cset",
+                "CSET",
+                "university_research_center",
+                "Military AI procurement and defense innovation",
+                "https://example.org/defense-ai",
+                priority="P1",
+                score=5,
+                topic_tags=["国防AI", "AI治理"],
+            ),
+        ]
+
+        ordered = sort_for_writing(candidates)
+
+        self.assertEqual(
+            [item.title for item in ordered],
+            ["Military AI procurement and defense innovation", "High-score AI governance paper"],
+        )
+
     def test_sort_for_writing_prefers_newer_items_when_priority_and_score_match(self):
         candidates = [
             ArticleCandidate(
@@ -180,7 +211,7 @@ class BackfillControlTests(unittest.TestCase):
             ],
         )
         self.assertEqual(
-            sum(1 for item in ordered[:4] if set(item.topic_tags) & {"科技创新", "先进制造", "数字经济", "半导体", "科技人才"}),
+            sum(1 for item in ordered[:4] if set(item.topic_tags) & {"科技创新", "先进制造", "数字经济", "半导体", "科技人才", "国防AI"}),
             2,
         )
 

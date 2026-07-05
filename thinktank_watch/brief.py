@@ -52,7 +52,9 @@ def sort_brief_candidates(candidates: list[ArticleCandidate]) -> list[ArticleCan
 
 def select_innovation_support_items(candidates: list[ArticleCandidate], limit: int = 12) -> list[ArticleCandidate]:
     support_candidates = [
-        item for item in candidates if INNOVATION_SUPPORT_TAGS & set(item.topic_tags) and "AI治理" not in item.topic_tags
+        item
+        for item in candidates
+        if INNOVATION_SUPPORT_TAGS & set(item.topic_tags) and not is_governance_only_candidate(item)
     ]
     if not support_candidates:
         support_candidates = [item for item in candidates if INNOVATION_SUPPORT_TAGS & set(item.topic_tags)]
@@ -79,7 +81,7 @@ def select_innovation_support_items(candidates: list[ArticleCandidate], limit: i
                 selected_urls.add(item.url)
                 return
 
-    topic_order = ["科技创新", "先进制造", "数字经济", "半导体", "科技人才"]
+    topic_order = ["科技创新", "先进制造", "半导体", "数字经济", "科技人才", "国防AI"]
     for tag in topic_order:
         add_first_with_tag(support_candidates, tag)
     p2_support = [item for item in support_candidates if item.priority == "P2"]

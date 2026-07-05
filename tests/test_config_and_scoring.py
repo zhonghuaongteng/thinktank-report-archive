@@ -1138,6 +1138,25 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertEqual(scored.priority, "P3")
         self.assertNotIn("国防AI", scored.topic_tags)
 
+    def test_defense_ai_article_enters_p1_as_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="example-source",
+            institution_name="Example Source",
+            institution_type="think_tank",
+            title="Autonomous Weapons Integration for Defense Planning",
+            url="https://example.org/autonomous-weapons-defense-planning",
+            summary="An article on autonomous weapons, cyber operations, procurement pathways, and test infrastructure.",
+            published_date="2026-06-18",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("国防AI", scored.topic_tags)
+
     def test_scoring_keeps_low_relevance_items_in_index_only(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")

@@ -20,7 +20,7 @@ CONTEXT_ONLY_TOPICS = {"中国与上海相关"}
 CONTEXT_ONLY_PRIORITY_CAP = "P2"
 SUBSTANTIVE_REPORT_PRIORITY_FLOOR = "P1"
 CORE_INNOVATION_SUPPORT_PRIORITY_FLOOR = "P1"
-CORE_INNOVATION_SUPPORT_TAGS = {"科技创新", "半导体", "先进制造", "科技人才"}
+CORE_INNOVATION_SUPPORT_TAGS = {"科技创新", "半导体", "先进制造", "科技人才", "国防AI"}
 STRONG_DIGITAL_INNOVATION_SUPPORT_KEYWORDS = {
     "digital infrastructure",
     "digital public infrastructure",
