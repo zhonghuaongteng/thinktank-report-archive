@@ -74,13 +74,24 @@ NON_CONTENT_LAST_SEGMENTS = {
     "analyses",
     "copyright",
     "datasets",
+    "download",
+    "download.do",
     "incidents",
+    "insights-papers",
     "overview",
     "policy-briefs",
     "privacy",
     "privacy-policy",
+    "research-groups",
+    "research-papers",
+    "rusi-books",
+    "rusi-defence-systems",
+    "rusi-journal",
+    "rusi-newsbrief",
     "terms",
     "terms-of-use",
+    "toolkits",
+    "whitehall-papers",
     "working-papers",
 }
 CONTENT_TYPE_SEGMENTS = {
@@ -334,6 +345,8 @@ def extract_detail_text(soup: BeautifulSoup) -> str:
 
 def looks_like_detail_url(url: str, text: str = "") -> bool:
     parsed = urlparse(url)
+    if parsed.path.lower().endswith(".pdf"):
+        return False
     path_segments = [segment for segment in parsed.path.split("/") if segment]
     if len(path_segments) < 2 or path_segments[-1].lower() in BROAD_ENDPOINTS:
         return False

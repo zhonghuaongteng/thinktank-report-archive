@@ -28,6 +28,17 @@ class GenericParserTests(unittest.TestCase):
           <a href="/publications/podcasts/">Podcasts</a>
           <a href="/publications/knowledge-bases/to-do-list/">Tech Policy To-Do List</a>
           <a href="/publications/knowledge-bases/attack-tracker/">Non-Tariff Attack Tracker</a>
+          <a href="/explore-our-research/research-groups">Research Groups</a>
+          <a href="/publications/insights-papers">Insights Papers</a>
+          <a href="/publications/toolkits">Toolkits</a>
+          <a href="/publications/research-papers">Research Papers</a>
+          <a href="/publications/rusi-newsbrief">RUSI Newsbrief</a>
+          <a href="/publications/rusi-defence-systems">RUSI Defence Systems</a>
+          <a href="/publications/rusi-journal">RUSI Journal</a>
+          <a href="/publications/whitehall-papers">Whitehall Papers</a>
+          <a href="/publications/rusi-books">RUSI Books</a>
+          <a href="/common/report/Download.do?reIdx=140&streFileNm=example.pdf">Download.do?reIdx=140</a>
+          <a href="/common/report/example.pdf">Report PDF</a>
           <a href="/research/partners">Research Partners</a>
           <a href="/blogs/new-atlanticist/homeland-defense-technology-sharing-agreement/">Old blog update</a>
           <a href="/cyber-statecraft-initiative/capacity-building-initiative">Cyber capacity initiative</a>

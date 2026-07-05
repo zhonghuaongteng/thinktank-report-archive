@@ -175,6 +175,8 @@ def interleave_candidate_groups(groups: list[list[ArticleCandidate]]) -> list[Ar
 
 def source_url_allowed(url: str, institution: Institution) -> bool:
     parsed_source = urlparse(url)
+    if parsed_source.path.lower().endswith(".pdf"):
+        return False
     source_host = _normalized_host(parsed_source.netloc)
     allowed_hosts = [_normalized_host(institution.homepage)]
     allowed_hosts.extend(_normalized_host(domain) for domain in institution.allowed_domains)

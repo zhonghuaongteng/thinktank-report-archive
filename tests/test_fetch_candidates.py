@@ -130,6 +130,59 @@ class FetchCandidateTests(unittest.TestCase):
         )
         self.assertFalse(source_url_allowed("https://www.hoover.org/get-involved/subscriptions", institution))
 
+    def test_source_url_allowed_rejects_pdf_and_download_endpoints(self):
+        institution = Institution(
+            slug="stepi",
+            name="Science and Technology Policy Institute",
+            chinese_name="韩国科学技术政策研究院",
+            country_region="South Korea",
+            institution_type="government_research_institute",
+            priority="P1",
+            batch=3,
+            homepage="https://www.stepi.re.kr/site/stepien/main.do",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.stepi.re.kr/common/report/Download.do?reIdx=140&cateCont=A0509&streFileNm=example.pdf",
+                institution,
+            )
+        )
+        self.assertFalse(source_url_allowed("https://www.stepi.re.kr/common/report/example.pdf", institution))
+        self.assertTrue(
+            source_url_allowed(
+                "https://www.stepi.re.kr/site/stepien/ex/bbs/View.do?pageIndex=1&bcIdx=42251&cbIdx=1307",
+                institution,
+            )
+        )
+
+    def test_source_url_allowed_rejects_rusi_publication_collection_pages(self):
+        institution = Institution(
+            slug="rusi",
+            name="Royal United Services Institute",
+            chinese_name="英国皇家联合军种研究所",
+            country_region="United Kingdom",
+            institution_type="think_tank",
+            priority="P1",
+            batch=3,
+            homepage="https://www.rusi.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(source_url_allowed("https://www.rusi.org/explore-our-research/research-groups", institution))
+        self.assertFalse(source_url_allowed("https://www.rusi.org/publications/research-papers", institution))
+        self.assertFalse(source_url_allowed("https://www.rusi.org/publications/rusi-journal", institution))
+        self.assertFalse(source_url_allowed("https://www.rusi.org/publications/whitehall-papers", institution))
+        self.assertTrue(
+            source_url_allowed(
+                "https://www.rusi.org/explore-our-research/publications/commentary/future-ai-enabled-defence",
+                institution,
+            )
+        )
+
     def test_source_url_allowed_rejects_pagination_index_pages(self):
         institution = Institution(
             slug="cset",
