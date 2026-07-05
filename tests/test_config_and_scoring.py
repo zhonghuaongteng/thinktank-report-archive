@@ -311,6 +311,44 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P1", "P2"})
         self.assertIn("数字经济", scored.topic_tags)
 
+    def test_quantum_navigation_report_is_technology_innovation_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cnas-tech",
+            institution_name="CNAS Technology and National Security",
+            institution_type="think_tank",
+            title="Atomic Advantage",
+            url="https://www.cnas.org/publications/reports/atomic-advantage",
+            summary="Report on quantum navigation and strategic technology competition.",
+            published_date="2025-05-28",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+
+    def test_data_centers_are_digital_infrastructure_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="brookings-cti",
+            institution_name="Brookings Center for Technology Innovation",
+            institution_type="think_tank",
+            title="Orbital data centers' feasibility gap is a governance risk",
+            url="https://www.brookings.edu/articles/orbital-data-centers-feasibility-gap-is-a-governance-risk/",
+            summary="Analysis of data centers, compute infrastructure, and governance risk.",
+            published_date="2026-06-25",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P1", "P2"})
+        self.assertIn("数字经济", scored.topic_tags)
+
     def test_national_security_alone_does_not_create_defense_ai_tag(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")

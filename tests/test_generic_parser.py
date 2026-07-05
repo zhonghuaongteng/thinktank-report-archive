@@ -226,6 +226,33 @@ class GenericParserTests(unittest.TestCase):
 
         self.assertEqual(detail.published_date, "2026-07-02")
         self.assertEqual(detail.title, "Semiconductor policy")
+        self.assertEqual(detail.content_type, "report")
+
+    def test_parse_generic_detail_infers_content_type_from_path(self):
+        html = """
+        <html><head><title>AI competition</title></head>
+        <body><main><time datetime="2026-02-18">February 18, 2026</time><p>AI competition policy text.</p></main></body></html>
+        """
+        institution = Institution(
+            slug="bruegel",
+            name="Bruegel",
+            chinese_name="布鲁盖尔研究所",
+            country_region="Europe",
+            institution_type="think_tank",
+            priority="P0",
+            batch=2,
+            homepage="https://www.bruegel.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://www.bruegel.org/working-paper/artificial-intelligence-competition-europe-role-dma-article-67",
+            institution,
+        )
+
+        self.assertEqual(detail.content_type, "paper")
 
     def test_parse_generic_detail_falls_back_to_visible_month_date(self):
         html = """

@@ -157,6 +157,29 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertNotIn("### [P1] AI治理报告13", brief)
         self.assertIn("- [P1] GovAI｜AI治理报告13｜https://example.org/13", brief)
 
+    def test_render_daily_brief_keeps_large_backfill_index_visible(self):
+        candidates = [
+            ArticleCandidate(
+                institution_slug="source",
+                institution_name="Source",
+                institution_type="think_tank",
+                title=f"Index item {index}",
+                chinese_title=f"索引条目{index}",
+                url=f"https://example.org/index/{index}",
+                published_date="2026-07-01",
+                content_type="article",
+                priority="P2",
+                topic_tags=["科技治理"],
+            )
+            for index in range(1, 63)
+        ]
+
+        brief = render_daily_brief_markdown("2026-07-04", candidates)
+
+        self.assertIn("- [P2] Source｜索引条目60｜https://example.org/index/60", brief)
+        self.assertNotIn("- [P2] Source｜索引条目61｜https://example.org/index/61", brief)
+        self.assertIn("其余 2 条已写入私有归档和知识库索引", brief)
+
     def test_render_daily_brief_orders_priority_items_by_priority_and_score(self):
         candidates = [
             ArticleCandidate(

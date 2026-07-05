@@ -12,6 +12,7 @@ from .restore import parse_archive_markdown
 
 
 MAX_EXPANDED_PRIORITY_ITEMS = 12
+MAX_INDEX_ITEMS = 60
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 
 
@@ -79,7 +80,7 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
             )
 
     lines.extend(["## 科技创新与AI治理", ""])
-    tech_items = [item for item in candidates if {"AI治理", "科技创新", "科技治理"} & set(item.topic_tags)]
+    tech_items = [item for item in ordered_candidates if {"AI治理", "科技创新", "科技治理"} & set(item.topic_tags)]
     if tech_items:
         for item in tech_items[:8]:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}")
@@ -87,7 +88,7 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
         lines.append("本日未检出科技创新与AI治理强相关条目。")
 
     lines.extend(["", "## 涉华/涉沪判断", ""])
-    china_items = [item for item in candidates if "中国与上海相关" in item.topic_tags]
+    china_items = [item for item in ordered_candidates if "中国与上海相关" in item.topic_tags]
     if china_items:
         for item in china_items[:8]:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
@@ -95,8 +96,11 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
         lines.append("本日未检出中国/上海强相关条目。")
 
     lines.extend(["", "## 新增索引", ""])
-    for item in index_items[:20]:
+    for item in index_items[:MAX_INDEX_ITEMS]:
         lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
+    omitted = len(index_items) - MAX_INDEX_ITEMS
+    if omitted > 0:
+        lines.append(f"- 其余 {omitted} 条已写入私有归档和知识库索引。")
 
     lines.extend(["", "## 后续推进", "", "- 对P0/P1条目补充中文研判、页码级证据和可复用表述。"])
     return "\n".join(lines) + "\n"

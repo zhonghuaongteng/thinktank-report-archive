@@ -239,6 +239,35 @@ def json_ld_primary(items: list[dict]) -> dict:
     return items[0] if items else {}
 
 
+def infer_content_type(url: str, json_primary: dict) -> str:
+    kind = json_primary.get("@type")
+    if isinstance(kind, list):
+        kinds = {str(item).lower() for item in kind}
+    elif kind:
+        kinds = {str(kind).lower()}
+    else:
+        kinds = set()
+    if "report" in kinds:
+        return "report"
+    if "scholarlyarticle" in kinds:
+        return "paper"
+    if "blogposting" in kinds:
+        return "post"
+
+    segments = [segment.lower() for segment in urlparse(url).path.split("/") if segment]
+    if any(segment in {"report", "reports", "research_reports", "research-report", "research-reports"} for segment in segments):
+        return "report"
+    if any(segment.endswith("-report") or segment.endswith("-reports") for segment in segments):
+        return "report"
+    if any(segment in {"paper", "papers", "working-paper", "working-papers"} for segment in segments):
+        return "paper"
+    if any(segment in {"brief", "briefs", "policy-brief", "policy-briefs", "issue-brief", "issue-briefs"} for segment in segments):
+        return "brief"
+    if any(segment in {"post", "posts"} for segment in segments):
+        return "post"
+    return "article"
+
+
 def authors_from_json_ld(item: dict) -> list[str]:
     author = item.get("author")
     if isinstance(author, list):
@@ -419,7 +448,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
         url=url,
         published_date=canonical_date(published),
         summary=summary,
-        content_type="article",
+        content_type=infer_content_type(url, json_primary),
         authors=authors,
         keywords=keywords,
         pdf_url=pdf_url,
