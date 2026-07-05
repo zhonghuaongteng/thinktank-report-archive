@@ -73,10 +73,25 @@ BOOK_ANNOUNCEMENT_KEYWORDS = {
     "book review",
     "new volume",
 }
+LOW_VALUE_ANNOUNCEMENT_PRIORITY_CAP = "P2"
+LOW_VALUE_ANNOUNCEMENT_PATTERNS = (
+    r"\bsays\s+(?:itif|cset|rand|csis)\b",
+    r"\bawarded\s+\$?\d",
+    r"\bawarded\s+.*\bfunding\b",
+    r"\btestif(?:ies|ied)\s+before\b",
+)
 MEDIA_MENTION_PRIORITY_CAP = "P2"
 MEDIA_MENTION_PATTERNS = (
+    r"\bin the news\b",
+    r"\boriginal publisher\b",
+    r"\bread (?:article|op-ed)\b",
     r"\bshared (?:his|her|their) expert (?:perspective|insights?)\b",
+    r"\bshared (?:his|her|their) (?:insight|analysis)\b",
+    r"\bshared (?:his|her|their) expert analysis\b",
     r"\bprovided expert insights?\b",
+    r"\bwas featured on\b",
+    r"\bfeatured on\b",
+    r"\bto learn more, visit\b",
     r"\bwas quoted\b",
     r"\bin an op-ed published by\b",
     r"\bin a newsletter published by\b",
@@ -157,7 +172,16 @@ def _is_book_announcement(candidate: ArticleCandidate, text: str) -> bool:
     return any(_contains_keyword(text, keyword) for keyword in BOOK_ANNOUNCEMENT_KEYWORDS)
 
 
-def _is_media_mention(text: str) -> bool:
+def _is_low_value_announcement(candidate: ArticleCandidate, text: str) -> bool:
+    if candidate.content_type in REPORT_TYPES:
+        return False
+    haystack = text.lower()
+    return any(re.search(pattern, haystack) for pattern in LOW_VALUE_ANNOUNCEMENT_PATTERNS)
+
+
+def _is_media_mention(candidate: ArticleCandidate, text: str) -> bool:
+    if candidate.content_type in REPORT_TYPES:
+        return False
     haystack = text.lower()
     return any(re.search(pattern, haystack) for pattern in MEDIA_MENTION_PATTERNS)
 
@@ -232,7 +256,9 @@ def score_candidate(
         priority = PDF_OR_REPORT_PRIORITY_CAP
     if _is_book_announcement(scored, text) and priority in {"P0", "P1"}:
         priority = BOOK_ANNOUNCEMENT_PRIORITY_CAP
-    if _is_media_mention(text) and priority in {"P0", "P1"}:
+    if _is_low_value_announcement(scored, text) and priority in {"P0", "P1"}:
+        priority = LOW_VALUE_ANNOUNCEMENT_PRIORITY_CAP
+    if _is_media_mention(scored, text) and priority in {"P0", "P1"}:
         priority = MEDIA_MENTION_PRIORITY_CAP
 
     scored.score = total

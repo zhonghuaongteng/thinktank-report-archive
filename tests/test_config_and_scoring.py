@@ -796,6 +796,115 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertEqual(scored.priority, "P2")
         self.assertIn("AI治理", scored.topic_tags)
 
+    def test_cset_in_the_news_media_page_is_capped_below_p1(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="Anthropic boss rejects Pentagon demand to drop AI safeguards",
+            url="https://cset.georgetown.edu/article/anthropic-boss-rejects-pentagon-demand/",
+            summary=(
+                "In The News. CSET's Helen Toner shared her insight in an article "
+                "published by The Financial Times. Original Publisher Financial Times. "
+                "Read Article. The article discusses military AI safeguards."
+            ),
+            published_date="2026-02-27",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P2")
+        self.assertIn("AI治理", scored.topic_tags)
+
+    def test_cset_external_interview_page_is_capped_below_p1(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="Anthropic boss rejects Pentagon demand to drop AI safeguards",
+            url="https://cset.georgetown.edu/article/anthropic-boss-rejects-pentagon-demand/",
+            summary=(
+                "CSET's Owen Daniels was featured on BBC News, where he discussed "
+                "military AI safeguards and autonomous weapons systems. "
+                "To learn more, visit BBC News."
+            ),
+            published_date="2026-02-27",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P2")
+        self.assertIn("AI治理", scored.topic_tags)
+
+    def test_says_itif_press_release_is_capped_below_p1(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="Information Technology and Innovation Foundation",
+            institution_type="think_tank",
+            title=(
+                "EU's Designation of AWS and Azure as Core Platform Services "
+                "Escalates Weaponization of Digital Markets Act, Says ITIF"
+            ),
+            url="https://itif.org/publications/2026/06/25/eu-designation-aws-azure-says-itif/",
+            summary="Cloud services and digital markets regulation may affect digital innovation.",
+            published_date="2026-06-25",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P2")
+        self.assertIn("数字经济", scored.topic_tags)
+
+    def test_institutional_award_update_is_capped_below_p1(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="Georgetown's Center for Security and Emerging Technology Awarded $2M Google.org Funding",
+            url="https://cset.georgetown.edu/article/google-funding-award/",
+            summary="The funding will support research on technology innovation and AI policy.",
+            published_date="2026-02-26",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P2")
+        self.assertIn("科技创新", scored.topic_tags)
+
+    def test_institutional_testimony_update_is_capped_below_p1(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title=(
+                "CSET Senior Fellow Testifies Before U.S.-China Economic "
+                "and Security Review Commission"
+            ),
+            url="https://cset.georgetown.edu/article/senior-fellow-testifies-uscc/",
+            summary="The testimony discussed China, science policy, and emerging technology competition.",
+            published_date="2026-04-30",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P2")
+        self.assertIn("科技创新", scored.topic_tags)
+
     def test_advanced_compute_access_is_digital_infrastructure_signal(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
