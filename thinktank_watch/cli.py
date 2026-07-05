@@ -66,6 +66,26 @@ def write_limit_reached(written_count: int, write_limit: int | None) -> bool:
     return bool(write_limit) and written_count >= write_limit
 
 
+def candidate_matches_include_terms(candidate: ArticleCandidate, include_terms: list[str] | None) -> bool:
+    terms = [term.lower().strip() for term in (include_terms or []) if term.strip()]
+    if not terms:
+        return True
+    haystack = " ".join(
+        [
+            candidate.title,
+            candidate.chinese_title,
+            candidate.url,
+            candidate.summary,
+            candidate.chinese_summary,
+            candidate.pdf_url,
+            " ".join(candidate.keywords),
+            " ".join(candidate.subjects),
+            " ".join(candidate.topic_tags),
+        ]
+    ).lower()
+    return any(term in haystack for term in terms)
+
+
 def institution_fetch_limit(institution: Institution, limit: int) -> int:
     if institution.run_limit > 0:
         return min(limit, institution.run_limit)
@@ -168,7 +188,11 @@ def evaluate(args: argparse.Namespace) -> int:
     institutions, topics, priorities = _load_config()
     selected = _select_institutions(institutions, args.batch, args.institution)
     candidates = collect_candidates(selected, args.limit, include_details=not args.no_details, backfill=args.backfill)
-    scored = [score_candidate(item, topics, priorities) for item in candidates]
+    scored = [
+        item
+        for item in [score_candidate(item, topics, priorities) for item in candidates]
+        if candidate_matches_include_terms(item, getattr(args, "include_terms", None))
+    ]
     for item in sorted(scored, key=lambda row: (row.priority, -row.score, row.institution_slug)):
         print(
             f"[{item.priority}/{item.score}] {item.institution_slug} | "
@@ -188,7 +212,11 @@ def audit(args: argparse.Namespace) -> int:
     institutions, topics, priorities = _load_config()
     selected = _select_institutions(institutions, args.batch, args.institution)
     candidates = collect_candidates(selected, args.limit, include_details=not args.no_details)
-    scored = [score_candidate(item, topics, priorities) for item in candidates]
+    scored = [
+        item
+        for item in [score_candidate(item, topics, priorities) for item in candidates]
+        if candidate_matches_include_terms(item, getattr(args, "include_terms", None))
+    ]
     output = Path(args.output) if args.output else Path("reports") / f"{run_date}_source_health.csv"
     path = write_audit_report(output, scored)
     print(f"audit_date={run_date} institutions={len(selected)} candidates={len(scored)} report={path}")
@@ -203,7 +231,13 @@ def run_daily(args: argparse.Namespace) -> int:
     written: list[ArticleCandidate] = []
     try:
         candidates = collect_candidates(selected, args.limit, include_details=True)
-        scored = sort_for_writing([score_candidate(item, topics, priorities) for item in candidates])
+        scored = sort_for_writing(
+            [
+                item
+                for item in [score_candidate(item, topics, priorities) for item in candidates]
+                if candidate_matches_include_terms(item, getattr(args, "include_terms", None))
+            ]
+        )
         for item in scored:
             if not priority_allows(item.priority, args.min_priority):
                 continue
@@ -239,7 +273,13 @@ def backfill(args: argparse.Namespace) -> int:
     written: list[ArticleCandidate] = []
     try:
         candidates = collect_candidates(selected, args.limit, include_details=True, backfill=True)
-        scored = sort_for_writing([score_candidate(item, topics, priorities) for item in candidates])
+        scored = sort_for_writing(
+            [
+                item
+                for item in [score_candidate(item, topics, priorities) for item in candidates]
+                if candidate_matches_include_terms(item, getattr(args, "include_terms", None))
+            ]
+        )
         for item in scored:
             if not priority_allows(item.priority, args.min_priority):
                 continue
@@ -283,6 +323,7 @@ def build_parser() -> argparse.ArgumentParser:
     eval_parser.add_argument("--limit", type=int, default=5)
     eval_parser.add_argument("--no-details", action="store_true")
     eval_parser.add_argument("--backfill", action="store_true", help="Evaluate feeds, lists, and sitemap backfill sources without writing.")
+    eval_parser.add_argument("--include-term", dest="include_terms", action="append", default=[])
     eval_parser.add_argument("--dry-run", action="store_true", help="Alias for evaluate compatibility.")
     eval_parser.set_defaults(func=evaluate)
 
@@ -292,6 +333,7 @@ def build_parser() -> argparse.ArgumentParser:
     audit_parser.add_argument("--limit", type=int, default=5)
     audit_parser.add_argument("--date")
     audit_parser.add_argument("--no-details", action="store_true")
+    audit_parser.add_argument("--include-term", dest="include_terms", action="append", default=[])
     audit_parser.add_argument("--output")
     audit_parser.set_defaults(func=audit)
 
@@ -304,6 +346,7 @@ def build_parser() -> argparse.ArgumentParser:
     daily.add_argument("--skip-kb", action="store_true")
     daily.add_argument("--min-priority", choices=sorted(PRIORITY_ORDER), default="P3")
     daily.add_argument("--write-limit", type=int, default=0, help="Maximum number of new allowed records to write. 0 means unlimited.")
+    daily.add_argument("--include-term", dest="include_terms", action="append", default=[])
     daily.add_argument("--archive-root", default="archive")
     daily.add_argument("--brief-root", default="briefs")
     daily.add_argument("--state", default="state/articles.sqlite")
@@ -319,6 +362,7 @@ def build_parser() -> argparse.ArgumentParser:
     backfill_parser.add_argument("--skip-kb", action="store_true")
     backfill_parser.add_argument("--min-priority", choices=sorted(PRIORITY_ORDER), default="P3")
     backfill_parser.add_argument("--write-limit", type=int, default=0, help="Maximum number of new allowed records to write. 0 means unlimited.")
+    backfill_parser.add_argument("--include-term", dest="include_terms", action="append", default=[])
     backfill_parser.add_argument("--archive-root", default="archive")
     backfill_parser.add_argument("--brief-root", default="briefs")
     backfill_parser.add_argument("--state", default="state/articles.sqlite")

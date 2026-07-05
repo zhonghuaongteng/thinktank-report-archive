@@ -7,6 +7,7 @@ import unittest
 
 from thinktank_watch.cli import (
     candidate_is_future,
+    candidate_matches_include_terms,
     institution_fetch_limit,
     priority_allows,
     run_daily,
@@ -102,6 +103,22 @@ class BackfillControlTests(unittest.TestCase):
 
         candidate.published_date = ""
         self.assertFalse(candidate_is_future(candidate, "2026-07-05"))
+
+    def test_candidate_matches_include_terms_uses_title_url_and_topics(self):
+        candidate = ArticleCandidate(
+            "carnegie-tech",
+            "Carnegie",
+            "think_tank",
+            "Cyberspace and Geopolitics",
+            "https://example.org/research/cyberspace-geopolitics",
+            summary="Global cybersecurity norm processes.",
+            topic_tags=["数字经济", "科技治理"],
+        )
+
+        self.assertTrue(candidate_matches_include_terms(candidate, ["cyber"]))
+        self.assertTrue(candidate_matches_include_terms(candidate, ["科技治理"]))
+        self.assertFalse(candidate_matches_include_terms(candidate, ["semiconductor"]))
+        self.assertTrue(candidate_matches_include_terms(candidate, []))
 
     def test_run_daily_skips_future_dated_candidates_without_recording_state(self):
         institution = Institution(
