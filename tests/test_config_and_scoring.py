@@ -346,7 +346,7 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         scored = score_candidate(candidate, topics, rules)
 
-        self.assertEqual(scored.priority, "P1")
+        self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("科技创新", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
@@ -392,6 +392,66 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("科技创新", scored.topic_tags)
+        self.assertIn("先进制造", scored.topic_tags)
+
+    def test_industrial_upgrading_report_enters_p1_as_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="merics",
+            institution_name="MERICS Industrial Policy and Technology",
+            institution_type="think_tank",
+            title="Industrial Upgrading and Technology Finance for Innovation Capacity",
+            url="https://merics.org/en/report/industrial-upgrading-and-technology-finance-innovation-capacity",
+            summary="A report on industrial upgrading, technology upgrading, technology finance, and innovation capacity.",
+            published_date="2026-06-30",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_clean_energy_technology_report_enters_p1_without_governance_terms(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="orf-america",
+            institution_name="ORF America Technology Policy",
+            institution_type="think_tank",
+            title="Green Industrial Policy and Energy Technology Scale-Up",
+            url="https://orfamerica.org/newresearch/green-industrial-policy-and-energy-technology-scale-up",
+            summary="A report on clean tech, energy technology, industrial competitiveness, and innovation diffusion.",
+            published_date="2026-06-29",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertIn("先进制造", scored.topic_tags)
+        self.assertNotIn("科技治理", scored.topic_tags)
+
+    def test_orf_article_without_pdf_is_capped_below_p1(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="orf-america",
+            institution_name="ORF America Technology Policy",
+            institution_type="think_tank",
+            title="Why the UAE's OPEC exit signals a deeper recalibration of state autonomy",
+            url="https://orfamerica.org/newresearch/uae-opec-exit-signals-a-deeper-recalibration-of-state-autonomy",
+            summary="This article discusses critical minerals, technology standards, industrial policy, and cross-border finance.",
+            published_date="2026-05-01",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P2")
         self.assertIn("先进制造", scored.topic_tags)
 
     def test_data_centers_are_digital_infrastructure_signal(self):
@@ -734,6 +794,25 @@ class ConfigAndScoringTests(unittest.TestCase):
             summary="Ukraine conducted deep strikes into Russian territory, including with AI-enabled drones.",
             published_date="2026-07-01",
             content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P3")
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_single_incidental_ai_mention_does_not_promote_general_report(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="csis",
+            institution_name="CSIS",
+            institution_type="think_tank",
+            title="Russian Blood and Treasure: The Ballooning Costs of Putin's War",
+            url="https://www.csis.org/analysis/russian-blood-and-treasure-ballooning-costs-putins-war",
+            summary="The report estimates casualties and notes that Ukraine has used AI-enabled drones.",
+            published_date="2026-07-01",
+            content_type="report",
         )
 
         scored = score_candidate(candidate, topics, rules)

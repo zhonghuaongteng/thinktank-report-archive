@@ -205,6 +205,7 @@ GENERIC_SUMMARY_PATTERNS = (
     "provides decision-makers with",
     "publishes rigorous, data-driven research",
     "through our written products",
+    "special report no.",
 )
 
 
@@ -308,6 +309,10 @@ def infer_content_type(url: str, json_primary: dict) -> str:
     if any(segment in {"post", "posts"} for segment in segments):
         return "post"
     return "article"
+
+
+def looks_like_special_report(raw_summary: str, text: str) -> bool:
+    return re.search(r"\bspecial report no\.?\s*\d+", f"{raw_summary} {text[:300]}", re.IGNORECASE) is not None
 
 
 def authors_from_json_ld(item: dict) -> list[str]:
@@ -444,6 +449,17 @@ def summary_from_detail_text(value: str) -> str:
     text = norm(value)
     if not text:
         return ""
+    text = re.sub(
+        r"(?is)^special report no\.?\s*\d+\s+by\s+.*?(?=\b(?:i\.|1\.|introduction|context|executive summary|the|as|this report|in this report)\b)",
+        "",
+        text,
+    ).strip()
+    text = re.sub(r"(?is)^special report no\.?\s*\d+\s*", "", text).strip()
+    text = re.sub(
+        r"(?is)^(?:[ivx]+\.\s+)?(?:context and strategic landscape|introduction|executive summary)\s+",
+        "",
+        text,
+    ).strip()
     sentences = re.split(r"(?<=[.!?])\s+", text)
     summary = " ".join(sentences[:2]).strip()
     return summary[:700].rstrip()
@@ -540,6 +556,9 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
         summary = summary_from_detail_text(text) or summary
     pdf_url = extract_pdf_url(soup, url, institution, title)
     completeness = "full_text" if pdf_url or len(text) >= MIN_DETAIL_TEXT_LENGTH else "summary_only"
+    content_type = infer_content_type(url, json_primary)
+    if content_type == "article" and looks_like_special_report(raw_summary, text):
+        content_type = "report"
 
     return ArticleCandidate(
         institution_slug=institution.slug,
@@ -549,7 +568,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
         url=url,
         published_date=canonical_date(published),
         summary=summary,
-        content_type=infer_content_type(url, json_primary),
+        content_type=content_type,
         authors=authors,
         keywords=keywords,
         pdf_url=pdf_url,

@@ -89,6 +89,7 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "get-involved",
     "issue",
     "issues",
+    "news",
     "page",
     "people",
     "person",
@@ -318,7 +319,7 @@ def fetch_sitemap_candidates(
                 if not source_url_allowed(loc, institution):
                     continue
                 if institution.sitemap_include_keywords:
-                    if not any(keyword.lower() in loc.lower() for keyword in institution.sitemap_include_keywords):
+                    if not any(sitemap_include_keyword_matches(loc, keyword) for keyword in institution.sitemap_include_keywords):
                         continue
                 elif not looks_like_detail_url(loc):
                     continue
@@ -341,6 +342,16 @@ def fetch_sitemap_candidates(
                     )
                 )
     return sorted(candidates, key=lambda item: _date_sort_key(item.published_date), reverse=True)[:limit]
+
+
+def sitemap_include_keyword_matches(url: str, keyword: str) -> bool:
+    needle = keyword.lower().strip()
+    if not needle:
+        return False
+    haystack = url.lower()
+    if re.fullmatch(r"[a-z0-9]{1,3}", needle):
+        return re.search(rf"(?<![a-z0-9]){re.escape(needle)}(?![a-z0-9])", haystack) is not None
+    return needle in haystack
 
 
 def _date_sort_key(value: str) -> int:

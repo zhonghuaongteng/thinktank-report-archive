@@ -451,6 +451,43 @@ class GenericParserTests(unittest.TestCase):
         self.assertNotIn("publications, reports, and people", detail.summary)
         self.assertIn("medical innovation", detail.detail_text)
 
+    def test_parse_generic_detail_treats_special_report_number_as_thin_summary(self):
+        html = """
+        <html><head>
+          <title>Greening Steel in a Fragmented World</title>
+          <meta name="description" content="Special Report No. 10 By Analyst One and Analyst Two">
+        </head><body>
+          <main>
+            <p>Special report no. 10 BY ANALYST ONE AND ANALYST TWO.</p>
+            <p>The global steel industry sits at the center of the industrial transition to a low-carbon economy.</p>
+            <p>Steel supports construction, transportation, energy systems, and manufacturing.</p>
+            <a href="https://orfamerica.org/s/Greening-Steel-SR10-digital.pdf">Download PDF</a>
+          </main>
+        </body></html>
+        """
+        institution = Institution(
+            slug="orf-america",
+            name="ORF America Technology Policy",
+            chinese_name="ORF美国技术政策项目",
+            country_region="United States / India",
+            institution_type="think_tank",
+            priority="P1",
+            batch=3,
+            homepage="https://orfamerica.org/technology-policy",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://orfamerica.org/newresearch/greening-steel-in-a-fragmented-world-aligning-markets-technology-and-finance",
+            institution,
+        )
+
+        self.assertEqual(detail.content_type, "report")
+        self.assertIn("global steel industry", detail.summary)
+        self.assertNotIn("Special Report No. 10 By", detail.summary)
+
     def test_parse_generic_detail_ignores_external_reference_pdfs(self):
         html = """
         <html><head><title>AI governance brief</title></head>

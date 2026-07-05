@@ -18,6 +18,8 @@ REPORT_TYPES = {
 TOPIC_MATCH_EXTRA_CAP = 2
 CONTEXT_ONLY_TOPICS = {"中国与上海相关"}
 CONTEXT_ONLY_PRIORITY_CAP = "P2"
+PDF_OR_REPORT_PRIORITY_CAP_SOURCES = {"orf-america"}
+PDF_OR_REPORT_PRIORITY_CAP = "P2"
 STANDALONE_AI_KEYWORDS = {"AI", "A.I."}
 WEAK_DEFENSE_AI_KEYWORDS = {"defense technology", "national security", "国家安全"}
 STRONG_DEFENSE_AI_KEYWORDS = {
@@ -70,6 +72,18 @@ def _contains_keyword(text: str, keyword: str) -> bool:
     return True
 
 
+def _has_substantive_standalone_ai_context(text: str) -> bool:
+    haystack = text.lower()
+    return (
+        re.search(
+            r"(?<![a-z0-9])a\.?i\.?\s+"
+            r"(?:in|for|and|policy|governance|systems?|models?|applications?|adoption|regulation|safety|risk|career)",
+            haystack,
+        )
+        is not None
+    )
+
+
 def score_candidate(
     candidate: ArticleCandidate,
     topics: list[TopicRule],
@@ -91,7 +105,7 @@ def score_candidate(
         matched_keywords = [keyword for keyword in topic.keywords if _contains_keyword(text, keyword)]
         if topic.name == "AI治理" and set(matched_keywords) <= STANDALONE_AI_KEYWORDS:
             title_mentions_ai = any(_contains_keyword(scored.title, keyword) for keyword in STANDALONE_AI_KEYWORDS)
-            if not title_mentions_ai and scored.content_type not in REPORT_TYPES:
+            if not title_mentions_ai and not _has_substantive_standalone_ai_context(text):
                 matched_keywords = []
         if topic.name == "国防AI" and set(matched_keywords) <= WEAK_DEFENSE_AI_KEYWORDS:
             has_strong_defense_ai_signal = any(_contains_keyword(text, keyword) for keyword in STRONG_DEFENSE_AI_KEYWORDS)
@@ -125,6 +139,13 @@ def score_candidate(
     substantive_topics = set(topic_scores) - CONTEXT_ONLY_TOPICS
     if topic_scores and not substantive_topics and priority in {"P0", "P1"}:
         priority = CONTEXT_ONLY_PRIORITY_CAP
+    if (
+        scored.institution_slug in PDF_OR_REPORT_PRIORITY_CAP_SOURCES
+        and not scored.pdf_url
+        and scored.content_type not in REPORT_TYPES
+        and priority in {"P0", "P1"}
+    ):
+        priority = PDF_OR_REPORT_PRIORITY_CAP
 
     scored.score = total
     scored.priority = priority

@@ -7,6 +7,7 @@ from thinktank_watch.fetch import fetch_detail
 from thinktank_watch.fetch import fetch_list_candidates
 from thinktank_watch.fetch import fetch_sitemap_candidates
 from thinktank_watch.fetch import interleave_candidate_groups
+from thinktank_watch.fetch import sitemap_include_keyword_matches
 from thinktank_watch.fetch import source_url_allowed
 from thinktank_watch.models import ArticleCandidate
 from thinktank_watch.models import Institution
@@ -183,6 +184,33 @@ class FetchCandidateTests(unittest.TestCase):
             )
         )
 
+    def test_source_url_allowed_rejects_news_pages_before_sitemap_scoring(self):
+        institution = Institution(
+            slug="csis",
+            name="Center for Strategic and International Studies",
+            chinese_name="战略与国际研究中心",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=2,
+            homepage="https://www.csis.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.csis.org/news/csis-schieffer-series-dialogues-securing-cyberspace-discussion-sony-hack-plus-latest-threats",
+                institution,
+            )
+        )
+        self.assertTrue(
+            source_url_allowed(
+                "https://www.csis.org/analysis/old-new-making-innovation-work-everyone",
+                institution,
+            )
+        )
+
     def test_source_url_allowed_rejects_pagination_index_pages(self):
         institution = Institution(
             slug="cset",
@@ -295,6 +323,10 @@ class FetchCandidateTests(unittest.TestCase):
         self.assertEqual(len(candidates), 1)
         self.assertEqual(candidates[0].url, "https://example.org/research/2026/07/ai-governance-and-cyber-risk")
         self.assertEqual(candidates[0].published_date, "2026-07-02")
+
+    def test_sitemap_short_keywords_match_url_tokens_not_substrings(self):
+        self.assertTrue(sitemap_include_keyword_matches("https://example.org/research/ai-governance", "ai"))
+        self.assertFalse(sitemap_include_keyword_matches("https://example.org/analysis/troubled-straits", "ai"))
 
     def test_sitemap_candidates_expand_sitemap_indexes(self):
         sitemap_index = """<?xml version="1.0" encoding="UTF-8"?>
