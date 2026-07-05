@@ -14,6 +14,7 @@ from .restore import parse_archive_markdown
 MAX_EXPANDED_PRIORITY_ITEMS = 12
 MAX_INDEX_ITEMS = 60
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
+INNOVATION_SUPPORT_TAGS = {"科技创新", "先进制造", "数字经济", "半导体", "科技人才"}
 
 
 def published_date_sort_value(value: str) -> int:
@@ -39,6 +40,50 @@ def sort_brief_candidates(candidates: list[ArticleCandidate]) -> list[ArticleCan
             ),
         )
     ]
+
+
+def select_innovation_support_items(candidates: list[ArticleCandidate], limit: int = 12) -> list[ArticleCandidate]:
+    support_candidates = [
+        item for item in candidates if INNOVATION_SUPPORT_TAGS & set(item.topic_tags) and "AI治理" not in item.topic_tags
+    ]
+    if not support_candidates:
+        support_candidates = [item for item in candidates if INNOVATION_SUPPORT_TAGS & set(item.topic_tags)]
+
+    selected: list[ArticleCandidate] = []
+    selected_urls: set[str] = set()
+    selected_institutions: set[str] = set()
+
+    for item in support_candidates:
+        if len(selected) >= limit:
+            break
+        if item.institution_slug in selected_institutions:
+            continue
+        selected.append(item)
+        selected_urls.add(item.url)
+        selected_institutions.add(item.institution_slug)
+
+    def add_first_with_tag(pool: list[ArticleCandidate], tag: str) -> None:
+        if len(selected) >= limit:
+            return
+        for item in pool:
+            if tag in item.topic_tags and item.url not in selected_urls:
+                selected.append(item)
+                selected_urls.add(item.url)
+                return
+
+    topic_order = ["科技创新", "先进制造", "数字经济", "半导体", "科技人才"]
+    for tag in topic_order:
+        add_first_with_tag(support_candidates, tag)
+    p2_support = [item for item in support_candidates if item.priority == "P2"]
+    for tag in topic_order:
+        add_first_with_tag(p2_support, tag)
+    for item in support_candidates:
+        if len(selected) >= limit:
+            break
+        if item.url not in selected_urls:
+            selected.append(item)
+            selected_urls.add(item.url)
+    return selected[:limit]
 
 
 def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
@@ -86,6 +131,14 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}")
     else:
         lines.append("本日未检出科技创新与AI治理强相关条目。")
+
+    lines.extend(["", "## 广义科技创新支撑", ""])
+    support_items = select_innovation_support_items(ordered_candidates)
+    if support_items:
+        for item in support_items[:8]:
+            lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}")
+    else:
+        lines.append("本日未检出区域创新、先进制造、数字基础设施、半导体或科技人才相关条目。")
 
     lines.extend(["", "## 涉华/涉沪判断", ""])
     china_items = [item for item in ordered_candidates if "中国与上海相关" in item.topic_tags]

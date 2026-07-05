@@ -180,6 +180,42 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertNotIn("- [P2] Source｜索引条目61｜https://example.org/index/61", brief)
         self.assertIn("其余 2 条已写入私有归档和知识库索引", brief)
 
+    def test_render_daily_brief_keeps_innovation_support_items_visible_when_priority_overflows(self):
+        candidates = [
+            ArticleCandidate(
+                institution_slug="govai",
+                institution_name="GovAI",
+                institution_type="think_tank",
+                title=f"AI governance report {index}",
+                chinese_title=f"AI治理报告{index}",
+                url=f"https://example.org/ai/{index}",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P1",
+                topic_tags=["AI治理"],
+            )
+            for index in range(1, 75)
+        ]
+        candidates.append(
+            ArticleCandidate(
+                institution_slug="brookings-cti",
+                institution_name="Brookings CTI",
+                institution_type="think_tank",
+                title="NSF Engines",
+                chinese_title="NSF区域创新引擎",
+                url="https://example.org/nsf-engines",
+                published_date="2026-05-18",
+                content_type="article",
+                priority="P2",
+                topic_tags=["科技创新"],
+            )
+        )
+
+        brief = render_daily_brief_markdown("2026-07-04", candidates)
+
+        self.assertIn("广义科技创新支撑", brief)
+        self.assertIn("- [P2] Brookings CTI｜NSF区域创新引擎", brief)
+
     def test_render_daily_brief_orders_priority_items_by_priority_and_score(self):
         candidates = [
             ArticleCandidate(
