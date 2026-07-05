@@ -18,6 +18,16 @@ REPORT_TYPES = {
 CONTEXT_ONLY_TOPICS = {"中国与上海相关"}
 CONTEXT_ONLY_PRIORITY_CAP = "P2"
 STANDALONE_AI_KEYWORDS = {"AI", "A.I."}
+WEAK_DEFENSE_AI_KEYWORDS = {"defense technology", "national security", "国家安全"}
+STRONG_DEFENSE_AI_KEYWORDS = {
+    "defense AI",
+    "military AI",
+    "autonomous weapons",
+    "cyber operations",
+    "国防人工智能",
+    "军事人工智能",
+    "自主武器",
+}
 
 
 def _contains_keyword(text: str, keyword: str) -> bool:
@@ -58,6 +68,10 @@ def score_candidate(
         if topic.name == "AI治理" and set(matched_keywords) <= STANDALONE_AI_KEYWORDS:
             title_mentions_ai = any(_contains_keyword(scored.title, keyword) for keyword in STANDALONE_AI_KEYWORDS)
             if not title_mentions_ai and scored.content_type not in REPORT_TYPES:
+                matched_keywords = []
+        if topic.name == "国防AI" and set(matched_keywords) <= WEAK_DEFENSE_AI_KEYWORDS:
+            has_strong_defense_ai_signal = any(_contains_keyword(text, keyword) for keyword in STRONG_DEFENSE_AI_KEYWORDS)
+            if not has_strong_defense_ai_signal:
                 matched_keywords = []
         matches = len(matched_keywords)
         if matches:

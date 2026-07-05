@@ -74,10 +74,16 @@ TITLE_STOP_WORDS = {
 
 TRACKING_PARAMS = {"fbclid", "gclid", "mc_cid", "mc_eid"}
 SOURCE_PATH_DENY_SEGMENTS = {
+    "about",
+    "blog",
+    "blogs",
     "categories",
+    "connect-with-us",
     "category",
+    "cyber-statecraft-initiative",
     "events",
     "event",
+    "get-involved",
     "issue",
     "issues",
     "page",
@@ -91,6 +97,7 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "programs",
     "topic",
     "topics",
+    "research-teams",
     "video",
     "videos",
     "webinars",
@@ -98,8 +105,13 @@ SOURCE_PATH_DENY_SEGMENTS = {
 SOURCE_LAST_SEGMENT_DENY = {
     "commentary",
     "analyses",
+    "capacity-building-initiative",
+    "focus-areas",
     "datasets",
     "index",
+    "multimedia",
+    "newsletter-subscriptions",
+    "subscriptions",
     "policy-briefs",
     "publication",
     "publications",
@@ -168,7 +180,8 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
     allowed_hosts.extend(_normalized_host(domain) for domain in institution.allowed_domains)
     if not any(source_host == host or source_host.endswith(f".{host}") for host in allowed_hosts):
         return False
-    path_segments = {segment.lower() for segment in parsed_source.path.split("/") if segment}
+    ordered_path_segments = [segment.lower() for segment in parsed_source.path.split("/") if segment]
+    path_segments = set(ordered_path_segments)
     last_segment = parsed_source.path.rstrip("/").split("/")[-1].lower()
     last_stem = last_segment[:-5] if last_segment.endswith(".html") else last_segment
     if path_segments & SOURCE_PATH_DENY_SEGMENTS:
@@ -179,6 +192,9 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
         return False
     if len(last_stem) == 4 and last_stem.isdigit():
         return False
+    if len(ordered_path_segments) == 2:
+        if ordered_path_segments[0] == "publications":
+            return False
     return True
 
 

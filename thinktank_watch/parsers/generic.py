@@ -108,13 +108,18 @@ CONTENT_TYPE_SEGMENTS = {
 }
 EXCLUDED_LAST_SEGMENT_PREFIXES = ("call-", "deadline-", "apply-", "registration")
 EXCLUDED_LAST_SEGMENT_SUBSTRINGS = ("integrity-statement", "research-priorities")
+EXCLUDED_LAST_SEGMENTS = {"focus-areas", "multimedia", "newsletter-subscriptions", "subscriptions"}
 EXCLUDED_PATH_SEGMENTS = {
     "about",
+    "blog",
+    "blogs",
     "books",
     "categories",
     "category",
     "community",
+    "cyber-statecraft-initiative",
     "experts",
+    "get-involved",
     "how-we-work",
     "issue",
     "issues",
@@ -123,6 +128,7 @@ EXCLUDED_PATH_SEGMENTS = {
     "people",
     "programs",
     "podcasts",
+    "research-teams",
     "staff",
     "working-group-data-governance",
     "working-group-future-of-work",
@@ -334,11 +340,15 @@ def looks_like_detail_url(url: str, text: str = "") -> bool:
     last_segment = path_segments[-1].lower()
     if last_segment in NON_CONTENT_LAST_SEGMENTS:
         return False
+    if last_segment in EXCLUDED_LAST_SEGMENTS:
+        return False
     if last_segment.startswith(EXCLUDED_LAST_SEGMENT_PREFIXES):
         return False
     if any(token in last_segment for token in EXCLUDED_LAST_SEGMENT_SUBSTRINGS):
         return False
     if any(segment.lower() in EXCLUDED_PATH_SEGMENTS or segment.lower().startswith("about-") for segment in path_segments):
+        return False
+    if len(path_segments) == 2 and path_segments[0].lower() == "publications":
         return False
     haystack = f"{path_segments[-1]} {text}".lower()
     return any(term in haystack for term in ALLOW_TERMS) or any(

@@ -81,6 +81,54 @@ class FetchCandidateTests(unittest.TestCase):
                 institution,
             )
         )
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.atlanticcouncil.org/blogs/new-atlanticist/us-and-germany-sign-homeland-defense-technology-sharing-agreement/",
+                institution,
+            )
+        )
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.atlanticcouncil.org/cyber-statecraft-initiative/capacity-building-initiative",
+                institution,
+            )
+        )
+
+    def test_source_url_allowed_rejects_publication_series_and_research_team_pages(self):
+        institution = Institution(
+            slug="hoover-tpa",
+            name="Hoover Technology Policy Accelerator",
+            chinese_name="胡佛技术政策加速器",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P1",
+            batch=3,
+            homepage="https://www.hoover.org/research-teams/technology-policy-accelerator",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.hoover.org/publications/chinas-global-sharp-power-weekly-alert",
+                institution,
+            )
+        )
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.hoover.org/research-teams/technology-policy-accelerator",
+                institution,
+            )
+        )
+        self.assertFalse(source_url_allowed("https://www.hoover.org/commentary/focus-areas", institution))
+        self.assertFalse(source_url_allowed("https://www.hoover.org/commentary/multimedia", institution))
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.hoover.org/about/connect-with-us/newsletter-subscriptions",
+                institution,
+            )
+        )
+        self.assertFalse(source_url_allowed("https://www.hoover.org/get-involved/subscriptions", institution))
 
     def test_source_url_allowed_rejects_pagination_index_pages(self):
         institution = Institution(

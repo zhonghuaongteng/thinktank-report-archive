@@ -29,6 +29,14 @@ class GenericParserTests(unittest.TestCase):
           <a href="/publications/knowledge-bases/to-do-list/">Tech Policy To-Do List</a>
           <a href="/publications/knowledge-bases/attack-tracker/">Non-Tariff Attack Tracker</a>
           <a href="/research/partners">Research Partners</a>
+          <a href="/blogs/new-atlanticist/homeland-defense-technology-sharing-agreement/">Old blog update</a>
+          <a href="/cyber-statecraft-initiative/capacity-building-initiative">Cyber capacity initiative</a>
+          <a href="/publications/chinas-global-sharp-power-weekly-alert">China weekly publication series</a>
+          <a href="/research-teams/technology-policy-accelerator">Technology Policy Accelerator</a>
+          <a href="/commentary/focus-areas">Commentary key focus areas</a>
+          <a href="/commentary/multimedia">Videos and podcasts</a>
+          <a href="/about/connect-with-us/newsletter-subscriptions">Newsletter subscriptions</a>
+          <a href="/get-involved/subscriptions">Subscriptions</a>
           <a href="/ceps-publications/ceps-research-priorities-2024-2025/">Research Priorities 2024-2025</a>
           <a href="/about-ceps/ceps-integrity-statement/">CEPS Integrity Statement</a>
           <a href="/our-work/how-we-work/public-participation-research/">Public Participation Research</a>

@@ -178,6 +178,8 @@ def evaluate(args: argparse.Namespace) -> int:
             print(f"  topics: {', '.join(item.topic_tags)}")
         if item.pdf_url:
             print(f"  pdf: {item.pdf_url} ({item.pdf_status})")
+        if item.fetch_status not in {"feed_ok", "list_ok", "sitemap_ok", "detail_ok"}:
+            print(f"  status: {item.fetch_status}")
     return 0
 
 

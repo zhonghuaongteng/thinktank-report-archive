@@ -173,6 +173,29 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("AI治理", scored.topic_tags)
         self.assertIn("科技治理", scored.topic_tags)
 
+    def test_health_ai_cross_border_data_policy_is_governance_focus(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="atlantic-council-geotech",
+            institution_name="Atlantic Council GeoTech Center and Cyber Statecraft Initiative",
+            institution_type="think_tank",
+            title=(
+                "The US AI health data collision: Charting the future of US cross-border data "
+                "flow policy, health data, and health and biopharma AI policy"
+            ),
+            url="https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/the-us-ai-health-data-policy/",
+            summary="Issue brief on health AI, data security, and cross-border data flows.",
+            published_date="2026-05-13",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("AI治理", scored.topic_tags)
+        self.assertIn("科技治理", scored.topic_tags)
+
     def test_hyphenated_artificial_intelligence_title_is_ai_focus(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
@@ -306,6 +329,25 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         self.assertIn("半导体", scored.topic_tags)
         self.assertIn("科技治理", scored.topic_tags)
+        self.assertNotIn("国防AI", scored.topic_tags)
+
+    def test_defense_technology_alone_does_not_create_defense_ai_tag(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="atlantic-council-geotech",
+            institution_name="Atlantic Council GeoTech Center and Cyber Statecraft Initiative",
+            institution_type="think_tank",
+            title="US and Germany Sign Homeland Defense Technology Sharing Agreement",
+            url="https://www.atlanticcouncil.org/blogs/new-atlanticist/us-and-germany-sign-homeland-defense-technology-sharing-agreement/",
+            summary="A short institutional update about homeland defense technology cooperation.",
+            published_date="2009-03-16",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P3")
         self.assertNotIn("国防AI", scored.topic_tags)
 
     def test_scoring_keeps_low_relevance_items_in_index_only(self):
