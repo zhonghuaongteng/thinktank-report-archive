@@ -112,6 +112,9 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "videos",
     "webinars",
     "jobs",
+    "job",
+    "research-area",
+    "research-areas",
 }
 SOURCE_LAST_SEGMENT_DENY = {
     "commentary",

@@ -20,7 +20,43 @@ CONTEXT_ONLY_TOPICS = {"中国与上海相关"}
 CONTEXT_ONLY_PRIORITY_CAP = "P2"
 SUBSTANTIVE_REPORT_PRIORITY_FLOOR = "P1"
 CORE_INNOVATION_SUPPORT_PRIORITY_FLOOR = "P1"
-CORE_INNOVATION_SUPPORT_TAGS = {"科技创新", "半导体", "科技人才"}
+CORE_INNOVATION_SUPPORT_TAGS = {"科技创新", "半导体", "先进制造", "科技人才"}
+STRONG_DIGITAL_INNOVATION_SUPPORT_KEYWORDS = {
+    "digital infrastructure",
+    "digital public infrastructure",
+    "data infrastructure",
+    "AI infrastructure",
+    "compute infrastructure",
+    "computing infrastructure",
+    "AI compute",
+    "advanced compute",
+    "compute access",
+    "public compute",
+    "sovereign compute",
+    "national AI infrastructure",
+    "data space",
+    "data spaces",
+    "data sharing",
+    "data access",
+    "data availability",
+    "data interoperability",
+    "open data",
+    "cloud infrastructure",
+    "broadband",
+    "digital technology adoption",
+    "enterprise AI adoption",
+    "AI diffusion",
+    "数字基础设施",
+    "数据基础设施",
+    "算力基础设施",
+    "公共算力",
+    "国家人工智能基础设施",
+    "数据空间",
+    "数据共享",
+    "数据互操作",
+    "开放数据",
+    "数字技术采用",
+}
 PDF_OR_REPORT_PRIORITY_CAP_SOURCES = {"orf-america"}
 PDF_OR_REPORT_PRIORITY_CAP = "P2"
 STANDALONE_AI_KEYWORDS = {"AI", "A.I."}
@@ -87,6 +123,10 @@ def _has_substantive_standalone_ai_context(text: str) -> bool:
     )
 
 
+def _has_strong_digital_innovation_support(text: str) -> bool:
+    return any(_contains_keyword(text, keyword) for keyword in STRONG_DIGITAL_INNOVATION_SUPPORT_KEYWORDS)
+
+
 def score_candidate(
     candidate: ArticleCandidate,
     topics: list[TopicRule],
@@ -142,7 +182,9 @@ def score_candidate(
     substantive_topics = set(topic_scores) - CONTEXT_ONLY_TOPICS
     if substantive_topics and scored.content_type in REPORT_TYPES and priority not in {"P0", "P1"}:
         priority = SUBSTANTIVE_REPORT_PRIORITY_FLOOR
-    if substantive_topics & CORE_INNOVATION_SUPPORT_TAGS and priority not in {"P0", "P1"}:
+    has_core_innovation_support = bool(substantive_topics & CORE_INNOVATION_SUPPORT_TAGS)
+    has_digital_innovation_support = "数字经济" in substantive_topics and _has_strong_digital_innovation_support(text)
+    if (has_core_innovation_support or has_digital_innovation_support) and priority not in {"P0", "P1"}:
         priority = CORE_INNOVATION_SUPPORT_PRIORITY_FLOOR
     if topic_scores and not substantive_topics and priority in {"P0", "P1"}:
         priority = CONTEXT_ONLY_PRIORITY_CAP

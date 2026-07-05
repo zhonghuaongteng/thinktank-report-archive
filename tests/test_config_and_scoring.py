@@ -20,7 +20,22 @@ class ConfigAndScoringTests(unittest.TestCase):
             {item.batch for item in institutions if item.slug == "rand"},
             {1},
         )
-        for slug in {"aspi", "belfer", "bruegel", "csis", "ecipe", "ida-stpi", "nistep", "orf-america", "stepi"}:
+        for slug in {
+            "alan-turing",
+            "aspi",
+            "atlantic-council-geotech",
+            "belfer",
+            "bruegel",
+            "ceps",
+            "csis",
+            "ecipe",
+            "hoover-tpa",
+            "ida-stpi",
+            "nbr",
+            "nistep",
+            "orf-america",
+            "stepi",
+        }:
             self.assertEqual(
                 {item.batch for item in institutions if item.slug == slug},
                 {1},
@@ -30,6 +45,14 @@ class ConfigAndScoringTests(unittest.TestCase):
             {item.institution_type for item in institutions if item.slug == "gartner"},
             {"commercial_research"},
         )
+
+    def test_cset_sitemap_is_enabled_for_broad_innovation_support(self):
+        institutions = load_institutions("config/institutions")
+        cset = next(item for item in institutions if item.slug == "cset")
+
+        self.assertIn("https://cset.georgetown.edu/wp-sitemap.xml", cset.sitemap_urls)
+        for keyword in {"compute", "supply-chain", "talent", "innovation", "research", "technology"}:
+            self.assertIn(keyword, cset.sitemap_include_keywords)
 
     def test_selecting_explicit_institution_ignores_batch_filter(self):
         institutions = load_institutions("config/institutions")
@@ -811,6 +834,25 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("科技人才", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
 
+    def test_ai_workforce_is_talent_support_not_only_ai_governance(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="Defining the AI Workforce",
+            url="https://cset.georgetown.edu/article/defining-the-ai-workforce/",
+            summary="An analysis of the AI workforce and technical workforce needed for advanced technology adoption.",
+            published_date="2026-05-12",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技人才", scored.topic_tags)
+
     def test_value_chain_capacity_and_skills_are_innovation_support(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
@@ -936,6 +978,45 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P1", "P2"})
         self.assertIn("数字经济", scored.topic_tags)
 
+    def test_compute_infrastructure_article_enters_p1_as_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="Public Compute Infrastructure for Research Access",
+            url="https://cset.georgetown.edu/article/public-compute-infrastructure-research-access/",
+            summary="Public compute, sovereign compute, data access, and cloud infrastructure support applied projects.",
+            published_date="2026-06-10",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P1")
+        self.assertIn("数字经济", scored.topic_tags)
+        self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_general_cybersecurity_article_does_not_enter_p1_without_infrastructure_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="Cybersecurity Incident Response Lessons",
+            url="https://cset.georgetown.edu/article/cybersecurity-incident-response-lessons/",
+            summary="Cybersecurity risk management practices for organizations.",
+            published_date="2026-06-10",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P2")
+        self.assertIn("数字经济", scored.topic_tags)
+
     def test_chinese_technology_is_innovation_signal(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
@@ -973,6 +1054,26 @@ class ConfigAndScoringTests(unittest.TestCase):
 
         self.assertIn("科技创新", scored.topic_tags)
         self.assertIn("中国与上海相关", scored.topic_tags)
+
+    def test_hardware_chokepoints_are_semiconductor_and_tech_control_signals(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="Multilateral Controls on Hardware Chokepoints",
+            url="https://cset.georgetown.edu/publication/multilateral-controls-on-hardware-chokepoints/",
+            summary="Policy analysis on hardware chokepoints in advanced computing supply chains.",
+            published_date="2026-06-09",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("半导体", scored.topic_tags)
+        self.assertIn("科技治理", scored.topic_tags)
 
     def test_national_security_alone_does_not_create_defense_ai_tag(self):
         topics = load_topics("config/topics.yaml")

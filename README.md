@@ -62,8 +62,9 @@ The local Codex automation `国际科技智库每日抓取` runs at 10:00 Beijin
 
 ## Source Status Notes
 
-- The default first-batch pool now includes broad innovation-support sources CSIS, Bruegel, ECIPE, ASPI, and ORF America in addition to RAND, CSET, ITIF, Stanford HAI, Carnegie, Brookings, CNAS, MERICS, OECD.AI, Belfer STPP, IDA STPI, NISTEP, and STEPI.
-- Remaining second-batch P0/P1 sources have guarded configs for Ada Lovelace, interface, Atlantic Council, CEPS, and GovAI.
+- The default first-batch pool now includes broad innovation-support sources CSIS, Bruegel, ECIPE, ASPI, ORF America, CEPS, Atlantic Council GeoTech, Alan Turing Institute, Hoover TPA, and NBR in addition to RAND, CSET, ITIF, Stanford HAI, Carnegie, Brookings, CNAS, MERICS, OECD.AI, Belfer STPP, IDA STPI, NISTEP, and STEPI.
+- CSET uses the WordPress sitemap index for broader backfill discovery across hardware and compute, supply chains, technology talent, research, innovation, biotechnology, quantum, space, and China technology analysis.
+- Remaining second-batch P0/P1 sources have guarded configs for Ada Lovelace, interface, and GovAI.
 - ASPI's main site returns Cloudflare 403 to static requests; The Strategist is configured as an explicit auxiliary ASPI domain.
 - Belfer uses Drupal sitemap indexes; sitemap candidates are sorted by `lastmod` before truncation so recent science, technology, cyber, innovation, and space materials are not crowded out by older sitemap pages.
 - CEPS RSS and detail pages are unstable or blocked for static requests. CEPS remains in the institution table, but this source should be treated as metadata/health-check first until a browser-backed parser is added.
