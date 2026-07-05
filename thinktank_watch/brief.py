@@ -180,14 +180,19 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
                 ]
             )
 
-    lines.extend(["## 科技创新支撑与AI治理", ""])
-    tech_focus_tags = INNOVATION_SUPPORT_TAGS | GOVERNANCE_ONLY_TAGS
-    tech_items = [item for item in ordered_candidates if tech_focus_tags & set(item.topic_tags)]
+    lines.extend(["## 科技创新支撑重点", ""])
+    tech_items = [item for item in ordered_candidates if is_innovation_support_candidate(item)]
     if tech_items:
         for item in tech_items[:8]:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}")
     else:
-        lines.append("本日未检出科技创新支撑或AI治理强相关条目。")
+        lines.append("本日未检出科技创新支撑强相关条目。")
+
+    governance_items = [item for item in ordered_candidates if is_governance_only_candidate(item)]
+    if governance_items:
+        lines.extend(["", "## AI治理与科技治理观察", ""])
+        for item in governance_items[:5]:
+            lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}")
 
     lines.extend(["", "## 广义科技创新支撑", ""])
     support_items = select_innovation_support_items(ordered_candidates)

@@ -147,10 +147,49 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         self.assertIn("# 国际科技智库动态简报（2026-07-04）", brief)
         self.assertIn("P0/P1重点", brief)
-        self.assertIn("科技创新支撑与AI治理", brief)
+        self.assertIn("科技创新支撑重点", brief)
+        self.assertIn("AI治理与科技治理观察", brief)
         self.assertIn("AI安全", brief)
         self.assertIn("新增索引", brief)
         self.assertIn("制造业", brief)
+
+    def test_render_daily_brief_keeps_pure_governance_out_of_innovation_support_section(self):
+        candidates = [
+            ArticleCandidate(
+                institution_slug="govai",
+                institution_name="GovAI",
+                institution_type="think_tank",
+                title="AI Governance",
+                chinese_title="AI治理",
+                url="https://example.org/governance",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P1",
+                score=8,
+                topic_tags=["AI治理"],
+            ),
+            ArticleCandidate(
+                institution_slug="nistep",
+                institution_name="NISTEP",
+                institution_type="government_research_institute",
+                title="Science and Technology Indicators",
+                chinese_title="科技指标与创新能力",
+                url="https://example.org/innovation",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P1",
+                score=5,
+                topic_tags=["科技创新"],
+            ),
+        ]
+
+        brief = render_daily_brief_markdown("2026-07-04", candidates)
+        innovation_section = brief.split("## 科技创新支撑重点", 1)[1].split("## AI治理与科技治理观察", 1)[0]
+        governance_section = brief.split("## AI治理与科技治理观察", 1)[1].split("## 广义科技创新支撑", 1)[0]
+
+        self.assertIn("科技指标与创新能力", innovation_section)
+        self.assertNotIn("AI治理", innovation_section)
+        self.assertIn("AI治理", governance_section)
 
     def test_render_daily_brief_limits_expanded_priority_items(self):
         candidates = [
