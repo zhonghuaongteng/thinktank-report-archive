@@ -52,10 +52,25 @@ class RepositoryPolicyTests(unittest.TestCase):
             self.assertIn("不得运行 `evaluate`", text)
             self.assertIn("不得", text)
             self.assertIn("`backfill`", text)
+            self.assertIn("scripts\\run_strategy_review.ps1", text)
 
         self.assertIn("暂停与回滚", multi_agent)
         self.assertIn("SQLite", multi_agent)
         self.assertIn("知识库 CSV", multi_agent)
+
+    def test_strategy_review_script_does_not_fetch_or_write(self):
+        script = Path("scripts/run_strategy_review.ps1").read_text(encoding="utf-8")
+
+        self.assertIn("git status --porcelain -- archive briefs state", script)
+        self.assertIn("git diff --check", script)
+        self.assertIn("$LASTEXITCODE", script)
+        self.assertIn("unittest tests.test_repository_policy", script)
+        self.assertIn("archive_count=", script)
+        self.assertIn("state_archived=", script)
+        self.assertNotIn("thinktank_watch.cli", script)
+        self.assertNotIn("run_weekly.ps1", script)
+        self.assertNotIn("run_daily.ps1", script)
+        self.assertNotIn("run_evaluate_sources.ps1", script)
 
 
 if __name__ == "__main__":
