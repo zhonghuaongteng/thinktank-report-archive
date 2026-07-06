@@ -1,0 +1,43 @@
+---
+institution: Information Technology and Innovation Foundation
+institution_slug: itif
+institution_type: think_tank
+content_type: article
+source_completeness: summary_only
+english_title: "How Schumpeterian Profits Create a Virtuous Cycle of Innovation"
+chinese_title: "How Schumpeterian Profits Create a Virtuous Cycle of Innovation"
+published_date: 2026-07-01
+source_url: https://itif.org/publications/2026/07/01/how-schumpeterian-profits-create-a-virtuous-cycle-of-innovation/
+pdf_url: 
+pdf_status: none
+external_source_url: 
+authors: ["Jack Nicastro"]
+keywords: []
+subjects: []
+topic_tags: ["科技创新"]
+priority: P2
+score: 4
+translation_level: summary
+copyright_boundary: private_archive
+fetch_status: detail_ok
+---
+
+# How Schumpeterian Profits Create a Virtuous Cycle of Innovation
+
+## 中文摘要与研判
+
+待由 Codex 自动化补充中文摘要与研判。
+
+## 元数据
+
+- 原始标题：How Schumpeterian Profits Create a Virtuous Cycle of Innovation
+- 发布日期：2026-07-01
+- 来源链接：https://itif.org/publications/2026/07/01/how-schumpeterian-profits-create-a-virtuous-cycle-of-innovation/
+- PDF链接：无
+- 关键词：待抽取
+- 主题标签：科技创新
+- 优先级：P2
+
+## English Source Material
+
+How Schumpeterian Profits Create a Virtuous Cycle of Innovation By Jack Nicastro | July 1, 2026 Perfect competition and its economic outcomes are often invoked by defenders of capitalism as its principal justification. Namely, in perfectly competitive markets, consumers enjoy the lowest possible price for a given good as many firms offering identical products compete on price for their patronage. This static analysis ignores that the goods available for purchase are not fixed but constantly improving thanks to innovation. Joseph Schumpeter described this process as “creative destruction” in his seminal 1942 work, Capitalism, Socialism and Democracy , deeming it “the essential fact about capitalism.” While virtually all recognize that innovation gives rise to market power for some time, fewer appreciate how innovation is also often fostered by the very market power it creates. Perfectly competitive firms are price-takers: Each sells the same good for the same price, roughly speaking. In microeconomic theory, this price equals marginal cost and, in the long run, average total cost, at which point firms make zero economic profit. However, when a firm innovates, it introduces, for a time, a superior good that is imperfectly substitutable or a more efficient production process that is imperfectly replicable (or a combination of the two). In the first case, the innovator is no longer a price-taker but a price-maker, exercising market power to set prices above marginal and average total costs, earning supernormal (Schumpeterian) profits. In the second case, the innovator cannot set its price above the market price yet still earns Schumpeterian profits because, unlike its competitors, the market price exceeds its average total cost. This is not a bad thing. Not only are consumers made better off by new products and cheaper production processes, but the innovator’s Schumpeterian profits spur other firms to innovate to bid away a share of those profits for themselves. That process can result in a restoration of the perfectly competitive equilibrium (again, for a time) that the innovator disturbed. Yet such a return to perfect competition does not always occur. Another way firms respond, especially in innovation-intensive industries, is by “ leapfrogging ”: innovating in a manner that bypasses perfect competition altogether to generate Schumpeterian profits of their own. While Schumpeterian profits may seem extraordinary, they only appear so in retrospect. In reality, the decision to invest in innovation is prospective. For example, to justify an investment of $1 billion with a 10 percent chance of success, the time- and risk-discounted net present value of the investment must exceed $10 billion. If a firm projects it won’t be able to earn this $10 billion, it won’t make the investment. Not only must firms expect sufficient profits to justify prospective investments with uncertain returns, but they must also pay for past investments that failed. The pharmaceutical industry—where only 13.8 percent of drugs entering clinical trials receive FDA approval—is a case in point. This is one reason why antitrust law doesn’t outlaw high prices; they are a way to recoup the costs of innovation. Nevertheless, consumers are the biggest winners from such risky investments—as Yale University economist William Nordhaus calculated , “innovators are [only] able to capture about 2.2 percent of the total social surplus from [their] innovation.” Not only do Schumpeterian profits result from innovation, but, as Schumpeter explained, they can further the process of creative destruction. As the Nobel laureate economist Philippe Aghion found in his landmark study, innovation does not increase monotonically with product market competition but follows an inverted-U curve: Innovation tends to occur less under absolute monopoly than under oligopoly, more under oligopoly than under monopolistic competition, and more under monopolistic competition than under perfect competition. One factor that helps explain the inverted-U is that firms with market power can reduce the cost of capital necessary to finance the expensive research and development required for innovation. For example, it’s generally cheaper for an oligopolist to draw down its own Schumpeterian savings than to borrow from the market for loanable funds. This is especially the case for genuinely novel technologies about which creditors have insufficient information to confidently estimate the return on investment. Not only can the existence of market power today help firms afford the capital-intensive investment required for transformative innovation, but it also often increases incentives to innovate by helping ensure that a firm can recoup the costs of innovation. For example, an oligopolist is more likely to assume tens or hundreds of billions of dollars in capital expenditures to bring a new product to market than a firm in a perfectly competitive market. This is because, all else being equal, the oligopolist is more confident in its ability to recoup such gargantuan investments by maintaining its market power through its new product. To be sure, patents can also protect innovations in a perfectly competitive market; however, they do not always guarantee that firms can recoup their investments. For example, weak patents may be invalidated, and even strong, valid patents can fail to confer market power when a rival’s innovation does not infringe the patent yet still results in product market competition. Further, Schumpeter explained how the existence of market power not only facilitates and incentivizes innovation but also allows “industries that have sown their wild oats but are still gaining…ground” to survive gusts of the perennial gale of creative destruction. Schumpeter emphasized that the goal is not “to conserve obsolete industries indefinitely,” which would be inimical to dynamic competition, but to protect firms that “would be able to live on vigorously and usefully if they could weather a particular storm.” One such storm could be a sudden negative demand shock that pushes price just below average variable cost and forces perfectly competitive firms to shut down production and innovation. By contrast, firms enjoying Schumpeterian profits can withstand such a fall in price by virtue of their wider profit margins, allowing them to remain productive and innovative. Mankind’s material betterment is ultimately attributable to its ability to derive more value from Earth’s fixed endowment of physical resources via the application of human ingenuity—to innovate. As Schumpeter says, “the competition from the new commodity, the new technology, the new source of supply, [and the] new type of organization…which commands a decisive cost or quality advantage…[is] so much more important that it becomes a matter of comparative indifference whether competition in the ordinary sense functions more or less promptly.” Schumpeterian profit is not only the outcome of innovation but can enable and incentivize further innovation, thereby benefiting humanity and its posterity. Editors’ Recommendations October 14, 2025 Rethinking Antitrust: The Case for Dynamic Competition Policy March 25, 2026 Antitrust Undone: How Competition Enforcers Are Undermining Competition June 14, 2021 Principles of Dynamic Antitrust: Competing Through Innovation October 16, 2025 Schumpeter’s Vindication: The Enduring Link Between Scale and Innovation January 30, 2025 Increased Market Concentration Does Not Equal Less Innovation June 15, 2021 Schumpeter v. Brandeis v. Chicago: The Antitrust Debate of Our Times

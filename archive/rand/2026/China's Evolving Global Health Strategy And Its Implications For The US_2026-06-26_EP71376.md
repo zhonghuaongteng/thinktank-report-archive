@@ -1,0 +1,43 @@
+---
+institution: RAND
+institution_slug: rand
+institution_type: think_tank
+content_type: external_publication
+source_completeness: summary_only
+english_title: "China's Evolving Global Health Strategy And Its Implications For The US"
+chinese_title: "China's Evolving Global Health Strategy And Its Implications For The US"
+published_date: 2026-06-26
+source_url: https://www.rand.org/pubs/external_publications/EP71376.html
+pdf_url: 
+pdf_status: none
+external_source_url: https://dx.doi.org/10.1377/forefront.20260520.802945
+authors: ["Bouey, Jennifer", "Huang, Yanzhong"]
+keywords: ["International Diplomacy", "China", "Global Health", "United States", "Africa"]
+subjects: ["Research", "International Diplomacy", "China", "Global Health", "United States", "Africa"]
+topic_tags: ["中国与上海相关"]
+priority: P2
+score: 5
+translation_level: summary
+copyright_boundary: private_fulltext_archive
+fetch_status: detail_ok
+---
+
+# China's Evolving Global Health Strategy And Its Implications For The US
+
+## 中文摘要与研判
+
+待由 Codex 自动化补充中文摘要与研判。
+
+## 元数据
+
+- 原始标题：China's Evolving Global Health Strategy And Its Implications For The US
+- 发布日期：2026-06-26
+- 来源链接：https://www.rand.org/pubs/external_publications/EP71376.html
+- PDF链接：无
+- 关键词：International Diplomacy, China, Global Health, United States, Africa
+- 主题标签：中国与上海相关
+- 优先级：P2
+
+## English Source Material
+
+China's Evolving Global Health Strategy And Its Implications For The US Jennifer Bouey , Yanzhong Huang Research Posted on rand.org Jun 26, 2026 Published in: Health Affairs (2026). DOI: 10.1377/forefront.20260520.802945 Read More Share on LinkedIn Share on X Share on Facebook Email Twenty-five years ago, a “global health strategy” didn’t exist. The US-led millennium surge of global development assistance for health gave the phrase meaning and popularity. The funding boom lasted a decade, plateaued around 2013, and collapsed in 2025. Now, both the US and China have revised their global health strategies amid new domestic policies and geopolitical realities. As Washington unveiled its America First Global Health Strategy in September 2025—four years after President Xi Jinping announced the Global Development Initiative (GDI) in 2021—a striking paradox emerged: The US and China appear to be moving in opposite rhetorical directions while their proposed implementation models converge in ways that undermine the foundations of conventional Western global health models. Rooted in self-perception as a developing country and historical experiences with Western powers before 1949, China has consistently rejected traditional international development terminology such as “donor-recipient relations” or “official development assistance” (ODA) as defined by the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee. Instead, Chinese official discourse, policy documents, and academic analyses frame global health development funding activities as “foreign aid,” emphasizing mutual benefit and South-South cooperation. Nevertheless, China has emerged as a major global donor and creditor. According to a November 2025 report from AidData at William & Mary, China committed nearly $2.2 trillion in grants and loans worldwide between 2000 and 2023, making Beijing the world's largest official creditor. Yet, the most significant evolution lies not in the sheer volume of financing but in the shifting instruments and strategic orientation of China's international development engagement—most clearly embodied in the GDI. We argue that this strategic convergence—the US retreating toward bilateralism and conditionality while China advances multilateral soft-power positioning—paradoxically undermines US health diplomacy at the very moment China’s global health structural limitations remain most exposed. The US should recommit to improving the multilateral, partnership-based, and accountability-driven approach that has long set US global health leadership apart. Read More Subscribe to the Policy Currents newsletter Topics Africa China Global Health International Diplomacy United States Document Details Copyright: Health Affairs Publishing, LLC Publisher: Health Affairs Availability: Non-RAND Year: 2026 Pages: 1 Document Number: EP-71376 Research conducted by RAND Global and Emerging Risks This publication is part of the RAND external publication series. Many RAND studies are published in peer-reviewed scholarly journals, as chapters in commercial books, or as documents published by other organizations. RAND is a nonprofit institution that helps improve policy and decisionmaking through research and analysis. RAND's publications do not necessarily reflect the opinions of its research clients and sponsors.
