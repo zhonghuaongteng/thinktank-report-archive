@@ -103,6 +103,10 @@ WEAK_DEFENSE_AI_KEYWORDS = {"defense technology", "national security", "国家�
 STRONG_DEFENSE_AI_KEYWORDS = {
     "defense AI",
     "military AI",
+    "classified AI",
+    "DOD AI",
+    "Pentagon AI",
+    "Department of Defense AI",
     "autonomous weapons",
     "cyber operations",
     "国防人工智能",

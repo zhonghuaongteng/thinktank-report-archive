@@ -1625,6 +1625,29 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("国防AI", scored.topic_tags)
 
+    def test_classified_dod_ai_work_is_defense_ai_signal(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="DOD expands its classified AI work with technology companies",
+            url="https://cset.georgetown.edu/article/dod-expands-classified-ai-work/",
+            summary=(
+                "The article explores the Pentagon's growing efforts to integrate "
+                "classified AI capabilities into military operations through partnerships "
+                "with private technology companies."
+            ),
+            published_date="2026-05-01",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn("国防AI", scored.topic_tags)
+        self.assertIn(scored.priority, {"P0", "P1", "P2"})
+
     def test_scoring_keeps_low_relevance_items_in_index_only(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")
