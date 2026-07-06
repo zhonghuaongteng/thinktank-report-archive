@@ -710,7 +710,7 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("- 建议：原文或现有摘要未检出明确政策建议", brief)
         self.assertIn("- 中国/上海参考：该材料对中国和上海具有参考价值", brief)
 
-    def test_render_weekly_brief_is_longer_and_places_comic_first(self):
+    def test_render_weekly_brief_uses_reader_structure_and_comic_pages_for_priority_items(self):
         candidates = [
             ArticleCandidate(
                 institution_slug=f"source-{index}",
@@ -731,9 +731,14 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         brief = render_weekly_brief_markdown("2026-07-05", candidates)
 
-        self.assertLess(brief.index("## 漫画导读"), brief.index("## 新增概览"))
-        self.assertEqual(brief.count("### [P1]"), 15)
-        self.assertIn("- 核心观点：创新支撑报告15讨论研发基础设施和产业化路径。", brief)
+        self.assertLess(brief.index("## 目录"), brief.index("## 导读漫画"))
+        self.assertLess(brief.index("## 导读漫画"), brief.index("## 章节展开"))
+        self.assertNotIn("## 新增概览", brief)
+        self.assertNotIn("## 最近写入", brief)
+        self.assertEqual(brief.count("### 漫画"), 15)
+        self.assertEqual(brief.count("#### [P1]"), 15)
+        self.assertIn("[创新支撑报告15](https://example.org/innovation/15)", brief)
+        self.assertIn("**核心观点**", brief)
 
     def test_write_daily_brief_creates_pdf_when_reportlab_is_available(self):
         try:
@@ -791,16 +796,19 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertEqual(Path(markdown_path).name, "2026-07-05_国际科技智库周报.md")
             self.assertEqual(Path(html_path).name, "2026-07-05_国际科技智库周报.html")
             self.assertEqual(Path(pdf_path).name, "2026-07-05_国际科技智库周报.pdf")
+            audit_path = Path(markdown_path).with_name("2026-07-05_国际科技智库周报_资料索引.md")
+            self.assertTrue(audit_path.exists())
             markdown = Path(markdown_path).read_text(encoding="utf-8")
             self.assertIn("# 国际科技智库周报（2026-07-05）", markdown)
-            self.assertIn("![漫画导读1](comic/weekly-tech-watch-sample/pages/01-page-weekly-tech-watch.png)", markdown)
-            self.assertIn("读图说明1：锚定报告：创新支撑；关键判断：政策工具必须服务于产业化路径。", markdown)
+            self.assertIn("## 目录", markdown)
+            self.assertIn("### 漫画 01｜[P1] [创新支撑](https://example.org/innovation)", markdown)
+            self.assertNotIn("## 新增概览", markdown)
             html = Path(html_path).read_text(encoding="utf-8")
-            self.assertIn(
-                '<img src="comic/weekly-tech-watch-sample/pages/01-page-weekly-tech-watch.png" alt="漫画导读1">',
-                html,
-            )
-            self.assertIn("读图说明1", html)
+            self.assertIn("comic-card", html)
+            self.assertIn('<a href="https://example.org/innovation">创新支撑</a>', html)
+            audit = audit_path.read_text(encoding="utf-8")
+            self.assertIn("## 新增概览", audit)
+            self.assertIn("## 最近写入", audit)
 
     def test_write_institution_table_exports_kb_schema(self):
         from thinktank_watch.kb import write_institution_table
