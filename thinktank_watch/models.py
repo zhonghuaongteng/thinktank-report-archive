@@ -21,6 +21,7 @@ class Institution:
     topic_pages: list[str] = field(default_factory=list)
     sitemap_urls: list[str] = field(default_factory=list)
     sitemap_include_keywords: list[str] = field(default_factory=list)
+    text_proxy_fallback: bool = False
     run_limit: int = 0
     notes: str = ""
 

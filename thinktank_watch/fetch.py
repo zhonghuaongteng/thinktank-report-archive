@@ -17,6 +17,7 @@ from .models import ArticleCandidate, Institution
 from .parsers.generic import (
     NON_CONTENT_LAST_SEGMENTS,
     canonical_date,
+    clean_detail_title,
     extract_list_links,
     looks_like_detail_url,
     norm,
@@ -34,6 +35,7 @@ USER_AGENT = (
 PDF_TEXT_MAX_PAGES = 10
 PDF_TEXT_MAX_CHARS = 24000
 PDF_TEXT_MIN_HTML_CHARS = 5000
+TEXT_PROXY_MIN_DETAIL_TEXT_LENGTH = 500
 SITEMAP_INDEX_MAX_CHILDREN = 20
 LIST_PAGE_FETCH_CAP = 3
 TOPIC_PAGE_FETCH_CAP = 8
@@ -142,6 +144,7 @@ SOURCE_LAST_SEGMENT_DENY = {
     "subscriptions",
     "policy-briefs",
     "publication",
+    "ceps-publications",
     "publications",
     "pubs",
     "research",
@@ -155,6 +158,31 @@ SOURCE_LAST_SEGMENT_DENY = {
 
 class ExternalSourceError(httpx.HTTPError):
     """Raised when an allowed source URL redirects to an external page."""
+
+
+MARKDOWN_LINK_RE = re.compile(r"\[([^\]]{1,240})\]\((https?://[^)\s]+)\)")
+TEXT_PROXY_BLOCKED_MARKERS = (
+    "please wait while your request is being verified",
+    "one moment, please",
+)
+TEXT_PROXY_TRIM_MARKERS = (
+    "About the Authors",
+    "About the Author",
+    "Related Publications",
+    "More CEPS Publications",
+    "The latest from",
+    "Recommended citation",
+    "Previous Next",
+    "Tags ",
+)
+TEXT_PROXY_DATE_RE = re.compile(
+    r"\b("
+    r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+20\d{2}"
+    r"|"
+    r"\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+20\d{2}"
+    r")\b",
+    re.IGNORECASE,
+)
 
 
 def _normalized_host(value: str) -> str:
@@ -204,7 +232,7 @@ def interleave_candidate_groups(groups: list[list[ArticleCandidate]]) -> list[Ar
 
 def source_url_allowed(url: str, institution: Institution) -> bool:
     parsed_source = urlparse(url)
-    if parsed_source.path.lower().endswith(".pdf"):
+    if re.search(r"\.(?:pdf|png|jpe?g|gif|webp|svg|ico)$", parsed_source.path.lower()):
         return False
     if any(key.lower() == "ecipemediapost" for key, _ in parse_qsl(parsed_source.query, keep_blank_values=True)):
         return False
@@ -217,6 +245,20 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
     path_segments = set(ordered_path_segments)
     last_segment = parsed_source.path.rstrip("/").split("/")[-1].lower()
     last_stem = last_segment[:-5] if last_segment.endswith(".html") else last_segment
+    if institution.slug == "nbr" and not (
+        len(ordered_path_segments) >= 2 and ordered_path_segments[0] == "publication"
+    ):
+        return False
+    if institution.slug == "ceps" and not (
+        len(ordered_path_segments) >= 2 and ordered_path_segments[0] == "ceps-publications"
+    ):
+        return False
+    if (
+        institution.slug == "alan-turing"
+        and len(ordered_path_segments) >= 3
+        and ordered_path_segments[:2] == ["news", "publications"]
+    ):
+        path_segments.discard("news")
     if path_segments & SOURCE_PATH_DENY_SEGMENTS:
         return False
     if last_segment in NON_CONTENT_LAST_SEGMENTS or last_stem in NON_CONTENT_LAST_SEGMENTS:
@@ -295,6 +337,172 @@ def fetch_feed_candidates(institution: Institution, limit: int = 20) -> list[Art
     return candidates
 
 
+def text_proxy_url(url: str) -> str:
+    parsed = urlparse(url)
+    if not parsed.netloc:
+        return url
+    target = urlunparse(("http", parsed.netloc, parsed.path or "/", "", parsed.query, ""))
+    return f"https://r.jina.ai/{target}"
+
+
+def fetch_text_proxy(client: httpx.Client, url: str) -> str:
+    response = client.get(text_proxy_url(url), timeout=45)
+    response.raise_for_status()
+    return response.text
+
+
+def extract_text_proxy_links(markdown_text: str, base_url: str, limit: int) -> list[tuple[str, str]]:
+    links: list[tuple[str, str]] = []
+    seen: set[str] = set()
+    for label, href in MARKDOWN_LINK_RE.findall(markdown_text):
+        if label.lstrip().startswith("!"):
+            continue
+        cleaned_label = norm(re.sub(r"!\[[^\]]*\]\([^)]+\)", " ", label))
+        cleaned_href = urljoin(base_url, href.strip())
+        if "#" in cleaned_href:
+            cleaned_href = cleaned_href.split("#", 1)[0]
+        if not cleaned_label or cleaned_href in seen:
+            continue
+        seen.add(cleaned_href)
+        links.append((cleaned_label, cleaned_href))
+        if len(links) >= limit:
+            break
+    return links
+
+
+def _title_from_text_proxy(markdown_text: str, institution: Institution) -> str:
+    match = re.search(r"^Title:\s*(.+)$", markdown_text, re.MULTILINE)
+    if not match:
+        return ""
+    return clean_detail_title(match.group(1), institution)
+
+
+def _published_time_from_text_proxy(markdown_text: str) -> str:
+    match = re.search(r"^Published Time:\s*(.+)$", markdown_text, re.MULTILINE)
+    return _date_from_feed(match.group(1)) if match else ""
+
+
+def _markdown_content(markdown_text: str) -> str:
+    marker = "Markdown Content:"
+    if marker in markdown_text:
+        return markdown_text.split(marker, 1)[1]
+    return markdown_text
+
+
+def _text_proxy_body_window(markdown_text: str, title: str) -> str:
+    content = _markdown_content(markdown_text)
+    if title:
+        index = content.lower().find(title.lower())
+        if index >= 0:
+            content = content[index:]
+    cutoff = len(content)
+    for marker in TEXT_PROXY_TRIM_MARKERS:
+        marker_index = content.find(marker)
+        if marker_index > 500:
+            cutoff = min(cutoff, marker_index)
+    return content[:cutoff]
+
+
+def _clean_text_proxy_markdown(markdown_text: str) -> str:
+    text = re.sub(r"!\[[^\]]*\]\([^)]+\)", " ", markdown_text)
+    text = re.sub(r"\[([^\]]+)\]\((https?://[^)]+)\)", r"\1", text)
+    text = re.sub(r"^#+\s*", "", text, flags=re.MULTILINE)
+    text = re.sub(r"[*_`>#|]+", " ", text)
+    return norm(text)
+
+
+def _text_proxy_visible_date(window: str) -> str:
+    match = TEXT_PROXY_DATE_RE.search(norm(window[:4000]))
+    return canonical_date(match.group(1)) if match else ""
+
+
+def _authors_from_text_proxy(window: str, title: str) -> list[str]:
+    title_index = window.lower().find(title.lower()) if title else -1
+    head = window[title_index : title_index + 1200] if title_index >= 0 else window[:1200]
+    ceps_authors = [
+        norm(label)
+        for label, href in MARKDOWN_LINK_RE.findall(head)
+        if "/ceps-staff/" in href and norm(label)
+    ]
+    if ceps_authors:
+        return list(dict.fromkeys(ceps_authors))
+    date_pattern = (
+        r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+20\d{2}"
+        r"|\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+20\d{2}"
+    )
+    match = re.search(rf"\bby\s+(.{{2,160}}?)\s+({date_pattern})", head, re.IGNORECASE)
+    if not match:
+        return []
+    return [norm(part) for part in re.split(r"\s+(?:and|&)\s+|,\s*", match.group(1)) if norm(part)]
+
+
+def parse_text_proxy_detail(
+    markdown_text: str,
+    candidate: ArticleCandidate,
+    institution: Institution,
+) -> ArticleCandidate:
+    lowered = markdown_text.lower()
+    if any(marker in lowered for marker in TEXT_PROXY_BLOCKED_MARKERS):
+        candidate.fetch_status = "detail_error:text_proxy_blocked"
+        candidate.copyright_boundary = institution.copyright_boundary
+        return candidate
+
+    title = _title_from_text_proxy(markdown_text, institution) or candidate.title
+    window = _text_proxy_body_window(markdown_text, title)
+    pdf_url = ""
+    for label, href in extract_text_proxy_links(window, candidate.url, limit=200):
+        if href.lower().split("?", 1)[0].endswith(".pdf") or "pdf" in label.lower() or "download publication" in label.lower():
+            pdf_url = href
+            break
+    detail_text = _clean_text_proxy_markdown(window)
+    summary = detail_text[:900]
+    visible_date = _text_proxy_visible_date(window)
+    published_time = _published_time_from_text_proxy(markdown_text)
+    published_date = visible_date or (published_time if institution.slug != "nbr" else "") or candidate.published_date
+
+    return ArticleCandidate(
+        institution_slug=institution.slug,
+        institution_name=institution.name,
+        institution_type=institution.institution_type,
+        title=title,
+        url=candidate.url,
+        published_date=published_date,
+        summary=summary or candidate.summary,
+        content_type=candidate.content_type if candidate.content_type != "list_item" else "article",
+        authors=_authors_from_text_proxy(window, title) or candidate.authors,
+        keywords=candidate.keywords,
+        subjects=candidate.subjects,
+        pdf_url=pdf_url or candidate.pdf_url,
+        pdf_status=candidate.pdf_status,
+        external_source_url=candidate.external_source_url,
+        source_completeness="full_text" if len(detail_text) >= TEXT_PROXY_MIN_DETAIL_TEXT_LENGTH else "summary_only",
+        copyright_boundary=institution.copyright_boundary,
+        fetch_status="detail_ok:text_proxy",
+        detail_text=detail_text,
+    )
+
+
+def _list_candidate_from_link(
+    institution: Institution,
+    title: str,
+    link: str,
+    fetch_status: str,
+) -> ArticleCandidate:
+    candidate_title = norm(title)
+    if not candidate_title or candidate_title.lower() in {"read more", "learn more", "view all publications"}:
+        candidate_title = link.rstrip("/").split("/")[-1].replace("-", " ").replace(".html", "").title()
+    return ArticleCandidate(
+        institution_slug=institution.slug,
+        institution_name=institution.name,
+        institution_type=institution.institution_type,
+        title=candidate_title,
+        url=link,
+        content_type="list_item",
+        copyright_boundary=institution.copyright_boundary,
+        fetch_status=fetch_status,
+    )
+
+
 def fetch_list_candidates(
     client: httpx.Client,
     institution: Institution,
@@ -304,12 +512,15 @@ def fetch_list_candidates(
     seen: set[str] = set()
     pages = [*institution.list_pages[:LIST_PAGE_FETCH_CAP], *institution.topic_pages[:TOPIC_PAGE_FETCH_CAP]]
     for page in pages:
+        page_added = 0
         try:
             response = client.get(page, timeout=30)
             response.raise_for_status()
+            static_error = False
         except httpx.HTTPError:
-            continue
-        if institution.slug == "stepi":
+            static_error = True
+            response = None
+        if response is not None and institution.slug == "stepi":
             page_candidates = extract_stepi_publication_candidates(response.text, page, institution, limit)
             for candidate in page_candidates:
                 if not source_url_allowed(candidate.url, institution):
@@ -319,33 +530,45 @@ def fetch_list_candidates(
                     continue
                 seen.add(key)
                 candidates.append(candidate)
+                page_added += 1
                 if len(candidates) >= limit:
                     break
             if len(candidates) >= limit:
                 break
             continue
-        links = extract_list_links(response.text, page, max(limit * 8, LIST_LINK_EXTRACTION_CAP))
-        for link in links:
-            if not source_url_allowed(link, institution):
-                continue
-            key = dedupe_key(link)
-            if key in seen:
-                continue
-            seen.add(key)
-            candidates.append(
-                ArticleCandidate(
-                    institution_slug=institution.slug,
-                    institution_name=institution.name,
-                    institution_type=institution.institution_type,
-                    title=link.rstrip("/").split("/")[-1].replace("-", " ").title(),
-                    url=link,
-                    content_type="list_item",
-                    copyright_boundary=institution.copyright_boundary,
-                    fetch_status="list_ok",
-                )
-            )
-            if len(candidates) >= limit:
-                break
+        if response is not None:
+            links = extract_list_links(response.text, page, max(limit * 8, LIST_LINK_EXTRACTION_CAP))
+            for link in links:
+                if not source_url_allowed(link, institution):
+                    continue
+                key = dedupe_key(link)
+                if key in seen:
+                    continue
+                seen.add(key)
+                candidates.append(_list_candidate_from_link(institution, "", link, "list_ok"))
+                page_added += 1
+                if len(candidates) >= limit:
+                    break
+        if (
+            institution.text_proxy_fallback
+            and len(candidates) < limit
+            and (static_error or page_added == 0)
+        ):
+            try:
+                markdown_text = fetch_text_proxy(client, page)
+            except httpx.HTTPError:
+                markdown_text = ""
+            if markdown_text:
+                for label, link in extract_text_proxy_links(markdown_text, page, limit=1000):
+                    if not source_url_allowed(link, institution):
+                        continue
+                    key = dedupe_key(link)
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    candidates.append(_list_candidate_from_link(institution, label, link, "text_proxy_list_ok"))
+                    if len(candidates) >= limit:
+                        break
         if len(candidates) >= limit:
             break
     return candidates[:limit]
@@ -431,8 +654,14 @@ def sitemap_soups(client: httpx.Client, sitemap_url: str) -> list[BeautifulSoup]
 
 
 def fetch_detail(client: httpx.Client, institution: Institution, candidate: ArticleCandidate) -> ArticleCandidate:
-    response = client.get(candidate.url, timeout=30, follow_redirects=True)
-    response.raise_for_status()
+    try:
+        response = client.get(candidate.url, timeout=30, follow_redirects=True)
+        response.raise_for_status()
+    except httpx.HTTPError:
+        if institution.text_proxy_fallback:
+            markdown_text = fetch_text_proxy(client, candidate.url)
+            return parse_text_proxy_detail(markdown_text, candidate, institution)
+        raise
     if not source_url_allowed(str(response.url), institution):
         raise ExternalSourceError(f"detail redirected outside allowed domains: {response.url}")
     if institution.parser == "rand":

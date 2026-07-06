@@ -8,8 +8,10 @@ from thinktank_watch.fetch import fetch_list_candidates
 from thinktank_watch.fetch import fetch_sitemap_candidates
 from thinktank_watch.fetch import interleave_candidate_groups
 from thinktank_watch.fetch import needs_pdf_text_fallback
+from thinktank_watch.fetch import parse_text_proxy_detail
 from thinktank_watch.fetch import sitemap_include_keyword_matches
 from thinktank_watch.fetch import source_url_allowed
+from thinktank_watch.fetch import text_proxy_url
 from thinktank_watch.models import ArticleCandidate
 from thinktank_watch.models import Institution
 
@@ -331,6 +333,74 @@ class FetchCandidateTests(unittest.TestCase):
         self.assertTrue(
             source_url_allowed(
                 "https://www.csis.org/analysis/old-new-making-innovation-work-everyone",
+                institution,
+            )
+        )
+
+    def test_source_url_allowed_accepts_alan_turing_publication_details(self):
+        institution = Institution(
+            slug="alan-turing",
+            name="The Alan Turing Institute",
+            chinese_name="艾伦图灵研究所",
+            country_region="United Kingdom",
+            institution_type="research_institute",
+            priority="P1",
+            batch=1,
+            homepage="https://www.turing.ac.uk/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(source_url_allowed("https://www.turing.ac.uk/news/publications", institution))
+        self.assertTrue(
+            source_url_allowed(
+                "https://www.turing.ac.uk/news/publications/evidence-pack-ai-grid-operations",
+                institution,
+            )
+        )
+
+    def test_source_url_allowed_restricts_nbr_to_publication_details(self):
+        institution = Institution(
+            slug="nbr",
+            name="National Bureau of Asian Research Technology and Geoeconomic Affairs",
+            chinese_name="美国国家亚洲研究局技术与地缘经济事务项目",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P1",
+            batch=1,
+            homepage="https://www.nbr.org/program/technology-and-geoeconomic-affairs/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(source_url_allowed("https://www.nbr.org/for-media/", institution))
+        self.assertFalse(source_url_allowed("https://www.nbr.org/wp-content/uploads/2018/03/logo-1.png", institution))
+        self.assertTrue(
+            source_url_allowed(
+                "https://www.nbr.org/publication/analyzing-national-quantum-computing-ecosystems-in-the-indo-pacific/",
+                institution,
+            )
+        )
+
+    def test_source_url_allowed_restricts_ceps_to_publication_details(self):
+        institution = Institution(
+            slug="ceps",
+            name="Centre for European Policy Studies",
+            chinese_name="欧洲政策研究中心",
+            country_region="European Union",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://www.ceps.eu/ceps-topics/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(source_url_allowed("https://www.ceps.eu/ceps-topic/ai-digitalisation-innovation/", institution))
+        self.assertFalse(source_url_allowed("https://www.ceps.eu/ceps-publications/", institution))
+        self.assertTrue(
+            source_url_allowed(
+                "https://www.ceps.eu/ceps-publications/shared-gains-secure-links-rethinking-eu-asia-digital-cooperation/",
                 institution,
             )
         )
@@ -763,6 +833,181 @@ class FetchCandidateTests(unittest.TestCase):
             [item.url for item in candidates],
             ["https://www.hoover.org/research/deep-peek-deepseek-ais-talent-and-implications-us-innovation"],
         )
+
+    def test_list_candidates_use_text_proxy_fallback_when_static_page_is_blocked(self):
+        page_url = "https://www.ceps.eu/ceps-topic/ai-digitalisation-innovation/"
+        markdown = """
+        Title: AI, digitalisation and innovation - CEPS
+        Markdown Content:
+        [Publications](https://www.ceps.eu/ceps-publications/)
+        [Shared gains, secure links: rethinking EU-Asia digital cooperation](https://www.ceps.eu/ceps-publications/shared-gains-secure-links-rethinking-eu-asia-digital-cooperation/)
+        """
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            if str(request.url) == page_url:
+                return httpx.Response(403, request=request)
+            if str(request.url) == text_proxy_url(page_url):
+                return httpx.Response(200, text=markdown, request=request)
+            return httpx.Response(404, request=request)
+
+        institution = Institution(
+            slug="ceps",
+            name="Centre for European Policy Studies",
+            chinese_name="欧洲政策研究中心",
+            country_region="European Union",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://www.ceps.eu/ceps-topics/",
+            parser="generic",
+            copyright_boundary="private_archive",
+            topic_pages=[page_url],
+            text_proxy_fallback=True,
+        )
+
+        with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+            candidates = fetch_list_candidates(client, institution, limit=5)
+
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(
+            candidates[0].url,
+            "https://www.ceps.eu/ceps-publications/shared-gains-secure-links-rethinking-eu-asia-digital-cooperation/",
+        )
+        self.assertEqual(candidates[0].title, "Shared gains, secure links: rethinking EU-Asia digital cooperation")
+        self.assertEqual(candidates[0].fetch_status, "text_proxy_list_ok")
+
+    def test_text_proxy_link_extraction_skips_image_links(self):
+        markdown = """
+        [![Image 1: Logo](https://www.nbr.org/wp-content/uploads/logo.png)](https://www.nbr.org/)
+        [Analyzing National Quantum-Computing Ecosystems](https://www.nbr.org/publication/analyzing-national-quantum-computing-ecosystems-in-the-indo-pacific/)
+        """
+
+        from thinktank_watch.fetch import extract_text_proxy_links
+
+        links = extract_text_proxy_links(markdown, "https://www.nbr.org/program/technology-and-geoeconomic-affairs/", limit=10)
+
+        self.assertEqual(
+            links,
+            [
+                (
+                    "Analyzing National Quantum-Computing Ecosystems",
+                    "https://www.nbr.org/publication/analyzing-national-quantum-computing-ecosystems-in-the-indo-pacific/",
+                )
+            ],
+        )
+
+
+    def test_fetch_detail_uses_text_proxy_fallback_on_static_403(self):
+        detail_url = "https://www.nbr.org/publication/analyzing-national-quantum-computing-ecosystems-in-the-indo-pacific/"
+        markdown = """
+        Title: Analyzing National Quantum-Computing Ecosystems in the Indo-Pacific
+        URL Source: http://www.nbr.org/publication/analyzing-national-quantum-computing-ecosystems-in-the-indo-pacific/
+        Published Time: Mon, 06 Jul 2026 03:56:40 GMT
+        Markdown Content:
+        # Analyzing National Quantum-Computing Ecosystems in the Indo-Pacific
+        by Hodan Omaar   March 25, 2026
+        Hodan Omaar examines the quantum-computing ecosystems of the United States, China, Japan, and South Korea.
+        [DOWNLOAD THE PDF](https://www.nbr.org/wp-content/uploads/pdfs/publications/report-omaar-mar26.pdf)
+        Quantum computing is emerging as a foundational technology with implications for national security, advanced manufacturing, communications, and long-term economic competitiveness. Governments across the Indo-Pacific are investing in it heavily.
+        """
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            if str(request.url) == detail_url:
+                return httpx.Response(403, request=request)
+            if str(request.url) == text_proxy_url(detail_url):
+                return httpx.Response(200, text=markdown, request=request)
+            return httpx.Response(404, request=request)
+
+        institution = Institution(
+            slug="nbr",
+            name="National Bureau of Asian Research Technology and Geoeconomic Affairs",
+            chinese_name="美国国家亚洲研究局技术与地缘经济事务项目",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P1",
+            batch=1,
+            homepage="https://www.nbr.org/program/technology-and-geoeconomic-affairs/",
+            parser="generic",
+            copyright_boundary="private_archive",
+            text_proxy_fallback=True,
+        )
+        candidate = ArticleCandidate(
+            institution_slug=institution.slug,
+            institution_name=institution.name,
+            institution_type=institution.institution_type,
+            title="Analyzing National Quantum Computing Ecosystems In The Indo Pacific",
+            url=detail_url,
+        )
+
+        with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+            detail = fetch_detail(client, institution, candidate)
+
+        self.assertEqual(detail.fetch_status, "detail_ok:text_proxy")
+        self.assertEqual(detail.published_date, "2026-03-25")
+        self.assertEqual(detail.authors, ["Hodan Omaar"])
+        self.assertEqual(detail.pdf_url, "https://www.nbr.org/wp-content/uploads/pdfs/publications/report-omaar-mar26.pdf")
+        self.assertIn("Quantum computing is emerging as a foundational technology", detail.detail_text)
+
+    def test_parse_text_proxy_detail_marks_blocked_verification_pages(self):
+        institution = Institution(
+            slug="alan-turing",
+            name="The Alan Turing Institute",
+            chinese_name="艾伦图灵研究所",
+            country_region="United Kingdom",
+            institution_type="research_institute",
+            priority="P1",
+            batch=1,
+            homepage="https://www.turing.ac.uk/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+        candidate = ArticleCandidate(
+            institution_slug=institution.slug,
+            institution_name=institution.name,
+            institution_type=institution.institution_type,
+            title="Evidence pack for AI grid operations",
+            url="https://www.turing.ac.uk/news/publications/evidence-pack-ai-grid-operations",
+        )
+
+        detail = parse_text_proxy_detail(
+            "Title: One moment, please...\nMarkdown Content:\nPlease wait while your request is being verified.",
+            candidate,
+            institution,
+        )
+
+        self.assertEqual(detail.fetch_status, "detail_error:text_proxy_blocked")
+
+    def test_parse_text_proxy_detail_does_not_use_nbr_proxy_cache_date(self):
+        institution = Institution(
+            slug="nbr",
+            name="National Bureau of Asian Research Technology and Geoeconomic Affairs",
+            chinese_name="美国国家亚洲研究局技术与地缘经济事务项目",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P1",
+            batch=1,
+            homepage="https://www.nbr.org/program/technology-and-geoeconomic-affairs/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+        candidate = ArticleCandidate(
+            institution_slug=institution.slug,
+            institution_name=institution.name,
+            institution_type=institution.institution_type,
+            title="A Framework for Deeper U.S.-Japan Quantum Cooperation",
+            url="https://www.nbr.org/publication/a-framework-for-deeper-u-s-japan-quantum-cooperation/",
+        )
+        markdown = """
+        Title: A Framework for Deeper U.S.-Japan Quantum Cooperation
+        Published Time: Mon, 06 Jul 2026 04:24:25 GMT
+        Markdown Content:
+        The United States and Japan are positioning their alliance for deeper quantum cooperation.
+        This report discusses technology partnerships, standards, and strategic competition.
+        """
+
+        detail = parse_text_proxy_detail(markdown, candidate, institution)
+
+        self.assertEqual(detail.published_date, "")
 
     def test_interleave_candidate_groups_preserves_source_diversity_and_dedupes_urls(self):
         def candidate(title: str, url: str) -> ArticleCandidate:

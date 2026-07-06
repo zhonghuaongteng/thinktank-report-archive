@@ -57,7 +57,7 @@ Each archived Markdown file now treats the Chinese summary as a research card ra
 
 Weekly briefs expand more material than historical daily briefs: up to 18 P0/P1 items, longer per-item summary text, 12 visible technology-innovation support items, 18 broad innovation-support items, 12 China/Shanghai items, and 160 index lines. The weekly P0/P1 section renders the same three-part summary fields so that each priority report exposes its core argument, policy or action advice, and China/Shanghai reference value.
 
-Weekly briefs also reserve a front `漫画导读` section. Markdown, HTML, and PDF weekly outputs now render the comic opener before the overview section. The current candidate style is the single-report issue-diagnosis sample under `comic/weekly-tech-watch-v5/`; it uses one anchor report, a visible mechanism diagram, report-specific evidence, and Shanghai-facing action questions. `comic/weekly-tech-watch-v4/`, `comic/weekly-tech-watch-v3/`, `comic/weekly-tech-watch-v2/`, and the older four-panel sample are retained only as comparison candidates. Automated comic generation should be wired only after the visual style is accepted.
+Weekly briefs also reserve a front `漫画导读` section. Markdown, HTML, and PDF weekly outputs now render the comic opener before the overview section. The current candidate style is the failure-diagnosis sample under `comic/weekly-tech-watch-v6/`; it uses one anchor report, a visible blockage, affected actors, evidence/action cards, and Shanghai-facing repair tools. `comic/weekly-tech-watch-v5/`, `comic/weekly-tech-watch-v4/`, `comic/weekly-tech-watch-v3/`, `comic/weekly-tech-watch-v2/`, and the older four-panel sample are retained only as comparison candidates. Automated comic generation should be wired only after the visual style is accepted and generated Chinese text is manually checked.
 
 ## Outputs
 
@@ -65,8 +65,8 @@ Weekly briefs also reserve a front `漫画导读` section. Markdown, HTML, and P
 - `archive/{institution}/{year}/`: one Markdown file per article/report.
 - `briefs/weekly/{year}/`: weekly Markdown, HTML, and PDF briefs.
 - `briefs/daily/{year}/`: historical daily Markdown, HTML, and PDF briefs retained for compatibility.
-- `comic/weekly-tech-watch-v5/`: current single-report issue-diagnosis sample analysis, storyboard, prompts, and pages for weekly comic openers.
-- `comic/weekly-tech-watch-v4/`, `comic/weekly-tech-watch-v3/`, `comic/weekly-tech-watch-v2/`, `comic/weekly-tech-watch-sample/`: older comparison samples.
+- `comic/weekly-tech-watch-v6/`: current failure-diagnosis sample analysis, storyboard, prompts, and page for weekly comic openers.
+- `comic/weekly-tech-watch-v5/`, `comic/weekly-tech-watch-v4/`, `comic/weekly-tech-watch-v3/`, `comic/weekly-tech-watch-v2/`, `comic/weekly-tech-watch-sample/`: older comparison samples.
 - `state/articles.sqlite`: dedupe and run state.
 - `reports/{date}_source_health.csv`: read-only source health report.
 - Knowledge-base index target: `C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库\06_数据资产\研报_国际智库抓取索引.csv`.
@@ -87,7 +87,7 @@ The local Codex automation `国际科技智库每周抓取` runs every Sunday at
 - ASPI's main site returns Cloudflare 403 to static requests; The Strategist is configured as an explicit auxiliary ASPI domain.
 - Belfer uses Drupal sitemap indexes; sitemap candidates are sorted by `lastmod` before truncation so recent science, technology, cyber, innovation, and space materials are not crowded out by older sitemap pages.
 - RUSI uses `https://www.rusi.org/sitemap-index.xml` for defense technology, cyber, AI, China, supply-chain, and innovation-support backfill. Media mentions, networks, event recordings, and booking-form pages are filtered before scoring.
-- CEPS RSS and detail pages are unstable or blocked for static requests. CEPS remains in the institution table, but this source should be treated as metadata/health-check first until a browser-backed parser is added.
+- CEPS and NBR can use the explicit `text_proxy_fallback` route when static requests are blocked. This route is source-specific, remains subject to same-domain and publication-detail filters, and should be validated with `evaluate` before any resumed backfill write.
 - Slow or high-noise sources can set `run_limit` in `config/institutions/*.yaml`; auxiliary official domains can be listed under `allowed_domains`.
 
 ## Copyright Boundary

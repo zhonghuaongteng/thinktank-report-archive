@@ -36,6 +36,7 @@ def load_institutions(config_dir: str | Path) -> list[Institution]:
                 topic_pages=list(data.get("topic_pages") or []),
                 sitemap_urls=list(data.get("sitemap_urls") or []),
                 sitemap_include_keywords=list(data.get("sitemap_include_keywords") or []),
+                text_proxy_fallback=bool(data.get("text_proxy_fallback", False)),
                 run_limit=int(data.get("run_limit") or 0),
                 notes=data.get("notes", ""),
             )

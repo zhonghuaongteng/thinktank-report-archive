@@ -75,6 +75,18 @@ class ConfigAndScoringTests(unittest.TestCase):
         )
         self.assertGreaterEqual(hoover.run_limit, 20)
 
+    def test_text_proxy_fallback_is_limited_to_static_blocked_sources(self):
+        institutions = load_institutions("config/institutions")
+        ceps = next(item for item in institutions if item.slug == "ceps")
+        nbr = next(item for item in institutions if item.slug == "nbr")
+        rand = next(item for item in institutions if item.slug == "rand")
+
+        self.assertTrue(ceps.text_proxy_fallback)
+        self.assertTrue(nbr.text_proxy_fallback)
+        self.assertFalse(rand.text_proxy_fallback)
+        self.assertEqual(ceps.list_pages, [])
+        self.assertGreaterEqual(nbr.run_limit, 8)
+
     def test_rand_sitemap_prefers_publication_paths_not_center_pages(self):
         institutions = load_institutions("config/institutions")
         rand = next(item for item in institutions if item.slug == "rand")
