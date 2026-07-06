@@ -45,13 +45,20 @@ class RepositoryPolicyTests(unittest.TestCase):
         strategy = Path("docs/retrieval_strategy.md").read_text(encoding="utf-8")
         comic_doc = Path("docs/weekly_comic_generation.md").read_text(encoding="utf-8")
         comic_pref = Path(".baoyu-skills/baoyu-comic/EXTEND.md").read_text(encoding="utf-8")
+        image_pref = Path(".baoyu-skills/baoyu-image-gen/EXTEND.md").read_text(encoding="utf-8")
 
-        for text in (strategy, comic_doc, comic_pref):
+        for text in (strategy, comic_doc, comic_pref, image_pref):
             self.assertIn("Codex", text)
             self.assertIn("不强行", text)
             self.assertIn("中国", text)
             self.assertIn("上海", text)
         self.assertIn("不得回退为程序化示意图", comic_doc)
+        for text in (strategy, comic_doc, comic_pref):
+            self.assertIn("科普化", text)
+            self.assertIn("可视化", text)
+            self.assertIn("证据配图", text)
+        self.assertIn("不读原报告", comic_doc)
+        self.assertIn("报告对象 -> 中心判断 -> 论述线索 -> 影响路径", strategy)
         self.assertIn("check_weekly_comics.ps1", strategy)
 
     def test_evaluate_sources_script_is_read_only(self):

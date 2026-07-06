@@ -290,12 +290,12 @@ institution: {candidate.institution_name}
 source_url: {candidate.url}
 output: ../pages/{basename}.jpg
 aspect_ratio: "16:9"
-style: "Codex-generated single-report evidence-chain policy comic"
+style: "Codex-generated explanatory viewpoint comic"
 ---
 
 # 主题 {index:02d} 漫画提示词
 
-请生成一张 16:9 横版知识漫画，用于国际科技智库周报的单篇主题页。画面必须是漫画叙事场景，不得画成流程图、PPT 示意图、仪表盘模板或纯信息图。
+请生成一张 16:9 横版知识漫画，用于国际科技智库周报的单篇主题页。画面必须是漫画叙事场景，不得画成流程图、PPT 示意图、仪表盘模板或纯信息图。漫画不需要完整复刻报告论证链，重点是用科普化、可视化的视角让读者快速看懂文章观点。
 
 ## 报告锚点
 
@@ -314,13 +314,14 @@ style: "Codex-generated single-report evidence-chain policy comic"
 ## 分镜要求
 
 1. 第一格呈现报告识别到的关键信号，必须让读者一眼看出研究对象。
-2. 第二格呈现核心机制、矛盾或瓶颈，用具体场景表现资源、制度、产业链、算力、人才、标准、供应链或治理工具之间的关系。
-3. 第三格呈现报告提出或隐含的政策含义、行动工具、风险修复路径或机会窗口。
+2. 第二格把报告观点转译成可视化场景，可以使用比喻、人物行动、实验台、城市系统、产业现场、数据屏、地图、技术栈、供应链剖面或政策工具箱。
+3. 第三格突出报告最重要的解释：为什么这个问题重要，影响会如何传导，哪些主体会受影响。逻辑不必求全，但必须抓住文章观点。
 4. 第四格收束到报告最重要的核心判断。不要强行落到中国或上海；只有原报告、摘要或资料标签存在明确涉华、涉沪或可操作参照时，才把中国/上海作为最后一格内容。否则，最后一格应突出报告本身的中心结论。
+5. 证据配图转译：如果报告正文、摘要或图注中出现图表、数据曲线、地图、技术架构图、供应链图、照片或其他证据配图线索，可将其转译为漫画中的报告页、屏幕、白板、证据卡或背景装置；后续若自动化提供真实参考图，可作为参考素材纳入，但不得凭空复制未取得的原图。
 
 ## 视觉约束
 
-- 风格：清线条、政策研判漫画、真实场景、明确冲突、适合嵌入 PDF。
+- 风格：清线条、知识科普漫画、真实场景、明确视觉焦点、适合嵌入 PDF。
 - 画面文字尽量短，优先使用大标题、路标、标签和少量中文短句；不要依赖大段图中文字解释观点。
 - 机构名称只作为来源标识，不作为视觉主角。
 - 不要出现“主题机制图解”“示意图”“占位图”等字样。
@@ -343,7 +344,7 @@ def write_weekly_comic_prompts(
     manifest_lines = [
         f"# {date} 周报 Codex 漫画生成清单",
         "",
-        "本目录用于未来周报的逐条 P0/P1 Codex 漫画生成。漫画应突出报告核心观点；最后一格不强行转向中国或上海，只有报告存在明确涉华、涉沪或可操作参照时才纳入。",
+        "本目录用于未来周报的逐条 P0/P1 Codex 漫画生成。漫画应从科普化、可视化角度突出报告核心观点，不要求完整复刻报告论证链；最后一格不强行转向中国或上海，只有报告存在明确涉华、涉沪或可操作参照时才纳入。",
         "",
     ]
     for index, item in enumerate(priority_items, 1):
@@ -635,13 +636,27 @@ def _weekly_pdf_core_text(value: str) -> str:
     return _WEEKLY_PDF_NON_CORE_LABEL_PATTERN.split(core, maxsplit=1)[0].strip()
 
 
+def _weekly_pdf_article_title(candidate: ArticleCandidate) -> str:
+    return _clean_text(candidate.chinese_title or candidate.title or "未命名报告")
+
+
+def _strip_weekly_pdf_argument_label(value: str) -> str:
+    return re.sub(r"^(?:核心矛盾|传导链条)[:：]\s*", "", _clean_text(value)).strip()
+
+
 def _weekly_pdf_main_argument(candidate: ArticleCandidate, sections: dict[str, str]) -> str:
     core = _weekly_pdf_core_text(sections["核心观点"])
-    transmission = re.sub(r"阅读时应追问.*$", "", _clean_text(_comic_transmission(candidate))).strip()
+    source_title = _weekly_pdf_article_title(candidate)
+    if core:
+        lead = f"这篇报告讨论的是“{source_title}”。核心判断是：{core}"
+    else:
+        lead = f"这篇报告讨论的是“{source_title}”。核心判断需回到原文进一步补全，但该条目已被识别为本周 P0/P1 重点。"
+    tension = _strip_weekly_pdf_argument_label(_comic_tension(candidate))
+    transmission = re.sub(r"阅读时应追问.*$", "", _strip_weekly_pdf_argument_label(_comic_transmission(candidate))).strip()
     parts = [
-        core,
-        _clean_text(_comic_tension(candidate)),
-        transmission,
+        lead,
+        f"报告的论述线索集中在：{tension}" if tension else "",
+        f"影响路径可以概括为：{transmission}" if transmission else "",
     ]
     unique_parts: list[str] = []
     for part in parts:
@@ -1431,7 +1446,7 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
         title = candidate.chinese_title or candidate.title
         draw.text((62, 150), _short_text(title, 52), font=body_font, fill="#172026")
         draw.text((62, 222), "本页禁止回退为程序化示意图；生成真实漫画 PNG 后自动嵌入周报。", font=small_font, fill="#5f6b75")
-        draw.text((62, 276), "目标样式：单篇报告证据链式政策漫画，呈现机制、冲突、建议与上海参考。", font=small_font, fill="#5f6b75")
+        draw.text((62, 276), "目标样式：单篇报告观点科普漫画，呈现核心观点、视觉证据和主要影响。", font=small_font, fill="#5f6b75")
         buffer = BytesIO()
         image.save(buffer, format="PNG")
         buffer.seek(0)

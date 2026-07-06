@@ -807,9 +807,15 @@ class ArchiveAndBriefTests(unittest.TestCase):
             text = prompts[0].read_text(encoding="utf-8")
             self.assertIn("不要强行落到中国或上海", text)
             self.assertIn("最后一格应突出报告本身的中心结论", text)
+            self.assertIn("科普化", text)
+            self.assertIn("可视化", text)
+            self.assertIn("不需要完整复刻报告论证链", text)
+            self.assertIn("证据配图转译", text)
+            self.assertIn("图表、数据曲线、地图", text)
             self.assertIn("公共研发基础设施会影响企业技术吸收", text)
             manifest = prompts[0].parents[1] / "manifest.md"
             self.assertTrue(manifest.exists())
+            self.assertIn("科普化、可视化", manifest.read_text(encoding="utf-8"))
 
     def test_write_daily_brief_creates_pdf_when_reportlab_is_available(self):
         try:
@@ -902,6 +908,11 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertIn("政策含义与参考", pdf_text)
             self.assertNotIn("追踪问题", pdf_text)
             core_segment = pdf_text.split("核心观点与论述", 1)[1].split("政策含义与参考", 1)[0]
+            self.assertIn("这篇报告讨论的是“创新支撑”", core_segment)
+            self.assertIn("核心判断是：创新支撑报告讨论研发基础设施和产业化路径", core_segment)
+            self.assertIn("报告的论述线索", core_segment)
+            self.assertIn("集中在", core_segment)
+            self.assertIn("影响路径可以概括为", core_segment)
             self.assertNotIn("建议：", core_segment)
             self.assertNotIn("中国/上海参考", core_segment)
             self.assertIn("建立需求测算、资源分配和使用绩效规则", pdf_text)
