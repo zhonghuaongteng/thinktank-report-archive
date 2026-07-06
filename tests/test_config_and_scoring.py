@@ -1739,6 +1739,70 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertEqual(scored.priority, "P3")
         self.assertNotIn("AI治理", scored.topic_tags)
 
+    def test_space_policy_and_entrepreneurship_ecosystem_enter_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        profile = load_search_profiles("config/search_profiles.yaml")["broad_innovation_support"]
+        candidate = ArticleCandidate(
+            institution_slug="carnegie-tech",
+            institution_name="Carnegie Technology and International Affairs Program",
+            institution_type="think_tank",
+            title="A Review of India's 2023 Space Policy and Entrepreneurship Ecosystem",
+            url="https://carnegieendowment.org/india/research/2026/05/indian-space-policy-review-entrepreneurship-and-innovation-ecosystem",
+            summary="Policy review of commercial space, space startups, and the entrepreneurship ecosystem.",
+            published_date="2026-06-01",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertTrue(candidate_matches_search_profile(scored, profile))
+
+    def test_nuclear_energy_supply_for_hyperscalers_enters_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        profile = load_search_profiles("config/search_profiles.yaml")["broad_innovation_support"]
+        candidate = ArticleCandidate(
+            institution_slug="carnegie-tech",
+            institution_name="Carnegie Technology and International Affairs Program",
+            institution_type="think_tank",
+            title="Beyond the Hype: Assessing Hyperscaler Nuclear Commitments Against U.S. Energy Realities",
+            url="https://carnegieendowment.org/research/2026/06/beyond-the-hype-assessing-hyperscaler-nuclear-commitments-against-us-energy-realities",
+            summary="Analysis of nuclear energy, advanced nuclear, and hyperscaler nuclear commitments for data center power demand.",
+            published_date="2026-06-02",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("先进制造", scored.topic_tags)
+        self.assertIn("数字经济", scored.topic_tags)
+        self.assertTrue(candidate_matches_search_profile(scored, profile))
+
+    def test_commercial_fusion_energy_is_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        profile = load_search_profiles("config/search_profiles.yaml")["broad_innovation_support"]
+        candidate = ArticleCandidate(
+            institution_slug="belfer",
+            institution_name="Harvard Belfer Center Science, Technology, and Public Policy",
+            institution_type="university_research_center",
+            title="Notes on the Recent Hype about Imminence of Commercial Fusion Energy",
+            url="https://www.belfercenter.org/research-analysis/notes-recent-hype-about-imminence-commercial-fusion-energy",
+            summary="A research analysis on fusion energy, commercial fusion timelines, and energy technology readiness.",
+            published_date="2026-04-21",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("先进制造", scored.topic_tags)
+        self.assertTrue(candidate_matches_search_profile(scored, profile))
+
 
 if __name__ == "__main__":
     unittest.main()
