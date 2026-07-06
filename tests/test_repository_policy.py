@@ -58,6 +58,21 @@ class RepositoryPolicyTests(unittest.TestCase):
         self.assertIn("SQLite", multi_agent)
         self.assertIn("知识库 CSV", multi_agent)
 
+    def test_strategy_optimization_round_has_finite_stop_boundary(self):
+        retrieval = Path("docs/retrieval_strategy.md").read_text(encoding="utf-8")
+        multi_agent = Path("docs/multi_agent_execution.md").read_text(encoding="utf-8")
+
+        self.assertIn("本轮优化停止机制", retrieval)
+        self.assertIn("不再新增智库源", retrieval)
+        self.assertIn("不再扩展检索词", retrieval)
+        self.assertIn("不再启动来源评估agent", retrieval)
+        self.assertIn("最多允许一次", retrieval)
+        self.assertIn("第二次仍失败时停止", retrieval)
+        self.assertIn("archive_count", retrieval)
+        self.assertIn("state_total", retrieval)
+        self.assertIn("知识库索引行数", retrieval)
+        self.assertIn("策略优化轮次必须有停止边界", multi_agent)
+
     def test_strategy_review_script_does_not_fetch_or_write(self):
         script = Path("scripts/run_strategy_review.ps1").read_text(encoding="utf-8")
 
