@@ -26,3 +26,7 @@ After sample review, future weekly brief comics should use a single-thesis evide
 Rejected direction: the v2 issue-diagnostic map was readable but still too abstract. It showed themes and chains, yet did not make the report-specific policy conflicts visible enough.
 
 Rejected direction: the v3 policy-conflict grid improved readability but still distributed attention across four equal themes. It did not force the viewer to see one decisive weekly issue before reading the labels.
+
+Rejected direction: the v4 single-thesis evidence-chain page improved hierarchy, but still looked like a generalized topic map. It did not expose the decisive claim, evidence chain, recommendations, and China/Shanghai reference of a specific report.
+
+Current direction: future weekly brief comics should use a single-report issue-diagnosis format when the weekly material contains one strong anchor report. Page 1 should show the report's core mechanism, not a broad theme summary. Page 2 should translate the mechanism into Shanghai-facing action questions. Use concrete analytical objects such as technology stacks, migration bridges, supply-chain chokepoints, policy ledgers, access tiers, and implementation pipelines. The comic must remain visually engaging, but every panel must answer one of four questions: what changed, what evidence supports it, what policy recommendation follows, and what China/Shanghai should watch.
