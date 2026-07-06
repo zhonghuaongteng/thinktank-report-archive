@@ -14,7 +14,12 @@ $ErrorActionPreference = "Stop"
 $repo = Split-Path -Parent $PSScriptRoot
 Set-Location $repo
 
-foreach ($institution in $Institutions) {
+$normalizedInstitutions = @()
+foreach ($item in $Institutions) {
+    $normalizedInstitutions += $item -split "," | ForEach-Object { $_.Trim() } | Where-Object { $_ }
+}
+
+foreach ($institution in $normalizedInstitutions) {
     Write-Host "=== evaluate: $institution ==="
     $args = @(
         "-m", "thinktank_watch.cli", "evaluate",

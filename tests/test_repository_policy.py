@@ -36,6 +36,27 @@ class RepositoryPolicyTests(unittest.TestCase):
         self.assertNotIn('"run-weekly"', script)
         self.assertNotIn('"run-daily"', script)
 
+    def test_evaluate_sources_accepts_comma_separated_institution_lists(self):
+        script = Path("scripts/run_evaluate_sources.ps1").read_text(encoding="utf-8")
+
+        self.assertIn('$normalizedInstitutions', script)
+        self.assertIn('-split ","', script)
+        self.assertIn("foreach ($institution in $normalizedInstitutions)", script)
+
+    def test_strategy_only_mode_blocks_evaluation_and_backfill(self):
+        retrieval = Path("docs/retrieval_strategy.md").read_text(encoding="utf-8")
+        multi_agent = Path("docs/multi_agent_execution.md").read_text(encoding="utf-8")
+
+        for text in (retrieval, multi_agent):
+            self.assertIn("策略优化模式", text)
+            self.assertIn("不得运行 `evaluate`", text)
+            self.assertIn("不得", text)
+            self.assertIn("`backfill`", text)
+
+        self.assertIn("暂停与回滚", multi_agent)
+        self.assertIn("SQLite", multi_agent)
+        self.assertIn("知识库 CSV", multi_agent)
+
 
 if __name__ == "__main__":
     unittest.main()
