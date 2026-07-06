@@ -486,6 +486,27 @@ class FetchCandidateTests(unittest.TestCase):
         )
         self.assertTrue(source_url_allowed("https://www.rand.org/pubs/research_reports/RRA3892-2.html", institution))
 
+    def test_source_url_allowed_rejects_known_rand_iran_external_pdf_false_positive(self):
+        institution = Institution(
+            slug="rand",
+            name="RAND Corporation",
+            chinese_name="兰德公司",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://www.rand.org/",
+            parser="rand",
+            copyright_boundary="private_archive",
+        )
+
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.rand.org/pubs/commentary/2026/04/trumps-iran-war-is-a-dilemma-not-a-debacle.html",
+                institution,
+            )
+        )
+
     def test_source_url_allowed_rejects_tag_pages_and_media_post_queries(self):
         institution = Institution(
             slug="ecipe",
