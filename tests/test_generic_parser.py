@@ -702,6 +702,41 @@ class GenericParserTests(unittest.TestCase):
             "https://www.bruegel.org/sites/default/files/2026-06/stack-battles-the-us-china-artificial-intelligence-rivalry-is-moving-beyond-chips-alone.pdf",
         )
 
+    def test_parse_generic_detail_marks_related_card_body_mismatch(self):
+        html = """
+        <html><head>
+          <title>India's best defence against an AI cut-off is a coalition it should help lead</title>
+        </head><body>
+          <main>
+            <p>Reading time: 1 min read Publication name The Print Publication date 26 June 2026 Theme Global economy and trade Keyword artificial intelligence digital economy Country India Language English</p>
+            <p>Opinion piece The AI cold war needs a nonaligned movement Alicia Garcia-Herrero and Soumitra Dutta 24 June 2026 artificial intelligence competitiveness digital economy</p>
+            <p>Opinion piece The EU-India deal is not enough. India needs investment - now Alicia Garcia-Herrero 08 April 2026 trade policy</p>
+            <p>Working paper Tackling India's jobs plight: underutilised levers and lessons from China.</p>
+          </main>
+        </body></html>
+        """
+        institution = Institution(
+            slug="bruegel",
+            name="Bruegel",
+            chinese_name="布鲁盖尔研究所",
+            country_region="European Union",
+            institution_type="think_tank",
+            priority="P1",
+            batch=2,
+            homepage="https://www.bruegel.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://www.bruegel.org/opinion-piece/indias-best-defence-against-ai-cut-coalition-it-should-help-lead",
+            institution,
+        )
+
+        self.assertEqual(detail.fetch_status, "detail_error:body_mismatch")
+        self.assertEqual(detail.source_completeness, "summary_only")
+
     def test_parse_generic_detail_accepts_download_pdf_links(self):
         html = """
         <html><head><title>AI governance brief</title></head>

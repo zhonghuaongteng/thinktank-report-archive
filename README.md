@@ -57,7 +57,7 @@ Each archived Markdown file now treats the Chinese summary as a research card ra
 
 Weekly briefs expand more material than historical daily briefs: up to 18 P0/P1 items, longer per-item summary text, 12 visible technology-innovation support items, 18 broad innovation-support items, 12 China/Shanghai items, and 160 index lines. The weekly P0/P1 section renders the same three-part summary fields so that each priority report exposes its core argument, policy or action advice, and China/Shanghai reference value.
 
-Weekly briefs also reserve a front `漫画导读` section. The current implementation supports image links at the top of the brief and includes a two-page sample storyboard under `comic/weekly-tech-watch-sample/`; automated comic generation should be wired only after the visual style is accepted.
+Weekly briefs also reserve a front `漫画导读` section. The current implementation supports image links at the top of the brief. The current candidate style is the issue-diagnostic two-page sample under `comic/weekly-tech-watch-v2/`; the older four-panel sample under `comic/weekly-tech-watch-sample/` is retained only as a comparison candidate. Automated comic generation should be wired only after the visual style is accepted.
 
 ## Outputs
 
@@ -65,7 +65,8 @@ Weekly briefs also reserve a front `漫画导读` section. The current implement
 - `archive/{institution}/{year}/`: one Markdown file per article/report.
 - `briefs/weekly/{year}/`: weekly Markdown, HTML, and PDF briefs.
 - `briefs/daily/{year}/`: historical daily Markdown, HTML, and PDF briefs retained for compatibility.
-- `comic/weekly-tech-watch-sample/`: sample analysis, storyboard, and prompt files for weekly comic openers.
+- `comic/weekly-tech-watch-v2/`: current issue-diagnostic sample analysis, storyboard, prompts, and generated pages for weekly comic openers.
+- `comic/weekly-tech-watch-sample/`: older four-panel comparison sample.
 - `state/articles.sqlite`: dedupe and run state.
 - `reports/{date}_source_health.csv`: read-only source health report.
 - Knowledge-base index target: `C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库\06_数据资产\研报_国际智库抓取索引.csv`.

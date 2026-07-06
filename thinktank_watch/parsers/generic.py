@@ -209,6 +209,13 @@ GENERIC_SUMMARY_PATTERNS = (
     "through our written products",
     "special report no.",
 )
+RELATED_LISTING_LABELS = (
+    "opinion piece",
+    "working paper",
+    "policy brief",
+    "research paper",
+    "report",
+)
 
 
 def norm(value: str | None) -> str:
@@ -479,6 +486,31 @@ def summary_from_detail_text(value: str) -> str:
     return summary[:700].rstrip()
 
 
+def _title_terms(value: str) -> set[str]:
+    return {
+        term
+        for term in re.findall(r"[a-z0-9]+", value.lower())
+        if len(term) > 2 and term not in PDF_MATCH_STOP_WORDS
+    }
+
+
+def detail_text_matches_title(text: str, title: str) -> bool:
+    terms = _title_terms(title)
+    if not terms:
+        return True
+    body_terms = _title_terms(text)
+    required = max(2, min(5, len(terms) // 2))
+    return len(terms & body_terms) >= required
+
+
+def looks_like_related_publication_listing(text: str) -> bool:
+    lowered = norm(text).lower()
+    if "publication date" not in lowered and "reading time" not in lowered:
+        return False
+    label_hits = sum(1 for label in RELATED_LISTING_LABELS if lowered.count(label) >= 1)
+    return label_hits >= 2 or any(lowered.count(label) >= 2 for label in RELATED_LISTING_LABELS)
+
+
 def extract_detail_text(soup: BeautifulSoup) -> str:
     for node in soup(["script", "style", "nav", "footer", "header", "form", "aside", "noscript", "svg"]):
         node.decompose()
@@ -579,6 +611,10 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
         completeness = "summary_only"
     if content_type == "article" and looks_like_special_report(raw_summary, text):
         content_type = "report"
+    fetch_status = "detail_ok"
+    if not detail_text_matches_title(text, title) and looks_like_related_publication_listing(text):
+        completeness = "summary_only"
+        fetch_status = "detail_error:body_mismatch"
 
     return ArticleCandidate(
         institution_slug=institution.slug,
@@ -595,7 +631,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
         source_completeness=completeness,
         copyright_boundary=institution.copyright_boundary,
         detail_text=text,
-        fetch_status="detail_ok",
+        fetch_status=fetch_status,
     )
 
 

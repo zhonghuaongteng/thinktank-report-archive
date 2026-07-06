@@ -20,3 +20,5 @@ character_presets: []
 This project uses concise editorial knowledge comics as weekly brief openers. The default visual direction is clear-line, four-panel, landscape pages with restrained policy-analysis tone.
 
 Generated pages should foreground analytical signals: infrastructure constraints, policy instruments, supply-chain dependencies, and China/Shanghai reference points. Avoid entertainment-first caricature, dense speech bubbles, or decorative scenes unrelated to the weekly research signal.
+
+After the first sample review, future weekly brief comics should use an issue-diagnostic structure when the topic is policy research. Each page should make one explicit analytical claim, then show the evidence chain and local reference questions. Source institution names should be secondary. Visual hierarchy should prioritize bottlenecks, causal arrows, risk markers, and Shanghai-facing tracking questions over character scenes or decorative report covers.
