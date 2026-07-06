@@ -5,7 +5,7 @@ institution_type: university_research_center
 content_type: article
 source_completeness: full_text
 english_title: "A Deep Peek Into DeepSeek AI’s Talent And Implications For US Innovation"
-chinese_title: "A Deep Peek Into DeepSeek AI’s Talent And Implications For US Innovation"
+chinese_title: "深度观察DeepSeek AI人才及其对美国创新的影响"
 published_date: 2025-04-21
 source_url: https://www.hoover.org/research/deep-peek-deepseek-ais-talent-and-implications-us-innovation
 pdf_url: https://hoover-s3-website.s3.us-west-2.amazonaws.com/s3fs-public/research/docs/Zegart_DeepSeekAI_Talent_July1.pdf
@@ -22,21 +22,21 @@ copyright_boundary: private_archive
 fetch_status: detail_ok
 ---
 
-# A Deep Peek Into DeepSeek AI’s Talent And Implications For US Innovation
+# 深度观察DeepSeek AI人才及其对美国创新的影响
 
 ## 中文摘要与研判
 
 ### 核心观点
 
-该材料可从以下要点把握：Released in January 2025, the company’s R1 language model and V3 general-purpose large language model (LLM) sent tremors through markets and challenged assumptions about American technological superiority in frontier AI development.1 Although DeepSeek AI’s claims that its V3 model was trained for just $6 million have been widely disputed (experts estimate the true compute costs are closer to half a billion dollars, and DeepSeek AI itself says the cost was just for the final training run), the R1 model built on top of V3 demonstrated unprecedented reasoning capabilities and technical achievements that surpassed previous benchmarks set by US companies. Beneath DeepSeek’s technical achievements lies a more consequential story: the shifting patterns of global AI talent that made the company’s breakthroughs possible. This paper examines the educational backgrounds, career paths, and international mobility of more than 200 researchers who authored DeepSeek’s five foundational papers from January 2024 to February 2025. These five papers constitute the corpus of the company’s openly available research papers since its founding in 2023. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
+报告以 DeepSeek 2024—2025 年五篇基础论文的 200 多名作者为对象，分析其教育背景、职业路径和跨国流动。核心判断是，DeepSeek 的冲击不只来自低成本训练或模型性能，更来自中国已经形成较稳固的本土 AI 人才管道。报告认为，几乎所有 DeepSeek 论文作者都曾在中国受教育或工作，超过半数未离开中国求学或任职；部分研究者虽有美国机构经历，但多数最终回到中国，使美国科研体系在一定程度上成为中国 AI 能力积累的中转环节。
 
 ### 建议
 
-自动识别到的政策含义与建议线索包括：These talent patterns represent a fundamental challenge to US technological leadership that export controls and computing investments alone cannot address. The network is predominantly anchored in academia, with universities and research institutions forming the backbone, but it also features some training from private companies (n=17), government institutions (n=12), and nonprofit organizations (n=9). Instead, our data shows that the dominant mobility pattern is cyclical, multinational, and strategically adaptive.
+报告的政策含义是，美国仅依靠芯片出口管制和算力投资不足以维持 AI 领先，必须重新审视人才培养、大学科研、国际学生政策、研究生态吸引力和跨国知识流动。其隐含建议包括：把人力资本视为 AI 竞争的核心变量，提升美国研究型大学和产业实验室的人才留存能力，建立更细致的国际科研流动监测，而非把技术优势简化为硬件和模型指标。
 
 ### 中国/上海参考
 
-对中国/上海研判的参考在于：该材料提供了涉华技术能力、人才流动、产业链位置或政策工具的比较证据。关键原文线索包括：We find striking evidence that China has developed a robust pipeline of homegrown talent. Nearly all of the researchers behind DeepSeek’s five papers were educated or trained in China. More than half of them never left China for schooling or work, demonstrating the country’s growing capacity to develop world-class AI talent through an entirely domestic pipeline. And while nearly a quarter of DeepSeek researchers gained some experience at US institutions during their careers, most returned to China, creating a one-way knowledge transfer that benefits China’s AI ecosystem.
+对上海而言，该报告可用于支撑 AI 人才体系、青年科研团队、开源模型生态和产学研组织方式研究。重点启示在于，前沿 AI 竞争中的人才优势并不只来自海外引进，也来自本土高校、科研机构、企业工程团队和开源论文网络的连续培养。上海若要建设 AI 创新高地，应同步关注基础模型团队的人才来源、论文协作网络、工程训练环境、公共算力开放和青年研究者留用机制。
 
 ## 元数据
 

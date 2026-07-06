@@ -793,6 +793,11 @@ class ArchiveAndBriefTests(unittest.TestCase):
             markdown = Path(markdown_path).read_text(encoding="utf-8")
             self.assertIn("# 国际科技智库周报（2026-07-05）", markdown)
             self.assertIn("![漫画导读1](comic/weekly-tech-watch-sample/pages/01-page-weekly-tech-watch.png)", markdown)
+            html = Path(html_path).read_text(encoding="utf-8")
+            self.assertIn(
+                '<img src="comic/weekly-tech-watch-sample/pages/01-page-weekly-tech-watch.png" alt="漫画导读1">',
+                html,
+            )
 
     def test_write_institution_table_exports_kb_schema(self):
         from thinktank_watch.kb import write_institution_table

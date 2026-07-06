@@ -5,7 +5,7 @@ institution_type: university_research_center
 content_type: article
 source_completeness: full_text
 english_title: "Quantum Sensing: An Overlooked Strategic Advantage"
-chinese_title: "Quantum Sensing: An Overlooked Strategic Advantage"
+chinese_title: "量子传感：被忽视的战略优势"
 published_date: 2026-04-10
 source_url: https://www.hoover.org/research/quantum-sensing-overlooked-strategic-advantage
 pdf_url:
@@ -22,21 +22,21 @@ copyright_boundary: private_archive
 fetch_status: detail_ok
 ---
 
-# Quantum Sensing: An Overlooked Strategic Advantage
+# 量子传感：被忽视的战略优势
 
 ## 中文摘要与研判
 
 ### 核心观点
 
-该材料可从以下要点把握：Quantum Sensing: An Overlooked Strategic Advantage | Hoover Institution Quantum Sensing: An Overlooked Strategic Advantage Articles Quantum Sensing: An Overlooked Strategic Advantage This tech can aid science, security, and industry—and it’s ready today. Friday, April 10, 2026 4 min read By: Vivek Lall , Haibo Huang , Quantum Sensing: An Overlooked Strategic Advantage By: Vivek Lall Media master== Defining Ideas Hoover Daily Report Blank Issue (Placeholder Only) Friday, April 10, 2026 Science & Technology Innovation Security & Defense Understanding the Effects of Technology on Economics and Governance Dr. He participates in Hoover’s Huntington Program on Strengthening US-India Relations. Haibo Huang is the director of the Center of Excellence in Advanced Diagnostics at General Atomics. The 2025 Nobel Prize in physics celebrated the discovery that engineerable electric circuits could possess quantum-mechanical properties similar to those of single particles of matter or light. This breakthrough from the mid-1980s launched today’s intense worldwide race for “quantum advantage”: the ability to perform tasks with capabilities leapfrogging current technology. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
+文章认为，量子技术竞争不能只盯住量子计算，量子传感已经具备更短的部署路径和现实战略价值。量子传感可用于科学测量、安全防务、工业检测、导航、诊断和精密监测，相比仍受噪声、规模和纠错约束的量子计算，更可能率先进入实用阶段。材料把量子传感视为被资本和政策低估的战略技术方向。
 
 ### 建议
 
-自动识别到的政策含义与建议线索包括：He participates in Hoover’s Huntington Program on Strengthening US-India Relations. To achieve quantum computing, researchers must overcome environmental “noise”: tiny perturbations that destroy quantum states. Practical quantum computers need to cope with these errors— they need to increase in scale and complexity that exceed today’s capabilities. This fundamental difference in technological maturity should reshape our national quantum strategy. But recent analysis shows that less than 10 percent of private investment in quantum technology flows into quantum sensing, despite its significantly shorter path to practical deployment.
+文章建议重新平衡国家量子战略和投资结构，避免量子计算叙事挤出更接近应用的量子传感。政策重点应包括：加大对传感器件、工程化平台和应用场景的支持，推动科研机构、国防部门和产业用户共同定义需求，并把量子传感纳入安全、防务、工业和医疗诊断等早期市场。
 
 ### 中国/上海参考
 
-对中国/上海研判的参考在于：该材料提供了涉华技术能力、人才流动、产业链位置或政策工具的比较证据。关键原文线索包括：A strategic imperative The United States and China are leading the development of the underlying quantum technology. China has a clear lead in quantum communications, but the United States maintains an edge in quantum computing and sensing.
+对上海而言，该材料可用于补充量子科技产业化研究，特别是从“量子计算优先”转向“量子传感、量子测量、量子诊断和工业应用”并行评估。上海若推进量子科技和高端仪器，应关注可落地场景、工程化能力、医院和工业用户需求、国防安全应用边界以及与长三角精密制造体系的结合。
 
 ## 元数据
 

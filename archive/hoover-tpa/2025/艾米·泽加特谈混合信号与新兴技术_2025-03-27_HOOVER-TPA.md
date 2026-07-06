@@ -5,7 +5,7 @@ institution_type: university_research_center
 content_type: article
 source_completeness: full_text
 english_title: "Mixed Signals And Emerging Technology With Amy Zegart"
-chinese_title: "Mixed Signals And Emerging Technology With Amy Zegart"
+chinese_title: "艾米·泽加特谈混合信号与新兴技术"
 published_date: 2025-03-27
 source_url: https://www.hoover.org/research/mixed-signals-and-emerging-technology-amy-zegart
 pdf_url:
@@ -22,21 +22,21 @@ copyright_boundary: private_archive
 fetch_status: detail_ok
 ---
 
-# Mixed Signals And Emerging Technology With Amy Zegart
+# 艾米·泽加特谈混合信号与新兴技术
 
 ## 中文摘要与研判
 
 ### 核心观点
 
-该材料可从以下要点把握：Mixed Signals And Emerging Technology With Amy Zegart | Hoover Institution Mixed Signals And Emerging Technology With Amy Zegart Videos Mixed Signals and Emerging Technology with Amy Zegart Does America have a plan for winning the competition of the future—mastering artificial intelligence, biotechnology, and space, plus other material and developmental sciences? Thursday, March 27, 2025 65 min watch interview with H.R. McMaster , Sir Niall Ferguson , Bill Whalen , Amy Zegart , Research Team: Technology Policy Accelerator , Stanford Emerging Technology Review , Mixed Signals And Emerging Technology With Amy Zegart Co-Author(s): H.R. McMaster Sir Niall Ferguson Bill Whalen Amy Zegart Media master== GoodFellows Hoover Daily Report Blank Issue (Placeholder Only) Thursday, March 27, 2025 Artificial Intelligence Does America have a plan for winning the competition of the future—mastering artificial intelligence, biotechnology, and space, plus other material and developmental sciences? 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
+该访谈围绕美国是否具备赢得未来技术竞争的总体方案展开，议题覆盖人工智能、生物技术、空间技术以及材料和发展性科学。材料的核心观点是，新兴技术竞争正在把国家安全、产业能力、科研体系、信息安全和政策组织能力连接在一起；如果政府通信、空间基础设施、AI 研发和生物技术治理缺乏统一设计，技术优势会在危机和竞争中转化为脆弱性。
 
 ### 建议
 
-自动识别到的政策含义与建议线索包括：McMaster , Sir Niall Ferguson , Bill Whalen , Amy Zegart , Research Team: Technology Policy Accelerator , Stanford Emerging Technology Review , Mixed Signals And Emerging Technology With Amy Zegart Co-Author(s): H.R. I'm Bill Whalen, I'm a Hoover Distinguished Policy Fellow and I'll be your moderator of today's show. And the question was, if this were a foreign government and we had access to that information, would that be considered valuable? But what we really need is you need a government designed, government developed app that gives you some degree of encryption for routine, not sensitive communications, right?
+政策含义集中在三点：一是政府需要形成面向 AI、生物、空间等前沿领域的横向技术战略；二是敏感与非敏感政府通信都需要更可靠的安全工具和制度边界；三是技术政策不能只依靠单个部门或单项军民项目，而应把科研资助、产业能力、情报判断、网络安全和公共治理连成一套可执行体系。
 
 ### 中国/上海参考
 
-对中国/上海研判的参考在于：该材料提供了涉华技术能力、人才流动、产业链位置或政策工具的比较证据。关键原文线索包括：But when it comes down to, I don't know, the war games that I hear discussed, the classified ones that I just here alluded to, the point of failure often seems to be Chinese or Russian knockouts of our satellites. Or is that a offensive weapon that the Russians just launched, for example, or that the Chinese have launched? We knew that with the Chinese anti satellite demonstrations, but also we knew that what the time was classified a lot of this has been declassified since then. A whole range of offensive capabilities that the Russians and the Chinese were developing.
+对上海的参考价值在于，该材料提示“新兴技术治理”应从单项产业扶持扩展到技术安全、空间基础设施、通信加密、网络防护和应急韧性。上海在发展 AI、生物医药、商业航天和数字基础设施时，可将其作为观察美国技术战略组织方式的材料，重点比较跨部门统筹、政府安全通信、空间资产保护和产业技术路线协同。
 
 ## 元数据
 

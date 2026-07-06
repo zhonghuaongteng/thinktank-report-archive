@@ -93,6 +93,8 @@ MEDIA_MENTION_PATTERNS = (
     r"\bfeatured on\b",
     r"\bto learn more, visit\b",
     r"\bwas quoted\b",
+    r"\bwas highlighted in (?:an?|the) (?:article|newsletter) published by\b",
+    r"\bwas highlighted in .* newsletter\b",
     r"\bin an op-ed published by\b",
     r"\bin a newsletter published by\b",
     r"\bin a public radio segment\b",

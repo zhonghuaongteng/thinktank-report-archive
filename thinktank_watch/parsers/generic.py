@@ -531,6 +531,21 @@ def extract_detail_text(soup: BeautifulSoup) -> str:
     return norm(soup.get_text(" "))
 
 
+def extract_spaced_chinese_translation_title(text: str) -> str:
+    if "The following translation is of" not in text and "Translation" not in text[:120]:
+        return ""
+    match = re.search(
+        r"\bTitle\s+.+?\s+((?:[\u4e00-\u9fff]\s*){6,})(?:Author|Source|Translation Date)\b",
+        text,
+    )
+    if not match:
+        return ""
+    title = re.sub(r"\s+", "", match.group(1))
+    if 6 <= len(title) <= 60:
+        return title
+    return ""
+
+
 def looks_like_detail_url(url: str, text: str = "") -> bool:
     parsed = urlparse(url)
     if parsed.path.lower().endswith(".pdf"):
@@ -619,6 +634,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
     if not detail_text_matches_title(text, title) and looks_like_related_publication_listing(text):
         completeness = "summary_only"
         fetch_status = "detail_error:body_mismatch"
+    chinese_title = extract_spaced_chinese_translation_title(text) if institution.slug == "cset" else ""
 
     return ArticleCandidate(
         institution_slug=institution.slug,
@@ -629,6 +645,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
         published_date=canonical_date(published),
         summary=summary,
         content_type=content_type,
+        chinese_title=chinese_title,
         authors=authors,
         keywords=keywords,
         pdf_url=pdf_url,

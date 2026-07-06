@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import re
 from collections import Counter
 from html import escape
 from pathlib import Path
@@ -40,6 +41,7 @@ BRIEF_CADENCE_DIRECTORIES = {
     "daily": "daily",
     "weekly": "weekly",
 }
+IMAGE_MARKDOWN_RE = re.compile(r"^!\[([^\]]*)\]\(([^)]+)\)$")
 
 
 def published_date_sort_value(value: str) -> int:
@@ -323,7 +325,13 @@ def load_daily_brief_candidates(
 def markdown_to_html(markdown_text: str, title: str) -> str:
     body_lines: list[str] = []
     for line in markdown_text.splitlines():
-        if line.startswith("# "):
+        image_match = IMAGE_MARKDOWN_RE.match(line.strip())
+        if image_match:
+            alt, src = image_match.groups()
+            body_lines.append(
+                f'<figure class="comic"><img src="{escape(src, quote=True)}" alt="{escape(alt, quote=True)}"></figure>'
+            )
+        elif line.startswith("# "):
             body_lines.append(f"<h1>{escape(line[2:])}</h1>")
         elif line.startswith("## "):
             body_lines.append(f"<h2>{escape(line[3:])}</h2>")
@@ -347,6 +355,8 @@ h2 {{ font-size: 19px; margin-top: 28px; color: #1f5f8b; }}
 h3 {{ font-size: 16px; margin-top: 18px; }}
 p {{ font-size: 12px; margin: 6px 0; }}
 .bullet {{ padding-left: 12px; }}
+.comic {{ margin: 18px 0 22px; }}
+.comic img {{ max-width: 100%; border: 1px solid #d7dee5; }}
 </style>
 </head>
 <body>
@@ -373,7 +383,7 @@ def write_periodic_brief(
     markdown = render_periodic_brief_markdown(date, candidates, cadence=cadence, comic_paths=comic_paths)
     markdown_path.write_text(markdown, encoding="utf-8")
     html_path.write_text(markdown_to_html(markdown, f"{title}（{date}）"), encoding="utf-8")
-    pdf_path = write_pdf_brief(directory / f"{date}_{title}.pdf", markdown)
+    pdf_path = write_pdf_brief(directory / f"{date}_{title}.pdf", markdown, base_dir=directory)
     return markdown_path, html_path, pdf_path
 
 
@@ -409,14 +419,24 @@ def _register_pdf_font() -> str:
     return "Helvetica"
 
 
-def write_pdf_brief(path: str | Path, markdown_text: str) -> Path:
+def _resolve_markdown_image(src: str, base_dir: Path) -> Path:
+    clean_src = src.split("#", 1)[0].split("?", 1)[0]
+    image_path = Path(clean_src)
+    if image_path.is_absolute():
+        return image_path
+    return base_dir / image_path
+
+
+def write_pdf_brief(path: str | Path, markdown_text: str, base_dir: str | Path | None = None) -> Path:
     try:
         from reportlab.lib.pagesizes import A4
+        from reportlab.lib.utils import ImageReader
         from reportlab.pdfgen import canvas
     except ImportError:
         return Path(path)
 
     path = Path(path)
+    base_dir_path = Path(base_dir) if base_dir is not None else Path.cwd()
     path.parent.mkdir(parents=True, exist_ok=True)
     font = _register_pdf_font()
     page_width, page_height = A4
@@ -434,12 +454,41 @@ def write_pdf_brief(path: str | Path, markdown_text: str) -> Path:
         pdf.drawString(margin, y, text)
         y -= leading
 
+    def draw_image(src: str) -> None:
+        nonlocal y
+        image_path = _resolve_markdown_image(src, base_dir_path)
+        if not image_path.exists():
+            draw_line(f"[图片未找到] {src}", 9, 14)
+            return
+        try:
+            image = ImageReader(str(image_path))
+            image_width, image_height = image.getSize()
+        except Exception:
+            draw_line(f"[图片无法读取] {src}", 9, 14)
+            return
+        if image_width <= 0 or image_height <= 0:
+            draw_line(f"[图片尺寸异常] {src}", 9, 14)
+            return
+        max_width = page_width - 2 * margin
+        max_height = page_height * 0.42
+        scale = min(max_width / image_width, max_height / image_height)
+        draw_width = image_width * scale
+        draw_height = image_height * scale
+        if y < margin + draw_height:
+            pdf.showPage()
+            y = page_height - margin
+        pdf.drawImage(image, margin, y - draw_height, width=draw_width, height=draw_height, mask="auto")
+        y -= draw_height + 12
+
     for raw in markdown_text.splitlines():
         line = raw.strip()
         if not line:
             y -= 6
             continue
-        if line.startswith("# "):
+        image_match = IMAGE_MARKDOWN_RE.match(line)
+        if image_match:
+            draw_image(image_match.group(2))
+        elif line.startswith("# "):
             draw_line(line[2:], 17, 24)
         elif line.startswith("## "):
             draw_line(line[3:], 13, 20)

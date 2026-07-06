@@ -5,7 +5,7 @@ institution_type: university_research_center
 content_type: article
 source_completeness: full_text
 english_title: "A Quest For Tech Knowledge—And Wisdom To Use It"
-chinese_title: "A Quest For Tech Knowledge—And Wisdom To Use It"
+chinese_title: "追寻技术知识及其明智运用"
 published_date: 2026-02-03
 source_url: https://www.hoover.org/research/quest-tech-knowledge-and-wisdom-use-it
 pdf_url:
@@ -22,21 +22,21 @@ copyright_boundary: private_archive
 fetch_status: detail_ok
 ---
 
-# A Quest For Tech Knowledge—And Wisdom To Use It
+# 追寻技术知识及其明智运用
 
 ## 中文摘要与研判
 
 ### 核心观点
 
-该材料可从以下要点把握：A Quest For Tech Knowledge—And Wisdom To Use It | Hoover Institution A Quest For Tech Knowledge—And Wisdom To Use It Articles A Quest for Tech Knowledge—and Wisdom to Use It The new issue of the Stanford Emerging Technology Review urges universities and free people to take hold of the future. Tuesday, February 3, 2026 4 min read By: Condoleezza Rice , Jennifer Widom , Amy Zegart , Research Team: Stanford Emerging Technology Review , Technology Policy Accelerator , A Quest For Tech Knowledge—And Wisdom To Use It By: Condoleezza Rice Jennifer Widom Amy Zegart Media master== Defining Ideas Hoover Daily Report Blank Issue (Placeholder Only) Wednesday, February 4, 2026 Science & Technology Understanding the Effects of Technology on Economics and Governance A new edition of the Stanford Emerging Technology Review, the product of a major technology education initiative for policymakers, has just been released. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
+文章介绍新版 Stanford Emerging Technology Review，强调政策制定者、大学和自由社会需要更系统地理解前沿技术。核心观点是，美国长期创新优势来自研究型大学、开放社会、产业转化和政策理解能力的结合，但这一模式正在承受内部弱化与外部竞争压力。技术知识本身不足以形成优势，关键在于能否将 AI、生物、空间、材料等新兴技术的科学进展转化为制度判断、治理能力和公共决策。
 
 ### 建议
 
-自动识别到的政策含义与建议线索包括：Tuesday, February 3, 2026 4 min read By: Condoleezza Rice , Jennifer Widom , Amy Zegart , Research Team: Stanford Emerging Technology Review , Technology Policy Accelerator , A Quest For Tech Knowledge—And Wisdom To Use It By: Condoleezza Rice Jennifer Widom Amy Zegart Media master== Defining Ideas Hoover Daily Report Blank Issue (Placeholder Only) Wednesday, February 4, 2026 Science & Technology Understanding the Effects of Technology on Economics and Governance A new edition of the Stanford Emerging Technology Review, the product of a major technology education initiative for policymakers, has just been released.
+文章建议强化面向政策制定者的技术教育，使政府、产业和大学更好理解技术对经济、国家安全和治理的影响。其政策含义是，科技竞争不仅需要研发投资，也需要能解释技术、评估风险、设计制度和连接科研机构的政策能力。研究型大学应被视为国家创新体系的基础设施，而非单纯教育机构。
 
 ### 中国/上海参考
 
-对中国/上海研判的参考在于：该材料提供了涉华技术能力、人才流动、产业链位置或政策工具的比较证据。关键原文线索包括：And both government and industry need to better understand the foundational role that America’s research universities play in the ecosystem that has made the United States the world’s innovation leader since 1945—and how that model is now weakening at home while China is racing to copy it.
+对上海的参考在于，国际科技竞争正在把“懂技术的政策能力”变成创新体系组成部分。上海建设国际科创中心时，除投入平台、实验室和产业载体，还需要培养能够连接技术趋势、产业场景、监管工具和国际规则的政策研究能力。该材料适合与科技智库建设、大学创新生态、前沿技术评估和政府干部技术素养培训联动使用。
 
 ## 元数据
 

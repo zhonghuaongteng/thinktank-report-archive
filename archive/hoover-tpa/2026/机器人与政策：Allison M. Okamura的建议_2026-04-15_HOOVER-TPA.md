@@ -5,7 +5,7 @@ institution_type: university_research_center
 content_type: article
 source_completeness: full_text
 english_title: "Robotics & Policy: Advice From Allison M. Okamura"
-chinese_title: "Robotics & Policy: Advice From Allison M. Okamura"
+chinese_title: "机器人与政策：Allison M. Okamura的建议"
 published_date: 2026-04-15
 source_url: https://www.hoover.org/research/robotics-policy-advice-allison-m-okamura
 pdf_url:
@@ -22,21 +22,21 @@ copyright_boundary: private_archive
 fetch_status: detail_ok
 ---
 
-# Robotics & Policy: Advice From Allison M. Okamura
+# 机器人与政策：Allison M. Okamura的建议
 
 ## 中文摘要与研判
 
 ### 核心观点
 
-该材料可从以下要点把握：Okamura | Hoover Institution Robotics & Policy: Advice From Allison M. Okamura Articles Robotics & Policy: Advice from Allison M. Okamura “We need to create an optimistic environment surrounding robotics.” Wednesday, April 15, 2026 4 min read interview with Allison Okamura , Research Team: Technology Policy Accelerator , Robotics & Policy: Advice From Allison M. Okamura Co-Author(s): Allison Okamura Media master== Defining Ideas Blank Issue (Placeholder Only) Science & Technology Understanding the Effects of Technology on Economics and Governance Allison M. Weiland Professor of Engineering at Stanford University in the Department of Mechanical Engineering, with a courtesy appointment in Computer Science. She received her BS degree from the University of California, Berkeley, and her PhD from Stanford. Her research interests include haptics, teleoperation, mixed reality, medical robotics, soft robotics, and rehabilitation. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
+该访谈围绕机器人技术与公共政策的关系展开，受访者 Allison M. Okamura 的研究覆盖触觉、遥操作、混合现实、医疗机器人、软体机器人和康复机器人。核心观点是，机器人将越来越多进入“物理经济”中的医疗、制造、服务和基础设施场景，但公共政策仍容易在恐惧叙事、就业焦虑和安全担忧中摇摆，缺少支持负责任应用扩散的积极环境。
 
 ### 建议
 
-自动识别到的政策含义与建议线索包括：Okamura | Hoover Institution Robotics & Policy: Advice From Allison M. Okamura Articles Robotics & Policy: Advice from Allison M. Okamura “We need to create an optimistic environment surrounding robotics.” Wednesday, April 15, 2026 4 min read interview with Allison Okamura , Research Team: Technology Policy Accelerator , Robotics & Policy: Advice From Allison M. She spoke with Donna Obeid, senior research program manager for Hoover’s Technology Policy Accelerator. Donna Obeid: Allison, congratulations on your recent trip to Washington, where you spoke with government leaders about the 2026 Stanford Emerging Technology Review.
+政策建议的重点在于创造有利于机器人创新的制度环境，包括面向国内生产的激励、研发资助、应用验证、人才培养和公众沟通。材料强调，政策不应只围绕风险和限制展开，也应帮助机器人技术在医疗康复、制造、照护和复杂环境作业中形成可信应用，并识别供应链中可能受外部限制的关键部件。
 
 ### 中国/上海参考
 
-对中国/上海研判的参考在于：该材料提供了涉华技术能力、人才流动、产业链位置或政策工具的比较证据。关键原文线索包括：As a lead for the SETR robotics focus, what specific policy levers (such as tax incentives for domestic production or R&D grants) do you believe are most critical for the United States to secure its leadership in the “physical economy” against competitors like China? A disruption in access, such as China restricting shipments, could pose substantial challenges.
+对上海而言，该材料适合进入智能机器人、医疗机器人和具身智能产业政策资料池。其参考点在于，机器人政策需要同时处理应用场景、关键零部件、供应链韧性、R&D资助、测试验证和公众接受。上海若布局机器人产业，应关注高端传感器、执行器、触觉交互、医疗康复场景和示范应用体系，并评估外部供应限制对产业链的影响。
 
 ## 元数据
 

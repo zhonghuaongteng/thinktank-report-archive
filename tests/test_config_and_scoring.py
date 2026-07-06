@@ -861,6 +861,28 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertEqual(scored.priority, "P2")
         self.assertIn("AI治理", scored.topic_tags)
 
+    def test_cset_highlighted_external_article_is_capped_below_p1(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="Center for Security and Emerging Technology",
+            institution_type="university_research_center",
+            title="1 big thing: AI could soon improve on its own",
+            url="https://cset.georgetown.edu/article/1-big-thing-ai-could-soon-improve-on-its-own/",
+            summary=(
+                "A CSET workshop report was highlighted in an article published by Axios "
+                "in its Axios+ newsletter. To read the newsletter, visit Axios."
+            ),
+            published_date="2026-01-27",
+            content_type="article",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertEqual(scored.priority, "P2")
+        self.assertIn("AI治理", scored.topic_tags)
+
     def test_cset_external_interview_page_is_capped_below_p1(self):
         topics = load_topics("config/topics.yaml")
         rules = load_priority_rules("config/priorities.yaml")

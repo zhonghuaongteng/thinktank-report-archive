@@ -256,6 +256,41 @@ class GenericParserTests(unittest.TestCase):
 
         self.assertEqual(detail.title, "Beyond P(doom) for AI Risk: Quantifying Uncertainty Without Probability")
 
+    def test_parse_cset_translation_detail_extracts_spaced_chinese_title(self):
+        html = """
+        <html><head>
+          <title>Regulation of the People's Republic of China on Export Controls for Dual-Use Items</title>
+          <meta name="description" content="The following translation is of China's export control regulation for dual-use items and technologies.">
+        </head><body>
+          <main>
+            <p>Translation The following translation is of China's export control regulation for dual-use items and technologies.</p>
+            <p>Title Regulation of the People's Republic of China on Export Controls for Dual-Use Items
+            中 华 人 民 共 和 国 两 用 物 项 出 口 管 制 条 例 Author State Council.</p>
+            <p>The regulation gives China's Ministry of Commerce oversight of the process of determining which domestic technologies are dual-use.</p>
+          </main>
+        </body></html>
+        """
+        institution = Institution(
+            slug="cset",
+            name="Center for Security and Emerging Technology",
+            chinese_name="乔治城安全与新兴技术中心",
+            country_region="United States",
+            institution_type="university_research_center",
+            priority="P0",
+            batch=1,
+            homepage="https://cset.georgetown.edu/",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://cset.georgetown.edu/publication/china-dual-use-export-control-regulation/",
+            institution,
+        )
+
+        self.assertEqual(detail.chinese_title, "中华人民共和国两用物项出口管制条例")
+
     def test_parse_generic_detail_strips_site_suffix_from_auxiliary_domain_label(self):
         html = """
         <html><head>
