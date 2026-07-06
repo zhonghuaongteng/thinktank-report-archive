@@ -10,8 +10,33 @@ parser: generic
 copyright_boundary: private_archive
 feeds:
   - https://www.hoover.org/rss.xml
+sitemap_urls:
+  - https://www.hoover.org/sitemap.xml
+sitemap_include_keywords:
+  - technology
+  - science-technology
+  - technology-law-and-governance
+  - artificial-intelligence
+  - cyber
+  - innovation
+  - intellectual-property-innovation
+  - patent
+  - digital
+  - semiconductor
+  - chips
+  - defense-innovation
+  - defence-innovation
+  - research-and-development
+  - productivity
 list_pages:
   - https://www.hoover.org/research-teams/technology-policy-accelerator
+  - https://www.hoover.org/research-teams/technology-economics-and-governance-working-group
+  - https://www.hoover.org/research-teams/working-group-intellectual-property-innovation-and-prosperity
 topic_pages:
   - https://www.hoover.org/research/technology-policy
-notes: US technology policy, AI, cyber, and national security.
+  - https://www.hoover.org/research/topic/science-technology
+  - https://www.hoover.org/research/topic/technology-law-and-governance
+  - https://www.hoover.org/research/topic/cyber-security
+  - https://www.hoover.org/research/topic/innovation
+run_limit: 10
+notes: US technology policy, AI, cyber, intellectual property, innovation economics, science and technology, and national security. Uses the public sitemap because static topic pages under the accelerator are sparse.

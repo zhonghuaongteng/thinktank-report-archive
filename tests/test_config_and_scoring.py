@@ -62,6 +62,15 @@ class ConfigAndScoringTests(unittest.TestCase):
         for keyword in {"artificial-intelligence", "cyber", "defence", "technology", "china"}:
             self.assertIn(keyword, rusi.sitemap_include_keywords)
 
+    def test_hoover_sitemap_is_enabled_for_broad_technology_policy_backfill(self):
+        institutions = load_institutions("config/institutions")
+        hoover = next(item for item in institutions if item.slug == "hoover-tpa")
+
+        self.assertIn("https://www.hoover.org/sitemap.xml", hoover.sitemap_urls)
+        for keyword in {"science-technology", "technology-law-and-governance", "innovation", "cyber"}:
+            self.assertIn(keyword, hoover.sitemap_include_keywords)
+        self.assertNotIn("china", hoover.sitemap_include_keywords)
+
     def test_rand_sitemap_prefers_publication_paths_not_center_pages(self):
         institutions = load_institutions("config/institutions")
         rand = next(item for item in institutions if item.slug == "rand")
@@ -481,6 +490,28 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn(scored.priority, {"P0", "P1"})
         self.assertIn("科技创新", scored.topic_tags)
         self.assertNotIn("AI治理", scored.topic_tags)
+
+    def test_technology_policy_report_enters_broad_profile_as_innovation_support(self):
+        topics = load_topics("config/topics.yaml")
+        rules = load_priority_rules("config/priorities.yaml")
+        profile = load_search_profiles("config/search_profiles.yaml")["broad_innovation_support"]
+        candidate = ArticleCandidate(
+            institution_slug="rand",
+            institution_name="RAND Corporation",
+            institution_type="think_tank",
+            title="Technology Policy for National Competitiveness",
+            url="https://www.rand.org/pubs/research_reports/technology-policy-national-competitiveness.html",
+            summary="A report on technology policy, standards, regulatory capacity, and national competitiveness.",
+            published_date="2026-06-19",
+            content_type="report",
+        )
+
+        scored = score_candidate(candidate, topics, rules)
+
+        self.assertIn(scored.priority, {"P0", "P1"})
+        self.assertIn("科技创新", scored.topic_tags)
+        self.assertIn("科技治理", scored.topic_tags)
+        self.assertTrue(candidate_matches_search_profile(scored, profile))
 
     def test_core_innovation_support_article_enters_p1_without_ai_governance(self):
         topics = load_topics("config/topics.yaml")
