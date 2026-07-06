@@ -36,6 +36,14 @@ class ArticleState:
         row = self.conn.execute("SELECT 1 FROM articles WHERE dedupe_key = ?", (key,)).fetchone()
         return row is not None
 
+    def archived(self, url: str) -> bool:
+        key = dedupe_key(url)
+        row = self.conn.execute(
+            "SELECT archive_path FROM articles WHERE dedupe_key = ?",
+            (key,),
+        ).fetchone()
+        return bool(row and row[0])
+
     def upsert(self, candidate: ArticleCandidate, archive_path: str = "") -> None:
         self.conn.execute(
             """

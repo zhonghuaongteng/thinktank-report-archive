@@ -15,6 +15,7 @@ from thinktank_watch.cli import (
     candidate_within_daily_window,
     candidate_within_backfill_window,
     daily_window_start,
+    filter_unarchived_candidates,
     filter_unseen_candidates,
     include_term_matches_haystack,
     institution_fetch_limit,
@@ -403,6 +404,48 @@ class BackfillControlTests(unittest.TestCase):
             filtered = filter_unseen_candidates([seen, unseen], state)
 
         self.assertEqual(filtered, [unseen])
+
+    def test_filter_unarchived_candidates_keeps_prior_failed_records(self):
+        failed = ArticleCandidate(
+            "ecipe",
+            "ECIPE",
+            "think_tank",
+            "Opening Android, Closing Competition?",
+            "https://example.org/failed",
+            published_date="2026-05-12",
+            priority="P1",
+        )
+        archived = ArticleCandidate(
+            "ecipe",
+            "ECIPE",
+            "think_tank",
+            "Taxing Silicon Valley",
+            "https://example.org/archived",
+            published_date="2026-05-11",
+            priority="P2",
+        )
+        new = ArticleCandidate(
+            "ecipe",
+            "ECIPE",
+            "think_tank",
+            "Digital trade and innovation",
+            "https://example.org/new",
+            published_date="2026-05-10",
+            priority="P1",
+        )
+
+        with TemporaryDirectory() as tmp:
+            state = Path(tmp) / "state.sqlite"
+            article_state = ArticleState(state)
+            try:
+                article_state.upsert(failed, "")
+                article_state.upsert(archived, "archive/ecipe/2026/taxing.md")
+            finally:
+                article_state.close()
+
+            filtered = filter_unarchived_candidates([failed, archived, new], state)
+
+        self.assertEqual(filtered, [failed, new])
 
     def test_run_daily_skips_future_dated_candidates_without_recording_state(self):
         institution = Institution(

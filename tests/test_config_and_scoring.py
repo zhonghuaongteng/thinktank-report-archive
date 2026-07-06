@@ -116,10 +116,12 @@ class ConfigAndScoringTests(unittest.TestCase):
     def test_daily_and_backfill_cli_default_to_broad_innovation_support_profile(self):
         parser = build_parser()
 
+        evaluate_args = parser.parse_args(["evaluate", "--unarchived-only"])
         daily_args = parser.parse_args(["run-daily"])
         weekly_args = parser.parse_args(["run-weekly"])
         backfill_args = parser.parse_args(["backfill"])
 
+        self.assertTrue(evaluate_args.unarchived_only)
         self.assertEqual(daily_args.search_profile, "broad_innovation_support")
         self.assertEqual(weekly_args.search_profile, "broad_innovation_support")
         self.assertEqual(weekly_args.lookback_days, 14)

@@ -142,6 +142,14 @@ def filter_unseen_candidates(candidates: list[ArticleCandidate], state_path: str
         state.close()
 
 
+def filter_unarchived_candidates(candidates: list[ArticleCandidate], state_path: str | Path) -> list[ArticleCandidate]:
+    state = ArticleState(state_path)
+    try:
+        return [item for item in candidates if not state.archived(item.url)]
+    finally:
+        state.close()
+
+
 def institution_fetch_limit(institution: Institution, limit: int) -> int:
     if institution.run_limit > 0:
         return min(limit, institution.run_limit)
@@ -339,6 +347,8 @@ def evaluate(args: argparse.Namespace) -> int:
         ]
     if getattr(args, "unseen_only", False):
         scored = filter_unseen_candidates(scored, getattr(args, "state", "state/articles.sqlite"))
+    if getattr(args, "unarchived_only", False):
+        scored = filter_unarchived_candidates(scored, getattr(args, "state", "state/articles.sqlite"))
     for item in sort_for_writing(scored):
         print(
             f"[{item.priority}/{item.score}] {item.institution_slug} | "
@@ -490,6 +500,11 @@ def build_parser() -> argparse.ArgumentParser:
     eval_parser.add_argument("--date", help="Run date used for the backfill lookback window.")
     eval_parser.add_argument("--lookback-years", type=int, default=DEFAULT_BACKFILL_LOOKBACK_YEARS)
     eval_parser.add_argument("--unseen-only", action="store_true", help="Only print candidates absent from the local state database.")
+    eval_parser.add_argument(
+        "--unarchived-only",
+        action="store_true",
+        help="Only print candidates without an archive path, including prior failed state records.",
+    )
     eval_parser.add_argument("--state", default="state/articles.sqlite")
     eval_parser.add_argument("--dry-run", action="store_true", help="Alias for evaluate compatibility.")
     eval_parser.set_defaults(func=evaluate)

@@ -6,10 +6,10 @@
 
 ## 当前基线
 
-- 归档 Markdown：400 条。
-- 研究知识库索引：414 条，位置为 `C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库\06_数据资产\研报_国际智库抓取索引.csv`。索引数高于归档数，说明存在历史重复或未清理记录，后续应单独做索引一致性核验。
-- 本地状态库：406 条，其中 400 条有归档路径，6 条为详情失败去重记录。
-- 状态分布：`detail_ok` 392 条，`detail_ok:text_proxy` 8 条，`detail_error:403` 4 条，`detail_error:ReadTimeout` 2 条。
+- 归档 Markdown：401 条。
+- 研究知识库索引：415 条，位置为 `C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库\06_数据资产\研报_国际智库抓取索引.csv`。索引数高于归档数，说明存在历史重复或未清理记录，后续应单独做索引一致性核验。
+- 本地状态库：406 条，其中 401 条有归档路径，5 条为详情失败去重记录。
+- 状态分布：`detail_ok` 393 条，`detail_ok:text_proxy` 8 条，`detail_error:403` 4 条，`detail_error:ReadTimeout` 1 条。
 - 解析错误：0。
 - 本轮要求：暂不继续抓取新文章，先保持暂停态并完成规则、策略和调度优化。
 
@@ -40,7 +40,7 @@
 | 2 | Ada Lovelace | 5 | 2025-11-11 至 2026-04-13 | P1:5 | full_text:4; summary_only:1 | 低覆盖，关注应用、公共部门和产业实践 |
 | 1 | Bruegel | 4 | 2026-02-04 至 2026-06-29 | P0:2; P1:2 | full_text:4 | 低覆盖，适合作为漫画锚点源 |
 | 1 | CEPS | 4 | 2026-05-28 至 2026-06-19 | P0:2; P1:2 | full_text:4 | 低覆盖，文本代理入口已验证，适合继续精选欧盟创新与数字政策报告 |
-| 1 | ECIPE | 4 | 2026-05-11 至 2026-06-29 | P0:1; P1:2; P2:1 | full_text:4 | 低覆盖，需控制媒体转载和一般竞争政策噪声 |
+| 1 | ECIPE | 5 | 2026-05-11 至 2026-06-29 | P0:2; P1:2; P2:1 | full_text:5 | 低覆盖，旧 ReadTimeout 记录已通过 `--unarchived-only` 识别并修复，后续仍需控制一般竞争政策噪声 |
 | 1 | NBR | 4 | 2025-01-09 至 2026-03-25 | P0:3; P1:1 | full_text:4 | 低覆盖，文本代理入口已验证，适合继续精选量子、供应链和技术安全报告 |
 | 1 | NISTEP | 4 | 2024-10-27 至 2026-06-08 | P0:1; P1:3 | full_text:4 | 低覆盖，适合科技指标和科研文化材料 |
 | 1 | Alan Turing | 0 | - | - | - | 零归档，详情页仍需浏览器或反验证处理 |
@@ -50,7 +50,7 @@
 ## 边界问题
 
 - 近三年边界：当前归档中存在 12 条早期试抓旧文，分布于 Carnegie Tech、GovAI、ITIF、ORF America。用户已明确“回填内容暂且不管”，因此暂不删除；后续新增与回填必须执行近三年窗口。
-- 零归档源：Alan Turing、IDA STPI、Gartner 暂无归档。Alan Turing 详情页仍存在验证阻断；IDA STPI 需确认稳定报告索引；Gartner 维持商业研究边界。
+- 零归档源：Alan Turing、IDA STPI、Gartner 暂无归档。Alan Turing 需要受限文本代理和出版页日期解析；IDA STPI 需要替换入口并处理详情 404；Gartner 维持商业研究边界，只能 metadata-only。
 - 低覆盖源：CEPS、NBR、Bruegel、ECIPE、NISTEP、ASPI、Atlantic Council、Ada Lovelace、Brookings、CSIS 需要继续改进入口质量，而非扩大阈值。
 - 摘要级源：IISS、OECD.AI、GovAI、CSET、RAND 中存在较多 `summary_only`，后续引用时应回到原始链接或 PDF。
 - 访问失败：403 和超时条目已在状态库中保留为去重记录，周报生成不应被这些失败阻断。
@@ -58,7 +58,7 @@
 ## 后续推进顺序
 
 1. 暂停新增抓取期间，优先维护规则、测试和入口质量。
-2. 恢复回填前，先运行单机构只读评估，不做全批次大扫描。
-3. 优先补零归档和低覆盖源的官方低噪声入口：Alan Turing、IDA STPI、Bruegel、ECIPE、NISTEP；CEPS、NBR、Hoover TPA 已不再是零覆盖源，后续按低覆盖精选处理。
+2. 恢复回填前，先运行单机构只读评估，不做全批次大扫描；对旧失败记录使用 `evaluate --unarchived-only` 判断是否可修复。
+3. 优先补零归档和低覆盖源的官方低噪声入口：Alan Turing、IDA STPI、Bruegel、NISTEP；ECIPE、CEPS、NBR、Hoover TPA 已不再是零覆盖源，后续按低覆盖精选处理。
 4. 对高覆盖源只做主题缺口式精选：科研体系、创新金融、标准计量测试、科技人才、公共算力、能源基础设施、国防工业基础、数字公共基础设施。
 5. 若未来需要清理早期旧文，应单独建立“近三年边界清理”任务，先同步 archive、state 和知识库索引，避免删除归档后留下坏状态路径。

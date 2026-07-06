@@ -24,6 +24,18 @@ class RepositoryPolicyTests(unittest.TestCase):
         self.assertIn('"run-weekly"', script)
         self.assertIn('"--brief-cadence", "weekly"', script)
 
+    def test_evaluate_sources_script_is_read_only(self):
+        script = Path("scripts/run_evaluate_sources.ps1").read_text(encoding="utf-8")
+
+        self.assertIn('"evaluate"', script)
+        self.assertIn('"--backfill"', script)
+        self.assertIn('"--lookback-years", $LookbackYears', script)
+        self.assertIn('"--search-profile", $SearchProfile', script)
+        self.assertIn('"--unarchived-only"', script)
+        self.assertNotIn('"backfill"', script.replace('"--backfill"', ""))
+        self.assertNotIn('"run-weekly"', script)
+        self.assertNotIn('"run-daily"', script)
+
 
 if __name__ == "__main__":
     unittest.main()

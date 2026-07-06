@@ -57,7 +57,7 @@ Each archived Markdown file now treats the Chinese summary as a research card ra
 
 Weekly briefs expand more material than historical daily briefs: up to 18 P0/P1 items, longer per-item summary text, 12 visible technology-innovation support items, 18 broad innovation-support items, 12 China/Shanghai items, and 160 index lines. The weekly P0/P1 section renders the same three-part summary fields so that each priority report exposes its core argument, policy or action advice, and China/Shanghai reference value.
 
-Weekly briefs also reserve a front `漫画导读` section. Markdown, HTML, and PDF weekly outputs now render the comic opener before the overview section. The current candidate style is the failure-diagnosis sample under `comic/weekly-tech-watch-v6/`; it uses one anchor report, a visible blockage, affected actors, evidence/action cards, and Shanghai-facing repair tools. `comic/weekly-tech-watch-v5/`, `comic/weekly-tech-watch-v4/`, `comic/weekly-tech-watch-v3/`, `comic/weekly-tech-watch-v2/`, and the older four-panel sample are retained only as comparison candidates. Automated comic generation should be wired only after the visual style is accepted and generated Chinese text is manually checked.
+Weekly briefs also reserve a front `漫画导读` section. Markdown, HTML, and PDF weekly outputs now render the comic opener before the overview section. The current candidate style is the single-report evidence-chain sample under `comic/weekly-tech-watch-v7/`; it anchors one report, shows the mechanism and transmission chain, then pairs the image with a textual `读图说明` for the core argument, recommendation, and China/Shanghai reference. `comic/weekly-tech-watch-v6/`, `comic/weekly-tech-watch-v5/`, `comic/weekly-tech-watch-v4/`, `comic/weekly-tech-watch-v3/`, `comic/weekly-tech-watch-v2/`, and the older four-panel sample are retained only as comparison candidates. Automated comic generation should be wired only after the visual style is accepted and generated Chinese text is manually checked.
 
 ## Outputs
 
@@ -65,8 +65,8 @@ Weekly briefs also reserve a front `漫画导读` section. Markdown, HTML, and P
 - `archive/{institution}/{year}/`: one Markdown file per article/report.
 - `briefs/weekly/{year}/`: weekly Markdown, HTML, and PDF briefs.
 - `briefs/daily/{year}/`: historical daily Markdown, HTML, and PDF briefs retained for compatibility.
-- `comic/weekly-tech-watch-v6/`: current failure-diagnosis sample analysis, storyboard, prompts, and page for weekly comic openers.
-- `comic/weekly-tech-watch-v5/`, `comic/weekly-tech-watch-v4/`, `comic/weekly-tech-watch-v3/`, `comic/weekly-tech-watch-v2/`, `comic/weekly-tech-watch-sample/`: older comparison samples.
+- `comic/weekly-tech-watch-v7/`: current single-report evidence-chain sample analysis, storyboard, prompts, and page for weekly comic openers.
+- `comic/weekly-tech-watch-v6/`, `comic/weekly-tech-watch-v5/`, `comic/weekly-tech-watch-v4/`, `comic/weekly-tech-watch-v3/`, `comic/weekly-tech-watch-v2/`, `comic/weekly-tech-watch-sample/`: older comparison samples.
 - `state/articles.sqlite`: dedupe and run state.
 - `reports/{date}_source_health.csv`: read-only source health report.
 - Knowledge-base index target: `C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库\06_数据资产\研报_国际智库抓取索引.csv`.
@@ -81,6 +81,7 @@ The local Codex automation `国际科技智库每周抓取` runs every Sunday at
 ## Source Status Notes
 
 - Current local coverage and gaps are tracked in `docs/backfill_coverage_audit.md`. Use that audit before resuming historical backfill, especially for zero-coverage and low-coverage sources.
+- Multi-agent backfill work should follow `docs/multi_agent_execution.md`: evaluator agents run read-only `evaluate` batches, while only the controller writes `archive/`, `state/articles.sqlite`, the knowledge-base CSV, and weekly briefs. `scripts/run_evaluate_sources.ps1` is the shared read-only evaluator wrapper.
 - The default first-batch pool now includes broad innovation-support sources CSIS, Bruegel, ECIPE, ASPI, ORF America, CEPS, Atlantic Council GeoTech, Alan Turing Institute, Hoover TPA, and NBR in addition to RAND, CSET, ITIF, Stanford HAI, Carnegie, Brookings, CNAS, MERICS, OECD.AI, Belfer STPP, IDA STPI, NISTEP, and STEPI.
 - CSET uses the WordPress sitemap index for broader backfill discovery across hardware and compute, supply chains, technology talent, research, innovation, biotechnology, quantum, space, and China technology analysis.
 - Remaining second-batch P0/P1 sources have guarded configs for Ada Lovelace, interface, and GovAI; GovAI is capped with `run_limit` because it is a specialist governance source.
