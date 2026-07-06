@@ -66,6 +66,7 @@ BROAD_ENDPOINTS = {
     "testimonies-filings",
     "topic",
     "topics",
+    "type",
     "working-papers",
     "policy-briefs",
 }
@@ -90,6 +91,7 @@ NON_CONTENT_LAST_SEGMENTS = {
     "rusi-newsbrief",
     "terms",
     "terms-of-use",
+    "type",
     "toolkits",
     "whitehall-papers",
     "working-papers",
@@ -112,6 +114,7 @@ CONTENT_TYPE_SEGMENTS = {
     "publications",
     "report",
     "reports",
+    "research",
     "research_reports",
     "resource",
     "resources",
@@ -142,6 +145,7 @@ EXCLUDED_PATH_SEGMENTS = {
     "programs",
     "podcasts",
     "research-teams",
+    "type",
     "staff",
     "working-group-data-governance",
     "working-group-future-of-work",
@@ -415,7 +419,7 @@ def _download_pdf_label(text: str) -> bool:
     label = text.lower()
     if label in {"pdf", "download", "download pdf", "full report", "report pdf"}:
         return True
-    return any(token in label for token in ("download pdf", "download report", "full report"))
+    return any(token in label for token in ("download pdf", "download report", "download the report", "full report"))
 
 
 def _publication_pdf_label(text: str) -> bool:

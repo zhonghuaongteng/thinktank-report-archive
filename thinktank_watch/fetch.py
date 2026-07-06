@@ -37,6 +37,7 @@ PDF_TEXT_MIN_HTML_CHARS = 5000
 SITEMAP_INDEX_MAX_CHILDREN = 20
 LIST_PAGE_FETCH_CAP = 3
 TOPIC_PAGE_FETCH_CAP = 8
+LIST_LINK_EXTRACTION_CAP = 120
 TITLE_STOP_WORDS = {
     "about",
     "after",
@@ -114,6 +115,7 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "programs",
     "topic",
     "topics",
+    "type",
     "research-teams",
     "tag",
     "video",
@@ -221,6 +223,10 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
         return False
     if re.search(r"(?:^|-)annual-reports?(?:-|$)", last_stem):
         return False
+    if re.search(r"(?:^|-)(awarded|receives?|wins?)-.*-grant(?:-|$)", last_stem):
+        return False
+    if re.search(r"(?:^|-)grant-.*-foundation(?:-|$)", last_stem):
+        return False
     if last_stem.endswith("booking-form"):
         return False
     if re.search(r"(?:^|-)(receives?-award|wins?-award|award-winners?|award-recipients?)(?:-|$)", last_stem):
@@ -316,7 +322,7 @@ def fetch_list_candidates(
             if len(candidates) >= limit:
                 break
             continue
-        links = extract_list_links(response.text, page, limit)
+        links = extract_list_links(response.text, page, max(limit * 8, LIST_LINK_EXTRACTION_CAP))
         for link in links:
             if not source_url_allowed(link, institution):
                 continue

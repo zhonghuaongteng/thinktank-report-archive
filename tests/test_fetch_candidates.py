@@ -166,6 +166,26 @@ class FetchCandidateTests(unittest.TestCase):
             )
         )
 
+        hoover = Institution(
+            slug="hoover-tpa",
+            name="Hoover Technology Policy Accelerator",
+            chinese_name="胡佛技术政策加速器",
+            country_region="United States",
+            institution_type="university_research_center",
+            priority="P1",
+            batch=1,
+            homepage="https://www.hoover.org/research-teams/technology-policy-accelerator",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+        self.assertFalse(source_url_allowed("https://www.hoover.org/research/type/working-papers", hoover))
+        self.assertFalse(
+            source_url_allowed(
+                "https://www.hoover.org/research/hoover-institutions-technology-policy-accelerator-awarded-25-million-grant-hewlett",
+                hoover,
+            )
+        )
+
     def test_source_url_allowed_rejects_itif_canada_post_public_service_reform(self):
         institution = Institution(
             slug="itif",
@@ -700,6 +720,46 @@ class FetchCandidateTests(unittest.TestCase):
                 "https://example.org/publications/2026/07/digital-policy-report/",
                 "https://example.org/publications/2026/07/ai-governance-report/",
             ],
+        )
+
+    def test_list_candidates_do_not_let_navigation_noise_exhaust_limit(self):
+        noisy_links = "\n".join(
+            f'<a href="/commentary/topic/noise-{index}">Noise {index}</a>' for index in range(20)
+        )
+        pages = {
+            "https://www.hoover.org/research-teams/technology-policy-accelerator": f"""
+                {noisy_links}
+                <div class="card-wrapper">
+                    <a href="/research/deep-peek-deepseek-ais-talent-and-implications-us-innovation">.</a>
+                    <h4>A Deep Peek Into DeepSeek AI's Talent And Implications For US Innovation</h4>
+                    <p>Working Papers DOWNLOAD THE REPORT April 21, 2025</p>
+                </div>
+            """,
+        }
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(200, text=pages[str(request.url)], request=request)
+
+        institution = Institution(
+            slug="hoover-tpa",
+            name="Hoover Technology Policy Accelerator",
+            chinese_name="胡佛技术政策加速器",
+            country_region="United States",
+            institution_type="university_research_center",
+            priority="P1",
+            batch=1,
+            homepage="https://www.hoover.org/research-teams/technology-policy-accelerator",
+            parser="generic",
+            copyright_boundary="private_archive",
+            list_pages=["https://www.hoover.org/research-teams/technology-policy-accelerator"],
+        )
+
+        with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+            candidates = fetch_list_candidates(client, institution, limit=1)
+
+        self.assertEqual(
+            [item.url for item in candidates],
+            ["https://www.hoover.org/research/deep-peek-deepseek-ais-talent-and-implications-us-innovation"],
         )
 
     def test_interleave_candidate_groups_preserves_source_diversity_and_dedupes_urls(self):

@@ -67,6 +67,24 @@ ADVICE_CUES = (
     "建立",
     "完善",
 )
+ENGLISH_ADVICE_CUES = (
+    "should",
+    "must",
+    "need",
+    "needs",
+    "recommend",
+    "recommendation",
+    "policy",
+    "strategy",
+    "strategies",
+    "adapt",
+    "address",
+    "invest",
+    "build",
+    "strengthen",
+    "government",
+    "congress",
+)
 CHINA_SHANGHAI_CUES = (
     "中国",
     "上海",
@@ -80,6 +98,22 @@ CHINA_SHANGHAI_CUES = (
     "Shanghai",
     "PRC",
     "Sino",
+)
+WEAK_SUMMARY_CUES = (
+    "download the report",
+    "download report",
+    "find out what",
+    "learn more",
+    "read more",
+)
+DETAIL_BOILERPLATE_CUES = (
+    "source:",
+    "figure ",
+    "table ",
+    "appendix ",
+    "all data from",
+    "the hoover institution",
+    "tpa white paper series",
 )
 
 
@@ -121,6 +155,40 @@ def _truncate(value: str, limit: int) -> str:
     return text[:limit].rstrip() + "..."
 
 
+def _summary_is_weak(value: str) -> bool:
+    text = _clean(value).lower()
+    if not text:
+        return True
+    return len(text) < 180 or any(cue in text for cue in WEAK_SUMMARY_CUES)
+
+
+def _substantive_sentences(value: str) -> list[str]:
+    sentences: list[str] = []
+    for sentence in _split_sentences(value):
+        lowered = sentence.lower()
+        if len(sentence) < 45:
+            continue
+        if any(cue in lowered for cue in DETAIL_BOILERPLATE_CUES):
+            continue
+        if re.match(r"^(?:\d+\s+)?(?:figure|table|appendix)\b", lowered):
+            continue
+        sentences.append(sentence)
+    return sentences
+
+
+def _fallback_source(candidate: ArticleCandidate) -> str:
+    if candidate.chinese_summary:
+        return candidate.chinese_summary
+    source = candidate.summary or ""
+    if candidate.detail_text and _summary_is_weak(source):
+        return candidate.detail_text
+    return source or candidate.detail_text
+
+
+def _full_text_available(candidate: ArticleCandidate) -> bool:
+    return bool(candidate.detail_text and len(candidate.detail_text) >= 1200)
+
+
 def parse_structured_summary(value: str) -> dict[str, str]:
     text = (value or "").strip()
     parsed = {label: "" for label in SUMMARY_LABELS}
@@ -147,42 +215,70 @@ def parse_structured_summary(value: str) -> dict[str, str]:
 
 
 def _fallback_core(candidate: ArticleCandidate) -> str:
-    source = candidate.chinese_summary or candidate.summary
+    source = _fallback_source(candidate)
     if source:
+        if not candidate.chinese_summary and _full_text_available(candidate):
+            sentences = _substantive_sentences(source)
+            if sentences:
+                excerpt = _join_limited(sentences[:7], 1200)
+                return (
+                    "该材料可从以下要点把握："
+                    f"{excerpt} "
+                    "上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。"
+                )
         paragraphs = _split_paragraphs(source)
         return paragraphs[0] if paragraphs else _clean(source)
     return "待补充：尚未抽取中文摘要或可用英文公开摘要。"
 
 
 def _fallback_advice(candidate: ArticleCandidate, source: str) -> str:
-    sentences = _split_sentences(source)
+    sentences = _substantive_sentences(source) if _full_text_available(candidate) else _split_sentences(source)
     advice_sentences = [
         sentence
         for sentence in sentences
-        if any(cue in sentence for cue in ADVICE_CUES)
+        if (
+            any(cue in sentence for cue in ADVICE_CUES)
+            or any(cue in sentence.lower() for cue in ENGLISH_ADVICE_CUES)
+        )
         and not any(weak in sentence for weak in ("应对美中", "应对中美", "政策回应"))
     ]
     if advice_sentences:
-        return _join_limited(advice_sentences, 360)
+        advice = _join_limited(advice_sentences[:5], 640)
+        if not candidate.chinese_summary and _full_text_available(candidate):
+            return "自动识别到的政策含义与建议线索包括：" + advice
+        return advice
+    if any(tag in candidate.topic_tags for tag in ("科技创新", "先进制造", "半导体", "数字经济", "科技人才")):
+        return (
+            "原文或现有摘要未检出明确政策建议；后续精读应优先核验其对研发投入、"
+            "人才培养、科研基础设施、产业化通道、标准监管和国际竞争工具的具体主张。"
+        )
     return "原文或现有摘要未检出明确政策建议、行动建议或机构作者的具体主张；需在后续精读中补充。"
 
 
 def _fallback_china_shanghai_reference(candidate: ArticleCandidate, source: str) -> str:
-    sentences = _split_sentences(source)
+    sentences = _substantive_sentences(source) if _full_text_available(candidate) else _split_sentences(source)
     shanghai_sentences = [
         sentence
         for sentence in sentences
         if any(cue in sentence for cue in ("上海", "长三角", "涉沪", "Shanghai"))
     ]
     if shanghai_sentences:
-        return _join_limited(shanghai_sentences, 420)
+        if candidate.chinese_summary or not _full_text_available(candidate):
+            return _join_limited(shanghai_sentences, 420)
+        return "对上海和长三角的直接参考线索包括：" + _join_limited(shanghai_sentences[:4], 640)
     china_sentences = [
         sentence
         for sentence in sentences
         if any(cue in sentence for cue in CHINA_SHANGHAI_CUES)
     ]
     if china_sentences:
-        return _join_limited(china_sentences, 420)
+        if candidate.chinese_summary or not _full_text_available(candidate):
+            return _join_limited(china_sentences, 420)
+        reference = _join_limited(china_sentences[:5], 760)
+        return (
+            "对中国/上海研判的参考在于：该材料提供了涉华技术能力、人才流动、产业链位置或政策工具的比较证据。"
+            f"关键原文线索包括：{reference}"
+        )
     if "中国与上海相关" in candidate.topic_tags:
         return "已标记为中国/上海相关，但摘要尚未拆出具体参照点；后续需回到原文补充页码级证据。"
     return "未检出直接中国/上海指向；可作为同类政策工具、产业链、科研组织或治理框架的比较参照。"
@@ -190,7 +286,7 @@ def _fallback_china_shanghai_reference(candidate: ArticleCandidate, source: str)
 
 def summary_sections(candidate: ArticleCandidate) -> dict[str, str]:
     parsed = parse_structured_summary(candidate.chinese_summary)
-    source = candidate.chinese_summary or candidate.summary
+    source = _fallback_source(candidate)
     sections = {
         "核心观点": parsed["核心观点"] or _fallback_core(candidate),
         "建议": parsed["建议"] or _fallback_advice(candidate, source),

@@ -69,6 +69,7 @@ class GenericParserTests(unittest.TestCase):
         self.assertEqual(
             links,
             [
+                "https://example.org/research/defense/resourcing-and-building-the-future-force",
                 "https://example.org/publications/2026/ai-governance-export-controls/",
                 "https://example.org/article/china-semiconductor-policy/",
                 "https://example.org/research/2026/advanced-manufacturing-report",
@@ -763,6 +764,42 @@ class GenericParserTests(unittest.TestCase):
         detail = parse_generic_detail(html, "https://example.org/publications/ai-governance-brief", institution)
 
         self.assertEqual(detail.pdf_url, "https://cdn.example.org/brief.pdf")
+
+    def test_parse_generic_detail_accepts_download_the_report_pdf_links(self):
+        html = """
+        <html><head><title>DeepSeek AI talent and innovation</title></head>
+        <body>
+          <main>
+            <p>DeepSeek AI talent and innovation analysis.</p>
+            <a href="https://hoover-s3-website.s3.us-west-2.amazonaws.com/s3fs-public/research/docs/Zegart_DeepSeekAI_Talent_July1.pdf">
+              <strong>DOWNLOAD THE REPORT</strong>
+            </a>
+          </main>
+        </body></html>
+        """
+        institution = Institution(
+            slug="hoover-tpa",
+            name="Hoover Technology Policy Accelerator",
+            chinese_name="胡佛技术政策加速器",
+            country_region="United States",
+            institution_type="university_research_center",
+            priority="P1",
+            batch=1,
+            homepage="https://www.hoover.org/research-teams/technology-policy-accelerator",
+            parser="generic",
+            copyright_boundary="private_archive",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://www.hoover.org/research/deep-peek-deepseek-ais-talent-and-implications-us-innovation",
+            institution,
+        )
+
+        self.assertEqual(
+            detail.pdf_url,
+            "https://hoover-s3-website.s3.us-west-2.amazonaws.com/s3fs-public/research/docs/Zegart_DeepSeekAI_Talent_July1.pdf",
+        )
 
 
 if __name__ == "__main__":

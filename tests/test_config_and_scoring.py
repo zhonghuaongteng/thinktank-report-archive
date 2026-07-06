@@ -62,14 +62,18 @@ class ConfigAndScoringTests(unittest.TestCase):
         for keyword in {"artificial-intelligence", "cyber", "defence", "technology", "china"}:
             self.assertIn(keyword, rusi.sitemap_include_keywords)
 
-    def test_hoover_sitemap_is_enabled_for_broad_technology_policy_backfill(self):
+    def test_hoover_uses_focused_pages_instead_of_global_feed_backfill(self):
         institutions = load_institutions("config/institutions")
         hoover = next(item for item in institutions if item.slug == "hoover-tpa")
 
-        self.assertIn("https://www.hoover.org/sitemap.xml", hoover.sitemap_urls)
-        for keyword in {"science-technology", "technology-law-and-governance", "innovation", "cyber"}:
-            self.assertIn(keyword, hoover.sitemap_include_keywords)
-        self.assertNotIn("china", hoover.sitemap_include_keywords)
+        self.assertEqual(hoover.feeds, [])
+        self.assertEqual(hoover.sitemap_urls, [])
+        self.assertIn("https://www.hoover.org/research-teams/technology-policy-accelerator", hoover.list_pages)
+        self.assertIn(
+            "https://www.hoover.org/research-teams/technology-economics-and-governance-working-group",
+            hoover.list_pages,
+        )
+        self.assertGreaterEqual(hoover.run_limit, 20)
 
     def test_rand_sitemap_prefers_publication_paths_not_center_pages(self):
         institutions = load_institutions("config/institutions")

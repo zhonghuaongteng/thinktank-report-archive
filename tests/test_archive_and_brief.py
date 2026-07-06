@@ -99,6 +99,40 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("Official public abstract about critical minerals and industrial strategy.", english_section)
         self.assertNotIn("\nCritical minerals analysis\n\n", english_section)
 
+    def test_build_markdown_uses_full_text_when_public_summary_is_weak(self):
+        detail_text = (
+            "Chinese startup DeepSeek AI has challenged assumptions about American technological superiority in frontier AI development. "
+            "This paper examines educational backgrounds, career paths, and international mobility of more than 200 researchers. "
+            "The authors find evidence that China has developed a robust pipeline of homegrown AI talent. "
+            "These talent patterns represent a challenge to US technological leadership that export controls and computing investments alone cannot address. "
+            "US innovation strategies should adapt by treating human capital as a central technology policy issue. "
+            "For Shanghai, the evidence is relevant to AI talent pipelines, research institutions, and local innovation policy comparison. "
+            * 8
+        )
+        candidate = ArticleCandidate(
+            institution_slug="hoover-tpa",
+            institution_name="Hoover Technology Policy Accelerator",
+            institution_type="university_research_center",
+            title="A Deep Peek Into DeepSeek AI's Talent",
+            url="https://www.hoover.org/research/deepseek-ai-talent",
+            published_date="2025-04-21",
+            content_type="article",
+            priority="P0",
+            topic_tags=["科技创新", "AI治理", "科技治理"],
+            summary="Find out what is at stake. DOWNLOAD THE REPORT",
+            detail_text=detail_text,
+            source_completeness="full_text",
+        )
+
+        markdown = build_markdown(candidate)
+
+        self.assertIn("该材料可从以下要点把握", markdown)
+        self.assertIn("more than 200 researchers", markdown)
+        self.assertIn("自动识别到的政策含义与建议线索包括", markdown)
+        self.assertIn("US innovation strategies should adapt", markdown)
+        self.assertIn("对上海和长三角的直接参考线索包括", markdown)
+        self.assertNotIn("Find out what is at stake. DOWNLOAD THE REPORT\n\n### 建议", markdown)
+
     def test_write_article_uses_undated_directory_for_missing_dates(self):
         candidate = ArticleCandidate(
             institution_slug="itif",
