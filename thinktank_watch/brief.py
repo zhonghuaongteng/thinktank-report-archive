@@ -155,6 +155,7 @@ def render_periodic_brief_markdown(
     candidates: list[ArticleCandidate],
     cadence: str = "daily",
     comic_paths: list[str] | None = None,
+    comic_notes: list[str] | None = None,
 ) -> str:
     title = BRIEF_CADENCE_LABELS.get(cadence, BRIEF_CADENCE_LABELS["daily"])
     period_word = "本周" if cadence == "weekly" else "本日"
@@ -193,6 +194,10 @@ def render_periodic_brief_markdown(
         if comic_paths:
             for index, comic_path in enumerate(comic_paths, 1):
                 lines.append(f"![漫画导读{index}]({comic_path})")
+                if comic_notes and index <= len(comic_notes):
+                    note = comic_notes[index - 1].strip()
+                    if note:
+                        lines.extend(["", f"读图说明{index}：{note}"])
         else:
             lines.append("本周漫画导读尚未接入自动生成图片；样式确认后应在周报正文前插入1-3页漫画导读。")
         lines.append("")
@@ -372,6 +377,7 @@ def write_periodic_brief(
     candidates: list[ArticleCandidate],
     cadence: str = "daily",
     comic_paths: list[str] | None = None,
+    comic_notes: list[str] | None = None,
 ) -> tuple[Path, Path, Path]:
     title = BRIEF_CADENCE_LABELS.get(cadence, BRIEF_CADENCE_LABELS["daily"])
     directory_name = BRIEF_CADENCE_DIRECTORIES.get(cadence, BRIEF_CADENCE_DIRECTORIES["daily"])
@@ -380,7 +386,13 @@ def write_periodic_brief(
     directory.mkdir(parents=True, exist_ok=True)
     markdown_path = directory / f"{date}_{title}.md"
     html_path = directory / f"{date}_{title}.html"
-    markdown = render_periodic_brief_markdown(date, candidates, cadence=cadence, comic_paths=comic_paths)
+    markdown = render_periodic_brief_markdown(
+        date,
+        candidates,
+        cadence=cadence,
+        comic_paths=comic_paths,
+        comic_notes=comic_notes,
+    )
     markdown_path.write_text(markdown, encoding="utf-8")
     html_path.write_text(markdown_to_html(markdown, f"{title}（{date}）"), encoding="utf-8")
     pdf_path = write_pdf_brief(directory / f"{date}_{title}.pdf", markdown, base_dir=directory)
@@ -396,8 +408,16 @@ def write_weekly_brief(
     date: str,
     candidates: list[ArticleCandidate],
     comic_paths: list[str] | None = None,
+    comic_notes: list[str] | None = None,
 ) -> tuple[Path, Path, Path]:
-    return write_periodic_brief(root, date, candidates, cadence="weekly", comic_paths=comic_paths)
+    return write_periodic_brief(
+        root,
+        date,
+        candidates,
+        cadence="weekly",
+        comic_paths=comic_paths,
+        comic_notes=comic_notes,
+    )
 
 
 def _register_pdf_font() -> str:

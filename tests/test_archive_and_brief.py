@@ -784,6 +784,7 @@ class ArchiveAndBriefTests(unittest.TestCase):
                 "2026-07-05",
                 [candidate],
                 comic_paths=["comic/weekly-tech-watch-sample/pages/01-page-weekly-tech-watch.png"],
+                comic_notes=["锚定报告：创新支撑；关键判断：政策工具必须服务于产业化路径。"],
             )
 
             self.assertIn("weekly", Path(markdown_path).parts)
@@ -793,11 +794,13 @@ class ArchiveAndBriefTests(unittest.TestCase):
             markdown = Path(markdown_path).read_text(encoding="utf-8")
             self.assertIn("# 国际科技智库周报（2026-07-05）", markdown)
             self.assertIn("![漫画导读1](comic/weekly-tech-watch-sample/pages/01-page-weekly-tech-watch.png)", markdown)
+            self.assertIn("读图说明1：锚定报告：创新支撑；关键判断：政策工具必须服务于产业化路径。", markdown)
             html = Path(html_path).read_text(encoding="utf-8")
             self.assertIn(
                 '<img src="comic/weekly-tech-watch-sample/pages/01-page-weekly-tech-watch.png" alt="漫画导读1">',
                 html,
             )
+            self.assertIn("读图说明1", html)
 
     def test_write_institution_table_exports_kb_schema(self):
         from thinktank_watch.kb import write_institution_table
