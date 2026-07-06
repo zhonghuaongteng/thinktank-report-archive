@@ -70,6 +70,7 @@ The local Codex automation `国际科技智库每周抓取` runs every Sunday at
 
 ## Source Status Notes
 
+- Current local coverage and gaps are tracked in `docs/backfill_coverage_audit.md`. Use that audit before resuming historical backfill, especially for zero-coverage and low-coverage sources.
 - The default first-batch pool now includes broad innovation-support sources CSIS, Bruegel, ECIPE, ASPI, ORF America, CEPS, Atlantic Council GeoTech, Alan Turing Institute, Hoover TPA, and NBR in addition to RAND, CSET, ITIF, Stanford HAI, Carnegie, Brookings, CNAS, MERICS, OECD.AI, Belfer STPP, IDA STPI, NISTEP, and STEPI.
 - CSET uses the WordPress sitemap index for broader backfill discovery across hardware and compute, supply chains, technology talent, research, innovation, biotechnology, quantum, space, and China technology analysis.
 - Remaining second-batch P0/P1 sources have guarded configs for Ada Lovelace, interface, and GovAI; GovAI is capped with `run_limit` because it is a specialist governance source.

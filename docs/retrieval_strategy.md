@@ -43,6 +43,7 @@ AI治理仍保留专题价值，但默认检索画像不再让纯治理材料挤
 
 - 每周自动运行：北京时间周日14:00。
 - 自动化顺序：确认当前工作分支，`git pull --ff-only`，运行单元测试，执行来源健康审计，运行 `scripts\run_weekly.ps1`，核验周报、归档、知识库索引和状态库，最后提交并推送变更。
+- 覆盖审计：恢复历史回填前先读取 `docs/backfill_coverage_audit.md`，优先处理零覆盖、低覆盖和入口质量问题。
 - 评估方式：新增机构或规则改动前先执行 `evaluate --institution <slug> --limit <n> --backfill --lookback-years 3 --search-profile broad_innovation_support`。
 - 超时处理：全批次评估只作审计，不作为常规入口；常规优化按机构小批量运行。
 - 去重依据：URL 状态库为主，同一 URL 重复抓取不生成新文件；元数据变化更新同一记录。
