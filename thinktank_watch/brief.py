@@ -198,13 +198,47 @@ def weekly_chapter_name(candidate: ArticleCandidate) -> str:
     return "其他创新支撑观察"
 
 
+PDF_TOC_LINES_PER_PAGE = 44
+PDF_TOC_WIDTH_CHARS = 58
+
+
+def _topic_anchor(index: int) -> str:
+    return f"topic-{index:02d}"
+
+
+def _pdf_topic_key(index: int) -> str:
+    return f"topic_{index:02d}"
+
+
+def _weekly_pdf_toc_entry_lines(index: int, item: ArticleCandidate, page: int) -> list[str]:
+    title = item.chinese_title or item.title
+    text = f"P.{page:02d}  主题 {index:02d}｜[{item.priority}] {title}"
+    wrapped = wrap(_clean_text(text), width=PDF_TOC_WIDTH_CHARS)
+    if len(wrapped) <= 1:
+        return wrapped
+    return [wrapped[0], *[f"    {line}" for line in wrapped[1:]]]
+
+
+def _weekly_pdf_toc_page_count(priority_items: list[ArticleCandidate]) -> int:
+    if not priority_items:
+        return 1
+    pages = 1
+    used_lines = 0
+    for index, item in enumerate(priority_items, 1):
+        needed = len(_weekly_pdf_toc_entry_lines(index, item, 99)) + 1
+        if used_lines and used_lines + needed > PDF_TOC_LINES_PER_PAGE:
+            pages += 1
+            used_lines = 0
+        used_lines += needed
+    return pages
+
+
 def weekly_pdf_page_plan(candidates: list[ArticleCandidate]) -> tuple[dict[str, int], dict[str, int]]:
     priority_items = weekly_priority_items(candidates)
-    comic_start_page = 3
-    detail_start_page = comic_start_page + len(priority_items)
-    comic_pages = {item.url: comic_start_page + index for index, item in enumerate(priority_items)}
-    detail_pages = {item.url: detail_start_page + index for index, item in enumerate(priority_items)}
-    return comic_pages, detail_pages
+    toc_pages = _weekly_pdf_toc_page_count(priority_items)
+    topic_start_page = 2 + toc_pages
+    topic_pages = {item.url: topic_start_page + index for index, item in enumerate(priority_items)}
+    return topic_pages, topic_pages
 
 
 def _comic_lines(candidate: ArticleCandidate) -> list[tuple[str, str]]:
@@ -253,9 +287,162 @@ def _comic_transmission(candidate: ArticleCandidate) -> str:
     return "传导链条：" + " -> ".join(chain[:5]) + "。阅读时应追问该链条中哪个环节最可能成为瓶颈或政策抓手。"
 
 
+def _has_explicit_summary_label(candidate: ArticleCandidate, label: str) -> bool:
+    aliases = {
+        "建议": ("建议", "政策建议", "行动建议", "对策建议", "启示建议"),
+        "中国/上海参考": (
+            "中国/上海参考",
+            "中国与上海参考",
+            "中国参考",
+            "上海参考",
+            "涉华/涉沪参考",
+            "涉华参考",
+            "涉沪参考",
+            "中国/上海启示",
+        ),
+    }.get(label, ())
+    if not aliases:
+        return False
+    pattern = r"(?:" + "|".join(re.escape(alias) for alias in aliases) + r")\s*[:：]"
+    return bool(re.search(pattern, candidate.chinese_summary or ""))
+
+
+def _normalized_card_text(value: str) -> str:
+    return re.sub(r"[\s，。！？、；：,.!?;:()（）《》“”\"'|]+", "", _clean_text(value)).lower()
+
+
+def _needs_weekly_card_enrichment(value: str, core: str) -> bool:
+    text = _clean_text(value)
+    if len(text) < 90:
+        return True
+    normalized = _normalized_card_text(text)
+    normalized_core = _normalized_card_text(core)
+    if not normalized or not normalized_core:
+        return False
+    if normalized == normalized_core:
+        return True
+    return len(normalized) > 80 and (normalized in normalized_core or normalized_core in normalized)
+
+
+def _thematic_weekly_advice(candidate: ArticleCandidate) -> str:
+    tags = set(candidate.topic_tags)
+    if "中国与上海相关" in tags and "国防AI" in tags:
+        return (
+            "建议把该条目作为军民两用物流、智能供应链、网络安全和模型可靠性的联动观察入口；"
+            "后续应核验相关判断是否外溢到出口管制、云服务、工业软件和城市级安全评估。"
+        )
+    if tags & {"AI治理", "国防AI"}:
+        return (
+            "建议跟踪该议题如何进入测试评估、采购规则、责任划分和跨境数据安排；"
+            "对本地政策研判而言，重点在于识别哪些安全要求会直接改变模型、算力和应用场景的扩散速度。"
+        )
+    if tags & {"半导体", "先进制造"}:
+        return (
+            "建议沿设备、材料、能源、关键零部件、市场准入和供应链韧性建立持续跟踪表；"
+            "判断重点应放在产业链瓶颈是否会从单点技术约束转化为系统性成本和产能约束。"
+        )
+    if "数字经济" in tags:
+        return (
+            "建议关注算力、云服务、数据可得性和平台规则之间的组合效应；"
+            "后续研判应把基础设施供给、场景开放和安全合规作为同一套创新条件来观察。"
+        )
+    if "科技人才" in tags:
+        return (
+            "建议把人才流动、技能结构、科研组织和长期培养机制放在同一框架下跟踪；"
+            "短期政策工具需要对应到关键岗位供给、跨学科训练和产业端吸纳能力。"
+        )
+    return (
+        "建议把该条目纳入政策工具与创新能力的关系表，继续核验其对研发投入、基础设施、"
+        "产业化路径、标准监管和国际竞争工具的具体含义。"
+    )
+
+
+def _thematic_weekly_reference(candidate: ArticleCandidate) -> str:
+    tags = set(candidate.topic_tags)
+    if "中国与上海相关" in tags and "国防AI" in tags:
+        return (
+            "对中国/上海的参考在于，军民两用供应链、智能物流、公共算力和网络韧性可能同时进入技术竞争视野；"
+            "上海可重点关注城市级场景、产业链安全测试和关键平台外溢规则。"
+        )
+    if "中国与上海相关" in tags and tags & {"半导体", "先进制造"}:
+        return (
+            "对中国/上海的参考在于，外部产业政策和安全规则会影响设备、材料、制造服务和跨国企业研发配置；"
+            "上海应优先识别可替代环节、开放合作窗口和供应链压力测试场景。"
+        )
+    if "中国与上海相关" in tags:
+        return (
+            "对中国/上海的参考在于，该条目提供了外部机构观察中国科技能力、监管工具或产业竞争位置的证据；"
+            "上海可据此校准产业政策、平台治理和国际合作中的风险识别口径。"
+        )
+    if tags & {"AI治理", "数字经济"}:
+        return (
+            "对上海的间接参考在于，AI治理、数据制度和算力基础设施会影响创新扩散速度；"
+            "可用于比较公共算力、数据服务、场景开放和合规评估的政策组合。"
+        )
+    if tags & {"半导体", "先进制造"}:
+        return (
+            "对上海的间接参考在于，制造业创新越来越依赖供应链韧性、能源条件和关键工艺生态；"
+            "可用于对照本地先进制造、集成电路和产业链协同政策。"
+        )
+    return "对中国/上海的参考主要是比较政策工具和创新组织方式；后续可结合本地产业链、科研平台和治理场景补充实证证据。"
+
+
+def _weekly_summary_sections(candidate: ArticleCandidate) -> dict[str, str]:
+    sections = dict(summary_sections(candidate))
+    core = sections["核心观点"]
+    if not _has_explicit_summary_label(candidate, "建议") and _needs_weekly_card_enrichment(sections["建议"], core):
+        sections["建议"] = _thematic_weekly_advice(candidate)
+    if not _has_explicit_summary_label(candidate, "中国/上海参考") and _needs_weekly_card_enrichment(
+        sections["中国/上海参考"], core
+    ):
+        sections["中国/上海参考"] = _thematic_weekly_reference(candidate)
+    return sections
+
+
+def _tracking_question(candidate: ArticleCandidate) -> str:
+    tags = set(candidate.topic_tags)
+    if "中国与上海相关" in tags and tags & {"AI治理", "国防AI", "数字经济"}:
+        return "后续追踪美欧对中国 AI 能力、安全议程和出口策略的判断是否转化为标准、采购、算力、模型出海或城市级治理约束。"
+    if "中国与上海相关" in tags and tags & {"半导体", "先进制造", "科技治理"}:
+        return "后续追踪技术管制、供应链重组和产业补贴是否改变跨国企业在华研发、制造、采购和上海产业协同空间。"
+    if tags & {"半导体", "先进制造"}:
+        return "后续追踪关键材料、设备、能源和制造环节中哪一项最可能成为创新扩散的硬约束。"
+    if tags & {"AI治理", "数字经济", "国防AI"}:
+        return "后续追踪算力、数据、模型评测和平台规则是否形成新的准入门槛，及其对应用型企业的成本影响。"
+    if tags & {"科技人才", "科技创新"}:
+        return "后续追踪人才、科研组织和公共平台供给是否真正改善从研发到产业化的反馈速度。"
+    return "后续追踪该报告提出的政策工具是否会改变创新资源配置、产业化路径和风险承担结构。"
+
+
+def weekly_situation_summary(candidates: list[ArticleCandidate]) -> str:
+    priority_items = weekly_priority_items(candidates)
+    if not priority_items:
+        return "本周未形成 P0/P1 重点条目，后续仅需维持低频巡检和来源健康检查。"
+    chapter_counter: Counter[str] = Counter(weekly_chapter_name(item) for item in priority_items)
+    top_chapters = [name for name, _ in chapter_counter.most_common(2)]
+    china_count = sum(1 for item in priority_items if "中国与上海相关" in item.topic_tags)
+    ai_count = sum(1 for item in priority_items if {"AI治理", "数字经济", "国防AI"} & set(item.topic_tags))
+    industrial_count = sum(1 for item in priority_items if {"半导体", "先进制造"} & set(item.topic_tags))
+    signals = []
+    if top_chapters:
+        signals.append("重点集中在" + "、".join(top_chapters))
+    if china_count:
+        signals.append(f"涉华与上海参考条目 {china_count} 条")
+    if ai_count:
+        signals.append(f"AI、数字基础设施和国防AI信号 {ai_count} 条")
+    if industrial_count:
+        signals.append(f"产业链、制造和能源基础设施信号 {industrial_count} 条")
+    sentence = "；".join(signals)
+    return (
+        f"本周形成 {len(priority_items)} 条 P0/P1 重点。{sentence}。"
+        "主要态势是：国际科技政策讨论正转向创新资源、供应链韧性、算力平台、产业准入和安全规则的组合竞争。"
+        "上海参考应优先聚焦产业链压力测试、公共算力与场景供给、关键平台迁移能力和国际规则外溢跟踪。"
+    )
+
+
 def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
     priority_items = weekly_priority_items(candidates)
-    comic_pages, detail_pages = weekly_pdf_page_plan(candidates)
+    topic_pages, _ = weekly_pdf_page_plan(candidates)
     chapter_groups: dict[str, list[ArticleCandidate]] = {}
     for item in priority_items:
         chapter_groups.setdefault(weekly_chapter_name(item), []).append(item)
@@ -265,52 +452,38 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate])
         "",
         "## 目录",
         "",
-        "- 导读漫画（P.03）",
     ]
     for index, item in enumerate(priority_items, 1):
         lines.append(
-            f"  - P.{comic_pages[item.url]:02d}｜漫画 {index:02d}｜[{item.priority}] "
-            f"{_markdown_link(item.chinese_title or item.title, item.url)}"
+            f"- P.{topic_pages[item.url]:02d}｜[主题 {index:02d}｜{item.chinese_title or item.title}](#{_topic_anchor(index)})"
         )
-    lines.append(f"- 章节展开（P.{3 + len(priority_items):02d}）")
-    for chapter, items in chapter_groups.items():
-        first_page = min(detail_pages[item.url] for item in items)
-        lines.append(f"  - P.{first_page:02d}｜{chapter}（{len(items)}）")
-    lines.extend(["", "## 导读漫画", ""])
+    lines.extend(["", "## 本周态势", "", weekly_situation_summary(candidates), "", "## 主题展开", ""])
     if not priority_items:
         lines.extend(["本周无 P0/P1 重点条目。", ""])
     for index, item in enumerate(priority_items, 1):
         title = item.chinese_title or item.title
+        sections = _weekly_summary_sections(item)
         lines.extend(
             [
-                f"### 漫画 {index:02d}｜[{item.priority}] {_markdown_link(title, item.url)}",
+                f'<a id="{_topic_anchor(index)}"></a>',
+                f"### 主题 {index:02d}｜[{item.priority}] {_markdown_link(title, item.url)}",
                 "",
                 f"- **来源**：{item.institution_name}",
                 f"- **主题**：{', '.join(item.topic_tags) or '待分类'}",
             ]
         )
         for label, value in _comic_lines(item):
+            if label == "中国/上海参考":
+                continue
             lines.append(f"- **{label}**：{_bold_first_sentence(value)}")
-        lines.append("")
-
-    lines.extend(["## 章节展开", ""])
-    for chapter, items in chapter_groups.items():
-        lines.extend([f"### {chapter}", ""])
-        for item in items:
-            sections = summary_sections(item)
-            title = item.chinese_title or item.title
-            lines.extend(
-                [
-                    f"#### [{item.priority}] {_markdown_link(title, item.url)}",
-                    "",
-                    f"- **机构**：{item.institution_name}",
-                    f"- **主题**：{', '.join(item.topic_tags) or '待分类'}",
-                    f"- **核心观点**：{_bold_first_sentence(sections['核心观点'])}",
-                    f"- **建议**：{_bold_first_sentence(sections['建议'])}",
-                    f"- **中国/上海参考**：{_bold_first_sentence(sections['中国/上海参考'])}",
-                    "",
-                ]
-            )
+        lines.extend(
+            [
+                f"- **核心观点**：{_bold_first_sentence(sections['核心观点'])}",
+                f"- **建议**：{_bold_first_sentence(sections['建议'])}",
+                f"- **中国/上海参考**：{_bold_first_sentence(sections['中国/上海参考'])}",
+                "",
+            ]
+        )
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -557,6 +730,9 @@ def markdown_to_html(markdown_text: str, title: str) -> str:
             body_lines.append(
                 f'<figure class="comic"><img src="{escape(src, quote=True)}" alt="{escape(alt, quote=True)}"></figure>'
             )
+        elif line.startswith('<a id="topic-') and line.endswith('"></a>'):
+            close_card()
+            body_lines.append(line)
         elif line.startswith("# "):
             close_card()
             body_lines.append(f"<h1>{_inline_markdown_to_html(line[2:])}</h1>")
@@ -565,7 +741,7 @@ def markdown_to_html(markdown_text: str, title: str) -> str:
             body_lines.append(f"<h2>{_inline_markdown_to_html(line[3:])}</h2>")
         elif line.startswith("### "):
             close_card()
-            card_class = "comic-card" if line.startswith("### 漫画") else "section-heading"
+            card_class = "topic-card" if line.startswith("### 主题") else "section-heading"
             body_lines.append(f'<section class="{card_class}"><h3>{_inline_markdown_to_html(line[4:])}</h3>')
             open_card = True
         elif line.startswith("#### "):
@@ -599,13 +775,13 @@ a {{ color: #155c91; font-weight: 700; text-decoration: none; }}
 strong {{ color: #8b2f2a; font-weight: 800; }}
 .dek {{ font-size: 14px; background: #eaf1f6; padding: 12px 14px; border-left: 5px solid #1f5f8b; }}
 .bullet {{ padding-left: 12px; }}
-.comic-card, .point-card {{ border-radius: 8px; padding: 18px 20px; margin: 18px 0; page-break-inside: avoid; }}
-.comic-card {{ background: #fff7ec; border: 1px solid #e4b36e; box-shadow: inset 0 0 0 2px #f4dfbd; }}
+.topic-card, .point-card {{ border-radius: 8px; padding: 18px 20px; margin: 18px 0; page-break-inside: avoid; }}
+.topic-card {{ background: #fff7ec; border: 1px solid #e4b36e; box-shadow: inset 0 0 0 2px #f4dfbd; }}
 .point-card {{ background: #f6faf6; border: 1px solid #9eb99f; box-shadow: inset 0 0 0 2px #e2efe2; }}
 .section-heading {{ background: #eef3f7; border: 1px solid #c7d7e3; border-radius: 8px; padding: 14px 18px; margin: 22px 0 12px; }}
 .comic {{ margin: 18px 0 22px; }}
 .comic img {{ max-width: 100%; border: 1px solid #d7dee5; }}
-@media print {{ .comic-card, .point-card {{ page-break-before: always; }} main {{ box-shadow: none; }} }}
+@media print {{ .topic-card, .point-card {{ page-break-before: always; }} main {{ box-shadow: none; }} }}
 </style>
 </head>
 <body>
@@ -869,7 +1045,7 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
         draw_wrapped(body, x + 12, y - 42, width_chars, body_size, leading, colors["ink"])
 
     priority_items = weekly_priority_items(candidates)
-    comic_pages, detail_pages = weekly_pdf_page_plan(candidates)
+    topic_pages, _ = weekly_pdf_page_plan(candidates)
     chapter_groups: dict[str, list[ArticleCandidate]] = {}
     for item in priority_items:
         chapter_groups.setdefault(weekly_chapter_name(item), []).append(item)
@@ -892,6 +1068,79 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
         title_y = draw_wrapped(title, x + 12, y - 22, max(12, int((w - 24) / 13)), 12, 16, stroke)
         draw_wrapped(body, x + 12, title_y - 8, max(14, int((w - 24) / 12)), 10, 15, colors["ink"])
 
+    def draw_comic_illustration(candidate: ArticleCandidate, x: float, y: float, w: float, h: float) -> None:
+        tags = set(candidate.topic_tags)
+        pdf.setFillColor(colors["gold_bg"])
+        pdf.setStrokeColor(colors["red"])
+        pdf.roundRect(x, y - h, w, h, 8, fill=1, stroke=1)
+        panel_gap = 6
+        panel_w = (w - panel_gap * 4) / 3
+        panel_h = h - 26
+        panel_y = y - 14
+        labels = ["信号", "瓶颈", "上海"]
+        for panel_index, label in enumerate(labels):
+            px = x + panel_gap + panel_index * (panel_w + panel_gap)
+            py = panel_y
+            pdf.setFillColor(HexColor("#fffaf0"))
+            pdf.setStrokeColor(colors["muted"])
+            pdf.roundRect(px, py - panel_h, panel_w, panel_h, 6, fill=1, stroke=1)
+            pdf.setFillColor(colors["muted"])
+            pdf.setFont(font, 8)
+            pdf.drawString(px + 6, py - 12, label)
+            cx = px + panel_w / 2
+            cy = py - panel_h / 2 - 2
+            if panel_index == 0:
+                pdf.setFillColor(colors["navy"])
+                pdf.rect(cx - 22, cy - 20, 44, 52, fill=0, stroke=1)
+                pdf.line(cx - 16, cy + 17, cx + 16, cy + 17)
+                pdf.line(cx - 16, cy + 6, cx + 16, cy + 6)
+                pdf.line(cx - 16, cy - 5, cx + 10, cy - 5)
+                pdf.setFillColor(colors["red"])
+                pdf.circle(cx + 24, cy + 24, 9, fill=1, stroke=0)
+                pdf.setFillColor(colors["paper"])
+                pdf.setFont(font, 8)
+                pdf.drawCentredString(cx + 24, cy + 21, "!")
+            elif panel_index == 1:
+                pdf.setFillColor(colors["red_bg"])
+                pdf.rect(cx - 30, cy - 24, 60, 48, fill=1, stroke=0)
+                pdf.setStrokeColor(colors["red"])
+                for offset in (-18, 0, 18):
+                    pdf.line(cx + offset - 10, cy - 24, cx + offset + 10, cy + 24)
+                if tags & {"AI治理", "数字经济", "国防AI"}:
+                    pdf.setStrokeColor(colors["navy"])
+                    pdf.rect(cx - 13, cy - 13, 26, 26, fill=0, stroke=1)
+                    for pin in range(-9, 14, 9):
+                        pdf.line(cx - 18, cy + pin, cx - 13, cy + pin)
+                        pdf.line(cx + 13, cy + pin, cx + 18, cy + pin)
+                elif tags & {"半导体", "先进制造"}:
+                    pdf.setStrokeColor(colors["green"])
+                    pdf.rect(cx - 24, cy - 10, 48, 22, fill=0, stroke=1)
+                    pdf.line(cx - 18, cy + 12, cx - 18, cy + 26)
+                    pdf.line(cx, cy + 12, cx, cy + 26)
+                    pdf.line(cx + 18, cy + 12, cx + 18, cy + 26)
+                else:
+                    pdf.setStrokeColor(colors["navy"])
+                    pdf.circle(cx, cy, 18, fill=0, stroke=1)
+                    pdf.line(cx - 18, cy, cx + 18, cy)
+                    pdf.line(cx, cy - 18, cx, cy + 18)
+            else:
+                pdf.setStrokeColor(colors["green"])
+                pdf.setFillColor(colors["green_bg"])
+                pdf.rect(cx - 33, cy - 22, 66, 34, fill=1, stroke=1)
+                for i, height in enumerate([16, 28, 21, 34]):
+                    bx = cx - 27 + i * 15
+                    pdf.setFillColor(colors["paper"])
+                    pdf.rect(bx, cy - 22, 10, height, fill=1, stroke=1)
+                pdf.setStrokeColor(colors["navy"])
+                pdf.circle(cx + 26, cy + 26, 12, fill=0, stroke=1)
+                pdf.line(cx + 35, cy + 17, cx + 45, cy + 7)
+            if panel_index < 2:
+                ax = px + panel_w + panel_gap / 2
+                pdf.setStrokeColor(colors["red"])
+                pdf.line(ax - 2, y - h / 2, ax + 8, y - h / 2)
+                pdf.line(ax + 8, y - h / 2, ax + 3, y - h / 2 + 4)
+                pdf.line(ax + 8, y - h / 2, ax + 3, y - h / 2 - 4)
+
     new_page()
     pdf.setFillColor(colors["navy"])
     pdf.setFont(font, 24)
@@ -900,18 +1149,21 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
     pdf.setFillColor(colors["muted"])
     pdf.drawString(margin, page_height - 124, f"{run_date} | 阅读版")
     pdf.setFillColor(colors["blue_bg"])
-    pdf.roundRect(margin, page_height - 214, content_width, 74, 8, fill=1, stroke=0)
+    pdf.roundRect(margin, page_height - 252, content_width, 112, 8, fill=1, stroke=0)
     pdf.setFillColor(colors["ink"])
-    y = draw_wrapped(
-        "本周报面向快速研判：先按页码目录定位，再逐条阅读 P0/P1 漫画导读，最后进入章节化观点展开。",
+    pdf.setFillColor(colors["navy"])
+    pdf.setFont(font, 13)
+    pdf.drawString(margin + 16, page_height - 164, "本周主要态势")
+    draw_wrapped(
+        weekly_situation_summary(candidates),
         margin + 16,
-        page_height - 166,
-        48,
-        12,
-        18,
+        page_height - 188,
+        44,
+        10,
+        15,
         colors["ink"],
     )
-    y = page_height - 252
+    y = page_height - 292
     pdf.setFillColor(colors["navy"])
     pdf.setFont(font, 15)
     pdf.drawString(margin, y, "阅读地图")
@@ -949,85 +1201,124 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
             colors["green"],
         )
 
-    new_page()
-    y = page_height - 52
-    pdf.setFillColor(colors["navy"])
-    pdf.setFont(font, 18)
-    pdf.drawString(margin, y, "目录")
-    y -= 26
-    pdf.setFillColor(colors["muted"])
-    pdf.setFont(font, 9)
-    pdf.drawString(margin, y, "导读漫画 01-20")
-    pdf.drawString(margin + content_width / 2 + 12, y, "导读漫画 21-40")
-    y -= 18
-    left_x = margin
-    right_x = margin + content_width / 2 + 12
-    left_y = y
-    right_y = y
-    for index, item in enumerate(priority_items, 1):
-        title = _short_text(item.chinese_title or item.title, 18)
-        page_text = f"P.{comic_pages[item.url]:02d}  {index:02d}. {title}"
-        x = left_x if index <= 20 else right_x
-        if index == 21:
-            right_y = y
-        pdf.setFillColor(colors["ink"])
-        pdf.setFont(font, 8.5)
-        if index <= 20:
-            pdf.drawString(x, left_y, page_text)
-            left_y -= 13
-        else:
-            pdf.drawString(x, right_y, page_text)
-            right_y -= 13
-
-    chapter_y = min(left_y, right_y) - 18
-    if chapter_y < 130:
-        chapter_y = 130
-    pdf.setFillColor(colors["navy"])
-    pdf.setFont(font, 11)
-    pdf.drawString(margin, chapter_y, "章节起始页")
-    chapter_y -= 16
-    for chapter, items in chapter_groups.items():
-        first_page = min(detail_pages[item.url] for item in items)
-        chapter_y = draw_wrapped(f"P.{first_page:02d}  {chapter}（{len(items)}）", margin + 8, chapter_y, 50, 9, 13, colors["ink"])
-
-    for index, item in enumerate(priority_items, 1):
-        sections = summary_sections(item)
+    def draw_toc_pages() -> None:
         new_page()
-        pdf.setFillColor(colors["red"])
-        pdf.setFont(font, 12)
-        pdf.drawString(margin, page_height - 46, f"导读漫画 {index:02d} / {len(priority_items):02d}")
-        y = draw_link_title(f"[{item.priority}] {item.chinese_title or item.title}", item.url, margin, page_height - 76, 17, 32)
-        y = draw_wrapped(f"来源：{item.institution_name} | 主题：{', '.join(item.topic_tags) or '待分类'}", margin, y - 4, 48, 10, 15, colors["muted"])
-        panel_w = (content_width - 18) / 2
-        panel_h = 190
-        top = y - 18
-        panels = _comic_lines(item)
-        fills = [colors["gold_bg"], colors["blue_bg"], colors["red_bg"], colors["green_bg"]]
-        strokes = [colors["red"], colors["navy"], colors["red"], colors["green"]]
-        for panel_index, (label, value) in enumerate(panels):
-            col = panel_index % 2
-            row = panel_index // 2
-            x = margin + col * (panel_w + 18)
-            yy = top - row * (panel_h + 18)
-            draw_card(x, yy, panel_w, panel_h, fills[panel_index], strokes[panel_index], label, value, body_size=10, leading=15)
+        y = page_height - 52
+        pdf.setFillColor(colors["navy"])
+        pdf.setFont(font, 18)
+        pdf.drawString(margin, y, "目录")
+        y -= 28
+        pdf.setFillColor(colors["muted"])
+        pdf.setFont(font, 9)
+        pdf.drawString(margin, y, "点击标题跳转至对应主题页")
+        y -= 22
+        for index, item in enumerate(priority_items, 1):
+            lines = _weekly_pdf_toc_entry_lines(index, item, topic_pages[item.url])
+            needed_height = len(lines) * 13 + 8
+            if y - needed_height < 64:
+                new_page()
+                y = page_height - 52
+                pdf.setFillColor(colors["navy"])
+                pdf.setFont(font, 18)
+                pdf.drawString(margin, y, "目录（续）")
+                y -= 32
+            entry_top = y + 4
+            for line_index, line in enumerate(lines):
+                pdf.setFont(font, 9)
+                pdf.setFillColor(colors["navy"] if line_index == 0 else colors["ink"])
+                pdf.drawString(margin + (0 if line_index == 0 else 18), y, line)
+                y -= 13
+            pdf.linkRect(
+                "",
+                _pdf_topic_key(index),
+                (margin, y - 1, page_width - margin, entry_top + 6),
+                relative=0,
+                thickness=0,
+            )
+            y -= 8
 
-    for chapter, items in chapter_groups.items():
-        for item_index, item in enumerate(items, 1):
-            sections = summary_sections(item)
-            new_page()
-            pdf.setFillColor(colors["green"])
-            pdf.setFont(font, 12)
-            pdf.drawString(margin, page_height - 46, f"{chapter} | {item_index} / {len(items)}")
-            y = draw_link_title(f"[{item.priority}] {item.chinese_title or item.title}", item.url, margin, page_height - 76, 17, 32)
-            y = draw_wrapped(f"机构：{item.institution_name}", margin, y - 4, 52, 10, 15, colors["muted"])
-            y = draw_wrapped(f"主题：{', '.join(item.topic_tags) or '待分类'}", margin, y, 52, 10, 15, colors["muted"])
-            card_h = 175
-            y -= 14
-            draw_card(margin, y, content_width, card_h, colors["blue_bg"], colors["navy"], "核心观点", _short_text(sections["核心观点"], 520), body_size=11, leading=16)
-            y -= card_h + 14
-            draw_card(margin, y, content_width, card_h, colors["green_bg"], colors["green"], "建议", _short_text(sections["建议"], 520), body_size=11, leading=16)
-            y -= card_h + 14
-            draw_card(margin, y, content_width, card_h, colors["red_bg"], colors["red"], "中国/上海参考", _short_text(sections["中国/上海参考"], 520), body_size=11, leading=16)
+    draw_toc_pages()
+
+    for index, item in enumerate(priority_items, 1):
+        sections = _weekly_summary_sections(item)
+        chapter = weekly_chapter_name(item)
+        new_page()
+        pdf.bookmarkPage(_pdf_topic_key(index))
+        pdf.addOutlineEntry(f"主题 {index:02d} {item.chinese_title or item.title}", _pdf_topic_key(index), level=0, closed=True)
+        pdf.setFillColor(colors["green"])
+        pdf.setFont(font, 11)
+        pdf.drawString(margin, page_height - 46, f"主题 {index:02d} / {len(priority_items):02d} | {chapter}")
+        y = draw_link_title(f"[{item.priority}] {item.chinese_title or item.title}", item.url, margin, page_height - 76, 16, 34)
+        y = draw_wrapped(
+            f"机构：{item.institution_name} | 主题：{', '.join(item.topic_tags) or '待分类'}",
+            margin,
+            y - 3,
+            56,
+            9,
+            13,
+            colors["muted"],
+        )
+        y -= 14
+        illustration_w = 188
+        illustration_h = 152
+        draw_comic_illustration(item, margin, y, illustration_w, illustration_h)
+        draw_card(
+            margin + illustration_w + 16,
+            y,
+            content_width - illustration_w - 16,
+            illustration_h,
+            colors["blue_bg"],
+            colors["navy"],
+            "核心观点",
+            _short_text(sections["核心观点"], 420),
+            body_size=10,
+            leading=15,
+        )
+        y -= illustration_h + 18
+        half_w = (content_width - 16) / 2
+        draw_card(
+            margin,
+            y,
+            half_w,
+            218,
+            colors["green_bg"],
+            colors["green"],
+            "建议",
+            _short_text(sections["建议"], 440),
+            body_size=10,
+            leading=15,
+        )
+        draw_card(
+            margin + half_w + 16,
+            y,
+            half_w,
+            218,
+            colors["red_bg"],
+            colors["red"],
+            "中国/上海参考",
+            _short_text(sections["中国/上海参考"], 440),
+            body_size=10,
+            leading=15,
+        )
+        y -= 238
+        draw_card(
+            margin,
+            y,
+            content_width,
+            88,
+            colors["gold_bg"],
+            colors["red"],
+            "追踪问题",
+            _tracking_question(item),
+            body_size=9,
+            leading=13,
+        )
+
+    if not priority_items:
+        new_page()
+        pdf.setFillColor(colors["navy"])
+        pdf.setFont(font, 15)
+        pdf.drawString(margin, page_height - 72, "本周无 P0/P1 重点条目")
 
     footer()
     pdf.save()

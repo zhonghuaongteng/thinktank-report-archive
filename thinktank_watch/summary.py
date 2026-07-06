@@ -125,7 +125,7 @@ def _split_sentences(value: str) -> list[str]:
     text = _clean(value)
     if not text:
         return []
-    parts = re.split(r"(?<=[。！？.!?])\s+", text)
+    parts = re.split(r"(?<=[。！？])\s*|(?<=[.!?])\s+", text)
     return [part.strip() for part in parts if part.strip()]
 
 

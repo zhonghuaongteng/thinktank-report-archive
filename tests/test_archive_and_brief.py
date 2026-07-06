@@ -710,7 +710,7 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("- 建议：原文或现有摘要未检出明确政策建议", brief)
         self.assertIn("- 中国/上海参考：该材料对中国和上海具有参考价值", brief)
 
-    def test_render_weekly_brief_uses_reader_structure_and_comic_pages_for_priority_items(self):
+    def test_render_weekly_brief_uses_reader_structure_and_topic_pages_for_priority_items(self):
         candidates = [
             ArticleCandidate(
                 institution_slug=f"source-{index}",
@@ -731,14 +731,42 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         brief = render_weekly_brief_markdown("2026-07-05", candidates)
 
-        self.assertLess(brief.index("## 目录"), brief.index("## 导读漫画"))
-        self.assertLess(brief.index("## 导读漫画"), brief.index("## 章节展开"))
+        self.assertLess(brief.index("## 目录"), brief.index("## 本周态势"))
+        self.assertLess(brief.index("## 本周态势"), brief.index("## 主题展开"))
         self.assertNotIn("## 新增概览", brief)
         self.assertNotIn("## 最近写入", brief)
-        self.assertEqual(brief.count("### 漫画"), 15)
-        self.assertEqual(brief.count("#### [P1]"), 15)
+        self.assertNotIn("## 导读漫画", brief)
+        self.assertNotIn("### 漫画", brief)
+        self.assertEqual(brief.count("### 主题"), 15)
+        self.assertEqual(brief.count('<a id="topic-'), 15)
+        self.assertIn("[主题 15｜创新支撑报告15](#topic-15)", brief)
         self.assertIn("[创新支撑报告15](https://example.org/innovation/15)", brief)
         self.assertIn("**核心观点**", brief)
+
+    def test_render_weekly_brief_enriches_short_unstructured_cards(self):
+        candidate = ArticleCandidate(
+            institution_slug="aspi",
+            institution_name="ASPI",
+            institution_type="think_tank",
+            title="China military AI logistics",
+            chinese_title="中国军事AI后勤",
+            url="https://example.org/logistics",
+            published_date="2026-07-02",
+            content_type="article",
+            priority="P0",
+            topic_tags=["中国与上海相关", "AI治理", "国防AI"],
+            chinese_summary=(
+                "该文分析中国军队将AI嵌入后勤体系的战略含义。"
+                "其核心判断是，智能化调度、仓储、运输和保障体系可提升平时效率。"
+                "对后续跟踪而言，军民两用物流、智能供应链和网络安全能力将更频繁进入国防科技竞争视野。"
+            ),
+        )
+
+        brief = render_weekly_brief_markdown("2026-07-05", [candidate])
+
+        self.assertIn("- **建议**：**建议把该条目作为军民两用物流", brief)
+        self.assertIn("- **中国/上海参考**：**对中国/上海的参考在于，军民两用供应链", brief)
+        self.assertEqual(brief.count("该文分析中国军队将AI嵌入后勤体系的战略含义。"), 2)
 
     def test_write_daily_brief_creates_pdf_when_reportlab_is_available(self):
         try:
@@ -801,10 +829,14 @@ class ArchiveAndBriefTests(unittest.TestCase):
             markdown = Path(markdown_path).read_text(encoding="utf-8")
             self.assertIn("# 国际科技智库周报（2026-07-05）", markdown)
             self.assertIn("## 目录", markdown)
-            self.assertIn("### 漫画 01｜[P1] [创新支撑](https://example.org/innovation)", markdown)
+            self.assertIn("## 本周态势", markdown)
+            self.assertIn("### 主题 01｜[P1] [创新支撑](https://example.org/innovation)", markdown)
+            self.assertIn('[主题 01｜创新支撑](#topic-01)', markdown)
             self.assertNotIn("## 新增概览", markdown)
+            self.assertNotIn("### 漫画", markdown)
             html = Path(html_path).read_text(encoding="utf-8")
-            self.assertIn("comic-card", html)
+            self.assertIn("topic-card", html)
+            self.assertIn('id="topic-01"', html)
             self.assertIn('<a href="https://example.org/innovation">创新支撑</a>', html)
             audit = audit_path.read_text(encoding="utf-8")
             self.assertIn("## 新增概览", audit)
