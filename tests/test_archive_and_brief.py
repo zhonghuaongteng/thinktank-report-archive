@@ -838,9 +838,42 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertIn("topic-card", html)
             self.assertIn('id="topic-01"', html)
             self.assertIn('<a href="https://example.org/innovation">创新支撑</a>', html)
+            from pypdf import PdfReader
+
+            reader = PdfReader(str(pdf_path))
+            image_count = 0
+            for page in reader.pages:
+                resources = page.get("/Resources") or {}
+                xobjects = resources.get("/XObject") or {}
+                for xobject in xobjects.values():
+                    obj = xobject.get_object()
+                    if obj.get("/Subtype") == "/Image":
+                        image_count += 1
+            self.assertGreaterEqual(image_count, 1)
             audit = audit_path.read_text(encoding="utf-8")
             self.assertIn("## 新增概览", audit)
             self.assertIn("## 最近写入", audit)
+
+    def test_pdf_image_reader_downsamples_large_comic_assets(self):
+        try:
+            from PIL import Image, ImageDraw
+            import reportlab  # noqa: F401
+        except ImportError:
+            self.skipTest("Pillow or reportlab is not installed")
+        from thinktank_watch.brief import _pdf_image_reader
+
+        with tempfile.TemporaryDirectory() as tmp:
+            image_path = Path(tmp) / "comic.png"
+            image = Image.new("RGB", (1600, 900), "#f8ebe7")
+            draw = ImageDraw.Draw(image)
+            for x in range(0, 1600, 16):
+                color = "#1f5f8b" if (x // 16) % 2 else "#b84c3d"
+                draw.line((x, 0, 1600 - x % 1600, 899), fill=color, width=3)
+            image.save(image_path, format="PNG")
+
+            reader = _pdf_image_reader(image_path, max_width_px=800, jpeg_quality=70)
+
+            self.assertEqual(reader.getSize(), (800, 450))
 
     def test_write_institution_table_exports_kb_schema(self):
         from thinktank_watch.kb import write_institution_table

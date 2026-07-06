@@ -4,6 +4,7 @@ import csv
 import re
 from collections import Counter
 from html import escape
+from io import BytesIO
 from pathlib import Path
 from textwrap import wrap
 
@@ -208,6 +209,24 @@ def _topic_anchor(index: int) -> str:
 
 def _pdf_topic_key(index: int) -> str:
     return f"topic_{index:02d}"
+
+
+def weekly_topic_comic_file(date: str, index: int) -> Path | None:
+    comic_dir = Path("comic") / f"weekly-topic-comics-{date}" / "pages"
+    supported_suffixes = {".jpg", ".jpeg", ".png", ".webp"}
+    matches = sorted(
+        path
+        for path in comic_dir.glob(f"{index:02d}-*")
+        if path.suffix.lower() in supported_suffixes
+    )
+    return matches[0] if matches else None
+
+
+def weekly_topic_comic_markdown_src(date: str, index: int) -> str | None:
+    comic_path = weekly_topic_comic_file(date, index)
+    if comic_path is None:
+        return None
+    return "../../../" + comic_path.as_posix()
 
 
 def _weekly_pdf_toc_entry_lines(index: int, item: ArticleCandidate, page: int) -> list[str]:
@@ -472,6 +491,9 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate])
                 f"- **主题**：{', '.join(item.topic_tags) or '待分类'}",
             ]
         )
+        comic_src = weekly_topic_comic_markdown_src(date, index)
+        if comic_src:
+            lines.extend(["", f"![主题 {index:02d} 漫画]({comic_src})", ""])
         for label, value in _comic_lines(item):
             if label == "中国/上海参考":
                 continue
@@ -875,10 +897,38 @@ def _resolve_markdown_image(src: str, base_dir: Path) -> Path:
     return base_dir / image_path
 
 
+def _pdf_image_reader(image_path: Path, max_width_px: int = 1200, jpeg_quality: int = 82):
+    from reportlab.lib.utils import ImageReader
+
+    try:
+        from PIL import Image
+    except ImportError:
+        return ImageReader(str(image_path))
+
+    try:
+        with Image.open(image_path) as source:
+            image = source.convert("RGB")
+            if image.width > max_width_px:
+                target_height = round(image.height * max_width_px / image.width)
+                resampling = getattr(getattr(Image, "Resampling", Image), "LANCZOS")
+                image = image.resize((max_width_px, target_height), resampling)
+            buffer = BytesIO()
+            image.save(
+                buffer,
+                format="JPEG",
+                quality=jpeg_quality,
+                optimize=True,
+                progressive=True,
+            )
+            buffer.seek(0)
+            return ImageReader(buffer)
+    except Exception:
+        return ImageReader(str(image_path))
+
+
 def write_pdf_brief(path: str | Path, markdown_text: str, base_dir: str | Path | None = None) -> Path:
     try:
         from reportlab.lib.pagesizes import A4
-        from reportlab.lib.utils import ImageReader
         from reportlab.pdfgen import canvas
     except ImportError:
         return Path(path)
@@ -909,7 +959,7 @@ def write_pdf_brief(path: str | Path, markdown_text: str, base_dir: str | Path |
             draw_line(f"[图片未找到] {src}", 9, 14)
             return
         try:
-            image = ImageReader(str(image_path))
+            image = _pdf_image_reader(image_path)
             image_width, image_height = image.getSize()
         except Exception:
             draw_line(f"[图片无法读取] {src}", 9, 14)
@@ -954,9 +1004,14 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
     try:
         from reportlab.lib.colors import HexColor
         from reportlab.lib.pagesizes import A4
+        from reportlab.lib.utils import ImageReader
         from reportlab.pdfgen import canvas
     except ImportError:
         return Path(path)
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except ImportError:
+        Image = ImageDraw = ImageFont = None
 
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -1002,23 +1057,42 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
         pdf.setFillColor(colors["green"])
         pdf.rect(page_width * 0.67, page_height - 10, page_width * 0.33, 10, fill=1, stroke=0)
 
-    def draw_wrapped(text: str, x: float, y: float, width_chars: int, size: int, leading: int, color=None) -> float:
+    def wrap_pdf_text(text: str, max_width: float, size: int) -> list[str]:
+        clean = _clean_text(text)
+        if not clean:
+            return []
+        lines: list[str] = []
+        current = ""
+        for char in clean:
+            if char == " " and not current:
+                continue
+            candidate = current + char
+            if current and pdf.stringWidth(candidate, font, size) > max_width:
+                lines.append(current.rstrip())
+                current = char.lstrip()
+            else:
+                current = candidate
+        if current:
+            lines.append(current.rstrip())
+        return lines
+
+    def draw_wrapped(text: str, x: float, y: float, max_width: float, size: int, leading: int, color=None) -> float:
         pdf.setFont(font, size)
         pdf.setFillColor(color or colors["ink"])
-        for part in wrap(_clean_text(text), width=width_chars):
+        for part in wrap_pdf_text(text, max_width, size):
             pdf.drawString(x, y, part)
             y -= leading
         return y
 
-    def draw_link_title(text: str, url: str, x: float, y: float, size: int, width_chars: int) -> float:
+    def draw_link_title(text: str, url: str, x: float, y: float, size: int, max_width: float) -> float:
         pdf.setFont(font, size)
         pdf.setFillColor(colors["navy"])
         top = y + size
         first_line_bottom = y - 3
-        for line_index, part in enumerate(wrap(_clean_text(text), width=width_chars)):
+        for line_index, part in enumerate(wrap_pdf_text(text, max_width, size)):
             pdf.drawString(x, y, part)
             if line_index == 0 and url:
-                link_width = min(content_width, max(80, len(part) * size * 0.55))
+                link_width = min(content_width, max(80, pdf.stringWidth(part, font, size)))
                 pdf.linkURL(url, (x, first_line_bottom, x + link_width, top), relative=0)
             y -= size + 5
         return y
@@ -1041,8 +1115,29 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
         pdf.setFillColor(stroke)
         pdf.setFont(font, 12)
         pdf.drawString(x + 12, y - 20, title)
-        width_chars = max(18, int((w - 24) / (body_size + 2)))
-        draw_wrapped(body, x + 12, y - 42, width_chars, body_size, leading, colors["ink"])
+        max_width = w - 24
+        max_lines = max(1, int((h - 52) / leading))
+        size = body_size
+        line_height = leading
+        lines = wrap_pdf_text(body, max_width, size)
+        while len(lines) > max_lines and size > 8:
+            size -= 1
+            line_height = max(11, line_height - 1)
+            max_lines = max(1, int((h - 52) / line_height))
+            lines = wrap_pdf_text(body, max_width, size)
+        if len(lines) > max_lines:
+            lines = lines[:max_lines]
+            if lines:
+                suffix = "..."
+                while lines[-1] and pdf.stringWidth(lines[-1] + suffix, font, size) > max_width:
+                    lines[-1] = lines[-1][:-1]
+                lines[-1] = lines[-1].rstrip() + suffix
+        pdf.setFont(font, size)
+        pdf.setFillColor(colors["ink"])
+        body_y = y - 42
+        for part in lines:
+            pdf.drawString(x + 12, body_y, part)
+            body_y -= line_height
 
     priority_items = weekly_priority_items(candidates)
     topic_pages, _ = weekly_pdf_page_plan(candidates)
@@ -1065,81 +1160,64 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
         pdf.setFillColor(fill)
         pdf.setStrokeColor(stroke)
         pdf.roundRect(x, y - h, w, h, 8, fill=1, stroke=1)
-        title_y = draw_wrapped(title, x + 12, y - 22, max(12, int((w - 24) / 13)), 12, 16, stroke)
-        draw_wrapped(body, x + 12, title_y - 8, max(14, int((w - 24) / 12)), 10, 15, colors["ink"])
+        title_y = draw_wrapped(title, x + 12, y - 22, w - 24, 12, 16, stroke)
+        draw_wrapped(body, x + 12, title_y - 8, w - 24, 10, 15, colors["ink"])
 
-    def draw_comic_illustration(candidate: ArticleCandidate, x: float, y: float, w: float, h: float) -> None:
-        tags = set(candidate.topic_tags)
+    def _pil_font(size: int):
+        if ImageFont is None:
+            return None
+        candidates = [
+            Path(r"C:\Windows\Fonts\simhei.ttf"),
+            Path(r"C:\Windows\Fonts\msyh.ttc"),
+            Path(r"C:\Windows\Fonts\NotoSansSC-VF.ttf"),
+        ]
+        for font_path in candidates:
+            if font_path.exists():
+                try:
+                    return ImageFont.truetype(str(font_path), size)
+                except Exception:
+                    continue
+        return ImageFont.load_default()
+
+    def _generated_comic_path(index: int) -> Path | None:
+        return weekly_topic_comic_file(run_date, index)
+
+    def _missing_comic_reader(index: int, candidate: ArticleCandidate):
+        if Image is None or ImageDraw is None or ImageFont is None:
+            return None
+        width_px = 1500
+        height_px = 410
+        image = Image.new("RGB", (width_px, height_px), "#fff6e7")
+        draw = ImageDraw.Draw(image)
+        title_font = _pil_font(42)
+        body_font = _pil_font(30)
+        small_font = _pil_font(24)
+        draw.rounded_rectangle((18, 18, width_px - 18, height_px - 18), radius=28, fill="#fff6e7", outline="#b84c3d", width=5)
+        draw.text((62, 70), f"主题 {index:02d}｜Codex 漫画待生成", font=title_font, fill="#1f5f8b")
+        title = candidate.chinese_title or candidate.title
+        draw.text((62, 150), _short_text(title, 52), font=body_font, fill="#172026")
+        draw.text((62, 222), "本页禁止回退为程序化示意图；生成真实漫画 PNG 后自动嵌入周报。", font=small_font, fill="#5f6b75")
+        draw.text((62, 276), "目标样式：单篇报告证据链式政策漫画，呈现机制、冲突、建议与上海参考。", font=small_font, fill="#5f6b75")
+        buffer = BytesIO()
+        image.save(buffer, format="PNG")
+        buffer.seek(0)
+        return ImageReader(buffer)
+
+    def draw_comic_illustration(index: int, candidate: ArticleCandidate, x: float, y: float, w: float, h: float) -> None:
+        comic_path = _generated_comic_path(index)
+        if comic_path is not None:
+            pdf.drawImage(_pdf_image_reader(comic_path), x, y - h, width=w, height=h, mask="auto")
+            return
+        missing = _missing_comic_reader(index, candidate)
+        if missing is not None:
+            pdf.drawImage(missing, x, y - h, width=w, height=h, mask="auto")
+            return
         pdf.setFillColor(colors["gold_bg"])
         pdf.setStrokeColor(colors["red"])
         pdf.roundRect(x, y - h, w, h, 8, fill=1, stroke=1)
-        panel_gap = 6
-        panel_w = (w - panel_gap * 4) / 3
-        panel_h = h - 26
-        panel_y = y - 14
-        labels = ["信号", "瓶颈", "上海"]
-        for panel_index, label in enumerate(labels):
-            px = x + panel_gap + panel_index * (panel_w + panel_gap)
-            py = panel_y
-            pdf.setFillColor(HexColor("#fffaf0"))
-            pdf.setStrokeColor(colors["muted"])
-            pdf.roundRect(px, py - panel_h, panel_w, panel_h, 6, fill=1, stroke=1)
-            pdf.setFillColor(colors["muted"])
-            pdf.setFont(font, 8)
-            pdf.drawString(px + 6, py - 12, label)
-            cx = px + panel_w / 2
-            cy = py - panel_h / 2 - 2
-            if panel_index == 0:
-                pdf.setFillColor(colors["navy"])
-                pdf.rect(cx - 22, cy - 20, 44, 52, fill=0, stroke=1)
-                pdf.line(cx - 16, cy + 17, cx + 16, cy + 17)
-                pdf.line(cx - 16, cy + 6, cx + 16, cy + 6)
-                pdf.line(cx - 16, cy - 5, cx + 10, cy - 5)
-                pdf.setFillColor(colors["red"])
-                pdf.circle(cx + 24, cy + 24, 9, fill=1, stroke=0)
-                pdf.setFillColor(colors["paper"])
-                pdf.setFont(font, 8)
-                pdf.drawCentredString(cx + 24, cy + 21, "!")
-            elif panel_index == 1:
-                pdf.setFillColor(colors["red_bg"])
-                pdf.rect(cx - 30, cy - 24, 60, 48, fill=1, stroke=0)
-                pdf.setStrokeColor(colors["red"])
-                for offset in (-18, 0, 18):
-                    pdf.line(cx + offset - 10, cy - 24, cx + offset + 10, cy + 24)
-                if tags & {"AI治理", "数字经济", "国防AI"}:
-                    pdf.setStrokeColor(colors["navy"])
-                    pdf.rect(cx - 13, cy - 13, 26, 26, fill=0, stroke=1)
-                    for pin in range(-9, 14, 9):
-                        pdf.line(cx - 18, cy + pin, cx - 13, cy + pin)
-                        pdf.line(cx + 13, cy + pin, cx + 18, cy + pin)
-                elif tags & {"半导体", "先进制造"}:
-                    pdf.setStrokeColor(colors["green"])
-                    pdf.rect(cx - 24, cy - 10, 48, 22, fill=0, stroke=1)
-                    pdf.line(cx - 18, cy + 12, cx - 18, cy + 26)
-                    pdf.line(cx, cy + 12, cx, cy + 26)
-                    pdf.line(cx + 18, cy + 12, cx + 18, cy + 26)
-                else:
-                    pdf.setStrokeColor(colors["navy"])
-                    pdf.circle(cx, cy, 18, fill=0, stroke=1)
-                    pdf.line(cx - 18, cy, cx + 18, cy)
-                    pdf.line(cx, cy - 18, cx, cy + 18)
-            else:
-                pdf.setStrokeColor(colors["green"])
-                pdf.setFillColor(colors["green_bg"])
-                pdf.rect(cx - 33, cy - 22, 66, 34, fill=1, stroke=1)
-                for i, height in enumerate([16, 28, 21, 34]):
-                    bx = cx - 27 + i * 15
-                    pdf.setFillColor(colors["paper"])
-                    pdf.rect(bx, cy - 22, 10, height, fill=1, stroke=1)
-                pdf.setStrokeColor(colors["navy"])
-                pdf.circle(cx + 26, cy + 26, 12, fill=0, stroke=1)
-                pdf.line(cx + 35, cy + 17, cx + 45, cy + 7)
-            if panel_index < 2:
-                ax = px + panel_w + panel_gap / 2
-                pdf.setStrokeColor(colors["red"])
-                pdf.line(ax - 2, y - h / 2, ax + 8, y - h / 2)
-                pdf.line(ax + 8, y - h / 2, ax + 3, y - h / 2 + 4)
-                pdf.line(ax + 8, y - h / 2, ax + 3, y - h / 2 - 4)
+        pdf.setFillColor(colors["navy"])
+        pdf.setFont(font, 13)
+        pdf.drawString(x + 16, y - 34, f"主题 {index:02d}｜Codex 漫画待生成")
 
     new_page()
     pdf.setFillColor(colors["navy"])
@@ -1148,22 +1226,26 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
     pdf.setFont(font, 13)
     pdf.setFillColor(colors["muted"])
     pdf.drawString(margin, page_height - 124, f"{run_date} | 阅读版")
+    situation = weekly_situation_summary(candidates)
+    situation_lines = wrap_pdf_text(situation, content_width - 32, 10)
+    situation_box_top = page_height - 140
+    situation_box_h = max(126, 50 + len(situation_lines) * 15)
     pdf.setFillColor(colors["blue_bg"])
-    pdf.roundRect(margin, page_height - 252, content_width, 112, 8, fill=1, stroke=0)
+    pdf.roundRect(margin, situation_box_top - situation_box_h, content_width, situation_box_h, 8, fill=1, stroke=0)
     pdf.setFillColor(colors["ink"])
     pdf.setFillColor(colors["navy"])
     pdf.setFont(font, 13)
-    pdf.drawString(margin + 16, page_height - 164, "本周主要态势")
+    pdf.drawString(margin + 16, situation_box_top - 24, "本周主要态势")
     draw_wrapped(
-        weekly_situation_summary(candidates),
+        situation,
         margin + 16,
-        page_height - 188,
-        44,
+        situation_box_top - 50,
+        content_width - 32,
         10,
         15,
         colors["ink"],
     )
-    y = page_height - 292
+    y = situation_box_top - situation_box_h - 34
     pdf.setFillColor(colors["navy"])
     pdf.setFont(font, 15)
     pdf.drawString(margin, y, "阅读地图")
@@ -1248,64 +1330,71 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
         pdf.setFillColor(colors["green"])
         pdf.setFont(font, 11)
         pdf.drawString(margin, page_height - 46, f"主题 {index:02d} / {len(priority_items):02d} | {chapter}")
-        y = draw_link_title(f"[{item.priority}] {item.chinese_title or item.title}", item.url, margin, page_height - 76, 16, 34)
+        y = draw_link_title(
+            f"[{item.priority}] {item.chinese_title or item.title}",
+            item.url,
+            margin,
+            page_height - 76,
+            16,
+            content_width,
+        )
         y = draw_wrapped(
             f"机构：{item.institution_name} | 主题：{', '.join(item.topic_tags) or '待分类'}",
             margin,
             y - 3,
-            56,
+            content_width,
             9,
             13,
             colors["muted"],
         )
         y -= 14
-        illustration_w = 188
-        illustration_h = 152
-        draw_comic_illustration(item, margin, y, illustration_w, illustration_h)
+        illustration_h = 190
+        draw_comic_illustration(index, item, margin, y, content_width, illustration_h)
+        y -= illustration_h + 14
         draw_card(
-            margin + illustration_w + 16,
+            margin,
             y,
-            content_width - illustration_w - 16,
-            illustration_h,
+            content_width,
+            124,
             colors["blue_bg"],
             colors["navy"],
             "核心观点",
-            _short_text(sections["核心观点"], 420),
+            _short_text(sections["核心观点"], 520),
             body_size=10,
             leading=15,
         )
-        y -= illustration_h + 18
+        y -= 138
         half_w = (content_width - 16) / 2
         draw_card(
             margin,
             y,
             half_w,
-            218,
+            164,
             colors["green_bg"],
             colors["green"],
             "建议",
-            _short_text(sections["建议"], 440),
-            body_size=10,
-            leading=15,
+            _short_text(sections["建议"], 320),
+            body_size=9,
+            leading=14,
         )
         draw_card(
             margin + half_w + 16,
             y,
             half_w,
-            218,
+            164,
             colors["red_bg"],
             colors["red"],
             "中国/上海参考",
-            _short_text(sections["中国/上海参考"], 440),
-            body_size=10,
-            leading=15,
+            _short_text(sections["中国/上海参考"], 320),
+            body_size=9,
+            leading=14,
         )
-        y -= 238
+        y -= 180
         draw_card(
             margin,
             y,
             content_width,
-            88,
+            76,
             colors["gold_bg"],
             colors["red"],
             "追踪问题",
