@@ -324,6 +324,36 @@ class BackfillControlTests(unittest.TestCase):
         self.assertTrue(candidate_matches_search_profile(innovation, profile))
         self.assertFalse(candidate_matches_search_profile(governance, profile))
 
+    def test_broad_innovation_support_profile_keeps_innovation_enabling_technology_governance(self):
+        profile = resolve_search_profile("broad_innovation_support")
+        candidate = ArticleCandidate(
+            "interface",
+            "interface",
+            "think_tank",
+            "Regulatory sandboxes and standards infrastructure for technology adoption",
+            "https://example.org/innovation-enabling-governance",
+            summary="Technology policy report on pro-innovation regulation, regulatory sandboxes, open standards, and testing infrastructure.",
+            priority="P1",
+            topic_tags=["科技治理"],
+        )
+
+        self.assertTrue(candidate_matches_search_profile(candidate, profile))
+
+    def test_broad_innovation_support_profile_excludes_governance_without_innovation_support_signal(self):
+        profile = resolve_search_profile("broad_innovation_support")
+        candidate = ArticleCandidate(
+            "govai",
+            "GovAI",
+            "think_tank",
+            "AI governance and model accountability",
+            "https://example.org/governance-only",
+            summary="Governance framework for model reporting and accountability.",
+            priority="P1",
+            topic_tags=["AI治理", "科技治理"],
+        )
+
+        self.assertFalse(candidate_matches_search_profile(candidate, profile))
+
     def test_ai_governance_watch_profile_keeps_governance_candidates(self):
         profile = resolve_search_profile("ai_governance_watch")
         candidate = ArticleCandidate(

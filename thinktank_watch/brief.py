@@ -24,6 +24,14 @@ MAX_EXPANDED_GOVERNANCE_ONLY_ITEMS = 4
 MAX_INDEX_ITEMS = 100
 MAX_RECENT_WRITE_ITEMS = 8
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
+BRIEF_CADENCE_LABELS = {
+    "daily": "国际科技智库动态简报",
+    "weekly": "国际科技智库周报",
+}
+BRIEF_CADENCE_DIRECTORIES = {
+    "daily": "daily",
+    "weekly": "weekly",
+}
 
 
 def published_date_sort_value(value: str) -> int:
@@ -132,7 +140,13 @@ def select_recent_write_items(candidates: list[ArticleCandidate], limit: int = M
     return list(reversed(candidates[-limit:])) if candidates else []
 
 
-def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
+def render_periodic_brief_markdown(
+    date: str,
+    candidates: list[ArticleCandidate],
+    cadence: str = "daily",
+) -> str:
+    title = BRIEF_CADENCE_LABELS.get(cadence, BRIEF_CADENCE_LABELS["daily"])
+    period_word = "本周" if cadence == "weekly" else "本日"
     ordered_candidates = sort_brief_candidates(candidates)
     priority_items = [item for item in ordered_candidates if item.priority in {"P0", "P1"}]
     expanded_priority_items = select_expanded_priority_items(priority_items)
@@ -145,7 +159,7 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
     governance_only_count = sum(1 for item in candidates if is_governance_only_candidate(item))
 
     lines = [
-        f"# 国际科技智库动态简报（{date}）",
+        f"# {title}（{date}）",
         "",
         "## 新增概览",
         "",
@@ -163,7 +177,7 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
         for item in recent_write_items:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
     else:
-        lines.append("本日暂无新增写入。")
+        lines.append(f"{period_word}暂无新增写入。")
     lines.extend(
         [
             "",
@@ -172,7 +186,7 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
         ]
     )
     if not priority_items:
-        lines.extend(["本日无P0/P1新增重点。", ""])
+        lines.extend([f"{period_word}无P0/P1新增重点。", ""])
     else:
         for item in expanded_priority_items:
             title = item.chinese_title or item.title
@@ -194,7 +208,7 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
         for item in tech_items[:8]:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}")
     else:
-        lines.append("本日未检出科技创新支撑强相关条目。")
+        lines.append(f"{period_word}未检出科技创新支撑强相关条目。")
 
     governance_items = [item for item in ordered_candidates if is_governance_only_candidate(item)]
     if governance_items:
@@ -208,7 +222,7 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
         for item in support_items[:12]:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}")
     else:
-        lines.append("本日未检出区域创新、先进制造、数字基础设施、半导体或科技人才相关条目。")
+        lines.append(f"{period_word}未检出区域创新、先进制造、数字基础设施、半导体或科技人才相关条目。")
 
     lines.extend(["", "## 涉华/涉沪判断", ""])
     china_items = [item for item in ordered_candidates if "中国与上海相关" in item.topic_tags]
@@ -216,7 +230,7 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
         for item in china_items[:8]:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
     else:
-        lines.append("本日未检出中国/上海强相关条目。")
+        lines.append(f"{period_word}未检出中国/上海强相关条目。")
 
     lines.extend(["", "## 新增索引", ""])
     for item in index_items[:MAX_INDEX_ITEMS]:
@@ -227,6 +241,14 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
 
     lines.extend(["", "## 后续推进", "", "- 对P0/P1条目补充中文研判、页码级证据和可复用表述。"])
     return "\n".join(lines) + "\n"
+
+
+def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
+    return render_periodic_brief_markdown(date, candidates, cadence="daily")
+
+
+def render_weekly_brief_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
+    return render_periodic_brief_markdown(date, candidates, cadence="weekly")
 
 
 def load_daily_brief_candidates(
@@ -297,17 +319,32 @@ p {{ font-size: 12px; margin: 6px 0; }}
 """
 
 
-def write_daily_brief(root: str | Path, date: str, candidates: list[ArticleCandidate]) -> tuple[Path, Path, Path]:
+def write_periodic_brief(
+    root: str | Path,
+    date: str,
+    candidates: list[ArticleCandidate],
+    cadence: str = "daily",
+) -> tuple[Path, Path, Path]:
+    title = BRIEF_CADENCE_LABELS.get(cadence, BRIEF_CADENCE_LABELS["daily"])
+    directory_name = BRIEF_CADENCE_DIRECTORIES.get(cadence, BRIEF_CADENCE_DIRECTORIES["daily"])
     year = date[:4]
-    directory = Path(root) / "daily" / year
+    directory = Path(root) / directory_name / year
     directory.mkdir(parents=True, exist_ok=True)
-    markdown_path = directory / f"{date}_国际科技智库动态简报.md"
-    html_path = directory / f"{date}_国际科技智库动态简报.html"
-    markdown = render_daily_brief_markdown(date, candidates)
+    markdown_path = directory / f"{date}_{title}.md"
+    html_path = directory / f"{date}_{title}.html"
+    markdown = render_periodic_brief_markdown(date, candidates, cadence=cadence)
     markdown_path.write_text(markdown, encoding="utf-8")
-    html_path.write_text(markdown_to_html(markdown, f"国际科技智库动态简报（{date}）"), encoding="utf-8")
-    pdf_path = write_pdf_brief(directory / f"{date}_国际科技智库动态简报.pdf", markdown)
+    html_path.write_text(markdown_to_html(markdown, f"{title}（{date}）"), encoding="utf-8")
+    pdf_path = write_pdf_brief(directory / f"{date}_{title}.pdf", markdown)
     return markdown_path, html_path, pdf_path
+
+
+def write_daily_brief(root: str | Path, date: str, candidates: list[ArticleCandidate]) -> tuple[Path, Path, Path]:
+    return write_periodic_brief(root, date, candidates, cadence="daily")
+
+
+def write_weekly_brief(root: str | Path, date: str, candidates: list[ArticleCandidate]) -> tuple[Path, Path, Path]:
+    return write_periodic_brief(root, date, candidates, cadence="weekly")
 
 
 def _register_pdf_font() -> str:

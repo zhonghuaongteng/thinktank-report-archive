@@ -10,7 +10,7 @@ import httpx
 
 from .audit import write_audit_report
 from .archive import write_article
-from .brief import load_daily_brief_candidates, write_daily_brief
+from .brief import load_daily_brief_candidates, write_periodic_brief
 from .config import load_institutions, load_priority_rules, load_search_profiles, load_topics
 from .fetch import (
     check_pdf,
@@ -34,6 +34,7 @@ DEFAULT_CONFIG = Path("config")
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 DEFAULT_BACKFILL_LOOKBACK_YEARS = 3
 DEFAULT_DAILY_LOOKBACK_DAYS = 30
+DEFAULT_WEEKLY_LOOKBACK_DAYS = 14
 DEFAULT_EXPANDED_SEARCH_PROFILE = "broad_innovation_support"
 
 
@@ -268,7 +269,12 @@ def write_run_brief(args: argparse.Namespace, run_date: str, written: list[Artic
         indexed = load_daily_brief_candidates(args.archive_root, args.kb_root, run_date)
         if indexed:
             candidates = indexed
-    write_daily_brief(args.brief_root, run_date, candidates)
+    write_periodic_brief(
+        args.brief_root,
+        run_date,
+        candidates,
+        cadence=getattr(args, "brief_cadence", "daily"),
+    )
 
 
 def collect_candidates(
@@ -414,6 +420,11 @@ def run_daily(args: argparse.Namespace) -> int:
     return 0
 
 
+def run_weekly(args: argparse.Namespace) -> int:
+    args.brief_cadence = "weekly"
+    return run_daily(args)
+
+
 def backfill(args: argparse.Namespace) -> int:
     run_date = args.date or date.today().isoformat()
     institutions, topics, priorities = _load_config()
@@ -504,6 +515,7 @@ def build_parser() -> argparse.ArgumentParser:
     daily.add_argument("--min-priority", choices=sorted(PRIORITY_ORDER), default="P3")
     daily.add_argument("--write-limit", type=int, default=0, help="Maximum number of new allowed records to write. 0 means unlimited.")
     daily.add_argument("--lookback-days", type=int, default=DEFAULT_DAILY_LOOKBACK_DAYS)
+    daily.add_argument("--brief-cadence", choices=["daily", "weekly"], default="daily")
     daily.add_argument("--include-term", dest="include_terms", action="append", default=[])
     daily.add_argument("--search-profile", default=DEFAULT_EXPANDED_SEARCH_PROFILE)
     daily.add_argument("--archive-root", default="archive")
@@ -511,6 +523,25 @@ def build_parser() -> argparse.ArgumentParser:
     daily.add_argument("--state", default="state/articles.sqlite")
     daily.add_argument("--kb-root", default=str(Path(r"C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库")))
     daily.set_defaults(func=run_daily)
+
+    weekly = sub.add_parser("run-weekly", help="Run weekly fetch, archive, brief, and KB index update.")
+    weekly.add_argument("--batch", type=int, default=1)
+    weekly.add_argument("--institution")
+    weekly.add_argument("--limit", type=int, default=30)
+    weekly.add_argument("--date")
+    weekly.add_argument("--refresh", action="store_true")
+    weekly.add_argument("--skip-kb", action="store_true")
+    weekly.add_argument("--min-priority", choices=sorted(PRIORITY_ORDER), default="P3")
+    weekly.add_argument("--write-limit", type=int, default=0, help="Maximum number of new allowed records to write. 0 means unlimited.")
+    weekly.add_argument("--lookback-days", type=int, default=DEFAULT_WEEKLY_LOOKBACK_DAYS)
+    weekly.add_argument("--include-term", dest="include_terms", action="append", default=[])
+    weekly.add_argument("--search-profile", default=DEFAULT_EXPANDED_SEARCH_PROFILE)
+    weekly.add_argument("--archive-root", default="archive")
+    weekly.add_argument("--brief-root", default="briefs")
+    weekly.add_argument("--state", default="state/articles.sqlite")
+    weekly.add_argument("--kb-root", default=str(Path(r"C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库")))
+    weekly.add_argument("--brief-cadence", choices=["weekly"], default="weekly")
+    weekly.set_defaults(func=run_weekly)
 
     backfill_parser = sub.add_parser("backfill", help="Initialize archive from feeds, list pages, and configured sitemaps.")
     backfill_parser.add_argument("--batch", type=int, default=1)
@@ -524,6 +555,7 @@ def build_parser() -> argparse.ArgumentParser:
     backfill_parser.add_argument("--include-term", dest="include_terms", action="append", default=[])
     backfill_parser.add_argument("--search-profile", default=DEFAULT_EXPANDED_SEARCH_PROFILE)
     backfill_parser.add_argument("--lookback-years", type=int, default=DEFAULT_BACKFILL_LOOKBACK_YEARS)
+    backfill_parser.add_argument("--brief-cadence", choices=["daily", "weekly"], default="daily")
     backfill_parser.add_argument("--archive-root", default="archive")
     backfill_parser.add_argument("--brief-root", default="briefs")
     backfill_parser.add_argument("--state", default="state/articles.sqlite")

@@ -647,6 +647,31 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertTrue(Path(pdf_path).exists())
             self.assertEqual(Path(pdf_path).read_bytes()[:4], b"%PDF")
 
+    def test_write_weekly_brief_uses_weekly_directory_and_title(self):
+        candidate = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="ITIF",
+            institution_type="think_tank",
+            title="Innovation support",
+            chinese_title="创新支撑",
+            url="https://example.org/innovation",
+            published_date="2026-07-04",
+            content_type="report",
+            priority="P1",
+            topic_tags=["科技创新"],
+            chinese_summary="创新支撑材料。",
+        )
+        from thinktank_watch.brief import write_weekly_brief
+
+        with tempfile.TemporaryDirectory() as tmp:
+            markdown_path, html_path, pdf_path = write_weekly_brief(tmp, "2026-07-05", [candidate])
+
+            self.assertIn("weekly", Path(markdown_path).parts)
+            self.assertEqual(Path(markdown_path).name, "2026-07-05_国际科技智库周报.md")
+            self.assertEqual(Path(html_path).name, "2026-07-05_国际科技智库周报.html")
+            self.assertEqual(Path(pdf_path).name, "2026-07-05_国际科技智库周报.pdf")
+            self.assertIn("# 国际科技智库周报（2026-07-05）", Path(markdown_path).read_text(encoding="utf-8"))
+
     def test_write_institution_table_exports_kb_schema(self):
         from thinktank_watch.kb import write_institution_table
 

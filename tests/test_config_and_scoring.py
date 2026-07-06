@@ -95,14 +95,19 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertIn("数字经济", profile.topic_tags_any)
         self.assertIn("科技人才", profile.topic_tags_any)
         self.assertIn("国防AI", profile.topic_tags_any)
+        self.assertIn("科技治理", profile.topic_tags_any)
 
     def test_daily_and_backfill_cli_default_to_broad_innovation_support_profile(self):
         parser = build_parser()
 
         daily_args = parser.parse_args(["run-daily"])
+        weekly_args = parser.parse_args(["run-weekly"])
         backfill_args = parser.parse_args(["backfill"])
 
         self.assertEqual(daily_args.search_profile, "broad_innovation_support")
+        self.assertEqual(weekly_args.search_profile, "broad_innovation_support")
+        self.assertEqual(weekly_args.lookback_days, 14)
+        self.assertEqual(weekly_args.brief_cadence, "weekly")
         self.assertEqual(backfill_args.search_profile, "broad_innovation_support")
 
     def test_scoring_promotes_ai_china_governance_items_to_p0(self):
