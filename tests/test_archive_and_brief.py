@@ -4,7 +4,7 @@ from pathlib import Path
 import tempfile
 
 from thinktank_watch.archive import build_markdown, safe_article_filename
-from thinktank_watch.brief import render_daily_brief_markdown
+from thinktank_watch.brief import render_daily_brief_markdown, render_weekly_brief_markdown
 from thinktank_watch.models import ArticleCandidate, Institution
 
 
@@ -54,6 +54,10 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("fetch_status: detail_ok", markdown)
         self.assertIn("# 供应链、能源与人工智能交汇", markdown)
         self.assertIn("## 中文摘要与研判", markdown)
+        self.assertIn("### 核心观点", markdown)
+        self.assertIn("### 建议", markdown)
+        self.assertIn("### 中国/上海参考", markdown)
+        self.assertIn("该报告讨论人工智能能源供应链脆弱性。", markdown)
         self.assertIn("## English Source Material", markdown)
 
     def test_build_markdown_uses_topic_tags_as_keyword_fallback(self):
@@ -149,6 +153,9 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("P0/P1重点", brief)
         self.assertIn("科技创新支撑重点", brief)
         self.assertIn("AI治理与科技治理观察", brief)
+        self.assertIn("- 核心观点：重点AI治理材料。", brief)
+        self.assertIn("- 建议：", brief)
+        self.assertIn("- 中国/上海参考：", brief)
         self.assertIn("AI安全", brief)
         self.assertIn("新增索引", brief)
         self.assertIn("制造业", brief)
@@ -618,7 +625,81 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         self.assertEqual([item.url for item in candidates], [first.url])
         self.assertEqual(candidates[0].chinese_title, "生成式AI安全基本要求")
-        self.assertEqual(candidates[0].chinese_summary, "该标准材料涉及生成式AI服务安全要求。")
+        self.assertIn("该标准材料涉及生成式AI服务安全要求。", candidates[0].chinese_summary)
+
+    def test_render_daily_brief_uses_structured_summary_sections(self):
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="CSET",
+            institution_type="university_research_center",
+            title="Public AI compute",
+            chinese_title="公共AI算力",
+            url="https://example.org/compute",
+            published_date="2026-07-01",
+            content_type="report",
+            priority="P1",
+            topic_tags=["科技创新", "AI治理", "中国与上海相关"],
+            chinese_summary=(
+                "核心观点：公共算力是AI科研基础设施，不只是硬件采购。\n"
+                "建议：建立需求测算、资源分配和使用绩效规则。\n"
+                "中国/上海参考：上海可把公共算力、数据服务和应用验证平台联动。"
+            ),
+        )
+
+        brief = render_daily_brief_markdown("2026-07-04", [candidate])
+
+        self.assertIn("- 核心观点：公共算力是AI科研基础设施，不只是硬件采购。", brief)
+        self.assertIn("- 建议：建立需求测算、资源分配和使用绩效规则。", brief)
+        self.assertIn("- 中国/上海参考：上海可把公共算力、数据服务和应用验证平台联动。", brief)
+
+    def test_render_daily_brief_does_not_treat_yingdui_as_advice(self):
+        candidate = ArticleCandidate(
+            institution_slug="merics",
+            institution_name="MERICS",
+            institution_type="think_tank",
+            title="Strategic autonomy",
+            chinese_title="欧洲应对美中竞争",
+            url="https://example.org/autonomy",
+            published_date="2026-07-01",
+            content_type="report",
+            priority="P1",
+            topic_tags=["科技创新", "中国与上海相关"],
+            chinese_summary=(
+                "报告讨论欧洲在美中竞争中的战略自主选择，涉及供应链依赖、产业竞争力和技术安全。\n\n"
+                "该材料对中国和上海具有参考价值：欧洲技术政策变化会影响跨国企业在华研发和供应链布局。"
+            ),
+        )
+
+        brief = render_daily_brief_markdown("2026-07-04", [candidate])
+
+        self.assertIn("- 核心观点：报告讨论欧洲在美中竞争中的战略自主选择", brief)
+        self.assertIn("- 建议：原文或现有摘要未检出明确政策建议", brief)
+        self.assertIn("- 中国/上海参考：该材料对中国和上海具有参考价值", brief)
+
+    def test_render_weekly_brief_is_longer_and_places_comic_first(self):
+        candidates = [
+            ArticleCandidate(
+                institution_slug=f"source-{index}",
+                institution_name=f"Source {index}",
+                institution_type="think_tank",
+                title=f"Innovation support report {index}",
+                chinese_title=f"创新支撑报告{index}",
+                url=f"https://example.org/innovation/{index}",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P1",
+                score=5,
+                topic_tags=["科技创新"],
+                chinese_summary=f"核心观点：创新支撑报告{index}讨论研发基础设施和产业化路径。建议：完善政策工具。中国/上海参考：可对照上海创新平台建设。",
+            )
+            for index in range(1, 16)
+        ]
+
+        brief = render_weekly_brief_markdown("2026-07-05", candidates)
+
+        self.assertLess(brief.index("## 漫画导读"), brief.index("## 新增概览"))
+        self.assertEqual(brief.count("### [P1]"), 15)
+        self.assertIn("- 核心观点：创新支撑报告15讨论研发基础设施和产业化路径。", brief)
 
     def test_write_daily_brief_creates_pdf_when_reportlab_is_available(self):
         try:
@@ -664,13 +745,20 @@ class ArchiveAndBriefTests(unittest.TestCase):
         from thinktank_watch.brief import write_weekly_brief
 
         with tempfile.TemporaryDirectory() as tmp:
-            markdown_path, html_path, pdf_path = write_weekly_brief(tmp, "2026-07-05", [candidate])
+            markdown_path, html_path, pdf_path = write_weekly_brief(
+                tmp,
+                "2026-07-05",
+                [candidate],
+                comic_paths=["comic/weekly-tech-watch-sample/pages/01-page-weekly-tech-watch.png"],
+            )
 
             self.assertIn("weekly", Path(markdown_path).parts)
             self.assertEqual(Path(markdown_path).name, "2026-07-05_国际科技智库周报.md")
             self.assertEqual(Path(html_path).name, "2026-07-05_国际科技智库周报.html")
             self.assertEqual(Path(pdf_path).name, "2026-07-05_国际科技智库周报.pdf")
-            self.assertIn("# 国际科技智库周报（2026-07-05）", Path(markdown_path).read_text(encoding="utf-8"))
+            markdown = Path(markdown_path).read_text(encoding="utf-8")
+            self.assertIn("# 国际科技智库周报（2026-07-05）", markdown)
+            self.assertIn("![漫画导读1](comic/weekly-tech-watch-sample/pages/01-page-weekly-tech-watch.png)", markdown)
 
     def test_write_institution_table_exports_kb_schema(self):
         from thinktank_watch.kb import write_institution_table

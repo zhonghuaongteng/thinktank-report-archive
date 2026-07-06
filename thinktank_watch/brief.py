@@ -16,6 +16,7 @@ from .focus import (
 )
 from .kb import INDEX_RELATIVE
 from .restore import parse_archive_markdown
+from .summary import render_summary_bullets
 
 
 MAX_EXPANDED_PRIORITY_ITEMS = 12
@@ -23,6 +24,13 @@ MIN_EXPANDED_INNOVATION_SUPPORT_ITEMS = 8
 MAX_EXPANDED_GOVERNANCE_ONLY_ITEMS = 4
 MAX_INDEX_ITEMS = 100
 MAX_RECENT_WRITE_ITEMS = 8
+WEEKLY_EXPANDED_PRIORITY_ITEMS = 18
+WEEKLY_MIN_EXPANDED_INNOVATION_SUPPORT_ITEMS = 12
+WEEKLY_MAX_INDEX_ITEMS = 160
+WEEKLY_TECH_ITEMS = 12
+WEEKLY_GOVERNANCE_ITEMS = 8
+WEEKLY_SUPPORT_ITEMS = 18
+WEEKLY_CHINA_ITEMS = 12
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 BRIEF_CADENCE_LABELS = {
     "daily": "国际科技智库动态简报",
@@ -144,12 +152,28 @@ def render_periodic_brief_markdown(
     date: str,
     candidates: list[ArticleCandidate],
     cadence: str = "daily",
+    comic_paths: list[str] | None = None,
 ) -> str:
     title = BRIEF_CADENCE_LABELS.get(cadence, BRIEF_CADENCE_LABELS["daily"])
     period_word = "本周" if cadence == "weekly" else "本日"
+    expanded_limit = WEEKLY_EXPANDED_PRIORITY_ITEMS if cadence == "weekly" else MAX_EXPANDED_PRIORITY_ITEMS
+    min_support = (
+        WEEKLY_MIN_EXPANDED_INNOVATION_SUPPORT_ITEMS
+        if cadence == "weekly"
+        else MIN_EXPANDED_INNOVATION_SUPPORT_ITEMS
+    )
+    index_limit = WEEKLY_MAX_INDEX_ITEMS if cadence == "weekly" else MAX_INDEX_ITEMS
+    tech_limit = WEEKLY_TECH_ITEMS if cadence == "weekly" else 8
+    governance_limit = WEEKLY_GOVERNANCE_ITEMS if cadence == "weekly" else 5
+    support_limit = WEEKLY_SUPPORT_ITEMS if cadence == "weekly" else 12
+    china_limit = WEEKLY_CHINA_ITEMS if cadence == "weekly" else 8
     ordered_candidates = sort_brief_candidates(candidates)
     priority_items = [item for item in ordered_candidates if item.priority in {"P0", "P1"}]
-    expanded_priority_items = select_expanded_priority_items(priority_items)
+    expanded_priority_items = select_expanded_priority_items(
+        priority_items,
+        limit=expanded_limit,
+        min_innovation_support=min_support,
+    )
     recent_write_items = select_recent_write_items(candidates)
     expanded_priority_urls = {item.url for item in expanded_priority_items}
     overflow_priority_items = [item for item in priority_items if item.url not in expanded_priority_urls]
@@ -161,6 +185,18 @@ def render_periodic_brief_markdown(
     lines = [
         f"# {title}（{date}）",
         "",
+    ]
+    if cadence == "weekly":
+        lines.extend(["## 漫画导读", ""])
+        if comic_paths:
+            for index, comic_path in enumerate(comic_paths, 1):
+                lines.append(f"![漫画导读{index}]({comic_path})")
+        else:
+            lines.append("本周漫画导读尚未接入自动生成图片；样式确认后应在周报正文前插入1-3页漫画导读。")
+        lines.append("")
+
+    lines.extend(
+        [
         "## 新增概览",
         "",
         f"- 新增条目：{len(candidates)}",
@@ -172,7 +208,8 @@ def render_periodic_brief_markdown(
         "",
         "## 最近写入",
         "",
-    ]
+        ]
+    )
     if recent_write_items:
         for item in recent_write_items:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
@@ -197,7 +234,7 @@ def render_periodic_brief_markdown(
                     f"- 机构：{item.institution_name}",
                     f"- 主题：{', '.join(item.topic_tags) or '待分类'}",
                     f"- 链接：{item.url}",
-                    f"- 摘要：{item.chinese_summary or item.summary or '待补充'}",
+                    *render_summary_bullets(item, cadence=cadence),
                     "",
                 ]
             )
@@ -205,7 +242,7 @@ def render_periodic_brief_markdown(
     lines.extend(["## 科技创新支撑重点", ""])
     tech_items = [item for item in ordered_candidates if is_innovation_support_candidate(item)]
     if tech_items:
-        for item in tech_items[:8]:
+        for item in tech_items[:tech_limit]:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}")
     else:
         lines.append(f"{period_word}未检出科技创新支撑强相关条目。")
@@ -213,13 +250,13 @@ def render_periodic_brief_markdown(
     governance_items = [item for item in ordered_candidates if is_governance_only_candidate(item)]
     if governance_items:
         lines.extend(["", "## AI治理与科技治理观察", ""])
-        for item in governance_items[:5]:
+        for item in governance_items[:governance_limit]:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}")
 
     lines.extend(["", "## 广义科技创新支撑", ""])
     support_items = select_innovation_support_items(ordered_candidates)
     if support_items:
-        for item in support_items[:12]:
+        for item in support_items[:support_limit]:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}")
     else:
         lines.append(f"{period_word}未检出区域创新、先进制造、数字基础设施、半导体或科技人才相关条目。")
@@ -227,15 +264,15 @@ def render_periodic_brief_markdown(
     lines.extend(["", "## 涉华/涉沪判断", ""])
     china_items = [item for item in ordered_candidates if "中国与上海相关" in item.topic_tags]
     if china_items:
-        for item in china_items[:8]:
+        for item in china_items[:china_limit]:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
     else:
         lines.append(f"{period_word}未检出中国/上海强相关条目。")
 
     lines.extend(["", "## 新增索引", ""])
-    for item in index_items[:MAX_INDEX_ITEMS]:
+    for item in index_items[:index_limit]:
         lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
-    omitted = len(index_items) - MAX_INDEX_ITEMS
+    omitted = len(index_items) - index_limit
     if omitted > 0:
         lines.append(f"- 其余 {omitted} 条已写入私有归档和知识库索引。")
 
@@ -324,6 +361,7 @@ def write_periodic_brief(
     date: str,
     candidates: list[ArticleCandidate],
     cadence: str = "daily",
+    comic_paths: list[str] | None = None,
 ) -> tuple[Path, Path, Path]:
     title = BRIEF_CADENCE_LABELS.get(cadence, BRIEF_CADENCE_LABELS["daily"])
     directory_name = BRIEF_CADENCE_DIRECTORIES.get(cadence, BRIEF_CADENCE_DIRECTORIES["daily"])
@@ -332,7 +370,7 @@ def write_periodic_brief(
     directory.mkdir(parents=True, exist_ok=True)
     markdown_path = directory / f"{date}_{title}.md"
     html_path = directory / f"{date}_{title}.html"
-    markdown = render_periodic_brief_markdown(date, candidates, cadence=cadence)
+    markdown = render_periodic_brief_markdown(date, candidates, cadence=cadence, comic_paths=comic_paths)
     markdown_path.write_text(markdown, encoding="utf-8")
     html_path.write_text(markdown_to_html(markdown, f"{title}（{date}）"), encoding="utf-8")
     pdf_path = write_pdf_brief(directory / f"{date}_{title}.pdf", markdown)
@@ -343,8 +381,13 @@ def write_daily_brief(root: str | Path, date: str, candidates: list[ArticleCandi
     return write_periodic_brief(root, date, candidates, cadence="daily")
 
 
-def write_weekly_brief(root: str | Path, date: str, candidates: list[ArticleCandidate]) -> tuple[Path, Path, Path]:
-    return write_periodic_brief(root, date, candidates, cadence="weekly")
+def write_weekly_brief(
+    root: str | Path,
+    date: str,
+    candidates: list[ArticleCandidate],
+    comic_paths: list[str] | None = None,
+) -> tuple[Path, Path, Path]:
+    return write_periodic_brief(root, date, candidates, cadence="weekly", comic_paths=comic_paths)
 
 
 def _register_pdf_font() -> str:

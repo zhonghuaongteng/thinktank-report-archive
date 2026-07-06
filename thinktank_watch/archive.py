@@ -5,6 +5,7 @@ import re
 from pathlib import Path
 
 from .models import ArticleCandidate
+from .summary import format_structured_chinese_summary
 
 
 WINDOWS_FORBIDDEN = r'<>:"/\\|?*'
@@ -72,7 +73,7 @@ def build_markdown(candidate: ArticleCandidate) -> str:
         "---",
         "",
     ]
-    chinese_summary = candidate.chinese_summary or "待由 Codex 自动化补充中文摘要与研判。"
+    chinese_summary = format_structured_chinese_summary(candidate)
     if candidate.source_completeness == "full_text" and candidate.detail_text:
         english_material = candidate.detail_text
     else:

@@ -51,12 +51,21 @@ Weekly incremental runs use a 14-day freshness window by default. Older unseen i
 
 When a detail page exposes a source PDF and the extracted HTML body is short or does not match the article title, the crawler extracts bounded PDF text as the English source material. This prevents archive pollution from related-article blocks, navigation text, and institution landing-page recommendations.
 
+## Summary and Weekly Brief Standard
+
+Each archived Markdown file now treats the Chinese summary as a research card rather than a short abstract. The minimum Chinese section is structured as `核心观点`, `建议`, and `中国/上海参考`. When a source summary is not yet manually rewritten, the archive still preserves the available summary under `核心观点` and marks missing recommendation or China/Shanghai reference fields for follow-up extraction.
+
+Weekly briefs expand more material than historical daily briefs: up to 18 P0/P1 items, longer per-item summary text, 12 visible technology-innovation support items, 18 broad innovation-support items, 12 China/Shanghai items, and 160 index lines. The weekly P0/P1 section renders the same three-part summary fields so that each priority report exposes its core argument, policy or action advice, and China/Shanghai reference value.
+
+Weekly briefs also reserve a front `漫画导读` section. The current implementation supports image links at the top of the brief and includes a two-page sample storyboard under `comic/weekly-tech-watch-sample/`; automated comic generation should be wired only after the visual style is accepted.
+
 ## Outputs
 
 - Local workspace target: `C:\Users\WINDOWS\OneDrive\知识库\智库信息爬虫`.
 - `archive/{institution}/{year}/`: one Markdown file per article/report.
 - `briefs/weekly/{year}/`: weekly Markdown, HTML, and PDF briefs.
 - `briefs/daily/{year}/`: historical daily Markdown, HTML, and PDF briefs retained for compatibility.
+- `comic/weekly-tech-watch-sample/`: sample analysis, storyboard, and prompt files for weekly comic openers.
 - `state/articles.sqlite`: dedupe and run state.
 - `reports/{date}_source_health.csv`: read-only source health report.
 - Knowledge-base index target: `C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库\06_数据资产\研报_国际智库抓取索引.csv`.
