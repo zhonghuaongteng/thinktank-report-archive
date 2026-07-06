@@ -41,7 +41,7 @@
 3. 主控在等待评估期间处理非重叠任务：文档、脚本、测试、已有规则审阅。
 4. 主控汇总评估结果，只选择字段完整、日期可靠、版权边界可控、去重状态清楚的候选。
 5. 写入阶段串行执行。一次只运行一个 `backfill`，并保留 `--write-limit`。
-6. 写入后重建周报和覆盖审计，再运行质量闸门。
+6. 写入后准备逐条 P0/P1 漫画提示词，调用 Codex 图片生成能力生成主题页漫画，重建周报和覆盖审计，再运行质量闸门。
 7. 提交前检查工作区差异，确认没有无关文件或状态库误入仓库。
 
 ## 机构租约
@@ -114,7 +114,8 @@ powershell -ExecutionPolicy Bypass -File scripts\run_evaluate_sources.ps1 `
 - H1 与 frontmatter `chinese_title` 一致。
 - SQLite 中所有非空 `archive_path` 均存在。
 - 知识库索引新增行包含中文题名、英文题名、发布日期、原始链接、PDF链接、翻译层级、版权边界和抓取状态。
-- 周报 Markdown/HTML/PDF 同步更新；如有漫画导读，PDF 前三页至少检测到图片对象。
+- 周报 Markdown/HTML/PDF 同步更新；P0/P1 主题漫画必须使用 Codex 生成图片，不得回退为程序化示意图或占位图。
+- `scripts\check_weekly_comics.ps1` 必须通过，`prompt_count`、`comic_count`、`md_image_refs`、`html_image_nodes`、`pdf_image_count` 均不得小于当期 P0/P1 条目数。
 
 ## 禁止事项
 

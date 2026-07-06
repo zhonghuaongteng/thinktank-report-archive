@@ -37,6 +37,10 @@ C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts\run_weekly.ps1 -Batch 1 -Limit 30
+powershell -ExecutionPolicy Bypass -File scripts\prepare_weekly_comics.ps1 -Date <YYYY-MM-DD>
+# 对 comic/weekly-topic-comics-<YYYY-MM-DD>/prompts/*.md 逐条调用 Codex 图片生成，输出到 pages/*.jpg。
+powershell -ExecutionPolicy Bypass -File scripts\render_weekly_brief.ps1 -Date <YYYY-MM-DD>
+powershell -ExecutionPolicy Bypass -File scripts\check_weekly_comics.ps1 -Date <YYYY-MM-DD>
 ```
 
 首次回溯：
@@ -50,6 +54,7 @@ powershell -ExecutionPolicy Bypass -File scripts\run_backfill_batch.ps1 -Batch 1
 - `archive/<机构>/<年份>/`：一篇文章一份Markdown，进入私有GitHub仓库。
 - `briefs/weekly/<年份>/`：每周Markdown、HTML与PDF简报，进入私有GitHub仓库。
 - `briefs/daily/<年份>/`：历史每日简报保留兼容。
+- `comic/weekly-topic-comics-<日期>/`：每周 P0/P1 逐主题 Codex 漫画提示词、图片和生成清单。
 - `state/articles.sqlite`：URL去重与抓取状态。
 - `C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库\06_数据资产\研报_国际智库抓取索引.csv`：知识库索引。
 

@@ -24,6 +24,36 @@ class RepositoryPolicyTests(unittest.TestCase):
         self.assertIn('"run-weekly"', script)
         self.assertIn('"--brief-cadence", "weekly"', script)
 
+    def test_weekly_comic_scripts_route_through_explicit_cli_commands(self):
+        expected = {
+            "scripts/prepare_weekly_comics.ps1": "prepare-weekly-comics",
+            "scripts/render_weekly_brief.ps1": "render-weekly-brief",
+            "scripts/check_weekly_comics.ps1": "check-weekly-comics",
+        }
+
+        for script_path, command in expected.items():
+            script = Path(script_path).read_text(encoding="utf-8")
+            self.assertIn(command, script)
+            self.assertIn("$LASTEXITCODE", script)
+            self.assertIn("Python313", script)
+
+        cli = Path("thinktank_watch/cli.py").read_text(encoding="utf-8")
+        for command in expected.values():
+            self.assertIn(command, cli)
+
+    def test_weekly_comic_mode_requires_codex_images_without_forced_shanghai(self):
+        strategy = Path("docs/retrieval_strategy.md").read_text(encoding="utf-8")
+        comic_doc = Path("docs/weekly_comic_generation.md").read_text(encoding="utf-8")
+        comic_pref = Path(".baoyu-skills/baoyu-comic/EXTEND.md").read_text(encoding="utf-8")
+
+        for text in (strategy, comic_doc, comic_pref):
+            self.assertIn("Codex", text)
+            self.assertIn("不强行", text)
+            self.assertIn("中国", text)
+            self.assertIn("上海", text)
+        self.assertIn("不得回退为程序化示意图", comic_doc)
+        self.assertIn("check_weekly_comics.ps1", strategy)
+
     def test_evaluate_sources_script_is_read_only(self):
         script = Path("scripts/run_evaluate_sources.ps1").read_text(encoding="utf-8")
 

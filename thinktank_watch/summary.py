@@ -42,7 +42,7 @@ SECTION_PATTERN = re.compile(
     r"\s*(?:[:：])?\s*"
 )
 INLINE_SECTION_PATTERN = re.compile(
-    r"(?:^|[\n\r\t ])"
+    r"(?:^|[\n\r\t 。，；;.!?！？])"
     r"("
     + "|".join(re.escape(alias) for alias in sorted(ALIAS_TO_LABEL, key=len, reverse=True))
     + r")"

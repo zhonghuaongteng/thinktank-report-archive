@@ -19,4 +19,4 @@ batch:
 
 Use Codex CLI image generation for weekly thinktank comic pages. This path uses the local Codex login and does not require project API keys.
 
-Generate 16:9 PNG comic pages suitable for embedding into PDF reports. The visual style should follow the project `baoyu-comic` preference: single-report evidence-chain policy comics, with concrete scenes, conflict, action tools, and China/Shanghai reference points.
+Generate 16:9 comic pages suitable for embedding into PDF reports. The visual style should follow the project `baoyu-comic` preference: single-report evidence-chain policy comics, with concrete scenes, conflict, action tools, and a clear core conclusion. China/Shanghai reference points should appear only when the source material gives a concrete basis.

@@ -6,6 +6,7 @@ import tempfile
 from thinktank_watch.archive import build_markdown, safe_article_filename
 from thinktank_watch.brief import render_daily_brief_markdown, render_weekly_brief_markdown
 from thinktank_watch.models import ArticleCandidate, Institution
+from thinktank_watch.summary import parse_structured_summary
 
 
 class ArchiveAndBriefTests(unittest.TestCase):
@@ -59,6 +60,16 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("### 中国/上海参考", markdown)
         self.assertIn("该报告讨论人工智能能源供应链脆弱性。", markdown)
         self.assertIn("## English Source Material", markdown)
+
+    def test_parse_structured_summary_accepts_inline_labels_after_chinese_punctuation(self):
+        parsed = parse_structured_summary(
+            "核心观点：报告讨论研发基础设施和产业化路径。建议：建立需求测算、资源分配和使用绩效规则。"
+            "中国/上海参考：上海可把公共算力、数据服务和应用验证平台联动。"
+        )
+
+        self.assertEqual(parsed["核心观点"], "报告讨论研发基础设施和产业化路径")
+        self.assertEqual(parsed["建议"], "建立需求测算、资源分配和使用绩效规则")
+        self.assertEqual(parsed["中国/上海参考"], "上海可把公共算力、数据服务和应用验证平台联动。")
 
     def test_build_markdown_uses_topic_tags_as_keyword_fallback(self):
         candidate = ArticleCandidate(
@@ -768,6 +779,38 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("- **中国/上海参考**：**对中国/上海的参考在于，军民两用供应链", brief)
         self.assertEqual(brief.count("该文分析中国军队将AI嵌入后勤体系的战略含义。"), 2)
 
+    def test_weekly_comic_prompts_do_not_force_china_or_shanghai(self):
+        from thinktank_watch.brief import write_weekly_comic_prompts
+
+        candidate = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="ITIF",
+            institution_type="think_tank",
+            title="Public R&D infrastructure and innovation diffusion",
+            chinese_title="公共研发基础设施与创新扩散",
+            url="https://example.org/rd-infrastructure",
+            published_date="2026-07-02",
+            content_type="report",
+            priority="P1",
+            topic_tags=["科技创新"],
+            chinese_summary=(
+                "核心观点：报告认为公共研发基础设施会影响企业技术吸收和创新扩散速度。"
+                "建议：加强测试平台、开放设施和产业化服务。"
+                "中国/上海参考：原文未提供直接涉华或涉沪判断。"
+            ),
+        )
+
+        with tempfile.TemporaryDirectory() as tmp:
+            prompts = write_weekly_comic_prompts("2026-07-05", [candidate], Path(tmp) / "comic")
+
+            self.assertEqual(len(prompts), 1)
+            text = prompts[0].read_text(encoding="utf-8")
+            self.assertIn("不要强行落到中国或上海", text)
+            self.assertIn("最后一格应突出报告本身的中心结论", text)
+            self.assertIn("公共研发基础设施会影响企业技术吸收", text)
+            manifest = prompts[0].parents[1] / "manifest.md"
+            self.assertTrue(manifest.exists())
+
     def test_write_daily_brief_creates_pdf_when_reportlab_is_available(self):
         try:
             import reportlab  # noqa: F401
@@ -807,7 +850,11 @@ class ArchiveAndBriefTests(unittest.TestCase):
             content_type="report",
             priority="P1",
             topic_tags=["科技创新"],
-            chinese_summary="创新支撑材料。",
+            chinese_summary=(
+                "核心观点：创新支撑报告讨论研发基础设施和产业化路径。"
+                "建议：建立需求测算、资源分配和使用绩效规则。"
+                "中国/上海参考：上海可把公共算力、数据服务和应用验证平台联动。"
+            ),
         )
         from thinktank_watch.brief import write_weekly_brief
 
@@ -850,6 +897,15 @@ class ArchiveAndBriefTests(unittest.TestCase):
                     if obj.get("/Subtype") == "/Image":
                         image_count += 1
             self.assertGreaterEqual(image_count, 1)
+            pdf_text = "\n".join(page.extract_text() or "" for page in reader.pages)
+            self.assertIn("核心观点与论述", pdf_text)
+            self.assertIn("政策含义与参考", pdf_text)
+            self.assertNotIn("追踪问题", pdf_text)
+            core_segment = pdf_text.split("核心观点与论述", 1)[1].split("政策含义与参考", 1)[0]
+            self.assertNotIn("建议：", core_segment)
+            self.assertNotIn("中国/上海参考", core_segment)
+            self.assertIn("建立需求测算、资源分配和使用绩效规则", pdf_text)
+            self.assertIn("上海可把公共算力、数据服务和应用验证平台联动", pdf_text)
             audit = audit_path.read_text(encoding="utf-8")
             self.assertIn("## 新增概览", audit)
             self.assertIn("## 最近写入", audit)

@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import re
 from collections import Counter
+from datetime import date as Date, timedelta
 from html import escape
 from io import BytesIO
 from pathlib import Path
@@ -201,6 +202,17 @@ def weekly_chapter_name(candidate: ArticleCandidate) -> str:
 
 PDF_TOC_LINES_PER_PAGE = 44
 PDF_TOC_WIDTH_CHARS = 58
+WEEKLY_COMIC_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp"}
+WEEKLY_COMIC_BLOCKED_TERMS = [
+    "主题机制图解",
+    "Codex 漫画待生成",
+    "## 新增概览",
+    "## 最近写入",
+    "运行审计",
+    "### 漫画",
+    "## 导读漫画",
+    "漫画 1",
+]
 
 
 def _topic_anchor(index: int) -> str:
@@ -213,11 +225,10 @@ def _pdf_topic_key(index: int) -> str:
 
 def weekly_topic_comic_file(date: str, index: int) -> Path | None:
     comic_dir = Path("comic") / f"weekly-topic-comics-{date}" / "pages"
-    supported_suffixes = {".jpg", ".jpeg", ".png", ".webp"}
     matches = sorted(
         path
         for path in comic_dir.glob(f"{index:02d}-*")
-        if path.suffix.lower() in supported_suffixes
+        if path.suffix.lower() in WEEKLY_COMIC_SUFFIXES
     )
     return matches[0] if matches else None
 
@@ -227,6 +238,180 @@ def weekly_topic_comic_markdown_src(date: str, index: int) -> str | None:
     if comic_path is None:
         return None
     return "../../../" + comic_path.as_posix()
+
+
+def weekly_comic_run_dir(date: str, comic_root: str | Path = "comic") -> Path:
+    return Path(comic_root) / f"weekly-topic-comics-{date}"
+
+
+def weekly_comic_basename(index: int, candidate: ArticleCandidate) -> str:
+    source = candidate.title or candidate.chinese_title or candidate.url or f"topic-{index}"
+    slug = re.sub(r"[^a-zA-Z0-9]+", "-", source.lower()).strip("-")
+    if not slug:
+        slug = f"{candidate.institution_slug or 'source'}-{index:02d}"
+    return f"{index:02d}-topic-{slug[:64].strip('-')}"
+
+
+def load_weekly_archive_candidates(
+    archive_root: str | Path,
+    run_date: str,
+    lookback_days: int = 14,
+) -> list[ArticleCandidate]:
+    end = Date.fromisoformat(run_date)
+    start = end - timedelta(days=max(1, lookback_days) - 1)
+    items: list[ArticleCandidate] = []
+    for path in sorted(Path(archive_root).rglob("*.md")):
+        try:
+            candidate = parse_archive_markdown(path)
+        except (KeyError, ValueError, OSError):
+            continue
+        if len(candidate.published_date or "") < 10:
+            continue
+        try:
+            published = Date.fromisoformat(candidate.published_date[:10])
+        except ValueError:
+            continue
+        if start <= published <= end:
+            items.append(candidate)
+    items.sort(key=lambda item: (item.published_date, item.institution_slug, item.title))
+    return items
+
+
+def weekly_comic_prompt_text(date: str, index: int, candidate: ArticleCandidate) -> str:
+    sections = _weekly_summary_sections(candidate)
+    source_title = candidate.chinese_title or candidate.title
+    basename = weekly_comic_basename(index, candidate)
+    tags = ", ".join(candidate.topic_tags) or "待分类"
+    return f"""---
+date: {date}
+topic_index: {index}
+priority: {candidate.priority}
+institution: {candidate.institution_name}
+source_url: {candidate.url}
+output: ../pages/{basename}.jpg
+aspect_ratio: "16:9"
+style: "Codex-generated single-report evidence-chain policy comic"
+---
+
+# 主题 {index:02d} 漫画提示词
+
+请生成一张 16:9 横版知识漫画，用于国际科技智库周报的单篇主题页。画面必须是漫画叙事场景，不得画成流程图、PPT 示意图、仪表盘模板或纯信息图。
+
+## 报告锚点
+
+- 机构：{candidate.institution_name}
+- 标题：{source_title}
+- 原文链接：{candidate.url}
+- 优先级：{candidate.priority}
+- 主题标签：{tags}
+
+## 需要表达的核心内容
+
+- 核心观点：{_clean_text(sections["核心观点"])}
+- 建议或政策含义：{_clean_text(sections["建议"])}
+- 中国/上海参考：{_clean_text(sections["中国/上海参考"])}
+
+## 分镜要求
+
+1. 第一格呈现报告识别到的关键信号，必须让读者一眼看出研究对象。
+2. 第二格呈现核心机制、矛盾或瓶颈，用具体场景表现资源、制度、产业链、算力、人才、标准、供应链或治理工具之间的关系。
+3. 第三格呈现报告提出或隐含的政策含义、行动工具、风险修复路径或机会窗口。
+4. 第四格收束到报告最重要的核心判断。不要强行落到中国或上海；只有原报告、摘要或资料标签存在明确涉华、涉沪或可操作参照时，才把中国/上海作为最后一格内容。否则，最后一格应突出报告本身的中心结论。
+
+## 视觉约束
+
+- 风格：清线条、政策研判漫画、真实场景、明确冲突、适合嵌入 PDF。
+- 画面文字尽量短，优先使用大标题、路标、标签和少量中文短句；不要依赖大段图中文字解释观点。
+- 机构名称只作为来源标识，不作为视觉主角。
+- 不要出现“主题机制图解”“示意图”“占位图”等字样。
+- 最终输出为可嵌入周报的单张图片，文件名应为 `{basename}.jpg`。
+"""
+
+
+def write_weekly_comic_prompts(
+    date: str,
+    candidates: list[ArticleCandidate],
+    comic_root: str | Path = "comic",
+) -> list[Path]:
+    priority_items = weekly_priority_items(candidates)
+    run_dir = weekly_comic_run_dir(date, comic_root)
+    prompt_dir = run_dir / "prompts"
+    page_dir = run_dir / "pages"
+    prompt_dir.mkdir(parents=True, exist_ok=True)
+    page_dir.mkdir(parents=True, exist_ok=True)
+    prompt_paths: list[Path] = []
+    manifest_lines = [
+        f"# {date} 周报 Codex 漫画生成清单",
+        "",
+        "本目录用于未来周报的逐条 P0/P1 Codex 漫画生成。漫画应突出报告核心观点；最后一格不强行转向中国或上海，只有报告存在明确涉华、涉沪或可操作参照时才纳入。",
+        "",
+    ]
+    for index, item in enumerate(priority_items, 1):
+        basename = weekly_comic_basename(index, item)
+        prompt_path = prompt_dir / f"{basename}.md"
+        prompt_path.write_text(weekly_comic_prompt_text(date, index, item), encoding="utf-8")
+        prompt_paths.append(prompt_path)
+        manifest_lines.append(
+            f"- {index:02d}｜{item.priority}｜{item.institution_name}｜{item.chinese_title or item.title}｜"
+            f"`prompts/{basename}.md` -> `pages/{basename}.jpg`"
+        )
+    (run_dir / "manifest.md").write_text("\n".join(manifest_lines).rstrip() + "\n", encoding="utf-8")
+    return prompt_paths
+
+
+def inspect_weekly_comic_report(
+    date: str,
+    candidates: list[ArticleCandidate],
+    brief_root: str | Path = "briefs",
+    comic_root: str | Path = "comic",
+) -> dict[str, int | list[str]]:
+    priority_count = len(weekly_priority_items(candidates))
+    run_dir = weekly_comic_run_dir(date, comic_root)
+    prompt_count = len(list((run_dir / "prompts").glob("*.md"))) if (run_dir / "prompts").exists() else 0
+    comic_count = len(
+        [
+            path
+            for path in (run_dir / "pages").glob("*")
+            if path.suffix.lower() in WEEKLY_COMIC_SUFFIXES
+        ]
+    ) if (run_dir / "pages").exists() else 0
+    brief_dir = Path(brief_root) / "weekly" / date[:4]
+    stem = f"{date}_{BRIEF_CADENCE_LABELS['weekly']}"
+    md_path = brief_dir / f"{stem}.md"
+    html_path = brief_dir / f"{stem}.html"
+    pdf_path = brief_dir / f"{stem}.pdf"
+    md_text = md_path.read_text(encoding="utf-8") if md_path.exists() else ""
+    html_text = html_path.read_text(encoding="utf-8") if html_path.exists() else ""
+    blocked_hits = [term for term in WEEKLY_COMIC_BLOCKED_TERMS if term in md_text or term in html_text]
+    pdf_images = 0
+    if pdf_path.exists():
+        try:
+            from pypdf import PdfReader
+
+            reader = PdfReader(str(pdf_path))
+            for page in reader.pages:
+                resources = page.get("/Resources") or {}
+                xobjects = resources.get("/XObject") or {}
+                for xobject in xobjects.values():
+                    obj = xobject.get_object()
+                    if obj.get("/Subtype") == "/Image":
+                        pdf_images += 1
+        except Exception:
+            pdf_images = -1
+    return {
+        "priority_count": priority_count,
+        "prompt_count": prompt_count,
+        "comic_count": comic_count,
+        "md_image_refs": md_text.count("![主题 "),
+        "html_image_nodes": html_text.count('<figure class="comic"'),
+        "pdf_image_count": pdf_images,
+        "blocked_hits": blocked_hits,
+        "missing_files": [
+            str(path)
+            for path in [md_path, html_path, pdf_path]
+            if not path.exists()
+        ],
+    }
 
 
 def _weekly_pdf_toc_entry_lines(index: int, item: ArticleCandidate, page: int) -> list[str]:
@@ -431,6 +616,55 @@ def _tracking_question(candidate: ArticleCandidate) -> str:
     if tags & {"科技人才", "科技创新"}:
         return "后续追踪人才、科研组织和公共平台供给是否真正改善从研发到产业化的反馈速度。"
     return "后续追踪该报告提出的政策工具是否会改变创新资源配置、产业化路径和风险承担结构。"
+
+
+_WEEKLY_PDF_NON_CORE_LABEL_PATTERN = re.compile(
+    r"(?:建议|政策建议|行动建议|对策建议|启示建议|中国/上海参考|中国与上海参考|中国参考|上海参考|涉华/涉沪参考|涉华参考|涉沪参考|对中国/上海的参考|中国/上海启示)\s*[:：]"
+)
+_WEEKLY_PDF_LABEL_PREFIX_PATTERN = re.compile(
+    r"^(?:核心观点|核心判断|主要观点|核心结论|内容摘要|建议|政策建议|行动建议|对策建议|启示建议|中国/上海参考|中国与上海参考|中国参考|上海参考|涉华/涉沪参考|涉华参考|涉沪参考|对中国/上海的参考|中国/上海启示)\s*[:：]\s*"
+)
+
+
+def _strip_weekly_pdf_label_prefix(value: str) -> str:
+    return _WEEKLY_PDF_LABEL_PREFIX_PATTERN.sub("", _clean_text(value)).strip()
+
+
+def _weekly_pdf_core_text(value: str) -> str:
+    core = _strip_weekly_pdf_label_prefix(value)
+    return _WEEKLY_PDF_NON_CORE_LABEL_PATTERN.split(core, maxsplit=1)[0].strip()
+
+
+def _weekly_pdf_main_argument(candidate: ArticleCandidate, sections: dict[str, str]) -> str:
+    core = _weekly_pdf_core_text(sections["核心观点"])
+    transmission = re.sub(r"阅读时应追问.*$", "", _clean_text(_comic_transmission(candidate))).strip()
+    parts = [
+        core,
+        _clean_text(_comic_tension(candidate)),
+        transmission,
+    ]
+    unique_parts: list[str] = []
+    for part in parts:
+        if not part:
+            continue
+        if any(part in existing or existing in part for existing in unique_parts):
+            continue
+        unique_parts.append(part)
+    return " ".join(unique_parts)
+
+
+def _weekly_pdf_implication(sections: dict[str, str]) -> str:
+    advice = _strip_weekly_pdf_label_prefix(sections["建议"])
+    reference = _strip_weekly_pdf_label_prefix(sections["中国/上海参考"])
+    advice = re.sub(_WEEKLY_PDF_NON_CORE_LABEL_PATTERN, " ", advice).strip()
+    reference = re.sub(_WEEKLY_PDF_NON_CORE_LABEL_PATTERN, " ", reference).strip()
+    if reference and "未检出" not in reference and "未提供" not in reference:
+        if reference in advice:
+            return advice
+        if advice in reference:
+            return reference
+        return f"{advice} {reference}" if advice else reference
+    return advice or reference
 
 
 def weekly_situation_summary(candidates: list[ArticleCandidate]) -> str:
@@ -1355,52 +1589,26 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
             margin,
             y,
             content_width,
-            124,
+            220,
             colors["blue_bg"],
             colors["navy"],
-            "核心观点",
-            _short_text(sections["核心观点"], 520),
+            "核心观点与论述",
+            _short_text(_weekly_pdf_main_argument(item, sections), 980),
             body_size=10,
             leading=15,
         )
-        y -= 138
-        half_w = (content_width - 16) / 2
-        draw_card(
-            margin,
-            y,
-            half_w,
-            164,
-            colors["green_bg"],
-            colors["green"],
-            "建议",
-            _short_text(sections["建议"], 320),
-            body_size=9,
-            leading=14,
-        )
-        draw_card(
-            margin + half_w + 16,
-            y,
-            half_w,
-            164,
-            colors["red_bg"],
-            colors["red"],
-            "中国/上海参考",
-            _short_text(sections["中国/上海参考"], 320),
-            body_size=9,
-            leading=14,
-        )
-        y -= 180
+        y -= 236
         draw_card(
             margin,
             y,
             content_width,
-            76,
-            colors["gold_bg"],
-            colors["red"],
-            "追踪问题",
-            _tracking_question(item),
-            body_size=9,
-            leading=13,
+            154,
+            colors["green_bg"],
+            colors["green"],
+            "政策含义与参考",
+            _short_text(_weekly_pdf_implication(sections), 620),
+            body_size=10,
+            leading=14,
         )
 
     if not priority_items:

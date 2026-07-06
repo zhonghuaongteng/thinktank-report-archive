@@ -10,7 +10,14 @@ import httpx
 
 from .audit import write_audit_report
 from .archive import write_article
-from .brief import load_daily_brief_candidates, write_periodic_brief
+from .brief import (
+    inspect_weekly_comic_report,
+    load_daily_brief_candidates,
+    load_weekly_archive_candidates,
+    weekly_comic_run_dir,
+    write_periodic_brief,
+    write_weekly_comic_prompts,
+)
 from .config import load_institutions, load_priority_rules, load_search_profiles, load_topics
 from .fetch import (
     check_pdf,
@@ -435,6 +442,52 @@ def run_weekly(args: argparse.Namespace) -> int:
     return run_daily(args)
 
 
+def prepare_weekly_comics(args: argparse.Namespace) -> int:
+    run_date = args.date or date.today().isoformat()
+    candidates = load_weekly_archive_candidates(args.archive_root, run_date, args.lookback_days)
+    prompt_paths = write_weekly_comic_prompts(run_date, candidates, args.comic_root)
+    print(
+        f"weekly_comic_prompts={len(prompt_paths)} "
+        f"run_dir={weekly_comic_run_dir(run_date, args.comic_root)}"
+    )
+    return 0
+
+
+def render_weekly_brief(args: argparse.Namespace) -> int:
+    run_date = args.date or date.today().isoformat()
+    candidates = load_weekly_archive_candidates(args.archive_root, run_date, args.lookback_days)
+    paths = write_periodic_brief(args.brief_root, run_date, candidates, cadence="weekly")
+    print(f"weekly_candidates={len(candidates)}")
+    for path in paths:
+        print(path)
+    return 0
+
+
+def check_weekly_comics(args: argparse.Namespace) -> int:
+    run_date = args.date or date.today().isoformat()
+    candidates = load_weekly_archive_candidates(args.archive_root, run_date, args.lookback_days)
+    stats = inspect_weekly_comic_report(run_date, candidates, args.brief_root, args.comic_root)
+    failures: list[str] = []
+    expected = int(stats["priority_count"])
+    for key in ["prompt_count", "comic_count", "md_image_refs", "html_image_nodes", "pdf_image_count"]:
+        value = int(stats[key])
+        if value < expected:
+            failures.append(f"{key}={value} < priority_count={expected}")
+    if stats["missing_files"]:
+        failures.append("missing_files=" + ";".join(str(item) for item in stats["missing_files"]))
+    if stats["blocked_hits"]:
+        failures.append("blocked_hits=" + ";".join(str(item) for item in stats["blocked_hits"]))
+    for key, value in stats.items():
+        print(f"{key}={value}")
+    if failures:
+        print("weekly_comic_check=failed")
+        for failure in failures:
+            print(f"failure={failure}")
+        return 1
+    print("weekly_comic_check=ok")
+    return 0
+
+
 def backfill(args: argparse.Namespace) -> int:
     run_date = args.date or date.today().isoformat()
     institutions, topics, priorities = _load_config()
@@ -557,6 +610,37 @@ def build_parser() -> argparse.ArgumentParser:
     weekly.add_argument("--kb-root", default=str(Path(r"C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库")))
     weekly.add_argument("--brief-cadence", choices=["weekly"], default="weekly")
     weekly.set_defaults(func=run_weekly)
+
+    comic_prepare = sub.add_parser(
+        "prepare-weekly-comics",
+        help="Create Codex comic prompt files for weekly P0/P1 topic pages without fetching new records.",
+    )
+    comic_prepare.add_argument("--date")
+    comic_prepare.add_argument("--lookback-days", type=int, default=DEFAULT_WEEKLY_LOOKBACK_DAYS)
+    comic_prepare.add_argument("--archive-root", default="archive")
+    comic_prepare.add_argument("--comic-root", default="comic")
+    comic_prepare.set_defaults(func=prepare_weekly_comics)
+
+    weekly_render = sub.add_parser(
+        "render-weekly-brief",
+        help="Rebuild the weekly reader brief from local archive records without fetching new records.",
+    )
+    weekly_render.add_argument("--date")
+    weekly_render.add_argument("--lookback-days", type=int, default=DEFAULT_WEEKLY_LOOKBACK_DAYS)
+    weekly_render.add_argument("--archive-root", default="archive")
+    weekly_render.add_argument("--brief-root", default="briefs")
+    weekly_render.set_defaults(func=render_weekly_brief)
+
+    comic_check = sub.add_parser(
+        "check-weekly-comics",
+        help="Check that weekly Codex comic assets are embedded in Markdown, HTML, and PDF outputs.",
+    )
+    comic_check.add_argument("--date")
+    comic_check.add_argument("--lookback-days", type=int, default=DEFAULT_WEEKLY_LOOKBACK_DAYS)
+    comic_check.add_argument("--archive-root", default="archive")
+    comic_check.add_argument("--brief-root", default="briefs")
+    comic_check.add_argument("--comic-root", default="comic")
+    comic_check.set_defaults(func=check_weekly_comics)
 
     backfill_parser = sub.add_parser("backfill", help="Initialize archive from feeds, list pages, and configured sitemaps.")
     backfill_parser.add_argument("--batch", type=int, default=1)
