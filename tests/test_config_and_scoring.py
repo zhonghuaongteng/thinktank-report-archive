@@ -124,7 +124,7 @@ class ConfigAndScoringTests(unittest.TestCase):
         self.assertTrue(evaluate_args.unarchived_only)
         self.assertEqual(daily_args.search_profile, "broad_innovation_support")
         self.assertEqual(weekly_args.search_profile, "broad_innovation_support")
-        self.assertEqual(weekly_args.lookback_days, 14)
+        self.assertEqual(weekly_args.lookback_days, 7)
         self.assertEqual(weekly_args.brief_cadence, "weekly")
         self.assertEqual(backfill_args.search_profile, "broad_innovation_support")
 

@@ -4,355 +4,1341 @@
 <meta charset="utf-8">
 <title>国际科技智库周报（2026-07-06）</title>
 <style>
-body { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; margin: 42px; color: #172026; line-height: 1.58; }
-h1 { font-size: 26px; border-bottom: 2px solid #1f5f8b; padding-bottom: 12px; }
-h2 { font-size: 19px; margin-top: 28px; color: #1f5f8b; }
-h3 { font-size: 16px; margin-top: 18px; }
-p { font-size: 12px; margin: 6px 0; }
-.bullet { padding-left: 12px; }
-.comic { margin: 18px 0 22px; }
-.comic img { max-width: 100%; border: 1px solid #d7dee5; }
+:root { color-scheme: light; }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+@page { size: A4; margin: 13mm 12mm; }
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
+  color: #172026; margin: 0; background: #eef1f4; line-height: 1.66; font-size: 10.5pt;
+}
+main { max-width: 186mm; margin: 0 auto; background: #ffffff; }
+@media screen { main { margin: 24px auto; box-shadow: 0 18px 48px rgba(23,32,38,.14); } body { padding: 0 12px; } }
+@media print { body { background: #ffffff; } main { max-width: none; } }
+h1, h2, h3 { font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", serif; }
+a { color: #14456e; text-decoration: none; }
+
+.page { padding: 10mm 11mm; }
+.pagebreak { page-break-after: always; }
+.avoid-break { page-break-inside: avoid; break-inside: avoid; }
+
+.brandbar { display: flex; height: 7px; }
+.brandbar span:nth-child(1) { flex: 4; background: #1f5f8b; }
+.brandbar span:nth-child(2) { flex: 2; background: #b84c3d; }
+.brandbar span:nth-child(3) { flex: 3; background: #4f7d5a; }
+
+.cover-kicker { letter-spacing: .35em; font-size: 8.5pt; color: #b84c3d; font-weight: 700; margin: 6mm 0 2.4mm; text-transform: uppercase; }
+.cover h1 { font-size: 26pt; margin: 0 0 3.2mm; color: #14456e; line-height: 1.2; }
+.cover .issue-meta { color: #5f6b75; font-size: 10pt; border-top: 1.4pt solid #172026; border-bottom: .4pt solid #c7d0d8; padding: 2.6mm 0; display: flex; gap: 6mm; flex-wrap: wrap; }
+.situation { background: #f2f6f9; border-left: 3pt solid #1f5f8b; padding: 3.2mm 4.2mm; margin: 4.6mm 0; }
+.situation h2, .top-reads h2, .viewpoints > h2, .toc h2, .comic-lead h2 { font-size: 13.5pt; color: #14456e; margin: 0 0 3mm; }
+.situation p { margin: 0; font-size: 10pt; }
+
+.top-reads ol { margin: 0; padding: 0; list-style: none; counter-reset: reads; }
+.top-reads li { counter-increment: reads; display: flex; gap: 3.4mm; padding: 2.2mm 0; border-bottom: .4pt dashed #c7d0d8; page-break-inside: avoid; }
+.top-reads li::before { content: counter(reads, decimal-leading-zero); font-family: Georgia, serif; font-size: 13pt; color: #b84c3d; font-weight: 700; min-width: 8mm; }
+.top-reads .judgment { display: block; font-weight: 700; font-size: 9.8pt; line-height: 1.58; }
+.top-reads .meta { display: block; color: #5f6b75; font-size: 8.5pt; margin-top: 1mm; }
+
+.viewpoints .chapter { margin: 0 0 5mm; page-break-inside: avoid; }
+.viewpoints h3 { font-size: 11pt; color: #ffffff; background: #14456e; display: inline-block; padding: 1mm 4mm; border-radius: 2pt; margin: 0 0 2.4mm; }
+.viewpoints ul { margin: 0; padding-left: 0; list-style: none; }
+.viewpoints li { padding: 1.6mm 0 1.6mm 4mm; border-left: 1.6pt solid #d8e0e7; font-size: 9.5pt; }
+.viewpoints li b { color: #b84c3d; }
+
+.toc ul { margin: 0; padding: 0; list-style: none; column-count: 2; column-gap: 8mm; }
+.toc li { font-size: 9pt; padding: 1.4mm 0; border-bottom: .4pt dotted #c7d0d8; break-inside: avoid; }
+.toc .pri { font-weight: 700; color: #b84c3d; margin-right: 2mm; }
+
+.comic-lead figure { margin: 0 0 3mm; }
+.comic-lead img { width: 100%; border: .6pt solid #d7dee5; }
+.comic-lead .note { font-size: 9pt; color: #40505c; background: #faf6ee; border-left: 2.4pt solid #c89b52; padding: 3mm 4mm; margin: 0 0 5mm; }
+
+.topic-card { padding: 8mm 11mm 9mm; page-break-before: always; }
+.topic-card .card-head { display: flex; align-items: center; gap: 3mm; margin-bottom: 3mm; }
+.chip { font-size: 8pt; font-weight: 700; padding: .8mm 3mm; border-radius: 999px; }
+.chip.pri-P0 { background: #b84c3d; color: #fff; }
+.chip.pri-P1 { background: #e9d9d5; color: #8b2f2a; }
+.chip.chapter { background: #eef3f7; color: #14456e; border: .5pt solid #c7d7e3; }
+.card-head .idx { margin-left: auto; color: #9aa7b1; font-size: 8.5pt; }
+.topic-card h3 { font-size: 15pt; margin: 0 0 1.6mm; line-height: 1.35; }
+.topic-card h3 a { color: #14456e; }
+.topic-card .meta { color: #5f6b75; font-size: 8.5pt; margin-bottom: 3.6mm; }
+.topic-card figure.comic { margin: 0 0 4mm; }
+.topic-card figure.comic img { width: 100%; border: .6pt solid #d7dee5; border-radius: 2pt; }
+.judgment-box { background: #14456e; color: #ffffff; padding: 3.6mm 5mm; border-radius: 2pt; margin-bottom: 3.6mm; page-break-inside: avoid; }
+.judgment-box .label { font-size: 8pt; letter-spacing: .25em; color: #bcd2e4; display: block; margin-bottom: 1.2mm; }
+.judgment-box p { margin: 0; font-size: 11pt; font-weight: 700; line-height: 1.6; }
+.evidence { margin: 0 0 4mm; page-break-inside: avoid; }
+.evidence .label { font-size: 9pt; font-weight: 700; color: #b84c3d; letter-spacing: .12em; }
+.evidence ul { margin: 1.6mm 0 0; padding-left: 0; list-style: none; }
+.evidence li { position: relative; padding: 1.2mm 0 1.2mm 6mm; font-size: 9.5pt; }
+.evidence li::before { content: ""; position: absolute; left: 1.2mm; top: 3.4mm; width: 2.4mm; height: 2.4mm; background: #c89b52; }
+.twin { display: flex; gap: 4mm; page-break-inside: avoid; }
+.twin .box { flex: 1; border-radius: 2pt; padding: 3.4mm 4.2mm; font-size: 9pt; }
+.twin .box h4 { margin: 0 0 1.6mm; font-size: 9.5pt; }
+.twin .advice { background: #f0f6f0; border-top: 2.4pt solid #4f7d5a; }
+.twin .advice h4 { color: #3c6246; }
+.twin .reference { background: #fbf1ee; border-top: 2.4pt solid #b84c3d; }
+.twin .reference h4 { color: #8b2f2a; }
+.tracking { margin-top: 3.6mm; font-size: 8.5pt; color: #5f6b75; border-top: .4pt dashed #c7d0d8; padding-top: 2.2mm; }
+.footer-note { color: #9aa7b1; font-size: 8pt; text-align: right; padding: 0 11mm 6mm; }
 </style>
 </head>
 <body>
-<h1>国际科技智库周报（2026-07-06）</h1>
-
-<h2>漫画导读</h2>
-
-<figure class="comic"><img src="../../../comic/weekly-tech-watch-v7/pages/01-page-export-control-chain.png" alt="漫画导读1"></figure>
-
-<p>读图说明1：锚定报告：NBR《中国出口管制图谱》。关键判断：出口管制正在制度化为经济安全工具，并通过关键矿产、材料加工设备和下游行业传导为供应链压力。政策建议：持续监测贸易和投资数据，开展供应链压力测试，提前准备替代来源与政企协同。中国/上海参考：半导体、新能源汽车、先进制造和清洁技术应把材料风险、出口合规和产业链韧性纳入常态化监测。</p>
-
-<h2>新增概览</h2>
-
-<p class="bullet">- 新增条目：114</p>
-<p class="bullet">- P0/P1重点：105</p>
-<p class="bullet">- 创新支撑条目：113</p>
-<p class="bullet">- 纯治理条目：0</p>
-<p class="bullet">- 涉及机构：18</p>
-<p class="bullet">- 高频主题：科技创新, 先进制造, 中国与上海相关, AI治理, 数字经济, 科技治理</p>
-
-<h2>最近写入</h2>
-
-<p class="bullet">- [P0] European Centre for International Political Economy｜开放Android，还是关闭竞争？DMA的AI互操作性悖论｜https://ecipe.org/insights/dma-ai-interoperability-paradox/</p>
-<p class="bullet">- [P1] National Bureau of Asian Research Technology and Geoeconomic Affairs｜美日技术与经济安全：在扰动时代实现韧性｜https://www.nbr.org/publication/us-japan-technology-and-economic-security-achieving-resilience-in-an-era-of-disruption/</p>
-<p class="bullet">- [P0] National Bureau of Asian Research Technology and Geoeconomic Affairs｜美韩技术合作：电池、生物技术与量子技术｜https://www.nbr.org/publication/u-s-rok-tech-cooperation-batteries-biotech-and-quantum-technologies/</p>
-<p class="bullet">- [P0] National Bureau of Asian Research Technology and Geoeconomic Affairs｜印太国家量子计算生态系统分析｜https://www.nbr.org/publication/analyzing-national-quantum-computing-ecosystems-in-the-indo-pacific/</p>
-<p class="bullet">- [P0] National Bureau of Asian Research Technology and Geoeconomic Affairs｜中国出口管制图谱：预测对美国关键供应链的影响｜https://www.nbr.org/publication/charting-chinas-export-controls-predicting-impacts-on-critical-u-s-supply-chains/</p>
-<p class="bullet">- [P1] Centre for European Policy Studies｜欧盟立法准备中创新原则落实情况评估｜https://www.ceps.eu/ceps-publications/assessment-of-the-state-of-play-of-the-innovation-principle-in-the-preparation-of-eu-legislation/</p>
-<p class="bullet">- [P1] Centre for European Policy Studies｜欧盟及主要全球伙伴技术专长、复杂度与关联性图谱｜https://www.ceps.eu/ceps-publications/mapping-of-technology-specialisation-complexity-and-relatedness-of-the-eu-and-selected-global-partners/</p>
-<p class="bullet">- [P0] Centre for European Policy Studies｜共享收益与安全连接：重思欧亚数字合作｜https://www.ceps.eu/ceps-publications/shared-gains-secure-links-rethinking-eu-asia-digital-cooperation/</p>
-
-<h2>P0/P1重点</h2>
-
-<h3>[P0] 价值链留在国内：中国技术外流管控及其欧洲含义</h3>
-
-<p class="bullet">- 机构：MERICS Industrial Policy and Technology</p>
-<p class="bullet">- 主题：中国与上海相关, 先进制造, 半导体, 科技创新, 科技治理, 数字经济</p>
-<p class="bullet">- 链接：https://merics.org/en/report/keeping-value-chains-home</p>
-<p class="bullet">- 核心观点：该报告分析中国如何通过军民两用出口管制、民用技术出口管制、黑名单、数据本地化、知识产权转让审查、人才流动限制、贸易投资管理和科技发展中的党国控制，管理技术相关外流并维护价值链优势。报告指出，中国的特殊性在于拥有一套以“经济安全”和“创新能力保护”为目标的民用技术出口管制体系，可用于阻止稀土磁体制造、算法、激光雷达、植物育种、遥感测绘等关键技术外流；同时，镓、锗、石墨和稀土加工等案例说明，中国正在把关键矿产、半导体、EV电池和绿色技术供应链中的地位转化为政策杠杆。</p>
-<p class="bullet">- 建议：研判价值在于，该文将中国科技自立自强解释为“防御性去依赖”与“进攻性保留价值链”并行的产业安全战略。对上海和长三角相关研究而言，重点不只在出口管制本身，而在技术、数据、资本、人才、知识产权和产业链节点如何共同构成创新能力外流边界。后续可将该报告与上海集成电路、稀土永磁、新能源汽车、电池材料和数据要素市场研究联动，用于判断中国在全球科技创新链中如何保留关键环节、管理外部获取并应对欧洲去风险。</p>
-<p class="bullet">- 中国/上海参考：研判价值在于，该文将中国科技自立自强解释为“防御性去依赖”与“进攻性保留价值链”并行的产业安全战略。对上海和长三角相关研究而言，重点不只在出口管制本身，而在技术、数据、资本、人才、知识产权和产业链节点如何共同构成创新能力外流边界。后续可将该报告与上海集成电路、稀土永磁、新能源汽车、电池材料和数据要素市场研究联动，用于判断中国在全球科技创新链中如何保留关键环节、管理外部获取并应对欧洲去风险。</p>
-
-<h3>[P0] 中国融入半导体供应链的长期挣扎</h3>
-
-<p class="bullet">- 机构：MERICS Industrial Policy and Technology</p>
-<p class="bullet">- 主题：中国与上海相关, 先进制造, 半导体, 科技治理, 科技创新</p>
-<p class="bullet">- 链接：https://merics.org/en/comment/chinas-long-term-struggle-become-integral-semiconductor-supply-chains</p>
-<p class="bullet">- 核心观点：该文讨论中国在半导体供应链中构建关键依赖的长期努力及其局限。文章认为，中国在封测、部分成熟制程、硅、镓、锗等材料以及部分专用供应链中已形成一定位置，但在高端制程、半导体制造设备和关键技术领先性方面仍受制于美欧日荷等外部体系。中国可以通过成熟节点、汽车芯片、电力半导体、关键材料和纵向整合逐步扩大市场影响，但其对半导体供应链的杠杆能力短期仍弱于美国对先进设备、EDA和高端芯片的控制力。</p>
-<p class="bullet">- 建议：研判价值在于，该文为“半导体自主可控”提供了更细的结构判断：供应链中的市场份额、材料控制和制度性出口管制不等于技术领先，但会随时间积累为谈判筹码。对上海相关研究而言，应关注中国半导体能力建设中的成熟制程、封测、功率器件、车规芯片、关键材料和设备替代路径；同时需要识别欧洲风险评估从单一技术节点走向跨产业、跨国家、跨供应链情景推演的趋势。</p>
-<p class="bullet">- 中国/上海参考：研判价值在于，该文为“半导体自主可控”提供了更细的结构判断：供应链中的市场份额、材料控制和制度性出口管制不等于技术领先，但会随时间积累为谈判筹码。对上海相关研究而言，应关注中国半导体能力建设中的成熟制程、封测、功率器件、车规芯片、关键材料和设备替代路径；同时需要识别欧洲风险评估从单一技术节点走向跨产业、跨国家、跨供应链情景推演的趋势。</p>
-
-<h3>[P0] 技术贸易管制与美中竞争</h3>
-
-<p class="bullet">- 机构：International Institute for Strategic Studies</p>
-<p class="bullet">- 主题：科技创新, AI治理, 中国与上海相关, 半导体</p>
-<p class="bullet">- 链接：https://www.iiss.org/publications/strategic-comments/2023/technology-trade-controls-and-us-china-competition/</p>
-<p class="bullet">- 核心观点：IISS 将美中竞争的核心变量界定为先进技术主导权，尤其是人工智能、微电子和量子信息系统。美国通过出口管制、产业政策和多边技术生态排除机制限制中国获取先进技术；中国则试图在依赖半导体的关键技术中实现领先，并加快本土能力建设以突破外部技术壁垒。</p>
-<p class="bullet">- 建议：该条目虽为 summary_only，但对判断技术管制、半导体生态和科技竞争政策具有直接价值。对上海相关研究而言，可作为观察技术贸易管制如何影响产业链、研发合作和关键技术自主化压力的背景材料。</p>
-<p class="bullet">- 中国/上海参考：该条目虽为 summary_only，但对判断技术管制、半导体生态和科技竞争政策具有直接价值。对上海相关研究而言，可作为观察技术贸易管制如何影响产业链、研发合作和关键技术自主化压力的背景材料。</p>
-
-<h3>[P0] 中国出口管制图谱：预测对美国关键供应链的影响</h3>
-
-<p class="bullet">- 机构：National Bureau of Asian Research Technology and Geoeconomic Affairs</p>
-<p class="bullet">- 主题：中国与上海相关, 先进制造, 科技创新, 科技治理</p>
-<p class="bullet">- 链接：https://www.nbr.org/publication/charting-chinas-export-controls-predicting-impacts-on-critical-u-s-supply-chains/</p>
-<p class="bullet">- 核心观点：报告分析中国出口管制体系的制度化进程及其对美国关键供应链的潜在影响。核心判断是，中国近年来逐步把出口管制作为回应美国及盟友技术保护措施的经济安全工具，尤其可能围绕关键矿产和特定材料加工设备实施更有针对性的控制。报告强调，中国出口管制体系正在从碎片化安排转向更正式的法律与行政工具组合。</p>
-<p class="bullet">- 建议：报告建议美国及盟友持续监测贸易和投资数据，识别中国可能新增管制的材料、设备和下游行业，提前开展供应链压力测试、替代来源布局和政府-企业协同准备。对企业而言，关键是把出口管制视为动态风险，而非事后合规事项。</p>
-<p class="bullet">- 中国/上海参考：该报告直接涉及中国经济安全工具。对上海而言，半导体、新能源汽车、先进制造和清洁技术企业都需要关注关键矿产、稀土、石墨、镓锗锑等材料的管制变化及外部反制。上海可将关键材料供应链、出口合规、替代来源和产业链韧性评估纳入重点产业风险管理。</p>
-
-<h3>[P0] 欧洲与印太：数字秩序中的趋同与分歧</h3>
-
-<p class="bullet">- 机构：International Institute for Strategic Studies</p>
-<p class="bullet">- 主题：数字经济, 科技创新, 中国与上海相关, AI治理</p>
-<p class="bullet">- 链接：https://www.iiss.org/research-paper/2024/03/europe-and-the-indo-pacific-convergence-and-divergence-in-the-digital-order/</p>
-<p class="bullet">- 核心观点：这份 IISS 研究报告聚焦美中竞争加剧背景下，欧洲与印太地区在数字外交和技术竞争中的政策回应。摘要显示，报告覆盖关键基础设施、人工智能、创新保护和网络虚假信息等议题，重点在于比较两个区域在数字秩序塑造中的趋同和分歧。</p>
-<p class="bullet">- 建议：对广义科技创新支撑观察而言，该条目可用于跟踪数字基础设施、技术安全、创新保护和国际规则竞争之间的关系。对中国和上海相关研判而言，其价值在于揭示欧洲与印太伙伴如何围绕技术依赖、基础设施安全、AI 竞争和网络信息环境形成政策协调或政策差异，适合与欧盟数字战略、印太技术联盟和中国数字出海议题联动使用。</p>
-<p class="bullet">- 中国/上海参考：对广义科技创新支撑观察而言，该条目可用于跟踪数字基础设施、技术安全、创新保护和国际规则竞争之间的关系。对中国和上海相关研判而言，其价值在于揭示欧洲与印太伙伴如何围绕技术依赖、基础设施安全、AI 竞争和网络信息环境形成政策协调或政策差异，适合与欧盟数字战略、印太技术联盟和中国数字出海议题联动使用。</p>
-
-<h3>[P0] 欧洲工业AI应用最佳实践图谱</h3>
-
-<p class="bullet">- 机构：Centre for European Policy Studies</p>
-<p class="bullet">- 主题：AI治理, 科技创新, 先进制造, 数字经济</p>
-<p class="bullet">- 链接：https://www.ceps.eu/ceps-publications/mapping-european-best-practices-for-ai-uptake-in-industry/</p>
-<p class="bullet">- 核心观点：报告以欧洲产业AI应用案例为基础，覆盖农业科技、纺织、木材加工、医疗技术、汽车与自动驾驶、半导体和能源等部门，核心判断是：AI进入工业体系的关键不在单个模型能力，而在行业数据、设备接口、工艺知识、软件工具、人才技能和企业组织流程能否被同时改造。欧洲已有多部门实践样本，但扩散仍受中小企业数据准备、系统集成能力和跨部门知识转移限制。</p>
-<p class="bullet">- 建议：报告的政策含义是推动面向行业的AI采用工程：建立行业案例库和知识图谱，支持中小企业开展数据治理与系统集成，围绕重点产业提供测试场、工具链、培训和供应商对接机制。AI政策应从原则性监管和模型展示转向生产现场的可复制流程，重点解决技术适配、组织吸收和产业链协同。</p>
-<p class="bullet">- 中国/上海参考：对上海而言，该报告可直接用于校准“AI+制造”政策：生物医药、汽车、半导体、能源装备等优势产业需要按场景建立AI应用成熟度清单，评估数据可用性、设备接口、模型部署和岗位技能缺口。政策重点不宜只放在算力和模型供给，还应组织行业测试场、应用服务商和中小企业改造路径。</p>
-
-<h3>[P0] 共享收益与安全连接：重思欧亚数字合作</h3>
-
-<p class="bullet">- 机构：Centre for European Policy Studies</p>
-<p class="bullet">- 主题：中国与上海相关, 先进制造, 半导体, 数字经济</p>
-<p class="bullet">- 链接：https://www.ceps.eu/ceps-publications/shared-gains-secure-links-rethinking-eu-asia-digital-cooperation/</p>
-<p class="bullet">- 核心观点：报告认为，在美中技术竞争加剧背景下，欧盟需要通过与日本、韩国、新加坡、印度和台湾等亚洲科技伙伴深化数字合作，巩固其在AI、半导体、6G、网络安全和数字标准中的位置。现有欧亚数字伙伴关系存在机构碎片化、成员国行动分散、伙伴制度深度不一和私营部门参与不足等问题，导致合作目标与执行工具之间存在落差。</p>
-<p class="bullet">- 建议：报告建议欧盟把数字伙伴关系从宣示性框架推进为可执行合作组合：强化双边和小多边机制，围绕关键技术供应链、数字贸易、研究创新、标准互认、网络安全和人才流动建立更稳定的合作安排；同时根据不同伙伴的制度条件设计差异化工具，尤其处理台湾等非正式渠道合作的制度约束。</p>
-<p class="bullet">- 中国/上海参考：该报告直接反映欧洲在美中竞争之间重组数字供应链和技术伙伴网络的思路。上海应关注欧盟与亚洲伙伴在半导体、AI标准、6G、网络安全和数字贸易规则上的新组合，这会影响上海企业进入欧洲市场、参与国际研发合作和嵌入跨境数字价值链的规则环境。</p>
-
-<h3>[P0] 追寻战略自主？欧洲应对美中竞争</h3>
-
-<p class="bullet">- 机构：MERICS Industrial Policy and Technology</p>
-<p class="bullet">- 主题：中国与上海相关, 先进制造, 科技创新</p>
-<p class="bullet">- 链接：https://merics.org/en/report/quest-strategic-autonomy-europe-grapples-us-china-rivalry</p>
-<p class="bullet">- 核心观点：ETNC 与 MERICS 的这份报告讨论欧洲在美中竞争中的战略自主选择，涉及供应链依赖、产业竞争力、技术安全和对华政策协调。报告把欧洲的政策困境置于美国安全压力、中国市场与制造能力、欧洲自身产业基础之间的结构性张力中。</p>
-<p class="bullet">- 建议：该材料对中国和上海具有较高参考价值：欧洲对华技术和产业政策的变化会直接影响跨国企业在华研发、供应链布局、先进制造合作和市场准入预期。后续可重点抽取其中关于欧洲对华技术依赖、去风险化工具和产业政策协调的章节。</p>
-<p class="bullet">- 中国/上海参考：该材料对中国和上海具有较高参考价值：欧洲对华技术和产业政策的变化会直接影响跨国企业在华研发、供应链布局、先进制造合作和市场准入预期。后续可重点抽取其中关于欧洲对华技术依赖、去风险化工具和产业政策协调的章节。</p>
-
-<h3>[P0] 奖金竞赛如何促进AI创新</h3>
-
-<p class="bullet">- 机构：Center for Security and Emerging Technology</p>
-<p class="bullet">- 主题：科技创新, AI治理, 科技治理</p>
-<p class="bullet">- 链接：https://cset.georgetown.edu/article/how-prize-competitions-enable-ai-innovation/</p>
-<p class="bullet">- 核心观点：该文讨论美国联邦奖金竞赛如何作为AI创新政策工具发挥作用。CSET指出，与传统研发拨款和采购合同相比，奖金竞赛以结果付费、降低参与门槛、允许政府在采购或规模化前测试方案，并可通过挑战式采购连接非传统供应商、科研机构和政府需求。文章列举DARPA网络挑战、陆军xTech挑战以及中国、日本、韩国相关竞赛实践，说明竞赛机制可在较低成本下形成技术基准、人才发现和应用验证。对科技创新支撑而言，该材料的价值在于提示创新政策不只依赖补贴和项目制资助，还可通过问题牵引、场景验证和后续采购通道，把研发、测试、人才和市场化连接起来。</p>
-<p class="bullet">- 建议：该文讨论美国联邦奖金竞赛如何作为AI创新政策工具发挥作用。CSET指出，与传统研发拨款和采购合同相比，奖金竞赛以结果付费、降低参与门槛、允许政府在采购或规模化前测试方案，并可通过挑战式采购连接非传统供应商、科研机构和政府需求。文章列举DARPA网络挑战、陆军xTech挑战以及中国、日本、韩国相关竞赛实践，说明竞赛机制可在较低成本下形成技术基准、人才发现和应用验证。对科技创新支撑而言，该材料的价值在于提示创新政策不只依赖补贴和项目制资助，还可通过问题牵引、场景验证和后续采购通道，把研发、测试、人才和市场化连接起来。</p>
-<p class="bullet">- 中国/上海参考：该文讨论美国联邦奖金竞赛如何作为AI创新政策工具发挥作用。CSET指出，与传统研发拨款和采购合同相比，奖金竞赛以结果付费、降低参与门槛、允许政府在采购或规模化前测试方案，并可通过挑战式采购连接非传统供应商、科研机构和政府需求。文章列举DARPA网络挑战、陆军xTech挑战以及中国、日本、韩国相关竞赛实践，说明竞赛机制可在较低成本下形成技术基准、人才发现和应用验证。对科技创新支撑而言，该材料的价值在于提示创新政策不只依赖补贴和项目制资助，还可通过问题牵引、场景验证和后续采购通道，把研发、测试、人才和市场化连接起来。</p>
-
-<h3>[P0] NAIRR试点：估算公共AI算力需求</h3>
-
-<p class="bullet">- 机构：Center for Security and Emerging Technology</p>
-<p class="bullet">- 主题：AI治理, 科技创新, 科技治理</p>
-<p class="bullet">- 链接：https://cset.georgetown.edu/article/the-nairr-pilot-estimating-compute/</p>
-<p class="bullet">- 核心观点：该文围绕美国国家人工智能研究资源（NAIRR）试点，讨论联邦政府为AI研究者提供算力、数据和培训资源时，如何估算计算需求并配置公共基础设施。文章将NAIRR试点视为公共AI研究基础设施的概念验证，重点涉及安全可信AI研究、资源申请、算力单位、可扩展性和未来制度化成本。</p>
-<p class="bullet">- 建议：该文围绕美国国家人工智能研究资源（NAIRR）试点，讨论联邦政府为AI研究者提供算力、数据和培训资源时，如何估算计算需求并配置公共基础设施。文章将NAIRR试点视为公共AI研究基础设施的概念验证，重点涉及安全可信AI研究、资源申请、算力单位、可扩展性和未来制度化成本。 中文研判：这类材料的价值在于把“算力”放入公共科研基础设施框架，而不只作为硬件采购或产业投资问题处理。对上海和中国相关研究的启示是，公共算力平台建设需要同步建立需求测算、资源分配、使用绩效、数据服务和开放科研机制，否则难以真正支撑AI创新扩散。</p>
-<p class="bullet">- 中国/上海参考：中文研判：这类材料的价值在于把“算力”放入公共科研基础设施框架，而不只作为硬件采购或产业投资问题处理。对上海和中国相关研究的启示是，公共算力平台建设需要同步建立需求测算、资源分配、使用绩效、数据服务和开放科研机制，否则难以真正支撑AI创新扩散。</p>
-
-<h3>[P0] 技术去全球化时代的中国AI发展模式</h3>
-
-<p class="bullet">- 机构：MERICS Industrial Policy and Technology</p>
-<p class="bullet">- 主题：中国与上海相关, AI治理, 科技创新</p>
-<p class="bullet">- 链接：https://merics.org/en/report/chinas-ai-development-model-era-technological-deglobalization</p>
-<p class="bullet">- 核心观点：报告分析在中美战略竞争和技术去全球化背景下，中国 AI 产业原先依赖的全球联系受到削弱，北京因而转向算力基础设施大型工程、基础模型举国推进和数据/产业政策协同。其重点是中国如何在外部脱钩压力下重组 AI 创新系统。</p>
-<p class="bullet">- 建议：原文或现有摘要未检出明确政策建议；后续精读应优先核验其对研发投入、人才培养、科研基础设施、产业化通道、标准监管和国际竞争工具的具体主张。</p>
-<p class="bullet">- 中国/上海参考：对上海研判而言，该报告可用于观察中国 AI 发展从全球分工嵌入转向国内基础设施、政策组织和产业链自主能力建设的路径。其价值不仅在 AI 治理，更在算力、模型、数据、应用场景和产业政策如何共同支撑创新能力。</p>
-
-<h3>[P0] 中国内外AI发展金融支持格局</h3>
-
-<p class="bullet">- 机构：Center for Security and Emerging Technology</p>
-<p class="bullet">- 主题：AI治理, 中国与上海相关, 科技创新</p>
-<p class="bullet">- 链接：https://cset.georgetown.edu/article/in-out-of-china-financial-support-for-ai-development/</p>
-<p class="bullet">- 核心观点：该文梳理中国围绕人工智能发展的国内外资金支持机制，包括政府引导、产业基金、企业投资、对外扩张和政策性支持安排。材料关注中国如何通过金融工具和产业政策支撑AI能力积累，并把国内能力建设与“走出去”战略联系起来。</p>
-<p class="bullet">- 建议：该文梳理中国围绕人工智能发展的国内外资金支持机制，包括政府引导、产业基金、企业投资、对外扩张和政策性支持安排。材料关注中国如何通过金融工具和产业政策支撑AI能力积累，并把国内能力建设与“走出去”战略联系起来。 中文研判：该文适合纳入“创新金融”和“涉华科技创新支撑”资料池。其核心意义在于揭示AI发展背后的资金组织方式、政府—企业关系和国际化路径，可用于分析中国AI产业政策从研发投入、资本供给到海外布局的连续机制。</p>
-<p class="bullet">- 中国/上海参考：该文梳理中国围绕人工智能发展的国内外资金支持机制，包括政府引导、产业基金、企业投资、对外扩张和政策性支持安排。材料关注中国如何通过金融工具和产业政策支撑AI能力积累，并把国内能力建设与“走出去”战略联系起来。 中文研判：该文适合纳入“创新金融”和“涉华科技创新支撑”资料池。其核心意义在于揭示AI发展背后的资金组织方式、政府—企业关系和国际化路径，可用于分析中国AI产业政策从研发投入、资本供给到海外布局的连续机制。</p>
-
-<h3>[P0] 2026年AI指数报告经济篇</h3>
-
-<p class="bullet">- 机构：Stanford Institute for Human-Centered Artificial Intelligence</p>
-<p class="bullet">- 主题：AI治理, 科技人才, 数字经济</p>
-<p class="bullet">- 链接：https://hai.stanford.edu/ai-index/2026-ai-index-report/economy</p>
-<p class="bullet">- 核心观点：该章节集中刻画 AI 的经济足迹：2025 年全球企业 AI 投资翻倍，私人投资增长最快，生成式 AI 吸收近半数私人 AI 资金；美国私人 AI 投资仍显著领先中国和欧洲，但中国政府引导基金可能使公开口径低估其总投入。材料同时跟踪 AI 企业收入、算力成本、云厂商资本开支、组织采用率、劳动力冲击、生产率提升和工业机器人安装情况。对后续研判而言，AI 竞争已经从模型能力扩展到资金、算力基础设施、企业采用和机器人产业化，适合作为创新体系和数字经济监测指标，而不宜只归入 AI 治理观察。</p>
-<p class="bullet">- 建议：该章节集中刻画 AI 的经济足迹：2025 年全球企业 AI 投资翻倍，私人投资增长最快，生成式 AI 吸收近半数私人 AI 资金；美国私人 AI 投资仍显著领先中国和欧洲，但中国政府引导基金可能使公开口径低估其总投入。材料同时跟踪 AI 企业收入、算力成本、云厂商资本开支、组织采用率、劳动力冲击、生产率提升和工业机器人安装情况。对后续研判而言，AI 竞争已经从模型能力扩展到资金、算力基础设施、企业采用和机器人产业化，适合作为创新体系和数字经济监测指标，而不宜只归入 AI 治理观察。</p>
-<p class="bullet">- 中国/上海参考：该章节集中刻画 AI 的经济足迹：2025 年全球企业 AI 投资翻倍，私人投资增长最快，生成式 AI 吸收近半数私人 AI 资金；美国私人 AI 投资仍显著领先中国和欧洲，但中国政府引导基金可能使公开口径低估其总投入。材料同时跟踪 AI 企业收入、算力成本、云厂商资本开支、组织采用率、劳动力冲击、生产率提升和工业机器人安装情况。对后续研判而言，AI 竞争已经从模型能力扩展到资金、算力基础设施、企业采用和机器人产业化，适合作为创新体系和数字经济监测指标，而不宜只归入 AI 治理观察。</p>
-
-<h3>[P0] 印太国家量子计算生态系统分析</h3>
-
-<p class="bullet">- 机构：National Bureau of Asian Research Technology and Geoeconomic Affairs</p>
-<p class="bullet">- 主题：中国与上海相关, 先进制造, 科技创新</p>
-<p class="bullet">- 链接：https://www.nbr.org/publication/analyzing-national-quantum-computing-ecosystems-in-the-indo-pacific/</p>
-<p class="bullet">- 核心观点：报告比较美国、中国、日本和韩国的量子计算生态系统，关注各国如何通过研究机构、企业、资本市场、供应链和政府政策把量子突破转化为长期经济与战略优势。报告不把技术里程碑作为唯一排序依据，而是强调生态系统吸收能力：谁能把硬件路线、软件工具、产业组织和供应链支撑组合成可持续的商业化路径。</p>
-<p class="bullet">- 建议：报告的政策含义是，量子竞争不能只靠单点科研项目或示范装置。政府需要同时支持基础研究、核心企业、创业公司、供应链环节、资本投入、标准制定和应用场景，形成可承接技术突破的完整生态。评估量子政策时，应把产业组织和商业化能力纳入核心指标。</p>
-<p class="bullet">- 中国/上海参考：对上海而言，该报告可用于校准量子科技布局：除实验室和重大项目外，还要系统识别本地量子计算、量子通信、量子传感企业，补齐低温、光子、控制、软件、材料和应用端供应链。上海若要形成量子产业优势，需要把科研平台、创业资本、场景验证和工业用户组织起来。</p>
-
-<h3>[P0] 深度观察DeepSeek AI人才及其对美国创新的影响</h3>
-
-<p class="bullet">- 机构：Hoover Technology Policy Accelerator</p>
-<p class="bullet">- 主题：科技创新, AI治理, 科技治理</p>
-<p class="bullet">- 链接：https://www.hoover.org/research/deep-peek-deepseek-ais-talent-and-implications-us-innovation</p>
-<p class="bullet">- 核心观点：报告以 DeepSeek 2024—2025 年五篇基础论文的 200 多名作者为对象，分析其教育背景、职业路径和跨国流动。核心判断是，DeepSeek 的冲击不只来自低成本训练或模型性能，更来自中国已经形成较稳固的本土 AI 人才管道。报告认为，几乎所有 DeepSeek 论文作者都曾在中国受教育或工作，超过半数未离开中国求学或任职；部分研究者虽有美国机构经历，但多数最终回到中国，使美国科研体系在一定程度上成为中国 AI 能力积累的中转环节。</p>
-<p class="bullet">- 建议：报告的政策含义是，美国仅依靠芯片出口管制和算力投资不足以维持 AI 领先，必须重新审视人才培养、大学科研、国际学生政策、研究生态吸引力和跨国知识流动。其隐含建议包括：把人力资本视为 AI 竞争的核心变量，提升美国研究型大学和产业实验室的人才留存能力，建立更细致的国际科研流动监测，而非把技术优势简化为硬件和模型指标。</p>
-<p class="bullet">- 中国/上海参考：对上海而言，该报告可用于支撑 AI 人才体系、青年科研团队、开源模型生态和产学研组织方式研究。重点启示在于，前沿 AI 竞争中的人才优势并不只来自海外引进，也来自本土高校、科研机构、企业工程团队和开源论文网络的连续培养。上海若要建设 AI 创新高地，应同步关注基础模型团队的人才来源、论文协作网络、工程训练环境、公共算力开放和青年研究者留用机制。</p>
-
-<h3>[P0] 研究文化的对话与实践：面向研究者福祉全国调查</h3>
-
-<p class="bullet">- 机构：National Institute of Science and Technology Policy Japan</p>
-<p class="bullet">- 主题：科技创新, 科技人才, 科技治理</p>
-<p class="bullet">- 链接：https://www.nistep.go.jp/en/?p=5926</p>
-<p class="bullet">- 核心观点：该页面汇集 NISTEP 讨论论文《研究文化的对话与实践》及相关报告、演讲材料和国际参考文献，并说明其将在 2026 财年开展面向日本研究者福祉与研究文化的全国调查。材料将论文数、引文数、经费额等可量化产出之外的“研究土壤”作为研究能力的前置条件，强调好奇心、失败学习、代际隐性知识、安全提问关系、研究评价改革和研究者主观体验。对中国和上海的科研体系建设而言，该材料的价值在于把科技创新支撑从投入和产出指标推进到研究文化、评价机制、人才生态和 AI 时代科研方式变化的制度层面。</p>
-<p class="bullet">- 建议：原文或现有摘要未检出明确政策建议；后续精读应优先核验其对研发投入、人才培养、科研基础设施、产业化通道、标准监管和国际竞争工具的具体主张。</p>
-<p class="bullet">- 中国/上海参考：该页面汇集 NISTEP 讨论论文《研究文化的对话与实践》及相关报告、演讲材料和国际参考文献，并说明其将在 2026 财年开展面向日本研究者福祉与研究文化的全国调查。材料将论文数、引文数、经费额等可量化产出之外的“研究土壤”作为研究能力的前置条件，强调好奇心、失败学习、代际隐性知识、安全提问关系、研究评价改革和研究者主观体验。对中国和上海的科研体系建设而言，该材料的价值在于把科技创新支撑从投入和产出指标推进到研究文化、评价机制、人才生态和 AI 时代科研方式变化的制度层面。</p>
-
-<h3>[P0] 回应中国挑战：新能源供应链多元化与去风险化</h3>
-
-<p class="bullet">- 机构：RUSI Artificial Intelligence and National Security</p>
-<p class="bullet">- 主题：中国与上海相关, 先进制造, 科技创新</p>
-<p class="bullet">- 链接：https://www.rusi.org/explore-our-research/publications/external-publications/responding-china-challenge-diversification-and-de-risking-new-energy-supply-chains-issue-142</p>
-<p class="bullet">- 核心观点：该页介绍《Oxford Energy Forum》有关新能源供应链去风险的一期专题，强调关键矿产和低碳能源材料已经成为中西方战略竞争的重要场域。RUSI 研究人员参与讨论中国在关键矿产和材料供应中的中心地位，以及西方政府试图降低依赖所面临的现实困难。</p>
-<p class="bullet">- 建议：研判：该条目对上海关注清洁能源、低碳制造、关键矿产供应链和产业安全具有参考价值。其重点不在单一技术突破，而在说明新能源产业链的安全韧性已经成为科技创新体系的一部分，后续可与稀土、光伏、电池、氢能和先进制造政策比较使用。</p>
-<p class="bullet">- 中国/上海参考：研判：该条目对上海关注清洁能源、低碳制造、关键矿产供应链和产业安全具有参考价值。其重点不在单一技术突破，而在说明新能源产业链的安全韧性已经成为科技创新体系的一部分，后续可与稀土、光伏、电池、氢能和先进制造政策比较使用。</p>
-
-<h3>[P0] 中国与稀土供应链</h3>
-
-<p class="bullet">- 机构：RUSI Artificial Intelligence and National Security</p>
-<p class="bullet">- 主题：中国与上海相关, 先进制造, 科技治理</p>
-<p class="bullet">- 链接：https://www.rusi.org/explore-our-research/publications/research-papers/china-and-rare-earth-supply-chains</p>
-<p class="bullet">- 核心观点：报告分析中国在稀土开采、分离、金属加工和永磁体制造中的主导地位，重点讨论 2025 年以来中国对中重稀土实施出口管制后的贸易影响、军民两用治理逻辑以及英国暴露风险。报告认为，中国一方面鼓励含稀土终端产品出口以保留产业链价值，另一方面通过许可证和双用途控制掌握对外供应可见性与影响力；英国和欧洲的真正挑战不只是寻找矿山，而是重建合金、粉末、烧结和规模化制造等中下游能力。</p>
-<p class="bullet">- 建议：研判：该报告是关键矿产、先进制造和战略供应链的高价值材料。对上海而言，可用于理解稀土永磁、电动车、机器人、风电、医疗影像和国防装备背后的基础材料约束，也可作为“科技创新支撑体系”中资源安全、产业链控制和盟友协同的案例。</p>
-<p class="bullet">- 中国/上海参考：研判：该报告是关键矿产、先进制造和战略供应链的高价值材料。对上海而言，可用于理解稀土永磁、电动车、机器人、风电、医疗影像和国防装备背后的基础材料约束，也可作为“科技创新支撑体系”中资源安全、产业链控制和盟友协同的案例。</p>
-
-<h2>科技创新支撑重点</h2>
-
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜价值链留在国内：中国技术外流管控及其欧洲含义</p>
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜中国融入半导体供应链的长期挣扎</p>
-<p class="bullet">- [P0] International Institute for Strategic Studies｜技术贸易管制与美中竞争</p>
-<p class="bullet">- [P0] National Bureau of Asian Research Technology and Geoeconomic Affairs｜中国出口管制图谱：预测对美国关键供应链的影响</p>
-<p class="bullet">- [P0] International Institute for Strategic Studies｜欧洲与印太：数字秩序中的趋同与分歧</p>
-<p class="bullet">- [P0] Centre for European Policy Studies｜欧洲工业AI应用最佳实践图谱</p>
-<p class="bullet">- [P0] Centre for European Policy Studies｜共享收益与安全连接：重思欧亚数字合作</p>
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜追寻战略自主？欧洲应对美中竞争</p>
-<p class="bullet">- [P0] Center for Security and Emerging Technology｜奖金竞赛如何促进AI创新</p>
-<p class="bullet">- [P0] Center for Security and Emerging Technology｜NAIRR试点：估算公共AI算力需求</p>
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜技术去全球化时代的中国AI发展模式</p>
-<p class="bullet">- [P0] Center for Security and Emerging Technology｜中国内外AI发展金融支持格局</p>
-
-<h2>广义科技创新支撑</h2>
-
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜价值链留在国内：中国技术外流管控及其欧洲含义</p>
-<p class="bullet">- [P0] International Institute for Strategic Studies｜技术贸易管制与美中竞争</p>
-<p class="bullet">- [P0] National Bureau of Asian Research Technology and Geoeconomic Affairs｜中国出口管制图谱：预测对美国关键供应链的影响</p>
-<p class="bullet">- [P0] Centre for European Policy Studies｜欧洲工业AI应用最佳实践图谱</p>
-<p class="bullet">- [P0] Center for Security and Emerging Technology｜奖金竞赛如何促进AI创新</p>
-<p class="bullet">- [P0] Stanford Institute for Human-Centered Artificial Intelligence｜2026年AI指数报告经济篇</p>
-<p class="bullet">- [P0] Hoover Technology Policy Accelerator｜深度观察DeepSeek AI人才及其对美国创新的影响</p>
-<p class="bullet">- [P0] National Institute of Science and Technology Policy Japan｜研究文化的对话与实践：面向研究者福祉全国调查</p>
-<p class="bullet">- [P0] RUSI Artificial Intelligence and National Security｜回应中国挑战：新能源供应链多元化与去风险化</p>
-<p class="bullet">- [P0] European Centre for International Political Economy｜开放Android，还是关闭竞争？DMA的AI互操作性悖论</p>
-<p class="bullet">- [P0] CNAS Technology and National Security｜美国AI公司仍然拿不到足够芯片</p>
-<p class="bullet">- [P0] ORF America Technology Policy｜印度在全球清洁能源供应链多元化中的角色</p>
-
-<h2>涉华/涉沪判断</h2>
-
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜价值链留在国内：中国技术外流管控及其欧洲含义｜https://merics.org/en/report/keeping-value-chains-home</p>
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜中国融入半导体供应链的长期挣扎｜https://merics.org/en/comment/chinas-long-term-struggle-become-integral-semiconductor-supply-chains</p>
-<p class="bullet">- [P0] International Institute for Strategic Studies｜技术贸易管制与美中竞争｜https://www.iiss.org/publications/strategic-comments/2023/technology-trade-controls-and-us-china-competition/</p>
-<p class="bullet">- [P0] National Bureau of Asian Research Technology and Geoeconomic Affairs｜中国出口管制图谱：预测对美国关键供应链的影响｜https://www.nbr.org/publication/charting-chinas-export-controls-predicting-impacts-on-critical-u-s-supply-chains/</p>
-<p class="bullet">- [P0] International Institute for Strategic Studies｜欧洲与印太：数字秩序中的趋同与分歧｜https://www.iiss.org/research-paper/2024/03/europe-and-the-indo-pacific-convergence-and-divergence-in-the-digital-order/</p>
-<p class="bullet">- [P0] Centre for European Policy Studies｜共享收益与安全连接：重思欧亚数字合作｜https://www.ceps.eu/ceps-publications/shared-gains-secure-links-rethinking-eu-asia-digital-cooperation/</p>
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜追寻战略自主？欧洲应对美中竞争｜https://merics.org/en/report/quest-strategic-autonomy-europe-grapples-us-china-rivalry</p>
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜技术去全球化时代的中国AI发展模式｜https://merics.org/en/report/chinas-ai-development-model-era-technological-deglobalization</p>
-<p class="bullet">- [P0] Center for Security and Emerging Technology｜中国内外AI发展金融支持格局｜https://cset.georgetown.edu/article/in-out-of-china-financial-support-for-ai-development/</p>
-<p class="bullet">- [P0] National Bureau of Asian Research Technology and Geoeconomic Affairs｜印太国家量子计算生态系统分析｜https://www.nbr.org/publication/analyzing-national-quantum-computing-ecosystems-in-the-indo-pacific/</p>
-<p class="bullet">- [P0] RUSI Artificial Intelligence and National Security｜回应中国挑战：新能源供应链多元化与去风险化｜https://www.rusi.org/explore-our-research/publications/external-publications/responding-china-challenge-diversification-and-de-risking-new-energy-supply-chains-issue-142</p>
-<p class="bullet">- [P0] RUSI Artificial Intelligence and National Security｜中国与稀土供应链｜https://www.rusi.org/explore-our-research/publications/research-papers/china-and-rare-earth-supply-chains</p>
-
-<h2>新增索引</h2>
-
-<p class="bullet">- [P0] European Centre for International Political Economy｜开放Android，还是关闭竞争？DMA的AI互操作性悖论｜https://ecipe.org/insights/dma-ai-interoperability-paradox/</p>
-<p class="bullet">- [P0] Stanford Institute for Human-Centered Artificial Intelligence｜2026年AI指数报告：研发篇｜https://hai.stanford.edu/ai-index/2026-ai-index-report/research-and-development</p>
-<p class="bullet">- [P0] RUSI Artificial Intelligence and National Security｜构建前沿AI安全第三方访问框架｜https://www.rusi.org/explore-our-research/publications/research-papers/developing-framework-secure-third-party-access-frontier-ai</p>
-<p class="bullet">- [P0] CNAS Technology and National Security｜美国AI公司仍然拿不到足够芯片｜https://www.cnas.org/publications/reports/american-ai-companies-cant-get-enough-chips</p>
-<p class="bullet">- [P0] Stanford Institute for Human-Centered Artificial Intelligence｜2026年AI指数报告：技术性能篇｜https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance</p>
-<p class="bullet">- [P0] ORF America Technology Policy｜印度在全球清洁能源供应链多元化中的角色｜https://orfamerica.org/newresearch/india-global-clean-energy-supply-chains</p>
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜加速器国家：中国技术工业驱动中的中小企业｜https://merics.org/en/report/accelerator-state-small-firms-join-fray-chinas-techno-industrial-drive</p>
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜从中国战略到没有战略：欧洲对华路径的多样性｜https://merics.org/en/report/china-strategy-no-strategy-all-exploring-diversity-european-approaches</p>
-<p class="bullet">- [P0] Center for Strategic and International Studies｜北美堡垒：墨西哥在保障区域经济未来中的作用｜https://www.csis.org/analysis/fortress-north-america-mexicos-role-securing-regions-economic-future</p>
-<p class="bullet">- [P0] Bruegel｜绿色基础设施投资能在多大程度上缓解中国清洁能源产能过剩？｜https://www.bruegel.org/working-paper/what-extent-can-green-infrastructure-investment-mitigate-chinas-clean-energy</p>
-<p class="bullet">- [P0] Carnegie Technology and International Affairs Program｜当代战场中的军事AI效应｜https://carnegieendowment.org/research/2026/05/the-effect-of-military-ai-on-contemporary-battlefields</p>
-<p class="bullet">- [P0] Carnegie Technology and International Affairs Program｜人工智能与医疗健康的全球政治图景｜https://carnegieendowment.org/research/2026/02/navigating-the-global-politics-of-artificial-intelligence-and-healthcare</p>
-<p class="bullet">- [P0] Center for Security and Emerging Technology｜关于加快美国科学事业发展的OSTP征询意见回应｜https://cset.georgetown.edu/publication/rfi-response-office-of-science-and-technology-policys-accelerating-the-american-scientific-enterprise-request-for-information/</p>
-<p class="bullet">- [P0] Hoover Technology Policy Accelerator｜艾米·泽加特谈混合信号与新兴技术｜https://www.hoover.org/research/mixed-signals-and-emerging-technology-amy-zegart</p>
-<p class="bullet">- [P0] National Bureau of Asian Research Technology and Geoeconomic Affairs｜美韩技术合作：电池、生物技术与量子技术｜https://www.nbr.org/publication/u-s-rok-tech-cooperation-batteries-biotech-and-quantum-technologies/</p>
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜数字丝绸之路：中国科技巨头出海中的北京优先事项｜https://merics.org/en/tracker/digital-silk-road-growing-priority-beijing-its-tech-champions-expand-overseas</p>
-<p class="bullet">- [P0] MERICS Industrial Policy and Technology｜中国数据管理：党国走向前台｜https://merics.org/en/report/chinas-data-management-putting-party-state-charge</p>
-<p class="bullet">- [P0] Center for Security and Emerging Technology｜中华人民共和国两用物项出口管制条例英译｜https://cset.georgetown.edu/publication/china-dual-use-export-control-regulation/</p>
-<p class="bullet">- [P1] RUSI Artificial Intelligence and National Security｜欧洲亟需在高风险技术供应商问题上形成一致立场｜https://www.rusi.org/explore-our-research/publications/external-publications/europe-urgently-needs-cohesion-high-risk-technology-vendors</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜2026年印度AI影响峰会中的开源创新前景｜https://carnegieendowment.org/india/research/2026/05/outlooks-on-open-source-innovation-at-the-india-ai-impact-summit-2026</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜AI劳动力争论：未来工作的三种观点｜https://carnegieendowment.org/research/2026/04/the-ai-labor-debate-three-views-on-the-future-of-work</p>
-<p class="bullet">- [P1] Harvard Belfer Center Science, Technology, and Public Policy｜商业聚变能源临近说法的近期炒作评析｜https://www.belfercenter.org/research-analysis/notes-recent-hype-about-imminence-commercial-fusion-energy</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜非洲全球经济优势：推进战略性部门｜https://carnegieendowment.org/research/2026/03/africa-economic-edge-advancing-strategic-sectors</p>
-<p class="bullet">- [P1] ORF America Technology Policy｜美印人工智能与新兴技术合作契约｜https://orfamerica.org/newresearch/us-india-ai-and-emerging-technology-compact</p>
-<p class="bullet">- [P1] Center for Security and Emerging Technology｜人工智能专利集群｜https://cset.georgetown.edu/publication/artificial-intelligence-patent-clusters/</p>
-<p class="bullet">- [P1] Center for Security and Emerging Technology｜七部门推进脑机接口产业创新发展的实施意见｜https://cset.georgetown.edu/publication/china-bci-implementation-opinions/</p>
-<p class="bullet">- [P1] Hoover Technology Policy Accelerator｜瞄准月球竞争｜https://www.hoover.org/research/shooting-moon</p>
-<p class="bullet">- [P1] National Bureau of Asian Research Technology and Geoeconomic Affairs｜美日技术与经济安全：在扰动时代实现韧性｜https://www.nbr.org/publication/us-japan-technology-and-economic-security-achieving-resilience-in-an-era-of-disruption/</p>
-<p class="bullet">- [P1] International Institute for Strategic Studies｜量子传感：中美比较｜https://www.iiss.org/research-paper/2024/02/quantum-sensing-comparing-the-united-states-and-china/</p>
-<p class="bullet">- [P1] International Institute for Strategic Studies｜俄乌战争对国家网络规划的影响：十国调查｜https://www.iiss.org/research-paper/2024/01/impact-of-the-russia-ukraine-war-on-national-cyber-planning-a-survey-of-ten-countries/</p>
-<p class="bullet">- [P1] Center for Security and Emerging Technology｜中国混合经济下的华大基因：应对路径｜https://cset.georgetown.edu/article/chinas-hybrid-economy-what-to-do-about-bgi/</p>
-<p class="bullet">- [P1] RAND｜韩国必须将能源安全重定义为地缘政治要务｜https://www.rand.org/pubs/commentary/2026/04/korea-must-redefine-energy-security-as-a-geopolitical.html</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜非洲数字基础设施的政策紧迫性｜https://carnegieendowment.org/research/2026/04/africa-digital-infrastructure-aftech-technology-policy</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜韩国新空间经济产业政策｜https://carnegieendowment.org/research/2025/10/south-koreas-industrial-policy-for-the-new-space-economy</p>
-<p class="bullet">- [P1] ORF America Technology Policy｜构建韧性供应链：半导体案例｜https://orfamerica.org/newresearch/building-resilient-supply-chains-semiconductors</p>
-<p class="bullet">- [P1] Stanford Institute for Human-Centered Artificial Intelligence｜以人为本的大语言模型｜https://hai.stanford.edu/industry/human-centered-large-language-models</p>
-<p class="bullet">- [P1] Centre for European Policy Studies｜欧盟及主要全球伙伴技术专长、复杂度与关联性图谱｜https://www.ceps.eu/ceps-publications/mapping-of-technology-specialisation-complexity-and-relatedness-of-the-eu-and-selected-global-partners/</p>
-<p class="bullet">- [P1] RAND｜威慑海底俄罗斯：保护北约关键海底基础设施｜https://www.rand.org/pubs/commentary/2026/06/deterring-russia-beneath-the-waves-securing-natos-critical.html</p>
-<p class="bullet">- [P1] Bruegel｜税收与竞争力｜https://www.bruegel.org/anthology/taxation-and-competitiveness</p>
-<p class="bullet">- [P1] MERICS Industrial Policy and Technology｜实体经济数字化、能源部门升级与供应链｜https://merics.org/en/merics-briefs/real-economy-digitalization-energy-sector-upgrade-supply-chains</p>
-<p class="bullet">- [P1] RUSI Artificial Intelligence and National Security｜从矿石到军械：扰乱俄罗斯火炮供应链｜https://www.rusi.org/explore-our-research/publications/external-publications/ore-ordnance-disrupting-russias-artillery-supply-chains</p>
-<p class="bullet">- [P1] International Institute for Strategic Studies｜土耳其与其他欧洲国家的防务工业关系｜https://www.iiss.org/research-paper/2024/09/turkiyes-defence-industrial-relationships-with-other-european-states/</p>
-<p class="bullet">- [P1] RUSI Artificial Intelligence and National Security｜安全、产业与失落的欧洲愿景：俄乌战争如何改变欧洲防务技术工业基础｜https://www.rusi.org/explore-our-research/publications/external-publications/security-industry-and-lost-european-vision-how-russias-war-ukraine-changing-european-defense</p>
-<p class="bullet">- [P1] Information Technology and Innovation Foundation｜越南竞争法修订意见：数字平台监管可能损害创新｜https://itif.org/publications/2026/06/20/comments-vietnams-ministry-industry-trade-draft-law-amending-supplementing-competition-law/</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜核燃料循环是否到来：全球核能复兴中的前景与影响｜https://carnegieendowment.org/research/2026/06/time-for-nuclear-recycling-prospects-and-implications-during-a-global-nuclear-energy-renewal</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜印度2023年空间政策与创业生态评估｜https://carnegieendowment.org/india/research/2026/05/indian-space-policy-review-entrepreneurship-and-innovation-ecosystem</p>
-<p class="bullet">- [P1] ORF America Technology Policy｜IBSA+印尼能源转型：塑造路径与释放解决方案｜https://orfamerica.org/newresearch/ibsa-indonesia-energy-transitions-shaping-pathways-and-unlocking-solutions</p>
-<p class="bullet">- [P1] RUSI Artificial Intelligence and National Security｜英国防务工业：历史、现状与可能未来｜https://www.rusi.org/explore-our-research/publications/external-publications/british-defence-industry-past-present-and-possible-futures</p>
-<p class="bullet">- [P1] RUSI Artificial Intelligence and National Security｜英国防务新产业战略｜https://www.rusi.org/explore-our-research/publications/external-publications/defences-new-industrial-strategy</p>
-<p class="bullet">- [P1] ORF America Technology Policy｜推进美印能源安全伙伴关系的蓝图｜https://orfamerica.org/newresearch/a-blueprint-to-advance-the-us-india-energy-security-partnership</p>
-<p class="bullet">- [P1] International Institute for Strategic Studies｜局外旁观：冷战后土耳其在欧洲防务工业合作中的边缘角色｜https://www.iiss.org/research-paper/2024/07/on-the-outside-looking-in-turkiyes-peripheral-role-in-european-defence-industrial-collaboration-since-the-end-of-the-cold-war/</p>
-<p class="bullet">- [P1] International Institute for Strategic Studies｜调适安全：土耳其外交政策与防务工业化的交汇｜https://www.iiss.org/research-paper/2024/06/adapting-security-the-intersection-of-turkiyes-foreign-policy-and-defence-industrialisation/</p>
-<p class="bullet">- [P1] Center for Security and Emerging Technology｜地方导向创新的成效衡量｜https://cset.georgetown.edu/article/measuring-success-in-place-based-innovation/</p>
-<p class="bullet">- [P1] ORF America Technology Policy｜解码印度绿色氢能潜力｜https://orfamerica.org/newresearch/green-hydrogen-bp</p>
-<p class="bullet">- [P1] ORF America Technology Policy｜印度在全球太阳能光伏供应链中的崛起｜https://orfamerica.org/newresearch/solar-rising-india</p>
-<p class="bullet">- [P1] CNAS Technology and National Security｜生物技术至关重要｜https://www.cnas.org/publications/reports/biotech-matters</p>
-<p class="bullet">- [P1] RUSI Artificial Intelligence and National Security｜英国防务领域的私人资本｜https://www.rusi.org/explore-our-research/publications/insights-papers/private-capital-uk-defence</p>
-<p class="bullet">- [P1] Information Technology and Innovation Foundation｜欧洲版权环境意见：保留文本与数据挖掘例外以支撑AI创新｜https://itif.org/publications/2026/06/24/comments-european-commission-regarding-copyright-environment-in-europe/</p>
-<p class="bullet">- [P1] Information Technology and Innovation Foundation｜美国两党平台法案承诺创新与选择却可能适得其反｜https://itif.org/publications/2026/06/17/new-bipartisan-bill-promises-innovation-choice-will-deliver-neither/</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜从贸易依赖到地缘杠杆：武器化相互依赖时代的欧盟｜https://carnegieendowment.org/europe/research/2026/06/from-trade-dependence-to-geopolitical-leverage-the-eu-in-an-era-of-weaponized-interdependence</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜超大规模云厂商核能承诺与美国能源现实｜https://carnegieendowment.org/research/2026/06/beyond-the-hype-assessing-hyperscaler-nuclear-commitments-against-us-energy-realities</p>
-<p class="bullet">- [P1] RUSI Artificial Intelligence and National Security｜“始终在线”的英国防务工业：性质、重要性、挑战与路径｜https://www.rusi.org/explore-our-research/publications/rusi-newsbrief/always-and-defence-industry-uk-its-nature-importance-challenges-and-ways-forward</p>
-<p class="bullet">- [P1] Centre for European Policy Studies｜欧盟立法准备中创新原则落实情况评估｜https://www.ceps.eu/ceps-publications/assessment-of-the-state-of-play-of-the-innovation-principle-in-the-preparation-of-eu-legislation/</p>
-<p class="bullet">- [P1] Information Technology and Innovation Foundation｜世界银行，产业政策的道歉在哪里？｜https://itif.org/publications/2026/04/23/world-bank-wheres-your-industrial-policy-mea-culpa/</p>
-<p class="bullet">- [P1] Harvard Belfer Center Science, Technology, and Public Policy｜资源诅咒是否正在挤出美国可再生能源｜https://www.belfercenter.org/research-analysis/resource-curse-crowding-out-us-renewable-energy</p>
-<p class="bullet">- [P1] Hoover Technology Policy Accelerator｜机器人与政策：Allison M. Okamura的建议｜https://www.hoover.org/research/robotics-policy-advice-allison-m-okamura</p>
-<p class="bullet">- [P1] Hoover Technology Policy Accelerator｜量子传感：被忽视的战略优势｜https://www.hoover.org/research/quantum-sensing-overlooked-strategic-advantage</p>
-<p class="bullet">- [P1] Information Technology and Innovation Foundation｜企业不应被当作就业安置项目｜https://itif.org/publications/2026/02/20/we-dont-want-our-companies-to-be-jobs-programs/</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜欧盟新工业战略与全球失序｜https://carnegieendowment.org/research/2026/02/the-eus-new-industrial-strategy-and-global-disorder</p>
-<p class="bullet">- [P1] Hoover Technology Policy Accelerator｜追寻技术知识及其明智运用｜https://www.hoover.org/research/quest-tech-knowledge-and-wisdom-use-it</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜德国FDI支持非洲经济结构转型的潜力与前景｜https://carnegieendowment.org/research/2026/01/german-fdi-supporting-the-structural-transformation-of-african-economies</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜战争中的数字技术：从创新到参与｜https://carnegieendowment.org/research/2025/12/the-digital-in-war-from-innovation-to-participation</p>
-<p class="bullet">- [P1] Carnegie Technology and International Affairs Program｜印度半导体生态中翻新设备使用问题再审视｜https://carnegieendowment.org/india/research/2025/10/revisiting-the-usage-of-refurbished-equipment-in-indias-semiconductor-ecosystem</p>
-<p class="bullet">- [P1] Information Technology and Innovation Foundation｜重新思考反垄断：动态竞争政策的理由｜https://itif.org/publications/2025/10/14/rethinking-antitrust-the-case-for-dynamic-competition-policy/</p>
-<p class="bullet">- [P1] Harvard Belfer Center Science, Technology, and Public Policy｜商业航天竞争行政令中的新型空间活动解析｜https://www.belfercenter.org/research-analysis/explainer-novel-space-activities-executive-order-enabling-competition-commercial</p>
-<p class="bullet">- [P1] International Institute for Strategic Studies｜能力专题：供应链与关键原材料受到更多关注｜https://www.iiss.org/publications/strategic-dossiers/progress-and-shortfalls-in-europes-defence-an-assessment/capability-vignette-increased-focus-on-supply-chains-and-critical-raw-materials/</p>
-<p class="bullet">- [P1] Information Technology and Innovation Foundation｜别让华盛顿把科技公司变成美铁｜https://itif.org/publications/2025/08/28/dont-let-washington-turn-tech-companies-into-amtrak/</p>
-<p class="bullet">- [P1] ORF America Technology Policy｜能源转型与全球南方合作：生物燃料案例｜https://orfamerica.org/newresearch/energy-global-south-biofuels</p>
-<p class="bullet">- [P1] International Institute for Strategic Studies｜支撑欧洲战区军事行动的空间能力｜https://www.iiss.org/research-paper/2025/space-capabilities-to-support-military-operations-in-the-european-theatre/</p>
-<p class="bullet">- [P1] CNAS Technology and National Security｜让美国成为生物强国｜https://www.cnas.org/publications/commentary/make-america-the-biopower</p>
-<p class="bullet">- [P1] International Institute for Strategic Studies｜欧洲防务工业能力｜https://www.iiss.org/publications/strategic-dossiers/european-defence-industrial-capability/</p>
-<p class="bullet">- [P1] ORF America Technology Policy｜充电上链：印度在全球电池供应链中的潜在角色｜https://orfamerica.org/newresearch/batteries-ev-india</p>
-<p class="bullet">- [P1] International Institute for Strategic Studies｜加拿大吸引科技人才的政策尝试｜https://www.iiss.org/publications/strategic-comments/2023/canadas-bid-to-attract-technology-talent/</p>
-<p class="bullet">- [P1] Information Technology and Innovation Foundation｜美国国家经济委员会误判大企业与小企业在创新中的作用｜https://itif.org/publications/2023/07/20/nec-gets-it-wrong-on-roles-of-big-and-small-firms-in-us-innovation/</p>
-<p class="bullet">- [P1] RAND｜美国各州需要既有学习学分认定路线图｜https://www.rand.org/pubs/commentary/2026/05/states-need-a-roadmap-for-credit-for-prior-learning.html</p>
-<p class="bullet">- [P1] RAND｜地面机器人短期内不会取代步兵｜https://www.rand.org/pubs/commentary/2026/04/robots-just-captured-a-russian-position-in-ukraine.html</p>
-<p class="bullet">- [P1] ORF America Technology Policy｜数字公共基础设施与数字支付未来：Pix与UPI的经验｜https://orfamerica.org/newresearch/digital-public-infrastructure-and-the-future-of-digital-payments-lessons-from-pix-and-upi</p>
-<p class="bullet">- [P2] ORF America Technology Policy｜穿越纠缠：中美量子技术竞赛中的相互依赖｜https://orfamerica.org/newresearch/us-china-quantum-technology-race</p>
-<p class="bullet">- [P2] Center for Security and Emerging Technology｜美国国防部扩大与8家公司开展机密AI合作：Anthropic因争议被排除｜https://cset.georgetown.edu/article/dod-expands-its-classified-ai-work-with-8-companies-excluding-anthropic-amid-ongoing-dispute/</p>
-<p class="bullet">- [P2] ORF America Technology Policy｜中国能否在2030年前建成金融强国｜https://orfamerica.org/newresearch/can-china-build-a-financial-powerhouse-by-2030</p>
-<p class="bullet">- [P2] ORF America Technology Policy｜电网将决定全球南方的AI未来｜https://orfamerica.org/newresearch/grids-will-decide-the-global-souths-ai-future</p>
-<p class="bullet">- [P2] ORF America Technology Policy｜为什么技术联盟重要：人工智能扩散｜https://orfamerica.org/newresearch/why-technology-alliances-matter-ai-diffusion</p>
-<p class="bullet">- [P2] ORF America Technology Policy｜维持美国半导体领导力的政策优先事项｜https://orfamerica.org/newresearch/policy-us-semiconductor-leadership</p>
-<p class="bullet">- [P2] Center for Security and Emerging Technology｜数据中心成本高且不受欢迎：或成美国中期选举转折点｜https://cset.georgetown.edu/article/data-centers-are-expensive-unpopular-and-could-be-a-tipping-point-in-the-midterms/</p>
-<p class="bullet">- [P2] ORF America Technology Policy｜太阳能供应链多元化：成本与国际协调｜https://orfamerica.org/newresearch/solar-supply-chains-diversity-coordination</p>
-<p class="bullet">- [P2] European Centre for International Political Economy｜向硅谷征税，还是向法国征税？｜https://ecipe.org/insights/taxing-silicon-valley-or-taxing-france/</p>
-
-<h2>后续推进</h2>
-
-<p class="bullet">- 对P0/P1条目补充中文研判、页码级证据和可复用表述。</p>
+<main>
+<div class="brandbar"><span></span><span></span><span></span></div>
+<div class="page cover pagebreak">
+<p class="cover-kicker">Global Tech Think Tank Watch</p>
+<h1>国际科技智库周报</h1>
+<div class="issue-meta"><span>2026-07-06</span><span>新增 73 条</span><span>P0/P1 重点 66 条</span><span>覆盖机构 20 家</span></div>
+<section class="situation avoid-break"><h2>本周态势</h2><p>本周形成 66 条 P0/P1 重点，议题集中在AI、数字基础设施与技术治理、涉华科技竞争与上海参考。产业链、制造与能源信号 14 条；AI 与数字基础设施信号 41 条；直接涉华条目 14 条。</p></section>
+<section class="top-reads"><h2>本周必读</h2><ol>
+<li><span><span class="judgment"><a href="https://www.rand.org/pubs/research_reports/RRA3892-2.html">该报告比较AI智能体和人类在进攻性网络任务中的表现，结论是AI智能体已经降低网络攻击门槛，使非专业人员更容易完成侦察、漏洞利用和攻击链组织。</a></span><span class="meta">RAND · P0 · 算力、数据与AI规则组合信号</span></span></li>
+<li><span><span class="judgment"><a href="https://www.aspistrategist.org.au/chinas-military-ai-logistics-peacetime-gains-wartime-vulnerabilities/">其核心判断是，智能化调度、仓储、运输和保障体系可提升平时效率，但在台海和印太高强度作战中，数据依赖、网络暴露面、模型可靠性和战场干扰会转化为新的脆弱性。</a></span><span class="meta">Australian Strategic Policy Institute · P0 · 直接涉及中国/上海研判口径</span></span></li>
+<li><span><span class="judgment"><a href="https://www.atlanticcouncil.org/in-depth-research-reports/report/balancing-openness-and-control-cross-border-health-data-and-ai-governance-in-china/">报告聚焦中国医疗健康数据、跨境流动与AI治理之间的张力，强调健康数据既是AI训练和产业竞争资源，也是国家安全、隐私保护和国际合作中的敏感资产。</a></span><span class="meta">Atlantic Council GeoTech Center and Cyber Statecraft Initiative · P0 · 直接涉及中国/上海研判口径</span></span></li>
+<li><span><span class="judgment"><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy">该章节集中刻画 AI 的经济足迹：2025 年全球企业 AI 投资翻倍，私人投资增长最快，生成式 AI 吸收近半数私人 AI 资金；美国私人 AI 投资仍显著领先中国和欧洲，但中国政府引导基金可能使公开口径低估其总投入。</a></span><span class="meta">Stanford Institute for Human-Centered Artificial Intelligence · P0 · 算力、数据与AI规则组合信号</span></span></li>
+<li><span><span class="judgment"><a href="https://orfamerica.org/newresearch/recasting-eu-global-south-energy-cooperation-mutually-beneficial-clean-trade-and-investment-partnerships">其核心判断是，欧盟若希望将气候目标、产业竞争力与对外经济合作结合起来，必须把伙伴国的产业升级和技术能力建设纳入设计，否则清洁合作容易被理解为新的贸易合规负担。</a></span><span class="meta">ORF America Technology Policy · P0 · 产业链、制造与关键技术竞争的核心证据</span></span></li>
+</ol></section>
+</div>
+<div class="page pagebreak">
+<section class="viewpoints"><h2>议题观点速览</h2>
+<div class="chapter">
+<h3>AI、数字基础设施与技术治理（4 条）</h3><ul>
+<li><b>RAND</b>：该报告比较AI智能体和人类在进攻性网络任务中的表现，结论是AI智能体已经降低网络攻击门槛，使非专业人员更容易完成侦察、漏洞利用和攻击链组织。</li>
+<li><b>Stanford Institute for Human-Centered Artificial Intelligence</b>：该章节集中刻画 AI 的经济足迹：2025 年全球企业 AI 投资翻倍，私人投资增长最快，生成式 AI 吸收近半数私人 AI 资金；美国私人 AI 投资仍显著领先中国和欧洲，但中国政府引导基金...</li>
+<li><b>RAND</b>：该报告基于德国、荷兰、法国高级官员参与的AI网络危机桌面推演，指出政府在危机阈值、模型风险评估、开源权重滥用、关键基础设施防护和盟友协作方面存在制度短板。</li>
+<li><b>Information Technology and Innovation Foundation</b>：该文讨论对抗性AI蒸馏可能削弱美国前沿模型优势的问题，即竞争者通过调用、微调或蒸馏方式复制高能力模型能力。</li>
+</ul></div>
+<div class="chapter">
+<h3>涉华科技竞争与上海参考（4 条）</h3><ul>
+<li><b>Australian Strategic Policy Institute</b>：其核心判断是，智能化调度、仓储、运输和保障体系可提升平时效率，但在台海和印太高强度作战中，数据依赖、网络暴露面、模型可靠性和战场干扰会转化为新的脆弱性。</li>
+<li><b>Atlantic Council GeoTech Center and Cyber Statecraft Initiative</b>：报告聚焦中国医疗健康数据、跨境流动与AI治理之间的张力，强调健康数据既是AI训练和产业竞争资源，也是国家安全、隐私保护和国际合作中的敏感资产。</li>
+<li><b>Brookings Center for Technology Innovation</b>：该材料来自 Brookings《The Beijing Brief》特别节目，围绕联合国日内瓦AI、安全与伦理会议期间的美中AI安全对话展开。</li>
+<li><b>Bruegel</b>：文章指出，美中AI竞争已经从先进芯片本身延伸到“硬件-软件-开发者生态”的完整技术栈。</li>
+</ul></div>
+<div class="chapter">
+<h3>产业链、制造与能源基础设施（4 条）</h3><ul>
+<li><b>ORF America Technology Policy</b>：其核心判断是，欧盟若希望将气候目标、产业竞争力与对外经济合作结合起来，必须把伙伴国的产业升级和技术能力建设纳入设计，否则清洁合作容易被理解为新的贸易合规负担。</li>
+<li><b>RAND</b>：该报告对加州零温室气体排放电网情景下相关技术的成本和成熟度进行技术经济分析，聚焦氢能在电力系统脱碳中的潜在作用。</li>
+<li><b>Information Technology and Innovation Foundation</b>：该报告评估美国以国家安全为由对半导体进口加征232关税的经济后果。</li>
+<li><b>Center for Strategic and International Studies</b>：该文讨论AI数据中心扩张对高带宽内存、DRAM和先进封装能力的挤压效应。</li>
+</ul></div>
+<div class="chapter">
+<h3>科研体系、人才与创新政策（4 条）</h3><ul>
+<li><b>Stanford Institute for Human-Centered Artificial Intelligence</b>：该行业报告指出，大语言模型已经从研究实验室进入企业工具、教育辅导、医疗助手和企业智能体等日常基础设施，但现有开发框架仍过度依赖技术性能指标，难以判断系统是否真正服务用户与组织。</li>
+<li><b>Science and Technology Policy Institute Korea</b>：报告讨论韩国在后2030全球科技创新议程中的定位转变，主张从国际议程跟随者转向议程领导者，并提出议程设置框架。</li>
+<li><b>RAND</b>：该文件综合 RAND Europe 为 Wellcome 开展的公众科学信任研究，概括信任和科学可信度的主要发现。</li>
+<li><b>RAND</b>：该报告关注社交媒体环境中的科学可信度，属于公众科学信任研究的专题成果。</li>
+</ul></div>
+</section>
+<section class="toc"><h2>本期目录</h2><ul>
+<li><span class="pri">P0</span><a href="#topic-01">主题 01｜AI智能体让新手具备进攻性网络能力</a></li>
+<li><span class="pri">P0</span><a href="#topic-02">主题 02｜中国军事AI后勤：和平收益与战时脆弱性</a></li>
+<li><span class="pri">P0</span><a href="#topic-03">主题 03｜开放与控制的平衡：中国跨境健康数据与AI治理</a></li>
+<li><span class="pri">P0</span><a href="#topic-04">主题 04｜日内瓦来信：AI、安全与美中对话</a></li>
+<li><span class="pri">P0</span><a href="#topic-05">主题 05｜2026年AI指数报告经济篇</a></li>
+<li><span class="pri">P0</span><a href="#topic-06">主题 06｜欧洲AI安全与网络滥用桌面推演洞察</a></li>
+<li><span class="pri">P0</span><a href="#topic-07">主题 07｜技术栈之争：美中AI竞争正超越芯片</a></li>
+<li><span class="pri">P0</span><a href="#topic-08">主题 08｜DeepSeek招聘信号显示其布局网络安全AI智能体</a></li>
+<li><span class="pri">P0</span><a href="#topic-09">主题 09｜布鲁塞尔推动下欧洲开始警惕中国技术</a></li>
+<li><span class="pri">P0</span><a href="#topic-10">主题 10｜爱尔兰：多重因素塑造对华科技创新立场</a></li>
+<li><span class="pri">P0</span><a href="#topic-11">主题 11｜北美堡垒：墨西哥在保障区域经济未来中的作用</a></li>
+<li><span class="pri">P0</span><a href="#topic-12">主题 12｜碎片化欧洲如何应对中国科技创新力量</a></li>
+<li><span class="pri">P0</span><a href="#topic-13">主题 13｜绿色基础设施投资能在多大程度上缓解中国清洁能源产能过剩？</a></li>
+<li><span class="pri">P0</span><a href="#topic-14">主题 14｜重塑欧盟与全球南方能源合作：互利型清洁贸易与投资伙伴关系</a></li>
+<li><span class="pri">P0</span><a href="#topic-15">主题 15｜评估氢能在加州电力系统脱碳中的作用</a></li>
+<li><span class="pri">P0</span><a href="#topic-16">主题 16｜美国需要应对对抗性AI蒸馏的战略回应</a></li>
+<li><span class="pri">P0</span><a href="#topic-17">主题 17｜半导体进口232关税的经济后果</a></li>
+<li><span class="pri">P0</span><a href="#topic-18">主题 18｜中国AI模型需要关注什么</a></li>
+<li><span class="pri">P0</span><a href="#topic-19">主题 19｜无人监管的AI风险：市场把关</a></li>
+<li><span class="pri">P1</span><a href="#topic-20">主题 20｜AI异常行为举报机制正在成形</a></li>
+<li><span class="pri">P1</span><a href="#topic-21">主题 21｜特朗普政府AI管制为中国缩小差距打开窗口</a></li>
+<li><span class="pri">P1</span><a href="#topic-22">主题 22｜廉价AI成为秘密武器</a></li>
+<li><span class="pri">P1</span><a href="#topic-23">主题 23｜碎片化欧洲应对中国科技创新力量执行摘要</a></li>
+<li><span class="pri">P1</span><a href="#topic-24">主题 24｜闭合反馈回路：改善士兵、初创企业与战略之间的创新反馈</a></li>
+<li><span class="pri">P1</span><a href="#topic-25">主题 25｜中国生物医药竞争力上升要求美国回应</a></li>
+<li><span class="pri">P1</span><a href="#topic-26">主题 26｜AI价值杠杆：创新导向战略如何让企业与劳动者获得更高收益</a></li>
+<li><span class="pri">P1</span><a href="#topic-27">主题 27｜AI存在内存瓶颈</a></li>
+<li><span class="pri">P1</span><a href="#topic-28">主题 28｜云服务被纳入DMA：欧盟对AWS与Azure的模糊打击</a></li>
+<li><span class="pri">P1</span><a href="#topic-29">主题 29｜让公共算力服务应用型AI初创企业</a></li>
+<li><span class="pri">P1</span><a href="#topic-30">主题 30｜僵化的太空频谱配置可能限制生产率</a></li>
+<li><span class="pri">P1</span><a href="#topic-31">主题 31｜签证障碍正在削弱美国工业竞争力</a></li>
+<li><span class="pri">P1</span><a href="#topic-32">主题 32｜更强工业自立能力可提升澳大利亚威慑战略可信度</a></li>
+<li><span class="pri">P1</span><a href="#topic-33">主题 33｜以人为本的大语言模型</a></li>
+<li><span class="pri">P1</span><a href="#topic-34">主题 34｜从议程跟随到议程领导：后2030全球STI议程战略（第二年）与议程设置框架</a></li>
+<li><span class="pri">P1</span><a href="#topic-35">主题 35｜AI竞赛中的格林斯潘教训</a></li>
+<li><span class="pri">P1</span><a href="#topic-36">主题 36｜欧洲清洁工业未来的大战略</a></li>
+<li><span class="pri">P1</span><a href="#topic-37">主题 37｜生成式AI聊天机器人使用方式的网络流量证据</a></li>
+<li><span class="pri">P1</span><a href="#topic-38">主题 38｜电池地缘政治：在储能竞赛中平衡产业力量</a></li>
+<li><span class="pri">P1</span><a href="#topic-39">主题 39｜2026年AI指数报告</a></li>
+<li><span class="pri">P1</span><a href="#topic-40">主题 40｜公众科学信任之信任与科学可信度总体发现</a></li>
+<li><span class="pri">P1</span><a href="#topic-41">主题 41｜公众科学信任之社交媒体中的科学可信度</a></li>
+<li><span class="pri">P1</span><a href="#topic-42">主题 42｜补上远程访问管制闭环</a></li>
+<li><span class="pri">P1</span><a href="#topic-43">主题 43｜正在输掉未来战争</a></li>
+<li><span class="pri">P1</span><a href="#topic-44">主题 44｜英国防务领域的私人资本</a></li>
+<li><span class="pri">P1</span><a href="#topic-45">主题 45｜隐蔽的安全挑战：应对电网容量约束及其对军事设施的影响</a></li>
+<li><span class="pri">P1</span><a href="#topic-46">主题 46｜Aspire to STEM项目评估报告</a></li>
+<li><span class="pri">P1</span><a href="#topic-47">主题 47｜公众科学信任之研究格局映射</a></li>
+<li><span class="pri">P1</span><a href="#topic-48">主题 48｜美国核酸筛查政策的演变</a></li>
+<li><span class="pri">P1</span><a href="#topic-49">主题 49｜欧洲版权环境意见：保留文本与数据挖掘例外以支撑AI创新</a></li>
+<li><span class="pri">P1</span><a href="#topic-50">主题 50｜轨道数据中心可行性缺口及其治理风险</a></li>
+<li><span class="pri">P1</span><a href="#topic-51">主题 51｜G7应接受AI标准提议但强化可执行性</a></li>
+<li><span class="pri">P1</span><a href="#topic-52">主题 52｜平台把关前置监管：AI与事前竞争规制的边界</a></li>
+<li><span class="pri">P1</span><a href="#topic-53">主题 53｜AI风险生态学</a></li>
+<li><span class="pri">P1</span><a href="#topic-54">主题 54｜欧盟与英国前沿AI延迟问题</a></li>
+<li><span class="pri">P1</span><a href="#topic-55">主题 55｜治理AI越狱事件</a></li>
+<li><span class="pri">P1</span><a href="#topic-56">主题 56｜供应链、能源与AI交汇：评估AI能源供应链脆弱性</a></li>
+<li><span class="pri">P1</span><a href="#topic-57">主题 57｜评估AI赋能计算机蠕虫风险</a></li>
+<li><span class="pri">P1</span><a href="#topic-58">主题 58｜青少年转向聊天机器人寻求心理健康帮助：需要安全规则</a></li>
+<li><span class="pri">P1</span><a href="#topic-59">主题 59｜特朗普政府限制Anthropic新模型出口削弱美国AI出海战略</a></li>
+<li><span class="pri">P1</span><a href="#topic-60">主题 60｜新证据反驳AI正在摧毁就业的说法</a></li>
+<li><span class="pri">P1</span><a href="#topic-61">主题 61｜GUARD法案未能有效保护未成年人AI陪伴应用利益</a></li>
+<li><span class="pri">P1</span><a href="#topic-62">主题 62｜核酸合成筛查不对称性叠加：强化全球生物安全治理的政策路径</a></li>
+<li><span class="pri">P1</span><a href="#topic-63">主题 63｜美国联邦AI政策从治理走向执行</a></li>
+<li><span class="pri">P1</span><a href="#topic-64">主题 64｜LLM智能体能否选择并调用生物工具：初步生物安全评估</a></li>
+<li><span class="pri">P1</span><a href="#topic-65">主题 65｜2026年CEO对话观点：AI与产业领导力</a></li>
+<li><span class="pri">P1</span><a href="#topic-66">主题 66｜超越政府监管工具箱：企业与社会组织缓释变革性AI风险</a></li>
+</ul></section></div>
+<div class="page comic-lead pagebreak"><h2>漫画导读</h2>
+<figure><img src="../../../comic/weekly-tech-watch-v7/pages/01-page-export-control-chain.png" alt="漫画导读1"></figure>
+<p class="note">读图说明1：锚定报告：NBR《中国出口管制图谱》。关键判断：出口管制正在制度化为经济安全工具，并通过关键矿产、材料加工设备和下游行业传导为供应链压力。</p>
+</div>
+<section class="topic-card avoid-break" id="topic-01">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 01 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA3892-2.html">AI智能体让新手具备进攻性网络能力</a></h3>
+<p class="meta">RAND｜AI治理, 国防AI, 数字经济, 科技创新｜2026-06-25</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告比较AI智能体和人类在进攻性网络任务中的表现，结论是AI智能体已经降低网络攻击门槛，使非专业人员更容易完成侦察、漏洞利用和攻击链组织。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对中国和上海网络安全治理的意义在于，AI安全议题需要同网络攻防、关键基础设施防护、企业红队测试和模型工具调用权限联动。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-02">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 02 / 66</span>
+</div>
+<h3><a href="https://www.aspistrategist.org.au/chinas-military-ai-logistics-peacetime-gains-wartime-vulnerabilities/">中国军事AI后勤：和平收益与战时脆弱性</a></h3>
+<p class="meta">Australian Strategic Policy Institute｜中国与上海相关, AI治理, 国防AI｜2026-07-02</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>其核心判断是，智能化调度、仓储、运输和保障体系可提升平时效率，但在台海和印太高强度作战中，数据依赖、网络暴露面、模型可靠性和战场干扰会转化为新的脆弱性。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>该文分析中国军队将AI嵌入后勤体系的战略含义。</li>
+<li>对后续跟踪而言，军民两用物流、智能供应链和网络安全能力将更频繁进入国防科技竞争视野。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-03">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 03 / 66</span>
+</div>
+<h3><a href="https://www.atlanticcouncil.org/in-depth-research-reports/report/balancing-openness-and-control-cross-border-health-data-and-ai-governance-in-china/">开放与控制的平衡：中国跨境健康数据与AI治理</a></h3>
+<p class="meta">Atlantic Council GeoTech Center and Cyber Statecraft Initiative｜AI治理, 中国与上海相关, 国防AI｜2026-06-23</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>报告聚焦中国医疗健康数据、跨境流动与AI治理之间的张力，强调健康数据既是AI训练和产业竞争资源，也是国家安全、隐私保护和国际合作中的敏感资产。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其价值在于把AI治理问题从模型监管推进到数据要素、公共卫生、产业政策和跨境合规的交叉地带。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-04">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 04 / 66</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/from-geneva-ai-security-and-us-china-dialogue/">日内瓦来信：AI、安全与美中对话</a></h3>
+<p class="meta">Brookings Center for Technology Innovation｜AI治理, 中国与上海相关, 数字经济｜2026-07-01</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料来自 Brookings《The Beijing Brief》特别节目，围绕联合国日内瓦AI、安全与伦理会议期间的美中AI安全对话展开。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>讨论重点包括战略竞争背景下保持技术安全沟通渠道、Track II对话的延续价值、政府层面接触恢复的可能性，以及AI安全议题如何进入美中关系管理。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>后续应关注美中AI安全对话是否形成更稳定的议程、标准或风险通报机制，以及这些议程对国内AI治理、国际合作和城市级AI应用治理的外溢影响。</div>
+<div class="box reference"><h4>中国 / 上海参考</h4>对中国和上海相关研判的价值在于：美国政策界正在把AI安全从产业竞争议题提升为危机沟通和国际规则议题。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-05">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 05 / 66</span>
+</div>
+<h3><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy">2026年AI指数报告经济篇</a></h3>
+<p class="meta">Stanford Institute for Human-Centered Artificial Intelligence｜AI治理, 科技人才, 数字经济｜2026-06-29</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该章节集中刻画 AI 的经济足迹：2025 年全球企业 AI 投资翻倍，私人投资增长最快，生成式 AI 吸收近半数私人 AI 资金；美国私人 AI 投资仍显著领先中国和欧洲，但中国政府引导基金可能使公开口径低估其总投入。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>材料同时跟踪 AI 企业收入、算力成本、云厂商资本开支、组织采用率、劳动力冲击、生产率提升和工业机器人安装情况。</li>
+<li>对后续研判而言，AI 竞争已经从模型能力扩展到资金、算力基础设施、企业采用和机器人产业化，适合作为创新体系和数字经济监测指标，而不宜只归入 AI 治理观察。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-06">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 06 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA5082-1.html">欧洲AI安全与网络滥用桌面推演洞察</a></h3>
+<p class="meta">RAND｜AI治理, 数字经济, 科技创新｜2026-07-01</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告基于德国、荷兰、法国高级官员参与的AI网络危机桌面推演，指出政府在危机阈值、模型风险评估、开源权重滥用、关键基础设施防护和盟友协作方面存在制度短板。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对上海和中国科技治理的参考价值在于：AI安全治理不能停留在原则文件，应提前建立跨部门情景推演、独立技术评估和危机沟通机制。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-07">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 07 / 66</span>
+</div>
+<h3><a href="https://www.bruegel.org/analysis/stack-battles-us-china-artificial-intelligence-rivalry-moving-beyond-chips-alone">技术栈之争：美中AI竞争正超越芯片</a></h3>
+<p class="meta">Bruegel｜AI治理, 科技治理, 半导体, 中国与上海相关, 数字经济｜2026-06-24</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>文章指出，美中AI竞争已经从先进芯片本身延伸到“硬件-软件-开发者生态”的完整技术栈。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>英伟达的优势不只来自GPU性能，也来自CUDA形成的开发者网络效应、优化库积累和高切换成本。</li>
+<li>华为则试图用CANN、MindSpore、torch_npu以及与DeepSeek等模型生态的兼容，降低开发者从英伟达生态迁移到昇腾体系的成本。</li>
+</ul></div>
+<div class="twin">
+<div class="box reference"><h4>中国 / 上海参考</h4>对中国与上海相关研判的意义在于：AI算力竞争的关键不只是芯片供给，还包括软件栈、开发工具、开源模型、云服务、应用场景和开发者社区能否形成闭环。 上海如果推进智能算力、模型生态和行业AI应用，应把国产硬件适配、框架迁移、模型部署工具链和开发者生态作为同一套产业政策问题处理。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-08">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 08 / 66</span>
+</div>
+<h3><a href="https://www.aspistrategist.org.au/deepseek-plans-to-build-an-ai-agent-with-cybersecurity-capabilities/">DeepSeek招聘信号显示其布局网络安全AI智能体</a></h3>
+<p class="meta">Australian Strategic Policy Institute｜AI治理, 中国与上海相关, 数字经济｜2026-07-02</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文从DeepSeek招聘信息切入，判断其正在布局具备代码漏洞发现和网络安全能力的智能体模型。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>值得关注的不是单一模型性能，而是中国开源/低成本AI路线与网络攻防能力结合后的扩散效应。</li>
+<li>该条目应纳入AI安全、网络安全治理和中国AI产业能力三条线索持续观察。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-09">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 09 / 66</span>
+</div>
+<h3><a href="https://merics.org/en/report/eu-shepherded-brussels-europe-awakens-chinese-technology">布鲁塞尔推动下欧洲开始警惕中国技术</a></h3>
+<p class="meta">MERICS Industrial Policy and Technology｜中国与上海相关, 科技创新｜2026-06-30</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>MERICS 将欧盟对华技术政策概括为从开放合作转向经济安全和去风险实施。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>文章聚焦中国技术进入欧洲后的三类压力：成熟制程芯片可能改变欧洲芯片进口结构，电动汽车与电池产业使欧洲在市场准入和技术转移之间摇摆，太阳能逆变器等能源基础设施则暴露网络安全和供应链信任问题。</li>
+</ul></div>
+<div class="twin">
+<div class="box reference"><h4>中国 / 上海参考</h4>对上海相关研究而言，可用于比较欧洲对中国新能源、半导体、数字基础设施和关键供应商的风险评估框架，也可反向提示上海企业出海欧洲时面临的技术安全审查、采购非价格标准、数据与网络安全合规等政策约束。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-10">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 10 / 66</span>
+</div>
+<h3><a href="https://merics.org/en/report/ireland-interlocking-factors-shape-approach-china-science-tech-innovation">爱尔兰：多重因素塑造对华科技创新立场</a></h3>
+<p class="meta">MERICS Industrial Policy and Technology｜中国与上海相关, 科技创新｜2026-06-30</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该章节分析爱尔兰对华科技创新合作立场，指出其开放型、外资驱动经济模式是核心基础，同时又受到安全、竞争力、产业政策和欧盟对华政策调整的共同影响。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>爱尔兰在医药、药品研发、对华直接投资等领域与中国保持合作，但政府战略正在更多纳入科技安全和经济竞争因素。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>对上海而言，该材料可用于观察欧洲国家在生命科学、跨国企业研发、外资产业链和科技安全之间的政策平衡，也可作为国际科技合作分类管理和国别差异研判的参考。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-11">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 11 / 66</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/fortress-north-america-mexicos-role-securing-regions-economic-future">北美堡垒：墨西哥在保障区域经济未来中的作用</a></h3>
+<p class="meta">Center for Strategic and International Studies｜中国与上海相关, 先进制造｜2026-07-01</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>报告认为墨西哥既是美国制造业枢纽，又高度依赖中国投入品，2024 年自中国进口与对华出口约为 14:1，投资审查、出口管制和供应链风险管理能力不足。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>报告将经济安全界定为北美贸易政策的新组织原则，主张在 2026 年 USMCA 审查中把关键技术、数据、供应链和战略基础设施纳入区域安全框架。</li>
+<li>报告建议设立 USMCA 经济安全委员会、区域依赖图谱、墨西哥国家经济安全法和北美能力基金，并把半导体、电池、电信、AI、化学品列为协同监管关键部门。</li>
+<li>对上海的观察意义在于：北美正在把产业链重组、关键技术准入和区域制度能力结合起来，可能影响中国企业对美墨加供应链布局。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-12">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 12 / 66</span>
+</div>
+<h3><a href="https://merics.org/en/report/fragmented-europe-dealing-china-technology-and-innovation-power">碎片化欧洲如何应对中国科技创新力量</a></h3>
+<p class="meta">MERICS Industrial Policy and Technology｜中国与上海相关, 科技创新｜2026-06-30</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告以欧洲多国章节比较中国作为科技创新力量带来的合作、竞争与风险，指出欧洲对华科技政策呈现分散化和不均衡去风险。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对上海相关研判的价值在于：欧洲科技合作环境正在细分，不同国家、行业和研究领域的开放度差异会影响国际合作布局。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-13">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 13 / 66</span>
+</div>
+<h3><a href="https://www.bruegel.org/working-paper/what-extent-can-green-infrastructure-investment-mitigate-chinas-clean-energy">绿色基础设施投资能在多大程度上缓解中国清洁能源产能过剩？</a></h3>
+<p class="meta">Bruegel｜中国与上海相关, 先进制造｜2026-06-29</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>论文认为，中国产业政策推动太阳能、风电等可再生技术制造全球领先，但也形成严重产能过剩并压缩行业利润。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>作者通过情景分析评估电网等电力基础设施扩张的需求拉动作用，认为加大电力基础设施投资可在短期减少弃电、释放清洁能源需求并缓解制造端压力，但要恢复长期均衡仍需供给侧整合。</li>
+<li>该文对上海关注先进制造和绿色产业的意义在于：清洁技术竞争不仅取决于制造能力，也取决于电网、消纳、投资节奏和产业整合能力。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-14">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 14 / 66</span>
+</div>
+<h3><a href="https://orfamerica.org/newresearch/recasting-eu-global-south-energy-cooperation-mutually-beneficial-clean-trade-and-investment-partnerships">重塑欧盟与全球南方能源合作：互利型清洁贸易与投资伙伴关系</a></h3>
+<p class="meta">ORF America Technology Policy｜先进制造, 科技创新｜2026-06-29</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>其核心判断是，欧盟若希望将气候目标、产业竞争力与对外经济合作结合起来，必须把伙伴国的产业升级和技术能力建设纳入设计，否则清洁合作容易被理解为新的贸易合规负担。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>报告围绕欧盟清洁贸易与投资伙伴关系（CTIPs）框架，评估其能否从碳边境调节机制和全球门户等政策工具延伸为支持全球南方绿色工业化、技术合作、本地价值创造与气候融资的制度安排。</li>
+<li>对上海的启示在于，绿色低碳产业合作应同时关注技术转移、标准协同、金融动员和本地供应链嵌入。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-15">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 15 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/external_publications/EP71392.html">评估氢能在加州电力系统脱碳中的作用</a></h3>
+<p class="meta">RAND｜先进制造, 科技创新｜2026-06-29</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告对加州零温室气体排放电网情景下相关技术的成本和成熟度进行技术经济分析，聚焦氢能在电力系统脱碳中的潜在作用。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对上海能源科技与新型电力系统研究的价值在于，氢能不应仅作为产业项目看待，还应放入电网灵活性、可再生能源消纳、成本曲线和技术成熟度评估框架中。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-16">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 16 / 66</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/06/26/the-united-states-needs-a-strategic-response-to-adversarial-ai-distillation/">美国需要应对对抗性AI蒸馏的战略回应</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜AI治理, 科技创新｜2026-06-26</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文讨论对抗性AI蒸馏可能削弱美国前沿模型优势的问题，即竞争者通过调用、微调或蒸馏方式复制高能力模型能力。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其政策含义在于，AI竞争不只涉及芯片和模型发布管制，还涉及API访问、模型输出监测、服务条款、能力扩散和安全评估。</li>
+<li>对中国与上海相关研判而言，该条目可用于观察美国如何把模型能力扩散纳入技术安全政策。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-17">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 17 / 66</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/06/24/economic-consequences-of-section-232-tariffs-on-semiconductor-imports/">半导体进口232关税的经济后果</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜半导体, 科技治理｜2026-06-24</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告评估美国以国家安全为由对半导体进口加征232关税的经济后果。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>ITIF认为，半导体是ICT产品和数字基础设施的关键投入品，关税会推高ICT价格、压低ICT消费和资本存量，从而削弱经济增长和生活水平。</li>
+<li>报告估算，如果25%的半导体关税维持十年，美国GDP累计损失可能达到1.6万亿美元。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>对上海和中国相关产业政策研判而言，该文可作为反向参照：半导体政策不能只看上游产能安全，也要核算对装备、软件、云服务、制造业数字化和创新资本形成的系统成本。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-18">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 18 / 66</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/what-know-about-chinese-ai-models">中国AI模型需要关注什么</a></h3>
+<p class="meta">Center for Strategic and International Studies｜AI治理, 中国与上海相关｜2026-07-02</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文梳理中国AI模型能力、成本结构、开放权重策略和政策环境，判断中国模型正在快速缩小与美国前沿系统的差距。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对后续跟踪而言，应重点观察中国模型在低成本部署、行业应用、国际扩散和治理标准竞争中的外溢影响。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-19">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 19 / 66</span>
+</div>
+<h3><a href="https://ecipe.org/insights/ai-risk-nobody-is-regulating/">无人监管的AI风险：市场把关</a></h3>
+<p class="meta">European Centre for International Political Economy｜AI治理, 科技治理｜2026-06-29</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文强调一种容易被忽视的AI风险：市场把关结构可能通过平台控制、标准设定、数据访问和分发权力影响AI创新与公共利益。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其贡献在于把AI风险治理从模型失控、偏见和安全事件扩展到市场结构和竞争秩序层面。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-20">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 20 / 66</span>
+</div>
+<h3><a href="https://cset.georgetown.edu/article/you-can-now-sound-the-alarm-on-ai-behaving-badly/">AI异常行为举报机制正在成形</a></h3>
+<p class="meta">Center for Security and Emerging Technology｜AI治理, 科技创新｜2026-07-01</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文关注AI系统异常行为、风险事件和外部举报机制，反映美国AI治理从原则讨论进入制度化风险报告阶段。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其政策含义在于，模型开发者、用户、研究者和监管机构之间的信息通道正在成为AI安全治理的重要基础设施。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-21">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 21 / 66</span>
+</div>
+<h3><a href="https://cset.georgetown.edu/article/trump-administrations-ai-crackdown-opens-door-for-china-to-close-gap/">特朗普政府AI管制为中国缩小差距打开窗口</a></h3>
+<p class="meta">Center for Security and Emerging Technology｜中国与上海相关, 科技创新｜2026-06-30</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>文章认为，美国对AI扩散和芯片出口的高强度限制若缺乏盟友协调与产业执行能力，可能促使中国通过替代供应、人才和模型生态追赶。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>研判价值在于观察美国技术管制的反作用：治理工具本身可能改变竞争节奏，并为上海理解全球AI产业链调整提供线索。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-22">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 22 / 66</span>
+</div>
+<h3><a href="https://cset.georgetown.edu/article/when-cheap-ai-becomes-a-secret-weapon/">廉价AI成为秘密武器</a></h3>
+<p class="meta">Center for Security and Emerging Technology｜AI治理, 科技创新｜2026-06-30</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文讨论低成本AI能力扩散带来的战略影响。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>核心关注点是，当模型推理成本、部署门槛和应用开发成本下降后，中小组织、地方政府、企业乃至非国家行为体都可能获得过去只属于头部机构的分析、自动化和网络能力。</li>
+<li>该趋势会改变科技治理和安全治理的风险边界。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-23">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 23 / 66</span>
+</div>
+<h3><a href="https://merics.org/en/report/executive-summary-fragmented-europe-dealing-china-technology-and-innovation-power">碎片化欧洲应对中国科技创新力量执行摘要</a></h3>
+<p class="meta">MERICS Industrial Policy and Technology｜中国与上海相关, 科技创新｜2026-06-30</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>执行摘要概括欧洲面对中国科技创新力量时的分散状态：欧盟强调去风险，但成员国在科研合作、产业利益、技术安全和对华政策上执行不一。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>该摘要适合作为快速判断欧洲对华科技政策分化的入口。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-24">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 24 / 66</span>
+</div>
+<h3><a href="https://www.belfercenter.org/research-analysis/closing-loop-improving-innovation-feedback-between-soldiers-startups-and-strategy">闭合反馈回路：改善士兵、初创企业与战略之间的创新反馈</a></h3>
+<p class="meta">Harvard Belfer Center Science, Technology, and Public Policy｜科技创新, 科技治理｜2026-06-29</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告以美军第173空降旅小型无人机系统应用为案例，讨论军方采购、初创企业技术供给、前线使用反馈和战略需求之间的错位。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>作者认为，陆军把尚需迭代的问题当作成熟产品规模化问题处理，导致用户反馈被层级稀释、训练和战术运用脱节、互操作标准没有落地、审批架构过度避险，最终削弱战术单元对无人机等新兴技术的吸收能力。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>对科技创新发展研究的价值在于，该报告把“技术突破”还原为一个完整的创新反馈系统：真实用户、场景测试、标准、采购、法务、供应链和规模化需求必须闭环。 对上海和长三角的启示在于，未来产业和硬科技转化不能只看企业产能，也应建立面向真实应用场景的迭代验证、中试标准和需求反馈机制。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-25">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 25 / 66</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/06/29/chinas-burgeoning-biopharmaceutical-competitiveness-demands-us-response/">中国生物医药竞争力上升要求美国回应</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜中国与上海相关, 科技创新｜2026-06-29</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告将中国生物医药能力上升视为美国生命科学竞争力面临的新压力。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>报告从科学论文、专利、研发投入、临床试验和新药上市等维度判断中国正在快速追赶，并认为如果趋势延续，中国可能在十年内接近或实现若干领域的领先目标。</li>
+<li>ITIF由此主张美国应强化支持私营部门生命科学创新的制度环境。</li>
+</ul></div>
+<div class="twin">
+<div class="box reference"><h4>中国 / 上海参考</h4>对上海而言，张江和全市生物医药政策可借此比较“科研产出—临床转化—企业创新—全球监管进入”的链条缺口。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-26">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 26 / 66</span>
+</div>
+<h3><a href="https://www.belfercenter.org/research-analysis/ai-value-levers-how-innovation-focused-strategies-outperform-firms-and-workers">AI价值杠杆：创新导向战略如何让企业与劳动者获得更高收益</a></h3>
+<p class="meta">Harvard Belfer Center Science, Technology, and Public Policy｜AI治理, 科技创新｜2026-06-25</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文关注企业如何使用生成式AI创造价值。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>作者区分了多种AI价值杠杆，指出企业若过度把AI用于减少劳动投入和压低成本，容易低估技术的创新潜力；相较之下，把AI用于新产品、新服务、流程重构和劳动者能力增强，可能产生更高的企业回报，并降低对就业和组织能力的冲击。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>对上海企业数字化转型和AI产业应用而言，政策设计不宜只追求自动化率，应更加关注AI如何促进研发效率、产品创新、服务模式创新和劳动者技能升级。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-27">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 27 / 66</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/ai-has-memory-problem">AI存在内存瓶颈</a></h3>
+<p class="meta">Center for Strategic and International Studies｜半导体, AI治理, 科技创新, 数字经济｜2026-06-25</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文讨论AI数据中心扩张对高带宽内存、DRAM和先进封装能力的挤压效应。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>作者指出，政策讨论常把注意力集中在GPU等先进逻辑芯片，但AI系统同样依赖内存芯片完成数据移动、存储和处理；随着数据中心吸收更大比例的全球内存产能，内存供应可能成为AI部署和产业竞争力的新瓶颈。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>后续跟踪美国AI产业政策时，应把HBM、先进封装和数据中心需求纳入半导体政策观察框架。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-28">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 28 / 66</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/02/cloud-hidden-rationale-unknown-dma-foggy-attack-aws-azure/">云服务被纳入DMA：欧盟对AWS与Azure的模糊打击</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜数字经济, 科技治理｜2026-07-02</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>ITIF批评欧盟可能将AWS和Azure纳入《数字市场法》（DMA）监管范围，认为两者并不明显符合DMA关于“核心平台服务”和“守门人”的数量与实质标准。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>文章进一步指出，这种做法会强化欧盟数字监管针对美国科技平台的印象，并可能削弱云服务、企业软件和跨大西洋数字市场的创新活力。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>对上海和国内数字经济治理具有比较价值：对云、AI和平台型基础设施的监管若过度依赖静态分类，可能压低技术迭代、跨境服务和企业级数字化能力；更适合纳入数字基础设施治理和科技平台监管案例库。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-29">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 29 / 66</span>
+</div>
+<h3><a href="https://www.interface-eu.org/publications/public-compute-applied-ai-startups">让公共算力服务应用型AI初创企业</a></h3>
+<p class="meta">interface｜AI治理, 数字经济｜2026-07-01</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文讨论公共算力如何支持欧洲应用型AI初创企业。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>核心问题在于，公共算力资源若只服务科研或头部模型训练，难以转化为产业竞争力；若能面向应用企业提供可负担、可获得的算力，将改善欧洲AI创新生态。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-30">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 30 / 66</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/01/rigid-space-spectrum-allocations-could-limit-productivity/">僵化的太空频谱配置可能限制生产率</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜数字经济, 科技治理｜2026-07-01</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>ITIF认为，过度限定频谱用途会造成资源闲置，并以美国2.5GHz和5.9GHz频段的历史经验说明，监管机构若提前锁定单一用途，可能长期限制技术演进和市场再配置。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>文章将这一逻辑延伸到太空经济和月球活动相关频谱规则，主张FCC和国际电信联盟在制定空间频谱政策时保留更大的用途弹性。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>研判：该条目可作为“新兴基础设施治理需要保留技术不确定性空间”的案例。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-31">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 31 / 66</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/01/visa-barriers-are-undermining-us-industrial-competitiveness/">签证障碍正在削弱美国工业竞争力</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜先进制造, 科技创新｜2026-07-01</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>文章认为美国签证和入境政策阻碍制造业技术专家、科研人员和会议参与者流动，削弱先进制造中的隐性知识转移与国际创新协作。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对上海的参考在于：产业竞争力不仅来自补贴和硬件投资，也依赖跨境人才、工艺经验和科研交流的制度便利。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-32">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 32 / 66</span>
+</div>
+<h3><a href="https://www.aspistrategist.org.au/greater-industrial-self-reliance-can-make-australias-deterrence-strategy-more-credible/">更强工业自立能力可提升澳大利亚威慑战略可信度</a></h3>
+<p class="meta">Australian Strategic Policy Institute｜先进制造｜2026-07-03</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>文章讨论澳大利亚国防产业发展战略中“工业自立即威慑”的政策命题，强调国防工业基础通过支撑长期冲突中的生成、维持和补给能力提升威慑可信度。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其启示在于，产业基础本身并不自动形成战略能力，关键在于工业能力、采购体系、军队需求和国家防务战略之间能否形成可验证的能力链。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-33">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 33 / 66</span>
+</div>
+<h3><a href="https://hai.stanford.edu/industry/human-centered-large-language-models">以人为本的大语言模型</a></h3>
+<p class="meta">Stanford Institute for Human-Centered Artificial Intelligence｜科技创新｜2026-07-01</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该行业报告指出，大语言模型已经从研究实验室进入企业工具、教育辅导、医疗助手和企业智能体等日常基础设施，但现有开发框架仍过度依赖技术性能指标，难以判断系统是否真正服务用户与组织。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>报告将竞争优势的重心从模型能力转向人类体验、数据治理、真实工作流评估、人机协作、交互设计和长期风险监测。</li>
+<li>对科技创新支撑的意义在于，LLM 产业化的关键已经进入“应用价值、组织学习和可信部署”阶段，企业和公共部门需要把数据供应链、评估体系、用户体验和跨职能治理纳入创新基础设施。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-34">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 34 / 66</span>
+</div>
+<h3><a href="https://www.stepi.re.kr/site/stepien/ex/bbs/publicationView.do?pageIndex=1&amp;cbIdx=1303&amp;reIdx=140&amp;cateCont=A0509">从议程跟随到议程领导：后2030全球STI议程战略（第二年）与议程设置框架</a></h3>
+<p class="meta">Science and Technology Policy Institute Korea｜科技创新｜2026-06-30</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>报告讨论韩国在后2030全球科技创新议程中的定位转变，主张从国际议程跟随者转向议程领导者，并提出议程设置框架。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>材料适合用于观察中等科技强国如何通过规范形成、国际合作和全球南方议题提升科技政策影响力。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-35">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 35 / 66</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/greenspan-lesson-ai-race">AI竞赛中的格林斯潘教训</a></h3>
+<p class="meta">Center for Strategic and International Studies｜AI治理, 科技创新, 数字经济｜2026-06-24</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文借格林斯潘在上世纪90年代面对生产率统计滞后的货币政策判断，讨论美国在AI竞赛中可能遭遇的宏观政策误判。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>作者认为，AI基础设施需要长期、巨额、资本密集型投资，如果宏观统计无法及时捕捉AI带来的生产率跃迁，过紧的利率政策可能抑制数据中心、能源、电网、卫星和自动化工厂等战略基础设施投资。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>该文可作为观察美国“AI基础设施-金融政策-国家竞争力”联动讨论的材料。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-36">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 36 / 66</span>
+</div>
+<h3><a href="https://carnegieendowment.org/europe/research/2026/06/a-grand-strategy-for-europes-clean-industrial-future">欧洲清洁工业未来的大战略</a></h3>
+<p class="meta">Carnegie Technology and International Affairs Program｜先进制造, 科技创新｜2026-06-23</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>报告认为，欧洲清洁工业战略需要从宽泛的气候外交和自由贸易假设，转向更现实的产业安全与竞争力框架。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>欧洲在电网技术、风电、地热涡轮、部分核燃料和回收材料等领域具备优势，但在稀土、石墨、电池材料、太阳能、绿色铁和关键原材料加工环节存在明显脆弱性。</li>
+<li>作者建议欧盟围绕清洁技术产业链进行优先级排序，通过本地内容规则、产能爬坡补贴、战略采购、出口促进、伙伴国供应链孵化和科学外交，维护清洁技术工业基础。</li>
+</ul></div>
+<div class="twin">
+<div class="box reference"><h4>中国 / 上海参考</h4>对上海和长三角先进制造布局而言，可借鉴其“优势技术垂直领域优先”的思路：围绕电网装备、储能材料、绿色工业设备、关键材料回收和产业链安全，明确哪些环节应本地增强，哪些应通过友岸合作或国际科技合作补齐。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-37">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 37 / 66</span>
+</div>
+<h3><a href="https://oecd.ai/en/wonk/how-people-are-using-genai-chatbots-evidence-from-web-traffic-data">生成式AI聊天机器人使用方式的网络流量证据</a></h3>
+<p class="meta">OECD.AI Policy Observatory｜AI治理, 数字经济, 科技创新｜2026-06-30</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文利用网络流量数据观察公众如何使用生成式 AI 聊天机器人，关注用户访问、使用场景、扩散速度和平台格局等信号。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其价值在于把生成式 AI 影响从模型能力讨论转向真实用户采用和应用扩散，帮助判断 AI 工具是否进入日常工作、学习和消费场景。</li>
+<li>对科技创新和数字经济研判而言，该条目可用于跟踪 AI 应用普及、用户行为变化和平台竞争格局。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-38">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 38 / 66</span>
+</div>
+<h3><a href="https://carnegieendowment.org/research/2026/06/battery-geopolitics-balancing-industrial-power-in-race-to-store-energy">电池地缘政治：在储能竞赛中平衡产业力量</a></h3>
+<p class="meta">Carnegie Technology and International Affairs Program｜先进制造, 科技创新｜2026-06-29</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>报告把电池视为二十一世纪能源、安全、数据中心负荷、消费电子和前沿战争共同依赖的基础技术。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>作者指出，中国在电池制造、上游材料和下一代产品商业化上保持压倒性优势，但美国、欧洲、韩国、日本等经济体仍可通过市场准入、联合研发、技术转移、产能爬坡支持和战略性合资，避免形成对单一国家的长期依赖。</li>
+<li>报告尤其强调LFP、钠离子、硅负极、锂金属等技术路线，以及中游活性材料、负极材料和工厂效率对产业竞争力的决定作用。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>对科技创新支撑体系的启示是，储能产业竞争不是单纯扩大电芯产能，而是围绕材料、工艺装备、生产良率、下游应用、国防需求和区域产业集群形成持续迭代能力。 对上海及长三角而言，可重点关注钠离子、硅负极、储能系统集成、关键材料回收、数据中心储能和军民两用场景，避免只在终端电芯产能上竞争，同时把本地产业集群与日韩、欧美创新企业的联合中试和规模化制造能力连接起来。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-39">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 39 / 66</span>
+</div>
+<h3><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">2026年AI指数报告</a></h3>
+<p class="meta">Stanford Institute for Human-Centered Artificial Intelligence｜AI治理, 科技创新｜2026-06-29</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告是Stanford HAI年度AI Index，系统跟踪人工智能在研发、产业投资、模型能力、政策治理和社会影响方面的变化。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对科技创新研判的价值在于提供全球AI发展基准，可用于判断技术扩散、产业投入、治理议题和国家竞争格局的年度变化。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-40">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 40 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/external_publications/EP71379.html">公众科学信任之信任与科学可信度总体发现</a></h3>
+<p class="meta">RAND｜科技创新｜2026-06-26</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文件综合 RAND Europe 为 Wellcome 开展的公众科学信任研究，概括信任和科学可信度的主要发现。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其创新支撑意义在于，科学传播、科研诚信和社会信任构成科技政策实施的制度基础，影响新技术接受、公共研发合法性和风险沟通。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-41">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 41 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/external_publications/EP71381.html">公众科学信任之社交媒体中的科学可信度</a></h3>
+<p class="meta">RAND｜科技创新｜2026-06-26</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告关注社交媒体环境中的科学可信度，属于公众科学信任研究的专题成果。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对科技治理的启示在于，科研机构与政府的科学传播能力已经成为创新体系韧性的一部分，错误信息、平台传播逻辑和可信专家机制会影响技术政策执行。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-42">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 42 / 66</span>
+</div>
+<h3><a href="https://www.cnas.org/publications/commentary/closing-the-remote-access-loop">补上远程访问管制闭环</a></h3>
+<p class="meta">CNAS Technology and National Security｜科技治理, 半导体, 国防AI｜2026-06-23</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>文章关注远程访问、云端服务和跨境技术使用可能形成的管制漏洞，强调出口管制、访问审计、身份核验和云服务合规之间需要形成闭环。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对算力平台、AI服务和半导体相关企业的启示在于：技术管制正在从实体货物流动扩展到远程使用权、模型训练环境和服务交付链条。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-43">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 43 / 66</span>
+</div>
+<h3><a href="https://www.cnas.org/publications/commentary/losing-the-war-of-the-future">正在输掉未来战争</a></h3>
+<p class="meta">CNAS Technology and National Security｜国防AI, 科技创新｜2026-06-23</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>文章从未来战争能力竞争角度讨论AI、软件、无人系统、数据和组织适应之间的关系，警示传统采购和能力建设节奏可能落后于技术变化。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对科技创新研判的意义在于：国防AI竞争不仅取决于单项技术，还取决于快速迭代、场景牵引和组织吸收能力。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-44">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 44 / 66</span>
+</div>
+<h3><a href="https://www.rusi.org/explore-our-research/publications/insights-papers/private-capital-uk-defence">英国防务领域的私人资本</a></h3>
+<p class="meta">RUSI Artificial Intelligence and National Security｜科技创新, 先进制造｜2026-07-01</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>这篇报告讨论英国如何通过采购制度、投资筛选和政府与资本市场沟通机制，提升私人资本进入防务产业的意愿。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其核心问题在于，防务预算仍是产业增长的主要牵引，但英国希望通过私人资本补足研发、产线扩张和创新企业成长所需的长期资金。</li>
+<li>报告特别强调更快采购、集中化市场情报、可信投资者协调机制和投资审查简化，说明国防科技创新已经明显嵌入金融工具、产业组织和政府采购制度的联动结构。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>对科技创新观察而言，该文价值不只在于防务行业本身，而在于提供了“政府需求牵引-资本风险定价-企业产能扩张-本土供应链能力”的制度样本。 后续可纳入创新金融、军民两用技术、先进制造能力建设和科技产业政策案例库，尤其适合与美国国防创新单元、欧洲防务产业政策、英国 Defence Industrial Strategy 进行横向比较。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-45">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 45 / 66</span>
+</div>
+<h3><a href="https://www.belfercenter.org/research-analysis/hidden-security-challenge-responding-grid-capacity-constraints-and-their-impacts">隐蔽的安全挑战：应对电网容量约束及其对军事设施的影响</a></h3>
+<p class="meta">Harvard Belfer Center Science, Technology, and Public Policy｜先进制造, 科技创新｜2026-06-30</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告以密歇根州为案例，分析电力需求增长、数据中心和计算基础设施扩张、制造业回流、清洁能源目标与国防设施能源安全之间的结构性矛盾。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>报告指出，军事设施常被能源规划体系视作普通“大用户”，而其任务连续性、关键负荷、应急恢复和国防工业基础关联性并未充分进入州级能源监管和公用事业规划流程。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>报告提出临时工作组、军事设施脆弱性评估、监管流程嵌入、安装级政策参与能力和经济发展叙事等建议，可用于比较美国在国防设施、电力系统和产业政策之间建立协调机制的做法。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-46">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 46 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/external_publications/EP71387.html">Aspire to STEM项目评估报告</a></h3>
+<p class="meta">RAND｜科技人才｜2026-06-26</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该评估报告围绕 Aspire to STEM 项目，关注 STEM 学习、参与和人才管道建设。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其价值在于把科技人才培养前移到教育参与和职业兴趣形成阶段，为上海和相关区域的青少年科技教育、创新人才储备与长期人力资本政策提供比较线索。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-47">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 47 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/external_publications/EP71380.html">公众科学信任之研究格局映射</a></h3>
+<p class="meta">RAND｜科技创新｜2026-06-26</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料对公众科学信任与科学可信度研究进行格局映射，为后续实证研究和政策讨论提供问题框架。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其意义在于把公众信任、科学组织行为、传播环境和政策采纳连接起来，可作为科技创新支撑体系中“社会信任基础设施”的资料线索。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-48">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 48 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/external_publications/EP71385.html">美国核酸筛查政策的演变</a></h3>
+<p class="meta">RAND｜科技创新｜2026-06-26</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文梳理美国核酸筛查政策的演变，涉及生物安全、生命科学监管和检测能力治理。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对创新支撑的启示在于，生物技术发展需要与风险识别、筛查制度、实验室实践和政策响应能力同步建设。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-49">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 49 / 66</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/06/24/comments-european-commission-regarding-copyright-environment-in-europe/">欧洲版权环境意见：保留文本与数据挖掘例外以支撑AI创新</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜科技创新, AI治理, 科技治理, 数字经济｜2026-06-24</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>ITIF 就欧盟版权环境咨询提交意见，主张保留《数字单一市场指令》中的文本与数据挖掘（TDM）例外，将其作为 AI 训练的基础制度安排。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>文章区分 AI 训练数据使用与输出端侵权复制，反对把训练数据强制许可、集体补偿和表演者肖像声音保护混合处理；建议通过可执行的 opt-out 协议、训练数据摘要透明度、输出端近似复制执法、研究例外统一化和公共资助成果二次发表权来降低不确定性。</li>
+</ul></div>
+<div class="twin">
+<div class="box reference"><h4>中国 / 上海参考</h4>对上海数字内容、AI 训练数据、公共科研成果开放和语料流通机制设计具有参照意义：制度重点应放在训练、输出、人格权、研究例外和市场许可的分层治理。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-50">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 50 / 66</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/orbital-data-centers-feasibility-gap-is-a-governance-risk/">轨道数据中心可行性缺口及其治理风险</a></h3>
+<p class="meta">Brookings Center for Technology Innovation｜数字经济, 科技治理｜2026-06-25</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>其核心判断是，地面数据中心面临电网、土地、水资源和社区阻力，企业因而把空间数据中心描述为替代路径；但空间散热、紫外线损耗、维护成本、轨道碰撞、发射与再入环境影响等工程问题尚未得到验证。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>文章讨论科技公司将轨道数据中心包装为AI基础设施扩张方案的治理风险。</li>
+<li>更关键的是，SpaceX等垂直整合企业可能利用监管空白和资本市场叙事强化空间通信与AI基础设施市场权力，进而形成新的基础设施把关。</li>
+<li>对中国与上海的研判意义在于，AI算力基础设施治理不能只看建设规模，还要同步评估能源约束、环境外部性、关键平台依赖、空间信息基础设施规则和竞争政策。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-51">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 51 / 66</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/g7-should-accept-ai-standards-offer-but-make-it-enforceable/">G7应接受AI标准提议但强化可执行性</a></h3>
+<p class="meta">Brookings Center for Technology Innovation｜AI治理, 科技治理｜2026-07-01</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>文章讨论G7如何把AI标准从原则性共识推进到可执行安排，重点在标准互认、责任落实、监管协同和跨国执行机制。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对中国与上海的研判意义在于：AI治理竞争正在从价值宣示转向标准体系和合规执行，企业出海、模型服务和公共部门采购都需要更早嵌入国际标准、审计和责任机制。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-52">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 52 / 66</span>
+</div>
+<h3><a href="https://ecipe.org/insights/before-the-gatekeeper/">平台把关前置监管：AI与事前竞争规制的边界</a></h3>
+<p class="meta">European Centre for International Political Economy｜AI治理, 科技治理｜2026-06-29</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文围绕欧盟数字市场法案和AI竞争讨论事前监管的边界。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其问题意识在于，平台把关者规则能否在AI市场尚未完全定型时有效约束控制入口、数据和分发渠道的企业。</li>
+<li>该条目适合与Bruegel关于DMA和AI竞争的论文联合阅读。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-53">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 53 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/external_publications/EP71375.html">AI风险生态学</a></h3>
+<p class="meta">RAND｜AI治理｜2026-06-29</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文提出借鉴生态学和演化视角评估AI风险，用生态系统中的指标理解模型、用户、组织和环境之间的互动。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其价值在于突破单模型风险评估，把AI风险放入更复杂的社会技术系统中观察。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-54">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 54 / 66</span>
+</div>
+<h3><a href="https://www.governance.ai/research-paper/delays-to-frontier-ai-in-the-eu-and-uk">欧盟与英国前沿AI延迟问题</a></h3>
+<p class="meta">Institute for AI Policy and Strategy｜AI治理｜2026-06-28</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文评估欧盟和英国在前沿AI发展中的潜在延迟及其原因，涉及算力、投资、监管环境、人才和产业生态。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其政策意义在于，AI治理需要与创新能力建设同步评估，否则安全规则可能与技术供给能力之间形成张力。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-55">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 55 / 66</span>
+</div>
+<h3><a href="https://www.cnas.org/publications/cnas-insights/cnas-insights-governing-jailbreak-incidents">治理AI越狱事件</a></h3>
+<p class="meta">CNAS Technology and National Security｜AI治理｜2026-06-26</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文聚焦AI系统越狱事件的治理问题，讨论开发者、部署者和监管机构如何界定、记录、通报和处置越狱风险。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其政策意义在于把AI安全从抽象原则推进到事件响应、披露机制和责任分配。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-56">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 56 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA4707-1.html">供应链、能源与AI交汇：评估AI能源供应链脆弱性</a></h3>
+<p class="meta">RAND｜AI治理｜2026-06-25</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告把AI发展放入能源与供应链约束中，评估数据中心、电力、关键设备和上游供应链对AI扩张的限制。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其价值在于提示AI竞争不只取决于算法和算力，还取决于电力系统、基础设施规划和供应链韧性。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-57">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 57 / 66</span>
+</div>
+<h3><a href="https://www.governance.ai/research-paper/report-assessing-the-risk-of-ai-enabled-computer-worms">评估AI赋能计算机蠕虫风险</a></h3>
+<p class="meta">Institute for AI Policy and Strategy｜AI治理｜2026-07-02</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>报告分析AI能力与计算机蠕虫结合后的网络安全风险，关注漏洞发现、自动化传播、攻击规模化和防御响应滞后。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>该条目应纳入AI网络安全滥用和自主化攻击能力专题，尤其适合与DeepSeek网络安全智能体线索对照。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-58">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 58 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/commentary/2026/07/teens-are-turning-to-chatbots-for-mental-health-help.html">青少年转向聊天机器人寻求心理健康帮助：需要安全规则</a></h3>
+<p class="meta">RAND｜AI治理｜2026-07-02</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该评论关注青少年使用聊天机器人获取心理健康支持的趋势，强调应建立安全规则、风险提示、责任边界和未成年人保护要求。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对AI治理而言，它把生成式AI从产业效率议题推进到公共健康、平台责任和高风险人群保护议题。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-59">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 59 / 66</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/the-trump-administrations-embargo-on-anthropics-latest-models-scorches-its-hopes-to-export-american-ai/">特朗普政府限制Anthropic新模型出口削弱美国AI出海战略</a></h3>
+<p class="meta">Brookings Center for Technology Innovation｜AI治理｜2026-07-01</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文批评美国政府要求 Anthropic 限制外国人访问其最新模型的做法，认为这一措施与美国推动“AI技术栈出口”和建立可信AI联盟的目标相冲突。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>文章将模型访问限制放在AI主权、盟友信任、数据跨境和美国技术外交的背景下分析，指出短期安全措施可能加剧盟友对美国平台和模型供应的依赖风险认知。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>对中国和上海相关研判，可作为观察“模型出口管制—AI主权—可信供应链”三者关系的材料：未来AI国际化不只取决于技术能力，也取决于制度可信度、审查机制和伙伴国对供应连续性的判断。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-60">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 60 / 66</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/06/30/new-evidence-contradicts-myth-that-ai-is-destroying-jobs/">新证据反驳AI正在摧毁就业的说法</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜AI治理｜2026-06-30</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文回应“AI将大规模摧毁就业”的论断，认为近期关于AI替代就业的预测存在夸大倾向。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>文章强调，应将AI影响理解为任务结构、岗位内容和生产率变化的组合，而非直接等同于总就业崩塌；政策讨论需要更多基于实际扩散、企业采用和岗位调整证据。</li>
+</ul></div>
+<div class="twin">
+<div class="box reference"><h4>中国 / 上海参考</h4>对上海相关政策而言，重点不宜停留在“是否失业”的二元判断，而应转向岗位任务重组、企业AI采用能力、职业培训、公共部门监测指标和劳动者转岗支持机制。</div>
+</div>
+</section>
+<section class="topic-card avoid-break" id="topic-61">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 61 / 66</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/06/29/the-guard-act-fails-to-guard-kids-best-interests-on-ai-companions/">GUARD法案未能有效保护未成年人AI陪伴应用利益</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜AI治理｜2026-06-29</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该文批评美国 GUARD 法案对未成年人AI陪伴应用的治理设计，认为单纯限制或禁用可能无法准确处理风险、需求和创新之间的关系。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其价值在于提供AI陪伴、未成年人保护和平台责任的政策争议样本，适合纳入AI治理中高风险应用场景监管的案例库。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-62">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 62 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/external_publications/EP71386.html">核酸合成筛查不对称性叠加：强化全球生物安全治理的政策路径</a></h3>
+<p class="meta">RAND｜AI治理｜2026-06-26</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该外部出版物讨论核酸合成筛查中的不对称性问题，指出技术能力、监管覆盖和国际执行差异会叠加放大全球生物安全风险。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对AI+生物技术治理的启示在于，需要把模型能力、合成服务、订单筛查和跨境标准放在同一治理框架中。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-63">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 63 / 66</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/from-governance-to-execution-in-federal-ai-policy/">美国联邦AI政策从治理走向执行</a></h3>
+<p class="meta">Brookings Center for Technology Innovation｜AI治理｜2026-06-25</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>文章分析美国联邦AI政策正在从治理框架、原则文件和风险识别转向部门执行、采购规则、能力建设和问责机制。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其价值在于显示AI治理进入操作层：政策有效性取决于机构能力、执行链条和可量化责任，而不只是原则文本。</li>
+<li>对上海建设AI治理试点和公共部门应用规则具有参考意义。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-64">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 64 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA4741-1.html">LLM智能体能否选择并调用生物工具：初步生物安全评估</a></h3>
+<p class="meta">RAND｜AI治理｜2026-06-25</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告初步评估LLM智能体是否能够选择并调用生物学工具，关注工具使用能力对生物安全风险的放大效应。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>对科技治理的意义在于，风险评估不能只测试模型问答内容，还必须测试代理式工作流、外部工具调用和任务完成能力。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-65">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 65 / 66</span>
+</div>
+<h3><a href="https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/perspectives-from-the-2026-ceo-dialogue/">2026年CEO对话观点：AI与产业领导力</a></h3>
+<p class="meta">Atlantic Council GeoTech Center and Cyber Statecraft Initiative｜AI治理｜2026-06-24</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该简报汇集企业领导层围绕AI、数字基础设施和竞争力的政策观点。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其重点在于呈现产业界对AI采用、监管、投资和全球竞争的共同关切，可作为观察美国和跨国企业AI政策诉求的补充材料。</li>
+</ul></div>
+</section>
+<section class="topic-card avoid-break" id="topic-66">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 66 / 66</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA4522-1.html">超越政府监管工具箱：企业与社会组织缓释变革性AI风险</a></h3>
+<p class="meta">RAND｜AI治理｜2026-06-24</p>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该报告考察政府监管工具之外，企业、行业组织、民间社会和公共利益机构如何参与变革性AI风险治理。</p>
+</div>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其启示在于，AI治理体系需要政府规则、行业执行、第三方评估和社会监督共同构成，行政监管之外仍需可执行的社会协同机制。</li>
+</ul></div>
+</section>
+<p class="footer-note">国际科技智库周报 · 2026-07-06 · 私有归档，仅限内部研判使用</p>
+</main>
 </body>
 </html>

@@ -247,12 +247,7 @@ def _fallback_advice(candidate: ArticleCandidate, source: str) -> str:
         if not candidate.chinese_summary and _full_text_available(candidate):
             return "自动识别到的政策含义与建议线索包括：" + advice
         return advice
-    if any(tag in candidate.topic_tags for tag in ("科技创新", "先进制造", "半导体", "数字经济", "科技人才")):
-        return (
-            "原文或现有摘要未检出明确政策建议；后续精读应优先核验其对研发投入、"
-            "人才培养、科研基础设施、产业化通道、标准监管和国际竞争工具的具体主张。"
-        )
-    return "原文或现有摘要未检出明确政策建议、行动建议或机构作者的具体主张；需在后续精读中补充。"
+    return ""
 
 
 def _fallback_china_shanghai_reference(candidate: ArticleCandidate, source: str) -> str:
@@ -279,25 +274,124 @@ def _fallback_china_shanghai_reference(candidate: ArticleCandidate, source: str)
             "对中国/上海研判的参考在于：该材料提供了涉华技术能力、人才流动、产业链位置或政策工具的比较证据。"
             f"关键原文线索包括：{reference}"
         )
-    if "中国与上海相关" in candidate.topic_tags:
-        return "已标记为中国/上海相关，但摘要尚未拆出具体参照点；后续需回到原文补充页码级证据。"
-    return "未检出直接中国/上海指向；可作为同类政策工具、产业链、科研组织或治理框架的比较参照。"
+    return ""
+
+
+def _normalize_overlap(value: str) -> str:
+    return re.sub(
+        r"[\s，。！？、；：,.!?;:()（）《》〈〉【】“”‘’\"'|·—\-]+",
+        "",
+        _clean(value),
+    ).lower()
+
+
+def dedupe_against(primary: str, secondary: str) -> str:
+    """Drop sentences in ``secondary`` that already appear in ``primary``.
+
+    Weekly briefs previously copied the same paragraph into 核心观点、建议 and
+    中国/上海参考, which inflated length without adding information. This keeps
+    only sentences that are genuinely new relative to ``primary``.
+    """
+    primary_norm = _normalize_overlap(primary)
+    if not primary_norm:
+        return _clean(secondary)
+    kept: list[str] = []
+    for sentence in _split_sentences(secondary):
+        sentence_norm = _normalize_overlap(sentence)
+        if not sentence_norm:
+            continue
+        if sentence_norm in primary_norm:
+            continue
+        if len(sentence_norm) > 40 and primary_norm in sentence_norm:
+            continue
+        kept.append(sentence)
+    return " ".join(kept).strip()
+
+
+MIN_DISTINCT_SECTION_CHARS = 24
+PLACEHOLDER_SECTION_CUES = (
+    "未检出明确政策建议",
+    "未检出直接中国/上海指向",
+    "未提供直接涉华",
+    "未提供直接涉沪",
+    "尚未拆出具体参照点",
+    "需在后续精读中补充",
+    "后续精读应优先核验",
+    "待补充：",
+)
+
+
+def _is_placeholder_section(text: str) -> bool:
+    """Detect boilerplate markers that carry no report-specific signal."""
+    cleaned = _clean(text)
+    if not cleaned:
+        return True
+    return len(cleaned) < 150 and any(cue in cleaned for cue in PLACEHOLDER_SECTION_CUES)
+
+
+def _resolve_distinct_section(primary: str, text: str) -> str:
+    """Keep ``text`` only when it adds signal beyond ``primary``.
+
+    Sections that merely repeat the core argument, or whose deduplicated
+    remainder is too thin to stand alone, are dropped entirely: a missing
+    建议/中国上海参考 section is more honest than manufactured filler.
+    """
+    if _is_placeholder_section(text):
+        return ""
+    deduped = dedupe_against(primary, text)
+    if _normalize_overlap(deduped) == _normalize_overlap(text):
+        return _clean(text)
+    if len(deduped) < MIN_DISTINCT_SECTION_CHARS:
+        return ""
+    return deduped
 
 
 def summary_sections(candidate: ArticleCandidate) -> dict[str, str]:
     parsed = parse_structured_summary(candidate.chinese_summary)
     source = _fallback_source(candidate)
-    sections = {
-        "核心观点": parsed["核心观点"] or _fallback_core(candidate),
-        "建议": parsed["建议"] or _fallback_advice(candidate, source),
-        "中国/上海参考": parsed["中国/上海参考"] or _fallback_china_shanghai_reference(candidate, source),
+    core = parsed["核心观点"] or _fallback_core(candidate)
+    advice = parsed["建议"] or _fallback_advice(candidate, source)
+    reference = parsed["中国/上海参考"] or _fallback_china_shanghai_reference(candidate, source)
+
+    advice = _resolve_distinct_section(core, advice)
+    reference = _resolve_distinct_section(f"{core} {advice}", reference)
+
+    return {
+        "核心观点": core,
+        "建议": advice,
+        "中国/上海参考": reference,
     }
-    return sections
+
+
+JUDGMENT_CUES = ("核心判断", "核心观点是", "报告认为", "文章认为", "该文认为", "核心结论")
+
+
+def core_argument_parts(core_text: str, max_evidence: int = 4) -> tuple[str, list[str]]:
+    """Split a 核心观点 block into (一句话核心判断, 主要论据 sentences).
+
+    The judgment sentence prefers an explicit "核心判断是…" style sentence within
+    the first few sentences; otherwise the first sentence is used. Remaining
+    sentences become the evidence list so readers can grasp the argument
+    without opening the source report.
+    """
+    sentences = _split_sentences(core_text)
+    if not sentences:
+        return "", []
+    judgment_index = 0
+    for index, sentence in enumerate(sentences[:4]):
+        if any(cue in sentence for cue in JUDGMENT_CUES):
+            judgment_index = index
+            break
+    judgment = sentences[judgment_index]
+    evidence = [s for i, s in enumerate(sentences) if i != judgment_index]
+    return judgment, evidence[:max_evidence]
 
 
 def format_structured_chinese_summary(candidate: ArticleCandidate) -> str:
     sections = summary_sections(candidate)
-    return "\n\n".join(f"### {label}\n\n{sections[label]}" for label in SUMMARY_LABELS)
+    return "\n\n".join(
+        f"### {label}\n\n{sections[label]}" for label in SUMMARY_LABELS if sections[label]
+    )
 
 
 def render_summary_bullets(candidate: ArticleCandidate, cadence: str = "daily") -> list[str]:
@@ -317,6 +411,8 @@ def render_summary_bullets(candidate: ArticleCandidate, cadence: str = "daily") 
     lines: list[str] = []
     for label in SUMMARY_LABELS:
         value = sections[label]
+        if not value:
+            continue
         limit = limits.get(label, 520)
         lines.append(f"- {label}：{_truncate(value, limit)}")
     return lines

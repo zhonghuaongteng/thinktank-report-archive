@@ -9,6 +9,7 @@ from .state import ArticleState
 
 
 def _frontmatter(text: str) -> dict[str, str]:
+    text = text.lstrip("\ufeff")
     if not text.startswith("---"):
         raise ValueError("archive markdown is missing frontmatter")
     try:

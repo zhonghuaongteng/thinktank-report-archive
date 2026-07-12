@@ -1,6 +1,6 @@
 param(
     [string]$Date = (Get-Date -Format "yyyy-MM-dd"),
-    [int]$LookbackDays = 14,
+    [int]$LookbackDays = 7,
     [string]$Python = "C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe"
 )
 

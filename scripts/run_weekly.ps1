@@ -1,7 +1,7 @@
 param(
     [int]$Batch = 1,
     [int]$Limit = 30,
-    [int]$LookbackDays = 14,
+    [int]$LookbackDays = 7,
     [string]$SearchProfile = "broad_innovation_support",
     [string]$Python = "C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe"
 )

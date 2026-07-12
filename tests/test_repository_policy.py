@@ -20,7 +20,7 @@ class RepositoryPolicyTests(unittest.TestCase):
         script = Path("scripts/run_weekly.ps1").read_text(encoding="utf-8")
 
         self.assertIn('[string]$SearchProfile = "broad_innovation_support"', script)
-        self.assertIn("[int]$LookbackDays = 14", script)
+        self.assertIn("[int]$LookbackDays = 7", script)
         self.assertIn('"run-weekly"', script)
         self.assertIn('"--brief-cadence", "weekly"', script)
 

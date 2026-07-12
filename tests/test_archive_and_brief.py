@@ -56,8 +56,9 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("# 供应链、能源与人工智能交汇", markdown)
         self.assertIn("## 中文摘要与研判", markdown)
         self.assertIn("### 核心观点", markdown)
-        self.assertIn("### 建议", markdown)
-        self.assertIn("### 中国/上海参考", markdown)
+        # 无真实建议/涉华信号时不再输出占位栏目
+        self.assertNotIn("### 建议", markdown)
+        self.assertNotIn("### 中国/上海参考", markdown)
         self.assertIn("该报告讨论人工智能能源供应链脆弱性。", markdown)
         self.assertIn("## English Source Material", markdown)
 
@@ -199,8 +200,8 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("科技创新支撑重点", brief)
         self.assertIn("AI治理与科技治理观察", brief)
         self.assertIn("- 核心观点：重点AI治理材料。", brief)
-        self.assertIn("- 建议：", brief)
-        self.assertIn("- 中国/上海参考：", brief)
+        self.assertNotIn("- 建议：", brief)
+        self.assertNotIn("- 中国/上海参考：", brief)
         self.assertIn("AI安全", brief)
         self.assertIn("新增索引", brief)
         self.assertIn("制造业", brief)
@@ -718,7 +719,7 @@ class ArchiveAndBriefTests(unittest.TestCase):
         brief = render_daily_brief_markdown("2026-07-04", [candidate])
 
         self.assertIn("- 核心观点：报告讨论欧洲在美中竞争中的战略自主选择", brief)
-        self.assertIn("- 建议：原文或现有摘要未检出明确政策建议", brief)
+        self.assertNotIn("- 建议：", brief)
         self.assertIn("- 中国/上海参考：该材料对中国和上海具有参考价值", brief)
 
     def test_render_weekly_brief_uses_reader_structure_and_topic_pages_for_priority_items(self):
@@ -735,7 +736,7 @@ class ArchiveAndBriefTests(unittest.TestCase):
                 priority="P1",
                 score=5,
                 topic_tags=["科技创新"],
-                chinese_summary=f"核心观点：创新支撑报告{index}讨论研发基础设施和产业化路径。建议：完善政策工具。中国/上海参考：可对照上海创新平台建设。",
+                chinese_summary=f"核心观点：创新支撑报告{index}讨论研发基础设施和产业化路径。报告强调测试平台、开放设施和产业化服务是关键环节。建议：完善政策工具，扩大平台开放。中国/上海参考：可对照上海创新平台建设补充证据。",
             )
             for index in range(1, 16)
         ]
@@ -752,9 +753,12 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertEqual(brief.count('<a id="topic-'), 15)
         self.assertIn("[主题 15｜创新支撑报告15](#topic-15)", brief)
         self.assertIn("[创新支撑报告15](https://example.org/innovation/15)", brief)
-        self.assertIn("**核心观点**", brief)
+        self.assertIn("## 本周必读", brief)
+        self.assertIn("## 议题观点速览", brief)
+        self.assertIn("**核心判断**", brief)
+        self.assertIn("**主要论据**", brief)
 
-    def test_render_weekly_brief_enriches_short_unstructured_cards(self):
+    def test_render_weekly_brief_omits_sections_without_new_signal(self):
         candidate = ArticleCandidate(
             institution_slug="aspi",
             institution_name="ASPI",
@@ -775,9 +779,10 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         brief = render_weekly_brief_markdown("2026-07-05", [candidate])
 
-        self.assertIn("- **建议**：**建议把该条目作为军民两用物流", brief)
-        self.assertIn("- **中国/上海参考**：**对中国/上海的参考在于，军民两用供应链", brief)
-        self.assertEqual(brief.count("该文分析中国军队将AI嵌入后勤体系的战略含义。"), 2)
+        # 非结构化摘要中没有独立于核心观点的建议/参考信号时，直接省略栏目而非生成模板文案
+        self.assertIn("- **核心判断**：", brief)
+        self.assertNotIn("- **政策建议**：", brief)
+        self.assertNotIn("- **中国/上海参考**：", brief)
 
     def test_weekly_comic_prompts_do_not_force_china_or_shanghai(self):
         from thinktank_watch.brief import write_weekly_comic_prompts
@@ -806,13 +811,19 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertEqual(len(prompts), 1)
             text = prompts[0].read_text(encoding="utf-8")
             self.assertIn("不要强行落到中国或上海", text)
-            self.assertIn("最后一格应突出报告本身的中心结论", text)
+            self.assertIn("模块应突出报告本身的中心结论", text)
+            self.assertIn("信息图式漫画", text)
+            self.assertIn("一图看懂", text)
             self.assertIn("科普化", text)
             self.assertIn("可视化", text)
             self.assertIn("不需要完整复刻报告论证链", text)
+            self.assertIn("报告没有的内容不要虚构", text)
             self.assertIn("证据配图转译", text)
             self.assertIn("图表、数据曲线、地图", text)
             self.assertIn("公共研发基础设施会影响企业技术吸收", text)
+            # “原文未提供直接涉华或涉沪判断”属占位语，不应进入漫画提示词
+            self.assertNotIn("原文未提供直接涉华或涉沪判断", text)
+            self.assertNotIn("涉华/涉沪内容（报告确有）", text)
             manifest = prompts[0].parents[1] / "manifest.md"
             self.assertTrue(manifest.exists())
             self.assertIn("科普化、可视化", manifest.read_text(encoding="utf-8"))
@@ -863,7 +874,10 @@ class ArchiveAndBriefTests(unittest.TestCase):
             ),
         )
         from thinktank_watch.brief import write_weekly_brief
+        import os
 
+        os.environ["THINKTANK_DISABLE_BROWSER_PDF"] = "1"
+        self.addCleanup(os.environ.pop, "THINKTANK_DISABLE_BROWSER_PDF", None)
         with tempfile.TemporaryDirectory() as tmp:
             markdown_path, html_path, pdf_path = write_weekly_brief(
                 tmp,
@@ -892,6 +906,7 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertIn('id="topic-01"', html)
             self.assertIn('<a href="https://example.org/innovation">创新支撑</a>', html)
             from pypdf import PdfReader
+            from thinktank_watch.brief import _register_pdf_font
 
             reader = PdfReader(str(pdf_path))
             image_count = 0
@@ -903,6 +918,8 @@ class ArchiveAndBriefTests(unittest.TestCase):
                     if obj.get("/Subtype") == "/Image":
                         image_count += 1
             self.assertGreaterEqual(image_count, 1)
+            if _register_pdf_font() == "Helvetica":
+                return  # 环境无可用 CJK TrueType 字体时跳过文本断言
             pdf_text = "\n".join(page.extract_text() or "" for page in reader.pages)
             self.assertIn("核心观点与论述", pdf_text)
             self.assertIn("政策含义与参考", pdf_text)
@@ -910,9 +927,6 @@ class ArchiveAndBriefTests(unittest.TestCase):
             core_segment = pdf_text.split("核心观点与论述", 1)[1].split("政策含义与参考", 1)[0]
             self.assertIn("这篇报告讨论的是“创新支撑”", core_segment)
             self.assertIn("核心判断是：创新支撑报告讨论研发基础设施和产业化路径", core_segment)
-            self.assertIn("报告的论述线索", core_segment)
-            self.assertIn("集中在", core_segment)
-            self.assertIn("影响路径可以概括为", core_segment)
             self.assertNotIn("建议：", core_segment)
             self.assertNotIn("中国/上海参考", core_segment)
             self.assertIn("建立需求测算、资源分配和使用绩效规则", pdf_text)
@@ -941,6 +955,126 @@ class ArchiveAndBriefTests(unittest.TestCase):
             reader = _pdf_image_reader(image_path, max_width_px=800, jpeg_quality=70)
 
             self.assertEqual(reader.getSize(), (800, 450))
+
+    def test_summary_sections_replace_sections_that_copy_core_text(self):
+        from thinktank_watch.summary import summary_sections
+
+        repeated = (
+            "该文讨论美国联邦奖金竞赛如何作为AI创新政策工具发挥作用。"
+            "竞赛机制可在较低成本下形成技术基准、人才发现和应用验证。"
+        )
+        candidate = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="CSET",
+            institution_type="university_research_center",
+            title="Prize competitions",
+            chinese_title="奖金竞赛如何促进AI创新",
+            url="https://example.org/prize",
+            published_date="2026-07-01",
+            content_type="article",
+            priority="P0",
+            topic_tags=["科技创新", "AI治理"],
+            chinese_summary=(
+                f"核心观点：{repeated}\n建议：{repeated}\n中国/上海参考：{repeated}"
+            ),
+        )
+
+        sections = summary_sections(candidate)
+
+        self.assertIn("奖金竞赛", sections["核心观点"])
+        self.assertEqual(sections["建议"], "")
+        self.assertEqual(sections["中国/上海参考"], "")
+
+    def test_core_argument_parts_prefers_explicit_judgment_sentence(self):
+        from thinktank_watch.summary import core_argument_parts
+
+        judgment, evidence = core_argument_parts(
+            "该报告分析中国出口管制体系的制度化进程。"
+            "核心判断是，出口管制正在成为经济安全工具。"
+            "报告强调关键矿产和材料加工设备可能成为管制重点。"
+        )
+
+        self.assertIn("核心判断是", judgment)
+        self.assertEqual(len(evidence), 2)
+        self.assertIn("制度化进程", evidence[0])
+
+    def test_weekly_top_reads_prefers_institution_and_chapter_diversity(self):
+        from thinktank_watch.brief import weekly_top_reads
+
+        candidates = [
+            ArticleCandidate(
+                institution_slug="merics",
+                institution_name="MERICS",
+                institution_type="think_tank",
+                title=f"China report {index}",
+                chinese_title=f"涉华报告{index}",
+                url=f"https://example.org/merics/{index}",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P0",
+                score=10 - index,
+                topic_tags=["中国与上海相关", "半导体"],
+                chinese_summary=f"核心观点：涉华报告{index}的核心判断。",
+            )
+            for index in range(1, 5)
+        ]
+        candidates.append(
+            ArticleCandidate(
+                institution_slug="nistep",
+                institution_name="NISTEP",
+                institution_type="government_research_institute",
+                title="Talent report",
+                chinese_title="人才报告",
+                url="https://example.org/nistep/talent",
+                published_date="2026-07-01",
+                content_type="report",
+                priority="P1",
+                score=5,
+                topic_tags=["科技人才"],
+                chinese_summary="核心观点：人才报告的核心判断。",
+            )
+        )
+
+        top = weekly_top_reads(candidates, limit=3)
+
+        slugs = [item.institution_slug for item in top]
+        self.assertEqual(len(top), 3)
+        self.assertIn("nistep", slugs)
+        self.assertLessEqual(slugs.count("merics"), 2)
+
+    def test_render_weekly_magazine_html_contains_cover_and_cards(self):
+        from thinktank_watch.brief import render_weekly_magazine_html
+
+        candidate = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="ITIF",
+            institution_type="think_tank",
+            title="Innovation support",
+            chinese_title="创新支撑",
+            url="https://example.org/innovation",
+            published_date="2026-07-04",
+            content_type="report",
+            priority="P1",
+            topic_tags=["科技创新"],
+            chinese_summary=(
+                "核心观点：创新支撑报告讨论研发基础设施和产业化路径。"
+                "建议：建立需求测算、资源分配和使用绩效规则。"
+                "中国/上海参考：上海可把公共算力、数据服务和应用验证平台联动。"
+            ),
+        )
+
+        html = render_weekly_magazine_html("2026-07-05", [candidate])
+
+        self.assertIn("@page", html)
+        self.assertIn("本周态势", html)
+        self.assertIn("本周必读", html)
+        self.assertIn("议题观点速览", html)
+        self.assertIn('id="topic-01"', html)
+        self.assertIn("judgment-box", html)
+        self.assertIn("核心判断", html)
+        self.assertIn('<a href="https://example.org/innovation">创新支撑</a>', html)
+        self.assertIn("政策建议", html)
+        self.assertIn("中国 / 上海参考", html)
 
     def test_write_institution_table_exports_kb_schema(self):
         from thinktank_watch.kb import write_institution_table
