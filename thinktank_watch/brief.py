@@ -659,6 +659,26 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate])
     return "\n".join(lines).rstrip() + "\n"
 
 
+THIN_CORE_MIN_CHARS = 120
+THIN_CORE_MIN_SENTENCES = 2
+
+
+def weekly_thin_core_items(candidates: list[ArticleCandidate]) -> list[ArticleCandidate]:
+    """P0/P1 items whose 核心观点 is too thin to convey stance and evidence.
+
+    A one-line core summary tells readers what a report is about but not what
+    the institution actually argues. These items should be rewritten from the
+    source material before the weekly brief is rendered.
+    """
+    thin: list[ArticleCandidate] = []
+    for item in weekly_priority_items(candidates):
+        core = _clean_text(summary_sections(item)["核心观点"])
+        sentence_count = len(re.findall(r"[。！？.!?]", core))
+        if len(core) < THIN_CORE_MIN_CHARS or sentence_count < THIN_CORE_MIN_SENTENCES:
+            thin.append(item)
+    return thin
+
+
 def render_weekly_audit_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
     ordered_candidates = sort_brief_candidates(candidates)
     priority_items = [item for item in ordered_candidates if item.priority in {"P0", "P1"}]
@@ -687,6 +707,18 @@ def render_weekly_audit_markdown(date: str, candidates: list[ArticleCandidate]) 
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
     else:
         lines.append("- 无最近写入。")
+    thin_core_items = weekly_thin_core_items(candidates)
+    lines.extend(["", "## 核心观点待充实", ""])
+    if thin_core_items:
+        lines.append(
+            f"以下 {len(thin_core_items)} 条 P0/P1 条目核心观点过薄（少于 {THIN_CORE_MIN_SENTENCES} 句或 {THIN_CORE_MIN_CHARS} 字），"
+            "只能看出报告主题、看不出机构态度和论据；渲染周报前应回原文补写为「对象与背景、核心判断与态度、主要论据、（如有）争议或反方观点」的结构。"
+        )
+        lines.append("")
+        for item in thin_core_items:
+            lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
+    else:
+        lines.append("- 全部 P0/P1 条目核心观点密度达标。")
     lines.extend(["", "## 完整索引", ""])
     for item in ordered_candidates:
         lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
