@@ -818,6 +818,8 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertIn("可视化", text)
             self.assertIn("不需要完整复刻报告论证链", text)
             self.assertIn("报告没有的内容不要虚构", text)
+            self.assertIn("不要使用空白白板、空白标牌、空白屏幕或空白标签", text)
+            self.assertIn("相关载体应改为图标、纹理、设备或场景背景", text)
             self.assertIn("证据配图转译", text)
             self.assertIn("图表、数据曲线、地图", text)
             self.assertIn("公共研发基础设施会影响企业技术吸收", text)
@@ -1075,6 +1077,10 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn('<a href="https://example.org/innovation">创新支撑</a>', html)
         self.assertIn("政策建议", html)
         self.assertIn("中国 / 上海参考", html)
+        self.assertIn('class="topic-main"', html)
+        self.assertIn('class="topic-copy"', html)
+        self.assertNotIn('class="topic-card avoid-break"', html)
+        self.assertIn(".topic-main { display: grid;", html)
 
     def test_weekly_audit_flags_thin_core_summaries(self):
         from thinktank_watch.brief import render_weekly_audit_markdown

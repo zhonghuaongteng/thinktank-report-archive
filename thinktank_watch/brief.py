@@ -334,6 +334,7 @@ style: "Codex-generated infographic comic poster"
 - 风格：清线条知识漫画+信息海报混合，大面积留白，视觉密度宁低勿高。
 - 统一配色：米白底（#F7F3EA）、深藏青主色（#1F3A5F）、砖红强调色（#B84C3D）、金褐辅助色（#C89B52），全图不超过这四组颜色加黑白。
 - 全图中文字总量不超过 40 个汉字；数字和关键词可放大处理，作为视觉元素使用。
+- 不要使用空白白板、空白标牌、空白屏幕或空白标签作为视觉元素；若无需文字，相关载体应改为图标、纹理、设备或场景背景，避免形成类似字体丢失的空白区域。
 - 机构名称只作为角落来源标识，不作为视觉主角。
 - 不要出现"主题机制图解""示意图""占位图"等字样。
 - 最终输出为可嵌入周报的单张图片，文件名应为 `{basename}.jpg`。
@@ -1047,7 +1048,7 @@ a { color: #14456e; text-decoration: none; }
 .comic-lead img { width: 100%; border: .6pt solid #d7dee5; }
 .comic-lead .note { font-size: 9pt; color: #40505c; background: #faf6ee; border-left: 2.4pt solid #c89b52; padding: 3mm 4mm; margin: 0 0 5mm; }
 
-.topic-card { padding: 8mm 11mm 9mm; page-break-before: always; }
+.topic-card { padding: 7mm 9mm 8mm; page-break-before: always; break-before: page; }
 .topic-card .card-head { display: flex; align-items: center; gap: 3mm; margin-bottom: 3mm; }
 .chip { font-size: 8pt; font-weight: 700; padding: .8mm 3mm; border-radius: 999px; }
 .chip.pri-P0 { background: #b84c3d; color: #fff; }
@@ -1056,19 +1057,22 @@ a { color: #14456e; text-decoration: none; }
 .card-head .idx { margin-left: auto; color: #9aa7b1; font-size: 8.5pt; }
 .topic-card h3 { font-size: 15pt; margin: 0 0 1.6mm; line-height: 1.35; }
 .topic-card h3 a { color: #14456e; }
-.topic-card .meta { color: #5f6b75; font-size: 8.5pt; margin-bottom: 3.6mm; }
-.topic-card figure.comic { margin: 0 0 4mm; }
+.topic-card .meta { color: #5f6b75; font-size: 8.5pt; margin-bottom: 3mm; }
+.topic-main { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); gap: 4mm; align-items: start; margin-bottom: 3mm; }
+.topic-main.no-comic { grid-template-columns: 1fr; }
+.topic-card figure.comic { margin: 0; }
 .topic-card figure.comic img { width: 100%; border: .6pt solid #d7dee5; border-radius: 2pt; }
-.judgment-box { background: #14456e; color: #ffffff; padding: 3.6mm 5mm; border-radius: 2pt; margin-bottom: 3.6mm; page-break-inside: avoid; }
+.topic-copy { min-width: 0; }
+.judgment-box { background: #14456e; color: #ffffff; padding: 3mm 4mm; border-radius: 2pt; margin-bottom: 3mm; page-break-inside: avoid; }
 .judgment-box .label { font-size: 8pt; letter-spacing: .25em; color: #bcd2e4; display: block; margin-bottom: 1.2mm; }
-.judgment-box p { margin: 0; font-size: 11pt; font-weight: 700; line-height: 1.6; }
-.evidence { margin: 0 0 4mm; page-break-inside: avoid; }
-.evidence .label { font-size: 9pt; font-weight: 700; color: #b84c3d; letter-spacing: .12em; }
-.evidence ul { margin: 1.6mm 0 0; padding-left: 0; list-style: none; }
-.evidence li { position: relative; padding: 1.2mm 0 1.2mm 6mm; font-size: 9.5pt; }
-.evidence li::before { content: ""; position: absolute; left: 1.2mm; top: 3.4mm; width: 2.4mm; height: 2.4mm; background: #c89b52; }
+.judgment-box p { margin: 0; font-size: 9.4pt; font-weight: 700; line-height: 1.5; }
+.evidence { margin: 0; page-break-inside: avoid; }
+.evidence .label { font-size: 8.5pt; font-weight: 700; color: #b84c3d; letter-spacing: .12em; }
+.evidence ul { margin: 1.2mm 0 0; padding-left: 0; list-style: none; }
+.evidence li { position: relative; padding: .8mm 0 .8mm 5mm; font-size: 8.5pt; line-height: 1.5; }
+.evidence li::before { content: ""; position: absolute; left: 1mm; top: 2.7mm; width: 2mm; height: 2mm; background: #c89b52; }
 .twin { display: flex; gap: 4mm; page-break-inside: avoid; }
-.twin .box { flex: 1; border-radius: 2pt; padding: 3.4mm 4.2mm; font-size: 9pt; }
+.twin .box { flex: 1; border-radius: 2pt; padding: 2.8mm 3.6mm; font-size: 8.4pt; line-height: 1.55; }
 .twin .box h4 { margin: 0 0 1.6mm; font-size: 9.5pt; }
 .twin .advice { background: #f0f6f0; border-top: 2.4pt solid #4f7d5a; }
 .twin .advice h4 { color: #3c6246; }
@@ -1092,7 +1096,7 @@ def _magazine_topic_card_html(
     chapter = escape(weekly_chapter_name(item))
     pri = escape(item.priority)
     parts = [
-        f'<section class="topic-card avoid-break" id="{_topic_anchor(index)}">',
+        f'<section class="topic-card" id="{_topic_anchor(index)}">',
         '<div class="card-head">',
         f'<span class="chip pri-{pri}">{pri}</span>',
         f'<span class="chip chapter">{chapter}</span>',
@@ -1104,10 +1108,16 @@ def _magazine_topic_card_html(
         + "</p>",
     ]
     comic_src = weekly_topic_comic_markdown_src(date, index)
+    parts.append(f'<div class="topic-main{"" if comic_src else " no-comic"}">')
     if comic_src:
-        parts.append(
-            f'<figure class="comic"><img src="{escape(comic_src, quote=True)}" alt="主题 {index:02d} 漫画"></figure>'
+        parts.extend(
+            [
+                '<div class="topic-visual">',
+                f'<figure class="comic"><img src="{escape(comic_src, quote=True)}" alt="主题 {index:02d} 漫画"></figure>',
+                "</div>",
+            ]
         )
+    parts.append('<div class="topic-copy">')
     if judgment:
         parts.extend(
             [
@@ -1122,6 +1132,7 @@ def _magazine_topic_card_html(
         for point in evidence:
             parts.append(f"<li>{escape(_short_text(point, 190))}</li>")
         parts.append("</ul></div>")
+    parts.extend(["</div>", "</div>"])
     boxes: list[str] = []
     if sections["建议"]:
         boxes.append(f'<div class="box advice"><h4>政策建议</h4>{escape(_short_text(sections["建议"], 460))}</div>')
