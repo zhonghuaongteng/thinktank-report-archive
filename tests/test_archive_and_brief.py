@@ -820,6 +820,9 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertIn("报告没有的内容不要虚构", text)
             self.assertIn("不要使用空白白板、空白标牌、空白屏幕或空白标签", text)
             self.assertIn("相关载体应改为图标、纹理、设备或场景背景", text)
+            self.assertIn("允许写入一项关键数据或一句短结论", text)
+            self.assertIn("不要为了压缩字数二次删除已经生成的文字", text)
+            self.assertNotIn("全图中文字总量不超过 40 个汉字", text)
             self.assertIn("证据配图转译", text)
             self.assertIn("图表、数据曲线、地图", text)
             self.assertIn("公共研发基础设施会影响企业技术吸收", text)
@@ -927,8 +930,9 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertIn("政策含义与参考", pdf_text)
             self.assertNotIn("追踪问题", pdf_text)
             core_segment = pdf_text.split("核心观点与论述", 1)[1].split("政策含义与参考", 1)[0]
-            self.assertIn("这篇报告讨论的是“创新支撑”", core_segment)
-            self.assertIn("核心判断是：创新支撑报告讨论研发基础设施和产业化路径", core_segment)
+            self.assertIn("创新支撑报告讨论研发基础设施和产业化路径", core_segment)
+            self.assertNotIn("这篇报告讨论的是", core_segment)
+            self.assertNotIn("核心判断是：", core_segment)
             self.assertNotIn("建议：", core_segment)
             self.assertNotIn("中国/上海参考", core_segment)
             self.assertIn("建立需求测算、资源分配和使用绩效规则", pdf_text)
@@ -1044,6 +1048,63 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("nistep", slugs)
         self.assertLessEqual(slugs.count("merics"), 2)
 
+    def test_weekly_read_summary_uses_institutional_judgment_and_evidence(self):
+        from thinktank_watch.brief import weekly_evidence_sentence, weekly_judgment_sentence
+
+        candidate = ArticleCandidate(
+            institution_slug="rand",
+            institution_name="RAND",
+            institution_type="think_tank",
+            title="Strategic autonomy",
+            chinese_title="人工智能时代的战略自主",
+            url="https://example.org/autonomy",
+            published_date="2026-07-15",
+            content_type="report",
+            priority="P0",
+            topic_tags=["AI治理"],
+            chinese_summary=(
+                "核心观点：该章节讨论人工智能如何改变战略自主。"
+                "作者对通过降低依赖获得自主的政策想象持明显怀疑立场，核心判断是变革性人工智能会增加跨国技术、算力、数据和产业联系的复杂性。"
+                "报告依据跨国算力、数据与产业链案例指出，完全自主会提高重复建设成本并削弱合作治理。"
+            ),
+        )
+
+        judgment = weekly_judgment_sentence(candidate, 220)
+        evidence = weekly_evidence_sentence(candidate, 220)
+
+        self.assertTrue(judgment.startswith("RAND"))
+        self.assertIn("复杂性", judgment)
+        self.assertNotIn("作者对", judgment)
+        self.assertIn("跨国算力", evidence)
+        self.assertNotIn("报告依据", evidence)
+
+    def test_weekly_pdf_page_plan_reserves_two_pages_per_topic(self):
+        from thinktank_watch.brief import weekly_pdf_page_plan
+
+        candidates = [
+            ArticleCandidate(
+                institution_slug=f"inst-{index}",
+                institution_name=f"Institution {index}",
+                institution_type="think_tank",
+                title=f"Report {index}",
+                chinese_title=f"报告{index}",
+                url=f"https://example.org/{index}",
+                published_date="2026-07-15",
+                content_type="report",
+                priority="P1",
+                topic_tags=["科技创新"],
+                chinese_summary="核心观点：机构认为科研基础设施需要稳定投入。证据显示长期投入改善了成果转化。",
+            )
+            for index in range(2)
+        ]
+
+        topic_pages, analysis_pages = weekly_pdf_page_plan(candidates)
+
+        self.assertEqual(topic_pages[candidates[0].url], 5)
+        self.assertEqual(analysis_pages[candidates[0].url], 6)
+        self.assertEqual(topic_pages[candidates[1].url], 7)
+        self.assertEqual(analysis_pages[candidates[1].url], 8)
+
     def test_render_weekly_magazine_html_contains_cover_and_cards(self):
         from thinktank_watch.brief import render_weekly_magazine_html
 
@@ -1077,10 +1138,11 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn('<a href="https://example.org/innovation">创新支撑</a>', html)
         self.assertIn("政策建议", html)
         self.assertIn("中国 / 上海参考", html)
-        self.assertIn('class="topic-main"', html)
-        self.assertIn('class="topic-copy"', html)
+        self.assertIn('class="page top-reads-page pagebreak"', html)
+        self.assertIn('class="topic-card topic-primary"', html)
+        self.assertIn('class="topic-card topic-analysis"', html)
         self.assertNotIn('class="topic-card avoid-break"', html)
-        self.assertIn(".topic-main { display: grid;", html)
+        self.assertNotIn(".topic-main { display: grid;", html)
 
     def test_weekly_audit_flags_thin_core_summaries(self):
         from thinktank_watch.brief import render_weekly_audit_markdown

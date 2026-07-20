@@ -363,7 +363,24 @@ def summary_sections(candidate: ArticleCandidate) -> dict[str, str]:
     }
 
 
-JUDGMENT_CUES = ("核心判断", "核心观点是", "报告认为", "文章认为", "该文认为", "核心结论")
+JUDGMENT_CUES = (
+    "核心判断",
+    "核心观点是",
+    "报告认为",
+    "文章认为",
+    "该文认为",
+    "核心结论",
+    "认为",
+    "主张",
+    "判断",
+    "持支持",
+    "明确支持",
+    "反对",
+    "警示",
+    "怀疑",
+    "乐观",
+    "立场",
+)
 
 
 def core_argument_parts(core_text: str, max_evidence: int = 4) -> tuple[str, list[str]]:

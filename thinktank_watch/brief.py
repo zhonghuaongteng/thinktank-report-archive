@@ -323,9 +323,9 @@ style: "Codex-generated infographic comic poster"
 
 ## 版面结构（信息层级从上到下）
 
-1. 顶部通栏大标题：用不超过 14 个汉字概括核心判断，占画面高度约 15%，粗黑字配米白底，是全图第一视觉焦点。
+1. 顶部通栏大标题：用 12-18 个汉字概括核心判断，占画面高度约 15%，粗黑字配米白底，是全图第一视觉焦点。
 2. 主视觉区（占画面约 55%）：一个统一的视觉隐喻场景承载报告观点，主题应从报告自身内容中生长出来——可以是机制剖面、数据景观、人物行动、产业现场、实验台、地图或任何贴合报告叙事的场景；场景要有明确主角和单一焦点，禁止把画面切成四格连环画。
-3. 信息模块条（占画面约 30%）：沿底部或右侧排 2-3 个小模块，每个模块=一个图标化小场景+不超过 8 个汉字的短标签；模块内容只从报告真实提供的信息中选取——关键机制、数据要点、影响对象、争议焦点、趋势信号或应对方向中最有信息量的 2-3 项。
+3. 信息模块条（占画面约 30%）：沿底部或右侧排 2-3 个小模块，每个模块包含图标化小场景、短标签，并允许写入一项关键数据或一句短结论；模块内容只从报告真实提供的信息中选取——关键机制、数据要点、影响对象、争议焦点、趋势信号或应对方向中最有信息量的 2-3 项。
 4. 报告没有的内容不要虚构：报告没有给出政策建议就不画应对方向模块；不要强行落到中国或上海，只有上方"需要表达的核心内容"中出现涉华/涉沪条目时才允许出现中国/上海模块。模块应突出报告本身的中心结论。
 5. 证据配图转译：如果报告正文、摘要或图注中出现图表、数据曲线、地图、技术架构图、供应链图、照片或其他证据配图线索，可将其转译为主视觉中的报告页、屏幕、白板、证据卡或背景装置；后续若自动化提供真实参考图，可作为参考素材纳入，但不得凭空复制未取得的原图。
 
@@ -333,7 +333,8 @@ style: "Codex-generated infographic comic poster"
 
 - 风格：清线条知识漫画+信息海报混合，大面积留白，视觉密度宁低勿高。
 - 统一配色：米白底（#F7F3EA）、深藏青主色（#1F3A5F）、砖红强调色（#B84C3D）、金褐辅助色（#C89B52），全图不超过这四组颜色加黑白。
-- 全图中文字总量不超过 40 个汉字；数字和关键词可放大处理，作为视觉元素使用。
+- 保留足以独立传达报告判断与证据的中文信息量，关键数字和关键词应放大处理；不得以机械压缩字数为由删去已经生成且可读的有效文字。
+- 不要为了压缩字数二次删除已经生成的文字；需要降低密度时，应重排层级、合并重复表述或减少装饰元素。
 - 不要使用空白白板、空白标牌、空白屏幕或空白标签作为视觉元素；若无需文字，相关载体应改为图标、纹理、设备或场景背景，避免形成类似字体丢失的空白区域。
 - 机构名称只作为角落来源标识，不作为视觉主角。
 - 不要出现"主题机制图解""示意图""占位图"等字样。
@@ -452,10 +453,10 @@ def _weekly_pdf_toc_page_count(priority_items: list[ArticleCandidate]) -> int:
 
 def weekly_pdf_page_plan(candidates: list[ArticleCandidate]) -> tuple[dict[str, int], dict[str, int]]:
     priority_items = weekly_priority_items(candidates)
-    toc_pages = _weekly_pdf_toc_page_count(priority_items)
-    topic_start_page = 2 + toc_pages
-    topic_pages = {item.url: topic_start_page + index for index, item in enumerate(priority_items)}
-    return topic_pages, topic_pages
+    # Four fixed front pages: cover/situation, must reads, viewpoints and TOC.
+    topic_pages = {item.url: 5 + index * 2 for index, item in enumerate(priority_items)}
+    analysis_pages = {item.url: 6 + index * 2 for index, item in enumerate(priority_items)}
+    return topic_pages, analysis_pages
 
 
 def _weekly_summary_sections(candidate: ArticleCandidate) -> dict[str, str]:
@@ -486,14 +487,12 @@ def _weekly_pdf_article_title(candidate: ArticleCandidate) -> str:
 
 
 def _weekly_pdf_main_argument(candidate: ArticleCandidate, sections: dict[str, str]) -> str:
-    core = _weekly_pdf_core_text(sections["核心观点"])
-    source_title = _weekly_pdf_article_title(candidate)
-    judgment, evidence = core_argument_parts(core)
+    judgment, evidence = weekly_argument_parts(candidate)
     if not judgment:
-        return f"这篇报告讨论的是“{source_title}”。核心判断需回到原文进一步补全，但该条目已被识别为本周 P0/P1 重点。"
-    parts = [f"这篇报告讨论的是“{source_title}”。核心判断是：{judgment}"]
+        return f"{candidate.institution_name}的核心判断仍需依据原文补全。"
+    parts = [judgment]
     if evidence:
-        parts.append("主要论据包括：" + " ".join(evidence))
+        parts.append("论证依据：" + " ".join(evidence))
     return " ".join(parts)
 
 
@@ -533,10 +532,89 @@ def weekly_situation_summary(candidates: list[ArticleCandidate]) -> str:
     return "".join(parts)
 
 
-def weekly_judgment_sentence(candidate: ArticleCandidate, limit: int = 110) -> str:
+_PROFESSIONAL_PREFIXES = (
+    ("作者对", "对"),
+    ("作者采取", "采取"),
+    ("作者持", "持"),
+    ("作者支持", "支持"),
+    ("作者反对", "反对"),
+    ("作者认为", "认为"),
+    ("作者主张", "主张"),
+    ("作者建议", "建议"),
+    ("作者据此判断", "据此判断"),
+    ("该章节讨论", "考察"),
+    ("该章节构造", "提出"),
+    ("该意见书回应", "意见书回应"),
+    ("该意见书评估", "意见书评估"),
+    ("该证词向", "证词向"),
+    ("该数据短文衡量", "数据简报衡量"),
+    ("机构在该页面", "在该页面"),
+    ("文章比较", "比较"),
+    ("文章研究", "研究"),
+    ("文章评估", "评估"),
+    ("文章考察", "考察"),
+    ("文章指出", "指出"),
+    ("报告评估", "评估"),
+    ("报告研究", "研究"),
+    ("报告讨论", "讨论"),
+    ("报告指出", "指出"),
+    ("报告建议", "建议"),
+    ("报告主张", "主张"),
+    ("报告认为", "认为"),
+    ("报告依据", "依据"),
+    ("报告援引", "援引"),
+    ("报告采用", "采用"),
+    ("其核心判断是", "判断，"),
+    ("其判断是", "判断，"),
+)
+
+
+def _professionalize_weekly_sentence(candidate: ArticleCandidate, value: str) -> str:
+    text = _clean_text(value)
+    institution = _clean_text(candidate.institution_name)
+    if not text or text.startswith(institution):
+        return text
+    if text.startswith("该条目是 Bruegel 持续更新的"):
+        return "Bruegel持续更新的" + text[len("该条目是 Bruegel 持续更新的") :]
+    if text.startswith("当前抓取正文只保留了"):
+        return f"{institution}当前公开页仅提供了{text[len('当前抓取正文只保留了'):]}"
+    if text.startswith("因而该条目可作为"):
+        return "因此，该页面可作为" + text[len("因而该条目可作为") :]
+    for prefix, replacement in _PROFESSIONAL_PREFIXES:
+        if text.startswith(prefix):
+            return f"{institution}{replacement}{text[len(prefix):]}"
+    if text.startswith("作者"):
+        return f"{institution}{text[len('作者'):]}"
+    return text
+
+
+def weekly_argument_parts(candidate: ArticleCandidate) -> tuple[str, list[str]]:
     sections = _weekly_summary_sections(candidate)
-    judgment, _ = core_argument_parts(sections["核心观点"])
+    core = _weekly_pdf_core_text(sections["核心观点"])
+    judgment, evidence = core_argument_parts(core)
+    return (
+        _professionalize_weekly_sentence(candidate, judgment),
+        [_professionalize_weekly_sentence(candidate, point) for point in evidence],
+    )
+
+
+def weekly_judgment_sentence(candidate: ArticleCandidate, limit: int = 110) -> str:
+    judgment, _ = weekly_argument_parts(candidate)
     return _short_text(judgment, limit)
+
+
+def weekly_evidence_sentence(candidate: ArticleCandidate, limit: int = 130) -> str:
+    _, evidence = weekly_argument_parts(candidate)
+    if not evidence:
+        return ""
+    evidence = sorted(
+        enumerate(evidence),
+        key=lambda pair: (
+            -int(bool(re.search(r"\d|数据|案例|估算|引用|援引|调查|访谈|结果显示|表明|份额|比例|增长|依据", pair[1]))),
+            pair[0],
+        ),
+    )
+    return _short_text(evidence[0][1], limit)
 
 
 def weekly_read_reason(candidate: ArticleCandidate) -> str:
@@ -594,7 +672,7 @@ def weekly_chapter_viewpoints(
 
 def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
     priority_items = weekly_priority_items(candidates)
-    topic_pages, _ = weekly_pdf_page_plan(candidates)
+    topic_pages, analysis_pages = weekly_pdf_page_plan(candidates)
     top_reads = weekly_top_reads(candidates)
     viewpoints = weekly_chapter_viewpoints(candidates)
 
@@ -606,17 +684,20 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate])
     ]
     for index, item in enumerate(priority_items, 1):
         lines.append(
-            f"- P.{topic_pages[item.url]:02d}｜[主题 {index:02d}｜{item.chinese_title or item.title}](#{_topic_anchor(index)})"
+            f"- P.{topic_pages[item.url]:02d}-{analysis_pages[item.url]:02d}｜[主题 {index:02d}｜{item.chinese_title or item.title}](#{_topic_anchor(index)})"
         )
     lines.extend(["", "## 本周态势", "", weekly_situation_summary(candidates), ""])
 
     if top_reads:
         lines.extend(["## 本周必读", ""])
         for index, item in enumerate(top_reads, 1):
-            judgment = weekly_judgment_sentence(item)
-            lines.append(
-                f"{index}. **{judgment}** —— {item.institution_name}"
-                f"（{item.priority}｜{weekly_read_reason(item)}）[原文]({item.url})"
+            lines.extend(
+                [
+                    f"{index}. **[{item.chinese_title or item.title}]({item.url})**",
+                    f"   - **研判**：{weekly_judgment_sentence(item, 180)}",
+                    f"   - **证据**：{weekly_evidence_sentence(item, 160)}",
+                    f"   - **来源**：{item.institution_name}｜{item.priority}｜{weekly_chapter_name(item)}",
+                ]
             )
         lines.append("")
 
@@ -634,7 +715,7 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate])
     for index, item in enumerate(priority_items, 1):
         title = item.chinese_title or item.title
         sections = _weekly_summary_sections(item)
-        judgment, evidence = core_argument_parts(sections["核心观点"])
+        judgment, evidence = weekly_argument_parts(item)
         lines.extend(
             [
                 f'<a id="{_topic_anchor(index)}"></a>',
@@ -653,9 +734,11 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate])
             for point in evidence:
                 lines.append(f"  - {_short_text(point, 180)}")
         if sections["建议"]:
-            lines.append(f"- **政策建议**：{_bold_first_sentence(sections['建议'])}")
+            advice = _professionalize_weekly_sentence(item, sections["建议"])
+            lines.append(f"- **政策建议**：{_bold_first_sentence(advice)}")
         if sections["中国/上海参考"]:
-            lines.append(f"- **中国/上海参考**：{_bold_first_sentence(sections['中国/上海参考'])}")
+            reference = _professionalize_weekly_sentence(item, sections["中国/上海参考"])
+            lines.append(f"- **中国/上海参考**：{_bold_first_sentence(reference)}")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
@@ -1029,9 +1112,11 @@ a { color: #14456e; text-decoration: none; }
 .situation p { margin: 0; font-size: 10pt; }
 
 .top-reads ol { margin: 0; padding: 0; list-style: none; counter-reset: reads; }
-.top-reads li { counter-increment: reads; display: flex; gap: 3.4mm; padding: 2.2mm 0; border-bottom: .4pt dashed #c7d0d8; page-break-inside: avoid; }
+.top-reads li { counter-increment: reads; display: flex; gap: 3.4mm; padding: 3mm 0; border-bottom: .4pt dashed #c7d0d8; page-break-inside: avoid; }
 .top-reads li::before { content: counter(reads, decimal-leading-zero); font-family: Georgia, serif; font-size: 13pt; color: #b84c3d; font-weight: 700; min-width: 8mm; }
-.top-reads .judgment { display: block; font-weight: 700; font-size: 9.8pt; line-height: 1.58; }
+.top-reads .read-title { display: block; font-family: "Source Han Serif SC", "Noto Serif CJK SC", SimSun, serif; font-weight: 800; font-size: 11pt; line-height: 1.45; margin-bottom: 1.2mm; }
+.top-reads .read-digest, .top-reads .read-evidence { display: block; font-size: 9.2pt; line-height: 1.55; margin-top: .8mm; }
+.top-reads .read-digest b, .top-reads .read-evidence b { color: #b84c3d; }
 .top-reads .meta { display: block; color: #5f6b75; font-size: 8.5pt; margin-top: 1mm; }
 
 .viewpoints .chapter { margin: 0 0 5mm; page-break-inside: avoid; }
@@ -1048,7 +1133,7 @@ a { color: #14456e; text-decoration: none; }
 .comic-lead img { width: 100%; border: .6pt solid #d7dee5; }
 .comic-lead .note { font-size: 9pt; color: #40505c; background: #faf6ee; border-left: 2.4pt solid #c89b52; padding: 3mm 4mm; margin: 0 0 5mm; }
 
-.topic-card { padding: 7mm 9mm 8mm; page-break-before: always; break-before: page; }
+.topic-card { padding: 8mm 10mm 9mm; page-break-before: always; break-before: page; }
 .topic-card .card-head { display: flex; align-items: center; gap: 3mm; margin-bottom: 3mm; }
 .chip { font-size: 8pt; font-weight: 700; padding: .8mm 3mm; border-radius: 999px; }
 .chip.pri-P0 { background: #b84c3d; color: #fff; }
@@ -1058,22 +1143,20 @@ a { color: #14456e; text-decoration: none; }
 .topic-card h3 { font-size: 15pt; margin: 0 0 1.6mm; line-height: 1.35; }
 .topic-card h3 a { color: #14456e; }
 .topic-card .meta { color: #5f6b75; font-size: 8.5pt; margin-bottom: 3mm; }
-.topic-main { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); gap: 4mm; align-items: start; margin-bottom: 3mm; }
-.topic-main.no-comic { grid-template-columns: 1fr; }
-.topic-card figure.comic { margin: 0; }
+.topic-card figure.comic { margin: 0 0 4mm; }
 .topic-card figure.comic img { width: 100%; border: .6pt solid #d7dee5; border-radius: 2pt; }
-.topic-copy { min-width: 0; }
-.judgment-box { background: #14456e; color: #ffffff; padding: 3mm 4mm; border-radius: 2pt; margin-bottom: 3mm; page-break-inside: avoid; }
+.judgment-box { background: #14456e; color: #ffffff; padding: 4mm 5mm; border-radius: 2pt; margin-bottom: 3mm; page-break-inside: avoid; }
 .judgment-box .label { font-size: 8pt; letter-spacing: .25em; color: #bcd2e4; display: block; margin-bottom: 1.2mm; }
-.judgment-box p { margin: 0; font-size: 9.4pt; font-weight: 700; line-height: 1.5; }
+.judgment-box p { margin: 0; font-size: 10.5pt; font-weight: 700; line-height: 1.55; }
+.topic-analysis .analysis-kicker { margin: 1mm 0 4mm; color: #b84c3d; font-weight: 800; letter-spacing: .18em; font-size: 9pt; }
 .evidence { margin: 0; page-break-inside: avoid; }
-.evidence .label { font-size: 8.5pt; font-weight: 700; color: #b84c3d; letter-spacing: .12em; }
-.evidence ul { margin: 1.2mm 0 0; padding-left: 0; list-style: none; }
-.evidence li { position: relative; padding: .8mm 0 .8mm 5mm; font-size: 8.5pt; line-height: 1.5; }
+.evidence .label { font-size: 10.5pt; font-weight: 800; color: #b84c3d; letter-spacing: .12em; }
+.evidence ul { margin: 2mm 0 4mm; padding-left: 0; list-style: none; }
+.evidence li { position: relative; padding: 1.5mm 0 1.5mm 5mm; font-size: 10pt; line-height: 1.65; }
 .evidence li::before { content: ""; position: absolute; left: 1mm; top: 2.7mm; width: 2mm; height: 2mm; background: #c89b52; }
 .twin { display: flex; gap: 4mm; page-break-inside: avoid; }
-.twin .box { flex: 1; border-radius: 2pt; padding: 2.8mm 3.6mm; font-size: 8.4pt; line-height: 1.55; }
-.twin .box h4 { margin: 0 0 1.6mm; font-size: 9.5pt; }
+.twin .box { flex: 1; border-radius: 2pt; padding: 3.6mm 4.2mm; font-size: 9.5pt; line-height: 1.65; }
+.twin .box h4 { margin: 0 0 1.6mm; font-size: 10.5pt; }
 .twin .advice { background: #f0f6f0; border-top: 2.4pt solid #4f7d5a; }
 .twin .advice h4 { color: #3c6246; }
 .twin .reference { background: #fbf1ee; border-top: 2.4pt solid #b84c3d; }
@@ -1090,13 +1173,13 @@ def _magazine_topic_card_html(
     item: ArticleCandidate,
 ) -> str:
     sections = _weekly_summary_sections(item)
-    judgment, evidence = core_argument_parts(sections["核心观点"])
+    judgment, evidence = weekly_argument_parts(item)
     title = escape(_clean_text(item.chinese_title or item.title))
     url = escape(item.url, quote=True)
     chapter = escape(weekly_chapter_name(item))
     pri = escape(item.priority)
     parts = [
-        f'<section class="topic-card" id="{_topic_anchor(index)}">',
+        f'<section class="topic-card topic-primary" id="{_topic_anchor(index)}">',
         '<div class="card-head">',
         f'<span class="chip pri-{pri}">{pri}</span>',
         f'<span class="chip chapter">{chapter}</span>',
@@ -1108,16 +1191,12 @@ def _magazine_topic_card_html(
         + "</p>",
     ]
     comic_src = weekly_topic_comic_markdown_src(date, index)
-    parts.append(f'<div class="topic-main{"" if comic_src else " no-comic"}">')
     if comic_src:
         parts.extend(
             [
-                '<div class="topic-visual">',
                 f'<figure class="comic"><img src="{escape(comic_src, quote=True)}" alt="主题 {index:02d} 漫画"></figure>',
-                "</div>",
             ]
         )
-    parts.append('<div class="topic-copy">')
     if judgment:
         parts.extend(
             [
@@ -1127,18 +1206,32 @@ def _magazine_topic_card_html(
                 "</div>",
             ]
         )
+    parts.append("</section>")
+    parts.extend(
+        [
+            '<section class="topic-card topic-analysis">',
+            '<div class="card-head">',
+            f'<span class="chip pri-{pri}">{pri}</span>',
+            f'<span class="chip chapter">{chapter}</span>',
+            f'<span class="idx">主题 {index:02d} / {total:02d} · 论证页</span>',
+            "</div>",
+            f'<h3><a href="{url}">{title}</a></h3>',
+            '<p class="analysis-kicker">论证与政策含义</p>',
+        ]
+    )
     if evidence:
         parts.append('<div class="evidence"><span class="label">主要论据</span><ul>')
         for point in evidence:
-            parts.append(f"<li>{escape(_short_text(point, 190))}</li>")
+            parts.append(f"<li>{escape(_short_text(point, 240))}</li>")
         parts.append("</ul></div>")
-    parts.extend(["</div>", "</div>"])
     boxes: list[str] = []
     if sections["建议"]:
-        boxes.append(f'<div class="box advice"><h4>政策建议</h4>{escape(_short_text(sections["建议"], 460))}</div>')
+        advice = _professionalize_weekly_sentence(item, sections["建议"])
+        boxes.append(f'<div class="box advice"><h4>政策建议</h4>{escape(_short_text(advice, 460))}</div>')
     if sections["中国/上海参考"]:
+        reference = _professionalize_weekly_sentence(item, sections["中国/上海参考"])
         boxes.append(
-            f'<div class="box reference"><h4>中国 / 上海参考</h4>{escape(_short_text(sections["中国/上海参考"], 460))}</div>'
+            f'<div class="box reference"><h4>中国 / 上海参考</h4>{escape(_short_text(reference, 460))}</div>'
         )
     if boxes:
         parts.extend(['<div class="twin">', *boxes, "</div>"])
@@ -1154,12 +1247,12 @@ def render_weekly_magazine_html(
 ) -> str:
     priority_items = weekly_priority_items(candidates)
     top_reads = weekly_top_reads(candidates)
-    viewpoints = weekly_chapter_viewpoints(candidates)
+    viewpoints = weekly_chapter_viewpoints(candidates, per_chapter=2)
     institutions = len({item.institution_slug for item in candidates})
 
     body: list[str] = ['<div class="brandbar"><span></span><span></span><span></span></div>']
 
-    # Cover page: situation + must reads.
+    # Four fixed front pages keep the three-layer assessment and TOC independent.
     body.append('<div class="page cover pagebreak">')
     body.append('<p class="cover-kicker">Global Tech Think Tank Watch</p>')
     body.append("<h1>国际科技智库周报</h1>")
@@ -1175,21 +1268,28 @@ def render_weekly_magazine_html(
         '<section class="situation avoid-break"><h2>本周态势</h2>'
         f"<p>{escape(weekly_situation_summary(candidates))}</p></section>"
     )
+    body.append("</div>")
+
+    body.append('<div class="page top-reads-page pagebreak">')
     if top_reads:
         body.append('<section class="top-reads"><h2>本周必读</h2><ol>')
         for item in top_reads:
-            judgment = escape(weekly_judgment_sentence(item))
+            judgment = escape(weekly_judgment_sentence(item, 180))
+            evidence = escape(weekly_evidence_sentence(item, 160))
+            title = escape(_clean_text(item.chinese_title or item.title))
+            url = escape(item.url, quote=True)
             body.append(
                 "<li><span>"
-                f'<span class="judgment"><a href="{escape(item.url, quote=True)}">{judgment}</a></span>'
-                f'<span class="meta">{escape(item.institution_name)} · {escape(item.priority)} · '
-                f"{escape(weekly_read_reason(item))}</span>"
+                f'<span class="read-title"><a href="{url}">{title}</a></span>'
+                f'<span class="read-digest"><b>研判</b>　{judgment}</span>'
+                + (f'<span class="read-evidence"><b>证据</b>　{evidence}</span>' if evidence else "")
+                + f'<span class="meta">{escape(item.institution_name)} · {escape(item.priority)} · {escape(weekly_chapter_name(item))}</span>'
                 "</span></li>"
             )
         body.append("</ol></section>")
     body.append("</div>")
 
-    # Viewpoints + TOC page.
+    # Viewpoints page.
     body.append('<div class="page pagebreak">')
     if viewpoints:
         body.append('<section class="viewpoints"><h2>议题观点速览</h2>')
@@ -1203,7 +1303,10 @@ def render_weekly_magazine_html(
                 )
             body.append("</ul></div>")
         body.append("</section>")
-    body.append('<section class="toc"><h2>本期目录</h2><ul>')
+    body.append("</div>")
+
+    # TOC page.
+    body.append('<div class="page pagebreak"><section class="toc"><h2>本期目录</h2><ul>')
     for index, item in enumerate(priority_items, 1):
         body.append(
             f'<li><span class="pri">{escape(item.priority)}</span>'
