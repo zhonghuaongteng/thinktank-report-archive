@@ -350,8 +350,23 @@ def summary_sections(candidate: ArticleCandidate) -> dict[str, str]:
     parsed = parse_structured_summary(candidate.chinese_summary)
     source = _fallback_source(candidate)
     core = parsed["核心观点"] or _fallback_core(candidate)
-    advice = parsed["建议"] or _fallback_advice(candidate, source)
-    reference = parsed["中国/上海参考"] or _fallback_china_shanghai_reference(candidate, source)
+    has_markdown_sections = bool(
+        re.search(
+            r"(?m)^\s*#{2,4}\s*(?:"
+            + "|".join(re.escape(alias) for alias in sorted(ALIAS_TO_LABEL, key=len, reverse=True))
+            + r")\s*$",
+            candidate.chinese_summary or "",
+        )
+    )
+    if has_markdown_sections:
+        # Archive cards use Markdown headings as an explicit section contract.
+        # An omitted optional heading means the source did not support that field;
+        # do not reinterpret words such as “需要” inside 核心观点 as a policy section.
+        advice = parsed["建议"]
+        reference = parsed["中国/上海参考"]
+    else:
+        advice = parsed["建议"] or _fallback_advice(candidate, source)
+        reference = parsed["中国/上海参考"] or _fallback_china_shanghai_reference(candidate, source)
 
     advice = _resolve_distinct_section(core, advice)
     reference = _resolve_distinct_section(f"{core} {advice}", reference)

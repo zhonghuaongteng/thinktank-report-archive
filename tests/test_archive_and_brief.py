@@ -833,6 +833,35 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertTrue(manifest.exists())
             self.assertIn("科普化、可视化", manifest.read_text(encoding="utf-8"))
 
+    def test_weekly_comic_prompts_respect_omitted_markdown_optional_sections(self):
+        from thinktank_watch.brief import write_weekly_comic_prompts
+
+        candidate = ArticleCandidate(
+            institution_slug="rand",
+            institution_name="RAND",
+            institution_type="think_tank",
+            title="Energy and water technology survey",
+            chinese_title="能源与水技术调查",
+            url="https://example.org/energy-water",
+            published_date="2026-07-23",
+            content_type="report",
+            priority="P1",
+            topic_tags=["科技创新"],
+            chinese_summary=(
+                "### 核心观点\n\n"
+                "报告认为成熟能源技术近期可用，新兴路线仍需要继续验证。"
+                "研究需要同时考察成熟度、可部署性、成本和后勤负担。"
+            ),
+        )
+
+        with tempfile.TemporaryDirectory() as tmp:
+            prompts = write_weekly_comic_prompts("2026-07-26", [candidate], Path(tmp) / "comic")
+
+            text = prompts[0].read_text(encoding="utf-8")
+            self.assertNotIn("政策含义（报告确有）", text)
+            self.assertNotIn("涉华/涉沪内容（报告确有）", text)
+            self.assertNotIn("### 核心观点", text.split("## 需要表达的核心内容", 1)[1].split("## 版面结构", 1)[0])
+
     def test_write_daily_brief_creates_pdf_when_reportlab_is_available(self):
         try:
             import reportlab  # noqa: F401
