@@ -1020,6 +1020,30 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertEqual(sections["建议"], "")
         self.assertEqual(sections["中国/上海参考"], "")
 
+    def test_structured_core_only_does_not_infer_optional_sections(self):
+        from thinktank_watch.summary import summary_sections
+
+        candidate = ArticleCandidate(
+            institution_slug="rand",
+            institution_name="RAND",
+            institution_type="think_tank",
+            title="Energy and water technology survey",
+            chinese_title="能源与水技术评估",
+            url="https://example.org/energy-water",
+            published_date="2026-07-23",
+            priority="P1",
+            chinese_summary=(
+                "### 核心观点\n\n"
+                "报告更新能源与水技术调查，并明确说明本卷观察独立于第一卷的投资建议。"
+            ),
+        )
+
+        sections = summary_sections(candidate)
+
+        self.assertIn("报告更新能源与水技术调查", sections["核心观点"])
+        self.assertEqual(sections["建议"], "")
+        self.assertEqual(sections["中国/上海参考"], "")
+
     def test_core_argument_parts_prefers_explicit_judgment_sentence(self):
         from thinktank_watch.summary import core_argument_parts
 
