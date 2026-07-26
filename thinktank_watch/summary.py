@@ -350,8 +350,16 @@ def summary_sections(candidate: ArticleCandidate) -> dict[str, str]:
     parsed = parse_structured_summary(candidate.chinese_summary)
     source = _fallback_source(candidate)
     core = parsed["核心观点"] or _fallback_core(candidate)
-    advice = parsed["建议"] or _fallback_advice(candidate, source)
-    reference = parsed["中国/上海参考"] or _fallback_china_shanghai_reference(candidate, source)
+    has_structured_summary = bool(SECTION_PATTERN.search(candidate.chinese_summary or ""))
+    if has_structured_summary:
+        # An explicitly structured archive is authoritative about omitted
+        # optional sections. Do not manufacture advice or China/Shanghai
+        # references from words that merely appear inside 核心观点.
+        advice = parsed["建议"]
+        reference = parsed["中国/上海参考"]
+    else:
+        advice = parsed["建议"] or _fallback_advice(candidate, source)
+        reference = parsed["中国/上海参考"] or _fallback_china_shanghai_reference(candidate, source)
 
     advice = _resolve_distinct_section(core, advice)
     reference = _resolve_distinct_section(f"{core} {advice}", reference)

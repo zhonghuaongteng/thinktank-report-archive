@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>国际科技智库周报（2026-07-26）</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+@page { size: A4; margin: 13mm 12mm; }
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
+  color: #172026; margin: 0; background: #eef1f4; line-height: 1.66; font-size: 10.5pt;
+}
+main { max-width: 186mm; margin: 0 auto; background: #ffffff; }
+@media screen { main { margin: 24px auto; box-shadow: 0 18px 48px rgba(23,32,38,.14); } body { padding: 0 12px; } }
+@media print { body { background: #ffffff; } main { max-width: none; } }
+h1, h2, h3 { font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", serif; }
+a { color: #14456e; text-decoration: none; }
+
+.page { padding: 10mm 11mm; }
+.pagebreak { page-break-after: always; }
+.avoid-break { page-break-inside: avoid; break-inside: avoid; }
+
+.brandbar { display: flex; height: 7px; }
+.brandbar span:nth-child(1) { flex: 4; background: #1f5f8b; }
+.brandbar span:nth-child(2) { flex: 2; background: #b84c3d; }
+.brandbar span:nth-child(3) { flex: 3; background: #4f7d5a; }
+
+.cover-kicker { letter-spacing: .35em; font-size: 8.5pt; color: #b84c3d; font-weight: 700; margin: 6mm 0 2.4mm; text-transform: uppercase; }
+.cover h1 { font-size: 26pt; margin: 0 0 3.2mm; color: #14456e; line-height: 1.2; }
+.cover .issue-meta { color: #5f6b75; font-size: 10pt; border-top: 1.4pt solid #172026; border-bottom: .4pt solid #c7d0d8; padding: 2.6mm 0; display: flex; gap: 6mm; flex-wrap: wrap; }
+.situation { background: #f2f6f9; border-left: 3pt solid #1f5f8b; padding: 3.2mm 4.2mm; margin: 4.6mm 0; }
+.situation h2, .top-reads h2, .viewpoints > h2, .toc h2, .comic-lead h2 { font-size: 13.5pt; color: #14456e; margin: 0 0 3mm; }
+.situation p { margin: 0; font-size: 10pt; }
+
+.top-reads ol { margin: 0; padding: 0; list-style: none; counter-reset: reads; }
+.top-reads li { counter-increment: reads; display: flex; gap: 3.4mm; padding: 3mm 0; border-bottom: .4pt dashed #c7d0d8; page-break-inside: avoid; }
+.top-reads li::before { content: counter(reads, decimal-leading-zero); font-family: Georgia, serif; font-size: 13pt; color: #b84c3d; font-weight: 700; min-width: 8mm; }
+.top-reads .read-title { display: block; font-family: "Source Han Serif SC", "Noto Serif CJK SC", SimSun, serif; font-weight: 800; font-size: 11pt; line-height: 1.45; margin-bottom: 1.2mm; }
+.top-reads .read-digest, .top-reads .read-evidence { display: block; font-size: 9.2pt; line-height: 1.55; margin-top: .8mm; }
+.top-reads .read-digest b, .top-reads .read-evidence b { color: #b84c3d; }
+.top-reads .meta { display: block; color: #5f6b75; font-size: 8.5pt; margin-top: 1mm; }
+
+.viewpoints .chapter { margin: 0 0 5mm; page-break-inside: avoid; }
+.viewpoints h3 { font-size: 11pt; color: #ffffff; background: #14456e; display: inline-block; padding: 1mm 4mm; border-radius: 2pt; margin: 0 0 2.4mm; }
+.viewpoints ul { margin: 0; padding-left: 0; list-style: none; }
+.viewpoints li { padding: 1.6mm 0 1.6mm 4mm; border-left: 1.6pt solid #d8e0e7; font-size: 9.5pt; }
+.viewpoints li b { color: #b84c3d; }
+
+.toc ul { margin: 0; padding: 0; list-style: none; column-count: 2; column-gap: 8mm; }
+.toc li { font-size: 9pt; padding: 1.4mm 0; border-bottom: .4pt dotted #c7d0d8; break-inside: avoid; }
+.toc .pri { font-weight: 700; color: #b84c3d; margin-right: 2mm; }
+
+.comic-lead figure { margin: 0 0 3mm; }
+.comic-lead img { width: 100%; border: .6pt solid #d7dee5; }
+.comic-lead .note { font-size: 9pt; color: #40505c; background: #faf6ee; border-left: 2.4pt solid #c89b52; padding: 3mm 4mm; margin: 0 0 5mm; }
+
+.topic-card { padding: 8mm 10mm 9mm; page-break-before: always; break-before: page; }
+.topic-card .card-head { display: flex; align-items: center; gap: 3mm; margin-bottom: 3mm; }
+.chip { font-size: 8pt; font-weight: 700; padding: .8mm 3mm; border-radius: 999px; }
+.chip.pri-P0 { background: #b84c3d; color: #fff; }
+.chip.pri-P1 { background: #e9d9d5; color: #8b2f2a; }
+.chip.chapter { background: #eef3f7; color: #14456e; border: .5pt solid #c7d7e3; }
+.card-head .idx { margin-left: auto; color: #9aa7b1; font-size: 8.5pt; }
+.topic-card h3 { font-size: 15pt; margin: 0 0 1.6mm; line-height: 1.35; }
+.topic-card h3 a { color: #14456e; }
+.topic-card .meta { color: #5f6b75; font-size: 8.5pt; margin-bottom: 3mm; }
+.topic-card figure.comic { margin: 0 0 4mm; }
+.topic-card figure.comic img { width: 100%; border: .6pt solid #d7dee5; border-radius: 2pt; }
+.judgment-box { background: #14456e; color: #ffffff; padding: 4mm 5mm; border-radius: 2pt; margin-bottom: 3mm; page-break-inside: avoid; }
+.judgment-box .label { font-size: 8pt; letter-spacing: .25em; color: #bcd2e4; display: block; margin-bottom: 1.2mm; }
+.judgment-box p { margin: 0; font-size: 10.5pt; font-weight: 700; line-height: 1.55; }
+.topic-analysis .analysis-kicker { margin: 1mm 0 4mm; color: #b84c3d; font-weight: 800; letter-spacing: .18em; font-size: 9pt; }
+.evidence { margin: 0; page-break-inside: avoid; }
+.evidence .label { font-size: 10.5pt; font-weight: 800; color: #b84c3d; letter-spacing: .12em; }
+.evidence ul { margin: 2mm 0 4mm; padding-left: 0; list-style: none; }
+.evidence li { position: relative; padding: 1.5mm 0 1.5mm 5mm; font-size: 10pt; line-height: 1.65; }
+.evidence li::before { content: ""; position: absolute; left: 1mm; top: 2.7mm; width: 2mm; height: 2mm; background: #c89b52; }
+.twin { display: flex; gap: 4mm; page-break-inside: avoid; }
+.twin .box { flex: 1; border-radius: 2pt; padding: 3.6mm 4.2mm; font-size: 9.5pt; line-height: 1.65; }
+.twin .box h4 { margin: 0 0 1.6mm; font-size: 10.5pt; }
+.twin .advice { background: #f0f6f0; border-top: 2.4pt solid #4f7d5a; }
+.twin .advice h4 { color: #3c6246; }
+.twin .reference { background: #fbf1ee; border-top: 2.4pt solid #b84c3d; }
+.twin .reference h4 { color: #8b2f2a; }
+.tracking { margin-top: 3.6mm; font-size: 8.5pt; color: #5f6b75; border-top: .4pt dashed #c7d0d8; padding-top: 2.2mm; }
+.footer-note { color: #9aa7b1; font-size: 8pt; text-align: right; padding: 0 11mm 6mm; }
+</style>
+</head>
+<body>
+<main>
+<div class="brandbar"><span></span><span></span><span></span></div>
+<div class="page cover pagebreak">
+<p class="cover-kicker">Global Tech Think Tank Watch</p>
+<h1>国际科技智库周报</h1>
+<div class="issue-meta"><span>2026-07-26</span><span>新增 18 条</span><span>P0/P1 重点 18 条</span><span>覆盖机构 5 家</span></div>
+<section class="situation avoid-break"><h2>本周态势</h2><p>本周形成 18 条 P0/P1 重点，议题集中在科研体系、人才与创新政策、AI、数字基础设施与技术治理。产业链、制造与能源信号 7 条；AI 与数字基础设施信号 5 条；直接涉华条目 2 条。</p></section>
+</div>
+<div class="page top-reads-page pagebreak">
+<section class="top-reads"><h2>本周必读</h2><ol>
+<li><span><span class="read-title"><a href="https://www.rand.org/pubs/commentary/2026/07/safeguarding-the-future-in-the-ai-era-qa-with-sella.html">AI时代的未来安全：塞拉·内沃访谈</a></span><span class="read-digest"><b>研判</b>　兰德人工智能、安全与技术中心主任塞拉·内沃在访谈中判断，先进AI将在软件开发和数学发现上形成显著公共收益，同时网络攻击是未来一年最迫近的安全风险。</span><span class="read-evidence"><b>证据</b>　内沃援引模型风险评估进展称，智能体已经能够连接云实验室完成设计与合成流程，并越来越接近自主合成病原体；把智能体纳入评估后，还会暴露传统静态测试遗漏的能力。</span><span class="meta">RAND · P0 · AI、数字基础设施与技术治理</span></span></li>
+<li><span><span class="read-title"><a href="https://itif.org/publications/2026/07/21/testimony-regarding-science-standards-and-strategic-competition/">衡量真正重要的事项：科学、标准与战略竞争</a></span><span class="read-digest"><b>研判</b>　信息技术与创新基金会在美国参议院听证中主张根本改造二战后形成的“研究者主导、基础研究优先”科研范式，使联邦科研体系直接服务于与中国的技术经济竞争。</span><span class="read-evidence"><b>证据</b>　证词列举按购买力平价计算的2024年研发支出：中国约1.03万亿美元、美国约1.01万亿美元；2023年全时当量研究人员中国约300万、美国约170万；2025年《专利合作条约》申请中国73718件、美国52617件。</span><span class="meta">Information Technology and Innovation Foundation · P0 · 涉华科技竞争与上海参考</span></span></li>
+<li><span><span class="read-title"><a href="https://www.csis.org/analysis/tracking-global-compulsory-licensing-trends-biopharmaceuticals">全球生物医药强制许可趋势追踪</a></span><span class="read-digest"><b>研判</b>　机构承认《与贸易有关的知识产权协定》第31条和《多哈宣言》赋予成员在特殊情形下使用强制许可的合法空间，但总体立场明显怀疑其常态化效果，并支持自愿许可作为更有效的扩产机制。</span><span class="read-evidence"><b>证据</b>　报告梳理艾滋病、禽流感和新冠疫情三轮压力高峰，指出巴西和泰国的强制许可威胁多产生短期降价，却未形成持续制造能力；2005年各国对达菲的强制许可威胁也未增加供应，最终由罗氏与中国、印度合格生产商达成分许可扩产。</span><span class="meta">Center for Strategic and International Studies · P0 · 产业链、制造与能源基础设施</span></span></li>
+<li><span><span class="read-title"><a href="https://www.brookings.edu/articles/repaying-the-inheritance-how-education-and-research-policy-can-address-ais-borrowed-expertise/">偿还专业能力欠账：教育与科研政策如何应对AI借用的专家知识</a></span><span class="read-digest"><b>研判</b>　Brookings Center for Technology Innovation承认AI带来的生产率提升真实存在，但以强烈警示态度指出，这些收益依赖于工具出现前已形成判断力的一代专家，而初级人员的训练性工作、入门岗位和慢速研究正在被压缩，社会正在消耗一笔没有同步补充的“专业能力遗产”。</span><span class="read-evidence"><b>证据</b>　布鲁金斯学会讨论生成式AI提高当期生产率、同时削弱长期专业能力再生产的制度风险。</span><span class="meta">Brookings Center for Technology Innovation · P1 · AI、数字基础设施与技术治理</span></span></li>
+<li><span><span class="read-title"><a href="https://www.stepi.re.kr/site/stepien/ex/bbs/publicationView.do?pageIndex=1&amp;cbIdx=1303&amp;reIdx=135&amp;cateCont=A0508">韩国跨区域超级特区的创新特区改革方案</a></span><span class="read-digest"><b>研判</b>　韩国科学技术政策研究院评估“五极三特”战略下跨区域“超级特区”设计，主张把既有分散、小规模特区重组为跨行政边界、产业集中的上位协调平台。</span><span class="read-evidence"><b>证据</b>　机构支持特区改革，但强烈警示若不先整合现有制度，新增立法只会制造“第130个特区”，无法解决示范成果跨越商业化“死亡之谷”的问题。</span><span class="meta">Science and Technology Policy Institute Korea · P1 · 科研体系、人才与创新政策</span></span></li>
+</ol></section>
+</div>
+<div class="page pagebreak">
+<section class="viewpoints"><h2>议题观点速览</h2>
+<div class="chapter">
+<h3>科研体系、人才与创新政策（2 条）</h3><ul>
+<li><b>RAND</b>：机构立场积极支持大规模人才动员，同时强调单靠美国国内教育体系难以在25年内形成所需博士级科研规模，必须结合盟友人才与公私投资。</li>
+<li><b>Brookings Center for Technology Innovation</b>：机构明确支持这一战略继续推进，同时警示政策重心已经从“是否延续”转向“能否有效实施”，新获奖联盟的组织与执行能力将决定投资回报。</li>
+</ul></div>
+<div class="chapter">
+<h3>AI、数字基础设施与技术治理（2 条）</h3><ul>
+<li><b>RAND</b>：兰德人工智能、安全与技术中心主任塞拉·内沃在访谈中判断，先进AI将在软件开发和数学发现上形成显著公共收益，同时网络攻击是未来一年最迫近的安全风险。</li>
+<li><b>RAND</b>：机构对现有方案持明确怀疑态度：所测试的工具级防护不能稳定阻止领先大模型智能体协助潜在有害任务，单个软件开发者难以在缺少模型和智能体框架开发者配合时控制工具用途。</li>
+</ul></div>
+<div class="chapter">
+<h3>产业链、制造与能源基础设施（2 条）</h3><ul>
+<li><b>Center for Strategic and International Studies</b>：机构承认《与贸易有关的知识产权协定》第31条和《多哈宣言》赋予成员在特殊情形下使用强制许可的合法空间，但总体立场明显怀疑其常态化效果，并支持自愿许可作为更有效的扩产机制。</li>
+<li><b>Information Technology and Innovation Foundation</b>：信息技术与创新基金会把加拿大大学科研商业化不足界定为公共资助激励失配，主张将部分机构经费与可比的商业化成果挂钩。</li>
+</ul></div>
+<div class="chapter">
+<h3>涉华科技竞争与上海参考（2 条）</h3><ul>
+<li><b>Information Technology and Innovation Foundation</b>：信息技术与创新基金会在美国参议院听证中主张根本改造二战后形成的“研究者主导、基础研究优先”科研范式，使联邦科研体系直接服务于与中国的技术经济竞争。</li>
+<li><b>RAND</b>：机构采取审慎警示立场：储备规模、全国性设施和强化后的法律制度确实扩大了中国影响国际石油市场的潜力，但研究不判断中国是否具有以此施压、奖惩他国或重塑联盟的真实意图。</li>
+</ul></div>
+</section>
+</div>
+<div class="page pagebreak"><section class="toc"><h2>本期目录</h2><ul>
+<li><span class="pri">P0</span><a href="#topic-01">主题 01｜AI时代的未来安全：塞拉·内沃访谈</a></li>
+<li><span class="pri">P0</span><a href="#topic-02">主题 02｜以软件屏障限制AI智能体使用生物工具的可行性</a></li>
+<li><span class="pri">P0</span><a href="#topic-03">主题 03｜衡量真正重要的事项：科学、标准与战略竞争</a></li>
+<li><span class="pri">P0</span><a href="#topic-04">主题 04｜“火星之星”计划：美国2050年技术劳动力回溯推演</a></li>
+<li><span class="pri">P0</span><a href="#topic-05">主题 05｜全球生物医药强制许可趋势追踪</a></li>
+<li><span class="pri">P0</span><a href="#topic-06">主题 06｜中国战略石油储备作为地缘经济工具的情景推演</a></li>
+<li><span class="pri">P0</span><a href="#topic-07">主题 07｜保护AI算法洞见的分级安全框架</a></li>
+<li><span class="pri">P1</span><a href="#topic-08">主题 08｜美国如何抵御大规模AI网络攻击</a></li>
+<li><span class="pri">P1</span><a href="#topic-09">主题 09｜偿还专业能力欠账：教育与科研政策如何应对AI借用的专家知识</a></li>
+<li><span class="pri">P1</span><a href="#topic-10">主题 10｜以商业化成果挂钩加拿大大学资助</a></li>
+<li><span class="pri">P1</span><a href="#topic-11">主题 11｜美国制造业劳动生产率增长陷入停滞</a></li>
+<li><span class="pri">P1</span><a href="#topic-12">主题 12｜新一轮资助标志美国地方导向联邦投资进入扩张期</a></li>
+<li><span class="pri">P1</span><a href="#topic-13">主题 13｜美国创新体系需要大小企业协同</a></li>
+<li><span class="pri">P1</span><a href="#topic-14">主题 14｜欧盟防务航天中游制造循环经济及英国机会</a></li>
+<li><span class="pri">P1</span><a href="#topic-15">主题 15｜韩国跨区域超级特区的创新特区改革方案</a></li>
+<li><span class="pri">P1</span><a href="#topic-16">主题 16｜敏捷作战保障：能源与水技术评估</a></li>
+<li><span class="pri">P1</span><a href="#topic-17">主题 17｜变化市场中的消费者保护立法评估</a></li>
+<li><span class="pri">P1</span><a href="#topic-18">主题 18｜加拿大健康研究商业化：定向资助与扩大投入</a></li>
+</ul></section></div>
+<section class="topic-card topic-primary" id="topic-01">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 01 / 18</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/commentary/2026/07/safeguarding-the-future-in-the-ai-era-qa-with-sella.html">AI时代的未来安全：塞拉·内沃访谈</a></h3>
+<p class="meta">RAND｜AI治理, 科技创新, 数字经济｜2026-07-23</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/01-topic-safeguarding-the-future-in-the-ai-era-q-a-with-sella-nevo.jpg" alt="主题 01 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>兰德人工智能、安全与技术中心主任塞拉·内沃在访谈中判断，先进AI将在软件开发和数学发现上形成显著公共收益，同时网络攻击是未来一年最迫近的安全风险。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 01 / 18 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/commentary/2026/07/safeguarding-the-future-in-the-ai-era-qa-with-sella.html">AI时代的未来安全：塞拉·内沃访谈</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其态度兼具技术乐观与高强度风险警示：模型可能按需生成高质量、个性化软件，并把数学发现速度提高一个数量级以上；但端到端网络攻击能力也可能扩散至无需专业技能的全球网络犯罪者。</li>
+<li>内沃援引模型风险评估进展称，智能体已经能够连接云实验室完成设计与合成流程，并越来越接近自主合成病原体；把智能体纳入评估后，还会暴露传统静态测试遗漏的能力。</li>
+<li>访谈把近期网络风险判断为“进攻占优”，认为防守方需要时间追赶，同时指出AI最终也能增强网络防御。</li>
+<li>兰德团队与METR开展的Canary计划、开放模型评估和高安全数据中心研究，被用来说明技术评估、实验室安全与国家安全政策需要联动。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>内沃主张把智能体纳入前沿模型能力评估，持续评估开放模型的网络与生物风险，并为关键AI系统建设能够抵御高能力国家行为体数字、物理和内部人复合攻击的高安全数据中心。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-02">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 02 / 18</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA5000-1.html">以软件屏障限制AI智能体使用生物工具的可行性</a></h3>
+<p class="meta">RAND｜AI治理, 科技创新｜2026-07-20</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/02-topic-restricting-ai-agent-use-of-biological-tools-exploring-the-feasi.jpg" alt="主题 02 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>机构对现有方案持明确怀疑态度：所测试的工具级防护不能稳定阻止领先大模型智能体协助潜在有害任务，单个软件开发者难以在缺少模型和智能体框架开发者配合时控制工具用途。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 02 / 18 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA5000-1.html">以软件屏障限制AI智能体使用生物工具的可行性</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>兰德以计算生物学软件为测试对象，研究工具开发者能否仅通过嵌入文本或代码屏障，阻止AI智能体帮助非专业攻击者设计或修改危险生物材料。</li>
+<li>实验覆盖面向大模型、内容过滤器和智能体执行框架的多种防护，结果显示预运行检查虽相对最有效，仍会出现不一致拒绝。</li>
+<li>研究还观察到模型隐瞒或歪曲自身AI身份、忽略软件许可和开发者警告、绕过或关闭防护等行为；越狱和拒绝向量消融进一步削弱防护效果。</li>
+<li>报告据此把风险从生物软件扩展到网络安全、金融、医疗、法律和系统管理等高后果软件，认为“工具端声明—智能体端执行”之间存在系统性断裂。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>兰德建议大模型和智能体框架开发者建立标准化机制，使生物工具开发者能够声明AI使用限制，并由模型、内容过滤器和执行框架可靠执行；工具端防护应作为上游模型安全机制的补充，不能被视为独立风险缓释层。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-03">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 03 / 18</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/21/testimony-regarding-science-standards-and-strategic-competition/">衡量真正重要的事项：科学、标准与战略竞争</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜中国与上海相关, 先进制造, 科技创新｜2026-07-21</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/03-topic-testimony-to-the-us-senate-subcommittee-on-science-manufacturing.jpg" alt="主题 03 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>信息技术与创新基金会在美国参议院听证中主张根本改造二战后形成的“研究者主导、基础研究优先”科研范式，使联邦科研体系直接服务于与中国的技术经济竞争。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 03 / 18 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/21/testimony-regarding-science-standards-and-strategic-competition/">衡量真正重要的事项：科学、标准与战略竞争</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>机构立场强硬，认为全球市场一体化会自然带来规则趋同、中国缺乏原创创新能力、美国能够长期保持先进技术领先等前提均已失效，维持现状将危及先进产业生产能力和国家力量。</li>
+<li>证词列举按购买力平价计算的2024年研发支出：中国约1.03万亿美元、美国约1.01万亿美元；2023年全时当量研究人员中国约300万、美国约170万；2025年《专利合作条约》申请中国73718件、美国52617件。</li>
+<li>Information Technology and Innovation Foundation还称2025年3月至2026年2月中国在高质量自然和健康科学期刊发表58532篇、美国36860篇，中国在十个先进产业合计约占全球四分之一产出并领先其中七个，以此论证衡量体系必须从论文和投入扩展到技术生产与市场结果。</li>
+<li>政策方案包括把新增联邦资金定向用于“国家经济力量产业”的应用研发，引入产业配套资金，扩大企业资助大学和联邦实验室研究的税收抵免，并强化与中国有关的科研安全审查。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>机构建议提高联邦研发投入并优先支持国家经济力量产业；要求部分美国国家科学基金会工程项目获得产业配套资金，对企业资助大学和联邦实验室研究给予40%统一税收抵免；同时限制中国资金进入美国大学，扩大对涉军、军民融合和双用途合作的披露、审批与禁限规则，并对中国理工科学生和合作项目实施更细化的风险筛查。</div>
+<div class="box reference"><h4>中国 / 上海参考</h4>该证词将中国界定为兼具军事与技术经济能力的主要竞争者，并用研发投入、研究人员、论文、专利和先进产业产出说明中国已从追赶者转为部分领域的领先者。上述数据和判断均服务于ITIF推动美国竞争性科研政策的论证，应与其鲜明战略立场及对华限制主张一并阅读。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-04">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 04 / 18</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/perspectives/PEA3365-2.html">“火星之星”计划：美国2050年技术劳动力回溯推演</a></h3>
+<p class="meta">RAND｜科技创新, 科技人才｜2026-07-21</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/04-topic-the-men-and-women-of-project-firestar-how-the-united-states-deve.jpg" alt="主题 04 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>机构立场积极支持大规模人才动员，同时强调单靠美国国内教育体系难以在25年内形成所需博士级科研规模，必须结合盟友人才与公私投资。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 04 / 18 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/perspectives/PEA3365-2.html">“火星之星”计划：美国2050年技术劳动力回溯推演</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>兰德以2050年美国已完成土卫六殖民为虚构终点，采用回溯推演估算维持美国技术经济领导力所需的科研与工程劳动力扩张。</li>
+<li>情景估算博士级理工科研究人员需由2025年的约90万增至2050年的300万；美国国内潜力约可把规模扩大到175万，其余能力需要通过国际合作获得。</li>
+<li>工程师和技术人员培养同样关键，报告估计2030—2040年间年新增需求需提高近70%至约24万人；十年技术劳动力建设成本约1.1万亿美元，其中约3200亿美元为新增联邦投入、约8000亿美元由私营部门以培训等方式承担。</li>
+<li>RAND认为AI可提高劳动能力，却因竞争者也能获得同类工具，难以自动形成美国独占优势；中国在AI和高性能计算上的进展被设为近期主要竞争压力。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>报告通过情景方案提出联邦政府以长期项目牵引博士研究人员、工程师和技术员培养，并用税制激励企业承担在职培训；其中设想对参与计划的企业培训投入实行200%税前扣除，同时通过盟友科研合作弥补美国本土博士级人才供给不足。</div>
+<div class="box reference"><h4>中国 / 上海参考</h4>中国在该报告中同时承担现实竞争背景和虚构情景触发器两种角色：现实依据是中国在AI和高性能计算上的进展，2030年载人火星任务则是回溯故事设定。引用时应严格区分现实数据、作者假设和2050年叙事，不能把虚构任务当作中国既定计划。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-05">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 05 / 18</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/tracking-global-compulsory-licensing-trends-biopharmaceuticals">全球生物医药强制许可趋势追踪</a></h3>
+<p class="meta">Center for Strategic and International Studies｜先进制造, 科技创新｜2026-07-22</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/05-topic-tracking-global-compulsory-licensing-trends-in-biopharmaceutical.jpg" alt="主题 05 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>机构承认《与贸易有关的知识产权协定》第31条和《多哈宣言》赋予成员在特殊情形下使用强制许可的合法空间，但总体立场明显怀疑其常态化效果，并支持自愿许可作为更有效的扩产机制。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 05 / 18 · 论证页</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/tracking-global-compulsory-licensing-trends-biopharmaceuticals">全球生物医药强制许可趋势追踪</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>战略与国际问题研究中心回顾过去二十余年生物医药强制许可实践，讨论公共卫生危机中专利激励与药品可及性的平衡。</li>
+<li>报告梳理艾滋病、禽流感和新冠疫情三轮压力高峰，指出巴西和泰国的强制许可威胁多产生短期降价，却未形成持续制造能力；2005年各国对达菲的强制许可威胁也未增加供应，最终由罗氏与中国、印度合格生产商达成分许可扩产。</li>
+<li>新冠期间，吉利德向7家印度厂商自愿许可瑞德西韦，印度随后通过“疫苗友谊”向近100个国家供应逾2.98亿剂疫苗；默沙东又通过药品专利池授权印度及其他中低收入国家的27家仿制药企业生产莫努匹韦。</li>
+<li>Center for Strategic and International Studies据此强调，复杂生物制品还需要制造诀窍、质量控制、监管能力、供应链和公共卫生交付体系，法律上开放专利不能自动生成这些能力。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>机构主张把自愿许可、可信生产伙伴、技术转移、监管支持和制造能力投资作为扩大药品可及性的主路径；强制许可应限于例外情形，并与可验证的生产、质量和交付能力配套。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-06">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 06 / 18</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA5069-1.html">中国战略石油储备作为地缘经济工具的情景推演</a></h3>
+<p class="meta">RAND｜中国与上海相关, 先进制造｜2026-07-21</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/06-topic-china-s-strategic-petroleum-reserve-as-a-geoeconomic-tool-a-what.jpg" alt="主题 06 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>机构采取审慎警示立场：储备规模、全国性设施和强化后的法律制度确实扩大了中国影响国际石油市场的潜力，但研究不判断中国是否具有以此施压、奖惩他国或重塑联盟的真实意图。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 06 / 18 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA5069-1.html">中国战略石油储备作为地缘经济工具的情景推演</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>兰德以工作坊情景推演方式评估中国战略石油储备从能源韧性工具转化为外交或地缘经济杠杆的可能路径。</li>
+<li>专家组认为最可能的基线仍是“战略克制”，即优先保障能源安全、国内韧性和市场稳定，谨慎且少量释放储备；针对特定省份或部门短缺进行“精准纾困”的情景也被视为高度现实。</li>
+<li>报告进一步判断，未来二十年电气化、可再生能源和核能发展可能降低中国对石油的依赖，由此增加在危机中更积极使用储备、交换外交或地缘经济收益的政策空间。</li>
+<li>研究证据来自结构化工作坊与多情景比较，主要贡献是揭示可能性和触发条件，并未提供中国政府内部决策或既有行动的直接证据。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>工作坊建议持续监测中国战略石油储备的规模、管理规则、释放对象及能源转型进度，并把其变化纳入全球能源安全和国际力量平衡分析。</div>
+<div class="box reference"><h4>中国 / 上海参考</h4>报告提供的是中国战略石油储备“可能如何使用”的情景框架，最可能判断仍为克制释放，不能据此断言中国已把储备武器化。可直接跟踪的涉华变量包括储备法律制度、中央与商业及地方储备协同、危机中的定向释放以及能源转型后石油依赖变化。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-07">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 07 / 18</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA4685-1.html">保护AI算法洞见的分级安全框架</a></h3>
+<p class="meta">RAND｜AI治理, 数字经济｜2026-07-20</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/07-topic-securing-ai-algorithmic-insights.jpg" alt="主题 07 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>机构警示算法洞见既具有商业和战略价值，也可能降低危险AI能力门槛；由于几行代码、一次短谈或一次屏幕观察都可能泄露关键知识，单靠网络安全控制不足以覆盖攻击面。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 07 / 18 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA4685-1.html">保护AI算法洞见的分级安全框架</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>兰德为保护能够实质提升AI系统性能的算法洞见建立分级安全路线图，处理这类知识分散于代码、文档、通信、实验系统和人员经验、难以像模型权重一样隔离的问题。</li>
+<li>报告识别九类共44种攻击向量，提出五个累积式“洞见安全等级”，分别匹配五类对手行动能力，并把隔离分舱确立为核心原则。</li>
+<li>较低两级主要扩展企业安全基础和“按需知悉”实践，第三级加入正式分类、内部人风险、网络分段和供应链保障，第四、第五级则可能要求隔离设施、强化人员审查、分隔供应链以及限制远程办公、旅行和通信。</li>
+<li>RAND认为每一级都能形成有意义的改进，但保护高价值洞见免受高能力国家行为体攻击会显著改变普通科研协作，并可能需要多年准备和政府支持。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>RAND建议组织先识别算法洞见的载体和目标对手，再按相应安全等级配置分舱、访问控制、内部人风险、网络和供应链措施；对抗高能力国家行为体时，应提前评估科研开放度、人才流动和运营效率损失，并争取政府长期支持。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-08">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 08 / 18</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/how-us-can-survive-large-scale-ai-cyberattack">美国如何抵御大规模AI网络攻击</a></h3>
+<p class="meta">Center for Strategic and International Studies｜AI治理, 数字经济｜2026-07-23</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/08-topic-how-the-u-s-can-survive-a-large-scale-ai-cyberattack.jpg" alt="主题 08 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>Center for Strategic and International Studies持高度警示立场，认为未来大规模攻击可能由国家、恐怖组织乃至个人发动，美国能否渡过最初数日取决于全社会协同、可靠通信和跨部门互操作性。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 08 / 18 · 论证页</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/how-us-can-survive-large-scale-ai-cyberattack">美国如何抵御大规模AI网络攻击</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>战略与国际问题研究中心以电力、金融、通信、交通和医疗同时中断的2030年情景，评估AI降低网络攻击技能门槛后美国关键基础设施面临的系统性风险。</li>
+<li>Center for Strategic and International Studies援引先进模型在专家级攻防演练中达到73%任务成功率，并指出美国16个关键基础设施部门高度相互依赖，电力中断会向通信、金融、医疗和运输扩散。</li>
+<li>制度证据显示，网络安全和基础设施安全局虽承担国家协调职责，却缺少危机中指挥其他部门的明确权力；多数关键基础设施又由私营部门持有，政府不能仅靠行政系统完成防御。</li>
+<li>Center for Strategic and International Studies因此强调实体联合指挥空间、跨机构演练、实时威胁情报共享、免费或低成本情报库以及防御型AI研发。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>Center for Strategic and International Studies建议扩展网络统一协调组和联合网络防御协作机制，设立由网络安全和基础设施安全局、能源部、联邦调查局、军方、情报机构及州和地方政府共同驻场的应急行动中心；同时以公共资助、联合演练和共享协议激励私营部门开发防御型AI、开放威胁情报并提前修补关键网络。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-09">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 09 / 18</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/repaying-the-inheritance-how-education-and-research-policy-can-address-ais-borrowed-expertise/">偿还专业能力欠账：教育与科研政策如何应对AI借用的专家知识</a></h3>
+<p class="meta">Brookings Center for Technology Innovation｜AI治理, 科技创新｜2026-07-20</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/09-topic-repaying-the-inheritance-how-education-and-research-policy-can-a.jpg" alt="主题 09 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>Brookings Center for Technology Innovation承认AI带来的生产率提升真实存在，但以强烈警示态度指出，这些收益依赖于工具出现前已形成判断力的一代专家，而初级人员的训练性工作、入门岗位和慢速研究正在被压缩，社会正在消耗一笔没有同步补充的“专业能力遗产”。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 09 / 18 · 论证页</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/repaying-the-inheritance-how-education-and-research-policy-can-address-ais-borrowed-expertise/">偿还专业能力欠账：教育与科研政策如何应对AI借用的专家知识</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>布鲁金斯学会讨论生成式AI提高当期生产率、同时削弱长期专业能力再生产的制度风险。</li>
+<li>报告区分了信息检索等常规任务与提出新问题、创造新知识等专家任务，认为AI在前者的增益更明显，后者仍高度依赖使用者自身深度；语言模型还会代替使用者完成问题框定，并可能给出可信但错误的答案，因此风险高于计算器替代手工运算。</li>
+<li>Brookings Center for Technology Innovation以教育、职业训练和科研资助为证据链，指出低年级基础能力、高等教育资格认证、企业学徒阶段及高风险原创研究均可能因无节制使用AI而失去训练功能。</li>
+<li>报告提出的核心立场是“先形成能力、再使用工具”，并把教师培训视为当前杠杆最高、投入仍明显不足的教育政策。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>Brookings Center for Technology Innovation建议基础教育分阶段引入AI并系统建设AI素养与教师能力；大学、专业资格机构和企业应保留可验证的无AI考核与训练阶段；科研资助应增加识别新框架和支持高风险慢研究的试点；政府采购应要求教育AI提供学习支架和“有效困难”，以使用者能力发展而非即时满意度作为评价标准。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-10">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 10 / 18</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/20/paying-for-outcomes-tying-university-funding-to-commercial-results/">以商业化成果挂钩加拿大大学资助</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜科技创新, 先进制造｜2026-07-20</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/10-topic-paying-for-outcomes-tying-university-funding-to-commercial-resul.jpg" alt="主题 10 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>信息技术与创新基金会把加拿大大学科研商业化不足界定为公共资助激励失配，主张将部分机构经费与可比的商业化成果挂钩。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 10 / 18 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/20/paying-for-outcomes-tying-university-funding-to-commercial-results/">以商业化成果挂钩加拿大大学资助</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>机构肯定加拿大大学科研质量和国际连接度，但认为省级运行经费按招生和历史公式分配、联邦项目按同行评议质量分配、学费按学生数形成，均未使大学重视专利、加拿大本土衍生企业或先进产业产出。</li>
+<li>加拿大每年高等教育研发约190亿加元，科研投入占经济比重在七国集团中居前，论文产出也很强；但2024年每1000篇可引用论文仅形成约21件《专利合作条约》申请，德国为91件、美国86件、法国72件，先进产业占经济比重又从1995年的10%降至2022年的6.9%。</li>
+<li>报告据此判断，断点主要发生在知识被保护、融资、由本国企业吸收并规模化的阶段，增加零散项目难以改变大学的基本行为。</li>
+<li>Information Technology and Innovation Foundation反对政府统一规定知识产权归属、任期制度或技术转移办公室结构，认为政府应规定结果并允许大学自主选择实现方式。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>机构建议各省分阶段把研究型大学一部分运行经费与标准化商业化成果挂钩，并扩大由企业购买应用研究、测试、验证和原型服务的科研券；联邦政府应统一披露口径，要求受资助大学公开机构级和分行业商业化数据，并把一部分三大科研委员会、科研支持基金及科研基础设施经费按商业化绩效配置。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-11">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 11 / 18</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/20/us-manufacturing-labor-productivity-growth-has-stagnated/">美国制造业劳动生产率增长陷入停滞</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜先进制造, 科技创新｜2026-07-20</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/11-topic-us-manufacturing-labor-productivity-growth-has-stagnated.jpg" alt="主题 11 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>机构持明确警示立场：美国制造业劳动生产率年均增速从1987—2005年的3.8%降至2005—2023年的0.4%，持续时间和行业覆盖表明这并非普通周期波动。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 11 / 18 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/20/us-manufacturing-labor-productivity-growth-has-stagnated/">美国制造业劳动生产率增长陷入停滞</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>信息技术与创新基金会把制造业劳动生产率停滞视为美国长期增长、工资提升和全球产业竞争力的结构性风险。</li>
+<li>美国劳工统计局的27个制造行业数据中，仅皮革鞣制和烟草两个非先进产业在后一时期提高增速；计算机和电子产品制造年均增速从1.9%降至-1.2%，飞机制造也下降约3个百分点。</li>
+<li>Information Technology and Innovation Foundation认为生产率减速会提高单位劳动成本、压缩研发和设备投资，并使美国在一旦失去就难以恢复的先进产业中继续丧失市场份额。</li>
+<li>文章以中国在十个先进产业中合计接近四分之一全球产出、领先其中七个作为竞争压力证据，但未提供中美制造业生产率的直接同口径比较。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>机构建议美国国会为企业采用工业机器人、人工智能系统和先进制造软件等生产率提升技术提供25%税收抵免，以推动生产流程现代化并提高人均产出。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-12">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 12 / 18</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/place-based-federal-investment-expands/">新一轮资助标志美国地方导向联邦投资进入扩张期</a></h3>
+<p class="meta">Brookings Center for Technology Innovation｜科技创新｜2026-07-23</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/12-topic-new-awards-signal-the-expansion-of-the-place-based-federal-inves.jpg" alt="主题 12 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>机构明确支持这一战略继续推进，同时警示政策重心已经从“是否延续”转向“能否有效实施”，新获奖联盟的组织与执行能力将决定投资回报。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 12 / 18 · 论证页</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/place-based-federal-investment-expands/">新一轮资助标志美国地方导向联邦投资进入扩张期</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>布鲁金斯学会评估《芯片与科学法案》实施四年后，美国以区域创新引擎和技术中心为载体的地方导向型创新投资正由单项计划扩展为全国性组合。</li>
+<li>新一轮包括12个美国国家科学基金会区域创新引擎，每个联盟未来十年最多可获1.6亿美元，使引擎总数增至20个、潜在资助超过30亿美元；美国经济发展署另增6个技术中心实施奖，使其组合增至18个地区。</li>
+<li>加上2022年的区域挑战计划，已有50多个地区承担地方导向型技术经济发展任务，覆盖生物制造、量子、关键矿产、电网韧性和核能等领域。</li>
+<li>对首批项目的观察表明，早期绩效取决于能否建立独立而有执行力的团队、把宽泛技术假设收敛为具体应用方向，并用小规模试点同时形成交付成果和学习反馈。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>布鲁金斯学会建议美国国家科学基金会与经济发展署在项目变更、资金流领导、绩效报告和叙事口径上加强协调；新联盟应优先搭建跨大学、企业、劳动力组织和地方政府的共同运营机制，尽快明确技术“北极星”，并以竞争性种子项目和扩展项目检验需求与能力。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-13">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 13 / 18</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/20/america-needs-both-small-and-large-firms/">美国创新体系需要大小企业协同</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜科技创新｜2026-07-20</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/13-topic-america-needs-both-small-and-large-firms.jpg" alt="主题 13 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>机构明确支持同时扶持大小企业研发：小企业更集中于产品创新、试验颠覆性或利基技术，大企业则更有动力推进制造、物流和组织体系的流程创新，并承担规模化科研投入。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 13 / 18 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/20/america-needs-both-small-and-large-firms/">美国创新体系需要大小企业协同</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>信息技术与创新基金会反驳“小企业天然比大企业更具创新性”的竞争政策叙事，强调两类企业在创新体系中承担互补功能。</li>
+<li>美国国家科学基金会2023年数据显示，10至19人企业的研发强度约为营收的21.8%，2.5万人以上企业约为4.6%；但10至49人企业研发总额约200亿美元，50至249人企业约460亿美元，250人以上企业超过6550亿美元，其中2.5万人以上企业约2810亿美元。</li>
+<li>报告据此区分“研发强度”与“研发总贡献”，认为只用占营收比重评价大企业会低估其支撑半导体、AI、航天和医药大型科研计划的能力。</li>
+<li>文章以中国在先进产业中的竞争为紧迫背景，警示美国若把大小企业设为替代关系，会同时损害创业活力和规模化技术能力。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>机构建议将美国常规研发税收抵免由20%提高至40%，并降低申领行政成本，使初创企业的高风险产品创新与大企业的规模化流程创新均获得更强激励。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-14">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 14 / 18</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/external_publications/EP71406.html">欧盟防务航天中游制造循环经济及英国机会</a></h3>
+<p class="meta">RAND｜先进制造｜2026-07-20</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/14-topic-an-economic-analysis-of-midstream-manufacturing-in-the-eu-defenc.jpg" alt="主题 14 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>研究采用供应链映射、技术成熟度判断、法国、德国、意大利、荷兰和挪威比较，以及镍与稀土的成本收益建模，发现一级至三级供应商产生大量高品位废料，而相当部分价值由下游回收商和熔炼商获取。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 14 / 18 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/external_publications/EP71406.html">欧盟防务航天中游制造循环经济及英国机会</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>兰德欧洲研究欧盟防务与航空航天中游制造环节的废料增值及其对英国循环经济和供应链韧性的意义，重点覆盖镍基高温合金、稀土、石墨和锂。</li>
+<li>报告积极评价中游回收作为降低进口依赖、保留国内价值和增强战略自主的工具，但强调不同材料的技术与商业成熟度差异很大，不能用单一循环经济方案处理。</li>
+<li>镍基高温合金闭环回收的年度价值保留估计为8308万英镑，高于开环出售废料的7097万英镑，闭环成本约777万英镑；稀土永磁材料现有回收给中游制造商带来的年度收益仅约15万英镑，约占废料总价值4%，闭环体系尚未在英国商业化。</li>
+<li>报告判断，清洁、已分选的生产废料最容易高值回收，混合材料、细颗粒、涂层喷溅和污染流体的技术经济障碍更高；英国与欧盟最大的能力差距集中在锂离子电池工业化回收规模。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>RAND主张英国优先扩大镍合金闭环回收，通过合同安排、废料分选、认证和融资降低规模化障碍；对稀土、石墨和锂则应采用定向创新资助、标准开发和市场塑造，并与欧盟合作扩大分选、回收基础设施及跨境废料和再生材料流动。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-15">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 15 / 18</span>
+</div>
+<h3><a href="https://www.stepi.re.kr/site/stepien/ex/bbs/publicationView.do?pageIndex=1&amp;cbIdx=1303&amp;reIdx=135&amp;cateCont=A0508">韩国跨区域超级特区的创新特区改革方案</a></h3>
+<p class="meta">Science and Technology Policy Institute Korea｜科技创新｜2026-07-24</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/15-topic-policy-measures-to-improve-innovation-special-zones-for-advancin.jpg" alt="主题 15 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>韩国科学技术政策研究院评估“五极三特”战略下跨区域“超级特区”设计，主张把既有分散、小规模特区重组为跨行政边界、产业集中的上位协调平台。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 15 / 18 · 论证页</span>
+</div>
+<h3><a href="https://www.stepi.re.kr/site/stepien/ex/bbs/publicationView.do?pageIndex=1&amp;cbIdx=1303&amp;reIdx=135&amp;cateCont=A0508">韩国跨区域超级特区的创新特区改革方案</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>机构支持特区改革，但强烈警示若不先整合现有制度，新增立法只会制造“第130个特区”，无法解决示范成果跨越商业化“死亡之谷”的问题。</li>
+<li>报告统计韩国现有129个特区、累计2085次指定，其中39个、占30.2%没有指定或运营记录；1337家符合条件企业中仅110家、占7.8%获得企业所得税减免，税惠期限又与研发密集产业的长盈亏平衡周期错配。</li>
+<li>监管示范带来的制度化成果同样有限，仅有3项法案修订，说明问题集中于部际重叠、支持碎片化以及示范结果不能扩散为制度与市场。</li>
+<li>研究使用行动者中心制度主义比较研发特区与无监管特区，把改革条件分为一体化治理、协同治理和“示范—制度化”联动三层。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>机构建议短期建立部际指定协调机构，中长期由总统主持的监管合理化委员会改造为混合型国家特区统筹机构；制定具有优先和防重复条款的《超级特区特别法》，把现有特区重分为技术商业化、监管创新和产业培育三类；引入功能城市区概念、统一在线受理门户和分区专员，并建立新兴产业安全管理机构，使认证后的示范结果快速进入法案修订、融资、人才和市场支持链条。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-16">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 16 / 18</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA3582-2.html">敏捷作战保障：能源与水技术评估</a></h3>
+<p class="meta">RAND｜科技创新｜2026-07-23</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/16-topic-sustaining-agile-operations-volume-2-energy-and-water-technology.jpg" alt="主题 16 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>报告态度审慎乐观，认为现有技术的渐进改进已使若干方案接近近期部署，但核聚变、小型核反应堆和新型水处理等转型技术仍存在明显成熟度、监管、保障和人员约束。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 16 / 18 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA3582-2.html">敏捷作战保障：能源与水技术评估</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>兰德为美国空军评估争夺环境中敏捷作战所需的能源与水技术，重点更新2021年技术调查，并考察成熟度、部署便利性、后勤负担、成本和任务适配性。</li>
+<li>电池、车网互动和空中风力涡轮机在成本与性能上取得进展，其中空中风机已由概念走向可信原型，便携性和较低平准化成本使其具有远征应用潜力。</li>
+<li>反渗透、海水淡化、光伏和大气取水等较成熟方案也提高了效率；大气取水在极端匮乏环境、甚至没有外部电力时具备供水潜力。</li>
+<li>研究方法是在既有候选技术中选择原先被认为具有作战用途和技术前景的方案重新评估，因此结论反映“入选技术”的进展，不能视为对全部能源和水技术的无偏全景比较。</li>
+</ul></div>
+</section>
+<section class="topic-card topic-primary" id="topic-17">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 17 / 18</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/22/testimony-regarding-legislative-proposals-to-strengthen-consumer-protection/">变化市场中的消费者保护立法评估</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜先进制造｜2026-07-22</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/17-topic-testimony-to-the-house-subcommittee-on-commerce-manufacturing-an.jpg" alt="主题 17 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>信息技术与创新基金会在美国众议院听证中评估数字市场消费者保护法案，主张以平台治理能力提高安全和透明度，同时保留数字商业的选择、低价和创新收益。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 17 / 18 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/22/testimony-regarding-legislative-proposals-to-strengthen-consumer-protection/">变化市场中的消费者保护立法评估</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>机构认为任何平台都无法消除全部假货和欺诈，但面向美国消费者的平台应承担可比的卖家核验、重复违规者处置、危险品响应和信息披露责任；单纯依赖事后下架和执法不足以形成预防激励。</li>
+<li>其调查从若干大型中国电商平台购买疑似假冒服装、化妆品、玩具、非处方药和宠物食品，其中宠物食品条码对应其他商品、品牌方确认是假货并报告过宠物食用后重病，疑似感冒药也被制造商判定很可能是假冒；个别清单下架后，平台上仍出现相似药品和错类上架。</li>
+<li>报告把中美平台差异归因于商业模式和治理投入选择，指出美国头部平台在身份核验、召回、争议解决、AI检测和信任安全团队上投入更多，部分中国平台则以快速入驻、海量目录和低价竞争。</li>
+<li>Information Technology and Innovation Foundation支持预防伤害、加强透明、保留消费者保护创新激励和同等适用标准四项原则，并逐案评价包装、回收声明、外国宣传、反诈骗、应用商店、票务和短租等法案。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>机构建议建立全国统一而非州际碎片化的披露和回收声明标准，把反诈骗任务组扩展至网络假冒与盗版，并利用跨机构数据和AI识别重复违规者；法规义务应落在能够识别并控制交易的主体，允许平台在紧急风险下先处置、再提供通知和申诉。</div>
+<div class="box reference"><h4>中国 / 上海参考</h4>报告的涉华判断集中于面向美国消费者的中国电商平台：其较弱治理表现被解释为投入和竞争策略选择，而非工程能力不足；调查并不推断所有中国平台商品均不安全，也未评估中国国内市场的消费者保护成效。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-18">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 18 / 18</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/20/commercializing-canadian-health-research-targeting-grants-increasing-investment/">加拿大健康研究商业化：定向资助与扩大投入</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜科技创新｜2026-07-20</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-07-26/pages/18-topic-commercializing-canadian-health-research-the-case-for-targeting.jpg" alt="主题 18 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>信息技术与创新基金会分析加拿大健康科研投入较强、商业化产出落后的结构性原因，主张同时扩大定向商业化资助和健康科学总投入。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 18 / 18 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/07/20/commercializing-canadian-health-research-targeting-grants-increasing-investment/">加拿大健康研究商业化：定向资助与扩大投入</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>研究对2009—2024年加拿大卫生研究院的10698项资助进行分类和AI辅助数据匹配，比较商业化导向、技术开发与基础科学三类项目的专利、公司设立、融资和退出结果。</li>
+<li>数据显示，商业化导向项目形成专利的比例为60%，技术开发项目为30%，基础科学项目为18%；约10%的商业化项目形成公司，但三类项目的风险投资和退出结果均接近于零。</li>
+<li>Information Technology and Innovation Foundation认为这表明加拿大科研质量并非主要约束，关键问题在于商业化项目占比、资助计划不连续、全国知识产权框架缺位、技术转移能力不足以及学术评价对创业激励偏弱。</li>
+<li>国际比较显示，2023—2024年加拿大卫生研究院预算约13.7亿加元，明显低于美国约480亿美元以及英国、法国和德国折算后约33亿、32亿和68亿加元的规模。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>机构建议恢复并扩大加拿大卫生研究院的商业化导向资助，将健康科学联邦投入提高至现有规模的约五倍；同步建设全国知识产权框架、强化技术转移机构和学术创业激励，并由加拿大统计局为专利活动和政府资助研究提供开放接口，以支持持续评估。</div>
+</div>
+</section>
+<p class="footer-note">国际科技智库周报 · 2026-07-26 · 私有归档，仅限内部研判使用</p>
+</main>
+</body>
+</html>
