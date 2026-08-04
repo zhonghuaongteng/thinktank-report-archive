@@ -1076,6 +1076,48 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("政策建议", html)
         self.assertIn("中国 / 上海参考", html)
 
+    def test_weekly_audit_flags_thin_core_summaries(self):
+        from thinktank_watch.brief import render_weekly_audit_markdown
+
+        thin = ArticleCandidate(
+            institution_slug="itif",
+            institution_name="ITIF",
+            institution_type="think_tank",
+            title="Thin item",
+            chinese_title="单句条目",
+            url="https://example.org/thin",
+            published_date="2026-07-01",
+            content_type="report",
+            priority="P0",
+            topic_tags=["科技创新"],
+            chinese_summary="核心观点：该文讨论半导体产业政策。",
+        )
+        rich = ArticleCandidate(
+            institution_slug="cset",
+            institution_name="CSET",
+            institution_type="university_research_center",
+            title="Rich item",
+            chinese_title="充实条目",
+            url="https://example.org/rich",
+            published_date="2026-07-01",
+            content_type="report",
+            priority="P0",
+            topic_tags=["科技创新"],
+            chinese_summary=(
+                "核心观点：报告分析出口管制在美国对华技术竞争中的制度化进程，态度上对其长期有效性持明确怀疑。"
+                "报告基于2018年以来的贸易数据和上百家企业访谈指出，管制清单扩张速度已经超过执法与审查能力。"
+                "作者进一步警告，缺乏盟友协同的单边管制会加速替代供应链形成，反而削弱美国的长期技术杠杆。"
+                "报告同时承认短期内管制确实迟滞了先进制程获取，这构成其内部争论的另一面。"
+            ),
+        )
+
+        audit = render_weekly_audit_markdown("2026-07-05", [thin, rich])
+
+        self.assertIn("## 核心观点待充实", audit)
+        thin_section = audit.split("## 核心观点待充实", 1)[1].split("## 完整索引", 1)[0]
+        self.assertIn("单句条目", thin_section)
+        self.assertNotIn("充实条目", thin_section)
+
     def test_write_institution_table_exports_kb_schema(self):
         from thinktank_watch.kb import write_institution_table
 
