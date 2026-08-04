@@ -12,11 +12,97 @@ from thinktank_watch.fetch import parse_text_proxy_detail
 from thinktank_watch.fetch import sitemap_include_keyword_matches
 from thinktank_watch.fetch import source_url_allowed
 from thinktank_watch.fetch import text_proxy_url
+import thinktank_watch.fetch as fetch_module
 from thinktank_watch.models import ArticleCandidate
 from thinktank_watch.models import Institution
 
 
 class FetchCandidateTests(unittest.TestCase):
+    def test_korea_msit_detail_preserves_script_list_title(self):
+        url = "https://www.msit.go.kr/eng/bbs/view.do?bbsSeqNo=42&nttSeqNo=1284"
+        html = """
+        <html><head><title>Press Releases</title></head><body><main>
+        <p>Jul 23, 2026</p><p>The national science and technology strategy sets long-term priorities.</p>
+        </main></body></html>
+        """
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(200, text=html, request=request)
+
+        institution = Institution(
+            slug="korea-msit",
+            name="Republic of Korea Ministry of Science and ICT",
+            chinese_name="韩国科学技术信息通信部",
+            country_region="Republic of Korea",
+            institution_type="government",
+            priority="P0",
+            batch=1,
+            homepage="https://www.msit.go.kr/eng/",
+            parser="generic",
+            copyright_boundary="public_official_source",
+            source_group="official_strategy",
+        )
+        candidate = ArticleCandidate(
+            institution_slug="korea-msit",
+            institution_name=institution.name,
+            institution_type="government",
+            source_group="official_strategy",
+            title="An Unrivaled Korea, Happy Together Through AI and Science and Technology",
+            url=url,
+        )
+
+        with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+            detail = fetch_detail(client, institution, candidate)
+
+        self.assertEqual(detail.title, candidate.title)
+
+    def test_configured_index_pages_are_not_emitted_as_articles_but_direct_pages_are_allowed(self):
+        institution = Institution(
+            slug="germany-bmftr",
+            name="German Federal Ministry of Research Technology and Space",
+            chinese_name="德国联邦研究技术与航天部",
+            country_region="Germany",
+            institution_type="government",
+            priority="P0",
+            batch=1,
+            homepage="https://www.bmftr.bund.de/",
+            parser="generic",
+            copyright_boundary="public_official_source",
+            source_group="official_strategy",
+            direct_urls=[
+                "https://www.bmftr.bund.de/EN/Strategy/high-tech-agenda.html",
+                "https://www.bmftr.bund.de/EN/Strategy/index.html",
+            ],
+            list_pages=["https://www.bmftr.bund.de/EN/Research/research_node.html"],
+        )
+
+        self.assertFalse(source_url_allowed(institution.list_pages[0], institution))
+        self.assertTrue(source_url_allowed(institution.direct_urls[0], institution))
+        self.assertTrue(source_url_allowed(institution.direct_urls[1], institution))
+
+    def test_direct_urls_create_candidates_for_flagship_strategy_pages(self):
+        institution = Institution(
+            slug="us-ostp",
+            name="White House Office of Science and Technology Policy",
+            chinese_name="美国白宫科技政策办公室",
+            country_region="United States",
+            institution_type="government",
+            priority="P0",
+            batch=1,
+            homepage="https://www.whitehouse.gov/ostp/",
+            parser="generic",
+            copyright_boundary="public_official_source",
+            direct_urls=["https://www.whitehouse.gov/science/"],
+            source_group="official_strategy",
+        )
+
+        fetch_direct_candidates = getattr(fetch_module, "fetch_direct_candidates", lambda *_args, **_kwargs: [])
+        candidates = fetch_direct_candidates(institution)
+
+        self.assertEqual([item.url for item in candidates], ["https://www.whitehouse.gov/science/"])
+        self.assertEqual(candidates[0].fetch_status, "direct_ok")
+        self.assertEqual(candidates[0].source_group, "official_strategy")
+
     def test_source_url_allowed_requires_same_site_or_subdomain(self):
         institution = Institution(
             slug="brookings-cti",
@@ -793,6 +879,77 @@ class FetchCandidateTests(unittest.TestCase):
                 "https://example.org/publications/2026/07/ai-governance-report/",
             ],
         )
+
+    def test_korea_msit_list_candidates_support_query_based_detail_urls(self):
+        page_url = "https://www.msit.go.kr/eng/bbs/list.do?mId=4&mPid=2&sCode=eng"
+        html = """
+        <table><tr><td><a href="/eng/bbs/view.do?bbsSeqNo=42&mId=4&mPid=2&nttSeqNo=1242&sCode=eng">
+        An Unrivaled Korea, Happy Together Through AI and Science and Technology
+        </a></td><td>Jul 23, 2026</td></tr></table>
+        """
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(200, text=html, request=request)
+
+        institution = Institution(
+            slug="korea-msit",
+            name="Republic of Korea Ministry of Science and ICT",
+            chinese_name="韩国科学技术信息通信部",
+            country_region="Republic of Korea",
+            institution_type="government",
+            priority="P0",
+            batch=1,
+            homepage="https://www.msit.go.kr/eng/",
+            parser="generic",
+            copyright_boundary="public_official_source",
+            source_group="official_strategy",
+            list_pages=[page_url],
+        )
+
+        with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+            candidates = fetch_list_candidates(client, institution, limit=5)
+
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(candidates[0].published_date, "2026-07-23")
+        self.assertIn("nttSeqNo=1242", candidates[0].url)
+
+    def test_korea_msit_list_candidates_parse_script_generated_rows(self):
+        page_url = "https://www.msit.go.kr/eng/bbs/list.do?mId=4&mPid=2&sCode=eng"
+        html = """
+        <script>
+        sHtml+='class="" data-value="1284">';
+        sHtml+= unescape('An Unrivaled Korea, Happy Together Through AI and Science and Technology');
+        if('REG_DT' == 'REG_DT'){$('#td').html('Jul 23, 2026');}
+        if('PSTG_YMD' == 'PSTG_YMD'){$('#td').html('2026-07-23');}
+        sHtml+='class="" data-value="1285">';
+        sHtml+= unescape('Routine award news');
+        if('PSTG_YMD' == 'PSTG_YMD'){$('#td').html('2026-07-14');}
+        </script>
+        """
+
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(200, text=html, request=request)
+
+        institution = Institution(
+            slug="korea-msit",
+            name="Republic of Korea Ministry of Science and ICT",
+            chinese_name="韩国科学技术信息通信部",
+            country_region="Republic of Korea",
+            institution_type="government",
+            priority="P0",
+            batch=1,
+            homepage="https://www.msit.go.kr/eng/",
+            parser="generic",
+            copyright_boundary="public_official_source",
+            source_group="official_strategy",
+            list_pages=[page_url],
+        )
+
+        with httpx.Client(transport=httpx.MockTransport(handler)) as client:
+            candidates = fetch_list_candidates(client, institution, limit=5)
+
+        self.assertEqual([item.published_date for item in candidates], ["2026-07-23", "2026-07-14"])
+        self.assertIn("nttSeqNo=1284", candidates[0].url)
 
     def test_list_candidates_do_not_let_navigation_noise_exhaust_limit(self):
         noisy_links = "\n".join(

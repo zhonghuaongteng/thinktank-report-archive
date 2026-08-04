@@ -474,6 +474,33 @@ class GenericParserTests(unittest.TestCase):
 
         self.assertEqual(detail.published_date, "2026-03-18")
 
+    def test_parse_generic_detail_reads_visible_japanese_cabinet_date(self):
+        html = """
+        <html><head><title>統合イノベーション戦略</title></head>
+        <body><main><h1>統合イノベーション戦略2026</h1>
+        <p>2026年7月14日閣議決定</p><p>科学技術・イノベーション政策を具体化します。</p></main></body></html>
+        """
+        institution = Institution(
+            slug="japan-csti",
+            name="Japan CSTI",
+            chinese_name="日本综合科学技术创新会议",
+            country_region="Japan",
+            institution_type="government",
+            priority="P0",
+            batch=1,
+            homepage="https://www8.cao.go.jp/cstp/english/",
+            parser="generic",
+            copyright_boundary="public_official_source",
+        )
+
+        detail = parse_generic_detail(
+            html,
+            "https://www8.cao.go.jp/cstp/tougosenryaku/index.html",
+            institution,
+        )
+
+        self.assertEqual(detail.published_date, "2026-07-14")
+
     def test_parse_generic_detail_handles_weekday_numeric_publication_date(self):
         html = """
         <html><head>

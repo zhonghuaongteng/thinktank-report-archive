@@ -14,6 +14,7 @@ REPORT_TYPES = {
     "brief",
     "paper",
     "external_publication",
+    "official_strategy",
 }
 TOPIC_MATCH_EXTRA_CAP = 2
 CONTEXT_ONLY_TOPICS = {"中国与上海相关"}

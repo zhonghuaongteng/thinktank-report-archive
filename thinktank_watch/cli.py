@@ -23,6 +23,7 @@ from .fetch import (
     check_pdf,
     enrich_detail_text_from_pdf,
     fetch_detail,
+    fetch_direct_candidates,
     fetch_feed_candidates,
     fetch_list_candidates,
     fetch_sitemap_candidates,
@@ -43,6 +44,37 @@ DEFAULT_BACKFILL_LOOKBACK_YEARS = 3
 DEFAULT_DAILY_LOOKBACK_DAYS = 30
 DEFAULT_WEEKLY_LOOKBACK_DAYS = 7
 DEFAULT_EXPANDED_SEARCH_PROFILE = "broad_innovation_support"
+OFFICIAL_STRATEGY_TERMS = (
+    "strategy",
+    "strategic plan",
+    "master plan",
+    "basic plan",
+    "action plan",
+    "roadmap",
+    "framework",
+    "white paper",
+    "policy paper",
+    "national plan",
+    "national priorities",
+    "national vision",
+    "national agenda",
+    "blueprint",
+    "sector plan",
+    "high-tech agenda",
+    "technological sovereignty",
+    "战略",
+    "规划",
+    "纲要",
+    "路线图",
+    "白皮书",
+    "戦略",
+    "基本計画",
+    "로드맵",
+    "기본계획",
+    "종합계획",
+    "strategie",
+    "stratégie",
+)
 
 
 def _load_config():
@@ -119,6 +151,12 @@ def candidate_matches_include_terms(candidate: ArticleCandidate, include_terms: 
 def candidate_matches_search_profile(candidate: ArticleCandidate, profile) -> bool:
     if profile is None:
         return True
+    if candidate.source_group == "official_strategy" and candidate.content_type != "official_strategy":
+        official_haystack = " ".join(
+            [candidate.title, candidate.chinese_title, candidate.summary, candidate.chinese_summary]
+        ).lower()
+        if not any(term.lower() in official_haystack for term in OFFICIAL_STRATEGY_TERMS):
+            return False
     if profile.include_terms and not candidate_matches_include_terms(candidate, profile.include_terms):
         return False
     if profile.topic_tags_any and not (set(profile.topic_tags_any) & set(candidate.topic_tags)):
@@ -306,15 +344,20 @@ def collect_candidates(
             if backfill:
                 base = interleave_candidate_groups(
                     [
+                        fetch_direct_candidates(institution, limit=item_limit),
                         fetch_feed_candidates(institution, limit=item_limit),
                         fetch_list_candidates(client, institution, limit=item_limit),
                         fetch_sitemap_candidates(client, institution, limit=item_limit),
                     ]
                 )
             else:
-                base = fetch_feed_candidates(institution, limit=item_limit)
-                if not base:
-                    base = fetch_list_candidates(client, institution, limit=item_limit)
+                base = interleave_candidate_groups(
+                    [
+                        fetch_direct_candidates(institution, limit=item_limit),
+                        fetch_feed_candidates(institution, limit=item_limit),
+                        fetch_list_candidates(client, institution, limit=item_limit),
+                    ]
+                )
             institution_count = 0
             for candidate in base:
                 if institution_count >= item_limit:
@@ -382,7 +425,12 @@ def audit(args: argparse.Namespace) -> int:
         if candidate_matches_filters(item, args, profile)
     ]
     output = Path(args.output) if args.output else Path("reports") / f"{run_date}_source_health.csv"
-    path = write_audit_report(output, scored)
+    path = write_audit_report(
+        output,
+        scored,
+        run_date=run_date,
+        lookback_days=getattr(args, "lookback_days", DEFAULT_WEEKLY_LOOKBACK_DAYS),
+    )
     print(f"audit_date={run_date} institutions={len(selected)} candidates={len(scored)} report={path}")
     return 0
 
@@ -567,6 +615,7 @@ def build_parser() -> argparse.ArgumentParser:
     audit_parser.add_argument("--institution")
     audit_parser.add_argument("--limit", type=int, default=5)
     audit_parser.add_argument("--date")
+    audit_parser.add_argument("--lookback-days", type=int, default=DEFAULT_WEEKLY_LOOKBACK_DAYS)
     audit_parser.add_argument("--no-details", action="store_true")
     audit_parser.add_argument("--include-term", dest="include_terms", action="append", default=[])
     audit_parser.add_argument("--search-profile")

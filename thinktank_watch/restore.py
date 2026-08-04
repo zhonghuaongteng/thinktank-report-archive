@@ -67,6 +67,7 @@ def parse_archive_markdown(path: str | Path) -> ArticleCandidate:
         institution_slug=data["institution_slug"],
         institution_name=data["institution"],
         institution_type=data["institution_type"],
+        source_group=data.get("source_group", "strategic_context"),
         title=_scalar(data["english_title"]),
         url=data["source_url"],
         published_date=data.get("published_date", ""),

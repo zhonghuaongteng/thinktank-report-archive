@@ -2,7 +2,7 @@ import sqlite3
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from types import SimpleNamespace
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 import unittest
 
 from thinktank_watch.cli import (
@@ -14,6 +14,7 @@ from thinktank_watch.cli import (
     candidate_matches_search_profile,
     candidate_within_daily_window,
     candidate_within_backfill_window,
+    collect_candidates,
     daily_window_start,
     filter_unarchived_candidates,
     filter_unseen_candidates,
@@ -31,6 +32,36 @@ from thinktank_watch.state import ArticleState
 
 
 class BackfillControlTests(unittest.TestCase):
+    def test_weekly_discovery_merges_feed_and_focused_list_candidates(self):
+        institution = Institution(
+            slug="fas",
+            name="Federation of American Scientists",
+            chinese_name="美国科学家联合会",
+            country_region="United States",
+            institution_type="think_tank",
+            priority="P0",
+            batch=1,
+            homepage="https://fas.org/",
+            parser="generic",
+            copyright_boundary="private_archive",
+            feeds=["https://fas.org/feed/"],
+            list_pages=["https://fas.org/issue/emerging-technology/"],
+        )
+        feed_item = ArticleCandidate("fas", "FAS", "think_tank", "Feed item", "https://fas.org/feed-item")
+        list_item = ArticleCandidate("fas", "FAS", "think_tank", "Focused item", "https://fas.org/focused-item")
+        client_context = MagicMock()
+        client_context.__enter__.return_value = MagicMock()
+
+        with (
+            patch("thinktank_watch.cli.make_client", return_value=client_context),
+            patch("thinktank_watch.cli.fetch_direct_candidates", return_value=[]),
+            patch("thinktank_watch.cli.fetch_feed_candidates", return_value=[feed_item]),
+            patch("thinktank_watch.cli.fetch_list_candidates", return_value=[list_item]),
+        ):
+            candidates = collect_candidates([institution], limit=5, include_details=False)
+
+        self.assertEqual({item.url for item in candidates}, {feed_item.url, list_item.url})
+
     def test_priority_allows_candidate_at_or_above_minimum(self):
         self.assertTrue(priority_allows("P0", "P1"))
         self.assertTrue(priority_allows("P1", "P1"))

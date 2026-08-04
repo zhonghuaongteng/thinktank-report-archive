@@ -157,6 +157,8 @@ VISIBLE_DATE_RE = re.compile(
     r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2},?\s+20\d{2}"
     r"|"
     r"\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+20\d{2}"
+    r"|"
+    r"20\d{2}年\d{1,2}月\d{1,2}日"
     r")\b",
     re.IGNORECASE,
 )
@@ -245,6 +247,10 @@ def canonical_date(value: str) -> str:
     if match:
         year, month, day = match.groups()
         return f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
+    match = re.search(r"(\d{4})年(\d{1,2})月(\d{1,2})日", value)
+    if match:
+        year, month, day = match.groups()
+        return f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
     match = re.search(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b", value)
     if match:
         month, day, year = match.groups()
@@ -253,8 +259,12 @@ def canonical_date(value: str) -> str:
 
 
 def visible_date(text: str) -> str:
-    match = VISIBLE_DATE_RE.search(norm(text))
-    return canonical_date(match.group(1)) if match else ""
+    normalized = norm(text)
+    match = VISIBLE_DATE_RE.search(normalized)
+    if match:
+        return canonical_date(match.group(1))
+    japanese_match = re.search(r"20\d{2}年\d{1,2}月\d{1,2}日", normalized)
+    return canonical_date(japanese_match.group(0)) if japanese_match else ""
 
 
 def meta_values(soup: BeautifulSoup, key: str) -> list[str]:

@@ -770,6 +770,13 @@ def render_weekly_audit_markdown(date: str, candidates: list[ArticleCandidate]) 
     topic_counter: Counter[str] = Counter(tag for item in candidates for tag in item.topic_tags)
     innovation_support_count = sum(1 for item in candidates if is_innovation_support_candidate(item))
     governance_only_count = sum(1 for item in candidates if is_governance_only_candidate(item))
+    priority_institutions: Counter[str] = Counter(item.institution_name for item in priority_items)
+    official_strategy_count = sum(1 for item in candidates if item.source_group == "official_strategy")
+    top_source_name, top_source_count = priority_institutions.most_common(1)[0] if priority_institutions else ("无", 0)
+    top_two_count = sum(count for _, count in priority_institutions.most_common(2))
+    priority_total = len(priority_items)
+    top_source_share = top_source_count / priority_total if priority_total else 0
+    top_two_share = top_two_count / priority_total if priority_total else 0
 
     lines = [
         f"# 国际科技智库周报资料索引与生成记录（{date}）",
@@ -783,9 +790,24 @@ def render_weekly_audit_markdown(date: str, candidates: list[ArticleCandidate]) 
         f"- 涉及机构：{len({item.institution_slug for item in candidates})}",
         f"- 高频主题：{', '.join(name for name, _ in topic_counter.most_common(8)) or '无'}",
         "",
-        "## 最近写入",
+        "## 来源结构",
         "",
+        f"- P0/P1来源机构：{len(priority_institutions)}",
+        f"- 官方战略条目：{official_strategy_count}",
+        f"- 最大单一来源：{top_source_name}（{top_source_share:.1%}）",
+        f"- 前两大来源占比：{top_two_share:.1%}",
     ]
+    concentration_alerts: list[str] = []
+    if priority_total >= 6 and top_source_share > 0.30:
+        concentration_alerts.append(f"最大单一来源 {top_source_name} 占 {top_source_share:.1%}，超过30%软阈值。")
+    if priority_total >= 6 and top_two_share > 0.50:
+        concentration_alerts.append(f"前两大来源占 {top_two_share:.1%}，超过50%软阈值。")
+    if priority_total >= 6 and len(priority_institutions) < 6:
+        concentration_alerts.append(f"P0/P1仅覆盖 {len(priority_institutions)} 家机构，低于6家目标。")
+    if concentration_alerts:
+        lines.extend(["", "### 来源集中度提醒", ""])
+        lines.extend(f"- {message}" for message in concentration_alerts)
+    lines.extend(["", "## 最近写入", ""])
     if recent_write_items:
         for item in recent_write_items:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")

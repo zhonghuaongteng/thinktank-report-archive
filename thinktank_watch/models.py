@@ -15,7 +15,9 @@ class Institution:
     homepage: str
     parser: str
     copyright_boundary: str
+    source_group: str = "strategic_context"
     allowed_domains: list[str] = field(default_factory=list)
+    direct_urls: list[str] = field(default_factory=list)
     feeds: list[str] = field(default_factory=list)
     list_pages: list[str] = field(default_factory=list)
     topic_pages: list[str] = field(default_factory=list)
@@ -33,6 +35,7 @@ class ArticleCandidate:
     institution_type: str
     title: str
     url: str
+    source_group: str = "strategic_context"
     published_date: str = ""
     summary: str = ""
     content_type: str = "article"

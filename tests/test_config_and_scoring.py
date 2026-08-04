@@ -7,6 +7,86 @@ from thinktank_watch.scoring import score_candidate
 
 
 class ConfigAndScoringTests(unittest.TestCase):
+    def test_loads_two_source_expansion_waves_and_official_strategy_track(self):
+        institutions = load_institutions("config/institutions")
+        by_slug = {item.slug: item for item in institutions}
+        expected = {
+            "fas",
+            "ifp",
+            "scsp",
+            "oecd-sti",
+            "fraunhofer-isi",
+            "jst-crds",
+            "eu-stoa",
+            "eu-jrc",
+            "us-ostp",
+        }
+
+        self.assertTrue(expected <= set(by_slug))
+        self.assertEqual({by_slug[slug].batch for slug in expected}, {1})
+        self.assertEqual(by_slug["us-ostp"].source_group, "official_strategy")
+        self.assertIn("https://www.whitehouse.gov/science/", by_slug["us-ostp"].direct_urls)
+        for slug in expected - {"us-ostp"}:
+            self.assertEqual(by_slug[slug].source_group, "core_technology")
+        for slug in {"rand", "itif", "cset", "stanford-hai", "nistep", "stepi", "ida-stpi"}:
+            self.assertEqual(by_slug[slug].source_group, "core_technology")
+
+    def test_official_strategy_track_excludes_routine_ministry_news(self):
+        profile = load_search_profiles("config/search_profiles.yaml")["broad_innovation_support"]
+        routine_news = ArticleCandidate(
+            institution_slug="korea-msit",
+            institution_name="Korea MSIT",
+            institution_type="government",
+            source_group="official_strategy",
+            title="Minister visits national AI research laboratory",
+            url="https://www.msit.go.kr/eng/bbs/view.do?id=1",
+            summary="The minister discussed science and technology cooperation and AI innovation.",
+            topic_tags=["科技创新", "AI治理"],
+        )
+        flagship_strategy = ArticleCandidate(
+            institution_slug="us-ostp",
+            institution_name="White House OSTP",
+            institution_type="government",
+            source_group="official_strategy",
+            title="Science: A New Golden Age",
+            url="https://www.whitehouse.gov/science/",
+            content_type="official_strategy",
+            summary="A national science and technology strategy for federal research and innovation.",
+            topic_tags=["科技创新"],
+        )
+
+        self.assertFalse(candidate_matches_search_profile(routine_news, profile))
+        self.assertTrue(candidate_matches_search_profile(flagship_strategy, profile))
+
+    def test_multilingual_national_strategy_titles_match_technology_profile(self):
+        topics = load_topics("config/topics.yaml")
+        priorities = load_priority_rules("config/priorities.yaml")
+        profile = load_search_profiles("config/search_profiles.yaml")["broad_innovation_support"]
+        candidates = [
+            ArticleCandidate(
+                institution_slug="japan-csti",
+                institution_name="Japan CSTI",
+                institution_type="government",
+                source_group="official_strategy",
+                content_type="official_strategy",
+                title="統合イノベーション戦略2026 科学技術・イノベーション基本計画",
+                url="https://www8.cao.go.jp/cstp/tougosenryaku/index.html",
+            ),
+            ArticleCandidate(
+                institution_slug="korea-msit",
+                institution_name="Korea MSIT",
+                institution_type="government",
+                source_group="official_strategy",
+                title="제5차 과학기술기본계획 국가전략기술 육성계획",
+                url="https://www.msit.go.kr/eng/strategy",
+            ),
+        ]
+
+        scored = [score_candidate(item, topics, priorities) for item in candidates]
+
+        self.assertTrue(all(item.priority in {"P0", "P1"} for item in scored))
+        self.assertTrue(all(candidate_matches_search_profile(item, profile) for item in scored))
+
     def test_loads_all_planned_institutions_by_batch(self):
         institutions = load_institutions("config/institutions")
         names = {item.slug for item in institutions}

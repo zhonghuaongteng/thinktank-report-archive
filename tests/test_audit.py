@@ -1,5 +1,6 @@
 import tempfile
 import unittest
+from datetime import date, timedelta
 from pathlib import Path
 
 from thinktank_watch.audit import audit_rows, write_audit_report
@@ -8,6 +9,7 @@ from thinktank_watch.models import ArticleCandidate
 
 class AuditTests(unittest.TestCase):
     def test_audit_rows_group_by_institution_and_field_completeness(self):
+        today = date.today()
         candidates = [
             ArticleCandidate(
                 institution_slug="rand",
@@ -15,7 +17,7 @@ class AuditTests(unittest.TestCase):
                 institution_type="think_tank",
                 title="AI safety",
                 url="https://example.org/a",
-                published_date="2026-07-01",
+                published_date=(today - timedelta(days=2)).isoformat(),
                 summary="summary",
                 authors=["Ada"],
                 pdf_url="https://example.org/a.pdf",
@@ -38,7 +40,7 @@ class AuditTests(unittest.TestCase):
                 institution_type="think_tank",
                 title="Cloud policy",
                 url="https://example.org/c",
-                published_date="2026-07-02",
+                published_date=(today - timedelta(days=10)).isoformat(),
                 priority="P2",
             ),
         ]
@@ -54,6 +56,10 @@ class AuditTests(unittest.TestCase):
         self.assertEqual(rows[1]["PDF线索数"], "1")
         self.assertEqual(rows[1]["详情成功数"], "1")
         self.assertEqual(rows[1]["详情失败数"], "1")
+        self.assertEqual(rows[1]["近7日候选数"], "1")
+        self.assertEqual(rows[1]["近7日P0/P1数"], "1")
+        self.assertEqual(rows[1]["近7日可入选数"], "1")
+        self.assertEqual(rows[0]["近7日候选数"], "0")
 
     def test_write_audit_report_creates_csv(self):
         candidates = [

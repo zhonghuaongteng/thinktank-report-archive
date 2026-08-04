@@ -43,7 +43,7 @@ powershell -ExecutionPolicy Bypass -File scripts\run_weekly.ps1 -Batch 1 -Limit 
 powershell -ExecutionPolicy Bypass -File scripts\run_backfill_batch.ps1 -Batch 1 -Limit 5 -MinPriority P1 -WriteLimit 8 -LookbackYears 3
 ```
 
-Candidate source URLs are restricted to the institution's own site or subdomains. Event, people, podcast, project, topic, video, webinar, broad index, award-news, and announcement-style pages are filtered out before scoring. Non-report book announcements are capped below P1 even when they mention technology competition. Backfill runs interleave feed, list/topic page, and sitemap candidates so one source type does not exhaust the per-institution limit.
+Candidate source URLs are restricted to the institution's own site or subdomains. Event, people, podcast, project, topic, video, webinar, broad index, award-news, and announcement-style pages are filtered out before scoring. Non-report book announcements are capped below P1 even when they mention technology competition. Backfill runs interleave direct flagship pages, feed, list/topic page, and sitemap candidates so one source type does not exhaust the per-institution limit. Stable official report landing pages can be configured through `direct_urls`; they remain subject to normal date, detail, relevance, and deduplication gates.
 
 Historical backfill is bounded to the last three years by default. Candidates without a verifiable publication date, candidates dated before the lookback window, and future-dated candidates are skipped during backfill runs.
 
@@ -84,7 +84,9 @@ The local Codex automation `国际科技智库每周抓取` runs every Sunday at
 
 - Current local coverage and gaps are tracked in `docs/backfill_coverage_audit.md`. Use that audit before resuming historical backfill, especially for zero-coverage and low-coverage sources.
 - Multi-agent backfill work should follow `docs/multi_agent_execution.md`: evaluator agents run read-only `evaluate` batches, while only the controller writes `archive/`, `state/articles.sqlite`, the knowledge-base CSV, and weekly briefs. `scripts/run_evaluate_sources.ps1` is the shared read-only evaluator wrapper.
-- The default first-batch pool now includes broad innovation-support sources CSIS, Bruegel, ECIPE, ASPI, ORF America, CEPS, Atlantic Council GeoTech, Alan Turing Institute, Hoover TPA, and NBR in addition to RAND, CSET, ITIF, Stanford HAI, Carnegie, Brookings, CNAS, MERICS, OECD.AI, Belfer STPP, IDA STPI, NISTEP, and STEPI.
+- The default first-batch pool now also includes FAS, IFP, SCSP, OECD STI, Fraunhofer ISI, JST/CRDS, European Parliament STOA, and the European Commission JRC as specialist technology-policy and foresight sources.
+- A separate `official_strategy` track covers White House OSTP, UK DSIT, the European Commission, Japan CSTI, Germany BMFTR, and Korea MSIT. It admits strategies, plans, frameworks, roadmaps, white papers, and cross-government action plans while excluding routine ministry news.
+- Source roles are recorded as `core_technology`, `official_strategy`, or `strategic_context`. The weekly audit reports official-strategy coverage and warns when one institution exceeds 30%, the top two exceed 50%, or a six-item P0/P1 set covers fewer than six institutions.
 - CSET uses the WordPress sitemap index for broader backfill discovery across hardware and compute, supply chains, technology talent, research, innovation, biotechnology, quantum, space, and China technology analysis.
 - Remaining second-batch P0/P1 sources have guarded configs for Ada Lovelace, interface, and GovAI; GovAI is capped with `run_limit` because it is a specialist governance source.
 - ASPI's main site returns Cloudflare 403 to static requests; The Strategist is configured as an explicit auxiliary ASPI domain.
@@ -92,6 +94,7 @@ The local Codex automation `国际科技智库每周抓取` runs every Sunday at
 - RUSI uses `https://www.rusi.org/sitemap-index.xml` for defense technology, cyber, AI, China, supply-chain, and innovation-support backfill. Media mentions, networks, event recordings, and booking-form pages are filtered before scoring.
 - CEPS and NBR can use the explicit `text_proxy_fallback` route when static requests are blocked. This route is source-specific, remains subject to same-domain and publication-detail filters, and should be validated with `evaluate` before any resumed backfill write.
 - Slow or high-noise sources can set `run_limit` in `config/institutions/*.yaml`; auxiliary official domains can be listed under `allowed_domains`.
+- Source-health CSVs include rolling seven-day candidate, P0/P1, and eligible-item counts. The full expansion and acceptance rules are documented in `docs/source_expansion_2026-08-04.md`.
 
 ## Copyright Boundary
 

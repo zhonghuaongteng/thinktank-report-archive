@@ -52,6 +52,7 @@ def build_markdown(candidate: ArticleCandidate) -> str:
         f"institution: {candidate.institution_name}",
         f"institution_slug: {candidate.institution_slug}",
         f"institution_type: {candidate.institution_type}",
+        f"source_group: {candidate.source_group}",
         f"content_type: {candidate.content_type}",
         f"source_completeness: {candidate.source_completeness}",
         f"english_title: \"{english_title}\"",

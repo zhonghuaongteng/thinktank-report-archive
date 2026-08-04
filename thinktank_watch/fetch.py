@@ -22,6 +22,7 @@ from .parsers.generic import (
     looks_like_detail_url,
     norm,
     parse_generic_detail,
+    visible_date,
 )
 from .parsers.rand import parse_rand_detail
 from .parsers.stepi import extract_stepi_publication_candidates, parse_stepi_detail
@@ -153,6 +154,10 @@ SOURCE_LAST_SEGMENT_DENY = {
     "topic",
     "topics",
     "working-papers",
+    "publikationen",
+    "geschaeftsfelder",
+    "gruppen",
+    "themen",
 }
 
 
@@ -241,6 +246,16 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
     allowed_hosts.extend(_normalized_host(domain) for domain in institution.allowed_domains)
     if not any(source_host == host or source_host.endswith(f".{host}") for host in allowed_hosts):
         return False
+    source_canonical = canonical_url(url)
+    direct_canonicals = {canonical_url(item) for item in institution.direct_urls}
+    configured_indexes = {
+        canonical_url(item)
+        for item in [institution.homepage, *institution.list_pages, *institution.topic_pages]
+    }
+    if source_canonical in direct_canonicals:
+        return True
+    if source_canonical in configured_indexes:
+        return False
     ordered_path_segments = [segment.lower() for segment in parsed_source.path.split("/") if segment]
     path_segments = set(ordered_path_segments)
     last_segment = parsed_source.path.rstrip("/").split("/")[-1].lower()
@@ -325,6 +340,7 @@ def fetch_feed_candidates(institution: Institution, limit: int = 20) -> list[Art
                     institution_type=institution.institution_type,
                     title=norm(getattr(entry, "title", "")),
                     url=link,
+                    source_group=institution.source_group,
                     published_date=_date_from_feed(
                         norm(getattr(entry, "published", "") or getattr(entry, "updated", ""))
                     ),
@@ -466,9 +482,14 @@ def parse_text_proxy_detail(
         institution_type=institution.institution_type,
         title=title,
         url=candidate.url,
+        source_group=institution.source_group,
         published_date=published_date,
         summary=summary or candidate.summary,
-        content_type=candidate.content_type if candidate.content_type != "list_item" else "article",
+        content_type=(
+            "official_strategy"
+            if candidate.content_type == "direct_page" and institution.source_group == "official_strategy"
+            else candidate.content_type if candidate.content_type != "list_item" else "article"
+        ),
         authors=_authors_from_text_proxy(window, title) or candidate.authors,
         keywords=candidate.keywords,
         subjects=candidate.subjects,
@@ -497,10 +518,113 @@ def _list_candidate_from_link(
         institution_type=institution.institution_type,
         title=candidate_title,
         url=link,
+        source_group=institution.source_group,
         content_type="list_item",
         copyright_boundary=institution.copyright_boundary,
         fetch_status=fetch_status,
     )
+
+
+def extract_korea_msit_list_candidates(
+    html_text: str,
+    page_url: str,
+    institution: Institution,
+    limit: int,
+) -> list[ArticleCandidate]:
+    candidates: list[ArticleCandidate] = []
+    seen: set[str] = set()
+    soup = BeautifulSoup(html_text, "lxml")
+    for node in soup.find_all("a", href=True):
+        link = urljoin(page_url, node.get("href", ""))
+        parsed = urlparse(link)
+        query = dict(parse_qsl(parsed.query, keep_blank_values=True))
+        if not parsed.path.endswith("/bbs/view.do") or not query.get("nttSeqNo"):
+            continue
+        if not source_url_allowed(link, institution):
+            continue
+        key = dedupe_key(link)
+        if key in seen:
+            continue
+        seen.add(key)
+        candidate = _list_candidate_from_link(institution, node.get_text(" ", strip=True), link, "list_ok")
+        row = node.find_parent("tr")
+        candidate.published_date = visible_date(row.get_text(" ", strip=True) if row else "")
+        candidates.append(candidate)
+        if len(candidates) >= limit:
+            break
+    title_matches = list(
+        re.finditer(
+            r'data-value="(?P<id>\d+)">\';\s*sHtml\+=\s*unescape\(\'(?P<title>[^\']*)\'\);',
+            html_text,
+            re.DOTALL,
+        )
+    )
+    page_parsed = urlparse(page_url)
+    base_query = dict(parse_qsl(page_parsed.query, keep_blank_values=True))
+    base_query.setdefault("bbsSeqNo", "42")
+    for index, match in enumerate(title_matches):
+        item_id = match.group("id")
+        query = {**base_query, "nttSeqNo": item_id}
+        link = urlunparse(
+            (
+                page_parsed.scheme,
+                page_parsed.netloc,
+                page_parsed.path.replace("/list.do", "/view.do"),
+                "",
+                urlencode(query),
+                "",
+            )
+        )
+        key = dedupe_key(link)
+        if key in seen or not source_url_allowed(link, institution):
+            continue
+        seen.add(key)
+        body_end = title_matches[index + 1].start() if index + 1 < len(title_matches) else len(html_text)
+        row_script = html_text[match.end() : body_end]
+        date_match = re.search(r"PSTG_YMD.*?html\('(?P<date>20\d{2}-\d{2}-\d{2})'\)", row_script, re.DOTALL)
+        candidate = _list_candidate_from_link(
+            institution,
+            norm(match.group("title")),
+            link,
+            "list_ok:script",
+        )
+        candidate.published_date = date_match.group("date") if date_match else ""
+        candidates.append(candidate)
+        if len(candidates) >= limit:
+            break
+    return candidates
+
+
+def fetch_direct_candidates(institution: Institution, limit: int = 20) -> list[ArticleCandidate]:
+    """Create candidates for stable official landing pages and flagship reports.
+
+    Direct pages remain subject to the same detail parsing, scoring, date-window,
+    and deduplication rules as feed and list candidates.
+    """
+    candidates: list[ArticleCandidate] = []
+    seen: set[str] = set()
+    for url in institution.direct_urls:
+        key = dedupe_key(url)
+        if key in seen or not source_url_allowed(url, institution):
+            continue
+        seen.add(key)
+        title = url.rstrip("/").split("/")[-1].replace("-", " ").replace(".html", "").title()
+        candidates.append(
+            ArticleCandidate(
+                institution_slug=institution.slug,
+                institution_name=institution.name,
+                institution_type=institution.institution_type,
+                title=title or institution.name,
+                url=url,
+                source_group=institution.source_group,
+                content_type="direct_page",
+                copyright_boundary=institution.copyright_boundary,
+                fetch_status="direct_ok",
+            )
+        )
+        if len(candidates) >= limit:
+            break
+    return candidates
 
 
 def fetch_list_candidates(
@@ -525,6 +649,20 @@ def fetch_list_candidates(
             for candidate in page_candidates:
                 if not source_url_allowed(candidate.url, institution):
                     continue
+                key = dedupe_key(candidate.url)
+                if key in seen:
+                    continue
+                seen.add(key)
+                candidates.append(candidate)
+                page_added += 1
+                if len(candidates) >= limit:
+                    break
+            if len(candidates) >= limit:
+                break
+            continue
+        if response is not None and institution.slug == "korea-msit":
+            page_candidates = extract_korea_msit_list_candidates(response.text, page, institution, limit)
+            for candidate in page_candidates:
                 key = dedupe_key(candidate.url)
                 if key in seen:
                     continue
@@ -606,6 +744,7 @@ def fetch_sitemap_candidates(
                         institution_type=institution.institution_type,
                         title=loc.rstrip("/").split("/")[-1].replace("-", " ").replace(".html", "").title(),
                         url=loc,
+                        source_group=institution.source_group,
                         published_date=lastmod,
                         content_type="sitemap_item",
                         copyright_boundary=institution.copyright_boundary,
@@ -670,6 +809,8 @@ def fetch_detail(client: httpx.Client, institution: Institution, candidate: Arti
         detail = parse_stepi_detail(response.text, str(response.url), institution)
     else:
         detail = parse_generic_detail(response.text, str(response.url), institution)
+    if institution.slug == "korea-msit" and detail.title.lower() in {"press releases", "press release"}:
+        detail.title = candidate.title
     if not detail.title:
         detail.title = candidate.title
     if not detail.summary:
@@ -688,8 +829,11 @@ def fetch_detail(client: httpx.Client, institution: Institution, candidate: Arti
         detail.pdf_status = candidate.pdf_status
     if not detail.external_source_url:
         detail.external_source_url = candidate.external_source_url
+    if candidate.content_type == "direct_page" and institution.source_group == "official_strategy":
+        detail.content_type = "official_strategy"
     if institution.slug == "stepi" and detail.pdf_url and detail.source_completeness == "summary_only":
         detail.source_completeness = "full_text"
+    detail.source_group = institution.source_group
     detail.copyright_boundary = institution.copyright_boundary
     return detail
 

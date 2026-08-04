@@ -1239,6 +1239,49 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("单句条目", thin_section)
         self.assertNotIn("充实条目", thin_section)
 
+    def test_weekly_audit_reports_source_concentration_and_official_strategy_coverage(self):
+        from thinktank_watch.brief import render_weekly_audit_markdown
+
+        candidates = []
+        for index in range(5):
+            candidates.append(
+                ArticleCandidate(
+                    institution_slug="rand",
+                    institution_name="RAND",
+                    institution_type="think_tank",
+                    source_group="core_technology",
+                    title=f"RAND item {index}",
+                    chinese_title=f"兰德条目{index}",
+                    url=f"https://example.org/rand-{index}",
+                    published_date="2026-08-03",
+                    priority="P1",
+                    topic_tags=["科技创新"],
+                    chinese_summary="核心观点：报告分析国家科研投入、产业技术扩散与创新能力之间的结构关系。报告依据多年数据提出明确判断。",
+                )
+            )
+        candidates.append(
+            ArticleCandidate(
+                institution_slug="us-ostp",
+                institution_name="White House OSTP",
+                institution_type="government",
+                source_group="official_strategy",
+                title="Science: A New Golden Age",
+                chinese_title="科学：新的黄金时代",
+                url="https://www.whitehouse.gov/science/",
+                published_date="2026-07-21",
+                priority="P1",
+                topic_tags=["科技创新"],
+                chinese_summary="核心观点：报告提出国家科技战略和联邦科研体系改革方向。报告以研发投入和制度安排为依据形成政策判断。",
+            )
+        )
+
+        audit = render_weekly_audit_markdown("2026-08-04", candidates)
+
+        self.assertIn("## 来源结构", audit)
+        self.assertIn("官方战略条目：1", audit)
+        self.assertIn("来源集中度提醒", audit)
+        self.assertIn("RAND", audit)
+
     def test_write_institution_table_exports_kb_schema(self):
         from thinktank_watch.kb import write_institution_table
 
