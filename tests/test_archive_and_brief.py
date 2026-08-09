@@ -813,6 +813,8 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertIn("不要强行落到中国或上海", text)
             self.assertIn("模块应突出报告本身的中心结论", text)
             self.assertIn("信息图式漫画", text)
+            self.assertIn("20-30 个汉字", text)
+            self.assertIn("3-4 个小模块", text)
             self.assertIn("一图看懂", text)
             self.assertIn("科普化", text)
             self.assertIn("可视化", text)
