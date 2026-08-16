@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>国际科技智库周报（2026-08-16）</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+@page { size: A4; margin: 13mm 12mm; }
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
+  color: #172026; margin: 0; background: #eef1f4; line-height: 1.66; font-size: 10.5pt;
+}
+main { max-width: 186mm; margin: 0 auto; background: #ffffff; }
+@media screen { main { margin: 24px auto; box-shadow: 0 18px 48px rgba(23,32,38,.14); } body { padding: 0 12px; } }
+@media print { body { background: #ffffff; } main { max-width: none; } }
+h1, h2, h3 { font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", serif; }
+a { color: #14456e; text-decoration: none; }
+
+.page { padding: 10mm 11mm; }
+.pagebreak { page-break-after: always; }
+.avoid-break { page-break-inside: avoid; break-inside: avoid; }
+
+.brandbar { display: flex; height: 7px; }
+.brandbar span:nth-child(1) { flex: 4; background: #1f5f8b; }
+.brandbar span:nth-child(2) { flex: 2; background: #b84c3d; }
+.brandbar span:nth-child(3) { flex: 3; background: #4f7d5a; }
+
+.cover-kicker { letter-spacing: .35em; font-size: 8.5pt; color: #b84c3d; font-weight: 700; margin: 6mm 0 2.4mm; text-transform: uppercase; }
+.cover h1 { font-size: 26pt; margin: 0 0 3.2mm; color: #14456e; line-height: 1.2; }
+.cover .issue-meta { color: #5f6b75; font-size: 10pt; border-top: 1.4pt solid #172026; border-bottom: .4pt solid #c7d0d8; padding: 2.6mm 0; display: flex; gap: 6mm; flex-wrap: wrap; }
+.situation { background: #f2f6f9; border-left: 3pt solid #1f5f8b; padding: 3.2mm 4.2mm; margin: 4.6mm 0; }
+.situation h2, .top-reads h2, .viewpoints > h2, .toc h2, .comic-lead h2 { font-size: 13.5pt; color: #14456e; margin: 0 0 3mm; }
+.situation p { margin: 0; font-size: 10pt; }
+
+.top-reads ol { margin: 0; padding: 0; list-style: none; counter-reset: reads; }
+.top-reads li { counter-increment: reads; display: flex; gap: 3.4mm; padding: 3mm 0; border-bottom: .4pt dashed #c7d0d8; page-break-inside: avoid; }
+.top-reads li::before { content: counter(reads, decimal-leading-zero); font-family: Georgia, serif; font-size: 13pt; color: #b84c3d; font-weight: 700; min-width: 8mm; }
+.top-reads .read-title { display: block; font-family: "Source Han Serif SC", "Noto Serif CJK SC", SimSun, serif; font-weight: 800; font-size: 11pt; line-height: 1.45; margin-bottom: 1.2mm; }
+.top-reads .read-digest, .top-reads .read-evidence { display: block; font-size: 9.2pt; line-height: 1.55; margin-top: .8mm; }
+.top-reads .read-digest b, .top-reads .read-evidence b { color: #b84c3d; }
+.top-reads .meta { display: block; color: #5f6b75; font-size: 8.5pt; margin-top: 1mm; }
+
+.viewpoints .chapter { margin: 0 0 5mm; page-break-inside: avoid; }
+.viewpoints h3 { font-size: 11pt; color: #ffffff; background: #14456e; display: inline-block; padding: 1mm 4mm; border-radius: 2pt; margin: 0 0 2.4mm; }
+.viewpoints ul { margin: 0; padding-left: 0; list-style: none; }
+.viewpoints li { padding: 1.6mm 0 1.6mm 4mm; border-left: 1.6pt solid #d8e0e7; font-size: 9.5pt; }
+.viewpoints li b { color: #b84c3d; }
+
+.toc ul { margin: 0; padding: 0; list-style: none; column-count: 2; column-gap: 8mm; }
+.toc li { font-size: 9pt; padding: 1.4mm 0; border-bottom: .4pt dotted #c7d0d8; break-inside: avoid; }
+.toc .pri { font-weight: 700; color: #b84c3d; margin-right: 2mm; }
+
+.comic-lead figure { margin: 0 0 3mm; }
+.comic-lead img { width: 100%; border: .6pt solid #d7dee5; }
+.comic-lead .note { font-size: 9pt; color: #40505c; background: #faf6ee; border-left: 2.4pt solid #c89b52; padding: 3mm 4mm; margin: 0 0 5mm; }
+
+.topic-card { padding: 8mm 10mm 9mm; page-break-before: always; break-before: page; }
+.topic-card .card-head { display: flex; align-items: center; gap: 3mm; margin-bottom: 3mm; }
+.chip { font-size: 8pt; font-weight: 700; padding: .8mm 3mm; border-radius: 999px; }
+.chip.pri-P0 { background: #b84c3d; color: #fff; }
+.chip.pri-P1 { background: #e9d9d5; color: #8b2f2a; }
+.chip.chapter { background: #eef3f7; color: #14456e; border: .5pt solid #c7d7e3; }
+.card-head .idx { margin-left: auto; color: #9aa7b1; font-size: 8.5pt; }
+.topic-card h3 { font-size: 15pt; margin: 0 0 1.6mm; line-height: 1.35; }
+.topic-card h3 a { color: #14456e; }
+.topic-card .meta { color: #5f6b75; font-size: 8.5pt; margin-bottom: 3mm; }
+.topic-card figure.comic { margin: 0 0 4mm; }
+.topic-card figure.comic img { width: 100%; border: .6pt solid #d7dee5; border-radius: 2pt; }
+.judgment-box { background: #14456e; color: #ffffff; padding: 4mm 5mm; border-radius: 2pt; margin-bottom: 3mm; page-break-inside: avoid; }
+.judgment-box .label { font-size: 8pt; letter-spacing: .25em; color: #bcd2e4; display: block; margin-bottom: 1.2mm; }
+.judgment-box p { margin: 0; font-size: 10.5pt; font-weight: 700; line-height: 1.55; }
+.topic-analysis .analysis-kicker { margin: 1mm 0 4mm; color: #b84c3d; font-weight: 800; letter-spacing: .18em; font-size: 9pt; }
+.evidence { margin: 0; page-break-inside: avoid; }
+.evidence .label { font-size: 10.5pt; font-weight: 800; color: #b84c3d; letter-spacing: .12em; }
+.evidence ul { margin: 2mm 0 4mm; padding-left: 0; list-style: none; }
+.evidence li { position: relative; padding: 1.5mm 0 1.5mm 5mm; font-size: 10pt; line-height: 1.65; }
+.evidence li::before { content: ""; position: absolute; left: 1mm; top: 2.7mm; width: 2mm; height: 2mm; background: #c89b52; }
+.twin { display: flex; gap: 4mm; page-break-inside: avoid; }
+.twin .box { flex: 1; border-radius: 2pt; padding: 3.6mm 4.2mm; font-size: 9.5pt; line-height: 1.65; }
+.twin .box h4 { margin: 0 0 1.6mm; font-size: 10.5pt; }
+.twin .advice { background: #f0f6f0; border-top: 2.4pt solid #4f7d5a; }
+.twin .advice h4 { color: #3c6246; }
+.twin .reference { background: #fbf1ee; border-top: 2.4pt solid #b84c3d; }
+.twin .reference h4 { color: #8b2f2a; }
+.tracking { margin-top: 3.6mm; font-size: 8.5pt; color: #5f6b75; border-top: .4pt dashed #c7d0d8; padding-top: 2.2mm; }
+.footer-note { color: #9aa7b1; font-size: 8pt; text-align: right; padding: 0 11mm 6mm; }
+</style>
+</head>
+<body>
+<main>
+<div class="brandbar"><span></span><span></span><span></span></div>
+<div class="page cover pagebreak">
+<p class="cover-kicker">Global Tech Think Tank Watch</p>
+<h1>国际科技智库周报</h1>
+<div class="issue-meta"><span>2026-08-16</span><span>新增 14 条</span><span>P0/P1 重点 13 条</span><span>覆盖机构 6 家</span></div>
+<section class="situation avoid-break"><h2>本周态势</h2><p>本周形成 13 条 P0/P1 重点，议题集中在AI、数字基础设施与技术治理、产业链、制造与能源基础设施。产业链、制造与能源信号 3 条；AI 与数字基础设施信号 9 条；直接涉华条目 2 条。</p></section>
+</div>
+<div class="page top-reads-page pagebreak">
+<section class="top-reads"><h2>本周必读</h2><ol>
+<li><span><span class="read-title"><a href="https://www.rand.org/pubs/commentary/2026/08/ai-china-and-the-new-risks-to-us-security-qa-with-matan.html">AI, China, and the New Risks to U.S. Security: Q&amp;A with Matan Chorev</a></span><span class="read-digest"><b>研判</b>　该材料可从以下要点把握：Matan Chorev is vice president and director of RAND Global and Emerging Risks.</span><span class="read-evidence"><b>证据</b>　In this Q&amp;A, he discusses some of the most consequential challenges facing the United States and the world.</span><span class="meta">RAND · P0 · 涉华科技竞争与上海参考</span></span></li>
+<li><span><span class="read-title"><a href="https://itif.org/publications/2026/08/13/pax-silica-timeline/">Tracking Pax Silica’s Evolution: A Timeline</a></span><span class="read-digest"><b>研判</b>　该材料可从以下要点把握：Major agreements, new participants, and key diplomatic and industrial milestones in the U.</span><span class="read-evidence"><b>证据</b>　上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。</span><span class="meta">Information Technology and Innovation Foundation · P0 · 产业链、制造与能源基础设施</span></span></li>
+<li><span><span class="read-title"><a href="https://www.stepi.re.kr/site/stepien/ex/bbs/publicationView.do?pageIndex=1&amp;cbIdx=1303&amp;reIdx=137&amp;cateCont=A0508">Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach</a></span><span class="read-digest"><b>研判</b>　该材料可从以下要点把握：364 Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach ｜Vol.</span><span class="read-evidence"><b>证据</b>　2026｜ Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach Kiyoon Shin · Y...</span><span class="meta">Science and Technology Policy Institute Korea · P0 · 产业链、制造与能源基础设施</span></span></li>
+<li><span><span class="read-title"><a href="https://cset.georgetown.edu/publication/outpaced-ai-and-policys-role-in-transforming-cybersecurity-compliance/">Outpaced: AI and Policy&#x27;s Role in Transforming Cybersecurity Compliance</a></span><span class="read-digest"><b>研判</b>　该材料可从以下要点把握：P olicy Br ief Outpaced AI and P olicy’s R ole in T r ansf or ming Cybersecur ity Com pliance Aut hor K at her ine Car r oll August 2026 Center for Security and Emergin...</span><span class="read-evidence"><b>证据</b>　However, the ATO process and its governing framework—the Risk Management Framework (RMF)—are described as ineffective, slow, duplicative, and in need of reform.</span><span class="meta">Center for Security and Emerging Technology · P1 · AI、数字基础设施与技术治理</span></span></li>
+<li><span><span class="read-title"><a href="https://www.csis.org/analysis/cyberattacks-us-water-sector-and-iran-question-escalation-or-opportunism">The Cyberattacks on the U.S Water Sector and the Iran Question: Escalation or Opportunism?</a></span><span class="read-digest"><b>研判</b>　该材料可从以下要点把握：It is highly likely that Iran is behind the cyberattacks on the U.S.</span><span class="read-evidence"><b>证据</b>　Psychological effect—not escalation—is the point of Iran’s cyber operations, to sow fear, chaos, and division as part of its information warfare strategy.</span><span class="meta">Center for Strategic and International Studies · P1 · AI、数字基础设施与技术治理</span></span></li>
+</ol></section>
+</div>
+<div class="page pagebreak">
+<section class="viewpoints"><h2>议题观点速览</h2>
+<div class="chapter">
+<h3>AI、数字基础设施与技术治理（2 条）</h3><ul>
+<li><b>RAND</b>：该材料可从以下要点把握：Large language model agents demonstrate an emerging ability to use biological tools...</li>
+<li><b>Center for Security and Emerging Technology</b>：该材料可从以下要点把握：P olicy Br ief Outpaced AI and P olicy’s R ole in T r ansf or ming Cybersecur ity Co...</li>
+</ul></div>
+<div class="chapter">
+<h3>产业链、制造与能源基础设施（2 条）</h3><ul>
+<li><b>Information Technology and Innovation Foundation</b>：该材料可从以下要点把握：Major agreements, new participants, and key diplomatic and industrial milestones in...</li>
+<li><b>Science and Technology Policy Institute Korea</b>：该材料可从以下要点把握：364 Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation...</li>
+</ul></div>
+<div class="chapter">
+<h3>涉华科技竞争与上海参考（2 条）</h3><ul>
+<li><b>RAND</b>：该材料可从以下要点把握：Matan Chorev is vice president and director of RAND Global and Emerging Risks.</li>
+<li><b>Information Technology and Innovation Foundation</b>：该材料可从以下要点把握：China is not only investing more in innovation but also becoming better at turning t...</li>
+</ul></div>
+<div class="chapter">
+<h3>科研体系、人才与创新政策（2 条）</h3><ul>
+<li><b>Center for Strategic and International Studies</b>：该材料可从以下要点把握：Democracy Under Stress and the Transformation of the Global Order Photo: YAMIL LAGE/...</li>
+<li><b>Information Technology and Innovation Foundation</b>：该材料可从以下要点把握：Arbitrary funding cuts and increased political involvement in grantmaking will furth...</li>
+</ul></div>
+</section>
+</div>
+<div class="page pagebreak"><section class="toc"><h2>本期目录</h2><ul>
+<li><span class="pri">P0</span><a href="#topic-01">主题 01｜AI, China, and the New Risks to U.S. Security: Q&amp;A with Matan Chorev</a></li>
+<li><span class="pri">P0</span><a href="#topic-02">主题 02｜Tracking Pax Silica’s Evolution: A Timeline</a></li>
+<li><span class="pri">P0</span><a href="#topic-03">主题 03｜China Isn’t Just Spending More on Innovation—It’s Getting Better at Innovation</a></li>
+<li><span class="pri">P0</span><a href="#topic-04">主题 04｜Testing Large Language Model Agents on the Use of Biological Tools for Nucleic Acid Synthesis Screening Evasion</a></li>
+<li><span class="pri">P0</span><a href="#topic-05">主题 05｜Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach</a></li>
+<li><span class="pri">P1</span><a href="#topic-06">主题 06｜Outpaced: AI and Policy&#x27;s Role in Transforming Cybersecurity Compliance</a></li>
+<li><span class="pri">P1</span><a href="#topic-07">主题 07｜Modernizing Department of the Air Force Training and Education Approaches: Leveraging Stackable Certificates for Artificial Intelligence and Advanced Technologies</a></li>
+<li><span class="pri">P1</span><a href="#topic-08">主题 08｜The Cyberattacks on the U.S Water Sector and the Iran Question: Escalation or Opportunism?</a></li>
+<li><span class="pri">P1</span><a href="#topic-09">主题 09｜Assessing the Energy Potential of Artificial Intelligence Data Center Sites: A Framework for Comparing Site Suitability</a></li>
+<li><span class="pri">P1</span><a href="#topic-10">主题 10｜Respirator Surge Manufacturing: Options to Ensure U.S. Small and Medium-Sized Enterprises Can Surge the Manufacturing of Respiratory Personal Protective Equipment</a></li>
+<li><span class="pri">P1</span><a href="#topic-11">主题 11｜Democracy Under Stress and the Transformation of the Global Order</a></li>
+<li><span class="pri">P1</span><a href="#topic-12">主题 12｜The US Science System Needs Reform, Not Arbitrary Funding Cuts</a></li>
+<li><span class="pri">P1</span><a href="#topic-13">主题 13｜New evidence on data center employment effects</a></li>
+</ul></section></div>
+<section class="topic-card topic-primary" id="topic-01">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 01 / 13</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/commentary/2026/08/ai-china-and-the-new-risks-to-us-security-qa-with-matan.html">AI, China, and the New Risks to U.S. Security: Q&amp;A with Matan Chorev</a></h3>
+<p class="meta">RAND｜AI治理, 中国与上海相关, 科技创新｜2026-08-12</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/01-topic-ai-china-and-the-new-risks-to-u-s-security-q-a-with-matan-chorev.jpg" alt="主题 01 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：Matan Chorev is vice president and director of RAND Global and Emerging Risks.</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 01 / 13 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/commentary/2026/08/ai-china-and-the-new-risks-to-us-security-qa-with-matan.html">AI, China, and the New Risks to U.S. Security: Q&amp;A with Matan Chorev</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>In this Q&amp;A, he discusses some of the most consequential challenges facing the United States and the world.</li>
+<li>上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。</li>
+</ul></div>
+</section>
+<section class="topic-card topic-primary" id="topic-02">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 02 / 13</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/13/pax-silica-timeline/">Tracking Pax Silica’s Evolution: A Timeline</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜AI治理, 先进制造, 科技创新｜2026-08-13</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/02-topic-tracking-pax-silica-s-evolution-a-timeline.jpg" alt="主题 02 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：Major agreements, new participants, and key diplomatic and industrial milestones in the U.</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 02 / 13 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/13/pax-silica-timeline/">Tracking Pax Silica’s Evolution: A Timeline</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。</li>
+</ul></div>
+</section>
+<section class="topic-card topic-primary" id="topic-03">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 03 / 13</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/11/china-isnt-just-spending-more-on-innovation-its-getting-better-at-innovation/">China Isn’t Just Spending More on Innovation—It’s Getting Better at Innovation</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜科技创新, 中国与上海相关｜2026-08-11</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/03-topic-china-isn-t-just-spending-more-on-innovation-it-s-getting-better.jpg" alt="主题 03 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：China is not only investing more in innovation but also becoming better at turning those investments into technologies with commercial potential.</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">涉华科技竞争与上海参考</span>
+<span class="idx">主题 03 / 13 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/11/china-isnt-just-spending-more-on-innovation-its-getting-better-at-innovation/">China Isn’t Just Spending More on Innovation—It’s Getting Better at Innovation</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>To maintain its technological leadership, the United States should strengthen its entire innovation pipeline, from research to commercialization.</li>
+<li>上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>自动识别到的政策含义与建议线索包括：China is not only investing more in innovation but also becoming better at turning those investments into technologies with commercial potential.</div>
+<div class="box reference"><h4>中国 / 上海参考</h4>对中国/上海研判的参考在于：该材料提供了涉华技术能力、人才流动、产业链位置或政策工具的比较证据。关键原文线索包括：China is not only investing more in innovation but also becoming better at turning those investments into technologies with commercial potential.</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-04">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 04 / 13</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA4741-2.html">Testing Large Language Model Agents on the Use of Biological Tools for Nucleic Acid Synthesis Screening Evasion</a></h3>
+<p class="meta">RAND｜科技创新, AI治理｜2026-08-11</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/04-topic-testing-large-language-model-agents-on-the-use-of-biological-too.jpg" alt="主题 04 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：Large language model agents demonstrate an emerging ability to use biological tools to redesign peptides and proteins for nucleic acid synthesis screening evasion, indicating that agents could lower expertise...</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 04 / 13 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA4741-2.html">Testing Large Language Model Agents on the Use of Biological Tools for Nucleic Acid Synthesis Screening Evasion</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。</li>
+</ul></div>
+</section>
+<section class="topic-card topic-primary" id="topic-05">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 05 / 13</span>
+</div>
+<h3><a href="https://www.stepi.re.kr/site/stepien/ex/bbs/publicationView.do?pageIndex=1&amp;cbIdx=1303&amp;reIdx=137&amp;cateCont=A0508">Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach</a></h3>
+<p class="meta">Science and Technology Policy Institute Korea｜AI治理, 先进制造｜2026-08-11</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/05-topic-policy-measures-to-enhance-manufacturing-data-utilization-for-ai.jpg" alt="主题 05 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：364 Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach ｜Vol.</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 05 / 13 · 论证页</span>
+</div>
+<h3><a href="https://www.stepi.re.kr/site/stepien/ex/bbs/publicationView.do?pageIndex=1&amp;cbIdx=1303&amp;reIdx=137&amp;cateCont=A0508">Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>2026｜ Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach Kiyoon Shin · Yoonhwan Oh · Jungsub Yoon · Sula Jin STEPI Insight | VOL.</li>
+<li>- In the era of manufacturing AX, manufacturing data has evolved from simple production records into a strategic asset th at enables defect prediction, predictive maintenance, process optimization, production planning, energy efficiency, an...</li>
+<li>上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>自动识别到的政策含义与建议线索包括：364 Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach ｜Vol.</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-06">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 06 / 13</span>
+</div>
+<h3><a href="https://cset.georgetown.edu/publication/outpaced-ai-and-policys-role-in-transforming-cybersecurity-compliance/">Outpaced: AI and Policy&#x27;s Role in Transforming Cybersecurity Compliance</a></h3>
+<p class="meta">Center for Security and Emerging Technology｜AI治理, 数字经济｜2026-08-12</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/06-topic-outpaced-ai-and-policy-s-role-in-transforming-cybersecurity-comp.jpg" alt="主题 06 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：P olicy Br ief Outpaced AI and P olicy’s R ole in T r ansf or ming Cybersecur ity Com pliance Aut hor K at her ine Car r oll August 2026 Center for Security and Emerging Technology | 1 Executive Summary Ameri...</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 06 / 13 · 论证页</span>
+</div>
+<h3><a href="https://cset.georgetown.edu/publication/outpaced-ai-and-policys-role-in-transforming-cybersecurity-compliance/">Outpaced: AI and Policy&#x27;s Role in Transforming Cybersecurity Compliance</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>That advantage does not automatically transfer to the military.</li>
+<li>The federal cybersecurity compliance process is a major barrier between America’s most advanced technologies and the warfighters who need them.</li>
+<li>The Authorization to Operate (ATO) is the federal government’s formal mechanism for assessing and approving software systems.</li>
+<li>However, the ATO process and its governing framework—the Risk Management Framework (RMF)—are described as ineffective, slow, duplicative, and in need of reform.1 Bureaucratic delays can carry a devastating cost.</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>自动识别到的政策含义与建议线索包括：The federal cybersecurity compliance process is a major barrier between America’s most advanced technologies and the warfighters who need them.</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-07">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 07 / 13</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/perspectives/PEA4950-1.html">Modernizing Department of the Air Force Training and Education Approaches: Leveraging Stackable Certificates for Artificial Intelligence and Advanced Technologies</a></h3>
+<p class="meta">RAND｜AI治理, 科技创新｜2026-08-11</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/07-topic-modernizing-department-of-the-air-force-training-and-education-a.jpg" alt="主题 07 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：Stackable certificate programs in artificial intelligence and advanced technologies could build technological fluency in U.S.</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 07 / 13 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/perspectives/PEA4950-1.html">Modernizing Department of the Air Force Training and Education Approaches: Leveraging Stackable Certificates for Artificial Intelligence and Advanced Technologies</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>Department of the Air Force critical missions and career fields and modernize existing professional military education.</li>
+<li>上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>自动识别到的政策含义与建议线索包括：Stackable certificate programs in artificial intelligence and advanced technologies could build technological fluency in U.S.</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-08">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 08 / 13</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/cyberattacks-us-water-sector-and-iran-question-escalation-or-opportunism">The Cyberattacks on the U.S Water Sector and the Iran Question: Escalation or Opportunism?</a></h3>
+<p class="meta">Center for Strategic and International Studies｜国防AI, 数字经济｜2026-08-14</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/08-topic-the-cyberattacks-on-the-u-s-water-sector-and-the-iran-question-e.jpg" alt="主题 08 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：It is highly likely that Iran is behind the cyberattacks on the U.S.</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 08 / 13 · 论证页</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/cyberattacks-us-water-sector-and-iran-question-escalation-or-opportunism">The Cyberattacks on the U.S Water Sector and the Iran Question: Escalation or Opportunism?</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>Psychological effect—not escalation—is the point of Iran’s cyber operations, to sow fear, chaos, and division as part of its information warfare strategy.</li>
+<li>上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>自动识别到的政策含义与建议线索包括：Psychological effect—not escalation—is the point of Iran’s cyber operations, to sow fear, chaos, and division as part of its information warfare strategy.</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-09">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 09 / 13</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_briefs/RBA3845-3.html">Assessing the Energy Potential of Artificial Intelligence Data Center Sites: A Framework for Comparing Site Suitability</a></h3>
+<p class="meta">RAND｜AI治理, 数字经济｜2026-08-11</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/09-topic-assessing-the-energy-potential-of-artificial-intelligence-data-c.jpg" alt="主题 09 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：This brief describes a framework designed to assess possible data center sites for their energy potential.</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 09 / 13 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_briefs/RBA3845-3.html">Assessing the Energy Potential of Artificial Intelligence Data Center Sites: A Framework for Comparing Site Suitability</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>The framework is intended to serve as an energy-potential screening tool for planners, policymakers, and developers.</li>
+<li>上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>自动识别到的政策含义与建议线索包括：The framework is intended to serve as an energy-potential screening tool for planners, policymakers, and developers.</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-10">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 10 / 13</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA5031-1.html">Respirator Surge Manufacturing: Options to Ensure U.S. Small and Medium-Sized Enterprises Can Surge the Manufacturing of Respiratory Personal Protective Equipment</a></h3>
+<p class="meta">RAND｜先进制造｜2026-08-12</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/10-topic-respirator-surge-manufacturing-options-to-ensure-u-s-small-and-m.jpg" alt="主题 10 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：Small and medium-sized enterprises stepped up production of personal protective equipment in response to the coronavirus disease 2019 pandemic and could do so again if the conditions exist for them to remain...</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 10 / 13 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA5031-1.html">Respirator Surge Manufacturing: Options to Ensure U.S. Small and Medium-Sized Enterprises Can Surge the Manufacturing of Respiratory Personal Protective Equipment</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。</li>
+</ul></div>
+</section>
+<section class="topic-card topic-primary" id="topic-11">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 11 / 13</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/democracy-under-stress-and-transformation-global-order">Democracy Under Stress and the Transformation of the Global Order</a></h3>
+<p class="meta">Center for Strategic and International Studies｜科技创新｜2026-08-12</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/11-topic-democracy-under-stress-and-the-transformation-of-the-global-orde.jpg" alt="主题 11 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：Democracy Under Stress and the Transformation of the Global Order Photo: YAMIL LAGE/AFP via Getty Images Commentary by Evan Ellis Published August 12, 2026 This work is adapted from an address made to the Int...</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 11 / 13 · 论证页</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/democracy-under-stress-and-transformation-global-order">Democracy Under Stress and the Transformation of the Global Order</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>A convergence of forces is currently transforming the global environment, posing grave risks to democracy, prosperity and security.</li>
+<li>In a poll by Latinobarometro , half of those surveyed in Latin America said they would support a leader who could deliver results, even if it were necessary to adopt nondemocratic solutions to do so.</li>
+<li>In the Americas, and in other parts of the world, there is a rising threat to both democracy and to order and prosperity.</li>
+<li>Democratic societies have throughout history have become disillusioned with the inadequate performance of their governments, particularly with respect to their material needs and insecurity.</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>自动识别到的政策含义与建议线索包括：Democracy Under Stress and the Transformation of the Global Order Photo: YAMIL LAGE/AFP via Getty Images Commentary by Evan Ellis Published August 12, 2026 This work is adapted from an address made to the Interamerican Institute on Democracy on July 30, 2026. Such technology has enabled levels of state control over society that the government of the former Soviet Union only aspired to.</div>
+<div class="box reference"><h4>中国 / 上海参考</h4>对中国/上海研判的参考在于：该材料提供了涉华技术能力、人才流动、产业链位置或政策工具的比较证据。关键原文线索包括：Nowhere is this more visible than in the People’s Republic of China (PRC), where cameras with facial recognition—linked to citizen financial and other data, internet controls, and public transportation—have all made reality of what philosopher Jeremy Bentham called the Panopticon . This includes architectures in China and in authoritarian allies that have received Chinese systems, including the Fathe...</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-12">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 12 / 13</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/10/us-science-system-needs-reform-not-arbitrary-funding-cuts/">The US Science System Needs Reform, Not Arbitrary Funding Cuts</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜科技创新｜2026-08-10</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/12-topic-the-us-science-system-needs-reform-not-arbitrary-funding-cuts.jpg" alt="主题 12 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：Arbitrary funding cuts and increased political involvement in grantmaking will further weaken an already less productive U.S.</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 12 / 13 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/10/us-science-system-needs-reform-not-arbitrary-funding-cuts/">The US Science System Needs Reform, Not Arbitrary Funding Cuts</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>Policymakers should pursue reforms that enable researchers to generate more breakthroughs and strengthen U.S.</li>
+<li>上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>自动识别到的政策含义与建议线索包括：Policymakers should pursue reforms that enable researchers to generate more breakthroughs and strengthen U.S.</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-13">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 13 / 13</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/new-evidence-on-data-center-employment-effects/">New evidence on data center employment effects</a></h3>
+<p class="meta">Brookings Center for Technology Innovation｜数字经济｜2026-08-10</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-16/pages/13-topic-new-evidence-on-data-center-employment-effects.jpg" alt="主题 13 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>该材料可从以下要点把握：Research New evidence on data center employment effects Dany Bahar and Dany Bahar Co-Director, Migration and Displacement and Senior Fellow - Center for Global Development Greg Wright Greg Wright Nonresident...</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 13 / 13 · 论证页</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/new-evidence-on-data-center-employment-effects/">New evidence on data center employment effects</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>Mark Felix/AFP via Getty Images 7 min read Print Editor&#x27;s note: This piece has been updated to reflect new results as the research continues with an expanded sample.</li>
+<li>Previous findings related to data center effects on employment, wages, and home prices have been revised.</li>
+<li>The brief summarizes findings from “Data Centers and Local Labor Markets” by Dany Bahar and Greg Wright.</li>
+<li>The full paper is available from the authors.</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>自动识别到的政策含义与建议线索包括：The data center debate On March 25, 2026, Senator Bernie Sanders and Representative Alexandria Ocasio-Cortez introduced the AI Data Center Moratorium Act, a bill that would pause all new large-scale AI data center construction until Congress passes legislation addressing AI safety, worker protections, and environmental standards.</div>
+</div>
+</section>
+<p class="footer-note">国际科技智库周报 · 2026-08-16 · 私有归档，仅限内部研判使用</p>
+</main>
+</body>
+</html>
