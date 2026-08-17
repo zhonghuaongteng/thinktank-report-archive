@@ -6,7 +6,7 @@ source_group: core_technology
 content_type: article
 source_completeness: full_text
 english_title: "The US Science System Needs Reform, Not Arbitrary Funding Cuts"
-chinese_title: "The US Science System Needs Reform, Not Arbitrary Funding Cuts"
+chinese_title: "美国科学体系需要改革，而非任意削减经费"
 published_date: 2026-08-10
 source_url: https://itif.org/publications/2026/08/10/us-science-system-needs-reform-not-arbitrary-funding-cuts/
 pdf_url:
@@ -27,13 +27,21 @@ fetch_status: detail_ok
 
 ## 中文摘要与研判
 
-### 核心观点
+### 原始抓取片段（不入周报）
 
 该材料可从以下要点把握：Arbitrary funding cuts and increased political involvement in grantmaking will further weaken an already less productive U.S. Policymakers should pursue reforms that enable researchers to generate more breakthroughs and strengthen U.S. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
 
-### 建议
+### 原始抓取建议片段（不入周报）
 
 自动识别到的政策含义与建议线索包括：Policymakers should pursue reforms that enable researchers to generate more breakthroughs and strengthen U.S.
+
+### 核心观点
+
+ITIF反对以任意削减经费和强化政治干预作为美国科研体系改革手段，认为这会进一步损害已在下降的创新生产率与国际竞争力。机构援引到2025年5月已取消逾15亿美元高校科研资助，并指出让政治任命者更直接决定项目资助会偏离专家同行评审。其证据包括OSTP对科研生产率下滑的诊断、科研人员近半工作时间耗于文书合规的估计，以及研究生产率约每13年减半的学术研究结论。文章并不主张简单增加经费即可解决问题，而是要求同时降低行政负担、延长优秀研究者资助周期、试验快速资助和奖金等多样化工具。其立场是，以制度效率改革释放科研能力，比削减投入更有助于维持美国技术竞争力。
+
+### 建议
+
+减少合规负担，扩大多元资助工具，并以持续评估改进科研资助组合。
 
 ## 元数据
 

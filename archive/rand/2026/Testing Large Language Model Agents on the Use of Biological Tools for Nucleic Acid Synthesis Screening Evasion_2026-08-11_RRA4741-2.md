@@ -6,7 +6,7 @@ source_group: core_technology
 content_type: rand_report
 source_completeness: full_text
 english_title: "Testing Large Language Model Agents on the Use of Biological Tools for Nucleic Acid Synthesis Screening Evasion"
-chinese_title: "Testing Large Language Model Agents on the Use of Biological Tools for Nucleic Acid Synthesis Screening Evasion"
+chinese_title: "评测大语言模型智能体规避核酸合成筛查的生物工具使用能力"
 published_date: 2026-08-11
 source_url: https://www.rand.org/pubs/research_reports/RRA4741-2.html
 pdf_url: https://www.rand.org/content/dam/rand/pubs/research_reports/RRA4700/RRA4741-2/RAND_RRA4741-2.pdf
@@ -27,9 +27,13 @@ fetch_status: detail_ok
 
 ## 中文摘要与研判
 
-### 核心观点
+### 原始抓取片段（不入周报）
 
 该材料可从以下要点把握：Large language model agents demonstrate an emerging ability to use biological tools to redesign peptides and proteins for nucleic acid synthesis screening evasion, indicating that agents could lower expertise barriers for hazardous capabilities. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
+
+### 核心观点
+
+RAND评测大语言模型智能体调用生物信息学工具、重新设计肽和蛋白质以规避核酸合成筛查的能力。机构警示，这类智能体已显现出降低专业门槛的风险潜力；风险来自“模型+工具链”组合，而非单纯的文本生成能力。研究以受控红队任务测试智能体在蛋白质重设计、工具调用和筛查规避中的表现，并将其与既有筛查机制相对照。结果显示，智能体能力仍在发展，任务成功并不等同于现实世界危害的即时实现。报告同时强调，风险评估应持续跟踪工具接入、模型能力和合成筛查防线之间的相互作用，不能据一次实验结果推断必然失效。
 
 ## 元数据
 

@@ -6,7 +6,7 @@ source_group: core_technology
 content_type: report
 source_completeness: full_text
 english_title: "Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach"
-chinese_title: "Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach"
+chinese_title: "以供应链为基础提升制造企业AI转型数据利用的政策工具"
 published_date: 2026-08-11
 source_url: https://www.stepi.re.kr/site/stepien/ex/bbs/publicationView.do?pageIndex=1&cbIdx=1303&reIdx=137&cateCont=A0508
 pdf_url: https://www.stepi.re.kr/common/report/Download.do?reIdx=137&cateCont=A0508&streFileNm=e13ae17f-b86a-4780-95d6-95181bb57ac6.pdf
@@ -27,13 +27,17 @@ fetch_status: detail_ok
 
 ## 中文摘要与研判
 
-### 核心观点
+### 原始抓取片段（不入周报）
 
 该材料可从以下要点把握：364 Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach ｜Vol. 2026｜ Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach Kiyoon Shin · Yoonhwan Oh · Jungsub Yoon · Sula Jin STEPI Insight | VOL.364 Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach Kiyoon Shin · Yoonhwan Oh · Jungsub Yoon · Sula Jin  Need to Enhance Manufacturing Data Utilization for Manufacturing AX  The Role of Manufacturing Data as the Foundation of Manufacturing AX - Manufacturing data refers to data generated, collected, and utilized throughout the entire manufacturing lifecycle, including product planning, design, production, quality management, distribution, sales, and maintenance. - In the era of manufacturing AX, manufacturing data has evolved from simple production records into a strategic asset th at enables defect prediction, predictive maintenance, process optimization, production planning, energy efficiency, and supply chain risk management. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
 
-### 建议
+### 原始抓取建议片段（不入周报）
 
 自动识别到的政策含义与建议线索包括：364 Policy Measures to Enhance Manufacturing Data Utilization for AI Transformation (AX) in Manufacturing Firms: A Supply Chain-Based Approach ｜Vol.
+
+### 核心观点
+
+STEPI将制造业AI转型中的数据界定为能够支撑缺陷预测、预测性维护、流程优化和供应链协同的战略资产，而非单纯生产记录。机构判断，韩国制造企业的数据利用障碍具有供应链结构性：大企业与中小供应商之间的数据获取、标准、互信和收益分配难以靠单个企业解决。报告据供应链视角梳理制造数据在生产、设备维护、质量管理和跨企业协同中的应用场景，并将数据可用性与AI转型绩效相联系。其政策取向是推动共享基础设施、互操作标准和能使中小企业参与的数据治理安排。材料同时提示，若忽略企业间能力差异，数据开放可能反而扩大数字化能力鸿沟。
 
 ## 元数据
 

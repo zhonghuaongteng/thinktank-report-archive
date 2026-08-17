@@ -6,7 +6,7 @@ source_group: core_technology
 content_type: rand_report
 source_completeness: full_text
 english_title: "Modernizing Department of the Air Force Training and Education Approaches: Leveraging Stackable Certificates for Artificial Intelligence and Advanced Technologies"
-chinese_title: "Modernizing Department of the Air Force Training and Education Approaches: Leveraging Stackable Certificates for Artificial Intelligence and Advanced Technologies"
+chinese_title: "以可叠加证书现代化美国空军部AI与先进技术培训"
 published_date: 2026-08-11
 source_url: https://www.rand.org/pubs/perspectives/PEA4950-1.html
 pdf_url: https://www.rand.org/content/dam/rand/pubs/perspectives/PEA4900/PEA4950-1/RAND_PEA4950-1.pdf
@@ -27,13 +27,21 @@ fetch_status: detail_ok
 
 ## 中文摘要与研判
 
-### 核心观点
+### 原始抓取片段（不入周报）
 
 该材料可从以下要点把握：Stackable certificate programs in artificial intelligence and advanced technologies could build technological fluency in U.S. Department of the Air Force critical missions and career fields and modernize existing professional military education. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
 
-### 建议
+### 原始抓取建议片段（不入周报）
 
 自动识别到的政策含义与建议线索包括：Stackable certificate programs in artificial intelligence and advanced technologies could build technological fluency in U.S.
+
+### 核心观点
+
+RAND评估以可叠加证书项目提升美国空军部关键任务与职业领域AI、先进技术素养的可行性。机构持支持态度，认为模块化、可累积的学习路径可补足传统职业军事教育更新慢、与岗位技术需求脱节的问题。研究围绕关键职业领域、任务需求和既有专业教育体系设计证书衔接方式，将技术能力建设同职业发展和战备要求相联结。报告并未把证书视为替代完整学历或在职训练的万能方案，实施效果仍取决于课程质量、认证标准、岗位认可和持续更新。其结论是，人才培养制度需要能随技术迭代而快速调整的组织机制。
+
+### 建议
+
+在关键岗位建立可叠加证书路径，并将课程、认证和岗位晋升要求联动更新。
 
 ## 元数据
 

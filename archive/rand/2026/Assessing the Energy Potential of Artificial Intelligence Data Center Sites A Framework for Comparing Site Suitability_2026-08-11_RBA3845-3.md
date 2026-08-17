@@ -6,7 +6,7 @@ source_group: core_technology
 content_type: rand_report
 source_completeness: full_text
 english_title: "Assessing the Energy Potential of Artificial Intelligence Data Center Sites: A Framework for Comparing Site Suitability"
-chinese_title: "Assessing the Energy Potential of Artificial Intelligence Data Center Sites: A Framework for Comparing Site Suitability"
+chinese_title: "评估AI数据中心选址的能源潜力：场址适宜性比较框架"
 published_date: 2026-08-11
 source_url: https://www.rand.org/pubs/research_briefs/RBA3845-3.html
 pdf_url: https://www.rand.org/content/dam/rand/pubs/research_briefs/RBA3800/RBA3845-3/RAND_RBA3845-3.pdf
@@ -27,13 +27,17 @@ fetch_status: detail_ok
 
 ## 中文摘要与研判
 
-### 核心观点
+### 原始抓取片段（不入周报）
 
 该材料可从以下要点把握：This brief describes a framework designed to assess possible data center sites for their energy potential. The framework is intended to serve as an energy-potential screening tool for planners, policymakers, and developers. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
 
-### 建议
+### 原始抓取建议片段（不入周报）
 
 自动识别到的政策含义与建议线索包括：The framework is intended to serve as an energy-potential screening tool for planners, policymakers, and developers.
+
+### 核心观点
+
+RAND提出一套比较AI数据中心候选场址能源潜力的筛选框架，服务于规划者、政策制定者和开发商的前期决策。机构的基本判断是，数据中心选址不能只按土地或现有电价排序，必须把供电资源、输配电条件与未来扩容潜力放在同一能源约束框架中比较。研究以场址能源潜力这一可操作指标组织筛选，并将其作为后续工程、经济和环境评估的前置条件。该框架并不承诺单一指标可以替代完整项目可行性研究，强调其功能是缩小候选集和暴露约束。因而，对AI基础设施扩张的关键含义在于，电力可得性已成为选址与建设时序的核心瓶颈。
 
 ## 元数据
 

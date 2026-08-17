@@ -6,7 +6,7 @@ source_group: core_technology
 content_type: commentary
 source_completeness: full_text
 english_title: "AI, China, and the New Risks to U.S. Security: Q&A with Matan Chorev"
-chinese_title: "AI, China, and the New Risks to U.S. Security: Q&A with Matan Chorev"
+chinese_title: "人工智能、中国与美国安全新风险：乔雷夫访谈"
 published_date: 2026-08-12
 source_url: https://www.rand.org/pubs/commentary/2026/08/ai-china-and-the-new-risks-to-us-security-qa-with-matan.html
 pdf_url:
@@ -27,9 +27,13 @@ fetch_status: detail_ok
 
 ## 中文摘要与研判
 
-### 核心观点
+### 原始抓取片段（不入周报）
 
 该材料可从以下要点把握：Matan Chorev is vice president and director of RAND Global and Emerging Risks. In this Q&A, he discusses some of the most consequential challenges facing the United States and the world. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
+
+### 核心观点
+
+RAND将当下界定为可与二战后相提并论的战略转折点：冷战后秩序的基本假设已失效，而人工智能正同时改变生产、社会生活、作战和国际竞争。机构警示，人工智能不会自动赋予国家更大的战略自主性，反而会强化对芯片、算力、资本、人才、能源、市场等跨国投入的依赖。该判断对中美同样适用：两国都难以将AI优势直接转化为地缘政治支配力，缺乏全套投入要素的新兴国家则可能被进一步拉开差距。论证依据是对国家能力组合的映射，而非仅比较单项技术水平。乔雷夫同时反对“AI会一夜重置国际政治”的断言，强调技术变迁存在延续性与高度不确定性。其核心担忧在于政府并不控制这项技术，且社会能否形成预见、投入和协同行动的能力，才是战略准备的真正瓶颈。
 
 ## 元数据
 

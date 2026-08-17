@@ -6,7 +6,7 @@ source_group: core_technology
 content_type: article
 source_completeness: full_text
 english_title: "Democracy Under Stress and the Transformation of the Global Order"
-chinese_title: "Democracy Under Stress and the Transformation of the Global Order"
+chinese_title: "压力下的民主与全球秩序转型"
 published_date: 2026-08-12
 source_url: https://www.csis.org/analysis/democracy-under-stress-and-transformation-global-order
 pdf_url:
@@ -27,17 +27,25 @@ fetch_status: detail_ok
 
 ## 中文摘要与研判
 
-### 核心观点
+### 原始抓取片段（不入周报）
 
 该材料可从以下要点把握：Democracy Under Stress and the Transformation of the Global Order Photo: YAMIL LAGE/AFP via Getty Images Commentary by Evan Ellis Published August 12, 2026 This work is adapted from an address made to the Interamerican Institute on Democracy on July 30, 2026. A convergence of forces is currently transforming the global environment, posing grave risks to democracy, prosperity and security. In a poll by Latinobarometro , half of those surveyed in Latin America said they would support a leader who could deliver results, even if it were necessary to adopt nondemocratic solutions to do so. In the Americas, and in other parts of the world, there is a rising threat to both democracy and to order and prosperity. Democratic societies have throughout history have become disillusioned with the inadequate performance of their governments, particularly with respect to their material needs and insecurity. Recent elections in Chile , Colombia , Ecuador, and Peru were dominated by these issues, especially insecurity. Corruption, fueled partly by transnational criminal activities, undermines hope that democratic institutions can make things better. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
 
-### 建议
+### 原始抓取建议片段（不入周报）
 
 自动识别到的政策含义与建议线索包括：Democracy Under Stress and the Transformation of the Global Order Photo: YAMIL LAGE/AFP via Getty Images Commentary by Evan Ellis Published August 12, 2026 This work is adapted from an address made to the Interamerican Institute on Democracy on July 30, 2026. Such technology has enabled levels of state control over society that the government of the former Soviet Union only aspired to.
 
-### 中国/上海参考
+### 原始抓取涉华片段（不入周报）
 
 对中国/上海研判的参考在于：该材料提供了涉华技术能力、人才流动、产业链位置或政策工具的比较证据。关键原文线索包括：Nowhere is this more visible than in the People’s Republic of China (PRC), where cameras with facial recognition—linked to citizen financial and other data, internet controls, and public transportation—have all made reality of what philosopher Jeremy Bentham called the Panopticon . This includes architectures in China and in authoritarian allies that have received Chinese systems, including the Fatherland ID Card in Venezuela, the ECU-911 integrated security system in Ecuador, and the BOL-110 integrated command, control, and citizen security system in Bolivia. The rise of the PRC has arguably also impacted attitudes toward democracy.
+
+### 核心观点
+
+CSIS判断，民主制度、经济繁荣与国际秩序正受到治理绩效不佳、不安全感、腐败和跨国犯罪等多重压力的共同冲击。机构警示，民众对“能解决问题的强人政治”的容忍度上升，会削弱民主制度的合法性并重塑全球政治竞争。文章援引拉美晴雨表调查：半数受访者愿意支持为取得成效而采取非民主手段的领导人，并以智利、哥伦比亚、厄瓜多尔和秘鲁选举中的安全议题说明这种压力。作者同时将数字监控技术视为威权控制能力的重要放大器，但未将技术本身等同于制度结果。其论点在于，民主国家若不能改善公共安全、物质福祉和制度可信度，将在与威权治理模式的竞争中持续失分。
+
+### 中国/上海参考
+
+文章直接以中国的人脸识别、金融与互联网数据联接，以及向委内瑞拉、厄瓜多尔和玻利维亚输出的系统为威权数字治理能力扩张的案例。
 
 ## 元数据
 

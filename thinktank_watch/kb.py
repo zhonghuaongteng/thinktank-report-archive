@@ -88,6 +88,43 @@ def append_kb_index(
     return path
 
 
+def sync_kb_index_metadata(
+    candidates: list[ArticleCandidate],
+    kb_root: str | Path = KB_ROOT,
+) -> Path:
+    """Synchronize corrected archive metadata for already-indexed source URLs."""
+    path = Path(kb_root) / INDEX_RELATIVE
+    if not path.exists():
+        return path
+    replacements = {item.url: item for item in candidates if item.url}
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    for row in rows:
+        item = replacements.get(row.get("原始链接", ""))
+        if not item:
+            continue
+        row.update(
+            {
+                "机构": item.institution_name,
+                "机构类型": item.institution_type,
+                "优先级": item.priority,
+                "主题标签": "；".join(item.topic_tags),
+                "中文题名": item.chinese_title or item.title,
+                "英文题名": item.title,
+                "发布日期": item.published_date,
+                "PDF链接": item.pdf_url,
+                "翻译层级": item.translation_level,
+                "版权边界": item.copyright_boundary,
+                "抓取状态": item.fetch_status,
+            }
+        )
+    with path.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=INDEX_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+    return path
+
+
 def write_institution_table(
     institutions: list[Institution],
     kb_root: str | Path = KB_ROOT,

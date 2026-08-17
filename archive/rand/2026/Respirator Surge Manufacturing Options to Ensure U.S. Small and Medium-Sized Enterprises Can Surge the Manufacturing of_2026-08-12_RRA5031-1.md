@@ -6,7 +6,7 @@ source_group: core_technology
 content_type: rand_report
 source_completeness: full_text
 english_title: "Respirator Surge Manufacturing: Options to Ensure U.S. Small and Medium-Sized Enterprises Can Surge the Manufacturing of Respiratory Personal Protective Equipment"
-chinese_title: "Respirator Surge Manufacturing: Options to Ensure U.S. Small and Medium-Sized Enterprises Can Surge the Manufacturing of Respiratory Personal Protective Equipment"
+chinese_title: "口罩产能应急扩张：确保美国中小企业增产呼吸防护装备的方案"
 published_date: 2026-08-12
 source_url: https://www.rand.org/pubs/research_reports/RRA5031-1.html
 pdf_url: https://www.rand.org/content/dam/rand/pubs/research_reports/RRA5000/RRA5031-1/RAND_RRA5031-1.pdf
@@ -27,9 +27,13 @@ fetch_status: detail_ok
 
 ## 中文摘要与研判
 
-### 核心观点
+### 原始抓取片段（不入周报）
 
 该材料可从以下要点把握：Small and medium-sized enterprises stepped up production of personal protective equipment in response to the coronavirus disease 2019 pandemic and could do so again if the conditions exist for them to remain viable, competitive, and surge ready. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
+
+### 核心观点
+
+RAND研究美国中小企业在公共卫生危机中快速扩张呼吸防护装备产能的条件。机构判断，新冠疫情期间中小企业曾承担补充产能角色，未来能否再次增产取决于企业在平时是否保持经营可持续、市场竞争力与应急准备状态。报告以疫情期间个人防护装备生产经验为依据，分析供给链、认证、采购和需求稳定性对产能转换的影响。其立场反对只在危机爆发后临时动员，因为停产、设备闲置和合规障碍会削弱可用产能。材料将韧性制造理解为平时商业可行性与战时快速切换能力的结合。
 
 ## 元数据
 

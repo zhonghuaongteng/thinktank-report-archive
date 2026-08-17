@@ -6,7 +6,7 @@ source_group: core_technology
 content_type: article
 source_completeness: full_text
 english_title: "Outpaced: AI and Policy's Role in Transforming Cybersecurity Compliance"
-chinese_title: "Outpaced: AI and Policy's Role in Transforming Cybersecurity Compliance"
+chinese_title: "被AI甩在后面：政策如何重塑网络安全合规"
 published_date: 2026-08-12
 source_url: https://cset.georgetown.edu/publication/outpaced-ai-and-policys-role-in-transforming-cybersecurity-compliance/
 pdf_url: https://cset.georgetown.edu/wp-content/uploads/CSET-Outpaced.pdf
@@ -27,13 +27,21 @@ fetch_status: detail_ok
 
 ## 中文摘要与研判
 
-### 核心观点
+### 原始抓取片段（不入周报）
 
 该材料可从以下要点把握：P olicy Br ief Outpaced AI and P olicy’s R ole in T r ansf or ming Cybersecur ity Com pliance Aut hor K at her ine Car r oll August 2026 Center for Security and Emerging Technology | 1 Executive Summary American commercial industry leads the world in software development and artificial intelligence (AI). That advantage does not automatically transfer to the military. The federal cybersecurity compliance process is a major barrier between America’s most advanced technologies and the warfighters who need them. The Authorization to Operate (ATO) is the federal government’s formal mechanism for assessing and approving software systems. However, the ATO process and its governing framework—the Risk Management Framework (RMF)—are described as ineffective, slow, duplicative, and in need of reform.1 Bureaucratic delays can carry a devastating cost. A former intelligence officer describes just how high those stakes can be: “I firmly believed that software was the reason that a bunch of civilians had died. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
 
-### 建议
+### 原始抓取建议片段（不入周报）
 
 自动识别到的政策含义与建议线索包括：The federal cybersecurity compliance process is a major barrier between America’s most advanced technologies and the warfighters who need them.
+
+### 核心观点
+
+CSET判断，现有美国联邦网络安全合规体系已无法适应AI加速的攻防与软件迭代节奏，继续以文件审查和周期性授权为核心会造成安全与创新双重滞后。机构对现行授权运行及其风险管理框架持明确批评态度，认为其缓慢、重复且难以反映持续变化的系统风险。政策简报以联邦合规流程及其改革讨论为证据，主张将合规从一次性许可转向可验证、持续监测和可复用的安全保证。文章并未把AI视为自动解决合规问题的工具，强调如果规则、采购和责任机制不改造，AI只会放大既有流程缺陷。其结论是，技术能力提升必须与制度更新同步推进。
+
+### 建议
+
+将授权运行改造为持续性安全保证，并同步调整采购、责任与风险管理制度。
 
 ## 元数据
 

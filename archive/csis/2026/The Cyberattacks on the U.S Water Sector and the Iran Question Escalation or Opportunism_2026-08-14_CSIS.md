@@ -6,7 +6,7 @@ source_group: core_technology
 content_type: article
 source_completeness: full_text
 english_title: "The Cyberattacks on the U.S Water Sector and the Iran Question: Escalation or Opportunism?"
-chinese_title: "The Cyberattacks on the U.S Water Sector and the Iran Question: Escalation or Opportunism?"
+chinese_title: "美国供水系统遭网络攻击与伊朗问题：升级还是机会主义行动？"
 published_date: 2026-08-14
 source_url: https://www.csis.org/analysis/cyberattacks-us-water-sector-and-iran-question-escalation-or-opportunism
 pdf_url:
@@ -27,13 +27,21 @@ fetch_status: detail_ok
 
 ## 中文摘要与研判
 
-### 核心观点
+### 原始抓取片段（不入周报）
 
 该材料可从以下要点把握：It is highly likely that Iran is behind the cyberattacks on the U.S. Psychological effect—not escalation—is the point of Iran’s cyber operations, to sow fear, chaos, and division as part of its information warfare strategy. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
 
-### 建议
+### 原始抓取建议片段（不入周报）
 
 自动识别到的政策含义与建议线索包括：Psychological effect—not escalation—is the point of Iran’s cyber operations, to sow fear, chaos, and division as part of its information warfare strategy.
+
+### 核心观点
+
+CSIS判断，伊朗很可能是针对美国供水部门网络攻击的实施方，但其主要目的在于制造恐惧、混乱和社会分裂，并非寻求立即升级为大规模冲突。机构将此类行动置于信息战和机会主义施压的框架内，强调攻击对象的民生敏感性能够放大心理效应。文章以攻击归因线索、伊朗网络行动的既有模式及其宣传效果作为判断基础。作者并未排除误判与升级风险，认为关键在于攻击方如何评估美国反应及危机互动。其立场是，将心理威慑与基础设施韧性置于同一分析框架，避免只以传统军事升级尺度衡量网络事件。
+
+### 建议
+
+围绕供水等关键基础设施提升网络韧性，并将心理影响纳入事件响应与威慑评估。
 
 ## 元数据
 

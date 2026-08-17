@@ -6,7 +6,7 @@ source_group: core_technology
 content_type: article
 source_completeness: full_text
 english_title: "China Isn’t Just Spending More on Innovation—It’s Getting Better at Innovation"
-chinese_title: "China Isn’t Just Spending More on Innovation—It’s Getting Better at Innovation"
+chinese_title: "中国创新不只是加大投入，转化效率也在提升"
 published_date: 2026-08-11
 source_url: https://itif.org/publications/2026/08/11/china-isnt-just-spending-more-on-innovation-its-getting-better-at-innovation/
 pdf_url: https://www2.itif.org/2023-us-v-china-innovation.pdf
@@ -27,17 +27,25 @@ fetch_status: detail_ok
 
 ## 中文摘要与研判
 
-### 核心观点
+### 原始抓取片段（不入周报）
 
 该材料可从以下要点把握：China is not only investing more in innovation but also becoming better at turning those investments into technologies with commercial potential. To maintain its technological leadership, the United States should strengthen its entire innovation pipeline, from research to commercialization. 上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。
 
-### 建议
+### 原始抓取建议片段（不入周报）
 
 自动识别到的政策含义与建议线索包括：China is not only investing more in innovation but also becoming better at turning those investments into technologies with commercial potential.
 
-### 中国/上海参考
+### 原始抓取涉华片段（不入周报）
 
 对中国/上海研判的参考在于：该材料提供了涉华技术能力、人才流动、产业链位置或政策工具的比较证据。关键原文线索包括：China is not only investing more in innovation but also becoming better at turning those investments into technologies with commercial potential.
+
+### 核心观点
+
+ITIF判断，中国高技术产业竞争力的变化已不能只用研发投入规模解释，更关键的是创新投入向可商业化技术产出的转化效率上升。机构对此持明确警示立场，认为这一趋势会使中国企业以更低成本、更快速度进入半导体、先进制造和人工智能等原由美国占优的行业。其核心证据是2005—2024年中国高技术产业专利申请年均增长19.2%，而研发机构、全时当量研发人员、研发经费和新产品开发投入的年均增速约为12%—18%。按单位投入计算，每家研发机构的专利申请由约10.4件增至16件，每万名全时当量研发人员的申请由972件增至3210件。文章承认专利并不能覆盖创新质量的全部维度，但认为投入与产出增速的持续背离具有方向性意义。ITIF据此主张美国应强化从研究到产业化的完整创新链，改善技术商业化、制造能力和企业规模化能力。
+
+### 中国/上海参考
+
+文章直接以中国高技术产业为对象，显示专利产出相对研发投入的效率提升已构成美国对华技术竞争评估中的结构性变量。
 
 ## 元数据
 

@@ -706,7 +706,7 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate])
         for chapter, items in viewpoints:
             lines.extend([f"### {chapter}（{len(items)} 条）", ""])
             for item in items:
-                lines.append(f"- **{item.institution_name}**：{weekly_judgment_sentence(item, 90)}")
+                lines.append(f"- **{item.institution_name}**：{weekly_judgment_sentence(item, 240)}")
             lines.append("")
 
     lines.extend(["## 主题展开", ""])
@@ -745,6 +745,21 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate])
 
 THIN_CORE_MIN_CHARS = 120
 THIN_CORE_MIN_SENTENCES = 2
+_WEEKLY_EDITORIAL_BOILERPLATE = (
+    "该材料可从以下要点把握",
+    "上述内容应作为后续中文精读",
+    "自动识别到的政策含义",
+)
+
+
+def _weekly_core_is_chinese_and_substantive(value: str) -> bool:
+    """Reject untranslated extraction and process boilerplate before rendering."""
+    text = _clean_text(value)
+    if not text or any(marker in text for marker in _WEEKLY_EDITORIAL_BOILERPLATE):
+        return False
+    chinese_chars = len(re.findall(r"[\u4e00-\u9fff]", text))
+    latin_chars = len(re.findall(r"[A-Za-z]", text))
+    return chinese_chars >= 80 and chinese_chars >= latin_chars
 
 
 def weekly_thin_core_items(candidates: list[ArticleCandidate]) -> list[ArticleCandidate]:
@@ -758,7 +773,11 @@ def weekly_thin_core_items(candidates: list[ArticleCandidate]) -> list[ArticleCa
     for item in weekly_priority_items(candidates):
         core = _clean_text(summary_sections(item)["核心观点"])
         sentence_count = len(re.findall(r"[。！？.!?]", core))
-        if len(core) < THIN_CORE_MIN_CHARS or sentence_count < THIN_CORE_MIN_SENTENCES:
+        if (
+            len(core) < THIN_CORE_MIN_CHARS
+            or sentence_count < THIN_CORE_MIN_SENTENCES
+            or not _weekly_core_is_chinese_and_substantive(core)
+        ):
             thin.append(item)
     return thin
 

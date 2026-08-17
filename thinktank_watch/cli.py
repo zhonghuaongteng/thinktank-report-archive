@@ -31,7 +31,7 @@ from .fetch import (
     make_client,
 )
 from .focus import innovation_support_sort_rank, is_innovation_support_candidate
-from .kb import append_kb_index, write_institution_table
+from .kb import append_kb_index, sync_kb_index_metadata, write_institution_table
 from .models import ArticleCandidate, Institution
 from .restore import rebuild_state_from_archive
 from .scoring import score_candidate
@@ -504,6 +504,7 @@ def prepare_weekly_comics(args: argparse.Namespace) -> int:
 def render_weekly_brief(args: argparse.Namespace) -> int:
     run_date = args.date or date.today().isoformat()
     candidates = load_weekly_archive_candidates(args.archive_root, run_date, args.lookback_days)
+    sync_kb_index_metadata(candidates, args.kb_root)
     paths = write_periodic_brief(args.brief_root, run_date, candidates, cadence="weekly")
     print(f"weekly_candidates={len(candidates)}")
     for path in paths:
@@ -678,6 +679,7 @@ def build_parser() -> argparse.ArgumentParser:
     weekly_render.add_argument("--lookback-days", type=int, default=DEFAULT_WEEKLY_LOOKBACK_DAYS)
     weekly_render.add_argument("--archive-root", default="archive")
     weekly_render.add_argument("--brief-root", default="briefs")
+    weekly_render.add_argument("--kb-root", default=r"C:\Users\WINDOWS\OneDrive\知识库\系统\研究知识库")
     weekly_render.set_defaults(func=render_weekly_brief)
 
     comic_check = sub.add_parser(

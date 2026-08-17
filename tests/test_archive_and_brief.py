@@ -1241,6 +1241,30 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("单句条目", thin_section)
         self.assertNotIn("充实条目", thin_section)
 
+    def test_weekly_audit_rejects_untranslated_process_boilerplate(self):
+        from thinktank_watch.brief import render_weekly_audit_markdown
+
+        candidate = ArticleCandidate(
+            institution_slug="rand",
+            institution_name="RAND",
+            institution_type="think_tank",
+            title="English title",
+            chinese_title="中文题名",
+            url="https://example.org/untranslated",
+            published_date="2026-08-16",
+            priority="P0",
+            score=10,
+            chinese_summary=(
+                "核心观点：该材料可从以下要点把握：This extraction is long enough to pass a simple "
+                "character count, but it is still English and does not provide a Chinese editorial judgment. "
+                "上述内容应作为后续中文精读、关键词标注和政策比较的主要证据入口。"
+            ),
+        )
+
+        audit = render_weekly_audit_markdown("2026-08-16", [candidate])
+        pending = audit.split("## 核心观点待充实", 1)[1].split("## 完整索引", 1)[0]
+        self.assertIn("中文题名", pending)
+
     def test_weekly_audit_reports_source_concentration_and_official_strategy_coverage(self):
         from thinktank_watch.brief import render_weekly_audit_markdown
 
