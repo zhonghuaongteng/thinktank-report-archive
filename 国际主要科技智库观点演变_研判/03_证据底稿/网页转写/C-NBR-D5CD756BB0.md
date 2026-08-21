@@ -1,0 +1,78 @@
+# TPP Minus One: The Urgent Need for U.S. Leadership
+
+- 发布机构：National Bureau of Asian Research
+- 发布日期：2018-03-19
+- 官方页面：https://www.nbr.org/publication/tpp-minus-one-the-urgent-need-for-u-s-leadership/
+- 材料类型：Commentary
+- 页面来源：官方网页原始HTML
+
+Skip to Content
+Congress
+Media
+Account
+Donate
+About
+Experts
+Programs
+Publications
+Topics
+Events
+Commentary from the Center for Innovation, Trade, and Strategy
+TPP Minus One: The Urgent Need for U.S. Leadership
+
+by Charles W. Boustany
+March 19, 2018
+
+Eleven countries met to sign the Trans-Pacific Partnership on March 8. Former Congressman Charles Boustany Jr. argues that the United States’ withdrawal from the agreement has put U.S. leadership in question.
+
+Although the announcement of U.S. steel and aluminum tariffs has been dominating the trade news headlines, there is another major trade story that has barely been mentioned: leaders from the eleven countries that remained in the Trans-Pacific Partnership (TPP) met in Chile on March 8 to sign a modified version of the TPP without the United States. As these nations move forward with a major trade deal that disadvantages the United States, we need a clear economic strategy going forward in the Asia-Pacific.
+
+The United States’ withdrawal from the TPP has put U.S. leadership in question. Our other trade partners, such as Japan, the European Union, and China, are seeking to fill that void. Today, there are 350 free trade agreements in effect worldwide and about 250 more in stages of negotiation. Meanwhile, the United States is a party to only 14 free trade agreements that include 20 countries. We are not a party to any agreement with the other ten largest economies, with the one exception of Canada. As the pace of trade negotiations accelerates around the world, the United States is drifting backward into a timid, protectionist crouch instead of leading the way in setting high standards. American workers, farmers, and businesses will pay a steep price. Trade enforcement is necessary, but it must be coupled with opening markets abroad for U.S. goods and services.
+
+One year ago, the remaining eleven countries in the TPP met in Vina Del Mar, Chile, to discuss a pathway forward without the United States. Australia’s trade minister described the meeting as a way to promote “TPP minus one.” Negotiations continued for the remainder of the year, culminating in what is now called the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP), or TPP-11, which will be signed on March 8. The agreement phases out more than 99% (95% for Japan) of tariffs for the participating countries in a marketplace of $14 trillion. This will significantly disadvantage U.S. products, as the tariff difference between U.S. goods and goods from CPTPP countries will be steep, especially for high-tariff products. Had the United States remained in the TPP, the agreement would have eliminated 18,000 of those tariffs that currently harm our exporters.
+
+The CPTPP also does not reflect the high standards of the original TPP, which would have addressed digital trade, competition, state-owned enterprises, intellectual property protections, and other 21st-century trade issues. To finalize the CPTPP, 22 of those high-standard provisions were suspended or frozen. Of these, many were intellectual property and investment protections, which had been agreed to at the insistence of the United States in exchange for greater access to its market. Japan led efforts to suspend these provisions rather than eliminate them so as to hold a “docking station” for the United States to return. But how long will this docking station remain open?
+
+If the United States seeks re-entry, negotiating the suspended provisions will not be easy. This could be complicated further if other countries accede to the agreement before the United States, which seems likely. The difficulties experienced by U.S. negotiators in the NAFTA renegotiation have not been overlooked by other countries. It will not be easy to reclaim lost ground. As a result, the United States continues to lose leverage and credibility. At the same time, China is promoting another major trade agreement called the Regional Comprehensive Economic Partnership (RCEP) that includes a number of CPTPP countries, as well as China and India, but excludes the United States. The RCEP, though less ambitious than the CPTPP, focuses on reducing tariffs rather than raising the standards of trade, as the TPP did.
+
+President Trump’s decision to withdraw from the TPP without conducting a formal review of the consequences or offering any alternative that would further U.S. economic and strategic interests in the Asia-Pacific constituted a significant departure from the United States’ traditional position of leadership in the region. This retreat raised serious questions about our credibility among friends and allies at a time when China has put forth a strategy seeking to fill any power vacuum.
+
+The strategic imperative of the United States in the Asia-Pacific has been, and remains today, to prevent any power from controlling the Eurasian landmass, to maintain open sea lanes and freedom of navigation, to promote open and rules-based trade, and to define a security perimeter. Robust economic engagement and security alliances must go hand in hand. The TPP was to be the starting point for that robust engagement in an area accounting for 40% of global GDP. Had we been part of a high-standard TPP, our participation would have increased economic growth among our allies in the region, which is critical relative to Chinese growth. Under the agreement, the United States would have continued to lead in the Asia-Pacific.
+Instead, the United States will now find itself outside the two major trade agreements in the fastest-growing economic region in the world. U.S. business will be at a competitive disadvantage, American workers and farmers will pay the price, and the United States will have ceded its leadership in the region. Now is the time for the administration to move forward with a strategy for U.S. economic and foreign policy leadership in the Asia-Pacific. The prosperity and security of the United States—and the stability of the entire global economic system—depend on it.
+
+Charles Boustany Jr. is a Counselor at the National Bureau of Asian Research (NBR). Congressman Boustany served in the U.S. Congress from 2005 to 2017 for Louisiana’s 3rd Congressional District and held leadership positions on the House Ways and Means Committee.
+
+
+
+Congressman Charles W. Boustany Jr.
+
+U.S. House of Representatives (ret.),
+
+PROGRAMS
+Center for Innovation, Trade, and Strategy
+SEARCH
+Trans-Pacific Partnership
+trade
+alliances
+Free Trade Agreement (FTA)
+Kenneth B. and Anne H.H. Pyle Center for Northeast Asia Studies
+John M. Shalikashvili Chair in National Security Studies
+Center for Innovation, Trade, and Strategy
+Slade Gorton Policy Center
+Facebook
+
+Twitter
+
+LinkedIn
+and follow us on Youtube
+Sign up for updates
+ACCOUNT SUBSCRIBE
+©2026 The National Bureau of Asian Research
+Privacy Policy
+
+Site Map
+
+Terms of Use
+
+Contact Us
+This site uses cookies. Please read our Privacy Policy to learn how and why we use cookies. Close

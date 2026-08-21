@@ -1,0 +1,98 @@
+# The Emerging Public Health Challenges of Data Access in an Era of Globalization
+
+- 发布机构：National Bureau of Asian Research
+- 发布日期：2020-05-01
+- 官方页面：https://www.nbr.org/publication/the-emerging-public-health-challenges-of-data-access-in-an-era-of-globalization/
+- 材料类型：Commentary
+- 页面来源：官方网页原始HTML
+
+Skip to Content
+Congress
+Media
+Account
+Donate
+About
+Experts
+Programs
+Publications
+Topics
+Events
+Nicolas Asfouri/AFP via Getty Images
+Commentary from the Center for Innovation, Trade, and Strategy
+The Emerging Public Health Challenges of Data Access in an Era of Globalization
+
+by Benjamin Shobert
+May 1, 2020
+
+Benjamin Shobert argues that the challenges posed by lack of transparent and symmetrical data during the Covid-19 pandemic are unique to healthcare data and highlight the need for a regulatory system that can make such data available across borders while ensuring privacy protections.
+
+As the world grapples with the ongoing Covid-19 pandemic, few public health officials, researchers, or politicians would disagree that the path forward will be paved by full transparency on what is happening around the world. There is broad consensus that only easy access to all relevant data specific to Covid-19, regardless of borders, will ensure that scientists and policymakers have the ability to properly allocate technical resources and make appropriate public health decisions. Even though the U.S. and Chinese governments’ slow initial responses to the Covid-19 crisis might suggest otherwise, the challenges to this sort of transparency need not be purely political. The struggles to ensure transparent and symmetrical data access across different nation states reflect unresolved policy and regulatory challenges unique to healthcare data in a world of cloud computing, big data, and artificial intelligence (AI).
+
+Unfortunately, it took a pandemic to draw our attention to the public health risks of dysfunctional politics, asymmetrical data access, and fragmented regulatory frameworks. There were earlier indicators in the world of precision medicine and digital health that the policies necessary to ensure transparency and symmetrical data access in the modern era of globalization had not yet been enacted. The missed opportunity of several years ago has now become an urgent priority. An unresolved set of questions remain that, if not addressed, hold the potential to further accelerate not just the economic and political decoupling between the United States and China but globalization as a whole.
+
+China’s 12th Five-Year Plan drew the world’s attention to the country’s desire to develop a domestic healthcare, life science, and biotechnology sector. While early investments, as has often been the case in China, went to digging holes and pouring concrete in pursuit of massive biotech parks across the country, investment also began to pour into the creation of large data assets that would serve as the foundation for further investments into genomics and AI-led digital health. As should surprise no one familiar with China’s government-led investment efforts, these data assets varied widely in type, quality, and quantity. The data assets themselves ranged from genomics data assets, such as those collected by the China National GeneBank DataBase and National Genomics Data Center; to curated sets of imaging data that have seeded the likes of Deepwise, 12 Sigma, and VoxelCloud; to large collections of population-level public health data that have been essential to the development of China’s next generation of digital health innovators such as Ping An’s Good Doctor and TenCent’s WeDoctor. As I wrote in my July 2019 testimony for the congressionally appointed U.S.-China Economic and Security Review Commission:
+
+What these initiatives share in common is not just the advancement of human knowledge: these curated data sets serve as the foundation to the 21st century’s biotech industry. The greater diversity, quality, and quantity of data available to researchers should in turn result in accelerated precision medicine development, which should result in companies being able to spin out new therapeutics and diagnostics predicated on access to these privileged data sets. Justifying government-led investments in these data sets has become increasingly difficult, in the United States in particular. If American policymakers do not incentivize the development of equally large and technically rich data sets in the United States as are available in China, we are foregoing a significant opportunity both economically, and from a public health point of view.
+
+China’s goal since the 12th Five-Year Plan has been to continue investing in not just the brick and mortar infrastructure of a domestic life science industry. It also views these large data sets as important enablers of future disruptive innovations, and thus key to its economic development objectives.
+
+If precision medicine and digital health—as only two of the likely spin-offs from these data investments that hold the potential for discontinuous economic returns to China—do in fact prove to be critical in the 21st century economy, not addressing challenges unique to healthcare data access only increases the likelihood of further dysfunction in the U.S.-China relationship. This would be a tragedy for a number of reasons. If the United States and China cannot identify a way to collaborate on healthcare and life sciences, which have a positive impact on humanity by extending longevity and increasing economic productivity, then what hope is there for alignment on more traditional industrial sector policy between the two countries? These investments should draw our collective attention to five critical issues, none of which is being treated with the seriousness that is needed from either the United States or China.
+
+First, these data sets constitute a key component to any nation’s economic development strategy. The U.S. government must evaluate whether it is making equivalent investments in the collection of curated healthcare data and making them available to the public and private sectors in a manner designed to accelerate domestic innovation. The quality, quantity, and diversity of these data sets is especially important given the impact each of these factors has on the quality of the innovations they are designed to foster.
+
+Second, the U.S. government needs to address any inefficiencies unique to the United States in how healthcare and life science innovation is incubated and translated to commercialization. Washington must identify where regulatory reforms are needed to ensure that the country remains the best place for R&D, clinical trials, and go-to-market activities and monitor that these changes are being made. Similarly, it must work to ensure that outstanding technology-transfer problems between academia and industry are being resolved and optimized for speed to market.
+
+Third, the world should develop a shared set of principles on privacy and ethics unique to healthcare data in such a way as to encourage transparency. And these principles need to be formally codified in ways that create systems of accountability and enforceability. This is necessary both to ensure optimal investment and innovation outcomes and to navigate emerging public health crises such as Covid-19.
+
+Fourth, American and Chinese researchers and companies should have symmetrical access to those data sets that are the result of direct subsidization by national governments. For example, an American pharmaceutical firm should be able to access Chinese biobank data with the same rights that a Chinese pharmaceutical firm has to access American biobank data. On this point, there is good reason to not ask this question only of the United States and China. It is very much a matter that needs global attention, given similar ambitions in other nation states.
+
+Fifth, if asymmetrical data rights do not yet exist, governments must explore how this problem can best be addressed through either reforming existing trade protocols or developing entirely new regulatory regimes specific to the unique challenges of cross-border access to healthcare data.
+
+Given the complexity of these issues and the escalation of U.S.-China rivalry, a certain amount of cynicism about the United States’ and China’s ability to identify possible resolutions is to be expected. However, China in particular could be amenable to significant efforts to create exactly the alignment to a global regulatory framework envisioned above. The reason is that the ability of domestic innovators to develop novel solutions in the precision medicine and digital health space will require these changes. China cannot yet go its own way and create a China-centric regulatory path; its economic development goals are contingent on accommodating global standards.
+
+The phase-one trade deal between the United States and China is a good example of China’s ability to appreciate how not aligning with global norms will dampen its economic development strategy in the biotech space. Although the intellectual property (IP) needs of most sectors were addressed at a very high level through the agreed upon Bilateral Evaluation and Dispute Resolution, the needs of the biotech industry were very specifically called out, with the Chinese government making important named concessions.
+
+In fact, these were really not concessions but rather necessary enablers for the Chinese biotech industry to protect its own growing portfolio of IP. They ensure that in the act of taking this IP abroad, China’s biotech companies would have the necessary protections of their IP as they navigate foreign markets. While the phase-one trade deal certainly offers IP protections to Western industry, these concessions also reflect the needs of China’s own domestic champions.
+
+With respect to the broader set of challenges to ensuring symmetrical data access between the United States and China, the concessions on IP protections afford the key insight that when China can be shown that embracing particular standards promotes its own desired end state, it will adjust domestic practices accordingly. These changes would not have happened without U.S. leadership on the specific reforms that were needed. This is a useful reminder that China still very much heeds what the United States has to say when—as is often the case in any competitive relationship—it is evident that reforms benefit both countries. This is not to suggest that, subsequent to a future moment when global regulatory norms specific to healthcare data access and privacy have been harmonized, China will not attempt to go its own way, as is now being seen in 5G.
+
+For Chinese precision medicine and digital health companies to successfully export their innovations to the rest of the world, they will need to demonstrate the same level of formal alignment with global norms as was required for previous technology-rich sectors in China. While the world is now understandably focused on the fragmentation of global standards in the development of 5G and the possibility that this will lead to overlapping Chinese and Western internet and technology standards, this is not yet a problem in the healthcare and life science industry.
+
+None of this is to suggest that these are not especially gnarly problems to address. Given the different views on privacy across countries and cultures, the process of agreeing to the means by which healthcare data—one of the most privileged forms of personal information—is properly anonymized and made available to researchers (in particular, those from other countries) will not be easy. Yet, unlike when talking about the data for online purchasing or social media behavior, the possible upside to the world as a whole means that properly designing and governing how healthcare data is aggregated and made available for the current and future generations of AI is very much a worthwhile cause.
+
+Covid-19 is laying bare several limitations of the Chinese and U.S. technocratic states. In the heat of a crisis, poorly designed public health regulations and infrastructure cripple the ability of any leader to respond appropriately. As the world reflects on the lessons to be learned from this moment, leaders should acknowledge the need for a regulatory system that formally stipulates how healthcare data can be made available across borders with adequate privacy protections as quickly as possible. While there are certainly economic reasons for developing these same capabilities, Covid-19 has made clear that economic issues quickly become secondary in the midst of a pandemic exacerbated by data access and opacity problems.
+
+Benjamin Shobert is Senior Associate for International Health at the National Bureau of Asian Research. He is also the Senior Director of Strategy at Microsoft’s Artificial Intelligence and Research HealthNExT business. Mr. Shobert is the author of Blaming China: It Might Feel Good but It Won’t Fix America’s Economy (2018).
+
+
+
+Benjamin Shobert
+
+United Healthcare,
+
+PROGRAMS
+Center for Innovation, Trade, and Strategy
+SEARCH
+healtchcare
+Covid-19
+Kenneth B. and Anne H.H. Pyle Center for Northeast Asia Studies
+John M. Shalikashvili Chair in National Security Studies
+Center for Innovation, Trade, and Strategy
+Slade Gorton Policy Center
+Facebook
+
+Twitter
+
+LinkedIn
+and follow us on Youtube
+Sign up for updates
+ACCOUNT SUBSCRIBE
+©2026 The National Bureau of Asian Research
+Privacy Policy
+
+Site Map
+
+Terms of Use
+
+Contact Us
+This site uses cookies. Please read our Privacy Policy to learn how and why we use cookies. Close

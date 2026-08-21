@@ -1,0 +1,100 @@
+# The Indian Model for Digitalization A Blueprint for the Global South?
+
+- 发布机构：National Bureau of Asian Research
+- 发布日期：2024-12-11
+- 官方页面：https://www.nbr.org/publication/the-indian-model-for-digitalization-a-blueprint-for-the-global-south/
+- 材料类型：Interview
+- 页面来源：官方网页原始HTML
+
+Skip to Content
+Congress
+Media
+Account
+Donate
+About
+Experts
+Programs
+Publications
+Topics
+Events
+Interview
+The Indian Model for Digitalization
+A Blueprint for the Global South?
+Interview with Mansi Kedia
+December 11, 2024
+
+In recent years, India has implemented numerous policies and programs to develop its digital public infrastructure and digital public goods. In this Q&A, Mansi Kedia, a senior fellow at the Indian Council for Research on International Economic Relations, contrasts the Indian approach to digitalization with the approaches of the United States and China and discusses the implications for the global South.
+
+What is India’s vision for digital public infrastructure (DPI) and digital public goods (DPGs), and what measures has the country taken to achieve its goals in this realm?
+
+The definition of DPI is still evolving, though India’s G-20 presidency in 2023 provided a working version one could use as a reference. Some of the key principles that define DPI’s goals and design include interoperability, open standards, public-private partnerships, innovation, the crafting of technology that can be scaled to society, and a focus on the public. At its core, DPI is focused on delivering population-scale public services.
+
+Digital public goods are the building blocks for DPI. A great example is Aadhaar, India’s digital identity network. Aadhaar was built using DPGs such as the Modular Open Source Identity Platform (MOSIP), which is now being offered to other countries to develop their own digital identity systems. MOSIP is open-source technology to build foundational identity systems that governments can adapt to their local context. All aspects of DPIs may not be open, but DPGs are by definition open—open data, open-source software, and open APIs (application programming interfaces). In some sense, one could compare it to a brick and a wall, with DPGs being the brick and DPIs being the wall. So digital public infrastructure is built using digital public goods.
+
+India views this model as a third approach to digitalization. The first one is the U.S. approach, which is led by the private sector, with government policies supporting the private sector to scale technologies, innovate, and take technologies to the masses—within not only the United States but the rest of the world. There is also the Chinese model, where everything is government-driven and government-controlled. The general approach is to develop a walled online world with restrictions on foreign companies’ participation in the digital economy. India’s approach is a mix of the two, where government guides or builds the “railroads.” In other words, the Indian government will build the foundational infrastructure, opening doors for the private sector to innovate on top of this foundation and then scale these technologies.
+
+What is the India Stack model, and how does it advance India’s DPI and DPG goals?
+
+While India Stack and DPIs are often treated as synonymous in the Indian context, the term India Stack was coined before DPI and has become a way of understanding DPI itself. India Stack is composed of three types of digital public infrastructure: the digital identity program (Aadhaar), digital payments interface (Unified Payments Interface, or UPI), and consent-based data exchange (the Data Empowerment and Protection Architecture). These are the three critical building blocks of India’s digital ecosystem, or what we call foundational DPIs. These DPIs work by themselves. For example, the digital identity program, Aadhaar, works by itself to verify the identification of individuals. The payment system works independently as well. But these systems can also talk to each other to create many more DPI-enabled services. These three components of the India Stack do not sit on top of one another but rather at the same level, working together.
+
+One of India’s multiple goals with DPI and DPG is to be more inclusive. Given the size of the country, inclusive growth is a challenge. India has limited resources and billions of people. There is plenty of inequality, so one way to do rapid distribution and scaling of services is through this approach. The government gets the ball rolling and then the private sector takes off, with the government continuing to remain involved throughout. Because the Indian government acknowledges that it might be inefficient at building all elements of the digital ecosystem, it should focus on governance and let the private sector carry out the delivery of services. This provides the basis for public-private partnerships that are efficient yet inclusive.
+
+India Stack has given rise to concerns regarding data privacy and the potential for digital authoritarianism in a state-sponsored system of this scale. How significant are the risks, and does the Digital Personal Data Protection Act (DPDPA) address these issues?
+
+With the enactment of the DPDPA in 2023 (though still to be implemented), there is more certainty around legislation and rules that will guide protection from privacy violations. However, it would be incorrect to assume that privacy risks were not recognized in the absence of the act. In fact, the data exchange piece within the India Stack is based on the Data Empowerment Protection Architecture, which is a consent-based mechanism, implying that protecting privacy and individual agency is a part of the design.
+
+In the case of Aadhaar, the legislation recognizes the need to protect data rights. Data protection has always been a part of the plan, and this principle has only become strengthened through the DPDPA. Having said this, one cannot rule out the scope for a data breach, or data misuse. The hope is that the existing redressal mechanisms will resolve these issues when they arise. Concerns in general are related to mistrust between citizens and governments.
+
+One of the goals of DPI should be to gain the trust and consent of the citizens. While legal protections have been put in place, and there is a path to recourse within the ecosystem, establishing trust will be fundamental in determining the success of India’s DPI-led digital transformation.
+
+After India’s G-20 presidency in 2023 and the launch of both the Global DPI Repository and the Social Impact Fund, India has taken a leading role in promoting DPI initiatives globally. How might we expect to see India’s DPI measures serve as a blueprint for other nations throughout the global South?
+
+Taking the DPI discussion to the G-20 was intended to socialize this concept with other countries. The goal was to showcase the success and efficiency with which India has been able to implement these measures with few resources and to help other nations to understand the value of this approach. With time and through various agencies, India has led the global conversation, increasing awareness and opportunities for collaboration. The goal of the Global DPI Repository and the Social Impact Fund is to exchange information—not only through sharing India’s experience but also through listening to and learning from other countries—and to fast-track the implementation of DPI in the global South through a government-led multistakeholder initiative. Many other countries had already built DPIs, but were not referring to them in these same terms. Conversely, there are some countries, particularly in South Asia and Africa, that have few or no DPI-type programs. The main goal here is to bridge the gap between these nations through dialogue and open-source sharing of technology in order to create a feasible starting point for implementation.
+
+There is also recognition that what worked in India might not exactly work in another country because DPI is not just about the technology. It is also a product of institutions and laws, as well as the people and their political will. The technology is essentially the easiest and the smallest component. The focus is on narrowing down which social issues to address and finding the best, most efficient solution. That is why dialogue is so important. India wants to present options in such a way that other nations can pick and choose the elements that would be most useful for their specific needs. There are many ways to do DPI, and it is ever evolving.
+
+How is India using DPI as a means of projecting power and global influence? How might India’s DPI and DPG initiatives affect its geoeconomic relations with both emerging economies in the global South and major global tech players?
+
+DPI does act in many ways as a sort of soft power. Certainly, the government enjoys socializing the idea of DPI with other countries, especially developing countries. India has not historically been at the front end of developing technology, but rather among the buyers or borrowers of technology.
+
+Throughout the G-20 negotiations, multiple rounds of discussion were held on simply accepting this idea of DPI, recognizing its potential, and committing to an evolving definition. To be clear, India is not the first developing country to embark on a digitalization journey. However, it has been extremely successful and has helped develop a working model that other nations can refer to and build on.
+
+Moreover, DPI is a technology solution rather than just a technology. All of its building blocks perhaps already existed. What has made DPI new is how the government decided to use these technologies to address societal inequalities. Through simple designs, India has been able to scale various DPI and DPGs for up to 1.4 billion people. Its innovation is really the design and implementation of the technology, not the pieces of the technology per se. Putting everything together and showcasing to the world how this process was done domestically and scaled to such a level is an accomplishment that the Indian government can take pride in.
+
+The idea of bringing in the DPIs was a way to democratize the internet in India and to make it more domestic and decentralized. Initially, the goal was to reduce the country’s dependence on the “big tech” companies, but over time the government found ways to partner and combine both DPI and big tech. For example, the Unified Payments Interface—which is one of the biggest players in India’s digital payments ecosystem and serves as the payments element of India Stack—is integrated with foreign third-party players. Google Pay is a market leader in UPI. For a lot of the other components, India has collaborated with many of the large U.S. and domestic firms because the government realizes that scaling does require networks and the expertise that comes with these bigger companies.
+
+In sum, while India has debated how closely to work with big tech, it has also found ways to collaborate. This does not rule out the threats of anti-competitive conduct and market power. Hopefully, the rapidly evolving legal frameworks and regulations will guide the conduct of large digital firms in the future to best serve the public policy objectives of a rapidly digitalizing country like India.
+
+Mansi Kedia is a Senior Fellow at the Indian Council for Research on International Economic Relations.
+
+This interview was conducted by Kei-Dee Romero while a fellow with the Technology and Geoeconomic Affairs group at NBR.
+
+
+
+SEARCH
+India
+digital
+global South
+G-20
+technology
+Kenneth B. and Anne H.H. Pyle Center for Northeast Asia Studies
+John M. Shalikashvili Chair in National Security Studies
+Center for Innovation, Trade, and Strategy
+Slade Gorton Policy Center
+Facebook
+
+Twitter
+
+LinkedIn
+and follow us on Youtube
+Sign up for updates
+ACCOUNT SUBSCRIBE
+©2026 The National Bureau of Asian Research
+Privacy Policy
+
+Site Map
+
+Terms of Use
+
+Contact Us
+This site uses cookies. Please read our Privacy Policy to learn how and why we use cookies. Close

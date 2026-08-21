@@ -1,0 +1,115 @@
+# Where Will Trade with China Go from Here? The Biden Administration and China
+
+- 发布机构：National Bureau of Asian Research
+- 发布日期：2021-04-22
+- 官方页面：https://www.nbr.org/publication/where-will-trade-with-china-go-from-here-the-biden-administration-and-china/
+- 材料类型：Commentary
+- 页面来源：官方网页原始HTML
+
+Skip to Content
+Congress
+Media
+Account
+Donate
+About
+Experts
+Programs
+Publications
+Topics
+Events
+Commentary from The Evolving Indo-Pacific Trade Environment
+Where Will Trade with China Go from Here?
+The Biden Administration and China
+by Claire Reade
+April 22, 2021
+
+Claire Reade argues that U.S trade policy toward China will not operate in isolation from the broader strategic landscape and assesses the Biden administration’s priorities and leverage as it works to address the many challenges ahead.
+
+U.S.-China trade policy has always involved a complicated interweaving of economic and political decisions. As the Biden administration steps into power, however, the two countries appear to now implicitly agree on one core conclusion: trade policy will not operate in isolation. It is part of the larger strategic landscape and will be managed that way. China likely has viewed trade through this policy lens for years, but the United States now explicitly shares this perspective. The critical question will be how effectively the United States assesses its priorities, its leverage, and its course of action on multiple fronts. The Biden administration has given some initial indications of its approach. The road ahead promises many challenges.
+
+THE BIDEN ADMINISTRATION’S APPROACH TO CHINA
+
+The Biden view of the U.S.-China relationship is nuanced, at least in theory. It recognizes that China will have multiple personalities—adversary, competitor, cooperative partner—and allows a clear-eyed assessment of the particular context to dictate the U.S. approach.
+
+Administration officials have also emphasized that President Joe Biden will seek to deal with China from a “position of strength” by using allies and international rulemaking, as well as maintaining a major focus on building the U.S. economy “back better” to compete effectively. This of course signals a bilateral and multilateral dimension to Biden’s trade policy, unlike the primarily unilateral preferences of the previous administration. It also signals that the United States’ attention to its own domestic economic institutions and dynamics will be as important a factor in managing the China challenge as its external actions.
+
+Since Biden has underscored that dealing effectively with China requires an overall strategic vision and plan, the next question is what this means in practical terms for trade, as one dimension of the vision and one tool in the plan. It already appears that trade measures will function as tools to address issues in non-trade realms, typically by restricting or shifting trade flows. Take, for example, human rights issues in Xinjiang, where U.S. import bans are widening on goods made with forced labor, and key officials face economic sanctions. Another example is Hong Kong, where the change in customs status for Hong Kong goods remains in place, and sanctions have been imposed on officials suppressing Hong Kong citizens’ rights. The trade toolbox is likely to come into play with the Biden administration’s other priorities as well, such as labor and climate issues. Finally, trade and investment policy will be used to address national security concerns in areas ranging from technology to key economic infrastructure and resources.
+
+At home, this explicit interactivity between trade tools and non-trade objectives will further complicate the drafting of trade policy, since many more cooks will be sharing the kitchen. The National Security Council, the National Economic Council, the intelligence services, the Defense Department, the State Department, Treasury, Commerce, and the U.S. Trade Representative (USTR) all will be centrally involved, not to mention the other agencies involved in particular sectoral issues. Expect time-consuming decision-making and difficult tradeoffs and hope that the various members of this team will both listen to and respect the expertise of individual members to achieve the best outcomes.
+
+In addition to this role in managing the complex interactions among trade and other issues, U.S. trade and investment policy will continue to operate in its traditional lane as a tool to remove trade and investment distortions in foreign markets and open fair economic opportunities for U.S. stakeholders. By statute, the USTR is in charge of developing and coordinating this policy.
+
+What will Biden’s trade goals be vis-à-vis China? He has signaled that trade must be a tool to benefit U.S. workers and the U.S. economy. This strongly implies that the U.S. government will not make it a priority to tear down barriers faced by multinational corporations if there is no meaningful benefit to the U.S. economy or other national interests. Assessing where trade action will reap credible benefits for workers and the economy could require new research and data, increasing the time needed to establish trade priorities. For U.S. stakeholders, the complexity of the economics surrounding their activities and the sensitivity of some industry information could make it extremely challenging to demonstrate these benefits. All of this will add to the complexity of decision-making on U.S.-China trade issues.
+
+ADDRESSING THE CHINA CHALLENGE
+
+Even if more research and data are needed to pinpoint the priority focus of U.S. trade action, there is little doubt that the United States will need to affirmatively tackle the trade issues posed by China. The U.S. politics are clear, and the facts call for action.
+
+Managing concerns related to the Chinese economy. First, China has made multiple commitments in the phase-one trade deal that became effective mid-February 2020, and the Biden administration has pledged to hold China fully accountable. Second and more important from a broader perspective, the sheer size of the Chinese economy, combined with China’s strategic ambitions in the global marketplace, requires intelligent attention.
+
+Chinese state capitalism’s top-down control of key parts of the economy creates multiple problems inside its huge market, which spill over into the global trading system. China keeps parts of its market closed while actively playing in other countries’ markets—an unfair and distortionary approach. Furthermore, China’s system generates massive subsidies to create and prop up national champions. This interventionist approach has generated many distortions, including excess production in key industries, that have decimated market-based industries globally (e.g., solar panels). These policies curtail market economy production and innovation for the affected industries around the world, not least in the United States and like-minded countries. The Biden administration will want to remove distortions and deficiencies that hurt the growth of the U.S. economy and to support U.S. companies’ ability to compete in global markets as well as in China, where it is clear that U.S. jobs and the U.S. economy will benefit.
+
+Should the administration consider completely decoupling from China? The reality is that China is a huge global participant. Not only is it key to many U.S. trading partners, but for many U.S. companies, the Chinese market is much too large to leave. When revenues from China support U.S. jobs and economic growth, this is a problem that must be tackled. Even if the United States were to completely decouple from China, the rest of the world would stay, gaining more room for their growth and less for ours. And how would the United States deal with its trading partners whose supply chains would still include China? Cutting them off or sanctioning them would hurt the U.S. economy. These circumstances indicate that the Biden administration may well pursue a more targeted approach to trade with China.
+
+Pursuing multilateral policy options. The Biden administration has emphasized that it will cooperate with allies to manage challenges from China. This is already evident in the human rights realm, with the recent parallel actions taken on Xinjiang. The Biden administration also has made clear that it will cooperate with the new director-general of the World Trade Organization (WTO) on reforms to meet the needs of WTO members. In addition, readouts of USTR Katherine Tai’s recent virtual meetings with both Japan and the European Union flagged shared concerns about China’s practices.
+
+This may well mean that the United States will continue to work with Japan and the EU in the WTO context, and perhaps beyond, on subsidies, state-owned enterprise disciplines, and rules to stop forced technology transfer—issues directly relevant to addressing key China distortions. However, concrete reforms could be difficult to achieve. The public exposure of problematic policies may have some indirect impact on China’s policymaking, but without China’s acquiescence the WTO cannot adopt new disciplines in these areas.
+
+It is, of course, possible that new rules could find their way into other agreements outside the WTO context, creating safe harbors of trade where strong, fair rules apply. However, speculation about the United States joining the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP) or swiftly signing a similar broad agreement with the EU seems like wishful thinking at present. The Biden administration is pushing the reset button on how to evaluate these potential agreements.
+
+International trade agreements take a great deal of political capital. Current U.S. views across the political spectrum on such deals are ambivalent at best and negative at worst, given that past trade openings have led to major adverse impacts for numerous U.S. communities. The Biden administration has pledged to protect ordinary Americans and is underscoring that no trade initiative will move out of the starting block unless it has proven benefits for U.S. jobs and the future of the U.S. economy. Further, given the political bandwidth needed to move a major deal and the Biden administration’s many other priorities with Congress, there seems to be no prospect for significant trade deals for quite some time. A foreign policy emergency could change these dynamics, and over the longer term, hopefully the administration will be able to evaluate the full costs and benefits for the United States from a more integrated trade regime in Asia and with Europe, including the noneconomic risks and benefits vis-à-vis China.
+
+Even if the Biden administration will not pursue major formal trade agreements in the near future, that decision does not preclude entering into plurilateral agreements with like-minded trading partners on narrower issues where the worker-centric cost-benefit analysis is positive and the value of creating fair rules is important. The digital economy, transparency, climate, and good government practices may present some areas for progress.
+
+Working with allies. The Biden administration will likely also work on informal alignments with allies on issues of interest. This could well include closer attention to international standard setting, given the major impacts across emerging technology sectors, and the fact that China has increased its involvement in these efforts. Informal collaborations on trade issues related to national security, such as critical infrastructure build outs and supply chain rules, also could emerge.
+
+That said, there will be limits to cooperation with allies. U.S. allies have no desire to have their actions dictated by the United States, and, as mentioned, they have very important economic ties with China. U.S. allies want to balance the gains they see in cooperating with China on trade or investment with their independent evaluation of the risks from China’s strategic ambitions and growing ability to pressure them economically. Their assessment of the proper balance will not perfectly match the United States’.
+
+The incomplete harmonization of U.S. allies with U.S. priorities means that the United States will continue to take unilateral trade actions. Biden cannot afford to look or be soft on China, so if China is mistreating U.S. stakeholders and thereby harming the United States’ economy, workers, or innovative future, he will need to act. The administration’s commitment to “build back better” the U.S. economy may indirectly affect trade with China, including through incentivizing reshoring and resilient supply chains. Of course, if the United States becomes a more efficient competitor, this will affect trade with China as well.
+
+Defending the U.S. market. In terms of defending the U.S. market from Chinese incursions, the Trump administration used a wide range of unilateral trade law tools. The Biden administration may wield a good number of them as well, although likely with more predictability and adherence to mainstream interpretations of the limits on their use. These tools include import restrictions that can be imposed via trade remedy laws, safeguard actions, unfair trade investigations under Section 301 of the Trade Act of 1974, export controls, the Committee on Foreign Investment in the United States (CFIUS), sanctions, and other actions that target individual bad actors. Import and other trade restrictions related to national security also could come into play in limited scenarios. Presumably, the Biden administration would work to focus the restrictions on China to avoid penalizing (and alienating) allies with sweeping tariffs.
+
+Although these defensive measures may protect the U.S. market against problematic Chinese imports, they will not address access to China’s market, the problems in third-country markets for U.S. stakeholders created by Chinese market distortions, or the broader global risks from China’s state capitalist strategies. U.S. leverage to address these matters alone is limited, but the bilateral trade deal with China already in place does provide one avenue to exercise the leverage Washington does have.
+
+FINDING AN EFFECTIVE POLICY RESPONSE
+
+The Biden administration already has made clear that it will hold China accountable for commitments agreed to under the phase-one trade deal. This only makes sense. The phase-one deal is an existing source of leverage that no USTR would want to jettison. China has ongoing obligations to implement both the lagging purchase promises and its policy commitments. The phase-one deal offers an existing channel for pragmatic communication, one of the few channels left between the two countries. The enforcement mechanism also gives the United States a means to press China at the top of its system, and the tariffs on Chinese goods operate as negotiating currency going forward. Moreover, the agreement does not simply last two years but remains in place until one of the parties terminates it. It also includes language indicating that further negotiations are contemplated, although both parties have to agree on the timing.
+
+The Biden administration could well undertake a hard-nosed evaluation of what could be gained in a “phase two” negotiation. If significant positive outcomes appear possible under the Biden metrics, the administration might be willing to discuss this option with China on a low-key basis, assuming the broader political environment allows this initiative. China demonstrated through the Trump era that U.S. pressure will not cause it to change the fundamental structure of its economy or institutions, but Chinese economic reformers know that the country’s economy will benefit from removal of additional nonmarket distortions. Accordingly, there may still be room for beneficial change.
+
+Of course, China can be expected to push for all Section 301 tariffs to be removed in additional negotiations. Removing any significant tariffs could be a very difficult step politically in the United States, and seem impossible if new Chinese commitments under a phase-two deal do not immediately translate politically into important benefits for enough U.S. stakeholders. That said, a deal might be possible where positive outcomes for the United States justify some reduced tariffs. For example, reduced tariffs might prove to be a winning concession for the United States, if it can be shown that U.S. jobs and the U.S. economy would materially benefit from removing these trade barriers.
+
+At the end of the day, the Biden administration will be navigating an intensely political environment. Dealing with the major strategic challenges posed by China will require clear-eyed decisions on what the critical problems are and how much leverage exists in each forum to confront them. At the same time, in order to avoid throwing out the economic baby with the bathwater, it will be critical to beat back the simplistic impulse to demonize China and condemn every interaction. A nuanced perspective is needed for many reasons, including to maximize the prospects for a positive U.S. economic future. Realistically, that requires recalibrated but continuing trade and investment flows with China alongside the hard work of sustaining a strong, market-based global system.
+
+Claire Reade is a Senior Associate with the Trustee Chair in Chinese Business and Economics at the Center for Strategic and International Studies.
+
+
+
+SEARCH
+trade
+U.S.-China competition
+WTO
+CPTPP
+China
+U.S. economy
+Kenneth B. and Anne H.H. Pyle Center for Northeast Asia Studies
+John M. Shalikashvili Chair in National Security Studies
+Center for Innovation, Trade, and Strategy
+Slade Gorton Policy Center
+Facebook
+
+Twitter
+
+LinkedIn
+and follow us on Youtube
+Sign up for updates
+ACCOUNT SUBSCRIBE
+©2026 The National Bureau of Asian Research
+Privacy Policy
+
+Site Map
+
+Terms of Use
+
+Contact Us
+This site uses cookies. Please read our Privacy Policy to learn how and why we use cookies. Close

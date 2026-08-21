@@ -1,0 +1,168 @@
+# The World Data Organization China's Influence on Global Data Governance
+
+- 发布机构：National Bureau of Asian Research
+- 发布日期：2026-07-14
+- 官方页面：https://www.nbr.org/publication/the-world-data-organization-chinas-expanding-influence-on-global-data/
+- 材料类型：Commentary
+- 页面来源：官方网页原始HTML
+
+Skip to Content
+Congress
+Media
+Account
+Donate
+About
+Experts
+Programs
+Publications
+Topics
+Events
+Commentary
+The World Data Organization
+China's Influence on Global Data Governance
+by Nigel Cory
+July 14, 2026
+
+Nigel Cory describes the World Data Organization (WDO), launched by China in March 2026, as one part of a three-channel strategy for China to influence global technology governance. He argues that the United States should make its own frameworks and tools so compelling that the WDO’s relevance is constrained before it has the chance to achieve critical mass.
+
+On March 30, 2026, China’s launch of the World Data Organization (WDO) in Beijing marked a shift in the country’s approach to global data governance—from blocking and obstructing Western frameworks to actively trying to build an alternative.[1] Whether the WDO produces results in the near term matters less than the fact that China is now competing for the affirmative agenda in a space where the United States is promoting alternatives but lacks a cohesive strategy.
+
+The Trump administration is watching the WDO’s progression with interest, but has not yet taken any obvious counter-steps of the kind that has defined the action-reaction dynamic of U.S.-China rivalry over data policy in recent years. For example, when the Trump administration launched the Clean Network Program in 2020, Beijing responded with the Global Data Security Initiative (GDSI).[2] When the Biden administration withdrew from World Trade Organization digital trade negotiations in 2023, China moved to fill the normative vacuum.[3] When the U.S. Justice Department issued rules in October 2024 restricting bulk data transfers to China, Beijing launched the Global Cross-Border Data Flow Cooperation Initiative at the Asia-Pacific Economic Cooperation (APEC) summit the following month.[4] China’s launch of the WDO marks a shift from just opposing Western data governance frameworks to proposing an alternative. The United States already has the tools to counter the institution—Global Cross Border Privacy Rules (CBPR), Data Free Flow with Trust, and the Organisation for Economic Co-operation and Development (OECD) government access principles—but lacks the strategy to deploy them as a coherent response before the window for shaping global norms narrows or closes.
+
+A New Institution and a Warning Sign
+
+The WDO is the institutional capstone of a decade-long strategic progression in Chinese data policy. China’s 13th Five-Year Plan, covering 2016–20, was the first to designate data as a “basic strategic resource.” What followed was a decade of deliberate institutional construction: the Cybersecurity Law in 2017, the Data Security Law and Personal Information Protection Law in 2021, the creation of the National Data Administration in 2023, and now the WDO in 2026. Each step extended the same logic outward—from domestic control over data, to restricting its outbound flow, to shaping the global norms that govern it.[5]
+
+There are parallels in China’s approach to global governance of artificial intelligence (AI), but a key difference for the United States is that it already has a well-developed menu of multilateral data policy options.[6] What the United States lacks is the strategy to bring them together in a cohesive way that helps encourage more countries to join its initiatives and adopt associated principles and approaches.[7]
+
+At the WDO’s launch, the organization held its first general meeting, adopted its charter, and elected its first council and board of supervisors. The founding assembly drew roughly 500 participants. President Xi Jinping sent a congratulatory letter, delivered by Vice Premier Ding Xuexiang. Muhammadou Kah, chair of the UN Commission on Science and Technology for Development and vice chair of the UN Data Governance Working Group, addressed the inaugural assembly. The WDO has already attracted more than 200 members from over 40 countries. Its membership spans companies, universities, think tanks, financial institutions, and international organizations across fourteen industries, including manufacturing, finance, healthcare, logistics, agriculture, education, energy, and media.[8]
+
+The WDO describes itself as a professional, nongovernmental, and nonprofit international body committed to “bridging the data divide, unlocking the value of data, and boosting the digital economy.”[9] Its core mission is to address differences in national data policies and regulatory frameworks, recommend standards, and promote industry consensus and best practices that give governments and research institutions a reference point and help multinational companies reduce compliance costs when operating across borders. The WDO also links its purpose to AI, as Chairman Tan Tieniu noted during its launch: “The current wave of artificial intelligence is driven by data. How to fully unleash data’s potential and accelerate digital economic growth is a common challenge facing humanity, requiring a globally recognized platform.” In 2021 the United States sanctioned Tieniu while he was a deputy director of the Liaison Office of the Central People’s Government of the Hong Kong Special Administrative Region.[10]
+
+The nonbinding design of the WDO is deliberate. Treaty-based institutions require transparency, accountability, and consensus among states with divergent interests. The WDO avoids a lot of this while still helping China achieve a primary strategic goal: shaping global norms before binding rules crystallize elsewhere. But nonbinding does not mean inconsequential. Standards recommendations flowing from the WDO will likely reflect China’s domestic approach to data—one that maximizes state access to data while restricting outbound flows.[11] Those outputs will not be politically neutral, even when framed as technical best practices.
+
+The impact of the WDO is far from certain. Past data-related reactive initiatives have stalled after launch. For example, the GDSI attracted endorsements from Russia, Pakistan, the Arab League, and a handful of others, but Chinese officials’ promotion of the initiative showed a notable slowdown by 2021, with the last recorded diplomatic mention in February 2022.[12] Likewise, nothing much has happened since the launch of the Global Cross-Border Data Flow Cooperation Initiative. But the establishment of the WDO is significant as it marks China’s most ambitious and comprehensive attempt to articulate a constructive, affirmative vision for global data governance. The channels to leverage the organization already exist, so its success will largely depend on whether the WDO differs from past initiatives by providing clear leadership, a clear agenda, and consistent, long-term, and broad engagement among participants.
+
+How China Exports Governance: Three Channels
+
+The WDO is one part of a three-channel strategy for China to influence global technology governance, not a standalone initiative. This three-channel approach mirrors what Audrye Wong and Ryan Fedasiuk documented regarding China’s parallel AI governance offensive—standards bodies, regional/multilateral frameworks, and infrastructure bundling, now with the WDO positioned as a potential institutional anchor across both the data and AI domains simultaneously.[13]
+
+The first channel is norm-setting through the WDO. Establishing a Beijing-headquartered institution with sufficient membership and UN-adjacent legitimacy to shape global standards discussions, influence how developing countries draft their data laws, and produce policy outputs that migrate into formal standards processes at the International Organization for Standardization, International Electrotechnical Commission, and International Telecommunication Union (ITU). A key question is whether the WDO funds travel, workshops, and technical assistance for participants from developing countries, which is similar to what other government-supported initiatives tend to do. It also directly funds key participants (such as data policy officials from other countries) to ensure consistent engagement (and influence). This is an extension of the existing competition between states to host major standards discussions. The WDO makes it easier for local participants to engage and shape discussions, just like China is seeking to achieve with the 2027 ITU World Radiocommunication Conference in Shanghai.
+
+The second is the facilitation of bilateral and multilateral initiatives. For example, President Xi launched the Global Cross-Border Data Flow Cooperation Initiative at the APEC Leaders’ Meeting in Lima in November 2024.[14] The Cyberspace Administration of China frames the initiative as a vehicle for nondiscriminatory and cooperative data policies.[15] However, not much has happened since its launch. Somewhat ironically, given their own restrictive approach to cross-border data flows, the only related bilateral initiative is the establishment of the China-EU Cross-Border Data Flow Exchange Mechanism in 2024 and a memorandum of understanding with Germany on cross-border data flow cooperation.[16] However, China continues to build out its domestic data governance regime in parallel to global developments and governance. For example, in October 2025, it unveiled its own certification framework for cross-border personal data transfers. The framework has similar elements to the APEC and Global Cross-Border Privacy Rules (CBPR) systems that China refuses to join and generally opposes and tries to undermine. Chinese state media reflects the general Chinese government view of APEC and the Global CBPR as primarily serving U.S. interests (to the detriment of others) and advancing “U.S. digital hegemony,” while unironically portraying China’s approach as “safe, win-win digital cooperation.”[17]
+
+The third channel is infrastructure bundling. Chinese firms have built significant portions of the undersea cable networks, data centers, and cloud services that physically move data across Southeast Asia and beyond. As Samantha Hoffman documents in the NBR Special Report “China’s Digital Ambitions: A Global Strategy to Supplant the Liberal Order,” this physical infrastructure layer is not incidental to China’s governance strategy; it is foundational to it. The infrastructure creates dependencies that governance norms then follow.[18] As my April 2026 testimony to the U.S.-China Economic and Security Review Commission documents, Chinese firms now hold dominant or nearly dominant positions across multiple layers of the digital economy in the region—e-commerce, 5G, and cloud infrastructure—competing primarily on price and leveraging state financing that Western commercial providers cannot replicate.
+
+The state access concern is structural, not hypothetical. China’s national intelligence laws require its service providers to cooperate with any government requests, meaning Beijing can potentially access data stored on Chinese cloud infrastructure wherever it operates. Governments in Southeast Asia procuring Chinese cloud services for health, finance, or public administration are not just making a commercial decision; they are making a governance one, often without a clear framework to evaluate what they are actually buying.[19] The issue for U.S. policy is not primarily commercial, but rather in building regional acceptance and support for the need for a trustworthy and secure global network. Whoever builds the digital infrastructure tends to write the rules for what flows through it—and on what terms.
+
+The Global South Pitch
+
+The WDO’s “global South” framing deserves attention and should not be underestimated. China’s pitch to developing countries is direct: wealthy nations extracted your data as a raw material for AI development, and the existing governance architecture—dominated by the U.S. platform model and European regulatory frameworks—was built without your input.[20] The WDO appears to offer an attractive alternative: equal participation, capacity building, and a governance model that does not require adopting Washington’s or Brussels’ rules wholesale. This is despite the challenges and contradictions in China’s own approach to data and AI development, which restricts foreign access to its digital economy and the flow of data between China and other markets, while wanting Chinese tech firms to seize global market share. China’s pitch lands well in forums where the United States needs allies but has recently been absent. The United Nations’ decision to send its Commission on Science and Technology for Development chair to the founding assembly signals that Beijing has already secured a degree of multilateral legitimacy for the WDO.
+
+The WDO’s pitch to the global South deserves scrutiny on its own terms. China promises developing countries data sovereignty and equal participation, but the governance model it is exporting is structurally incompatible with both. China’s National Intelligence Law requires Chinese firms to cooperate with state intelligence requests anywhere they operate, and the Data Security Law creates government access rights with no transparency requirement and no independent judicial oversight. A government in Southeast Asia or Africa that builds its digital infrastructure on Chinese platforms and adopts China’s governance framework does not gain sovereignty over its data. It trades one form of external dependency for another—one with fewer legal protections and no transparency mechanisms through which citizens, courts, or regulators could know when access occurs. The extractive dynamic China’s pitch decries is precisely what its own legal architecture enables.
+
+Tools for a Comprehensive U.S. Strategy to Build Global Data Governance
+
+The WDO could well stall like both the Global Cross-Border Data Flow Cooperation Initiative and GDSI. Regardless, the window for shaping global data governance norms is narrowing as more countries enact their own data privacy and security laws and regulations, which take on increasing importance in the era of AI.
+
+There are parallels to China’s approach to AI governance. As Wong and Fedasiuk document, the U.S. response to China’s AI governance offensive is still taking shape. The Trump administration is leery of multilateral forums, has no clear international AI governance strategy, and has not taken any clear and direct action to counter China’s ongoing quantity-over-quality efforts to influence standards bodies. On global data governance, the United States is in a fundamentally stronger position. The tools and many of the partners already exist. What’s missing is the strategy that connects and energizes them.
+
+In June 2025, the Global CBPR Forum officially launched its certification system, with approximately 100 certified companies covering over 2,000 entities. Full members include Australia, Canada, Japan, South Korea, Mexico, the Philippines, Singapore, Chinese Taipei, and the United States, with the United Kingdom, Bermuda, the Dubai International Financial Centre, and Mauritius as associate members. The United States participated in the launch, and the initiative has the clear ongoing support of the Trump administration. Global CBPR is a functional, accountability-based certification framework for trusted data flows that requires no regulatory harmonization among members. This is a deliberate design choice that makes it scalable in ways the European Union’s adequacy framework, with its opaque and inconsistent country-by-country reviews, is not. Firms seeking certification undergo third-party audits verifying compliance with baseline data protection principles: notice, purpose limitation, security safeguards, access and correction rights, and accountability. The result is a portable, credible signal of trustworthiness that travels across jurisdictions.
+
+Alongside Global CBPR, the OECD Declaration on Government Access to Personal Data Held by Private Sector Entities, issued in December 2022, represents the clearest multilateral articulation of what distinguishes democratic data governance from China’s state-directed compulsion model. Its core commitment—rejecting government access to data that is “unconstrained, unreasonable, arbitrary or disproportionate” and affirming that the approach of member countries is “in accordance with democratic values; safeguards for privacy and other human rights and freedoms; and the rule of law including an independent judiciary”[21]—is a direct and operationalizable counterpoint to China’s National Intelligence Law. The latter creates a standing obligation on any Chinese firm or citizen to cooperate with state intelligence requests, with no independent judicial check and no transparency requirement.
+
+Most governments in the developing world are grappling with exactly the question the OECD Declaration addresses. The United States should be bringing them into that framework, not leaving them to engage with the WDO’s version of an answer first. Malaysia and the Association of Southeast Asian Nations have adapted a localized version of the OECD principles into their own cross-border cloud initiative, which includes the idea for trusted data corridors.
+
+Building this framework out as a trusted cloud initiative would give governments in Southeast Asia and elsewhere a concrete tool to assess providers on something beyond price, where Chinese providers thrive. Chinese cloud firms compete aggressively on price in emerging markets, often backed by state financing that Western commercial providers cannot match, offering free onboarding of client services and upfront discounts of 60%–80% in markets like the Philippines, Indonesia, and Thailand. Without a clear, credible definition of cloud trustworthiness endorsed by the United States and its partners, governments making procurement decisions have no detailed framework for evaluating what they are actually buying.
+
+What would be genuinely new and valuable would be a U.S.-led effort to create a trusted cloud initiative—mapping and aligning the technical controls, audits, and certifications that define trustworthy cloud service providers across trade, cybersecurity, and defense partners, such as Australia, Canada, Japan, New Zealand, Singapore, and the EU.[22] This would build on early efforts among some defense and intelligence agencies to form top-secret cloud arrangements to allow easier data sharing and better data security.[23]
+
+While the G-7’s digital agenda has waned in recent years, its Data Free Flow with Trust initiative still provides the political framing for genuine global data governance among like-minded partners. However, despite the creation of a secretariat and agenda at the OECD, the initiative remains a work in progress.
+
+The arguments for the Trump administration to fund and pursue the expansion of the Global CBPR are clear. For example, convincing India, Indonesia, and Vietnam to join as full members would shift the framework from a club of existing U.S. allies to a genuinely global system with real weight in markets where the WDO may gain traction. Indonesia’s recent digital trade commitments with the United States—including provisions on cross-border data flows—show this kind of engagement is achievable when Washington makes it a priority.
+
+The United States already has the building blocks in place—Global CBPR, Data Free Flow with Trust, the OECD’s trusted government access principles, the AI Exports Program, and bilateral trade negotiations. The next step is to utilize these as the foundation of a coherent strategy with a clear geographic focus on the Indo-Pacific. The administration’s “protect and promote” tech policy philosophy maps directly onto this agenda: protecting U.S. firms from digital barriers imposed by data localization and state compulsion regimes, while promoting the U.S. AI and tech stack, and associated values around government access to data, in markets where China is competing aggressively on price and governance terms simultaneously.
+
+The United States should make its own frameworks and tools so compelling that the WDO’s relevance is constrained before it has the chance to achieve critical mass. The building blocks are there. What is needed is a strategy that pulls them together and the recognition that the window for acting is open now, but that it may not be indefinitely open.
+
+Nigel Cory is a Director at Crowell Global Advisors and a Nonresident Fellow at the National Bureau of Asian Research.
+
+ENDNOTES
+
+[1] “World Data Organization established in Beijing,” State Council of the People’s Republic of China, Press Release, March 31, 2026, https://english.www.gov.cn/news/202603/31/content_WS69cb2a94c6d00ca5f9a0a2db.html.
+
+[2] Chaeri Park, : China’s ‘Global Data Security Initiative’ 全球数据安全倡议,” Stanford University, DigiChina Project, March 31, 2022, https://digichina.stanford.edu/work/knowledge-base-chinas-global-data-security-initiative.
+
+[3] Nigel Cory and Samm Sacks, “China Gains as U.S. Abandons Digital Policy Negotiations,” Lawfare, November 15, 2023, https://www.lawfaremedia.org/article/china-gains-as-u.s.-abandons-digital-policy-negotiations.
+
+[4] “China Unveils New Framework to Stimulate Cross-Border Data Flows: Risk or Opportunity for Multinational Companies,” Crowell, January 13, 2025, https://www.crowell.com/en/insights/client-alerts/china-unveils-new-framework-to-stimulate-cross-border-data-flows-risk-or-opportunity-for-multinational-companies.
+
+[5] Nigel Cory, testimony before the U.S.-China Economic and Security Review Commission hearing “Taking a Bigger Byte: China’s Expanding Strategy for Data Dominance,” April 30, 2026, https://www.uscc.gov/sites/default/files/2026-04/Nigel_Cory_Testimony.pdf.
+
+[6] See Audrye Wong and Ryan Fedasiuk, “China’s AI Governance Offensive Threatens U.S. Tech Leadership,” War on the Rocks, May 21, 2026, https://warontherocks.com/cogs-of-war/chinas-ai-governance-offensive-threatens-u-s-tech-leadership.
+
+[7] For further discussion, see Nigel Cory and Akanksha Sinha, “The Case for U.S. Leadership on Global Data Governance,” Asia Policy 20, no. 4 (2025), https://www.nbr.org/publication/the-case-for-u-s-leadership-on-global-data-governance.
+
+[8] “World Data Organization established in Beijing,” Xinhua, March 31, 2026, https://www.globaltimes.cn/page/202603/1357919.shtml.
+
+[9] “World Data Organization Launches in Beijing with over 200 Members,” CGTN, March 30, 2026, https://news.cgtn.com/news/2026-03-30/World-Data-Organization-launches-in-Beijing-with-over-200-members-1LW8iWB4vxm/index.html.
+
+[10] “Notice of Department of State Sanctions Actions on Hong Kong Normalization,” Federal Register, August 3, 2021, https://www.federalregister.gov/documents/2021/08/03/2021-16530/notice-of-department-of-state-sanctions-actions-on-hong-kong-normalization.
+
+[11] Cory, testimony before the U.S.-China Economic and Security Review Commission.
+
+[12] Park, “Knowledge Base.”
+
+[13] See Wong and Fedasiuk, “China’s AI Governance Offensive Threatens U.S. Tech Leadership.”
+
+[14] “China Unveils New Framework to Stimulate Cross-Border Data Flows.”
+
+[15] “China’s Global Cross-Border Data-Flow Initiative Opposes Discriminatory Restrictions,” MLex, November 20, 2024, https://www.mlex.com/mlex/articles/2263165/china-s-global-cross-border-data-flow-initiative-opposes-discriminatory-restrictions.
+
+[16] “EU and China Launch Cross-Border Data Flow Communication Mechanism,” European Commission, August 28, 2024, https://policy.trade.ec.europa.eu/news/eu-and-china-launch-cross-border-data-flow-communication-mechanism-2024-08-28_en; and “Germany, China Sign Declaration on Data,” Reuters, June 26, 2024, sharinghttps://www.reuters.com/business/autos-transportation/germany-china-sign-declaration-data-sharing-2024-06-26.
+
+[17] “GT Voice: China, Other Nations Must Break U.S. Self-Serving Data Rules System,” Global Times, May 17, 2022, https://www.globaltimes.cn/page/202205/1265902.shtml.
+
+[18] Samantha Hoffman, “Securing the Foundation: Building the Physical Infrastructure of the Digital World,” in “China’s Digital Ambitions A Global Strategy to Supplant the Liberal Order,” ed. Emily de La Bruyère, Doug Strub, and Jonathon Marek, National Bureau of Asian Research, NBR Special Report, no. 97, March 2022, https://www.nbr.org/publication/chinas-digital-ambitions-a-global-strategy-to-supplant-the-liberal-order.
+
+[19] Cory, testimony before the U.S.-China Economic and Security Review Commission hearing.
+
+[20] Wang Yunshan, “World Data Organization Established To Bridge Global Data Divide,” People’s Daily, April 7, 2026, https://en.people.cn/n3/2026/0407/c90000-20444091.html.
+
+[21] OECD, “Declaration on Government Access to Personal Data Held by Private Sector Entities,” December 14, 2022, https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0487.
+
+[22] “Technical and Legal Criteria for Assessing Cloud Trustworthiness,” Information Technology and Innovation Foundation, April 22, 2024, https://itif.org/publications/2024/04/22/technical-legal-criteria-for-assessing-cloud-trustworthiness.
+
+[23] Japan’s Sovereign Cloud Commitment at the U.S.-Japan Summit: Defense Interoperability, Not Just Digital Policy,” Crowell, https://www.crowell.com/en/insights/client-alerts/japans-sovereign-cloud-commitment-at-the-us-japan-summit-defense-interoperability-not-just-digital-policy; and Carley Welch, “Five Eyes Officials Say They Want a Shared Top Secret Cloud, Someday,” Breaking Defense, October 29, 2024, https://breakingdefense.com/2024/10/five-eyes-officials-say-they-want-a-shared-top-secret-cloud-someday.
+
+
+
+SEARCH
+data governance
+China
+OECD
+artificial intelligence
+APEC
+undersea cable
+global South
+Kenneth B. and Anne H.H. Pyle Center for Northeast Asia Studies
+John M. Shalikashvili Chair in National Security Studies
+Center for Innovation, Trade, and Strategy
+Slade Gorton Policy Center
+Facebook
+
+Twitter
+
+LinkedIn
+and follow us on Youtube
+Sign up for updates
+ACCOUNT SUBSCRIBE
+©2026 The National Bureau of Asian Research
+Privacy Policy
+
+Site Map
+
+Terms of Use
+
+Contact Us
+This site uses cookies. Please read our Privacy Policy to learn how and why we use cookies. Close

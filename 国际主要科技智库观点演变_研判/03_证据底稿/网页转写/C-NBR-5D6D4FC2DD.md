@@ -1,0 +1,115 @@
+# India's Economic Future Charting a Course toward Renewed Growth
+
+- 发布机构：National Bureau of Asian Research
+- 发布日期：2021-04-13
+- 官方页面：https://www.nbr.org/publication/indias-economic-future-charting-a-course-toward-renewed-growth/
+- 材料类型：Interview
+- 页面来源：官方网页原始HTML
+
+Skip to Content
+Congress
+Media
+Account
+Donate
+About
+Experts
+Programs
+Publications
+Topics
+Events
+Anindito Mukherjee/Bloomberg via Getty Images
+Commentary from The Evolving Indo-Pacific Trade Environment
+India's Economic Future
+Charting a Course toward Renewed Growth
+Interview with Pravakar Sahoo
+April 13, 2021
+
+The Covid-19 pandemic has exacerbated a number of structural challenges that had already slowed India’s economic growth in recent years. In response, the Modi government has unveiled a new budget that it hopes will blunt the impact of the pandemic and has announced various reforms to improve the efficiency and resilience of supply chains. NBR’s Jonathon Marek spoke to Pravakar Sahoo about the challenges facing the Indian economy and the potential paths forward, including the Supply Chain Resilience Initiative.
+
+Massive protests by farmers have been ongoing over three bills that were passed by the Indian parliament in 2020. What would the economic impacts of the bills be if they were implemented? What does the backlash to their passage suggest about Prime Minister Narendra Modi’s ability to achieve his economic priorities moving forward?
+
+In 2020, three agricultural bills were proposed by the government. These bills would increase farmers’ ability to directly contract with processors and exporters, eliminating the requirement for middlemen. They would allow for additional stockpiling and greater private investment in agricultural supply chain operations. This would lead to lower transaction costs, raising prices earned by farmers and reducing prices paid by consumers.
+
+However, the three bills have been bitterly opposed by farmers concerned about greater corporatization of the agriculture sector, especially in northwest India. Their main concern is that the bills would eventually lead to the elimination of state procurement at the minimum support price (MSP), which has helped farmers earn better prices and reduced price volatility for some crops. However, the government has reiterated its commitment to the MSP and public procurement. As long as the public distribution system for food continues, the government will need to procure grains, which requires an MSP.
+
+Yet there is such a breakdown of trust between some groups of farmers and the government that the impasse remains despite these assurances. The government might have avoided some of the backlash it now faces if there had been more consultation with farmers prior to the introduction of the bills. This was a failure on the part of the government in communicating the benefits of the reforms to the larger farming community. However, it was important for the government to move these bills forward to benefit the majority of farmers, who have been left out of the MSP-procurement system.
+
+Even prior to the Covid-19 pandemic, India’s economic growth was slowing from the 7%–8% rates seen earlier under the Modi government. What structural challenges will the Indian economy need to address after it emerges from the pandemic?
+
+Yes, the Indian economy was facing headwinds even before the slowdown related to Covid-19. GDP growth had declined for nine straight quarters—from 8.2% in Q4 2018 to 3.1% in Q4 2020—largely due to a lack of aggregate demand. Consumption, private investment, and exports have all been falling. Some other factors responsible for the slowdown in recent years are problems in the banking and corporate sectors affecting credit growth and investment; fallout from the demonetization program in 2016, which made 86% of currency in circulation invalid tender; and the implementation of the goods and services tax reforms in 2017.
+
+Despite these obstacles, the Indian economy continued to grow through 2018 on the back of falling oil prices and non-bank financial companies providing credit support. However, the credit bubble burst in 2019, adversely affecting credit and demand in important sectors, including real estate. Fiscal and monetary measures such as higher government expenditure and rate cuts failed to stimulate the economy before the onset of the pandemic, and the impact of the Covid-19 pandemic on the Indian economy has been severe.
+
+The stimulus measures from the central government and Reserve Bank of India totaling around 15% of GDP are producing encouraging trends, as growth is expected to bounce back to double digits next fiscal year, albeit from a lower base. However, structural issues such as the stagnation of aggregate demand and major concerns such as financial sector stability and rising government debt will remain challenges to the Indian economy, even after the end of the pandemic.
+
+India’s budget for 2021, totaling approximately $500 billion, is moving toward approval. What priorities has the Modi government outlined? How will the budget facilitate India’s economic recovery from the pandemic-related recession?
+
+India’s fiscal situation was already tenuous because of the stimulus measures before the unveiling of the budget for 2021, which resulted in a deficit of 9.5%. Still, the government tried to meet expectations to boost the economy with further stimulus. According to the government, the budget has prioritized spending on key areas such as infrastructure, healthcare, and agriculture to restore normalcy, boost demand, and attract private investment. Specifically, it proposed a 34.5% increase in capital expenditure, mostly in infrastructure; a 137% increase in health expenditures, including sanitation and drinking water; and a 16.5 lakh crore rupee ($225 billion) increase in credit to the agriculture sector. These are well-conceived and welcome steps.
+
+Moreover, the budget also sends out a clear message on market reforms such as privatization, the creation of a development financial institution for long-term financing of infrastructure, the greater FDI equity in infrastructure, and other measures. Overall, the 2021 budget is expected to accelerate the revival of the Indian economy. However, its success depends on the implementation of projects and the creation of non-tax revenues through the privatization of public-sector undertakings and monetization of assets.
+
+The budget has been criticized by some for being too fiscally conservative. Is this an accurate assessment?
+
+The fiscal deficit (6.8% of GDP for 2022) projected in the budget has caught the attention of economists, industry experts, and media outlets alike, with many lauding the central government for proposing to take the necessary steps required for an economic revival. However, a large part of this deficit can be attributed to the government coming clean about expenditures that are usually off-book, as well as revenue shortfalls and a lower denominator due to reduced GDP. The revised estimate for total central expenditures for 2020–21 is actually calculated to be 34.5 lakh crores rupees ($480 billion) after considering increased food price support and rural employment guarantee payments during the Covid-19 pandemic. Therefore, the increase over last year’s budget is only 33,000 crores rupees ($4.5 billion)—a very small amount, which shrinks further after accounting for inflation.
+
+Though the 2021 budget includes a welcome increase in capital expenditure, especially on infrastructure, the predicted expenditure on various welfare programs has also been reduced compared to the revised estimates from last year. Hence, the proposed expenditure may not be sufficient to counter the contraction in demand (especially rural consumption) experienced by the economy due to the pandemic and put India back on a trajectory of high growth. There is very little fiscal space for the government after the stimulus during the pandemic. The estimated total expenditure was 13.4% of GDP, which increased to 17.7% in the revised estimate for the year 2020–21. In fact, the total borrowing proposed is a little more than one-third of the total expenditure. Therefore, the present government, which has been fiscally prudent so far, has done all it could possibly do.
+
+Why did India pull out of negotiations for the Regional Comprehensive Economic Partnership (RCEP), and how will this affect the country’s influence? How does the Modi government view the impact of the RCEP on the regional economic system?
+
+The objective of the RCEP is to boost intraregional trade, increase the global competitiveness of the member countries’ products, and strengthen supply chains within Asia. In November 2019, India pulled out of the agreement citing “significant outstanding issues.” Joining the RCEP would have left Indian domestic markets vulnerable to import surges, especially from China, and the Modi government would have been unable to use countermeasures such as a trigger to automatically increase tariffs when imports crossed a certain threshold. At the same time, India was wary of its own access to other markets and the use of non-tariff barriers to block Indian imports. India already has trade deficits with eleven of the fifteen remaining RCEP countries. Additionally, there were concerns about the most-favored-nation obligations under the investment chapter that could require India to extend benefits to other countries in sensitive matters like defense. The RCEP member countries were also not giving India’s service professionals market access.
+
+However, pulling out of the agreement could have negative repercussions for the Indian economy. India is now isolated and unable to benefit from the potentially huge markets within the trade bloc, especially for some of its more competitive products, including pharmaceuticals, and for the services industry. The decision could also have a negative effect on the Supply Chain Resilience Initiative (SCRI) between Australia, India, and Japan. A possible way to mitigate these impacts would be for India to improve trade ties with countries with which it already has bilateral trade agreements (including some of the RCEP members), while forging new and possibly more beneficial agreements with other countries.
+
+India, Japan, and Australia have agreed to launch joint programs on supply chain resilience. What prompted this move, and what specific goals or policies will this initiative pursue?
+
+The SCRI is a proposed trilateral initiative that aims to build resilient supply chains in the Indo-Pacific region. The Covid-19 pandemic and worsening China-U.S. trade relations had disrupted global supplies and reiterated the dangers of excessive reliance on the imports of a single country. As such, it makes sense that countries would seek to diversify their risks for supply chain inputs by depending on several countries rather than a select few. Besides boosting supply chain resilience, the SCRI is anticipated to increase FDI and mutually beneficial trade in the region. In addition, bilateral relations between China and the proposed SCRI members have soured in recent years. The initiative may give the countries some required leverage to counter China’s economic and political dominance in the region.
+
+In 2019 the three countries had a combined GDP of $9.3 trillion, and trade in goods and services between them totaled $3.6 trillion. This reflects the significant heft of the three economies in coordination. The SCRI will cover sectors ranging from automobiles and textiles to information technology.
+
+There are also other potential areas of collaboration. Japan, which spearheaded the initiative, sought out India because of their long-standing trade relationship and the history of significant Japanese investment in India, with FDI totaling $33.5 billion from 2000 to 2020. Japan has also been looking to relocate its businesses out of China and providing subsidies for the same to select countries, including India. India and Australia, for their part, agreed on a comprehensive strategic partnership in 2020, in addition to both being Quad members. But the shift in India’s dependence on China for imports has to occur slowly.
+
+Are there concerns that China could carry out a broad campaign of economic coercion against India, like the campaign currently ongoing against Australia? If so, what are India’s main areas of vulnerability, and how is the Modi government working to mitigate these?
+
+Escalating tensions between India and China led India to ban more than two hundred Chinese apps, restrict FDI from China, cancel a railway deal with a Chinese company, and block Chinese firms from 5G trials. While China has brought a complaint at the World Trade Organization, it has currently not taken any drastic steps against India like it has against Australia. However, the situation remains dynamic, and there is no guarantee that China will not take coercive measures in the future.
+
+Despite the government’s intentions to restrict Chinese trade, India continues to run a relatively large trade deficit with China. India depends on its neighbor for a number of critical products, particularly telecom equipment, electronics, pharmaceutical intermediates, computer hardware, and appliances. In the case of the pharmaceutical industry, India has largely relied on Chinese imports of active pharmaceutical ingredients to produce cheap generic medicines. It also imports a significant share of its capital goods from China.
+
+Given this high dependence on China for intermediate goods, it would be difficult for Indian supply chains to decouple from Chinese production in the short run. One way the government is aiming to counter this dependence is by boosting domestic manufacturing through measures like the production-linked incentive scheme. Another method adopted by the government has been to work to boost India’s trade with other countries so as to shift its trade relations away from China. The SCRI could be another step in that direction.
+
+Pravakar Sahoo is a Professor in the Institute of Economic Growth at the University of Delhi and a Senior Advisor with NBR’s Asia EDGE project.
+
+This interview was conducted by Jonathon Marek, a project assistant with NBR’s Center for Innovation, Trade, and Strategy.
+
+
+
+PROGRAMS
+The Evolving Indo-Pacific Trade Environment
+SEARCH
+India
+supply chain
+Modi
+Covid-19
+RCEP
+Quad
+China
+Kenneth B. and Anne H.H. Pyle Center for Northeast Asia Studies
+John M. Shalikashvili Chair in National Security Studies
+Center for Innovation, Trade, and Strategy
+Slade Gorton Policy Center
+Facebook
+
+Twitter
+
+LinkedIn
+and follow us on Youtube
+Sign up for updates
+ACCOUNT SUBSCRIBE
+©2026 The National Bureau of Asian Research
+Privacy Policy
+
+Site Map
+
+Terms of Use
+
+Contact Us
+This site uses cookies. Please read our Privacy Policy to learn how and why we use cookies. Close

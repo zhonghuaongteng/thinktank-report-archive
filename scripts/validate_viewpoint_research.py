@@ -31,8 +31,9 @@ def expected_catalog_size(
     cset_asset_count: int,
     atlantic_asset_count: int,
     belfer_asset_count: int = 0,
+    nbr_asset_count: int = 0,
 ) -> int:
-    return seed_count + catalog_asset_count + early_asset_count + cset_asset_count + atlantic_asset_count + belfer_asset_count
+    return seed_count + catalog_asset_count + early_asset_count + cset_asset_count + atlantic_asset_count + belfer_asset_count + nbr_asset_count
 
 
 def main() -> None:
@@ -56,6 +57,8 @@ def main() -> None:
         "33_Atlantic_Council涉华科技主题索引.csv", "34_Atlantic_Council涉华科技复用矩阵.csv",
         "35_Belfer涉华科技专题增补台账.csv", "36_Belfer涉华科技专题增补结果.md",
         "37_Belfer涉华科技主题索引.csv", "38_Belfer涉华科技复用矩阵.csv",
+        "39_NBR科技与中国专题增补台账.csv", "40_NBR科技与中国专题增补结果.md",
+        "41_NBR科技与中国主题索引.csv", "42_NBR科技与中国复用矩阵.csv",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -161,6 +164,36 @@ def main() -> None:
         r["机构观点等级"] == "作者/项目政策证词"
         for r in belfer_catalog if r["报告类型"] == "政策证词"
     )
+    nbr_assets = rows(root / "39_NBR科技与中国专题增补台账.csv")
+    assert len(nbr_assets) == 89, len(nbr_assets)
+    assert sum(r["材料类型"] == "NBR研究报告" for r in nbr_assets) == 17
+    assert sum(r["材料类型"] == "NBR政策简报" for r in nbr_assets) == 20
+    assert sum(r["材料类型"] == "NBR评论" for r in nbr_assets) == 29
+    assert sum(r["材料类型"] == "NBR访谈" for r in nbr_assets) == 13
+    assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in nbr_assets) == 32
+    assert sum(r["本地状态"] == "官方网页全文已保存" for r in nbr_assets) == 50
+    assert sum(r["本地状态"] == "官方页面代理全文已保存" for r in nbr_assets) == 7
+    assert not any(r["本地状态"] == "获取失败" for r in nbr_assets)
+    assert sum(r["中国关联层级"] == "直接涉华科技" for r in nbr_assets) == 19
+    assert sum(r["中国关联层级"] == "含中国比较的印太技术材料" for r in nbr_assets) == 48
+    assert sum(r["中国关联层级"] == "区域技术基线" for r in nbr_assets) == 22
+    assert sum(r["科技关联层级"] == "核心科技直接材料" for r in nbr_assets) == 62
+    assert sum(r["科技关联层级"] == "科技地缘经济基线" for r in nbr_assets) == 27
+    assert all(r["本地原始资产"] and Path(r["本地原始资产"]).exists() for r in nbr_assets)
+    assert all(r["本地文本"] and Path(r["本地文本"]).exists() for r in nbr_assets)
+    assert all(r["本地切片或转写"] and Path(r["本地切片或转写"]).exists() for r in nbr_assets)
+    assert all(len(r["SHA256"]) == 64 for r in nbr_assets)
+    assert {r["报告ID"] for r in nbr_assets}.issubset({r["报告ID"] for r in catalog})
+    nbr_topics = rows(root / "41_NBR科技与中国主题索引.csv")
+    nbr_matrix = rows(root / "42_NBR科技与中国复用矩阵.csv")
+    assert len(nbr_topics) == 305, len(nbr_topics)
+    assert len(nbr_matrix) == 119, len(nbr_matrix)
+    nbr_catalog = [r for r in catalog if r["报告ID"].startswith("C-NBR-")]
+    assert len(nbr_catalog) == len(nbr_assets)
+    assert all(
+        r["机构观点等级"] == "作者访谈"
+        for r in nbr_catalog if r["报告类型"] == "NBR访谈"
+    )
     assert len(catalog) == expected_catalog_size(
         seed_count=len(seeds),
         catalog_asset_count=len(catalog_assets),
@@ -168,6 +201,7 @@ def main() -> None:
         cset_asset_count=len(cset_assets),
         atlantic_asset_count=len(atlantic_assets),
         belfer_asset_count=len(belfer_assets),
+        nbr_asset_count=len(nbr_assets),
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -178,6 +212,7 @@ def main() -> None:
             (cset_assets, ("本地原始资产",)),
             (atlantic_assets, ("本地原始资产",)),
             (belfer_assets, ("本地原始资产",)),
+            (nbr_assets, ("本地原始资产",)),
         )
         for row in ledger
         for field in fields
@@ -225,13 +260,16 @@ def main() -> None:
         ("35_Belfer涉华科技专题增补台账.csv", "国际科技智库观点演变_Belfer涉华科技专题增补台账.csv"),
         ("37_Belfer涉华科技主题索引.csv", "国际科技智库观点演变_Belfer涉华科技主题索引.csv"),
         ("38_Belfer涉华科技复用矩阵.csv", "国际科技智库观点演变_Belfer涉华科技复用矩阵.csv"),
+        ("39_NBR科技与中国专题增补台账.csv", "国际科技智库观点演变_NBR科技与中国专题增补台账.csv"),
+        ("41_NBR科技与中国主题索引.csv", "国际科技智库观点演变_NBR科技与中国主题索引.csv"),
+        ("42_NBR科技与中国复用矩阵.csv", "国际科技智库观点演变_NBR科技与中国复用矩阵.csv"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv"))
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "06_数据资产" / "数据资产清单.csv"))
     print("viewpoint_research_validation=ok")
-    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)}")
+    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)}")
 
 
 if __name__ == "__main__":

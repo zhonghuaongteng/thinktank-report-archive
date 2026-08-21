@@ -1,0 +1,154 @@
+# Building Supply Chain Resiliency in the Indo-Pacific
+
+- 发布机构：National Bureau of Asian Research
+- 发布日期：2023-10-19
+- 官方页面：https://www.nbr.org/publication/building-supply-chain-resiliency-in-the-indo-pacific/
+- 材料类型：Commentary
+- 页面来源：官方网页原始HTML
+
+Skip to Content
+Congress
+Media
+Account
+Donate
+About
+Experts
+Programs
+Publications
+Topics
+Events
+Commentary from APEC 2023
+Building Supply Chain Resiliency in the Indo-Pacific
+
+by Spencer Cohen
+October 19, 2023
+
+Spencer Cohen (High Peak Strategy LLC) explains why strengthening supply chain resiliency is an economic development opportunity for APEC and Indo-Pacific countries and discusses the role for APEC in supporting diversified investments across the region and planning for supply chain challenges.
+
+NBR is grateful to the Hinrich Foundation for its generous support of this commentary.
+
+The Asia-Pacific Economic Cooperation (APEC) region, comprising 21 economies, is home to nearly two-thirds of global value-added manufacturing and a diverse and complex network of production hubs, ports, and logistics operations.[1] However, these systems have been rattled in recent years by a combination of pandemic-induced port backlogs and shortages, geopolitical tensions, the war in Ukraine, and weather-related events.
+
+The pandemic also brought into stark relief the degree of reliance on China for many essential products—from personal protective equipment and pharmaceutical ingredients to electronic components. This reality came into view against the backdrop of an intensifying U.S.-China economic rivalry, beginning with the imposition of tit-for-tat punitive tariff rates in 2018, followed by export controls, expanded investment restrictions, and moves—unilaterally and through multilateral frameworks—to “de-risk” supply chains in core technologies. Both sides have taken actions to begin to address perceived economic vulnerabilities.
+
+Diversification will be a core element of supply chain resiliency for the foreseeable future. Moreover, strengthening supply chain resiliency is an economic development opportunity for APEC and Indo-Pacific countries. APEC can play an impactful role in supporting diversified investments across the region and coordinating planning in advance of supply chain challenges.
+
+Diversification as a Central Tenet of Supply Chain Resilience
+
+In a 2021 paper, APEC defines resiliency as comprising robustness, or the ability to withstand shocks; agility, or the ability to recover quickly from disruptions; flexibility, or the means to leverage alternative options; and redundancy, or the buildup of adequate surplus capacity.[2] Efforts to strengthen resiliency through diversification will be hampered by duplicative production, periods of correction, and diseconomies of scale, all of which will likely yield higher costs, at least in the short term. But these costs may be dwarfed in the coming years by another series of ill-prepared-for supply chain disruptions. Much like portfolio investing, diversification helps mitigate the deleterious effects of a shock in one region.
+
+For some sectors, the Toyota-innovated “just-in-time” logistics model—the dominant model of inventory management—is gradually giving way to “just-in-case,” driven by increased available stock, diversified sourcing, and mitigation of supply chain bottlenecks, but also carrying the risk of excess, obsolete inventories.[3] In the longer term, innovations in logistics and shipping will help improve the efficiency of this model, including even the return of smaller shipping vessels, autonomous systems, and improved warehouse technology.
+
+China as a Major Hub for Global Manufacturing
+
+China’s sheer size and economies of scale will ensure its enduring position as a leading hub for global manufacturing. China is home to 31% of the world’s value-added manufacturing, up from 9% in 2004.[4] By comparison, Vietnam in 2022 represented only 0.6% of value-added global manufacturing, Mexico 1.6%, and Indonesia (with a population of nearly 300 million) 1.5%. China is the largest source of imports for all Indo-Pacific Economic Framework (IPEF) countries except Brunei, and the top export destination for half.[5] It is also the leading trade partner for 128 nations and the largest source of imports for 65 countries.
+
+China’s manufacturing labor costs—a key advantage during the country’s early years of reform—are rising, having increased more than threefold since 2010.[6] But China has also invested heavily in automation and robotics to offset labor shortages and rising wages. According to the International Federation of Robotics, in 2022 China installed more than 290,000 industrial robotic units on the factory floor, a 57% increase compared to 2020 and 53% of all installed units globally.[7] Moreover, China’s advantages come from decades of building agglomeration economies and supplier ecosystems along its eastern coast, including positive externalities and efficiencies from co-location of firms and labor markets.
+
+Attempts to dislodge this high degree of supply chain concentration in China will at best be gradual and face significant inertia. Analysis published by the Peterson Institute for International Economics shows that between 2010 and 2021, most IPEF member states have become more—not less—reliant on the Chinese market for imports and exports. As a result, they are on average 31% and 28% less export and import diversified than in 2010.[8]
+
+Government policies have had some effect on reducing this overreliance. China’s share of U.S. imports has fallen from a peak of nearly 22% in 2017 to 16.5% last year and 13.5% through the first seven months of 2023, due in part to trade war tariffs imposed under the Trump administration and largely maintained under the Biden administration. China’s share of Japanese imports has similarly declined from 26% in 2016 to 21% in 2022. Japan has been pushing supply chain diversification since at least 2010, when China halted rare earth exports to the country, but these efforts have accelerated since the pandemic began. According to a survey by Nikkei Asia in 2021, 80% of Japanese firms reported actively diversifying their supply chains.[9]
+
+“China+1” Is Also “1+China”
+
+For more than a decade, businesses—foreign and Chinese alike—have sought to diversify new manufacturing investments outside China to minimize current and anticipated future risks. This strategy, often referred to as “China+1,” is now part of supply chain manager vernacular.
+
+But there is also a corollary to this approach: “1+China.” Companies will increasingly diversify outside China but still rely on it as a critical source of high value-added components. China will remain the dominant source of manufacturing output, as well as a leading consumer and commercial market for finished goods. Programs such as the Belt and Road Initiative have focused a large share of investments in supply chain infrastructure, such as ports and roads, in part to strengthen these linkages back to China.
+
+In a recent research note by Rhodium Group, diversification away from China has primarily occurred in low-cost, labor-intensive manufacturing subsectors such as textiles, as well as in some politically sensitive sectors such as semiconductors (where China’s share of inbound FDI plummeted from 48% in 2018 to less than 1% in 2022). Even when firms do expand into new markets, China continues to be essential through upstream backward linkages (i.e., as a source of supplies and key inputs into a manufacturing process), typically for higher value-added intermediate inputs.[10]
+
+Foreign direct investment into China fell by nearly 50% in 2022, from $344 billion to $180 billion, and hit a 25-year low in the second quarter of 2023.[11] Apple earlier this year announced plans to aggressively expand manufacturing in India.[12] Countries within APEC are already crafting and deploying policies to lure investments away from China, including subsidies, tax incentives, and land development for industrial sites and fabrication facilities.[13]
+
+But these trends do not necessarily imply a full de-linking of China-based supply chains so much as a reconfiguration. Consider the example of Vietnam: its share of U.S. imports has grown from less than 1% to nearly 4% in 2022,[14] but many of these imports contain parts or materials sourced from China. Through the first half of 2023, new Chinese direct investments in Vietnam totaled 233 projects and nearly $1.3 billion—a 53.5% increase year-over-year, according to official Vietnamese government data. Chinese firms now have total registered capital of $25.2 billion and 3,791 projects.[15] These investments have clustered along the border in the north of Vietnam and been among small and medium-sized Chinese suppliers serving existing original equipment manufacturers, including larger Chinese firms operating in the south. Many of these firms are also circumventing U.S. tariffs by relocating production across the border, in addition to lowering labor costs.[16]
+
+Many APEC countries (the “1” in a “1+China” strategy) will gain significant manufacturing investments in the coming years as companies seek to diversify. But China will continue to be central to transnational supply chains, as both the home country of many of these investing firms and the source of critical inputs.
+
+Conclusion: How can APEC contribute to more stable and effective supply chains in the Indo-Pacific?
+
+APEC, as a multilateral platform, can play a constructive and impactful role supporting supply chain resiliency throughout the Indo-Pacific.
+
+First, APEC can convene member states to coordinate and plan for financial assistance for supply chain capacity building. According to the latest World Bank 2023 Logistics Performance Index, some of the APEC region’s fast-emerging manufacturing hubs ranked mediocre or worse, including Vietnam (47), Indonesia (59), and Mexico (63).[17] Saigon and Haiphong ports in Vietnam are among the busiest in the world, but they suffer from congestion and capacity limits. Investments will be needed to bolster not only port infrastructure but also electrical grids, carbon neutral energy sources, and transit systems to efficiently build and move goods.
+
+Second, APEC should convene working groups to identify, plan, and coordinate subsidies and financial support for business relocations across the region. This includes coordinating existing aid and financing efforts by individual member economies under the APEC framework, such as those launched by the United States and Japan. For example, the Japanese government has provided billions in incentives, loans, and subsidies to support the relocation of Japanese companies.[18] In 2021 the U.S. Development Finance Corporation announced up to $500 million in debt financing for the U.S. company First Solar to build a vertically integrated solar manufacturing facility in India.[19]
+
+Third, APEC can forge problem-solving platforms by borrowing from existing multilateral initiatives. For example, earlier this year fourteen members of the IPEF concluded negotiations of the IPEF Supply Chain Agreement.[20] This agreement can serve as a template for APEC to develop and implement its own policies to facilitate more efficient and resilient supply chains in the region.
+
+Last, APEC should bring China into these discussions, as a member economy, to be a part of the solution rather than a foil. While China has been a major focus of supply chain diversification, Chinese firms also have a vested interest in expanding operations across the region—and, as discussed above, have already been active in doing so. APEC countries do not want to be forced into either a U.S. or China “camp,” nor should they need to be for many aspects of supply chain–based business recruitment and economic development.
+
+Spencer Cohen is Principal and Founder of High Peak Strategy LLC.
+
+ENDNOTES
+
+[1] “Manufacturing, Value Added (Current US$),” World Bank, https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators.
+
+[2] “APEC Could Play a Role in Bolstering Supply Chain Resiliency,” APEC, May 28, 2021, https://www.apec.org/press/news-releases/2021/0529_arta.
+
+[3] Willy Shih, “From Just-in-Time to Just-in-Case: Is Excess and Obsolete Next?” Forbes, January 30, 2022, https://www.forbes.com/sites/willyshih/2022/01/30/from-just-in-time-to-just-in-case-is-excess-and-obsolete-next/?sh=1bf28c04daf7.
+
+[4] Manufacturing, Value Added (Current US$).”
+
+[5] Abigail Dahlman and Mary E. Lovely, “U.S.-Led Effort to Diversify Indo-Pacific Supply Chains Away from China Runs Counter to Trends,” Peterson Institute for International Economics, September 6, 2023, https://www.piie.com/blogs/realtime-economics/us-led-effort-diversify-indo-pacific-supply-chains-away-china-runs-counter.
+
+[6] National Bureau of Statistics of the People’s Republic China (PRC), Annual Statistical Yearbooks (Beijing, 2023), https://data.stats.gov.cn/english/easyquery.htm?cn=C01.
+
+[7] Marina Bill et al., “World Robotics 2023 Report: Asia Ahead of Europe and the Americas” (presentation of the International Federation of Robotics, September 26, 2023), https://ifr.org/img/worldrobotics/2023_WR_extended_version.pdf.
+
+[8] Dahlman and Lovely, “U.S.-Led Effort to Diversify.”
+
+[9] “Over 80% of Japan Inc. Recast Supply Chains as Pandemic Hit: Survey,” Nikkei Asia, April 2, 2021, https://asia.nikkei.com/Business/Business-trends/Over-80-of-Japan-Inc.-recast-supply-chains-as-pandemic-hit-survey#:~:text=TOKYO%20%2D%2D%20More%20than%2080,by%20highly%20streamlined%20production%20processes.
+
+[10] Agatha Kratz and Camille Boullenois, “Irrational Expectations: Long-Term Challenges of Diversification Away from China,” Rhodium Group, September 13, 2023, https://rhg.com/research/irrational-expectations-long-term-challenges-of-diversification-away-from-china.
+
+[11] “World Development Indicators,” World Bank, https://databank.worldbank.org/reports.aspx?source=2&series=BX.KLT.DINV.CD.WD&country=; and “China’s Foreign Investment Gauge Declines to 25-Year Low,” Bloomberg, August 7, 2023, www.bloomberg.com/news/articles/2023-08-07/china-foreign-investment-gauge-at-25-year-low-amid-high-tensions#xj4y7vzkg.
+
+[12] Krishna N. Das and Tanvi Mehta, “India Sees Apple Nearly Tripling Investment, Exports in Coming Years,” Reuters, April 20, 2023, https://www.reuters.com/world/india/india-confident-apple-can-nearly-triple-investment-exports-coming-years-minister-2023-04-20.
+
+[13] Jason Douglas and Stella Yifan Xie, “Countries Compete to Lure Manufacturers from China,” Wall Street Journal, March 23, 2023, https://www.wsj.com/economy/trade/countries-compete-to-lure-manufacturers-from-china-adf46d9a.
+
+[14] U.S. Census Bureau, “U.S. International Trade in Goods and Services, August 2023,” September 30, 2023, https://usatrade.census.gov/data/Perspective60/View/dispview.aspx.
+
+[15] Ministry of Planning and Investment (Socialist Republic of Vietnam), “FDI Attraction Situation in Vietnam and Vietnam’s Overseas Investment in the First Six Months of 2023,” June 27, 2023, https://www1.mpi.gov.vn/en/Pages/tinbai.aspx?idTin=58156&idcm=122.
+
+[16] Francesco Guarascio, “Chinese Suppliers Race to Vietnam as COVID Let-Up Opens Escape Route from Sino-U.S. Trade War,” Reuters, March 16, 2023, https://www.reuters.com/markets/asia/chinese-suppliers-race-vietnam-covid-let-up-opens-escape-route-sino-us-trade-war-2023-03-16.
+
+[17] “Logistics Performance Index,” World Bank, https://lpi.worldbank.org/international/global.
+
+[18] Conor M. Savoy and Sundar R. Ramanujam, “Diversifying Supply Chains: The Role of Development Assistance and Other Official Finance,” Center for Strategic and International Studies, June 2022, https://www.csis.org/analysis/diversifying-supply-chains-role-development-assistance-and-other-official-finance.
+
+[19] “DFC Announces Approval to Provide Up to $500 Million of Debt Financing for First Solar’s Vertically-Integrated Thin Film Solar Manufacturing Facility in India,” U.S. Development Finance Corporation, Press Release, December 7, 2021, https://www.dfc.gov/media/press-releases/dfc-announces-approval-provide-500-million-debt-financing-first-solars.
+
+[20] “Press Statement on the Substantial Conclusion of IPEF Supply Chain Agreement Negotiations,” U.S. Embassy in Jakarta, Press Release, May 31, 2023, https://id.usembassy.gov/press-statement-on-the-substantial-conclusion-of-ipef-supply-chain-agreement-negotiations.
+
+
+
+PROGRAMS
+APEC 2023
+SEARCH
+APEC
+supply chains
+China
+Vietnam
+Indonesia
+IPEF
+Japan
+Kenneth B. and Anne H.H. Pyle Center for Northeast Asia Studies
+John M. Shalikashvili Chair in National Security Studies
+Center for Innovation, Trade, and Strategy
+Slade Gorton Policy Center
+Facebook
+
+Twitter
+
+LinkedIn
+and follow us on Youtube
+Sign up for updates
+ACCOUNT SUBSCRIBE
+©2026 The National Bureau of Asian Research
+Privacy Policy
+
+Site Map
+
+Terms of Use
+
+Contact Us
+This site uses cookies. Please read our Privacy Policy to learn how and why we use cookies. Close

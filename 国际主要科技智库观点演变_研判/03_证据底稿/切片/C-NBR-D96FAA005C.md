@@ -1,0 +1,55 @@
+# C-NBR-D96FAA005C 原文切片
+
+- 原文：`03_证据底稿\原文PDF\C-NBR-D96FAA005C.pdf`
+- PDF页数：4
+- 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
+
+## 执行摘要与开篇候选
+
+## T1_国家研发与方向设定
+
+- PDF页1：celerate economic growth, given the productivity and efficiency gains that stem from AI-related growth drivers. This includes the need to ensure that AI productivity dividends benefit critical sectors like healthcare, agriculture, education, and defense, among others. The Indian government’s approach has been to serve as an ecosystem enabler through its flagship IndiaAI Mission . The initiative seeks to build AI innovation capabilities in the country on one level and identify pathways to expand AI applications on another. This includes enabling compute availability, supporting indigenous model development, and establishing a national dataset platform to put in place the foundational building blocks for AI innovation. Concurrently, a thread that has appeared through successive policy documents, start
+
+- PDF页2：BRIEF • THE NATIONAL BUREAU OF ASIAN RESEARCH • SEPTEMBER 2025 2 with the proposed establishment of an AI safety institute toward which the Ministry of Electronics and Information Technology had released a call for partnerships. The guidelines report also proposed a whole-of-government approach to AI governance through recommendations for an interministerial AI coordination committee or working group, a technical secretariat, and an AI incident database. As AI adoption rapidly accelerates across different segments of the economy, trustworthy systems have become increasingly important. Deepfakes of female celebrities have thrown the issue of nonconsensual use of images into sharp relief. This elicited intervention from the Ministry of Electronics and Information Technology in December 2023 to inc
+
+- PDF页3：The operationalization of the National Strategy for AI over time has included considered and deliberative approaches to develop innovation capacity. The deliberative approach informed by expert research and landscape analysis over time has informed the budgetary allocations and government support toward shaping the IndiaAI Mission and its mandates. Overall, the approach to governance and implementation of India’s AI strategy has been to support domestic innovation by boosting foundational model developers, publicly provisioning GPUs through empaneled industry partners, and inviting public solutions for safe and trustworthy AI solutions and frameworks. Modes of AI Governance and Rationales The 2025 governance guidelines recommended adopting an approach combining regulatory methods and technical tool
+
+## T2_市场与产业政策边界
+
+未自动命中；需人工按目录复核。
+
+## T4_国际合作与开放
+
+- PDF页1：omentum with the 2025 release of the Report on AI Governance Guidelines Development, has been one of responsible, safe, secure, and trustworthy AI. This had been expanded in the 2021 document on responsible AI and reaffirmed in multilateral initiatives and forums like the Global Partnership on Artificial Intelligence, G-20, and Paris Action Summit. The proposed governance guidelines chart a pathway for operationalizing this approach by leveraging existing laws and using technical tools to scale detection and compliance. The safe and trusted pillar of the IndiaAI Mission has extended support for the development of technical tools, guidelines, and frameworks in this space along Anulekha Nandi is a Fellow in the Centre for Security, Strategy and Technology at ORF. Her primary area of research includes d
+
+- PDF页2：BRIEF • THE NATIONAL BUREAU OF ASIAN RESEARCH • SEPTEMBER 2025 2 with the proposed establishment of an AI safety institute toward which the Ministry of Electronics and Information Technology had released a call for partnerships. The guidelines report also proposed a whole-of-government approach to AI governance through recommendations for an interministerial AI coordination committee or working group, a technical secretariat, and an AI incident database. As AI adoption rapidly accelerates across different segments of the economy, trustworthy systems have become increasingly important. Deepfakes of female celebrities have thrown the issue of nonconsensual use of images into sharp relief. This elicited intervention from the Ministry of El
+
+## T5_供应链与技术依赖
+
+未自动命中；需人工按目录复核。
+
+## T7_管制与研究安全
+
+- PDF页4：alizing systems that can oversee responsible AI compliance and inclusion of governance-by-design mechanisms within product development methodologies. Cutting across the levels of technical, social, and legal specificities of AI systems are core realist rationales of national and economic security and global competitiveness, compounded by challenges associated with operationalizing high-level principles. This requires a system of governance that extends from the granular specificities of cascading design decisions to ensuring that domestic innovation is not affected by geopolitical consequences. For developing countries like India, this has to be done in a way that does not place additional burden on public spending in a country with competing social and economic priorities, but charts a pathway to the prom
+
+## T8_新兴技术治理
+
+- PDF页1：BRIEF • THE NATIONAL BUREAU OF ASIAN RESEARCH • SEPTEMBER 2025 G overnance of artificial intelligence (AI) is a multidimensional exercise, and for emerging economies like India it goes beyond a simple optimization between promoting innovation and mitigating risk. With effects cutting across the economy, national security, public order, and individual safety, AI governance encompasses the need to manage the technology’s cascading effects while harnessing its transformative potential. As the global AI race radiates geopolitically, India must simultaneously keep pace with the breakneck speed of innovation, improve so
+
+- PDF页1：e 2025 release of the Report on AI Governance Guidelines Development, has been one of responsible, safe, secure, and trustworthy AI. This had been expanded in the 2021 document on responsible AI and reaffirmed in multilateral initiatives and forums like the Global Partnership on Artificial Intelligence, G-20, and Paris Action Summit. The proposed governance guidelines chart a pathway for operationalizing this approach by leveraging existing laws and using technical tools to scale detection and compliance. The safe and trusted pillar of the IndiaAI Mission has extended support for the development of technical tools, guidelines, and frameworks in this space along Anulekha Nandi is a Fellow in the Centre for Security, Strategy and Technology at ORF. Her primary area of research includes digital innovation managemen
+
+- PDF页1：d support for the development of technical tools, guidelines, and frameworks in this space along Anulekha Nandi is a Fellow in the Centre for Security, Strategy and Technology at ORF. Her primary area of research includes digital innovation management and governance, focusing on artificial intelligence, emerging technologies, and digital infrastructures. AI GOVERNANCE IN INDIA BY ANULEKHA NANDI, ORF
+
+- PDF页2：proposed a whole-of-government approach to AI governance through recommendations for an interministerial AI coordination committee or working group, a technical secretariat, and an AI incident database. As AI adoption rapidly accelerates across different segments of the economy, trustworthy systems have become increasingly important. Deepfakes of female celebrities have thrown the issue of nonconsensual use of images into sharp relief. This elicited intervention from the Ministry of Electronics and Information Technology in December 2023 to include clauses under the existing intermediary liabilities regime for proactively addressing AI-generated misinformation or deepfakes. Furthermore, incidents surfaced of foundational large language models developed in other countries producing warped or bia
+
+- PDF页3：r the defense sector to adopt AI and integrate and embed it in defense strategy. Public defense production units (defense public sector undertakings and ordnance factories) were assigned roadmaps for developing AI-enabled products. This led to the establishment of the Centre for Artificial Intelligence and Robotics at the Defence Research and Development Organization to develop AI- based solutions for signals intelligence and enhance intelligence collection, collation, and analysis capabilities. The aim was to develop AI-based tools to detect automated human intrusion partially based on principles of the Internet of Things. This was done to have AI augment armed forces in decision support, sensor data analysis, predictive maintenance, situational awareness, operational management, and logistics support. The oper
+
+- PDF页3：s mandates. Overall, the approach to governance and implementation of India’s AI strategy has been to support domestic innovation by boosting foundational model developers, publicly provisioning GPUs through empaneled industry partners, and inviting public solutions for safe and trustworthy AI solutions and frameworks. Modes of AI Governance and Rationales The 2025 governance guidelines recommended adopting an approach combining regulatory methods and technical tools to build trust and address risks. This approach resonates with one used within India’s digital public infrastructure system, which uses privacy-preserving consent and authentication mechanisms across a range of services. The governance guidelines propose taking a life-cycle view of AI systems (development, deployment, and diffusion
+
+- PDF页3：nisms to identify and manage risks at scale. On the regulatory front, the overall proposed direction appears to be one of leveraging existing laws to address AI-related risks rather than implementing a single overarching law for AI governance. On the technical side, the safe and trusted pillar of the IndiaAI Mission aims to support projects across themes such as machine unlearning, bias mitigation, auditing tools, explainable AI frameworks, and approaches to fairness testing. Modes of AI governance globally have tended to focus on AI harms and safety driven by ethical principles. However, countries are realizing that AI governance is not a simple exercise of optimizing for risk and innovation as the underlying technology continues to learn, evolve, and mutate, introducing new areas to be regula
+
+- PDF页4：ns (compliance by design), standards of practice, or mechanisms for accountability as proposed in the 2025 AI governance guidelines. This underscores the importance of understanding the multidimensionality of AI risks, establishing governance mechanisms that are able to engender trust in systems that can lead to further adoption downstream, and ascribing responsibility to various actors depending on the extent and nature of their involvement. To realize this process of institutionalization, it is important for India’s AI governance framework to work in tandem with the IndiaAI Mission’s mandate to develop foundational AI innovation capabilities. A clear operationalization of governance mechanisms is key to enable downstream innovation and adoption by easing and clarifying compliance processes an
+
+## T10_预见与优先领域
+
+未自动命中；需人工按目录复核。

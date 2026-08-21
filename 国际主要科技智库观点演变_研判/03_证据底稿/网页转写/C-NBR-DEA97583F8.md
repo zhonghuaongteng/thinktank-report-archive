@@ -1,0 +1,110 @@
+# The U.S. APEC 2023 Host Year “Meets the Moment” in the Asia-Pacific
+
+- 发布机构：National Bureau of Asian Research
+- 发布日期：2024-03-16
+- 官方页面：https://www.nbr.org/publication/the-u-s-apec-2023-host-year-meets-the-moment-in-the-asia-pacific/
+- 材料类型：Commentary
+- 页面来源：官方网页原始HTML
+
+Skip to Content
+Congress
+Media
+Account
+Donate
+About
+Experts
+Programs
+Publications
+Topics
+Events
+Alexander Nemenov/AFP via Getty Images
+Commentary from APEC 2023
+The U.S. APEC 2023 Host Year “Meets the Moment” in the Asia-Pacific
+
+by Matt Murray and Steve Dyokas
+March 16, 2024
+
+This look back at the outcomes of the 2023 U.S. APEC host year was co-written by Ambassador Matt Murray, the U.S. Senior Official for APEC, and Steve Dyokas, who served as the Director of the U.S. APEC Host Secretariat. The commentary focuses on the priority areas of inclusive economic growth, climate mitigation, trade resiliency, disaster risk, food security, and the digital economy.
+
+NBR is grateful to the Hinrich Foundation for its generous support of this commentary.
+
+The 2023 U.S. host year of the Asia-Pacific Economic Cooperation (APEC) forum provided an invaluable opportunity for the United States to lead multilateral economic cooperation, enhance engagement with regional partners, uphold international rules and norms, strengthen public-private collaboration, and deliver an innovative, interconnected, and inclusive economic policy agenda for the Asia-Pacific region. Throughout the year, the United States worked with the other twenty APEC economies to support sustainability through a focus on a just energy transition, build a “digital Pacific” by advancing digital skills and connectivity, and promote resilience and inclusion by meeting the moment on trade and investment, gender equity, food security, anticorruption, supply chains, and support for micro, small, and medium-sized enterprises (MSMEs). As President Joe Biden pressed delegates at the APEC CEO Summit last November, “It’s up to us to harness the dynamism of our economies and tap the entrepreneurial spirit of our people and unleash the unlimited potential of our partnerships in order to realize a future that will benefit people not only in the Asia-Pacific region but the whole world.”
+
+Under the host year theme of “Creating a Resilient and Sustainable Future for All,” the United States deepened its commitment to leading the global economy to drive inclusive economic growth. This directly benefits American workers, families, and businesses while delivering prosperity across the Asia-Pacific region—home of nearly 40% of the world’s population, approximately half of global trade, and more than 60% of global GDP.
+
+A Look Back at the U.S. APEC Host Year
+
+Having started back in December 2022 in Honolulu, the U.S. APEC host year—with more than four hundred working-level and ten ministerial-level meetings—concluded in November 2023 with the convening of APEC economic leaders in San Francisco. In addition to the APEC Economic Leaders’ Meeting, chaired by President Biden, the Leaders’ Week program included the Finance Ministers’ Meeting, chaired by Treasury Secretary Janet Yellen, and the APEC Ministerial Meeting, co-chaired by Secretary of State Antony Blinken and U.S. Trade Representative Ambassador Katherine Tai. In San Francisco, APEC leaders endorsed the Golden Gate Declaration, a consensus statement advancing efforts to achieve the APEC economies’ ambitious sustainability and inclusion objectives. Secretary Blinken and Ambassador Tai joined their counterparts in issuing a consensus joint ministerial statement, which reiterated the APEC economies’ commitment to advancing interconnectivity, inspiring innovation and sustainability, and fostering inclusivity throughout the region.
+
+Demonstrating the importance of U.S. economic engagement and leadership in the Asia-Pacific region—and how this translates into concrete outcomes here at home—was a central theme of our host year efforts. Under the “APEC Connect” banner, we traveled across the country to both engage with new audiences to highlight the significant benefits of the United States’ participation in APEC for all Americans and incorporate the priorities of stakeholders and historically underrepresented groups into our APEC work. Private sector and civil society partners across all APEC economies play a critical role in APEC’s goal of driving sustainable, inclusive, and dynamic economic growth throughout the region, and partnerships with key stakeholders have been the “secret sauce” of APEC’s success over the past three decades.
+
+During APEC Leaders’ Week, civic organizations in the Bay Area hosted nearly 30 public and stakeholder engagement events, attended by more than three thousand domestic and international participants, to supplement the APEC CEO Summit, the inaugural APEC Sustainable Future Forum and APEC Multistakeholder Forum, and the APEC Business Advisory Council’s annual dialogue with leaders. The enthusiastic audiences we met in November joined the five thousand domestic stakeholders from MSMEs, trade associations, local chambers of commerce, nonprofits, think tanks, academia, labor groups, Indigenous Peoples, media, and members of the U.S. Congress, state governments, and local governments who participated in nearly four hundred meetings, roundtables, and briefings held in the APEC host cities (Honolulu, Palm Springs, Detroit, and Seattle) as well as in Los Angeles, New York, Pittsburgh, Atlanta, Chicago, and the Washington, D.C., area.
+
+Host Year Outcomes
+
+Throughout the APEC host year, the United States worked across fourteen federal departments and agencies to secure significant, tangible outcomes centered on the U.S. host year priorities of sustainability and inclusion, digital innovation, and resilient economic growth. Our three cross-cutting policy agendas—the Manoa Agenda for Sustainable and Inclusive Economies, the Digital Pacific Agenda, and the Bay Area Agenda on Resilient and Inclusive Growth–—provided an ambitious workplan that framed engagement with APEC partners throughout the year to deliver a wide range of achievements.
+
+Under the Manoa Agenda, the United States committed to working with APEC partners to implement APEC’s growing sustainability and inclusion objectives, including through support for global efforts to address environmental challenges facing all member economies. Through the Digital Pacific Agenda, we committed to working with APEC economies to shape the rules, norms, and standards that govern the digital economy; expand secure digital access for consumers and businesses; and support the responsible design, development, and deployment of emerging digital technologies. Under the Bay Area Agenda, we committed to working with APEC economies to ensure that our progress in advancing long-term robust, innovative, and inclusive economic growth can endure unpredictable challenges that may be encountered going forward. The following discussion highlights other key outcomes of the U.S. host year.
+
+Enhancing climate mitigation and resilience. APEC economic leaders committed to pursue efforts to triple renewable energy capacity globally through existing targets and policies as well as to demonstrate similar ambition with respect to other zero- and low-emissions technologies, including abatement and removal technologies. Energy ministers endorsed the Non-Binding Just Energy Transition Principles for APEC Cooperation to promote efforts to advance clean energy transitions within the APEC region that meaningfully engage the workforce, businesses, investors, and communities in an equitable and inclusive way.
+
+Advancing gender equality. APEC initiated the development of the Seattle Framework on Gender Equality and Climate Change to inform policymakers on approaches to address the disproportionate impacts of environmental challenges—including climate change, extreme weather, and natural disasters—on women and girls and those living in remote and rural areas. To learn more about APEC’s efforts on gender equality in the U.S. host year, we encourage you to read an earlier commentary in this series by Ambassador Geeta Rao Gupta, the U.S. Ambassador-at-Large for Global Women’s Issues.
+
+Elevating workers’ voices. APEC economies endorsed the Detroit Non-Binding Principles and Recommendations for Equality and Inclusion in Education, Training, and Employment. This initiative promotes equality and inclusion in workforce development, including through education and labor and social protections, in support of efforts to elevate workers’ voices and promote inclusive workforce education.
+
+Addressing inclusion and resiliency in trade. APEC Leaders welcomed the San Francisco Principles on Integrating Inclusivity and Sustainability into Trade and Investment Policy, which promote choices in the development of trade policy that value sustainability and inclusivity. APEC economies also endorsed the Guidelines on Logistics-related Services that Support the Movement of Essential Goods During a Public Health Emergency to support good regulatory practices, trade measures, and digitalization for logistics-related services. The United States, along with Australia, Canada, and New Zealand, convened Indigenous leaders from the APEC region to share their views with trade ministers on how to make international trade more inclusive for Indigenous Peoples.
+
+Promoting food security and food safety. Recognizing the urgent threat posed by food insecurity and acknowledging the need for a continued transition toward more sustainable solutions, APEC economies finalized the Principles for Achieving Food Security Through Sustainable Agri-food Systems to encourage more sustainable, inclusive, resilient, and reliable agri-food systems. The U.S. Department of Agriculture launched a new Food Security Dashboard to provide policymakers with information on the role of trade in food security and provide guidance on which foods are needed and how to deliver those foods to countries in need. In addition, the terms of reference for the Food Safety Cooperation Forum were finalized, establishing it as an official APEC subgroup. The forum’s mission is to build stronger food safety systems by improving understanding of regulatory compliance and increasing regulatory dialogue, with the ultimate goal of reducing food safety incidents and trade disputes.
+
+Strengthening the digital economy. The United States, along with fellow members of the Global Cross-Border Privacy Rules Forum, established the Global Cooperation Arrangement for Privacy Enforcement, bringing APEC’s cooperation in privacy enforcement through the APEC Cross-border Privacy Enforcement Arrangement to the global stage. APEC economies also endorsed the Recommendations for Cloud Transformation in APEC, which will promote the accelerated adoption of cloud-computing technologies in the region. The United States initiated a dialogue about new and emerging low-Earth orbit satellite communication systems that can advance the objective of extending connectivity to everyone in the APEC region.
+
+Reducing disaster risk and improving emergency preparedness. Member economies updated the APEC Disaster Risk Reduction Framework and Action Plan that drives APEC’s approach to crisis management and disaster risk reduction. To help coastal communities bounce back after adverse climate events, the United States launched an APEC Coastal Resilience Framework. The Federal Emergency Management Agency also announced the launch of the Crisis Management Leadership Series to bolster crisis management competencies in the region as we seek to minimize the impact of disasters on communities.
+
+Supporting MSMEs. The United States also convened the first APEC Public-Private Dialogue on Government Strategies to Encourage Ethical Business Conduct and developed APEC Recommendations for Enterprise Integrity in Public Procurement to help level the playing field for MSMEs pursuing procurement opportunities. Private sector partners launched the MSME Supply Chain Resilience Toolkit, a self-assessment tool for MSMEs seeking to improve their supply chain resilience to future external shocks.
+
+Fostering an enabling environment. Member economies endorsed the Framework for APEC Anti-Corruption Thematic Areas 2023–26 to better integrate APEC-wide efforts to prevent and combat corruption throughout the region. They also endorsed the APEC Good Regulatory Practices Blueprint, which is designed to increase transparency, improve regulatory quality, and produce better regulatory outcomes to minimize trade and investment disruptions and support more effective functioning of supply chains.
+
+Conclusion
+
+Hosting APEC is a marathon effort, but the United States ran through the finish line in San Francisco, delivering on priority themes in concrete ways. Throughout the year, our focus remained on deepening economic ties with key regional partners as the United States continues to be the preeminent driver of inclusive and sustainable economic growth in the Asia-Pacific region. APEC leaders committed to work together to keep markets open, address supply chain disruptions, and ensure that trade and investment benefit all our people. Their work also reflects the needs that the Asia-Pacific region faces right now, with commitments to accelerate efforts toward a clean and just energy transition—including tripling renewable energy capacity globally—and to halve the digital gender divide by 2030. Together, these commitments build on the work of previous APEC hosts and move the region toward new ways of incorporating resiliency, sustainability, innovation, and inclusion into our priorities.
+
+As President Biden further articulated to delegates from around the region at the APEC CEO Summit in San Francisco, APEC is pursuing “a future where our prosperity is shared and is inclusive, where workers are empowered and their rights are respected, where our economies are sustainable and resilient, and the bridges that connect our people open a golden gate of opportunity to create lives of hope.” The vision the United States put forth during its APEC host year for the economic future of the region will rebound far beyond the Asia-Pacific, and the choices the APEC economies make will matter for the entire world.
+
+Ambassador Matt Murray has served as the U.S. Senior Official for APEC since February 2022. In this role, he coordinates the United States’ active engagement and participation in APEC while also overseeing the Office of Economic Policy in the State Department’s Bureau of East Asian and Pacific Affairs. Throughout his career at the State Department, Ambassador Murray has focused on fostering U.S. economic engagement with the Indo-Pacific region, including through assignments in Washington, China, Australia, and India.
+
+Steve Dyokas served as Director of the U.S. APEC Host Secretariat during the 2023 U.S. APEC host year. He has focused on Indo-Pacific economic issues during his career in the State Department, including assignments in Washington, Australia, Japan, and China.
+
+
+
+PROGRAMS
+APEC 2023
+SEARCH
+APEC
+digital trade
+economic
+climate
+trade
+food security
+digital economy
+disaster management
+Kenneth B. and Anne H.H. Pyle Center for Northeast Asia Studies
+John M. Shalikashvili Chair in National Security Studies
+Center for Innovation, Trade, and Strategy
+Slade Gorton Policy Center
+Facebook
+
+Twitter
+
+LinkedIn
+and follow us on Youtube
+Sign up for updates
+ACCOUNT SUBSCRIBE
+©2026 The National Bureau of Asian Research
+Privacy Policy
+
+Site Map
+
+Terms of Use
+
+Contact Us
+This site uses cookies. Please read our Privacy Policy to learn how and why we use cookies. Close

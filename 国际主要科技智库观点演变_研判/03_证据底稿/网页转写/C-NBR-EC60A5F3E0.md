@@ -1,0 +1,130 @@
+# Southeast Asia’s Geoeconomic Outlook
+
+- 发布机构：National Bureau of Asian Research
+- 发布日期：2025-12-01
+- 官方页面：https://www.nbr.org/publication/southeast-asias-geoeconomic-outlook/
+- 材料类型：Interview
+- 页面来源：官方网页原始HTML
+
+Skip to Content
+Congress
+Media
+Account
+Donate
+About
+Experts
+Programs
+Publications
+Topics
+Events
+Romeo Gacad/AFP via Getty Images
+Interview
+Southeast Asia’s Geoeconomic Outlook
+
+Interview with Jayant Menon
+December 1, 2025
+
+Linking critical trade routes between the Indian and Pacific Oceans, the Middle East, and the Americas, Southeast Asia has become a key manufacturing and supply chain hub. Moreover, the Association of Southeast Asian Nations (ASEAN) has become a central player in global trade, aided by its relative stability, young demography, and participation in major regional free trade agreements, including the Regional Comprehensive Economic Partnership (RCEP) and the ASEAN Free Trade Area. In this Q&A, Jayant Menon discusses the challenges Southeast Asian nations now face amid rising trade barriers and considers the regional response, including advocacy for a unified, multilateral ASEAN economic policy.
+
+Excluding intra-ASEAN trade, the top importers and exporters to and from Southeast Asia are China and the United States. Given Southeast Asia’s integration with both countries’ supply chains, the expansion of Chinese manufacturing in the region, and the U.S. crackdown on Chinese transshipment, how has increasing global trade tension affected Southeast Asia’s economic strategy?
+
+The first point to make is that Southeast Asia has been caught in the middle of this escalating U.S.-China trade war for some time, and this is not new. Tensions have been rising since at least the first Trump administration, which formalized a set of tariffs on China. All these measures were retained by the Biden administration, and in fact escalated, even before the current reciprocal tariffs. Southeast Asia has had a long time to deal with this rising geoeconomic rivalry between these two important trade and investment partners.
+
+Up to the second Trump administration, Southeast Asia had been a major beneficiary of the U.S.-China trade war. In particular, Vietnam, Thailand, Malaysia, and Singapore received significant foreign investments from actors seeking to avoid the Trump 1.0 China-only tariffs. With the Biden administration’s three rounds of export controls on China between 2022 and 2024, the incentive to further reconfigure supply chains to avoid tariffs and non-tariff barriers only increased. Now every country faces tariffs, so it is a different picture. We do not know what the relative position of U.S. tariffs faced by China vis-à-vis the ASEAN countries will be because the U.S.-China negotiations have not been completed, as of November 2025. This interdependency between ASEAN and China in the manufacturing supply chains, especially in electronics, but also in other electrical machinery and light manufacturing, is very much China-centered and will remain so.
+
+The ASEAN economies have three options. One is to simply pass on or pass through the tariff onto the importer, and usually that means higher prices for U.S. consumers. This will likely happen for most products in the long run. In the short run, there could be absorption of tariffs—what Trump calls “eating the tariffs.” This could take place because of stockpiled inventories before the tariffs kick in, leading to a delay in the rise of prices. There could also be products where, because of the nature of competition, prices do not rise by the full amount of the tariffs, so the exporter absorbs some of the cost of tariffs into its profit margins. This would be beneficial to the U.S. economy because it would enjoy a term-of-trade gain. That is, this would also be welfare-improving for the United States because it could buy more imports given the prices of its exports.
+
+This can happen, but usually it only applies to a few products. During the first Trump administration, China absorbed some of the tariffs for steel, and this exception has been used, or abused, as a precedent by the current administration. Across the board, however, I do not think it is realistic to assume that this will happen again. Even though the United States is the largest import and consumer market, most products will see full price increases in the long run.
+
+Those are two things that can happen for ASEAN economies: loss of market share and reduction in profit margins. If there is a loss of market share, and ASEAN economies are unable to absorb the costs into their margins, then this would relate to the third option, which is to find a new market. Products that face price cuts, tariff absorption, or tough domestic competition in the United States are most likely to pursue this route. In fact, many ASEAN countries are already looking for alternative markets. They see the United States as an increasingly unreliable and aggressively protectionist market and are looking to reduce their current, heavy reliance on the U.S. market. One way they can diversify is to shift product lines altogether away from the United States and, of course, reconfigure supply chains.
+
+As mentioned, this has been happening during the U.S.-China trade war with firms moving investments out of China into Southeast Asia to avoid the China-only tariffs. Now, of course, even countries that run a deficit with the United States have a 10% tariff. The question is what are the relative rates of the ASEAN countries versus that of China? What is the gap? As noted earlier, we do not know the answer yet because U.S.-China negotiations are ongoing, and there have been mixed signals on what might come out of that. If the gap is large, then more supply chains will be reconfigured. One possibility is the bifurcation of supply chains into one with and one without Chinese value added, the latter for the U.S. market. This would be a bad outcome for the world, and a particularly bad outcome for the United States because U.S. consumers will face even higher prices than what the tariffs currently imply. Production might be relocated to the United States, as President Donald Trump predicts when he says, “Come to America, and you face no tariffs.” I am not discounting that scenario completely, but we will more likely see export shifts to Mexico to get behind the U.S. tariff wall, among other possibilities.
+
+Honda and Hyundai, or in electronics TSMC and Nvidia, have pointed to plans of investment, but we will have to wait to see how much actually materializes. There is a big question mark over these claims or promises. But by and large, Southeast Asia’s China-centered supply chains will not make it easy, commercially viable, or even practical to slice up bits or shift the whole supply chain behind the U.S. tariff wall. The reconfiguration and relocation of the region’s supply chains to the United States is thus unlikely to happen, except for special cases in the electronics and automotive sector. I do not think that this will be a major development in managing these tariffs.
+
+Some Southeast Asian scholars argue that greater economic cooperation between ASEAN member states could strengthen the regional economy and protect it from further trade disruptions. What are the challenges associated with implementing a coordinated framework, and what would a successful ASEAN multilateralist framework look like?
+
+Southeast Asia was hit hard on April 2 with the original set of reciprocal tariffs, but after the pause, tariffs have come down for all countries (quite significantly for some). Laos and Myanmar, however, still face a high rate of 40%. This is unfortunate because these countries have a somewhat high dependence on the U.S. market and are facing difficult conditions at home. Myanmar is going through a political and economic crisis, while Laos is facing a macroeconomic crisis that has threatened its debt sustainability. These struggling economies have been hit with high tariffs for no good reason. There is no way to balance trade with these countries. They are so different from the United States and cannot increase their imports from the United States to match what they sell to it.
+
+The tariffs for most of the other countries are around 20%. Brunei has a 25% rate, and most of the others have 19% or 20% rates. Singapore, of course, has the lowest rate of 10% because the United States has a trade surplus with it. But those are just the reciprocal tariffs. There are also sectoral tariffs and threats of transshipment tariffs on top of these rates. A whole host of measures are in place, and there is also stacking, where the old rates remain and new ones are stacked on top.
+
+Consequently, ASEAN is trying to find ways of boosting intraregional trade in not only goods but also services. To give one example, in Kuching, Sarawak, in eastern Malaysia, the ASEAN ministers agreed to the ASEAN Framework for Integrated Semiconductor Supply Chain to facilitate greater cooperation, integration, and resilience. I think we will see more of these frameworks in response to global uncertainty. However, many of these countries have competing economic structures, so the potential to boost intraregional trade is limited for goods. Some complementarities are being exploited in the supply chains that run across borders. The good thing about manufacturing production is that the process can be sliced so finely to take advantage of even slight differences in factor prices or factor endowments. For services, considerable untapped potential still exists, and that is where future growth in intraregional or intra-ASEAN trade will emerge. ASEAN needs to press ahead with reforms to support growth in that kind of trade.
+
+The thing about ASEAN regionalism is that it is different from most other regionalism projects. ASEAN’s approach to regionalism, as I see it, is not to just increase regional integration, surprisingly enough, but to support globalization. I say this because of the way in which ASEAN has gone about implementing its regional accords, like its Common Effective Preferential Tariff (CEPT) initially and now its ASEAN Trade in Goods Agreement (ATIGA). ASEAN has multilateralized those preferential tariffs for more than 95% of tariff lines. That means there is no preference margin. For 95% or more of tariff lines, the most-favored-nation rate and the preferential rate are the same, which is intended to ensure that the tariffs do not divert trade.
+
+ASEAN thus uses regionalism as a springboard for globalization. The region’s overall trade has grown so sharply because ASEAN has allowed regionalism to promote overall liberalization and avoided the trade diversion that often comes with these preferential trade agreements. ASEAN, unlike the European Union (EU), for instance, cannot be self-sustaining. It is simply not big enough. It needs to look outward and keep doors open. Most of its investment comes from outside, and most of its trade is conducted with countries outside, so it has no choice.
+
+The appetite in ASEAN for the kind of deep integration that we associate with the EU is not there. The level of trust is not there. Countries are not ready or willing to give up the kind of sovereignty to a supranational body to facilitate that kind of deeper integration. The ASEAN Secretariat is weak by design, serving purely as a secretariat and little more, although there has been mission creep over the years. But it is not designed to be a Brussels and is not funded in that way. This type of intergovernmental arrangement works well for ASEAN countries, which puts a ceiling on how far or how deep they can go with their integration plans.
+
+With both China and the United States looking to maintain and expand their economic influence within Southeast Asia, how do Chinese and U.S. bilateral trade agreements reposition the region within broader U.S.-China competition?
+
+We have to recognize that China has been a major violator of trade rules for a long time, with the subsidies and various concerns raised about intellectual property rights, data protections, and other related issues. Although many other countries have violated trade rules as well, including the United States and EU members, China’s violations are egregious. Unfortunately, negotiating with China to improve its practices in these areas is a lost cause because of where we are with the trade war. This type of confrontationist approach is not the way to deal with China and is unlikely to deliver positive results.
+
+Currently, China is grasping the opportunity to fill the void that the United States has created through its own policies. China has even voluntarily conceded special and differential treatment (a set of preferences given to developing countries under the World Trade Organization), enabling it to itself provide preferential access to developing countries. Moreover, it has not been the one aggressively pursuing new protectionist policies, unlike the United States. In that regard, China has been the greatest beneficiary of an open and stable global trading system, and its leaders recognize that and want to stave off the current U.S. challenge to that system.
+
+ASEAN countries have sought to move upstream within global supply chains by expanding technological capacity. How do innovations like artificial intelligence (AI), quantum computing, and green hydrogen and frameworks like the ASEAN Digital Masterplan 2025 and the ASEAN Plan of Action for Energy Cooperation 2026–2030 influence the region’s long-term outlook?
+
+These are huge challenges facing not just ASEAN but all countries. AI and quantum computing, in particular, will be game changers because ASEAN is trying to be proactive when it comes to the green transition and turning challenges into opportunities through the construction of clean energy infrastructure and investment in the green economy. Certainly, the more advanced ASEAN countries are doing that.
+
+The poorer countries, of course, will take longer. These are countries that rely heavily on foreign investment and corporate social responsibility programs that require multinational firms to meet clean energy targets and other social and economic criteria in their responsibility frameworks. Poorer countries need to continue attracting these investments while allowing multinationals to meet their targets.
+
+In terms of moving up the value chain, this is something that ASEAN and its member countries have been trying to do for a long time. However, there are several constraints to overcome. One is the skills constraint in the developing parts of ASEAN. There are also business costs that need to be reduced. Improving logistics and investing in new clean energy infrastructure will be key as well. Some of these projects can be financed domestically, but they also need foreign investment. At the end of the day, a lot of progress will have to happen at the national level, with the regional or multilateral level playing a supporting role. Most of these obstacles must be dealt with nationally, first and foremost, and complemented with regional ASEAN-wide (or beyond) agreements at the secondary level.
+
+Despite threats of increased imports from China and decreased exports to the United States, Southeast Asia has the opportunity to strengthen regional ties and its position within the new economic order. What is the forecast for outside stakeholders looking to conduct trade within the ASEAN region, and what role could ASEAN play in the greater global economy?
+
+The concern that the region will be flooded with cheap Chinese exports because of the need to find new markets with the United States erecting barriers is real but probably overstated. If Southeast Asia is able to import goods more cheaply, this is not necessarily a bad development. A lot of Chinese exports have ASEAN value added in them, with many being produced within supply chains that stretch throughout the region. It is not as if Southeast Asian consumers are buying goods that are produced from start to end in China. Nevertheless, there are domestic import-competing sectors across ASEAN countries that will face stiff competition from Chinese goods with excess industrial capacity there.
+
+Moreover, China is no longer a low-wage country and does a lot of investing. People talk about foreign firms moving out of China. China is moving out of China and has been for a long time, and not just because of tariffs. The tariffs are a distortion that has driven recent flows, but rising wages, the tightening of environmental rules, and other costs are moving Chinese investment into the ASEAN region. The relationship is often one of complementarity, where goods are produced with value added by host countries. This needs to be kept in mind as it is the distinguishing feature in the world of global supply chains.
+
+If the United States continues down its current path, then this will not be the end of tariffs; this is just round one. Six months or one year down the road, bilateral deficits might narrow a little bit because the United States starts moving into recession, but they are not going to narrow significantly just because of the tariffs. And since the designed effects of these tariffs are not being realized, we could easily see another round of tariffs imposed by Trump because, by his own admission, he loves tariffs. He thinks tariffs are a great way of raising revenue by getting foreigners to pay for them.
+
+Therefore, most countries will be looking at strengthening ties with alternative markets, and ASEAN, I think, will initially look at RCEP and its immediate neighborhood. This is still one of the fastest-growing regions in the world, with considerable purchasing power. I think the EU market will be the most likely substitute for the United States because it has similar tastes and incomes. A lot of the goods that the United States consumes are consumed by the more developed parts of the European region. ASEAN countries are also attempting to strengthen ties with the Gulf Cooperation Council (GCC). There was a joint meeting in Kuala Lumpur with ASEAN, China, the GCC, and new markets in South America through the Comprehensive and Progressive Agreement for Trans-Pacific Partnership and APEC links. Finally, in Africa, economic growth is bouncing back, and there is strong population growth. I think that is where we will see the future shape of trade and investment patterns evolve—with greater reliance on the global South, less reliance on the United States, and stronger ties with the EU.
+
+We might see further diversification that brings in India or the broader South Asian region, which has remained largely out of global supply chains. There seems to be some rapprochement between India and China, and if India-China relations can improve at least on the economic front, then the stage is set for this triangular relationship between the two giants and ASEAN to promote greater cooperation.
+
+ASEAN is often described as a middle power. It can play the strategic, balancing role between the different players in a multipolar world. With the rise of the global South, its role will evolve, but from an economic point of view, it will continue to be strongly linked to global supply chains through its connection to China. This is unlikely to change in the foreseeable future.
+
+Jayant Menon is a Visiting Senior Fellow at the ISEAS–Yusof Isak Institute.
+
+This interview was conducted by Lucas Villaseñor while an intern at NBR.
+
+
+
+SEARCH
+ASEAN
+global trade
+RCEP
+China
+tariffs
+U.S.-China
+Myanmar
+Laos
+Brunei
+Malaysia
+semiconductor
+WTO
+supply chain
+artificial intelligence
+quantum
+energy
+Kenneth B. and Anne H.H. Pyle Center for Northeast Asia Studies
+John M. Shalikashvili Chair in National Security Studies
+Center for Innovation, Trade, and Strategy
+Slade Gorton Policy Center
+Facebook
+
+Twitter
+
+LinkedIn
+and follow us on Youtube
+Sign up for updates
+ACCOUNT SUBSCRIBE
+©2026 The National Bureau of Asian Research
+Privacy Policy
+
+Site Map
+
+Terms of Use
+
+Contact Us
+This site uses cookies. Please read our Privacy Policy to learn how and why we use cookies. Close
