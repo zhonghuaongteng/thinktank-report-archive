@@ -1,0 +1,53 @@
+# Electric Shock: Interpreting China’s electric vehicle export boom
+
+- 发布机构：MERICS
+- 发布日期：2023-09-15
+- 官方页面：https://merics.org/en/report/electric-shock-interpreting-chinas-electric-vehicle-export-boom
+- 材料类型：MERICS研究报告
+
+picture alliance / ASSOCIATED PRESS | Andy Wong
+Share this Article
+Report
+Sep 15, 2023
+1 min read
+Electric Shock: Interpreting China’s electric vehicle export boom
+A report by the Center for Strategic and International Studies (CSIS)
+In 2022 China surpassed Germany to become the world’s second-largest car exporter, shaking up the automotive industry in ways not seen since Japan in the 1980s and South Korea in the 1990s. China’s EV companies are rapidly emerging as global competitors thanks to both long-standing government support and innovative engineering and economies of scale achieved by Chinese automakers. At the same time, Western companies are increasingly using China as an EV manufacturing platform due to its massive manufacturing capacity, favorable policies, and cost-effective production capabilities.
+In this report for the
+Program for Chinese Business and Economics at the Center for Strategic and International Studies (CSIS)
+, MERICS Analyst
+Gregor Sebastian
+and
+Ilaria Mazzocco
+, Senior Fellow, Trustee Chair in Chinese Business and Economics at CSIS, analyze key trends of China’s rise as an automotive power and as an EV export hub and the policy implications these developments carry for Europe and the United States.
+You can read the report online
+on the CSIS website
+.
+Listen to our podcast with the authors
+Ilaria Mazzocco
+and
+Gregor Sebastian
+:
+Author(s)
+Ilaria Mazzocco
+Senior Fellow, Trustee Chair in Chinese Business and Economics at CSIS
+Gregor Williams (Sebastian)
+Senior Analyst, Rhodium Group and former Analyst, MERICS
+Author(s)
+Ilaria Mazzocco
+Senior Fellow, Trustee Chair in Chinese Business and Economics at CSIS
+Gregor Williams (Sebastian)
+Senior Analyst, Rhodium Group and former Analyst, MERICS
+Print this Article
+Share this Article
+Related content about
+Industrial Policy and Technology
+From 5G to NearLink: Europe’s next digital dependency risk
+Comment
+Aug 14, 2026
+China’s approach to economic security, with Antonia Hmaidi
+Video
+Jul 31, 2026
+Domestic obstacles, global opportunities: The road to implementing China’s  15th Five-Year Plan
+Report
+Jul 29, 2026
