@@ -1,0 +1,2238 @@
+
+===== PDF_PAGE 1 =====
+CRDS-FY2020-SP-04
+ɾ ఏҊ
+ߏػڵ
+։ൃઓུηϯλʔ
+ઓུϓϩϙʔβϧ
+ΞΫηϥϨʔλ
+౓৘ใॲཧͱ௒௿ফඅిྗԽͷཱ྆ʙ
+STRATEGIC PROPOSAL
+Brain-Inspired AI Accelerator
+- Realizing ﬂ exible advanced information processing with ultra-low
+power consumption -
+
+===== PDF_PAGE 2 =====
+さらに詳細は、下記ウェブサイトをご覧下さい
+https://www.jst.go.jp/crds/
+研究開発戦略センター（CRDS）は、 国の科学技術イノベーション政策に関する調査、
+分析、提案を中立的な立場に立って行う公的シンクタンクの一つで、文部科学省を主
+務省とする国立研究開発法人科学技術振興機構（JST）に属しています。
+CRDSは、科学技術分野全体像の把握（俯瞰） 、社会的期待の分析、国内外の動向
+調査や国際比較を踏まえて、さまざまな分野の専門家や政策立案者との対話を通じて、
+「戦略プロポーザル」を作成します。 「戦略プロポーザル」は、今後国として重点的に
+取り組むべき研究開発の戦略や、科学技術イノベーション政策上の重要課題について
+の提案をまとめたものとして、政策立案者や関連研究者へ配布し、広く公表します。
+公的な科学技術研究は、個々の研究領域の振興だけでなく、それらの統合によって
+社会的な期待に応えることが重要です。 「戦略プロポーザル」が国の政策立案に活用さ
+れ、科学技術イノベーションの実現や社会的な課題の解決に寄与することを期待してい
+ます。
+
+===== PDF_PAGE 3 =====
+エグゼクティブサマリー
+「脳型AIアクセラレータ　～柔軟な高度情報処理と超低消費電力化の両立～」とは、次世代の人工知能技
+術に求められる効率的な学習、外界・環境の認識・理解、予測に基づく判断などの柔軟で高度な情報処理を、
+人間の脳のエネルギー効率に迫る桁違いの低消費電力で行う こ とが可能なAI処理に特化した専用のプロセッ
+サ（脳型AIアクセラレータ）の実現を目指すための研究開発戦略である。ここでは、脳の細胞や神経回路な
+どの構造や機能に対する新たな情報処理モデルの構築と、これに基づく アルゴリ ズム、高速・超低消費電力
+で演算できる新たな回路・アーキテクチャ、動作に最適なデバイス・材料、これらハードウェアを効率的に動
+かすソフ トウェアなどの研究開発を、脳科学、数学・数理科学、デバイス・材料技術と情報科学を強固に連
+携させて進める。これにより、脳型AIアクセラレータを実現すると ともに、新たな産業の創成、人工知能研究、
+脳科学研究、材料・デバイス・回路研究の強化を図る。
+近年、画像認識、音声認識・翻訳、自動運転、病気の診断、新材料探索、デバイス設計など様々な用途
+に機械学習 ・深層学習などによる人工知能（AI）技術が用いられるようになっ てきている。これらの用途には、
+これまでコンピュータが行っ てきた単純な計算やプログラ ムされた演算・画像処理・制御とは質的に異なる、
+認識・予測・判断といった人間に近い高度な情報処理が重要になっ ており、AI技術のさらなる高度化が期待
+されている。また、AI処理は主に豊富な計算パワーを有するクラウ ド上で行われているが、今後は自動車や
+スマート フォ ン、IoT機器といったエッジでのAI処理が重要になっ て く る。現状でもAI処理を行うクラウ ド・
+サーバーでは数MWという膨大な消費電力を使っ ており、クラウ ド上でのさらなる高度なAI処理の実行、お
+よび限られた電力しか使用できないエッジでのAI処理に向けては、コンピュータハードウェアの大幅な消費
+電力低減が必要である。しかし、これまでコンピュータの計算パワー増大と消費電力低減の原動力となっ てい
+た半導体技術／CMOS集積回路は微細化の限界に直面し ており、従来型（ノ イマン型）の汎用コンピュータ
+の高性能化・低消費電力化は困難になりつつある。これまでのAI技術はこの従来型の汎用コンピュータ上に
+ソフ トウェアにより実現されているため、飛躍的な性能向上や低消費電力化を期待するのは難しい。一方、機
+械学習・深層学習などは脳機能の単純化したモデルに触発され進展を遂げてきた。脳科学自身も脳の病気の
+原因解明などを目指し て研究が進ん でおり、分子レベルからニューロン・細胞、神経ネッ トワーク 、脳全体に
+至る様々な階層での脳の機能が明らかになりつつある。このため、今後は脳科学の知見を活かし て人間の脳
+の構造や機能から新たな情報処理のヒン トを得る、あるいはそれらを模倣し て、AI処理に特化したハードウェ
+アを開発し、柔軟で高度な情報処理と低消費電力化の両立を目指すこ とが重要になる。
+米国では2008年から、電子回路によっ て人間の脳と同じ体積、機能、消費エネルギーをもつシステムの構
+築を目的としたDARPAのSyNAPSEが開始され、欧州でも2013年から、脳のモデル構築に向けたHuman
+Brain Projectのサブプログラ ムの中で、ニューロモル フィ ックコンピュータや次世代のニューロモル フィ ック
+チップの開発が進められている。このような取り組みは脳科学の知見を高度な情報処理に活かすという注目す
+べき取り組みであるが、まだ性能が十分でなく 、その優位性や魅力的な応用を示すまでには至っ ていない。
+我が国においても、2016年より新学術領域「人工知能と脳科学」や「脳情報動態学」 、WPI 「ニューロイン
+テリジェンス国際研究機構（IRCN） 」などが開始されている。また、2019年には「AI戦略2019」が策定
+され、必要な研究開発とし てデバイス・アーキテクチャ、AI チップ技術が示されている。このように、ハード
+ウェアによるAI技術に対する新たな流れや要求が生まれているこ とから、短期的にはAI処理の低消費電力化
+や学習の高効率化の要求に応え、長期的には直感的認識やリアルタイ ムの判断などの要求に応え、従来技術
+に対する明確な優位性を示す脳型AIアクセラレータ技術の研究開発を戦略的に推進すべきである。
+今後取り組むべき研究開発課題を以下に示す。脳科学における脳の構造や情報処理機能の知見から新たな
+数理モデルを構築し、脳型AIのアルゴリ ズムを創出し、それを具体的な回路・アーキテクチャ 、さらにはデ
+バイス・材料の開発に繋げていく。また同時に、脳の分子レベル・細胞レベルなど低次構造の機能に類似あ
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+i
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+
+===== PDF_PAGE 4 =====
+るいはヒントを得た特性を持つデバイス・材料に注目し、そこから新たな回路・アーキテクチャ、アルゴリズ
+ムの創出を行う。この2つの流れを融合し て脳型AIアクセラレータの開発に繋げていく こ とが重要である。
+（1)脳科学の知見を活用した情報処理の新たな数理モデル・アルゴリズムの研究開発
+脳の構造や活動・機能に対する細胞レベル、神経回路レベル、脳組織（海馬など）レベル、脳ネッ トワー
+ク全体など各階層での知見から、情報処理に関する新たな数理モデルとアルゴリ ズムを構築する。短期的に
+は細胞（ニューロン ・ シナプス）と神経回路の低次レベル、 長期的には脳組織と脳全体の高次レベルを対象に、
+構造的なつながり、ダイ ナミ ックな活動、信号伝達メカニズムなどの理解と、力学系理論、ネッ トワーク理論・
+トポロジーなどの数学・数理科学を用いて、それらに触発された情報処理の数理モデル・アルゴリ ズムを構
+築する。ここで創出するモデルは、必ずしも実際の脳の情報処理機能を正確に反映し ている必要はなく、新
+たな情報処理のアイデア 、多様なモデルが出て く るこ とが重要である。
+（2)超低消費電力で記憶・演算可能な回路・アーキテクチャ／デバイス・材料技術の開発
+脳の細胞レベルの模倣に利用するデバイス・材料とし ては、シナプスの接続状態を変更したり、一定時間
+保持したりする機能が必要である。また、3次元的な接続を可能とするデバイス・材料技術、回路の接続を
+自由に変更する機能を持つデバイスも重要になる。回路・アーキテクチャへの研究開発とし ては、現在のデジ
+タ ル回路よりも大幅な低消費電力化が求められる。すでに、不揮発性メ モリやメ モリ スタを用いたニューラル
+ネッ トワークの試作が行われているが、短期的にはこれらのデバイスの特性向上、デバイス特性を活かしたア
+ナログ メ モリ、低電力アナログ回路、スパイ キングニューロン回路のスパイ クタイ ミング制御などの技術開発
+が必要である。長期的には新たな脳の情報処理モデルから要求されるデバイス・材料特性の実現にむけた、
+新たな物理現象、ノ イズ、ゆらぎなどを積極的利用、その低電力制御回路、3次元配線技術、記憶と処理の
+一体化に必要なインメ モリコンピューティ ング技術などの開発に取り組む。
+（3)脳型AIアクセラレータの開発
+上記の新たな脳の数理モデル・情報処理技術と超低消費電力回路・デバイス・材料技術を融合させるこ と
+により、短期的にはニューロモルフィックコンピューティングおよびリザバーコンピューティングのハードウェ
+ア技術の高度化を進め、深層学習チップに比べた優位性を示す。長期的には脳の高次機能を模した新たな数
+理モデル・アルゴリ ズムに対応したアクセラレータの設計やそれを効率的に利用するためのソフ トウェアなど
+に関する研究開発を行う。特に、重要な応用領域と考えられるサービスロボッ トなどの実空間上のエッジ応
+用に向けて、多くのセンシング情報の中から重要な情報を選択し て認識・判断し、判断した結果を複数のアク
+チュエータに効率的に伝えるなど、これまでのAI処理になかった機能の開発が必要である。さらに、短期的
+または長期的に開発する脳型AIアクセラレータの性能や潜在的な能力を社会に示すために、特定の応用を想
+定したフラグシップチップを開発していくことも重要である。
+本研究開発を進めていく ためには、魅力的な応用領域（例えばロボッ ト）を決めて長期的な視野で我が国
+が先導するシナリオを描き、脳科学、数学・数理科学、情報科学、ナ ノテク・材料技術の異分野の研究者が
+日々議論できる環境の整備、研究開発拠点の構築が必要である。また、産学間の連携および海外との連携に
+よるチップ作製や応用領域探索のエコシステムの構築、得られた知識や技術の蓄積、コア技術の知財化・国
+際標準化も含めたオー プン・クロー ズ戦略の策定、などを進めていく必要がある。さらに、日本の研究者の
+裾野を広げるために、異分野の学会間の連携を進め、新たなコミュニティの形成や他分野に興味を持つ人材
+の育成が重要である。これらを後押しし ていく ためには、ファンディ ングが重要であり、短期目標と長期目標
+を設定し、関連府省が連携した施策の推進が望まれる。
+ii
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+
+===== PDF_PAGE 5 =====
+iii
+CRDS-FY2020-SP-04 Center for Research and Development Strategy, Japan Science and T echnology Agency
+STRATEGIC PROPOSAL　　Brain-Inspired AI Accelerator - Realizing flexible advanced information processing with ultra-low power consumption -
+Executive Summary
+“Brain-Inspired AI Accelerator - Realizing flexible advanced information processing with
+ultra-low power consumption -” is a research and development strategy to realize a dedicated
+processor specialized for artificial intelligence (AI) processing (brain-inspired AI accelerator)
+that can perform flexible and advanced information processing, such as efficient learning,
+recognition and understanding of the external world and environment, and decision making
+based on predictions, which are required for next-generation artificial intelligence technology,
+with ultra-lower power consumption, which is almost as low as the energy efficiency of the
+human brain. Here, research and development of new information processing models for the
+structure and function of neurons and neural circuits, algorithms based on these models, new
+circuits and architectures capable of high-speed and ultra-low-power operation, optimal devices
+and materials for such an operation, and software to eﬃciently operate such hardware will be
+promoted in combination through strong collaboration with brain science, mathematics and
+mathematical science, device and material technology, and information science. This will enable
+a brain-based AI accelerator, as well as the creation of new industries, and the strengthening
+of artificial intelligence research, brain science research, and materials, devices, and circuits
+research.
+In recent years, AI technologies such as machine learning and deep learning have been
+used in various applications such as image recognition, speech recognition and translation,
+automatic driving, disease diagnosis, new material exploration, and device design. These
+applications require advanced information processing similar to that of human beings, such as
+recognition, prediction, and judgment, which are qualitatively diﬀerent from simple calculations,
+programmed operations, image processing, and control that computers have performed to
+date. Therefore, AI processing is expected to advance further. In addition, while AI processing
+is mainly done in the cloud with abundant computing power, AI processing at the edges, such
+as in automobiles, smartphones, and IoT devices, will become more important in the future.
+Currently, cloud servers that perform AI processing consume a huge amount of power (several
+MW). T o perform more advanced AI processing in the cloud and AI processing at the edges,
+where limited power is available, it is necessary to drastically reduce the power consumption
+of computer hardware. However, it is becoming more and more diﬃcult to achieve both such
+advanced AI processing and low power consumption. Semiconductor technology/CMOS
+integrated circuits, which have been the driving force behind the increase in computing power
+and the reduction in power consumption of computers, are facing the limits of microfabrication,
+and it is becoming diﬃcult to improve the performance, power consumption, and eﬃciency of
+conventional (Neumann-type) general-purpose computers. Since AI technology to date has been
+realized by software on these conventional general-purpose computers, it is diﬃcult to expect
+dramatic improvement of performance or significant reduction of power consumption. On the
+other hand, machine learning and deep learning have been inspired by simplified models of brain
+functions and have made progress. Brain science itself is also advancing in research to elucidate
+
+===== PDF_PAGE 6 =====
+the causes of brain diseases, and the functions of the brain at various levels, from the molecular
+level to cells (neurons), neural networks, and the entire brain, are being clarified. For this reason,
+it will be important in the future to use the knowledge of brain science to obtain hints for new
+information processing from the structure and functions of the human brain, or to mimic these
+hints to develop hardware (accelerators, chips) specialized for AI processing, aiming for flexible
+and advanced information processing and low power consumption.
+In the U.S., DARPA's SyNAPSE project was launched in 2008 with the goal of building a
+system with the same volume, functionality, and energy consumption as the human brain
+using electronic circuits. In Europe, the development of neuromorphic computers and next-
+generation neuromorphic chips has been underway since 2013 in a sub-program of the Human
+Brain Project to build models of the brain. While these efforts are noteworthy to apply the
+findings of brain science to advanced information processing, their performance is not yet
+suﬃcient to demonstrate their superiority and attractive applications. In Japan, the Grant-in-Aid
+for Scientific Research on Innovative Areas, "Correspondence and Fusion of Artificial Intelligence
+and Brain Science" and "Brain information dynamics underlying multi-area interconnectivity and
+parallel processing", as well as the WPI International Research Center for Neurointelligence
+(IRCN) were launched in 2016. In addition, in 2019, the AI Strategy 2019 was formulated, which
+indicated device architecture and AI chip technology as necessary research and development
+target. Thus, as new trends and demands for hardware-based AI technology emerge, we
+should strategically promote the research and development of brain-inspired AI accelerator
+technologies that meet the demands for low power consumption and high efficiency of AI
+processing and learning in the short term, and for intuitive recognition and real-time decision
+making in the long term, and that demonstrate clear advantages over conventional technologies.
+Research and development issues to be addressed in the future are listed below. We will
+build new mathematical models based on the knowledge of brain structure and information
+processing functions, create algorithms for brain-type AI, and lead them to the development
+of specific circuits and architectures, as well as devices and materials. At the same time, we will
+focus on devices and materials that have characteristics similar to or inspired by the functions
+of lower-order structures such as the molecular and cellular levels of the brain, and create new
+circuits, architectures, and algorithms from them. It is important to integrate these two flows
+into the development of a brain-inspired AI accelerator.
+(1) Research and development of new mathematical models and algorithms for information
+processing using the knowledge of brain science
+We will develop new mathematical models and algorithms for information processing based
+on our knowledge of brain structure, activity, and function at the cellular level, neural circuit
+level, brain tissue level (e.g., hippocampus), and overall brain network level. In the short term, we
+will focus on the lower levels, neurons and synapses, and neural circuits, and in the long term,
+on the higher levels of the brain architecture and the entire brain, to understand structural
+iv
+CRDS-FY2020-SP-04Center for Research and Development Strategy, Japan Science and T echnology Agency
+STRATEGIC PROPOSAL　　Brain-Inspired AI Accelerator - Realizing flexible advanced information processing with ultra-low power consumption -
+
+===== PDF_PAGE 7 =====
+connections, dynamic activities, and signal transmission mechanisms, and to use mathematical
+sciences such as dynamical systems theory, network theory, and topology to construct
+mathematical models and algorithms for information processing inspired by them. The models
+created here do not necessarily have to accurately reflect the actual information processing in
+the brain, but it is important that new information processing ideas and various models emerge.
+(2) Development of circuits/architectures and device/material technologies capable of storage
+and operation with ultra-low power consumption
+Devices and materials to be used to mimic the cellular level of the brain need the ability to
+change the state of synaptic connections and hold them for a certain period of time. Device and
+material technologies that enable three-dimensional connections, and devices with the ability to
+freely change circuit connections will also be important. Research and development of circuits
+and architectures will require significantly lower power consumption than current digital circuits.
+Prototypes of neural networks using non-volatile memory and memristors have already been
+developed. In the short term, it is necessary to improve the characteristics of these devices,
+and to develop technologies for analog memories that take advantage of device characteristics,
+low-power analog circuits, and spike timing control for spiking neuron circuits. In the long term,
+to realize the device and material characteristics required by the new information processing
+models of the brain, we will actively utilize new physical phenomena, noise, and fluctuations,
+and develop low-power control circuits, three-dimensional wiring technology, and in-memory
+computing technology necessary for integrating memory and processing.
+(3) Development of brain-inspired AI accelerator
+By integrating the new brain mathematical models and information processing technologies
+described above with ultra-low power circuits, devices, and materials technology, we will
+advance the hardware technology of neuromorphic computing and reservoir computing in the
+short term, and show its superiority over deep learning chips. In the long term, we will conduct
+research and development on the design of accelerators for new mathematical models and
+algorithms that mimic the higher functions of the brain, and software for eﬃcient use of these
+accelerators. In particular, for edge applications in real circumstances, such as service robots,
+which are considered to be an important application field, it is necessary to develop functions
+that have not been available in AI processing to date, such as selecting important information
+from a large amount of sensing information, recognizing and judging it, and efficiently
+communicating the results of the judgments to multiple actuators. Furthermore, it is important
+to develop flagship chips for specific applications to demonstrate to society the performance
+and potential capabilities of brain-inspired AI accelerators to be developed in the short or long
+term.
+T o promote this research and development, it is necessary to determine an attractive
+application field (e.g., robotics), draw up a scenario in which Japan will take the lead from a
+long-term perspective, establish an environment in which researchers in diﬀerent fields of brain
+v
+CRDS-FY2020-SP-04 Center for Research and Development Strategy, Japan Science and T echnology Agency
+STRATEGIC PROPOSAL　　Brain-Inspired AI Accelerator - Realizing flexible advanced information processing with ultra-low power consumption -
+
+===== PDF_PAGE 8 =====
+science, mathematical science, information science, and nanotechnology/materials technology
+can discuss on a daily basis, and build a common research and development base. It is also
+necessary to establish an ecosystem for chip fabrication and application field exploration
+through collaboration between industry and academia as well as with overseas partners,
+accumulate the knowledge and technologies obtained, and formulate an open/closed strategy
+that includes intellectual property and international standardization of core technologies.
+Moreover, to broaden the base of researchers in Japan, it is important to promote cooperation
+among academic societies in different fields, form new communities, and develop human
+resources who are interested in other fields. Funding is important to boost these eﬀorts, and it
+is desirable to set short-term and long-term goals and promote measures in cooperation with
+relevant government ministries.
+vi
+CRDS-FY2020-SP-04Center for Research and Development Strategy, Japan Science and T echnology Agency
+STRATEGIC PROPOSAL　　Brain-Inspired AI Accelerator - Realizing flexible advanced information processing with ultra-low power consumption -
+
+===== PDF_PAGE 9 =====
+目次
+1 研究開発の内容 ............................................................... .............. 1
+2 提案を実施する意義 ............................................................... ...... 4
+2. 1 現状認識および問題点 ......................................................... 4
+2. 2 社会・経済的効果 ............................................................... . 10
+2. 3 科学技術上の効果 ............................................................... . 12
+3 具体的な研究開発課題 ............................................................... .. 16
+3. 1 脳科学の知見を活用した情報処理の
+新たな数理モデル・アルゴリズムの研究開発 ...................... 17
+3. 2 超低消費電力で記憶・演算可能な回路・
+アーキテクチャ／デバイス・材料技術の開発 ...................... 21
+3. 3 脳型 AI アクセラレータの開発 ............................................ 23
+4 研究開発の推進方法および時間軸 .............................................. 29
+4. 1 脳科学、情報科学、数学・数理科学、
+ナノテク・材料との密な連携 ............................................... 29
+4. 2 脳科学・数理モデルからと材料・デバイス・
+回路から攻める体制 ............................................................. 31
+4. 3 技術・知識の蓄積とチップ化のエコシステムの形成 .......... 31
+4. 4 産業応用を見据えた新たなコミュニティの形成、
+産学連携、国際連携 ............................................................. 32
+4. 5 人材育成 ............................................................... ............... 34
+4. 6 時間軸 ............................................................... ................... 35
+付録1 検討の経緯 ............................................................... ........................ 39
+付録2 国内外の状況 ............................................................... ..................... 43
+付録3 専門用語解説 ............................................................... ..................... 47
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+vii
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+
+===== PDF_PAGE 10 =====
+
+
+===== PDF_PAGE 11 =====
+1 研究開発の内容
+脳科学の知見を情報処理のハードウェア技術とし て工学的に利用するこ とで、次世代のAI技術とし て求め
+られる効率的な学習、外界の直感的な理解、予測、判断、意思決定などの柔軟で高度な機能を、低消費電
+力で実行できる専用のプロセッサ（脳型AIアクセラレータ）の研究開発を行う。ここでは、ニューロン・シナ
+プスレベルや神経回路レベルでの構造・機能を模倣する 「ニューロモル フィ ック （neuromorphic） 」 、 「ニュー
+ロミメティ ック（neuromimetic） 」 、脳にヒン トを得る「ニューロインスパイ ヤ―ド（neuro-inspired） 」 、
+脳の高次機能の知見を反映する「ブレインモル フィ ック（brainmorphic） 」 、などの言葉を厳格に区別せず 、
+これらによるハードウェア（チップ）全体を総称し て「脳型AIアクセラレータ」という言葉を用いている。そ
+の実現に向けて今後取り組むべき研究開発とその推進の流れの概念図を図1-1に示す 。脳科学における脳の
+構造や情報処理機能の知見から新たな数理モデルを構築し、それを脳型AIのソフ トウェア・アルゴリ ズム、
+回路・アーキテクチャ、さらにはデバイス・材料の開発に繋げていく。それと同時に、脳の分子レベル・細胞
+レベルなど低次の構造・機能に類似あるいはヒン トを得た特性を持つデバイス・材料に注目し、そこから新た
+な回路・アーキテクチャ、脳型AIのソフ トウェア・アルゴリ ズムを創出し ていく。これら2つの方向の研究開
+発が相互に影響を与え、新たな発想や連携を促進し ていく こ とで、新たな脳型AIアクセラレータの研究開発
+を進めていく。この中で今後取り組むべき具体的な研究開発課題とし ては以下の3項目になる。
+（1) 脳科学の知見を活用した情報処理の新たな数理モデル・アルゴリズムの研究開発
+脳の情報処理機能を模倣・ヒン トにした脳型AIアクセラレータの実現には、脳の情報処理の数理モデルと
+それに基づく アルゴリ ズムの構築が重要である。脳の構造や機能には、低次レベル（細胞（ニューロン・シ
+ナプス）レベル、 神経回路レベル） 、 高次レベル（脳組織（海馬など）レベル、 脳全体ネッ トワーク）があるが、
+図1-1 脳型AIアクセラレータ研究開発の概念図
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+1
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の内容
+1
+
+===== PDF_PAGE 12 =====
+短期的には高効率な学習などを目標にし て脳の低次レベル、長期的には直観的理解やリアルタイ ムの判断な
+どを目標に脳の高次レベルを対象に、構造的なつながり、ダイ ナミ ックな活動、信号の伝達メカニズムなどの
+知見に触発された情報処理の数理モデル・アルゴリ ズムを構築する。これには、これまでの脳科学の様々な
+知見を情報処理の視点で見直し てみるこ とや、最新の脳科学の研究成果について脳科学者と議論・意見交換
+をして理解を深めることが重要である。
+脳科学の知見を数学・数理モデルで記述する例とし ては、ニューロンのスパイ ク発火を非線形の微分方程
+式を扱う力学系理論、脳全体のマクロな活動の時間発展を統計力学的に記述するものなどがある。脳活動の
+ダイ ナミクスが数学により抽象化できると、同じような複雑系からなる様々な物理系との比較が可能となり、
+物理リザバーコンピューティ ングなどの発展にも繋がる。また、トポロジー・ホモロジーの手法は脳情報ネッ
+トワーク全体の時系列活動を大域的に調べるこ とができ、特にネッ トワーク情報のトポロジー的な特徴を抽出
+し てマップ化するパーシステン トホモロジーは、脳活動のネッ トワーク的な特徴を抽出する有益な方法である
+こ とから、その時間発展の検討ができる手法の開発が望まれる。ただし、ここで創出するモデルは、実際の
+脳の情報処理機能を正確に反映させているかどうかを議論する必要はなく、正確に再現するよりも多様な数
+理 モ デ ル が 出 てくること が 望 まし い 。
+（2) 超低消費電力で記憶・演算可能な回路・アーキテクチャ／デバイス・材料技術の開発
+脳の細胞レベルのニューロン・シナプスを模倣した代表的なものとして、スパイキングニューラルネットワー
+クがあり、以前よりデジタ ル回路を用いて研究開発が進められているが、さらなる高効率化と低消費電力化と
+ともに、大規模化のための新たなデバイス・材料の開発、およびそれを効果的に利用できる回路技術の開発
+を行う。デバイス・材料技術とし ては、相変化メ モリ（PRAM） 、磁気抵抗メ モリ（MRAM） 、抵抗変化メ モ
+リ（ReRAM） 、強誘電体メ モリ（FeRAM）などの不揮発メ モリやメ モリ スター（memristor）を用いて、
+シナプスの接続状態を変更したり、一定時間保持したりする機能が必要である。また、3次元的な接続を可
+能とするデバイス・材料技術も必要である。さらに、神経回路レベルを模倣する場合には、回路の接続を自
+由に変更できるような機能を持つデバイス（例えば、原子スイ ッチ）も重要になる。
+深層学習よりも簡単な構造で時系列データを取り扱い易いものとし て、リザバーコンピューティ ングが注目
+されているが、その中でも非線形の物理現象を用いた物理リザバーコンピューティ ングでは、望まれる物理特
+性に合ったデバイス・材料（スピンデバイス、強誘電体トランジスタ（FeFET） 、フォ トニックデバイスなど）
+の開発を行う。
+さらに、新たにつく られる脳のモデルがデバイス・材料に要求する特性によっ ては、現状のデバイス・材料
+で使われている物理現象では実現できないものもあると考えられる。例えば、ニューロン・シナプスを模倣す
+るデバイスとし て、スパイ ク状の出力特性を持つものや、3次元的に針（導線）が伸びていく もの、結合の強
+さが信号で変わっ ていく ものなどが期待される。新たな物理現象や、ノ イズ、ゆらぎなどを積極的に利用した
+デバイスの研究も必要である。
+回路・アーキテクチャへの研究開発とし ては、脳科学の知見から数理モデル、アルゴリ ズムを経て要求され
+るものと、新デバイス・材料側からその動作に適切なものとし て要求されるものがある。いずれにし ても、多
+少計算精度が落ち ても現在のデジタ ル回路よりも低消費電力化が求められるため、超低電圧回路、アナログ
+不揮発メ モリ回路、ス ト カスティ ック演算回路などの新たな回路技術を開発する必要がある。脳の記憶と処理
+の一体化という面に注目すると、現在の深層学習チップで研究が盛んになっ ているインメ モリコンピューティ
+ング技術の進展が望まれる。
+2
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の内容
+1
+
+===== PDF_PAGE 13 =====
+（3) 脳型AIアクセラレータの開発
+上記の新たな脳の数理モデル・情報処理技術と超低消費電力回路・デバイス・材料技術を融合させるこ と
+により、脳型AIアクセラレータの開発を行う。短期的にはアクセラレータの有力な候補とし てこれまで研究開
+発が進められてきたニューロモルフィックコンピューティングや、リザバーコンピューティングの高度化を進め
+るとともに、長期的には脳の高次機能による新たな数理モデル・アルゴリ ズムに対応したコンピューティ ング
+（高次脳型コンピューティ ング）のチップ設計に関する研究開発を行う。これまでの脳の神経細胞・ ネッ トワー
+クのモデルに基づく ニューロモル フィ ックコンピューティ ングや、リザバーコンピューティ ングの高効率化・低
+消費電力化を進めるこ とで、従来の深層学習チップよりも効率的な学習や低消費電力化が可能なこ とを示す。
+また、脳の高次機能を模倣したアクセラレータの設計・開発により、身体・環境の把握と運動制御、予測・
+判断をリアルタイ ムに行えるこ とを示す。実空間・ エッジ応用に向けた新たなAI技術とし て、 センサやアクチュ
+エータ との接続技術、応用・利用場面に従っ てアクセラレータへの最適なタスクの割り当てを可能とするソフ
+トウェア技術などの研究開発も行う。
+さらに、脳型AIアクセラレータの性能や潜在的な能力を社会に対し てアピールできるように、特定の応用
+を想定したフラグシップチップを開発し て、アクセラレータ開発の進捗具合や実使用への段階が分かるように
+し ていく。これにより、企業や一般の人たちも目標に対する現状の技術レベルを判断し、その将来の可能性を
+知ることができる。
+上記の研究開発を効率的に進めていくためには、長期的な視野に立ち、脳科学、数学・数理科学、情報
+科学、ナ ノテク・材料技術の異分野の連携を促進し て新たなコミュニティを形成するこ とや、魅力的な応用領
+域（例えばスマートロボッ トなど）を決めて、 産業界を巻き込み我が国が世界に先んじて脳型AIアクセラレー
+タの基盤技術開発と産業化を進められるシナリオを描く こ とが重要になる。そのためには、脳科学の知見を新
+たな情報処理技術、次世代の人工知能技術、チップ化技術に活用するこ とを強く意識し、コンピュータやプ
+ロセッサ開発に携わった経験を持つリーダーが必要であり、その元で脳型AIアクセラレータの開発を目指す
+異分野連携のチーム編成が重要である。ここでは、日々議論ができる実行体制の構築、この体制の中で得ら
+れた知識や技術の蓄積、コア技術の特許化と国際標準化の戦略、海外との連携によるチップ化や応用領域の
+探索などのエコシステムの構築、異分野の学会間の連携と新たなコミュニティの形成、他分野に興味を持つ
+人材や次世代のリーダーとなる人材の育成などが必要になる。この研究開発体制を支える上では、研究開発
+拠点の形成や効果的なファンディ ングが重要である。これまで行われてきた脳型AI関係の新学術領域、世界
+ト ップレベル研究拠点プログラ ム（WPI）などの研究開発拠点、 JSTのCREST・ さきがけ「革新的コンピュー
+ティ ング」 、NEDOプロジェク ト「AIチップ・次世代コンピューティ ング」などの研究成果を活用したり、こ
+れらと連携したりするこ とのできる仕組みが必要である。研究課題、短期的目標および長期的目標を関係府
+省で共有し、新たな学術的成果や技術を生み出すと ともに、企業の積極的な参加を促し実用化・産業化に結
+び付けられる府省連携による施策の推進が望まれる。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+3
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の内容
+1
+
+===== PDF_PAGE 14 =====
+2 提案を実施する意義
+2.1 現状認識および問題点
+（1)柔軟な高度情報処理と低消費電力化の要求
+画像認識、音声認識・翻訳、自動運転、病気診断、新材料探索、デバイス設計など様々な用途に人工知能
+（AI）技術が用いられるようになっ てきた。特に、2010年ごろから機械学習・深層学習を用いたAI技術の
+発展が著し く 、将棋や囲碁でプロ棋士を打ち負かす強さ（アル ファ碁）を示したほか、自動運転、顔認証、
+病理画像解析、バイオインフォマティ クスやマテリアルズ インフォマティ クスなどのデータ科学応用、ロボッ ト
+実験など、様々な分野で利用されるようになってきた。これらの用途は、これまでコンピュータが行ってきた
+単純な計算やプログラ ムされた演算・画像処理・制御とは質的に異なる。今後も、機械学習・深層学習の高
+性能化・高効率化が求められると ともに、さらに現状のAI技術では難しい高度な情報処理への期待も高まっ
+ている。例えば、少ないデータから効率的に学習するこ とや、数少ない例と過去の記憶から素早く新しい概
+念を学ぶこ と、物事を一般化し て他の似たタスクに転移させて実行する学習（転移学習） 、風景を個別の物体
+に分解し互いの関係を推察するといった実世界についての直感的な理解、周りの環境の変化とこれまでの経
+験やシミュレーションからこれから起こるこ とを予測するこ と、そこから適切な判断や柔軟な意思決定をする
+こ となどは、まだ十分にはできていない。これらの柔軟で高度な情報処理を可能とする次世代のAI技術に関
+し ての問題点や具体的な研究開発課題については、CRDSの戦略提言「第4世代AIの研究開発 ―深層学習
+と知識・記号推論の融合―」 （CRDS-FY2019-SP-08）に詳細に記載されている。
+また、今後のAI技術の利用とし て期待されるのは、Society 5.0の実現、あるいは高度なサイ バー フィ ジカ
+ルシステム（CPS）の構築であるが、クラウ ド－エッジ間の回線負荷を軽減すると ともに、エッジでのリアル
+タイ ム処理を要する用途に対応するためにも、クラウ ド上のサイ バーでの情報処理だけでなく、実空間（フィ
+ジカル空間）上のエッジでの情報処理が重要になっ て く る。また、クラウ ドに上げずにエッジ側で処理するこ
+とは、健康情報など個人に紐付く情報をそのままクラウ ドに上げるこ とで生じるプライ バシーの問題等の負の
+影響を減らす上でも重要である。エッジにおいては、ロボッ トや自動車、IoT機器などへのAI機能の搭載が
+重要になっ て く ると考えられ、上記のAI機能に加え て、個々の応用に合わせた個別学習、多種多様なセンシ
+ング情報を統合した周辺環境および身体状態の認識、周辺環境変化の予測、リアルタイ ムの自然言語処理、
+危険回避や行動目的に合わせたリアルタイ ムの判断、アクチュエータへの指令など身体の自律的な制御などの
+新たなAI機能も必要になっ て く る。このような実空間での利用に際し ては、高度な情報処理機能の面だけで
+なく、限られた電力、バッテリー容量での使用といった面も考慮し ておく必要があり、ソフ トウェアだけでなく
+ハードウェアも含めた検討が不可欠になる。これに関連し て、戦略プロポーザル「IoT時代のセンサ融合基
+盤技術の構築」 （CRDS-FY2019-SP-10）がセンシングの観点からエッジでのAI処理の必要性について言及
+している。
+このような次世代AI技術の研究開発に向けては、いく つかの方法が考えられる。現在の深層学習に代表さ
+れる機械学習の手法を基本にし てそこに新たな手法・技術を付加し て高度化する方法、人間の脳を模倣した
+システムを構築する方法がある。その他にも、量子コンピュータの利用や、自然の中で計算される過程の利用
+（自然計算）などの新たなコンピューティ ングアルゴリ ズムの利用なども考えられる。これらの中には、次世
+代AI技術に対する適合性や優位性の根拠になるものが示されていないものもあるが、今後の動向には注意し
+ておく必要がある。
+現在の機械学習の主流である深層学習においては、層の数や隠れ層の性質、各層の重みの付け方、逆伝
+4
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+提案を実施する意義
+2
+
+===== PDF_PAGE 15 =====
+搬などの工夫といったパラ メーターチューニングだけでなく、トランスフォーマー（Transformer） 、自己教
+師あり学習 （Masked Modeling） 、 深層生成モデル （Deep Generative Model） 、 ニューラルODE （Neural
+Ordinary Differential Equations）などの革新的なモデル・手法が次々に発表されており、認識や学習の
+精度向上は今後も図られていく と思われる。しかし、深層学習ネッ トワークの根本的な変更をしない限りは効
+率的な学習・転移学習や外界の直感的理解、想像・予測・判断といった高度な機能の実現は容易ではない
+と考えられ、他の機械学習についての検討も必要である。例えば、再帰型ニューラルネッ トワーク（RNN:
+Recurrent Neural Network）の一種であるリザバーコンピューティ ングは、重みをランダ ムに固定し、出力
+部の重みだけを学習で決めるこ とで、時間に依存する情報処理が可能になっ ている。この方式はネッ トワーク
+の構造を簡素化し、非線形の様々な物理現象を利用するこ とができ、時系列予測や音声認識などの時系列の
+情報処理への展開が期待されるこ とから研究開発が活発になっ ており、次世代AI基盤技術の一つとし て注目
+すべきものである。
+人間の脳の単純な情報処理モデルである深層学習・機械学習の限界が見え始めている状況ではあるが、実
+際に高度な情報処理を行っ ている人間の脳の構造や機能にさらに学ぶ（模倣する）こ とが一つの確実な方法
+である。深層学習の基礎はニューラルネッ トワークであり、 これは脳にある膨大な数の神経細胞（ニューロン）
+と結合部位 （シナプス） のつながり、 および入力情報 （信号） が一定の値を超えた際のニューロンの発火によっ
+て信号を伝搬するという、脳の仕組みを基にし ている。最近では実際の脳のシナプスの活動に近いモデルとし
+て、スパイク信号の頻度やタイミングなどで表現するスパイキングニューロンモデルが注目されている。そのモ
+デルに沿ったニューロモル フィ ックチップが試作されるようになっ てきており、深層学習に迫る精度を高速・
+高効率で行ったこ とや、教師無し学習を非常に少ない回数で高精度にできたこ となど、深層学習を超えるよう
+な結果も報告されるようになってきている。しかし、まだ人間の脳に比べるとニューロン数とシナプス数が 3
+桁ほど低く、ニューロン 1 個あたりのシナプス数も少ないといった問題もあり、従来のコンピュータシステムに
+対し て優位性を示すためにはさらなる大規模化、3次元的なシナプス接続の実現などが必要になる。また、こ
+のような脳の細胞レベル、神経回路レベルの研究だけでなく、大脳皮質や海馬などの脳組織、脳のネッ トワー
+ク全体の知見から情報処理モデルを学ん で脳全体の機能をソフ トウェアで再現しよう という研究も行われてい
+る。例えば、認知に関わる大脳皮質などの複数のニューロンのダイ ナミ ックな活動を計測し てふるまいを抽出
+し、そこから学習のモデル、意思決定のモデルが構築されている。このように、次世代AI技術に求められる
+AI技術の高度化に向けては、脳の構造や機能を模倣あるいはヒン トを得て新たな情報処理モデルを構築し て
+いくという流れに注目しておくことは非常に重要である。
+一方で、現在の深層学習・機械学習を基本とするAI技術においては、消費電力の問題も顕在化し ており、
+処理の高効率化・低消費電力化の要求が高まっ ている。現在のAI技術は主に高性能サーバー上でソフ トウェ
+アにより深層学習（畳み込みニューラルネッ トワーク （CNN: Convolutional Neural Network）など）を
+行う こ とで実現されている。膨大な数のデータを学習させて、画像認識などの処理を行っ ており、膨大な電力
+を消費し ている。例えば、2018年から稼働した人 工知 能技術開発のための 高速 計算基盤「ABCI（AI
+Bridging Cloud Infrastructure） 」は積和演算を高速に行うGPUを大量に実装し ている世界最大級の超省
+電力のAIインフラであるが、それでも最大2 .3MWの電力を消費し ている。今後の、AI応用の大幅な拡大の
+ためには、システムの拡張を図る必要があるが、冷却システムの上限を考えると、全消費電力の大幅な増加
+は困難と考えられる。一方、詳細は後で述べるが、現在の情報処理性能向上・低消費電力化の担い手である
+半導体集積回路はすでに加工寸法が10nm程度になっ てきて微細化の限界に直面し ており、従来のCMOS
+デジタ ル回路の微細化・高集積化によるプロセッサの大幅な高性能化・低消費電力化は難し く なっ てきている。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+5
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+提案を実施する意義
+2
+
+===== PDF_PAGE 16 =====
+このため、従来のノ イマン型のプロセッサだけでなく、深層学習用のプロセッサも含めて、高度な次世代のAI
+の機能を低消費電力で実行できる専用のプロセッサ （アクセラレータ） が必要であり、 アルゴリ ズムや回路アー
+キテクチャ、 デバイス ・材料などの技術レイ ヤーに跨る新たなコンピューティ ング技術の研究開発が重要になっ
+てきている。
+最近では、TPU（Tensor Processing Unit）など深層学習専用のプロセッサを開発し て、処理速度の向
+上と消費電力削減が行われるようになっ てきたが、大幅な消費電力低減には至っ ていない。深層学習用のプ
+ロセッサの高速化・低消費電力化に関し て、 研究開発レベルでは、 高い精度で演算が可能な32ビッ トや64ビッ
+トのデジタ ル回路の代わりに、4ビッ ト、2ビッ トなど演算精度を落としたデジタ ルCNN回路や、アナログ回
+路を使ったもの、様々な物理現象を利用したリザバーコンピューティ ングなどが報告されるようになっ て、低
+消費電力化の研究開発が活発になっ てきている。このような研究開発において、従来のデジタ ル技術だけ、あ
+るいはアナログ回路との併用による低電力化には限界も見え てきており、不揮発メ モリなど不揮発機能を持っ
+たデバイス・材料の積極的な利用や、回路を大幅に簡単化・低電力化するこ とが可能な物理リザバーコン
+ピューティ ングなどの研究開発が重要になっ てきている。
+このような低消費電力化の要求は、実空間上のエッジでのAI処理にと っ ては、さらに重要である。限られ
+た使用電力、バッテリー容量の中でのAI処理は、クラウ ド・サーバーで利用されているCPU+GPUベー スの
+ものよりも数桁の消費電力低減が必要である。現状での深層学習の利用を考えた時でも、計算負荷の大きな
+処理を専用ハードウェアであるアクセラレータで実行するこ とが必要であり、次世代の脳を模倣したAI技術
+においても効率的な演算を実行するためには応用領域を特定した専用のアクセラレータ という形態が必須にな
+る。
+以上述べたように、次世代のAI技術とし ては、効率的な学習、外界の直感的な理解、予測、判断などの
+柔軟で高度な情報処理と低消費電力化の両立が必要になっ てきており、脳の構造や機能を模倣したり、演算
+のヒン トを得たりするこ とで、新たな情報処理のモデルの構築、そこからの新たなアルゴリ ズム・ソフ トウェ
+アの研究とともに、計算負荷の大きなところを専用のハードウェアで実行するアクセラレータの開発を進めて
+いく こ とが重要になっ てきている。特に、短期的な視点では、現在クラウ ドやサーバー上のソフ トウェアで実
+行し ている深層学習などによるAI処理の低消費電力化や学習の高効率化、エッジにおける効率的な学習と推
+論の桁違いの低消費電力化の問題に対処するように、スパイ キングニューロンモデルに基づく ニューロモル
+フィ ックコンピューティ ングや物理リザバーコンピューティ ングなどの研究開発を加速し て、脳型AIアクセラ
+レータを実現し ていく こ とが必要になっ ている。また長期的な視点では、AI技術とし てまだ実現されていない
+外界の直感的認識や予測、判断などの課題に対し て、脳の組織や全体のネッ トワークのダイ ナミ ックな活動の
+高精度計測により高次機能の新たな知見の獲得と理解を深め、例えばゆらぎ学習のような新たな情報処理モ
+デルを構築し、それに対応する回路・アーキテクチャ 、デバイス・材料を開発し、さらに柔軟で高度な情報
+処理が可能な新たな脳型AIアクセラレータへと繋げていく こ とが重要である。
+（2)脳科学の進展
+深層学習をはじめAI技術は、人間の知能の特性や振る舞いから学ぶこ とで発展し てきた。脳の仕組みの解
+明を目指す脳科学は、生物学的に脳を理解しよう とする実験的研究と、脳のアルゴリ ズムやモデルを研究す
+る理論的研究に分かれている。実験的研究は、観測する構造や現象のスケールが分子レベルから個体レベル
+まで多くの階層に渡るという大きな特徴がある。近年の計測技術の進歩とともに、脳の分子・細胞的理解が
+進み、さらに理論研究と実験的研究が相互に知見をやり とりするこ とによっ て、脳科学研究は大き く進展し、
+6
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+提案を実施する意義
+2
+
+===== PDF_PAGE 17 =====
+分子レベルからニューロン・細胞、神経ネッ トワーク、脳全体に至る様々な階層での脳の機能が明らかになり
+つつある。1980-90年代に日本で行われた、実験科学に基づく小脳の比較的単純な神経回路についての
+フィードバック制御理論研究は実験・理論脳科学の融合研究の嚆矢のひとつだったが、 深層学習の時代になっ
+て、視覚情報処理や物体認識などの様々な脳の高次機能を模した深層学習が提唱されている。2016年に脳
+の活動と畳み込みニューラルネッ トワークを対応づける研究が、2020年には自然言語処理に対応した脳の活
+動の研究が発表された。 ［出典：調査報告書, ドライ・ウェッ ト脳科学, 2020. https://www.jst.go.jp/crds/
+pdf/2019/RR/CRDS-FY2019-RR-06.pdf］
+神経細胞内部の構造を使った計算原理・デバイスの可能性が示唆されている。神経細胞の樹状突起内の情
+報処理から得られた理論モデルを使い、主成分分析や独立成分分析などが分散的に効率よ く行えるこ とが理
+論的に示された。ニューロンへの入力に単純に係数を掛けて足し合わせたものが閾値を超えるとシグナルを出
+力するというのが深層学習で使われているニューロンモデルであるが、実際のニューロンはもっと複雑な情報
+処理をし ている。樹状突起から入力情報が細胞体に集約した結果、細胞体で活動電位が発生すると、その電
+位が樹状突起側へ逆方向に情報が戻され（バックプロパゲーション） 、樹状突起の興奮状態を修飾するこ とが
+わかっ ている。これを理論に組み込ん で、樹状突起の枝ごとに行われる局所的な計算の結果とし て最終的な
+ニューロンの出力が決定され、さらにニューロンの中で出力側から入力側へのアナログのフィードバックも大
+きな影響をもつとするモデルが提唱されている。すなわち、一つのニューロンの中でリカレント的な振る舞い
+がある。こ う した個々のニューロンレベルの研究により、より脳の情報処理に近い効率のよい素子開発が有効
+ではないかと考えられている。
+脳の細胞レベル、局所神経レベルの活動の計測に関する具体的な研究とし ては、二光子顕微鏡技術、超小
+型内視鏡システム、蛍光プローブ技術などを用いて、生きた脳深部の神経活動を細胞レベルで読み出すもの
+や、行動中の動物の脳深部から長期間の活動記録を行う こ とで、空間・時間的な活動を詳細に把握するもの
+がある。また、シナプス結合構造の全貌を電子顕微鏡レベルで網羅的に読み出す「コネク トーム」解析も注
+目される。
+脳の局所神経回路に目を向ければ、例えば大脳皮質には抑制性のニューロンが多数存在し、興奮性ニュー
+ロンに対し、入力側である樹状突起を抑制するニューロンと、出力側の軸索起始部を抑制する異なる種類の
+抑制ニューロンが存在し ている。この解剖学的知見を基に、理論家のジャオ ・ ジン ・ ワン（ニューヨーク大学）
+は、それぞれの抑制ニューロンが局所回路への入力のセレクター、あるいは出力のゲートとし て働いていると
+いう こ と提唱し ている。こ う した入出力のゲーティ ングは、脳の回路構造がフレキシブルに切れたりつながっ
+たりする処理の一端を担っ ていると考える研究者もいる。このような脳の局所回路の知見はデバイス設計に有
+益と考えられる。
+このように、脳の細胞レベルと局所神経回路レベルでは部分的ではあるが新たな知見とその情報処理モデ
+ルが提案されてきており、短期的な視点とし てはこれら脳の低次機能の研究をさらに進展させていき、これま
+での情報処理モデルの改良・精緻化を図っ ていく必要がある。また、長期的な視点では海馬などの脳組織レ
+ベルや脳全体のネッ トワークなどの高次機能についての理解を深めていく こ とも重要である。磁気共鳴機能画
+像法（fMRI：functional Magnetic Resonance Imaging）による特定の脳組織や脳全体の活動の計測、
+計測データのAIによる解析などにより、脳の高次機能の理解を進める必要がある。将来に起こるこ との予測
+や適切な判断を行う場合には、過去の経験、社会倫理、社会通念、歴史、現在の環境、立場など様々な要
+素の情報を集めて、総合的に情報処理し ていく ものと考えられ、長期的な研究が必要になると思われるが、
+脳の高次機能を参考にした情報処理モデルの構築が望まれる。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+7
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+提案を実施する意義
+2
+
+===== PDF_PAGE 18 =====
+（3)集積回路の微細化の限界
+ムー アの法則をベー スにした集積回路の微細化の開発速度は数十nmノード（実際の最小パターン寸法で
+はなく、 プロセス技術の世代を表す数値） といわれる頃からそのスケーリ ング速度が減速し てきた。構造パター
+ンの露光に用いるArFエキシマレーザ波長が193nmであるので波長より微細な構造を実現するにはマスクパ
+ターンに各種の工夫が必要になり、一層分の構造パターンを形成するのに多重に露光するなど、プロセスが
+複雑化し製造コストも増加し ている。このように技術的には難しく なっ ているが、2018年には7nm、2020
+年には5nmノードの量産が始まっ ている。最近は波長が13.5nmのEUV（Extreme ultraviolet）リ ソグラ
+フィ装置が量産に使われるようになり、今後もEUVの改良や素子構造の開発が進み3nm、2nmなどより微
+細化が進むと思われる。素子構造に関し ても現在の微細プロセスに使われているFinFET（Fin Field-Effect
+Transistor）では性能向上が困難になっ てきており、GAA（Gate All Around）トランジスタやCFET
+（complementary FET）など新しい構造の研究が行われている。以前は微細化に伴い素子あたりのコス ト
+も低下し、高集積化と同時にコス トパフォーマンスも向上し ていたが、最近はプロセスや素子構造の複雑化な
+どが原因となり微細化を進めるこ とでコス トは逆に上昇する傾向が認められる。そのため最先端CMOSプロ
+セスが利用できるのは真に大量生産が期待できる一部のアプリケーションに限定されるようになっ てきた。ま
+た、高集積化、高速クロック化に伴いチップの消費電力が増加し発熱問題なども顕在化し ている。
+エッジ用LSIに関し ては、少量多品種製品の市場が大きいこ とや、大がかりな冷却機能が使えないこ となど
+から、上記微細化の流れとは異なる戦略が求められる。その戦略の方向性は高速化、小型化、低消費電力化、
+低コス ト化である。そのため、従来型（ノ イマン型）ではないアプローチが必要になり、世界的に新たなコン
+ピューティ ング技術を探索する動きが盛んになっ ている。フォ ン・ノ イマン・ボトルネック問題が顕在化し てき
+た2009年には、IEEEにRebooting Computing Initiativeが設立されており、新たなコンピューティ ング
+技術を模索する動きが加速し ている。その一つの方向とし て脳科学の知見を生かした人間の脳の構造や機能
+を模倣し、柔軟で高度な情報処理を低消費電力で行うハードウェア技術の開発があり、非ノ イマン型デジタ ル
+コンピューティ ング 、量子コンピュータ と ともに世界的にも注目されている。日本においても、これまでAIに
+関する研究は主に情報処理学会、人工知能学会で行われてきたが、2019年にはデバイス ・材料分野をカバー
+する応用物理学会でもAI応用を目指すフォーカス トセッション 「AIエレク トロニクス」 が創設され、 デバイス ・
+材料のAI応用に関する活動が活発化し ている。
+（4)脳の構造・機能を模倣した新たなコンピューティング技術への期待と新たな動き
+脳の構造・機能を模倣した新たなコンピューティ ング技術は、世界各国で注目が集まっ ている研究分野の
+一つであり 、約10年以上前から各種プロジェク トが進められている。例えば米国国防高等研究計画局
+（DARPA：Defense Advanced Research Projects Agency）によるSyNAPSEプログラ ムや欧州の
+Human Brain Projectが有名である。 SyNAPSEでは、米国の大学を中心に数十の研究機関が参加し、
+ニューロモルフィックチップの開発やそのアプリケーションへの実用化の活動を行っている。2014年には、
+IBMが開発したデジタ ル型のニューロモル フィ ックチップTrueNothが発表され話題となった。 Human
+Brain Project（2013年 ～） は、EUが助成する脳研究の大型研究支援プログラ ムであり、欧州内外を含め
+て100を超える大学・研究機関が参加し、神経科学、コンピューティ ング 、脳疾患などの融合的な研究開発
+が行われている［出典 ： 国立研究開発法人情報通信研究機構. 欧州における脳情報関連技術の研究開発動向,
+2018. https://www.nict.go.jp/global/lde9n2000000bmum-att/re201803_1.pdf］ 。このような欧米
+の取り組みは脳科学の知見を高度な情報処理に活かすという意味で注目すべきものであるが、ニューロン・
+8
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+提案を実施する意義
+2
+
+===== PDF_PAGE 19 =====
+シナプスレベル、神経回路レベルの脳の低次機能のモデルについての取り組みであり、また人間の脳に比べ
+ると桁違いにニューロン数・シナプス数が少なく、その優位性や魅力的な応用を示すまでには至っていない。
+短期的にはこのような研究を推進し、ニューロン数・シナプス数を増加させて、魅力的な応用分野を探し てい
+く こ とで良いと思われるが、長期的には直観的認識やリアルタイ ムの判断ができるように、脳の高次機能に基
+づく モデルの構築とそれを実現する回路・ アーキテクチャ、 デバイス ・材料の研究開発を進めるこ とが望まれる。
+日本では、脳科学の知見を情報処理に活かし ていこ う という取り組みとし て、2016年から新学術領域「人
+工知能と脳科学：人工知能と脳科学の対照と融合」 、 「脳情報動態学：脳情報動態を規定する多領野連関と
+並列処理」 、WPI 「ニューロインテリジェンス国際研究機構（IRCN） 」などが開始されている。2つの新学術
+領域は脳型AIのハードウェア化までを目的としたものではないが、脳の情報処理ダイ ナミクスの可視化や情
+報処理機能の理解を深めるという意味で注目される。このWPIは脳機能の理解が第1目的とし てあるが、脳
+模倣のニューロモル フィ ックチップの開発も視野に入れており、脳科学、情報科学、数学・数理科学、回路・
+アーキテクチャなどの異分野の研究者を集めた研究拠点とし ても注目される。また、2018年から深層学習お
+よびデジタ ルのアーキテクチャ研究を中心に新たなコンピューティ ング技術の開発を目指す 、内閣府SIP第2
+期 「フィ ジカル空間デジタ ルデータ処理基盤」 、 NEDOのプロジェク ト 「高効率・高速処理を可能とするAIチッ
+プ・次世代コンピューティ ングの技術開発」 、JSTのCREST「Society5.0を支える革新的コンピューティ ン
+グ技術」 、さきがけ「革新的コンピューティ ング技術の開拓」などが開始されている。これらのプロジェク ト
+の中の一部に、脳型のコンピューティングに関わるテーマが含まれている。
+このように脳型AIのハードウェアに関する期待や活動が活発になっ ているが、脳に学んだ新たなAI用のア
+クセラレータがすぐに実用化されるような状況にはまだない。実際に試作されたニューロモル フィ ックチップ
+で、人工ニューロン・シナプスの大規模集積がまだできておらず、その優位性が示せていないこ とや、脳に学
+んだ情報処理モデルで高度な情報処理と低消費電力化を示せていない、脳のニューロン間の接続のように三
+次元的で複雑な接続を実現する方法が見つかっ ていないこ となど、まだ多くの科学的・技術的課題がある。
+脳型AIハードウェアの研究で先行し ている欧米でもまだ模索し ている段階である。しかし、脳を模倣したアク
+セラレータの研究開発は正しい方向性と考えられる。現在のノ イマン型のコンピュータは汎用ではあるが、半
+導体集積回路の微細化限界のために飛躍的な性能向上は期待できず、特定の機能に特化し て高性能化を図る
+ド メインスペシフィ ックなコンピュータが必要になっ ている。その代表例が量子コンピュータであり、暗号解読、
+最適化問題など特定の情報処理については計算論的にその優越性が裏付けされており、その研究開発が世界
+的に活発化し ている。一方、脳型のコンピュータについては脳の機能が解明されていないので計算論的な裏
+付けはないが、人間の脳が数十Wの電力で、学習、認識、判断といった高度な情報処理を行っ ているという
+事実があり、将来の性能・応用を予測する上でこれほど確実なものはない。それを反映し て、2020年の固
+体素子回路国際学会（ISSCC2020）におけるIBMの基調講演で、 今後のコンピューティ ングではビッ ト（デ
+ジタ ル）とニューロンと量子ビッ トが重要になると言っ ており、また国際電子デバイス会議（IEDM2020）の
+サムソン電子の基調講演で、今後は機械学習、ニューロモル フィ ックコンピューティ ング 、量子コンピュータ
+が重要になると言っ ており、脳型の情報処理には産業界も注目し ている。
+我が国の研究リ ソー スは限られているので、日本にと っ ての脳型AIアクセラレータ応用とし て重要な産業領
+域を見据え て、科学技術的にも強い研究領域に集中するなどの戦略的な取り組みも必要である。Society 5.0
+に代表されるサイ バー フィ ジカルシステム（CPS）では、実世界上のエッジ側での技術が重要になっ て く ると
+考えられ、日本が科学技術的にも産業的にも強いセンサ技術、ロボッ ト技術、デバイス・材料技術を活用し
+た戦略が求められる。脳科学、数学・数理科学においては海外がリードし ている状況にあるが、日本にもこ
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+9
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+提案を実施する意義
+2
+
+===== PDF_PAGE 20 =====
+れらの分野でト ップクラ ス人材が存在し ており、上記の日本の強い技術と情報科学を密に連携させ、独自の脳
+の情報処理モデルの構築、高効率デバイス・回路、脳型AIアクセラレータを開発し、実世界AI技術の強化
+を図るこ とが期待される。取り組みの方向性とし ては、(1)で挙げた短期的および長期的な視点でのAI技術
+の課題に対し て明確な目標を定めて取り組ん でいく こ とだと考えられる。つまり、短期的には脳の細胞・神経
+回路レベルのモデルを用いて、現在ソフ トウェアで実行し ているAI処理の低消費電力化や学習の高効率化の
+課題に取り組み、長期的には脳の高次の機能についての理解を深め、直感的認識やリアルタイ ムの判断など
+の課題に対処し ていく こ とが望まれる。
+2019年には国の戦略とし て「AI戦略2019　～人・産業・地域・政府全てにAI～」が策定され、AI戦
+略2019における研究開発戦略とし て、 世界をリードする次世代AI基盤技術の確立を 目的に、 「基礎理論」 、 「 高
+品質かつ信頼できるAI」 、 「AIのシステム ・ コンポーネン ト」 と ともに、 「AIのためのデバイス ・ アーキテクチャ」
+の研究開発の必要性が記載されており 、脳を模倣した情報処理への期待も高い。先の3つに対し ては、
+CRDSから 「第4世代AIの研究開発 ―深層学習と知識・記号推論の融合―」 （CRDS-FY2019-SP-08） 、 「AI
+応用システムの安全性・信頼性を確保する新世代ソフ トウェア工学の確立」 （CRDS-FY2018-SP-03） 、 「複
+雑社会における意思決定・合意形成を支える情報科学技術」 （CRDS-FY2017-SP-03）などの提言がすでに
+出されており、これらのソフ トウェア系の提言に加え て、それと相補的となるハードウェアに係る研究開発の
+提言をまとめて、日本のAI戦略全体を先導するこ とが望まれる。
+2.2 社会・経済的効果
+脳型AIアクセラレータが開発・実用化されるこ とで、汎用プロセッサと連携し て高度なAI処理を高速・低
+消費電力で行えるようになり、現在のAI技術を使ったクラウ ドを中心にした応用分野の利用拡大だけでなく、
+実空間上のエッジでの新たな多くの応用領域に展開される。例えば、以下に示す ような少子高齢化による労
+働力不足の問題、高齢者の介護問題、安全な移動、医療費削減に向けた健康の維持、効率的な社会インフ
+ラの維持管理などの社会的問題の改善・解決に貢献すると考えられる。もちろん、このような社会的問題の
+改善・解決には脳型AIアクセラレータだけでできるわけではなく、システム全体のデザインやソフ トウェア技
+術、規制緩和などが必要であり、これらの関係者と連携した取り組みが重要である。
+○ 人間 と同じように細かな部品・物体の認識、状態の判断、作業計画策定ができるロボッ トが実用的に使わ
+れるようになり、工場や農作業などで人間と一緒に作業するこ とができるようになり、労働力不足の緩和・
+解消に繋がる。
+○ 知的 なロボッ トが家庭にも入っ ていく ようになり、高齢者、障がい者などが介護の補助や、他者の助けなし
+に自立した生活を送るこ とができる。家庭用とし ては空間移動支援や清掃支援、あるいは入浴支援や排泄
+支援まで、あらゆる生活支援をするロボッ トの進展が期待される。
+○ 車 だけでなくパーソナルモビリティなどの自動運転が可能になるこ とで、高齢者、障がい者も安全にどこへ
+でも行けるようになる。
+10
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+提案を実施する意義
+2
+
+===== PDF_PAGE 21 =====
+○ ウ ェアラブル機器へのAI機能の導入で、個人の日々の各種データ（体温、心拍数、呼吸、呼気など）の
+取得、変化の簡易分析から、適切な生活のア ドバイス、疾病の早期発見、体調、病状の変化の把握が可
+能になり、生活上の安心感が増加する。また、個別化医療の進展、健康寿命延伸にも貢献する。
+○ 橋梁、 ト ンネル等の社会インフラの重要な箇所に自律的な動作をするスマートセンサを配置し、状態の変化
+や異常を検知し て必要な情報だけをクラウ ド側に送るこ とにより、センサ端末の長期的な稼働を可能とし、
+社会インフラの効率的な保守管理に貢献する。
+また、一つの応用領域で脳型AIアクセラレータの有効性が示されれば、他の応用領域にも急速に広がると
+思われる。例えば、産業用ロボッ ト応用において、硬い材質だけでなく柔らかい材質のもの、変形したもので
+も安全に取り扱う こ とができ、人との安全な協働作業ができるようなアクセラレータが開発できれば、家庭内
+で働くようなサービスロボット、介護ロボットにも波及していくと考えられる。
+さらに、これらの社会的課題への貢献は、経済的な貢献にもつながる。特に、ロボッ ト産業や自動車産業
+は日本の強い産業分野であり、インテリジェン ト化により これらのさらなる強化も期待される。また、脳型AI
+アクセラレータを日本が世界に先駆けて開発・製品化できれば、半導体集積回路の新たな価値を生み出し、
+日本の半導体産業の再興にもつながっ ていく と期待される。
+コンピュータに求められる機能が高度化、複雑化する中、新たなコンピュータへの期待は高く、経済的な
+効果とし て、以下に示す市場規模の大きな幅広い分野での貢献が予測される。 （括弧の中の金額はその年に
+おける世界市場規模）
+○ロボッ ト（約21兆円@2020年、出展：IDC）
+・産業用ロボッ ト（人との安全な協働作業、柔らかな材質のものの扱い）
+・サービスロボッ ト（人との安全・安心な共生、環境変化の判断と的確な動作、自然言語処理）
+・家庭用サービスロボッ トについては2025年に約2.9兆円の市場予測（出展：富士経済）
+○自動運転機能付き自動車（約9.1兆円@2025年、出展：ReportBuyer）
+・事故を防ぐ自動運転機能（車・人・環境の認識、リアルタイ ムの判断、最適な操作）
+○健康・医療ウェアラブルデバイス（約2.3兆円@2020年、出展：IHS Technology）
+・健康管理（日々の各種データの取得・分析、生活のア ドバイス）
+・診断データの分析（病気の原因の予測）
+○社会インフラ保守（国内社会インフラIT市場：約0.6兆円@2024年、出展：矢野経済研究所）
+・社会インフラ状態把握（センサ端末からの各種データの取得、現状分析、劣化予測）
+・修理・建て替えの順番最適化（組合わせ最適化問題）
+○ホームセキュ リティ（約5.7兆円@2022年、出展：Lucintel）
+・監視カメ ラ、センサの高機能化（画像認識、異常の検知、イ ベン ト予測）
+○ニューロモル フィ ックチップ（約1.2兆円@2026年、出展：Future Market Insights）
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+11
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+提案を実施する意義
+2
+
+===== PDF_PAGE 22 =====
+・認識、判断、組み合わせ最適化等の柔軟で高度な情報処理の超低電力・高速処理
+2.3 科学技術上の効果
+（1)人工知能研究への展開
+現在のソフ トウェアベー スの人工知能処理の負荷の重い一部の処理を、高速・低消費電力で実行できる脳
+型AIアクセラレータが開発されれば、人工知能技術開発の基盤となるABCIのような計算センターの高性能
+化・低消費電力化に貢献できると思われる。これにより、多くのAI処理が実行できるようになり、人工知能
+の研究が促進されると期待される。
+また、脳型AIアクセラレータの研究開発を進める中で、脳型情報処理の新たな数理モデルが提案され、そ
+のアルゴリ ズムが開発できれば、ハードウェア化する前にソフ トウェアとし て人工知能技術に取り込むこ とがで
+き、その有用性や問題点を調べるこ とで、人工知能研究にも刺激を与えると考えられる。
+さらに、深層学習の限界や人工知能の残された問題（①学習に大量の教師データや計算資源が必要なこ と、
+②学習範囲外の状況に弱く、実世界状況に臨機応変な対応が出来ないこ と、③パターン処理は強いが、意味
+理解・説明等の高次処理は出来ていないこ となど）に対し て、脳型AIアクセラレータの研究開発を進める過
+程において、これまでは人工知能研究とは直接的な関係のない脳科学者や、回路・アーキテクチャおよびデ
+バイス・材料の研究者と人工知能の研究者が直接的に話すこ とにより、脳科学や回路・デバイスの研究者の
+人工知能研究への視野を広げて積極的貢献を促すこ とができ、人工知能の残された問題などに対する新たな
+発想に結びつく こ とも期待される。
+（2)BMI技術や脳機能理解の進展
+脳型AIアクセラレータに関する研究開発において、神経回路の理解や新たな情報処理モデルの創出、
+ニューロモル フィ ックコンピューティ ングのチップ開発などが進むこ とにより 、今後のBrain-Machine
+Interface（BMI）の基盤技術になるこ とが期待される。BMIは脳の情報をリアルタイ ムに読み取りモデル化
+するこ とで、脳と機械を相互作用させ、心身機能の補綴や改善、拡張の実現を志向する新しい脳科学の分野
+である。脳の運動情報処理に媒介し てロボッ ト アームやロボッ トレッグを円滑に操作するサイボーグ技術や脳
+内の情報処理過程に仲介し てその演算を効率化させるニューロモジュレーション技術、失われた神経ネッ ト
+ワークを再建する人工神経接続技術など、生物器官の機能不全や欠損に対する工学的なソ リ ューションとし
+て実用化が進ん でいる。また、四肢麻痺の人が補助具を使い歩く こ とができるようにするリハビリ技術におい
+て、神経回路を理解するこ とにより、神経回路の再活性化のプログラ ムをAI駆動神経刺激デバイスを介し て
+動かす、ということが実証されつつある。サービスロボットなどへの応用に向けた脳型 AIアクセラレータは、
+多くのセンサ情報から自分や環境の状況を認識し、予測に基づいた判断によりアクチュエータに適切な指示を
+出す機能も備えると考えられるため、このようなBMI技術の発展に寄与すると期待される。
+さらにこのような直接的効果だけでなく、間接的な効果とし て脳機能の理解の進展にも繋がると考えられる。
+生命科学はビッグデータ時代に入り、これまでの仮説検証型研究からモデル フ リー、すなわちデータ駆動型に
+よる現象の理解へとパラダイ ムがシフ トしつつある。脳科学においても、生物学的な脳の「完全な」理解はヒ
+トの認知能力では不可能ではないか、という考え方が根強いが、脳計測から得られるビッグデータをそのまま
+12
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+提案を実施する意義
+2
+
+===== PDF_PAGE 23 =====
+モデル フ リーで高次元のパラ メ タにフィ ッティ ングするこ とで、脳の理解が進むのではないか、という意見も出
+てきている ［”direct fit for nature" , Hasson et al., Neuron 105:416-434 (2020)］ 。脳型AIアクセラレー
+タの研究開発において、ダイ ナミ ックな脳活動の空間および時間的に高精度な計測を行い、解析用の大量の
+データを取得するこ とになるので、これらの取得データは高次元パラ メ タへのフィ ッティ ングに適用でき、脳
+機能の理解に貢献できると考えられる。また、脳型AIアクセラレータの研究開発の中で、神経回路や脳組織
+レベルの情報処理モデルの構築が進むこ とにより、 DeepMind社（米国） 、 Open AI（米国） 、 NPO法人「全
+脳アーキテクチャ・イ ニシアティ ブ」 （日本）などが目指し ている汎用AIの実現を加速するこ とが考えられる。
+（3)数学・数理科学の新たな展開
+脳科学からの知見は、圏論などの数学基礎論から、トポロジー・ホモロジー、情報理論・情報幾何学、力
+学系理論・ カオス理論、確率・統計理論など広範な数学・数理領域の研究者に刺激を与え て以下のような様々
+な成果が得られている。
+AIおよびニューロコンピューティングは、ここ50 年の間に２度のブームがあり、現在３度目のブームが起
+こ っ ているが、過去の２回と今回のブームは、脳科学、数学・数理科学とコンピュータ科学の間の緊密な連
+携の元に研究が進展し ている点で大き く異なっ ている。今回のブームの起爆剤となったのは、深層学習を用い
+たニューラルネッ トワークの飛躍的な発展である。深層学習の今日の隆盛の基盤になったのは、甘利俊一博
+士の確率降下学習法を用いた逆誤差伝搬法であり、ここでは数理モデルが重要な役割を果たし ている。しか
+し、現在の深層学習は静的な数理モデルを用いたアルゴリ ズムを用いており、実際の脳のダイ ナミ ックな情報
+処理機構を十分反映し ているとは言えない。例えば、脳は安静状態でもダイ ナミ ックに活動し ているという特
+徴があり、これがノ イズに強い要因とされているが、現状の深層学習は敵対的なノ イズ攻撃に弱い。したがっ
+て、実際の脳の構造や活動に基づいた新しい数学・数理モデルの発展とそれに基づく アルゴリ ズムの開発は、
+コンピュータ科学の発展に大きなインパクトを持つと考えられる。
+脳の活動解析をめざした数学モデルは、ニューロンのスパイ ク発火を記述する非線形の微分方程式群を中
+心とした力学系理論である。歴史的にはノーベル生理学・医学賞を受賞したHodgkin - Huxley方程式［A.
+L. HODGKIN and A. F. HUXLEY : A quantitative description of membrane current and its
+application to conduction and excitation in nerve : The Journal of physiology, 117(4), 500-44
+(1952).］から始まった分野である。その後、積分発火モデルなどより簡易なモデルや、発火頻度に着目し
+たモデルなど様々なモデルが提案されており、さらにアナログ量で表現したモデル、しきい値関数、シグモイ
+ド関数など活性化関数のモデルも提案され、計算コス ト と生物学的妥当性を両立する数学モデルが研究され
+ている。また、古典力学の粒子の集団運動は、運動粒子に統計的な性質を導入するこ とによっ て統計力学と
+いう分野を切り開き、物性や相転移など多くの物理分野で成功を収めてきた。同様に脳の神経回路の時系列
+ダイ ナミクスに統計性を導入すると、脳全体のマクロな状態変化を統計力学的に扱う こ とができる（統計神経
+力学） 。これをさらに発展させて、近年ではカオス理論を応用し て、脳活動領域のクラ スタ リ ングのメカニズム
+が解明されるなど、シナプス発火のメカニズムを時間依存の微分方程式で記述・解析するのみならず 、脳全
+体の活動をミクロなシナプス結合と結びつける新たな数学・数理モデルが発展しつつある。
+一方、脳全体の情報ネッ トワークに着目する数学モデルは、ネッ トワーク理論やトポロジー・ホモロジー理
+論である。前者は、主に検索問題を効率的に解く こ とを目的とし て発展し てきたが、最近では脳のモジュール
+構造に着目した理論の展開が進みつつある。後者は、例えば脳の神経系の発火データから脳全体のトポロ
+ジーを解析するアプローチであり、情報ネッ トワーク全体の時系列活動を大域的に研究するモデルである。こ
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+13
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+提案を実施する意義
+2
+
+===== PDF_PAGE 24 =====
+のモデルの解析から脳情報処理の堅牢性や信頼性の情報が得られると期待され、脳型AIの特徴を具体的な
+アルゴリズムやハードウェアに実装するときの活用も期待される。
+この他にも、脳神経回路の環境適応について情報理論を用いてモデリ ングするなど、情報理論や情報幾何
+学の最先端との連携も進ん でいる。さらに、ノ イマン型のコンピュータのベー スとなっ ている集合論を超え て、
+意識の因果的な側面や情報構造を圏論でとらえ直し、 関係性のネッ トワークの更新による意識発現の研究 ［土
+谷尚嗣、西郷甲矢人：圏論による意識の理解：Cognitive Studies, 26, 4, 462-179 (2019)］など、新た
+な数学分野からの脳科学、あるいは脳型AIの研究が進展しつつある。また、情報理論に計量を導入し情報
+多様体とし て取り扱う情報幾何学は、まず多層ニューラルネッ ト関数空間上の多様体に幾何学構造を導入し
+た機械学習への応用が注目されてきたが、さらに脳の広範囲の情報統合によっ て意識が生じるという観点で
+意識を研究する情報統合理論への発展が期待される。この統合情報理論で意識をとらえ直す方向では、意識
+の因果的な側面や情報構造を圏論でとらえ直し、関係性のネッ トワークの更新による意識発現を研究するア
+プローチもされている。
+今後も、脳型AIアクセラレータの開発を目指し て、脳の構造・機能の新たな知見の獲得とその情報処理モ
+デルを創出し ていく こ とで、数学・数理科学分野の一層の学術的な発展が期待できる。
+（4)高効率・低消費電力デバイス・回路技術への展開
+脳が進化の過程で作り上げた特異的な機能を物理的に実装するためには、デバイスの物理的・動力学的性
+質を直接的に利用し て、ニューロンやシナプスの機能をデバイス・材料レベルで模倣し再現するこ とが求めら
+れる。脳型AIアクセラレータは、組み合わせ回路に基づく従来法とは全く異なる、新しい計算パラダイ ムとな
+るため、従来のCMOSデバイスを超える新動作原理のデバイスの研究開発を促進すると期待される。すでに
+デバイス・材料の研究者が多く集まる応用物理学会においては、2019年から「AIエレク トロニクス」という
+新たなセッションが設けられて活発な活動をし ており、今後は回路・アーキテクチャ、数学・数理科学、アル
+ゴリ ズム・ソフ トウェア 、情報処理、人工知能、脳科学などの分野の研究者も参加した大きなコミュニティを
+形成し て く こ とが期待される。これにより、分野連携や融合が進み、デバイス・材料技術をコアにし て研究領
+域が拡大し ていく ものと考えられる。また、他の研究分野を含むデバイス・材料の技術シー ズから、情報処理、
+人工知能、脳科学を含む様々な応用ニー ズを含む形で研究開発が進められていく こ とにより、企業を含んだ
+形でデバイス・材料の研究開発が活性化し、材料技術、デバイス技術で強みを発揮し てきた我が国が再びこ
+の分野で主導権を握り、産業的な強化につながるこ とが期待される。
+具体的には、以下のようなデバイス・回路技術への展開が考えられる。シナプスは伝達効率を連続的に変
+化させるこ とができ、それを長期記憶する機能を有するが、このシナプスの機能を模倣できるデバイスとし て、
+不揮発性アナログ可変抵抗素子（memristive device）の研究が活発化し ている 。誘電体メ モリ
+（Ferroelectric RAM: FeRAM） 、磁気抵抗メ モリ（Magneto-resistive RAM: MRAM） 、相変化メ モリ
+（Phase-change RAM: PRAM） 、抵抗変化メ モリ（Resistive switching RAM: ReRAM）など、ほぼ全て
+の不揮発性メ モリが研究対象となり、材料探索も幅広く行われている。特に近年、アナログスピン軌道トルク
+（Spin-Orbit Torque: SOT） 磁気抵抗メ モリで、 ニューロンの応答特性であるリークを有する積分発火 （leaky
+integrate-and-fire）特性と、シナプスの特性であるスパイ クタイ ミング依存可塑性（Spike-Timing
+Dependent Plasticity: STDP）が再現され [A. Kurenkov, S. DuttaGupta, C. Zhang, S. Fukami, Y.
+Horio, and H. Ohno: Adv. Mater. 31, 1900636 (2019)]、超小型で低消費電力のスパイ キングニューラ
+ルネッ トワーク（Spiking Neural Network: SNN）への応用の可能性が開かれつつある。このように脳型
+14
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+提案を実施する意義
+2
+
+===== PDF_PAGE 25 =====
+AIアクセラレータの実現を目指す取り組みを通じて、今後も多種多様なデバイス・材料の研究開発が誘発さ
+れると期待される。
+脳型AIアクセラレータの研究開発を推進するこ とで、これまで見捨てられていたデバイスが再び注目される
+可能性も考えられる。従来のデジタ ルコンピュータでは、信頼性が高く高速なデバイスでの構成が要求され、
+ノ イズや特性変動など、不確実な要素は徹底的に排除されてきた。一方、ニューロンの種類は多種多様であ
+り、動作は低速かつ確率的でノ イズが多く存在する。また、ニューロンの状態は常に変化し信頼性に乏しい。
+しかし、脳ではこれらニューロンの多様性や揺らぎをむしろ積極的に活用し ているように見える。このように、
+脳型AIアクセラレータに適したデバイスが持つべき特性は従来のデバイスと大き く異なると考えられるため、
+従来のシステムで要求を満たせず忘れ去られてきた多くのデバイス・材料を従来の視点とは異なる視点でもう
+一度見直し てその活用を考え ていく こ とで、新たな方向のデバイス開発が進むこ とも期待される。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+15
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+提案を実施する意義
+2
+
+===== PDF_PAGE 26 =====
+3 具体的な研究開発課題
+今後取り組むべき研究開発課題を図3-1および図3-2を用いて以下に示す 。図3-1は脳型AIアクセラレー
+タ研究開発の方向性を示したものである。ここでは、❶の矢印で示す ように、脳科学における脳の構造や情
+報処理機能の知見から新たな数理モデルを構築し、それを脳型AIのソフ トウェア ・ アルゴリ ズム、回路・ アー
+キテクチャ、さらにはデバイス・材料の開発に繋げていく。また同時に、❷の矢印で示す ように、脳の分子レ
+ベル・細胞レベルなど低次構造の機能に類似あるいはヒン トを得た特性を持つデバイス・材料に注目し、そこ
+から新たな回路・アーキテクチャ 、脳型AIのソフ トウェア・アルゴリ ズムを創出し ていく。これら2つの方向
+の研究開発が相互に影響を与え、新たな発想や連携を促進し ていく こ とにより、新たな脳型AIアクセラレー
+タの開発が加速し ていく。
+図3-1 脳型AIアクセラレータ研究開発の方向性
+図3-2 脳型AIアクセラレータの研究開発ロードマップ
+16
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 27 =====
+研究の流れとし てはこの2つの方向があるが、今後取り組むべき具体的な研究開発課題とし ては、以下に
+示す ように、脳科学の知見を活用した情報処理の新たな数理モデル・アルゴリ ズムの研究開発、超低消費電
+力で記憶・演算可能な回路・アーキテクチャ／デバイス・材料技術の開発、脳型AIアクセラレータの開発が
+ある。取り組むべき研究開発課題の全体像を理解するために、 図3-2にCRDSで作成した研究開発ロードマッ
+プを示す。ただし、このロードマップは今回の調査から見えてきたものであり、関連の学会やコミュニティで
+コンセンサスが得られているものではない。横軸は2040年までの長期的な研究開発時期を示し、縦軸は技
+術レイ ヤーを示し ており、求められる研究開発内容、数値目標などを記載し ている。赤い点線で囲った部分が
+脳型AIアクセラレータの主な研究開発領域であり、緑の点線で囲った部分はそれを支える基盤領域である。
+図中の矢印はそれぞれの技術レイヤーの成果や知見を他の技術レイヤーに活用することを示し ている。
+3.1 脳科学の知見を活用した情報処理の新たな数理モデル・アルゴリズム
+の研究開発
+（1)脳の各階層の構造・機能の知見からの情報処理モデル構築
+脳の情報処理機能を参考・ ヒン トにした脳型AIアクセラレータの実現には、 脳の構造や活動を細胞 （ニュー
+ロン・シナプス）レベル、神経回路レベル、脳組織（視覚野、前頭前野、海馬など）レベル、脳ネッ トワー
+ク全体など各階層ごとに理解し、それぞれを数理モデル化し て情報処理アルゴリ ズムを作るこ とが重要である。
+そのためには、これまでの脳科学の様々な知見を情報処理の視点で見直し て理解を深める必要がある。また、
+情報処理に活かすこ とを目的とした新たな脳の構造・活動の精密な計測・評価の最新動向、成果を知る必要
+があり、空間分解能および時間分解能の高いダイ ナミ ックな脳活動の計測を行っ ている研究者との議論が重
+要である。
+細胞・神経回路レベルの低次機能のモデルとし ては、すでにニューロンの機能を単純化した形式ニューロ
+ンモデルや、よりニューロンの活動に近いスパイ キングニューロンモデルがあるが、短期的には最近の空間分
+解能や時間分解能の高い計測技術により得られた実験結果を基にし て、従来モデルの修正やより精緻なモデ
+ルの構築を行う必要がある。
+また、長期的には脳組織とし て視覚野、前頭前野、海馬などの構造や機能に関する脳科学の研究成果から
+大胆な仮説を作るこ とで、これらにおける情報処理モデルの構築も進めていく必要がある。例えば、海馬にお
+ける短期記憶や場所記憶に対し て場所情報処理、時間情報処理などのモデルをつく るこ とや、大脳皮質の6
+層構造の特定の層に注目し てモデル化し予測の情報処理に利用し ていく といった研究も進められており、この
+ような研究の拡大が望まれる。さらには、人間の記憶に携わる海馬と大脳皮質との連携のモデル化、海馬と
+扁桃体と前頭前野からなる自律制御に関する統合機能モデルなどの研究開発の例もあり、脳組織の連携や脳
+全体のネッ トワークに関わる情報処理のモデル化についても進めていく こ とが重要である。
+(2)脳機能と身体性を考慮した情報処理モデル構築
+脳における高度な判断ができる仕組みを理解しよう とするときに、脳そのものの構造や機能を解析するだけ
+では不十分という考え方もある。人間の体には視覚、聴覚、触覚、嗅覚などのセンシング機能や手足のよう
+なアクチュエーション機能が備わっ ており、脳の高度な機能の獲得にはこの身体性の利用や制約が大き く関
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+17
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 28 =====
+わっ ているというものである。脳は物理的に有限なリ ソー スしかないにも関わらず 、無限定で動的で不確定な
+世界に対峙するため、 身体性を活用し て非常に効率的な情報処理様式を進化的に獲得し てきたとも考えられる。
+このため、身体性と脳機能との関係の研究や、知能の発達過程を研究するこ となどに対し ても注目し、そこか
+らヒン トを得て新たな情報処理モデルを構築するこ とが重要である。
+特に、多数のセンサ情報から状況をリアルタイ ムに認識し、環境変化を予測し て、次の行動を判断し てアク
+チュエータを動かすといった、実空間上のエッジ応用に向けた脳型AIアクセラレータを実現するときには、大
+変重要になると考えられる。ヒ トや動物の体に内包されているセンサは、現行の産業用ロボッ トついているも
+のとは桁違いに膨大な数であり、触る、たたく、押すなどの行為に対するフィードバックを多数のセンサを介
+し て得て、自らの存在する世界について学習し ている。このような身体経験をベー スとした学習（身体知）が、
+実世界で行動するロボッ ト等においても重要となり、長期的な研究になるが、この脳と身体性を含む情報処
+理モデルを構築する必要がある。この基盤となる研究とし ては、認知発達ロボティ クスや計算論的神経科学に
+おける取り組みがあり、例えば深層予測学習により環境とのインタラクションをロボッ トが学習し、タオル畳
+みや粉体・液体の計量といった複雑な行動を実行するといった研究開発が行われている。これらの研究分野
+の知見の活用や、連携などが重要になる。
+コラム 1
+脳科学の新たな知見
+2010年頃までは実験脳科学と理論脳科学の間には大きな分断があり、理論物
+理学と実験物理学が相互の成果に基づいて研究を発展させてきたような関係にはな
+かった。実験脳科学が得られる脳の情報が狭い範囲にとどまり、理論脳科学者が
+求める様な脳機能の情報が提供できなかった。この状況は脳計測技術の進展によ
+り大き く変貌した。今や小動物の数千以上の神経細胞の活動状態をモニターしつつ
+操作するこ とができ、ヒ トの脳機能が脳イ メージング技術により高い時間・空間解
+像度で得られる。得られた脳領域や広域・局所神経回路の活動情報はそれぞれの
+レベルの回路モデルの構築に資するもので、これらに対応する様々なレベルの回路
+モデルが提起される時代になった。新たな回路モデルは実験脳科学により検証され
+さらに精緻になり、また、新たなAIのアルゴリ ズム創出の基盤となり うる。
+細胞レベルから全脳レベルの各階層で脳計測技術の進展は近年著しい。脳ネッ
+トワークを構成するシナプス結合構造の全貌を電子顕微鏡レベルで網羅的に読み
+出す「コネク トーム」解析は、電子顕微鏡による自動撮像技術とその膨大な画像
+データからの人工知能による構造情報抽出技術の開発により軌道にのり、ゲ ノ ムプ
+ロジェク トに匹敵する規模のコネク トームプロジェク トが始動し ている。生きた脳深
+部の神経活動を細胞レベルで読み出す二光子顕微鏡技術や行動中の動物の脳深部
+18
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 29 =====
+（3)脳機能・ネットワークの新たな数理モデルの構築
+脳科学の知見を脳型AIのアルゴリ ズムやハードウェアへ有効活用するためには、脳科学の知見を数学・数
+理モデルで記述し、アルゴリ ズム、回路へと結びつけていく こ とが必要であり、新たな数学・数理モデルの創
+出は重要な研究開発課題の一つである。以下、このモデル構築に関し て今後重要となる研究開発の例につい
+て記載する。
+a)脳機能を解析する数学・数理モデル（力学系理論、情報理論）
+ニューロンのスパイ ク発火を解析する数理モデルを扱う領域は、非線形の微分方程式を扱う力学系理論で
+ある 。計算機応用を視野に入れ 、計算コス トに負担をかけず現象を精度良く記述するモデルとし て
+から長期間活動記録が可能な超小型内視鏡システムは蛍光プローブ技術と ともに進
+展著し く、光学的あるいは化学的神経回路操作技術（光遺伝学・化学遺伝学）を
+組み合わせることにより、マウスやマーモセッ トなどの小動物の脳回路を操作し て
+活動を読み取る研究が可能となり、神経回路の動作原理の解明に革命をもたらし て
+いる。
+全脳レベルの研究においては、fMRIデータのAIによる解析が成果を生み、ま
+た、ヒ トの脳活動と深層学習の内部状態を比較するこ とによる深層学習アルゴリ ズ
+ムの改良など、脳計測へのAIの寄与と ともに脳計測のAI技術に対する寄与も見
+られるようになっ ている。脳の視覚情報処理の階層構造に発想を得て1979年に福
+島邦彦（当時：NHK放送科学基礎研究所）が発表したネオコグニトロンに端を発
+した階層型AIは深層学習に結実した。深層学習は脳解析の強力なツールとし ても
+用いられている。数千のトレーニング画像を特徴パターンのベク トルに分解し、ヒ
+トの視覚皮質の反応と画像から計算し て得た特徴ベク トルを深層学習に与えるこ と
+によっ て、未知の画像を観たときの脳信号から画像の再構成ができるこ とが示され、
+夢を見ているときのヒ トのfMRI記録から夢の画像が再現されている[Horikawa
+T, Tamaki M, Miyawaki Y, et al. (2013) Neural decoding of visual imagery
+during sleep. Science 340:639–642]。さらに、深層学習と脳を相互作用させる
+こ とによる深層学習のチューンアップが試みられている。同じ画像を動物と深層学
+習に入力し て、得られた神経活動パターンを教師信号とし て深層学習を学習させる
+と、脳の神経細胞が画像に対し て活動するのと同じ様な反応が深層学習に見られる
+ようになる。例えば1次視覚野での単純なパターンに応答する神経細胞の挙動ある
+いは高次視覚野における抽象的な視覚情報に反応する細胞活動と似た活動が深層
+学習で検出される。すなわち、視覚野のニューロン活動をコンピュータ上に再現し
+た（写し込んだ）ともいえる。さらに深層学習のモデルにノ イズ成分を加えたり後
+ろ向きの結合要素を加えたりするこ とにより、脳の反応により似た、誤判断の少な
+い 挙 動 が 得られることが わかってきた。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+19
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 30 =====
+Izhikevichモデルなどが提案されてきたが、発火頻度など統計的な知見を入れるモデルや、発火過程を抽象
+化し て方程式へ取り入れるモデルなど、脳科学の進歩に応じて、妥当な計算コス トでより正確に現象を記述で
+きる数理モデルの研究は引き続き重要である。脳活動のダイ ナミクスが数学により抽象化されると、同じよう
+な複雑系からなる様々の物理系との比較が可能となる。これにより物理系そのものをコンピューティ ング主体
+とするリザバーコンピューティ ング分野の発展や、脳型AIを構成するデバイス・材料に求められる特性・物
+性に対する有益な情報が得られ、脳型AIハードウェアの開発に資するこ とになる。
+さらに、脳活動のダイ ナミクスを各ノード全体の統計力学とし て扱い、脳全体のマクロな活動の時間発展を
+統計力学的に記述するこ とも重要である。脳を構造化し て、複数の異なった領域に相互作用とし て興奮性刺
+激と抑制性刺激を導入すると、より複雑なダイ ナミクスが検討できるようになる。このモデルを発展させると、
+系の平衡状態のみならず 、振動や発振など回路的な描像を記述するこ とができ、脳全体を回路と考える脳型
+AIのコンピューティ ングにも有益な情報が得られるようになると考えられる。さらに、複雑系の力学系理論の
+安定性を調べるこ とのできるカオス理論は、脳活動領域のクラ スタ リ ングなど大域的な脳活動を解析するため
+の有効な手法であり、 これを活用するこ とで、 脳の低消費電力な情報処理の要因や、 従来の万能型コンピュー
+ティ ングと異なる脳型の情報処理方式の本質へと迫る研究が進展する。
+この方向での最近の発展とし ては、脳シナプスの活動は不均一であり、特定の少数シナプスが強く活動す
+るこ とで、刺激に対し て閾値をもたず 、弱い刺激でも活動し続けるこ とがわかっ てきた。脳が極めて低電力で
+動作する秘密の一端が、特定のシナプスによる強い結びつきとその活動によっ ているのではないかという示唆
+を与える結果であり、このようなメカニズムを応用したアーキテクチャ・回路を研究開発するこ とで、情報処
+理デバイスの超低消費電力化を実現する。
+また、神経回路が環境に適応し て進化するモデルを、情報理論の観点から、情報量の最大化に注目し て説
+明する数理モデルの研究が始まっ ている。この研究に基づいたアルゴリ ズムで高効率に画像処理が行えるとい
+う報告もあり、脳全体を調整する役割のシナプスを活用するネッ トワークで高効率化や超低消費電力化が図
+れる可能性がある。このような情報ネッ トワークは小脳の中で実現し ているこ とが示唆されており、脳回路の
+数理モデル化によっ て、情報処理ハードウェアの高効率化や低消費電力化の道筋の解明が期待される。
+b)ネットワーク理論・トポロジー
+脳全体の情報ネッ トワークに着目する数学分野とし て重要な分野がネッ トワーク理論である。ネッ トワーク
+理論では、脳ネッ トワークをノードと リ ンクで構成し て隣接行列で表現し、リ ンクに適切な仮定を与え て分析
+を行う。具体的には、ノード次数（各ノードの持つリ ンク数） 、クラ スター係数（各ノードの周りにある三角形
+数） 、各ノード間の最短経路長などが計算でき、これらとfMRIの測定データ との比較により、脳のネッ トワー
+ク的な活動の研究が行われている。今後重要になる課題とし ては、脳の階層モジュール構造の研究があげら
+れる。ネットワーク理論を用いてそれらのモジュール同士がどのように協調し活動しているかを解析すると、
+脳型AIのトポロジー構築のベー スとなる知見が得られる他、脳の持つロバス ト性の解明などに関し ても有益
+な情報が得られることが期待される。
+脳科学に トポロジー・ホモロジーの手法を導入する研究は最近始まったばかりであるが、これは脳情報ネッ
+トワーク全体の時系列活動を大域的に研究する研究とし て、今後重要な研究課題となると予想される。特に
+ネッ トワーク情報のトポロジー的な特徴を抽出し てマップ化できるパーシステン トホモロジーは、脳活動のネッ
+トワーク的な特徴を抽出する有益な方法であり、その時間発展が検討できる手法の開発が望まれる。またこ
+れらのトポロジー的な手法により、脳情報処理に特有な堅牢性や信頼性の情報が得られると期待され、脳型
+20
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 31 =====
+AIの特徴を具体的なアルゴリ ズムやハードウェアに落とし込むための指針を得る上でも重要である。
+c) デ ータ駆動型解析
+ビッグデータの時代が到来し、計測されたデータから元々のシステムの構造や性質を解析するデータ駆動
+型解析が、機械学習の発展とともに極めて重要な研究分野となっ ている。この分野を支える解析法とし てス
+パー スモデリ ングが注目されている。スパー スモデリ ングは，高次元データに普遍的に内在するスパー ス(疎)
+性を利用するこ とで、計算量が次元数に対し て指数関数的に爆発する状況でも、現実的な時間でデータから
+最大限の情報を効率よ く抽出できる技術である。脳科学への応用では、一例とし て脳波情報などの複雑な時
+系列データを無限次元の線形作用素空間のモードに分解し、データ同士の距離（グラ スマン距離）で分類す
+るこ とで、行動の予測や、脳ネッ トワークの解析を行う研究が進ん でいる。脳活動のデータからその特徴量を
+取り出すための数学理論や数理モデルの研究は、脳科学の進展に重要な役割を果たすのみならず 、確立され
+た数理モデルをベー スにした脳型AIの開発にも重要な手法になると考えられる。
+（4)脳の各階層での情報処理モデル化からの回路・デバイス・材料への機能要求
+上で述べてきた、脳の細胞レベル、神経回路レベル、組織レベル、脳ネッ トワークレベルでの新たな知見
+を基に、新たな数理モデルを創出すると ともに、そのモデルに従った動作を可能とする回路やデバイス・材料
+への特性要求を出し ていく こ とも重要である。例えば、弱い入力信号が時々入っ てもその信号は記憶されず 、
+弱い信号でも頻繁に入ったときや、一度でも強い信号が入ると、状態が大き く変わっ てその状態が保持される
+といった機能を有するデバイスがほしい、といったものである。そのような特性を持つものが既存のデバイス
+にない場合には、望みの特性を持つ新たなデバイスを開発するこ とも必要になる。脳レベルや神経回路レベ
+ルでは、考えやすいようにも思われるが、組織レベルや脳ネッ トワークレベルでもこのような要求が出て く るこ
+とが望まれる。
+汎用AIを作ろう とする動きや組織（例えば、 「全脳アーキテクチャ・イ ニシアチブ」 ）も存在し ており、それ
+らの活動における研究開発内容についても注目し ておく必要がある。脳の組織（モジュール）レベル、あるい
+は脳ネッ トワークレベルにおいて、新たな情報処理のモデルとし て魅力ある提案が出されている場合には、そ
+の研究を発展させ、回路・デバイス・材料への機能要求とし て提示し ていく こ とも重要である。
+3.2 超低消費電力で記憶 ・演算可能な回路・アーキテクチャ／デバイス・
+材料技術の開発
+（1)超低消費電力のデバイス・材料技術
+脳の細胞レベルのニューロン・シナプスを模倣した代表的な演算回路として、スパイキングニューラルネッ
+トワークがある。以前よりCMOS集積回路を用いて研究開発が進められているが、さらなる高効率化、低消
+費電力化、大規模化のためには、新たなデバイス・材料の開発および回路・アーキテクチャの開発が重要に
+なる。特に、デバイス・材料技術とし ては、PCM、MRAM、ReRAM、FeRAMなどの不揮発メ モリやメ モ
+リ スター（memristor）を用いて、シナプスの接続状態を変更する機能や、一定時間保持する機能などが必
+要と考えられる。新材料を用いた不揮発メ モリに関する研究は日本がリードし てきた領域であり、これらを深
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+21
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 32 =====
+層学習の重みづけの部分に使う研究も活発であり、日本の強みを利用しさらに新たな技術を創出する必要が
+ある。また、これまでの2次元的な接続だけでなく、脳のように3次元的な接続を可能とするような配線技術
+も必要である。さらに、神経回路の可塑性を模倣する場合には、回路の接続を自由に変更できるような機能
+を持つデバイスも重要になる。3次元的な接続を可能にする配線技術とし ては、現在の3次元集積化技術のさ
+らなる細粒度化、無線や光を使ったインターコネクション技術、液体や固体の電解質を用いて電界・電流印
+加により金属細線を伸長させる技術（例えば、原子スイ ッチ） 、などの研究開発が必要となる。原子スイ ッチ
+は日本発のデバイスであり、すでにFPGA応用のチップが製造できる技術レベルになっ ており、不揮発メ モリ
+機能と回路接続を自由に変更できる機能、3次元配線機能を合わせ持つデバイスとし ても注目され、日本の強
+みとし て研究開発を進めるこ とが期待される。
+深層学習よりも簡単な構造で時系列データを取り扱い易いものとし て、リザバーコンピューティ ングが注目
+されるようになっ ている。その中でも非線形の物理現象を用いた物理リザバーコンピューティ ングでは、望ま
+れる物理特性に合ったデバイスや材料の開発が重要になる。特に、チップ化に適し ている物理特性を持つデ
+バイス材料とし て、スピンデバイス、FeFET、フォ トニックデバイスなどの研究が重要になる。
+新たにつく られる脳のモデルからデバイス・材料に要求される特性によっ ては、現状のデバイス・材料で使
+われている物理現象では実現できないものもあると考えられ、新たな物理現象や、ノ イズ、ゆらぎの積極的な
+利用も期待される。特に、ノ イズやゆらぎの利用については、超低消費電力化の回路という視点でも興味深い。
+人間の脳が使用できるエネルギーは電力換算で20W程度と言われ、 理化学研究所と富士通が開発した 「富岳」
+の消費電力は30～40MWであり、 実に100万倍以上の開きがあるが、 その要因の一つとし て挙げられるのが、
+ノ イズやゆらぎの扱い方の違いである。現在のデジタ ルコンピュータでは、多段の論理ゲートを正確に動作さ
+せるため、信号のノ イズが演算の都度積み重ならないよう、論理ゲートを通過する度に信号が電源電圧に規
+格化され、徹底的にノ イズが排除される。一方、脳を構成するニューロンの状態は常に変化し動作も確率的
+であるが、これらニューロンの多様性や揺らぎを脳は積極的に活用し ているように見える。超低消費電力の脳
+型AIアクセラレータを実現するためには、こ う したノ イズやゆらぎをうまく利用し ている脳の機能を理解し て
+模倣し、それに適するデバイスおよび回路・アーキテクチャの開発が重要と考えらえる。
+（ 2)アナログメモリ
+大規模脳型ハードウェアを実現するには、ニューロン部の非線形特性よりもシナプス部の方が重要性が高
+いと考えられており、シナプス機能を実現する不揮発性アナログ可変抵抗素子の研究開発が重要となる。不
+揮発性アナログ可変抵抗素子とし て、FeRAM、MRAM、PRAM、ReRAMなどがあり、ほぼ全ての不揮発
+性メ モリが研究対象となる。近年、アナログスピン軌道トルク磁気抵抗メ モリで、スパイ クタイ ミング依存可
+塑性が再現され注目を集めている。不揮発性メ モリは、車載用マイコンのロジック埋め込み不揮発性メ モリや、
+インメ モリコンピューティ ングへの応用に向けて現在最も盛んに研究開発が行われている領域であり、脳型AI
+アクセラレータの研究開発にも多大な影響を及ぼすと考えられ、多ビッ ト化、アナログ記憶、特性安定性・
+再現性の向上など、脳型AIアクセラレータに向けた利用形態の多様化、制御性の向上に関する研究開発を
+進めていく必要がある。
+（3)インメモリコンピューティング
+超低消費電力化、つまり単位電力あたりの演算量を高める方法の一つとし てインメ モリコンピューテイング
+手法がある。従来のノ イマン型の構造ではデータが演算部とメ モリ部の間をア ドレ スとデータバスなどを介し
+22
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 33 =====
+て行き来し ている。バス間をデータが行き来するだけで大きな消費電力を要する。この手法はその消費電力を
+削減するために演算部とその演算に必要なメ モリ部を近くに配置するこ とでその消費電力を削減するものであ
+り、深層学習用の積和演算を行う回路とし て研究開発が盛んになっ ている。脳においても演算部と記憶部が
+一体化した構造になっ ており、このようなインメ モリコンピューティ ングの研究は重要と考えられ、演算部とメ
+モリ部をうまく アナログ回路化するこ とでさらなる低消費電力化に向けた研究開発を進めていく こ とも必要で
+ある。
+（4)積和演算におけるアナログ回路技術
+深層学習の各層の結合のウェイ トを決める演算の基本は積和演算である。その実現方法とし ては、例えば
+信号を電流値とし て和を電流加算、積はオームの法則（V=IxR）を利用しRを係数とすればよ く、積和演算
+の出力となるVは信号 Iと係数 Rの積となる。スパイ キング回路ではその積和の値 Vを閾値と比較するための
+コンパレータが必要になる。ここで電力を消費する主な要素は電流などの信号を表現伝達する部分、および
+コンパレータであり、その実現方法に多くの工夫が求められる。複数のトランジスタの組み合わせで構成され
+るCMOSコンパレータでは出力が変化しない場合でも電力を消費するのが一般的なため、低消費電力化・小
+型化には適さない。このため、ゼロアイ ドル電流の特性を持つ小型のコンパレート素子の実現が求められる。
+またメ モリ スタなど重みを表現する接続や書き込みが容易な小型素子の開発や、その低消費電力化へ向けた
+回路技術の開発も進める必要がある。
+（5)配線再構成技術
+ニューロンは数多くのシナプス結合で他のニューロンとつながっ ているが、現在のCMOS回路の配線技術
+では多くの結合を効率良く配線するこ とができない。また配線自体は事前に決定する必要があり一旦製造さ
+れれば柔軟に接続を組み替える事は不可能である。実際の脳に近い構造や機能を実現するには、多くの信号
+を集め結合する方法を開発する必要がある。更に理想的にはその結合が柔軟に変えられる方法が実現できれ
+ば、回路の設計手法に革命をもたらす可能性がある。先に述べた原子スイ ッチのようなデバイスをうまく活用
+できる回路・アーキテクチャの開発が期待される。
+3.3 脳型AIアクセラレータの開発
+（1)新たな脳の数理モデル・情報処理技術と超低消費電力回路・デバイス・材料技術の融合
+上記の3-1および3-2で記載した技術を融合させるこ とにより、脳型AIアクセラレータの開発を行う。具体
+的には、短期的にアクセラレータの有力な候補とし てこれまで研究開発が進められてきたニューロモル フィ ッ
+クコンピューティ ングや、リザバーコンピューティ ングの高度化を進めると ともに、長期的には脳の高次機能
+による新たな数理モデル・ アルゴリ ズムに対応したコンピューティ ング（高次脳型コンピューティ ング）のチッ
+プ設計に関する研究開発を行う。ニューロモル フィ ックコンピューティ ングや、リザバーコンピューティ ングの
+高効率化・低消費電力化を進めるこ とで、従来の深層学習チップよりも効率的な学習や低消費電力化が可能
+なこ とを示すこ とが必要であり、研究開発の詳細については以下の(2)および(3)に示す。
+脳の高次機能を模倣したアクセラレータの設計・開発については、身体・環境の把握と運動制御、予測・
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+23
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 34 =====
+判断をリアルタイ ムに行えるこ となどを目標にする。具体的にどのような数理モデルが提案されるかはまだわ
+からない状況ではあるが、身体性を考慮した数理モデルや、脳の大きな特徴である記憶と演算が共存・一体
+化し ているこ とを記述する数理モデルの構築が望まれる。特に、身体性を考慮した数理モデルに基づく脳型
+AIアクセラレータについては、実空間上のエッジ応用に向けた新たなAI技術とし て、多くのセンサからの情
+報収集とアクチュエータの制御とも密接に関係し て く るので、大きな期待がある。
+これらのアクセラレータ開発に関する短期的および長期的な研究開発課題に加え て、応用に向けた研究開
+発、アクセラレータへの最適なタスクの割り当てを可能とするソフ トウェアなどの研究開発も必要であり、こ
+れらについて以下の(4)および(5)に示す。
+（ 2) ニューロモルフィックコンピューティング
+脳の基本構成要素であるニューロンやシナプスの動作を物理デバイスにより再現するニューロモル フィ ック
+コンピューティ ングの開発が、脳型AIアクセラレータの研究開発の中心的な課題の一つであり、図3-2に示
+すロードマップに沿った研究開発が望まれる。特に、ニューロンの膜電位のスパイ ク状のパルス信号を考慮し
+たニューロンのモデル「スパイキングニューロン」 、およびそれを用いて構成したネットワーク「スパイキング
+ニューラルネッ トワーク（Spiking Neural Network: SNN） 」に基づく高集積・低消費電力のチップの開発
+が重要である。
+1998年に、前段ニューロンと後段ニューロンの間のシナプス結合加重の変化がそれぞれの出力スパイ クの
+タイ ミング差に依存するという 、スパイ クタイ ミング依存シナプス可塑性（Spike-Timing Dependent
+Synaptic Plasticity: STDP）[G.Q. Bi and M.-M. Poo: J. Neurosci. 18, 10464 (1998).]が発見され、こ
+れを契機とし てスパイ クタイ ミングを考慮した積分発火型SNNの研究が世界的に活発化し ている。最近は学
+習アルゴリ ズムの改良によりSNNで高い学習性能が得られるようになり、消費電力が低く ノ イズに強いSNN
+の特長が活かせるようになっ ている。2014年にIBMが発表したSNNのチップ「TrueNorth」では、ニュー
+ロン1個に対するシナプス数が256個にとどまり、カエルの脳程度の規模しか実現できなかったが、2017年
+にIntelが1ニューロン当たりのシナプス数を約1000個に増加させたチップ「Loihi」では、スパー スモデリ
+ングのタスクを、同社のマイ クロプロセッサ「Core i7」と比べて演算速度で1万倍、推論1回あたりの消費
+電力は100万分の1で行う こ とができ、圧倒的な性能を示した。さらに、2020年3月にはIntelからLoihi
+を768枚結合させたシステムでネズミの大脳並みの数のニューロンとシナプスを持つSNN演算システム
+「Pohoiki Springs」が発表されている。 SNNの真価は、人間並みあるいはそれを超える能力を発揮するこ
+とにあり、さらに高密度化・高接続数や超低消費電力化を可能とする必要があり、この実現に向けた研究開
+発が必須である。
+（3)リザバーコンピューティング
+リザバーコンピューティ ング（RC）についても、 図3-2のロードマップに沿った研究開発が望まれる。特に、
+アクセラレータ とし て従来のマイ クロプロセッサと一緒に使う こ とを想定すると、素子を集積し てチップ化でき
+る物理リザバーコンピューティ ングの開発が重要となる。
+80年代から、現在の深層学習のベー スである順伝搬型・階層構造のニューラルネッ トワークに加え て、深
+層学習にはないフィードバックを有する再帰型ニューラルネッ トワーク（RNN）の研究が始まり、今世紀初
+頭にその一つとし てRNNで出力のみの重みを学習するRCが提唱された。このRCのモデルは、大脳皮質の
+微小カラ ム構造のモデルとし て提案されたLiquid State Machineに端を発する[M. Lukosevicius, H.
+24
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 35 =====
+Jaeger, “Reservoir computing approaches to recurrent neural network training,” Computer
+Science Review 3, 127 (2009)]。整然とした階層型ニューラルネッ トワークを用いる深層学習と異なり、
+入力と出力の中間の層（リザバー）は非線形な入出力特性さえ示せばブラックボックスでよく、システムに必
+要とされる複雑な非線形性を持つ様々な物理・化学システムをリザバーとし て動作させるこ とができる。RCは
+時系列のパターン認識が重要な役割をし ている応用に有望であると考えられ、2015年頃からNNを構成する
+ネッ トワークに実際の物理系をリザバーとし て用いるRCが盛んに研究されるようになっ ている。
+物理リザバーの種類とし ては、①非線形のネッ トワーク構造を持つもの（メ モリ スタ、FeFET、バネ、細胞
+など） 、②フィードバックを持つ単一の非線形システム（光デバイスなど） 、③連続媒体（液体、磁性体、弾
+性体など）がある。物理リザバーを用いたRCでは、システムがエコステート プロパティ（応答が過去の変数
+系列の関数）であるこ とが必要条件であるため、使用するシステムが数学的にこの要請を満足するかをまず
+検討する必要がある。また、物理リザバーの善し悪しを判断する基準は、リザバーを構成する物理系がどれ
+だけリ ッチで複雑な非線形システムであるか、また物理系そのものに多くの情報が記憶可能であるかなどであ
+り、これらの点を検討するこ とが重要になっ て く る。また、現在主流の深層学習は層の数や計算精度、データ
+量などの計算コス トに依存し て学習・認識性能が向上し ていく という特徴があるが、RCにおける性能はタスク
+と物理リザバーの種類によっ て大き く変わっ て く ると考えられ、タスク と性能の関連を物理系に即し て数理モデ
+ルを用いて定量的に解析するこ とと、タスクに即した最適な物理リザバーを探索・設計し ていく こ とは重要な
+研究開発課題となる。
+RCはその単純な構成にもかかわらず 、複雑系のカオス的なダイ ナミクスによる豊かな情報表現と、多様で
+分散した情報の統合とを同時に実現する可能性のあるシステムとし て、脳機能の一部を実現する可能性を秘
+めている有望なモデルと言える。このため、デバイスの物理的・動力学的性質を直接的に利用するRCの実現
+は、デバイス・材料分野から脳型AIアクセラレータ構築への大きな礎になると期待される。
+一方で応用面から見ると、RCは現在画像認識等で大きな市場を獲得し ている深層学習と比較し てどのよう
+な応用がキラー アプリ となるかがはっきり し ていない。一般的には、リアルタイ ム性や少量のデータ処理が必
+要であるエッジAIとし ての適用が想定されているが、用途によっ て必要なハードウェアの性能、大きさ等が決
+まっ て く る。応用に応じた仕様の策定、仕様に応じたアルゴリ ズムの開発や物理リザバーの非線形性を制御す
+る周辺回路の開発なども重要である。エッジ応用では周辺回路のオーバーヘッ ドを極力低減したいので、そ
+の観点が社会実装へのチャレ ンジを成功させる鍵となる。
+（4)応用に向けた研究開発
+実際のアクセラレータ開発に当たっ ては、デバイス・回路設計だけでなく、大規模化のための配線・実装
+技術についても研究開発をし ておく こ とが重要である。特に、シナプスのように3次元的に大量の接続を行う
+ようなこ とを考えると、これまで半導体プロセスで用いられている3次元配線とは桁違いの接続が可能な技術
+を検討する必要がある。例えば、近接場結合、電解質中の金属細線形成などの新たな3次元配線・実装技
+術の開発が望まれる。また、新材料による不揮発メ モリ機能を利用する場合には、トランジスタなどの演算デ
+バイスと同じ層にするのか、配線と同じ層にするのかといったレイアウト上、プロセス上の課題もあり、デバ
+イス・回路設計とのつながりも考慮したチップ全体の設計を考え ていく必要がある。
+想定する応用先で求められる機能を想定した設計（ド メインスペシフィ ックな設計）が重要になる。特に、
+脳型AIアクセラレータの重要な応用領域とし て考えられる実空間におけるサービスロボッ ト、スマートロボッ
+トなどのロボティクス分野においては、様々な多くのセンサおよびアクチュエータを搭載しており、多くのセン
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+25
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 36 =====
+シング情報の中から重要な情報を選択し て認識・判断し、判断した結果を複数のアクチュエータに効率的に
+伝えるなど、これまでのAI処理になかった実空間対応の機能の開発が要求される。例えば、スマートロボッ
+トには、オー プンな環境である程度自律性を持っ て稼働するこ とが求められ、(1) 自己と環境の的確な状況認
+識、 (2) オー プンな環境変化への対応、 (3) リアルタイ ムの制御などが求められる（戦略プロポーザル「ナ ノ ・
+IT・メカ統合によるロボッ ト基盤技術の革新　～人に寄り添うスマートロボッ トを目指し て～」 ：CRDS-
+FY2015-SP-03参照） 。このような実空間対応の機能を実現するためのシステム設計が重要になる。このよう
+な多くのセンサ入力を瞬時に分別・処理する技術は非常に難度が高く挑戦的な課題であるが、逆にそれが可
+能になると技術的にも産業的にも大きな優位性をもつこ とになると考えられる。
+さらに、脳型AIアクセラレータの性能や潜在的な能力を社会に対し てアピールできるように、特定の応用
+を想定したフラグシップチップを開発し、アクセラレータの進捗具合や実使用への段階が分かるようにし てい
+く こ とも重要である。例えば、サービスロボッ トが周囲の環境変化を把握し て、障害物を取り除いたり避けた
+り しながら目的の場所まで移動するという場面を想定すると、複数のイ メージセンサ、音響センサ（マイ ク） 、
+温度センサ、GPS、加速度センサ、接触センサ、匂いセンサなどからの情報を総合的に把握し て、今後の環
+境変化を予測し、次の行動を判断し、腕や足のアクチュエータに指令を与えるこ とができるロボッ トAI制御
+チップが必要になる。この状況判断や予測、制御の正確性や処理の速さを進捗の指標にし て、技術レベルを
+可視化し ていく こ とが重要になる。
+(5)アクセラレータチップを効率的・適切に利用するためのソフトウェアなどの研究開発
+脳型AIアクセラレータのチップを作製し ても、それを効率的に動かすためのソフ トウェアがないと、全体の
+コンピュータシステムの効率化・低消費電力化が図れない。このため、ホス ト となる汎用コンピュータ上に、
+アクセラレータへのタスクを割り当て、実行させるソフ トウェアの開発も重要である。ここでは、ソフ トウェア
+開発の視点から全体の効率化のためにアクセラレータのハードウェアの仕様に対する要求も出て く るこ とが考
+えられるため、アクセラレータの開発と利用ソフ トウェアの開発は密に連携しながら行う必要がある。
+また、脳型AIアクセラレータの誤動作やノ イズによるエラーが発生し ても、全体のコンピュータシステムと
+し て正常に機能し続けるフォールト トレランスについても検討し ておく こ とが重要である。人間の脳の場合には、
+突発的に誤った判断をしそうになった時に、社会倫理、過去の経験、将来予測などと照らし合わせて誤りを
+訂正するこ とができるが、同様な機能についても検討し ておく必要がある。このようなフォールト トレランスの
+機能が脳のどの階層で行われているかまだ解明されていないので、脳型AIアクセラレータ自身に実装できる
+かどうかはわからない。しかし、コンピュータシステムは CPUとアクセラレータとの協調で動くので、アクセ
+ラレータからおかしな結果が返されてきたときには、少なく ともソフ トウェアにより特異な出力結果を破棄した
+り、アクセラレータにやり直しを指示したりすることは可能と考えられる。
+脳型 AIアクセラレータに求められる機能の一つにリアルタイ ムの判断がある。いく つかの判断の候補を出し
+て、その中から状況に最適なものを選別し ていく こ とが考えられるが、その候補があまりにも多く なっ てしまう
+と、それぞれの候補を出すための時間や、それらを比較する時間が長くなってしまい、リアルタイ ム性が失わ
+れる。このため、候補の数を少なく するためにある程度バイアスを掛けて候補を出す必要があり、それには脳
+の思考にバイアスがかかる特徴を積極的に活かすこ とも重要と考えられる。
+26
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 37 =====
+コラム 2
+物理リザバーAIブーム
+近年人工知能や機械学習による情報処理が飛躍的な発展をとげている。それを
+支え ているのが画像認識をはじめとする多様な応用で高い性能を発揮するディー プ
+ラーニング（深層学習）で、これには階層的ニューラルネッ トワークが利用されて
+いる。一方、再帰的ニューラルネッ トワークは、前の時刻のニューロンの状態が、
+他のニューロンにフィードバック入力されるような構造であり、時系列情報の機械
+学習に適している。リザバーコンピューティングはその特殊なモデルを基礎として発
+展してきた 。
+リザバーコンピューティ ングのシステムでは、リザバーと呼ばれる非線形な応答
+や情報記憶を司るデバイスに、複数の入力と複数の出力が接続されている。最近の
+アルゴリ ズムでは、出力層の結合のみを学習する方式が開発され、高速な学習が
+可能となった。初期のリザバーは、非線形活性化関数を有する人工ニューロンか
+ら構成されるEcho State Network（ESN)、あるいはスパイ キングニューロンの
+結合からなるLiquid State Machine（LSM)のように脳のシナプス結合を模した
+再帰ニューラルネッ トワークであった。 ESNとはリザバーの中で過去の入力情報を
+反響（Echo）させて、時系列入力のパターンを学習するアルゴリ ズムで、各時刻
+での入力の影響がリザバー内で時間と ともに徐々に消失し ていく性質（Echo state
+property（ESP） ）を持つように設計する。他方LSMは、脳の皮質における時間
+依存情報のリアルタイ ム処理を模した構造で、非線形な連立微分方程式で記述され
+る。いずれも、リザバーが適切な「記憶」が可能で豊かな非線形性を持つこ とが
+要請されている。
+このようなリザバーに求められる性質は、数学的には入力を非線形変換により高
+次元の特徴空間に射影するこ とであり、必ずしも再帰的ニューラルネッ トワークを
+用いる必要はない。そこで最近、非線形性を有する様々な物理系をリザバーとし て
+用いる試みが極めて盛んになっ てきた。これまで報告されている物理系は、力学系
+モデル（遅延力学系、セルオート マ ト ン、結合振動子） 、電気回路（ASIC、FPGA、
+VLSI、アナログ回路、ニューロモル フィ ック回路、メ モリ スタ） 、光学系（光増幅
+器、レーザ共振器） 、スピン系（スピン トルク発振器、スピン波） 、機械系（ばね
+系、テンセグリティロボッ ト、ソフ トロボッ ト） 、生物系（脳部位、培養細胞）など
+百花繚乱状態である。これらの物理系のリザバーとし ての性能は、ESPや記憶容量
+（Memory capacity）を調べるこ とでベンチマークされる。また、その性質は非
+線形力学系理論、情報・統計理論を用いて解析され、リザバーのダイ ナミクスと全
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+27
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 38 =====
+体の計算性能の間の関係を明らかにしよう とする研究も活発に行われ、数学・数理
+の研究者の間にも流行の波が広がっ ている。
+以上のように、リザバーコンピューティ ングは、従来の機械学習が得意でない時
+系列パターン処理を行うのに大変便利なシステムで、今後ますます実用化に向けた
+ハードウェアデバイスの開発が期待される。他方、リザバーコンピューティ ングの
+数理モデル化の研究が進展するこ とで、似たような非線形性を有する脳の情報処理
+機構の理解が進むと予想される。この分野は、ハードとアルゴリ ズムが相互に絡み
+合っ て発展するという意味でも、たいへん興味深い研究分野と言えるのではないだ
+ろうか。
+（参考文献）
+• 田中剛平：リザバーコンピューティ ングの概念と最近の動向：電子情報通信学会
+誌 Vol. 102, No. 2, 108 (2019).
+• Kohei Nakajima: Physical reservoir computing—an introductory
+perspective: Japanese Journal of Applied Physics 59, 060501 (2020).
+28
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 39 =====
+4 研究開発の推進方法および時間軸
+上記の研究開発を効率的に進めていくためには、長期的な視野に立ち、強いリーダーシップにより脳科学、
+数学・数理科学、情報科学、ナ ノテク・材料技術の異分野の連携を促進するこ とや、産業界を巻き込ん で魅
+力的な応用領域（例えばロボティ クス）を決めて我が国がリードできるシナリオを描き、 時間軸とテク ノロジー
+レベルを考慮した研究開発の推進が重要になる。そのためには、5年程度の短期的な視点、10年程度の長
+期的な視点に関わらず、脳科学の知見を新たな情報処理技術、次世代の人工知能技術、チップ化技術に活用
+するこ とを強く意識し、コンピュータやプロセッサの研究開発に携わっ てきたリーダーが必要である。その下
+で明確な目標を掲げ脳型AIアクセラレータの開発を目指すこ とが重要である。また、具体的な研究開発課題
+のところ でも述べたが、脳科学の知見から出発し て数理モデル、アルゴリ ズムへと進む流れと、逆にデバイス
+材料から出発し て回路・アーキテクチャ、アルゴリズムへと進む2つの流れで、それらの融合を図る体制を構
+築するこ とが重要である。一方で、これらの体制の中で得られた知見や技術を蓄積し ていき、国内外との連
+携によるチップ化や応用領域の探索などのエコシステムの構築を進めていく必要がある。さらに日本国内にお
+いて裾野を広げるため、脳科学、数学・数理科学、情報科学、ナ ノテク・材料など異分野の学会間の連携を
+進め、他分野に興味を持つ人材育成を促進するこ とで、新たなコミュニティの形成に結びつけていく こ とが重
+要である。以下、これらについて図4-1を参照し て説明する。
+4.1 脳科学、情報科学、数学・数理科学、ナノテク・材料との密な連携
+脳型AIアクセラレータの研究開発には、脳科学、情報科学、数学・数理科学、ナ ノテク・材料との密な連
+図4-1 脳型 AIアクセラレータ研究開発の推進方法
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+29
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 40 =====
+携が必要であるが、特に情報科学、数学、ナ ノテク・材料分野の研究者が新たな情報処理技術・AI技術を
+創出するこ とを目的に、脳科学の研究者の領域へ積極的に踏み込ん でいく こ とが重要である。これまでの脳
+型情報処理に関する国内外の大型のプロジェク トにおいては、脳の理解や情報処理機構の解明を最上位の目
+的とし、それに付随する形で脳型の計算原理・コンピューティ ングの研究が行われてきた。このような研究体
+制では、脳の情報処理機構を忠実に再現するこ とを目指す研究に偏っ てしまい、脳の特異な構造や信号伝達・
+信号処理からヒン トを得た情報処理に関する飛躍的な発想は生まれに く い。現状の人工知能技術では不可能
+な高度な情報処理機能や消費電力を大幅に低減できる新たな技術の獲得を目指す際には、脳の情報処理機
+能の再現という目的はかえ っ て技術開発の妨げになりかねない。したがっ て、脳の知見を工学的に利用する視
+点で、脳にヒン トを得たAIハードウェア技術の獲得を第1の目的にした連携体制の構築が必要である。また、
+脳科学の研究者も、 脳の忠実な再現ではない目標に対する理解と、 新たな情報処理のモデル構築、 ハードウェ
+ア開発に対する積極的な取り組みが重要である。
+その要になるのが、この研究を推進するプロジェク トのリーダーである。リーダーとし ては将来のコン
+ピュータシステムを見据え て、新たな情報処理モデルの構築とチップ化をやり とげる強い意志を持ち、ハード
+ウェアとソフトウェアの両方を把握できることが必要なため、これまでにコンピュータシステム、プロセッサ開
+発、新たな回路・アーキテクチャ開発に携わっ てきた人材が望まれる。出身の研究機関とし ては大学、国研、
+企業が考えられるが、 研究開発のフェー ズや技術開発レベル（TRL）を考慮し て人選するこ とが必要であろう。
+例えば、機能検証段階では大学や国研の研究者をリーダーにし、性能実証段階では国研あるいは企業の研究
+者をリーダーにすることも考えられる。
+脳科学、情報科学、数学・数理科学、ナ ノテク・材料の異分野の研究者が日常的に活発に交流できる場所
+を提供し、脳の情報処理モデルに対する熱い議論を通し て相互作用を起こす ような研究環境の整備も重要で
+ある。このような研究環境を実現するためには、異分野の研究者・技術者が集まれる研究拠点の構築が望ま
+れる。例えば、すでにWPIとし て脳科学、数学・数理科学、情報科学などの連携によるIRCNが設立されて
+おり、このような形の基礎研究を主な目的とした研究拠点の形成が考えられる。また、もう少し応用や実用化
+を意識し国のプロジェク トを効率的に遂行するこ とを目的に、中心となる研究機関において産官学のコンソー
+シア ムのような形も考えられる。さらに、研究拠点は一つである必要はなく、例えば図4-1に示す ように脳の
+情報処理モデルごとにいく つかの研究拠点を形成し てもよい。複数の研究拠点を設ける際には、リーダーある
+いはそれぞれの拠点でのサブリーダーの意思やマネージメ ン トが全体に行き届く ような体制の構築が必要であ
+る。これらの研究拠点において、脳科学、数理モデル、アルゴリ ズム・ソフ トウェア 、回路・アーキテクチャ、
+デバイス・材料など異分野の研究者・技術者が集まり議論するこ とになるが、それぞれの興味や使う専門用
+語が異なっ ているため、円滑なコミュニケーションが難しい。このため、それぞれの立場・研究の興味の理
+解や、言葉の理解（同じ言葉でも専門領域で意味が異なる）など、日々の研究活動や生活の中で相互理解が
+進むような取り組みや場の設定が重要である。
+また、これらの研究拠点においては、研究者・技術者の入れ替わりが頻繁に起こると考えられるが、そこ
+での研究成果や知識が研究拠点に蓄積されていく ような仕組みの構築も重要である。これについては、以下
+の4-3において述べる。
+このような研究拠点の構築は時間軸を考慮し て検討する必要がある。脳科学、数学・数理科学、情報科学、
+ナ ノテク ノロジー・材料の分野の研究者を集めて、脳型AIアクセラレータ開発の研究拠点をすぐに構築する
+こ とも考えられるが、魅力ある応用先やコアになる技術がまだ明確になっ ていない状況では、産業界の参加
+が難しい。このため、最初はすでに存在する研究拠点（例えばIRCNなど）と連携・協力し て、プロジェク ト
+30
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 41 =====
+の下でネッ トワーク的な研究拠点を形成し、魅力的な応用先を見つけながら、コア技術を創出し ていくのがよ
+いと考えられる。その後に産業界も含めて異分野の研究者が集まる実際の研究拠点を構築し て、明確な応用
+を目指した産学連携の強固な研究体制をつく っ ていく こ とが必要であろう。
+4.2 脳科学・数理モデルからと材料・デバイス・回路から攻める体制
+これまでの脳型AI研究においては、脳科学の知見から出発し て数理モデル、アルゴリ ズムと進む流れが主
+であった（図3-1の❶の矢印） 。しかし、背景のところ で述べたように、ムー アの法則が破綻し て微細化によ
+る半導体の高性能化・低消費電力化が困難になるこ とから、現状のコンピュータ技術やAI技術に対し て危機
+感を持っ ているのは材料・デバイス・回路の研究者であり、脳型AIアクセラレータへの期待も大きい。この
+ため、脳科学・数理モデルから出発し、アルゴリ ズム、回路・アーキテクチャ、デバイス・材料へと波及し て
+いく研究の方向性と ともに、デバイス・材料から出発し て回路・アーキテクチャ 、アルゴリ ズムへと進む流れ
+を構築するこ とも重要である（図3-1の❷の矢印） 。ただし、ここで注意すべきこ とは、デバイス・材料の研
+究者が独りよがりにならないようにするこ とである。新たなデバイス・材料を新たな情報処理モデルに繋げて
+いく ために、回路・アーキテクチャ、アルゴリ ズム、数理科学、アプリケーションなどの技術レイ ヤーの研究
+者たちと常に議論し、立ち位置や研究の方向性を明確にし ていく こ とが重要である。
+ハードウェアに関する研究開発においてはこれまで、デバイス ・材料、集積回路・ アーキテクチャ、モデル・
+アルゴリ ズム、システム・応用という、各技術階層の研究者による分業体制で行われてきた。しかし、脳型
+AIアクセラレータの研究では図1-1に示したように、脳科学、数学・数理科学といった分野の異なる新たな
+技術レイ ヤーの研究者が加わり、これらが絡み合いながら研究を進めていく こ とが必要になる。異なる分野・
+階層の技術者間ではバックグラウン ドとなる知識も大き く異なり、議論がかみ合わないこ とも少なく ない。脳
+科学、数学・数理科学、デバイス・材料、回路・アーキテクチャ 、実装・配線、アルゴリ ズム・ソフ ト、人
+工知能、応用までの広い学術分野、技術階層間の連携を効果的に進めるためには、複数の技術階層に精通
+するインターディ シプリナリな人材の育成が重要となる。例えば、材料やデバイスの研究者は、物性物理や材
+料科学、電子工学の知識だけでなく、集積回路のアーキテクチャ、ソフ トウェアに関する専門知識も併せ持ち、
+応用側の視点から材料技術、デバイス技術の新しい可能性を引き出す能力が求められる。
+4.3 技術・知識の蓄積とチップ化のエコシステムの構築
+研究拠点において研究開発を進めていく ときに、それぞれのプロジェク トで得られる研究成果やノウハウを
+蓄積し ていき、それを研究拠点全体で活かすと ともに、日本の強みとし て活用し ていく こ とが重要である。国
+のプロジェク トを実施し ている間は、公的研究機関の研究拠点に最先端の装置や産官学から優秀な研究者・
+技術者が集まり、新たな研究成果や装置を生み出したが、プロジェク ト終了後に、人がそれぞれの研究機関
+に戻り、先端の技術やノウハウ、装置が散逸し て、研究拠点となっ ていた公的研究機関に技術や知識が残ら
+なかった例が多く見られる。このようなこ とを避け、研究拠点あるいは中心となる研究機関に技術や知識が蓄
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+31
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 42 =====
+積され活用できるようにし ていく仕組みを検討し ておく必要がある。例えば、図4-1において、脳の各階層に
+おけるそれぞれのプロジェク トを遂行し ているときに、プロジェク ト間で情報を共有するこ とに加え、横ぐしと
+なる技術レイ ヤーの研究者がそれぞれのプロジェク トの知見について議論し、それを学術的な視点で一般化
+し共有化していくことなども考えられる。これにより、あるプロジェクトの人が入れ替わっても、他のプロジェ
+ク トの人からそれまでの知識を受け継ぐ こ とが可能となり、中心となる研究機関にも知識が蓄積されると考え
+られる。
+脳型AIアクセラレータの研究開発のようなハードウェアの研究開発体制を強化するためには、新しいアイ
+デアを速やかに具現化できるよう、ファウン ドリーでの試作を仲介する設計サービス機能を強化する必要があ
+る。現状、日本国内ではファウン ドリービジネス自体が育っ ておらず 、半導体製造プロセスの知識や技術を蓄
+積する体制すら脆弱である。このため、先端のプロセス技術を有する海外のファウン ドリーを使えるような体
+制を構築するこ とが重要である。すでに大学の中には海外のファウン ドリーと提携し て先端プロセスによる試
+作サービスを受けられるようにし ているところもあるが、このような海外ファウンドリーとの協力体制を独自に
+構築するか、すでにこのような仕組みを持つところと連携を図る必要がある。また、脳型AIアクセラレータで
+は、従来のSi-CMOSデバイスだけではなく新動作原理のデバイス・材料の開発が求められるため、これまで
+の標準的なシリコン集積化プロセスだけではなく、新たな材料を取り扱えるプロセスの開発も必要になる。そ
+のため、画一的なファウン ドリーとは異なるフレキシブル・マニュファクチャ リ ングのサービスも必要になる。
+これには、TIAのような様々な材料を扱える集積プロセス技術を持つ機関との連携も重要になる。また、将
+来的に多様なセンサと脳型AIアクセラレータ との集積化・一体化を考え ていくには、産業技術総合研究所が
+開発し ているミニマル ファブのような新たな製造方法の検討も必要になる。ミニマル ファブでは、それぞれの
+装置を小型化し てク リーンルームを不要とするこ とで、大幅な省エネ化と低コス ト化、短期間の製造を実現し、
+多品種少量といった潜在的な半導体生産ニー ズにフレキシブルに適応できると期待されており、脳型AIアク
+セラレータのように様々なアイデアをすぐにチップ化できるファウンドリーサービスの新たな形としても注目さ
+れる。このような国内のファウン ドリー的機能を活用するこ とで、そこに新たな材料のプロセスなどの知識や
+ノウハウが蓄積するような形になれば、日本の技術力強化につなげることができると考えられる。
+さらに、職業研究者にとどまらず 、アマチュアが個人的趣味でデバイスや回路のプロトタイプを製造できる
+時代の到来も予想される。 Chris Andersonが提唱したMaker Movement［ク リ ス・アンダーソン
+著”Makers” NHK出版 （2012） ］ では、 3Dプリ ンタやArduinoなどのオー プンソー スハードウェアの登場で、
+個人がプロトタイプ製品を製造できるようになり、ものづく りを趣味とするアマチュア集団による新産業革命
+が起こるという未来予測がなされており、こ う した動きがナ ノエレク トロニクス分野に波及する可能性も十分
+考えられる。特に脳型AIアクセラレータは、ロボッ トなどエッジにおける応用が期待されものの、魅力的な製
+品イ メージや市場がまだ明確になっ ておらず 、すぐに大規模な研究開発体制を敷ける状況にはない。むしろア
+マチュア集団の趣向的活動の中からキラー アプリが登場し、研究開発をけん引する可能性も考えられる。従
+来の常識にとらわれない、新発想のコミュニティやプラッ ト フォームを形成するこ とが、次の時代のイ ノ ベー
+ションの醸成につながると考えられる。
+4.4 産業応用を見据えた新たなコミュニティの形成、産学連携、国際連携
+32
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 43 =====
+脳型AIアクセラレータを実用化し魅力的なマーケッ トや社会に実装し ていく ためには、アカデミアと産業界
+との連携が必須である。明確な市場がまだ見え ていない中長期的な研究開発に対し て、産業界がすぐに人材
+と資金を投入するこ とは難しいが、技術的な魅力と将来産業・市場へのポテンシャルをアカデミアと産業界が
+一緒に議論し将来のターゲッ トを共有し ていく こ とで、徐々に連携やプロジェク トへの参加が増え ていく と考え
+られる。例えば、スマートロボッ トは今後の社会的なニーズも大きく、これまでの日本の強い技術力を生かせ
+る領域であるので、脳科学、数学・数理科学、情報処理、デバイス・材料関係の学会を跨ぐ形で、スマート
+ロボッ トあるいはスマートロボッ ト用のAI技術について議論するコミュニティを形成し ていく こ とが望まれる。
+2019年から応用物理学会にAI技術を議論する「AIエレク トロニクス」のセッションが立ち上がっ ており、こ
+のような活動の発展を期待したい。
+このような学会レベルの活動だけではなく、先に述べたプロジェク トや研究拠点においても産学連携の仕組
+みを構築し ていく こ とが重要である。個々の大学と企業との共同研究もよいが、共通の問題意識を持つ多くの
+人の情報交換・交流の中から多くの新たなアイデアが出て く るので、プロジェク トや研究拠点において産業界
+が入っ てきやすい目標や仕組みを作るこ とが望まれる。例えば、マルチセンシングに対応した介護ロボッ ト用
+の脳型AIアクセラレータを作るという目標を立てると、 チップ メーカー、 IT企業だけでなく、 センサ、 ロボッ ト、
+介護サービスなどの企業も参加しやす く なると思われる。
+このような産学の連携を進めていく中で、4-3で述べた技術・知識の蓄積とともに、技術の知財化、IPコ
+ア化、国際標準化などの戦略的な取り組みを行っ ていく こ とが重要である。特に、情報処理・人工知能技術
+における日本の産業競争力の強化に向けて、知財、IPコアの取得は必須であり、脳科学の知見から新たな数
+理モデルを創出した段階や、新たな回路・アーキテクチャ 、新デバイス・材料を考えた段階での基本特許の
+出願、その後の周辺技術の継続的な出願を行い、コア技術に対する強い特許群を形成し ていく必要がある。
+そのためには、産業界だけでなく大学・国研の研究者も特許意識を高めていく こ とが必要であり、産学での
+日々の議論ができる体制・仕組みの中での知財化の活動が望まれる。さらに、コア技術を基にした国際標準
+化の活動を積極的に進めていく こ とも期待される。人工知能関係の国際標準化とし ては、2017年に国際標準
+化機構（ISO）と国際電気標準会議（IEC）がAIに関する合同技術小委員会（ISO/IEC合同技術委員会1、
+AIに関する小委員会42）が設置され、人工知能に関する概念や用語の定義、システムのフレーム ワークの整
+理がなされている。この動きに注目し ておく と ともに、ISO、IECにおけるデバイス・材料、回路・アーキテク
+チャ関係の活動に提案できるかを検討し、可能性がある場合には積極的に提案し て世界での産業化の促進に
+貢献し、日本の存在感を高めていく こ とが望まれる。
+全てのこ とを国内だけで実施しよう とすると、日本がまだ取り組ん でいない研究領域や弱い技術領域に対し
+ては遅れがちになっ てしまうので、海外との連携についても積極的に行う必要がある。例えば、先に挙げた先
+端プロセスを用いたチップ作製に関し ては、台湾の研究機関や企業との連携が考えられ、また欧州の
+Human Brain Projectや米国のBRAIN Initiativeに参加し ている研究機関との連携も考えられる。例えば、
+ReRAMやFeFET、原子スイ ッチなどのデバイス・材料開発や動作解析では日本の研究レベルが高いが、こ
+れらとCMOS回路との集積プロセス技術では台湾の研究機関やファウン ドリー企業の技術力が高く なっ てお
+り、互いの技術を補完する形の国際共同研究の推進が考えられる。また、2013年から脳の理解や情報処理
+機構の解明を最上位の目的とし て進められてきた欧州のHuman Brain Projectでは、脳科学・神経科学か
+らの知見とスーパーコンピュータによる脳機能のシミュレーションによる多くの知見が得られていると考えられ、
+これらの参加機関との情報交換や人材交流を進めていく こ とが考えられる。脳型のハードウェア開発だけでな
+く、汎用プロセッサとつなぐソフ トウェア 、設計のためのツールなどの開発も行われてきており、参考になるこ
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+33
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 44 =====
+とが多い。日本は先に述べた新たなデバイス・材料の技術や、応用分野とし てのロボッ ト及びその制御技術
+に優れているので、今後の脳型AIアクセラレータの実用化に向けて、国際連携が構築できると期待される。
+このような国際連携活動により、世界の様々な分野の研究者との交流を深めて日本の研究力・技術力を発信
+し、海外からの優秀な研究者の招聘に繋げていく こ とが期待される。また、魅力的な応用領域を探すために、
+ハッカソンやコンテストを共同で企画して、新たなアイデアや魅力的な使い方を見出していくような活動も期待
+したい。
+海外との連携においてオー プンイ ノ ベーションの基本的な方針は維持するものの、開発レベルに応じてオー
+プン・クローズ戦略を持つことも必要である。プレコンペティティブな状況ではほとんどの情報をオープンにし
+てもよいが、企業が参加し て製品化が見え てきた段階では、キーになる技術についてはクロー ズにし て、優位
+性を確保しておくことも必要である。
+4.5 人材育成
+脳型AIアクセラレータの研究開発には脳科学、数学・数理科学、情報科学、ナ ノテク ノロジー材料分野の
+人材が必要になるが、国内では十分な数の研究者がいるわけではなく、その育成が重要である。例えば、脳
+の機能解明や病気の治療には興味があっ ても、情報処理への応用を考える研究者は少なく、ハードウェアの
+開発まで考える人工知能の研究者も少ない。また、アクセラレータ開発の中心となるべき回路・アーキテク
+チャの人材はもともと多く ない。一方で、デバイス材料の研究者は、今後の集積回路の微細化の限界が迫っ
+ているこ とから、危機感を持っ て他の技術領域に発展させていこ う という機運が高まっ ている。また、最近の
+深層学習は脳科学やデバイス材料の研究にも活用されるようになり、デバイス材料研究者の情報処理分野へ
+の障壁は低く なりつつある。このような状況を踏まえると、脳を生理的に研究し、かつ数理科学・情報科学
+にも興味を持ち親和性ある研究者の育成や、回路・ アーキテクチャ人材の育成、デバイス材料研究者の回路・
+アーキテクチャ、人工知能など情報処理分野への進出を促進し ていく こ とが必要である。
+また、次世代のプロジェク ト リーダーを育てていく仕組みも必要と考えられる。リーダーとし て望まれる経
+歴とし ては、コンピュータシステム、プロセッサ開発、回路・アーキテクチャなどの経験があるこ とを述べたが、
+日本におけるコンピュータ産業や半導体産業が小さ く なっ ている状況では、そのような人材はかなり少ないと
+思われる。脳型AIアクセラレータの実現を目指す ようなプロジェク トや研究開発体制、研究拠点は、このよ
+うな経験を積む機会とし て非常に重要と考えられる。プロジェク トや研究拠点の中でチップ開発に直接携われ
+る機会などを通し て、今後のコンピュータシステムまで考えられる人材が育成されるこ とが期待される。
+脳科学、情報科学から材料分野など広範囲にまたがる関連分野すべてを知悉する専門家の育成は不可能で
+も、研究者が各々の専門分野に加え てこれら広範囲の関連分野の知識を持っ ていれば、脳型AIアクセラレー
+タ研究開発のような学際的研究を推進する上で決定的なポテンシャルとなる。日本では高等教育における科
+目選択の硬直性が問題になる。大学院以降は専門教育・研究を最優先にするとし ても、学部教育に柔軟性を
+持たせて、脳科学と数学のダブルディ グリー、脳科学系、情報科学系、工学系科目の幅広い選択の可能性を
+与える方策が必要と考えられる。
+34
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 45 =====
+4.6 時間軸
+脳型AIアクセラレータの実現を目指す取り組みは、長期的に継続される必要がある。例えば、深層学習が
+注目されるようになったのは、コンピュータによる物体認識の精度を競う国際コンテス ト「ImageNet Large
+Scale Visual Recognition Challenge（ILSVRC） 2012」で、トロン ト大学のSuperVisionチームが格段
+に高い認識率を達成し て優勝した時からと考えられるが、そこで使われている基本的なアルゴリ ズムの大部分
+は1990年代に完成し ていた。また、誤差逆伝搬法は1990年代に研究され、福島邦彦らのネオコグニトロン
+コラム 3
+脳の構造・機能と精神的な働き
+300年以上前、ライプニッツは彼の代表的著作「モナ ドロジー」の中で、精神的
+な働きを脳の機械的構造や機能で説明するこ とはできない、という主張を、次のよ
+うなわかりやすい例えで述べている。
+「ものを考えたり、感じたり、知覚したりできる仕掛けの機械があるとする。そ
+の機械全体をおなじ割合で拡大し、風車小屋のなかにでも入るように、そのなか
+にはいってみたりする。だがその場合、機械の内部を探って、目に映るものといえ
+ば、部分がたがいに動かしあっ ている姿だけで、表象について説明するに足るもの
+は、決し て発見できはしない。とすると、表象のありかは、複合体や機械のなかで
+はなく、単一実体（モナ ド）のなかでなく てはならなく なる。 」
+本稿で述べてきた脳型AIアクセラレータは、必ずしも人間の精神活動までも再
+現することを目的とするものではないが、人々が「これは脳に似ている」と認める
+高度な情報処理機能の表象はまさし く ライプニッツの言うモナ ドであり、ライプニッ
+ツの論によれば、それは回路の構造や素子の機能では説明できないことになる。
+「モナ ドは、発生も終焉も、かならず一挙に行われる」とライプニッツは主張する。
+開発し ているものが精神的な働きも含めて脳型AIと呼べるものなのかどうかも、そ
+れが具現化し動作したとき初めて判明するこ となのかもしれない。
+（参考文献）
+• 「ライプニッツ　モナ ドロジー／形而上学叙説」清水富雄、武田篤司、飯塚勝久
+訳、中央公論社
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+35
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 46 =====
+[K. Fukushima et al., Pattern Recognition, 15, 455, (1982)]にルーツを持つ畳み込みニューラルネッ ト
+ワークも1990年代終わりには完成し ていた[Y. LeCun et al., Proceedings of IEEE, 86, 2278 (1998)]。
+深層ニューラルネッ トワークの真価が発揮されるのに時間を要したのは、事前学習に必要な一定以上の規模
+のデータが手に入るインフラが必要だったこ と、またそれらを処理できるGPUやマルチコアCPUなどのハー
+ドウェアが登場する必要があったためと考えられている。脳型AIアクセラレータも、深層学習と似たような形
+で世に登場する可能性がある。基礎的な研究を今から長期的かつ着実に継続し、脳型AIアクセラレータが幕
+を跳ね上げ登場できる時代に備えておくことが重要である。
+一方で、大きな変革をもたらす脳型AIアクセラレータの早期登場のためには、その技術の発展性や革新性、
+社会的な波及効果を期待させる成果を出し続け、周辺技術の底上げや研究開発人材の育成、産業界の参加
+促進により、研究開発を加速させていく こ とが必要である。例えば、深層学習がこのように発展する前に、将
+棋の世界で強いソフ トが次々 と開発・改良されていき、ついには名人を打ち負かす ようになり、世界的にも注
+目されるようになったこ となどがある。このような形で脳型AIアクセラレータの研究開発を進めていく ために
+は、これまでに得られている脳機能の数理モデルとデバイス材料の最適な組み合わせを考え ていく こ とや、現
+状の深層学習プロセスの一部を新たなハードウェアで実行し て、高速化や低消費電力化を示し ていく こ とが重
+要である。
+今後取り組ん でいく研究開発の短期的（5年程度）な目標とし ては、エッジ向けに高効率・低消費電力の
+学習やリアルタイムの認識・判断ができることを目指し、スパイキングニューロンモデルを基にしたニューロモ
+ル フィ ックチップや、物理リザバーによる機械学習チップの開発が考えられる。現状でもエッジ・IoT分野の
+応用を中心に、デジタ ル回路のスパイ キングニューラルネッ トワークが研究開発されているが、今後、不揮発
+メモリやハードウェア的に可塑性を持つデバイス材料を用いたアナログ回路により、ニューロン・シナプスを
+模倣した大規模なニューロモル フィ ックチップが登場し、消費電力および規模の上でこれまでのデジタ ル回路
+に対する優位性が示されると期待される。また、FeFETやスピン 、光などを用いた物理リザバーコンピュー
+ティ ングの研究が現在活発化し てきており、これらの技術を高度化するこ とで、深層学習の一部の層を置き換
+え て高速化・低電力化を図るこ とも考えられる。そし て、このような例題を基に、脳型AIアクセラレータ技術
+が現状の深層学習、 人工知能技術が抱える問題の一部を解決し ていく こ とを示し ていく こ と と、 脳科学、 数学・
+数理科学、情報科学、ナ ノテク ノロジー材料分野にまたがる異分野連携のコミュニティや体制を構築し ていく
+ことが重要である。
+長期的（5年～10年）な目標とし ては、 エッジおよびクラウ ドでの高効率な学習、 転移学習、 外挿的な予測、
+環境変化に合わせた判断、科学的発見など高度な機能の実現を目指し て、脳細胞レベルや神経ネッ トワーク
+レベルだけではなく、脳組織レベル、グローバルなネッ トワーク といった高次の脳機能の知見を活用した新た
+な情報処理モデルの構築、それによるニューロモル フィ ックアクセラレータ、物理リザバーコンピューティ ング
+アクセラレータ 、記憶と演算が一体化した脳型記憶回路、などの開発が考えられる。また、多様なセンサか
+らの情報を収集・選別し てリアルタイ ムに判断し、アクチュエータに適切な指示を出し、一連の動作からリア
+ルタイ ムの学習ができるチップの開発なども期待される。これらのためには、脳全体での柔軟な判断、低エネ
+ルギー消費の機構に基づく新たな情報処理モデルが必要になると ともに、大規模な3次元結合、配線・結合
+制御、不揮発演算回路、などの新たなデバイス技術、回路技術などが必要になると考えられる。このような
+技術が開発されていく こ とで、人間並みの高度な情報処理が可能なクラウ ドレベルでの汎用人工知能への展
+開も期待される。
+これらの活動を後押しし て、日本における脳型AIアクセラレータ関連の知識や技術力を高めていく ためには、
+36
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 47 =====
+ファンディ ングの充実が望まれる。付録2の図S2-1に示す ように、これまで脳科学と情報科学の間を繋げて
+きた2つの新学術領域は終了するこ とから、これまでの成果や知識、人脈を活かす形での継続的な基礎研究
+の推進が必要と考えられる。また、プロジェク トの一部に脳型AIのハードウェアに関する研究が含まれる
+CREST・さきがけ「革新的コンピューティ ング」はすでに公募が終了し ている。NEDOの「高効率・高速処
+理を可能とするAIチップ・次世代コンピューティ ングの技術開発」は2027年度まで継続されるが、現状で
+はAIエッジコンピューティ ングや量子コンピュータなどの割合が多く、脳型AIに関するテーマは少ない。こ
+のような状況にあるため、脳型AIアクセラレータに関する新たな目的基礎研究のプロジェク トの推進や、
+NEDOプロジェク トの中で脳型AIに関するテーマを拡充（2023年度に事業見直し予定）し ていく こ とが望
+まれる。
+このような状況を踏まえ、 図4-2に日本における脳型AIアクセラレータに関するプロジェク トの推進案を示す。
+これまでの関連するプロジェク トの成果や知見を活かす形（黄色の矢印）で、新たなプロジェク トおよびファ
+ンディ ングが必要と考え、黄色の３つのブロック内に記述するように、長期的な研究開発、短期的な研究開発、
+および実用化・産業化の研究開発について時間軸に沿った推進案を示し ている。長期的な研究開発について
+は、JSTの目的基礎研究のプロジェク トが適当と考えられる。このプロジェク トでは脳の組織（視覚野、前頭
+前野、海馬など）および脳内ネッ トワークの構造・機能の知見による情報処理モデル（高次機能の情報処理
+モデル）の構築、脳の高次機能のモデルに基づく物理リザバーコンピューティ ングチップの開発、予測・判
+断などが可能なニューロモル フィ ックチップの開発、人工ニューロン・シナプスの3次元高密度集積・接続と
+図4-2 脳型AIアクセラレータ関連のプロジェクト推進案
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+37
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 48 =====
+物理的可塑性の付加技術開発、などを行う。ここでは、これまで行われてきた２つの新学術領域やCREST・
+さきがけ「革新的コンピューティ ング」 、WPIなどの研究成果や知見などの活用が期待される。この目的基礎
+研究のプロジェク トにおいては具体的な応用を目指し てこれらのいく つかの研究開発課題を含む長期的な目標
+を掲げて、例えば図4-1の脳の各階層（レベル）に対応し て複数の技術レイ ヤーを跨るグルー プを構成するこ
+と、さらに個別にこれらの研究開発課題の中で優れた脳型AIアクセラレータ開発につながる挑戦的なテーマ
+を実施するこ とが考えらえる。ここでは、グルー プ間での知識・成果の共有に加え、各グルー プの同一技術レ
+イ ヤーの研究者やさきがけの研究者が連携し て、各技術レイ ヤーでの新たな学術的な流れを作っ ていく こ とも
+期待される。
+短期的な研究開発とし ては、NEDOのプロジェク トなどが適当と考えられる。学習の高効率化・低消費電
+力化に向けた細胞・神経回路の情報処理モデルの精緻化、物理リザバーによる深層学習の高速化・低消費電
+力化、深層学習チップより優れたニューロモル フィ ックチップ開発、テス トチップ試作によるアプリのアイデア
+公募、などの研究開発課題と取り組みを行う。ここでは、これまで行われてきたCREST・さきがけ「革新的
+コンピューティ ング」 、NEDO「AIチップ・次世代コンピューティ ング」などの研究成果や知見などの活用が
+期待される。 NEDO「AIチップ・次世代コンピューティ ング」はまだ後半が残されており、新規プロジェク
+トでなく とも、見直し段階でここに挙げた研究開発課題を取り込ん でいく こ とも考えられる。
+実用化・産業化の研究開発においては、応用を明確化し て企業を含む体制での大型のファンディ ングが必
+要であり、内閣府のプロジェク ト、NEDOプロジェク トでの推進や、研究組合を含むコンソーシア ムでの推進
+が適当と考えられる。企業も参加する研究開発拠点の形成、サービスロボッ ト応用などの具体的開発目標の
+設定、学習・推論を高効率・低消費電力で行うニューロモル フィ ック／物理リザバー アクセラレータの開発な
+どを行う。ここでは、上記の長期的な研究開発、短期的な研究開発、およびそれまでの様々な研究開発プロ
+ジェク トの成果の中で企業の関心が高く実用化に近いものを選択し、大きな予算で多くのチップ試作を行いな
+がら従来チップよりも優れた性能を実証し、応用システムでの有効性確認や新たな応用領域の開拓などを進
+めていくことが重要である。
+このようなファンディ ング 、プロジェク トの実施に当たっ ては、内閣府、文科省、経産省など関係府省や、
+NEDO、JSTなどのファンディ ング機関との間で、脳型AIアクセラレータに関するプロジェク トの研究開発の
+状況を共有するガバニングボードや推進協議会などの枠組みを考え ておく こ とも今後必要と考えられる。
+38
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 49 =====
+• JST 研究開発戦略センター（CRDS）では、令和２年度に戦略プロポーザルを作成すべきテー マの候補
+を CRDS戦略スコー プ2020検討委員会を経て指定し、 令和２年５月に検討チームを発足させた。その後、
+検討チームにおいて提言作成へ向けた調査・分析・検討を重ねた。
+• チームの活動では、調査によっ て国内外の研究開発動向・技術水準を明らかにしながらスコー プの焦点
+を絞り、その過程において提言の方向性を検討するため、以下の有識者へのインタビュー・意見交換、
+およびセミナー講演を実施した。
+• その上で、脳型AIアクセラレータに関し てCRDS が構築した仮説を検証する目的で、科学技術未来戦略
+ワークショップを開催した。ワークショップの結果は報告書とし て、令和３年２月にCRDS より発行し て
+いる（CRDS-FY2020-WR-07） 。
+• CRDSでは以上の調査・分析の結果と、ワークショップにおける議論などを踏まえ て、令和３年３月に本
+戦略プロポーザルを発行するに至った。
+(1) イ ンタビューとセミナー
+■インタビュー・意見交換を実施した識者 （50音順、敬称略、所属・役職は実施時点）
+合原　一幸 東京大学 特別教授
+秋永　広幸 産業技術総合研究所　 ナ ノエレク トロニクス研究部門 総括研究主幹
+浅井　哲也 北海道大学大学院情報科学研究科 教授
+井上　淳樹 元富士通研究所 特任研究 員
+大木　研一 東京大学大学院医学系研究科　機能生物学専攻統合生理学 教授
+岡田　隆三 東芝研究開発 センター　研究主幹
+尾形　哲也 早稲 田大学　基幹理工学部 教授
+小川　宏高 産業技術総合研究所　人工知能研究 センター　チーム長
+葛西　誠也 北海道大学　量子集積 エレク トロニクスセンター　教授
+加納　敏行 日 本電気株式会社 データサイエンス研究所 主席技術主幹
+神谷　之康 京都大学大学院情報学研究科 教授
+久保田　均 産業技術総合研究所　 エレク トロニクス・製造領域 総括研究主幹
+河野　崇 東京大学 生産技術研究所 情報・ エレク トロニクス系部門 教授
+西郷　甲矢人 長浜 バイオ大学 教授
+杉本　英樹 デ ンソー電子基盤技術統括部 室長
+高木　信一 東京大学大学院工学系研究科 教授
+田中　剛平 東京大学大学院 工学系研究科 電気系工学専攻 特任准教授
+常木　澄人 産総研 スピン トロニクス研究センター 主任研究員
+銅谷　賢治 沖縄科学技術大学院大学 教授
+トー プラサートポン　カシディ ッ ト　東京大学大学院工学系研究科 助教
+豊泉　太郎 理化学研究所　脳神経科学研究 センター　チーム リーダー
+中嶋　浩平 東京大学大学院情報理工学系研究科 特任准教授
+中野　大樹 日 本IBM　東京基礎研究所
+西　義史 東芝研究開発 センター
+尾藤　晴彦 東京大学 医学系研究科　脳神経医学専攻　教授
+付録1 検討の経緯
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+39
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+検討の経緯
+付録
+1
+
+===== PDF_PAGE 50 =====
+平岡　裕章 京都大学 理学部数学科 高等研究 センター長・教授
+平木　敬 ( 株)Preferred Networks シニアリサーチャー、東京大学　名誉教授
+深見　俊輔 東北大学 電気通信研究所 教授
+福島　俊一 JST CRDS フェロー
+福水　健次 統計数理研究所 統計的機械学 習センター センター長
+堀尾　喜彦 東北大学電気通信研究所 教授
+丸山　宏 ( 株)Preferred Networks フェロー
+三宅　陽一郎 日 本デジタ ルゲーム学会　理事
+森江　隆 九 州工業大学大学院生命体工学研究科 教授
+山川　宏 全脳 アーキテクチャ・イ ニシアティ ブ　代表
+山根　敏志 日 本IBM　東京基礎研究所 主任研究員
+古田　雅則 東芝研究開発 センター
+■セミナー講演を依頼した識者 （50音順、敬称略、所属・役職は実施時点）
+浅井　哲也 北海道大学大学院情報科学研究科　教授
+河野　崇 東京大学 生産技術研究所 教授
+銅谷　賢治 沖縄科学技術大学院大学神経計算 ユニッ ト 教授
+森江　隆 九 州工業大学大学院生命体工学研究科 教授
+山川　宏 全脳 アーキテクチャ・イ ニシアティ ブ　代表
+（2) ワークショップ
+科学技術未来戦略ワークショップ「脳型AIアクセラレータ　～柔軟な高度情報処理と
+超低消費電力化の両立～」
+開催日時：2020年11月28日（土）9:30～17:00
+開催会場：TKP市ヶ谷カンファレ ンスセンター バンケッ トホール8Bおよびオンライン会議
+（敬称略）
+9:30～ 9:35 開会挨拶　　　　　　　　　　　　　　　　　
+曽根 純一（JST-CRDS）
+9:35～ 9:55 ワ ークショップの開催趣旨と骨子案の説明
+馬場 寿夫（JST-CRDS）
+9:55～11:10 （話題提供 １）高効率・高度情報処理に対する要求
+9:55～10:20 人工知能技術開発 のための高速計算基盤「ABCI」
+小川 宏高（AIST）
+10:20～10:45　リザバー・コンピューティ ングとエッジAIへの応用
+山根 敏志（日本IBM）
+10:45～11:10　予測誤差最小化モデルを基盤としたロボッ ト動作学習
+尾形 哲也（早稲田大学）
+40
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+検討の経緯
+付録
+1
+
+===== PDF_PAGE 51 =====
+11:20～12:35 （話題提供 ２）高度情報処理に向けた脳科学、人工知能、数理科学の研究動向
+11:20～11:45　情報処理の活用に向けた脳科学分野の進展
+ 豊泉 太郎（理化学研究所）
+11:45～12:10　脳のふるまいに倣う人工知能技術”ゆらぎ学習”研究開発への取り組み
+加納 敏行（NEC）
+12:10～12:35　高次元ビッグデータ活用のための数理研究
+合原 一幸（東京大学）
+14:00～15:15 （話題提供 ３）AIチップ開発
+14:00～14:25　ブレインモル フィ ックコンピューティ ング
+堀尾 喜彦（東北大学）
+14:25～14:50　新デバイス材料のAIチップへの応用
+秋永 広幸（AIST）
+14:50～15:15　強誘電体FeFETを利用したリザバーコンピューティ ング
+高木 信一（東京大学）
+15:25～16:55 総合討論
+ フ ァシリテーター：東　良太（JST-CRDS）
+　　　１．我が国が注力すべき脳型AIの研究領域（短期、中長期）
+　　　２．脳科学、数学・数理科学、情報科学、ナ ノテク・材料技術の異分野を連携させる仕組み（脳科
+学と情報科学との密な連携、研究開発フェー ズ、時間のずれへの対応など）
+　　　３．アカデミアと産業界との連携の仕組み
+　　　４．その他（コミュニティ形成、人材育成、海外連携）
+16:55～17:00  閉会挨拶
+曽根 純一（JST-CRDS）
+招聘識者 （敬称略）
+（発表者）
+• 小川　宏高　　産業技術総合研究所　人工知能研究センター　チーム長
+• 山根　敏志　　日本IBM　東京基礎研究所　主任研究員
+• 尾形　哲也　　早稲田大学 基幹理工学部 教授、産業技術総合研究所
+ 人工知能研究 センター 特定フェロー
+• 豊泉　太郎　　理化学研究所　脳神経科学研究センター　チーム リーダー
+• 加納　敏行　　日本電気株式会社 データサイエンス研究所　主席技術主幹、
+ 大阪大学 NE C Brain Inspired Computing 協働研究所　副所長
+• 合原　一幸　　東京大学　国際高等研究所 IRCN　特別教授
+• 堀尾　喜彦　　東北大学　電気通信研究所　教授
+• 秋永　広幸　　産業技術総合研究所　デバイス技術研究部門　総括研究主幹
+• 高木　信一　　東京大学　大学院工学系研究科　教授
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+41
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+検討の経緯
+付録
+1
+
+===== PDF_PAGE 52 =====
+（コメンテータ）
+・平木　敬　　　(株)Preferred Networks　シニアリサーチャー、東京大学　名誉教授
+・森江　隆　　　九州工業大学　大学院生命体工学研究科　教授
+・浅井　哲也　　北海道大学　大学院情報科学研究院　教授
+・銅谷　賢治　　沖縄科学技術大学院大学　教授
+42
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+検討の経緯
+付録
+1
+
+===== PDF_PAGE 53 =====
+（1) 日 本の状況
+日本の主なプロジェク ト と研究拠点の状況について図S2-1に示し、それぞれの活動状況について簡単に記
+載する。
+統合イ ノ ベーション戦略推進会議「AI戦略2019」 （2019年）
+AI戦略2019における研究開発戦略は、世界をリードできる次世代AI基盤技術の確立を目的に、研究開
+発重点項目とし て 「基礎理論」 、 「高品質かつ信頼できるAI」 、 「AIのシステム ・ コンポーネン ト」 と ともに、 「AI
+のためのデバイス・アーキテクチャ」の研究開発の必要性が記載されており、この中で「脳を模倣した情報
+処理を実用的な時間で実現するアーキテクチャの開発」 、 「情報処理に係る消費電力性能を従来比 10 倍以上
+に向上させる革新的 AI チップ技術の確立」が挙げられている。
+新学術研究領域「人工知能と脳科学の対照と融合（人工知能と脳科学） 」 （2016～2020年度）
+感覚運動情報の背後にある構造を捉える表現学習、それらの変化を予測する内部モデル学習、さらに予測
+結果の評価による探索学習について、それぞれを確実に効率よ く実現するアルゴリ ズムとその脳での実現を探
+るともに、それらをつないだ全脳アーキテクチャにならった柔軟な人工知能システムの実現を目指し ている。
+新学術研究領域「脳情報動態を規定する多領野連関と並列処理（脳情報動態学） 」 （2017～2021年度）
+脳機能の多次元活動動態を先端的計測操作技術により解明・再現し、記憶・予測・判断に基づく行動原
+図S2-1 脳型AIアクセラレータ関連の日本の主なプロジェクト
+付録2 国内外の状況
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+43
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+国内外の状況
+付録
+2
+
+===== PDF_PAGE 54 =====
+理を明らかにすることを目指している。
+文科省＋AMED　革新的技術による脳機能ネッ トワークの全容解明（革新脳：2014～2023、400億円／
+10年）
+霊長類（マーモセッ ト）の高次脳機能を担う神経回路の全容をニューロンレベルで解明するこ とにより、ヒ
+トの精神・神経疾患の克服や情報処理技術の高度化に貢献する。姉妹プログラ ムである国際脳とも連携し て
+いる。
+AMED　戦略的国際脳科学研究推進プログラ ム（国際脳）
+AMEDで推進されてきた脳科学研究事業や国際的な脳プロジェク ト（Brain Initiative, Human Brain
+Projectなど） との連携を強化しつつ、 健常から疾患に至る脳画像等の総合的解析、 AIによる脳科学技術開発、
+ヒ ト と非ヒ ト霊長類動物との神経回路比較研究を推進。次世代AIに関する基盤技術開発とし て「非線形動力
+学に基づく次世代Ａ Ｉ と基盤技術に関する研究開発」が推進されている。
+全脳アーキテクチャイ ニシアティ ブ（WBAI）
+脳全体のアーキテクチャに学ぶこ とにより人間のような知的能力を持つ汎用人工知能の実現に向けて、研
+究開発活動への支援等を行っ ているNPO法人。脳の各器官を機械学習モジュールとし て開発し、それら複数
+の機械学習モジュールを脳型の認知アーキテクチャ上で統合するという ２つのアプローチにより2030年頃の
+汎用人工知能の構築を目指し ている。
+東京大学　ニューロインテリジェンス国際研究機構（IRCN）
+世界ト ップレベル研究拠点プログラ ム（WPI）の１つとし て2017年に設立。神経回路発達の基礎研究、
+精神疾患の病態研究、神経の動作原理に基づく革新的な人工知能 (AI) の開発を目指し ている。
+北海道大学　人間知×脳×AI研究教育センター（CHAIN）
+人文社会科学、脳科学（神経科学） 、AI研究の分離融合型学際研究と大学院教育を目的とし て2019年に
+設立。
+（2) 米国の状況
+Brain Initiative（2013～、$4.5B[2016年～2025年]）
+神経疾患や精神疾患の克服に向けて、革新的ツールの開発と応用を進めるこ とにより、脳の個々の細胞と
+複雑な神経回路が時間的、空間的にどのように相互作用するのかを理解し、さらに、脳が情報の記録、処理、
+利用、保存をどのように可能にするか解明するこ とを目指し ている。
+例えば、MITは加齢にフォーカスし て、記憶の仕組みを直接ニューロンにアプローチし て調べ、老化した
+脳の謎を解明する。神経科学、基礎生物学と遺伝学、調査医学、工学とコンピューターサイエンス、経済学、
+化学、都市計画、人工知能にまたがり、包括的なシステムアプローチで研究し ている。
+DARPA　Lifelong Learning Machines (L2M)プログラ ム（2018―2021年）
+コンピュータ科学者と生物学者とが連携した分野融合的なアプローチにより、過去学習したこ とを忘れるこ
+44
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+国内外の状況
+付録
+2
+
+===== PDF_PAGE 55 =====
+となく、システムが継続的に新しい状況に適応し ていけるような、まったく新しい機械学習手法の実現を目指
+し ている。例えば、海馬と皮質の二重記憶構造の研究から入力を既存の記憶と比較するこ とによっ て潜在的
+な結果を予測するこ とができる機械学習システム、サラマンダーのような動物の再生メカニズムを調べるこ と
+で環境の変化に適応するために構造と機能を変更するこ とができる柔軟なロボッ ト、といった研究が実施され
+ている。
+（3) 欧州の状況
+Human Brain Project（2013-2023年、$1.3B/10年）
+６つの情報通信技術（ICT）基盤研究プラッ ト フォームを中心とし て、ICT を用いた脳の理解を目指す。脳
+機能と脳疾患の網羅的データベー スの構築と人工脳の結合や脳の基礎理論とモデルの構築、脳に着想を得た
+コンピュータやロボット工学など広範な領域をカバーしている。ニューロモルフィックのコンピューティングシ
+ステムとし て、アナログ型で高速なハイデルベルグ大学（ドイツ）のBrainScaleS、デジタ ル型でリアルタイ
+ム性の高いマンチェスター大学（イ ギリ ス）のSpiNNakerが提供されている。
+（4) 中 国の状況
+次世代人工知能発展計画（2017―2030年）
+2017年に国務院が発表したAI技術の開発計画で、2030年までに理論・技術・応用を世界ト ップ水準に
+引き上げるこ となどが目標に掲げられている。この計画に基づき、百度（バイ ドゥ）が自動運転、阿里雲（ア
+リババ・クラウ ド）が公共サービスシステム、騰訊（テンセン ト）が医療画像、科大訊飛（アイ フライテック）
+が音声識別について、それぞれ中心となっ てオー プンイ ノ ベーションプラッ ト フォームの構築を行う こ と となっ
+ている。
+科学技術イ ノ ベーション2030・重大プロジェク ト「脳科学・脳関連研究」
+今後2030年まで中国が取り組む分野とし て、2016年に発表した16プロジェク トの一つで、中国脳計画
+（China Brain Project）とも呼ばれる。2017年に実施計画の策定準備が開始されているが、2020年12月
+現在、開始は確認できていない。脳の認知原理の研究を中心とし、脳型コンピュータや脳型AI開発と脳疾患
+の診断・治療法開発の２つを目的とする研究の展開を計画し ている。2018年に北京と上海にそれぞれ設立さ
+れた脳科学及び脳関連研究センター（北京脳科学与類脳研究中心、上海脳科学与類脳研究中心）が中核を
+担うこととなっている。
+脳型知能技術・応用国家技術実験室
+2017年合肥市に中国科学技術大学が中心となっ て、復旦大学、中国科学院、バイ ドゥ（百度）などと共
+同設立。脳型知能技術応用・研究プラッ ト フォームを共同設立し、脳型認知・神経計算、脳型マルチモーダ
+ル知覚・信号処理、 脳型チップ ・ システム、 脳型コンピューティ ングシステム、 量子人工知能、 脳型知能ロボッ
+トの６つの方向について研究開発と実用化を推進する。
+清華大学　脳型コンピュータ研究センター
+2014年、清華大学の７学部（脳科学、電子機器、マイ クロ電子機器、コンピュータ 、自動化、材料、お
+よび精密機器）により設立。基礎理論から、チップ 、ソフ トウェア 、システム、およびアプリケーションまで
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+45
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+国内外の状況
+付録
+2
+
+===== PDF_PAGE 56 =====
+研究開発を実施。センター長の施路平のチームは、 2019年脳型コンピューターチップ 「天機芯 （Tianjicチッ
+プ） 」を発表。人工ニューラルネッ トワーク とパルスニューラルネッ トワークのいずれにも対応可能な世界初
+のハイブリ ッ ドチップとし て、Natureの表紙に採用された。
+（4) 論文の推移
+図S2-2に脳型AIアクセラレータの研究とし て中心的なものとなっ ているニューロモル フィ ックコンピュー
+ティングとリザバーコンピューティングに関する論文の2000年から2020年までの出版年別と国別の論文数
+のデータを示す。
+出版年別の論文数の推移をみると、両技術とも2010年頃から増加し ており、これらの研究が活発になっ て
+いることがわかる。また、国別で見ると、ニューロモルフィックコンピューティングでは、米国、中国がリード
+しており、日本は 9 位となっている。リザバーコンピューティングでは、米国の 1 位は変わらないが、ベルギー
+が2位、中国が3位、日本が4位になっ ており、まだ国別の有意な差がついていない状況にある。
+図S2-2　　　 脳型 AIアクセラレータに関する論文数の推移と国別文献数
+ 以下 のキーワードを選び、2000～2020年についてエルゼビアのSCOPUSで検索
+ (1) ニューロモル フィ ックコンピューティ ング（“neuromorphic comput*”）
+ (2) リザバーコンピューティ ング（“reservoir comput*”）
+46
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+国内外の状況
+付録
+2
+
+===== PDF_PAGE 57 =====
+■ノイマン型（コンピュータ）
+数学者ジョン ・ フォ ン ・ ノ イマン(John von Neumann)によっ て提唱されたコンピュータの基本構成のこ と。
+ノ イマン型コンピュータは、演算装置、 制御装置、メ モリ、入力装置、出力装置とこれらの間を接続するデー
+タ伝送機構から構成されている。今日の一般的なコンピュータシステムのほとんどが、このノ イマン型である。
+また、ノ イマン型コンピュータの構造以外の構造をとるコンピュータアーキテクチャは、非ノ イマン型コン
+ピュータと総称される。
+■アクセラレータ
+特定用途向けの計算・情報処理を行う専用のプロセッサ。汎用プロセッサでは計算負荷の大きな処理をア
+クセラレータに渡すこ とで、アクセラレータが高速・低消費電力にその処理を実行し、結果を汎用プロセッサ
+に返す。
+■メモリスタ
+通過した電荷を記憶し て抵抗が変化する素子であり、次世代不揮発性メ モリ とし て期待されている。
+■機械学習
+データの背後に潜む規則性や特異性を発見するこ とにより、人間と同程度あるいはそれ以上の学習能力を
+コンピュータで実現しよう とする技術である。教師あり学習、教師なし学習、強化学習といったタイプがあり、
+各タイプについて、さまざまな方式（深層学習、サポートベク トルマシン、決定木、回帰分析、他）が開発さ
+れている。
+■深層学習
+多層ニューラルネッ トワーク（Deep Neural Network）を用いた機械学習技術である。
+■インメモリコンピューティング
+外部記憶装置を用いず全てのデータをメ モリ上に持つこ とで、高速処理を実現する技術の総称である。
+■ニューロモルフィックコンピューティング
+機械学習ハードウェアには大き く二つ、ニューロモル フィ ックコンピューティ ング（Neuromorphic
+Computing）とニューラルネッ トワークがある。ニューロモル フィ ックコンピューティ ングは脳のシナプスの
+機能と発火の仕組みを模倣したアプローチである。脳神経系を構成する神経ネッ トワークの神経活動をリアル
+タイムあるいはそれ以上の速度で再現する回路システムである。
+■リザバーコンピューティング
+リザバーコンピューティ ングは再帰的ニューラルネッ トワークの特殊なモデルを一般化した概念で、時系列
+情報処理に適した機械学習の枠組みの一つである。入力信号をリザバーで変換した後、読出し部のみを簡便
+なアルゴリ ズムで訓練するこ とで高速な学習を可能となる。
+付録3 専門用語解説
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+47
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+専門用語解説
+付録
+3
+
+===== PDF_PAGE 58 =====
+■スパイキングニューラルネットワーク
+ニューロンとシナプスで構成される脳の神経ネッ トワークの挙動を模倣するモデルである。情報はニューロ
+ンの膜電位の変化とそれに伴う発火パターンで表現される。
+■ストカスティック演算回路
+近似計算法の一つであり、デジタ ル回路で確率的な計算を行う。耐故障性や小面積・低電力性から再注目
+されており、画像処理や機械学習などでの利用が期待されている。
+■畳み込みニューラルネットワーク（CNN）
+ニューラルネッ トワークの中間層に畳み込み層とプーリ ング層を組み込んだものである。画像分析のための
+学習手法の一つで、一部が見えに く く なっ ているような画像でも解析するこ とが可能である。
+■ムーアの法則
+米インテル社の創業者のひとりであるゴードン・ムー アが1965年に論文で発表したのでこの名がある。経
+験則にもとづく将来予測であり、1975年には次の10年を見据え て集積回路の部品数が2年ごとに2倍にな
+るという予測をした。
+■フォン・ノイマン・ボトルネック問題
+コンピュータアーキテクチャの一つであるノ イマン型に存在する性能上のボトルネックを指す。ノ イマン型で
+は、記憶装置に命令を格納するので、プロセッサが命令を実行するには必ずバスを通し て記憶装置にアクセ
+スしなければならず、 プロセッサと記憶装置のアクセス速度が遅ければコンピュータ全体のボトルネックになる。
+■シグモイド関数
+生物の神経細胞が持つ性質をモデル化した関数である。シグモイ ド曲線がギリシャ文字のシグマに似た形
+なのでこの名がある。
+■圏論
+数学的構造とその間の関係を抽象的に扱う数学理論の 1つである。考え ている種類の「構造」を持った対
+象とその構造を反映するような対象間の射の集まりからなる圏が基本的な考察の対象になる。
+■Izhikevichモデル
+神経細胞の挙動を模倣するモデルの一つで、計算負荷の軽減と挙動の多様性において理想に近い数理モデ
+ルと言われている。2003年にユージン・イ ジケヴィ ッチ（Eugene M. Izhikevich）が提唱した。
+■IPコア
+LSIを構成するための部分的な回路情報で、機能単位でまとめられているものである。 LSIが大規模複雑
+化する中、開発手法とし てハードウェア記述言語による開発が盛んになり、開発効率の向上が求められた。そ
+こで、既存開発製品の回路を、機能ブロック単位で再利用可能な形にまとめ、他の製品でも利用可な部分は
+それを流用する方法が用いられた。
+48
+CRDS-FY2020-SP-04CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+専門用語解説
+付録
+3
+
+===== PDF_PAGE 59 =====
+■誤差逆伝搬法
+バックプロパゲーションとも言われ、機械学習においてニューラルネットワークを学習させる際に用いられ
+るアルゴリズムである。
+■ネオコグニトロン
+1979年に福島邦彦（当時：NHK放送科学基礎研究所）によっ て提唱された階層的、多層化された人工
+ニューラルネッ トワークである。手書き文字認識やその他のパターン認識に用いられており、畳み込みニュー
+ラルネットワークの元となった。
+■大脳皮質
+大脳の表面に広がる、神経細胞の薄い層であり、知覚、言語、思考、推理、記憶などの脳の高次機能を
+司る組織であり、分子層、外顆粒層、外錐体細胞層、内顆粒層、内錐体細胞層、多型細胞層の６層構造を
+持つ。
+■海馬
+脳の内部にある古い大脳皮質の部分であり、短期・長期記憶に関係し、様々な感覚入力に応じて時間・空
+間情報の認知・学習に関わる。
+■偏桃体
+側頭葉内側の奥に存在し、恐怖、不安、悲しみ、喜び、など情動の処理、価値判断、記憶において主要
+な役割を持つ。
+■前頭前野
+前頭葉の前側の領域にあり、記憶や感情の制御、行動の抑制、推論などの認知・実行機能、高次な情動・
+動機づけ機能とそれに基づく意思決定過程などを担っ ている。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+49
+CRDS-FY2020-SP-04
+戦略プロポーザル　　脳型 AIア ク セラ レー タ ～柔軟な高度情報処理と 超低消費電力化の両立～
+専門用語解説
+付録
+3
+
+===== PDF_PAGE 60 =====
+
+
+===== PDF_PAGE 61 =====
+作成メンバー
+CRDS-FY2020-SP-04戦略プロポーザル
+脳型AIアクセラレータ
+～柔軟な高度情報処理と超低消費電力化の両立～
+STRATEGIC PROPOSAL
+Brain-Inspired AI Accelerator
+Brain-Inspired AI Accelerator - Realizing flexible advanced information processing with ultra-low
+power consumption -
+総括責任者 曽 根 純一 上席 フェロー （ ナ ノテク ノロジー・材料ユニッ ト）
+リーダー 馬場 寿夫 フ ェロー （ ナ ノテク ノロジー・材料ユニッ ト）
+メ ンバー 渡邉 孝信 フ ェロー （ ナ ノテク ノロジー・材料ユニッ ト）
+ 東 良太 フ ェロー （ システム・情報科学技術ユニッ ト）
+ 井上 眞梨 フ ェロー （ システム・情報科学技術ユニッ ト）
+ 山 原 恵子 フ ェロー （ プライ フサイエンス・臨床医学ユニッ ト）
+ 井上 貴文 特任 フェロー （ ライ フサイエンス・臨床医学ユニッ ト）
+ 伊藤 顕知 主任調査 員 （未来創造研究開発推進部）
+ 勝又 康 弘 主任調査 員 （戦略研究推進部　グリーンイ ノ ベーショングルー プ）
+ 上 田 幸弘 主任調査 員 （戦略研究推進部　先進融合研究 グルー プ）
+令和 3 年 3 月　March, 2021
+ISBN 978-4-88890-726-2
+国立研究開発法人科学技術振興機構　研究開発戦略センター
+Center for Research and Development Strategy, Japan Science and T echnology Agency
+〒102-0076 東京都千代田区五番町7 K’s 五番町
+本書は著作権法等によっ て著作権が保護された著作物です。
+著作権法で認められた場合を除き、本書の全部又は一部を許可無く複写・複製するこ とを禁じます。
+引用を行う際は、必ず出典を記述願います。
+電話 03-5214-7481
+E-mail crds@jst.go.jp
+https://www.jst.go.jp/crds/
+This publication is protected by copyright law and international treaties.
+No part of this publication may be copied or reproduced in any form or by any means without permission of JST,
+except to the extent permitted by applicable law.
+Any quotations must be appropriately acknowledged.
+If you wish to copy, reproduce, display or otherwise use this publication, please contact crds@jst.go.jp.
+
+===== PDF_PAGE 62 =====
+ISBN 978-4-88890-726-2
+FOR THE FUTURE OF
+SCIENCE AND
+SOCIETY
+https://www.jst.go.jp/crds/

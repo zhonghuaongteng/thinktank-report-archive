@@ -1,0 +1,3011 @@
+
+===== PDF_PAGE 1 =====
+CRDS-FY2024-SP-02
+提言 ・ 提案
+戦略プロポーザル
+バ イオ テクノロジ ーと
+材料・デバイ ス技術に よ る
+細胞
+の集団的適応性の制御・設計
+～動的材料システムの創出～
+STRATEGIC PROPOSAL
+Design and Control of Multicellular Adaptivity
+with Biotechnology and Materials Technology
+-Development of Multicellular Materials Systems-
+2024年
+10月
+JST CRDS
+戦略プロポーザル
+バイオテクノロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計
+～動的材料システムの創出～
+
+===== PDF_PAGE 2 =====
+さらに詳細は、下記ウェブサイトをご覧下さい
+https://www.jst.go.jp/crds/
+研究開発戦略センター（CRDS）は、 国の科学技術イノベーション政策に関する調査、
+分析、提案を中立的な立場に立って行う公的シンクタンクの一つで、文部科学省を主
+務省とする国立研究開発法人科学技術振興機構（JST）に属しています。
+CRDSは、科学技術分野全体像の把握（俯瞰） 、社会的期待の分析、国内外の動向
+調査や国際比較を踏まえて、さまざまな分野の専門家や政策立案者との対話を通じて、
+「戦略プロポーザル」を作成します。 「戦略プロポーザル」は、今後国として重点的に
+取り組むべき研究開発の戦略や、科学技術イノベーション政策上の重要課題について
+の提案をまとめたものとして、政策立案者や関連研究者へ配布し、広く公表します。
+公的な科学技術研究は、個々の研究領域の振興だけでなく、それらの統合によって
+社会的な期待に応えることが重要です。 「戦略プロポーザル」が国の政策立案に活用さ
+れ、科学技術イノベーションの実現や社会的な課題の解決に寄与することを期待してい
+ます。
+
+===== PDF_PAGE 3 =====
+エグゼクティブサマリー
+「バイオテクノロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システム
+の創出～」とは、バイオテクノロジーと材料・デバイス技術を組み合わせることで、細胞の集団的挙動を制御
+し、構造形成や物質・エネルギー変換、情報処理・学習などの多様な高次機能と同時に、用途や使用環境
+に応じて機能や物質的状態が動的に変化する「適応性」を備えた材料システム（動的材料システム）の創出
+を目指す研究開発戦略である。
+これまで、生体物質を人為的に改変し、また人工物質との相互作用を介して制御することで、生体物質や
+人工物質だけでは実現できない性質や機能を活用した多様な技術開発が進められてきた。特に近年、細胞集
+団と材料・デバイスとの相互作用を介して、細胞集団の複雑な挙動、さらには高次機能までを人為的に制御
+できる可能性が見出されている。
+細胞集団に由来する適応性を活かすことで、動的材料システムは、これまでのバイオテクノロジーおよび材
+料・デバイス技術の枠を越えて、多様な技術的ソリューションを提供する。例えば、使用環境に応じた機能
+の最大化や自己修復・自己増殖によって、既存の材料技術を補完しながら社会における物質製造および物質
+循環の最適化に貢献する。さらに、個々人の生理応答を体外で再現した人工システムの医療・創薬への利用、
+環境モニタリングや環境浄化システム、ヒトの身体状態等に応答するヘルスケアデバイスやソフトロボットなど
+にも応用は拡がる。これらの技術の創出は、持続可能な社会システムの構築や、地球環境・生物多様性の保
+全、個々人のWell-beingの実現、そして新たな市場開拓とわが国の経済的優位性の獲得につながるもので
+ある。
+これまでに、細胞集団を材料やシステムに組み込んだ様々な応用的研究事例が報告されている。しかし現
+状、その性能や適応性の制御は十分でなく、社会実装は限定的である。この背景として、細胞集団と材料・
+デバイスの相互作用で生じる複雑な挙動の理解が進んでおらず、合理的な設計や構築が困難であることが挙
+げられる。
+本戦略プロポーザルでは、細胞集団の複雑な挙動で成り立つ高次機能と適応性を実現するため、細胞集団
+と材料・デバイスの複合で生じる多様な動態（時空間的な状態変化）の理解と、その理解に基づいた合理的
+な設計・構築手段の確立を目指し、次の研究開発課題の実施を提案する。
+【研究開発課題１】細胞集団と材料・デバイスの複合的動態の理解
+細胞集団と材料・デバイスの相互作用で生じる複合的動態への理解が必要である。 （A）入力となる刺激
+や細胞外環境条件を精緻に付与する材料・デバイス技術や細胞間相互作用の制御（摂動の付与） 、 （B）出力
+となる応答そのものや、応答に関係する細胞集団および細胞外物質の物性・物質構成の計測、そして（C）
+入力と出力の間の関係性を結びつけるモデルや理論、 これらの研究開発を一体的に推進することが重要である。
+特に、一細胞から細胞集団という時空間スケールの異なる現象の関係性を結びつけるため、多様な時空間ス
+ケールに適用できる摂動法・計測法の開発、ならびにスケールを跨いで現象を記述できるモデリング手法の
+開発が必要である。
+【研究開発課題２】動的材料システムの創製
+特定の高次機能と適応性の実現を目指し、細胞集団と材料・デバイスの複合から成る動的材料システムの
+創製を進める必要がある。研究開発課題１で培われるモデルや理論と結びつけながら、 （A）動的材料システ
+ムの設計、および（B）動的材料システムの構築が求められる。 （A）動的材料システムの設計では、入出力
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+i
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+
+===== PDF_PAGE 4 =====
+が定まる構成要素としてモジュールを規定した上で、 その組み合わせでシステムを設計できるように、 モジュー
+ルの多様化・標準化やシミュレーションツールの開発を進めることが重要である。 （B）動的材料システムの
+構築では、実際にモジュールを作製し統合するファブリケーション技術の高度化や組み立て技術の開発、さ
+らに動的なシステムのモニタリングとフィードバック制御の技術開発が必要である。
+これらの研究開発課題の実施においては、工学的応用を目指した発想と、それを支える生命科学と材料科
+学のアプローチ、さらにシステム全体の時空間スケールをつないだ理解を目指し、物理・化学の基盤的知見
+や解析技術も糾合した研究開発の推進が必要である。そこで、次の３つの方策を提案する。
+【方策１】先導的研究コミュニティを起点とした継続的な交流・議論の場の創出
+関連する複数の学会と産業界から成る先導的研究コミュニティの形成が有用である。コミュニティ内で活発
+な議論を行いながら、研究開発課題を推進することが求められる。さらに、社会実装を考慮した規範形成等
+の起点としても機能させるべきである。
+【方策２】長期（〜10年）のチーム型プロジェク トの実施
+多様な分野の研究者で構成されるチーム型の研究プロジェクトの実施が必要である。研究開発課題１と２
+を課題間の連携をしながら推進し、十分な研究開発期間（～1
+0年）を経て社会実装まで途切れることなくつ
+なげることが重要である。
+【方策３】研究拠点の設置
+研究拠点の設置が必要である。分野を跨いだ共同研究の促進、人材の育成と確保、さらに研究のインフラ
+となるデータベース基盤の整備や研究ツールのプラットフォーム構築を行うことも求められる。
+これらの方策により、研究開発課題が効率的に推進され、中長期的に成果が最大化する。加えて、様々な
+研究者の参入と、新たな研究アイデアが生まれる土壌づくり、そして次世代の研究従事者の育成が進み、新
+規研究領域として長期的に定着するための裾野を持った研究基盤が構築される。
+図EX-1　 バ イオテク ノロジーと材料・デバイス技術の融合による
+動的材料システムの創出
+ii
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+
+===== PDF_PAGE 5 =====
+Executive Summary
+“Design and Control of Multicellular Adaptivity with Biotechnology and Materials T echnology
+-Development of Multicellular Materials Systems-” is a research and development strategy to
+promotes a combination of biotechnology and materials technology for controlling multicellular
+behaviors. Thereby, novel materials systems, named “ multicellular materials systems” , will be
+developed, which enable various advanced functions, such as structural formation, transformation
+of substances or energy, information processing or learning, and adaptivity to the uses and usage
+conditions.
+A variety of technologies has been developed by engineering biological (biologically-derived)
+materials or controlling them via artificial materials. Such technologies have aimed to realize
+novel materials’ properties and functions beyond or compensating existing artificial and biological
+materials. Recently, progress of both biotechnology and materials technology has demonstrated
+potential for controlling multicellular behaviors such as the complex dynamics and functions
+through interactions between (engineered) multiple cells and artificial materials.
+The adaptivity of multicellular materials systems will provide various technological solutions
+beyond the scopes of biotechnology or materials technology so far. For example, maximizing the
+functions under a specific condition and properties of self-repairing or self-growth will lead to
+optimal material manufacturing and circular systems in a society. Further applications will be also
+expected including artificial biological systems to reconstruct individual physiological responses
+for medical treatment and drug development, systems for environmental monitoring and
+remediation, healthcare devices and soft robots which response to human physical and mental
+conditions, and so on. Development of such technologies contributes to establishing sustainable
+social systems, conversing global environment and biodiversity, and realizing individual well-being.
+Moreover, related novel markets will be pioneered, bringing economic advantages of Japanese
+industry.
+Currently, various applied studies which incorporate multiple cells into materials or systems
+have been reported. However, its performance and adaptability are not suﬃciently controlled,
+and social implementation has been limited. This is due to the lack of understanding for the
+complex behavior among composited multiple cells and artificial materials, resulted in diﬃculties
+of rational design and construction.
+Therefore, aiming to realize advanced functions and adaptivity based on controlled multicellular
+behaviors, we propose to promote understanding of the various dynamics (spatiotemporal state
+changes) derived from complex multiple cells-materials interactions, and to establish reliable
+methodology for designing and constructing multicellular materials systems. Herein, the R&D
+subjects are proposed as follows.
+[R&D subject 1] Understand complex dynamics of multiple cells and materials
+Understandings of complex dynamics derived from interactions between multiple cells and
+artificial materials must be enhanced. The followings sub-subjects need to be co-progressed: (A)
+iii
+CRDS-FY2024-SP-02 Center for Research and Development Strategy, Japan Science and T echnology Agency
+STRATEGIC PROPOSAL　　Design and Control of Multicellular Adaptivity with Biotechnology and Materials Technology -Development of Multicellular Materials Systems-
+
+===== PDF_PAGE 6 =====
+Perturbations (inputs): materials technology to precisely stimulate cells and arrange extracellular
+environment, and biological techniques to induce cell-cell interactions, (B) Measurements of
+output responses or related parameters: measurement technologies for compositions and
+physical properties of multiple cells and extracellular substances, (C) Modeling: developing models
+or theories to correlate inputs and outputs quantitatively. Particularly, such perturbation and
+measurement techniques must be applicable to various ranges of spatio-temporal scales, and the
+models need to connect phenomena on diﬀerent spatio-temporal scales.
+[R&D subject 2] Create multicellular materials systems
+Development of multicellular materials systems which enable specific advanced functions and
+adaptivity must be progressed. Based on the models or theories demonstrated in R&D subject 1,
+desired multicellular materials systems need to be (A) designed and (B) constructed. Firstly, for (A)
+designing the systems, components called modules are to be defined with correlations between
+the inputs and outputs. Then, the systems will be designed based on the combination of modules.
+Standardization of modules and development of system simulation tools are also required.
+Furthermore, for (B) constructing the systems, fabrication and assembly techniques must be
+advanced to make and integrate modules. Moreover, monitoring and feedback techniques are
+required to modulate the systems continually.
+T o promote these R&D subjects, cooperation among engineering applications, approaches
+via biotechnology and materials technology, and fundamental physicochemical interpretation is
+required. Therefore, we propose the following actions.
+[Action 1] Establish a leading research community and discuss continuously beyond disciplines
+and stakeholders
+A leading research community involving relevant academic and industrial communities need
+to be established. Active discussions in the community should promote the R&D subjects.
+Also, the community will function as an organizer for technology governance toward social
+implementation.
+[Action 2] Launch long-term projects based on team collaboration
+Research projects must be conducted involving several teams comprised of researchers from
+diverse disciplines. The projects promote R&D subject 1 and 2, coordinating within and across
+the subjects. Through a suﬃcient R&D period (~10 years), research findings and products should
+be led to social implementation seamlessly.
+[Action 3] Found a research center
+A research center needs to be found for promoting interdisciplinary research collaboration,
+developing and securing human resources, and constructing research infrastructure such as
+databases and platform for research tools.
+Through these actions, the R&D subjects will be executed eﬃciently, and research outcome
+will be maximized in the medium- to long-term. Furthermore, these actions will encourage new
+entry of researchers, incubate unique research ideas, and develop human resources for the next
+generation. Thereby, research environment for this new research field will be established toward
+iv
+CRDS-FY2024-SP-02Center for Research and Development Strategy, Japan Science and T echnology Agency
+STRATEGIC PROPOSAL　　Design and Control of Multicellular Adaptivity with Biotechnology and Materials Technology -Development of Multicellular Materials Systems-
+
+===== PDF_PAGE 7 =====
+the long-time sustainable progress.
+Figure EX-1　 Development of multicellular materials systems with
+biotechnology and materials technology
+v
+CRDS-FY2024-SP-02 Center for Research and Development Strategy, Japan Science and T echnology Agency
+STRATEGIC PROPOSAL　　Design and Control of Multicellular Adaptivity with Biotechnology and Materials Technology -Development of Multicellular Materials Systems-
+
+===== PDF_PAGE 8 =====
+
+
+===== PDF_PAGE 9 =====
+目次
+1 研究開発の内容. .............................................................................. 1
+2 研究開発を実施する意義. .............................................................. 3
+2.1 現状認識および問題点 . .......................................................... 3
+2.2 社会・経済的効果 . ................................................................. 16
+2.3 科学技術上の効果 . ................................................................. 18
+3 具体的な研究開発課題. .................................................................. 21
+3.1 【研究開発課題１】細胞集団と材料・デバイスの
+複合的動態の理解. ................................................................. 22
+3.1.A 細胞集団および細胞外物質への時空間的摂動の付与. ...................... 22
+3.1.B 細胞集団および細胞外物質の物性・物質構成の時空間的計測.......... 23
+3.1.C 細胞集団と材料・デバイスの複合的動態のマルチスケール・モデリング.... 23
+3.2 【研究開発課題２】動的材料システムの創製. ........................ 24
+3.2.A 動的材料システムの設計........................................................... 24
+3.2.B 動的材料システムの構築............................................................ 26
+4 研究開発の推進方法および時間軸. .............................................. 28
+4.1 推進上の分野連携・分野融合のイメージと時間軸に沿った目標.... 28
+4.2 【方策１】先導的研究コミュニティを起点とした継続的な
+交流・議論の場の創出. .......................................................... 30
+4.3 【方策２】長期（～ 10 年）のチーム型プロジェクトの実施. ... 31
+4.4 【方策３】研究拠点の設置..................................................... 32
+付録1 検討の経緯......................................................................................... 33
+付録2 関連する国内の研究プロジェクト..................................................... 36
+付録3 専門用語説明. ..................................................................................... 38
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+vii
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+
+===== PDF_PAGE 10 =====
+
+
+===== PDF_PAGE 11 =====
+1 研究開発の内容
+「バイオテクノロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システム
+の創出～」とは、バイオテクノロジーと材料・デバイス技術を組み合わせることで、細胞集団の挙動を制御し、
+構造形成や物質・エネルギー変換、情報処理・学習などの多様な高次機能と同時に、用途や使用環境に応じ
+て機能や物質的状態が動的に変化する「適応性」を備えた材料システム（動的材料システム）の創出を目指
+す研究開発戦略である。
+これまでに、細胞集団を材料やシステムに組み込んだ様々な応用的研究事例が報告されている。しかし現
+状、その性能や適応性の制御は十分でなく、社会実装は限定的である。この背景として、細胞集団と材料・
+デバイスの相互作用で生じる複雑な挙動の理解が進んでおらず、合理的な設計や構築が困難であることが挙
+げられる。
+本戦略プロポーザルでは、細胞集団の複雑な挙動で成り立つ高次機能と適応性を実現するため、細胞集団
+と材料・デバイスの複合で生じる多様な動態（時空間的な状態変化）の理解と、その理解に基づいた合理的
+な設計・構築手段の確立を目指し、次の研究開発課題を提案する（図1-1） 。
+【研究開発課題１】細胞集団と材料・デバイスの複合的動態の理解
+動的材料システムの合理的設計・構築につなげるべく、細胞集団と材料・デバイスの相互作用で生じる複
+合的動態の理解が必要である。 （A）入力となる刺激や細胞外環境条件を精緻に付与する材料・デバイス技
+術や細胞間相互作用の制御（摂動の付与） 、 （B）出力となる応答そのものや、応答に関係する細胞集団およ
+び細胞外物質の物性・物質構成の計測、そして（C）入力と出力の間の関係性を結びつけるモデルや理論の
+構築、これらの研究開発を一体的に推進することが重要である。特に、一細胞から細胞集団という時空間ス
+ケールの異なる現象の関係性を結びつけるため、多様な時空間スケールに適用できる摂動法・計測法の開発、
+ならびにスケールを跨いで現象を記述できるモデリング手法の開発が必要である。
+【研究開発課題２】動的材料システムの創製
+特定の高次機能と適応性の実現を目指し、細胞集団と材料・デバイスの複合から成る動的材料システムの
+創製を進める必要がある。研究開発課題１で培われるモデルや理論と結びつけながら、 （A）動的材料システ
+ムを設計、および（B）動的材料システムの構築が求められる。 （A）動的材料システムの設計では、入出力
+が定まる構成要素としてモジュールを規定した上、その組み合わせでシステムを設計できるように、モジュー
+ルの多様化・標準化やシミュレーションツールの開発を進めることが重要である。 （B）動的材料システムの
+構築では、実際にモジュールを作成し統合するためのファブリケーション技術の高度化や組み立て技術の開
+発、さらにシステムを動的に制御するモニタリングやフィードバックの技術開発が必要である。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+1
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発の内容
+1
+
+===== PDF_PAGE 12 =====
+図1-1　研究開発の内容
+上記の研究開発課題の推進のため、次の３つの方策を提案する。
+【方策１】先導的研究コミュニティを起点とした継続的な交流・議論の場の創出
+関連する複数の学会と産業界から成る先導的研究コミュニティの形成が有用である。コミュニティ内で活
+発な議論を行いながら、研究開発課題を推進することが求められる。異分野の研究者間の交流・議論を通
+し、連携による新規な動的材料システムのコンセプトの創出やイノベーションへの展開を促すことが重要で
+ある。
+また、社会実装を考慮した規範形成等の起点としても機能することが求められる。研究者と産業界ある
+いは人文社会科学の研究者や一般市民との対話を早期から行うことで、出口イメージの構築・共有や、ルー
+ル・規範形成、そして社会との適切な合意形成を促進すべきである。
+【方策２】長期（〜10年）のチーム型プロジェク トの実施
+多様な分野の研究者で構成されるチーム型の研究プロジェクトの実施が必要である。研究開発課題１と
+２を課題間の連携をしながら推進し、十分な研究開発期間（
+～10
+年）を経て社会実装まで途切れることな
+くつなげることが重要である。また、様々な研究者の新規参入や、分野間の関心・知見・技術等の共有を
+促進するため、研究人材の複数研究室間での雇用や派遣を可能にする予算使途を設けるべきである。さら
+に【方策１】と連携し、普及・啓発活動を実施することが求められる。
+【方策３】研究拠点の設置
+研究拠点の設置が必要である。物理的に近い距離に複数研究室を置くことで、人的ネットワークの構築
+を促し、研究開発推進の円滑化を進めるべきである。同時に、学生や若手研究者に対して、安定して研究
+に取り組み指導を受けられる環境を確保することも重要である。さらに、データベース基盤の整備や研究
+ツールのプラットフォームといった研究インフラの構築も担うことが求められる。研究開発課題の推進に関
+わる多様な研究者をつなぐハブとしての機能に加え、国際連携の起点としての役割も望まれる。
+2
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発の内容
+1
+
+===== PDF_PAGE 13 =====
+2.1 現状認識および問題点
+生体物質は、人工（非生体）物質とは異なる設計・合成機構で作られ、環境や刺激に対する特異的な応
+答性や多様な機能を示す。生体物質を人為的に改変し、また人工物質との相互作用を介して制御することで、
+生体物質や人工物質だけでは実現できない性質や機能を活用した多様な技術が開発されてきた。例えば、ナ
+ノポアシーケンサーは、DNA塩基を識別するナノポアタンパク質を人工高分子膜中で安定化させることで、リ
+アルタイム配列解析や長鎖のDNA解析への利用を可能にした。また、人工小胞（リポソーム）の中に生体内
+反応を模した様々な化学反応機構を組み込んだ人工細胞の構築が試みられている。さらに、デバイスやロボ
+ティクスを用いて人間の身体機能や認知機能に介入する、身体拡張や人工超感覚、ニューロテック/ブレイン
+テックといった技術も近年注目を集めている。このように分子レベルから個体レベルまでの様々な生体の階層
+に対して、人工物質と複合しながらその機能の利用や制御を目指す試みがある。
+中でも、細胞が有する機構を利用・制御しようとする技術開発が、この十数年の間で活発に進められてきた。
+バイオテクノロジーの顕著な発達によって、細胞内の遺伝子発現をより精緻に改変・制御することが可能に
+なった。それを利用した“遺伝子治療”や“バイオものづくり”といった概念が広く浸透し、社会実装も進む。
+一方で、細胞機能の利用・制御のさらなる拡充や高度化に向けてキーになると考えられるのが、材料科学や
+デバイス技術を組み合わせたアプローチである。従来のバイオテクノロジーが主に単一の細胞、特にその内部
+機構に焦点を当てているのに対し、材料やデバイスとの複合を考えることによって、細胞と細胞、細胞と細胞
+外物質の相互作用で生まれる高次な機能（例えば、３次元的構造化、駆動力・信号の増大や複雑化、物質・
+エネルギーの多段階の輸送や変換、細胞間ネットワークによる情報処理や学習など）を利用・制御できる可
+能性が見出されている。さらに、細胞の集団化、組織化で以て生物が実現している動的な適応性を、人工的
+な材料やシステムに搭載できる可能性がある。
+このように、バイオテクノロジーと材料・デバイス技術を組み合わせながら、細胞の集団的な挙動および高
+次機能を人為的に利用・制御していく可能性が開拓されている。本章では、背景にある生命科学と材料科学
+の発展と、細胞集団の挙動の理解に必要な解析技術や計測技術の進展を述べる。さらに、実際に細胞を材
+料やシステムに組み込んだ多様な工学的応用の方向性や、関連する国内外の研究動向を概観する。そのうえ
+で、細胞集団に潜在する高次機能の実現と、適応性を備えた動的材料システムの創出のために、これらの技
+術・知見・発想をつなげた研究開発の推進が重要であることを示す。
+2.1.1 生命科学の発展：バイオテクノ ロジーと合成生物学による細胞機能の制御・設計
+2000年代以降、ゲノム配列などのオミクス情報の網羅的解析技術や、ゲノム合成技術といったバイオテク
+ノロジーの基盤的技術が大いに発達した。これらの技術を用いながら、細胞が持つ生体機能、特に細胞内部
+の遺伝子発現や化学反応機構を制御・設計しようとする“合成生物学”の概念が急速に普及した。合成生物
+学の中核的な概念は、 細胞が特定のインプット情報を感知して特定のアウトプット （状態の変容） を行うという、
+内的な情報処理とそれに伴う物質的な変化（合成、分解、重合・複合化など）を人工的にプログラムすると
+いうものである。細胞が感知できるインプット情報は、生物学的なシグナル物質やリガンド分子の受容のみな
+らず、細胞外の分子濃度勾配、細胞外物質の親水性・疎水性および官能基の有無といった化学的な情報も関
+わる。さらに物理的な情報として、細胞外物質の硬さや細胞に掛かる応力などの力学的な情報、細胞変形の
+2 研究開発を実施する意義
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+3
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 14 =====
+誘起や空間的な制約など形状・幾何に関わる情報、電位やイオン電流といった電気的な情報も対象である
+1
+。
+また、特定のインプット情報の感知を担う受容体分子を人工合成する技術も開発されており
+2
+、今後人為的に
+利用・制御できる情報も多様化が進むと考えられる。
+インプット情報を処理する細胞内プロセスは、遺伝子ネットワークの設計
+3, 4
+から、近年は酵素反応のネット
+ワークの設計へと発展している。同時に、 遺伝子要素の標準化
+5, 6
+や自動設計のためのツールの整備
+7
+なども進
+む。最終的には、細胞増殖や細胞分化、物質生産、細胞移動・変形など、多様なアウトプットにつなげるこ
+とが可能である。
+改変した細胞の実用化も進んでいる。例えば、CAR-T細胞治療は、がん患者から採取したＴ細胞に、がん
+細胞表面抗原を特異的に認識する人工的なキメラ抗原受容体（CAR）を発現するように遺伝子改変を施し、
+再び患者に投与するがん治療法である。バイオものづくりとして、微生物等の代謝経路を人工的に改変し、
+微生物体内で目的の化合物を合成・蓄積させる技術の活用も加速している。より適した細胞内プロセス（高
+い物質生産効率など） を見つけ出すため、 自動実験のシステムと機械学習を利用して 「D （design） ・B （build） ・
+T（test） ・L（learn） 」のサイクルを効率的に回す試みも１つの潮流である。
+バイオテクノロジーで細胞機能を制御しようとする上で、課題となるのが細胞集団レベルへの拡張である。
+これまでに、細胞接着分子（カドヘリン）の発現量制御による細胞塊の多層構造の作製
+8
+や、細胞間を跨い
+だ多段階の論理ゲートの構築
+9
+などが示されている。細胞表面の化学的・生物学的な修飾法も開発されてい
+る
+10
+。
+しかし、現状の細胞間相互作用の制御方法は、直接的な細胞間接着やゲル培地を介した２次元的物質拡
+散など、限定的である。また、物理的な刺激や３次元的な立体構造の制御は十分に考慮されていない。一方、
+実際の生体組織中では、細胞は多数の細胞や細胞外マトリックスを介して３次元的また長距離の相互作用を
+行っている。例えば、胚の発生過程、がん組織が作リ出す細胞外マトリックスを含む微小環境
+11, 12
+、微生物間
+1 Jansen, K. A., et al., “ A guide to mechanobiology: Wher e biology and ph ysics meet, ” Biochimica et Bioph ysica
+A
+cta
+
+(BBA)-Molecular
+
+Cell
+
+Research 1853(11), 3043-3052 (2015).
+2 Scheller, L., et al., “Generalized extr acellular molecule sensor platf orm f or pr ogramming c ellular beha vior,”
+Natur
+e
+
+Chemical
+
+Biology
+
+14(7),
+
+723-729
+
+(2018).
+3 Elowitz, M. B . and Leibler, S., “ A s ynthetic oscillatory netw ork of tr anscriptional r egulators,” Nature 403(6767),
+335-338
+
+(2000).
+4 Gardner, T . S., Cantor, C. R. and C ollins, J. J., “ Construction of a g enetic tog gle s witch in Escherichia c oli,” Nature
+403(6767),
+
+339-342
+
+(2000).
+5 Endy, D., “F oundations for engineering biology,” Nature 438(7067), 449-453 (2005).
+6 Andrianantoandro, E., Basu, S., Karig, D . K. and W eiss, R., “S ynthetic biology: new engineering rules f or an
+emer
+ging
+
+discipline,” Molecular systems biology 2(1), 2006-0028 (2006).
+7 Appleton, E., Madsen, C., R oehner, N. and Densmor e, D ., “Design automation in s ynthetic biology, ” Cold Spring
+H
+arb.
+
+Perspect.
+
+Biol. 9, a023978 (2017).
+8 Toda, S., et al., “P rogramming self-or ganizing multic ellular structur es with s ynthetic c ell-cell signaling, ” Science
+361(6398),
+
+156-162
+
+(2018).
+9 Du, P., Zhao, et al., “De novo design of an intercellular signaling toolbox for multi-channel cell–cell communication
+and
+
+biological
+
+computation,” Nature communications 11(1), 4226 (2020).
+10 Almeida‐Pinto, J., et al., “ Cell Surfac e Engineering T ools f or P rogramming Living Assemblies, ” Advanced Scienc e
+10(34), 2304040 (2023).
+11 Quail, D. F. and Joyce, J. A., “Micr oenvironmental regulation of tumor progression and metastasis,” Nature
+Medicine 19(11), 1423-1437 (2013).
+12 Wirtz, D ., K onstantopoulos, K. and Searson, P . C., “The ph ysics of canc er: the r ole of ph ysical inter actions and
+mechanical
+
+forces
+
+in
+
+metastasis,” Nature Reviews Cancer 11(7), 512-522 (2011).
+4
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 15 =====
+のベシクル等を介した物質輸送などがある
+13
+。こういった細胞と細胞、細胞と細胞外物質の相互作用を３次元
+的また時間的に制御するためには、細胞外の環境や立体的配置なども含めた設計を考えていく必要がある。
+ここで、材料科学やデバイス技術の貢献が重要となる。
+2.1.2 材料科学の発展：材料・デバイス技術による細胞集団挙動への介入
+細胞集団への介入に関わる材料技術でまず挙げられるのは“バイオマテリアル”である。従来バイオマテリ
+アルの研究では、主に医療応用を志向して、意図しない生体毒性や免疫反応を引き起こさないかといった生
+体適合性の追究がされてきた。しかし近年では、材料との相互作用を介して能動的に生体応答を制御する試
+みが顕著になっている。例えば、免疫反応を意図的に誘起して治癒の促進を図る材料などが開発されている。
+材料と生体間の相互作用を積極的に制御する材料として“バイオアダプティブ材料”
+14
+という概念も浸透しつつ
+ある。
+材料による生体応答の制御においては、材料の形状や力学的特性、材料表面の化学的・生物学的性質な
+どが重要となる。それぞれの技術的な進展を次に示す。
+１つ目の材料形状について、マイクロパターニング技術は、一細胞レベルから組織レベルまで幅広いスケー
+ルに適応される代表的技術である
+15
+。フォトリソグラフィーに始まり、ソフトリソグラフィー、インクジェット・
+バイオプリンティングなど、加工分解能や品質安定性の向上、また３次元的なマイクロパターン形成に向けて
+様々な技術が開発されてきた。そのほか、多孔質構造や、メッシュ状ファイバー
+16
+、光や熱に応じた材料表面
+構成や形状の変化、表面曲率の影響などが研究されている
+17
+。このような材料形状の特徴によって、細胞の形
+や増殖性、配向、移動、さらには細胞分化にも影響を与えられる可能性が示されている。
+２つ目の材料力学的特性については、2006年にCell誌に掲載された、間葉系幹細胞の分化が細胞外マト
+リックス材料の力学特性に依存すると報告した論文
+18
+が研究活発化の大きなきっかけになった。細胞は細胞
+外物質に接着してその力学特性を感知し、自らの形状を変化・維持させたり、移動したりする。細胞外マト
+リックスの力学的特性も、細胞活動の影響を受け絶え間なく変化する。こうした生体内の変化を模すべく、外
+的刺激に応じて力学特性が変化する材料の開発が取り組まれている。力学特性が変化する材料を使い、力学
+的環境の履歴が幹細胞の分化決定に寄与するという「mechanical memory
+」という概念も見出された
+19
+。
+さらに、 材料弾性率に応じた細胞走性（durotaxis）の制御や、 弾性率だけでなく粘性も調整した材料の開発、
+細胞周囲の３次元的な力学環境やさらにはその時間的変化（4次元）を実現する材料技術の開発が進められ
+ている。
+３つ目として、材料表面の化学的・生物学的性質の構成・制御も重要である。細胞が材料に付着するかは、
+材料表面の親水性/疎水性や官能基の存在に大きく依存し、それが生体の応答にも影響する。わが国でも化
+13 Karygianni, L., et al., “Biofilm matrix ome: extr acellular c omponents in structur ed micr obial c ommunities,”
+Trends in microbiology 28(8), 668-681 (2020).
+14 科学技術振興機構研究開発戦略センター, 戦 略プロポ―ザル「バイオ材料工学　～生体との相互作用を能動的に制御するバイ
+オアダプティブ材料の創出～」 （CRDS-FY2018-SP-02） （2018年11月）
+15 Romanazzo, S. and Kilian, K. A., “ Chapter5: Geometric Cues f or Dir ecting C ell F ate,” in Material-based
+Mechanobiology (Royal Society of Chemistry, 2022), 85-109.
+16 Taskin, M. B ., et al., “Bioactiv e electr ospun fibers: fabrication str ategies and a critical r eview of surfac e-sensitive
+char
+acterization
+
+and
+
+quantification,” Chemical Reviews 121(18), 11194-11237 (2021).
+17 Nakanishi, J. and Uto, K., ed., Material-based Mechanobiology (Royal Society of Chemistry, 2022).
+18 Engler, A. J., et al., “Matrix elasticity directs stem cell lineage specification,” Cell 126(4), 677-689 (2006).
+19 Yang, C., et al., “Mechanical memory and dosing influenc e stem c ell fate, ” Nature Materials 13(6), 645- 652
+(2014).
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+5
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 16 =====
+学特性に注目した著名な研究成果が示されている
+20, 21
+。リガンド分子を材料表面に導入することで、 リガンドと
+（細胞膜上の）受容体の間の生物学的相互作用により細胞の状態変化を誘起する方法もある。
+つづいて、“バイオエレクトロニクス”も、材料・デバイスによる細胞集団への介入技術として重要である。
+ここでは電気的相互作用が関わる。近年の再生医療材料や生体模倣システムの研究活性化を受けて、細胞集
+団の電気活性の計測や電気的応答制御の技術開発が顕著になっている
+22
+。高い空間分解能で細胞の電気生理
+学的挙動を計測・制御するため、ナノ構造を持った様々な電極や電気デバイスが開発されている
+23
+。さらに、
+細胞塊を包み込むような構造や、膜状材料で巻き込むロール型なども考案された
+24
+。また、電極に用いる導電
+性材料自体の開発も有用である。従来的な金属やシリコン材料のみならず、ナノカーボン材料や有機エレクト
+ロニクス材料の開発や利用が進んでいる。特に有機材料は、細胞毒性の低さと同時に、柔軟性を活かした高
+い接触性により優れた信号検出が期待される。
+バイオエレクトロニクスデバイスを用いた電気的計測により、起電性を持つ神経細胞や筋肉細胞の活性だけ
+でなく、非電気活性の細胞についても、細胞の生存能力や被覆率、成長や分化、さらには細胞層の完全性な
+どの情報が得られる。電気的な刺激による、細胞の増殖や分化の誘導、神経細胞の神経突起の伸長、筋肉
+細胞の収縮の同調やその頻度調整なども見出されている
+25
+。
+また、微生物の持つ電気的活性を電極材料等を介して制御する技術も、細菌感染の対策や医療応用、エネ
+ルギー生産や環境浄化など、広範な用途に向けて関心が高まっている。
+さらに近年、材料の形状や力学的特性、化学的組成、電気的特性などを通した、生体の多様な階層（細胞、
+組織、臓器、個体全体）への影響を体系的に理解しようとする“マテリオバイオロジー（Materiobiology） ”
+という分野が提起され
+26
+、浸透が進んでいる。昨今では、多様な組成や物性の材料を効率的に合成・評価す
+るハイスループット実験系の構築と同時に、生体側の応答を効率的・安定的に分析するための実験系や、デー
+タ駆動のアプローチ、数理的モデリングとの組み合わせが試みられている
+27
+。
+2.1.3 細胞集団挙動の物理的な理解：モデリ ングと計測
+上述のように、バイオテクノロジーや材料・デバイス技術によって、細胞集団に対する人為的な介入が徐々
+に可能になってきている。一方で、細胞集団という大きなスケールでの振る舞いの理解と制御するにあたって
+は、細胞内部の分子的要素（遺伝子発現や代謝など）の解明だけでは不十分である。物質・材料としての性
+質（物性）や振る舞いを見る、物理的視点（例えば、統計力学、ソフトマター物理学、流体力学、機械力学、
+レオロジー、電磁気学など）も有用となる
+28
+。
+20 Yamada, N., et al., “Thermo ‐responsive polymeric surfac es; c ontrol of attachment and detachment of cultur ed
+c
+ells,” Die Makromolekulare Chemie, Rapid Communications 11(11), 571-576 (1990).
+21 Ishihara, K., Ueda, T . and Nakabayashi, N. “P reparation of phospholipid polymers and their properties as polymer
+h
+ydrogel
+
+membranes,” Polymer Journal 22(5), 355-360 (1990).
+22 Pitsalidis, C., et al., “ Organic bioelectronics for in vitro systems,” Chemical Reviews 122(4), 4700-4790 (2021).
+23 従来的な微小電極アレイから、細胞膜を貫通し細胞内情報の計測をするニードル型のナノプローブやナノピラー、２次元的な電
+界効果トランジスタ-アレイなど
+24 Xue, Z. and Zhao, J., “Bioelectric interfac e technologies in c ells and or ganoids,” A dvanced Materials Interfac es
+10(36),
+
+2300550
+
+(2023).
+25 Pitsalidis, C., et al., “ Organic bioelectronics for in vitro systems,” Chemical Reviews 122(4), 4700-4790 (2021).
+26 Li, Y ., Xiao, Y . and Liu, C. “The horizon of materiobiology: a perspectiv e on material-guided c ell beha viors and
+tissue
+
+engineering,” Chemical Reviews 117(5), 4376-4421 (2017).
+27 Yang, L. , e t a l., “ High-throughput me thods in t he di scovery an d st udy of bi omaterials a nd ma teriobiology,”
+Chemical Reviews 121(8), 4561-4677 (2021).
+28 わが国では、生物物理学やバイオメカニクス、生物物理化学といった分野で扱われることが多い。
+6
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 17 =====
+細胞の集団的挙動を記述する物理的理論やモデリングは着実な進展をしてきている
+29
+。特に力学的なモデリ
+ングは、１次元から２次元・３次元へ、形の固定された細胞から変形（分裂や細胞死も含む）にも対応でき
+るようにと発展してきた
+30
+。一般に各モデルは、関心とする現象に応じて特定の粗視化レベルを採用した上、
+表現する相互作用の要素も異なるものとなる。従来、最も粗視化を進めた連続体モデルが良く使われてきた。
+個々の細胞の特徴を局所毎に平均化し、細胞集団を流体力学的原理に基づいて記述するものである。より
+個々の細胞の特徴を保持したモデルとしては、エージェント・ベース・モデルがある。エージェント・ベース・
+モデルにも様々な粗視化レベルのものがあるが
+28, 31
+、細胞間あるいは細胞と細胞外基質の間の張力や摩擦力、
+配向的な流れなどの要素を、力学方程式やエネルギー関数としてモデルの構成式へ導入する試みがされてい
+る。さらに、物理的モデリングに対する１つの補完的アプローチとして、細胞集団動態の経時的画像データか
+ら、機械学習によるパターン分析や潜在的ルールの探索を行う研究も近年増えている。
+電気的な応答には、等価回路モデルが一般的に使われる。細胞集団の電気計測に関わる複数の要素
+32
+を考
+えながら、通常回帰的なアプローチによって回路構造とパラメータ値が選択される。これまで２次元培養され
+た細胞に対する計測とモデル化が主であったが、近年、３次元的な細胞の集合体に対する等価回路の開発も
+徐々に増えている
+33
+。また、 複雑な電気的要素を回路として表現する代わりに、 データ駆動的アプローチによっ
+て入出力を関係づける研究も活発化している
+34
+。
+長距離を含む分子の拡散・移動については、反応拡散方程式が今なお幅広く利用される。古典的なアク
+ティベーターとインヒビターの２成分拡散系のみならず、昨今では、多成分系への拡張、計算コスト増加に対
+する削減策、細胞部分・体液部分・細胞外物質と相を区画化したモデル、さらには、力学的な相互作用と組
+み合わせたモデルなどが開発されている
+35
+。
+物理的な理論やモデルの定量性および科学的意味を担保するためには、細胞の物理的特性の計測技術も
+重要である。特に細胞に働く力の計測は、近年のメカノバイオロジーの隆盛も伴って進展が著しい。例えば、
+細胞間の接着結合や細胞骨格などに掛かる張力を、蛍光標識で可視化する方法が様々開発されている。光ピ
+ンセット技術やマイクロロボット、MEMSカンチレバーなども細胞の力計測に使われる。細胞と細胞外物質の
+間に働く力については、牽引力顕微鏡
+36
+や、細胞を播種したマイクロピラーの変位から細胞牽引力を測る方法、
+力応答性分子プローブを基質側に導入する方法
+37
+などが開発・利用されるようになっている。また、細胞集
+団における長距離の関係性を評価するため、細胞の形の経時的画像からの移動速度やひずみの推定、細胞膜
+張力分布の統計的推定などが試みられている。
+29 Alert, R. and T repat, X. “Ph ysical models of c ollective c ell migr ation,” Annual R eview of C ondensed Matter Ph ysics
+11,
+
+77-101
+
+(2020).
+30 Moure, A., and Gomez, H., “Phase- field modeling of individual and collective cell migration,” Archives of
+C
+omputational
+
+Methods
+
+in
+
+Engineering 28, 311-344 (2021).
+31 細かいものから、個々の細胞の形を離散的格子の集合で表現するCellular P otts Model 、細胞の内外の境界面を位相場で表
+現するPhase-Filed法、多角形の細胞のネットワークとして細胞集合・組織を表現する頂点モデル（Vertex model
+）やボロ
+ノイモデル（Voronoi
+
+model） 、各細胞を円形粒子として扱う粒子モデル、などがある。
+32 細胞膜間あるいは細胞結合間のイオン流に関わる抵抗やキャパシタンス、電解液の抵抗、電極と電解の界面におけるキャパシタ
+ンスなど
+33 De León, S. E., Pupovac, A. and McArthur, S. L. “Thr ee‐Dimensional (3D) cell culture monitoring: Opportunities
+and
+
+challenges
+
+for
+
+impedance
+
+spectroscopy,” Biotechnology and bioengineering 117(4), 1230-1240 (2020).
+34 Van Haeverbeke, M., Stock, M. and De Baets, B. “E quivalent electrical circuits and their use across electrochemical
+impedanc
+e
+
+spectroscopy
+
+application
+
+domains,” Ieee Access 10, 51363-51379 (2022).
+35 Landge, A. N., et al., “P attern f ormation mechanisms of self-or ganizing r eaction-diffusion s ystems,” Developmental
+Biology 460(1), 2-11 (2020).
+36 細胞周囲の培養基質中に蛍光ビーズを埋め込み、ビーズの位置変動から細胞の牽引力を見積もる方法
+37 Matsubara, H., et al., “ A P rogrammable D NA Origami Nanospring That R eports Dynamics of Single Integrin Motion,
+F
+orce
+
+Magnitude
+
+and
+
+Force
+
+Orientation
+
+in
+
+Living
+
+Cells,” ACS nano 17(14), 13185-13194 (2023).
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+7
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 18 =====
+生体の力学物性の計測法も注目される。原子間力顕微鏡（AFM）の生体応用技術は、従来の表面走査だ
+けでなく垂直方向への走査も可能になり、細胞内部の３次元的な情報の取得も可能となってきた
+38
+。さらに、
+高速スキャニング
+39
+やプローブ構造の改変などにより、細胞集団・組織レベルの観察への適用もされるように
+なっている。ブリルアン散乱顕微鏡は、物質の粘弾性を光の波数シフトから計測可能な分光学的手法である。
+計測の高速化・3次元化といった技術向上
+40
+とともに、顕微鏡メーカーによる製品化
+41
+で一般ユーザーへの普
+及も進みつつある。光干渉断層計（Optical C
+oherence T
+omography：OCT）の原理を利用して生体粘
+弾性を計測する技術（Optical C
+oherence Elastogr
+aphy：OCE）は、顕微化が進んで細胞精度の３次元
+計測が実現できるようになった。同時に高速化や適応周波数域の拡張も進んでいる
+42
+。
+そのほか、 電気特性については、 バイオエレクトロニクスデバイスを用いた計測 （2.1.2） 以外に、 蛍光プロー
+ブ
+43
+を用いた方法や、電気インピーダンストモグラフィーの高解像度化
+44
+などの研究開発がされている。
+2.1.4 細胞集団の工学的応用の方向性とELSI/RRIの議論
+もう１つの大きな潮流として、細胞を素材に用い、細胞特有の応答性や高次な機能を組み込んだ材料やシ
+ステムの研究開発が活発化している。以下、いくつかの方向性を例示する。
+■微生物を利用した自己成長・自己修復性建材（Living building materials）
+微生物を混ぜ込んだ自己修復性コンクリートの開発が進んでいる
+45
+。通常は休眠状態になっているバクテリ
+アが、コンクリートのひび割れによって侵入する水と酸素で活動を開始し、ひび割れ内に炭酸カルシウムを生
+成しひびを埋める機構である。また、シアノバクテリアが空気中のCO2を吸収して炭酸カルシウムを産生する
+性質を活用して、砂やヒドロゲルと組み合わせた自己成長建材の研究も進められている
+46
+。微生物の休眠/活
+動状態の制御と、建材としての強度および耐久性実現が重要である。また最近、類似の機構で、微生物を練
+り込み自己分解性を持たせたプラスチックの開発が報告された
+47
+。
+■Microphysiological systems（MPS：生体模倣システム）
+創薬研究における動物実験代替の需要を発端とし、培養細胞を使ってヒトの各器官を体外（in vitr o ）で
+再現する人工システムが開発されている。オルガノイドと呼ばれる、分化誘導させた細胞塊を試験管や培養皿
+38 Fukuma, T ., “Visualizing the inside of thr ee-dimensional self-or ganizing s ystems b y thr ee-dimensional atomic
+f
+orce
+
+microscopy,” Japanese Journal of Applied Physics 63(1), 010801 (2023).
+39 Umeda, K., McArthur, S. J. and K odera, N. “Spatiotempor al r esolution in high-speed atomic f orce micr oscopy f or
+studying
+
+biological
+
+macromolecules
+
+in
+
+action,” Microscopy 72(2), 151-161 (2023).
+40 Bevilacqua, C., et al., “High-r esolution line-scan Brillouin micr oscopy f or liv e imaging of mechanical pr operties
+during
+
+embryo
+
+development,” Nature Methods 20(5), 755-760 (2023).
+41 国内では株式会社東京インスツルメンツの顕微ブリルアン・ラマン分光装置“Nanofinder”など
+42 Lin, Y ., et al., “Light-sheet photonic f orce optical c oherence elastogr aphy f or high-thr oughput quantitativ e 3 D
+micr
+omechanical
+
+imaging,” Nature Communications 13(1), 3465 (2022)..
+43 電位に応じて蛍光波長が変わる蛍光分子や、導電性に応答するナノダイアモンド（蛍光）センサーなど
+44 De León, S. E., Pupo vac, A. and McArthur, S. L. “Thr ee‐Dimensional (3D ) c ell cultur e monitoring: Opportunities
+and
+
+challenges
+
+for
+
+impedance
+
+spectroscopy,” Biotechnology and bioengineering 117(4), 1230-1240 (2020).
+45 Ducati, R.G., et al., “Use of micr oorganisms in c ementitious materials - a s ystematic r eview,” Construction and
+Building
+
+Materials 373(10), 130788 (2023).
+46 Heveran, C.M., et al., “Biominer alization and Suc cessive R egeneration of Engineer ed Living Building Materials, ”
+Matter
+ 2(2),481-494 (2020).
+47 Kim, H. S., et al., “Bioc omposite thermoplastic polyur ethanes c ontaining ev olved bacterial spor es as living fillers
+to
+
+facilitate
+
+polymer
+
+disintegration,” Nature Communications 15(1), 3338 (2024).
+8
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 19 =====
+の中で作る試みの一方で、デバイスやゲル材料など細胞外の物質の力学特性や幾何構造を制御することで、
+安定的に特定の臓器特徴が再現されることも明らかになっている
+48
+。 Organ-on-a-Chipと呼ばれる、微小区
+画内に臓器機能を再現し、さらに流路を通して液性成分を行き来させる技術はこれまで大きく進展した
+49
+。昨
+今では、ゲル区画内に３次元的な臓器構造を構築し、より生体に近い応答の再現を目指す技術開発が進む。
+■人工神経細胞回路
+神経細胞を電気デバイス上に播種・培養し、人工的な神経細胞ネットワークの応答を観察・制御する技術
+がある。人工脳/脳オルガノイドとして脳科学研究や創薬研究への利用を目指す一方、神経細胞自身をソフト
+ウェアおよびハードウェアとしたコンピューティング・デバイス
+50
+の開発を目指す方向もある。既存のシリコン
+半導体をベースにした計算機と比べ、省エネルギーでの計算が可能になると期待されている
+51, 52
+。
+神経細胞間の連結をより実際の脳に近いものとするため、微細加工技術や材料技術を用いた培養空間の区
+画化
+53
+や３次元化が追究されている。また近年では、特定の入力信号に対して特定の出力をさせるような「学
+習」が可能であること、つまり物理リザバーとして機能させるという研究への注目が高まっている
+54, 55, 56
+。
+■バイオフィ ルム材料（Engineered biofilms）
+微生物は、多糖類やタンパク質、脂質等を体外に分泌し、自らを包含したバイオフィルム形成する。排水
+管や口腔内などに生じるものは問題ともなる一方で、近年はバイオフィルムを人工的に改変し、機能性材料と
+して活用する研究が進む。組換え微生物と人工物質を複合した人工バイオフィルムが様々開発され、汚染物
+質分解
+57, 58
+や、創傷治癒
+59
+、生体情報をセンシングする電子デバイス
+60
+などへの活用可能性が示されている。
+48 Hofer, M., and Lutolf, M. P. “Engineering organoids,” Nature Reviews Materials 6(5), 402-420 (2021).
+Gjorevski, N., et al., “T issue geometry drives deterministic organoid patterning,” Science 375(6576), eaaw9021
+(2022).
+49 Ingber, D . E., “H uman or gans-on-chips f or disease modelling, drug dev elopment and personalized medicine, ”
+Nature Reviews Genetics 23(8), 467-491 (2022).
+50 ウェットウェア、ディッシュブレインなどとも称される。
+51 Jordan, F . D ., et al., “ Open and r emotely ac cessible N europlatform f or r esearch in w etware c omputing,” Frontiers
+in
+
+Artificial
+
+Intelligence 7, 1376042 (2024).
+52 スイス（FinalSpark, https://finalspark.c om/（2024年9月30日時点） ）やオーストラリア（Cortical Labs, https://
+c
+orticallabs.com/（2024年9月30日時点） ）でスタートアップが立ち上がっている。
+53 Yamamoto, H., et al., “Modular ar chitecture facilitates noise-driv en c ontrol of s ynchrony in neur onal netw orks,”
+Science Advances 9(34), eade1755 (2023).
+54 Kagan, B . J., et al., “In vitr o neur ons learn and exhibit sentienc e when embodied in a simulated game-w orld,”
+Neuron 110(23), 3952-3969 (2022).
+55 Sumi, T ., e t a l., “ Biological n eurons a ct a s g eneralization f ilters i n r eservoir c omputing,” Proceedings o f t he
+National
+
+Academy
+
+of
+
+Sciences 120(25), e2217008120 (2023).
+56 Cai, H., et al., “Br ain or ganoid r eservoir c omputing f or artificial intellig ence,” Nature Electr onics 6( 12), 1032-
+1039
+
+(2023).
+57 Huang, J., et al., “P rogrammable and printable Bacillus subtilis biofilms as engineer ed living materials, ” Nature
+Chemical
+
+Biology
+ 15, 34–41 (2019).
+58 Gilbert, C ., e t a l., “ Living m aterials w ith p rogrammable f unctionalities g rown f rom e ngineered m icrobial c o-
+cultures,” Nature Materials 20, 691–700 (2021).
+59 Praveschotinunt, et al., “Engineer ed E. c oli Nissle 1917 f or the deliv ery of matrix-tether ed ther apeutic domains
+to
+
+the
+
+gut,” Nature Communications 10, 5580 (2019).
+60 Wang, Z., et al., “Flexible bioelectr onic devic e fabricated b y c onductive polymer–based living material, ” Science
+A
+dvances 8(25), eabo1458 (2022).
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+9
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 20 =====
+また、 複数種の微生物間で分業をさせる人工微生物叢も開発されている
+61
+。微生物間の通信機構であるクオ
+ラムセンシングへの人為的介入によるバイオフィルム形成の制御も実証されている。
+■細胞センサー（Live-cell sensors）
+微生物や昆虫・哺乳類細胞に、特定の物質や刺激を感知する受容体を発現させ、環境物質などの検査に
+利用する技術が様々開発されている
+62
+。病原菌や重金属、毒物の検出など公衆衛生に資するものや、嗅覚や味
+覚といった五感を再現するセンサーなどがある。特に虫や動物の優れた感覚器機能を利用したセンサーは、
+極微量の匂い検出による災害救助支援や、複雑な匂い・味の評価による食品開発への応用が図られている。
+細胞センサーの開発では、細胞の足場となる材料開発も重要である。細胞の担時、水・栄養成分の出入に
+よる細胞の長期寿命の確保、あるいは細胞の漏出を防ぐ役割などがある
+63
+。
+■ バイオハイブリッドロボット
+細胞や生体組織を人工部品と組み合わせて、生体特有の運動機能および感覚機能を備えたロボットの開発
+がされている。2000年代の筋肉そのものを使う研究から始まり、昆虫細胞から成るマイクログリッパー
+64
+や、
+マウスの心筋細胞で動くエイ型の遊泳ロボット
+65
+、 ヒト心筋細胞を使った魚型ロボット
+66
+などが報告されている。
+近年では、マイクロ加工技術を用いて筋肉組織を作製し、人工関節と組み合わせることで、二足歩行や物体
+の持ち上げ動作など、複雑な運動能力を示すバイオハイブリッドロボットの開発が進んでいる
+67
+。
+■Living electrodes
+導電性ハイドロゲルに細胞を包埋し、電極材料へのコーティングや、デバイスのインターフェースに用いる
+研究がされている。脳・神経活動のモニターや刺激をするニューロテックだけでなく、エネルギーハーベス
+ティングなど、幅広い応用の可能性が見込まれている
+68, 69
+。従来的な金属電極と比べて、外部組織に対する
+接触性や適合性の向上が期待されるだけでなく、細胞自身の情報伝達能力や物質生産能力を安定的に利用で
+きる可能性がある。細胞種（微生物、藻類、哺乳類細胞など）や導電性材料の展開だけでなく、細胞と材料
+の複合化構造の改変（層状やシリンダー状のゲル構造
+70
+など）などの研究が行われている。
+61 An, B ., et al., “P rogramming living glue s ystems to perf orm autonomous mechanical r epairs,” Matter 3(6), 2080-
+2092
+
+(2020).
+62 Wan, X., et al., “P rogramming living sensors f or en vironment, health and biomanufacturing, ” Microbial
+Biotechnology 14, 2334–2342 (2021).
+63 Tang, T . C., et. al., “Materials design by synthetic biology,” Nature Reviews Materials 6(4), 332-350 (2021).
+64 Akiyama Y ., et al., “ Atmospheric-operable bioactuator po wered b y insect muscle packag ed with medium, ” Lab on
+a
+
+Chip 13(24), 4870-4880 (2013).
+65 Park, S. J., et al., “Phototactic guidanc e of a tissue-engineer ed soft-r obotic r ay,” Science 353(6295), 158- 162
+(2016).
+66 Lee, K. Y ., et al., “ An autonomously s wimming bioh ybrid fish designed with human car diac bioph ysics,” Science
+375(6581), 639-647 (2022).
+67 Kinjo R., et al., “Bioh ybrid bipedal robot powered by skeletal muscle tissue”, Matter 7(3), 948-962 (2024).
+68 Green, R. A, et al., “Living electr odes: tissue engineering the neur al interfac e,” 2013 35th Annual International
+C
+onference
+
+of
+
+the
+
+IEEE
+
+Engineering
+
+in
+
+Medicine
+
+and
+
+Biology
+
+Society
+
+(EMBC)
+ , 6957 -6960 (2013).
+69 Al-Mossawi, M. , et . al ., “L iving el ectrodes b ased on gr een al gae in h ydrogels,” Materials A dvances 2( 4), 1369-
+1377
+
+(2021).
+70 Adewole, D . O ., et. al., “Dev elopment of optically c ontrolled “living electr odes” with long-pr ojecting ax on tr acts
+f
+or
+
+a
+
+synaptic
+
+brain-machine
+
+interface,” Science Advances 7(4), eaay5347 (2021).
+10
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 21 =====
+また、これらの細胞性素材を使った材料・システムは、環境や人体と接触して使用されるものであるがゆえ
+に、ELSI/RRIの観点にも十分に留意する必要がある。ここでは先行している合成生物学におけるELSI/RRI
+に関する議論が参考になる。EUでは、意図しない接触から環境や人体を防護する観点から、Scientific
+C
+ommittee on H
+ealth and En
+vironmental Risks
+（SCHER） 、Scientific C
+ommittee on Emer
+ging
+and
+
+Newly
+
+Identified
+
+Health
+
+Risks （SCENIHR） 、 Scientific
+
+Committee
+
+on
+
+Consumer
+
+Safety （SCCS）
+の3機関から2014～15年に検討した3つの報告書
+71
+が共同で公表されている。米国では、National
+A
+cademies
+
+of
+
+Science
+
+Engineering
+
+Medicine（NASEM）が、合成生物学の安全保障上の懸念を評価・
+軽減するためのガイドラインとしての報告書
+72
+を公表している
+73
+。
+2.1.5 国内外の研究開発プロジェク ト、研究開発拠点
+2.1.4で例示したような細胞を素材に使った材料やシステムは、特に欧米や中国において、材料やシステム
+に生体物質（特に細胞）を取り入れた「Biohybrid～」 、あるいは合成生物学を材料・システムに発展させた
+「Engineered Living Materials/S
+ystems」というキーワードで、近年活発に研究開発が実施されている。
+表2-1に、各国の関連する研究プロジェクト・研究拠点や、国際会議の動向をまとめる。それぞれのプロジェ
+クトや国際会議において、多少のコンセプトの違いはあれど、細胞集団特有の適応性や、従来の人工物質や
+生体物質にはない高次機能を搭載し、環境負荷低減や資源の効率的利用といった側面から持続可能社会の
+実現に活かそうと、研究開発や議論が行われている。
+表 2-1　海外の関連する研究プロジェク ト・研究拠点および国際会議
+研究プロジェクト・研究拠点 期間
+米国
+DARPA：Engineered
+
+Living
+
+Materials
+
+(ELM)
+
+Program 2016-
+DARPA：Persistent
+
+Aquatic
+
+Living
+
+Sensors
+
+(PALS)
+
+Program 2018-
+NSF：Emerging F
+rontiers in R
+esearch and Inno
+vation pr
+ogram “Engineer
+ed Living
+S
+ystems
+
+(ELiS)”
+2022-
+2025
+NSF：Emerging
+
+Frontiers
+
+in
+
+Research
+
+and
+
+Innovation
+
+program
+ “Bioc
+omputing
+
+through
+
+EnGIN
+eering
+
+Organoid
+
+Intelligence
+
+(BEGIN
+
+OI)” 2024-
+The
+
+Center
+
+for
+
+Multi-cellular
+
+engineered
+
+living
+
+systems
+
+(M-CELS)
+
+マ
+サチューセッツ工科大学、イリノイ大学、ジョージア工科大学の３校のパートナーシップによる
+拠点型研究プロジェクト
+2021-
+コーネル大学：Engineered
+
+Living
+
+Materials
+
+Institute 2023-
+71 SCENIHR, SCCS & SCHER, “ Opinion on synthetic biology I: Definition” (2014),
+SCENIHR, SCCS & SCHER, “ Opinion on synthetic biology II: Risk assessment methodologies and safety aspects”
+(2015),
+
+SCENIHR, SCCS & SCHER, “Final opinion on synthetic biology III: Risks to the environment and biodiversity
+r
+elated
+
+to
+
+synthetic
+
+biology
+
+and
+
+research
+
+priorities
+
+in
+
+the
+
+field
+
+of
+
+synthetic
+
+biology”
+(2015)
+72 National A cademies of Scienc e Engineering Medicine (NASEM), “Biodef ense in the A ge of S ynthetic Biology”
+(2018)
+73 日本では、 「遺伝子組換え生物等の使用等の規制による生物の多様性の確保に関する法律」 （通称「カルタヘナ法」 ）による規
+制が行われているが、合成生物学におけるELSI/RRIに関する包括的な検討が行われているわけではない。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+11
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 22 =====
+欧州
+Horizon
+
+Europe：EIC
+
+Pathfider
+
+Challenges
+ “Engineer
+ed
+
+Living
+
+Materials” 2021-
+2027
+Horizon
+
+Europe：Development
+
+of
+
+technologies/devices
+
+for
+
+bio-intelligent
+
+manufacturing
+
+(RIA
+)
+2021-
+2027
+ドイツ DFG：Priority
+
+Program
+ “Engineer
+ed
+
+Living
+
+Materials
+
+with
+
+Adaptive
+
+Functions” 2023-
+2028
+中国 中国科学院
+
+深圳圳先進科学研究院 深圳圳合成生物学研究所 材料合成生物学研究センター 2017-
+国際会議 開催時期
+ゴードン
+会議
+
+M
+ultifunctional M
+aterials a
+nd S
+tructures：“Discovery of D
+ynamically R
+econfigurable,
+H
+ybrid,
+
+and
+
+Sustainable
+
+Materials” 2024.1
+Biointerface
+ Scienc
+e：“Molecular
+ Engineering,
+ Measur
+ement
+ and
+ Manipulation
+ at
+ the
+
+Boundary
+
+Between
+
+Living
+
+Systems
+
+and
+
+Synthetic
+
+Materials” 2024.6
+Materials
+R
+esearch
+Society
+
+2023
+
+Spring
+
+Meeting
+ “F
+undamentals
+
+and
+
+Applications
+
+of
+
+Engineered
+
+Living
+
+Materials” 2023.4
+2023
+
+Fall
+
+Meeting
+ “Bioh
+ybrid
+
+and
+
+Soft
+
+Functional
+
+Interfaces” 2023.11
+2024 Spring Meeting “Bioh
+ybrid Materials and Devic
+es f
+or Sensing, R
+obotics, Ener
+gy
+and
+
+Biomedicine” 2024.4
+2024
+
+Fall
+
+Meeting
+“Electrifying
+
+Biomaterials—Frontiers
+
+of
+
+Biohybrid
+
+Devices”
+“Smart
+
+and
+
+Living
+
+Materials
+
+for
+
+Advanced
+
+Engineering
+
+Systems”
+2024.12
+International
+
+Conference
+
+of
+
+Engineered
+
+Living
+
+Materials（2024.9に第４回会議を開催） 2020-
+わが国においては、 「Engineered Living Materials/S ystems」に直接相当する語は普及していないが、
+細胞を用いて目的の機能を持った材料やシステムなどを開発する研究が、組織工学や生体工学、バイオエン
+ジニアリングの分野を中心に行われている（表2-2） 。創薬支援に焦点を当てた生体模倣システムの開発に対
+しては、日本医療研究開発機構（AMED）がファンディングを実施している
+74, 75
+。微生物等の代謝経路・酵
+素反応を人工的に改変し、その体内で化合物等を合成させるバイオものづくりは、生物側の改変技術の基盤
+として本戦略プロポーザルの内容にも関わるものである。関連するプロジェクトが、新エネルギー・産業技術
+総合開発機構（NEDO）
+76, 77
+やJSTの革新的GX技術創出事業（GteX）
+78
+で実施されている。
+74 AMED「再生医療技術を応用した創薬支援基盤技術の開発事業（AMED-MPS事業） 」 （2017-2021年度）
+75 AMED「再生医療・遺伝子治療の産業化に向けた基盤技術開発事業（再生医療技術を応用した高度な創薬支援ツール技術開
+発） （AMED-MPS事業2） 」 （2022-2026年度）
+76 NEDO「植物等の生物を用いた高機能品生産技術の開発（スマートセルプロジェクト） 」 （2016-2020年度）
+77 NEDO「バイオものづくり革命推進事業」 （2023-2032年度）
+78 JST「革新的GX技術創出事業（GteX） 『バイオものづくり』領域」 （2023年度-）
+12
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 23 =====
+表 2-2　細胞集団の工学的応用に関する国内の研究プロジェク ト
+研究プロジェクト 期間
+JST-ERATO「竹内バイオ融合プロジェクト」 2010-2016年度
+JSPS
+
+新学術領域研究「超高速バイオアセンブラ」 2015-2019年度
+JSPS
+
+新学術領域研究「ソフトロボット学の創成：機電・物質・生体情報の有機的融合」 2018-2022年度
+JSPS
+
+学術変革領域研究（B） 「脳神経マルチセルラバイオコンピューティング」 2021-2023年度
+JSPS
+
+学術変革領域研究（A） 「脳神経マルチセルラバイオ計算の理解とバイオ超越への挑戦」 2024-2028年度
+*JSPS： 日 本学術振興会（Japan Society for the Promotion of Science）
+なお、本項では挙げないが、2.1.1から2.1.3に関する研究開発も含めて、本戦略プロポーザルに関わる国
+内の研究プロジェクトの動向を付録２にまとめている。2000年代以降、バイオテクノロジーやナノ（バイオ）
+テクノロジーに関わる研究プロジェクトが重点的に実施されてきた。近年では、細胞集団から器官レベルでの
+力学的応答や、細胞と細胞外物質の相互作用や細胞外環境条件による影響の理解、さらに材料・デバイス技
+術を用いた細胞応答の制御やシステム構築に関する研究が拡がっており、わが国でも本戦略プロポーザルに
+基づく研究開発の推進に必要な研究基盤が整いつつある。
+2.1.6 問題点
+ここまで、細胞、特にその集団的挙動の制御に関わる、生命科学の発展および課題（2.1.1） 、材料・デバ
+イス技術の貢献の可能性（2.1.2） 、 さらに細胞集団挙動の物理的な理解（2.1.3） 、 そして実際に細胞を材料・
+システムに組み込んだ工学的応用（2.1.4）について述べた。これらを通じて見出される問題点は、それぞれ
+の知見の蓄積や技術開発の進展は見られるものの、 それらが有機的につながっておらず断片的なものに留まっ
+ていること、ゆえに細胞集団と材料・デバイスの複合で期待される高次機能の利用・制御の実現、ならびに
+人工的材料システムとしての適応性の獲得には十分至っていないことである。以下、具体的な問題点を「科
+学技術的な問題」と「研究環境・体制の問題」に分けて述べる。
+【科学技術的な問題】
+（１）
+ 細胞集団
+の高次機能ならびに材料システムとし ての適応性の獲得は未踏：合理的な設計・構築手段が
+不足
+2.1.4で示した細胞を材料やシステムに使用する工学的応用の多くにおいて、現状の性能は、応用に当たっ
+て期待される水準に遠く及んでいない。例えば、現状のバイオハイブリッドロボットが生み出せる駆動力はヒ
+ト個体の筋力と比べれば非常に弱い。生体模倣システムは生体内の本来の臓器機能のごく一部しか再現でき
+ていない。人工神経細胞回路の情報処理・学習の能力は原始的なレベルである。さらに、用途や使用環境に
+応じて材料システムとしての機能や物質的状態を調整していく適応性は、今なお研究段階である。
+こういった現状の要因として、研究開発が経験的な推測や実験的な試行錯誤に依存しており、材料・デバ
+イスとの相互作用を交えた細胞の集団化・組織化、およびそこからの機能化における理論的裏付けが乏しい
+ことがある。つまり、特定の機能を実現するためには、どのような材料・デバイスを用い、また細胞の改変技
+術と組み合わせたら良いか、といった合理的な設計手段が不足している。同時に、設計指針に沿ったシステ
+ムを創るための、最適な構築手段（ファブリケーション技術など）の開発も遅れている。
+合理的な設計・構築手段の不足は、材料システムの高次機能の実現や適応性の獲得を目指すうえで大きな
+ボトルネックとなる。実用化や市場開拓に向けた技術の標準化・規格化や、創られる材料システムの多様化、
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+13
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 24 =====
+安全やセキュリティ上の潜在的なリスク評価や管理の議論においても障害となる。
+この材料システムの合理的な設計・構築手段の確立が進まない理由として、細胞集団と材料・デバイスが
+組み合わさった複合的な動態への理解が不足していること、特に、材料・デバイスと生体物質（細胞集団）
+の相互作用による双方の動態の理解や、一細胞レベルと細胞集団レベルの動態の記述が十分に結びついてい
+ないことが挙げられる。
+（２）細胞集団と材料・デバイスの複合的な動態への理解が不足
+（2-1）人工物質と生体物質（細胞集団）の相互作用に対する理解と複合的介入アプローチが不足
+2.1.1および2.1.2で述べたように、生命科学、材料科学、それぞれのアプローチで細胞集団への介入技術
+が発達してきた。しかし、それらを複合した理解や介入的アプローチが不足している。
+材料・デバイスとの相互作用で生じる細胞集団応答の観察・解析の多くが、細胞の形態や形質（分化状態
+など） 、生存率といった定性的な評価に留まっている。細胞が細胞外の材料・デバイスからどのような情報を
+どのように感知し、伝え、細胞集団レベルの状態の変容につなげているか、その細胞内・細胞間メカニズム
+の詳細な理解は未だ不十分である。同時に、バイオテクノロジーをベースにした細胞集団挙動の制御・設計
+技術は、細胞内の情報（ゲノム配列の改変、遺伝子発現の人為的調整など）の扱いが主で、細胞外条件は
+多くの場合、液体培地や静的な基材（均一なゲルやガラス、ポリスチレン、ポリジメチルシロキサン（PDMS）
+など）が想定されている。細胞外物質の特徴（例えば力学的特性、形状、化学的性状、電気的性質や刺激）
+をパラメータとして制御や設計で考慮することは少ない。
+生体に接した際の材料・デバイス側の応答は、これまでほとんど研究が進んでいない。現状、材料表面が
+タンパク質成分で被覆されたり、酵素で侵食されたり、その影響でデバイス応答が劣化するといった定性的な
+解釈はされている。しかし、細胞外物質の力学的・化学的性質は細胞活動の影響を受けて大きく変化する可
+能性がある。生体中では、細胞外マトリックスが、翻訳後の化学修飾や酵素的分解、あるいはマトリックス自
+体の蓄積、力学的負荷などによって、その形状や力学的・化学的特徴を変化させ（リモデリング） 、それが再
+び細胞の挙動や機能に影響を与えることが見出されている
+79
+。細胞に接するゲル材料でも同様な現象が観察さ
+れている
+80
+。しかし、 細胞の影響による細胞外物質の状態変化の計測手法開発や、 細胞から受ける影響を加味
+した材料設計、あるいは細胞から細胞外物質に働きかけることを企図した技術開発はほとんど行われていない。
+（2-2）一細胞から細胞集団の時間・空間スケールをつないだ動態の理解が不足
+細胞の集団的動態の理解においては、2.1.3で示した集合状態の細胞に対する物理的な情報・記述と、
+2.1.1のバイオテクノロジーで制御・設計する細胞内部状態の変化（遺伝子発現や、その細胞内分布の変化）
+との間に隔たりが存在する。つまり、個別の細胞の内部状態変化（例えば特定遺伝子の欠損や不活性化）の
+結果として、細胞集団レベルの表現型が変わることは見られるが、その間で起こる一細胞から細胞集団という
+時空間スケールをつないだ関係性を説明することは難しい。また、細胞集団レベルの動態（例えば組織レベ
+ルの変形）が個々の細胞状態変化（細胞内骨格の再構築、特定のシグナル経路の活性化、細胞死・増殖の
+誘起など）へどのように影響するか、という逆方向の関係性についてはあまり追究がされていない。
+時空間スケールを跨いだ動態理解を進めるためには、各スケールに対応した摂動法と計測法がそれぞれ必
+要になる。摂動法については、2.1.1で見たようなバイオテクノロジーの手法による細胞間相互作用の制御・
+79 Winkler, J., et al., “ Concepts of extr acellular matrix r emodelling in tumour pr ogression and metastasis, ” Nature
+c
+ommunications 11(1), 5120 (2020).
+80 Hagiwara, M., et al., “W eakening of r esistance f orce b y c ell–ECM inter actions r egulate c ell migr ation dir ectionality
+and
+
+pattern
+
+formation,” Communications Biology 4(1), 808 (2021).
+14
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 25 =====
+設計技術と、2.1.2の材料形状の規定や材料・デバイスを介した力学的・化学的・電気的な相互作用の誘起
+が考えられる。計測法については、構成物質の情報のみならず、2.1.3で示した物性情報の計測も有用である。
+摂動法と計測法のいずれにおいても、多様な時空間スケールに対応できる網羅性や汎用性は現状十分でない。
+また、材料システムの合理的な設計・構築手段の確立につなげるには、定量性の確保も重要である。特に計
+測法については、現状、定量性や３次元への適用に問題を抱えている手法が多い。
+さらに、細胞集団スケールのマクロな動態を、適切にミクロの情報とつなぎながら記述をするモデリング手
+法も不十分である。細胞内から細胞集団・組織の各スケールで起こる現象は、およそ空間スケールが大きい
+ほど時間スケールも大きい。細胞集団レベルでは数時間から数日掛けて起こる現象が対象になる。特に長時
+間の現象では、エネルギーや物質の出入りの影響が無視できず、モデルを作ること自体が容易でない。同時
+に、一細胞レベルの小さな空間・時間スケールの情報も上手く反映させる必要がある。必要十分な空間・時
+間分解能および物質構成・物性の情報を探索・保持した上で、より大きな時空間スケールを記述できるモデ
+ルの開発が求められる。ここには、増加する計算コストへの配慮も必要である。
+上述のように、細胞集団と材料・デバイスの複合による高次機能と適応性の獲得を目指すには、 （1）合理
+的な設計・構築手段の確立、ならびにその基礎となる（2）複合的な動態の理解が必要である。現状、これ
+らの要素となるバイオテクノロジーや生命科学の知見、材料・デバイス技術、物理的な解析技術や計測技術、
+さらに工学的応用など、それぞれについてわが国は十分な研究基盤を有している。これらの知識や技術と関
+わるコミュニティをつなげ、原理的理解に基づいた合理的な材料システム創製を実現していくことが、他国に
+先んじてわが国が強みの獲得を目指すべき方向性と考える。
+しかし、細胞集団と材料・デバイスの複合的動態の理解への基礎研究や、その原理的理解に基づいた工学
+研究が活発とは言えない背景には、 研究開発の環境や体制の問題がある。特にわが国の現状に則して考えたい。
+【研究環境・体制の問題】
+（1）研究者コミュニティを跨いだ交流・議論の機会が不足
+細胞集団と材料・デバイスの複合的な動態の理解に基づいた研究開発を実践するには、 生命科学の知見 （例
+えば、発生生物学や、微生物生態学、メカノバイオロジーなど）に加え、材料科学の基盤技術（バイオマテ
+リアルやバイオエレクトロニクス） 、さらには両者に通ずるような物理的な視点（ソフトマター物理学やバイオ
+メカニクス、生物物理化学など）を交えた研究が必要である。また、バイオテクノロジーで工学的応用を目指
+す生物工学や、材料技術を生体へ応用するバイオエンジニアリング、生体工学（Bionics）といった分野との
+連携も求められる。これら関連する分野の最先端の研究開発状況を一人ひとりの研究者が把握し理解した上
+で、融合的課題に対して科学的な議論が展開されることが重要である。しかし、各分野で自発的に形成され
+る研究者コミュニティ（学会や研究会など）はそれぞれ独立しており、研究者コミュニティを跨いだ交流・議
+論の機会は限られる。特に、生命科学と材料科学は、大学など高等教育の初期段階から、それぞれ確立した
+教育・研究プログラムで学生・研究者を育成しており、研究に対する目的意識や言葉遣い、評価基準、慣習
+などが異なることが大きな障壁となっている。
+さらにわが国では、 科学技術政策においても、 第２期科学技術基本計画 （2001年） 以降、 ナノテクノロジー ・
+材料分野（あるいはマテリアル分野）とライフサイエンス分野とを別々に扱ってきた。そのため、トップダウン
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+15
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 26 =====
+での研究開発プロジェクトでも両分野が交わるテーマ設定の機会は乏しい状況が続いている
+81
+。また一般に、
+融合的また新興的な研究領域では、既存の学会や論文誌に適合せず、研究成果や研究者が評価されにくい傾
+向も問題となる。ここに、トップダウンの研究開発プロジェクトに採択されたり参画したりという研究実績を
+積む機会も得にくい状況が長年続いてきたことは、当該融合領域に関わる人材の育成や新規参入のハードル
+上げ、研究コミュニティの土壌の漸次的な衰退をもたらした可能性がある。
+加えて、各コミュニティや各研究者で創出されるデータや研究ツールなどを共有するための、データベース
+基盤やプラットフォームが整備されていないことも、 知見の共有や活用、 ならびに新規参入の障害となっている。
+（2）ステークホルダーを跨いだ交流・議論の機会が不足
+研究コミュニティを跨いだ研究が実践されるには、具体的な動機付けが必要になる。前項に挙げたトップ
+ダウンの研究プロジェクトはその１つであるが、他方、社会的なニーズとの適合も重要である。既存のシーズ
+技術がどのような社会的ニーズに応え、あるいは潜在的なニーズを生み出すか、また社会的なニーズに対して
+不足する技術は何かといった視点を得るためには、研究者と産業界や社会科学者、市民など、様々なステー
+クホルダーとの間で議論が必要である。特に、既出の応用事例（2.1.4）から示唆されるように、想定される
+用途や用法が多様であることから、それぞれの出口に即した検討を具体的に行うことが求められる。しかし、
+その機会が不足している。
+さらに、細胞を素材として組み込みかつ動的に変化する材料システム、という新たなコンセプトは、環境や
+人、社会に様々な影響を与える可能性がある。多様なステークホルダーを交えた議論を研究の初期段階から
+行うことは、技術がもたらす将来ビジョンの構築と共有や、社会受容性の醸成、ルール・規範形成の推進に
+おいても重要である。
+2.2 社会・経済的効果
+本戦略プロポーザルで目指すのは、バイオテクノロジーと材料・デバイス技術を組み合わせて、細胞を集合
+化・組織化させ、これまでにない適応性という動的な性質を備えた材料システム（動的材料システム）を創
+出することである。動的材料システムが社会・経済にもたらす様々な可能性は、既出の応用事例や萌芽的技
+術が目指す将来展望から推し量ることができる。本戦略プロポーザルで問題点として挙げる「複合的な動態
+への理解と、それに基づいた合理的な設計・構築手段の不足」を克服することができれば、他国にはない技
+術的優位性の獲得や産業競争力の強化のみならず、経済的レジリエンスの確保につながる。さらに、動的材
+料システムの機能に対する科学的根拠を担保することで社会との合意形成の促進にも寄与する。
+（１） 「適応する」材料システムによる新たな物質・生物利用の実現
+従来の物質・材料あるいは既存生物の利用に頼った現状の社会に対し、動的材料システムは多様な新しい
+技術的解決手段や可能性をもたらす。
+81 過去の当該融合領域の国家プロジェクトとして、文部科学省の「キーテクノロジー研究開発の推進」制度における「ナノテクノ
+ロジー ・材料を中心とした融合新興分野研究開発」 のうち、 「バイオナノテクノロジー研
+ 究拠点
+の形成」 に係る２課題 （ナノバイオ・
+インテグレ－ション研究拠点、および生命分子の集合原理に基づく分子情報の科学研究ネットワーク拠点） （2005～2009年
+度）がある。そのほか、文部科学省の戦略目標事業では、2002年度からのナノテクノロジー分野別バーチャルラボ10領域の
+うち、ナノバイオテクノロジーに関する３領域が立ち上がった。その後は、具体的に当該融合領域を扱う戦略目標等は立ってお
+らず、ナノテクノロジー・材料分野や情報通信技術分野の基盤的テーマの中で、一部ライフ関係の課題が採択される状況となっ
+ている。
+16
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 27 =====
+従来の物質・材料技術では、１つ１つをそれぞれの仕様に精密に作り込み、使い、捨てる、あるいは壊し
+て再利用を試みる。しかし、動的材料システムは、特定の使用環境に応答して自身の状態を変容させ、機能
+の最大化を可能にする。また、自己増殖や自己修復の性質は、物質・材料利用の循環システムに新たな経路
+を生み出す。さらに、細胞集団に由来する高い物質・エネルギー変換効率や、省エネルギーでの情報処理・
+情報伝達能力も期待できる。動的材料システムのこのような性質は、既存の物質・材料技術と補完的な役割
+を果たし、社会における物質製造や物質循環の最適化、即ち資源の有効利用や環境負荷低減を促し、ひいて
+は長期的な物質社会システムの持続性確保に貢献する。
+動的材料システムは、従来の生物利用にも変革をもたらす。例えば生体模倣システムは、現状の創薬にお
+ける動物実験の代替を主眼としたものから、個々の人間の遺伝的特徴を反映させた生理応答システムの構築
+へと発展が期待される。これは、個別化医療の精緻化をもたらすだけでなく、より平常な栄養状態や疲労状
+態に関わるメカニズムや個体差の解明にも寄与する。また、合成生物学的な細胞内部状態の制御・設計技術
+に加えて、材料・デバイスと相互作用する環境下での選択圧を掛けることで、利用目的に適うように性質や機
+能を増強、変調、付与させた細胞の集団的状態を作り上げることができる。このように材料・デバイスとの
+相互作用を介して生物の適応性や特異性を利用・制御すれば、健康・医療だけでなく、農業・食品加工、環
+境変動のモニタリング、自然環境の浄化システムなど、多様な応用展開が期待できる。これは、人々のより豊
+かで安全な暮らしと、地球環境や生物多様性の保全・回復へ貢献する。
+動的材料システムは、モノと人、さらにはサイバー空間との相互作用を可能にする。人と接するインター
+フェースとして、身体状態あるいは感情を感知すると同時に、それに応じた自らの状態変容とアウトプットを
+行う。これは、既存のヘルスケアデバイスやソフトロボットの発展の姿として見ることができる。健康・美容
+状態の維持・調整や、精神状態にまで寄り添ったモノの在り方は、社会福祉や個々人のWell-beingの充実
+に寄与する。さらに、動的材料システムはサイバー空間とフィジカル空間のインターフェースとしても機能する。
+サイバー空間から受け取った情報に基づいて、状態を変容させてフィジカル空間に働きかける。また、フィジ
+カル空間から感知した情報を、特定の信号応答や状態変化でもってサイバー空間に返す。こうしてサイバー空
+間とフィジカル空間をつないだより拡張的な材料システムが実現し得る。
+このように、動的材料システムの創出によって既存の物質・材料技術あるいは既存生物の利用における制
+約を克服し、多様な社会的ニーズや、今の、 そして今後起こりうる社会課題により柔軟に適応することができる。
+（２）市場の展開、経済的優位性とレジリエンスの確保
+「バイオエコノミー」が謳われて久しい
+82
+。バイオテクノロジーを活用して循環型経済の実現を目指す概念で
+ある。2.1.1で見たように、これまでのバイオテクノロジーの産業レベルにまで至る発展は目覚ましく、それを
+勢いづける形で、米国は2022年9月に「バイオテクノロジーとバイオ製造に関わる大統領令」を発表し、10
+年以内に製造業の３分の１がバイオ製造で置き換わるとの見込みのもと集中的な投資を宣言した。中国は
+2022年5月発表の「第14次５カ年計画バイオエコノミー発展計画」にてバイオエコノミーの拡大・強化を
+明記している。わが国でも「バイオ戦略」
+83
+および「バイオエコノミー戦略」
+84
+においてバイオエコノミー社会
+の実現を目指した取り組みが掲げられ、2.1.4で挙げたような微生物内部の分子代謝経路の改変を軸としたバ
+イオものづくりに関わる事業が動いている。
+しかし、生物利用がもたらす可能性は、細胞内の分子レベルの介入に関わるものだけではない。民間によ
+82 OECD, ” The Bioeconomy to 2030: Designing a Policy Agenda” (2009)
+83 内閣府統合イノベーション推進戦略会議「バイオ戦略2019」 「バイオ戦略2020」 「バイオ戦略フォローアップ」
+84 内閣府統合イノベーション戦略推進会議「バイオエコノミー戦略」 （2024年6月策定）
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+17
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 28 =====
+る分析
+85
+では、分子レベルのバイオテクノロジー（当該レポート中では“Biomolecule”と表現）と並列して、
+細胞集合や組織レベルのエンジニアリング（当該レポート中では“Biosystem”と表現）も大きな市場規模を
+占め、2030年から2040年にかけて併せて1.7～3.4兆ドルのグローバル市場に成長することが見込まれてい
+る
+86
+。その内訳として、従来的な健康・医療（0.5～1.2兆ドル）や農業・水産業・食品（0.8～1.2兆ドル）
+以外に、消費財や材料・化学・エネルギー（0.4～1兆ドル）が相応の割合を占めている点も注目に値する。
+特に”Biosystem”の関わりが大きい応用領域として、 創薬支援（150～250億ドル） 、 再生医療（50億ドル） 、
+代替タンパク質（400～1,200億ドル） 、ウェルネス（400～3,000億ドル） 、美容とパーソナルケア（500
+～1,500億ドル） 、物質合成
+87
+（1,300～2,200億ドル） 、エネルギー生産・貯蔵（150～300億ドル）など
+がある。さらに新興的な領域として、炭素固定・環境浄化・環境モニタリングへの応用（250～450億ドル）
+も挙げられている。
+本戦略プロポーザルは、これまで国内の施策では十分に手が打たれていない、細胞集団や組織レベルのエ
+ンジニアリングに焦点をあてるものである。細胞集団や組織レベルのエンジニアリングにこれまで取り組みに
+くかった理由として、細胞と細胞、あるいは細胞と細胞外物質の間の複雑な相互作用の存在があるが、そこ
+に材料科学のアプローチが有用であることは既に述べた通りである。現状ボトルネックとなっている「複合的
+な動態の理解と、それに基づいた合理的な設計・構築手段の確立」を、提案する研究開発の推進によって他
+国に先んじて実現することができれば、合理的設計指針に基づいた開発の効率化や高品質化、高性能化によ
+り、強力な産業競争力を培うことができる。さらに、科学的原理の掌握は、創られる動的材料システムの国
+際的標準化や規範形成においても優位性をもたらす。本戦略プロポーザルは、これから成長が見込まれる市
+場に対して、わが国発の動的材料システムの速やかな市場展開と経済的優位性の確保をもたらす。さらに、
+他国の技術的優位性や資源の保有によるサプライチェーンへの影響に対するレジリエンスの確保につながる。
+（３）社会との適切な合意形成の促進
+複合的動態の理解に基づいた合理的な設計・構築手段の確立は、動的材料システムに対する社会との合意
+形成にも大きな役割を果たす。具体的には、動態理解に基づく適切な設計や制御方針を得ることで、さまざ
+まな利用目的や稼働環境に適合し、システム機能の安定化・最大化を図ることが可能になる。また、使用条
+件下での機能の安定性や寿命、さらには環境や人体に発生し得るリスク低減に関して科学的根拠を得ること
+ができる。以って、動的材料システムの効果的かつ安全な使用方法に関するルール・規範形成を円滑に進め
+られるとともに、社会からの安心や信頼を培い、適切な合意形成を促進することができる。　
+2.3 科学技術上の効果
+本戦略プロポーザルで提案する研究開発課題の推進により、課題から直接的に得られる効果のみならず、
+関連する各分野、特に材料科学と生命科学それぞれに対して還元的な効果も期待できる。
+（１）動的材料システムのエンジニアリ ングの開拓
+細胞集団と材料・デバイスを複合させた動的材料システムは、その機能性や適応性について、未だ探索さ
+85 McKinsey Global Institute Analysis, “The Bio Revolution” (2020)
+86 “Biomolecule”と”Biosystem”でバイオ利用技術の市場の９割以上を占めるとの見込み
+87 “New bioroutes”と”Novel materials”の足し合わせにて
+18
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 29 =====
+れていない大きな拡張可能性を秘めている。2.1.5で述べたように、細胞を素材に用いた現状の材料・システ
+ムの開発は、多くを経験的推測や実験的な試行錯誤に寄っており、体系的な性能の最大化・最適化は十分に
+できていない。しかし、提案する研究開発課題への取り組みによって、合理的な設計手法と、その設計を実
+現する構築手法が確立・拡充される。それらを用いることで、今まで見出されていなかった新たな機能や適
+応性が実現できる。こうして、設計手法（システム設計ツールを含む） 、構築手法、そして創出される多様な
+動的材料システムによって、エンジニアリングに広がりが生まれる。さらに、素材の動的な性質、特に大きな
+物理的な特徴変化をシステム設計に組み込むことは、既存の工学的概念や理論（機械工学や材料工学）の範
+囲を拡張する可能性がある。
+（２） 「生体物質（細胞集団）と人工物質」および「一細胞と細胞集団」の複合的動態理解の促進と体系化
+・生体物質（細胞集団）と人工物質
+人工物質が存在するときの細胞応答、生体に接した際の物質応答、それぞれの知見・技術がつなぎ合わさ
+り、新たな融合研究領域が創出される。材料・デバイスの様々な特徴量（力学的特性、形状、化学的性状、
+電気的性質や刺激など）をパラメータとして、生物が個々の細胞の内部状態から細胞集団レベルの挙動まで
+どのような応答を示すか、定量的なモデルで以て説明ができるようになる。また、細胞が細胞外物質にもたら
+す変調について、同じく多様な特徴量に対して関係性が見出だされる。こういった知見を土台にして、細胞に
+所望の応答をさせたいときの材料・デバイスの定量的な設計指針が得られるようになる。また、材料・デバ
+イスの特徴をより感度良くあるいは選択的に感知したり、適切な修飾・変調等を施したりするような細胞機能
+の設計も可能になる。こうして、材料と生物が互いにフィードバックしながら総体として示す動態や機能発現
+を統合的に理解し、また人為的に制御することが可能になる。
+・一細胞と細胞集団
+細胞の集団的振る舞いに対する物理的記述と、個々の細胞の内部状態の解析情報が、時空間スケールをつ
+ないで結ばれた新たな理論体系やモデリング手法が確立する。一細胞の内部状態の変化が、細胞間相互作用
+を介して細胞集団レベルの状態変化を生み出す機構を、多様な時空間スケールにおける物質量や物性値を用
+いて定量的に表現できるようになる。また、細胞集団レベルの大きな変化が、細胞の内部状態の変化にまで
+落とし込まれる関係性を、スケールをつないで説明できるようになる。これらのモデル化・定式化のため、多
+様な時空間スケールに対応できる摂動法や計測法も発達する。ミクロからマクロ、マクロからミクロの双方向
+のフィードバックを定量的に記述し、システムとしての機能や適応性の理解、さらには工学的設計につなげる
+ことができる。
+（３）材料・デバイス技術の向上：物性および組成の時空間的な精密構成
+様々な時空間スケールで力学的特性、形状、化学的性状、電気的性質や刺激などを精密に構成・制御し
+た材料・デバイスの開発は、広く材料科学で通ずる究極的目標の１つである。また、物質界面の制御も物質・
+材料科学の共通課題である。現状、材料の各種物性や組成の時空間的制御について、スマートマテリアルや
+インテリジェントマテリアルと称される応答材料においても、対応可能な時空間スケールの範囲は限定的であ
+る。この度提案する研究開発課題において、細胞集団に多様な摂動を与えるための材料・デバイス開発に取
+り組むことで、広く物質・材料科学分野に還元されるような、多様な時空間スケールに対応した材料の合成・
+加工・評価技術等が培われる。
+（４）細胞集団挙動の関わる生命現象に対する研究アプローチの拡充
+細胞の集団的挙動は、例えば、胚の発生過程や、恒常性・秩序の維持、臓器連関など、様々な生命現象
+に関わる。前述のように、細胞内部の分子的要素（遺伝子発現や代謝など）の解析に頼った現状から、大き
+な細胞集団スケールの特徴や動態を記述できる物理的なアプローチを組み入れることで、階層をつないだ動
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+19
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 30 =====
+態の関係性を明らかにすることができる。特に、大きなスケールの状態変化が細胞の内部状態の変化に与え
+る影響は、物理的なアプローチ無しに扱うことはできない。
+また、細胞外物質が細胞へ与える影響については、国内の生命科学コミュニティでも認知が浸透してきたと
+ころである
+88
+。この度提案する研究開発課題で開発される多様な物性・物質構成を時空間制御した材料・デバ
+イスは、in viv o およびin vitr o いずれの実験系においても、細胞外物質が細胞集団レベルの生命現象に与え
+る影響の理解の深化に貢献する。
+（５）異分野をつなぐ人材の輩出や研究コミュニティの土壌形成
+材料科学、生命科学のそれぞれの最先端を押さえながら、その境界・融合領域において科学的な議論を展
+開できる人材が育成・拡充される。また、基礎科学的な知見と工学的アプローチの融合推進は重要な要素で
+あり、その両方に造詣の深い人材が育成される。こうして、既存の研究コミュニティの枠を越えて異分野をつ
+なぐ人材が輩出される。
+さらに、学術の研究会の設立や、継続的なネットワーキングの機会の確保、さらに共通研究施設の整備や
+データベースの構築など、研究コミュニティのための土壌が新たに形成される。これによって、本融合研究領
+域における新規テーマの立ち上げや研究者の新規参入が促され、研究コミュニティとしての継続的な発展が
+期待される。
+88 JSPS 学術変革領域研究（A） 「細胞外情報を統御するマルチモーダルECM」 （2023-2027年度）
+20
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 31 =====
+目的とする機能と適応性を備えた動的材料システムを創出するには、細胞と材料・デバイスの相互作用で
+生じる複合的動態への理解を培い、それに基づいた合理的な設計・構築手段を確立する必要がある。ここで、
+細胞集団と材料・デバイスの複合的動態に関わる、重要な5つの相互作用の要素を整理したい（表3-1） ：
+細胞を集団化・組織化することで、個々の細胞だけでなく、より大きなスケールで生じる①力学的性質や力、
+あるいは②形状・幾何学的条件が影響してくる。③電気的相互作用や④化学的相互作用は、 細胞集団と材料・
+デバイスとのインターフェースで特に重要となる。⑤生物学的相互作用として、細胞間で起こる物質・エネル
+ギーの輸送や変換反応、あるいは細胞間接着、その結果として生じる細胞群集構造の変化なども考慮すべき
+である。ただし、①～⑤の相互作用は独立なものではなく、互いに関連しあうものである。
+表3-1　細胞集団と材料・デバイスの重要な相互作用
+重要な相互作用 要素の例
+① 力学的 細胞牽引力・収縮力、細胞膜張力、細胞・細胞外物質の粘弾性・可塑性、応力（せん断応力、流れ、
+曲げ）
+② 形状・幾何 細胞極性、細胞集団の配向性・再配置、細胞外物質の３次元的幾何構造・曲率・空間的制約
+③ 電気的 電導性・インピーダンス、イオン電流、膜電位、酸化還元分子の移動
+④ 化学的 細胞外物質の濡れ性（親水性/疎水性） 、分子濃度勾配、材料・細胞表面の分子修飾
+⑤ 生物学的 酵素反応、 （生体）分子認識、遺伝子ネットワーク、細胞間相互作用（物質・エネルギーの輸送や変換、
+細胞間接着） 、生物間相互作用（共生、競合、群集構造） 、細胞分化、臓器連関
+これらの相互作用を考慮した上で、細胞集団と材料・デバイスが示す複合的動態を理解し、動的材料シス
+テムの合理的設計・構築へ活用するためには、入力（刺激や環境条件の変化）に対してどのような出力（シ
+ステムの応答）が起こるか、定量的なデータを取得し関係性を解くことが肝要である。特に、多様な時空間
+スケールをつないだ定量的な理論やモデルを構築していくことが求められる。そして、基盤的な理論やモデル、
+および摂動・計測技術を用いながら、目指す機能や適応性の実現に向けたシステムの設計を行い、実際に構
+築する。同時に、実践的なシステム創製の試みの中から動態理解へとフィードバックがされる。こうして、動
+態理解の体系化と、システムの機能や適応性の洗練を、連携的に進めていく必要がある。
+これらの研究開発の実施においては、工学的応用を目指した発想と、それを支える生命科学と物質・材料
+科学の技術、さらにシステム全体の時空間スケールをつないで理解するための物理・化学の基盤的知見や解
+析技術との糾合が必要である。具体的な研究開発課題として、 【研究開発課題１】細胞集団と材料・デバイ
+スの複合的動態の理解（3.1）と【研究開発課題２】動的材料システムの創製（3.2）を挙げ、以下に詳述
+する。
+3 具体的な研究開発課題
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+21
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 32 =====
+3.1 【研究開発課題１】細胞集団と材料・デバイスの複合的動態の理解
+細胞集団と材料・デバイスの相互作用で生じる複合的動態の理解に向けた研究開発が必要である。入力と
+なる刺激や細胞外環境条件を精緻に付与する材料・デバイス技術や細胞間相互作用の制御技術（3.1.A） 、
+出力となる応答そのものや、応答に関係する細胞集団および細胞外物質の物性・物質構成を計測する技術
+（3.1.B） 、 そして入力と出力の間の関係性を結びつけるモデルや理論の構築 （3.1.C） が研究開発の要素となる。
+一細胞から細胞集団という時空間スケールを跨いだ現象を扱うために、摂動法・計測法の適用スケールの網
+羅性や、異なるスケールの情報をつなぐモデリング法を追究していく必要がある。3.1.Aから3.1.Cの要素に
+一体的に取り組み、研究開発課題２「動的材料システムの創製」へとつなげることが重要である。
+3.1.A 細胞集団および細胞外物質への時空間的摂動の付与
+バイオテクノロジーの手法による細胞間相互作用の制御手段（2.1.1）や、細胞外部から様々な細胞挙動
+を誘起する材料・デバイス（2.1.2）が開発されているが、現状、人為的に付与が可能な摂動の時空間スケー
+ルの範囲は限られる。細胞集団と材料・デバイスの間の相互作用で起こる応答をより精緻に制御するために
+は、摂動範囲の拡張や網羅性の確保に向けた技術開発が必要である。
+具体的は、表3-1に示す５つの相互作用の要素について、摂動における時空間分解能の向上や、適応スケー
+ルの拡張、さらには定量性の確保・量的精度の向上などが必要である。用いる手法は、2.1.1と2.1.2で述べ
+た現状技術の発展のみならず、全く新しい原理に基づくものでも良い。さらに、複数の摂動手法を組み合わ
+せることで（マルチモーダル化） 、適応時空間スケールの拡張だけでなく、多様な相互作用要素への同時の摂
+動付与が期待できる。一方で、細胞活動を介した細胞外物質への摂動付与、つまり人為的なリモデリングの
+誘起は、一部バイオフィルムエンジニアリング
+89
+などで研究がされているものの、その試みは限定的である。
+細胞と相互作用する多様な材料・デバイスに対して、細胞機能による修飾や変調等の介入技術を開拓してい
+くことが求められる。ここにおいても多様な時空間スケールへの対処が課題になる。
+また、研究開発課題２「動的材料システムの創製」では、制御機構の長期的な安定性や継続的に調整がで
+きる操作性の確保なども必要である。技術的なデモンストレーションに留まらず、実用性を考慮した研究開発
+が常に求められる。
+さらに、多様な摂動と、それに対する応答を網羅的かつ効率的に探索・開拓するには、ハイスループット
+な実験系の構築も有用である。既に、マイクロ流路デバイスなどを用いて多様な材料組成や物性を効率的に
+合成・評価する実験システムの開発がされている。今後、より多様な相互作用要素にも対応していくことや、
+合成・評価実験の時間的・経済的コストを下げていくことが求められる。また、収集される多量のデータに
+対しては、データ駆動や数理的なアプローチも組み合わせることで、摂動による応答の系統的評価や、摂動
+の最適化、あるいは拡張可能性の指針などを見出す試みも期待される。
+この時空間的摂動の付与に関する技術開発では、細胞集団と材料・デバイスの複合的な応答の評価法や、
+「摂動」を数値的に定義するための適切な特徴量の探索も併せて必要となる。これらはそれぞれ3.1.Bおよび
+3.1.Cに関わるため、課題間の連携が求められる。
+89 Nguyen, P . Q ., et al. , “P rogrammable bio film-based mat erials fr om en gineered cu rli nan ofibers,” Nature
+C
+ommunications 5, 4945 (2014).
+22
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 33 =====
+3.1.B 細胞集団および細胞外物質の物性・物質構成の時空間的計測
+細胞集団と材料・デバイスの相互作用で生まれる応答を、多様な時空間スケールにおいて定量的に計測す
+る手法の開発が必要である。特に、物質としての性質（物性）や物質構成に関する情報を、細胞集団側、細
+胞外の材料・デバイス側、双方について取得していく必要がある。また、物性や物質構成の計測技術は、表
+3-1に示す様々な相互作用の要素を対象に展開されることが期待される。このうち、②形状・幾何、あるいは
+空間分布の情報を得るために、計測は２次元・３次元的に行われるもの、即ちイメージングであることが期待
+される。
+細胞集団側について、ミクロには、オミクス解析技術の進展によって細胞内の遺伝子発現・代謝物質等を
+高感度、高深度
+90
+、広空間範囲で計測が可能になりつつある。一方、本戦略プロポーザルで強調すべきは、
+集団化・組織化した細胞を素材として利用しようとするときの物性の計測である。表3-1のうち、特に力学的・
+電気的特性の計測は、現状適応できる時空間スケールに限りがあり、また定量性や３次元への適応に問題を
+抱えている。これらの問題を克服し、時空間スケールの網羅性や計測対象の汎用性の確保に向けた計測手法
+開発が必要である。2.1.3で述べたような現在見えている技術発展の方向性のさらなる追究や、複数の計測
+手法を組み合わせて（マルチモーダル化） 、適応スケールの拡張や複数種の情報の同時計測などへの展開が
+求められる。
+また、細胞外物質の計測は未発達な部分が多い。生体・細胞に暴露した際に細胞外物質にどのような変化
+が起こるか、オペランド計測
+91
+とも言える、材料・デバイスの使用条件下での計測を行える手法開発が必要で
+ある。細胞集団側と同じく、ミクロな変化からマクロな変化まで、多様な時空間スケールを跨いだ計測が求
+められる。また、多様な相互作用要素に関わる計測が求められることから、マルチモーダル化の技術開発も
+有用である。
+さらに、細胞と細胞、細胞と細胞外物質の境界領域で起こる現象の解析は以前から関心とされているもの
+の、未だに困難な課題である。細胞間の細胞結合や、細胞と細胞外物質の間の物理的・化学的な吸着や生
+物学的な接着斑形成、あるいは細胞間や細胞と細胞外物質の間のイオン・分子等の出入りも対象となる。こ
+れまで、原子間力顕微鏡や振動分光を使った表面科学的なアプローチや、蛍光プローブを用いた力計測や物
+質移動の可視化などの研究がされている。今後、定量的な計測情報の充足や、計測対象の拡張を目指した技
+術開発が重要である。
+3.1.C 細胞集団と材料・デバイスの複合的動態のマルチスケール・モデリ ング
+3.1.Aで規定あるいは付与した細胞集団への摂動条件と、3.1.Bで計測した物性や物質構成に関する情報を
+用いながら、細胞集団と材料・デバイスから成る系の時空間的状態変化を記述する理論やモデルの構築が必
+要である。特に、異なる時空間スケールで起こる現象間の関係性を結びつけることと、定量性を伴わせること
+が、研究開発課題２「動的材料システムの創製」につなげるための要請である。表3-1に示した多様な相互
+作用要素を加味した理論・モデルの構築が求められる。
+一細胞から細胞集団・組織というスケールを跨いた汎用的なモデルを構築するには、適切な時間・空間分
+解能の情報を保持しながらも、大きな時空間スケールの現象の記述に適用していく必要がある。既存の異な
+る時空間スケールを対象にした複数のモデリング手法を組み合わせたり、改変したり、あるいは新たなモデル
+90 深度：一度に解析できる遺伝子数や分子の種類
+91 科学技術振興機構研究開発戦略センター, 戦略プロポ―ザル「機能解明を目指す実環境下動的計測の革新 ～次世代オペランド
+計測～
+」 （CRDS-FY2020-SP-07） （2021年3月）
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+23
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 34 =====
+を開拓していくことが求められる。特に、細胞集団レベルで起こる長時間スケールの現象では、エネルギーや
+物質の出入りや、生物特有の可塑的な性質も顕著に表出してくるため、これらを扱える新たなモデルの探索が
+必要である。既に、粗視化レベルの高い連続体モデルや頂点モデルといった手法をベースにしながらも、一
+細胞レベルの情報も表現するモデリング法が考案されつつある
+92
+。またここでは、増加する計算コストへの対
+処も有用である。
+さらに、細胞外物質の影響や変化も、モデリング上で考慮していく必要がある。例えば、シグナル物質の
+長距離伝播では、介在する細胞外物質の物性や物質構成も影響し得る。2.1.3で述べた反応拡散方程式の区
+画化された空間への拡張的適応などが、萌芽的アプローチとしてある。また、細胞外物質の形状や力学特性
+の細胞分化への影響は、現象的な知見（2.1.2）の段階から、その過程を定量的に説明していくことが求め
+られる。さらに、細胞外物質そのものも、細胞との相互作用を受けて変化し得る。これら細胞外物質の情報
+を量的に定式化し、細胞と材料デバイスから成る系全体の複合的動態を理論・モデルとして記述していくこと
+が有用である。
+また、このように複雑かつ階層的な解析対象においては、モデリングに必要なパラメータが必ずしも計測で
+きるとは限らない。そこで、 入手可能なデータ （画像やマクロな物性値など） から統計やデータ駆動のアプロー
+チによってパラメータを推定していく試みも有用である。あるいは、動的材料システムの設計に使うという目
+的においては、必ずしも全てのミクロな情報を把握しておく必要性はない。適切な粗視化やブラックボックス
+としての扱いを導入していくことも有用である。ここでは、機械学習などのデータ科学的アプローチの組み合
+わせも期待される。また、モデル化やシステム設計に必要十分な情報の種類および量（即ち時空間的な解像
+度や範囲）を適切に見出すことは、計測に係る時間的・経済的コストを抑え、研究開発の効率化にも有用で
+ある。
+3.2 【研究開発課題２】動的材料システムの創製
+特定の機能と適応性の実現を目指し、細胞集団と材料・デバイスから成る動的材料システムの創製を進め
+る必要がある。研究開発課題１「複合的動態の理解」で培われる理論やモデルと結びつけながら、所望の動
+的材料システムの設計を行い（3.2.A） 、そして実際に動的材料システムの構築をする（3.2.B） 。システム設
+計とシステム構築の間では、連携による相乗的効果が求められる。システム設計においては、実際に構築可
+能な技術的制約（例えば、制御可能な入力パラメータおよび評価可能な出力パラメータの範囲や精度）を正
+しく把握することで、実現可能な設計指針を導くことができる。また、明確な設計指針があることで、その実
+現に必要・最適な新規構築技術の開発を進めることができる。そして新規な構築技術はシステム設計にさら
+なる拡がりをもたらす。このように、システムの設計技術と構築技術の両方が効率的に進展していくことが重
+要である。さらに、実践的なシステム創製の試みの中から、動態に関する新たな知見が見出され、研究開発
+課題１へのフィードバックも期待できる。
+3.2.A 動的材料システムの設計
+一つの自律的モジュールの構成から、複数のモジュール間の連関を組み上げたシステムの構成へと、段階
+92 奥田覚「オルガノイドの形態形成シミュレーション」第2章-2『オルガノイドがもたらすライフサイエンス革命』武部貴則 編 ,
+実験医学
+
+42(5),
+
+124-129
+
+(羊土社,
+
+2024).
+24
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 35 =====
+的に設計を進めることが有用である。ここでモジュールとは、特定の細胞・細胞外物質の構成と特定の構造
+を持ったひとまとまりであって、入力となる刺激や環境条件の変化に対して、出力となる応答が数理モデルで
+定められているものを言う。システムの設計のため、モジュールやサブシステムの単位で標準化されたライブ
+ラリを整備していくことや、システム設計ツールの開発が求められる。
+（1）自律的なモジュールの構成
+システムの設計にあたり、まず単位構成要素となるモジュールの入出力についての数値的規定が必要である。
+入力は、 表3-1に示す５つの相互作用に関連する要素の変化を、 必要な定量性や時空間的制御を以てモジュー
+ルに付与するものである。出力は、入力の内的処理の結果、同じく表3-1に例示した諸要素に生じる量的・
+時空間的な変化であり、これは次に他モジュールへの入力ともなる
+93
+。この入出力の間に関わる素過程は、
+3.1.Cで開発される理論やモデルに紐づくものとなる。モジュール単位の具体的なイメージとして、例えば
+2.1.4の事例から、Organ-on-a-Chip上における１つの臓器機能を再現した１区画や、人工神経細胞回路上
+で区画化等により発火パターンが同期した一部の神経細胞集団のまとまり、バイオハイブリッドロボットにお
+いて筋細胞の収縮の方向性・タイミングを同期させた筋束などが挙げられる。多様な入出力のパターンを持っ
+たモジュールを用意していくことが有用である。
+各モジュールについて、酸素濃度やpH、温度、浸透圧といった動作環境に応じた入出力の変動を求めて
+おくことも重要である。多様な動作環境への適用だけでなく、複数のモジュールを組み合わせる際にも同一の
+環境条件での動作が前提となるためである。さらに、モジュールの標準化も必要である。モジュールを規定
+するための指標、その背景にある実験材料や評価方法などが他研究者とも共有できる形で、多様なモジュー
+ルの情報がライブラリとして整備されることが望ましい。
+（2）複数のモジュールを組み合わせたサブシステムの構成
+モジュールを複数組み合わせたサブシステムの単位でも、多様なパターンや例を蓄積していくことが効率的
+なシステム設計に有用である。例えば、筋細胞と神経細胞が接した共培養条件における応答や、Organ-on-
+a-Chipにおける流路を介した臓器間の連関、バイオハイブリッドロボットにおける筋束の組み合わせ方に依
+る特定の動作の実現などである。サブシステムを組み合わせることで、より大きなシステムの設計へと発展さ
+せることができる。同時に、大きなシステムを作りたい場合に、より小さな単位のサブシステムに分割できれ
+ば設計が容易になる。モジュールと同様に、サブシステムも標準化を配慮した上でのライブラリの整備が望ま
+れる。
+（3）システム設計ツールの開発
+モジュールおよびサブシステムの入出力に関する数理モデルが定められれば、それを使ってシステム動作の
+シミュレーションが可能である。動的材料システムのシミュレーション、ひいてはCAD（Computer aided
+design、
+コンピュータ支援設計）をより多くの研究者が実践できるようにするためには、汎用的なシステム設
+計ツールの開発が有用である。まずは、システム内のネットワークやパラメータの可視化が容易にできるGUI
+を備えたシミュレーションツールの開発が求められる。ここでは、構成要素になるモジュールやサブシステム、
+その間の接続等の数理モデルが、共通のデータ表現形式で記載されていることが要件になる。上述のライブ
+ラリの整備と併せて進めるべき課題である
+94
+。さらに、モジュールやサブシステムの組み合わせから、自動的に
+93 あるいは、例えば光（発光）のように、他モジュールへは作用せず、システム応答の終点として機能する（例えばセンサーとし
+て光の信号強度を評価に利用する）場合もある。
+94 例えば合成生物学の分野では、Systems Biology Markup Languag e（SBML）が１つの標準的なデータ表現形式として浸
+透している。遺伝子レベルのモジュール等の数理モデルをSBMLで収録したデータベースとして”BioModels”がある。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+25
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 36 =====
+システムを設計するツールの開発も有用である
+95
+。
+さらに動的材料システムのシミュレーションツールには、システムの実測の情報を取り入れたうえ、所望の
+システム状態に導くための適切な入力刺激を予測する役割も求められる。3.2.B（2）に示すモニタリングや
+フィードバックの技術と連動してClosed-loop-feedbackを成立させ、システムの機能や適応性の制御を可能
+にしていくことが重要である。
+3.2.B 動的材料システムの構築
+3.2.Aで示される設計指針に基づいて、動的材料システムの構築を進めることが必要である。また、設計指
+針を実現できるような新たな構築技術の開発も重要である。 （1）モジュールの作製と連結・統合、 （2）動
+的材料システムの制御、の大きく２つに分けて課題を整理する。
+（１）モジュールの作製と連結・統合
+細胞および材料・デバイスを用いてシステムを組み上げていくにあたり、①ファブリケーション技術と②組
+み立てに関わる技術課題がある。それぞれには、3.1.Aで開発される摂動手法をシステムに搭載可能な形で
+改変・調整することも含まれる。
+①ファブリケーション技術の高度化
+まずは素材の加工・位置決めや細胞の培養・状態制御に関わるファブリケーション技術の高度化が必要
+である。加工・位置決め技術に関しては、例えば、プリンティング、パターンニング、集積化、分離・ソー
+ティングなどがある。細胞のみならず、物質・材料や、それらが組み合わさった状態のものを扱うことも求
+められる。また、細胞の培養技術について、in vitr o で特定の材料・デバイスに触れた状態での細胞分化
+過程の誘導・制御や、細胞集合の中で個々の細胞状態に表れ得る”ゆらぎ”の抑制や制御、また複数種類
+の細胞を共培養する際の条件探索などが必要である。より実践的には、実験室の培養装置の外でも細胞を
+機能させるための環境作りや、動作寿命の延伸、封じ込め手段や機能停止に関わる条件検討も必要である。
+これらファブリケーション技術開発の方向性として、再現性の向上や、プロセスの高速化・低廉化、加工
+可能なスケール・パターンの拡張などを進める必要がある。
+②組み立て
+ファブリケーション技術を用いながら、自律的な単位モジュールの作製と、その連結・統合へと展開させ
+る必要がある。単位モジュールの作製にあたっては、単位となる区画や構造を定め、またその中で特定の
+力学的・化学的環境や形状的特徴等を構築する技術開発が必要である。ここでは、3.1.Aで培われる摂動
+手法の活用や改変も求められる。さらに、複数のモジュールを連結させた共培養系の構築（例えば、マイ
+クロ流路内で各臓器を再現した区画をつなげたOrgans-on-a-Chip）や、モジュール間の物理的接合（例
+えばバイオハイブリッドロボットにおける筋組織と関節材料の接合）などにより、高次な構造を作っていく
+ことが求められる。ここでは、モジュール間で必要な相互作用が行えるような多様なインターフェースの開
+発も必要である。流路や拡散現象を利用した物質の行き来や、電気的刺激の伝播、力学的駆動や形状変
+化などを、モジュールを跨いで成立させることが求められる。
+95 合成生物学における人工遺伝子回路の自動設計プログラムとして”Cello”が知られている。
+26
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 37 =====
+（２）動的材料システムの制御
+システムを動的に制御していくため、Closed-feedback loop
+の組み込みが求められる。具体的には、動
+態をモニタリングする仕組みや、外因的摂動の時空間操作が可能な仕組みの搭載が必要である。これらの仕
+組みは、使用状況においてシステムに最適な機能の発揮を促し、かつシステムを長く安定的に稼働させるため
+に有用である。ここには、3.1.Aで開発される摂動手法や、3.1.Bで開発される計測手法を、システムに搭載
+可能な形に改変していくこと（システムの操作やモニタリングに必要十分な性能への簡略化など）も含まれる。
+①動態の非侵襲モニタ リ ング
+組み上げたモジュール構造に対して、それを構成する細胞や物質の状態を継続的かつ長期的にモニター
+していく技術開発が必要である。細胞に対しては、分化状態や代謝活性、生存率、また組織構造の秩序な
+どの細胞の状態そのものだけでなく、酸素濃度やpH、温度、浸透圧など、周辺環境の情報も有用である。
+また材料・デバイス側についても、化学的な変性や、物理的な崩壊・変形、細胞との接触性などの観点で
+見ていくことが求められる。これらの情報取得は、システム構造の階層性に応じてミクロからマクロの時空
+間スケールを網羅することが究極的な目標になる。同時に、モニタリングにおいては、システムに対して非
+侵襲であること、つまりシステムの動作を止めたり意図しない摂動を加えたりしないことを担保していく必
+要がある。既に、光・磁場によるイメージングや細胞へのレポーター遺伝子の導入などの手法開発がされ
+ている。今後、非侵襲性の担保や取得できる情報の多様化、システム状態との対応付けに向けた研究開発
+が求められる。
+②外因的摂動（細胞外環境条件や物質・エネルギーの出入り）の操作：フィードバック
+モニタリングによる評価結果に応じて、システム状態にフィードバックをかけるため、表3-1に挙げる多
+様な相互作用の摂動を所望のタイミングで所望の箇所に付与できる技術開発が必要である。例えば、光や
+磁場あるいは電気刺激を外因とした物質や細胞の状態変化の誘起が考えられる。3.2.Aのシステム設計で
+想定されている入出力関係に基づき、期待される出力から逆算した入力刺激を付与する必要がある。ここ
+でも、システム構造の階層性に応じた多様な時空間スケールへの対応が求められる。また、長期の使用を
+想定したより実践的な観点では、不要・不能になった細胞や物質を部分的に除去したり、新たに補填した
+りするような仕組みの開発も有用である。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+27
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 38 =====
+4.1 推進上の分野連携・分野融合のイメージと時間軸に沿った目標
+上記で提案する研究開発課題の推進においては、工学的応用を目指した発想と、それを支える生命科学と
+材料科学のアプローチ、さらにシステム全体の時空間スケールをつないで理解するための物理・化学の基盤
+的知見や解析技術との糾合が必要である。図4-1に、本戦略プロポーザルで提言する研究開発の推進上の分
+野連携・分野融合のイメージを示す。材料科学（左）と生命科学（右）の間には、生きものを扱うか否かで、
+学問の性質や使われる技術、また研究者の意識にも大きな隔たりが存在する。しかし、ともに物質（生物も
+物質で構成されると考える）であるという共通性から、物理学や化学を基にした理解の仕方が一つの懸け橋
+になる。これが研究開発課題１（3.1）に相当する。また、工学的な発想に基づいて、生体物質も人工物質
+も共に組み合わせて利用・制御しようとするところにもつながりが得られる。これが研究開発課題２である
+（3.2） 。研究開発課題１と２は、互いに目的と問題意識を共有・更新しながら連携的に進める必要がある。
+そうすることで、理解の体系化が進むと同時に、システム機能が洗練される。即ち、生命科学と物質科学、
+また基礎科学的分野と工学的な分野との間の学問的・技術的な隔たりを縮めながら、社会実装に進む研究開
+発を効率的に実施することが重要である。ここで、各学問分野および研究者が持つ専門性やオリジナリティは、
+それ自体が学術上も科学技術戦略上も重要であり、尊重されるべきものであることを強調しておきたい。この
+度提案する研究開発の推進でも、特に初期においては、関連する分野の研究者同士がそれぞれの強みや興味
+を理解・尊重しながら、共通する現象の理解や工学的応用に向けて手を携えること、同時にそれぞれの研究
+分野に還元されるものがあることが重要である。
+図4-1
+　研究開発推進上の分野連携・分野融合のイ メージ
+4 研究開発の推進方法および時間軸
+28
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 39 =====
+ここで、各学問分野および研究者が持つ専門性やオリジナリティは、それ自体が学術上も科学技術戦略上
+も重要であり、尊重されるべきものであることを強調しておきたい。この度提案する研究開発の推進でも、特
+に初期においては、関連する分野の研究者同士がそれぞれの強みや興味を理解・尊重しながら、共通する現
+象の理解や工学的応用に向けて手を携えること、同時にそれぞれの研究分野に還元されるものがあることが
+重要である。
+表4-1に、推進上の目標を「コミュニティの連携・融合の目標」と「研究開発進行の目標」に分けて、時
+間軸に沿って示す。 「コミュニティの連携・融合の目標」として、本戦略プロポーザルのコンセプトのもと、関
+連分野の研究者が各々の強みや興味を活かしながらともに研究開発に取り組む機会が増え（初期：0-3年後） 、
+徐々に学問的なつながりが太くなり（中期：3-10年後） 、さらには、バイオテクノロジーと材料・デバイス技
+術の複合を扱う新しい研究領域が、社会的価値観も伴って研究コミュニティとして定着すること（後期：
+10-15年後）を目指す。
+「研究開発進行の目標」として、まず早期に具体的成果事例を出しつつ、社会に還元されるビジョンの明確
+化や浸透を図ること（初期：0-3年後） 、続いて研究開発課題１「複合的動態の理解」と研究開発課題２「動
+的材料システムの創製」の連携的実践により、新たな機能や技術的コンセプトを持った動的材料システムを
+開発すること（中期：3-10年後） 、そして新規な動的材料システムが社会実装へと進むこと（後期：10-15
+年後）を目指す。これらの実現においては、早期から産業界や社会科学者、市民との対話を通して、社会ニー
+ズの取り込みやビジョンの共有を行うことも求められる。
+表4-1　推進上の目標とその時間軸
+目標/時間軸 初期：0～3年後 中期：3～10年後 後期：10～15年後
+コミュニティの
+連携・融合の目標
+・ 各分野
+の興味や価値観をある
+程度保持・両立した上で、共
+同で議論や研究を行う機会を
+創出する。特に、工学的ビ
+ジョンあるいは物理・化学的
+な現象理解を軸に、材料科学
+と生命科学がつながる土壌を
+作る。
+・ 工学的視点
+を重視する研究者
+を中心に、産業界や社会科学
+者、市民と対話を行い、社会
+ニーズの取り込み及び社会へ
+のビジョンの提示を行う。
+・ 個
+々の関連分野を尊重しなが
+らも全体として研究開発課題
+を推進する。徐々に分野間の
+つながり（知見・技術の共有）
+を強める。
+・ 研究拠点
+を中心とした物理的
+な場において、問題意識の共
+有や新たな研究ビジョンの醸
+成が進む。さらに、産業界と
+の連携の具体化が進む。
+・ 本提案
+コンセプトが複数の研
+究コミュニティに溶け込み、
+自然に人・知見・技術の行き
+来がなされる。
+・
+ 材
+料・デバイス技術とバイオ
+テクノロジーの複合を扱う新
+しい研究領域として定着する。
+研究開発進行の
+目標
+・
+ 早期
+に具体的成果事例を出す。
+・ 出
+口のビジョンを（試験的な
+ものでも）明確化させ、浸透
+させる。
+・ 研究開発課題
+１と２を連携的
+に推進して、新たな動的材料
+システムを開発する。
+・ 動的材料
+システムの社会実装
+を進める。
+上記の目標のもと、研究開発課題を推進するにあたり、以下の方策１～３を提案する。
+【方策１】先導的研究コミュニティを起点とした継続な交流・議論の場の創出
+【方策２】長期（〜10年）のチーム型プロジェク トの実施
+【方策３】研究拠点の設置
+それぞれの方策の時間軸を図4-2に示す。これらの方策を通して、研究開発課題を効率的に推進すること
+が求められる。同時に、様々な研究者の参入と新たな研究アイデアが生まれる土壌づくり、さらには次世代の
+研究従事者の育成へと、新規研究領域として長期的に定着するための裾野を持った研究基盤を構築すること
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+29
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 40 =====
+が重要である。こうして、材料科学と生命科学の知見・技術を活かしながら、わが国が世界に先駆けて新た
+な技術と社会的価値を創出していくことを目指す。
+方策１～３の詳細について、以下4.2～4.4に詳述する。
+図4-2　推進方策の時間軸
+4.2 【方策１】先導的研究コミュニティを起点とした継続的な
+交流・議論の場の創出
+図4-1に示したように、本戦略プロポーザルで提言する研究開発課題には、多様な研究分野が関連する。
+しかし現状、材料科学と生命科学、また、物理・化学の基礎科学分野と工学的な分野との接点は限られる。
+本戦略プロポーザルのコンセプトを多様な分野と共有し、横断的な議論を行っていくためには、継続的な交
+流・議論の場を設けていく必要がある。さらに、産業界や社会との対話の機会も早期から求められる。これ
+らの機会作りを継続し、活発な議論を通じて研究開発課題を推進し、さらには社会実装を目指した規範形成
+等の起点ともなるべく、複数の学会と産業界から成る「先導的研究コミュニティ」の形成が有用である。関
+連する国内の学会として、例えば日本生物工学会、日本機械学会バイオエンジニアリング部門、日本バイオマ
+テリアル学会、日本生物物理学会、さらには、発生生物学会、微生物生態学会、日本物理学会、応用物理
+学会、電気学会、電気化学会、日本化学会、高分子学会などからの参画が求められる。さらに、産業界から
+は基礎研究部門を有する製造業関連企業などの参画が必要である。
+交流・議論の場の設定は、主に次の２つを目的とする。１つ目は、異分野の研究者間でのつながりと関心・
+知見・技術等の共有を啓発し、新規な材料システムのコンセプトの創出やイノベーションへの展開を図ること
+である。一般的に研究者の活動範囲は、所属する学会内が主となるため、他学会の研究者とは出会う機会が
+限られる。ゆえに、研究者間の対話を通して他分野の研究者が持つ関心・知見・技術等を知る機会が乏しい。
+そこで、例えば学術集会や既存プロジェクトを母体にしたシンポジウムを複数の学会で共催したり、関連する
+勉強会などで取り上げるといった方法が有効である。また、ネットワーキングを目的とした個別のイベントを
+企画する際には、大学URAの参加も奨励することで、同一学内での異分野研究者の結びつけが促進される。
+こういった異分野研究者間の交流・議論の場を通して、 後述のトップダウン的なチーム型プロジェクト （4.3 【方
+策２】 ）のみならず、科学研究費補助金（科研費）などのボトムアップ的な研究課題に対しても、分野横断的
+な研究グループの構築と研究提案を促し、当該研究開発課題を長期的に推進するための厚みのある研究コ
+30
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 41 =====
+ミュニティの土壌を育むことが重要である。加えて、既存の学会内あるいは独立に研究会が設立できれば、よ
+り学術コミュニティに根付いた議論や情報交換が可能となり望ましい。さらに、 本コミュニティには、 国際ワー
+クショップの定期的開催などを実践することで、国際連携の先導的役割を担うことも期待される。
+２つ目の目的は、研究者と産業界、あるいは人文社会科学の研究者や一般市民との対話の促進である。
+シーズ技術が社会のどのようなニーズに適応するか、どうような新しいニーズを創出するか、対話を通じて具
+体的な出口イメージを構築し、ステークホルダー間で共有していく必要がある。研究開発に取り組む研究者に
+は、対話を通して技術自体の課題を見出し、自身の研究に還元させることも求められる。また、動的材料シス
+テムは、環境や人体と接触したり、社会の様々な場面で使用されるものであるがゆえに、ELSI/RRIの観点に
+も十分な留意を要する。それぞれの用途・用法に即した検討を早期から行うことが必要である。これらの対
+話においては、人文社会科学の研究者の働きも重要である。必要なステークホルダーの関与の勧奨や、国内
+外および過去の取り組みの精査などから、適切な合意形成へと寄与することが求められる。多様なステーク
+ホルダーの間での交流・議論を通じて、出口イメージの設定や満そうとするニーズの検討と並行し、ルール・
+規範形成や、社会受容の促進を目指す。このようにして、本コミュニティには社会実装への道筋をつける先導
+役を担うことが求められる。
+4.3 【方策２】長期（～10年）のチーム型プロジェクトの実施
+本戦略プロポーザルで示す研究開発課題を最も直接的に推し進める方策は、研究開発プロジェクトの実施
+である。特に、関連する分野の強みや全体における役割を明確化した、チーム型プロジェクトの実施が有効
+である。チームの構成においては、材料科学および生命科学を背景に持った研究者に限らず、物理学・化学
+や、工学的発想に強みを持つ研究者がリーダーとして主導するなど、多様な専門分野の人材から成る研究開
+発体制を勘案することが有用である。
+各チームは、特定の出口ビジョンを念頭に置き、動的材料システムの具体的事例の創出、およびその多様
+化・高度化を目指す。出口の方向性は、2.2（1）で述べたような、既存の物質・材料技術を補完し物質製
+造や物質循環の最適化を目指すものや、健康・医療に資する生理応答システムの構築、地球環境や生物多様
+性の保全・回復につながる環境モニタリングや環境浄化のシステム、一人ひとりのWell-beingに寄与するヘ
+ルスケアデバイスやロボティクス、などが主には考えられる。それぞれの出口に向けて、研究開発課題１「複
+合的動態の理解」と研究開発課題２「動的材料システムの創製」を想定し、各課題内と課題を越えた連携を
+進めるべきである。
+また、人文社会科学の研究者もチームに含め、倫理面の議論や社会受容の円滑化に向けた検討を初期から
+並走して行うことが、研究開発の社会的効果の最大化には有用である。さらに、目標とする性能の明確化や、
+円滑な社会実装を進めるために、産業界が共同研究機関あるいはアドバイザーとして参画することが望ましい。
+加えて、様々な研究者の新規参入や、分野間の関心・知見・技術等の共有促進を企図した仕組みとして、
+複数研究室間で研究人材（ポスドク研究員や技術員）の共同雇用を可能にしたり、学生・研究員の他研究室
+への派遣（海外を含む）を可能にしたり、予算使途に幅を持たせることも有用である。
+プロジェクトの時間軸について、表4-1の「研究開発の目標」に示したように、例えば、早期の成果事例
+の創出や試験的なビジョンの明確化を行う初期のフェーズ（3年間程度）と、その後のより拡張的なシステム
+機能の実現を狙う本格期のフェーズ（5～7年間程度） 、と適切なステージ設定を行うことが、目標を明確化
+し計画的に研究を推進する上で有効である。特に、本格期で十分な研究開発期間を設け、技術として十分に
+成熟させることが、続く社会実装のステップ（10～15年後を目標）へ途切れることなく進むためには重要で
+ある。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+31
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 42 =====
+また、この研究開発プロジェクトは、 【方策１】先導的研究コミュニティによる交流・議論の場の創出とも
+連携が求められる。シンポジウムの共同開催などにより、研究コンセプトや研究開発課題を各分野の研究者
+へ普及させる役割が期待される。そのような普及・啓発活動を通じて、プロジェクトに留まらない新たな研究
+領域としての定着を図ることで、プロジェクトで育成された研究人材のキャリアパスを広げ、さらなる学術とし
+ての拡がりや実用化技術の継続的な創出など、将来の研究領域の発展へつなげていくことが求められる。
+4.4 【方策３】研究拠点の設置
+中期以降の長期的な視点で、研究拠点の設置が必要である。分野を跨いだ共同研究の促進、研究人材の
+育成と確保、さらに研究のインフラとなるデータベース基盤の構築や研究ツールのプラットフォーム化なども
+担うことが求められる。
+異分野間の関心・知見・技術等の共有には、物理的に近い距離で共同研究が出来る環境の整備が最も効
+果的である。１つのフロア、１つの建物、あるいは１つの敷地の中で、コンセプトを共有した様々な人々が出
+入りし、身近に意見・情報交換をしながら研究をする。そのような人的ネットワークが構築しやすい環境を作
+り、研究開発推進の円滑化を進めるべきである。また、人的ネットワークのみならず、研究機器の共用など
+ハード面での効率化を図ることも有用である。
+研究人材の育成と確保においても、研究拠点の設置は有効である。まず、恒常的な研究室の確保により、
+そこを受け入れ研究室として、学生やポスドク、あるいは企業の研究者が長期にわたって安定して研究に取り
+組み、指導を受けられる環境を設けることが重要である。また、物理的近くに複数の研究室を置くことで、学
+生等がラボローテーションにより他分野に触れられる機会を増やすべきである。さらに、次世代の研究者に対
+して、所属研究室のみならず他分野の上位職研究者にメンタリングを受ける機会の提供、ならびに新興的な
+複合領域研究に長期的に取り組めるポジションを確保することも有用である。
+さらに研究拠点には、国際連携の起点として、 【方策１】で示した国際ワークショップの企画を引き継いで
+いくことや、研究人材の国際交流における受け入れ先としても機能することが望まれる。
+最後に、研究拠点においては、多様な研究者が当該研究開発課題に取り組むために必要な、データベース
+基盤の構築やシミュレーション等の研究ツールのプラットフォーム化といった研究インフラを構築することも求
+められる。研究開発課題１「複合的動態の理解」においても、研究開発課題２「動的材料システムの創製」
+においても、多くのデータを生み出し、他研究者と共有・活用することで、新たなモデルを構築し（3.1.C） 、
+システム設計（3.2.A）へつなげて行くことが重要である。この度の研究開発課題では、従来の物質・材料
+系のデータベースや生命科学系のデータベースとも異なる性質の情報を扱うことから、適切なメタ情報の付与
+や、蓄積・管理の方法を新たに考えていく必要がある。また、3.2.A「動的材料システムの設計」で開発され
+るモジュールのライブラリやシステム設計ツールは、わが国の貴重な資産の１つとして効果的な共有と管理を
+図っていくべきである。研究拠点において、これらに必要な専門知を備え、かつ多様な研究者をつなぐハブ機
+能を担う組織を設置する。研究拠点を母体にした効率的な取り組みにより、他国に先駆けてオリジナリティの
+高いデータベースや研究ツール・プラットフォームの構築を進めることが求められる。これは、国際的な研究
+プレゼンスの発揮と同時に、様々な研究者や企業の新規参入を促す上でも極めて有効である。
+研究拠点の設置においては、既存の拠点を活かすことが有効な可能性がある。例えば、世界トップレベル
+研究拠点プログラム（WPI）拠点のアップデート版としての再設置や、大学内の既存研究センターを母体に
+することで、既存の設備や人材を活かしながらの円滑な立ち上げや運営が期待できる。
+32
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 43 =====
+JST研究開発戦略センター（CRDS）では、令和５年度に戦略プロポーザルを作成すべきテーマの候補を
+CRDS戦略スコープ2023検討委員会を経て指定し、令和５年９月に検討チームを発足させた。その後、検
+討チームにおいて提言作成に向けた調査・分析・検討を重ねた。検討チームの活動では、調査によって国内
+外の研究開発動向・技術水準を明らかにしながらスコープの焦点を絞り、その過程において提言の方向性を
+検討するため、 （1）に示す有識者へのインタビュー・意見交換を実施した。その上で、CRDSが作成した仮
+説を検証する目的で、科学技術未来戦略ワークショップを開催した（次ページ（2）参照） 。ワークショップ
+の結果は、令和６年7月に報告書としてCRDSより発行している（CRDS-FY2024-WR-01,
+ https://www.
+jst.g
+o.jp/crds/report/CRDS-FY2024-WR-01.html） 。
+以上の調査・分析の結果と、ワークショップにおける議論などを踏まえて、令和６年10月に本戦略プロポー
+ザルを発行するに至った。
+（1）インタビューを実施した識者（敬称略、所属・役職は実施時点）
+岩崎
+
+泰彦 関西大学
+
+化学生命工学部化学・物質工学科
+
+教授
+宇都
+ 甲
+一郎 物質・材料研究機構
+
+高分子・バイオ材料研究センター
+
+主幹研究員
+岡本
+
+章玄 物質・材料研究機構
+
+高分子・バイオ材料研究センター
+ グ
+ループリーダー
+奥田
+覚 金沢大学
+ ナ
+ノ生命科学研究所
+
+准教授
+加藤
+
+創一郎 産業技術総合研究所
+
+生物プロセス研究部門
+
+上級主任研究員
+桐谷
+
+乃輔 東京大学
+
+大学院総合文化研究科
+
+准教授
+小林
+
+徹也 東京大学
+
+産業技術研究所
+
+教授
+小林
+
+義和 東京工業大学
+
+国際先駆研究機構
+
+URA
+酒井
+
+洸児 日本電信電話株式会社
+
+NTT物性科学基礎研究所
+
+研究主任
+澤井
+
+哲 東京大学
+
+大学院総合文化研究科
+
+教授
+杉村
+
+薫 東京大学
+
+大学院理学系研究科
+
+准教授
+曽我部
+
+正博 金沢工業大学
+
+産学連携室
+
+教授
+高橋
+
+陸 日本電信電話株式会社
+
+NTT物性科学基礎研究所
+
+研究主任
+瀧ノ上
+
+正浩 東京工業大学
+
+情報理工学院
+
+教授
+竹内 昌
+治 東京大学
+
+大学院情報理工学系研究科
+
+教授
+田中
+求 ハ
+イデルベルク大学
+
+物理化学研究所
+
+教授/
+京都大学 高等研究院 医学物理・医工計測グローバル拠点 教授
+津久井
+
+久美子 国立感染症研究所
+
+主任研究官
+萩原
+
+将也 理化学研究所
+
+開拓研究本部
+
+理研白眉研究チームリーダー
+平島
+
+剛志 シンガポール国立大学
+ メ
+カノバイオロジー研究所
+
+主任研究員
+藤枝
+
+俊宣 東京工業大学
+
+生命理工学院
+
+准教授
+村田
+智 東北大学
+
+大学院工学研究科
+
+教授
+森島
+
+圭祐 大阪大学
+
+大学院工学研究科
+
+教授
+谷内江
+
+望 ブ
+リティッシュコロンビア大学生体医工学部
+
+教授/
+大阪大学 ヒ ューマン・メタバース疾患研究拠点 特任教授
+山本
+
+英明 東北大学
+
+電気通信研究所
+
+准教授
+付録1 検討の経緯
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+33
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+検討の経緯
+付録
+1
+
+===== PDF_PAGE 44 =====
+（2）科学技術未来戦略ワークショップ「細胞集団機能と物質科学」
+概要
+日時：2024年3月17日（土） 　　9:30-17:00
+場所： TKP
+市ヶ谷カンファレンスセンター
+ ９
+階（9A）およびオンライン（Zoom）
+主催：国立研究開発法人科学技術振興機構（JST）研究開発戦略センター（CRDS）
+プログラム
+9:30-9:35 開会挨拶 魚崎
+
+浩平（JST-CRDS）
+9:35-9:50 趣旨説明 髙村
+
+彩里（JST-CRDS）
+【第一部：“物質＋細胞集団”システムの創製】
+ 9:50-10:10
+マイクロデバイスを用いた培養組織（細胞集団）の構築とシステム応用
+ 森本
+
+雄矢（早稲田大）
+10:10-10:30 生体材料加工技術を基盤したオンチップ生体モデルの創製 酒井
+
+洸児（NTT）
+10:30-10:50 細胞周り微小環境制御によるオルガノイド形態制御 萩原
+
+将也（理研）
+10:50-11:10 “物質＋微生物細胞集団”システムの創製 堀
+
+克敏（名古屋大）
+11:10-11:25 細胞の挙動をプログラミングする合成生物学 木賀
+
+大介（JST-CRDS/早稲田大）
+11:25-11:50 第一部振り返り ファシリテーター：木賀
+
+大介（JST-CRDS/早稲田大）
+【第二部：階層をつなぐ“物質＋細胞集団”動態の統合的理解】
+13:00-13:20 細胞の集団挙動がもたらす組織恒常性と形態形成 田中
+求 （ハイデルベルク大/京都大）
+13:20-13:40 動的材料を用いるメカノバイオロジー研究 中西
+
+淳（NIMS）
+13:40-14:00 多細胞システムにおける分子・細胞・器官の階層間相互作用と定量的な数理モデリング
+ 奥田
+覚（金沢大）
+14:00-14:20 電気細菌の集団的挙動 岡本
+
+章玄（NIMS）
+14:20-14:40 機械的な力による多細胞秩序形成 杉村
+
+薫（東京大）
+14:40-15:00 第二部振り返り ファシリテーター：髙村
+
+彩里（JST-CRDS）
+【第三部：推進方策を含めた総合討論】
+15:15-15:30 ソフトロボット学での異分野融合推進と夢 鈴森
+
+康一（東工大）
+15:30-15:50 ショートプレゼンテーション：分野連携・融合的研究開発の取り組み
+15:50-16:55 総合討論 ファシリテーター：木賀
+
+大介（JST-CRDS/早稲田大）
+16:55-17:00 閉会挨拶 魚崎
+
+浩平（JST-CRDS）
+招聘識者
+（話題提供者）
+岡本
+
+章玄 物質・材料研究機構
+
+高分子・バイオ材料研究センター
+ グ
+ループリーダー
+奥田
+覚 金沢大学
+ ナ
+ノ生命科学研究所
+
+准教授
+酒井
+
+洸児 日本電信電話株式会社
+
+NTT物性科学基礎研究所
+
+研究主任
+杉村
+
+薫 東京大学
+
+大学院理学系研究科
+
+准教授
+鈴森
+
+康一 東京工業大学
+
+工学院
+
+教授
+34
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+検討の経緯
+付録
+1
+
+===== PDF_PAGE 45 =====
+田中 求 ハ イデルベルク大学 物理化学研究所 教授/
+京都大学 高等研究院 医学物理・医工計測グローバル拠点 教授
+中
+西
+
+淳 物質・材料研究機構
+
+高分子・バイオ材料研究センター
+ グ
+ループリーダー
+萩原
+
+将也 理化学研究所
+
+開拓研究本部
+
+理研白眉研究チームリーダー
+堀
+
+克敏 名古屋大学
+
+大学院工学研究科
+
+教授
+森本
+
+雄矢 早稲田大学
+
+理工学術院
+
+准教授
+（コメンテーター）
+叶井
+
+正樹 株式会社島津製作所
+
+基盤技術研究所
+ バ
+イオ・ケミカルユニット長
+新道
+
+真代 筑波大学URA研究戦略推進室
+ リ
+サーチ・アドミニストレーター
+藤枝
+
+俊宣 東京工業大学
+
+生命理工学院
+
+准教授
+辻
+
+真博 JST-CRDS
+ ラ
+イフサイエンス・臨床医学ユニット フ
+ェロー
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+35
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+検討の経緯
+付録
+1
+
+===== PDF_PAGE 46 =====
+生体物質を対象とする生命科学の研究プロジェクトと、人工（非生体）物質を対象とする物質・材料科学
+研究のうち、互いに一定程度の関連性がある主要なものを過去から順に挙げる。さらに、これらのプロジェク
+トを、関心とする対象（人工物質―生体物質：横軸）とスケール（縦軸）に応じてマップ化した（図S2-1） 。
+研究プロジェクト［略称］ 期間
+ナ ノテク ノロジー分野別バーチャルラボ（全10領域のうち）
+2002-2007年度JST-CREST
+
+医療に向けた化学・生物系分子を利用したバイオ素子・システムの創製［バイオ素子］
+JST-CREST
+ ソ
+フトナノマシン等の高次機能構造体の構築と利用［ソフトナノマシン］
+JST-CREST
+
+医療に向けた自己組織化等の分子配列制御による機能性材料・システムの創製［自己組織化］
+ナ ノテク ノロジー・材料を中心とした融合新興分野研究開発　のうち、バイオナ ノテク ノロジー研究拠点の形成
+2005-2009年度ナノバイオ・インテグレ－ション研究拠点［ナノバイオ研究拠点］
+生命分子の集合原理に基づく分子情報の科学研究ネットワーク拠点［分子情報生命科学研究拠点］
+JST-CREST
+ プ
+ロセスインテグレーションによる機能発現ナノシステムの創製［ナノシステム］ 2008-2015年度
+JST-ERATO
+
+竹内バイオ融合プロジェクト 2010-2016年度
+JSPS
+
+新学術領域研究
+ ナ
+ノメディシン分子科学 2011-2015年度
+JSPS
+
+新学術領域研究
+
+超高速バイオアセンブラ 2011-2015年度
+JST-CREST
+ ラ
+イフサイエンスの革新を目指した構造生命科学と先端的基盤技術［構造生命］ 2012-2019年度
+JST-CREST
+
+統合1細胞解析のための革新的技術基盤［１細胞］ 2014-2021年度
+AMED-CREST
+ メ
+カノバイオロジー機構の解明による革新的医療機器及び医療技術の創出［メカノバイオ］ 2015-2022年度
+JST-CREST
+
+細胞外微粒子に起因する生命現象の解明とその制御に向けた基盤技術の創出［細胞外微粒子］ 2017年度-
+JSPS
+
+新学術領域研究
+
+分子夾雑の生命化学［分子夾雑化学］ 2017-2021年度
+JST-CREST
+ ゲ
+ノムスケールのDNA設計・合成による細胞制御技術の創出［ゲノム合成］ 2018年度-
+JSPS
+
+新学術領域研究
+ ソ
+フトロボット学の創成：機電・物質・生体情報の有機的融合［ソフトロボット学］ 2018-2022年度
+JST-CREST
+
+多細胞間での時空間的相互作用の理解を目指した定量的解析基盤の創出［多細胞］ 2019年度-
+JSPS
+
+新学術領域研究
+
+情報物理学でひもとく生命の秩序と設計原理［生命の情報物理学］ 2019-2023年度
+JSPS
+
+学術変革領域研究（A）分子サイバネティクス　ー化学の力によるミニマル人工脳の構築［分子サイバネ］ 2020-2024年度
+JSPS
+
+学術変革領域研究（A）マテリアルシンバイオシスための生命物理化学 2020-2024年度
+JSPS
+
+学術変革領域研究（A）素材によって変わる、 『体』の建築工法［からだ工務店］ 2020-2024年度
+JSPS
+
+学術変革領域研究 （A） 競合的コミュニケーションから迫る多細胞生命システムの自律性 ［多細胞生命自律性］ 2021-2025年度
+JSPS
+
+学術変革領域研究（B）脳神経マルチセルラバイオコンピューティング［多細胞バイオ計算］ 2021-2023年度
+JSPS
+
+学術変革領域研究（A）力が制御する生体秩序の創発［生体秩序力学］ 2022-2026年度
+文部科学省
+ デ
+ータ創出・活用型マテリアル研究開発プロジェクト（DxMT）
+バイオ・高分子ビッグデータ駆動による完全循環型バイオアダプティブ材料の創出［バイオアダプティブ材料］ 2022-2030年度
+JST
+
+革新的GX技術創出事業（GteX） バ
+イオものづくり領域 2023年度-
+JSPS
+
+学術変革領域研究（A）細胞外情報を統御するマルチモーダルECM［マルチモダルECM］ 2023-2027年度
+JSPS
+
+学術変革領域研究（A）脳神経マルチセルラバイオ計算の理解とバイオ超越への挑戦［バイオ超越］ 2024-2028年度
+付録2 関連する国内の研究プロジェクト
+36
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+関連する国内の研究プロジェクト
+付録
+2
+
+===== PDF_PAGE 47 =====
+図S2-1　関連する国内プロジェクトの対象スケールに基づくマップ化
+2000年代以降、 ナノや細胞以下のスケールを対象にした、 バイオテクノロジーやナノ （バイオ）テクノロジー
+に関わる研究プロジェクトが重点的に実施されてきた（下部、破線楕円領域） 。近年では、細胞集団～器官
+レベルでの力学的応答や、細胞と細胞外物の相互作用や細胞外環境条件による影響の理解、材料・デバイス
+技術を用いた細胞応答の制御やシステム構築に関する研究が、 JSPSのプロジェクトを中心に拡がってきている
+（上部、実線楕円領域） 。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+37
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+関連する国内の研究プロジェクト
+付録
+2
+
+===== PDF_PAGE 48 =====
+動的材料システム（Multicellular materials systems）
+動的材料システムは、広義には用途や使用環境に応じて機能や物質的状態が動的に変化する適応性を備え
+た材料システムのことを指し、英語ではDynamic
+
+materials
+
+systemsなどと称される。
+一方、本戦略プロポーザルでは、バイオテクノロジーと材料・デバイス技術を組み合わせて細胞の集団的
+挙動を制御することで、多様な高次機能と同時に、用途や使用環境に応じて機能や物質的状態が動的に変化
+する適応性を備えた材料システムを、動的材料システムと定義する。また、英語名をMulticellular
+materials
+
+systemsとする。
+細胞集団と人工的な材料・デバイスを複合した材料やシステムとしては、 既に「Biohybrid～」や「Hybrid
+
+living materials
+」 、 「Engineered living materials
+」など、類似の概念や技術が示されている。本戦略プ
+ロポーザルでは、特に、細胞集団と材料・デバイスの間の相互作用を制御し、設計原理に基づいた適応性を
+材料システムに搭載させることを目指す。
+細胞外物質、細胞外マ ト リ ックス、基質
+細胞と接し、細胞の外部から物理的・化学的・電気的刺激や空間的制約等を付与する人工的な材料やデ
+バイスを、本戦略プロポーザルでは細胞外物質と称する。従来、足場材料や培養基材などと呼ばれるものも
+該当する。一方、生体の組織や臓器中で自発的に形成される非細胞性構成成分のことを、細胞外マトリック
+スとして区別して用いている。また、人工的な材料・デバイスと、生体由来の細胞外マトリックスを区別しな
+い場合は、基質と表現する。
+バイオハイブリッドロボット
+細胞や生体組織を人工部品と組み合わせて、生体特有の運動機能および感覚機能を備えたロボット。駆動
+力として、ヒトや動物の心筋細胞または骨格筋細胞を、極性を揃えて束上にしたものを使うことが多い。ソフ
+トロボット（柔軟性の高い素材を用い、 しなやかな動きを可能にしたロボット）の一種としても位置付けられる。
+生体模倣システム（Microphysiological systems, MPS）
+培養細胞を使ってヒトの各器官を体外（in vitro）で再現する人工システム。英語ではMicrophysiological
+s
+ystems（MPS）と称するが、日本語では生体模倣システムという名称が浸透している。
+これまでに様々な種類が提案されている。例えばオルガノイドは、分化誘導させた細胞を試験管等で３次元
+培養し、凝集塊状にしたものである。Organ-on-a-Chipは、マイクロ流路の微小区画中に臓器を模した微小
+環境を作り、細胞を配置したものである。微小区画を流路でつなぎ、多種の臓器間の連関の再現も試みられ
+ている。
+人工神経細胞回路
+神経細胞を電気デバイス上に播種・培養し、人工的に構築した神経細胞ネットワークの応答を観察・制御
+する技術。人工脳/脳オルガノイドとして脳科学研究や創薬研究への利用を目指す一方、神経細胞自身をソフ
+トウェアおよびハードウェアとしたコンピューティング・デバイスの開発を目指す方向もある。後者は、既存
+のシリコン半導体をベースにした計算機と比べ、省エネルギーでの計算が可能になると期待されている。
+付録3 専門用語説明
+38
+CRDS-FY2024-SP-02CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+専門用語説明
+付録
+3
+
+===== PDF_PAGE 49 =====
+合成生物学
+バイオテクノロジーを基盤に、細胞が持つ生体機能、特に細胞内部の遺伝子発現や化学反応機構を人為的
+に制御・設計しようとする技術領域。より学問的には、生物を「創って理解する」という側面も持つ。相互
+作用を同定済みの遺伝子を組み合わせた遺伝子ネットワーク（あるいは遺伝子回路）や代謝経路を人工的に
+構築する試みなどがある。
+バイオマテリアル
+生体内で、あるいは生体成分に接して利用される材料。従来、主に医療応用を志向して、意図しない生体
+毒性や免疫反応を引き起こさないかといった生体適合性の追究がされてきた。近年では、材料との相互作用
+を介して能動的に生体応答を制御する試みが顕著になっている。また、技術や応用場面の多様化に伴い、そ
+の定義や範囲を見直す動きもある
+96
+。
+バイオエレクトロニクス
+電子工学の技術を応用し、デバイスと生体との電気的相互作用に基づいて、生体応答の計測や制御をしよ
+うをする技術領域。また、生体機能を材料やデバイスに組み入れる試みもある。本戦略プロポーザルでは、
+バイオエレクトロニクスの技術を用いて作られたデバイスをバイオエレクトロニクスデバイスと称している。
+メカノバイオロジ ー
+細胞の内外で働く力や細胞・組織の硬さといった力学的要素が、細胞や組織の活動にどのように影響する
+かを研究する生物学の領域。細胞に働く力には、細胞間の張力や細胞の牽引力などがある。また細胞は、細
+胞外基質の粘性や弾性といった力学的特性やその幾何的形状によっても異なる応答を示す。似た概念に、バ
+イオメカニクスがある。これは、力学の観点から生体の構造や動きなどの理解を目指す学問領域である。
+バイオエコノ ミー（Bioeconomy）
+わが国のバイオ戦略（2019年）およびバイオエコノミー戦略（2024年）では、 「バイオテクノロジーや再
+生可能な生物資源等を利活用し、持続的で、再生可能性のある循環型の経済社会を拡大させる概念」とある。
+また、 Bioeconomyの概念を最初に提唱したOECDのレポート”The
+
+Bioeconomy
+
+to
+
+2030”（2009）には、
+明確な定義は示されていないものの、バイオテクノロジーの知識（biotechnological kno
+wledge） 、再生
+可能なバイオマス（renewable biomass
+） 、応用先を越えた統合（integration acr
+oss applications
+）の
+３つを要素に含むとしている。
+バ イオも の づくり
+わが国のバイオエコノミー戦略（2024年）では、 「遺伝子技術を活用して微生物や動植物等の細胞によっ
+て物質を生産すること」とある。具体的には、 「微生物や動植物等の生物の代謝機能により有用物質を産生さ
+せる技術、あるいは動物の細胞等を用いて、細胞自体を増殖・高密度化させて有用物質の基礎を形成する技
+術」とされている。英語では、Biomanufacturingと表現されることが多いが、その定義や範囲は国・地域
+や政策によって若干の違いがある。
+96 Zhang, X. and Williams. D., ed., Definitions of biomaterials for the twenty-first century (Elsevier, 2019).
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+39
+CRDS-FY2024-SP-02
+戦略プロポーザル　　バイオテクノ ロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計　～動的材料システムの創出～
+専門用語説明
+付録
+3
+
+===== PDF_PAGE 50 =====
+
+
+===== PDF_PAGE 51 =====
+作 成メンバー
+総括責任者 魚崎
+
+浩平 上席フェロー ナノテクノロジー・材料ユニット
+リーダー 髙村
+
+彩里 フェロー ナノテクノロジー・材料ユニット
+メンバー 木賀
+
+大介 フェロー ライフサイエンス・臨床医学ユニット
+ 嶋田
+義皓 フェロー システム・情報科学技術ユニット（～2024年8月）
+ 中戸川
+万智子 研修生 PM育成・活躍推進プログラム（～2024年3月）
+ 沼澤
+
+修平 フェロー ナノテクノロジー・材料ユニット（～2024年3月）
+ 福井
+ 弘
+行 フェロー ナノテクノロジー・材料ユニット
+ 茂木
+
+勉 フェロー システム・情報科学技術ユニット
+バイオテクノ ロジーと材料・デバイス技術による
+細胞の集団的適応性の制御・設計
+～動的材料システムの創出～
+STRATEGIC PROPOSAL
+Design and Control of Multicellular Adaptivity
+with Biotechnology and Materials Technology
+-Development of Multicellular Materials Systems-
+CRDS-FY2024-SP-02戦略プロポーザル
+令和 6 年 10月　October 2024
+国立研究開発法人科学技術振興機構　研究開発戦略
+センター
+Center for Research and Development Strategy, Japan Science and T echnology Agency
+〒102-0076 東京都千代田区五番町7 K’s 五番町
+電話 03-5214-7481
+E-mail crds@jst.go.jp
+https://www.jst.go.jp/crds/
+本書は著作権法等によって著作権が保護された著作物です。
+著作権法で認められた場合を除き、本書の全部又は一部を許可無く複写・複製することを禁じます。
+引用を行う際は、必ず出典を記述願います。
+なお、本報告書の参考文献としてインターネット上の情報が掲載されている場合には、本報告書の発行日の1ヶ月前の日付で入手しているものです。
+上記日付以降後の情報の更新は行わないものとします。
+This publication is protected by copyright law and international treaties.
+No part of this publication may be copied or reproduced in any form or by any means without permission of JST,
+except to the extent permitted by applicable law.
+Any quotations must be appropriately acknowledged.
+If you wish to copy, reproduce, display or otherwise use this publication, please contact crds@jst.go.jp.
+Please note that all web references in this report were last checked one month prior to publication.
+CRDS is not responsible for any changes in content after this date.
+ISBN 978-4-88890-946-4
+
+===== PDF_PAGE 52 =====
+ISBN 978-4-88890-946-4
+FOR THE FUTURE OF
+SCIENCE AND
+SOCIETY
+https://www.jst.go.jp/crds/ 2024年
+10月
+JST CRDS
+戦略プロポーザル
+バイオテクノロジーと材料・デバイス技術による細胞の集団的適応性の制御・設計
+～動的材料システムの創出～

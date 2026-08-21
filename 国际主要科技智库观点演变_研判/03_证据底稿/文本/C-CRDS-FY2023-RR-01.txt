@@ -1,0 +1,5439 @@
+
+===== PDF_PAGE 1 =====
+FOR THE F/U.alt01T/U.alt01RE OF
+SCIE/N.alt01CE /A.alt01/N.alt01D
+SOCIETY
+https://www.jst.go.jp/crds/
+CRDS-FY2023-RR-01
+ɾ ෼ੳ
+ISBN 978-4-88890-867-2
+ॻ
+ల։
+೥
+݄
+JST CRDS
+ॻ
+ΔφϊςΫϊϩδʔɾ
+ͷ
+ల։
+
+===== PDF_PAGE 2 =====
+超高齢社会を迎えたわが国では、医療やヘルスケア技術の高度化や多様化、またそれらの礎となる生命現
+象への高次な理解への追究が一層求められるようになっている。
+今日までのライフサイエンス・医学研究の発展は、関連する他諸分野の貢献なしに得られるものではなく、
+特にナノテクノロジー・材料科学分野は、従来からライフサイエンス研究の基盤技術や医学研究・臨床医療
+ツールの提供を通して、密接な関係の中で大きな寄与を果たしてきた。
+分野融合的な研究開発の方向性を見出すうえでは、学問分野分類に対応した組織体制や研究者コミュニ
+ティなどの枠組みに必ずしも適わないからこそ、論文および特許の客観データに基づいて動向や関係性を把
+握することが有用となる。本調査は、ライフサイエンス・臨床医学分野とナノテクノロジー・材料科学分野に
+跨る範囲の論文および特許について、マッピングとクラスタリングにより関係性を可視化、俯瞰的分析を行い、
+当該融合分野の研究開発戦略の判断に資する情報を得ようとするものである。
+調査の結果、 「計測・分析デバイス」が中核となり、 それを利用する「基礎生命科学」 「医療」 「医用材料工学」
+が展開する、という典型的な関係性が見出された。また、論文情報やナノテクノロジー関連情報に注目するこ
+とで、生体分子設計、バイオマテリアル、ナノ医薬などの技術でも、両分野が連関していることが示唆された。
+論文数・特許数の主要国別の比較では、中国が近年急速に成長し、米国とともに他国を圧倒している。日本
+は、論文では遺伝子発現機構や再生医療・幹細胞治療、特許ではウェアラブルデバイスや、生体用接着剤、
+基材などの研究開発が相対的に多いと見られた。加えて、今後成長が見込まれる技術・領域として、がん、
+転写因子、シーケンス技術・シングルセルRNAシーケンス、RNA編集、CAR-T細胞、エクソソーム、マイ
+クロ流体デバイス、ナノ医薬・DDS、組織工学技術、ナノポアシーケンス、などが見出された。
+本調査では、両分野間に密接な関係あるいは重なりがあることが改めて確認された。この分野融合の姿は、
+今後新たな生命現象の発見や新規技術の出現により、常に変容していく可能性がある。両分野が相補的ある
+いは一体的に発展していく関係にあることを理解し、俯瞰的な視点で有効な戦略を見出していくことが重要で
+ある。本調査は、これまでの論文・特許の客観情報に基づいて本融合的分野の一つの構造（地図）の提示
+を試みるとともに、研究開発動向に関する調査・分析結果を提供するものである。
+エグゼクティブサマリー
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+iCRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+
+===== PDF_PAGE 3 =====
+
+
+===== PDF_PAGE 4 =====
+目次
+1 調査概要 . .......................................................................................... 1
+1.1 背景 ....................................................................................... 1
+1.2 調査目的 ................................................................................ 1
+1.3 論文および特許情報の収集 . ................................................... 2
+1.4 トピックモデルによる類似度評価と俯瞰マップ作成 ............ 4
+1.5 キーフレーズの取得 .............................................................. 5
+1.6 成長曲線（ロジスティック関数）回帰による成長可能性判定. ... 5
+2 ナノテクノロジー・材料科学×
+ライフサイエンス・臨床医学の俯瞰マップ. .............................. 7
+2.1 論文情報の俯瞰マップ . .......................................................... 7
+2.2 特許情報の俯瞰マップ . .......................................................... 11
+2.3 論文・特許統合解析による俯瞰マップ . ................................. 14
+3 ナノテクノロジー・材料科学×
+ライフサイエンス・臨床医学のマクロ動向分析. ...................... 21
+3.1 研究開発の経年変化 .............................................................. 21
+3.2 俯瞰マップにおける成長領域推定 . ........................................ 23
+3.3 主要国別動向分析 . ................................................................. 25
+3.4 論文―主要研究機関別分析 . ................................................... 29
+3.5 特許―出願人別分析 .............................................................. 31
+3.6 成長キーフレーズの推定 ....................................................... 33
+4 ナノテクノロジーの
+ライフサイエンス・臨床医学分野への展開. .............................. 37
+4.1 ナノテクノロジー関連トピックの選定 . ................................. 37
+4.2 ナノテク基礎/応用技術の俯瞰マップ分布 . ........................... 39
+4.3 ナノテク基礎/応用技術の経年変化 ...................................... 39
+5 まとめ ............................................................................................... 42
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+iiiCRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+
+===== PDF_PAGE 5 =====
+
+
+===== PDF_PAGE 6 =====
+1.1 背景
+わが国では近年の超高齢社会の到来に伴い、健康で快適さや幸せを実感できる生活の実現、長寿の享受、
+医療費の適正化、といった社会的要請がより喫緊なものとなっている。医療やヘルスケアに求められる技術は
+ますます高度で多様となり、同時に、それらの礎となる生命現象への高次な理解も必要となる。
+現代のライフサイエンスおよび医学の研究開発においては、機能性分子の構造・動態解析、オミクス情報
+の網羅的取得、ゲノム編集技術を利用した遺伝子治療、幹細胞関連技術を利用した再生医療や生体模倣シス
+テムなどのテクノロジーが、当該分野に飛躍的な進展をもたらしている。また、COVID-19に対するmRNA
+ワクチンの実用化も近年の医薬開発における大きな展開の一つである。このようなライフサイエンス・医学分
+野の華々しい発展は、その基盤あるいは一体となって関与する他諸分野の貢献なしに得られるものではない。
+ライフサイエンス・医学分野と他分野の関連は様々な切り口から考えることができるものの、特にナノテクノロ
+ジー・材料科学分野は、従来からライフサイエンス研究の基盤技術や医学研究・臨床医療ツールの提供を通
+して、密接な関係の中で大きなの寄与を果たしてきた。例えば、次世代シーケンサーを構成する情報処理デ
+バイスや光デバイス、生体分子情報の数値化や定量化を行う計測・分析デバイス、薬物送達システム（DDS）
+やmRNAワクチンのキャリアとのなる人工ナノ粒子、移植用細胞シートを作るための培養基材ポリマーなど、
+これらにはナノテクノロジーから発展したデバイスや材料の設計技術が重要な役割を担っている。
+わが国では、 「健康・医療戦略」 （2020年3月閣議決定）にて、世界最高水準の医療の提供に資する基礎
+から実用化まで一貫した研究開発の推進が掲げられた。 「バイオ戦略フォローアップ」 （2021年6月統合イ
+ノベーション戦略推進会議決定）では、医療・ヘルスケア産業における市場獲得のため、研究開発から事
+業化までを切れ目なく取り組む必要性が述べられた。また、 「マテリアル革新力強化戦略」 （2021年4月統合
+イノベーション戦略推進会議決定）では、バックキャスト型研究の例に、健康で安心な生活のためのバイオ
+アダプティブ材料等が挙げられている。
+複雑化・高度化する医療・ヘルスケアへの社会ニーズや技術課題に応えるためには、諸分野の持つ知見・
+技術の融合あるいは複合化、システム化が、科学技術上も経済・産業上も極めて重要となる。分野融合的な
+研究開発の方向性を見出すうえでは、学問分野分類に対応した行政/研究機関/大学/企業の組織体制、研
+究者コミュニティなどの枠組みに必ずしも適わないからこそ、論文および特許の客観データに基づいて動向や
+関係性を俯瞰的に把握することが有用となる。そこで本調査は、ライフサイエンス・臨床医学分野とナノテク
+ノロジー・材料科学分野に跨る範囲の論文および特許を俯瞰分析し、両分野間の関係性の構造や技術発展
+の動向など、当該融合分野の研究開発戦略の判断に資する情報を得ること企図したものである。
+1.2 調査目的
+本調査では、ナノテクノロジー・材料科学分野とライフサイエンス・臨床医学分野との融合的な技術分野の
+研究開発動向を、主要国における論文情報および特許の公開情報から把握・分析することを目的とする。さ
+らに、データ分析に基づき当該融合分野の今後への示唆を得ることも目指す。そこで、関連する技術の論文
+情報および特許公報を広く収集したうえで、それらを同じ俯瞰マップ上に可視化し、分析する。加えて、技術
+1 調査概要
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+1CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+調査概要
+1
+
+===== PDF_PAGE 7 =====
+領域およびキーフレーズ毎の成長可能性判定を行う。
+1.3 論文および特許情報の収集
+調査対象とする論文および特許の収集は、本融合分野に関連するキーワード（表1-1）の検索により行った。
+表1-1の検索式の作成においては、JST-CRDSの発行する研究開発の俯瞰報告書ナノテクノロジー・材料分
+野およびライフサイエンス・臨床医学分野（2021年および2023年）から関連する研究開発領域の記述を参
+考にし、また、近年注目される量子生命科学分野に関するキーワードも加えた。
+学術論文は、データベースにScopus（エルゼビア社）を使用し、2001年以降に発行された査読付き論文
+のうち、タイトルまたは要約に表1-1のキーワードを有しASCJ分類に適うもの、かつ関連分野でCiteScore
+上位10%あるいはSNIP（Source N
+ormalized Impact per P
+aper）値が0.9以上の雑誌に掲載されたも
+のを対象とした。収集された488,002件のうち、酷似論文と、記述が極端に短くて分析に堪え得ないものを
+除外し、最終的に477,310件を分析対象候補とした。論文のみの俯瞰マップの作成により不要論文の有無を
+確認した（後述2.1） 。
+特許は、データベースにTotalPatent（LexisNexis社）を使用し、2001年以降に発行された公開公報の
+うち、表1
+-1のキーワードを発明の名称、要約、請求項に有し、発行国・機関が米国、欧州、WIPO、中国、
+日本、韓国、ドイツ、フランス、英国、カナダであるものを対象とした。収集された540,515件のうち、ファ
+ミリー特許の重複を削除したのち、英語機械翻訳が欠損したもの、記述が極端に短くて分析に堪え得ないも
+のを除外して、最終的に198,093件を分析対象候補とした。特許のみの俯瞰マップを作成し、不要特許の有
+無を確認した（後述2.2） 。
+不要論文、不要特許を除外したのち、論文と特許を統合した俯瞰マップを作成した。
+表1-1 　 キーワード検索式
+分野 項目 検索式 論文件数 特許件数
+論文共通
+AND DOCTYPE (“ar”) AND PUB
+YEAR AFT 2
+000 AND LANGU
+AGE (“english
+”)
+A
+ND S
+UBJAREA（“BIOC” O
+R “
+MEDI” O
+R “
+MATE” O
+R “
+PHAR” O
+R “
+AGRI” O
+R
+“IMMU” O
+R “
+CHEM” O
+R “NEUR
+” O
+R “MUL
+T” O
+R “
+CENG”) AND SRCID
+（関連
+SUBJAREAでCiteScore上位10%またはSNIP値0.9以上の雑誌）
+特許共通 AND
+ PC:（
+US
+ O
+R
+ W
+O
+ O
+R
+ EP O
+R
+ JP O
+R
+ CN
+ O
+R
+ KR
+ O
+R
+ GB
+ O
+R
+ D
+E
+ O
+R
+ FR
+ O
+R
+ CA
+)
+
+AND
+
+PD:［2001-01-01
+ T
+O
+
+*]
+
+AND
+
+PG:（Application)
+
+AND
+
+PT:（Patent）
+ナノテクノロ
+ジー・材料分
+野より
+バイオ材料
+TITLE-ABS (
+（biomaterial* O
+R (
+（biocompatible O
+R bioadaptiv
+e) W/5
+material*) O
+R (
+（material* W/1
+0 interfac
+e*) AND (bio* O
+R c
+ell）)
+O
+R
+ (（
+“regenerative
+ medicine”)
+ AND
+ material*)
+ O
+R
+ (bioactiv
+e
+ W/10
+ material*)
+
+O
+R (bioabsorbable W/1
+0 material*) O
+R (biodegr
+adable AND medical*) O
+R
+(
+（bio O
+R skin O
+R tissue O
+R c
+ell) AND (adhesiv
+e W/1
+0 material*
+）) O
+R
+(“extr
+acellular matrix” AND (
+material* O
+R g
+el）) O
+R bioc
+eramic* O
+R
+osteoc
+onductivity O
+R (bone AND (“r
+egenerative medicine” O
+R (
+scaffold W/1
+0
+material*
+） ）) O
+R bioh
+ybrid*) AND NO
+T (“solar c
+ell” O
+R electr
+olyte O
+R
+per
+ovskite
+
+OR
+
+photovoltaic） ）
+47,787 130,785
+ナノ医薬・シス
+テム
+TITLE-ABS
+ (（
+“drug
+ deliv
+er*” AND
+ (
+micelle*
+ O
+R
+ liposome*
+ O
+R
+ “nano*
+ particle”
+O
+R nanoparticle*
+）) O
+R nanomic
+elle* O
+R nanog
+el* O
+R nanocarrier* O
+R
+nanomedicine* O
+R (
+nano* W/1
+0 ther
+anostic*) O
+R nanother
+anostic* O
+R
+“
+contrast a
+gent*” O
+R “
+dna c
+omputer*” O
+R b
+iocomputer* O
+R “
+bio c
+omputer*”
+O
+R “molecular c
+omputer*” O
+R nanor
+obot* O
+R “molecular machine*” O
+R
+(“molecular devic
+e*” AND bio*) O
+R “molecular actuator*” O
+R “molecular
+motor*” O
+R
+ “molecular
+ r
+obot*” O
+R
+ (“lif
+e-like” W/5
+ s
+ystem)
+ O
+R
+ “artificial
+ c
+ell*”
+O
+R
+ “nucleic
+
+acid
+
+medicine”
+OR
+ “antibody
+
+drug
+
+conjugate*”
+OR
+
+nanovaccine*
+
+OR
+“nano
+
+vaccine*”）
+96,224 88,855
+2 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+調査概要
+1
+
+===== PDF_PAGE 8 =====
+バイオ計測
+TITLE-ABS
+
+( （nano*
+
+AND
+
+biosensor*)
+
+OR
+
+(rna
+ W/10
+
+microarray*)
+
+OR
+
+(transcript
+
+W/1
+0 micr
+oarray*) O
+R (
+protein W/1
+0 micr
+oarray*) O
+R (
+（dna O
+R rna O
+R
+tr
+anscript* O
+R pr
+otein O
+R peptide O
+R bio* O
+R c
+ell O
+R paper-based) AND
+micr
+ofluidic*) O
+R “micr
+o total analy
+sis” O
+R “
+μtas” O
+R “lab on a chip*” O
+R
+“or gan on a chip*” O R “or gans on chip*” O R “body on a chip*” O R (“point of
+car e testing” AND (nano* OR micro*）) OR (（microdevice* OR nanodevice*)
+OR rna O
+R sequencing O
+R g
+ene O
+R g
+enome* O
+R pr
+otein O
+R tr
+anscript* O
+R
+p
+roteom* O
+R p
+eptide O
+R m
+etabolom* O
+R e
+pigenom* O
+R *
+omics）)
+O
+R
+ (（
+（wearable
+ W/10
+ devic
+e*)
+ O
+R
+ (
+wearable
+ W/10
+ sensor*
+）)
+ AND
+ (bio*
+ O
+R
+
+medical*
+
+OR
+
+health*
+
+OR
+
+vital
+
+OR
+
+clinical） ） ）
+64,427 57,777
+バイオイメージ
+ング
+TITLE-ABS (
+（ （*fluorescence O
+R l
+uminescence O
+R p
+hosphorescent O
+R
+r
+adioactive O
+R isotope O
+R r
+aman O
+R autofluor
+escence O
+R photoac
+oustic O
+R
+optoac
+oustic O
+R brillouin O
+R “mass spectr
+ometry” O
+R maldi) W/1
+0 imaging*)
+O
+R
+ (brillouin
+ W/10
+ micr
+oscop*)
+ O
+R
+
+“molecular
+ imaging” O
+R
+
+“bio
+ imaging” O
+R
+
+bioimaging*
+
+OR
+
+optogenetic
+
+OR
+
+( （“differential
+
+interference
+
+contrast”
+OR
+ “phase
+c
+ontrast”)
+ AND
+ (imaging
+ O
+R
+ micr
+oscop*）)
+ O
+R
+ (imaging*
+ AND
+ (“tw
+o-photon”
+O
+R “thr
+ee-photon” O
+R “multi-photon
+” O
+R “super-r
+esolution” O
+R “single-
+m
+olecule”）) O
+R (
+（“label f
+ree” O
+R “
+trans s
+cale”) W
+/10 (
+imaging O
+R
+micr
+oscop*） ） ）
+65,177 39,795
+ライフサイエン
+ス・臨床医学
+分野より
+再生医療・幹
+細胞治療
+TITLE-ABS（ （ （“stem c
+ell” O
+R r
+eprograming) AN
+D (“
+regenerative me
+dicine*”
+O
+R (
+（organ O
+R t
+issue) A
+ND (
+regeneration* O
+R p
+rinting* O
+R f
+abrication O
+R
+engineering
+） ） ）)
+
+OR
+
+organoid）
+20,812 9,901
+バイオマーカー・
+リキッドバイオ
+プシー
+TITLE-ABS (
+（biomarker* O
+R “biologic* mark
+er*” O
+R “immu* mark
+er*” O
+R
+“s
+erum ma
+rker*” O
+R “p
+recision me
+dicine” O
+R “p
+ersonalized me
+dicine” O
+R
+“patient
+ str
+atification*”)
+ AND
+ (*omics
+ O
+R
+ “cir
+culating
+ tumor
+ c
+ell” O
+R
+ “c
+ell
+ fr
+ee
+
+dna” O
+R
+ “cir
+culating
+ tumor
+ dna” O
+R
+ micr
+orna
+ O
+R
+ mirna
+ O
+R
+ ex
+osome*
+ O
+R
+ “next
+
+g
+eneration
+
+sequencer*”） ）
+27,801 6490
+遺伝子発現機
+構
+TITLE-ABS （ （ （epigenomic*
+
+OR
+
+epigenetic*
+
+OR
+ “g
+ene
+
+expression*”)
+
+AND
+
+(“DNA
+
+meth
+ylation” O
+R “histone modification*” O
+R “chr
+omatin modification*” O
+R
+bisulfite O
+R “chr
+omatin immunopr
+ecipitation*” O
+R “
+ChIP seq” O
+R “high
+thr
+oughput chr
+omosome c
+onformation captur*” O
+R “Hi-C” O
+R “
+ATAC-seq” O
+R
+“MNase-seq” O
+R “non c
+oding RNA
+” O
+R “RNA P
+rocessing” O
+R “RNA
+modification*” O
+R (
+（“Higher or
+der Genome” O
+R “Higher or
+der chr
+omatin”)
+AND
+ (
+organization
+ O
+R
+ structur
+e
+ O
+R
+ ar
+chitecture）））)
+ O
+R
+ nucleome
+ O
+R
+
+“RNA
+
+pr
+otein
+
+complex*”
+OR
+ “nucleic
+
+acid
+
+medicine”）
+35,450 4,223
+細胞外微粒子・
+細胞外小胞
+TITLE-ABS（（extracellular
+ PRE/0
+ (
+vesicle*
+ O
+R
+ D
+NA
+ O
+R
+ RNA
+）)
+ O
+R
+ ex
+osome*
+
+O
+R
+ “membr
+ane
+
+vesicle*”
+OR
+ “Inter
+cellular
+
+signaling”
+OR
+ “liquid
+
+biopsy”） 26,759 18,823
+一細胞オミクス
+TITLE-ABS
+
+(（ （“single
+
+cell”
+OR
+ “single
+
+molecule”
+OR
+
+nanopore*
+
+OR
+
+atlas)
+
+AND
+
+(
+dna O
+R rna O
+R sequencing O
+R g
+ene O
+R g
+enome* O
+R pr
+otein O
+R tr
+anscript*
+O
+R pr
+oteom* O
+R peptid
+e* O
+R metab
+olom* O
+R epig
+enom* O
+R *omic
+s）) O
+R
+(
+nanopore AND bio*) O
+R (“multi omics” O
+R multiomics) O
+R (“c
+ell lineag
+e”
+AND tr
+acking) O
+R (“light sheet” W/2 micr
+oscop*) O
+R “tissue clearing” O
+R
+(tissue
+
+AND
+
+transparent)
+
+OR
+ “dna
+
+barcoding”）
+66,818 43,696
+ゲノム編集・エ
+ピゲノム編集
+TITLE-ABS（（（gene
+ O
+R
+ g
+enome)
+ W/5
+ editing)
+ O
+R
+ (“zinc
+ fing
+er
+ nuclease” O
+R
+
+ZFN) O
+R (“tr
+anscription activ
+ator lik
+e eff
+ector nuclease” O
+R T
+ALEN) O
+R
+(“
+CRISPR
+ Cas9” O
+R
+ crispr
+cas9
+ O
+R
+ “
+CRISPR
+ Cas*”)
+ O
+R
+ (（
+Gene
+ O
+R
+ RNA
+)
+ PRE/1
+
+(“knock
+ out” O
+R
+ “knock
+ in
+” O
+R
+ knock
+out
+ O
+R
+ knockin
+）)
+ O
+R
+ (base
+ O
+R
+ RNA
+ O
+R
+
+“D
+NA
+
+base”
+OR
+
+epigenome)
+ W/5
+
+editing）
+12,187 32,785
+オプトバイオロ
+ジー
+TITLE-ABS（optogenetic*
+ O
+R
+ (（
+“optical
+ manipulat*” O
+R
+ “optical
+ c
+ontrol*” O
+R
+
+“optical s
+witch*”) W/5 (
+cell O
+R pr
+otein O
+R bio* O
+R living
+）)
+O
+R (
+（photoswitchable O
+R photoactiv
+atable O
+R phototr
+ansformation O
+R
+photoc
+onversion)
+ W/5
+
+protein)
+
+OR
+
+Channelrhodopsin）
+6,814 1,860
+ケミカルバイオ
+ロジー
+TITLE-ABS (“pr
+otein knock
+down*” O
+R chemog
+enetic O
+R “c
+ell ther
+apy*” O
+R
+“designer drug” O
+R “c
+ovalent inhibitor” O
+R “c
+ovalent drug” O
+R (
+（“small
+molecule*” O
+R
+ “middle
+ molecule*”)
+ AND
+ (inhibitor
+ O
+R
+ antag
+onist
+ O
+R
+ ag
+onist
+
+O
+R
+
+therapeutic*
+
+OR
+
+drug）)
+
+OR
+ “chemical
+
+biology”）
+51,705 70,531
+合成生物学
+TITLE-ABS（“synthetic biology” O
+R (
+（protein O
+R “nucleic acid” O
+R
+“ev
+olutionary molecular”) PRE/0 engineering) O
+R (
+synthesized AND
+biomolecule*) O
+R x
+enobiology O
+R “artificial c
+ell” O
+R “g
+enome r
+ecoding” O
+R
+“c
+odon
+ r
+eassignment” O
+R
+ (（
+gene
+ O
+R
+ “long
+ D
+NA” O
+R
+ g
+enome)
+ PRE/0
+ s
+ynthe*)
+
+O
+R (“c
+ell fr
+ee” AND (tr
+anslation O
+R tr
+anscription O
+R s
+ynthesis）)
+O
+R
+
+(（synthetic
+
+OR
+
+nonnatural
+
+OR
+
+unnatural)
+
+PRE/0
+ “amino
+
+acid”） ）
+13,374 15,503
+量子生命科学
+量子と生命 （TITLE-ABS（quantum
+ AND
+ (bio*
+ O
+R
+ medicine
+ O
+R
+ D
+NA
+ O
+R
+ RNA
+ O
+R
+ g
+ene
+ O
+R
+
+g
+enetic
+
+OR
+
+protein）)
+
+OR
+
+(subjmain（13??)
+
+AND
+
+title-abs（quantum） ） ） 43,330 19,172
+超核偏極NMR TITLE-ABS（hyperpolar*
+
+PRE/2
+
+(“magnetic
+
+resonance”
+OR
+
+MRI
+
+OR
+
+NMR） ） 893 319
+合計 488,002 540,515
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+3CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+調査概要
+1
+
+===== PDF_PAGE 9 =====
+1.4 トピックモデルによる類似度評価と俯瞰マップ作成
+本調査では、トピックモデル（Latent Dirichlet Allocation：LD A）によって論文・特許の分析を行った。
+トピックモデルは確率モデルの一種で、文書中の「単語の出現する確率」を推定し、似た単語が出てくる文
+章を似たものとして評価する自然言語処理の基本的手法である。単語の出現確率の推定は実際の文書内の単
+語の出現頻度を元に行われる。トピックモデルでは、文書情報のデータセットから特定のワードとその「ウェ
+イト（重み） 」の組み合わせから成る「トピック」が多数生成される。各文書は、それぞれ重みづけされた複
+数のトピックの組み合わせで構成できると考える（図1-1） 。各文書を構成するトピックのウェイトに基づいて、
+文章間の差異（類似度）を定量的に評価することが可能である。
+LDA
+Topic 1
+websci
+conference
+germany
+hannover
+social
+computer
+Topic 2
+food
+restaurant
+pizza
+eat
+steak
+cafe
+Topic 1
+sociology
+social
+society
+behavior
+relationship
+quantitative
+Topic 1
+Doc 1
+Doc 2
+Doc 3
+Topic 2 Topic 3
+40%
+50%
+5%
+40%
+10%
+45%
+20%
+40%
+50%
+Collection of
+Documents
+図1-1
+図1-1 　 トピックモデル（Latent Dirichlet Allocation：LDA）の概要
+ト
+ピックモデルでは、トピックを構成するキーワードの組み合わせと、文書を構成するトピックの組み合わ
+せの2段階で文書の内容表現を行う。トピックを介した表現を行うことで、キーワードのみを用いた分類より
+も類似判定に誤りが生じにく くなる。例えば、stem c
+ell（幹細胞）とsolar c
+ell（太陽電池）は、cellとい
+う1ワードのみの分類では類似していると判定され得るが、トピックを用いると、stemとcellを有するトピッ
+クとsolarとcellを有するトピックに分かれ、各トピックのウェイトの多寡から判定を行うことができる。
+トピックモデルによって各文書をトピックの組み合わせとして表現したのち、トピックの共有関係からトピッ
+ク空間における文書間の高次元類似度を求める。そして、多様体学習（Uniform Manif
+old
+Appr
+oximation and P
+rojection）により類似度の表現を2次元に次元削減し、二次元座標上にマッピング
+することで 「俯瞰マップ」 とした。俯瞰マップにおける文書間の距離は文書の内容の差異を表している。概して、
+筆頭トピックの共通する文書が集積して領域（クラスター）を形成する傾向があり、第2、第3のトピックの
+差異により領域内での相対位置が変わる。クラスターや文書の絶対的な位置（座標）には意味は無く、それ
+ぞれの相対的な位置関係のみが重要となる。本調査では、推定されたトピックに基づいて文書をグループ化
+し、トピック内のキーワードの組み合わせなどをもとにラベル付けをした。4 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+調査概要
+1
+
+===== PDF_PAGE 10 =====
+1.5 キーフレーズの取得
+俯瞰マップの作成により、分析対象文書を目視でも100前後のクラスターに分類可能となる。数十万件の
+文書情報の分析においては、1つのクラスターに1000件程度の文書が集積していることとなる。大きな母数
+によるクラスターの分布は、大局的な関係を把握するには有効である一方、より文書数の少ない新興的な技
+術を見つけるには必ずしも適当ではない。
+そこで、文書内のワードの組み合わせである「キーフレーズ」に注目することで、より詳細な技術の分析を
+試みる。本調査のように英語を対象とする場合、1ワードで新興技術が表現されることはほぼ無く、 キーフレー
+ズとして探索することが有効である。キーフレーズを分析対象文書全体から機械的に精度よく抽出するため、
+RAKE（Rapid
+
+Automatic
+
+Keyword
+
+Extraction）を利用した以下の処理を行った。
+1．RAKEによる、1ワードより、複数ワードでの出現比率の高いワードの機械抽出
+2．レマタイザーによる名詞・動詞などの見出し語化
+3．機能語や一般語の除外処理
+2では、名詞、動詞などを単数形や現在形などの基本形に戻す見出し語化（レマタイジング）を行い、表記
+ゆれを少なくする。3では、aやtheのような機能語やWeやgoなどの一般語を除外することで、重要なワー
+ドでキーフレーズが構成されるよう調整する。こうして抽出されるキーフレーズは、文書数が数十万件あれば
+数百万個を超えることが多い。実質的に有効なキーフレーズの数は数桁少ないが、俯瞰マップ上のクラスター
+数をはるかに超える技術候補が取得できる。得られたキーフレーズは後述する成長キーフレーズの探索で使う
+ほか、俯瞰マップ中のクラスターの内容を判定する際に利用することも可能である。
+1.6 成長曲線（ロジスティック関数）回帰による成長可能性判定
+図1-2 　 ロジスティック関数を用いた立ち上がり年の推定
+各技術の今後の成長可能性を判定するため、時間軸に対する文書数の推移について成長曲線 （ロジスティッ
+ク関数）を用いた回帰分析を試みた。ある技術が出現してから成長する過程を考えると、初期には見込みが
+立たないことから関連文書の件数の増加は緩やかであり、その後有望性が認知されたり、競合の参入が続く
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+5CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+調査概要
+1
+
+===== PDF_PAGE 11 =====
+ことで文書数の急激な増加が期待される。さらに時間が経過すると、技術の陳腐化や市場の飽和などにより
+増加が緩やかになる、あるいは減少すると考えられる。この一連の件数推移にロジスティック関数を適用した
+とき（図1-2） 、傾きが最大となる立ち上がり年が将来の年であれば今後成長可能性がありと判定できる。一
+方、立ち上がり年が過去と算出されれば、今後成長の鈍化や停止が予想される。
+さらに、キーフレーズに対して成長可能性判定を適用する際には、
+1）初出年の限定による既知ワードの除外
+2）直近数年における文書数の限定によるノイズワードの除外
+3）算出された立ち上がり年の幅（誤差）の限定による回帰エラーの除去
+を行うことで、成長可能性のある有効なキーフレーズを選択的に取り出した。
+6 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+調査概要
+1
+
+===== PDF_PAGE 12 =====
+2.1 論文情報の俯瞰マップ
+本調査では、論文情報と特許情報を統合した分析を行うことが最終的な目的であるが、論文と特許それぞ
+れで十分な件数を収集しているため、先に論文のみ（2.1）と特許のみ（2.2）の俯瞰マップをそれぞれ作成し、
+構成要素の関係性を概観する。その後、論文・特許の統合分析で不要となる文書の確認を行う。
+まず、ナノテクノロジー・材料科学分野とライフサイエンス・臨床医学分野との融合的な研究開発に関連す
+る論文477,310件について、要約の文章に基づいて俯瞰マップを作成した（図2-1） 。赤破線楕円は、トピッ
+クモデルにおける筆頭トピックが共通する文献をまとめている。さらに赤楕円のキーワードに基づいて、関連
+する上位概念を橙色楕円で示す。各楕円領域のラベルは、以下の情報を順に参考にして付与した（以降の俯
+瞰マップ作成においても同様） ：①トピックのキーワード、②RAKE（Rapid
+Automatic
+Keyword
+Extr
+action）によるキーフレーズ、③タイトル、要約のテキスト。
+バイオイメージング
+バイオセンシング
+デバイス
+幹細胞技術
+細胞死
+生殖・発生
+光合成
+遺伝子編集
+生体分子設計
+遺伝子
+発現解析
+神経伝達
+感染症
+バイオフィルム創傷治療
+がん
+バイオマテリアル
+炎症 光・温熱療法
+図2-1
+図2-1 　 論文情報の俯瞰マップ（全体）
+2 ナノテクノロジー・材料科学×
+ライフサイエンス・臨床医学の俯瞰マップ
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+7CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 13 =====
+俯瞰マップの中心（原点）は、文書データセットの中で最頻出の技術・概念となる。本融合分野の文献情
+報においては、生体分子設計（合成生物学、ケミカルバイオロジー、DNAナノテクノロジーなど）と幹細
+胞技術が中心に位置した。生体に適用される材料やデバイス関係がマップの右側に、疾患や生命現象に関わ
+る情報が左側に配置された。図2-2〜2-5では、集積領域の詳細を、各領域で筆頭トピックに含まれる上位
+5ワード（KW）を添えて示す。
+俯瞰マップ右下・下部（図2-2）には、生体分析やセンシングに関する情報が集積している。 「バイオイメー
+ジング」領域には、蛍光イメージングや各種（高解像）顕微鏡技術を中心に、核磁気共鳴イメージング（MRI）
+や蛍光標識となる量子ドット技術などが含まれる。 「バイオイメージング」から、機能性分子の設計に関わる
+量子計算を経由して、 「生体分子設計」領域につながっている。 「生体分子設計」領域には、ケミカルバイオ
+ロジーに関連する創薬やタンパク質活性制御の技術群が集積している。加えて、“（生体分子を）創る”技術
+としての合成生物学や、DNAナノテクノロジー、ペプチド設計も含まれる。これらは分子プログラミング/分
+子マシン分野にも関連する。右端には、バイオセンサやウェアラブルデバイスなどの「バイオセンシングデバイ
+ス」が集積している。下部（やや左側）には、神経伝達機構を中心に、それに関わるシグナル伝達系や神経
+疾患（アルツハイマー病）が出現している。
+ペプチド
+KW:peptide,helical,proteolytic,vacuole,unilamellar
+DNAオリガミ
+KW:assembly,assemble,cisplatin,folate,folic
+合成生物学
+KW:synthetic,biology,biological,enable,base
+酵素活性
+KW:activity,substrate,exhibit,require,hydroxy
+薬剤スクリーニング
+KW:screen,library,base,virtual,select
+結合親和性
+KW:bind,affinity,preferentially,highly,cerebellum
+受容体
+KW:receptor,agonist,inverse,PLC,key
+カルシウムシグナリング
+KW:activation,Ca2,downstream,messenger,contribute
+神経
+KW:neuron,excitatory,interneurons,dendrite,GABAergic
+イオンチャネル
+KW:current,channel,voltage,venom,future
+アルツハイマー病
+KW:amyloid,alzheimer,cognitive,tau,secretase
+量子ドット
+KW:QDs,ZnS,CdSe,hydrolase,base
+蛍光イメージング
+KW:fluorescence,surgery,base,guidance,sentinel
+量子計算
+KW:experimental,calculation,calculate,theoretical
+カーボンドット
+KW:ion,Hg2,Cu2,stoichiometry,due
+顕微鏡
+KW:resolution,information,spatial,super,limit
+MRI
+KW:contrast,agent,base,relaxivity,highly
+バイオセンサー
+KW:range,biosensor,base,limit,exhibit
+ウェアラブルデバイス
+KW:sensor,wearable,base,work,intelligent
+バイオイメージング
+バイオセンシング
+デバイス
+生体分子設計
+神経伝達
+図2-2
+図2-2 　 論文情報の俯瞰マップ詳細（右下・下部）
+俯瞰マップ右上（図2-3）には、生体に適用される材料や、生体（生物材料）の制御や利用に関する技術
+が集積している。 「バイオマテリアル」領域には、組織工学的技術やそれに用いられるハイドロゲル等の材料、
+人工材料の界面における生体物質との相互作用（タンパク質吸着） 、 さらにはドラッグデリバリー技術（DDS）
+が含まれる。生体内部を制御しようとするDDSに近接して、 その右端には「光・温熱療法」が配置されている。
+右上端には、生物動態の利用や制御に関わる「バイオフィルム」や「創傷治癒」が出現している。
+8 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 14 =====
+大腸菌
+KW:coli,escherichia,indole,auxin,oxygenase
+バイオフィルム
+KW:formation,form,biofilm,biofilms,require
+抗菌性物質
+KW:antibacterial,aureus,antimicrobial,
+staphylococcus,MRSA
+皮膚
+KW:skin,dermal,epidermal,epidermis,UVB
+創傷治癒
+KW:wind,heal,scar,dress,improve
+組織工学
+KW:MSCs,mesenchymal,MSC,stromal,marrow
+ハイドロゲル
+KW:hydrogel,crosslinked,base,form,glutaraldehyde
+DDS
+KW:delivery,load,hydrophobic,base,exhibit
+コラーゲン
+KW:collagen,helix,helical,form,major
+タンパク質吸着
+KW:surface,adsorption,adsorb,biological,work
+光温熱療法
+KW:photothermal,nanoplatform,PTT,PAI,laser
+光線力学的療法
+KW:photodynamic,PDT,singlet,boost,oxygen
+バイオフィルム創傷治療
+バイオマテリアル
+光・温熱療法
+図2-3
+図2-3 　 論文情報の俯瞰マップ詳細（右上）
+腸
+KW:intestinal,intestine,crypt,vault,Lgr5
+糖尿病
+KW:insulin,diabetes,islet,mellitus,T1DM
+多能性幹細胞
+KW:stem,base,undifferentiated,form,limit
+血管
+KW:endothelial,barrier,microvascular,tight,pericyte
+血液脳関門
+KW:brain,osmotic,sporadic,confound,neuroimaging
+オミクスデータ解析
+KW:multi,omics,web,publicly,base
+シングルセルRNAsq
+KW:seq,scRNA,false,outperform,excessive
+シーケンス
+KW:sequence,read,base,generate,similar
+植物
+KW:root,peel,footprint,GUS,symbiosis
+光合成
+KW:antioxidant,photosynthetic,chlorophyll,
+photosynthesis,drought
+アポトーシス
+KW:apoptosis,survivin,YM155,TRAIL,XIAP
+DNA損傷
+KW:damage,strand,depletion,break,ADP
+DNAメチル化
+KW:methylation,epigenetic,CpG,methylated,bisulfite
+妊娠、新生児
+KW:pregnancy,maternal,birth,infant,postnatal
+発現変動遺伝子
+KW:gene,differentially,annotate,highly,validate
+転写因子
+KW:factor,transcription,key,require,similar
+ゲノムインプリンティング
+KW:imprint,parental,H19,isoelectric,maternally
+ヒストン修飾
+KW:histone,mark,integrity,epigenetic,defective
+生殖
+KW:somatic,germ,testis,spermatogenesis,exemplify
+精子
+KW:sperm,reproductive,mammal,fertility,fertilization
+SNP
+KW:locus,SNPs,SNP,haplotype,fund
+ゲノム編集
+KW:CRISPR,Cas9,edit,genome,sgRNA
+RNA編集
+KW:edit,ADAR,require,generate,byproduct
+幹細胞技術細胞死
+生殖・発生
+光合成
+遺伝子編集
+遺伝子
+発現解析
+図2-4
+図2-4 　 論文情報の俯瞰マップ詳細（左下）
+俯瞰マップ左下（図2-4）には、幹細胞技術に関連して、遺伝子発現の解析や調整、操作に関する情報が
+集積している。 「幹細胞技術」領域には、多能性幹細胞と、派生して再現され得る多様な臓器の情報が辺縁
+に存在する。血液脳関門は、図2-2の「神経伝達」領域と近接する。 「遺伝子発現解析」領域には、オミク
+ス解析、 （1細胞）シーケンス解析が含まれる。さらに左側には、 「（植物）光合成」領域を挟んで、ゲノム編
+集・RNA編集などの「遺伝子編集」領域が配置された。細胞の運命は、遺伝子発現の違いで説明されるこ
+とが多いため、 「細胞死」や「生殖・発生」が付近に集積している。 「生殖・発生」領域には、DNAメチル
+化を中核として、ヒストン修飾や転写因子など、エピゲノムに関する情報があるほか、生殖に関連してゲノムイ
+ンプリンティングや妊娠・出生の情報も含まれる。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+9CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 15 =====
+ウイルス
+KW:virus,antiviral,viral,hepatitis,HCV
+ワクチン
+KW:antigen,vaccine,vaccination,base,immunization
+免疫細胞
+KW:specific,CD8,highly,TCR,generate
+lncRNA
+KW:mRNA,mRNAs,lncRNAs,lncRNA,AS1
+miRNA
+KW:miR,YAP1,miRs,aim,MicroRNAs
+肝細胞がん
+KW:HCC,hepatocellular,carcinoma,pilot,unsupervised
+エクソソーム
+KW:exosomes,exosomal,exosome,ultracentrifugation
+がんゲノム
+KW:signature,atlas,TCGA,genome,base
+HNSCC
+KW:neck,HNSCC,HPV,head,squamous
+膵臓がん
+KW:pancreatic,ductal,gemcitabine,MIA,eventual
+CTC
+KW:CTCs,CTC,circulate,ESR1,MBC
+前立腺がん
+KW:prostate,androgen,castration,CRPC,enzalutamide
+リキッドバイオプシー
+KW:EGFR,mutational,antiproliferative,TKI,gefitinib
+マクロファージ
+KW:macrophage,polarization,favor,TAMs,MPS
+炎症
+KW:inflammatory,inflammation,cytokine,
+complication,proinflammatory
+肝線維症
+KW:liver,iPS,hepatic,parenchymal,hepatectomy
+感染症
+がん
+炎症
+図2-5
+図2-5 　 論文情報の俯瞰マップ詳細（左上）
+俯瞰マップ左上（図2-5）には、疾患やその診断に関する情報が集積している。 「がん」領域には、The
+Canc
+er
+
+Genome
+
+Atlas（TCGA）といったがんゲノム研究を始め、各部位のがん、がん診断に利用されるエ
+クソソーム、microRNA、long non-c
+oding RNA
+などの物質やリキッドバイオプシー技術などが含まれる。
+「炎症」領域は、図2-3の「バイオマテリアル」領域とも繋がりが見える。 「感染症」領域はワクチン技術を
+含み、マップ最上端に位置した。
+そのほか、俯瞰マップ辺縁部および中央部で橙色の上位概念で囲わなかった領域について図2-6に示す。
+マップ右下のマイクロ流体デバイスは、生体分析に関わる技術群として集積したと思われる。マップ左上の 「炎
+症」と「がん」の間には、バイオマーカー、代謝、臨床試験など、病態診断に関する情報の集積が認められる。
+そのほか周辺に配置された領域は、中央の研究開発の内容とは関連が低いものと考えられる。
+CAR
+KW:CAR,chimeric,CD19,antigen,CRS
+MMP
+KW:MMP,degeneration,disc,resorption,metalloproteinas
+COVID19
+KW:CoV,SARS,COVID,ACE2,outbreak
+質量分析イメージング
+KW:ionization,MALDI,MSI,desorption,laser
+脊髄損傷
+KW:cord,spinal,SCI,hindlimb,transection
+肺疾患
+KW:lung,pulmonary,identify,COPD,TSP
+細胞外小胞
+KW:EVs,functionally,tether,devise,biological
+バイオマーカー
+KW:biomarkers,biomarker,panel,base,discovery
+血管新生
+KW:VEGF,src,endothelial,vascular,HUVEC
+代謝
+KW:metabolite,metabolomics,prevention,microbiota,base
+膜
+KW:membrane,form,require,similar,facilitate
+臨床試験
+KW:clinical,outcome,biopsy,base,improve
+p53
+KW:p53,TP53,dsRNA,MDM2,suppressor
+白血病
+KW:plasma,acute,myeloid,AML,pancreatitis
+筋肉
+KW:muscle,skeletal,myoblasts,wildtype,myogenesis
+ミトコンドリア
+KW:exposure,mitochondrial,mitochondrion,disturb,BDE
+スプライシング
+KW:alternative,splice,isoforms,intron,abnormally
+マイクロ流体デバイス
+KW:microfluidic,simple,base,require,generate
+心臓疾患
+KW:cardiac,heart,leave,ventricular,systolic
+モータータンパク質
+KW:motor,kinesin,arrange,robotic,intention
+リポソーム
+KW:liposome,nanovesicle,TSL,multivesicular,micrograp
+SERS
+KW:raman,SERS,spectrometer,scatter,base
+ADC
+KW:conjugate,conjugation,linker,cleavable,highly
+HIV
+KW:HIV,immunodeficiency,CTD,gp120,antiretroviral
+目
+KW:retinal,pigment,retina,RPE,hESCs
+DNAバーコーディング
+KW:barcoding,base,taxon,COI,controversial
+マラリア
+KW:parasite,malaria,plasmodium,falciparum,gondii
+バイオイメージング
+バイオセンシング
+デバイス
+幹細胞
+技術
+細胞死
+生殖・発生
+光合成遺伝子
+編集
+生体分子設計
+遺伝子
+発現解析
+神経伝達
+感染症
+バイオフィルム創傷治療
+がん
+バイオマテリアル
+炎症
+光・温熱療法
+図2-6
+図2-6 　 論文情報の俯瞰マップ詳細（辺縁部、その他）
+10 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 16 =====
+図2-2〜 2-6の確認から、明確なノイズ文書はないと判断し、全ての論文情報を論文・特許の統合分析に
+用いることとした。
+2.2 特許情報の俯瞰マップ
+続いて、当該融合分野の研究開発に関連する特許198,093件について、要約の文章に基づいて俯瞰マップ
+を作成した（図2-7） 。赤破線楕円は、トピックモデルにおける筆頭トピックが共通する特許をまとめたもので
+ある。一般的なキーワードで集積した可能性のある領域は青破線で示した。さらに赤楕円のキーワードに基
+づいて判断した、上位概念のまとまりを水色楕円で示す。
+特許情報の俯瞰マップでは、中心がナノ材料となり、医療に関する材料技術が右側に、医療診断や分析に
+用いるデバイス類が下部に、治療や創薬に関する技術が左側や上部に配置された。各集積領域の詳細を、筆
+頭トピックに含まれる上位5ワード（KW）とともに図2-8〜 2-12に示す。
+創傷治癒プロセス
+人工血管
+MRI
+薬剤・創薬
+医用器材
+医用基材
+バイオマーカー
+診断技術
+ナノ材料
+骨修復・
+再生技術
+画像診断技術
+マイクロ流体技術
+細胞治療・
+遺伝子治療
+図2-7
+高分子・脂質材料
+図2-7 　 特許情報の俯瞰マップ（全体）
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+11CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 17 =====
+ブロック共重合体
+KW:block,form,hydrogenate,olefinic,type2
+生体適合性ポリマー
+KW:polymer,capable,meltable,COP,thermogelling
+ポリマーナノ粒子
+KW:nanoparticles,functionalized,nanospheres,MNPs,functionalize
+膜材料
+KW:membrane,major,contaminant,relate,nitrocellulose
+コアシェル
+KW:shell,sulfhydryl,biomacromolecules,ZnS,affixable
+複合ナノ材料
+KW:composite,gold,colloidal,relate,GBP
+粒子
+KW:particle,acoustophoresis,fluctuate,perm,DAN
+金属ナノ粒子
+KW:metal,form,relate,plasmons,EMI structure
+KW:structure,coaxial,foramen,circRNAs,octahedron
+表面
+KW:surface,form,relate,capable,PDMS
+フィルム
+KW:film,form,detachable,relate,polysiloxane
+基板
+KW:substrate,form,sacrificial,relate,multiplicity
+ステント
+KW:stent,elute,possibility,thrombus,restenosis
+カテーテル
+KW:catheter,lumen,inflatable,aluminum,inflation
+portion
+KW:portion,alter,mechanically,peel,intersect
+distal
+KW:distal,proximal,elongate,tubular,thereon
+member
+KW:member,defect,advance,placement,occlude
+support
+KW:support,clean,debris,capable,recline
+縫合糸アンカー
+KW:anchor,suture,thread,securely,form
+element
+KW:element,spinal,form,pedicle,spinous
+針
+KW:needle,hollow,biopsy,handheld,slidably
+plate
+KW:plate,planar,form,cage,relate
+医用基材
+図2-8
+ナノ材料
+医用器材
+高分子・
+脂質材料
+図2-8 　 特許情報の俯瞰マップ詳細（右上①）
+キトサン
+KW:derivative,chitosan,microbial,relate,neurodegeneration
+幹細胞調製
+KW:factor,growth,relate,iPS,undifferentiated
+atom, group
+KW:group,relate,form,capable,NO2
+細菌
+KW:produce,relate,strain,capable,form
+遺伝子工学
+KW:mutation,maintain,organism,medium,propagate
+肝疾患
+KW:liver,compensate,mesenchyme,glycogen,GP73
+徐放性医薬品
+KW:release,compliance,senile,sustainedly,goserelin
+漢方薬
+KW:medicine,chinese,relate,curated,BLAST
+コーティング
+KW:coat,form,underlie,foul,biofouling
+solution
+KW:solution,add,form,radiopaque,precipitate
+分化誘導
+KW:induce,differentiation,embryonic,relate,capable
+ハイドロゲル
+KW:hydrogel,obtainable,polar,form,relate
+3Dプリント
+KW:print,ink,multilayered,bioink,relate
+valve
+KW:valve,invasive,minimally,annulus,mitral
+component
+KW:component,panel,form,capable,darker
+マスク
+KW:open,mask,bridge,form,squeegee
+エレクトロスピニング
+KW:fiber,bundle,form,chop,viscose
+side
+KW:side,align,form,perimeter,waterproof
+高分子・
+脂質材料
+医療器材
+図2-9
+医用基材
+ナノ材料
+図2-9 　 特許情報の俯瞰マップ詳細（右上②）
+俯瞰マップ右上（図2-8および図2-9）には、医療に関連する様々な材料技術が集積している。 「ナノ材料」
+領域には無機ナノ粒子や複合ナノ材料が含まれる。 「高分子・脂質材料」領域には、生体適合性ポリマーや
+膜材料、高分子修飾ナノ粒子などが含まれ、付近にはコーティングやエレクトロスピニングなど関連する加
+工技術や、ハイドロゲル材料技術が出現している（図2-9） 。 「医用基材」領域には、フィルム材料や基板材
+料など生体試料を接して使われる材料技術が存在する。さらに右側の 「医用基材」 領域には、 ステントやカテー
+テルなど、医療器具に用いられる部材が集積している。
+俯瞰マップ右下（図2-10）には、まず「画像診断技術」領域として医療診断に用いる造影技術が集積し
+ている。光学装置を中心に、蛍光プローブやX線・放射線・超音波造影装置も含まれる。さらに下部の「マ
+イクロ流体技術」領域には、マイクロ流路やそのデバイスを用いた生体試料の検出・分析技術が集積している。
+また右端には、図2-8の「医用基材」領域と近接して骨修復・骨再生に関わるインプラントなどの材料技術
+が配置された。
+12 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 18 =====
+俯瞰マップ左上（図2-11）では、上部に化合物医薬品を含む「薬剤・創薬」領域が集積しており、その
+直下にはDDS関連技術が「高分子・脂質材料」領域（図2-8）と挟まれるかたちで配置されている。 DDS
+の左側には（医療応用の）接着剤技術も存在する。左上部には、miRNAなどのバイオマーカーを用いた臨
+床診断技術群「バイオマーカー診断技術」が出現している。
+俯瞰マップ左下（図2-12）の中央よりには、 「画像診断技術」 （図2-10）に近接して「MRI」領域が配置
+されている。MRI造影剤は、 「ナノ材料」 （図2-8）にも関連する。下部には、ウェアラブルデバイスによる生
+体情報のセンシング技術が大きく集積している。さらに左端には、キメラ抗原受容体（CAR）やゲノム編集
+技術などを含む「細胞治療・遺伝子治療」領域が配置されている。
+図2-8〜 2-12の各集積領域の確認から、図2-10に示される電池に関する特許1,117件をノイズ文書とし
+て除去し、最終的に特許196,976件を次の論文・特許の統合分析に用いることとした。
+蛍光プローブ
+KW:fluorescent,monolayer,capable,XDR,BHQ2
+X線装置
+KW:ray,node,periodically,preferential,scintillator
+超音波造影剤
+KW:ultrasonic,stable,photosensitizer,cavitation,fundamental
+光学装置
+KW:light,emit,angle,illuminate,nest
+放射線装置
+KW:radiation,emit,emitter,removably,proportional
+検体検出
+KW:sample,indication,relate,subassembly,rock
+liquid
+KW:liquid,form,plural,centrally,unidirectionally
+マイクロ流体チャネル
+KW:channel,micro,fluidic,form,jacket
+マイクロ流体デバイス
+KW:fluid,collection,operatively,fluidly,form
+軟骨
+KW:article,pad,cartilage,impairment,chondrocytes
+骨
+KW:bone,formation,cranial,defect,osteogenesis
+インプラント
+KW:implant,tool,relate,form,analytics
+カーボン量子ドット
+KW:carbon,nanotube,update,form,heteroatom
+電池
+KW:battery,second,relate,mAh,runaway
+加熱・冷却装置
+KW:temperature,heat,ambient,humidity,form
+水
+KW:water,form,dispersible,relate,electrolyzing
+間葉系幹細胞
+KW:stem,mesenchymal,relate,form,gingival
+動物モデル
+KW:human,relate,form,vocalization,px459
+免疫細胞
+KW:immune,effector,kill,relate,TME
+AML
+KW:acute,bispecific,leukemia,lymphoma,myeloid
+細胞外小胞
+KW:matrix,extracellular,relate,form,uniformly
+植物
+KW:plant,trait,sterility,impatiens,petunia
+マイクロ流体技術
+骨修復・
+再生技術画像診断
+技術
+図2-10
+図2-10 　 特許情報の俯瞰マップ詳細（右下）
+ECM
+KW:matrix,extracellular,relate,form,uniformly
+創傷治癒
+KW:wind,relate,discontinuous,resuscitation,chemotactic
+化合物医薬
+KW:pharmaceutical,relate,pharmaceutically,acceptable,form
+がん治療
+KW:treatment,inhibitor,prevention,capable,theranostic
+agent
+KW:agent,relate,capable,hyaluronan,swellable
+active
+KW:active,ingredient,agrochemical,microparticulate,hangover
+miRNAマーカー
+KW:miR,miRNA,hsa,microRNA,miRNAs
+臨床診断
+KW:diagnosis,relate,trans,esophagus,capable
+大腸がんバイオマーカー
+KW:carcinoma,colorectal,discriminate,adenoma,raf
+腎障害バイオマーカー
+KW:suffer,renal,regimen,suspect,urine
+血管
+KW:blood,flow,clot,capable,hemodynamic
+チューブ
+KW:tube,expand,kidney,drain,form
+シアニン色素
+KW:dye,Her2,oxazine,fibronectin,cyanine
+架橋剤
+KW:link,cross,form,lade,linkable
+level
+KW:level,symptom,protease,relate,diluent
+コロナウイルス
+KW:diagnose,SARS,CoV,relate,coronavirus
+DDS
+KW:delivery,relate,form,dendrimer,micellar
+接着剤
+KW:adhesive,form,relate,solventless,dihydroxybenzene
+酵素
+KW:activity,relate,enzymatic,tau,transformant
+漢方素材
+KW:alleviate,share,radix,wolfberry,astragalus 組織足場材料
+KW:scaffold,form,augmentation,luminance,urethra
+生理活性物質
+KW:functional,substance,tune,form,capable
+低分子化合物
+KW:small,molecular,relate,capable,GLA
+創傷治癒プロセス
+バイオマーカー
+診断技術
+創傷治癒プロセス
+バイオマーカー
+診断技術
+人工血管
+薬剤・創薬
+図2-11
+図2-11 　 特許情報の俯瞰マップ詳細（左上）
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+13CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 19 =====
+ADC
+KW:conjugate,relate,longer,claudin,form
+CAR
+KW:bind,antigen,CAR,relate,capable
+ペプチド
+KW:peptide,fusion,relate,excise,shorter
+ポリペプチド
+KW:polypeptide,VEGF,relate,FGFR2,chemotaxis
+target
+KW:target,micelle,form,capable,cytoplasm
+シーケンス、PCR
+KW:sequence,resistance,list,capable,kozak
+ゲノム編集
+KW:CRISPR,transdermal,antiviral,crRNA,regularly
+ノックアウトマウス
+KW:pathogen,mouse,knockout,tuberculosis,poorly
+ウイルス
+KW:virus,reserve,oncolytic,relate,tolerate
+MRI装置
+KW:magnetic,resonance,continuously,magnetoresistance,pyramid
+MRI造影剤
+KW:contrast,gadolinium,porphyrin,form,halide
+エクソソーム
+KW:exosome,herpes,simplex,HSV,ICP
+region
+KW:region,filter,form,photoluminescent,tint
+ウェアラブルデバイス
+KW:information,acquire,visual,capacitance,capable
+process
+KW:process,production,producer,stock,fractionation
+生物学的材料
+KW:biological,behavior,relation,unknown,arbitrary
+超解像イメージング
+KW:resolution,super,rotation,simpler,equation
+骨セメント
+KW:phosphate,silicate,gradual,tricalcium,borate
+step
+KW:step,calculate,suicide,judge,equidistant
+MRI
+細胞治療・
+遺伝子治療
+図2-12
+図2-12 　 特許情報の俯瞰マップ詳細（左下）
+2.3 論文・特許統合解析による俯瞰マップ
+低分子阻害剤
+蛍光
+プローブ
+バイオ分析
+診断
+ウェアラブル
+デバイス
+バイオセンサ
+線維症
+再生医療・
+幹細胞治療
+がん
+イメージング
+バイオマテリアル
+''6
+遺伝子発現機構
+ゲノミクス・
+トランスクリプトミクス
+図2-13 　 論文・特許情報の俯瞰マップ（全体）
+2.1および2.2で概観把握とノイズ情報の除去を行った論文477,310件、特許196,976件、合計674,286
+件について、これらを統合した俯瞰マップを作成した（図2-13） 。また、俯瞰マップ中の論文情報のみおよ
+び特許情報のみのプロットを図2-14に示す。赤破線楕円は、トピックモデルにおける筆頭トピックが共通す
+る文献をまとめている。さらに赤楕円のキーワードに基づいて、関連する上位概念を紫色楕円で示す。
+ 論文、
+特許
+ともに全領域に分布しているが、特許は中央の「ウェアラブルデバイス」領域で特に集積が見られ、俯
+14 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 20 =====
+瞰マップ全体の中核的な技術群となっていることが分かる。一方、マップ左側の「がん」領域や「遺伝子発
+現機構」領域は、特許が少なく、論文優勢となっている。
+図2-13の領域をさらに4つの上位概念でまとめた俯瞰マップを図2-15に示す。この大分類では、マップ
+中央および右側の「計測・分析デバイス」は特許が優勢、 マップ左側の「医療」では論文が優勢となっている。
+「基礎生命科学」 のうち、右側の 「ゲノミクス・トランスクリプトミクス」 では特許も多く存在するが、左側の 「遺
+伝子発現機構」領域は論文が主となっている。 「医用材料工学」には論文と特許がともに多く含まれる。即ち、
+本融合分野の俯瞰マップでは、特許が優勢の「計測・分析デバイス」が中核となり、それを利用する研究開
+発が周囲に配置されたと見ることができる。続いて、各大分類に含まれる集積領域の詳細を図2
+-15〜2-21
+に示す。
+特許のみ
+蛍光
+プローブ
+バイオ分析
+診断
+バイオセンサ
+線維症
+再生医療・
+幹細胞治療
+がん
+イメージング
+バイオマテリアル
+''6
+遺伝子発現機構 ゲノミクス・
+トランスクリプトミクス
+ウェアラブル
+デバイス
+低分子阻害剤
+論文のみ
+蛍光
+プローブ
+バイオ分析
+診断
+バイオセンサ
+線維症
+再生医療・
+幹細胞治療
+がん
+イメージング
+バイオマテリアル
+''6
+遺伝子発現機構 ゲノミクス・
+トランスクリプトミクス
+ウェアラブル
+デバイス
+低分子阻害剤
+D E
+図2-14 　 論文・特許情報の俯瞰マップ ((a) 論文のみプロット、(b) 特許のみプロット)
+「基礎生命科学」 （図2-16）には、DNAの解析やRNA編集技術などの「ゲノミクス・トランスクリプトミ
+クス」領域と、DNAメチル化やヒストン修飾などエピゲノムや転写調節に関する情報が集積した「遺伝子発
+現機構」領域が含まれる。さらに、 「低分子阻害剤」領域には、IBD、HCVなどに対する阻害剤が、 「診断」
+領域には、メタボローム解析や予後予測に関する情報が集積した。
+「医療」 （図2
+-17）は、 「再生医療・幹細胞治療」領域と「がん」領域の主に2つの領域から成る。 「再生
+医療・幹細胞治療」領域には、iPS細胞、ES細胞、間葉系幹細胞などのキーワードを中心に、成長因子や
+再生組織に関する情報が配置されてた。 「がん」領域には、腺がんを中心に各組織のがんやEGFR（上皮成
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+15CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 21 =====
+長因子受容体） 、がん免疫療法などが含まれる。 「線維症」領域も形成され、腎障害と肝線維症に分かれた。
+またやや離れて「バイオセンサ」領域が配置され、カーボンナノチューブなどを利用して、グルコースなどの
+生体由来物質を検出するセンサが集積した。
+低分子阻害剤
+蛍光
+プローブ
+バイオ分析
+診断
+ウェアラブル
+デバイス
+バイオセンサ
+線維症
+がん
+イメージング
+バイオマテリアル
+''6
+遺伝子発現機構
+医療
+基礎生命科学
+医用材料工学
+ゲノミクス・
+トランスクリプトミクス
+再生医療・
+幹細胞治療
+計測・分析
+デバイス
+図2-15 　 論文・特許情報の俯瞰マップ（４つの大分類）
+「計測・分析デバイス」 （図2-18）では、 「イメージング」が広い領域を占めており、光源やレーザーを中心
+として、蛍光イメージングや光音響イメージング、SERS（表面増強ラマン散乱）イメージング、PET、MRI
+などが集積した。 「バイオ分析」領域には、右側にマイクロ流体デバイスに関する情報が集積しており、特に
+特許が多い。左側には、NMR（核磁気共鳴）や錯体・複合体、リガンド結合など、生体物質の構造や機能
+の解明に関わる情報が論文優勢で出現している。 「ウェアラブルデバイス」領域には、ウェアラブルデバイス、
+モニタリング、モーションセンサや圧力センサなどの物理センサが集積する。 「蛍光プローブ」領域には、アミ
+ノ酸を標的にした蛍光プローブや量子ドットが含まれた。
+「医用材料工学」は、 「バイオマテリアル」と「DDS」の２つの領域に大きく分けられる。 「バイオマテリアル」
+領域（図2-19）の右側は特許が多く、ステントなどの医療器具の部材や、生体用接着剤やフィルムなどの基
+16 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 22 =====
+材など集積した。左側は論文が多く、ハイドロゲル、3Dプリンティング、骨形成など、組織工学に関連する
+材料や組織構築技術などが配置された。 「DDS」領域（図2-20）は、右側が論文優勢で、金属ナノ粒子、
+化学療法剤、がん治療、siRNAなどに分かれた。左側には、ミセル、ブロックコポリマー、生分解性ポリマー、
+マイクロ流路などナノ粒子の材料や製造法に関する情報が集積した。
+mRNA、翻訳
+KW:mRNA,mRNAs,translational,transcribe,dsDNA
+酸化ストレス、ROS
+KW:stress,ROS,podocytes,desiccation,CSS
+RNA編集
+KW:acid,edit,immunotherapeutic,napDNAbp,form
+遺伝子系統、DNAバーコード
+KW:genus,phylogeny,cite,overestimate,SSU
+ゲノム、トランスクリプトーム
+KW:genome,transcriptome,endonuclease,illumina,KEGG
+DNA損傷、コメットアッセイ
+KW:damage,quantitatively,electrophoresis,invert,qualitatively
+DNAメチル化
+KW:methylation,chromatin,CpG,immunoprecipitation,TILs
+シーケンス
+KW:sequence,substitution,list,form,AAA
+ヒストン脱アセチル化酵素
+KW:inflammatory,histone,deacetylase,MEK,nucleosomes
+転写因子
+KW:transcription,carbohydrate,TFs,RAN,covid
+DNA鎖
+KW:site,strand,double,form,colorimetric
+EZH2（ヒストンメチル化酵素）
+KW:epigenetic,BMP,notch,subgroup,DEGs
+細菌
+KW:strain,bacterial,delta,UDP,pili
+ナノポアシーケンス
+KW:nanopore,tether,confinement,nanochannel,hip
+遺伝子発現と疾患
+KW:gene,survival,poor,powerful,interestingly
+Hippoシグナル伝達
+KW:pathway,genomic,alter,attribute,transcriptomic
+神経膠芽腫、甲状腺がん、阻害剤
+KW:glioblastoma,doxorubicin,thyroid,PI3K,sarcoma
+キナーゼ阻害剤
+KW:kinase,detectable,phosphatase,akt,proteolytic
+HCV（C型肝炎ウイルス）、阻害剤
+KW:inhibitor,HCV,p38,naive,topoisomerase
+IBD（炎症性腸疾患）、阻害剤
+KW:receptor,interferon,bowel,colitis,IBD
+神経
+KW:central,neuron,hub,responsible,optogenetic
+予後予測、MMP（マトリックスメタロプロテアーゼ）
+KW:kit,prognosis,prediction,transcript,ovarian
+メタボロミクス
+KW:small,metabolite,familial,metabolomes,upregulator
+ゲノミクス・
+トランスクリプトミクス
+診断
+遺伝子発現機構
+低分子阻害剤
+図2-16
+図2-16 　 論文・特許情報の俯瞰マップ詳細（基礎生命科学）
+腎障害
+KW:renal,suffer,urine,regimen,suspect
+肝線維症
+KW:liver,hepatic,methyltransferase,glycogen,Smad3
+神経再生
+KW:nerve,follicle,crest,neurogenesis,neuromodulation
+マクロファージ
+KW:macrophage,murine,glycosylation,avenue,mannose
+エクソソーム
+KW:exosomes,quantify,serve,microvesicles,determinant
+膵島、再生医療
+KW:MSCs,islet,TAT,circ,CD63
+iPS細胞、ES細胞
+KW:induce,differentiation,embryonic,originate,trophoblast
+内皮細胞
+KW:endothelial,representation,corneal,endothelium,dissect
+幹細胞、間葉系幹細胞
+KW:stem,mesenchymal,form,osteoclast,hMSC
+動物モデル
+KW:human,animal,interestingly,SIRPa,corroborate
+成長因子、幹細胞
+KW:factor,growth,iPS,ascorbic,devoid
+腎細胞がん
+KW:carcinoma,oncogenic,downregulated,ELISA,ccRCC
+頭頸部扁平上皮がん、メラノーマ
+KW:melanoma,negatively,squamous,HNSCC,PTEN
+神経膠腫（グリオーマ）
+KW:glioma,vascularization,resect,UCNPs,AS1
+がん免疫療法、免疫チェックポイント阻害剤
+KW:immune,effector,kill,TME,scFv
+肝細胞がん
+KW:HCC,leukocyte,subtype,ailment,homologue
+がん免疫療法、ワクチン
+KW:antigen,neoantigen,neoantigens,demyelinate,TAAs
+腺がん
+KW:adenocarcinoma,TCGA,LUAD,calmodulin,alkoxide
+乳がん
+KW:breast,table,TNBC,cone,bowl
+大腸がん
+KW:colorectal,CRC,adenoma,YY1,CDH3
+EGFR（上皮成長因子受容体）
+KW:EGFR,glycan,biotechnology,PFKFB3,sequencer
+インフルエンザウイルス、RSウイルス
+KW:respiratory,SARS,influenza,illness,LAMP
+肺線維症、肺がん
+KW:lung,pulmonary,render,COPD,obstructive
+再生医療・
+幹細胞治療
+がん
+心筋梗塞、幹細胞
+KW:pulse,cardiac,remodel,ventricular,constriction
+カーボンナノチューブ
+KW:carbon,nanotube,form,superhydrophobic,polyimide
+グルコースバイオセンサー
+KW:glucose,diabetic,disposal,GOx,CGM
+バイオセンサー
+KW:biosensor,methoxy,horseradish,GCE,nanoplasmonic
+バイオセンサ 線維症
+図2-17
+図2-17 　 論文・特許情報の俯瞰マップ詳細（医療）
+そのほか、俯瞰マップ辺縁部には、中心的な研究開発とは関連性が低い、あるいは新興的で特許が少なく
+論文中心である領域が独立して配置されたと考えられる。上部（図2-20）には、光合成、ウイルス感染、
+miRNA、 ゲノム編集技術、質量分析イメージングが出現している。マップの左右辺縁部 （図2-2 1 ）には 、オー
+トファジー、老化、SARS-CoV-2、バイオフィルムなどが配置された。マップ下部（図2-22）には、1細胞
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+17CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 23 =====
+RNAシーケンス、ADC（抗体薬物複合体） 、細胞外小胞、CAR（キメラ光源受容体） 、CTC（循環腫瘍細胞）
+などが配置された。
+ウェアラブルデバイス、モニタリング
+KW:monitor,wearable,physiological,radio,caregiver
+リアルタイム観測
+KW:time,real,experimental,DR5,viewpoint
+物理センサー
+KW:sensor,locomotion,piezoresistive,RhD,clench
+ハイパースペクトルイメージング
+KW:resolution,tunable,hyperspectral,LEDs,broadband
+顕微鏡
+KW:microscopy,depletion,aberration,contactless,multiphoton
+造影剤
+KW:contrast,gadolinium,instability,SLNs,vascularity
+PET、MRI
+KW:MRI,PET,positron,FDG,radiochemical
+光音響イメージング
+KW:ultrasound,transducer,photoacoustic,intravascular,acoustically
+血液脳関門、脳組織
+KW:brain,penetration,GFAP,transcytosis,atraumatic
+光源
+KW:light,source,visible,excite,form
+レーザー
+KW:laser,femtosecond,SHG,brillouin,nanosecond
+光ファイバー
+KW:optical,angle,illuminate,nest,illuminator
+SERS（表面増強ラマン散乱）イメージング
+KW:scatter,raman,capsule,functionalization,spectroscopy
+グラフェン量子ドット
+KW:graphene,stream,GQDs,viscous,moir
+SPR（表面プラズモン共鳴）
+KW:surface,couple,adjacent,form,SPR
+基材
+KW:substrate,flexible,form,electromechanical,switchover
+MRI造影剤、ナノ粒子
+KW:magnetic,resonance,Gd3,form,relaxometry
+蛍光イメージング
+KW:fluorescence,fluorescent,form,bpy,dialdehyde
+生体サンプル、マイクロ流体デバイス
+KW:sample,reliance,boat,subsamples,In1
+マイクロ流体、分注
+KW:micro,fluidic,graphic,aliquoting,unidirectionally
+マイクロ流体チップ
+KW:microfluidic,mini,MPs,microchamber,neurites
+無細胞タンパク質合成
+KW:reaction,synthesis,form,semipermeable,nucleophile
+錯体、複合体
+KW:complex,bond,form,partner,adopt
+マイクロ流体デバイス、フローサイトメーター
+KW:flow,sampler,independence,cytometers,laminarly
+NMR（核磁気共鳴）
+KW:dynamic,spectroscopy,fit,NMR,oscillation
+アミノ酸、蛍光プローブ
+KW:radical,straight,lys,phe,cys
+量子ドット、蛍光プローブ
+KW:QDs,ZnS,bioconjugate,InP,InAs
+リガンド結合
+KW:bind,form,fibronectin,unbind,IC50
+バイオアッセイ
+KW:assay,bio,driver,accuracy,backend
+血液、マイクロ流体デバイス
+KW:blood,clot,passageway,hemodynamic,MRA
+ウェアラブル
+デバイス
+イメージング
+蛍光
+プローブ
+バイオ分析
+図2-18
+図2-18 　 論文・特許情報の俯瞰マップ詳細（計測・分析デバイス）
+インプラント
+KW:implant,implantation,palatal,prosthetics,alloplastic
+骨形成、骨再生
+KW:bone,formation,osteogenesis,morphogenetic,morphogenic
+コーティング
+KW:coat,underlie,form,foul,biofouling
+リン酸カルシウムセメント、骨再生
+KW:phosphate,cytocompatibility,metastable,form,multiphase
+フィルム
+KW:film,detachable,polysiloxane,polysiloxanes,metallize骨組織工学、生体模倣足場
+KW:scaffold,biomimetic,proper,mimetic,topography
+生体活性ガラス
+KW:glass,bioactivity,reticulate,coverslips,nanocapillaries
+生体用接着剤
+KW:adhesive,void,spatula,therebetween,eighty
+軟骨再生
+KW:cartilage,impairment,chondrogenic,laryngeal,junctional
+ファイバー
+KW:fiber,asbestos,hemp,flax,multicore
+皮膚、化粧品
+KW:skin,form,vitiligo,frog,polysorbate
+コラーゲン、細胞外マトリックス
+KW:collagen,hemostatic,mandibular,vulgaris,cranium
+ゲル、ヒアルロン酸
+KW:gel,hyaluronic,form,nanofibers,supplemental
+3Dバイオプリンティング
+KW:print,bioprinting,bioink,bioprinted,bioprinter
+ハイドロゲル、組織工学
+KW:hydrogel,swell,polar,form,obtainable
+ステント
+KW:stent,strut,attract,introducer,retractableシルクフィブロイン
+KW:silk,fibroin,crystallinity,DAC,IKK
+カテーテル
+KW:catheter,port,detachably,inflation,coaxially
+バイオマテリアル
+図2-19
+図2-19 　 論文・特許情報の俯瞰マップ詳細（医用材料工学①）
+図2-23には、俯瞰マップを格子（grid）に分割して、各格子内の論文/特許比の偏差値をプロットしたマッ
+プを示す。格子内の点は、文献の割合が高い格子ほど暖色、低い格子ほど寒色としている。特許の割合が相
+対的に高く、産業利用の割合が高いと考えられる領域（青色）は俯瞰マップ中央付近に多く、ウェアラブル
+デバイス、 マイクロ流体デバイス、基材、生体用接着剤などである。そのほか多くの領域は、 まだ産業化に至っ
+ていない、あるいは基礎科学研究として取り組まれる性格が強いと考えられる。
+18 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 24 =====
+ナノ粒子、DDS
+KW:nanoparticles,tracer,favorable,manganese,modal
+金属ナノ粒子
+KW:NPs,MoS2,tris,HCl,iNKT
+生分解性ポリマー
+KW:polymer,actuator,steer,amphiphile,manipulable 薬物放出、DDS
+KW:release,sustain,form,pharmacokinetics,peri
+化学療法剤、xenograftモデル
+KW:chemotherapeutic,xenograft,endometrial,contemplate,sensitize
+ブロックコポリマー、DDS
+KW:copolymer,triblock,form,rheological,PEO
+デンドリマー、DDS
+KW:dendrimer,paclitaxel,PTX,folate,dendrimers
+ミセル、DDS
+KW:micelle,multidrug,biorecognition,form,anaesthetic
+がん治療、DDS
+KW:delivery,solar,transdermal,dermatitis,atopic
+siRNA
+KW:viability,tyrosine,siRNA,electroporation,RAS
+リポソーム、DDS
+KW:liposome,pancreatic,mortality,neuroendocrine,poison
+脂質二重層、脂質膜
+KW:lipid,instance,bilayer,form,ionizable
+細胞膜
+KW:membrane,metalloprotease,microdomains,MT1,microgravity
+DDS
+miRNA
+KW:miR,miRNA,miRNAs,hsa,osteoarthritis
+創傷治癒
+KW:wind,heal,dress,occlusive,whilst
+ゲノム編集
+KW:CRISPR,gRNA,antiviral,regularly,crRNA
+TGF-β
+KW:TGF,clinically,IGF,FISH,cox
+質量分析イメージング
+KW:mass,spectrometry,translate,ionization,MALDI
+ジカウイルス
+KW:virus,verify,ZIKV,VLP,VLPs
+光合成
+KW:plant,leaf,adaptive,photosynthesis,microspore
+骨格筋、筋肉再生
+KW:muscle,actin,contraction,prompt,myosin
+HIV（ヒト免疫不全ウイルス）
+KW:HIV,immunodeficiency,stochastic,cytosolic,retroviral
+粒子、マイクロ流路
+KW:particle,incorporate,spherical,form,variously
+図2-20
+図2-20 　 論文・特許情報の俯瞰マップ詳細（医用材料工学②、上辺縁部）
+前立腺がん
+KW:prostate,ablation,urinary,gland,ablate
+ECL（電気化学発光）
+KW:ECL,stamp,CQDs,walker,PFO
+白血病
+KW:leukemia,myeloid,AML,STAT3,urethane
+腱再生
+KW:injury,tendon,relax,lubricate,fade
+老化
+KW:age,complement,retinopathy,neovascular,secretin
+カルシウムシグナリング
+KW:Ca2,channelrhodo,Mg2,WS2,oncoprotein
+漢方薬
+KW:medicine,chinese,ineffective,spiny,indian
+オートファジー
+KW:autophagy,neutrophil,kDa,proteasome,earlier
+NAFLD（非アルコール性脂肪性肝疾患）
+KW:fatty,GPCR,NASH,indocyanine,steatohepatitis
+筋ジストロフィー症、糖尿病
+KW:diabetes,parkinson,muscular,dystrophy,synuclein
+ATP
+KW:ATP,adenosine,nanovesicles,glycolysis,triphosphate
+廃水、下水処理
+KW:treatment,recycle,utilization,form,sludge
+SARS-CoV-2
+KW:CoV,inhibitory,coronavirus,reductase,metalloproteinase
+抗菌、バイオフィルム
+KW:prove,aureus,staphylococcus,pseudomonas,aeruginosa
+電磁放射線
+KW:radiation,electromagnetic,emitter,ionise,disinfectant
+ペプチド
+KW:peptide,SEQ,form,cyclotide,cope
+カーボンドット
+KW:CDs,economical,cantaloupe,MnO2,smartphones
+結晶
+KW:crystal,photonic,form,electrophysiology,CD147
+変異、がん
+KW:mutation,organism,ctDNA,SAM,exome
+蛍光
+プローブ
+バイオ分析
+診断
+ウェアラブル
+デバイス
+線維症
+再生医療・
+幹細胞治療
+バイオマテリアル
+DDS 網膜
+KW:retinal,partial,progress,retina,untargeted
+イメージング
+低分子
+阻害剤
+がん
+遺伝子発現機構
+バイオ
+センサ
+ゲノミクス・
+トランスクリプトミクス
+図2-21
+図2-21 　 論文・特許情報の俯瞰マップ詳細（左右辺縁部）
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+19CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 25 =====
+液滴、マイクロ流体システム
+KW:droplet,circuitry,microwave,LOC,bulky
+細胞外マトリックス、ポリマー
+KW:matrix,extracellular,form,uniformly,intercellular
+位相差顕微鏡
+KW:phase,morphology,form,interferometric,coalescence
+X線
+KW:ray,node,upregulated,adaptation,preferential
+ミトコンドリア、蛍光イメージング
+KW:mitochondrial,maintenance,antioxidant,mitochondrion
+架橋
+KW:link,cross,osteogenic,orthopedic,RGD
+塩
+KW:relate,salt,minute,closely,form
+分子モーター
+KW:drive,joint,motor,sens,torque
+p53
+KW:p53,architecture,abnormality,crack,PKC
+アミロイド、認知症
+KW:administer,formula,amyloid,dementia,form
+ポリペプチド
+KW:polypeptide,H2O,chemotaxis,neuropilin,FGFR2
+シングルセルRNAシーケンス
+KW:throughput,seq,imprint,microchannels,scRNA
+E coli
+KW:coli,escherichia,withdrawal,periplasmic,O157
+精子
+KW:geometry,sperm,restrict,confine,subpopulation
+ADC（抗体薬物複合体）
+KW:conjugate,claudin,CD70,auristatin,vedotin
+細胞外小胞
+KW:vesicle,EVs,elicit,OMVs,lytic
+CAR（キメラ抗原受容体）
+KW:chimeric,CAR,motif,TCR,CARs
+CTC（循環腫瘍細胞）
+KW:tail,transmembrane,CTCs,inducer,CTC
+エクソソーム
+KW:exosome,herpes,HSV,simplex,ultracentrifugation
+蛍光
+プローブ
+バイオ分析
+診断
+ウェアラブル
+デバイス
+線維症
+再生医療・
+幹細胞治療
+バイオマテリアル
+DDS
+イメージング
+低分子
+阻害剤
+がん
+バイオ
+センサ
+ゲノミクス・
+トランスクリプトミクス
+遺伝子発現機構
+図2-22
+図2-22 　 論文・特許情報の俯瞰マップ詳細（下辺縁部）
+生体用接着剤
+ステント
+ウェアラブルデバイス
+モニタリング
+マイクロ流体、分注
+基材
+光源
+フィルム
+塩
+生体サンプル、マイクロ流体デバイスシーケンス
+電磁放射線
+アミロイド
+ポリペプチド
+コーティング
+漢方薬
+マイクロ流体デバイス、フローサイトメーター
+SERSの周辺
+：文献割合偏差値：60以上
+：文献割合偏差値：55以上60未満
+：文献割合偏差値：45以上55未満
+：文献割合偏差値：40以上45未満
+：文献割合偏差値：40未満
+grid size
+図2-23
+図2-23 　 論文と特許の割合分布
+20 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学の俯瞰マップ
+2
+
+===== PDF_PAGE 26 =====
+3.1 研究開発の経年変化
+本融合分野の論文数、特許数およびその和（全体）の年次推移を図3-1に示す。2022年は集計途中のた
+め件数が少なくなっている。
+0
+10000
+20000
+30000
+40000
+50000
+60000
+2001
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+件数
+論文
+特許
+図3-1 　 論文数と特許数の年次推移
+2001年以降、論文および特許ともに増加傾向が続く。また、論文の方が特許よりも件数が多く、その年
+次増加件数も多い。即ち、本融合分野は論文の基礎研究を主体として進展しており、実用化の段階にはまだ
+十分至っていないことが推測される。
+続いて、2001年から直近の2022年までを6年毎（前半2期）
+〜5
+年毎（後半2期）の4期間に分けて、
+論文数（図3-2） 、特許数（図3-3）の推移をヒートマップで示す。年あたりの件数が比較可能なように感度
+の調節を施している。
+論文動向（図3-2）について、2001〜2006 年においては集中的な研究開発は顕著には見られないが、
+2007〜2012
+年になるとDNAメチル化を含む「遺伝子発現機構」領域やmiRNA、量子ドット、グルコース
+センサーを含む「バイオセンサ」領域で論文数が増加し始めた。2013〜2017
+年になると、iPS細胞・ES細
+胞を含む「再生医療・幹細胞治療」領域や、 「バイオマテリアル」領域の骨再生やハイドロゲルなど組織工学
+関連技術、 「DDS」領域の金属ナノ粒子やポリマー・脂質を使ったDDS技術が増えている。また周辺には、
+ゲノム編集技術や細胞外小胞の出現も見られる。2018年以降には、 「医療」や「医用材料工学」の隆盛が顕
+著となり、特に「がん」領域では腺がんやグリオーマ、大腸がんなどの集積が急激に増えている。ゲノム・ト
+3 ナノテクノロジー・材料科学×
+ラ
+イフサイエンス・臨床医学のマクロ動向分析
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+21CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 27 =====
+ランスクリプトームや、下辺縁部のシングルセル（sc）RNAシーケンス、さらにCAR（キメラ抗原受容体）
+やエクソソームの増加も目立つ。
+(a) 2001～2006年（感度×5/6 ） (b) 2007～2012年（感度×5/6 ）
+(c) 2013～2017年 (d) 2018～2022年
+DNA
+メチル化 DNA
+メチル化
+MS
+イメージング
+miRNA
+量子ドット
+蛍光プローブ
+光合成神経
+グルコース
+バイオセンサー
+miRNA
+神経
+リガンド結合
+錯体・複合体
+ハイドロゲル
+組織工学
+骨形成
+骨再生
+骨組織工学
+生体模倣足場
+PET・MRI
+ゲノム編集
+細胞外小胞
+腺がん
+CAR(キメラ
+抗原受容体)
+肺線維症
+肺がん
+大腸がん
+グリオーマ
+変異、がん
+骨格筋・
+筋肉再生
+ゲノム
+トランスクリプトーム前立腺
+がん
+白血病
+SARS-
+CoV-2
+scRNA
+シーケンス
+薬物放出
+DDS
+MRI造影剤
+ナノ粒子
+肝線維症
+血液脳
+関門
+金属ナノ粒子
+リポソーム、DDS
+脂質二重層
+ブロックコポリマー
+DDS
+iPS細胞、
+ES細胞
+エクソ
+ソーム
+図3-2 図3-2 　 論文分布の経年変化
+22 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 28 =====
+４．３． ナノテク×バイオ 世界文献と特許融合クラスター解析による俯瞰図：特許 年次推移
+光源
+SPR（表面プラ
+ズモン共鳴）
+基材
+生体用
+接着剤
+マイクロ流体
+デバイス
+MRI造影剤
+ナノ粒子
+生体サンプル
+マイクロ流体デバイス
+ウェアラブル
+デバイス
+幹細胞
+間葉系幹細胞
+カーボン
+ナノチューブ
+動物モデル
+光源
+マイクロ流体
+分注
+ウェアラブル
+デバイス
+シーケンス
+ゲノム編集
+光合成
+幹細胞
+間葉系幹細胞
+(a) 2001～2006年（感度×5/6 ） (b) 2007～2012年（感度×5/6 ）
+(c) 2013～2017年 (d) 2018～2022年
+図3-3 図3-3 　 特許分布の経年変化
+特許動向（図3-3）について、2001〜2006 年において「計測・分析デバイス」領域で光源や基材など
+本融合分野の基盤的役割を担う技術が出現し、その後多様な技術への展開されたと読める。2007〜2
+012
+年になるとマイクロ流体デバイスやMRI造影剤が存在感を増している。2013〜2017
+年には、中央のウェア
+ラブルデバイスが急激に増加しているほか、 「バイオセンサ」領域のカーボンナノチューブや、 「再生医療・幹
+細胞治療」領域の幹細胞・間葉系幹細胞技術や動物モデルが目立つようになっている。2018年以降では、
+引き続きウェアラブルデバイスや光源、マイクロ流体デバイス、幹細胞・間葉系幹細胞が活発に開発されてい
+るのに加えて、シーケンスやゲノム編集技術の増加も認められる。特許数の増加は論文数の増加より緩やかで
+あり、論文先行の研究開発の特徴が見られる。
+3.2 俯瞰マップにおける成長領域推定
+続いて、将来の成長可能性のある領域について推定分析を行った。俯瞰マップを格子（grid）に分割し、
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+23CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 29 =====
+各格子内の件数を全体平均で除した相対値について成長曲線（ロジスティック関数）フィットを行い、その立
+ち上がり年を算出した。全体に対する相対値を用いるため、欠損のある2022年分データについても本解析で
+は使用した。算出された立ち上がり年が新しいほど、今後の成長が見込まれる領域と考えられる。
+論文と特許を合わせた全体に対する解析結果を図3-4に示す。各格子で算出された立ち上がり年に応じて、
+格子内の点を色分けしている。今後の成長可能性の高い領域（赤色・橙色）として、 「医療」の「がん」領
+域全体と「線維症」領域が抽出された。また、 「ゲノミクス・トランスクリプトミクス」領域のシーケンス技術
+周辺や「遺伝子発現機構」領域の転写因子周辺も成長可能性が高い。これらはいずれも直近での論文数増
+加が著しい領域である。一方で、特許の多い「計測・分析デバイス」は全体として成長的領域が少ない。一部、
+ウェアラブルデバイスや光源の周辺で成長可能性が高い判定となっている。同様に論文と特許が共存する「医
+用材料工学」領域も、成長的領域が少ない。辺縁部に存在する集積領域も成長可能性の高い領域は少ないが、
+一部シングルセルRNAシーケンスや細胞外小胞などは成長的な領域として判定されている。
+腎障害
+肝線維症
+マイクロ流体、分注
+ウェアラブルデバイス
+モニタリング
+細胞外小胞
+ミトコンドリア
+蛍光イメージング
+シングルセルRNAシーケンス
+皮膚、化粧品
+腎細胞がん
+頭頸部扁平上皮がん
+メラノーマ神経膠腫
+（グリオーマ）
+がん免疫療法
+免疫チェックポイント阻害剤
+肝細胞がん
+がん免疫療法、ワクチン
+腺がん
+乳がん
+大腸がん
+ウイルス感染、ジカウイルス
+シーケンス
+光合成
+マクロファージ
+エクソソーム 転写因子(の周囲)
+光源(の周囲)
+前立腺がん
+: 成長領域
+：立ち上り年 2027年以上
+：立ち上り年 2022年以上2027年未満
+：立ち上り年 2017年以上2022年未満
+：立ち上り年 2012年以上2017年未満
+：立ち上り年 2012年未満、或いは計算不能
+grid size
+図3-4
+図3-4 　 成長領域推定―全体
+腎障害
+肝線維症
+ウェアラブルデバイス
+モニタリング
+細胞外小胞
+シングルRNAシーケンス
+皮膚、化粧品
+腎細胞がん
+頭頸部扁平上皮がん
+メラノーマ神経膠腫
+（グリオーマ）
+がん免疫療法
+免疫チェックポイント阻害剤
+肝細胞がん
+がん免疫療法、ワクチン
+腺がん
+乳がん
+大腸がん
+光合成
+シーケンス
+マクロファージ
+エクソソーム
+RNA編集
+CAR（キメラ抗原受容体）
+生体用接着剤
+ハイパースペクトル
+イメージング
+転写因子(の周囲)前立腺がん創傷治療
+: 成長領域
+：立ち上り年 2027年以上
+：立ち上り年 2022年以上2027年未満
+：立ち上り年 2017年以上2022年未満
+：立ち上り年 2012年以上2017年未満
+：立ち上り年 2012年未満、或いは計算不能
+grid size
+図3-5
+図3-5 　 成長領域推定―論文
+24 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 30 =====
+続いて、論文情報のみで成長領域の推定を行った結果を図3-5に示す。今回の文書データセットは論文数
+が優勢のため、図 3-4と類似した分布となっているが、RNA編集や生体用接着剤、CAR（キメラ抗原受容体） 、
+ハイパースペクトルイメージングなどがより明確に成長可能性が高い判定となった。
+特許情報のみについて成長領域の推定を行った結果を図3-6に示す。 「がん」領域は、特許数は少ないも
+のの論文情報と同様に成長可能性が高いと判定された。さらに、 「基礎生命科学」 における 「遺伝子発現機構」
+領域や「ゲノミクス・トランスクリプトミクス」領域でも、成長的領域が顕著に認められる。 「計測・分析デバ
+イス」や「医用材料工学」では相対的に成長可能性の高い領域は少ないが、マイクロ流体・分注や光源、薬
+物放出やブロックコポリマーなどのDDS関連技術、ハイドロゲルや3Dバイオプリンティングなどの組織工学
+技術は、今後も成長が見込まれるようである。
+光源
+ウェアラブルデバイス
+モニタリング
+細胞外小胞
+シングルRNAシーケンス
+ブロックコポリマー、DDS
+シーケンス
+遺伝子系統、DNAバーコード
+ゲノム、トランスクリプトーム
+血液脳関門、脳組織
+膵島、再生医療
+マイクロ流体、分注
+神経
+腎細胞がん
+頭頸部扁平上皮がん
+メラノーマ
+がん免疫療法
+免疫チェックポイント阻害剤
+がん免疫療法、ワクチン
+腺がん
+大腸がん
+マクロファージ
+3Dバイオプリンティング
+ハイドロゲル、組織工学
+成長因子、幹細胞
+ヒストン脱アセチル化酵素
+予後予測・MMP
+錯体(の周辺)
+薬物放出、DDS : 成長領域
+：立ち上り年 2027年以上
+：立ち上り年 2022年以上2027年未満
+：立ち上り年 2017年以上2022年未満
+：立ち上り年 2012年以上2017年未満
+：立ち上り年 2012年未満、或いは計算不能
+grid size
+図3-6
+図3-6 　 成長領域推定―特許
+3.3 主要国別動向分析
+本融合分野に関連する論文477,310件と特許196,976件について、国別の集計を行った。論文は著者所
+属機関の国籍、特許は優先権主張先国に基づき、それぞれ国単位で整数カウントをした。EP（欧州特許庁）
+に第一国出願の特許については、これ以上遡及できないためEPとして集計している。図3-7に論文の国別集
+計、図3-8に特許の国別集計を、それぞれ全件を上位20位まで、年推移を上位6位まで示す。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+25CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 31 =====
+0
+5000
+10000
+15000
+20000
+25000
+2001 2006 2011 2016 2021
+論文件数
+掲載年
+United States
+China
+Germany
+United Kingdom
+Japan
+France
+0 50000 100000 150000 200000
+United States
+China
+Germany
+United Kingdom
+Japan
+France
+Italy
+Canada
+South Korea
+Spain
+India
+Australia
+Netherlands
+Switzerland
+Sweden
+Taiwan
+Brazil
+Singapore
+Belgium
+Iran
+図3-7
+図3-7 　 論文数の国際比較（左：全件、右：年推移）
+2001〜2022
+年の全論文数の首位は米国であり、2位中国、3位ドイツ、4位英国、5位日本、6位フラン
+スとなっている。アジア圏で日本以外には、韓国が9位、インドが11位に入っている。年推移をみると、中
+国が2019年に米国を抜き、首位となっている。諸外国でも論文数の継続的増加が見られる。日本も論文数
+は増加しているものの、3位であった2001年時点から、2008年に中国、2009年に英国に抜かれ、最近で
+は5位となっている。
+2001〜2022
+年の全特許数は中国が首位であり、2位米国、ここから大きく件数の差が開いて3位日本、
+4位韓国、5位EP、6位ドイツとなった。年推移を見ると、中国は最近の件数で米国を含む諸外国を圧倒し
+ていることが分かる。中国、米国、韓国、EPで増加傾向が見られるが、日本やドイツは近年横ばい傾向にある。
+日本は2001年時点では2位であったが、中国、韓国に抜かれ、近年は4位となっている。
+26 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 32 =====
+0 20000 40000 60000 80000
+China
+United States
+Japan
+South Korea
+EP
+Germany
+United Kingdom
+France
+Australia
+Italy
+India
+Taiwan
+Sweden
+Denmark
+Spain
+Singapore
+Netherlands
+Canada
+IB 0
+2000
+4000
+6000
+8000
+10000
+12000
+2001 2006 2011 2016 2021
+特許件数
+公開年
+China
+United States
+Japan
+South Korea
+EP
+Germany
+図3-8
+図3-8 　 特許数の国際比較（左：全件、右：年推移）
+続いて、論文と特許の全件数上位6か国について、注力技術領域を把握するため、俯瞰マップ上へ国・地
+域別にプロットを行った。
+(a) 1st United States (b) 2nd China
+(d) 4th United Kingdom (感度×3) (e) 5th Japan (感度×3)
+(c) 3rd Germany (感度×3)
+(f) 6th France (感度×3)
+miRNAゲノム編集創傷治癒
+DNAメチル化 量子ドット
+蛍光プローブ
+腺がん
+グリオーマ
+ハイドロゲル
+組織工学
+グルコース
+バイオセンサー
+オート
+ファジー
+ミセル
+DDS
+グラフェン
+量子ドット
+金属ナノ粒子
+デンドリマー
+DDS
+DNAメチル化
+神経MS
+イメージング
+MRI造影剤
+ナノ粒子
+細胞膜
+骨格筋・
+筋肉再生
+光源
+骨形成・骨再生 造影剤PET
+MRI
+顕微鏡
+錯体・複合体
+NMR
+miRNA
+細胞外小胞
+CAR(キメラ
+抗原受容体)
+DNAメチル化
+神経
+リガンド結合
+MSイメー
+ジング
+ゲノム編集
+前立腺がん
+白血病
+骨格筋・
+筋肉再生
+HIV
+肺線維症
+肺がん
+キナーゼ
+阻害剤
+iPS細胞
+ES細胞
+ハイドロゲル
+組織工学
+PET・MRI
+血液脳関門、脳組織
+DNA
+メチル化 神経
+MS
+イメージング
+骨格筋・
+筋肉再生
+シーケンス
+iPS細胞
+ES細胞
+幹細胞
+間葉系幹細胞
+骨組織工学
+生体模倣足場
+PET・MRI老化
+キナーゼ
+阻害剤
+SERS
+イメージング
+miRNA
+細胞外小胞
+DNAメチル化
+神経
+MS
+イメージング
+骨格筋・
+筋肉再生
+ペプチド
+リポソーム
+DDS
+iPS細胞
+ES細胞
+肺線維症
+肺がん
+変異
+がん
+ゲノム編集
+肝線維症
+骨形成
+骨再生
+DNA
+メチル化 神経MS
+イメージング
+骨格筋・
+筋肉再生
+NMR
+細胞外小胞
+骨形成
+骨再生
+細胞膜
+脂質二重層
+脂質膜
+PET・MRI
+変異、がん
+光温熱療法
+図3-9
+図3-9 　 論文情報の国別プロット
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+27CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 33 =====
+論文情報の国別プロットを図3-9に示す。米国・中国以外の国は、件数が少ないため感度を3倍に調整し
+ている。首位の米国は、広く全体に分布が見られるものの、特にDNAメチル化を中核とした「遺伝子発現
+機構」領域で集積が顕著である。また、iPS・ES細胞を含む「再生医療・幹細胞治療」領域や、キナーゼ
+阻害剤を含む「低分子阻害剤」領域への集積も目立つ。さらに、新興的な研究開発としてマップ辺縁に配置
+された、miRNA、ゲノム編集、神経、CAR、細胞外小胞などへの注力も認められる。2位の中国も全体に広
+く分布が見られるが、特に「がん」領域や「バイオセンサ」領域への注力が著しい。 「DDS」領域への目立っ
+た集積も存在する。また、光温熱療法への注力は他国にはない特徴である。3位のドイツは、マップ右側の
+「計測・分析デバイス」の中で、特に「バイオ分析」領域や「イメージング」領域に強みを有していることが
+分かる。4位の英国は「基礎生命科学」 、特にDNAメチル化を中心とする「遺伝子発現機構」領域へ注力し
+ている。一方で「計測・分析デバイス」や「医用材料工学」や少ない。5位の日本は、マップ左側の「再生
+医療・幹細胞治療」や「遺伝子発現機構」領域が相対的に多い傾向にある。6位フランスは、DNAメチル
+化や神経などに注力が見られる。
+続いて、特許情報の国・地域別プロットを図3
+-10に示す。中国・米国以外は、感度を3倍に調整している。
+まず各国とも俯瞰マップ中央の「計測・分析デバイス」に集中していることが分かる。首位の中国は、 「計測・
+分析デバイス」に注力しながらも、カーボンナノチューブを含む「バイオセンサ」領域や幹細胞技術、シーケ
+ンス技術などの周辺分野にも展開が見られる。2位米国も、 「計測・分析デバイス」 に加えて、 マップ下部の 「医
+用材料工学」にも広がりがあり、 「DDS」領域のがん治療DSや、 「バイオマテリアル」領域のステント、 カテー
+テルといった医用器材などにも注力している。3位日本は、マップ中央付近のウェアラブルデバイス、光源、
+フィルム、生体用接着剤などに集中している。周辺部への広がりという点で、中国・米国とは差があるが、一
+部細胞シートなどへの注力も見られる。4位韓国も、日本と同様にマップ中央部分に集中しており、特にウェ
+アラブルデバイスが顕著である。一部、幹細胞技術などへも注力がされている。5位EPは反対に、マップ中
+央部は乏しく、外周部のシーケンス、マイクロ流体デバイス（フローサイトメーター） 、アミロイドなどに限定
+されている。6位ドイツは、マップ中央付近の光源技術や、マイクロ流体デバイスなどに集中している。
+DVW &KLQD EQG 8QLWHG6WDWHV FUG -DSDQ感度ʹ
+GWK 6RXWK.RUHD感度ʹ HWK (3感度ʹ IWK *HUPDQ\感度ʹ
+ゲノム編集
+創傷治癒
+ハイドロゲル
+組織工学
+骨形成・骨再生
+肝線維症
+カーボン
+ナノチューブ
+シーケンス
+漢方薬
+ウェアラブル
+デバイス
+光源
+顕微鏡
+幹細胞
+間葉系幹細胞
+マイクロ流体
+分注
+マイクロ流体
+チップ
+エクソソーム
+05,造影剤
+ナノ粒子生体用
+接着剤
+基材 &$5キメラ
+抗原受容体
+シーケンス
+創傷治癒 ウェアラブル
+デバイス
+マイクロ流体
+デバイス
+フローサイト
+メーター
+物理センサー
+光源
+アミロイド
+基材カテーテル
+動物モデル
++&9
+阻害剤
+がん治療
+''6
+生体サンプル
+光源
+;線
+ウェアラブル
+デバイス
+シーケンス
+血液
+マイクロ流体
+デバイス
+光音響
+イメージング
+基材
+生体用接着剤
+フィルム
+細胞シート
+光源
+ウェアラブル
+デバイス
+基材
+生体用
+接着剤
+フィルム
+幹細胞
+間葉系幹細胞
+バイオアッセイ
+マイクロ流体
+チップ
+固定・
+接続剤
+L36細胞
+(6細胞
+皮膚
+化粧品
+生体サンプル
+マイクロ流体デバイス
+アミロイド
+塩
+シーケンス
+ペプチド
++&9
+阻害剤
+光源
+05,造影剤
+ナノ粒子
+;線
+生体サンプル
+マイクロ流体
+デバイス
+マイクロ流体
+デバイス
+フローサイト
+メーター
+光源
+05,造影剤
+ナノ粒子
+電磁
+放射線
+固定・
+接続材
+ステント
+635
+マイクロ流体
+デバイス
+フローサイト
+メーターマイクロ流体
+デバイス
+フローサイト
+メーター
+幹細胞
+間葉系幹細胞
+635
+図3-10
+図3-10 　 特許情報の国・地域別プロット
+28 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 34 =====
+3.4 論文―主要研究機関別分析
+本融合分野に関連する論文477,310件について、研究機関別の集計を行った。著者所属機関単位で整数
+カウントしている。2001年〜2022
+年の論文数上位20機関を図3-11に示す。図3-7の国際比較で米国と中
+国が上位であったことに対応して、米国および中国の研究機関が多く上位を占めている。首位が米国カリフォ
+ルニア大学、2位が中国科学院、以下テキサス大学、ハーバード医科大学、スタンフォード大学と続く。米国、
+中国以外では、6位にドイツのマックス・プランク研究所、15位にカナダのトロント大学、17位に東京大学、
+20位に英国のケンブリッジ大学が入っている。
+続いて、研究機関別の論文情報について、俯瞰マップ上にプロットを行った。1位
+〜6
+位を図3-12に、7
+位
+〜11
+位および17位東京大学を図3-13に示す。3位以降は、件数が少ないため感度を2倍に調整している。　
+首位のカリフォルニア大学は、論文比率の多い周辺部に広く分布を持っているが、特にDNAメチル化や神
+経、老化などに多い。2位の中国科学院も同じく俯瞰マップ全域に分布を持つが、イメージング関係の量子
+ドットやナノ粒子、光温熱療法などへの特徴的な集中がある。3位のテキサス大は、俯瞰マップ左側の分布が
+やや多く、DNAメチル化、白血病や乳がんなどの各種がんへの集積が認められる。4位のハーバード医科大
+学も俯瞰マップ左側に分布が多く、 「遺伝子発現機構」領域や「再生医療・幹細胞治療」領域、神経などに
+注力がされている。5位のスタンフォード大学は、俯瞰マップ上部の「基礎生命科学」 、特に神経やDNAメ
+チル化に多い。6位のマックス・プランク研究所は、 「基礎生命科学」に加えて、俯瞰マップ右側の顕微鏡、
+NMR、MRIなどのイメージングや分析関係の技術も多い。
+図3-11
+0 5000 10000 15000 20000
+カリフォルニア大学（米）
+中国科学院（中）
+テキサス大学 （米）
+ハーバード医科大学（米）
+スタンフォード大学（米）
+マックス・プランク研究所（独）
+中国科学院大学（中）
+復旦大学（中）
+上海交通大学（中）
+浙江大学（中）
+ミシガン大学（米）
+マサチューセッツ工科大学（米）
+ジョンズ・ホプキンス大学（米）
+ペンシルベニア大学（米）
+トロント大学（加）
+中山大学（中）
+東京大学（日）
+イリノイ大学（米）
+ワシントン大学（米）
+ケンブリッジ大学（英）
+図3-11 　 研究機関別の論文数
+7位の中国科学院大学は、2位の中国科学院と同様に光温熱療法に注力が見られるほか、ゲノム編集にも
+注力がされている。8位の復旦大学は、腺がん、肝細胞がんなど、 「がん」領域に集中している。9位の上海
+交通大学は、骨形成、骨組織工学に注力しているほか、 「がん」 領域にも集中がある。10位の浙江大学は、 「が
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+29CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 35 =====
+ん」領域や「DDS」領域に注力が見られる。11位ミシガン大学は、 「遺伝子発現機構」領域や「低分子阻
+害剤」領域など、俯瞰マップ左上に多い。17位の東京大学は、DNAメチル化や神経に集中があるほか、蛍
+光イメージングへの注力も目立つ。
+(a) 1st カリフォルニア大学 (b) 2nd 中国科学院 (c) 3rd テキサス大学 (感度×2)
+(d) 4th ハーバード医科大学 (感度×2) (e) 5th スタンフォード大学 (感度×2) (f) 6th マックス・プランク研究所 (感度×2)
+DNAメチル化 神経
+MSイメー
+ジング
+ゲノム編集
+前立腺がん
+シーケンス
+老化
+細胞外小胞
+CAR(キメラ
+抗原受容体)
+iPS細胞
+ES細胞
+肺線維症
+肺がん
+シングルセル
+RNAシーケンス
+PET・MRI
+血液脳関門
+脳組織
+NMR
+ゲノム編集
+DNA
+メチル化 量子ドット
+蛍光プローブ
+グリオーマ
+ハイドロゲル
+組織工学
+骨形成・
+骨再生
+骨組織工学
+生体模倣足場
+グルコース
+バイオセンサー
+光合成
+シーケンス
+グラフェン量子ドット
+金属ナノ粒子
+ミセル、DDS
+光温熱療法
+アップコンバー
+ジョンナノ粒子
+miRNA
+DNAメチル化
+グリ
+オーマ
+神経
+前立腺
+がん
+白血病
+キナーゼ阻害剤
+骨格筋
+筋肉再生
+CAR(キメラ
+抗原受容体)CTC
+変異・がん
+化学療法剤
+xenograftモデル
+DNAメチル化
+神経
+NMR
+MRI造影剤
+ナノ粒子
+細胞膜
+脂質二重層
+脂質膜
+キナーゼ
+阻害剤
+光合成
+錯体・複合体
+顕微鏡
+カルシウム
+シグナリング
+miRNA
+DNA
+メチル化
+神経
+ゲノム編集 骨格筋
+筋肉再生
+CAR(キメラ
+抗原受容体)シングルセル
+RNAシーケンス
+PET
+MRI
+創傷治癒
+幹細胞
+間葉系幹細胞
+心筋梗塞
+幹細胞
+RNA編集
+miRNA
+DNAメチル化 神経
+ゲノム編集
+前立腺がん
+白血病
+細胞外小胞
+CAR(キメラ
+抗原受容体)
+iPS細胞
+ES細胞
+肺線維症
+肺がん
+PET
+MRI
+老化
+転写因子
+乳がん
+肺線維症、
+肺乳がん
+血液脳関門
+脳組織
+図3-12
+図3-12 　 論文情報の研究機関別プロット①
+(a) 7th 中国科学院大学 (感度×2) (b) 8th 復旦大学 (感度×2)
+(d) 10th 浙江大学 (感度×2) (e) 11th ミシガン大学 (感度×2)
+(c) 9th 上海交通大学 (感度×2)
+(f) 17th 東京大学 (感度×2)
+DNAメチル化
+ゲノム編集
+シーケンス
+ハイドロゲル
+組織工学
+肝線維症 量子ドット
+蛍光プローブ
+グラフェン
+量子ドット
+光温熱療法
+miRNA
+DNAメチル化
+グリ
+オーマ
+前立腺
+がん
+血液脳関門
+脳組織
+肺線維症
+肺がん
+リポソーム
+DDS
+腺がん
+肝細胞がん
+miRNA
+DNAメチル化
+創傷治癒
+前立腺がん
+白血病
+量子ドット
+蛍光プローブ
+グリ
+オーマ
+腺がん
+大腸がん
+ハイドロゲル
+組織工学
+軟骨再生
+骨形成
+骨再生
+骨組織工学
+生体模倣足場
+DNAメチル化 神経
+肝線維症
+大腸がん
+細胞膜
+蛍光イメージング
+軟骨再生
+骨格筋・
+筋肉再生
+mRNA
+翻訳
+肺線維症
+肺がん
+DNAメチル化
+神経
+前立腺がん
+白血病
+オート
+ファジー
+骨格筋・
+筋肉再生
+老化
+miRNA
+光合成
+ゲノム編集
+肝線維症
+腺がん
+肝細胞がん
+大腸がん リポソーム
+DDS
+細胞外小胞
+CAR(キメラ
+抗原受容体)
+ミセル
+DDS
+ハイドロゲル
+組織工学
+がん治療
+DDS
+デンドリマー
+DDS
+図3-13
+図3-13 　 論文情報の研究機関別プロット②
+30 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 36 =====
+3.5 特許―出願人別分析
+本融合分野に関連する特許196,976件について、出願人別の集計を行った。機関単位での整数カウントと
+している。2001年〜2022
+年の特許数上位20機関を図3 -14に示す。図3-8の国別比較では米国と中国が
+他国を圧倒していたが、出願人別に見ると様々な国の機関・企業が上位に入っている。首位が中国科学院で
+突出して件数が多く、2位がカリフォルニア大学、以下浙江大学、中国人民解放軍軍事科学院、フィリップス
+と続く。日本からは8位にキャノン、17位に富士フィルムビジネスイノベーションが入った。また韓国からは、
+9位にサムスン電子、13位にソウル国立大学が入っている。全体として大学や公的研究機関が多いことから、
+民間企業による実用化はまだ本格的段階にないと思われる。
+0 1000 2000 3000 4000 5000
+中国科学院（中）
+カリフォルニア大学（米）
+浙江大学（中）
+中国軍事医学研究院（中）
+フィリップス（蘭）
+上海交通大学（中）
+シーメンス（独）
+キャノン（日）
+サムスン電子（韓）
+復旦大学（中）
+米国保健福祉省（米）
+マサチューセッツ工科大学（米）
+ソウル国立大学（韓）
+清華大学（中）
+中山大学（中）
+ハーバード大学（米）
+富士フイルムビジネスイノベーション（日）
+バイエル（独）
+北京大学（中）
+テキサス大学（米）
+図3-14
+図3-14 　 出願人別の特許数
+続いて、出願人別の特許情報について、俯瞰マップ上にプロットを行った。1位
+〜6
+位を図3-15に、7位
+〜1
+2位を図3-16に示す。2位以降は、件数が少ないため感度を2倍に調整している。
+首位の中国科学院は、光源のほか、MRI造影剤、マイクロ流体デイバス関連に注力が見られる。また件数
+が圧倒的に多いため、他の出願人と比較して広い範囲に分布がある。2位のカリフォルニア大学も広く分布が
+見られ、際立った集中はないが、マイクロ流体デバイス関係がやや多くなっている。3位の浙江大学は、およ
+そ光源に集中しているが、一部幹細胞技術やシーケンス、マイクロ流体デバイスにも注力がされている。4位
+の中国軍事医学研究院は、シーケンス、幹細胞技術、肺がんに注力があるほか、ジカウイルスやSARS-
+CoV-2といった感染症関連技術にも出願がある。5位のフィリップスは、ウェアラブルデバイス、MRI造影剤、
+X線技術に集中している。6位の上海交通大学は、論文の分布（図3
+-13）と同じく骨形成・再生技術に注力
+が見られるほか、カーボンナノチューブセンサやマイクロ流体デバイスにも出願がある。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+31CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 37 =====
+(a) 1st 中国科学院 (b) 2nd カリフォルニア大学 (感度×2) (c) 3rd 浙江大学 (感度×2)
+(d) 4th 中国 軍事医学研究院 (感度×2) (e) 5th フィリップス (感度×2) (f) 6th 上海交通大学 (感度×2)
+ゲノム
+編集
+光合成
+カーボン
+ナノチューブ
+シーケンス
+光源
+蛍光
+イメージング
+マイクロ流体
+分注
+マイクロ流体
+チップ
+MRI造影剤
+ナノ粒子
+細菌
+光音響
+イメージング
+ハイパースペクトル
+イメージング
+ゲノム編集
+シーケンス
+マイクロ流体
+チップ
+生体サンプル
+マイクロ流体
+デバイス
+CNT
+物理
+センサー
+動物モデル
+液滴
+マイクロ流体
+システム
+粒子
+マイクロ流体
+デバイス
+光源
+マイクロ流体
+分注
+マイクロ流体
+チップ
+幹細胞
+間葉系幹細胞
+シーケンス
+シルク
+フィブロイン ハイドロゲル
+組織工学
+マイクロ流体
+分注カーボン
+ナノチューブ
+骨形成
+骨再生
+MRI造影剤
+ナノ粒子
+X線
+MRI造影剤
+ナノ粒子
+ウェアラブル
+デバイス 血液
+マイクロ流体
+デバイス
+電磁放射線
+光源
+光音響
+イメージング
+造影剤
+miRNAゲノム
+編集
+肝線維症
+シーケンス
+肺線維症
+肺がん
+ジカウイルス
+SARS-
+CoV-2
+幹細胞
+間葉系幹細胞
+光源
+図3-15
+図3-15 　 特許情報の出願人別プロット①
+(a) 7th シーメンス (感度×2) (b) 8th キャノン (感度×2) (c) 9th サムスン電子 (感度×2)
+(d) 10th 復旦大学 (感度×2) (e) 11th 米国保健福祉省 (感度×2) (f) 12th マサチューセッツ工科大学 (感度×2)
+X線
+MRI造影剤
+ナノ粒子
+造影剤
+リアルタイム
+観測
+血液
+マイクロ流体
+デバイス
+ウェアラブル
+デバイス
+３Dスキャン
+X線
+MRI造影剤
+ナノ粒子
+造影剤
+リアルタイム
+観測
+血液
+マイクロ流体
+デバイス
+ウェアラブル
+デバイス
+光源
+光音響
+イメージング
+ウェアラブル
+デバイス
+バイオ
+アッセイ
+マイクロ流体
+デバイス
+フローサイト
+メーター
+マイクロ流体
+チップ
+マイクロ流体
+分注
+光源
+基材
+生分解性
+ポリマー
+マイクロ流体
+デバイス
+フローサイト
+メーター
+マイクロ流体
+チップ
+シーケンス
+ゲノム編集
+SPR
+がん免疫療法
+ワクチン
+アミロイド
+CAR(キメラ
+抗原受容体)
+リガンド結合
+ペプチド
+生体サンプル
+マイクロ流体
+デバイス
+マイクロ流体
+チップ
+マイクロ流体
+分注
+MRI造影剤
+ナノ粒子
+血液脳関門
+脳組織
+RNA編集
+HCV阻害剤
+図3-16
+図3-16 　 特許情報の出願人別プロット②
+7位のシーメンスは、造影剤、3Dスキャン、MRI造影剤、X線技術など、俯瞰マップの中央付近に集中し
+ている。8位のキャノンも俯瞰マップ中央に集中しており、光音響イメージジング、ウェアラブルデバイス、光源、
+X線技術などがある。9位のサムスン電子、おおよそウェアラブルデバイスに集中しているが、一部光源や基
+材も出願している。10位の復旦大学は、マップ広範に分布が見られるが、血液脳関門やマイクロ流体デバイ
+32 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 38 =====
+スなどに集中がある。11位の米国保険福祉省も広く分布が見られるが、HCV阻害剤、リガンド結合、アミ
+ロイドなどに注力がある。12位のマサチューセッツ工科大学も広く出願しているが、ゲノム編集、シーケンス、
+マイクロ流体デバイス、生分解性ポリマーなどに注力がある。
+3.6 成長キーフレーズの推定
+俯瞰マップからは判別が難しい数十件程度のエマージング技術の探索のため、 「キーフレーズ」の抽出とロ
+ジスティック回帰による成長可能性判定を行った。その際、既知ワードやノイズワード、回帰エラーを除去す
+るために、以下の制約条件を適用した。
+1）初出が2015年以降（既知ワードの除外）
+2）直近3年における文書件数が20件（ナノ技術の場合は5件）以上（ノイズワードの除外）
+3）立ち上がり年の幅（誤差）が10年以内（回帰エラーの除去）
+論文と特許を合わせた情報を分析対象とし、得られたキーフレーズを表3
+-1に立ち上がり年の降順で上位
+100位まで示す。全体として「医療」や「基礎生命科学」に関するキーフレーズが大半を占めている。20位
+前後にはCOVID-19感染症関連のキーフレーズが多くある。また、様々ながん細胞・がん組織、がんの予後、
+がんゲノムのデータベース、免疫療法など、がんに関するキーフレーズが目立つ。そのほか、CAR-T細胞、シ
+ングルセルRNA（トランスクリプトーム）シーケンス、エクソソームなど、俯瞰マップで辺縁部に配置された
+技術も入っている。
+表3
+-1 　 成長キーフレーズ
+No. キーフレーズ 全件数 直近3年
+件数 初出年 立ち上が
+り年
+立ち上が
+り幅（年）
+1 inferior
+
+prognosis 28 23 2016 2043.2 1.85
+
+2 behnk
+en
+
+design 44 28 2016 2042.9 2.08
+
+3 nanopor
+e
+
+sequencing
+
+platform 35 31 2016 2041.7 1.96
+
+4 singlec
+ell
+
+transcriptome
+
+data 27 22 2016 2041 2.05
+
+5 lncRNAmiRNAmRNA
+
+network 29 21 2015 2040.8 1.99
+
+6 high
+
+PDL1
+
+expression 28 20 2016 2040.7 2.28
+
+7 m6A
+
+methylation 31 25 2017 2039.9 1.53
+
+8 ther
+apeutic
+
+vulnerability 28 21 2017 2039 1.85
+
+9 immunother
+apy
+
+resistance 24 20 2017 2038.6 1.40
+
+10 tr
+astuzumab
+
+deruxtecan 34 29 2017 2038.3 1.56
+
+11 aquatic
+
+product 26 22 2015 2036.5 1.29
+
+12 CAR
+
+tcell
+
+infusion 27 22 2016 2036.1 1.27
+
+13 GenotypeT
+issue
+
+expression
+
+database 32 30 2018 2035.4 1.25
+
+14 singlec
+ell
+
+transcriptome
+
+sequencing 42 38 2018 2035.2 1.25
+
+15 BL
+CA
+
+patient 38 33 2017 2035 1.43
+
+16 immune
+
+checkpoint
+
+gene 98 93 2016 2034.1 1.16
+
+17 c
+oronavirus
+
+disease 368 368 2020 2033.6 0.27
+
+18 SARSC
+oV2
+
+infection 315 315 2020 2033.6 0.28
+
+19 C
+OVID19
+
+patient 230 230 2020 2033.5 0.30
+
+20 C
+OVID19
+
+pandemic 224 224 2020 2033.5 0.30
+
+21 SARSC
+oV2 157 157 2020 2033.4 0.33
+
+22 sev
+ere
+
+COVID19 124 124 2020 2033.4 0.34
+
+23 SARSC
+oV2
+
+virus 99 99 2020 2033.2 0.38
+
+24 m6A
+
+regulator 67 67 2020 2033 0.44
+
+25 C
+OVID19 89 89 2020 2033 0.44
+
+26 SARSC
+oV2
+
+spike
+
+protein 66 66 2020 2033 0.45
+
+27 multiplex
+
+immunofluorescence
+
+staining 22 20 2019 2032.7 1.00
+
+28 tumor
+
+immune
+
+infiltration 107 106 2017 2031.4 0.23
+
+29 main
+
+protease 78 77 2017 2031.3 0.26
+
+30 c
+onsistent
+
+clustering 24 22 2016 2030.7 0.79
+
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+33CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 39 =====
+31 level of immune infiltration 23 22 2018 2029.7 0.08
+32 immune
+
+checkpoint
+
+gene
+
+expression 41 40 2019 2029.2 0.67
+
+33 long
+
+RNA
+
+marker 29 29 2020 2028.1 0.51
+
+34 detecting
+
+exosome 21 20 2016 2027.5 0.51
+
+35 ex
+osome
+
+long
+
+RNA
+
+marker 28 28 2020 2026.8 0.42
+
+36 extrusionbased
+
+3D
+
+printing 27 20 2018 2025.5 1.23
+
+37 immunother
+apy
+
+response 177 171 2017 2023.9 1.03
+
+38 ionizable
+
+lipid 31 26 2015 2023.5 1.77
+
+39 expr
+ession
+
+of
+
+immune
+
+checkpoint 45 44 2019 2023.3 0.87
+
+40 c
+old
+
+tumor 36 34 2018 2023.2 0.98
+
+41 deep
+
+learning
+
+network 40 31 2015 2023 1.64
+
+42 lev
+el
+
+of
+
+immune
+
+cell
+
+infiltration 35 34 2019 2022.9 0.81
+
+43 zhongshan
+
+hospital 28 26 2018 2022.9 1.27
+
+44 immunother
+apy
+
+target 48 42 2016 2022.9 1.62
+
+45 lo
+wrisk
+
+group
+
+base 81 76 2017 2022.8 1.15
+
+46 PD
+L1
+
+blockade 30 23 2017 2022.8 1.58
+
+47 immune
+
+contexture 23 20 2018 2022.7 1.30
+
+48 humanmachine
+
+interaction 77 62 2015 2022.7 1.88
+
+49 TID
+E
+
+score 30 30 2020 2022.4 0.55
+
+50 L
+UAD
+
+tissue 80 68 2015 2022.4 1.34
+
+51 PD
+L1
+
+inhibitor 32 27 2017 2022.4 1.40
+
+52 singlec
+ell
+
+RNA
+
+sequencing
+
+data 138 125 2017 2022.3 1.23
+
+53 spatial
+
+transcriptomics 115 112 2018 2022.2 0.85
+
+54 r
+eal
+
+scRNAseq
+
+datasets 31 27 2018 2022.2 1.16
+
+55 pr
+ognosis
+
+of
+
+ccRCC 46 40 2016 2022.2 1.67
+
+56 L
+UAD
+
+cell 59 52 2017 2022.2 1.26
+
+57 tumor
+
+immune
+
+microenvironment 466 437 2015 2022.1 1.10
+
+58 pr
+ecision
+
+treatment 32 25 2016 2022.1 1.85
+
+59 UCSC
+
+xena 37 35 2018 2022.1 1.01
+
+60 immunother
+apeutic
+
+response 65 64 2019 2022.1 0.74
+
+61 cBioP
+ortal
+
+database 71 66 2017 2022.1 1.17
+
+62 bulk
+
+RNAseq
+
+data 71 59 2016 2022 1.50
+
+63 inf
+ormation
+
+encryption 53 49 2015 2021.9 0.99
+
+64 acidic
+ TME 29 25 2017 2021.9 1.47
+
+65 bulk
+
+RNA
+
+sequencing 95 86 2016 2021.9 1.29
+
+66 immune
+
+landscape 124 117 2017 2021.8 0.71
+
+67 deadliest
+
+cancer 36 30 2016 2021.8 1.54
+
+68 tumor
+
+mutational
+
+burden 234 211 2017 2021.8 1.03
+
+69 emplo
+y
+
+singlecell
+
+RNA
+
+sequencing 24 21 2018 2021.8 1.15
+
+70 RNA
+
+pulldown 42 35 2017 2021.7 1.20
+
+71 highrisk
+
+group
+
+base 30 27 2017 2021.7 1.23
+
+72 singlesample
+
+GSEA 38 38 2020 2021.7 0.54
+
+73 CAR
+Tcell
+
+therapy 28 23 2016 2021.6 1.57
+
+74 risk
+
+model 336 319 2016 2021.6 0.83
+
+75 HP
+A
+
+database 35 33 2018 2021.6 0.96
+
+76 tumor
+
+immune
+
+dysfunction 105 105 2020 2021.6 0.43
+
+77 delta
+
+variant 22 22 2022 2021.6 0.02
+
+78 RNA
+
+delivery
+
+system 26 26 2022 2021.6 0.02
+
+79 【
+selection
+
+diagram】 21 21 2022 2021.6 0.02
+
+80 lar
+ge
+
+extracellular
+
+vesicle 23 21 2017 2021.6 0.92
+
+81 MXene
+
+nanosheets 28 25 2018 2021.5 1.03
+
+82 median
+
+risk
+
+score 108 104 2017 2021.5 0.79
+
+83 pr
+ognostic
+
+risk
+
+model 112 109 2018 2021.5 0.77
+
+84 C
+GGA
+
+database 32 30 2018 2021.5 0.98
+
+85 【
+selected
+
+diagram】 48 48 2022 2021.5 0.00
+
+86 GTEx
+
+database 32 29 2018 2021.4 1.01
+
+87 external
+
+datasets 46 44 2018 2021.4 0.91
+
+88 immunotherapy cohort 33 33 2020 2021.4 0.52
+89 Cas12a
+
+protein 28 25 2018 2021.4 0.99
+
+90 ostom
+y
+
+device 22 20 2016 2021.4 0.03
+
+91 GenotypeT
+issue
+
+expression 286 255 2015 2021.3 1.36
+
+92 pr
+ognosis
+
+of
+
+LUAD 70 64 2017 2021.3 0.72
+
+93 risk
+
+subgroup 40 37 2017 2021.3 0.40
+
+94 mRNA
+
+regulatory
+
+network 26 22 2015 2021.3 0.85
+
+95 immune
+
+checkpoint
+
+expression 63 60 2018 2021.3 0.77
+
+96 ssGSEA
+
+algorithm 30 30 2020 2021.3 0.43
+
+97 tumor
+
+mutation
+
+burden 381 364 2017 2021.2 0.85
+
+98 LAS
+SO
+
+regression 208 190 2015 2021.2 0.93
+
+99 enrichment
+
+pathway 49 43 2016 2021.2 1.40
+
+100 tumor
+
+immune
+
+cell
+
+infiltration 59 58 2017 2021.2 0.43
+
+34 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 40 =====
+続いて、表3-1では乏しかった「計測・分析デバイス」や「医用材料工学」に関するキーフレーズをより
+選択的に得るため、“nano”の語を含むキーフレーズに限定して抽出を行った。この際、制約条件2）は、直
+近3年の文書件数が5件以上、と緩和した。より少ない文書件数で解析を行うことで、解析の精度は下がるが、
+より多くのキーフレーズを拾うことができる。結果、全202個の“nano”を含むキーフレーズが得られた。そ
+のうち、立ち上がり年が2020年以降の71件を立ち上がり年の降順で表3-2に示す。ナノ医薬やDDSに関す
+る技術が特に目立って上位に入っている。今後特に展開が注目される分野と思われる。また、ナノポアを用い
+たシーケンス技術のも目立ち、より上位にはplatformやlongread、metaなどのキーワードで、より大規模・
+網羅的・ハイスループットなシーケンス解析を目指す動きが伺える。
+表3-2 　 “nano” を含む成長キーフレーズ
+No. キーフレーズ 全件数 直近3年
+件数 初出年 立ち上が
+り年
+立ち上が
+り幅（年）
+1 nanozinc
+
+oxide 9 6 2016 2044.3 2.12
+
+2 nanopor
+e
+
+sequencing
+
+platform 35 31 2016 2041.7 1.96
+
+3 nanodrug 13 9 2015 2040.5 1.69
+
+4 chitin
+
+nanofibers 12 5 2015 2038.8 2.80
+
+5 biomimetic
+
+nanoplatform 8 6 2018 2031 0.91
+
+6 nano
+
+drug
+
+delivery
+
+system
+
+base 6 5 2019 2031 0.19
+
+7 o
+xford
+
+nanopore
+
+longread
+
+sequencing 8 8 2020 2030.4 0.90
+
+8 sulfur
+
+nanoparticles 5 5 2020 2022.6 0.86
+
+9 biomimetic
+
+nanodelivery
+
+system 5 5 2020 2022.6 0.86
+
+10 deliv
+ery
+
+nanosystem 6 6 2020 2022.5 0.89
+
+11 or
+al
+
+nanomedicine 6 6 2020 2022.5 0.89
+
+12 stimulate
+
+emission
+
+depletion
+
+nanoscopy 6 5 2018 2022 0.09
+
+13 pharmac
+eutical
+
+nanoparticles 5 5 2020 2021.9 0.07
+
+14 superpar
+amagnetic
+
+ferroferric
+
+oxide
+
+SPIO
+
+nanoparticles 7 7 2022 2021.8 0.00
+
+15 nano
+
+antibody
+
+targeting 5 5 2022 2021.6 0.02
+
+16 MXene
+
+nanosheets 28 25 2018 2021.5 1.03
+
+17 c
+ombination
+
+of
+
+nanopore 8 8 2020 2021.5 0.65
+
+18 ass
+ynthesized
+
+nanocomposite 6 5 2018 2021.4 0.03
+
+19 nanocatalytic
+
+tumor
+
+therapy 6 5 2019 2021.4 0.04
+
+20 type
+
+of
+
+nanomedicine 6 5 2015 2021.4 0.04
+
+21 zinc
+
+nanoparticles 5 5 2020 2021.3 0.03
+
+22 nanoparticlesbased
+
+lateral
+
+flow
+
+biosensor 8 5 2019 2021.3 0.02
+
+23 nanopor
+e
+
+MinION 6 5 2018 2021.3 0.02
+
+24 nano
+
+delivery
+
+carrier 5 5 2020 2021.3 0.03
+
+25 design
+
+nanomedicines 6 5 2017 2021.3 0.03
+
+26 friction
+
+nanogenerator 6 5 2017 2021.3 0.03
+
+27 metag
+enomic
+
+nanopore
+
+sequencing 5 5 2020 2021.2 0.01
+
+28 f
+ormulation
+
+of
+
+lipid
+
+nanoparticlebased
+
+c
+omposition 5 5 2020 2021.2 0.02
+
+29 nano
+
+flow
+
+cytometry 5 5 2021 2021.1 0.05
+
+30 facile
+
+nanoprecipitation 8 5 2017 2021.1 0.08
+
+31 CsPbBr3
+
+nanocrystals 7 5 2017 2021.1 0.05
+
+32 pr
+ecise
+
+nanomedicine 9 6 2018 2021 0.03
+
+33 nano
+
+coprecipitation 9 6 2019 2021 0.08
+
+34 dendritic
+
+mesoporous
+
+silica
+
+nanoparticles 8 6 2017 2021 0.08
+
+35 chitosan
+
+nanogel 8 5 2019 2020.9 0.07
+
+36 pr
+omising
+
+nanotherapeutic
+
+agent 6 5 2019 2020.9 0.07
+
+37 drugloaded
+
+nanomicelles 9 5 2015 2020.9 0.08
+
+38 pr
+ecious
+
+metal
+
+nanoparticles 7 5 2015 2020.9 0.08
+
+39 A
+g2S
+
+nanoparticles 11 9 2017 2020.7 0.47
+
+40 simple
+
+nanoprecipitation 12 5 2016 2020.5 0.02
+
+41 intellig
+ent
+
+nanoplatform 8 7 2019 2020.3 0.02
+
+42 silv
+er
+
+nanoparticles
+
+capable
+
+of
+
+inhibiting 7 7 2021 2020.3 0.02
+
+43 pr
+omising
+
+nanocarrier
+
+platform 5 5 2021 2020.2 0.02
+
+44 nanocatalytic
+
+medicine 5 5 2021 2020.2 0.01
+
+45 topological
+
+superconductor
+
+nanowire 5 5 2021 2020.2 0.02
+
+46 s
+ynthesize
+
+zinc
+
+oxide
+
+nanoparticles 5 5 2021 2020.2 0.02
+
+47 g
+enome
+
+nanopore
+
+sequencing 5 5 2021 2020.2 0.01
+
+48 nanoflo
+w
+
+cytometry 19 17 2017 2020.2 0.00
+
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+35CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 41 =====
+49 nanopore amplicon sequencing 5 5 2021 2020.2 0.01
+50 bionic
+
+nano
+
+delivery
+
+system 5 5 2021 2020.2 0.01
+
+51 bionic
+
+nanodrug 5 5 2021 2020.2 0.02
+
+52 T
+i3C2
+
+nanosheets 7 6 2019 2020.1 0.00
+
+53 nanophotonic
+
+circuit 6 5 2018 2020.1 0.01
+
+54 nanosized
+
+lipid
+
+vesicle 5 5 2021 2020.1 0.00
+
+55 h
+ybrid
+
+nanofluid
+
+flow 5 5 2021 2020.1 0.00
+
+56 multifunctional
+
+nanodrug
+
+carrier 5 5 2021 2020.1 0.00
+
+57 photothermal
+
+nano
+
+material 5 5 2021 2020.1 0.00
+
+58 nano
+
+antibody 28 24 2015 2020 0.02
+
+59 bimetallic
+
+nanostructures 6 5 2017 2020 0.05
+
+60 D
+NA
+
+nanoflowers 5 5 2020 2020 0.05
+
+61 nanother
+anostics
+
+agent 5 5 2020 2020 0.05
+
+62 mesopor
+ous
+
+polydopamine
+
+nanoparticles 12 12 2020 2020 0.04
+
+63 nanopor
+e
+
+direct
+
+RNA
+
+sequencing 18 18 2020 2020 0.17
+
+64 h
+ybrid
+
+nanofluid 7 7 2020 2020 0.03
+
+65 o
+xford
+
+nanopore
+
+technology
+
+platform 14 12 2018 2020 0.18
+
+66 pr
+oduction
+
+of
+
+silver
+
+nanoparticles 6 5 2018 2020 0.03
+
+67 o
+xford
+
+nanopore
+
+technology
+
+longread
+
+sequencing 6 6 2020 2020 0.03
+
+68 longr
+ead
+
+oxford
+
+nanopore
+
+technology 6 6 2020 2020 0.21
+
+69 micr
+onano
+
+sphere 6 6 2020 2020 0.03
+
+70 micr
+onano
+
+particle 9 8 2018 2020 0.03
+
+71 gr
+een
+
+synthesis
+
+of
+
+metal
+
+nanoparticles 8 6 2016 2020 0.03
+
+36 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナ ノテクノロジー・材料科学×ライフサイエンス・臨床医学のマクロ動向分析
+3
+
+===== PDF_PAGE 42 =====
+4.1 ナノテクノロジー関連トピックの選定
+ナノテクノロジーの本融合分野での創起、波及および展開の動向を把握するため、トピックモデルで生成さ
+れるトピックの中から、ナノテクノロジーに関連するトピックを利用して分析を行った。
+この度の論文と文献を合わせた計674,286件のトピックモデルからは、計2,261のトピックが生成された。
+そのうち、上位3ワード以内に“nano”の語を含むキーワードを有し、かつそのキーワードのウェイトが2%
+以上もの（経験的にウェイトが2%以上あれば有意なキーワードと考えられる）を「ナノテク関連トピック」と
+して選定した。ただし、明らかにナノテクに関係しないキーワード（nanoliterおよびnanomolar）で抽出
+されたトピック2つは除外した。選定された42のナノテク関連トピックについて、上位10ワードまでを表4-1
+に示す。
+表4-1 　 ナノテク関連トピック
+No. ナノテク関連トピックの上位10ワード（上位3ワード内にウェイト2%以上でナノテクに関連するワードを有する）
+1 nanobodies
+
+;
+
+hydrazone
+
+;
+
+anorexia
+
+;
+
+triazine
+
+;
+
+adoption
+
+;
+
+nervosa
+
+;
+
+IRM
+
+;
+
+biotechnical
+
+;
+
+hyd
+
+;
+
+gellable
+2 nanofibrous ; electroconductive ; PEDOT ; resistivity ; PSS ; PTFE ; PAN ; diversify ;
+eth
+ylenedioxythiophene
+
+;
+
+toner
+3 nanoprobes ; IMD ; RET ; electrochemiluminescence ; MOFs ; GPCRs ; ETAR ; parity ; BDC ; hong
+4 nanocapsules ; agitator ; amphipathic ; macroinitiator ; copolypeptides ; thermostatic ; MITO ; DODAB
+;
+
+andrographolide
+
+;
+
+calixarene
+5 nanogel ; quercetin ; phenylenediamine ; biocatalytic ; polyionic ; GCS ; CHP ; OPD ; cladribine ;
+nitr
+obenzyl
+6 nanofiber ; master ; spectacle ; goggle ; election ; virgin ; divinylbenzene ; elect ; buten ; PAAc
+7 nanodots ; T ACE ; dopants ; CNDs ; electronegative ; NMP ; locational ; neuromesodermal ; VFD ;
+sheddase
+8 nanomedicine ; thermosensitive ; CTD ; PNIPAAm ; alg ; TRM ; DCA ; PAK1 ; PAF ; eugenol
+9 nanocrystals ; photoluminescent ; Yb3 ; nanocrystalline ; electroluminescent ; regulatable ; flake ; CFS ;
+disodium
+
+;
+
+gadoxetate
+10 nanocarriers ; immunomodulatory ; immunostimulatory ; tolerogenic ; nanofibril ; lipoplex ; LLP2A ;
+MR
+gFUS
+
+;
+
+IRF1
+
+;
+
+SNEDDS
+11 nanoparticle ; silica ; adverse ; photodynamic ; protoporphyrin ; aminolevulinic ; dispersity ; ber ;
+photosensitization
+
+;
+
+liganded
+12 nano ; form ; CoFe2O4 ; CCE ; easiest ; nanophases ; lipidosome ; sialography ; oncosome ; microcup
+13 nanomedicines ; docetaxel ; valence ; DTX ; simvastatin ; dominance ; nanoformulations ;
+c
+ollaboratively
+
+;
+
+ADD
+
+;
+
+Eya2
+14 nanocrystal ; CdTe ; nanoprobe ; bioluminescence ; T GA ; hydrazide ; Ag2S ; corepressor ; H460 ;
+photopr
+oteins
+15 nanoporous ; MET ; protocells ; radiolabeling ; RON ; supercoiled ; protocell ; inconclusive ; ANM ;
+morpholin
+16 nanomaterial ; friction ; triboelectric ; ferrite ; TENG ; tribological ; nanogenerator ; spinel ; respirator ;
+V
+DF
+17 nanostructured ; oleracea ; agglomerate ; granulate ; active ; NCM ; antiepileptic ; nanostructuring ;
+OCH2CH3
+
+;
+
+capitata
+18 nanoscale ; MCF7 ; nanoscopic ; omniphobic ; metallo ; sonoporation ; nanoscopy ; ebselen ; SNOM ;
+PNG
+19 nanomaterials ; biopolymers ; taxonomic ; bioburden ; histopathologic ; NMs ; colloidally ; antrum ;
+nano
+vehicles
+
+;
+
+nanotechnological
+20 nanopore ; tether ; confinement ; nanochannel ; hip ; R10 ; SWCNT ; OPA ; nanofabrication ; caput
+21 nanoparticles ; tracer ; favorable ; manganese ; modal ; subterranean ; thiolate ; MnO ; vomit ;
+nanoc
+onstructs
+4 ナノテクノロジーの
+ライフサイエンス・臨床医学分野への展開
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+37CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナノテクノロジーのライフサイエンス・臨床医学分野への展開
+4
+
+===== PDF_PAGE 43 =====
+22 nanostructure ; hydrothermal ; equally ; energetic ; origami ; nonuniform ; lysophospholipid ; SMF ;
+erbium
+
+;
+
+propylamine
+23 nanopores ; MspA ; fragaceatoxin ; nanodiscs ; nanohole ; discretely ; nanodisks ; porins ; osmylated ;
+narr
+owly
+24 mesoporous ; nanochannels ; bioglass ; EphA2 ; photoisomerization ; carbonize ; CTAB ; mSiO2 ; MCM
+;
+
+MSNPs
+25 crosslinked ; nanogels ; multivalent ; gelation ; carboxylate ; slowly ; phosphonic ; polyaldehyde ;
+electr
+othermal
+
+;
+
+hydrogelators
+26 hydroxyapatite ; nanometer ; nitrite ; illustratively ; hap ; GAM ; hydroxyapatites ; whitlockite ; coralline
+;
+
+nanocrystallites
+27 multiplexed ; nanofluidic ; coumarin ; USP7 ; triterpene ; gastroesophageal ; benzodiazepine ; thiazole ;
+haptens
+
+;
+
+thiourea
+28 post ; nanoclusters ; nanostars ; mortem ; magic ; rhenium ; radiologic ; voluntarily ; MHA ;
+irr
+eversibility
+29 conductive ; nanocomposite ; prescribe ; form ; energize ; submicron ; bioelectronic ; robotics ;
+subdermal
+
+;
+
+contraceptive
+30 harvest ; nanostructures ; plasmonic ; harvester ; excitonic ; agronomically ; nanodisk ; shatter ;
+nanoca
+vities
+
+;
+
+LH2
+31 alternate ; nanoplatform ; Mn2 ; nanoplatforms ; Fe2 ; nanotheranostics ; polarise ; photoconversion ;
+big
+gest
+
+;
+
+MnFe2O4
+32 carbon ; nanotube ; form ; superhydrophobic ; polyimide ; multiwalled ; aminated ; polybasic ;
+electr
+oanalytical
+
+;
+
+allotrope
+33 electronics ; biosensing ; nanowires ; haptic ; MEMS ; ubiquitous ; NWs ; everyday ; printability ;
+micr
+owire
+34 reactor ; centre ; nanosized ; trench ; proteinase ; price ; radiodensity ; hoechst ; VLS ; propeptides
+35 atomic ; effectiveness ; nanosheets ; radioisotope ; stereolithography ; palladium ; THF ; IPL ; kelvin ;
+c
+oriolis
+36 require ; execute ; nanorods ; acidity ; invoke ; biomatrix ; underdevelop ; mall ; unsegmented ; stroller
+37 functional ; encapsulation ; nanowire ; microcapsules ; form ; medically ; colloidosome ;
+micr
+oencapsulate
+
+;
+
+xerogels
+
+;
+
+oscar
+38 barcoded ; accessibility ; nanospheres ; MNPs ; MNP ; nanovehicle ; NF1 ; vitreoretinal ; sci ;
+neur
+ofibromatosis
+39 characterise ; laminar ; nanocomposites ; intercalate ; tumoral ; CaM ; STA ; bionanocomposites ; grit ;
+nGO
+40 ATP ; adenosine ; nanovesicles ; glycolysis ; triphosphate ; homeostatic ; monophosphate ; nanovesicle
+;
+
+USH2A
+
+;
+
+A2A
+41 antitumor ; MCF ; nanobubbles ; NET ; nucleolin ; B7H3 ; usher ; L1CAM ; ADR ; nanoassemblies
+42 vaccine ; inventive ; nanocarrier ; NKG2D ; mimotope ; PDL1 ; telodendrimers ; SAHA ; nanovaccines ;
+ESO
+各文書情報は、2,261のトピックの組合せで表現されるが、ナノテク関連トピックの成分を有意に持つ文書
+はナノテクに関連するものと考えることができる。そこで、次の1）あるいは2）の条件を満たす文書を、そ
+れぞれ「ナノテク基礎技術」および「ナノテク応用技術」として抽出した。
+1）ナノテク基礎技術：ナノテク関連トピックのいずれかを最大成分（筆頭トピック）として有する
+2）ナノテク応用技術：ナノテク関連トピックのいずれかをウェイト2%以上で有する
+抽出されたナノテク関連論文・特許の件数を表4
+-2にまとめる。ナノテク基礎技術は、論文13,561件、特
+許4,748件の合計18,309件であった。ナノテク応用技術は、論文60,431件、特許20,673件の合計
+81,104件であった。ナノテク基礎技術とナノテク応用技術の中には、一部重複しているものもある。
+表4
+-2 　 ナノテク基礎/応用技術の文書数
+ナノテク基礎技術 ナノテク応用技術 （全体）
+論文数 13,561 60,431 （477,310）
+特許数 4,748 20,673 （196,976）
+合計 18,309 81,104 （674,286）
+38 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナノテクノロジーのライフサイエンス・臨床医学分野への展開
+4
+
+===== PDF_PAGE 44 =====
+4.2 ナノテク基礎/応用技術の俯瞰マップ分布
+ナノテク基礎技術とナノテク応用技術の論文と特許を合わせた全体、論文のみ、特許のみの俯瞰マップへの
+プロットを図 4-1に示す。ナノテク基礎技術全体は主にナノ粒子DDSとカーボンナノチューブセンサーに集中
+している。ほかにはナノポアシーケンスや、MRI造影剤ナノ粒子、ナノゲルDDS、がん免疫療法・ワクチンな
+どがある。特許に対して論文が優勢のため、全体プロットと論文のみプロットの分布はほぼ類似している。ナ
+ノテク基礎技術の特許は少なく、カーボンナノチューブセンサーやナノ粒子DDS、金ナノ粒子にのみ集積が見
+られる。
+ナノテク応用技術全体では、 「バイオセンサ」領域でカーボンナノチューブを中心とした周辺技術への広が
+りが見られる。また、ナノ粒子DDSの周辺においても、薬物放出DDS、MRI造影剤、骨組織工学、ハイド
+ロゲル組織工学、光温熱療法、基材、血液脳関門などへの展開がある。ナノテク応用技術の論文分布は、ナ
+ノテク基礎技術と同様に全体分布と類似している。特許では、 「バイオセンサ」領域でカーボンナノチューブセ
+ンサーのみに集中している。また、金ナノ粒子、ナノ粒子DDS、さらにその周辺の伝導性ナノコンポジット、
+MRI造影剤ナノ粒子に分布が見られる。
+(a) ナノテク基礎技術ー全体 (b) ナノテク基礎技術ー論文 (c) ナノテク基礎技術ー特許
+(d) ナノテク応用技術ー全体 (e) ナノテク応用技術ー論文 (f) ナノテク応用技術ー特許
+カーボン
+ナノチューブ
+ナノポア
+シーケンス 量子ドット
+蛍光プローブ
+ATP
+がん免疫療法
+ワクチン
+MRI造影剤
+ナノ粒子
+ナノ粒子
+DDS
+バイオセンサー
+ナノゲル
+DDS
+摩擦帯電型
+ナノ発電機
+カーボン
+ナノチューブ
+ナノ粒子
+DDS
+金ナノ粒子
+ナノポア
+シーケンス
+量子ドット
+蛍光プローブ
+ATP
+がん免疫療法
+ワクチン
+MRI造影剤
+ナノ粒子
+ナノ粒子
+DDS
+グルコース
+バイオセンサー
+ハイドロゲル
+組織工学
+骨組織工学
+生体模倣足場
+薬物放出
+DDS
+基材血液脳関門
+脳組織
+バイオセンサー
+金ナノ
+粒子
+光温熱療法
+カーボン
+ナノチューブ
+ナノポア
+シーケンス
+がん免疫療法
+ワクチン
+MRI造影剤
+ナノ粒子
+ナノ粒子
+DDS
+基材
+伝導性ナノ
+コンポジット 金ナノ粒子
+カーボン
+ナノチューブ
+ナノポア
+シーケンス 量子ドット
+蛍光プローブ
+ATP
+がん免疫療法
+ワクチン
+MRI造影剤
+ナノ粒子
+ナノ粒子
+DDS
+バイオセンサー
+ナノゲル
+DDS
+摩擦帯電型
+ナノ発電機
+カーボン
+ナノチューブ
+ナノポア
+シーケンス
+量子ドット
+蛍光プローブ
+ATP
+がん免疫療法
+ワクチン
+MRI造影剤
+ナノ粒子
+ナノ粒子
+DDS
+グルコース
+バイオセンサー
+ハイドロゲル
+組織工学
+骨組織工学
+生体模倣足場
+薬物放出
+DDS
+基材血液脳関門
+脳組織
+バイオセンサー
+金ナノ
+粒子
+光温熱療法
+カーボン
+ナノチューブ
+図4-1
+図4-1 　 ナノテク基礎／応用技術の俯瞰マップ分布
+4.3 ナノテク基礎/応用技術の経年変化
+ナノテク基礎技術とナノテク応用技術の論文と特許を合わせた全体数推移を、2001年から直近の2022年
+までを6年毎（前半2期）
+〜5
+年毎（後半2期）の4期間に分けてヒートマップで示す。年あたりの件数が比
+較可能なように感度の調節を施している。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+39CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナノテクノロジーのライフサイエンス・臨床医学分野への展開
+4
+
+===== PDF_PAGE 45 =====
+ナノテク基礎技術（図4-2）について、2001〜2006 年においてはカーボンナノチューブセンサのみに集
+中的な研究開発がある。2007〜2012
+年には、バイオセンサへの波及と、ナノ粒子DDSの出現が見られる。
+2013〜2
+017年になると、ナノ粒子DDSから付近のMRI造影剤ナノ粒子やナノゲルDDSへ波及し、また、
+ナノポアシーケンスや量子ドット蛍光プローブ、がん免疫療法・ワクチンが出現している。2018年以降では、
+件数の増加が緩やかになり、新規領域の出現も摩擦帯電型ナノ発電機のみとやや停滞傾向が伺える。
+(a) 2001～2006年（感度×5/6 ） (b) 2007～2012年（感度×5/6 ）
+(c) 2013～2017年 (d) 2018～2022年
+金ナノ
+粒子
+摩擦帯電型
+ナノ発電機ナノポア
+シーケンス
+量子ドット
+蛍光プローブ
+ATP
+がん免疫療法
+ワクチン
+MRI造影剤
+ナノ粒子
+ナノ粒子
+DDS
+バイオセンサー
+ナノゲル
+DDS
+カーボン
+ナノチューブ
+ナノ粒子
+DDS
+バイオセンサー
+カーボン
+ナノチューブ
+カーボン
+ナノチューブ
+カーボン
+ナノチューブ
+ナノポア
+シーケンス
+量子ドット
+蛍光プローブ
+ATP
+MRI造影剤
+ナノ粒子
+ナノ粒子
+DDS
+ナノゲル
+DDS
+がん免疫療法
+ワクチン
+図4-2
+図4-2 　 ナノテク基礎技術分布の経年変化
+ナノテク応用技術（図4-3）について、2001〜2006 年においてはナノテク基礎技術と同様にカーボンナノ
+チューブセンサーのみであったが、2007〜2012
+年には、 「バイオセンサ」領域で顕著な広がりが認められ、
+またナノ粒子DDSの出現と周辺への波及が起こっている。さらに、量子ドット蛍光プローブやわずかながらナ
+ノポアシーケンスの出現も見られる。2013〜2017
+年になると、 「DDS」領域を中心に多様な技術開発が展
+開され、薬物放出DDS、デンドリマーDDS、ナノゲルDDSなどが出現している。また、骨組織工学、ハイド
+ロゲル組織工学、がん免疫療法・ワクチンも出現した。ナノポアシーケンスは一層の存在感を増している。
+2018年以降では、シーケンス、物理センサー、アップコンバージョンナノ粒子、光温熱療法、血液脳関門、
+ECL（電気化学発光） 、細胞外小胞など、よりマップ周辺の技術へと応用が展開している。がん免疫療法・ワ
+クチン、血液脳関門の出現は、ナノ医薬・DDS開発の方向性に関連すると解釈できる。また、ECL（電気化
+学発光）はバイオセンサの近年の潮流を示している。
+40 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナノテクノロジーのライフサイエンス・臨床医学分野への展開
+4
+
+===== PDF_PAGE 46 =====
+(a) 2001～2006年（感度×5/6 ） (b) 2007～2012年（感度×5/6 ）
+(c) 2013～2017年 (d) 2018～2022年
+シークエンスECL
+（電気化学発光）
+物理センサー
+血液脳関門
+脳組織 脂質二重層
+脂質膜
+細胞外小胞
+光温熱療法
+アップコンバー
+ジョンナノ粒子
+摩擦帯電型
+ナノ発電機
+MRI造影剤
+ナノ粒子
+ナノ粒子
+DDS
+薬物放出
+DDS
+ハイドロゲル
+組織工学
+骨組織工学
+生体模倣足場
+グラフェン
+量子ドット
+デンドリマー
+DDSナノゲル
+DDS
+金ナノ
+粒子
+グルコース
+バイオセンサー
+ナノポア
+シーケンス
+量子ドット
+蛍光プローブ
+MRI造影剤
+ナノ粒子
+カーボン
+ナノチューブ
+ナノ粒子
+DDS
+バイオセンサー
+カーボン
+ナノチューブ
+グルコース
+バイオセンサー
+バイオセンサー
+カーボン
+ナノチューブ
+ナノポア
+シーケンス
+量子ドット
+蛍光プローブ
+ATP
+がん免疫療法
+ワクチン
+図4-3
+図4-3 　 ナノテク応用技術分布の経年変化
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+41CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+ナノテクノロジーのライフサイエンス・臨床医学分野への展開
+4
+
+===== PDF_PAGE 47 =====
+本調査では、ナノテクノロジー・材料科学分野とライフサイエンス・臨床医学分野との融合的な技術分野に
+ついて、俯瞰マップの作成により研究開発動向の俯瞰的な分析を行った。さらに、技術領域およびキーフレー
+ズ単位での成長可能性判定を行った。
+本融合分野に関連する論文477,310件の俯瞰マップでは、生体分子設計や幹細胞技術を中心として、生体
+に適用される材料・デバイスと、疾患・生命科学研究が左右に分かれて配置された。特許198,093件の俯瞰
+マップでは、ナノ材料技術が中心となり、医用材料、診断・分析デバイス、治療・創薬技術が周辺に分かれた。
+論文と特許を統合した俯瞰マップは、 「計測・分析デバイス」 「医用材料工学」 「基礎生命科学」 「医療」の4
+つに大きく分かれ、より中核に位置する「計測・分析デバイス」が他分野で利用される技術を提供する構造
+が明示された。また、 「医療」 および「基礎生命科学」 に含まれる 「遺伝子発現機構」領域は論文が優性となっ
+ており、 「計測・分析デバイス」は特許が優性となっていた。論文と特許の割合分布から、特許の多いウェア
+ラブルデバイス、基材、生体用接着剤などは俯瞰マップ中央に集積しており、医療・ヘルスケア応用で実用的
+なツールとして利用されている一方、他の技術領域では産業化がまだ十分に進んでいない、あるいは基礎科
+学研究の性格が強いことが示唆された。
+俯瞰マップ上の論文・特許分布の経年変化について、2001〜2
+006年には、抗原、基材、生体用接着剤
+などの特許が多いが、2007年以降に「遺伝子発現機構」領域や「バイオセンサ」領域で論文数が増加し、
+2013〜2017
+年にはDDS技術や幹細胞技術やバイオマテリアル関係、2018年以降には特に「がん」領域
+の論文数が顕著となっている。特許の増加は論文よりも緩やかであるが、2013年以降には「ウェアラブルデ
+バイス」領域やマイクロ流体技術、2018年以降にはシーケンスやゲノム編集技術の開発が盛んになっている。
+また、今後成長する可能性のある技術領域として、論文では「がん」領域一帯、シーケンス技術、転写因子、
+RNA編集などが抽出された。特許では、マイクロ流体デバイスやDDS関連技術、組織工学技術などが今後
+も成長が見込まれると判定された。
+国別の分析では、論文数、特許数ともに中国と米国が他国を圧倒しており、日本は論文数で5位、特許数
+で3位であった（2001〜2022
+年の全件数） 。俯瞰マップ上の論文分布は、米国は「遺伝子発現機構」領域、
+中国は「がん」や「バイオセンサ」 、 「DDS」領域が多い。日本は「遺伝子発現機構」領域や幹細胞関連技
+術が目立つ。特許分布は、各国とも「計測・分析デバイス」に集中するが、中国は「バイオセンサ」領域や
+幹細胞技術、米国はDDS技術や医用基材などへも注力が見られた。
+論文の研究機関別分析では、カリフォルニア大学、中国科学院を筆頭とする米国と中国の機関が論文数上
+位のほとんどを占める結果となった。特許の出願人別分析では、中国科学院が突出して特許数が多いが、特
+許数上位には米国や日本、韓国など各国からの出願人も入った。
+より文書件数の少ないエマージング技術の探索のため、キーフレーズ抽出による成長可能性の判定を行っ
+たところ、上位にはがんやCOVID-19関連が目立ったほか、CAR-T細胞、シングルセルRNAシーケンス、
+エクソソームなどが含まれた。ナノテク関連のキーフレーズを選択的に抽出、成長可能性判定したところ、ナ
+ノ医薬やDDS関連技術が上位に挙がった。加えて、ナノポアシーケンスの技術も目立ち、特にハイスループッ
+ト化や網羅性を追求する方向性が見出された。
+ナノテクに関連する基礎技術（18,309件）および応用技術（81,104件）は、いずれも文献優勢の構成で
+あった。件数の年推移は、ナノテク基礎/応用技術ともに増加しているが、ナノテク基礎技術は近年やや停滞
+傾向にある。俯瞰マップ上の分布では、 ナノテク基礎技術は2001
+〜2006
+年のカーボンナノチューブセンサー
+から始まり、2007年以降は「バイオセンサ」領域とナノ粒子DDS付近で技術展開している。ナノテク利用技
+術は、同じく2001〜2006
+年のカーボンナノチューブセンサーから、2007年以降は「バイオセンサ」領域、
+5 まとめ
+42 CRDS-FY2023-RR-01
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+まとめ
+5
+
+===== PDF_PAGE 48 =====
+「DDS」領域、さらにナノポアシーケンスや組織工学技術、がん免疫療法・ワクチンなどにも広がった。
+2018年以降においては、アップコンバージョンナノ粒子、光温熱療法、ECL（電気化学発光） 、細胞外小胞
+など、マップのより周辺的技術へも展開されている。
+本調査により、ナノテクノロジー・材料分野とライフサイエンス・臨床医学分野が密接な連なりを持って展
+開してきていることが改めて確認された。ナノテクノロジー・材料分野が提供する「計測・分析デバイス」を、
+ライフサイエンス・臨床医学分野が利用する、というのが典型的な構造の一つではある。しかし、研究開発
+が先行する論文情報を見れば、 「生体分子設計」領域と「幹細胞技術」領域といった“創る”技術が、生命
+現象の理解や（医療への）利用のための中核として両分野をつないでいる関係性を見出すことができるし、 「炎
+症」領域と「バイオマテリアル」領域の連なりも、その理解と利用には欠かせないと理解できる。さらに、ナ
+ノテクノロジーに注目すれば、DDS等の技術と連動して出現するがん免疫療法・ワクチン、血液脳関門も、ナ
+ノ医薬のターゲティングの方向性を示唆するものである。
+今後、ナノテクノロジー・材料分野には、ライフサイエンス・臨床医学分野に資する「計測・分析デバイス」
+を開発していくことが引き続き求められるが、上述のように両分野の関係性が計測・分析に留まらないこと、
+さらに、両分野が互いに発展を支えあう相補的あるいは一体的な関係にあることは強調が必要であろう。生
+体内の環境・制御機構や炎症・疾患への理解は、有効な計測・分析デバイスの開発や、機能性生体分子の
+創製、バイオマテリアルやDDS技術の臨床効果の実現において、欠くことはできない。同時に、新たな計測・
+分析デバイスや機能性生体分子、医療ツールの開発は、生命現象の理解や医療技術を押し上げることにつな
+がる。
+このような一体的な発展の中、今後新たな技術の出現や生命現象の発見によって、両分野間に新たな接面
+が生じる可能性もある。また、この度の調査では扱いきれなかった農業・バイオものづくりや、生体の物理的
+（特に力学的）応答に関する研究開発動向も、今後の調査課題である。両分野が常に連動していることを理
+解し、俯瞰的視点で調査を継続していくことが必要であろう。
+CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
+43CRDS-FY2023-RR-01
+調査報告書　　論文・特許マップで見るナノ テクノ ロジー・材料科学とライフサイエンス・臨床医学の融合展開
+まとめ
+5
+
+===== PDF_PAGE 49 =====
+
+
+===== PDF_PAGE 50 =====
+作成メンバー
+髙村
+
+彩里 フェロー （ナノテクノロジー・材料ユニット）
+沼澤
+
+修平 フェロー （ナノテクノロジー・材料ユニット）
+眞子
+
+隆志 フェロー／ユニットリーダー （ナノテクノロジー・材料ユニット）
+福井
+ 弘
+行 フェロー （ナノテクノロジー・材料ユニット）
+CRDS-FY2023-RR-01調査報告書
+論文・特許マップで見るナノテクノ ロジー・材料科学と
+ライフサイエンス・臨床医学の融合展開
+令和5年7月　July 2023
+国立研究開発法人科学技術振興機構　研究開発戦略
+センター
+Center for Research and Development Strategy, Japan Science and T echnology Agency
+〒102-0076 東京都千代田区五番町7 K’s 五番町
+電話 03-5214-7481
+E-mail crds@jst.go.jp
+https://www.jst.go.jp/crds/
+本書は著作権法等によって著作権が保護された著作物です。
+著作権法で認められた場合を除き、本書の全部又は一部を許可無く複写・複製することを禁じます。
+引用を行う際は、必ず出典を記述願います。
+なお、本報告書の参考文献としてインターネット上の情報が掲載されている場合には、本報告書の発行日の1ヶ月前の日付で入手しているものです。
+上記日付以降後の情報の更新は行わないものとします。
+This publication is protected by copyright law and international treaties.
+No part of this publication may be copied or reproduced in any form or by any means without permission of JST,
+except to the extent permitted by applicable law.
+Any quotations must be appropriately acknowledged.
+If you wish to copy, reproduce, display or otherwise use this publication, please contact crds@jst.go.jp.
+Please note that all web references in this report were last checked one month prior to publication.
+CRDS is not responsible for any changes in content after this date.
+ISBN 978-4-88890-867-2
+
+===== PDF_PAGE 51 =====
+FOR THE F/U.alt01T/U.alt01RE OF
+SCIE/N.alt01CE /A.alt01/N.alt01D
+SOCIETY
+https://www.jst.go.jp/crds/
+CRDS-FY2023-RR-01
+ɾ ෼ੳ
+ISBN 978-4-88890-867-2
+ॻ
+ల։
+೥
+݄
+JST CRDS
+ॻ
+ΔφϊςΫϊϩδʔɾ
+ͷ
+ల։

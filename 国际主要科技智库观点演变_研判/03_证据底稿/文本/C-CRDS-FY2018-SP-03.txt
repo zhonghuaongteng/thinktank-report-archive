@@ -1,0 +1,2125 @@
+
+===== PDF_PAGE 1 =====
+ISBN 978-4-88890-615-9
+　戦略プロポーザル　
+AI応用システムの安全性 ・ 信頼性を
+確保する新世代ソフトウェア工学の確立
+Toward new-generation software engineering to
+guarantee safety and reliability of
+AI application systems
+国立研究開発法人科学技術振興機構　研究開発戦略セ ンター
+,
+CRDS-FY2018-SP-03
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+平成
+30年
+12月
+戦略プロポーザル
+
+===== PDF_PAGE 2 =====
+研究開発戦略センター （CRDS） は、 国の科学技術イノベーション政策に関する調査、 分析、
+提案を中立的な立場に立って行う公的シンクタンクの一つで、文 部 科 学 省 を 主 務 省 と する国
+立研究開発法人科学技術振興機構 （JST） に属し ています 。
+　CRDS は、科学技術分野全体像の把握（俯瞰）、社会的期待の分析、国内外の動向調査
+や国際比較を踏まえて、さまざまな分野の専門家や政策立案者との対話を通じて、「戦略プ
+ロポーザル」を作成します。
+　「戦略プロポーザル」は、今後国として重点的に取り組むべき研究開発の戦略や、科学技
+術イノベーション政策上の重要課題についての提案をまとめたものとして、政策立案者や
+関連研究者へ配布し、広く公表します。
+　公的な科学技術研究は 、個々の研究領域の振興だけでなく 、それらの統合によって社会
+的な期待に応えることが重要です。「戦略プロポーザル」が国の政策立案に活用され、科学
+技術イノベーションの実現や社会的な課題の解決に寄与することを期待しています。
+　さらに詳細は、下記ウェブサイトをご覧下さい。
+　 http://www.jst.go.jp/crds/about/
+
+===== PDF_PAGE 3 =====
+エグゼクティブサマリー
+஌ೳʢAIɿArtiﬁcial Intelligenceʣͷୈ 3ݗ
+शʢσΟʔϓϥʔχϯάɿDeep Learningց
+ϝσΟΞΛ೐Θ͍ͤͯΔ͚ͩ
+଎ʹ
+͕͍ͬͯΔɻ
+͢Δ΋ͷͰ͋Γɺϓ
+͢Δैདྷͷ։ൃελΠϧͱ͸େ͖͘ҟͳͬ
+ज़͸ඞ
+͑ํ͕ඞཁʹͳΔɻ
+͖͍ͯΔͷͰ͋Δɻ
+৽͞Εɺ
+ࣦ
+ज़Λ
+ձ
+೦΋͋Δɻ
+׵
+͠ɺAIྗʹਪਐ͞Ε͍ͯΔͷʹൺ΂ͯɺͦΕ
+։ൃʹ͍ͭͯ͸ɺ·ͩऔΓ
+૊Έ͕े෼Ͱͳ͍ɻ
+ͦ͜ͰɺຊϓϩϙʔβϧͰ͸ʮAI։ൃΛ
+Խ͢Δ͜ͱΛఏҊ͢Δɻ
+཰Α͘γεςϜ։ൃ͢
+ͷதͰ੔උ͞Ε͖ͯͨɻͦΕʹର͠ɺAIιϑτ
+ܕ
+Ή AIอ͢Δ
+ज़ɾํ๏࿦Λҙຯ͢Δɻ
+ΛʮAIʯͱ
+ʯ ɺւ֎Ͱ͸ʮSoftware 2.0͹ΕΔ΋ͷ͕ɺ͜Ε
+ʹ΄΅૬౰͢Δɻ
+AIࡍࠃ
+։ൃ՝୊Λɺ2 ͭͷ໘͔Β͋͛Δɻ1 ͭ͸ʮAI ιϑτ΢ΣΞ
+ԽʯͰ͋Γɺ΋͏ 1ज़νϟϨϯδʯͰ͋Δɻ
+อ͸ɺ1ज़ʹΑͬͯୡ੒͠ಘΔ΋ͷͰ͸ͳ
+௨͠Α͘ɺόϥ
+ͯ͠ɺશମ૾ͱͯ͠ͷ
+Λඳ͖ͭͭਐΊΔͱ͍͏ҙຯͰɺ ʮAI՝୊ͱ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+i
+
+===== PDF_PAGE 4 =====
+ͯ͋͛ͨ͠ɻ
+·ͨɺAIతͳऔΓ૊Έ͸ɺ ʢAફ͔ΒಘΒ
+Խ͍ͯ͘͠Ξϓϩʔν΍ʢBͷΞϓϩʔν
+͕ՄೳͰ͋Δɻ͜ΕΒͷ͏ͪΞϓϩʔνʢAͣͱਐΜͰ͍͘ʹҧ͍
+ຊతͳऔΓ૊
+Έͱͯ͠ɺΞϓϩʔνʢBͰ͋Δɻ
+քΛத৺ͱͨ͠ΞϓϩʔνʢAͷΞ
+ϓϩʔνʢBʣʹ͍ͭͯ΋ॏ఺ਪਐ͢΂͖ͱ͍͏ͷ͕ɺ2ͱ
+ज़νϟϨϯδͱ
+อɺᶅϒϥοΫϘο
+తͳ࿮૊Έͱ͍͏ 4 ͭΛ͋͛Δɻ
+ఆ
+͠
+ΊΒΕΔɻ
+͜ͷΑ͏ͳ AIͯ͡
+͑
+ͱͳΔɻ
+ Λτοϓμ΢ϯʹՃ଎
+ ૪
+Խ
+ ఆˍඪ४Խɺͱ͍͏3 ͭͷ
+ͤͯ͞ਪਐ
+ ূ͠ɺଞ෼໺΁ల։
+ ਪਐ
+ձͷ༷ʑͳγεςϜʹAI·Ε͍ͯ͘தͰɺͦΕΒγε
+อ͠ɺ·ͨɺAI૪
+Ί͍ͯͨ͘ΊʹɺAIͰ͋Δɻ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+ii
+
+===== PDF_PAGE 5 =====
+Executive Summary
+We are now in the third Artiﬁcial Intelligence ʢAIʣ boom. What is driving this boom
+is ʠDeep Learningʡ and other forms of machine learning technology. Machine learning
+technology does not only excite the research community and print media. It is also
+embedded into various systems and rapidly put into practical use in the real world.
+Machine learning technology inductively defines a systemʟ s operation from vast
+amounts of data, and thus it differs greatly from the conventional development
+style whereby a program code is written and then the system is deﬁned accordingly.
+Therefore, the methodologies and technologies that have been built and developed for
+conventional software engineering are not always applicable. This makes a new way of
+thinking necessary for the deﬁnition of system requirements, performance guarantee,
+and quality assurance. Hence a paradigm shift is occurring in the system development.
+With this paradigm shift, the skills and methodologies required for system
+development need to be renewed, and the software industry and system integrators
+may lose its competitiveness if they fail to keep up with this shift. Moreover, if systems
+embedded with machine learning technology rapidly appear in society, even as
+approaches to performance guarantee and quality assurance remain undeveloped, the
+resulting difﬁculties and accidents could produce unexpected social problems.
+The paradigm shift in system development that is described here could have major
+implications for the industrial world. However, in comparison to R&D on AI and
+machine learning technology themselves, R&D to methodologies for developing the
+systems remains insufﬁcient.
+In light of this, we, through this proposal, aim to establish ʠAI software engineeringʡ
+and recommend the promotion and strengthening of R&D for this purpose.
+In the case of conventional system development, technologies and methodologies
+for maintaining safety and reliability and developing systems efficiently have been
+established within software engineering. On the other hand, AI software engineering
+could be described as ʠnext-generation software engineering.ʡ It targets not only
+conventional systems but also systems that apply AI, including machine learning-type
+components, and refers to technologies and methodologies for maintaining safety and
+reliability in them.
+It should be noted that, while we refer to this kind of next-generation software
+engineering as ʠAI software engineeringʡ in this proposal, it roughly corresponds to
+what is known as ʠmachine learning systems engineeringʡ in Japan and as ʠSoftware
+2.0ʡ in other countries.
+We view R&D themes for developing and establishing AI software engineering as
+a new academic field and for Japanʟ s attainment of international competitiveness
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+iii
+STRATEGIC PROPOSAL
+Toward new-generation software engineering to guarantee safety and reliability of AI application systems
+
+===== PDF_PAGE 6 =====
+in this technology from two aspects. The ﬁrst is the ʠsystematization of AI software
+engineeringʡ and the second is ʠimportant technical challenges as basic research.ʡ
+First, system safety and reliability cannot be achieved with just one technology; they
+must be attained through multifaceted and comprehensive initiatives. They must be
+tackled with clear vision and good balance and with a grasp of the whole picture. Thus,
+we put forth ʠthe systematization of AI software engineeringʡ as a research theme in
+the sense of preparing a technical system with a panoramic view and in parallel with
+the development of individual technologies.
+Additionally, multifaceted and comprehensive initiatives to AI software engineering
+could make the following approaches: involving the systematization of knowledge
+gained from practical application ʢʠApproach Aʡʣ, and an approach involving academic
+study concerning theory and principles ʢʠApproach Bʡʣ. Of these, Approach A will
+certainly take place naturally, particularly in industry. On the other hand, Approach B
+is essential as a more fundamental way of dealing with the paradigm shift in system
+development.
+Our belief that, rather than leaving things to Approach A, which is primarily
+focused on industry, the national government should also put priority on promoting
+Approach B for academic research. This the reason why we put forth ʠimportant
+technical challenges as basic researchʡ as the second R&D theme. Here, we present
+the following four challenges as being particularly important: ʢ1ʣ quality assurance in
+machine learning in and of itself; ʢ2ʣ ensuring safety in the entire system; ʢ3ʣ tackling
+the ʠblack boxʡ problem; and ʢ4ʣ design of an engineering framework for efﬁciently
+resolving problems.
+Furthermore, in addition to basic research topics, the government should
+simultaneously study the formulation of safety standards ʢand mechanisms for third-
+party evaluation ʣ and intellectual property rights concerning the reuse of trained
+models.
+New management measures must be implemented to promote this kind of R&D in AI
+software engineering. The following policies and approaches will be the key to designing
+and executing effective measures.
+ ˔ Top-down acceleration of problem-solving-oriented basic research
+ ˔ Promotion of the technical fusing of AI and software engineering, creation of new
+technical ﬁelds, and reinforcement of business competitiveness
+ ˔ Promotion based on the close linkage of three activities; namely, ʢ1ʣ academic
+research and human resources development, ʢ2ʣ technical validation in practical
+application, and ʢ3ʣ standardization
+ ˔ Advance validation in the emerging competitive ﬁeld of automated driving and
+expansion to other ﬁelds
+ ˔ Prompt promotion of measures that take advantage of Japanʟs existing superiority
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+iv
+STRATEGIC PROPOSAL
+Toward new-generation software engineering to guarantee safety and reliability of AI application systems
+
+===== PDF_PAGE 7 =====
+As was stated above, at a time when AI and machine learning technologies are
+becoming embedded in the various systems of society, the promotion and establishment
+of AI software engineering are essential for securing the safety and reliability of those
+systems and for raising Japanʟs international competitiveness by using the quality of
+its AI and machine learning as an advantage.
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+v
+STRATEGIC PROPOSAL
+Toward new-generation software engineering to guarantee safety and reliability of AI application systems
+
+===== PDF_PAGE 8 =====
+
+
+===== PDF_PAGE 9 =====
+目　　次
+エグゼクティブサマリー
+Executive Summary
+１．研究開発の内容 ･･････････････････････････････････････････････････････････ 1
+２．研究開発を実施する意義 ･･････････････････････････････････････････････････ 5
+　　２－１．現状認識および問題点 ････････････････････････････････････････････ 5
+　　２－２．社会・経済的効果 ････････････････････････････････････････････････ 12
+　　２－３．科学技術上の効果 ････････････････････････････････････････････････ 12
+３．具体的な研究開発課題 ････････････････････････････････････････････････････ 14
+４．研究開発の推進方法および時間軸 ･･････････････････････････････････････････ 23
+付録１．検討の経緯 ･･････････････････････････････････････････････････････････ 28
+付録２．国内外の状況 ････････････････････････････････････････････････････････ 35
+付録３．専門用語説明 ････････････････････････････････････････････････････････ 38
+付録４．参考文献 ････････････････････････････････････････････････････････････ 40
+【コラム】
+①「AI ソフトウェア工学」という名称についての補足
+②機械学習の簡単なイントロダクション
+③ DARPA の XAI プロジェクト
+④もう一つの課題：擬人化インタフェース設計
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+
+===== PDF_PAGE 10 =====
+
+
+===== PDF_PAGE 11 =====
+１．研究開発の内容
+Λ·ͱΊͨʮAIʯ͸ɺAI Ԡ༻γεςϜͷ҆શ
+͢ɻ͢ͳΘͪɺϓϩάϥϜʢखଓ͖ʣ
+͢Δ͜ͱʹΑ
+อͰ
+ʹର
+ͯ͠ɺAIֶ޻
+ΛɺຊϓϩϙʔβϧͰ͸ʮAIͿʢਤ 1ʣɻ
+図 1　新世代ソフトウェア工学
+AIࠃ
+։ൃ՝୊͸ɺ2 ͭͷ໘͔Β͋͛ΒΕΔɻ1 ͭ͸ʮAI ιϑτ
+ԽʯͰ͋Γɺ΋͏1ज़νϟϨϯδʯͰ͋
+Δɻ
+อ͸ɺ1ज़ʹΑͬͯୡ੒͠ಘΔ΋ͷͰ͸ͳ
+௨͠Α͘ɺόϥ
+ͯ͠ʮAIιϑτ΢ΣΞ
+ԽʯΛਐΊΔ͜ͱ͕ॏཁͰ͋Δɻ
+·ͨɺAIతͳऔΓ૊Έ͸ɺ ʢAફ͔ΒಘΒ
+Խ͍ͯ͘͠Ξϓϩʔν΍ʢBͷΞϓϩʔν
+͕ՄೳͰ͋Δɻ͜ΕΒͷ͏ͪΞϓϩʔνʢAͣͱਐΜͰ͍͘ʹҧ͍
+ຊతͳऔΓ૊
+Έͱͯ͠ɺΞϓϩʔνʢBͰ͋Δɻ
+ຊϓϩϙʔβϧͰ͸ɺΞϓϩʔνʢBज़νϟϨϯ
+อɺᶅϒ
+తͳ࿮૊Έͱ͍͏4 ͭͷॏཁͳ
+ΊΒΕΔ՝୊
+Θ
+ΊΒΕΔɻ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+1
+研究開発の内容1.
+
+===== PDF_PAGE 12 =====
+ҎԼɺ4ཁΛड़΂Δɻ
+อূ
+ฏੑ౳ʣͷཧ࿦΍ςετख๏͕ඞཁͰ
+߹
+Έ
+͑ΒΕΔɻ
+อ
+ܭ
+ίϯϙʔωϯτ͕100% อূ͸Ͱ͖ͳ͍͜ͱΛ૝ఆͨ͠શମ
+ͷೖྗɾग़ྗΛϞχλϦϯάͯ͠ɺྫ֎ॲཧ΍ϦΧόϦʔॲ
+Ͱ͋Δɻ
+ࡦ
+श͕൑ఆͨ͠ͱ͖ɺͦͷཧ༝Λਓ
+͕ϒϥοΫ
+΍
+Λ༧ଌ͢Δ͜ͱ͕೉͘͠ɺγεςϜͷ
+ɺ
+ͷղ
+༧ଌͷ༰қʹ͢Δ͜ͱ͕
+ΊΒΕΔɻ
+తͳ࿮૊Έ
+཰తͳ໰୊ղ๏Λ
+͕ओྲྀʹͳͬͯ
+ਪ࿦΋ॏཁͰ͋ΔɻͦΕΒͷ͋Δ΂͖૊Έ
+͢Δ͜ͱ͸ɺAI Ԡ༻γεςϜͷΞʔΩςΫνϟʔ
+ͱ͍͏໘ͰॏཁͰ͋Δɻ
+ۀ࢈
+ূɺ͓ΑͼɺAIఆͱඪ४Խ΋
+ͯ͠ਪਐ͍ͯ͘͜͠ͱ͕ɺAIʹ͓͍ͯ AI֬
+อʹͭͳ͕Δɻ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+2
+
+===== PDF_PAGE 13 =====
+【コラム①】 「AI ソフトウェア工学」という名称についての補足
+ʹରͯ͠ʮ AIʯͱ͍
+ί
+ֶ޻
+ʦ1ʧʦ2ʧ
+ʯʮSoftware 2.0
+ʦ3ʧ
+ʯʮMachine Teaching
+ʦ4ʧ
+ʯ౳ͱ
+͍ͤͯΔ͕ɺ
+ʯͱ͍͏໊শ͕ఆணͭͭ͋͠Γɺւ֎Ͱ͸ʮSoftware 2.0ʯͱ͍͏
+ʯ͸Preferred NetworksʹΑΔ໋
+໊Ͱɺ2018 ೥ 4ձʢ
+Machine Learning
+Systems Engineering
+ɺུ শɿMLSEಈ͍ͯ͠Δɻ ʮSoftware
+2.0
+ʯ͸Tesla ͷAI ෦໳௕Ͱ͋Δ Andrej Karpathyۙ࠷1ձ
+͕͍ͬͯΔɻ͠
+ཱ͞Ε͍ͯͳ͍ɻ͜ͷΑ͏
+ʯ΍ʮSoftware 2.0ɺ
+ዧ͞Εͨɻͦ͜Ͱɺ
+ຊϓϩϙʔβϧͰ͸ɺ͋͑ͯʮAIʯͱ͍͏৽ͨͳ໊শΛ༻͍ͨɻ
+ͨͩ͠ɺ ʮAIʯͱ͍͏໊শʹ͍ͭͯ΋ 2࿦͕͋Δɻ
+1 ఺໨͸ʮAI΍είʔϓ͕ᐆດʹͳΔͱ
+ٕ
+৺͔Β͸ʮAIͰ͋
+఺͔ΒʮAI͠΍͍͢ɻ·
+शҎ֎ʹ΋ɺAI Ԡ༻γεςϜ։ൃͰ৽ͨͳ໰୊ΛੜΉཁҼ͕͋ΓಘΔ͜ͱ͔Βɺ
+ͯ͠͸ɺ ί
+ϥϜᶆͰऔΓ্͍͛ͯΔʣ
+2೦Ͱ͋ΔɻAIԠ༻γεςϜͷ
+ʣ͚ͩͰͳ
+อূ
+޻
+ΊͯऔΓ૊Ήͷ͕Α͍ɻͦ͜
+Խ͍ͯ͜͠͏ͱ͍͏ཱ
+౼͕ͨ͠ɺւ
+֎ͰʮSoftware 2.0͹Ε͍ͯΔΑ͏ʹɺ΍͸Γத৺͸ιϑτ΢ΣΞʹ͋Δɻ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+3
+研究開発の内容1.
+
+===== PDF_PAGE 14 =====
+【コラム②】機械学習の簡単なイントロダクション
+ͱಉఔ౓͋Δ͍͸ͦ
+ڈ
+ݕ
+ՄೳʹͳΔ
+ʦ5ʧ
+ɻ
+श͸େ͖͘2 ͭͷॲཧε
+ςοϓʹ෼͔ΕΔɻਤ2͢Α
+͏ ʹ ɺʢA࿅εςοϓͱʢ Bʣ
+൑ఆεςοϓͰ͋Δɻ ʢA܇
+ଇੑΛ
+ͨ͠Ϟ
+ΈϞσϧʣΛग़ྗ͢
+Δ ɻʢBʣ͸ɺ৽ͨͳೖྗσʔλ
+͢Δ͜
+ͱʹΑͬͯɺ൑ผɾ෼ྨɺ༧ଌɺ
+݁
+ՌΛग़ྗ͢Δɻ
+ਤ3ͨ͠΋ͷ
+ଇੑ͕༧ଌ
+஌ʹར༻͞ΕΔྫͰ͋Δɻ
+図 3　機械学習における規則性の発見と利用ʢग़యʦ5ʧʣ
+ʢAशεςοϓɺ ʢBͰ͸ͦΕͧΕ
+͡
+࿅ʯ͢ΔεςοϓͰ͋Δɻಉ༷ͷཧ༝͔Βσʔλ΍Ϟσϧʹͭ
+ΈϞσϧʯ
+ʦ2ʧ
+ݺ
+ͷॲཧ͕Πϝʔδ͞ΕΔ͕ɺ ʢBΈϞσϧͱͷর
+ࠞ
+ಉΛආ͚ΔͨΊʹ΋ɺ ʢB༿Λ༻͍Δɻ
+図 2　機械学習の処理ステップ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+4
+
+===== PDF_PAGE 15 =====
+２．研究開発を実施する意義
+２－１．現状認識および問題点
+２－１－１　機械学習技術の進化とインパクト
+ɺୈ 3 ࣍AIशΛ͸͡Ίͱ
+ज़Ͱ͋Δ
+ʦ5ʧ
+ज़͸ɺ͍Θ͹ʮલྫʹ฿͏AIʯͰ͋Γɺଟ਺ͷલ
+ग़͠ɺ৽ͨʹ༩͑ΒΕͨσʔλʹର
+஌౳ʣ͕Ͱ͖ΔΑ͏ʹͳΔɻ
+໛ͷେ͖͍ଟ૚χϡʔϥϧ
+ωοτϫʔΫʢDeep Neural Networkɺਤ 4ʣΛ༻
+ज़͸ɺ༷ʑͳಛ
+Λ্ճΔਫ਼౓Λୡ੒ͯ͠஫໨Λཋͼͯ
+͍Δɻਤ 5໛ը૾σʔληοτΛ༻
+ίϯϖςΟγϣϯ ILSVRCʢ
+The
+ImageNet
+Large Scale Visual Recognition
+Challengeͨ͠΋
+ͷͰ͋Δɻ2012Τϥʔ͕
+ʹ 10%͞Εɺ
+ޙ3ͷਫ਼౓Λ্ճΔΑ͏ʹͳͬͨɻ
+ଇ
+ੑ͸ɺଟ૚χϡʔϥϧωοτ
+ϫʔΫதͷϦϯΫͷॏΈͱ͍͏
+ʹͱͬͯ໌
+ଇͱͯ͠ཧղ͢Δ͜ͱ
+೉ͳ΋ͷʢ͍ΘΏΔϒϥο
+श
+஌Խ͢Δ͜ͱ೉
+ಈ
+ؒ
+Λ্ճΔਫ਼౓ͷୡ੒ΛՄೳʹ͠
+͑ΒΕΔɻ
+２－１－２　システム開発方法のパラダイム転換
+ϝσΟΞΛ೐
+ٸ
+͕͍ͬͯΔɻ
+͢Δ͜ͱ͕Ͱ͖
+͢Δैདྷͷʢԋ៷తͳʣ։
+ஙɾ੔උ͞Ε͖ͯͨ
+図 4　多層ニューラルネットワーク
+図 5　 ILSVRC トップチームのエラー率の推移
+ʢhttp://www.image-net.org/challenges/LSVRC/ ੒ʣ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+5
+研究開発を実施する意義2.
+
+===== PDF_PAGE 16 =====
+͑
+͖͍ͯΔ
+ʦ1ʧʦ2ʧʦ3ʧʦ4ʧ
+ͷͰ͋Δʢਤ 6ʣɻ
+ਤ6ʹ͍ͭͯઆ໌͢Δɻਤ6ͨ͠Α͏ʹɺγ
+·Γɺ ʮϓϩάϥϜΛॻ
+͢Δʯͱ͍͏৽͍͠ํ๏͕ੜ·Ε͖ͯͨɻ
+ͦΕʹͭΕͯɺICT͕͖ͬͯͨɻ͜ͷྲྀΕͷதͰʮσʔλ
+ೲ
+Δ͜ͱ͕Ͱ͖Δɻਤ 6͕ͨ͠ɺγεςϜʹ
+Λ͍ͤͨ͞ͱ͖ɺ ैདྷͷԋ៷త։ൃͰ͸ɺ ྫ͑͹ʮԹ౓ηϯ
+αʼ 90ΊͯϓϩάϥϜΛॻ͘ͷʹରͯ͠ɺ
+͕ҟৗྫɾਖ਼ৗྫͷσʔλΛ༩͑ΔͱɺγεςϜ
+ಘ͢Δɻͳ͓ɺγεςϜ։ൃͷ͢΂͕ͯʮσʔλΛ
+͢Δʯํ๏ʹͳΔΘ͚Ͱ͸ͳ͘ɺ ʮ࿦ཧճ࿏Λ૊Ήʯ ʮϓϩάϥϜΛॻ͘ʯ ʮσʔλΛྫ
+͢Δʯͱ͍͏ 3ΒΕ͍ͯ͘͜ͱʹͳΔɻ
+２－１－３　対応遅れが招く社会的 ･ 産業的ダメージ
+͖͍ͯΔ͜ͱʹରͯ͠ɺ ରԠ͕஗ΕΔͱɺ
+೦͞ΕΔɻ
+（1）産業的な問題：人材スキルや方法論の刷新
+ʹ
+ೲతͳγε
+͑
+༂Ͱ͖Δ
+ज़΍ɺͦΕΒΛ
+৽ʹ௥ै
+ࣦ
+͍͔Ͷͳ͍ɻ
+図 6　システム開発のパラダイム転換
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+6
+
+===== PDF_PAGE 17 =====
+ज़͕ඞͣ͠΋௨༻͠ͳ͘ͳΔͱ͍͏͜ͱΛઆ໌͢Δɻ
+Α͘஌ΒΕ͍ͯΔैདྷͷํ๏
+࿦ͱͯ͠VϞσϧʢਤ7ʣ͕
+͋ΔɻVͮ͘γε
+ຊ
+ˠίʔσΟϯά
+ͱ͍͏εςοϓͰ։ൃ͠ʢVࣈ
+߹݁
+ςετˠγεςϜςετͱ͍͏
+ূ͢ΔʢV༷ʣ͕ɺந৅
+ମతͳϨϕϧʢԼҐʣ΁ͱ֊૚తʹ෼ղͰ͖Δ͜ͱΛ૝ఆ
+อͰ͖
+࡞
+͢ΔσʔληοτʹσʔλΛ1͕શମʹ
+Ϳɻ͜ͷ CACEʢChanging Anything Changes Everythingʣ
+ʦ6ʧ
+ͷͨΊɺ
+ೲతͳγεςϜ։ൃʹ VϞσϧ͸͙ͦΘͳ͍ɻ
+ਤ8ͷ։ൃํ๏࿦ɾϓϩηεʢਤ8ܕ
+ʢਤ8ͨ͠΋ͷͰ͋Δ
+ʦ7ʧ
+ɻ
+ମྫΛड़΂Δɻ
+͢Δ՝୊ͷ 1࣭
+୯ͳςετͷΠϝʔδ͸ɺ ʮϘλϯA Λԡ
+Δʯ ʮϘλϯBϩδοΫʹԊͬͯɺ͢΂
+Ռ͕ಘΒΕ
+ͭγ
+ֶ
+͢ΔͷͰɺͦ
+ಈӡసʹ͓͚
+図 7　従来の開発方法論：V 字モデル
+図 8　従来の開発方法論を AI 応用システム開発に適用したときに発生する課題
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+7
+研究開発を実施する意義2.
+
+===== PDF_PAGE 18 =====
+ͱ͍͏Ԡ༻Ͱ͸ɺ ʮӍ΍ໄͷ͜ͱ΋͋Δ͔΋͠Εͳ͍ʯ ʮ෺ӄ͔Βਓ͕ඈͼग़͢
+͠ಘΔ
+ͷՄೳੑΛͲ͏਺্͑͛ɺͲΕ͚ͩͷέʔεΛςετ͓͍ͯͨ͠Βे෼҆શͳγες
+ʹ͓͍͍ͯͬͦ͏೉͍͠ɻ
+Ռɾཧ༝Λઆ໌
+ͨ͜͠ͱ͖ʹ໰୊ʹͳΔɻ
+ɺલड़ͷΑ͏ʹVΘΕ͍ͯΔͷ
+ΜͰ͍͘͜ͱ
+ࣜ
+͖ͨͷ͔Λઆ໌
+͢Δ͜ͱ͕೉͍͠ɻ͔͠΋ɺ લड़ͨ͠CACE࿅ͷͨΊʹ༩͑Δσʔλ
+Λ1Ҽղ໌Λ͍ͬͦ͏໽հͳ΋ͷ
+ͷι
+ࣄ
+ΊΒΕΔɻ
+（２）社会的な問題：AI 応用システムの安全性に不安
+ज़Λ༻͍ͨAIͷ։ൃ
+Δ
+1
+࣭
+ձ
+ձ໰୊ʹͭͳ͕Γ͔Ͷͳ͍ɻ
+อূ͕Ͱ͖ͣ҆શੑʹ໰୊͕͋Δͱɺ ੡଄෺੹೚๏ʢPL๏ʣ΍Ϧίʔϧ੍౓ͷର৅ʹ
+ྫΛ͋͛Δɻ
+˔ Adversarial Examplesɿ
+ʹͳΒͳ͍ఔ౓ͷখ͞
+ޡ
+ը૾ ʢAdversarial Examplesʣ Λੜ੒͠
+͸ Adversarial Examples͹Ε͍ͯΔɻ
+ʹ
+ͤ͞Δ͜ͱ
+͞Ε͍ͯΔ
+ʦ8ʧ
+Λ͔
+Ε
+͕͋Δɻ
+˔ Microsoft Tayɿ
+MicrosoftνϟοτϘοτ Tay ͕ɺ2016 ೥3݄23 ೔ʹΠϯ
+͕͋ͬͨ
+ʦ9ʧ
+ɻTay
+ผͱӄ๳࿦ʹછ·ͬͯ
+Γฦ͢Α͏ʹͳͬͯ͠·ͬͨɻ
+1 機械学習型の方法論・技術が未整備の現状では安全性・品質等に不安があるという意味であり、従来型に比べて、機械学習型の安全
+性・品質が本質的に低いというわけではない。例えば、機械学習アルゴリズムそのもののプログラムはコードが短く、判定ステップの応答
+も高速だという性質は、バグが入り込みにくく、リアルタイム処理性能も安定し、安全性に寄与する。機械学習型は従来型と性質が異なる
+ので、異なる対応・考え方を整備していくことが必要なのである。
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+8
+
+===== PDF_PAGE 19 =====
+ɿ
+ΜͰ͠·͏έʔε΋͋
+ՌΛ༻͍
+͍ͬͯͨͳΒ͹ɺ
+࿅σʔλʹภ
+ผΛੜΉ
+͕ଟ͍͜ͱ͕໰୊ʹͳͬͨ
+ྫ
+ʦ10ʧ
+ྫ
+ʦ11ʧ
+͞Ε͍ͯΔɻ
+２－１－４　国内外の状況・動向
+（１）AI 適用産業における品質保証の重要性
+AI͕͍ͬͯΔ͕ɺAIՌΛग़
+͘ͳ͍෼
+͕͖͍ͬͯͯΔʢਤ9ʣɻ
+AI͑Δ্ͰɺͦͷԠ༻ͷ3ɺ͢ͳΘ
+ੑʯ ʮAI͘ɺAI
+อূ͕ΫϦςΟΧϧͳ΋ͷʹͳΔɻ
+˔ੑɿAIՌΛग़ͨ͠ͱ͖ʹੜ͡Δ໰୊͕ͲΕ͘Β
+͍ɻ
+˔ AI ఆʹAIश͕ͲΕ͘
+༩͢Δ͔Λҙຯ͢ΔɻAIՌʣ͕ͦͷ··൓ө
+͘ɺAI࠷
+༩౓͕௿͍ɻ
+˔೉ੑɿAIΛίϯτϩʔϧ͢Δ͜ͱͷ೉
+͜Γಘ
+Λ౷੍͢Δ͜ͱ͕༰қͰ͋Ε͹困難性͕௿͍ɻ
+͸ 2030 ೥ͷ AI໛ʢEYӦʹ΋ͨΒ͢૑଄ͱഁյʯ ʦ12ʣ
+図 9　産業分野と品質保証クリティカル性
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+9
+研究開発を実施する意義2.
+
+===== PDF_PAGE 20 =====
+ਤ9ʹऔΓɺAI෼໺ΛϚοϐϯ
+෼໺ΛҰմͰϚοϐϯά
+͸දΘ͍ͤͯΔɻਤ9౷
+ੑ
+͍Ԡ༻
+ΈΒΕΔΑ͏ʹͳ͖ͬͯͨɻ
+ػ
+ʣ͸10 ೥
+Έʹ
+؀
+ೳͱͯ͠ίϯςΩετ͸ίϯτϩʔϧ͞Εͯ
+લΑΓ΋Ή͠
+ಈӡసͰ
+ڥ؀
+อূ͕
+Ίͯॏཁͳ΋ͷʹͳΔɻ
+（２）業界・研究コミュニティーの動向
+͜ͷΑ͏ʹ AIอূͷ
+·͍ͬͯΔɻ͔͠͠ɺAIൃͳͷ
+͢
+։ൃʹ͍ͭͯ͸ɺ·ͩऔΓ૊Έ͕े෼Ͱͳ͍ɻ̎ʵ̍ʵ̎અͰड़΂ͨΑ͏ʹɺγε
+อূ
+։ൃʹऔΓ૊ΜͰ͍͘͜ͱ͕ඞཁʹͳ͍ͬͯΔɻ
+ۙ࠷1
+ʙ2Խ͖ͯͨ͠ɻਤ 10քɺAIίϛϡχςΟʔɺιϑ
+৘ใ͸෇࿥2 Λ
+রʣ ɻ
+͍͑ͯ
+͍ͯ͠Δɻ·ͨɺAIɾ҆શ
+·͍ͬͯΔɻ
+͜Εʹରͯ͠ɺAIΊ
+ձʹ͓͚Δ AI఺͔Β
+ੑԽ͓ͯ͠ΓɺAIͷ
+͢Δ্Ͱ
+਑ʹͳΓಘΔ΋ͷͰ͋Δɻ
+ۙ࠷1 ʙ2༗΍
+಺Ͱ͸ 2017 ೥ॳΊ
+͞Εɺ
+ੑԽ͖ͯͨ͠ɻಛʹ 2018 ೥ 4ڀݚֶ޻
+ձ MLSE ͕ൃ଍͠ɺ5ͷΩοΫΦϑγϯϙδ΢Ϝʹ͸ 500౸͠
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+10
+
+===== PDF_PAGE 21 =====
+Ͱ͋ͬͨɻ·ͨɺಉ͘͡4݄
+ʹAIอূίϯιʔγΞϜ QA4AI ΋ൃ଍ͨ͠ɻւ֎Ͱ΋ɺ ৽͍͠ύϥμΠ
+ϜΛSoftware 2.0 ΍Machine Teachingԋͱͯ͠
+Software 2.0 ͷ࿩୊͕औΓ্͛ΒΕΔ౳ɺಉ༷ʹϗοτͳτϐοΫʹͳΓͭͭ͋Δɻ͜ͷ
+౼Λ։
+ΘΕΔɻ
+（３）わが国の AI 戦略・政策から見ると
+AIࢿ
+Λड͚ͨAIज़ઓུձ
+ল ɾ
+লͷ3ʹΑΔਪਐମ੍
+ங͞ΕɺAIԽ
+த
+৺ͷ AIʯ͕ઃ͚Β
+ΕɺAIతɾྙཧతɾ๏
+తͳ՝୊ʢEthical, Legal and Social
+IssuesɿELSIͨ
+AI౼͞Ε͍ͯΔ
+2
+ɻ
+ୈ 5͞Ε
+ͷϏδϣϯʮSociety 5.0ʯʹ
+͚ͯɺAIɺAI։ൃΛ
+த৺ͷ AIத৺ͷ
+2 社会から見た AI への要請については、 「人間中心の AI 社会原則検討会議」に先立ち、内閣府の「人工知能と人間社会に関する懇談
+会」 、 総務省の「AI ネットワーク社会推進会議」 、 経済産業省の「AI ・ データ契約ガイドライン検討会」等で検討されてきた。特に「AI ネッ
+トワーク社会推進会議」では、透明性、利用者支援、制御可能性、セキュリティ確保、安全保護、プライバシー保護、倫理、アカウンタビ
+リティという 8 つの原則を掲げた「AI 開発原則（案） 」や、 「AI 利活用原則（案） 」等を示してきた。内閣府は、2018 年 4 月に「人間中
+心の AI 社会原則検討会議」を発足させ、先行の検討結果を踏まえつつ、同年度末までに「人間中心の AI 社会原則（案） 」をまとめる予定
+である。
+図 11　国の AI 関連政策における位置付け
+図 10　業界・研究コミュニティーの動向
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+11
+研究開発を実施する意義2.
+
+===== PDF_PAGE 22 =====
+AIʯͱ͍͏ 2Ͱ͸·ͩ଍Γͳ͍ɻ͜͜ͰඞཁʹͳΔͷ͸ɺ ʮਓ
+த৺ͷAI͢ΔͨΊʹɺAIٕ
+Λ༻͍ͯɺͲͷΑ͏ʹ AIతͳ
+Ͱ͋ΔɻຊϓϩϙʔβϧͰ͸ɺͦΕΛʮAIݺ
+ΜͰ͍Δ͕ɺͦͷऔΓ૊Έ͸·ͩे෼Ͱͳ͘ɺ ʮAI։ൃΛਪਐ
+͕ඞཁͰ͋Δ
+3
+ʢਤ 11ʣɻ
+２－２．社会・経済的効果
+AIܦ
+ՌΛҎԼʹ·ͱΊΔɻ
+͕͍ͬͯ͘ AIͯ͠ɺͦͷ҆શੑɾ৴པੑͷ
+͢ Society 5.0ձʣʹ͓͍ͯ΋ɺ͋Δ͍͸ɺ
+͍··͞ʹୈ3࣍AIʑʹੜΈग़͞Ε͍ͯΔ৽αʔϏεʹ͓͍ͯ΋ɺAI Ԡ
+ΊΒΕΔɻ͔͠͠ɺAIԠ༻γεςϜͷ҆શੑɾ৴པ
+ཱ͞Ε͓ͯΒͣɺAIιϑτ
+ͷਪਐʹΑͬͯͦΕ͕ՄೳʹͳΔɻ
+ୈೋʹɺAIձ໰୊Λճආ
+͢Δ͜ͱʹͭͳ͕Δɻ̎ʵ̍ʵ̏અͰड़΂ͨΑ͏ʹɺAIอ
+೦͕͋Δɻ
+AI೦Λճආ͢Δ͜ͱ͕Մೳ
+ʹͳΔɻ
+ʹɺAIΈʹͯ͠ɺAIԽ͢Δ͜ͱʹͭͳ
+͕ΔɻAIɺ҆Ձ͕ͩૈѱͳ
+AI૪ʹ
+͕සൃ͢Δ͔΋͠
+͕ଟൃ͢ΔΑ͏Ͱ͋Ε͹ɺ AI·
+಺ AIଶΛճ
+४ɾ҆શ
+ͬͨ΋ͷͰ͋Δ
+ཱ͞Ε͍ͯΔ͜ͱ͕ॏ
+͕ AI ιϑτ΢Σ
+։ൃ͔ΒੜΈग़͞ΕಘΔɻ
+２－３．科学技術上の効果
+ʹରԠ
+3 JST CRDS では、2017 年 9 月からこの「AI ソフトウェア工学」に関する戦略プロポーザルの検討を進めてきたが、この発行まで
+の間に国の政策に動きがあった。2018年6月15日の閣議決定を受けて統合イノベーション戦略推進会議が内閣に設置され、 その第1回
+が 7 月 27 日、第 2 回が 9 月 28 日に開催された。7 月 27 日の会議を受けて、イノベーション政策強化推進のための有識者会議「AI 戦
+略実行会議」が設置され、9 月 28 日に「AI 戦略（案） 」が提言された。その有識者ペーパー「AI 戦略（案）全体俯瞰図」では「AI 工学」
+があげられた。この「AI 工学」は「AI ソフトウェア工学」を含むターゲットと解釈できる。
+https://www.kantei.go.jp/jp/singi/tougou-innovation/dai2/siryo1.pdf
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+12
+
+===== PDF_PAGE 23 =====
+໰෼໺ʮAIʯͷ૑ग़ͱ͍͏͜ͱ͕େ͖͍ʢͦͷ໊শʹͭ
+ʯ ɺւ֎Ͱ͸ʮSoftware 2.0ΘΕ͓ͯΓɺඞͣ͠΋
+ʮAIΒͳ͍͕ʣ ɻ
+͜ͷAIு
+͕૝ఆ͍ͯ͠Δͷ
+͸ΫϩʔζυͳੈքͰ͋Δ
+ͷʹରͯ͠ɺAI ιϑτ΢Σ
+͸Φʔϓϯͳੈք΁
+ͱɺͦ͜Ͱѻ͑ΔγεςϜ
+େͰ͖Δʢਤ
+12ʣɻ
+໰෼
+ʹ
+AIͨ͠΋ͷͱͳ
+΍
+͑ํ΋༥
+ͨ͠΋ͷʹͳΔɻͦͯ͠ɺ
+ܽ
+ͳɺ͜ͷΑ͏ͳ৽͍͠εΩ
+ज़ऀͷҭ੒Λ
+ଅਐ͢Δ͜ͱʹ΋ͭͳ͕Δɻ
+図 12　扱えるシステムタイプの拡大
+ྉʦ13੒ʣ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+13
+研究開発を実施する意義2.
+
+===== PDF_PAGE 24 =====
+３．具体的な研究開発課題
+ຊϓϩϙʔβϧͰఏএ͢Δ AIʹର͠ɺ ৽
+ͱͯ͠Ґஔ෇͚͍ͯΔʢp.1 ͷਤ 1໰
+։ൃ՝୊Λ 2 ͭͷ໘͔Β͋͛Δɻ1 ͭ͸ AI ιϑτ
+ԽͰ͋Γɺ΋͏ 1ज़νϟϨϯδͰ͋Δɻ
+AIঢ়Ͱͷ͓͓·͔ͳΠϝʔδʣʹ͍ͭͯ̏ʵ̍
+ज़νϟϨϯδͷ಺༰ʹ͍ͭͯ̏ʵ̎અͰઆ໌͢Δɻ
+AIज़νϟϨϯδΛͲͷΑ͏
+ͨ͠ɻ
+３－１．AI ソフトウェア工学の体系化
+తͳऔΓ
+௨͠Α͘ɺ
+ज़։ൃΛਐΊΔ΂͖Ͱ͋Δɻ
+Խ΋ਐΜͰ͍Δͷ
+ͰɺAIମతʹ͸ɺ
+IEEE Computer SocietyܥSWEBOK
+ʢSoftware Engineering Body of Knowledgeɺhttps://www.computer.org/web/swebok ʣΛ
+表 1　ソフトウェア工学の体系の拡張
+SWEBOK V3.0 の知識領域 機械学習型システム開発を含めた場合に必要になる拡張 (MLSEBOK)
+ソフトウェア要求 機械学習方式に依存した要求の厳密性、機械学習精度に応じた要求 ( 人間の介在程度等 ) の見
+直し
+ソフトウェア設計 従来型と機械学習型の役割分担設計、要求を表現する訓練データ設計、データ収集・加工手
+順の設計
+ソフトウェア構築 機械学習プロセスの実行と進行判断、機械学習実行の計算リソースの確保・最適化
+ソフトウェアテスティング 機械学習パートのテスト方法、テスト用データ設計、機械学習の CACE 性 (Change
+Anything Changes Everything)、プロセス品質とプロダクト品質
+ソフトウェア保守 初期訓練時からの環境変化の監視と対策、追加訓練・再訓練、継続的なデータ収集
+ソフトウェア構成管理 機械学習方式とパラメータの管理、訓練データ・訓練履歴・訓練済みモデルの管理、訓練済
+みモデルの再利用性
+ソフトウェアエンジニアリ
+ングマネージメント 従来型と機械学習型の混在マネージメント、工数見積もり ( 格段に難しい ) の方法論
+ソフトウェアエンジニアリ
+ングプロセス
+トライアル (PoC) ステップを含む機械学習型システム開発に特徴的なプロセスやフロー、機
+械学習 API・専用言語
+ソフトウェアエンジニアリ
+ングモデルおよび方法
+従来型 ( 演繹・トップダウン ) と機械学習型 ( 帰納・ボトムアップ ) の組み合わせモデル・使
+い分け指針、様々な機械学習方式の特性・適性
+ソフトウェア品質 機械学習の確率的動作 (100% 保証は不可 )、機械学習を含むシステムの品質保証、要求に対
+する定量指標 ( 多様性・曖昧性 )
+ソフトウェアエンジニアリ
+ング専門技術者実践規律
+機械学習の公平性・説明責任・透明性・倫理 (FATE)、機械学習に関わるデータとモデルの知
+的財産権
+ソフトウェアエンジニアリ
+ング経済学 トライアル (PoC) やデータに関わる経済視点
+計算基礎 機械学習アルゴリズム、GPU プログラミング
+数学基礎 統計数理
+エンジニアリング基礎 データ工学
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+14
+
+===== PDF_PAGE 25 =====
+ʹ͢Δ͜ͱ͕Ͱ͖Δɻද 1ྻʹ SWEBOK V3.0ͨ͠ɻ
+ද1ʹɺैདྷͷιϑτ
+͠
+͕ɺAIͷશମ૾
+͑ΒΕΔɻ
+ձ MLSE࿦͕ͳ
+ϫʔΫγϣοϓMLSE2018 Ͱ͸ɺSWEBOK
+͕ग़͞Εɺͦ
+ͷԾশͱͯ͠ʮ MLSEBOKɿMachine Learning Systemsʢor Softwareʣ
+Engineering Body of Knowledge͞Εͨʢද 1 ͸ JST CRDS ͔Βͷϙδ
+γϣϯϖʔύʔ
+ʦ7ʧ
+͸MLSE2018 ͷதͰෳ਺͋ͬͨʣ ɻ
+Λத৺ʹஔ͍͕ͨɺAIอ͢
+Ί
+తʹѻ͏ඞཁ͕͋
+͘
+Ίͯશମ૾ΛͱΒ͍͑ͯ͘΂͖Ͱ͋Δɻͦ͏͍͏
+ҙຯͰ΋ɺද1 ͷΑ͏ͳ੔ཧ͸ɺAI௨͠Λ
+࿦͕ඞཁͰ͋Δɻ
+３－２．基礎研究として重要な技術チャレンジ
+͕ͨ͠ɺAI͑ΒΕ
+ज़՝୊ΛʢiମͱʢiiʣશମγεςϜͱ͍͏ 2 λΠϓʹ෼͚ɺ͞Βʹɺͦ
+ΕͧΕʹରͯ͠ɺ ʢAԽͷΞϓϩʔνͱʢBཧʹ
+ͷΞϓϩʔνͱ͍͏ 2 ͭͷ໘͔Β੔ཧͨ͠ɻ ʢAքओମͰ
+औΓ૊Έ͕ਐΉʹҧ͍ͳ͍͕ɺ ʢBࡦࢪ
+͕๬·ΕΔɻͦ͜Ͱɺ ʢBज़తʹ͋Δఔ
+ͱͯ͠ॏཁͳ4ज़νϟϨϯδͱͯ͠நग़ͨ͠ʢਤ
+13ʣɻ
+ͱͯ͠ॏཁͳ4࣭
+ɺᶆ໰୊Λ
+ज़γʔζΛઆ໌͢Δɻ
+ͳ͓ɺAIશମͱͯ͠͸ɺ લग़ͷද1 ΍෇࿥̍ͷද2ͨ͠Α
+޻
+ज़։ൃɾํ
+໰෼໺ͱͳΔ͕ɺਤ 13քΛத৺ͱͨ͠ʢAʣ
+ԽͷΞϓϩʔν͕ਐΊΒΕ͓ͯΓɺ ʢBΘΔ
+ΘΔ΋ͷ͕ଟ͘ͳͬ
+ͨɻ
+３－２－１　機械学習自体の品質保証
+ฏੑ౳ʣͷ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+15
+具体的な研究開発課題3.
+
+===== PDF_PAGE 26 =====
+࿅σʔλू
+݁
+ߟ
+͑ΒΕΔɻ
+【技術シーズ】
+शͷςετͷΧόϨοδ΍ύλʔϯྔΛ૿΍ͨ͢Ίͷ༷ʑͳख๏͕ఏҊ͞Ε͍ͯ
+ॴʢNational Institute of InformaticsɿNIIతʹ
+औΓ૊·Ε͍ͯΔ͕ʢNIIอ౳ɺ·ͩଟ
+ମతʹ͸ɺχϡʔϩϯΧόϨοδɺϝλϞϧϑΟοΫς
+εςΟϯάɺαʔνϕʔευςεςΟϯάɺσʔληοτଟ༷ੑ౳ͷΞΠσΞ͕஌ΒΕͯ
+͍Δ
+ʦ14ʧʦ15ʧʦ16ʧ
+ɻ
+श౳
+शʹ
+׆
+͛ΔΑ͏ͳς
+͑ํ
+Ͱ͋Δʢਤ 14ʣɻ
+ϝλϞϧϑΟοΫςεςΟϯά͸ɺೖ
+ྗΛม͑Δͱग़ྗ͸͜͏มΘΔ͸ͣͱ͍
+ଘςετέʔε͔Β
+ଟ਺ͷςετέʔεΛੜ੒͢Δख๏Ͱ͋
+ΔɻαʔνϕʔευςεςΟϯά͸ɺ ϝλώϡʔϦεςΟοΫΛ༻͍ͯɺ ཉ͍͠ςετέʔ
+େԽ͢ΔΑ͏ςετέʔεΛੜ੒͢Δख๏Ͱ͋Δɻ
+σʔλϚΠχϯάʯ ʢFairness-Aware
+Data Miningฏੑɾઆ໌੹೚ɾಁ໌ੑʢ FATʣʯʢFairness,
+図 14　ニューロンカバレッジʢग़యʦ16ʧʣ
+図 13　基礎研究として重要な技術チャレンジの抽出
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+16
+
+===== PDF_PAGE 27 =====
+Accountability, and Transparency in Machine Learningʣ౳ͷ໊শͰɺ4 ʙ5ࠃ
+ڀݚ
+ॴʣ
+ʹΑΔͱ
+ʦ17ʧ
+ͱ͍͏2 ͭͷλεΫΛத৺ʹऔΓ
+఺
+఺΋ඞཁʹͳΔɻਓछɾ
+ͷ
+शͷ
+͕ඞཁͰ͋Δɻ
+３－２－２　全体システムとしての安全性確保
+γεςϜͷશମͱͯ͠ͷ҆શੑධ
+ίϯϙʔωϯτ͕100% อূ͸Ͱ͖ͳ
+ͷೖྗɾग़ྗΛϞχλϦϯάͯ͠ɺྫ
+Ͱ͋Δɻ
+【技術シーズ】
+शʹΑΔ൑அʹɺैདྷ๏ʹ
+ΘͤΔ Safe
+Learning͑ํ͕͋Δɻਤ15 ͷ
+ྫͰ͸ɺैདྷ๏ʹΑͬͯɺԋ៷తʹ҆
+ֶ
+ʹ
+อ͞ΕͨൣғʢSafety
+Envelopeఆ͢Δ
+ʦ18ʧ
+ɻ͜ΕʹΑͬ
+Μͩͱͯ͠΋ɺ ҆શ
+಺Ͱ͸ɺJST ERATO
+MMSD͸NII ͷ࿇ඌҰ࿠ʣ౳Ͱऔ
+Γ૊·Ε͍ͯΔɻ
+श΋1༻͔Β
+҆શੑ෼ੳ ɾ ϋβʔυղੳख๏Ͱ͋ΔSTAMP/STPAʢSystems-Theoretic Accident Model
+and Processes / System-Theoretic Process Analysisʣ΍ FRAMʢFunctional Resonance
+Analysis Methodʣ ͕͋Δ
+ʦ19ʧʦ20ʧ
+৴౓ʹԠͯ͡ϦεΫͷগͳ͍ํʹ౗͢
+ߏػJAXAձJAMA ͷ
+ڀݚ
+ʦ21ʧ
+ɺσϯιʔͷ AI൫
+ʦ22ʧ
+౳ ʣɻ
+ʢDefense Advanced Research Projects AgencyɿDARPAʣͰ͸
+ʮAssured Autonomyʯ
+ʦ32ʧ
+ಈӡసं΍
+ͷೖग़ྗΛϞχλϦ
+Ξ
+։ൃ͞Ε͍ͯΔɻ
+図 15　Safe Learningʢग़యʦ18ʧʣ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+17
+具体的な研究開発課題3.
+
+===== PDF_PAGE 28 =====
+ͯ͠͸ɺ̏ʵ̎ʵ̍Ͱ΋৮ΕͨΑ
+͛Δ͜ͱ΍ɺͦ΋ͦ΋·Εʹ͔͠ൃੜ͠ͳ͍૝ఆ֎έʔεͰ΋ςετ
+͢Δ͜ͱ౳͕՝୊ʹͳΔɻ͜ͷ՝୊ʹରͯ͠ɺγϛϡϨʔγϣϯʹΑͬͯଟ༷ͳέʔεΛ
+ੜ੒ͯ͠ςετ͢Δͱ͍͏Ξϓϩʔν͕ͱΒΕ͍ͯΔɻҰྫͱͯ͠ɺWaymoʢGoogle ͷ
+ʣͷऔΓ૊ΈΛ঺հ͢ΔɻWaymoʹଞ
+ͱൺ΂ͯѹ౗తͱ͍͑Δ 1000͚ͩͰ
+཭͸ 70 ԯϚΠϧʹ
+ੈքͰ͸Ίͬͨʹ
+͢͜ͱ͕ՄೳʹͳΔɻ
+࿈ͯ͠ɺNECݚ ͔Βൃ
+ज़
+ʦ33ʧ
+Ϧ
+͚ͭΔ͜
+ɾमਖ਼ΛՄೳʹ͢Δɻ
+３－２－３　ブラックボックス問題への対策
+ɾ
+ց
+͕ཧղͰ͖ͳ͍ͱ͍͏ϒϥοΫϘοΫε໰୊
+4
+͕͋Δ
+ʦ23ʧ
+͕ϒϥοΫϘοΫεͱ͍͏Θ͚Ͱ͸ͳ͍͕ʣ γεςϜʹϒϥο
+࡞
+อ͢Δ্Ͱ๦͛ʹͳΔɻ·ͨɺ΋͠γε
+Ҽཧղ΍੹೚ͷ੾Γ෼͚͕೉͍͠ͱ͍͏͜ͱ
+ʹ΋ͳΔɻ͞ΒʹɺԤभͰ2018 ೥5੍ʢGeneral Data
+Protection RegulationɿGDPRʣʹAIΊΔ৚จʢୈ 22·Εͨ
+ͨΊɺGDPR͕ඞཁʹͳ͍ͬͯΔ
+ʦ24ʧ
+ɻ
+श
+͕ϒϥοΫϘοΫεͱ͍͏Θ͚Ͱ͸ͳ͍ɻྫ͑
+ଇ
+ࣜܗ
+ʢif-then౳ʣͰಘΒΕΔͷͰɺϒ
+ϥοΫϘοΫε໰୊ΛճආͰ͖Δ ʢϗϫΠτϘοΫε
+ֶ
+ց
+଄தͷॏΈ
+͕ͦͷҙຯΛ௚઀ղऍ͢Δ
+Ͱ͋Δɻ
+4 ブラックボックスという言葉は、その中で起きていることがまったくわからない状態をイメージさせる。しかし、機械学習に関して
+ブラックボックスという場合、その中で起きている信号の流れは観測でき、動作のメカニズムもプログラムコードとして記述されているの
+で、上記のイメージでとらえるのは適切ではない。ここでは、その中で起きていることを人間が解釈することが難しいという意味で、ブ
+ラックボックスという言葉を用いている。
+図 16　 機械学習の精度と解釈性のト
+レードオフとその改善方向
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+18
+
+===== PDF_PAGE 29 =====
+Ͱ͋Ε
+͸
+͍͕ɺਫ਼౓͕௿͍ɻ
+ΊΒΕ͍ͯΔʢਤ16೔ɺ ϒϥο
+༻͞ΕΔΑ͏ʹͳͬͨ͜ͱ͔Βɺ
+ʹղऍੑΛ༩͑Δͱ͍
+ΊΔͱ͍͏఺͚ͩͰͳ
+·Εͨ AIٻ
+͓͑ͯ͘΂͖Ͱ͋ΔɻͦͷҙຯͰɺϢʔβΠϯλϑΣʔε΋ॏཁͳ
+ͷೝ
+஌ΪϟοϓΛආ͚Δ͜ͱ౳΋ɺAIݕ
+౼͞Ε͍ͯ͘΂͖Ͱ͋Δɻ
+【技術シーズ】
+AIࠃDARPA ͕ϑΝϯσΟϯά
+͢Δʮઆ໌ՄೳͳAIʯʢeXplainable Artiﬁcial IntelligenceɿXAIʣϓϩδΣΫτ
+ʦ25ʧ
+͕༗໊
+রʣ ɻDARPA ͷ XAI༻్
+ΘΕΔ͕ɺXAIज़քʹ
+ൃʹͳ͖ͬͯͯ
+͍Δɻ
+शͷਫ਼౓ͱղऍੑΛཱ྆ͤ͞ΔʣXAI ͷΞϓϩʔν
+ͷ 3 ௨Γʹ੔ཧ͞ΕΔʢਤ 17ʣɻ
+ ˔ Deep Explanationݴ
+આ໌ੜ੒౳
+ ˔ Interpretable Modelsश ʢϗϫΠτϘο
+্ͤ͞Δʣ
+ ˔ Model Inductionߴ
+Δ
+図 17　XAI の 3 つのアプローチʢग़యʦ25ʧʣ
+DARPA ͷXAI ϓϩδΣΫτʹ͓͍ͯ΋ɺ͜ΕΒ3ͯ͠ਪਐ͞
+Ε͍ͯΔɻDeep ExplanationγεςϜʹ͓͍ͯɺ੝
+ͱͯ͠ɺը૾தͷͲͷ෦෼ʹண໨
+͢ͱ͍ͬͨํ๏Ͱ͋Δɻ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+19
+具体的な研究開発課題3.
+
+===== PDF_PAGE 30 =====
+【コラム③】 DARPA の XAI プロジェクト
+ࠃDARPA ͸ɺ2017 ೥ʙ 2021 ೥ͷ5ͱ͠ɺ આ໌ՄೳͳAIʢXAIؔ
+ϓϩάϥϜΛਪਐ͍ͯ͠ΔɻDARPA XAIΕΔͰ͋Ζ͏AIɺಛ
+͠
+͠ͳ͕ΒैདྷΑΓ΋આ໌ՄೳͳϞσϧΛੜ੒
+ମతʹ͸ɺDARPAͷϛογϣϯʹରԠ͢Δ2 ͭͷλε
+ΫɺData Analyticsີ৘ใ෼ੳʣͱAutonomy཯γεςϜʣΛઃఆ͍ͯ͠ΔɻData
+Analyticsज़తʹ͸ϚϧνϝσΟΞσʔλͷ෼ྨ໰୊Ͱ͋Γɺө૾͔Βλʔήο
+ผ͠
+͢Δ౳ʣ ɻAutonomyࣗ
+ऀʹରͯ͠Ͳ͏͍
+ఆ͔ͨ͠Λઆ໌͢Δɻ͜͜Ͱઆ໌ͱ͸ɺγεςϜͷग़
+͛Δ͜ͱΛҙຯ͓ͯ͠ΓɺຊจͰ΋ड़΂ΔΑ͏ʹ
+Deep Explanation͢ʣ ɺ
+Interpretable ModelsʢRandom Forest ΍ Bayesian networkɺProbabilistic Logic ʹ͓͍
+͢ʣ ɺModel InductionʢϞσϧΛϒϥοΫ
+౼͞Ε͍ͯ
+Δɻલ 2ͷ1ʹɺϢʔβʔ͕ཧղՄ
+ଘͷ৺
+Մೳͳʠઆ໌ͷఆཧʡΛ։ൃ͢Δ͜
+ʹΑͬͯཧղ
+Ͱ͖Δͱ͞Ε͍ͯΔɻҰํͰɺϢʔβϞσϦϯά΍ύʔιφϥΠζɺΠϯ
+͞Ε͍ͯΔɻϓϩδΣΫτͷ
+͓ͯ͠Γɺ྆ํΛଌఆ
+ՌଌఆͰ
+͢ΔϢʔβʔͷຬ଍౓ΛϨʔςΟϯά͢Δͱ͞Ε͍ͯΔɻ·ͨɺ
+DARPA XAIͰ͸ AI γεςϜͷ൑அཧ༝ ʢઆ໌ʣ Λ஌Δ͜ͱ͕Ͱ͖Ε͹ਖ਼͘͠ಈ͍͍ͯΔ͔
+ɺ આ໌
+ՄೳϞσϧͱઆ໌ΠϯλϑΣʔεʹ͸ 11 νʔϜʢUC BerkleyɺCMUɺXerox PARC ౳ʣ͕ɺ
+ʹ͸ IHMCʢThe Institute for Human & Machine Cognitionʣͷ 1 νʔϜ͕
+ؒ800K ʙ$2M Ͱ͋ΔɻಛʹɺUC Berkley
+ಈӡసͷͨΊͷ XAIʹ͓͚
+Δ AI࣌
+఺ʢ2018 ೥ 10ʣʹ Phase1: Technology Demonstration ͷධՁ Eval1ΘΕ͓ͯΓɺ
+଴͞ΕΔɻ͞ΒʹɺPhase2: Comparative Evaluation
+νʔϜ͕ಠ૑తͳ໰୊Λઃఆ͠ɺ2019 ೥ळɺ2020 ೥ळʹͦΕͧΕ Eval2ɺEval3
+ऴ੒Ռ෺͸Φʔϓϯʹ͞ΕΔ༧ఆͰ͋Δɻ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+20
+
+===== PDF_PAGE 31 =====
+಺Ͱ΋औΓ૊·Ε͓ͯΓɺNEC ͕2012ఆ
+ಈੜ੒͢Δ͜ͱͰɺ
+͍ϞσϧʢInterpretable Models͍ਫ਼౓Λୡ
+௨͸ 2018शDeep Tensor ʹφϨοδάϥϑΛ૊Έ
+Θͤͨ Model Induction ͷΞϓϩʔνʹΑΔऔΓ૊ΈΛൃදͨ͠
+ʦ26ʧ
+ɻ
+３－２－４　問題を効率よく解く工学的な枠組み
+ਪ࿦ʢτοϓμ΢ϯʣΛ౷
+ͷ
+ਪ࿦΋ॏཁͰ͋Δɻ
+͢Δ͜ͱ͸ɺAI Ԡ༻γες
+ͱ͍͏໘ͰॏཁͰ͋Δɻ
+ज़νϟ
+ज़νϟϨϯδ͸
+शʢϘτϜΞοϓʣ
+͢Δͱ͍͏ͷ΋Ұͭͷղ๏ʹͳΓಘΔ͔ΒͰ͋Δɻ͠
+͢Δ͜ͱͰಘΒΕΔ
+఺͔Β AI Ԡ༻γεςϜͷ
+ͱͯ͠ॏཁͰ͋Δɻ
+【技術シーズ】
+Λ༩͑ͨ AI Ԡ༻γεςϜʮ AlphaGoʯʢGoogle
+DeepMindʣ
+ʦ27ʧ
+Խ
+Ռ͔Βಘ͍ͯΔɻ
+ʢ New Energy and
+Industrial Technology Development OrganizationɿNEDO޻
+ॴ͕
+஌ೳ
+ʹΑΔղऍ
+ʯ
+ʢਤ 18ʣʹ͓͍ͯ΋ɺτοϓμ΢ϯͱϘ
+཰తͳղ๏͕
+ΈΒΕ͍ͯΔ
+ʦ28ʧ
+ɻ͜͜Ͱ͸ɺηϯα౳
+ܕ
+AIशʣͰɺ
+͍ͮͯɺͦͷ
+Λ༧ଌ͢Δ࿦ཧ஌
+ܕࣝAIਪ࿦ʣ
+Ͱ͋Δɻ2཰Α
+ఆͰ͖ΔΑ͏ʹ
+ͳΔɻ
+図 18　九工大 ・ 産総研 ・ 理研による「データ駆動型
+人工知能と論理知識型人工知能の融合による解釈
+可能な自動運転システムに関する研究」ʢग़య ʦ28ʧʣ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+21
+具体的な研究開発課題3.
+
+===== PDF_PAGE 32 =====
+【コラム④】 もう一つの課題：擬人化インタフェース設計
+ຊϓϩϙʔβϧͰ͸ɺAIҼ͢Δ΋ͷʹ
+͑ΒΕΔɻͦͷҰͭ͸
+ਓԽΠϯλϑΣʔεͰ͋Δɻ2ʣʹͤΑ 3ঢ়ʣʹͤΑɺ
+ͭ AI Ԡ༻
+ਓԽΠϯλϑΣʔεͷར఺͸ɺͦͷγεςϜͱ૬ର͢Δར
+༻ऀʹͱͬͯɺγεςϜ͕ͲͷΑ͏ͳԠ౴Λ͢Δ͔ͷϞσϧΛԾఆ͠΍͍͢͜ͱͰ͋Δɻ͠
+࣮
+ͭɻͦͷΑ
+ΊΒΕΔɻ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+22
+
+===== PDF_PAGE 33 =====
+４．研究開発の推進方法および時間軸
+４－１．施策の設計方針
+AI͍ͯ͘͜͡ͱ͕ඞ
+ͱͳΔɻ
+ํ਑
+Λτοϓμ΢ϯʹՃ଎
+̎ɽ ڝۀࣄ
+Խ
+̏ɽ ఆˍඪ४Խɺͱ͍͏3 ͭ
+ͤͯ͞ਪਐ
+̐ɽ ূ͠ɺଞ෼໺΁ల։
+̑ɽ ਪਐ
+ҎԼɺ͜ΕΒ 5ํ਑Λॱʹઆ໌͢Δɻ
+（１）問題解決型の基礎研究をトップダウンに加速
+AIΛτοϓμ΢ϯ
+ଘͷτοϓμ΢ϯతͳϑΝϯσΟ
+ʣ ͸ϘτϜΞο
+ϓతͰ͋Γɺ͜ͷ໨తʹ͸ඞͣ͠΋े෼ͳεΩʔϜͰ͸ͳ͍ɻ
+ਤ 19ࣔ
+ͨ͠ɻ
+図 19　シーズプッシュ型 vs 問題解決型
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+23
+研究開発の推進方法
+および時間軸4.
+
+===== PDF_PAGE 34 =====
+ज़
+ʢྫɿ5Gߴ
+Խ͢ΔͨΊ
+ԽͷεςοϓͰ͸ɺͦͷ
+ज़͕͍Ζ͍Ζͳ༻్ʹల։͞ΕΔɻ
+ց຋༁ɺ
+Ͱ͋ΔɻͦͷϑΣʔζ
+ͯ͠
+తͳղ
+࣮
+ʹ
+ͷϑΝϯσΟ
+༻͢Δɻ
+೥ɺ
+·͍ͬͯΔɻ
+AIͱͯ͠τοϓμ
+ΊΒΕΔɻ
+（２）人工知能×ソフトウェア工学の技術融合を促進
+஌ೳʢAIʢSEज़෼໺Λ૑
+Խ͢Δɻ
+ͷΑ͏ͳ՝୊͕͋Δ
+౰͠ͳ͍έʔε
+Խ͕ඞཁͰ͋ΔɻಛʹAIֵ
+ܰ
+೦఺Ͱ͋ΔɻAI૪ྗΛੜΉɻ
+ʹ͓͚
+࢈
+քͷม
+ͭඞཁ͕͋Δ͔΋͠Εͳ͍ɻ
+෰͠ɺAI૪ྗΛੜΈग़ͨ͢Ίʹ
+஌ೳʢAIʢSEज़෼໺ͷ૑
+۩
+ͰਐΊΔ͜ͱ͕
+ඞཁͰ͋Δɻ
+（３）3 つの活動を密連携させて推進
+AIূɺᶅ
+ఆˍඪ४Խɺͱ͍͏ 3Ͱ͋Δɻ
+Ԡ༻Ͱ
+ͰऔΓ૊·ΕΔ͜ͱ͕๬·͍͠ɻͦ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+24
+
+===== PDF_PAGE 35 =====
+ྩౝ૊
+ɺਤ 20ͱͳΔ 3ಈ
+ಈ΍ஂମ ɾ ૊৫্ཱ͕͕͖͓ͪͬͯͯΓɺͦΕΒΛଋͶ
+ઃஔ͕๬·ΕΔɻ
+（４）競争が始まっている自動運転分野で先行実証し、他分野へ展開
+AI͞ΕΔAI͕ҟͳΔ͜ͱΛ
+౿·͑ͯऔΓ૊Ή͜ͱ͕ॏཁͰ͋ΔɻͦͷҰྫͱͯ͠ɺAIอূίϯιʔγ
+ΞϜ QA4AI৔ʢ੡଄ʣ ɺεϚʔτεϐʔΧʔɺΫϦΤΠςΟϒʢ3D
+ಈըੜ੒ʣͱ͍͏ 4౼ΛਐΊ͍ͯΔɻ
+ࡍࠃ
+ಈӡస෼໺ AIΛઌ
+ূ͠ɺͦ͜ͰੜΈग़ͨ͠ AIྀͭͭ͠ଞ෼໺ʹల
+΋
+͍ɻ
+͢ɻ
+ ˔ JAXA ʴJAMAɿAI౼ʢ2018 ೥ 3݄
+ϓϨεϦϦʔεʣ ɻ
+ Ή AIஙΛਐΊ
+Δͱͱ΋ʹɺ1. ΞϓϦέʔγϣϯɺ2. αϒγεςϜɺ3. ίϯϙʔωϯτʢϞσϧʗ
+σʔλʣͷ 3ज़Λ։ൃ͍ͯ͠Δɻ
+ ˔ ERATOख๏Λ
+ಈӡసγεςϜ։ൃʹద༻ɻ
+ ˔ ϖΨαεʢPegasusʣϓϩδΣΫτɿυΠπBMWiಈ
+ํ๏ͷඪ४ԽΛਐΊΔɻ
+図 20　中核となる 3 つの活動と関連組織
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+25
+研究開発の推進方法
+および時間軸4.
+
+===== PDF_PAGE 36 =====
+෼໺ͱͯ͠ɺ AIͷऔΓ
+։ൃ͞ΕΔ
+·Ε͍ͯ͘ʹҧ͍ͳ͍ɻ ͍·ͷAIशͰ͋
+Δ͜ͱʹՃ͑ͯɺIoTʢInternet of Thingsʣ΍ CPSʢCyber-Physical Systems͹Ε
+ज़ʹͳΓͭͭ͋
+ΔɻIoTɾCPSੈքͷঢ়
+͜
+͔ʹʢԋ
+ͷγες
+อূΫϦςΟΧϧͰͳ͘ͱ΋ɺ҆શͰ৴པੑ
+ͱͯ͠ɺAIιϑτ΢Σ
+͕͍ͬͯ͘͸ͣͰ͋Δɻ
+（５）日本の先行優位性を活かす迅速な施策推進
+AI͕ͩɺAIΘΔଞ෼໺ͱಉ༷ʹɺ
+ͨ͠
+Ͱ͸ͳ͘ɺੈքతʹϦʔυͰ͖Δνϟϯε͕͋Δɻ·ͨɺ඼
+༏Ґੑ͸Ωʔ
+͘๬·ΕΔɻͨͩ
+ا
+ٕ
+ཁͰ͋Δɻ
+AI͑Δ͕ɺύϥμΠϜస
+ཱʢ10
+Ͱ͋Δɻ
+図 21　研究開発推進の時間軸
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+26
+
+===== PDF_PAGE 37 =====
+ਤ 21 ʹ AIͨ͠ɻ͜͜Ͱ͸ɺ
+͚ʹ՝୊͕͋Δɻγʔζ
+ʹͳͬ
+༏Ґ
+͑Δɻ
+４－２．国の施策の役割
+ձʢSociety 5.0ʣ
+ʹ͓͍ͯɺAIۀ࢈
+ʹ͓͍ͯ΋ɺAIͱͯ͠ɺ৽ੈ
+ʮAIཱ͠
+͢ɻ
+ͱͱ΋ʹɺਤ 22 ʹ·ͱΊͨɻ
+̏ʵ̎અͰड़΂ͨΑ͏ʹɺAIքͰͷऔΓ
+૊ΈΛத৺ͱͨ͠ʢAज़քͰͷऔΓ
+૊ΈΛத৺ͱͨ͠ʢBͷΞϓϩʔνͷ྆໘͔Βղ͍͍ͯ͘
+ք͸ɺ ʢAͰ͖ͣɺAI૪
+ཱ͢ΔͨΊʹ͸ɺAI଴͍ͯ͠Δɻ
+͸ɺAIͷ෼໺ʹ͓͍ͯɺཧ࿦͚ͩͰ͸ͳ
+ͷ
+ΊΒΕΔɻͦͷͨΊɺ ̐ʵ̍અͷʢ̏ʣͰ΋ड़΂ͨ
+ϑΥʔϝʔγϣϯ͕๬·͍͠ɻ
+ͱͯ͠ɺAIֶ޻
+ऀ͕औΓ૊ΈΛ
+͔͍ͯ͘͜͠ͱ
+͕೉͘͠ͳΔɻ
+ྩ
+͍ͯ͘͜͠ͱ΋ॏཁͳ
+߹
+ͷਪਐΛଅ͢͜ͱͰ͋Δɻ
+図 22　国の施策の役割
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+27
+研究開発の推進方法
+および時間軸4.
+
+===== PDF_PAGE 38 =====
+付録１．検討の経緯
+ʢJST։ൃઓུηϯλʔʢCRDSʣͰ͸ɺ2018
+ิͱ
+ମ͸ 2018 ೥ 5͔
+͕ͨ͠ɺͦΕʹઌཱͪɺCRDSज़ϢχοτͰ͸2017
+೥9ऀΠϯλϏϡʔ΍ϫʔΫγϣοϓ΋։
+࿦ΛਂΊ͖ͯͨɻ
+͢ɻ
+（１）有識者インタビュー
+Λ͏
+ผΠϯλϏϡʔ΍ϫʔ
+ͨ͠ɻ2017 ೥9ʙ2018 ೥9͠ɺ ҎԼͷํʑ͔Β͓࿩Λฉ͍
+ͨʢ50ɺෳ਺ճΠϯλϏϡʔͨ͠ํ΋
+͋Γʣ ɻ
+༤ ֶ ෦ Պ त
+ޛ ʢIPA൫ηϯλʔ Πϊϕʔγϣϯਪਐ෦ ໾
+ੴ઒ౙथ ॴʢNIIܥڀݚֶ त
+ੴᖛ௚थ ʢJAXA։ൃ෦໳ Ϣχοτ ։ൃ
+һ
+؍ ֶ Ӄ ܥֶ޻ त
+Ԟଜ༸ σϯιʔ ࣾࢧژ ࣨ ௕
+ਓ Ӄ Պ ߈ त
+ౡ༸ σϯιʔ ࣾࢧژ ࣨ ௕
+౻ਖ਼थ ࣾ औక໾CTO ݉ ज़ຊ෦௕
+ߦ ϒϨΠϯύου ϚʔέςΟϯάϓϥοτϑΥʔϜຊ෦ ෭ຊ෦௕
+հ ʢJAXA։ൃ෦໳ Ϣχοτ ։ൃһ
+࢚ ॴʢAISTࣄ ݉ ྖҬ ྖҬ௕
+໵ ʢNECॴ ॴ௕
+ढ़ത σϯιʔ ࣾࢧژ ࣨ ։ൃ̏՝௕
+தౡ਒ ߏػڀݚ ըຊ෦ ݉ ॴʢNIIࣾ
+ܥڀݚؔ त
+தౡल೭ Ӄ Պ ֶ ௕
+೭ Ӄ Պ त
+੖ Ӄ Պ ߈ ࢣߨ
+ຊਅଠ࿠ ʢJAXA։ൃ෦໳ ηΩϡϦςΟɾ৘ใԽਪਐ෦
+൫՝ ิ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+28
+
+===== PDF_PAGE 39 =====
+࿇ඌҰ࿠ ॴʢNIIܥڀݚֶ त
+౦தཽҰ࿠ ʢNTTॴ ڀݚ
+ॴ ݉ ڀݚ
+ॴ NTTһ
+஌೭ ॴ ॴ௕
+෱ॅ৳Ұ ॴ ηϯλʔ ά
+ϧʔϓ ձνʔϜ һ
+࿱ ֶ ෦ Պ ݉ Պ ৘ใ
+߈ त
+দඌ๛ ֶ ෦ Պ त
+޺ࢁؙ ࣾPreferred Networks ઓུ੹೚ऀ
+ਫ໺म ֶ ܥֶ त
+໌ਆஐ೭ ʢJAXA։ൃ෦໳ Ϣχοτ ։ൃһ
+ًࢁ޲ ʢIPAһ
+༸հ ʢNECʣAI։ൃຊ෦ γχΞσʔλ
+ΞφϦετ ݉ ॴ
+ຊଜཅҰ ॴʢAISTηϯλʔ һ
+࿯ඌོ ֶ ॴ त
+（２）俯瞰ワークショップ
+ͨ͠ɻͦͷৄ
+ॻ CRDS-FY2017-WR-11ΈͰ͋Δɻ
+http://www.jst.go.jp/crds/report/report05/CRDS-FY2017-WR-11.html
+ʯ
+ʳ2017 ೥12݄8ʣ13:30 ʙ18:00
+৔ॴʳTKPϲ୩ΧϯϑΝϨϯεηϯλʔɹΧϯϑΝϨϯεϧʔϜ7C
+ʲϓϩάϥϜʳ
+ʢJST ։ൃઓུηϯλʔ ϑΣϩʔʣ
+ɹ13:30 ʙ13:40ࡰ
+ଇʢJST ։ൃઓུηϯλʔ ্੮ϑΣϩʔʣ
+ɹ13:40 ʙ14:00આ໌
+ɹɹɹ෱ౡढ़ҰʢJST ։ൃઓུηϯλʔ ϑΣϩʔʣ
+ɹ14:00 ʙ14:30͚ͯ
+ࣾPreferred Networks ઓུ੹೚ऀʣ
+ɹ14:30 ʙ15:00श
+͚ͯʙ
+ॴ ܥڀݚؔ तʣ
+ɹ15:10 ʙ15:40ɹ AIͷ՝୊
+ࣾ ॴ ॴ௕ʣ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+29
+付録1
+　
+検討の経緯
+
+===== PDF_PAGE 40 =====
+ɹ15:40 ʙ16:10׵ ʵMPRG঺հʕ
+ֶ ෦ Պ तʣ
+ɹ16:10 ʙ16:40γεςϜ։ൃͷϏδωεత՝୊
+ϒϨΠϯύου ϚʔέςΟϯά
+ɹɹɹϓϥοτϑΥʔϜຊ෦ ෭ຊ෦௕ νʔϑσʔλαΠΤϯςΟετʣ
+ɹ16:50 ʙ17:05ࣝ
+ɹɹɹલాষʢJST ʣ
+ɹ17:05 ʙ17:50౼࿦
+ɹɹɹϑΝγϦςʔλʔɿ෱ౡढ़ҰʢJST ։ൃઓུηϯλʔ ϑΣϩʔʣ
+ɹ17:50 ʙ18:00ࡰ
+（３）AI ソフトウェア工学の技術課題の整理
+ਤ 8ͨ͠ɻද 1ʢલग़ʣͷ
+ज़తͳ՝୊Λ
+౼͠΍͍͢ɻ
+ͦ͜Ͱɺਤ23Ͱɺਤ8 ౳
+Ͱγες
+ͷ2 ఺
+͕ॏཁͳ͜ͱ͕Θ͔Δɻ
+ʢiӈ
+ʢiiश͸ 100%͕ॏཁ
+·ͨɺAIք
+֬
+ຊతʹ೉͍͠ɻैདྷख๏
+ཧΛੜΈ
+͕ॏཁͰ͋Δɻ
+図 23　機械学習応用システムの構成と技術課題
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+30
+
+===== PDF_PAGE 41 =====
+͜ͷ͜ͱ͔ΒɺAIͷΑ͏ͳ2తͳऔΓ૊Έ͕๬·ΕΔɻ
+ʢAԽͷΞϓϩʔν
+ʢBͷΞϓϩʔν
+͖ͮɺਤ23ज़՝୊ΛʢiʣʢiiʣͱʢAʣʢBʣͱ
+͍͏2Ͱ੔ཧ͠௚ͨ͠΋ͷΛද2͢ɻ͢ͳΘͪɺ ද2ज़՝୊Λʢiػ
+ମͱʢiiʣશମγεςϜͱ͍͏ 2ज़՝୊ʹ
+ରͯ͠ɺ ʢAԽͷΞϓϩʔνͱʢBֶ
+ͷΞϓϩʔνͱ͍͏ 2͑ΒΕΔऔΓ૊ΈํΛ͋͛ͨɻ
+表 2　技術課題に対する 2 面からのアプローチ
+技術課題 (A) 実践から得られる知見の体系化の
+アプローチ
+(B) 理論・原理に関わる学術研究の
+アプローチ
+(i)
+機
+械
+学
+習
+自
+体
+システム要求 / 要件に合致した
+学習用データ準備コスト
+データ収集・加工・アノテーションの
+効率化ツールの整備
+少量データや少量ラベル付きデータか
+らの機械学習法の体系的構築
+訓練用データ集合の品質
+訓練用データの量・分布特性に関する
+ノウハウ集積、データ投入順の経験的
+最適化
+訓練用データの品質評価 ( 想定外・脆
+弱性の最小化 ) の理論・指標
+テスト用データ集合の品質、機
+械学習プログラムのデバッグ・
+検証
+テスト用データの量・分布特性に関す
+るノウハウ集積
+テスト用データの品質評価 ( 想定外・
+脆弱性の最小化 ) の理論・指標
+機械学習結果の公平性を確保す
+る訓練データ ( 差別・偏見の混
+入回避 )
+学習時にセンシティブな説明変数の除
+外
+公平性を確保するための機械学習の理
+論 ( 併せて解釈性も )
+訓練済みモデルの転用・再利用
+時の品質 訓練データ履歴の蓄積・管理 モデル適用環境の差分分析に基づくモ
+デルや追加学習の品質評価
+訓練済みモデルの転用・再利用
+時の権利
+訓練済みモデルの知財権・利用ガイド
+ラインの整備
+転用・再利用に関わる不正な利用の検
+知や品質の評価
+(ii)
+全
+体
+シ
+ス
+テ
+ム
+100% 保証はできないシステム
+の要求定義
+要求定義プロセス ( 顧客の理解を得る )
+のノウハウ集積 リスク要因分析に基づく安全設計手法
+曖昧要件・試行錯誤下での工数
+見積もり
+事例・経験の蓄積に基づく工数見積も
+り
+不確かな要因の特定・解消を含む工数
+推定モデル
+従来型と機械学習型へのタスク
+分割の最適化
+経験の集積による使い分け・デザイン
+パターン化
+機械学習型と記号推論型の最適統合原
+理の探求
+機械学習型の環境変化や想定外
+ケースへの対策
+機械学習型の使用条件の経験的な限定、
+経験的なリカバリー処理
+環境変化・想定外ケースの理論的判定
+とリカバリー処理の最適設計手法
+全体システムの安全性評価、第
+三者評価
+従来型の安全性評価を部分修正して適
+用 ( それが可能な範囲で限定運用 )
+機械学習型と従来型の混在システムの
+安全性評価の理論・指標
+システム動作についての説明責
+任
+説明の必要なパートとブラックボック
+スが許容されるパートに分けて技術を
+使い分け
+機械学習の解釈性向上、人間による受
+容性に関する理論
+͜͜Ͱɺ ʢAքओମͰऔΓ૊Έ͕ਐΉʹҧ͍ͳ͍͕ɺ ʢBج
+͕๬·ΕΔɻ
+ͦ͜Ͱɺද2 ͷ੔ཧΛ΋ͱʹɺ ʢB͠ɺ ʢBʣͷऔΓ૊Έ͕ඞཁ͋Δ͍͸ಛ
+ͨ͠ͷ͕
+ͨ͠ਤ 13ֶ
+อɺᶅϒϥοΫϘοΫε໰୊΁ͷର
+తͳ࿮૊Έͱ͍͏4՝୊ͷ
+࢓
+౳΋ॏཁͰ͋Δɻ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+31
+付録1
+　
+検討の経緯
+
+===== PDF_PAGE 42 =====
+表 3　丸山・鵜林が示した機械学習工学における技術課題
+ʹΑΔ
+ʦ2ʧ
+ʢ1शλΠϓͰҟͳΔʣ
+ʢ2ར༻ ʢCopy, Fine
+tuning, Ensemble, DistillationϑΥʔϚο
+τ
+ʢ3༻ʢCACE࣌
+࣭
+ʢ4ʣղऍՄೳੑ Interpretability ಁ໌ੑʢγϛϡϨʔγϣϯՄೳੑɺ෼ղՄೳੑɺΞϧΰϦζϜಁ
+ॴσʔ
+ʹΑΔઆ໌ɺྫʹΑΔઆ໌ʣ
+ʢ5ີੑ
+ʢ6ཧ CPU ͱ GPUͦΕͧΕͷϫʔΫ
+దԽ
+ʢ7ʣιϑτ΢ΣΞΞʔΩςΫνϟ
+ʕύλʔϯ
+ԋ៷త։ൃvsΘͤ
+ӏྛʹΑΔ
+ʦ29ʧ
+ʢ1଴஋ͷίϯτϩʔϧ
+ʢ2शͷͨΊͷ Reasoning ཧ༝આ໌ɾղऍՄೳੑ
+ʢ3शͷͨΊͷιϑτ΢Σ
+ܭ
+཰తͰ͋Δ͜ͱΛ౿·͑ͨγεςϜશ
+อূ
+ʢ4ɺςετͷ໢ཏੑͱ͸
+ʢ5शγεςϜʹ͓͚ΔϞ
+σϧϚωδϝϯτ
+ཧɺτϨʔαϏϦςΟ
+ʢ6ଓతʹ
+ज़
+ΈϞσ
+ϧͷվળ
+ʢ7शγεςϜ։ൃͷͨΊ
+ཧ
+ͷνʔϜϚωδϝϯτ
+ʢ8शγεςϜӡ༻ͷͨΊ
+ձ੍౓
+100%ऀධՁ
+ʢ+1ʣMLSEBOKͷSWEBOKு
+ͳ ͓ ɺʢAʣʢBผ͸͍ͯ͠ͳ͍͕ɺAIज़
+՝୊͸ɺଞʹ࿦จʦ2ʧʦ29ͷͨΊɺද 3͢ɻ
+（４）インタビューやワークショップで得た主なコメント・示唆
+ͱॏͳΔ΋ͷ͸ɺ͜͜Ͱ͸লུ͢ΔɻϓϩϙʔβϧຊจͰৄ͠
+͢Δɻ
+ ຊʹ͋Δͷ͕ɺैདྷͷιϑτ
+֬
+͍͑ͯͨɻ
+ લʹ૝ఆͨ͠
+ுΔ౳͕ඞཁɻ
+ ͷϞδϡʔϧ͸100% อূ
+΋ซ༻
+͢Δɻ
+ ࿅
+Ͱͳ͘ͳΔɻ
+ Δ͜ͱ͕
+ϙΠϯτɻ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+32
+
+===== PDF_PAGE 43 =====
+˔ Google໰୊ʹରͯ͠΋
+ֶ
+Խ͸·ͩɻ͜ΕʹऔΓ૊Ή͜ͱ͕ॏཁɻ
+ ˔ ͋ͱ2Ͱ
+͏ɻ
+ ར༻
+ʹ΋ண໨͢Δඞཁ͕͋Δɻ
+ ˔ AIػ
+४ʢ௨ৗ༗͢΂͖҆શੑͱ͸ʁʣ͕ඞཁɻ
+ ࿅
+ঢ়͸ᐆດͳ··औҾ͠
+͍ͯΔ͜ͱ͕ଟ͍ɻ
+ ͸AI γεςϜ͚ͩͰͳ͘ैདྷγεςϜͰ΋ಉ͡ɻ
+͞Ε͍ͯΔɻ
+ ো΍ιϑτͷόά͕͋Γɺ100% อূ͸Ͱ͖ͳ͍͕ɺϦεΫड༰ͷ
+͑ํ͕Ͱ͖͍ͯͨɻ
+ ˔ 100%ͷཧղΛಘΔ͜
+ͱ͕ඞཁɻ
+ ͷ SIใुϏδωε
+΁ม͍͑ͯ͘ɻ
+ ͑։ൃ͔/ࠔ
+ԉ͢Δͷ͔/͢Δͷ͔͕σϓϩΠϝ
+೉͞ʹͭͳ͕͍ͬͯΔɻ
+ ज़։ൃ͚ͩͰͳ͘ɺσʔλΛूΊͯΞϊςʔγϣϯ͢Δͱ͍
+ͷํ๏࿦΋ॏཁɻ
+ ͕มΘΔͷ͸ා͍ͷͰʢTay͕͋ͬͨͷͰʣ ɺ ͦ
+લʹ༻ҙ͞ΕͨύλʔϯͷϥϯΩϯάΛม͑Δఔ౓ɻ
+ ʹͳΔ͜ͱ͸ͳ͘ɺιϑτ΢ΣΞ
+ΘΕ
+͑ํ͕ॏཁɻ
+ ͞ΕΔ΋ͷͰ͋Γɺγ
+Ϩϕϧ΋ҟͳΔɻ
+ Λఆ
+ΊΔͷ͕೉͍͠ɻ
+ ɺϓϥο
+ผͯ͠࿦͡Δඞཁ͕͋Δ
+ʦ31ʧ
+ɻͦͷͨΊɺ λʔήοτԠ༻΋͍ͭ͘
+ϨϕϧΛ࿦͡Δ΂͖ɻ
+ ͸ద༻อ
+ք
+Ͱ͸ͳ͍͔ɻ
+ ೳ҆શͱ͍͏3 ͕ͭผʑʹൃల͖͕ͯͨ͠ɺ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+33
+付録1
+　
+検討の経緯
+
+===== PDF_PAGE 44 =====
+͠ɺ·ͨɺϋʔυ΢ΣΞɺιϑτ΢ΣΞɺ AI߹
+͑Δ͜ͱ͕ඞཁɻ
+ ΘΕΔɻ ͔͠͠ɺ
+཰తͳ໘͕ೖΔͷͰɺ
+AI཰తͳѻ͍͸ඞཁɻ
+ ෼
+ͷ৘ใԽ͕ਐΊΒΕ͍ͯͳ͍ɻ σδλϧτϥϯεϑΥʔϝʔγϣϯ͕஗Ε
+͍ͯΔɻ
+ ˔ ҆શੑɾ৴པੑΛʢaΒΕ͍ͯΔ͔ʣ ɺ ʢ2ڍ
+ಈ͕҆શ͔ʣ ɺ ʢ3ՌΛઆ໌Ͱ͖Δ͔ʣͷ3͑Δɻ
+ ͷ਺
+޻
+͑Δɻ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+34
+
+===== PDF_PAGE 45 =====
+付録２．国内外の状況
+（１）産業界
+Ͱ͋Δɻ
+͍ͯ͠ΔɻԤभͷPEGASUS ϓ
+ϩδΣΫτɺσϯιʔͷAIʢJAXAձ
+ʢJAMA౼౳͕ਐΜͰ͍Δɻ
+（２）AI 研究コミュニティー
+৺͸௿͍ɻ
+ձʹ͓͚ΔAIशͷ੬ऑ
+քςετʢAdversarial ExamplesΊͨɻถ
+ࠃDARPA ͕XAIʢઆ໌ՄೳͳAIϓϩάϥϜΛ2017ͨ͠ɻ
+2014͞Ε͍ͯΔ FAT/MLʢFairness, Accountability, and Transparency
+in Machine Learningฏੑɾઆ໌੹೚ɾಁ໌
+ͷॏཁ՝୊ͱͯ͠
+࿦͞Ε͍ͯΔ ʢ2018೥1ਪ
+։γϯϙδ΢Ϝ౳ʣ ɻ
+਑ʹͳΓಘΔɻ
+（３）ソフトウェア工学研究コミュニティー
+಺Ͱ͸ɺ3 ʙ4 ೥લ͔Βஹ͠
+5
+ΒΕ͕ͨɺ2017քΠϕϯτͰ
+ʹϗοτ
+τϐοΫԽͨ͠ɻ
+ ˔ 2017 ೥2݄3ձιϑτ΢ΣΞδϟύϯ 2017
+ʣ
+ ˔ 2017 ೥8݄31γϯϙδ΢Ϝ SES2017
+ʣ
+Ұɺੴ઒ౙ
+थʣ
+ ˔ 2017 ೥10݄4 ೔ɿCEATEC JAPAN 2017஌ೳίϯϑΝϨϯε
+शʯ ʢதౡ਒ʣ
+ ˔ 2017 ೥12݄14 ೔ɿJEITAज़ϫʔΫγϣοϓ2017
+஌ೳϒʔϜͷதͰͷιϑτ΢ΣΞΤϯδχΞϦϯάʙ
+ʣ
+ ˔ 2018 ೥1݄18 ೔ɾ19ձ΢ΟϯλʔϫʔΫ
+γϣοϓ 2018 in ౡ
+5 例えば、 2015 年 11 月 24 日に開催された日本学術会議公開シンポジウム「by 機械学習、 of 機械学習」における岡野原大輔（Pre-
+ferred Networks）の講演「機械学習による機械の学習：自動運転からロボットの協調生産まで」の中で、機械学習がシステム開発のパ
+ラダイム転換を起こすことが言及された。また、ほぼ同時期、丸山宏（当時 統計数理研究所、現在 Preferred Networks）や中島震（国
+立情報学研究所）らからも、機械学習をソフトウェア工学から見た技術課題等が指摘されていた。
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+35
+付録2
+　
+国内外の状況
+
+===== PDF_PAGE 46 =====
+ʯηογϣϯ
+ ˔ 2018 ೥6݄8େձ JSAI2018
+త՝
+୊ ʵʯ
+ ˔ 2018 ೥8݄29 ೔ʙ 31ձୈ 35 ճେձ
+ʯηογϣϯ
+ ˔ 2018 ೥10݄18 ೔ɿCEATEC JAPAN 2018஌ೳίϯϑΝϨϯε
+ɿ ϓϩμΫτɼαʔϏεɼϓϥοτϑΥʔϜʯ
+ʢதౡ਒ʣ
+ ˔ 2018 ೥12݄12ձ࿈ଓηϛφʔ 2018 ୈ6 ճ
+༄৻Ұɺ໳
+ਓɺதౡ਒ɺ෱ౡढ़Ұʣ
+͞Βʹɺ2018 ೥4ձ MLSE ͕ൃ
+଍͠ɺ5݄17͞Εͨ MLSE ΩοΫΦϑγϯϙδ΢Ϝʹ͸ 500Ճऀ
+Ճऀ਺͕ଟ͘ɺ໰୊ҙ
+ΒΕͨɻ͞Βʹɺ7݄1 ೔ɾ2͞Εͨୈ 1 ճMLSE ϫʔ
+ΫγϣοϓʢMLSE2018Θ͞Εͨɻ
+ಉ͡4ʹ͸ɺAIอূίϯιʔγΞϜ QA4AIʢConsortium of Quality
+Assurance for Artiﬁcial-Intelligence-based products and servicesֶ࢈27
+ਓɾஂମͰઃཱ͞ΕɺAIԉɾ
+։ൃΛਪਐ͢Δͱͱ΋ʹɺAIൃ͢Δ
+͏ɻ
+ʢJAXAձʢJAMAʣ͸ɺAI୅ͷι
+ΛਐΊΔͱɺ2018 ೥3݄9ͬ
+ज़ʢSTAMP/STPA
+ʦ19ʧ
+͖͏Δ
+ͬͨղੳख๏ʣ΍ IV&VʢIndependent Veriﬁcation and Validationɿγε
+ಈʣ
+ʦ30ʧ
+༻͠ɺAI͑ํΛ·ͱ
+ΊΔͱ͍͏͜ͱͰ͋Δɻ
+ಈʹ͓
+͍ͯ͠Δɻ
+Ұํɺւ֎ʹ͓͍ͯ͸ɺ2017ϓϩάϥϛϯά
+ΒΕɺ৽͍͠ύϥμΠϜ͸ʮ Software 2.0ʯ
+ʢTesla ʹΑΔʣ
+ʦ3ʧ
+΍ʮMachine TeachingʯʢMicrosoft ʹΑΔʣ
+ʦ4ʧ
+ج
+ԋ౳ͰʮSoftware 2.0ʯ͕औΓ্͛ΒΕΔΑ͏ʹͳͬͨɻ
+ ˔ 2018 ೥6ɿISCA2018ʹͯKunle Olukotunʣ͕ʮDesigning
+Computer Systems for Software 2.0ԋ
+ ˔ 2018 ೥6ɿDeep Learning World Las Vegas 2018ʹͯGil ArditiʢLyftʣ͕ʮDeep
+Learning as Software 2.0ԋ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+36
+
+===== PDF_PAGE 47 =====
+·ͨɺAIձ΋૿͓͑ͯΓɺϫʔΫ
+ൃԽ͍ͯ͠Δɻ
+ ʹ SEMLA ΠχγΞςΟϒʢ The Software
+Engineering for Machine Learning Applications initiativeʣ͕ൃ଍͠ɺ2018 ೥6݄
+12 ೔ɾ13࠵
+ ˔ 2018 ೥7݄15 ೔ʹ Joint Workshop between ICML, AAMAS and IJCAI on Deep
+ʢor Machineʣ Learning for Safety-Critical Applications in Engineering࠵
+ Ͱ͸ɺ2018 ೥11݄23 ೔ʙ 25͞ΕΔୈ 17ιϑτ΢ΣΞ
+Ԡ༻େձʹ͓͍ͯɺ ʮAIʯͷηογϣϯ͕ઃ͚ΒΕΔ
+（４）AI 品質関連の標準化活動や安全基準策定の動向
+ߏػISOٞIECज़ҕһձ JTC1 ʹ͓͍
+ͯɺSC7ɺ SC42஌ೳΛѻ͍ͬͯΔʢ JTCɿJoint Technical
+CommitteeɺSCɿSubcommitteeʣ ɻ͜ΕΒͷSC ͰAIΘΔ
+·͍ͬͯΔɻಛʹ SC7 Լͷ WG6ɺWG26 ͕ιϑτ΢ΣΞɾ
+཯γεςϜͷྙཧ౳Λѻ͏WG ΋৽ઃ͞ΕΔ༧ఆͰ
+͋Δɻ
+·ͨɺISO TC159ɺͦͷԼͷ SC4 ͰώϡʔϚϯίϯϐϡʔλʔΠϯλϥΫ
+γϣϯΛѻ͓ͬͯΓɺAIΖ͏ͱ͍ͯ͠Δɻ
+IEEE Standard Association Ͱ΋ Global Initiative for Ethical Considerations in AI
+and Autonomic Systems࿦͞Ε͍ͯΔɻIEEE P7000ʹͳΔɻ
+ ϕϯνϟʔͷ Edge Case ResearchͰ͋Δ
+Underwriters Laboratoriesఆ͠Α͏ͱ͍ͯ͠
+Δɻ
+ηϯλʔʢThe German Research Center for Artiﬁcial
+IntelligenceɿDFKIؔػTÜV SÜDಉͰʮ TÜV for Artiﬁcial
+IntelligenceಈΛਐΊ͍ͯΔɻ
+Google DeepMindͷ AI ։ൃΨΠυϥΠϯ
+ʦ34ʧ
+ੑɺอূͱ͍͏3 ໘
+͔Β·ͱΊ͍ͯΔ͜ͱΛൃදͨ͠ɻ
+ܥSQuBOKʢSoftware Quality Body of Knowledgeʣ
+ఆ෦ձ͕ɺ2020όʔδϣϯ V3 ʹ͓͍ͯɺAI࣭
+΋औΓ্͛Δ༧ఆͰ͋Δ
+ʦ35ʧʦ36ʧ
+ɻ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+37
+付録2
+　
+国内外の状況
+
+===== PDF_PAGE 48 =====
+付録３．専門用語説明
+ ˔ 機械学習（Machine Learning）
+ೳΛ
+রɻ
+ ˔ 記号推論
+ਪ࿦͸τοϓμ΢
+͢Δ͜ͱͰɺ
+ΈͱऑΈΛΧόʔͰ͖ΔՄೳੑ͕͋Δɻ
+ ˔ コンテキストアウェアシステム（Context-Aware Systems）
+ಈʹඞཁͳ
+͢ΔγεςϜͷ͜ͱΛ͍͏ɻ
+ ˔ 深層学習（Deep Learning）
+शख
+ज़తͳ໰୊ʹΑͬͯे෼
+೥ɺώϯτϯΒʹΑΔଟ૚χϡʔϥ
+্ɺ͓ΑͼɺWeb ͷ
+݁
+͠ɺ
+2010ͨ͠ɻ
+ ˔ FRAM（Functional Resonance Analysis Method）
+2004 ೥ʹೆσϯϚʔΫେͷ E. Hollnagel໐ͷ෼ੳʹΑΔ҆શղੳख
+֤
+͍ʹͲͷཁૉͱΠϯλϥΫγϣϯ͢Δͷ͔Λ໌
+ग़͢ɻ
+ ˔ ILSVRC（The ImageNet Large Scale Visual Recognition Challenge）
+ILSVRC ͸2010౰ॳ͸ɺ ʮը૾෼
+ࢦ
+ఆ͞Εͨ 200ఆ͞Εͨ20 ΧςΰϦʔͷ෺ମ
+ग़͢Δʯͷ 3͞Εͨɻ
+ ˔ STAMP/STPA
+STAMPʢSystem Theoretic Accident Model and Processesʣ/STPAʢSystem Theoretic
+Process. AnalysisͷNancy Levesonत͕ఏএͨ͠ɺ େ
+੒ཁૉͷ͢΂
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+38
+
+===== PDF_PAGE 49 =====
+Λճආ͢ΔͨΊ
+্Λਤ
+Ζ͏ͱ͢Δख๏ɻ
+ ˔ SWEBOK（Software Engineering Body of Knowledge）
+SWEBOKձʢIEEEձʢACMʣʹ
+ࣝ
+Ͱ͋ΔɻSWEBOK͸ɺ ʮSWEBOKΨΠυʯͱͯ͠·ͱΊΒ
+श͢Δͨ
+ΊͷखҾ͖ͯ͠ར༻͞Ε͍ͯΔɻ
+ ˔ V 字モデル（V-Model）
+ఆ͢ΔͨΊʹ։ൃ͞ΕͨɻVʹද͞Ε
+͢ɻ
+͞ͷϨϕϧΛද͍ͯ͠ΔɻVଆʹର͢Δӈ
+༷ʢৄ
+༷ʣ˱ੑೳςετɺͱͳΔɻ
+ ˔ CACE（Changing Anything Changes Everything）
+͍Λੜ͡ಠཱͨ͠վྑΛෆՄ
+Ռ͕গ͠มΘΔɺ͋
+తʹมΘΔɺͱ͍͏͜ͱ͕͓͜Δɻ
+ ˔ Adversarial Examples
+ಈͷ͜ͱͰɺadversarial attack ΍ɺadversarial perturbation ɺ
+͸ adversarial image ܸ߈
+͕ਖ਼͘͠෼ྨͰ͖͍ͯͨը૾ʹɺਓͷ໨Ͱ͸൑ผͰ͖ͳ͍
+ΒͤΔ͜ͱ͕Ͱ͖Δɻ
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+39
+付録3
+　
+専門用語説明
+
+===== PDF_PAGE 50 =====
+付録４．参考文献
+ʦ1ʧ ձୈ34ԋ࿦จूɺ2017
+೥9ɻhttp://jssst.or.jp/ﬁles/user/taikai/2017/GENERAL/general6-1.pdf
+ʦ2ʧ ɺ33ר2ɺ2018 ೥ 3
+ɻ
+ʦ3ʧ Andrej Karpathy: ʠSoftware 2.0ʡ, Medium, 2017.11.12.
+https://medium.com/@karpathy/software-2-0-a64152b37c35
+ʦ4ʧ Patrice Y. Simard, Saleema Amershi, David M. Chickering, Alicia Edelman Pelton,
+Soroush Ghorashi, Christopher Meek, Gonzalo Ramos, Jina Suh, Johan Verwey, Mo
+Wang and John Wernsing: ʠMachine Teaching: A New Paradigm for Building Machine
+Learning Systemsʡ, arXiv:1707.06742, 2017. https://arxiv.org/abs/1707.06742
+ʦ5ʧ ઌ୺ͷ
+ཧɺ60ר8ɺ2017 ೥11ɻ
+https://doi.org/10.1241/johokanri.60.543
+ʦ6ʧ D. Sculley, Gary Holt, Daniel Golovin, Eugene Davydov, Todd Phillips, Dietmar Ebner,
+Vinay Chaudhary and Michael Young: Machine Learning: ʠThe High-Interest Credit
+Card of Technical Debtʡ, Google Publications, 2014.
+https://ai.google/research/pubs/pub43146
+ʦ7ʧ ʯ ɺୈ1ϫʔΫγϣο
+ϓMLSE2018ɺ2018 ೥7ɻ
+https://drive.google.com/ﬁle/d/1Yp48Uf9RX64b2--1M_zInvpVK_9nmi3i/view
+ʦ8ʧ Kevin Eykholt, Ivan Evtimov, Earlence Fernandes, Bo Li, Amir Rahmati, Chaowei
+Xiao, Atul Prakash, Tadayoshi Kohno and Dawn Song: ʠRobust Physical-World
+Attacks on Deep Learning Modelsʡ, arXiv:1707.08945, 2017.
+https://arxiv.org/abs/1707.08945
+ʦ9ʧ श AIʮTay։ఀ
+ʯɺengadgetɺ2016 ೥3݄25 ೔ɻhttps://japanese.engadget.com/2016/03/24/ai-tay/
+ʦ10ʧ ฏ࿨തɿ ʮAI·Δ൷൑ʯ ɺHUFFPOSTɺ2018೥9݄3 ೔ɻ
+https://www.hufﬁngtonpost.jp/kazuhiro-taira/ai-20180903_a_23514984/
+ʦ11ʧ Jeffrey Dastinɿ ʮয఺ɿΞϚκϯ͕AI࿐ఄͰʯ ɺ
+REUTERSɺ2018 ೥10݄11 ೔ɻ
+https://jp.reuters.com/article/amazon-jobs-ai-analysis-idJPKCN1ML0DN
+ʦ12ʧ Ӧʹ΋ͨΒ͢ʮ૑଄ʯͱʮഁյʯ ʯ ɺEYॴɺ2015 ೥9ɻ
+https://www.shinnihon.or.jp/shinnihon-library/publications/issue/eyi/knowledge/fsi/
+pdf/2015-09-15.pdf
+ʦ13ʧ ͱͳΔͨΊʹʙʯ ɺ೔ຊιϑτ΢ΣΞ
+ձ ձ ΩοΫΦϑγϯϙδ΢Ϝɺ2018 ೥5݄17 ೔ɻ
+https://www.slideshare.net/MLSE/ss-97568695?ref=https://mlxse.connpass.com/
+event/80434/presentation/
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+40
+
+===== PDF_PAGE 51 =====
+ʦ14ʧ ੴ઒ౙथ ɿ ʮAIशͷ೉͠͞ͱʢAIʹΑΔʣς
+εςΟϯάʯ ɺESTIC2018ʢEmbedded System Technology and Innovation Conferenceʣɺ
+2018 ೥ 7݄20 ೔ɻ
+http://research.nii.ac.jp/~f-ishikawa/work/1807-ESTIC18-AI+Testing.pdf
+ʦ15ʧ ձ
+ୈ34ԋ࿦จूɺ2017 ೥9ɻ
+http://jssst.or.jp/ﬁles/user/taikai/2017/FOSE/fose3-2.pdf
+ʦ16ʧ ໌ਆஐ೭ɿ ʮAIอূʯ ɺιϑτ΢ΣΞςετγϯϙδ΢ϜJaSST'18
+Tokyoɺ2018 ೥3݄8 ೔ɻ
+http://jasst.jp/symposium/jasst18tokyo/pdf/C5-1.pdf
+ʦ17ʧ ɿ ʮFairness-Aware Data Miningʯɺ2018 ೥3ɻ
+http://www.kamishima.net/archive/fadm.pdf
+ʦ18ʧ ਪ࿦ɿγεςϜͷ৴པੑͱઆ໌Մೳੑ΁ͷΞϓ
+ձ 2018෼Պձ ϫʔΫγϣοϓɺ2018 ೥ 9݄
+24 ೔ɻhttp://group-mmm.org/~ichiro/talks/20180924okayama.pdf
+ʦ19ʧ ʮ͸͡Ίͯͷ STAMP/STPA ͮ͘৽͍҆͠શੑղੳख๏ʙʯ ɺ ৘ใॲཧ
+ʢIPAʣɺ2016 ೥3ɻhttps://www.ipa.go.jp/ﬁles/000051829.pdf
+ʦ20ʧ ʮ͸͡Ίͯͷ STAMP/STPA͑Δ͜Ε͔Βͷ҆શʙʯ ɺ৘ใ
+ʢIPAʣɺ2016 ೥3ɻhttps://www.ipa.go.jp/ﬁles/000065199.pdf
+ʦ21ʧ ΛͲ͏୲อ͢Δ͔ʁ৽͍͠ιϑτ։ൃख๏ͱҐஔ
+ங΁ʯ ɺNIKKEI Roboticsɺ2018೥6ɻ
+ʦ22ʧ อূ
+ͷ՝୊ʯ ɺୈ1ϫʔΫγϣοϓ MLSE2018ɺ2018 ೥7ɻ
+https://drive.google.com/ﬁle/d/1RrIv3B3hOJQM8YawLD5E44c1BeHzh5GA/view
+ʦ23ʧ Riccardo Guidotti, Anna Monreale, Salvatore Ruggieri, Franco Turini, Dino Pedreschi
+and Fosca Giannotti: ʠA Survey Of Methods For Explaining Black Box Modelsʡ,
+arXiv:1802.01933, 2018. https://arxiv.org/abs/1802.01933
+ʦ24ʧ দԼ֎ ɿ ʮGDPR஌ೳʢAIʣͷऔѻ͍ʹ͍ͭͯʢ2ʣ ʯ ɺ ΠϊϕϯςΟΞɺ2018
+೥8݄6 ೔ɻhttps://innoventier.com/archives/2018/08/6753
+ʦ25ʧ David Gunning: ʠExplainable Artiﬁcial Intelligence ʢXAIʣʡ, DARPA Program Update,
+November 2017. https://www.darpa.mil/attachments/XAIProgramUpdate.pdf
+ʦ26ʧ ͯ͠ AIେʯ ɺNIKKEI
+ELECTRONICSɺ2018 ೥9ɻ
+ʦ27ʧ David Silver, Aja Huang, Chris J. Maddison, Arthur Guez, Laurent Sifre, George
+van den Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda Panneershelvam,
+Marc Lanctot, Sander Dieleman, Dominik Grewe, John Nham, Nal Kalchbrenner, Ilya
+Sutskever, Timothy Lillicrap, Madeleine Leach, Koray Kavukcuoglu, Thore Graepel
+and Demis Hassabis: ʠMastering the game of Go with deep neural networks and tree
+searchʡ, Nature, Vol. 529, 2016. https://www.nature.com/articles/nature16961
+ʦ28ʧ ಈӡ
+ʯ ɺNEDO஌
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+41
+付録4
+　
+参考文献
+
+===== PDF_PAGE 52 =====
+੒Ռൃදձɺ2017 ೥3݄29 ೔ɻ
+https://www.airc.aist.go.jp/info_details/docs/170329/1730-Wagatsuma.pdf
+ʦ29ʧ ͢΂͖8՝୊ʯ ɺୈ1ϫʔΫ
+γϣοϓ MLSE2018ɺ2018 ೥7ɻ
+https://drive.google.com/ﬁle/d/1j8xMp3HDBEWhqbhoiV6WqQLLEilePyVG/view
+ʦ30ʧ ʮJAXA IV&Vཁ ʙIV&Vɺ2016
+೥1݄19 ೔ɻhttps://www.ipa.go.jp/ﬁles/000050256.pdf
+ʦ31ʧ ৘ใ
+ձ ձʢKBSEʣɺ2018 ೥11݄9 ೔ɻ
+ʦ32ʧ Sandeep Neema: ʠAssured Autonomyʡ, DARPA Program, August 2017.
+https://www.darpa.mil/attachments/AssuredAutonomyProposersDay_Program%20
+Brief.pdf
+ʦ33ʧ Keiichi Kisamori, Takashi Washio, Yoshio Kameda and Ryohei Fujimaki: ʠA Rare
+and Critical Condition Search Technique and its Application to Telescope Stray Light
+Analysisʡ, Proceedings of the 2018 SIAM International Conference on Data Mining
+ʢSDM18ʣ, May 2018. https://doi.org/10.1137/1.9781611975321.64
+ʦ34ʧ Pedro A. Ortega, Vishal Maini and the DeepMind safety team: ʠBuilding safe artiﬁcial
+intelligence: speciﬁcation, robustness, and assuranceʡ, Medium 2018.9.28.
+https://medium.com/@deepmindsafetyresearch/building-safe-artiﬁcial-intelligence-
+52f5f75058f1
+ʦ35ʧ ܥ ʵSQuBOK 2020 ༧ఆΑΓʵʯ ɺenPiT-Pro
+εϚʔτΤεΠʔηϛφʔɺ2018 ೥9݄7 ೔ɻ
+https://www.slideshare.net/hironoriwashizaki/squbok-2020
+ʦ36ʧ SQuBOKఆ෦ձฤɿ ʮSQuBOK Review 2018ʯɺ2018 ೥ɻhttps://www.juse.or.jp/sqip/
+squbok/ﬁle/squbok_rev2018_20181016.pdf
+戦略プロポーザル
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+CRDS-FY2018-SP-03 国立研究開発法人科学技術振興機構　研究開発戦略センター
+42
+
+===== PDF_PAGE 53 =====
+総括責任者 木村 康則　　上席フェロー （システム・情報科学技術ユニット）
+チームリーダー 福島 俊一　　フェロー （システム・情報科学技術ユニット）
+チームメンバー 相田 俊一　　主任調査員 （未来創造研究開発推進部 推進第3グループ）
+ 奥山 隼人　　主査 （未来創造研究開発推進部 推進第1グループ）
+ 川村 隆浩　　主任調査員 （情報企画部 システム高度化グループ）
+ 國岡 崇生　　課長代理 （人財部 職員課）
+ 高地 伸夫　　主任調査員 （戦略研究推進部 ICT グループ）
+ 澤田 朋子　　フェロー （海外動向ユニット）
+ 嶋田 義皓　　フェロー （システム・情報科学技術ユニット）
+ 蒋 赫　　　　主査 （イノベーション拠点推進部 共創グループ）
+ 坂内 悟　　　フェロー （システム・情報科学技術ユニット）
+※お問い合せ等は下記ユニットまでお願いします。
+■戦略プロポーザル作成メンバー■
+CRDS-FY2018-SP-03
+戦略プロポーザル
+AI 応用システムの安全性・信頼性を確保する
+新 世代ソフトウェア工学の 確 立
+STRATEGIC PROPOSAL
+Toward new-generation software engineering to guarantee safety and
+reliability of AI application systems
+平成 30 年 12 月　December 2018
+　　　　　　　　　　　　　　　 ISBN 978-4-88890-615-9
+国立研究開発法人科学技術振興機構研究開発戦略センター
+システム・情報科学技術ユニット
+Systems and Information Science and Technology Unit
+Center for Research and Development Strategy,
+Japan Science and Technology Agency
+〒102-0076　 東京都千代田区五番町 7 番地
+電　　　 話　03-5214-7481（代表）
+ファックス　 03-5214-7385
+http://www.jst.go.jp/crds/
+©2018 JST/CRDS
+許可無く複写／複製することを禁じます。
+引用を行う際は、必ず出典を記述願います。
+No part of this publication may be reproduced, copied, transmitted or translated without written permission. Application should be sent to
+crds@jst.go.jp. Any quotations must be appropriately acknowledged.
+
+===== PDF_PAGE 54 =====
+ISBN 978-4-88890-615-9
+　戦略プロポーザル　
+AI応用システムの安全性 ・ 信頼性を
+確保する新世代ソフトウェア工学の確立
+Toward new-generation software engineering to
+guarantee safety and reliability of
+AI application systems
+国立研究開発法人科学技術振興機構　研究開発戦略セ ンター
+,
+CRDS-FY2018-SP-03
+AI応用システムの安全性 ・ 信頼性を確保する新世代ソフトウェア工学の確立
+平成
+30年
+12月
+戦略プロポーザル

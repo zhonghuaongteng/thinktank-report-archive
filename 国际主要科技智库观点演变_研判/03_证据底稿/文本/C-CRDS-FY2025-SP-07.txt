@@ -1,0 +1,3683 @@
+
+===== PDF_PAGE 1 =====
+CRDS-FY2025-SP-07
+2026年
+3月
+JST CRDS
+戦略プロポーザル
+未来のAI計算システムを支える
+光データ通信技術
+～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+STRATEGIC PROPOSAL
+Optical Data Communication
+Technologies for Future
+AI Computing Systems
+~ From network architecture to optical devices and materials ~
+提言 ・ 提案
+
+===== PDF_PAGE 2 =====
+さらに詳細は、下記ウェブサイトをご覧下さい
+https://www.jst.go.jp/crds/
+研究開発戦略センター（CRDS）は、国の科学技術イノベーション政策に関する調査、
+分析、提案を中立的な立場に立って行う公的シンクタンクの一つで、文部科学省を主
+務省とする国立研究開発法人科学技術振興機構（JST）に属しています。
+CRDSは、科学技術分野全体像の把握（俯瞰） 、社会的期待の分析、国内外の動向
+調査や国際比較を踏まえて、さまざまな分野の専門家や政策立案者との対話を通じて、
+「戦略プロポーザル」を作成します。 「戦略プロポーザル」は、今後国として重点的に
+取り組むべき研究開発の戦略や、科学技術イノベーション政策上の重要課題について
+の提案をまとめたものとして、政策立案者や関連研究者へ配布し、広く公表します。
+公的な科学技術研究は、個々の研究領域の振興だけでなく、それらの統合によって
+社会的な期待に応えることが重要です。 「戦略プロポーザル」が国の政策立案に活用さ
+れ、科学技術イノベーションの実現や社会的な課題の解決に寄与することを期待してい
+ます。
+
+===== PDF_PAGE 3 =====
+エグゼクティブサマリー
+本プロポーザル「未来のAI計算システムを支える光データ通信技術 ～ネッ トワークアーキテクチャーから
+光デバイス材料まで～」 は、 人工知能 （AI） の発展により活用が増大するデータセンター （DC） において、 デー
+タ通信速度などを増大させる光データ通信技術に関する研究開発戦略である。 AIの急速な進展に対するDC
+の技術的課題の一つであるデータ通信ネッ トワークの高速・大容量化に注目し、2030年代以降のDCへの要
+求性能に応えるための光データ通信技術の研究開発の方向性を提案する。その際、特に日本が強みを持つ高
+速光デバイス技術や材料技術などを生かした研究開発の推進方法が重要となる。
+デジタ ル化の進展により、画像・動画・音声などの膨大な量のデジタ ルデータが日々生み出されている。こ
+れらのデータを保存・分析・解析し て各種のサービスを提供する高性能なDCが世界中に建設され、AI技術
+の急速な進展に伴いDCの処理能力の拡大・大規模化が進ん でいる。一方、このようなDCは膨大な電力を
+消費するこ とから、電力供給、水資源、立地選定などの社会的な課題や、スケーラビリティ（システムの拡
+張性） 、電力効率、冷却効率、運用効率、セキュ リティなどの技術的な課題が顕在化し ている。中でも、将来
+のDCのシステムに関する技術的課題とし てスケーラビリティの確保、特にDC内のデータ通信ネッ トワークの
+高速・大容量化がある。大規模言語モデルや生成AIなどの登場により膨大な計算処理が必要となり、多量
+のGPU（Graphics Processing Unit）やサーバーを相互接続し て並列処理を行う際に、このネッ トワーク
+性能がDCの処理能力向上のボトルネック となっ ているためである。
+このボトルネック解消にはデータ通信ネッ トワークの高速化・大容量化が必要だが、従来の電気配線技術
+では困難であり、光配線技術（光データ通信技術）の導入が不可欠である。しかし、ネッ トワークアーキテ
+クチャー、光モジュール、光デバイス、材料・集積化技術などのDC内の光データ通信技術を構成する各技
+術レイ ヤーにおいて、これまで長距離の光通信で使われてきた技術の単なる延長では、将来のDCを実現する
+こ とはできない。ネッ トワークアーキテクチャーでは今後のAI処理の進展・トレ ン ドへの対応が必要であり、
+光モジュールでは高信頼化や保守容易性、光デバイスでは小型化や高密度化、材料・集積化では新光物性・
+新機能の利用や異種材料の集積、などの各課題を克服する必要がある。
+これらの課題克服に関し ては世界的に研究開発が活発化し ている。現状、わが国はインジウム リ ン（InP）
+系の高速光デバイス・材料の研究開発および関連ビジネスにおいて優位性がある。しかし、集積化に優れる
+シリコンフォ トニクス技術を用いた低速の光デバイスや光データ通信モジュール技術では、欧米や台湾の後塵
+を拝し ている。今後も日本がこの分野で優位性を保持・拡大するためには、DCの新たな要求や課題に対し て
+世界に先駆けて長期的な研究開発の課題を明らかにし、戦略的な研究開発を推進すべきである。
+光データ通信技術をDC内のネッ トワークで使用するために今後取り組むべき研究開発課題とし て、技術レ
+イ ヤー毎に以下の4つが挙げられる。
+（1） DCの進化に対応したネッ トワークアーキテクチャー
+DCのネッ トワークアーキテクチャーは、 AI計算の規模的な拡大、 AI活用の目的や用途の広がり、 利用ユー
+ザの多様性の拡大などさまざまなDCの進化シナリオに対応し ていく必要がある。このため、光デバイスや光
+モジュールなどコンポーネン トの革新を生かしたアーキテクチャー設計に加え、さまざまな要件に対するフレ
+キシブル/スケーラブル/オート マティ ックな対応、DC内外との分散処理およびリアルタイ ム/超多数並列処
+理への対応などの課題がある。
+（2） 高速・大容量の光モジュール技術
+光の特性を生かした並列化（波長多重、空間多重）による高速・大容量化、ラック内により多くのCPU
+（Central Processing Unit）やGPUを高密度接続可能な光モジュールの実装方法、高信頼化、保守容易
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） i
+
+===== PDF_PAGE 4 =====
+性の確保、データの送受信先を切り替えるスイ ッチの小型化・高密度化などの課題がある。
+（3） 飛躍的な性能向上や新概念・新機能を実現する革新的光デバイス
+半導体レーザー、光変調器、受光素子、導波路、合分波器、光スイ ッチ、光集積回路などの光デバイスの
+高速化・高効率化・小型化・低コス ト化・高信頼化などに取り組む必要がある。また長期的な視点で、新た
+な概念・機能による飛躍的な性能向上が期待できるデバイス創出の課題もある。
+（4） 光デバイスのブレークスルーを支える材料･集積技術
+新たな概念や機能の革新的な光デバイスの創出には、これまで使われてきた材料とは異なる組成や物性を
+有する材料の検討が重要であり、ガリウムヒ素（GaAs）系などの化合物半導体、ゲルマニウム（Ge）など
+のIV族半導体、薄膜強誘電体材料、特異な光学特性を有する材料といった新たな材料の課題がある。また、
+一つの材料系だけでは発光、変調、検出などの優れた機能を実現するのは難しいため、異なる材料系のデバ
+イスを集積できるように、ウェハボンディ ングなど異種材料集積技術の課題もある。
+上記の研究開発課題を効率的に進めていくためには、長期的な視野に立ち、多様な研究者によるコミュニ
+ティ形成、産学官連携コンソーシア ムによるロードマップ作成、技術レイ ヤー間連携の新規プロジェク トの推
+進、大規模拠点･共用施設の活用、日本の強みを活かした海外連携、人材育成の促進が重要となる。
+まずは、光データ通信技術に関わる研究者・技術者が、関連学会の学術講演会で技術レイ ヤー・分野を
+越えたシンポジウム開催などにより、産学官の多様な人材が集まっ て議論をする場と新たなコミュニティをつ
+く るこ とが有効である。その上で、 光データ通信技術のロードマップを作成し、 異なる技術レイ ヤーの研究者・
+技術者が今後の研究開発の課題や目標を共有するこ とが望ましい。
+ネッ トワークアーキテクチャー、光モジュール、光デバイス、材料・集積技術の異なる技術レイ ヤーの研究
+者がチームを作っ て共通の目標に向かっ て研究開発を進めていく ためには、それを先導・サポートするプロ
+ジェク トの推進が重要である。技術の完成度や応用分野に応じて、内閣府、総務省、文部科学省、経済産業
+省および関連するファンディ ング機関が連携し、適切な時期のプロジェク トの実施が望ましい。光モジュール、
+光デバイス、材料・集積技術などハードウェアの試作・評価に関わるものについては、大規模な研究開発拠
+点や共用施設を整備し、産学の研究者の要望に対応できるようにするこ とが重要である。
+本分野のビジネスや研究開発における日本の最大の強みは、InP系を中心とする高速光デバイスであり、こ
+の強みを継続しながら、それを最大限に利用した海外連携、人材育成を積極的に行う こ とが重要である。例
+えば、革新的な光デバイスの創出を目指し、アカデミアを中心に各国の強みの技術を生かした国際連携・技
+術融合の研究開発プロジェク トの推進などが効果的である。また、InP系デバイスとシリコンフォ トニクスと
+を統合する技術を通じて、システム化などに強みを持つ海外企業や研究機関との連携による国際標準化の推
+進も挙げられる。このような海外連携の中で、自らの専門領域だけでなく幅広い知識を持つ人材の育成や、
+国内外の優秀な研究者・技術者の循環などが期待される。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）ii
+
+===== PDF_PAGE 5 =====
+Executive Summary
+This proposal, “ Optical Data Communication T echnologies for Future AI Computing Systems:
+From Network architecture to optical devices and materials,” is a research and development
+strategy concerning optical data communication technology that increases data communication
+speed and other aspects in data centers (DCs), whose use is increasing due to the development
+of artificial intelligence (AI). Focusing on the need for high-speed and high-capacity data
+communication networks, one of the technical challenges for DCs in response to the rapid
+advancement of AI, this proposal proposes a direction for research and development of optical
+data communication technology to meet the performance requirements for DCs from the 2030s
+onward. In this regard, it is crucial to promote research and development by leveraging Japan’ s
+strengths in high-speed optical device technology and materials technology.
+With the advancement of digitalization, vast amounts of digital data such as images, videos, and
+audio are generated daily. High-performance DCs that store, analyze, and interpret this data to
+provide various services are being built worldwide, and the processing capacity and scale of DCs
+are expanding rapidly with the rapid advancement of AI technology. On the other hand, such
+DCs consume enormous amounts of electricity, leading to social challenges such as power supply,
+water resources, and site selection, as well as technical challenges such as scalability, power
+eﬃciency, cooling eﬃciency, operational eﬃciency, and security. Among the technical challenges
+concerning future data center systems, ensuring scalability, particularly increasing the speed and
+capacity of the data communication network within the data center, is a key issue. The emergence
+of large-scale language models and generative AI necessitates massive computational processing,
+requiring the interconnection of numerous GPUs (Graphics Processing Units) and servers for
+parallel processing. However, the network performance of this interconnected network is a
+bottleneck in improving the processing power of data centers. Overcoming this bottleneck
+requires faster and larger data communication networks, which is difficult with conventional
+electrical wiring technology; therefore, the introduction of optical wiring technology (optical data
+communication technology) is essential. However, in each technological layer constituting optical
+data communication technology within a data center —including network architecture, optical
+modules, optical devices, and materials/integration technologies —simply extending technologies
+used for long-distance optical communication will not realize future data centers. Network
+architecture needs to adapt to future advancements and trends in AI processing; optical modules
+need to achieve high reliability and ease of maintenance; optical devices need to be miniaturized
+and increased in density; and materials/integration need to overcome challenges such as the
+utilization of new optical properties and functions, and the integration of dissimilar materials.
+Research and development efforts to overcome these challenges are becoming increasingly
+active globally. Currently, Japan holds a competitive advantage in research and development and
+related businesses for indium phosphide (InP)-based high-speed optical devices and materials.
+However, in low-speed optical devices and optical data communication module technologies using
+silicon photonics technology, which excels in integration, Japan lags behind Europe, the United
+States, and Taiwan. T o maintain and expand its dominance in this field, Japan must proactively
+CRDS-FY2025-SP-07 iii iii
+Center for Research and Development Strategy, Japan Science and T echnology Agency
+STRATEGIC PROPOSAL　　Optical Data Communication Technologies for Future AI Computing Systems ~ From network architecture to optical devices and materials ~
+
+===== PDF_PAGE 6 =====
+identify long-term research and development challenges in response to the evolving demands and
+challenges of data centers (DCs) and promote strategic R&D.
+The following four points represent the research and development challenges that should be
+addressed for the use of optical data communication technology in DC networks, categorized by
+technology layer.
+(1) Network Architecture Adapting to the Evolution of Data Centers
+Data center network architectures need to adapt to various evolutionary scenarios of
+data centers, such as the scaling up of AI computations, the broadening of the purposes and
+applications of AI, and the increasing diversity of users. Therefore, in addition to architectural
+design that leverages innovations in components such as optical devices and modules, challenges
+include flexible, scalable, and automatic responses to various requirements, as well as support for
+distributed processing both inside and outside the data center, and real-time/ultra-high-resolution
+parallel processing.
+(2) High-Speed, High-Capacity Optical Module Technology
+Challenges include achieving high speed and high capacity through parallelization (wavelength
+division multiplexing, spatial division multiplexing) that leverages the properties of light,
+implementing optical modules that allow for high-density connection of more CPUs (Central
+Processing Units) and GPUs within a rack, ensuring high reliability and ease of maintenance, and
+miniaturizing and increasing the density of switches for switching data transmission and reception
+destinations.
+(3)
+ Innovative Optical Devices R
+ealizing Orders of a Magnitude Performance
+Improvements and New Concepts and Functions
+It is necessary to work on increasing the speed, eﬃciency, miniaturization, cost reduction, and
+reliability of optical devices such as semiconductor lasers, optical modulators, photodetectors,
+waveguides, multiplexers/demultiplexers, optical switches, and optical integrated circuits.
+Furthermore, from a longterm perspective, there is the challenge of creating devices that can be
+expected to achieve orders of a magnitude performance improvement through new concepts
+and functions.
+(4) Materials and Integration Technologies Supporting Breakthroughs in Optical Devices
+T o create innovative optical devices with new concepts and functions, it is important to
+consider materials with different compositions and properties than those used so far. This
+presents challenges with new materials such as compound semiconductors like gallium arsenide
+(GaAs), Group IV semiconductors like germanium (Ge), thin-film ferroelectric materials, and
+materials with unique optical properties. Also, since it is diﬃcult to achieve excellent functions
+such as light emission, modulation, and detection with only one material system, there are
+challenges with heterogeneous material integration technologies such as wafer bonding to enable
+the integration of devices with diﬀerent material systems.
+T o efficiently advance the above research and development challenges, it is crucial to take a
+long-term perspective and foster a community of diverse researchers, create roadmaps through
+industry-academia-government consortia, promote new projects involving collaboration across
+technology layers, utilize large-scale research centers and shared facilities, leverage Japan’ s
+strengths for international collaboration, and promote human resource development.
+CRDS-FY2025-SP-07iv iv
+Center for Research and Development Strategy, Japan Science and T echnology Agency
+STRATEGIC PROPOSAL　　Optical Data Communication Technologies for Future AI Computing Systems ~ From network architecture to optical devices and materials ~
+
+===== PDF_PAGE 7 =====
+First, it is effective for researchers and engineers involved in optical data communication
+technology to create a forum and new community where diverse personnel from industry,
+academia, and government can gather and discuss, such as by holding symposiums that transcend
+technology layers and fields at academic conferences of the Institute of Electronics, Information
+and Communication Engineers, the Japan Society of Applied Physics, and the Information
+Processing Society of Japan. Furthermore, it is desirable to create a roadmap for optical data
+communication technology, allowing researchers and engineers from diﬀerent technology layers
+to share future research and development challenges and goals.
+T o enable researchers from diﬀerent technology layers—network architecture, optical modules,
+optical devices, and materials/integration technology—to form teams and advance research and
+development towards common goals, it is essential to promote projects that lead and support
+this process. Depending on the level of technological maturity and application field, it is desirable
+for the Cabinet Office, the Ministry of Internal Affairs and Communications, the Ministry of
+Education, Culture, Sports, Science and T echnology, the Ministry of Economy, Trade and Industry,
+and related funding agencies to collaborate and implement projects at appropriate times. For
+prototyping and evaluation of hardware such as optical modules, optical devices, materials, and
+integration technologies, it is crucial to develop large-scale research and development centers and
+shared facilities to meet the needs of researchers from both industry and academia.
+Japan’s greatest strength in business and research and development in this field lies in high-
+speed optical devices, primarily InP-based devices. It is important to continue this strength while
+actively promoting international collaboration and human resource development that maximizes
+its potential. For example, promoting international collaborative research and development
+projects that leverage the strengths of various countries, centered on academia, with the aim
+of creating innovative optical devices, would be eﬀective. Furthermore, promoting international
+standardization through collaboration with overseas companies and research institutions strong
+in system integration, etc., through technologies that integrate InP-based devices and silicon
+photonics, is also noteworthy. Such international collaboration is expected to foster the devel-
+opment of personnel with broad knowledge beyond their own specialized fields, and to facilitate
+the exchange of excellent researchers and engineers both domestically and internationally.
+CRDS-FY2025-SP-07 v v
+Center for Research and Development Strategy, Japan Science and T echnology Agency
+STRATEGIC PROPOSAL　　Optical Data Communication Technologies for Future AI Computing Systems ~ From network architecture to optical devices and materials ~
+
+===== PDF_PAGE 8 =====
+
+
+===== PDF_PAGE 9 =====
+目次
+1 研究開発の内容 ............................................................... ............... 1
+2 研究開発を実施する意義 .............................................................. 3
+2.1 現状認識および問題点 .......................................................... 3
+2.2 社会・経済的効果 ............................................................... .. 11
+2.3 科学技術上の効果 ............................................................... .. 12
+3 具体的な研究開発課題 ............................................................... ... 14
+3.1 DC の進化に対応したネットワークアーキテクチャー　　　　
+の研究開発 ............................................................... ............. 14
+3.2 高速・大容量の光モジュール技術の研究開発 ...................... 16
+3.3 飛躍的な性能向上、新概念・新機能を実現する革新的　　　　
+光デバイスの研究開発 .......................................................... 17
+3.4 光デバイスのブレークスルーを支える材料 ･集積技術の　　　
+研究開発 ............................................................... ................ 19
+4 研究開発の推進方法および時間軸 .............................................. 22
+4.1 多様な研究者によるコミュニティ形成 ................................. 22
+4.2 産学官連携のコンソーシアムによるロードマップ作成 ........ 23
+4.3 技術レイヤー間連携の新規プロジェクトの推進 .................. 24
+4.4 大規模拠点 ･共用施設活用.................................................... 26
+4.5 日本の強みを活かした海外連携、人材育成 .......................... 27
+4.6 研究開発の時間軸 ............................................................... .. 28
+付録1 検 討の経緯 ............................................................... .......................... 32
+付録2 科 学技術未来戦略ワークショップ報告 ................................................ 33
+付録3 国内 外の状況 ............................................................... ...................... 67
+付録4 専門 用語説明 ............................................................... ...................... 75
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） vii vii
+
+===== PDF_PAGE 10 =====
+
+
+===== PDF_PAGE 11 =====
+1 研究開発の内容
+本プロポーザルは、人工知能（AI）活用が増大する今後のデータセンター（DC：Data Center）におけ
+るデータ処理・AI計算処理のボトルネック となるデータ通信に対し、通信速度・電力効率などを増大させる
+ための光データ通信技術に関する研究開発戦略である。最近のAI技術の急速な進展に伴いDCの処理能力
+の拡大・大規模化が進ん でいるが、DCが膨大な電力を必要とするこ とから、電力供給、水資源、立地選定
+などの社会的な課題や、 スケーラビリティ （システムの拡張性） 、 電力効率、 冷却効率、 運用効率、 セキュ リティ
+などの技術的な課題も顕在化し ている。その中でも、将来のDCのシステムに関する大きな技術的課題とし て、
+スケーラビリティの確保、特にDC内のデータ通信ネッ トワークの高速・大容量化がある。本プロポーザルは
+DCのスケーラビリティに関係する課題とし て、主にコンピューティ ング処理量とデータ通信量の増大に伴う
+通信ネッ トワークの高速化・大容量化を取り上げ、2030年代およびそれ以降のDCに要求される性能に対応
+する光データ通信技術の研究開発の方向性を示す 。また、現在も日本が強みをもつ高速光デバイス技術やそ
+の基盤となる材料技術などの優位性の維持・拡大や、光モジュール技術やネッ トワークアーキテクチャーと
+いった上位レイ ヤーの技術の強化を目指す研究開発の推進方法について示す。
+図1-1 　 光データ通信技術の研究開発の全体像
+図1-1は本プロポーザルで提案する研究開発の全体像である。図の左側にはこのプロポーザル作成に取り
+組む背景となる問題点、中心部分には取り組むべき光データ通信技術の研究開発の課題、右側には研究開発
+の推進に関する方策を示している。
+研究開発課題とし ては、以下に示す ように、ネッ トワークアーキテクチャー、光モジュール、光デバイス、
+材料・集積化の4つの技術領域（技術レイ ヤー）に分けて整理し ている。
+（1）DCの進化に対応したネッ トワークアーキテクチャー
+光デバイスや光モジュールなどコンポーネントの革新を生かしたアーキテクチャー設計に加え、さまざまな
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 1
+研究開発の内容
+1
+
+===== PDF_PAGE 12 =====
+アプリケーション/サービス・利用/運用/製造の要件にフレキシブル/スケーラブル/オート マティ ックな対応、
+DC内外領域とクラウ ド/エッジ/ローカル接続における分散処理およびリアルタイ ム/超多数並列処理への対
+応などの研究開発。
+（2）高速・大容量の光モジュール技術
+データを送受信するモジュールやデータの送受信先を切り替えるスイ ッチの小型化・高密度化、複数の半
+導体チップや外部デバイスを光信号によっ て中継・接続するための光インターポーザー、光信号と電気信号
+を相互変換する光チップレッ ト、種々の短距離光通信方式、などの研究開発。
+（3）飛躍的な性能向上や新概念・新機能を実現する革新的光デバイス
+半導体レーザー、光変調器、受光素子、導波路、合分波器、光スイ ッチ、光集積回路（PIC：Photonic
+Integrated Circuit）の高速化・高効率化・小型化・低コス ト化・高信頼化、および飛躍的な性能向上が
+期待できる新たな概念・機能のデバイスなどの研究開発。
+（4）光デバイスのブレークスルーを支える材料･集積技術
+新たな概念や機能を持つ革新的な光デバイスの創出に向けた、既存の材料とは異なる組成や物性を有する
+材料の研究開発、および異なる材料系のデバイスを集積するためのウェハボンディ ング 、チップボンディ ング
+などの異種材料集積技術の研究開発。
+上記の研究開発を効率的に進めていく ために、長期的な視野を持ち、多様な研究者によるコミュニティ形
+成、産学官連携コンソーシア ムによるロードマップ作成、技術レイ ヤー間連携の新規プロジェク トの推進、大
+規模拠点･共用施設の活用、日本の強みを活かした海外連携、人材育成の促進を提案する。
+1）多様な研究者によるコミュニティ形成
+関連学会の学術講演会における、技術レイ ヤーや技術分野を越えたシンポジウムなどの開催により、産学
+官の多様な人が集まっ て多様な情報を共有し、今後の研究開発に向けて議論する場を構築する。
+2）産学官連携のコンソーシア ムによるロードマップ作成
+異なる技術レイ ヤーの研究者・技術者が今後の研究開発の課題や目標について議論し、10年程度先を見
+据えた共通の目標を明確にするために、光データ通信技術のロードマップを作成する。
+3）技術レイ ヤー間連携の新規プロジェク トの推進
+共通目標に向けて技術レイ ヤー間に跨がるチームが協力し て研究開発を進めていく こ とが必要であり、それ
+を先導・サポートするために、技術の完成度のレベルや応用分野に応じて、関係府省・ファンディ ング機関が、
+適切な時期に研究開発プログラ ム・プロジェク トを実施する。
+4）大規模拠点･共用施設活用
+光モジュール、 光デバイス、 材料・集積化などハードウェアの試作・評価に関わる研究開発については、 個々
+の大学内の装置・設備だけで行う こ とは難しいため、大規模な研究開発拠点や共用施設を整備し、さまざま
+な要望に対応できるようにサービスを充実させ、研究者の利用を促進する。
+5）日本の強みを活かした海外連携、人材育成
+日本のInP系を中心とするハイエン ド光デバイスの強みを継続し、それを最大限に利用した海外連携、国
+際プロジェク ト、幅広い知識を持つ人材育成などを実施する。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）2
+研究開発の内容
+1
+
+===== PDF_PAGE 13 =====
+2 研究開発を実施する意義
+2.1 現状認識および問題点
+（1）DCにおけるAI計算システム
+近年、デジタ ル化の進展により、画像・動画・音声などの膨大な量のデータが生み出されている。これら
+のデータを保存・分析・解析し て各種のサービスを提供する高性能なDCが世界各国で増加し ている。また、
+大規模言語モデル（LLM: Large Language Model）や生成AIなどのAI技術の進展により、AIの学習な
+どに必要な計算処理量が飛躍的に拡大し ている。1950年代にAIが登場した頃は、学習のための計算処理量
+は毎年1.5倍程度の伸びを示し ていた。しかし、2010年前後の深層学習（DNN：Deep Neural Network）
+の登場により、計算処理量は毎年4～5倍のペー スで増え てきている
+1)
+。さらに、2020年前後のLLMや生成
+AIの出現により、計算処理量はますます増加し ている。学習だけではなく学習結果を利用する推論フェー ズ
+においても、自然言語での問い合わせにAIが応えられるようになったこ とで、利用者数が一気に増加した。
+既に、計算処理量はLLMの学習フェー ズよりも利用者の問い合わせに対応する推論フェー ズの方が上回っ て
+おり、この傾向は今後も継続する であろう
+2)
+。 AI のエージェント化、マルチモーダル化などが進展することに
+よっ て、計算処理量はさらに増加すると見込まれる。
+このようなAI技術の急速な進展に伴い、計算インフラとし てのDCの処理能力の拡大・大規模化が求めら
+れている。次世代の高性能なDC計算システムを目指した研究開発が世界中で活発になっ ていると ともに、AI
+ビジネス拡大のための新たな大規模DCの建設が進ん でいる。一方、このようなDCは膨大な電力を消費する
+こ とから、電力供給、水資源、立地選定などの社会的な課題や、スケーラビリティ 、電力効率、冷却効率、
+運用効率、セキュ リティなどの技術的な課題が顕在化し ている（コラ ム1参照） 。その中で、将来のDCのシ
+ステムに関する技術的課題とし て、AI処理能力の向上や各種のAIサービスの提供に不可欠なスケーラビリ
+ティの確保がある。スケーラビリティの確保には、 DC内のデータ通信（ネッ トワーク）の高速化・大容量化や、
+クラウ ド・エッジなどDC内外の計算資源の高性能化・高効率化と計算能力を最大化させる計算システム全体
+の活用法の開発が重要である。具体的には、LLMや生成AIなどの登場により膨大な計算処理が必要になる
+中、計算を並列処理するために多量のGPUやサーバーを相互に接続するネッ トワークが、DC性能向上のボ
+トルネック となっ ているこ とに起因する。また、今後のAIサービスの拡大・多様化に対応するために、DCや
+クラウ ドだけでなく エッジでの計算処理も含めた高性能・高効率な新たな計算手法が必須になっ て く る。この
+ような中で、本プロポーザルでは、主にネッ トワークに関係するものを扱う。
+高性能なAI計算システムを目指した研究開発は、日本以外にも米国、欧州、中国などの主要国において重
+要分野の一つとし て位置付けられ、大規模なプロジェク トの推進など政府の活発な戦略投資が行われている。
+例えば、米国では2025年11月の大統領令に基づいて「ジェネシス・ミ ッション（Genesis Mission） 」を
+開始し、AIを活用し て科学研究と技術開発を国家規模で加速させている
+3)
+。これに関連し、わが国では、
+AI・高性能コンピューティ ング（HPC：High Performance Computing）分野における日米協力を発展さ
+せるために、 米国エネルギー省 （DOE ： Department of Energy） との間で 「ハイ パフォーマンス ・ コンピュー
+ティ ング及びAIに関する事業取決め」を締結（2024年4月）し、 「ジェネシス・ミ ッション」との協力強化
+に向けたStatement of Intent（SOI）に署名した（2026年1月）
+4)
+。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 3
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 14 =====
+コラム1
+データセンターの課題
+データセンター（DC）はクラウ ドサービスの基盤とし て、現代社会のデジタ ル化
+に不可欠なインフラとなっ ている。一方で、その構築や運用は、さまざまな社会的
+および技術的課題に直面し ている。
+社会的な課題とし て、まず電力供給の問題がある。急速な需要拡大に伴い、2030
+年にはDCの消費電力が世界の総発電量の 10%に達するとの予 測もあり、電力イン
+フラ全体に多大な負担を強いることになる。また、環境負荷についても注意が発せら
+れている。多くのDCは化石燃料由来の電力に依存し ているため、CO2 排出量の増加
+による気候変動への影響も懸念されている。既に、電力不足や送電網の不安定化へ
+の対策を踏まえ、再生可能エネルギーの活用や、専用の原子力・太陽光発電の導入
+が検討されている。冷却システムのための水資源の大量消費も問題となっ ている。水
+の大量使用は、地域の水資源の枯渇を引き起こすリ スクがあり、持続可能な代替冷
+却シ ステムの開発が急務となっ ている。立地選定に関し ては、 これら以外の課題も山
+積し ている。地理的制約（地震が少ない地域、地震があっ ても岩盤が頑丈で揺れが
+小さい地域など）により、候補地が限定される。また、景観や騒音といった懸念も含
+め、地域摩擦は土地確保を難しくする。さらに、サプライチェーンにおいては、特定
+ベンダーへの依存がリ スク となっ ている。高性能半導体の供給網が不安定になりやす
+く 、価格高騰のリ スクを抱え ているほか、冷却シ ステムや電源装置などの部品の供給
+不足も度々発生し、DCの持続可能な運用に影響を及ぼし ている。
+技 術 的 な 課 題としては 、まず スケ ーラビリティが 挙 げられる。AI技術の急速な進
+展に対応するためには、データ処理量とデータ通信量の増大に対応する必要があり、
+プロセッサの高性能化やコンピュータ アーキテクチャーの革新などによるサーバーの
+コンピューティ ング性能の向上と と もに、分散処理に対応する通信ネッ ト ワークの超
+高速大容量化が不可欠である。DCの電力効率とエネルギー管理も重要な課題である。
+特に、 超高密度な電力需要に対応するには、 電力効率を向上させる技術やエネルギー
+の適切な管理が求められる。また、DCでは膨大な発熱を処理する こ とが必要であり、
+高度な冷却技術の開発・導入が不可欠である。現在、空冷、水冷、液浸冷却、ダイ
+レク ト・チップ・クーリングなど種々の冷却システムが試みられているが、それぞれ
+にコス ト観点を含めた技術課題が存在する。運用効率を高めて、運用・保守の複雑
+化に対応することも重要であり、これはシステムの安定稼働を保つために欠かせない。
+さ らに、セキュ リ ティ とガバナンスの強化も必要不可欠であり、不正ア クセスや情報
+漏洩を防ぎ、データの完全性を確保するための高度な物理セキュ リティ対策が求めら
+れる。また、AIモデルのバイアス是正など倫理面での課題も考慮する必要がある。
+これらの社会的および技術的課題を克服するためには、継続的な技術開発と社
+会経済的な対応が今後さらに重要となる。 DCには、技術進化の最前線でありなが
+ら社会と調和した持続可能な運営が求められる。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）4
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 15 =====
+これまでコンピュータの演算性能の向上は、半導体の微細化技術の進展による汎用プロセッサ（CPU）や
+積和演算に優れた専用プロセッサ（GPU）などの性能向上に支えられてきたが、微細化の鈍化により これら
+の大幅な性能向上は難し く なっ ている。このため、今後も増加する膨大な量のデータを処理するためには、も
+はや単体のプロセッサでは処理能力が不十分であり、複数のプロセッサを用いて、並列分散処理を行う こ と
+が不可欠になっ ている。小規模なAI研究規模であれば数百個のGPUをクラ スタ化し て使っ ているが、大規模
+なAI向けDCでは、数十万個のGPUが使用されている。このような大規模並列計算を行うためには、GPU
+を相互に接続し高速なデータ通信を行う必要がある。
+多くのDCが、複数のGPUを備えたサーバーを複数台設置したラック（サーバーラック）を多数配置し、
+それらを相互に接続し て分散処理を行っ ている。サーバー内では高速のバス（データの共通の伝送路）で
+GPU同士のデータ通信が行われている。ラック内のサーバー同士は接続数の多いスイ ッチで相互に結合され、
+スケールアップネッ トワーク となっ ている。ラック同士の接続には、比較的少ない接続数のスイ ッチを複数台
+用意し、それらを段階的に組み合わせることによって構成されるスケールアウトネットワークが用いられている
+（コラ ム2参照） 。
+LLMや生成AIなどの登場により膨大な計算処理が必要となっ ているが、多量のGPUやサーバーを相互に
+接続するこれらのネッ トワークの通信速度がDC性能向上のボトルネック となっ ている。このボトルネックを解
+消するために、DC内のさまざまな階層（サーバー内、サーバー間、ラック間）でのデータ通信の高速化・
+大容量化が切望されている。
+（2）DC内データ通信における電気配線の限界と光データ通信技術の導入要求
+大規模なDC内のさまざまな階層でのデータ通信においては、これまでは電気配線が中心であった。しかし、
+LLMの大規模な学習などのAI処理では、大量のデータを扱い高速に計算を行う必要性から、これまで以上
+の高速・大容量通信が求められるようになっ ており、電気配線ではその要求を満たすこ とが難し く なっ てきた。
+電気配線での通信性能の向上には、基本的に動作周波数を上げる必要があるが、高速化のために周波数が
+数GHzを超えるようになると、伝送路での伝送損失と消費電力が増加し、DC内のラック間を結ぶ数m～数
+十mといった短い距離でも高速・低消費電力で伝送するこ とが困難になるためである。
+一方、海底通信やメ トロ（都市圏）などの基幹ネッ トワークなど、100 kmを超えるような長距離のデータ
+通信では、伝送損失や消費電力が少ない光通信技術が以前から用いられてきた。近年では、基幹ネッ トワー
+クから無線基地局やアクセス系といった10 km程度の比較的短い距離まで導入されている。また、スーパー
+コンピュータ内のラック間の数百m以内のデータ通信にも光配線（光データ通信）が導入されており、高速
+なデータ通信と ともに複雑で多量な電気配線ケーブルの大幅削減に貢献し ている。
+近年ではスーパーコンピュータで既に導入されていた光によるデータ通信技術を、DC内のデータ通信にも
+導入する動きが活発になっ ている。 DC外部から送られてきた各種データの振り分けやDC内部で処理した
+データの外部への送信などを行う フロン トエン ドネッ トワーク（コラ ム2参照）では、既に光データ通信技術
+が導入されている。例えば、ラック間の高速・大容量のデータ転送の方法とし て、光配線を一部あるいは全
+てに使ったSpine-Leaf構造などが構成されるようになっ ている。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 5
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 16 =====
+コラム２
+システム性能向上の二つの拡張戦略、
+通信ネットワークの二つの役割
+スケールアップ（Scale-Up）とスケールアウ ト（Scale-Out）
+システムの性能や処理能力を向上させるためには、基本的な二つの拡張戦略（ス
+ケールアップとスケールアウト）がある。
+スケールアップはマシンのスペックを強化するこ とで性能を上げる方法であり、現
+在使用し ているコンピュータの性能（処理速度、記憶容量など）を拡大するこ と
+で、処理能力を高める手法である。例えば、より高速なCPUを用いたり、主記憶
+の容量を増やしたりするこ とによっ てコンピュータ単体の性能を強化する。メ リ ッ ト
+とし ては、設定や管理の変更が少ない、単一のコンピュータであるため通信などの
+計算以外の負荷が増加しないといったこ とが挙げられる。一方、デメ リ ッ ト とし ては、
+CPUやメ モリーには物理的な上限（処理速度や搭載できるメ モリー容量など）があ
+り無限には性能を向上するこ とができない、高性能なハイエン ド機器は非常に高価
+になる、そのコンピュータが故障した場合にシステム全体が停止する単一障害点に
+なるといったことがある。
+スケールアウトは、マシンの台数を増やすことで性能を上げる方法である。コン
+ピュータを並列に配置し、それらに負荷を分散し、連携させるこ とによっ て全体とし
+て処理能力を高める手法である。メ リ ッ ト とし ては、台数を増やせばほぼ無限に性
+能を拡張できる、複数のコンピュータで処理を行うので一部のコンピュータが故障
+し ても全体とし ては継続し て稼働する、安価なコンピュータを多数利用するのでコス
+トを抑えられるこ となどが挙げられる。一方、デメ リ ッ ト とし ては、並列処理に伴う
+計算処理の振り分けなどオーバーヘッ ドが増加したり、処理が複雑になったりする
+といったことが挙げられる。
+フロントエンドネットワークとバックエンドネットワーク
+i)
+デ ータセンターにおけるフロントエンドネットワークとバックエンドネットワークは
+それぞれ異なる役割を持ち、連携し てデータセンター全体の機能を実現し ている。
+フロントエンドネッ トワークは、 外部の利用者 （ユーザ） とデータセンター内のサー
+バーとの間の通信を処理し、ユーザに直接サービスを提供する。ユーザの要求は
+複数のサーバーで処理され、そのときのサーバー同士の通信の特徴とし て、通信の
+量が多く、互いに接続するサーバーの数も多い。スイ ッチを多段に接続するネッ ト
+ワークが使われるこ とが多い。
+一方、バックエンドネッ トワークは、データセンター内のサーバー同士や、サー
+バーとストレージシステムとの間の通信を行う。 CPU 同士の通信や、サーバーとメ
+モリー間のデータ転送などを行い、大量のデータを迅速かつ確実に転送するこ とが
+求められるので、高スルー プッ ト、高速スイ ッチング 、低レイテンシ（遅延時間）と
+いう特徴を持つ。多くのサーバーを接続するこ とのできる大規模なスイ ッチが使わ
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）6
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 17 =====
+れるこ とが多い。特に、AI処理においては、GPU同士の通信は高速性が要求され
+るため、GPU同士が大規模スイ ッチで直接接続されるこ とが多い。しかし、近年で
+は並列度がますます上がっ てきており、大規模スイ ッチだけでは対応が困難な場合
+もあり、多段接続のネッ トワークも使用されるようになっ てきている。
+参考文献
+i) Rang-Chen Yu, “Optical Solutions for Scaling AI DC” Data Center Summit, OFC 25
+本節の（1）で述べたように、 DC内部でのAI計算処理のボトルネック となりつつあるGPU間、 サーバー間、
+ラック間や、CPU/GPUとメ モリー間などのデータ転送を担うバックエン ドネッ トワーク（コラ ム2参照）での
+データ通信が今後重要になっ て く る。特に、DCの大規模化により、サーバー数やラック数は飛躍的に増加し
+ており、これらを結ぶネッ トワークのさらなる高速・大容量化の要求は高まっ ている。バックエン ドネッ トワー
+クでは、現状ではまだ電気配線が使われているが、通信性能が限界に近づいている電気配線に替わり、原理
+的に高速・大容量・低消費電力のデータ転送が可能な光データ通信技術導入への期待が高まっ ている。
+以上のDCの光データ通信技術の現状と動向については、CRDSの調査報告書「AI時代を牽引する光デバ
+イス技術」
+5)
+に詳細に記載している。
+（3）次世代DCに向けた光データ通信技術への要求
+DC内での高性能なデータ通信に期待される光データ通信技術には、高速・大容量化だけでなく、低消費
+電力化や光モジュールの小型化・高密度化などの要求もある。これらの要求に対し ては、現状の光デバイス・
+材料技術や、集積化・実装技術の延長線では応えられない可能性がある。また、将来のバックエン ドネッ ト
+ワークのアーキテクチャーがどのようになるのか、まだ共通認識や明確な技術開発ロードマップは無く、それ
+に適する光モジュールや光デバイスへの要求も今後変化し ていく可能性もある。
+上述の調査報告書「AI時代を牽引する光デバイス技術」でも示す ように、2025年時点におけるDCにおけ
+る光データ通信システムの伝送速度は800 Gbit/s程度である。これまでの光データ通信速度のトレ ン ドでは
+10年間に10倍弱の性能向上になっ ているため、単純にこの傾向が続く と仮定すると 、2032年には3.2
+Tbit/s、2035年頃には6.4 Tbit/s程度が要求されるこ とになる
+6)
+。ただし、事業形態の異なるGoogleや
+NVIDIAなどの企業でそれぞれにネッ トワークアーキテクチャーや光モジュールに対する構想があり、このよ
+うなネッ トワーク性能をどのようにし て実現するか、光データ通信技術の進化の方向性はまだ明確ではない。
+図2-1に光データ通信技術の技術レイ ヤー（階層）と各技術レイ ヤーでの代表的な技術項目を示す 。ここ
+では、光データ通信技術に関わる主要な技術レイ ヤーとし て、ネッ トワークアーキテクチャー、光モジュール
+技術、光デバイス技術、材料・集積技術の4つに分けている。このような技術レイ ヤーにおいて、次世代の
+DC用の光データ通信技術とし てどのような技術が要求されているか、以下に概要を示す。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 7
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 18 =====
+図2-1 　 光データ通信技術の技術レイ ヤーと各技術レイ ヤーでの代表的な技術項目
+ネッ トワークアーキテクチャーは、 将来のDCのワークロード（処理のタイプと量）がどのように変化するか、
+そのためのCPUやGPUなどの演算ユニッ ト、メ モリー、データ通信などの計算リ ソー スの配分がどうなるの
+かで変わっ て く る。また、AI技術の進展、AI用途の拡大や利用形態の多様化、DC間の連携やDCとエッジ
+との連携による分散AIデータ処理（分散コンピューティ ング）の変革などによっ ても変化すると考えられる。
+このため、将来のDCでの計算処理やサービスの動向、ネッ トワークアーキテクチャーの変化について注意深
+く状況を把握し、光モジュールや光デバイス技術への要求を適切に予測し新たな技術を準備し ておく こ とが必
+要である。
+光モジュールは、サーバー間のデータの通信経路を切り替える特定用途向け集積回路（ASIC：Application
+specific integrated circuit）の入出力ポートに接続される光トランシーバー（光信号の送受信を行う装置）
+がその代表例である。今後の要求とし ては、高速・大容量化だけでなく、低消費電力化、小型・高密度実装、
+スイ ッチASIC近傍での接続、スイ ッチASICとの一体的な実装などがある。低消費電力化に関し ては、2025
+年の800 Gbit/sでの15～20 pJ/bitから、 2032年の3.2 Tbit/sでは2～4 pJ/bitが要求されている
+7)
+。小型・
+高密度実装には光デバイスそのものの小型化や、3次元的な実装技術、光の技術と電気の技術を融合させる
+光電融合技術などが必要になる。光トランシーバーとスイ ッチASICとの一体的な実装技術はCPO（Co-
+Packaged Optics）と呼ばれ、光電融合技術と ともにこの技術の進展が強く望まれている。
+光デバイス技術とし ては、さまざまな機能を持つデバイスがあるが、基本的な高速動作、低消費電力化だ
+けでなく 、光モジュールへの要求である小型化・高密度化、高温動作化などへの対応も重要になっ ている。
+将来のネッ トワークアーキテクチャーや光モジュールの形態が定まらない中で、どのようなデバイスや性能が
+必要か明確にするこ とは難しいが、幾つかの候補となる形態での性能向上に貢献するデバイスについて研究
+開発が求められている。
+材料・集積技術においては、光デバイスの性能を飛躍的に高めるこ とや、熱に強いなどユニークな光特性
+を有する材料や、多様な材料を用いたデバイスの集積化が求められている。材料面では、現在の高速光デバ
+イスの主流であるInPや、集積化に有利なシリコンフォ トニクスのシリコン（Si）だけでなく、優れた光学特
+性を持つ他の半導体材料、セラミ ックス、ポリマーなどの技術開発も必要になっ ている。また、このような異
+なる材料のデバイスを集積化するための、異種材料基板の貼り合わせ技術（ウェハボンディ ング）や異種材
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）8
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 19 =====
+料の相互汚染のないプロセス技術など、異種材料集積技術の開発も求められている。
+（4）光データ通信技術の開発状況
+光モジュール、光デバイス、材料・集積技術といったハードウェアの研究開発に関し ては、長期的な研究
+開発が必要である。付録3の海外動向に示す ように、各国の公的機関・ファンディ ング機関により光データ通
+信技術の研究開発をサポートする各種のプロジェク トが進められている。日本においても、これまでも内閣府、
+総務省・情報通信研究機構（NICT） 、経済産業省・国立研究開発法人新エネルギー・産業技術総合開発
+機構（NEDO） 、文部科学省・国立研究開発法人科学技術振興機構（JST）などで光データ通信技術に関
+係するプロジク トが進められてきた。ただし、最近のAIの急速な進展を考慮し て2030年以降のDC用の光
+データ通信技術をターゲッ トにし ているものは限られており、2030年頃までに大部分が終了する。このため、
+わが国における当該分野の研究開発力を維持・向上させるためには、短期から長期までのさまざまな形のプ
+ロジェク トの継続的な推進が重要にある。
+一方、企業のコンソーシア ムによる活動も出てきている。 NTTは、電気信号を光信号に置き換え てネッ ト
+ワーク全体を光でつなぐInnovative Optical and Wireless Net-work（IOWN）構想を提唱し
+8)
+、日本の
+企業や研究機関だけでなく 、海外の企業も参画させて、新たな光技術の開発やその普及など活発な活動を
+行っ ている。例えば、構想実現の一環とし て、産業技術総合研究所他と ともに光電融合技術（Photonics-
+Electronics Convergence：PEC）の研究開発に取り組ん でいる。 DC間の接続であるPEC-1に対し て、
+PEC-2はサーバー内のボード（基板）間を、PEC-3はボード内のチップ間を、PEC-4はチップ内のダイ間を
+光接続するこ とを目指し ている。現在は、PEC-2の研究開発を進めており、今後はPEC-3/PEC-4を見据えた
+研究開発が進められる計画になっ ている。
+光通信システムや光デバイスに関する主要な国際会議、欧州光通信国際会議（ECOC：European
+Conference on Optical Communication）や光ファイ バー通信国際会議（OFC：Optical Fiber
+Communication Conference）では、将来のDCなどへの応用を目指した最新の光通信システムや光デバ
+イス技術に関する報告が多く発表されている 。また 、デバイスや集積回路の国際学会であるIEEEの
+International Electron Devices Meeting（IEDM） 、International Solid-State Circuits Conference
+（ISSCC） 、VLSIシンポジウム（Symposium on VLSI Technology & Circuits）などでも、最近は光デー
+タ通信関係の光デバイス、シリコンフォ トニクス、光電融合の実装技術、光変調用の高周波回路などの報告
+が増加し ており 、世界的に光データ通信関係のデバイス ・回路への関心は高まっ ている 。例えば 、
+IEDM2025においては、シリコンフォ トニクスや光電融合技術に関する特別セッション「Silicon Photonics
+for Energy Efficient AI Computing」が設けられ、Google、NVIDIA、IBM、NTT、imec
+（Interuniversity Microelectronics Centre） 、産業技術総合研究所などから、DC用の光データ通信方式
+の検討、チップレッ ト用の光データ通信の実装技術、シリコンフォ トニクスを用いた光電集積技術、InPとシ
+リコンフォ トニクスの異種材料集積技術などが報告され、活発な議論がなされている
+9)
+。
+（5）2030年以降を見据えたDC内の光データ通信技術の問題点
+これまで述べてきたDC内の光データ通信技術の現状認識に対し て、そこから見え てきた問題点について記
+す。主要な問題点を大き く分けると、以下の3つとなる。
+● AIの進展に対するDCネッ トワークの構成進化が不明確
+● 現在の光デバイス技術の単なる延長では次世代DCの性能要求への対応が困難
+● 日本の光データ通信･光デバイス技術の研究開発力が低下
+一つ目と二つ目は今後取り組むべき研究開発課題に関係するものであり、三つ目はその推進方法に関係す
+るものである。以下、これらの問題点について述べる。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 9
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 20 =====
+5-1）AIの進展に対するDCネッ トワークの構成進化が不明確
+生成AIなどの急速な進展によりAI情報処理が膨大になっ ており、DC内の計算能力の向上やサーバー間を
+つなぐデータ通信のボトルネックの解消が求められているが、今後のAI処理やサービスのトレ ン ドに対応する
+DCのネッ トワークアーキテクチャーの方向性が定まっ ていない。このため、光データ通信技術において、性
+能向上の中核である光モジュールや光デバイスなど下位の技術レイ ヤーへの長期的な数値目標も不明確な状
+況にあり、長期的視点でこれらの研究開発を進める上で問題となっ ている。
+現状では、サーバー間や、CPU・GPU・メ モリーの間を接続するデータ通信には電気配線が使われてい
+るが、動作周波数を上げてさらに高速化しよう とすると、伝送損失や消費電力が増大する。このため、電気
+配線の利用だけではデータ通信の高速化や広帯域化は困難になっ ている。
+5-2）現在の光デバイス技術の単なる延長では次世代DCの性能要求への対応が困難
+上記の電気配線の問題から、光データ通信技術による光配線の適用が望まれているが、長距離通信などで
+開発されてきた従来の光通信技術やそこで使用されている光デバイスがそのまま適用できる訳ではない。これ
+までの光通信技術は、光ファイ バーの伝送損失が最も小さい波長1.55μm帯を用いて、長距離通信である
+基幹ネッ トワークなどに使われる高速・大容量通信を目指し、波長多重技術やコヒーレ ン ト伝送技術などが先
+端的な光通信技術とし て研究開発が行われてきた。そこでは、電力消費や装置・デバイスの大きさ・体積、
+価格などよりも性能が優先されていた。近年はアクセス系、無線基地局、スパコン内のデータ通信など中・
+近距離にも光通信技術が導入されるようになっ ており、性能だけでなく電力消費や装置・デバイスの大きさ、
+価格などへの対応も行われている。しかし、AI対応のDCでは、さらに導入条件が厳しい。光伝送での波長
+分散が少ない波長1.3μmでの光伝送が主流となっ ているこ とから、この波長に対応する高性能な光デバイ
+スなどを開発するとともに、サーバーラックの限られたスペー スに高密度に伝送路の切り替えスイ ッチや多数
+の光モジュール、光導波路などを配置する必要がある。従来の光デバイス、光モジュールでは、高速・大容
+量通信が可能で低消費電力・小型・高密度実装（省スペー ス） 、低価格といった複合的な要求に対応できる
+ものはほぼない。
+例えば、光スイ ッチとし ては、微小電気機械システム（MEMS：Micro Electro Mechanical Systems）
+や圧電（ピエゾ）素子、液晶などを使った自由空間での光伝送路切り替え方式が実用化され、Googleの
+DCのフロン トエン ドネッ トワークに導入されているが、切り替え時間がms程度と遅く、次世代の光スイ ッチ
+とし てはμsオーダーの高速な光スイ ッチが求められている。光変調器とし ては、InP系やGaAs系などの半導
+体を用いた電界吸収型変調器（EAM：Electro-Absorption Modulator） 、シリコンフォ トニクスによるマッ
+ハツェンダー型変調器（MZM：Mach-Zehnder Modulator） 、リ ング変調器などがあるが、今後求められ
+る高速性、大きさ、集積容易性などについて全てに満足できるものはない。
+また、高速な伝送路切り替えスイ ッチは電気的なASICスイ ッチのままとし、その近傍に光モジュールを配
+置し て、光の有する高速・大容量通信を利用するCPO技術も注目されている。しかし、ASICの発熱で光ト
+ランシーバーや光デバイスが不安定になるこ とや、光の導波路・光ファイ バーの小型化が難しいなどの問題も
+ある。特に、ASICの近傍の光デバイスの熱的安定性や信頼性が懸念されており、これを払拭できる技術レベ
+ルには 至っていない 。
+このように、現状の光デバイス技術ではDC内の光データ通信のさらなる進化には対応できない。この問題
+の解決には、優れた光学特性を持つ新材料、新動作原理や新構造の光デバイス、多様な材料・デバイスを集
+積化できる異種材料集積技術など、従来の光デバイスの単なる延長ではない革新的な技術が必要と考えられ
+るが、長期的な視点での取り組みが不足し ている。
+5-3）日本の光データ通信･光デバイス技術の研究開発力が低下
+日本においては、DC向け光モジュール･光デバイス技術の研究開発力の低下も懸念されている。図2-2に
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）10
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 21 =====
+示す ように、わが国の企業などは最先端のデータセンター向け光通信システムを支える基幹的光デバイスを供
+給し ている。この意味では、現時点でも国際的なエコシステムに参画し ているという こ とができるが、この図
+の関係はデータセンターを所有する米国巨大IT企業5社（GAFAM：Google（Alphabet） 、Apple、
+Facebook（Meta） 、Amazon、Microsoft）などのハイ パー スケーラーが決定する仕様に対し、システム・
+デバイスベンダーが追従する「Vertical Integration（垂直統合）の支配下にある水平分業」の構造となっ
+ている。技術の方向性に関する意思決定は最上位のハイ パー スケーラーが行い、それ以外の業界メ ンバーは、
+それに従い続けるほかはない状況になっ ている。一部の光デバイスを開発・販売し ている日本の企業は、DC
+ビジネスを進めているGoogleなどの企業のエコシステムに入っ てレーザーや光変調器を提供し、今後のシス
+テム側の要求を知ることができる。一方、その他の企業やアカデミアの研究者はこのエコシステムに入っ てい
+ないため、DCシステムの今後の要求や動向を十分に把握するこ とはできず 、将来要求される光デバイスや材
+料に対する適切な研究開発ができなく なる可能性がある。
+
+図2-2 　 現在のデータセンター向け光通信のエコシステム
+また、InP 系の光デバイスでは日本がまだリードし ているが、今後の光デバイス・回路の集積化の基盤とな
+るシリコンフォ トニクス技術においては欧米や台湾などの後塵を拝し ている。国内におけるシリコンフォ トニク
+スを基盤とする次世代の光デバイス・材料や集積化の研究開発を進めていく体制がまだ整っ ておらず、その試
+作は産業技術総合研究所などの一部の研究機関に限られている。
+2.2 社会・経済的効果
+本提言で対象とする光データ通信技術は、DCというデジタ ル社会の中核インフラの性能・構造そのものに
+直接影響を与える基盤技術であり、その研究開発成果は、産業政策、市場構造に対し て短中期的に明確な効
+果をもたらすと考えられる。
+（1）市場拡大の効果
+AI向けDCの急拡大により、DC内部ネッ トワークは、従来の通信市場とは異なる性格を持つ新たな巨大
+市場とし て顕在化しつつある。世界のDC市場規模は、2024年に2,427億2,000万米ドルであり、2025年
+の2,697億9,000万米ドルから2032年までに5,848億6,000万米ドルへ成長し、予測期間中の年平均成長
+率（CAGR）は11.7%を示すとの予測がある
+10)
+。また、 DC内におけるデータ通信ネッ トワークの市場規模は、
+2025年に105億3,000万米ドルであり、 2026年の141億7,000万米ドルから2034年までに1,516億2,000
+万米ドルへと、CAGRは34.5%と大き く成長するとの予測がある
+11)
+。さらに、サーバー間のデータ通信をつ
+かさどる光モジュールの市場規模は、2024年に126億2000万米ドルであり、2025年の147億米ドルから
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 11
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 22 =====
+2032年までに425億2000万米ドルへ成長し、CAGRは16.4%を示すと予測されている
+12)
+。なお、2024年
+時点では北米が36.05%のシェアを占め、世界の光モジュール市場を支配し ている状況にある。
+特に、バックエン ドネッ トワーク（GPU間・サーバー間・ラック間通信）は、従来の通信インフラと異なり、
+「極端な低遅延」 、 「超高帯域」 、 「高発熱環境下での高信頼性動作」といった特異な要求条件を持つ「AI特
+化通信市場」である。
+本プロポーザルが示す光電融合技術や次世代光デバイスの研究開発が進展すれば、 「従来は電気配線に依
+存し ていた短距離通信領域の光化」 、 「CPO、光スイ ッチ、オンチップ光配線といった新カテゴリ製品の創出」 、
+「光デバイス単体ではなく『システム一体型光通信装置』という市場の成立」が進み、DC内部光ネッ トワー
+ク市場そのものが新たな産業分野とし て明確化される。これは、既存の通信機器市場の単なる延長ではなく、
+「AI計算基盤向け専用通信市場」という質的に異なる市場拡大を意味する。
+（2）新産業創成・産業構造変革への効果（日本のポジションの再構築）
+現在のDC向け光通信のエコシステムにおいて、日本はシステムアーキテクチャー設計や大規模プラッ ト
+フォーム構築では主導権を持たず、米国IT企業主導の市場構造の中で、レーザーや一部光デバイスの供給者
+とし て部分参加し ているに過ぎない。
+本プロポーザルが目指す「ネッ トワークアーキテクチャーから光デバイス・材料までを貫く研究開発」は、
+日本が相対的に強みを持つ、光デバイス物性、異種材料集積、高信頼性デバイス設計といった領域を、単な
+る部品供給ではなく、 「AI計算システムの設計原理そのもの」に接続するこ とを意味する。これにより、シス
+テム設計思想と光デバイス物性を同時に理解する技術領域の形成、海外ハイ パー スケーラーに依存しない技
+術ロードマップ構築能力の獲得、光データ通信を核とする新たな産学官エコシステムの形成なども期待できる。
+これは、日本の半導体・フォ トニクス産業の位置付けを「ベンダー的光デバイス供給」から「計算基盤設
+計に関与する中核技術領域」へと転換する可能性を持つ。すなわち、既存産業の延長ではなく、AI時代に対
+応した産業構造そのものの再編を意味する。
+2.3 科学技術上の効果
+本プロポーザルで取り上げる光通信に向けた光技術は、通信以外の領域への技術シー ズとし て展開できる
+可能性が極めて高い。実際に、一部では実用化や可能性実証が進められている例もある。
+Light Detection And Ranging （LiDAR）分野においては、光データ通信技術の転用が直接的かつ急速
+に進ん でいる。特に光データ通信に培われたシリコンフォ トニクスによる小型化・量産化技術と、長距離伝送
+中心に発展したコヒーレ ン ト通信技術が、周波数変調連続波（FMCW：Frequency Modulated
+Continuous Wave） によるLiDARの高性能化と低価格化の鍵となっ ている
+13), 14), 15)
+。
+光コンピューティ ングへの展開とし ては、データセンター内の「光電融合」の発展形とし て、計算そのもの
+を光で行う「光ニューラルネットワーク」が検討されている
+16), 17)
+。これには、本プロポーザルでも対象とす
+る光通信用のMZMなどの変調素子を網の目状に配置するこ とで、AI処理で最も計算コス トが高い「行列演
+算」を、光の干渉を用いてほぼ遅延なし・低消費電力で実行する試みである。また、非常に単純な構造で高
+速な学習が実現できるリザバーコンピューティングへの展開
+18)
+も広く検討されている。
+光データ通信の集積技術は、 「光量子コンピュータ」および「量子鍵配送（QKD） 」のハードウェア基盤
+とし て不可欠である
+19), 20)
+。特に、数百万個の量子ビッ トの制御には、巨大な光学定盤の利用は不可能であり、
+チップ上への集積化が唯一の解とされている。また、CPO等の高密度な実装技術や半導体製造技術は、量
+子計算以外の分野にも広く適用可能である。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）12
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 23 =====
+他にも、光データ通信の波長分割多重（WDM：Wavelength Division Multiplexing）技術の逆を行う
+ことで、 多数の半導体レーザーの出力を束ね、 高出力レーザーを得る試み
+21)
+がなされている。通信用の光フィ
+ルタや波長可変レーザー技術を応用し、 血液中の成分 （グルコー スなど） や呼気を分析するセンサーを、 スマー
+ト フォ ンやウェアラブルデバイスに搭載できるサイズまで小型化するバイオセンシング応用などの検討
+22)
+もな
+されている。超高速・超高信頼な光リ ンク設計技術のセンシング分野への展開とし ては、リアルタイ ムイ メー
+ジセンシングや光メモリー・キャッシュなどが検討されている
+23), 24)
+。
+光データ通信技術（特にシリコンフォ トニクスなどの光集積回路）の極限的な性能追求は、従来の光学や
+電子工学の枠に収まりきらず、 物理学や情報科学と融合した 「新たな学問領域」 を創出しつつある。 特に、 「基
+礎物理の実験場」とし てチップが利用できるようになり、理論上の概念だったものが工学に適用され始めてい
+る。代表的な例とし ては、数学（トポロジー：位相幾何学）の概念を光回路の設計に導入し、 「欠陥や急カー
+ブがあっ ても光が反射・散乱せず 、一方向に流れ続ける」という特異な性質を持つデバイスを研究する トポロ
+ジカル・フォ トニクス（Topological Photonics）
+25), 26)
+、 「光の損失（ロス） 」や「増幅（ゲイン） 」を、避
+けるべき悪者ではなく 、積極的に制御し て新しい機能を生み出すためのノ ン・エルミート・フォ トニクス
+（Non-Hermitian Photonics）
+17), 28)
+などがある。
+本プロポーザルで提案する光通信デバイス（特に光データ通信向け光電融合）の研究推進に当たっ ては、
+従来の「電子工学科」や「物理学科」のカリキュ ラ ム単独ではカバーしきれない。そのため、 「量子エンジニ
+アリ ング専攻」や「数理物質科学」といった、物理（基礎論）と情報（アルゴリ ズム）と電子工学（デバイ
+ス実装）を横断する新しい教育・研究の枠組みが必要となる。その結果、 光通信の単なる技術開発に留まらず、
+人材育成において極めてユニークかつ強力な波及効果をもたらすこ とが期待できる。
+例えば、この分野の研究者が、 「量子・波動物理」と「電子回路・EDA（設計自動化） 」の両方を高度に
+理解するこ とが必要とされるため、結果とし てダブルメジャー（二重専攻）相当のスキルセッ トを獲得できる。
+また、シリコンフォ トニクスは大学の研究室単独で光デバイスを試作するこ とが困難であるため、 「ファウン ド
+リー」のエコシステムを利用した研究スタイ ルが定着し ており、これが産業界の標準プロセスに精通した産学
+融合専門人材の育成につながり得る。さらに、光データ通信技術で培われた「異種材料集積」と「熱・信号
+の複合課題解決能力」は、半導体産業の核心部分や次世代コンピューティ ングなど異分野の課題を解決でき
+る人材輩出につながる。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 13
+研究開発を実施する意義
+2
+
+===== PDF_PAGE 24 =====
+3 具体的な研究開発課題
+2.1節で述べた現状認識から見え てきた問題点のうち、技術的な問題の解決に向けた研究開発課題につい
+て記述する。 AI進展に対しDCネッ トワークの構成進化・高性能化が不明確な問題に対し ては、2030年代
+のAIの進展に対応するDC内におけるネッ トワーク構成の方向性を示すネッ トワークアーキテクチャーに関す
+る技術課題がある。現在の光デバイス技術の単なる延長では次世代のDCの性能要求に未達の問題に対し て
+は、数Tbit/s～10 Tbit/s程度のネッ トワークの高速・大容量化が可能な光モジュールや光デバイスを実現
+する技術課題、および光デバイスの高性能化や新たな光デバイスを創出するための基盤となる材料技術や集
+積技術の課題がある。これらの研究開発課題の全体像を技術レイ ヤーに分けたものを図3-1に示す 。ネッ ト
+ワークアーキテクチャー、光モジュール、光デバイス、材料・集積技術の4つの技術レイ ヤー（階層）とし て
+おり、それぞれにおける研究開発の方向性を示し ている。これらの技術レイ ヤーの研究開発課題は相互に関
+係しており独立したものではないが、分かり易くするためにこのような分け方にしている。ネットワークアーキ
+テクチャーでは今後のAI処理の進展・トレ ン ドへの対応が必要であり、光モジュールでは高信頼化や保守容
+易性、光デバイスでは小型化や高密度化、材料・集積化では新光物性・新機能の利用や異種材料の集積、
+などの各課題を克服する必要がある。以下に、各技術レイ ヤーにおける具体的な研究開発課題について述べ
+る。
+
+図3-1 　 具体的な研究開発課題の全体像
+3.1 DCの進化に対応したネットワークアーキテクチャーの研究開発
+DCのネッ トワークアーキテクチャーは、AI計算システムの進化および要件の変化に応じて継続的に変貌し
+てきた。今後はAI計算規模の拡大に向けた、光デバイスや光モジュールなどコンポーネン トの革新を生かし
+たアーキテクチャー設計に加え、AI活用の目的や利用形態の多様化、ユーザ層の拡大などを背景とし て、従
+来とは異なる複数の進化シナリオを同時に包含する柔軟なアーキテクチャーが求められる。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）14
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 25 =====
+DCの進化シナリオは3つに大別される。生成AIの普及拡大による大規模化（シナリオA） 、多用途展開お
+よびエージェン トAIの実装（シナリオB） 、AI計算システムのコンパク ト化および点在化とフィ ジカルAIの実
+装（シナリオC）である。シナリオAでは、高速化・大容量化・低消費電力化が主要要件となるが、シナリ
+オBでは柔軟性・拡張性・自律性、シナリオCではリアルタイ ム性・同時性・信頼性が設計指標となる。そ
+れぞれのシナリオに求められる研究開発課題を以下に述べる。
+（1） さ
+まざまなアプリケーション/サービス・利用/運用/製造の要件にフレキシブル/スケーラブル/オート
+マティ ックに対応するネッ トワーク： （シナリオA、シナリオB対応）
+シナリオAについては、現在の大規模DCを構成し ているネッ トワークのコンポーネン トの進化に伴っ て、
+現行アーキテクチャー内での拡張・革新がなされていく ものと考えられる。大規模DC等において課題となる、
+AI計算システムの高速大容量化・低消費電力化に向けては、2.1節に示したラック間・サーバー間・サーバー
+内などDC内のさまざまな階層でのデータ通信の高速化・大容量化を実現するアーキテクチャーの検討が必
+要である。本課題においては、高速大容量化・低消費電力化に加え て実装効率や運用効率の高い光データ通
+信技術や光スイ ッチ技術の適用を考慮したアーキテクチャーの検討が極めて重要である。加え て、これらの要
+素技術の進化による機能・性能の向上はネッ トワーク要件やシステム仕様の満足度に大き く影響するため、当
+該進化に対応し て柔軟に更新・拡張可能なアーキテクチャーの検討が重要となる。従っ て、CPO、チップレッ
+ト、大規模光スイ ッチといった先進要素技術の特性や進展状況を常時把握した研究開発が必要である。
+シナリオBの多用途DC等に対応するためには、AI計算システムのさまざまな用途や利用形態、あるいは、
+AI計算システムの製造・更新の条件に応じて、柔軟性/拡張性を備えたアーキテクチャーが必要である。また、
+利用者のユーザビリティや、エージェン ト/ロボッ トなどの人工物がユーザとなるケー スを想定し、運用/管理
+の自動化が可能な構成や仕組みの検討も重要な課題となる。ユーザの利用時間やサービス提供が極めて短時
+間・スピーディになるユー スケー スや、処理時間と電力消費量の要件の両立が必要となるケー ス、局所的な
+通信性能のボトルネックや故障部位の回避に対応するアーキテクチャーの検討なども重要である。サービス提
+供スピードやコス トパフォーマンスが実用化上の要件になり得るため、本課題においては、ネッ トワークオー
+ケス トレーション、仮想化・自動化、コンピューティ ング-ネッ トワーキング融合・連携といったネッ トワーク
+上位層の技術に加え て、高速光スイ ッチングなどの要素技術の導入を考慮したアーキテクチャーの検討が極め
+て重要である。特に、μs/nsオーダーの経路切り替えを可能とする光バー ス ト スイ ッチ（OBS：Optical
+Burst Switch）/光パケッ ト スイ ッチ（OPS：Optical Packet Switch）技術と上記ネッ トワーキング技術の
+組み合わせによっ て、通信/計算リ ソー スの利用効率、エネルギー効率/運用効率が飛躍的に向上する可能性
+を秘めており、これら光スイ ッチのスムー ズな導入を可能とするアーキテクチャーの研究開発は社会実装時の
+競争力向上に資すると考えられる。
+（2）
+ DC
+内外領域とクラウ ド/エッジ/ローカル接続における分散処理およびリアルタイ ム/超多数並列処理を
+実現するネッ トワーク： （シナリオC対応）
+分散化やリアルタイ ム処理に対応したシステムにおいては、分散した計算システムにおけるコンピューティ ン
+グ-ネッ トワーキング処理のリ ソー スを最適に配分し、複数のDCを使った最適な処理時間や消費電力となる
+AI計算と、迅速かつ適切な利用者端末へのデータ配信が必要となる。また利用形態によっ ては機器制御など
+極めて信頼性の高いデータ配信が必要なケー スや、多数の計算システムを並列接続するケー スなども想定さ
+れる。このため、光データ通信装置のリアルタイ ム監視技術、遠隔および異種の分散リ ソー ス管理技術、リア
+ルタイ ムでのデジタ ルツイン技術の開発が必要である。さらにはセンシング機能と通信機能の統合技術などを
+組み合わせ、クラウ ド/エッジ/ローカルのサーバーに共通的に適用可能なデータ ・制御・管理インター フェー
+スや各種の同期方式の検討などを盛り込んだアーキテクチャーの研究開発が重要となる。
+本課題においては、エッジやローカルのサーバーに実装可能なコンパク トなAI計算システムの実現や高頻
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 15
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 26 =====
+度のユーザ切り替えに対応するための技術の適用が必要であり、光データ通信技術とそれをベー スとした小
+型化・低コス ト化技術や性能安定化・量産化技術、高速光スイ ッチ技術の活用・応用などが重要である。
+3.2 高速・大容量の光モジュール技術の研究開発
+DCにおけるAI計算システムでは、3.1節で述べたネッ トワークアーキテクチャーを物理的に実装するため
+の光データ装置 （光モジュール） の研究開発が不可欠である。光モジュール技術は、 ラック間、 ラック内 （サー
+バー間） 、サーバー内ボード間、デバイスチップ間、さらにはチップ内のダイ間まで階層的に存在し得る。大
+規模AI処理では、従来の電気配線のみでは通信帯域および消費電力の制約が顕在化し ており、光配線の導
+入が必須となりつつある。現時点で光配線化が精力的に検討されているのが、DC内部の「サーバー間」と
+「サーバー内」の高速接続である。
+（1）ラック内（サーバー間）への光モジュール技術の積極的展開
+DC 外部と内部の間あるいはサーバーラック同士の間のデータ入出力、いわゆるフロントエンドネッ トワーク
+に関し ては、既に光データ通信技術が導入されている。しかし、膨大なデータ通信とデータ処理を必要とす
+るAI計算システムでは、フロン トエン ドネッ トワークの光化だけではサーバー間やラック間のデータ通信ボト
+ルネックを解消することが難しく、ラック内のサーバー同士の間をより高速に接続するバックエンドネットワー
+クを備える構 成を採用するシステムが 増えつつある。この際 、フロントエンドネットワークで培った光デ ータ通
+信技術を積極的にバックエン ドネッ トワークに適用し ていく こ とが効果的である。さらに、光の特性を生かし
+た並列化（波長多重、空間多重）の研究開発を進めるこ とで、バックエン ドネッ トワークの高速・大容量化
+を実現する必要がある。
+高速・大容量化とともに、ラック内により多くのサーバーを収めるために、あるいはサーバー内により多く
+のCPU/GPUを備えるために、高密度配線が可能であるこ とも重要なファクターとなる。この際に鍵となる
+データ通信装置が、データを送受信するモジュールや、データの送受信先を切り替えるスイ ッチであり、これ
+ら装置の小型化ならびに高集積化の研究開発が必要である。光モジュールは、光ファイ バーで送受信する光
+信号とサーバー内で種々の処理をするための電気信号とを変換する役割も有する。この変換速度・変換効率
+を高めるこ とも重要な研究開発課題である。スイ ッチには、光信号を切り替えるものと電気信号を切り替える
+ものとがある。光信号を切り替えるスイ ッチでは、入出力信号線の数を増やすという大規模化（高集積化）が
+難しい一方、電気信号を切り替えるスイ ッチでは、スイ ッチの手前のどこまでを光配線で接続し、どこから電
+気配線とするのかを、速度や電力消費量、信号の安定性などを考慮し て決定し、配線のための機構を実現す
+る必要がある。現在、プラガブル型モジュールをサーバーのコネクタに挿入し、そこから先は電気信号で接続
+する形態や、スイ ッチ機能を提供するASICまで光ファイ バーを引き込み、そこで電気信号に変換する形態で
+ある CPO など、さまざまな取り組みがある。
+（2）サーバー内データ通信の高速・大容量化
+スイ ッチ機能を提供するASICまで光ファイ バーを引き込む方法は、サーバー内データ通信技術のひとつで
+もある。2章で述べたように、NTTは電気信号を光信号に置き換え てネッ トワーク全体を光でつなぐIOWN
+構想を提唱し ており、構想実現の一環とし て産業技術総合研究所他と ともに光電融合技術（Photonics-
+Electronics Convergence：PEC）の研究開発に取り組ん でいる。データセンター間の接続であるPEC-1に
+対し て、PEC-2はサーバー内のボード（基板）間を、PEC-3はボード内のチップ間を、PEC-4はチップ内の
+ダイ間を光接続するこ とを目指し ている。現在は、PEC-2の研究開発を進めており、今後、PEC-3/PEC-4を
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）16
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 27 =====
+にらんだ研究開発の強化が重要となる。具体的には、複数の半導体チップや外部デバイスを光信号によっ て
+中継、接続するための中間基板である光インターポーザーや、LSI間のデータ通信を効率化するために、光
+信号と電気信号を相互変換する光電変換モジュールをLSIの直近で同一基板上に実装した光チップレッ トな
+どの実現である。例えば、半導体レーザーなどを薄膜状に作製するメ ンブレ ン化合物半導体技術は、低消費
+電力かつ高速な動作を実現できると ともに、シリコンフォ トニクス回路上への集積が容易で、光電融合デバイ
+スのひとつとし て期待されている。特に半導体レーザーに関し ては、従来の端面発光型とは異なり、垂直方向
+かつ面状（2次元アレイ状）にレーザービームを射出する面発光レーザー（VCSEL）への期待が大きい。本
+レーザーの実現により、光モジュールの性能を2025年時点の800 Gbit/s、15~20 pJ/bitから、2032年に
+は3.2 Tbit/s、2~4 pJ/bitまで向上させるこ とができる可能性がある。ただし、これらの性能要求に対し ては、
+現状の光デバイス・材料技術や、集積化・実装技術の延長線では応えられない可能性があり、3-3節および
+3-4節で述べる光デバイスならびに材料・集積技術の研究開発が不可欠である。
+サーバー内だけでなく サーバー間のデータ通信を含め、実際の配線においては、どのような通信容量の線
+を何本束ねて使うかを考えるこ とになる。高速・大容量の通信線を少数束ねる方法（Fast & Narrow） 、適
+度な速度・容量の通信線を比較的多数束ねる方法（Slow & Wide） 、比較的低速・低容量の通信性を多数
+束ねる方法（Slower & Wider）がある。例えば光配線では、ラック間など長い距離で通信する際には、高
+出力レーザーを用いたFast & Narrowの方法で実装する。この場合、消費電力は大き く なる。一方、サー
+バー内のボード間など短い距離で通信する際には、出力の小さい面発光レーザー（VCSEL）やマイ クロLED
+を用いたSlower & Widerの方法で実装する。この場合、消費電力は小さ く なる。このように、万能な方法
+ではなく適材適所で技術を使い分けるこ とが肝要であり、特定の方式に絞り込むのではなく、種々の方式に対
+する研究開発を広く進めておく こ とが重要である。
+3.3 飛躍的な性能向上、新概念・新機能を実現する革新的光デバイスの
+研究開発
+大規模DC内の光データ通信技術で用いられる主要な光デバイスは、半導体レーザー、LED、光変調器、
+受光素子、導波路、合分波器、光スイ ッチ、並びにそれらを集積した光集積回路（PIC）であり、高速化・
+高効率化・小型化・低コス ト化・高信頼化などに取り組む必要がある。このうち、導波路、合分波器などの
+受動素子は高速化に対する制約が比較的少なく、また、受光素子についても素子容量低減による漸進的な改
+良が当面有効であると考えられる。
+一方、送信側光源である半導体レーザーやLED、電気信号を光信号に変換する光変調器、光経路の動的
+制御を担う光スイ ッチ、並びにそれらを集積したPICについては、今後の Tbit/s 級高速通信や pJ/bit 級低
+消費電力化に向けた統一的な技術シナリオが十分に確立されておらず、本分野における中心的な課題となっ て
+いる。
+以下では、用途別要求を踏まえ、これらの革新的光デバイスの研究開発課題を整理する。
+（1）半導体レーザー・LED
+大規模DC内で用いられている半導体レーザーは、InP系端面発光型レーザーとGaAs系面発光レーザー
+（VCSEL: Vertical Cavity Surface Emitting Laser）に大別される。DC用途では、伝送距離や設置箇所に
+応じて要求される光源特性が大き く異なり、万能な単一方式ではなく、用途別に最適な光源を使い分ける設
+計思想が重要となる。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 17
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 28 =====
+1-1）InP系端面発光型レーザー
+DC用のInP系レーザーは主に1.3 µm帯で動作し、ラック間やデータセンター間など2 km以内の伝送用
+途に用いられる。特に、 近年はCo-Packaged Optics （CPO） などへの応用により、 光変調器に連続波 （CW）
+光を供給する光源とし て、4～8分岐を前提とした数百mW級の高出力化が求められている。このため、半
+導体光増幅器（SOA）を集積した高出力InP系光源の研究開発が活発化し ている。
+今後の課題は、高出力化を進めながら、同時に、長期信頼性、温度安定性、さらには電力効率を向上させ
+る技術の確立である。
+1-2）GaAs系面発光レーザー
+VCSELは垂直方向に面状で発光する構造を持ち、2次元アレイ化が容易であるこ とから、Slow & Wide型
+の並列通信に適し ている。特にサーバー内やボード間など短距離・高密度配線用途において、低消費電力・
+高集積光源とし て有望である。
+近年では歪みInGaAsなどを用いた1 µm帯VCSELの高速化が進み、100 Gbit/s超を目指した研究開発
+が進展し ている。今後は多チャ ネル化に伴う熱設計、素子間ばらつき、アレイ全体での信頼性確保が主要課
+題となる。
+1-3）マイ クロLED
+窒化ガリウム（GaN）系マイ クロLEDはキャ リア寿命が短く 、極めて高速な応答が可能であるこ とから、
+将来的なチップ内・チップ間光配線の光源候補とし て注目されている。可視波長帯ではレーン当たり10
+Gbit/s級の伝送実証が報告されており、今後は近赤外化、高効率化、電子回路との集積性向上が研究開発
+課題となる。
+（2）光変調器
+光変調器は電気信号を光信号へ変換する中核デバイスであり、データ通信の帯域・消費電力・集積度を支
+配する要素である。発光機能を必要としないため、多様な材料・構造が検討対象となっ ている。表3-1に研
+究開発が進ん でいる光変調器を示す。
+2-1）InP系光変調器
+InP系電界吸収型変調器（EAM：Electro-Absorption Modulator）はレーザーとのモノ リシック集積
+が容易であり、高帯域性を実現できる点で優位性を有する。一方、CMOS（Complementary Metal-
+Oxide-Semiconductor ）電子回路との大規模集積や低コス ト量産には課題が残るため、異種材料とのハイ
+ブリ ッ ド集積技術の確立が重要な研究テーマとなっ ている。
+2-2）Si系光変調器
+シリコンフォ トニクスではMZMおよびマイ クロリ ング型変調器（MRM：Micro-ring Modulator）が主
+流である。CMOS互換プロセスにより電子デバイスとの集積が容易であり、量産性・高集積性に優れる。
+近年はフォ トニック結晶導波路によるスローライ ト効果を利用した小型・低消費電力MZMや、MRMによ
+る高密度集積の実証が進ん でいる。
+2-3）次世代変調器
+将来のブレークスルー材料とし て、薄膜LiNbO
+3（LN）や電気光学（EO）ポリマーなど、非線形光学係
+数の大きい材料を用いた変調器が有望である。これらは従来材料に比べて、極めて小さな駆動電圧で高速変
+調が可能であり、pJ/bit以下の動作が視野に入る。ただし長期信頼性、パッケージ技術、量産性の確立が主
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）18
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 29 =====
+要課題である。それぞれの材料の詳細については、3.4節で述べる。
+表3-1 　 光変調器の比較表
+（3）光 ス イ ッ チ
+光スイ ッチは光信号を電気変換するこ となく経路を切り替えるデバイスであり、Optical Burst Switching
+（OBS）や Optical Packet Switching（OPS）など次世代DCアーキテクチャーの鍵となる要素である。
+現在検討されている方式には以下がある。
+● MEMS型光スイ ッチ：大規模ポート数に対応可能だが、スイ ッチング速度に制約。
+● シリコンフォ トニクス型光スイ ッチ：高速・小型だが挿入損失が課題。
+● EO型光スイ ッチ（薄膜LN、BTOなど） ：高速・低消費電力だが集積技術が未成熟。
+今後の研究課題は、数百～数千ポート規模での低損失化、μs以下の切り替え時間、pJ級の低消費電力を
+同時に満たす光デバイス技術の確立である。 OPSなど次世代DCアーキテクチャーの重要な光デバイスは、
+光メ モリーの実現であり、早期の開発が期待される。
+（4）光集積回路（PIC）
+将来のDC向け光システムでは、光源・変調器・受光器・スイ ッチを単一チップ上または高密度に集積し
+たPICの実装が不可欠となる。多チャ ネル化（32～64ch） 、異種材料集積、電子回路との協調設計を前提
+とした光デバイス構成の設計やそれに必要な実装技術の確立が求められ、単体の光デバイス性能だけでなく、
+集積時の熱設計、歩留まり、信号干渉抑制が重要な研究開発課題となる。
+3.4 光デバイスのブレークスルーを支える材料･集積技術の研究開発
+革新的光デバイスの実現には、従来の材料・プロセス技術の延長ではなく、新たな材料物性の活用および
+異種材料の集積技術の確立が不可欠である。本節では、現在の光デバイス用材料の主流であるInP系や、
+GaAs系、シリコン系（シリコンフォ トニクス系）より優れた光物性を有する新規材料の研究開発と、組成や
+構造の異なるさまざまな材料を用いた光デバイスを一つの基板・チップに集積化するために必要な技術の研
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 19
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 30 =====
+究開発について述べる。
+（1）光物性に優れた材料
+3.3節で述べた光デバイスの中で、光モジュールの高速・大容量化を進める上で、今後の技術開発の鍵に
+なるのが光変調器である。光変調器の動作原理とし ては、表3-1に示したEA型やMZ型などがあるが、それ
+らに用いられる材料とし ては、基本的には電界吸収効果や電気光学効果が大き く応答速度が速い光物性に優
+れた材料が求められる。このような材料とし てはこれまでに知られている材料だけでなく、新たな材料の探索
+が重要である。光物性に優れた新材料探索をする上では、これまでの材料をベー スに、材料の組成や結晶構
+造を変えることや、作製プロセスを変えることなども有効な手法の一つと考えられる。このため、ここでは表
+3-1に示した材料系の中で、光変調器用の材料とし て今後も重要な材料と考えられる薄膜LiNbO 3（薄膜
+LN） 、EOポリマー、BaTiO3（BTO）関連の研究開発について示す。
+1-1）薄膜LiNbO 3（薄膜LN）
+LiNbO3（LN）は大きな電気光学（Pockels）効果を有する強誘電体であり、高速・低電圧駆動が可能
+な材料とし て古くから注目されてきた。近年、スマート カッ ト技術により薄膜LNをSi基板上へ直接接合する
+こ とが可能となり、シリコンフォ トニクスとの融合が急速に進展し ている。薄膜LNは、高帯域・低損失・高
+線形性を同時に満たす材料であり、次世代光集積プラッ ト フォームの中核候補と位置付けられる。高品質な
+薄膜LNの作製技術、シリコン基板への接合技術、接合後の光デバイス作製のプロセス技術などの研究開発
+が重要になる。
+1-2）EOポリマー
+有機物のEOポリマーは無機材料を大き く上回る非線形光学係数を有し、極めて低い駆動電圧で高速変調
+が可能である。材料設計の自由度が高く、シリコンフォ トニクスとのハイブリ ッ ド集積にも適し ている。一方
+で、有機物に共通する、熱や光による性能劣化の課題があり、高品質の材料創製、光変調器の作製プロセス
+技術などと同時に、パッケージ・封止技術の確立が不可欠である。
+1-3）BaTiO
+3（BTO）
+BTOは強誘電特性を有するペロブスカイ ト類縁構造を持つ酸化物材料であり、シリコン基板上へのエピタ
+キシャル成長（結晶成長）が可能な点で注目されている。高いEO係数とCMOS親和性を兼ね備えた材料と
+し て、将来のオンチップ光機能材料の有力候補である。高品質なBTOをシリコン基板上に選択的に結晶成長
+させる技術や、変調器構造の作製技術などの研究開発が重要になる。
+（2）異種材料集積技術
+優れた性能を有するさまざまな機能の光デバイスとこれらを制御する電子回路を一つのチップに集積化した
+光集積回路（光電融合チップ）の実現には、InP系半導体、GaAs系半導体、強誘電体材料、 シリコンといっ
+た異なる種類の材料を一つの基板（ウェハ）上に形成し、それをさまざまなデバイスに加工する集積化技術
+が必要である。このような異種材料集積技術においては、近年は以下の技術が注目されており、これらの技
+術の科学的な理解と、高品質化技術の早期開発が課題である。
+2-1 ）エピフィルムボンディング
+薄膜化した半導体材料（エピフィ ルム）を、接着剤を使わずに分子間力で異種基板上に直接接合する半導
+体実装技術であり、ワイ ヤボンディ ングなどの機械的な接続とは異なり、フォ ト リ ソグラフィ技術による高密
+度・小型化と、LED等の異種材料集積による高機能化・低コス ト化を実現できる。薄膜化のプロセス、エピ
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）20
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 31 =====
+フィ ルムのハン ドリ ング 、高精度の位置合わせ（アライ メ ン ト）などの技術開発が必要である。
+2-2）ウェハボンディ ング
+2枚の半導体ウェハを貼り合わせて1枚の基板にする半導体製造技術であり、3D積層やMEMSデバイス
+製造、SOI基板作製に必須な技術となっ ている。強固な接合（直接接合、陽極接合、共晶接合など）のため
+の界面清浄化、高精度の位置合わせ（アライ メ ン ト）などが重要である。
+2-3）ヘテロエピタキシャル成長
+異なる種類の単結晶基板上に、結晶面方位を揃え て別の単結晶薄膜を成長させる技術であり、化合物半導
+体、シリコン、酸化物強誘電体などを組み合わせた光デバイスの作製に使われる。 MOCVD（有機金属気相
+成長） 法が用いられるこ とが多いが、 格子定数の不整合による欠陥 （ミスフィ ッ ト転位） を防ぐためのバッ ファ
+層形成技術が重要になっ ている。この技術により、所望位置への高精度配置、多機能チップの構築が可能と
+なりつつあるが、今後は、成長した結晶品質の向上と ともに、デバイス作製時の熱耐性、歩留まり、信頼性、
+検査容易性などを考慮した研究開発が必要である。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 21
+具体的な研究開発課題
+3
+
+===== PDF_PAGE 32 =====
+4 研究開発の推進方法および時間軸
+3章で述べた光データ通信技術の研究開発を効率的に進め、2章の問題点とし て示した、日本における光
+データ通信･光デバイス技術の研究開発力低下の懸念を払拭するために、図4-1に示す ような推進方法を提
+案する。長期的な視野に立ち、多様な研究者によるコミュニティ形成、産学官連携コンソーシア ムによるロー
+ドマップ作成、技術レイ ヤー間連携の新規プロジェク トの推進、大規模拠点･共用施設の活用、日本の強み
+を活かした海外連携、人材育成を促進し ていく。以下、それぞれの推進方法の詳細について説明する。
+図4-1 　 研究開発の推進方法の概要図
+4.1 多様な研究者によるコミュニティ形成
+3章で述べた4つの研究開発課題に対応し て研究開発を進めていく ためには、DCビジネスの動向、DCに
+おける光データ通信技術全体の動向、現状技術の問題点や重要な技術課題、研究開発の方向性、新たなシー
+ズ技術、世界における日本の研究開発力の位置付けなどについて認識し、産業界およびアカデミアで今後の
+研究開発の方向性を共有するこ とが重要である。しかし、 2章で述べたように、 ビジネスのエコシステムに入っ
+ている一部の企業はこれらの動向を把握し ているが、他の企業やアカデミアは十分には把握できず、日本全体
+で協力し てこの分野の技術全体を高めていく ような活動にはなっ ていない。そのため、今後のわが国における
+光データ通信技術の研究開発を求められる方向に進展させ、産業競争力を維持・発展させていくためには、
+技術レイ ヤーや産学官の垣根を越え て、さまざまな情報交換や議論をする新たなコミュニティの形成が必要で
+ある。具体的には、まずさまざまな技術レイ ヤーの研究者・技術者が集まっ て多様な情報を共有し、今後の
+研究開発に向けて議論するような場を構築するこ とが考えられる。例えば、付録2に記載したCRDS主催の
+科学技術未来戦略ワークショップなどは、このような議論の場の一つと言えるだろう。また、通信、デバイス、
+材料、情報処理分野などの関連学会の学術講演会における、技術レイ ヤーや技術分野を越えたシンポジウム
+の開催なども、産学官の研究者・技術者が集まっ て議論する場になるとともに、新たなコミュニティを形成す
+る機会にもなる。異なる技術レイ ヤーの複数の世話人がシンポジウムを主催するこ とが理想である。その後は、
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）22
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 33 =====
+技術レイ ヤーの異なる数人の世話人がこのようなシンポジウムを継続すると ともに、新たな研究会やセッショ
+ンの創設に向けて活動し、研究開発の方向性の議論の場とし ていく こ とが望ましい。このような場で、長期的
+な視点でのDCにおける光通信技術に関する企業からのニー ズやアカデミアのシー ズについて紹介し、必要な
+性能・大きさ・信頼性、実用化のボトルネック・時期などについて議論するこ とで、研究開発の方向性がよ
+り明確になり、情報共有も できると期待される。
+4.2 産学官連携のコンソーシアムによるロードマップ作成
+議論の場と新たなコミュニティが形成された後は、研究開発の目標を明確にするために、光データ通信技
+術のロードマップを作成する活動も重要になる。10年程度先までにどのような性能・特性の技術が要求され
+るか、そのために今の技術の延長で対応できるのか、どのような新たな技術の候補がありどのような進展が
+期待できるのかなどを産学官の研究者・技術者が議論し、ある程度の客観性・納得性のある候補技術を挙げ
+て共有するこ とが重要である。ロードマップの必要性については技術分野によっ ても異なると考えられるが、
+少なく とも研究開発に10年程度の時間を要し、基板、プロセス原料、装置、デバイス構造、プロセス開発、
+設計など多様な技術領域が目標・性能を共有するために作られてきた半導体集積回路の技術分野の例では、
+非常に有効に働いてきた。図4-2にロードマップの例を示す。今後10年間の可能性のある技術や性能目標な
+どを記載し ている。今後、さらに詳細な調査・議論に基づいたロードマップの作成が期待される。
+
+図
+4-2 　 CRDSで検討中の光データ通信技術のロードマップ
+このようなロードマップ作成活動は実用化を視野に入れたものとなるため、産業界が中心になり産学官連
+携で実施するこ とが望ましい。例えば、光通信に関わる産業界の団体が中心になり、光データ通信のロード
+マップ作成を行うための産学官連携のコンソーシアムを立ち上げることが考えられる。このようなコンソーシ
+ア ムにより、DCの光データ通信技術に関わる国内の産業界やアカデミアは、共通のロードマップに沿っ て異
+なる技術レイ ヤー間の共同研究や研究開発プロジェク トの推進、産学連携などが実施しやす く なると期待され
+る。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 23
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 34 =====
+一方、最近の技術開発は国内だけに留まらず 、優れた技術を有する海外との連携が必要になっ てきており、
+海外へロードマップを発信するこ とにより、海外機関の参画を促し海外連携の足がかりにするこ とも重要と考
+えられる。光技術関係では、NTTが主導するIOWN構想において、IOWN Global Forumを開催し て海外
+を含む団体が一堂に会し て議論し、オー プンな技術標準の確立を目指し ており、このような活動も参考になる。
+ロードマップ作成活動の代表的なものとし て、半導体の国際的なロードマップ作成活動であるIEEEの
+International Roadmap for Devices and systems（IRDS）
+29)
+がある。国内では、システムデバイスロー
+ドマップ産学連携委員会（SDRJ：The System Device Roadmap Committee of Japan）
+30)
+が応用物理学
+会の中に作られており、IRDSに対し、日本での半導体ロードマップ作成活動の結果報告やその内容の採用を
+促進する活動を行っ ている。この半導体のロードマップ作成活動は、国内でまず議論し、その後に国際機関
+と議論するという2段階になっ ており、このような活動形態も参考になる。
+4.3 技術レイヤー間連携の新規プロジェクトの推進
+共通のロードマップがまだ描けていない2035年以降の光データ通信技術について新たな方向性の探索や
+優位性・先進性のある技術開発を進めていく ためには、4.1節で述べたように関連するさまざまな技術レイ
+ヤーの研究者・技術者が集まっ て新たなコミュニティを形成するこ とが重要である。その上で、互いの研究の
+内容や今後の方向性について理解を深め、共通な目標に向けて技術レイ ヤー間に跨がるチームが協力し て研
+究開発を進めていく こ とが必要である。それを先導・サポートする国のプロジェク ト推進の一例とし て、図
+4-3に示す ような複数の技術レイ ヤーの研究者がチームを作っ て研究開発を推進する体制が考えられる。ここ
+には4つの異なる技術レイ ヤーを中心とした短期的なプロジェク トおよび長期的なプロジェク トの構成例を示
+している。プロジェクトの中のチーム形成は、いずれかの技術レイヤーが中心となり、他の技術レイヤーが集
+まる形を想定する。技術の完成度のレベルや応用分野に応じて、内閣府、総務省・NICT、文部科学省・
+JST、経済産業省・NEDOなどの府省およびファンディ ング機関が、適切な時期に研究開発プログラ ム・プ
+ロジェクトを実施することが有効である。
+
+図
+4-3 　 技術レイ ヤー間連携の新規プロジェク トの構成例（赤い文字が中心になる技術レイ ヤー）
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）24
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 35 =====
+4-3の短期的なプロジェク ト構成例のように、従来とは異なる新たなネッ トワークアーキテクチャーの開発
+が中心で、既存技術の改良や高度化でそれを可能にするような光モジュール技術や光デバイス/材料・集積
+技術が存在する場合には、5年以内の実用化も考えられる。この場合は、内閣府や総務省・NICT、経産省・
+NEDOのプロジェク ト とし ての実施が効果的だろう。例えば、動的な通信リ ソー ス配分、機器増設・交換な
+どが容易なネッ トワークアーキテクチャーの提案と、それに対応する新たな光通信モジュール・光デバイスの
+研究開発といった場合がこれに相当する。ただし、新たなネッ トワークアーキテクチャーを実現できる光モ
+ジュールや光デバイスの候補がまだ明確でない場合には、もう少し長期の研究開発が必要と考えられるため、
+文部科学省・JSTのプログラ ムとし て実施するこ とも考えられる。また、新たな光モジュールの開発を中心と
+するプロジェク トも同様に考えられる。例えば、メ ンテナンス容易性、低コス ト、高密度実装を可能とする新
+たな光モジュール開発を目標に、ネッ トワークアーキテクチャーや光デバイスは既存のものの改良・高度化で
+対応できる場合には、短期的なプロジェク トを推進する。一方、新たなネッ トワークアーキテクチャーや新た
+な光デバイスの開発も必要な場合は、もう少し長期のプロジェク ト とするこ とが望ましい。
+中長期的なプロジェク ト構成例のように、高速・大容量化、小型・高密度化、低遅延化などの要求に対応
+する新原理・新構造の革新的な光デバイスや新機能の材料の提案を中心にする場合には、その実用可能性を
+確認するために5年以上の研究開発が必要と考えられる。例えば、文部科学省・JSTのプログラ ム（戦略的
+創造研究推進事業など）などが適すると考えられる。新材料を用いた光デバイスや集積化のプロセスの検討
+においては、 後述する 「マテリアル先端リサーチインフラ （ARIM）事業」
+31)
+や 同半導体基盤プラッ ト フォーム
+（ARIM-SETI）
+32)
+などの拠点を活用するこ とが効率的な研究開発に役立つ。また、新材料研究では材料の基
+礎物性の評価が重要であり、放射光・中性子・放射線などの大型の研究施設の利用を検討すると ともに、評
+価の専門的な知識を持つ研究者を含む研究チームの構成や共同研究体制を考え ておく こ とが望ましい。
+上記に示したプロジェク トの構成例の他にも、AI処理の大幅な低消費電力化や高効率化を目指した新たな
+計算アーキテクチャーの提案を中心にしたものも考えられる。この場合は、この提言の中心である光データ通
+信技術よりも上位にあたるAIコンピューティ ングまでも含むような形になるが、今後のAIの進展やそれに対
+応する新たなコンピューティ ングの流れも考慮し ておく こ とは重要である。例えば、今後重要になっ て く る身
+体性を備えたAI（フィ ジカルAI）
+33)
+の実現に向けては、センサー情報から物体や顔の認識・特徴抽出だけで
+なく、動画や音響データのリアルタイ ム分析などの時系列処理が必要になる。これらの処理に強く低消費電力
+の物理リザバーコンピューティ ングといったAIアクセラレータや計算サブシステムをDC内に構築し、深層学
+習やLLMなどと組み合わせて効率的なAI処理を行う ような新たな計算アーキテクチャーが考えられる。この
+ように新たな計算アーキテクチャーの提案を中心に据える場合にも、上記の例と同様に他の技術レイヤーとの
+連携は必須であり、各技術レイ ヤーの成熟度に合わせて、プロジェク ト実施期間や推進体制の検討が重要で
+ある。
+なお、図4-2には明示し ていないが、高速な電子回路と光回路の整合・最適化設計を行う こ とも重要であり、
+モジュールの技術レイ ヤーに高周波アナログ回路、 高速なデジタ ル ・ アナログ （DA） /アナログ ・ デジタ ル （AD）
+コンバータ、デジタ ル信号処理回路（DSP：Digital Signal Processor）など高速電子回路の研究者の参画
+が重要である。また、新たな光機能や優れた光学特性を有する新材料の研究開発においては、光材料・デバ
+イスデータベー ス構築とインフォマティ クス活用による高効率な新材料探索ができる研究者も含めたチーム作
+りが必要である。
+このようなプロジェク トの推進には、後述する大規模拠点･共有設備の活用も重要になる。特に、新材料、
+光デバイス、光集積回路の研究開発には、半導体のプロセス装置や試作ライン、評価装置の利用が不可欠で
+ある。多くの場合はチーム内でこれらを保有し ていないと考えられるため、プロジェク トで活用できるように、
+研究者およびプロジェク ト推進の府省・ファンディ ング機関が検討し ておく必要がある。また、光デバイスや
+光集積回路の試作において、既に確立されたプロセス技術を使う こ とが効率的であるような場合は、国内外
+のファウン ドリーの利用も できるように、研究フェー ズに合わせた研究開発投資が必要となる。例えば、ファ
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 25
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 36 =====
+ウン ドリーのシャ トルサービス（安価なチップ試作ができるように1枚の半導体ウェハ内に複数の機関のチッ
+プを作製するサービス）を利用する場合は、一試作当たり数百万円程度を要する。さらに、国内の研究者だ
+けでは十分なチーム構成ができないこ とも考えられ、先端の半導体プロセスに強い台湾、韓国、欧州などの
+研究機関との国際連携や共同研究も できるようにプロジェク トの設計をし ておく こ とも重要である。
+4.4 大規模拠点･共用施設活用
+具体的な研究開発課題とし て挙げた4つの技術レイ ヤーの中で、新材料、光デバイス、集積プロセス、光
+モジュールなどハードウェアの試作・評価に関わるものについては、個々の大学内の装置・設備だけで研究
+開発を実施するこ とは難しい。このため、新材料の精密評価や光デバイスのプロトタイプの試作・評価・検
+証ができる大規模な研究開発拠点や共用施設の利用が不可欠であり、国内で利用可能な研究開発拠点や共
+用施設を整備し、さまざまな要望に対応できるようにするこ とが必要となる。また、ハードウェアの研究開発
+を行う研究者もこれらの施設の情報・サービス内容を的確に把握し有効に活用し ていく と ともに、これらの施
+設に対し て必要な技術やユーザが利用しやすいサービス内容など、改善の要望を伝えるこ とも必要である。
+特に、電気光学効果の大きなLiNbO3 やBaTiO3 などの酸化物材料や高分子材料などの新材料を通常の光
+デバイス作製プロセスラインに導入するのは、不純物汚染などの問題があっ て容易ではないため、新材料を扱
+え、基礎的な実験が可能な共用施設の充実とその利用が重要である。例えば、文部科学省の「マテリアル先
+端リサーチインフラ（ARIM）事業」の参画機関、その中でも特に半導体の研究開発支援を強化するために
+2025年7月より開始されたARIM半導体基盤プラッ ト フォーム （ARIM-SETI） は、 新材料を扱う研究者にと っ
+て有効である。また、光デバイス用の新材料の光学特性などの物性評価や半導体基板の欠陥評価なども、高
+性能光デバイスの開発には不可欠であり、これらを高精度に評価できる大型の施設の利用も有効である。大
+型放射光施設（SPring-8） 、ナ ノテラ ス（NanoTerasu） 、高エネルギー加速器研究機構（KEK）の加速器
+研究施設（ACCL）などのシンクロトロン放射光や、原子力科学研究所（JAEA）の大強度陽子加速器施設
+（J-PARC） や研究用原子炉 （JRR-3） の中性子線、 放射線などを用いた評価が可能である。さらに、 材料デー
+タベー スとし ては、マテリアルズ インフォマティ クスへの活用を目的とし て物質・材料研究機構（NIMS）に
+物質・材料データベー ス（MatNavi）
+34)
+が構築されているが、例えばこの中に光学特性に特化した材料デー
+タベー スの構築・整備をし ていく こ とも重要であろう。
+InP系など化合物半導体を用いた光デバイスの簡単な試作は大学の実験室やARIMの利用でも可能である
+が、良好な作製プロセス条件の確立や光デバイスの性能向上、光集積回路作製のためには、化合物半導体
+専用の安定したプロセスラインを持つ研究施設の利用が求められる。例えば、NTTの先端集積デバイス研究
+所は、結晶成長からク リーンルーム内でのデバイス作製、電気的特性評価に至るまで一貫し て行える環境を有
+し ており、共同研究や研究協力などを通じて、利用を推進する。
+シリコンフォ トニクスの光デバイス・光回路の試作やシリコンフォ トニクスをベー スにしたInPなどとの異種
+材料集積技術については、産業技術総合研究所の共用施設の一つであるスーパーク リーンルーム（SCR）の
+オープンパイロットラインなどが 利 用できる
+35)
+。これまでは45nm世代までの300 mmウェハのプロセスが
+可能であったが、さらに微細な構造の半導体デバイスの作製ができるように、2021年からプロセス装置の更
+新を行っ ており、先端ロジックのナ ノシート トランジスタの作製までも できるようになっ ている。シリコンフォ ト
+ニクスに関するプロセス技術は10年以上の実績があり、 文部科学省の先端融合プログラ ムでの 「光ネッ トワー
+ク超低エネルギー化技術拠点（VICTORIES） 」や、技術研究組合光電子融合基盤技術研究所（PETRA）
+などによるNEDOのプロジェク ト「超低消費電力型光エレク トロニクス実装システム技術開発」などで多くの
+成果を出し ている。また、最近ではPETRAが受けているNEDOの委託業務「高効率・高速処理を可能とす
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）26
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 37 =====
+るAIチップ ・次世代コンピューティ ングの技術開発/次世代コンピューティ ング技術の開発」 のプロジェク ト 「異
+種材料集積光エレク トロニクスを用いた高効率・高速処理分散コンピューティ ングシステム技術開発」での利
+用もあり、異種材料集積技術を蓄積し ている。また、産業技術総合研究所には、2025年度から光電融合研
+究センターが発足し、 光電融合パッケージ、 光電融合評価技術、 シリコンフォ トニクス、 光演算技術、 光スイ ッ
+チのシステム応用、などの研究開発が進められている。光デバイス・モジュールの研究開発を行う研究者は、
+光電融合技術を広く開発する光電融合研究センターと幅広い意見交換を行ったり、新たな光データ通信技術
+の実用化に対するア ドバイスを受けたり、共同研究・研究協力などを行ったりするこ とも期待される。
+光デバイスの設計や高速動作の評価などにおいても、充実した設備を有する研究機関や共用施設の利用が
+重要と考えられる。光デバイス設計、光回路設計においてはARIM-SETIの拠点の利用が考えられる。また、
+光デバイスを高速に動作させるには、GHz以上の高周波に対応する高速な電子デバイス・電気回路も必要で
+あり、その高速デバイス設計・回路設計には東京大学のシステムデザイン研究センター（d.lab）
+36)
+の利用も
+有効である。高速動作の光デバイス、高速電子デバイス特性評価については、高周波の測定装置や部品など
+が非常に高価なこ とから、これらの装置が充実し ている産業技術総合研究所やNICTなどとの共同研究・研
+究協力を通し て、評価装置を利用するこ とも考えられる。
+4.5 日本の強みを活かした海外連携、人材育成
+2.1節の問題点で述べたように、現在の光データ通信技術関連のビジネスや技術開発は、日本国内だけで
+行う こ とはできず 、海外との連携が不可欠になっ ている。光データ通信分野における日本の最大の強みは、
+InP系を中心とする光デバイス、特に、DCなどで使われるハイエン ドデバイスに関連した技術力と市場シェア
+にある。この強みを継続しながら、それを最大限に利用した海外連携の方策に関し ては、時間軸の異なる二
+つの道筋がある。
+一つは、未来のネッ トワーク/光デバイスを見据えた、アカデミアを中核とした国際的連携・融合的研究開
+発プロジェク トの推進である。連携先とし ては、日本とは異なる技術領域で強みを有する国が考えられ、互い
+に技術を補完し効率的な研究開発ができるこ とが望ましい。現在のネッ トワークアーキテクチャーや、ネッ ト
+ワークシステム・デバイスの自然な発展の先にない新しい概念や手法の検討など、企業が現時点で着手する
+には不確定性やリ スクの大きなテーマが広く扱われるこ とが期待される。そのような研究・開発を支援する各
+国共同の資金提供・研究支援・人材交流体制の構築が望まれる。
+もう一つは、現在の光デバイスの強みを梃に、世界を先導しながらわが国のICT産業を発展させる構造の
+構築である。これには、基盤とし てのアカデミアの参画が必要なこ とは言うまでもないが、ビジネスを担う産
+業界の戦略的活動が欠かせない。2.1節の図2-2のように、今後のDC技術の仕様をハイ パー スケーラーが決
+定し、システム・デバイスベンダーが追従するような構造を打破し、対等なエコシステムパートナーへ転換す
+るための議論を進める必要がある。
+例えば、以下などが考えられる。
+● 影響力の強いInP技術を「部品」から「プラッ ト フォームの核」へ昇華させるために、シリコンフォ トニ
+クスとInPを統合するための「接合技術・インター フェー ス規格」を日本主導でブラックボックス化、あ
+るいは標準化することを目指す。
+● 国内に半導体チップのパッケージングなどを行う後工程の部材・機器のリーディ ングカンパニーが多く存
+在するこ とを生かし、 チップ単体の性能勝負（前工程）から、光と電気を統合する「パッケージング（後
+工程） 」へ勝負の土俵を広げる。
+4.2節で述べたコンソーシア ム構築においては、海外企業を含めた同志を多く集めていく こ とも重要な取り
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 27
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 38 =====
+組みである。
+国際連携の中での人材育成については、 「日本で育てて日本に留める」戦略だけでなく、例えば、 「日本の
+InP光デバイス物理の深さ」と「海外のシステム設計・シリコンフォ トニクスのスピード」の両方を知る人材
+を意図的に育成するための、 人材循環の仕組みを構築するこ とも有効である。そう した人材が両国の間を「ブ
+リ ッジ （橋渡し） 」 とし て行き来できるキャ リアパスを設計できれば、 わが国の強みを生かしながら、 科学技術・
+産業においても中心的な役割を果たし続けるこ とが現実的なものとなる。
+4.6 研究開発の時間軸
+この分野におけるこれまでの研究開発の歴史は付録 3に記載し ているためここでは省略するが、その後の段
+階においては、これまでに個別に開発されてきた要素技術を統合し、社会実装を見据えた試作・実証フェー
+ズへ移行し、継続的な発展を図るこ とが求められる。
+研究開発の時間軸を図4-4に示す 。現在各技術レイ ヤーで進められている研究開発については、既に投じ
+られている資金を使いながらそれぞれの目的の達成を目指す。同時に、本プロポーザルにある技術レイ ヤー間
+連携を前提とした新規プロジェク トの設計と適切な規模のファンディ ングを目指す 。技術レイ ヤーごとに異な
+る種類のファンディングがなされてきた歴史に縛られず、関係府省・ファンディング機関の緊密な連携の元で
+遂行されていく べきである。これまでに個別に開発されてきた要素技術を統合し、社会実装を見据えた試作・
+実証フェー ズへ移行し、継続的な発展を図るこ とが求められる。
+
+図4-4 　 研究開発の時間軸
+研究開発の環境整備に関し ては、アカデミアのコミュニティ形成や産学連携コンソーシア ム形成に取り組む
+べきである。活動主体は4.1節と4.2節に述べたように各学会の研究会や関連企業であるが、その開始に際し
+ては、特定のファンディ ングプログラ ム内での活動を利用するこ とも可能である。国内の意識がある程度統一
+できた段階で、その活動主体を窓口とした海外機関連携を図るこ とも有効である。わが国の研究開発や産業
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）28
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 39 =====
+の強みを維持し、国際的なエコシステムに参入し ていく際にも、ある程度大きな単位での活動が望ましい。
+共用研究施設の利用に関し ては、既存施設の最大活用を行い、そこで不足し ている設備・機能についての
+コンセンサスを作るこ とで、随時設備拡充を行っ ていく。その議論を行う場とし てコミュニティ・コンソーシア
+ムを活用していくことが考えられる。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 29
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 40 =====
+【参考文献】
+ 1
+） EPOCH AI,
+“AI Models”, https://epoch.ai/data/ai-models, (2026年3月4日アクセス)
+ 2
+） AI
+ New Updates,“【Breaking News】Google DeepMind CEOが発表、2025年6月の月間トー
+クン処理量が980兆を突破”, https://aiupdate.blog/google-deepmind-980-trillion-tokens-
+processed-june-072925/、2026年3月4日アクセス
+ 3
+） Genesis Mission, https://g
+enesis.energy.gov/ (2026年3月4日アクセス)
+ 4
+） 文
+部科学省と米国エネルギー省（DOE）によるAI・HPC分野での協力強化に向けたStatement of
+Intent（SOI）の署名について, https://www.mext.go.jp/a_menu/kagaku/kokusai/kyoryoku/
+mext_00010.html (2026年3月4日アクセス)
+ 5
+） 国立研究開発法人科学技術振興機構研究開発戦略
+センター『調査報告書　AI時代を牽引する光デバ
+イス技術』(2025年3月),
+
+https://www.jst.go.jp/crds/report/CRDS-FY2024-RR-08.html (2026年3月4日アクセス).
+ 6
+） LightC
+ounting社Report “Cloud Datacenter Optics Report July 2024” pp.44～52.
+ 7
+） 武智勝
+、 「ECOC2025報告－ 光トランシーバ－」 、電子情報通信学会 LQE研究会、信学技報
+LQE2025-68 p.13、2025年12月
+ 8
+） IO
+WN：NTTグルー プの取組み, https://group.ntt/jp/group/iown/ (2026年３月3日アクセス).
+ 9
+） IEDM2025 F
+ocus Session Silicon Photonics for Energy Efficient AI Computing,
+
+https://iedm25.mapyourshow.com/8_0/sessions/session-details.cfm?scheduleid=35 (2026
+年
+3 月 4 日アクセス ).
+ 1
+0） F
+ORTUNE BUSINESS INSIGHTS “DATA CENTER MARKET SIZE & SHARE” , Source:
+https://www.fortunebusinessinsights.com/data-center-market-109851, https://www.
+fortunebusinessinsights.com/data-center-market-109851 (2026年3月4日アクセス).
+ 11
+） F
+ORTUNE BUSINESS INSIGHTS , “DATA CENTER FABRIC MARKET OVERVIEW”, https://
+www.fortunebusinessinsights.com/data-center-fabric-market-110242”, https://www.
+fortunebusinessinsights.com/data-center-fabric-market-110242 (2026年3月4日アクセス).
+ 12
+） F
+ORTUNE BUSINESS INSIGHTS ,” KEY MARKET INSIGHTS”,
+
+https://www.fortunebusinessinsights.com/optical-transceiver-market-108985”,
+https://www.fortunebusinessinsights.com/optical-transceiver-market-108985 (2026年3月
+4
+日アクセス ).
+ 13
+） V
+oyant Photonics社, https://voyantphotonics.com/ (2026年1月3日アクセス)
+ 14
+） A
+vea社, https://www.aeva.com/　(2026年1月3日アクセス)
+ 15
+） LightlC
+Technologies社, https://en.lightic.tech/ (2026年1月3日アクセス)
+ 1
+6） Zhang,
+ Y., Liu, X., Yang, C. et al. Direct tensor processing with coherent light. Nature.
+Photon. (2025). https://doi.org/10.1038/s41566-025-01799-7
+ 17
+） Lightmatter
+社, https://lightmatter.co/ (2026年1月3日アクセス)
+ 18
+） NTT
+技術ジャーナル 「光デバイスによるリザーバコンピューティ ングの物理実装」
+https://journal.ntt.co.jp/article/18595 (2026年1月5日アクセス)
+ 19
+） P
+siQuantum社, https://www.psiquantum.com/technology (2026年1月3日アクセス)
+ 20
+） X
+anadu社 “Building quantum computers using photonics” ,
+
+https://www.xanadu.ai/photonics (2026年1月3日アクセス)
+ 21
+） WBC Photonics
+社 “High Brightness Diode Laser Solutions”,
+
+https://www.wbcphotonics.com/en/ (2026年1月3日アクセス)
+ 22
+） R
+ockley Photonics社 “Real-Time, Non-Invasive Biomarker Sensing on the Wrist”,
+
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）30
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 41 =====
+https://rockleyphotonics.com/wp-content/uploads/2022/12/Rockley-Photonics-
+Biomarker-Sensing-on-the-Wrist.pdf (2026年1月3日アクセス)
+ 2
+3） 産業技術総合研究所電子光技術部門
+ 光センシンググルー プ, https://unit.aist.go.jp/riaep/group5.
+html (2026年1月5日アクセス)
+ 2
+4） NTT
+ 研究開発 「フォ トニック結晶とは ？光電融合型情報処理技術が求められる背景と研究内容」
+https://www.rd.ntt/basic_research/0001.html (2026年1月5日アクセス)
+ 2
+5） T
+omoki Ozawa, Hannah M. Price, Alberto Amo, et al., Topological photonics, Review of
+Modern Physics 91, (2019) 015006, https://doi.org/10.1103/RevModPhys.91.015006
+ 2
+6） L
+u, L., Joannopoulos, J. & Soljač ić, M. Topological photonics. Nature Photonics 8, (2014)
+821–829. https://doi.org/10.1038/nphoton.2014.248
+ 27
+） El-Ganain
+y, R., Makris, K., Khajavikhan, M. et al. Non-Hermitian physics and PT symmetry.
+Nature Physics 14, (2018) 11–19. https://doi.org/10.1038/nphys4323
+ 2
+8） H
+odaei, H., Hassan, A., Wittek, S. et al. Enhanced sensitivity at higher-order exceptional
+points. Nature 548, (2017) 187–191. https://doi.org/10.1038/nature23280
+ 29
+） IEEE IRDS: International R
+oadmap for Devices & Systems,
+
+https://irds.ieee.org/ (2026年1月5日アクセス).
+ 30
+） 応
+用物理学会 システムデバイスロードマップ産学連携委員会 (SDRJ),
+
+https://www.sdrj.jp/ (2026年1月5日アクセス).
+ 31
+） 文部科学省
+マテリアル先端リサーチインフラ（ARIM）,
+
+https://nanonet.go.jp/ (2026年3月4日アクセス).
+ 32
+） 文部科学省 ARIM
+半導体基盤プラッ ト フォーム
+https://nanonet.go.jp/seti/ (2026年3月4日アクセス).
+ 33
+） 国立研究開発法人科学技術振興機構研究開発戦略
+センター『戦略プロポーザル　フィ ジカルAI システ
+ムの研究開発～身体性を備えたAI とロボティ クスの融合～』 （2025年5月）,
+
+https://www.jst.go.jp/crds/report/CRDS-FY2025-SP-01.html (2026年3月4日アクセス).
+ 34
+） NIMS 物質
+・材料データベー ス（MatNavi）, https://mits.nims.go.jp/ (2026年1月5日アクセス).
+ 35
+） 産業技術研究所：研究装置
+の利用について,
+
+https://www.aist.go.jp/aist_j/business/alliance/orp/index.html (2026年1月5日アクセス).
+ 36
+） 東京大学 d.lab, https://www.dlab.t.u-tok
+yo.ac.jp/ (2026年1月5日アクセス).
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 31
+研究開発の推進方法および時間軸
+4
+
+===== PDF_PAGE 42 =====
+付録1 検討の経緯
+CRDSでは、 本プロポーザル発行に先立ち、 2025年3月に調査報告書 「AI時代を牽引する光デバイス技術」
+を発行した。
+2025年1月に本戦略プロポーザルの検討チームを立ち上げ、付録2に示すワークショップ開催などを経て
+発行に至った。この間、専門家へのヒアリ ングを多数実施し、検討の参考とした。
+● 専門家へのヒアリング
+（五十音順、敬称略、所属・役職は実施時点）
+天野建
+ 産業技術総合研究所　光電融合研究
+センター センター長
+天野英晴
+ 東京大学 大学院工学系研究科附属
+システムデザイン研究センター 特任研究員
+植之原裕行
+ 東京科学大学 総合研究院未来産業技術研究所 教授
+R
+yohei Urata
+ Google Inc., Platf
+orms Optics Group, Principal Engineer/Director
+川島正久
+ NTT
+株式会社 IOWN推進室 IOWN技術ディ レクタ
+川西哲也
+ 早稲
+田大学 理工学術院 教授
+工藤知宏
+ 東京大学 大学院工学系研究科 教授 / 理化学研究所 情報統合本部 理事長特別補佐
+鯉渕道紘
+ 国立情報学研究所
+アーキテクチャー科学研究系 教授
+佐藤健一
+ 名古屋大学 名誉教授、産業技術総合研究所招聘研究
+員
+白尾瑞基
+ 三菱電機株式会社 情報技術総合研究所　主席研究
+員
+高井厚志
+ LitAhead C
+onsulting　代表
+高野了成
+ 産業技術総合研究所
+インテリジェン ト プラッ ト フォーム研究部門 総括研究主幹
+高橋亮
+ 情報通信研究機構 新世代
+ネッ トワーク研究センター 上席研究員
+竹中充
+ 東京大学 大学院工学系研究科 教授
+種村拓夫
+ 東京大学 大学院工学系研究科 教授
+富澤将人
+ NTT
+イ ノ ベーティ ブデバイス株式会社 代表取締役副社長
+那須秀行
+ 古河電気工業株式会社
+フォ トニクス研究所 フェロー
+並木周 産業技術総合研究所
+プラッ ト フォームフォ トニクス研究センター 研究センター長
+西山伸彦
+ 東京科学大学 工学院 教授
+丹羽正昭
+ 東京大学 大学院工学系研究科附属
+システムデザイン研究センター 上席研究員
+乗木暁博
+ 産業技術総合研究所 光電融合研究
+センター 光パッケージング研究チーム長
+松尾慎治
+ NTT
+先端集積デバイス研究所 フェロー
+水谷健二
+ 産業技術総合研究所 光電融合研究
+センター
+
+研究チーム長
+山中直明
+ 慶應義塾大学 未来光
+ネッ トワークオー プン研究センター センター長
+横田理央
+ 東京科学大学 総合研究院
+スーパーコンピューティ ング研究センター　教授
+横山士吉
+ 九
+州大学 先導物質化学研究所 教授
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）32
+検討の経緯
+付録
+1
+
+===== PDF_PAGE 43 =====
+付録2 科学技術未来戦略ワークショップ報告
+本プロポーザルの作成に先立ち、提案内容について有識者と議論するためのワークショップを開催した。
+以下にワークショップの概要と開催趣旨、プログラ ム、趣旨説明、話題提供（8件） 、総合討論、参加者につ
+いて記載する。
+1．ワークショップの概要と開催趣旨
+題名：科学技術未来戦略ワークショップ　未来のAI計算システムを支える光データ通信技術
+ 日
+時：2025年11月29日（土曜日）10 ： 30～17 ： 20
+場所：
+ 国
+立
+研究開発法
+人
+科学技術振興機構（JST）東京本部別館2階セミナー室
+
+およびオンライン（Zoom）
+主催：国
+立
+研究開発法
+人
+科学技術振興機構（JST） 研究開発戦略センター（CRDS）
+JST CRDS は、科学技術に求められる社会的・経済的なニー ズを踏まえ て、国とし て重点的に推進すべき
+研究領域や課題を抽出し、その推進方策に関する戦略提言を行っ ています 。その一環とし て、 「未来のAI計
+算システムを支える光データ通信技術」について、昨年度より検討を進めてまいりました。
+生成AIの登場等により、データセンター（DC）は大容量データを処理するための大規模化が求められ、
+計算能力の向上と ともにデータ通信の高速・大容量化が同時に進められています。また、データ通信は、DC
+と外部との間よりもDC内部でのデータ転送が大半を占めるようになっ ており、DCの大規模化・高性能化の
+ボトルネックとなりつつあります。このため、サーバーラック間だけでなく、ラック内、演算ユニットとメモリー
+間などの短い距離の通信においてもその性能向上が不可欠になっ ています 。しかし、従来の電気配線では高
+速化による伝送損失と消費電力増大の問題で、飛躍的な性能向上が困難になっ ており、これらの問題が少な
+く高速・大容量のデータ転送が可能な光データ通信技術が重要になっ ています 。すでにサーバーラック間で
+は光データ通信が取り入れられていますが、ラック内などでの性能向上や小型化・高密度化の要求に対し ては、
+現状の光デバイス・材料技術の単なる延長では応えられない可能性があります 。これらの解決には、DCの
+ネッ トワークアーキテクチャーの方向性を見据え て、新しい光物性・新材料の適用や異種材料集積などの光
+デバイス・材料技術や光モジュール技術の研究開発が重要になると考えられます。
+このような問題認識を踏まえ、 「未来のAI計算システムを支える光データ通信技術」に関する戦略提言に
+向けて科学技術未来戦略ワークショップを開催します。ここでは、DCのネッ トワークアーキテクチャー、光モ
+ジュールとそのブレークスルーを支える光デバイス・材料技術の動向などを基に、今後の研究開発の方向性、
+取り組むべき研究開発課題、およびその推進方法について議論します。
+本ワークショップは非公開とさせていただきますが、議論の内容は報告書とし て纏めCRDSのwebサイ ト
+上で一般公開させていただく と共に、今後の施策や提言書作成の参考にさせていただきます。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 33
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 44 =====
+2．プログラム
+開会挨拶：魚崎 浩平（JST-CRDS）
+趣旨説明：魚見 和久（JST-CRDS）
+【第一部：DCのネッ トワークアーキテクチャーの動向】
+データセンター/AIスーパーコンピュータを革新する
+光 スイッチネットワ ー ク ・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・ 佐藤 健一 （名古屋大学）
+光×コンピューティ ング 、結合網への期待 ・・・・・・・・・・・・・・・・・・ 鯉渕 道紘（国立情報学研究所）
+【第二部：DCの光モジュールの動向】
+データセンター内 電気/光インターコネク ト技術 ・・・・・・・・・・・・・・・ 高橋 亮（情報通信研究機構）
+IOWN構想における光電融合の役割 ・・・・・・・・・・・ 布谷 伸浩（NTTデバイスイ ノ ベーションセンタ）
+光電融合、光電コパッケージ、等 ・・・・・・・・・・・・・・・・・・・・・・ 天野 建（産業技術総合研究所）
+【第三部：光デバイス・材料・集積技術の動向】
+今こ そ化合物半導体～シリコンフォ トニクスから
+シリコンプラットフォームフォトニクスへ～ ・・・・・・・・・・・・・・・・・・・ 西山 伸彦（東京科学大学）
+シリコンフォ トニクスにおける高速変調器と今後の展望 ・・・・・・・・・・・・ 馬場 俊彦（横浜国立大学）
+未来を創造する電気光学材料と光変調器 ・・・・・・・・・・・・・・・・・・・・・・・ 横山 士吉（九州大学）
+【総合討論】 フ
+ァシリテーター： 曽根 純一（JST-CRDS）
+閉会挨拶：魚崎 浩平（JST-CRDS）
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）34
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 45 =====
+3．趣旨説明
+ 魚見和久 （JST-CRDS）
+今回のワークショップのタイ トルは広い範囲の技術を含んでいるが、当初は光デバイスという視点から検討
+し ていた。しかし、どのような位置付けで光デバイスを開発するのか、将来はどのようにすべきかなどを考慮
+する必要があるため、このように将来のシステムまで考えるようなタイトルにしている。ここにはアカデミアか
+ら、国研、企業までの有識者が集まっ ているので、アカデミアにどのように展開できるかなど様々な視点から
+議 論してもらいたい 。
+まず 、今回のワークショップの目的と構成を簡単に説明する。 CRDSではこれまで有識者インタビューなど
+から、データセンター（DC）ネッ トワークアーキテクチャー、光モジュール技術、光デバイス、材料･集積
+技術の研究開発課題や推進方法などに関する仮説を作成し ており、その検証を行うのがこのワークショップの
+大きな目的である。話題提供とし て、ネッ トワークのアーキテクチャーの動向、光モジュールの動向、光デバ
+イス・材料・集積技術の動向について紹介し ていただき、その後に総合討論とし て、仮説の検証と今後の推
+進策に関して議論したい。
+現状認識とし ては以下のように考え ている。AIの進展が著し く、DCではそのデータ処理能力の増強に向け
+て、演算能力向上やメ モリーおよびデータ通信の高速・大容量化を加速し ている。特に、データ通信におい
+ては、サーバーラック間だけでなく、ラック内や演算ユニッ ト とメ モリー間などの短距離通信においても、そ
+の性能向上が不可欠になっ ている。しかし、電気配線では高速化による伝送損失と消費電力の増大が顕在化
+し、性能向上が困難になっ てきている。このため、フロン トエン ドネッ トワークのサーバーラック間通信に適
+用されはじめてきた高速大容量の光データ通信技術が、短距離通信においても今後重要になっ ている。
+DCの光データ通信技術の研究開発動向を図 S2-3-1に示す。ネッ トワークのアーキテクチャーでは、 光デー
+タ通信技術に対する要求がGoogleやNVIDIAで異なっ ており共通のロードマップは無いが、今後も高速化
+の要求がある 。光モジュールでは、光デバイスと集積回路を一つのパッケージに実装するCPO（Co-
+Packaged Optics）の開発がNVIDIAやTSMCなどで進ん でいる。光デバイス・材料では、インジウム リ ン
+（InP）やシリコンフォ トニクス（SiPh）の単独技術ではさらなる高性能化が困難になりつつあり、これらの
+技術と新材料を含めた異種材料集積の研究が盛んになっ ている。このような研究開発動向については、
+CRDSの調査報告書「AI時代を牽引する光デバイス技術」
+1
+に詳細に記載している。
+図 S2-3-2に上述した現状認識から見え てきた3つの主な問題点を示す。 AIの進展に対し て、DCのネッ ト
+ワークの構成が今後どのように進化し ていくのか、将来のネッ トワークアーキテクチャーが明確にはなっ てい
+ないこ とや、電気配線によるインターコネク ト技術ではさらなる性能向上が期待できないこ とがある。また、
+光データ通信技術においても、現在の光デバイスの単なる延長線上では次世代DCの性能要求に答えるこ と
+が難し く なっ てきている。さらに、日本の問題とし て、DCシステムの将来動向の把握が難し く なっ ているこ と
+や、技術開発の明確な指針がないこ となどにより、この応用分野における光モジュールや光デバイス技術の研
+究開発力が低下し ていく おそれがある。
+1 国立研究開発法人科学技術振興機構研究開発戦略 センター 『調査報告書　AI時代を牽引する光デバイス技術』 （2025年3月） ,
+https://www.jst.go.jp/crds/report/CRDS-FY2024-RR-08.html （2026年3月4日アクセス）.
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 35
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 46 =====
+図S2-3-1　DCの光データ通信技術の研究開発動向 図S2-3-2　現状認識から見え てきた問題点
+これらを踏まえ、日本における光データ通信技術の研究開発戦略についてのCRDSで検討中の仮説を図
+S2-3-3に示す 。1番目は、 「DCのネッ トワークアーキテクチャー技術と光データ通信技術の研究開発を戦略
+的に連携させるこ とで、ネッ トワーク性能のボトルネック問題を解決できるのではないか」という仮説である。
+2番目は、 「新しい光物性や新材料の適用などにより、桁違いの性能向上や新概念の光デバイスを実現し、高
+性能化の壁を乗り越えられる」である。3番目は、 「日本が強い光デバイスや材料技術を生かせるように、 様々
+な技術レイ ヤーの研究者・技術者の連携（上位レイ ヤーの動向把握、人材育成、国際連携など）を含めた研
+究開発エコシステムを構築するこ とで、日本の光モジュールの技術や光デバイスの技術力を堅持できるのでは
+ないか」である。
+図S2-3-3　検討中の仮説 図S2-3-4　具体的な研究開発課題
+次に行うべき具体的な研究開発課題を図 S2-3-4に示す 。ここでは、ネッ トワークアーキテクチャー、光モ
+ジュール、光デバイス、材料・集積技術の4つの技術レイ ヤーに分けて記載し ている。ネッ トワークアーキテ
+クチャーの研究開発では、スケーラブル、フレキシブル、超多数並列処理などが必要と考え ている。これらを
+支え ていくのが超高速・大容量の光モジュール技術であり、現在進められている光電融合技術、CPO（Co-
+Packaged Optics） 、IOWN（Innovative Optical and Wireless Net-work）などの次の技術開発が求め
+られる。また、桁違いな性能向上が可能な構造や、光の並列性を生かした新概念のデバイスなどの革新的な
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）36
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 47 =====
+光デバイスの研究開発も重要である。さらに、これらの光デバイスを支える材料や集積技術の研究開発とし て、
+非線形光学効果の大きな材料など光物性的に優れた材料の開発、光デバイスへの利用、それらの集積化技術
+（異種材料集積技術）が必要になる。
+図S2-3-5　研究開発の推進方法
+図 S2-3-5に研究開発の推進方法を示す。主な推進方法とし ては、多様なバックグラウン ドの研究者の協力
+によるコミュニティの形成、技術レイ ヤーを跨ぐ産学連携のコンソーシア ムによる研究開発ロードマップ作成、
+10年程度先を見据えた技術レイ ヤー間連携のプロジェク ト推進、大規模な拠点・共有設備の活用、日本の
+強みを生かした海外連携、人材育成などを考え ている。光デバイスと光モジュール技術については電子情報
+通信学会などで連携し ているが、材料や集積技術、上位レイ ヤーのネッ トワークアーキテクチャーなどとの密
+な連携が必要になると考えている。特に、ネッ トワークアーキテクチャーとの間には大きなギャップがあり、シ
+ステム側からの要求や課題の共有などを行う とともに、技術レイ ヤー間を連携するようなプロジェク トの推進
+などが重要になる。これらの推進策を行う こ とで、今後のAIインフラの充実やデータ科学の進展に貢献でき
+ると考えている。なお、この図の下部には現在のDCの光データ通信ビジネスのエコシステムを表し ている。
+DCで使われているInP系の光デバイスはまだ日本が強いため、 DCに必要な技術のロードマップが日本のメー
+カーにも共有されているが、他の技術や他国の技術の進捗状況によっ てはこの構造が変わる可能性もある。
+このため、今後も日本独自の革新的な技術を継続し て発信し、海外連携研究開発のエコシステムの一角を占
+めることが 重 要だと考えている。
+以上述べてきたCRDSの仮説、研究開発課題、推進方法関し ては、総合討論で議論する。また、話題提
+供者とコメ ンテーターには以下の3つについて事前にアンケートを送り回答を得ているので、これらも参考に、
+様々な視点での意見を伺いたい。
+①今後のAI技術の進展に対するDCの大規模化・高性能化のボトルネック となるデータ通信技術の問題
+②
+ DC
+のネッ トワークアーキテクチャーの方向性を見据え て、今後の光データ通信技術の研究開発テーマと
+方向性
+③ 光
+データ通信技術の国際的な技術力・競争力強化へ向けて、推進するために必要な産業界を含む仕組
+み・体制・方策
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 37
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 48 =====
+4．話題提供
+4.1 デー タ セ ン タ ー/AIス ーパー コ ン ピ ュ ー タ を革新す る 光ス イ ッ チ ネ ッ ト ワ ー ク
+ 佐藤 健一（名古屋大学名誉教授・産業技術総合研究所招聘研究
+員）
+まずは、AIデータセンターの急速な拡大とネッ トワークの課題に関し て議論をする。 AIが要求する計算性
+能は年間約5倍で増加し ているが、電気技術の電力効率の改善ペー ス（年間約1.3倍）では追いつかず 、深
+刻なギャ ップが生じている。このギャ ップを埋めるため、GPUを大規模に増やすパラレリ ズム（並列処理）
+に依存せざるを得ない。しかし、GPU数の増加に伴い、従来の電気スイ ッチによるネッ トワークは性能とコス
+トの両面でボトルネック となり、 「フェー ズチェンジ」という構造的課題に直面し ている（図 S2-4-1-1） 。例え
+ば、次世代ラックの消費電力は600kWに達すると予測されており、電力と排熱の制約は電気技術の物理的
+限界を示し ている。AIの進化を持続させるには、ネッ トワークアーキテクチャーの抜本的な見直しが不可避で
+ある。
+
+図S2-4-1-1　　　 A I ク ラ ウ ドのHost (XPU) 数の拡大に伴いイ ン ター コ ネク ト数、
+スイッチ 数 は 非 線 形 に 増 加
+次
+に光スイ ッチがもたらす優位性に関し て述べる。光スイ ッチ技術は、以下の様に、電気の限界を克服する
+最も有望な解決策である（図 S2-4-1-2） 。
+● 低消費電力とコス ト効率：電気スイ ッチと比べ極めてエネルギー効率が高く、ネッ トワーク全体の消費電
+力を約7割削減する試算がある。また、トランシーバー数を大幅に削減できるため、優れたコス ト効率を
+実現する。
+● シンプルな拡張性：GPU間を直接接続する「ワンホップ接続」を可能とし、スイ ッチ数が非線形に増加
+する課題を直接的に解消する。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）38
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 49 =====
+図S2-4-1-2　　　AIデータセンターネッ トワークへの光スイ ッチ技術の展開
+さらに、シリコンフォ トニクスによる光スイ ッチに関し て議論する。光スイ ッチの実装方式において、現行の
+3D MEMS方式はスイ ッチング速度がミ リ秒単位と遅く、拡張性にも限界がある。これに対し、次世代のシリ
+コンフォ トニクス方式は、マイ クロ秒単位の高速切り替えが可能であり、波長と空間の組み合わせにより大規
+模なポート数を構築できる（図 S2-4-1-3） 。この性能は、将来のAIデータセンターが求める技術的要件と一
+致し ており、主流となるポテンシャルを秘めている。さらに光技術は、GPUチップと光部品を統合するコパッ
+ケージド・オプティ クス（CPO）とし て、GPU間広帯域インタコネク ト ド メインの銅線ボトルネック（スケー
+ルアップ）にまで適用範囲を深化させている。光技術への移行は、AIの進化を持続可能にするための必然で
+あり、特にシリコンフォ トニクス基盤の光スイ ッチが未来のAIデータセンターを支える中核技術となる。
+図S2-4-1-3　　　異なる次元の組合せを利用した提案スイ ッチの利点
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 39
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 50 =====
+まとめ
+企業の株価時価総額において、データコム関連企業が上位を独占し ている。データコムへの投資額が増え
+ており、世界の通信・IT業界において、多くの技術者がテレコムからデータコムへと移動し、その結果、光
+通信関連技術の開発もデータコムが主導し ている状況にある。一方、日本においてはデジタ ル赤字が拡大し
+ており、原油の輸入量に匹敵する。データコムの開発においては、従来の（国際）標準化からオー プンエコ
+システム・マルチソー スアグリーメ ン トが重要視される状況にあり、これにどう対処するかが日本の課題である。
+【質疑応答】
+Q ： デ
+ジタル赤字とは何か？
+A ： ハ
+ードウェアだけでなく、サービス、ライセンスなども含めた赤字
+Q
+ ： 光
+スイ ッチの速度が上がると頻度も増えそうだが、アーキテクチャーに影響はあるか ？
+A ： 速度
+と頻度は1対1ではないが、小さなフローも送るこ とができるようになる。つまり光領域で送れる
+トラフィ ックが増える。スイ ッチング速度が遅いと、トラフィ ック変動の小さな上位のレイヤーでしか使
+うことができない。
+Q
+ ： 提案
+されているものはSlow and Wideにも対応できるのか ？
+A ： 大
+きなフローはサーキッ ト スイ ッチで送るのが良いが、小さなフローを送るのには電気の方が適し てい
+る。帯域の小さなものは電気で十分で、全てを光で置き換える必要はない。
+Q
+ ： 近距離
+ではマイ クロLEDを使うのか ？
+A ： 今
+回の話では、フロントエンドやスケールアウ トの大きなところが対象。小さいところは別の話で、そ
+こでは光源もいろいろ考えられる。
+Q
+ ： OCS
+では今はMEMSを使っ ているとのこ とであるが、パケッ ト交換を目指すのか ？
+A
+ ： μ
+Sec、用途に応じてnSecを狙っ ているが、パケッ ト交換ならもっと早く ないといけない。ある程度の
+大きさのフローを考え ている。光メ モリーは現実的で無いので、光パケッ ト交換は考え ていない。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）40
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 51 =====
+4.2 光×コンピューティ ング：結合網への期待
+ 鯉渕 道紘（国立情報学研究所）
+大規模計算
+システムにおいて、通信性能がボトルネックになるというのは直感的に分かるこ とである。その
+こ とについて、計算機システムの立場から、まずは追認したい。
+プロセッサがメニーコア化する。つまり、並列計算をするこ とで、1つのチップの中において数百並列で動く。
+GPUを使う と数千並列以上で動く ため性能を稼げる。 CPU/GPUの性能は、まだまだ向上する。一方、ネッ
+トワークの性能は、 2030年までに頑張っ て4倍く らいで、 その差はますます広がる （図 S2-4-2-1） 。スルー プッ
+トだけではなく、エネルギーも問題である。演算自身のエネルギーと比べて、チップ内データ転送およびチッ
+プ間データ転送は桁違いのエネルギーを要する（図 S2-4-2-2） 。
+つまり、今のコンピュータは、エネルギー面では演算という よりもデータ移動が問題になっ ている。光通信
+技術の改善で問題が解決するのかという こ とが論点となる。
+図S2-4-2-1　通信性能の問題 図S2-4-2-2　通信エネルギーの問題
+光通信技術を計算システムのどこに率先し て入れていく べきか、難しい問いである。 GPU、CPUなどのプ
+ロセッサが複数搭載されており、これらはPCI-Expressバスを経由し て相互接続する場合と比べて、専用ネッ
+トワークを構成し て直接接続する方が通信性能面で有利である（図 S2-4-2-3） 。その結果、計算ノード内に
+多数の独立したネッ トワークが存在する複雑な状態となっ ている。近年のコンピュータの構造的な問題とし て、
+複雑化し てコス トがかかるという こ とがある。このコス ト とはデバイス単体の価格だけではなく、プログラマー
+の生産性やAIモデル自体も含まれる。従っ て、“通信をする際にはここがボトルネックになる”という こ とを考
+えながら計算をしなければならない。計算システムの複雑な通信ネッ トワークを何とかし て計算機から扱いや
+すいようにしたいと考え ている（図 S2-4-2-3） 。
+光通信技術に期待するものは、計算機システムを支えるというより計算機自体を大き く変革するこ とである。
+インフラ、計算、アプリケーションというのは基本的にはスパイラルである。つまり、良い計算機ができたの
+で良いAI計算ができた。そこで、それをさらに加速する計算機を作る。このスパイラルが非常に大事になっ
+てくる 。
+続いて、AIの進展により計算がどのように変わっ てきたかを概観する。昔は、大規模計算の典型例は物理
+シミュレーションで、理論を確認するために絶対に計算を間違え てはいけなかった。数値を高い精度、例えば、
+64ビッ ト、 128ビッ トで表現し て計算する需要が大きかった。今は、 精度よりもスルー プッ トが重要で、 16ビッ
+トで表現された数値で計算する、 あるいは固定小数点の8ビッ トの演算をするアプリケーションが台頭し ている。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 41
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 52 =====
+例えば、 32ビッ トの演算に比べて16ビッ トの演算にかかるハードウェア量が約4分の1で実現できるため、 チッ
+プあたりの計算スルー プッ トを向上させるこ とが可能である（図 S2-4-2-4） 。
+図S2-4-2-3　複雑な計算構造の解決 図S2-4-2-4　計算機自体を変革する
+通信デバイスは、もちろん重要な技術であるが、ネッ トワーク 、CPU、メ モリーのバランスが変わった場合
+にどのように設計し、どのようにプログラミングするのかといったことも考える必要がある。さらに、これまで
+コンピュータを作る時は1対1の通信をいかに速く するかを考え てきた。 AI対応のコンピュータでは、多対多
+の集合通信、それに計算をミ ックスしたような処理、これをいかに速く するかを考えるこ とも重要になる。大
+規模計算機システムにおいて、光サーキッ ト スイ ッチをどのように活用するのか。昔（20年ほど前）は、電気
+スイッチと光スイッチを完全にセパレートしたものを考えた。その後、小さいところを光スイッチで作ろうとい
+う第2世代を経て、 今（第3世代）は、 電気スイ ッチの間に光スイ ッチを入れるという構造が研究で主流になっ
+ている。
+AI対応の通信技術の一つが、アプロキシメイ ト（近似） ・ネッ トワークによるものであると思っ ている。
+“Imperfect is the New Perfect”という考え方に基づき、インパー フェク ト と言われてしまう ような10のマイ
+ナス6 乗から10 のマイナス8 乗ぐらいの精度のデバイスを活用できるようにする計算機を作れないかという研
+究を進めている。また、光電融合などの先進的な技術が真っ先に導入される計算デバイスとし てもFPGAは
+有望である。その点でFPGAを活用する通信の研究も進めている。通信性能が演算性能と比べて相対的に大
+きいFPGAにおいて、情報処理の基本であるデータの並び替え処理、ソートやサーチについて、ほとんど演
+算するこ となく データを動かすだけで高速に処理するような仕組みをすでに成果発表し ている。
+まとめ
+まず 、AI計算機システムにおいて、光通信の帯域とエネルギーの削減が重要である。そし て、光通信技術
+によっ てAI計算機を支えるという よりは、そもそも変革するところまでやるべきであると思う。そのためには、
+コミュニティ活動もきちんと推進するべきである。
+国内でも、富岳のように計算のためのネッ トワークは独自に作っ ている。 NVIDIAもNVLinkという門外不
+出の技術を自分たちで作って使っている。ネットワークは研究していく価値があるということであり、そこはま
+さしく光通信システムである。
+【質疑応答】
+Q
+ ： 現在
+の計算機アーキテクチャーでも、ある程度エラーを許容する方が有利なのか。
+A ： 場合
+に依る。 AIや、データ分類のような全体とし ての傾向が重要なアプリケーションの場合、有利に
+なる。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）42
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 53 =====
+Q ： 量子 コンピューティ ングについては、どのような見方をすればよいか。ある意味でエラーが多いが、と
+てつもないスルー プッ トを期待するようなアーキテクチャーへの移行も、将来的にはあり得るか。
+A
+ ： ご
+指摘いただいた点は、コンピュータキテクチャーの中で面白い点である。例えば巡回セールスマン問
+題。インパー フェク トな計算により、膨大な経路探索の途中で間違いが発生した場合、既に得られて
+いる良い経路解に戻れば良い。たく さん処理をし て、間違いながらもいいものを見つけながら行う処理
+に向いている。特に量子アニーラーで対象とし ている処理は、質の良い近似解を得るために誤りを許
+容して動かすという点で対象アプリケーションが近いと考えている。
+Q ： 光
+ネッ トワークを使うのであれば、わずかな時間かも知れないが、それをキャッシュ的に使い、もうメ
+モリーは必要ないというようなことはできないか。
+A
+ ： そ
+のようなデバイスがあれば、それを使う計算機システムの研究はチャレ ンジングだと思う。
+C ： コ
+ンピューティ ングネッ トワークは、土管化し て光が電気に対し てエネルギーで勝つ部分と、データセ
+ンターやラックの中で波長や光スイ ッチをうまく使う部分と、ハイブリッ ドになると思う。そのあたりの
+使い分けが重要。研究の対象とし ても、とにかく“安く速く”を優先し て距離を出せないデバイスも要
+る一方で、距離を出せるデバイスも要るということだと考えている。
+Q ： GPU
+とGPUを接続する際やGPUとメ モリーを接続する際は、例えば100 Gbpsの線1本で接続する
+方がいいのか、1 Gbpsの線100本で接続する方がいいのか。コンピュータキテクチャーの観点からい
+うと、どのような見方になるのか。
+A ： 計算機
+アーキテクチャーのレイ ヤーではどちら でも対応できるので、作りやすい方法で実現いただけれ
+ば良い。
+C ： そ
+こを分けるのは、ファイバーをどれだけ置けるかに依る。デバイスはある程度小さくできるが、ファ
+イバーのコアの太さが 125ミクロンだったり200ミクロンだったりして、それが全てを律速してしまう。
+そこを解決する新しい導波路がない限りは、なかなか変わっ ていかない。一番欲しいのは、ファイ バー
+というか、低損失で高密度な配線盤ではないかと思う。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 43
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 54 =====
+4.3 データセンター内 電気/光インターコネク ト技術
+ 高橋 亮（情報通信研究機構）
+現在
+のデータセンター内ネッ トワークは、Fat-TreeからClos構成へと進化し、AIサーバー導入により一層
+複雑化し ている（図 S2-4-3-1） 。フロン トエン ド、スケールアップ、スケールアウ ト各ネッ トワークは要求条件
+が大き く異なり、全体最適の観点から光デバイス・モジュールを設計する必要がある。特にスケールアップは、
+短距離ながら極めて大容量、高実装密度、低消費電力が求められ、加え て遅延およびPre-FEC BERに非常
+に厳しい制約が課される（図 S2-4-3-2） 。
+図S2-4-3-1　データーセンター内ネッ トワーク構成 図S2-4-3-2　AIネッ トワークの要求条件
+インターコネク トが光か電気かを議論する際、光も両端は電気である点を忘れてはならない。重要なのはエ
+ン ド・ツー・エン ドでの最適解である。現在、ラック内以下は電気、ネッ トワーク部は光という大別がなされ
+ており、光化の主対象は電気インターコネク ト領域である。距離を横軸、エネルギーを縦軸とした整理を図
+S2-4-3-3に示す。
+近年注目されるNPO/CPOではCEI-XSR/USRと呼ばれる短距離SerDes規格等で接続されるが、電気信
+号の伝送ロス差がSerDes負荷と消費電力に直結する。基板材料はFR-4からMEGTRONへと進化し、56
+Gbps/lane、112 Gbps/laneは対応可能となったが、224 Gbps/laneは困難であり、Twinaxを用いたフラ
+イオーバーケーブルが用いられている。200 Gbps/lane PAM-4ではパッシブで約2 mが限界で、ラック内
+要求（～5 m）を満たせないのが現状である。
+スケールアップでは特に厳しいPre-FEC BER（10-9 ）と低遅延が要求され、現状はCPC（Co-Packaged
+Copper）で対応し ている。細径であっ ても差動・シールド構造によりケーブルは太く なる。このCPCを将来
+CPOへ移行するこ とにより、ラック内での省電力化および電気ケーブルの煩雑さ解消が求められる。
+距離と消費電力の観点では、MR規格後にOEO変換が入るこ とで約25 pJ跳ね上がるが、10 m付近で光
+が有利となる（図 S2-4-3-4） 。 CPO（XSR接続）で4 pJ程度が実現できれば、クロスポイン トは数10 cm
+となり、ラック内への光導入が進む。ただしボード上ではコス ト優位な電気が依然有力である。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）44
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 55 =====
+図S2-4-3-3　電気インターコネク ト技術 図S2-4-3-4　Scale-up ～電気から光へ～
+フロン トエン ド側では距離が長く 、ファイ バー本数削減のため高速化が不可避である（図 S2-4-3-5） 。
+VCSELやシリコンフォ トニクスは100～200 Gbaud付近が限界であり、 高速化に伴うPDの感度低下（3dB
+以上）と光源電力増大が課題となる（図 S2-4-3-6） 。電気側ではDAC/ADC、SerDesの限界が顕在化し、
+BiCMOSやInP-HBT回帰は消費電力増大を招く。
+図S2-4-3-5　 F ront/Back-end
+～FPPからCPOへ～
+図
+S2-4-3-6　Front/Back-end ～高速化の課題～
+さらに200 Gbaud以降ではC-FEC導入によりDSP、イコライザが極めて重く 、遅延増大が問題となる。
+この回避策として「ファ スト・アンド・ナロー」 「スロー・アンド・ワイド」 「スロー・アンド・ワイダー」という
+設計思想が議論されている（図 S2-4-3-7） 。
+CPO実装は、シリコンフォ トニクス（MZM/リ ング） 、VCSEL、マイ クロLEDなど多様であり、リボンファ
+イ バー、イ メージファイ バー、バン ドル ファイ バー、マルチコアファイ バーの選択が実装密度を左右する。最
+高密度はマルチコアファイ バーであり、距離別整理を図 S2-4-3-8に示す 。フロン トエン ドや長距離用途では
+シリコンフォトニクス＋ SMF が適する。
+NICTの委託研究ではVCSEL＋シングルモード・マルチコア（16コア）により2 km伝送と高密度実装を
+実現し ており、スケールアウ ト/フロン トエン ド適用も可能である。一方、マイ クロLEDは現状10 m程度が
+限界であり、数10 m要求への対応が課題である。数10 cm以下は電気が依然優位である。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 45
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 56 =====
+図S2-4-3-7　CPOの設計方針 図S2-4-3-8　各CPOの適応領域
+まとめとし て、データセンター各ネッ トワークの要求を正確に把握し、光がどこまで入り得るか、CPOの分
+類・アーキテクチャーを踏まえた上で、光デバイス研究を進める必要があると考える。
+【質疑応答】
+Q
+ ： ス
+ロー・アン ド・ワイ ドは、過去にスキュー問題で失敗した手法ではないのか。
+A ： 指摘
+のとおりであるが、マルチコア構成によりスキュー問題は一定程度解決可能である。リボンファイ
+バーの場合はクロック組み込み型SerDesが必要となり、必ずしもクロック並列である必要はない。
+PCIeのようにクロック組み込みで数百並列は現実的である一方、HBM4のような2,000並列を光で
+実現するには、イ メージファイ バー等が必要となり難易度は高い。
+Q
+ ： ス
+キュー問題はどの程度の距離を想定し ているのか。
+A
+ ： 本
+スピード域では、1 m程度で限界に達する。
+Q
+ ： 350
+～400 Gbaudのマイ ルス トーンをどう考えるか。
+A
+ ： 議論
+が必要であるが、VCSEL＝マルチモードという従来常識は再考すべきである。VCSELとシングル
+モード・マルチコアの組合せにより、大容量かつ高密度伝送が可能となる。一方、高速化は電気側が
+既に限界に近く、HBT等を導入すると消費電力増大の懸念がある。またFECやイコライザの高度化は
+遅延増大を招き、重いDSPをCPO内に実装できるかが大きな課題である。
+Q
+ ： 高速化
+に対応したDSPは可能か。
+A
+ ： CPO
+にDSPを入れるこ と自体が本質に反する。高速化のボトルネックはSerDesとDACにあり、 高ボー
+レートでは低消費電力を維持するこ とが困難である。
+Q
+ ： 200 Gbaud
+付近が電気的にも電力的にも転換点になると考え てよいか。
+A ： そ
+の認識でよい。 FPPではC-FECとDSPで対応し ているが、CPOでは距離短縮により若干の余地が
+生まれる可能性がある。ただし、ECOCで議論されたとおりDACは大きな課題であり、長距離系では
+今後も高速化が不可避である。一方、データセンター内で同様の高速化が本当に必要かは再検討すべ
+きであり、近年はスロー・アン ド・ワイ ドを含む標準化議論が活発化し ている。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）46
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 57 =====
+4.4 IOWN構想における光電融合の役割
+ 布谷 伸浩（
+NTT株式会社 デバイスイ ノ ベーションセンタ）
+NTTが進める次世代のIT基盤であるIOWN（Innovative Optical and Wireless Network）構想を支
+えるネッ トワーク部分（APN, All-Photonics Network）と光電融合デバイス（PEC）の役割について紹介
+する。
+まず 、IOWN構想の狙いは先端技術による低消費電力、大容量・高品質、低遅延で、それぞれ目標値を
+掲げて研究開発を進めており、これらを充たすネッ トワークの構築で次世代のITインフラ基盤をつく り、サー
+ビスレイ ヤーとし て社会貢献をし ていきたいと考え ている（図 S2-4-4-1） 。
+
+図S2-4-4-1　　　NTTが進めるIOWN構想
+IOWN構想の進め方とし ては、2020年にNTTとインテル、ソニーが共同で国際的なフォーラム IOWN
+Global Forumを設立し、新規技術やフ レーム ワーク 、技術仕様、 リ フ ァ レ ンスアーキテクチャーの開発を行っ
+ている。現在、164 の企業、大学等がメンバーで、企業では国内外のテレコムベンダー、装置メーカー、光通
+信の部品メーカーなど物理のレイヤーから上のレイヤーまで含めて、いろいろなメンバーにご参加いただいてい
+る。 IOWN Global Forumでは、最初にホワイ トペーパーを出した後、世界各地で行っ ている会合で、技術課
+題 やユ ースケ ースについての 議 論 から必 要 な 技 術 課 題 を 抽 出して解 決していくという進 め 方 をしている。実 際 に、
+金融データセンター相互接続や放送ライブ・メディア制作、GPU 関係の AI などについて議論を進めている。
+APNについては、 海外のデータセンター間のAPN接続の事例を紹介する。2024年に英国と米国で約100
+キロ離れたデータセンター間を接続、 運用する実証実験を行ったほか、 日本と台湾で約3,000 km離れたデー
+タセンターをわずか1,000分の17秒の超低遅延で接続する実験を行った。実際に台湾のAIサーバーを使っ
+て処理したものを、また日本に戻す実証実験で、遅延が限りなく低く なるこ とを実証できた。このような伝送
+容量増大に伴っ て光の適応範囲が短距離化し ていく、また、電気伝送距離が最小化が必須になるこ とは、皆
+さんも課題とし てはご認識のとおりかと思う。
+そこで、NTTとし ては、光電融合の戦略をIOWNも1.0、2.0、3.0、4.0と、4つのステップで大体進めて
+いる。それに併せて、 光電融合デバイスも PEC-1、 2、 3、 4という ように進化をさせていこ う と考え ている（図
+S2-4-4-2） 。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 47
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 58 =====
+図S2-4-4-2　　　IOWN構想に沿ったNTTの光電融合戦略
+IO
+WN1.0はすでにAPNのサービスで使われており、PEC-1ではこの長距離光通信用にコヒーレ ン ト信号
+処理で使うDSPなどのデバイスを開発し てきた。性能（超長距離）を最優先したInPの変調器では、HB-
+CDM （High Bandwidth CDM） で64 Gbaud世代からInP変調器のパッケージの中にアナログのドライ バー
+回路を一緒に入れるこ とを始めた。電力を最優先したデバイスであるCOSA（Coherent Optical Sub-
+Assembly）では、電子部品と近接したBGAを用いた実装方式に対応できるような形にし ている。また、
+PEC-1の第二世代とし て、シリコンフォ トニクスにTIA、ドライ バー、DSPなどコヒーレ ン トデバイスをコパッ
+ケージ化する開発を進めてきた。
+PEC-2 の構想はディスアグリゲーティッド・コンピューティングで、従来のプラガブルシトランシーバとHost
+のPCBとの電気配線という構成を、スイ ッチのLSIと同じサブス トレート上に光のデバイスを載せて配線距離
+を短く し て電気のロスを少なく しよう し ている。実際に作った第一世代の光エンジンは、電気スイ ッチのLSI
+の基板の一枚下の基板に光エンジンを載せたもので、OIFの規格に基づいて実用化に向けて開発を行った。
+これは一つの光エンジンで3.2 Tbit/sの通信容量があり、16個並べて50 Tbit/sく らいのスイ ッチLSI＋CPO
+という形にし ており、先日まで行われた大阪万博で実証実験も行った。現在、第二世代とし て開発し ているの
+が、6.4 Tbit/sの光エンジンを16個並べて102 Tbit/sにする。
+PEC-3とし て2028年の実用化に向けて開発し ているのがInPメ ンブレ ン（薄膜）フォ トニクスデバイスで、
+光チップレッ トの形でパッケージ化し て実証実験を行っ ている。まだEICのドライ バー回路の関係で32
+Gbaud動作だが、このメ ンブレ ンデバイス自体は十分帯域が広いので、200 Gbaudく らいまでは耐えられる
+デバイスになると思っ ており、64 Gbit/s動作で実証実験を行っ ている。
+弊社のIOWN構想で既存インフラの限界を超えるという こ とで研究開発し ており、そういった中でAPNを
+やりながら、それを支えるデバイス技術という こ とで、光電融合デバイスの研究開発し ている。だんだん長距
+離から短距離化という こ とで、現時点ではパッケージ間通信、それから、ダイ間通信を見据えた光のデバイス
+開 発を行っている。
+【質疑応答】
+Q
+ ： 光
+電融合の技術を使って短くするというのではなく、それ自体を長いところでもアプリケーションを広
+げる意味でのデバイス・集積回路の開発はできないか ？
+A ： デ
+バイス単体での解決は難しいが、NTTではデバイス開発だけではなく ネッ トワークやサービスの研
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）48
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 59 =====
+究も行っているので、こうした研究所と連携し、ネットワークシステムとして考えるようにしている。
+Q
+ ： APN
+は、中継機を含め光ドライ バー周辺に多く ある電気回路を光化する意味ですか。
+A ： 例
+えばDSPや光デバイスの開発で、中継局なく なるべく長距離伝送するこ とを考え ている。ただ、光
+デバイスの駆動回路自体は電気にせざるを得ないところがあり、極力その配線距離は短く し ていこ う と
+は思う。
+C
+
+： エ
+ッジだけを装置にし て、中は全部光という こ とは絵的には書いている。
+Q
+ ： 長距離高性能
+と低電力高密度は別の優先度という こ とですか。
+A ： NTT
+では、長距離は数千kmのオーダーとなり、そのデバイスと、数百km以下く らいのデバイスは
+少し違う ソ リ ューションとなり、両方開発し ているこ とになる。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 49
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 60 =====
+4.5 産総研の研究戦略～半導体と光の融合を中心に～
+ 天野 建（産業技術総合研究所）
+本発表
+では、 産総研の研究戦略を、 半導体と光の融合を中心に紹介する。産総研はこれまでテレコム ・ デー
+タコムを研究し てきたが、次の世代とし て「コンピュータコム（光電融合） 」を考え ている。特に重要である
+のは、シリコンフォ トニクスにNVIDIAやBroadcomだけでなく、TSMCが参入したこ とであり、シリコンの
+巨大ファブが光電融合に取り組み始めたこ とだ。一方でこれまでの光企業が、外部光源（ELS： External
+
+Light Source）や光コネクタ 、ファイ バーといった狭い分野しか対象とし ていないこ とに産総研とし ては問題
+意識がある。
+消費電力の削減という観点では、半導体の微細化による削減効果（数%～20%）よりも、コパッケージ化
+（CPO：Co-Packaged Optics）の効果（～75%）にインパク トがある。また、経済産業省の「半導体デジ
+タ ル戦略」において、Step1のTSMC誘致、Step2のRapidusに続いて、光電融合はStep3に位置づけられ、
+世界を追い抜くことを目指している。
+産総研では2025年4月より、光電融合研究センターを設立した。先端半導体研究センターでRapidus等
+をフォローしつつ、新センターにより光とインテグレーションすることを目指している。光のパッケージングか
+ら評価、シリコンフォ トニクス、光演算までカバーし ている。
+産総研の大きなミ ッションとし て、 1.日本に掛けている重要産業へのチャレ ンジ、 2.エマージング （ゲームチェ
+ンジ）テク ノロジーへチャレ ンジ、の2点がある（図 S2-4-5-1） 。半導体産業を見ると部素材・装置メーカー
+は日本の強みであるが 、デザイン・フロントエンド・バックエンドがごっそり抜けてしまっている。
+図S2-4-5-1　　　産総研の研究方針と半導体サプライチェーン
+デ
+ザインでは、インテル・TSMC・Broadcomなど各社が特徴的な提案をし ているが、日本からは出てき
+ていない。そこで産総研では、シリコンフォ トニクス内蔵パッケージ基板（AOP：Active optical package
+substrate）を提案中である。サブス トレートに光の機能を集積し、シリコンインターポーザーの上にHBM
+やGPUをそのまま置けば光化できる、検査しやすさを目指したコンセプトである。テス トを減らした、CPO
+用の新しい製造工程ができる。これまでのテレコムの月産1万個ではなく、半導体の月産100万個を支える
+製造技術になると考え ており、そのためには、裾野の広い、製造から評価までカバーする研究が必要だ。
+インターコネクションの帯域密度では、電気的なUCIeやワイ ヤボンディ ングなどに光が追従する必要があ
+り、TSMCは電気の帯域密度に合わせた光モジュールを作っ ている。一方で将来的にはUCIe Advancedと
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）50
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 61 =====
+し てインターポーザー上で帯域密度を高く するこ とが求められており、今のPICだと帯域密度が不足するため、
+チップの開発も実装の高密度化もより必要になると考えられる。バジェッ トの問題もあり、ケーブルだけ置き
+換えるのではなく、パッケージ上、あるいはインターポーザー上で光に置き換えるこ とが重要だ（図 S2-4-5-
+2 ）。
+図S2-4-5-2　　　将来の課題：高密度化技術
+バ
+ックエン ドでは産総研が旗振り役とし て、コンソーシア ムによる光電融合OSATの取組を2022年から始
+めている。試作によっ て課題を理解し、また、企業にと っ ては顧客への足がかり となる。 SEMICON Japan
+への出展も検討中だ。また、IOWN Global Forumにおいてもタスクフォー スを設立し、部素材メーカーと
+CPOメーカーを繋ぐ取組を行っ ている。
+シリコンフォ トニクスファブについては、Rapidusとの連携やNEDOのポス ト5Gプロジェク トでの新装置
+導入など、見直しを進めているところだ。
+エマージングテク ノロジーとし てはELSが考えられる。異種材料集積の形で、光源がパッケージの中に入っ
+て く るとありがたい。今までなかったハイ パワーを扱う難しさを改善したい。また、土管の先とし て、光スイ ッ
+チ、光アナログ演算にも目を向けている。デジタ ルの通信とアナログの計算をミ ックスした研究をし ており、
+今後、光の機能素子をどう活用するか、産総研とし て基盤研究を行っ ている状況だ。
+【質疑応答】
+Q ： TSMC
+やASEを中心にエコシステムが固まっ ている中で、産総研の新しい構造提案は社会実装の場に
+入り込めるのか。見通しはどうか。 TSMCが求めるこ とを練習する場とし てコンソーシア ムを活用し て
+はどうか。
+A ： 明確
+な解があるかは分からないが、良い報告を積み重ねるのが近道と考え、愚直に取り組ん でいる。
+ファブレ ス企業は良い技術であればTSMCでも他でも構わない。産総研は競争相手とし て取り組みた
+い。
+C
+
+： 「
+実装・パッケージング」工程に勝機があると考え ている。300～600
+mm級の大きなボード上にポ
+リマー光導波路を敷き、チップをはめ込む「光配線付きの大型PCボード」を実現する研究も面白い
+のではないか。
+C ： デ
+ータセンター/データコム分野では、企業は成果を長期間秘匿し、学会での公開は導入後となっ て
+しまう、つまり時代遅れとなっ ているケー スが多い。例えばGoogleの光OCSは2022年に発表された
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 51
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 62 =====
+が、実際の導入は5 ～6 年前から であった。学会参加の価値は、今や論文よりも現場の人との直接の
+対話・情報交換であり、昔と役割が変わったのではないか。
+Q
+ ： 例
+えばNVIDIAはGPUを核としたエコシステムが既に確立されている。AOPが優れた手段であっ ても、
+そのようなビッグプレイヤーと組まなければ、中に入り込むことは難しいのではないか。最初からエコ
+システムの中で活動することは可能なのか。
+A ： ご
+懸念の通りで、インディーズで優れた成果が出たとし ても、あくまで点の成果に留まっ てしまい、ど
+れほどアピールし ても使われない、というパターンは十分に想定される。ファブレ スは生産方法をかな
+り気にするため、コンソーシアムの活用などで活路を開いていきたい。
+Q ： 実際
+にサブス トレートを製造し ているなど、日本では部品やパッケージ部分でまだ食い込ん でいる分野
+はある。そこ と一緒になっ てエコスシステムに入っ ていく必要があるのではないか。学会発表ではかな
+り遠い印象。
+A ：
+ご指摘の通り。 OSATで組み立てる部分、つまり、基板やサブス トレートだけでは動かせないため実
+装して動かして評価する、そこをアピールしつつ、エコシステムに入っていきたいと考えている。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）52
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 63 =====
+4.6 今こ そ化合物半導体～シリコンフォ トニクスからシリコンプラッ ト フォームフォ トニクスへ～
+ 西
+山 伸彦（東京科学大学）
+西山研究室では、図 S2-4-6-1に示す ようにメ ンブレ ンレーザーから薄膜（TF）ニオブ酸リチウム（LN）
+まで様々なデバイスを研究し ており、短距離から比較的長距離応用まで、何らかの形で化合物半導体が入っ
+ている。これらの半導体は直接遷移半導体なので光源や増幅器が作製可能であり、電子移動度がシリコン
+（Si）に比べて高い。また、屈折率や吸収の変化についても、ボッケルス、量子井戸の電界屈折率変化
+（QCSE） 、フランツ・ケルディ ッシュなど様々な効果が利用可能であり設計自由度が高い。 Siは光デバイスと
+し ての特性はあまりよ く ないが、集積化に優れている。このように、単一では全てを満たすものがないので、
+異種材料集積でやるというのが基本的な考え方である。
+
+図S2-4-6-1　　　西山研および西山研共研での取り組みデバイス
+図
+ S2-4-6-2に示す接合技術を長年やっ ている。プラ ズマ活性化接合、常温の活性化接合、ポリマー接合、
+チップオンウェハ接合といった接合技術はかなり成熟し ており、企業にも技術移転するレベルになっ ている。
+例えば、技術研究組合光電子融合基盤技術研究所（PETRA）のプロジェク トでは、住友電工と共同で光導
+波路を形成したSOI（Silicon On Insulator）基板の上に、 インジウム リ ン（InP）チップを高密度に載せた。
+最終的には、SOI基板の上に、パッシブな材料をSiで作り、レーザー、変調器、フォ トディテクター、増幅
+器などを化合物半導体で作っ て、3次元実装でデジタ ル信号処理（DSP）などの集積回路を付けるこ とを思
+い描いている。
+西山研の光デバイスの研究について簡単に紹介する。全ての波長範囲で線幅が50 kHz以下のシングルチッ
+プのチューナブルレーザー（波長可変光源）を実現し ている。これは、Lバン ドとCバン ドのゲインブロック
+が別々に貼り付けてあり、マルチプレクサで外に出しているが、ユーザからは 1 つのチューナブルレーザーの
+ように見える。 InP系単体では難しいが、ハイブリ ッ ドでは簡単に共振器を長く でき、このようなものが実現
+可能になっ ている。 Si基板上に作った直接変調光源（メ ンブレ ンレーザー）もある。120℃まで発振し、25
+Gbit/sのアイ パターンも開いている。遅いと思われるかもしれないが、スロー・アン ド・ワイ ドの領域ではこ
+の程度の速度でよ く、計算上は10～20 Gbit/sのところが一番エネルギー効率も高い。最近では新たなメ ン
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 53
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 64 =====
+ブレ ンレーザーも提案し ている。光ファイ バー使わないのであれば、屈折率や波長を気にする必要がないので、
+通常のInP系のメ ンブレ ン構造よりも高い光閉じ込め係数を実現でき、性能の高いInGaAs/GaAs量子井戸
+を使えばよい。これをうまく使えば高温でも高速で変調できるレーザーができると考え ている。変調器に関し
+ても検討し ている。大きさの点ではリ ング変調器が一番小さ く てよいが他の性能はそこ そこである。また、性
+能のよいLNは大きすぎる。化合物半導体を用いたSiプラッ ト フォーム上の干渉型のInP-MZ変調器や電界
+吸収型のInP-EA変調器は単独でも高速動作し ており、さらに電子回路との協調設計で大幅に向上できると
+考え ている。受光器については、ゲルマニウム（Ge）を使ったものがよ く なっ ているので、化合物半導体が
+必要かどうかは少し議論が必要と思っ ている。
+
+図S2-4-6-2　　　光電融合に必要な技術：異種材料集積技術
+今後
+の課題について述べる。一つは海外の急速な追い上げがある。化合物変調器のシェアを見ると、高速
+な800 Gbit/sは日本の独壇場だが、それ以下のところは中国にやられている。もう一つは新たな2.5次元実
+装技術などへの対応である。 Marvell社は800 Gbit/s、1.6 Tbit/s対応のものを300 mmのSi基板上に作
+ることを進めているが、日本としてどのように立ち向かうのか。台湾との協力なども考える必要があると思って
+いる。究極的な実装の形態とし ては、図 S2-4-6-3に示す ような3次元光回路になると考え ている。あと10年
+以上はかかると思うが、日本は光電子集積の家元とし て今後も中心的なポジションを継続するべきだと思う。
+日本の化合物全体の危機という こ ともある。海外メーカーの光合分波器（AWG）の中には、InP HBTや
+GaAsアンプが入っ ている。日本では企業の製品開発の中止や、大学での研究の途絶で絶滅の危機にある。
+国のプロジェク トによるサポートだけでなく、企業からも大学へ少額でもよいのでサポートし続けるこ とが必
+要ではないかと思っている。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）54
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 65 =====
+図S2-4-6-3　　　究極の形態-LSI上3次元光回路-
+【質疑応答】
+Q ： 化合物半導体
+の場合には信頼性が気になるが、どのように対応し ているのか。特に、ウェハの張り合
+わせの信頼性については、インテルなどがやっているがうまくいっているようにも見えない。
+A ： 大学
+なので大規模な信頼性試験はできないが、小規模なものはやっ ている。また、光集積回路で信頼
+性をどのように担保するのか、冗長性も含めて明確になっ ていないので、ウェハレベルでの信頼性テス
+トも含めて取り組ん でいる。なお、張り合わせにより信頼性が極端に劣化するこ とは見え てない。
+Q
+ ： 化合物半導体
+が危機という こ とだが、具体的にどこが弱く なっ ているのか。
+A
+ ： そ
+もそもプレイ ヤーがいないのが一番の問題である。NTTがやめたら本当に終わっ てしまう と思う。国
+の施策で、ある程度の関係者が研究開発を継続できるようにするこ とも大事ではないか。
+C ： こ
+れまでInPのHBTは高速化し てInP-HBTの時代だと言われていたが、結局はSiデバイスが追いつ
+いてきた。このため、高速な計測器などの分野ではビジネス的に儲からなく なり、やめていったと思わ
+れる。米国はGAFAや軍関係があるので継続できているが、日本では国のサポートが必要だろう。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 55
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 66 =====
+4.7 シリコンフォ トニクスにおける高速変調器と今後の展望
+ 馬場 俊彦（横浜国立大学）
+シ
+リコンフォ トニクス分野で求められている光変調器の高速化・低消費電力化・小型化を目指し、本報告
+ではフォ トニック結晶導波路のスローライ ト効果を活用したマッハツェンダー型光変調器を中心に紹介する。
+シリコンフォ トニクス光トランシーバーでは、送信側のドライ バーと光変調器が主な電力消費源であり、受
+信側ではDSP（Digital Signal Processing）がボトルネック となっ ている。本報告では、これらのうち送信
+側の課題に注力する。シリコン変調器ではマイ クロリ ング型変調器 （MRM ： Micro-Ring Modulator） とマッ
+ハツェンダー型変調器（MZM：Mach-Zehnder Modulator）がある（図 S2-4-7-1） 。 MRMでは最近、
+NVIDIAやTSMCにより100 Gbaud級の高速動作が報告されたが、 しばら くは50 Gbaudであった。MRM
+の利点は低ビッ トエネルギーと小フッ ト プリ ン トである。ただし、FSR（Free Spectral Range）内での波長
+チューニングと温度によるゆらぎを補償するのに電力を要する。 MZMでは100 Gbaud以上の高速動作が可
+能であるが、1ビッ ト当たりのエネルギーが大き く、位相設定に数mWの温度調整を要し、フッ ト プリ ン トの
+大きいのが課題である。
+
+図S2-4-7-1　　　シリコン光変調器におけるマイ クロリ ング型とマッハツェンダー型の比較
+MZMの電力は主にpn接合ではなく終端抵抗で消費されるため、低電圧動作と特性インピーダンス（Z0 ）
+の増大が効果的である。馬場研究室ではフォ トニック結晶導波路（PCW：Photonic Crystal Waveguide）
+でのスローライ ト効果により変調効率を高めて低電圧動作を実現し、移相器長を短く するこ とで省フッ ト プリ
+ント化、キャパシタンスの低減、さらにZ0 を増大するこ とで低消費電力化を実現した（図 S2-4-7-2） 。図
+S2-4-7-3は試作したシリコン（Si）PCWのMZMである。迂回したセグ メ ン ト電極で電気と光の位相整合を
+取り、インダクタンスを挿入して Z
+0 を引き上げ、従来の変調器では困難であった50 Ω終端を実現した。製造
+は産総研の300 mm SOI（Silicon-On-Insulator）のCMOS互換プロセスである。なお、電子線リ ソが必
+須ではなく、光リ ソでも作製し ていた。動作帯域は6 nmだが構造調整するこ とで20 nmまでの可能なので
+温度調整は不要である。変調特性とし て、64 Gbaud NRZ、0.87 V（FinFETで動作可能な電圧）駆動に
+おいて、59 fJ/bitを達成し、MRMに迫るビッ トエネルギーや低消費電力（3.8 mW）と省フッ ト プリ ン トを
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）56
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 67 =====
+実現した。
+図S2-4-7-2　フォ トニック結晶導波路 図 S2-4-7 - 3　試作したSi PCW MZM
+図 S2-4-7-4は従来の光送信機における消費電力の割合である。 Driverが900 mW、Modulatorが100
+mW、Laserが40 mWで総計1 W強であるが、PCWを用いたMZMにより変調器電力を100 mWから5
+mW以下へ低減できているので、比例関係にある ドライ バー電力も大幅な削減が見込まれる。さらに、変調
+器と ドライ バーの関係では、最終的な終端抵抗に加え、2つのインピーダンスマッチングをとるための抵抗が
+並列接続されているので消費電力が大きい。このため、終端抵抗をなく したオー プンコレクター構成があり、
+結果的に トータ ル電力を桁違いに下げるこ とが可能であるが、インピーダンスマッチングが無く なるため注意
+深い設計と近接配置した集積化が必要である。具体的には独自開発したフォ トニクスライブラ リを標準の電子
+回路シミュレータに導入し、光電協調設計で光送信機の全体を最適化した。
+図 S2-4-7-5は試作した光送信機の外観図である。 Siフォ トニクスチップと130 nm SiGe BiCMOSチップ
+からなり、有効フッ ト プリ ン ト0.66 mm
+2/ch、64 Gbit/s NRZで、トータ ルの消費電力50 mW、0.78 pJ/
+bitを達成した。この結果は28 nm CMOS採用のサザンプト ン大学の0.7 pJ/bitに迫る値であり、Intelの
+MRMと比べても低消費電力である。さらに、最近は周波数等化光回路の集積により帯域を80 GHz超へ拡
+大し、100 Gbaud変調を可能とし、今後、PAM4での200 Gbit/sも視野に入れた。
+図S2-4-7-4　光送信機における消費電力 図 S2-4-7 - 5　光送信機の概観図
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 57
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 68 =====
+まとめ
+シリコンフォ トニクス結晶導波路によるスローライ ト効果を用いたマッハツェンダー型光変調器（MZM） で、
+100 Gbaud以上の高速化、マイ クロリ ング型光変調器（MRM）に迫る低消費電力化と小型化など実用的な
+指標を示した。今後、CMOS互換、マルチプロジェク トウエハ（MPW）製造が可能であるシリコンフォ トニ
+クスへのスローライ トの採用拡大を期待する。
+【質疑応答】
+Q
+ ： こ
+の3年でスローライ ト変調器の性能が大き く向上した理由は ？
+A ： 横国大
+では電気設計に精通した人が参画し、光だけでなく電気周りを総合的に最適化したこ とが最大
+要因。電気と光の両方を理解する人材の重要性が大きい。
+Q
+ ： フ
+ォ トニック結晶スローライ トの製造バラツキは ？
+A
+ ： ば
+らつきは大き くはないがwafer to waferで寸法が少し ずれ（0.3%） 、波長も同率でずれるので、波
+長合わせには作り込みが必要。
+Q
+ ： InP
+系EA（電界吸収型）変調器などをスローライ トMZMが置き換えられるのか ？
+A
+ ： ス
+ローライ トは構造体なのでInP系にも適用可能である。Siでは産総研のMPWでフォ トニック結晶入
+りの素子も試作可能。
+C
+
+： 一方、速度域
+とし てはInPのほうが高く、距離的にはたぶん両者が存在すると考えられる。
+Q
+ ： ド
+ライ バー回路はBiCMOSを使われているが、CMOSでも動く電圧ではないのか ？
+A
+ ： コ
+ス ト面からBiCMOSを採用（プロセス価格が100万円以内と安価） 。電圧的にはCMOSでも可能。
+Q
+ ： MZM
+のアーム位相調整はどうやっ ているのか ？
+A ： フ
+ォ トニック結晶の部分にヒータを用い、熱光学効果で屈折率を調整し ている。消費電力の小さい側
+の位相を調整し て合わせている。通常のMZMでも同じ。
+Q
+ ： MRM
+とMZMの消費エネルギーの比較条件（ドライ バーを含むか）？
+A ： 表示値
+は変調器のみ（どちらも ドライ バーは除外） 。ドライ バー込みでは一般に総計1 W程度。 MZM
+は終端抵抗での消費を含む。一方、MRMは基本的に終端抵抗がないので小さい。実際にはドライ
+バーの消費電力が支配的。
+Q
+ ： フ
+ォ トニック結晶のデバイス長・電極の損失・電極の帯域は ？
+A
+ ： 位相器
+は約150 µmを5回折り返し。電極損失はほぼ無視するこ とが可能。フォ トニック結晶はジャ ン
+クション抵抗が大き くRCで帯域が落ちやすいが、周波数等化で補償し、抵抗低減も進行中。
+C ： 人
+材の不足が深刻化。 AI偏重で志望が減り、産業の閉塞感も影響。日本では流動性が低く新陳代謝
+が弱い。一方、米国は移動しやす く新興への受け皿があり、光人材のキャ リアパスが形成されやすい。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）58
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 69 =====
+4.8 未来を創造する電気光学材料と光変調器
+ 横
+山
+士
+吉（九州
+大
+学 先導物質化学研究所）
+2020年の光ファイ バー通信国際会議 （OFC） において、 システム設計の研究者であるリチャード ・ ピッ トウォ
+ン氏を交えたワークショップが開催された。そこでは「将来の光コンピューティングや光システムを支える材
+料は何か」という議論がなされ、ピッ トウォ ン氏の見解では、シリコン（Si）およびインジウム リ ン（InP）
+が圧倒的に有利であるとされた。
+これに対し、私は半導体とは異なる電気光学材料に着目し て研究を進めてきた。具体的には、ポリマー材
+料および無機材料とし てのニオブ酸リチウムである。これらの材料は、ピッ トウォ ン氏の評価では、変調性能
+は良好であるが、付随する要素が不足し ており、さらなる検討が必要であるとのこ とであった。
+電気光学係数を比較すると、ニオブ酸リチウムが約32 pm/Vであるのに対し、PZTはその約3倍、PLZT
+は約10倍、BTOはさらに大きな値を示す。ポリマーについても、物質名ではないものの、ニオブ酸リチウム
+より大きな電気光学係数を有する材料群が存在する。
+ポリマー変調器自体は新規技術ではなく、2002年にはベル研究所がScience誌において、140 GHzでの
+有機材料変調を実証し ている。その後、材料研究者とデバイス研究者の協力により、多様な変調器が開発さ
+れてきた。ドイツKITのシリコンフォ トニクスとのハイブリ ッ ド構造、プラ ズモニック変調器、そし て我々のシ
+リコン・ポリマーハイブリッド変調器などがその例である。
+性能面では高いポテンシャルが示されているが、最大の課題は信頼性および安定性である。有機材料とい
+うだけで否定的に捉えられるこ とも多いが、我々はこの点に正面から取り組ん できた。
+私たちの研究室では、第一世代とし て長さ8 mmの変調器を作製した（図 S2-4-8-1） 。これは決し て小型
+ではないが、従来のニオブ酸リチウム変調器と比較すれば大幅な小型化である。さらに、シリコンとポリマー
+をハイブリ ッ ド化した第二世代では、長さ1.5 mmで高性能を実現し ている。
+図S2-4-8-1　　　ポリマーを用いた変調器
+信頼性評価
+とし て、熱安定性試験も実施し ている。56 Gbit/s NRZ信号を用い、温度を室温から90 ℃、
+さらに110 ℃まで上昇させたが、アイ パターンは大き く劣化しなかった。100 Gbit/s OOKおよび200 Gbit/
+s PAM4においても、70 ℃まではBERに有意な変化はなく、高温下でも実用的な性能を維持した。室温に
+戻すこ とで性能は完全に回復した。さらに、光耐性試験とし て、80 ℃、16 dBmの光入力条件で2000時間
+の連続動作を行ったが、変調器の劣化は認められなかった。これにより、ポリマー変調器の信頼性は大き く
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 59
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 70 =====
+向上していると考えている。
+一方で、 近年は薄膜ニオブ酸リチウムの性能も大き く向上し ており、 米国のHYPERLIGHTや中国発スター
+ト アップLIOBATEによる製品が市場に出てきている。実際に市販チップを入手し て評価したが、構造は非常
+に単純であるが、集積性の観点では、8 mm程度の長さは不利であり、より高い電気光学係数を有する材料
+の必要性を強く感じた。
+図S2-4-8-2　　　PLZTを用いた変調器
+そ
+こで我々は、PZT、PLZT、BTOといった強誘電体薄膜材料の研究を開始した。これらをSiO2 上に光学
+的に透明な薄膜とし て成膜し、導波路構造を形成する技術を確立した。 PLZTではn³rが約8900 pm/V、
+BTOでは1万 pm/Vを超える値が得られており、デバイスの小型化と低電圧動作が期待できる。
+2.5 mm長の変調器を作製し、イコライ ゼーションなし で100 Gbaud超の変調を実証した（図 S2-4-8-2） 。
+初期デバイスでは電気帯域に制約があったが、電極構造を最適化するこ とで、1～2 mm長において110
+GHzまでほぼフラッ トな応答を得ている。現在は200 GHz動作を目標とし て研究を進めている。
+【質疑応答】
+Q
+ ： こ
+のように競争の激しい分野におけるアカデミア研究と産業界の協調関係はどのようにあるべきか。コ
+ンソーシアムなどを用いるのか。
+A ： 材料
+・デバイスに近い企業ほど自社技術とし て内製化したい意識が強く、コンソーシア ム型研究には必
+ずしも適さない。一方で、材料メーカー単独では限界があるため、デバイス企業やシステム企業との
+連携は不可欠である。
+Q
+ ： CPU
+近傍への実装を見据えた場合の見通しはどうか。
+A ： 薄膜
+を基板から剥離し、他基板へ転写するプロセスの可能性がある。ポリマーについても後工程実装
+の利点はあるが、実装現場での心理的抵抗感が残る可能性はある。
+Q ： KTN
+のようにEO係数が極めて大きい材料があるが、それ以外のどのようなファクターで物質選択が
+なされるのか。
+A ： E
+O係数が極めて大きい材料が実用にならなかったのは、誘電率の大きさのために、高速変調できな
+かったためである。薄膜化や基板選択、電極構造の工夫により一定の改善余地はあるものの、デバイ
+ス短縮が最も現実的な解決策である。薄膜LNについては、ドリ フ トや界面安定性に未解決の課題が
+あるが、海外製品が市場に出回るこ とで、日本企業が戦意を失いかねない懸念がある。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）60
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 71 =====
+Q ： 中 国における薄膜LN研究の急速な進展についてどう考えるか。
+A ： 米国
+の大学に留学し ていた中国人学生が、帰国し て非常にアクティ ブに活躍し ている。米中にまたがる
+大学発スピンアウ ト と人材循環がその背景にある。日本においても、品質重視一辺倒ではなく、戦略
+的なスピード感が必要である。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 61
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 72 =====
+5．総合討論
+総合討論の基本的問題意識
+総合討論では、事前アンケートで提示された以下の三つの論点を中心に議論が行われた。
+ ① AI
+データセンター（DC）の大規模化・高性能化に伴いボトルネック となるデータ通信技術の役割・
+重要性をどのように認識し、将来をどう考えるか。
+ ②光データ通信技術、特に光デバイス/材料の研究開発の方向性をどう考えるか。
+ ③国際競争力強化に向けた研究開発体制・エコシステムはどうあるべきか。
+特に、GPU・メ モリー近傍を含む短距離領域において、電気配線の限界が顕在化する中で、光技術がどこ
+まで入り込めるのか、また日本とし てネッ トワークアーキテクチャー、光モジュール、光デバイス・材料技術
+の各々の層で、どのように勝ち筋を見出すべきか、またその時間軸をどのように考えるかが共通の問題意識と
+して議 論された 。
+電気インターコネク ト と光インターコネク トの役割分担
+電気インターコネク トでは、集積回路の3次元実装、フラッシュメ モリー・HBM（High Bandwidth
+Memory）に代表されるメ モリー3次元化の開発により配線短距離化に向けた工夫がなされているが、高速
+化に伴う伝送損失および消費電力増大がデータセンター高性能化への顕著な制約となっ ている。
+光インターコネク ト（光配線）は、 低伝送損失と低消費電力により高速大容量でのデータ転送が可能であり、
+これまでDCの入出力部からサーバーラック上部まで適用されてきた。最近では、サーバーラックを並列接続
+するスケールアウトにも適用されつつである。しかし、サーバーラック内への光配線の適用には、エネルギー
+効率の観点からは十数センチメートル程度の配線まで優位性が見え てきているものの、コス ト、高密度実装、
+量産性が課題となっ ている。
+電気と光は対立概念ではなく、用途・距離・帯域に応じたハイブリ ッ ド構成が不可欠であり、どこまで電
+気で引き延ばし、どこから光に置き換えるかが重要な設計論点である。及び、高速化に伴い光技術以上に電
+気技術がひっ迫し ておりメ モリー帯域が特に問題である議論があった。
+ボード間、パッケージ間（チップ間）といった単距離配線においても、光電融合技術が中長期的に重要な
+選択肢となる可能性が示唆された。
+データセンター進化の時間軸とネッ トワーク構造
+DCの市場は10年ごとに一桁ずつ増大、それに符合するように約10年周期で世代交代し てきた。クライア
+ン トサーバー、エンター プライズ、ハイ パー スケールの世代を経由し、現在はAI時代に入っ ている。 AI時代
+において市場を安定的に支配するプレイ ヤーが誰になるか、今後のDC内のネッ トワークアーキテクチャーの
+方向性・ロードマップがどうなるのかはまだ分からないとの見方が出された。
+ネッ トワークは、以下の複数の領域に分化し、それぞれで要求されるデバイス特性は大き く異なる。
+● スケールアウ ト（データセンター内・データセンター間接続）
+● スケールアップ（GPU・アクセラレータ近傍接続）
+● CXL（Computer Express Link、CPU・メ モリー間高速接続）
+特に、スケールアップとスケールアウ トでは共通技術が少なく、別個の技術戦略が必要であるとの認識が示
+された。
+光デバイス技術の方向性と競争領域
+スケールアウ ト領域では、プラガブル光モジュールを中心に200 GBaud、400 GBaudといった超高速化
+の開発が進ん でおり、800 GBaudの話も出始めている。今のビジネスの中心になっ ているプラガブル光モ
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）62
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 73 =====
+ジュールでは、日本も部品・材料レベルで一定の競争力を有し ている。
+一方で、光トランシーバーや光モジュールといった上位レイ ヤーでは、日本の存在感は極めて弱く、これは
+単なるコス ト要因ではなく技術競争力の差が要因との認識である。2010年頃までは日本に技術とビジネスに
+強みがあったので、光トランシーバーのビジネスを日本に取り戻すためにアカデミアで何が貢献できるかと
+いった議論もあった。日本の強みである部品レベルの付加価値はシステム全体の中では小さいので、これを
+集積化、モジュール化し て上位レイ ヤーの市場につなげていく べきではとの意見に対し ては、上位レイ ヤーを
+支配する海外企業はモジュール化も含め、各要素がコス ト最小化で用意されており、部品を超える提供はコ
+スト高になるとの考えから敬遠されるとの意見である。
+スケールアップ領域は、新市場・新プレイ ヤーが参入し得る領域であり、InP系とシリコンフォ トニクスの
+競争と共に、 更なる近距離でのVCSEL （Vertical Cavity Surface Emitting Laser） やマイ クロLED （Light
+Emitting Diode）などの適用、多チャ ネル高密度集積による差別化の重要性も指摘された。
+光スイ ッチは光ネッ トワークを構成する基本であり、以前にGoogleが3次元MEMSをSpineスイ ッチ内に
+導入したときは驚かされた。彼らはスイ ッチ時間を今のmsレベルからμs、nsに短縮する方向にいく と考えら
+れ、我々 もシリコンフォ トニクスを使った光導波路スイ ッチなどを含め、集積度やスイ ッチ速度を上げていく観
+点が重要である。
+光デバイス単体の性能向上に加え、それを活かす電子回路設計、PIC（Photonic Integrated Circuit）
+とEIC（Electronic Integrated Circuit）の協調設計・実装が不可欠であるとの意見が示された。日本で
+は電子回路のアカデミアの研究者が光技術に興味を持っ ておらず 、相談できる研究者がいないのが弱みで、
+米国などとは状況が異なっ ている。それができないなら、新材料も含め、部品レベルで圧倒的に勝っ ていく し
+かないとの見方である。
+日本のデータセンター戦略と分散型アーキテクチャー
+日本がGAFAM型の超大規模ハイ パー スケールデータセンターを同一戦略で追随するこ とは困難であると
+の見解が示された。
+代替的な方向性とし て、分散・特化型データセンターを光ネッ トワークで結合し、計算資源を協調的に活
+用する分散型の構成が提案された。
+超低遅延光ネッ トワークを活用するこ とで、地理的に分散した計算資源やメ モリーを、あたかも単一システ
+ムのように扱う可能性が議論された。日本中に存在する未使用状態のGPUを一時使用の貸与を受けるような
+形で集めると巨大な協調型のAIデータセンターが構成できる。
+この構成は、ChatGPTのような大規模言語モデルで構成された何でも できるデータセンターでなく、特定
+用途向けAIやフィ ジカルAI等に特化するこ とで、日本の産業・社会課題と親和性が高く、今の市場を支配し
+ている海外勢に対抗できるのではとの発想である。
+同様の発想は海外にもあり、米国のネオクラウ ドがその例である。実際にハイ パー スケーラーとネオクラウ
+ドを比較すると、1/3 程度のトラフィックがネオクラウドになっている。現状では日本にネオクラウド的な動き
+はなく、それが立ち上がったとし ても、そこで使われる機器はコス トが最優先になると認識すべきである。
+光技術がAIアーキテクチャーにもたらす影響
+光技術は単なる通信路ではなく 、遅延、帯域、並列性の変化を通じて、AIモデルや計算方式そのものに
+影響を与え得る。
+メ モリーと計算を実行する場（GPU、CPU）との距離が縮まるこ とで、学習・推論の進め方が変化し、新
+たなAIアーキテクチャーの可能性が生じる。
+過去にGoogleが低ビッ ト演算のTPU（Tensor Processing Unit）を登場させるこ とでAI計算の常識を
+変えた。それと同じ事が光技術に起因する発想転換でブレークスルーにつながる可能性がある。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 63
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 74 =====
+同時に光技術で全てができるわけでなく、電気と光の両技術の協調が重要である。システム側の要求をデ
+バイス側にブレークダウンし、両者のコラボで飛躍を求めるようなアプローチも必要との意見も出された。
+デバイス側の研究者の新たな発想は純粋に学問的な興味からスタートする。そこでは何に使用できるかな
+どの中途半端な理由付けは逆効果である。しかし、途中からはアプリへの意識が必要であり、これまでの事
+例からも、2段階構成のアプローチがイ ノ ベーションにつながる であろう。
+イ ノ ベーションに向けては、デバイス側とアーキテクチャー側の上記の特性の違いを理解したうえでの辛抱
+強い密な対話と協調が不可欠との認識が共有された。
+日本の産業競争力に関する議論
+データセンターの市場を支配し ているのはGAFAMであり、そのためシステム側の議論はそこにどう付いて
+いくかに陥りがちである。必然的に、日本ではスピードや消費電力などでGAFAMに使用し てもらえそうなデ
+バイスにつながる技術に集中することになる。
+GAFAMに対抗可能なデータ基盤を日本で作る必要があるのではないかとの問題提起がなされた。そのよ
+うな産業がないとシリコンフォトニクスに例を見るようにデバイスレベルでも、さらには学術レベルででも遅れ
+を生じてしまうとの意見である。
+GAFAMも現在は市場を取っ ているが、10年前はそれほど強くはなかった。現在、日本では将来のデータ
+センターに向けてPFN（Preferred Networks）が努力し ており、富岳のようなスパコンの資産が残っ ている。
+そのような資産を持つ国は数少ないため、無条件撤退は考えられない。10年後の市場は予測できず、標準化
+もあてにならないため、市場で勝ったものが標準になるだろう。
+一方で、Googleのように年間4兆円投資し ている企業と勝負できないのも現実である。 Googleもたまた
+ま勝ち残ったのではなく、様々な技術を自分で育てる企業文化を持っ ており、独自技術で成長し てきた会社で
+ある。NVIDIAも多額の投資と優秀な人材を獲得し、光の技術は全て揃え ている。
+デバイス・材料側のアカデミアには、どう使うかなどは考えず 、より尖ったものや、圧倒的な速度や低消費
+電力を持つものを生み出し て欲しい。
+日本の研究開発体制と共用基盤に関する議論
+産総研試作ラインの現状認識
+日本における光デバイス・シリコンフォ トニクス研究開発の構造的課題とし て、自由度の高い試作環境の不
+足が繰り返し指摘された。
+産総研の試作ラインは国内における中核的共用基盤であるが、以下の意見が出された。
+● 対応可能な材料・プロセスに制約がある。例とし てGe成長プロセスが利用できない点が挙げられ、この
+ため受光素子を含むシリコンフォ トニクスの一貫した検証が妨げられている。
+● 海外主要拠点と比較し て試作の柔軟性・迅速性に課題がある。
+産総研外の人達の開発し てきた技術を取捨選択のうえ受け入れ、それを再びサービスとし て提供するこ とや、
+さらにレベルを向上させ、企業に提供するこ となどの提案も出された。
+試作基盤に対する改善要望
+試作ラインは完成度の高い製品を作る場ではなく、原理確認と可能性探索を高速に回す場とし て位置付け
+るべきであるとの認識が示された。
+具体的な改善要望とし て、以下が挙げられた。
+● シリコンフォ トニクスを基盤とした異種材料集積プロセスを拡張する。
+● PICとEICの協調設計・評価を可能とする環境を整備する。
+● 研究者が自由に利用可能なPDKの整備をし、継続的に更新する。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）64
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 75 =====
+アカデミアの研究を産業界に橋渡し できる試作施設とし て、産総研と並ん でNTTの研究所への期待も挙げ
+られた。一方、 それらの研究所で働いているのは研究者であり、 サービス機能、橋渡し機能の実現にはスタ ッ
+フの充実が必要であるこ とや、スタ ッ フの充実し ている欧米の研究所との違いが指摘された。
+研究開発の進め方と投資の考え方
+フルスタックのデモシステム構築には極めて大きな投資が必要であり、アカデミアが中心になってシステム
+実証の研究開発を行う こ とには慎重な意見が多かった。
+現実的な方策とし て、 システム側はシミュレーションや限定的実証を中心に進め、 デバイス側は原理・物性・
+構造に焦点を当てた研究を幅広く進める、といった役割分担が提案された。
+また、将来性が明確になったテーマは段階的に大規模プロジェク トへ移行するこ とが必要になるが、光デ
+バイス・回路の設計ができる人材が電子回路分野と同様に少なすぎるとの意見が出た。
+エコシステム形成と人材育成
+日本は研究段階では強いが、事業化段階で劣後する傾向があり、個別機関の努力だけでは限界があるとの
+認識が共有された。このため、光デバイス、電子回路、実装、システム、アプリケーションを横断する産学
+官連携コンソーシア ムの必要性が強調された。
+一方で、光分野における人材不足は深刻なこ とが指摘された。光分野の研究室出身でも、必ずしも関連分
+野の産業界に就職しない。学生は産業の将来にも敏感なため、産業界にも責任がある。
+また、学生は面白いと感じる研究領域を選ぶ傾向がある。このため、修士2年間の教育が重要であり、光
+技術の重要性、面白さを伝える必要がある。しかし、修士の学生はかなりの時間を就職活動に取られ、研究
+の面白さを知る前に就活に入っ てしまうのが問題である。これは光技術分野だけの問題でなく、修士課程の
+教育全体の問題でもある。
+米国では大学の研究室と関連する企業との関係は人脈も含めて強く、企業間を移る際にも研究室の人脈が
+機能し ている。このため、学生は就職後も継続的にその分野に留まり、専門性を高めるこ とができる。これが
+日本との大きな違いになっている。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 65
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 76 =====
+6．参加者
+ （敬称略、所属・役職 はワークショップ開催日時点のもの）
+【招聘有識者】
+（話題提供者）
+天野 建
+ 産業技術総合研究所 光電融合研究
+センター センター長
+鯉渕 道紘
+ 国立情報学研究所
+アーキテクチャー科学研究系 教授/所長補佐
+佐藤 健一
+ 名古屋大学名誉教授 産業技術総合研究所招聘研究
+員
+高橋 亮
+ 情報通信研究機構
+ネッ トワーク研究所 総括研究員
+西山 伸彦
+ 東京科学大学 工学院 電気電子系 教授
+布谷 伸浩
+ NTT
+デバイスイ ノ ベーションセンタ プロジェク ト マネージャー
+馬場 俊彦
+ 横浜国立大学 大学院工学研究院 教授
+横
+山 士吉
+ 九
+州大学 先導物質化学研究所 教授
+（コメンテーター ）
+高井 厚志
+ LitAhead 代表
+松尾 慎治
+ NTT
+先端集積デバイス研究所 フェロー
+山中 直明
+ 慶應義塾大学 未来光
+ネッ トワークオー プン研究センター センター長
+【招聘有識者以外】
+（JST-CRDS 検討チームメ ンバー）
+魚崎 浩平
+ ナ
+ノテク ノロジー・材料ユニッ ト 上席フェロー/チーム総括責任者
+魚見 和久
+ ナ
+ノテク ノロジー・材料ユニッ ト フェロー/チーム リーダー
+曽根 純一
+ ナ
+ノテク ノロジー・材料ユニッ ト 特任フェロー
+佐藤 敏文
+ ナ
+ノテク ノロジー・材料ユニッ ト 特任フェロー
+馬場 寿夫
+ ナ
+ノテク ノロジー・材料ユニッ ト フェロー
+眞子 隆志
+ ナ
+ノテク ノロジー・材料ユニッ ト フェロー
+木村 康則
+ シ
+ステム・情報科学技術ユニッ ト 上席フェロー
+高島 洋典
+ シ
+ステム・情報科学技術ユニッ ト フェロー
+平池 龍一
+ シ
+ステム・情報科学技術ユニッ ト フェロー
+小崎 成治
+ シ
+ステム・情報科学技術ユニッ ト フェロー
+田子 智久
+ STI
+基盤ユニッ ト フェロー
+土屋 朋信
+ JST
+戦略研究推進部
+ 主任専門
+員
+石鉢 卓也
+ JST
+未来創造研究開発推進部 主査
+（JST-CRDS）
+佐伯 浩治
+ 副
+センター長
+伊藤 聡
+ ナ
+ノテク ノロジー・材料ユニッ ト 特任フェロー
+佐々木 高義
+ ナ
+ノテク ノロジー・材料ユニッ ト 特任フェロー
+中西 周次
+ ナ
+ノテク ノロジー・材料ユニッ ト 特任フェロー
+林 喜宏
+ ナ
+ノテク ノロジー・材料ユニッ ト 特任フェロー
+宮下 哲
+ ナ
+ノテク ノロジー・材料ユニッ ト 特任フェロー
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）66
+科学技術未来戦略ワークショップ報告
+付録
+2
+
+===== PDF_PAGE 77 =====
+付録3 国内外の状況
+本プロポーザルに関連する主要プログラム・プロジェクト動向について概説する。
+（ 1 ）日本
+光電融合に関する最初の本格的な産学連携国家プロジェク ト とし ては、2009年度に開始された内閣府「最
+先端研究開発支援プログラ ム（FIRST） 」における「フォ トニクス・エレク トロニクス融合量子システム基盤
+技術開発（PECST） 」プロジェク トが挙げられる。本プロジェク トでは、技術研究組合光電子融合基盤技術
+研究所（PETRA）が設立され、研究実施体制の中核とし て産官学の関係機関が結集・連携し、光電融合に
+関する基盤技術の検討が進められた。その後、PECSTで得られた研究成果や知見を踏まえ、2010年代前半
+には、経済産業省/NEDOによる「超低消費電力型光エレク トロニクス実装システム技術開発」へと展開し、
+光エレク トロニクス実装に関し て、基盤技術からシステム化技術に至る検討が行われた。これらの研究成果の
+一部は、ベンチャー企業アイオーコア社の設立にも繋がっ ている。さらに、近年から現在に至るまで進行中の
+プロジェク ト とし ては、 NEDOからPETRAに委託された「異種材料集積光エレク トロニクスを用いた高効率・
+高速処理分散コンピューティ ングシステム技術開発（2021～2025年度） 」や、 NEDOの「グリーンイ ノ ベー
+ション基金事業」における研究開発項目である「次世代グリーンデータセンター技術開発（2021～2030年
+度 ）」 が 挙 げ ら れ る 。
+これらの事業は、国家プロジェク ト とし て実施され、参画する企業や研究機関における研究開発の加速に
+寄与し てきた。一方、近年では、分野横断・階層横断を志向した新たな枠組みとし て、コンソーシア ムの設
+立や活動が進展し ている。光通信分野においては、NTTが主導し て2020年に設立されたIOWN Global
+Forumが挙げられる。同フォーラ ムは、光通信、光コンピューティ ング 、ネッ トワーク運用に加え、各産業分
+野のユー スケー スを包含し、光通信ネッ トワークを基盤とし て複数の分野・産業を横断的に結び付ける、コン
+ソーシア ム的性格を有する国際的枠組みとなっ ている。また、材料・光デバイス・装置を中心とした光電融合
+分野においては、産業技術総合研究所を中心に「次世代グリーンデータセンター用デバイス・システムに関す
+る協議会（GDC） 」が2022年に設立され、関連分野の研究機関・企業が参画する形で、分野横断的な議
+論と連携が進められている。
+直近に開始した取り組みとし ては、光の計算・通信・情報に関する将来的な基盤技術とし て、JSTの戦略
+的創造研究推進事業CREST「光と情報・通信・センシング・材料の融合フロンティ ア」 （2024～2031年度、
+ただし公募期間は2024～2026年度）が挙げられる。また、光に限定しない情報通信科学分野においては、
+JSTにおいて戦略的創造研究推進事業CRONOS（情報通信科学・イ ノ ベーション基盤創出）（2024年度～）
+などの取り組みが進められている。さらに、JSTの戦略的創造研究推進事業 ALCA-Next（先端的カーボン
+ニュートラル技術開発）やNICTのBeyond 5G（6G） （2023年度～）における採択課題の中には、光電融
+合に関連する半導体技術や通信ネッ トワーク技術も含まれている。図S3-1は、2010年以降のこれらの国家
+プロジェク トの時間軸を整理したものであり、現行の主要な国家プロジェク トは、概ね2030年頃までを視野
+に入れて実施されている。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 67
+国内外の状況
+付録
+3
+
+===== PDF_PAGE 78 =====
+図S3-1 　 日本における関連国家プロジェク トの推移
+2025年時点で日本が推進し ている主な光電融合関連のプロジェク トおよびコンソーシア ム構築の状況をま
+とめると、以下のようになる。
+● NEDO グリーンイ ノ ベーション基金事業・次世代デジタ ルインフラの構築（2021～2028年度）
+2
+：
+革新的な光電融合技術等でサーバー内等の電気配線を光配線化し、データセンターの消費電力を2021
+年
+比で40%以上節減する。
+● NEDO 高効率・高速処理を可能とするAIチップ・次世代コンピューティ ングの技術開発（2021～
+2025年度）
+3
+：
+異種材料集積技術による高効率・高速処理分散コンピューティ ングシステム技術の開発。
+● NEDO ポス ト5G情報通信システム基盤強化研究開発事業、光電融合に係る実装技術および確定遅延コ
+ンピューティ ング基盤技術開発（2024～2028年度）
+4
+：
+パッケージ内で複数の回路チップが光で接続された半導体デバイス、および光ディスアグリゲーテッ ドコ
+ン
+ピューティ ング等の新規アーキテクチャーの実現に必要な技術およびソフ トから低遅延化と遅延確定性
+の向上を可能とする計算基盤技術を開発。
+● NICT 革新的情報通信技術（Beyond 5G（6G） ）基金事業、大容量デジタ ルコヒーレ ン トNTNに向け
+2 新 エネルギー・産業技術総合開発機構, “次世代デジタ ルインフラの構築”, https://green-innovation.nedo.go.jp/project/
+building-next-generation-digital-infrastructure/,（2026年3月23日アクセス）.
+3
+ 新
+エネルギー・産業技術総合開発機構, “高効率・高速処理を可能とするAIチップ・次世代コンピューティ ングの技術開発”,
+https://www.nedo.go.jp/activities/ZZJP_100123.html,（2026年3月23日アクセス）.
+4
+ 新
+エネルギー・産業技術総合開発機構, “「ポス ト5G情報通信システム基盤強化研究開発事業/先端半導体製造技術の開発」
+に係る実施体制の決定について”, https://www.nedo.go.jp/koubo/IT3_100302.html,（2026年3月23日アクセス）.
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）68
+国内外の状況
+付録
+3
+
+===== PDF_PAGE 79 =====
+たアダプティ ブ光集積デバイスの研究開発（2024～2026年度）
+5
+：
+光メ タサー フェス、集積技術を駆使したデバイスを開発するこ とで、大容量デジタ ルコヒーレ ン ト光伝送
+ネ
+ッ トワークをNTN（非地上系ネッ トワーク）にまでシームレ スに拡張する。
+● JST CREST 「光と情報・通信・センシング・材料の融合フロンティ ア」 （2024～2031年度）
+6
+：
+持続可能な社会を支える実世界と融合したグリーン情報システムの実現に必要な基盤技術を創出し、光/
+光子
+と電子との本質的な性質の違いに着目し て、電子に対する光子の利点を最大限に活用した革新的情
+報処理、通信、センシングシステムの開拓と必要な新材料およびプロセス技術の開発。
+● JST CREST「独創的原理に基づく革新的光科学技術の創成」 （2019～2026年度）
+7
+：
+光科学技術が関係する広範な分野を対象とし ており、情報・通信分野を主題とする研究課題もある。
+● JST CREST「情報担体を活用した集積デバイス・システム」 （2020～2027年度）
+8
+：
+半導体における情報担体分野を対象とし ており、光電融合に関連する研究課題がある。
+● JST CRONOS　情報通信科学・イ ノ ベーション基盤創出（2024年度～） ：
+情報通信科学分野における将来のイ ノ ベーション創出を目的とし て、基盤的・挑戦的研究を推進する研
+究開発事業。
+● JST ALCA-Next　先端的カーボンニュートラル技術開発（2023年度～） ：
+カーボンニュートラルの実現に向けた研究開発事業で、2024年度および2025年度に光電融合に関連す
+る
+研究課題が採択されている。
+● 産業技術総合研究所　Siフォ トニクス コンソーシア ム（2018年度～）
+9
+：
+コンソーシア ムに参画する企業、大学は光電融合研究センターにMPWの試作を委託するこ とができる。
+（
+2）米国
+米国ではNational Science Foundation （NSF） が基礎研究、 応用研究に関する資金を助成し ているほか、
+国防総省がDefense Advanced Research Projects Agency（DARPA）を含めて研究および製造技術の
+支援を行っ ている。さらに、2022年に成立した半導体・科学法に基づき、シリコンフォ トニクスに関連する
+技術開発・製造に多額の補助金が支給されている。
+〇NSFによる主な研究助成プログラ ム
+● Electronics, Photonics and Magnetic Devices （EPMD）
+10
+：光デバイス関連の研究
+● Electronic and Photonic Materials （EPM）
+11
+：光デバイス関連の材料開発
+● Communications, Circuits, and Sensing-Systems （CCSS）
+12
+：通信システム、信号処理の研究
+5 情報通信研究機構 , “革新的情報通信技術研究開発委託研究”,
+https://www.nict.go.jp/collabo/commission/B5Gsokushin/B5G_08801.html,（2026年3月23日アクセス）.
+6
+ 科学技術振興機構
+, ” [光融合] 光と情報・通信・センシング・材料の融合フロンティ ア”,
+
+https://www.jst.go.jp/kisoken/crest/research_area/bunya2024-2.html,（2026年3月23日アクセス）.
+7
+ 科学技術振興機構
+, ” [革新光] 独創的原理に基づく革新的光科学技術の創成”,
+
+https://www.jst.go.jp/kisoken/crest/research_area/ongoing/bunya2019-3.html,（2026年3月23日アクセス）.
+8
+ 科学技術振興機構
+, ” [情報担体]情報担体を活用した集積デバイス・システム”,
+
+https://www.jst.go.jp/kisoken/crest/research_area/ongoing/bunya2020-3.html,（2026年3月23日アクセス）.
+9
+ 産業技術総合研究所
+, “Siフォ トニクス コンソーシア ム”, https://unit.aist.go.jp/peirc/sipc/,（2026年3月23日アクセス）.
+10
+ NSF
+, “Electronics, Photonics and Magnetic Devices （EPMD）”, https://www.nsf.gov/funding/opportunities/
+epmd-electronics-photonics-magnetic-devices,（2026年3月23日アクセス）.
+11
+ NSF
+, “Electronic and Photonic Materials （EPM）”, https://www.nsf.gov/funding/opportunities/epm-electronic-
+photonic-materials/5353/pd03-1775,（2026年3月23日アクセス）.
+12
+ NSF
+, “Communications, Circuits, and Sensing-Systems （CCSS）”, https://www.nsf.gov/funding/opportunities/
+ccss-communications-circuits-sensing-systems,（2026年3月23日アクセス）.
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 69
+国内外の状況
+付録
+3
+
+===== PDF_PAGE 80 =====
+● Future of Semiconductors （FuSe2）
+13
+：Intel、Ericsson、Micron、Samsungなど企業との共同研究
+● Small Business Innovation Research（SBIR） 、Small Business Technology Transfer（STTR） ：
+ 中
+小企業の研究支援および技術移転
+〇DARPA ERI（Electronics Resurgence Initiative）
+14
+による主な技術支援、研究助成プログラ ム
+　2017年から開始した戦略で、2023年からはERI2.0とし て活動を強化。 （年間予算：約7億ドル）
+● NGMM（Next-Generation Microelectronics Manufacturing）
+15
+　 2023 年、DARPAが 8.4億ドル、テキサス州が5.2億ドル出資し、テキサス大学オー スティ ン校、テキサ
+ス電子工学研究所と協力し、異種材料集積技術の研究、開発、試作を行うTIE NGMMセンターを設立。
+● PIPES（Photonics in the Package for Extreme Scalability）
+16
+　 光 を用いてパッケージ化された集積回路（ASIC、FPGA）のデジタ ル接続性を大幅に向上させ、並列
+性とモジュール性による革新的な性能向上を目指す先端・探索型研究プログラ ム。
+● HAPPI（Heterogeneous Adaptively Produced Photonic Interfaces）
+17
+　 PIC に関するファウン ドリーサービス、自動設計ツール、パッケージング技術などデバイスや他の光学素
+子とのインターフェースを実現する研究プログラム。
+〇AIM Photonics（American Institute for Manufacturing Integrated Photonics）
+18
+ 　2015年、DoDと民間企業が総額3.2億ドルを投じて設立した製造イ ノ ベーション研究所（MII） 。次世
+代光技術の実用化を目的とし て連邦政府、州政府、学界、産業界などがコンソーシア ムに参画し、シリコ
+ンフォ トニクスの設計、試作、製造までの施設を提供し、技術移転のほか人材育成も進めている。2025年
+に公募したAdvanced Silicon Photonics for Enhanced Networking （ASPEN）では、DC関連のPIC
+関連部品、サブシステム、部品の技術開発に計1,000万ドルを助成する。
+〇半導体・科学法（CHIPS and Science Act of 2022）
+19
+ 　商務省国立標準技術研究所（NIST、National Institute of Standards and Technology）が管轄し、
+半導体分野での投資および技術開発を支援。シリコンフォ トニクス関連で補助金の支給が決まった機関、
+テーマは以下のとおり。
+● Absolics ：半導体先端パッケージング用ガラ ス基板の開発・製造（補助金：7,500万ドル）
+● Applied Materials： 次 世代の先進パッケージング 、異種材料集積のための基板製造設備の開発と製造。
+（補助金：1億ドル）
+● アリゾナ州立大学：FOWLPよる次世代パッケージの研究開発と製造（補助金：1億ドル）
+● Infinera： InP を用いた光半導体基板の製造施設の建設、試験・パッケージング施設の建設
+（補助金：9,300万ドル）
+13 N SF, “Future of Semiconductors （FuSe2）”, https://www.nsf.gov/funding/opportunities/fuse2-future-
+semiconductors/506141/nsf24-521,（2026年3月23日アクセス）.
+14
+ D
+ARPA, “What is ERI?”, https://eri-summit.darpa.mil/what-is-eri,（2026年3月23日アクセス）.
+15
+ D
+ARPA, “NGMM: Next-Generation Microelectronics Manufacturing”,
+
+https://www.darpa.mil/research/programs/next-generation-microelectronics,（2026年3月23日アクセス）.
+16
+ D
+ARPA, “PIPES: Photonics in the Package for Extreme Scalability”, https://www.darpa.mil/research/programs/
+photonics-in-the-package-for-extreme-scalability,（2026年3月23日アクセス）.
+17
+ D
+ARPA, “HAPPI: Heterogeneous Adaptively Produced Photonic Interfaces”,
+
+https://www.darpa.mil/research/programs/happi-heterogeneous,（2026年3月23日アクセス）.
+18
+ AIM Photonics,
+“ABOUT AIM PHOTONICS”, https://www.aimphotonics.com/about-us, （2026年3月23日アクセス） .
+19
+ NIST
+, “CHIPS FOR AMERICA”, https://www.nist.gov/chips,（2026年3月23日アクセス）.
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）70
+国内外の状況
+付録
+3
+
+===== PDF_PAGE 81 =====
+（3）欧州
+ 　
+マイ クロエレク トロニクス分野で特に製造技術の開発が他の諸国に比べ遅れていた欧州では、2023年施
+行の欧州半導体法で、産業競争力強化を目的にシリコンフォ トニクスを含めた半導体関連の開発支援、特
+に域内の拠点や技術を活用したコンソーシア ムの構築を積極的に進めている。
+〇欧州半導体法（EU Chips Act） 、欧州半導体イ ニシアチブ
+20
+ 　欧州委員会CHIPS Joint Undertaking （JU）が、欧州半導体法の最大の柱である欧州半導体イ ニシア
+チブを推進し ている。この中で、2023年以降7年間で110億ユーロを投じ、先端半導体に関する5つの分
+野で技術開発・試作を行う試作ラインやコンソーシア ムを設け、研究・イ ノ ベーションを産業化に繋げる戦
+略を進めている。
+● PIXEurope試作ライン
+21
+　 2025 年から10年間で約4億ユーロを投じ、 アイン トホー フェン工科大学 （オランダ） にPIC製造ライン （InP
+6inchウェハ）を設けて異種材料集積技術を量産化し、ブリ ュ ッセル自由大学での光結合、ティ ンダル
+国立研究所での実装試作に繋げるコンソーシア ム。現在、欧州11ヵ国の20機関が参画。
+● APECS（Advanced Packaging and Heterogeneous Integration for Electronic Components
+and Systems）
+22
+　 2 024年から4.5年間で約7.3億ユーロを投じ、Research Fab Microelectronics Germany（FMD）
+の技術を活用し て、応用志向の研究とChiplet技術など異種材料集積技術を結びつけるこ とで多様な産
+業での新たなニー ズに対応するこ とを目的としたコンソーシア ム。現在、欧州8ヵ国、10機関が参画。
+● STARLight（300 mm Silic on T echnology for Applications R elying on Light with Photonics
+Devices）
+23
+　 ST Micr oelectronicsが主導したコンソーシア ムで300 mmのシリコンフォ トニクス製造を実現する。具
+体的には、高速変調（レーンあたり200 Gbit/s超） 、オンチップ･レーザー、SOI技術やLNOI、BTO
+などの新材料、パッケージング技術と集積化などの研究開発を進める。2025～2028年に約1億ユーロ
+（EU助成金：2,548万ユーロ、コンソーシアム加盟企業負担金：7,589万ユーロ）で、現在11カ国、
+24企業・研究機関が参画。
+〇 Horizon Europeによる主な研究助成プログラ ム
+● HiCONNECTS
+24
+（予算：約1億2,800万ユーロ）
+　 集
+中型クラウ ドプラッ ト フォームを、持続可能かつエネルギー効率の高い分散型プラッ ト フォームへと変
+革するこ とを目標に、異種材料集積技術を開発する15か国64の機関のコンソーシア ムが運営する研究
+開発公募プロジェク ト。
+● PhotonHub PHACTORY
+25
+ （2025～2028年、予算：約1,600万ユーロ）
+　 ス
+タート アップや中小企業が欧州内30以上のパートナーの製造設備やPICファウン ドリー、その他の関
+連サービスを活用するこ とで幅広い産業分野における革新的な製品へのフォ トニクス技術の導入や展開
+20 Eur opean Commission, “European Chips Act: The Chips for Europe Initiative”, https://digital-strategy.ec.europa.
+eu/en/factpages/european-chips-act-chips-europe-initiative,（2026年3月23日アクセス）.
+21
+ C
+gips JU, “PIXEurope”, https://pixeurope.eu/,（2026年3月23日アクセス）.
+22
+ A
+PECS, “Pilot Line for Advanced Packaging and Heterogeneous Integration for Electronic Components and
+Systems”,https://www.apecs.eu/en/about-us.html#:~:text=The%20APECS%20（Advanced%20Packaging%20
+and,capabilities%20in%20critical%20technology%20areas,（2026年3月23日アクセス）.
+23
+ C
+gips JU, “STARLight : 300mm Silicon Technology for Applications Relying on Light with Photonics Devices”,
+https://www.starlight-project.eu/starlight/program/,（2026年3月23日アクセス）.
+24
+ HiC
+ONNECTS, “PROJECT”, https://www.hiconnects.org/project/,（2026年3月23日アクセス）.
+25
+ PhotonH
+ub, https://photonhub.eu/,（2026年3月23日アクセス）.
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 71
+国内外の状況
+付録
+3
+
+===== PDF_PAGE 82 =====
+を加速し、欧州の競争力を高め、新規事業を育成する。
+● photonixFAB
+26
+（2023～2026年、予算：約4,200万ユーロ）
+　 imec
+のSOI技術およびLIGENTECのSiN技術をドイツの半導体ファウン ドリー企業X-FABに移管し、
+中小企業などの量産を受けるこ とで、欧州のシリコンフォ トニクス産業サプライチェーンを強化する。
+● POLYNICES
+27
+（2023~2026年、予算：約500万ユーロ）
+　
+ Si3N4
+チップレッ ト、 InPデバイス、 マイ クロ光学素子を実装するポリマーベー スの基板開発プロジェク ト。
+● PHORMIC
+28
+ （2023～2026年、予算：約500万ユーロ）
+　
+ imec
+の技術 を活用したプログラマブル・フォ トニクス・プロセッサの研究開発プロジェク ト。
+● PUNCH
+29
+ （ 2022～2026年、予算：約500万ユーロ）
+　 imec
+が主導し、PHIX、NVIDIA、ERICSSON、AT&S、Fraunhofer、ケンブリ ッジ大学が参画し て、
+次世代光スイ ッチおよび実装技術を開発するプロジェク ト。
+● LOLIPOP
+30
+（2022～2026年、予算：約500万ユーロ）
+　 LioniX
+社が開発した光導波路技術にLNOI、Ge、GaAsなどを統合するヘテロジニアス・インテグレー
+ション技術を開発するプロジェクト。
+● PhotonQBoost
+31
+（2024～2026年、予算：約500万ユーロ）
+　 シ
+リコンフォ トニクスおよび量子技術の開発を行う中小企業を対象に、4万ユーロを上限に助成。
+● CSA（Networking and Future Photonics Strategy）
+32
+　 欧州 のシリコンフォ トニクス・エコシステムの戦略的発展を目的に、調整・支援を行う機関を対象とした
+プログラ ム。具体的には、Photonics21（欧州の技術プラッ ト フォーム）が策定した研究開発と戦略的
+ロードマップ（SRIA） などの更新を行う。2026年1月、総予算300万ユーロで公募が開始された。
+（4） 中国
+中国では、2021～2025年の経済・社会発展に関する基本計画である「第14次五カ年計画」で、国家が
+有する科学技術資源の統合・最適化の具体的な対象にシリコンフォ トニクスが含まれていた。この計画に基
+づき、様々な形で中央政府、地方政府が研究や技術開発の支援策を行っ ているが、以下以外の公開情報は限
+られている。
+● 国家重点研究開発計画（2024年）
+33
+　 光配線 用チップ・モジュール、BTO変調器、高速・高飽和シリコンベー スGe光導波路検出器など12項
+26 Photonics21, “photonixFAB”,
+https://www.photonics21.org/ppp-projects/workgroup-7/photonixFAB.php,（2026年3月23日アクセス）.
+27
+ Photonics21,
+“POLYNICES”,
+
+https://www.photonics21.org/ppp-projects/workgroup-7/POLYNICES.php,（2026年3月23日アクセス）.
+28
+ Photonics21,
+“PHORMIC”,
+
+https://www.photonics21.org/ppp-projects/workgroup-7/PHORMIC.php,（2026年3月23日アクセス）.
+29
+ Photonics21,
+“PUNCH”,
+
+https://www.photonics21.org/ppp-projects/workgroup-1/PUNCH.php,（2026年3月23日アクセス）.
+30
+ Photonics21,
+“ LOLIPOP”,
+
+https://www.photonics21.org/ppp-projects/workgroup-7/LOLIPOP.php,（2026年3月23日アクセス）.
+31
+ PhotonQ
+Boost, “About us”, https://photonqboost.eu/about-us/,（2026年3月23日アクセス）.
+32
+ Eur
+opean Commission, “Networking and Future Photonics Strategy （CSA） （Photonics Partnership）”,
+
+https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-
+CL4-2026-04-DIGIT
+AL-EMERGING-14,（2026年3月23日アクセス）.
+33
+ 深圳大学深圳大学, “ 关关于组织组织申报报国家重点研 发计划发计划“信息光子技 术术”重点 专项专项2024年度 项项目的通知”, https://cofs.szu.edu.cn/
+info/1146/2790.htm,（2026年3月23日アクセス）.
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）72
+国内外の状況
+付録
+3
+
+===== PDF_PAGE 83 =====
+目の光デバイス・集積技術の研究開発に対し、200～1,400万元を助成。 （3年間）
+● 国家重点研究開発計画（2025年）
+34
+　 51.2 Tbit/sスイ ッチ用CPO・ チップレッ ト技術、 マルチ ノードスケーラブルコンピューティ ング向け光ネッ
+トワーク技術の研究開発に対し、1,100万元を助成。 （3年間）
+● 国家自然科学基金（2024年）
+35
+　 CMOS 互換性シリコンフォ トニクスデバイス、インター フェー ス、シリコンベー ス3D集積技術などの基
+礎研究に対し、約300万元を助成。 （3年間）
+● 国家集成電路産業投資基金（第三期）
+　
+ 2
+024年からの第三期では半導体関連企業に政府引導基金とし て（実質、補助金） 、3,440億元を計画。
+この中で、 南通晶体などのシリコンフォ トニクス関連企業に投資し ているこ とが報道されているが
+36
+、政 府
+からの公表は第二期以降行われていない。
+● 国家情報光電子イ ノ ベーションセンター
+37
+　 2 017年に産学連携によるイ ノ ベーションプラッ ト フォームとし て国務院工業情報化部の認可を得て設立。
+次世代ネッ トワーク、データセンター用光通信、5Gなど向け高速光チップ、シリコンフォ トニクスチップ、
+量子チップ、半導体の産業化を推進。
+（5） 台湾
+TSMCによる先端半導体の受託生産などマイ クロエレク トロニクス分野の製造で世界でのプレゼンスが向上
+し ている台湾では、シリコンフォ トニクス分野でこれら製造技術、製造能力を活かしたネッ トワークの構築を
+積極的に進めている。政府による主な取組は以下のとおり。
+●「AI新十大建設」
+38
+（4年間で1,900億元投資）
+　
+ 2
+025年、行政院国家発展委員会がAIに関する6大インフラと3大コア技術（シリコンフォ トニクス、量
+子技術、AIロボッ ト）を構築する計画を策定した。シリコンフォ トニクスでは、研究開発と国際競争力
+を強化し、包括的な産業エコシステムを構築する。
+● シリコンフォトニクス CPO プラットフォーム
+39
+　 2 025年9月、国家科学技術委員会傘下の国家実験研究院半導体研究所が中心となり、CPOの設計、
+製造、パッケージング 、計測・評価までを網羅したコンソーシア ムを形成。 imecのほか、設計で
+Synopsys 、計測でアンリツなどが加わるなど地域を跨いだコンソーシア ムとなっ ている。
+● シリコンフォ トニクス先端技術研究開発・応用プロジェク ト
+40
+（2026~2029年）
+　
+ 2
+025年12月、国家科学技術委員会が公募開始。シリコンフォ トニクス技術の国際競争力向上、産業化
+加速などを目標に、2028年6.4 Tbit/sに対応する関連技術の完成を目指す。助成額は、毎年2,500万
+34 工业业和信息化部关关于发发布国家重点研发计划发计划, “信息光子技 术术”重点 专项专项2025 年度 项项目申报报指南”, http://kjt.gxzf.gov.cn/
+dtxx_59340/tzgg/P020260109611682458722.pdf,（2026年3月23日アクセス）.
+35
+ 国家
+自然科学基金委 员员会,” “未来集成电电路新理 论论与技 术术基础础研究” 专项项专项项目申请请指南”, https://www.nsfc.gov.cn/
+p1/2856/3156/73825.html,（2026年3月23日アクセス）.
+36
+ SINA,
+ “大基金三期再度出手 投了光刻工 艺艺核心原材料”. https://cj.sina.com.cn/articles/view/2868676035/
+aafc85c302001h6c2,（2026年3月23日アクセス）.
+37
+ 国家信息光电电子创创新中心, https://www.noeic.com/,（2026年3月23日アクセス）.
+38
+ 國家發展委
+員會, “【AI新十大建設-關鍵技術】發展AI所需關鍵技術,建立AI護國群山”,
+
+https://www.ndc.gov.tw/nc_16183_39400,（2026年3月23日アクセス）.
+39
+ 中
+央通訊社,”助攻先進封裝　國科會 矽矽光子CPO 平台推平台推產產學合作學合作”,
+https://www.cna.com.tw/news/afe/202509130136.aspx,（2026年3月23日アクセス）.
+40
+ 國
+科會, “國科會工程處公開徵求115年度「矽矽光子前瞻技術研發與應用計畫」光子前瞻技術研發與應用計畫」”,
+https://www.nstc.gov.tw/eng/ch/detail/9c67d132-16af-4140-80ef-b96e21c73fca,（2026年3月23日アクセス）.
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 73
+国内外の状況
+付録
+3
+
+===== PDF_PAGE 84 =====
+元以下。
+● 米国Advanced Micro Devices, Inc.（AMD）による研究開発センター建設支援
+41
+　 2 024年、米国AMDが発表したAI半導体およびシリコンフォ トニクスに関する研究開発センターの投資
+（約86憶元）に対し て台湾経済部は33億元の補助金を拠出し ている。
+41 日 本経済新聞, “米AMD、台湾南部2カ所に研究開発センター　390億円”
+https://www.nikkei.com/article/DGXZQOGM222NL0S4A820C2000000/,（2026年3月23日アクセス）.
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）74
+国内外の状況
+付録
+3
+
+===== PDF_PAGE 85 =====
+付録4 専門用語説明
+シリコンフォトニクス
+既存のシリコン半導体（CMOS）製造技術を用いて光導波路、光変調器、光検出器などのフォ トニクス回
+路をシリコンウエハ上に集積する技術。高屈折率のシリコン導波路により小型化・低コス ト化が可能であり、
+さらに異種材料との集積によっ て光源などの機能拡張も可能となる。
+光モジュール
+電気信号を光信号に変換、あるいは光信号を電気信号に変換し送受信を行う装置群のこ と。一般的に、電
+気通信は低速・短距離の伝送、光通信は高速・長距離の伝送を担う とされていたが、光通信はより高速・低
+消費電力であるため、近年は短距離においても光信号を用いる試みがなされている。
+波長多重・空間多重
+通信の大容量化・高速化を実現するため、複数の信号を同時に送る技術のこ と（並列化） 。波長多重は、
+波長の異なる複数の光信号をまとめて伝送する方式、空間多重は、複数の光ファイ バー等を用いて伝送路を
+物理的に複数用意し伝送する方式を指す。
+光変調器
+光の強度（振幅）や位相などを時間的に変化させる（変調する）こ とで、 送信したい信号を光に乗せる（符
+号化する）デバイスのこ と。光変調器には複数の方式があり、実際の使用では応答速度・動作波長・消費電
+力・サイズなどの特性を考慮する必要がある。
+光 スイッチ
+光信号を電気信号に変換するこ となく光のまま、伝送経路を切り替えるデバイスのこ と。電気スイ ッチと比
+較し て高速・低消費電力である一方、多くの場合は物理的に送信元と送信先を接続する回線交換方式である
+ため、デバイスの開発に加え て経路制御や切り替え制御の仕組みの構築が重要である。
+ボンディング
+半導体チップや基板などの材料同士を接合し て、電気的・機械的に一体化する技術のこ と。ワイ ヤボンディ
+ングやフ リ ップチップ接合などがあり、特にウェハボンディ ングはウェハ同士を直接貼り合わせて高密度集積
+や異種材料集積を実現する方法とし て用いられる。
+異種材料集積技術
+従来の単一材料（シリコン・化合物半導体など）で作製されていたデバイスにおいて、機能ごとに最適な
+異なる材料を組み合わせて一つの基板やチップ上に集積するこ とで、単一材料では困難だった高い性能や多
+機能性の実現を目指す技術。特にシリコンフォ トニクスでは、光源などの機能を補うためにIII-V族半導体と
+の集積が重要となる。
+光インターポーザー
+インターポーザーは複数の半導体チップ同士を1つのパッケージ内に高密度に集積・接続するための中間
+基板のこ とであり、 従来は樹脂・シリコン・ガラスなどの基板に電気的な配線を作っ ていたが、 光インターポー
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS） 75
+専門用語説明
+付録
+4
+
+===== PDF_PAGE 86 =====
+ザーはこれを光配線で行う。
+光 チップレット
+チップレッ トはこれまで1チップに集積した大規模な回路をあえ て複数の小さなチップに個片化するこ と。
+微細加工技術では対応できない歩留まり向上のほか、各メーカーの強みを活かした低コス ト化・高性能化が
+期待できる。光チップレッ トはこれを光にて実現する。
+Photonic Integrated Circuit（PIC）
+光変調器や光検出器などの複数の光機能素子を1つの基板上に集積した光集積回路であり、小型・低コス
+ト・省電力・高機能化を実現するマイ クロチップのこ と。光通信だけでなく、自動運転に不可欠なLiDARや、
+量子コンピューティングでの応用が期待されている。
+光電融合技術
+光信号を扱う回路と電気信号を扱う回路を組み合わせる技術のこ と。光は電気よりも伝送中のエネルギー
+損失が少ないため、なるべく電気を使わず光化するこ とで、省エネ化や高速化を実現する。長距離通信だけ
+でなく、コンピュータ内部を含めた光電融合、最終的なオール フォ トニックが期待されている。
+Co-Packaged Optics（CPO）
+スイ ッチやプロセッサなどの半導体チップと光トランシーバーを、同一パッケージ基板上に一体実装する技
+術のこ と。同一プリ ン ト基板上に実装するよりも電気配線の距離を短縮するこ とで、従来の外付け光モジュー
+ルに比べて高速・低消費電力・大容量のデータ伝送を実現できる。
+コヒーレント通 信
+光の強度だけでなく位相や偏波などの情報も利用し て信号を復元する光通信方式のこ と。受信側で局部発
+振光を用いた干渉検出を行う こ とで、高い受信感度と高速・大容量伝送を実現できる。長距離光通信や大容
+量ネットワークで 広く用 いられている。
+光メモリー
+光子（フォ ト ン）を使っ てデータを記憶するデバイスのこ と。光子を共振器やフォ トニック結晶などに一定
+時間閉じ込めて蓄積し、情報を光のまま保持する。長時間保持や小型集積化などの実現に向けて研究開発が
+進められている。
+戦略プロポーザル　　未来のAI 計算シ ス テ ム を支え る光デー タ通信技術 ～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+CRDS-FY2025-SP-07
+JST研究開発戦略センター（CRDS）76
+専門用語説明
+付録
+4
+
+===== PDF_PAGE 87 =====
+令和 8 年 3 月　March 2026
+国立研究開発法人科学技術振興機構　研究開発戦略センター
+Center for Research and Development Strategy, Japan Science and T echnology Agency
+〒102-0076 東京都千代田区五番町7 K’s 五番町
+電話
+ 03-5214-7481
+E-mail crds@jst.go.jp
+https://www.jst.go.jp/crds/
+ISBN 978-4-86829-059-9
+本書は著作権法等によっ て著作権が保護された著作物です。
+著作権法で認められた場合を除き、本書の全部又は一部を許可無く複写・複製するこ とを禁じます。
+引用を行う際は、必ず出典を記述願います。
+なお、本報告書の参考文献とし てインターネッ ト上の情報が掲載されている場合、当該情報はURLに併記された日付または本報告書の
+発行年月の1ヶ月前に入手し ているものです。
+上記以降の情報の更新は行わないものとします。
+This publication is protected by copyright law and international treaties.
+No part of this publication may be copied or reproduced in any form or by any means without permission of JST, except to the extent
+permitted by applicable law.
+Any quotations must be appropriately acknowledged.
+If you wish to copy, reproduce, display or otherwise use this publication, please contact crds@jst.go.jp.
+Please note that all web references in this report were last checked on the date given in the link or one month prior to publication.
+CRDS is not responsible for any changes in content thereafter.
+作 成メンバー
+総括責任者 魚崎 浩平 上席 フェロー ナ ノテク ノロジー・材料ユニッ ト
+リーダー
+ 魚見 和久
+ フ
+ェロー
+ ナ
+ノテク ノロジー・材料ユニッ ト
+メ ンバー
+ 木村 康則
+ 上席
+フェロー
+ シ
+ステム・情報科学技術ユニッ ト
+ 小崎 成治
+ フ
+ェロー
+ シ
+ステム・情報科学技術ユニッ ト
+ 高島 洋典
+ フ
+ェロー
+ シ
+ステム・情報科学技術ユニッ ト
+ 田
+子 智久
+ フ
+ェロー
+ STI
+基盤ユニッ ト
+ 馬場 寿夫
+ フ
+ェロー
+ ナ
+ノテク ノロジー・材料ユニッ ト
+ 平池 龍一
+ フ
+ェロー
+ シ
+ステム・情報科学技術ユニッ ト
+ 眞子 隆志
+ フ
+ェロー
+ ナ
+ノテク ノロジー・材料ユニッ ト
+ 曽
+根 純一
+ 特任
+フェロー
+ ナ
+ノテク ノロジー・材料ユニッ ト
+ 佐藤 敏文
+ 特任
+フェロー
+ ナ
+ノテク ノロジー・材料ユニッ ト
+ 石鉢 卓也
+ 主査
+ 未来創造研究開発推進部
+ 土屋 朋信
+ 主任専門
+員 戦略研究推進部
+ 丸 智香子
+ 主査
+ 戦略研究推進部(2025年4月まで)
+未来のAI計算システムを支える光データ通信技術
+～ ネ ッ ト ワー ク アーキ テ ク チ ャ ーから光デバイ ス材料ま で ～
+STRATEGIC PROPOSAL
+Optical Data Communication Technologies
+for Future AI Computing Systems
+~ From network architecture to optical devices and materials ~
+CRDS-FY2025-SP-07戦略プロポーザル
+
+===== PDF_PAGE 88 =====
+ISBN 978-4-86829-059-9
+FOR THE FUTURE OF
+SCIENCE AND
+SOCIETY
+https://www.jst.go.jp/crds/ 2026年
+3月
+JST CRDS
