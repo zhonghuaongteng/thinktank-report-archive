@@ -1,0 +1,75 @@
+# C-NISTEP-DP140-6A67EE82 原文切片
+
+- 原文：`03_证据底稿\原文PDF\C-NISTEP-DP140-6A67EE82.pdf`
+- PDF页数：1
+- 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
+
+## 执行摘要与开篇候选
+
+### PDF页 1
+
+為替変動の不確実性と研究開発投資：日本の企業データによる実証分析
+文部科学省 科学技術・学術政策研究所 第 1 研究グループ
+
+要旨
+ 日本の通貨「円」は、世界の主要先進国通貨の中でも最も変動の大きい通貨の一つである。 本
+研究では、為替レートの不確実性が企業活動、特に研究開発活動にどのような影響を与えるかを
+1994～2011 年の日本の製造業企業のパネルデータを用いて分析した。分析の結果、不確実性が
+高いと、間違った意思決定によって費用増加を招いてしまう可能性が高くなるので、為替レート変
+動により大きく晒されている企業（輸出から輸入を引いた純輸出が大きい企業）ほど、研究開発投
+資により慎重になることが示された。つまり、企業は需要の増加という好ましい環境下にあっても研
+究開発投資をあまり増やさず、最適な研究開発投資の増加率よりも低い増加にとどまることが示唆
+される。
+我々の分析結果から、研究開発投資を刺激するためには、為替レートの不確実性を減らすこと
+が重要であるといえる。また、企業の研究開発投資と輸出とを同時に促進していくためには、輸出
+促進政策と並行して、特許や研究開発補助金に関する制度の強化を図り、研究開発へのインセン
+ティブを高めることも求められる。
+
+Exchange Rate Uncertainty and R&D Investment: Evidence from Japanese
+Firms †
+First Theory -Oriented Research Group, National Institute of Science and Technology P olicy
+(NISTEP ), MEXT
+
+ABSTRACT
+The Japanese yen is one of the most volatile among developed country currencies. In this paper,
+we investigate how real effective exchange rate (REER) uncertainty affects f irms’ research and
+development (R&D) investment, using firm- level panel data for Japanese manufacturing firms for
+the period 1994 -2011. Our results show that firms that are more exposed to REER uncertainty are
+less responsive to changes in demand condition s. Uncertainty makes firms more cautious when
+investing since high uncertainty increases the chances of making a costly mistake. Our finding
+thus provides evidence of the caution effect of uncertainty. The caution effect also increases the
+persistence of R &D, implying that R&D investment does not increase much even if firms face
+favorable demand conditions. Reducing REER uncertainty is important to stimulate R&D
+investment, especially for firms that are more exposed to international competition and REER
+uncertainty.
+
+Keywords: R&D; Uncertainty; Real effective exchange rate
+JEL classification: F14, F31, D92, E32, O30
+
+## T1_国家研发与方向设定
+
+未自动命中；需人工按目录复核。
+
+## T2_市场与产业政策边界
+
+未自动命中；需人工按目录复核。
+
+## T4_国际合作与开放
+
+未自动命中；需人工按目录复核。
+
+## T5_供应链与技术依赖
+
+未自动命中；需人工按目录复核。
+
+## T7_管制与研究安全
+
+未自动命中；需人工按目录复核。
+
+## T8_新兴技术治理
+
+未自动命中；需人工按目录复核。
+
+## T10_预见与优先领域
+
+未自动命中；需人工按目录复核。

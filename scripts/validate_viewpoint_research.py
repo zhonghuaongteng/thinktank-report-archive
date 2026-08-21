@@ -35,8 +35,9 @@ def expected_catalog_size(
     merics_asset_count: int = 0,
     bruegel_asset_count: int = 0,
     crds_asset_count: int = 0,
+    nistep_asset_count: int = 0,
 ) -> int:
-    return seed_count + catalog_asset_count + early_asset_count + cset_asset_count + atlantic_asset_count + belfer_asset_count + nbr_asset_count + merics_asset_count + bruegel_asset_count + crds_asset_count
+    return seed_count + catalog_asset_count + early_asset_count + cset_asset_count + atlantic_asset_count + belfer_asset_count + nbr_asset_count + merics_asset_count + bruegel_asset_count + crds_asset_count + nistep_asset_count
 
 
 def main() -> None:

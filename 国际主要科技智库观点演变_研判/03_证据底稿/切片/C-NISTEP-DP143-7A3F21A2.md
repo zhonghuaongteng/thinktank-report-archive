@@ -1,0 +1,77 @@
+# C-NISTEP-DP143-7A3F21A2 原文切片
+
+- 原文：`03_证据底稿\原文PDF\C-NISTEP-DP143-7A3F21A2.pdf`
+- PDF页数：1
+- 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
+
+## 执行摘要与开篇候选
+
+### PDF页 1
+
+日本企業における特許出願が生存率に与える効果の実証分析～オープンイノベーション
+時代の創造的破壊に関する一考察～
+文部科学省 科学技術・学術政策研究所 第１研究グループ
+要旨
+本稿では、日本企業に関する経済センサスと IIP パテントデータベースを接続したデータセッ
+トに基づき、特許出願をイノベーションの指標として活用し、若い企業のイノベーションと生
+存率の間の関係性を分析する。発明における外部連携と連携相手のタイプのようなイノベーシ
+ョン活動の組織に関する指標を構築し、イノベーション活動に対する２つの競合する要因、す
+なわち技術能力（企業の生存率に対して正の影響）と商業化のリスク（企業の生存率に対して
+負の影響）の効果を区別して分析する。本研究では、イノベーションが企業の生存率に与える
+正の影響は一般的に負の影響を上回り、この傾向は出願された特許がより大きな潜在的な市場
+価値を持つ場合に強くなることがわかった。加えて、 大学との連携がある企業の生存率は高く、
+その一方で他企業との連携が生存率に与える効果は企業規模に依存することがわかった。この
+結果から、連携の利益を獲得するには、オープンイノベーションの複雑性を乗り越えるための
+一定規模の経営資源が必要であることが示唆される。
+
+Creative Destruction in the Era of Open Innovation: Empirical Investigation into the
+Relationship between Patenting and Survival of Japanese Firms
+First Theory Oriented Research Group, National Institute of Science and Technology Policy (NISTEP),
+MEXT
+ABSTRACT
+This paper uses patent filing as an indicator of innovation and investigates the relationship between
+innovation and the survival of young firms, based on a dataset linking the Economic Census and IIP
+Patent Database for Japanese firms. We have constructed indicators showing the organization of
+innovative activities, such as external collaboration on inventions and the type of collaborative partners,
+and disentangled two competing factors on innovative activities, i.e. technological capability (positive
+influencing firm survival) and commercial risk (negative influencing firm survival). We have found that
+positive impacts surpass negative ones in general, and this tendency strengthens when patents have
+relatively greater potential market value. In addition, collaboration with universities always leads to
+higher probability of survival, while the impact of collaboration with other firms depends on firm size,
+that is, a certain level of managerial resources to overcome the complexity involved in open innovation
+is required to achieve gains from collaboration.
+
+本 DISCUSSION PAPER は、文部科学省科学技術・学術政策研究所（NISTEP）と独立行政法人経
+済産業研究所（RIETI）との共同研究プロジェクトの成果の一部である。
+This DISCUSSION PAPER is derived from a joint research project of NISTEP and the
+Research Institute of Economy, Trade and Industry (RIETI).
+
+## T1_国家研发与方向设定
+
+未自动命中；需人工按目录复核。
+
+## T2_市场与产业政策边界
+
+未自动命中；需人工按目录复核。
+
+## T4_国际合作与开放
+
+- PDF页1：ion and investigates the relationship between innovation and the survival of young firms, based on a dataset linking the Economic Census and IIP Patent Database for Japanese firms. We have constructed indicators showing the organization of innovative activities, such as external collaboration on inventions and the type of collaborative partners, and disentangled two competing factors on innovative activities, i.e. technological capability (positive influencing firm survival) and commercial risk (negative influencing firm survival). We have found that positive impacts surpass negative ones in general, and this tendency strengthens when patents have relatively greater potential market value. In addition, collaboration with universities always leads to higher probability of survival, while the impact of c
+
+- PDF页1：capability (positive influencing firm survival) and commercial risk (negative influencing firm survival). We have found that positive impacts surpass negative ones in general, and this tendency strengthens when patents have relatively greater potential market value. In addition, collaboration with universities always leads to higher probability of survival, while the impact of collaboration with other firms depends on firm size, that is, a certain level of managerial resources to overcome the complexity involved in open innovation is required to achieve gains from collaboration. 本 DISCUSSION PAPER は、文部科学省科学技術・学術政策研究所（NISTEP）と独立行政法人経 済産業研究所（RIETI）との共同研究プロジェクトの成果の一部である。 This DISCUSSION PAPER is derived from a joint research project of NISTEP and the Research Institute of Economy, Trade and Industry (RIET
+
+## T5_供应链与技术依赖
+
+未自动命中；需人工按目录复核。
+
+## T7_管制与研究安全
+
+未自动命中；需人工按目录复核。
+
+## T8_新兴技术治理
+
+未自动命中；需人工按目录复核。
+
+## T10_预见与优先领域
+
+未自动命中；需人工按目录复核。

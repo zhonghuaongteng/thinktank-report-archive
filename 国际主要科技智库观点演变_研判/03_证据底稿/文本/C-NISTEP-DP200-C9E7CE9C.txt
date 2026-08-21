@@ -1,0 +1,2216 @@
+
+===== PDF_PAGE 1 =====
+DISCUSSION PAPER No.200 プレプリントとジャーナル論⽂の差異： bioRxivを⽤いた試⾏ Differences between preprints and journal articles: a trial using bioRxiv 2021年8⽉ ⽂部科学省 科学技術・学術政策研究所 データ解析政策研究室 ⼩柴 等 林 和弘
+
+===== PDF_PAGE 2 =====
+本DISCUSSION PAPERは、所内での討論に⽤いるとともに、関係の⽅々からの御意⾒を頂くことを⽬的に作成したものである。 また、本DISCUSSION PAPERの内容は、執筆者の⾒解に基づいてまとめられたものであり、必ずしも機関の公式の⾒解を⽰すものではないことに留意されたい。 The DISCUSSION PAPER series are published for discussion within the National Institute of Science and Technology Policy (NISTEP) as well as receiving comments from the community. It should be noticed that the opinions in this DISCUSSION PAPER are the sole responsibility of the author(s) and do not necessarily reflect the official views of NISTEP. 【執筆者】 ⼩柴 等 ⽂部科学省科学技術・学術政策研究所 データ解析政策研究室・主任研究官 林 和弘 ⽂部科学省科学技術・学術政策研究所 データ解析政策研究室・室⻑ 【Authors】 KOHISBA Hitoshi Senior Research Fellow, Research-Unit for Data Application, National Institute of Science and Technology Policy (NISTEP), MEXT HAYASHI Kazuhiro Senior Research Fellow, Research-Unit for Data Application, National Institute of Science and Technology Policy (NISTEP), MEXT 本報告書の引⽤を⾏う際には、以下を参考に出典を明記願います。 Please specify reference as the following example when citing this paper. ⼩柴等・林和弘 (2021) 「プレプリントとジャーナル論⽂の差異：bioRxivを⽤いた試⾏」，NISTEP DISCUSSION PAPER，No.200，⽂部科学省科学技術・学術政策研究所． DOI: https://doi.org/10.15108/dp200 KOSHIBA Hitoshi and HAYASHI Kazuhiro (2021) “Differences between preprints and journal articles: a trial using bioRxiv,” NISTEP DISCUSSION PAPER, No.200, National Institute of Science and Technology Policy, Tokyo. DOI: https://doi.org/10.15108/dp200
+
+===== PDF_PAGE 3 =====
+䄐樟 bioRxiv 鍱车
+闋卥侓瞬煝疴㵍
+釐仿
+侓瞬皑呾 (♧┫EBPM Evidence-based Policy Making) ٭؛
+⸮詇韢
+ֻ
+ג׿׈ OA 焒锶
+
+ bioRxiv כع٤ٛوٝوס OA ػ٭ٔة
+⪢倀 XML ׾׌
+倀剹꿔⛣
+韢
+דַ
+ע 47% 
+焒
+מ׼׿׆
+ע
+׼ׅ
+
+Diﬀerences between preprints and journal articles: a trial using bioRxiv
+Research-Unit for Data Application, National Institute of Science and Technology Policy (NISTEP),
+MEXT
+ABSTRACT
+In light of the strengthening of the evidence-based policy making (EBPM) function and the trend
+toward open science, this paper considers whether analysis using preprints can provide new knowledge
+in a complementary manner to the analysis of research power based on original papers. In particular,
+the preprint and the ﬁnal version of the preprint are used as the basis for the analysis. In particular, we
+attempted to see if we could gain insights by comparing preprints with OA journal articles in which
+they were ﬁnally published.
+Translated with www.DeepL.com/Translator (free version)
+First, due to the recent trend of open journals, we were able to secure a certain amount of full-text
+XML of bioRxiv preprints and journal articles, and veriﬁed the technical feasibility of comparing
+preprints and journal articles. On the other hand, within the scope of this trial, which attempted to
+identify diﬀerences between preprints and journal articles, and between preprints that became journal
+articles and those that did not, we could not ﬁnd any clear diﬀerences. Even using machine learning
+
+===== PDF_PAGE 4 =====
+methods, the classiﬁcation accuracy was not high at about 47%.
+The result that there is no signiﬁcant diﬀerence between preprints and journal articles is consistent
+with the ﬁndings of previous studies, but it is also reproducible in a larger and relatively recent context.
+In addition to these ﬁndings, the new ﬁndings of this paper are that the diﬀerences are small in many
+external criteria such as the number of authors, and the diﬀerences between preprints and journal
+articles are not large.
+2
+
+===== PDF_PAGE 5 =====
+泘域
+1 מ״׋ע 1
+2 ׄט 1
+3 ذ٭ظ 3
+3.1  bioRxiv .............................. 3
+3.2 俙 .............................. 3
+3.3 ⺅䕑偙岺 ...................................... 4
+4 ⮆冪亠嫎 5
+4.1 嬟鼛㸐骭 .......................................... 5
+4.2 ꈷ㴻 ....................................... 5
+4.3 偙 ...................................... 5
+4.4 ⮔俆銨槁 .......................................... 6
+4.5 “ ع٤ٛوٝو׾׌ ” 偙 ............................ 7
+5 磵冽 7
+5.1 ⮴劻陭㴻 .......................................... 7
+5.2 꿔⛣䍲 ....................................... 9
+5.3 㕈徙 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+5.4 鞪吉 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+5.5 䱿㴻 . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+6 縒㴔 22
+6.1 汦䟨掾 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+7 ״כױ 23
+♀ꎰ A 奂鬳 26
+♀ꎰ B 奂鬳 27
+i
+
+===== PDF_PAGE 6 =====
+1 מ״׋ע
+♧┫ STI ׂט
+侓瞬皑呾 (♧┫ EBPM Evidence-based Policy Making)  ր睗 6 劻
+㕈勓阛氺 (♤⾔ 3 䌑 3 劓 26 傽ꫂ饗尴㴻 )ց ♧┫睗6 ַכ
+ֹ
+EBPM ״
+
+؅
+ײ
+㳔銉侓瞬煝疴䨾♧┫ NISTEP ت٤ؙؕئ
+ֿ STI
+
+׿׈
+⥰⻔ trends 
+ך
+׊
+
+א
+ֿכ׆׾
+ NISTEP ׾ַיז 1) 
+לךכ
+韢
+ع٤ٛوٝو
+
+׾ֵךف٭ئع٤ٛوٝوס bioRxiv 㸐骭
+ع٤ٛوٝوג׿׈
+
+2 ׄט
+עי׊כ [Klein19 , Carneiro20 , Akbaritabar21 ] 
+Klein[ Klein19 ] ׵גז
+1) 睗 6  “ع٤ٛوٝوסי׊כח
+ג׊
+׾ֵחחײ ” 
+1
+
+===== PDF_PAGE 7 =====
+A/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uniFF08/uni6295/uni7A3F/uni539F/uni7A3F/uniFF09/uni521D/uni671F/uni539F/uni7A3FB/uni51FA/uni7248/uni539F/uni7A3F
+/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+/uni7DE8/uni96C6
+/uni767B/uni9332C/uni5B66/uni8853/uni96D1/uni8A8C/uni7B49/uni306B/uni6295/uni7A3F/uni30FB/uni51FA/uni7248/uni305B/uni305A/uni305D/uni306E/uni307E/uni307E
+bioRxiv•A/uni3068B/uni3067/uni3069/uni308C/uni3060/uni3051/uni306E/uni9055/uni3044/uni304C/uni3042/uni308B/uni304B/uniFF08/uni67FB/uni8AAD/uniFF0C/uni7DE8/uni96C6/uni3067/uni3069/uni308C/uni3060/uni3051/uni5909/uni308F/uni308B/uni304B/uniFF09•A/uni3068/uni4F3C/uni305F/uni5185/uni5BB9/uni306EC/uni3092/uni9078/uni3093/uni3060/uni3068/uni304D/uni306B/uni9055/uni3044/uni3092/uni898B/uni5206/uni3051/uni308B/uni3053/uni3068/uni304C/uni3067/uni304D/uni308B/uni304B/uniFF08/uni51FA/uni7248/uni3055/uni308C/uni308B/uni3082/uni306E/uni3092/uni4E88/uni60F3/uni3067/uni304D/uni308B/uni304B/uniFF09C
+/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uniFF08/uni6295/uni7A3F/uni539F/uni7A3F/uniFF09/uni52A0/uni7B46/uni30FB/uni4FEE/uni6B63/uni6295/uni7A3F/uni4E2D//uni6295/uni7A3F/uni3057/uni305F/uni3082/uni306E/uni306E/uni63A1/uni9332/uni3055/uni308C/uni305A
+/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni8A8C/uni306B/uni63A1/uni9332
+/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni8A8C/uni203B/uni5206/uni6790/uni5BFE/uni8C61/uni306FOA/uni7CFB/uni3067/uniFF0C/uni5168/uni6587XML/uni306E/uni3042/uni308B/uni3082/uni306E/uni306E/uni307F/uni521D/uni7248n/uni7248
+/uni67FB/uni8AAD
+㎫ 1 嚣锡㎫
+עך׆׆ arXiv bioRxiv מ 12,000 وٝو׾ֻ
+דג
+ע arXiv bioRxiv עיַחמ 2013 䌑 11 ׼־ 2016 䌑 11 מ
+ך 7 עعت؞طٜن 220 מ
+׾׌כ Bag-of-Word ס Cos 꿔⛣
+עך bioRxiv ע 2019 ⚂
+ך 2 笴 7  bioRxiv
+⮔俆銨
+ػ٭ٔة
+
+Carneiro[ Carneiro20 ]  bioRxiv מ PubMed 韢
+ع٤ٛوٝوעס׵ג׿׈
+עך bioRxiv ע 2016
+٤ؓ
+עًؓס 56 鞪吉
+ֿ 2016 ַי׊
+
+Akbaritabar[ Akbaritabar21 ] ַי׊
+6000  100
+סכׇ
+׊
+
+2
+
+===== PDF_PAGE 8 =====
+3 ذ٭ظ
+׾׬
+3.1  bioRxiv
+׾׿׼ַ bioRxiv מ
+
+׾׿׼ַ arXiv ꩽ
+ַ 2) ע׼־ arXiv ׿׼ֻ
+ت٤ٝؒن٤؜وشع׍׿׈
+ “ٜػ٭ٔة
+嬟鼛 ” ֿت٭خס TeX ׾ַי׿׈
+韢倀
+ַ׌׷׊ HTML ׷
+XML 
+韢倀⻎瞏
+ bioRxiv ע JATS(Journal Article Tag Suite) ⪢倀
+XML  bioRxiv جؠؓ٤و٭؛׵יַחמ
+׽ֽך؆ [卲 21]׽ JATS ⪢倀
+XML و
+׼־לם bioRxiv ׊
+ֿ 1 
+3.2 丗
+עי׊כ 2019 ꄼ
+
+׵ COVID-19  2020 䌑♧ꮳ COVID-19 䫋畇
+׾ַי׿׈ [㸯叿 20]bioRxiv ַםעךס׵ם׀
+[卲 21] ׿׆כֹ
+둚
+
+ך׆׆ COVID-19 עع٤ٛوٝوס 2019 䌑 12  2019
+ח־ COVID-19 債㖥
+2)  https://arxiv.org/help/stats
+3
+
+===== PDF_PAGE 9 =====
+[Abdill19 , 卲 21] ׽ֽכס bioRxiv ַי׿׈
+מ 6 ׼־ 8 勓畇
+ע 2021 䌑 5  2019 䌑 12 יײ׼־ 1 ׂ 17 劻ꪨ
+׽ֽיַ 2019 ٭ٔة
+
+׼־ 2019 ٛوٝوגזםכ
+⪢倀 XML ֵס
+⪢倀 XML ס
+ 
+丗 28,805 ⚂
+鑜乃丗 13,450 ⚂
+⪒乃 XML ⟊僗丗 7,985 ⚂
+׿׆
+鱍㎋
+ׄד
+䈼沌
+
+3.3 ⹦䐂亠嫎
+
+bioRxiv ꇃ⹛ 2021 䌑 4 מ bioRxiv ס API 3) 霄
+מ jats xml path”׼׿אמ
+ס URL 갾䓜霂 URL ׵׾ׂיז
+
+
+霄
+עמ doi”  CrossRef ס API 4) סع٤ٛوٝوי׋ DOI 
+מ is-preprint-of” 韢倀瞏
+ע is-preprint-of” ס id-type” ֿ doi” ס ID(DOI) ֿ
+׬׌ע
+י DOI 
+⪢倀 XML ؅ 2 ٭ظס
+ API 㸐
+3) https://api.biorxiv.org/
+4) https://api.crossref.org/
+4
+
+===== PDF_PAGE 10 =====
+יַחמٜػ٭ٔةتجؠؓ٤و٭؛סׂ PubMed Central
+(PMC) ֿ PMC Open Access Subset 5) יַֽמ JATS ⪢倀 XML י׿ׂי׊
+עך׆׆ PubMed Central OAI-PMH (Open Archives Initiative Protocol for Metadata
+Harvesting) 6) 
+PMC OAI-PMH עך PMC גי ID ׾ֵך PMCID מت٭ي؅
+ PMC ס ID Converter API 7) י׋ DOI ؅ PMCID סא
+ OAI-PMH סי׬׌ DOI ֿ PMCID 
+PMCID ⪢倀 XML ⪢倀 XML 牞
+ע PMCID י׬׌ע OAI-PMH ٭ظיׄ־מ
+
+4 ⮆冪亠嫎
+׾׬
+4.1 奂鬳㵚霄
+ע 3 
+מ
+وٝوי׊כ٤ؕٚت٭يמ
+嬟鼛
+“ع٤ٛوٝوס ” 
+4.2 鹟㲊
+詇脢俙⹧脝倀桬俙嫘訒俙ⷃ靣
+꿔⛣䍲
+׵־׾ֵ
+
+4.3 亠
+
+עמ 2 ס׆
+
+5) https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/
+6) https://www.ncbi.nlm.nih.gov/pmc/tools/oai/
+7) https://www.ncbi.nlm.nih.gov/pmc/tools/id-converter-api/
+5
+
+===== PDF_PAGE 11 =====
+1. 2 倀剹 A,B 
+2. A ח׵؅ B 
+3. A,B יֻ 2.  B 
+4. 2. 3.؅ײסס׵ס 2 ًؓ
+
+5. Jaccard  2 倀剹 A,B 
+ֽם 4. ┞傾 3. 
+עך “꿔⛣䍲 ” ⮔俆銨
+꿔⛣
+ַ
+
+4.4 ⮆丆辐杯
+׾ֵך
+ך
+
+עי׊כ FastText 8) ٛوٝو׾ֵך
+ skip-gram ך 300 ؅ײ
+עذ٭ظיז NLTK כ WordNet מت٭ي؅ Lemmatize غ٭٠وشعت׷
+
+篙卸 230,020 ס 300 ⮔俆銨
+
+4.4.1 יַחמ
+ףֻ BioBERT 9) 窢䍲
+ע BioBERT 栃蔦
+ג׊ FastText 
+מ 5 
+BioBERT עך 5 ך 27.8sec 䌐㐬 5.6sec FastText עךס׵ג׊ 5 ⻉阛
+ך 0.1sec ׾ֵך 10) 
+FastText ס״גסא Lemmatize ꯙ
+׼םעיז
+8) https://fasttext.cc/
+9) https://github.com/dmis-lab/biobert
+10) FastText ؅ DB
+
+6
+
+===== PDF_PAGE 12 =====
+ג׊ 5 כ׾׌ 278  1 ׽ 20
+מ 2 㖪⻉ 40  BioBERT
+עך 622 免ꪨ笴 26 ♑偙 FastText עךت٭ي 2 
+׾׌
+י׊ FastText  BioBERT ؅
+כ FastText ך
+
+4.5 “ ع٤ٛوٝو׾׌ ” 亠
+ٝوٜػ٭ٔةמ
+׷׽־؂עס׾׌
+׆א
+嬟
+
+“ع٤ٛوٝو׾׌ ” ؅
+ַ
+ַםַיזםמٜػ٭ٔة
+
+״גס NGT 11) ꁿ
+┪⛺ 100 ┪⛺ 100 匛⚂
+ⶨ⚂瓦䍲㲽㐂
+עًؓסع٤ٛوٝو׾׌ 6,905 ⻎
+ “ٛوٝو׾׌
+ع٤” ע 3,874 
+5 磵冽
+5.1 ⮣僿錃㲊
+ع٤ٛوٝوٜػ٭ٔة - 
+ع٤ٛوٝوٜػ٭ٔة - ⪢嫘訒篁
+㎫ 2 
+㎫ 2 鴇곐 0.3 ┞偙
+עך׎؂ 0.3 ׵ס
+ס Jaccard 鴇곐 0.3 
+11) https://github.com/yahoojapan/NGT
+7
+
+===== PDF_PAGE 13 =====
+Ğ
+Ğ
+Ğ
+/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni3068/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB
+/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni3068/uni985E/uni4F3C/uni3059/uni308B/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+/uni30E9/uni30F3/uni30C0/uni30E0/uni306A/uni7D44/uni307F/uni5408/uni308F/uni305B
+/
+
+/
+
+/
+
+㎫ 2 ⮔䉘
+8
+
+===== PDF_PAGE 14 =====
+5.2 걉⛍䈱
+ס Jaccard ㎫ 3 
+Ğ
+Ğ
+Ğ/
+
+/
+
+/
+
+/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni3068/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB
+/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni3068/uni985E/uni4F3C/uni3059/uni308B/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+/uni30E9/uni30F3/uni30C0/uni30E0/uni306A/uni7D44/uni307F/uni5408/uni308F/uni305B
+㎫ 3 ⮔䉘
+㎫ 3 עךزشُّر٤ٚ׾םכ٤ؕٚت٭ي 0.95 עס׵ח
+ 0.93 韢倀
+ׂ 1.0 ٤ٛوٝو׾׌
+꿔⛣䍲 1.0 詇脢蔦✄
+
+9
+
+===== PDF_PAGE 15 =====
+5.3 㓹嶖
+
+㎫ 4,5 יַחמ “韢倀 ” כ
+
+/uni5BFE/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni5BFE/uni985E/uni4F3C/uni3059/uni308B/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+㎫ 4 ⮔䉘
+㎫ 6,7 ㎫ 6,7 ╚tab ע JATS-XML ס table  tabw
+ע table-wrap עך table  table-wrap 㝂
+ table, table-wrap 
+㎫ 8,9 ㎫ 9 갾
+㙟Ⲏ
+㎫ 8 
+㎫ 10 
+10
+
+===== PDF_PAGE 16 =====
+/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni985E/uni4F3C/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+/uni5BFE/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni5BFE/uni985E/uni4F3C/uni3059/uni308B/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+㎫ 5 ⮔䉘
+/uni5BFE/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni5BFE/uni985E/uni4F3C/uni3059/uni308B/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+㎫ 6 ⮔䉘
+11
+
+===== PDF_PAGE 17 =====
+/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni985E/uni4F3C/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+/uni5BFE/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni5BFE/uni985E/uni4F3C/uni3059/uni308B/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+㎫ 7 ⮔䉘
+/uni6BB5/uni843D/uni6570/uni306E/uni5DEE(jnl-ppr)
+/uni5358/uni8A9E/uni6570/uni306E/uni5DEE(jnl-ppr)
+/uni6BB5/uni843D/uni6570/uni306E/uni5DEE(sim_ppr–jnl_ppr)
+/uni5358/uni8A9E/uni6570/uni306E/uni5DEE(sim_ppr–jnl_ppr)
+/uni5BFE/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni5BFE/uni985E/uni4F3C/uni3059/uni308B/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+㎫ 8 ⮔䉘
+12
+
+===== PDF_PAGE 18 =====
+/uni6BB5/uni843D/uni6570
+/uni5358/uni8A9E/uni6570
+/uni6BB5/uni843D/uni6570
+/uni5358/uni8A9E/uni6570
+/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni985E/uni4F3C/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+/uni5BFE/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni5BFE/uni985E/uni4F3C/uni3059/uni308B/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+㎫ 9 ⮔䉘
+13
+
+===== PDF_PAGE 19 =====
+/uni91CD/uni8907/uni3059/uni308B/uni30BF/uni30A4/uni30C8/uni30EB/uni306E/uni4EF6/uni6570
+/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni306E/uni307F/uni306B/uni5B58/uni5728/uni3059/uni308B/uni7AE0/uni306E/uni6570
+/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni306E/uni307F/uni306B/uni5B58/uni5728/uni3059/uni308B/uni7AE0/uni306E/uni6570
+/uni91CD/uni8907/uni3059/uni308B/uni30BF/uni30A4/uni30C8/uni30EB/uni306E/uni4EF6/uni6570
+/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni306E/uni307F/uni306B/uni5B58/uni5728/uni3059/uni308B/uni7AE0/uni306E/uni6570
+/uni985E/uni4F3C/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni306E/uni307F/uni306B/uni5B58/uni5728/uni3059/uni308B/uni7AE0/uni306E/uni6570
+/uni5BFE/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni5BFE/uni985E/uni4F3C/uni3059/uni308B/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8
+㎫ 10 ⮔䉘
+14
+
+===== PDF_PAGE 20 =====
+5.4 鐧削
+׵יַחמٜعؕذ׾ם
+
+5.4.1 䄐
+٭ٔة
+כغؗٚؠغ٭٠׿ב׿איַחמ
+
+ס 1. ” 㝕倀㲻㸯
+
+ع٤ٛوٝوٜػ٭ٔة - ㎫ 11,12,13 
+ResultsDiscussionIntroductionMaterials_And_MethodsMethodsConclusionsSupporting_InformationConclusionResults_And_DiscussionBackgroundMaterial_And_Methods!!toplevel
+Experimental_ProceduresMethods_And_MaterialsImplementation
+Technical_Validation
+Method
+Data_RecordsBackground_&_Summary
+MethodologyDiscussion_And_Conclusions
+Discussion_And_Conclusion
+Usage_Notes
+Materials_&_Methods
+Model
+Discussions
+General_DiscussionAuthor_Contributions
+Results_And_DiscussionsTheory
+Data_Availability
+LimitationsMaterial_&_Methods
+Methods_And_Results
+Experiment_2Data_DescriptionConcluding_Remarks
+Result
+Experiment_1Data_AnalysisResults_&_Discussion
+Algorithm
+Design_And_Implementation
+Data
+SummaryMaterialsNew_Approaches
+Experiment_3
+Main_Text
+Experimental_Section
+Model_And_Methods
+DescriptionOnline_Methods
+Analyses
+Research_Design_And_MethodsSimulation_StudiesResults/Discussion
+Results_And_AnalysisSupplementary_DataMethods_And_Implementation
+Supplementary_MaterialComputational_MethodsMethods_&_Materials
+Conclusions_And_DiscussionPatients_And_MethodsData_And_Methods
+Related_Work
+Experiments
+Conclusion_And_Future_Work
+Software_Availability
+Simulations
+Findings
+Materials_And_Method
+Availability_And_Future_Directions
+Discussion_And_OutlookFuture_Directions
+Database_Content_And_Web_InterfaceEthics
+Literature_Review
+Models_And_ResultsSimulation_StudyConclusions_And_Future_Directions
+Methods_And_Material
+Model_Description
+Simulation_Results
+Simulation
+Adaptive_OpticsExperimental_Study
+Implementation_And_Availability
+Software
+Study_2Study_1
+Sensitivity_Analysis
+Results_And_Conclusion
+Implications
+Theory_And_Methods
+Subjects_And_Methods
+Experiments_And_Results
+Conflict_Of_Interest
+Statistics
+Model_Development
+Methods_And_Data
+ValidationStatistical_Analysis
+Summary_And_Conclusions
+Animals,_Material_And_Methods
+Result_And_Discussion
+Model_FormulationExperimental_ResultsBenchmarking
+Summary_And_OutlookSoftware_Tools
+Dats_Use_Metadata
+Pathway_And_Interaction_Data_Coverage
+Problem_And_Method
+Data_Formats_And_AvailabilityTheory_And_Implementation
+Walk-Through_Examples
+Netcomp:_Network_Comparison_In_Python
+Notation Software_InfrastructureUse_Case
+Conclusion_And_Discussion
+Usage_Scenario
+Isolation_Of_An_Asgard_Archaeon
+Alternative_Formulation_In_Tn_Dimensions
+Benchmark_Problems_For_Models_Of_Root_Architecture_And_Function
+Ciliary_Coordination_And_Emergence_Of_Metachronal_Waves
+Data_Acquisition_And_Pre-Processing
+The_Proposed_Software
+Physiology
+Web_Applications_And_Training_Materials
+ApplicationsFuture_Implementations
+Dats_Access_Metadata
+Utility_And_DiscussionProtecting_Confidential_Research_Data
+Results,_Discussion,_Conclusions
+Overview_Of_The_ModelConclusions_And_Future_Developments
+Maximum_Entropy
+Neutrality
+Construction_And_Content
+Evaluation_Of_Wgd_Inferences
+Motivating_Example
+Experiments,_Results_And_DiscussionGenome_Sizes_And_Basic_FeaturesEcosystem_Sampling
+Endosymbionts
+The_Gtm_Method
+Divide-And-Conquer_Pipelines_For_Dtms
+Case_Study:_The_Gills_Of_Scomber_JaponicusA_Standard_Form_For_Overflow_Metabolism_Models
+The_Dtm-Gt_Optimization_Problem
+Funding
+Color
+Response_Curves_And_Their_Relationship_In_A_Focus_ModelThe_Generalized_Fractional_Viscoelastic_Model_Characterizes_The_Biphasic_Stress_Relaxation_ResponseSynthetic_Mri_Data_Generation
+Links_With_Biophysical_Analysis
+Mri_Data_AcquisitionA_Constitutive_Model_For_Epithelial_Monolayers
+Introducing_Educational_NeuroroboticsA_Two-Parameter_Characterization_Of_Genes
+Tes_Forward_Problem
+Unification_Of_Optimization_Approaches
+Prc-Arc_Shift_In_The_Model
+The_Generalised_Fractional_Viscoelastic_Model_Predicts_The_Response_To_Different_Loading_Conditions_With_No_Further_Fitting
+Experimental_Methods
+Statistical_Observations_And_InterpretationsBayesian_Model_Discrimination_For_Outbreak_Control
+Availability_And_Requirements
+Discussions_And_Conclusion
+Method_Details
+Conclusions_And_ImplicationsDownstream_Analysis
+Background_And_Objectives
+Conclusion_And_Future_PerspectiveLimitations_Of_The_Study
+Usage_Of_The_Model_Beyond_Epithelial_Monolayers
+Visual_Response
+Olfaction
+Morphology
+The_Workflow
+Sex_Ratio
+Case_Study_1:_Simulated_Regions
+Case_Study_2:_Neon_Imagery
+Dispersal
+Candidatus_Liberibacter_AsiaticusLife_History
+Partitioning_Spectral_DiversityVibrational_Communication
+Results_Of_Experiment_1
+Wolbachia_Infections_In_Natural_Populations
+Evidence_Required_To_Confirm_Natural_Wolbachia_Infections
+Limitations_Of_Studies_To_Date
+Potential_Implications_Of_Natural_Wolbachia_Infections_For_Releases_Of_Novel_Infections
+Immune_Response
+Probing_Behavior
+Across-Experiment_Generalization_Results
+Experiment_2:_Decisions_To_Engage_Attention
+Experiment_1:_Predictions_Of_Success
+Releases_Of_Novel_Wolbachia_Infections_For_Vector_And_Disease_Control
+Mathematical_Model
+The_Evolutionary_Arena_Framework
+Predictive_Information_With_Structured_Stimuli
+Experiment_1:_Same-Different_Task
+Experiment_2:_Visual_SearchGeneral_Background
+What_Is_A_Systems_Change_Framework?Retinotopic_Mapping_Experiment
+Data_And_Code_Availability
+Dots_Quadrant_Experiment
+Dots_Experiment
+Diamond_Experiment
+Prefixes_And_Suffixes_Of_A_Taboo-Free_String
+Disparate_Systems_With_Similar_Predictive_Information
+Identifying_The_Source_Of_Predictive_Information
+Example
+Comparison_Of_Data_Harmonization_Approaches_In_Adni_Data
+Model_Results
+The_3D_Brain_Unit
+Definitions
+Outlook
+Caveats_And_Future_DirectionsModelling_Terraformation_Of_Semiarid_Ecosystems
+Predictions_For_Precision_And_Error_Distributions
+Probabilistic_Item_Limits
+Generalizing_The_Stochastic_Model
+Eco-Evolutionary_Control_Theory
+Discussion_And_Further_Research
+Summary_And_Conclusion
+Overview_Of_Computational_Model_Of_Early_Vision
+Quantifying_Site_And_Scanner_Effects_In_Adni_Data
+Longitudinal_Combat
+Experiment_1:_Positive_Relief
+Sample_Usage
+Results_Aim_3._No_Between-Subject_Correlations_Between_Questionnaires_And_Oculomotor_BehaviourResults_Aim_1._Intra-Individual_Reliability_Of_Oculomotor_Variability_Measures
+Discussion_And_Future_Work
+Sample_Run
+Software_Description
+Potential_Of_Future_Growth
+Validation_Analyses
+In-Silico_Definition_Of_The_Drosophila_Melanogaster_Matrisome
+Accessing_The_Drosophila_Matrisome_And_Utilizing_It_To_Annotate_Large_Datasets
+Main
+Eeg_Measurement_Model
+Toolbox_Signal_Processing_Outline
+Implementation_DetailsEthics_Statement
+Eeg_Source_ReconstructionApplication_Structure
+Pre-Processing_Pipeline
+Subjects_And_Fmri_Acquisition
+Pamgene_Pamchip®_Arrays
+Pipeline_Specifics
+Simulation_1
+Simulation_2
+Statistical_Physics_Of_Model_Selection_And_Ensemble_Estimation
+Ensemble_Estimation_And_Network_Inference
+Model_Selection_And_Multi-Model_Inference
+Statistical_Behavior
+Empirical_Analyses
+Experiment_2:_Negative_Relief
+Previous_Work
+Features_Of_GenesisModel_–_Weighted_Combinations_Of_Transient_Types
+Results:_Cmso_Standards_And_Tools
+Discussion:_The_Overall_Vision
+Introduction:_Towards_Fair_And_Open_Cell_Migration_Data
+Theory_And_Design_Of_Autotuner
+Experimental_Demonstration
+Methods_And_Models
+Availability_Of_Supporting_Data_And_Materials
+Validating_The_Mathematical_Model_With_Electrical_Model_Cell_Experiments
+A_Detailed_Mathematical_Model_Of_A_Voltage-Clamp_ExperimentConclusions,_Implications,_Limitations_And_Future_Directions
+Tractography_Protocol_Definition
+Instrument_Performance
+Context-Aware_Seeds
+Conceptual_Examples
+Construction_Of_Confidence_Radius_Database
+A_Seeding_Scheme_With_Context-Aware_Seeds
+Experimental_Implementation_Of_The_Lsfm
+Theoretical_Model
+Computational_Method_And_System_Equations
+Method_And_Materials
+Fmri_Results
+The_Multiple_Compatible_Arrangements_Problem_(Mcap)
+The_Genome_Segment_Graph_(Gsg)
+Integer_Linear_Programming_Formulation_For_Mcap
+Characterizing_The_Conflict_Structures_That_Imply_Heterogeneity
+Conclusions_And_Perspectives
+Features_Of_Gappa
+A_Simple_Model_Of_Inertial_Delay
+Case_Study:_Conifers
+General_Methods
+Why_Good_Reporting_Is_Important
+Cellular_Patterning_Of_Dna_Accessibility
+㎫ 11 
+Supporting_InformationMethodsIntroductionMaterials_And_MethodsConclusionMaterial_And_MethodsConclusions!!toplevel
+Results_And_Discussion
+Main_TextBackgroundResultsDiscussionMaterials_&_Methods
+Data_Availability
+Experimental_Procedures
+Methods_And_MaterialsMain
+Author_ContributionsOnline_MethodsFundingMethod
+Material_&_MethodsData_AnalysisResults_&_DiscussionResultStatistical_Analysis
+SummaryMethodology
+Competing_InterestsDeclarations
+LimitationsDiscussionsDiscussion_And_ConclusionCode_Availability
+Discussion_And_ConclusionsAccession_NumbersConcluding_RemarksImplementationData_Description
+Availability_Of_Data_And_MaterialsStatisticsAvailability
+Theory
+Quantification_And_Statistical_Analysis
+Statistical_Analyses
+Conflict_Of_InterestData_Access
+Experimental_SectionImportance
+Star_MethodsAbbreviationsExperimental_Model_And_Subject_DetailsMaterials_And_Method
+Method_DetailsAuthors’_Contributions
+Statistical_MethodsWeb_ResourcesRelated_WorkDataMethods_Summary
+Methods_&_Materials
+Data_Availability_StatementManuscriptDeclaration_Of_Interests
+Methods_And_Results
+Funding_InformationExperimental_Methods
+Model
+IntroConclusion_And_Discussion
+Supplemental_Information
+Software_AvailabilityData_And_Software_Availability
+Approach
+Design_And_ImplementationUrlsConlcusionSupplementary_Materials
+Materials
+Background_And_SummaryAnalysesExperimental_Results
+Limitations_Of_The_Study
+Analysis
+Findings
+Datasets
+Contributions
+Grant_Information
+Applications
+Discussion_&_Conclusion
+Material_And_Method
+Supplemental_Material
+Computational_Methods
+Main_Body
+Supplementary_Information
+New_Approaches
+System_And_MethodsAvailability_Of_Supporting_Data
+DisclosureUsage_Notes
+Authors’_ContributionConclusions_And_Future_Directions
+Supplementary_Data
+ApplicationCompliance_With_Ethical_Standards
+Measures
+SoftwareData_And_Code_AvailabilityAlgorithmEvaluation_Metrics
+Data_Accessibility
+Experiment_2
+General_Discussion
+Model_Specification
+Inference
+Research_Design_And_Methods
+Procedure
+Availability_And_Requirements
+Code_And_Data_Availability
+Computational_ModelExperiment_3Methods_And_Material
+Supplemental_MaterialsImplementations
+Study_Limitations
+Model_And_Results
+DiscusionExperiment_1
+Results/Discussion
+Data_Records
+Experiment_Setup
+AcknowledgementsMethods_And_ImplementationRecommendations
+Western_BlottingSupplementary_Figure_LegendsData_Collection
+Text
+Conflicts_Of_Interest
+Ethics_StatementHistology
+Author’S_Contributions
+Conclusions_And_Recommendations
+List_Of_Abbreviations
+Acknowledgments
+Author_SummaryData_And_MethodsObjective
+Disclosures
+Conflict_Of_Interest_Statement
+Summary_And_ConclusionsResults_And_DiscussionsIncorporating_Synaptic_Time_Delays
+New_Approach
+[Methods]Datasets_And_Methods
+Solving_The_Mlqst_Problem_Using_Dynamic_Programming
+Application_On_Empirical_Data
+Limitation_Of_The_Study
+Simulating_DataInstrument_Design
+Limitations_Of_The_Bsn_Model
+Experiments
+Analysis_OverviewCross-Correlations
+Introduction_And_Background
+Eye_Movement_Behavior_Reflective_Of_Cognitive_Processes
+Background_Characterizing_ExpertiseDynamics_In_3DTheoretical_Background_And_Numerical_Investigation
+Density_Effect
+Eccentricity_Effect_On_The_DynamicsGrowth_Transform_Dynamical_SystemA__-Approximation_Algorithm_For_Scap
+Matherials_And_Methods
+A__-Approximation_Of_Mcap_With_K_=_2_Using_A_Scap_Oracle
+Two-Photon_Airy_Lsfm_Imaging_Results
+Single-Photon_Airy_Lsfm_Imaging_ResultsEmerging_Properties_Of_Beta_Cell-To-Cell_Communication
+Empirical_Evidence_Of_Beta-Cell_Collective_BehaviorData_CharacterizationNeural_Dynamics
+Growth_Transform_Neuron_Model
+Agent-Based_Model
+Growth_Transform_Spiking_Neuron_Model
+The_Lumped-Hub_Approximation
+Description_&_Results
+Limits_To_The_Lumped_Hub_Approximation
+Conclusion_&_Discussion
+Feedback_Analysis_For_The_Lumped-Hub_Network_EnsembleDynamics_With_Scale-Free_Networks:_Motivating_ObservationsApplicability_Of_Feedback_Analysis_To_Finite_Sfo_Networks
+ModelingProblem_Definition
+[Results]Structural_Imaging
+[Discussion]
+Pipeline_DescriptionSubject_EnrollmentLd_TaggingVariant_Calling,_Processing,_And_Qc_Analysis_Of_Sv_And_Strs
+Mathematical_Model
+Design_PrinciplesApplication_To_Cho-Herg1A_Patch-Clamp_Data
+Technical_Validation
+Downloading_And_Processing_Of_Real_Data_For_Analysis
+Background_&_Summary
+Generating_Simulated_Datasets_For_Analysis
+Building_A_Spike_Sorting_Pipeline
+Case_StudyUse_Cases
+Discussion(1500)Body
+Targeted_Comparison
+Full_Comparison
+Longitudinal_Psychometric_Measurements
+Imaging_Experiment_At_The_Pre-Reading_StageDisease_Evolution_Map_(Dem)
+Subjects_And_Data
+Wgs_ProcessingExperimental_Data[Introduction]
+Mrc1_Spans_One_Side_Of_The_Replisome
+Cortical_Sensitivity_To_Natural_Scene_Structure
+Material_Methods
+Experimental_Procedure
+Methods:_Data_Compilation_And_ProcessingStudy_System
+Background:_Balanced_Spiking_Network_ModelBsn_With_Conditionally_Poisson_NeuronsModel_Development
+Synthesis_Of_Results
+Application_Examples
+High-Resolution_Details_Of_Cmg-Ssdna_Interactions_In_The_Mcm_Aaa+_C-Tier
+Overview_Of_Spikeinterface
+The_Csm3/Tof1_Dsdna_‘Grip’_Is_Important_For_Replication_Fork_Pausing
+Structure_Of_Ctf4_In_The_Replisome
+Cryo-Em_Structure_Of_Csm3/Tof1,_Mrc1_And_Ctf4_In_Complex_With_Cmg_At_A_Replication_Fork
+Mechanism_Of_Strand_Separation_By_The_Replisome
+The_Dsdna_‘Grip’_Stabilizes_Csm3/Tof1_In_The_Replisome
+Csm3/Tof1_Interactions_With_Mcm_And_DsdnaStructure_Of_Csm3/Tof1Empirical_Background
+Theoretical_Background
+Behavior_AssaysModel_DescriptionFeatures_And_Examples
+Application_To_H-Ras_And_Comparison_With_Experimental_And_Clinical_Data
+Theory_And_Methods
+Noise
+Future_Work
+Assessment
+High_Resolution_Melting_Pcr
+Ena_Integration
+Blobtoolkit
+Case_Studies
+Samples_And_Pacbio_SequencingGenome_Annotation
+Data_Analysis_And_Statistics
+Genome_AssemblyEstimation_Of_The_Recombination_Rate
+Assembly_Strategy
+Evaluating_Structural_Similarity
+A_Curve_Description_Of_The_Protein_Molecule
+Lymphatic_Vessels_In_The_Brain
+Event-Related_Potentials
+Multivariate_Classification
+Summary_Of_Toxin_Identifications
+Apo_E4_And_The_Lymphatic_System
+Probing_Behavior_(Epg)Literature_Review
+Minimum_Epistasis_Interpolation
+The_Full-Fitness_Matrix_ModelAssignment_Of_Spike_PhasesRecommendationSummary_Of_Experiments
+The_Need_For_Sample_And_Strain_Verification
+Applying_Whole_Genome_Sequencing_To_Strain_And_Sample_Verification
+Dusk_And_DarkThe_MachinerySeasonal_PhotoperiodMinimizing_Time_To_Reach_Some_Population_Size_C
+Competitive_Optimality_With_Risk
+Relative_Fitness_Payoff_Function
+Introducton
+The_Standard_Model
+Kelly_As_Precursor
+Other_Approaches_To_Finite_Horizon_And_Managing_Risk
+Adaptive_Bed-Hedging
+The_Payoff_Function_In_A_Game-Theoretic_Setting
+Game-Theoretic_Competitive_Optimality_Of_Bell_And_Cover
+Interpretation
+Apo_E4_In_Ad-Associated_Neurovascular_Function
+Identifying_Cases_Of_Adaptive_Bet_Hedging
+Application_To_The_Crater_Landscape_Model_Of_Transcriptional_Regulation
+Properties_Of_The_Interpolation_Solution
+Dicussion
+Establishing_First-Passage_Time_Behaviour_In_A_Colloidal_System
+Results:_Binary_Bayesian_Change_Point_(Bbcp)_Detection_Model
+㎫ 12 
+㎫ 12,13 ףֻ Material ٭آ׾׿׈
+
+15
+
+===== PDF_PAGE 21 =====
+Materials_And_MethodsSupplementary_MaterialSupporting_InformationMethodsAuthor_ContributionsIntroductionConflict_Of_InterestDiscussion
+!!toplevelResults
+Conclusions
+Data_Availability_Statement
+ConclusionData_AvailabilityBackground
+Ethics_Statement
+Funding
+StarMethodsResults_And_DiscussionAdditional_FilesConflict_Of_Interest_StatementExtended_Data
+Declaration_Of_Competing_Interest
+Supplementary_Data
+Material_And_Methods
+Competing_InterestsSignificance_Statement
+Experimental_ProceduresElectronic_Supplementary_MaterialCredit_Authorship_Contribution_StatementAbbreviations
+Availability_And_Requirements
+Supplemental_Information
+Data_Summary
+Availability_Of_Supporting_Data_And_Materials
+SignificanceConflicts_Of_InterestOnline_MethodsAdditional_File
+Authors'_Contributions
+Implementation
+Materials_And_Methods_Data_Bibliography
+Authors’_Contributions
+Author_ContributionConflict_Of_InterestsLimitationsAcknowledgmentsFunding_InformationDisclosures
+Online_Content
+Main
+Methods_And_MaterialsDiscussion_And_ConclusionIntroduction__
+Software_Availability
+Code_Availability
+Materials_&_Methods
+MethodSources_Of_Funding
+Author’S_NoteConcluding_RemarksSupplemental_MaterialAvailability_Of_Supporting_Source_Code_And_Requirements
+Ethical_Approval
+Experimental_SectionAuthor'S_Note
+Data_RecordsDeclarationsMain_Text
+Discussion__
+Background_&_Summary
+Results__Availability_Of_Source_Code_And_RequirementsTechnical_ValidationDiscussion_NotesMethods__
+Discussion_And_Conclusions
+SummaryFunding_And_Disclosure
+Availability_And_Future_DirectionsDeclaration_Of_Interests
+Data_Accessibility
+Materials_AndMethods
+Statistical_Analysis
+Data_Archiving
+Data_And_Code_Availability
+Funding_Sources
+General_Discussion
+Materials_And_Methods__
+Conclusions_And_Future_DirectionsWeb_ResourcesEthics_Approval_And_Consent_To_Participate
+Usage_Notes
+Construction_And_Content
+Data_Analysis
+Future_Directions
+Declaration_Of_Interest
+Authorship
+Results_And_Discussion__Authors_Contributions
+Utility_And_Discussion
+Declarations_Of_Competing_Interest
+Results/DiscussionResults_And_Discussions
+Results_
+Discussions
+Disclaimer
+StarMethods
+Design_And_Implementation
+Conclusions__
+Text
+ObservationAvailability_Of_Data_And_Materials
+Experimental_Methods
+Additional_Information
+Author_Summary
+Introduction_
+Authors'_ContributionNew_Approaches
+Conclusions_
+Disclosure
+Role_InformationReporting_Summary
+Experimental
+DataModel
+Findings
+Software
+Disclosure_Statement
+Authors_Contribution
+Accession_Codes
+Supplemental_Materials
+Information_Sharing_Statement
+Supplementary_MaterialsEthics_ApprovalConclusion__ Analyses
+AcknowledgementsIsa-Tab_Metadata_File
+Availability
+Subjects_And_Methods
+Data_And_Software_Availability
+Experiment_2
+Financial_Support
+Methods:
+ResultsAnd_Discussion
+Experimental_Design
+Algorithm
+Methods_And_ResultsStrengths_And_Limitations
+Disclosure_Of_Potential_Conflicts_Of_Interest
+Gene_AnnotationMethods_
+Authors’_ContributionConclusions_And_Future_Perspectives
+Context
+Conclusion_And_Future_Directions
+Approach
+Grants
+Experiment_3
+Author’S_Contributions
+Experiment_1
+Research_Design_And_Methods
+Announcement
+System_And_Methods
+Opinion/Hypothesis
+Highlights
+Result
+Statistical_Analyses
+Contributions
+Patient_Consent
+Outlook
+Data_And_Code_Availability_Statement
+Limitations_Of_The_StudyAccession_Numbers
+Future_Work
+Summary_Statement
+Methods_Summary
+Resource_Availability
+Credit_Author_Statement
+Simulation_Study
+Code_Availability_StatementDeclaration_Of_Transparency_And_Scientific_Rigour
+Consent_For_Publication
+Procedure
+Validation_Of_The_Lof-Intolerance_Score
+Author_Contributions_(Credit_Taxonomy)
+Heterochromatic_Mo-2_Minisatellites
+Realized_Generation-Interval_Distributions_Across_Time
+Dsb_Formation_In_SpermatocytesInferring_The_Initial_Forward_Generation-Interval_Distribution
+Use_Of_Pext_In_Variant_InterpretationTrait_Association_And_Clinical_Genetics
+Taxonomy
+Realized_Generation-Interval_Distributions_Across_Space
+Population_Genetics_And_Genome_BiologyIdentifying_Loss-Of-Function_Variants
+A_High-Quality_Catalogue_Of_VariationUse_Of_Pext_In_Burden_Testing
+Dynamic_Remodeling_Of_Par_Structure
+Isoform_Diversity_And_Variant_InterpretationFunctional_Validation_Of_Pext
+Pext_Score_Summarizes_Isoform_Expression
+Online_Methods:
+Sv_Discovery_And_Genotyping
+Dosage_Sensitivity_Of_Coding_And_Noncoding_LociThe_Lof_Intolerance_Of_Human_Genes
+A_Distinctive_Par_UltrastructureTrans-Acting_Determinants
+Constraint_Informs_Disease_AetiologiesTl_Closing_And_Opening_Can_Provide_A_Checkpoint_For_Ntp_Complementarity,_Provide_A_Checkpoint_For_Ntp_Identity,_And_Serve_As_A_Target_For_InhibitorsMo-2_Regions_In_OocytesConscious_Awareness_Of_Eye_MovementsHvc_Pns_Active_In_Complex_Transitions
+Hvc_Pns_Also_Encode_Within-Phrase_Timing
+Pns_Carrying_Long_Range_InformationHvc_Pns_Encode_Long_Range_Syntax
+Complex_Transitions_In_A_Subset_Of_Song_Phrases
+No_Eye-Tracking
+Change-Blindness
+Vergence-Accommodation_Conflict
+Delta_Theta_Rather_Than_Theta
+Software_And_Data
+BnPage
+Results_Study_2_(Replication)
+Results_Study_1
+Materials_And_CorrespondenceStudy_1:_Childhood_Adversity_And_Collective_Action_In_The_European_Values_Study
+Study_2:_Current_Adversity_And_Collective_Action_In_The_World_Values_SurveyEnhanced_Mapper_For_Multiple_Measurements
+Case_For_Topological_Data_Analysis
+Synergistic_Activity_Predicts_Complex_Behavior
+Fecal_Source_Tracking_Application
+Par(-Like)_Axis_Remodeling_And_Mo-2
+One_Tl_Closing-Opening_Cycle_Typically_Occurs_For_Each_Nucleotide_Addition_In_Transcription_Elongation
+For_More_InformationTheory__
+Author_Contributions_
+Use_Of_Smfret_To_Detect_And_Characterize_Tl_Closing_And_Opening_In_Solution
+Genome_Sequencing_And_AssemblyGenome_Sizes_And_Transposable_Elements
+Prospect
+Tl_Closing_And_Opening_Occur_On_Millisecond_TimescalesValidation_Experiments
+Perspectives_And_Significance
+Implementation,_Training_And_Results
+Experimental_Results
+Summary_And_Conclusions
+Materials_Availability
+Fishing_LicenseIntroducing_Arrive_2.0
+Running_Experiments_And_Managing_Data_In_Rigbox
+Signals
+Availability:
+Appendix:_Derivation_Of_Correlation_Matrix
+Running_PumaConclusion_And_PerspectivesStatistical_Families
+Star+Methods
+Funding_Source
+An_Intuitive_Example_Of_The_Problem
+Uncorrected_Sequential_Tests_Will_Flood_The_Scientific_Literature_With_False_Positives
+Families_Of_Tests_Through_Time
+Towards_A_Solution
+The_Consequence_Of_Not_Taking_Multiple_Sequential_Testing_SeriouslyConsequence_For_Sequential_Tests_And_Open_DataDifferent_Perspective-Specific_Solutions_Regarding_Sequential_TestingSensitivity_To_The_Order_Of_Sequential_Tests
+Np-Completeness_Of_Scap_And_Mcap
+Limitations_Of_The_Current_StudyStop_Signal_Task
+Theoretical_Background_And_Numerical_Investigations
+Instrument_Design,_Integration,_And_Configuration
+Ethical_Approval_StatementConclusions_&_Future_Directions
+Pollen_Key
+Toffee
+Lossless_Compression
+Ethics_And_Consent_For_Publication
+A_\Documentclass[12Pt]{Minimal}_____\Usepackage{Amsmath}_____\Usepackage{Wasysym}______\Usepackage{Amsfonts}______\Usepackage{Amssymb}______\Usepackage{Amsbsy}_____\Usepackage{Mathrsfs}_____\Usepackage{Upgreek}_____\Setlength{\Oddsidemargin}{-69Pt}_____\Begin{Document}$$\Frac{1}{4}$$\End{Document}14-Approximation_Algorithm_For_Scap
+Shared_Molecular_Processes_Of_Cerebral_Atherosclerosis_And_AdSystematically_Accounting_For_Missing_Data
+Algorithms_And_Training_Procedures
+Data_Access_Ethical_Compliance
+New_Options_For_Tree_Search
+Scalability_With_Large_Data_Sets
+Nonreversible_Substitution_Models
+Fast_Branch_Tests
+Single-Locus_Tree_Inference
+Fast_Topology_Tests
+Documentation,_User_Support,_And_Workshop_Materials
+Sequencing_TechnologiesTime-Reversible_Models_Of_Sequence_Evolution
+Fast_Likelihood_Mapping_Analysis
+The_Stress_Response
+㎫ 13 
+IntroductionResultsDiscussionSupporting_Information
+Materials_And_MethodsMethods
+Conclusion
+Results_And_DiscussionConclusions
+Material_And_Methods
+Background!!toplevelMain_TextImplementation
+MethodExperimental_Procedures
+Description
+Declarations
+Methods_And_Implementation
+Materials_&_Methods
+Discussions
+Experiment_2
+General_Discussion
+Model
+Main
+Data_Description
+Design_And_Implementation
+Results_&_Discussion
+Result
+㎫ 14 꿔⛣
+Supporting_InformationMaterials_And_MethodsMethodsDiscussionResultsIntroductionConclusionsConclusion
+Results_And_DiscussionBackgroundMaterial_And_Methods
+!!toplevel
+Main_TextMaterials_&_MethodsMethods_And_Materials
+Experimental_Procedures
+Data_AvailabilityMain
+Method
+Author_Contributions
+Implementation
+Online_MethodsMaterial_&_Methods
+Data_Analysis
+MethodologyDiscussion_And_ConclusionResultFundingResults_&_Discussion
+Discussion_And_ConclusionsLimitationsDiscussions
+Data_RecordsTechnical_ValidationBackground_&_Summary
+SummaryTheoryConcluding_RemarksUsage_Notes
+Data_Description
+Statistical_Analysis
+Model
+Competing_Interests
+Experimental_SectionMethods_And_Results
+General_Discussion
+Code_Availability
+Declarations
+New_Approaches
+Availability_Of_Data_And_Materials
+Data
+Experiment_1Results_And_DiscussionsRelated_Work
+Experiment_2
+Statistics
+Materials
+Methods_&_Materials
+Design_And_Implementation
+Materials_And_Method
+Conflict_Of_InterestAlgorithmData_Access
+Software_Availability
+Findings
+Analyses
+Experimental_Methods
+Statistical_MethodsConclusion_And_Discussion
+Research_Design_And_Methods
+Star_Methods
+Quantification_And_Statistical_Analysis
+Availability
+Web_ResourcesModel_And_MethodsExperimental_ResultsStatistical_Analyses
+Experiment_3
+Methods_Summary
+Results/Discussion
+Authors’_Contributions
+Conclusions_And_Discussion
+ManuscriptApplications
+Conclusions_And_Future_Directions
+ApproachAccession_Numbers
+Experiments
+Method_Details
+Limitations_Of_The_Study
+Methods_And_Material
+Data_And_MethodsSupplementary_Material
+Software
+Patients_And_Methods
+IntroAbbreviations
+Importance
+Data_CollectionUrls
+Declaration_Of_Interests
+Supplemental_Information
+Data_Availability_StatementDatasets
+Computational_MethodsValidationSimulations
+Main_Body
+ObjectiveData_And_Software_Availability
+Study_Limitations
+Literature_Review
+Discusion
+Availability_And_Future_Directions
+Future_Directions
+Animals,_Material_And_MethodsFunding_InformationExperimental_Model_And_Subject_Details
+Supplementary_Information
+Supplementary_Data
+Recommendations
+Conclusions_And_Recommendations
+Supplementary_Materials
+Discussion_&_Conclusion
+Data_And_Code_AvailabilityMaterial_And_Method
+Theory_And_Methods
+DescriptionSystem_And_MethodsResults_And_Analysis
+Contributions
+Background_And_Summary
+Supplemental_MaterialAnalysis
+Case_Studies
+Data_Accessibility
+Result_And_Discussion
+Evaluation_Metrics
+Disclosure
+Western_Blotting
+Application
+Materials/Methods
+Potential_Implications
+Study_2
+Subjects_And_Methods
+ProcedureModel_DescriptionSimulation_Results
+UsageExperiments_And_Results
+Experimental_Data
+Availability_Of_Source_Code_And_Requirements
+Supplemental_Materials
+Grant_Information
+ImplementationsImplications
+Compliance_With_Ethical_Standards
+Use_Cases
+Mathematical_Model
+Experiment_Setup
+Conclusion_And_Future_Work
+Result_And_Discussions
+Utility_And_Discussion
+Construction_And_Content
+Methods_And_DataConclusions_And_Perspectives
+Sensitivity_Analysis
+Implementation_And_Availability
+Model_Specification
+InferenceSimulation
+Problem_Definition
+Model_And_Results
+Database_Content_And_Web_Interface
+Simulation_Study
+TextResults_And_Conclusion
+Model_Development
+Author’S_Contributions
+Recommendation
+Methods_And_ImplementationEthics
+Conlcusion
+Database_Content_And_Usage
+Discussion_And_Future_Directions
+Data_Collection_And_ProcessingAvailability_And_Requirements
+Study_1
+Definitions
+Computational_Model
+Outlook
+Disclosures
+Experimental_Study
+Benchmarking
+Summary_And_Conclusions
+Acknowledgments
+Conflicts_Of_Interest
+Models_And_Results
+Ethics_Statement
+Information_Sharing_Statement
+Computing_Optimal_Discretization_For_Bayesian_And_Markovian_ModelsMethods_Experimental_Data_Of_Nav1.5_(Zhang_Et_Al._2013)
+In-Silico_Definition_Of_The_Drosophila_Melanogaster_MatrisomeInferring_Generation-Interval_Distributions_From_Contacttracing_DataAccessing_The_Drosophila_Matrisome_And_Utilizing_It_To_Annotate_Large_Datasets
+Modelling
+Oocyte_Lits_Predict_Imprinting_In_Primate_PlacentaConservation_Of_Ltrs,_Lits_And_Igdmrs_In_Apes_Versus_Old_World_MonkeysLits_And_The_Establishment_Of_Species-Specific_ImprintsGeneration-Interval_Distributions_Across_Space
+Electronic_Supplemental_Materials
+An_Upstream_Mtc_Directs_Imprinting_At_Impact
+Intrinsic_Generation-Interval_Distributions
+An_Mt2A_Is_Required_For_Slc38A4_Imprinting
+Muroidea-Specific_Ltrs_And_Maternal_Igdmrs
+Conclusions_And_Practical_Applications
+Robustness_ChecksExperiment_A_–_Beeps_&_Saccades
+Sensitivity_Analysis_And_Feature_Selection_With_SpaApplications_To_Classification_And_Prediction_Problems_From_Natural_SciencesCost,_Quality_And_Parallelizability_In_Scalable_Probabilistic_Approximation_(Spa)
+Spatiotemporal_Analysis
+Ld_Tagging
+Molecular_Docking
+Genome_Properties_And_ComparisonDeposit_In_Culture_Collection
+Isolation,_Growth_Conditions_And_Strain_Identification
+Phenotypic_Characteristics
+Nucleotide_Sequence_Accession_Number
+Description_Of_Sellimonas_Caecigallum_Sw451_Sp._Nov
+Analysis_Of_A_Single_LandscapeGradient_AnalysisSpatiotemporal_Buffer_Analysis
+The_Pylandstats_Library
+Data_Sharing
+Multiple_Populations
+Two_Populations
+Protocol
+Single_Population
+Reorganisation_Of_Ciliary_Flows_During_Regeneration
+A_Note_On_Sampling_A_Fraction_Of_Extant_Species
+Generation-Interval_Distributions_Across_Time
+Fungal_IsolatesThe_Diversity-Dependent_Diversification_Model
+Inter-Clade_But_Not_Intra-Clade_Accessory_Genome_Divergence
+Discussions_And_Conclusion
+Experiment_D_–_Strips_Flashes_&_Saccades
+Background_And_Motivation
+Experiment_F_–_Touches,_Beeps_&_SaccadesParameter_Optimization
+Data_&_Code_Availability
+Animal_Model
+Article_Types
+Mitochondrial_Bioenergetic_Studies_(High-Resolution_Respiratory)
+Supplementary_Materials_And_Methods
+Patient,_Materials_And_Methods
+Implementation,_Speed_And_Usage
+Theory_And_Algorithms
+Complex_I,_Iv_And_Citrate_Synthase_Activity_Assays
+Event-Related_Potentials
+Future_Work
+Psychotic_SymptomsAssessing_Sequence_Similarity
+Proteomics_Data_Assessment
+Walk-Through_Examples
+Evaluation_Of_Wgd_Inferences
+The_Workflow
+Completing_InterestsHigh_Resolution_Melting_Pcr
+Discussion_And_OutlookApplication_To_H-Ras_And_Comparison_With_Experimental_And_Clinical_Data
+Disease_Evolution_Predictor_(Dep)_Model_Using_Deep_Neural_Networks
+Acknowledgements
+Experiment_B_–_Blocked_Control
+Mass_Spectrometry
+Experiment_C_–_Background_Flashes_&_Saccades
+Experiment_E_–_Touches_&_Saccades
+Discussions_And_Future_Work
+Accession_Codes
+Conclusions_And_ProspectsDatasets_And_Data_Availability
+Summarizing_Reassortment_Networks
+Development
+Perspective
+Reassortment_Distance
+Availability_Of_Supporting_Data_And_MaterialsModel_Results
+An_Mcmc_Algorithm_For_Reassortment_NetworksIsolation_Of_An_Asgard_Archaeon
+Proposal_Of_New_Eukaryogenesis_Model
+Cell_Biology_And_Physiology_Of_Mk-D1Reconstruction_Of_Extant_And_Ancestral_Features
+Data_Re-Use_Potential
+Material_And_Methods_Model
+Drone_SurveysLand_Surveys
+Appendix_A:_Methods_Details
+The_3D_Brain_Unit
+Variant_Calling,_Processing,_And_Qc_Analysis_Of_Sv_And_Strs
+Experiments,_Results_And_Discussion
+㎫ 15 꿔⛣
+ع٤ٛوٝوٜػ٭ٔة - ㎫ 14,15,16 
+㎫ 15,16 ףֻ Material ׿׈
+㎫ 14 מع٤ٛوٝو
+
+16
+
+===== PDF_PAGE 22 =====
+Supporting_InformationMaterials_And_MethodsMethodsIntroductionResultsDiscussionConclusionConclusionsResults_And_Discussion
+Material_And_Methods!!toplevelBackgroundExperimental_Procedures
+Main_TextMethod
+Materials_&_MethodsAuthor_Contributions
+Main
+Methods_And_MaterialsData_AvailabilityDiscussion_And_Conclusions
+Funding
+Online_Methods
+MethodologyResult
+Summary
+Results_&_DiscussionDiscussion_And_ConclusionDeclarations
+General_DiscussionData_Analysis
+Results_And_Discussions
+Material_&_Methods
+Conclusions_And_Future_WorkModelImplementation
+Statistical_AnalysisStatisticsDiscussionsConclusion_And_Future_Work
+LimitationsConcluding_RemarksMaterials_And_MethodMaterialsMathematical_ModelCompeting_Interests
+Code_Availability
+Methods_And_Implementation
+ApproachModel_And_Methods
+Data
+Connectivity_Measures_For_Neuroimaging_DataNetwork-Oriented_Analysis_For_Interpreting_Collective_Mou-Ec_Changes_Across_Conditions
+Background_&_SummaryTechnical_Validation
+Machine_Learning_For_Extracting_Multivariate_Biomarker_Specific_To_Cognitive_States
+Capturing_The_Whole-Brain_Bold_Dynamics_With_Mou-Ec
+Annex
+Authors’_Contributions
+Application
+Application:_Guiding_Dengue_Vaccination_Policy
+Star_Methods
+Experiments
+Conflict_Of_Interest
+Experimental_SectionConclusions_And_Discussion
+Method_Details
+Usage_NotesData_Description
+Lipid_Interaction_Properties_Of_Apoa-I_Variants
+Pro-Inflammatory_Response_Induced_By_Variants
+Data_Access
+Experiment_3
+Comparison_With_Other_Workflow_Management_Systems
+Data_AccessibilityProblem_Formulation
+Experimental_Methods
+Other_Analytical_Methods
+Biosails_Ecosystem
+Related_Work
+Materials_And_Methods_(Online)Experiment_2Experiment_1Conflicts_Of_Interest
+Computational_Methods
+Comments,_ConclusionsProcedure
+Design_And_Implementation
+Method_Evaluation
+Numerical_Results
+Experiment:_Single_Nanoparticle_Dynamics_On_Live_Cell_Membrane
+Material_And_Method
+Description_Of_The_Sees_MethodModeling
+Behavioral_Experiment
+From_Blast_Search_To_Text_ClassificationNorth_Web_Application
+Concise_MethodsAnalysis
+Impact_StatementList_Of_AbbreviationsData_And_Software_Availability
+Data-Driven_MotivationExperimental_Model_And_Subject_Details
+Sequences_And_Primers
+Related_WorksIntroduction_/_Background_And_Significance
+Experimental_Results
+Eco1_Inhibits_Loop_Expansion
+Yeast_Mitotic_Chromosomes_Are_Organised_By_Cohesin-Dependent_Stable_Loops
+Dual_Roles_For_Pds5_In_Loop_ExpansionAsthma_Validation_StudyMeasuresConclusion_And_Perspectives
+Subjects_And_Methods
+Statistical_Inference
+Result_And_Discussion
+Binomialrf:_Identifying_Interactions
+Binomialrf:_Identifying_Main_EffectsAvailability
+Limitations_And_Future_Studies
+Key_Points
+Complexity_Analysis
+Computational_Analysis
+Conclusion_And_Discussion
+Simulation
+Data_AnalysesExamples
+Discrete_Models
+Supplementary_Materials
+Data_Records
+Empirical_Data_–_Methods
+Model_Exposition_And_Predictions
+Conceptual_Framework:_Reproducible_Research_WorkflowsDisease_Specific_Drug-Target_Association_Prediction
+Modeling_Results
+Projects_R_Package
+Material
+Author_Contribution_Statement
+Background_Information
+Software_Availability
+Methods_For_Study_2Background_And_Significance
+Methods_For_Study_1
+Interim_Discussion_2
+Why_Could_Risk_Factor-Outcome_Associations_Be_Stronger_At_The_Upper_End_Of_The_Distribution?
+Model_Formulation
+Empirical_Data_-_Results
+Results_Of_Study_1
+Demonstration
+Methods_For_Study_3
+Quantification_And_Statistical_Analysis
+Results_Of_Study_3
+Interim_Discussion_1
+Results_Of_Study_2
+Implications_And_Conclusions
+Driver_Genes
+Declaration_Of_InterestsCurvature_And_Anchoring_Data_Suggest_Significant_Mt_Deflection
+An_Index-Based_Polynomial-Time_Algorithm
+Related_Problems_In_Graph_TheoryStep_2:_Region-Specific_Masks_For_Reliable_Depth-Dependent_AnalysesStep_1:_The_Gm:Wm_Overlap_Ratio_(Gwor)_As_A_Metric_For_Overall_Registration_Quality
+Code_And_Data_Availability
+Ethical_Considerations
+Conclusions/Implications
+Evidence_For_Parallel_Learning_Processes_In_Multiple_Brain_Regions_That_Receive_Dopaminergic_Teaching_Signals
+Conclusion_And_Outlook
+Evidence_For_A_Higher_Learned_Synaptic_Weight_Asymptote_In_Dorso-Lateral_Than_Ventro-Medial_StriatumHow_Parallel_Learning_And_Two_Modeled_Asymmetries_Explain_Delayed_Transitions_To_Habitual_Control
+Distinct_Pathways_And_Learning_Rates_For_Learned_Promotion_Vs._Learned_Demotion_Of_Behavioral_Options
+Evidence_For_Faster_Learning_In_Ventro-Medial_Than_Dorso-Lateral_Striatum
+Description_And_Usage_Of_Figaro
+Case_Study
+Statistical_Analyses
+Method_And_Materials
+Potential_Implications
+Model_Parameters
+Cancer_Classification_Profiles
+Effect_Of_Adding_Nat_Samples_On_Classifiers
+Intracellular_Model
+Diffusion_Of_Substances_In_The_Tumor_Microenvironment
+Analysis_Of_Amplified_Samples
+Bioactive_Metabolites_Can_Enhance_Immunosuppressive_Capacity_And_Growth
+Dicussion
+A_First_Passage_Time_Analysis_Of_Two_Simultaneous_Tracked_Loci_Reveals_Chromatin_Dynamics_At_The_250Nm_Scale
+The_Optimized_Workflow
+Data_Availability_Statement
+Improvements
+Dropclust_And_Its_Limitations
+Local_Chromatin_Environment_Reconstructed_From_Simulations_Of_Polymer_Model
+Pipeline_Examples
+Evaluation
+Reports
+Emerging_Behaviours
+Cell_Division_In_Crowded_Environments
+Evaluation_Strategy
+Network_Inference
+Feature_Construction
+Machine_Learning_Models_And_Feature_Selection
+Chromatin_Locus_Dynamics_Revealed_By_Spts
+Available_Chromatin_Polymer_Packages
+Assessment_Of_Performance_And_Data_Requirements
+Gsan_Method
+Results_Hotmusic_Sound:_The_Results
+Server_InterfaceValidation
+Nanotopography_Can_Maintain_Msc_Immunosuppressive_Capacity
+Colonic_Microbiota_Composition_In_Individuals_With_Cs_Compared_To_Controls
+Abbreviations
+Impact_Of_The_Density_Of_The_Mlee_On_The_Induction_Of_Orientation_TuningMsc_Immunosuppressive_Capacity_Enhanced_By_Decoupling_Oxidative_PhosphorylationFlux_Of_Heavy_Glucose_Shows_Increased_Oxidative_Glycolysis
+Dicsussions
+Statistical_Properties_Of_The_Opogenetically_Evoked_Cortical_ActivityStatistical_MethodsBioinformatics_Analysis_Of_Whole_Genome_Sequences
+Light_Induced_Orientation_Tuning_Of_Cortical_Responses
+Ranking_Tfs_By_Stability_Selection
+A_Minimal_Model_For_Allotropism:_The_Growth-Driven_Reorientation_Of_Plants_In_Response_To_Detected_Neighboring_Plants
+Results_And_FindingsThe_Cellular_Microenvironment_Modulates_Bleb_Formation
+Matherial_And_Methods
+Calibration_Of_The_Hvosorg_Signal
+Characterization_And_Targeting_Of_Hvosorg_To_Lysosomal_Membranes
+Software_Implementation
+FindingsOptogenetic_Control_Of_Protrusion_Morphology_On_Micropatterns
+Experiments_And_Results
+Heterogeneity_Of_Light-Induced_Membrane_Protrusions_Along_Cell_BoundariesComputational_Model
+Canonical_Correlation_Analysis
+Experiment_2_(A,_B,_C)Experiment_1_(A,_B,_C)
+Pilot_Study_2Pilot_Study_1
+Pilot_Study_3
+Pilot_Study_4
+Drosophila_Genotypes
+Hotmusic_Key_Instrument:_The_Statistical_Potentials
+Data_Review_And_Curation_Of_Potentially_Suitable_Studies
+Dual_Rna-Seq_Suitability_Analysis
+Behavioral_Analysis
+Intrdouction
+Analysis_Of_Dendritic_Spines
+Allotropic_Interaction_Between_Two_Organs
+Behavioral_Paradigm
+Single_Organ_Dynamics_With_Fixed_Point_Stimulus
+Across_Different_Studies;_Across_Different_Host-Parasite_Systems
+Recovering_The_Diffusion_Nature_Using_A_Sparse_Network
+Models_And_Methods
+Contact_For_Reagent_And_Resource_Sharing
+Identification_Of_Co-Expressed_Genes_Via_Correlation_Techniques
+Hotmusic_Harmony:_The_Artificial_Neural_Networks
+Introductuion
+Materials_And_Methods;_Supplementary_Figures
+Resuls
+Topmed_Wgs
+Conclusions_And_Perspectives
+Conclusion_And_Implications
+Untargeted_Metabolomics_Points_To_Respiration_As_A_Central_Mechanism
+The_Cholera_Wait_Model
+Self-Organized_Positioning_At_Criticality_By_Fluctuation_Sensing
+Proposed_Parallel_Algorithm
+Transient_Vs._Short-Term_Memory:_Signal_Integration_And_Optimal_Information_ProcessingCorrelations_Between_Magnitudes_Of_Superhelical_Densities_In_Naked_Linker_Dna_Segments_And_Structural_Forms_Of_Polynucleosomes
+Dynamical_Information_Processing_At_Criticality_Using_State-Dependent_Trajectories
+Research_In_Context
+Physical_Causes_Of_Right-Handed_Alignments_Of_10-Base_Pair_Arm_Dna_Segments_And_Their_Interacting_Patterns_With_Histone_OctamersDifferences_Between_Negative_Supercoils_In_Naked_Linker_Dna_Regions_Of_Polynucleosomes_And_Those_Produced_By_Enzymatic_Actions
+Transient_Molecular_Memory_Interpreted_Though_Critical_Epidemic_Spreading
+Equilibrium_Between_Arm-Closed_Forms_And_Arm-Open_Forms_Of_10-Based_Pair_Arm_Dna_Segments_In_The_Absence_Of_Histone_H1
+NotesObjectives
+Study_DesignRoles_And_Pathways_Of_Histone_H1_In_Formation_Of_Chromatosome_Structures
+Accession_Numbers
+Datasets
+Materials_And_Method_Details
+Experimental_Methods_And_Calibration
+Funnding
+Data_ProcessingImplementations
+Experimental_Setup
+Framework:_A_Deep_Convolutional_Neural_Network_Model_Of_The_Visual_System
+The_Hepatitis_C_Virus_Wait_Model
+Initializing_Wait:_An_Elementary_Adapted_S-I-R_Iteration
+Mitochondrial_(Mtdna)_Analysis
+Population_Structure
+Conclusions_&_RecommendationsCase_Studies
+Genetic_Predictions_And_Cross-Trait_Predictions_Using_Cvblups
+Two_Efficient_Algorithms
+A_General_Theory_For_Reaction_NetworksTeasing_Apart_The_Effects_Of_A_Single_Branch_On_The_Dynamic_Range
+A_Unified_Model_For_Center-Surround_Rfs_In_The_Retina_And_Oriented_Rfs_In_V1
+Retinal_Representations_Are_A_Function_Of_The_Neural_Resources_Allocated_To_The_Ventral_Visual_Stream
+Supercoils_Within_Double_Helical_Structures_Of_10-Base_Pair_Arm_Dna_Segments
+Results_&_Discussions
+㎫ 16 꿔⛣
+17
+
+===== PDF_PAGE 23 =====
+5.4.2 䄐
+ع٤ٛوٝوٜػ٭ٔة - ס׵סאٜعؕذ
+
+عؕذמ
+瓦
+־׾ַי׊ Jaccard) 
+㎫ 17,18,19 
+㎫ 17 Jaccard ⮔䉘
+㎫ 17 ַםע Jaccard ֿ 1.0) ⪽✄
+⻎坎㎫ 18,19 㴻⫵
+يٝס׆ע
+
+18
+
+===== PDF_PAGE 24 =====
+ofandtheainfortobyis anonwithfromanalysisusingnovelcellreveals
+dynamics
+human
+at
+aregene function
+based
+during
+protein
+cells
+that
+highrna
+studyassociated
+modelvia data
+newmultis
+as
+brain
+betweendependent
+into
+through
+bacterial
+modelingdevelopmentevolution
+cfunctionalcomplex
+activity
+non
+genes
+disease
+genome
+single
+response
+but
+interactionspopulation
+related
+time
+mediated
+genetic
+diversity
+reveal
+their
+expression
+not
+across
+controls
+its
+effectscontrol
+state
+specific species
+deep
+cortical
+sequencing
+mechanism
+neural
+network
+growth
+seqbacteria
+structure
+signaling
+molecular
+activationinsights
+modelling
+proteins
+identification
+implications
+processing
+approach
+tumor
+earlyanti
+low
+pathwaysmodulationvisualsequencearchitecture
+networks
+can
+towards
+genomic
+mouse1 regulation
+tissue
+receptor
+selection
+evidence
+system
+potential
+3d
+role
+dynamicregulatory
+natural
+2
+populations
+loss
+rapid
+whole
+assembly
+cortex
+required
+metabolism
+temporal
+featuresprovidestranscriptome
+or
+mice
+two
+influence
+computationaldna
+imaging
+multiple
+characterization
+inhibition highly
+regulate
+identifies
+evolutionary
+co
+application
+causalresolution
+type
+does
+cancer
+parallel
+learning
+landscape
+connectivity
+amp
+identity
+datasets
+level
+genomes
+transcription
+scale efficient
+rate
+host
+promote
+adaptation
+making
+impact
+how
+factor
+transcriptional
+localimmune
+states
+types
+identify
+resistance
+cross neurons
+plasticity
+throughput
+meta
+drug
+drive
+elements mriidentifyingintegrity
+clinical
+fiber
+case
+among
+comparative
+integration
+long
+open
+after
+vitro
+pathway
+improves
+increasestraits
+emergence
+planttask
+community
+revealed
+quantification
+optimization
+codingindividual
+environment
+machinery
+structural
+metabolic
+effect
+3
+functions
+target
+underlying
+behavioroveraffect
+increased
+quality
+stimulation
+like
+inter
+centralsignallingthree
+yeast
+regulated
+distinct
+viruses
+predictionlipid
+importance
+enhances
+longitudinal biological
+site
+models
+antibiotics
+range
+pan
+strategy
+shape
+encoded
+global
+coli
+micro
+motor
+essential
+ancient
+mammalian
+depends
+membrane
+mapmodulates
+machine
+adult
+maturation
+differentiation
+induces
+responses
+targeting
+family
+checkpoint
+interaction
+information
+direct
+within
+characterisation
+remodeling
+tumors
+impacts
+proteome
+regulatesvalidationtransition
+transcript
+induced
+cues
+intra
+stem
+recognition
+allows
+detectionsurface
+㎫ 18 ײסع٤ٛوٝوٜػ٭ٔة
+ofandtheinatowithforby
+reveals
+onfromanalysis
+an
+iscellprotein
+genome
+using
+during
+that
+human
+associated
+are
+between
+cells
+gene rnadisease
+its
+dependent
+expression
+as
+dynamics
+data
+effects
+regulation
+single
+evolutionmediated
+mechanisms
+viabasedhigh
+characterizationnovelgeneticcontrolvirusmouseresponse
+population
+genomic
+through
+bacterialrevealmolecular
+activityinto
+signaling
+atvariation genes
+potential
+caenorhabditis
+neurons
+specific
+model
+large
+multiplenetworksdevelopment
+neural
+identification
+modeling
+impact
+type
+role
+function
+wide
+but
+humans
+complex
+structure
+1 growth
+chromatin
+activation requiredtumor underlyingfunctional
+not
+cellular
+changes
+models
+vitro
+sequencingloss
+identifiesscale
+networktemporal
+can
+2
+transcriptioninteractions
+detection
+effect
+responsesinsights
+levels
+across
+highly longsystem
+regulates
+mice
+s
+speciesenables
+dynamic
+studystrategies
+region
+systematic
+brain
+proteinstoward
+patterns
+crossimprove
+shape
+multitwo
+driven
+formation
+moleculefactor
+deep
+cortical
+interaction
+imaging
+adaptive
+their
+withincortex
+transcriptome
+modelling
+newviral
+modulation
+use
+evolutionary
+suggests
+non
+learning
+or
+strain
+dna
+studies
+infection
+frameworkstate
+like
+differential
+motorhost
+prediction
+derived
+surface
+lipid
+influenceprocessing
+coding
+how
+evaluation
+comprehensive
+stimulation
+synaptic
+modulate
+linking
+causes
+sequences
+similar
+level
+nucleotide
+structural
+co
+sequence
+identify
+efficient
+small
+distinct
+receptor
+quantitative
+local
+proliferation
+modulates
+acid organization
+under
+circuit
+size
+health
+tumors
+pathway
+approach
+resource
+trait
+natural
+roles death
+differences
+blood
+gutamong
+involved
+stress
+yieldsgenomes
+diverse
+vivo
+rapid
+induced
+analysesprofiles
+promote
+predicting
+traits
+mental
+inferring
+rate
+productionmembrane
+mutation towards
+all
+signal
+community
+change
+escherichia
+domain
+assembly
+asymmetricpopulationscancer
+termbacterium
+biases
+types
+primate
+lines
+free
+3
+responsive
+affects
+without
+uptake
+provides
+underlies
+localization
+communities properties
+environmental
+regulate
+coupled
+division
+inhibition
+drive
+design
+c platform
+regulated
+microscopy
+biology
+target
+application
+related
+altered
+decreased
+resonance
+iii
+self
+extensive
+3d
+controlledinformation
+states
+variabilitybehavioral transfer
+loci
+implicationsdifferent
+one
+afterimproved
+quality
+guided
+㎫ 19 ײסٜػ٭ٔة
+19
+
+===== PDF_PAGE 25 =====
+5.5 䫟㲊
+ס
+
+׿׼
+وס
+
+ٛوٝوٜػ٭ٔة
+מ “ع٤ٛوٝوס ” ٤ئע׼׿׆
+
+⪢倀 XML ך
+⪢倀 XML ׍׼؂־־מ
+⪢倀 XML ס׵ג׀ך 12,925 ⚂
+⪢倀
+XML ס׵ג׀ך 14,673 
+ꓨ锡䍲
+
+㜟俙⻏ 霄箖
+auth 詇脢俙
+ref ⹧脝倀桬俙
+word 糹ⷃ靣俙
+ﬁg 俙
+tab 銨 (table) 俙
+intro מٜعؕذ intro” ⰺ⻉
+metho מٜعؕذ method” ⰺ⻉
+resul מٜعؕذ result” ⰺ⻉
+discu מٜعؕذ discuss” ⰺ⻉
+concl מٜعؕذ conclusion” ⰺ⻉
+銨 1 杅䖇ꓪ
+עמ Python ׾ֵךة٭آشق scikit-learn ס RandomForest ٭ظ
+ג׊ 70%  30% 
+
+Accuracy ע 0.47 ㎫ 20 
+ֿ 3 מ 1/3 כ׾׌כ׾ג Accuracy
+20
+
+===== PDF_PAGE 26 =====
+Exact
+Journal Journal-PPr PPr
+Predict
+Journal 1,156 595 524
+Journal-PPr 1,003 1,922 1,863
+PPr 834 2,695 3,487
+* PPr: PrePrint
+銨 2 RandomForest ⮔꿔篙卸
+㎫ 20 ꓨ锡䍲
+0.47 ךַ
+
+21
+
+===== PDF_PAGE 27 =====
+6 縒㴔
+ٛوٝو׾׌
+ֿ
+׷
+׼ֻ
+
+כ
+꿔
+ע 0.93 꿔⛣䍲
+1.0 ׈
+־׍؂ס׼׿אעיַֽמ
+
+׼ם׾׌
+ֿכ׆ַ׊
+
+
+Klein[ Klein19 ] ׷ Carneiro[ Carneiro20 ] 
+ց
+ Carneiro[ Carneiro20 ] ׷
+Akbaritabar[ Akbaritabar21 ] 䈼沌
+
+6.1 槳䙫憠
+מف٭ئع٤ٛوٝوע bioRxiv ׿׈
+ס arXiv ס
+סך bioRxiv ♀
+ע 7 זםמײס
+ؓ٤و٭؛
+
+ַי׀ך
+ֵ׵כ׆׾ם
+׵מ
+
+ס “鮐” זםמ
+22
+
+===== PDF_PAGE 28 =====
+םַי׊
+גױגֿ
+מ
+ם׼
+כ׾׈؂
+׵ם
+ⷃ
+י׿׼׬
+皹
+僻
+ֿ
+
+7 ״כױ
+ַׂיזֵֿ׀ךמֹ׻סלע
+׌
+
+ bioRxiv 韢
+⪢倀 XML 䪫銉
+
+מ־׼
+وגזםמ
+塌唩㳔
+ע 47% 
+⩰鉿煝疴 [Klein19 ,
+Carneiro20 ] ך
+מ
+זַכ
+
+ֹל׼־
+䱰ꜗ
+㸗ꪎ㵵
+
+ך
+ח
+כ׆ַׂי״
+23
+
+===== PDF_PAGE 29 =====
+
+24
+
+===== PDF_PAGE 30 =====
+⹆縒乃春
+[Abdill19] Abdill, R.J and Blekhman, R.: Meta-Research: Tracking the popularity and outcomes of
+all bioRxiv preprints. eLife . Apr 2019. https://doi.org/10.7554/eLife.45133
+[Akbaritabar21] Akbaritabar, A, and Stephen, D  A Disciplinary View of Changes in Publications’
+Reference Lists After Peer Review. arXiv . Feb 2021. arXiv:2102.03110
+[Carneiro20] Carneiro, C.F.D., Queiroz, V.G.S., Moulin, T.C. et al.  Comparing quality of report-
+ing between preprints and peer-reviewed articles in the biomedical literature. Research In-
+tegrity and Peer Review Vol.5, Article number 16. Dec 2020. https://doi.org/10.1186/
+s41073-020-00101-3
+[Klein19] Klein, M., Broadwell, P., Farb, S.E. et al.Comparing Published Scientiﬁc Journal Articles
+to Their Pre-Print Versions. International Journal on Digital Libraries Vol.20, pp.335 – 350.
+Dec 2019. https://doi.org/10.1007/s00799-018-0234-1
+[MEXT20] MEXT–NISTEP ⳛ⻔⹳
+獏ぃ . ٜػ٭ٔة
+ゖ갭吾鋀鼧⚡ 瑬 7 ㍑ 鿥䄭鞲乢魕倣 1-⯁庒, Oct 2020. https://www.mext.go.jp/content/
+20201026-mxt_jyohoka01-000010684_2.pdf
+[㸯叿 20] 㸯叿մ瞏卲մ⾔䑡⚢跥鎑㲳 COVID-19 / SARS-CoV-2 ؅ع٤ٛوٝوס
+雧鉿溷⮔卥 NISTEP Discuttion Paper, No.186, June 2020. http:
+//doi.org/10.15108/dp186
+[卲 20] 卲⾔䑡 , 㸯叿瞏 arXiv ⮔卥 . NISTEP DISCUSSION PAPER
+Vol.187, Aug 2020. https://doi.org/10.15108/dp187
+[卲 21] 卲⾔䑡 , 㸯叿瞏 bioRxiv ⮔卥 . NISTEP DISCUSSION PAPER
+Vol.1XX, Aug 2021. https://doi.org/10.15108/dp1XX
+25
+
+===== PDF_PAGE 31 =====
+♀ꎰ A 奂鬳
+ַ
+ 2021 䌑 4 ٤ٛوٝوٜػ٭ٔةיַחמ
+㎫ 21 
+/uni4E00/uni822C/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8ĞĞ
+㎫ 21 嬟鼛
+䑛
+מ
+
+26
+
+===== PDF_PAGE 32 =====
+♀ꎰ B 奂鬳
+ַי׊
+ 2021 䌑 4 םס
+㎫ 22 
+/uni4E00/uni822C/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8/uni30B8/uni30E3/uni30FC/uni30CA/uni30EB/uni30D7/uni30EC/uni30D7/uni30EA/uni30F3/uni30C8ĞĞ
+㎫ 22 嬟鼛
+䌐㐬 1.4 ┞
+
+27
+
+===== PDF_PAGE 33 =====
+DISCUSSION PAPER No.200 プレプリントとジャーナル論⽂の差異：bioRxivを⽤いた試⾏ 2021年8⽉ ⽂部科学省 科学技術・学術政策研究所 データ解析政策研究室 ⼩柴 等， 林 和弘 〒100-0013 東京都千代⽥区霞が関3-2-2 中央合同庁舎第7号館 東館16階 TEL: 03-3581-2393 Differences between preprints and journal articles: a trial using bioRxiv Aug 2021 KOSHIBA Hitoshi and HAYASHI Kazuhiro Research-Unit for Data Application National Institute of Science and Technology Policy (NISTEP) Ministry of Education, Culture, Sports, Science and Technology (MEXT), Japan https://doi.org/10.15108/dp200
+
+===== PDF_PAGE 34 =====
+https://www.nistep.go.jp

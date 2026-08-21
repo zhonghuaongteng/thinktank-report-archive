@@ -1,0 +1,76 @@
+# C-NISTEP-DP198-2068C2DB 原文切片
+
+- 原文：`03_证据底稿\原文PDF\C-NISTEP-DP198-2068C2DB.pdf`
+- PDF页数：1
+- 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
+
+## 执行摘要与开篇候选
+
+### PDF页 1
+
+日本の多国籍企業における海外研究開発と特許出願
+文部科学省 科学技術・学術政策研究所 第 1 研究グループ
+
+要旨
+本稿では、 多国籍企業 内における国境を越えた 研究開発（ R&D ）活動の配分と R&D 成果と
+の関係を分析する。より具体的には、 R&D 成果を特許出願数やその質の指標を用いて計測し、
+知識フロー・ネットワークの中心により近い国・産業により多くの R&D を配分することが、 多国籍
+企業の R&D 成果につながるのかどうかに注目する。我々は、 日本の製造業多国籍企業につい
+て、本社企業とその海外 現地法人の企業レベルのデータに、各多国籍企業の特許出願状況を
+接続したデータセットを用いる。さらに、世界各国で出願された特許の 引用情報を用いて、 世界
+の知識フロー・ネットワークを可視化し、 そこから 各国・産業のネットワーク中心性指標を 計測する。
+固有ベクトル中心性指標を用い、この中心性が高い国・産業ほど、より多くの国・産業と特許の引
+用・被引用関係を持ち、世界の知識フロー・ネットワーク の中でより中心に近いと解釈する。
+本稿の分析によると、知識フロー・ネットワークの中心性が高い国・産業により多くの R&D 活動
+を配分して いる多国籍企業ほど、質を考慮した特許出願数が多くなることが確認された。一方 、
+質を考慮しない特許出願数と、 R&D の配分との間には 、統計的に有意な関係は見いだされなか
+った。
+
+Global Knowledge Flow and Japanese Multinational Firms’ Offshore R&D
+Allocation and Patenting
+First Theory -Oriented Research Group, National Institute of Science and Technology
+Policy (NISTEP), MEXT
+
+ABSTRACT
+This paper examines whether allocating more research and development
+(R&D) activities to a country -industry pair with a higher intensity of knowledge
+flows improves the innovation performance of multinational enterprises (MNEs).
+We use the number of patent applications as a proxy for innovation outcome and
+construct firm -patent -matched data for Japanese manufacturing MNEs, including
+data on MNEs’ offshore R&D expenditure and information on patents filed by both
+parent firms and overseas affiliates. Moreover, as a proxy for the intensity of
+knowledge flows, we use the eigenvector centrality of each country -industry pair in
+the global knowledge flow network, utilizing patent citation information.
+We find that the quality -adjusted number of patent applications tends to be
+higher for MNEs that allocate more R&D activities to country -industry pairs that
+are more central in the network of global knowledge flows. However, we did not
+find any significant relationship between the country and industry distribution of
+offshore R&D and the number of patent applications.
+
+## T1_国家研发与方向设定
+
+未自动命中；需人工按目录复核。
+
+## T2_市场与产业政策边界
+
+未自动命中；需人工按目录复核。
+
+## T4_国际合作与开放
+
+未自动命中；需人工按目录复核。
+
+## T5_供应链与技术依赖
+
+未自动命中；需人工按目录复核。
+
+## T7_管制与研究安全
+
+未自动命中；需人工按目录复核。
+
+## T8_新兴技术治理
+
+未自动命中；需人工按目录复核。
+
+## T10_预见与优先领域
+
+未自动命中；需人工按目录复核。

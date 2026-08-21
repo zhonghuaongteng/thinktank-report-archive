@@ -1,0 +1,68 @@
+# C-NISTEP-DP142-61D6510C 原文切片
+
+- 原文：`03_证据底稿\原文PDF\C-NISTEP-DP142-61D6510C.pdf`
+- PDF页数：1
+- 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
+
+## 执行摘要与开篇候选
+
+### PDF页 1
+
+科学・技術・産業データの接続と産業の科学集約度の測定
+文部科学省 科学技術・学術政策研究所 第１研究グループ
+要旨
+ 本論文では、科学論文（科学知識）、特許（技術知識）、及び経済センサス（産業）のデータを
+組み合わせて、日本の産業の科学集約度を測るための新しい指標を提示した。この指標は、特許
+による非特許文献の引用情報を用いた既存のサイエンス・リンケージ指標では捉えることができ
+ない、大学等のアカデミアが出願する特許によって生じる科学と産業界の相互作用を反映してい
+る。アカデミアの特許出願活動が活発になり、サイエンス・ベース産業以外の分野でも、アカデ
+ミアの科学知識が活用されるようになった。さらに、ここ 10 年ほどの間に、全ての学術分野に
+おいて、その科学知識が産業のイノベーションでますます利用されるようになった。サイエンス
+への公的支援は産業のイノベーションを促進するための重要な政策であり、 学術界と産業界の相
+互交流を促進する政策が企業による科学知識の更なる活用に必要とされていることを、 我々の研
+究は再確認した。
+
+First Theory-Oriented Research Group, National Institute of Science and Technology Policy (NISTEP),
+MEXT
+ABSTRACT
+This paper presents new indicators measuring the science intensity of industry in Japan, linking a scientific
+paper database (science), patent information (t echnology), and economic census data (industry). The new
+indicators reflect the interaction between science and industry, via academic patenting activities , which
+cannot be measured by an existing indicator of science linkage - non-patent literature (NPL) citations by
+patents. As the academic sector gets more involved in patenting activities, its scientific knowledge is
+utilized by industries that are not ca tegorized as science-based. Additionally, it was revealed that scientific
+knowledge has been increasingly used for industrial innovation over the last 10 years, across all academic
+disciplines. Our study reiterates that public support of science is essenti al for industrial innovation.
+
+JEL Code: O31, O33
+Keywords: science intensity, academic patents, inventor disambiguation, industrial innovation
+本 DISCUSSION PAPER は、文部科学省科学技術・学術政策研究所（NISTEP）と独立行政法人経済
+産業研究所（RIETI）との共同研究プロジェクトの成果の一部である。
+
+## T1_国家研发与方向设定
+
+未自动命中；需人工按目录复核。
+
+## T2_市场与产业政策边界
+
+未自动命中；需人工按目录复核。
+
+## T4_国际合作与开放
+
+未自动命中；需人工按目录复核。
+
+## T5_供应链与技术依赖
+
+未自动命中；需人工按目录复核。
+
+## T7_管制与研究安全
+
+未自动命中；需人工按目录复核。
+
+## T8_新兴技术治理
+
+未自动命中；需人工按目录复核。
+
+## T10_预见与优先领域
+
+未自动命中；需人工按目录复核。

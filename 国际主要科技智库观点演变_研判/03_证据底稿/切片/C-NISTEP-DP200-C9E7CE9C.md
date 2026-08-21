@@ -1,0 +1,83 @@
+# C-NISTEP-DP200-C9E7CE9C 原文切片
+
+- 原文：`03_证据底稿\原文PDF\C-NISTEP-DP200-C9E7CE9C.pdf`
+- PDF页数：34
+- 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
+
+## 执行摘要与开篇候选
+
+### PDF页 3
+
+䄐樟 bioRxiv 鍱车
+闋卥侓瞬煝疴㵍
+釐仿
+侓瞬皑呾 (♧┫EBPM Evidence-based Policy Making) ٭؛
+⸮詇韢
+ֻ
+ג׿׈ OA 焒锶
+
+ bioRxiv כع٤ٛوٝوס OA ػ٭ٔة
+⪢倀 XML ׾׌
+倀剹꿔⛣
+韢
+דַ
+ע 47% 
+焒
+מ׼׿׆
+ע
+׼ׅ
+
+Diﬀerences between preprints and journal articles: a trial using bioRxiv
+Research-Unit for Data Application, National Institute of Science and Technology Policy (NISTEP),
+MEXT
+ABSTRACT
+In light of the strengthening of the evidence-based policy making (EBPM) function and the trend
+toward open science, this paper considers whether analysis using preprints can provide new knowledge
+in a complementary manner to the analysis of research power based on original papers. In particular,
+the preprint and the ﬁnal version of the preprint are used as the basis for the analysis. In particular, we
+attempted to see if we could gain insights by comparing preprints with OA journal articles in which
+they were ﬁnally published.
+Translated with www.DeepL.com/Translator (free version)
+First, due to the recent trend of open journals, we were able to secure a certain amount of full-text
+XML of bioRxiv preprints and journal articles, and veriﬁed the technical feasibility of comparing
+preprints and journal articles. On the other hand, within the scope of this trial, which attempted to
+identify diﬀerences between preprints and journal articles, and between preprints that became journal
+articles and those that did not, we could not ﬁnd any clear diﬀerences. Even using machine learning
+
+## T1_国家研发与方向设定
+
+未自动命中；需人工按目录复核。
+
+## T2_市场与产业政策边界
+
+未自动命中；需人工按目录复核。
+
+## T4_国际合作与开放
+
+- PDF页3：es between preprints and journal articles: a trial using bioRxiv Research-Unit for Data Application, National Institute of Science and Technology Policy (NISTEP), MEXT ABSTRACT In light of the strengthening of the evidence-based policy making (EBPM) function and the trend toward open science, this paper considers whether analysis using preprints can provide new knowledge in a complementary manner to the analysis of research power based on original papers. In particular, the preprint and the ﬁnal version of the preprint are used as the basis for the analysis. In particular, we attempted to see if we could gain insights by comparing preprints with OA journal articles in which they were ﬁnally published. Translated with www.DeepL.com/Translator (free version) First, due to the recent trend of open journa
+
+## T5_供应链与技术依赖
+
+未自动命中；需人工按目录复核。
+
+## T7_管制与研究安全
+
+未自动命中；需人工按目录复核。
+
+## T8_新兴技术治理
+
+- PDF页20：ons_And_DiscussionPatients_And_MethodsData_And_Methods Related_Work Experiments Conclusion_And_Future_Work Software_Availability Simulations Findings Materials_And_Method Availability_And_Future_Directions Discussion_And_OutlookFuture_Directions Database_Content_And_Web_InterfaceEthics Literature_Review Models_And_ResultsSimulation_StudyConclusions_And_Future_Directions Methods_And_Material Model_Description Simulation_Results Simulation Adaptive_OpticsExperimental_Study Implementation_And_Availability Software Study_2Study_1 Sensitivity_Analysis Results_And_Conclusion Implications Theory_And_Methods Subjects_And_Methods Experiments_And_Results Conflict_Of_Interest Statistics Model_Development Methods_And_Data ValidationStatistical_Analysis Summary_And_Conclusions Animals,_Material_And_Methods R
+
+- PDF页20：cription Potential_Of_Future_Growth Validation_Analyses In-Silico_Definition_Of_The_Drosophila_Melanogaster_Matrisome Accessing_The_Drosophila_Matrisome_And_Utilizing_It_To_Annotate_Large_Datasets Main Eeg_Measurement_Model Toolbox_Signal_Processing_Outline Implementation_DetailsEthics_Statement Eeg_Source_ReconstructionApplication_Structure Pre-Processing_Pipeline Subjects_And_Fmri_Acquisition Pamgene_Pamchip®_Arrays Pipeline_Specifics Simulation_1 Simulation_2 Statistical_Physics_Of_Model_Selection_And_Ensemble_Estimation Ensemble_Estimation_And_Network_Inference Model_Selection_And_Multi-Model_Inference Statistical_Behavior Empirical_Analyses Experiment_2:_Negative_Relief Previous_Work Features_Of_GenesisModel_–_Weighted_Combinations_Of_Transient_Types Results:_Cmso_Standards_And_Tools Discus
+
+- PDF页20：al_MaterialsImplementations Study_Limitations Model_And_Results DiscusionExperiment_1 Results/Discussion Data_Records Experiment_Setup AcknowledgementsMethods_And_ImplementationRecommendations Western_BlottingSupplementary_Figure_LegendsData_Collection Text Conflicts_Of_Interest Ethics_StatementHistology Author’S_Contributions Conclusions_And_Recommendations List_Of_Abbreviations Acknowledgments Author_SummaryData_And_MethodsObjective Disclosures Conflict_Of_Interest_Statement Summary_And_ConclusionsResults_And_DiscussionsIncorporating_Synaptic_Time_Delays New_Approach [Methods]Datasets_And_Methods Solving_The_Mlqst_Problem_Using_Dynamic_Programming Application_On_Empirical_Data Limitation_Of_The_Study Simulating_DataInstrument_Design Limitations_Of_The_Bsn_Model Experiments Analysis_OverviewCro
+
+- PDF页21：Materials_And_MethodsSupplementary_MaterialSupporting_InformationMethodsAuthor_ContributionsIntroductionConflict_Of_InterestDiscussion !!toplevelResults Conclusions Data_Availability_Statement ConclusionData_AvailabilityBackground Ethics_Statement Funding StarMethodsResults_And_DiscussionAdditional_FilesConflict_Of_Interest_StatementExtended_Data Declaration_Of_Competing_Interest Supplementary_Data Material_And_Methods Competing_InterestsSignificance_Statement Experimental_ProceduresElectronic_Supplementary_MaterialCredit_Authorship_Contribution_StatementAbbreviations Availability_And_Requirements Supplemental_Information Data_Summary Availability_Of_Supporting_Data_And_Materials SignificanceConflicts_Of_InterestOnline_MethodsAdditional_File Auth
+
+- PDF页21：Disclosure Availability_And_Future_DirectionsDeclaration_Of_Interests Data_Accessibility Materials_AndMethods Statistical_Analysis Data_Archiving Data_And_Code_Availability Funding_Sources General_Discussion Materials_And_Methods__ Conclusions_And_Future_DirectionsWeb_ResourcesEthics_Approval_And_Consent_To_Participate Usage_Notes Construction_And_Content Data_Analysis Future_Directions Declaration_Of_Interest Authorship Results_And_Discussion__Authors_Contributions Utility_And_Discussion Declarations_Of_Competing_Interest Results/DiscussionResults_And_Discussions Results_ Discussions Disclaimer StarMethods Design_And_Implementation Conclusions__ Text ObservationAvailability_Of_Data_And_Materials Experimental_Methods Additional_Information Author_Summary Introduction_ Authors'_ContributionN
+
+- PDF页21：roduction_ Authors'_ContributionNew_Approaches Conclusions_ Disclosure Role_InformationReporting_Summary Experimental DataModel Findings Software Disclosure_Statement Authors_Contribution Accession_Codes Supplemental_Materials Information_Sharing_Statement Supplementary_MaterialsEthics_ApprovalConclusion__ Analyses AcknowledgementsIsa-Tab_Metadata_File Availability Subjects_And_Methods Data_And_Software_Availability Experiment_2 Financial_Support Methods: ResultsAnd_Discussion Experimental_Design Algorithm Methods_And_ResultsStrengths_And_Limitations Disclosure_Of_Potential_Conflicts_Of_Interest Gene_AnnotationMethods_ Authors’_ContributionConclusions_And_Future_Perspectives Context Conclusion_And_Future_Directions Approach Grants Experiment_3 Author’S_Contributions Experiment_1 Research_Desig
+
+## T10_预见与优先领域
+
+- PDF页20：okSoftware_Tools Dats_Use_Metadata Pathway_And_Interaction_Data_Coverage Problem_And_Method Data_Formats_And_AvailabilityTheory_And_Implementation Walk-Through_Examples Netcomp:_Network_Comparison_In_Python Notation Software_InfrastructureUse_Case Conclusion_And_Discussion Usage_Scenario Isolation_Of_An_Asgard_Archaeon Alternative_Formulation_In_Tn_Dimensions Benchmark_Problems_For_Models_Of_Root_Architecture_And_Function Ciliary_Coordination_And_Emergence_Of_Metachronal_Waves Data_Acquisition_And_Pre-Processing The_Proposed_Software Physiology Web_Applications_And_Training_Materials ApplicationsFuture_Implementations Dats_Access_Metadata Utility_And_DiscussionProtecting_Confidential_Research_Data Results,_Discussion,_Conclusions Overview_Of_The_ModelConclusions_And_Future_Developments Maximum_Ent

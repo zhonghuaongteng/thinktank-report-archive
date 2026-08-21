@@ -1,0 +1,72 @@
+# C-NISTEP-RM247-90849ED3 原文切片
+
+- 原文：`03_证据底稿\原文PDF\C-NISTEP-RM247-90849ED3.pdf`
+- PDF页数：124
+- 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
+
+## 执行摘要与开篇候选
+
+### PDF页 3
+
+/g9649/g9431/g9173/g9176/g8049/g3767/g18174/g14239/g10010/g3380/g4005/g18171/g14069/g18153/g18203/g3624/g7122/g4631/g4044/g16076
+/g6757/g13450/g9929/g5083/g9516/g16076/g9929/g5083/g6287/g12193/g18313/g5083/g12193/g6715/g10183/g9674/g10034/g6244/g16076/g10152/g16093/g9674/g10034/g18238/g18297/g18314/g18277/g16076/g7111/g7055/g16076/g2946/g3019/g5066/g16076/g3478/g7595/g16076/g2893/g2949/g16076
+
+/g12379/g6824/g16076
+/g16076/g13254/g5562/g18174/g4485/g4582/g6715/g10183/g18171/g18138/g18132/g18166/g18104/g9176/g7447/g14239/g10010/g18171/g18200/g18203/g10514/g8173/g3201/g13325/g3744/g7133/g18210/g7047/g5765/g18151/g18104/g4776/g7517/g18170/g9176/g7447/g3624/g13597/g18313/g6287/g12193/g3624/g13597
+/g18167/g18104/g18226/g18268/g18279/g18314/g18245/g18293/g18305/g18174/g3696/g3615/g18210/g3201/g13325/g18153/g18203/g9176/g7447/g18237/g18295/g18247/g18253/g18314/g18210/g4485/g4582/g18171/g6746/g3355/g18153/g18203/g18147/g18168/g18210/g9504/g6374/g18151/g18159/g6715/g10183/g18140/g5262/g14052/g18149
+/g18204/g18166/g18132/g18203/g18105/g7055/g4631/g4044/g7017/g18167/g18175/g18104/g3026/g5771/g18174/g9929/g5083/g6287/g12193/g18171/g9556/g9504/g18151/g18159/g4485/g4582/g6715/g10183/g18104/g18237/g18295/g18247/g18253/g18314/g6715/g10183/g18174/g5127/g6795/g18171/g12840/g18153/g18203
+/g9649/g12386/g18174/g6502/g3178/g18210/g9504/g6374/g18151/g18104/g18114/g4444/g3526/g18174/g9649/g9431/g9173/g9176/g8049/g3767/g18174/g4485/g9006/g9431/g3624/g5496/g8807/g7971/g18115/g18104/g18114/g9649/g9431/g9173/g9176/g8049/g3767/g18174/g8049/g3767/g7809/g14197/g18171
+/g18200/g18203/g14239/g10010/g3380/g4005/g18174/g9510/g13354/g18115/g18104/g18114/g3067/g7447/g8049/g3767/g18171/g5200/g18153/g18203/g9649/g9431/g9173/g9176/g8049/g3767/g18174/g14239/g10010/g3380/g4005/g18174/g9510/g13354/g18115/g18104/g18114/g6287/g12193/g14059/g18167/g18174/g9649
+/g9431/g9173/g9176/g8049/g3767/g18174/g14239/g10010/g3380/g4005/g18174/g9510/g13354/g18115/g181744 /g18164/g18174/g12411/g8556/g18139/g18201/g3624/g7122/g18210/g5127/g6795/g18151/g18159/g18105
+/g16076/g18157/g18174/g10518/g7133/g18104/g4785/g3865/g18174/g5495/g3850/g9195/g7079/g18167/g8777/g12481/g3615/g14506/g18313/g9422/g6850/g18140/g12188/g18207/g18204/g18166/g18132/g18203/g18140/g18104/g8049/g9422/g18170/g4485/g4582/g18175/g2893/g13450/g18171/g14239/g2928/g18151/g18166
+/g18132/g18203/g18147/g18168/g18104/g3615/g14506/g3015/g18200/g18202/g18194/g9422/g6850/g3015/g18174/g6793/g18140/g5705/g18143/g14239/g2928/g18153/g18203/g2893/g6793/g18167/g8777/g12481/g9422/g6850/g8049/g3767/g18200/g18202/g18194/g8777/g12481/g3615/g14506/g8049/g3767/g18174/g6793/g18140
+/g5705/g18143/g14239/g2928/g18153/g18203/g18147/g18168/g18104/g3067/g7447/g8049/g3767/g18200/g18202/g18194/g9649/g9431/g9173/g9176/g8049/g3767/g18174/g6793/g18140/g2893/g13450/g4485/g4582/g18171/g14239/g2928/g18153/g18203/g18147/g18168/g18104/g14510/g3101/g18151/g18159/g6287/g12193/g14059
+/g18167/g18194/g4485/g9006/g9431/g14239/g2928/g5592/g18196/g14239/g10010/g18271/g18253/g18314/g18305/g18171/g13354/g18132/g18140/g18130/g18203/g18147/g18168/g18140/g6850/g18201/g18139/g18168/g18170/g18163/g18159/g18105
+/g16076
+/g16076
+Analytical results of Japan's agglomeration of intellectual activity
+Kuniko Matsumoto, Kazuyuki Motohashi
+1st Theory-oriented Research Group, National Institute of Science and Technology Policy (NISTEP),
+MEXT
+
+ABSTRACT
+In recent years, to create innovation and promote economic growth, a regional policy of
+industrial clusters has been implemented in various industries and technology fields. This study
+aims to contribute in the implementation of the regional cluster policy of science and technology,
+and conducts analysis from the following perspectives: the geographical distribution of
+intellectual activities in Japan, and comparing the agglomeration features in phases of intellectual
+activity, features between business and intellectual activities, and in fields of technology. The
+results were as follows: patent application and invention activities are common in most cities;
+however, these activities are concentrated in specific areas. Patent application activities have a
+higher concentration than patent invention activities; more investors concentrate on patent
+activities than applicants do. Intellectual activities have a higher concentration than business
+activities. Similar fields of technology have different degrees of geographical concentration and
+agglomeration patterns
+
+## T1_国家研发与方向设定
+
+未自动命中；需人工按目录复核。
+
+## T2_市场与产业政策边界
+
+未自动命中；需人工按目录复核。
+
+## T4_国际合作与开放
+
+未自动命中；需人工按目录复核。
+
+## T5_供应链与技术依赖
+
+- PDF页103：/g18253/g18314/g18305/g18441/g7908/g11837/g9516/g18174/g13459/g13920/g18298/g18279/g18297/g18174/g3624/g7122/g18210/g2928/g5808/g18171/g18115 /g18436Tohoku Economics Research Group Discussion Paper No.255, 2010 /g55623 /g7030/g18437 [19] Moran, P. (1950), ‘A test for serial interdependence of residuals’, Biometrica, 37, 178/g237181.
+
+## T7_管制与研究安全
+
+未自动命中；需人工按目录复核。
+
+## T8_新兴技术治理
+
+未自动命中；需人工按目录复核。
+
+## T10_预见与优先领域
+
+未自动命中；需人工按目录复核。
