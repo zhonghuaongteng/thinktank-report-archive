@@ -1,0 +1,2040 @@
+
+===== PDF_PAGE 1 =====
+WORKING PAPER | ISSUE 14/2021 | 16 DECEMBER 2021
+MARKET POWER AND
+ARTIFICIAL INTELLIGENCE
+WORK ON ONLINE LABOUR
+MARKETS
+NÉSTOR DUCH-BROWN, ESTRELLA GOMEZ-HERRERA, FRANK MUELLER-LANGER
+AND SONGÜL TOLAN
+We investigate three alternative but complementary indicators of market
+power on one of the largest online labour markets (OLMs) in Europe: (1) the
+elasticity of labour demand, (2) the elasticity of labour supply, and (3) the
+concentration of market shares. We explore how these indicators relate to an
+exogenous change in platform policy. In the middle of the observation period,
+the platform made it mandatory for employers to signal the rates they were
+willing to pay, as given by the level of experience required to perform a project:
+entry, intermediate or expert level. We find
+ a positive labour supply elasticity
+ranging between 0.06 and 0.15, which is higher for expert-level projects. We
+also find that the labour demand elasticity increased while the labour supply
+elasticity d
+ecreased after the policy change. Based on this, we argue that
+market-designing platform providers can influence the labour demand and
+supply elasticities on OLMs with the terms and conditions they set for the
+p
+latform. We also explore the demand for and supply of AI-related labour on
+the OLM under study. We provide evidence of a significantly higher demand for
+AI-related labour (ranging from +1.4 percent to +4.1 percent) and a significantly
+lower supply of AI-related labour (ranging from -6.8 percent to -1.6 percent)
+than for other types of labour. We also find that workers on AI projects receive
+3
+.0 percent to 3.2 percent higher wages than workers on non-AI projects.
+Keywords: Online labour markets, artificial intelligence, market power, exogenous change in
+platform policy
+JEL codes: D40, J40
+Néstor Duch-Brown is a Scientific Officer at the Joint Research Centre, European Commission
+Estrella Gomez-Herrera is a Visiting Fellow at Bruegel and a Professor at the Unversity of Balearic
+Islands
+Frank Mueller-Langer is a Research Fellow at the Max Planck Institute for Innovation and
+Competition
+S
+ongül Tolan is a Researcher at the Joint Research Centre, European Commission
+The views are those of the authors and should not be regarded as stating an official position of the European
+Commission. Frank Mueller-Langer gratefully acknowledges financial support from a research grant of the
+University of the Bundeswehr Munich. This working paper was produced within the project “Future of Work
+and Inclusive Growth in Europe“, with the financial support of the Mastercard Center for Inclusive Growth.
+Recommended citation:
+Duch-Brown, N., E. Gomez-Herrera, F . Mueller-Langer and S. Tolan (2021) ‘Market power and
+artificial intelligence work on online labour markets’ , Working Paper 14/2021, Bruegel
+WORKING PAPER|ISSUE 03|20 20
+
+===== PDF_PAGE 2 =====
+1. Introduction
+In recent years, online labour markets (OLMs)1 have grown substantially in economic size and political
+relevance (Farrell and Greig 2016; Mueller-Langer and Gomez-Herrera, 2021; Pesole et al, 2018). Kässi
+more than 65 percent over the last four years. Parallel to this, there has been a steep increase in the
+global economic importance of artificial intelligence (AI). This has been driven by advances in AI
+performance in a broad range of economically relevant tasks, also reflected in a tripling of global AI-
+related patents between 2012 and 2016 (Fujii and Managi 2018)
+2. Although vast amounts of data and
+substantial complementary investments may still be necessary for AI to have an impact on the
+economy (Brynjolfsson et al
+, 2021), its uptake can be expected to generate large increases in
+economic productivity (Cockburn et al , 2019; Furman and Seamans 2019) . The growth of OLMs and
+the ad vances in AI performance are interrelated phenomena , with new developments in digital
+technologies leading to advancements in AI (Ernst et al , 2019) and increased investment in R&D
+resulting in new types of work arrangements such as freelancing via OLMs (Ciarli et al , 2020). Both
+developments are likely to cause shifts in labour market dynamics and market power.
+In this paper, we investigate three alternative but complementary indicators of market power on one of
+the largest mid- to high-skill OLM platforms in Europe, PeoplePerHour (PPH): (1) elasticity of labour
+demand, (2) elasticity of labour supply, and (3) concentration of market shares. We also explore the
+demand for, supply of and wages for AI-related labour on PPH.
+We investigate how labour demand and supply elasticities relate to an exogenous change in platform
+policy. In the middle of the observation period, the platform made it mandatory for employers to signal
+the rates they were willing to pay upon posting a project, as given by the experience level required to
+perform a project, ie entry, intermediate or expert level. In a recent paper, Gomez-Herrera and Mueller-
+Langer (2019) use
+d data from PPH to analyse gender differences in behaviour and wages. While
+studying the same platform, in this paper we go beyond their analysis in at least three important
+aspects. First, we focus on AI demand and supply and the specific differences in outcomes for AI
+workers and AI employers in this market. Second, we include a wider set of projects. Via PPH, projects
+can be posted and completed under two different conditions: employers can propose a fixed wage bill
+ regardless of the amount of time required to complete the task
+ or, alternatively, they can propose a
+1
+by a collection of buyers a
+2 See also Baruffaldi et al (2020) for a thorough overview of AI-related developments in science, open source
+and patents.
+2
+
+===== PDF_PAGE 3 =====
+per-hour wage where hours worked are determined during the course of project completion. In the
+present analysis, we include both project types, whereas the analysis in Gomez-Herrera and Mueller-
+Langer (2019) was restricted to fixed wage bill projects. The distinction between fixed wage bill
+projects and per-hour wage projects is relevant for our analysis because (as explained in more detail in
+section 2.2.1) per-hour wage contracts resemble more traditional employment contracts, while fixed
+wage bill projects are more similar to sales contracts (Chen and Horton, 2016). Third, our analytical
+approach allows us to use employer market power, ie monopsony, as random variation in the analysis
+of labour supply.
+Our sample consists of 428,484 digitally performable projects posted by 175,048 hiring employers in
+more than 180 countries. The sample also includes proposals made in response to the projects posted
+from 106,309 workers in 185 countries . A special feature of our data is that it offers new insights into
+job matching procedures through the provision of detailed information on labour demand and supply
+characteristics, as well as detailed project descriptions. By matching AI-related keywords to these
+project descriptions, we can explicitly focus on AI-related labour demand and supply.
+Our paper relates to the ongoing literature on market power estimating directly firm-level labour supply
+elasticities (Staiger et al , 2010; Falch, 2010; Webber , 2015; Azar, Berry and Marinescu, 2019; Azar,
+Marinescu and Steinbaum, 2019). Using comprehensive job application data from CareerBuilder.com,
+Azar, Berry and Marinescu (2019) estimated the market-level and firm-level labour supply elasticities.
+Using instrumental variables estimation, they found that the market-level labour supply elasticity is
+roughly 0.6 and the firm-level labour supply elasticity is roughly 5.8. Their results suggest that
+employers have significant market power. Azar, Berry and Marinescu (2019) also explo red possible
+heterogeneity of employer market power depending on worker skills
+3. They found that low-skill and
+high-skill workers have similar labour supply elasticities.
+In addition, Azar et al (2020) use d comprehensive US online vacancy data from Burning Glass
+Technologies to explore labour market concentration in the US. Their results suggest ed that 60 percent
+of labour markets are highly concentrated, ie they obtain a Herfindahl-Hirschman index of above
+2,500. Azar et al (2020) provide d robust empirical evidence of a negative correlation between labour
+market concentration and wages. In contrast, they found no relationship between market
+concentration and the skill level of an occupation.
+
+3 Azar, Berry and Marinescu (2019, p. 8) classified an occupation as low-skill
+ (Bureau of Labor
+Statistics) OES (Occupational Employment Statistics) hourly wage in 2012 for its 3-digit SOC (Standard
+Occupational Classification
+ -
+it i
+ .
+3
+
+===== PDF_PAGE 4 =====
+As for our analysis of market power, the estimation of demand or supply elasticities often raises
+concerns of endogeneity in the price regressors due to the influence of the respective other side of the
+market. To address these issues, we deploy an instrumental variable (IV) approach for each analysis
+respectively. The rationale for the IV approach for the demand side estimations is similar to Berry et al
+(1995),
+while the IV approach for the supply side estimations is based on Dube et al (2020).
+For the estimation of the labour supply elasticity, we follow Dube et al (2020), who estimated the
+labour supply elasticity on the low-skill microtask online labour platform Amazon Mechanical Turk
+(AMT). A low labour supply elasticity puts workers in the position of price takers and employers in the
+position of price setters. That is, workers would be willing to work at almost any wage that employers
+are willing to pay, so that market power is
+market concentration, ie the distribution of market shares among employers, we apply the approach
+taken by Azar et al (2020), who measured market concentration in a traditional labour market. High
+market concentration means that large shares of the market are in the hands of few employers,
+ et al (2020), markets are differentiated
+based on geography. Given that geography is less restrictive on OLMs, we use different bases for
+market differentiation that are more appropriate for OLMs, namely the job subcategory and the
+required experience level of each project
+
+Our results suggest a significantly higher demand for AI-related labour and a significantly lower supply
+of AI-related labour than for other types of labour on the OLM under study. This is in line with anecdotal
+evidence of
+a job-seeker
+ s market
+ 4 for AI experts and international competition over AI talents, which
+supports the idea that the supply of AI labour is not sufficient to meet demand on the labour market.
+We find that on average, AI employers post 1.4 percent to 4.1 percent more projects than non- AI
+employers. By contrast, AI projects receive 1.6 percent to 6.8 percent fewer worker proposals than
+non-AI projects in the competition for contracts. In line with these findings, we find that workers on AI
+projects receive significantly higher wages. A worker on an AI project receives wages between 3.0
+percent and 3.2
+percent above wages received by a worker on a non-AI project.
+Moreover, we provide novel insights into the distribution of market power on OLMs. First, we find that
+the labour demand elasticity increases slightly after the policy change, ie it increases by 0.007 in OLS
+(significant at the 5 percent level ) and by 0.0 72 in IV estimation (significant at the 5 percent level). A
+possible explanation for this could be that employers use this policy change to indicate expert-level
+
+4
+ -
+ Reuters, 6 November 2018,
+https://www.reuters.com/article/us-usa-economy-artificialintelligence/as-companies-embrace-ai-its-a-job-
+seekers-market-idUSKCN1MP10D.
+4
+
+===== PDF_PAGE 5 =====
+experience as a requirement (and consequently signal their willingness to pay higher wages) and to
+attract better-qualified applicants. Second , we find a positive labour supply elasticity ranging between
+0.062 and 0.154. These results are in line with Dube et al (2020), who found labour supply elasticities
+of around 0.1 on AMT. This is striking given the notable differences between AMT and PPH: in contrast to
+the micro-tasks platform AMT, PPH is a mid - to high-skill platform where employers post tasks that are
+more extensive. In addition, wage contracts are posted as either per-hour wage rates or fixed wage bills
+on PPH. Moreover, workers and employers can bargain over wages on PPH while bargaining is not
+possible on AMT. In addition, we find that the elasticity of labour supply decreased after the change in
+platform policy. These findings suggest that platform providers can influence the labour demand and
+supply elasticities on OLMs with the terms and conditions they set for the platform . In addition, o
+ur
+results suggest that labour supply elasticity is higher for expert-level projects. This result contrasts the
+result of Azar, Berry, and Marinescu (2019), indicating that low-skill and high-skill workers have similar
+labour supply elasticities. Finally, we find that market concentration on PPH is lower than on the
+traditional US labour markets studied by Azar
+et al (2020).
+Our paper contributes to the emerging but as yet limited literature analysing labour demand and
+supply related to AI and the distribution of market power on online labour platforms. Both phenomena
+are related to the ongoing digital transformation of the labour market. To the best of our knowledge, the
+combined analysis in our paper offers a novel attempt to contribute to these two emerging strands of
+literature. Regarding demand and wages for AI labour, our results are in line with Alekseeva et al
+
+(2021), who report ed a steep increase in demand and a significant wage premium for AI skills on US
+labour markets for the period 2010-2019. Fossen and Sorgner (2020) provided empirical evidence
+that AI advances are associated with higher stability and wage growth. Similarly, Lee and Clarke
+(2019) show ed that growth in high-tech is associated with higher average wages for mid-skilled
+workers. Balsemeier and Woerter (2019) found that digitalisation increases employment among high-
+skilled workers. In addition, Goos et al
+ (2020) provided evidence that re-employment opportunities are
+greater for workers with digital skills. Falck et al (2020) found statistically and economically significant
+returns to ICT skills.
+OLMs enable employers to
+ unbundle
+ work into single individual tasks (Chen and Horton, 2016). In
+the growing literature that deals with the effect of AI on labour markets (Brynjolfsson and Mitchell,
+2018; Agrawal et al , 2019a&b; Frank et al , 2019), the task-based approach has become seminal to
+analyse the impact of technology on employment (Autor et al, 2003; Acemoglu and Autor, 2011) . This
+approach subdivides jobs into tasks; technological advances may substitute for some tasks but also
+complement human labour in other tasks (Autor, 2015). Besides productivity effects, subsequent
+5
+
+===== PDF_PAGE 6 =====
+price, income and demand effects also matter when assessing the impact of AI on the labour market
+(Brynjolfsson and Mitchell, 2018) . It is in this respect that OLMs are at the heart of the debate
+surrounding the effects of AI on employment.
+Against this background, regulation of OLMs is a fiercely debated issue in economics and labour policy
+(Claussen et al , 2018; Codagnone et al , 2016; Donovan et al , 2016; Goldfarb and Tucker, 2019).
+Platform developers (rather than policymakers) make important decisions on employment -related
+matters on OLMs (Kässi and Lehdonvirta, 2018). In addition, recent evidence suggests that labour
+standards, worker morale and wages are rather low on some OLMs (Berg, 2016; Berg et al , 2018).
+Consequently, there have been calls for regulators to intervene and enforce adapted forms of labour
+conditions and social security legislation on OLMs (Berg, 2016). The regulation of OLM platforms is a
+policy priority in Europe (Gonzalez-Vazquez et al , 2019; Berg et al , 2018; European Commission,
+2016a&b; Von der Leyen, 2019a&b). In this respect, our analysis of one of the largest OLMs in the EU
+
+Finally, our paper also relates to Chen et al (2019). Using comprehensive hourly earnings and driving
+data from Uber, Chen et al (2019) explored the surplus and labour-supply implications of flexible Uber
+work arrangements compared to less-flexible work arrangements. Chen et al (2019) estimate d the
+worker surplus from flexible work arrangements. Their results suggest ed that Uber drivers are willing to
+give up pay in exchange for flexible working hours. In contrast to Chen et al (2019), our results suggest
+that workers prefer to be paid per hour (rather than in the more flexible fixed wage-bill scheme) and
+earn a premium for being willing to work flexibly on PPH5.
+In the next section, we provide an overview of the data and empirical context. In section 3, we present
+the results of our analysis. Section 4 discusses policy implications. Section 5 concludes.
+
+5 We thank an anonymous referee for this suggestion.
+6
+
+===== PDF_PAGE 7 =====
+2. Data and empirical context
+2.1 Data
+Our dataset includes information from PPH, one of the top 5 OLMs worldwide6. A special feature of our
+data is that it contains detailed information on labour demand and supply characteristics. In addition,
+PPH exchanges purely digital tasks that require no physical proximity between workers and
+employers. By end-2016, PPH had about 122,000 registered workers (supply side) , 175,000
+employers (demand side) and an annual turnover of around
+10 million. It receives on average around
+3 million monthly visits from about 800,000 unique visitors, according to SimilarWeb data 7. From the
+platform, we obtain ed information on employer, project, worker and wage proposal (bid)
+characteristics for the period November 2014 to October 2016.
+Our sample consists of 428,484 digitally performable projects posted by 175,048 hiring employers
+from more than 180 countries. These projects received more than 3.4 million wage proposals from
+106,309 workers in more than 180 countries. The platform is based in the United K
+ingdom, which is
+the employer country with the highest share of projects of the countries under study. It accounts for
+68 percent of the total wage bill generated. The top five employer countries according to the share of
+total wage bill generated are the UK, US, Australia, Canada and India. The top five worker countries
+according to the share of projects awarded are the UK, India, Pakistan, US and Bangladesh.
+For the period under analysis, we observed all interactions between employers and workers with
+respect to demand, supply and agreed outcome. Based on this, we argue that our data is
+and contracting styles, we use the Online Labour Index (OLI) indicator as a benchmark to assess the
+representability of our data. As explained by Kässi and Lehdonvirta (2018), the OLI is composed of
+information from the top five English-language online labour platforms representing 60 percent of total
+worldwide traffic to these type s of digital services providers (see also footnote 6). Unfortunately, they
+do not offer data disaggregated by platform, only by employer and worker countries, and by
+occupation.
+Although in a slightly different order, the top-five employer and worker countries in our data coincide
+with the top-five employer and worker countries in the OLI. In addition, in terms of occupations, our
+
+6 The top-5 OLM platforms, according to the University
+Amazon Mechanical Turk, PeoplePerHour and Upwork. See https://ilabour.oii.ox.ac.uk/online-labour-index/ for
+further information (last accessed: 10 May 2021).
+7 We obtained this proprietary data under a subscription from https://www.similarweb.com.
+7
+
+===== PDF_PAGE 8 =====
+data is closely related to theirs, but with minor differences. The most important is that occupations in
+the
+ clerical and data entry
+ category, which ranks fourth out of six in the OLI, is the least represented in
+our dataset. Typically, these tasks involve only elementary computer skills and basic numeracy.
+Instead, in our dataset projects related to
+ sales and marketing support
+ are more frequently posted in
+the platform and occupy the third position, according to the total number of projects posted.
+These differences come from the business model adopted by the platforms and from the fact that
+platform work is very heterogeneous (Eurofound, 2018). Kilhoffer et al (2020) offer ed a typology of
+platforms based on three criteria: (i) skill requirement for tasks (either higher- or lower -skilled); (ii)
+location of task s (online or on-location); and (iii) selection process (decision made by platform,
+platform worker or client). In this respect , even if all five platforms included in the OLI are primarily
+client oriented and online, there is an important difference. While AMT is characterised by outsourcing
+usually small or repetitive tasks by companies to often large groups of workers, the other four,
+including PPH, are intermediation services connecting clients to expert freelancers. In this respect, and
+following Kilhoffer et al (2020), AMT is seen as a low-skilled tasks platform while PPH is a mid- to high-
+skill platform
+8. In addition, when we look at the relative importance of the different project categories
+on PPH, their shares are quite stable over the period of observation . The two categories representing
+the majority of projects are
+ Design
+ and
+ Web development
+ , which collectively represent between 47-
+50 percent depending on the month.
+Our data allows us to identify AI projects within the platform. Based on this, we can compare market
+power of employers posting AI and non-AI projects. We identify projects with a demand for AI workers
+who apply for these projects (and thereby supply AI labour) by matching project descriptions with a
+list of AI-related keywords . The basis of the list of AI keywords that we use to identify AI projects in our
+data is Righi et al (2020). Further, the list was extended by additional keywords (on specific software
+and programming languages used in AI systems) by a group of machine learning researchers. We
+identify AI projects on PPH through matches between this list of keywords and either the project title or
+the project description. If one of the keywords (ie full and only whole words
+) appears in the project title
+or project description, the project is defined as an AI project. Appendix Table A.4 presents the list of AI
+keywords in descending frequency of appearance in job postings. The matching of AI keywords and
+project descriptions is conducted using the Python packages Pandas and the Natural Language Toolkit
+
+8 It is worth noting that users of these two platforms rarely multi-home: using data from Similarweb, we know
+that only 1 percent of US-based AMT users have also visited the PPH platform, while 3 percent of US-based PPH
+users visited AMT. On the other hand, 40 percent of visitors to PPH in the US also visited Upwork.com, while 30
+percent did so in the UK.
+8
+
+===== PDF_PAGE 9 =====
+(Loper and Bird, 2002), where matches are based on word stems 9. According to the data, the
+proportion of AI-related projects was on average 7 .5 percent and remained stable during the whole
+period. Based on this, we argue that the platform has not significantly changed its specialisation
+towards more AI-related projects and workers. In Tables 1 to 3, we present the summary statistics of
+the variables used for the analysis. Each table shows values at a different aggregation level,
+corresponding to the levels that we use for the analysis. We present the value of the variables
+separately for AI and non-AI projects as well as the difference between the mean values. We also
+indicate whether this difference is statistically significant. In the following, we highlight some of the
+main variables under study.
+[Table 1 HERE]
+First, relevant variables at the project level (Table 1) include, for instance, the probability that a project
+is awarded, the initial wage bill/per-hour wage proposed by the employer, the final amount agreed after
+negotiation and the experience level required for its completion. The descriptive statistics indicate that
+AI projects are more likely to be awarded and more likely to require expert-level experience than non-AI
+projects. Moreover, for fixed-wage-bill projects , the proposed and agreed wages are higher for AI
+projects.
+[Table 2 HERE]
+Second, at the employer level (Table 2), we observe variables such as in-platform experience and the
+number of projects posted. We distinguish between AI and non-AI employers and find that AI
+employers post more projects than non-AI employers.
+
+[Table 3 HERE]
+Finally, at the proposal level (Table 3), we observe, for instance, the characteristics of the workers
+making the proposal (in-platform experience, number of words in their profile, certificate in the
+platform), the amount of each proposal, the average number of proposals per project, and whether it is
+finally accepted or not. Here, it is relevant to point out that workers bidding for
+ AI projects have
+significantly more work experience and higher certificates than workers bidding for non-AI projects
+(see Appendix Table A.5). In addition, AI projects receive on average slightly fewer proposals (see Table
+3).
+
+9
+of the same word do not prevent a match.
+9
+
+===== PDF_PAGE 10 =====
+We describe the variables reported in Tables 1-3 in more detail in section 3 (Analysis).
+2.2 Empirical context
+We first address issues related to labour demand and supply elasticities, their relationship to market
+power and AI-related labour on OLMs. Then , we provide an overview of the exogenous change in the
+platform conditions that we exploit in the demand and supply analyses. We also describe the IV
+approaches that we apply in our analyses of labour demand and labour supply elasticities.
+2.2.1 Market power on OLMs
+Earlier empirical evidence suggests that employers on OLMs have monopsony power (Dube et al ,
+2020). Information asymmetries, a high degree of market concentration in the hands of a small
+number of OLM employers and only restricted wage bargaining are relevant drivers for the persistence
+of a monopsony on OLMs (Kingsley et al,
+2015).
+In this paper, we use unique company data to explore the overall market power of employers and
+market concentration on the OLM under study. OLMs offer new insights into the interrelated dynamics
+of supply and demand effects (Horton and Tambe, 2015) and subsequently the distribution of market
+power. OLM data also offers detailed project profiles, which enable us to analyse AI-related labour
+market matches.
+Dube et al (2020) quantified the extent of monopsony power in OLMs, as measured by the elasticity of
+labour supply . They explore d the elasticity of labour supply using data from AMT from more than
+300,000 Human Intelligence Task (HIT) batches. Using observational and experimental variation in
+wages, they provided empirical evidence of uniformly low labour supply elasticities, around 0.1, which
+they linked to a high presence of monopsony on AMT.
+We use data from a leading OLM platform in Europe (PPH) to expand on the results in Dube et al (2020)
+in several important ways. First, our data allows us to distinguish between AI projects and non- AI
+projects. Second, we explore the distribution of market power in an OLM that differs from AMT. In
+contrast to AMT, wage contracts are posted as either per-hour wage rates or fixed wage bills on PPH.
+There is a crucial difference in the contractual nature of per-hour wage rates compared to fixed wage
+bill contracts. From a transaction cost perspective, these two types of contracts are relevant to the
+boundary of the firm and its choice to organise production through authority (ie per-hour contracts) or
+through markets (ie fixed wage bills) (Coase, 1937). That is, per-hour wage contracts resemble more
+traditional employment contracts, while fixed wage bill projects are more similar to sales contracts
+(Chen and Horton, 2016). Finally, workers and employers can bargain over wages on PPH while
+10
+
+===== PDF_PAGE 11 =====
+bargaining is not possible on AMT . We focus on bargaining as a key element of this paper because i t
+allows us to explore the question of whether the hypothesised increase in competition among
+employers induced by the exogenous change in platform conditions described below can be leveraged
+by workers, given their possibility to negotiate on the platform.
+2.2.2 Exogenous change in platform conditions
+As illustrated in Gomez-Herrera and Mueller-Langer (2019, therein see Figure 1), the timing of
+transactions on PPH is as follows. Initially, employers post calls for projects, describing their contents
+and requirements for specific skills and experience levels. Employers can use two different
+mechanisms to signal their willingness to pay for a project. First, they post (or not) the level of the
+budget for a given project. It is, however, noteworthy that revealing the budget is not binding. Second,
+they indi
+to perform a project (entry, intermediate, or expert). If they choose not to reveal the budget but instead
+indicate the experience level required to perform a task, then the platform assigns a low budget as
+-
+-level projects). It is in this respect that the relative informational value to the
+worker of revealed budgets depends on the experience level required to perform a task and vice versa.
+Importantly, the second option mentioned above was introduced in the middle of our period of
+observation, ie in August 2015. After this exogenous change in platform conditions, it became
+mandatory for employers to indicate the rates they are willing to pay, while this option did not exist
+before August 2015. Arguably, this change may affect competition on the platform because, as more
+information about the projects posted
+ is available since the policy change, workers have better
+insights regarding their options , ie they have more information on their outside options. This may lead
+to more competition between employers . Consequently, non-competitive employers that set wages
+too low may be driven out of the market. We explore the impact of this policy change on the demand
+and supply elasticities in section 3 (Analysis).
+Next
+ pay), workers
+bid on these projects with a wage proposal. Thereby, they further reveal their skills and experience
+levels on their platform profiles. Finally, in the award phase, a project is awarded and we observe the
+experience and skills profile of the winning worker as well as the agreed wage. This is in sharp contrast
+to AMT. On AMT, workers who want to work on a posted project have to accept (or not) the wage posted
+by the employer, ie there is no scope for bargaining.
+
+11
+
+===== PDF_PAGE 12 =====
+2.2.3 IV estimation
+2.2.3.1 Labour demand elasticity
+We measure labour demand as the number of projects posted by employer per market and month.
+Posted projects are hierarchically sorted into categories and subcategories. We define markets by the
+required experience level and subcategory in which the project is posted (
+section 3.3 on market
+concentration explains this definition in more detail). In this context, we set the budget that employers
+indicate as their willingness to pay when posting a project as price for the demand estimations. This is
+the price that employers observe in the moment they make their demand decisions . Demand
+estimation settings typically raise
+ the issue that the price regressor may be endogenous as it can be
+influenced by supply-side behaviour (Berry, 1994). To address this issue, we propose an instrumental
+variable approach, using as instrument a
+ , ie a supply-side
+instrument.
+More precisely, workers indicate their expected wages when applying for projects. We create the
+reservation wage proxy by taking the mean of the average wage expectations of workers bidding for
+projects in adjacent market
+s. Corresponding to the two dimensions of market distinction, ie
+subcategory and experience level, we construct two instrumental variables by determining market
+adjacency as follows. The adjacent markets to a specific subcategory are the other subcategories in
+the same category. Projects that require an intermediate experience level are set adjacent to entry-
+and expert-level projects and vice versa. We exclude projects posted by the same employer in the
+adjacent markets when computing the average wage expectations. The idea behind this approach is
+that this is the wage that workers are expected to be paid when working on other projects in a
+n
+adjacent market. Employers who post projects in this market need to consider the reservation wage of
+workers in the market when setting their budgets as they aim at attracting worker proposals. In this
+context, reservation wages function as cost shifters and present as a candidate for a supply-side
+instrument. The rationale behind this instrument is similar to
+Berry et al (1995) or Nevo (2001).
+In order for the reservation wage proxy to hold up as instrument, it needs to satisfy two conditions: (1)
+conditional on other covariates, the instrument must be strongly correlated with the endogenous
+explanatory variable (validity); and (2) conditional on other covariates, the instrument is not
+correlated with the error term in the main explanatory regression (exclusion restriction) (Angrist and
+Krueger,
+2001; Angrist and Pischke, 2008; Wooldridge, 2018).
+We show the validity of the instruments in the first stage of the two-stage least square regressions
+reported in columns (7) and (9) of Table 4. The Cragg-Donald Wald F-statistics of above 157 (column
+12
+
+===== PDF_PAGE 13 =====
+(7)) and 88 (column (9)) are well above the critical values for the weak identification test (Stock and
+Yogo, 2005). Moreover, the coefficients of the reservation wage proxies are significant at the 1 percent
+level in both columns. In addition, the interactions of the instruments with the policy change variable
+(column (9)) are significant at the 1 percent level. These results provide empirical evidence of a strong
+first stage.
+In order for the exclusion restriction to hold, the reservation wage proxy variable cannot have a direct
+ effect on the budget. As reservation wages
+
+obtained from adjacent markets excluding projects posted by the same employer
+ are only
+determined by workers (ie the supply side) and labour demand only comes from employers, we see
+no reason why labour demand should be affected by these reservation wages other than through the
+effects on the budget.
+2.2.3.2 Labour supply elasticity
+We measure supply as the number of worker proposals that a project receives. We attempt to estimate
+the causal effect of the budget posted by the employer on the number of proposals using IV
+estimation. For this purpose, we use a proxy for monopsony and employer mis-optimisation based on
+Dube et al (2018) as an instrument. Using comprehensive data from A MT, Dube et al (2018, p. 42)
+found
+-number bunching can be explained by a combination of a plausible
+degree of monopsony together with a small degree of employer mis- optimis
+ Our results for PPH
+suggest that there is also a substantial degree of round-number bunching in the budgets that
+employers choose (Figure 1). The degree of round-number bunching is a good proxy for labour market
+monopsony as in Dube et al (2020), because if
+ur
+market competition is low, offering too-low budgets, ie paying too-low wages, is less costly for
+employers. Hence, employers are less likely to be punished for a behavioural bias toward round-
+number bunching in the budgets
+10.
+The idea behind our IV approach is that monopsony and employer mis-optimisation is correlated with
+the amount of the budgets that employers choose (ie the first stage) but has no direct effect on the
+number of proposals that a project receives (ie the second stage).
+
+10 We thank an anonymous referee for this comment.
+13
+
+===== PDF_PAGE 14 =====
+Figure 1: Round-number bunching in budgets, by currency
+Note: Figure 1 illustrates the histogram of the amount of the budgets by currency, ie GBP, EUR and USD,
+respectively. It suggests that there is a substantial degree of round-number bunching in the budgets tha t
+employers choose on PPH.
+
+In order for our monopsony and employer mis-optimisation proxy to hold up as an instrument, it needs
+to satisfy the two conditions: (1) validity and (2) the exclusion restriction assumption , as stated in
+section 2.2.3.1.
+In the two-stage least square regressions reported in column (7) in Table 5, the F-statistics for the first
+stage regressions are above 1,281. In addition, as reported in column (7) in Table 5, the coefficient of
+the monopsony and employer mis-optimis ation proxy is negative, large in magnitude (ie -0.251) and
+statistically significant at the 1 percent level. This provides empirical evidence for a strong first stage.
+Consider now our exclusion restriction assumption that the proxy for monopsony and employer mis-
+optimisation has no direct effect on the number of proposals that goes beyond its effect on the amount
+of the budget. Consider column (6) of Table 5 where both the instrumental variable and the budget
+variable are included in the labour supply regressi
+ons. In column (6), the coefficient of the monopsony
+and employer mis-optimisation proxy is small in magnitude (0.010) and not statistically significant
+14
+
+===== PDF_PAGE 15 =====
+(with a p-value of 0.153). While these results do not prove that the exclusion restriction holds
+(Wooldridge, 2018), they suggest that it may hold (Baum, 2007).
+3. Analysis
+In this section, we analyse AI demand and supply, market concentration and returns to AI-related
+labour on the studied OLM. For each part of the analysis, we exploit variation in the data at different
+levels of aggregation (project, employer and proposal), for which we provide summary statistics in
+Tables 1 to 3.
+We start with an analysis of labour demand at the employer level, where we distinguish between AI and
+non-AI employers. The corresponding summary statistics in Table 2 suggest that AI employers post
+significantly more projects than non-AI employers. Moreover, AI employers are more likely to reveal
+their willingness to pay. Table 2 shows that AI employers reveal their willingness to pay by indicating a
+budget for fixed wage bill projects and a wage proposal for per-hour wage projects in 33.3
+ percent of
+cases at the project posting stage, compared to 28.2 percent of cases for non-AI employers. Finally,
+the results also suggest that AI employers are significantly more experienced and require expert
+-level
+experience from workers in significantly more projects than non-AI employers require. We emb ed
+these findings in a structured analysis in section 3.1.
+The subsequent analysis of labour supply is conducted at the project level, for which Table 1 provides
+relevant descriptive indicators. We find that compared to non-AI projects, AI projects require more often
+expert-level experience, they receive significantly more proposals, they are significantly more likely to
+provide information on
+willingness to pay (in terms of payment proposal revealed), and
+they are significantly more likely to be awarded. In addition, the workers applying to AI projects are
+more experienced and have significantly higher certificates than the workers applying to non- AI
+projects. We explain these differences in more detail in section 3.2.
+We explore market concentration in section 3.3
+ by computing the Herfindahl-Hirschman Index (HHI),
+as depicted in Table 1 (see Market Characteristics). The descriptive findings suggest low overall market
+concentration on the platform with slightly higher market concentration among AI projects.
+Finally, we exploit proposal-level variation to analyse the returns to AI-related labour. For this purpose,
+we explore the probability that a proposal is accepted, as well as the proposed wages and the agreed
+wages in AI vs. non-AI projects . Table 3 reports the corresponding descriptive statistics. For per-hour
+wage rate projects, Table 3 shows no difference in proposed wages or agreed wages for AI vs. non- AI
+projects. In contrast, for fixed wage bill projects, both the proposed wage bill and the agreed wage bill
+15
+
+===== PDF_PAGE 16 =====
+are on average significantly higher for AI projects than for non-AI projects. Table 3 shows no significant
+difference in the probability a proposal will be accepted in AI vs. non-AI projects. We provide a more
+detailed analysis of these findings in sections 3.3 and 3.4.
+3.1 AI demand
+We explore the drivers of demand as measured by the number of projects posted per employer, market
+and month. Before collapsing the dataset at the
+posted budgets by market and month to account for differences in employer price-setting strategies
+across markets and over time. We define markets by the required experience level and subcategory in
+which the project is posted (see also section 3.3 on market concentration where this definition is
+explained in more detail). Moreover, we explo re the
+ effect of the exogenous change in platform
+conditions described in section 2.1.2 on the labour demand elasticity. Table 4 reports the results. For
+our main results, we define AI employers as employers who had posted at least 10 percent of their
+projects in the past as AI projects. We conduct a sensitivity analysis of our main results using different
+definitions for AI employers. These are reported in Table A.1
+in the Appendix.
+We run the following regression at the employer level:
+𝑙𝑜𝑔𝑃𝑟𝑜𝑗𝑒𝑐𝑡𝑠𝑒,𝑚𝑘,𝑚
+= 𝛽0 + 𝛽1𝐴𝐼𝑒𝑚𝑝𝑙𝑜𝑦𝑒𝑟𝑒,𝑚
++ 𝛽2 𝐴𝑓𝑡𝑒𝑟_𝑝𝑜𝑙𝑖𝑐𝑦_𝑐ℎ𝑎𝑛𝑔𝑒𝑚
++ 𝛽3 𝑙𝑜𝑔(𝐴𝑣𝑒𝑟𝑎𝑔𝑒_𝑏𝑢𝑑𝑔𝑒𝑡𝑒,𝑚𝑘,𝑚) + 𝛽4𝑋𝑒,𝑚 + 𝜇𝑒,𝑚
++ 𝜇𝑚 + 𝜇𝑒 + 𝜀.
+(1)
+The dependent variable is the log-transformed number of projects posted by employer e in market mk
+in month m. Our main variables of interest are the binary variable for AI -employer status in a given
+month m, AIemployere,m, the log-transformed average budget per employer per market mk and per
+month m, Average_budgete,mk,m, and the binary variable indicating the period after the policy
+change, After_policy_changem
+11. Xe,m is a vector of controls including fixed and time varying
+employer characteristics . In line with Dube et al (2020), we include fixed effects for deciles of the
+approximate number of hours to perform a task as a proxy for project size, 𝜇𝑒,𝑚, and months fixed
+effects, 𝜇𝑚. We also include employer fixed effects, 𝜇𝑒.
+
+11 Our main variables of interest are time variant. Hence, they are not dropped once we include employer fixed
+effects.
+16
+
+===== PDF_PAGE 17 =====
+We address potential endogeneity issues of log(Average_budgete,mk,m) with an instrumental variable
+approach, using two instrumental variables, log(Average_expected_wagem𝑘_𝑒𝑙−,m) and
+log(Average_expected_wagem𝑘_𝑠𝑐−,m) as instruments in a two-stage least square regression (2SLS) .
+These variables represent the log of the average expected wage that workers expect for other
+projects in the adjacent market s by required experience level (indicated by subscript
+𝑚𝑘_𝑒𝑙−) and by subcategory (indicated by subscript 𝑚𝑘_𝑠𝑐−). We discuss the identification
+strategy in more detail in section 2.2.3.1.
+Before conducting the IV estimations, we run the OLS regressions using six different specifications. In
+column (1), we refrain from including any control variables or fixed effects. In column (2), we include
+decile time fixed effects. In column (3), we include control variables and the dummy variable
+indicating the policy change . In columns (4) and (5) , we alternately include the high-dimensional
+month and employer fixed effects before combining all sets of fixed effects in column (6)
+. Note that in
+columns (3) and (5) we include After_policy_changem as a covariate. It drops out as we include
+month fixed effects in columns (4) and (6) -(10). We use the specification in column (6) as a basis for
+the two-stage least squares regressions in columns (7) -(10). Columns (7) and (9) present the first
+stage results of the regressions of log(Average_budgete,mk,m) on
+log(Average_expected_wage𝑚𝑘_𝑒𝑙¯,m), log(Average_expected_wage𝑚𝑘_𝑠𝑐¯,m) and the other
+covariates. Columns (8) and (10) present the second stage results with log(Projectse,mk,m) as the
+dependent variable. In the second IV estimation (columns (9) and (10)) , we include as additional
+covariate the interaction between log(Average_budgete,mk,m) and After_policy_changem for which
+we use as additional instrument the interactions between the two IVs and After_policy_changem.
+[Table 4 HERE]
+We obtain the following main results. First, AI employers post more projects. The coefficients of the AI-
+employer dummy variable are positive and statistically significant. Statistical significance weakens
+from a 1
+ percent level to a 10 percent level when controlling for month and employer fixed effects
+combined. This can be explained by the substantial loss in variation due to the inclusion of the high-
+dimensional employer
+ fixed effects. The AI -employer coefficients of the IV regressions lose
+significance as the number of observations shrinks by about 11,000 observations from column (6) to
+column (7). The coefficient ranges between +0.012 in column (5) and +0.041 in column (1). These
+results suggest that AI employers have a higher labour demand than non-AI employers. Since these
+employers differ in their shares of AI projects posted (see Table 1), these results further imply that
+there is a higher demand for AI projects than for non
+-AI projects. Second, the coefficient of
+17
+
+===== PDF_PAGE 18 =====
+log(Average_budgete,mk,m) indicating the labour demand elasticity is positive and significant (except
+for column (1)) in the OLS specifications , yet small, ranging from 0.007 in column (4) and 0.023 in
+column (5). However, the significance level of this effect d rops from 1 percent to 10 percent as we
+control for potential endogeneity in the IV regression, suggesting an overall inelastic labour demand.
+More precisely, the coefficient becomes insignificant in the IV regressions as we interact it with the
+After policy change
+ variable, suggesting that the labour demand elasticity only changes notably after
+the policy change. In fact, the coefficient for the interaction between log average employer budget and
+the policy change dummy is positive and statistically significant at the 5 percent level in the OLS and
+the IV estimation (0.007 in column (6) and 0.0 72 in column (10)). This indicates that the labour
+demand elasticity increased after the policy change. We also find that the overall number of job
+postings (per employer, market and month) increased after the policy change, as indicated by the
+positive
+ and significant coefficient for After_policy_changem (0.025 in column (3) and 0.026 in
+column (5)). One possible explanation for this result is that , after the policy change , employers were
+better able to post projects that attract workers with the qualification that they want ed using the
+experience-level-required designation12. This improvement in targeting workers can act as an incentive
+for employers to post more projects on the platform. This could also explain the small increase in the
+labour demand elasticity induced by the policy change. That is, employers may indicate expert-level
+experience as a requirement (and consequently signal their willingness to pay higher wages) to attract
+better-qualified applicants. Finally, we also find that employers post significantly more fixed wage bill
+projects than projects that are paid per hour.
+3.2 AI supply
+We measure supply as the number of worker proposals that a project receives. Besides estimating
+whether labour supply is different for AI projects, we are also interested in the estimation of the labour
+supply elasticity on PPH. At the project level, we run the following regression for the subset of projects
+where the budget is revealed:
+𝐿𝑜𝑔𝑃𝑟𝑜𝑝𝑜𝑠𝑎𝑙𝑠𝑝
+= 𝛽0 + 𝛽1𝐴𝐼𝑝𝑟𝑜𝑗𝑒𝑐𝑡𝑝 + 𝛽2 𝑙𝑜𝑔(𝑏𝑢𝑑𝑔𝑒𝑡𝑝) + 𝛽3𝐹𝑖𝑥𝑒𝑑_𝑤𝑎𝑔𝑒_𝑏𝑖𝑙𝑙𝑝
++ 𝛽4𝐴𝑓𝑡𝑒𝑟_𝑝𝑜𝑙𝑖𝑐𝑦_𝑐ℎ𝑎𝑛𝑔𝑒𝑡 + 𝜇𝑡𝑎 + 𝜇𝑡 + 𝜇𝑐 + 𝜀.
+(2)
+
+12 We thank an anonymous referee for this suggestion.
+18
+
+===== PDF_PAGE 19 =====
+The dependent variable is the log-transformed number of wage proposals (often also referred to as
+bids) that a posted project receives 13. It is our measure for labour supply. 𝐴𝐼𝑝𝑟𝑜𝑗𝑒𝑐𝑡𝑝 is a dummy
+variable which is equal to 1 if a project is an AI project . 𝑙𝑜𝑔(𝑏𝑢𝑑𝑔𝑒𝑡𝑝) represents the log-transformed
+amount of the budget that an employer reveals when posting a project. Henc e, 𝛽1 indicates the
+difference in total proposals (in terms of percentage points) for AI projects relative to non-AI projects .
+𝛽2 indicates the labour supply elasticity. Fixed_wage_bill is a binary variable indicating whether a
+project is a fixed wage bill project. It equals 1 if the project is paid in terms of a fixed wage bill and 0 if
+the project is paid per hour. We also explore the effect of the exogenous change in platform conditions
+on labour supply. It is given by the binary after -policy-change variable After_policy_changet. It
+varies at the day level, t. In line with Dube et al (2020), we include fixed effects for deciles of the
+approximate number of hours to perform a task as a proxy for project size, 𝜇𝑡𝑎, and day fixed effects,
+𝜇𝑡. We also include job category fixed effects, 𝜇𝑐.
+We address potential endogeneity issues of log(budgetp) with an instrumental variable approach,
+using Monoposonyp as instrument in a two-stage least square regression. This binary variable is a
+proxy for monopsony and employer mis-optimisation based on Dube et al (2018). It indicates whether
+the budget that the employers choose for a given project is a round number. We discuss the
+identification strategy in more detail in Section 2.2.3.2 above.
+[Table 5 HERE]
+Table 5 reports the results. From column (1) to column (6) , we subsequently include deciles of project
+duration fixed effects, day fixed effects, week fixed effects, job category fixed effects , employer-
+related control variables, and project-related control variables. Results from IV regressions are reported
+in columns (7) and (8). Column (7) reports first-stage results where we use the monopsony and
+employer mis-optimisation proxy as instrument. Column (8) reports second-stage results.
+We obtain the following main results. First, the coefficient of the AI-project dummy is negative across
+all columns with the exception of column (7) which reports the first-stage results. The AI-project
+coefficient ranges from -0.016 in column (8
+) where it is statistically significant at the 10% level to -
+0.068 in column (3) where it is statistically significant at the 1 percent level. This suggests that on
+average AI projects receive between 1.6 percent and 6.8 percent fewer bids than non-AI projects. Note
+also that the AI-project coefficient is positive, ie 0.043, and statistically significant at the 1 percent
+
+13 Note that the outcome variable is indexed at the project level. Projects are posted on the platform every day,
+but we only observe a given project at a specific point in time. Hence, we do not add the subscript t (for day) to
+project-level variables.
+19
+
+===== PDF_PAGE 20 =====
+level in column (7). This suggests that the budgets of AI projects are 4.3 percent larger than those of
+non-AI projects. Second, for all specifications we find statistically-significant positive labour supply
+elasticity. It ranges from 0.062 in column (8) to 0.154 in column (1). That is, depending on the
+specification, a 1
+percent increase in the posted budget leads to an increase in the number of bids for a
+project from 6.2 percent to 15.4 percent. The significant drop in the elasticity from column (1) to
+column (2), as the fixed effects for deciles of project duration are included, reveals the relevance of
+project size in explaining the amount of bids a project receives. Similarly, the change from column (4)
+to column (5), where we include job category fixed effects, reveals substantial variation in the number
+of bids received across job categories. Third, the coefficient of the fixed wage-bill dummy is negative
+and statistically significant at the 1 percent level in columns (1) to (6) and (8). It ranges from -0.395 in
+column (6) to -0.134 in column (1). This result suggests that fixed wage bill projects receive
+consistently fewer applications than projects that are paid per hour. Based on this finding, we argue
+that workers prefer to be paid per hour. Finally, the coefficient of the after-policy-change dummy is
+positive and statistically significant at the 1 percent level in columns (6) and (8). It ranges from 0.109
+in column (8) to 0.110 in column (6). This suggests that projects posted after the policy change
+receive about 11 percent more proposals than projects posted before the policy change. Finally, note
+that the results from the OLS and IV estimations reported in columns (6) and (8) are very similar. This
+suggests that our results are not sensitive to different estimation methods. Arguably, our OLS
+estimations are not likely to be prone to endogeneity issues because of the inclusion of high-
+dimensional fixed effects.
+In the following, we explore possible heterogeneity of the labour supply elasticity by period
+, ie before
+and after the policy change, and by experience level required to perform a project. Table 6, based on
+column (6) of Table 5, reports results from the respective interactions. However, since we are mainly
+interested in exploring the effect of the interaction with the policy-change dummy rather than
+exploring its base effect
+, we include day fixed effects rather than week fixed effects in the regressions
+reported in Table 6. In all regressions, we report the indicator for whether a project requires expert-level
+experience. In column (1), we explore the effect of the interaction of the budget variable with the
+policy
+-change dummy. Column (2) reports the regression results when the budget variable is
+interacted with the expert-level dummy. In column (3), we explore the effect of the interaction of the
+policy-change dummy with the expert-level dummy.
+[Table 6 HERE]
+20
+
+===== PDF_PAGE 21 =====
+We obtain the following main results. First, the interaction effect After policy change*Log budget
+reported in column (1) is negative, ie -0.023, and statistically significant at the 1 percent level. This
+result suggests that the labour supply elasticity after the exogenous policy change is 2.3 percent
+lower than before the change. Arguably, the additional information about the difficulty level of projects
+available after the policy change reduces the labour supply elasticity in this market. The additional
+qualitative information about the experience level required to complete a project leads to better
+thus to a better sorting on the
+platform. To illustrate, job postings that are marked as expe rt-level projects (and hence pay higher
+wage rates than intermediate- or entry-level projects) may deter applications from unqualified
+workers, ie non-expert workers. The se findings and underlying intuition are in line with Marinescu and
+Wolthoff (2020), who found that high-wage jobs attract significantly fewer applicants, but the
+applications received come from more educated and experienced workers . Intuitively, wages can
+proxy for experience level. Thus, if experience-level required is signalled separately, unqualified
+applicants are deterred.
+Second, the interaction effect Expert level*Log budget reported in column (2) is positive, ie +0.043,
+and statistically significant at the 1 percent level. This result suggests that the labour supply elasticity
+for expert-level projects is 4.3 percent larger than for non-expert level projects. Third, we find no
+evidence for a significant interaction effect After policy change*Expert level. As reported in column
+(3), the respective interaction effect is small in magnitude, ie 0.001, and not statistically significant.
+3.3 AI and market concentration
+In this section, we explore the extent to which market concentration exists on the OLM under study.
+Following Azar et al (2020), we use the Herfindahl-Hirschman Index (HHI) as a measure of the market
+power of employers. This index is defined as a measure of the size of firms in relation to the market
+and is used as an indicator of the amount of competition among them. The value of the index ranges
+between 0 and 10,000. The result is proportional to the average market share, weighted by market
+share. A value of the Herfindahl index close to 10,000 generally indicates a low degree of competition
+(ie large employer
+market power), whereas an index value close to zero indicates the opposite14.
+The definition of the market varies depending on the data under analysis. Azar et al (2020) used data
+from Careerbuilder.com and defined a market as a combination of occupations at the 6 -digit Standard
+
+14 Similarly, increases of the value of the index would indicate a decrease in competition while a decrease in its
+value would show an increase in competition.
+21
+
+===== PDF_PAGE 22 =====
+Occupational Classification (SOC-6) level 15 and commuting zone. In our case, transactions are purely
+digital. Projects can be posted and done anywhere in the world. Thus, we cannot define a market on the
+basis of geographical restrictions. However, in digital markets there are other restrictions to access a
+. Therefore, we define a market by the job
+subcategory where a project is posted and the experience level required to complete it 16. We calculate
+the HHI index as:
+𝐻𝐻𝐼𝑚𝑘,𝑚 = ∑ 𝑠𝑒,𝑚𝑘,𝑚
+2
+𝐽
+𝑗=1
+
+(3)
+where sj,m,t is the market share of employer e in market mk and month m. The market share of a firm
+in a given market and month is defined as the sum of jobs posted in PPH by a given employer in a
+given market and month divided by total jobs posted in the website in that market and month.
+Descriptive results reported in Table 1 suggest that concentration on PPH is low compared to the
+results in Azar et al (2020). In their analysis, the average HHI is 3,157, which is above the 2,500
+threshold for high concentration according to the US Department of Justice/Federal Trade Commission
+horizontal merger guidelines17. As Table 1 shows, in our sample the average value of the index is 119.6
+for non-AI projects and 128.83 for AI projects, which are far below the above-mentioned threshold.
+In Table 7, we explore this descriptive result from an analytical point of view. We run the following
+regression:
+𝐿𝑜𝑔(𝐴𝑔𝑟𝑒𝑒𝑑𝑊𝑎𝑔𝑒𝑝)
+= 𝛽0 + 𝛽1 𝑙𝑜𝑔(𝐻𝐻𝐼𝑝) + 𝛽2𝐴𝐼𝑒𝑚𝑝𝑙𝑜𝑦𝑒𝑟𝑝 + 𝛽3 𝑙𝑜𝑔(𝑡𝑖𝑔ℎ𝑡𝑛𝑒𝑠𝑠𝑚𝑘)
++ 𝛽4𝐴𝑓𝑡𝑒𝑟_𝑝𝑜𝑙𝑖𝑐𝑦_𝑐ℎ𝑎𝑛𝑔𝑒𝑡 + 𝛽5𝑋𝑝 + 𝜇𝑚 + 𝜇𝑐 + 𝜀 .
+(4)
+
+Our dependent variable is the log-transformed agreed wage for each project 18. Our main variables of
+interest are the HHI index and the binary variable for AI-employer status. 𝐿𝑜𝑔(𝐻𝐻𝐼𝑝) represents the
+log transformed HHI index of the market in which project p is posted. With After_policy_changet, we
+
+15 See https://www.bls.gov/soc/socguide.htm (last accessed: 10 May 2021).
+16 These two characteristics are defined by the employer when posting a job. The employer chooses one
+subcategory/experience level from a predetermined list available in the platform. There are 182 different
+subcategories and three different experience levels.
+17 See Azar et al (2020) for further information. Note that although the threshold mentioned is a benchmark
+created for US-based transactions/markets, we can also use this benchmark for non-geographically restricted
+markets that occur on PPH.
+18 Note that the outcome variable is indexed at the project level. Projects are posted on the platform every day,
+but we only observe a given project at a specific point in time. Hence, we do not add the subscript t (for day) to
+project-level variables.
+22
+
+===== PDF_PAGE 23 =====
+exploit the exogenous change in platform conditions described in section 2.2 .2. Xp is a set of controls
+at the project level. µm and µc are month and job category fixed effects, respectively 19. As Azar et al
+(2020) noted, there might be concerns if the impact of concentration on posted wages is endogenous
+due to the relationship between the number of vacancies and concentration. To mitigate this concern,
+in all specifications we include the variable market tightness , defined as the ratio of postings over
+proposals. We define market tightness at the project level by assigning to every project the value of the
+market on which it is posted:
+𝑙𝑜𝑔(𝑡𝑖𝑔ℎ𝑡𝑛𝑒𝑠𝑠𝑚𝑘) = 𝑙𝑜𝑔(𝑝𝑜𝑠𝑡𝑖𝑛𝑔𝑠𝑚𝑘/𝑝𝑟𝑜𝑝𝑜𝑠𝑎𝑙𝑠𝑚𝑘) (5)
+
+Greater market tightness means more vacancies (ie higher labour demand) proportional to the number
+of proposals (ie labour supply) and consequently a stronger bargaining position for workers.
+In column (1) of Table 7, we refrain from including any control variables or fixed effects. In column (2),
+we add the log-transformed market tightness. In columns (3) and (4), we subsequently include month
+and job category fixed effects, respectively. In column (5), we add the AI employer dummy. In column
+(6), we include other control variables. This is our preferred specification to explore the effect of the
+policy change on prices as it includes both control variables and fixed effects. Column (6) is the basis
+for column (7) where we include
+the After_policy_changet.
+[Table 7 HERE]
+We obtain the following main results. First, we do not find robust evidence for a negative effect of
+market concentration on agreed prices. The coefficient of log(HHIp) is small in magnitude and not
+statistically significant across all columns. Second, we observe that AI employers agree on higher
+prices. The coefficients of the AI-employer dummy variable are positive and statistically significant at
+the 1 percent level in all columns. The coefficient ranges between +0.0 54 in column (5) and +0.122 in
+column (7). Following Azar et al (2020), we conduct two additional sets of regressions to check the
+robustness of our results. First, we define the HHI index in terms of applications rather than in terms of
+vacancies. Recall that in our main analysis we have so far defined the market share of an employer as
+the sum of h er jobs posted in PPH in a given market
+20 and month divided by the total jobs posted in
+PPH in that market and month. We check the robustness of this result by defining the market share of a
+given employer in a given market and month as the sum of applications received divided by the total
+
+19 We include month fixed effects instead of day fixed effects to allow the estimation of After_policy_changet
+variable, which is specified at the day level.
+20 Recall that a market is defined as the combination of subcategory and experience level required.
+23
+
+===== PDF_PAGE 24 =====
+number of applications to all employers in that market and month. Second, we reduce the time period
+we use to calculate the index from months to days. In both cases, results remain qualitatively
+unchanged (see Tables A.2 and A.3 in the Appendix).
+3.4 Returns to AI in OLMs
+We explore the expected and actual returns to AI-related labour supply. As in section 3.2, we measure
+AI supply as worker proposals that are made to AI projects. Gomez-Herrera and Mueller-Langer (2019)
+showed that OLM workers face a trade-off between the amount of their wage proposals and the
+probability of winning the competition for a project. This trade-off occurs because a higher wage
+proposal significantly reduces the probability that a proposal is accepted. To examine this trade-off in
+the competition for AI projects, we first estimate the probability that a proposal b is accepted:
+ 𝑝̂𝑏 = 𝑝𝑟𝑜𝑏(𝐴𝐼𝑝𝑟𝑜𝑗𝑒𝑐𝑡𝑏, 𝑋𝑒, 𝑋𝑤, 𝑋𝑝, 𝑋𝑏) (6)
+
+where 𝑝̂𝑏 is the probability that proposal b is accepted 21. 𝐴𝐼𝑝𝑟𝑜𝑗𝑒𝑐𝑡𝑏 is a dummy variable that
+indicates whether the project to which the proposal is made is an AI project . 𝑋𝑒, 𝑋𝑤, 𝑋𝑝, 𝑋𝑏 represent
+employer, worker, project and proposal characteristics, respectively.
+Next, the expected revenue ER from a wage proposal is given by:
+ 𝐸𝑅𝑏 = 𝑝̂𝑏 ∗ 𝑃𝑟𝑜𝑝𝑜𝑠𝑎𝑙𝐴𝑚𝑜𝑢𝑛𝑡𝑏 (7)
+
+where 𝑃𝑟𝑜𝑝𝑜𝑠𝑎𝑙𝐴𝑚𝑜𝑢𝑛𝑡𝑏 is the amount of the wage proposal measured at the proposal level b.
+In Figure 2, we show the average proposal amount, the probability that a proposal is accepted, and the
+expected revenue separately for AI proposals and non-AI proposals for (A) fixed wage bill projects and
+(B) hourly wage projects. In both cases, the expected revenue of AI proposals is higher than that of
+non-AI proposals.
+
+21 Note that the proposal index b already implies the project index p as well as the worker index w. Since the
+analysis in this section is at the proposal level, we emphasise here index b for the outcomes.
+24
+
+===== PDF_PAGE 25 =====
+Figure 2: Proposal amount, probability of being accepted and expected revenue
+by AI proposal and project type
+
+Notes: AI proposals are defined as proposals made to AI projects. Equivalently,
+non-AI proposals are proposals made to non-AI projects. This figure is computed
+at the proposal level separately by project type. The top row shows results for
+proposals to fixed wage bill projects. The bottom row shows results for
+proposals to hourly wage projects. For both rows, the three columns on the left-
+hand side depict the average am ounts of the wage proposals (in €) for all
+proposals and separately by AI and non-AI proposals. The three columns in the
+middle each show the average probability that a proposal is accepted for all
+proposals and separately for AI and non-AI proposals. The three columns on the
+right-hand side each illustrate the expected revenue (in €) separately for all AI
+and non-AI proposals. The figure suggests that, for both project types, the
+expected revenue of AI projects is higher than for non-AI projects. However, the
+mechanisms for each project type appear to be different. While the proposals to
+fixed wage bill AI projects have, on average, higher amounts but almost the
+same acceptance probability as proposals to fixed wage bill non-AI projects, the
+opposite is true for proposals to hourly wage projects.
+
+However, the mechanisms for each type of projects are different. For fixed wage bill projects, the
+average amount of AI proposals is higher than the overall average and hence higher than for non- AI
+proposals. In contrast, the proposal amounts are practically the same across the studied groups for
+hourly wage projects. Interestingly, the probability that a proposal is accepted (and consequently that
+a project is actually awarded) is basically the same across AI and non-AI proposals among fixed wage
+bill projects. In contrast, it is slightly higher for AI proposals than for non-AI proposals among hourly
+wage projects. Hence, our results suggest that
+ if possible
+ choosing AI projects is a better strategy
+for OLM workers, since it can yield higher expected returns.
+25
+
+===== PDF_PAGE 26 =====
+We now estimate the returns to AI-related labour supply. We use the following equation:
+𝐿𝑜𝑔(𝐴𝑔𝑟𝑒𝑒𝑑𝑊𝑎𝑔𝑒𝑝)
+= 𝛽0 + 𝛽1𝐴𝐼𝑝𝑟𝑜𝑗𝑒𝑐𝑡𝑝+𝛽2(𝑋𝑒, 𝑋𝑤, 𝑋𝑝, 𝑋𝑏 ) + 𝜇𝑤𝑒
++ 𝜇𝑐 + 𝜇𝑒 + 𝜇𝑤 + 𝜀
+ (8)
+
+AgreedWagep is the log-transformed wage of the accepted proposal for project p22. 𝐴𝐼𝑝𝑟𝑜𝑗𝑒𝑐𝑡𝑝
+indicates if project p of employer e to which proposal b is made is an AI project. We control for
+employer, worker, project and proposal characteristics by including the vectors 𝑋𝑒, 𝑋𝑤, 𝑋𝑝, 𝑋𝑏 ,
+respectively. Moreover, 𝜇𝑤𝑒, 𝜇𝑐, 𝜇𝑒 and 𝜇𝑤 are week , job category, employer and worker fixed
+effects. Coefficient 𝛽1 in equation (8) represents the returns to AI labour supply.
+In our analysis, we estimate three specifications of the outcome equation and subsequently include
+control variables and a set of fixed effects.
+[Table 8 HERE]
+Table 8 shows the results. Columns (1) to (3) are estimated using OLS. In column (1), we refrain from
+including any control variables or fixed effects. In column (2) , we include a set of control variables
+related to employer and to (winning) worker characteristics. Finally, in column (3) we add week,
+category, employer and worker fixed effects.
+We find that adding high-dimensional fixed effects increases the R 2 of the outcome equation from
+0.862 to 0.920 in column (3), where the full set of fixed effects is included. This suggests that these
+fixed effects substantially contribute to explaining the variation in the outcome. Therefore, we choose
+column (3) as our preferred specification. Moreover, we consistently estimate a positive and
+significant (at the 1 percent level) coefficient of the AI project dummy of 0.03. Thus, wages in AI
+projects are 3
+percent higher than wages in non-AI projects.
+The coefficient of the fixed wage bill dummy is positive and statistically significant at the 1 percent
+level in columns (2) and (3). This result suggests that workers earn 12.5 percent to 22.1
+ percent more
+in fixed wage bill projects than in per-hour projects. Recall from the results of the supply analysis
+reported in Table 5 that workers prefer to be paid per hour. Based on these results, we argue that
+workers prefer to be paid per hour (rather than in the more flexible fixed wage bill scheme) and earn a
+
+22 Note that the outcome variable is indexed at the project level. Projects are posted on the platform every day,
+but we only observe a given project at a specific point in time. Hence, we do not add the subscript t (for day) to
+project-level variables.
+26
+
+===== PDF_PAGE 27 =====
+premium for being willing to work flexibly on PPH. These results are in contrast to Chen et al (2019),
+who found that Uber drivers were willing to give up pay in exchange for flexible working hours. A
+possible explanation for these contrasting results is that the benefits of flexibility may depend on
+whether services can be done remotely (PPH) or require physical presence (Uber).
+Finally, Table 8 also explores the impact that the policy change had on agreed wage bills. As noted
+above, column (3) is our preferred specification because it includes the best set of fixed effects given
+the research objective and setting. This column shows that the implementation of the policy change
+significantly increased agreed wages by 4.3 percent. This result, along with the negative interaction
+effect of After policy change*Log budget on the number of applications (see column (1) in Table 6)
+helps us to disentangle the mechanisms underlying this policy intervention. Arguably, the reduction in
+the number of applications for more expensive projects after the policy change increases the
+competition between employers. N on-com
+petitive employers that set wages too low will be driven out
+of the market. This increase in competition is leveraged by workers , given the possibility to negotiate
+on the platform. Consequently, there is an increase in the agreed wage bills after the policy change.
+4. Policy implications
+Digital technologies are an increasingly important aspect of our lives, and are expected to promote
+profound changes in our societies and economies. This paper deals with two relevant areas in this
+domain. On the one hand, AI
+ the combination of algorithms, data and computer power
+ is
+developing fast and is becoming a powerful transformative technology. On the other hand, online
+platforms (eg search engines, social media or e-commerce marketplaces) are relatively new types of
+organisations active in many digital markets. Both areas have the potential for major efficiency gains
+for society as a whole, while raising relevant concerns. In order to maximise their potential gains while
+minimising the risks and costs, many countries have been developing national digital strategies.
+Within these national strategies, education and employment are important AI policy areas.
+Although there are no official statistics, different calculations 23 indicate that, today, demand for AI-
+related labour is greater than supply. We found the same. We have shown that on PPH, AI employers
+post relatively more projects than non-AI employers, while AI projects receive significantly fewer
+proposals than non-AI projects. Arguably, if competition for available talent becomes more intense, the
+compensation employers would be willing to pay to attract talent will have to increase. Our results on
+the positive returns to AI-related labour are in line with this assertion.
+
+23 See, for instance, https://jfgagne.ai/talent/ (last accessed: 15 August 2020). See also the references cited in
+the introduction.
+27
+
+===== PDF_PAGE 28 =====
+Overall, technological change tends to promote specific skills and the advent of AI is not different.
+Policies to stimulate AI skills are a necessary
+ but not sufficient
+ condition to improve the
+performance of labour markets. Cross-country variations in employment quality, as well as
+unemployment and temporary employment rates, are an indication of the existing differences in terms
+of the effectiveness of passive and active labour market policies. Recent changes in labour markets
+
+ie job complexity, an ageing and culturally diverse workforce, alterations of traditional employment
+relationships, among others
+ further complicate this already diverse institutional setting. One
+important change has been the emergence of OLMs
+ ie entities that connect workers with employers
+while providing the digital infrastructure and the conditions that govern the exchange of work and its
+reward.
+ Regulation of the interactions between employers and workers on OLMs
+ as defined by the
+terms and conditions of these platforms
+ operates in a different dimension to national labour market
+regulations. This could have consequences for workers, affecting their final status (empowered or
+exploited) vis-à
+-vis the employer and/or the platform. To know what the likely outcome would be, it is
+important to identify the factors that define the allocation of power between the platform and its users,
+as well as the distribution of power between the employers and the workers. Our analysis attempts to
+contribute to this debate as follows.
+First, we find statistically significant positive labour supply elasticity, ranging from 0.062 and 0.154. It
+is similar in magnitude to the labour supply elasticity that Dube et al (2020) found for AMT, ranging
+from 0.0497 to 0.115 . This is a notable result in light of the significant differences between PPH and
+AMT in terms of (a) the different skills levels required for the tasks on each platform and (b) the fact
+that PPH allows for bargaining between employers and workers. Nevertheless, our results also suggest
+that the labour supply elasticity is higher for expert-level projects
+ on PPH.
+Second, we exploit an important change in PPH design to identify further effects. After this exogenous
+change in platform conditions in August 2015, it was mandatory for employers to indicate the rates
+they were willing to pay, as given by the experience level required to perform a project (entry,
+intermediate, or expert). Our results indicate that the elasticity of labour supply decreased while the
+labour demand elasticity slightly increased after the change in platform policy . This suggests that
+market-designing platform providers can influence the dynamics of labour supply and demand, and
+consequently the distribution of market power on OLMs, with the terms and conditions they set for the
+platform.
+The results reported in section 3 suggest that the change in the
+terms and conditions
+increases labour demand, increases labour supply, and has a positive effect on wages. Based on this,
+28
+
+===== PDF_PAGE 29 =====
+we argue that the disclosure of the experience level required to perform a task ceteris paribus reduces
+search costs and makes the platform more efficient in matching workers to tasks 24. This, in turn,
+induces employers to post more projects, improves worker-task matches and reduces the role of wage
+variation in the allocation of workers to tasks.
+Several policies could address monopsony power in labour market platforms and potential abuses of
+conditions, including lower agreed wages; and inhibits employers from posting projects on the
+platform. While information asymmetries can be reduced in digital environments, it all depends on the
+type of information disclosed by the platform. In addition, many platforms offer a limited (and
+sometimes inefficient) set of tools to allow workers to search for viable alternatives (Kingsley et al ,
+2015). Finally, the type and volume of information disclosed remains at the discretion of the platform,
+generating another source of between-platform information asymmetries. To improve transparency in
+the platform economy, employers and platforms could be required to publish detailed information,
+while reducing the differences in the type and quantity of information made available by different
+platforms. This would help employers decide which tasks to propose, and at which price, and woul d
+help workers make better-informed decisions about which tasks to accept, while bargaining more
+effectively over prices.
+All around the world, policymakers have raised concerns about the working conditions faced by
+platform workers. Today, policy discussions focus mostly on the development of an accurate
+classification of platform workers and on the design of measures that would improve working
+conditions for platform workers, particularly for the most vulnerable (Lane, 2020). As our results
+suggest, however, these measures should not be considered in isolation, as additional interventions
+regarding the operation of platforms would also be required. In order for OLMs to efficiently allocate
+workers to jobs or tasks, participants need to be properly informed to reduce the frictions associated to
+search and matching. Several well-known policies
+ stronger antitrust enforcement, increasing
+collective bargaining, and minimum wages
+ can also play a role when labour markets are not
+competitive (Azar, Berry and Marinescu, 2019). To what extent these measures would work in the case
+of labour-market platforms remains an open question for future research.
+
+24 It is well known that in markets characterised by asymmetric information, the agent with more information
+enjoys an advantage over other agents (Hart and Holmström, 1987) and OLMs are likely no different.
+29
+
+===== PDF_PAGE 30 =====
+5. Conclusion
+We explore labour market dynamics and the market power of employers in AI-related jobs on
+PeoplePerHour, one of the largest mid- to high -skill OLM platforms in Europe. We provide evidence of a
+significantly higher demand for AI-related labour and a significantly lower supply of AI-related labour
+than for other types of labour. We exploit an exogenous change in the platform conditions that was
+implemented in the middle of our sample period. In August 2015, the market-designing platform
+decided to make it mandatory for employers to signal the rates they were willing to pay when posting
+new projects. These rates are given by the experience level required to perform a project (entry,
+intermediate or expert). Before August 2015, employers did not have the option to indicate this
+information. We find that on average, AI employers post 1.4 percent to 4.1 percent more projects than
+non-AI employers. In contrast, AI projects receive 1.6 percent to 6.8 percent fewer worker proposals
+than non-AI projects. In line with these findings, we find that workers on AI projects receive 3.0 percent
+to 3.2 percent higher wages than workers on non-AI projects. Overall, these results are in line with
+anecdotal evidence of a
+job-seeker
+ s market
+ for AI experts and international competition over AI
+talents.
+We also explore the distribution of market power on the OLM under study. First, we find that labour
+demand elasticity increased slightly after the policy change, ie it increased by 0.007 in OLS
+(significant at 5 percent) and by 0.0 72
+ in IV estimation (significant at 5 percent). A possible
+explanation for this could be that employers have used this policy change to indicate expert-level
+experience as a requirement (and consequently signal their willingness to pay higher wages) in order
+to attract better-qualified applicants. Labour
+ supply elasticity is positive and statistically significant. It
+ranges between 0.0 62 and 0.1 54. That is, depending on the specification, a 1 percent increase in the
+posted budget
+ being our measure for the price of a project
+ leads to an increase in the number of
+bids on a project
+ being our measure for labour supply
+ from 6.2 percent to 1 5.4 percent. These
+results are similar in magnitude to the labour supply elasticities of around 0.1 that Dube et al (2020)
+found for AMT. The similarity in labour supply elasticity is striking given the notable differences
+between AMT and PPH: In contrast to the micro-tasks platform AMT, PPH is a mid- to high-skill platform
+where employers post tasks that are more extensive. In addition, wage contracts are po
+sted as either
+per-hour wage rates or fixed wage bills on PPH. Moreover, workers and employers can bargain over
+wages on PPH while bargaining is not possible on AMT. We also find that the labour supply elasticity is
+higher for expert-level projects, suggesting higher competition among employers on the market for
+expert-level projects. By contrast, we also find that labour supply elasticity decreased after the
+30
+
+===== PDF_PAGE 31 =====
+exogenous change in platform conditions, possibly because the indication of the difficulty level by
+employers deterred unqualified workers from applying to expert-level (and higher paying) projects.
+We should also note some caveats in this empirical exercise. First, we do not have information about
+other options for workers and employers outside the platform. Hence, our analysis is restricted to in-
+platform behaviour and outcomes. Second, we obtain the information to classify projects and
+employers as AI-related directly from self-reported text. Therefore, we could underestimate the
+presence of AI if some projects are AI-related but not specified as such, ie the project descriptions do
+not contain the AI-related keywords that we use to identify AI projects.
+
+Overall, our results suggest that platform conditions matter for the distribution of market power on
+OLMs. Therefore, the terms and conditions of platforms may be subject to regulatory scrutiny.
+However, our results also suggest that online workers with highly demanded skills such as AI and
+expert-level expertise
+ have a better bargaining position and obtain higher wages. It is in this respect
+that the acquisition of appropriate skills might mitigate concerns of market power on OLMs.
+
+31
+
+===== PDF_PAGE 32 =====
+References
+Acemoglu, D. and D. Autor (2011) Skills, Tasks and Technologies: Implications for Employment and
+Earnings. In: Handbook of Labor Economics. NBER Working Paper Series, 1043-1171
+Agrawal, A., Gans, J. and A. Goldfarb (2019a) Artificial Intelligence: The Ambiguous Labor Market Impact
+of Automating Prediction. Journal of Economic Perspectives, 33(2), 31-50
+Agrawal, A., Gans, J. and A. Goldfarb (2019b) Economic Policy for Artificial Intelligence. Innovation
+Policy and the Economy, 19(1), 139-159
+Alekseeva, L., Azar, J., Gine, M., Samila, S. and B. Taska (2021) The Demand for AI Skills in the Labor
+Market. Labour Economics, 71, 1-27
+Angrist, J. D. (2006) Instrumental variables methods in experimental criminological research: what,
+why and how. Journal of Experimental Criminology, 2(1), 23-44
+Angrist, J.D. and A. Krueger (2001) Instrumental Variables and the Search for Identification: From
+Supply and Demand to Natural Experiments. Journal of Economic Perspectives, 15(4), 69-85
+Angrist, J.D. and J.S. Pischke (2008)
+ .
+Princeton University Press, Princeton, NJ
+Autor, D.H. (2015) Why Are There Still So Many Jobs? The History and Future of Workplace Automation.
+Journal of Economic Perspectives, 29(3), 3-30
+Autor, D.H., Levy, F. and R.J. Murnane (2003) The Skill Content of Recent Technological Change: An
+Empirical Exploration. The Quarterly Journal of Economics, 118(4), 1279-1333
+Azar, J., S. Berry and I. E. Marinescu (2019) Estimating Labor Market Power. Working Paper.
+https://papers.ssrn.com/abstract=3456277
+Azar, J., I. E. Marinescu and M. Steinbaum (2019) Measuring Labor Market Power Two Ways. AEA Papers
+and Proceedings, 109, 317-321
+Azar, J., I. E. Marinescu and M. Steinbaum (2020) Labor Market Concentration, Journal of Human
+Resources, Published online before print May 12, 2020, doi: 10.3368/jhr.monopsony.1218-
+9914R1
+Azar, J., I. E. Marinescu, M. Steinbaum and B. Taska (2020) Concentration in US Labor Markets:
+Evidence from Online Vacancy Data. Labour Economics, 66 (101886)
+Balsemeier, B. and M. Woerter (2019) Is this Time Different? How Digitalization Influences Job Creation
+and Destruction. Research Policy, 48(8), 103765
+Baruffaldi, S., B. van Beuzekom, H. Dernis, D. Harhoff, N. Rao, D. Rosenfeld and M. Squicciarini (2020)
+Identifying and Measuring Developments in Artificial Intelligence: Making the Impossible Possible,
+OECD Science, Technology and Industry Working Papers 2020/05
+32
+
+===== PDF_PAGE 33 =====
+Baum, C. (2007) Instrumental variables: Overview and advances. Lecture slides, UKSUG 13, London,
+available at: https://www.stata.com/meeting/13uk/baumUKSUG2007.pdf
+Berg, J. (2016) Income Security in the On-demand Economy: Findings and Policy Lessons from a
+Survey of Crowd Workers. Geneva, Conditions of Work and Employment Series No. 74
+Berg, J., Furrer, M., Harmon, E. Rani, U. and M.S. Silberman (2018) Digital Labour Platforms and the
+Future of Work: Towards Decent Work in the Online World, Geneva: ILO
+Berry, S. T. (1994) Estimating Discrete-choice Models of Product Differentiation. The RAND Journal of
+Economics, 242-262
+ Berry, S., Levinsohn, J. and A. Pakes (1995) Automobile Prices in Market Equilibrium. Econometrica,
+63(4), 841-890
+Brynjolfsson, E. and T. Mitchell (2018) What Can Machine Learning Do? Workforce Implications.
+Science, 358(6370), 1530-1534
+Brynjolfsson, E., D. Rock and C. Syverson (2021) The Productivity J-curve: How Intangibles
+Complement General Purpose Technologies. American Economic Journal: Macroeconomics, 13(1),
+333-372
+Bound, J., Jaeger, D. A. and R. M. Baker (1995) Problems with Instrumental Variables Estimation when
+the Correlation between the Instruments and the Endogenous Explanatory Variable is Weak. Journal
+of the American Statistical Association, 90, 443-450
+Chen, M. K., J. A. Chevalier, P. E. Rossi and E. Oehlsen (2019) The Value of Flexible Work: Evidence from
+Uber Drivers. Journal of Political Economy, 127(6), 2735-2794
+Chen, D. and J.J. Horton (2016) Are Online Labor Markets Spot Markets for Tasks? A Field Experiment
+on the Behavioral Response to Wage Cuts. Information Systems Research, 27(2), 219-470
+Ciarli, T., Di Ubaldo, M. and M. Savona (2020) Innovation and Self-Employment. In: Handbook of Labor,
+Zimmermann, K. F. (Ed.), Human Resources and Population Economics, Springer, Switzerland, 1-20
+Claussen, J., Pooyan, K., Kretschmer, T. and M. Seifried (2018) Knowledge Work in the Sharing
+Economy: What Drives Project Success in Online Labor Markets?, available at:
+http://dx.doi.org/10.2139/ssrn.3102865
+Coase, R. H. (1937) The Nature of the Firm. Economica, 4(16), 386-405
+Cockburn, I. M., R. Henderson and S. Stern (2019) The Impact of Artificial Intelligence on Innovation: An
+Exploratory Analysis. Chap. 4 in The Economics of Artificial Intelligence, edited by A.K. Agrawal, J.
+Gans and A. Goldfarb. University of Chicago Press, 2019
+33
+
+===== PDF_PAGE 34 =====
+Codagnone, C, Abadie, F. and F. Biagi (2016)
+Efficiency and Equitable Opportunities or Unfair Precarisation? Joint Research Centre Working
+Paper JRC101280
+Donovan, S. A., Bradley, D. H. and J. O. Shimabukuro (2016) What Does the Gig Economy Mean for
+Workers? Congressional Research Service Report, February 2016
+Dube, A., Jacobs, J., Naidu, S. and S. Suri (2020) Monopsony in Online Labor Markets. American
+Economic Review: Insights, 2(1), 33-46
+Dube, A., Manning, A. and S. Naidu (2018) Monopsony and Employer Mis-Optimisation Explain Why
+Wages Bunch at Round Numbers, NBER Working Paper 24991
+Ernst, E., Merola, R. and D. Samaan (2019) Economics of Artificial Intelligence: Implications for the
+Future of Work. IZA Journal of Labor Policy, 9(1)
+European Commission (2016a) A European Agenda for the Collaborative Economy (COM/2016/0356)
+European Commission, Brussels
+European Commission (2016b) Commission Staff Working Document accompanying a European
+Agenda for the Collaborative Economy
+ Supporting Analysis. SWD (2016) 184 final, European
+Commission, Brussels
+Falch, T. (2010) The Elasticity of Labor Supply at the Establishment Level. Journal of Labor Economics,
+28(2), 237-266
+Falk, O., Heimishc-Roecker, A. and S. Wiederhold (2020) Returns to ICT skills. Research Policy, Available
+online 27 August 2020, 104064
+Farrell, D. and F. Greig (2016) Paychecks, Paydays, and the Online Platform Economy. JPMorgan Chase
+Institute
+Fossen, F. and A. Sorgner (2019) New Digital Technologies and Heterogeneous Employment and Wage
+Dynamics in the United States: Evidence from Individual-Level Data. Research Policy, forthcoming
+Frank, M. R., Autor, D., Bessen, J. E., Brynjolfsson, E., Cebrian, M., Deming, D. J., Feldman, M., Groh, M.,
+Lobo, J., Moro, E., Wang, D., Youn, H. and I. Rahwan (2019) Toward Understanding the Impact of
+Artificial Intelligence on Labor. Proceedings of the National Academy of Sciences, 116(14), 6531-
+6539
+Fujii, H. and S. Managi (2018) Trends and Priority Shifts in Artificial Intelligence Technology Invention: A
+Global Patent Analysis. Economic Analysis and Policy, 58, 60-69
+Furman, J. and R. Seamans (2019) AI and the Economy. Innovation Policy and the Economy, 19(1),
+161-191
+Goldfarb, A. and C. Tucker (2019) Digital Economics. Journal of Economic Literature, 57(1), 3-43
+34
+
+===== PDF_PAGE 35 =====
+Gomez-Herrera, E. and F. Mueller-Langer (2019) Is There a Gender Wage Gap in Online Labor Markets?
+Evidence from Over 250,000 Projects and 2.5 Million Wage Bill Proposals, CESifo Working Paper No.
+7779
+Gonzalez-Vazquez, I., et al. (Eds.) (2019) The Changing Nature of Work and Skills in the Digital Age.
+(eds.), EUR 29823 EN, Publications Office of the European Union, Luxembourg
+Goos, M., Rademakers, E. and R. Roettger (2020) Routine-Biased Technical Change: Individual-Level
+Evidence from a Plant Closure. Research Policy, 50(7), 1-18
+Hart, O. D. and B. Holmström (1987) The Theory of Contracts. Cambridge, UK: Cambridge University
+Press
+Horton, J. J. (2010) Online Labor Markets. In: International Workshop on Internet and Network
+Economics. Springer, Berlin, Heidelberg, 515-522
+Horton, J. J. and P. Tambe (2015) Labor Economists Get Their Microscope: Big Data and Labor Market
+Analysis. Big Data, 3(3), 130-137
+Kässi, O. and V. Lehdonvirta (2018) Online Labour Index: Measuring the Online Gig Economy for Policy
+and Research. Technological Forecasting and Social Change, 137, 241-248
+Kilhoffer, Z., de Groen, W.P., Lenaerts, K. et al. (2020) Study to Gather Evidence on the Working
+Conditions of Platform Workers. VT/2018/032, Final Report, European Commission, DG EMPL,
+Brussels
+Kingsley, S. C., Gray, M.L., and S. Suri (2015) Accounting for Market Frictions and Power Asymmetries in
+Online Labour Markets. Policy & Internet, 7(4), 383-400
+Lane, M. (2020) Regulating Platform Work in the Digital Age. Going Digital Toolkit Policy Note, No. 1,
+https://goingdigital.oecd.org/toolkitnotes/regulating-platform-work-in-the-digital-age.pdf
+Lee, N. and S. Clarke (2019) Do Low-Skilled Workers Gain from High-Tech Employment Growth? High-
+Technology Multipliers, Employment and Wages in Britain. Research Policy, 48(9), 103803
+Loper, E. and S. Bird (2020) NLTK: The Natural Language Toolkit. arXiv preprint cs/0205028
+Marinescu, I. E. and R. Wolthoff (2020) Opening the Black Box of the Matching Function: The Power of
+Words. Journal of Labor Economics, 38(2) https://doi.org/10.1086/705903
+Mueller-Langer, F. and E. Gomez-Herrera (2021) Mobility Restrictions and the Substitution between On-
+site and Remote Work: Empirical Evidence from a European Online Labour Market, Information
+Economics and Policy, forthcoming, https://doi.org/10.1016/j.infoecopol.2021.100951
+Nevo, A. (2001) Measuring Market power in the Ready‐to‐eat Cereal Industry. Econometrica, 69(2),
+307-342
+35
+
+===== PDF_PAGE 36 =====
+Pesole, A., Urzi, C., Fernandez-Macias, E., Biagi, F. and I. Gonzalez-Vazquez (2018) Platform Workers in
+Europe. Evidence from the COLLEEM Survey, JRC Science for Policy Report
+Righi, R., Samoili, S., López-Cobo, M., Vázquez-Prada, M., Cardona, M. and G. De Prato (2020) The AI
+Techno-Economic Complex System: Worldwide Landscape, Thematic Subdomains and
+Technological Collaborations. Telecommunications Policy, 101943
+Staiger, D. and J.H. Stock (1997) Instrumental Variables Regression with Weak Instruments.
+Econometrica, 65(3), 557-586
+Staiger, D. O, J. Spetz and C. S. Phibbs (2010) Is There Monopsony in the Labor Market? Evidence from
+a Natural Experiment. Journal of Labor Economics, 28(2), 211-236
+Stock, J.H. and M. Yogo (2005) Testing for Weak Instruments in Linear IV Regression. In D.W.K. Andrews
+and J.H. Stock (Eds.), Identification and Inference for Econometric Models, Essays in Honor of
+Thomas Rothenberg, 80-108. New York: Cambridge University Press
+Von der Leyen, U. (2019a) A Union that Strives for More: My Agenda for Europe, Political Guidelines for
+the Next European Commission 2019-2024. European Commission, Brussels
+Von der Leyen, U. (2019b) Mission Letter to Margrethe Vestager, Executive Vice-President for A Europe
+Fit for the Digital Age. European Commission, Brussels
+Webber, D. A. (2015) Firm Market Power and the Earnings Distribution. Labour Economics, 35, 123-134
+Wooldridge, J. M. (2018) Introductory Econometrics: A Modern Approach. Cengage, Boston
+36
+
+===== PDF_PAGE 37 =====
+Table 1 | Descriptive statistics (Project level)
+
+Non-AI projects AI projects Difference
+
+mean sd mean sd mean t-stat
+Market characteristics
+
+ After policy change 0.684 0.465 0.685 0.464 -0.001 -0.52
+HHI based on vacancies, month 119.615 501.997 128.832 474.528 -9.217 -3.35***
+HHI based on vacancies, day 1198.751 2540.352 1348.216 2672.218 -149.465 -8.94***
+HHI based on applications, month 175.924 646.870 189.709 629.132 -13.785 -3.78***
+HHI based on applications, day 1198.751 2540.352 1348.216 2672.218 -149.465 -8.94***
+Market tightness 8.341 6.288 8.601 6.159 -0.261 -7.34***
+
+Employer characteristics
+
+ AI employer 0.102 0.302 0.963 0.190 -0.861 -746.03***
+Employer experience (log # projects posted in the past) 1.423 0.868 1.450 0.841 -0.027 -5.61***
+
+Worker characteristics
+
+ Worker experience (Log # of proposals in the past) 2.947 2.251 3.172 2.176 -0.225 -17.89***
+Certificate 3.051 1.593 3.186 1.540 -0.134 -15.12***
+Log number of words in profile 4.583 0.540 4.636 0.529 -0.053 -14.87***
+
+Project characteristics
+
+ Awarded 0.344 0.475 0.356 0.479 -0.011 -4.11***
+Experience level required: Entry 0.115 0.319 0.108 0.311 0.007 3.94***
+Experience level required: Intermediate 0.764 0.425 0.741 0.438 0.023 9.07***
+Experience level required: Expert 0.121 0.327 0.151 0.358 -0.030 -14.59***
+Proxy for # of hours in fixed wage bill project 11.406 88.349 15.064 124.443 -3.657 -4.42***
+Fixed wage bill project 0.914 0.280 0.894 0.308 0.020 11.31***
+Log number of proposals 1.672 1.033 1.756 1.011 -0.084 -14.47***
+Payment proposal revealed 0.274 0.446 0.303 0.459 -0.029 -11.000***
+Monopsony proxy 0.195 0.397 0.211 0.408 -0.016 -6.63***
+
+Project types:
+
+Fixed wage bill projects
+
+ Budget 192.302 402.304 254.127 481.879 -61.83 -11.33***
+Budget observations 92,463 8,282 100,745
+ Amount of proposal 274.351 435.759 352.003 515.753 -77.65 -20.92***
+Amount of proposal observations 238,853 20,480 259,333
+ Agreed wage bill 116.496 346.602 156.336 371.225 -61.83 -11.33***
+Agreed wage bill observations 92,463 8,282 100,754
+
+Per-hour wage rate projects
+
+ Budget 25.543 29.605 24.849 27.334 0.694 -0.93
+Budget observations 14,787 1,492 16,279
+ Amount of proposal 38.251 40.218 38.023 39.418 0.228 -0.31
+Amount of proposal observation 28,757 3,164 31,921
+ Agreed wage bill 25.41 36.669 29.141 57.698 -3.731 -1.4
+Agreed wage bill observations 4,607 489 5,096
+ Observations 395,777 32,707 428,484
+ Notes: Mean and standard deviation of relevant control variables by AI project status. T statistic of the null hypothesis that the
+difference is zero. *** p<0.01, ** p<0.05, * p<0.1. To account for extreme outliers, monetary values are restricted to values below the
+99th percentile.
+
+37
+
+===== PDF_PAGE 38 =====
+Table 2 | Descriptive statistics (Employer level)
+ Non-AI employers AI employers Difference
+ mean sd mean sd mean t-stat
+After policy change 0.673 0.469 0.718 0.450 -0.046 -22.76***
+Log number of projects posted per market in month m 1.414 2.880 1.516 1.662 -0.103 -12.06***
+AI projects 0.003 0.056 0.441 0.486 -0.437 -222.47***
+Fixed wage bill projects 0.907 0.288 0.905 0.289 0.002 1.43
+Proxy for # of hours in fixed wage bill project 11.663 88.428 12.456 101.508 -0.792 -1.60
+Share of projects where employer reveals budget/wage proposal 0.282 0.374 0.333 0.352 -0.051 -32.36***
+Average employer budget per market (fixed) 200.197 413.859 207.289 418.255 -7.092 2.06*
+Average employer budget per market (hourly) 26.086 31.643 24.678 26.262 1.408 2.35*
+Experience level required: Entry 0.122 0.323 0.122 0.323 -0.000 -0.29
+Experience level required: Intermediate 0.752 0.427 0.716 0.445 0.036 18.54***
+Experience level required: Expert 0.126 0.329 0.162 0.364 -0.036 -22.60***
+Employer female 0.257 0.437 0.211 0.408 0.047 25.53***
+Employer gender unknown 0.077 0.267 0.090 0.286 -0.013 -10.49***
+Employer experience (log # projects posted in the past) 1.241 0.767 1.801 0.860 -0.560 -149.56***
+Observations 303,587 61,315 364,902
+Notes: Mean and standard deviation of relevant control variables by AI employer status. T statistic of the null hypothesis that the
+difference is zero. *** p<0.01, ** p<0.05, * p<0.1. To account for extreme outliers, monetary values are restricted to values below the
+99th percentile.
+
+38
+
+===== PDF_PAGE 39 =====
+Table 3 | Descriptive statistics (Proposal level)
+ Non-AI projects AI projects Difference
+ mean sd mean sd mean t-stat
+After policy change 0.682 0.466 0.680 0.467 0.002 2.14*
+
+Project characteristics
+
+ Accepted 0.054 0.225 0.053 0.224 0.000 1.09
+Experience level required: Entry 0.149 0.356 0.127 0.333 0.022 33.83***
+Experience level required: Intermediate 0.630 0.483 0.615 0.487 0.016 16.35***
+Experience level required: Expert 0.221 0.415 0.259 0.438 -0.038 -44.20***
+Fixed wage bill project 0.881 0.324 0.853 0.354 0.027 39.59***
+Proxy for # of hours in fixed wage bill project 15.491 115.992 22.222 141.249 -6.731 -24.29***
+Log number of proposals per project 2.904 0.811 2.845 0.781 0.059 37.62***
+
+Project types:
+
+Fixed wage bill projects
+
+ Budget 332.704 697.753 474.509 884.946 -141.8 -48.53***
+Budget observations 1,115,804 96,657 1,212,461
+ Amount of proposal 340.587 601.073 451.858 717.685 -111.3 -72.29***
+Amount of proposal observations 2,757,417 230,107 2,987,524
+ Agreed wage bill 113.348 165.488 144.310 197.949 -30.96 -17.35***
+Agreed wage bill observations 155,606 13,029 168,635
+
+Per-hour wage rate projects
+
+ Budget 24.955 24.063 24.833 23.428 0.122 0.66
+Budget observations 171,841 17,924 189,765
+ Amount of proposal 32.142 45.982 32.030 44.066 0.112 0.49
+Amount of proposal observations 384,904 41,016 425,920
+ Agreed wage 45.977 82.182 43.844 79.356 2.133 -0.95
+Agreed wage observations 12,903 1,384 14,287
+
+Observations 3,298,313 284,161 3,582,474
+ Notes: Mean and standard deviation of relevant control variables by AI employer status. T statistic of the null hypothesis that the
+difference is zero. *** p<0.01, ** p<0.05, * p<0.1. To account for extreme outliers, monetary values are restricted to values below the
+99th percentile.
+
+39
+
+===== PDF_PAGE 40 =====
+Table 4 | Drivers of project demand (Employer level)
+ (1) (2) (3) (4) (5) (6) (7) (8) (9) (10)
+Estimation method: OLS OLS OLS OLS OLS OLS IV (2SLS) IV (2SLS) IV (2SLS) IV (2SLS)
+Stage: 1st stage 2nd stage 1st stage 2nd stage
+Dependent variable: Log number
+of projects
+posted per
+market in
+month m
+Log number
+of projects
+posted per
+market in
+month m
+Log number
+of projects
+posted per
+market in
+month m
+Log number
+of projects
+posted per
+market in
+month m
+Log number
+of projects
+posted per
+market in
+month m
+Log number
+of projects
+posted per
+market in
+month m
+Log avg.
+employer
+budget per
+market in
+month m
+Log number
+of projects
+posted per
+market in
+month m
+Log avg.
+employer
+budget per
+market in
+month m
+Log number
+of projects
+posted per
+market in
+month m
+AI employer 0.041*** 0.036*** 0.033*** 0.033*** 0.012 0.014* 0.003 0.004 0.004 0.003
+ (0.007) (0.006) (0.006) (0.006) (0.008) (0.008) (0.011) (0.008) (0.011) (0.008)
+Log avg. employer budget per market -0.023*** 0.007** 0.010*** 0.007** 0.023*** 0.012*** 0.086* 0.029
+in month m (0.002) (0.003) (0.003) (0.003) (0.004) (0.004) (0.047) (0.036)
+After policy change 0.025*** 0.026***
+ (0.005) (0.007)
+Log avg. employer budget per market 0.007** 0.072**
+in month m*After policy change (0.003) (0.031)
+Log avg. expected market wage for 0.092*** 0.303***
+adj. subcategory per month (0.029) (0.034)
+Log avg. expected market wage for 0.200*** 0.087***
+adj. experience level per month (0.015) (0.021)
+Log avg. expected market wage for adj. sub- -0.378***
+category per month*After policy change (0.034)
+Log avg. expected market wage for adj. expe- 0.203***
+rience level per month*After policy change (0.028)
+Fixed wage bill project 0.128*** 0.122*** 0.127*** 0.079*** 0.088*** 0.516*** 0.025 0.520*** 0.055***
+ (0.007) (0.007) (0.007) (0.008) (0.008) (0.015) (0.025) (0.015) (0.020)
+Constant 0.130*** -0.001 0.985*** 0.957*** 1.575*** 1.529***
+ (0.008) (0.011) (0.178) (0.173) (0.250) (0.240)
+Decile time FE NO YES YES YES YES YES YES YES YES YES
+Employer FE NO NO NO NO YES YES YES YES YES YES
+Month FE NO NO NO YES NO YES YES YES YES YES
+Control variables included# NO NO YES YES YES YES YES YES YES YES
+Cragg-Donald Wald F stat. 157.22 88.15
+Kleibergen-Paap rk Wald F stat. 90.70 49.15
+Observations 102,826 102,780 102,780 102,780 67,828 67,828 56,437 56,437 56,437 56,437
+R-squared 0.015 0.070 0.089 0.114 0.522 0.539
+Notes: Regressions are run at the employer level. We use the reghdfe command in Stata to be able to include high-dimensional fixed effects. Robust standard errors clustered at employer level in parentheses. An employer is
+defined as an AI employer if at least 10% of all posted projects by this employer up to month t are AI projects. A sensitivity analysis for different definitions of AI employer is reported in Table A.1 in the Appendix. Adjacent
+markets by subcategory are all other subcategories in the same category. Adjacent markets by experience level are markets that require entry or expert experience level for the intermediate experience level and vice versa. We
+exclude projects posted by the same employer when computing reservation wages from adjacent markets. *** p<0.01, ** p<0.05, * p<0.1. #Additional control variables included (results not reported): Employer female, binary,
+Employer gender not known, binary, Average experience level required: Intermediate, Average experience level required: Expert, Average approximate nr of hours for fixed wage bill projects per employer and date and Share of
+project category per employer and date.
+40
+
+===== PDF_PAGE 41 =====
+Table 5 | Drivers of work supplied (Project level)
+ (1) (2) (3) (4) (5) (6) (7) (8)
+Estimation method: OLS OLS OLS OLS OLS OLS IV (2SLS) IV (2SLS)
+Stage: 1st stage 2nd stage
+Dependent variable: Log #
+proposals
+Log #
+proposals
+Log #
+proposals
+Log #
+proposals
+Log #
+proposals
+Log #
+proposals
+Log
+budget
+Log #
+proposals
+
+AI project -0.014 -0.066*** -0.068*** -0.066*** -0.018* -0.017* 0.043*** -0.016*
+ (0.010) (0.009) (0.009) (0.009) (0.009) (0.009) (0.008) (0.009)
+Log budget 0.154*** 0.071*** 0.074*** 0.071*** 0.097*** 0.100*** 0.062**
+ (0.003) (0.005) (0.005) (0.005) (0.005) (0.005) (0.027)
+Fixed wage bill project -0.134*** -0.287*** -0.301*** -0.288*** -0.395*** -0.395*** 0.311*** -0.383***
+ (0.011) (0.010) (0.010) (0.010) (0.010) (0.010) (0.007) (0.013)
+After policy change 0.110*** -0.042*** 0.109***
+ (0.007) (0.005) (0.007)
+Monopsony proxy 0.010 -0.251***
+ (0.007) (0.007)
+Constant 1.642*** 2.272*** 2.271*** 2.272*** 2.254*** 2.264***
+ (0.012) (0.023) (0.023) (0.023) (0.022) (0.025)
+
+Decile time FE NO YES YES YES YES YES YES YES
+Day FE NO NO YES NO NO NO NO NO
+Week FE NO NO NO YES YES YES YES YES
+Category FE NO NO NO NO YES YES YES YES
+Control variables included# NO NO NO NO NO YES YES YES
+Cragg-Donald Wald F statistic 3274.312
+Kleibergen-Paap rk Wald F stat. 1281.202
+Observations 118,207 107,195 107,195 107,195 107,195 107,195 107,195 107,195
+R-squared 0.051 0.092 0.105 0.096 0.153 0.160 0.035
+
+Notes: Regressions are run at the project level. In columns (1) to (6), we use the reghdfe command in Stata. In columns (7) to (8), we use the
+ivreghdfe command in Stata. Robust standard errors clustered at employer level in parentheses.
+*** p<0.01, ** p<0.05, * p<0.1.
+#Additional control variables included (not reported): Employer female, binary, Employer gender not known, binary, Experience level required:
+Intermediate, binary and Log experience employer.
+
+41
+
+===== PDF_PAGE 42 =====
+Table 6 | Drivers of work supplied: Interaction effects (Project level)
+
+ (1) (2) (3)
+Estimation method: OLS OLS OLS
+Dependent variable: Log #
+proposals
+Log #
+proposals
+Log #
+proposals
+
+AI project -0.018* -0.019** -0.018**
+ (0.009) (0.009) (0.009)
+Log budget 0.116*** 0.081*** 0.101***
+ (0.006) (0.006) (0.005)
+Experience level required: Expert (Expert level) -0.045*** -0.220*** -0.023*
+ (0.011) (0.027) (0.013)
+After policy change*Log budget -0.023***
+ (0.005)
+Expert level*Log budget 0.043***
+ (0.006)
+After policy change*Expert level 0.001
+ (0.014)
+Constant 2.329*** 2.391*** 2.321***
+ (0.025) (0.026) (0.025)
+
+Observations 107,195 107,195 107,195
+R-squared 0.168 0.169 0.168
+Decile time FE YES YES YES
+Day FE YES YES YES
+Category FE YES YES YES
+Control variables included# YES YES YES
+Notes: Regressions are run at the project level. We use the reghdfe command in Stata. Robust standard errors
+clustered at employer level in parentheses.
+*** p<0.01, ** p<0.05, * p<0.1.
+#Additional control variables included (not reported): Employer female, binary, Employer gender not known, binary,
+Experience level required: Intermediate, binary, Log experience employer, Fixed wage bill project, binary and
+Monopsony proxy.
+
+42
+
+===== PDF_PAGE 43 =====
+Table 7 | Market concentration analysis (Project level)
+ (1) (2) (3) (4) (5) (6) (7)
+Estimation method: OLS OLS OLS OLS OLS OLS OLS
+Dependent variable: Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+
+Log HHI -0.017 -0.006 -0.001 -0.002 -0.002 0.014 0.010
+ (0.026) (0.040) (0.042) (0.042) (0.042) (0.038) (0.036)
+Log market tightness 0.285* 0.284* 0.373** 0.373** 0.365** 0.357**
+ (0.151) (0.154) (0.157) (0.157) (0.150) (0.148)
+AI employer 0.054*** 0.118*** 0.122***
+ (0.019) (0.017) (0.018)
+After policy change 0.014
+ (0.032)
+Constant 4.086*** 3.343*** 3.324*** 3.111*** 3.101*** 2.601*** 2.619***
+ (0.145) (0.463) (0.473) (0.504) (0.504) (0.458) (0.439)
+Month FE NO NO YES YES YES YES NO
+Category FE NO NO NO YES YES YES YES
+Control variables
+included#
+NO NO NO NO NO YES YES
+Observations 104,375 104,375 104,375 104,375 104,375 104,375 104,375
+R-squared 0.000 0.010 0.014 0.072 0.073 0.142 0.139
+Notes: OLS regression coefficients reported. Regressions are run at the project level. We use the reghdfe command in Stata
+to be able to include high-dimensional fixed effects. Robust standard errors clustered at market level in parentheses. An
+employer is defined as an AI employer if at least 10% of all posted projects by this employer up to date t are AI projects. A
+sensitivity analysis for different definitions of HHI is reported in Tables A.2 and A.3 in the Appendix.
+*** p<0.01, ** p<0.05, * p<0.1.
+#Additional control variables included (results not reported): Fixed wage bill project, binary, Employer female, binary,
+Employer gender not known, binary, Average experience level required: Intermediate, Log experience employer, binary and
+budget revealed by employer.
+
+43
+
+===== PDF_PAGE 44 =====
+Table 8 | Drivers of agreed wages (Proposal level, only winning proposals)
+ (1) (2) (3)
+Estimation method: OLS OLS OLS
+Dependent variable: Log agreed
+wage
+Log agreed
+wage
+Log agreed
+wage
+
+AI project 0.206*** 0.032*** 0.030***
+ (0.021) (0.008) (0.008)
+Fixed wage bill project 0.125*** 0.221***
+ (0.009) (0.011)
+After policy change 0.013** 0.043***
+ (0.006) (0.008)
+Constant 4.025*** 0.043** 0.911***
+ (0.007) (0.018) (0.021)
+
+Observations 184,804 182,573 138,816
+R-squared 0.002 0.862 0.920
+Week FE NO NO YES
+Category FE NO NO YES
+Worker FE NO NO YES
+Employer FE NO NO YES
+Control variables included# NO YES YES
+Notes: Regressions are run at the project level. Only winning proposals are included. We use the reghdfe command
+in Stata. Robust standard errors clustered at employer level in parentheses.
+*** p<0.01, ** p<0.05, * p<0.1.
+#Additional control variables included (not reported): Employer female, binary, Employer gender not known, binary,
+Experience level required: Intermediate, binary, Experience level required: Expert, binary, Log experience
+employer, Fixed wage bill project, binary, Log amount wage bill proposal, Log number of hours required for a
+project, Winning worker experience, Winning worker certification in the platform, Main skill of the winning worker
+matches with skill required for the project and Monopsony proxy.
+
+44
+
+===== PDF_PAGE 45 =====
+APPENDIX
+Table A.1 | Drivers of project demand, sensitivity analysis (Employer Level)
+
+ (1) (2) (3) (4) (5)
+Dependent variable: Log number of
+projects posted
+per market in
+month m
+Log number of
+projects posted
+per market in
+month m
+Log number of
+projects posted
+per market in
+month m
+Log number of
+projects posted
+per market in
+month m
+Log number of
+projects posted
+per market in
+month m
+
+Definition of AI employer:
+
+At least one AI
+project in the
+past
+(_1)
+At least 5% AI
+projects in the
+past
+(_5%)
+At least 10% AI
+projects in the
+past
+(_10%)
+At least 15% AI
+projects in the
+past
+(_15%)
+At least 20% AI
+projects in the
+past
+(_20%)
+
+AI employer_1 0.009
+ (0.008)
+AI employer_5% 0.020**
+ (0.008)
+AI employer (_10%) 0.014*
+ (0.008)
+AI employer_15% 0.014*
+ (0.008)
+AI employer_20% 0.002
+ (0.008)
+Log avg. employer budget per
+market in month m
+
+0.011***
+(0.004)
+0.011***
+(0.004)
+0.011***
+(0.004)
+0.011***
+(0.004)
+0.011***
+(0.004)
+Log avg. employer budget 0.009** 0.009** 0.009** 0.009** 0.009**
+per market in month m*After
+policy change
+(0.004) (0.004) (0.004) (0.004) (0.004)
+Constant 1.418*** 1.414*** 1.416*** 1.420*** 1.422***
+ (0.241) (0.241) (0.241) (0.241) (0.241)
+
+Observations 67,828 67,828 67,828 67,828 67,828
+R-squared 0.540 0.540 0.540 0.540 0.540
+Decile time FE YES YES YES YES YES
+Employer FE YES YES YES YES YES
+Month FE YES YES YES YES YES
+Control variables included # YES YES YES YES YES
+Notes: OLS regression coefficients reported. Regressions are based on specification (6) of Table 4 (which is reported again in column (3) of the
+present table to facilitate the comparison across columns). Regressions are run at the employer level. We use the reghdfe command in Stata to be
+able to include high-dimensional fixed effects. Robust standard errors clustered at employer level in parentheses.
+*** p<0.01, ** p<0.05, * p<0.1.
+ #Additional control variables included (results not reported): Employer female, binary, Employer gender not known, binary, Average experience
+level required: Intermediate, Average experience level required: Expert, Share of fixed wage bill projects per employer and date, Average
+approximate nr of hours for fixed wage bill projects per employer and date , Share of project category per employer and date and Log average
+budget up to date t.
+Table A.2
+| Market concentration analysis, sensitivity analysis: Day instead of month as time
+period
+ (1) (2) (3) (4) (5) (6) (7)
+Dependent variable: Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+
+Log HHI (vacancies) -0.001 0.005 0.015 0.024 0.025 0.023 0.013
+ (0.028) (0.038) (0.040) (0.039) (0.039) (0.033) (0.031)
+Log market tightness 0.201** 0.198** 0.215*** 0.215*** 0.206*** 0.209***
+ (0.085) (0.086) (0.067) (0.067) (0.063) (0.062)
+AI employer 0.068*** 0.138*** 0.141***
+ (0.022) (0.019) (0.019)
+45
+
+===== PDF_PAGE 46 =====
+After policy change 0.017
+ (0.032)
+Day FE NO NO YES YES YES YES NO
+Category FE NO NO NO YES YES YES YES
+Control variables
+included#
+NO NO NO NO NO YES YES
+Constant 4.044*** 3.520*** 3.463*** 3.364*** 3.350*** 2.857*** 2.914***
+ (0.221) (0.385) (0.398) (0.389) (0.389) (0.335) (0.317)
+Observations 77,556 77,556 77,551 77,551 77,551 77,551 77,556
+R-squared 0.000 0.011 0.025 0.081 0.083 0.153 0.140
+Notes: OLS regression coefficients reported. Regressions are run at the project level. We use the reghdfe command in Stata to be able to
+include high-dimensional fixed effects. Robust standard errors clustered at market level in parentheses. An employer is defined as an AI
+employer if at least 10% of all posted projects by this employer up to date t are AI projects.
+*** p<0.01, ** p<0.05, * p<0.1.
+#Additional control variables included (results not reported): Fixed wage bill project, binary, Employer female, binary, Employer gender
+not known, binary, Average experience level required: Intermediate, Log experience employer, fixed wage bill project, binary and
+budget revealed by employer.
+
+46
+
+===== PDF_PAGE 47 =====
+Table A.3 | Market concentration analysis, sensitivity analysis: Using applications instead of
+vacancies
+ (1) (2) (3) (4) (5) (6) (7)
+Dependent variable: Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+Log
+agreed
+wage
+
+Log HHI
+(applications)
+-0.001 -0.001 0.006 0.009 0.010 0.006 0.002
+ (0.028) (0.040) (0.040) (0.037) (0.038) (0.034) (0.033)
+Log market tightness 0.256 0.253 0.300* 0.299* 0.298* 0.293*
+ (0.183) (0.186) (0.180) (0.180) (0.170) (0.168)
+AI employer 0.065*** -0.003 0.141***
+ (0.022) (0.038) (0.019)
+After policy change 0.005
+ (0.035)
+Month FE NO NO YES YES YES YES NO
+Category FE NO NO NO YES YES YES YES
+Control variables
+included#
+NO NO NO NO NO YES YES
+Constant 4.044*** 3.412*** 3.373*** 3.238*** 3.220*** 2.757*** 2.789***
+ (0.221) (0.595) (0.603) (0.611) (0.615) (0.522) (0.503)
+Observations 77,556 77,556 77,556 77,556 77,556 77,556 77,556
+R-squared 0.000 0.008 0.012 0.069 0.069 0.141 0.137
+Notes: OLS regression coefficients reported. Regressions are run at the project level. We use the reghdfe command in Stata
+to be able to include high-dimensional fixed effects. Robust standard errors clustered at market level in parentheses. An
+employer is defined as an AI employer if at least 10% of all posted projects by this employer up to date t are AI projects.
+*** p<0.01, ** p<0.05, * p<0.1.
+#Additional control variables included (results not reported): Fixed wage bill project, binary, Employer female, binary,
+Employer gender not known, binary, Average experience level required: Intermediate, Log experience employer, Fixed wage
+bill project, binary and budget revealed by employer.
+
+47
+
+===== PDF_PAGE 48 =====
+Table A.4 | List of AI keywords
+1 AI 29 sentiment analysis 57 back propagation
+2 data mining 30 recognition technology 58 language technology
+3 big data 31 adaptive learning 59 network data
+4 pandas 32 intelligence software 60 pattern recognition
+5 user input 33 autonomous vehicle 61 deep learning
+6 business intelligence 34 recommender system 62 inductive programming
+7 ML 35 feature extraction 63 object recognition
+8 CPU 36 control device 64 object detection
+9 data analytics 37 natural language processing 65 gradient descent
+10 DNN 38 language processing 66 supervised learning
+11 NLP 39 unstructured data 67 semantic search
+12 image processing 40 sensor network 68 tensorflow
+13 machine learning 41 genetic algorithm 69 automatic classification
+14 artificial intelligence 42 autonomous system 70 service robot
+15 pytorch 43 prediction model 71 autonomous driving
+16 computer vision 44 visual search 72 probabilistic learning
+17 internet of things 45 learning algorithm 73 reinforcement learning
+18 applications development company 46 text mining 74 support vector machine
+19 voice recognition 47 bioinformatics 75 speech processing
+20 image recognition 48 control module 76 convolutional neural network
+21 speech recognition 49 user speech 77 intelligent software development
+22 decision support 50 machine learning platform 78 evolutionary algorithm
+23 chatbot 51 TPU 79 data driven model
+24 image feature 52 image acquisition 80 deep neural network
+25 face recognition 53 artificial neural network 81 multiagent system
+26 image data 54 scikit-learn 82 kaggle
+27 neural network 55 numpy 83 automatic recognition
+28 GPU 56 GAN 84 network intelligence
+Notes: The basis of the list of AI keywords that we use to identify AI projects in our data is Righi et al. (2020). Further,
+the list was extended by additional keywords (on specific software and programming languages used in AI systems) by a
+group of machine learning researchers. We identify AI projects on PPH through matches between this list of keywords
+and either the project title or the project description. If one of the keywords, i.e., only whole words, appears in the project
+title or project description, the project is defined as an AI project. The list in this table presents the AI keywords in
+descending frequency of appearance in job postings.
+
+48
+
+===== PDF_PAGE 49 =====
+Table A.5 | Additional descriptive statistics
+
+Non-AI projects AI projects Difference
+
+mean sd mean sd mean t-stat
+Project level
+Project job categories:
+ Admin 0.038 0.190 0.040 0.196 -0.002 -2.19*
+Business Support 0.051 0.220 0.139 0.346 -0.088 -45.14***
+Creative Arts 0.012 0.110 0.004 0.060 0.009 22.67***
+Design 0.224 0.417 0.149 0.356 0.076 36.50***
+Extraordinary 0.004 0.060 0.004 0.059 0.000 0.40
+Marketing & PR 0.042 0.201 0.043 0.202 -0.001 -0.44
+Mobile 0.019 0.136 0.019 0.136 -0.000 -0.17
+Search Marketing 0.022 0.147 0.028 0.164 -0.006 -5.91***
+Social Media 0.019 0.135 0.046 0.210 -0.028 -23.47***
+Software Development 0.038 0.190 0.054 0.226 -0.016 -12.69***
+System 0.006 0.079 0.003 0.052 0.004 11.58***
+Translation 0.023 0.150 0.009 0.093 0.014 24.97***
+Tutorials 0.004 0.065 0.005 0.071 -0.001 -2.10*
+Video Photo & Audio 0.062 0.241 0.057 0.232 0.005 3.54***
+Web Development 0.181 0.385 0.182 0.386 -0.000 -0.15
+Writing 0.071 0.257 0.059 0.237 0.012 8.42***
+Unknown 0.184 0.388 0.161 0.368 0.023 10.91***
+Observations 395,777
+
+32,707
+
+428,484
+
+Worker characteristics:
+Worker female 0.152 0.248 0.148 0.233 0.004 2.73**
+Worker gender unknown 0.445 0.419 0.411 0.402 0.034 14.76***
+Worker's top skill is accepted 0.101 0.190 0.149 0.257 -0.049 -33.45***
+Proposal level
+Worker characteristics
+Worker experience (Log # of proposals in the past) 4.239 2.132 4.254 2.073 -0.015 -3.64***
+Certificate 3.789 1.608 3.820 1.612 -0.031 -9.82***
+Log number of words in profile 4.573 0.856 4.632 0.872 -0.059 -32.54***
+Worker female 0.199 0.399 0.190 0.392 0.009 12.31***
+Worker gender unknown 0.221 0.415 0.220 0.414 0.001 1.27
+Worker's top skill is accepted 0.169 0.375 0.236 0.425 -0.067 -81.79***
+Notes: Mean and standard deviation of relevant control variables by AI project status. T statistic of the null hypothesis that the
+difference is zero. *** p<0.01, ** p<0.05, * p<0.1.
+
+49
+
+===== PDF_PAGE 50 =====
+© Bruegel 2021. All rights reserved. Short sections, not to exceed two paragraphs, may be quoted in the
+original language without explicit permission provided that the source is acknowledged. Opinions expressed
+in this publication are those of the author(s) alone.
+Bruegel, Rue de la Charité 33, B-1210 Brussels
+(+32) 2 227 4210
+info@bruegel.org
+www.bruegel.org
+WORKING PAPER | ISSUE 03 | 2020

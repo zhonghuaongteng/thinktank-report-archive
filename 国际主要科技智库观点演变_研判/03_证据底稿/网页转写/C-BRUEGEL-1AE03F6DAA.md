@@ -1,0 +1,91 @@
+# Are new EU data market regulations coherent and efficient?
+
+- 发布机构：Bruegel
+- 发布日期：2023-12-18
+- 官方页面：https://www.bruegel.org/working-paper/are-new-eu-data-market-regulations-coherent-and-efficient
+- 材料类型：working-paper
+
+/
+Home
+/
+Publications
+Working paper
+Are new EU data market regulations coherent and efficient?
+Technical restrictions on access to and re-use of data may result in failures in data markets and data-driven services markets.
+Publishing date
+18 December 2023
+Issue number
+21/2023
+Authors
+Bertin Martens
+Download
+Share
+Share this page:
+Bluesky
+Linkedin
+Email
+Technical restrictions on access to and re-use of data may result in failures in data markets and data-driven services markets. This paper examines three new EU data regulations (the European Health Data Space, the Data Act and the Digital Markets Act) that vary substantially in mandatory access measures intended to overcome these market failures.
+It applies three economic criteria, economies of scope in re-use and in aggregation of data, and data supply-side failures, to assess the efficiency of these regulations in overcoming market failures and coherence across regulations. Variations might be justified by particular sectoral market conditions. The European Health Data Space proposal comes close to an ideal data access regime for primary re-use and secondary pooling of health data. The Data Act opens access to data from tangible products only. It strengthens the market power of data holders by giving them quasi-ownership rights over data. It introduces new obstacles to re-use that are likely to minimise its impact. The Digital Markets Act opens access to market data pools collected by very large gatekeeper platforms. Some access provisions are vaguely defined. Others facilitate access to data pools but may risk unwinding the benefits of data-driven network effects. Th ere is scope for significant improvement in these data regulations.
+Authors
+Bertin Martens
+Bruegel Senior Fellow
+Theme
+Microeconomic policies
+Keyword
+artificial intelligence
+digital economy
+digital single market
+Language
+English
+Related content
+Analysis
+Europe needs a strategy to close the artificial intelligence compute gap
+In its bid to compete with the US on AI, Europe could learn from both China and from the classic Airbus industrial policy case
+Alicia García-Herrero and
+        Bertin Martens
+19 May 2026
+artificial intelligence
+industrial policy
+...
+technology
+digital economy
+innovation
+Podcast
+AI, data and Europe’s quest to simplify
+How can the EU adapt its rulebook to meet tomorrow's technology environment?
+Rebecca Christie,
+        Mario Mariniello and
+        Bertin Martens
+07 January 2026
+artificial intelligence
+digital currencies
+...
+digital economy
+EU institutions
+Podcast
+The battle for the AI stack
+Europe’s options for AI in the midst of US-China strategic competition
+Alicia García-Herrero,
+        Bertin Martens,
+        Paul Triolo and
+        Yuyun Zhan
+08 July 2026
+digital economy
+artificial intelligence
+...
+industrial policy
+innovation
+technology
+Analysis
+Stack battles: the US-China artificial-intelligence rivalry is moving beyond chips alone
+China is challenging US leadership in both AI hardware and software, with Europe unlikely to catch up
+Alicia García-Herrero and
+        Bertin Martens
+22 June 2026
+artificial intelligence
+innovation
+...
+technology
+digital economy
+industrial policy
+geopolitics

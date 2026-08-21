@@ -1,0 +1,86 @@
+# The impact of artificial intelligence on the nature and quality of jobs
+
+- 发布机构：Bruegel
+- 发布日期：2022-07-26
+- 官方页面：https://www.bruegel.org/working-paper/impact-artificial-intelligence-nature-and-quality-jobs
+- 材料类型：working-paper
+
+/
+Home
+/
+Publications
+Working paper
+The impact of artificial intelligence on the nature and quality of jobs
+Policymakers should strengthen the role of social partners in the adoption of AI technology to protect workers’ bargaining power.
+Publishing date
+26 July 2022
+Issue number
+14/2022
+Authors
+Laura Nurski
+Mia Hoffmann
+Download
+Cite
+Recommended citation:
+Nurski, L. and M. Hoffman (2022) ‘The impact of artificial intelligence on the nature and quality of jobs’, Working Paper 14/2022, Bruegel
+Copy to clipboard
+Share
+Share this page:
+Bluesky
+Linkedin
+Email
+Artificial intelligence (AI), like any workplace technology, changes the division of labour in an organisation and the resulting design of jobs. When used as an automation technology, AI changes the bundle of tasks that make up an occupation. In this case, implications for job quality depend on the (re)composition of those tasks. When AI automates management tasks, known as algorithmic management, the consequences extend into workers’ control over their work, with impacts on their autonomy, skill use and workload. We identify four use cases of algorithmic management that impact the design and quality of jobs: algorithmic work-method instructions; algorithmic scheduling of shifts and tasks; algorithmic surveillance, evaluation and discipline; and algorithmic coordination across tasks.
+Reviewing the existing empirical evidence on automation and algorithmic management shows significant impact on job quality across a wide range of jobs and employment settings. While each AI use case has its own particular effects on job demands and resources, the effects tend to be more negative for the more prescriptive (as opposed to supportive) use cases. These changes in job design demonstrably affect the social and physical environment of work and put pressure on contractual employment conditions as well.
+As technology development is a product of power in organisations, it replicates existing power dynamics in society. Consequently, disadvantaged groups suffer more of the negative consequences of AI, risking further job-quality polarisation across socioeconomic groups. Meaningful worker participation in the adoption of workplace AI is critical to mitigate the potentially negative effects of AI adoption on workers, and can help achieve fair and transparent AI systems with human oversight. Policymakers should strengthen the role of social partners in the adoption of AI technology to protect workers’ bargaining power.
+Authors
+Laura Nurski
+Mia Hoffmann
+Project
+Future of Work and Inclusive Growth in Europe
+Theme
+Microeconomic policies
+Keyword
+artificial intelligence
+future of work
+Collection
+New technologies in the workplace
+Language
+English
+Related content
+Working paper
+Artificial intelligence adoption in the public sector: a case study
+This case study illustrates the drivers of and barriers to AI adoption by organisations, and acceptance of AI by workers in the public sector.
+Laura Nurski
+16 March 2023
+artificial intelligence
+future of work
+Podcast
+Artificial intelligence and job quality
+A timely discussion about the role AI plays in job quality
+Mia Hoffmann,
+        Laura Nurski and
+        Giuseppe Porcaro
+27 July 2022
+digital economy
+artificial intelligence
+Working paper
+Risks to job quality from digital technologies: are industrial relations in Europe ready for the challenge?
+The paper extends the debate about the future of work beyond employment and pay, to a consideration of job quality more broadly.
+Janine Berg,
+        Francis Green,
+        Laura Nurski and
+        David Spencer
+22 September 2022
+future of work
+Conference
+Bruegel Annual Meetings, 6-7 September 2022
+The Annual Meetings are Bruegel's flagship event which gathers high-level speakers to discuss the economic topics that affect Europe and the world.
+06 September 2022
+EU governance
+global governance
+...
+climate change
+financial literacy
+future of work
+migration
+digital economy

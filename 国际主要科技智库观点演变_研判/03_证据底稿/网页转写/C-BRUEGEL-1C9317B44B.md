@@ -1,0 +1,93 @@
+# Unpacking China’s industrial policy and its implications for Europe
+
+- 发布机构：Bruegel
+- 发布日期：2024-05-13
+- 官方页面：https://www.bruegel.org/working-paper/unpacking-chinas-industrial-policy-and-its-implications-europe
+- 材料类型：working-paper
+
+/
+Home
+/
+Publications
+Working paper
+Unpacking China’s industrial policy and its implications for Europe
+This paper assess how beneficial industrial policy has been for China and how exportable to the European Union its model might be
+Publishing date
+13 May 2024
+Issue number
+11/2024
+Authors
+Alicia García-Herrero
+Robin Schindowski
+Download
+Cite
+Recommended citation:
+García-Herrero, A. and R. Schindowski  (2024) ‘Unpacking China’s industrial policy and its implications for Europe’, Working Paper 11/2024, Bruegel
+Copy to clipboard
+Share
+Share this page:
+Bluesky
+Linkedin
+Email
+China is often credited with a successful application of industrial policy. One important particularity of China’s industrial policy is that it aims at levelling the playing field between the state economy and the private economy in access to finance, yet within a framework of strategic goals. This aim is not relevant for market economies, such as those of the European Union, but only for those where state enterprises are clearly privileged.
+Notwithstanding the difficulties in making valid comparisons, our analysis of how China conducts industrial policy in a variety of sectors points to success in some sectors but not all. More importantly, productivity growth in China has already been declining for two decades.
+Given the very large resources that China has put into industrial policy, with subsidies being only one part, it is surprising that success is not more evident. This relates partly to factors including cronyism and regional protectionism. While the former might be less relevant for the EU given the different institutional background, the latter certainly is relevant since the EU faces the potential consequences of member country-level industrial policy for its single market. A lesson from China seems to come from the sectoral focus, with a long-term and economic-security mindset. The EU is far from this, but it is in the process of linking economic security to industrial policy.
+Finally, responding to China’s industrial policy involves diverse investigations and challenges in measuring subsidies accurately. Understanding China’s very diverse and complex approach to helping companies achieve the government’s industrial policy goals is crucial for anticipating the consequences of China’s actions. These could be positive, such as cheaper imports of green technology, or negative, such as Chinese overcapacity spilling over to the EU single market.
+This is an output of
+China Horizons
+, Bruegel's contribution in the project Dealing with a resurgent China (DWARC). This project has received funding from the European Union’s HORIZON Research and Innovation Actions under grant agreement No. 101061700.
+Authors
+Alicia García-Herrero
+Bruegel Senior Fellow
+Robin Schindowski
+Research Fellow,    Mercator Institute for China Studies (MERICS)
+Project
+China Horizons
+Theme
+Macroeconomic policy and governance
+Keyword
+industrial policy
+EU-China relations
+trade policy
+Country
+China
+Language
+English
+Related content
+Dataset
+China economic database
+Repository of what we consider to be the most relevant macroeconomic data for China and EU-China relations.
+Alicia García-Herrero,
+        Michal Krystyanczuk,
+        Robin Schindowski,
+        Théo Storella and
+        Jianwei Xu
+27 July 2026
+EU-China relations
+active dataset
+Newsletter
+Different routes to decarbonisation: EU carbon pricing versus China’s green tech
+Alicia García-Herrero
+10 November 2025
+technology
+decarbonisation
+...
+global governance
+multilateralism
+climate change
+EU-China relations
+Event
+China Horizons: EU policy Takeaways from China’s politics, economy, foreign policy, society and EU-China dynamics
+The final conference of the China Horizons research consortium
+14 October 2025
+EU-China relations
+trade policy
+...
+geopolitics
+Podcast
+Paradoxical EU-China climate relations
+As COP30 approaches, what is the real state of EU–China climate relations?
+Cecilia Trasi,
+        Alicia García-Herrero and
+        Yuyun Zhan
+29 October 2025

@@ -1,0 +1,103 @@
+# What should be done about Google’s quasi-monopoly in search? Mandatory data sharing versus AI-driven technological competition
+
+- 发布机构：Bruegel
+- 发布日期：2023-07-06
+- 官方页面：https://www.bruegel.org/working-paper/what-should-be-done-about-googles-quasi-monopoly-search-mandatory-data-sharing-versus
+- 材料类型：working-paper
+
+/
+Home
+/
+Publications
+Working paper
+What should be done about Google’s quasi-monopoly in search? Mandatory data sharing versus AI-driven technological competition
+This paper explores the crucial role of search engines in modern digital economies and their impact on user welfare.
+Publishing date
+06 July 2023
+Issue number
+10/2023
+Authors
+Bertin Martens
+Download
+Cite
+Recommended citation:
+B. Martens (2023) ‘What should be done about Google’s quasi-monopoly in search? Mandatory data sharing versus AI-driven technological competition’ Working Paper 10/2023, Bruegel
+Copy to clipboard
+Share
+Share this page:
+Bluesky
+Linkedin
+Email
+Executive summary
+The first part of this paper focuses on competition between search engines that match user queries with webpages. User welfare, as measured by click-through rates on top-ranked pages, increases when network effects attract more users and generate economies of scale in data aggregation. However, network effects trigger welfare concerns when a search engine reaches a dominant market position. The EU Digital Markets Act (DMA) imposes asymmetric data sharing obligations on very large search engines to facilitate competition from smaller competitors. We conclude from the available empirical literature on search-engine efficiency that asymmetric data sharing may increase competition but may also reduce scale and user welfare, depending on the slope of the search-data learning curve. We propose policy recommendations to reduce tension between competition and welfare, including (a) symmetric data sharing between all search engines irrespective of size, and (b) facilitate user real-time search history and profile-data portability to competing search engines.
+The second part of the paper focuses on the impact of recent generative AI models, such as Large Language Models (LLMs), chatbots and answer engines, on competition in search markets. LLMs are pre-trained on very large text datasets, prior to usage. They do not depend on user-driven network effects. That avoids winner-takes-all markets. However, high fixed algorithmic learning costs and input markets bottlenecks (webpage indexes, copyright-protected data and hyperscale cloud infrastructure) make entry more difficult. LLMs produce semantic responses (rather than web pages) in response to a query. That reduces cognitive processing costs for users but may also increase ex-post uncertainty about the quality of the output. User responses to this trade-off will determine the degree of substitution or complementarity between search and chatbots. We conclude that, under certain conditions, a competitive chatbot markets could crowd out a monopolistic search engine market and may make DMA-style regulatory intervention in search engines redundant.
+The paper concludes with some policy recommendations.
+Authors
+Bertin Martens
+Bruegel Senior Fellow
+Theme
+Microeconomic policies
+Keyword
+digital economy
+competition policy
+technology
+artificial intelligence
+EU governance
+innovation
+Language
+English
+Related content
+Analysis
+Europe needs a strategy to close the artificial intelligence compute gap
+In its bid to compete with the US on AI, Europe could learn from both China and from the classic Airbus industrial policy case
+Alicia García-Herrero and
+        Bertin Martens
+19 May 2026
+artificial intelligence
+industrial policy
+...
+technology
+digital economy
+innovation
+Podcast
+The battle for the AI stack
+Europe’s options for AI in the midst of US-China strategic competition
+Alicia García-Herrero,
+        Bertin Martens,
+        Paul Triolo and
+        Yuyun Zhan
+08 July 2026
+digital economy
+artificial intelligence
+...
+industrial policy
+innovation
+technology
+Analysis
+Stack battles: the US-China artificial-intelligence rivalry is moving beyond chips alone
+China is challenging US leadership in both AI hardware and software, with Europe unlikely to catch up
+Alicia García-Herrero and
+        Bertin Martens
+22 June 2026
+artificial intelligence
+innovation
+...
+technology
+digital economy
+industrial policy
+geopolitics
+Conference
+Bruegel Annual Meetings | 2-3 September 2026
+As Europe faces defining choices, the Bruegel Annual Meetings 2026 will explore the trade-offs shaping its future
+02 September 2026
+artificial intelligence
+capital markets
+...
+climate change
+competition policy
+competitiveness
+decarbonisation
+digital economy
+EU budget
+EU governance
+EU-China relations

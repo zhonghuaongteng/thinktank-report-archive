@@ -33,8 +33,9 @@ def expected_catalog_size(
     belfer_asset_count: int = 0,
     nbr_asset_count: int = 0,
     merics_asset_count: int = 0,
+    bruegel_asset_count: int = 0,
 ) -> int:
-    return seed_count + catalog_asset_count + early_asset_count + cset_asset_count + atlantic_asset_count + belfer_asset_count + nbr_asset_count + merics_asset_count
+    return seed_count + catalog_asset_count + early_asset_count + cset_asset_count + atlantic_asset_count + belfer_asset_count + nbr_asset_count + merics_asset_count + bruegel_asset_count
 
 
 def main() -> None:
@@ -62,6 +63,8 @@ def main() -> None:
         "41_NBR科技与中国主题索引.csv", "42_NBR科技与中国复用矩阵.csv",
         "43_MERICS科技与中国专题增补台账.csv", "44_MERICS科技与中国专题增补结果.md",
         "45_MERICS科技与中国主题索引.csv", "46_MERICS科技与中国复用矩阵.csv",
+        "47_Bruegel科技与中国专题增补台账.csv", "48_Bruegel科技与中国专题增补结果.md",
+        "49_Bruegel科技与中国主题索引.csv", "50_Bruegel科技与中国复用矩阵.csv",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -219,6 +222,28 @@ def main() -> None:
     merics_catalog = [r for r in catalog if r["报告ID"].startswith("C-MERICS-")]
     assert len(merics_catalog) == 40, len(merics_catalog)
     assert all(r["机构观点等级"] == "作者/项目正式研究" for r in merics_catalog)
+    bruegel_assets = rows(root / "47_Bruegel科技与中国专题增补台账.csv")
+    assert len(bruegel_assets) == 90, len(bruegel_assets)
+    assert sum(r["本地状态"] == "复用库内既有资产" for r in bruegel_assets) == 2
+    assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in bruegel_assets) == 55
+    assert sum(r["本地状态"] == "关联既有官方PDF" for r in bruegel_assets) == 2
+    assert sum(r["本地状态"] == "官方网页全文已保存" for r in bruegel_assets) == 31
+    assert not any(r["本地状态"] == "获取失败" for r in bruegel_assets)
+    assert sum(r["科技关联层级"] == "核心科技直接材料" for r in bruegel_assets) == 56
+    assert sum(r["科技关联层级"] == "科技产业与经济安全基线" for r in bruegel_assets) == 34
+    assert sum(r["观察窗"] == "W1" for r in bruegel_assets) == 8
+    assert sum(r["观察窗"] == "W2" for r in bruegel_assets) == 12
+    assert sum(r["观察窗"] == "W3" for r in bruegel_assets) == 70
+    assert all(r["本地原始资产"] and Path(r["本地原始资产"]).exists() for r in bruegel_assets)
+    assert all(r["本地文本"] and Path(r["本地文本"]).exists() for r in bruegel_assets)
+    assert all(r["本地切片或转写"] and Path(r["本地切片或转写"]).exists() for r in bruegel_assets)
+    assert all(len(r["SHA256"]) == 64 for r in bruegel_assets)
+    assert {r["报告ID"] for r in bruegel_assets}.issubset({r["报告ID"] for r in catalog})
+    assert len(rows(root / "49_Bruegel科技与中国主题索引.csv")) == 129
+    assert len(rows(root / "50_Bruegel科技与中国复用矩阵.csv")) == 38
+    bruegel_catalog = [r for r in catalog if r["报告ID"].startswith("C-BRUEGEL-")]
+    assert len(bruegel_catalog) == 88, len(bruegel_catalog)
+    assert all(r["机构观点等级"] == "作者/项目正式研究" for r in bruegel_catalog)
     assert len(catalog) == expected_catalog_size(
         seed_count=len(seeds),
         catalog_asset_count=len(catalog_assets),
@@ -228,6 +253,7 @@ def main() -> None:
         belfer_asset_count=len(belfer_assets),
         nbr_asset_count=len(nbr_assets),
         merics_asset_count=len(merics_catalog),
+        bruegel_asset_count=len(bruegel_catalog),
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -240,6 +266,7 @@ def main() -> None:
             (belfer_assets, ("本地原始资产",)),
             (nbr_assets, ("本地原始资产",)),
             (merics_assets, ("本地原始资产",)),
+            (bruegel_assets, ("本地原始资产",)),
         )
         for row in ledger
         for field in fields
@@ -293,13 +320,16 @@ def main() -> None:
         ("43_MERICS科技与中国专题增补台账.csv", "国际科技智库观点演变_MERICS科技与中国专题增补台账.csv"),
         ("45_MERICS科技与中国主题索引.csv", "国际科技智库观点演变_MERICS科技与中国主题索引.csv"),
         ("46_MERICS科技与中国复用矩阵.csv", "国际科技智库观点演变_MERICS科技与中国复用矩阵.csv"),
+        ("47_Bruegel科技与中国专题增补台账.csv", "国际科技智库观点演变_Bruegel科技与中国专题增补台账.csv"),
+        ("49_Bruegel科技与中国主题索引.csv", "国际科技智库观点演变_Bruegel科技与中国主题索引.csv"),
+        ("50_Bruegel科技与中国复用矩阵.csv", "国际科技智库观点演变_Bruegel科技与中国复用矩阵.csv"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv"))
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "06_数据资产" / "数据资产清单.csv"))
     print("viewpoint_research_validation=ok")
-    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)}")
+    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)}")
 
 
 if __name__ == "__main__":

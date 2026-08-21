@@ -1,0 +1,1063 @@
+
+===== PDF_PAGE 1 =====
+RADICAL NOVELTIES IN
+CRITICAL TECHNOLOGIES AND
+SPILLOVERS: HOW DO CHINA,
+THE US AND THE EU FARE?
+ALICIA GARCÍA-HERRERO, MICHAL KRYSTYANCZUK AND ROBIN SCHINDOWSKI
+Critical technologies including artificial intelligence, semiconductors and quantum
+computing are attracting attention because of their indispensable nature and their role in
+national security strategies. We compare China, the United States and the European Union
+in these technologies and their subfields.
+We use large language models (LLMs) to identify which patents in these technologies can
+be considered most groundbreaking (not patented before) and worth replicating. These
+are ‘radical novelties.’
+We find that the US clearly dominates quantum. Chinese and EU progress is similar.
+The US does slightly better than China in AI with clear dominance in generative AI, but
+China stands out in some important subfields, such as aerial vehicle technology. China
+dominates in a larger number of semiconductor fields but not in the highest value added,
+which is related to design.
+In a second step we assess how quickly radical novelties in these three technologies are
+transferred from one economic area to another and within each economic area. We find
+that the fastest transmission overall is for AI. The EU is by far the slowest in replicating
+radical novelties from the US and China, while the US and China tend to replicate
+European novel patents relatively quickly. Radical novelties are also replicated quickly
+between China and the US which is surprising given US controls on exports of critical
+technologies to China.
+Our findings are concerning for Europe because it does not produce enough critical
+patents in these technologies and because it is slower in replicating patents from the US
+and China.
+JEL: O30, O33, F52
+Key words: critical technologies, patents, innovation, AI, quantum computer,
+semiconductors
+Alicia García-Herrero (alicia.garcia-herrero@bruegel.org) is a Senior Fellow at Bruegel.
+Michal Krystyanczuk (michal.krystyanczuk@bruegel. org) is a Data Scientist at Bruegel.
+Robin Schindowski is a Research Fellow at MERICS.
+Recommended citation:
+García-Herrero, A., M. Krystyanczuk and R. Schindowski (2025) ‘Radical novelties in
+critical technologies and spillovers: how do China, the US and the EU fare?’, Working
+Paper 07/2025, Bruegel
+WORKING PAPER | ISSUE 07/2025 | 20 MAY 2025
+
+===== PDF_PAGE 2 =====
+1
+1 Introduction
+
+Economic theory has long held technological progress as the main driver of long-term economic
+growth (Romer, 1990; Aghion and Howitt, 1992). China has emerged as a centre for technological
+innovation over the last decade, driven by the desire to shift the economy from a focus on capital
+deepening to more productivity-driven development. The degree of success of China’s innovation drive
+has been analysed widely in the literature from many different perspectives (He, 2023; Bergeaud and
+Verluise, 2023). If one focuses on quantitative outcomes, such as the number of scientific
+publications and/or granted patents, China ranks first worldwide, but outcomes are less clear when
+qualitative measures are taken into consideration.
+China’s rise as a technological power is increasingly central to the strategic competition between the
+United States and China. Defensive measures have been created by multiple US administrations to
+control the transfer of critical technologies to China, mainly on grounds of national security. These
+measures include inbound investment screening, export controls and, more recently, outbound
+investment screening. While the European Union has been less assertive in its overall policy towards
+China, it developed its own economic security strategy in January 2024 with an eye to reducing
+dependence on China for some critical raw materials and avoiding losing control of key technologies.
+In this Working Paper, we analyse the evolution of frontier innovation in quantum computing,
+semiconductors and artificial intelligence (AI) in China, the US and the EU by drawing on a
+measurement of patent novelty based on a large language model (LLM). Specifically, we aim at
+answering two research questions: (1) How far has China moved in innovating in these three critical
+technologies compared to the US and the EU? (2) How long does it take for an innovation in one region
+to appear in another region? In other words, how long do technology spillovers take between these
+three?
+To answer these two questions, we use an LLM model to extract the major innovation from all PCT,
+USPTO and EPO patents between 2019 and 2023. Innovations within the three technologies (AI,
+quantum and semiconductors) that appear for the first time in a published patent since the start of our
+dataset in 1979 and are replicated in subsequent patents, whether in the same jurisdiction or a
+different one, at least five times, are defined as ‘radical novelties’.
+To increase the granularity of our analysis, we also create a classification of subfields for the above
+three technologies, based on the LLM and manual industry research. Finally, we use a semantic
+similarity index to evaluate how long it takes for technologies similar to a given radical novelty to
+appear in another region. This measures the speed at which radical novelties are transferred from one
+country/region to another and is particularly relevant to gauge how much strategic technologies may
+be delayed in its transfer for economic security reasons. This is particularly relevant considering the
+US-China technology rivalry.
+When looking at the overall share of radical novelties in the three critical technologies analysed, we
+note China’s increased ability to innovate at the technology frontier, especially in semiconductors.
+
+===== PDF_PAGE 3 =====
+2
+Still, the US dominates innovation in AI and quantum computing. The EU lags behind China and the US
+in all three technologies, although it is almost on par with China in quantum computing even if well
+behind the US. Beyond these general trends, we classify these three critical technologies into
+subfields which will help us find specialisation patterns across the three blocks analysed, which will
+be covered later.
+Finally, we assess the speed at which technologies in radically novel patents appear in regions other
+than their origin. The EU takes the longest to replicate key patents from the US or China in all three
+critical technologies. The EU’s most relevant patents quickly appear in China and the US. The
+spillover time for radically novel technologies from China to the US is relatively small, indicating that
+Chinese firms are in a head-to-head race in independent innovation with their US competitors or that
+the technology is frequently leaked or copied upon invention. The spillover time from the US to the
+China is similarly small. AI patents are transferred the fastest, compared to quantum and
+semiconductors.
+In section 2, we describe the three technologies the paper focuses on. In section 3, we review the
+existing literature on this topic. Section 4 outlines our methodology and the data we are using for
+analysis. Section 5 offers some stylised facts. Section 6 presents our results as to which of the three
+countries/economic regions are dominating the different subfields of these critical technologies. In
+section 7, we report on the speed at which radical novelties are replicated across the economic regions
+analysed.
+2 Why focus on quantum computing, semiconductors and AI?
+
+Quantum computing, semiconductors and AI are at the heart of the US-China rivalry and at the future of
+human technological progress. Some have even argued that progress in these areas could produce
+economic singularity, or the point at which machine intelligence is capable of innovating
+autonomously and beyond human capabilities (Nordhaus, 2021). Whether this is true or not, these
+three technologies are essential to the future of any leading economy. In that regard, they play a
+crucial role in the national security strategies of the US and the EU.
+AI is at the core of this. It promises to improve human judgement by providing predictive insights from
+historical data through simulating human intelligence (Agrawal et al, 2018). As such, it is projected to
+lead to substantial productivity gains across many industries. AI-powered processing of visual data
+can induce progress improvements in autonomous driving, biometrics security and medical imaging.
+Machine learning will induce improvements in robotics and healthcare analytics. Breakthroughs in
+generative AI have created applications that go beyond the predictive nature of traditional AI.
+Importantly, through techniques of computer vision and game simulation, AI has the potential to
+provide a significant advantage on the battlefield to those powers who can harness it (Scharre, 2024).
+The advancement of AI, however, depends on computing power for which the deployment and further
+development of cutting-edge semiconductors is crucial. While Deepseek’s success may have softened
+
+===== PDF_PAGE 4 =====
+3
+somewhat the direct relation between advanced semiconductors and AI power, it does not fully discard
+the need for advanced semiconductors. More generally, the semiconductor industry is characterised
+by a highly globalised supply chain and is therefore particularly subject to geopolitical volatility.
+There are three important steps in the chip value chain. During the design phase the structure and
+technical details of the integrated circuit are defined. Different requirements exist for the design of
+different types of chips (eg logic, analogue or memory chips) and firms engaged in this step often
+coordinate with manufacturers or ‘fabs’ in the process. There has been a trend among original
+equipment manufacturers to build up capacity for the design of their own integrated circuits, tailored to
+their end products. Semiconductor manufacturing constitutes the second step. Taiwan and South
+Korea lead capacity in the fabrication of the most advanced logic chips and are continuously
+expanding the technology frontier in this area. In the fabrication of legacy chips with process nodes
+larger than 180 nanometres, China has the highest manufacturing capacity, while also having
+substantial shares in fabrication of chips between 180 and 10 nanometres (SIA and BCG, 2024).
+Assembly and testing is the last step, with so far, the lowest value-added. China dominates in terms of
+capacity in this sector. In the future, the relative value-added of assembly and testing might increase
+due to the eve of advanced packaging, and China’s importance in this subfield might develop into a
+significant competitive advantage.
+Finally, quantum technology is the most embryonic technology in our analysis and relates to many
+other technologies in as far as its ultimate goal is to increase computing power. The economic
+implications are potentially huge since, once matured, quantum computing could potentially render
+traditional semiconductor chips redundant, ending the age of silicon. In addition, it may enable
+breakthroughs in artificial intelligence, biotechnology, agricultural technology, material sciences,
+encryption and cybersecurity (Kaku, 2023). This is why the leading economies have grasped the
+potential importance of advancement in this sector and have started to invest.
+In China, quantum computing has been identified as a strategic priority in five-year plans since 2015,
+and by 2021, the equivalent of $15.3 billion had been earmarked as government investment
+(McKinsey, 2022). The city of Hefei is the centre of quantum computing, home to Origin Quantum
+Computing and the National Laboratory for Quantum Information Science. In the US, quantum
+computing is driven by large incumbent technology firms. In 2019, Google’s quantum AI lab
+announced the creation of ‘Sycamore’ a 53-qubit processor called. The same year, IBM introduced the
+127-qubit IBM Q System One. In Europe, a group of major German industrial companies have formed a
+consortium to develop industry-related applications for IBM’s Q System One.
+
+===== PDF_PAGE 5 =====
+4
+3 Related literature
+
+Our paper analyses the evolution of frontier innovation across China, the EU and the US in three critical
+technologies, namely AI, quantum computing and semiconductors.
+First, we contribute to the literature measuring China’s advances in innovative capabilities. China’s
+technological progress is often assessed using quantitative measures. The quality of innovation is
+rarely considered1. The academic literature also presents doubts regarding the degree of innovation
+imbedded in Chinese patents. Findings by Hu and Jefferson (2009) suggest that the 2000
+amendment to China’s patent law has been a decisive factor in the surge of Chinese patents which
+implies that the number of patents alone cannot be a good indicator of China’s ability to innovate. In
+the same vein, Li (2012) shows that China’s surge in patent filings has been largely driven by
+province-level subsidy programs, suggesting that their actual economic value is overestimated. When
+looking at citations of Chinese-origin patents filed under the patent cooperation treaty, Boeing and
+Muller (2016, 2019) showed that China’s patent quality has decreased at the same time as the
+quantity of patents produced has increased. However, findings using natural language processing
+techniques suggest that there has been a rise in the quality of Chinese patents since the 2010s
+(Bergeaud and Verluise, 2023; Boeing et al, 2024).
+Our paper equally contributes to a nascent but growing literature studying the US-China technology
+rivalry. Fang et al (2023) investigated patent quality based on citations and new keywords. Their
+findings confirm the rising quality of Chinese patents vis-à-vis US patenting. On the issue of spillovers
+and potential interdependence between the quantum computing, semiconductors and AI, Han et al
+(2024) examined cross-national citations, concluding that innovative activity between the US and
+China has become more intertwined. From the 2010s, the propensity of Chinese innovators to cite US
+patents relative to US innovators to Chinese patents has decreased, indicating a decline in
+dependency of China on the US. However, the analysis by Mueller and Boeing (2024) showed that
+China remains highly dependent on global innovations for its own inventions.
+This Working Paper contributes to the methods for measuring the impact of patented innovation. To
+estimate the economic value of an invention researchers have commonly used the number of times a
+patent is cited by subsequent patents (Trajtenberg, 1990; Jaffe et al, 2003). However, over the years
+substantial issues with citation-based indicators have been noted. For instance, Michel and Bettels
+(2001) find that the cross-country comparability of patents is limited due to differences in practices
+across patent offices.
+Furthermore, since excessive citation of ‘prior art’ might undermine the novelty of their invention and
+thus reduce the chance of their patent being granted, applicants might strategically withhold from
+citing relevant prior art. The patent examiner might face difficulties in identifying the relevant missing
+
+1 The Economist, ‘China has become a scientific superpower’, 12 June 2024, https://www.economist.com/science-and-
+technology/2024/06/12/china-has-become-a-scientific-superpower.
+
+===== PDF_PAGE 6 =====
+5
+prior art, especially when he has limited time to process the application (Lampe, 2012). Finally, Kuhn
+et al (2020) also argued against using citations to determine the quality of patents because of the
+growing shift that has seen a small but growing number of patents cite an exceptionally high number
+of prior patents, leading to a decrease in the average technological similarity between citing and cited
+patents.
+To mitigate the measurement error embedded in using citations to analyse the quality of patents, two
+different methodologies have been used: key words and high frequency textual analysis. For the
+former, Arts et al (2021) developed a keyword-based approach to assess patent significance. Their
+method involves analysing the frequency and co-occurrence of keywords within patent documents to
+evaluate technical novelty and impact. For the latter, Kelly et al (2021) introduced an indicator of
+patent significance by analysing textual similarities between patents. They defined a significant
+patent as one that is both novel – exhibiting low similarity to prior art (backward similarity) – and
+impactful, meaning it has high similarity to subsequent patents (forward similarity).
+While these methodologies are an improvement on traditional indicators, they also have caveats.
+Starting with keywords, it is hard to apply for new technologies since keywords are not readily
+available. This method also can miss similar concepts (eg ‘AI model’ vs. ‘machine learning system’)
+and cannot consider the context. High frequency textual analysis is more flexible than keyword
+search, as it captures word relationships and latent topics, but it still struggles with deep contextual
+meaning, as it only captures surface-level similarities and may not work well for emerging
+technologies that lack historical references.
+Since 2021, the literature has started to introduce LLMs to evaluate the significance of patents as an
+improvement relative to key words and high frequency textual analysis. Deep learning is better at
+capturing semantic meaning and relationships in patent text, not just word similarity. This is
+particularly important for emerging concepts, which are prevalent in critical technologies. The
+disadvantage is the computational cost.
+Some key references, also using LLMs to classify patents according to novelty as we do, include
+Schmitt and Denter (2024), who proposed a statutory novelty indicator trained on actual US patent
+office (USPTO) rejection decisions, demonstrating that many established novelty measures fail to align
+with legal standards of patentability. Their findings suggest that deep learning models can predict
+novelty rejection likelihood with higher accuracy than citation-based proxies. Additionally, Ikoma and
+Mitamura (2025) showed that large language models (LLMs) significantly improve semantic prior art
+search and novelty detection. By leveraging contextual embeddings rather than surface-level keyword
+similarity, these models more effectively identify prior disclosures that could invalidate a patent claim.
+In a similar vein, Parikh and Dori-Hacohen (2024) developed ClaimCompare, a data pipeline that
+generates labelled datasets of patent claims to train models for assessing novelty. Their approach
+resulted in significant improvements in retrieval accuracy and demonstrated the effectiveness of
+machine learning in enhancing novelty evaluation. Furthermore, Yassine and Lipizzi
+
+===== PDF_PAGE 7 =====
+6
+(2023) proposed a text-based patent novelty measure using natural language processing (NLP)
+techniques, applying it to patents within the same classification to derive novelty-value profiles. Their
+approach provides an alternative to citation-based novelty assessments and highlights the potential
+of NLP in refining patent landscaping and innovation evaluation. These studies reinforce the
+importance of LLMs in patent evaluation, as they enable more nuanced assessments of technological
+novelty and patent significance.
+Finally, we also contribute to the literature of classifying patents into technology categories. This is
+particularly difficult for emerging technologies since no readily available taxonomies exist. Patent
+registries usually use pre-defined categories to delimit technologies. The two most common
+classifications are the International Patent Classification (IPC) system used by the World Intellectual
+Property Organization (WIPO) and the Cooperative Patent Classification (CPC) system, a more specific
+version of the IPC which was adopted by the USPTO. While this is the easiest way to classify patents, it
+comes with the caveat that they are primarily designed for patent examiners and are based on
+techniques rather than an economic understanding of technology (Griliches, 1990).
+In a seminal paper, Trajtenberg (1990) manually delimited US patents, but manual methods alone are
+now considered too time consuming and subject to human error and bias, especially since the usage
+of the patent system has become increasingly common since the 1990s. With the advancement in
+machine learning and NLP, the academic literature has offered several workarounds. Bergeaud et al
+(2017) used network analysis techniques to classify technologies based on common keywords.
+Abood and Feltenberger (2018) proposed a method of automated patent to technology matching
+based on a small group of manually matched ‘seed’ patents. Li et al (2018) proposed a deep learning
+algorithm based on convolutional neural network (CNN) and word vector embedding. Lee and Hsiang
+(2020) used Google’s BERT model to generate patent classifications.
+Recent advancements in large language models and generative AI offer new possibilities, not only in
+the extraction of patent novelties, but equally in the classification of patented technologies. This is the
+path we follow but we add our own supervision to the classification obtained through LLM models. In
+particular, we obtain subfields for each of the three critical technologies by LLM which we then confirm
+manually using industry expertise.
+4 Data and methodology
+4.1 Using large language models (LLMs) for patent analysis
+Our methodology builds on prior work using NLP to quantify technological novelty across jurisdictions.
+Unlike and Arts et al (2021) and Kelly et al (2021) who relied on high frequency textual analysis and
+keywords respectively, we opt for using an LLM model, following the mo st recent literature. Our
+choice is LLAMA3 for the classification of patents and to extract their novelty. LLAMA-3 is a state-of-the-
+art LLM that can extract novel concepts embedded in patent abstracts.
+
+===== PDF_PAGE 8 =====
+7
+A similar approach was used by Boeing et al (2024), who applied LLMs to vectorise patent abstracts
+a
+nd computed semantic distances to identify high-impact patents. Our methodology extends theirs by
+not only measuring semantic novelty but also identifying radical innovation concepts, defined as
+previously unseen technological descriptors with demonstrated influence on subsequent filings.
+Finally, our definition of radical novelty, following Arts et al (2021), requires two criteria to be fulfilled,
+Firstly, for a patent to be considered relevant enough, its key innovation should not have appeared in
+the description of any patent since 1979. Secondly, the key concept should appear in at least 5
+subsequent patents in any jurisdiction, which should ensure its relevance. Appendix I offers more
+details about the methodology used.
+4.2 Data
+T
+he basis for our analysis consists of the merger of two datasets. First, we use a dataset covering the
+universe of PCT patent grants from 1979 to 2023 which we acquired from WIPO2 to have a full account
+of all pre-existing innovations. This will provide the basis to determine whether any of the patents in
+critical technologies thereafter are novel enough. We then scrap all the patents from WIPO Patentscope
+that were made available publicly from 2019 to 2023 whether filed in the USPTO, the EU patent office
+(EPO) or the Chinese patent office (CNIPA), which resulted in a PCT application. We also include US and
+EU domestic filings in these critical technologies, namely USPTO and EPO, respectively. We do not
+include China’s domestic patents filed at CNIPA to avoid artificially inflating the number of patents to be
+reviewed without much hope that they will constitute radical technologies.
+It is well-established that subsidy programs are behind, at least partially, the massive increase in
+patenting in China (Li, 2012). As patents surge, reviewers at the CNIPA are swamped with applications
+leading to a reduction in the degree of scrutiny regarding the technical content of these patents.
+Patents might thus fit our definition of radical novelty but might be technically irrelevant, and hence,
+artificially inflate China’s radical novelty count. Furthermore, we believe that since the three
+technologies under observation are essential to international competition, Chinese firms will prefer to
+file patents in these fields through internationally recognised systems. This is evidenced by the
+extensive use of the PCT patent system by Chinese firms
+3. In fact, the number of radical novelties in
+Chinese patents might still be inflated as Chinese applicants also receive subsidies for international
+applications.
+US and EU domestic filings, namely USPTO and EPO, are included because they serve as an alternative
+to the PCT system. This is particularly the case for the USPTO since the US consumer market is one of
+the largest and most competitive globally with very strict legal protection of intellectual property rights.
+If a foreign firm infringes on a USPTO patent the patent holder can seek redress at the US International
+Trade Commission to obtain an exclusion order, blocking the imports of goods of the infringer to the US.
+2 Speciﬁcally, the dataset consists of the PCT backﬁles in Asian and non-Asian languages; see
+https://www.wipo.int/patentscope/en/data/.
+3 Aaron Wininger, ‘China Remains Top Patent Cooperation Treaty Filer in 2021’, China IP Law Update, 11 February 2022,
+https://www.chinaiplawupdate.com/2022/02/china-remains-top-patent-cooperation-treaty-ﬁler-in-2021/.
+
+===== PDF_PAGE 9 =====
+8
+It has been argued that this has reduced the risk of IP theft for vertically integrated semiconductor
+fir
+ms and induced them to outsource part of the value chain to East Asian economies (Barnett, 2020),
+resulting in the globalised chip ecosystem of today.
+Second, administration fees and maintenance fees at the USPTO tend to be lower compared to other
+offices. Including the EPO is also important as most European companies file there, in addition to US
+and Chinese companies, as it is particularly known for its high-quality examination services (van
+Pottelsberghe de la Potterie, 2010).
+In the next section we use a few stylised facts to describe our rich database before moving to our
+results, starting with the subfields that we identify to be most relevant for each critical technology and
+which country dominates each of them. We then move to estimating how fast radical novelties may be
+adopted by another country/economic region.
+5 Stylised facts
+W
+e first examine the PCT patents filled in the three patent registries analysed (PCT, USPTO and EPO)
+from 2019 to 2023. Figure 1 shows the number of patents in our sample across the three sectors of
+interest, both PCT patents and non-PCT patents. Patents in AI and semiconductors by far outnumber
+those in quantum computing. Over the period of observation, 390,327 patents have been published in
+semiconductors with 303,326 in AI, compared to only 33,768 in quantum computing. The data also
+reveals that the propensity to file PCT patents, measured as the percentage of PCT patents to total
+number of patents, is highest in semiconductors (29.80 percent), followed by AI (23.39 percent) and
+quantum computing (12.94 percent).
+The right-hand side of Figure 1 shows the share of patents which we identified as novelties based on
+our previously described methodology. First, we note that 9.72 percent of patents in AI are
+characterised as a radical novelty based on our definition, while the share is about 50 percent higher
+for quantum computing with 14.42 percent of the patents being classified as radical novelties. Finally,
+about 11.04 percent of semiconductor patents are classified as radical novelties.
+
+===== PDF_PAGE 10 =====
+9
+Figure 1: Published patents by sector (2019-2023)
+Source: Bruegel based on WIPO.
+Figure 2 shows the decomposition of radical novelties by the location of the filing entity’s origin. The US
+has the highest number with a total of 3,203 radical novelties, closely followed by the China with a
+total of 2,892. EU firms only account for 804 radical novelties in total. China’s dominance in the number
+of radical novelties is largely driven by its activity in semiconductors, constituting 52.7 percent of its
+novelties. This is not surprising since US firms themselves are only a part of the global chip ecosystem.
+As we will briefly explore in the next section, Japan, Taiwan and South Korea, combined, surpass
+annual patenting in the semiconductor sector in the USPTO.
+Figure 2: Novelties by firm headquarters (2019-2023)
+Source: Bruegel based on WIPO.
+
+===== PDF_PAGE 11 =====
+10
+In AI and quantum computing, China still lags the US, which holds the largest number of radical
+novelties in these two technologies with a total of 1,852 and 222 respectively. China has significantly
+more radically novel patents in semiconductors compared to the US and even more so compared to
+the EU. In quantum computing, China slightly surpasses Europe with 116 compared to 102 radical
+novelties. Europe comes last in AI and semiconductors but the share of quantum computing novelties
+in its novelties (12.64 percent) is higher than the respective shares of quantum computing in the US
+(6.93 percent) and China (4.01 percent).
+In the next section, we will look deeper into how different economies dominate different subsectors of
+these three critical technologies and how quickly radical novelties diffuse from one economic region to
+another.
+6 Results
+6.1 General ﬁndings
+First, we show the evolution of radical novelties across jurisdictions since 2019. Figure 3 displays the
+case of quantum computing. The number of radical novelties obtained per year hovers between 80 and
+90 but appears trendless since 2020. The US dominates the sector, accounting for roughly half of all
+radical novelties on average. EU and Chinese patenting remained stable, hovering between 15 to 30
+novelties and reaching a combined share of 53.71 percent by 2023.
+Figure 3: Evolution of radical novelties in quantum computing (2019-2023)
+Source: Bruegel based on WIPO.
+
+===== PDF_PAGE 12 =====
+11
+In semiconductors, the total number of annual patented nov elties published peaked a t 668 by 2021,
+declining to 493 in 2023 (Figure 4). China has a strong position when co mpared wi th the EU, and even
+the US, since it consistently maintains a share of novelties of around 50 percent. The US comes second
+w
+ith a strong lead over the EU but has recently contracted, from 257 novelties in 2019 to 173 in 2023.
+The relatively low share of US firms is not surprising wh en c o nsidering the p a rticularities o f the global
+semiconductor ecosystem. Many prominent US chip firms are highly vertically disintegrated. Firms
+such as Qualcomm an d N vidia mostly specialise in chip design and outsource mo st of th e p roduction
+of their cutting-edge logic chips to TSMC in Taiwan. Japan an d South Korea equ ally pla y a significant
+role in the global chip ecosystem, providing crucial display technology for TSMC’s most advanced fabs.
+South Korea has also made strong progress in semiconductor manufacturing at the technology
+frontier.
+When adding these three jurisdictions to the analysis, the picture ch anges ( Figure 5). Taiwan almost
+catches up w ith t he US in th e nu mber of radical novelties, experiencing a sharp increase from 38
+novelties in 2019 to 156 in 2023. In other words, Chi na’s dominance in t erms of ra dical n ov elties i n
+semiconductors is muc h l ess ev ident w hen including other relevant jurisdictions. A key question is
+w
+hether the radical innovations from th ese diffe rent jurisdictions are integrated with th e U S chip
+ecosystem compared to the Chinese chip ecosystem. This is an interesting re search question but goes
+beyond the scope of this paper.
+Figure 4: Evolution of radical novelties in Figure 5: Radical novelties in semiconductors,
+in semiconductors (2019-2023) extended supply chain (2019-2023)
+Source: Bruegel based on WIPO.
+Finally, for AI, the US dominates, accounting for a significantly higher number of radical innovations
+than the EU and China (Figure 6). In 2019, US firms were published 250 radical novelties, a share of
+46.13 percent of total novelties in China and the EU. In 2023, the number of US radical novelties
+almost doubled to 502, while its share increased to 59.48 percent, an absolute as well as relative
+increase in AI innovation in the US over our period under observation. China’s number of annual radical
+novelties decreased in 2022 to a total number of 204 radical novelties, or a share of 29.61 percent,
+
+===== PDF_PAGE 13 =====
+12
+with a small recovery in the absolute number of novelties in 2023. The EU’s absolute number of radical
+novelties in AI is small compared to China and the US, increasing from 70 in 2019 to 86 in 2023, while
+its share increased slightly from 12.92 percent in 2019 to 10.19 percent in 2023.
+Figure 6: Evolution of radical novelties in AI (2019-2023)
+Source: Bruegel based on WIPO.
+6.2 Getting more granular
+G
+iven the complexities of these three radical technologies, general dominance by a certain country or
+economic area, in terms of number of overall radical novelties, might not be very meaningful for policy
+purposes. Some subfields may be more relevant than others for specific applications or may be used
+upstream for other subfields, which means that that they could create bottlenecks to other innovation
+processes. In other words, some subfields might be more indispensable than others so that, if a certain
+country dominates one of those subfields, it can leverage by becoming indispensable for other
+technologies which depending on it. To further delve into the potential relationships between
+subfields, we can take the AI subfield ‘computer vision’ as an example. It has a knock-on effect on
+‘advanced medical technologies’ as surgery apparatuses and medical imaging make extensive usage
+of techniques developed in this field. In the same vein, breakthroughs in ‘quantum hardware’ enable
+further progress in other quantum-related fields such as quantum machine learning and quantum
+semiconductor technology.
+Given the above, it seems important to conduct a more granular analysis of the critical novelties in the
+key subfields of AI, quantum and semiconductors. This is harder than it seems because there is not yet
+an official classification of subsectors for these new technologies. To address this limitation, we
+develop our own categorisation of key subfields for each technology by clustering all of the previously
+identified radical novelties into subfields based on a combination of manual industry research and
+LLM models. Any radical novelty which falls outside of the identified subfields is classified as ‘Other’
+
+===== PDF_PAGE 14 =====
+13
+but there are very few which fall in this residual category, confirming the mutual exclusivity of our
+categorisation.
+With the final list of subfields for each technology, we calculate the share of radical novelties per
+subfield for China, the EU and the US respectively. Finally, to grasp how the subfield focus has changed
+within our jurisdictions of interest, we analyse the decomposition of subfields over time separately for
+each of the three.
+Artiﬁcial intelligence
+Fig
+ure 7 presents our decomposition by subfield in AI. The two subfields in which by far the most
+innovative activity takes place are machine learning, accounting for 816 radical novelties and
+computer vision with 803 radical novelties. While China accounts for the largest share in computer
+vision (45.7 percent), machine learning is dominated by the US (70.47 percent).
+Other important subfields include natural language processing, robotics, image processing, data
+analytics and advanced medical technologies. In natural language processing, data analytics and
+advanced medical technologies the US is the leader with respective shares of 64.07 percent, 56.28
+percent and 57.27 percent. China outperforms the EU and the US in robotics and image processing
+with shares of 44.59 percent and 65.32 percent, respectively. China leads on innovation in a range of
+other less patented subfields such as telecommunications, aerial vehicle technology, video
+processing, autonomous driving, biometric security and data storage. The US, on the other hand, is the
+leader in audio processing, healthcare analytics, cybersecurity and generative AI, accounting for
+shares of 52.17 percent, 67.74 percent, 83.02 percent and 74.36 percent.
+It is important to highlight that like quantum technology, AI is an emerging field with an evolving set of
+subfields. The quantity of radical novelties is therefore an imperfect representation of the importance
+of the subfield. For instance, while still comparatively small in our sample, generative AI is driving
+much of the investment activities in the sector and promises a large variety of applications, with
+substantial gains in productivity for many industries.
+
+===== PDF_PAGE 15 =====
+14
+Figure 7: Share of radical novelties in AI by subfield and entity origin
+S
+ource: Bruegel based on WIPO.
+The evolution of subfield focus reveals that Chinese innovative activity has remained relatively stable
+over our period of observation. In line with the subfields in which large Chinese technology incumbents
+such as Huawei and ByteDance are active, China’s main focus is the processing of visual data. China’s
+push for advanced manufacturing and automation is equally represented in the results.
+Radical novelties by Chinese firms in the subfield of robotics and machine learning have consistently
+taken shares between 31.41 percent in 2019 and 24.15 percent in 2023. Smaller shares are taken by
+data analytics, advanced medical technologies and telecommunications.
+
+===== PDF_PAGE 16 =====
+15
+Figure 8: Chinese radical novelties in AI by subfields (2019-2023)
+S
+ource: Bruegel based on WIPO.
+While the US excels in computer vision and natural language processing as well, its comparative
+advantage lies in machine learning which in 2023 took a share of 41.08 percent in its radical novelties.
+Data analytics, robotics and advanced medical technologies have equally contributed to the strength
+of the US in AI, reaching shares of 9.03 percent, 5.64 percent and 8.13 percent in 2023, respectively.
+Like the Chinese case, the composition of radical novelties has remained quite stable. Compared to
+China, however, video processing, audio processing and telecommunications account for a relatively
+smaller share in the US AI portfolio.
+
+===== PDF_PAGE 17 =====
+16
+Figure 9: US radical novelties in AI by subfields (2019-2023)
+S
+ource: Bruegel based on WIPO.
+Relative to the US and China, the EU’s share of radical novelties has been somewhat more volatile
+(Figure 10). First and foremost, robotics accounts for a substantial share of radical novelties
+throughout the years, although it has diminished from 19.30 percent in 2019 to 8.97 percent in 2023.
+Secondly, computer vision and machine learning are two important fields that consistently take major
+shares in its portfolio of radically novel patents, the latter reaching a percentage of 43.59 in 2023.
+Smaller shares are taken by natural language processing, telecommunications, data analytics, image
+processing and audio processing. Interestingly, the EU also innovates substantially in advanced
+medical technologies, reaching a share of 10.39 percent in 2022.
+
+===== PDF_PAGE 18 =====
+17
+Figure 10: EU radical novelties in AI by subfields (2019-2023)
+S
+ource: Bruegel based on WIPO.
+One interesting pattern that our analysis reveals is that the US and China specialise in subfields in
+which both have a comparative advantage in data availability. In China, the data generated by large-
+scale deployment of surveillance technology and the widespread usage of Douyin (the Chinese
+version of TikTok) has led to a spring of inventions regarding the processing of image and video,
+including computer vision (Scharre, 2024). Often, local governments collect and share this data with
+private suppliers of AI applications which then use the data for further commercial innovation (Beraja
+et al, 2023). The US has the advantage of a fairly unregulated internet, and internet services (ie social
+media applications, search engines, e-commerce) that are used across the globe. The collected data
+forms the basis of natural language processing and machine learning algorithms, and now, generative
+AI, the fields of comparative advantage for the US.
+Semiconductors
+Fig
+ure 11 displays the relative innovative strength of China, the EU and the US in various
+semiconductor subfields. Unsurprisingly, in view of the importance and complexity of chip fabrication
+in the advancement of the sector, semiconductor manufacturing is the sector’s focus on innovation,
+
+===== PDF_PAGE 19 =====
+18
+accounting for a to t al number of 551 radical novelties. Display technology follows closely, with a to tal
+number of 488 radical novelties. Memory technology, op toelectronics, materials science,
+microelectromechanical systems (M EMS) a nd power electronics appear as su bstantial s ubfields as
+well. For the latter four, China and the US are ro ughly o n par. China dom inates in memory technology,
+while the US leads innovation on semiconductor design, sensor technology and imaging technology.
+Figure 11: Share of radical novelties in semiconductors by subfield and entity origin
+Sou
+rce: Bruegel based on WIPO.
+Given the government’s decisive push for the development of a domestic chip ecosystem, it is not
+surprising that the composition of China’s radical novelties across subfields has changed substantially
+(Figure 12). Until 2021, Chinese semiconductor firms were largely focused on display technology
+which made up 46.05 percent of all radical novelties in 2019, and 33.14 percent in 2021. This aligns
+well with China’s general strength in consumer electronics manufacturing. However, a significant shift
+has taken place since 2021. Semiconductor manufacturing and memory technology are now the
+dominant subfields in China’s chip innovation portfolio, with shares of 33.73 percent and 18.43
+percent in 2023, respectively. A manual check of the data revealed that this has mainly been driven by
+two large firms, namely Yangtze Memory Technology and Changxin Memory Technology.
+
+===== PDF_PAGE 20 =====
+19
+Figure 12: Chinese radical novelties in semiconductors by subfields (2019-2023)
+S
+ource: Bruegel based on WIPO.
+While China’s innovation heavily centres around semiconductor manufacturing and memory
+technology, the US portfolio appears more diversified. Figure 13 shows the evolution of subfields of
+radical novelties in semiconductors for the US. As can be seen, semiconductor manufacturing equally
+has the most significant share, hovering around 20 percent among the top 10 subfields. However,
+semiconductor design, optoelectronics, memory technology, power electronics and material science
+equally hold shares of about 5-15 percent each. The composition has remained largely stable, despite
+the US experiencing a significant drop of published novelties in 2023, from 256 down to 173.
+
+===== PDF_PAGE 21 =====
+20
+Figure 13: US radical novelties in semiconductors by subfields (2019-2023)
+S
+ource: Bruegel based on WIPO.
+Finally, Figure 14 shows the EU’s evolution of subfields in semiconductors. Traditionally, three sectors
+stand out, semiconductor manufacturing, optoelectronics and MEMS of which optoelectronics takes
+the dominant share throughout the years of combined 45.45 percent in 2019 to 40.01 percent in
+2023. Sensor technology, memory technology, display technology, power electronics and materials
+science equally contribute significant shares of around 5-15 percent on average. Smaller shares are
+taken by semiconductor packaging and semiconductor design, with respective shares of 6.67 percent
+and 3.34 percent in 2023. Similar to the US, however, the number of radical novelties in
+semiconductors shrank by over half from 2022 to 2023.
+
+===== PDF_PAGE 22 =====
+21
+Figure 14: EU radical novelties in semiconductors by subfields (2019-2023)
+S
+ource: Bruegel based on WIPO.
+In sum, while China is advancing in radical novelties in semiconductor manufacturing and memory
+technology, the US has a fairly diversified portfolio, and, most notably, a strong presence in
+semiconductor design. The EU lags in all fields but is still a strong player in optoelectronics, MEMS and
+sensor technology. Our findings reflect the structure of the global semiconductor ecosystem. The US is
+home to many large technology firms who specialise in the high value-added parts of the
+semiconductor value chain, ie semiconductor design. China excels in memory technology and
+semiconductor manufacturing and has a strong presence in display technology, which reflects its
+dominance in consumer electronics. China’s shift to the former two subfields also indicates that it has
+moved up the chips value chain.
+Quantum computing
+Fig
+ure 15 displays the relative share of China, the US and the EU for each subfield in quantum
+computing. The analysis reveals that quantum hardware and quantum systems and control are the
+subfields in which the largest amount of radical progress is conducted, leading to a sum of 145 and 98
+novelties, respectively. Considerable activity is equally noted in quantum cryptography (38), quantum
+photonics (37), quantum semiconductor technology (34) and quantum communication (32).
+
+===== PDF_PAGE 23 =====
+22
+The US dominates innovation in quantum computing in absolute number. The subfields where it
+captures the highest share are quantum hardware, quantum systems and control and quantum
+semiconductor technology, where the US accounts for 57.24 percent, 63.27 percent and 50 percent,
+respectively. China is most dominant in quantum cryptography, quantum photonics, quantum
+communication and quantum chemistry, reaching shares of 47.37 percent, 43.24 percent, 43.75
+percent and 38.46 percent, respectively. Europe doesn’t dominate any of the subfields but captures a
+significant share of novelties in quantum hardware (25.52 percent), quantum semiconductor
+technology (32.35 percent), quantum photonics (27.03 percent) and quantum communication (28.13
+percent).
+Figure 15: Share of radical novelties in quantum computing by subfield and entity origin
+S
+ource: Bruegel based on WIPO.
+Moving to the decomposition of the evolution of subfield concentration for each of the three
+economies separately, Figure 16 shows the Chinese case. Between 2019 and 2021, activity in
+patenting of radical novelties mostly focused on quantum cryptography, quantum communication and
+quantum photonics. At the same time, quantum systems and control gained in significance in terms of
+China’s radical novelties in this subfield. In 2022 and 2023, the focus shifted significantly. While
+quantum hardware constituted only 4.76 percent of all Chinese quantum technology novelties in
+2019, this share rose to 45.45 percent by 2023. Our data shows that in 2023, the most significant
+innovations focused on quantum hardware and quantum systems and control, with a combined share
+of 77.27 percent. Quantum cryptography, quantum communication, quantum chemistry and quantum
+cybersecurity disappeared in radical novelties in 2023.
+
+===== PDF_PAGE 24 =====
+23
+Figure 16: Chinese radical novelties in quantum computing by subfields (2019-2023)
+
+Source: Bruegel based on WIPO.
+
+In the US, an opposite trend is visible (Figure 17). While quantum hardware and quantum
+semiconductor technology dominated quantum technology innovation in 2019 (50.73 percent and
+15.94 percent, respectively), these values dropped to 30.43 percent and 4.35 percent in 2023. At the
+same time, quantum systems and control and quantum cryptography gained a more significant share,
+at 30.43 percent and 10.87 percent respectively.
+
+===== PDF_PAGE 25 =====
+24
+Figure 17: US radical novelties in quantum computing by subfields (2019-2023)
+
+Source: Bruegel based on WIPO.
+
+Finally, the EU’s radically novel patents in quantum computing are mostly situated in quantum
+hardware, as in the US, with shares between 21.74 percent in 2019 up to 47.83 percent in 2022
+(Figure 18). Quantum photonics and quantum communications have equally played a significant role,
+although with the latter only gaining importance from 2021 onwards. While quantum cryptography
+reached a significant share of 26.09 percent in 2019, that percentage dropped to 3.23 percent by
+2023.
+
+===== PDF_PAGE 26 =====
+25
+Figure 18: EU radical novelties in quantum computing by subfields (2019-2023)
+
+Source: Bruegel based on WIPO.
+
+In general, it must be noted that the overall number of quantum computing-related radical novelties
+remains small. The above findings should therefore not be overinterpreted. Since quantum technology
+is a young industry that is developing quickly, rapid changes in the concentration of subfields might
+occur. Our analysis, however, suggests that China has shifted from quantum cryptography and
+communication to hardware-related subfields. On the contrary, the EU and the US have retained stable
+shares of quantum hardware over the years, while equally making progress in quantum
+communication and quantum cryptography in recent years.
+7 Cross-regional patterns
+
+7.1 . Measuring patent spillovers
+
+We move to estimating how quickly regions catch up to the technological advancements of other regions
+or, how long it takes for a technology of a radical novelty filed by region A to appear in the patent of
+region B. To this end, we track the first appearance of a relevant innovation using a keyword-based
+approach. To improve the accuracy of our methodology, we apply stemming, a method that reduces
+words to their root form to ensure consistency in keyword matching across patents. For example,
+‘innovation’, ‘innovates’ and ‘innovative’ are reduced to innovate, allowing us to catch instances of the
+same concept even when phrased slightly differently. As a second step, we extract stemmed keywords
+from patent abstracts and check when they first appear in other filings. Finally, we validate our approach
+by manually reviewing a sample of 100 innovations, confirming that keyword matches reliably capture
+repeated technological concepts.
+
+===== PDF_PAGE 27 =====
+26
+The spillovers are then quantified by measuring the time between the publication date of the repeated
+patent and the initial radically novel patent, which is then averaged out across subfields of critical
+technologies. The following equation illustrates our results:
+𝑡𝑡𝑖𝑖,𝑗𝑗,𝑝𝑝 = 𝑑𝑑𝑑𝑑𝑡𝑡𝑑𝑑𝑖𝑖,𝑝𝑝 −𝑑𝑑𝑑𝑑𝑡𝑡𝑑𝑑𝑗𝑗,𝑝𝑝
+where 𝑡𝑡𝑖𝑖,𝑗𝑗,𝑝𝑝 is the lag between economy 𝑖𝑖 and 𝑗𝑗 of patented novelty 𝑝𝑝 in days. We then average the lag for
+each subfield:
+𝑇𝑇𝑠𝑠 =
+∑ 𝑡𝑡𝑖𝑖,𝑗𝑗,𝑝𝑝,𝑠𝑠 𝑝𝑝
+𝑛𝑛𝑠𝑠
+where 𝑛𝑛 𝑠𝑠 is the sum of patented novelties from economy 𝑖𝑖 that are repeated in economy 𝑗𝑗. Since
+patents typically take at least one and a half ye ars to be publ ished—depending on the jurisdictio n—it
+is important to acknowledge that we remain ag nostic about the precis e channels through which these
+spillovers occur. In most cases, it is likely that the technology was not directly co pied from the pat ent
+itself. Instead, it could be that t he scientific b asis for the technology was already we ll-known, and
+regions were in a head-t o-head race in dev eloping a product. It could also b e that the technology was
+leaked through inter-regional development cooperation or the movement of people between regions.
+7.2. How fast do countries/regions replicate critical novelties?
+We now look into the speed at which critical novelties may be replicated in the same economic area or
+in another one.
+Figure 19 shows the average spillovers for radical novelties in the three technology fields. In general, the
+EU needs on average the longest to replicate radically novel patents from other regions. It
+takes particularly long for tech nologies coming from the US, l ess so from China. On the contrary,
+technologies from the EU ar e much faster to be found in patents from US entities than the other way
+around. China is closely following the EU an d the US althou gh with slightly l arger spillover times than
+the US has vis-à-vis the other two regions. The EU does not only need a considerable amount of
+time to innov ate in technologies fro m other regions but equal ly to progress radically nove l
+innovations wit hin its own domestic market. This could be due to several reasons such as nation state
+barriers, the weak absorptive capacity of it s high-tech firms, o r more tedio us administrative processes
+for R&D. In any case, this is a point of c oncern for EU policymakers.
+
+===== PDF_PAGE 28 =====
+27
+Figure 19: Cross-regional spillovers per field by direction (in average number of days)
+
+Source: Bruegel based on WIPO.
+
+Artiﬁcial intelligence
+
+Moving to a much more granular analysis of the different subfields of AI, we find the largest spillover
+times from the US to the EU is in cybersecurity and generative AI, averaging 294 and 278 days,
+respectively (Figure 20), and the smallest in aerial vehicle technology, image processing and
+telecommunications. Clearly, as EU economies have so far advanced little in generative AI, this finding
+is not surprising. Furthermore, as cybersecurity is often connected to military applications, the EU’s
+underinvestment in this area may have impeded progress on this front. The spillover time for the US to
+the EU are also quite long for natural language processing and machine learning. For Gen AI, the spillover
+time from the US to China is around 40 percent of that of the US with the EU, hinting already t o China’s
+current rise as a generative AI market.
+
+===== PDF_PAGE 29 =====
+28
+Figure 20: Spillovers in AI across different countries/regions (average number of days)
+
+Source: Bruegel based on WIPO.
+
+In the same vein, spillovers from China to the US tend to be longer than from China. This is the case of
+computer vision and image processing, with durations extending beyond 73 days to the US. These
+findings are clearly concerning for the EU. From the US to China, the longest spillovers are in data
+storage, but many are short. Spillovers from the EU to China or from the EU to the US tend to be very
+short. All in all, we find that the speed at which radical novelties in specific AI fields are transferred
+varies widely from one technology to another and one country to another. The EU suffers the longest
+delays while its own novel patents are replicated rather quickly.
+Semiconductors
+
+Moving to diffusion of semiconductor technology within a country’s borders, Figure 21 reveals that the
+replication time within the EU are again the longest (303 days) compared to the US (170 days) and even
+more so China (132 days). While the US and China show relatively efficient internal diffusion, the EU
+again experiences longer delays. This trend is consistent with the cross -country spillover data, where
+the EU also faces delays in adopting semiconductor innovations from other regions. This suggests that
+both internal and external factors are contributing to slower technology diffusion in the EU, potentially
+impacting its competitiveness in this critical sector.
+
+===== PDF_PAGE 30 =====
+29
+Figure 21: Cross-regional spillovers in semiconductors by subfield (in average number of days)
+
+Source: Bruegel based on WIPO.
+
+Finally, moving to the different subfields of semiconductor technologies, we find that the innovation field
+with the longest spillover time from the US to the EU is semiconductor design, with an average of 278
+days (Figure 24). Conversely, fields such as memory technology and power electronics show much
+shorter spillover time, especially from China to the US, with durations as low as 59 days. Additionally,
+fields like semiconductor manufacturing and photonics exhibit relatively balanced replication times
+across different regions, with China to the EU r eaching up to 183 days. Our findings for the
+semiconductor sector suggest that, while some semiconductor innovations get replicated relatively
+quickly, others, particularly in advanced manufacturing and testing, experience notable delays,
+especially when those EU innovations originating in the US.
+Quantum computing
+
+Finally, at a more granular level, the field of quantum semiconductor technology experiences the
+slowest diffusion from the US to the EU, with 326 days on average (Figure 22). Similarly, quantum
+cryptography shows a longer spillover time, particularly from the EU to China and from China to the EU,
+with durations extending up to 60 days. However, certain fields like quantum photonics exhibit much
+shorter the spillover time from the US to China and from the EU to the US, with durations as low as 50
+and 41 days, respectively. These patterns indicate that while some quantum innovations are
+
+===== PDF_PAGE 31 =====
+30
+rapidly adopted across regions, others, especially those like quantum communication, encounter
+substantial delays in their diffusion, particularly from the US to the EU and within the EU itself.
+Figure 22: Cross-regional spillovers in quantum computing by subfield (in average number of days)
+
+Source: Bruegel based on WIPO.
+
+8 Conclusions
+
+Our findings are concerning for Europe for two reasons. First, the EU seems to have fallen behind the
+US and China in core innovation capabilities in the technologies of the future. The EU sees most of its
+success in quantum computing, but it is too early to say whether this success will continue. This
+critical technology is much less mature in general terms, evident in its fewer radical novelties and total
+number of patents. Second, the much slower replication of radical novelties by Europeans points to a
+certain isolation for the EU’s innovation in critical technologies compared to China and the US. The fact
+that radically novel patents are also replicated more slowly within the European single market than
+within the US or China points to the fragmentation of the single market as a potential root cause of the
+problem.
+Our results do not indicate that either China or the US is an overall frontrunner in the innovation race,
+although the sub sectoral analysis offers some clues as to the winners in specific subsectors. Their
+innovation ecosystems are far more integrated with one another than they are with the EU when
+measured by the speed of spillovers (or technology replication) in critical technologies, despite US
+introduction of export controls in critical technologies.
+
+===== PDF_PAGE 32 =====
+31
+References
+
+Abood, A. and D. Feltenberger (2018) ‘Automated patent landscaping’, Artificial Intelligence and Law
+26(2): 103–125, available at https://doi.org/10.1007/s10506-018-9222-4
+
+Aghion, P. and P. Howitt (1992) ‘A Model of Growth Through Creative Destruction’, Econometrica 60(2):
+323–351, available at https://doi.org/10.2307/2951599
+Agrawal, A., J.S. Gans and A. Goldfarb (2018) ‘Human Judgment and AI Pricing’, AEA Papers and
+Proceedings 108: 58–63, available at https://doi.org/10.1257/pandp.20181022
+Arts, S., J. Hou and J.C. Gomez (2021) ‘Natural language processing to identify the creation and impact
+of new technologies in patent text: Code, data, and new measures’, Research Policy 50(2), available at
+https://doi.org/10.1016/j.respol.2020.104144
+Barnett, J.M. (2023) ‘Antitrust Mercantilism: The Strategic Devaluation of Intellectual Property Rights in
+Wireless Markets’, Berkeley Technology Law Journal 38: 259, available at
+https://lawcat.berkeley.edu/record/1275404?v=pdf
+Beraja, M., D.Y. Yang and N. Yuchtman (2020) ‘Data-intensive Innovation and the State: Evidence from
+AI Firms in China’, NBER Working Paper 27723, National Bureau of Economic Research, available at
+https://www.nber.org/papers/w27723
+Bergeaud, A., Y. Potiron and J. Raimbault (2018) ‘Classifying Patents Based on Their Semantic Content’,
+Working Paper, Banque de France, available at https://doi.org/10.2139/ssrn.3222501
+
+Bergeaud, A. and C. Verluise (2023) ‘China at the technological frontier’, CentrePiece, spring, available
+at https://cep.lse.ac.uk/_NEW/publications/abstract.asp?index=9889
+Boeing, P., L. Brandt, R. Dai, K. Lim and B. Peters (2024) ‘The anatomy of Chinese innovation: Insights
+on patent quality and ownership’, ZEW Discussion Papers No. 24-016, Leibniz-Zentrum für Europäische
+Wirtschaftsforschung, available at https://hdl.handle.net/10419/289451
+Boeing, P. and E. Mueller (2016) ‘Measuring patent quality in cross-country comparison’, Economics
+Letters 149: 145–147, available at https://doi.org/10.1016/j.econlet.2016.10.039
+Boeing, P. and E. Mueller (2019) ‘Measuring China’s patent quality: Development and validation of ISR
+indices’, China Economic Review 57, available at https://doi.org/10.1016/j.chieco.2019.101331
+Fang, H., Z. Song, H. Tao and Y. Zhang (2021) ‘An Anatomy of the Patent Quality: China vs. US.’, mimeo,
+available at https://cicm.pbcsf.tsinghua.edu.cn/cn2021/pdf/1621585106754701.pdf
+Griliches, Z. (1990) ‘Patent Statistics as Economic Indicators: A Survey’, NBER Working Paper 3301,
+National Bureau of Economic Research, available at https://www.nber.org/papers/w3301
+
+===== PDF_PAGE 33 =====
+32
+Han, P., W. Jiang and D. Mei (2024) ‘Mapping U.S.–China Technology Decoupling: Policies, Innovation,
+and Firm Performance’, Management science 70(12), available at
+https://doi.org/10.1287/mnsc.2022.02057
+He, W. (2023) ‘Research on the impact of OFDI reverse technology spillover on regional innovation
+capabilities—A spatial analysis based on provincial panel data’, Finance Research Letters 58,
+available at https://doi.org/10.1016/j.frl.2023.104652
+Hu, A.G. and G.H. Jefferson (2009) ‘A great wall of patents: What is behind China’s recent patent
+explosion?’ Journal of Development Economics 90(1): 57–68, available at
+https://doi.org/10.1016/j.jdeveco.2008.11.004
+Ikoma, H. and T. Mitamura (2025) ‘Can AI Examine Novelty of Patents?: Novelty Evaluation Based on
+the Correspondence between Patent Claim and Prior Art’, mimeo, available at
+https://arxiv.org/abs/2502.06316
+Jaffe, A.B. and G. de Rassenfosse (2016) ‘Patent Citation Data in Social Science Research: Overview
+and Best Practices’, NBER Working Papers 21868, National Bureau of Economic Research, available at
+https://ideas.repec.org/p/nbr/nberwo/21868.html
+Kaku, M. (2023) Quantum Supremacy: How the Quantum Computer Revolution Will Change Everything,
+Random House
+Kelly, B., D. Papanikolaou, A. Seru and M. Taddy (2021) ‘Measuring Technological Innovation over the
+Long Run’, American Economic Review: Insights 3(3): 303–320, available at
+https://doi.org/10.1257/aeri.20190499
+Kuhn, J., K. Younge and A. Marco (2020) ‘Patent citations reexamined’, The RAND Journal of Economics
+51(1): 109–132, available at https://doi.org/10.1111/1756-2171.12307
+
+Lampe, R. (2012) ‘Strategic Citation’, Review of Economics and Statistics 94(1): 320–333, available at
+https://doi.org/10.1162/rest_a_00159
+Lee, J.-S. and J. Hsiang (2020) ‘Patent classification by fine-tuning BERT language model’, World Patent
+Information 61, available at https://doi.org/10.1016/j.wpi.2020.101965
+Li, S., J. Hu, Y. Cui and J. Hu (2018) ‘DeepPatent: patent classification with convolutional neural
+networks and word embedding’, Scientometrics 117(2): 721–744, available at
+https://doi.org/10.1007/s11192-018-2905-5
+Li, X. (2012) ‘Behind the recent surge of Chinese patenting: An institutional view’, Research Policy
+41(1): 236–249, available at https://doi.org/10.1016/j.respol.2011.07.003
+
+===== PDF_PAGE 34 =====
+33
+Masiowski, M., N. Mohr, H. Soller and M. Zesko (2022) ‘Quantum computing funding remains strong, but
+talent gap raises concern’, Quantum Technology Monitor, McKinsey, available at
+https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-computing-funding-
+remains-strong-but-talent-gap-raises-concern#/
+Michel, J. and B. Bettels (2001) ‘Patent citation analysis. A closer look at the basic input data from
+patent search reports’, Scientometrics 51: 185–201, available at
+https://doi.org/10.1023/a:1010577030871
+Mueller, E. and P. Boeing (2024) ‘Global Influence of Inventions and Technology Sovereignty’, ZEW
+Discussion Papers No. 24-024, Centre for European Economic Research, available at
+https://doi.org/10.2139/ssrn.4802795
+Nordhaus, W.D. (2021) ‘Are We Approaching an Economic Singularity? Information Technology and the
+Future of Economic Growth’, American Economic Journal: Macroeconomics 13(1): 299–332, available
+at https://doi.org/10.1257/mac.20170105
+Parikh, A. and S. Dori-Hacohen (2024) ‘ClaimCompare: A Data Pipeline for Evaluation of Novelty
+Destroying Patent Pairs’, mimeo, available at https://arxiv.org/abs/2407.12193
+Romer, P.M. (1990) ‘Endogenous Technological Change’, Journal of Political Economy 98(5), available
+at https://www.jstor.org/stable/2937632
+Scharre, P. (2024) Four Battlegrounds: Power in the Age of Artificial Intelligence, W.W. Norton &
+Company
+Schmitt, V.J. and N.M. Denter (2024) ‘Modeling an indicator for statutory patent novelty’, World Patent
+Information 78, available at https://doi.org/10.1016/j.wpi.2024.102283
+Trajtenberg, M. (1990) ‘A Penny for Your Quotes: Patent Citations and the Value of Innovations’, The
+RAND Journal of Economics 21(1): 172–187, available at https://doi.org/10.2307/2555502
+Van Pottelsberghe de la Potterie, B. (2010) ‘The quality factor in patent systems’, Working Paper
+2010/03, Bruegel, available at https://www.bruegel.org/working-paper/quality-factor-patent-systems
+
+Varadarajan, R., I. Koch-Weser, C. Richard, J. Fitzgerald, J. Singh, M. Thornton, R. Casanova and D. Isaacs
+(2024) Emerging Resilience in the Semiconductor Supply Chain, SIA and BCG, available at
+https://www.semiconductors.org/wp-content/uploads/2024/05/Report_Emerging-Resilience-in-the-
+Semiconductor-Supply-Chain.pdf
+Yassine, A. and C. Lipizzi (2023) ‘Measuring Patent Novelty using Natural Language Processing’,
+Proceedings of the Design Society 3: 2605–2614, available at https://doi.org/10.1017/pds.2023.261
+
+===== PDF_PAGE 35 =====
+34
+Appendix 1: Methodology
+
+Definition of radical novelty
+
+Let Ci be the unique concept extracted from patent Pi, and let H represent the historical corpus of all
+patents. We formally define radical novelty as:
+𝑁𝑁ᵣ(𝐶𝐶ᵢ) = �1 𝑖𝑖𝑖𝑖 𝐶𝐶ᵢ ∉ ℋ 𝑑𝑑𝑛𝑛𝑑𝑑 |𝑆𝑆(𝐶𝐶ᵢ)| ≥ 𝑘𝑘
+0, 𝑜𝑜𝑡𝑡ℎ𝑑𝑑𝑒𝑒𝑒𝑒𝑖𝑖𝑒𝑒𝑑𝑑
+
+where S(Ci) represents the set of patents citing or adopting concept Ci within a set time window.
+
+Novelty detection
+
+The novelty detection procedure consists of three key steps:
+
+1. Concept Extraction with LLAMA3:
+
+Given an abstract of patent Pi, we extract its main innovation concept Ci using LLAMA3 via a
+structured prompt. The extracted concept is then embedded into a high-dimensional semantic
+space Rd for further analysis:
+E(Aᵢ) = LLAMA3(Aᵢ)
+
+2. Clustering with DBScan:
+
+o To classify new concepts into innovation clusters, we apply DBScan, which groups
+similar embeddings based on density.
+o The distance metric used for clustering is the cosine similarity of concept
+embeddings:
+𝑒𝑒𝑖𝑖𝑠𝑠(𝐸𝐸ᵢ, 𝐸𝐸𝐸) = (𝐸𝐸ᵢ ⋅ 𝐸𝐸𝐸) / (‖𝐸𝐸ᵢ‖ ‖𝐸𝐸𝐸‖)
+
+o This method allows discovery of meaningful technological clusters without assuming
+a fixed number of clusters (as opposed to k-means).
+3. Validation of radical novelty:
+
+o For a concept Ci to be classified as a radical novelty, it must:
+
+1. Appear for the first time in our dataset.
+
+2. Be referenced at least k times in subsequent patents.
+
+===== PDF_PAGE 36 =====
+35
+
+o The validation score is computed as:
+
+𝑉𝑉(𝐶𝐶ᵢ) = |𝑆𝑆(𝐶𝐶ᵢ)| /
+
+ where V(Ci ) ≥ 1 ensures significant adoption of a novel concept.
+
+Aggregation of the innovation fields
+
+To illustrate major innovation domains in AI, quantum computing and semiconductors, we aggregate
+clustered innovation concepts into macro-fields. These fields are curated using a semi-supervised
+approach, where:
+• DBScan cluster labels are reviewed manually.
+
+• Clusters are merged based on semantic proximity into broader innovation themes.
+
+The resulting categories enable a clearer interpretation of radical innovations across key technological
+domains (Annex 1).
+Country of origin
+
+A critical aspect of our analysis is identifying the country of origin for each patent and its radical
+technology. Since WIPO data does not include headquarters location, we use an automated search
+pipeline via ChatGPT 4o.
+1. Entity normalisation: We first clean entity names to resolve typos and inconsistencies in legal
+abbreviations (eg Ltd., GmbH, S.A.).
+2. Automated web querying: For each entity, we prompt ChatGPT 4o to search the web and extract
+the headquarters location.
+3. Classification rules:
+
+o Subsidiaries of multinational corporations are classified based on their legal country
+of registration rather than the parent company’s location.
+o Manual verification ensures accuracy of classifications.
+
+These steps provide a robust classification of patent origin.
+
+===== PDF_PAGE 37 =====
+36
+Appendix 2: Innovation Fields and Number of radical novelties per field and per country/region
+
+Artificial Intelligence
+
+Classified concept CN EU US Total
+Advanced medical technologies 47 27 100 174
+Aerial vehicle technology 44 3 7 54
+Audio processing 35 9 48 92
+Autonomous driving 18 10 22 50
+Biometric security 22 2 11 35
+Computer vision 367 87 352 806
+Cybersecurity 6 3 44 53
+Data analytics 72 22 121 215
+Data storage 16 4 10 30
+Generative AI 7 3 29 39
+Healthcare analytics 15 5 42 62
+Image processing 195 23 80 298
+Machine learning 146 97 575 818
+Natural language processing 104 29 231 364
+Other 10 14 16 40
+Robotics 137 57 126 320
+Telecommunications 38 17 25 80
+Video processing 45 6 18 69
+
+Quantum computing
+
+Classified concept CN EU US Total
+Other 5 3 13 21
+Quantum chemistry 5 3 5 13
+Quantum communication 16 10 9 35
+Quantum cryptography 17 11 10 38
+Quantum cybersecurity 5 1 5 11
+Quantum hardware 24 43 93 160
+Quantum networking 0 3 4 7
+Quantum photonics 16 10 12 38
+Quantum semiconductor technology 6 11 18 35
+Quantum systems and control 22 20 65 107
+
+===== PDF_PAGE 38 =====
+37
+Semiconductors
+
+Classified concept CN EU US Total
+Biometrics security 9 2 4 15
+Display technology 688 38 92 818
+Imaging technology 15 8 33 56
+MEMS 125 59 82 266
+Materials science 132 40 119 291
+Memory technology 243 17 110 370
+Nanotechnology 23 5 21 49
+Optoelectronics 115 159 107 381
+Other 6 10 13 29
+Photonics 39 28 55 122
+Power electronics 92 32 102 226
+Semiconductor design 30 15 128 173
+Semiconductor device 41 8 90 139
+Semiconductor device testing 37 6 27 70
+Semiconductor manufacturing 517 71 245 833
+Semiconductor packaging 96 19 90 205
+Sensor technology 53 42 64 159
+
+===== PDF_PAGE 39 =====
+© Bruegel 2025. All rights reserved. Short sections, not to exceed two paragraphs, may be quoted in the
+original language without explicit permission provided that the source is acknowledged. Opinions expressed
+in this publication are those of the author(s) alone.
+
+Bruegel, Rue de la Charité 33, B-1210 Brussels
+(+32) 2 227 4210
+info@bruegel.org
+www.bruegel.org

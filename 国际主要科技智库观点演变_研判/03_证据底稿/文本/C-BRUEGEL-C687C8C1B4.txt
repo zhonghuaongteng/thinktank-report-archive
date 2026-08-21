@@ -1,0 +1,823 @@
+
+===== PDF_PAGE 1 =====
+WORKING PAPER | ISSUE 08/2025 | 22 MAY 2025
+WHICH COMP ANIES ARE
+AHEAD I N FRONTIER
+I
+NNOVATION ON CRITI CAL
+TECHN
+OLOGIES? COMPARING
+CHINA, THE EURO PEAN UNION
+AND THE UN ITED STATES
+ALICIA GARCÍA-HERRERO, MICHAL KRYSTYANCZUK AND ROBIN SCHINDOWSKI
+Competition in critical technologies is attracting increasing attention not only because
+of the fo
+undational nature of these technologies for other types of innovation, but also
+b
+ecause of their role in the United States national security strategy. In this paper, we look
+into which entities in China, the European Union and the US innovate at the technology
+fr
+ontier in the three most important critical technologies – artificial intelligence, quantum
+com
+puting and semiconductors – based on identification of the most radical novel patents
+in these technologies and their subsectors. Working with these pathbreaking patents, we
+lo
+ok into the origin of the companies that file the largest numbers of them. US innovators
+domin
+ate the innovation frontier for quantum computing and, to a lesser extent, AI,
+with Chinese innovators doing better in semiconductors. European innovators lag in
+all, b
+ut perform relatively better in quantum computing, in which they rank similarly
+t
+o Chinese innovators. Furthermore, the innovation ecosystem is quite different across
+g
+eographies. In the US, tech companies top the rankings of critical novelties and are highly
+concentrated: as many as three companies are in the top rankings of all of the three critical
+t
+echnologies. Frontier innovators in the field in which the EU competes most equally
+– quantum – are mostly research centres and not companies. China lies somewhat in
+b
+etween in all three domains.
+JEL: O30, O33, F52
+Key words: critical technologies, patents, innovation, AI, quantum computer,
+s
+emiconductors
+Alicia García-Herrero (alicia.garcia-herrero@bruegel.org) is a Senior Fellow at Bruegel.
+Michal Krystyanczuk (michal.rystyanczuk@bruegel. org) is a Data Scientist at Bruegel.
+Robin Schindowski is a Research Fellow at MERICS.
+R
+ecommended citation:
+García-Herrero, A., M. Krystyanczuk and R. Schindowski (2025) ‘Which companies are
+ahead in frontier innovation on critical technologies? Comparing China, the European
+Union and the United States’
+, Working Paper 08/2025, Bruegel
+WORKING PAPER|ISSUE 03|2020
+
+===== PDF_PAGE 2 =====
+1
+1 Introduction
+Quantum computing, semiconductors and artificial intelligence are at the centre of the United States-China
+technology rivalry. They are foundational technologies with large spillover effects and potential gains in
+productivity, and are therefore essential to the technological autonomy of any major economy. Some have even
+argued that economic singularity – the point at which machine intelligence is capable of innovating
+autonomously and beyond human capabilities – will result from progress in these technologies (Nordhaus,
+2021). AI is at the core of this. It promises to improve human judgement by providing predictive insights from
+historical data through simulating human intelligence (Agrawal et al, 2018). Furthermore, through techniques of
+computer vision and game simulation, AI has the potential to grant a significant advantage on the battlefield to
+those powers that can harness it (Scharre, 2024).
+The advancement of AI, however, depends crucially on computing power, for which the deployment and further
+development of cutting-edge semiconductors are necessary. The semiconductor industry is characterised by a
+highly globalised supply chain and by high concentration with respect to the production of advanced logic chips
+needed for AI development. It is therefore particularly subject to geopolitical risk.
+Finally, quantum computing is the most embryonic of the three technologies, but the economic implications are
+potentially huge. Once matured, quantum computing could render traditional semiconductor chips redundant,
+ending the age of silicon. Hence, it may enable breakthroughs in AI, biotechnology, agricultural technology,
+material sciences and cybersecurity that would be impossible for traditional supercomputers (Kaku, 2023).
+Because of the importance of these three technologies for future competitiveness, China, the European Union
+and the US – the world’s largest economic blocs – are promoting their advancement with growing resources for
+research and development (R&D) and industrial-policy strategies. The US adopted the CHIPS and Science Act in
+20221 to further develop a US-based semiconductor ecosystem while attracting foreign investment. In addition,
+the US federal government has attempted to curtail the transfer to China of high-end semiconductors – and the
+components to produce them. China has prioritised for much longer the development of these technologies in
+its national industrial plans. In particular, it set up the National Integrated Circuit Industry Investment Fund in
+2014, with a total of $98.38 billion in raised funds as of today. China has also implemented dedicated industrial
+policy initiatives such as the National Guideline for the Development and Promotion of the Integrated Circuit
+Industry (2014)
+2 and the New Generation Artificial Intelligence Plan (2017)3. Finally, less is known about how
+China supports quantum computing, although it appears as a priority in central five-year plans. The EU,
+meanwhile, has adopted the European Chips Act (Regulation (EU) 2023/1781) and has started to invest heavily
+in AI and quantum-computing R&D through its Horizon Europe research funding programme4. Further initiatives
+exist at the national level in the EU.
+In this paper, we study who is engaging in frontier innovation in AI, semiconductors and quantum computing in
+China, the US and the EU. To do this, we exploit a dataset of ‘radically novel’ patents in the three technologies
+created by García-Herrero et al (2025). The authors use a large language model (LLM) to gauge the degree of
+1 The text of the law is available at https://www.congress.gov/117/plaws/publ167/PLAW-117publ167.pdf.
+2 See (in Chinese) https://www.gov.cn/xinwen/2014-06/24/content_2707281.htm.
+3 See (in Chinese) https://www.gov.cn/zhengce/content/2017-07/20/content_5211996.htm.
+4 Dan Cooper, Lisa Peets, Marty Hansen, Sam Jungyun Choi and Marianna Drake, ‘European Commission Announces New
+Package of AI Measures’, Inside Global Tech, 14 February 2024, Covington,
+https://www.insideglobaltech.com/2024/02/14/european -commission-announces-new-package-of-ai-measures/.
+
+===== PDF_PAGE 3 =====
+2
+novelty of patents and then categorise these novelties into subfields within the three above-mentioned
+technologies (eg memory technology in semiconductors). This paper is an extension of García-Herrero et al
+(2025). We shed light specifically on: 1) the entities that file the highest number of radical novelties in each
+technology, and 2) the subfields in which these entities innovate. This more granular analysis allows us to
+better understand where China, the EU and the US stand in this tech race, as well as relevant differences in their
+approaches to innovation, whether in terms of the subfields in which research efforts are focused, or the types
+of entity that conduct the top-level research with visible outcomes, namely radically novel patents in these
+three fields.
+2 What radical novelty in patented technology reveals and what it does not
+García-Herrero et al (2025) applied an LLM to the universe of patents filed at the main patent registries (the US,
+the EU and the World Intellectual Property Organization (WIPO), ie the USPTO, EPO and PCT) between 2019 and
+20235. Specifically, we define a patent as a ‘radical novelty’ in a particular field if the related innovation,
+identified from the patent abstract through the LLM, has never appeared before in a patent grant since 1979,
+and the innovation appears at least five times in subsequent patents. The subfields reviewed for each critical
+technology in the next few sections are also identified by classifying all available patents through an LLM. While
+García-Herrero et al (2025) focused on the general subfield evolution within each region and related cross-
+regional patterns, in this paper, we focus on the entities that file the highest numbers of radical novelties for
+each region and for each technology.
+First, however, we want to offer a few words of caution on the indicator we use. A radical novelty as we have
+defined it is meant to reveal which entities are patenting technologies that are likely to alter the trajectory of the
+technology frontier in the future. This has two implications.
+First, we look only at patented technology. While patents have been used extensively to quantify the innovative
+performance of an economy, we acknowledge that, just like every innovation metric, it comes with limitations.
+Some firms might not disclose their technology in a patent to guard secrecy. A prominent example is Coca Cola,
+which never filed a patent for its recipe. Some Chinese firms might not disclose their technological progress in
+order to avoid being sanctioned by the US government.
+Second, while we provide statistics on entity-level shares of radical novelties in total patent counts, we want to
+emphasise that our concept of radical novelty omits incremental innovations that would nevertheless be crucial
+in the advancement of the industry and a given firm’s commercial success. For example, the sum of sustained
+small-scale improvements in the efficiency of a photolithography machine might have significant commercial
+implications but may rely on technologically mature methods. Hence, related patents would not count as
+radically novel in our analysis. Indeed, we find that Chinese chip manufacturer SMIC files a lot of patents, but
+only a relatively small fraction of these patents appears to be radically novel. Photolithography machine
+producer ASML does not even appear among the top ten entities with the most radical novelties. What we are
+extracting with our concept of radical novelties are the patents that are likely to open up a new technology
+5 Because of inflated patent filing in China as a result of subsidy program mes, we have omitted Chinese domestically filed
+patents. We do not believe this to be an issue as the three technologies of concern are subject to fierce international
+competition, and hence, innovators are likely to file with patent offices which offer international validity. For a further
+discussion, see García-Herrero et al (2025).
+
+===== PDF_PAGE 4 =====
+3
+trajectory. These may become commercially valuable in the near or far future and may open up new potential for
+significant subsequent innovation.
+3 Some stylised facts on general patenting trends in critical technologies
+Patent filings in AI, quantum computing, and semiconductors help understand the innovation landscape in
+these critical technologies in China, the EU and the US.
+From 2019 to 2023, Chinese AI patents grew remarkably, rising from over 29,000 in 2019 to almost 63,000 in
+2023, well above the US number (Figure 1). However, as will become clear later, the seemingly high gap
+between China and the US in the number of AI patents disappears and actually runs in the US’s favour in many AI
+subfields when the novelty of each patent is taken into account. Entities in the EU tend to file the fewest patents,
+and our analysis of radical novelties presented later will not change this underwhelming finding.
+Figure 1: Published patents in artificial intelligence
+Source: WIPO.
+The US dominates in terms of numbers of semiconductor-related patents, with more than 210,000 annually
+(Figure 2). This apparent dominance in patent numbers becomes less evident relative to China when we control
+for the novelty of the patents. The EU ranks last in the number of chip patents, and the results are quite similar in
+the analysis to follow when controlling for the novelty of patents.
+
+===== PDF_PAGE 5 =====
+4
+Figure 2: Published patents in semiconductors
+Source: WIPO.
+As for quantum computing, the significantly higher number of patents overall indicates that the US dominates,
+with China and the EU trailing and with a recent growing gap between China and the EU (Figure 3). Our analysis
+controlling for the novelty of patents offers a more favourable view of the relative weights of China and the EU,
+although the US still dominates novel patents in quantum.
+Figure 3: Published patents in quantum computing
+Source: WIPO.
+
+===== PDF_PAGE 6 =====
+5
+4 How is the patenting landscape evolving in these critical technologies and which companies are most
+innovative?
+To answer this question, we proceed as follows: for each technology and each region, we extract the ten entities
+(firms, universities or research institutes) with the most radically novel patents published from 2019 to 2023.
+Throughout the text, we refer to them as ‘frontier innovators’. We then use the subfield classification developed
+in García-Herrero et al (2025) to further decompose the radically novel patents of each entity into technology-
+specific subfields. In what follows, we present the results of this analysis for each of the three technologies.
+4.1 Artificial intelligence
+Figure 4 shows the ten entities for each region that file the highest number of radically novel patents in AI. A few
+large technology incumbents from China and the US dominate the raw patent count, represented by the bars.
+However, the picture looks slightly different when considering the share of patents that count as radical novelty.
+For most entities this share is between 0.2 percent and 4 percent, with few less actively patenting firms with
+shares of above 4 percent. French robotics firm Stanley Robotics has the lowest total number patents published
+between 2019 and 2023 – 63 – but six of these patents were ‘radical novelties’. At the other end of the
+spectrum, Baidu ranks highest among the patent holders with 11,879 total patents, but only 0.33 percent of its
+patents contain a radically novel innovation. In what follows, we examine China, the US and EU separately,
+beginning with China.
+Figure 4: Patent count and share of radical novelties by entity (AI)
+Source: Bruegel based on WIPO.
+Figure 5 shows the most prominent Chinese patentees of radical novelties in AI and their shares of these
+patents among frontier innovators over time. Some well-known large Chinese technology corporations are
+
+===== PDF_PAGE 7 =====
+6
+among them, including Huawei, insurance firm Ping An, drone manufacturer Autel Robotics, WeChat parent firm
+Tencent, AI firm Baidu, TikTok parent firm ByteDance and smartphone and IoT device manufacturer Oppo. The
+most important frontier innovators are Huawei and Ping An. Ping An reached its highest share in 2021 with 29.94
+percent of radical novelties, and Huawei did so in 2023 with 34.09 percent. Tencent also increased its share
+from 7.96 percent in 2019 to 18.18 percent in 2023.
+Alongside these, three major Chinese robotics firms are among the frontier innovators. Autel Robotics is one of
+China’s major drone manufacturers, and its products are used for public security, agriculture and industrial
+purposes. It accounted for 25 percent of frontier innovators’ radical novelties in 2019, but its share dropped to
+6.38 percent by 2023. In July 2024, it was placed on the US Entity List
+6, restricting the firm’s access to US
+goods, software, and technology. UBTECH Robotics, a manufacturer of service robots, has gained ground in the
+patenting of radical novelties, appearing for the first time in the data in 2020 and reaching a share of 14.1
+percent in 2022. Finally, the operator of cloud services for robotics applications, CloudMinds Robotics, was a
+major innovator in 2019, accounting for 23.89 percent of the novelties among the top ten firms, but mostly
+disappeared from the data after 2020.
+Figure 5: Radical novelties in AI by entity (China, 2019 – 2023)
+Source: Bruegel based on WIPO.
+A more detailed picture emerges when looking at the subfields in which the frontier innovators are active. With
+the exception of Autel Robotics, almost all of the top ten AI innovators from China have made significant
+contributions in either ‘computer vision’ or ‘image processing’. Chief among these is ByteDance with 75 percent
+of its radical novelties in the two fields combined, followed by electronics display producer BOE Technology
+(64.51 percent), gaming and social media giant Tencent (63.93 percent) and Oppo (62.22 percent).
+6 See https://www.bis.gov/entity-list.
+
+===== PDF_PAGE 8 =====
+7
+
+In addition to firms that focus on the processing of visual data, robotics firms are drivers of AI innovation in
+China, although each of the three robotics firms in our subset specialises in somewhat different subfields.
+UBTECH Robotics’ radically novel patents are focused on both ‘computer vision’ (32.14 percent) and ‘robotics’
+(60.71 percent). Autel Robotics is the only firm in our data innovating significantly in ‘aerial vehicle technology’
+(46.67 percent of its radical novelties). CloudMinds Robotics, as an operator of robotics-related IT infrastructure,
+is more diversified, appearing also in ‘telecommunications’ (24.32 percent), ‘computer vision’ (18.92 percent),
+‘machine learning’ (8.11 percent), ‘data storage’ (5.41 percent) and ‘data analytics’ (5.41 percent).
+Among the more diversified firms are Huawei and Ping An, which are also the most dominant frontier innovators
+in this area. Huawei appears to be strong both in the processing of visual and textual data, with shares of 23.53
+percent in ‘computer vision’, 15.44 percent in ‘image processing’, 21.32 percent in ‘machine learning’, 10.24
+percent in ‘natural language processing’ (NLP) and smaller but still significant shares in ‘data analytics’ (7.35
+percent) and ‘telecommunications’ (4.41 percent). Ping An, with heavy investment in healthcare and
+telemedicine solutions, financial services and fraud detection, has a strong presence in ‘natural language
+processing’ (25.74 percent), ‘data analytics’ (11.88 percent) and ‘machine learning’ (11.88 percent). Finally,
+Baidu – as China’s largest search engine provider and a major innovator in autonomous driving – has filed a
+number of novel patents, split into the processing of visual data (33.34 percent in ‘computer vision’ and ‘image
+processing’) and the processing of textual and audio data (30.77 percent in ‘natural language processing’).
+Figure 6: Chinese frontier innovators and their related subfields (AI)
+
+Source: Bruegel based on WIPO.
+For the United States, Figure 7 shows the general trend in AI innovation. As can be seen from the line graph with
+the scale on the right-hand axis, despite the COVID-19 pandemic, and contrary to the trend in China, patenting of
+radical novelties in AI has strongly accelerated in the US. The number of radical novelties among all innovators in
+the field (not only those in our subset of frontier innovators) almost doubled from 298 in 2019 to 571 in 2023.
+Another striking feature is that the US frontier innovators are exclusively large incumbent technology firms,
+most notably Google, which accounted for a share of 23.86 percent in 2023, Microsoft (18.75 percent) and IBM
+
+===== PDF_PAGE 9 =====
+8
+
+(11.93 percent). Qualcomm significantly increased its share from 3.15 percent in 2019 to 20.45 percent in
+2023. Chip firms Nvidia and Intel also accounted for strong shares in AI-related frontier innovation in 2023,
+reaching 6.82 percent and 7.95 percent, respectively. Except for Qualcomm and IBM, the shares of innovation of
+US AI innovators have remained fairly stable.
+Figure 7: Radical novelties in AI by entity (US, 2019 – 2023)
+
+Source: Bruegel based on WIPO.
+The categorisation of this innovation into subfields is also telling (Figure 8). First, all frontier innovators hold
+significant shares of ‘machine learning’, with Micron holding the largest share, with precisely 50 percent of its
+radical novelties. Except for Amazon and IBM, companies’ shares of ‘computer vision’ are also substantial, and
+applications across the frontier innovators are broad. For example, Qualcomm, Nvidia and Micron, for which
+38.46 percent, 29.56 percent and 27.78 percent respectively of their radical novelties are in this field, are
+known to apply computer-vision techniques to autonomous driving, while Google (18.92 percent), IBM (9.89
+percent), Intel (30.56 percent) and Nvidia equally use computer vision to enhance their firms’ services for the
+processing of medical images.
+‘Natural language processing’ (NLP) is likewise a strong field, especially for Amazon, which has a share of 58.34
+percent of its radical novelties in related innovation, and to a lesser extent Oracle (31.25 percent) and IBM
+(31.87 percent). This is not surprising, as methods of NLP are offered as a business service by all of these firms.
+For instance, Amazon Web Services offers NLP techniques to businesses to analyse social-media content and
+customer feedback. Amazon also relies on NLP for its core business. In its e-commerce segment, NLP
+contributes to predicting customer types from search queries and optimising product recommendations
+(Amazon, 2023). IBM and Oracle specialise in the application of NLP for business communications, such as
+entity recognition, automatic updating of customer information and facilitated search queries for business
+databases. Amazon and IBM are also innovative in ‘data analytics’ more generally.
+
+===== PDF_PAGE 10 =====
+9
+
+Finally, Nvidia and Adobe are the only firms with a non-trivial share (9.09 percent and 6.67 percent of their
+radical novelties, respectively) in ‘generative AI’. Nvidia’s provision of its generative AI platform as a service for
+the development of OpenAI’s ChatGPT is in alignment with this. Given current market trends in the US, we expect
+this field to grow in importance when it comes to radical innovation.
+Figure 8: US frontier innovators and their related subfields (AI)
+
+Source: Bruegel based on WIPO.
+In the EU, as can be seen from the line graph in Figure 9, the absolute number of radical novelties by EU
+patentees remains modest compared to the US and China. However, it still grew from 70 in 2019 to 90 in 2023.
+Major frontier innovators are the two prominent telecommunication firms Ericsson and Nokia, with the former
+having overtaken the latter in recent years. Siemens has also maintained a substantial share among the top
+innovators, even though decreasing from 30.77 percent of the total to 20.83 percent in 2023. Since 2021, the
+French robotics firm Stanley Robotics has appeared, with around 8 percent of the European radical novelties in
+this field since then. The French aerospace and defence corporation Safran is also an important frontier
+innovator, with 15.38 percent of total EU radical novelties in 2020, but with a large reduction in 2023.
+
+===== PDF_PAGE 11 =====
+10
+Figure 9: Radical novelties in AI by entity (EU, 2019 – 2023)
+Source: Bruegel based on WIPO.
+A distinguishing feature of European innovation in AI is its relatively small concentration in advanced
+manufacturing and robotics, except for Stanley Robotics (Figure 10). This is particularly surprising given the
+EU’s long-standing comparative advantage in high-end manufacturing. Some firms also specialise in ‘machine
+learning’, notably Siemens (53.34 percent), Bosch (33.34 percent), Ericsson (33.34 percent), Nokia (33.34
+percent) and Accenture (40 percent). Carl Zeiss and the French research organisation Commissariat à l’énergie
+atomique et aux énergies alternatives (CEA) are innovating in ‘advanced medical technologies’, although the
+absolute number – only five and four radical novelties, respectively – is small. Accenture and SAP, major
+providers of business services, are also innovating in ‘natural language processing’, with shares of 30 percent
+and 40 percent of radical novelties in this field, respectively.
+A large fraction of European AI innovation is also driven by the EU’s two major telecommunication firms, Ericsson
+and Nokia. Both firms have invested in AI-driven optimisation of network performance, energy efficiency and
+reliability, which requires capabilities in ‘machine learning’ (in our data with 33.34 percent and 33.34 percent,
+respectively) and ‘telecommunications’ (33.34 percent and 16.67 percent) more generally. Both firms also
+innovate in ‘computer vision’ (11.11 percent and 27.28 percent). Finally, the French defence corporation Safran
+also focuses on the processing of visual data, namely ‘computer vision’ and ‘image processing’. This is not
+surprising given the firm’s capabilities in automated target recognition and ground and air surveillance.
+
+===== PDF_PAGE 12 =====
+11
+Figure 10: EU frontier innovators and their related subfields (AI)
+Source: Bruegel based on WIPO.
+4.2 Semiconductors
+We now move to our second critical technology, semiconductors. Figure 11 shows the raw patent counts in
+relation to the shares of radical novelty of frontier innovators in the three regions under observation. One striking
+feature is how many European firms are among the entities with the highest raw patent counts, represented by
+the bars. These include Bavarian optoelectronics firm Osram, Siemens, Infineon and Franco-Italian chip firm
+STMicroelectronics. Well-known semiconductor incumbents from the US also feature prominently in frontier
+innovation, including IBM, Micron, Intel and Texas Instruments. Chip manufacturer SMIC leads patenting for
+China, but only 0.29 percent of its patents are considered radically novel. Generally speaking, the share of
+radical novelties in total patents is low for large incumbent firms and usually does not exceed 1 percent. Some
+exceptions, however, are visible. Of the patents filed by Chinese consumer electronics giant TCL Technology,
+18.58 percent fall under our definition of radical novelty. Changxin and Yangtze Memory Technology have
+shares of 6.12 percent and 11.38 percent, respectively. We now take a deep dive into each region separately,
+starting with China.
+
+===== PDF_PAGE 13 =====
+12
+Figure 11: Patent count and share of radical novelties by entity (semiconductors)
+Source: Bruegel based on WIPO.
+Figure 12 shows the frontier innovators across the period of observation in China. As a general trend, the
+importance of China’s previously most innovative firm, TCL Technology, has diminished, from a share of 74.83
+percent in 2019 to a mere 18.13 percent in 2023. Since 2022, memory technology and chip fabrication have
+become more important7, which is represented by Changxin Memory (CXMT) and Yangtze Memory (YMTC), two
+of China’s fastest-growing semiconductor manufacturing firms. Both have benefitted from investment by
+China’s Big Fund in the past. CXMT – founded in 2016 as a private firm – received $724.18 million from the Big
+Fund in 2020 as part of a $2.38 billion deal with 13 co-investors (Pitchbook, 2024). Similarly, YMTC was founded
+by state-owned Tsinghua Unigroup in 2016 with an initial investment from the Big Fund, although the exact
+amount remains undisclosed. CXMT specialises in DRAM, while YMTC focuses on NAND Flash chips8. The visible
+7 Memory technology has traditionally presented a critical starting point for countries that aim at building a competitive
+semiconductor industry. Compared to logic-chip manufacturing, memory chips can be produced on mature 10 –20nm
+nodes and do not require the high design complexity of logic chips or cutting -edge equipment for manufacturing. The
+market is also highly commoditised and firms rely less on brand reputation. Hence, entry barriers into the industry are
+generally lower. Once human capital in memory-chip manufacturing is accumulated, firms can then transition into the
+fabrication of more advanced logic chips. Both Taiwan and South Korea have followed such a path. All in all, the large share
+of radical novelties by Chinese firms in chip manufacturing a nd the fact that such innovation stems from companies that
+have been supported by China’s semiconductor funds, sheds some light on the question of whether this industrial policy is
+working. A cost-benefit analysis of these policies, given their massive cost, is clearly beyond this paper’s scope .
+8 YMTC reached the technology frontier in 2019 when it announced the development of a 64 layers 3D -NAND. Its latest
+breakthrough came in 2023, when a 232-layer 3D NAND chip was discovered in a consumer device. See Tech Insights,
+‘China Does It Again, A NAND Memory Market First’, undated, https://www.techinsights.com/blog/china-does-it-again-nand-
+memory-market-first.
+
+===== PDF_PAGE 14 =====
+13
+progress of CXMT and YMTC is a positive signal for the effectiveness of China’s support projects (Semiconductor
+Big Funds). The data also reveals frontier innovators with lower shares of radical novelties, including Huawei,
+Ningbo Semiconductor International, Enkris Semiconductor and InnoScience. SMIC, while filing a large number
+of patents, almost disappeared from the ranks of the frontier innovators in 2023. Whether this is the result of US
+export controls is an intriguing question, but beyond the scope of this paper.
+Figure 12: Radical novelties in semiconductors by entity (China, 2019 - 2023)
+Source: Bruegel based on WIPO.
+Looking at the subfield specialisation of these entities reveals further details (Figure 13). The two
+optoelectronics giants BOE Optoelectronics and TCL Technology are mostly focused on ‘display technology’, with
+lower shares in ‘semiconductor manufacturing’ (11.12 percent and 19.06 percent, respectively). Huawei,
+despite accounting for a smaller share of China’s overall chip innovation, is highly diversified in its patented
+novelty portfolio, focusing on ‘display technology’ (13.21 percent), ‘MEMS’ (11.32 percent), ‘memory
+technology’ (16.99 percent), ‘power electronics’ (13.21 percent), ‘semiconductor manufacturing’ (16.99
+percent) and ‘semiconductor design’ (5.66 percent). CXMT and YMTC, not surprisingly, focus on ‘memory
+technology’ and ‘semiconductor manufacturing’, although CXMT has a higher share in the latter than the former.
+SMIC, while accounting for a small share of radical novelties in general, has focused on ‘semiconductor
+manufacturing’, with 62.5 percent of its total radical novelties in this field.
+Among the frontier innovators are also a few specialised firms, such as Shenzhen-based AAC Acoustic, which
+focuses on microphones and haptic feedback devices for consumer electronics and smart wearables, with
+84.85 percent of its radically novel patents in ‘MEMS’. Finally, InnoScience and Enkris are among the few firms
+dedicated exclusively to the production of specialised gallium nitride (GaN) chips. This is reflected in Enkris’s
+concentration of novelties in ‘semiconductor manufacturing’ (43.48 percent) and even more for InnoScience.
+GaN chips are a semiconductor class that can handle higher temperatures, voltages and frequencies than
+silicon-based chips. They expand the possibility frontier of radar systems and satellite communication systems
+
+===== PDF_PAGE 15 =====
+14
+for military purposes and also increase the efficiency of data centres and fast chargers (Shivakumar et al,
+2024). InnoScience has been sued by German semiconductor firm Infineon9 and US-based Efficient Power
+Conversion Corporation10 for IP infringement.
+Figure 13: Chinese frontier innovators and their related subfields (semiconductors)
+Source: Bruegel based on WIPO.
+We now move to the United States, the country in which semiconductors were first commercialised at large
+scale. As can be seen from the line graph in Figure 14, the annual number of novelties in semiconductors hovers
+around 240 to 260, with a sharp drop in 2023. This is lower than the average number of radical novelties by
+Chinese entities, but we show in the next section that US firms specialise in subfields with higher value-added.
+Among the frontier innovators in our sample are well-known global players in the semiconductor ecosystem,
+including IBM, Intel, Applied Materials, Micron, Texas Instruments and Qualcomm. Intel has lost share of radical
+novelties, dropping from 22.99 percent in 2019 to 9.09 percent in 2023. Over the same period, IBM and Applied
+Materials gained ground, reaching shares of radical novelties of 19.70 percent and 27.27 percent respectively in
+202311. Micron, Apple and Texas Instruments also have consistently strong presences, with shares of between
+5 percent and 20 percent annually. Microsoft, Lumileds, onsemi and Qualcomm account for smaller shares of
+radical novelties. Generally speaking, innovation stems from large incumbent firms.
+9 Michael Shapiro, ‘Infineon Accuses Rival of Copying Gallium Nitride Technology (1)’, Bloomberg Law, 14 March 2024,
+https://news.bloomberglaw.com/ip-law/infineon-accuses-rival-of-copying-gallium-nitride-technology.
+10 Christopher Yasiejko, ‘California Firm Defends Key Chip Patents From Chinese Rivals (2)’, Bloomberg Law , 17 July 2024,
+https://news.bloomberglaw.com/ip-law/california-firm-defends-key-chip-patents-from-chinese-rivals.
+11 As patents are published at most 18 months after being filed , this drop might be COVID-19-induced.
+
+===== PDF_PAGE 16 =====
+15
+
+Figure 14: Radical novelties in semiconductors by entity (US, 2019 - 2023)
+
+Source: Bruegel based on WIPO.
+In line with the fact that the US dominates the more R&D-heavy upstream segments of the global chip
+ecosystem, many firms, including Qualcomm, IBM, Intel, Apple and Micron, have significant shares of radical
+novelties in ‘semiconductor design’ (Figure 15). However, the striking feature of US frontier innovators is that
+they generally tend to be diversified in their portfolios. In some cases, this reflects a high degree of vertical
+integration, most notably for Micron and Intel. Both firms design and then manufacture parts of their
+semiconductors in-house. In other cases, the diverse patent portfolios reflect the increased trend towards co-
+development of the design and related downstream activities (such as manufacturing and packaging), in
+particular for special-purpose or new, cutting-edge frontier chips12.
+For instance, while it is not surprising that Apple has generated 34.16 percent of its radical novelties in ‘display
+technology’, it covers almost the entire value chain from ‘semiconductor design’, ‘semiconductor manufacturing’
+and ‘material sciences’ to ‘semiconductor packaging’. Similar patterns are noted with IBM and Qualcomm, which
+also have significant shares in ‘semiconductor manufacturing’ (22.73 percent and 10 percent, respectively)
+despite the fact that the two firms outsource the fabrication of their designs and other downstream activities to
+firms including TSMC, GlobalFoundries and Samsung. IBM, for example, has been active in developing EUV
+photoresist.
+While diversification is apparent, a few specialised firms exist among the frontier innovators as well. While exact
+numbers are not available, Applied Materials is a key supplier of semiconductor manufacturing equipment for
+the fabs of global chip manufacturers such as Intel, Micron, TSMC and Samsung. In our data, Applied Materials
+holds more than three quarters of its novelties in ‘semiconductor manufacturing’ (52.02 percent) and ‘materials
+science’ (25.51 percent). Finally, Lumileds, which has slightly increased its overall share among the frontier
+
+12 Boston Consulting Group, ‘Advanced Packaging Is Radically Reshaping the Chip Ecosystem’, 20 May 2024,
+https://www.bcg.com/publications/2024/advanced-packaging-is-reshaping-the-chip-industry.
+
+===== PDF_PAGE 17 =====
+16
+innovators in recent years, is highly specialised in ‘optoelectronics’, the subfield which accounts for 82.35
+percent of its radical novelties.
+Figure 15: US frontier innovators and their related subfields (semiconductors)
+Source: Bruegel based on WIPO.
+Finally, moving to the EU, Figure 16 shows the evolution of radical novelties for the EU’s frontier innovators.
+While EU entities appear dominant in the raw patent count, the number of novelties is quite low, with only about
+70 per year. When compared to the US company landscape, novelties patented by EU firms are more
+concentrated around a few large players, notably Infineon, STMicroelectronics and Osram Opto Semiconductors.
+In 2019, Osram accounted for 57.69 percent of all novelties, but dropped out of our subset in 2023.
+STMicroelectronics is consistently present, with its share fluctuating between 6.25 percent and 35 percent. At
+the same time, Infineon rose up the ranks from 11.54 percent in 2019 to 42.86 percent in 2023. All other
+companies hold rather small shares. Similar to the situation in the US, the overall number of novelties in our data
+dropped for the EU in 2023, to 68, down from 39, largely driven by Osram Optoelectronics. In 2022, the firm
+published 17 novelties but disappeared from our sample in 2023.
+
+===== PDF_PAGE 18 =====
+17
+Figure 16: Radical novelties in semiconductors by entity (EU, 2019 – 2023)
+Source: Bruegel based on WIPO.
+With regards to the subfield specialisations of the frontier innovators, the EU is focused on ‘MEMS’ and
+‘Optoelectronics’, in which several firms have a strong presence (Figure 17). Most of these firms derive
+substantial parts of their revenues from the automotive industry. For instance, Osram Opto Semiconductors
+made €1.1 billion (40.74 percent of its total revenue) from its automotive lighting segment in 2023, mostly from
+LED and lasers for vehicle lighting and driver-assistance systems. Our data shows that 46.94 percent of its
+radical novelties fall under ‘optoelectronics’. Another major innovator is Infineon, which is one of Germany’s
+major automotive suppliers and is specialised in automotive semiconductors, which accounted for €8,242
+million or 50.54 percent of its revenue in 2023. This is reflected in its portfolio of radically novel patents that
+reach 40 percent in ‘sensor technology’ and ‘MEMS’. Bosch also specialises in the two fields, with 14.29 percent
+of novelties in ‘sensor technology’ and 71.43 percent in ‘MEMS’. Not surprisingly, given its proximity to the
+Mercedes and Porsche HQ in Stuttgart, Bosch is also focused on the automotive industry. In 2023, it derived
+61.52 percent of its revenues from its ‘mobility solutions’ segment.
+Finally, STMicroelectronics is another strong innovator operating in various fields, deriving $6.7 billion (34.7
+percent) of its revenues from its automotive segment, alongside analogue chips and MEMS (24.4 percent) and
+microcontrollers (39.9 percent). Based on our results, it is the only major EU chip firm with a highly diversified
+innovation portfolio, holding a presence in ‘semiconductor design’ (19.05 percent), ‘MEMS’ (19.05 percent),
+‘semiconductor packaging’ (9.52 percent) and ‘memory technology’ (9.52 percent).
+
+===== PDF_PAGE 19 =====
+18
+Figure 17: EU frontier innovators and their related subfields (semiconductors)
+Source: Bruegel based on WIPO.
+4.3 Quantum computing
+The last of the three technologies covered by our analysis is quantum computing. As Figure 18 shows, the
+patent count is dominated by Chinese and US technology giants. Not surprisingly, IBM, Google, Microsoft and
+Intel are among the most active US patentees. On the Chinese side, Origin Quantum is taking the lead, with
+smaller numbers claimed by TCL and Huawei. Two significant features of the data are striking. First, unlike in AI
+and semiconductors, for frontier innovation in quantum computing, universities and dedicated research labs
+play crucial roles, despite not filing as many patents as large technology incumbents. Second, while the latter
+file large numbers of patents, the share of radical novelties in total patents is significantly higher for universities
+and start-ups, many of which are European, such as IQM Finland and Equal1.Labs. In what follows, we examine
+each region separately.
+
+===== PDF_PAGE 20 =====
+19
+Figure 18: Patent count and share of radical novelties by entity (quantum computing)
+Source: Bruegel based on WIPO.
+The evolution of quantum computing innovation in China has been relatively slow, with a peak in the number of
+radical novelties in 2021 (27) and a decline since then to barely 21 (Figure 19). The smaller number of
+novelties is in line with the relatively scarcer research funds available for quantum compared to AI. However, the
+recent pick-up in quantum research, given the need for faster, more efficient computer support for AI, should
+have led to an increase in the number of novelties, which is not the case for China. According to the distribution
+of radical technologies we find in our dataset, Chinese innovation in quantum computing is dominated by
+several large players, most notably Huawei, Origin Quantum and, more recently, Tencent. Several of the smaller
+innovators are universities and research institutions, including the state-owned CETC, the South China Normal
+University and Shenzhen Polytechnic.
+Two of the main innovators, QuantumCTek and Origin Quantum, are located in Hefei, which is often viewed as a
+model city for local government-guided development. The city has developed into a cluster for firms across
+various parts of the quantum computing supply chain
+13. Origin Quantum has become the largest quantum
+computing innovator, with a 78.51 percent share of radical novelties in 2023, up from zero in 2020. In January
+13 The Economist, ‘An unlikely tech cluster exemplifies China’s economic vision’, 5 August 2023,
+https://www.economist.com/finance-and-economics/2023/08/05/an-unlikely-tech-cluster-exemplifies-chinas-economic-
+vision.
+
+===== PDF_PAGE 21 =====
+20
+2024, Origin Quantum announced the introduction of Origin Wukong, a 72-qubit quantum computer14. The other
+Hefei-based firm in our sample, QuantumCTek, was founded in 2009 and produces hardware and software for
+quantum secure communication. In July 2022, it was selected as one of the 10,000 Little Giants, an extensive
+government programme to foster the most innovative industry suppliers and equipment manufacturers (Brown
+et al, 2023; García-Herrero and Schindowski, 2024). Finally, Alibaba appears among the frontier innovators,
+although the firm officially scrapped its quantum computing segment in 202315, which means that it should
+have exited the market by now.
+Figure 19: Radical novelties in quantum computing by entity (China, 2019 – 2023)
+Source: Bruegel based on WIPO.
+Figure 20 displays the subfields in which Chinese quantum computing firms are active. Huawei, as the largest
+innovator, has a strongly diversified quantum innovation portfolio, including ‘quantum communication’,
+‘quantum cryptography’, ‘quantum hardware’ and ‘quantum photonics’. Origin Quantum is focused on the
+physical components of quantum computing, with ‘quantum hardware’ and ‘quantum systems and control’
+accounting together for 88.23 percent of its radical novelties. QuantumCTek, the other Hefei-based firm, is
+focused mainly on ‘quantum cryptography’ and ‘quantum communication’, with shares of 83.34 percent and
+16.67 percent, respectively. Tencent is also focused on the physical aspects of quantum computing, namely
+‘quantum hardware’ and ‘quantum systems and control’, while Shenzhen Polytechnic focuses on ‘quantum
+14 Quantum Zeitgeist, ‘China Quantum Computer ‘Origin Quantum’: Superconducting Quantum Computer has 72 Qubits in
+Boost for Chinese Technology’, 7 January 2024, https://quantumzeitgeist.substack.com/p/china- quantum-computer-
+origin-wukong.
+15 Matt Swayne, ‘Reports: China’s Alibaba Shuts Down Quantum Lab’, The Quantum Insider, 25 November 2023,
+https://thequantuminsider.com/2023/11/25/reports-chinas-alibaba-shuts-down-quantum-lab/.
+
+===== PDF_PAGE 22 =====
+21
+cryptography’, ‘quantum cybersecurity’ and ‘quantum systems and control’, with shares of 28.57 percent, 42.86
+percent and 28.57 percent, respectively.
+Generally speaking, the data highlights China’s multifaceted quantum computing landscape. Chinese innovators
+are active in many fields at the same time, instead of carving distinct niches. Hardware producers such as Origin
+Quantum, Tencent, Shenzhen Polytechnic and Alibaba are complemented by firms specialising in ‘quantum
+communication’, ‘quantum cryptography’ or a union of those, among which are CETC, Huawei, Hentong Quasky
+Quantum and QuantumCTek. In recent years, however, as reflected by the dominance of Origin Quantum and
+Tencent, China’s innovative dynamism in quantum computing has shifted to its physical aspects. These are
+generally considered the most critical but challenging aspects of quantum computing innovation because of the
+difficulties of maintaining the superposition of the quantum system (dubbed ‘coherence’), the key necessary
+condition for operating a quantum computer (NAS, 2019).
+Figure 20: Chinese frontier innovators and their related subfields (quantum computing)
+Source: Bruegel based on WIPO.
+In terms of the evolution of quantum computing innovation in the US (Figure 21), among the top ten quantum
+computing innovators are well-known technology firms such as Intel and IBM, which hold major shares of radical
+novelties. IBM clearly stands out as the most innovative frontier firm and has consistently accounted for a share
+between 30 percent and 50 percent. This is not surprising given that IBM reached a global milestone in the
+evolution of quantum computing with the introduction of the Quantum System One in 2019, the first commercial
+circuit-based quantum computer
+16. Intel’s share decreased from 40 percent in 2019 to a still formidable 16
+percent in 2023.
+16 Rosalie Chan, ‘IBM unveils the world's first quantum computer that businesses can actually use to solve previously
+impossible problems’, Business Insider, 13 January 2019, https://www.businessinsider.com/ibm-unveils-ibm-q-system-
+one-the-first-commercial-quantum-computer-2019-1.
+
+===== PDF_PAGE 23 =====
+22
+A few newcomers are also noticeable. Among the innovators with growing shares is IonQ, founded in 2015 to
+produce hardware for trapped-ion quantum computing. According to IonQ’s official communication, its core
+technology is licensed from the University of Maryland, close to which IonQ is based, and which also appears
+independently among the frontier innovators. The two founders have a decade-long history of fundamental
+research in the field, highlighting the symbiotic relationship between universities and start-ups, for which the US
+has traditionally been famous (Mowery and Sampat, 2005). IonQ became the first publicly traded pure-play
+quantum computing firm in 202117.
+Another entry into the quantum computing market is Zapata Computing, founded in 2017 by a team of Harvard
+scientists, and focused on the intersection of quantum computing and generative AI. The examples of IBM and
+Intel on the one hand, and Zapata Computing and IonQ on the other, reflect well the nature of the emerging
+quantum computing industry in the US. Innovation plays on both the well-known strength of large US technology
+incumbents and the nexus between university-based research and start-up creation.
+Figure 21: Radical novelties in quantum computing by entity (US, 2019 – 2023)
+Source: Bruegel based on WIPO.
+In terms of subfields, the top ten US innovators focus mainly on the physical components of quantum
+computing, with all key firms having a significant share of their radical novelties in either ‘quantum hardware’ or
+‘quantum systems and control’ (Figure 22). Since the overall advancement of quantum computing depends on
+quantum hardware and control systems, the amount of frontier innovation in these areas reflects the US’s
+leadership in quantum computing more generally.
+17 Business Wire, ‘IonQ To Become The First Publicly Traded Pure-Play Quantum Computing Company’, 8 March 2021,
+https://www.businesswire.com/news/home/20210308005321/en/IonQ -To-Become-The-First-Publicly-Traded-Pure-Play-
+Quantum-Computing-Company.
+
+===== PDF_PAGE 24 =====
+23
+Still, some of the entities also specialise in specific aspects or applications of quantum computing. The
+University of Maryland holds a large share of radical novelties in ‘quantum photonics’ (22.22 percent) and
+‘quantum networking’ (44.44 percent). Intel is innovating in ‘quantum semiconductor technology’, with a share
+of 38.30 percent of its radical novelties. The firm has made advances in developing silicon-based quantum
+computing processors, significant for the development of general-purpose quantum computers (Neyens et al,
+2022). IonQ, Zapata Computing and, to a lesser extent, Microsoft are also innovative in ‘quantum chemistry’, the
+application of quantum mechanics to chemical systems. IBM subsidiary Red Hat holds one third of its radical
+novelties in ‘quantum communication’. And finally, Amazon innovates in ‘quantum cybersecurity’, which
+accounts for a share of 20 percent of its novelties. Overall, the strong focus on quantum hardware and control
+systems reflects the intensity of the race towards the wide adoptability of quantum computers in the US.
+Figure 22: US frontier innovators and their related subfields (quantum computing)
+Source: Bruegel based on WIPO.
+Moving to the EU, semiconductors are the critical technology in which Europe is closest to the US and China. As
+Figure 23 shows, the EU is almost on par with China in the number of radical novelties filed in quantum
+computing, reaching a total of 126 novelties during the period of observation compared to 130 from Chinese
+firms. Interestingly, the key European players in such innovation are (mostly public) research institutions and
+not companies like in the US, while China lies in between. In other words, a significant amount of the top
+innovation in quantum computing in the EU occurs outside of the commercial space.
+For instance, one of the quickly growing innovators is the Delft University of Technology in the Netherlands,
+whose share of novelties among the top ten innovators in the EU rose from 15.79 percent in 2021 to 30.43
+percent in 2023. Two Finnish firms are among the top innovators, including incumbent telecommunications firm
+Ericsson and the entrant firm IQM Finland, the latter founded in 2018 and now dominating radical novelties in
+European quantum innovation with shares of 30.77 percent and 30.43 percent in 2022 and 2023, respectively.
+Other firms include French state-owned enterprise Bull (now Atos) and the government-funded research
+
+===== PDF_PAGE 25 =====
+24
+organisation Commissariat à l’énergie atomique et aux énergies alternatives (CEA), which jointly developed the
+supercomputer Tera 1000. Interestingly, some of the most relevant innovators, like Rhine-Westphalian
+Technical University Aachen (RWTH Aachen), have moved from being the largest producers of radical novelties
+in quantum to virtually disappearing.
+Figure 23: Radical novelties in quantum computing by entity (EU, 2019 – 2023)
+Source: Bruegel based on WIPO.
+Similarly to the US, the EU’s focus on innovation in quantum computing is strongly focused on ‘quantum
+hardware’ and ‘quantum systems and control’ (Figure 24). For instance, RWTH Aachen holds two thirds of its
+radical novelties in ‘quantum hardware’, and the rest with equal shares in ‘quantum semiconductor technology’
+and ‘quantum photonics’. Bull, HQS Quantum Simulations and IQM Finland are nearly entirely focused on the two
+subfields.
+Next to innovators in quantum computing equipment, Ericsson and the Delft University of Technology hold fairly
+diversified novelty portfolios. Ericsson is innovating in ‘quantum communication’ (with 20 percent of its
+novelties filed there), ‘quantum machine learning’ (20 percent), ‘quantum networking’ (20 percent) and
+‘quantum systems and control’ (40 percent). Although all these subfields are crucial for Ericsson’s core
+business activities, the total amount of novel patents it has filed so far in quantum (5) remains small. Delft
+University of Technology innovates equally in ‘quantum communication’, with one third of its radical novelties in
+this subfield, and the rest falling into ‘quantum hardware’ (25 percent), ‘quantum networking’ (25 percent) and
+‘quantum semiconductor technology’ (16.67 percent). Among the specialised firms, the French state-owned
+research institute CEA and Irish start-up Equal1 Labs focus on ‘quantum semiconductor technology’, with shares
+of 45.45 percent and 75 percent within their respective novelty portfolios. Compsecur innovates exclusively in
+‘quantum cryptography’, with all of its five radical novelties in this subfield. The Polytechnic University of
+Valencia filed all of its eight radical novelties in ‘quantum photonics’. What is remarkable about European
+
+===== PDF_PAGE 26 =====
+25
+quantum computing is how geographically dispersed it is. The top-ten innovators are from eight different EU
+countries.
+Figure 24: EU frontier innovators and their related subfields (quantum computing)
+Source: Bruegel based on WIPO.
+5 Conclusions
+Competition in critical technologies is attracting increasing attention not only because of their foundational
+nature for other types of innovation but also because of their importance in the technological competition
+between the US and China. To better understand which countries and companies are leading in these
+technologies, we use the methodology developed by García Herrero et al (2025) to identify radical novelties (ie
+novel patents) in AI, semiconductors and quantum computing. Their findings pointed to the US dominating AI, at
+least in terms of radical novelties, followed by China and with the EU in a far distant third position. However,
+China appears to have come up with more novel patents in the semiconductor sector than the US, although US
+firms dominate the highest value-added sectors, such as design. As for quantum, the US clearly leads frontier
+innovation, even more than for AI. China and the EU follow behind and, unlike for AI, the EU is on par with China in
+terms of radical novelties.
+In this paper, we look into the entities that are patenting the radical novelties and find that they are quite
+different across geographies. In the US, technology companies dominate the three critical technologies and with
+very high concentration in a few names. In fact, IBM, Intel and Microsoft rank in the top 10 in terms of the
+numbers of novel patents in each of the three critical technologies. In China, only Huawei produces a similarly
+large number of radical novelties for all three critical technologies (chips, quantum and AI). In Europe, the
+French Alternative Energies and Atomic Energy Commission (CEA) and Ericsson are both in the category of triple
+frontier innovator. Frontier innovators in the field in which the EU competes more equally, namely quantum, are
+mostly research centres and not companies like in the US. China lies somewhat in between in all three domains,
+although with fewer companies for quantum.
+
+===== PDF_PAGE 27 =====
+26
+
+Finally, looking at how companies have evolved in terms of patents in the subfields of AI, semiconductors and
+quantum computing, China is found to have increased relentlessly, not only the number of critical novelties but
+also their relevance when looking at performance across subfields. For example, in the subfield of quantum
+computing, China has shifted from ‘quantum cryptography’ and ‘quantum cybersecurity’ to the more
+technologically challenging fields of ‘quantum hardware’ and ‘quantum systems and control’. Similarly, in
+semiconductors, China has moved away from innovating predominantly in ‘display technology’ to defining the
+technology frontier in ‘memory technology’ and ‘semiconductor manufacturing’. An interesting finding is the
+relatively more volatile presence of frontier innovators for China, with some key innovators disappearing from
+the list while new ones suddenly appear at the top of the list. This could be related to Chinese companies having
+been included in the US entity list, but more research is needed to test this hypothesis.
+All in all, for AI, US tech companies remain dominant in terms of critical (patented) novelties for ‘machine
+learning’, ‘natural language processing’, ‘cybersecurity’ and ‘generative AI’. China focuses mostly on the
+processing of visual data and robotics, two fields that are technologically closely related and that have military
+applications. The EU’s stronger field, namely quantum computing, is dominated by research centres (mostly
+public) and is also very diverse and geographically dispersed, which might be a disadvantage in terms of
+commercialisation. In semiconductors and AI, EU companies patent far fewer radical novelties than Chinese or
+American companies. This is even the case in subfields in which the EU used to have a longstanding
+comparative advantage, such as robotics.
+
+===== PDF_PAGE 28 =====
+27
+
+References
+Agrawal, A., J.S. Gans and A. Goldfarb (2019) ‘Exploring the impact of artificial Intelligence: Prediction versus
+judgment’, Information and Economic Policy 47: 1-6
+Brown, A., F. Chimits and G. Sebastian (2023) Accelerator State: How China fosters ‘Little Giant’ companies,
+Mercator Institute for China Studies
+García-Herrero, A., R. Schindowski and M. Krystyanczuk (2025) ‘Radical novelties in critical technologies: How
+do China, the EU, and the US fare?’ Working Paper, Bruegel
+García-Herrero, A. and M. Krystyanczuk (2024) ‘How Does China Conduct Industrial Policy: Analyzing Words
+Versus Deeds’, Journal of Industry, Competiton and Trade 24(10)
+Kaku, M. (2023) Quantum Supremacy: How the Quantum Computer Revolution Will Change Everything,
+Doubleday
+Mowery, D.C. and B.H. Sampat (2005) ‘The Bayh-Dole Act of 1980 and University-Industry Technology Transfer: A
+Model for Other OECD Governments?’ Journal of Technology Transfer 30(1-2): 115-127.
+NAS (2019) Quantum Computing: Progress and Prospects, National Academies of Sciences, Engineering, and
+Medicine, Washington, DC: The National Academies Press
+Neyens, S., O.K. Zietz, T.F. Watson, F. Luthi, A. Nethwewala, H.C. George … J.S. Clarke (2024) ‘Probing single
+electrons across 300-mm spin qubit wafers’, Nature 629: 80–85
+Nordhaus, W.D. (2021) ‘Are We Approaching Economic Singularity? Information Technology and the Future of
+Economic Growth’, American Economic Journal: Macroeconomics 13(1): 299-332
+Scharre, P. (2024) Four Battlegrounds: Power in the Age of Artificial Intelligence, W.W. Norton & Company
+Shivakumar, S., J. Yoon and T. Sirkar (2024) ‘Gallium Nitride: A Strategic Opportunity for the Semiconductor
+Industry’, Commentary, 20 May, Center for Strategic and International Studies
+
+===== PDF_PAGE 29 =====
+28
+
+Appendix
+US top patentees company list
+Abbreviation Full name Website
+Adobe Adobe Inc. www.adobe.com
+Amazon Amazon.com, Inc. www.amazon.com
+Apple Apple Inc. www.apple.com
+Applied Materials Applied Materials, Inc. www.appliedmaterials.com
+Google Google LLC www.google.com
+IBM International Business Machines Corporation www.ibm.com
+Intel Intel Corporation www.intel.com
+IonQ IonQ ionq.com
+Lumileds Lumileds http://www.lumileds.com/
+Micron Micron Technology, Inc. https://www.micron.com/
+Microsoft Microsoft Corporation https://www.microsoft.com/
+Nvidia Nvidia Corporation https://www.nvidia.com/
+onsemi ON Semiconductor Corporation https://www.onsemi.com/
+Oracle Oracle Corporation https://www.oracle.com/
+Qualcomm Qualcomm Incorporated https://www.qualcomm.com/
+Red Hat Red Hat, Inc. https://redhat.com/
+Rigetti Rigetti Computing, Inc. http://rigetti.com/
+Texas Instruments Texas Instruments Incorporated https://www.ti.com/
+UOM University of Maryland, College Park https://umd.edu/
+Zapata Computing Zapata Computing Holdings Inc. https://www.zapatacomputing.com/
+
+China top patentees company list
+Abbreviation Full name Website
+AAC Acoustic AAC Technologies Holdings Inc. https://www.aactechnologies.com/
+Autel Robotics Autel Robotics Co., Ltd. https://www.autelrobotics.com/
+Baidu Baidu, Inc. https://www.baidu.com/
+BOE Optoelectronics Beijing BOE Optoelectronics Technology Co., Ltd https://www.boe.com/en/
+BOE Technology Group BOE Technology Group Co., Ltd. https://www.boe.com/en/
+ByteDance ByteDance Ltd. https://www.bytedance.com/en/
+CETC China Electronics Technology Group Corporation https://en.cetc.com.cn/
+Changxin Memory ChangXin Memory Technologies https://www.cxmt.com/en/
+CloudMinds Robotics CloudMinds Technologies Co. Ltd https://cloudminds.com/
+Enkris Semiconductor Enkris Semiconductor Inc. https://en.enkris.com/
+Hengtong Qask Hengtong Qasky Quantum Inf. Research Institute Co., Ltd. https://www.hengtonggroup.com/
+Huawei Huawei Technologies Co., Ltd. https://www.huawei.com/en/
+InnoScience InnoScience Technology Holding Co., Ltd. https://www.innoscience.com/
+Ningbo Semiconductor Ningbo Semiconductor International Corporation https://www.nsemii.com/#/index
+Oppo OPPO Guangdong Mobile Telecommunications Corp., Ltd. https://www.oppo.com/en/
+Origin Quantum Origin Quantum Computing Technology (Hefei) Co., Ltd. https://originqc.com.cn/
+Ping An Ping An Insurance (Group) Company of China, Ltd. https://group.pingan.com/
+
+===== PDF_PAGE 30 =====
+29
+
+QuantumCTek National shield quantum https://www.quantum-info.com/
+Jingtai Technology Shenzhen Jingtai LCD Technology Co., Ltd https://www.xtalpi.com/
+Shenzhen Polytechnic Shenzhen Polytechnic https://english.szpu.edu.cn/
+SMIC Semiconductor Manufacturing International Corporation https://www.smics.com/en/
+SCNU South China Normal University https://english.scnu.edu.cn/
+TCL Technology TCL Technology Group Corp. https://www.tcltech.com/en
+Tencent Tencent Holdings Ltd. https://www.tencent.com/en-us/
+UBTECH Robotics UBTECH Robotics Inc. https://ubtrobot.com/
+Yangtze Memory Yangtze Memory Technologies Co., Ltd. https://www.ymtc.com/
+
+EU top patentees company list
+Abbreviation Full name Country Website
+Accenture Accenture plc Ireland https://www.accenture.com/
+Aledia Aledia France https://www.aledia.com/en/
+ASM IP Holding Advanced Semiconductor Materials Netherlands https://www.asm.com/
+Bull Bull SAS France http://www.bull.com/
+Carl Zeiss Carl Zeiss AG Germany https://www.zeiss.com/
+CEA French Alternative Energies and Atomic
+Energy Commission France https://www.cea.fr/
+Compsecur CompSecur sp. Poland https://compsecur.pl/
+DUT Delft University of Technology Netherlands https://www.tudelft.nl/en/
+equal1.labs Equal1 Ireland https://www.equal1.com/
+Ericsson Ericsson Limited Sweden https://www.ericsson.com/en
+Infineon Infineon Technologies AG Germany https://www.infineon.com/
+IQM Finland IQM Quantum Computers Finland https://www.meetiqm.com/
+Nexperia Nexperia Netherlands https://www.nexperia.com/
+Nokia Nokia Corporation[ Finland https://nokia.com/
+Osram Opto Osram Opto Semiconductors GmbH Germany https://ams-osram.com/
+Polytechnic University Valencia Polytechnic University Spain https://www.upv.es/index-en.html
+Robert Bosch Robert Bosch GmbH Germany https://www.bosch.com/
+RWTH Aachen RWTH Aachen University Germany https://www.rwth-aachen.de/
+Safran Safran S.A. France https://safran-group.com/
+SAP SAP SE Germany https://www.sap.com/
+Siemens Siemens AG Germany https://www.siemens.com/
+Stanley Robotics Stanley Robotics France https://www.stanley-robotics.com/
+STMicroelectronics STMicroelectronics NV Switzerland https://www.st.com/
+
+===== PDF_PAGE 31 =====
+© Bruegel 2025. All rights reserved. Short sections, not to exceed two paragraphs, may be quoted in the
+original language without explicit permission provided that the source is acknowledged. Opinions expressed
+in this publication are those of the author(s) alone.
+Bruegel, Rue de la Charité 33, B-1210 Brussels
+(+32) 2 227 4210
+info@bruegel.org
+www.bruegel.org
+WORKING PAPER|ISSUE 03|2020

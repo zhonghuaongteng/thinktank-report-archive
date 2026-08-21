@@ -1,0 +1,228 @@
+
+===== PDF_PAGE 1 =====
+When the European Commission in April 2021 proposed an AI Act to establish
+harmonised EU-wide harmonised rules for artificial intelligence, the draft law might
+have seemed appropriate for the state of the art. But it did not anticipate OpenAI’s
+release of the ChatGPT chatbot, which has demonstrated that AI can generate text at a
+level similar to what humans can achieve. ChatGPT is perhaps the best-known example
+of generative AI, which can be used to create texts, images, videos and other content.
+Generative AI might hold enormous promise, but its risks have also been flagged up .
+These include (1) sophisticated disinformation (eg deep fakes or fake news) that could
+manipulate public opinion, (2) intentional exploitation of minorities and vulnerable
+groups, (3) historical and other biases in the data used to train generative AI models
+that replicate stereotypes and could lead to output such as hate speech, (4)
+encouraging the user to perform harmful or self-harming activities, (5) job losses in
+certain sectors where AI could replace humans, (6) ‘hallucinations’ or false replies,
+which generative AI can articulate very convincingly, (7) huge computing demands and
+high energy use, (8) misuse by organised crime or terrorist groups, and finally, (9) the
+use of copyrighted content as training data without payment of royalties.
+The author gratefully acknowledges extensive helpful feedback from Bertin Martens
+and Kai Zenner.
+5
+Adapting the EuropeanUnion AI Act to deal withgenerative artiﬁcialintelligence
+The European Union’s draft AI Act already needs to be
+revised to account for the opportunities and harms of
+generative AI.
+J. Scott Marcus
+ANALYSIS 24/2023 / 19 July 2023
+
+===== PDF_PAGE 2 =====
+Adapting the European Union AI Act to deal with generative artificial intelligence 2
+To address those potential harms, it will be necessary to come to terms with the
+foundation models that underlie generative AI. Foundation models, or models through
+which machines learn from data, are typically trained on vast quantities of unlabelled
+data, from which they infer patterns without human supervision. This unsupervised
+learning enables foundation models to exhibit capabilities beyond those originally
+envisioned by their developers (often referred to as ‘emergent capabilities’).
+The evolving AI Act
+The proposed AI Act (European Commission, 2021), which at time of writing is still to
+be finalised between the EU institutions6, is a poor fit for foundation models. It is
+structured around the idea that each AI application can be allocated to a risk category
+based on its intended use. This structure largely reflects traditional EU product liability
+legislation, in which a product has a single, well-defined purpose. Foundation models
+however can easily be customised to a great many potential uses, each of which has its
+own risk characteristics.
+In the ongoing legislative work to amend the text, the European Parliament has
+proposed that providers of foundation models perform basic due diligence on their
+offerings. In particular, this should include:
+Risk identification. Even though it is not possible to identify in advance all potential
+use cases of a foundation model, providers are typically aware of certain vectors of
+risk. OpenAI knew, for instance, that the training dataset for GPT-4 featured certain
+language biases because over 60 percent of all websites are in English. The
+European Parliament would make it mandatory to identify and mitigate reasonably
+foreseeable risks, in this case inaccuracy and discrimination, with the support of
+independent experts.
+Testing. Providers should seek to ensure that foundation models achieve
+appropriate levels of performance, predictability, interpretability, safety and
+cybersecurity. Since the foundation model functions as a building block for many
+downstream AI systems, it should meet certain minimum standards.
+Documentation. Providers of foundation models would be required to provide
+substantial documentation and intelligible usage instructions. This is essential not
+only to help downstream AI system providers better understand what exactly they
+are refining or fine-tuning, but also to enable them to comply with any regulatory
+requirements.
+Bruegel analysis 24/2023 / 19 July 2023
+
+===== PDF_PAGE 3 =====
+Adapting the European Union AI Act to deal with generative artificial intelligence 3
+Room for improvement
+These new obligations, if adopted in the final AI Act, would be positive steps, but lack
+detail and clarity, and would consequently rely heavily on harmonised standards,
+benchmarking and guidelines from the European Commission. They also risk being
+excessively burdensome. A number of further modifications could be put in place.
+Risk-based approach
+Applying all obligations to the full extent to every foundation model provider, both large
+and small, is unnecessary. It might impede innovation and would consolidate the
+market dominance of firms that already have a considerable lead in FMs, including
+OpenAI, Anthropic and Google Deepmind . Even without additional regulatory
+burdens, it might be very hard for any companies outside of this group to match the
+resources and catch up with the FM market leaders.
+A distinction could therefore be made between systemically important and non-
+systemically important FMs, with significantly lower burdens for the latter. This would
+be in line with the approach taken by the EU Digital Services Act (DSA), which notes
+that “it is important that the due diligence obligations are adapted to the type, size and
+nature of the … service concerned.” The DSA imposes much more stringent
+obligations on certain service providers than on others, notably by singling out very
+large online platforms (VLOPs) and very large online search engines (VLOEs).
+There are two reasons for differentiating between systemic and non-systemic
+foundation models and only imposing the full weight of mandatory obligations on the
+former. First, the firms developing systemic foundation models (SFMs) will tend to be
+larger, and better able to afford the cost of intense regulatory compliance. Second, the
+damage caused by any deviation by a small firm with a small number of customers will
+tend to be far less than that potentially caused by an SFM.
+There are useful hints in the literature (Bommasani et al, 2023; Zenner, 2023) as to
+criteria that might be used to identify SFMs, such as the data sources used, or the
+computing resources required to initially train the model. These will be known in
+advance, as will the amount of money invested in the FM. These pre-market
+parameters presumably correlate somewhat with the future systemic importance of a
+particular FM and will likely also correlate with the ability of the provider to invest in
+7
+Bruegel analysis 24/2023 / 19 July 2023
+
+===== PDF_PAGE 4 =====
+Adapting the European Union AI Act to deal with generative artificial intelligence 4
+regulatory compliance. The degree to which an FM provider employs techniques that
+facilitate third-party access to their foundation models and thus independent
+verification, such as the use of open APIs, or open source, or (especially for firms that
+do not publish their source code) review of the code by independent, vetted experts,
+might also be taken into account. Other, post-deployment parameters, including the
+number of downloads, or use in downstream services or revenues, can only be
+identified after the product has established itself in the market.
+Lesser burdens
+Notwithstanding the arguments for a risk-based approach, even small firms might
+produce FMs that work their way into applications and products that reflect high-risk
+uses of AI. The principles of risk identification, testing and documentation should
+therefore apply to all FM providers, including non-systemic foundation models, but the
+rigour of testing and verification should be different.
+Guidance, perhaps from the European Commission, could identify what these reduced
+testing and verification procedures should be for firms that develop non-systemic
+foundation models. Obligations for testing, analysis, review and independent
+verification could be much less burdensome and intensive (but not less than
+reasonably stringent) for providers of non-systemic FMs.
+This kind of differentiation would allow for a more gradual and dynamic regulatory
+approach to foundation models. The list of SFMs could be adjusted as the market
+develops. The Commission could also remove models from the list if they no longer
+qualify as SFMs.
+Use of data subject to copyright
+Even though the 2019 EU Copyright Directive provides an exception from copyright for
+text and data mining (Article 4(1) of Directive 2019/790), which would appear in
+principle to permit the use of copyrighted material for training of FMs, this provision
+does not appear in practice to have resolved the issue. The AI Act should amend the
+Copyright Directive to clarify the permitted uses of copyrighted content for training
+FMs, and the conditions under which royalties must be paid.
+Third-party oversight
+Bruegel analysis 24/2023 / 19 July 2023
+
+===== PDF_PAGE 5 =====
+Adapting the European Union AI Act to deal with generative artificial intelligence 5
+The question of third-party oversight is tricky for the regulation of FMs. Is an internal
+quality management system sufficient? Or do increasingly capable foundation models
+pose such a great systemic risk that pre-market auditing and post-deployment
+evaluations by external experts are necessary (with protection for trade secrets)?
+Given the scarcity of experts, it will be important to leverage the work of researchers
+and civil society to identify risks and ensure conformity. A mandatory SFM incident
+reporting procedure that could draw on an AI incident reporting framework under
+development at the Organisation for Economic Co-operation and Development  might
+be a good alternative.
+Internationally agreed frameworks
+Internationally agreed frameworks, technical standards and benchmarks will be
+needed to identify SFMs. They could also help document their environmental impacts.
+Until now, the development of large-scale FMs has demanded enormous amounts of
+electricity and has the potential to create a large carbon footprint (depending on how
+the energy is sourced). Common indicators would allow for comparability, helping
+improve energy efficiency throughout the lifecycle of an SFM.
+Safety and security
+Providers of SFMs should be obliged to invest heavily in safety and security.
+Cyberattacks on cutting-edge AI research laboratories pose a major risk; nonetheless,
+and despite rapidly growing investments in SFMs, the funding for research in AI
+guardrails and AI alignment is still rather low. The internal safety of SFMs is crucial to
+prevent harmful outputs. External security is essential, but it alone will not be sufficient
+– the possibility of bribes in return for access to models should be reduced as much as
+possible.
+Conclusion
+The EU is likely to be a major deployer of generative AI. This market power may help
+ensure that the technology evolves in ways that accord with EU values.
+8
+Bruegel analysis 24/2023 / 19 July 2023
+
+===== PDF_PAGE 6 =====
+Adapting the European Union AI Act to deal with generative artificial intelligence 6
+The AI Act is potentially ground-breaking but more precision is needed to manage the
+risks of FMs while not impeding innovation by smaller competitors, especially those in
+the EU. Unless these issues are taken into account in the finalisation of the AI Act, there
+is a risk of significantly handicapping the EU’s own AI developers while failing to install
+the adequate safeguards.
+References
+Bender, E., T. Gebru, A. McMillan-Major and S. Shmitchell (2021) ‘On the Dangers of
+Stochastic Parrots: Can Language Models Be Too Big?’ FAccT '21: Proceedings of the
+2021 ACM Conference on Fairness, Accountability, and Transparency, available at
+https://dl.acm.org/doi/10.1145/3442188.3445922
+Bommasani, R., D.A. Hudson, E. Adeli. R. Altman, S. Arora, S. von Arx ... P. Liang (2021)
+‘On the Opportunities and Risks of Foundation Models’, mimeo, available at
+https://arxiv.org/abs/2108.07258
+Bommasani, R., K. Klyman, D. Zhang and P. Liang (2023) ‘Do Foundation Model
+Providers Comply with the Draft EU AI Act?’ Stanford Center for Research on
+Foundation Models, available at https://crfm.stanford.edu/2023/06/15/eu-ai-act.html
+Carugati, C. (2023) ‘Competition in generative artificial intelligence foundation models’,
+Working Paper 14/2023, Bruegel, available at https://www.bruegel.org/working-
+paper/competition-generative-articifial-intelligence-foundation-models
+European Commission (2021) ‘Proposal for a regulation laying down harmonised rules
+on artificial intelligence (Artificial Intelligence Act) and amending certain Union
+legislative acts)’, COM(2021) 206 final
+OECD (2023) ‘AI language models: Technological, socio-economic and policy
+considerations’, OECD Digital Economy Papers, Organisation for Economic Co-
+operation and Development, available at https://doi.org/10.1787/13d38f92-en
+Zenner, K. (2023) ‘A law for foundation models: The EU AI Act can improve regulation
+for fairer competition’, Organisation for Economic Co-operation and Development,
+forthcoming
+Bruegel analysis 24/2023 / 19 July 2023
+
+===== PDF_PAGE 7 =====
+Adapting the European Union AI Act to deal with generative artificial intelligence 7
+The author gratefully acknowledges extensive helpful feedback from Bertin
+Martens and Kai Zenner.
+Bruegel analysis 24/2023 / 19 July 2023
+
+===== PDF_PAGE 8 =====
+Adapting the European Union AI Act to deal with generative artificial intelligence 8
+Endnotes
+1 See for example Bender et al, 2021; Bommasani et al, 2021; OECD, 2023.
+2 See https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for….
+3 On competition issues raised by foundation models, see Carugati (2023).
+4 See https://oecd.ai/en/network-of-experts/working-group/10836.
+5 See for example Bender et al, 2021; Bommasani et al, 2021; OECD, 2023.
+6 See https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for….
+7 On competition issues raised by foundation models, see Carugati (2023).
+8 See https://oecd.ai/en/network-of-experts/working-group/10836.
+Bruegel analysis 24/2023 / 19 July 2023
+
+===== PDF_PAGE 9 =====
+© Bruegel 2026. All rights reserved. Short sections, not to exceed two paragraphs, may be quoted in the original language without explicit
+permission provided that the source is acknowledged. Opinions expressed in this publication are those of the author(s) alone.
+Bruegel
+Rue de la Charité
+33,
+B-1210 Brussels
+(+32) 2 227 4210
+info@bruegel.org
+Bruegel.org
