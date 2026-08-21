@@ -1,0 +1,928 @@
+
+===== PDF_PAGE 1 =====
+TECHNOLOGY AND PUBLIC PURPOSE PROJECT
+TECHNOLOGY PRIMERS FOR POLICYMAKERS
+Augmented and Virtual
+Reality for the Metaverse
+
+===== PDF_PAGE 2 =====
+April 2023
+AUTHORS
+Jacob Boyd (Harvard Kennedy School / Northwestern Kellogg)
+Sandra Lam (MIT Sloan)
+Stephan Florian Rihs, PhD (Harvard Kennedy School / UPenn
+Wharton)
+Li Sun (MIT Sloan)
+Ariel Higuchi, Tech Primers Project Lead (Harvard Kennedy School)
+Amritha Jayanti (Harvard Kennedy School)
+REVIEWERS
+Micaela Mantegna (Berkman Klein Center, Harvard)
+Tibor Merey (Boston Consulting Group)
+Greg Pryor (Reed Smith)
+John Yang (United Talent Agency, former Magic Leap)
+FACULTY LEADS
+Ash Carter, Faculty Director, Technology and Public Purpose
+Project, in memoriam
+Francis J. Doyle III, Dean, Harvard John A. Paulson School of
+Engineering and Applied Sciences
+Statements and views expressed in this publication are solely those of the authors and
+do not imply endorsement by the Reviewers and their respective organizations, Harvard
+University, Harvard Kennedy School, the Belfer Center for Science and International Affairs,
+or Harvard John A. Paulson School of Engineering and Applied Sciences.
+The Technology Primer Series was designed to provide a brief overview of each technology and related policy considerations. These
+papers are not meant to be exhaustive.
+
+===== PDF_PAGE 3 =====
+Technology and Public Purpose Project
+Belfer Center for Science and International Affairs
+Harvard Kennedy School
+79 John F. Kennedy Street, Cambridge, MA 02138
+www.belfercenter.org/TAPP
+Harvard John A. Paulson School of Engineering
+and Applied Sciences
+29 Oxford Street, Cambridge, MA 02138
+www.seas.harvard.edu
+The Technology and Public Purpose (TAPP) Project would like to thank Sofía Jarrín for
+constructive copyediting of the factsheet.
+Copyright 2023, Presidents and Fellows of Harvard College
+Printed in the United States of America
+
+===== PDF_PAGE 4 =====
+Contents
+Executive Summary 1
+PART 1: Technology 2
+What Is the Metaverse? 2
+What Isn’t the Metaverse? 3
+What Is AR and VR? 4
+How Are AR and VR Different? 4
+How Might AR and VR Be Integrated or Coexist? 5
+Components of AR/VR for the Metaverse 6
+PART 2: Applications and Market Overview 7
+Applications & Use Cases 8
+Barriers and Limitations 11
+Market Development 13
+PART 3: Current Governance and Regulation 14
+Navigating Law in a Virtual World 14
+U.S. Regulation and Governance 15
+Proposed Federal and State Legislation 16
+International Regulation and Governance 17
+Self-Regulation and Governance 18
+PART 4: Public Purpose Considerations 21
+Selected Readings and Additional Resources 27
+About the Technology and Public Purpose (TAPP) Project 28
+
+===== PDF_PAGE 5 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 1
+Executive Summary
+Augmented Reality (AR) and Virtual Reality (VR) refer to computer-generated content that integrates
+into the real world (in the case of AR) or is entirely self-contained (in the case of VR). These technologies,
+typically accessed through smartphones and headset devices, allow users to access a shared virtual
+environment, often referred to as a metaverse.
+It has been three decades since the term “metaverse” was coined, but a convergence of market factors and a
+level of sophistication of AR and VR technologies have created a new emphasis on the metaverse. In 2021,
+Facebook invested $10 billion in its Reality Labs division and renamed itself Meta Platforms, Inc.1 Microsoft
+made a $70 billion dollar bet in 2022 on the metaverse in its acquisition of gaming studio Activision
+Blizzard.2 Advancements in AR and VR have been made across several industries with notable use cases in
+gaming and entertainment, education and training, and virtual work.
+While investments such as these have created enormous hype, significant technical limitations exist such
+as computing power, user discomfort, and interoperability challenges. Non technical barriers, including
+high hardware costs and supply shortages, have also created problems. Further, most of these platforms are
+being developed in isolation. To achieve the metaverse that many evangelists for this technology envision,
+significant coordination would need to occur between firms.
+Governments have acknowledged the important role AR and VR will have in society, but regulation and
+governance structures are still underdeveloped. Many public purpose concerns related to current internet
+issues such as user privacy, intellectual property protection, and market power apply to AR/VR platforms
+and the metaverse. However, virtual experiences also pose new regulatory conundrums that will need to
+be addressed. While the European Union and China have taken some steps toward creating a regulatory
+framework for metaverse-related internet policy issues, the United States will need to make significant
+progress toward the many open legal questions that exist.
+1 Naomi Nix et al., “Facebook Changes Name to Meta in Embrace of Virtual Reality,” Bloomberg News, October 28, 2021, https:/ /www.
+bloomberg.com/news/articles/2021-10-28/facebook-changes-name-to-meta-in-embrace-of-virtual-reality#xj4y7vzkg.
+2 Karen Weise et al., “Microsoft will buy Activision Blizzard, betting $70 billion on the future of games.,” The New York Times, January 18, 2022,
+https:/ /www.nytimes.com/2022/01/18/business/microsoft-activision-blizzard.html.
+
+===== PDF_PAGE 6 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 2
+PART 1: The Technology
+What Is the Metaverse?
+For the purposes of this primer, a metaverse can be defined as a simulated digital environment or virtual
+world that, in many instances, leverages augmented reality (“ AR”) and virtual reality (“VR”) to create
+spaces for richer user experience and interaction. The definition of metaverse could overlap with that of
+“virtual world” and “virtual space, ” terms which are used to describe computer-simulated environments in
+which multiple users interact and communicate with each other.3
+The goal of a metaverse is to create a substantially more immersive, engaging, and closer-to-life virtual
+experience than was possible with previous technologies. Enthusiasts see the metaverse as the next
+generation of the internet: a digital, interconnected reality seamlessly woven into our physical world.
+However, AR and VR are not necessary to access a metaverse. Today most users access metaverses
+using 2-D screens on personal computers and mobile phones. As AR and VR mature, the share of 3-D
+metaverse experiences is expected to increase.
+Contrary to what one might expect, given the recent hype around this technology and potential future
+applications, metaverse-related applications have been around since the 1980s and 1990s (e.g., VR arcade
+video games)4 and 2000s (e.g., virtual worlds such as Second Life).5
+It is important to note that the metaverse is a concept. The metaverse is “created/enabled” through a
+combination of various technologies, as shown in figure 1.With that in mind, various competing visions
+and interpretations of the term metaverse do exist. The number of experiences and applications that can
+be labeled as the metaverse is almost endless. It is also important to note that the current landscape of
+virtual worlds is highly fragmented. No clear frontrunner has emerged yet, and their interoperability has
+not been established. Therefore, it seems more accurate to speak of metaverses or competing visions and
+definitions of new types of virtual experiences, rather than to speak of the metaverse as a unitary concept
+or definition. The term metaverse is also evolving based on emerging applications and technologies.
+3 Richard A. Bartle, Designing Virtual Worlds (Indianapolis, IN: New Riders, 2003).
+4 Benj Edwards, “The Wacky World of VR in the 80s and 90s,” PC Magazine, April 17, 2018, https:/ /www.pcmag.com/news/
+the-wacky-world-of-vr-in-the-80s-and-90s.
+5 “Linden Lab announces name of new online world ‘Second LifeTM’ and availability of beta program,” Linden Lab, October 30, 2002, https:/ /
+www.lindenlab.com/releases/linden-lab-announces-name-of-new-online-world-39-second-life-39-and-availability-of-beta-program.
+
+===== PDF_PAGE 7 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 3
+Figure 1. Reprinted from Matthew Ball, “Framework for the Metaverse,” MatthewBall.Vc, June 29, 2021,
+https:/ /www.matthewball.vc/all/forwardtothemetaverseprimer
+What Isn’t the Metaverse?
+It is also important to clarify some common misconceptions about the metaverse:6
+1. Metaverse is not synonymous with VR: Some have described the metaverse as the equivalent of
+VR, but while VR is indeed a way to experience the metaverse, many people participate without VR
+devices. VR devices are not the metaverse, just like smartphones are not the mobile internet.
+2. A metaverse is not just for gaming: There are video games that exist in the metaverse, but that
+is not the metaverse itself. The metaverse experience has expanded beyond video games to daily
+interactions such as learning, working, and more.
+3. The metaverse is not a technology itself: While the metaverse is an environment enabled by
+technology, it is not a technology itself. It is also not a single platform or a privately-owned entity.
+There are multiple metaverses operated by several companies, each with its own vision of what the
+metaverse could be.7
+6 Ward de Kruiff, “What is the Metaverse & What is it Not?,” epam, June 13, 2022, https:/ /www.epam.com/insights/blogs/
+what-is-the-metaverse-and-what-is-it-not.
+7 Stephen Shankland, “The Metaverse Will Be a Multi-Platform Mess,” CNET, March 26, 2022, https:/ /www.cnet.com/tech/computing/features/
+here-comes-the-multi-metaverse-mess/.
+
+===== PDF_PAGE 8 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 4
+What Is AR and VR?
+AR and VR are important technology enablers of the metaverse and are the core focus of this technology
+primer. The advancement of AR and VR technologies has led to the increasing popularity of the
+metaverse. Sometimes, the definitions of AR and VR can vary depending on the use case.
+Augmented reality (AR) uses software and hardware technologies to enhance real-world experiences by
+overlaying digital elements (e.g., visual, sound, or other sensory features) onto real-world objects. Users
+perceive a virtual layer of data while simultaneously perceiving the real physical environment.
+Virtual reality (VR) is a computer-generated simulation that alters users’ perception of reality and allows
+them to interact with a three-dimensional environment. VR fully immerses a user in an imagined or
+replicated world (like video games, movies, or a flight simulation) or simulates presence in the real world
+(like watching a sporting event live).
+How Are AR and VR Different?
+The key difference between AR and VR is that AR incorporates your real surroundings, whereas VR
+is made up entirely of virtual information. VR creates a more immersive experience than AR in which
+the user is separated from the baseline sensual and perceptual experience of physical reality. Instead, it
+exposes users to an entirely simulated environment and stimuli (e.g., visual, sound, tactile inputs, and
+feedback).The use cases and required technology of AR and VR are also different. Table 1 contains simple
+use cases to illustrate the differences between AR and VR.
+Table 1. AR and VR Use Cases
+Use Case AR VR
+User interacts with a ball as a
+digital element.
+User opens an AR mobile application on the
+smartphone. The application augments reality
+by adding the presence of the ball in the real
+surroundings. The user can place the ball
+augmented in different locations by moving
+the smartphone camera as it interacts with
+real objects. Figure 2.8
+User puts on a headset and sees an entirely
+virtual environment where the ball is presented
+as an object. The user might use their motion,
+detected by sensors, to move, throw, kick, and
+resize the ball within the virtual environment.
+Figure 3.9
+8 Adapted from Milan Virijevic, Getty Images Signature, Canva.com.
+9 Adapted from Janet Smith, “VR Headsets Give Viewers a Salmon’s Underwater Eye View as UNINTERRUPTED Moves to Lonsdale Quay, July 14
+to 24,” Stir, July 11, 2021, https:/ /www.createastir.ca/articles/uniinterrupted-lonsdale.
+
+===== PDF_PAGE 9 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 5
+How Might AR and VR Be Integrated or Coexist?
+Mixed reality (MR), or hybrid reality, is a term sometimes used to refer to immersive AR in which real
+and virtual worlds merge to produce new environments and visualizations where physical and digital
+objects coexist and interact in real time. Whereas AR often layers computer-generated images over the
+user’s view of the physical world and VR provides total immersion into a virtual world, MR combines
+both worlds—virtual and physical objects coexist equally. One example is Microsoft HoloLens, a pair
+of MR smart glasses developed and manufactured by Microsoft that allows users to experience 3D
+holographic images that are designed to blend with the environment.
+Extended reality (XR) is an umbrella term that covers all technologies, including AR, VR, and MR.
+Some do not accept the distinction between AR and VR anymore, and many believe that three to five
+years from now these categories will become blurry and converge, where these distinctions will no longer
+apply.10 Figure 4 below represents how AR, MR, and VR overlap under the XR umbrella term.
+Figure 4. Reprinted from Laila Tremosa, Beyond AR vs. VR: What is the Difference between AR vs. MR vs. VR vs.
+XR?, Interaction Design Foundation, January 26, 2022, https:/ /www.interaction-design.org/literature/
+article/beyond-ar-vs-vr-what-is-the-difference-between-ar-vs-mr-vs-vr-vs-xr.
+10 KPMG, “The Future of the Metaverse and Extended Reality,” April 2022, https:/ /kpmg.com/xx/en/home/insights/2022/04/the-future-of-
+the-metaverse.html; Emory Craig, “XR Glasses Coming in Five Years According to Qualcomm,” Digital Bodies, June 3, 2020, https:/ /www.
+digitalbodies.net/xr-glasses-coming-in-five-years-according-to-qualcomm/.
+
+===== PDF_PAGE 10 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 6
+Components of AR/VR for the Metaverse
+One helpful approach to a taxonomy of AR/VR in the metaverse is thinking about the infrastructure
+required for access to these experiences.
+Hardware: AR/VR can be accessed via traditional mainstream devices, such as smartphones, laptop
+computers, tablets, or gaming consoles. More sophisticated applications require the user to obtain an AR/
+VR set that typically consists of glasses or a headset, handheld controllers, or other sensors and input
+mechanisms that can enable a more immersive experience. These consumer hardware devices rely on
+strong computational central processing (CPU) and graphics processing units (GPU) and sensors.
+As the number of AR and VR users climbs, mobile AR, which leverages smartphone cameras and
+processing power to superimpose information on what the phone is seeing, helps bridge the transition.
+More than half of the six billion smartphones in use today are sufficiently powerful to enable mobile AR.11
+Example of an AR headset
+Figure 5. Reprinted from Sanket Prabhu, “What Is Augmented Reality and How Does It Work?,” ARreverie
+ Technology (blog), December 18, 2017, http:/ /www.arreverie.com/blogs/how-ar-work/.
+Software: AR/VR experiences in the metaverse require programs and code to run on physical hardware.
+Much like in the console or mobile space, device manufacturers will likely provide a general framework
+for applications or games and third-party developers will need to use the programming language and
+tools provided by the manufacturer. In terms of programming language and complexity, there is no
+significant deviation from traditional programming (similar languages and graphics engines).
+11 Jean-François Bobier et al., The Corporate Hitchhiker’s guide to the Metaverse (Boston: Boston Consulting Group, 2022).
+
+===== PDF_PAGE 11 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 7
+PART 2: Applications and Market
+Overview
+As of today, neither consumers nor businesses have widely adopted metaverse applications. While there are
+more use cases being discussed, a report by Wunderman Thompson showed that only 38 percent of global
+consumers have heard of the term metaverse.12 The average consumer does not own a sophisticated AR/VR
+device (only 17.7 percent of the U.S. population is estimated to own a VR headset)13 and does not frequent
+a virtual world to work, socialize or play on a daily or even weekly basis. Most experts and observers agree
+that the vision of a fully-fledged and seamless virtual experience is still years, perhaps even decades away.
+While several new devices expected to launch may accelerate technical advancement, many experts expect
+that the actual shift toward a broader adoption of AR/VR technology will realistically take another five
+to ten years.14 Therefore, a lot of the current debate and hype about the metaverse should be met with a
+healthy dose of skepticism and scrutiny.
+Although some major corporations have invested heavily into AR/VR, most companies are still in the
+experimentation/pilot phase of exploring AR/VR technology. Applications for AR/VR technology have
+developed across several sectors; table 2 below highlights some of the most significant current use cases
+and recent examples.
+12 Wunderman Thompson, “Wunderman Thompson Launches ‘Into the Metaverse’ - a Metaverse Road Map for Brands,” CISION PR Newswire,
+September 16, 2021, https:/ /www.prnewswire.com/news-releases/wunderman-thompson-launches-into-the-metaverse---a-metaverse-road-
+map-for-brands-301377977.html.
+13 Andrew Kirkcaldy, “How Many People Own VR”, PC Guide, August 19, 2022, https:/ /www.pcguide.com/vr/faq/how-many-people-own-vr/.
+14 See Mark Zuckerberg’s comments in Meta Inc.’s Q1 2022 earnings call: “(I)t’s not going to be until those products [Meta’s AR/VR/metaverse
+efforts] really hit the market and scale in a meaningful way and this market [the metaverse] ends up being big that this will be a big revenue
+or profit contributor to the business. . . . Maybe primarily, this is laying the groundwork for what I expect to be a very exciting 2030s when
+this [AR/VR/metaverse] is . . .sort of more established as the primary computing platform at that point.” “Meta Earning Call,” Q1 2022 Results
+Conference Call, Meta, Inc., April 27, 2022, https:/ /s21.q4cdn.com/399680738/files/doc_financials/2022/q1/Meta-Q1-2022-Earnings-Call-
+Transcript.pdf.
+
+===== PDF_PAGE 12 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 8
+Applications & Use Cases
+Table 2. AR/VR Current Applications and Use Cases
+Industry Overview Examples
+Military Simulate battlefield training Microsoft HoloLens
+Gaming Allow for 3D in-game experience Oculus Quest (Meta); HTC VIVE
+Entertainment Sporting events and concerts VR concert by Imagine Dragons; National
+Basketball Association courtside in Oculus
+Education Classroom learning Froggipedia
+Virtual work/collaboration Virtual meetings Horizon Workrooms (Meta)
+Immersive e-commerce VR shopping Audi and Sephora
+Healthcare Surgery and psychotherapy Stanford Medicine Neurosurgical Simulation and
+Virtual Reality Center by Surgical Theater
+Each use case described in Table 2 is outlined in more detail below
+Military: The U.S. military is piloting the use of AR/VR technology to train soldiers by simulating
+battlefield scenarios and to better equip soldiers with more advanced awareness tools. Example: In
+March 2021, Microsoft secured a deal to produce a customized HoloLens headset for the U.S. Army. The
+headset is meant to provide enhanced situational awareness that will enable soldiers to fight, rehearse,
+and train using a single platform.15 The device uses an Integrated Visual Augmentation System to allow
+soldiers to see through smoke and dark environments, use holographic imagery for training, and 3D
+terrain maps projected onto their field of vision.16
+Gaming: Video games are the most prominent VR use case for consumers, allowing them to experience
+video games in 3D, which enhances the in-game user experience. Examples: Many manufacturers of
+VR headsets have developed their own games, which are bundled with the purchase of their hardware.
+The major players are Oculus (acquired by Meta), Google, HTC VIVE, Microsoft, and Samsung.17
+Independent game developers like Unity are also developing 3D games compatible with the VR consoles.
+15 Mary Jo Foley, “US Army Postpones Its $22 Billion Microsoft Augmented-reality Headset Deliverables to Late 2022,” ZDNet, October 14, 2021,
+https:/ /www.zdnet.com/article/us-army-postpones-to-2022-its-22-billion-microsoft-augmented-reality-headset-contract.
+16 Deborah. Bach, “US Army to Use HoloLens Technology in High-tech Headsets for Soldiers,” Microsoft Transform, June 8, 2021, https:/ /news.
+microsoft.com/transform/u-s-army-to-use-hololens-technology-in-high-tech-headsets-for-soldier/.
+17 Bryan Wirtz, “The World’s Largest Virtual Reality Companies: Meet the Studios Dominating the Industry,” Game Designing, August 25, 2022,
+https:/ /www.gamedesigning.org/gaming/virtual-reality-companies/.
+
+===== PDF_PAGE 13 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 9
+Entertainment: VR allows fans to experience entertainment events without the constraint of physically
+being there. VR events are becoming more prominent in the entertainment space as the technology
+is applied to all forms of entertainment. Examples: The National Basketball Association (NBA) offers
+virtual courtside seats on Meta’s Oculus device. The Oculus headset simulates a courtside experience by
+allowing NBA fans to experience live in-game immersive views and feel close to the action. Major League
+Baseball is also utilizing VR technology to give their fans a 360-degree in-game experience at home. The
+National Football League and NASCAR have also been experimenting with VR to provide in-game/
+in-race experiences for their fans.
+Education: During the COVID-19 pandemic, both schools and employers increasingly turned to online
+learning to educate students and the workforce in a virtual environment. AR and VR technology can be
+used to enhance the virtual learning experience. Examples: Froggipedia is an AR mobile device app that
+teaches students about the anatomical details of a frog. Instead of dissecting a frog in-person, students
+can dissect the frog virtually. Another example is the VR Microsoft HoloLens’ HoloTours, which allows
+students to virtually explore a new city rather than viewing photos in a textbook. While the Froggipedia
+app is a few dollars, the Microsoft HoloLens headset is several thousands of dollars, making it largely
+unaffordable for most classrooms.
+Figure 6. Reprinted from Elliot Hu-Au, “Microsoft HoloLens’ Holotours: Making History Come Alive,’’
+Virtual Reality for Education, October 22, 2016, http:/ /virtualrealityforeducation.com/microsoft-hololens-
+holotours-making-history-come-alive/.
+Virtual work and collaboration: Participating in virtual meetings using applications such as Zoom or
+Microsoft Teams is now commonplace full use of AR/VR technology to engage in is still nascent.18 Much
+of the value of the metaverse may ultimately lie in business applications, such as virtual meetings and
+training sessions. Example: Meta created an internal VR meeting room called Horizon Workrooms,
+allowing work colleagues to collaborate and conduct meetings using avatars.
+18 Mark Purdy, “How the Metaverse Could Change Work,” Harvard Business Review, April 05, 2022, https:/ /hbr.org/2022/04/
+how-the-metaverse-could-change-work.
+
+===== PDF_PAGE 14 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 10
+Figure 7. Reprinted from “7 Tips for Powering Up Your Sales Enablement Using a Virtual Reality Platform,”
+MeetinVR (blog), March 15, 2021, https:/ /www.meetinvr.com/2021/03/15/sales-enablement/.
+Immersive e-commerce experience: Using VR headsets shoppers can browse through virtual
+showrooms and virtually meet with friends to go shopping as if they were inside a physical store.
+Example: VR and AR allow users to virtually “try on” products without the presence of the actual
+product. For example, Sephora teamed up with AR company ModiFace to release an app called Sephora
+Virtual Artist. After scanning the user’s face, the app applies algorithms based on the user’s facial features
+to recommend products accordingly. The app also comes with tutorials and recommendations, where the
+user can learn and experiment with different products on their virtual face.
+Healthcare applications: In 2021, the global healthcare VR market was valued at $459 million.19 Two
+prominent VR use cases include applications to enhance surgery and psychotherapy.
+Example 1 - surgery: In 2022, VR helped surgeons simulate the complex operation of separating
+congenital twins by allowing surgeons to visualize different scenarios in an operation and collaborate
+in real time with surgeons in different countries.20 In 2017, Stanford Medicine announced that it began
+using a “new software system that combines imaging from MRI’s, CT scans and angiograms to create a
+three-dimensional model that physicians and patients can see and manipulate—just like in a VR game. ”
+The VR system, created by Surgical Theater, helps train medical residents, assist surgeons in operations,
+and educate patients.21
+Example 2 - psychotherapy: VR psychotherapy has been successfully used to treat people with
+post-traumatic stress disorder, anxiety, phobias, depression, etc. The advantage is that the VR
+19 “Virtual Reality (VR) in Healthcare Market Size,” Fortune Business Insight, May 2022, https:/ /www.fortunebusinessinsights.com/
+industry-reports/virtual-reality-vr-in-healthcare-market-101679.
+20 Shiona McCallum, “Conjoined Twins Separated with the Help of Virtual Reality,” BBC News, August 1, 2022, https:/ /www.bbc.com/news/
+technology-62378452.
+21 Mandy Erickson, “Virtual Reality System Helps Surgeons, Reassures Patients,” Stanford Medicine, July 11, 2017, https:/ /med.stanford.edu/news/
+all-news/2017/07/virtual-reality-system-helps-surgeons-reassures-patients.html.
+
+===== PDF_PAGE 15 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 11
+environment can be personalized to the patients’ needs.22 For example, in VR exposure therapy, patients
+are exposed to safe and controlled virtual environments designed to recreate personalized experiences.
+By mimicking the personalized trauma, therapists can gradually treat patients’ symptoms through the
+exposures in VR.
+Barriers and Limitations
+There are several technical and nontechnical limitations in the development of AR, VR, and the
+metaverse.
+Technical limitations:
+• Optical correction/adjustment: AR/VR headset lenses need active optics that rapidly adjust focus.
+This causes significant visual fatigue on the user. Researchers are working to improve the field of view
+and resolution in near-eye displays to address visual fatigue.
+• Computing power: Although gradually improving, AR and VR still require powerful computing
+capabilities to render the technology. The high computing power must be processed in a relatively
+small device, which comes with some challenges:
+• Reaching wide-spread adoption of the metaverse will require massive networking power, both
+from fixed (fiber) networks as well as mobile networks.
+• To continue to increase the performance of headsets, while at the same time driving down their
+size and weight, computing and storage needs to be moved off the headset and be computed and
+stored elsewhere (e.g., on another device nearby, on an edge server, or in the cloud).
+• Given the immersiveness of the experience, the connection between the headset and the remote
+server (latency) tends to be very slow.
+• User comfort: Some users experience motion sickness and discomfort with the headsets (e.g., some
+headsets can weigh three pounds).
+22 Jeremy Sutton, “What is Virtual Reality Therapy? The Future of Psychology,” Positive Psychology, November 4, 2020, https:/ /positivepsychol-
+ogy.com/virtual-reality-therapy/.
+
+===== PDF_PAGE 16 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 12
+• Interoperability: Currently users lack the ability to transfer digital goods and information across
+different metaverses.23 There are “many different file formats used to structure and store data in
+different metaverses. ”24
+• Immersiveness: Even the most cutting-edge products, both in the current and upcoming generation,
+do not yet provide anywhere near the seamlessness and immersiveness of people engaging with each
+other in person.
+Nontechnical limitations:
+• High cost of hardware: High-end systems are very expensive although the cost of customer-facing
+products has decreased significantly.
+• Market fragmentation: Multiple competing metaverses with different interfaces, rules, and virtual
+environments can create confusing user experiences.
+• Supply shortages: The manufacturing shortage of electronic parts, particularly chips, could severely
+constrain hardware production.
+• High barrier to entry: The limited number of devices currently on the market could reduce
+innovation speed.
+• Accessibility: Large swaths of the population are likely not to engage with the metaverse due to
+accessibility and cultural constraints. They might not be able to purchase the hardware and navigate
+the technology, or they may prefer not to engage with the metaverse due to a strong preference for
+in-person experiences and a strong aversion to some of the visions currently promoted by metaverse
+enthusiasts.
+23 The lack of interoperability is not only a technical limitation. In Part 4: Public Purpose Considerations, the authors provide a brief description of
+interoperability concerns pertaining to user mobility and the portability and digital assets.
+24 A Matthew Ball, “The Metaverse: And How It Will Revolutionize Everything” (New York: Liveright, 2022).
+
+===== PDF_PAGE 17 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 13
+Market Development
+The AR and VR market size was valued at $14.84 billion in 2020 and is projected to reach $454.73 billion
+by 2030, representing a compound annual growth rate (CAGR) of 40.7 percent25 (for comparison, the
+Internet of Things market has a CAGR of 26.4 percent).26 Growth of the mobile gaming industry and
+increase in internet connectivity act as key drivers of the global AR and VR market. In addition, an
+increase in the use of consumer electronic devices is expected to fuel the global augmented and VR
+market growth.27
+North America dominates the AR and VR market given the growing demand from gaming,
+entertainment and media, aerospace and defense, retail, and manufacturing industries. North America is
+also the home of major technology players with advanced research capabilities.
+By application, the AR and VR market share was dominated by the consumer segment in 2020, which is
+expected to remain the dominant segment in upcoming years.28 However, beyond consumer use cases
+(e.g., video games), the adoption of AR and VR technology has also been heading toward enterprises.
+Innovative companies are experimenting with a wave of new applications for AR and VR, driving the
+growth of the overall market.
+In a recent study that polled information technology and business leaders 7 percent reported that they
+are making significant investments in VR, 15 percent plan to invest in the next three years, 10 percent
+reported that they are making considerable investments in AR, and 24 percent are planning to invest in
+the next three years.
+25 Vikas Gaikwad, “Augmented and Virtual Reality Market,” Allied Market Research, October 2021, https:/ /www.alliedmarketresearch.com/
+augmented-and-virtual-reality-market.
+26 Fortune Business Insights, “With 26.4% CAGR, Internet of Things (IOT) Market worth USD 2465.26 Billion by 2029,” Global Newswire, August
+3, 2022, https:/ /www.globenewswire.com/news-release/2022/08/03/2491076/0/en/With-26-4-CAGR-Internet-of-Things-IoT-Market-Worth-
+USD-2465-26-Billion-by-2029.html.
+27 Gaikwad, “Augmented and Virtual Reality Market.”
+28 Ibid.
+
+===== PDF_PAGE 18 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 14
+PART 3: Current Governance and
+Regulation
+While iterations of AR/VR technologies have existed for many years, regulatory and governance
+frameworks have struggled to keep pace. As of today, no laws exist that are specific to the metaverse,
+although regulation is being designed to control different components of this digital space. However,
+some of the existing laws governing the web and technology industry in general are applicable. Several
+traditional regulatory concerns around privacy, security, intellectual property, and the market power of
+big tech corporations carry over to a metaverse context.
+Metaverse governance is a multifaceted challenge with tradeoffs between interoperability, privacy, safety,
+and security that will be hard to neatly manage. Existing models may not work in the metaverse, and new
+models will have to go through stress testing before they can be enacted at scale.
+Currently, few major international organizations or bodies have attempted to tackle the issue of
+metaverse regulation. A recent proposal at the 2022 World Economic Forum is one of the major
+nonprofit initiatives dedicated to providing frameworks for potential future governance and regulation.
+It is likely that any regulatory attempts will take place on a national level (with the exception of the
+European Union), across the domains of telecommunications and internet regulation, as well as
+competition (antitrust) regulation and enforcement. Both legislative and executive branch actions may be
+considered.
+Navigating Law in a Virtual World
+AR and VR for the metaverse present legal questions for courts, companies, and users. Some are new
+takes on classic legal questions that will not require a fundamental rethinking of legal doctrine. However,
+AR and VR may raise more fundamental questions about whether these simulated realities are not
+“real” in the way we normally use the term. Regulators will need to adapt current frameworks to new
+augmented, mixed, or entirely new virtual realities.
+As with the internet, metaverse platforms operate across country borders and generally national
+laws apply to prosecute offenses. Metaverse platforms also have their own policies and procedures to
+regulate from inappropriate speech to how data can be accessed, which will be influenced by domestic
+laws. Governments in several countries are in the process of implementing laws that will better protect
+children in the metaverse.
+
+===== PDF_PAGE 19 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 15
+Laws in the metaverse will initially draw upon the laws of the countries in which the relevant platforms
+operate, in a similar way that social media platforms or search engines do so today. However, the
+mainstream internet platforms of today are much more limited in scope than metaverse platforms.
+In fully immersive digital worlds, it is conceivable that metaverse platforms will self-regulate, that is,
+implement internal compliance policies and procedures (i.e., private laws.) Virtual world laws may
+interact and overlap with national and international laws in a much broader array of areas than internet
+platforms have, creating discrepancies and novel legal questions.
+If a global audience gravitates toward one, or even just a few metaverse platforms, a single platform
+and its privacy laws may have more influence than even large nation-state governments. For example,
+Facebook had approximately 2.91 billion monthly active users in the fourth quarter of 2021, dwarfing the
+population of any nation-state. If a metaverse platform reaches a similar user base, its role in lawmaking
+and standard setting could be profound.
+While current laws may be able to resolve some legal issues arising from augmented or virtual
+technologies, many questions remain unanswered. For example, how might the law treat “street
+crimes”—behavior such as disturbing the peace, indecent exposure, or deliberately harmful visuals—in
+VR and AR? Open questions remain in several areas of the law including tort, intellectual property,
+contract, defamation and free speech, and tax law.
+U.S. Regulation and Governance
+While no U.S. laws currently exist that are specific to the metaverse, several laws pertaining to speech,
+privacy, antitrust, and protection of minors are relevant. For a more detailed explanation of many of these
+laws please see the “Technology Primer: Social Media Recommendation Algorithms” for policymakers.29
+Section 230 of the Communications Decency Act of 1996 (CDA, Section 230). Enforced by the Federal
+Communications Commission, CDA ’s Section 230 provides protection to “interactive computer service
+providers, ” from liability related to: (1) hosting information provided by another information content
+provider, and (2) voluntarily acting “in good faith” to restrict access to objectionable material. Given
+much of the content created on the metaverse would be generated by third parties, platforms would likely
+meet the necessary elements of a Section 230 defense and thus enjoy broad immunity.
+29 Constanza M. Vidal et al Technology Primer: Social Media Recommendation Algorithms (Cambridge: Belfer Center for Science and International
+Affairs, 2022), https:/ /www.belfercenter.org/publication/technology-primer-social-media-recommendation-algorithms.
+
+===== PDF_PAGE 20 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 16
+First Amendment: The creation and curation of content is considered speech by the Supreme Court, which
+means that AR/VR content can be constitutionally protected as lawful speech under the First Amendment.
+Children’s Online Privacy Protection Act of 1998 (COPP A): Implemented by the Federal Trade
+Commission, COPPA provides data protection requirements for children’s information collected by online
+operators.30 Specifically, COPPA prohibits collecting personal data from children under the age of thirteen
+without obtaining parental consent prior to data collection.
+State-level privacy laws: The states of California, New Y ork, Texas, Colorado, among others, have passed
+or attempted to pass new legislation to protect citizens’ privacy rights. This is an important step because
+AR/VR devices also collect private and confidential information that can be accessed and disseminated
+on the internet without the user’s consent. As AR/VR devices are able to collect biometric and behavioral
+information about users—information that can be sold or compromised— it is critical that there be
+transparency, practical options, and security for the interested parties.
+California Consumer Privacy Act (CPP A) is a particularly strong state data law that gives consumers
+more control over the personal information that businesses collect about them.31 This new law provides
+new privacy rights for California consumers, including:
+• The right to know about the personal information a business collects about them and how it is used
+and shared;
+• The right to delete personal information collected from them (with some exceptions);
+• The right to opt-out of the sale of their personal information; and
+• The right to nondiscrimination for exercising their CCPA right.
+Proposed Federal and State Legislation
+CDA ’s Section 230 reform: Several bills in both the U.S. Senate and the House have been introduced to
+address concerns around Big Tech and content moderation.
+Federal data privacy laws are also being considered such as the American Data Privacy and Protection Act.
+30 Stephen P. Mulligan and Chris D. Linebaugh, “Data Protection Law: An Overview,” Congressional Research Service, March 25, 2019, https:/ /
+crsreports.congress.gov/product/pdf/R/R45631.
+31 “California Consumer Privacy Act (CCPA),” State of California, Department of Justice, Office of the Attorney General, March 28, 2022, https:/ /oag.
+ca.gov/privacy/ccpa.
+
+===== PDF_PAGE 21 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 17
+California Age-Appropriate Design Code Act (A.B. 2273):32 Aims to improve the privacy protection of
+minors online by compelling platforms to assess the privacy and protection of children in the design of any
+digital product or service they offer.
+As U.S. federal and state laws are underdeveloped in this area, we have provided some examples below on law
+in other countries leading digital regulations.
+International Regulation and Governance
+Europe
+General Data Protection Regulation (GDPR): This comprehensive framework for the protection of user
+data and privacy includes consumer access and information rights, restrictions on data storage processing,
+and other consumer protections.
+Digital Markets Act (DMA)33 and Digital Services Act: These new pieces of European Union regulation
+on digital markets and services contain new and far-reaching provisions related to leveling the playing
+field in the digital space. For example, platform providers will be required to enable access to third-party
+payment services as well as apps by third-party developers, and third-party app stores will have less freedom
+to rank their own products or services over those of other companies. Given the consolidation of metaverse
+platforms,34 several potential enforcement actions may be brought against metaverse companies based on the
+DMA in the coming years.
+Parental control law: Law no. 2022-300 enacted March 2022 in France35 requires manufacturers of devices
+that allow access to sensitive content to build in a pre-installed parental control function that allows parents to
+restrict access.
+32 “This bill . . . would require a business that provides an online service, product, or feature likely to be accessed by a child to comply with
+specified requirements, including configuring all default privacy settings offered by the online service, product, or feature to the settings
+that offer a high level of privacy protection offered by the business, and providing privacy information, terms of service, policies, and com-
+munity standards concisely, prominently, and using clear language suited to the age of children likely to access that online service, prod-
+uct, or feature,” as quoted in California AB2273, The California Age-Appropriate Design Code Act, TrackBill, https:/ /trackbill.com/bill/
+california-assembly-bill-2273-the-california-age-appropriate-design-code-act/2228971/.
+33 See “Questions and Answers: Digital Markets Act: Ensuring Fair and Open Digital Markets,” European Commission, October 31, 2022, https:/ /
+ec.europa.eu/commission/presscorner/detail/en/QANDA_20_2349.
+34 Patrick McGee, “Meta Sparks Anger by Charging for VR Apps,” Financial Times, June 29, 2022, https:/ /www.ft.com/content/
+e8910bad-b873-407d-b1ca-46eb4ceb3db2.
+35 Kristof Van Quathem, Alix Bertrand, and Nicholas Shepherd, “France Enacts New Law on Parental Controls,” Lexology, March 10, 2022, https:/ /
+www.lexology.com/library/detail.aspx?g=7644ba21-cc7f-41b8-b3c4-16f99defb0a3.
+
+===== PDF_PAGE 22 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 18
+China
+The Personal Information Protection Law36 lays out for the first time in China a comprehensive set of
+rules around data collection, processing, and protection, that were previously governed by piecemeal
+legislation. This legislation is similar to the European GDPR and addresses concerns over the amount of
+data that companies, especially internet sector companies, collect from users.
+Content censorship: Around the world, regulators are concerned about the social impact of video games,
+especially among children. Chinese regulators—who oversee the world’s biggest gaming market—froze
+the approval of new domestic online game licenses in late March 2018. Subsequently, in 2019, China
+imposed a ban on games that feature blood or corpses. Game developers will need to reintroduce
+censored versions of the titles to avoid legal risks. However, China’s desire to dominate the global VR
+market leads us to believe that regulators will not attempt to stifle the industry with heavy-handed
+regulation.
+Protection for minors: China recently passed a series of anti-digital addiction laws. Most recently in
+2021, China restricted online gaming time for children under 18 to three hours weekly.37 Additionally,
+China imposed age restrictions on live streaming. Age restrictions are likely to emerge in the coming
+years, which will prevent children from accessing violent games.
+Ban on cryptocurrency: A key factor for shaping the kind of metaverse that emerges in China is the
+country’s blanket ban on cryptocurrencies. However, the government encourages the development of
+blockchain technologies and is not critical of non-fungible tokens (NFTs), which are known in China as
+digital collectibles.
+Self-Regulation and Governance
+Self-regulation efforts so far have mostly centered around topics of interoperability and the development
+of common standards across the industry. While many major (and smaller) industry players have signed
+on and joined these initiatives, critics argue that it is not in their best interest to comply and that progress
+for these efforts will be limited at best. In recent years, social platforms have become more inclined to
+protect user privacy and safety due to the negative public relations consequences of failing to do so.
+Almost certainly, metaverse platforms and environments will be inclined to follow suit.
+36 Miranda Katz, “The Personal Information Protection Law: China’s Version of the GDPR?,” Columbia Journal of Transnational Law, February 15,
+2022, https:/ /www.jtl.columbia.edu/bulletin-blog/the-personal-information-protection-law-chinas-version-of-the-gdpr.
+37 See the Reuters coverage at “Why and How China is Drastically Limiting Online Gaming for Under 18s,” Reuters, August 21, 2021.
+
+===== PDF_PAGE 23 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 19
+Several examples of self-regulation and self-governance have emerged in the last several years:
+Innovation guidelines: Firms have identified guiding principles for product development, such as
+privacy, inclusiveness, and interoperability, that are broadly considered in product design. One example is
+Meta’s Responsible Innovation Principles.38
+Oversight boards: Firms such as Meta have developed oversight boards that include independent
+journalists, politicians, and other experts to provide final judgment on content issues including those
+related to VR.
+However, these efforts have been met with significant criticism. Meta established its global oversight
+board in 2020, a first-of-its-kind internet governance body. The firm received criticism that the board
+was a way to abrogate the responsibility of moderating Facebook to another body. While all of the board’s
+decisions are binding, its policy recommendations are not, and the company is sometimes unwilling to
+heed recommendations.39 The board itself has faced questions over its political balance, with Republicans
+arguing it is ideologically skewed toward left-wing academics.40
+Interoperability groups for the metaverse: Organizations, such as the nonprofit Open Metaverse
+Interoperability Group, serve as an open-source community of industry professionals and enthusiasts
+advocating for a more open internet.41
+Industry standards: The Metaverse Standards Forum is an industry group that brings together standards
+organizations and companies for industry-wide cooperation on interoperability standards. The group
+includes over 500 firms and the major metaverse companies. The Metaverse Standards Forum provides a
+venue for cooperation between standards organizations and companies to foster the development of an
+open and inclusive metaverse and interoperability standards by funding projects. Standards generated
+by the forum are driven by industry and are nonbinding. Standards development organizations include
+the Khronos Group, the World Wide Web Consortium, the Open Geospatial Consortium, the Open AR
+Cloud, and the Spatial Web Foundation, and others.
+38 “Responsible Innovation: Meta,” Meta, accessed September 7, 2022, https:/ /about.facebook.com/metaverse/responsible-innovation/.
+39 Sara Fischer, “Meta Provides Another $150 Million in Funding for Its Oversight Board,” Axios, July 22, 2022, https:/ /www.axios.
+com/2022/07/22/meta-facebook-oversight-board-funding.
+40 Matthew Field, “Facebook’s ‘Supreme Court’ Spends $25M in Its First Year,” Telegraph, July 17, 2022, https:/ /www.telegraph.co.uk/
+business/2022/07/17/facebooks-supreme-court-spends-25m-first-year/.
+41 “Open Metaverse Interoperability Group,” omigroup, February 17, 2022, https:/ /omigroup.org/.
+
+===== PDF_PAGE 24 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 20
+Private metaverse governance: Corporate/centralized iterations of virtual worlds are likely to follow
+traditional rules of corporate governance. For example, the metaverse created by Meta is likely to be a
+virtual environment fully owned and run by the firm, which determines access rules and controls the
+marketplace. Consequently, overall legal responsibility resides with Meta and its board of directors, who
+would be the addressees of any regulatory or enforcement action.
+Decentralized metaverse governance: Decentralized metaverse applications or virtual worlds are
+likely to follow a different model of corporate governance. Advocates argue that one day decentralized
+autonomous organizations (DAOs) could provide a governance structure for the metaverse. A DAO is
+a method of organizing a company or entity that provides all decision power to its members. All of the
+DAO’s actions and funding can be seen and analyzed by anyone because every transaction is recorded on
+the blockchain. This transparency reduces the risk of corruption, illicit activity, or fraud by preventing
+important information from being censored.
+However, decentralized metaverse governance may also reduce accountability and responsiveness to
+regulatory and legislative pressure. If a decentralized platform does not have a designated geographical
+seat, headquarter, or board of directors, it may be more difficult to enforce regulation on the
+decentralized platform.
+
+===== PDF_PAGE 25 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 21
+Part 4: Public Purpose Considerations
+The scope and nature of public purpose considerations pertaining to AR/VR in the metaverse will depend
+both on the specific application at hand, and the future direction of the metaverse industry. If ultimately
+most metaverse applications will be dominated by centralized, corporate platforms (such as Meta, Apple,
+etc.), many existing concerns around the power of large gatekeeper companies on the internet will most
+likely carry over to the metaverse.42 At the same time, regulation and enforcement would, in theory,
+be relatively straightforward. If, however, the competing vision of a more decentralized, user-run and
+user-owned metaverse is realized, the new more fragmented governance might pose distinct challenges for
+both regulations and their enforcement.43
+Generally, we believe that many long-term public purpose considerations and debates from related fields
+in the past few decades—gaming and protection of minors online, big tech regulation, antitrust law, online
+intellectual property protection, security, identity, inclusivity—will come to bear in a metaverse context.
+Consequently, from today’s perspective, the metaverse may not pose many fundamentally new public
+purpose conundrums. However, existing public purpose concerns may be exacerbated by emerging AR/VR
+and metaverse applications.44
+Public purpose issues related to AR/VR for the metaverse45 include several considerations.
+Safety: Protection of Minors, Risk of Identity Theft, and Fraud
+• Protection of minors: With minors potentially spending more time socializing, gaming, and
+consuming entertainment in more immersive virtual environments, dangers to their mental health and
+the potential for disruption of their social and general development will increase. For instance, they
+may be exposed to inappropriate/explicit content or bullying and harassment by other users.46
+42 See the Federal Trade Commission’s recent enforcement actions. Mark McCarthy, “FTC’s Case Against Meta’s Acquisition of Within Seeks to
+Shape the Emerging VR Market,” Brookings, August 4, 2022).
+43 See Tambiama Madiega, Polona Car, Maria Niestadt, and Louise Van de Pol, “Metaverse: Opportunities, Risks, and Policy Implications,”
+briefing, European Parliamentary Research Service, June 2022, 7: “Experts warn that intellectual property (IP) enforcement is a challenge in
+the metaverse environment. This is because it is more difficult to identify the provider that can take down infringing content, since metaverse
+content is distributed and replicated across decentralized networks running on Web 3.0 and blockchain-based platforms.”
+44 See the assessment by Tom Wheeler, “The Metachallenges of the Metaverse,” Brookings, September 30, 2021.
+45 Compare, for instance, the enumeration in the European Parliament Research Service Briefing, that lists competition, data protection, liabilities,
+financial transactions, cybersecurity, health, and accessibility and inclusiveness. Madiega et al., “Metaverse.”
+46 See the example of a BBC reporter who entered a virtual world posing as a 13-year-old. Andy Phippen, “Protecting Children in the Metaverse: It’s
+Easy to Blame Big Tech, But We All Have a Role to Play, ” Conversation, February 28 2022.
+
+===== PDF_PAGE 26 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 22
+• Regulatory gap 1 - consumer protection and safeguards: As in traditional gaming, consumer
+protection and safeguards for minors are lacking, and children may easily spend hundreds of
+dollars on virtual goods or other items. While the economic liberty and self-expression of the
+consumer should be respected, certain guardrails should be put in place to ensure that minors are
+not taken advantage of. For example, consider the case of “loot boxes, ” which are virtual items that
+users can purchase. The loot box, similar in concept to gambling, is a game of chance. The user
+does not know what is in the box; there is a low probability that the item in the box is of high value
+and a high probability that the item is of low value. Without guardrails in place, minors may be
+taken advantage of when targeted by advertisements and cannot evaluate the benefit and costs of a
+loot box or similar purchases.
+• Regulatory gap 2 - speech/content moderation: While protections around hate speech,
+harassment, and protection of minors exist in many jurisdictions, and most likely apply to
+companies offering virtual world services, it may be worthwhile considering more concrete
+legal requirements around content moderation and user protection in these new virtual spaces.47
+Misconduct and harassment by an avatar (e.g., sexual harassment) may not be covered sufficiently
+at this point.48
+• Identity theft and identity management and solutions: While virtual worlds and blockchain-based
+applications can incorporate robust identity management solutions, identity theft in the metaverse is
+currently much easier than in the physical world.49 Identity thieves may easily use a user’s real name
+and likeness, and pose as them, often without easy recourse for the authentic user to claim fraud and
+retrieve their identity. Effective alerts and actions against identity fraud are also limited in the current
+technological environment. Through the introduction of (mandated or self-regulated) digital identity
+management solutions, this danger could be mitigated in the future.50
+• Regulatory gap 1 - rights of digital persons: Clarification may be needed on personality rights in
+the metaverse, as pertaining to the rights of one’s digital twin identity and personhood (avatar).51
+47 It is also important to note that the moderation of AR/VR content and voice in real time is markedly distinct from the simple task of moderating
+text, such as social media postings and might need to be regulated and implemented differently. See Ryan Hsu, “Meet the New ‘Verse, Same as
+the Old ‘Verse: Moderating the Metaverse,’” Georgetown Law Technology Review, May 2022.
+48 See Tanya Basu, “The Metaverse Has a Groping Problem Already,” MIT Technology Review, December 16, 2021.
+49 See Louis Rosenberg, “How the Metaverse Will Create New Forms of Fraud and Deception,” bigthink.com, April 25, 2022. Another version of this
+is the so-called evil twin, where hackers use personal data about an individual to create a digital twin of that person (based on their traits and
+likeness), to control and use for fraudulent purposes.
+50 For potential solutions, see the Identity section in the following Frank Badalamenti, Roberto Hernandez, Vikram Panjwani, and Emmanuelle
+Rivet, “Trust and Risk Considerations for the Metaverse,” pwc, April 5, 2022.
+51 See Madiega et al., “Metaverse,” 7.
+
+===== PDF_PAGE 27 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 23
+• Regulatory gap 2 - identity management and authentication: Used to reduce the likelihood of
+identity theft, fraud, harassment, and counterparty risk more broadly. In the absence of industry
+consensus on shared verification standards and a more stringent management of digital identities,
+regulation may be required to provide a framework on these topics.52
+• Fraud: A number of features of cryptocurrencies and metaverse applications, such as the anonymity of
+users and user wallets (accounts), and the absence of stringent securities and transactions regulation
+and enforcement, can lead to an increased risk of fraud.53 In contrast to fraud in the physical world,
+where the counterparty is known and can be held liable through the traditional legal system,
+prosecution and enforcement of claims in the virtual world is highly challenging.
+• Regulatory gap 1 - digital offerings and transactions: More stringent regulation of digital
+offerings and transactions, comparable to existing securities or banking regulation, may be needed
+to discourage fraudulent behavior.
+• Regulatory gap 2 - digital property rights: Regulatory clarification may be needed for the
+definition, transfer, and enforcement of digital property rights, such as when dealing with NFTs.54
+Privacy: Collection of More, and More Sensitive Data
+• Concerns around privacy and data protection apply to metaverse applications as much as they apply
+to traditional internet/web services. However, the concerns are potentially heightened by the fact that
+troves of new sensible data can be collected, such as biometric data (response time, brain waves, etc.).
+Also, providers offering both traditional internet and metaverse infrastructure (Apple, Meta, Microsoft,
+and the like) might connect and monetize these comprehensive data sets in potentially concerning
+ways.55
+• Regulatory gap - health data: It is important to note that AR/VR headsets and devices will
+potentially allow companies to collect ever more kinetic, health, and physiological data on users,
+similar to health data collection through smart wearables. The data feed of a user’s emotional state,
+stress level, heartbeat, reaction time, and the like may, combined with other data sources, provide
+corporations with an even more complete understanding of the user. More specific regulation for
+the processing, usage, and sale of these types of data may be considered in certain jurisdictions.
+52 See, for instance, Paul Sawers, “Identity and Authentication in the Metaverse,” VentureBeat, January 26, 2022; and Shade Oladetimi, “Protecting
+Your Digital Identity in the Metaverse,” JD Supra, June 14, 2022.
+53 Some sources view transactional risks as the main metaverse concern. Martin Boyd, “Regulating the Metaverse: Can We Govern the
+Ungovernable?,” Forbes, March 31, 2022.
+54 For some of the potential legal issues pertaining to NFTs, and how existing internet protocol might still be sufficient to navigate them, see
+Sophie Goossens and Nick Breen, “NFTs: Ownership in the Metaverse—the Birth of a New Concept,” ReedSmith, August 1, 2022.
+55 See Tatum Hunter, “Surveillance Will Follow Us into ‘the Metaverse’, and Our Bodies Could Be Its New Data Source,” Washington Post, January
+13, 2022.
+
+===== PDF_PAGE 28 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 24
+Security: Infrastructure, Cybersecurity, and Governance Risks
+• Centralized metaverses (Meta Horizon Worlds, Roblox) run by large corporations on its cloud servers
+presumably constitute a similar security environment to traditional corporate internet players (Meta,
+Google, Amazon, etc.). Other decentralized metaverse applications may rely on a more decentralized
+infrastructure, user input, or computing capacity, that is, they are run on a large number of user
+devices randomly distributed across its network or may be run through a DAO. These decentralized
+metaverse applications are subject to other additional security and governance risks.56 For instance,
+a bad actor may acquire most of the computing capacity or voting rights and then take the entire
+project/application offline (in the context of bitcoin, this is known as the “51 percent problem”). On
+the flip side, these decentralized networks are potentially less vulnerable to central server attacks or
+security exploits.
+• On the cybersecurity side, AR/VR devices—and the fact that most services will run on cloud
+infrastructure—will provide additional entry points for malicious attackers, therefore, maintaining
+device security and integrity will be key.57 This will, in part, also depend on the users and the amount
+of care they invest to prevent those attacks.
+• Regulatory gap - security: The establishment of a minimum threshold of (cyber)security and
+governance standards, by means of self-regulation or actual regulation, may help mitigate these
+concerns.
+Environment: Energy Consumption as a Key Concern
+• Energy usage: Similar to other blockchain-based services and applications, AR/VR metaverse
+applications will consume significant amounts of energy, for the servers, the underlying blockchain
+(currency) infrastructure, and hardware devices. While energy efficiency is expected to increase
+gradually, this still poses an environmental concern.
+• Regulatory gap - energy consumption: Policymakers may want to provide incentives or even
+legal requirements for service providers to reduce the energy consumption of their devices and
+services, or they may want to limit certain types of applications with an outsized ecological
+footprint.
+56 “Many projects in web3 include a governance aspect, in which token-holders can put forward and vote on proposals to alter the network. While
+this presents an opportunity for continual evolution and improvement, it also opens a backdoor to introduce malicious proposals that may
+damage the network if enacted. Attackers have devised new methods to circumvent controls, commandeer leadership, and loot treasuries.
+Once a theoretical concern, governance attacks have now been demonstrated in the wild. Attackers can take out massive ‘flash loans’ to swing
+votes,…” as quoted in Riyaz Faizullabhoy and Matt Gleason, “Web 3 Security: Attack Types and Lessons Learned,” Andreessen Horowitz, April
+23, 2022.
+57 See Rick Bye, “Technological Challenges to the Security of the Metaverse,” Technology Magazine, August 29, 2022.
+
+===== PDF_PAGE 29 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 25
+Accessibility Limitations
+• If the metaverse one day becomes a ubiquitous platform for social gatherings, people with disabilities
+such as visual impairment or sensory process disorders58 may have difficulties accessing activities in
+a metaverse if the platforms are not designed with accessibility in mind.59 Comfort with the use of
+digital equipment and technology is also required to access and navigate metaverse applications.
+• Regulatory gap - accessibility: Concrete statutory requirements may be needed to ensure that
+AR/VR devices and metaverse applications are built to accommodate accessibility needs.
+Market Concentration/Antitrust Concerns: -Open Innovation or Oligopoly?
+• Like e-commerce or social media, metaverses will enjoy a certain degree of network effects: users
+are more likely to join a platform their contacts are using. These network advantages could lead to
+a limited number of companies and platforms as frontrunners. With outsized market power, these
+firms could manage access to their ecosystem in restrictive ways, putting up entrance barriers for
+potential newcomers. There are strong economic incentives to engage in anti-competitive practices,
+in the absence of effective regulation banning such behavior.
+• Additionally, it seems that many of the leading players in today’s consumer internet (e.g., Meta,
+Apple, Microsoft), through existing infrastructure and substantial funding and investments, are
+well-positioned to be leading players in the metaverse space. Their potential market dominance
+across both traditional consumer internet and future metaverse applications might exacerbate
+antitrust concerns. Given that the metaverse market is still in its infancy, it seems all the more
+important that a large number of actors beyond traditional major technology companies are able to
+operate and innovate in that space, to encourage competition and user value creation.60
+• Regulatory gap 1 - interoperability and portability: The interoperability of virtual worlds,
+and portability of assets (such as avatars, or avatar accessories such as clothing in the form of
+NFTs) would give users greater control over the digital content they create by allowing users the
+flexibility to move their content across different platforms.61 However, it is doubtful that industry
+self-regulation alone will lead to interoperability and portability of assets, given that there is a
+strong incentive for the leading players to maintain their advantage and build a walled garden
+infrastructure around their respective digital worlds.
+58 Gus Alexiou, “Is the Metaverse Likely to Be Accessible and Inclusive of People with Disabilities?,” Forbes, March 31, 2022, https:/ /www.forbes.
+com/sites/gusalexiou/2022/03/31/is-the-metaverse-likely-to-be-accessible-and-inclusive-of-people-with-disabilities/?sh=62da20334d20.
+59 See Mayank Sharma, “How the Metaverse Could Worsen the Digital Divide,” Lifewire, January, 12, 2022.
+60 See Alison McCauley, “The Battle for Control of The Metaverse: Can Open Innovation Outrun Corporate Domination?,” Forbes, March 22, 2022.
+61 See, among others, Rolf Illenberger, “The Metaverse Paradox: Why the Industry Needs Standardization,” World Economic Forum, July 11, 2022.
+
+===== PDF_PAGE 30 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 26
+• Regulatory gap 2 - market dominance and antitrust concerns: Much like effective gatekeeper/
+platform regulation is lacking in most jurisdictions when it comes to the traditional web and
+online services, many jurisdictions currently do not have comprehensive antitrust frameworks
+that would prevent individual players gain an overwhelming advantage in the metaverse
+marketplace, or to leverage their market power to exclude other actors from entering that space.62
+To foster true and sustainable innovation and prevent monopolization, more stringent antitrust
+regulation—or more extensive application of existing regulation—might be required.63K
+Taxation
+• Taxation of digital transactions and goods has proven challenging and will remain so. Given that
+many virtual worlds are running on their own virtual economies, equivalents of sales tax and
+value-added tax of goods and services should be considered.64 This would most likely require
+companies to adopt fiat money instead of existing cryptocurrencies. Similarly, traditionally highly
+taxed and tightly regulated activities, such as gambling, are currently being carried out in the
+metaverse65 in circumvention of existing tax and regulatory regimes. Regulators will need to fill those
+loopholes.66 Federal and state budgets, and with them, the broader public, might benefit.htS
+• Regulatory gap - clarity and enforcement: Lack of clear guidelines and enforcement
+mechanisms for existing taxation to certain virtual spaces and applications.
+62 For an overview and potential segways for antitrust action given existing regulatory regimes, see Wilson Sonsini, “Antitrust: Into the
+Metaverse,” Wilson Sonini, March 18, 2022.
+63 In the United States, recent antitrust enforcement actions by the Federal Trade Commission taken in the metaverse context rest on a some-
+what shaky legal foundation. See Cecilia Kang, “F.T.C. Chair Upends Antitrust Standards with Meta Lawsuit,” New York Times, July 28, 2022.
+64 Some states in the United States are moving in that direction, see the example of Washington. Caile Gole, “How Should States Tax NFT Sales?,”
+CPA Practice Advisor, July 31, 2022.
+65 See, for instance, the Decentraland casino and related offerings. Eli Tan, “Who’s Using the Metaverse? Poker Players in Decentraland,” Coin-
+desk, February 3, 2022.
+66 See Tom Ara, Mark Radcliffe, Michael Fluhr, and Katherine Imp, “Exploring the Metaverse: What Laws Will Apply?,” DLA Piper, June 22, 2022.
+
+===== PDF_PAGE 31 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 27
+Selected Readings and Additional Resources
+The list below highlights some of the citations in this document or comprehensive documents on specific topics
+and is not meant to be exhaustive.
+On the Technology
+• Ball, Matthew. The Metaverse: And How It Will Revolutionize Everything. New Y ork: Liveright, 2022.
+• Hackl, Cathy, Dirk Lueth, , and Tomasso Di Bartolo.. Navigating the Metaverse: A Guide to Limitless
+Possibilities in a Web 3.0 World . Hoboken, NJ: Wiley, 2022.
+On Applications and Market Overview
+• Bellini, Heather, et al. Virtual & Augmented Reality. Understanding the Race for the Next Computing
+Platform. Profiles in Innovation Series. (New Y ork: Goldman Sachs, January 2016).
+• Shamash, David, and Robin Andre Nordnes. State of The Open Metaverse 2021/22. (London: Outlier
+Ventures, 2021).
+On Regulations and Oversight
+• Lemley, Mark A., and Eugene Volokh. “Law, Virtual Reality, and Augmented Reality. ” University of
+Pennsylvania Law Review 166, no. 1051 (April 2017). https://doi.org/10.2139/ssrn.2933867.
+• Li, Cathy. “Who Will Govern the Metaverse?” World Economic Forum. May 25, 2022. https://www.
+weforum.org/agenda/2022/05/metaverse-governance/.
+On Public Purpose Considerations
+• Tambiama Madiega, Polona Car, Maria Niestadt, and Louise Van de Pol L. “Metaverse: Opportunities,
+Risks, and Policy Implications, ” briefing. European Parliamentary Research Service, June 2022.
+• Zhu, Ling. “The Metaverse: Concepts and Issues for Congress. ” Congressional Research Service,
+August 26, 2022.
+
+===== PDF_PAGE 32 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 28
+About the Technology and Public
+Purpose (TAPP) Project
+The arc of innovative progress has reached an inflection point. It is our responsibility to ensure it bends
+toward public good.
+Technological change has brought immeasurable benefits to billions through improved health,
+productivity, and convenience. Y et as recent events have shown, unless we actively manage their risks to
+society, new technologies may also bring unforeseen destructive consequences.
+Making technological change positive for all is the critical challenge of our time. We ourselves - not only
+the logic of discovery and market forces - must manage it. To create a future where technology serves
+humanity as a whole and where public purpose drives innovation, we need a new approach.
+Founded by former U.S. Secretary of Defense Ash Carter, the TAPP Project works to ensure that
+emerging technologies are developed and managed in ways that serve the overall public good.
+TAPP Project Principles:
+1. Technology’s advance is inevitable, and it often brings with it much progress for some. Y et, progress
+for all is not guaranteed. We have an obligation to foresee the dilemmas presented by emerging
+technology and to generate solutions to them.
+2. There is no silver bullet; effective solutions to technology-induced public dilemmas require a mix of
+government regulation and tech-sector self-governance. The right mix can only result from strong
+and trusted linkages between the tech sector and government.
+3. Ensuring a future where public purpose drives innovation requires the next generation of tech leaders
+to act; we must train and inspire them to implement sustainable solutions and carry the torch.
+For more information, visit: www.belfercenter.org/TAPP
+
+===== PDF_PAGE 33 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 29
+
+===== PDF_PAGE 34 =====
+TECH PRIMERS FOR POLICYMAKERS: AR AND VR FOR THE METAVERSE 30

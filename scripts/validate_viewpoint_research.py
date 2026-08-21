@@ -30,8 +30,9 @@ def expected_catalog_size(
     early_asset_count: int,
     cset_asset_count: int,
     atlantic_asset_count: int,
+    belfer_asset_count: int = 0,
 ) -> int:
-    return seed_count + catalog_asset_count + early_asset_count + cset_asset_count + atlantic_asset_count
+    return seed_count + catalog_asset_count + early_asset_count + cset_asset_count + atlantic_asset_count + belfer_asset_count
 
 
 def main() -> None:
@@ -53,6 +54,8 @@ def main() -> None:
         "29_CSET涉华科技主题索引.csv", "30_CSET涉华科技复用矩阵.csv",
         "31_Atlantic_Council涉华科技专题增补台账.csv", "32_Atlantic_Council涉华科技专题增补结果.md",
         "33_Atlantic_Council涉华科技主题索引.csv", "34_Atlantic_Council涉华科技复用矩阵.csv",
+        "35_Belfer涉华科技专题增补台账.csv", "36_Belfer涉华科技专题增补结果.md",
+        "37_Belfer涉华科技主题索引.csv", "38_Belfer涉华科技复用矩阵.csv",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -135,12 +138,36 @@ def main() -> None:
         r["机构观点等级"] == "作者/项目政策简报"
         for r in atlantic_catalog if r["报告类型"] == "议题简报"
     )
+    belfer_assets = rows(root / "35_Belfer涉华科技专题增补台账.csv")
+    assert len(belfer_assets) == 29, len(belfer_assets)
+    assert sum(r["材料类型"] == "研究报告与论文" for r in belfer_assets) == 22
+    assert sum(r["材料类型"] == "政策简报" for r in belfer_assets) == 4
+    assert sum(r["材料类型"] == "政策证词" for r in belfer_assets) == 3
+    assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in belfer_assets) == 20
+    assert sum(r["本地状态"] == "官方网页全文已保存" for r in belfer_assets) == 9
+    assert not any(r["本地状态"] == "获取失败" for r in belfer_assets)
+    assert all(r["本地原始资产"] and Path(r["本地原始资产"]).exists() for r in belfer_assets)
+    assert all(r["本地文本"] and Path(r["本地文本"]).exists() for r in belfer_assets)
+    assert all(r["本地切片或转写"] and Path(r["本地切片或转写"]).exists() for r in belfer_assets)
+    assert all(len(r["SHA256"]) == 64 for r in belfer_assets)
+    assert {r["报告ID"] for r in belfer_assets}.issubset({r["报告ID"] for r in catalog})
+    belfer_topics = rows(root / "37_Belfer涉华科技主题索引.csv")
+    belfer_matrix = rows(root / "38_Belfer涉华科技复用矩阵.csv")
+    assert len(belfer_topics) >= len(belfer_assets)
+    assert belfer_matrix
+    belfer_catalog = [r for r in catalog if r["报告ID"].startswith("C-BEL-")]
+    assert len(belfer_catalog) == len(belfer_assets)
+    assert all(
+        r["机构观点等级"] == "作者/项目政策证词"
+        for r in belfer_catalog if r["报告类型"] == "政策证词"
+    )
     assert len(catalog) == expected_catalog_size(
         seed_count=len(seeds),
         catalog_asset_count=len(catalog_assets),
         early_asset_count=len(early_assets),
         cset_asset_count=len(cset_assets),
         atlantic_asset_count=len(atlantic_assets),
+        belfer_asset_count=len(belfer_assets),
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -150,6 +177,7 @@ def main() -> None:
             (early_assets, ("本地PDF",)),
             (cset_assets, ("本地原始资产",)),
             (atlantic_assets, ("本地原始资产",)),
+            (belfer_assets, ("本地原始资产",)),
         )
         for row in ledger
         for field in fields
@@ -194,13 +222,16 @@ def main() -> None:
         ("31_Atlantic_Council涉华科技专题增补台账.csv", "国际科技智库观点演变_Atlantic_Council涉华科技专题增补台账.csv"),
         ("33_Atlantic_Council涉华科技主题索引.csv", "国际科技智库观点演变_Atlantic_Council涉华科技主题索引.csv"),
         ("34_Atlantic_Council涉华科技复用矩阵.csv", "国际科技智库观点演变_Atlantic_Council涉华科技复用矩阵.csv"),
+        ("35_Belfer涉华科技专题增补台账.csv", "国际科技智库观点演变_Belfer涉华科技专题增补台账.csv"),
+        ("37_Belfer涉华科技主题索引.csv", "国际科技智库观点演变_Belfer涉华科技主题索引.csv"),
+        ("38_Belfer涉华科技复用矩阵.csv", "国际科技智库观点演变_Belfer涉华科技复用矩阵.csv"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv"))
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "06_数据资产" / "数据资产清单.csv"))
     print("viewpoint_research_validation=ok")
-    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)}")
+    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)}")
 
 
 if __name__ == "__main__":
