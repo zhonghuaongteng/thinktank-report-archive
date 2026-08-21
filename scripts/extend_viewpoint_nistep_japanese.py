@@ -3,13 +3,16 @@ from __future__ import annotations
 import argparse
 import hashlib
 import io
+import json
 import re
 import tempfile
 import time
+import unicodedata
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, replace
 from datetime import date
+from difflib import SequenceMatcher
 from pathlib import Path
 from urllib.parse import quote, urljoin, urlsplit, urlunsplit
 
@@ -33,6 +36,12 @@ TYPE_ROLES = {
     "PS": ("政策研究", "机构正式研究"),
     "RM": ("调查资料", "机构正式研究"),
     "DP": ("讨论论文", "作者讨论论文"),
+}
+
+KNOWN_RELEASE_ARCHIVES = {
+    # This report was issued on a shared "11th foresight survey" release page;
+    # neither title search nor the archive title contains RM:290 reliably.
+    ("RM", "290"): "https://www.nistep.go.jp/archives/44457/",
 }
 THEME_PATTERNS = {
     "人工智能、数据与数字技术": re.compile(r"人工知能|\bAI\b|情報技術|デジタル|データ|ソフトウェア|計算", re.I),
@@ -109,6 +118,143 @@ def mirror_pdf_names(report_type: str, number: str) -> list[str]:
         f"NISTEP-{report_type}{number}-FullJ.pdf", f"NISTEP-{report_type}-{number}-FullJ.pdf",
         f"NISTEP-{report_type}{number}-Full.pdf", f"NISTEP-{report_type}-{number}-Full.pdf",
     ]
+
+
+def indicator_html_index_url(title: str, number: str) -> str:
+    match = re.fullmatch(r"科学技術指標(\d{4})", "".join(title.split()))
+    if not match:
+        return ""
+    year = match.group(1)
+    return f"https://www.nistep.go.jp/sti_indicator/{year}/RM{number}_00.html"
+
+
+def extract_indicator_html_links(html: bytes, index_url: str) -> list[str]:
+    base = urlsplit(index_url)
+    directory = base.path.rsplit("/", 1)[0] + "/"
+    links: list[str] = []
+    for anchor in BeautifulSoup(html, "html.parser").select("a[href]"):
+        resolved = urlsplit(urljoin(index_url, anchor.get("href", "")))
+        if resolved.scheme not in {"http", "https"} or resolved.netloc != base.netloc:
+            continue
+        if not resolved.path.startswith(directory) or not resolved.path.lower().endswith((".html", ".htm")):
+            continue
+        clean = urlunsplit(("https", resolved.netloc, resolved.path, resolved.query, ""))
+        if clean != index_url and clean not in links:
+            links.append(clean)
+    return links
+
+
+def fetch_indicator_html_report(candidate: Candidate, fetcher=None) -> tuple[str, str]:
+    index_url = indicator_html_index_url(candidate.title_ja, candidate.number)
+    if not index_url:
+        return "", ""
+    loader = fetcher or request
+    index_html, _, content_type = loader(index_url, timeout=60)
+    if "html" not in content_type.lower():
+        return "", ""
+    page_urls = [index_url, *extract_indicator_html_links(index_html, index_url)]
+    sections: list[str] = []
+    for page_url in page_urls:
+        try:
+            html = index_html if page_url == index_url else loader(page_url, timeout=60)[0]
+            soup = BeautifulSoup(html.decode("utf-8", errors="replace"), "html.parser")
+            for node in soup.select("script, style, nav, header, footer"):
+                node.decompose()
+            text = normalize_text_content(soup.get_text("\n", strip=True))
+            if text:
+                sections.append(f"## SOURCE {page_url}\n\n{text}")
+        except Exception:
+            continue
+    return normalize_text_content("\n\n".join(sections)), index_url
+
+
+def fetch_official_release_page(candidate: Candidate, fetcher=None) -> tuple[str, str]:
+    loader = fetcher or request
+    normalized_title = unicodedata.normalize("NFKC", candidate.title_ja)
+    known_url = KNOWN_RELEASE_ARCHIVES.get((candidate.report_type, candidate.number), "")
+    if known_url:
+        page_html, final_url, page_type = loader(known_url, timeout=60)
+        if "html" not in page_type.lower():
+            return "", ""
+        soup = BeautifulSoup(page_html.decode("utf-8", errors="replace"), "html.parser")
+        for node in soup.select("script, style, nav, header, footer, aside"):
+            node.decompose()
+        content = soup.select_one("article, .entry-content, main") or soup
+        text = normalize_text_content(content.get_text("\n", strip=True))
+        normalized_page = unicodedata.normalize("NFKC", text)
+        if candidate.number not in normalized_page:
+            return "", ""
+        return (f"## SOURCE {final_url}\n\n{text}" if text else ""), final_url
+    designation = {
+        "RM": f"調査資料-{candidate.number}",
+        "NR": f"NISTEP REPORT No.{candidate.number}",
+        "PS": f"POLICY STUDY No.{candidate.number}",
+        "DP": f"DISCUSSION PAPER No.{candidate.number}",
+    }.get(candidate.report_type, f"{candidate.report_type}{candidate.number}")
+    queries = [candidate.title_ja, normalized_title, designation, f"{candidate.report_type}{candidate.number}"]
+    teiten_year = re.search(r"NISTEP\s*定点調査\s*(20\d{2})", normalized_title)
+    if teiten_year:
+        queries.append(f"NISTEP定点調査{teiten_year.group(1)}")
+    if candidate.report_type == "RM" and candidate.number == "290":
+        queries.append("第11回科学技術予測調査 各論報告書")
+    if candidate.report_type == "DP" and candidate.number == "248":
+        queries.append("プレプリント 査読論文 先行性 実証分析")
+    queries = list(dict.fromkeys(queries))
+    target = re.sub(r"[^0-9A-Za-z一-龥ぁ-んァ-ヶ]+", "", normalized_title)
+    candidates: list[tuple[float, str]] = []
+    seen_urls: set[str] = set()
+    for query in queries:
+        search_url = f"https://www.nistep.go.jp/?s={quote(query)}"
+        try:
+            search_html, _, content_type = loader(search_url, timeout=60)
+        except Exception:
+            continue
+        if "html" not in content_type.lower():
+            continue
+        for anchor in BeautifulSoup(search_html.decode("utf-8", errors="replace"), "html.parser").select('a[href*="/archives/"]'):
+            href = urljoin(search_url, anchor.get("href", "")).rstrip("/") + "/"
+            if href in seen_urls or not re.fullmatch(r"https://www\.nistep\.go\.jp/archives/\d+/?", href):
+                continue
+            seen_urls.add(href)
+            raw_label = anchor.get_text(" ", strip=True)
+            label = re.sub(r"[^0-9A-Za-z一-龥ぁ-んァ-ヶ]+", "", raw_label)
+            score = SequenceMatcher(None, target, label).ratio()
+            if designation.lower().replace(" ", "") in raw_label.lower().replace(" ", ""):
+                score += 0.35
+            candidates.append((score, href))
+    if not candidates or max(candidates)[0] < 0.35:
+        for query in queries:
+            rest_url = f"https://www.nistep.go.jp/wp-json/wp/v2/search?search={quote(query)}&per_page=20"
+            try:
+                rest_data, _, rest_type = loader(rest_url, timeout=60)
+                if "json" not in rest_type.lower():
+                    continue
+                for item in json.loads(rest_data.decode("utf-8", errors="replace")):
+                    href = str(item.get("url", "")).rstrip("/") + "/"
+                    if not re.fullmatch(r"https://www\.nistep\.go\.jp/archives/\d+/?", href):
+                        continue
+                    raw_label = BeautifulSoup(str(item.get("title", "")), "html.parser").get_text(" ", strip=True)
+                    label = re.sub(r"[^0-9A-Za-z一-龥ぁ-んァ-ヶ]+", "", raw_label)
+                    score = SequenceMatcher(None, target, label).ratio()
+                    if candidate.number in raw_label:
+                        score += 0.35
+                    candidates.append((score, href))
+            except Exception:
+                continue
+    if not candidates:
+        return "", ""
+    score, page_url = max(candidates)
+    if score < 0.35:
+        return "", ""
+    page_html, final_url, page_type = loader(page_url, timeout=60)
+    if "html" not in page_type.lower():
+        return "", ""
+    soup = BeautifulSoup(page_html.decode("utf-8", errors="replace"), "html.parser")
+    for node in soup.select("script, style, nav, header, footer, aside"):
+        node.decompose()
+    content = soup.select_one("article, .entry-content, main") or soup
+    text = normalize_text_content(content.get_text("\n", strip=True))
+    return (f"## SOURCE {final_url}\n\n{text}" if text else ""), final_url
 
 
 def safe_url(url: str) -> str:
@@ -208,6 +354,31 @@ def acquire(candidate: Candidate, mirror_url: str, cache_dir: Path) -> Acquisiti
                 result.source = "NISTEP主站官方PDF"
                 result.status = "官方PDF已保存并校验"
                 return result
+        indicator_text, indicator_url = fetch_indicator_html_report(candidate)
+        if len(indicator_text) >= 400:
+            report_id = stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)
+            proxy_cache = cache_dir / f"{report_id}.txt"
+            page_cache = cache_dir / f"{report_id}-html.md"
+            proxy_cache.write_text(indicator_text, encoding="utf-8")
+            page_cache.write_text(indicator_text, encoding="utf-8")
+            result.proxy_cache = str(proxy_cache)
+            result.oai_cache = str(page_cache)
+            result.source = "NISTEP官方HTML版报告"
+            result.status = "官方HTML版报告已保存"
+            return result
+        release_text, release_url = fetch_official_release_page(candidate)
+        if len(release_text) >= 180:
+            report_id = stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)
+            proxy_cache = cache_dir / f"{report_id}.txt"
+            page_cache = cache_dir / f"{report_id}-release.md"
+            proxy_cache.write_text(release_text, encoding="utf-8")
+            page_cache.write_text(release_text, encoding="utf-8")
+            result.proxy_cache = str(proxy_cache)
+            result.oai_cache = str(page_cache)
+            result.source = "NISTEP官方发布页摘要"
+            result.status = "官方发布页摘要已保存"
+            result.pdf_url = release_url
+            return result
         if not candidate.record_id:
             if archive_text:
                 proxy_cache = cache_dir / f"{stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)}.txt"
@@ -258,9 +429,77 @@ def status_for_existing(row: dict[str, str], asset: Path) -> str:
     return row.get("原始资产状态") or "官方仓储PDF代理全文已保存"
 
 
+def nistep_status_summary(statuses: Counter) -> str:
+    return (
+        f"复用既有资产：{statuses['复用库内既有资产']}项；"
+        f"官方PDF保存：{statuses['官方PDF已保存并校验']}项；"
+        f"同版PDF关联：{statuses['关联既有官方PDF']}项；"
+        f"仓储PDF代理全文：{statuses['官方仓储PDF代理全文已保存']}项；"
+        f"官方HTML版报告：{statuses['官方HTML版报告已保存']}项；"
+        f"官方网页全文：{statuses['官方网页全文已保存']}项；"
+        f"官方发布页摘要：{statuses['官方发布页摘要已保存']}项；"
+        f"失败：{statuses['获取失败']}项。"
+    )
+
+
+COMPARISON_FIELDS = [
+    "对照层级", "主题或维度", "机构", "机构功能", "材料数", "W1", "W2", "W3",
+    "核心科技直接材料", "中国主题材料", "机构正式研究", "作者讨论研究",
+    "官方PDF或复用", "网页或代理全文", "待补全文", "使用边界",
+]
+
+
+def build_crds_nistep_comparison(crds_rows: list[dict[str, str]], nistep_rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    definitions = [
+        (
+            "CRDS", crds_rows, "技术路线、研发战略、领域全景与国际科技政策",
+            "CRDS材料按机构正式研究使用；机器主题标签只作检索入口，精确引用回查日文PDF、报告编号和页码。",
+        ),
+        (
+            "NISTEP", nistep_rows, "科技指标、科研体系、人才、企业创新与科技前瞻",
+            "NR、PS、RM可按机构成果使用；DP按作者归因；代理或HTML资产精确引用时回查官方日文原文。",
+        ),
+    ]
+
+    def make_row(level: str, theme: str, institution: str, function: str, boundary: str, rows: list[dict[str, str]]) -> dict[str, str]:
+        statuses = Counter(row.get("本地状态", "") for row in rows)
+        return {
+            "对照层级": level, "主题或维度": theme, "机构": institution, "机构功能": function,
+            "材料数": str(len(rows)),
+            "W1": str(sum(row.get("观察窗") == "W1" for row in rows)),
+            "W2": str(sum(row.get("观察窗") == "W2" for row in rows)),
+            "W3": str(sum(row.get("观察窗") == "W3" for row in rows)),
+            "核心科技直接材料": str(sum(row.get("科技关联层级") == "核心科技直接材料" for row in rows)),
+            "中国主题材料": str(sum("中国" in row.get("主题标签", "") for row in rows)),
+            "机构正式研究": str(sum("机构" in row.get("资料角色", "") for row in rows)),
+            "作者讨论研究": str(sum("作者" in row.get("资料角色", "") for row in rows)),
+            "官方PDF或复用": str(
+                statuses["官方PDF已保存并校验"] + statuses["关联既有官方PDF"] + statuses["复用库内既有资产"]
+            ),
+            "网页或代理全文": str(
+                statuses["官方仓储PDF代理全文已保存"] + statuses["官方HTML版报告已保存"] + statuses["官方网页全文已保存"]
+            ),
+            "待补全文": str(statuses["获取失败"] + statuses["官方发布页摘要已保存"]), "使用边界": boundary,
+        }
+
+    output: list[dict[str, str]] = []
+    for institution, rows, function, boundary in definitions:
+        output.append(make_row("机构总览", "全部材料", institution, function, boundary, rows))
+        themes = sorted({theme for row in rows for theme in row.get("主题标签", "").split("；") if theme})
+        for theme in themes:
+            subset = [row for row in rows if theme in row.get("主题标签", "").split("；")]
+            output.append(make_row("主题覆盖", theme, institution, function, boundary, subset))
+    return output
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--research", required=True, type=Path)
+    parser.add_argument(
+        "--retry-summaries",
+        action="store_true",
+        help="retry rows that currently have only an official release-page summary",
+    )
     args = parser.parse_args()
     root = args.research.resolve()
     directories = {
@@ -283,6 +522,7 @@ def main() -> int:
         if (row.get("机构ID") == "nistep" or row.get("报告ID", "").startswith("C-NISTEP-"))
         and row.get("本地原始资产路径", "").strip()
         and Path(row["本地原始资产路径"]).exists()
+        and (not args.retry_summaries or row.get("原始资产状态") != "官方发布页摘要已保存")
     }
     ledger_path = root / "55_NISTEP日文科技与中国专题增补台账.csv"
     if ledger_path.exists():
@@ -290,7 +530,8 @@ def main() -> int:
         for item in read_csv(ledger_path):
             catalog_row = catalog_by_id.get(item.get("报告ID", ""))
             if catalog_row and catalog_row.get("本地原始资产路径", "").strip() and Path(catalog_row["本地原始资产路径"]).exists():
-                existing_by_url[item["官方落地页"].strip()] = catalog_by_id[item["报告ID"]]
+                if not args.retry_summaries or catalog_row.get("原始资产状态") != "官方发布页摘要已保存":
+                    existing_by_url[item["官方落地页"].strip()] = catalog_by_id[item["报告ID"]]
     targets = [candidate for candidate in candidates if candidate.landing_url.strip() not in existing_by_url]
     mirror_urls: dict[str, str] = {}
     with ThreadPoolExecutor(max_workers=20) as executor:
@@ -404,7 +645,10 @@ def main() -> int:
             "报告ID": report_id, "机构ID": "nistep", "机构英文名": "National Institute of Science and Technology Policy",
             "国家或地区": "日本", "发布日期": candidate.published, "观察窗": observation_window(candidate.published),
             "报告名称": candidate.title_ja, "报告类型": material_type, "原文链接": candidate.landing_url, "本地路径": "",
-            "正文完整度": "本地日文原文已保存" if local_asset else "获取失败",
+            "正文完整度": (
+                "仅官方发布页摘要，全文待补" if status == "官方发布页摘要已保存"
+                else "本地日文原文已保存" if local_asset else "获取失败"
+            ),
             "优先级": "P0-China-tech-corpus" if "中国科技能力" in themes else ("P0-core-tech" if tech_layer == "核心科技直接材料" else "P1-STI-baseline"),
             "示踪问题": themes, "机构观点等级": viewpoint_level, "样本角色": f"NISTEP日文正式研究库/{tech_layer}",
             "编码状态": "待编码", "预期用途": "科技指标、中国国际比较、研发体系、科技人才、企业创新与科技前瞻专题复用",
@@ -435,18 +679,22 @@ def main() -> int:
     )
     matrix = [{"主题标签": key[0], "科技关联层级": key[1], "观察窗": key[2], "报告类型": key[3], "本地状态": key[4], "材料数": str(value)} for key, value in sorted(matrix_counts.items())]
     write_csv(root / "58_NISTEP日文科技与中国复用矩阵.csv", matrix, ["主题标签", "科技关联层级", "观察窗", "报告类型", "本地状态", "材料数"])
+    crds_path = root / "51_CRDS日文科技与中国专题增补台账.csv"
+    if crds_path.exists():
+        comparison = build_crds_nistep_comparison(read_csv(crds_path), ledger_rows)
+        write_csv(root / "59_CRDS_NISTEP科技主题与机构功能对照.csv", comparison, COMPARISON_FIELDS)
     statuses, types = Counter(row["本地状态"] for row in ledger_rows), Counter(row["报告类型"] for row in ledger_rows)
     lines = [
         "# NISTEP近十年日文科技与中国专题库增补结果", "", f"- 纳入正式研究成果：{len(ledger_rows)}项。",
         f"- NISTEP正式报告：{types['NISTEP正式报告']}项；政策研究：{types['政策研究']}项；调查资料：{types['调查资料']}项；讨论论文：{types['讨论论文']}项。",
-        f"- 复用既有资产：{statuses['复用库内既有资产']}项；官方PDF保存：{statuses['官方PDF已保存并校验']}项；同版PDF关联：{statuses['关联既有官方PDF']}项；仓储PDF代理全文：{statuses['官方仓储PDF代理全文已保存']}项；失败：{statuses['获取失败']}项。",
-        f"- 报告总目录：{len(catalog)}项扩展至{len(merged)}项。", "", "## 纳入边界", "",
+        f"- {nistep_status_summary(statuses)}",
+        f"- 报告总目录现为：{len(merged)}项。", "", "## 纳入边界", "",
         "限定2016年1月1日至2026年8月22日NISTEP官方报告总目录中的NISTEP REPORT、POLICY STUDY、调查资料和DISCUSSION PAPER。政策笔记、讲演录和STI Horizon短文暂不进入正式研究层。", "",
-        "## 归因与多语种边界", "", "NR、PS和RM按机构正式研究处理；DP按作者讨论论文处理。保留日文题名和日文全文。仓储域无法直接下载的材料保存官方PDF代理全文，精确引用须回查官方PDF、日文原句和页码。", "",
+        "## 归因与多语种边界", "", "NR、PS和RM按机构正式研究处理；DP按作者讨论论文处理。保留日文题名和日文全文。仓储域无法直接下载的材料优先保存官方HTML版报告或官方PDF代理全文；仅取得官方发布页摘要的条目继续标记全文待补，不据此提炼报告核心观点。精确引用须回查官方PDF、日文原句和页码。", "",
     ]
     (root / "56_NISTEP日文科技与中国专题增补结果.md").write_text("\n".join(lines), encoding="utf-8")
     cache_manager.cleanup()
-    print(f"candidates={len(candidates)} reused={statuses['复用库内既有资产']} pdf={statuses['官方PDF已保存并校验']} linked={statuses['关联既有官方PDF']} proxy={statuses['官方仓储PDF代理全文已保存']} web={statuses['官方网页全文已保存']} failed={statuses['获取失败']} catalog={len(merged)}")
+    print(f"candidates={len(candidates)} reused={statuses['复用库内既有资产']} pdf={statuses['官方PDF已保存并校验']} linked={statuses['关联既有官方PDF']} proxy={statuses['官方仓储PDF代理全文已保存']} html={statuses['官方HTML版报告已保存']} web={statuses['官方网页全文已保存']} release_summary={statuses['官方发布页摘要已保存']} failed={statuses['获取失败']} catalog={len(merged)}")
     return 1 if statuses["获取失败"] else 0
 
 

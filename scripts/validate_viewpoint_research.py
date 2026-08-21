@@ -69,6 +69,9 @@ def main() -> None:
         "49_Bruegel科技与中国主题索引.csv", "50_Bruegel科技与中国复用矩阵.csv",
         "51_CRDS日文科技与中国专题增补台账.csv", "52_CRDS日文科技与中国专题增补结果.md",
         "53_CRDS日文科技与中国主题索引.csv", "54_CRDS日文科技与中国复用矩阵.csv",
+        "55_NISTEP日文科技与中国专题增补台账.csv", "56_NISTEP日文科技与中国专题增补结果.md",
+        "57_NISTEP日文科技与中国主题索引.csv", "58_NISTEP日文科技与中国复用矩阵.csv",
+        "59_CRDS_NISTEP科技主题与机构功能对照.csv",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -271,6 +274,41 @@ def main() -> None:
     crds_catalog = [r for r in catalog if r["报告ID"].startswith("C-CRDS-FY")]
     assert len(crds_catalog) == 192, len(crds_catalog)
     assert all(r["机构观点等级"] == "机构正式研究" for r in crds_catalog)
+    nistep_assets = rows(root / "55_NISTEP日文科技与中国专题增补台账.csv")
+    assert len(nistep_assets) == 283, len(nistep_assets)
+    assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in nistep_assets) == 150
+    assert sum(r["本地状态"] == "官方仓储PDF代理全文已保存" for r in nistep_assets) == 100
+    assert sum(r["本地状态"] == "官方HTML版报告已保存" for r in nistep_assets) == 6
+    assert sum(r["本地状态"] == "官方发布页摘要已保存" for r in nistep_assets) == 26
+    assert sum(r["本地状态"] == "获取失败" for r in nistep_assets) == 1
+    assert sum(r["报告类型"] == "NISTEP正式报告" for r in nistep_assets) == 48
+    assert sum(r["报告类型"] == "政策研究" for r in nistep_assets) == 1
+    assert sum(r["报告类型"] == "调查资料" for r in nistep_assets) == 111
+    assert sum(r["报告类型"] == "讨论论文" for r in nistep_assets) == 123
+    assert sum(r["观察窗"] == "W1" for r in nistep_assets) == 85
+    assert sum(r["观察窗"] == "W2" for r in nistep_assets) == 86
+    assert sum(r["观察窗"] == "W3" for r in nistep_assets) == 112
+    assert sum(r["资料角色"] == "机构正式研究" for r in nistep_assets) == 160
+    assert sum(r["资料角色"] == "作者讨论论文" for r in nistep_assets) == 123
+    assert sum("中国" in r["主题标签"] for r in nistep_assets) == 44
+    assert all(
+        r["本地原始资产"] and Path(r["本地原始资产"]).exists()
+        and r["本地文本"] and Path(r["本地文本"]).exists()
+        and r["本地切片或转写"] and Path(r["本地切片或转写"]).exists()
+        and len(r["SHA256"]) == 64
+        for r in nistep_assets if r["本地状态"] != "获取失败"
+    )
+    assert all(not r["本地原始资产"] and not r["SHA256"] for r in nistep_assets if r["本地状态"] == "获取失败")
+    assert len(rows(root / "57_NISTEP日文科技与中国主题索引.csv")) == 1601
+    assert len(rows(root / "58_NISTEP日文科技与中国复用矩阵.csv")) == 272
+    comparison = rows(root / "59_CRDS_NISTEP科技主题与机构功能对照.csv")
+    assert len(comparison) == 20, len(comparison)
+    assert {r["机构"] for r in comparison if r["对照层级"] == "机构总览"} == {"CRDS", "NISTEP"}
+    nistep_overview = next(r for r in comparison if r["对照层级"] == "机构总览" and r["机构"] == "NISTEP")
+    assert nistep_overview["待补全文"] == "27"
+    nistep_catalog = [r for r in catalog if r["报告ID"].startswith("C-NISTEP-")]
+    assert len(nistep_catalog) == len(nistep_assets)
+    assert all(r["机构观点等级"] == "作者讨论论文" for r in nistep_catalog if r["报告类型"] == "讨论论文")
     assert len(catalog) == expected_catalog_size(
         seed_count=len(seeds),
         catalog_asset_count=len(catalog_assets),
@@ -282,6 +320,7 @@ def main() -> None:
         merics_asset_count=len(merics_catalog),
         bruegel_asset_count=len(bruegel_catalog),
         crds_asset_count=len(crds_catalog),
+        nistep_asset_count=len(nistep_catalog),
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -296,6 +335,7 @@ def main() -> None:
             (merics_assets, ("本地原始资产",)),
             (bruegel_assets, ("本地原始资产",)),
             (crds_assets, ("本地原始资产",)),
+            (nistep_assets, ("本地原始资产",)),
         )
         for row in ledger
         for field in fields
@@ -355,13 +395,18 @@ def main() -> None:
         ("51_CRDS日文科技与中国专题增补台账.csv", "国际科技智库观点演变_CRDS日文科技与中国专题增补台账.csv"),
         ("53_CRDS日文科技与中国主题索引.csv", "国际科技智库观点演变_CRDS日文科技与中国主题索引.csv"),
         ("54_CRDS日文科技与中国复用矩阵.csv", "国际科技智库观点演变_CRDS日文科技与中国复用矩阵.csv"),
+        ("55_NISTEP日文科技与中国专题增补台账.csv", "国际科技智库观点演变_NISTEP日文科技与中国专题增补台账.csv"),
+        ("56_NISTEP日文科技与中国专题增补结果.md", "国际科技智库观点演变_NISTEP日文科技与中国专题增补结果.md"),
+        ("57_NISTEP日文科技与中国主题索引.csv", "国际科技智库观点演变_NISTEP日文科技与中国主题索引.csv"),
+        ("58_NISTEP日文科技与中国复用矩阵.csv", "国际科技智库观点演变_NISTEP日文科技与中国复用矩阵.csv"),
+        ("59_CRDS_NISTEP科技主题与机构功能对照.csv", "国际科技智库观点演变_CRDS_NISTEP科技主题与机构功能对照.csv"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv"))
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "06_数据资产" / "数据资产清单.csv"))
     print("viewpoint_research_validation=ok")
-    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)} crds_assets={len(crds_assets)}")
+    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)} crds_assets={len(crds_assets)} nistep_assets={len(nistep_assets)}")
 
 
 if __name__ == "__main__":
