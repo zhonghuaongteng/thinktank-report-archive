@@ -1,0 +1,1262 @@
+
+===== PDF_PAGE 1 =====
+P olicy Br ief
+June 2022
+Silicon T wist
+Managing t he Chinese
+Milit ar y’s A ccess t o AI Chips
+Aut hor s
+Ry an F edasiuk
+K arson Elmgr en
+Ellen L u
+
+===== PDF_PAGE 2 =====
+Center for Security and Emerging Technology | 1
+Executive Summary
+Over the last five years, the Chinese People’s Liberation Army (PLA) has made
+significant progress adopting artificial intelligence for combat and support functions.
+Chinese leaders broadly expect AI to usher in the “intelligentization” (智能化) of
+military affairs, characterized by ubiquitous sensor networks, more frequent machine-
+on-machine engagements, and a faster tempo of operations.1
+
+But the PLA’s progress in AI and related technologies largely depends on continued
+access to a special class of semiconductors—AI chips—which are used to train
+advanced machine learning systems. By analyzing 24 public contracts awarded by PLA
+units and state-owned defense enterprises in 2020, this policy brief offers a limited but
+detailed look at how the Chinese military comes to access these devices.
+Despite more aggressive efforts by the Trump and Biden administrations to limit
+technology exports to the Chinese military, the PLA is placing orders for AI chips
+designed by U.S. companies and manufactured in Taiwan and South Korea. The
+authors of this policy brief consider alternative approaches that the United States could
+take to curtail Chinese military access to AI chips—such as a limited crackdown on
+Chinese military suppliers, or an embargo on AI chips exported to China. However,
+both of these options have serious limitations, and could prove counterproductive to
+U.S. national and economic security interests. Instead, the authors propose that the
+United States expand its collection of open-source intelligence and adopt new export
+control measures based on high-end chip features. Key findings include:
+1. The PLA is placing orders for AI chips designed by U.S. companies and
+manufactured in Taiwan and South Korea.
+● Of the 97 individual AI chips we could identify in public PLA purchase records,
+nearly all of them were designed by Nvidia, Xilinx (now AMD), Intel, or
+Microsemi.
+● By comparison, we could not find any public records of PLA units or state-
+owned defense enterprises placing orders for high-end AI chips designed by
+Chinese companies, such as HiSilicon (Huawei), Sugon, Sunway, Hygon, or
+Phytium.
+2. The U.S. government is limited in its ability to meaningfully constrain the sale of AI
+chips to specific end-users in China. A strategy based on end-user export controls is
+likely insufficient to limit Chinese military access to AI chips or broader progress in AI-
+related technologies.
+
+===== PDF_PAGE 3 =====
+Center for Security and Emerging Technology | 2
+● Difficulties associated with tracking AI chips and the variety of potential vendors
+would make it challenging for U.S. regulators to wage a targeted crackdown on
+the PLA’s intermediary chip suppliers.
+● The PLA often buys commercial off-the-shelf AI systems from Chinese
+academic institutions and private companies, which also buy U.S.-designed
+chips, and are not easily captured by U.S. restrictions on military end-users.
+3. Effectively managing the PLA’s access to AI chips will require a deeper
+understanding of China’s defense industry and new forms of export control for
+technologies related to AI. For example, such controls could be based on the physical
+and technical characteristics of chips exported to China, rather than on their intended
+applications or end-users—but this regime would require buy-in from U.S. allies and
+partners to be effective.
+● Abandoning end-user controls in favor of a more extreme policy, such as an
+embargo on chip exports to China, would alienate regional partners and
+jeopardize the long-term viability of the U.S. semiconductor industry.
+● The United States could gain a better understanding of China’s AI defense
+industry by expanding its collection and analysis of open-source information.
+Ultimately, how the United States should best manage PLA chip access—or whether it
+should even attempt to do so—is a contentious issue that touches competing interests
+across U.S. industry and government. These questions involve too many unknown
+variables to answer confidently. But by carefully studying what limited information the
+Chinese military chooses to publish about its chip purchases, this report illuminates
+some of the barriers the United States faces in regulating this practice—and
+opportunities for reform.
+
+===== PDF_PAGE 4 =====
+Center for Security and Emerging Technology | 3
+Table of Contents
+Executive Summary ................................................................................................................................ 1
+Introduction ............................................................................................................................................... 4
+Methodology and Scope ....................................................................................................................... 7
+Finding 1: The PLA Places Orders for U.S.-Designed AI Chips ............................................ 10
+Finding 2: The PLA’s Intermediary Suppliers are Rarely Named
+in U.S. Export Control Lists ............................................................................................................... 12
+What to Do About It: Three Ways to Play a Dangerous Game ............................................ 15
+Whack-a-Mole ................................................................................................................................. 15
+Pull the Trigger ................................................................................................................................ 17
+Stay the Course ................................................................................................................................ 19
+Another Path? ....................................................................................................................................... 20
+Conclusion .............................................................................................................................................. 21
+Disclaimer ............................................................................................................................................... 22
+Authors .................................................................................................................................................... 22
+Acknowledgments............................................................................................................................... 22
+Appendix A: Chinese Military Purchasers of AI Chips ............................................................. 23
+Appendix B: Summary of Export Controls Pertaining to Semiconductors ........................ 24
+Extraterritorial Controls ................................................................................................................. 24
+Endnotes ................................................................................................................................................. 30
+
+===== PDF_PAGE 5 =====
+Center for Security and Emerging Technology | 4
+Introduction
+Integrated circuits are found in every smartphone and personal computer on earth.
+They are systems comprising billions of transistors printed on silicon chips, capable of
+performing advanced calculations at impressive speeds. But not all microprocessors
+are made alike. The number of calculations that a chip is capable of computing is
+constrained by the number of its transistors—“basic computational devices that can be
+switched between on (1) and off (0) states⁠.”2 Modern computer chip designs achieve
+remarkable density by placing transistors nanometers apart on the surface of a
+wafer—a distance smaller than most bacteria.3
+“AI chips” are integrated circuits capable of processing computationally demanding
+artificial intelligence systems.4 Generally speaking, there are three kinds of AI chips:
+graphics processing units (GPUs), field-programmable gate arrays (FPGAs), and
+certain application-specific integrated circuits (ASICs).5 Different kinds of AI chips have
+advantages and disadvantages when it comes to either training a machine learning
+system, or using that system to make an inference about the world. But as prior CSET
+research indicates, only cutting-edge chips—generally considered today to be chips at
+the 12 nm node and below—are suitable to train and run cutting-edge neural
+networks. Older computer chips take too much time, sometimes months, and cost
+orders of magnitude more in electric bills.6
+In light of the Chinese military’s ambitious AI goals, AI chips are particularly important.
+They are discrete inputs to AI development, whose purchase bears directly on training
+and fielding AI systems, and which are theoretically controllable commodities.
+However, as this policy brief demonstrates, regulating the People’s Liberation Army’s
+(PLA) access to AI chips is easier said than done—especially since these processors are
+all-purpose commodities found in consumer goods and business solutions worldwide.7
+Key Segments of the AI Chip Supply Chain
+The AI chip supply chain is among the world’s most complex and tightly integrated. In
+addition to the United States, allies and partners including Japan, the Netherlands,
+South Korea, and Taiwan house crucial steps in semiconductor design, fabrication, and
+testing processes.8 With annual sales exceeding $600 billion, the global
+semiconductor market is highly competitive.9 Key segments of the industry include
+basic research, followed by the production of electronic design automation (EDA)
+software and intellectual property (IP) that will be used to design a chip, as well as the
+production of semiconductor manufacturing equipment, procurement of materials,
+
+===== PDF_PAGE 6 =====
+Center for Security and Emerging Technology | 5
+manufacturing of the chip itself (fabrication), assembly and testing of the chip, and
+finally distribution.10
+For more than 30 years, China’s leaders have aspired to wean the country off of its
+dependence on foreign-designed, foreign-produced chips.11 The central Chinese
+government has poured tens of billions of dollars into all segments of the country’s
+semiconductor industry, leading to an unprecedented 30 percent annual growth in
+sales since 2020.12 Still, U.S. firms like Nvidia, Xilinx, and Intel dominate the
+international AI chip design market, while South Korea’s Samsung and the Taiwan
+Semiconductor Manufacturing Company (TSMC) remain the titans of global
+semiconductor fabrication. High barriers to entry, including a reliance on intrinsic
+knowledge and highly specialized equipment, have so far prevented Chinese
+companies from catching up.
+Current U.S. Efforts to Restrict PLA Access to AI Chips
+In their efforts to limit Chinese military progress in AI, U.S. policymakers must balance
+absolute gains from trade and continued innovation in the semiconductor industry
+against relative gains in Chinese military power afforded by its AI chip purchases.13 To
+achieve this balance, the U.S. government has attempted to limit Chinese military
+access to certain types of technology while leaving intact most sales between U.S. and
+Chinese businesses.
+This tension between economic and security interests is reflected in the U.S. export
+control system, which encompasses but extends well beyond semiconductors destined
+for China. A plethora of statutes, rules, and regulations authorize the U.S. government
+to manage the export, re-export, or transfer of physical items, information, software, or
+services abroad—including AI chips. A more detailed summary of semiconductor-
+related export controls can be found in Appendix B. In short, the U.S. Department of
+Commerce may screen and approve or deny exports on the basis of:
+● The item itself (list-based controls)—most notably, those goods and
+commodities listed on the Commerce Control List. Whereas FPGAs and certain
+AI ASICs are listed on the CCL and subject to export review, GPUs—the most
+common type of AI chip—are not.14
+● The intended use (end-use-based controls)—such as terrorism, military and
+intelligence activities, and the development of weapons of mass destruction.
+
+===== PDF_PAGE 7 =====
+Center for Security and Emerging Technology | 6
+● The intended user (end-user-based controls)—most notably, those institutions
+listed in the U.S. Bureau of Industry and Security’s (BIS) Entity List and Military
+End User List.
+For chips manufactured in the United States, the federal government can directly
+restrict exports to foreign militaries and malign actors by invoking end-user-based
+controls, namely through the Entity List and denial orders placed on individual
+companies. Alternatively, if the chip is made abroad but contains a U.S. origin
+component, BIS may invoke the “foreign direct product rule” (FDPR) to prevent its
+export.15 In practice, the United States has used the FDPR to restrict Taiwanese
+companies from exporting chips to China that were made using U.S.-origin
+manufacturing equipment or EDA tools. Moreover, in the interest of effectively limiting
+China’s indigenous chip design industry, the United States and its allies can also place
+controls on the direct export of design IP to Chinese fabrication centers. For examples
+of additional regulatory actions taken against Huawei and other Chinese companies,
+see Appendix B.
+While AI chip components, EDA tools, and manufacturing equipment play a crucial role
+in the earlier stages of designing and manufacturing an advanced chip, this brief
+focuses on regulating the supply of completed AI chips to the Chinese military and
+state-owned defense companies, and considers the role of list-based controls, end-
+user-based controls, and the FDPR in that effort.
+
+===== PDF_PAGE 8 =====
+Center for Security and Emerging Technology | 7
+Methodology and Scope
+This policy brief examines Chinese military access to AI chips by analyzing purchasing
+information published by the PLA. CSET’s corpus of Chinese military procurement
+tenders spans 66,321 records published between March 30 and December 1, 2020.
+These tender notices run the gamut from PLA requirements and requests for proposals
+to announcements of equipment or software contracts that were actually awarded to
+Chinese companies.16 Of the 66,321 tenders in our dataset, 21,088 announce public
+contracts awarded to firms to supply the PLA with equipment, including software and
+electronic components.17
+Several limitations constrain our analysis of PLA AI chip procurement:
+First, our analysis is limited to unclassified PLA purchase records published between
+March 30 and December 1, 2020. By comparison, public metadata indicates that the
+PLA awarded at least two thousand confidential (秘密) or secret (机密) equipment
+contracts during this period of time, about which we know little. Any number of these
+contracts could be related to AI chips, and they are not captured in our analysis.
+Second, each of these records represents a contract to purchase a certain piece of
+equipment. We could not verify that each chip was actually delivered to the PLA unit
+or Chinese defense company who ordered it. However, some of the vendors listed in
+our dataset are officially licensed partners and distributors of U.S. semiconductor
+companies in China, and would likely be able to fulfill these contracts.
+Third, there is no consensus on the definition of an “AI chip.” The very phrase is an
+imprecise term of art, and the specific chip models required to train advanced machine
+learning algorithms change constantly as technology improves. Moreover, while many
+GPUs, FPGAs, and ASICs are useful for training AI systems, these chips have other
+applications, such as gaming, complex simulation, modeling, and image processing
+programs.
+Finally, only some PLA contract award notices specify the make and model of chips to
+be purchased; others merely indicate that PLA units are buying “microprocessors” or
+“computer chips” without offering any additional information. Our analysis takes a
+conservative approach, only considering contracts for clearly identified GPUs, FPGAs,
+and AI ASICs—and therefore represents only a portion of the PLA’s public purchasing
+activity that may be related to AI chips.
+
+===== PDF_PAGE 9 =====
+Center for Security and Emerging Technology | 8
+Identifying AI Chip Purchases Made by the Chinese Military
+This study attempts to classify PLA procurement projects related to AI chips by using
+keyword searches and manual disambiguation. We first searched for contracts with
+names that included any of 16 broad keywords: integrated circuit (集成电路), graphics
+card (显卡), graphics processing unit (图形处理单元 or 图形处理器), microchip (微芯片
+or 芯片), microprocessor (微处理器), field-programmable gate array (现场可编程门阵列
+or 现场可编程逻辑门阵列 or 现场可编程逻辑阵列), semiconductor (半导体), system on a
+chip (片上系统), core (芯), and the English-language abbreviations “GPU,” “FPGA,”
+“ASIC,” and “SOC.” Of the 21,088 publicly available contract awards in our dataset,
+323 contained one or more of these phrases.
+We then manually inspected each of these 323 chip-related contracts to determine
+whether the contract included GPUs, FPGAs, or ASICs which could be considered AI
+chips. Of the 323 chip-related contracts in our dataset, at least 24 (7 percent) were
+specifically for these three kinds of processors—that is, very high-end chips that might
+be used to train AI systems. By comparison, 141 contracts refer to “chips” or
+“integrated circuits” but do not offer any indication of a chip type, or whether it may be
+relevant to AI training or processing. It is possible that some of these contracts are for
+AI chips, but we have no way of knowing for certain.18 The remaining 158 contracts are
+not for AI chips, but include other kinds of microprocessors, like central processing
+units (CPUs), or electronic components such as diodes and analog-to-digital
+converters.
+Table 1: Number of Contracts Considered at Each Step of CSET Analysis
+Type of Information Number of
+Contracts
+All public contracts in CSET’s corpus of PLA purchasing
+information.
+21,088
+Contracts containing chip-related keywords. 323
+Contracts for GPUs, FPGAs, or AI ASICS (“AI chips”). 24
+Contracts that specify a type or number of AI chips to
+purchase.
+11
+Source: CSET corpus of PLA purchasing activity.
+
+===== PDF_PAGE 10 =====
+Center for Security and Emerging Technology | 9
+Just 11 of the 24 AI chip contracts in our dataset specified a type or number of units to
+be purchased, accounting for a total of 97 individual chips. This is an extremely small
+sample, as high-end machine learning systems are typically trained on arrays spanning
+hundreds or thousands of AI chips.19
+Any number of hypotheses could explain the exceedingly low volume of AI chips
+reflected in our dataset (0.1 percent of 21,088 public contracts specifically mention AI
+chips). One explanation could be that the PLA is not actually procuring that many AI
+chips to train machine learning systems itself, but prefers to buy “pretrained,”
+commercial off-the-shelf systems from the private sector.20 Indeed, like the U.S.
+military, the PLA tends to buy complete capabilities, not individual components
+required to assemble or train them. During the same period of time, for example, 343
+public PLA contracts mentioned AI and related systems.21 Previous CSET research has
+found these technologies rely intensively on U.S.-origin chips. Another explanation
+may be that the PLA is buying a large volume of AI chips for use in-house, but the
+largest orders are reflected in the 141 ambiguous “chip” contracts in our dataset, or
+articulated in the classified contracts, and are therefore not captured in our analysis.
+As a whole, it is difficult to determine whether the low purchasing volume is an
+accurate reflection of PLA’s behavior, or simply an artifact of our dataset and analytic
+approach. That said, given public reporting about the Chinese military’s extensive
+surveillance programs and growing interest in AI, we assume that the PLA is
+purchasing many more AI chips—either directly or indirectly by buying systems that
+contain such chips—to sustain its advances in surveillance systems and smart
+weaponry.22 The sample of 97 chips included in this study should be viewed as the
+proverbial tip of an iceberg.
+Although we are able to identify only 97 chips, it is likely that other AI chips purchased
+by the PLA would be similar in origin and technical specification.23 This is because, as
+previously noted, there are only a handful of companies in the world that specialize in
+designing these high-end AI chips, and the PLA has limited options of where to buy
+them: Chinese companies such as HiSilicon, Sugon, Hygon, Sunway, Phytium, and
+Jingjia Microelectronics currently occupy less than 1 percent of global market share in
+high-end CPU, GPU, FPGA, and ASIC design, where U.S. companies like Nvidia, Xilinx,
+and Intel dominate.24
+
+===== PDF_PAGE 11 =====
+Center for Security and Emerging Technology | 10
+Finding 1: The PLA Places Orders for U.S.-Designed AI Chips
+The Chinese military enjoys access to high-end AI chips designed by U.S. companies
+and manufactured in Taiwan and South Korea. Of the 97 individual AI chips identified
+in our dataset, nearly all of them were designed by U.S.-based companies Nvidia,
+Xilinx, Intel, and Microsemi (see Table 2). In each case, PLA units and state-owned
+defense companies awarded contracts for U.S.-designed chips to Chinese intermediary
+companies.
+Table 2: AI Chip Models Specified in Public PLA Contracts, April to November 2020
+Device Type Chip Model
+Chip-Design
+Firm
+Country of Chip-
+Design Firm Quantity
+GPU Quadro RTX8000 Nvidia United States Not Specified
+GPU Tesla V100 Nvidia United States Not Specified
+GPU Titan V Nvidia United States 10
+GPU Jetson TX1 Nvidia United States 4
+FPGA Kintex-7 Xilinx United States Not Specified
+FPGA Virtex-7 Xilinx United States 2
+FPGA Not Specified Xilinx United States 24
+FPGA A3P400-PQG208I Microsemi United States 50
+CPU25 Xeon Platinum 8260 Intel United States 4
+FPGA
+JFM7K325T (clone of
+XC7K325T, Kintex-7)
+Fudan
+Microelectronics
+/ Xilinx
+China/United
+States 1
+FPGA Not Specified Not Specified Not Specified 2
+Source: CSET corpus of PLA purchasing activity (11 contracts specify a model of AI chip to purchase).
+We searched for, but could not find, any records of PLA units or defense state-owned
+enterprises (SOEs) awarding contracts for Chinese-designed AI chips—such as those
+sold by HiSilicon (海思), Phytium (飞腾), Hygon (海光), Sugon (曙光), Sunway (双威), or
+Jingjia Microelectronics (景嘉微).26 Of the 21,088 contracts in our dataset, 62 mention
+any of these six companies by name—either as vendors or as designers of equipment
+to be purchased from another company. Indeed, while most of the contracts
+mentioning these firms were for CPUs and other processors, none were for AI chips.27
+
+===== PDF_PAGE 12 =====
+Center for Security and Emerging Technology | 11
+That the Chinese military is placing orders for U.S.-designed AI chips is not necessarily
+surprising. Prior CSET research has highlighted that, nationwide, Chinese consumers
+import the overwhelming majority of AI chips from the United States, Taiwan, Japan,
+and South Korea.28
+
+===== PDF_PAGE 13 =====
+Center for Security and Emerging Technology | 12
+Finding 2: The PLA’s Intermediary Suppliers are Rarely Named in U.S.
+Export Control Lists
+Our analysis reveals 11 cases where intermediary companies based in China offered to
+sell U.S.-designed AI chips to Chinese military units or defense SOEs. Some of these
+intermediaries are officially licensed distributors for global semiconductor companies
+headquartered in the United States. Table 3 shows the seven intermediary suppliers
+identified in 11 of the most detailed AI chip contracts in our dataset.29
+Table 3: Intermediary Suppliers of U.S.-Designed AI Chips Identified in Public PLA
+Contracts
+Supplier
+Name (EN)
+Supplier Name
+(CN)
+AI Chip to be
+Supplied to
+PLA Unit or
+Defense
+Company
+PLA Unit or
+Defense
+Company
+Date of
+Contract
+Award
+Beijing
+Lanyun Qifu
+Technology
+Co., Ltd.
+北京蓝耘企服科
+技有限公司
+Nvidia Quadro
+RTX8000
+Chinese
+Academy of
+Military
+Sciences
+09/25/2020
+Beijing
+Hengsheng
+Technology
+Co., Ltd.
+北京衡声科技有
+限公司
+Nvidia TX1 and
+Xilinx Virtex7
+China
+Aerospace
+Science and
+Technology
+Corporation
+08/21/2020
+SITONHOLY
+(Tianjin) Co.,
+Ltd.
+思腾合力（天津
+）有限公司
+Nvidia Titan V Academy of
+Military
+Sciences
+04/23/2020
+Xi’an Like
+Innovative
+Information
+Technology
+Co., Ltd.
+西安丽科创新信
+息技术有限公司
+Nvidia Tesla
+V100
+PLA Strategic
+Support Force
+10/29/2020
+
+===== PDF_PAGE 14 =====
+Center for Security and Emerging Technology | 13
+Hangzhou
+Changhui
+Electronic
+Technology
+Co., Ltd.
+杭州昶晖电子科
+技有限公司
+Xilinx
+Unspecified
+China
+Aerospace
+Science and
+Technology
+Corporation
+07/03/2020
+Zhengzhou
+Hong’an
+Communicati
+ons
+Technology
+Co., Ltd.
+郑州宏安通讯科
+技有限公司
+Xilinx Kintex-7 AVIC
+Optoelectronic
+s Technology
+Co., Ltd.
+10/19/2020
+LINKZOL
+(Beijing)
+Technology
+Co., Ltd.
+联众集群(北京)科
+技有限公司
+Nvidia
+Unspecified
+PLA Strategic
+Support Force
+04/13/2020
+Source: CSET corpus of PLA purchasing activity (seven vendors of U.S.-designed AI chips).
+Some of the PLA’s chip suppliers are officially licensed distributors of U.S. goods. For
+example, in April 2020, SITONHOLY won a contract to supply Nvidia-designed Titan V
+GPUs to the PLA Academy of Military Science.30 On its website, SITONHOLY claims to
+be an “elite-level partner of Nvidia” and “officially authorized distributor of Nvidia
+products” in China—and the company is listed as a partner on Nvidia’s website.31 In
+addition to the PLA, SITONHOLY’s clients apparently include 80 percent of universities
+in China working on AI.32
+Some evidence indicates that the Chinese government and military are also using front
+companies to purchase AI chips from U.S. firms. For example, in August 2020, Beijing
+Hengsheng Technology Co., Ltd. won a contract to supply Nvidia TX1 and Xilinx
+Virtex7 processors to TSINGETECH (北京青翼凌云科技有限公司), a subsidiary of the
+China Aerospace Science and Technology Corporation that specializes in smart
+processors and high-performance computing.33 The two email addresses listed as
+points of contact for Beijing Hengsheng Technology Co., Ltd. in public financial records
+are registered for dozens of other technology consulting companies based in Beijing.34
+In some cases, U.S. semiconductor companies may not be aware that their products are
+ultimately destined for use by the Chinese military. Regardless, under the current U.S.
+export control system, it is likely that none of the AI chips sold to PLA units or defense
+
+===== PDF_PAGE 15 =====
+Center for Security and Emerging Technology | 14
+companies would have required a license for export from the United States or any
+other government. Among the seven Chinese companies in our dataset selected to
+supply U.S.-designed AI chips to the PLA, none are named in the U.S. Commerce
+Department’s Entity List or Military End User List. Moreover, most of the AI chip
+purchases in our dataset are for GPUs, which are not a controlled commodity. Finally,
+the U.S. “military end use” rule does not apply to foreign-made semiconductors
+shipped from outside the United States, even if they were designed in the United
+States. Except for some types of FPGAs covered by multilateral export control
+regimes, no other country specifically regulates semiconductor exports to China.
+
+===== PDF_PAGE 16 =====
+Center for Security and Emerging Technology | 15
+What to Do About It: Three Ways to Play a Dangerous Game
+As the techno-security competition between the United States and China continues to
+evolve, three broad schools of thought describe how the United States should best
+govern Chinese military access to AI chips. Experts variously favor engaging in a
+targeted but protracted crackdown on intermediary suppliers (whack-a-mole);
+imposing extensive, blunt-force limitations on U.S.-China chip sales (pull the trigger);
+or continuing with the current, ad hoc approach to chip exports (stay the course). Each
+of these approaches carries distinct risks for U.S. national security and long-term
+economic competitiveness.
+Whack-a-Mole
+Faced with the reality that the Chinese military often finds ways to access U.S.-
+designed AI chips, U.S. policymakers may be tempted to play a very demanding game
+of “whack-a-mole” to crack down on its intermediary chip suppliers. By adopting a
+more aggressive—but still targeted—approach to export control, the United States
+could attempt to limit chip sales to the PLA and important military end-users while
+leaving intact joint civil and commercial AI research and the bulk of AI chip trade
+between the United States and China.
+To be sure, the Trump administration created, and the Biden administration has
+maintained, new controls designed to curtail technology exports to military end-users
+in China.35 In particular, the Trump administration expanded the China-specific “military
+end use” rule so that it applied to basic semiconductors, semiconductor production
+equipment, consumer electronics, civil aircraft parts, and other items unilaterally
+controlled for “anti-terrorism” reasons only.36 One implication of the change was that
+items that previously did not require a license to be exported to China (or any other
+country other than Cuba, Iran, North Korea, or Syria) now need one if there “is
+knowledge” that it is destined for military applications or for a particular military end-
+user. The new military end-user rules, however, do not apply to items made outside
+the United States—even if they were created or designed using U.S.-origin technology
+or software—as is the case for most AI chips.
+The last three U.S. presidential administrations have each placed restrictions on
+Chinese companies that have acted contrary to U.S. national security and foreign policy
+interests by placing them on the Department of Commerce’s Entity List. The list now
+includes more than five hundred institutions based in mainland China.37 But
+considering the size of the Chinese defense industrial base and the volume of cross-
+border trade with the United States, the U.S. approach to managing technology
+
+===== PDF_PAGE 17 =====
+Center for Security and Emerging Technology | 16
+exports has been relatively limited. Prior CSET research found that a fraction of the
+PLA’s AI vendors are named in key U.S. export control and sanctions regimes.38 It bears
+repeating that none of the seven PLA AI chip suppliers identified in this study are
+named in either the U.S. Entity List or Military End User List.
+In theory, the United States could make greater use of existing controls to prevent the
+PLA from purchasing U.S.-designed chips. For example, the Department of Commerce
+could add GPUs to the Commerce Control List, requiring a license to export the
+millions of GPUs sold from U.S. companies to China each year—but this would
+increase the number of license applications under its remit by several orders of
+magnitude, creating substantial workforce demands on top of existing logistical and
+resource constraints.39 It could also expand the use of the National Security Foreign
+Direct Product Rule, prohibiting chips produced by TSMC or Samsung from being
+exported to Chinese military end-users; and endeavor to update its lists of Chinese
+military companies at considerable speed. To execute these objectives, Congress
+would need to drastically scale up resources for regulatory and enforcement agencies
+and bring the Department of Commerce into lockstep with the U.S. intelligence
+community.
+Beyond the aforementioned logistical and political constraints, however, three issues
+make playing “whack-a-mole” with the PLA’s AI chip distributors a challenging
+prospect:
+First, chips themselves are hard to track. Although they are technically sophisticated,
+physical inputs to AI development, chips in transit do not carry an easily observable
+signature.40 Even amid the global chip shortage, high-end GPUs are easily found on
+third-party websites like Alibaba, Amazon, and eBay, which account for tens of
+millions of dollars in aftermarket sales.41 The “AI chips” described in this paper are
+widely available worldwide and predominately used in exclusively commercial
+applications.
+Second, the PLA can make use of a variety of intermediary suppliers to source AI chips.
+The 11 detailed contracts in our dataset were awarded to seven different companies,
+some of which are officially authorized U.S. chip resellers. So long as U.S. chip-design
+companies continue to rely on Chinese partners for licensing and distribution, they will
+continue to have little visibility into, or leverage over, the final destinations or end-uses
+of their products in China.
+Finally, focusing narrowly on chip sales to the PLA misses the largest source of China’s
+strength in AI—algorithms developed, trained, and sold by private industry. As
+
+===== PDF_PAGE 18 =====
+Center for Security and Emerging Technology | 17
+previously noted, the PLA likely prefers to contract companies that offer completed or
+easily customizable off-the-shelf AI systems rather than the individual components
+required to assemble them in-house. Due, in part, to the Chinese Communist Party’s
+military-civil fusion (军民融合) strategy, U.S. regulators have struggled to distinguish
+between military and nonmilitary end-users in China.42 A policy framework that
+focuses narrowly on limiting chip sales to the PLA and major defense SOEs risks
+leaving China’s burgeoning AI defense industry intact, and would minimally affect the
+quality of systems and services sold to the PLA.43
+Given the difficulty in tracking chips, the variety of potential intermediaries, and the
+murky line between civil and military end-users in China, there are reasons to doubt
+that even an optimally executed “targeted approach” would meaningfully constrain the
+PLA’s access to AI chips or progress in AI-related technologies.
+Pull the Trigger
+Given the challenges associated with limiting chip sales to specific end-users, U.S.
+policymakers may be tempted to adopt drastic measures to restrict AI chip sales to
+China. So far, the United States has coordinated with the Taiwanese and South Korean
+governments to prevent Chinese chip-design companies from licensing fabrication
+through TSMC and Samsung.44 In an extreme scenario, the Department of Commerce
+could invoke the foreign direct product rule on all U.S.-designed AI chips (defined as
+the 12 nm-node generation or better) fabricated overseas and bound for mainland
+China—irrespective of their intended application or end-user. Throughout January
+2022, the Biden administration publicly signaled that it was considering an expansive
+use of the FDPR to deter Russia’s invasion of Ukraine.45 Then, on February 25, 2022,
+President Biden authorized an outright embargo on U.S.-designed chip exports to
+Russia.46
+Experts hold mixed opinions about the prospect of banning AI chip sales to China.
+Given China’s whole-of-government push to build an indigenous chip manufacturing
+industry, some experts question whether the United States would be capable of
+maintaining Chinese dependence on U.S. chips in the medium- to long-term future.
+Others view U.S.-Chinese economic interdependence as a vulnerability, and contend
+that the Chinese government could hold undue influence over U.S. semiconductor
+companies.
+In theory, an AI chip embargo could temporarily disrupt the Chinese military’s
+development of AI for combat and support applications. But to make an impact, it
+
+===== PDF_PAGE 19 =====
+Center for Security and Emerging Technology | 18
+would have to be invoked well in advance—while China’s indigenous chip production
+capacity is still limited—rather than in response to a crisis.
+Moreover, such a move risks alienating U.S. partners in Taiwan and South Korea.
+Indeed, it would be extremely difficult to persuade leaders in Taipei and Seoul to sign
+onto such a drastic step—especially since the latter already struggles to navigate the
+contentious relationship between Washington and Beijing.47 It is difficult to overstate
+the significance of TSMC and Samsung as strategic assets for Taiwan and South Korea,
+respectively, and their political leaders would likely resist U.S. efforts to impose an
+embargo that may harm their economic and political standing.48
+Looking domestically, suddenly adopting an embargo on AI chip exports could have
+severe and potentially catastrophic consequences for the U.S. semiconductor industry
+and long-term technological innovation. The Chinese market accounts for 25 percent
+of global AI chip consumption, with AI chips sold to China in 2021 amounting to an
+estimated value between $2.5 billion and $5 billion.49 Annual U.S. Securities and
+Exchange Commission filings imply that an all-out embargo would equate to billions
+of dollars in annual losses for U.S. chip-design firms (see Table 4).50
+Table 4: Select U.S. Semiconductor Company Revenues from China (billions of USD)
+ Company 2018 2019 2020 2021
+Percent of Net Revenue Derived
+from China (last year of data)
+Xilinx51 N/A
+
+$0.9B $0.9B $1.0B* 32%
+Nvidia52 N/A $2.8B $2.7B $7.1B 26%
+AMD53 $1.3B $1.7B $2.3B $4.1B 25%
+Intel54 $18.8B $20.0B $20.3B
+
+$21.1B 27%
+Source: Companies’ annual 10-K filings to the U.S. Securities and Exchange Commission—see endnotes
+in column 1. * Xilinx 2021 revenues are projected.
+One solution could be to provide U.S. companies with viable alternatives to the
+Chinese market. The CHIPS for America Act of 2022 offers significant incentives for
+semiconductor companies to construct fabrication facilities in the United States.55 But
+the real challenge would be whether, or how, to compensate for the loss of Chinese
+market access. Even with carefully calibrated incentives and a more robust industrial
+policy, some experts warn that eliminating this source of revenue could have dire
+consequences for U.S. innovation and economic competitiveness.56
+
+===== PDF_PAGE 20 =====
+Center for Security and Emerging Technology | 19
+Beyond the political and economic costs of enforcement, there is a question about
+optimal timing, beyond which “pulling the trigger” would prove ineffective or
+counterproductive to U.S. security interests. An embargo enacted too early would
+allow the Chinese military to find alternative ways to source advanced semiconductors,
+and likely elevate its national push for chip indigenization.57 Enacted too late, an
+embargo would do little to blunt the PLA’s most relevant technological advances—
+especially as China progresses with indigenous chip design and fabrication.58
+Stay the Course
+Given the logistical problems with waging a targeted crackdown on intermediaries,
+and the political and economic costs of enforcing an embargo, the United States is
+more likely to “stay the course” in its approach to Chinese military AI chip access than
+to embark on a substantively different policy path.
+Though counterintuitive, there are also some reasons why the U.S. government may
+want to continue allowing the Chinese military to purchase advanced AI chips. One
+argument is that the United States should pursue a “leaky-faucet strategy” when it
+comes to AI chip exports. By permitting the Chinese military to access enough AI chips
+to function and modernize, U.S. policymakers can undermine proposals to pour even
+more money into China’s indigenous chip industry, while gaining some marginal insight
+into the structure of the Chinese defense industry. But expert opinion on this issue is
+mixed. In discussions with this report’s authors, some experts found it difficult to
+believe that China’s push for semiconductor indigenization has left any stone unturned.
+One former U.S. official argued that “gaining marginal insight” into how the Chinese
+military procures AI chips is a poor rationale for allowing their continued access.
+Second, semiconductors remain one of the United States’ few sources of leverage amid
+the deteriorating U.S.-China relationship. For example, in a truly dire crisis, U.S. senior
+leaders could threaten to prohibit AI chip sales to China in the hopes of heading off a
+military engagement in the South China Sea or similarly destructive activity. Expert
+opinion on this issue is also mixed. While some believe that threatening chip supplies
+could pressure Chinese decisionmakers to walk back from the brink of crisis, others
+argue that Chinese political leaders would likely have already priced in the loss of
+semiconductor imports, were they to stage an attack against Taiwan or another U.S.
+partner. Notably, threatening chip supplies to Russia in early 2022 failed to deter its
+invasion of Ukraine. Chinese political leaders are acutely aware of their dependency on
+the United States for AI chips and a bevy of other chokepoint (卡脖子) technologies—
+but actually “pulling the trigger” would irrevocably sacrifice this deterrent, and would
+have to be executed at the right time⁠—which is difficult to predict⁠—to materially
+impact the PLA’s warfighting capability.59
+
+===== PDF_PAGE 21 =====
+Center for Security and Emerging Technology | 20
+Another Path?
+Each of the three approaches outlined above carries distinct risks, and is unlikely to
+meaningfully inhibit Chinese military progress in AI. The bottom line is that, if U.S.
+policymakers want to more effectively manage PLA access to AI chips, then they will
+need to fundamentally rethink the legal authorities and attitudes that underpin U.S.
+export control and intelligence collection.
+First, restricting Chinese military access to AI chips will require new and creative
+approaches to export control. One path forward could include a tailored set of new,
+technology-based export controls that are applied plurilaterally.60 The U.S. Export
+Control Reform Act of 2018 requires that the Department of Commerce identify and
+control “emerging and foundational technologies” essential to U.S. national security,
+which are not already covered by existing multilateral export control regimes. Under
+ECRA, the Department of Commerce could identify specific types of chips (including
+high-end GPUs), which are relevant to training AI systems, and coordinate with
+partners to screen intended end-users and prevent their export. The Department of
+Commerce could likewise expand the U.S. “military end user” rules and apply them to
+exports of otherwise uncontrolled chips, if they are being used for AI-related research
+or other applications within China.
+Second, to better understand and track commercial connections to China’s defense-
+industrial base, the U.S. government can expand its collection and analysis of open-
+source, Chinese-language information. This brief identified seven Chinese military
+vendors which are not listed in U.S. end-user export control regimes. There is room for
+open-source analysis to address other security challenges. A previous CSET memo
+outlined that “the Intelligence Community (IC) has not emphasized open-source
+intelligence (OSINT), and other potential ‘sponsors’ (e.g., DoD, DoE) have failed to
+develop robust open-source capabilities.”61 This is due in part to restrictions imposed
+by Title 50 authorities, which inhibit the intelligence community from sharing
+information with both governmental and nongovernmental actors.62 One solution could
+be to establish an Open Translation and Analysis Center, which would be located
+outside of the intelligence community and dedicated, in part, to studying China’s
+defense industry and broader innovation base.63
+
+===== PDF_PAGE 22 =====
+Center for Security and Emerging Technology | 21
+Conclusion
+Despite efforts by the Trump and Biden administrations to limit the Chinese military’s
+access to U.S.-origin technology, the PLA is placing orders for U.S.-designed AI chips,
+which are crucial for its progress in AI and broader military modernization. Public
+equipment contracts indicate that the Chinese military purchases U.S.-origin
+equipment through intermediaries, including both officially licensed distributors and
+shell companies, not directly from U.S. semiconductor vendors.
+This policy brief also assessed two potential alternatives to restrict PLA chip access,
+pursuant to the existing U.S. export control system: a targeted crackdown on the PLA’s
+intermediary suppliers, and an embargo of AI chips. We assess that each of these
+alternatives would be less viable than the United States’ current approach to
+managing PLA chip access, and could prove counterproductive to U.S. economic and
+national security interests.
+The problem with a targeted crackdown is that PLA purchasing habits fundamentally
+challenge core tenets of the U.S. export control framework, which are predicated on
+limiting sales to known military end-users or for intended use in military and
+intelligence activities. By comparison, a country-wide AI chip embargo could overcome
+some of the mechanisms by which the PLA gains access to AI chips, and could
+temporarily limit its progress in AI and related technologies. However, actually
+enforcing such an embargo would come with steep political and economic costs, and
+may cause ricochet effects that damage the U.S. semiconductor industry, alienate U.S.
+partners in the region, and backfire against long-term U.S. innovation and
+technological competitiveness.
+Ultimately, effectively limiting Chinese military progress in AI and other cutting-edge
+technologies will require the U.S. government to adopt novel forms of export control,
+which extend well beyond the current focus on visible end-uses and end-users. At the
+same time, the U.S. government should seek to improve its own situational awareness
+by better harnessing open-source information and sharing relevant export information
+with allies and partners.
+
+===== PDF_PAGE 23 =====
+Center for Security and Emerging Technology | 22
+Disclaimer
+The mention of any individual, company, organization, or other entity in this report
+should not be construed to imply the violation of any law or international agreement.
+Authors
+Ryan Fedasiuk is a research analyst at CSET. Karson Elmgren and Ellen Lu are former
+and current CSET research assistants, respectively.
+Acknowledgments
+This report would not have been possible without the input of Will Hunt, who aided in
+U.S. semiconductor industry analysis and revised multiple drafts, as well as Jennifer
+Melot, who facilitated data collection, and Ben Murphy, who provided translation
+support. The authors are especially grateful to Caolionn O'Connell, Matt Turpin, John
+VerWey, and Kevin Wolf for their comprehensive reviews. The authors thank Alex
+Stephenson for research support.
+The authors would also like to thank Catherine Aiken, Shelton Fitch, Igor Mikolic-
+Torreira, Margarita Konaev, Drew Lohn, Matt Mahoney, Dewey Murdick, Lynne Weil,
+and Emily S. Weinstein for their suggestions on style and content.
+
+© 2022 by the Center for Security and Emerging Technology. This work is licensed
+under a Creative Commons Attribution-Non Commercial 4.0 International License.
+To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/4.0/.
+Document Identifier: doi: 10.51593/20210068
+
+===== PDF_PAGE 24 =====
+Center for Security and Emerging Technology | 23
+Appendix A: Chinese Military Purchasers of AI Chips
+Unsurprisingly, the PLA Strategic Support Force—the military branch dedicated to
+cyber, space, and electronic warfare—is the largest purchaser of AI chips in our
+dataset, followed by the Academy of Military Sciences, which conducts military-related
+AI research.
+Table 5: Public AI Chip Contracts Awarded by PLA Units and Defense SOEs or Their
+Subsidiaries, April–November 2020
+Entity (EN) Entity (CH) Total No. AI Chip
+Contracts
+Strategic Support Force 战略支援部队 11
+Academy of Military Sciences 军事科学院 6
+CASC 中国航天科技集团有限公司 4
+AVIC Jonhon Optronic
+Technology Co., Ltd.
+中航光电科技股份有限公司 2
+Navy 海军 1
+Total 24
+Source: CSET corpus of PLA purchasing information (24 contracts for AI chips).
+
+===== PDF_PAGE 25 =====
+Center for Security and Emerging Technology | 24
+Appendix B: Summary of Export Controls Pertaining to Semiconductors
+Several layers of U.S. export control apply to certain types of semiconductor devices
+bound for China. Broadly speaking, these include controls on certain end uses of chips
+(i.e., for military activities or the development of weapons of mass destruction), end
+users of chips (i.e., institutions known to be involved in military activities or human
+rights abuses), and types of chips (i.e., chips that meet certain technical specifications,
+like radiation-hardened chips or microwave power amplifiers). The United States has
+also adopted varying degrees of extraterritorial controls (i.e., chips made or designed
+using U.S.-origin components or software). In addition to U.S.-imposed controls,
+multilateral export control frameworks apply varying degrees of control based on
+intended end-use. The following paragraphs summarize these controls as they apply
+to semiconductors.
+All U.S.-origin semiconductors of any type or capability that are designed or in any way
+modified for any type of military, intelligence, or space application, sensitive or
+otherwise, are subject to worldwide controls. Such chips are embargoed for export
+from the United States or reexport from third countries to China, directly or indirectly,
+regardless of end use or end user.
+Allied countries that are members of the Wassenaar Arrangement control for export
+from their countries such chips, regardless of the chip’s country of origin. The license
+policies on exports of non-U.S.-made chips are inconsistent. Nonetheless, most nations
+generally prohibit the export of bespoke chips to China that are used for overt military
+applications. Taiwan is not a member of the Wassenaar Arrangement, but it is an
+adherent, meaning that it imposes the same controls. South Korea is also a member of
+the Wassenaar Arrangement.
+Extraterritorial Controls
+Any foreign-produced chip of any sort or capability that is designed or modified for any
+type of military, intelligence, or space application that is produced or designed, in
+whole or in part, from U.S.-origin technology or software is subject to U.S.
+extraterritorial controls. The export or reexport of such chips to China, directly or
+indirectly, is prohibited, regardless of end use or end user.
+A foreign-produced item of any type anywhere outside the U.S. that incorporates any
+amount or percentage of such chips is subject to U.S. extraterritorial controls and
+completely embargoed for shipment to China regardless of end use or end user. This is
+known as the “see-through” rule (in the ITAR) or the “zero de minimis” rule (in the
+
+===== PDF_PAGE 26 =====
+Center for Security and Emerging Technology | 25
+EAR). Such chips, whether U.S.- or foreign-produced, “taint” any foreign-produced item
+of any sort into which they are incorporated.
+The installation onto any type of chip, regardless of origin or type, of U.S.-origin
+software or software produced from U.S.-origin technology or software that is directly
+related to or required for a military or intelligence item of any nationality causes the
+chip to become subject to U.S. export controls. The export and reexport of such chips
+(because of the software installed on them) is embargoed for export to China.
+U.S. persons and U.S. companies are prohibited from providing services from the
+United States or from a third country to anyone in China or any Chinese national
+regardless of location. This is true in cases where the services would in any way assist
+in the development, production, or use of a chip designed or modified for any type of
+military or intelligence application. This is also true even if all of the technology,
+software, and underlying commodities are of foreign origin, and otherwise commercial
+and uncontrolled.
+U.S. persons and U.S. companies are also prohibited from providing services involving
+any type of semiconductor (or other item) if in support of the creation of weapons of
+mass destruction or military-intelligence efforts in China.
+Chips that are in any way designed or modified for missile, chemical/biological, or
+nuclear applications are generally subject to equally broad controls by the United
+States and the members of the other three multilateral export control regimes.
+All U.S.-origin “dual-use” chips controlled for “national security” reasons are controlled
+for export from the United States, or reexport from third countries, to China, regardless
+of end use or end user. Such chips are those that are not designed or modified for
+military applications, but the Wassenaar Arrangement allies have decided nonetheless
+have material utility for military applications. Such chips are summarized below. They
+have Export Control Classification Numbers (ECCNs) with a “0” in the middle. The
+United States and Wassenaar allies endeavor to update this list each year.
+The United States and the Wassenaar allies deny such exports if, after reviewing the
+application, they determine there is a risk the chip will be diverted to a military
+application. The United States is generally more risk averse than its allies with respect
+to such assessments, which results in an unlevel playing field between U.S. companies
+and their competitors in Wassenaar countries. The United States also applies a
+broader “national security” standard for civil applications that could support China’s
+military modernization efforts, even if indirectly.
+
+===== PDF_PAGE 27 =====
+Center for Security and Emerging Technology | 26
+All extreme ultraviolet (EUV) lithography tools and their parts and components are
+controlled for “national security” reasons. EUV tools are specific to advanced node
+chips. Many types of advanced etch and deposition tools are also specific to advanced
+node chips for the same reason, although most are not because they are node agnostic.
+Most EDA tools are not specific to advanced node chips because they are agnostic as
+to the type of chip designed. (The control is on the technology that is the design for the
+chip.) The Wassenaar allies, however, agreed in December 2021 to control as
+“national security” items EDA software that specially design for the development of
+chips with a Gate All Around Field Effect Transistor infrastructure. Such software is
+unique to design advanced node semiconductors, but there are questions about how
+much such software actually exists (since it tends to be node agnostic or not specific to
+GAAFET).
+Foreign-produced dual-use chips that are controlled for such “national security”
+reasons are subject to U.S. extraterritorial export controls if they are produced directly
+for U.S.-origin technology or software that is also subject to “national security”
+controls. This is the original foreign direct product rule, and is now called the “National
+Security FDP rule.”
+Foreign-produced chips that are not controlled for “national security” reasons are
+subject to the Export Administration Regulations (EAR) if produced from U.S. software,
+technology, or equipment and destined to anyone if a Huawei company is involved.
+With few exceptions, commercial chips that are (i) basic and not designed or modified
+for military applications and (ii) not controlled for “national security” or other regime-
+based reasons are prohibited without a license (which is rarely granted) for export
+from the United States or reexport from third countries if U.S.-origin if:
+• The end user is on the Entity List, Denied Persons List, Military End User List,
+Military-Intelligence End User List, or the Specially Designated Nationals and
+Blocked Persons List; or
+• The exporter or reexporter has “knowledge” (which is broader than actual
+knowledge) that the:
+o end user in China, even if unlisted, is a “military end user,” which is
+defined broadly to include situations even when the company provides
+any support of any amount for military activities, even if all its other
+activities are purely civil;
+o end use in China would be for a “military end use,” which is to support
+military items even if the item was not originally designed for military
+applications;
+
+===== PDF_PAGE 28 =====
+Center for Security and Emerging Technology | 27
+o the end use in China is a “military-intelligence end use;” or
+o the end user in China is a “military-intelligence end user.”
+Such chips are referred to in the EAR as being controlled for “anti-terrorism reasons”
+only. These controls were created over basic chips decades ago. The list of such chips–
+–which are generally in ECCN 3A991 on the Commerce Control List (and restated, in
+part, in Supp. No. 2 to Part 744)––has been repurposed to attach the end use and end
+user controls described above.
+• Until the allied response to Russia’s invasion of Ukraine, these end-use and
+end-user controls were completely unilateral, meaning no other country had
+such controls. A growing group of more than 30 countries have adopted their
+own controls on exports to Russia of basic semiconductor and other items that
+have historically been unilaterally controlled only by the United States.
+• Whether the allies have the authority and political will to create such controls
+against other countries, such as China, is a current topic of debate.64
+The military end-use/end-user controls also apply to the export of virtually all types of
+semiconductor design (e.g., EDA) and production tools (e.g., etch, deposition,
+inspection, and metrology). These end-use/end-user controls are also completely
+unilateral.
+The “dual-use” chips controlled for “national security” reasons (i.e., Wassenaar items)
+are in Category 3 of the Department of Commerce’s Control List. Relevant chips
+include the following characteristics:
+• radiation-hardened (3A001.a.1)
+• temperature-hardened (3A001.a.2)
+• compound semiconductors that operate at a clock frequency exceeding 40 MHz
+(3A001.a.3)
+• analog to digital converters with specific capabilities (3A001.a.5)
+• electro-optical chips designed for signal processing (3A001.a.6)
+• FPGAs that have a maximum number of single-ended digital inputs/outputs of
+greater than 700 or an aggregate one-way peak serial transfer data rate of
+greater than 500 5G/s or greater (3A001.a.7) (This standard catches most
+modern FPGAs.)
+• “neural network integrated circuits,” which is an undefined term (3A001.a.9)
+• 4A004 controls “neural computers,” which are defined as “computational
+devices designed or modified to mimic the behavior of a neuron or collection of
+neurons. . . ”
+
+===== PDF_PAGE 29 =====
+Center for Security and Emerging Technology | 28
+• Custom integrated circuits for which the function is unknown and the chip as
+basic characteristics (3A001.a.10)
+• Digital integrated circuits based on compound semiconductors with certain
+capabilities (3A001.a.11)
+• Fast fourier transform processors with specific capabilities (3A001.a.12)
+• Direct digital ICs with specific capabilities (3A001.a.13)
+• Chips that perform analog-to-digital conversions that have particular
+capabilities (3A001.a.14)
+• Vacuum electronic devices with specific characteristics (3A001.b.1)
+• Monolithic Microwave Integrated Circuits with specific characteristics
+(3A001.b.2)
+• Discrete microwave transistors with specific characteristics (3A001.b.3)
+• Microwave sold state amplifiers with specific characteristics (3A001.b.4)
+• Electronically or magnetically tunable band-pass filters with specific
+characteristics (3A001.b.5)
+• Converters and harmonic mixers (3A001.b.6)
+• Microwave power amplifiers and modules with specific characteristics
+(3A001.b.7, b.8, b.9)
+• Oscillators with specific characteristics (3A001.b.10)
+• Frequency synthesizer electronic assemblies with specific characteristics
+(3A001.b.11)
+• Transmit/receive modules of various types (3A001.b.12)
+• Acoustic wave devices with specific characteristics (3A001.c)
+• Chips made from superconductive materials with specific characteristics
+(3A001.d)
+Until the allied response to Russia’s invasion of Ukraine was set into effect, the United
+States had for decades unilaterally controlled the types of semiconductors listed
+below. They are among the types of items covered by the Military End Use rule, which
+means that if the exporter of such items from the United States has knowledge that
+they will be for a military end use or a military end user in China (and a few other
+countries), then a license would be required. In essence, they are the following:
+• Integrated circuits that have performance speed of 5 GFLOPS or more and an
+arithmetic logic unit with an access width of 32 bit or more (3A991.a.1); a clock
+frequency rate exceeding 25 MHz (3A991.a.2); or more than one data or
+instruction bus or serial communication port that provides a direct external
+interconnection between parallel “microprocessor microcircuits” with a transfer
+rate of 2.5 Mbyte/s (3A991.a.3).
+• Storage integrated circuits, that:
+
+===== PDF_PAGE 30 =====
+Center for Security and Emerging Technology | 29
+
+o Are electrical erasable programmable read-only memories (EEPROMs)
+with a storage capacity (3A991.b.1);
+o Exceed 16 Mbits per package for flash memory types (3A991.b.1.a); or
+o Exceed 1 Mbit per package; or exceed 256 kbit per package and a
+maximum access time of less than 80 ns. (3A991.b.1.b)
+• Static random access memories with a storage capacity exceeding 1 Mbit per
+package or exceeding 256 kbit per package and a maximum access time of less
+than 25 ns. (3A991.b.2)
+• Analog-to-digital converters having a resolution of 8 bit or more, but less than
+12 bit, with an output rate greater than 200 million words per second
+(3A991.c.1); a resolution of 12 bit with an output rate greater than 105 million
+words per second (3A991.c.2); a resolution of more than 12 bit but equal to or
+less than 14 bit with an output rate greater than 10 million words per second
+(3A991.c.3); or a resolution of more than 14 bit with an output rate greater than
+2.5 million words per second (3A991.c.4)
+• Field programmable logic devices having a maximum number of single-ended
+digital input/outputs between 200 and 700 (3A991.d)
+• Fast Fourier Transform processors having a rated execution time for a 1,024
+point complex FFT of less than 1 ms (3A991.e)
+• Custom integrated circuits for which either the function is unknown, or the
+control status of the equipment in which the integrated circuits will be used is
+unknown to the manufacturer, having more than 144 terminals; or a typical
+“basic propagation delay time” of less than 0.4 ns. (3A991.f)
+
+===== PDF_PAGE 31 =====
+Center for Security and Emerging Technology | 30
+Endnotes
+
+1 “Military and Security Developments Involving the People's Republic of China,” U.S. Department of
+Defense, October 2021, https://media.defense.gov/2021/Nov/03/2002885874/-1/-1/0/2021-CMPR-
+FINAL.PDF.
+2 Saif M. Khan and Alexander Mann, “AI Chips: What They Are and Why They Matter,” Center for
+Security and Emerging Technology, April 2020, https://cset.georgetown.edu/research/ai-chips-what-
+they-are-and-why-they-matter/.
+3 Clive Maxfield, “How big is a bacterium compared to a transistor?,” EETimes, June 27, 2007,
+https://www.eetimes.com/how-big-is-a-bacterium-compared-to-a-transistor/#.
+4 “How Do Integrated Circuits Work?,” Linear Microsystems, January 6, 2020,
+https://linearmicrosystems.com/integrated-circuit-work/.
+5 Some very high-end CPUs can also be used to train machine learning systems and considered “AI
+chips,” but are much less common than GPUs, FPGAs, or AI ASICs. See:
+https://cset.georgetown.edu/research/ai-chips-what-they-are-and-why-they-matter/.
+6 Khan and Mann, “AI Chips: What They Are and Why They Matter.”
+7 Saif M. Khan, “Securing Semiconductor Supply Chains,” Center for Security and Emerging Technology,
+January 2021, https://cset.georgetown.edu/publication/securing-semiconductor-supply-chains/.
+8 Khan, “Securing Semiconductor Supply Chains.”
+9 “Global Semiconductor Sales Increase 24% Year-to-Year in October,” Semiconductor Industry
+Association, December 3, 2021, https://www.semiconductors.org/global-semiconductor-sales-increase-
+24-year-to-year-in-october-annual-sales-projected-to-increase-26-in-2021-exceed-600-billion-in-
+2022/.
+10 To learn more about individual semiconductor components and U.S. policies governing their export,
+please refer to Khan, “Securing Semiconductor Supply Chains.”
+11 James A. Lewis, “Learning the Superior Techniques of the Barbarians: China’s Pursuit of
+Semiconductor Independence,” Center for Strategic and International Studies, January 2019, http://csis-
+website-prod.s3.amazonaws.com/s3fs-public/publication/190115_Lewis_Semiconductor_v6.pdf.
+12 “China’s Share of Global Chip Sales Now Surpasses Taiwan’s, Closing in on Europe’s and Japan’s,”
+Semiconductor Industry Association, January 10, 2022, https://www.semiconductors.org/chinas-share-
+of-global-chip-sales-now-surpasses-taiwan-closing-in-on-europe-and-japan/.
+13 This balance is exhibited in friction in the U.S. policy process, which extends well beyond AI chips: In
+her speech outlining a “New Approach to the U.S.-China Trade Relationship,” U.S. Trade Representative
+Katherine Tai underscored that “Our objective is not to inflame trade tensions with China. Durable
+coexistence requires accountability and respect for the enormous consequences of our actions,”
+https://ustr.gov/about-us/policy-offices/press-office/speeches-and-remarks/2021/october/remarks-
+
+===== PDF_PAGE 32 =====
+Center for Security and Emerging Technology | 31
+
+prepared-delivery-ambassador-katherine-tai-outlining-biden-harris-administrations-new. By
+comparison, National Security Advisor Jake Sullivan has argued that “we have to work closely and
+especially closely with our partners on our export control and investment screening regimes to make
+sure they are postured for intense technology competition,” https://www.whitehouse.gov/nsc/briefing-
+room/2021/07/13/remarks-by-national-security-advisor-jake-sullivan-at-the-national-security-
+commission-on-artificial-intelligence-global-emerging-technology-summit/. Popular reporting has
+outlined some of the Biden administration’s competing equities on China policy. See Bob Davis, “Biden
+Promised to Confront China. First He Has to Confront America’s Bizarre Trade Politics,” POLITICO,
+January 31, 2022, https://www.politico.com/news/magazine/2022/01/31/biden-china-trade-politics-
+00003379; and Hans Nichols, “Scoop: Inside Biden aides' China fight,” Axios, January 30, 2022,
+https://www.axios.com/biden-aides-china-spat-85a34544-36d7-4b8e-b564-3da14dddabc2.html. This
+is to say nothing about security-minded pressure from Capitol Hill. “Cotton, Colleagues Call on
+Department of Commerce to Implement Export Control Laws or Risk Losing Export Control Authority,”
+Office of U.S. Senator Tom Cotton, June 15, 2021, https://www.cotton.senate.gov/news/press-
+releases/cotton-colleagues-call-on-department-of-commerce-to-implement-export-control-laws-or-
+risk-losing-export-control-authority.
+14 One likely reason GPUs are not a controlled commodity is because they are a widely demanded
+consumer good with several applications beyond AI training and processing. For an explanation of the
+current GPU shortage, see Jacob Roach, “A complete, chronological history of the catastrophic GPU
+shortage,” Digital Trends, July 25, 2021, https://www.digitaltrends.com/computing/catastrophic-gpu-
+shortage-a-chronological-history/.
+15 Khan, “Securing-Semiconductor Supply Chains.”
+16 For a more detailed explanation of procurement in the Chinese military and the contents of this
+dataset, see Ryan Fedasiuk, Jennifer Melot, and Ben Murphy, “Harnessed Lightning: How the Chinese
+Military is Adopting Artificial Intelligence,” Center for Security and Emerging Technology, October 2021,
+https://cset.georgetown.edu/publication/harnessed-lightning/.
+17 These include winning bid announcements (中标公告) and single-source procurement awards (单一来
+源公示 or 单一来源公告).
+18 While we believe many of these contracts are likely for CPUs and distinctly non-AI chips, it is possible
+that some of them actually do account for AI chips, which would not be detected in our analysis.
+19 The applied research lab OpenAI trained GPT-3, the world’s most sophisticated language transformer
+at that time, on a supercomputer that featured 285,000 CPU cores, ten thousand GPUs, and four
+hundred gigabits per second of network connectivity. Jennifer Langston, “Microsoft announces new
+supercomputer, lays out vision for future AI work,” Microsoft, May 19, 2020,
+https://blogs.microsoft.com/ai/openai-azure-supercomputer/.
+20 Fedasiuk, Melot, and Murphy, “Harnessed Lightning.”
+21 Fedasiuk, Melot, and Murphy, “Harnessed Lightning.”
+
+===== PDF_PAGE 33 =====
+Center for Security and Emerging Technology | 32
+
+22 In 2021, Huawei trained Pangu-Alpha, its GPT-3 competitor, on more than 2,000 of its own Ascend
+910 AI chips. Wei Zeng et al, “PanGu-α: Large-scale Autoregressive Pretrained Chinese Language
+Models with Auto-parallel Computation,” arXiv:2104.12369 [cs.CL].
+23 Khan, “Securing Semiconductor Supply Chains.”
+24 Saif M. Khan, Alexander Mann, and Dahlia Peterson, “The Semiconductor Supply Chain: Assessing
+National Competitiveness,” Center for Security and Emerging Technology, January 2021,
+https://cset.georgetown.edu/wp-content/uploads/The-Semiconductor-Supply-Chain-Issue-Brief.pdf.
+25 Intel’s Xeon 8260 is an extraordinarily sophisticated 24-core CPU designed to run data-intensive
+tasks, and is considered an AI chip.
+26 “AI chips” are defined here as GPUs, FPGAs, and ASICs designed for AI training or inference. Typically
+these logic chips are manufactured using a 12 nm node process or better.
+27 For example, Jingjia Microelectronics won contracts to supply 240 MWG122 GPUs to the Aviation
+Industry Corporation of China, and an unknown number of G6112 GPUs to the China Aerospace Science
+and Technology Corporation. Both of these are low-end processors not suitable for training machine
+learning applications.
+28 Saif M. Khan and Carrick Flynn, “Maintaining China’s dependence on democracies for advanced
+computer chips,” Brookings Institution, April 2020, https://www.brookings.edu/research/maintaining-
+chinas-dependence-on-democracies-for-advanced-computer-chips/.
+29 Four of the 11 AI chip contracts did not mention a vendor.
+30 Information available upon request.
+31 “About Us,” SITONHOLY, accessed January 2022, https://perma.cc/LSY2-RBWU. Nvidia also lists
+SITONHOLY as an elite-level partner on its website: https://www.nvidia.com/en-us/about-
+nvidia/partners/partner-locator/; archived at https://perma.cc/6QFK-52ZQ.
+32 “About Us,” SITONHOLY.
+33 Information available upon request.
+34 “Beijing Hengsheng Technology Co., Ltd.,” financial records and registry information made available
+by Kanzhun, accessed January 2022, https://perma.cc/NW6A-WJSX. The company is registered to the
+Modern Manufacturing Technology Industrial Park of Beijing Academy of Science and Technology (北京
+市科学技术研究院现代制造技术产业园部分企业). According to public financial records, the company’s
+legal representative and sole shareholder is Tian Haitao (田海涛). This may be the same Tian Haitao who
+is the deputy director of Henan Province’s Department of Industry and Information Technology. Tian
+leads inspections of semiconductor companies in Henan Province, and makes frequent visits to Beijing:
+“Tian Haitao, deputy director of the Henan Provincial Department of Industry and Information
+Technology, led a team to investigate and guide the Provincial Electronic Quality Inspection Institute” [河
+南省工业和信息化厅副厅长田海涛带队调研指导省电子质检院], Sohu post, November 10, 2021,
+https://perma.cc/3PY9-YS5K.
+
+===== PDF_PAGE 34 =====
+Center for Security and Emerging Technology | 33
+
+35 For example, the U.S. government has made use of new and expanded limits on military end-users
+and broader interpretations of the FDPR to take action against Huawei (HiSilicon). See analysis by
+Sherisse Pham, “Losing Huawei as a customer could cost U.S. tech companies $11 billion,” CNN
+Business, May 17, 2019, https://www.cnn.com/2019/05/17/tech/huawei-us-ban-suppliers/index.html;
+and David Shepardson, “FCC votes to finalize program to replace Huawei equipment in U.S networks,”
+Reuters, July 13, 2021, https://www.reuters.com/business/media-telecom/fcc-votes-finalize-program-
+replace-huawei-equipment-us-networks-2021-07-13/.
+36 85 Fed. Reg. 23459 (Apr. 20, 2020), https://www.bis.doc.gov/index.php/documents/regulations-
+docs/federal-register-notices/federal-register-2020/2545-85-fr-23459/file.
+37 Mi-Yong Kim and Scott Jones, “A singular list (with many dimensions),” World Export Control Review
+104 (November 2021): https://www.bassberry.com/wp-content/uploads/entitiy-lists-export.pdf.
+38 Fedasiuk, Melot, and Murphy, “Harnessed Lightning.”
+39 The U.S. Bureau of Industry and Security currently processes about forty thousand export license
+applications each year. By comparison, millions of GPUs are sold to Chinese customers. “Annual Report
+to Congress for Fiscal Year 2020,” U.S. Department of Commerce Bureau of Industry and Security (BIS),
+https://www.bis.doc.gov/index.php/documents/pdfs/2711-2020-bis-annual-report-final/file.
+40 Paul Mozur and Don Clark, “China’s Surveillance State Sucks Up Data. U.S. Tech Is Key to Sorting It,”
+New York Times, January 20, 2021, https://www.nytimes.com/2020/11/22/technology/china-intel-
+nvidia-xinjiang.html.
+41 Michael Kan, “Scalpers Have Sold 50,000 Nvidia RTX 3000 GPUs Through eBay, StockX,” PCMag,
+January 27, 2021, https://www.pcmag.com/news/scalpers-have-sold-50000-nvidia-rtx-3000-gpus-
+through-ebay-stockx.
+42 William Alan Reinsch, “Unpacking Expanding Export Controls and Military-Civil Fusion,” Center for
+Strategic and International Studies, May 14, 2020, https://www.csis.org/analysis/unpacking-expanding-
+export-controls-and-military-civil-fusion; and Alex Stone and Peter W. Singer, “China’s Military-Civil
+Fusion Strategy: What to Expect in the Next Five Years,” Defense One, February 18, 2021,
+https://www.defenseone.com/ideas/2021/02/china-military-civil-fusion-strategy-next-five-
+years/172143/.
+43 For one example, the PLA Ground Force has awarded contracts to one of China’s largest enterprise AI
+companies, 4Paradigm. See Ellen Nakashima and Jeanne Whalen, “Biden administration concerned
+about U.S. investments in Chinese tech companies with military or surveillance ties,” Washington Post,
+December 16, 2021, https://www.washingtonpost.com/national-security/us-investments-china-
+biden/2021/12/15/835876a0-5772-11ec-a808-3197a22b19fa_story.html.
+44 In April 2021, U.S. Senators Tom Cotton and Michael McCaul called on the Commerce Department to
+expand this practice: https://www.cotton.senate.gov/imo/media/doc/edaletter.pdf.
+
+===== PDF_PAGE 35 =====
+Center for Security and Emerging Technology | 34
+
+45 Ellen Nakashima and Jeanne Whalen, “U.S. threatens use of novel export control to damage Russia’s
+strategic industries if Moscow invades Ukraine,” Washington Post, January 23, 2022,
+https://www.washingtonpost.com/national-security/2022/01/23/russia-ukraine-sanctions-export-
+controls/; and Jeffrey J. Schott, “Will tough U.S. sanctions deter Russian aggression in Ukraine?,”
+Peterson Institute for International Economics, February 1, 2022, https://www.piie.com/blogs/realtime-
+economic-issues-watch/will-tough-us-sanctions-deter-russian-aggression-ukraine.
+46 This embargo not only applies to exports of 3A991 and other “anti-terrorism” items destined to
+Russia (or Belarus), but it also applies to foreign-produced semiconductors produced from U.S.
+technology, software, or tools. All such items are prohibited for export to Russia, with few exceptions.
+Foreign-made semiconductors and other items not identified on the U.S. Department of Commerce’s
+Control List are prohibited for shipment from outside the United States to Russia if there would be a
+military end use or military end user involved. Unlike China-specific unilateral controls imposed by the
+United States, more than 30 allies agreed to impose controls on exports to Russia from their countries of
+semiconductors and other items that had previously only been controlled for export by the United
+States. See Eamon Barrett, “Russia buys 70% of its chips from China, but the U.S.’s blockade of
+American semiconductors will still hit Putin hard,” Fortune, February 25, 2022,
+https://fortune.com/2022/02/25/biden-ban-chip-semiconductors-exports-russia-ukraine/.
+47 Tobias Harris, Abigail Bard, and Haneul Lee, “The China Difference in the U.S.-South Korea Alliance,”
+Center for American Progress, December 14, 2021, https://www.americanprogress.org/article/the-china-
+difference-in-the-u-s-south-korea-alliance/; and Ryan Fedasiuk, “Strengthening the U.S.-ROK
+Technology Alliance,” Sejong Institute, December 3, 2021,
+https://koreaonpoint.org/view.php?page=3&idx=61.
+48 Some reviewers were more optimistic that Taiwan and South Korea could be persuaded to adopt an
+embargo, “particularly if other electronics manufacturing opportunities open up.” One reviewer pointed
+out that “the market for these chips is very liquid,” and argued that “chips wouldn’t go unsold since
+demand exceeds supply.”
+49 We thank Will Hunt and John VerWey for their contributions to this analysis. This number is also
+expected to increase quickly over time as the market for AI chips grows. By comparison, Russian
+consumption accounts for a much smaller share of the global AI chip market.
+50 Some experts are skeptical of this claim, noting the magnitude of the global chip shortage. One
+reviewer commented that “these chips will not go unsold.”
+51 Xilinx 10-K filing, https://investor.xilinx.com/static-files/3f77caaa-e0e9-4e8a-a2ee-3f40d4536bd9.
+Accessed April 1, 2022.
+52 NVIDIA 10-K filing,
+https://www.sec.gov/ix?doc=/Archives/edgar/data/0001045810/000104581022000036/nvda-
+20220130.htm. Accessed April 1, 2022.
+53 AMD 10-K filing,
+https://www.sec.gov/ix?doc=/Archives/edgar/data/2488/000000248822000016/amd-20211225.htm.
+Accessed April 1, 2022.
+
+===== PDF_PAGE 36 =====
+Center for Security and Emerging Technology | 35
+
+54 Intel 10-K filing, https://www.intc.com/filings-reports/all-sec-filings?form_type=10-
+K&year=#document-5130-0000050863-22-000007-2. Accessed April 1, 2022.
+55 Will Hunt, “Sustaining U.S. Competitiveness in Semiconductor Manufacturing: Priorities for CHIPS Act
+Incentives,” Center for Security and Emerging Technology, January 2022,
+https://cset.georgetown.edu/publication/sustaining-u-s-competitiveness-in-semiconductor-
+manufacturing/.
+56 For example, see the statement from the Semiconductor Industry Association quoted in Nakashima
+and Whalen, “U.S. threatens use of novel export control.”
+57 Lorand Laskai, “Why Blacklisting Huawei Could Backfire: The History of Chinese Indigenous
+Innovation,” Foreign Affairs, June 19, 2019, https://www.foreignaffairs.com/articles/china/2019-06-
+19/why-blacklisting-huawei-could-backfire.
+58 “White Paper on China’s Computing Power Development Index” [中国算力发展指数白皮书], original
+CSET translation by Ben Murphy, November 19, 2021, https://cset.georgetown.edu/publication/white-
+paper-on-chinas-computing-power-development-index/.
+59 Semiconductors are not China’s only technology import dependency. See 34 other “chokepoint”
+technologies identified in Ben Murphy, "Chokepoints: China’s Self-Identified Strategic Technology
+Import Dependencies," Center for Security and Emerging Technology, May 2022,
+https://doi.org/10.51593/20210070.
+60 See a related proposal by Kevin Wolf and Emily S. Weinstein, “COCOM’s daughter?,” World Export
+Control Review 109 (May 2022): https://cset.georgetown.edu/article/cocoms-daughter/.
+61 Tarun Chhabra, William Hannas, Dewey Murdick, and Anna Puglisi, “Open-Source Intelligence for
+S&T Analysis,” Center for Security and Emerging Technology, September 2020,
+https://cset.georgetown.edu/publication/open-source-intelligence-for-st-analysis/.
+62 Chhabra, Hannas, Murdick, and Puglisi, “Open-Source Intelligence for S&T Analysis.”
+63 “Congressman Castro Introduces Bipartisan Bill to Create China and Russian Translation and Analysis
+Center,” Office of Joaquin Castro, July 28, 2021, https://castro.house.gov/media-center/press-
+releases/congressman-castro-introduces-bipartisan-bill-to-create-china-and-russian-translation-and-
+analysis-center.
+64 For example, see “Public Comments of Kevin Wolf, Emily Kilcrease, and Jasper Helder Regarding
+Areas and Priorities for US and EU Export Control Cooperation under the US-EU Trade and Technology
+Council,” January 14, 2022, https://s3.us-east-1.amazonaws.com/files.cnas.org/documents/011422.US-
+EU.TTC.Wolf.Kilcrease.Helder.FINAL.pdf?mtime=20220118112213&focal=none; and “US, Allies
+Should Establish New Multilateral Export Control Regime, Experts Say,” Export Compliance Daily, May
+25, 2022,
+https://exportcompliancedaily.com/article/view?search_id=552196&id=1261400&BC=bc_628e33fec59
+33.

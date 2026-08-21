@@ -1,0 +1,43 @@
+# C-CSET-3402 原文切片
+
+- 原文：`03_证据底稿\原文PDF\C-CSET-3402.pdf`
+- PDF页数：2
+- 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
+
+## 执行摘要与开篇候选
+
+## T1_国家研发与方向设定
+
+- PDF页2：ist that “may involve” ByteDance’s technology, to include TikTok. Xinhua’s publication of Cui’s comments suggests that the Chinese leadership is moving toward blocking the sale of TikTok to the United States. However, the fact that Xinhua is quoting an academic rather than a PRC government official indicates that Beijing has not made a final decision and is preserving some plausible deniability in case the Communist Party leadership decides to allow the sale of TikTok to go forward. To view this article (in Chinese), visit: ​ https://web.archive.org/web/20200831203957/http://www.xinhuanet.com/2020-08/29/c_1126428865.htm 3 Translator’s note: Professor Cui Fan, in the Xinhua article cited above, identified item 21 as the second of two new additions to the export control list that “may involve” ByteDan
+
+## T2_市场与产业政策边界
+
+未自动命中；需人工按目录复核。
+
+## T4_国际合作与开放
+
+未自动命中；需人工按目录复核。
+
+## T5_供应链与技术依赖
+
+未自动命中；需人工按目录复核。
+
+## T7_管制与研究安全
+
+- PDF页1：deleted from China’s list of export-controlled technology. The list includes technologies that Chinese companies are flat-out prohibited from exporting, as well as export-restricted technologies that can be exported only if the exporter receives special permission. Although the export control list does not mention TikTok or its PRC parent company ByteDance by name, the additions to the export-restricted list include two types of technology that PRC state press agency Xinhua identified with TikTok. The following excerpt is a translation of the newly added TikTok-related items in the PRC export control list. Title Revisions to the Content of the ​ Catalog of Prohibited or Restricted Technology Exports 《中国禁止出口限制出口技 术 目 录 》 调 整内容 Author PRC Ministry of Commerce ( 商 务 部 ) Source Ministry of Commerce website
+
+- PDF页1：on TikTok or its PRC parent company ByteDance by name, the additions to the export-restricted list include two types of technology that PRC state press agency Xinhua identified with TikTok. The following excerpt is a translation of the newly added TikTok-related items in the PRC export control list. Title Revisions to the Content of the ​ Catalog of Prohibited or Restricted Technology Exports 《中国禁止出口限制出口技 术 目 录 》 调 整内容 Author PRC Ministry of Commerce ( 商 务 部 ) Source Ministry of Commerce website, August 28, 2020. The Chinese source text is available online at: https://web.archive.org/web/20200831190724/http://images.mofcom.gov.cn/fms/202008/2020082820091100 3.pdf Translation Date August 31, 2020 Translator Ben Murphy, CSET Translation Lead Revisions to the Content of the ​ Catalog of Prohibited or Restr
+
+- PDF页1：printing, machine tools, specialized equipment for various industries, traffic and transportation technology, telecommunications, remote sensing and radar, UAVs, and electric and thermal power generation.] 1 Translator’s note: The additions and deletions to Section I of China’s export control list involve agriculture, pharmaceuticals, traffic and transportation technology, machine tools, and telecommunications.
+
+- PDF页2：for various industries.] 2 Translator’s note: An August 29, 2020 article in Chinese state press agency Xinhua cited “authoritative expert” Professor Cui Fan ( 崔凡 ) of University of International Business and Economics as saying that item 18 is one of two new additions to China’s export control list that “may involve” ByteDance’s technology, to include TikTok. Xinhua’s publication of Cui’s comments suggests that the Chinese leadership is moving toward blocking the sale of TikTok to the United States. However, the fact that Xinhua is quoting an academic rather than a PRC government official indicates that Beijing has not made a final decision and is preserving some plausible deniability in case the Communist Party leadership decides to allow the sale of TikTok to go forward. To view this article (in Chine
+
+- PDF页2：rd. To view this article (in Chinese), visit: ​ https://web.archive.org/web/20200831203957/http://www.xinhuanet.com/2020-08/29/c_1126428865.htm 3 Translator’s note: Professor Cui Fan, in the Xinhua article cited above, identified item 21 as the second of two new additions to the export control list that “may involve” ByteDance and TikTok.
+
+## T8_新兴技术治理
+
+- PDF页2：synthesis technology (including textual corpus design, recording, and tagging technology, speech signal feature analysis and extraction technology, text feature analysis and prediction technology, speech feature statistical probability method construction technology, etc.). 18. Artificial intelligence (AI) interactive interface technology (including speech recognition technology, microphone array technology, speech waking technology, interactive understanding technology, etc.). 19. Speech evaluation technology 2 (including automated scoring technology for reading aloud, automated scoring technology for spoken expression, error checking technology for pronunciation, etc.). 20. Intelligent grading technology (including technology for recognizing scans of printed text, technology for recognizing scans of handwritt
+
+## T10_预见与优先领域
+
+未自动命中；需人工按目录复核。
