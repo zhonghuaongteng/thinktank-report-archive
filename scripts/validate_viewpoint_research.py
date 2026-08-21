@@ -43,7 +43,14 @@ def main() -> None:
     assert len(catalog) == 154, len(catalog)
     assert len(evidence) == 24, len(evidence)
     assert len(list((root / "02_机构轨迹卡").glob("*.md"))) == 11
-    assert len(list((root / "03_证据底稿" / "原文PDF").glob("*.pdf"))) == 12
+    pdfs = list((root / "03_证据底稿" / "原文PDF").glob("*.pdf"))
+    assert len(pdfs) >= 46, len(pdfs)
+    assert len(list((root / "03_证据底稿" / "文本").glob("*.txt"))) >= len(pdfs)
+    assert len(list((root / "03_证据底稿" / "切片").glob("*.md"))) >= len(pdfs)
+    assets = rows(root / "19_本地全文资产台账.csv")
+    assert len(assets) == len(seeds)
+    assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in assets) >= 46
+    assert all(len(r["SHA256"]) == 64 for r in assets if r["本地PDF"])
     assert {r["观察窗"] for r in seeds} == {"W1", "W2", "W3"}
     assert all(r["官方页面或PDF"].startswith("https://") for r in seeds)
     seed_text = (root / "05_官方锚点种子.csv").read_text(encoding="utf-8-sig")
@@ -69,7 +76,7 @@ def main() -> None:
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv"))
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "06_数据资产" / "数据资产清单.csv"))
     print("viewpoint_research_validation=ok")
-    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs=12")
+    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)}")
 
 
 if __name__ == "__main__":

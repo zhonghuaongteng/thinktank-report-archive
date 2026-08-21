@@ -1,6 +1,6 @@
 # S-NISTEP-2024-01 原文切片
 
-- 原文：`C:\Users\WINDOWS\OneDrive\知识库\智库信息爬虫\国际主要科技智库观点演变_研判\03_证据底稿\原文PDF\S-NISTEP-2024-01.pdf`
+- 原文：`国际主要科技智库观点演变_研判\03_证据底稿\原文PDF\S-NISTEP-2024-01.pdf`
 - PDF页数：28
 - 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
 
@@ -145,7 +145,7 @@ R&D expenditures. Growth in R&D expenditure in Japan's b usiness enterprises sec
 most recent year it increased by 6.4% compared to the previous year. R&D expenditure contributed by the 
 government sector increased by 44% over the same period. Although its weight in the overall business enterprises 
 sector is small, the government sector also contributed to the increase in R&D expenditure. In the sector of 
-“universities and colleges”, Japan's R&D expenditure has remained almost flat since the 2000s, and has been 
+“universities and colleges” , Japan's R&D expenditure has remained almost flat since the 2000s, and has been 
 surpassed by those of China and Germany, which have grown rapidly since the 2010s. 
  
 [Summary Chart 2] Nominal values of R&D expenditure by “business enterprises” and “universities and colleges” 
@@ -289,7 +289,7 @@ Reference: Chart 3-2-3, Japanese Science and Technology Indicators 2024 (in Japa
  
  
 Note: 
-“Others” in the Chart (A) are “Education,” “Arts,” “Merchant Marine,” and “Domestic Science,” as well as “Others,” which indicates “Others” in the “Departmental Classification 
+“Others” in the Chart (A) are “Education,” “Arts,” “Merchant Marine,” and “Domestic Science,” as well as “Others,” which indicates “Others” in the “Dep artmental Classification 
 Table” of the “Report on School Basic Survey.” The names of major study fields included in this category often use words such as “Environment,” “Human,” “Information,” 
 “International,” and so on. 
  
@@ -408,7 +408,7 @@ Sciences” and doubled in the “Humanities, Social Sciences, and Others”, wh
 almost flat in both fields. 
 Enrollment in master's programs increased until the mid -2000s for females and until the early 2000s for male s; it 
 temporarily declined in the 2010s, but has been increasing since the mid-2010s for females and since FY2020 for males. 
-Compared to FY1990, the number of female s in “Natural Sciences” increased eightfold, and that in “Humanities and 
+Compared to FY1990, the number of female s in “Natural Sciences” increased eightfold , and that in “Humanities and 
 Social Sciences and Other” increased fourfold. The number of males in “Humanities, Social Sciences and Others” has 
 tripled, while the number in “Natural Sciences” has doubled. 
 Enrollment in doctoral programs has been on a downward trend since peaking in 2004 for female s and 2003 for 
@@ -673,7 +673,7 @@ Intensity of research personnel [proportion of researchers among employees (%)]
 
 ## T1_国家研发与方向设定
 
-- PDF页6：seen strong growth since the 2010s. China is also increasing its R&D expenditures. Growth in R&D expenditure in Japan's b usiness enterprises sector has been slow, but in the most recent year it increased by 6.4% compared to the previous year. R&D expenditure contributed by the government sector increased by 44% over the same period. Although its weight in the overall business enterprises sector is small, the government sector also contributed to the increase in R&D expenditure. In the sector of “universities and colleges”, Japan's R&D expenditure has remained almost flat since the 2000s, and has been surpassed by those of China and Germany, which have grown rapidly since the 2010s. [Summary Chart 2] Nominal values of R&D expenditure by “business enterprises” and “universities and colleges” (based
+- PDF页6：seen strong growth since the 2010s. China is also increasing its R&D expenditures. Growth in R&D expenditure in Japan's b usiness enterprises sector has been slow, but in the most recent year it increased by 6.4% compared to the previous year. R&D expenditure contributed by the government sector increased by 44% over the same period. Although its weight in the overall business enterprises sector is small, the government sector also contributed to the increase in R&D expenditure. In the sector of “universities and colleges” , Japan's R&D expenditure has remained almost flat since the 2000s, and has been surpassed by those of China and Germany, which have grown rapidly since the 2010s. [Summary Chart 2] Nominal values of R&D expenditure by “business enterprises” and “universities and colleges” (based
 
 ## T2_市场与产业政策边界
 
