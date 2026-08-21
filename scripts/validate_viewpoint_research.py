@@ -33,6 +33,8 @@ def main() -> None:
         "09_观点变化证据表.csv", "10_长期核心观点表.csv", "11_新观点检验表.csv",
         "12_机构群体构成变化表.csv", "13_竞争性解释与零假设.md", "14_政策吸收验证表.csv",
         "15_反证与异常机构清单.md", "16_信度检验记录.md", "17_战略故事候选稿.md", "18_专报主稿.md",
+        "23_早期旗舰报告增补台账.csv", "24_早期旗舰报告增补结果.md",
+        "25_早期连续覆盖矩阵.csv", "26_早期材料主题索引.csv",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -42,11 +44,11 @@ def main() -> None:
     catalog = rows(root / "05_报告总目录.csv")
     evidence = rows(root / "09_观点变化证据表.csv")
     assert len(seeds) == 49, len(seeds)
-    assert len(catalog) == 154, len(catalog)
+    assert len(catalog) == 201, len(catalog)
     assert len(evidence) == 24, len(evidence)
     assert len(list((root / "02_机构轨迹卡").glob("*.md"))) == 11
     pdfs = list((root / "03_证据底稿" / "原文PDF").glob("*.pdf"))
-    assert len(pdfs) >= 145, len(pdfs)
+    assert len(pdfs) >= 192, len(pdfs)
     assert len(list((root / "03_证据底稿" / "文本").glob("*.txt"))) >= len(pdfs)
     assert len(list((root / "03_证据底稿" / "切片").glob("*.md"))) >= len(pdfs)
     assets = rows(root / "19_本地全文资产台账.csv")
@@ -59,6 +61,18 @@ def main() -> None:
     assert sum(r["资产类型"] == "官方网页" for r in catalog_assets) == 3
     assert all(r["本地资产"] and Path(r["本地资产"]).exists() for r in catalog_assets)
     assert not any(r["本地状态"] == "获取失败" for r in catalog_assets)
+    early_assets = rows(root / "23_早期旗舰报告增补台账.csv")
+    assert len(early_assets) == 47, len(early_assets)
+    assert all(r["本地状态"] == "官方PDF已保存并校验" for r in early_assets)
+    assert all(r["本地PDF"] and Path(r["本地PDF"]).exists() for r in early_assets)
+    assert all(len(r["SHA256"]) == 64 for r in early_assets)
+    assert {r["报告ID"] for r in early_assets}.issubset({r["报告ID"] for r in catalog})
+    early_matrix = rows(root / "25_早期连续覆盖矩阵.csv")
+    early_topics = rows(root / "26_早期材料主题索引.csv")
+    assert len(early_matrix) == 11, len(early_matrix)
+    assert all(r["连续性判断"] == "W1/W2均有样本" for r in early_matrix)
+    assert len(early_topics) == len(early_assets)
+    assert all(Path(r["逐页文本"]).exists() and Path(r["示踪切片"]).exists() for r in early_topics)
     pdf_hashes: set[str] = set()
     for pdf in pdfs:
         assert pdf.read_bytes()[:4] == b"%PDF", pdf
@@ -96,7 +110,7 @@ def main() -> None:
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv"))
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "06_数据资产" / "数据资产清单.csv"))
     print("viewpoint_research_validation=ok")
-    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)}")
+    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)}")
 
 
 if __name__ == "__main__":
