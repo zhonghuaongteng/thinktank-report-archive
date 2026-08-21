@@ -1,0 +1,1634 @@
+
+===== PDF_PAGE 1 =====
+This document has been formally reviewed but not edited. RAND's publications do not necessarily reflect the opinions
+of its research clients and sponsors.
+Working Paper
+TOBIAS SYTSMA, K. MACKENZIE SCOTT
+The Composition
+of Federal R&D
+Spending and U.S.
+Productivity Growth
+WR-A4392-1
+August 2026
+Supported by the Diller-von Furstenberg Family Foundation and Pershing Square Philanthropies
+
+===== PDF_PAGE 2 =====
+This publication has completed RAND’s research quality-assurance
+process but was not professionally copyedited.
+For more information on this publication, visit www.rand.org/t/WRA4392-1 .
+About RAND
+RAND is a research organization that develops solutions to public policy challenges to help make communities throughout the world
+safer and more secure, healthier and more prosperous. RAND is nonprofit, nonpartisan, and committed to the public interest. To learn
+more about RAND, visit www.rand.org.
+RAND’s publications do not necessarily reflect the opinions of its research clients and sponsors.
+Published by the RAND Corporation, Santa Monica, Calif.
+© 2026 RAND Corporation
+ is a registered trademark.
+Limited Print and Electronic Distribution Rights
+This publication and trademark(s) contained herein are protected by law. This representation of RAND intellectual property is
+provided for noncommercial use only. Unauthorized posting of this publication online is prohibited; linking directly to its webpage
+on rand.org is encouraged. Permission is required from RAND to reproduce, or reuse in another form, any of its research products for
+commercial purposes. For information on reprint and reuse permissions, visit www.rand.org/about/publishing/permissions.
+WR-A4392-1
+
+===== PDF_PAGE 3 =====
+iii
+About This Working Paper
+Recent research suggests that the composition of public research and development (R&D)
+investment such as for basic versus applied research or for plant R&D—not just the overall
+amount spent on R&D--matters for productivity outcomes. We present new, corroborative
+evidence using a local projections method to estimate dynamic responses of macroeconomic
+productivity outcomes to unanticipated changes in R&D composition. We find that if R&D
+spending shifted toward basic research (i.e., research to expand the knowledge base without
+specific applications) are associated with the largest cumulative productivity gains over a ten-
+year horizon, operating primarily through total factor productivity. By contrast, spending shifts
+toward development activities (i.e., using research to develop or improve products and systems)
+are associated with cumulative productivity declines of comparable magnitude. This suggests
+that the current development share exceeds its productivity-maximizing level. We then use an
+illustrative portfolio analysis to benchmark the historical federal R&D portfolio against
+alternative allocations, finding that Pareto-optimal portfolios place roughly three times the
+historical share on basic research and substantially lower shares on development. These results
+have practical significance for science and technology policy, particularly in the era of increasing
+budget tradeoffs against R&D spending. This report is written primarily for economists working
+on innovation, productivity, and science policy. The report may also interest policy analysts
+engaged with federal R&D spending, though the analysis presumes familiarity with applied
+macroeconometric methods.
+RAND von Furstenberg Family Budget Model Initiative
+This work was conducted as part of the RAND von Furstenberg Family Budget Model
+Initiative, which developed tools for analysis of the U.S. tax code and federal spending and for
+forecasting the effects of proposed legislation. The RAND von Furstenberg Family Budget
+Model Initiative operates within RAND Education, Employment, and Infrastructure, a division
+of RAND that aims to improve educational opportunity, economic prosperity, and civic life for
+all. For more information, visit www.rand.org/budget-model or email EEI@rand.org.
+Funding
+The RAND von Furstenberg Family Budget Model Initiative is generously supported by the
+Diller-von Furstenberg Family Foundation and Pershing Square Philanthropies. Initial funding
+for the budget model was provided by the Nick and Leslie Hanauer Foundation.
+
+===== PDF_PAGE 4 =====
+iv
+Acknowledgments
+The authors thank the Budget Model team, and especially Carter Price, Aaron Strong,
+Akshaya Suresh, and Jeffrey Wenger. Carter Price generously reviewed an early draft of this
+piece, and his comments and support were instrumental. The report’s peer reviewer, Vegard
+Nygaard, provided a thorough and insightful review, which improved upon the piece. We also
+appreciate thoughtful comments and input from Stephanie Rennane. We also appreciate the work
+of Mirka Vuollo for coordinating the quality assurance process.
+
+===== PDF_PAGE 5 =====
+v
+Summary
+• Different categories of federal R&D show different associations with U.S. productivity
+growth.
+- A one-standard-deviation increase in the share of basic research is associated with
+cumulative labor productivity gains of about 2.1 percentage points over ten years.
+- A comparable increase in the development R&D share is associated with cumulative
+declines of about 2.2 percentage points.
+- Applied research and R&D plant investments are associated with positive but less
+precisely estimated effects of 1.7 and 1.4 percentage points.
+• The productivity effects of basic research operate primarily through total factor
+productivity (roughly three-quarters of the cumulative effect). By contrast, for R&D
+plant, capital deepening is the only positive channel that is statistically significant. The
+mechanisms for applied research effects are split between the two.
+• Holding fixed total research and development spending, our illustrative portfolio
+optimization framework, which treats R&D categories as productivity investments,
+results in Pareto-optimal compositions that allocate roughly three times the historical
+share to basic research (47 percent vs. 17 percent) and reduce by a factor of three the
+historical share on development research (18 percent vs 59 percent). We note that this
+framework solely optimizes for productivity, thus not accounting for other potential
+research objectives (e.g., military competitiveness).
+
+===== PDF_PAGE 6 =====
+vi
+Contents
+About This Working Paper ............................................................................................................ iii
+Summary .......................................................................................................................................... v
+Contents .......................................................................................................................................... vi
+Figures and Tables ........................................................................................................................ vii
+The Composition of Federal R&D Spending and U.S. Productivity Growth ................................. 1
+Prior Work Shows Heterogeneous R&D Returns; This Paper Quantifies the Composition Effect .......... 4
+Data Combine Public Sources on Productivity and R&D Spending ........................................................ 7
+A Local Projections Framework to Isolate R&D Spending and Compositional Shocks ........................ 13
+Basic Research Shows the Largest Productivity Gains; Development Is Associated with Declines ...... 18
+Core Results Hold Across Lag Structures, Subsamples, and Placebo Tests ........................................... 22
+A Portfolio Framework Suggests Public Investment in Development at the Cost of Productivity ........ 25
+Our Results Support a Rebalancing of U.S. R&D Budget Priorities ...................................................... 28
+Conclusion: Opportunity for Compositional Shifts in U.S. R&D Spending .......................................... 30
+Appendix A ................................................................................................................................... 32
+Abbreviations ................................................................................................................................ 42
+References ..................................................................................................................................... 43
+About the Authors ......................................................................................................................... 45
+
+===== PDF_PAGE 7 =====
+vii
+Figures and Tables
+Figures
+Figure 1. U.S. Productivity Growth and Components ................................................................... 10
+Figure 2. Federal R&D Spending Composition ............................................................................ 11
+Figure A.1. Empirical Distributions of Constructed Shocks ......................................................... 33
+Figure A.2. Structural Break: Cumulative Differences Over Time ............................................... 36
+Figure A.3. Structural Break Overlay: Total R&D, Cumulative Response Over Time ................ 37
+Figure A.4. Structural Break Overlay: Basic Research, Cumulative Response Over Time .......... 38
+Tables
+Table 1. Summary Statistics ............................................................................................................ 9
+Table 2. R&D Composition Has Historically Been Weighted toward Development, with
+Variation ................................................................................................................................ 12
+Table 3. Total R&D Shock Effects (Cumulative at h=10) ............................................................ 18
+Table 4. R&D Share Shock Effects (Cumulative at year 10) ........................................................ 19
+Table 5. R&D Level Shock Effects (Cumulative at year 10) ........................................................ 21
+Table 6. Reallocation Shock Effects: Productivity Gains from Shifting Away from Development
+(Cumulative at h=10) ............................................................................................................. 22
+Table 7. Robustness Summary ...................................................................................................... 23
+Table 8. Portfolio Performance by Selection Criterion Show Room to Increase Productivity ..... 26
+Table 9. Average Portfolio Composition by Selection Uniformly Shifts Away from Development
+ ............................................................................................................................................... 27
+Table A.1. Serial Correlation Tests for Shocks ............................................................................. 32
+Table A.2. Cumulative LP Effects Under Alternative Lag Specifications .................................... 34
+Table A.3. Structural Break Differences ....................................................................................... 39
+Table A.4. Lead Tests (F-stat and p-values for Joint Significance) .............................................. 40
+Table A.5. Placebo Test ................................................................................................................. 41
+
+===== PDF_PAGE 8 =====
+1
+The Composition of Federal R&D Spending and U.S. Productivity
+Growth
+The United States federal government has invested in research and development for decades,
+with annual expenditures recently estimated to be roughly $200 billion (NCES, Survey of
+Federal Funds for Research and Development, July 2025).1 This investment spans a diverse
+portfolio of activities, from fundamental scientific research with no immediate commercial
+application to the development of specific technologies for defense, health, and other missions. A
+substantial literature documents that aggregate R&D investment generates positive returns to
+productivity growth (Gullo, et. al. 2025). Yet relatively little attention has been paid to whether
+the composition of this investment matters for productivity outcomes, a question of considerable
+policy relevance.
+This compositional question has practical significance for science and technology policy,
+particularly in an era of constrained federal spending on R&D. If different types of federal R&D
+are associated with substantially different productivity effects, then reallocating resources toward
+higher-productivity federal R&D types could achieve more productivity growth from the same
+total spending. Because productivity growth is one of several legitimate objectives of federal
+R&D spending, we do not claim that this reallocation is strictly optimal. Our analysis focuses on
+productivity outcomes and does not address how the composition might be evaluated against
+other objectives such as national security, public health, human capital development, or basic
+scientific capacity.
+This work considers four types of R&D spending: basic research, applied research,
+development, and research infrastructure (“plant”) investment. Distinctions among these types
+reflect genuine differences in the nature of scientific activity, its time horizons, and its channels
+of influence on economic outcomes.
+• Basic research aims to expand fundamental knowledge without specific applications in
+mind, potentially generating broad spillovers across industries and over extended time
+periods. Examples include: decoding brain activity related to speech
+2, understanding
+
+1 Vannevar Bush, Science, the Endless Frontier: 75th Anniversary Edition, National Science Foundation, 2020
+(report to the President originally submitted July 1945). As of July 31, 2026: https://nsf-gov-resources.nsf.gov/2023-
+04/EndlessFrontier75th_w.pdf. See also National Science Board, “Federal Support for U.S. R&D,” in Discovery:
+R&D Activity and Research Publications, Science and Engineering Indicators, NSB-2025-7, July 23, 2025. As of
+July 31, 2026: https://ncses.nsf.gov/pubs/nsb20257/federal-support-for-u-s-r-d
+2 National Institutes of Health, “Scientists Create Speech Using Brain Signals,” NIH Research Matters, May 7,
+2019. As of July 31, 2026: https://www.nih.gov/news-events/nih-research-matters/scientists-create-speech-using-
+brain-signals
+
+===== PDF_PAGE 9 =====
+2
+materials related to quantum computing3, and identifying the patterns of agricultural
+pests4. As of 2023, basic research comprised roughly 25 percent of total federal R&D
+annual expenditures.5
+• Applied research directs scientific effort toward practical objectives, possibly offering
+more immediate but narrower benefits. Examples include: navigational technologies that
+became the basis for Global Positioning System (GPS)6 and novel pharmaceuticals for
+rare disesases.78 As of 2023, applied research comprised roughly 29 percent of total
+federal R&D annual expenditures.
+• Development activities translate research findings into creating or improving usable
+products and systems. Examples include: hypersonic weapons systems
+9 and nuclear
+energy technologies10. Development activities currently comprises roughly 45 percent of
+total federal R&D annual expenditures.
+• Research plant and equipment investments, such as laboratory construction and
+specialized instrumentation, create the physical infrastructure that enables scientific
+activity, representing a form of capital deepening specific to the innovation sector.
+11
+Examples include: national labs and infrastructure such as particle colliders and
+supercomputers. As of 2023, research plant & equipment investments equate to about 3%
+(roughly $5.7 billion) of federal R&D annual expenditures, though this category of
+funding is accounted for separately.
+This paper provides new evidence on the association between productivity and federal R&D
+composition using a reduced-form empirical approach. First, we document substantial
+
+3 U.S. Department of Defense, Basic Research Office, “New Breakthrough in Quantum Engineering!” November
+12, 2024. As of July 31, 2026: https://basicresearch.defense.gov/News/Articles/News-Display/Article/3962163/new-
+breakthrough-in-quantum-engineering/
+4Alan Burdick and Emily Anthes, “Nine Federally Funded Scientific Breakthroughs That Changed Everything,”
+New York Times, May 16, 2025. As of July 31, 2026: https://www.nytimes.com/2025/05/16/science/federally-
+funded-science-breakthroughs.html
+5 Data on research spending come from the National Science Foundation, “Table DISC-8: Federal Obligations for
+R&D and R&D plant, by agency and performer: FY 2023,” National Center for Science and Engineering Statistics,
+Survey of Federal Funds for Research and Development, Vol 73, FYs 2023-2024, July 23, 2025.
+6 Alan Burdick and Emily Anthes, “Nine Federally Funded Scientific Breakthroughs That Changed Everything,”
+New York Times, May 16, 2025. As of July 31, 2026: https://www.nytimes.com/2025/05/16/science/federally-
+funded-science-breakthroughs.html
+7 U.S. Office of Management and Budget, “Department of Energy,” Performance.gov, Trump Administration
+archive, undated. As of July 31, 2026: https://trumpadministration.archives.performance.gov/energy/
+8 American Association for the Advancement of Science, “Research on R&D Funding: The Different Functions of
+Public and Private R&D,” AAAS R&D Budget and Policy Program, September 2025. As of July 31, 2026:
+https://www.aaas.org/news/research-rd-funding-different-functions-public-and-private-rd
+9 National Security Technology Accelerator, “U.S. Military R&D Trends for 2023,” April 2023. As of July 31,
+2026: https://nstxl.org/u-s-military-rd-trends-for-2023/
+10 U.S. Department of Energy, Office of Nuclear Energy, “Our Budget,” undated. As of July 31, 2026:
+https://www.energy.gov/ne/our-budget
+11 These definitions are consistent with the OMB Circular A-11, as annotated in National Center for Science and
+Engineering Statistics, “Definitions of Research and Development: An Annotated Compilation of Official Sources,”
+NCSES 22-209, May 19,2022.
+
+===== PDF_PAGE 10 =====
+3
+heterogeneity in the estimated productivity associations across types of R&D spending. This
+result indicates that, compared to the current development-heavy R&D spending mix , shifting
+dollars away from development and toward other categories of R&D would result in stronger
+productivity growth, all else equal. This reallocation should be read as a labor productivity result,
+not a complete accounting for all policy tradeoffs, such as defense capabilities, public health
+technologies, or scientific infrastructure.
+Second, we find that these compositional associations substantially exceed the associations
+we can detect from positive shocks to overall R&D spending. When we examine shocks to total
+federal R&D without distinguishing composition, the estimated cumulative productivity response
+is positive but imprecisely estimated, with confidence intervals that include zero.
+Third, we develop a portfolio optimization framework that treats different R&D types as
+assets with heterogeneous expected returns and uncertainties. Our analysis suggests that the
+historical composition of federal R&D has been substantially over-invested in development and
+thus undershooting the potential maximum productivity gains. Optimal portfolios in our
+framework, which seek to maximize long-run productivity gains, nearly triple the investment in
+basic research and cut investment in development by roughly 40 percentage points.
+While such calculations require strong assumptions about the stability of estimated effects
+and the feasibility of reallocation, they provide a useful benchmark for evaluating the
+productivity implications of compositional choices. Our analysis characterizes associations with
+labor productivity in the U.S. private business sector. Thus, implications for reallocating funding
+away from development are therefore conditional on labor productivity being the relevant policy
+objective.
+This analysis combines detailed data on federal R&D budget authority by function with the
+productivity accounts maintained by John Fernald at the Federal Reserve Bank of San Francisco
+(Fernald, 2014), constructing an annual panel spanning 1956 through 2022. This period
+encompasses substantial variation in both the level and composition of federal R&D, driven by
+the Cold War buildup, the Space Race, shifting defense priorities, the rise of health research
+funding, and periodic changes in science policy emphasis. Figures 1 and 2 in the next section
+present the evolution of R&D composition and productivity over this period.
+Our empirical strategy employs Local Projections (LP) as introduced by Jordà (2005) to
+estimate dynamic responses for macroeconomic productivity outcomes to unanticipated shifts in
+R&D composition (referred to throughout this paper as “shocks”). The LP method
+accommodates straightforward computation of cumulative effects and permits flexible treatment
+of the relationship between short-run and long-run responses. We construct R&D composition
+shocks as residuals from forecasting equations that control for the predictable component of each
+series, aggregate R&D dynamics, and macroeconomic conditions. These innovations represent
+
+===== PDF_PAGE 11 =====
+4
+the unpredictable component of compositional change, though we emphasize that
+unpredictability does not guarantee exogeneity with respect to productivity outcomes.12
+We subject our findings to extensive robustness analysis. Diagnostic tests confirm that our
+constructed shocks exhibit the statistical properties expected of unpredictable shocks, passing
+standard whiteness tests and show minimal correlation with lagged predictors. Estimates remain
+qualitatively stable across alternative lag specifications, subsample periods, and inference
+methods. Lead tests designed to detect pre-existing trends yield mixed evidence, with most
+specifications showing insignificant lead coefficients but some marginal evidence of anticipation
+at longer horizons for certain shocks. We interpret this pattern as consistent with either gradual
+policy implementation or the presence of confounding factors that our approach cannot fully
+address. We evaluate the robustness of the precision of our estimates using a placebo test
+designed to shift the timing of R&D share innovations, to which our results remain strongly
+robust.
+Our empirical strategy constructs shocks to R&D spending and funding composition as a
+forecast residual. Below, the robustness analysis narrows the set of stories under which our
+estimates could be biased. The whiteness diagnostic indicates that the shocks are not predictable
+from the information set used in the forecasting model, so any confounder operating through that
+information set is already absorbed into the forecast. Lead tests indicate that future R&D shocks
+generally do not predict current productivity outcomes, which speaks against confounders
+operating through pre-existing trends or reverse causality. Placebo timing tests confirm that the
+measured share-shock effects align with the actual timing of the constructed shocks. Together,
+these checks raise the bar for what an unobserved confounder would need to look like to drive
+our results.
+The remainder of the report reviews related literature, describes the data and methods,
+presents the results and robustness analysis, and discusses the portfolio application and policy
+implications.
+Prior Work Shows Heterogeneous R&D Returns; This Paper Quantifies the
+Composition Effect
+The literature on R&D and productivity supports four claims that motivate our analysis:
+
+12 For instance, a new administration that simultaneously shifts the R&D portfolio toward basic research as part of a
+broader pro-growth agenda, which might include tax reform, deregulation, or trade liberalization, would generate
+composition innovation correlated with productivity gains through non-R&D channels. More subtly, if policymakers
+observe early signals of a productivity slowdown and respond by redirecting R&D toward applied research or
+development in an attempt to generate near-term results, the resulting composition innovation would reflect private
+information about future productivity that our forecasting equations cannot capture. We probe this concern using
+lead tests.
+
+===== PDF_PAGE 12 =====
+5
+1. R&D investment generates positive productivity returns, with estimated social returns
+exceeding private returns by a factor of two or more (Griliches 1979; Jones and Williams
+1998; Hall, Mairesse, and Mohnen 2010; Bloom, Schankerman, and Van Reenen 2013).
+2. Federally funded R&D complements rather than crowds out private investment and is
+associated with larger productivity spillovers than privately funded R&D (Guellec and
+Van Pottelsberghe de la Potterie 2004; Aghion et al. 2008; Howell 2017; Azoulay et al.
+2019; Moretti, Steinwender, and Van Reenen 2019).
+3. The composition of R&D spending matters along the dimensions prior work has studied
+(e.g. public versus private, and defense versus nondefense) with differences in estimated
+spillovers across these categories (Corrado et al. 2023; Dyevre 2024; Fieldhouse and
+Mertens 2024).
+4. Basic research is theorized and observed to expand the knowledge frontier with broad,
+slow-acting spillovers that differ in character from those generated by applied research
+and development (Arrow 1959; Nelson 1959; Mansfield 1980; Fleming and Sorenson
+2004; Akcigit, Hanley, and Serrano-Velarde 2021).
+Overall, the literature establishes that who funds R&D matters for productivity, but it is
+largely silent on how productivity outcomes vary with the composition of federal R&D across
+activity types — basic research, applied research, development, and R&D plant. Quantifying that
+composition effect is the contribution of this paper.
+Detailed Discussion of Existing Literature
+A large literature documents that R&D investment generates positive returns to productivity
+growth, with social returns typically estimated to exceed private returns by a factor of two or
+more (Griliches 1979; Jones and Williams 1998; Bloom, Schankerman, and Van Reenen, 2013;
+Hall, Mairesse, and Mohnen, 2010; Fieldhouse & Mertens 2024). Within this literature, which
+focuses on the US, a substantial strand examines public R&D specifically, generally finding that
+government-funded research complements rather than crowds out private efforts (Moretti,
+Steinwender, and Van Reenen, 2019; Guellec and Van Pottelsberghe de la Potterie, 2004;
+Azoulay et. al. 2019). Examples of mechanisms for “crowding-in” effect include different
+research incentives for publicly funded academia and the private sector (Aghion et. al. 2008), as
+well as the increase in venture funding for entrepreneurs that win early-stage R&D grants for
+small businesses (Howell 2017). In aggregate, public spending on R&D appears to lead to
+significant productivity impact through positive spillovers to innovation and economic
+opportunity.
+Compositional studies tend to find that public and nondefense R&D spending have the
+greatest productivity spillovers, relative to private and defense R&D spending. Recent empirical
+work find that public R&D spending generates two to three times larger productivity spillovers,
+relative to private R&D spending (Dyevre 2024). The compositional shift from public to private
+space R&D may explain a recent finding of reduced space R&D spillovers over time (Carrado et.
+
+===== PDF_PAGE 13 =====
+6
+al. 2023).13 As further evidence of compositional effects, nondefense R&D spending appears to
+offer very high social returns, relative to defense R&D (Dyevre 2024; Fieldhouse & Mertens
+2024). Significant evidence suggests that the composition of R&D spending matters, both in
+terms of the source of the funding and the purpose of the project.
+Theoretical work has emphasized that basic research may be particularly productive because
+it expands the frontier of applicable knowledge with broad spillovers that compound over time
+(Akcigit, Hanley, and Serrano-Velarde, 2021; Fleming and Sorenson, 2004; Nelson 1959; Arrow
+1959).
+14 At the same time, some in the field have argued that the tradition of distinguishing
+between basic and other forms of research is arbitrary, with a “lack of a substantive basis”
+(Mowery & Rosenberg 1989). Yet past efforts to segment findings between basic and applied
+research suggest that basic research affects productivity with substantially longer lags than
+development (Mansfield, 1980). We accept that this distinction remains meaningful both in terms
+of how the government classifies R&D spending (OMB Circular A-11), as well as how research
+incentives operate (Aghion et. al. 2008).
+Existing insights demonstrate the link between R&D spending and productivity and establish
+that not all R&D spending contributes equally. Yet these insights tend to focus on the deployer
+of research funds (either defense or nondefense, public or private sector), rather than the types of
+research activity being funded.
+Our contribution is to estimate how the composition of federal R&D portfolio affects
+disaggregated components of U.S. productivity growth: total factor productivity, capital
+deepening, and labor productivity. Disaggregation of both R&D spending types and
+macroeconomic productivity allows us to characterize which categories of federal R&D are
+associated with gains in total factor productivity, capital deepening, or labor productivity, and
+with what magnitude and timing. This information matters for policy because the federal budget
+process involves explicit allocation decisions across these categories. If their productivity
+associations differ substantially, the composition of the portfolio is a policy lever in its own
+right. In this approach, we are contributing to a broader conversation on how policymakers can
+adjust their modeling approaches for the budgetary impacts of R&D spending. Currently, policy
+analysts do not integrate the existing research on R&D productivity spillovers, instead treating
+R&D investments as similar to infrastructure investments (Gullo, et. al. 2025).
+
+13 For additional examples, Azoulay et. al. (2019) find that for every $10 million in research funding from the
+National Institute of Health, there is an increase of 2.7 net patents in the pharmaceutical and biotechnology
+industries. Public research funding can also catalyze new enterprises. A quasi-experimental study found that an
+R&D subsidy from the U.S. Department of Energy’s Small Business Innovation Research program approximately
+doubles venture capital income, with large, positive impacts on patenting and revenue (Howell, 2017).
+14 Aghion et. al. (2008) theorize that this difference in scope arises from different incentive structures: basic R&D
+spending tends to be more aligned to the academic research model, where researchers tend to have more creative
+control, ideal for exploratory research topics with broad applications. By contrast, applied R&D spending tends to be
+more aligned with private-sector focus on development, with a narrower set of applications.
+
+===== PDF_PAGE 14 =====
+7
+Data Combine Public Sources on Productivity and R&D Spending
+This section describes the sources and construction of our data, presents descriptive statistics,
+and discusses the historical variation in federal R&D composition that provides the foundation
+for our analysis.
+Productivity Data
+Our productivity measures come from the dataset maintained by John Fernald at the Federal
+Reserve Bank of San Francisco, which provides quarterly estimates of total factor productivity,
+labor productivity, and the components of labor productivity growth (Fernald, 2014). Fernald’s
+methodology follows the growth accounting tradition pioneered by Solow (1957) and refined by
+Jorgenson, Gollop, and Fraumeni (1987), decomposing output growth into contributions from
+capital services, labor hours, labor quality, and a residual attributed to total factor productivity.
+The growth accounting identity expresses labor productivity growth as the sum of three
+components.
+15 Total factor productivity captures improvements in the efficiency with which
+inputs are combined to produce output, representing technological change and other factors that
+raise output without requiring additional inputs. Capital deepening reflects increases in the
+capital-labor ratio, weighted by capital’s share of income. Labor quality captures improvements
+in the composition of the workforce, including the effects of rising educational attainment and
+experience accumulation.
+We use annual averages constructed from the quarterly data, covering the period 1956
+through 2022. For our main specifications, we use the utilization-adjusted TFP measure, which
+attempts to purge measured productivity of cyclical variation in the intensity with which capital
+and labor are employed. This adjustment is important in our setting because federal R&D
+spending may respond to business cycle conditions that independently affect measured
+
+15 The decomposition of labor productivity follows the standard growth accounting framework (Solow, 1975;
+Jorgenson, Gollop, and Fraumeni, 1987) as implemented by Fernald (2014). Under constant returns to scale and
+competitive factor markets, output growth in the business section can be written as
+Δ ln 𝑌 = 𝛼 Δ ln 𝐾 + (1 − 𝛼)Δ ln 𝐿 + Δ ln 𝐴
+Where 𝐾 is a composition-adjusted capital input, 𝐿 is a composition-adjusted labor input, 𝐴 is Hicks-neutral
+technology, and 𝛼 is capital’s share of income. Composition-adjusted labor input decomposes into raw hours 𝐻 and
+labor quality 𝑄
+Δ ln 𝐿 = Δ ln 𝑄 + Δ ln 𝐻.
+Labor productivity is 𝐿𝑃𝑟𝑜𝑑 =
+!
+", so Δ ln 𝐿𝑃𝑟𝑜𝑑 = Δ ln 𝑌 − Δ ln 𝐻 . Substituting and rearranging gives the identity
+used in our analysis, which is a function of capital deepening 7
+#
+"8, labor quality (𝑄), and TFP (𝐴)
+Δ ln 𝐿𝑃𝑟𝑜𝑑 = 𝛼Δ ln 9𝐾
+𝐻: + (1 − 𝛼)Δ ln 𝑄 + Δ ln 𝐴 .
+This decomposition relies on constant returns to scale, constant factor shares, and competitive factor markets, but
+our empirical results and substantive conclusions are independent of these assumptions. The decomposition serves
+as an accounting framework for tracing the channels through which R&D composition shocks operate.
+
+===== PDF_PAGE 15 =====
+8
+productivity. All three components are measured in percentage points of annual growth and sum
+to labor productivity growth.
+Federal R&D Data
+Data on federal R&D spending by function come from historical tables published by the
+National Science Foundation and the Office of Management and Budget. These tables report
+budget authority for research and development activities, classified into four categories.16
+• Basic research encompasses “systematic study directed toward greater knowledge or
+understanding of the fundamental aspects of phenomena,” without specific applications
+in view (Moris and Pece, 2022).
+• Applied research involves “systematic study to understand the means to meet a
+recognized and specific need” (Moris and Pece, 2022).
+• Development represents “systematic use of the knowledge and understanding gained
+from research directed toward the production of useful materials, devices, systems, or
+methods” (Moris and Pece, 2022).
+• R&D plant includes construction of facilities and acquisition of equipment specifically
+for R&D activities (Moris and Pece, 2022).
+We construct shares of each category in total federal R&D, which sum to one by definition.
+We also examine log levels of each category’s spending, which allows us to study the effects of
+increasing one type of R&D while controlling for others. We express all spending data in real
+terms using the GDP deflator.
+Macroeconomic Controls
+Our analysis includes two macroeconomic control variables that may affect both R&D
+composition decisions and productivity outcomes. The output gap, computed as the percentage
+deviation of real GDP from potential GDP, captures cyclical conditions that could influence both
+government spending priorities and measured productivity. The change in the federal funds rate
+controls for monetary policy stance, which affects capital investment and potentially the
+composition of federal spending through budget pressures.
+17 We collect both series from the
+Federal Reserve Bank of St. Louis (FRED) database.
+
+16 National Center for Science and Engineering Statistics, “Definitions of Research and Development: An
+Annotated Compilation of Official Sources,” NCSES 22-209, May 19, 2022.
+17 Federal budget aggregates such as federal debt-to-GDP, deficit-to-GDP, or total discretionary spending are not
+included as separate macroeconomic controls. These variables most plausibly enter R&D allocation through the
+overall scale of discretionary appropriations. Because our outcome variables are shares of total federal R&D, which
+sum to one by construction, this level channel is mechanically absorbed by the shares formulation.
+
+===== PDF_PAGE 16 =====
+9
+Descriptive Statistics
+Table 1 presents summary statistics for the main variables in our analysis over the 1956-2022
+sample period.
+Table 1. Summary Statistics
+Variable Mean Std. Dev. Min Max
+Labor Productivity Growth 2.13 1.45 -1.78 4.84
+TFP Growth 1.11 1.39 -2.49 3.85
+Capital Deepening 0.85 0.92 -1.11 4.07
+Labor Quality Growth 0.34 0.36 -0.60 1.44
+Basic Research Share 0.17 0.06 0.06 0.27
+Applied Research Share 0.20 0.04 0.12 0.30
+Development Share 0.59 0.08 0.40 0.75
+Plant Share 0.04 0.02 0.02 0.10
+Notes: Sample period is 1956-2022 (N=67). Productivity variables are expressed in percentage points of
+annual growth. Federal R&D report, and shares sum to one.
+SOURCES: Authors’ calculations from NSF and OMB historical tables.
+
+The average composition of federal R&D over this period shows that development has
+consistently dominated, accounting for roughly 58 percent of total federal spending on average.
+Applied research represents about 20 percent, basic research about 17 percent, and R&D plant
+about 4 percent. These averages mask considerable variation over time, as illustrated in Figure 1.
+
+===== PDF_PAGE 17 =====
+10
+Figure 1. U.S. Productivity Growth and Components
+
+NOTES: The four series are labor productivity growth in the U.S. business sector, utilization-adjusted TFP, capital
+deepening (the contribution of capital per hour growth, weighted by capital’s share of income), and labor quality. All
+values are in percentage points of annual growth. The top panel shows the growth rates and the bottom panel shows
+the five-year trailing averages.
+SOURCE: Fernald (2014)
+
+===== PDF_PAGE 18 =====
+11
+Figure 2. Federal R&D Spending Composition
+
+NOTES: Panel A reports federal R&D budget authority by activity type in billions of 2017 dollars, deflated using the
+GDP deflator. Panel B reports each category’s share of total federal R&D.
+SOURCE: NSF and OMB historical tables.
+Figure 2 presents federal R&D spending in real dollars (Panel A) and as budget shares (Panel
+B). Development has dominated federal R&D portfolio throughout the sample period, though its
+
+===== PDF_PAGE 19 =====
+12
+share has declined from nearly 70 percent in the early 1960s to about 50 percent by 2022. Basic
+and applied research shares have risen correspondingly.
+Historical Variation in R&D Composition
+The composition of federal R&D has evolved substantially over the study period, driven by
+shifting national priorities and the changing structure of the federal research enterprise. During
+the late 1950s and 1960s, the Space Race and Cold War competition drove substantial increases
+in development spending, particularly for missile systems and space vehicles (Corrado et. al.
+2023). The basic research share declined during this period as development activities absorbed
+an increasing fraction of the federal R&D budget. The 1970s saw a partial reversal, with the
+development share declining as the Apollo program wound down and defense spending
+decreased relative to GDP. The basic research share recovered somewhat during this period. The
+Reagan defense buildup of the 1980s again increased the development share, though not to the
+levels of the 1960s.
+More recent decades have seen a gradual increase in the basic research share, driven partly
+by the growth of health research funding through the National Institutes of Health (NIH). The
+doubling of the NIH budget between 1998 and 2003 represented primarily basic and applied
+research rather than development, shifting the overall federal composition toward earlier-stage
+activities.
+Table 2 summarizes how the average composition of the federal R&D portfolio has shifted
+across broad historical eras, reflecting these successive shocks to national priorities.
+Table 2. R&D Composition Has Historically Been Weighted toward Development, with Variation
+Era Basic Applied Development Plant Total R&D
+spend (Mean,
+2017 $B)
+1956-1970 0.09 0.17 0.68 0.06 $90.2
+1971-1990 0.14 0.19 0.62 0.04 $109.2
+1991-2010 0.21 0.21 0.54 0.03 $170.1
+2011-2022 0.24 0.25 0.48 0.02 $180.4
+NOTES: This table reports time-period means of federal R&D activity-type shares and total real federal R&D budget
+authority across the years in the indicated era.
+SOURCE: Authors’ calculations from NSF and OMB historical tables.
+
+This variation provides the empirical foundation for our analysis. The geopolitical and
+legislative origins of the major compositional shifts are important for identification, because
+changes driven by the Sputnik shock or Congressional appropriations mandates are more
+plausibly orthogonal to contemporaneous productivity dynamics than compositional drift driven
+by, for example, perceived returns to particular research investments.
+
+===== PDF_PAGE 20 =====
+13
+That said, there are two relevant concerns for interpretability. First, multi-year legislated
+funding buildups may be partially foreseeable before they appear in realized budget authority.
+This dynamic raises the possibility that measured composition changes partly reflect anticipated,
+rather than unforeseen, policy shifts. Due to this concern, we vary the lag lengths in our
+robustness analysis, finding broadly similar results. Second, the major compositional episodes
+coincide with distinctive macroeconomic eras (e.g., the defense-heavy 1960s overlap with the
+postwar productivity boom, and the NIH buildup with the late-1990s technology expansion),
+which could confound estimated associations if those eras differ along dimensions unaccounted
+for in our specifications. We address this concern by allowing for trends to vary by policy
+regime, again finding broadly similar results.
+A Local Projections Framework to Isolate R&D Spending and
+Compositional Shocks
+This section describes our approach to estimating the dynamic relationships between federal
+R&D composition and productivity outcomes. Building on Jordà (2005), we use a Local
+Projections framework to identify shocks in R&D spending. We construct R&D composition
+shocks, which we interpret as directionally informative.
+18 This section further details our
+approach.
+Local Projections Framework on Residualized R&D Spending Shocks
+We estimate dynamic responses using the Local Projections method introduced by Jordà
+(2005). For each horizon hh from 00 to HH years, we estimate a separate regression of the form:
+𝑦!"# = 𝛼# + 𝛽# ⋅ 𝑧! + 𝛾#𝛾#
+$%$ + 𝜀!"#,
+where 𝑦!"# denotes a productivity outcome hh years after the shock, 𝑧! is the standardized R&D
+composition innovation, 𝑋! is a vector of controls including lags of the dependent variable, the
+output gap, total R&D spending, and the change in the federal funds rate, and 𝜀!"# is an error
+term.
+The coefficient 𝛽# represents the response of the productivity outcome at horizon hh to a
+one-standard-deviation shock in R&D composition. By estimating separate regressions for each
+horizon rather than specifying a complete dynamic system, Local Projections avoid potential
+misspecification of the transmission mechanism. If the true dynamics involve complex or
+nonlinear propagation, Local Projections will capture the reduced-form response at each horizon
+without requiring the correct specification of the intermediate steps.
+We compute cumulative responses as the sum of horizon-specific coefficients:
+
+18 Estimates are bounded using the moving block bootstrap procedure.
+
+===== PDF_PAGE 21 =====
+14
+Cumulative& = , 𝛽#
+&
+#'(
+.
+This cumulative measure captures the total effect on the level of productivity over the
+horizon, aggregating the period-by-period contributions into a single summary statistic. For our
+main results, we focus on the ten-year cumulative response, which allows time for the effects of
+R&D composition changes to materialize while maintaining reasonable sample sizes for
+estimation. We evaluate alternative horizons as robustness tests.
+Our analysis requires variation in R&D composition that represent unpredictable changes
+from the perspective of economic agents. We construct these shocks as residuals from
+forecasting equations, in the spirit of Ramey (2016).
+19
+For each R&D composition variable, we estimate a forecasting equation that includes four
+lags of the composition variable itself, four lags of log total R&D, the output gap, and the change
+in the federal funds rate (FFR). For share variables, we additionally include contemporaneous
+log total R&D and the residual from the total R&D forecasting equation. The shock is defined as
+the residual from this forecasting regression, representing the component of compositional
+change that could not have been predicted based on available information.
+20
+Formally, for a share variable 𝑠),! representing the share of R&D type jj, we estimate:
+𝑠),! = 𝜙( + , 𝜙+
+,
++'-
+𝑠),!.+ + , 𝜓+
+,
++'(
+ln(𝑇𝑜𝑡𝑎𝑙!.+) + 𝜃-𝑔𝑎𝑝! + 𝜃/𝛥𝐹𝐹𝑅! + 𝜃0𝜈!
+!1!23 + 𝑢),!,
+where 𝜈!
+!1!23 is the shock to total R&D constructed analogously. The residual 𝑢),! serves as
+our R&D compositional shock, which we standardize to have mean zero and unit variance for
+comparability across specifications.
+The inclusion of the total R&D shock in the share equations orthogonalizes compositional
+shocks with respect to aggregate R&D movements. This ensures that our share shock
+constructions capture pure reallocation effects rather than changes in composition that
+mechanically accompany aggregate R&D expansion or contraction.
+
+19 Unlike the “news” measures emphasized in Ramey (2016), which typically involve news about future government
+spending, our shocks are not direct measures of forward-looking policy announcements or expectations.
+Accordingly, we interpret them as unexpected realized compositional changes rather than pure news about future
+policy paths. We emphasize that unpredictability conditional on observable factors does not rule out correlation with
+policymakers’ private information or other omitted variables.
+20 Our R&D composition innovations are constructed as residuals from forecasting regressions. Because these
+forecasting equations are estimated on the full 1956-2022 sample, the resulting residuals are in-sample deviations
+from an ex-post best fitting predictive model, rather than a literal one step ahead forecast error formed only with
+information available at time 𝑡 − 1. A stricter implementation would recursively reestimate the forecasting
+equations on an expanding window ending at 𝑡 − 1 and define the shock in year 𝑡 as the resulting forecast error,
+which removes any look-ahead in coefficient estimation. We do not implementing this recursive construction here
+because the annual sample contains only 67 observations so early sample shocks would be based on very short
+estimation windows and would be comparatively noisy once standardized, materially reducing the power in
+subsequent local projection estimates.
+
+===== PDF_PAGE 22 =====
+15
+Substantively, the residual variation that constitutes our composition shocks plausibly
+reflects unanticipated changes in federal R&D priorities. These include shifts in administration
+and congressional priorities, programmatic reorientation within agencies such as new initiatives
+or sunsetting programs, crisis-driven reallocations in response to events such as recessions or
+public health emergencies, and budget negotiation outcomes that diverge from the trajectory
+predicted by recent history.
+Figure A1 in the appendix presents the empirical distribution of each standardized
+composition shock series alongside a standard normal density for reference. The distributions are
+reasonably symmetric, centered near zero, and broadly consistent with normality, which supports
+our use of normal-based inference for cumulative responses.
+Identifying Assumptions and Limitations
+A causal interpretation of our local projection estimates rests on a conditional exogeneity
+assumption that the constructed R&D composition shocks are uncorrelated with unobserved
+determinants of future productivity, conditional on the information set included in our
+forecasting equations and outcome regressions.
+We operationalize R&D composition shocks as residuals from forecasting regressions for
+each composition series conditioned on prior investments, lagged total R&D spending, and other
+macro controls. These controls ought to account for high-level macroeconomic trends, such as
+the Federal Funds rate, that might influence federal spending decisions. By construction, these
+shocks are thus orthogonal to the included predictors.
+The identification claim is that, to the extent this conditioning is a sufficient proxy for the
+information policymakers use when adjusting the R&D portfolio in response to unexpected
+macroeconomic and productivity-relevant conditions, the remaining residual variation can be
+interpreted as an as-if random policy surprise, or “shock” (Ramey 2016).
+Several features of our design strengthen this interpretation. First, federal budgeting and
+program execution operate with substantial institutional lags.
+21 Compositional shifts in realized
+budget authority typically reflect plans and negotiations initiated in earlier years and are
+implemented over multiple years. This timing reduces the plausibility that our composition
+shocks are mechanically responding to contemporaneous realized productivity shocks. Second,
+our preferred productivity measure is utilization-adjusted TFP, which mitigates a prominent
+source of spurious correlation of cyclical fluctuations in measured productivity that could be
+jointly related to fiscal conditions. Third, for share shocks we explicitly orthogonalize
+compositional shocks with respect to aggregate R&D movements by including contemporaneous
+
+21 The budget process has been delayed since 2003 and half the time has resulted in one or more continuing
+resolutions or government shutdowns (CRFB, “The Budget Act at 50 – Budget Process Reform Recommendations
+for the 118th Congress,” October 17, 2023; Congress.gov, "The Congressional Budget Process Timeline." Library of
+Congress, 20 February 2026, https://www.congress.gov/crs-product/R47235.
+
+===== PDF_PAGE 23 =====
+16
+total R&D and the total R&D shock in the share forecasting equations. This step pushes
+identification toward within-portfolio reallocation rather than changes in the overall fiscal stance,
+helping separate compositional shifts from broad expansions or contractions that may be more
+tightly linked to macroeconomic conditions.
+However, these arguments do not eliminate threats to identification. The most important
+limitation is that unpredictability relative to our conditioning set does not guarantee exogeneity.
+Composition may still move in response to anticipated future productivity or to policymakers’
+private information about future conditions that is not captured by our observed controls. More
+broadly, unobserved policy changes or geopolitical and mission-priority shocks (e.g., shifts in
+defense posture, regulatory regimes, or procurement strategy) could affect both the federal R&D
+mix and productivity through channels outside measured R&D composition, creating potential
+confounding. An omitted shock would need to occur at the same realization date as the
+constructed R&D shock, be unpredictable from the lagged variables in our forecasting model and
+operate on productivity through channels other than the federal R&D portfolio it influences.
+For greater clarity on how possible omitted shocks shape the interpretation of our results,
+consider two potential examples: geopolitical shifts and R&D tax expenditures. First,
+unanticipated geopolitical events can move federal R&D priorities and aggregate productivity in
+the same year through channels that operate alongside the R&D portfolio itself. The relevant
+failure mode is an event that arrives as a surprise to the forecasting model, prompts a
+contemporaneous reallocation of federal R&D, and affects productivity through trade, supply
+chains, regulation, capital investment, or business sentiment. A geopolitical shift telegraphed in
+advance would typically be absorbed by the lagged predictors and would not necessarily bias our
+estimates. Second, our R&D spending measures capture federal outlays and excludes R&D tax
+expenditures. The federal R&D tax credit acts as an alternative form of public support for R&D,
+and discrete changes to the credit alter the public subsidy environment in ways that our outlays
+variable does not capture. Bias from this source arises only when changes to tax expenditures are
+correlated with our outlay shocks at the same realization date and have an independent
+productivity effect through the private R&D they stimulate. The sign of any such bias follows the
+sign of that co-movement, which we cannot determine within our current specifications.
+For these reasons, we interpret our findings as informative associations about the effect of public
+outlays on R&D driven productivity that warrant further investigation. We probe the plausibility
+of the conditional exogeneity assumptions in several ways. First, we document that the shocks
+have the statistical properties expected of forecast errors, including minimal serial correlation
+and limited predictability from expanded information sets. Second, we conduct lead/anticipation
+tests to assess whether future composition shocks predict earlier productivity movements, as
+significant lead relationships would be consistent with anticipation, reverse causality, or omitted
+variables. Third, we evaluate the robustness of the results to alternative lag lengths,
+specifications, and subsamples to assess whether the results hinge on narrow episodes or
+
+===== PDF_PAGE 24 =====
+17
+modeling choices. These diagnostics, discussed below, cannot prove exogeneity, but they help
+bound the most direct failures of the identifying assumptions.
+Overall, our preferred interpretation of our results is that under a sufficient information set
+assumption (i.e., that our forecasting controls approximate the information set that systematically
+links R&D portfolio choices to expected productivity-relevant conditions) our shocks can be
+interpreted as unexpected reallocations in the federal R&D mix that are plausibly exogenous
+with respect to subsequent productivity shocks. Where this assumption fails, our estimates
+should be read as reduced-form dynamic associations rather than definitive causal effects.
+Bounding the Estimates: Identifying Standard Errors for Horizon Coefficients and
+Cumulative Effects
+We employ two approaches to estimating and bounding coefficients, appropriate for different
+quantities of interest. For horizon-specific coefficients, we use Newey-West heteroskedasticity
+and autocorrelation consistent standard errors with automatic bandwidth selection.
+22 The
+bandwidth is computed as:
+𝐿 = ⌊4 × (𝑛/100)//5⌋
+where nn is the sample size for the regression at horizon hh. This bandwidth increases
+appropriately with horizon to account for the additional serial correlation induced by overlapping
+observation windows.
+For cumulative responses, which sum the coefficients across horizons, we employ the
+moving block bootstrap procedure recommended by Jentsch and Lunsford (2019).
+23 Standard
+asymptotic inference for cumulative impulse responses can be unreliable because the cumulated
+sum of coefficients has a nonstandard distribution when the underlying series are persistent. The
+moving block bootstrap preserves the dependence structure of the data by resampling contiguous
+blocks of observations.
+Our implementation draws 600 bootstrap replications with block length 5, representing
+approximately 7-8 percent of the sample. For each replication, we reconstruct all R&D
+composition shocks from the resampled data and re-estimate the full set of Local Projections.
+The bootstrap standard error for the cumulative response is computed as the standard deviation
+across replications, and confidence intervals are constructed using the normal approximation
+with the bootstrap standard error.
+
+22 Whitney K. Newey and Kenneth D. West, ”A Simple, Semi-Definite, Heteroskedasticity and Autocorrelation
+Consistent Covariance Matrix,” Econometrica, Vol. 55, No. 3, pages 703-708, May 1987.
+23 Also, see Efstathios Paparoditis, ”Bootstrapping autoregressive and moving average parameter estimates of
+infinite order vector autoregressive processes,” Journal of Multivariate Analysis, Vol. 57, No. 2, p. 277-296, 1996;
+Òscar Jordà & María Dolores Gadea, “Local Projections Bootstrap Inference,“ Federal Reserve Bank of San
+Francisco Working Paper 2025-21, September 2025.
+
+===== PDF_PAGE 25 =====
+18
+Basic Research Shows the Largest Productivity Gains; Development Is
+Associated with Declines
+This section presents our main empirical findings. While overall research spending is not
+significantly associated with productivity due to large standard errors, we do find significant
+compositional effects. In particular, basic research is associated with the largest gains in total
+factor productivity and labor productivity, while development is associated with declines. These
+relationships directionally hold for log level changes to individual categories. Simulating
+bilateral composition shifts from one category to another, we find that expected productivity
+increases when funding is reallocated from development to any other research type, with the
+greatest point estimates when reallocated toward basic research. In this section, we describe our
+results in more detail.
+Aggregate R&D Effects
+Before examining composition, we estimate the productivity response to shocks in total
+federal R&D regardless of its allocation across categories. Table 3 reports cumulative impulse
+responses over a ten-year horizon, which is the typical Congressional Budget Office (CBO)
+budget window (Budget Committee, 2024), for each productivity component.
+Table 3. Total R&D Shock Effects (Cumulative at h=10)
+Outcome Estimate Bootstrap SE 95% CI
+TFP 0.88 0.67 [-0.42, 2.19]
+Capital Deepening 0.16 0.40 [-0.63, 0.95]
+Labor Quality 0.07 0.19 [-0.31, 0.45]
+Labor Productivity (Total) 1.11 0.88 [-0.62, 2.84]
+Notes: Estimates are cumulative percentage point responses over ten years to a one-standard-deviation
+innovation in total federal R&D. Bootstrap standard errors from 600 moving block bootstrap replications with block
+length 5.
+
+The estimated cumulative labor productivity response to an aggregate R&D shock is 1.1
+percentage points, with approximately two-thirds of this effect attributed to TFP and the
+remainder split between capital deepening and labor quality. However, the bootstrap standard
+error of 0.88 percentage points implies that this estimate is not statistically distinguishable from
+zero at conventional significance levels.
+This imprecision in aggregate responses could potentially be explained by compositional
+differences. If different types of R&D have heterogeneous productivity effects, aggregate shocks
+that combine these types will reflect a weighted average that may be difficult to detect precisely.
+
+===== PDF_PAGE 26 =====
+19
+Moreover, the variation in aggregate R&D may be driven by factors that simultaneously affect
+productivity through other channels, confounding the R&D effect.
+R&D Share Shock Effects
+Compositional variation, by contrast, may provide cleaner identification to the extent that the
+allocation of a given R&D budget reflects different considerations than its overall level,
+conditional on prior allocations and broad macroeconomic trends. We turn now to share shocks,
+which capture the effects of reallocating R&D across categories—for example, from basic
+research to development research, or vice versa. The overall level of R&D spending is tightly
+linked to fiscal conditions, macroeconomic cycles, and broader political priorities, all of which
+plausibly affect productivity through multiple channels simultaneously. The allocation of a given
+R&D budget across categories, however, may reflect a more specific set of decisions involving
+agency-level program choices, congressional earmarks and appropriations subcommittee
+preferences, the maturation of particular research agendas, and shifts in mission emphasis within
+agencies. Based on this understanding, these allocation decisions would be less obviously
+correlated with aggregate macroeconomic conditions that independently drive productivity.
+Our primary specifications examine shocks to the shares of each R&D type in the federal
+portfolio. These share shocks capture the effect of reallocating R&D toward a particular category
+while implicitly reducing allocations to other categories, holding total R&D constant. Table 4
+reports cumulative ten-year responses.
+Table 4. R&D Share Shock Effects (Cumulative at year 10)
+Research category TFP Capital Labor Quality Labor
+Productivity
+Basic Share 1.51** (0.73) 0.60 (0.40) -0.02 (0.19) 2.09** (0.93)
+Applied Share 1.10 (0.72) 0.86** (0.40) -0.25 (0.19) 1.70* (0.92)
+Development Share -1.36* (0.73) -0.92** (0.40) 0.04 (0.19) -2.23** (0.93)
+Plant Share 0.96 (0.70) 0.77* (0.40) -0.35* (0.20) 1.38 (0.87)
+Notes: Estimates are cumulative percentage point responses over ten years to a one-standard-deviation shock to
+the share innovation, defined as the residual from the share forecasting equation. Note that the coefficients in the
+TFP, capital deepening, and labor quality column sum to the value in the Labor Productivity column (with small
+deviations due to rounding). Bootstrap standard errors in parentheses. * p < 0.10, ** p < 0.05, *** p < 0.01.
+
+The estimates reveal substantial heterogeneity across R&D types. Shocks that increase the
+basic research share are associated with the largest positive effects on labor productivity, with a
+cumulative response of 2.09 percentage points, significant at the five percent level.
+Approximately three-quarters of this effect operates through total factor productivity, suggesting
+that basic research primarily enhances the efficiency with which the economy combines inputs
+rather than stimulating capital accumulation directly. Basic research itself spans a range of
+activities, from fundamental theoretical work to mission-oriented investigation. Our aggregate
+
+===== PDF_PAGE 27 =====
+20
+measure cannot distinguish among these subcomponents, which may have distinct productivity
+returns.
+Shocks that increase the applied research share also show positive associations with labor
+productivity, with a cumulative response of 1.70 percentage points, though this is only
+significant at the ten percent level. The composition of this effect differs somewhat from basic
+research, with a relatively larger contribution from capital deepening. This pattern is consistent
+with applied research generating more immediate and directed effects on investment
+opportunities than the diffuse knowledge gains from basic research.
+Shocks that increase the development share are associated with cumulative labor productivity
+declines of 2.23 percentage points over ten years. Estimated channels for this decline include
+both TFP and capital deepening, as opposed to labor quality, where the change is not statistically
+significant. The negative association implies that reallocating federal R&D toward development
+is associated with productivity losses roughly comparable in magnitude to the gains from
+reallocating toward basic research. Because shares sum to one, the negative development
+coefficient mechanically includes the foregone return from categories with higher estimated
+returns; we cannot separately identify the direct negative effect attributable to development
+spending itself. Interpreted within the share framework, this finding implies that the current
+federal allocation places more weight on development than would maximize labor productivity
+growth. Given this constraint, we interpret this finding as providing a rank-ordering of
+associations with productivity, with development spending as the least contributive toward labor
+productivity outcomes. This finding is consistent with prior literature, which generally finds
+basic research to contribute more to productivity relative to applied or development research (as
+reviewed in Hall et. al. 2009). Potential reasons for lower returns to development spending that
+would be consistent with prior literature include an emphasis on defense applications (Fieldhouse
+& Mertens 2024, 2025), reduced spillovers associated with greater IP protections (Dyevre 2024),
+and lower creative flexibility and tolerance for failure relative to basic research conditions
+(Azoulay et. al. 2009).
+Shocks to the R&D plant share (i.e., the share of R&D spending for research facilities and
+equipment) show positive labor productivity responses, though they are less precisely estimated
+than responses of other shares. Capital deepening is the only positive channel that is statistically
+significant for the R&D plant share. The TFP channel has a comparable point estimate but is
+imprecisely estimated. This pattern is consistent with research infrastructure investments directly
+augmenting the capital stock available for productive use, in addition to any indirect effects
+through enhanced research capabilities, net of depreciation.
+24
+
+24 Federal R&D plant aggregates a heterogenous set of investments. Capital intensity likely varies substantially
+across scientific fields, with much higher costs in disciplines such as physics, space science, or large biomedical
+infrastructure than they are in more software-heavy fields. Our coefficient on the plant share is a portfolio weighted
+average of the underlying disciplinary effects, with weights determined by historical allocation. The data report
+
+===== PDF_PAGE 28 =====
+21
+The approximate symmetry between the basic research and development share responses
+partly reflects the simplex constraint. Because the shares sum to one, a positive shock to the
+development share implies offsetting decreases in other categories. As such, we cannot conclude
+that development spending is actively harmful, only that it appears to have the lowest returns
+among the four categories. Qualitatively, the pattern implies a rank ordering of net labor
+productivity returns, with basic research at the top and development at the bottom among the
+four categories. The bilateral reallocation specifications (Table 6) provide a more direct test of
+this ordering and produce consistent results.
+Effects of Shocks to R&D Funding Levels
+An alternative specification examines shocks to the log level of each R&D type, controlling
+for the levels of other types. This approach captures the effect of increasing one type of R&D
+spending while holding other types constant, rather than the reallocation implicit in share shocks.
+Table 5 reports results.
+Table 5. R&D Level Shock Effects (Cumulative at year 10)
+Innovation TFP Capital Labor Quality Labor Productivity
+log Basic 1.26* (0.66) 0.17 (0.39) -0.19 (0.21) 1.24 (0.85)
+log Applied 1.44** (0.72) 0.74* (0.44) -0.09 (0.20) 2.09** (0.95)
+log Development 0.01 (0.81) -0.65 (0.49) 0.02 (0.22) -0.63 (1.09)
+log Plant 0.97 (0.71) 0.88** (0.40) 0.02 (0.19) 1.87** (0.88)
+Notes: Estimates are cumulative percentage point responses over ten years to a one-standard-deviation shock in
+the log level. Bootstrap standard errors in parentheses. * p < 0.10, ** p < 0.05, *** p < 0.01.
+
+The level specifications confirm the qualitative patterns from the share analysis while
+showing somewhat smaller magnitudes. The attenuated effects likely reflect that level shocks do
+not embed the implicit reallocation from other categories that share shocks capture. When basic
+research increases while other categories remain constant, the overall R&D portfolio becomes
+more basic-intensive; when basic research increases as part of a general expansion that maintains
+constant shares, the compositional effect is muted.
+The sign pattern across R&D types remains consistent. Basic and applied research show
+positive associations with labor productivity, development shows negative associations, and
+plant investments show positive effects. The relative magnitudes differ across specifications. In
+the level specification, applied research has the largest cumulative response and basic research
+drops to third. The larger applied research coefficient in the level specification is consistent with
+
+federal R&D by activity type, and we do not separately identify discipline-specific effects within the plant category
+as this would require more fine-grained data.
+
+===== PDF_PAGE 29 =====
+22
+applied research being particularly productive when paired with parallel investment in other
+R&D categories.
+Direct Reallocation Effects Reveal Opportunity for Productivity Gains
+The share and level specifications examine each R&D category individually. To provide
+direct estimates of the productivity consequences of bilateral reallocation, we construct additive
+log-ratio shocks that measure the effect of shifting R&D from development toward other
+categories. These specifications isolate bilateral reallocation effects. Table 6 reports results.
+Table 6. Reallocation Shock Effects: Productivity Gains from Shifting Away from Development
+(Cumulative at h=10)
+Reallocation TFP Capital Labor Quality Labor Productivity
+Basic vs. Development 1.64** (0.75) 0.84** (0.41) -0.07 (0.19) 2.42** (0.95)
+Applied vs. Development 1.36* (0.73) 0.95** (0.40) -0.19 (0.19) 2.12** (0.92)
+Plant vs. Development 0.77 (0.69) 1.08*** (0.40) -0.02 (0.19) 1.83** (0.86)
+Notes: Estimates are cumulative percentage point responses over ten years to shocks that reallocate R&D from
+development toward the indicated category. Bootstrap standard errors in parentheses. * p < 0.10, ** p < 0.05, *** p <
+0.01.
+
+The reallocation estimates confirm that shifting federal R&D away from development toward
+any other category is associated with substantial productivity gains. Reallocation toward basic
+research shows the largest response for labor productivity at 2.42 percentage points over ten
+years, followed by reallocation toward applied research at 2.12 percentage points and
+reallocation toward plant at 1.83 percentage points. These estimates are economically
+meaningful and statistically significant. To put this in context, the annual average labor
+productivity growth over our sample period is approximately 1.8 percent, so a reallocation shock
+that generates 2.4 additional percentage points over ten years represents a cumulative gain
+comparable to more than one year of normal productivity growth.
+Core Results Hold Across Lag Structures, Subsamples, and Placebo Tests
+This section assesses whether the compositional estimates in Section 5 reflect unexpected
+reallocations in the federal R&D portfolio rather than (1) predictable dynamics in the
+composition series, (2) anticipation or reverse causality (pre-trends), or (3) sensitivity to a small
+set of episodes or modeling choices. Because our shocks are constructed as forecast residuals,
+these exercises cannot prove exogeneity. They can probe the most direct ways in which the
+identifying assumption could fail.
+
+===== PDF_PAGE 30 =====
+23
+We focus the main text on the most consequential checks and summarize them in a single
+table (Table 7). Appendix A reports the full robustness results.25
+Entries in columns 1 through 3 are the cumulative ten-year labor productivity response to a
+one-standard-deviation shock to the indicated R&D share, estimated using the same LP
+specification as in Section 5. Column 4 reports p-values from lead (anticipation) tests, and
+column 5 reports p-values from a circular-shift placebo exercise that preserves the shock
+sequence but breaks its historical timing.
+Table 7. Robustness Summary
+Shock (share) Baseline (4
+lags)
+2 lags 6 lags Lead test p-
+value (h=10)
+Placebo p-value
+Basic share 2.09** 2.15** 1.10 0.083 0.036
+Applied share 1.70* 1.68* 1.05 0.250 0.023
+Development share -2.23** -2.26** -1.56 0.340 0.028
+Plant share 1.38 1.37* 2.01** 0.080 0.304
+NOTES: Baseline point estimates correspond to the share-specific results reported in Table 3. Alternative lag estimates
+correspond to re-estimation under the indicated lag length. The fourth column reports the p-value from a joint test that
+leads of the shock have no predictive power for the outcome through horizon h=10; failure to reject (high p-values) is
+consistent with the shock being unanticipated. The last column is from a randomization test that reassigns shock timing
+across years and reports the share of placebo replications yielding a cumulative response at least as large in absolute
+value as the baseline estimate; small values indicate that the baseline effect is unlikely under the null of no effect.
+(Appendix A reports full results and associated inference). * p < 0.10, ** p < 0.05, *** p < 0.01.
+
+Our baseline specification uses four lags in both shock construction and LP estimation as a
+compromise between capturing medium-run persistence and preserving degrees of freedom in a
+67-year annual sample. Table 7 shows that the ten-year cumulative labor productivity responses
+are qualitatively similar under shorter lag structures (2 lags), but under long lag structures (6
+lags) the estimates generally attenuate. The attenuation is consistent with longer lag specifics
+absorbing more low frequency variation.
+A central threat in policy time series designs is that shocks may proxy for slow-moving
+changes or anticipation effects. Productivity might begin moving before the measured shock, or
+policy changes may respond to information about future productivity not captured in our
+controls. We therefore implement lead tests that include three-year leads of each shock in the LP
+regressions and test whether those leads are jointly significant.
+Column 5 of Table 7 reports p-values for the joint lead test at the ten-year horizon. In
+general, we find no strong evidence that future composition shocks systematically predict earlier
+productivity movements. The plant share and basic share estimates are marginal cases,
+
+25 A minimal requirement for interpreting our forecast residuals as innovation reallocations is that they do not
+exhibit strong remaining predictability. Appendix A reports serial-correlation diagnostics for each innovation.
+Across all composition innovations (and total R&D) we fail to reject the null of no serial correlation at conventional
+levels, consistent with the shocks behaving like forecast errors rather than slow-moving trends.
+
+===== PDF_PAGE 31 =====
+24
+suggesting that plant and basic reallocations could be more gradual, more correlated with slow
+moving drivers, or measured with different timing than the other components.
+Finally, we ask whether the estimated cumulative responses are tied to the historical timing
+of composition reallocations or would arise mechanically from generic persistence. We
+implement a placebo test based on circularly shifting the realized shock series by a random offset
+in calendar time, re-estimating the same LP specification each time. This placebo preserves the
+realized shock sequences (including its serial correlation and low frequency variation) while
+breaking its alignment with historical productivity movements.
+Column 6 of Table 7 reports placebo p-values for labor productivity. The placebo test re-
+estimates each shock's effect after shifting its timing to other (non-actual) years. The p-value
+reports how unusual the actual-timing estimate is relative to the distribution of placebo estimates.
+A small p-value indicates that the actual-timing estimate lies in the tails of the placebo
+distribution, which means the result is tied to the specific historical timing of R&D reallocations
+and is unlikely to reflect generic persistence or comovement patterns. The basic, applied, and
+development share estimates are unusually large relative to the distribution under shifted timing,
+with p-values around 0.02 to 0.04, consistent with these results being meaningfully tied to the
+timing of actual reallocations. In contrast, the plant share estimates are not unusually large under
+this placebo, again suggesting that the plant results are the least timing-specific and should be
+interpreted with greater caution. Appendix A reports the full placebo results for TFP, capital
+deepening, and labor quality.
+Stability Check Across Structural Break: Bayh-Dole Act of 1980
+To examine whether our estimated associations are stable over time, we re-estimate the
+models allowing for the shock coefficient to vary before and after 1980. We focus on 1980 as the
+break year due to the Bayh-Dole Act of 1980, which fundamentally restructured incentives for
+U.S. R&D. Prior to the Act, government agencies retained patent rights to federally funded
+research. The Bayh-Dole Act allowed universities and publicly funded researchers to patent and
+commercialize their inventions, granting private industry access to licensing agreements for
+exclusive use. This shift catalyzed academic-industrial collaboration and accelerated technology
+transfer (Loise and Stevens 2010; CSIS 2022).
+Robustness results are reported in Appendix A. Overall, the estimates appear stable across
+this break, with 17 of 20 estimates not differing significantly between periods at the five percent
+level. The three exceptions occur at the zero horizon, where standard errors are relatively narrow.
+It is possible that this shift reflects a change in the relationship, though estimates appear to
+converge over time. Basic research prior to 1980 does appear to contribute more to labor
+productivity and innovation by year ten, but the difference is not statistically significant. One
+possibility is that this difference reflects the mission-oriented funding of the 1960s and 1970s
+and complementarities with the substantial baseline funding level and structural support for
+public R&D. Our robustness check is consistent with findings of a general decline in R&D
+
+===== PDF_PAGE 32 =====
+25
+effectiveness over time, which appears specifically in how basic research spending contributes to
+total factor productivity and labor productivity in the longer-term (Corrado et. al. 2023). At the
+same time, large standard errors and time horizons make it difficult to distinguish between
+genuine structural change and estimation uncertainty.
+A Portfolio Framework Suggests Public Investment in Development at the
+Cost of Productivity
+Building on the estimated productivity associations documented in the preceding sections, we
+now develop a portfolio optimization framework to evaluate alternative allocations of federal
+R&D. We emphasize that this exercise requires strong assumptions about the stability and causal
+interpretation of our estimates, and we present it primarily as an illustrative tool for thinking
+about compositional tradeoffs rather than a definitive policy recommendation. The exercise also
+requires a specific focus on federal R&D as a productivity-enhancing investment, which ignores
+potential other policy-relevant objectives of R&D spending.
+Framework
+We conceptualize the allocation of federal R&D across categories as a portfolio choice
+problem analogous to asset allocation in finance. Let
+𝑤 = (𝑤6, 𝑤7, 𝑤8, 𝑤9) denote the shares of
+R&D allocated to basic research, applied research, development, and plant, respectively, with
+shares constrained to be non-negative and sum to one.
+The expected productivity return from portfolio ww is computed as:
+𝜇(𝑤) = 𝑤6𝜇6 + 𝑤7𝜇7 + 𝑤8𝜇8 + 𝑤9𝜇9,
+where 𝜇) denotes the cumulative productivity effect estimated for R&D type jj. To aggregate
+across productivity components, we construct a composite index:
+𝐹(𝑤) = 0.5 × 𝜇:;9(𝑤) + 0.3 × 𝜇<(𝑤) + 0.2 × 𝜇=>(𝑤),
+weighting total factor productivity (weighted at 0.5), capital deepening (weighted at 0.3), and
+labor quality (weighted at 0.2), with weights selected to roughly reflect each component’s
+average contribution to labor productivity growth over our sample period (authors’ calculations
+from Fernald 2014). Our robustness analysis treats these proportions as a benchmark and
+evaluates portfolio performance across a Dirichlet distribution of weights centered on the
+baseline as well as a discrete set of alternative weighting schemes, spanning equal weights,
+single-component weights, and growth-accounting weights.
+The uncertainty in estimated effects generates risk that portfolios must manage. We
+characterize each portfolio by three summary statistics: (1) the mean expected return; (2) the
+downside expected return, taken as the 5
+th percentile of the portfolio’s return distribution; and (3)
+the probability that the portfolio generates a positive return. Each summary reflects both the
+bootstrap standard errors of the asset-level impulse responses and the choice of weights used to
+aggregate productivity components into a scalar score. Portfolios that score highly on the
+
+===== PDF_PAGE 33 =====
+26
+downside expected return criterion remain attractive in two senses. First, by construction, they
+continue to generate positive productivity returns even when the underlying asset-level impulse
+responses are realized below their point estimates in the bootstrap distribution. Second, they
+continue to generate positive productivity returns when the weights used to aggregate
+productivity components into a composite score are varied within the bounds. The downside
+expected return therefore serves as a single summary measure of portfolio performance that is
+robust to both sources of uncertainty.
+Sampling and Evaluation
+We draw 10,000 random portfolios uniformly from the four-dimensional simplex and
+evaluate each portfolio’s expected return, standard deviation, and downside risk. For each
+portfolio, we conduct 1,000 Monte Carlo iterations. In every iteration, we redraw the asset-level
+cumulative impulse responses from their bootstrap sampling distributions, and we redraw the
+outcome weights from a Dirichlet distribution centered on the baseline proportions. The resulting
+1,000 returns per portfolio yield the three summary statistics described above. We identify the
+Pareto optimal portfolios that are not dominated by any other portfolio in the three-dimensional
+space of mean returns to TFP, capital deepening, and labor quality. We also identify the top
+decile of portfolios ranked by their downside expected return.
+About 8 in 10 Randomly Drawn Portfolios Outperform the Status Quo
+Table 8 summarizes the distribution of portfolio performance across different selections.
+Table 8. Portfolio Performance by Selection Criterion Show Room to Increase Productivity
+Portfolio Set N Mean Return [5th, 95th percentile] Mean Downside Pr(Return > 0)
+All Random 10,000 0.35 [-0.07, 0.79] -0.07 0.80
+Pareto Frontier 70 0.54 [0.01, 1.08] 0.01 0.81
+Top 10% by Downside 1,000 0.77 [0.32, 1.25] 0.32 1.00
+Notes: Return is the composite productivity index, 𝐹(𝑤). Downside is the 10th percentile of the bootstrap
+distribution. Pr(Return > 0) is the fraction of bootstrap replications yielding positive returns.
+
+Approximately 80 percent of random portfolios produce positive expected returns at the
+Monte Carlo mean. The average random portfolio produces a 0.35 percentage point cumulative
+ten-year productivity gain relative to the baseline portfolio, though the 90-percent confidence
+interval spans zero. The Pareto optimal portfolios identified from the Monte Carlo improve on
+the sample mean and produce a cumulative score of 0.54 percentage points and a 90 percent
+confidence interval between 0.01 and 1.08 percentage points. Portfolios in the top decile produce
+a mean return of 0.77 percentage points, with a 90-percent confidence interval from 0.32 to 1.25
+percentage points. Table 9 characterizes the composition of different portfolio selections.
+
+===== PDF_PAGE 34 =====
+27
+Table 9. Average Portfolio Composition by Selection Uniformly Shifts Away from Development
+Selection Basic Applied Development Plant
+Historical Average (actual) 17% 20% 59% 4%
+Pareto Frontier 47% [6, 93] 31% [0, 84] 18% [0, 83] 3% [0, 10]
+Top 10% by Downside 48% [23, 76] 27% [4, 54] 3% [0, 7] 22% [2, 48]
+Notes: Values are average portfolio weights across portfolios in each selection. Values in the brackets are the 95
+percent confidence interval around the estimate.
+
+The composition analysis reveals differences between the historical allocation and those that
+maximize productivity according to our estimated productivity effects. The historical average
+portfolio of public R&D spending allocates 59 percent to development, while Pareto-optimal
+portfolios allocate only 18 percent. Conversely, the historical basic research share of 17 percent
+is nearly three times less than the Pareto optimal share of 47 percent. Bracketed values capture
+the joint effect of asset standard errors and outcome-weighted uncertainty on the bounds of each
+share. The robust portfolios place roughly three times the historical weight on basic research,
+more than five times the historical weight on plant, and almost no weight on development, with
+the bounds on development holding at no more than seven percent even at the 95
+th percentile of
+the joint Monte Carlo. While there are wide confidence bands, these point estimates are
+consistent with an overweighting of R&D spending toward development, suggesting productivity
+improvements to be gained from a shift toward basic R&D, in particular.
+Caveats
+There are several important limitations to this application of portfolio analysis. First, the
+optimal portfolios depend on the point estimate coefficients on productivity effects, though we
+consider uncertainty in the estimates using bootstrapped standard errors. To the extent that the
+true productivity effects differ from our estimates, optimal allocations would shift. Second, the
+analysis focuses on marginal effects of shifting the marginal dollar from one research type into
+another, assuming that effects are stable across different allocation regimes. General equilibrium
+considerations suggest that large reallocations could change the returns to each category, or that
+the true effects could be nonlinear. Third, federal R&D composition reflects objectives beyond
+productivity maximization, including national security, public health, and scientific capability.
+Development spending in particular is heavily concentrated in defense and other mission-
+oriented programs whose social value extends beyond measured labor productivity. Reallocating
+funding away from development involves tradeoffs that our productivity-focused analysis does
+not characterize. Compositional policy must account for both the productivity consequences we
+estimate and the consequences for other policy objectives.
+
+===== PDF_PAGE 35 =====
+28
+We present the portfolio analysis primarily as a tool for illustrating the implications of
+heterogeneous productivity effects on the opportunity cost of high R&D funding allocation to
+development. The estimated optimal portfolio is not intended as a policy prescription, but as a
+directional indicator. The analysis clarifies that if our estimates are approximately correct, and
+assuming stable linear marginal effects, the productivity consequences of compositional choices
+are substantial enough to warrant serious attention in science and technology policy
+deliberations.
+Our Results Support a Rebalancing of U.S. R&D Budget Priorities
+Our findings support recent calls for a change to budget scoring of R&D spending, in order
+to better capture the different expected returns across R&D types. At the policy level, a
+productivity-focused Federal R&D portfolio would rely less on development spending and more
+on basic research; this finding ought to be considered as a tradeoff to the current development-
+heavy R&D budget. In this section, we elaborate on this interpretation and mechanisms.
+Federal R&D Investment in Basic Research is Low, Relative to Expected Productivity
+Gains
+Our finding of a positive association between basic research and productivity is consistent
+with both prior literature and theoretical expectations, including the dominant mechanism of total
+factor productivity. Basic research generates fundamental knowledge that can be applied across
+many contexts, creating broad spillovers that raise productivity throughout the economy (Nelson
+1959; Dyevre 2024). Further, funding for basic research has been found to contribute to and
+maintain high-caliber human capital in the United States (Tham et. al. 2024). Long lags typically
+associated with basic research effects are consistent with our finding that basic research works
+primarily through TFP rather than capital accumulation, as knowledge diffusion takes time. Yet
+our analysis supports the view that gains at least begin to materialize within the budget window
+of ten years, rather than taking 20 or more years to materialize as assumed in current budget
+scoring approaches (Gullo et. al. 2025). The cumulative ten-year effect of approximately 2.1
+percentage points per standard-deviation shock is on the higher end of prior estimates and
+implies substantial returns to basic research investment. This estimate, combined with our
+portfolio analysis, suggests significant underinvestment in basic research relative to a
+productivity-maximizing benchmark.
+The implication of this finding for policymakers is twofold. One, standard budget scoring
+approaches may underweight the productivity value of basic research investment, contributing to
+a systematic underinvestment in this category of R&D spending relative to other categories.
+Updating budget scoring to reflect longer-term futures, as well as greater returns within the
+budget window, could help policymakers more accurately weigh the estimated benefits against
+the costs of basic research. Two, federal spending on basic research is a tested and effective
+
+===== PDF_PAGE 36 =====
+29
+channel to increase economic productivity through total factor productivity. As the United States
+faces high and increasing budget deficits, taking an investment approach to the Federal budget
+would suggest a particularly high return to basic research spending, as one potential path to
+reducing the future debt-to-GDP ratio.
+Development Drains U.S. Economic Productivity, Relative to Other Research Types
+We also find a negative association between development spending and productivity.
+Development represents the largest category of federal R&D historically; this finding suggests
+that shifting marginal dollars away from development would strictly improve projected future
+productivity outcomes. This finding suggests a misallocation of R&D spending against the
+objective of economic productivity.
+Several mechanisms could generate this pattern. First, federal development spending is
+heavily concentrated in defense and space missions, and the productivity returns to this type of
+work may flow only weakly to the economic productivity measures captured in this analysis. Our
+productivity data covers the U.S. private business sector and uses cost-based deflators for federal
+output. Productivity gains realized inside government operations or in defense contractor
+production of military goods are therefore likely understated relative to the gains realized in
+private commercial production. Second, the technologies developed for specific military
+applications or space vehicles may have few uses outside those narrow domains and heightened
+information security that limits dual-use applications.
+Third, to the extent that federal development competes for scientific talent and resources with
+more productivity-enhancing activities, it could reduce aggregate productivity. And fourth,
+development spending may substitute for adoption of existing technologies, which would raise
+measured productivity in the short run but would not be captured in our R&D measures. If
+development crowds out technology adoption, measured productivity could decline even as the
+underlying technological capability improves. Each of these mechanisms is consistent with our
+findings, though they imply different normative interpretations.
+The primary implication for policymakers, thus, is to explicitly consider the objectives of
+R&D policy and whether existing development investments are aligned with public priorities.
+The comparative advantage of Federal R&D dollars, when it comes to productivity, appears to be
+in basic research. At the same time, there may be investments – such as military technologies—
+that the private sector otherwise would not produce without Federal investments. More analysis
+of effective public production systems and conditions for contractor productivity may help close
+the gap between noneconomic objectives and macroeconomic outcomes; otherwise, tradeoffs
+could be considered more explicitly in budgeting priorities.
+Limitations and Future Directions: Statistical Power, Causal Inference, and Spillovers
+Several limitations of our analysis suggest directions for future research. Due to aggregation,
+our analysis relies on a small number of data points, limiting statistical power and estimation
+
+===== PDF_PAGE 37 =====
+30
+precision. Further, our use of aggregate federal R&D data masks substantial heterogeneity across
+agencies, programs, and scientific fields. Other work (e.g., Fieldhouse & Mertens 2024, Moretti
+et. al. 2025) has suggested that productivity effects differ between defense R&D and nondefense
+R&D, and our aggregate estimates are not designed to capture this heterogeneity. Future work
+with more disaggregated data could examine whether the compositional patterns we document
+hold within specific domains or reflect differences across domains, by, for example,
+decomposing basic research into different subcomponents or categories.
+Our time-series identification relies on variation that may be confounded by unobserved
+factors correlated with both R&D composition and productivity. Alternative identification
+strategies, such as instrumental variables based on political or institutional factors that affect
+R&D composition independently of productivity considerations, could provide complementary
+evidence on causal effects.
+The international dimension is also absent from our analysis, though there is some evidence
+of cross-border spillovers from public R&D investment (e.g., as documented by Moretti et. al.
+2025 in the defense sector). Other countries have made different compositional choices in their
+public R&D investments, and cross-country comparison could provide additional identifying
+variation. However, institutional differences across countries complicate direct comparison and
+would require careful attention to context.
+Conclusion: Opportunity for Compositional Shifts in U.S. R&D Spending
+This paper has examined the relationship between the composition of federal R&D spending
+and U.S. productivity growth using data spanning 67 years. Our analysis finds substantial
+heterogeneity in the estimated productivity associations across R&D types. Shocks that increase
+the share of basic research in the federal portfolio are associated with cumulative productivity
+gains of approximately 2.1 percentage points over ten years. Applied research and R&D plant
+investments also show positive associations of 1.7 and 1.4 percentage points, respectively. In
+contrast, positive shocks to the development share are associated with productivity declines of
+approximately 2.2 percentage points.
+These compositional effects substantially exceed the aggregate R&D effects we can detect,
+suggesting that how federal R&D is allocated may matter more for productivity than the overall
+level of investment. Portfolio optimization analysis indicates that historical allocations have been
+tilted toward development relative to compositions that would maximize expected productivity,
+implying potential gains from reallocation toward basic research and research infrastructure.
+Our identification strategy cannot definitively establish causality. The constructed shocks
+represent unpredictable changes in R&D composition, but unpredictability does not guarantee
+exogeneity with respect to productivity outcomes. Diagnostic tests support the interpretation of
+our constructed shocks as valid, but there remains the possibility of unobserved confounding
+
+===== PDF_PAGE 38 =====
+31
+factors. We interpret our results as informative associations that motivate further investigation
+rather than definitive causal estimates.
+Subject to these limitations, our findings argue that science policy deliberations should attend
+to the composition of federal R&D investments alongside the overall level of R&D spending.
+The productivity consequences of compositional choices are large enough to warrant weight
+alongside national security, human capital development, public health, and other objectives of
+federal R&D. We caution that our estimates reflect responses to shocks of standard-deviation
+magnitude; large reallocations could generate different returns through general equilibrium
+effects that our linear framework does not capture. Further research using alternative
+identification strategies and more disaggregated data will strengthen the evidentiary foundation
+for compositional policy recommendations.
+
+===== PDF_PAGE 39 =====
+32
+Appendix A
+This appendix provides additional detail on data construction, estimation procedures,
+diagnostic tests, and supplementary results.
+Properties of Constructed Shocks
+The validity of our approach depends on the constructed shocks representing genuinely
+unpredictable changes rather than forecastable variation or systematic responses to omitted
+factors. We conduct two types of diagnostic tests.
+First, we examine whether the shocks exhibit serial correlation, which would suggest
+predictable components. Table A.1 reports Ljung-Box and Breusch-Godfrey tests for the absence
+of serial correlation.
+Table A.1. Serial Correlation Tests for Shocks
+ Ljung-Box χ²
+(df=6)
+p-value Breusch-Godfrey
+χ² (df=4)
+p-value
+Total 6.14 0.41 2.31 0.68
+Basic Share 2.34 0.89 1.36 0.85
+Applied Share 6.12 0.41 1.49 0.83
+Development Share 6.29 0.39 1.32 0.86
+Plant Share 1.09 0.98 0.46 0.98
+Notes: Ljung-Box test examines autocorrelation through lag 6. Breusch-Godfrey test examines autocorrelation
+through lag 4.
+
+All shocks pass both tests at conventional significance levels, with p-values ranging from
+0.68 to 0.98. This result indicates that the constructed shocks do not exhibit detectable serial
+correlation, consistent with their interpretation as unpredictable changes.
+We also examine the empirical distribution of the constructed shocks. Figure A.1 presents
+histograms of each standardized shock series overlaid with the standard normal density.
+
+===== PDF_PAGE 40 =====
+33
+Figure A.1. Empirical Distributions of Constructed Shocks
+
+Notes: Each panel shows the empirical distribution of the indicated standardized shock series (z-score). The solid
+black line is a kernel density estimate. The dashed red line is the standard normal density for reference. Shocks are
+constructed as residuals from forecasting equations with four lags and macroeconomic controls. SOURCE: Authors'
+calculations from NSF and OMB historical tables.
+Alternative Lag Specifications
+Our main results use four lags in both the shock construction and the Local Projections
+estimation. Substantively, four years corresponds to a single presidential term, which represents
+a natural institutional cycle for federal R&D priority setting. Incoming administrations typically
+revisit R&D budget priorities as part of a broader policy agenda, and the federal budgeting
+process introduces additional implementation lags that extend the influence of any given
+administration’s priorities across its full term. A four-year lag structure thus allows the
+forecasting equations to condition on a complete cycle of political priority setting, helping to
+absorb the predicable component of compositional change driven by shifts in administrations.
+
+===== PDF_PAGE 41 =====
+34
+However, we also evaluate whether the primary results are sensitive to lag structure. Table A.2
+examines robustness to alternative lag lengths.
+Table A.2. Cumulative LP Effects Under Alternative Lag Specifications
+Innovation 2 Lags 4 Lags (Baseline) 6 Lags
+Basic Share 2.15** (0.90) 2.09** (0.93) 1.10 (0.97)
+Applied Share 1.68* (0.91) 1.70* (0.92) 1.05 (0.95)
+Development Share -2.26** (0.94) -2.23** (0.93) -1.56 (0.96)
+Plant Share 1.37* (0.83) 1.38 (0.87) 2.01** (0.92)
+Notes: Cumulative labor productivity effects at h=10 under alternative lag specifications for shock
+construction and LP estimation.
+
+The estimates are qualitatively and quantitatively stable for shorter lags, but for longer lags
+the results attenuate and generally become more imprecisely estimated. The attenuation at longer
+lags suggests the relationship becomes more difficult to detect as the specification becomes more
+demanding of the data.
+Stability Across a Structural Break
+To examine whether our estimated associations are stable over time, we re-estimate the
+models allowing for a structural break at the year 1980. We selected this year due to the Bayh-
+Dole Act of 1980, which changed incentive structures around research by allowing U.S.
+universities and academic research to own patents on their research.
+Figure A.2 summarizes the results of the structural break analysis, showing the cumulative
+difference in impulse responses between the post-1980 and pre-1980 periods (i.e., post-1980
+estimated effect, minus pre-1980 estimated effect) for each shock-component pair. Filled dots
+denote horizons where the difference is statistically significant at the 5-percent level; shaded
+bands reflect 95-percent bootstrap confidence intervals.
+The most consistent finding is stability for our primary measure of innovation. We find there
+is no significant difference between periods in the relationship between any category of R&D
+spending and TFP, our primary measure of innovation. This holds across all five shock types and
+all horizons. More broadly, the majority of shock-component pairs show no evidence of a
+structural break.
+There are two exceptions in the short-run response to total R&D shocks. The cumulative
+effects on labor productivity and capital deepening differ significantly across periods at horizons
+zero to two, driven by a sign reversal in the capital response (negative pre-1980, positive post-
+1980), as shown in Figure A.3. These differences are only marginally significant and converge
+toward zero by horizon 3 (as shown in Table A.3), which suggests there is no permanent shift in
+
+===== PDF_PAGE 42 =====
+35
+the R&D-productivity relationship. Confidence intervals at longer horizons are wide, consistent
+with the limited sample size available for cumulative estimation at extended horizons as well as
+greater likelihood of confounding factors.
+The most notable structural break appears in the relationship between basic research
+spending and hours worked, where the difference is significant at every horizon (p < 0.01). This
+difference (depicted in Figure A.4) reflects the disappearance of a previously strong positive
+effect: pre-1980, basic research shocks were associated with cumulative increases in hours
+worked of 0.33 to 1.47 percentage points; post-1980, the corresponding estimates are
+indistinguishable from zero. Importantly, no parallel break appears in the TFP or capital
+responses to basic research, suggesting that the pre-1980 hours effect may have reflected
+extensive-margin labor absorption rather than productivity-enhancing reallocation. The absence
+of this channel after 1980 is consistent with a shift toward more capital-or knowledge-intensive
+modes of translating basic research into economic activity, possibly facilitated by the
+commercialization incentives introduced by the Bayh-Dole Act.
+
+===== PDF_PAGE 43 =====
+36
+Figure A.2. Structural Break: Cumulative Differences Over Time
+
+Notes: This figure shows differences in estimated coefficients for cumulative effects (post-1980 specifications minus
+the pre-1980 specifications), including controls for the output gap (CBO data), federal funds rate (FRED data), and
+total R&D spending level (NSF data). Labor productivity is defined as the sum of coefficients on TFP (A), capital (K),
+and labor quality (LQ). The shaded areas correspond to a 95-percent confidence interval for the differences in each
+time period, using bootstrap standard errors (400 draws, moving block bootstrap, block length = 5). Significant
+differences are marked with solid dots.
+
+===== PDF_PAGE 44 =====
+37
+Figure A.3. Structural Break Overlay: Total R&D, Cumulative Response Over Time
+
+Notes: Estimates are the coefficients on cumulative response of each outcome to unexplained variation in total R&D
+spending, including controls for the output gap (CBO data), federal funds rate (FRED data), and total R&D spending
+level (NSF data). Labor productivity is defined as the sum of coefficients on TFP (A), capital (K), and labor quality
+(LQ). The shaded areas correspond to a 95-percent confidence interval for the coefficients in each time period, using
+bootstrap standard errors (400 draws, moving block bootstrap, block length = 5).
+
+===== PDF_PAGE 45 =====
+38
+Figure A.4. Structural Break Overlay: Basic Research, Cumulative Response Over Time
+
+Notes: Estimates are the coefficients on cumulative response of each outcome to unexplained variation in basic R&D,
+including controls for the output gap (CBO), federal funds rate (FRED), and total R&D spending level (NSF). Labor
+productivity is defined as the sum of coefficients on TFP (A), capital (K), and labor quality (LQ). The shaded area
+corresponds to a 95-percent confidence interval using bootstrap standard errors (400 draws, moving block bootstrap,
+block length = 5).
+
+===== PDF_PAGE 46 =====
+39
+Table A.3. Structural Break Differences
+Shock Component At h Peak diff. (SE) Sig. horizons (5%)
+Total R&D Labor Prod. (LP) 0 1.414 -0.607 3 / 11
+TFP (A) 9 -2.427 -1.660 0 / 11
+Capital (K) 1 1.339 -0.489 3 / 11
+Labor Quality (LQ) 0 0.099 -0.111 0 / 11
+Basic Research Labor Prod. (LP) 10 -4.334 -2.130 2 / 11
+TFP (A) 8 -2.412 -1.414 0 / 11
+Capital (K) 3 -0.470 -0.531 0 / 11
+Labor Quality (LQ) 3 -1.389 -0.303 11 / 11
+Applied Research Labor Prod. (LP) 8 2.217 -1.847 0 / 11
+TFP (A) 4 1.091 -0.917 0 / 11
+Capital (K) 8 1.492 -0.871 0 / 11
+Labor Quality (LQ) 6 -0.548 -0.408 0 / 11
+Development Labor Prod. (LP) 2 0.595 -0.922 0 / 11
+TFP (A) 4 -0.869 -0.933 0 / 11
+Capital (K) 8 -1.162 -0.863 0 / 11
+Labor Quality (LQ) 5 0.783 -0.377 3 / 11
+Plant & Equipment Labor Prod. (LP) 1 1.320 -0.797 0 / 11
+TFP (A) 4 -0.817 -1.050 0 / 11
+Capital (K) 1 0.770 -0.392 1 / 11
+Labor Quality (LQ) 2 0.502 -0.241 1 / 11
+Notes: Peak diff. reports the largest cumulative difference (post-1980 minus pre-1980) by absolute t-statistic across
+horizons hh = 0,...,10. Standard errors correspond to the peak difference horizon. Sig. horizons reports the fraction
+of horizons with p < 0.05. Bootstrap standard errors (400 draws, moving block bootstrap, block length = 5).
+Lead Tests
+A standard concern in time-series designs that exploit policy changes is that the measured
+shock may still proxy for slow-moving and forward-looking policy adjustments or other latent
+forces that also predict future productivity. To evaluate this potential concern, we implement a
+lead test that estimates whether future values of the constructed R&D composition shocks have
+incremental predictive power for labor productivity, conditional on the current shock and
+standard controls. For each composition shock, we estimate regressions that include three-year
+
+===== PDF_PAGE 47 =====
+40
+leads of the shock, alongside the contemporaneous shock and controls. We then test the joint null
+hypothesis that the coefficient on these leads are jointly zero.26
+Table A.4 reports the joint lead test for each composition shock and horizon. Across the four
+composition shocks and three horizons evaluated, we do not find strong evidence that future
+shocks are predictive of the outcome, conditional on the controls, though the joint test for the
+Plant and basic share are marginally significant at the ten-year horizon. The absence of
+systematic predictability from future shocks is consistent with the intended interpretation of the
+composition shocks as shock-like reallocations, rather than mechanical reflections of pre-existing
+productivity trends.
+Table A.4. Lead Tests (F-stat and p-values for Joint Significance)
+Innovation h=0 h=5 h=10
+Basic Share 1.25 (0.277) 0.70 (0.550) 2.09* (0.083)
+Applied Share 0.95 (0.433) 0.30 (0.883) 1.30 (0.250)
+Development Share 0.94 (0.363) 0.31 (0.830) 1.10 (0.340)
+Plant Share 0.91 (0.393) 1.48 (0.210) 2.28* (0.080)
+Notes: P-values from F-tests of joint significance of share leads in LP regressions. Low p-values suggest
+predictability of the productivity outcome by future shocks.
+Placebo Tests
+Are the estimated productivity responses in Table 3 tied to the historical timing of R&D
+share reallocations, or would similarly large effects appear even if the same shock sequence
+occurred in different years? To evaluate this, we implement a circular-shift placebo test. For each
+R&D share shock, we preserve the entire realized shock sequence (including serial correlation
+and low frequency structure) but rotate it by a random offset in calendar time and re-estimate the
+same LP specification. This test generates a demanding placebo null that the shock retains
+realistic time series properties, but its timing is no longer aligned with the historical sequency of
+productivity movements and policy episodes. Small placebo p-values indicate that our baseline
+cumulative effects are unusually large relative to estimates obtained under alternative calendar
+
+26 We implement this using a moving block bootstrap with the same block length as our other analysis (L=5 years).
+In each bootstrap replication, we resample blocks of the raw annual data, rebuild the full set of shocks inside the
+draw using the same shock-construction procedure as in the main analysis, re-estimate the lead regression, and
+record the vector of lead coefficients. We then construct a joint Wald statistic using the bootstrap covariance matrix
+of the lead coefficients. Table A.4 reports the bootstrap p-values computed under the recentered null (i.e.,
+recentering the bootstrap distribution so that the mean lead vector equals zero). In all specifications, we use 300
+bootstrap replications.
+
+===== PDF_PAGE 48 =====
+41
+alignments, suggesting that the results are not driven primarily by generic persistence or
+comovements.
+Table A.5 presents the results from this exercise. The placebo p-values for the applied and
+development share results are small, indicating that the estimated effects are unusual relative to
+the distribution under randomly shifted timing and are therefore meaningfully tied to the
+historical timing of actual reallocations. The basic share result is directionally consistent with
+this pattern across most channels but is less precisely distinguished from the placebo distribution.
+The plant share placebo p-values are large, which is consistent with the imprecisely estimated
+plant share effects in our primary results.
+Table A.5. Placebo Test
+Shock (share spec) TFP (A) Capital deepening (K) Labor Quality
+(LQ)
+Labor productivity (LP)
+Basic share shock 1.51* (0.083) 0.60* (0.091) -0.02 (0.914) 2.09** (0.036)
+Applied share shock 1.10* (0.079) 0.86** (0.010) -0.25 (0.592) 1.70** (0.023)
+Development share shock -1.36** (0.045) -0.92** (0.018) 0.04 (0.836) -2.23** (0.028)
+Plant share shock 0.96 (0.440) 0.77*** (0.000) -0.35* (0.055) 1.38 (0.304)
+Notes: Entries report the cumulative (ten-year) LP response for each outcome to a one standard deviation innovation
+in the indicated R&D share. Placebo-based p-values in parentheses.
+
+===== PDF_PAGE 49 =====
+42
+Abbreviations
+R&D Research and development
+TFP Total factor productivity
+LP Linear projections
+GDP Gross domestic product
+NIH National Institute of Health
+NCSES National Center for Science and Engineering Statistics
+NSF National Science Foundation
+OMB Office of Management and Budget
+
+===== PDF_PAGE 50 =====
+43
+References
+Akcigit, U., Hanley, D., & Serrano-Velarde, N. (2021). Back to basics: Basic research spillovers,
+innovation policy, and growth. Review of Economic Studies, 88(1), 1-43.
+Azoulay, P., Graff Zivin, J., Li, D., & Sampat, B. N. (2019). Public R&D investments and
+private-sector patenting: Evidence from NIH funding rules. Review of Economic Studies,
+86(1), 117-152.
+Bloom, N., Schankerman, M., & Van Reenen, J. (2013). Identifying technology spillovers and
+product market rivalry. Econometrica, 81(4), 1347-1393.
+Deller, Steven and Tessa Conroy, (2014). Innovation and Economic Performance: R&D within
+Wisconsin. Patterns of Economic Growth and Development. Study Series No. 5
+Fernald, J. G. (2014). A quarterly, utilization-adjusted series on total factor productivity. Federal
+Reserve Bank of San Francisco Working Paper 2012-19.
+Fleming, L., & Sorenson, O. (2004). Science as a map in technological search. Strategic
+Management Journal, 25(8-9), 909-928.
+Griliches, Z. (1979). Issues in assessing the contribution of research and development to
+productivity growth. Bell Journal of Economics, 10(1), 92-116.
+Griliches, Z. (1992). The search for R&D spillovers. Scandinavian Journal of Economics,
+94(Supplement), 29-47.
+Guellec, D., & Van Pottelsberghe de la Potterie, B. (2004). From R&D to productivity growth:
+Do the institutional settings and the source of funds of R&D matter? Oxford Bulletin of
+Economics and Statistics, 66(3), 353-378.
+Gullo, Theresa, et. al.. "Estimating the Economic and Budgetary Effects of Research
+Investments." Tax Policy and the Economy 39.1 (2025): 53-81.
+Hall, B. H., Mairesse, J., & Mohnen, P. (2010). Measuring the returns to R&D. In B. H. Hall &
+N. Rosenberg (Eds.), Handbook of the Economics of Innovation (Vol. 2, pp. 1033-1082).
+Elsevier.
+Jentsch, C., & Lunsford, K. G. (2019). The dynamic effects of personal and corporate income tax
+changes in the United States: Comment. American Economic Review, 109(7), 2655-2678.
+Jones, C. I., & Williams, J. C. (1998). Measuring the social return to R&D. Quarterly Journal of
+Economics, 113(4), 1119-1135.
+
+===== PDF_PAGE 51 =====
+44
+Jordà, Ò. (2005). Estimation and inference of impulse responses by local projections. American
+Economic Review, 95(1), 161-182.
+Jorgenson, D. W., Gollop, F. M., & Fraumeni, B. M. (1987). Productivity and U.S. Economic
+Growth. Harvard University Press.
+Mansfield, E. (1980). Basic research and productivity increase in manufacturing. American
+Economic Review, 70(5), 863-873.
+Moretti, E., Steinwender, C., & Van Reenen, J. (2019). The intellectual spoils of war? Defense
+R&D, productivity and international spillovers. NBER Working Paper No. 26483.
+Moris, F. and Pece, C. (2022). Definitions of Research and Development: An Annotated
+Compilation of Official Sources, National Science Foundation, National Center for Science
+and Engineering Statistics (NCSES), NCSES 22-209. As of May 29, 2026:
+https://ncses.nsf.gov/pubs/ncses22209
+https://wayback.archive-
+it.org/5902/20160210164701/http:/www.nsf.gov/statistics/randdef/fedgov.cfm
+Ramey, V. A. (2016). Macroeconomic shocks and their propagation. In J. B. Taylor & H. Uhlig
+(Eds.), Handbook of Macroeconomics (Vol. 2, pp. 71-162). Elsevier.
+Solow, R. M. (1957). Technical change and the aggregate production function. Review of
+Economics and Statistics, 39(3), 312-320.
+
+===== PDF_PAGE 52 =====
+45
+About the Authors
+Tobias Sytsma is an economist at RAND. He conducts research on topics around
+technological change, international trade, and economic security. Sytsma holds a Ph.D. in
+economics.
+
+K. MacKenzie Scott is an associate management scientist at RAND. She researches topics
+related to economic disruption, distribution, and work. Scott holds a Ph.D. in management.

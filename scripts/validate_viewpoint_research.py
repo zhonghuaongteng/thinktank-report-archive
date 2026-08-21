@@ -6,6 +6,8 @@ import hashlib
 import zipfile
 from pathlib import Path
 
+from pypdf import PdfReader
+
 
 def rows(path: Path) -> list[dict[str, str]]:
     with path.open("r", encoding="utf-8-sig", newline="") as f:
@@ -44,13 +46,31 @@ def main() -> None:
     assert len(evidence) == 24, len(evidence)
     assert len(list((root / "02_机构轨迹卡").glob("*.md"))) == 11
     pdfs = list((root / "03_证据底稿" / "原文PDF").glob("*.pdf"))
-    assert len(pdfs) >= 46, len(pdfs)
+    assert len(pdfs) >= 145, len(pdfs)
     assert len(list((root / "03_证据底稿" / "文本").glob("*.txt"))) >= len(pdfs)
     assert len(list((root / "03_证据底稿" / "切片").glob("*.md"))) >= len(pdfs)
     assets = rows(root / "19_本地全文资产台账.csv")
     assert len(assets) == len(seeds)
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in assets) >= 46
     assert all(len(r["SHA256"]) == 64 for r in assets if r["本地PDF"])
+    catalog_assets = rows(root / "21_非锚点全文补存台账.csv")
+    assert len(catalog_assets) == 105, len(catalog_assets)
+    assert sum(r["资产类型"] == "PDF" for r in catalog_assets) == 102
+    assert sum(r["资产类型"] == "官方网页" for r in catalog_assets) == 3
+    assert all(r["本地资产"] and Path(r["本地资产"]).exists() for r in catalog_assets)
+    assert not any(r["本地状态"] == "获取失败" for r in catalog_assets)
+    pdf_hashes: set[str] = set()
+    for pdf in pdfs:
+        assert pdf.read_bytes()[:4] == b"%PDF", pdf
+        digest = sha(pdf)
+        assert digest not in pdf_hashes, f"duplicate PDF hash: {pdf}"
+        pdf_hashes.add(digest)
+        page_count = len(PdfReader(str(pdf)).pages)
+        text_path = root / "03_证据底稿" / "文本" / f"{pdf.stem}.txt"
+        assert page_count > 0
+        assert len(text_path.read_text(encoding="utf-8")) / page_count >= 200, pdf
+    expected_web = {"L-7D859D5B15", "L-45F9A8A2BD", "L-69CC5834D1"}
+    assert {r["报告ID"] for r in catalog_assets if r["资产类型"] == "官方网页"} == expected_web
     assert {r["观察窗"] for r in seeds} == {"W1", "W2", "W3"}
     assert all(r["官方页面或PDF"].startswith("https://") for r in seeds)
     seed_text = (root / "05_官方锚点种子.csv").read_text(encoding="utf-8-sig")
@@ -76,7 +96,7 @@ def main() -> None:
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv"))
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "06_数据资产" / "数据资产清单.csv"))
     print("viewpoint_research_validation=ok")
-    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)}")
+    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)}")
 
 
 if __name__ == "__main__":

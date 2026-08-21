@@ -42,7 +42,9 @@ KEYWORDS = {
 
 def clean(text: str) -> str:
     text = text.replace("\x00", " ")
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
     text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r" +\n", "\n", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
 
@@ -79,7 +81,7 @@ def process_pdf(path: Path, text_dir: Path, slice_dir: Path) -> None:
     full = []
     for page_number, value in enumerate(pages, start=1):
         full.append(f"\n===== PDF_PAGE {page_number} =====\n{value}\n")
-    (text_dir / f"{path.stem}.txt").write_text("".join(full), encoding="utf-8")
+    (text_dir / f"{path.stem}.txt").write_text("".join(full).rstrip() + "\n", encoding="utf-8")
 
     hits: dict[str, list[tuple[int, str]]] = defaultdict(list)
     for page_number, value in enumerate(pages, start=1):
@@ -88,10 +90,11 @@ def process_pdf(path: Path, text_dir: Path, slice_dir: Path) -> None:
             for excerpt in page_hits:
                 hits[tracer].append((page_number, excerpt))
 
+    display_path = path.relative_to(path.parents[2])
     output = [
         f"# {path.stem} 原文切片",
         "",
-        f"- 原文：`{path}`",
+        f"- 原文：`{display_path}`",
         f"- PDF页数：{len(pages)}",
         "- 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。",
         "",
@@ -100,7 +103,7 @@ def process_pdf(path: Path, text_dir: Path, slice_dir: Path) -> None:
     ]
     for page_number, value in enumerate(pages[:12], start=1):
         if re.search(r"executive summary|summary|key (findings|messages|takeaways)|abstract", value, re.I):
-            output.extend([f"### PDF页 {page_number}", "", value[:6000], ""])
+            output.extend([f"### PDF页 {page_number}", "", value[:6000].rstrip(), ""])
     for tracer in KEYWORDS:
         output.extend([f"## {tracer}", ""])
         selected = hits.get(tracer, [])[:8]
@@ -109,7 +112,7 @@ def process_pdf(path: Path, text_dir: Path, slice_dir: Path) -> None:
             continue
         for page_number, excerpt in selected:
             output.extend([f"- PDF页{page_number}：{excerpt}", ""])
-    (slice_dir / f"{path.stem}.md").write_text("\n".join(output), encoding="utf-8")
+    (slice_dir / f"{path.stem}.md").write_text("\n".join(output).rstrip() + "\n", encoding="utf-8")
 
 
 def main() -> int:

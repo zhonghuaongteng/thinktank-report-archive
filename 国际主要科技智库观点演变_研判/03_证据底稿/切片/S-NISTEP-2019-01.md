@@ -1,6 +1,6 @@
 # S-NISTEP-2019-01 原文切片
 
-- 原文：`国际主要科技智库观点演变_研判\03_证据底稿\原文PDF\S-NISTEP-2019-01.pdf`
+- 原文：`03_证据底稿\原文PDF\S-NISTEP-2019-01.pdf`
 - PDF页数：26
 - 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
 
@@ -8,115 +8,80 @@
 
 ### PDF页 1
 
-NISTEP REPORT No.183 
- 
- 
- 
- 
- 
- 
- 
- 
-The 11th Science and Technology Foresight: 
-S&T Foresight 2019 
-Summary Report 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-November 2019 
- 
- 
- 
-Science and Technology Foresight Center 
+NISTEP REPORT No.183
+
+The 11th Science and Technology Foresight:
+S&T Foresight 2019
+Summary Report
+
+November 2019
+
+Science and Technology Foresight Center
 National Institute of Science and Technology Policy
 
 ### PDF页 2
 
-【Contributors】 
-AKAIKE Shinichi Principal Senior Fellow 
-YOKOO Yoshiko Director, Science and Technology Foresight Center 
-ITO Yuko Deputy Director, Science and Technology Foresight Center 
-URASHIMA Kuniko Deputy Director, Science and Technology Foresight Center 
-OMOE Hiromi Deputy Director, Science and Technology Foresight Center 
-GAMO Hidenori Visiting Researcher, Science and Technology Foresight 
-Center 
-KAWAOKA Masayuki Visiting Researcher, Science and Technology Foresight 
-Center 
-KUROGI Yutaro Research Fellow, Science and Technology Foresight Center 
-SHIRAKAWA Nobuyuki Senior Research Fellow, Science and Technology Foresight 
-Center 
-HAYASHI Kazuhiro Senior Research Fellow, Science and Technology Foresight 
-Center 
-KOSHIBA Hitoshi Senior Research Fellow, Second Policy-oriented Research 
-Group (Science and Technology Foresight Centre until 
-March 2019) 
-KURIBAYASHI Miki Senior Research Fellow, Science and Technology Foresight 
-Center (Until March 2019) 
-NAKASHIMA Jun Visiting Researcher, Science and Technology Foresight 
-Center (Until March 2018) 
-YANO Sachiko Visiting Researcher, Science and Technology Foresight 
-Center (Until May 2018) 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-Please specify reference as the following example when citing this NISTEP REPORT. 
- 
- 
- 
-“The 11th Science and Technology Foresight: S &T Foresight 2019 - Summary report -,” 
-NISTEP REPORT, No.183, National Institute of Science and Technology Policy, Tokyo. 
+【Contributors】
+AKAIKE Shinichi Principal Senior Fellow
+YOKOO Yoshiko Director, Science and Technology Foresight Center
+ITO Yuko Deputy Director, Science and Technology Foresight Center
+URASHIMA Kuniko Deputy Director, Science and Technology Foresight Center
+OMOE Hiromi Deputy Director, Science and Technology Foresight Center
+GAMO Hidenori Visiting Researcher, Science and Technology Foresight
+Center
+KAWAOKA Masayuki Visiting Researcher, Science and Technology Foresight
+Center
+KUROGI Yutaro Research Fellow, Science and Technology Foresight Center
+SHIRAKAWA Nobuyuki Senior Research Fellow, Science and Technology Foresight
+Center
+HAYASHI Kazuhiro Senior Research Fellow, Science and Technology Foresight
+Center
+KOSHIBA Hitoshi Senior Research Fellow, Second Policy-oriented Research
+Group (Science and Technology Foresight Centre until
+March 2019)
+KURIBAYASHI Miki Senior Research Fellow, Science and Technology Foresight
+Center (Until March 2019)
+NAKASHIMA Jun Visiting Researcher, Science and Technology Foresight
+Center (Until March 2018)
+YANO Sachiko Visiting Researcher, Science and Technology Foresight
+Center (Until May 2018)
+
+Please specify reference as the following example when citing this NISTEP REPORT.
+
+“The 11th Science and Technology Foresight: S &T Foresight 2019 - Summary report -,”
+NISTEP REPORT, No.183, National Institute of Science and Technology Policy, Tokyo.
 DOI: https://doi.org/10.15108/nr183
 
 ### PDF页 5
 
-3 
- 
-[The 11th S&T Foresight: S&T Foresight 2019 series] 
-Summary: 
-Summary Report, NISTEP Report No.183, November 2019, NISTEP 
-DOI: https://doi.org/10.15108/nr183 
- 
-Horizon Scanning: 
-Horizon Scanning Report, Discussion Paper No.183, June 2020, NISTEP 
-DOI: https://doi.org/10.15108/dp183 
- 
-Visioning: 
-Discussion on Desirable Society 2040 , Research Material No.276, September 
-2018, NISTEP 
-DOI: https://doi.org/10.15108/rm276 
- 
-S&T Perspectives: 
-Close-up Science and Technology Areas for the F uture in 2050 -Extraction and 
-Analysis through a C ombination of AI -related Technologies and Expert Judges-, 
-Research Material No.290, June 2020, NISTEP 
-DOI: http://doi.org/10.15108/rm290 
- 
-Delphi Survey, Research Material No.292, June 2020, NISTEP 
-DOI: https://doi.org/10.15108/rm292 
- 
-Scenario: 
-Society in 2040 through the Development of S&T - Conceptual Scenario-, 
-Research Material No. 291, June 2020, NISTEP 
+3
+
+[The 11th S&T Foresight: S&T Foresight 2019 series]
+Summary:
+Summary Report, NISTEP Report No.183, November 2019, NISTEP
+DOI: https://doi.org/10.15108/nr183
+
+Horizon Scanning:
+Horizon Scanning Report, Discussion Paper No.183, June 2020, NISTEP
+DOI: https://doi.org/10.15108/dp183
+
+Visioning:
+Discussion on Desirable Society 2040 , Research Material No.276, September
+2018, NISTEP
+DOI: https://doi.org/10.15108/rm276
+
+S&T Perspectives:
+Close-up Science and Technology Areas for the F uture in 2050 -Extraction and
+Analysis through a C ombination of AI -related Technologies and Expert Judges-,
+Research Material No.290, June 2020, NISTEP
+DOI: http://doi.org/10.15108/rm290
+
+Delphi Survey, Research Material No.292, June 2020, NISTEP
+DOI: https://doi.org/10.15108/rm292
+
+Scenario:
+Society in 2040 through the Development of S&T - Conceptual Scenario-,
+Research Material No. 291, June 2020, NISTEP
 DOI: https://doi.org/10.15108/rm291
 
 ## T1_国家研发与方向设定

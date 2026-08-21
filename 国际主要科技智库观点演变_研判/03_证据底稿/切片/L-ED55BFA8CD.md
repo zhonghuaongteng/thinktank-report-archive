@@ -1,0 +1,59 @@
+# L-ED55BFA8CD 原文切片
+
+- 原文：`03_证据底稿\原文PDF\L-ED55BFA8CD.pdf`
+- PDF页数：20
+- 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
+
+## 执行摘要与开篇候选
+
+## T1_国家研发与方向设定
+
+- PDF页3：visit www.rand.org/paf. The draft, dated June 2026, was reviewed by formal peer reviewers and DAF subject-matter experts. The views expressed in this publication are those of the authors and do not reflect the official policy or position of the U.S. Department of War or the U.S. Government. Review of this material does not imply U.S. Department of War endorsement of factual accuracy or opinion. Funding Funding for this research was made possible through the concept formulation provision of the Department of the Air Force–RAND Sponsoring Agreement (contract FA7014-22-D-0001). PAF uses concept formulation funding to support a variety of activities, including research plan development; direct assistance on short-term, decision-focused Department of the Air Force requests; exploratory research; outreach
+
+- PDF页8：ver time, but effects are mixed and depend significantly on program design, institutional support, and the quality of information provided to participants about the value of different credentials. 7 There have been fewer assessments of stackable certificate models in military or government organizational contexts, and it is not yet clear how findings from civilian higher education transfer to a military environment with different incentive structures, career progression systems, and training requirements. Given this evidentiary uncertainty, the recommendations in this paper should be understood as promising options warranting further evaluation rather than as established best practices. In particular, before implementing stackable certificate programs at scale, the DAF should 4 John P. Pallasch, “Un
+
+- PDF页16：y for building AI proficiency across the full personnel portfolio. 25 Nathaniel Fairbank, “The Army Built an AI Talent Pipeline—B ut It’s Filled with Career-Killing Roadblocks, Modern War Institute, January 14, 2026. 26 Nelson Lim, “Stackable Certificates Could Be a Lifeline for Governments Facing an IT Talent Crisis,” Route Fifty, July 11, 2024. 27 J. M. Eddins, Jr., “The United States Air Force’s Focus on AI Research and Development,” Airman Magazine, May 21, 2024.
+
+- PDF页19：Levine, and Melanie A. Zaber, Promising Practices for Building Stackable Credential Infrastructure, RAND Corporation, PE-A4555-1, February 2026. As of May 21, 2026: https://www.rand.org/pubs/perspectives/PEA4555-1.html Lim, Nelson, “Stackable Certificates Could Be a Lifeline for Governments Facing an IT Talent Crisis,” Route Fifty, July 11, 2024. Montoya, Tahina, Kelly Atkinson, and Lisa M. Harrington, Modifying Air Force Intelligence Career Development in Response to Targeted Permanent Change of Station Reductions, RAND Corporation, RR-A3735-3, 2026. As of April 30, 2026: https://www.rand.org/pubs/research_reports/RRA3735-3.html Office of the Under Secretary of War (Comptroller), Department of War Budget Fiscal Year 2027: Military Personnel Programs, April 2026. Pallasch, John P., “Understanding Po
+
+## T2_市场与产业政策边界
+
+未自动命中；需人工按目录复核。
+
+## T4_国际合作与开放
+
+- PDF页9：dvanced technology training model, such as the DAF–Massachusetts Institute of Technology AI Accelerator, which is designed to educate airmen and guardians on AI fundamentals and applications, and AFWERX, which “connects Airmen and Guardians to commercial innovators using virtual collaboration, immersive training and networking opportunities to inspire ideas and cultivate a more creative force;” 9 the Air Force Institute of Technology (AFIT), which provides graduate-level education in science, technology, engineering, and AI to military and civilian personnel; and Air University’s Global College, which offers flexible distance and online professional development that could support virtual and hybrid delivery of stackable certificate content. Beyond these existing resources, the DAF would need to adopt a
+
+- PDF页10：iteracy Vertical or horizontal Specialized technological skills Varies by project Advanced areas, such as cybersecurity, network engineering, and cloud computing for deployment and management of complex AI systems Specialization courses or degree programs; projects that focus on collaboration with information technology or engineering for skill transfer High: stackable certificate approach could provide access to specialization Vertical or supplemental Given this framework, the U.S. Space Force (USSF) might traditionally approach workforce investments in AI and advanced technologies by accessing guardians with data science degrees and augmenting their foundational knowledge with USSF-focused data analysis training. This reflects opportunities for incorporating stackable certificates in a vertical stack
+
+- PDF页12：development that PME is designed to provide. Updating existing DAF PME curricula with online-accessible stackable certificates may enable AETC to adopt dynamic learning models for emerging competencies, providing options to modernize current educational structures by leveraging partnerships with a diverse network of providers offering synchronous, asynchronous, virtual, and in-person learning options. Adopting hybrid learning models that incorporate just-in-time education on AI and advanced technologies may be particularly relevant at a time when the DAF is seeking to strengthen technical training and technological exposure while managing personnel tempo and cost pressures. For example, integrating stackable certificates into DAF systems could ameliorate existing challenges associated with the cost
+
+## T5_供应链与技术依赖
+
+未自动命中；需人工按目录复核。
+
+## T7_管制与研究安全
+
+未自动命中；需人工按目录复核。
+
+## T8_新兴技术治理
+
+- PDF页1：KELLY PIAZZA, KELLY ATKINSON, NELSON LIM Modernizing Department of the Air Force Training and Education Approaches Leveraging Stackable Certificates for Artificial Intelligence and Advanced Technologies Research Report Expert Insights PERSPECTIVE ON A TIMELY POLICY ISSUE
+
+- PDF页3：onsistently tasked to do more with less. In this context, the DAF needs to adopt innovative approaches and strengthen its technological capabilities to prepare its personnel for the challenges of strategic competition and future warfare. As warfare becomes increasingly shaped by artificial intelligence (AI), autonomy, cyber capabilities, and data-driven operations, the DAF may consider treating technological fluency as a core element of readiness. We identify stackable certificate programs in AI and advanced technologies as a potential way to build these skills over time in critical missions and career fields and to modernize existing professional military education curricula. The intended audience for this paper includes DAF training and development functions, personnel management offices, senior leaders, and p
+
+- PDF页5：................................................................................................................................................................... vi Modernizing Department of the Air Force Training and Education Approaches: Leveraging Stackable Certificates for Artificial Intelligence and Advanced Technologies ..................................................................... 1 Exploring a New Approach: Stackable Certificates ................................................................................................. 2 Adopting Stackable Certificates for Artificial Intelligence and Advanced Technologies .................................... 3 Integrating Stackable Certificates Within Professional Military Education ......................................................... 5 Adopting Stac
+
+- PDF页5：Advanced Technologies ..................................................................... 1 Exploring a New Approach: Stackable Certificates ................................................................................................. 2 Adopting Stackable Certificates for Artificial Intelligence and Advanced Technologies .................................... 3 Integrating Stackable Certificates Within Professional Military Education ......................................................... 5 Adopting Stackable Certificates: Implementation for Warrant Officers .............................................................. 8 Implementing Stackable Certificates: Approaches and Considerations ................................................................ 9 Abbreviations ......................................
+
+- PDF页6：vi Tables Table 1. Pathways for the Department of the Air Force’s Investment in Artificial Intelligence and Advanced Technologies ............................................................................................................................................................. 4
+
+- PDF页7：1 Modernizing Department of the Air Force Training and Education Approaches: Leveraging Stackable Certificates for Artificial Intelligence and Advanced Technologies Warfare is increasingly shaped by artificial intelligence (AI), autonomy, cyber capabilities, and data-driven operations, and U.S. adversaries are investing heavily in these technologies in ways that could reduce U.S. military advantage.1 As the Commission on the National Defense Strategy warned in 2024, today’s force is already strained to meet the needs of strategic competition and potential multitheater war. 2 That reality, along with ongoing operational and personnel demands from conf
+
+- PDF页7：ands from conflict with Iran and from U.S. Department of War (DOW) efforts to deter the People’s Republic of China in the Indo-Pacific, 3 suggests that the U.S. Department of the Air Force (DAF) may need to continue building a force able to generate decision advantage, integrate emerging technologies, and fight effectively in a faster, more complex battlespace. In an era of constrained resources, technological fluency may increasingly need to be treated as a core element of warfighter readiness, not a niche skill or one-time educational requirement. Airmen and guardians must continuously adapt as these capabilities evolve. The DAF could consider investing in targeted, ongoing, “just-in-time” training in AI, data literacy, and cyber-enabled operations to ensure that the force remains lethal, agile, and capab
+
+- PDF页9：for education on AI and advanced technologies. We discuss both approaches below before considering stackable certificates for the DAF’s newly reestablished warrant officer corps. We conclude with a discussion of implementation considerations. Adopting Stackable Certificates for Artificial Intelligence and Advanced Technologies As a first step, the DAF should conduct a functional mission analysis to identify which career fields and mission areas require agile skill training in AI and advanced technologies. These career fields and units can establish AI literacy and progress toward the acquisition and application of specialized technological skills by leveraging stackable certificates focused on executing tasks in such areas as cybersecurity, network engineering, or cloud computing. These certificates could be or
+
+## T10_预见与优先领域
+
+- PDF页16：separation rates. 26 Overall, adopting stackable certificates for training and education on AI and advanced technologies could, if well designed and appropriately evaluated, enhance DAF workforce technological proficiency so that it remains at the forefront of innovation across critical technological skill areas— from AI literacy to cybersecurity—that are essential in an era of strategic competition. 27 A stackable certificate approach may also create opportunities for cost savings, including by potentially reducing PCS demands associated with some in-residence PME programs, while providing the workforce with more current and immediately applicable technological training. Over time, these cumulative skills can contribute to substantive knowledge development in the military workforce and equip the DAF to su

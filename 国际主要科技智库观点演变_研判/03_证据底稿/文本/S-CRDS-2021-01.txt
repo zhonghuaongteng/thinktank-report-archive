@@ -9,7 +9,7 @@ CRDS-FY2020-SP-06
 ͑Δ
 ज़
 STRATEGIC PROPOSAL
-System Software to Support Safety , Security , 
+System Software to Support Safety , Security ,
 and Trust in the Era of Society 5.0
 
 ===== PDF_PAGE 2 =====
@@ -48,7 +48,7 @@ Society 5.0が目指す社会は、人とモノがつながり、さまざまな
 新型コロナの災禍は、働き方、学び方、医療のあり方など、これまで当たり前と感じていたものを問い直
 す貴重な契機となった。再認識された価値も含む新たな常態（ニュー・ノーマル）に向けて、ITにより社会
 を変革するDX（デジタ ルトランスフォーメーション）の取り組みの徹底が求められている。これは、2016年
-にわが国が目指すべき経済発展と社会的課題の解決を両立する、人間中心の社会とし て提唱されたSociety 
+にわが国が目指すべき経済発展と社会的課題の解決を両立する、人間中心の社会とし て提唱されたSociety
 5.0の実現であり、 その実現に向けたこれからの時代を 「Society 5.0時代」 と呼ぶ。本提案では、 Society 5.0
 時代の社会システムにおいて優先的に解決すべき共通課題とし て、情報科学技術の基盤技術のうち、セキュ リ
 ティー、プライ バシー、プラッ ト フォームに関わる課題を解決するための研究開発を取り上げた。
@@ -107,121 +107,121 @@ CRDS-FY2020-SP-06CRDS 国立研究開発法人科学技術振興機構 研究開
 
 ===== PDF_PAGE 5 =====
 Executive Summary
-As research and development of system software to support security, safety, and trust in the 
-Society 5.0 era proposed by Japan, this proposal proposes a research and development strategy 
+As research and development of system software to support security, safety, and trust in the
+Society 5.0 era proposed by Japan, this proposal proposes a research and development strategy
 on system software to solve issues related to security, privacy, and platforms.
- 
-The goal of Society 5.0 is to create is a data-driven society where people and things are 
-connected, various knowledge and information are shared, and new values are created that have 
-never been seen before. In a data-driven society, data, which is the source of competitiveness 
-in the digital age, should not be held by a specific country or company but should be freely 
-distributed while ensuring privacy, security, intellectual property, and other safety features. At 
-present, however, most of Japan's data is under the control of the US IT giants represented by 
-GAFA. T o counter this data hegemony, it is necessary to implement a framework that balances 
+
+The goal of Society 5.0 is to create is a data-driven society where people and things are
+connected, various knowledge and information are shared, and new values are created that have
+never been seen before. In a data-driven society, data, which is the source of competitiveness
+in the digital age, should not be held by a specific country or company but should be freely
+distributed while ensuring privacy, security, intellectual property, and other safety features. At
+present, however, most of Japan's data is under the control of the US IT giants represented by
+GAFA. T o counter this data hegemony, it is necessary to implement a framework that balances
 free data distribution and personal information protection.
- 
-Japan is depending on foreign countries for hardware and operating systems. The trend toward 
-openness and commoditization of information systems since the 1990s has resulted in the loss 
-of its R&D opportunities related to the foundation of information science and technology, and 
-the loss of its international competitiveness in both industrial and academic areas. The source 
-of GAFA's competitiveness is their business models and the foundation of information science 
-and technology. If Japan neglects the foundation of information science and technology, it will 
-not be able to realize the society that Society 5.0 aims for. Furthermore, in the information 
-and communication industry, without strengthening the foundation of information science 
-and technology, it will be difficult for Japan to strengthen its international competitiveness by 
+
+Japan is depending on foreign countries for hardware and operating systems. The trend toward
+openness and commoditization of information systems since the 1990s has resulted in the loss
+of its R&D opportunities related to the foundation of information science and technology, and
+the loss of its international competitiveness in both industrial and academic areas. The source
+of GAFA's competitiveness is their business models and the foundation of information science
+and technology. If Japan neglects the foundation of information science and technology, it will
+not be able to realize the society that Society 5.0 aims for. Furthermore, in the information
+and communication industry, without strengthening the foundation of information science
+and technology, it will be difficult for Japan to strengthen its international competitiveness by
 leveraging its strengths in IoT and robotics.
- 
-Meanwhile, the new coronavirus pandemic has provided an inevitable opportunity to 
-reexamine what people had taken for granted in terms of how they work, how they learn, and 
-how they receive medical care. T oward the reaffirmed value with the new normal, Japanese 
-society is required to thoroughly implement DX (Digital Transformation) initiatives to transform 
+
+Meanwhile, the new coronavirus pandemic has provided an inevitable opportunity to
+reexamine what people had taken for granted in terms of how they work, how they learn, and
+how they receive medical care. T oward the reaffirmed value with the new normal, Japanese
+society is required to thoroughly implement DX (Digital Transformation) initiatives to transform
 itself through IT. This is the realization of Society 5.0, which was proposed in 2016 as a human-
-centered society that balances economic development and the resolution of social issues, and 
-the coming era toward the realization of this society is called the "Society 5.0 era. This proposal 
-focuses on research and development to solve issues related to security, privacy, and platforms 
-among the fundamental technologies of information science and technology because this proposal 
-believes that these are the common, as well as urgent, issues that need to be solved in the social 
+centered society that balances economic development and the resolution of social issues, and
+the coming era toward the realization of this society is called the "Society 5.0 era. This proposal
+focuses on research and development to solve issues related to security, privacy, and platforms
+among the fundamental technologies of information science and technology because this proposal
+believes that these are the common, as well as urgent, issues that need to be solved in the social
 system of the Society 5.0 era.
- 
-Firstly, concerning security issues, attacks via the Internet used to be the main security threat, 
-but in recent years, new threats have emerged that target new vulnerabilities in the core of 
-the computing environment, such as microprocessors and operating systems. It is necessary 
+
+Firstly, concerning security issues, attacks via the Internet used to be the main security threat,
+but in recent years, new threats have emerged that target new vulnerabilities in the core of
+the computing environment, such as microprocessors and operating systems. It is necessary
 iii
-CRDS-FY2020-SP-06 Center for Research and Development Strategy, Japan Science and T echnology Agency 
+CRDS-FY2020-SP-06 Center for Research and Development Strategy, Japan Science and T echnology Agency
 STRATEGIC PROPOSAL　　System Software to Support Safety , Security , andTrust in the Era of Society 5.0
 
 ===== PDF_PAGE 6 =====
-to go one step further to develop technologies that enable the software to run safely and 
-correctly even in untrustworthy computing environments. Concrete research and development 
-issues include safety-oriented computer architecture technology, technology to build a trusted 
-execution environment, and secure OS technology to realize comprehensive security from edge 
+to go one step further to develop technologies that enable the software to run safely and
+correctly even in untrustworthy computing environments. Concrete research and development
+issues include safety-oriented computer architecture technology, technology to build a trusted
+execution environment, and secure OS technology to realize comprehensive security from edge
 to cloud.
- 
-Besides, as for issues on privacy in a data-driven society, data serves as a critical asset, and 
-personal information, confidential corporate information, and research data must be safely 
-managed and utilized. However, there is no sign of an end to leaks and tampering that exploit 
-the vulnerability of the system. T o ensure privacy, it needs to go one step further to develop 
-technologies that ensure data con/f_identiality based on the premise that data on open networks 
-can be seen. In terms of technology, possible R&D issues include trust assurance technology 
-based on secret computation, distributed authentication technology that can dynamically control 
-the range of mutual trust and disclosure level, and distributed data collection and analysis 
-technology based on secret computation. On the other hand, as seen in the contact tracing of 
-COVID-19, it is also an area where national interests and privacy intersect, so it is necessary to 
+
+Besides, as for issues on privacy in a data-driven society, data serves as a critical asset, and
+personal information, confidential corporate information, and research data must be safely
+managed and utilized. However, there is no sign of an end to leaks and tampering that exploit
+the vulnerability of the system. T o ensure privacy, it needs to go one step further to develop
+technologies that ensure data con/f_identiality based on the premise that data on open networks
+can be seen. In terms of technology, possible R&D issues include trust assurance technology
+based on secret computation, distributed authentication technology that can dynamically control
+the range of mutual trust and disclosure level, and distributed data collection and analysis
+technology based on secret computation. On the other hand, as seen in the contact tracing of
+COVID-19, it is also an area where national interests and privacy intersect, so it is necessary to
 conduct research that includes knowledge from the humanities and social sciences.
- 
-The final challenge is to establish a platform technology that supports security, safety, and 
-trust in the Society 5.0 era. This is because research results have social signi/f_icance only when 
-it contributes to the real world. The platform technology must enable data distribution and 
-information processing while ensuring detailed security requirements and privacy assurance, by 
-considering the entire system from the perspective of by-Design, rather than the conventional 
-follow-up measures. However, since it is not realistic to replace the platforms IT giants provide at 
-this time, this proposal assumes that the proposing system will run on various existing platforms. 
-Concrete research and development issues include management and control technologies for 
+
+The final challenge is to establish a platform technology that supports security, safety, and
+trust in the Society 5.0 era. This is because research results have social signi/f_icance only when
+it contributes to the real world. The platform technology must enable data distribution and
+information processing while ensuring detailed security requirements and privacy assurance, by
+considering the entire system from the perspective of by-Design, rather than the conventional
+follow-up measures. However, since it is not realistic to replace the platforms IT giants provide at
+this time, this proposal assumes that the proposing system will run on various existing platforms.
+Concrete research and development issues include management and control technologies for
 distributed data processing environments consisting of various execution environments, high-
-performance implementation technologies for security and privacy processing, and technologies 
+performance implementation technologies for security and privacy processing, and technologies
 for proving the authenticity and provenance of data.
- 
-In the promotion of research and development, basic research (theory) and applied research 
-(system foundation) will be conducted simultaneously. In theory, it is necessary to collaborate 
-with researchers in the /f_ield of mathematics, on which computer science depends. On the other 
-hand, in the system foundation, the target system environment is important for demonstrating 
-the research results. From the viewpoint of researchers' human resource development, the 
-system should be used in real systems and contribute to society to give them experience, 
-con/f_idence, and a sense of accomplishment. The research and development platforms of Japanese 
-universities and national laboratories are strong candidates for this purpose. In the execution 
-of the project, it is essential to build a research system that brings together researchers from 
-diﬀerent /f_ields and industry and academia under one roof and use this as a foundation for human 
+
+In the promotion of research and development, basic research (theory) and applied research
+(system foundation) will be conducted simultaneously. In theory, it is necessary to collaborate
+with researchers in the /f_ield of mathematics, on which computer science depends. On the other
+hand, in the system foundation, the target system environment is important for demonstrating
+the research results. From the viewpoint of researchers' human resource development, the
+system should be used in real systems and contribute to society to give them experience,
+con/f_idence, and a sense of accomplishment. The research and development platforms of Japanese
+universities and national laboratories are strong candidates for this purpose. In the execution
+of the project, it is essential to build a research system that brings together researchers from
+diﬀerent /f_ields and industry and academia under one roof and use this as a foundation for human
 resource development for the future.
- 
-By implementing this proposal, three scientific and technological benefits are predicted to 
+
+By implementing this proposal, three scientific and technological benefits are predicted to
 iv
-CRDS-FY2020-SP-06Center for Research and Development Strategy, Japan Science and T echnology Agency 
+CRDS-FY2020-SP-06Center for Research and Development Strategy, Japan Science and T echnology Agency
 STRATEGIC PROPOSAL　　System Software to Support Safety , Security , andTrust in the Era of Society 5.0
 
 ===== PDF_PAGE 7 =====
-be achieved. First, by having researchers in theory and system infrastructure work together in 
-the same project, it will be possible to build a basic theory that will contribute to the system 
-infrastructure of the Society 5.0 era. Second, researchers in the areas of architecture, operating 
-systems, databases, security, and languages can work together to solve the security and 
-privacy issues that continue to become more sophisticated and complex, thereby establishing 
-a fundamental solution method that does not follow suit. The third is to strengthen the 
-international research and development community. It is diﬃcult for a single country to solve a 
-problem like this one. Inviting top-notch researchers from overseas, managing joint projects with 
-overseas funding agencies, and disseminating research results not only in the form of papers but 
-also as open-source software are all opportunities for international collaboration. This strategic 
-proposal believes that this will contribute to the international community and improve the 
+be achieved. First, by having researchers in theory and system infrastructure work together in
+the same project, it will be possible to build a basic theory that will contribute to the system
+infrastructure of the Society 5.0 era. Second, researchers in the areas of architecture, operating
+systems, databases, security, and languages can work together to solve the security and
+privacy issues that continue to become more sophisticated and complex, thereby establishing
+a fundamental solution method that does not follow suit. The third is to strengthen the
+international research and development community. It is diﬃcult for a single country to solve a
+problem like this one. Inviting top-notch researchers from overseas, managing joint projects with
+overseas funding agencies, and disseminating research results not only in the form of papers but
+also as open-source software are all opportunities for international collaboration. This strategic
+proposal believes that this will contribute to the international community and improve the
 capabilities of Japanese researchers.
- 
-Finally, as a socioeconomic eﬀect, in the short term, it will reduce privacy violations and security 
-concerns, and decrease direct and indirect damages caused by security events. In the medium 
-to long term, the results of this proposal will help solve various social issues through digital 
-innovation and data-driven solutions, leading to the realization of Society 5.0, a more humane 
-and happy society. Internationally, the project will promote the creation of new businesses and 
-social innovations in the ICT technology /f_ield, the formulation of standardization proposals, and 
-human resource development, and will contribute to the promotion of science and technology 
+
+Finally, as a socioeconomic eﬀect, in the short term, it will reduce privacy violations and security
+concerns, and decrease direct and indirect damages caused by security events. In the medium
+to long term, the results of this proposal will help solve various social issues through digital
+innovation and data-driven solutions, leading to the realization of Society 5.0, a more humane
+and happy society. Internationally, the project will promote the creation of new businesses and
+social innovations in the ICT technology /f_ield, the formulation of standardization proposals, and
+human resource development, and will contribute to the promotion of science and technology
 innovation toward the achievement of the SDGs.
 v
-CRDS-FY2020-SP-06 Center for Research and Development Strategy, Japan Science and T echnology Agency 
+CRDS-FY2020-SP-06 Center for Research and Development Strategy, Japan Science and T echnology Agency
 STRATEGIC PROPOSAL　　System Software to Support Safety , Security , andTrust in the Era of Society 5.0
 
 ===== PDF_PAGE 8 =====
@@ -309,7 +309,7 @@ Society
 技術（プライ バシー技術も含む）以外に、広域分散処理や人工知能用の新たな計算原理の実現に向けた機能
 を有することが求められる。
 （2） 「理論×システム基盤技術」による安心安全なSociety
- 
+
 5.0情報処理基盤の構築
 本提案で、情報科学技術の基盤技術のうち、セキュ リティー、プライ バシー、プラッ ト フォームに関わる課
 題を解決するための研究開発を取り上げたのは、それらがSociety 5.0時代の社会システムにおいて優先的に
@@ -320,11 +320,11 @@ Society
 にて、 情報処理学会の五つの
 研究会（アーキテクチャー、OS、セキュ リティー、データ保護、プログラミング言語）から約40名の研究者
 が、システムソフ トウエアに関わる技術の俯瞰と、研究動向の現状・課題や今後の取り組みの方向性を議論
-した。その結果、分野間の連携や交流の強化と合わせて、 「理論×システム基盤技術」で安心安全なSociety 
+した。その結果、分野間の連携や交流の強化と合わせて、 「理論×システム基盤技術」で安心安全なSociety
 5.0情報処理基盤を構築するという考え方が導出された。
 5 科学技術振興機構 , 科学技術未来戦略ワークショップ報告書「Society 5.0システムソフ トウエア」, CRDS-FY2020-WR-04
 図 1-2　　　Society 5.0プラットフォームとSociety 5.0システムソフトウエア
- 
+
 　　 （内閣府公開資料と文部科学省情報委員会資料をもとに作成）
 2
 CRDS-FY2020-SP-06CRDS 国立研究開発法人科学技術振興機構 研究開発戦略センター
@@ -483,16 +483,16 @@ Googleは検索サービスを利用したインターネッ ト広告、Faceboo
 に巧みなビジネスモデルを持ち、強い事業を展開し ているが、ビジネスを支える強力な基本技術を持っ ている。
 表2-1にその特徴をまとめる。
 表
- 
+
 2-1　　　GAFAMプラットフォームの特徴
 16
-13 Statc ounter,” Social Media Stats Worldwide - December 2020“, 
+13 Statc ounter,” Social Media Stats Worldwide - December 2020“,
  https://gs.statc
 ounter.com/social-media-stats
-14 F acebook社2020年第3四半期（7月－9月）業績ハイライ ト, 
+14 F acebook社2020年第3四半期（7月－9月）業績ハイライ ト,
  https://about.fb.c
 om/ja/news/2020/10/2020-third-quarter-results/
-15 Canaly s, « Global cloud infrastructure market Q3 2020 « , 
+15 Canaly s, « Global cloud infrastructure market Q3 2020 « ,
  https://www.canaly
 s.com/newsroom/worldwide-cloud-market-q320
 16 https://servic es.google.com/fh/files/misc/google_2019-environmental-report.pdf
@@ -566,7 +566,7 @@ AIを利用したデータセンター効率
 のプライ バシー保護
 ログインアラート 、二段階
 認証などのアカウント管理
-Open Compute 
+Open Compute
 Projectにより、製
 品とデータセンター
 運 用 の ベ ストプラク
@@ -621,7 +621,7 @@ OSやコンパイラなどの開発が研究開発とし て成立し ていた�
 躍進し ている。著者所属機関は10位以内に米国５、中国４、フランス１、日本は18位に日本IBM、38位に
 東大が入るだけである。
 図
- 
+
 2-1　　　計算機基盤領域の論文動向
 17
 17 ソ ー ス：論文（Scopus、FMDB） 、特許（PATSTAT)
@@ -680,19 +680,19 @@ AMDなど多くのマイ クロプロセッサにて発生する可能性があ�
 このような状況の中、わが国政府においてもデータの保護と流通に向けた取り組みが活発に行われている。
 ●データ・フ リー フロー・ウィズ・トラ ス ト（DFFT）
 デジタル時代の競争力の源泉である 「データ」 は、 特定の国が抱え込むのではなく、 プライ バシーやセキュ
-18 Google Blog,” As G Suite gains traction in the enterprise, G Suite’s Gmail and consumer Gmail to more closely 
+18 Google Blog,” As G Suite gains traction in the enterprise, G Suite’s Gmail and consumer Gmail to more closely
 align“、
  https://blog.g
 oogle/products/gmail/g-suite-gains-traction-in-the-enterprise-g-suites-gmail-and-consumer-
 gmail-to-more-closely-align/
 19 BBC Japan, ” フェイスブックのデータ不正共有疑惑「8700万人に影響」”, https://www.bbc.com/japanese/43650517
-20 TRENDMICRO ,"AWS環境の公開サーバに対するセキュ リティー検討ガイ ド”, 
+20 TRENDMICRO ,"AWS環境の公開サーバに対するセキュ リティー検討ガイ ド”,
  https://r
 esources.trendmicro.com/jp-docdownload-form-t294-sem-aws2.html、P9
-21 Bloomber g,” 華為の問題は製品の不具合、予想以上に脆弱か”, 
+21 Bloomber g,” 華為の問題は製品の不具合、予想以上に脆弱か”,
  https://www.bloomber
 g.co.jp/news/articles/2019-04-01/PP9I7V6JTSE801
-22 Google P roject Zero,” Reading privileged memory with a side-channel”, 
+22 Google P roject Zero,” Reading privileged memory with a side-channel”,
  https://g
 oogleprojectzero.blogspot.com/2018/01/reading-privileged-memory-with-side.html
 23 TRENDMICRO、投機的実行 に関するぜい弱性「Meltdown」と「Spectre」について解説、
@@ -727,17 +727,17 @@ CRDS-FY2020-SP-06CRDS 国立研究開発法人科学技術振興機構 研究開
 に管理されつつ活用するこ とが求められる。データの統合利活用を促す動きとし て、ここ数年、法制度が
 着々 と整っ てきた（表2-2） 。
 表
- 
+
 2-2　　　データ統合利活用を促す動き
 28
 多くの取り組みが進められており、わが国のデジタル化がいっそう進展することが期待される。しかし、こ
 れらは上位のサービス層やアプリケーション、あるいはビジネスや政策に関連する内容であり、最も基本的な
 競争力とし て、Society 5.0を実現するためのシステムソフ トウエアの研究開発も必要であろう。
-24 首相官邸、“ 世界経済フォーラ ム年次総会 安倍総理スピーチ”, 
+24 首相官邸、“ 世界経済フォーラ ム年次総会 安倍総理スピーチ”,
  https://www.kantei.g
 o.jp/jp/98_abe/statement/2019/0123wef.html
 25 首相官邸 ,” デジタ ル改革関係閣僚会議”, https://www.kantei.go.jp/jp/99_suga/actions/202009/23digital.html
-26 デ ジタ ル市場競争会議,” デジタ ル市場競争に係る中期展望レポート(案)　～ Society 5.0 におけるデジタ ル市場のあり方～”, 
+26 デ ジタ ル市場競争会議,” デジタ ル市場競争に係る中期展望レポート(案)　～ Society 5.0 におけるデジタ ル市場のあり方～”,
 https://www.kantei.go.jp/jp/singi/digitalmarket/kyosokaigi/dai4/siryou3.pdf
 27 首相官邸 ,” Trusted Web推進協議会”, https://www.kantei.go.jp/jp/singi/digitalmarket/trusted_web/index.html
 28 盛 合志帆, “安心・安全なSociety 5.0の実現にむけて ～プ ライ バシー保護データ解析技術の現在～” , CRDS-FY2020-
@@ -761,7 +761,7 @@ CRDS-FY2020-SP-06
 コラム
 Society 5.0とDX（デジタルトランスフォーメーション）
 Society 5.0は、2016年に策定された第５期科学技術基本計画に基づき 、わが
-国が目指すべき未来社会の姿とし て提唱されたものであり 、SDGs（Sustainable 
+国が目指すべき未来社会の姿とし て提唱されたものであり 、SDGs（Sustainable
 Development Goals）のJapan Modelという位置づけである。 Society 5.0で実現す
 る社会は、IoT（Internet of Things）で全ての人とモノがつながり、さまざまな知識
 や情報が共有され、今までにない新たな価値を生み出し、また、人工知能（AI）によ
@@ -997,7 +997,7 @@ Spectre）が報告され、これまでCPUは安全だと信じていた人々�
 また、国際連携も重要である。今回のような課題の解決は一つの国の力だけでは難しい。海外の一流の研
 究者を招く こ と、海外のファンディ ングエージェンシーとの共同プロジェク トを運営するこ となど、国際連携の
 機会を設けるこ とが、国際貢献そのものであり、ひいてはわが国の研究者の実力を向上させる。
-37 情報処理学会 コンピュータ博物館, 大型プロジェク ト超高性能電子計算機開発スタート, 
+37 情報処理学会 コンピュータ博物館, 大型プロジェク ト超高性能電子計算機開発スタート,
  https://museum.ipsj.or.jp/c
 omputer/main/0109.html
 38 文部科学省「次世代 IT基盤構築のための研究開発」や後継の数々の開発投資により国際競争力が向上した
@@ -1059,8 +1059,8 @@ Open-TEE 信頼できるプロセッサーシステム プログラミング＋O
 た脆弱性検証
 アー キテクチャーレベ ルで の セキュリティ検 証
 技術 理論＋プログラミング＋アーキテクチャー
-Dynamic Information 
-Flow Tracking 
+Dynamic Information
+Flow Tracking
 （DIFT）
 アーキテクチャーサポート
 ヘテロな環境対応
@@ -1077,7 +1077,7 @@ CRDS-FY2020-SP-06CRDS 国立研究開発法人科学技術振興機構 研究開
 （2）信頼できる隔離実行環境の構築技術
 OSとは別に信頼できる隔離実行環境（TEE: Trusted Execution Environment）をハードウエアとソフ
 トウエアを協調設計するこ とでプログラ ムやデータ資産を守る。考え方自身はそれほど新しいものではなく、
-現在のCPUでも、IntelのSoftware Guard Extensions（SGX)やAMDのSecure Memory Encryption 
+現在のCPUでも、IntelのSoftware Guard Extensions（SGX)やAMDのSecure Memory Encryption
 (SME)、ArmのTrustZoneなどで実装されている他、オー プンアーキテクチャーであるRISC-VでもTEE開
 発が進められている。しかし、これらのTEEは、ハードウエア実装が非公開だったり、ベンダー固有の認証
 方式を採用し ていたりするため、ユーザーや第三者機関からの監査・検証ができない。また、クラウ ドとエッ
@@ -1138,10 +1138,10 @@ Gentryらにより初めて発表された。また、マルチパーティー�
 析者に個人のデータの推定できないようにするこ とでプライ バシーを守ろう とする技術である。また、局所差
 分プライ バシー（LDP: Local Differential Privacy）とは、 データを収集する際のプライ バシー基準であっ て、
 解析者だけでなく収集者にも個人データを推定できないようにする技術である。AppleがiOSデバイスのユー
-40 野村総合研究所 , 個人情報保護法改正における論点およびニューノーマルにおけるパーソナルデータ活用のあり方, 
+40 野村総合研究所 , 個人情報保護法改正における論点およびニューノーマルにおけるパーソナルデータ活用のあり方,
  https://www.nri.c
 om/jp/knowledge/report/lst/2020/cc/mediaforum/forum290
-41 厚生労働省 , 接触確認アプリケーションプライ バシーポリシー, 
+41 厚生労働省 , 接触確認アプリケーションプライ バシーポリシー,
  https://www.mhlw.g
 o.jp/stf/seisakunitsuite/japanese_pp_00027.html
 図 3-3　　　プライバシーを守る技術の例
@@ -1169,7 +1169,7 @@ CRDS-FY2020-SP-06CRDS 国立研究開発法人科学技術振興機構 研究開
 データの自由な流通と個人情報の安全性確保を両立するデータ駆動プラッ ト フォーム研究に関する研究開
 発課題は以下の通り。
 （1） セ
-キュリティー・プライバシー処理の高性能実装技術 
+キュリティー・プライバシー処理の高性能実装技術
 異分野連携によるセキュリティー検証技術
 異分野
 の研究者の連携により、基盤ソフ トウエアの脆弱性発見とセキュ リティー検証のための技術を開発す
@@ -1328,21 +1328,21 @@ CRDS-FY2020-SP-06
 2
 では以下の提言
 がなされた。
- 
+
  　我
 が国が世界に先駆けてSociety 5.0が描く社会を実現し ていくためには、次世代の人工知能（AI）
 技術やさまざまな分野での革新的な情報化を支える基盤的分野（OS、プログラミング 、セキュ リティ 、
 データベー ス、通信、高性能コンピューティ ング 、分散コンピューティ ング 、アーキテクチャ 、ハードウ
 エア等）の研究や人材育成を強化し、情報分野が先導する日本発のイ ノ ベーション創出を活性化させて
 いくことが重要である。
- 
+
  　
 このため、基盤的分野をベー スとし、Society 5.0が目指す知識を基盤とする人間中心の社会の構築
 に向けて、自然科学や工学だけでなく人文・社会科学や教育等も含む多様な研究分野との連携や産学官
-1 文部科学省情報委 員会（令和元年度第3回）配付資料, 第6期の情報学を検討するIPSJ-NII-MEXTラウン ドテーブル, 
+1 文部科学省情報委 員会（令和元年度第3回）配付資料, 第6期の情報学を検討するIPSJ-NII-MEXTラウン ドテーブル,
  https://www.mext.g
 o.jp/content/20200116-mext_jyohoka01-000004146_3.pdf
-2 文部科学省 , 科学技術・学術審議会情報委員会、今後の情報分野の研究の進め方について, 
+2 文部科学省 , 科学技術・学術審議会情報委員会、今後の情報分野の研究の進め方について,
  https://www.mext.g
 o.jp/content/20200313-mxt_jyohoka01-100015685_2.pdf
 付録1 検討の経緯
@@ -1464,7 +1464,7 @@ C
  小林 直樹
 　　研究分野発表（
 3） ア
-ーキテクチャ分野OVERVIEW 井上 
+ーキテクチャ分野OVERVIEW 井上
 弘士
 　　
  ア
@@ -1479,10 +1479,10 @@ C
 分野　OVERVIEW＆最先端研究
  河野 健二
 　
-　パネルディスカッション 
+　パネルディスカッション
 　
-　ラップアップ 
- 
+　ラップアップ
+
 ワ
 ークショップ（第２回）プログラム
 【テーマ】研究成果の応用に関する議論
@@ -1507,24 +1507,24 @@ JST/CRDS） 木村 康則
 の活用（1） 三井住友
 フィナンシャルグルー プ 谷崎 勝教
 　　研究成果
-の活用（2） NTT 
+の活用（2） NTT
 セキュアプラッ ト フォーム研究所
  高橋 克
 巳
-　　研究成果の活用（3） NTT 
+　　研究成果の活用（3） NTT
 セキュアプラッ ト フォーム研究所
  千
-田 浩司 
+田 浩司
 　　研究成果の活用（4） 日
 本アイ・ビー・エム東京基礎研究所
  福
 田 剛志
-　　CRDSの取組み 
+　　CRDSの取組み
  CRDS
 　
-　パネルディスカッション 
+　パネルディスカッション
 　　
-ラップアップ 
+ラップアップ
  文部科学省、CRDS
 参加者一覧
 （順不同敬称略）
@@ -1547,7 +1547,7 @@ JST/CRDS） 木村 康則
 　　田浦 健次朗　東京大学 教授/センター長
 　　小林 直樹　　東京大学 教授
 【第2回ワークショップの発表者】
-　　谷崎 勝教　　日本総合研究所 代表取締役社長/三井住友フィナンシャルグルー プ CDIO 
+　　谷崎 勝教　　日本総合研究所 代表取締役社長/三井住友フィナンシャルグルー プ CDIO
 　　高橋 克巳　　NTT セキュアプラッ ト フォーム研究所 主席研究員
 　　千田 浩司　　NTT セキュアプラッ ト フォーム研究所 主幹研究員
 　　福田 剛志　　日本アイ・ビー・エム 東京基礎研究所 所長
@@ -1599,7 +1599,7 @@ CRDS-FY2020-SP-06CRDS 国立研究開発法人科学技術振興機構 研究開
 ワークショップで問題意識と方向性を共有した参加者に提案を募ったところ10件の回答があった。発表内
 容と合わせて本提案の具体的な研究内容を検討する際の参考にした。
 付表
- 
+
 1-2　　　提案書一覧
 # 分野 タイトル 提案者（敬称略）
 1 アーキテクチャー 全体像とコンピュータ・アーキテクチャ
@@ -1633,7 +1633,7 @@ CRDS-FY2020-SP-06
 小林 直樹（東京大学） 、
 田浦 健次朗（東京大学） 、
 五十嵐 淳（京都大学）
-10 セキュリティー SECURITY PLATFORM FORWARD TO 
+10 セキュリティー SECURITY PLATFORM FORWARD TO
 POSTQUANTUM CYPHER, TEE AND IOT 宮地充子（大阪大学）
 （4）有識者インタビュー
 （3）のワークショップは、戦略プロポーザルの策定プロセスにおいては、有識者インタビューも兼ねて実
@@ -1719,7 +1719,7 @@ CRDS-FY2020-SP-06
 【日本】
 わが国で使われているサービスプラッ ト フォームは現状ほぼ米国に席巻されているが、研究用の計算環境
 （ビッグデータ処理基盤、スパコン）は着々 と強化拡充されている。産業技術総合研究所はわが国における産
-学共同のAI研究開発を加速するプラッ ト フォームであるAI橋渡しクラウ ド （AI Bridging Cloud 
+学共同のAI研究開発を加速するプラッ ト フォームであるAI橋渡しクラウ ド （AI Bridging Cloud
 Infrastructure, ABCI）を運用し ている。ABCIは世界ト ップレベルの計算処理能力とデータ処理能力を持ち、
 AIとビッグデータのアルゴリ ズム、ソフ トウエア 、応用開発に用いられている。2020年11月には理化学研究
 所の「富岳」と ともに、大規模機械学習処理のベンチマークであるMLPerfHPCにおいて世界最高レベルの
@@ -1742,7 +1742,7 @@ NSCIは複数の省庁にまたがる統一的な戦略であり、産業、ア�
 National Science Foundation（NSF）においても、NSCI@NSFと題し て、HPCの研究開発と配備に対
 し てファンディ ングを行っ ている。 Energy-Ef
 fi
-cient Computing: from Devices to Architectures 
+cient Computing: from Devices to Architectures
 (E2CDA)という プログラ ムでは、材料からデバイス、コンピューティ ングアーキテクチャーなどの研究に対し
 て、2016年から18年に合計で2千2百万ドル、Scalable Parallelism in the Extreme (SPX)においても
 2千万ドルの研究資金を提供し ている。また、Petascale Computing Resource Allocations (PRAC) にお
@@ -1772,12 +1772,12 @@ CRDS-FY2020-SP-06CRDS 国立研究開発法人科学技術振興機構 研究開
 ら研究提案を募集し、現在30以上のプログラ ムが実行されている。低電力プロセッサー、フォグコンピュー
 ティング 、ディープラーニングの学習アルゴリズムなど多岐にわたる研究が推進されている。2015年から
 2017年の間に開始されたプロジェク トへの投資金額は総額1億5千万ユーロに達する。2021年から開始さ
-れるHorizon Europeにおいても、Digital and Industryというクラ スタの中にAdvanced Computing 
+れるHorizon Europeにおいても、Digital and Industryというクラ スタの中にAdvanced Computing
 and Big Dataという領域を設け、ハイ・パフォーマンス・コンピューティ ング 、ビッグデータおよびICTにお
 ける低炭素化などに関する研究開発が予定されている。
 欧州には米中のような巨大IT企業が不在のため、OSSによる標準化とGDPR（一般データ保護規則）等
 の国際ルールによりGAFA支配に対抗し ている。 OSSとし てはFP7にてFIWAREを開発し ているが、2019
-年にGAIA-X（ A Federated Data Infrastructure for Europe）というクラウ ドプロジェク トを発表した。 
+年にGAIA-X（ A Federated Data Infrastructure for Europe）というクラウ ドプロジェク トを発表した。
 GAIA-Xは、セキュ リティーとデータ主権を守りつつデータの流通を支援する、ネッ トワーク相互接続、クラ
 ウドソリューション、ハイパフォーマンスコンピューティング等の機能を提供するフェデレーション型のプラッ
 ト フォームを目指している。
@@ -1792,10 +1792,10 @@ HUAWEIを始めとする中国企業の5Gインフラ技術は脅威であり、
 【コンピューターアーキテクチャー】
 IEEEの国際学会Microにおける Top Pick（最重要トピック）では、Security、Safety、Privacyがここ
 数年毎年選ばれ、重要性が高まっ ている。また、マルチテナン ト、マルチクラウ ド環境では悪意のある特権ソ
-フ トウエアやハードウエアからアプリケーションを守る仕組みとし て、アーキテクチャーレベルでTrusted 
+フ トウエアやハードウエアからアプリケーションを守る仕組みとし て、アーキテクチャーレベルでTrusted
 Execution Environment (TEE)を実現する動きが出てきている。
 【コンピューターセキュリティー】
-情報処理学会コンピュータセキュ リティ研究会では、プライ バシー、ユーザブルセキュ リティー（Security 
+情報処理学会コンピュータセキュ リティ研究会では、プライ バシー、ユーザブルセキュ リティー（Security
 By Design） 、オー プンソー スソフ トウエアセキュ リティー技術が近年のトレ ン ドになっ ている。また、データ
 を秘匿したまま解析を行う プライ バシー保護データ解析（準同型暗号）や、複数の参加者がデータを隔離し
 たまま計算するこ とで秘匿性を担保するマルチパーティー計算の研究が盛んになっ ている。
@@ -1907,13 +1907,13 @@ DX（デジタルトランスフォーメーション）：エリ ック・ス�
 ジネス用語とし て「企業・組織がITを利用し て事業や業務プロセスを根本的に変化させる」という ような意
 味で使われている。
 ELSI（Ethical,
- 
+
 Legal
- 
+
 and
- 
+
 Social
- 
+
 Issues）： 科学の進歩に伴っ て生じる倫理的、法的、社会的課題のこ と。
 米国のヒ トゲ ノ ム計画にて研究で必要性が表明されたが、近年は、情報科学を含む全ての研究者が当事者意
 識を持って取り組むことが求められている。
@@ -1941,16 +1941,16 @@ IoT
 OSS（オープンソースソフトウエア）：ソー スコードが公開されているソフ トウエアで、著作権者が利用者に
 ソフ トウエアの使用、研究、変更、配布の権利を許諾し ているもの。
 SDGs（Sustainable
- 
+
 Development
- 
+
 Goals）：2015年9月25日の「持続可能な開発サミ ッ ト」で国連が
 採択した「持続可能な開発のための2030アジェンダ」に含まれる目標。貧困や飢餓を終わらせる、公平性
 を保ち不平等をなく す 、環境への配慮など17の目標と、さらにそれらをブレークダウンした169の達成基準
 からなる。開発途上国の目標だけでなく、先進国での取り組みにも触れている。解決策の提供、合理的な政
 策立案などに向けたエビデンスの提供など、科学技術の貢献が期待されている。
 Society
- 
+
 5.0：2016年に閣議決定された第５期科学技術基本計画の中に盛り込まれた未来社会。狩猟社会
 （Society 1.0） 、 農耕社会（同2.0） 、 工業社会（同3.0） 、 情報社会（同4.0）に続く、 新たな社会。サイ バー
 空間（仮想空間）とフィ ジカル空間（現実空間）を高度に融合させたシステムにより、経済発展と社会的課
@@ -1991,17 +1991,17 @@ Center for Research and Development Strategy, Japan Science and T echnology Agen
 電話 03-5214-7481
 E-mail crds@jst.go.jp
 https://www.jst.go.jp/crds/
-This publication is protected by copyright law and international treaties. 
+This publication is protected by copyright law and international treaties.
 No part of this publication may be copied or reproduced in any form or by any means without permission of JST,
-except to the extent permitted by applicable law. 
-Any quotations must be appropriately acknowledged. 
+except to the extent permitted by applicable law.
+Any quotations must be appropriately acknowledged.
 If you wish to copy, reproduce, display or otherwise use this publication, please contact crds@jst.go.jp.
 ISBN 978-4-88890-730-9
 Society 5.0時代の安心・安全・信頼を支える
 基盤
 ソフトウエア技術
 STRATEGIC PROPOSAL
-System Software to Support Safety , Security , 
+System Software to Support Safety , Security ,
 and Trust in the Era of Society 5.0
 
 ===== PDF_PAGE 48 =====

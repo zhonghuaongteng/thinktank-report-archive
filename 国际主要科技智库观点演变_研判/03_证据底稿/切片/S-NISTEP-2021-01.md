@@ -1,6 +1,6 @@
 # S-NISTEP-2021-01 原文切片
 
-- 原文：`国际主要科技智库观点演变_研判\03_证据底稿\原文PDF\S-NISTEP-2021-01.pdf`
+- 原文：`03_证据底稿\原文PDF\S-NISTEP-2021-01.pdf`
 - PDF页数：129
 - 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
 
@@ -9,40 +9,40 @@
 ### PDF页 3
 
 コロナ禍を経た科学技術の未来－第 11 回科学技術予測調査フォローアップ－
-文部科学省 科学技術 ・学術 政策研究所 科学技術予測 ・政策基盤調査研究 センター 
-動向分析・予測研究グループ 
-要旨 
+文部科学省 科学技術 ・学術 政策研究所 科学技術予測 ・政策基盤調査研究 センター
+動向分析・予測研究グループ
+要旨
 科学技術の中長期発展に関するコロナ禍の影響を知るため、「第 11 回科学技術予測調査 デル
 ファイ調査」で設定した科学技術トピックの重要度及び実現見通しの変化に関して、専門家の意見
-を収集・分析した。 
+を収集・分析した。
 その結果、元々早い実現が予測されていた科学技術はより早く、元々遅い実現が予測されていた科
 学技術はより遅く実現する可能性が示された。また、コロナ禍と関連する健康危機管理や仕事・働き
 方の自動化・オンライン化などの科学技術は、重要度が高く、実現時期が早まる可能性が示され
 た。その他、 情報セキュリティ 、災害関連 、資源循環 などの科学技術 も重要 とされた。 実現見通しに
 ついては、エネルギー変換、宇宙や深海などフロンティア、高機能材料、計測に関わる科学技術の
-一部 について 実現が遅れる可能性が示された。 
+一部 について 実現が遅れる可能性が示された。
 コロナ禍に関連する科学技術を総合的に推進するとともに、重要とされた それ以外の 科学技術も併
 せて推進する必要性、及び、実現難度の高い科学技術についても中長期的視点から継続的に支
-援する必要性が示唆された。 
-Title 
-Perspectives of Science and Technology in the post COVID -19 er a 
-National Institute of Science and Technology Policy (NISTEP), MEXT 
-Center for S&T Foresight and Indicators 
-ABSTRACT 
-National Institute of Science and Technology Policy conducted the 11th Science and 
-Technology Foresight (below, “ 11th survey ”). After COVID -19 pandemic, a follow -up 
-survey was conducted on changes to the science and technology . 
-As a result, it is expected that S&T topics predicted to be realized early at 11th 
-survey tend to be realized even earlier, and those predicted to be realize d late tend to 
-be realized even later. In addition, S&T topics such as health crisis management, 
-work style reform, automation, and online communication related to COVID -19 
-showed high importance and realization will be earlier. Furthermore, science and 
-technology related to information security, disasters, resource recycling were also 
-show ed high importance. It is expected that the realization will be delayed for some 
-of the science and technology related to energy conversion, frontier areas such as 
-space and deep sea, high -performance materials, and measurement. 
-It is necessary to comprehensively promote science and technology related to the 
-post -corona era, and also promote other important S&T, and promote science and 
+援する必要性が示唆された。
+Title
+Perspectives of Science and Technology in the post COVID -19 er a
+National Institute of Science and Technology Policy (NISTEP), MEXT
+Center for S&T Foresight and Indicators
+ABSTRACT
+National Institute of Science and Technology Policy conducted the 11th Science and
+Technology Foresight (below, “ 11th survey ”). After COVID -19 pandemic, a follow -up
+survey was conducted on changes to the science and technology .
+As a result, it is expected that S&T topics predicted to be realized early at 11th
+survey tend to be realized even earlier, and those predicted to be realize d late tend to
+be realized even later. In addition, S&T topics such as health crisis management,
+work style reform, automation, and online communication related to COVID -19
+showed high importance and realization will be earlier. Furthermore, science and
+technology related to information security, disasters, resource recycling were also
+show ed high importance. It is expected that the realization will be delayed for some
+of the science and technology related to energy conversion, frontier areas such as
+space and deep sea, high -performance materials, and measurement.
+It is necessary to comprehensively promote science and technology related to the
+post -corona era, and also promote other important S&T, and promote science and
 technology that is difficult to realize from a medium - to long -term perspective.
 
 ## T1_国家研发与方向设定

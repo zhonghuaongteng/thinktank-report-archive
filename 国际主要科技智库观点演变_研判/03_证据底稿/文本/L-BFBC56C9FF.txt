@@ -1,0 +1,669 @@
+
+===== PDF_PAGE 1 =====
+D'NAE FERGUSON, ELIZABETH BODINE-BARON, PATRICK WHITE
+Private Industry
+Approaches to
+Network and Security
+Operations Centers
+Best Practices for the Department of the Air Force
+Expert Insights
+PERSPECTIVE ON A TIMELY POLICY ISSUE
+July 2026
+
+===== PDF_PAGE 2 =====
+For more information on this publication, visit www.rand.org/t/PEA3801-1 .
+About RAND
+RAND is a research organization that develops solutions to public policy challenges to help make communities throughout the world
+safer and more secure, healthier and more prosperous. RAND is nonprofit, nonpartisan, and committed to the public interest. To learn
+more about RAND, visit www.rand.org.
+Research Integrity
+Our research integrity is grounded in RAND’s core values of quality and objectivity. Rigorous quality assurance procedures,
+conflict of interest screening, and transparency in funding ensure that every study is objective and nonpartisan. Learn more at
+www.rand.org/integrity.
+RAND’s publications do not necessarily reflect the opinions of its research clients and sponsors.
+Published by the RAND Corporation, Santa Monica, Calif.
+© 2026 RAND Corporation
+ is a registered trademark.
+Cover photo: gorodenkoff/Getty Images.
+Limited Print and Electronic Distribution Rights
+This publication and trademark(s) contained herein are protected by law. This representation of RAND intellectual property is
+provided for noncommercial use only. Unauthorized posting of this publication online is prohibited; linking directly to its webpage
+on rand.org is encouraged. Permission is required from RAND to reproduce, or reuse in another form, any of its research products for
+commercial purposes. For information on reprint and reuse permissions, visit www.rand.org/about/publishing/permissions.
+PE-A3801-1
+
+===== PDF_PAGE 3 =====
+iii
+About This Paper
+How does private industry approach the challenge of ensuring the cybersecurity and performance
+of the computer networks they rely on? This paper describes how private companies commonly
+structure, organize, and staff network and security operations centers, highlighting best practices
+applicable to the Department of the Air Force’s approach to protecting its own networks as it
+modernizes command and control. We also describe how advances in cybersecurity technology can
+reduce manpower requirements when properly implemented.
+RAND Project Air Force
+RAND Project AIR FORCE (PAF), a division of RAND, is the Department of the Air Force’s
+(DAF’s) federally funded research and development center for studies and analyses, supporting both
+the United States Air Force and the United States Space Force. PAF provides the DAF with
+independent analyses of policy alternatives affecting the development, employment, combat readiness,
+and support of current and future air, space, and cyber forces. Research is conducted in four programs:
+Strategy and Doctrine; Force Modernization and Employment; Resource Management; and
+Workforce, Development, and Health.
+For additional information about PAF, visit www.rand.org/paf.
+This publication documents work originally shared with the DAF in December 2025. The draft,
+dated December 12, 2025, was reviewed by formal peer reviewers and DAF subject-matter experts.
+The views expressed in this paper are those of the authors and do not reflect the official policy or
+position of the Department of War or the U.S. Government. Review of this material does not imply
+Department of War endorsement of factual accuracy or opinion.
+Funding
+This work was sponsored by the Department of the Air Force and prepared under contract
+FA7014-22-D-0001 as part of a PAF Workforce, Development, and Health Program fiscal year 2026
+project, “Headquarters ACC 700th Air Support Squadron Manpower Assessment.”
+Acknowledgments
+We thank James Gimbi and Steve Comer for their excellent reviews and contributions to this
+paper. We also thank Lt Col Jennifer “BUFF” M. J. Eberwine for her support and Ted Uchida for his
+sponsorship and thoughtful feedback throughout the project. All mistakes are solely the responsibility
+of the authors.
+
+===== PDF_PAGE 4 =====
+iv
+Contents
+About This Paper ............................................................................................................................................................. iii
+Tables ................................................................................................................................................................................... v
+
+Private Industry Approaches to Network and Security Operations Centers ............................................................ 1
+Functions and Responsibilities ................................................................................................................................... 2
+Organizational Structures ........................................................................................................................................... 3
+Staffing and Manpower Requirements ...................................................................................................................... 6
+Technological Advancements’ Impact on Manpower .............................................................................................. 9
+Conclusions ................................................................................................................................................................. 11
+
+Abbreviations ................................................................................................................................................................... 13
+References ......................................................................................................................................................................... 14
+About the Authors .......................................................................................................................................................... 15
+
+===== PDF_PAGE 5 =====
+v
+Tables
+Table 1. NOC and SOC Structural Dimensions ......................................................................................................... 4
+Table 2. NOC Staffing Roles .......................................................................................................................................... 6
+Table 3. SOC Staffing Roles ............................................................................................................................................ 7
+Table 4. SOC Team Analysts, by Organization Size ................................................................................................... 7
+
+===== PDF_PAGE 6 =====
+vi
+
+===== PDF_PAGE 7 =====
+1
+Private Industry Approaches to
+Network and Security Operations
+Centers
+The U.S. Department of War (DOW) began developing the concept of Combined Joint All
+Domain Command and Control (CJADC2) in 2019 as an effort to improve command and control by
+connecting systems across the land, air, sea, space, and cyberspace domains.1 The Advanced Battle
+Management System (ABMS) division within the Department of the Air Force’s (DAF’s) Program
+Executive Office for Command, Control, Communications and Battle Management funds the
+development of architecture and systems engineering, digital infrastructure (DI), software and
+applications, and aerial networking required for the DAF’s role in CJADC2. ABMS Digital
+Infrastructure (ABMS-DI) is a key component of this effort, developing a suite of fixed and
+deployable DI solutions that provide lightweight and scalable secure processing, connectivity, and data
+management for critical command and control functions. This new network infrastructure must be
+both efficient and resilient, requiring dedicated personnel and resources to manage the infrastructure,
+troubleshoot problems, and provide cybersecurity. The DAF has proposed standing up a command-
+and-control combined network and security operations center (C2NSOC) to support DAF
+operational elements using ABMS and ensure that ABMS performance and security meet the
+demands of CJADC2.
+In contrast to the DAF, which focuses on mission objectives, private industry is looking to engage
+customers and maintain services that sustain revenue, and it depends on DI to do so. Organizations
+generally operate two core functions to maintain digital reliability and security: These are a Network
+Operations Center (NOC) and a Security Operations Center (SOC), respectively. This paper details
+common approaches used by NOC and SOC organizations in private industry, highlighting (1) which
+practices could improve efficiency in the DAF C2NSOC and (2) situations in which a different
+approach might be needed. We survey both NOC and SOC functions and responsibilities,
+organizational structures commonly used by private companies, and the corresponding manpower and
+staffing requirements. We also describe how advances in cybersecurity technology might reduce
+staffing requirements if properly implemented, and we conclude with lessons learned that the DAF
+could apply as the C2NSOC and ABMS-DI mature.
+
+1 The concept was originally Joint All Domain Command and Control (JADC2). DOW added the term combined in 2023. The
+Department of War is designated the Department of Defense under Public Law 81-216, National Security Act Amendments of
+1949.
+
+===== PDF_PAGE 8 =====
+2
+Functions and Responsibilities
+The NOC ensures network availability and performance across on-premises, cloud, and remote
+environments. The SOC safeguards corporate assets from cyber threats that could disrupt operations,
+compromise data, or damage brand reputation.
+Private-sector NOCs are primarily tasked with ensuring that services remain available to
+customers and employees. NOC analysts continuously monitor switches, routers, application servers,
+and cloud services for outages or performance degradation. Performance is usually measured in terms
+of network uptime, throughput, and latency, which directly affect availability of critical business
+services. Network disruptions can also expose the business to financial risk. When disruptions occur,
+NOC teams restore service through root-cause analysis and coordination with infrastructure and
+vendor support.
+Cost-efficiency strongly shapes the private industry NOC. Staffing models often rely on lower-tier
+analysts supported by automation platforms; only problems that exceed routine troubleshooting are
+escalated to senior engineers. In efforts to reduce redundancy and optimize the use of potentially
+limited numbers of staff, many firms also consolidate NOC operations across business units or
+outsource them to managed service providers (MSPs) to reduce overhead while maintaining coverage
+24 hours per day, 7 days a week (24x7).
+2 In-house NOCs in private industry are therefore often as
+lean as possible, focusing tightly on availability and performance of business-critical systems.3
+Private-industry SOCs focus on protecting data, intellectual property, and customer trust. SOC
+analysts monitor logs and alerts from across the enterprise to detect intrusions, malware, and insider
+misuse. SOC performance is evaluated against detection times, incident resolution speed, and
+compliance outcomes. For firms in regulated industries—such as finance, health care, or retail—SOC
+operations also must demonstrate compliance with regulatory and industry requirements, such as the
+Payment Card Industry Data Security Standard, the Health Insurance Portability and Accountability
+Act of 1996 in the United States, and the General Data Protection Regulation in the European
+Union.
+4
+Budget realities influence private-industry SOC operations similar to the ways those realities
+affect NOCs. Many companies adopt hybrid models in which routine alert monitoring is outsourced
+to managed security service providers (MSSPs), while in-house teams retain control of incident
+response, forensic investigations, and communication with executives. Private firms also are
+increasingly using automation platforms—such as security information and event management
+(SIEM) platforms and security orchestration, automation, and response (SOAR) tools—to
+compensate for staff shortages,
+5 although overreliance on tools and inadequate tuning can create blind
+spots in the security system and create opportunities for cyber threats.
+The dividing line between NOC and SOC responsibilities might not be as clear cut in practice as
+we have outlined. The specifics of each center’s operation (and corresponding size) are largely driven
+
+2 Suneel Wattal, “Maturity Model for IT Managed Services,” IOP Conference Series: Materials Science and Engineering, Vol. 804,
+2020.
+3 Rick Blum, Network Operations Centers, Lucent Technologies, January 11, 2001.
+4 Mark Orlando, The State of Automation in Security Operations: A SANS Survey, SANS Institute, June 2024.
+5 Orlando, 2024.
+
+===== PDF_PAGE 9 =====
+3
+by perceived risk. Increased operational risk, compliance requirements, and insurance obligations tend
+to increase both NOC and SOC size and responsibilities, which, conversely, decrease as a result of
+budget constraints and talent gaps. And, again, many private firms outsource some NOC and SOC
+functions, such as continuous monitoring, to MSPs or MSSPs while retaining in-house teams for
+incident response and strategic oversight.
+6 However, the NOC and SOC will both have some
+responsibilities that require close coordination with or without outsourcing.7 Both monitor enterprise
+systems using overlapping tools, such as log collectors, dashboards, and ticketing systems. A denial-of-
+service event illustrates the convergence: The NOC identifies traffic overload and reroutes flows while
+the SOC investigates whether the source is malicious and how to block it. Lack of coordination in
+such incidents risks extended downtime and increased financial loss.
+Change management is another shared domain. Both NOC and SOC staff must ensure that when
+patches or configuration updates are deployed, these changes do not degrade service or open new
+vulnerabilities. Without adequate coordination, a regular configuration update that causes a
+temporary service outage might be interpreted by SOC personnel as a security incident.
+8
+Reporting responsibilities also overlap, though the emphasis differs. The NOC provides
+leadership with metrics on uptime and service availability; the SOC reports on compliance posture
+and risk reduction. In private industry, these reports are not only operational documents but also
+instruments for demonstrating accountability to executives, regulators, and customers.
+9
+Organizational Structures
+NOC and SOC organizational structures in private industry can vary depending on company size,
+the amount of perceived risk to business operations from network performance issues and cyber
+threats, and available resources. Two structural dimensions shape how these centers are organized:
+centralized versus distributed deployment models and in-house versus outsourced staffing, as shown
+in Table 1.
+
+6 Christopher Crowley and John Pescatore, Common and Best Practices for Security Operations Centers: Results of the 2019 SOC
+Survey, SANS Institute, July 2019.
+7 Christopher Crowley, SANS 2024 SOC Survey: Facing Top Challenges in Security Operations, SANS Institute, May 2024.
+8 Deepesh Shajee and Nilesh R. Ware, “Integrated Network and Security Operations Center: A Systematic Analysis,” IEEE
+Access, Vol. 10, 2022.
+9 Christopher Crowley, Barbara Filkins, and John Pescatore, SANS 2023 SOC Survey, SANS Institute, June 2023.
+
+===== PDF_PAGE 10 =====
+4
+Table 1. NOC and SOC Structural Dimensions
+ Location and Authority
+Centralized Distributed
+Resourcing In-house Single NOC and/or SOC for entire
+company; staffed using internal
+personnel and resources
+Multiple NOCs and/or SOCs for different
+departments within company; each staffed using
+internal (to that organization) personnel and
+resources
+Outsourced Single outsourced NOC/SOC for
+entire company
+Multiple outsourced NOCs and/or SOCs for different
+departments within company
+
+Centralized Models Versus Distributed Deployment Models
+The deployment model chosen reflects trade-offs among cost, efficiency, responsiveness, and
+control. A centralized model is one in which a single NOC or SOC handles operations for the entire
+firm. The NOC or SOC in this model usually operates from in a single physical location and might
+share space with other corporate information technology (IT) functions.
+10 This approach is common
+in industries in which economies of scale are important and network infrastructure can be monitored
+effectively from one location. According to the 2025 SANS SOC survey, the centralized model is still
+the most common, used in more than one-third (38 percent) of private firms.
+11 Centralized operations
+reduce duplication of effort and simplify management oversight, but they also create potential single
+points of failure.
+12 A localized disaster or system outage at the central facility could significantly hinder
+the ability to monitor and respond to incidents. Furthermore, a single-center approach can complicate
+responsiveness across global enterprises in which employees and customers span multiple time zones.
+Nonetheless, centralization remains attractive for many private firms because it is cost-efficient and
+provides the ability to maintain consistent procedures and toolsets across the enterprise.
+A distributed model, in contrast, establishes multiple NOC or SOC facilities across regions or
+business units. This approach usually entails a higher cost to the organization but enables coverage
+across geographies and time zones, can more easily support local regulatory requirements,
+13 and
+enhances responsiveness in the event of a local facility outage. Distributed operations are common in
+multinational corporations with diverse business lines or strict regional compliance obligations, such
+as those in financial services and health care. However, distributed centers can also introduce
+coordination challenges and potential inefficiencies. For example, a distributed SOC or NOC in a
+midsized to large company can have less visibility into relevant data and wield less agency or authority
+
+10 Since the coronavirus disease 2019 pandemic, more NOC and SOC organizations allow workers to be remote, mirroring the
+larger shift to remote work across multiple industries. However, the centralized model even in this case has staff located in one
+geographic region (Crowley, Filkins, and Pescatore, 2023).
+11 Christopher Crowley, SANS SOC Survey 2025, SANS Institute, July 2025.
+12 Abdoul K. Ganame, Julien Bourgeois, Renaud Bidou, and Francois Spies, “A Global Security Architecture for Intrusion
+Detection on Computer Networks,” Proceedings of the 21st International Parallel and Distributed Processing Symposium (IPDPS),
+IEEE Computer Society Technical Committee on Parallel Processing, March 26–30, 2007.
+13 Crowley and Pescatore, 2019.
+
+===== PDF_PAGE 11 =====
+5
+than a centralized version could. Having less coordination, authority, and access across the company in
+a breach response situation can create severe challenges to being able to remediate incidents.
+Maintaining consistent processes, alert triage standards, and communication across multiple centers
+requires significant investment in standardized tool integration and governance structures for
+coordination.
+14
+One strategy that blends the distributed and centralized approaches is the follow-the-sun model, in
+which monitoring responsibilities pass sequentially among geographically distributed teams as global
+business hours progress. This approach ensures continuous coverage without requiring analysts in one
+location to work overnight shifts, and it is used by about one-half of the SOCs surveyed in 2024 that
+required 24x7 operations.
+15 Follow-the-sun structures are particularly valuable for multinational
+corporations and global service providers whose customers expect uninterrupted availability. This
+approach can also reduce analyst fatigue, a significant driver of turnover in SOCs, while still leveraging
+centralized oversight to maintain procedural consistency.
+In-House Staffing Versus Outsourced Staffing
+The distinction between in-house and outsourced staffing is particularly significant in private
+industry. In-house models provide direct control over sensitive data, allow tighter integration with
+internal business units, and facilitate rapid decisionmaking. However, the financial cost of maintaining
+a fully staffed NOC or SOC is prohibitive for many firms.
+16 Outsourcing can offer a less expensive
+option to rapidly gain critical network expertise, especially for smaller organizations.17 Outsourcing to
+MSPs (for NOC functions) and MSSPs (for SOC functions) has therefore become a common
+approach to handling functions that are specialized, repeatable, and resource-intensive.
+18 For example,
+in 2024, 22 percent of firms surveyed outsourced threat research, and 28 percent outsourced digital
+forensics.
+ 19 Outsourcing activities that require a skillset geared more toward going on the offensive is
+even more common; in 2024, 68 percent of firms surveyed outsourced penetration-testing functions
+and 58 percent outsourced Red-teaming functions.
+20 Some MSSPs also offer continuous monitoring
+and triage functions for their clients, which can reduce costs and provide access to advanced
+expertise.
+21 Full outsourcing of all SOC capabilities can be done by employing cloud-based SOC
+services, which about 24 percent of SOCs surveyed in 2025 reported having done.22 However,
+outsourcing can increase the risk of misaligned priorities and delay incident response if contractual
+service-level agreements are not carefully defined. Private industry, as a result, often adopts a hybrid
+
+14 Shajee and Ware, 2022.
+15 Crowley, 2024.
+16 Crowley and Pescatore, 2019.
+17 Blum, 2001.
+18 Crowley, 2025.
+19 Crowley, 2024.
+20 Crowley, 2024.
+21 Toby Bussa, Kelly Kavanagh, Pete Shoard, John Collins, Craig Lawson, and Mitchell Schneider, Market Guide for Managed
+Detection and Response Services, Gartner, August 26, 2020.
+22 Crowley, 2025.
+
+===== PDF_PAGE 12 =====
+6
+approach—keeping sensitive functions such as incident response, remediation, architecting, and
+compliance reporting in-house while outsourcing others.23
+Private industry’s preference for hybrid structures and selective outsourcing reflects the balance
+among operational efficiency, cost considerations, and flexibility in a dynamic threat environment.
+Smaller organizations might rely heavily on outsourcing to MSPs and MSSPs, while larger enterprises
+often retain core capabilities internally but supplement them with specific outsourced services and
+expertise. Regardless of the model chosen, private firms must manage the tension between cost
+reduction and operational effectiveness and must ensure that structural choices support both the
+availability of services and the security of data.
+Staffing and Manpower Requirements
+Private firms frequently address both cost and coverage demands by adopting tiered staffing
+models: Tier 1 analysts handle alert triage and escalation, Tier 2 staff conduct deeper investigations,
+and Tier 3 (or specialized roles) manage advanced incident response, digital forensics, or tuning of
+specialized tools.
+24 Tables 2 and 3 describe common NOC and SOC roles, respectively. When NOC
+and SOC operations are integrated into a combined or fusion center model, overlapping responsibilities
+and unified monitoring systems can reduce redundant staffing positions. Cross-trained personnel
+capable of managing both performance and security telemetry enable a leaner workforce without
+compromising coverage. However, the combined environment often requires a higher average skill
+level per analyst, offsetting total headcount reductions with increased training and compensation costs.
+Table 2. NOC Staffing Roles
+Role Skills
+Tier 1 analyst or technician Network-monitoring tools, basic device management, alert triage, ticketing systems
+Tier 2 engineer Advanced network troubleshooting, routing and switching, advanced industry
+certifications, scripting, Simple Network Management Protocol (SNMP), traffic
+analysis
+Manager Operations leadership, escalation handling, Service Level Agreement (SLA)
+enforcement, cross-team coordination
+Network architect High-level design, root-cause analysis, long-term planning, deep protocol
+knowledge
+
+23 Crowley, 2025.
+24 Shajee and Ware, 2022.
+
+===== PDF_PAGE 13 =====
+7
+Table 3. SOC Staffing Roles
+Role Skills
+Tier 1 analyst SIEM operations, alert triage, log review, incident documentation, phishing analysis
+Tier 2 analyst or
+incident responder
+Malware analysis, endpoint triage tools, escalation, basic forensics, playbook
+execution
+Tier 3 threat hunter or
+incident responder lead
+Threat-hunting, threat intelligence, scripting, incident life-cycle proficiency
+Manager Incident response coordination, playbook tuning, reporting, compliance alignment,
+stakeholder communication
+Security engineer Tool tuning, log pipeline management, detection engineering, infrastructure
+hardening
+
+Total NOC and SOC staffing levels in private industry are driven by organization size,
+operational coverage requirements, and functional complexity. SOC staffing requirements scale with
+the size of the organization, although there is a significant amount of variation.
+25 In 2025, the most
+common size of a fully staffed SOC was two to ten people.26
+Table 4. SOC Team Analysts, by Organization Size
+Organization Size Common Number of Analysts
+Fewer than 10,000 2–5
+10,000–15,000 6–10
+15,001–100,000 11–25
+More than 100,000 26–100
+SOURCE: Features information from Crowley and
+Pescatore, 2019.
+
+Less information is available on NOC staffing size, though one survey found that one-half of
+NOCs in private industry employed fewer than ten full-time equivalent (FTE) staff, and another 22
+percent employed ten to 24 FTE staff.
+27 Other surveys have found that IT staff in general account for
+around 3 percent of employee headcounts.28
+The main consideration for both NOC and SOC staffing requirements is whether the
+organization requires continuous 24x7 support. Smaller firms with fewer than 1,000 employees
+typically operate NOC and SOC functions during business hours only, requiring a limited number of
+analysts who manage network availability and respond to security alerts as secondary duties. As
+
+25 Crowley, Filkins, and Pescatore, 2023.
+26 Crowley, 2025.
+27 Blum, 2001.
+28 Crowley and Pescatore, 2019.
+
+===== PDF_PAGE 14 =====
+8
+organizations grow, however, service availability issues and security incident volume increase,
+necessitating a larger NOC and SOC even without continuous coverage. Many larger companies,
+especially those with a global footprint, opt for continuous 24x7 operational coverage,
+29 and staffing
+requirements expand accordingly.
+Some staffing models for a NOC or SOC that must operate on a continuous basis rely on a
+standardized multiplier to maintain uninterrupted monitoring and support, using an approach
+developed to estimate staffing for call center support. This approach calculates the number of hours
+per week required to staff a single position (such as a Tier 1 or Tier 2 analyst) 24x7 and adds an
+absence factor to account for vacation, illness, meetings, and other absences not related to work. Using
+an absence factor of 1.3, this means that an organization must allocate 5.46 FTEs for each workstation
+or analyst role requiring continuous staffing to sustain round-the-clock operations without service
+degradation.
+30 This formulaic approach to staffing provides a consistent baseline but must be adjusted
+for operational complexity.
+Other staffing models focus on maintaining an appropriate workload per analyst, using internal
+data on the average time that an analyst requires between opening and closing a service ticket and how
+frequently incidents occur.
+31 Higher numbers of staff per position can reduce the mean time to
+respond and maintain service level objectives. This approach can lead to more-accurate staffing
+estimates than the 24x7 multiplier but requires more data on frequency of incidents or service tickets
+and the time to resolve them.
+In a NOC, operational complexity is driven by network topology, automation maturity, and the
+proportion of outsourced monitoring. Heavily automated environments that use advanced network
+analytics and self-healing mechanisms might reduce the number of Tier 1 analysts required, as
+described in more detail in the next section. Conversely, organizations managing legacy systems or
+complex network architectures often need additional engineers to handle manual troubleshooting and
+configuration management. The operational complexity for a SOC depends on the organization’s
+threat exposure and regulatory requirements—that is, the perceived risk. Firms responsible for
+handling highly sensitive information (such as financial records, health care data, intellectual property,
+or government classified information) will likely want a more robust SOC staffing model to provide
+more redundancy and to reduce risk. SOCs that perform proactive threat-hunting, intelligence
+analysis, and Red- or Purple-team functions could also require additional FTEs beyond the baseline
+model.
+Staffing for NOC and SOC operations in private industry ultimately must be treated as both a
+mathematical and strategic exercise. The 24x7 multiplier can provide a baseline manpower estimate,
+but the actual staffing requirement can be affected by multiple factors, such as use of automation,
+outsourcing, and organizational risk tolerance. Well-designed staffing models not only ensure
+operational continuity but also protect profitability and compliance posture, balancing the demands of
+constant vigilance with the realities of limited human capital.
+
+29 79 percent of SOCs were operational 24x7 in 2025 (Crowley, 2025).
+30 This is derived from 1.3 * (24 hours per day * 7 days per week) / (8 hours per day * 5 days per week) = 5.46.
+31 Crowley, 2024.
+
+===== PDF_PAGE 15 =====
+9
+Staffing Challenges
+Staffing shortages present a major challenge to NOC and SOC organizations in private industry.
+Lack of experienced staff has historically been a significant challenge to improving NOC capabilities.32
+Twenty-eight percent of survey respondents in 2024 named either high staffing requirements or a lack
+of skilled staff as their greatest challenge to the full use of their SOC capabilities.33 Staffing shortages
+can be the result of several issues, such as the difficulty in training junior talent. Many of the skills
+required for higher-tier analysts in both NOCs and SOCs are more of an art than a science, requiring
+job experience and taking time to acquire. Furthermore, the lean posture taken by private industry
+leaves senior analysts with little time to step away from their core duties and train junior talent.
+Attracting and retaining already capable talent is also challenging; demand has historically outpaced
+the available talent pool. This demand makes it easier for high-performing NOC and SOC analysts to
+switch employers in pursuit of higher compensation, more-interesting work roles, and more-
+accommodating working conditions.
+Technological Advancements’ Impact on Manpower
+Advancements in technology—specifically automation, integration, and artificial intelligence (AI)
+enhancement—have reshaped the staffing landscape of private industry, including the manpower
+requirements for NOC and SOC functions. The adoption of SIEM platforms, SOAR tools, and AI-
+enabled analytics has altered how operational coverage is maintained and how personnel are
+distributed across job roles. These technologies enable organizations to process vast volumes of data
+using fewer analysts, which increases efficiency and scalability, reduces errors, and saves costs.
+34
+Automated monitoring tools in NOCs can track network performance, identify anomalies in
+traffic behavior, and detect faults.35 These tools allow network engineers to focus on remediation
+rather than detection. Automated configuration management tools and patching mechanisms can
+resolve minor outages without human intervention, thereby reducing the need for Tier 1 operators.
+These efficiencies do not eliminate the need for skilled personnel, however. Service outages caused by
+automatic patch updates show why NOCs must retain network engineers who can develop, maintain,
+and validate automated workflows, manage platform integration, and ensure that automated corrective
+actions do not introduce new faults.
+SOCs using only manual processes struggle to detect and respond to incidents in a timely manner.
+Modern SOCs rely on endpoint detection and response systems and firewalls that use automated and
+AI-enabled tools to detect incidents. This approach helps solve the detection challenge but sharply
+increases the volume of security alerts that they need to address. SIEM platforms can leverage AI to
+filter, correlate, and prioritize alerts, increasing the efficiency of analysts and ensuring that they focus
+
+32 Blum, 2001.
+33 Crowley, 2024.
+34 Despoina Giarimpampa, Roland Meier, Tegawendé F. Bissyande, Vincent Lenders, and Jacques Klein, “Exploring the Role of
+Artificial Intelligence in Enhancing Security Operations: A Systematic Review,” ACM Computing Surveys, Vol. 58, No, 3,
+February 2026.
+35 Blum, 2001.
+
+===== PDF_PAGE 16 =====
+10
+on the highest-priority incidents. Many SOCs also use SOAR platforms to manage cases, integrate
+threat intelligence, and automate responses through playbooks.36 This technology can enable some
+response actions, such as host isolation or credential revocation, to occur in seconds rather than hours.
+This evolution in tools reduces the amount of time a SOC analyst has to spend doing redundant tasks,
+such as the continuous monitoring or alert triaging conducted by Tier 1 analysts.
+37
+Developments in AI and machine-learning over the past decade have the potential to further
+extend this transformation by assisting human decisionmaking.38 Predictive analytics and anomaly
+detection models, when properly tuned, can identify deviations in network or user behavior that
+human analysts would likely overlook. For private industry, this capability translates into earlier
+detection of such potential incidents as insider threats or lateral movement by attackers. However, the
+challenges do not disappear; they instead shift the weight of the effort onto higher-skilled engineers
+who now must also understand AI models. These advanced tools also require regular retraining and
+validating using updated data on attack signatures to avoid bias or false positives.
+Although these benefits bear consideration, overreliance on or the misuse of automation can pose
+significant risks for private firms. A commonly reported issue with automated detection tools is
+excessive alerts resulting from too many tools, redundant alerting mechanisms, or poor tuning; these
+alerts create more work for analysts rather than reducing their burden.
+39 When tasks and processes are
+fully delegated to automated systems, human expertise can atrophy, leaving organizations unprepared
+to respond effectively when automated workflows fail. Automated response systems could also amplify
+errors when misconfigured or improperly tuned, potentially escalating benign anomalies into large-
+scale service disruptions. Excessive dependence on vendor-managed AI and SOAR tools can create
+visibility gaps and erode institutional knowledge, particularly when outsourced providers control the
+underlying models and data integrations.
+Advances in cybersecurity technology thus pose a paradox for NOC and SOC organizations.
+Automation reduces the number of Tier 1 personnel needed for continuous monitoring, but it
+increases the need for technically proficient engineers capable of managing and validating those
+systems. The optimal manpower structure in highly automated environments might resemble an
+hourglass rather than a pyramid: a smaller base of Tier 1 operators, a narrow but highly skilled core of
+senior Tier 2 and 3 analysts, and a deep bench of engineers and architects responsible for the
+integration, tuning, and validation of automated systems.
+The adoption of SIEM and SOAR platforms and advanced AI-enabled tools will not eliminate
+the requirement for human analysts in either NOCs or SOCs. Instead, this evolution should be
+viewed as a complement to human expertise to reduce repetitive tasks and augment the ability of
+humans to detect and respond to incidents faster and more effectively.
+
+36 Orlando, 2024.
+37 Kelley Dempsey, Arnold Johnson, Matthew Scholl, Kevin Stine, Alicia Clay Jones, Angela Orebaugh, Nirali Shah Chawla,
+and Ronald Johnston, Information Security Continuous Monitoring (ISCM) for Federal Information Systems and Organizations,
+National Institute of Standards and Technology, NIST SP 800-137, September 2011; Kathryn Knerler, Ingrid Parker, and
+Carson Zimmerman, 11 Strategies of a World-Class Cybersecurity Operations Center, MITRE, 2022.
+38 Knerler, Parker, and Zimmerman, 2022.
+39 Orlando, 2024.
+
+===== PDF_PAGE 17 =====
+11
+Conclusions
+NOC and SOC organizations across private industry are designed to optimize performance while
+reducing cost. Best practices involve tiered staffing approaches that concentrate expert talent where it
+delivers the highest value. Operational efficiency is typically achieved through tight integration
+between cybersecurity technology and workforce planning. NOCs and SOCs are structured to
+minimize redundant functions, using automated monitoring tools to consolidate alert streams and to
+route incidents based on severity and type. Regular assessments of both operations and tools are used
+to improve performance, tune automated systems to reduce false positives, and maintain alignment
+between network performance and security objectives. Many organizations leverage hybrid staffing
+models and outsource some functions to maintain worldwide operations without incurring excessive
+personnel costs. The result is a lean, metrics-driven operational environment in which every analyst’s
+time is optimized.
+However, direct transposition of some private-sector practices to DAF C2NSOC staffing requires
+significant caution. Private industry and the DAF share the technical challenges of continuous
+monitoring and incident response, but their operational priorities, risk calculus, and governance
+frameworks diverge sharply. Private firms operate under profit motives and optimize practices for
+efficiency, scalability, and compliance with regulatory standards. DAF operations, by contrast, are
+mission-driven, emphasizing network resilience and mission assurance over cost-efficiency. Practices
+that are optimal for a commercial enterprise—such as heavy outsourcing of NOC and SOC functions,
+aggressive automation of decisionmaking, or lean Tier 1 staffing—might introduce unacceptable risks
+in a military command-and-control context, such as the C2NSOC.
+One critical difference lies in risk tolerance and operational authority. Private companies accept
+measured levels of downtime and incident exposure if the cost of full mitigation outweighs potential
+loss. DAF missions, by contrast, often operate under zero-tolerance conditions in which network
+degradation or delayed response can directly affect outcomes. Automation tools that make
+independent mitigation decisions without human validation, although efficient in industry, could
+conflict with the DAF’s requirement for positive human control and chain-of-command
+accountability. Private industry will often outsource monitoring or incident response functions to
+external vendors as a way of reducing costs; this approach introduces security complexities for DAF
+networks that cannot rely on third-party access.
+Personnel dynamics on the staffing side also differ substantially between the DAF and the private
+sector. Staff turnover in private industry is expected and offset through standardized training
+pipelines; direct hiring of needed knowledge, skills, and experience levels; and automation that
+captures institutional knowledge in workflows. Each organization has differences, but the functions
+that a NOC or SOC analyst is expected to perform and the skills they need are common across
+different private firms. DAF operations—and specifically C2NSOC functions—instead rely heavily
+on specialized, cleared personnel whose subject-matter expertise and skills are not easily replaced or
+automated.
+40 Private industry can also reduce headcount more easily through increased use of
+
+40 Turnover is a significant challenge for DAF cyber-related operations, including C2NSOC functions. Permanent Change of
+Station rotations occur frequently, disrupting the ability of military members to achieve and maintain the subject-matter
+
+===== PDF_PAGE 18 =====
+12
+automated tools and outsourcing. These approaches, along with integrating commercial AI decision
+engines, might not be applicable to the unique network environment that the C2NSOC must support.
+Private industry offers valuable efficiency and scalability lessons for the DAF as it stands up the
+C2NSOC. The DAF should consider the following recommendations:
+• Use tiered staffing models.
+• Integrate workforce planning and cybersecurity technology acquisition.
+• Leverage automated monitoring tools where possible.
+• Perform regular assessments of operations and tools to improve performance.
+• Use a follow-the-sun organizational structure to provide 24x7 coverage.
+• Integrate NOC and SOC operations and structure.
+However, these actions should not be applied wholesale to Air Force operations without
+adaptation. Rather, they must be recalibrated to emphasize mission assurance over cost reduction. A
+hybrid model that merges industry frameworks’ focus on efficiency with the accountability and high
+performance required for DAF operations presents the most viable path forward for C2NSOC
+organization and staffing.
+
+expertise required for highly technical positions. This can be mitigated by employing civilians and contractors but remains a
+major issue for the DAF.
+
+===== PDF_PAGE 19 =====
+13
+Abbreviations
+24x7 24 hours per day, 7 days a week
+AI artificial intelligence
+C2NSOC command-and-control combined network and security operations center
+DAF Department of the Air Force
+FTE full-time equivalent
+IT information technology
+MSP managed service provider
+MSSP managed security service provider
+NOC Network Operations Center
+SIEM security information and event management
+SOAR security orchestration, automation, and response
+SOC Security Operations Center
+
+===== PDF_PAGE 20 =====
+14
+References
+Blum, Rick, Network Operations Centers, Lucent Technologies, January 11, 2001.
+Bussa, Toby, Kelly Kavanagh, Pete Shoard, John Collins, Craig Lawson, and Mitchell Schneider, Market Guide
+for Managed Detection and Response Services, Gartner, August 26, 2020.
+Crowley, Christopher, SANS 2024 SOC Survey: Facing Top Challenges in Security Operations, SANS Institute,
+May 2024.
+Crowley, Christopher, SANS SOC Survey 2025, SANS Institute, July 2025.
+Crowley, Christopher, Barbara Filkins, and John Pescatore, SANS 2023 SOC Survey, SANS Institute, June
+2023.
+Crowley, Christopher, and John Pescatore, Common and Best Practices for Security Operations Centers: Results of
+the 2019 SOC Survey, SANS Institute, July 2019.
+Dempsey, Kelley, Arnold Johnson, Matthew Scholl, Kevin Stine, Alicia Clay Jones, Angela Orebaugh, Nirali
+Shah Chawla, and Ronald Johnston, Information Security Continuous Monitoring (ISCM) for Federal
+Information Systems and Organizations, National Institute of Standards and Technology, NIST SP 800-
+137, September 2011.
+Ganame, Abdoul K., Julien Bourgeois, Renaud Bidou, and Francois Spies, “A Global Security Architecture for
+Intrusion Detection on Computer Networks,” Proceedings of the 21st International Parallel and Distributed
+Processing Symposium (IPDPS), IEEE Computer Society Technical Committee on Parallel Processing,
+March 26–30, 2007.
+Giarimpampa, Despoina, Roland Meier, Tegawendé F. Bissyande, Vincent Lenders, and Jacques Klein,
+“Exploring the Role of Artificial Intelligence in Enhancing Security Operations: A Systematic Review,”
+ACM Computing Surveys, Vol. 58, No. 3, February 2026.
+Knerler, Kathryn, Ingrid Parker, and Carson Zimmerman, 11 Strategies of a World-Class Cybersecurity
+Operations Center, MITRE, 2022.
+Orlando, Mark, The State of Automation in Security Operations: A SANS Survey, SANS Institute, June 2024.
+Shajee, Deepesh, and Nilesh R. Ware, “Integrated Network and Security Operations Center: A Systematic
+Analysis,” IEEE Access, Vol. 10, 2022.
+Wattal, Suneel, “Maturity Model for IT Managed Services,” IOP Conference Series: Materials Science and
+Engineering, Vol. 804, 2020.
+
+===== PDF_PAGE 21 =====
+15
+About the Authors
+D’Nae Ferguson is a technical analyst in engineering and applied sciences. Her research interests
+include the security implications of artificial intelligence in society, technology policy, space security,
+and emerging technologies. She holds an M.S. in engineering and public policy.
+
+Elizabeth Bodine-Baron is a senior information scientist specializing in complex networks and
+systems. Her recent work focuses on strategic cybersecurity issues for the Department of War and
+integrating nonkinetic effects in military operations from competition to conflict. She holds a Ph.D. in
+electrical engineering from California Institute of Technology.
+
+Patrick White is a senior international and defense researcher. His recent research experience
+concentrates on strategic and operational workforce planning and organizational design. He holds
+M.S. degrees in military operational art and science and in geography.

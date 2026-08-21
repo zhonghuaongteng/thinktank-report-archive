@@ -1,0 +1,2273 @@
+
+===== PDF_PAGE 1 =====
+BEBA CIBRALIC, JOEL B. PREDD, RICHARD S. GIRVEN
+Looking Beyond
+the Government’s
+Regulatory Toolkit
+Early Findings on How Business and Civil Society Actors
+Can Help Manage and Mitigate Transformative Artificial
+Intelligence Risks and Impacts
+Research Report
+
+===== PDF_PAGE 2 =====
+For more information on this publication, visit www.rand.org/t/RRA4522-1 .
+About RAND
+RAND is a research organization that develops solutions to public policy challenges to help make communities throughout the world
+safer and more secure, healthier and more prosperous. RAND is nonprofit, nonpartisan, and committed to the public interest. To learn
+more about RAND, visit www.rand.org.
+Research Integrity
+Our research integrity is grounded in RAND’s core values of quality and objectivity. Rigorous quality assurance procedures,
+conflict of interest screening, and transparency in funding ensure that every study is objective and nonpartisan. Learn more at
+www.rand.org/integrity.
+RAND’s publications do not necessarily reflect the opinions of its research clients and sponsors.
+Published by the RAND Corporation, Santa Monica, Calif.
+© 2026 RAND Corporation
+ is a registered trademark.
+Limited Print and Electronic Distribution Rights
+This publication and trademark(s) contained herein are protected by law. This representation of RAND intellectual property is
+provided for noncommercial use only. Unauthorized posting of this publication online is prohibited; linking directly to its webpage
+on rand.org is encouraged. Permission is required from RAND to reproduce, or reuse in another form, any of its research products for
+commercial purposes. For information on reprint and reuse permissions, visit www.rand.org/about/publishing/permissions.
+RR-A4522-1
+
+===== PDF_PAGE 3 =====
+iii
+About This Report
+Transformative artificial intelligence (AI)—that is, advanced systems that have the potential for broad soci -
+etal impact—presents safety and societal risks, as well as prospective benefits. Although governments retain
+an indispensable role in governing AI, business and civil society organizations play material roles in how AI
+is designed, deployed, used, and monitored. For these reasons, in this report, we examine how business and
+civil society actors can help mitigate the societal and safety risks of transformative AI in ways that comple-
+ment government action.
+More concretely, we develop a structured framework outlining actions and responsibilities nongovern -
+mental actors can take. Drawing on an existing body of literature, stakeholder interviews, and observations
+from RAND-designed games, we specify three overarching roles for nongovernmental actors: (1) managing
+technical and operational risks within development and deployment, (2) shaping incentives for safety through
+market and network mechanisms, and (3) supporting social stability and public trust during periods of AI-
+related change. Under each role, we detail potential responsibilities that include internal risk-management
+systems, incident reporting, safety-oriented procurement, workforce transition planning, and community
+resilience measures. We also identify actions that can inform or reinforce public policy and complement
+governmental roles.
+This report is intended for business and civil society audiences seeking to understand how non
+-
+go
+vernmental actors can contribute to mitigating the societal and safety risks of transformative AI and for
+researchers investigating governance roles beyond that of the state. We draw on and synthesize a substan -
+tial body of literature on AI safety, governance, and policy, and we have written it to be accessible to readers
+entering these fields without assuming prior expertise.
+Center for the Geopolitics of Artificial General Intelligence
+RAND Global and Emerging Risks is a division of RAND that delivers rigorous and objective public policy
+research on the most consequential challenges to civilization and global security. This work was undertaken
+by the division’s Center for the Geopolitics of Artificial General Intelligence (AGI), which is committed
+to helping decisionmakers understand, anticipate, and prepare to navigate the national security and geo -
+political implications of AGI. The center convenes leading technologists, strategists, economists, political
+scientists, and outside experts to consider the feasibility and effectiveness of prospective AGI-enabled capa -
+bilities; the domestic and international implications of their use; and the strategies and policies that gov -
+ernments, businesses, and civil society could adopt to respond to new realities. For more information, visit
+www.rand.org/global-and-emergingrisks/centers/geopolitics-of-agi.
+Funding
+This research was independently initiated and conducted within the Center for the Geopolitics of Artifi -
+cial General Intelligence using income from operations and gifts from RAND supporters, including phil -
+anthropic gifts made or recommended by DALHAP Investments Ltd., Ergo Impact, Founders Pledge, Char -
+lottes och Fredriks Stiftelse, Good Ventures, Jaan Tallinn, Longview, and Coefficient Giving. RAND donors
+and grantors have no influence over research findings or recommendations.
+
+===== PDF_PAGE 4 =====
+Looking Beyond the Government’s Regulatory Toolkit
+iv
+Acknowledgments
+We thank Ben Boudreaux, Lisa Abraham, Greg Smith, Tom Mulligan, and Emma Borden for their early
+contributions on framing this research effort. We are also grateful to Anton Shenk, Patricia Paskov, Gaurav
+Sett, Daniel Markus, and Kamaria Horton for feedback and comments. We are grateful to all interviewees
+and game participants for their insights and contributions. We would also like to express gratitude to Maria
+Eitel, Elizabeth Flynn, Jessica Orkin, and Nicolas Maitret for their help in convening games and workshops,
+participation, and engagement.
+
+===== PDF_PAGE 5 =====
+v
+Summary
+In this report, we examine how business and civil society actors can help mitigate the societal and safety
+risks of transformative artificial intelligence (AI) in ways that complement, rather than replace, govern -
+ment action. We integrate a targeted literature review with semistructured interviews and observations from
+RAND-designed games to identify roles that are actionable under existing legal and market conditions, the
+enabling “plumbing” that is required for safety, and levers that can raise the level of baseline practice ahead
+of regulation. Our analysis focuses on measures that could plausibly be implemented today and notes where
+government authority remains essential.
+Our research finds that business and civil society can contribute to mitigating risks by assuming three
+overarching roles, some of which have already been adopted by actors and institutions in the ecosystem:
+•
+ Ma
+naging technical and operational risks within development and deployment. Organizations that
+develop or deploy AI systems can establish systematic procedures to test systems prior to release, mon -
+itor them in operation, document safety cases and model inventories, and maintain clearly defined
+break‑glass mechanisms for suspending high
+-ri
+sk systems when warranted.
+• He
+lping shape incentives for safety through market and network mechanisms. Major purchasers,
+investors, insurers, and industry consortia can incorporate safety criteria into procurement, due dili -
+gence, and assurance processes, thereby rewarding developers that adopt robust risk-ma
+nagement prac-
+tices and helping to diffuse common standards and norms for safe AI use across markets and sectors.
+• Su
+pporting social stability and public trust during periods of AI‑related change. Employers, philan-
+thropies, unions, professional bodies, and community organizations can plan for workforce transitions,
+invest in reskilling and redeployment, strengthen local resilience to AI
+-rel
+ated shocks, and provide clear,
+credible communication about AI risks and benefits to sustain public confidence and social cohesion.
+Table S.1 summarizes, at a high level, areas in which business and civil society can lead in mitigating and
+managing risks, and how those actions can support government.
+
+===== PDF_PAGE 6 =====
+Looking Beyond the Government’s Regulatory Toolkit
+vi
+TABLE S.1
+Three Nongovernmental Roles in Governing Transformative AI with Interfaces to Government
+Role Purpose
+Possible Actions for Business
+and Civil Society Possible Government Interface
+1. Ma
+nage technical
+and operational
+risks
+Prevent foreseeable
+failures while
+models are built and
+deployed
+•
+ Bo
+ard-level AI oversight
+• Ri
+gorous pre- and
+postdeployment testing and
+monitoring
+•
+ Co
+nfidential incident and
+hazard reporting
+• Bre
+ak-glass rehearsals
+• En
+able evidence-driven oversight
+• Sa
+ndboxes and memorandums of
+understanding (controlled trials and
+access to frontier models)
+•
+ Crit
+ical infrastructure alignment (data
+center resilience, redundancy, and
+zoning and permitting levers)
+2.
+ Sh
+ape business
+and market
+incentives
+Use market power
+to make safety the
+winning strategy
+•
+ Pr
+ocurement criteria and
+buyers’ clubs
+• In
+vestor and insurer
+diligence
+• Wa
+rranties
+• Th
+ird-party assurance and
+rating signals
+• Mu
+ltistakeholder norms
+• Pu
+blic procurement as a force
+multiplier
+• Li
+ability and insurance enablers
+• Com
+petition and concentration
+oversight
+3. Su
+pport social
+stability and
+public trust
+Cushion social
+shocks and sustain
+legitimacy
+•
+ Wor
+kforce transition plans
+(reskilling, redeployment)
+• Comm
+unity resilience
+partnerships
+• Cris
+is communications
+preparation
+• Ph
+ilanthropy to support
+• Co
+-fund and coordinate transitions
+• Cr
+eate policy pathways for benefit
+sharing
+• Inst
+itute networks for cross-border
+coordination
+
+===== PDF_PAGE 7 =====
+vii
+Contents
+About This Report .......................................................................................................... iii
+Summary ...................................................................................................................... v
+Tables.......................................................................................................................... ix
+Looking Beyond the Government’s Toolkit ............................................................................. 1
+Methods, Findings, and Observations .................................................................................. 2
+Analytical Framework: Emerging Roles for Business and Civil Society in Managing and Mitigating
+Risk .................................................................................................................... 14
+Conclusion ................................................................................................................. 29
+APPENDIXES
+A. Semistructured Interviews ............................................................................................ 31
+B. Day After AGI ............................................................................................................ 33
+Abbreviations ................................................................................................................ 35
+References .................................................................................................................... 37
+
+===== PDF_PAGE 8 =====
+
+
+===== PDF_PAGE 9 =====
+ix
+Tables
+ S.1. Three Nongovernmental Roles in Governing Transformative AI with Interfaces to
+G
+overnment .................................................................................................... vi
+ 1. Ac
+tors and Possible Roles Across Business and Civil Society ........................................... 15
+ A.
+1. Sem
+istructured Interview Participants and Focus Areas ................................................ 31
+
+===== PDF_PAGE 10 =====
+
+
+===== PDF_PAGE 11 =====
+1
+Looking Beyond the Government’s Toolkit
+The rapid advance of artificial intelligence (AI) is reshaping expectations about future economic, politi -
+cal, and military power. Leading companies in the United States, China, and Europe are pursuing increas -
+ingly capable systems, and some are explicitly aiming at artificial general intelligence (AGI). Properly devel -
+oped and governed, these systems could spur productivity, accelerate scientific discovery, and create tools
+to address enduring public-policy challenges. At the same time, these systems could introduce serious risks,
+from destabilizing military innovations and pervasive disinformation to labor disruption and social disloca -
+tion; in the most extreme scenarios, some analysts argue that they could generate catastrophic or even exis -
+tential risks.
+Many of the scientists and technologists who pioneered modern AI—including Nobel laureate Geoffrey
+Hinton
+1—have warned that advanced AI could pose such risks. Prominent industry leaders have also pub -
+licly assigned nontrivial probabilities to extreme outcomes; for example, Anthropic chief executive officer
+Dario Amodei has suggested that the chance of catastrophic failure could be on the order of one in four.
+2
+Whether one accepts these specific estimates, the underlying policy question is straightforward: How should
+societies manage safety and societal risks from increasingly capable AI while preserving benefits?
+Most research and public debate start from the premise that governments should lead in managing risk.
+Yet several dynamics now test the assumption that government will necessarily lead. Frontier research and
+development (R&D) and AI deployment are concentrated in private firms, technical progress is outpacing
+policy and regulation cycles,
+3 and the surfaces of impact lie largely outside direct state control. Given that
+frontier AI is being developed and deployed in contexts in which government is neither the sole nor the
+first mover, understanding the extent to which and how nongovernmental institutions, across the business
+community and civil society, can lead or support the management of safety and societal risks is an urgent
+research priority.
+This report addresses that gap by specifying where nongovernmental institutions can lead, where they
+should support, and how they can complement government in ways that are feasible, effective, and demo -
+cratically legitimate. We treat business and civil society as central actors in governing AI in a setting in which
+innovation is largely driven by industry. Methodologically, we synthesize the literature and incorporate orig-
+inal empirical evidence (from semistructured interviews and observations from RAND-designed games) to
+map roles and responsibilities and assess incentives and constraints within a practical framework.
+For clarity, we use the following definitions:
+•
+ AI r
+efers to computational systems that, for explicit or implicit human-defined objectives, infers from
+inputs how to generate outputs—such as predictions, content, recommendations, or decisions—that can
+1 Amanpour & Company, “Geoffrey Hinton Warns of the ‘Existential Threat’ of AI,” video, May 9, 2023.
+2 Megan Morrone, “Amodei on AI: ‘There’s a 25% Chance That Things Go Really, Really Badly,’” Axios, September 17, 2025.
+3 State-level activity has been increasing: During the 2025 legislative session, lawmakers in all 50 states introduced 1,208 AI-
+related bills, the first year in which every state had introduced at least one, and 145 of those bills were enacted into law, includ -
+ing California’s Senate Bill 53 and New York’s RAISE Act, both of which require frontier-model developers to publish safety
+frameworks and report critical incidents. However, state-level measures vary widely in scope and stringency, federal policy
+remains unsettled, and the resulting patchwork leaves significant gaps that nongovernmental action can help fill. See “Arti -
+ficial Intelligence (AI) Legislation Tracker 2026: All 50 States,” webpage, MultiState.ai, undated; Governor Gavin Newsom,
+“Governor Newsom Signs SB 53, Advancing California’s World-Leading Artificial Intelligence Industry,” news release, Sep -
+tember 29, 2025; and Governor Kathy Hochul, “Governor Hochul Signs Nation-Leading Legislation to Require AI Frame -
+works for AI Frontier Models,” news release, December 19, 2025.
+
+===== PDF_PAGE 12 =====
+Looking Beyond the Government’s Regulatory Toolkit
+2
+influence physical or virtual environments; such systems vary in their levels of autonomy and adaptive-
+ness after deployment.4
+• Tr
+ansformative AI denotes advanced, general-purpose AI systems whose diffusion could plausibly drive
+large, systemic changes across critical sectors or social institutions within a relatively short time hori -
+zon.
+• AGI c
+ommonly refers to highly capable systems that match or exceed human performance across most
+cognitive domains.5
+Although the boundaries around these terms are contested, these working definitions anchor a policy-
+relevant discussion of risk and governance. We favor the term transformative AI over AGI because the former
+centers the conversation on the effects and consequences of developing and diffusing advanced AI systems
+rather than on empirically fraught and conceptually controversial debates about what constitutes general
+intelligence. Moreover, our analysis is inclusive of risks and potential harms, including labor disruptions, that
+arise from advanced systems that fall short of the AGI threshold.
+Throughout this report, we refer to business and civil society actors and institutions. Although our inves-
+tigation is not focused on the actions that each individual actor can take, our analysis is inclusive of the fol -
+lowing categories:
+•
+ Bus
+iness actors include firms that design and train advanced models; companies that integrate, fine-
+tune, or deploy AI in products and services; and the upstream and downstream commercial ecosystem
+that enables these activities. The category therefore spans frontier developers and platform providers;
+cloud and data-center operators and other critical-infrastructure firms; chip and tooling vendors; sec -
+toral adopters in such domains as health care, finance, education, logistics, and media; and the market
+intermediaries that shape incentives and assurance, such as major buyers and procurers, insurers and
+reinsurers, credit-rating and audit firms, professional services and consultancies, and industry associa -
+tions or consortia.
+•
+ Ci
+vil society actors comprise primarily nonstate and nonprofit organizations that articulate public values,
+generate independent expertise, or deliver services. This includes advocacy and watchdog organiza -
+tions, research institutes and universities, professional bodies and standards-setting communities, phil-
+anthropic funders, journalist and investigative outlets, unions and worker organizations, community-
+based and faith-based groups, and open-source and volunteer technical communities. We treat these
+actors as analytically distinct from government while recognizing that many collaborate with public
+authorities, operate in coregulatory arrangements, or receive public funding.
+Methods, Findings, and Observations
+We used a mixed-methods design to triangulate insights and observations from the literature, stakeholder
+interviews, and RAND-designed games. First, we conducted a targeted review of scholarship to situate non -
+governmental governance mechanisms for transformative AI and inform the methodological approach to
+the interviews. We relied on academic and policy literature, focusing on publications about AI governance
+4 Definitions of AI vary. This definition borrows from one introduced by the Organisation for Economic Co-operation and
+Development, “Recommendation of the Council on Artificial Intelligence,” OECD/LEGAL/0449, amended May 3, 2024.
+5 There continues to be debate among researchers about how best to define AGI. See, for example, Dan Hendrycks, Dawn
+Song, Christian Szegedy, Honglak Lee, Yarin Gal, Erik Brynjolfsson, Sharon Li, Andy Zou, Lionel Levine, Bo Han, et al., “A
+Definition of AGI,” arXiv, arXiv:2510.18212, version 2, revised October 23, 2025.
+
+===== PDF_PAGE 13 =====
+Looking Beyond the Government’s Regulatory Toolkit
+3
+and business management studies, as well as on relevant case studies in other domains. We identified rel -
+evant literature through iterative keyword searches across major academic databases, leading policy research
+outlets, and practitioner-focused publications. Search terms combined concepts related to AI governance ,
+transformative or frontier AI , private‑s
+ector and civil ‑s
+ociety governance mechanisms , corporate responsibil ‑
+ity, standards and assurance, and multistakeholder governance and were refined over multiple rounds as key
+themes emerged. We prioritized literature published within the past two years to capture rapidly evolving
+debates, while also including earlier foundational works where necessary to establish conceptual baselines.
+Notably, the field of AI governance and safety moves quickly. Moreover, often excellent ideas are published
+in opinion pieces, blogs, and tweets.
+6 Because of both speed and the variety of non–peer-reviewed platforms
+on which leading ideas are transmitted, it can be difficult to give a full picture of what experts are saying in
+a report that privileges formal academic and policy publications. Therefore, this review should be seen as
+representative, not exhaustive, and as a selection of key literature for business and civil society actors newer
+to the field.
+We then conducted 15 semistructured interviews with practitioners and actors from civil society and busi-
+ness selected through purposive sampling to capture variation across sectors and functions relevant to non -
+state governance of AI risks. Participants included business leaders and practitioners in health care, finance,
+and consulting who were involved in strategy, responsible AI, and product safety; civil-society leaders and
+researchers working in governance and higher education; former government officials with responsibilities
+spanning cybersecurity, export controls, and state-level policy; and frontier AI safety experts working in civil
+society and frontier AI labs. Participants were predominantly senior in their roles, including vice presidents,
+presidents and chief executive officers, company founders, former government leads, and senior product or
+policy managers. Appendix A provides more information on our methods, including demographic informa-
+tion, limitations to the approach, and interview protocols.
+To observe decisionmaking under pressure, we also ran a series of tabletop simulation games that put par-
+ticipants in fast-moving AI crisis scenarios. In total, we facilitated five “Day After AGI” exercises (approxi -
+mately two hours each) using RAND’s Infinite Potential gaming platform. Each game convened between
+ten and 14 senior leaders from industry and civil society to role-play an emergency response to a sudden AI-
+related crisis. Participants were chosen for their institutional experience and expertise (e.g., business execu -
+tives, philanthropic and community leaders, former officials, and technical experts) to ensure informed dis -
+cussion. The Business and Civil Society game simulated a special “Business and Civil Society Council” that
+was convened by the U.S. President in the wake of an AI-related crisis. In each case, the scenario presented a
+rapidly unfolding crisis triggered by advanced AI—an event posing immediate national or economic security
+threats and serving as a signpost toward a transformative AI future.
+Participants, guided by a facilitator (playing a National Security Advisor role), were briefed on the sce -
+nario and tasked with diagnosing its implications, discussing possible responses and cross-sector actions,
+and ultimately advising national leadership on a path forward. Notably, the scenarios were set in the near-
+term future (between 12 and 18 months ahead) to heighten plausibility and urgency; aside from the AI shock
+described, geopolitical and technological conditions were assumed to remain largely as they were at the time
+of this writing in early 2026. Appendix B provides more information on the methodological approach. An
+after-action report providing full analysis of the five games has been published separately.
+7
+6 Examples include writing by Helen Toner, Dean Ball, and Sebastien Krier on their Substacks and X accounts.
+7 Richard S. Girven, Beba Cibralic, and Gregory Smith, Infinite Potential—Insights from the Business and Civil Society
+Scenario: After ‑Ac
+tion Report from a Sequence of Day After Artificial General Intelligence Exercises , RAND Corporation,
+RR-A4767-1, 2026.
+
+===== PDF_PAGE 14 =====
+Looking Beyond the Government’s Regulatory Toolkit
+4
+In the sections that follow, we summarize key insights from the literature and empirical findings that help
+inform the analytical framework presented in this report.
+Summary of Key Literature
+In this review, we survey leading work on nongovernmental approaches to AI risk management. We organize
+the literature using four categories that move from mechanisms closest to where AI systems originate to those
+that operate at progressively greater distance from the technology itself: (1) internal risk management and
+safety governance, (2) independent evaluation and assurance, (3) multistakeholder coordination and norm-
+setting, and (4) civil society oversight and public accountability. These categories capture a spectrum of gov -
+ernance functions—from the technical and organizational to the political and societal—that the literature
+identifies as necessary complements to government action.
+Corporate Safety and Governance Practices
+Frontier AI developers are increasingly expected to institute internal risk management practices to ensure
+that their technologies are safe and trustworthy.
+8 Best practices for frontier labs are increasingly framed as
+a continuous risk-management life cycle: predeployment and postdeployment evaluations, red-teaming and
+dangerous-capability testing, incident response and cybersecurity, independent or third-party assessment,
+meaningful usage controls, and transparency artifacts that allow external scrutiny.
+9
+Leading frontier labs have published structured safety frameworks that formalize these practices. 10
+Anthropic’s Responsible Scaling Policy, introduced in 2023, was among the first to articulate a tiered approach
+in which models are assessed against defined capability levels, and advancing to higher tiers triggers increas -
+ingly stringent containment and deployment requirements. Google DeepMind’s Frontier Safety Framework
+follows a similar logic, identifying critical capability levels and specifying the mitigations that are required
+before deployment. OpenAI’s Preparedness Framework establishes internal risk scorecards across categories
+that include cybersecurity and biological threats, and there are thresholds that determine whether a model
+can proceed. These frameworks share a common structure—defined evaluation criteria, escalation pathways
+when risks are detected, and postdeployment monitoring—although how rigorously these frameworks are
+applied is difficult to assess from outside, and published safety reports vary considerably in specificity.
+Adopting safety frameworks and design principles is one thing; sustaining them organizationally is
+another. The question is how firms institutionalize risk governance so that safety commitments survive
+pressure from competing priorities. We have already seen these safety frameworks at the labs change sub -
+8 Public-opinion synthesis work by the Centre for the Governance of AI (GovAI) (which draws on a large body of survey
+evidence focused on the United States and United Kingdom) highlights that many people are more concerned than optimistic
+about AI’s societal impacts (including job disruption), support stronger oversight, and yet often distrust both tech companies
+and governments to manage AI well, particularly when acting alone. For more, see Noemi Dreksler, Harry Law, Chloe Ahn,
+Daniel S. Schiff, Kaylyn Jackson Schiff, and Zachary Peskowitz, What Does the Public Think About AI? An Overview of the
+Public’s Attitudes Towards AI and a Resource for Future Research, Centre for the Governance of AI, Future of Humanity Insti -
+tute, University of Oxford, January 22, 2025.
+9 Primary references on frontier-model safety governance include the AI Seoul Summit’s “Frontier AI Safety Commitments”
+(“Seoul Commitments”) and METR’s Frontier AI Safety Policies tracker, which indexes public responsible-scaling policies
+and frontier safety frameworks from leading developers. For a broader expert synthesis of advanced-AI risks and mitiga -
+tions, see Yoshua Bengio, Stephen Clare, Carina Prunkl, Maksym Andriushchenko, Ben Bucknell, Malcolm Murray, Shalaleh
+Rismani, Conor McGlynn, Nestor Maslej, Philip Fox, et al., International AI Safety Report 2026 , February 2026. For more,
+see Department for Science, Innovation and Technology, “Frontier AI Safety Commitments, AI Seoul Summit 2024,” United
+Kingdom government guidance, last updated February 7, 2025; METR, “Frontier AI Safety Policies,” webpage, undated.
+10 Anthropic, “Anthropic’s Responsible Scaling Policy,” webpage, version 2.2, effective May 14, 2025; OpenAI, Preparedness
+Framework, version 2, last updated April 15, 2025; Google DeepMind, “Frontier Safety Framework,” version 3.1, April 17, 2026.
+
+===== PDF_PAGE 15 =====
+Looking Beyond the Government’s Regulatory Toolkit
+5
+stantively. For example, on February 24, 2026, Anthropic released a substantially updated version 3.0 of its
+Responsible Scaling Policy. The third version is a meaningful departure: Anthropic argues that some com -
+mitments in the old responsible scaling policy make sense only if they are matched by other companies, and
+Anthropic also dropped its pause commitment.
+Scholars have explored how AI firms can institutionalize safety practices within more-durable corporate
+structures. Jonas Schuett, for example, proposes applying the three lines of defense model—a widely used
+corporate risk management framework—to AI developers.
+11 In this model, AI firms would assign roles for
+frontline risk controls, independent risk oversight functions, and internal audit, thereby closing gaps and
+enabling boards of directors to oversee AI risk management more effectively. The three-lines model was
+designed for financial institutions, where risks are actuarially tractable, and audit functions have established
+professional standards. Its application to AI development companies—where threat categories are poorly
+characterized and safety cases lack equivalent precedent—is not quite so cleanly described; organizations
+adopting this model for AI risk should account for this disanalogy when calibrating the scope and authority
+of each line. In particular, the second and third lines will need to develop evaluative standards that do not
+yet exist in mature form.
+12
+Related studies examine the design of AI ethics boards within companies, identifying key questions
+around boards’ mandates, composition, and authority, as well as the resources needed to reduce AI-related
+risks.
+13 The lessons from prior failed ethics boards indicate that such bodies must be empowered and well-
+structured to have any meaningful impact; absent real authority, they function as reputation management
+rather than risk management.
+14
+On the technical side, making any of these governance structures operational requires the use of tools that
+do not yet fully exist. Anka Reuel and coauthors present a taxonomy of open problems in technical AI gover-
+nance, including how to reliably watermark AI-generated content to detect deepfakes, continuously monitor
+deployed models for emergent harmful behaviors, and verify compliance with safety standards.
+15 Addressing
+these technical gaps will require dedicated R&D and cross-industry adoption of new methods, underscoring
+that the private sector and independent experts must invest in innovative safety mechanisms (such as robust
+model monitoring and content-provenance techniques) to support effective oversight of advanced AI systems.
+16
+11 Jonas Schuett, “Three Lines of Defense Against Risks from AI,” AI and Society , Vol. 40, No. 2, February 2025.
+12 Noam Kolt and colleagues propose one answer to this gap: legal alignment or intentionally designing AI models to comply
+with applicable laws and fundamental rights as part of their safety architectures. This approach leverages the clarity of demo -
+cratically legitimized laws but inherits their limitations, including jurisdictional variation and regulatory lag. See Noam Kolt,
+Nicholas Caputo, Jack Boeglin, Cullen O’Keefe, Rishi Bommasani, Stephen Casper, Mariano-Florentino Cuéllar, Noah Feld -
+man, Iason Gabriel, Gillian K. Hadfield, et al., Legal Alignment for Safe and Ethical AI , Oxford Martin School, AI Governance
+Initiative, University of Oxford, January 15, 2026.
+13 Jonas Schuett, Ann-Katrin Reuel, and Alexis Carlier, “How to Design an AI Ethics Board,” AI and Ethics, Vol. 5, No. 2, April
+2025.
+14 Beba Cibralic, Miranda Bogen, Kevin Bankston, and Ruchika Joshi, Principled Practice: A Playbook for Operationalizing
+Responsible AI , Center for Democracy & Technology, AI Governance Lab, September 17, 2025.
+15 Anka Reuel, Ben Bucknall, Stephen Casper, Tim Fist, Lisa Soder, Onni Aarne, Lewis Hammond, Lujain Ibrahim, Alan
+Chan, Peter Wills, et al., “Open Problems in Technical AI Governance,” arXiv, arXiv:2407.14981, version 2, April 16, 2025.
+16 An increasingly important set of open technical questions concerns AI agents. On the infrastructure needed to govern auton-
+omous AI agents specifically, Alan Chan and colleagues argue for creating external agent infrastructure; that is, common pro -
+tocols and guardrails to mediate how autonomous AI agents interact with one another and the world, including consistent agent
+identities, standardized communication rules, and mechanisms to detect or halt harmful agent actions at an infrastructural
+level (Alan Chan, Kevin Wei, Sihao Huang, Nitarshan Rajkumar, Elija Perrier, Gillian K. Hadfield, and Markus Anderljung,
+“Infrastructure for AI Agents,” arXiv, arXiv:2501.10114, version 2, May 16, 2025).
+
+===== PDF_PAGE 16 =====
+Looking Beyond the Government’s Regulatory Toolkit
+6
+The literature is clear that corporate governance has its limits. A central concern is whether profit-driven
+firms can sustain stringent safety practices that might conflict with short-term commercial interests. Tradi -
+tional corporate law incentivizes maximizing shareholder value, which can discourage investments in ethics
+and safety that do not directly contribute to profit. 17 Some frontier AI companies have experimented with
+nontraditional corporate structures to prioritize their mission—for instance, OpenAI was founded as a non -
+profit and later became a capped-profit hybrid, and Anthropic’s governing documents center a public ben -
+efit mission. These structures aim to give boards more leeway to prioritize safety over profits. Yet OpenAI’s
+past few years illustrate the fragility of such mechanisms: In late 2023, the company’s board (composed
+of nonprofit trustees) abruptly fired the chief executive officer, Sam Altman, over transparency concerns,
+only to see an internal and investor backlash force a reversal within days.
+18 In 2025, OpenAI restructured
+by converting its commercial arm into a Delaware Public Benefit Corporation (OpenAI Group Public Ben -
+efit Corporation)—a for-profit structure—while its nonprofit parent (now the OpenAI Foundation) retained
+control; the recapitalization closed on October 28, 2025.
+19
+The broader lesson is that voluntary corporate governance measures require supportive incentive struc -
+tures. Market forces can undermine even sincere efforts at responsible AI development, unless there are
+countervailing rewards or requirements for safety. Some incentives are reputational (e.g., being seen as an
+“ethical AI leader” can attract business and talent) or anticipatory (preempting regulation by self-policing).
+In summary, corporate self-regulation is a vital first layer of AI governance and has produced many prom-
+ising practices, but it works best in tandem with external oversight and transparency. These limitations have
+driven growing interest in independent assurance mechanisms that can validate and reinforce internal efforts.
+Independent Evaluation and Assurance
+A growing body of work proposes instituting independent oversight and accountability mechanisms to com-
+plement companies’ internal efforts. Some scholars have argued for third-party compliance reviews to verify
+that companies follow their declared AI safety frameworks.
+20 Such independent reviews would function
+analogous to financial audits, providing assurance to the public (and regulators) that companies are adher -
+ing to best practices for high-stakes frontier AI models. Another proposal is instituting third-party red-
+teaming and flaw-disclosure processes: Shayne Longpre and colleagues suggest mechanisms in which exter -
+nal researchers can safely disclose vulnerabilities or dangerous behaviors in AI models to the developers and
+17 Lynn A. Stout, The Shareholder Value Myth: How Putting Shareholders First Harms Investors, Corporations, and the Public ,
+Berrett-Koehler Publishers, 2012.
+18 Jeffrey Dastin and Aditya Soni, “Sam Altman to Return as OpenAI CEO After His Tumultuous Ouster,” Reuters, Novem -
+ber 22, 2023.
+19 Bret Taylor, “Built to Benefit Everyone,” OpenAI, October 28, 2025; Deepa Seetharaman, Stephen Nellis, and Deborah Mary
+Sophia, “Microsoft, OpenAI Reach Deal Removing Fundraising Constraints for ChatGPT Maker,” Reuters, October 28, 2025.
+Some commentators viewed this episode as evidence of mission drift ; despite a novel governance model, market and market-
+like pressures (from investors, employees, and such partners as Microsoft) pushed the company back toward a profit-driven
+trajectory. In corporate governance terms, amoral drift can slowly erode a firm’s ethical commitments as the firm chases fund-
+ing and talent. A Harvard Law Review analysis pointed out that even with reduced shareholder rights, AI start-ups remain
+vulnerable to pressure from what it calls superstakeholders —e.g., venture investors, key employees with equity, or strategic
+partners—who have financial stakes and can effectively steer the company toward profit maximization. For more, see Harvard
+Law Review Association, “Amoral Drift in AI Corporate Governance,” Harvard Law Review , Vol. 138, No. 6, April 2025.
+20 Aidan Homewood, Sophie Williams, Noemi Dreksler, John Lidiard, Malcolm Murray, Lennart Heim, Marta Ziosi, Seán Ó
+hÉigeartaigh, Michael Chen, Kevin Wei, et al., “Third-Party Compliance Reviews for Frontier AI Safety Frameworks,” arXiv,
+arXiv:2505.01643, version 1, May 3, 2025; Conrad Stosz, Karson Elmgren, Charles Foster, George Balston, Seth Donoughe,
+Samira Nedungadi, Michael Chen, Jasper Götting, Patricia Paskov, Sayash Kapoor, et al., AEF
+‑1: M
+inimum Operating Condi ‑
+tions for Independent Third Party AI Evaluations , version 1, AI Evaluator Forum, undated.
+
+===== PDF_PAGE 17 =====
+Looking Beyond the Government’s Regulatory Toolkit
+7
+oversight bodies rather than companies relying only on in-house testing. 21 This is in line with the broader
+principle that “in-house evaluation is not enough” for complex general-purpose AI; there must be channels
+for outside scrutiny. Relatedly, Kevin Wei and Lennart Heim argue for well-designed AI incident-reporting
+systems that cover real-world harms and near misses and are informed by reporting regimes in safety-critical
+industries to enable ongoing, postdeployment external visibility and accountability for general-purpose AI
+systems.
+22
+Auditing, in particular, has been the subject of several recent proposals. The January 2026 report Frontier
+AI Auditing argues that transparency alone is insufficient and defines frontier AI auditing as rigorous third-
+party verification of safety and security claims that requires deep, secure access to nonpublic information.
+Such auditing also grades on AI Assurance Levels, from AAL-1 to AAL-4, to standardize how much confi -
+dence different audits can provide, from time-bounded system audits to continuous, deception-resilient veri-
+fication.
+23 Several authors have ties to new institutions that are aimed at building the infrastructure for AI
+auditing.24 Notably, this work builds on earlier proposals, including Mökander and colleagues’ three-layered
+audit blueprint for AI systems, especially large language models (LLMs). Their framework calls for gover -
+nance audits of AI developer organizations (to review corporate practices and controls), model audits of the
+AI system itself (testing the trained model for risks before deployment), and application audits of downstream
+uses of the model by external developers.
+25 Auditing at all three levels in a structured and coordinated way is
+seen as a promising governance tool to identify and manage the ethical, safety, and legal risks of AI systems.26
+A growing set of organizations is building on the concept of third-party compliance assurance by turning
+standards into operational assurance. Emerging models pair technical criteria with insurance and other eco -
+nomic signals. In these models, certification against a defined standard can become a condition of insurability,
+and the information generated during certification can inform premium pricing and coverage terms. More
+broadly, insurers can act as private risk regulators; they have incentives to gather information about failure
+modes across clients, identify the controls associated with lower losses, and reward those controls through
+pricing, exclusions, deductibles, and underwriting requirements. For example, the Artificial Intelligence
+Underwriting Company (AIUC) links certification against its AIUC-1 agent standard with insurability for cer-
+tain enterprise deployments,
+27 illustrating how assurance and insurance could become mutually reinforcing.
+The Cloud Security Alliance has announced STAR (Security, Trust, Assurance, and Risk) for AI,28 a registry-
+21 Shayne Longpre, Sayash Kapoor, Kevin Klyman, Ashwin Ramaswami, Rishi Bommasani, Borhane Billi-Hamelin, Yang -
+sibo Huang, Aviya Skowron, Zheng-Xin Yong, Suhas Kotha, et al., “Position: A Safe Harbor for AI Evaluation and Red Team -
+ing,” Proceedings of the 41st International Conference on Machine Learning , July 2024.
+22 Kevin Wei and Lennart Heim, “Designing Incident Reporting Systems for Harms from General-Purpose AI,” arXiv,
+arXiv:2511.05914, version 1, November 8, 2025.
+23 Miles Brundage, Noemi Dreksler, Aidan Homewood, Sean McGregor, Patricia Paskov, Conrad Stosz, Girish Sastry,
+A. Feder Cooper, George Balston, Steven Adler, et al., Frontier AI Auditing: Toward Rigorous Third ‑P
+arty Assessment of Safety
+and Security Practices at Leading AI Companies , January 2026.
+24 The AI Verification and Evaluation Research Institute is a nonprofit founded by Miles Brundage, the former head of policy
+research at OpenAI, and has the mission of making rigorous third-party auditing of frontier AI effective and universal. The
+institute is also a founding member of the AI Evaluator Forum, which has published minimum operating conditions for inde -
+pendent third-party AI evaluations.
+25 Jakob Mökander, Jonas Schuett, Hannah Rose Kirk, and Luciano Floridi, “Auditing Large Language Models: A Three-
+Layered Approach,” AI and Ethics , Vol. 4, No. 4, November 2024.
+26 Mökander et al., 2024.
+27 Artificial Intelligence Underwriting Company, homepage, undated.
+28 Cloud Security Alliance, “Cloud Security Alliance Launches STAR for AI, Establishing the Global Framework for Respon -
+sible and Auditable Artificial Intelligence,” press release, October 23, 2025.
+
+===== PDF_PAGE 18 =====
+Looking Beyond the Government’s Regulatory Toolkit
+8
+based assurance program anchored to International Organization for Standardization (ISO) International
+Electrotechnical Commission (IEC) 42001 for AI management systems. 29 Independent certification vehicles
+and governance platforms—including the Responsible AI Institute and private audit providers—are likewise
+operationalizing life-cycle risk management and third-party attestation for enterprise buyers and deployers.
+30
+These independent evaluation and assurance mechanisms operate primarily at the level of individual
+organizations. Many AI risks, however, are systemic, cutting across firms, sectors, and borders, and require
+broader coordination to address.
+Multistakeholder Coordination and Norm-Setting
+A recurring theme in AI policy research is that managing AI risks requires coordination across many orga -
+nizations and sectors, often through new networks or coalitions. Rather than a single global regulator for
+AI, some experts envision a distributed governance model—a network of networks—that involves govern -
+ments, companies, academia, and civil society, each of which contributes to governance functions.
+31 The
+idea is that a decentralized, collaborative approach can be more adaptive and resilient in the fast-moving AI
+landscape, channeling expertise and resources where they are needed and providing redundancy if one node
+fails.
+32 Cameron Kerry and colleagues, for example, describe the emerging global AI governance architecture
+as a networked and distributed system and view the diverse, decentralized efforts underway as beneficial. 33
+They note that because AI’s challenges are immense and novel, no one government or institution has the
+capacity to handle them alone, but by networking multiple centers of effort across industry groups, standards
+bodies, nongovernmental organizations (NGOs), and international organizations, the community can mobi-
+lize more expertise and “mobilize diverse resources and initiatives” to respond to AI risks.
+34
+We see this principle in action through various multistakeholder initiatives, beginning a decade ago and
+continuing at the time of this writing. The Partnership on AI (PAI), launched in 2016, brings together lead -
+ing tech companies and civil society organizations to jointly develop AI best practices on such issues as fair-
+ness, safety, and transparency.
+35 Other examples include the Global Partnership on Artificial Intelligence, 36
+the World Economic Forum’s AI Global Alliance,37 and the Frontier Model Forum (FMF),38 an industry-led
+coalition spearheaded by several leading AI labs to collaborate on safety research and evaluation for cutting-
+29 Jim Reavis, “Announcing the AI Controls Matrix and ISO/IEC 42001 Mapping—and the Roadmap to STAR for AI 42001,”
+Cloud Security Alliance, August 20, 2025; International Organization for Standardization and International Electrotechnical
+Commission, “Information Technology—Artificial Intelligence—Management System,” ISO/IEC 42001:2023, 2023.
+30 Responsible AI Institute, homepage, undated.
+31 Allan Dafoe, AI Governance: A Research Agenda , Centre for the Governance of AI, Future of Humanity Institute, Univer -
+sity of Oxford, August 27, 2018.
+32 Scott J. Shackelford and Rachel Dockery, “Governing AI,” Cornell Journal of Law & Public Policy , Vol. 30, No. 2, Winter
+2020.
+33 Cameron F. Kerry, Joshua P. Meltzer, Andrea Renda, and Andrew Wyckoff, “A Network Architecture for Global AI Policy,”
+Brookings Institution, February 10, 2025. The authors describe a “networked and distributed” governance architecture.
+34 Kerry et al., 2025.
+35 Partnership on Artificial Intelligence, homepage, undated.
+36 Global Partnership on Artificial Intelligence, homepage, Organisation for Economic Co-operation and Development,
+undated.
+37 World Economic Forum, “AI Global Alliance,” webpage, undated.
+38 Frontier Model Forum, “Progress Update: Advancing Frontier AI Safety in 2024 and Beyond,” August 29, 2024.
+
+===== PDF_PAGE 19 =====
+Looking Beyond the Government’s Regulatory Toolkit
+9
+edge AI models. Governments have also begun coordinating through the emerging AISI Network, 39 for-
+mally known as the International Network of AI Safety Institutes, which was launched at a convening in San
+Francisco in November 2024 to align technical work on AI safety research, testing, and evaluation, including
+engagement with AI developers, academics, and civil society leaders.
+Multistakeholder collaboration also emerges on a more ad hoc basis, particularly in response to immedi-
+ate AI risk concerns. Prominent examples include the Future of Life Institute’s 2023 open letter, which called
+for a six-month pause on training the most powerful AI systems, and its 2025 letter, which called for the pro-
+hibition on the creation of superintelligent AI.
+40 Although the proposed pause did not occur and there con -
+tinues to be debate about the efficacy of open letters, these campaigns succeeded in injecting safety concerns
+into mainstream debate and spurred companies and policymakers to discuss new safeguards.
+Comparative research suggests that industry-led safety initiatives can be effective if they are modeled on
+those in other high-stakes sectors. Morgan Simpson, Alejandro Ortega, and Robert Trager examine how vol-
+untary safety programs in aviation and nuclear power improved outcomes by leveraging industry consortia.
+41
+They conclude that similar efforts in AI can raise safety baselines ahead of regulation, provided that these
+efforts incorporate lessons on maintaining rigor and accountability without unduly stifling innovation.
+42
+Internationally, standardization organizations (e.g., ISO, the Institute of Electrical and Electronics Engi -
+neers [IEEE]) have also provided venues for businesses, academics, and civil society representatives to forge
+technical standards and ethics guidelines for AI. IEEE’s Ethically Aligned Design standard and its series of
+AI standards (e.g., on transparency, bias mitigation) are notable examples of nongovernmental norm-setting
+driven by multistakeholder input. These standards often inform policy and corporate practice in tandem.
+43
+Because compliance is voluntary, norms can also diffuse and be tested before governments codify them; the
+European Union (EU) AI Act’s approach of treating ISO/IEC harmonized standards as a compliance path -
+way is an example of this sequencing. That said, civil society’s formal role in these processes has remained
+thin in practice. Research consistently finds that AI standards committees are dominated by large technol -
+ogy companies, and civil society, subject-matter experts (SMEs), and academic institutions are deterred by
+resource demands, opaque procedures, and the cost of accessing documents still under development.
+44
+39 National Institute of Standards and Technology, “Fact Sheet: U.S. Department of Commerce & U.S. Department of State
+Launch the International Network of AI Safety Institutes at Inaugural Convening in San Francisco,” November 20, 2024.
+40 Future of Life Institute, “Pause Giant AI Experiments: An Open Letter,” March 29, 2023; Billy Perrigo and Tharin Pillay,
+“‘Time Is Running Out’: New Open Letter Calls for Ban on Superintelligent AI Development,” Time , October 21, 2025. In
+March 2023, the institute’s open letter calling for a six-month pause on training the most powerful AI systems was signed by
+thousands of tech leaders, researchers, and public figures. In 2025, the institute released another letter calling for the prohibi -
+tion on the creation of superintelligent AI. A diverse array of stakeholders, including actors Joseph Gordon-Levitt and Stephen
+Fry, rapper will.i.am, and author Yuval Noah Harari signed their names to the letter.
+41 Morgan Simpson, Alejandro Ortega, and Robert Trager, “Voluntary Industry Initiatives in Frontier AI Governance: Lessons
+from Aviation and Nuclear Power,” AI Governance Initiative, Oxford Martin School, University of Oxford, January 20, 2025.
+42 On coordinated restraint among frontier developers specifically, Jide Alaga and Jonas Schuett propose an evaluation-
+based coordination scheme in which developers would collectively agree to pause or take other joint actions if evaluations
+reveal dangerous capabilities, arguing that shared risk information can prevent races to the bottom on safety. See Jide Alaga
+and Jonas Schuett, “Coordinated Pausing: An Evaluation-Based Coordination Scheme for Frontier AI Developers,” arXiv,
+arXiv:2310.00374, September 30, 2023.
+43 Standards have fared reasonably well in fast-moving technology domains because they tend to be performance-based
+rather than prescriptive—setting governance outcomes rather than fixing methods—and are updated on a regular review
+cycle, which avoids locking in approaches that could quickly become obsolete. See IEEE, Ethically Aligned Design: A Vision for
+Prioritizing Human Well
+‑B
+eing with Autonomous and Intelligent Systems, April 2019.
+44 Christine Galvagna, Inclusive AI Governance: Civil Society Participation in Standards Development , Ada Lovelace Insti -
+tute, March 30, 2023; Robert Kilian, Linda Jäck, and Dominik Ebel, “European AI Standards—Technical Standardisation and
+
+===== PDF_PAGE 20 =====
+Looking Beyond the Government’s Regulatory Toolkit
+10
+The literature also suggests the potential efficacy of a co-regulatory approach; that is, leveraging these
+networks to craft norms and prestandards, which governments can later reinforce with law. 45 The EU’s
+approach exemplifies this: While drafting the AI Act, the European Commission worked with industry and
+others to publish a voluntary AI Code of Practice on July 10, 2025, to guide general-purpose AI models. 46
+Companies who sign onto this code commit to measures consistent with the act’s aims (such as testing for
+discriminatory impacts), creating an interim compliance regime until the law is enforceable. This code was
+“co-designed by AI stakeholders” and is meant to prepare industry for forthcoming legal requirements.
+47
+Such interplay shows how multistakeholder outputs can directly inform and expedite formal governance.
+The proliferation of these initiatives reflects broad recognition that AI governance cannot rest with any
+single actor. Yet coordination alone does not guarantee accountability, particularly when, as the standards
+literature notes, affected communities and public-interest organizations remain underrepresented in the
+processes that set the rules.
+Civil Society Advocacy and External Pressure
+Beyond formal frameworks and coalitions, civil society plays a critical watchdog and advocacy role in shap -
+ing AI’s trajectory. NGOs, academics, media, and even tech workers have used transparency and public pres-
+sure to hold companies accountable and push for higher standards. Advocacy campaigns have directly led
+to changes in industry behavior. A notable case occurred in 2020, when major technology firms came under
+fire for selling facial recognition software to law enforcement despite the known bias and privacy risks. In the
+face of intense civil society and shareholder pressure—including studies exposing racial bias in these systems
+and petitions from civil rights groups—Amazon and Microsoft were effectively forced to halt sales of their
+facial recognition technology to police departments.
+48 IBM went so far as to exit the facial recognition market
+entirely, citing ethical concerns. This example demonstrates how public outcry and NGO advocacy can press
+businesses into self-imposed moratoriums to prevent social harms.
+Civil society organizations also contribute expertise and independent research that illuminates AI risks,
+often prompting industry responses. Transparency initiatives are another avenue: Such projects as the AI
+Incident Database (an open repository of AI failures and near misses that is maintained by researchers and
+volunteers) encourage organizations to report and learn from one another’s mistakes, akin to safety report -
+ing in aviation.
+49 By documenting incidents, such as self-driving car crashes and algorithmic discrimina -
+tion cases, these civil society–led efforts create public records that both regulators and companies can use to
+identify systemic problems. In the global context, coalitions of NGOs have influenced international AI policy
+debates—from calling for bans on autonomous weapons and predictive policing AI to shaping the human
+Implementation Challenges Under the EU AI Act,” European Journal of Risk Regulation , Vol. 16, No. 3, September 2025.
+45 Edward J. Balleisen and Marc A. Eisner, “The Promise and Pitfalls of Co-Regulation: How Governments Can Draw on
+Private Governance for Public Purpose,” in David Moss and John Cisternino, eds., New Perspectives on Regulation , The Tobin
+Project, 2009; Michèle Finck, “Digital Co-Regulation: Designing a Supranational Legal Framework for the Platform Econ -
+omy,” European Law Review, Vol. 43, No. 1, 2018.
+46 European Commission, “General-Purpose AI Code of Practice Now Available,” news release, July 10, 2025a.
+47 European Commission, General ‑P urpose AI Code of Practice , July 10, 2025b, chapter on safety and security, Measure 3.2,
+and Appendixes 1.1–1.3; European Commission, “Questions and Answers on the Code of Practice for General-Purpose AI,”
+July 11, 2025c; European Commission, “Drawing-Up a General-Purpose AI Code of Practice,” last updated March 23, 2026.
+48 Amazon News, “We Are Implementing a One-Year Moratorium on Police Use of Rekognition,” news release, June 10, 2020;
+Jay Greene, “Microsoft Won’t Sell Police Its Facial-Recognition Technology,” Washington Post , June 11, 2020.
+49 AI Incident Database, “About,” Responsible AI Collaborative, undated-a.
+
+===== PDF_PAGE 21 =====
+Looking Beyond the Government’s Regulatory Toolkit
+11
+rights provisions in the EU AI Act. 50 Many governments now actively consult civil society organizations as
+stakeholders when developing AI strategies, recognizing the sector’s valuable input on societal risks. 51
+The literature notes that for multistakeholder governance to truly benefit society, actors and institutions
+across civil society must have real influence and its representatives should not be merely token participants.
+Eva Erman and Markus Furendal explore how nonstate actors (such as expert NGOs) can gain legitimacy
+as agents of democracy even without formal public mandates.
+52 They argue that if these actors demonstrate
+moral authority (standing up for widely held values), epistemic authority (expert knowledge), or representa -
+tive authority (speaking for affected communities), they contribute to democratizing AI governance in prac -
+tice. Indeed, civil society can bolster what governance scholars call input legitimacy (inclusive participation
+in decisionmaking) and output legitimacy (ensuring that outcomes reflect societal values). Seen in this light,
+civil society is a cogovernor of AI, providing checks and balances that neither government nor industry alone
+reliably supply.
+However, it is important not to romanticize civil society or treat nonstate actors as straightforward proxies
+for the public. Civil society organizations are internally heterogeneous and vary widely in expertise, repre -
+sentativeness, and accountability. Some groups primarily reflect the interests of particular constituencies or
+funders rather than broad public values; others lack the technical capacity to evaluate complex AI systems and
+might inadvertently amplify oversimplified or misleading narratives about risk. Civil society actors can be
+subject to capture and performative dynamics. Well-resourced organizations based in the Global North often
+dominate multistakeholder processes, marginalizing perspectives from less powerful communities and those
+from the Global South.
+53 Companies might use carefully curated multistakeholder forums to legitimize pre -
+determined positions—a form of ethics-washing in which civil society participation conveys democratic or
+moral authority without commensurate influence over outcomes.
+54 Research on greenwashing suggests a sim-
+ilar pattern: Such behaviors proliferate where information asymmetries between firms and external observers
+are greatest, and verification mechanisms themselves can be captured as firms adapt by targeting intermedi -
+50 Campaign to Stop Killer Robots, “Urgent Action Needed to Ban Fully Autonomous Weapons: Non-Governmental Orga -
+nizations Convene to Launch Campaign to Stop Killer Robots,” press release, April 23, 2013. See also Mary Wareham, Stop ‑
+ping Killer Robots: Country Positions on Banning Fully Autonomous Weapons and Retaining Human Control, Human Rights
+Watch, August 10, 2020.
+51 Emerging work argues that nongovernmental actors should help ensure that AI’s benefits are broadly shared and not just
+act to mitigate risks. Sumaya Nur Adan and colleagues propose mechanisms for redistributing AI-driven gains and transfer -
+ring technology to underserved regions, while cautioning that current trajectories could exclude billions from AI’s benefits.
+See Sumaya Nur Adan, Joanna Wiaterek, Varun Sen Bahl, Ima Bello, Camila Beltran, Tobias Dierks, Luise Eder, Liam Epstein,
+Abra Ganz, Natalie Kiilu, et al., AI Benefit
+‑Sh
+aring Framework: Balancing Access and Safety, AI Governance Initiative, Oxford
+Martin School, December 1, 2025. Claire Dennis and colleagues complement this by disaggregating benefit-sharing into con -
+crete routes and emphasizing that civil society engagement is essential after commitments are announced to guard against
+coercive dependencies. See Claire Dennis , Sam Manning, Stephen Clare, Boxi Wu, Jake Okechukwu Effoduh, Chinasa T.
+Okolo, Lennart Heim, and Katya Klinova, Options and Motivations for International AI Benefit Sharing , Centre for the Gov-
+ernance of AI, Future of Humanity Institute, University of Oxford, February 6, 2025.
+52 Eva Erman and Markus Furendal, “The Democratic Role of Non-State Actors in the Global Governance of Artificial Intel -
+ligence,” Critical Review of International Social and Political Philosophy , online ahead of print, 2025.
+53 Marie-Therese Png, “At the Tensions of South and North: Critical Roles of Global South Stakeholders in AI Governance,”
+Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency , Association for Computing Machin -
+ery, 2022; Aubra Anthony, Lakshmee Sharma, and Elina Noor, Advancing a More Global Agenda for Trustworthy Artificial
+Intelligence, Carnegie Endowment for International Peace, April 30, 2024.
+54 Mario D. Schultz, Ludovico Giacomo Conti, and Peter Seele, “Digital Ethicswashing: A Systematic Review and a Process-
+Perception-Outcome Framework,” AI and Ethics , Vol. 5, No. 2, April 2025.
+
+===== PDF_PAGE 22 =====
+Looking Beyond the Government’s Regulatory Toolkit
+12
+aries.55 These dynamics do not negate the value of civil society participation, but they underscore that civil
+society is a contested governance arena rather than an unambiguous corrective to state or corporate power.56
+Summary Findings from Semistructured Interviews
+The semistructured interviews present an emerging picture of how practitioners in business and civil soci -
+ety perceive transformative AI risks, where those risks materialize, and which nonstate interventions seem
+feasible to interviewees in the near term. The interview protocol covered such topics as perceived AI risks
+in the near versus long term, existing practices for managing AI risk within organizations, views on what
+industry or civil society could do beyond the status quo, business and civil society’s dependencies on govern-
+ment action, and concerns about feasibility or unintended consequences of nongovernmental interventions.
+Interviewees consistently described a dual horizon of concern. On the near horizon, they emphasized
+ongoing harms—fraud, scams, and nonconsensual imagery—that already strain response capacity and are
+unevenly distributed. One interviewee warned, “What worries me about these [AI] systems is what is already
+happening—AI-generated child sexual abuse material. We are not even close to being able to field all of it,”
+noting that those “disproportionately affected are not in a position to participate.” Another observed that
+“scams are highly prevalent in Indonesia and India,” underscoring geographic disparities in realized harms.
+On the longer horizon, interviewees pointed to potential risks related to loss of control, concentration of
+power, and expanding “cognitive delegation.” Several anticipated “societal upheaval” and “labor displace -
+ment” and emphasized that “cognitive labor can be displaced,” and another noted that certain roles “might
+be able to be replaced . . . in 2 years” as the autonomy of AI systems increases.
+Confidence in government preparedness was generally limited across interviewees. Interviewees attrib -
+uted this to the pace of change and unsettled mandates that dampen internal incentives for sustained safety
+investment in corporations—a twin lack of expert consensus on transformative AI risks and clear regula -
+tory mandates that makes it “difficult to create internal company incentives.” A few participants emphasized
+comparatively tractable subnational levers: ongoing work on an “AI whistleblower protection bill,” “liability
+reform . . . at the state level [e.g., Senate Bill 1047],” and coordinated strategies in which “state-level action—
+in conjunction with California and New York” can approximate a de facto national framework. Several also
+pointed to local infrastructure tools—“you can take advantage of zoning and permitting . . . data centers” to
+enforce certain rules, while cautioning that “companies can threaten not to do work in an area” and that “the
+state may preempt local” action.
+55 The greenwashing literature further warns, however, that verification mechanisms themselves can be captured: As inde -
+pendent certifications and standards become established, firms adapt by targeting those intermediaries, producing a cat-
+and-mouse dynamic between advocacy and corporate co-optation. For more on greenwashing, see Magali A. Delmas and
+Vanessa C. Burbano, “The Drivers of Greenwashing,” California Management Review , Vol. 54, No. 1, October 2011; A. W.
+Montgomery, Thomas P. Lyon, and Jasper Barg, “No End in Sight? A Greenwash Review and Research Agenda,” Organization
+& Environment, Vol. 37, No. 2, June 2024; Thomas P. Lyon, and A. Wren Montgomery, “The Means and End of Greenwash,”
+Organization & Environment , Vol. 28, No. 2, June 2015. Sports-washing scholarship offers an analogous lesson at the geopo -
+litical level: Reputational laundering through positive brand association persists until civil society and media pressure raise
+the costs of symbolic participation sufficiently to demand substantive change. For more, see Michael Skey, “Sportswashing:
+Media Headline or Analytic Concept?” International Review for the Sociology of Sport , Vol. 58, No. 5, August 2023.
+56 Simone Chambers and Jeffrey Kopstein, “Bad Civil Society,” Political Theory, Vol. 29, No. 6, December 2001; John S. Dryzek,
+“Global Civil Society: The Progress of Post-Westphalian Politics,” Annual Review of Political Science , Vol. 15, 2012. Designing
+AI governance arrangements that rely on civil society therefore requires attention to such organizations’ internal accountability,
+their diversity of representation, their transparency regarding funding and mandates, and ensuring that there are mechanisms
+so that civil society actors are subject to appropriate checks and contestation. Ranjit Lall, “Making Global Governance Account-
+able: Civil Society, States, and the Politics of Reform,” American Journal of Political Science, Vol. 69, No. 1, January 2025.
+
+===== PDF_PAGE 23 =====
+Looking Beyond the Government’s Regulatory Toolkit
+13
+Organizational readiness was described as uneven, and good intentions, interviewees suggested, were
+outpacing capacity, especially among smaller deployers. As one interviewee put it, “Most smaller [organiza -
+tions] don’t have money for extra things . . . when there’s no regulatory teeth, no incentives, and no roadmap,”
+such organizations gravitate toward “mitigations that companies can control.” One interviewee mapped risk
+across multiple loci that call for distinct tools: the lab and R&D pipeline, high-risk deployments, govern -
+ment decisionmaking that is reliant on technical assessments, large-scale diffusion, end-user institutions,
+and the broader epistemic environment. “For risks that primarily sit in the lab [and] R&D pipeline (such as
+early-stage loss of control) . . . you need some lever over the labs,” whereas deployment-level harms are better
+addressed through operational safeguards and do not require lab engagement.
+On incentives, several interviewees pointed to demand-side mechanisms—procurement standards, insur-
+ance and tort exposure, and ratings or other assurance pathways—as practical ways to raise baseline prac -
+tices where regulation lags. At the same time, these interviewees described coordination frictions: attempts to
+“generate consumer signals . . . only work if consumers have options,” and prior efforts to “solve the collective
+action problem . . . have not worked.” As a result, there is emphasis on intermediaries that aggregate demand
+(e.g., sectoral consortia, large deployers) and pair purchasing signals with credible third-party assurance—
+essentially to “do the labs’ work for them so they can take it on.”
+Many interviewees across sectors also expressed concern about labor displacement and downstream
+social effects. They anticipated concentrated shocks in particular sectors and regions and additional risks of
+wage pressure, job loss, and service-delivery strain. Several argued that workforce transition planning and
+community-level support should be treated as core elements of AI risk management rather than discretion -
+ary corporate social responsibility. One interviewee noted that the objective is to ensure “human thriving,”
+adding that organizations “need a level of human thriving to have a functional business model.”
+A number of interviews referred to using operations to improve system safety. Interviewees stressed
+building good friction—permissioning, human-in-the-loop checks, and clear escalation routes that slow and
+instrument high-risk actions. Illustrative phrases included the following: “Throw up some wrenches . . . add
+some good friction . . . build [it] into operations,” “ask permission,” and “create friction between people and
+those who have power over technology.” Several also emphasized the importance of documented escalation:
+“Write down who can say yes, and when someone must say no,” and the need to “slow down the riskiest path-
+ways without stopping routine work.”
+Civil society capacity was characterized as energetic but fragmented and resource-constrained. One inter-
+viewee stated, “Funding is going down. Power is going down,” and recommended visible procedural steps
+to build legitimacy—“go for easy asks, build coalitions, outreach to media.” One interviewee underscored
+the role of public narratives and investigative journalism, akin to “the kinds of things we had around GMOs
+[genetically modified organisms],” in which “people like us don’t consume things like this” functioned as a
+norm-shaping refrain along with formal governance.
+These findings reflect perceptions and experiences reported by stakeholders rather than consensus esti -
+mates or causal claims. They are intended to inform subsequent analysis of feasible nonstate interventions
+and the conditions under which those interventions are most likely to be effective.
+Summary of Observations from RAND Games
+Across five runs of the Business and Civil Society exercises (June–December 2025; more than 70 partici -
+pants in the United States and United Kingdom), participants played themselves as leaders from business,
+civil society, philanthropy, academia, and adjacent sectors and responded to a two-turn crisis: an initial eco -
+nomic shock following the release of a frontier model, followed by a later turn featuring cascading infrastruc-
+ture disruption, degraded communications, and uncertain attribution. The games were designed to elicit the
+
+===== PDF_PAGE 24 =====
+Looking Beyond the Government’s Regulatory Toolkit
+14
+judgments, information needs, coordination challenges, and “no-regret” actions that become salient when
+events outpace normal governance rhythms.
+Several themes recurred consistently across sessions:
+• Pa
+rticipants treated frontier AI as simultaneously a national security risk and a social legitimacy crisis:
+Managing technical risk was viewed as inseparable from sustaining public cohesion, order, and pur -
+pose.
+• Pa
+rticipants repeatedly emphasized the risk of an economy without participation, arguing that eco -
+nomic stabilization and social resilience must be addressed together through visible, credible mecha -
+nisms that sustain livelihoods and meaning (including sense of purpose) during rapid labor displace -
+ment.
+• Le
+adership and narrative coherence were treated as decisive capabilities, particularly under conditions
+that included misinformation, deepfakes, and uncertainty. When communications degraded, partici -
+pants prioritized access to trusted voices and a coherent, repeated public account of what was happening
+and the actions that were being taken.
+•
+ Pa
+rticipants stressed that communication redundancy is a form of civil defense. They called for analog
+and offline modes of official communication and verification, paired with civil society institutions that
+can act as localized truth relays.
+•
+ A re
+curring diagnosis was that speed itself has become a governance variable: Decision cycles measured
+in weeks or months were seen as incompatible with cascading failures unfolding in hours. This drove
+demands for preauthorized triggers, predelegated authorities, and prebuilt coordination networks that
+can activate rapidly without improvisation.
+•
+ Fi
+scal policy (including new tax models and transition funds) was viewed as central to stability, but
+participants also noted that there were trade-offs between equity and innovation, which reinforced the
+value of designing “default” approaches before labor displacement accelerates.
+•
+ Pa
+rticipants converged on the need for cross-sector and international coordination mechanisms, includ-
+ing crisis hotlines and structured compacts, while also flagging a moral hazard: When essential techni -
+cal capabilities are concentrated in private hands, alignment requires reciprocal accountability rather
+than ad hoc bargaining in crisis.
+Some key issues shaped decisionmaking in the sessions. In backcasting discussions, participants returned
+to seven categories of issues that repeatedly determined what information they sought and what actions they
+prioritized: (1) economic transition, employment, and legitimacy; (2) communication collapse and narra -
+tive control; (3) governance speed and the shrinking decision window; (4) fiscal tools and balancing equity
+with innovation; (5) cross-sector and international coordination; (6) civil resilience and basic needs; and
+(7) agency, helplessness, and psychological readiness.
+The game-derived insights reinforce the need for nongovernmental action and were used, alongside the
+literature review and interviews, to help define a framework for business and civil society actors to envision
+roles and responsibilities they can play to help mitigate transformative AI risks.
+Analytical Framework: Emerging Roles for Business and Civil Society in
+Managing and Mitigating Risk
+A clear finding from the literature, our interviews, and the games is that business and civil society can play
+critical roles in transformative AI risk management and governance. By roles , we mean clusters of responsi-
+bilities and activities that these actors are well suited to perform because of their positions in the AI develop-
+
+===== PDF_PAGE 25 =====
+Looking Beyond the Government’s Regulatory Toolkit
+15
+ment and deployment life cycles, as well as in society. These roles emerged from our research as distinct but
+interlocking areas where action is both useful and feasible under existing conditions.
+We identify three roles for business and civil society actors. The first is managing technical and opera -
+tional risks: the work of ensuring that AI systems are built, tested, and deployed with adequate safeguards.
+The second is shaping market and business incentives: using procurement, investment, insurance, and indus-
+try norms to make safety a winning strategy. The third is supporting social stability and public trust: cush -
+ioning the workforce disruptions, community shocks, and legitimacy strains that transformative AI will gen-
+erate. The roles are distinct but reinforcing; for example, technical controls reduce the hazards that market
+mechanisms must price. In what follows, we describe in more detail the kinds of actions and responsibili -
+ties that actors across the AI ecosystem can take to mitigate safety and societal risks of transformative AI
+(Table 1).
+Before proceeding, three caveats merit emphasis. First, many of the measures that we highlight are not
+wholly novel. Frontier labs, deployers, and AI safety institutes already perform elements of rigorous pre
+-
+dep
+loyment testing, incident-sharing, and regulator-lab collaboration through bilateral memorandums. Our
+contribution is to generalize those practices beyond a small set of frontier actors, specify minimum baselines
+TABLE 1
+Actors and Possible Roles Across Business and Civil Society
+Actor Type Positioned to Lead On Minimum Baseline Actions Now
+Frontier developers and model
+providers
+• Mo
+del design
+• Ev
+aluation
+• Rele
+ase
+• Acc
+ess controls
+• Da
+ngerous-capability evaluations
+• Do
+cumented safety cases
+• Sta
+ged release
+• Us
+age controls
+• Inc
+ident logging
+• Bre
+ak-glass procedures
+Deployers and integrators • Us
+e-case governance
+• Mo
+nitoring
+• Hu
+man oversight
+• Inve
+ntory AI uses
+• Ri
+sk-triage use cases
+• Pr
+edeployment sign-off for
+consequential uses
+• Ove
+rride and escalation procedures
+Upstream infrastructure and
+dependency providers
+•
+ Su
+pply-chain resilience
+• Sys
+temic risk reduction
+• Re
+dundancy
+• Ve
+ndor security assessments
+• Acc
+ess controls
+Market intermediaries (e.g.,
+buyers, insurers, investors,
+auditors, associations)
+•
+ Dif
+fusing safety expectations through
+markets
+• Pr
+ocurement clauses
+• Due
+-diligence questionnaires
+• As
+surance requirements
+• El
+igibility criteria for coverage or
+investment
+Technical and research institutions • Ind
+ependent evidence generation and
+evaluation
+• Ex
+ternal testing
+• Be
+nchmarking
+• Red
+-teaming
+• In
+cident analysis
+Standards, professional, and
+accountability organizations
+•
+ Tr
+anslating norms into repeatable
+practice
+• In
+cident taxonomies
+• Check
+lists
+• Te
+mplates
+Worker, community, and service
+organizations
+•
+ De
+tecting downstream harms and
+supporting adaptation
+• Wo
+rkforce transition planning
+• Co
+mmunity resilience partnerships
+Public-interest, journalistic, and
+advocacy organizations
+•
+ Su
+rfacing harms
+• Re
+presenting affected groups
+• Sha
+ping expectations
+• Wa
+tchdog reporting
+• In
+cident documentation
+• Pu
+blic pressure for higher standards
+
+===== PDF_PAGE 26 =====
+Looking Beyond the Government’s Regulatory Toolkit
+16
+that are actionable for nonfrontier firms and civil society, and articulate how these practices can interface
+with government action.
+Second, not all recommended actions should be pursued at once. A practical way to sequence them is to
+distinguish among three layers of effort: minimum baseline actions that organizations can begin now with
+existing authorities and modest resources; coordinated sectoral actions that require shared standards, pooled
+infrastructure, or third-party verification; and enabling public policy actions that are likely to matter over
+time but depend on government participation. This sequencing matters because feasibility varies sharply
+across actor types. Smaller deployers will often need lightweight checklists, shared tools, and sectoral support
+before they can adopt more-demanding practices that might be appropriate for frontier developers, cloud
+providers, or large regulated enterprises.
+Third, none of these nongovernmental roles is a substitute for government action; rather, these roles bring
+down risk in the near term and inform smarter regulation in the longer term. Many interviewees and game
+participants expressed skepticism that governments will move quickly enough, which is why these nongov -
+ernmental efforts are so critical. Over the longer term, the aim is to have a system in which voluntary and
+market-driven measures work alongside formal oversight. Our analytic framework therefore also considers
+the interfaces to government for each role; that is, points at which private and civic initiatives can support
+and be reinforced by public policy.
+Role 1. Managing Technical and Operational Risks
+In this role, businesses take primary responsibility for preventing and controlling the technical risks of AI
+systems, serving as the first line of defense against accidents, misuse, or system failures. Civil society plays a
+complementary oversight role, offering external accountability, independent expertise, and pressure-testing
+of industry measures. The aim is to embed a culture of safety and accountability within companies develop -
+ing and deploying AI and to ensure that critical safeguards exist before external enforcement steps in.
+Companies developing and deploying AI are closest to where risks originate—in model training, system
+design, and real-world implementation. They have the knowledge and access needed to identify and mitigate
+issues, such as flawed training data, model vulnerabilities, or unsafe deployment contexts, before those issues
+lead to harm.
+Organizations need a first-line approach to AI risk because many of the most preventable harms arise
+where models are designed, trained, integrated, and deployed. Interviews and game observations highlight
+a spectrum of risks: ongoing, unevenly distributed harms in the near term, such as scams, nonconsensual
+imagery, and operational misuse, and concerns related to loss of control, concentration of power, and rapid
+cognitive delegation over the longer term. Practitioners also reported that intent is often outpacing capacity,
+especially at smaller deployers. What they described as good friction —permissioning, human-in-the-loop
+review, and clear escalation pathways—can slow the riskiest pathways without stalling routine work. At the
+same time, the governance expectations appropriate for a frontier model developer are not identical to those
+appropriate for a downstream adopter or resource-constrained organization. The level of formality should
+scale with capability, deployment context, and level of control over the system. Frontier developers, cloud
+and infrastructure providers, and high-risk deployers in such sectors as health, finance, and critical infra -
+structure should maintain distinct AI risk functions, formal escalation routes, and documented safety cases.
+Smaller deployers and downstream adopters should instead begin with a thinner baseline: named execu -
+tive ownership, an inventory of AI uses, use-case risk triage, human-override procedures for consequential
+applications, and access to external expertise through sectoral associations, auditors, insurers, or shared
+service providers. Observations from games also surfaced a crisis-readiness gap. One game mantra—“panic
+responsibly”—captures the need to move early where resilience compounds while avoiding brittle or perfor -
+mative responses. Taken together, these observations reinforce the case for auditable governance artifacts,
+
+===== PDF_PAGE 27 =====
+Looking Beyond the Government’s Regulatory Toolkit
+17
+pre- and postdeployment testing, confidential hazard reporting, and break-glass drills as standard operating
+practice, but with implementation scaled to actor type and risk.
+Key actions could include the following:
+• Bu
+ild internal governance and evaluation infrastructure. Organizations should right-size gover -
+nance for the risks they create or control. For frontier developers and high-risk deployers, this could
+mean formal board or executive oversight of AI risk, a defined risk appetite,
+57 independent second-line
+review, internal or external audit, 58 documented safety cases for high-impact systems, and clear disclo -
+sure and escalation protocols. For example, boards could mandate quarterly AI risk reports that include
+an inventory of existing AI systems, the extent of testing and validation each system has undergone, any
+incidents or near misses that have occurred, and mitigation status for identified issues. Organizations
+could also ensure that disclosure protocols are in place so that if a major AI incident occurs, the com -
+pany can communicate responsibly to stakeholders and possibly regulators. Putting AI on the board’s
+agenda will not fix all risks—any more than it has for cyber or financial risk—but building governance
+infrastructure does make it clearer who is responsible and helps ensure that AI safety is treated as a
+regular part of major business decisions. For smaller deployers, the minimum viable version is more
+feasible; that is, designate a responsible executive, maintain an inventory of existing AI systems and use
+cases, classify those uses by risk, require predeployment sign-off for consequential applications, and
+establish a documented override and incident-escalation process.
+Across sectors, trade associations, professional bodies, and standards organizations can lower imple-
+mentation costs by offering common templates for inventories, incident taxonomies, testing checklists,
+and model or application review forms. The goal is not bureaucratic uniformity but rather to ensure
+that organizations know what systems they are using, what risks those systems create, who is account -
+able for those systems and their performance, and what evidence is required before deployment or
+scale-up.
+High-risk AI systems should undergo predeployment testing and postdeployment monitoring.
+Many frontier developers already conduct some combination of internal red-teaming, staged releases,
+and external security testing. The step that we propose is to turn these ad hoc practices into an audit -
+able minimum standard: tying tests to explicit go or no-go criteria, documenting those tests as part of
+a safety case, and extending them beyond a handful of labs to any actor deploying models that could
+plausibly generate systemic risk. A structural caveat applies: Predeployment evaluations face recog -
+nized adequacy limits. General-purpose models can exhibit emergent behaviors following deployment
+that were not detectable during testing, and evaluation protocols can be gamed by sufficiently capa -
+ble systems.
+59 Given these limitations, a clean evaluation is a necessary but not sufficient assurance
+and should be paired with robust postdeployment monitoring and the operational capacity to rapidly
+update or retract systems.
+60
+57 Cibralic et al., 2025.
+58 Schuett, 2025. For more of the Three Lines of Defense model, see Institute of Internal Auditors, The Three Lines of Defense
+in Effective Risk Management and Control , January 2013.
+59 Yoshua Bengio, Stephen Clare, Carina Prunkl, Maksym Andriushchenko, Ben Bucknell, Malcolm Murray, Shalaleh Ris -
+mani, Conor McGlynn, Nestor Maslej, Philip Fox, et al., International AI Safety Report 2026 , February 2026; Anita Rao, Drew
+Keller, Neha Kalra, Ryan Steed, Kweku Kwegyir-Aggrey, Kevin Klyman, Diane Staheli, and Stevie Bergman, Challenges to the
+Monitoring of Deployed AI Systems , Center for AI Standards and Innovation, National Institute of Standards and Technology,
+NIST AI 800-4, updated March 18, 2026.
+60 The Center for AI Standards and Innovation at the National Institute of Standards and Technology is exploring ways to
+improve postdeployment monitoring of AI systems and is a strong partner for industry actors interested in learning more
+
+===== PDF_PAGE 28 =====
+Looking Beyond the Government’s Regulatory Toolkit
+18
+• Establish incident ‑ and hazard ‑re porting mechanisms. AI governance will remain reactive unless
+organizations can report and learn from incidents and near misses in a structured way. In the near term,
+sector-specific reporting channels—whether through industry consortia, professional bodies, insurers,
+or trusted third-party organizations—can help firms share lessons on failures, misuse patterns, and
+unsafe model behavior. But private reporting alone is unlikely to be sufficient. Insurers may collect
+incident information across policyholders, but there are structural reasons to be skeptical that they will
+voluntarily pool or publish those data.
+61 NGO-led databases are valuable for transparency but often
+under-capture near misses and lack the operational detail needed for technical learning.
+Over time, governments likely will need to facilitate or mandate standardized disclosure for at least
+some categories of serious incidents. The history of cyber insurance is instructive here: despite years
+of voluntary data-sharing initiatives among insurers and information-sharing and analysis centers, it
+took government intervention through breach notification mandates and regulatory guidance to gen -
+erate the data infrastructure that the market needed to have the information to price risk credibly. AI
+might follow a similar trajectory. A promising intermediate model would be a voluntary, anonymized
+reporting mechanism supported by a public-interest or government-backed institution—analogous to
+aviation near-miss systems—that protects reporters while enabling cross-organizational learning.
+A model worth examining specifically is the National Aeronautics and Space Administration’s Avi -
+ation Safety Reporting System,
+62 which has demonstrated for decades that a government-administered,
+confidentiality-protected, nonpunitive reporting system can generate the near-miss data that markets,
+on their own, do not produce. The National Institute of Standards and Technology would be a natural
+institutional home for an analogous AI safety reporting system, consistent with recommendations from
+the Federation of American Scientists.
+63 Industry-led solutions have worked in some cases—the Insti -
+tute of Nuclear Power Operations achieved remarkable safety improvements in commercial nuclear
+power through a member-owned confidential reporting structure
+64— but these required strong exter-
+nal pressure to establish, and they represent exceptions rather than the norm.
+• In
+vest in safety research and tools. Many AI risks (especially frontier risks) are systemic, cutting across
+organizations; no single company can fully address them in isolation. Our interviews and games repeat-
+edly raised the theme that certain safety solutions should be developed collaboratively as public goods.
+Examples include methods for adversarial testing of AI models, libraries of known vulnerabilities and
+corresponding mitigations, and standard benchmarks for evaluating model behavior on safety-relevant
+dimensions.
+(National Institute of Standards and Technology, “Center for AI Standards and Innovation (CAISI),” webpage, undated).
+61 Incident intelligence is a competitive asset, and sharing it erodes the informational advantage that allows a skilled insurer
+to price risk more accurately than rivals. See Daniel Schwarcz and Josephine Wolff, “The Limits of Regulating AI Safety
+Through Liability and Insurance: Lessons from Cybersecurity,” Fordham Law Review , 2026.
+62 National Aeronautics and Space Administration, “Aviation Safety Reporting System (ASRS): Program Briefing,” webpage,
+undated.
+63 John Croxton, David Robusto, Satya Thallam, and Doug Calidas, “Message Incoming: Establish an AI Incident Reporting
+System,” Federation of American Scientists, September 26, 2024.
+64 John E. Gudgel, “Insurance and the Public–Private Management of Risk at US Commercial Nuclear Power Plants,” Risk
+Management and Insurance Review , Vol. 26, No. 4, Winter 2023; Cristian Trout, “Liability and Insurance for Catastrophic
+Losses: The Nuclear Power Precedent and Lessons for AI,” Generative AI and Law Workshop at the International Conference
+on Machine Learning , 2024.
+
+===== PDF_PAGE 29 =====
+Looking Beyond the Government’s Regulatory Toolkit
+19
+A historical analogy is the creation of the Common Vulnerabilities and Exposures (CVE) database
+in cybersecurity, which provides a shared index of software vulnerabilities across the entire industry. 65
+In AI, one could imagine a shared repository of “known dangerous capabilities” or scenario playbooks
+for AI failure modes. Similarly, large-scale red-team exercises or challenges could be run jointly by
+multiple labs or with external experts, pooling knowledge on how to break (and thereby fix) advanced
+models. Industry consortia, academic partnerships, and philanthropic funding can support these pre -
+competitive efforts. The benefit is twofold: It lowers the cost barrier for smaller firms to implement
+safety (because tools and best practices are openly available), and it creates uniform expectations so
+that cutting corners becomes evident. To prevent this collaborative approach from being mere optics,
+there should be external validation of its outputs—e.g., academic peer review of shared safety tools
+and agreed metrics to track adoption (so one can see if, say, 90 percent of leading AI firms have imple -
+mented the top ten safety practices).
+•
+ Es
+tablish “break‑gl
+ass” safety controls and rehearsals. For AI systems deployed in high-risk contexts,
+organizations could predefine emergency measures—the equivalent of fire alarms and extinguishers.
+This could include identifying specific triggers or red flags that would warrant halting an AI system
+(for instance, abnormal behavior that crosses a threshold) and assigning clear decision rights for who
+can pull the plug. Possible actions in a break-glass plan might be activating a capability throttle (limit -
+ing the AI’s operation to a safe mode), deploying a kill switch to shut it down or sever network access,
+rolling back to a known safe version of a model, or limiting application programming interface (API)
+rates if misuse is detected.
+66
+These plans should exist not only on paper but be rehearsed, much like disaster drills. Teams could
+simulate a scenario in which the AI goes awry and practice the shutdown or containment procedure.
+Additionally, it could be useful to maintain tamper-evident logs and conduct postincident reviews
+whenever these controls are triggered to learn and improve for the future. A culture of safety drills will
+improve readiness for events that today might seem unlikely but could have significant consequences if
+they catch organizations unprepared.
+•
+ Se
+cure the AI supply chain and critical infrastructure. Transformative AI relies on complex infra -
+structure, from cloud computing data centers and specialized AI chips to the integration of AI systems
+into such critical domains as health care, finance, energy, and transportation. A failure or compromise
+in these areas could have cascading effects.
+Participants in our study pointed to such scenarios as an AI system widely used for electric grid
+control failing unpredictably, or a malicious actor using AI to disable cloud infrastructure. The analogy
+was made to the 2003 Northeast U.S. blackout, in which a minor technical issue cascaded into a mas -
+sive power outage.
+67 To guard against such systemic failures, businesses should harden their AI supply
+chains and infrastructure. This includes ensuring redundancy (no single points of failure in cloud ser -
+vices), rigorous vendor security assessments (because many AI systems incorporate third-party models
+or datasets), and access controls to prevent unauthorized manipulation of AI models (such as by insider
+threat or external hacking).
+65 CVE Program, “Overview: About the CVE Program,” webpage, undated; MITRE, “CVE Program Celebrates 25 Years of
+Impact in Cybersecurity,” news release, October 22, 2024.
+66 Whether advanced AI systems can reliably be interrupted or constrained is, itself, a technically contested question. Some
+literature on corrigibility suggests that sufficiently capable systems might develop instrumental incentives to resist modifica -
+tion or shutdown. See Nate Soares, Benja Fallenstein, Stuart Armstrong, and Eliezer Yudkowsky, “Corrigibility,” AAAI Work‑
+shops: Workshops at the Twenty‑Ni
+nth AAAI Conference on Artificial Intelligence , 2015.
+67 U.S.–Canada Power System Outage Task Force, Final Report on the August 14, 2003 Blackout in the United States and
+Canada: Causes and Recommendations , April 2004.
+
+===== PDF_PAGE 30 =====
+Looking Beyond the Government’s Regulatory Toolkit
+20
+Leading AI firms and cloud providers could also collaborate on contingency planning—for instance,
+agreeing on fallback procedures if a widely used AI service needs to be swiftly taken offline for safety
+reasons. From the civil society side, independent watchdogs could monitor concentration risks (e.g.,
+if too much critical AI capability resides in one or two companies) and campaign for transparency
+around infrastructure safety. In other high-risk industries, NGOs have played a role in monitoring
+facilities (e.g., groups that keep tabs on nuclear plant safety). A similar approach could be applied where
+third-party auditors conduct AI infrastructure audits to ensure that, for example, hospitals using AI
+diagnostics have manual override processes or that autonomous vehicle networks have fail-safes if
+cloud connectivity is lost. This external check reinforces industry efforts and provides public reassur -
+ance that critical systems will not all collapse because of an AI glitch or cyberattack.
+Barriers vary by sector. Regulated sectors already possess compliance, vendor-management, and
+continuity-planning functions that can absorb some of this work. By contrast, smaller firms may lack
+both leverage over upstream vendors and the internal expertise to evaluate AI supply-chain risks. For
+those actors, a realistic first step could be to adopt sector-issued supplier questionnaires, minimum
+contractual requirements, and contingency plans for rollback or manual fallback rather than attempt -
+ing bespoke supply-chain assurance from scratch.
+Conditions for success: For Role 1 initiatives to make AI safer, broad adoption and sincerity are key. One
+risk is fragmentation—if only a few leading companies implement strong internal governance while others
+(especially smaller start-ups) do little, then significant portions of AI activity remain vulnerable. Collabora -
+tion and capacity-building are needed to spread best practices across the industry, possibly through open-
+source toolkits or industry training programs for AI safety management.
+Another concern is dominance by large firms. If only the biggest players shape the standards (even vol -
+untarily), it could sideline smaller innovators or lead to “fox guarding the henhouse” situations. Involvement
+of nonindustry actors, such as academia, standards bodies, or civil society, in designing frameworks can
+mitigate this concern. Safety-washing was explicitly cautioned against by interviewees—companies might
+create safety boards or publish AI principles as public relations exercises without changing actual behavior.
+To counter this, internal measures should be paired with transparency and external auditability. Civil soci -
+ety can play a watchdog role. For example, if a company claims to have a robust risk management process,
+NGOs or journalists might later inquire about a known incident and how the company’s process handled it.
+If it emerges that the incident was ignored, the gap becomes public. Finally, incentives still matter even for
+voluntary safety; executives need to see that good AI governance aligns with business success (or at least, bad
+governance aligns with business risk). The next role addresses how to create those incentives.
+Role 2. Shaping Business and Market Incentives
+This role involves using business, market, and network levers to encourage responsible AI behavior across
+the private sector, especially in the absence of immediate regulation. Governments hold ultimate regulatory
+power (the big stick), but businesses and civil society can craft interim carrots and sticks through contractual
+requirements, industry standards, financial signals, and partnerships. The premise is that by altering the
+cost-benefit equation—making it in companies’ economic and reputational interest to prioritize safety—one
+can accelerate the adoption of safeguards.
+Interviewees consistently pointed to tools on the demand side—procurement requirements, insurer and
+investor scrutiny, and credible ratings or assurances—as practical ways to raise minimum safety standards.
+Game discussions complemented this with concrete no-regret moves: independent security evaluations of
+leading labs, shared playbooks and standardized definitions for loss-of-control events, and decentraliza -
+tion to reduce single points of failure. These insights suggest that safety incentives are more likely to work
+
+===== PDF_PAGE 31 =====
+Looking Beyond the Government’s Regulatory Toolkit
+21
+when buyers pool their purchasing power, compliance can be independently checked, and smaller firms have
+affordable ways (for example, open tools or subsidized evaluations) to meet the same standards.
+Key actions could include the following:
+• In
+tegrate safety into procurement and investment decisions. Procurement was identified as one of
+the strongest levers. Large organizations that purchase or deploy AI solutions—whether they are cor -
+porations buying AI software, government agencies contracting AI systems, or even dominant tech
+platforms sourcing AI models—can set requirements in contracts that vendors must meet certain safety
+criteria. For example, a financial services firm procuring an AI risk-management tool could require the
+vendor to provide a model risk assessment and an audit report from an independent evaluator. If major
+customers in finance, health care, or defense start doing this, AI suppliers could begin to treat those
+safety steps as mandatory for winning business.
+There is historical precedent. The U.S. military and the National Aeronautics and Space Adminis -
+tration, in the early aerospace industry, used procurement standards to greatly improve aviation safety:
+Contractors had to meet reliability benchmarks to get contracts.
+68 At the time of this writing in early
+2026, governments are attempting to use similar strategies for cybersecurity (e.g., requiring cloud pro -
+viders to adhere to Federal Risk and Authorization Management Program [FedRAMP] security con -
+trols to sell to government).
+For AI, individual companies—as well as a consortia of buyers—could form buyers’ clubs to pool
+their market power and demand safer AI products. 69 For instance, a consortium of hospital systems
+could agree not to buy any AI diagnostic tool that has not undergone a robust clinical safety evaluation.
+Civil society can assist by ensuring that these efforts remain inclusive and fair—for example, watchdog
+groups might monitor that a buyers’ consortium does not become a closed cartel that benefits only its
+members or raises entry barriers.
+70
+On the investment side, venture capital and institutional investors are increasingly attentive to AI
+governance. Investment due diligence can include an AI safety checklist, and investors might favor
+companies that proactively implement risk management (seeing it as indicative of a well-run company
+that avoids scandals). Some interviewees suggested that insurance underwriters and institutional inves-
+tors could even team up to create a rating system for AI governance—akin to credit ratings or environ-
+mental, social, and governance (ESG) ratings—that scores companies on their safety practices. This
+would convert otherwise invisible governance quality into a tangible factor in business transactions.
+Although the standardization problems with ESG offer a cautionary tale—companies self-report
+on inconsistent metrics, raters apply different weighting schemes that produce different scores for the
+68 Department of Defense Standard Practice MIL-STD-882E, System Safety , incorporating change 1, U.S. Department of
+Defense, September 27, 2023; National Aeronautics and Space Administration, Reliability Program Requirements for Aeronau ‑
+tical and Space System Contractors , NHB 5300.4(1A-1), January 1987.
+69 World Economic Forum, Unlocking Public Sector AI: AI Procurement in a Box: AI Government Procurement Guidelines ,
+toolkit, 2020; Office for Artificial Intelligence, Guidelines for AI Procurement , United Kingdom government guidance, June 8,
+2020.
+70 One structural constraint deserves explicit acknowledgment: Coordinated purchasing refusals by competing buyers can
+constitute a group boycott under Section 1 of the Sherman Act, depending on market structure and exclusionary effect.
+Buyers’ club arrangements should be designed with antitrust counsel from the outset, and particular attention should be paid
+to membership openness, transparent and objective criteria, and scope limitations that target safety standards rather than
+competitor exclusion. Moreover, standards used in procurement should be transparent and open so that smaller AI produc-
+ers know how to comply and civil society can critique or improve the criteria (U.S. Code, Title 15, Section 1, Trusts, Etc., in
+Restraint of Trade Illegal; Penalty [Sherman Act]).
+
+===== PDF_PAGE 32 =====
+Looking Beyond the Government’s Regulatory Toolkit
+22
+same firm, and governance quality is inherently difficult to measure through observable proxies 71—
+they also point to design principles that, if adopted, could help make AI safety ratings better. Ratings
+should be anchored to specific, independently verifiable practices rather than self-reported governance
+claims; methodologies should be standardized enough that different evaluators applying the same cri -
+teria reach comparable conclusions;
+72 and the institutions that develop and maintain ratings should be
+structurally independent of the firms they evaluate. There should also be some accountability mecha -
+nism if they certify false or misleading statements.
+• De
+velop liability and insurance frameworks that reward safety. Liability and insurance can help inter-
+nalize AI risk, but their effects will depend on market structure and information availability. In the near
+term, the most plausible role for insurance is not to solve all frontier AI risks but to reward observable
+controls in enterprise deployments, including logging and traceability, human-override mechanisms,
+secure model access, incident response plans, and independent evaluation for high-consequence uses.
+Firms that can demonstrate these practices could obtain coverage on better terms; firms that cannot
+could face exclusions, higher deductibles, or higher premiums.
+Over time, stronger liability rules and mandatory insurance in selected applications might become
+appropriate, but it would be premature to assume that insurance markets will spontaneously solve
+coordination or catastrophe-risk problems on their own. In some domains, government might need
+to catalyze the market by, for example, clarifying liability, standardizing incident reporting, or signal -
+ing which forms of third-party assurance will count as evidence of due care. For smaller firms, pooled
+insurance mechanisms or sectoral mutuals might prove more feasible than bespoke coverage. The core
+principle is to align the cost of AI risk more closely with those who create or control it so that invest -
+ments in safety become economically rational rather than purely voluntary.
+In interviews, participants noted that insurers might require evidence of verifiable safety measures.
+This creates a financial reward (lower insurance costs or even the ability to get insured at all) for doing
+the right things.
+73 Civil society can contribute by advocating that insurance and liability solutions do
+not exclude smaller players or lead to unfair outcomes. For example, if only big companies can afford
+the best safety certifications to lower their insurance, smaller start-ups might be priced out of mar -
+kets. One remedy is pooled insurance or subsidized evaluations for smaller firms, possibly with phil -
+anthropic support. Additionally, NGOs and consumer advocates can push for liability reforms (some
+interviewees mentioned relevant ideas, such as an “AI whistleblower protection” law or state-level liabil-
+ity tweaks) to make it easier for harmed parties to get redress, which, in turn, pushes companies toward
+prevention. The key principle is aligning the costs of AI risks with those who create the risks so that
+safety investments become a rational choice.
+Several near-term constraints on liability-based mechanisms deserve acknowledgment. First, exist -
+ing U.S. tort doctrine makes harm attribution in AI supply chains difficult. The combination of multi -
+party development pipelines, the challenge of establishing proximate causation for probabilistic model
+71 Florian Berg, Julian F. Kölbel, and Roberto Rigobon, “Aggregate Confusion: The Divergence of ESG Ratings,” Review of
+Finance, Vol. 26, No. 6, November 2022.
+72 Notably, Berg, Koelbel, and Rigobon (2022) find that ESG rating divergence stems less from data scarcity than from dif -
+ferences in conceptual scope—what counts as “governance quality” varies across raters in ways that produce near-zero cross-
+rater correlation for governance dimensions even when financial risk scores converge. AI safety ratings face an analogous
+challenge: “Safety” is underspecified enough that different evaluators may be measuring different constructs, and this prob -
+lem should be addressed through shared operationalization before any rating system is launched. For more, see Berg, Kölbel,
+and Rigobon, 2022.
+73 Cristian Trout, “Healthy Insurance Markets Will Be Critical for AI Governance.” Lawfare blog, December 17, 2025; Risk &
+Insurance, “Cyber Insurance Provides Both Carrot and Stick for Cybersecurity,” July 11, 2024.
+
+===== PDF_PAGE 33 =====
+Looking Beyond the Government’s Regulatory Toolkit
+23
+outputs, and the statutory protections that could limit platform liability mean that injured parties face
+significant structural barriers to recovery. Second, the domestic political environment has contracted
+the near-term likelihood of federal liability reform. The Trump administration rescinded the prior
+executive framework on AI safety standards and has signaled opposition to AI-specific federal man -
+dates.
+74 It has also moved to limit interstate coordination on AI governance, reducing the de facto fed -
+eral standard that state coalitions might otherwise approximate. Third, AI insurance markets remain
+nascent. Underwriters lack actuarial data to price AI-specific risks confidently, particularly for frontier
+model behavior, which means that premium incentives are likely to be modest and concentrated in
+enterprise applications with well-understood risk profiles. These constraints do not negate the longer-
+term importance of liability and insurance as governance levers, but they set a more realistic near-
+term baseline. The most achievable early steps operate within existing legal authority: contractual war -
+ranties and indemnification clauses in enterprise procurement; sector-specific liability frameworks in
+already-regulated domains, such as health care and financial services, in which existing law already
+assigns duties of care; and targeted state-level tort reforms in jurisdictions where the political condi -
+tions permit.
+•
+ Fo
+rm multistakeholder coalitions for norms and standards (including internationally). Many AI
+risks are global—an unsafe model deployed on the internet can reach users worldwide, and competi -
+tive pressures span borders. Waiting for all governments to agree on treaties may be slow. Instead,
+coalitions of companies, NGOs, and experts can forge interim norms. As we discussed in the literature
+review, multistakeholder coalitions can fill governance gaps where no single government can impose
+rules. The actionable step is to move from general norm-setting to specific commitments. Companies
+and civil society could jointly agree on evaluation protocols for any model above a certain capability
+threshold and commit to not release models that fail certain tests. Another concrete area is to facilitate
+cross-border information-sharing on AI incidents, which could be managed by a trusted network of
+organizations across the globe.
+Over time, these private and civil norms often influence or become incorporated into public interna-
+tional frameworks. For instance, if a de facto industry standard for AI auditing emerges and is adopted
+by dozens of major firms globally, regulators might later codify that standard or at least recognize com-
+pliance with it as evidence of due care. Civil society networks also help bring voices from the Global
+South and other underrepresented regions into what might otherwise be a club of big tech firms. This
+inclusivity is crucial to avoid a governance gap where only a few countries’ perspectives shape AI norms.
+Conditions for success: To shape incentives effectively, collective action is needed—one buyer or one
+insurer alone has limited sway, but coordinated groups can shift market expectations. This means forming
+alliances (e.g., buyers’ consortia, multicompany pledges) and possibly getting some public-sector endorse -
+ment (even if not a mandate) to give efforts weight. Another condition is verification. Incentives work only
+if claims of safety can be trusted. That is why third-party assessments and certifications become important:
+They provide the credible signal that, for example, a vendor meets the procurement criteria or a firm deserves
+the insurance discount.
+Civil society and academia can serve as the independent evaluators or standard-setters to ensure the
+integrity of these incentive structures. Additionally, a conscious effort must be made to include smaller com-
+74 Executive Order 14179, “Removing Barriers to American Leadership in Artificial Intelligence,” Executive Office of the
+President, January 23, 2025, which rescinded Executive Order 14110, “Safe, Secure, and Trustworthy Development and Use
+of Artificial Intelligence,” Executive Office of the President, October 30, 2023. The January 2025 order directed agencies
+to review and revise or rescind AI-related guidance that is inconsistent with its policy of removing “undue burdens” on AI
+development.
+
+===== PDF_PAGE 34 =====
+Looking Beyond the Government’s Regulatory Toolkit
+24
+panies and start-ups. If only large corporations can afford compliance, we risk a two-tier system. These
+voluntary or market-driven measures should ideally create a baseline that makes eventual regulation easier
+and more evidence-based, because by the time laws are written, there is already practical knowledge of what
+works (or what does not).
+Role 3. Supporting Social Stability and Public Trust
+This role addresses the societal and human impacts of transformative AI. Recognizing that AI’s risks are not
+only technical malfunctions but also economic, institutional, and civic disruptions, this role calls on busi -
+nesses and civil society to cushion shocks and to also help shape how societies could adapt. That includes
+mitigating labor-market upheaval, sustaining community resilience, maintaining informed public discourse,
+and ensuring that the benefits of AI are broadly shared. But it should not be understood as merely backfilling
+government capacity or repairing damage after the fact. Its broader purpose is to help shape a more durable
+social contract around AI: What forms of work, participation, and local institution-building remain essen -
+tial? What new forms of contribution and human agency should be cultivated? And how can legitimacy be
+maintained during periods of rapid technological change? If Role 1 is about safety engineering and Role 2
+about economic and market levers, Role 3 is about ensuring that adaptation to AI remains pro-human, pub -
+licly intelligible, and socially legitimate.
+75 (Legitimacy here operates in two complementary senses: input
+legitimacy and output legitimacy. Both matter. Governance that is perceived as procedurally inclusive but
+ineffective will erode trust just as governance that produces good outcomes through opaque processes will
+prove fragile.
+76)
+Participants in our research widely agreed that the societal consequences of AI, such as job losses, inequal-
+ity, erosion of trust, could be as destabilizing as any technical failure. We have already seen early signs,
+including artists protesting AI-generated content that threatens their income, educators worried about AI in
+schools, and workers in some sectors facing replacement by automation. If such issues are left unaddressed,
+they can lead to political backlash, social unrest, or the outright rejection of potentially beneficial technolo -
+gies. Businesses have a direct stake here. An AI company’s deployment could be halted by public outcry or its
+reputation ruined by perceptions of callousness. Civil society groups, for their part, are often on the ground
+helping those who fall through the cracks. In previous technological revolutions, proactive measures, such as
+the creation of pension plans or retraining programs during industrialization, helped ease such transitions
+and avoid worst-case social conflict. The same logic applies to AI. Nongovernmental actors cannot solve
+everything—broad safety nets and education policy are governmental domains—but these actors can pilot
+solutions, fill gaps, and advocate for communities.
+Key actions could include the following:
+•
+ Pl
+an and support workforce transitions. Businesses that develop or deploy advanced AI could support
+the employees disrupted by these technologies. This could mean investing in reskilling and upskilling
+programs, creating apprenticeship or redeployment pathways, and even providing financial cushions
+(e.g., severance, scholarship funds) for workers displaced by AI. For example, if a company is rolling out
+an AI system that will automate certain routine jobs, it could concurrently fund training for the employ-
+ees that used to do those jobs to move into new roles, either in the company or in growing fields externally.
+75 RAND has published on AI and the social contract. See Benjamin Boudreaux and Beba Cibralic,  Artificial Intelligence and
+the Social Contract: Foundations for Social and Economic Policy Under Technological Transformation,  RAND Corporation,
+PE-A3888-1, August 2025.
+76 For more on legitimacy, see Vivien A. Schmidt, “Democracy and Legitimacy in the European Union Revisited: Input,
+Output and ‘Throughput,’” Political Studies , Vol. 61, No. 1, March 2013.
+
+===== PDF_PAGE 35 =====
+Looking Beyond the Government’s Regulatory Toolkit
+25
+Some tech firms have announced initiatives along these lines, but their impact will be greater if
+they become standard practice. A lesson from prior automation waves, such as the downturn in man -
+ufacturing jobs, is that transition support must be timely, adequately funded, and tailored to local
+needs. Retraining programs have failed when they are too generic or under-resourced. Research from
+the past five years on import-competition shocks and displaced-worker policy suggests that region -
+ally concentrated labor-market shocks leave durable local scarring, even when aggregate employment
+later rebounds. This research also finds that broad, place-blind adjustment measures are insufficient
+on their own; effective responses require place-based interventions tied to local labor demand, institu -
+tional capacity, and complementary investments in regional infrastructure and human capital.
+77
+Civil society organizations, such as local nonprofits, worker advocacy groups, and educational insti-
+tutions could play a role in helping to make these efforts effective. They can reach vulnerable and
+marginalized workers who might be overlooked and ensure that such programs are accessible (e.g.,
+considering language, location). Without credible transition plans, civil society interviewees warned,
+communities will resist AI projects, something that has already been seen in localized bans or protests
+against certain technologies and, relatedly, the creation of new data centers.
+78
+• Use philanthropic capital to build and support AI safety and ethics ecosystem. There are critical
+f
+unctions that might not have a business model or government support yet, which philanthropic orga -
+nizations, foundations, charitable organizations, and high-net-worth donors could seed. For instance,
+funding could support civil society participation in global forums, making sure that diverse voices can
+attend important meetings on AI governance). Another ripe area is funding training programs or fel -
+lowships to grow the community of AI safety auditors, insurers, and technical experts. Philanthropy
+can also act quickly to support research and interventions on labor and societal impacts—for example,
+by sponsoring pilot programs for community resilience in areas likely to be hit by automation, which
+governments can later scale up if shown effective. By filling these gaps, philanthropists can help catalyze
+and support the safety and societal infrastructure that the market alone might not build—and that gov -
+ernment is currently not investing in. One interviewee remarked that in the current AI boom, “funding
+is going down [for civil society], power is going down,” meaning a few companies are racing ahead and
+nonprofits struggle to keep up; philanthropic funding injections can level that playing field.
+•
+ St
+rengthen community ‑l
+evel resilience. Civil society is often the fabric that holds communities
+together during times of change. Churches, community centers, local NGOs, and mutual aid networks
+step in when formal systems are strained. These institutions need to be empowered to help handle AI-
+related disruptions—whether an influx of unemployed people in a town because of factory automation
+or a wave of AI-driven scams targeting the elderly in a community. Businesses can support this by pro -
+viding funding or partnerships to local organizations—for example, by funding a community technol -
+ogy liaison in areas where they deploy AI.
+77 David Autor, David Dorn, Gordon H. Hanson, Maggie R. Jones, and Bradley Setzler, “Places Versus People: The Ins
+and Outs of Labor Market Adjustment to Globalization,” National Bureau of Economic Research, NBER Working Paper
+No. 33424, last updated June 2025; Organisation for Economic Co-operation and Development, “Place-Based Policies for Dis -
+placed Workers: Lessons from Past Economic Disruptions,” OECD Local Economic and Employment Development (LEED)
+Papers, No. 2025/04, June 30, 2025b; Organisation for Economic Co-operation and Development, Place
+‑B
+ased Policies for the
+Future, May 19, 2025a.
+78 For further exploration of these themes, see Sam Manning’s research. Manning’s research spans the measurement of AI’s
+labor market and economic impacts and the design of policies to ensure that advanced AI fosters widespread economic pros -
+perity, including work on AI exposure and worker adaptive capacity, international benefit-sharing mechanisms, and the
+implications of frontier AI model development for labor and inequality (Sam Manning, homepage, undated).
+
+===== PDF_PAGE 36 =====
+Looking Beyond the Government’s Regulatory Toolkit
+26
+Community-based initiatives can also help track the local effects of AI, such as job losses, changes
+in service quality, and incidents, and feed information to both companies and policymakers so that
+emerging harms are caught early. Imagine a city government, local university, and civil society coalition
+setting up an AI impact task force that meets regularly to review how AI is affecting the city’s residents
+and economy. If the task force identifies, for example, a new AI service that is causing misinformation
+to spread in a neighborhood, it could notify both the company and public agencies, leading them to
+intervene. This is analogous to how some communities have environmental monitoring committees
+near industrial sites. Additionally, community resilience could involve having plans for AI-related crises
+(which could range from a mass deepfake disinformation incident to an AI-caused critical infrastructure
+failure). Local emergency preparedness could integrate scenarios involving AI failures or misuse, and
+here, civil society (similar to volunteer networks and local media) is crucial for effective crisis response.
+•
+ Sh
+ape public narratives and inform communication. In any transformative technological shift, con -
+trolling the narrative can influence outcomes as much as controlling the technology. AI has already
+been subject to hype and fear in media. Misinformation about AI or well-founded concerns left unad -
+dressed can drive public panic or poor decisions in a crisis. A striking quote from one game was, “Who-
+ever controls the communication environment controls the crisis.” Civil society can serve as a trusted
+intermediary to communicate about AI risks and benefits in plain language. For example, respected
+NGOs or community leaders can translate technical issues (such as what it means if an AI system is “out
+of control”) into terms that make sense for the general public, thus preventing rumors.
+During the coronavirus pandemic, partnerships with local community leaders improved trust in
+public health measures compared with government messaging alone. Similarly, during an AI inci -
+dent (say, a false alarm of an AI causing some catastrophe), having pre-established communication
+channels—perhaps a coalition of AI companies, government agencies, and civil society representatives—
+can ensure that there is consistent, calm messaging.
+•
+ Ad
+vocate for inclusive benefits and risk mitigation. Civil society and businesses could push the prin -
+ciple that those who bear the risks of AI should also share its benefits. If AI dramatically increases pro -
+ductivity or generates huge profits for a few firms, there could be channels, private or public, by which
+portions of those gains support the broader population. In the context of AI, some ideas on the table
+include windfall taxes or profit-sharing if an AI is extremely profitable, as well as commitments by AI
+companies to invest in public goods, including education and digital infrastructure, in proportion to
+their success.
+During the first game, participants explicitly raised questions: “Where is the money going, and
+shouldn’t winners reinvest locally at meaningful scale?” Businesses that are forward-looking might
+voluntarily set up AI benefit funds that channel a portion of AI-driven gains into community grants,
+worker training funds, or even universal basic income pilots. For instance, if an AI product replaces
+local journalism jobs, perhaps the company behind it could fund an independent journalism nonprofit
+to ensure that community information needs are still met. Or if an AI-driven automation saves a com -
+pany millions, a slice could go to a community college scholarship program for tech education.
+Conditions for success: Efforts under Role 3 will succeed if they are seen as legitimate, collaborative, and
+sustained. Token or one-off initiatives, such as AI ethics grants that are minor relative to a company’s impact,
+or public relations–heavy commitments that have little follow-through, will be rightly dismissed as window
+dressing. Partnerships should involve community input—for example, involving worker unions in design -
+ing retraining programs or involving local leaders in decisionmaking about how a community fund is spent.
+Measurement is also important. Companies could track and publicly report outcomes, such as how many
+workers they reskilled and how many got new jobs, to prove that these programs have teeth, and civil society
+
+===== PDF_PAGE 37 =====
+Looking Beyond the Government’s Regulatory Toolkit
+27
+can independently verify those outcomes. Another consideration is avoiding elitism. High-level discussions
+about reskilling or benefit-sharing must translate to tangible improvements in ordinary people’s lives. One
+interviewee phrased it pointedly: If these programs are “seen as symbolic or elite-driven, they will fail to
+build trust.”
+Business and Civil Society Interfaces to Government Action
+The three roles outlined in the prior section describe what business and civil society can do on their own
+authority: manage operational risks, shape market incentives, and support social stability. But these roles do
+not operate in a vacuum. In practice, some of the most important nongovernmental actions serve a dual pur-
+pose; they reduce risk directly and they compensate for gaps in government capacity or political will. Where
+regulation lags, procurement standards and incident-reporting systems do not merely complement public
+policy—they substitute for it. Where government preparedness is limited, community resilience efforts and
+workforce transition plans fill needs that public programs have not yet addressed. Over time, however, the
+aim is not permanent substitution but a working interface: Nongovernmental efforts generate evidence, test
+approaches, and build institutional capacity that can inform and accelerate smarter regulation when political
+conditions allow. The following are key ways in which these efforts connect to government action:
+•
+ Evi
+dence generation for smarter regulation: By instituting such practices as incident reporting, evalu-
+ation benchmarks, transparency reports, and audits (Roles 1 and 2), nongovernmental actors generate
+a wealth of real-world data on AI performance and failures. This evidence is useful for regulators. It
+allows agencies to move from speculative fears to concrete, measured understanding of AI risks. For
+example, if an industry-wide incident database reveals that near-loss-of-control events are happening
+with a certain frequency, regulators could home in on that class of models and mandate specific test -
+ing or safety requirements for them.
+79 If insurers’ data show that certain mitigations, such as having a
+human in the loop on critical AI decisions, dramatically reduce losses, that insight could be codified
+into standards or guidance. In environmental regulation, a precedent is how data from corporate self-
+monitoring of pollution later helped shape emissions rules.
+Already, we see small examples. The AI Incident Database, curated by NGOs, highlights which AI
+applications (e.g., face recognition, hiring algorithms) are causing the most reported harm; this infor -
+mation can help guide agencies on where to focus oversight. And the AI Risk Management Frame -
+work, developed by the National Institute of Standards and Technology, captures important insights
+from industries actors. Going forward, governments could actively partner in these learning efforts—
+possibly by providing funding for some of the infrastructure (for example, the National Science Foun -
+dation could fund an anonymized incident clearinghouse) and by paying attention to the findings in
+their rulemaking. This partnership ensures that when governments set binding rules, those rules are
+evidence-based and targeted to real risks rather than guesswork.
+•
+ Co‑reg
+ulatory models: One promising governance approach is co-regulation, in which industry stan -
+dards and codes of conduct operate in tandem with official regulation. In co-regulation, the govern -
+ment might endorse or recognize an industry-led standard as meeting regulatory requirements, essen -
+tially outsourcing some of the details to those closer to the technology while keeping a legal backstop.
+The EU’s General-Purpose AI Code of Practice illustrates this approach: Its chapters on transparency
+and copyright apply broadly to general-purpose AI providers, while its safety-and-security chapter tar -
+gets the most advanced systemic risk models with concrete risk-management commitments, creating an
+79 AI Incident Database, homepage, undated-b.
+
+===== PDF_PAGE 38 =====
+Looking Beyond the Government’s Regulatory Toolkit
+28
+interim compliance regime in advance of the AI Act’s full enforcement. In the United States, state-level
+developments, such as California’s Senate Bill 53 and New York’s RAISE Act, 80 both of which require
+frontier developers to publish safety frameworks and report critical incidents, are creating disclosure
+obligations that nongovernmental safety practices can directly feed into.
+•
+ Re
+gulatory sandboxes and innovation ‑en
+abling partnerships: Governments can also directly col -
+laborate with companies and civil society through regulatory sandboxes, pilot programs, or memoran -
+dums of understanding that allow controlled experimentation with new AI technologies. Early mem -
+orandums of understanding between leading labs and safety institutes demonstrate that structured
+regulator-lab access is feasible. It is worth exploring how these kinds of partnerships can be expanded,
+both in size and scale, between government and labs, as well as beyond the labs. For example, deployers
+of AI models in critical domains, such as finance and health care, could work with government to pilot
+safety testing of AI models in specific use-cases.
+A health care regulator might set up a sandbox in which a hospital and an AI company can deploy
+a novel diagnostic AI on a limited trial basis with certain guardrails—for example, extra monitoring,
+a safety review board oversight, and a requirement to share outcome data—even if formal approval
+processes are not yet fully defined for that kind of AI. In exchange for this regulatory flexibility, the
+company agrees to transparently share results and lessons learned with the regulator and perhaps the
+public. This way, rules can be co-developed based on actual pilot experience rather than abstract sce -
+narios.
+•
+ Ad
+dressing systemic and international challenges: There are areas in which even the best non -
+go
+vernmental efforts will not suffice and direct government action is needed, but the groundwork laid
+by those efforts helps inform and motivate that action. One such area is systemic risk mitigation. If a
+few AI models become so powerful or ubiquitous that their failure would be catastrophic (such as in an
+AGI scenario), governments might need to impose binding constraints, such as requiring licenses for
+certain safety levels before deployment. The data and norms from industry can guide what those con -
+straints should be. Another area is the concentration of resources. For instance, if cutting-edge AI is in
+the hands of only two giant firms with immense compute power, government might consider enforcing
+antitrust regulation or opening up access.
+The relationship runs in both directions. Public policy can make the roles described here more
+effective, providing safe harbors for incident reporting and the recognition of voluntary certifications
+or cofunding transition programs to lower barriers to adoption. But some of the actions that we recom-
+mend exist to fill gaps that government has left open. If governments were to establish mandatory dis -
+closure requirements, fund workforce transitions at scale, or set binding safety standards with adequate
+enforcement, the case for nongovernmental actors to take on those functions would diminish accord -
+ingly. That would be a success, not a loss. The purpose of this framework is not to define a permanent
+division of labor but to identify what nongovernmental actors can and should do and to generate the
+evidence and institutional capacity that better public policy may eventually require.
+80 California Senate Bill 53, Artificial Intelligence Models: Large Developers, September 29, 2025; New York State Senate Bill
+S6953A, An Act to Amend the General Business Law, in Relation to the Training and Use of Artificial Intelligence Frontier
+Models, December 19, 2025.
+
+===== PDF_PAGE 39 =====
+Looking Beyond the Government’s Regulatory Toolkit
+29
+Conclusion
+The evidence gathered in this report points to a consistent finding: Managing transformative AI requires
+action from business and civil society, not only from governments. The risks are technical and social, fast-
+moving and unevenly distributed, and they emerge where systems are designed, deployed, and used—thus,
+well within the reach of nongovernmental actors. The framework that we propose—managing technical and
+operational risks, shaping incentives through markets and networks, and supporting social stability and
+public trust—is intended to give actors across business and civil society a practical, structured way to identify
+what they can do now under existing legal and market conditions, without waiting for regulatory mandates
+to arrive.
+Progress in each role depends on building governance infrastructure that makes good practice routine
+rather than exceptional. That could include board-level oversight and documented safety cases inside firms;
+procurement criteria, assurance signals, and investor diligence across markets; and workforce transition
+planning and community partnerships in the social domain. These are not novel ideas in isolation; elements
+of these ideas are already being piloted across the ecosystem. However, they remain fragmented and ad hoc.
+The contribution of such a framework as this one is to generalize those practices, specify minimum baselines
+that are actionable across actor types, and identify where coordination among actors is needed to make indi-
+vidual efforts stick.
+We especially hope that actors who have not yet engaged directly with transformative AI risk will find in
+this framework a concrete entry point. Whether or not regulation catches up, the capacity that these actors
+build now will determine how well societies manage what is coming.
+
+===== PDF_PAGE 40 =====
+
+
+===== PDF_PAGE 41 =====
+31
+APPENDIX A
+Semistructured Interviews
+We conducted 15 semistructured interviews with stakeholders across sectors in mid-2025. Participants were
+selected via purposive sampling to cover a variety of perspectives relevant to AI governance outside govern -
+ment. Participants included senior managers at tech companies (e.g., responsible AI leads, product safety
+engineers), executives in sectors that are adopting AI (e.g., health care, finance) who deal with AI risk, lead -
+ers of AI-focused civil society organizations and think tanks, academics who focus on AI ethics, and former
+government officials who are now in private sector roles (e.g., a former cybersecurity official in a tech com -
+pany). Participants were recruited via direct outreach and professional referrals. Inclusion criteria empha -
+sized senior decisionmakers or SMEs with responsibilities related to AI development, deployment, or over -
+sight across business, civil society, and (for triangulation) selected government roles. We summarize the
+content of these interviews in Table A.1.
+Interviews lasted between 30 and 60 minutes, were not recorded, and were analyzed for key themes and
+insights. To encourage candor, we offered anonymity for specific quotes (hence, we cite quotes without attri-
+bution to individual names or organizations). Key emergent themes—such as the dual horizon of near-term
+versus existential AI concerns, the emphasis on demand-side incentives, and warnings about labor displace -
+ment and fragmentation of effort—are reflected in the report.
+The interview protocol covered such topics as perceived AI risks in the near versus long term, existing
+practices for managing AI risk in organizations, views on what industry or civil society could do beyond the
+status quo, dependencies on government action, and concerns about feasibility or unintended consequences
+of nongovernmental interventions.
+After introductory questions on the interviewee’s background, we asked, “(1) In your view, what are the
+most pressing risks arising from advanced AI in the next five years? Ten-plus years?” followed by “(2) How
+TABLE A.1
+Semistructured Interview Participants and Focus Areas
+Sector
+Total
+Participants Focus Areas (with counts and brief descriptions)
+Business 5 • Pr
+oduct safety (3): corporate AI governance, model assurance, and compliance
+practices
+• Fi
+nance (1): risk modeling and AI oversight in financial institutions
+• Na
+tional security (1): applications of AI in defense and intelligence contexts
+Civil society 7 • Hi
+gher education (2): academic governance, ethics, and research policy
+• Ad
+vocacy (1): nonprofit initiatives on AI accountability
+• Co
+nsulting (1): advisory roles on AI governance and risk management
+• He
+alth care (1): responsible AI in clinical settings
+• In
+ternational organizations (1): multilateral coordination on AI standards
+• AI s
+afety (1): independent safety research and public communication
+Government 3 • Cy
+bersecurity (1): resilience and threat mitigation in digital infrastructure
+• Loc
+al government (1): municipal-level AI adoption and oversight
+• Ex
+port controls (1): regulation of advanced AI models and dual-use technologies
+Total 15
+
+===== PDF_PAGE 42 =====
+Looking Beyond the Government’s Regulatory Toolkit
+32
+adequately equipped are existing institutions (in your sector or community) to manage those risks?” We then
+explored nonstate roles: “(3) What actions or policies by companies could significantly reduce AI-related
+risks? What about actions by professional associations, nonprofits, or other civil [society] groups?” To probe
+incentives, we asked, “(4) Are there market or social pressures that could encourage safer AI development
+(e.g., from investors, customers, insurance)?” On feasibility, we asked, “(5) What barriers would a company
+or nonprofit face if it tried to implement the ideas we’ve discussed?” And we closed with scenario prompts,
+such as “(6) Imagine a serious AI incident has occurred. How do you think industry and civil society would
+respond, and what would you wish had been in place?”
+The study followed institutional human-subjects protocols; participants provided informed consent. Data
+were stored on encrypted drives with access restricted to the research team. We minimized the collection of
+personally identifiable information; used sector, region, and domain labels in place of names; and will retain
+de-identified notes for three months before secure deletion.
+The sample is weighted toward U.S. perspectives and product-safety roles; several stakeholder types
+(e.g., labor, insurers, cloud and infrastructure providers, standards bodies, Global South) are underrepre-
+sented. A lack of audio recordings may limit verbatim precision. Findings are qualitative and not statistically
+generalizable.
+
+===== PDF_PAGE 43 =====
+33
+APPENDIX B
+Day After AGI
+A separate after-action report details research findings from the games. 1 Because observations from the
+games were considered in the development of the framework, in the following paragraphs, we briefly describe
+the structure of the gaming platform. More-detailed information is shared in the other report.
+To understand how the United States should respond to and prepare for potential artificial intelligence
+(AI) and artificial general intelligence (AGI) developments in the future, the RAND Geopolitics of AGI Ini -
+tiative is conducting a series of Day After AGI exercises using the RAND Infinite Potential platform. These
+exercises support the initiative’s overall goal of understanding how the United States can respond to the
+technically credible but uncertain potential for AGI to be developed. Specifically, these exercises have the
+objective of understanding how the United States might wish to respond to sudden changes brought about
+by AI and, in particular, what judgments participants seek to make, what capabilities they believe they need
+to have on hand in the scenario presented to them, and what playbooks they believe they need to develop to
+guide their response.
+Infinite Potential Day After AGI exercises are two-hour tabletop exercises patterned after the Day After
+format, with ten to 16 participants led by a facilitator whose job is to elicit responses and discussion from the
+group on one of several scenarios regarding AGI. Participants are selected based on their career, institutional
+experience, and knowledge.
+Most exercises simulate a National Security Council Principals Committee (PC) convening to recom -
+mend a U.S. government response to developments in frontier AI. In Business and Civil Society games, the
+exercise simulates the convening of a fictional Business and Civil Society Council that is convened at the
+pleasure of the U.S. President in the wake of a crisis. In each exercise, participants are presented with a sce -
+nario that represents both (1) an acute crisis for U.S. national or economic security and (2) a signpost on a
+path to a transformative AI future. With facilitation by a simulated National Security Advisor, participants
+role-play as business and civil society leaders diagnosing the implications of the scenario for U.S. national
+security, discussing courses of action and the roles business and civil society institutions might take to miti -
+gate risks, and recommending a path forward for the President of the United States.
+In the exercise, participants face a predeveloped scenario over two turns. In turn 1, participants are asked
+to respond to intelligence reports and openly available information about an unfolding crisis involving AGI
+and to discuss the immediate policy ramifications. Teams are briefed by a subject-matter expert on the crisis
+and can ask clarifying questions about the events. The facilitator then leads the group through a discussion
+about policy objectives, options for action, and ramifications of potential decisions. All discussions are cap -
+tured by notetakers. In turn 2, the scenario progresses, and the crisis takes a turn, usually for the worse, but
+sometimes just in an unexpected vector. Teams are again briefed by an expert on the accelerated crisis and
+can ask questions and dig into the policy issues and options for action. At the end of turn 2, the facilitator
+prompts participants to retrospectively evaluate their initial responses and strategies. In some iterations of
+1 Girven, Cibralic, and Smith, 2026.
+
+===== PDF_PAGE 44 =====
+Looking Beyond the Government’s Regulatory Toolkit
+34
+the exercise, the teams are asked to backcast to consider what could be done prior to the events unfolding to
+prevent them from happening or to mitigate the effects should they be inevitable.
+Gameplay is set in a hypothetical near future of 12 to 18 months from the date of the exercise. This
+relatively quick time frame was selected because AI’s rapid pace of improvement creates a desire to explore
+what a potential AI crisis could look like in the short term rather than on a longer timeline. Participants are
+instructed to assume that the technological and geopolitical landscape will not have changed significantly,
+with identified vulnerabilities remaining comparable with those that exist today. The overall tenor of U.S.
+national politics and the foreign engagement environment is like that of today, with specific changes indi -
+cated in the lead-in scenario. This means that, unless otherwise specified in the scenario, the realities of the
+current year persist in the exercise.
+
+===== PDF_PAGE 45 =====
+35
+Abbreviations
+AGI artificial general intelligence
+AI artificial intelligence
+ESG Environmental, Social, and Governance
+EU European Union
+IEC International Electrotechnical Commission
+ISO International Organization for Standardization
+LLM large language model
+NGO nongovernmental organization
+NIST National Institute of Standards and Technology
+R&D research and development
+SME subject-matter expert
+
+===== PDF_PAGE 46 =====
+
+
+===== PDF_PAGE 47 =====
+37
+References
+Adan, Sumaya Nur, Joanna Wiaterek, Varun Sen Bahl, Ima Bello, Camila Beltran, Tobias Dierks, Luise Eder,
+Liam Epstein, Abra Ganz, Natalie Kiilu, et al., AI Benefit ‑Sh
+aring Framework: Balancing Access and Safety ,
+Oxford Martin AI Governance Initiative, Oxford Martin School, University of Oxford, December 1, 2025.
+AI Incident Database, “About,” webpage, Responsible AI Collaborative, undated-a. As of April 20, 2026:
+https://incidentdatabase.ai/about/
+AI Incident Database, homepage, undated-b. As of May 14, 2026:
+https://incidentdatabase.ai/
+Alaga, Jide, and Jonas Schuett, “Coordinated Pausing: An Evaluation-Based Coordination Scheme for Frontier
+AI Developers,” arXiv, arXiv:2310.00374, September 30, 2023.
+Amanpour & Company, “Geoffrey Hinton Warns of the ‘Existential Threat’ of AI,” video, May 9, 2023. As of
+April 17, 2026:
+https://www.pbs.org/video/godfather-of-ai-warns-of-the-existential-threat-of-ai-lj1i1c/
+Amazon News, “We Are Implementing a One-Year Moratorium on Police Use of Rekognition,” news release,
+June 10, 2020.
+Anthony, Aubra, Lakshmee Sharma, and Elina Noor, Advancing a More Global Agenda for Trustworthy Artificial
+Intelligence, Carnegie Endowment for International Peace, April 30, 2024.
+Anthropic, “Anthropic’s Responsible Scaling Policy,” webpage, version 2.2, effective May 14, 2025. As of April 17,
+2026:
+https://www.anthropic.com/responsible-scaling-policy
+“Artificial Intelligence (AI) Legislation Tracker 2026: All 50 States,” webpage, MultiState.ai, undated. As of
+May 14, 2026:
+https://www.multistate.ai/artificial-intelligence-ai-legislation
+Artificial Intelligence Underwriting Company, homepage, undated. As of April 17, 2026:
+https://aiuc.com/
+Autor, David, David Dorn, Gordon H. Hanson, Maggie R. Jones, and Bradley Setzler, “Places Versus People: The
+Ins and Outs of Labor Market Adjustment to Globalization,” National Bureau of Economic Research, NBER
+Working Paper No. 33424, last updated June 2025.
+Balleisen, Edward J., and Marc A. Eisner, “The Promise and Pitfalls of Co-Regulation: How Governments Can
+Draw on Private Governance for Public Purpose,” in David Moss and John Cisternino, eds., New Perspectives on
+Regulation, The Tobin Project, 2009.
+Bengio, Yoshua, Stephen Clare, Carina Prunkl, Maksym Andriushchenko, Ben Bucknell, Malcolm Murray,
+Shalaleh Rismani, Conor McGlynn, Nestor Maslej, Philip Fox, et al., International AI Safety Report 2026 ,
+February 2026.
+Berg, Florian, Julian F. Kölbel, and Roberto Rigobon, “Aggregate Confusion: The Divergence of ESG Ratings,”
+Review of Finance, Vol. 26, No. 6, November 2022.
+Boudreaux, Benjamin, and Beba Cibralic, Artificial Intelligence and the Social Contract: Foundations for Social
+and Economic Policy Under Technological Transformation, RAND Corporation, PE-A3888-1, August 2025. As of
+April 17, 2026:
+https://www.rand.org/pubs/perspectives/PEA3888-1.html
+Brundage, Miles, Noemi Dreksler, Aidan Homewood, Sean McGregor, Patricia Paskov, Conrad Stosz, Girish
+Sastry, A. Feder Cooper, George Balston, Steven Adler, et al., Frontier AI Auditing: Toward Rigorous Third
+‑Pa
+rty
+Assessment of Safety and Security Practices at Leading AI Companies , January 2026.
+California Senate Bill 53, Artificial Intelligence Models: Large Developers, September 29, 2025.
+Campaign to Stop Killer Robots, “Urgent Action Needed to Ban Fully Autonomous Weapons: Non-
+Governmental Organizations Convene to Launch Campaign to Stop Killer Robots,” press release, April 23, 2013.
+Chambers, Simone, and Jeffrey Kopstein, “Bad Civil Society,” Political Theory , Vol. 29, No. 6, December 2001.
+
+===== PDF_PAGE 48 =====
+Looking Beyond the Government’s Regulatory Toolkit
+38
+Chan, Alan, Kevin Wei, Sihao Huang, Nitarshan Rajkumar, Elija Perrier, Gillian K. Hadfield, and Markus
+Anderljung, “Infrastructure for AI Agents,” arXiv, arXiv:2501.10114, version 2, May 16, 2025.
+Cibralic, Beba, Miranda Bogen, Kevin Bankston, and Ruchika Joshi, Principled Practice: A Playbook for
+Operationalizing Responsible AI , Center for Democracy & Technology, AI Governance Lab, September 17, 2025.
+Cloud Security Alliance, “Cloud Security Alliance Launches STAR for AI, Establishing the Global Framework
+for Responsible and Auditable Artificial Intelligence,” press release, October 23, 2025.
+Croxton, John, David Robusto, Satya Thallam, and Doug Calidas, “Message Incoming: Establish an AI Incident
+Reporting System,” Federation of American Scientists, September 26, 2024.
+CVE Program, “Overview: About the CVE Program,” webpage, undated. As of April 17, 2026:
+https://www.cve.org/about/overview
+Dafoe, Allan, AI Governance: A Research Agenda , Centre for the Governance of AI, Future of Humanity
+Institute, University of Oxford, August 27, 2018.
+Dastin, Jeffrey, and Aditya Soni, “Sam Altman to Return as OpenAI CEO After His Tumultuous Ouster,”
+Reuters, November 22, 2023.
+Delmas, Magali A., and Vanessa C. Burbano, “The Drivers of Greenwashing,” California Management Review ,
+Vol. 54, No. 1, October 2011.
+Dennis, Claire, Sam Manning, Stephen Clare, Boxi Wu, Jake Okechukwu Effoduh, Chinasa T. Okolo, Lennart
+Heim, and Katya Klinova, Options and Motivations for International AI Benefit Sharing, Centre for the
+Governance of AI, Future of Humanity Institute, University of Oxford, February 6, 2025.
+Department for Science, Innovation and Technology, “Frontier AI Safety Commitments, AI Seoul Summit
+2024,” United Kingdom government guidance, last updated February 7, 2025.
+Department of Defense Standard Practice MIL-STD-882E, System Safety , incorporating change 1, U.S.
+Department of Defense, September 27, 2023.
+Dreksler, Noemi, Harry Law, Chloe Ahn, Daniel S. Schiff, Kaylyn Jackson Schiff, and Zachary Peskowitz, What
+Does the Public Think About AI? An Overview of the Public’s Attitudes Towards AI and a Resource for Future
+Research, Centre for the Governance of AI, Future of Humanity Institute, University of Oxford, January 22,
+2025.
+Dryzek, John S., “Global Civil Society: The Progress of Post-Westphalian Politics,” Annual Review of Political
+Science, Vol. 15, 2012.
+Erman, Eva, and Markus Furendal, “The Democratic Role of Non-State Actors in the Global Governance of
+Artificial Intelligence,” Critical Review of International Social and Political Philosophy , online ahead of print,
+2025.
+European Commission, “General-Purpose AI Code of Practice Now Available,” news release, July 10, 2025a.
+European Commission, The General
+‑Pu
+rpose AI Code of Practice , July 10, 2025b. As of May 7, 2026:
+https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+European Commission, “Questions and Answers on the Code of Practice for General-Purpose AI,” July 11,
+2025c.
+European Commission, “Drawing-Up a General-Purpose AI Code of Practice,” last updated March 23, 2026.
+Executive Order 14110, “Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence,”
+Executive Office of the President, October 30, 2023.
+Executive Order 14179, “Removing Barriers to American Leadership in Artificial Intelligence,” Executive Office
+of the President, January 23, 2025.
+Finck, Michèle, “Digital Co-Regulation: Designing a Supranational Legal Framework for the Platform
+Economy,” European Law Review, Vol. 43, No. 1, 2018.
+Frontier Model Forum, “Progress Update: Advancing Frontier AI Safety in 2024 and Beyond,” August 29, 2024.
+Future of Life Institute, “Pause Giant AI Experiments: An Open Letter,” March 29, 2023.
+
+===== PDF_PAGE 49 =====
+References
+39
+Galvagna, Christine, Inclusive AI Governance: Civil Society Participation in Standards Development, Ada
+Lovelace Institute, March 30, 2023.
+Girven, Richard S., Beba Cibralic, and Gregory Smith, Infinite Potential—Insights from the Business and Civil
+Society Scenario: After ‑Ac
+tion Report from a Sequence of Day After Artificial General Intelligence Exercises ,
+RAND Corporation, RR-A4767-1, 2026. As of April 20, 2026:
+https://www.rand.org/pubs/research_reports/RRA4767-1.html
+Global Partnership on Artificial Intelligence, homepage, Organisation for Economic Co-operation and
+Development, undated. As of May 7, 2026:
+https://gpai.ai/
+Google DeepMind, “Frontier Safety Framework,” version 3.1, April 17, 2026.
+Governor Gavin Newsom, “Governor Newsom Signs SB 53, Advancing California’s World-Leading Artificial
+Intelligence Industry,” news release, September 29, 2025.
+Governor Kathy Hochul, “Governor Hochul Signs Nation-Leading Legislation to Require AI Frameworks for AI
+Frontier Models,” news release, December 19, 2025.
+Greene, Jay, “Microsoft Won’t Sell Police Its Facial-Recognition Technology,” Washington Post, June 11, 2020.
+Gudgel, John E., “Insurance and the Public–Private Management of Risk at US Commercial Nuclear Power
+Plants,” Risk Management and Insurance Review, Vol. 26, No. 4, Winter 2023.
+Harvard Law Review Association, “Amoral Drift in AI Corporate Governance,” Harvard Law Review , Vol. 138,
+No. 6, April 2025.
+Hendrycks, Dan, Dawn Song, Christian Szegedy, Honglak Lee, Yarin Gal, Erik Brynjolfsson, Sharon Li, Andy
+Zou, Lionel Levine, Bo Han, et al., “A Definition of AGI,” arXiv, arXiv:2510.18212, version 2, revised October 23,
+2025.
+Homewood, Aidan, Sophie Williams, Noemi Dreksler, John Lidiard, Malcolm Murray, Lennart Heim, Marta
+Ziosi, Seán Ó hÉigeartaigh, Michael Chen, Kevin Wei, et al., “Third-Party Compliance Reviews for Frontier AI
+Safety Frameworks,” arXiv, arXiv:2505.01643, version 1, May 3, 2025.
+IEEE—See Institute of Electrical and Electronics Engineers.
+Institute of Electrical and Electronics Engineers, Ethically Aligned Design: A Vision for Prioritizing Human Well
+‑
+Be
+ing with Autonomous and Intelligent Systems, April 2019.
+Institute of Internal Auditors, The Three Lines of Defense in Effective Risk Management and Control , January
+2013.
+International Organization for Standardization and International Electrotechnical Commission, “Information
+Technology—Artificial Intelligence—Management System,” ISO/IEC 42001:2023, 2023.
+Kerry, Cameron F., Joshua P. Meltzer, Andrea Renda, and Andrew Wyckoff, “A Network Architecture for Global
+AI Policy,” Brookings Institution, February 10, 2025.
+Kilian, Robert, Linda Jäck, and Dominik Ebel, “European AI Standards—Technical Standardisation and
+Implementation Challenges Under the EU AI Act,” European Journal of Risk Regulation , Vol. 16, No. 3,
+September 2025.
+Kolt, Noam, Nicholas Caputo, Jack Boeglin, Cullen O’Keefe, Rishi Bommasani, Stephen Casper, Mariano-
+Florentino Cuéllar, Noah Feldman, Iason Gabriel, Gillian K. Hadfield, et al., Legal Alignment for Safe and Ethical
+AI, Oxford Martin School, AI Governance Initiative, University of Oxford, January 15, 2026.
+Lall, Ranjit, “Making Global Governance Accountable: Civil Society, States, and the Politics of Reform,”
+American Journal of Political Science , Vol. 69, No. 1, January 2025.
+Longpre, Shayne, Sayash Kapoor, Kevin Klyman, Ashwin Ramaswami, Rishi Bommasani, Borhane Billi-
+Hamelin, Yangsibo Huang, Aviya Skowron, Zheng-Xin Yong, Suhas Kotha, et al., “Position: A Safe Harbor for AI
+Evaluation and Red Teaming,” Proceedings of the 41st International Conference on Machine Learning, July 2024.
+Lyon, Thomas P., and A. Wren Montgomery, “The Means and End of Greenwash,” Organization & Environment,
+Vol. 28, No. 2, June 2015.
+
+===== PDF_PAGE 50 =====
+Looking Beyond the Government’s Regulatory Toolkit
+40
+Manning, Sam, homepage, undated. As of April 20, 2026:
+https://www.sam-manning.com/
+METR, “Frontier AI Safety Policies,” webpage, undated. As of April 20, 2026:
+https://metr.org/fsp
+MITRE, “CVE Program Celebrates 25 Years of Impact in Cybersecurity,” news release, October 22, 2024.
+Mökander, Jakob, Jonas Schuett, Hannah Rose Kirk, and Luciano Floridi, “Auditing Large Language Models: A
+Three-Layered Approach,” AI and Ethics, Vol. 4, No. 4, November 2024.
+Montgomery, A. W., Thomas P. Lyon, and Jasper Barg, “No End in Sight? A Greenwash Review and Research
+Agenda,” Organization & Environment, Vol. 37, No. 2, June 2024.
+Morrone, Megan, “Amodei on AI: ‘There’s a 25% Chance That Things Go Really, Really Badly,’” Axios ,
+September 17, 2025.
+National Aeronautics and Space Administration, “Aviation Safety Reporting System (ASRS): Program Briefing,”
+webpage, undated. As of April 20, 2026:
+https://asrs.arc.nasa.gov/overview/summary.html
+National Aeronautics and Space Administration, Reliability Program Requirements for Aeronautical and Space
+System Contractors, NHB 5300.4(1A-1), January 1987.
+National Institute of Standards and Technology, “Center for AI Standards and Innovation (CAISI),” webpage,
+undated. As of May 20, 2026:
+https://www.nist.gov/caisi
+National Institute of Standards and Technology, “Fact Sheet: U.S. Department of Commerce & U.S. Department
+of State Launch the International Network of AI Safety Institutes at Inaugural Convening in San Francisco,”
+November 20, 2024.
+New York State Senate Bill S6953A, An Act to Amend the General Business Law, in Relation to the Training and
+Use of Artificial Intelligence Frontier Models, December 19, 2025.
+Office for Artificial Intelligence, Guidelines for AI Procurement , United Kingdom government guidance, June 8,
+2020.
+OpenAI, Preparedness Framework , version 2, last updated April 15, 2025.
+Organisation for Economic Co-operation and Development, “Recommendation of the Council on Artificial
+Intelligence,” OECD/LEGAL/0449, amended May 3, 2024.
+Organisation for Economic Co-Operation and Development, Place
+‑Ba
+sed Policies for the Future, May 19, 2025a.
+Organisation for Economic Co-Operation and Development, “Place-Based Policies for Displaced Workers:
+Lessons from Past Economic Disruptions,” OECD Local Economic and Employment Development (LEED)
+Papers, No. 2025/04, June 30, 2025b.
+Partnership on AI, homepage, undated. As of May 7, 2026:
+https://partnershiponai.org/
+Perrigo, Billy, and Tharin Pillay, “‘Time Is Running Out’: New Open Letter Calls for Ban on Superintelligent AI
+Development,” Time, October 21, 2025.
+Png, Marie-Therese, “At the Tensions of South and North: Critical Roles of Global South Stakeholders in
+AI Governance,” Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency,
+Association for Computing Machinery, 2022.
+Rao, Anita, Drew Keller, Neha Kalra, Ryan Steed, Kweku Kwegyir-Aggrey, Kevin Klyman, Diane Staheli, and
+Stevie Bergman, Challenges to the Monitoring of Deployed AI Systems , Center for AI Standards and Innovation,
+National Institute of Standards and Technology, NIST AI 800-4, updated March 18, 2026.
+Reavis, Jim, “Announcing the AI Controls Matrix and ISO/IEC 42001 Mapping—and the Roadmap to STAR for
+AI 42001,” Cloud Security Alliance, August 20, 2025.
+Responsible Artificial Intelligence Institute, homepage, undated. As of April 20, 2026:
+https://www.responsible.ai/
+
+===== PDF_PAGE 51 =====
+References
+41
+Reuel, Anka, Ben Bucknall, Stephen Casper, Tim Fist, Lisa Soder, Onni Aarne, Lewis Hammond, Lujain
+Ibrahim, Alan Chan, Peter Wills, et al., “Open Problems in Technical AI Governance,” arXiv, arXiv:2407.14981,
+version 2, April 16, 2025.
+Risk & Insurance, “Cyber Insurance Provides Both Carrot and Stick for Cybersecurity,” July 11, 2024.
+Schmidt, Vivien A., “Democracy and Legitimacy in the European Union Revisited: Input, Output and
+‘Throughput,’” Political Studies, Vol. 61, No. 1, March 2013.
+Schuett, Jonas, “Three Lines of Defense Against Risks from AI,” AI and Society , Vol. 40, No. 2, February 2025.
+Schuett, Jonas, Ann-Katrin Reuel, and Alexis Carlier, “How to Design an AI Ethics Board,” AI and Ethics , Vol. 5,
+No. 2, April 2025.
+Schultz, Mario D., Ludovico Giacomo Conti, and Peter Seele, “Digital Ethicswashing: A Systematic Review and a
+Process-Perception-Outcome Framework,” AI and Ethics, Vol. 5, No. 2, April 2025.
+Schwarcz, Daniel, and Josephine Wolff, “The Limits of Regulating AI Safety Through Liability and Insurance:
+Lessons from Cybersecurity,” Fordham Law Review , 2026.
+Seetharaman, Deepa, Stephen Nellis, and Deborah Mary Sophia, “Microsoft, OpenAI Reach Deal Removing
+Fundraising Constraints for ChatGPT Maker,” Reuters, October 28, 2025.
+Shackelford, Scott J., and Rachel Dockery, “Governing AI,” Cornell Journal of Law & Public Policy , Vol. 30, No. 2,
+Winter 2020.
+Simpson, Morgan, Alejandro Ortega, and Robert Trager, “Voluntary Industry Initiatives in Frontier AI
+Governance: Lessons from Aviation and Nuclear Power,” AI Governance Initiative, Oxford Martin School,
+University of Oxford, January 20, 2025.
+Skey, Michael, “Sportswashing: Media Headline or Analytic Concept?” International Review for the Sociology of
+Sport, Vol. 58, No. 5, August 2023.
+Soares, Nate, Benja Fallenstein, Stuart Armstrong, and Eliezer Yudkowsky, “Corrigibility,” AAAI Workshops:
+Workshops at the Twenty
+‑Ni
+nth AAAI Conference on Artificial Intelligence , 2015.
+Stosz, Conrad, Karson Elmgren, Charles Foster, George Balston, Seth Donoughe, Samira Nedungadi, Michael
+Chen, Jasper Götting, Patricia Paskov, Sayash Kapoor, et al., AEF
+‑1: M
+inimum Operating Conditions for
+Independent Third Party AI Evaluations , version 1, AI Evaluator Forum, undated.
+Stout, Lynn A., The Shareholder Value Myth: How Putting Shareholders First Harms Investors, Corporations, and
+the Public, Berrett-Koehler Publishers, 2012.
+Taylor, Bret, “Built to Benefit Everyone,” OpenAI, October 28, 2025.
+Trout, Cristian, “Liability and Insurance for Catastrophic Losses: The Nuclear Power Precedent and Lessons for
+AI,” Generative AI and Law Workshop at the International Conference on Machine Learning, 2024.
+Trout, Cristian, “Healthy Insurance Markets Will Be Critical for AI Governance,” Lawfare blog, December 17,
+2025.
+U.S.–Canada Power System Outage Task Force, Final Report on the August 14, 2003 Blackout in the United States
+and Canada: Causes and Recommendations , April 2004.
+U.S. Code, Title 15, Section 1, Trusts, Etc., in Restraint of Trade Illegal; Penalty (Sherman Act).
+Wareham, Mary, Stopping Killer Robots: Country Positions on Banning Fully Autonomous Weapons and
+Retaining Human Control, Human Rights Watch, August 10, 2020.
+Wei, Kevin, and Lennart Heim, “Designing Incident Reporting Systems for Harms from General-Purpose AI,”
+arXiv, arXiv:2511.05914, version 1, November 8, 2025.
+World Economic Forum, “AI Global Alliance,” webpage, undated. As of April 20, 2026:
+https://initiatives.weforum.org/ai-global-alliance/home
+World Economic Forum, Unlocking Public Sector AI: AI Procurement in a Box: AI Government Procurement
+Guidelines, toolkit, 2020.
+
+===== PDF_PAGE 52 =====
+Looking Beyond the Government’s Regulatory Toolkit
+42
+
+===== PDF_PAGE 53 =====
+43
+About the Authors
+Beba Cibralic is a policy researcher at RAND and a professor of policy analysis at the RAND School of Public
+Po
+licy. Her research focuses on artificial intelligence governance, ethics, and policy. She holds a Ph.D. in
+philosophy.
+Joel B. Predd is a senior engineer at RAND and director of the Geopolitics of AGI Initiative. His research
+focuses on the geopolitics of artificial intelligence and on the intersection of the security and economic com -
+petition with China. Predd holds a Ph.D. in electrical engineering.
+Rich
+ S
+. Girven is a senior international defense researcher at RAND. He l
+eads the Infinite Po
+tential gaming
+platform and its engagement with senior decisionmakers across government and industry. He holds a mas -
+ter’s in military arts and sciences in strategic studies and an M.S. in national resource strategy.

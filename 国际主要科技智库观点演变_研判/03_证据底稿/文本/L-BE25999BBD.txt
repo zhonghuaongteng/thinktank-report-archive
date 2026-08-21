@@ -1,0 +1,1832 @@
+
+===== PDF_PAGE 1 =====
+JACK FREED, KONSTANTIN F. PILZ, NICHOLAS BROWN, LENNART HEIM
+High Bandwidth Memory
+What It Is and Why It Matters
+H
+igh Bandwidth Memory (HBM) is a type of computer memory used in leading artificial
+intelligence (AI) chips and other hardware for high-performance computing. HBM can
+store and move large volumes of data quickly, making it suitable for increasingly data-
+intensive AI workloads.
+1 As of 2026, most leading AI chips use HBM, and almost all
+leading AI models are trained and deployed on AI chips with HBM. 2 In the following section, we
+explain what sets HBM apart from other memory technologies and why HBM is important for AI’s
+computational needs.
+KEY TAKEAWAYS
+■ Leading artificial intelligence (AI) workloads place extreme demands on memory, and
+Hi
+gh Bandwidth Memory (HBM) has emerged as the central technology to meet them.
+Large AI models require chips with both high memory capacity —how much data can be
+stored—and high memory bandwidth —how fast data can be transferred to a processor. HBM
+is the only memory technology that meets both requirements: It offers higher bandwidth than
+other types of dynamic random-access memory (DRAM) while providing enough storage
+capacity to hold model weights and contextual data close to the processor, which is some-
+thing that smaller, faster memory, such as static random-access memory, cannot do on its
+own. This combination is why most of the top AI chips use HBM.
+■ HBM p
+roduction is a complex, capital-intensive process that demands some of the
+world’s most advanced manufacturing equipment. First, companies fabricate individual
+DRAM memory dies —unpackaged silicon chips—at large production facilities. Each die
+requires etching nanometer-scale features using lithography tools that can cost more than
+$300 million. The DRAM dies are then stacked vertically, which requires extreme preci-
+sion because a single defect can compromise the entire HBM stack. HBM’s complexity
+and resource-intensiveness make it expensive to produce: It can account for 45 percent of
+the total production cost of an AI chip, roughly three times the cost of fabricating the chip’s
+processor.
+■ Onl
+y three companies—SK Hynix (South Korea), Samsung (South Korea), and Micron
+(United States)—produce globally competitive HBM. Their production is concentrated in
+South Korea, Taiwan, and Japan. Chinese company CXMT (ChangXin Memory Technologies)
+is attempting to increase its domestic HBM production but lags in overall output and does
+not manufacture the most-advanced HBM generations. In December 2024, China was barred
+from importing HBM from foreign producers, so Chinese access to advanced HBM depends
+on whether CXMT can improve.
+Expert Insights
+PERSPECTIVE ON A TIMELY POLICY ISSUE
+July 2026
+
+===== PDF_PAGE 2 =====
+2
+High Bandwidth Memory in the
+Broader Memory Landscape
+The ability to store and access data is central to com-
+puting, but different workloads have varying require-
+ments for how much memory is needed and how
+quickly they need to access that memory. Computer
+systems thus use a hierarchy of memory technolo-
+gies that fall into two broad categories. The first is
+volatile memory: It requires constant power to retain
+data and serves as a system’s active working memory,
+holding the data and instructions that running pro-
+cesses need.
+3 The second is non-volatile memory,
+which retains data without power and is used for
+long-term storage.
+4 In each category, there are mul-
+tiple subtypes of memories that offer different trade-
+offs in access speed, capacity, and cost. In practice, a
+single device, whether a laptop or a server, relies on
+several of these technologies at once, each handling a
+different role. At one end of the spectrum are fast and
+expensive volatile memories with low capacity, such
+as static random-access memory (SRAM).
+5 SRAM
+is built into processors, such as central processing
+units (CPUs) or graphics processing units (GPUs),
+and provides data near-instantaneously, but it has
+low capacity. At the other end are non-volatile storage
+types that are slow and cheap and offer high capacity.
+These include hard disk drives (HDDs) or solid-state
+drives (SSDs): They can hold large amounts of data
+affordably, but accessing that data takes a long time.
+Dynamic random-access memory (DRAM)
+occupies a middle ground in capacity, bandwidth,
+and access speed (Figure 1). It is a volatile memory
+that has higher bandwidth and higher access speed
+than SSDs or HDDs and offers much greater capacity
+at a lower cost than SRAM.
+6 It comes in several vari-
+ants optimized for different applications. Double data
+rate (DDR) DRAM is the standard, general-purpose
+variant, used in servers and personal computers;
+LPDDR (low-power DDR) is designed for energy
+efficiency in phones and laptops; and GDDR (graph-
+ics DDR) is optimized for graphics processing and
+offers higher bandwidth than standard DDR. HBM
+is the most specialized form of DRAM, designed to
+meet the extreme memory demands of leading AI
+workloads. Unlike conventional DRAM modules that
+place dies side by side on a circuit board, HBM stacks
+multiple DRAM dies vertically and places them next
+to the processor, providing greater memory capacity
+and higher data transfer rates in a smaller footprint.
+FIGURE 1
+High Bandwidth Memory in the Memory Hierarchy
+NOTE: Computer systems organize memory into a hierarchy that trades off access speed, capacity, and cost. At the top of the figure sit the
+fastest and most expensive forms of memory per bit—CPU registers and cache (SRAM)—which hold only small amounts of data. Main
+memory (DRAM) occupies the middle tier, offering greater capacity at lower cost and speed. Within DRAM, several variants exist for different
+applications; HBM sits at the high-performance end, providing greater bandwidth than conventional DRAM types, such as LPDDR, DDR, and
+GDDR. Long-term storage memories (HDDs and SSDs) sit at the base. They have the highest capacity, lowest cost, and slowest access
+speeds. All working memory is volatile, meaning that data is lost when power is removed; only long-term storage retains data persistently.
+CPU
+(registers)
+Cache (SRAM)
+Main memory (DRAM)
+LPDDR DDR GDDR HBM
+Long-term storage
+ (HDDs, SSDs) Non-volatile
+Low capacity,
+high access speed,
+and high cost
+High capacity,
+low access speed,
+and low cost
+Volatile
+(working memory)
+
+===== PDF_PAGE 3 =====
+3
+Why Do Artificial Intelligence
+Workloads Need High Bandwidth
+Memory?
+Leading AI workloads rely on specialized AI chips
+designed by such companies as Google, Nvidia,
+and Advanced Micro Devices (AMD).
+7 These chips
+deliver high processing speeds, but two things are
+required from memory to make effective use of that
+computational power: first, the ability to keep large
+amounts of data close to the processor, and second,
+high bandwidth—the rate at which data can move
+between memory and the processor.
+Both AI training and inference require sub-
+stantial memory capacity close to the processor. AI
+chips must hold a model’s parameters (the numerical
+weights that determine the output of the model) in
+working memory so that the processor can access
+them quickly. Large AI models contain hundreds
+of billions of parameters, requiring hundreds of
+gigabytes (GBs) of memory just to hold the weights
+alone.
+8 For example, a 500-billion-parameter model
+in FP16 precision would need approximately 1 tera-
+byte (TB) of memory, so much that the model needs
+to be distributed across at least six Nvidia B200 AI
+chips, each carrying 192 GB of HBM3E.
+9 Alterna-
+tively, the same model would need at least hundreds
+of SRAM-based chips to run because of their lower
+capacity per chip. Relying on long-term storage
+devices, such as HDDs or SSDs, would be impracti-
+cal because they are orders of magnitude slower and
+cannot deliver data quickly enough to keep work-
+loads running.
+Model weights are not the only data that must
+reside in working memory. Modern AI models based
+on the transformer architecture also maintain what is
+known as a key-value (KV) cache. The KV cache func-
+tions like a notepad for everything the model has read
+so far in a given request so that the model does not
+have to reprocess the entire input each time it gener-
+ates the next word. As the amount of input data a
+model can process (also known as the context window)
+has grown up to a million tokens, the KV cache has
+grown accordingly, consuming an increasing share
+of available memory alongside the model weights.
+10
+Importantly, each concurrent user requires their own
+separate KV cache, leading to memory demands that
+scale along with the size of the user base.
+11
+Keeping all this data in memory is necessary
+but not sufficient: The processor also needs to read
+it fast enough to avoid sitting idle. During training
+and inference, massive volumes of data flow between
+memory and the AI chip’s processor. If the data is not
+delivered fast enough, the processor stalls and the
+computing power goes unused.
+12 In practice, much of
+the time spent generating new tokens during inference
+is not limited by how fast the processor can compute
+but by how fast it can read from memory. For those
+reasons, it is a memory-bound workload. This is why
+memory bandwidth is so critical for AI performance.
+HBM provides a balance of specifications that
+meet AI’s memory needs. It delivers far higher band-
+width than other types of DRAM, such as DDR
+or LPDDR, while offering enough dense capacity
+close to the processor to hold model weights and
+KV cache—something that on-chip SRAM, despite
+being faster, cannot provide on its own because of its
+limited capacity. No other single memory technol-
+ogy matches this combination. That said, as model
+sizes and context windows continue to grow, AI chip
+designers are actively adopting and exploring trade-
+offs across the memory hierarchy. These include
+allocating more die area to SRAM, pairing HBM
+with high-capacity DDR for less frequently accessed
+data, using SRAM-based chips alongside HBM-based
+designs for parts of inference, or developing new
+HBM provides a balance
+of specifications that
+meet AI’s memory
+needs. It delivers far
+higher bandwidth than
+other types of DRAM
+while offering enough
+dense capacity close to
+the processor.
+
+===== PDF_PAGE 4 =====
+4
+memory technologies. At the time of this writing in
+early 2026, HBM is the centerpiece, but the broader
+memory architecture around it continues to evolve.
+High Bandwidth Memory Design
+HBM’s combination of high memory bandwidth and
+capacity makes it stand out from other memory alter-
+natives, and both metrics have improved substan-
+tially across generations. The first generation of HBM
+debuted in 2013 and offered 128 GB per second of
+bandwidth and 4 GB of capacity per stack.
+13 HBM4,
+whose standard was finalized in 2025, delivers up to
+2 TB per second of bandwidth and 64 GB of capacity
+per stack, increases of around 16 times for each.
+14
+A typical AI chip contains multiple stacks of
+HBM (Figure 2).15 For example, Nvidia’s B300,
+released in 2025, uses eight stacks of HBM3E. Each of
+the HBM stacks uses 12 DRAM dies and a base die,
+enabling the chip to reach 288 GB of total capacity
+and 8 TB per second of bandwidth.
+16
+Two design features enable HBM to reach these
+performance specifications: vertical stacking and
+wide interfaces that can transmit high volumes of
+data in parallel. We explain both in detail in the fol-
+lowing sections.
+Vertical Stacking
+A core feature of HBM is its vertical architecture:
+Multiple DRAM dies are vertically stacked (Figure 2)
+and thus substantially increase the amount of data
+HBM can store in a compact package. Microscopic
+vertical channels (TSVs) route data to and from
+individual dies in the stack at high throughput.
+17 At
+the bottom of the stack is a base logic die (base die),
+which orchestrates the rapid transfer of data between
+memory and the processor of the AI chip.
+Wide Interfaces
+Interfaces are physical communication pathways
+that allow components to exchange data. HBM has
+wide interfaces of 1024 bits (and 2048 bits in new
+FIGURE 2
+Artificial Intelligence Chip Using High Bandwidth Memory
+SOURCE: Authors’ adaptation from Ma and Patterson, ”Challenges and Research Directions for Large Language Model Inference Hardware.”
+NOTE: This /f_igure shows an AI chip with HBM. The left side of the /f_igure (top view) displays several HBM stacks placed next to an AI chip’s
+logic processor. Both are placed on a silicon interposer, which connects the HBM to the processor and is then attached to a package
+substrate. The right side of the /f_igure (side view) displays the HBM’s vertical stack, where 12 DRAM dies and a base die are connected with
+microscopic channels called through-silicon vias (TSVs).
+Side viewTop view
+Logic
+processor
+Silicon interposer
+Package substrate
+HBM stacks
+Package substrate
+Silicon interposer
+Logic
+processorHBM HBM
+HBM stack
+DRAM dies
+ (12)
+Base die
+TSV
+Microbump
+
+===== PDF_PAGE 5 =====
+5
+HBM4 designs) that can move large quantities of data
+simultaneously into and out of memory storage.18
+Because the channels are wide, they do not need
+extreme speeds to reach high bandwidths. This is
+a wide and slow design paradigm, which contrasts
+with a common alternative in which data is pushed
+at high rates through narrow channels (e.g., 64 bits in
+GDDR).
+19 One way to conceptualize HBM’s architec-
+ture is a wide, slow-moving river: Even if the water is
+not rushing quickly, the sheer width allows an enor-
+mous amount to flow through at once. The wide and
+slow approach offers another important advantage:
+Wide channels with lower speeds consume less power
+than narrower memory designs.
+20
+While HBM is well suited for AI, it has signifi-
+cant trade-offs, particularly its high production costs
+(an estimated $2,900 for 192 GB of HBM3E, which is
+45 percent of the cost to produce Nvidia’s B200 and
+three times the cost of producing its processor) and
+manufacturing complexity.
+21 We discuss this topic in
+the following section. 
+How Is High Bandwidth Memory
+Produced, and What Makes It
+So Challenging?
+In the previous section, we explained HBM’s place in
+the broader memory landscape, why it is useful for
+leading AI workloads, and its main design features.
+In this section, we provide an overview of HBM’s
+manufacturing processes, which can be divided into
+three technically challenging domains, each consist-
+ing of many substeps: DRAM wafer fabrication, base
+die fabrication, and die stacking.
+DRAM Wafer Fabrication
+The HBM manufacturing process begins at DRAM
+fabrication facilities, known as fabs for short
+(Figure 3, Step 1). Here, manufacturers transform raw
+silicon wafers into functional memory dies through
+a series of steps that deposit, pattern, and remove
+materials on a nanometer scale. The fabrication pro-
+cess requires large clean rooms that span the size of
+multiple football fields and are outfitted with billions
+of dollars in specialized tools, including lithography
+machines—produced exclusively by the Dutch firm
+ASML—that can cost more than $300 million.
+22 As
+of 2026, front-end DRAM production for HBM is
+primarily in South Korea, Taiwan, and Japan, and
+there is more-limited capacity for lagging generations
+in China.
+23 The United States does not have facilities
+that produce leading-edge DRAM for HBM at scale. 
+A key metric that determines a manufacturer’s
+DRAM sophistication is called the manufacturing
+node.
+24 In semiconductor manufacturing, this metric
+measures the smallest feature size in nanometers
+(nm) that can be printed on a silicon wafer.
+25 Smaller
+features are an important improvement because
+they increase memory cell density, allowing more
+bits (and thus more data) to be stored per unit of
+silicon area.
+26 Importantly, these features also enable
+reductions in heat generation and energy consump-
+tion. Since producers started making DRAM with
+feature sizes below 20 nm in 2016, they have named
+nodes using the number “1” combined with a lettered
+progression (x, y, z, α, β, γ).
+27 The big three memory
+manufacturers—Samsung, Micron, and SK Hynix—
+started volume production of 1z process nodes with
+feature sizes of around 16 nm between 2019 and
+2020 (Figure 4).
+28 As of 2026, they have advanced
+to feature sizes approaching 10 nm. Meanwhile, the
+most-advanced DRAM that Chinese memory manu-
+facturer CXMT (ChangXin Memory Technologies)
+has produced at commercial scale in 2026 has a fea-
+ture size of 16 nm, putting its technology around four
+years behind the industry’s state of the art.
+29
+Advances in DRAM are crucial for new HBM
+generations because improvements in DRAM density
+While HBM is well
+suited for AI, it has
+significant trade-offs,
+particularly its high
+production costs
+and manufacturing
+complexity.
+
+===== PDF_PAGE 6 =====
+6
+help to unlock higher bandwidth and stack capaci-
+ty.30 Improvements also drive cost reductions for
+fabs, increasing the number of gigabytes that can be
+produced per wafer. However, migrating to more-
+advanced DRAM nodes is difficult and takes time:
+Manufacturers need to reoptimize certain process
+steps and introduce new materials and equipment.
+31
+As a result, manufacturing yields —the percentage of
+dies that are functional on a silicon wafer—are lower
+when a new node is introduced but improve over
+time as problems are uncovered and resolved.
+32
+Unlike other types of memory dies, HBM
+requires DRAM with an extra step—the addition of
+TSVs used to route data through the dies of the verti-
+cal stack.
+33 This increases the resource intensiveness
+and difficulty of front-end manufacturing, for two
+main reasons. First, the DRAM dies used in HBM
+are larger and less dense than those in conventional
+DRAM because of the inclusion of TSVs.
+34 As a
+result, in HBM, achieving the same memory capac-
+ity (in gigabytes) requires using significantly more
+silicon wafers—roughly three times as many as are
+needed for DDR5.
+35 Second, forming the TSVs is a
+substantial technical challenge. 36 Each TSV requires
+drilling microscopic holes through the silicon, lining
+the holes with insulating material, and filling them
+with conducting metal; defects can occur at any of
+these steps.
+37 TSV manufacturing is getting more
+challenging as HBM makers try to shrink the size of
+TSVs to preserve space for data storage.
+38 
+FIGURE 3
+High Bandwidth Memory Manufacturing Process Flow
+NOTE: Step 1: DRAM fabs transform raw silicon wafers into DRAM with TSVs in steps that deposit, pattern, and remove materials on a
+nanometer scale. DRAM wafers are then thinned, tested for defects, and diced into individual DRAM dies. Step 2: In parallel, companies also
+produce a base die that forms the foundation of the HBM stack. For generations up to HBM3E, the base dies are fabricated using DRAM
+processes. At HBM4 and beyond, some memory manufacturers are using logic processes. Step 3: Finally, DRAM dies and a base die are
+stacked together into an HBM stack.
+Step 1: DRAM wafer
+fabrication. Raw silicon wafers
+are fabricated into DRAM wafers
+with TSVs. DRAM wafers are
+then thinned, tested, and diced.
+Raw silicon wafer DRAM wafer with TSVs
+Step 1
+DRAM fab
+Step 3
+Packaging facility
+Step 2: Base die fabrication.
+Base dies are fabricated by
+DRAM manufacturers or by
+external foundries.
+Step 3: Die stacking. DRAM
+dies and a base logic die are
+stacked into HBM modules.
+Additional testing occurs.
+Finished HBM stack (side view)
+DRAM dies
+ (12)
+Base die (1)
+TSV
+Microbump
+Step 2
+Base die DRAM dies
+
+===== PDF_PAGE 7 =====
+7
+HBM also requires that DRAM dies be thinned
+so that more layers can fit into an HBM stack. Thin-
+ning is a delicate step: Excessive stress can cause
+warping or TSV defects that reduce yield.
+39 Finally,
+DRAM dies undergo testing to identify functional
+and defective units before they are diced, sorted, and
+prepared for stacking. 
+Base Die Fabrication
+HBM requires a base die to manage data transfers
+between the stacked DRAM dies and the AI chip’s
+processor (Figure 3, Step 2). For HBM generations
+up to HBM3E, base dies for HBM were exclusively
+produced in house on DRAM process nodes. How-
+ever, memory manufacturers are starting to migrate
+their base die fabrication to dedicated logic found-
+ries, either at Samsung or Taiwan Semiconductor
+Manufacturing Company (TSMC).
+40 Moving base
+die fabrication to logic foundries will contribute to
+bandwidth and power efficiency gains, making the
+base die increasingly important for overall HBM per-
+formance.
+41 As of HBM4, base dies are increasingly
+customized to meet the design and performance
+objectives of a customer’s processor.
+42 They can be
+tuned to different priorities depending on the use
+case; for example, a power-constrained edge deploy-
+ment might sacrifice bandwidth for a smaller, more
+efficient footprint, while a large-scale training cluster
+would optimize for maximum bandwidth and capac-
+ity regardless of power or size.
+43
+Base die fabrication is difficult because it com-
+bines the complexity and tool requirements of
+advanced logic with unique memory constraints.
+The die must accommodate high-speed interfaces
+and signaling to manage communication between
+the DRAM dies and the processor.
+44 The base die
+also coordinates error correction functions across
+the stack, so defects can compromise the reliability
+of the entire module.
+45 Because some base dies are
+FIGURE 4
+Trends in DRAM Feature Size, by Manufacturer
+Node generation:
+1z 1α 1β 1c/1γ
+~16 nm ~14 nm ~12nm ~11nm
+SOURCES: Features data from Samsung Newsroom, “Samsung Begins Mass Production of 16Gb LPDDR5 DRAM at World’s Largest
+Semiconductor Line”; Samsung, “Samsung Starts Mass Production of Most Advanced 14nm EUV DDR5 DRAM”; Fan, “1c DRAM Key to
+Determining Memory Market Leadership in 2024”; “Samsung Reportedly Plans 200K 1c DRAM Wafers/Month by 2026, About One-Third of
+Its Total Output”; “SK Hynix Develops 1Znm 16Gb DDR4 DRAM”; Kostovic, “SK Hynix Starts Manufacturing 1anm DRAM Using EUV
+Lithography”; “SK Hynix Reportedly Set 1c DRAM Mass Production in Feb, While Samsung Delays by Six Months”; Bali, “Micron Commenc-
+es Volume Production of 1z Nanometer DRAM Process Node”; Embedded Computing, “Micron Delivers Industry’s First 1-alpha DRAM
+Technology”; Lau, “Micron Ships World’s Most Advanced DRAM Technology with 1-Beta Node”; GFreeman, “Micron Ships World’s First 1γ
+(1-Gamma)-Based LPDDR5X, Enabling Rich Mobile AI Experiences”; “China Enters 2025 with Big Memory Breakthroughs.”
+NOTE: * The size of the circles decreases with each new node generation (1z, 1α, 1β, 1c/1γ). ** Node generation sizes are approximations
+and vary by manufacturer. This /f_igure shows advances in DRAM manufacturing for four memory manufacturers. Micron, Samsung, and SK
+Hynix reached volume production of roughly 16-nm feature sizes (the 1z node) between 2019 and 2020 and advanced to sub-12 nm-feature
+sizes in 2025. CXMT reached 16-nm feature sizes in 2024, putting the /f_irm about four years behind the DRAM capabilities of Korean and U.S.
+manufacturers. Smaller feature sizes are better because they enable higher capacity and performance within a limited physical footprint.
+only 1z announced
+2019 2020 2021 2022 2023 2024 2025 2026
+Samsung
+SK Hynix
+Micron
+CXMT
+
+===== PDF_PAGE 8 =====
+8
+now manufactured using advanced logic processes,
+such as Samsung’s 4-nm node and eventually TSMC’s
+3-nm “3NP” node, they require advanced lithography
+steps, including extreme ultraviolet (EUV) lithogra-
+phy at some layers.
+46
+Die Stacking
+The final step in HBM manufacturing is bonding
+together the DRAM dies (Figure 3, Step 1) and base
+die (Figure 3, Step 2) into a vertical stack (Figure 3,
+Step 3). This process uses bonding technologies—
+typically thermocompression bonding or mass-
+reflow molded underfill (MR-MUF)—to connect dies
+using micro-bumps, tiny metal connections that are
+critical for the overall electrical and thermal perfor-
+mance of the HBM stack.
+47 As stack heights progress
+to 16 dies and beyond, manufacturers expect to
+eventually adopt a technology called hybrid bond-
+ing, which stacks dies directly without the need for
+micro-bumps. This approach improves performance
+and power efficiency but introduces additional chal-
+lenges, including high costs and difficulties related to
+yield, alignment, and warpage.
+Notably, HBM’s vertically stacked design creates
+a distinct yield problem: When the dies are stacked
+together, the defect rate compounds and an error in
+a single die can cause problems for the entire stack.
+48
+Here, the base die plays an important role because it
+helps route around defective parts of the DRAM dies.
+HBM’s front-end and back-end complexity means
+producers commonly face production yields 20- to
+30-percent lower than those for DDR5 memory.
+49
+For newer producers, such as CXMT, which are sub-
+ject to manufacturing equipment restrictions from
+U.S. export controls and without the same years of
+accumulated learning, yields are expected to be even
+lower.
+50 
+The Global High Bandwidth
+Memory Market
+In the previous section, we explained the main steps
+involved in producing HBM and what makes this
+process so technically challenging. In this section, we
+provide an overview of the companies that produce
+HBM as of 2026, explain where HBM is produced,
+and explore the factors shaping the HBM market.
+A Small Number of Companies Are
+Competing for Market Share
+Three companies produce advanced HBM at scale as
+of 2026: SK Hynix, Samsung, and Micron. Chinese
+memory giant CXMT has begun to produce lagging
+generations of HBM, but as of 2026, its output is
+small and it has yet to capture any measurable por-
+tion of global market share (Figure 5).
+51 
+SK Hynix leads globally by HBM market share,
+followed by Samsung and Micron.52 The company
+secured its lead because of its position as priority
+supplier of Nvidia GPUs, which accounted for more
+than 60 percent of total HBM consumption in both
+2024 and 2025.
+53 SK Hynix’s development and use
+of MR-MUF bonding, which improves heat dissipa-
+tion and overall yield, has been a key differentiator
+in achieving its dominant market position. The com-
+pany was also the first to develop and mass-produce
+HBM in a 2014 partnership with AMD.
+54 More than
+a decade of accumulated expertise has enabled SK
+Hynix to release new generations of HBM before its
+competitors, a compounding advantage that other
+companies have found difficult to overcome.
+55
+The world’s largest memory manufacturer by
+DRAM capacity is Samsung, which is vying to win
+back HBM market share from SK Hynix.
+56 Samsung
+was the primary supplier of HBM into China (a
+significant source of HBM demand) until Decem-
+ber 2024, when the United States extended export
+controls to cover finished HBM units.
+57 Samsung’s
+chip unit has had a mixed record in winning cus-
+tomers since. In 2024 and 2025, it took the company
+18 months after development was completed for Sam-
+sung’s 12-layer HBM3E to meet Nvidia’s qualification
+standards, a rigorous customer validation and testing
+process that suppliers must pass before their HBM
+products can be used in a customer’s systems.
+58 How-
+ever, despite a period of reported challenges, Samsung
+supplied more than 60 percent of HBM for Google’s
+tensor processing units—the second-most-produced
+AI chip in 2025. Samsung was also reportedly the
+first to ship commercial volumes of HBM4 in 2026.
+59
+
+===== PDF_PAGE 9 =====
+9
+and Japan. Capacity expansions are reinforcing the
+region’s central role: SK Hynix is developing a new
+semiconductor cluster in Yongin, South Korea, Sam-
+sung is expanding in Pyeongtaek, South Korea, and
+Micron is building or expanding facilities in Japan
+and in Singapore.
+HBM’s localized production reflects East Asia’s
+deeply entrenched semiconductor ecosystem, which
+includes specialized suppliers, skilled labor, and
+proximity to advanced packaging capabilities, such
+TSMC’s Chip-on-Wafer-on-Substrate technology,
+which is used to package most leading AI chips. The
+United States does not produce HBM domestically
+and lacks the integrated ecosystem required for end-
+to-end production. Although there are no plans to
+fully localize HBM manufacturing in the United
+States, several relevant upstream and downstream
+investments are underway. SK Hynix is building a
+back-end HBM packaging facility in Indiana, which
+is expected to come online in 2028.
+62 Micron is
+expanding its front-end DRAM capacity in Boise,
+Idaho, while also developing a large-scale DRAM
+The third company producing advanced HBM
+at scale as of 2026 is Micron. It is the only U.S.-
+headquartered HBM producer and held a market share
+of about 21 percent as of the end of 2025. Although
+it produces less HBM than Samsung or SK Hynix,
+Micron has secured major AI chip customers, includ-
+ing substantial volumes of HBM3E for Nvidia Black-
+well platforms and AMD’s MI350 chips.
+60 The com-
+pany began volume production of HBM4 designed for
+Nvidia’s Vera Rubin in the first quarter of 2026.
+61
+High Bandwidth Memory Production Is
+Centered in East Asia
+Geographically, HBM production is highly concen-
+trated in East Asia. South Korea is estimated to be
+in control of 78 percent of HBM wafer capacity by
+the end of 2026, while Taiwan will have 10 percent,
+Japan will have 8 percent, and China will have 4 per-
+cent (Figure 6). As of this writing, Samsung Elec-
+tronics and SK Hynix produce HBM exclusively in
+South Korea, while Micron manufactures in Taiwan
+FIGURE 5
+Global High Bandwidth Memory Market Share, by Manufacturer
+SOURCE: Features 2026 data from TrendForce on estimated market share.
+NOTE: F = forecasted; Q = quarter. As of the fourth quarter of 2025, SK Hynix held 57 percent of the global HBM market by revenue.
+Samsung and Micron held 22 percent and 21 percent of the market, respectively. The Chinese memory manufacturer CXMT held a negligible
+global market share. Quarterly market share values for 2026 are forecasted, not observed.
+20
+40
+60
+80
+100%
+1Q24
+2Q24
+3Q24
+4Q24
+1Q25
+2Q25
+3Q25
+4Q25
+1Q26F
+2Q26F
+3Q26F
+4Q26F
+Micron Samsung SK Hynix
+
+===== PDF_PAGE 10 =====
+10
+of consolidation in the DRAM industry. In the 2000s,
+the market supported around ten major producers,
+but weaker players were forced to exit or merge when
+oversupply repeatedly crashed prices and cut prof-
+its.
+65 By 2014, the top three memory manufacturers,
+Micron, Samsung, and SK Hynix, controlled around
+90 percent of global DRAM market share, provid-
+ing them with scale and process knowledge that later
+allowed them to dominate HBM.
+66 
+Samsung, Micron, and SK Hynix’s accumulated
+experience and production scale have created barriers
+that make entering the HBM market extremely chal-
+lenging. The costs to bring new production online are
+staggering: A new, state-of-the-art fab can cost $10 bil-
+lion or more, which includes the construction of clean
+rooms and procurement of specialized equipment,
+such as deep ultraviolet (DUV) and EUV lithography,
+as well as bonding tools for etching TSVs.
+67
+Government incentives can help offset a por-
+tion of these costs, but these incentives often benefit
+incumbent companies rather than helping new com-
+panies enter the market. Much like advanced logic
+semiconductor manufacturing—where subsidies
+in Arizona or Japan primarily supported expan-
+sions by TSMC, Samsung, and Intel rather than new
+fabrication complex in Clay, New York; production is
+expected to commence in 2030.
+63 These investments
+could lay the groundwork for a more complete U.S.
+domestic capability over time, but barring significant
+changes in company planning, the United States will
+depend on South Korea, Japan, and Taiwan for HBM
+until at least 2030.
+The Factors Shaping the High
+Bandwidth Memory Market
+The HBM market is growing rapidly and is projected
+to expand from $4 billion in 2023 to more than
+$130 billion by 2033.
+64 Beneath this growth trajectory
+are three structural factors that shape the HBM land-
+scape regardless of which players lead: (1) high con-
+centration with formidable barriers to entry, (2) cus-
+tomer demands driving rapid manufacturing process
+improvements, and (3) deliberate supply expansions.
+High Bandwidth Memory Production Is
+Concentrated and Has High Barriers to Entry
+Today, the HBM market is dominated by just three
+companies with the scale and technical prowess to
+compete. This concentration is the result of decades
+FIGURE 6
+Global High Bandwidth Memory Wafer Capacity Share, by Country
+SOURCE: Features data from TrendForce on global HBM-TSV wafer capacity distribution.
+NOTE: By the end of 2026, South Korea is projected to have 78 percent of global HBM wafer capacity, followed by Taiwan, Japan, and
+China.
+South Korea
+78%
+Taiwan
+10%
+Japan
+8%
+China
+4%
+
+===== PDF_PAGE 11 =====
+11
+rates.71 Combined with increases in interface width
+and architectural improvements, these advances
+determine the total memory bandwidth achievable
+per HBM stack, and ultimately, per AI chip. For
+example, Nvidia’s Vera Rubin (VR200), in produc-
+tion as of 2026, uses HBM4 with around 20 TBs per
+second of memory bandwidth, six times the memory
+bandwidth of Nvidia’s H100, which began production
+in just 2022.
+72
+Commercial success in HBM depends on align-
+ing production that meets aggressive customer
+roadmaps, but HBM’s technical difficulty makes
+this difficult in practice. Improving HBM perfor-
+mance requires either (1) advancing DRAM nodes
+or (2) adding more layers in an HBM stack, both of
+which come with significant challenges (see “How
+Is HBM Produced, and What Makes It So Challeng-
+ing?”) and typically face lower yields at early produc-
+tion stages.
+73 Competing in advanced HBM manu-
+facturing thus involves rapidly switching to new
+processes and rapidly improving those processes’
+reliability, which carries significant execution risk. 
+Supply Is Expanding Deliberately
+In response to strong AI-driven demand, produc-
+ers have expanded capacity steadily but deliberately,
+primarily by upgrading DRAM production lines with
+entrants—state support for HBM production over-
+whelmingly flows to firms that already have scale,
+technical capabilities, and the ability to secure cus-
+tomer qualifications.
+68
+Even when substantial state backing is offered,
+technological barriers themselves remain formidable.
+For example, CXMT has received billions of dollars
+in financial support but does not yet produce leading
+HBM generations at large volumes.
+69 Although capital
+can help a new entrant quickly expand production
+capacity, it cannot quickly compress the multiyear
+learning curves, research and development, and sup-
+plier integrations that shape competitiveness in HBM.
+Demand Pressures Drive Manufacturing
+Improvements
+With the introduction of each new HBM generation,
+manufacturers face customer pressure to improve
+performance (Figure 7).
+70 The Joint Electron Device
+Engineering Council Solid State Technology Asso-
+ciation (JEDEC), the industry’s standards body, sets
+baselines, but its specifications are typically conser-
+vative and consensus-based, designed so that mul-
+tiple vendors can manufacture the products at scale.
+In practice, leading chip designers and hyperscalers
+push manufacturers to exceed JEDEC minimums,
+particularly for such metrics as per-pin transfer
+FIGURE 7
+High Bandwidth Memory Wafer Capacity, by Manufacturer
+SOURCES: Features data from Wang, “How AI Growth Will Drive HBM Demand Beyond 2025”; Wu, “2024 HBM Bit Growth Estimated to
+Reach 260%, Making Up 14% of DRAM Industry”; and Wu, “2025 DRAM Market—Tight Supply Persists.”
+NOTE: Global end-of-year HBM-TSV wafer capacity tripled between the end of 2023 and the end of 2025. SK Hynix leads in capacity,
+followed by Samsung, Micron, and CXMT. 2026 end-of-year values are forecasted.
+100
+0
+200
+300
+400
+500
+2023 2024 2025 2026
+Samsung
+SK Hynix
+Micron
+CXMT
+Thousands of wafer starts per month
+(kWSPM); end-of-year
+
+===== PDF_PAGE 12 =====
+12
+effect of these two factors is that tight supply periods
+are difficult to overcome on short time frames.
+Conclusion
+HBM is a central part of modern AI infrastructure.
+As AI models have scaled in size and complexity,
+HBM has been the only memory technology that is
+capable of delivering the combination of bandwidth
+and capacity that keeps pace with leading AI work-
+loads. Other memory types might offer lower costs
+or greater capacity, but none match HBM’s combined
+performance profile in a compact package close to
+the processor. Although AI systems and chip designs
+are actively evolving and incorporating alternative
+memory types, HBM is likely to retain a central role as
+AI models and inference demands continue to scale.
+HBM’s performance comes at a price, both tech-
+nologically and economically. HBM can account for
+roughly 45 percent of the total cost of an AI chip,
+driven by a resource-intensive and complex manu-
+facturing process that demands some of the most
+advanced semiconductor equipment, years of accu-
+mulated process expertise, and billions of dollars in
+capital. These barriers have kept the market narrow:
+As of 2026, only SK Hynix, Samsung, and Micron
+produce advanced HBM at globally competitive scale,
+and virtually all of it is manufactured in East Asia.
+CXMT, despite receiving significant financial and
+policy support, produces only low volumes of HBM
+that lag several generations behind.
+For policy researchers, two areas are worth
+underscoring. First, given that U.S. export controls
+bar advanced HBM from export to China as of April
+2026, how long it will take CXMT to narrow the gap
+with competitors will determine HBM access for
+China’s AI chip makers. CXMT’s ability to advance
+its HBM designs and production volumes will shape
+whether China’s AI chipmakers remain bottlenecked
+or can secure a viable domestic source over time.
+Second, an open analytical question is whether U.S.
+industrial policy should aim to incentivize additional
+capacity to build a more integrated, end-to-end
+domestic HBM supply chain or whether the risk of
+relying on South Korean supply is sufficiently low
+specialized equipment to produce HBM.
+74 In absolute
+terms, total HBM wafer production capacity more
+than tripled between the end of 2023 and the end of
+2025.
+75 However, these expansions have been tightly
+tied to major customer roadmaps rather than more-
+speculative demand signals, creating the tight supply
+conditions observed in early 2026.
+76
+Two factors help explain why new supply has
+been relatively slow to come online despite fast-
+accelerating demand. First, meeting AI-driven
+demand for HBM requires more physical production
+capacity—more clean room space and more manu-
+facturing tools. Manufacturers can add capacity by
+reallocating clean room space and tools used for
+other products, such as conventional DRAM and
+NAND flash storage, but beyond that, they must
+build entirely new facilities, which takes years and
+billions of dollars. Memory manufacturers are cau-
+tious about building this capacity, given the indus-
+try’s long history of boom-and-bust cycles in which
+capacity built during strong demand periods comes
+online just as prices collapse.
+77 Second, strict cus-
+tomer qualification requirements mean that added
+wafer capacity does not immediately translate into
+usable supply. Each new HBM generation must be
+validated for use in customer systems, sometimes
+creating monthslong delays between capacity addi-
+tions and usable, commercial products.
+78 The net
+Commercial success
+in HBM depends on
+aligning production
+that meets aggressive
+customer roadmaps,
+but HBM’s technical
+difficulty makes this
+difficult in practice.
+
+===== PDF_PAGE 13 =====
+13
+conductor wafers. The most advanced form is DUV
+immersion lithography.
+Die. An unpackaged semiconductor chip. Dies are
+fabricated on silicon wafers before they are cut and
+packaged.
+Double data rate (DDR). The most widely used form
+of dynamic random-access memory, found in con-
+sumer devices and servers.
+Dynamic random-access memory (DRAM). A
+type of volatile memory used to store data that is
+frequently accessed by the processor. DRAM must
+be continuously powered to retain data. High Band-
+width Memory is a specialized variant of DRAM.
+Extreme ultraviolet (EUV). A lithography technol-
+ogy that uses 13.5-nanometer wavelengths of light to
+pattern semiconductor wafers at very fine resolutions.
+EUV enables advanced node fabrication and is used
+in leading-edge High Bandwidth Memory manu-
+facturing. ASML is the only manufacturer of EUV
+machines.
+Fabrication facility (fab). This is a term used in
+semiconductor manufacturing that refers to the large
+production facilities that produce semiconductors.
+Graphics double data rate (GDDR). A variant of
+dynamic random-access memory that is optimized
+for graphics cards, offering higher bandwidth than
+standard double data rate. Used in graphics process-
+ing units for consumer and professional graphics
+workloads but with lower bandwidth than High
+Bandwidth Memory.
+Graphics processing unit (GPU). A processor origi-
+nally designed for rendering graphics, it has become
+the dominant chip for artificial intelligence training
+and inference workloads because of its ability to per-
+form large numbers of mathematical operations in
+parallel.
+Hard disk drive (HDD). A non-volatile storage
+device that offers large storage capacity at low cost
+but is slower than solid-state drives and far slower
+than dynamic random-access memory.
+High Bandwidth Memory (HBM). A specialized
+variant of dynamic random-access memory (DRAM)
+that stacks multiple memory dies vertically and con-
+nects them with through-silicon vias. HBM delivers
+higher memory bandwidth and more capacity in a
+compact package than conventional DRAM and is
+and East Asia’s supplier ecosystem advantages suffi-
+ciently strong to make such measures unwarranted.
+This paper has aimed to provide a foundation
+of what HBM is, how it is made, and who controls
+its production from which more targeted analysis
+can proceed. The authors welcome engagement from
+policymakers, researchers, and industry practitioners
+working on these questions.
+Glossary
+Artificial intelligence (AI) chip. An integrated cir-
+cuit optimized for performing highly parallelized
+workloads, such as artificial intelligence training and
+inference. Also referred to as an artificial intelligence
+accelerator. Includes graphics processing units, tensor
+processing units, and other specialized processors.
+ASML. A Dutch multinational corporation, it is the
+world’s leading supplier of photolithography equip-
+ment, which is used in semiconductor manufactur-
+ing. ASML is the sole producer of extreme ultraviolet
+lithography machines and the dominant producer of
+deep ultraviolet lithography machines.
+Cache. A small, fast memory layer located close to or
+directly on a processor that stores frequently accessed
+data to reduce the time and energy cost of retriev-
+ing them from slower memory. Caches are typically
+implemented using static random-access memory
+and are organized in hierarchical levels (e.g., L1, L2,
+L3). Lower levels are faster and smaller.
+Central processing unit (CPU). A general-purpose
+processor that executes a wide variety of comput-
+ing tasks and serves as the primary control unit in
+computer systems. CPUs are less specialized than
+artificial intelligence (AI) accelerators for AI work-
+loads, but they are present in AI servers for handling
+non-AI tasks.
+Changxin Memory Technologies (CXMT). A
+state-backed memory semiconductor manufacturer
+in China. CXMT is, as of 2026, the most advanced
+memory manufacturer in China.
+Context window. The amount of information that an
+artificial intelligence model can recall when generat-
+ing a response, measured in tokens.
+Deep ultraviolet (DUV). A lithography technol-
+ogy that uses short wavelengths of light—typically
+193 nanometers or 248 nanometers—to pattern semi-
+
+===== PDF_PAGE 14 =====
+14
+Parameters. The numerical weights that define an
+artificial intelligence model’s behavior, which are
+progressively refined during training.
+Process node. A measure of miniaturization in
+semiconductor manufacturing, typically expressed
+in nanometers. Smaller nodes generally enable more
+transistors per chip and improved performance
+and energy efficiency, although cross-vendor com-
+parisons can be misleading because node names
+do not always correspond directly with a physical
+dimension.
+Processor. A semiconductor chip that executes com-
+putational instructions. Processors include central
+processing units, graphics processing units, and
+custom artificial intelligence (AI) accelerators. In AI
+systems, processors are typically paired with High
+Bandwidth Memory to meet the high memory band-
+width and capacity demands of training and infer-
+ence workloads.
+Registers. The smallest and fastest memory in a
+computer system, located directly within the proces-
+sor. Registers hold the data and instructions that the
+processor is actively computing at any given moment.
+Solid-state drive (SSD). A non-volatile storage device
+that uses flash memory to read and write data. SSDs
+are faster and more durable than hard disk drives
+but slower and less expensive than dynamic random-
+access memory.
+Static random-access memory (SRAM). The fastest
+type of memory, typically located directly on a pro-
+cessor chip. SRAM delivers data near-instantaneously
+but is expensive and low-density, making it unsuit-
+able for large-scale data storage.
+Through-silicon via (TSV). A microscopic vertical
+electrical connection drilled through a silicon die.
+TSVs are used in High Bandwidth Memory stacks
+and enable extremely wide data pathways that give
+High Bandwidth Memory its high bandwidth.
+Token. The smallest building blocks a model pro-
+cesses, such as a part of a word, image, or video.
+Training. The process by which an artificial intelli-
+gence model learns by adjusting its parameters based
+on exposure to large amounts of data. Training is
+computationally intensive and places heavy simul-
+taneous demands on both memory bandwidth and
+capacity.
+the standard memory technology used in advanced
+artificial intelligence chips.
+Inference. The process of generating outputs from
+a trained artificial intelligence model. For example,
+when a user sends a message to a large language
+model and receives a response, that is inference.
+Interposer. A thin silicon layer that provides high-
+density electrical connections needed to transfer data
+at high speed. The interposer is a key component of
+the advanced packaging that makes High Bandwidth
+Memory’s performance possible.
+Key-value cache (KV cache). A memory structure
+used during artificial intelligence inference that
+stores intermediate values from previously processed
+tokens, allowing the model to generate new tokens
+without recomputing prior context from scratch. The
+KV cache grows with context length and batch size
+and can reach terabytes in large-scale deployments.
+Lithography. A semiconductor manufacturing pro-
+cess that uses light to transfer circuit patterns onto a
+silicon wafer. Lithography is one of the most critical
+steps in chip fabrication, determining the minimum
+feature size achievable on a given process node.
+Logic process. A semiconductor fabrication process
+optimized for manufacturing digital logic circuits,
+including graphics processing units, central process-
+ing units, and networking processors.
+Low-power double data rate (LPDDR). A variant of
+double data rate designed for energy efficiency, com-
+monly used in mobile devices and laptops. LPDDR
+offers lower bandwidth than High Bandwidth
+Memory but consumes significantly less power.
+Memory bandwidth. The rate at which data can be
+read from or written to memory, typically measured
+in gigabytes per second or terabytes per second.
+Memory bandwidth is a critical constraint in artifi-
+cial intelligence systems.
+Memory capacity. The total amount of data that
+memory can store at one time, typically measured in
+gigabytes. Distinct from memory bandwidth.
+NAND. A high-density, non-volatile memory
+technology that retains data without power, com-
+monly used in solid-state drives, USB drives, and
+smartphones.
+Non-volatile memory. A type of memory that retains
+data without power.
+
+===== PDF_PAGE 15 =====
+15
+Volatile memory. Memory that requires continu-
+ous power to retain data. Dynamic random-access
+memory, including High Bandwidth Memory, is
+volatile. When power is cut, all data stored in volatile
+memory is lost.
+Wafer. A thin circular disc of silicon on which semi-
+conductor chips are fabricated. Multiple dies are
+produced simultaneously on a single wafer before
+being cut apart.
+Wafer starts per month (WSPM). The number of
+silicon wafers that begin the fabrication process at a
+given facility each month. WSPM is commonly used
+to estimate a fab’s total production capacity.
+Working memory. The volatile memory that holds
+data and instructions for use by the processor. Work-
+ing memory keeps data close to the processor for fast
+access during computation, as opposed to long-term
+storage, which retains data persistently but is much
+slower to access.
+Yield. The proportion of functional dies successfully
+produced from a wafer. Higher yields indicate more-
+efficient manufacturing with fewer defects. Low
+yields increase per-chip costs and constrain supply.
+Notes
+1 Peddu, “AI’s Rapid Growth”; Mujtaba, “Next-Gen HBM Archi-
+tecture Detailed Including HBM4, HBM5, HBM6, HBM7 &
+HBM8”; Epoch AI, “Data on AI Models”; Heim and Lin, “When
+AI Takes Time to Think.”
+2 Patel et al., “Scaling the Memory Wall”; Epoch AI, “Data on AI
+Models.”
+3 Computer Security Resource Center, “Glossary: Volatile
+Memory.”
+4 Awati and Sliwa, “Non-Volatile Memory (NVM).”
+5 At the very top of the hierarchy sit CPU registers —tiny,
+ultrafast storage locations built directly into the processor core
+that hold values being actively computed at any given moment.
+Because registers are an internal part of the processor rather than
+a distinct memory technology, we do not cover them further in
+this paper.
+6 Science Direct, “Dynamic Random Access Memory.”
+7 Sastry et al., “Computing Power and the Governance of Artifi-
+cial Intelligence.”
+8 Epoch AI, “Data on AI Models.”
+9 Aubrey and Stam, “Inside NVIDIA Blackwell Ultra.” FP16 is
+half-precision floating point, and HBM3E is HBM 3 Extended.
+10 Jegou and Jeblick, “Mastering Long Contexts in LLMs with
+KVPress.”
+11 Algorithmic optimizations, such as quantization techniques
+and more-efficient attention mechanisms, may reduce the
+memory capacity and bandwidth required per token. However,
+these approaches are best understood as part of a broader, continu-
+ous trajectory of efficiency improvements and are not necessarily
+discrete breakthroughs that fundamentally alter memory demand.
+12 Gholami et al., “AI and Memory Wall.”
+13 Ma and Patterson, “Challenges and Research Directions for
+Large Language Model Inference Hardware.”
+14 Ma and Patterson, “Challenges and Research Directions for
+Large Language Model Inference Hardware.”
+15 Patel et al., “Scaling the Memory Wall.”
+16 Aubrey and Stam, “Inside NVIDIA Blackwell Ultra.”
+17 Gambino, Adderly, and Knickerbocker, “An Overview
+of Through-Silicon-Via Technology and Manufacturing
+Challenges.”
+18 Ferro, “It’s Official”; Kamath, “HBM4 Elevates AI Train-
+ing Performance to New Heights”; Kingston, “DDR5 Memory
+Standard.”
+19 Ferro, “On the Road to Higher Memory Bandwidth.”
+20 “The High-Stakes Race for Sustainable AI.”
+21 This production cost estimate from Epoch AI assumes 192
+GB of HBM3E and a cost of between $14 and $17 per GB (Somala,
+“NVIDIA’s B200 Costs Around $6,400 to Produce, with Memory
+Accounting for Half”).
+22 A semiconductor clean room is a controlled environment that
+maintains low levels of airborne particles and stringent require-
+ments for temperature or humidity (Chien, “Semiconductor
+Cleanrooms
+ 101
+”).
+23 Zakaria, “How Far Can Chinese HBM Go?”
+24 Notably, DRAM scaling has progressed at a slower pace than
+advanced logic, now needing roughly ten years to double bit
+density. Both the transistors and capacitors of a memory cell
+need to scale in tandem to enable bit density improvements, a
+paradigm that is approaching physical as chipmakers continue
+to push capacitor aspect ratios to the extreme (Patel et al., “The
+Memory Wall”).
+25 More precisely, in DRAM, nodes track the “half-pitch”
+distance of the active area in a memory cell array (Tran,
+“Inside
+ 1
+-Alpha DRAM, the World’s Most Advanced DRAM
+Process Technology”).
+26 “10,000 Times Thinner Than Human Hair?”
+27 “Samsung Starts Mass Producing Industry’s First
+10-Nanometer Class DRAM.” Naming conventions also differ
+across memory manufacturers, and the same node does not
+imply equivalent technical specifications.
+28 Lee, Kim, and Lee, “SK Hynix Develops 1Znm 16Gb
+DDR4 DRAM”; “Samsung Develops Industry’s First 3rd-
+Generation 10nm-Class DRAM for Premium Memory Appli-
+cations”; Bali, “Micron Commences Volume Production
+of 1z Nanometer DRAM Process Node.”
+
+===== PDF_PAGE 16 =====
+16
+29 Choe, “First China-Made DDR5 Memory Released from
+CXMT China.”
+30 For example, HBM3 uses 1z node DRAM, HBM3E uses the 1α
+node, and HBM4 is expected to rely on the 1β, 1c, or 1γ DRAM
+nodes (Morris and Wang, “Deep Dive on HBM”).
+31 Varghese, “DRAM Scaling Requires New Materials Engineer-
+ing Solutions.”
+32 Terkel, “Yield Learning Curve Models in Semiconductor
+Manufacturing.”
+33 Because TSV formation is the defining feature of front-end
+HBM production, HBM wafer capacity is often quoted in terms
+of HBM-TSV capacity, reflecting the fact that TSV processing
+ultimately defines output. 
+34 Patel et al., “Scaling the Memory Wall.”
+35 James, “Here’s Why HBM Is Coming for Your PC’s RAM.”
+36 Lee, Han, and Kang, “TSV Built-In Self-Repair Mechanism
+for Improving the Yield and Reliability of HBM.”
+37 Peters, “What’s Next for Through-Silicon Vias.”
+38 Kang, “Creating New Values in DRAM Using Through-
+Silicon Via Technology for Continued Scaling in Memory System
+Performance and Capacity.”
+39 Applied Materials, “High Bandwidth Memory (HBM).”
+40 Shilov, “HBM Undergoes Major Architectural Shakeup as
+TSMC and GUC Detail HBM4, HBM4E and C-HBM4E.”
+41 Nomad76, “TSMC Showcases Custom C-HBM4E & N3P
+Logic Dies Target Double Efficiency.”
+42 “Samsung Reportedly Moves Custom HBM Logic Die to 2nm
+Foundry Process for the First Time.”
+43 Kanellos, “Custom HBM.”
+44 Morris and Wang, ”Deep Dive on HBM.”
+45 Joo, “Samsung’s Development Phase for HBM4E Reaches
+Base Die Design, Custom HBM5 Next.”
+46 “Samsung Ships Industry-First Commercial HBM4 with
+Ultimate Performance for AI Computing,” Samsung Newsroom;
+Shilov, “TSMC’s 3nm Update.”
+47 Tsai and Han, “Bridging Performance and Yield.”
+48 Sekar, “Why Is HBM So Hard to Manufacture?”
+49 Clarke, “HBM to Be 20% of DRAM Market in 2024.”
+50 According to commentary from TechInsights, “it will be
+difficult for [CXMT] to achieve a HBM3 mass production yield
+above 40% by the first half of next year” (Wang, “This is BIG if
+true . . .”).
+51 Byung-Soo, “CXMT Struggles to Expand DRAM Production
+amid U.S. Sanctions.”
+52 Other relevant ways to gauge competitiveness include evalu-
+ations of product, manufacturing, or customer integration
+metrics. At the product level, these could include per-pin data
+transfer rates or energy use per bit. On the manufacturing side,
+these could include cost per GB of capacity or cost per GB per
+second of bandwidth. Customer integration metrics, such as
+qualification breadth with leading AI chip designers, provide a
+practical signal of whether technical capabilities are translating
+into market adoption. 
+53 Wang, “How AI Growth Will Drive HBM Demand Beyond
+2025.”
+54 “Continuing to Make HBM History.”
+55 Ahmad, “SK Hynix Maintains Memory Leadership with First
+HBM4.”
+56 Wang, “How AI Growth Will Drive HBM Demand Beyond
+2025.”
+57 Patel et al., “Huawei AI CloudMatrix 384”; Liang, “China’s
+HBM Demands Account for 7% of 2024 Global Total.”
+58 Hwang, Kim, and Park, “Samsung Clears Nvidia Hurdle for
+12-Layer HBM3E Supply, Setting Stage for HBM4 Battle.”
+59 “Samsung Ships Industry-First Commercial HBM4 with
+Ultimate Performance for AI Computing”; “Samsung Reportedly
+Supplies
+ 6
+0%+ of Google TPU HBM3E, Set to Remain Primary
+Supplier in 2
+026.”
+60 “Micron Reveals Three Culprits Behind Memory Crunch”;
+“Micron Scales Up HBM to Four Major GPU/ASIC Clients, Tar-
+gets 24% Market Share by Year-End.”
+61 Liu Evensen and Kumar, “Micron in High-Volume Produc-
+tion of HBM4 Designed for NVIDIA Vera Rubin, PCIe Gen6 SSD
+and SOCAMM2.”
+62 “The Anchor of Future AI Memory in Indiana.” 
+63 Newby and Kumar, “Micron Celebrates Official Ground-
+breaking at New York Megafab Site.”
+64  Catsaros, “High-Bandwidth Memory Chip Market Could
+Grow to $130 B
+illion by 2033, According to Bloomberg
+Intelligence.”
+65 Patel et al., “Memory Mania.”
+66 Bauer et al., “Memory.”
+67 Mukano, “Micron to Invest $9.6 Billion in Western Japan to
+Build AI Memory Chip Plant.”
+68  For example, HBM manufacturing is designated a “national
+strategic technology” in South Korea; this designation confers
+substantial tax benefits and incentives to both Samsung and SK
+Hynix. The Japanese government has offered a variety of incen-
+tives to build memory fabs in Japan, including direct funding,
+tax breaks, infrastructure aid, and workforce development. In
+the United States, the 2022 Creating Helpful Incentives to Pro-
+duce Semiconductors (CHIPS) Act extended direct funding,
+as well as tax and production credits, to Micron and SK Hynix
+(“Japan Reportedly Offers Half-Cost Fabs and Full Subsidies, yet
+Samsung and SK Hynix Stay Cautious”).
+69 “With Two October Investments, Big Fund Phase II Commits
+Ne
+arly 1
+9 B
+illion R
+MB.”
+70 Min-Gyu, “Nvidia Raises HBM4 Bar, Samsung and SK Hynix
+Race to Meet Next-Gen Chip Supply Standards.”
+71 “HBM4 Race Heats Up.”
+
+===== PDF_PAGE 17 =====
+17
+72 Goode, “Jensen Huang Says Nvidia’s New Vera Rubin Chips
+Are in ‘Full Production’”; AleksandarK, “NVIDIA Lowers HBM4
+Specs for Vera Rubin VR200 as Memory Suppliers Miss 22 TB/s
+Target”; NVIDIA, “NVIDIA H100 Tensor Core GPU.”
+73 Terkel, “Yield Learning Curve Models in Semiconductor
+Manufacturing.”
+74 “Samsung and SK Hynix Urgently Reallocate 20% of DRAM
+Pr
+oduction Capacity to Support Rising HBM Demand.”
+75 Wang, “How AI Growth Will Drive HBM Demand Beyond
+2025”; Wu, “2024 HBM Supply Bit Growth Estimated to Reach
+260%, Making Up 14% of DRAM Industry.”
+76 Jae-Lim, “Samsung, SK Hynix Dramatically Scaling Up HBM
+Production to Meet Rising Demand, Recent Nvidia Deals.”
+77 The most recent example came during the coronavirus dis-
+ease 2019 (COVID-19) pandemic, when manufacturers expanded
+aggressively to meet surging demand for consumer electronics,
+only to face severe oversupply and a price crash in 2022–2023.
+78 Lee, “Samsung Electronics Still Faces Challenges Securing
+HBM3E Orders Even If It Passes NVIDIA Quality Tests.”
+References
+“10,000 Times Thinner Than Human Hair? How SK Hynix’s
+Miniaturization Innovation Secured Its DRAM Leadership,”
+SK
+ H
+ynix Newsroom, April 2
+2, 2025.
+Ahmad, Majeed, “SK Hynix Maintains Memory Leadership with
+First HBM4,” EE Times, September
+ 1
+2, 2
+025.
+AleksandarK, “NVIDIA Lowers HBM4 Specs for Vera
+Rubin VR200 as Memory Suppliers Miss 22 TB/s Target,”
+TechPowerUp, March 3, 2026.
+“The Anchor of Future AI Memory in Indiana: SK Hynix West
+Lafayette,” webpage, SK Hynix, undated. As of April 16, 2026:
+https://www.skhynix.com/westlafayette.IN/
+Applied Materials, “High Bandwidth Memory (HBM),” webpage,
+undated. As of May 5, 2026:
+https://www.appliedmaterials.com/us/en/semiconductor/
+markets-and-inflections/memory/hbm.html
+Aubrey, Kyle, and Nick Stam, “Inside NVIDIA Blackwell Ultra:
+The Chip Powering the AI Factory Era,” NVIDIA Developer
+Technical Blog, August 22, 2025.
+Awati, Rahul, and Carol Sliwa, “Non-Volatile Memory (NVM),”
+TechTarget, July 16, 2024.
+Bali, Vishal, “Micron Commences Volume Production
+of 1z Nanometer DRAM Process Node,” press release, Micron,
+August 15, 2019.
+Bauer, Harald, Stefan Burghardt, Sid Tandon, and Florian
+Thalmayr, “Memory: Are Challenges Ahead?” McKinsey &
+Company, March
+ 8
+, 2
+016.
+Byung-Soo, Chun, “CXMT Struggles to Expand DRAM
+Production amid U.S. Sanctions,” ChosunBiz , July
+ 29
+, 2
+025.
+Catsaros, Oktavia, “High-Bandwidth Memory Chip Market
+Could Grow to $130
+ B
+illion by 2033, According to Bloomberg
+Intelligence,” Bloomberg, January 1
+3, 2
+025.
+Chien, Anthony, “Semiconductor Cleanrooms 1
+01,” American
+Cleanroom Systems, webpage, undated. As of March 6, 2026:
+https://www.americancleanrooms.com/
+semiconductor-cleanrooms-101
+“China Enters 2025 with Big Memory Breakthroughs,”
+TechInsights blog, undated.
+Choe, Joengdong, “First China-Made DDR5 Memory Released
+from CXMT China,” TechInsights , January 24, 2025.
+Clarke, Peter, “HBM to Be 20% of DRAM Market in
+2024,”
+ E
+E N
+ews E
+urope, March 1
+8, 2
+024.
+Computer Security Resource Center, “Glossary: Volatile
+Memory,” National Institute of Standards and Technology,
+undated.
+“Continuing to Make HBM History: The Story of SK
+ H
+ynix’s
+HBM Development,” press release, SK H
+ynix, September 8, 2022.
+Epoch AI, “Data on AI Models,” webpage, updated January 6,
+2026. As of May 5, 2026:
+https://epoch.ai/data/ai-models
+Fan, Amy, “1c DRAM Key to Determining Memory Market
+Leadership in 2024,” DigiTimes Asia , May 30, 2023.
+Ferro, Frank, “On the Road to Higher Memory Bandwidth,”
+Semiconductor Engineering , September 9, 2021.
+Ferro, Frank, “It’s Official: HBM3 Dons the Crown of Bandwidth
+King,” Semiconductor Engineering , February 10, 2022.
+Gambino, Jeffrey P., Shawn A. Adderly, and John U.
+Knickerbocker, “An Overview of Through-Silicon-Via
+Technology and Manufacturing Challenges,” Microelectronic
+Engineering, Vol. 135, March 5, 2015.
+GFreeman, “Micron Ships World’s First 1γ (1-Gamma)-
+Based LPDDR5X, Enabling Rich Mobile AI Experiences,”
+TechPowerUp, June 4, 2025.
+Gholami, Amir, Zhewei Yao, Sehoon Kim, Coleman Hooper,
+Michael W. Mahoney, and Kurt Keutzer, “AI and Memory Wall,”
+arXiv, arXiv:2403.14123, March 21, 2024.
+Goode, Lauren, “Jensen Huang Says Nvidia’s New Vera Rubin
+Chips Are in ‘Full Production,’” Wired , January 5, 2026.
+“HBM4 Race Heats Up: Samsung Targets 13
+ G
+bps HBM4e,
+Reportedly Revamping Strategy,” TrendForce News ,
+October 1
+5, 2
+025.
+Heim, Lennart, and Ashley Lin, “When AI Takes Time to Think:
+Implications of Test-Time Compute,” commentary, RAND
+Corporation, March 26, 2025. As of May 5, 2026:
+https://www.rand.org/pubs/commentary/2025/03/
+when-ai-takes-time-to-think-implications-of-test-time.html
+“The High-Stakes Race for Sustainable AI: Is HBM Stretching
+the Planet’s Limits?” TechInsights, January 8, 2026.
+Hwang, Jeong-Soo, Chae-Yeon Kim, and Eui-Myung Park,
+“Samsung Clears Nvidia Hurdle for 12-Layer HBM3E Supply,
+Setting Stage for HBM4 Battle,” Korea Economic Daily Global
+Edition, September
+ 1
+9, 2
+025.
+Jae-Lim, Lee, “Samsung, SK Hynix Dramatically Scaling Up
+HBM Production to Meet Rising Demand, Recent Nvidia Deals,”
+Korea JoongAng Daily, January 4, 2026.
+James, Luke, “Here’s Why HBM Is Coming for Your PC’s RAM,”
+Tom’s Hardware, December 19, 2025.
+
+===== PDF_PAGE 18 =====
+18
+“Japan Reportedly Offers Half-Cost Fabs and Full Subsidies,
+yet Samsung and SK Hynix Stay Cautious,” TrendForce News ,
+February 24, 2026.
+Jegou, Simon, and Maximilian Jeblick, “Mastering Long
+Contexts in LLMs with KVPress,” Hugging Face, January 23,
+2025.
+Joo, Jeong Il, “Samsung’s Development Phase for HBM4E
+Reaches Base Die Design, Custom HBM5 Next,” TheElec,
+January 23, 2026.
+Kamath, Nidish, “HBM4 Elevates AI Training Performance to
+New Heights,” Semiconductor Engineering , May 15, 2025.
+Kanellos, Michael, “Custom HBM: What Is It and Why It’s the
+Future,” Marvell, December 10, 2024.
+Kang, Uksong, “Creating New Values in DRAM Using Through-
+Silicon-Via Technology for Continued Scaling in Memory System
+Performance and Capacity,” SK Hynix News, November 20, 2019.
+Kingston, “DDR5 Memory Standard: An Introduction to the
+Next Generation of DRAM Module Technology,” webpage,
+January 2024. As of May 5, 2026:
+https://www.kingston.com/en/blog/pc-performance/
+ddr5-overview
+Kostovic, Aleksandar, “SK Hynix Starts Manufacturing 1anm
+DRAM Using EUV Lithography,” Tom’s Hardware, July 12, 2021.
+Lau, Steffi, “Micron Ships World’s Most Advanced DRAM
+Technology with 1-Beta Node,” press release, Micron,
+November 1, 2022.
+Lee, Hyun Kyung Olivia, Jaehwan Kevin Kim, and Eun Suk Yixi
+Lee, “SK Hynix Develops 1Znm 16Gb DDR4 DRAM,” press
+release, SK Hynix, October 21, 2019.
+Lee, Se-yeon, “Samsung Electronics Still Faces Challenges
+Securing HBM3E Orders Even If It Passes NVIDIA Quality
+Tests,” DealSite, May
+ 2
+3, 2
+025.
+Lee, Youngkwang, Donghyun Han, and Sungho Kang, “TSV
+Built-In Self-Repair Mechanism for Improving the Yield and
+Reliability of HBM,” IEEE Transactions on Very Large Scale
+Integration (VLSI) Systems , Vol. 31, No. 4, March 1, 2023.
+Liang, Amanda, “China’s HBM Demands Account for 7% of 2024
+Global Total,” DigiTimes, June 28, 2024.
+Liu Evensen, Mengxi, and Satya Kumar, “Micron in High-
+Volume Production of HBM4 Designed for NVIDIA Vera
+Rubin, PCIe Gen6 SSD and SOCAMM2,” press release, Micron,
+March 16, 2026.
+Ma, Xiaoyu, and David Patterson, “Challenges and Research
+Directions for Large Language Model Inference Hardware,”
+arXiv, arXiv:2601.05047, January 8, 2026.
+“Micron Reveals Three Culprits Behind Memory Crunch—and
+Why It Won’t Ease Soon,” TrendForce News, December
+ 1
+8, 2
+025.
+“Micron Scales Up HBM to Four Major GPU/ASIC Clients,
+Targets 24% Market Share by Year-End,” TrendForce News ,
+June
+ 2
+6, 2
+025.
+Min-Gyu, Hwang, “Nvidia Raises HBM4 Bar, Samsung and SK
+Hynix Race to Meet Next-Gen Chip Supply Standards,” Chosun
+Biz, January
+ 1
+5, 2
+026.
+Morris, Moore, and Ray Wang, “Deep Dive on HBM,” Nomad
+Semi, Substack, June 3, 2025.
+Mujtaba, Hassan, “Next-Gen HBM Architecture Detailed
+Including HBM4, HBM5, HBM6, HBM7 & HBM8: Up to 64
+TB/s Bandwidth, 240 GB Capacity per 24-Hi Stack, Embedded
+Cooling,” Wccftech , June 14, 2025.
+Mukano, Ryo, “Micron to Invest $9.6 Billion in Western Japan to
+Build AI Memory Chip Plant,” Nikkei Asia , November
+ 29
+, 2
+025.
+Newby, Anna, and Satya Kumar, “Micron Celebrates Official
+Groundbreaking at New York Megafab Site,” press release,
+Micron, January 16, 2026.
+Nomad76, “TSMC Showcases Custom C-HBM4E, N3P Logic
+Dies Target Double Efficiency,” TechPowerUp, December 1, 2025.
+NVIDIA, “NVIDIA H100 Tensor Core GPU,” datasheet, 2024.
+Patel, Dylan, Jeff Koch, Tanj Bennett, Wega Chu, and Afzal
+Ahmad, “The Memory Wall: Past, Present, and Future of
+DRAM,” SemiAnalysis blog, Substack, September 3, 2024.
+Patel, Dylan, Daniel Nishball, Myron Xie, Patrick Zhou, Ivan
+Chiam, AJ Kourabi, Christopher Seifel, and Doug O’Laughlin,
+“Huawei AI CloudMatrix 384 – China’s Answer to Nvidia GB200
+NVL72,” SemiAnalysis blog, Substack, April 16, 2025.
+Patel, Dylan, Ray Wang, Myron Xie, Doug O’Laughlin, and Jeff
+Koch, “Memory Mania: How a Once-in-Four-Decades Shortage
+Is Fueling a Memory Boom,” SemiAnalysis blog, Substack,
+February
+ 6
+, 2
+026.
+Patel, Dylan, Myron Xie, Tanj Bennett, Ivan Chiam, and Jeff
+Koch, “Scaling the Memory Wall: The Rise and Roadmap of
+HBM,” SemiAnalysis blog, Substack, August 11, 2025.
+Peddu, Subash, “AI’s Rapid Growth: The Crucial Role of High
+Bandwidth Memory,” Semiconductor Engineering , February 27,
+2025.
+Peters, Laura, “What’s Next for Through-Silicon Vias,”
+Semiconductor Engineering , October 21, 2021.
+“Samsung and SK Hynix Urgently Reallocate 20% of DRAM
+Production Capacity to Support Rising HBM Demand,”
+TrendForce News, May
+ 1
+4, 2
+024.
+“Samsung Develops Industry’s First 3rd-Generation 10nm-
+Class DRAM for Premium Memory Applications,” press release,
+Samsung, March 20, 2019.
+Samsung Newsroom, “Samsung Begins Mass Production of 16Gb
+LPDDR5: DRAM at World’s Largest Semiconductor Line,” press
+release, August 29, 2020.
+“Samsung Reportedly Moves Custom HBM Logic Die to
+2nm Foundry Process for the First Time,” TrendForce News ,
+January 21, 2026.
+“Samsung Reportedly Plans 200K 1c DRAM Wafers/Month by
+2026, About One-Third of Its Total Output,” TrendForce News ,
+November 19, 2025.
+“Samsung Reportedly Supplies
+ 6
+0%+ of Google TPU HBM3E,
+Set to Remain Primary Supplier in 2
+026,” TrendForce News,
+December 1
+, 2
+025.
+Samsung, “Samsung Starts Mass Production of Most Advanced
+14nm EUV DDR5 DRAM,” press release, October 11, 2021.
+“Samsung Ships Industry-First Commercial HBM4 with
+Ultimate Performance for AI Computing,” Samsung Newsroom,
+February 12, 2026.
+“Samsung Starts Mass Producing Industry’s First 10-Nanometer
+Class DRAM,” press release, Samsung Newsroom , April 5, 2016.
+
+===== PDF_PAGE 19 =====
+19
+Sasso, Kelly, “Micron Delivers Industry’s First 1α DRAM
+Technology,” Micron, January 26, 2021.
+Sastry, Girish, Lennart Heim, Haydn Belfield, Markus
+Anderljung, Miles Brundage, Julian Hazell, Cullen O’Keefe,
+Gillian K. Hadfield, Richard Ngo, Konstantin Pilz, et al.,
+“Computing Power and the Governance of Artificial
+Intelligence,” arXiv, arXiv:2402.08797, February 13, 2024.
+Science Direct, “Dynamic Random Access Memory,” Computer
+Science, webpage, undated. As of May 5, 2026:
+https://www.sciencedirect.com/topics/computer-science/
+dynamic-random-access-memory
+Sekar, Vikram, “Why Is HBM So Hard to Manufacture?” Vik’s
+Newsletter, Substack, August 31, 2025.
+Shilov, Anton, “HBM Undergoes Major Architectural Shakeup
+as TSMC and GUC Detail HBM4, HBM4E and C-HBM4E—3nm
+Base Dies to Enable 2.5x Performance Boost with Speeds of Up to
+12.8GT/s by 2027,” Tom’s Hardware, December 2, 2025.
+Shilov, Anton, “TSMC’s 3nm Update: N3P in Production, N3X
+on Track,” Tom’s
+ H
+ardware, February 19, 2026.
+“SK Hynix Develops 1Znm 16Gb DDR4 DRAM,” TechPowerUp,
+October 20, 2019.
+“SK Hynix Reportedly Set 1c DRAM Mass Production in Feb,
+While Samsung Delays by Six Months,” TrendForce News ,
+January 22, 2025.
+Somala, Venkat, “NVIDIA’s B200 Costs Around $6,400 to
+Produce, with Memory Accounting for Half,” Epoch
+ A
+I Data
+Insights, December 1
+0, 2
+025.
+Terkel, Israel, “Yield Learning Curve Models in Semiconductor
+Manufacturing,” IEEE Transactions on Semiconductor
+Manufacturing, Vol. 26, No. 4, November 2013.
+Tran, Thy, “Inside
+ 1
+-Alpha DRAM, the World’s Most Advanced
+DRAM Process Technology,” blog post, Micron, January 1, 2
+021.
+Tsai, Damon, and Woo Young Han, “Bridging Performance and
+Yield: The Evolving Role of Interconnect Technologies in HBM,”
+Onto Innovation, September 5, 2025.
+Varghese, Sony, “DRAM Scaling Requires New Materials
+Engineering Solutions,” Applied Materials, blog post, April 27,
+2021.
+Wang, Ellie, “How AI Growth Will Drive HBM Demand
+Beyond 2025: Shaping Product Evolution and Market Dynamics,”
+briefing slides, Future of Memory and Storage, 2025.
+Wang, Ray, “This is BIG if true . . . ,” post on X platform,
+November 6, 2025. As of May 6, 2026:
+https://x.com/rwang07/status/1986330833880326272
+“With Two October Investments, Big Fund Phase
+ I
+I Commits
+Nearly 1
+9 B
+illion R
+MB,” TrendForce News, November 1
+, 2
+023.
+Wu, Avril, “2025 DRAM Market—Tight Supply Persists,”
+briefing slides, Future Memory and Storage, 2024.
+Wu, Avril, “2024 HBM Supply Bit Growth Estimated to Reach
+260%, Making Up 14% of DRAM Industry,” TrendForce News ,
+March 18, 2024.
+Zakaria, Aqib, “How Far Can Chinese HBM Go?” ChinaTalk ,
+Substack, December 5, 2025.
+Acknowledgments
+We graciously thank our peer reviewers, Vikram Sekar
+and Jared Mondschein, for their constructive comments
+that greatly improved the quality of this paper. We thank
+the RAND quality assurance team, including Gary Cec-
+chine, Jason Etchegaray, and Paige Smith, for their diligent
+review and support in moving the paper forward. We
+also thank Bill Zito for his helpful comments and discus-
+sion during drafting and Kyle Siler-Evans for his review.
+Finally, we thank Rachel Ostrow, Allison Kerns, Sean
+Mintus, and colleagues from RAND Communications and
+External Affairs for their guidance, editorial support, and
+assistance with figures.
+Abbreviations
+AI artificial intelligence
+AMD Advanced Micro Devices
+CPU central processing unit
+CXMT ChangXin Memory Technologies
+DDR double data rate
+DRAM dynamic random-access memory
+DUV deep ultraviolet (lithography)
+EUV extreme ultraviolet (lithography)
+fab fabrication facility
+GB gigabyte
+GDDR graphics double data rate
+GPU graphics processing unit
+HBM High Bandwidth Memory
+HDD hard disk drive
+JEDEC Joint Electron Device Engineering Council
+Solid State Technology Association
+KV key-value
+LPDDR low-power double data rate
+MR-MUF mass-reflow molded underfill
+nm nanometer
+SRAM static random-access memory
+SSD solid-state drive
+TB terabyte
+TSMC Taiwan Semiconductor Manufacturing
+Company
+TSV through-silicon via
+
+===== PDF_PAGE 20 =====
+PE-A4748-1
+RAND is a research organization that
+develops solutions to public policy
+challenges to help make communities
+throughout the world safer and more
+secure, healthier and more prosperous.
+RAND is nonprofit, nonpartisan, and
+committed to the public interest.
+Research Integrity
+Our mission to help improve policy and
+decisionmaking through research and
+analysis is enabled through our core
+values of quality and objectivity and our
+unwavering commitment to the highest
+level of integrity and ethical behavior. To
+help ensure our research and analysis
+are rigorous, objective, and nonpartisan,
+we subject our research publications to
+a robust and exacting quality-assurance
+process; avoid both the appearance and
+reality of financial and other conflicts of
+interest through staff training, project
+screening, and a policy of mandatory
+disclosure; and pursue transparency
+in our research engagements
+through our commitment to the open
+publication of our research findings and
+recommendations, disclosure of the
+source of funding of published research,
+and policies to ensure intellectual
+independence. For more information, visit
+www.rand.org/about/research-integrity.
+RAND’s publications do not necessarily
+reflect the opinions of its research clients
+and sponsors.
+ is a registered
+trademark.
+Limited Print and Electronic
+Distribution Rights
+This publication and trademark(s)
+contained herein are protected by law.
+This representation of RAND intellectual
+property is provided for noncommercial
+use only. Unauthorized posting of this
+publication online is prohibited; linking
+directly to its webpage on rand.org is
+encouraged. Permission is required from
+RAND to reproduce, or reuse in another
+form, any of its research products for
+commercial purposes. For information
+on reprint and reuse permissions, please
+visit www.rand.org/about/publishing/
+permissions.
+For more information on this publication,
+visit www.rand.org/t/PEA4748-1.
+© 2026 RAND Corporation
+About This Paper
+Artificial intelligence (AI) systems depend on several enabling hardware tech-
+nologies, and High Bandwidth Memory (HBM) is among the most critical. HBM
+is a specialized type of memory used in most leading AI chips, but it is produced
+at globally competitive scale by only three companies, and it relies on complex
+manufacturing processes concentrated in a handful of facilities in East Asia. In
+this paper, we synthesize technical and market analysis of the HBM ecosystem:
+how HBM works, how it is produced, and who controls its production. We aim
+to equip policymakers and researchers with a primer that can be referenced in a
+variety of policy discussions.
+Center on AI, Security, and Technology
+RAND Global and Emerging Risks is a division of RAND that delivers rigor-
+ous and objective public policy research on the most consequential challenges
+to civilization and global security. This work was undertaken by the division’s
+Center on AI, Security, and Technology, which aims to examine the opportuni-
+ties and risks of rapid technological change, focusing on artificial intelligence,
+security, and biotechnology. For more information, contact cast@rand.org.
+Funding
+This effort was independently initiated and conducted within the Center on AI,
+Security, and Technology using income from operations and gifts and grants
+from philanthropic supporters. A complete list of donors and funders is avail-
+able at www.rand.org/CAST. RAND clients, donors, and grantors have no influ-
+ence over research findings or recommendations.
+About the Authors
+Jack Freed is a researcher at RAND. He conducts policy research and analysis
+on semiconductor supply chains and artificial intelligence. He holds a master’s
+in public policy. 
+Konstantin F. Pilz is a researcher and professor of public policy at RAND. He
+is an expert on artificial intelligence and compute policy, focusing on the global
+distribution of compute and U.S.-China competition. He holds an M.A. in secu-
+rity studies.
+Nicholas Brown is a policy researcher and technical analyst specializing in arti-
+ficial intelligence and semiconductors. He was previously a senior adviser at the
+U.S. Department of Commerce’s Bureau of Industry and Security and a software
+engineer at Google. He holds a B.S. in physics.
+Lennart Heim is an independent researcher on semiconductors and artificial
+intelligence policy. He is the former compute team lead at RAND’s Technology
+and Security Policy Center. He holds an M.S. in electrical engineering.
+www.rand.org

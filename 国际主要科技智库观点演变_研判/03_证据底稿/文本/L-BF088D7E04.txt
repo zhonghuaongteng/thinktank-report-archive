@@ -1,0 +1,1966 @@
+
+===== PDF_PAGE 1 =====
+Pooling Europe’s
+compute
+The promise of distributed training
+for European frontier AI
+Rafael Andersson Lipcsey & Maximilian Negele
+
+===== PDF_PAGE 2 =====
+For more information on this publication, visit www.rand.org/t/RRA5013-1
+About RAND Europe
+RAND Europe is a not-for-profit research organisation that helps improve policy and
+decision making through research and analysis. To learn more about RAND Europe, visit
+www.randeurope.org.
+Research Integrity
+Our mission to help improve policy and decision making through research and analysis is enabled
+through our core values of quality and objectivity and our unwavering commitment to the highest level
+of integrity and ethical behaviour. To help ensure our research and analysis are rigorous, objective,
+and nonpartisan, we subject our research publications to a robust and exacting quality-assurance
+process; avoid both the appearance and reality of financial and other conflicts of interest through
+staff training, project screening, and a policy of mandatory disclosure; and pursue transparency in our
+research engagements through our commitment to the open publication of our research findings and
+recommendations, disclosure of the source of funding of published research, and policies to ensure
+intellectual independence. For more information, visit www.rand.org/about/research-integrity.
+RAND’s publications do not necessarily reflect the opinions of its research clients and sponsors.
+Published by the RAND Corporation, Santa Monica, Calif., and Cambridge, UK
+© 2026 RAND Corporation
+R® is a registered trademark.
+Cover: Adobe Stock
+Limited Print and Electronic Distribution Rights
+This publication and trademark(s) contained herein are protected by law. This representation of
+RAND intellectual property is provided for noncommercial use only. Unauthorised posting of this
+publication online is prohibited; linking directly to its webpage on rand.org is encouraged.
+Permission is required from RAND to reproduce, or reuse in another form, any of its research
+products for commercial purposes. For information on reprint and reuse permissions, please visit
+www.rand.org/pubs/permissions.
+
+===== PDF_PAGE 3 =====
+i
+Preface
+Europe lags significantly behind the United States and China in frontier AI capability. The gap has multiple
+underlying causes, with a lack of European capital chief among them. This paper , however, focuses on a
+more specific challenge. T o train the most advanced AI models, compute has until recently had to be
+concentrated at a single site, a condition particularly hard to meet in Europe given three significant
+bottlenecks: 1) power (slow infrastructure buildout and insufficient power at any single site) ; 2) compute
+(a small and fragmented compute stock); and 3) politics (difficulty of political coordination across member
+states).
+Distributed training, a set of techniques allowing geographically separated datacentres to function as a single
+training resource, has matured rapidly since 2023. This paper assesses its relevance to European frontier AI
+capability, drawing on a literature review and expert interviews, a s well as quantitative estimation of
+compute and power requirements. The analysis finds that distributed training offers relief on the power and
+political coordination bottlenecks. As for compute, it cannot solve the lack of chips itself, but what it does
+change is whether Europe’s existing and planned compute can support frontier training at all: without
+distributed training, the same chips remain fragmented across clusters individually too small for frontier
+work. The report ends by setting out policy recommendations in two areas: preparing European physical
+infrastructure for distributed training and simplifying and harmonising cross-border regulation.
+
+===== PDF_PAGE 4 =====
+ii
+Summary
+Frontier AI systems are developed primarily in the United States and increasingly in China. If Europe is to
+influence how AI is governed internationally, it will need sufficient domestic capability to warrant a seat at
+the table where the relevant rules are written and norms decided.
+While Europe’s lag in frontier AI has multiple underlying causes, with a lack of European capital chief
+among them, this paper focuses on a more specific challenge: to train the most advanced AI models,
+compute has until recently had to be concentrated at a single site, with hundreds of thousands of specialised
+chips operating in close proximity. This condition gives rise to three types of bottlenecks which stand in the
+way of building frontier-scale training capability in Europe: power, compute and politics. Connecting large
+datacentres to European grids currently takes seven to ten years, delivery times for critical equipment such
+as transformers and turbines have risen substantially, and no single European site currently supplies, or is
+on track to supply by 2030, the 5 to 10 gigawatts projected to be needed to train a frontier AI by then.
+Coordinating any concentrated buildout of this scale would also require political alignment across the EU’s
+member states, a historically time-consuming endeavour.
+Distributed training could offer relief : it allows datacentres in different locations to work together on the
+same training run, coordinated by a central entity, without needing to be physically co -located. Research
+progress since 2023 has substantially reduced the bandwidth between sites these techniques require, making
+them increasingly practical at scale. This paper examines whether distributed training can support European
+frontier AI capability, given the conditions shaping Europe’s compute buildout, d rawing on a literature
+review, expert interviews, and quantitative estimation of compute and power requirements.
+Findings
+Distributed training offers substantial relief for Europe’s power and political-coordination bottlenecks but
+does not narrow Europe ’s underlying chip gap. What it does change for compute is whether the chips
+Europe has can be pooled into a single resource for frontier training, rather than remaining fragmented
+across individual clusters too small for frontier work. The following paragraphs examine each bottleneck in
+turn.
+Power. Distributed training offers substantial relief in terms of Europe ’s power constraints. Utilities are
+typically more willing to commit power to a portfolio of smaller sites than to a single multi-gigawatt facility,
+where the scale of the commitment creates qualitatively different infrastructure requirements and a much
+larger planning risk. Connection requests for smaller sites can also proceed in parallel through different
+national queues, compressing overall calendar timelines compared to a single ve ry large grid connection
+request. Spreading compute across grid regions furthermore allows workloads to be matched to local energy
+
+===== PDF_PAGE 5 =====
+Pooling Europe’s compute
+iii
+profiles. Because the underlying algorithms for training frontier AI tolerate individual sites pausing and
+rejoining, distributed training may also let operators curtail load during grid peak hours without disrupting
+ongoing training runs, freeing additional capacity on already existing infrastructure. Distributing
+infrastructure across countries may also reduce concentration risk in equipment procurement and improve
+resilience against grid-level disruption.
+Compute . Distributed training provides limited direct relief on the compute gap itself, because it does not
+add chips. As of the beginning of 2026, European operational capacity stands at approximately 123,000
+H100-equivalents (a normalisation expressing chip throughput in units of the NVIDIA H100, the reference
+accelerator for frontier-training compute), against roughly 1.4 million in the United States. Incl uding all
+confirmed and likely planned capacity, as well as the EU’s flagship gigafactory programme, Europe reaches
+around 3.2 million by 2030, while the United States reaches at least 19.4 million. Several AI middle powers,
+including Saudi Arabia, South Korea and the United Arab Emirates, are also planning capacity that would
+put each ahead of Europe by 2030. Europe is therefore roughly an order of magnitude behind on both
+operational and planned compute, and distributed training does not change this. Distributed training does,
+however, determine whether the chips Europe build s can be combined into a poo led resource for more
+efficient frontier training, rather than remaining fragmented across clusters individually too small for
+frontier work.
+Politics . A distributed architecture eases Europe’s coordination problem by spreading the benefits of hosting
+AI infrastructure across more member states, including energy investment, local workforce development,
+and the emergence of AI-adjacent ecosystems around hosted compute. It also lowers the political threshold
+for engaging non -EU European countries within EFTA, particularly Norway and Switzerland , because
+adding new partners no longer requires negotiating their participation in a single concentrated facility. In
+addition, a distributed strategy can build on the existing institutional scaffolding of the EuroHPC – its
+procurement pipelines, its multi-sovereign decision-making processes, and its already-agreed site locations
+across the continent – more readily than a centralised one.
+What would European distributed training look like in practice?
+To illustrate what reaching frontier -competitive compute capacity in Europe would require, we set out a
+hypothetical scenario built on a target of 10 to 20 million H100 -equivalents, the range needed to match
+the order of magnitude of other major and middle -power compute holders by 2030. Translating this into
+physical infrastructure yields a power requirement of approximately 17 to 34 gigawatts of total facility
+capacity. No single Eur opean site can supply this. A plausible alternative architecture would com bine a
+small number of hyperscale clusters of roughly 2 to 3 gigawatts each, sited where large grid connections are
+feasible, with a larger number of smaller distributed sites spread across the continent to exploit regional
+energy mixes and faster connecti on timelines. This is one configuration among several that could in
+principle deliver the target, and the actual split between hyperscale and distributed capacity should emerge
+from a detailed siting assessment rather than from policy prescription.
+Limitations of distributed training
+Several limitations warrant attention. Distributed training does not address Europe’s underlying capital and
+financial constraints, which underpin all three of the bottlenecks described above. Nor does it give Europe
+
+===== PDF_PAGE 6 =====
+RAND Europe
+iv
+a comparative advantage; the United States is already using these techniques in some of its frontier training,
+and China is moving in the same direction. Frontier AI developers generally prefer centralised facilities
+where power and grid constraints permit, and turn to multi-site configurations when forced to by external
+conditions. Concrete public evidence of distributed training at frontier scale remains thin, in part because
+frontier developers treat their training infrastructure as competitive intellige nce, and because low -
+communication methods that may further ease training across large distances have not been demonstrated
+at the parameter counts of current frontier models. Furthermore, the specialised expertise required to
+implement distributed trainin g at scale is concentrated almost entirely in US frontier AI companies. In
+addition, operating across multiple sites also introduces coordination complexity, regulatory burden and
+new failure modes, including dependence on inter-site network links whose disruption can halt a training
+run even when individual datacentres remain operational. Finally, distributed training addresses the training
+side of compute demand, but inference is already the dominant share of AI compute consumption and is
+expected to continue growing relative to training.
+Recommendations
+Map and prepare physical infrastructure for distributed training :
+● Commission an assessment of spare grid capacity across European regions, led by the European
+Network of Transmission System Operators for Electricity (ENTSO-E) in collaboration with the
+Directorate-General for Energy (DG ENER) and member state authorities.
+● Commission a parallel assessment of existing and required cross-border fibre infrastructure, led by
+the Directorate-General for Communications Networks, Content and Technology (DG
+CONNECT) in collaboration with member states and the Body of European Regulators for
+Electronic Communications (BEREC).
+● Publish a European AI Infrastructure Reference, maintained by the European AI Office, mapping
+candidate datacentre sites across Europe and tagging each by suitability for different workloads.
+● Reduce friction in connecting AI infrastructure to existing fibre backbones through targeted
+deregulation of fibre permitting and rights-of-way, and subsidies for last-mile or inter-site links
+where commercial provision falls short.
+● Monitor trends in distributed training within the European AI Office, drawing on existing
+technical monitoring activities and external expertise.
+Simplify and harmonise cross -border regulation :
+● Accelerate and harmonise permitting and grid connection processes for AI infrastructure across
+member states.
+● Establish a portfolio of pre-approved candidate sites with environmental assessments, zoning
+clearances and grid connections already in place.
+● Clarify how existing data protection and sovereignty instruments apply to intra-European Union
+training-related data flows, through the Cloud and AI Development Act
+
+===== PDF_PAGE 7 =====
+v
+Table of contents
+Preface ...................................................................................................................................................... i
+Summary ................................................................................................................................................. ii
+Figures ................................................................................................................................................... vii
+Tables .................................................................................................................................................... vii
+Abbreviations ........................................................................................................................................ viii
+Acknowledgements................................................................................................................................... x
+1. Introduction ................................ ................................ ................................ ......................... x
+2. Methodology ................................ ................................ ................................ ........................ 3
+2.1. Literature review ..................................................................................................................... 3
+2.2. Expert consultations ............................................................................................................... 3
+2.3. Quantitative estimation .......................................................................................................... 4
+2.4. Definition of ‘Europe’............................................................................................................. 4
+2.5. Limitations ............................................................................................................................. 5
+3. What is distributed training and why is it useful? ................................ ................................ ... 7
+3.1. What is distributed training, and what is it not? ...................................................................... 7
+3.2. Why is distributed training useful? .......................................................................................... 8
+3.3. Recent research advances ...................................................................................................... 10
+4. Distributed training as a potential solution to infrastructure bottlenecks ............................... 14
+4.1. Power ................................................................................................................................... 14
+4.2. Compute .............................................................................................................................. 19
+4.3. Politics .................................................................................................................................. 23
+5. Cross-cutting risks and limitations of distributed training ................................ ..................... 27
+5.1. Operational complexity and coordination costs ..................................................................... 27
+5.2. Talent requirements .............................................................................................................. 28
+5.3. Unproven at frontier scale and issues in future-proofing ....................................................... 28
+5.4. Additional challenges ............................................................................................................ 29
+6. Recommendations – making Europe ready for distributed training ................................ ....... 30
+6.1. An illustrative scenario .......................................................................................................... 30
+
+===== PDF_PAGE 8 =====
+RAND Europe
+vi
+6.2. Policy recommendations ....................................................................................................... 32
+References .............................................................................................................................................. 35
+Annex A. Converting between H100 equivalents and power capacity ................................ ........ 44
+A.1. Source 1: RAND (Pilz, Mahmood & Heim 2025)................................................................ 44
+A.2. Source 2: Epoch AI (Sevilla et al. 2024) ................................................................................ 44
+A.3. Averaged estimate ................................................................................................................. 44
+A.4. Caveats ................................................................................................................................. 45
+
+===== PDF_PAGE 9 =====
+vii
+Figures
+Figure 1. Distributed training compared to adjacent techniques ............................................................... 8
+Figure 2. AI compute capacity by country/region ................................................................................... 21
+
+Tables
+Table 1. Recent advances in multi-datacentre training ............................................................................ 12
+Table A.1. Total facility power required, by compute target and PUE assumption ................................. 45
+
+===== PDF_PAGE 10 =====
+viii
+Abbreviations
+ACER Agency for the Cooperation of Energy Regulators
+AI Artificial Intelligence
+BEREC Body of European Regulators for Electronic Communications
+BIS Bureau of Industry and Security (US)
+DG CONNECT Directorate-General for Communications Networks, Content and Technology
+DG ENER Directorate-General for Energy
+DG GROW Directorate-General for Internal Market, Industry, Entrepreneurship and
+SMEs
+DiLoCo Distributed Low-Communication training
+DSO Distribution System Operator
+EFTA European Free Trade Association
+ENTSO-E European Network of Transmission System Operators for Electricity
+EuroHPC European High Performance Computing Joint Undertaking
+FLAP-D Frankfurt, London, Amsterdam, Paris, Dublin (data-centre hubs)
+FLOP Floating-Point Operation
+GDP Gross Domestic Product
+GDPR General Data Protection Regulation
+GPU Graphics Processing Unit
+GW Gigawatt
+H100 NVIDIA H100 GPU (frontier-training reference accelerator)
+H100e H100-equivalent (normalised compute unit)
+IEA International Energy Agency
+LLM Large Language Model
+LNG Liquid Natural Gas
+MW Megawatt
+
+===== PDF_PAGE 11 =====
+Pooling Europe’s compute
+ix
+NERC North American Electric Reliability Corporation
+PUE Power Usage Effectiveness
+TDP Thermal Design Power
+TTF Title Transfer Facility (European wholesale gas benchmark)
+VC Venture Capital
+
+===== PDF_PAGE 12 =====
+x
+Acknowledgements
+We wish to thank Henri van Soest, James Black, Ismael Arciniegas Rueda, David Schneider -Joseph, Ben
+Harack, Philip Fox and Erich Grunewald for their valuable comments on drafts of this report, and the
+experts from across the frontier AI ecosystem who generously shared their perspectives in interviews for this
+study. All mistakes remain our own.
+
+This report was supported by income from operations and gifts and grants from philanthropic supporters
+of the RAND Center on AI, Security, and Technology. A complete list of donors and funders is available
+at www.rand.org/CAST.
+
+===== PDF_PAGE 13 =====
+1
+1. Introduction
+Artificial intelligence (AI) is emerging as perhaps the most transformative general -purpose technology in
+history, and at this inflection point, Europe finds itself trailing behind. The technology possesses European
+intellectual roots, from Alan Turing ’s foundational concepts of machine intelligence (Turing 1950) to
+Hochreiter & Schmidhuber’s (1997) development of Long Short -Term Memory networks in the 1990s,
+an early neural architecture for sequence modelling that preceded the transformer-based models dominating
+today. Yet over the course of successive AI summers and winters, the centre of gravity has shifted away from
+Europe. Now, in the midst of an AI boom fuelled by large language models (LLMs), the most powerful
+frontier AI systems are developed not in Europe, but in the United States and increasingly in China.
+If Europe seeks to embed fundamental values such as human rights, the rule of law and democratic
+accountability into the emerging international AI order, it must have the competitive capacity to warrant a
+seat at the negotiating table where that order is being written. Europe does, and will, retain signific ant
+leverage through its large single market, regulatory reach and diplomatic weight (Draghi 2024). However,
+as AI systems increasingly determine economic productivity, defensive capability and innovative potential
+(Stanford HAI 2025), the actors that develop and control these systems will increasingly set the terms on
+which others can use them. Without reliable access to frontier AI capabilities, Europe thus risks being
+relegated to attempting to regulate a technology it neither builds nor fully understands.
+A notable symptom of Europe’s weakness in frontier AI is the lack of compute at its disposal to support
+frontier AI training (Fox, Schnitzer & Privitera 2025). This is first ly a capital problem . T he financing
+needed to build frontier -scale compute infrastructure has flowed predominantly to US and increasingly
+Chinese firms rather than to European ones. This capital problem has deep structural roots: shallow venture
+capital markets, an absence of university –venture capital talent ecosystems, and a lack of big- tech
+incumbents that could finance frontier capex from cash flow. These conditions in turn drive a steady brain
+drain of AI talent towards Silicon Valley, which further reinforces them (Draghi 2024).
+A further cause relates to the set of physical conditions needed to build the infrastructure itself. Frontier AI
+training requires datacentre clusters drawing multiple gigawatts of power (Sevilla & Troynikov 2025). These
+facilities need sites with adequate grid connections, and must be built quickly enough to be commercially
+viable, be it by US or indigenous European hyperscalers.
+1 A particular infrastructural challenge concerns
+running large-scale training runs on European soil. Such training runs have historically required compute
+
+1 Hyperscalers are large cloud infrastructure providers, such as Amazon Web Services, Microsoft Azure and Google
+Cloud, that design, build and operate datacentre estates at very large scale, increasingly in the multi-hundred-megawatt
+to gigawatt range per campus.
+
+===== PDF_PAGE 14 =====
+RAND Europe
+2
+concentrated in a single location, because graphics processing units (GPUs) must exchange information at
+every training step – a level of communication that is easy to achieve inside a single datacentre but more
+challenging across separate sites. As a result, US companies plan to build individual datacentres the size of
+Manhattan (Guardian 2025). But concentrating this amount of compute at a single location requires many
+stars to align: sufficient power availability and grid capacity, enough space to avoid the dissent of residents,
+and permitting laws that allow fast building timetables. Finding suitable locations is hard enough in general,
+and particularly so in Europe, where existing plans for datacentre buildouts tend to be much more
+fragmented (European Commission 2025c).
+However, a relatively new set of techniques, collectively called distributed training, allow compute to be
+spread across multiple sites yet function as a single large pool for training runs (Kryś, Sharma & Egan 2025).
+Each site performs computations locally and synchronises results at regular intervals that, depending on the
+algorithm used, can range from every training step to every several hundred steps ( Douillard et al. 2023).
+This addresses a real constraint on how capacity, once built, can be used, and on the degree to which already
+existing infrastructure can be utilised. If distributed training proves viable at the multi -gigawatt scale
+required for frontier training, European compute infrastructure being spread across multiple countries from
+Spain to the Nordics would cease to be a disadvantage, making Europe a more viable place for frontier AI
+development.
+Distributed training does not, of course, resolve Europe ’s broader competitiveness problem, nor would it
+give Europe a comparative advantage : the United States is already using these techniques in some of its
+frontier training, and China is moving in the same direction. Facilitating large training runs is only one
+piece of the puzzle, and it does not substitute for ambitious economic policies to enable further datacentre
+buildout and attract AI talent back to the continent. But it addresses a constraint that is hard to solve
+through investment alone: the requirement that all compute for a frontier training run be concentrated in
+a single location, which even well- funded European efforts would struggle to meet given the continent’ s
+political, energy and infrastructure situation. Realising this benefit depends on policy choices. Sufficient
+connectivity between datacentres is a precondition for distributed training (Sevilla & Troynikov 2025), and
+the regulatory, permitting and coordination frameworks needed to enable rapid distributed buildouts are
+not currently in place. This paper analyses to what degree the technology ca n be leveraged to facilitate
+frontier AI training on European soil, and evaluates which policies need to be in place to enable it.
+Our assessment draws on a narrative literature review of recent technical papers and industry reports (2023–
+2025), semi-structured interviews with distributed training experts, and quantitative estimation of compute,
+power and timeline requirements drawing on the latest available data. Based on this analysis, we present
+policy options for a European frontier AI strategy employing distributed training. Section 2 describes our
+methodology in detail. Section 3 introduces distributed training and surveys recent technical developments.
+Section 4 analyses how distributed training addresses the three principal European infrastructure
+bottlenecks: power, compute and political coordination. Section 5 discusses cross- cutting risks and
+limitations. Section 6 presents policy recommendations based on our analysis.
+
+===== PDF_PAGE 15 =====
+3
+2. Methodology
+2.1. Literature review
+We conducted a narrative literature review spanning multiple domains: technical papers on distributed
+training methods (2023–2026), industry analyses of compute scaling trends, energy infrastructure reports,
+and policy documents from European and international sources. A narrative rather than systematic review
+was chosen given the interdisciplinary scope of the research question and the need to integrate technical,
+infrastructural and policy sources that follow different publication conventions. For technic al papers, we
+searched arXiv and Google Scholar using terms such as ‘ distributed training ’, ‘ decentralized training ’,
+‘DiLoCo’ and ‘geo-distributed machine learning’, filtered by publication date (January 2023–April 2026).
+The January 2023 start date was chosen to capture the emergence of recent low -communication training
+algorithms, beginning with the original DiLoCo paper (Douillard et al. 2023). For energy infrastructure,
+we drew primarily on reports from the International Energy Agency (IEA) and the North American Electric
+Reliability Corporation (NERC), which provide institutional analyses of grid capacity, transmission
+infrastructure and supply chain constraints. These were supplemented by quantitative projections from
+Goldman Sachs and by trade press coverage of specific datacentre projects from outlets such as Data Center
+Dynamics, which we used to track site-specific developments and corporate announcements rather than as
+primary analytical sources. For European political and coordination dynamics, we consulted policy analyses
+from institutions such as the Carnegie Endowment for International Peace, the International Monetary
+Fund and the Delors Centre. We also monitored news coverage of European AI initiatives. Selection criteria
+across all domains p rioritised recen tness, relevance to European infrastructure context and source
+credibility.
+2.2. Expert consultations
+Between September and November 2025, we conducted four semi -structured interviews (follow ing a
+flexible topic guide rather than a fixed script) with experts in distributed training research, AI infrastructure
+analysis and compute scaling, including researchers with published work on distributed training methods,
+practitioners knowledgeable in distributed and decentralised training systems, and analysts tracking frontier
+AI compute requirements. We cross -checked recurring expert claims against published sources where
+possible. In cases where these claims could be verified, we prioritised referencing published work ; in cases
+where verification was not possible, we flag claims as expert assessments in the text.
+A number of limitations apply. The sample size is small and weighed towards US-based experts, reflecting
+the broader concentration of distributed-training expertise in the United States (as documented elsewhere
+
+===== PDF_PAGE 16 =====
+RAND Europe
+4
+in this paper. US -based interviewees may have limited visibility into European -specific regulatory
+conditions and grid interconnection speeds. In addition, some experts were working with organisations that
+have an interest in distributed training approaches.
+2.3. Quantitative estimation
+Our quantitative estimates of compute, power and timeline requirements draw on three categories of inputs.
+For compute, we use published estimates of recent frontier training runs, alongside projections from Epoch
+AI’s analytical reports and GPU Clusters dataset. Where training compute is not officially disclosed, we use
+the most widely cited third-party estimate and flag it as such. All compute figures are converted to H100 -
+equivalents,
+2 to allow comparison across hardware generations. For power, we estimate facility-level demand
+by combining two sources: per-GPU power figures drawn from RAND and Epoch AI, and announced or
+projected capacities for specific datacentre projects. Where these two methods produce similar figures, we
+treat the estimate as relatively robust; where they diverge, we report a range. Regional power demand
+projections are drawn from the IEA’s Energy and AI report (IEA 2025). For timelines, we compare publicly
+documented recent buildouts against pre -AI-boom industry benchmarks for datacentre construction.
+Timeline estimates are particularly uncertain because they depend on jurisdiction-specific permitting, grid
+interconnection queues and supply chain conditions. Where possible, we present ranges rather than point
+estimates, with bounds reflecting different published assumptions. We state ‘we estimate’ to flag claims that
+rest on our own synthesis of sources rather than a single published figure.
+2.4. Definition of ‘Europe’
+In this report, we focus on the potential of distributed training for Europe’s frontier AI strategy. We
+recognise that multiple definitions of ‘Europe’ exist, and that there are several criteria for the inclusion or
+non-inclusion of various countries under such definitions. We choose to limit ourselves to the European
+Union member states plus the four EFTA countries (Norway, Iceland, Liechtenstein and Switzerland). This
+makes our analysis primarily EU -focused, but also allows us to include countries that would plausibly
+participate in a joint European scaling effort, and many of which have the necessary infrastructure to host
+large numbers of data centres.
+We have chosen not to include the United Kingdom in our analysis. While geographically and historically
+European, the UK’s AI ecosystem has diverged significantly from the EU’s since Brexit. The UK has pursued
+a distinct regulatory approach, declining to adopt EU -style horizontal AI regulation in favour of sector -
+specific guidance (DSIT 2023, 2024). Its institutional architecture has also developed along different lines.
+
+2 H100-equivalents are used throughout this report as a common unit to enable comparison across different chip
+generations and architectures. The measure approximates how many H100 chips, running simultaneously, would be
+needed to deliver the aggregate throughput (in FLOP/s) required for a given training run within its expected time
+frame (Epoch AI 2025; Pilz, Mahmood & Heim 2025). One important caveat is that the precision of training has
+shifted in recent years from mostly 16-bit to increasingly 8-bit operations, which raises effective FLOP/s on the same
+hardware and means that H100-equivalent counts derived from 16-bit assumptions can overstate the chip count
+required for an 8-bit run. Throughout this report, H100-equivalent figures should be understood as order-of-
+magnitude estimates rather than precise counts.
+
+===== PDF_PAGE 17 =====
+Pooling Europe’s compute
+5
+The AI Security Institute operates in close dialogue with its US counterpart within the National Institute
+of Standards and Technology ( NIST) and has participated in bilateral rather than EU -level governance
+initiatives, reflecting a broader UK preference for transatlantic AI cooperation over integration with EU
+frameworks. The UK also maintains independent compute initiatives, such as Isambard -AI at the Bristol
+Centre for Supercomputing, rather than participating in joint European efforts like the EuroHPC Joint
+Undertaking. The UK’s frontier AI activity is also structurally integrated with the US ecosystem in ways
+that distinguish it from continental European labs: the UK’s AI scale-up ecosystem is heavily reliant on US
+venture capital (VC), with three large UK AI deals in 2025 alone totalling $6.7 billion and making up about
+half of the country’s AI VC inflows (OECD 2026). Meanwhile, the UK’s most prominent frontier AI lab,
+Google DeepMind, operates as a subsidiary of a US parent company with its research i ntegrated into
+Google’s US -based product development. For these reasons, the UK ’s path to frontier AI capabilities,
+whether through distributed training or otherwise, would require a separate analysis with different
+assumptions about the regulatory environment, international partnerships and financing mechanisms. That
+said, EU pursuit of a distributed-training strategy would leave open closer future cooperation with the UK
+and other middle powers, including Canada, Japan, South Korea and Australia, that are increasingly
+coordinating on both AI capability development and AI governance.
+2.5. Limitations
+Several limitations apply to this paper beyond those specific to each methodological component.
+Firstly, frontier AI companies treat compute capacity and infrastructure plans as competitive intelligence,
+and public data on frontier training runs is both limited and unevenly verified. Expert claims about
+corporate infrastructure plans often cannot be independently cross-checked against public sources, and we
+have flagged such claims in the text where they affect substantive conclusions.
+Secondly, most of the technical literature on distributed training, most frontier AI corporate activity, and
+most of the available expert pool are concentrated in the United States, with smaller contributions from
+Chinese sources and a sparser set of European-specific institutional analyses. This means that claims about
+the US context are better supported than claims about specific European jurisdictions. Where European-
+specific sources exist, we draw on them directly (notably Draghi 2024 , IEA 2025 and Fox, Schnitz er &
+Privitera 2025); where they do not, we flag the geographic asymmetry in the text.
+Thirdly, this is a fast -moving field. Technical developments in distributed training, announcements of
+datacentre buildouts, and policy initiatives at the EU and member-state level may render some of the paper’s
+specific estimates obsolete within months rather than years. We have attempted to distinguish between
+structural claims that are likely to remain valid over time and specific figures that may be superseded.
+Fourthly, the paper’ s scope is deliberately restricted to the technical and infrastructural dimensions of
+European frontier AI capability and the potential contribution of distributed training therein. We do not
+deeply analyse adjacent questions that a comprehensive European AI strategy would need to address,
+including talent policy, intellectual property frameworks, semiconductor supply chains and indigenous AI
+company creation. Th is limitation define s the specific contribution of this paper rather than it s
+completeness as a strategy document.
+
+===== PDF_PAGE 18 =====
+RAND Europe
+6
+Fifthly, the policy recommendations in Section 6 are conditional on background assumptions about the
+trajectory of distributed training research, the pace of European political coordination on AI, and the
+broader geopolitical context in which European AI policy o perates. They should be read as reasoned
+proposals under the conditions described in the paper, not as predictions robust to significant changes in
+those conditions.
+
+===== PDF_PAGE 19 =====
+7
+3. What is distributed training and why is it useful?
+The term ‘distributed training’ describes the training of AI models across multiple physically distant pools
+of compute, with a central entity coordinating the process (Kryś, Sharma & Egan, 2025). To evaluate the
+promise of distributed training for European AI ambitions, we must first understand what it is, how it
+differs from other methods, which bottlenecks in building AI infrastructure it addresses, and how recent
+developments have influenced the potential of the technology. We do not aim to cover the technical details
+exhaustively, but rather to provide the background needed for the policy discussion that follows. For a more
+detailed discussion, we recommend Kryś, Sharma & Egan (2025) for a governance -focused overview,
+Douillard et al. (2023) for the foundational DiLoCo (Distributed Low- Communication) framework, and
+Sevilla & Troynikov (2025) for an engineering analysis of distributed training at frontier scale.
+
+3.1. What is distributed training, and what is it not?
+The most common method for training frontier AI models remains centralised training, where all the GPUs
+used for a training run are co-located within a single datacentre or campus, connected by high-bandwidth,
+low-latency interconnects (Kryś, Sharma & Egan 2025). However, this definition is becoming less clear -
+cut; major companies such as Google increasingly use multiple datacentres within a single campus or region,
+connected by high -bandwidth links that effectively function as a unified facility (Gemini Te am 2023).
+Distributed training, as discussed in this report, refers specifically to training across multiple geographically
+separated locations, where lower bandwidth connections necessitate different algorithmic approaches. In
+distributed training, the co mputational workload for a single model is shared across these dispersed sites
+while maintaining a central entity for coordination (Kryś, Sharma & Egan 2025).
+Distributed training should not be confused with decentralised training, which relies on community -
+provided compute that is contributed on a peer -to-peer basis with no central coordinating entity (Kryś ,
+Sharma & Egan 2025). While the two paradigms differ primarily in coordination structure rather than in
+any strict technical requirement, decentralised training as currently practiced depends on low -
+communication algorithms, since its community participants typical ly operate over consumer -grade
+internet rather than dedicated fibre.
+
+===== PDF_PAGE 20 =====
+RAND Europe
+8
+Figure 1 . Distributed training compared to adjacent techniques
+
+Source: Krys, Sharma & Egan 2025.
+Distributed training should also not be confused with federated learning, in which training data remains
+local to its origin (typically mobile devices or institutional servers), and only locally computed model
+updates are shared with a central coordinator (McMahan et al. 2017). The motivation with this approach
+is to enable training on data that cannot or should not be centralised, rather than to spread compute across
+multiple sites.
+3.2. Why is distributed training useful?
+The value proposition of distributed training is that it converts geographically dispersed compute into a
+pooled, collectively usable resource for a single training run, thus addressing resource limitations resulting
+from location constraints. Hosting vast amounts of compute in close proximity requires physical
+infrastructure that few locations can offer.
+One core constraint is the maximum power a site can draw from the grid. The power demand of a single
+frontier model training facility, encompassing not only the running of GPUs but also cooling, networking
+and other supporting infrastructure,
+3 has kept growing despite improvements in chip-level energy efficiency
+(Sevilla & Troynikov 2025). Epoch AI projects that single-campus training clusters could each demand 1
+to 5 GW by 2030 (Sevilla et al. 2024), with more aggressive scenarios approaching 10 GW by the end of
+the decade (Sevilla & Troynikov 2025). Individual datacentre campuses in the 1–2 GW range are planned
+or under construction, with xAI’s Colossus currently operating at approximately 350 MW and planned to
+expand to 1.5 GW, and OpenAI ’s Abilene Stargate operating at 240 MW with plans to reach 1.2 GW
+(Sevilla & Troynikov 2025). Larger multi -gigawatt projects such as OpenAI ’s broader Stargate initiative
+(targeting 10 GW by 2029), Meta ’s Hyperion (up to 5 GW) and Microsoft ’s Fairwater (over 3 GW) are
+planned or under construction (Open AI 2025c; IEEE Spectrum 2025; Epoch AI 2025c). Scaling to 5 GW
+at a single site is widely considered challenging, and 10 GW clusters are likely to require the coordination
+of multiple datacentres across different grid regions (Sevilla & Troynikov 2025). For reference, 10 GW
+exceeds the nameplate capacity of the Grand Coulee Dam, the largest single power plant in the United
+
+3 Total facility power is conventionally expressed as a Power Usage Effectiveness (PUE) multiplier on top of the
+power drawn by the compute hardware itself: a PUE of 1.2 means the facility uses 1.2× the IT equipment draw,
+with the extra 20 per cent going to cooling, networking and overhead. See Annex 1 for our assumptions.
+
+===== PDF_PAGE 21 =====
+Pooling Europe’s compute
+9
+States at 6.8 GW (Sevilla et al. 2024; Sevilla & Troynikov 2025). Distributed training would allow for the
+aggregation of smaller, geographically distributed datacentres, spreading out the burden between power
+plants.
+Distributed training also addresses constraints to infrastructure buildout. Connecting a large datacentre to
+the grid can require waits of 2 to 10 years depending on jurisdiction, with the FLAP -D datacentre hubs
+(Frankfurt, London, Amsterdam, Paris, Dublin) facing average queues of 7 to 10 years (IEA 2025).
+Furthermore, the global delivery times for key components, such as electrical transformers and cables, have
+risen substantially in recent years, as surging demand from electrification and datacentre buildout has
+outpaced concentrated manufacturing capacity (NERC 2025; IEA 2025). Distributed training would
+provide an advantage here, even though it does not solve the fundamental issue of long delivery times.
+Spreading infrastructure across multiple sites, developers can pursue parallel buildout tracks meaning delays
+at one site do not halt the entire project, as other locations continue construction. Grid connection requests
+for smaller datacentres in different regions can also enter separate interconnection queues in parallel,
+avoiding the single-queue bottleneck that a large connection would face (Sevilla & Troynikov 2025). The
+grid connection advantage has limits, however. Hyperscale datacentres typically connect to the transmission
+or sub-transmission grid via dedicated on -site substations with their own large power transformers, while
+smaller datacentres can sometimes connect at the medium-voltage distribution level instead. The distinction
+matters because distribution-level connections typically require only distribution system operator (DSO)
+approval and minimal new infrastructure, allowing build-out in months rather than the multi-year timelines
+associated with transmission-level connections. Whether a smaller datacentre can connect at the medium-
+voltage distribution level or must still connect at transmission level depends on local utility practice and
+regional grid topology rather than a uniform MW threshold (GridLab 2025). In jurisdictions where
+distribution-level connections are available for smaller sites, the advantage is real; in others, the benefit is
+reduced.
+A distributed approach could also address the mismatch between the energy profiles of different AI
+workloads and locally available power sources. Inference, the deployment phase, in which a trained model
+generates outputs in response to user queries, demands continuous operation with unpredictable spikes
+from user activity and energy requirement patterns following business hours (Chen et al. 2025), suiting
+regions with reliable baseload power. In contrast, training is in principle more flexible in its overa ll
+scheduling, as it can be paused and resumed, even though individual runs still produce transient power
+spikes during synchronisation and checkpoint events (Chen et al. 2025). Certain low -communication
+training algorithms introduced in Section 3.3 specifically allow individual sites to pause and rejoin without
+disrupting the overall run, making workload flexibility more practically achievable (Jaghouar et al. 2024a;
+Douillard et al. 2026). A distributed approach also allows developers to place different workloads on regions
+with different types of power sources. Nuclear capacity, for instance, is suitable for baseload power, while
+hydroelectric power plants offer flexibility to absorb demand fluctuations (IEA 2025).
+In addition, a distributed approach enables a different form of flexibility: demand response. Rather than
+drawing continuous power from every site, distributed training allows individual sites to curtail load
+temporarily when the grid is stressed, because the paused sit es can rejoin the training run at the next
+synchronisation point. The IEA estimates that if datacentres curtail load during peak demand hours,
+approximately 1 per cent of annual operating hours, up to 40 GW of additional datacentre capacity could
+
+===== PDF_PAGE 22 =====
+RAND Europe
+10
+be integrated into the existing EU grid by 2035 without new transmission or generation buildout (IEA
+2025, fig. 2.30). In practice, datacentre operators increasingly schedule mixed workloads to flatten power
+consumption, which may reduce the practical significance of workload- to-energy-source matching.
+However, two considerations limit how far this can go. Experts we interviewed reported that unpredictable
+power spikes during training runs make load -flattening considerably harder in practice than in princip le.
+Separately, the equipment needed to smooth demand, particularly batteries and gas turbines, uses among
+the most supply-chain-constrained components in the current AI datacentre buildout (NERC 2025; IEA
+2025). Some degree of workload -energy matching is therefore likely to remain useful, which in turn
+reinforces the case for placing workloads on regions whose power mix matches the workload’s needs.
+Finally, distributed training also addresses political constraints on infrastructure concentration. Actors
+operating across multiple jurisdictions may face resistance to placing all resources in a single location.
+Concerns may be raised about the strategic concentration of assets or economic benefits, as well as regulatory
+sovereignty, particularly when a single site would host multi-gigawatt AI infrastructure. Moreover, placing
+all infrastructure in a single location may lead to resource conflicts with loc al industry, and the local
+population may be opposed to extreme infrastructure buildouts in their backyard – dynamics that have
+already driven moratoria or restrictions on hyperscale data centres in Ireland and the Netherlands (Jacamon,
+Dallard & Spencer 2025; Tanner et al. 2026).
+3.3. Recent research advances
+Before turning to recent algorithmic developments, it is worth briefly explaining the technical problem they
+are trying to solve. In distributed training, multiple datacentres work in parallel on different portions of the
+same training run, each making incremental updates to its local copy of the model. To ensure that these
+local copies do not drift apart, the sites must periodically synchronise, exchanging information about how
+each has updated the model so that all copies converge on the same final result (Duan et al. 2024). This
+synchronisation step is what consumes bandwidth between sites. The more frequently sites synchronise, the
+more bandwidth-intensive the training run becomes, and the less feasible it is to operate over slow or long-
+distance connections. Conventional training methods were developed for single-facility deployment, where
+GPUs are connected by high -speed intra -facility interconnects that make frequent synchronisation
+inexpensive. Applied across geographically separated sites, however, conventional methods require
+dedicated high-bandwidth fibre links to maintain acceptable performance. The recent algorithmic advances
+summarised in Table 1 therefore all share a common goal: reducing how often, or how much, sites need to
+communicate without degrading training quality (Douillard et al. 2023).
+These advances have aimed to improve distributed training ’s ability to operate across large geographic
+distances and with reduced communication between sites. Experts we consulted disagree, however, on how
+significant they are. Some argue that existing bandwidth infrastructure, including dedicated fibre, is already
+sufficient for distributed training across continental distances using conventional methods, and that the
+recent development of low-communication algorithms primarily matters for contexts where such dedicated
+infrastructure is unavailable. Others posit that recent advances fundamentally expand the range of feasible
+distributed training configurations, including those with weaker or shared network connections between
+sites. A separate methodological concern, raised by several experts, is that many of the recent studies rely on
+
+===== PDF_PAGE 23 =====
+Pooling Europe’s compute
+11
+simulations or bandwidth -throttled single -cluster experiments rather than real -world multi -site
+demonstrations, and performance has not been validated across a wide range of model scales and tasks. The
+table below summarises the algorithmic developments, including model scale where available, performance
+characteristics, and the extent to which geographic distribution has been demonstrated.
+
+===== PDF_PAGE 24 =====
+RAND Europe
+12
+Table 1 . Recent advances in multi-datacentre training
+System Scale
+(parameters)
+Performance Geographic distribution
+DiLoCo
+(DeepMind, 2023)
+Up to 400M Communicates 500x less than fully synchronous
+training while matching its performance.
+Designed for poorly
+connected sites but not
+demonstrated across large
+distances.
+OpenDiLoco (Prime
+Intellect, 2024)
+1.1B Maintained 90–95 per cent efficiency on slow
+connections. Sites can join and leave the training run
+without disruption.
+Real-world demonstration
+across two continents and
+three countries (Canada,
+Finland, US).
+INTELLECT-1 (Prime
+Intellect, 2024)
+10B Trained on 1 trillion tokens using the PRIME
+framework, which combines DiLoCo with int8
+quantisation to achieve a roughly 400x reduction in
+communication bandwidth versus standard data-
+parallel training. Achieved 83 per cent compute
+utilisation across continents and 96 per cent within a
+US-only configuration.
+Real-world demonstration
+across 30 compute
+contributors in five countries
+on three continents, using up
+to 112 H100 GPUs
+simultaneously.
+Streaming DiLoCo
+(DeepMind, 2025)
+Up to 4B
+experimentally
+Reduces required bandwidth by two orders of
+magnitude versus standard DiLoCo while matching
+training quality.
+Experimental at billion-scale;
+geographic distribution not
+demonstrated.
+Eager Updates
+(DeepMind 2025)
+Up to 100B
+(simulated)
+Allows local training to continue during
+synchronisation, eliminating idle time. Reaches ~95
+per cent compute utilisation at 1–5 Gbit/s for models
+up to 100B in simulation.
+Simulated only, not
+demonstrated at distance.
+DiLoCoX (China
+Mobile and 0G
+Labs, 2025)
+107B ~357x speedup over standard AllReduce (the
+conventional bandwidth-intensive gradient
+synchronisation method used in centralised training)
+under simulated 1 Gbit/s conditions. Largest model
+parameter count to date among published low-
+communication training experiments, though achieved
+under bandwidth-throttled rather than genuinely
+distributed conditions.
+Single physical cluster of 160
+A800 GPUs with bandwidth
+artificially throttled to 1 Gbps
+via traffic shaping to simulate
+decentralised conditions.
+Does not demonstrate real
+geographic distribution.
+Covenant-72B
+(Templar, 2026)
+72B Pre-trained on roughly 1.1 trillion tokens using
+SparseLoCo, a low-communication method descended
+from DiLoCo; performance comparable to
+conventionally trained models of similar scale and
+compute.
+Real-world demonstration:
+trained entirely over ordinary
+internet connections by
+contributors around the
+world.
+Decoupled DiLoCo
+(DeepMind, 2026)
+Up to 12B Evolution of DiLoCo which allows fully asynchronous
+training. Training continues even when individual sites
+fail or slow down, maintaining 88 per cent efficiency
+while matching the quality of conventional training.
+Real-world demonstration
+across four US regions over
+ordinary wide-area
+connections (2–5 Gbit/s).
+Source: Authors’ compilation based on Douillard et al. (2023) for DiLoCo, Jaghouar et al. (2024) for OpenDiLoCo
+and INTELLECT-1, Douillard et al. (2025) for Streaming DiLoCo, Kale et al. (2025) for Eager Updates, Qi et al.
+(2025) for DiLoCoX, Lidin et al. (2026) for Covenant-72B and Douillard et al. (2026) for Decoupled DiLoCo.
+
+===== PDF_PAGE 25 =====
+Pooling Europe’s compute
+13
+Uncertainties remain about implementation of distributed training across large distances and between
+multiple parties, as Table 1 shows and as we discuss in Sections 4 and 5 of this report. Real- world
+deployments and engineering analyses, however, suggest that the technology is already more viable than the
+remaining uncertainties might imply. Most frontier AI developers already use multi-datacentre training to
+some extent in their operations. Confirmed examples include Google ’s Gemini 1.0/Ultra (Gemini Team
+2023) and OpenAI’s GPT-4.5, which was reportedly trained across multiple campuses (OpenAI 2025 a;
+Patel et al. 2024b). However, these training runs appear to rely primarily on standard data parallelism and
+pipeline parallelism, techniques that work across datacentres with sufficiently high-bandwidth connections,
+rather than using the low-communication methods (such as DiLoCo) discussed in Section 3.3. The Gemini
+1.0 technical report, for instance, explicitly describes a data parallelism approach (Gemini Tea m 2023).
+Uncertainty remains regarding the exact configurations used by frontier companies and whether newer low-
+communication algorithms have been adopted at scale. That said, several of the experts we spoke to
+emphasised that standard training techniques can be used across datacentres in different regions without
+prohibitive bandwidth costs, provided that dedicated fibre links between sites are available. In essence, even
+without fully proven low-communication distributed training algorithms, distributed training for frontier
+AI development is already feasible, though primarily where high-bandwidth interconnects between sites are
+available. The low- communication algorithms themselves are also maturing. In April 2026, Google
+DeepMind reported training a 12B parameter model with its Decoupled DiLoCo framework across four
+geographically separate US regions over ordinary wide -area connections of 2– 5 Gbit/s and described the
+approach as practical for production -level distributed pre -training (Douillard et al. 2026; Google
+DeepMind 2026). Unlike many of the studies summarised in Table 1, this was a real multi- region run
+rather than a simulated or bandwidth-throttled experiment, and it is the first such demonstration of these
+methods by a frontier AI developer. Although the demonstrated scale remains well below that of current
+frontier models, such advances suggest that the dependence on dedicated high -bandwidth links between
+sites may ease over time.
+Simulations by AI trends analysis lab Epoch AI support this assessment. Sevilla & Troynikov (2025) model
+a 10 GW aggregate training system distributed across 23 sites spanning approximately 4,800 km in the
+Eastern United States (from Illinois to Philadelphia to Georgia), connected by dedicated fibre optic links.
+In this configuration, each site computes portions of the training workload locally and synchronises through
+fully synchronous data parallelism (the bandwidth-hungry synchronisation pattern used by standard data-
+parallel training ). Although the set- up would require roughly 30 times the bandwidth of the highest -
+capacity transatlantic fibre cable, Epoch ’s simulation finds that the incremental network buildout cost is
+only about 0.5 per cent of total datacentre construction costs, and that the time spent synchronising would
+be less than 5 per cent of the time it takes to process a training batch (Sevilla & Troynikov 2025). This
+analysis is conservative because it assumes pure data parallelism, the most b andwidth-intensive of the
+conventional distributed training methods. It does not incorporate either the low -communication
+algorithms listed in Table 1 or more efficient conventional techniques such as pipeline parallelism, both of
+which would further reduce bandwidth requirements. Inter-regional distributed training may therefore be
+even more feasible in practice than the Epoch simulation suggests.
+
+===== PDF_PAGE 26 =====
+14
+4. Distributed training as a potential solution to infrastructure
+bottlenecks
+To assess the potential of distributed training for European scaling ambitions, we must first consider the
+bottlenecks standing in the way. Here w e focus on three principal infrastructure bottlenecks that a public
+or private actor would face when seeking to conduct large -scale frontier AI training runs: power
+infrastructure, compute availability and political coordination. Sections 4.1, 4.2 and 4.3 address these
+bottlenecks in turn. For each, we examine how the bottleneck applies to Europe specifically, assess what
+relief distributed training could offer, and acknowledge the limitations of that relief. Our analysis finds that
+distributed training offers substantial relief for power constraints and reduces the political friction of
+concentrated infrastructure in a multi-state political architecture, but provides only limited direct benefit
+for the compute gap.
+4.1. Power
+4.1.1. The European power challenge
+Europe’s power infrastructure may stymie its AI ambitions in four ways: lengthy grid connection timelines,
+supply chain delays, insufficient single -site capacity, and reliability requirements that are in tension with
+EU energy policy.
+Connecting a large datacentre to the European grid can take 7 to 10 years in the FLAP-D hubs (Frankfurt,
+London, Amsterdam, Paris, Dublin), compared to 1 to 3 years in the United States. This gap reflects layered
+permitting (EU, member -state, regional), longer environmental and consul tation processes, and grid
+operator backlogs from renewables integration (IEA 2025). The EU has signalled its intent to accelerate
+this process through the proposed Cloud and AI Development Act (European Commission 2025b; 2026),
+which is expected to address permitting, siting and grid connection bottlenecks for AI infrastructure. But
+the US is starting from a substantially shorter baseline, and is already compressing its timelines further
+through measures such as the July 2025 e xecutive order on accelerated federal permitting (White House
+2025).
+The second challenge is global rather than specifically European: energy supply chain delays. Lead times for
+large grid transformers reached 80 to 210 weeks (roughly 1.5 to 4 years) by 2024, approximately double
+their 2021 level (IEA 2025a), and have since plateaued year -on-year (NERC 2025). Building new
+transmission lines can take four to eight years in advanced economies (IEA 2025). Gas turbines for new
+gas-fired power plants now face lead times of several years, potentially delaying their commissioning beyond
+
+===== PDF_PAGE 27 =====
+Pooling Europe’s compute
+15
+2030 (IEA 2025). Battery storage systems, essential for grid reliability and demand flexibility, meanwhile
+face acute supply chain pressure as the expanding AI data centre buildout has placed considerable strain on
+the supply chain for key grid components, including low-voltage solutions and equipment supporting the
+integration of variable energy resources (IEA 2025). These delays are not independent. A disruption to one
+component cascades through procurement timelines for the others.
+The third challenge is frontier AI training ’s rapidly growing power demand. Frontier AI companies are
+outlining plans for datacentres with approximately 1 GW capacity in the near term, scaling to 5 GW by
+2030, with aggressive scenarios predicting 10 GW for a single geographically concentrated cluster (Sevilla
+& Troynikov 2025). To put that in perspective , France’s peak electricity demand in 2021 was
+approximately 89 GW (S&P Global 2021). A single 10 GW cluster would draw roughly 11 per cent of
+that, in one place.
+Power availability and reliability requirements create the fourth challenge, and together they generate a
+direct tension with EU energy policy. Meeting projected AI power demand at multi -gigawatt scale is
+difficult without new dispatchable generation, and Goldman Sachs projects that natural gas will provide 60
+per cent of (US) expanded datacentre power demand by 2030 (Goldman Sachs 2024). On shorter
+timescales, during synchronisation events AI training workloads produce significant transient power spikes,
+which require fast-ramping generation or substantial battery storage to manage. Meeting Tier III or Tier
+IV reliability standards
+4 (99.982–99.995 per cent uptime) further requires layered backup infrastructure:
+redundant grid feeds from independent substations, uninterruptible power supplies to bridge sub -second
+interruptions, and on-site backup generators for extended outages. This cluster of requirements conflicts
+directly with the EU’s REPowerEU plan, which aims to end EU dependence on Russian fossil fuels by 2027
+and significantly reduce overall gas consumption by 2030 (European Commission 2022).
+Taken together, these four constraints mean that any effort to build concentrated multi-gigawatt AI training
+infrastructure in Europe would face long timelines, constrained supply chains, insufficient single -site
+generation capacity, and a direct conflict with EU climate commitments. These are the conditions under
+which distributed training becomes most relevant, as discussed in the next subsection.
+4.1.2. Distributed training as a partial solution to the power challenge
+Distributed training offers partial relief on all four fronts, though it eliminates none of them outright.
+Specifically, it operates multiple levers, as described below.
+The first lever is the scale of any single demand point. Instead of forcing one site to shoulder 5 –10 GW,
+distributed training lets Europe spread the load across grid regions, with individual sites drawing from
+several hundred megawatts to a few gigawatts each. Utilities are often reluctant to sign very large power
+purchase agreements for multi -gigawatt single sites for several reasons. First ly, they perceive risks that AI
+companies could default or that demand could fall. Second ly, serving larger loads triggers qualitatively
+different infrastructure requirements: at the scale of a few hundred megawatts, facilities typically require
+
+4 Datacentre reliability tiers refer to the Uptime Institute's Tier Classification System, which grades facilities from Tier
+I (basic capacity) to Tier IV (fault -tolerant). Tier III facilities can undergo maintenance without shutdown; Tier IV
+facilities additionally withstand individual equipment failures without service interruption.
+
+===== PDF_PAGE 28 =====
+RAND Europe
+16
+their own dedicated substation rather than sharing one with other customers, but at multi-gigawatt scale,
+entirely new transmission lines and generation capacity may be needed, introducing step -change cost
+increases that do not arise with smaller connections (Patel et al. 2024a; Orrick 2025; Shehabi et al. 2024).
+Thirdly, smaller loads can be more easily integrated into existing distribution and transmission systems
+without causing significant system imbalances. Finally, the failure of a single 1 GW project represents a far
+greater planning risk than the loss of a 100 MW site (Sevilla & Troynikov 2025).
+The second lever is demand flexibility. Large datacentre operators have historically been reluctant to offer
+flexible load, as interruptions degrade service quality and impose throughput costs on AI training runs even
+where checkpointing prevents any actual loss of work. However, distributed training may change this
+calculus. If datacentres agree to curtail load during roughly 1 per cent of annual operating hours, the IEA
+estimates that up to 40 GW of additional datacentre capacity could be added to the exi sting EU grid by
+2035 without new transmission or generation buildout (IEA 2025). Recent US analysis reaches a similar
+conclusion: Norris et al. (2025) find that approximately 76 GW of new US datacentre load could be
+accommodated on existing infrastructure if operators agree to reduce power draw during roughly 22 hours
+per year during seasonal grid peaks. The mechanism in both cases is the same. Datacentres draw full power
+for roughly 99 per cent of the year, then curtail during the handful of hours when re sidential, commercial
+and industrial demand pushes the grid to its limits. Such curtailments would allow utilities to accommodate
+the extra load on existing infrastructure. This flexibility is more achievable under distributed rather than
+centralised training. Algorithms such as DiLoCo (Douillard et al. 2023 ) are designed to tolerate long
+intervals between synchronisation steps, which means a site facing a grid peak event can pause local
+computation and re-join at the next synchronisation round without disrupting the other sites, a property
+recently demonstrated at the 10-billion-parameter scale across three continents (Jaghouar et al. 2024b).
+The third lever runs through grid connection timelines. Large connection requests take substantially longer
+to approve than small ones (Sevilla & Troynikov 2025), so distributing the load across smaller sites cuts
+calendar time by putting each request into its own queue. In several European member states, connection
+queues for loads of several hundred megawatts currently span four to ten years, with the largest requests
+facing the longest delays (ENTSO-E 2024; Ember 2024). By distributing capacity across multiple smaller
+sites in different grid regions, Europe can pursue parallel buildout tracks that enter separate interconnection
+queues, potentially reducing overall calendar time compared to a single massive grid connection request.
+On supply chain delays, distributed infrastructure reduces concentration risk in procurement. If delivery to
+one site is delayed, other sites can proceed, whereas a centralised facility faces complete delays from any
+single supply disruption. Distributed p rocurement also enables jurisdictional hedging: sourcing critical
+equipment across multiple supplier countries reduces exposure to any single export control regime or
+bilateral dispute. Partnerships with countries such as Japan, home to Mitsubishi Power, one of the three
+main gas turbine manufacturers globally (IEA 2025), become more strategically valuable in a distributed
+architecture where procurement is spread across multiple sites and countries. Such partnerships could help
+European companies secure priority access to critical equipment and reduce dependence on US-dominated
+supply chains, which, as recent analysis suggests, face significant vulnerabilities of their own.
+Distributed training also aligns with Europe ’s heterogeneous energy mix and with the decarbonisation
+objectives set out in REPowerEU (European Commission 2022) and the Clean Industrial Deal (European
+
+===== PDF_PAGE 29 =====
+Pooling Europe’s compute
+17
+Commission 2025a). Whereas a centralised gigawatt-scale facility would in practice force heavy reliance on
+natural gas for firm capacity, distributed siting allows workloads to be matched to the energy profile of each
+region. For flexible training workloads, hydroelectric power in Nordic countries offers fast-ramping capacity
+that is well suited to interruptible training workloads and to absorbing short-term inference demand spikes.
+For always -on inference, nuclear infrastructure in France provides reliable low-carbon baseload power,
+which is particularly valuable where outages or latency increases translate directly into degraded service.
+Geothermal energy, while constrained by insufficient investment and early- stage technological maturity,
+also offers stable baseload characteristics and could support both training and inference, with Iceland
+representing a candidate for near-term deployment (IEA 2025). Wind and solar, while requiring substantial
+excess capacity and costly storage to guarantee availability, can nonetheless be leveraged through distributed
+siting that locates datacentres within regions of high renewable penetration, especially for flexible training
+jobs that can be scheduled around intermittent generation. Given their climate, Nordic countries also offer
+natural cooling advantages that reduce overall power consumption across bot h training and inference
+workloads. This diversity stands in contrast to a centralised approach that would require all of these
+characteristics at one location, likely forcing heavier reliance on gas.
+Finally, geographic distribution may provide resilience against grid-level disruptions, which the IEA reports
+have increased fourfold between 2020 and 2024 (IEA 2025) across OECD countries (IEA 2025). A targeted
+disruption to energy infrastructure serving one or two datacentres could halt a centralised training run,
+whereas a distributed system can continue operating with degraded capacity while affected sites recover, a
+property that DiLoCo-style algorithms are specifically designed to support (see Section 3.4). An attack or
+natural disaster affecting energy infrastructure supplying one or two datacentres would more easily halt a
+training run than when capacity is spread across many sites. That said, it should be noted that some
+interviewed experts disagree with this view, pointing out that since datacentres are interconnected during
+distributed training, a disruption to the weakest link would be enough to halt the training.
+4.1.3. Limitations and uncertainties
+As demonstrated above, distributed training offers relief on energy infrastructure challenges in multiple
+ways. That being said, it does not fully eliminate them, and uncertainties remain. Five limitations in
+particular warrant attention: total power requirements are not reduced; gas dependency persists; the IEA’s
+flexibility estimates rest on demanding preconditions; coordination complexity grows with the number of
+sites; and the resilience benefits of distribution are partially offset by new points of failure.
+Firstly, distributed training does not reduce total power requirements. Whether Europe builds one 10 GW
+facility or ten 1 GW facilities, the aggregate power demand remains broadly comparable. In fact, distributed
+training marginally increases power demand, due to additional inter -site networking infrastructure, and
+performance overheads from synchronisation delays may need to be compensated with additional compute
+time (Jaghouar et al. 2024b). Whatever the absolute scale of capacity Europe ultimately targets, building it
+remains a major undertaking, and distributed training does nothing to reduce the underlying energy
+requirement.
+
+===== PDF_PAGE 30 =====
+RAND Europe
+18
+Secondly, gas dependency persists. As noted in Section 4.1.1, natural gas is predicted to serve 60 per cent
+of US power demand for datacentres by 2030 (Goldman Sachs 2024).5 While hydropower can comfortably
+manage the predictable ramp-up and ramp-down of power demand at the start and end of training runs,
+Nordic hydroelectric capacity is limited in total scale relative to projected European AI energy needs (IEA
+2022). It also remains unclear whether hydropower and other non-gas energy sources can adequately handle
+the transient power spikes that occur during training operations, sudden fluctuations driven by checkpoint
+saves, synchronisation events, and shifts between training phases that require rapid-response generation or
+storage. Battery storage is technically well-suited to absorbing such transients, but current deployment levels
+are insufficient and, as noted in Section 4.1.1, batteries face acute supply chain vulnerabilities (IEA 2025).
+This presents a challenge for a continent currently trying to heavily decrease dependence on Russian gas,
+substituting it for more costly alternatives such as liquid natural gas (LNG) imports from the US. The 2026
+Strait of Hormuz crisis, which sharply pushed up European fuel prices on the Title Transfer Facility (TTF),
+Europe’s main wholesale gas benchmark, has further sharpened this constraint (Tagliapietra 2026).
+Thirdly, the demand flexibility claims provided by the IEA come with important caveats. The IEA notes
+that in order to realistically reach the added 40 GW of capacity, each site would require investment in
+battery storage, negotiation of throttling agreements with local grid operators, and operational systems
+capable of dynamically shifting workloads (IEA 2025). A parallel constraint applies on the US side: Norris
+et al. (2025) similarly find that the 76 GW figure depends on contractual innovation and activ e
+coordination between operators and grid authorities, neither of which is currently widespread. It remains
+unclear how rapidly Europe could fulfil such conditions in a coordinated manner, particularly given the
+heterogeneity of national permitting regimes and the limited current deployment of grid -scale battery
+storage.
+Fourthly, experts interviewed for this report have highlighted that adding additional sites would increase
+coordination complexity. While parallel buildout shortens the duration of any single connection process
+(see Section 4.1.1), multiple grid connections mean multiple permitting processes in parallel, the navigation
+of heterogeneous national regulatory regimes, and thus multiple potential delays. Each datacentre location
+requires separate negotiations with utilities, environmental approvals, and mobilisation of construction, grid
+interconnection and permitting expertise, all of which are in short supply across European markets.
+Finally, as pointed out by some of the experts we interviewed, the energy grid resilience benefits of
+distribution may be partially offset by the fact that connecting multiple datacentres creates additional points
+of failure. While the coordination role in distributed training can be reassigned between sites if one goes
+down, the inter -site network links themselves become critical infrastructure, and disruption to key
+connections could degrade or halt synchronisation across the network. That said, distribut ed training
+algorithms such as DiLoCo are designed to tolerate temporary site dropouts (see Section 3.4), a property
+demonstrated empirically at the 10 -billion-parameter scale by the INTELLECT- 1 run (Jaghouar et al.
+2024), though tolerance to sustained or coordinated inter-site disruption at frontier scales remains untested,
+
+5 While the figure indeed refers to the United States, the point that natural gas is needed for rapid spin up and spikes
+still carries significance in the European context.
+
+===== PDF_PAGE 31 =====
+Pooling Europe’s compute
+19
+and the severity of this risk depends on the network topology and the degree of redundancy in fibre
+connections between sites.
+4.2. Compute
+4.2.1. The European compute challenge
+Compute is the second major bottleneck for European AI development. Whereas the power challenge
+discussed in Section 4.1 typically involves constraints caused by physical infrastructure, grid connection
+timelines and energy policy, the compute challenge comprises a different set of factors: access to scarce
+frontier chips, the capital required to procure them at scale, and the willingness of hardware suppliers and
+host governments to allocate cutting-edge GPUs to European buyers. This section sets out the scale of the
+gap between European compute capacity and that of other major actors, examines what closing the gap
+would require, and considers two additional challenges that make the gap harder to close: European buyers
+being deprioritised by chip suppliers, and shifting US export controls on frontier hardware.
+The starting point for any comparison is the United States, whose compute capacity is scaling rapidly.
+According to Epoch AI’s GPU Clusters dataset, the US held approximately 1.4 million H100 equivalents
+in operational clusters as of early 2026 (Epoch AI 2025a),
+6 rising to around 19.4 million when confirmed
+and likely planned additions are included. Europe is far behind on both counts. Based on our analysis of
+the same dataset, the EU, Norway and Switzerland together held approximately 122,000 H100 equivalents
+in operational clusters as of early 2026, rising to around 3.2 million once all confirmed and likely planned
+clusters are included (Epoch AI 2025a). Even Germany, Europe ’s largest economy, holds less than 2 per
+cent of global AI compute by this measure (Fox, Schnitzer & Privitera 2025). The 3.2 million figure already
+incorporates the EU’s flagship gigafactory programme and other publicly announced European projects,
+7
+several of which face significant delivery delays.
+
+6 The primary data source for this analysis is Epoch AI’s GPU Clusters dataset (Epoch AI 2025a), which as of
+January 2026 tracks 786 GPU clusters worldwide and classifies each by operational status (existing or planned) and
+certainty (confirmed, likely or unlikely). The dataset is biased towards publicly announ ced or independently
+verifiable clusters and likely underrepresents capacity operated by hyperscalers and frontier AI companies, which
+treat compute as competitive intelligence. Figures derived from it should therefore be read as lower -bound estimates.
+We use Epoch AI rather than other available sources because its classification system distinguishes operational from
+planned capacity, a distinction that several secondary sources elide.
+7 The most prominent European compute initiative is the EU’s gigafactory programme, originally envisioned to
+deliver 500,000 GPUs across five clusters by 2026 (Reuters 2025a). The programme has experienced significant
+delays. While it attracted 76 expressions of interest across 16 member states and 60 proposed sit es, with respondents
+indicating interest worth over €230 billion (European Commission 2025), the formal call for proposals was deferred
+from Q4 2025 to early 2026 (Light Reading 2025) and subsequently to summer 2026 (European Commission
+n.d.), and, and the legal basis was only established in January 2026 when Council Regulation (EU) 2026/150
+entered into force (Council of the EU 2026). A second flagship project, Stargate Norway, is a joint venture between
+Nscale, Aker and OpenAI targeting 100,000 NVIDIA GPUs at Kvandal near Narvik (OpenAI 2025; Nscale 2025).
+Construction has been underway since July 2025, but the initial funded phase covers only 20 MW of the planned
+230 MW capacity. Beyond these flagship initiatives, additional plans include a 1.4 G W AI datacentre campus near
+Paris expected by 2028 (The Register 2025) and an August 2025 EU announcement of intent to spend at least $ 40
+billion on US chip purchases (CEPA 2025), though the latter remains too vague to incorporate into capacity
+estimates.
+
+===== PDF_PAGE 32 =====
+RAND Europe
+20
+Across the international comparison shown in Figure 2, Europe lags behind every major and middle-power
+compute holder. As of early 2026, the US held approximately 1.4 million H100 equivalents in operational
+clusters; with planned and likely capacity, this rises to around 19.4 million. The UAE, Saudi Arabia and
+South Korea all hold relatively small operational fleets today, but their planned capacity , 22.9 million for
+the UAE and 5.3 million for South Korea by 2030, and 7.2 million for Saudi Arabia by the early 2030s ,
+places each above Europe’s planned 3.2 million (Epoch AI 2025a). The Emirati figure in particular depends
+heavily on US chip export licensing decisions and could be substantially curtailed if those decisions go
+differently.
+The relevant question is whether Europe can sustain a competitive pool of compute for its AI ecosystem as
+a whole, sufficient to support training, fine-tuning, inference and the iterative experimentation that frontier
+development requires across many actors simultaneously. By this measure the gap is stark.
+Even a single frontier training run would exhaust Europe ’s planned compute base. The KIRA Center
+estimates that by the end of 2028, a frontier training run on the order of 1.5 –2.3 × 10 28 FLOP would
+require 1.7 to 2.6 million H100 equivalents over a 258- day training duration (Fox, Schnitzer & Privitera
+2025), taking up most or all of Europe ’s planned 3.2 million. By 2030, requirements rise sharply as the
+underlying compute scaling trend is extrapolated forward. An expert consulted for this report estimates
+approximately 13 million H100 equivalents being needed for a single 10 29 FLOP run. Epoch AI ’s own
+analysis points in the same direction, calculating that 16 million H100 equivalents performing at FP8
+precision and 40 per cent utilisation could complete a 2×1029 FLOP training run over six months (Sevilla
+et al. 2024). Epoch further notes that, since any single lab is likely to command only around 20 per cent of
+global compute production, manufacturing capacity would need to reach approximately 100 million H100
+equivalents by 2030 to support frontier training of this scale.
+An ecosystem capable of sustaining frontier development requires substantially more than a single training
+run’s worth of compute. Inference at scale, fine-tuning, experimental and failed training runs, and parallel
+development by competing actors all draw on the same pool, and historically these uses together consume
+several times more compute than the headline training runs they support. For Europe to remain in roughly
+the same order of magnitude as other major and middle -power compute holders by 2030, an aggregate
+stock of around 10 to 20 million H100 equivalents would be needed, and plausibly more if Europe sought
+genuine self-sufficiency rather than relying on partners abroad for inference and experimentation. Against
+this benchmark, Europe’s roughly 3.2 million planned H100 equivalents leave it approximately an order of
+magnitude short, behind not only the United States but also several middle powers.
+
+===== PDF_PAGE 33 =====
+Pooling Europe’s compute
+21
+Figure 2 . AI compute capacity by country/region 8
+
+Source: Authors’ calculation based on Epoch AI, Data on GPU Clusters (January 2026).
+Two additional challenges make the gap harder to close. First, European companies are systematically
+deprioritised in the allocation of cutting -edge chips. In April 2024, Mistral CEO Arthur Mensch stated
+publicly that his company had access to only 1,500 H100s, a small fraction of the compute available to
+leading US AI companies, noting the systematic de-prioritisation of European companies by chip suppliers
+(Burja 2025). Second, US export policy on frontier chips has been frequently revised in recent years , and
+the conditions attached to chip exports increasingly extend beyond simple licensing to include detailed
+security and operational requirements on the receiving party, as illustrated by the elaborate conditions
+
+8 Figure based on Epoch AI’s Data on GPU Clusters dataset, accessed January 2026 (Epoch AI 2025a). China is
+excluded from the comparison due to the high opacity of Chinese figures, which makes systematic comparison
+unreliable. Several other caveats apply:
+The figures are likely lower bounds. Some clusters classified as confirmed or likely lack H100 -equivalent estimates
+and are excluded from the totals (e.g. the Oracle $10 billion Saudi Arabia investment, Tesla Buffalo Dojo, IndiaAI
+Mission Supercomputer). Epoch AI itself estimates its dataset captures 10 to 20 per cent of global aggregate GPU
+performance (Epoch AI 2025b), though coverage is substantially better for the type of large publicly announced
+facilities relevant here, including essentially every major project from xAI Colossus to the EU AI Gigafactories.
+Coverage is weakest for hyperscaler custom chips (Google TPUs, AWS Trainium, Microsoft Maia), which mostly
+serve internal workloads rather than third-party frontier training. Separately, some likely-European clusters lack a
+country tag and are excluded; the most consequential is Sesterce Pegasus (~26,500 H100 equivalents, owned by the
+French company Sesterce), which would add less than one per cent to the European total.
+The ‘Total by 2030’ category includes existing capacity plus confirmed and likely planned clusters dated 2030 or
+earlier (or undated). ‘Total incl. post-2030’ adds clusters dated after 2030, relevant only for Saudi Arabia, where
+DataVolt Neom Phase 2 (5.1 million H100 equivalents, planned for 2031) dominates planned capacity. ‘ Total incl.
+speculative’ adds clusters Epoch classifies as ‘unlikely’, relevant only for the United States, where a rumoured Meta
+campus accounts for over 20 million H100 equivalents. Values are rounded to one decimal place; existing capacity
+below one million is shown in thousands.
+
+===== PDF_PAGE 34 =====
+RAND Europe
+22
+attached to recent Gulf state chip import agreements (Phillips -Robins & Winter-Levy 2025). Europe has
+so far neither been offered nor sought such arrangements, leaving European buyers at a structural
+disadvantage relative to states willing to accept US oversight terms.
+4.2.2. Distributed training as a partial solution to the compute challenge
+Unlike with power infrastructure, distributed training offers limited direct relief for the compute bottleneck,
+as it does not increase the total pool of compute available. However, it does make Europe ’s dispersed
+compute stock more easily and efficiently usable for frontier training. As discussed in Sections 3 and 4.1.2,
+distributed training algorithms such as DiLoCo allow multiple geographically separated clusters to function
+as a single effective training resource by tolerating long intervals between synchronisation steps (Douillard
+et al. 2023; Jaghouar et al. 2024a). Recent systems can also cope with some hardware differences between
+sites. Decoupled DiLoCo, for example, completed a single training run on a mix of older and newer versions
+of Google's custom AI chips without losing performance (Douillard et al. 2026). A pooled European
+compute base – EuroHPC machines, AI factories and commercial clusters – would be more demanding
+still, since it would combine not just different chip generations but chips from different manufacturers,
+such as NVIDIA and AMD. Training across manufacturers has not yet been demonstrated. This matters
+because companies considering large-scale training runs in Europe do not just need chips to exist somewhere
+on the continent; they need that compute to be usable together. Without distributed training, the European
+compute base remains fragmen ted across individual clusters, none of them large enough on their own to
+support frontier training runs. Distributed training also builds naturally on existing European initiatives.
+The EuroHPC Joint Undertaking already operates supercomputer sites across multiple countries, and the
+AI factory and gigafactory programmes are designed to span multiple member states. This institutional and
+physical infrastructure makes distributed training a realistic pathway by which Europe ’s fragmented
+compute base can be combined into a single training resource at frontier scale.
+Distributed training may also provide indirect benefits for chip procurement. As noted in Section 4.2.1,
+European companies currently sit at the back of the queue for GPU allocation from manufacturers. A
+distributed infrastructure strategy addresses this by spreading hosted compute across more member states.
+When a state hosts part of a distributed training network, it acquires a direct economic and political stake
+in the success of European compute procurement, which makes it more likely to back EU -level j oint
+negotiation with chip manufacturers. It is worth noting, however, that this argument applies primarily
+where Europe seeks to procure chips for European -headquartered companies. US hyperscalers building
+European datacentres draw on their own procurement pipelines, in which they sit near the front of the
+queue, so the deprioritisation problem matters most where Europe seeks to build indigenous frontier
+capability, and matters less where the goal is hosting US-led infrastructure on European soil.
+The track record on EU joint procurement is mixed. Joint vaccine procurement in 2020 –21 is widely
+considered to have succeeded under pressure (European Commission 2021a), while the joint gas purchasing
+platform launched in 2022 faced structural challenges from market liberalisation and limited intra -
+European supply, though it has since bee n cited as a blueprint for future demand aggregation (Nicoli &
+Beetsma 2024). Chip procurement would likely face similar coordination challenges, but the political logic
+favouring joint action is stronger when more member states are direct stakeholders. The $40 billion US –
+EU chip purchase commitment announced in September 2025, although negotiated as part of a broader
+
+===== PDF_PAGE 35 =====
+Pooling Europe’s compute
+23
+trade deal rather than as a standalone procurement initiative, illustrates that European chip transactions at
+this scale are now possible (Chavez 2025). Whether such commitments translate into priority access
+depends on the EU’s collective bargaining position with NVIDIA and other suppliers, and that position is
+stronger when more member states have a direct stake in the outcome.
+4.2.3. Limitations and uncertainties
+Despite the potential benefits discussed in Section 4.2.2, distributed training does not directly close the
+fundamental compute gap, as it does not reduce overall GPU requirements, it provides little relief from
+allocation problems, it offers no protection against shifting US export controls, and the coordinated
+procurement it enables may slow execution.
+Just as distributed training does not reduce total power requirements (Section 4.1.3), it also does not reduce
+overall GPU requirements. The technology changes how existing compute is used without changing how
+much is needed. Recent demonstrations such as INTELLECT- 1 suggest the efficiency overhead can be
+modest at smaller scales ( Jaghouar et al. 2024a), but the picture at frontier scales is less clear. Either way,
+the fundamental compute gap is not solved by technology.
+Distributed training also offers little relief from chip allocation problems. As discussed in Section 4.2.1,
+European companies sit at the back of the queue for GPU allocation from manufacturers. This is a
+procurement and commercial relationship issue, not an infrastructure one, and rearranging where compute
+is physically located does not directly change which companies sit at the front of the queue.
+Nor does distributed training protect against shifting US export controls. The United States has revised its
+export control regime on frontier AI chips multiple times since 2022, including the October 2022 Bureau
+of Industry and Security BIS rules, the October 2023 update, the December 2024 measures, the January
+2025 AI Diffusion Rule, and the re scission of that same Diffusion Rule in May 2025 (Allen & Goldston
+2025; BIS 2025). The chips inside European datacentres are subject to the same regime regardless of how
+those datacentres are physically configured.
+Finally, while coordinated procurement may strengthen Europe ’s bargaining position with chip
+manufacturers, as discussed in Section 4.2.2, it carries an execution speed cost. EU coordination has a well-
+documented track record of slow decision making; the Draghi report (2024) found that EU legislation
+averages 19 months from Commission proposal to adoption. Distributed training therefore creates a trade-
+off between bargaining leverage and deployment speed. This takes us to the question of politics.
+4.3. Politics
+4.3.1. European coordination challenges
+Europe’s fragmented political authority introduces coordination challenges and conflicting economic
+interests that may bottleneck efforts to scale European AI compute infrastructure.
+The European Union has a long history of political resistance to centralised coordination. While much of
+this history involves areas such as migration policy and defence , where the EU has limited formal
+competence, similar dynamics have emerged in adjacent economic domains where its authority is stronger:
+for example, Ireland, Luxembourg, Malta and Cyprus have resisted enhanced authority for the European
+
+===== PDF_PAGE 36 =====
+RAND Europe
+24
+Securities and Markets Authority in capital markets integration (Lindner & Mack 2024), and Germany
+and Austria have opposed transferring banking supervisory control to supranational institutions
+(Balakrishnan & Pradhan, 2025). The economic stakes in AI infrastructure are large enough to intensify
+these dynamics. Investment in information-processing equipment and software, driven primarily by the AI
+datacentre buildout, accounted for an estimated 92 per cent of US gross domestic product (GDP) growth
+in the first half of 2025, even though this category represents only around 4 per cent of total US GDP
+(Armstrong & Kim 2025). Without this contribution, US GDP would have grown at just 0.1 per cent on
+an annualised basis. This creates powerful incentives for individual member states to compete for
+infrastructure placement rather than accept centralised siting decisions.
+Even where member states agree on the goal of scaling European compute, regulatory and permitting
+timelines pose a distinct coordination challenge that depends on political will at both EU and national
+levels. As discussed above, pre-AI boom US datacentre buildout typically took 18 to 24 months from site
+selection to operation, while grid connection timelines in parts of Europe currently run to 7 to 10 years
+(IEA 2025). The fastest confirmed recent deployment, xAI ’s Colossus cluster in Memphis, reached
+operation in 122 days, but only by relying on contested workarounds: xAI hired 25 per cent of the US’s
+mobile trailer cooling capacity to manage thermal loads, and used on -site gas turbines to begin operations
+before formal grid connection, operating in a regulatory grey area that drew permit compliance challenges
+(Reuters 2025a). Whether European member states possess the political will to streamline environmental
+permitting and grid connection to a comparable degree, and whether such approaches would survive legal
+challenges under existing European environmental and planning frameworks, remains uncertain.
+4.3.2. Distributed training as a partial solution to coordination challenges
+A distributed AI training strategy aligns with the political and economic interests of a majority of EU
+member states and EFTA partners. It would avoid concentrating computing power in a handful of states
+and would spread the associated benefits more widely ( energy infrastructure upgrades, foreign direct
+investment, local workforce development in AI -adjacent fields, and the gradual emergence of talent and
+deployment ecosystems around hosted compute, as researchers, start -ups and enterprise users locate near
+priority-access infrastructure). It also aligns with the EU’s Cohesion Policy, which aims to reduce disparities
+between regions and member states (European Commission 2021b). A distributed approach could extend
+advanced computational infrastructure to countries with limited current AI research and deployment
+capacity, supporting the policy’s stated goal of reducing intra-EU disparities.
+Non-EU EFTA partners such as Switzerland and Norway would also be easier to engage through a more
+distributed approach. Both countries have well- developed innovation ecosystems and significant energy
+resources, and Norway in particular is already host to t he Stargate Norway project (OpenAI 2025; Nscale
+2025). A distributed strategy lowers the political threshold for adding new partners because it does not
+require negotiating their participation in a single concentrated facility, making it easier to incorporate non-
+EU European countries into European compute initiatives.
+A distributed approach also builds on existing political infrastructure. As noted in Section 4.2.2, the
+EuroHPC Joint Undertaking already operates a multi-sovereign governance model: 33 participating states
+coordinate on purchasing, deploying and operating high-performance computing systems, with
+supercomputers hosted in locations including Finland, Spain, Slovenia and the Czech Republic. What these
+
+===== PDF_PAGE 37 =====
+Pooling Europe’s compute
+25
+initiatives offer politically is not technical infrastructure but the institutional scaffolding around it:
+established procurement pipelines, multi -sovereign decision-making processes, and politically agreed site
+locations. These represent a foundation that a distributed scaling strategy can build on more readily than a
+centralised one.
+4.3.3. Uncertainties and limitations
+Despite this promise, a distributed approach carries its own risks and uncertainties. These range from
+execution challenges in government-led coordination, to the legal complexity of operating across multiple
+jurisdictions, to doubts about whether EU member states can agree on joint financing at the scale frontier
+AI infrastructure actually requires.
+Government-led coordination carries real execution risks. EU coordination has a well- documented track
+record of extended decision-making timelines (Draghi 2024; Kirpsza 2022), and there is a real concern that
+heavy public involvement adds bureaucratic fric tion without delivering proportionate results. The AI
+Gigafactories programme illustrates the concern: although individual gigafactories would be smaller than
+some privately built datacentres completed in a matter of months, the programme remains stuck in approval
+processes years after announcement, with the formal call for proposals deferred repeatedly – from Q4 2025
+to early 2026 and subsequently to summer 2026, still unpublished at the time of writing (European
+Commission 2025c, 2025d, n.d.) and the original delivery timeline no longer achievable (see Section 4.2.1).
+A distributed strategy only avoids this trap if the division of labour is clear: private actors should build the
+datacentres themselves, with governments focusing on the enabling layer of permitting, grid connections,
+and inter -site fibre (Kothuri et al. 2025) . Where that division blurs, and where public financing or
+coordination is asked to do work private capital should do, distribution risks compounding the coordination
+burden rather than solving it.
+Two different actors face regulatory burdens in a distributed architecture, and it is worth separating them.
+Site developers face heterogeneous permitting and planning regimes, much of which sits at the regional and
+municipal level rather than the national or EU one. Each datacentre site requires separate environmental
+review, planning approvals and compliance with local labour rules, even where EU -level frameworks exist
+(IEA 2025; European Commission 2025b). The parallel grid -connection-queue advantage dis cussed in
+Section 4.1.1 applies specifically to per -site connection timelines; the broader landscape of planning,
+environmental review and labour compliance runs in the opposite direction, with each site adding its own
+approval stack. AI developers running training workloads across those sites face a different layer of burden:
+data residency and localisation requirements that bind the training operator regardless of where the physical
+hardware is located. While intra-EU data transfers are protected under GDPR (Regulation (EU) 2016/679,
+Chapter V), pipelines that span EFTA partners or non -EU European countries face additional legal
+complexity, including adequacy decisions and country-specific residency requirements (EDPB 2021). We
+return to both issues in the policy recommendations (Section 6.2.2).
+A further uncertainty sits around the financing of the public enabling layer itself. The datacentres at the
+heart of a distributed strategy would be privately financed, but the inter-site fibre connections, grid upgrades
+and coordinated permitting frameworks that make distribution viable do require public money and multi-
+sovereign agreement. EuroHPC, the closest existing model, operates with a 2021 –2027 budget of around
+€7 billion (Council Regulation (EU) 2021/1173) – substantial but still an order of magni tude below the
+
+===== PDF_PAGE 38 =====
+RAND Europe
+26
+tens of billions in public-layer financing a distributed strategy would require, and dwarfed by the hundreds
+of billions in private capital that would need to flow alongside it. Multi-sovereign projects also face familiar
+collective action problems: if each member state expects others to carry disproportionate burdens, the public
+component risks falling short of what is needed to unlock the private component, even where broad political
+support exists.
+
+===== PDF_PAGE 39 =====
+27
+5. Cross-cutting risks and limitations of distributed training
+Distributed training offers solutions to Europe ’s compute infrastructure shortfall, as discussed in Sections
+4.1.2, 4.2.2, and 4.3.2. It also introduces a set of risks that cut across all three domains (power, compute,
+politics), distinct from the domain- specific limitations covered in Sections 4.1.3, 4.2.3, and 4.3.3:
+operational complexity, talent requirements, and the fact that distributed training remains unproven at
+frontier scale.
+5.1. Operational complexity and coordination costs
+A distributed training strategy introduces operational complexity that cuts across all three of the bottlenecks
+discussed in Section 4. As detailed in Sections 4.1.3 and 4.3.3, this includes the regulatory dimension –
+heterogeneous national frameworks, separate utility negotiations, environmental permits, and labour -law
+compliance across multiple sites. A further layer, distinct from the domain -specific limitations above, is
+engineering complexity. S oftware must detect when individual sites go offline and r edistribute their
+workloads to the remaining sites without losing training progress, tolerate higher rates of data loss between
+sites, and keep GPUs computing while data is being transferred between sites in order to avoid idle time on
+slow inter-site links. The most recent systems address several of these requirements directly. Decoupled
+DiLoCo, for instance, isolates site-level failures so that remaining sites continue training, maintained 88 per
+cent efficiency under aggressive simulated hardware failure s, and allows sites to join and leave a run in
+progress (Douillard et al. 2026). These capabilities have, however, so far been demonstrated only within a
+single company's tightly integrated software stack. Multiple experts interviewed for this report identified
+these as serious barriers that companies would need to weigh carefully before adopting a distributed
+approach.
+A distinct source of fragility lies in the inter -site network links themselves. In a distributed architecture,
+these links become critical infrastructure: disruption to the connections between sites could degrade or halt
+synchronisation across the whole training run, even if every individual datacentre remains fully operational.
+This cuts against the resilience benefit noted in Section 4.1.2, where a distributed system can continue with
+degraded capacity while affected sites recover. Whether distribution makes a training run more or less fragile
+therefore depends on the specific network topology, how many inter-site links exist, how much redundancy
+is built into them, and how the training algorithm handles partial network failure. Recent damage to subsea
+cables in the Baltic Sea, which the European Commission and High Representative have characterised as
+part of larger hybrid campaigns targeting EU critical infrastructure, illustrates that this is not a hypothetical
+concern for European cross -border infrastructure (European Commission & High Representative 2025).
+
+===== PDF_PAGE 40 =====
+RAND Europe
+28
+The same inter -site links also expand the cybersecurity surface beyond physical disruption, creating new
+channels for espionage, gradient -level adversarial intervention, and exfiltration of model weights during
+training (Zhu, Liu & Han 2019).
+Lastly, a distributed approach also sacrifices economies of scale. Centralised hyperscalers benefit from
+amortised infrastructure costs, bulk procurement of hardware and energy, single grid connections, and
+standardised operational tooling, all of which translate into substantially lower unit costs (McKinsey 2025;
+Pure Storage 2024).
+5.2. Talent requirements
+Distributed training introduces talent requirements specific to the technology. Algorithms enabling training
+across multiple sites and large distances draw on a specialised body of expertise, including asynchronous
+optimisation, gradient compression, and i nter-site bandwidth- aware scheduling. This is concentrated
+almost exclusively in US frontier AI companies and a small number of academic groups. Even when
+underlying methods are published, as with DiLoCo (Douillard et al. 2023) and INTELLECT-1 (Jaghouar
+et al. 2024b), the implementation details, tuning and operational know-how that make them work at scale
+typically remain proprietary or undocumented.
+Several experts interviewed for this report argued that the deeper challenge is not technical talent in isolation
+but the absence of an ecosystem that retains it. European researchers with relevant expertise frequently move
+to US labs, where the combination of compensation, compute access and career trajectory is difficult for
+Europe to match. Closing the talent gap therefore requires not only training programmes but also the
+institutional and financial conditions to keep specialised talent in Europe, whether at European firms or at
+local operations of foreign ones, a challenge that parallels broader European concerns about brain drain in
+frontier technology fields (Draghi 2024).
+5.3. Unproven at frontier scale and issues in future-proofing
+Distributed training has been demonstrated in smaller research trials and limited production deployments,
+but concrete evidence of its use by frontier AI developers at scale remains thin. Current public
+demonstrations involve a small number of datacentres and moderately sized models, well below the
+parameter counts and compute volumes characterising the latest frontier models (see Table 1). Experts
+caution that benchmark performance reported in research papers may obscure broader challenges in training
+stability, convergence quality and real-world model behaviour that emerge only at frontier scale.
+Industry behaviour, while not conclusive, does offer signals. Companies prefer centralised facilities when
+power and grid constraints permit, and pursue distributed models mainly when forced to by external
+constraints (Sevilla & Troynikov 2025; Patel et al. 2024). This preference suggests that, despite recent
+algorithmic advances, centralised training retains significant operational and performance advantages that
+frontier d evelopers thus far perceive as significant. Distributed training is, for Europe, a s econd-best
+architecture that circumstance makes hard to fully avoid. The question is not whether it is optimal but
+whether it is good enough to make European frontier development viable.
+
+===== PDF_PAGE 41 =====
+Pooling Europe’s compute
+29
+Centralised training is also more future -proof. Any training scheme designed for distribution can in
+principle adapt to centralised configurations, but communication-heavy protocols developed for centralised
+clusters may not translate to distributed settings. Some current AI development trends, particularly synthetic
+data generation and reinforcement learning fine -tuning, are relatively well -suited to distributed set- ups
+because they involve compute -heavy workloads with comparatively modest inter -site commu nication
+requirements (Sevilla & Troynikov 2025). Other technical advances, however, could shift this balance in
+either direction, and the future trajectory of training methods remains a meaningful source of uncertainty
+for any long-term distributed strategy.
+5.4. Additional challenges
+Beyond the limitations specific to distributed training, Europe faces broader structural challenges that apply
+to any AI competitiveness strategy.
+Europe lacks both the venture capital depth and the integrated capital markets to mobilise private
+investment at the scale required for frontier AI infrastructure. US hyperscalers were projected in mid-2025
+to deploy approximately $350 billion in capital e xpenditure in 2025 and around $400 billion in 2026
+(Fusion Worldwide 2025), with individual datacentre projects increasingly in the tens of billions of dollars.
+More recent estimates place the figure substantially higher, with combined 2026 capital expenditure for the
+five largest hyperscalers (Amazon, Microsoft, Alphabet, Meta and Oracle) now forecast to exceed $600
+billion, a roughly 36 per cent year-on-year increase (IEEE ComSoc Technology Blog 2025). Europe’s largest
+single AI infrastructure commitment to date, the gigafactory programme, totals roughly €20 billion across
+multiple sites (European Commission 2025e). Mistral’s $830 million debt financing for its Paris data centre
+buildout (CNBC 2026), on top of its €1.7 billion ($2 billion) Series C led by ASML in September 2025
+(Mistral AI 2025), represents the largest single-company financing round by a European AI company.
+The Draghi report (2024) identifies a deeper structural problem: European savings rates are higher than
+those in the US, but the absence of an integrated capital markets union prevents these savings from being
+efficiently channelled into productive investment, including AI infrastructure. The result is that European
+private capital that could in principle finance frontier AI buildout instead flows into less productive uses or
+into US markets. Without addressing this structural gap, European-led infrastructure strategies, distributed
+or otherwise, will operate under a binding capital constraint , even where foreign -financed alternatives
+remain viable. This constraint cuts across each of the bottlenecks discussed in Section 4: financing power
+and grid buildout, procuring frontier compute, and building the joint European- level public layer that
+distributed coordination requires.
+A further structural shift concerns the changing balance between training and inference in total AI compute
+demand. Distributed training addresses one side of the workload, but inference is becoming the dominant
+share of AI compute consumption and is expec ted to continue growing relative to training (Tanner et al.
+2026). To the extent that the European compute challenge becomes primarily an inference challenge, the
+relative importance of distributed training as a policy lever will diminish accordingly.
+
+===== PDF_PAGE 42 =====
+30
+6. Recommendations – making Europe ready for distributed
+training
+Europe is roughly an order of magnitude behind the United States on compute, faces serious power and
+grid constraints, and is hampered by slow coordination. Closing this gap requires policies that address these
+frictions and hence incentivise compute buildout on the European continent. Distributed training has a
+specific role in this picture; it is the technical mechanism that allows compute spread across geographically
+separated sites to function as a single resource for frontier training, and could transf orm Europe ’s
+fragmented compute base into a unified pool. Infrastructure to facilitate distributed training could make
+Europe a more attractive location for companies – both European and non-European – seeking to conduct
+large-scale training runs.
+The primary role for European policymakers is to ensure that distributed training can be done in Europe
+when companies wish to do so. This requires two conditions. Firstly, mechanisms must be in place to enable
+rapid distributed buildout, including efficient cross -border permitting, sufficient grid capacity, and
+governance structures that can keep pace with private-sector deployment timelines. Secondly, infrastructure
+that is already built or planned should be designed from the outset to support distributed training projects,
+including through inter -site fibre connectivity and siting decisions that avoid unnecessary geographical
+isolation. Retrofitting existing infrastructure for distributed compatibility is significantly cheaper than
+building new sites from scratch, and European policy should make such retrofits as straightforward as
+possible.
+The recommendations that follow build on this framing. We begin with an illustrative scenario that grounds
+the discussion in concrete operational terms, then turn to specific policy measures.
+6.1. An illustrative scenario
+Suppose Europe were to host 10 to 20 million H100 equivalents, the range identified in Section 4.2.1 as
+necessary to support frontier -scale training runs at a cadence sufficient for Europe to remain a credible
+participant in frontier AI development and regulation. What physical infrastructure and enabling
+
+===== PDF_PAGE 43 =====
+Pooling Europe’s compute
+31
+conditions would need to be in place for this compute to be usable for frontier training through distributed
+methods?9
+Translating 10 to 20 million H100 equivalents into power requirements depends on assumptions about
+per-chip power draw, supporting hardware, and datacentre cooling efficiency. Recent estimates from
+RAND (Pilz, Mahmood & Heim 2025) and Epoch AI (Sevilla et al. 2024) converge on approximately
+1,418 W per H100 equivalent at the cluster level, which becomes approximately 1,700 W per H100
+equivalent at the total facility level under a central power usage effectiveness (PUE) assumption of 1.2 (see
+Annex 1). Under this assumption, 10 million H100 equivalents would require approximately 17 GW of
+total facility power, and 20 million approximately 34 GW.
+Two sources of uncertainty complicate this central estimate. On the one hand, next-generation hardware
+will deliver substantially more compute per watt: for its Blackwell chips, for example, NVIDIA cites up to
+25× lower energy per inference for large LLM workloads at the rack level (NVIDIA 2024). By the time
+European infrastructure at this scale is operational, the power requirements per unit of compute could be
+meaningfully lower than current estimates suggest. On the other hand, the demand -side estimates of
+compute required for frontier training in 2030 and beyond also rest on multiple assumptions, and given
+the delivery delays many projects are likely to experience, the compute requirements at the relevant time
+horizon could equally be higher than current ly projected. Predicting how these effects will balance out is
+beyond the scope of this report, but it is plausible that efficiency gains will be partially or fully offset by
+rising compute demand. The 17 to 34 GW range should therefore be read as an order -of-magnitude
+working estimate rather than a precise forecast.
+These power requirements are the central reason for adopting at least a partially distributed approach. No
+single European site, current or projected, can provide the 5 to 10 GW concentrated at one cluster that a
+fully centralised approach would require: even the largest planned European facility, the 1.4 GW Campus
+AI project in the Paris region (École Polytechnique 2025), falls well below this threshold. Grid connections
+at the required scale face approval timelines of 7 to 10 years in many European countries (IEA 2025), and
+a fully centralised approach would forgo the demand -flexibility benefits discussed in Section 4.1.2, which
+could unlock tens of gigawatts of additional capacity using existing infrastructure. Smaller sites in the 300
+MW to 1 GW range can connect to grids substantially faster, and parallel buildout across multiple locations
+would compress the overall timeline considerably (Sevilla & Troynikov 2025; NERC 2025). A fully
+centralised approach would also face political resistance from medium a nd small EU member states and
+would risk excluding valuable partners such as Switzerland and Norway, as discussed in Section 4.3.2.
+
+9 The technical foundations for European-scale distributed training are more mature than is often assumed. Frontier
+AI companies already train across multiple datacentres (see Section 3.3), and Epoch AI’s simulation of a 10 GW
+system distributed across 23 US sites estimated performance overhead below 5 per cent relative to an equivalent
+centralised configuration (Sevilla & Troynikov 2025). Several of the experts consulted for this report assessed
+existing methods as sufficient for inter-regional training where high-bandwidth interconnect is available between
+sites, suggesting that distributed training at this scale is moving beyond purely theoretical territory. Two
+qualifications are worth noting. Firstly, the geographic distances involved in European distributed training would
+substantially exceed those in the Epoch AI simulation, and the performance overhead at intra -European scales has
+not yet been empirically validated. Secondly, the expert assessment is conditional on inter-site bandwidth that does
+not yet exist across most European links and would itself require substantial investment.
+
+===== PDF_PAGE 44 =====
+RAND Europe
+32
+One plausible set -up would involve two tracks. The first would consist of 4 to 6 hyperscale clusters of
+approximately 2 to 3 GW each, located where large -scale grid connections are most feasible, for example
+near France’ s nuclear baseload or Nordic hydroelectric infrastructure. These provide the concentrated
+compute density needed for the most bandwidth-intensive training phases and for large-scale inference.
+The second track would complement these with 15 to 25 distributed sites of 500 MW to 1 GW each,
+exploiting demand flexibility, faster grid connections, and Europe ’s varied energy landscape (for example
+Iberian solar, North Sea wind, or geothermal sources in Iceland and Italy). Combined, the two tracks would
+provide approximately 16 to 43 GW of total facility power, bracketing the 17 to 34 GW range implied by
+the 10 to 20 million H100 equivalent central estimate.
+During a frontier training run, the hyperscale clusters would handle the most communication -intensive
+portions of the workload, while the distributed sites contribute additional compute capacity through low-
+communication algorithms such as DiLoCo (Douillard et al. 2023), synchronising at intervals rather than
+continuously. Between major training runs, both tracks would serve inference, fine-tuning and experimental
+workloads, with the distributed sites providing demand flexibility by temporarily reducing load during grid
+peaks while the hyperscale clusters maintain baseline operations. The precise allocation of workloads across
+the two tracks would depend on bandwidth, training architecture and relative cost at each location, with
+these decisions best left to operators rather than prescribed by policy. The scenario shows that a 17 to 34
+GW European compute base is constructible by pairing a small number of hyperscale anchor sites with a
+fleet of smaller distributed clusters, rather than concentrating frontier training into a single ultra -large
+facility. The binding constraints are therefore primarily regulatory and infrastructural rather than
+technological, which is what the policy recommendations below address.
+Several caveats apply. This is one illustrative scenario, not a blueprint. Investment in energy supply,
+semiconductors and talent remains equally critical. The power conversion reflects current -generation
+hardware and will shift substantially as more efficient chips reach deployment. The dual-track architecture
+assumes continued maturation of distributed training algorithms, which remain largely unproven at full
+frontier scale. The precise split between hyperscale and distributed capacity should be determin ed by a
+detailed siting assessment, which we recommend commissioning as an early priority.
+6.2. Policy recommendations
+The following policy recommendations focus on helping to create a landscape that is prepared for the
+inclusion of a distributed training strategy into Europe’s frontier AI scaling. The recommendations centre
+around two pillars: mapping and preparing physical infrastructure for distributed training, and simplifying
+and harmonising cross-border regulation.
+6.2.1. Map and prepare physical infrastructure for distributed training
+Enabling distributed training in Europe requires the right physical preconditions. This means mapping
+current infrastructure, identifying gaps, designing new infrastructure with distributed training in mind from
+the outset, as well as tracking technical de velopments closely enough that policy does not lag behind the
+state of the art.
+
+===== PDF_PAGE 45 =====
+Pooling Europe’s compute
+33
+Assess spare energy capacity across European grid regions. This assessment could be led by ENTSO -E
+in collaboration with DG ENER and member state authorities. The purpose would be to map facilities that
+operate below their grid allocations, regions with available headroom, and grid connection timelines by
+jurisdiction. The assessment should also identify where flexibility in demand from operators could unlock
+additional capacity.
+Assess existing and required cross -border fibre infrastructure . This assessment could be led by DG
+CONNECT in collaboration with member state authorities and the Body of European Regulators for
+Electronic Communications (BEREC), and it should map both existing fibre capacity and the gaps that
+would need to be filled to enable a pan-European distributed training architecture.
+Publish a European AI Infrastructure Reference. Based on energy capacity and fibre assessments, the EU
+AI Office should produce and maintain a public database that contains two components : firstly, a map of
+candidate datacentre sites across Europe above 100MW, with each location tagged for the type of workload
+it best supports (such as distributed training, hyperscale baseload, inference and so on) ; secondly, a query
+function that allows users to filter locations by their own criteria, such as available power capacity, energy
+mix and latency to other sites. The reference will serve as a guidance document for companies evaluating
+Europe for frontier AI infrastructure buildouts, and as a resource for EU and member state institutions
+looking to prioritise investment into enabling infrastructure for datacentres.
+Make AI infrastructure easy to interconnect across Europe . EU and member state authorities should
+reduce the friction of connecting AI infrastructure to existing fibre backbones through targeted deregulation
+of fibre permitting and rights -of-way, and subsidies for last -mile or inter -site links where commercial
+provision falls short. Co-financing institutions such as the European Investment Bank (EIB) and EuroHPC
+can reinforce this by favouring projects sited near exis ting fibre backbones, without asking ope rators to
+build fibre themselves.
+Monitor trends in distributed training within the EU AI Office. Distributed training is a fast-developing
+technical domain, and as a result associated policy recommendations may quickly become out of date. To
+address this moving target problem, the EU AI Office should incorporate distributed training into its
+existing technical monitoring activities, drawing on external expertise where needed rather than creating
+new dedicated capacity.
+6.2.2. Simplify and harmonise cross-border regulation
+Companies seeking to operate AI training infrastructure across Europe currently face patchy and slow
+regulatory regimes and processes, making it unattractive to develop frontier AI models via distributed
+training across European countries. Reducing this burden is valuable regardless of whether distributed
+training ends up being used as a main mechanism for training or not. The following actions are
+recommended:
+Accelerate and harmonise permitting and grid connection processes for AI infrastructure across the
+continent. DG GROW and DG ENER, in cooperation with member states and the Agency for the
+Cooperation of Energy Regulators (ACER) , should ensure that an AI company can go from investment
+decision to construction seamlessly, so that datacentres can go online in internationally competitive
+timelines.
+
+===== PDF_PAGE 46 =====
+RAND Europe
+34
+Establish a portfolio of pre -approved candidate sites. DG ENER, DG GROW and the EU AI Office
+should create ‘ pre-approved’ AI infrastructure sites, where grid connections, environmental assessments,
+zoning clearances and other documentation needs are accelerated. Member state authorities and energy
+operators could then execute actual site preparation within their jurisdictions. The EU AI Office should
+maintain a publicly available database of these sites.
+Resolve the legal issues of operating data flows between training sites. During distributed training, a
+high volume of data crosses between datacentres . The legal status of these flows under existing data
+protection rules (notably the General Data Protection Regulation) and sovereignty instruments (including
+the Data Act, the EUCS scheme under the Cybersecurity Act, and the Cloud and AI Development Act)
+needs to become clearer. DG CONNECT should use the Cloud and AI Development Act, proposed by
+the Commission in June 2026 (European Commission 2026) , to clarify how these instruments apply to
+intra-EU data flows arising from distributed model training, so that companies can run cross-border training
+runs within Europe with legal certainty.
+
+===== PDF_PAGE 47 =====
+35
+References
+Allen, G.C., & I. Goldston. 2025. Understanding U.S. allies’ current legal authority to implement AI and
+semiconductor export controls. Center for Strategic and International Studies, 14 March. As of 30
+June 2026:
+https://www.csis.org/analysis/understanding-us-allies-current-legal-authority-implement-ai-and-
+semiconductor-export
+Armstrong, R., & H. Kim. 2025. ‘Does GDP growth minus AI capex equal zero?’ Financial Times,
+Unhedged, 1 October. As of 30 June 2026:
+https://www.ft.com/content/603be7d5-13ac-4047-9854-24db5f0f0802
+Balakrishnan, R., & M. Pradhan. 2025. ‘Europe’s elusive savings and investment union.’ International
+Monetary Fund, Finance & Development, June. As of 30 June 2026:
+https://www.imf.org/en/publications/fandd/issues/2025/06/europes-elusive-savings-and-
+investment-union-ravi-balakrishnan
+BIS (Bureau of Industry and Security). 2025. ‘Department of Commerce announces rescission of Biden-
+era Artificial Intelligence Diffusion Rule.’ US Department of Commerce, 13 May. As of 30
+June 2026:
+https://www.bis.gov/press-release/department-commerce-announces-rescission-biden-era-
+artificial-intelligence-diffusion-rule-strengthens
+Burja, S. 2025. ‘AI 2026: Mistral will rise as compute is unleashed.’ Bismarck Brief, 10 September. As of
+30 June 2026: https://brief.bismarckanalysis.com/p/ai-2026-mistral-will-rise-as-compute
+Chavez, P. 2025. ‘What the US-EU $40 billion chip deal means.’ Center for European Policy Analysis, 2
+September. As of 30 June 2026:
+https://cepa.org/article/what-the-us-eu-40-billion-chip-deal-means/
+Chen, X., X. Wang, A. Colacelli, M. Lee & L. Xie. 2025. ‘Electricity demand and grid impacts of AI data
+centers: Challenges and prospects.’ arXiv:2509.07218. As of 30 June 2026:
+https://arxiv.org/abs/2509.07218
+CNBC. 2026. ‘Mistral secures $830 million in debt financing to fund AI data center.’ 30 March. As of 30
+June 2026:
+https://www.cnbc.com/2026/03/30/mistral-ai-paris-data-center-cluster-debt-financing.html
+
+===== PDF_PAGE 48 =====
+RAND Europe
+36
+Council of the European Union. 2026. ‘Artificial intelligence: Council paves the way for the creation of
+AI gigafactories.’ Press release, 16 January. As of 30 June 2026:
+https://www.consilium.europa.eu/en/press/press-releases/2026/01/16/artificial-intelligence-
+council-paves-the-way-for-the-creation-of-ai-gigafactories/
+Douillard, A., Q. Feng, A.A. Rusu, R. Chhaparia, Y. Donchev, A. Kuncoro, et al. 2023. ‘DiLoCo:
+Distributed low-communication training of language models.’ arXiv:2311.08105. As of 30 June
+2026: https://arxiv.org/abs/2311.08105
+Douillard, A., K. Rush, Y. Donchev, Z. Charles, A. Dubey, B. Woodworth, et al. 2026. 'Decoupled
+DiLoCo for resilient distributed pre-training.' arXiv:2604.21428. As of 8 July 2026:
+https://arxiv.org/abs/2604.21428
+Douillard, A., Y. Donchev, K. Rush, S. Kale, Z. Charles, Z. Garrett, et al. 2025. ‘Streaming DiLoCo with
+overlapping communication: Towards a distributed free lunch.’ arXiv:2501.18512. As of 30
+June 2026: https://arxiv.org/abs/2501.18512
+Draghi, M. 2024. The future of European competitiveness. Report to the European Commission, Brussels,
+September. As of 30 June 2026:
+https://commission.europa.eu/topics/eu-competitiveness/draghi-report_en
+DSIT (UK Department for Science, Innovation and Technology). 2023. A pro-innovation approach to AI
+regulation. White Paper CP 815, 29 March. As of 30 June 2026:
+https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach
+———. 2024. A pro-innovation approach to AI regulation: Government response. Command Paper 1019, 6
+February. As of 30 June 2026:
+https://www.gov.uk/government/consultations/ai-regulation-a-pro-innovation-approach-policy-
+proposals/outcome/a-pro-innovation-approach-to-ai-regulation-government-response
+Duan, J., S. Zhang, Z. Wang, L. Jiang, W. Qu, Q. Hu, et al. 2024. ‘Efficient training of large language
+models on distributed infrastructures: A survey.’ arXiv:2407.20018. As of 30 June 2026:
+https://arxiv.org/abs/2407.20018
+École Polytechnique. 2025. 'MGX, Bpifrance, Mistral AI and NVIDIA launch joint venture to build
+Europe's largest AI campus in France.' Press release, 19 May. As of 6 July 2026:
+https://www.polytechnique.edu/en/press-room/press-releases/mgx-bpifrance-mistral-ai-and-
+nvidia-launch-joint-venture-build-europes-largest-ai-campus-france
+EDPB (European Data Protection Board). 2021. Recommendations 01/2020 on measures that supplement
+transfer tools to ensure compliance with the EU level of protection of personal data. Version 2.0,
+adopted 18 June. As of 6 July 2026:
+https://www.edpb.europa.eu/our-work-tools/our-
+documents/recommendations/recommendations-012020-measures-supplement-transfer_en
+Ember. 2025. ‘Grids for data centres: Ambitious grid planning can win Europe’s AI race.’ 19 June. As of
+30 June 2026:
+https://ember-energy.org/latest-insights/grids-for-data-centres-ambitious-grid-planning-can-
+win-europes-ai-race/
+
+===== PDF_PAGE 49 =====
+Pooling Europe’s compute
+37
+ENTSO-E. 2024. Ten-Year Network Development Plan 2024: Infrastructure Gaps Identification Report.
+European Network of Transmission System Operators for Electricity. As of 30 June 2026:
+https://www.entsoe.eu/outlooks/tyndp/2024/
+Epoch AI. 2025a. ‘Data on GPU clusters.’ As of 30 June 2026: https://epoch.ai/data/gpu-clusters
+———. 2025b. ‘Introducing the Frontier Data Centers Hub.’ 4 November. As of 30 June 2026:
+https://epoch.ai/blog/introducing-the-frontier-data-centers-hub
+———. 2025c. ‘Microsoft’s Fairwater datacenter will use more power than Los Angeles.’ 26 November.
+As of 30 June 2026: https://epoch.ai/data-insights/fairwater-power-usage
+European Commission. 2021a. ‘EU vaccines strategy.’ As of 30 June 2026:
+https://commission.europa.eu/strategy-and-policy/coronavirus-response/public-health/eu-
+vaccines-strategy_en
+———. 2021b. ‘Cohesion policy 2021–2027.’ As of 30 June 2026:
+https://ec.europa.eu/regional_policy/2021-2027_en
+———. 2022. REPowerEU Plan. COM(2022) 230 final. Brussels, 18 May. As of 30 June 2026:
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM:2022:230:FIN
+———. 2025a. ‘The Clean Industrial Deal: A joint roadmap for competitiveness and decarbonisation.’
+COM(2025) 85. Brussels, 26 February. As of 30 June 2026:
+https://commission.europa.eu/topics/competitiveness/clean-industrial-deal_en
+———. 2025b. ‘Call for evidence for an impact assessment: EU Cloud and AI Development Act.’
+Brussels, 9 April. As of 30 June 2026:
+https://digital-strategy.ec.europa.eu/en/consultations/have-your-say-future-cloud-and-ai-
+policies-eu
+———. 2025c. ‘Overwhelming response as 76 respondents express interest in the European AI
+Gigafactories initiative.’ 30 June. As of 30 June 2026:
+https://digital-strategy.ec.europa.eu/en/news/overwhelming-response-76-respondents-express-
+interest-european-ai-gigafactories-initiative
+———. 2025d. ‘Commission and European Investment Bank Group team up to support AI
+Gigafactories.’ Daily News press release, 4 December. As of 30 June 2026:
+https://ec.europa.eu/commission/presscorner/detail/en/mex_25_2932
+———. 2025e. ‘EU launches InvestAI initiative to mobilise €200 billion of investment in artificial
+intelligence.’ Press release IP/25/467, 11 February. As of 30 June 2026:
+https://ec.europa.eu/commission/presscorner/detail/en/ip_25_467
+———. 2026. 'Proposal for the Cloud and AI Development Act (CADA).' Brussels, 3 June. As of 6 July
+2026:
+https://digital-strategy.ec.europa.eu/en/library/proposal-cloud-and-ai-development-act-cada
+
+===== PDF_PAGE 50 =====
+RAND Europe
+38
+———. n.d. 'AI Gigafactories.' As of 8 July 2026:
+https://commission.europa.eu/topics/competitiveness/competitiveness-coordination-tool-
+projects/ai-gigafactories_en
+European Commission & High Representative of the Union for Foreign Affairs and Security Policy.
+2025. Joint Communication to the European Parliament, the Council, the European Economic and
+Social Committee and the Committee of the Regions on the EU Action Plan on Cable Security.
+JOIN(2025) 9 final. Brussels, 21 February. As of 30 June 2026:
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52025JC0009
+European Data Protection Board. 2021. Recommendations 01/2020 on measures that supplement transfer
+tools to ensure compliance with the EU level of protection of personal data. Version 2.0, 18 June. As
+of 30 June 2026:
+https://www.edpb.europa.eu/system/files/2021-
+06/edpb_recommendations_202001vo.2.0_supplementarymeasurestransferstools_en.pdf
+European Union. 2016. Regulation (EU) 2016/679 of the European Parliament and of the Council of 27
+April 2016 on the protection of natural persons with regard to the processing of personal data and on
+the free movement of such data, and repealing Directive 95/46/EC (General Data Protection
+Regulation). OJ L 119, 1–88. As of 30 June 2026:
+https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng
+Fox, P., M. Schnitzer & D. Privitera. 2025. ‘AI compute in Germany: Current capacity, future demand.’
+KIRA Center, October. As of 30 June 2026:
+https://static1.squarespace.com/static/6560e4863c6eed0712c875f4/t/69132c7891aaf20109e8b
+9b5/1762864248732/KIRA+Compute+Report+2025+%28English%29.pdf
+Fusion Worldwide. 2025. ‘How hyperscaler spending influences semiconductor supply chains.’ As of 30
+June 2026:
+https://www.fusionww.com/insights/resources/the-cost-of-ai-how-hyperscaler-spending-is-
+impacting-semiconductor-supply
+Gemini Team. 2023. ‘Gemini: A family of highly capable multimodal models.’ arXiv:2312.11805. As of
+30 June 2026: https://arxiv.org/abs/2312.11805
+Google DeepMind. 2026. 'Decoupled DiLoCo: Resilient, distributed AI training at scale.' Google
+DeepMind blog, 23 April. As of 8 July 2026: https://deepmind.google/blog/decoupled-diloco/
+Goldman Sachs. 2024. Generational growth: AI, data centers and the coming US power surge. 28 April. As
+of 30 June 2026:
+https://www.goldmansachs.com/pdfs/insights/pages/generational-growth-ai-data-centers-and-
+the-coming-us-power-surge/report.pdf
+GridLab. 2025. Practical guidance and considerations for large load interconnections. March. As of 30 June
+2026:
+https://gridlab.org/wp-content/uploads/2025/03/GridLab-Report-Large-Loads-Interim-
+Report.pdf
+
+===== PDF_PAGE 51 =====
+Pooling Europe’s compute
+39
+Guardian. 2025. ‘Zuckerberg says Meta will build data center the size of Manhattan in latest AI push.’ 16
+July. As of 30 June 2026:
+https://www.theguardian.com/technology/2025/jul/16/zuckerberg-meta-data-center-ai-
+manhattan
+Hochreiter, S., & J. Schmidhuber. 1997. ‘Long short-term memory.’ Neural Computation 9 (8): 1735–
+80. As of 30 June 2026: https://doi.org/10.1162/neco.1997.9.8.1735
+IEA (International Energy Agency). 2022. Norway 2022 energy policy review. IEA Energy Policy Reviews.
+OECD Publishing, Paris. As of 30 June 2026: https://doi.org/10.1787/7411c642-en
+———. 2025. Energy and AI. International Energy Agency, Paris. As of 30 June 2026:
+https://www.iea.org/reports/energy-and-ai
+IEEE ComSoc Technology Blog. 2025. ‘Hyperscaler capex > $600 bn in 2026 a 36% increase over 2025
+while global spending on cloud infrastructure services skyrockets.’ IEEE Communications
+Society, 22 December. As of 30 June 2026:
+https://techblog.comsoc.org/2025/12/22/hyperscaler-capex-600-bn-in-2026-a-36-increase-over-
+2025-while-global-spending-on-cloud-infrastructure-services-skyrockets/
+Jaghouar, S., J.M. Ong & J. Hagemann. 2024a. ‘OpenDiLoCo: An open-source framework for globally
+distributed low-communication training.’ arXiv:2407.07852. As of 30 June 2026:
+https://arxiv.org/abs/2407.07852
+Jaghouar, S., J.M. Ong, M. Basra, F. Obeid, J. Straube, M. Keiblinger, et al. 2024b. ‘INTELLECT-1
+technical report.’ arXiv: 2412.01152. As of 30 June 2026: https://arxiv.org/abs/2412.01152
+Jacamon, V., J. Dallard & T. Spencer. 2025. ‘Overcoming energy constraints is key to delivering on
+Europe’s data centre goals.’ International Energy Agency, Paris, 16 November. As of 30 June
+2026:
+https://www.iea.org/commentaries/overcoming-energy-constraints-is-key-to-delivering-on-
+europe-s-data-centre-goals
+Kale, S., A. Douillard & Y. Donchev. 2025. ‘Eager updates for overlapped communication and
+computation in DiLoCo.’ arXiv:2502.12996. As of 30 June 2026:
+https://arxiv.org/abs/2502.12996
+Kirpsza, A. 2022. ‘Time is of the essence: Explaining the duration of European Union lawmaking under
+the co-decision procedure.’ European Union Politics 23 (1): 22–43. As of 30 June 2026:
+https://doi.org/10.1177/14651165211036423
+Kothuri, A., D. Janků, J.M. Teixeira & D. Juijn. 2025. ‘Submission to the call for evidence on the Cloud
+and AI Development Act.’ Centre for Future Generations, 16 July. As of 30 June 2026:
+https://cfg.eu/special-compute-zones-submission/
+Kryś, J., Y. Sharma & J. Egan. 2025. ‘Distributed and decentralised training: Technical governance
+challenges in a shifting AI landscape.’ arXiv:2507.07765. Accepted as an oral presentation at the
+Technical AI Governance Workshop, ICML 2025. As of 30 June 2026:
+https://arxiv.org/abs/2507.07765
+
+===== PDF_PAGE 52 =====
+RAND Europe
+40
+Lidin, J., A. Sarfi, E. Miahi, Q. Anthony, S. Chauhan, E. Pappas, et al. 2026. 'Covenant-72B: Pre-
+training a 72B LLM with trustless peers over-the-internet.' arXiv:2603.08163. As of 8 July
+2026: https://arxiv.org/abs/2603.08163
+Lindner, J., & S. Mack. 2024. ‘Capital Markets Union: Europe must stop beating around the bush.’
+Policy Brief, Jacques Delors Centre, 11 July. As of 30 June 2026:
+https://www.delorscentre.eu/en/publications/detail/publication/capital-markets-union
+McKinsey & Company. 2025. ‘The cost of compute: A $7 trillion race to scale data centers.’ 28 April. As
+of 30 June 2026:
+https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-
+insights/the-cost-of-compute-a-7-trillion-dollar-race-to-scale-data-centers
+McMahan, H.B., E. Moore, D. Ramage, S. Hampson & B.A. y Arcas. 2017. ‘Communication-efficient
+learning of deep networks from decentralized data.’ Proceedings of the 20th International
+Conference on Artificial Intelligence and Statistics (AISTATS), JMLR 54:1273–82. As of 30 June
+2026: https://arxiv.org/abs/1602.05629
+Mistral AI. 2025. ‘Mistral AI raises €1.7B to accelerate technological progress with AI.’ Press release, 9
+September. As of 30 June 2026:
+https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai
+Morris, A. 2025. ‘EU defers formal call for AI gigafactories to early 2026.’ Light Reading, 4 December. As
+of 30 June 2026:
+https://www.lightreading.com/ai-machine-learning/eu-defers-formal-call-for-ai-gigafactories-to-
+early-2026
+NERC (North American Electric Reliability Corporation). 2025. 2025 Summer Reliability Assessment.
+May. As of 30 June 2026:
+https://www.nerc.com/globalassets/programs/rapa/ra/nerc_sra_2025.pdf
+Nicoli, F., & R. Beetsma. 2024. ‘Joint public procurement as a tool for European Union industrial
+policy.’ Bruegel, Policy Brief 18/2024. As of 30 June 2026:
+https://www.bruegel.org/policy-brief/joint-public-procurement-tool-european-union-industrial-
+policy
+Norris, T.H., T. Profeta, D. Patiño-Echeverri & A. Cowie-Haskell. 2025. ‘Rethinking load growth:
+Assessing the potential for integration of large flexible loads in US power systems.’ NI R 25-01.
+Nicholas Institute for Energy, Environment & Sustainability, Duke University, February. As of
+30 June 2026: https://nicholasinstitute.duke.edu/publications/rethinking-load-growth
+Nscale, Aker & OpenAI. 2025. ‘Nscale, Aker and OpenAI to establish Stargate Norway: A 100,000
+NVIDIA GPU AI Gigafactory powered by renewable energy in Northern Norway.’ Press
+release, 31 July. As of 30 June 2026:
+https://www.nscale.com/press-releases/stargate-norway-nscale-aker-openai
+
+===== PDF_PAGE 53 =====
+Pooling Europe’s compute
+41
+NVIDIA. 2024. ‘NVIDIA Blackwell platform arrives to power a new era of computing.’ Press release, 18
+March. As of 30 June 2026:
+https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-
+computing
+OECD (Organisation for Economic Co-operation and Development). 2026. ‘Venture capital investments
+in artificial intelligence through 2025.’ OECD Publishing. As of 30 June 2026:
+https://www.oecd.org/en/publications/venture-capital-investments-in-artificial-intelligence-
+through-2025_a13752f5-en.html
+OpenAI. 2024. ‘OpenAI o1 system card.’ 5 December. As of 30 June 2026:
+https://cdn.openai.com/o1-system-card-20241205.pdf
+———. 2025a. ‘GPT-4.5 system card.’ 27 February. As of 30 June 2026:
+https://cdn.openai.com/gpt-4-5-system-card-2272025.pdf
+———. 2025b. ‘Introducing Stargate Norway.’ 31 July. As of 30 June 2026:
+https://openai.com/index/introducing-stargate-norway/
+———. 2025c. ‘OpenAI, Oracle, and SoftBank expand Stargate with five new AI data center sites.’ 23
+September. As of 30 June 2026: https://openai.com/index/five-new-stargate-sites/
+Orrick, Herrington & Sutcliffe LLP. 2025. ‘Megawatts to megabytes: Orrick’s 2025 guide to developing,
+financing & powering data centers.’ 15 July. As of 30 June 2026:
+https://www.orrick.com/en/Insights/2025/07/Megawatts-to-Megabytes-Orricks-2025-Guide-
+to-Developing-Financing-and-Powering-Data-Centers
+Patel, D., D. Nishball & J. Eliahou Ontiveros. 2024a. ‘AI datacenter energy dilemma: Race for AI
+datacenter space.’ SemiAnalysis, 13 March. As of 30 June 2026:
+https://semianalysis.com/2024/03/13/ai-datacenter-energy-dilemma-race/
+———. 2024b. ‘Multi-Datacenter Training: OpenAI’s ambitious plan to beat Google’s infrastructure.’
+SemiAnalysis, 4 September. As of 30 June 2026:
+https://semianalysis.com/2024/09/04/multi-datacenter-training-openais/
+Phillips-Robins, A., & S. Winter-Levy. 2025. ‘How to gauge whether Trump’s AI chip deals with Gulf
+countries are any good.’ Carnegie Endowment for International Peace, 16 May. As of 30 June
+2026:
+https://carnegieendowment.org/emissary/2025/05/ai-chip-trump-gulf-uae-saudi-security-risk-
+good-deal
+Pilz, K.F., Y. Mahmood & L. Heim. 2025. AI’s power requirements under exponential growth: Extrapolating
+AI data center power demand and assessing its potential impact on U.S. competitiveness. Santa
+Monica, Calif.: RAND Corporation. RR-A3572-1. As of 30 June 2026:
+https://www.rand.org/pubs/research_reports/RRA3572-1.html
+Pilz, K.F., J. Sanders, R. Rahman & L. Heim. 2025. ‘Trends in AI supercomputers.’ arXiv:2504.16026.
+As of 30 June 2026: https://arxiv.org/abs/2504.16026
+
+===== PDF_PAGE 54 =====
+RAND Europe
+42
+Prime Intellect. 2024. ‘OpenDiLoCo: First truly distributed training across continents.’ 11 July. As of 30
+June 2026: https://www.primeintellect.ai/blog/opendiloco
+Pure Storage. 2024. ‘What is a hyperscale data center?’ As of 30 June 2026:
+https://www.purestorage.com/knowledge/what-is-a-hyperscale-data-center.html
+Qi, J., W. Zhu, L. Li, M. Wu, Y. Wu, W. He, et al. 2025. ‘DiLoCoX: A low-communication large-scale
+training framework for decentralized cluster.’ arXiv:2506.21263. As of 30 June 2026:
+https://arxiv.org/abs/2506.21263
+Reuters. 2025a. ‘Musk’s xAI increased Tennessee gas turbines without permits, community groups say.’ 9
+April. As of 30 June 2026:
+https://www.reuters.com/sustainability/boards-policy-regulation/musks-xai-increased-tennessee-
+gas-turbines-without-permits-community-groups-say-2025-04-09/
+———. 2025b. ‘Europe’s AI gigafactory push attracts 76 bids, EU tech chief says.’ 30 June. As of 30
+June 2026:
+https://www.reuters.com/sustainability/boards-policy-regulation/europes-ai-gigafactory-push-
+attracts-76-bids-eu-tech-chief-says-2025-06-30/
+S&P Global. 2021. ‘French power demand prices rise on cold spell.’ 9 February. As of 30 June 2026:
+https://www.spglobal.com/commodity-insights/en/news-research/latest-news/electric-
+power/020921-french-power-demand-prices-rise-on-cold-spell
+Sevilla, J., T. Besiroglu, B. Cottier, J. You, E. Roldán, P. Villalobos & E. Erdil. 2024. ‘Can AI scaling
+continue through 2030?’ Epoch AI, 20 August. As of 30 June 2026:
+https://epoch.ai/blog/can-ai-scaling-continue-through-2030
+Sevilla, J., & A. Troynikov. 2025. ‘Could decentralized training solve AI’s power problem?’ Epoch AI, 28
+October. As of 30 June 2026:
+https://epoch.ai/blog/could-decentralized-training-solve-ais-power-problem
+Shehabi, A., et al. 2024. 2024 United States data center energy usage report. LBNL-2001637. Lawrence
+Berkeley National Laboratory. As of 30 June 2026:
+https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-
+energy-usage-report_1.pdf
+Smith, M.S. 2026. ‘What will it take to build the world’s largest data center?’ IEEE Spectrum, 24 March.
+As of 30 June 2026: https://spectrum.ieee.org/5gw-data-center
+Stanford HAI (Stanford Institute for Human-Centered Artificial Intelligence). 2025. Artificial Intelligence
+Index Report 2025. Stanford University. As of 30 June 2026:
+https://hai.stanford.edu/ai-index/2025-ai-index-report
+Tagliapietra, S. 2026. ‘How will the Iran conflict hit European energy markets?’ Bruegel First Glance, 2
+March. As of 30 June 2026:
+https://www.bruegel.org/first-glance/how-will-iran-conflict-hit-european-energy-markets
+
+===== PDF_PAGE 55 =====
+Pooling Europe’s compute
+43
+Tanner, B., D. Belle, C.F. Kerry, N. Kyosovska, A. Renda, E. Tabassi & A.W. Wyckoff. 2026. ‘Global
+energy demands within the AI regulatory landscape.’ Brookings Institution, 10 April. As of 30
+June 2026:
+https://www.brookings.edu/articles/global-energy-demands-within-the-ai-regulatory-landscape/
+Turing, A.M. 1950. ‘Computing machinery and intelligence.’ Mind 59 (236): 433–60.
+White House. 2025. ‘Accelerating federal permitting of data center infrastructure.’ 23 July. As of 30 June
+2026:
+https://www.whitehouse.gov/presidential-actions/2025/07/accelerating-federal-permitting-of-
+data-center-infrastructure/
+Zhu, L., Z. Liu & S. Han. 2019. ‘Deep leakage from gradients.’ Advances in Neural Information Processing
+Systems 32: 14747–56). As of 30 June 2026: https://arxiv.org/abs/1906.08935
+
+===== PDF_PAGE 56 =====
+44
+Annex A. Converting between H100 equivalents and power
+capacity
+This annex sets out the rough estimates used to convert our suggested 10–20 million H100 equivalents to
+total facility power. They are based on two recent ly published estimates that turn out to converge closely
+once their underlying assumptions are unpacked.
+A.1. Source 1: RAND (Pilz, Mahmood & Heim 2025)
+RAND reports a power draw of 1,419 W per H100 equivalent at the cluster level – that is, the GPU together
+with supporting hardware including server, networking and other in- rack components, but excluding
+datacentre power usage effectiveness (PUE) overhead such as cooling and power conversion. A PUE of 1.25
+means the facility consumes 25 per cent more power than the IT hardware draws on its own. This figure is
+taken from NVIDIA’ s DGX H100 SuperPOD reference design. To obtain total facility power, RAND
+separately applies a PUE multiplier, using 1.25 as a near -term value and projecting improvement to 1.05
+by 2030.
+A.2. Source 2: Epoch AI (Sevilla et al. 2024)
+Epoch AI reports a power draw of 1,700 W per H100 equivalent at the total facility level. Their derivation
+is explicit: a 700 W thermal design power (TDP), the chip’s nominal sustained power draw, for the H100,
+multiplied by a 1.96× cluster overhead factor (based on the DGX H100 SuperPOD server expected average
+power), and then by a PUE of 1.2. Backing the PUE out yields approximately 1,417 W at the cluster level,
+nearly identical to RAND’s 1,419 W.
+A.3. Averaged estimate
+The two sources converge on approximately 1,418 W per H100 equivalent at the cluster level. The
+remaining difference between them reflects the choice of PUE multiplier rather than any disagreement
+about the underlying hardware. As detailed in Table A.1, applying the central PUE assumption of 1.2 yields
+a facility -level figure of approximately 1,700 W per H100 equivalent, which we adopt as our central
+estimate; for sensitivity, we also report figures under PUE = 1.25 (near -term) and PUE = 1.1 (improved
+efficiency by 2030).
+
+===== PDF_PAGE 57 =====
+Pooling Europe’s compute
+45
+Table A.1. Total facility power required, by compute target and PUE assumption
+Compute target Central (PUE 1.2) Near-term (PUE 1.25) Improved (PUE 1.1)
+10M H100e ~17.0 GW ~17.7 GW ~15.6 GW
+15M H100e ~25.5 GW ~26.6 GW ~23.4 GW
+20M H100e ~34.0 GW ~35.5 GW ~31.2 GW
+Source: Authors’ calculation based on Pilz, Mahmood & Heim (2025) and Sevilla et al. (2024).
+A.4. Caveats
+This conversion is subject to several factors including utilisation rates, cooling technology, and next -
+generation power-efficient chips (NVIDIA Blackwell delivers roughly 35 per cent greater power efficiency
+than the H100, with Rubin expected to deliver a comparable improvement). By the time European
+infrastructure at this scale is operational, per -compute power requirements could be meaningfully lower.
+On the other hand, demand -side estimates of compute required for frontier training in 2030 also rest on
+multiple assumptions, and could be higher than currently projected. The figures given above should be read
+as order-of-magnitude working estimates rather than precise forecasts.
