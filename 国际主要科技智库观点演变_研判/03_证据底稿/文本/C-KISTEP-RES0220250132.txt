@@ -1,0 +1,5190 @@
+
+===== PDF_PAGE 1 =====
+보안 과제( ), 일반 과제( O ) / 공개( O ), 비공개( )
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축에 관한 연구 사업 최종보고서
+
+최종보고서
+데이터 기반 해외 우수연구자 탐색 및
+네트워킹 지원체계 구축
+(Establishing a data-based foreign researcher search and
+networking support system)
+
+2025. 8.
+
+주관연구개발기관 / 한국과학기술기획평가원
+
+===== PDF_PAGE 2 =====
+
+
+===== PDF_PAGE 3 =====
+제 출 문
+과학기술정보통신부장관 귀하
+본 보고서를 “데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축”
+최종보고서로 제출합니다.
+2025년 8월 31일
+○ 주관연구기관 : 한국과학기술기획평가원
+○ 연 구 기 간 : 2024. 12. 1 ~2025. 8. 31.
+○ 주관연구책임자 : 김상일 연구위원
+○ 참여연구원
+ㆍ연 구 원 : 강진원 연구위원
+김혜나 연구위원
+도계훈 연구위원
+문태석 부연구위원
+허 정 부연구위원
+ㆍ연 구 보 조 원 : 황경민 연구원
+
+===== PDF_PAGE 4 =====
+
+
+===== PDF_PAGE 5 =====
+요약문 ··························································································································· ⅰ
+제1장 서론 ····················································································································· 1
+제1절 연구의 필요성 및 목표 ············································································································ 3
+제2절 연구의 구성 및 방법 ··············································································································· 5
+제2장 학술 DB의 현황과 연구자 정보 ········································································ 9
+제1절 학술 DB 현황 ························································································································ 11
+제2절 학술 DB 기반 네트워킹 연구 동향 ······················································································ 33
+제3절 주요 학술 DB의 연구자 정보 ······························································································· 52
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용 ··········································· 81
+제1절 연구 인력 DB 체계화 ··········································································································· 83
+제2절 연구자 단위 지표 활용 ·········································································································· 89
+제4장 연구 인력 DB 활용 방안 ·············································································· 111
+제1절 연구 인력 DB 검색 시스템 ································································································ 113
+제2절 연구자 추천시스템 ··············································································································· 126
+제5장 결론 ················································································································ 135
+제1절 연구 주요 결과 ···················································································································· 137
+제2절 향후 과제와 시사점 ············································································································· 143
+참고문헌 ···················································································································· 144
+참고 Website ·········································································································· 147
+
+===== PDF_PAGE 6 =====
+<표 1-1> 주요 국제 학술 DB 제공 정보 현황 예시 5
+<표 2-1> 인용정보가 포함된 59개 학술 DB 21
+<표 2-2> 주요 학술 DB 비교 24
+<표 2-3> WoS 데이터 범위 주요 내용 26
+<표 2-4> OpenAlex 데이터 규모 27
+<표 2-5> 주요 DB 커버리지 29
+<표 2-6> 3개 DB 논문 수와 참고문헌 수 30
+<표 2-7> 우리나라 분류체계 31
+<표 2-8> 국제협력 영향 요인 37
+<표 2-9> 연구자 네트워킹 도구 – 일반 특징 40
+<표 2-10> 연구자 네트워킹 도구 – 연구자 속성 등 47
+<표 2-11> 사이트별 저자 정보 정리 65
+<표 2-12> 다양한 연구 식별자 요약 67
+<표 2-13> 국가별 ROR 등록된 기관 수 68
+<표 2-14> 대규모 데이터의 저자 식별 연구 69
+<표 2-15> 주요 연구자 프로파일 개요 71
+<표 2-16> 연구자의 성과량 평가를 위한 서지분석 지표 72
+<표 2-17> 연구자의 성과에 관한 결과 (인용 집계) 평가를 위한 서지분석 지표 73
+<표 2-18> 연구자의 성과에 관한 질 평가를 위한 서지분석 지표 74
+<표 2-19> 연구자의 성과에 관한 인프라구조의 평가를 위한 서지분석 지표 75
+<표 2-20> 연구자의 성과에 관한 영향력 평가를 위한 서지분석 지표 76
+<표 2-21> 연구자의 성과에 관한 혁신 및 사회적 이익의 평가를 위한 서지분석 지표 78
+<표 2-22> 연구자의 성과에 관한 지속성 평가를 위한 서지분석 지표 78
+<표 3-1> 연구 인력 DB 논리적 변수 선정 85
+<표 3-2> Z. Tang의 h-지수 산출표 93
+<표 3-3> A. Frankish의 h-지수 산출표 93
+<표 3-4> Z. Tang의 hc-지수 산출표 96
+<표 3-5> Frankish의 hc-지수 산출표 96
+<표 3-6> Open Alex 데이터로 산출한 Tang과 Frankish의 평균 협력 국가 수와
+평균 협력 기관 수 97
+<표 3-7> A. Frankish의 성과 건수 상위 키워드 103
+
+===== PDF_PAGE 7 =====
+<표 3-8> A. Frankish의 인용 빈도 상위 키워드 103
+<표 4-1> 벤치마킹 대상 사이트 113
+<표 4-2> 관련 주요 문헌 요약 126
+<표 5-1> 주요 학술 DB에 포함된 연구자 정보 137
+<표 5-2> 연구 인력 DB 논리적 변수 선정 139
+
+===== PDF_PAGE 8 =====
+[그림 1-1] 국가전략기술의 R&D 및 인력에 대한 지도 예시 4
+[그림 1-2] 연구자 네트워크 분석 예시 6
+[그림 2-1] Web of Science 제공 데이터 11
+[그림 2-2] Scopus DB의 커버리지 12
+[그림 2-3] OpenAlex 데이터 통계 13
+[그림 2-4] OpenAlex 검색 결과 화면 예시 – artificial intelligence 13
+[그림 2-5] Lens에서 제공하는 학술논문 커버리지 14
+[그림 2-6] Lens에서 제공하는 특허 커버리지 14
+[그림 2-7] Lens 논문 검색 결과 화면 예시 – artificial intelligence 15
+[그림 2-8] Lens 논문 검색 결과 분석 화면 예시 – artificial intelligence 15
+[그림 2-9] Dimensions의 데이터 커버리지 16
+[그림 2-10] Dimensions 검색 결과 화면 예시 – artificial intelligence 16
+[그림 2-11] Dimensions 분석 화면의 연구자 정보 예시 – artificial intelligence 17
+[그림 2-12] AI를 활용한 Semantic Scholar의 자동 생성 요약 기능 17
+[그림 2-13] OpenAire Explore 검색 결과 화면 예시 – artificial intelligence 18
+[그림 2-14] Matilda 검색 결과 화면 예시 – artificial intelligence 19
+[그림 2-15] Xueshu Baidu의 검색 결과 예시 - artificial intelligence 19
+[그림 2-16] AMiner의 검색 결과 예시 - artificial intelligence 20
+[그림 2-17] 스코푸스와 다른 DB와의 논문 중복(Overlay) 22
+[그림 2-18] 스코푸스와 다른 DB와의 인용 링크 중복(Overlay) 23
+[그림 2-19] 주요 DB의 학술논문 수 및 OA 논문 수 23
+[그림 2-20] WoS 데이터 범위 25
+[그림 2-21] Scopus 데이터 규모 27
+[그림 2-22] OpenAlex 분류체계 4개 도메인 28
+[그림 2-23] arXiv의 분야별 논문 제출 건수 29
+[그럼 2-24] (A) 과학논문 평균 저자 수 변화 및 (B) 공동연구 논문 비중 변화 33
+[그럼 2-25] 연구 분야에 따른 평균 저자 수 비교 34
+[그럼 2-26] 연구 협력 중심국의 변화 35
+[그림 2-27] 국제협력 핵심국 네트워크 참여국 비중 36
+[그림 2-28] 학술대회를 통한 국제 공저자 네트워크 형성 37
+[그림 2-29] 미 Columbia대 CUSP Scientific Profiles 38
+
+===== PDF_PAGE 9 =====
+[그림 2-30] Web of Science 연구자 검색 결과 화면 예시 52
+[그림 2-31] Web of Science 연구자 프로필 화면 예시-Prashant Mali 53
+[그림 2-32] Google Scholar 연구자 검색 결과 화면 예시-Prashant Mali 53
+[그림 2-33] Google Scholar 연구자 프로필 화면 예시-Prashant Mali 54
+[그림 2-34] Scopus 연구자 검색 결과 화면 예시-Prashant Mali 54
+[그림 2-35] Scopus 연구자 프로필 화면 예시-Prashant Mali 55
+[그림 2-36] Lens 연구자 프로필 화면 예시-Prashant Mali 55
+[그림 2-37] Dimensions 연구자 검색 화면 예시-Prashant Mali 56
+[그림 2-38] Dimensions 연구자 프로필 화면 예시-Prashant Mali 56
+[그림 2-39] Dimensions 연구자 네트워크 화면 예시 57
+[그림 2-40] Dimensions 자금 이력 화면 예시 57
+[그림 2-41] OpenAlex 연구자 검색 결과 화면 예시-Prashant Mali 58
+[그림 2-42] OpenAlex 연구자 프로필 화면 예시-Prashant Mali 58
+[그림 2-43] Semantic Scholar 연구자 프로필 화면 예시-Prashant Mali 59
+[그림 2-44] Matilda 연구자 프로필 화면 예시-Prashant Mali 59
+[그림 2-45] Xueshu Baidu 연구자 프로필 화면 예시-유자궈 60
+[그림 2-46] Aminer 연구자 프로필 화면 예시-Prashant Mali 61
+[그림 2-47] 한국학술지인용색인 연구자 검색 결과 화면 예시 – 김빛내리 62
+[그림 2-48] 한국학술지인용색인 연구자 프로필 화면 예시 – 김빛내리 62
+[그림 2-49] ScienceOn 연구자 검색 결과 화면 예시 – 김빛내리 63
+[그림 2-50] ScienceOn 연구자 프로필 화면 예시 – 김빛내리 63
+[그림 2-51] ROR 기관 정보 사례- KISTI 68
+[그림 3-1] 연구 인력 DB 테이블 87
+[그림 3-2] 연구 인력 DB 개체-관계 다이어그램(ERD) 88
+[그림 3-3] Open Alex의 성과물 유형 정보(Zefang Tang의 사례) 99
+[그림 3-4] Open Alex의 성과물 유형 정보(Adam Frankish의 사례) 99
+[그림 3-5] Open Alex의 연구 분야 정보(Zefang Tang의 사례) 100
+[그림 3-6] Open Alex의 연구 분야 정보(Adam Frankish의 사례) 100
+[그림 3-7] Open Alex의 연구 키워드 정보(Zefang Tang의 사례) 100
+[그림 3-8] Open Alex의 연구 키워드 정보(Adam Frankish의 사례) 100
+[그림 3-9] Open Alex의 연구 키워드 추가 정보(Adam Frankish의 사례) 101
+[그림 3-10] Adam Frankish의 연구 키워드 데이터를 분석해서 구축한 키워드 네트워크 101
+[그림 3-11] Adam Frankish의 연구 키워드 중에서 2회 이상 출현한 키워드 40개만으로
+구축한 키워드 네트워크 102
+[그림 3-12] Adam Frankish의 연구 키워드 중에서 3회 이상 출현한 키워드 21개만으로
+구축한 키워드 네트워크 102
+
+===== PDF_PAGE 10 =====
+[그림 3-13] A. Frankish의 연구 키워드의 성과 발표 건수와 총 인용 횟수 104
+[그림 3-14] A. Frankish의 연구 키워드의 성과 건수와 평균 출판년도(원의 크기는 총 인용
+빈도에 비례함) 105
+[그림 3-15] Open Alex의 상위 공동연구자 명단 정보(Z. Tang의 공동연구자) 106
+[그림 3-16] Open Alex의 상위 공동연구자 명단 정보(A. Frankish의 공동연구자) 106
+[그림 3-17] Open Alex의 공동연구 국가 정보(Z. Tang의 공동연구 국가) 106
+[그림 3-18] Open Alex의 공동연구 국가 정보(A. Frankish의 공동연구 국가) 106
+[그림 3-19] A. Frankish와 10회 이상 공동연구를 수행한 연구자들과의 공동연구 네트워크 107
+[그림 3-20] 양적 지표와 질적 지표를 조합한 연구자 유형 구분 모델 108
+[그림 3-21] 공동연구 특성에 따른 연구자 유형 구분 모델(이재윤, 2023) 108
+[그림 4-1] Dimensions 사이트 화면 구성 114
+[그림 4-2] Dimensions 사이트 화면 구성에 대입한 화면 115
+[그림 4-3] OpenAlex 사이트 화면 구성 116
+[그림 4-4] OpenAlex 사이트 화면 구성에 대입한 화면 117
+[그림 4-5] Aminer 사이트 화면 구성 118
+[그림 4-6] Aminer 사이트 화면 구성에 대입한 화면 118
+[그림 4-7] 향후 서비스 플랫폼 구성 예시 119
+[그림 4-8] 분야별 연구자 분포 세계지도 120
+[그림 4-9] 분야별 연구자 수 분포 120
+[그림 4-10] 분야별 연구자 수(기관소속별) 121
+[그림 4-11] 연구 저자의 국제 이동성 121
+[그림 4-12] 국가간 연구 인력 유･출입 122
+[그림 4-13] 국가별 산학 연구 인력 이동 123
+[그림 4-14] AI 분야의 산학간 인력 이동 124
+[그림 4-15] 연도별 대학 AI분야 연구 인력의 산업 진출 비율 변화 124
+[그림 4-16] AI 분야 연구 인력의 기업별 진출 변화 125
+[그림 4-17] EU Funding & Tenders Portal 133
+[그림 4-18] scinapse의 전문가 찾기 기능 134
+[그림 5-1] 연구 인력 DB의 개체-관계 모델(ERM) 141
+[그림 5-2] 공동연구 지표 활용한 공동연구 네트워크 예시 141
+[그림 5-3] 향후 서비스 플랫폼 구성 예시 142
+
+===== PDF_PAGE 11 =====
+요약문
+요약문
+□ 정부의 과학기술 글로벌 협력 확대 정책 기조에 맞추어 연구자 관점의 국제협력
+지원체계 마련 필요
+○ 연구자 활용도를 제고한 연구 인력 DB를 활용하여, 해외 우수연구자 탐색 및 국내 연구자의
+전략적 네트워킹 지원
+□ 연구 인력 DB 체계화를 위해 기존 학술 DB 현황과 각 DB가 수집하고 제공하는
+정보에 기초하여 연구자 정보와 지표를 검토함
+○ Web of Science, Scopus, OpenAlex 등 기존 학술 DB는 별도의 식별코드를 가지고
+있으며, 이에 기초하여 각 연구자의 정보를 제공하고 있음
+○ 연구 네트워크 도구는 연구 분야의 지식 관리 시스템으로 사람과 자원에 대한 학술 정보를
+식별, 위치 파악 및 활용하는 데 사용됨
+○ 학술 DB별 별도의 분류체계에 따라 수집하는 연구자 정보 또한 다양한 형태로 구성되며
+주요 사이트에서 수집, 분석, 및 제공하는 연구자 정보는 아래 표와 같음
+<표> 주요 학술 DB에 포함된 연구자 정보
+- i -
+사이트명 연구자 기본정보 저자의 출판물 정보 피인용 및 영향력 저자의 협업 정도
+Web of
+Science
+이름
+소속기관
+citation topic
+(micro/meso)
+출판물 수 및 제목
+각 출판물 피인용 수
+게재한 저널 목록
+발행연도
+주제 및 분야
+피 인용수
+(총 피인용 수, 자가인용제외
+피인용 수,
+평균 피인용 수)
+영향력 지표(h-index) 협력 기관 및 협력
+저자
+자금조달 기관
+Hot papers의 수 및 비중
+* ESI 기준 최근 2개월 간 피인용
+상위 0.1%에 속한 논문
+피인용수 상위 1% 논문의 수
+및 비중
+피인용수 상위 10% 논문의
+수 및 비중
+영향력 지표
+(impact factor, Journal
+Citation Indicator,
+Cited Journal Rank, Cited
+Half-Life,
+Eigenfactor Score)
+Google
+Scholar
+이름
+소속기관
+홈페이지
+이메일
+주요 연구 분야
+출판물 개수 및 제목
+각 출판물 피인용 수
+(Open access만 제공됨)
+전체 피인용 수
+(전체 기간/최근 5년)
+영향력 지표
+(h-index, i10-index)
+(전체 기간/최근 5년)
+협력 저자 목록
+재정 지원 기관
+Scopus
+이름
+소속기관
+주요 연구 분야
+출판물 개수 및 제목
+각 출판물 피인용 수
+게재한 저널 목록
+해당 연구자의 논문을
+피인용한 논문 목록
+총 피인용 수
+영향력 지표(h-index) 협력 저자 목록
+
+===== PDF_PAGE 12 =====
+- ii -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+사이트명 연구자 기본정보 저자의 출판물 정보 피인용 및 영향력 저자의 협업 정도
+과거 소속기관
+이력
+저자 위치(제1저자, 제2저자,
+교신저자 등)
+논문을 게재한 저널의
+Impact factor, SJR,
+CiteScore Top cited
+documents
+인용 추세 분석표
+(연도별 인용 횟수･트렌드, 연평균
+인용 수, 전체 인용 추이 및 영향력)
+i10-index
+Lens
+이름
+소속기관
+주요 연구 분야
+출판물 개수 및 제목
+특허 출원 및 인용 개수 전체 피인용 수
+협력 저자 목록
+기관 및 타
+연구자와의 협업
+관계
+출판물 관계 지도
+(논문과 특허, 연구 프로젝트
+사이 상관관계)
+특정 주제의 연구
+트렌드 변화 분석
+시간에 따른 피인용 변화
+저자 간 공동 연구
+관계
+특정 저자･기관
+간 연구 네트워크
+형성 정도
+Dimensions
+이름
+소속기관
+주요 연구 분야
+출판물 개수 및 제목
+각 출판물 피인용 수 전체 피인용 수 협력 저자 목록
+타 연구자와의
+성과 비교
+전체 출판물 목록
+(Open access가 아닌
+출판물도 확인 가능)
+저자 위치
+(제1저자, 제2저자, 교신저자 등)
+영향력 지표
+(h-index, i10-index, 연도별
+h-index 변화)
+인용 트렌드 및 연도별 인용 변화
+분야별･주제별 피인용 정도 분석
+영향력 정도
+* h-index, i10-index, CiteScore,
+Altmetric 점수 기반으로 평가됨
+특정
+저자･기관과의
+협업 강도 및 빈도
+국제 협업 패턴
+OpenAlex
+이름
+소속기관
+주요 연구 분야
+타 연구자와의
+성과 비교
+APC sum
+* 논문 게재 비용
+출판물 개수 및 제목
+게재한 저널
+각 논문 피인용 수
+CWTS Core Source 저널
+여부
+전체 피인용 수
+연도별 피인용 수
+연도별 인용 트렌드
+영향력 지표(h-index, FWCI)
+협력 저자 목록
+협력 기관
+한국학술지
+인용색인
+이름
+소속기관
+학위
+주요 연구분야
+출판물 개수 및 제목
+각 논문 피인용 수
+전체 피인용 수
+평균 피인용 수
+단독 논문-협력
+논문 개수 및 비율
+ScienceON
+이름
+소속기관
+주요 연구분야
+출판물 개수 및 제목
+각 논문 피인용 수
+전체 피인용 수
+영향력 지표(h-index)
+Crossref 출판물에 대한 data base 사이트
+arXiv,
+bioRxiv,
+medRxiv
+특정 분야에 대한 프리프린트 사이트
+(arXiv: 물리학, 수학, 컴퓨터 과학 등 분야, bioRxiv: 생물학 분야, medRxiv: 의학 및 건강학 분야)
+OSF
+Preregistra
+tion
+연구 설계, 가설, 분석 계획 등을 공개 등록하는 사이트
+SciELO 라틴 아메리카, 카리브해, 스페인, 포르투갈을 포함한 지역의 학술 저널을 제공하는 Open Access 사이트
+
+===== PDF_PAGE 13 =====
+- iii -
+요약문
+□ 연구자 정보의 공통적인 사항을 우선적인 논리적 변수(Entity)로 정의(표준화)하여
+개체-관계(Entity Relation) 모델을 설계하였고, 연구자 지표를 통해 연구자 기본
+정보와 연계 정보의 관계를 검토함
+○ 체계화된 연구 인력 DB를 구축하기 위해 연구자 정보 중 공통되는 내용(저자 구분, 연구자
+기본 정보, 소속기관, 연 구분야, 연구자 이력 정보, 출판 정보, 인용 정보, 국가 정보 등)을
+우선적인 논리적 변수(연구 인력 DB 메타)로 정의함
+<표> 연구 인력 DB 논리적 변수 선정
+비고 Web of Science Google Scholar Scopus Lens Dimensions OpenAlex KCI ScienceON IRIS aminer 사용여부
+연구자ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+이름 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+홈페이지 ○ ○ 미사용
+이메일 ○ ○ 미사용
+학위 ○ 미사용
+기관 ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+기관 구분 * value : 대학, 연구기관, 정부기관 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+기관 명 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+기관주소 ○ 미사용
+기관홈페이지 ○ 미사용
+연구자ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+이력구분 *value : 소속이력, 수상이력, 연구분야 이력 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+이력일련번호 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+소속ID *소속이력인 경우 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+수상ID *수상이력인 경우 ○ ○ 미사용
+연구분야 ID *연구분야이력인 경우 ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+진행여부 *현재소속이나 연구분야의 진행여부 관리 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+분야 ID ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+상위 분야 ID ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+분야 명 ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+분야 설명 ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+수상 ID ○ ○ 미사용
+국가 ID ○ ○ 미사용
+수상처 ○ ○ 미사용
+수상명 ○ ○ 미사용
+국가ID ○ ○ 미사용
+국가명 ○ ○ 미사용
+자료번호 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료구분 * value : 출판물, 저널, 논문, 학술지 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료명 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+초록 ○ ○ ○ 미사용
+출처 유형 ○ 미사용
+인용수 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+발행연도 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+발행일자 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+저널등급 * value : Impact factor, SJR, CiteScore ○ 미사용
+핵심 단어 ○ 미사용
+저자구분 *value : 제1저자, 제2저자, 교신저자 등 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료번호 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+연구자ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+특허구분코드 ○ 미사용
+자료번호 ○ 미사용
+자료구분 ○ 미사용
+자료번호 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료명 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+
+===== PDF_PAGE 14 =====
+- iv -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ 논리적 변수 간 관계를 개체-관계 모델(ERM)로 설계하여 연구자 기본 정보에 대한 연계
+정보를 보여줌(이를 기반으로 통계 시각화 가능)
+[그림] 연구 인력 DB의 개체-관계 모델(ERM)
+○ 향후 구현될 연구 인력 DB의 활용 시 기본이 되는 연구자 인용 지표, 공동연구 지표, 생산성
+지표 등 연구자 단위 지표의 활용이 검토됨
+[그림] 공동연구 지표 활용한 공동연구 네트워크 예시
+
+===== PDF_PAGE 15 =====
+- v -
+요약문
+□ 연구 인력 DB의 활용을 위해 연구 인력 DB 검색 시스템을 예시하고, 연구자 추천
+시스템을 검토함
+○ 연구 인력 DB 객체-관계(ER) 모델에 기반하여 대표적인 해외 사이트를 활용하여 검색
+시스템과 향후 서비스할 플랫폼 구성을 예시함
+[그림] 향후 서비스 플랫폼 구성 예시
+○ 주요 연구자 추천시스템으로 협업 필터링(Collaborative Filtering, CF), 콘텐츠 기반
+(Content-Based, CB); 그리고 두 방법을 결합하여 개별적인 한계를 극복하는 하이브
+리드(Hybrid) 접근 방식으로 구분됨
+○ 문헌 추천, 협업자 추천, 심사자 추천, 학회 또는 학술지 추천, 기타 데이터셋이나 연구비
+추천 등으로 활용될 수 있으며, 향후 AI 기반 연구자 추천시스템으로 고도화가 가능함
+○ 또한 인용수, 기고한 저널, 연구 트렌드, 연구기금 내역, 연구자 네트워크 등 DB 기반 활용한
+추천 서비스와 호라이즌 유럽 Funding & Tenders Portal의 파트너 서치 기능을 예시함
+
+===== PDF_PAGE 16 =====
+- vi -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+□ 연구자 중심의 네트워킹 지원을 위한 연구 인력 DB의 활용을 위해 향후 개선할 사항은
+다음과 같음
+○ DB의 공개적인 활용을 위해 공개 DB의 정보 검증 등 추가적인 작업이 필요하고 연구자
+정보의 경우 연구자 식별의 한계점 등 대한 신뢰성 제고가 필요함
+○ 연구 인력 DB 활용을 위해 실제적인 데이터에 기반하여 연구자 정보의 정의와 ER 모델
+개선이 필요하며, 네트워킹 지원 또한 DB 구축 운영이 전제되어야 하고 명확한 정책 목표에
+따른 설계 전략이 요구됨
+
+===== PDF_PAGE 17 =====
+서론
+제1장
+제1절 연구의 필요성 및 목표
+제2절 연구의 구성 및 방법
+
+===== PDF_PAGE 18 =====
+
+
+===== PDF_PAGE 19 =====
+- 3 -
+제1장 서론
+제1장 서론
+제1절 연구의 필요성 및 목표
+□ 정부의 과학기술 글로벌 협력 확대 정책 기조에 맞추어 국내 연구자･연구기관의
+글로벌 R&D 증가와 이를 위한 네트워킹 지원체계 마련 필요
+○ 최근 정부는 국내 중심 R&D를 탈피하고 과학기술 국제협력 확대를 위해 「글로벌 R&D
+추진전략(’23.11)」, 「과학기술 글로벌 협력 종합전략(’24.6)」등 정책 수립 및 글로벌
+R&D 투자를 대폭 확대
+○ 국내외 연구자 간 국제협력 활동 확대*에 따라 효과적 국제공동연구 추진 및 네트워킹을
+위한 지원체계 기반 마련 필요
+* (공동연구 과제 수) (’18)19,579건→(’22)28,879건, (공동연구비) (’18)15,325억원→(’22)29,548억원
+□ 전 세계 과학기술 연구 성과물의 규모가 기하급수적으로 증가하는 상황에서,
+연구자 관점의 국제공동연구 추진을 위한 우수 연구인력에 대한 연구 성과의 탐색
+방안 마련 필요
+※ (’23.11.16. Science) Web of Science와 Scopus에 등록된 논문 건수가 2016년 192만 건 → 2022년
+282만 건으로 기하급수적으로 증가함에 따라 과학윤리･데이터 신뢰성 문제 제기
+○ 기존의 국제협력 파트너 탐색의 핵심 수단이었던 학계 평판과 개인적 네트워크에 더해,
+데이터 기반의 정량적이며 반복가능한 우수인력･성과 탐색방안 마련 필요
+※ 글로벌 R&D 활동의 핵심적 수단은 개인적인 친분관계(KISTEP 설문조사, 2024)
+○ 12대 국가전략기술 분야별 핵심 인재 분포 파악을 위한 ‘국가전략기술 인력지도’, 국가별
+기술 수준과 협력 전략을 제시하는 ‘글로벌 R&D 전략지도’ 등이 발표되었으나 단면적
+분석으로 연구자 관점에서 실질적인 활용에는 미흡
+
+===== PDF_PAGE 20 =====
+- 4 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+< 국가전략기술 인력지도 예시> < 글로벌 R&D 전략지도 예시>
+[그림 1-1] 국가전략기술의 R&D 및 인력에 대한 지도 예시
+○ 해외 우수연구자･연구기관 탐색, 연구자 활용도를 제고한 DB 활용을 통해 해외 우수 과
+학기술 인력･연구기관과의 연구자 중심의 국제협력 지원체계 마련 필요
+□ 해외 우수 과학기술인력과 연구기관에 대한 DB 활용을 통해 데이터 기반 해외
+우수연구자 탐색 및 국내 연구자와의 전략적 네트워킹 지원체계 구축
+○ 분야별 우수연구자 탐색(학술DB 분석) → 연구 이력 및 인적 네트워크 분석(논문 공저자,
+SNS 등) → 연구자 관점에서의 활용도를 제고한 DB 활용으로 연계
+○ DB 기반 해외 우수연구자･연구기관 네트워킹 활동 지원 방안 마련을 통해 연구자 수요
+맞춤형 국제협력 지원체계 마련
+
+===== PDF_PAGE 21 =====
+- 5 -
+제1장 서론
+제2절 연구의 구성 및 방법
+□ 데이터 기반 해외 우수연구자 DB 체계화
+○ 현재 활용 중인 주요 학술 DB에서 제공하는 정보 분석(유형, 범위 및 업데이트 빈도 등)
+- WoS, SCOPUS 등 전 분야 DB 이외에도 분야별 DB, 출판사 DB, Arxiv 등 주요 학술
+DB에서 제공하는 정보 유형 및 특성 비교 분석
+- 논문 정보 이외에 ORCID(연구자)* 등 다른 유형의 정보 DB 현황 분석을 통해 해외
+연구기관･연구자 정보에 대한 파악이 가능한 산출 정보 확인
+* 과학기술 분야 논문 저자 인식을 위한 숫자 코드로 연구자별 논문 발간 기록, 미발간 논문 초안 등 연구자
+정보 및 연구 활동 확인 가능
+<표 1-1> 주요 국제 학술 DB 제공 정보 현황 예시
+DB명 제공기관 제공 정보
+SCOPUS Elsevier ∙ 9,060만 개 다학제 학술 데이터 제공
+∙ 학술 저널 순위, 저자 프로필 및 H-인덱스 제공
+Web of Science Clarivate ∙ 약 1억 개 다학제 학술 데이터 제공
+Pubmed NIH ∙ 3,500만 개 의학 및 생물학 데이터 제공
+ERIC 미국 교육부 ∙ 160만 개 교육 관련 문헌 데이터 제공
+IEEE Xplore IEEE ∙ 600만 개 엔지니어링 및 컴퓨터 과학 분야 데이터 제공
+ScienceDirect Elsevier ∙ 1,950만 개 다학제 학술 데이터 제공
+Directory of
+Open Access Journals DOAJ ∙ 800만 개 다학제 학술 데이터 제공
+JSTOR ITHAKA ∙ 1,200만 개 다학제 학술 데이터 제공
+○ 학술 데이터 분석을 통한 우수연구자와 기관 탐색방안을 위한 기존 연구자 DB 표준화
+방안 도출
+- 논문 출판 건수, 피인용 수, Impact Factor, h-index 등 연구 우수성 및 영향력 측정을
+위한 주요 정량 지표 및 분야별 전문가 자문 기반 등 정성 지표를 기반으로 연구자 DB에
+활용할 연구자 정보 표준화 추진
+- 해외 우수연구자의 논문 발간 이력, 공저논문 분석 등을 통해 연구 이력 및 네트워크
+분석과 연계하여 연구자 DB를 체계화
+※ 유사 민간 서비스(예 : Dimension AI, LinkedIn) 활용 방안 검토
+
+===== PDF_PAGE 22 =====
+- 6 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+[그림 1-2] 연구자 네트워크 분석 예시
+□ 연구자 주도의 상향식 네트워킹 지원체계 마련
+○ 연구자 DB를 활용하여 연구자 관점에서의 활용도 제고 방안 및 국제공동연구 기획･연계
+방안 마련
+○ DB를 통해 발굴된 해외 우수기관･연구자와 국내 연구자 간 전략적 네트워킹 지원을 위해
+연구자 주도의 상향식 네트워킹 지원체계 마련
+- 신규 네트워킹 시 활용할 수 있는 연구자 검색 및 추천 시스템 서비스 방안 기획
+□ 추진 전략 및 방법
+○ 학술 데이터 분석 및 정량 지표 발굴을 위한 문헌 및 사례 조사 실시
+- 주요 국제 학술 DB 현황과 학술 데이터 분석을 위한 문헌 조사
+- 해외 우수 연구기관･연구자 탐색을 위한 정량 지표 발굴을 위한 문헌 및 사례 조사
+○ 자문위원회 구성･운영을 통한 해외 우수연구자 탐색체계 및 네트워킹 지원을 위한 세부
+방안 구체화
+- 학술 데이터 분석, 연구자 네트워크 분석, 데이터베이스 구축 등 다양한 분야의 전문가로
+구성된 자문위원회 구성･운영을 통해 해외 우수연구자 탐색체계 및 DB 체계화 방안 도출
+
+===== PDF_PAGE 23 =====
+- 7 -
+제1장 서론
+- 추가 전문가 서면 자문, 심층 인터뷰 등을 통해 DB 활용과 네트워킹 지원을 위한 방안
+마련
+□ 보고서 구성
+○ 보고서는 서론, 2장, 학술 DB 현황과 연구자 정보, 3장 연구 인력 DB 표준화 및 인력
+정보와 성과 정보 연계, 4장 연구 인력 DB 활용, 5장 결론으로 구성됨
+- 서론에서는 연구의 배경, 주요 내용 및 추진 방안을 기술함
+- 2장에서는 Web of Science, Scopus, OpenAlex, Lens, Google Scholar,
+Dimensions, Semantic Scholar, OpenAire, Matila, Xueshu Baidu, AMinier 등
+다양한 학술 DB 소개, 학술 DB 기반 네트워킹 연구 동향 및 주요 학술 DB에서 포함
+하고 있는 소속, 연구 분야, 출판물, 피인용 수, 영향력 지수 등 연구자 정보를 정리함
+- 3장에서는 연구 인력 DB의 객체-관계(ER) 모델을 제안하고 연구자 단위의 지표를
+활용하는 방안을 예시함
+- 4장에서는 ER 모델에 기초한 연구 인력 DB 검색 시스템과 연구자 추천시스템을
+소개함
+- 결론은 연구 결과를 요약하고 향후 과제와 시사점을 작성함
+
+===== PDF_PAGE 24 =====
+
+
+===== PDF_PAGE 25 =====
+학술 DB의 현황과
+연구자 정보
+제2장
+제1절 학술 DB 현황
+제2절 학술 DB 기반 네트워킹 연구
+동향
+제3절 주요 학술 DB의 연구자 정보
+
+===== PDF_PAGE 26 =====
+
+
+===== PDF_PAGE 27 =====
+- 11 -
+제2장 학술 DB 현황과 연구자 정보
+제2장 학술 DB 현황과 연구자 정보
+제1절 학술 DB 현황
+□ 글로벌 학술 DB 현황
+○ 전통적으로 글로벌 학술 DB 시장은 Web of Science와 Scopus 등 상용 데이터베이스
+중심이었으나, 최근 학술 데이터의 개방과 공유에 대한 관심이 증가하면서 OpenAlex,
+OpenAire, Matilda 등 공개 DB가 새롭게 부상하고 있음
+○ Clarivate의 Web of Science (상용) (https://www.webofscience.com/)
+- 전통적인 학술논문 DB로 Science Citation Index Expanded, Social Sciences
+Citation Citation Index, Arts & Humanities Citation Index, Emerging Scources
+Citation Index, Conference Proceedings Citation Index, Book Citation
+Index 이외에도 최근에는 정책 문서(Policy Citation Index), 펀딩 정보(Grants
+Index) 등으로 색인을 확장하고 있음
+- Web of Science에서 제공하는 데이터베이스의 종류는 다음 그림과 같으며, 현재
+22,704개 저널(Core Collections 기준) 및 9,700만 개 이상의 논문 레코드를 제공
+하고 있음1)
+※ 출처: https://clarivate.libguides.com/librarianresources/coverage (2025년 8월 11일 접근)
+[그림 2-1] Web of Science 제공 데이터
+1) 구체적인 내용은 https://clarivate.libguides.com/librarianresources/coverage 참조. (2025년 8월 11일 접근)
+
+===== PDF_PAGE 28 =====
+- 12 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ Elsevier의 Scopus (상용) (https://www.scopus.com/home.uri)
+- 2025년 현재 1억 건 이상의 논문 레코드, 2천만 명 이상의 저자 프로파일, 9만4천 개
+이상의 기관 프로파일을 제공하고 있으며, 주요 커버리지는 다음 그림과 같음2)
+※ 출처: https://www.elsevier.com/products/scopus/content (2025년 8월 11일 접근)
+[그림 2-2] Scopus DB의 커버리지
+○ OpenAlex (공개) (https://openalex.org/)
+- 학술연구로 사용되었던 MAG(Microsoft Academic Graph)가 2021년 업데이트가
+중단된 이후에 비영리 기관인 OurResearch가 완전히 개방된 공개 데이터 제공을
+목표로 2022년 OpenAlex DB를 출시하였음3).
+- 2025년 현재, 2억 7천만 건의 논문 레코드, 1억 명 이상의 저자 프로파일 등을 제공
+하고 있으며, 주요 커버리지는 다음과 같음4).
+2) https://www.elsevier.com/products/scopus/content (2025년 8월 11일 접근)
+3) 자세한 내용은 https://en.wikipedia.org/wiki/OpenAlex 참조.
+4) https://openalex.org/stats (2025년 8월 11일 접근)
+
+===== PDF_PAGE 29 =====
+- 13 -
+제2장 학술 DB 현황과 연구자 정보
+※ 출처: https://openalex.org/stats (2025년 8월 11일 접근)
+[그림 2-3] OpenAlex 데이터 통계
+- 한편, OpenAlex는 사전에 표준화된 토픽, 기관 정보 등을 활용하여 다음 그림과 같이
+검색 결과를 필터 기능을 통해 세부 분석을 할 수 있도록 지원하고 있음.
+※ 출처: https://openalex.org/works?page=1&filter=title_and_abstract.search:artificial+intelligence (2025년 8월 11일 접근)
+[그림 2-4] OpenAlex 검색 결과 화면 예시 – artificial intelligence
+○ Lens (공개) (https://www.lens.org/)
+- 호주의 비영리 단체인 Cambia가 제공하는 학술논문 및 특허 무료 검색서비스로
+2000년 미국 특허 데이터베이스에서 출발하여 현재는 2억 건 이상의 학술논문 레코드,
+1억 건 이상의 특허 레코드 등에 대한 정보를 제공하고 있으며5), 별도의 연구자 검색
+
+===== PDF_PAGE 30 =====
+- 14 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+및 프로파일도 서비스를 하고 있음. 비영리 검색 서비스는 무료이며, 상업용 활용은
+유료로 지원하고 있음.
+※ 출처: https://www.lens.org/lens/search/scholar/structured (2025년 8월 11일 접근)
+[그림 2-5] Lens에서 제공하는 학술논문 커버리지
+※ 출처: https://www.lens.org/lens/search/patent/structured (2025년 8월 15일 접근)
+[그림 2-6] Lens에서 제공하는 특허 커버리지
+- Lens의 검색 결과는 다음 그림과 같이 검색 결과 논문 목록과 함께 왼쪽의 다양한 필터
+(저자, 기관, 저널 등) 기능을 통해 세부 분석을 지원하고 있으며, 검색 결과에 대한 간
+이분석을 가시화하여 보여 주고 있음.
+5) https://en.wikipedia.org/wiki/The_Lens 참조. (2025년 8월 11일 접근)
+
+===== PDF_PAGE 31 =====
+- 15 -
+제2장 학술 DB 현황과 연구자 정보
+※ 출처: https://www.lens.org/lens/search/scholar/list?q=artificial%20intelligence (2025년 8월 11일)
+[그림 2-7] Lens 논문 검색 결과 화면 예시 – artificial intelligence
+[그림 2-8] Lens 논문 검색 결과 분석 화면 예시 – artificial intelligence
+
+===== PDF_PAGE 32 =====
+- 16 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ Google Scholar (공개) (https://scholar.google.com/)
+- 엄밀히 학술 데이터베이스가 아니라 학술 문헌 전문 혹은 메타데이터를 색인한 무료
+웹 검색 엔진으로 2004년 출시되었음6).
+- 웹 검색 이외에도, Google Scholar Profiles을 통해 연구자 정보를 제공하고 있으며,
+학술 저널 통계도 제공하고 있음7).
+○ Dimensions (상용, 일부 무료 공개) (https://app.dimensions.ai/)
+- 현재 1억 5천여만 건의 학술논문 레코드, 1억 7천여만 건의 특허 레코드 이외에도, 임상실험,
+펀딩(Grants), 정책 문서, 데이터셋, 알트메트릭 데이터 등도 제공하고 있음8).
+※ 출처: https://www.dimensions.ai/dimensions-data/ (2025년 8월 11일 접근)
+[그림 2-9] Dimensions의 데이터 커버리지
+[그림 2-10] Dimensions 검색 결과 화면 예시 – artificial intelligence
+6) 자세한 내용은 https://en.wikipedia.org/wiki/Google_Scholar 참조.
+7) https://scholar.google.com/intl/en/scholar/about.html 참조.
+8) https://en.wikipedia.org/wiki/Dimensions_(database) 및 https://www.dimensions.ai/dimensions-data/ 참조.
+
+===== PDF_PAGE 33 =====
+- 17 -
+제2장 학술 DB 현황과 연구자 정보
+[그림 2-11] Dimensions 분석 화면의 연구자 정보 예시 – artificial intelligence
+○ Semantic Scholar (공개) (https://www.semanticscholar.org/)
+- 미국의 AI2 (Allen Institute for AI) 연구소가 개발하여 2015년에 공개한 과학 문헌
+연구 툴 서비스로 검색 논문의 자동 생성 요약 등을 제공하고 있으며 현재 2억 건 이상의
+학술논문 레코드 서비스를 하고 있음9).
+[그림 2-12] AI를 활용한 Semantic Scholar의 자동 생성 요약 기능
+9) https://en.wikipedia.org/wiki/Semantic_Scholar 및 https://www.semanticscholar.org/about 참조.
+
+===== PDF_PAGE 34 =====
+- 18 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ OpenAire (공개) (https://explore.openaire.eu/)
+- 2009년 이후 오픈 학술 커뮤니케이션의 인프라로 운영되다가 2018년 비영리 단체로
+설립된 OpenAIRE(Open Access Infrastructure for Research in Europe)는 오픈
+사이언스 생태계를 지향하는 다양한 학술 정보 인프라를 제공하고 있음10).
+- 검색서비스인 OpenAIRE Explore에서는 2억 건 이상의 학술논문 레코드, 8천여만
+건의 연구 데이터, 75만 건의 소프트웨어 등을 서비스하고 있음.
+[그림 2-13] OpenAire Explore 검색 결과 화면 예시 – artificial intelligence
+○ Matilda (공개) (https://matilda.science/)
+- 프랑스 CNRS 지원을 통해 구축된 오픈 사이언스 지향하는 문헌분석 플랫폼으로 합법적
+으로 접근 가능한 텍스트에 대한 접근을 제공할 뿐만 아니라, 전문(full-text)을 서지
+검색의 기반으로 삼는 것을 두 번째 목표로 하고 있음11).
+10) https://www.oecd.org/en/publications/access-to-public-research-data-toolkit_a12e8998-en/openaire-open-
+access-infrastructure-for-research-in-europe_4648e7e6-en.html 참조.
+
+===== PDF_PAGE 35 =====
+- 19 -
+제2장 학술 DB 현황과 연구자 정보
+[그림 2-14] Matilda 검색 결과 화면 예시 – artificial intelligence
+○ Xueshu Baidu (공개) (https://xueshu.baidu.com/)
+- 중국 바이두에서 제공하는 구글스칼라와 유사한 학술 정보 검색 엔진 서비스이며, 현재
+중국 연구자에 대한 별도의 정보도 제공하고 있음 (https://xueshu.baidu.com/
+usercenter/data/authorchannel?cmd=frontpage)
+[그림 2-15] Xueshu Baidu의 검색 결과 예시 - artificial intelligence
+11) https://matilda.science/about 참조.
+
+===== PDF_PAGE 36 =====
+- 20 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ AMiner (일부 공개) (https://www.aminer.cn/)
+- 중국 칭화대학교에서 개발하여 무료로 공개된 온라인 서비스로 약 1억 3천만 명의
+연구자와 2억 6천5백만 건 이상의 학술 문헌을 색인하고 있음12).
+[그림 2-16] AMiner의 검색 결과 예시 - artificial intelligence
+○ 지금까지 소개한 학술 DB 이외에도 Crossref13), 사전 인쇄 아카이브인 arXiv14), bio-
+Rxiv15), medRxiv16), OSF Preregistration17), Octopus18), 지역 학술 문헌 데이터
+베이스인 SciELO19), 한국학술지인용색인20), ScienceON21) 등 다양한 데이터베이스가
+존재
+- Gusenbauer(2024)는 전방/후방 인용 분석 데이터베이스 비교 연구를 위해 개별
+출판사 학술 DB를 포함하여 59개 데이터베이스를 소개하였음. 다음 표는 해당 연구
+에서 소개된 DB와 사례 연구로 수행한 전방/후방 인용 커버리지 결과임.
+12) https://en.wikipedia.org/wiki/AMiner_(database) 참조.
+13) https://search.crossref.org/
+14) https://arxiv.org/
+15) https://www.biorxiv.org/
+16) https://www.medrxiv.org/
+17) https://osf.io/
+18) https://www.octopus.ac/search/publications
+19) https://scielo.org/en/
+20) https://www.kci.go.kr/kciportal/main.kci
+21) https://scienceon.kisti.re.kr/
+
+===== PDF_PAGE 37 =====
+- 21 -
+제2장 학술 DB 현황과 연구자 정보
+<표 2-1> 인용정보가 포함된 59개 학술 DB
+Database name Open/closed
+Google Scholar Open
+ResearchGate Open
+ScienceDirect Open
+Semantic Scholar Open
+Lens Open
+IEEE Xplore Open
+Scite Open
+Dimensions Open
+OpenAlex Open
+Scinapse Open
+Scopus Closed
+Science Citation Index Expanded (via Web of Science) Closed
+Scilit Open
+Medline (via Web of Science) Closed
+SAGE Journals Online Open
+Web of Science Core Collection Closed
+Wiley Online Library Open
+SpringerLink Open
+CAS SciFinder-n Closed
+Social Sciences Citation Index (via Web of Science) Closed
+Arts & Humanities Citation Index (via Web of Science) Closed
+Bielefeld Academic Search Engine Open
+Conference Proceedings Citation Index—Science (via Web of Science) Closed
+Conference Proceedings Citation Index—Social Science & Humanities (via Web of Science) Closed
+BIOSIS Citation Index (via Web of Science) Closed
+Emerging Sources Citation Index (via Web of Science) Closed
+Europe PMC Open
+Taylor and Francis Online Open
+PubMed Open
+ACM Guide to Computing Literature Open
+Sociological Abstracts (via ProQuest) Closed
+ScienceOpen Open
+zbMATH Open Open
+Social Science Premium Collection (via ProQuest) Closed
+Public Health Database (via ProQuest) Closed
+APA PsycInfo (via EBSCOhost) Closed
+International Bibliography of the Social Sciences (via ProQuest) Closed
+RePEc (via IDEAS) Open
+GeoRef (via ProQuest) Closed
+RePEc (via EconPapers) Open
+SocINDEX (via EBSCOhost) Closed
+
+===== PDF_PAGE 38 =====
+- 22 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+※ 출처: Gusenbauer(2024)의 “TABLE 1 Databases' forward citation coverage (ranked by highest FWC score)”에서
+DB 명과 공개/폐쇄 여부만 발췌
+○ 한편, 글로벌 주요 학술 DB의 커버리지는 매우 다양하며, 다양한 선행 연구를 통해 학술
+DB의 커버리지 비교를 수행한 결과가 소개되었음.
+- Visser et al.(2021)은 Scopus, Dimensions, Crossref, Microsoft Academic
+(OpenAlex 전신)을 대상으로 등재된 논문의 수와 인용 링크에 대한 커버리지 비교를
+통해 논문 커버리지는 Microsoft Academic이 훨씬 넓지만 인용 링크 커버리지는
+Scopus와 Microsoft Academic이 유사함을 보여 주었음.
+※ 출처: Visser et al.(2021)의 Figure 1. Overlap of documents between Scopus and the other data sources.
+[그림 2-17] 스코푸스와 다른 DB와의 논문 중복(Overlay)
+Database name Open/closed
+Nursing & Allied Health Database (via ProQuest) Closed
+Environmental Science Database (via ProQuest) Closed
+Business Source Premier (via EBSCOhost) Closed
+GreenFILE (via EBSCOhost) Closed
+SciTech Premium Collection (via ProQuest) Closed
+Biological Science Database (via ProQuest) Closed
+ABI/Inform Global (via ProQuest) Closed
+Medline (via Ovid) Closed
+JSTOR Open
+Earth, Atmospheric & Aquatic Science Database (via ProQuest) Closed
+Ingenta Connect Open
+APA PsycInfo (via Ovid) Closed
+Academic Search Premier (via EBSCOhost) Closed
+EconStor Open
+Epistemonikos Open
+Public Library of Science (PLOS) Open
+Academic Search Elite (via EBSCOhost) Closed
+Naver Academic Open
+
+===== PDF_PAGE 39 =====
+- 23 -
+제2장 학술 DB 현황과 연구자 정보
+※ 출처: Visser et al.(2021)의 Figure 7. Overlap of citation links between Scopus and the other data sources
+[그림 2-18] 스코푸스와 다른 DB와의 인용 링크 중복(Overlay)
+- 스페인 CSIC-IPP에서 발표한 최근 조사에 따르면, 학술 문헌 수 기준으로는 OpenAlex,
+Lens, Google Sholar, Semantic Scholar, OpenAire, Xueshu Baidu 가 2억 건이
+넘은 것으로 나타났음.
+※ 출처: Isidro F. Aguillo 개인 계정 (https://x.com/isidroaguillo/status/1951219977597419759)
+[그림 2-19] 주요 DB의 학술논문 수 및 OA 논문 수22)
+22) SciLit는 MDPI 출판사가 운영하고 있으며. Fatcat(https://scholar.archive.org/fatcat/)은 미국의 비영리 디지털 도서관인
+Internet Archive의 프로젝트임.
+
+===== PDF_PAGE 40 =====
+- 24 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ 앞서 언급된 학술 DB 중 4종(디멘션, 스코퍼스, 웹오브사이언스, 오픈알렉스)은 자료수집
+범위와 검색 등의 기능 제공에서 차이는 있지만 기본적으로 학술논문의 연구자 DB를
+구축하고 제공
+<표 2-2> 주요 학술 DB 비교
+구분 Dimensions Scopus Web of Science Open Alex
+총 자료수 ~347M ~120M ~164M ~256M
+논문 159M ~70M ~87M ~256M *
+프리프린트 4.3M ~1.9M 2M N/A
+데이터셋 42M ✗
+✗
+Only available via
+subscription to the
+Data Citation Index;
+13M)
+7.5M
+지원 연구과제 7.9M ✗
+✗
+Only available via
+subscription to the
+Grants Index; 5.7M
+121K
+특허 170M ~49M
+✗
+(Only available via
+subscription to the
+Derwent Innovation
+Index; 57M)
+✗
+임상실험 938K ✗ ✗ ✗
+정책 문서 2.5M ✗
+✗
+Only available via
+subscription to the
+Policy Citation
+Index; 210k
+✗
+다른 문서 종류 간
+연계 ✓ ✗ ✗ ✓ **
+제목과 초록 검색 ✓ ✓ ✓ ✗
+고급 검색 Boolean, GUI Boolean, GUI Boolean, GUI Boolean,
+GUI
+본문(full text)
+검색 ✓ ✗ ✗ ✓ ***
+초록 붙여넣기 검색 ✓ ✗ ✗ ✗
+분류체계의
+다양성과 개방성 ✓ ✗ ✗ N/A
+학위논문 No ✗ ✓ 6M
+분류 Article-level – all
+content types Journal-level Journal-level Work-level
+
+===== PDF_PAGE 41 =====
+- 25 -
+제2장 학술 DB 현황과 연구자 정보
+※ 출처: https://www.dimensions.ai/dimensions-data/ (2025년 8월 13일 접근)
+○ 지금까지 소개한 글로벌 학술 DB는 상용 DB와 공개 DB가 혼재되어 있으나, 공개 DB의
+경우에도 엄밀히 말하면 데이터베이스가 공개된 것이 아니라, 검색 서비스만 공개된
+경우도 있음
+- 따라서 향후 구축 예정인 글로벌 우수연구자 DB와 연계를 위해서는 상용 DB보다는
+학술 DB의 원시데이터(raw data)를 API 혹은 벌크 데이터로 개방하는 OpenAlex
+등과 같은 개방형 DB를 사용하는 것이 바람직함
+□ 논문 데이터 메타정보
+○ (WoS) 글로벌 학술 문헌 데이터베이스로 24,974종의 학술지 색인
+- 데이터 범위: Science Citation Index Expanded, Social Science Citation Index,
+Arts & Humanities Citation Index, Emerging Sources Citation Index, Book
+Citation Index, Conference Proceedings Citation Index 등
+[그림 2-20] WoS 데이터 범위
+구분 Dimensions Scopus Web of Science Open Alex
+인용과 지표
+Citations, FCR, RCR,
+Highly cited, Recent
+Citations, Altmetric
+Attention Score,
+Patent citations, SNIP,
+SJR
+Citations, FWCI,
+Plum, SNIP, SJR,
+Recent Citations,
+h-index, CiteScore
+(tracker, percentile/
+quartiles, rank, citation
+and document
+count, cited)
+Citations, Journal
+Impact Factor (JIF),
+CNCI (InCites),
+Eigenfactor Score,
+h-index, Article
+Influence Score
+Citations
+
+===== PDF_PAGE 42 =====
+- 26 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+<표 2-3> WoS 데이터 범위 주요 내용
+- 분류체계: 5개 넓은 범주(Arts & Humanities, Life Sciences & Biomedicine,
+Physical Sciences, Social Sciences, Technology), 153개 연구 영역(붙임 2 참조),
+254개 WoS 범주(붙임 3 참조)
+- 개별 논문 기반 분류: 10개 매크로 토픽(1 Clinical & Life Sciences, 2 Chemistry, 3
+Agriculture, Environment & Ecology, 4 Electrical Engineering, Electronics &
+Computer Science, 5 Physics, 6 Social Sciences, 7 Engineering & Materials
+Science, 8 Earth Sciences, 9 Mathematics, 10 Arts & Humanities), 326 메조
+토픽, 2,449 마이크로 토픽
+- API 관련: xml raw data를 ftp 접속하여 다운로드. 매주 업데이트
+
+===== PDF_PAGE 43 =====
+- 27 -
+제2장 학술 DB 현황과 연구자 정보
+○ (Scopus) 글로벌 학술 문헌 데이터베이스로 25,648종의 학술지 색인
+- 데이터 규모
+[그림 2-21] Scopus 데이터 규모
+- 분류체계: 4개 주제 영역(Life Sciences, Social Sciences, Physical Sciences,
+Health Sciences), 27개 연구 영역(붙임 4 참조), 334개 ASJC(All Science
+Journal Classification Codes)
+- API 관련: raw data에 대한 API 미제공, xml 압축파일을 분기별로 업데이트하여 디
+스크 형태로 제공 중
+○ (OpenAlex) 글로벌 공개 데이터베이스
+- 데이터 규모
+<표 2-4> OpenAlex 데이터 규모
+
+===== PDF_PAGE 44 =====
+- 28 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+- 분류체계: 4개 도메인(Health Sciences, Life Sciences, Physical Sciences,
+Social Sciences), 26개 필드(Agricultural and Biological Sciences, Arts and
+Humanities, Biochemistry, Genetics and Molecular Biology, Business, Ma-
+nagement and Accounting, Chemical Engineering, Chemistry, Computer
+Science, Decision Sciences, Dentistry, Earth and Planetary Sciences, (Eco-
+nomics, Econometrics and Finance), Energy, Engineering, Environmental
+Science, Health Professions, Immunology and Microbiology, Materials
+Science, Mathematics, Medicine, Neuroscience, Nursing, (Pharmacology,
+Toxicology and Pharmaceutics), Physics and Astronomy, Psychology, Social
+Sciences, Veterinary), 252개 하부필드, 4,516개 토픽
+※ OpenAlex의 Topics은 네덜란드 라이덴대학교 CWTS의 클러스터링 알고리즘 적용(CWTS는 독립적으로 OpenAlex 문헌을
+클러스터링하여 4,521개 연구 영역으로 구분하고 그 결과 공개)
+[그림 2-22] OpenAlex 분류체계 4개 도메인
+- API 관련: 해당 시점에 업데이트 된 모든 데이터(Snapshot data)를 압축하여 매달 말
+제공(인증 없이 이용자별 하루에 10만 건 API 호출을 통해 데이터 다운로드)
+○ (arXiv) 프리프린팅 제공
+- 데이터 규모: 2,650,810건 논문 제출(2025년 1월 23일 기준)
+- 분야별 논문 제출 건수
+
+===== PDF_PAGE 45 =====
+- 29 -
+제2장 학술 DB 현황과 연구자 정보
+[그림 2-23] arXiv의 분야별 논문 제출 건수
+- 분류체계: 8개 대분류(Computer Science, Economics, Electrical Engineering
+and Systems Science, Mathematics, Physics, Quantitative Biology, Quantitative
+Finance, Statistics),
+- API 관련: API를 통해 다운로드 가능
+○ 주요 데이터베이스 비교
+<표 2-5> 주요 DB 커버리지
+
+===== PDF_PAGE 46 =====
+- 30 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+<표 2-6> 3개 DB 논문 수와 참고문헌 수
+□ 학술 DB 분류체계 정리
+○ 학술 DB는 검색과 분석을 위해 개별 DB마다 다양한 분류체계를 제공하고 있음.
+○ Web of Science 분류체계
+- Web of Science는 저널 기반 분류와 문헌 기반 분류를 동시에 제공하고 있음.
+- 저널 기반 분류체계는 다음과 같음.
+① 5개 broad categories: Arts & Humanities, Life Sciences & Biomedicine,
+Physical Sciences, Social Sciences, Technology
+② 153개 research areas23) 및 254개 Web of Science Categories24)
+- 개별 논문 기반 분류25) 체계는 인용 링크 기반 클러스터링을 통해 문헌별로 citation
+topics을 매칭하고 있으며, 매년 재 클러스터링을 통해 분류체계가 일부 변화됨.
+① 10 Macro-topics: 1 Clinical & Life Sciences, 2 Chemistry, 3 Agriculture,
+Environment & Ecology, 4 Electrical Engineering, Electronics & Computer
+Science, 5 Physics, 6 Social Sciences, 7 Engineering & Materials
+Science, 8 Earth Sciences, 9 Mathematics, 10 Arts & Humanities
+23) https://images.webofknowledge.com/images/help/WOS/hp_research_areas_easca.html 참조
+24) https://images.webofknowledge.com/images/help/WOS/hp_subject_category_terms_tasca.html 참조
+25) https://incites.zendesk.com/hc/en-gb/articles/22514077746961-Citation-Topics 참조. citation topics의 micro –
+meso – macro 매칭 테이블 제공
+
+===== PDF_PAGE 47 =====
+- 31 -
+제2장 학술 DB 현황과 연구자 정보
+② 326 Meso-topics
+③ 2,449 Micro-topics
+○ Scopus 분류체계
+- 저널 기반 분류로 4개 주제 영역(subject areas: Life Sciences, Social Sciences,
+Physical Sciences, Health Sciences)26)과 27개 연구 분야(research fields), 334개
+ASJC(All Science Journal Classification Codes)27)로 구성되어 있음.
+○ OpenAlex 분류체계
+- 개별 문헌 기반 분류체계이며28)29), 4 domains, 26 fields, 252 subfields, 4516
+topics으로 구성되어 있음.
+○ arXiv 분류체계30)
+- 8개 대분류로 구성: Computer Science, Economics, Electrical Engineering and
+Systems Science, Mathematics, Physics, Quantitative Biology, Quantitative
+Finance, Statistics
+○ 우리나라의 주요 분류체계
+- 우리나라의 경우 부처별로 학문 및 기술 분야 모니터링을 위해 다양한 분류체계를 사용
+하고 있음. 다음 표는 부처별 분류체계와 관리기관을 요약한 것임.
+<표 2-7> 우리나라 분류체계
+26) Multidisciplinary는 하나의 ASJC만 해당. 간혹 Multidisciplinary를 포함하여 5개 subject areas로 보고하는 경우도 있음.
+27) 출처: https://service.elsevier.com/app/answers/detail/a_id/15181/supporthub/scopus/ 웹피이지에는 334개 ASJC를
+제시하였으나, 엑셀파일에서는 361개 ASJC 코드 제시. (2024년 1월 23일 접근)
+28) https://help.openalex.org/hc/en-us/articles/24736129405719-Topics 참조
+29) 기술문서는 https://docs.google.com/document/d/1bDopkhuGieQ4F8gGNj7sEc8WSE8mvLZS/edit#heading=h.5w2tb5fcg77r
+참조
+30) arXiv의 분류체계와 8개 대분류의 하위분류체계는 https://arxiv.org/category_taxonomy 및 https://arxiv.org/ 참조
+부처명 분류체계명 관리기관명
+교육과학기술부
+학술연구 분야분류체계 한국연구재단
+국가과학기술표준분류체계 한국과학기술기획평가원
+ICT 연구개발기술분류체계 정보통신기술진흥센터
+행전안전부 재난･안전 기술분류체계 국립재단안전연구원
+문화체육관광부 문화기술 분류체계 한국콘텐츠진흥원
+농림축산식품부 농림식품과학기술분류체계 농림식품기술기획평가원
+
+===== PDF_PAGE 48 =====
+- 32 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+※ 출처: KISTI 글로벌R&D분석센터(2021), 『AI기반 과학기술 이종데이터 분석모델 개발』 상세기획보고서, 한국과학기술정보연구원.
+- 이 외에도 특정 분야 모니터링을 위해 미래유망 신기술(6T) 분류, 과학기술표준분류,
+국가기술지도(NTRM) 분류, 국가기후기술분류체계 등이 사용되고 있음(KISTI 글로벌
+R&D분석센터, 2021).
+○ [주요 과제] 글로벌 우수연구자 DB 구축을 통해 연구자 통계를 제공하기 위해서는 국내
+분류체계보다는 글로벌 학술 DB에서 사용하는 공개된 분류체계를 일차적으로 활용하는
+것이 바람직함.
+- 국내 정책 목적을 위해 국내의 다양한 분류체계와 글로벌 분류체계 연계표를 작성하는
+것이 필요하며, 궁극적으로 국내 정책 목적에 적합한 개별 문헌 분류 알고리즘을 개발
+하여야 할 것임.
+부처명 분류체계명 관리기관명
+산업통상자원부
+산업기술분류표 한국산업기술평가관리원
+생명공학기술분류체계 기술표준원
+보건복지부
+보건산업기술분류체계
+한국보건산업진흥원
+보건의료기술분류체계
+환경부 환경기술분류체계 한국환경산업기술원
+국토교통부 국토교통기술분류체계 국토교통과학기술진흥원
+해양수산부 해양수산과학기술분류체계 해양수산과학기술진흥원
+식품의약품안전처 식품･의약품 등의 안전기술분류체계 식품의약품안전평가원
+통계청 한국표준산업분류체계 통계청
+방위사업청 국방과학기술분류체계 국방기술품질원
+기상청 기상기술분류체계 한국기상산업기술원
+원자력안전위원회 원자력안전연구기술분류체계 한국원자력안전재단
+
+===== PDF_PAGE 49 =====
+- 33 -
+제2장 학술 DB 현황과 연구자 정보
+제2절 학술 DB 기반 네트워킹 연구 동향
+□ 국제 연구자 DB 관련 연구 동향
+○ "빅 사이언스(Big Science)"의 등장과 더불어 대규모, 학제 간, 국제적 협업이 더욱 보
+편화됨(Chen et al., 2019)
+- 1955년부터 2000년까지 과학논문의 평균 저자 수는 1.9명에서 3.5명으로 두 배 가까이
+증가하였고 1955년 17.5%에 불과하던 공동연구 논문 비중이 2000년에는 51.5%로
+대폭 증가(Wuchty et al., 2007)
+※ 출처: Wuchty et al.(2007)의 Figure. 1. The growth of teams.
+[그럼 2-24] (A) 과학논문 평균 저자 수 변화 및 (B) 공동연구 논문 비중 변화
+- Chen et al. (2019)은 논문서지계량분석을 통해 과학기술 연구의 국제 협업은 출현
+(1957-1991), 성숙(1992-2005)을 거쳐 도약 단계(2006-2015)에 진입했다고 주장
+- 과학기술자의 인력 이동이 연구 생산성 및 기술이전에 효과적이라는 연구(Edler et
+al., 2011; Liu & Hu, 2022) 또한 과학기술 연구에서 국제간 교류와 협력의 필요성을
+보여줌
+○ 과학기술 연구자의 협업 네트워크 구조는 학문분야별로 상이하며 독특한 특징을 보이
+기도 함
+- 협업 네트워크의 크기는 생물학 네트워크가 가장 크며, 논문당 평균 3.75명의 저자가
+있는 반면, 수학은 가장 적은 수의 협업자가 있으며 논문당 평균 저자는 1.45명에 불과함
+(Newman, 2004)
+
+===== PDF_PAGE 50 =====
+- 34 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+※출처: Newman (2004)의 Figure 2. Histograms of the distribution of numbers of collaborators for scientists in each of three fields studied.
+[그럼 2-25] 연구 분야에 따른 평균 저자 수 비교
+- 또한, 연구자 협업 네트워크는 "스몰월드(small-world)" 특성을 보임. 즉, 각 커뮤
+니티의 대다수(82-92%)는 하나의 거대한 구성 요소로 연결되어 있으며, 두 연구자
+사이의 평균 거리는 4.6~7.6명임(Newman, 2004)
+- 다시 말하면, 겉보기에는 고립된 분야의 연구자조차도 전 세계 커뮤니티로부터 단지
+몇 명만 거친다면 연결되는 것으로 이는 국제 협업 등에 있어 게이트키퍼(gatekeeper)와
+지식 중개자(knowledge broker)의 역할이 매우 중요함을 시사함
+- 우수연구자 DB 구축에 있어 매개 중심성이 높은 지식 중개자 역할의 연구자를 파악
+하는 것도 고려가 필요함
+○ 과학기술 연구에 있어 과학 및 기술 인적자본(S&T 인적자본)의 역할이 더욱 중요해짐
+- 과거에는 대학과 대학원 등 정규 교육을 통한 인적자본 형성과 축적에 초점을 맞추
+었다면 최근 들어 과학기술자가 경력 활동을 이어감에 따라 형성하고 축적한 사회적
+관계와 암묵적 지식의 역할에 더욱 초점(Bozeman & Corley, 2004)
+- 우수연구자 DB 구축에 있어 연구자의 사회적 네트워크의 협소/강약 등의 속성이 향후
+이 연구자들의 협력 경향을 좌우할 수 있음을 고려하여, 이와 같은 요소들이 제공될
+필요가 있음
+- 국제적 협업은 과학기술자들의 개별적인 동기에 기반한 전략적 선택임. 예를 들어,
+대부분의 연구자들은 개인적으로 친근한 그룹이나 대학 내 사람들과 협업하려는 경향이
+강하지만 큰 규모의 연구비를 가진 연구자는 보다 광범위한 조직/지리적 범위에서
+협업하려는 경향이 더 강함(Bozeman & Corley, 2004).
+
+===== PDF_PAGE 51 =====
+- 35 -
+제2장 학술 DB 현황과 연구자 정보
+- 우수연구자 DB 활용성 강화를 위해 연구자의 속성 중 연구자의 연구비 규모, 연구비
+이력 등의 파악도 필요
+- 연구자 간의 협업은 연구자의 경력 단계별로 뚜렷한 차이를 보이기도 함. 예를 들어,
+젊은 연구자는 서로 다른 커뮤니티를 연결하고 정보 흐름을 촉진하는 중요한 "매개적
+위치(mediatory positions)"를 차지하며 지식 중개자 역할을 수행하는 반면, 중견
+과학자들은 자신의 지역 커뮤니티에 더 높은 영향력을 가지는 경향이 있으며 긴밀하게
+연결된 그룹 내에서 더 자주 협업함(Ebadi & Schiffauerova, 2015).
+- 우수연구자 DB 구축에 있어서도 연구자의 경력단계, 성별 등 주요 인구통계학적 정보가
+국제협력 발굴과 강화 등의 활용을 위해 필요할 것임.
+○ 국제협력 늘어날수록 협력 중심국에게 협력의 선택권이 늘어남
+- 1995년과 2000년 대비 2005년(빨간색) 협력 중심국은 미국, 러시아, 일부 서유럽국
+으로 축소(Leydesdorff & Wagner, 2008)
+※출처: Leydesdorff and Wagner(2008)의 Figure 4. Cosine normalized participation in the k-core group of collaborating countries.
+[그럼 2-26] 연구 협력 중심국의 변화
+
+===== PDF_PAGE 52 =====
+- 36 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+- 협력네트워크의 중심국이 전체 국제협력 연구에서 차지하는 비중은 1990년 35%에서
+2005년 63% 수준으로 대폭 증가한 것으로 보이나 표준화한 형태(아래 그림의 붉은 색)로
+정리하면 실제로는 중심국의 역할이 감소하고 주변국으로 국제협력의 범위가 대폭
+확대함.
+- 이의 시사점은 우수연구자 DB 또한 국제협력 발굴과 강화를 활용례로 염두에 둔다면
+기존의 중심국만이 아니라 다양한 주변국을 포함할 수 있도록 구축해야 한다는 것을
+의미함.
+※출처: Leydesdorff and Wagner(2008)의 Figure 2. Normalized trends in participation in a core group of highly collaborative countries.
+[그림 2-27] 국제협력 핵심국 네트워크 참여국 비중
+○ 국제 공동연구의 추진 방식은 전략적/상향적 방식보다는 자발적/하향식 방식이 효과적
+이라는 연구가 많음
+- 국제 공저자 네트워크 형성 요인으로는 박사/포닥 지도교수 관계가 최다이며 다음으로
+15%가량의 네트워크는 학회에서의 만남을 통해 결성(Freeman et al., 2014).
+- 우수연구자 DB의 구축에 있어 학회 활동, 학연 등의 사회적 네트워크 파악도 활용성을
+높이는 요소가 될 수 있음
+
+===== PDF_PAGE 53 =====
+- 37 -
+제2장 학술 DB 현황과 연구자 정보
+※출처: Freeman et al.(2014)의 Figure 1A.1 share of coauthors who first met at a conference.
+[그림 2-28] 학술대회를 통한 국제 공저자 네트워크 형성
+- 과학기술자의 인력 이동은 커리어, 부양가족, 학술 네트워크 등 개인적 요소(Azoulay et
+al., 2017)와 이민정책, 비자 등 제도(Orazbayev, 2017)에도 영향 받음
+- 앞서 언급한 대로 과학기술자의 주요 인구통계 속성(나이, 성별, 국적 등)도 우수연구자
+DB의 활용성 강화에 도움이 되는 구축 대상 속성임
+<표 2-8> 국제협력 영향 요인
+구분 정치적 문제 자원 및 환경 문제 문화적 문제
+요인
+자금 시간대 윤리
+비자 가족 분리 성별
+지적 재산권 언어 종교
+정치 일정 성적 지향
+※ 출처: Freeman et al.(2014)에서 내용 발췌.
+□ 연구 네트워크 도구
+○ 연구 네트워크(RN) 도구는 연구 분야의 지식 관리 시스템으로, 사람과 자원에 대한 학술
+정보를 식별, 위치 파악 및 활용하는 데 사용됨
+- 기관 시스템, 국가 연구 네트워크, 공개된 연구 데이터(예: 연구비, 출판물) 등 다양한
+출처에서 정보를 수집하여 교수진, 연구원, 학자 등의 프로필을 통합적으로 구성함
+
+===== PDF_PAGE 54 =====
+- 38 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ 연구 네트워크 도구는 일반적인 검색 엔진이나 소셜 네트워킹 시스템과 차별화됨
+- 웹 페이지에 국한된 정보를 제공하는 검색 엔진과 달리, RN 도구는 데이터베이스 및
+기타 데이터 소스의 정보에 접근함
+- 주로 개인이 직접 게시하는 정보를 기반으로 하는 소셜 네트워킹과 달리, RN 도구는
+신뢰할 수 있고 검증가능한 출처의 데이터를 활용하여 프로필을 구축하므로 더 높은
+신뢰성을 가짐
+○ 미국의 경우 대학 등 단위 학술기관에서 자신의 조직 중심으로 소규모로 구축하여 운영
+하는 형태와 학술 데이터베이스 관리기관 등에서 대규모로 구축･운영하는 등 다양한
+형태가 있음
+- 예를 들어, Columbia 대학의 CUSP Scientific Profiles31)은 대학 수준에서 자기
+대학의 연구자들과의 협업을 증진시키기 위한 목적으로 구축한 것으로 연구자명,
+소속과 직위, 연락처, 연구 분야(수행 연구과제 목록) 등 간단한 형태로 제공
+※ 출처: https://cuspsite.irvinginstitute.columbia.edu/(2025년 8월 13일 접근)
+[그림 2-29] 미 Columbia대 CUSP Scientific Profiles
+○ 가장 넓은 커버리지를 갖는 디멘션 데이터베이스는 논문, 특허, 지원 연구과제, 임상
+실험, 데이터셋 등 5종의 컨텐츠에서 자동으로 연구자를 추출해 연구자 DB와 소속
+기관 DB를 구성함
+- 즉, 연구자가 식별되면, 이들이 소속된 조직 및 조직 이력, 논문, 특허, 임상실험, 연구
+과제, 기타 생성 데이터셋 등의 활동과 성과가 통합적으로 활용될 수 있음.
+31) https://cuspsite.irvinginstitute.columbia.edu/
+
+===== PDF_PAGE 55 =====
+- 39 -
+제2장 학술 DB 현황과 연구자 정보
+- 연구자 DB는 연구자 고유번호, 이름, Orcid 식별번호, 소속 기관 등 4가지 기본 속성을
+갖되 연구과제, 논문 등의 주요 정보(기록 첫해와 마지막 해, 총 개수 등)에 관한 속성
+값을 가짐
+○ 디지털 연구자 서비스 유형은 저자/연구자 식별, 할술 및 전문 네트워킹, 참고문헌 및 인용
+관리 등을 포함함
+- 저자/연구자 식별(Author/Researcher Identification)은 고유 식별자 부여 및 이름
+모호성 해결 등
+- 학술 및 전문 네트워킹(Academic and Professional Networking)은 연구 관심사,
+소속, 지역 등 다양한 변수를 기반으로 사용자를 연결
+- 참고문헌 및 인용 관리(Reference and Citation Management)은 인용 관리 기능을
+주로 제공
+○ 데이터 관리 및 상호 운용성
+- RN 도구는 데이터베이스 및 외부 시스템과의 상호 운용성을 통해 다양한 데이터를
+자동으로 수집함
+- 데이터 출처는 HR 시스템, PubMed, Google Scholar, Web of Science, Scopus,
+ORCID 등 다양함
+- 수집된 데이터는 사용자 정의 웹페이지, 이력서(CV), 연구비 제안서용 데이터 테이블을
+생성하는 등 여러 목적으로 재활용됨
+○ 사용자 상호작용 및 네트워킹 기능
+- RN 도구는 프로필 편집의 유연성을 제공하며, 네트워킹 방식은 크게 두 가지로 나뉨
+- 능동적 네트워킹(Active Networking)은 사용자가 동료의 이름을 직접 입력하여 연결을 추가함
+- 수동적 네트워킹(Passive Networking)은 소프트웨어가 출판된 논문의 공동 저자
+등을 분석하여 네트워크 연결을 자동으로 구축함
+※ 연구자 네트워크 도구의 일반 특징과 연구자 속성 등은 표 2-8 및 표 2-9 참조
+
+===== PDF_PAGE 56 =====
+- 40 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+<표 2-9> 연구자 네트워킹 도구 – 일반 특징
+Research
+Networking
+Tool
+Link to
+Product Page Developer/Owner Open
+source Adopters
+AcademicLabs AcademicLabs AcademicLabs No 글로벌 제약 및 생명 공학 회사,
+수백 개 대학의 연구자
+Activity Insight Activity
+Insight[6] Digital Measures[7] No 전 세계 수백 개의 주요 연구
+기관
+C-IKNOW
+[8][9] C-IKNOW
+Science of Networks in
+Communities (SONIC) -
+Northwestern University
+Yes
+National Cancer Institute,
+National Science
+Foundation
+PROFILES by
+Mentis
+(formerly
+Collaborative
+Partnership /
+Profile
+System)
+PROFILES by
+Mentis][10]
+Inknowledge, Inc (previously
+University of Texas at
+Arlington)
+No
+UT Arlington, UT Pan
+American, University of
+North Texas Health Science
+Center, UT El Paso, UT San
+Antonio, UT Tyler, UT Health
+Science Center, University
+of North Texas (formerly),
+UT Dallas, UT Health Center
+at Tyler, Texas Christian
+University, Gulf Coast
+Consortia: Rice University,
+Baylor College of Medicine
+and several others)
+Community
+Academic
+Profiles - CAP
+Community
+Academic
+Profiles
+Stanford University No Stanford University
+Converis Converis Clarivate Analytics No
+Several universities,
+governments and funders
+across North and South
+America, Europe, Middle
+East, North Africa, Sub
+Saharan Africa and Asia.
+Curvita Profile
+Manager
+Curvita Profile
+Manager SciMed Solutions No
+University of North
+Carolina, University of
+Virginia, Duke University
+CUSP -
+Columbia
+University
+Scientific
+Profiles
+CUSP Columbia University No Columbia University
+Digital Vita DigitalVita
+Center for Dental
+Informatics - University of
+Pittsburgh
+Yes University of Pittsburgh,
+Pitt Health Sciences Center
+
+===== PDF_PAGE 57 =====
+- 41 -
+제2장 학술 DB 현황과 연구자 정보
+Research
+Networking
+Tool
+Link to
+Product Page Developer/Owner Open
+source Adopters
+Dimensions Dimensions Digital Science No
+University of Michigan,
+University of
+Massachusetts - Lowell,
+University of California San
+Diego. See case studies.
+Elsevier's Pure Pure Elsevier No
+250 implementations
+worldwide containing
+profiles for over 185,000
+researcher profiles. See
+Pure client list.
+Elsevier's SciVal SciVal Elsevier No Over 200 adopters worldwide
+Epernicus
+Solutions &
+Epernicus
+Network
+Epernicus[us
+urped] Epernicus No
+Harvard, MIT, Indiana
+University, Stanford,
+University of California
+Berkeley (but not
+exclusively)
+Epistemio Epistemio Epistemio No
+N/A (platform is directed
+toward individual
+researcher use)
+ERIM Member
+Profile System
+(ERIM MIS)
+People ERIM
+People profile
+system
+Erasmus Research Institute
+of Management, Erasmus
+University Rotterdam,
+Netherlands
+No Erasmus University
+Esploro Esploro Ex Libris No
+> 10 in early adopter
+program; Ex-Libris has a
+large presence in the
+higher Education
+community
+EUREKA!
+Enhancing
+Student
+Research
+EUREKA University of Texas at Austin
+(UTA) No University of Texas at
+Austin
+Expertise @
+Maryland UM Experts University of Maryland Yes
+(will be)
+University of Maryland
+College Park
+Faculty Profile
+System
+UC Irvine
+Faculty Profile
+System
+University of California Irvine No UC Irvine
+Faculty
+Profiles
+System
+Stony Brook
+University
+Faculty
+Profiles
+System
+Stony Brook University No Stony Brook University
+
+===== PDF_PAGE 58 =====
+- 42 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+Research
+Networking
+Tool
+Link to
+Product Page Developer/Owner Open
+source Adopters
+Faculty
+Research
+Information
+Profile (FRIP)
+Discontinued.
+Work on this
+system
+ceased;
+moved on to
+developing
+Digital Vita
+University of Pittsburgh N/A (formerly) University of
+Pittsburgh
+Faculty
+Scholarly
+Productivity
+Index
+Academic
+Analytics Academic Analytics, LLC No Unknown
+Faculty180 Faculty180 Interfolio No
+Institutions of higher
+education in the United
+States and Canada.
+GENIUS InfoEd
+GENIUS InfoEd Global No Many Big Ten/CIC
+institutions
+Google
+Google
+search
+generated
+from an
+institution's
+home page
+Google No Anyone can access
+HUBzero HUBzero Purdue University Yes[11]
+Indiana CTSI, Indiana
+University, Purdue
+University, Notre Dame
+iamResearcher iamResearcher University of Southampton,
+UK Unknown
+N/A (platform is directed
+toward individual
+researcher use)
+iAMscientist iAMscientist iAMscientist.inc No Unknown
+i2iConnect i2iConnect Indiana University No
+N/A (platform is directed
+toward individual
+researcher use)
+InCites InCites Clarivate Analytics No Unknown
+INDURE
+(Indiana
+Database for
+University
+Research
+Expertise)
+INDURE Indiana University / Purdue
+University No
+Ball State, Indiana
+University, Purdue
+University, University of
+Notre Dame
+IRIS
+(Institutional
+Research
+Information
+System)
+IRIS CINECA Yes 60 universities[12]
+
+===== PDF_PAGE 59 =====
+- 43 -
+제2장 학술 DB 현황과 연구자 정보
+Research
+Networking
+Tool
+Link to
+Product Page Developer/Owner Open
+source Adopters
+Knode Knode Knode No
+Multiple, anyone can use,
+collaborating with VIVO and
+UCSF
+The Lens The Lens Cambia
+No (but
+free to use
+and API
+available)
+Researcher, Universities,
+Research institutes, Patent
+Offices
+Lattes
+Platform Lattes CNPq - Brazil Unknown
+N/A (Platform is directed
+toward individual
+researcher use in Brazil)
+LatticeGrid[13] LatticeGrid
+public Wiki
+Northwestern University
+Clinical and Translational
+Sciences Institute (NUCATS)
+- Biomedical Informatics
+Center (NUBIC)
+Yes
+Northwestern Feinberg
+School of Medicine &
+Cancer Center, UCSF
+Cancer Center, Fox Chase
+Cancer Center, University
+of Michigan, Case Western
+University
+LinkedIn LinkedIn LinkedIn
+No (but
+LinkedIn is
+free to
+use)
+N/A (Platform is directed
+toward individual
+researcher use. Millions of
+users are registered
+globally.)
+Life Science
+Network
+Life Science
+Network
+Life Science Network
+gGmbH
+Yes (upon
+request) Anyone can use.
+Loki[14] Loki University of Iowa No
+University of Iowa Institute
+for Clinical and
+Translational Science
+Lyterati Lyterati Entigence Corporation No
+George Washington
+University, The New
+School, Lehigh University
+McCormick
+Collaboration
+Visualization
+Tool
+Collaboration
+at McCormick Northwestern University No
+McCormick School of
+Engineering and Applied
+Science at Northwestern
+University
+Mendeley Mendeley Elsevier No Anyone can use
+MizzouLinks none available University of Missouri Unknown University of Missouri
+MyScienceWork MyScienceWork Unknown
+No (but
+anyone can
+register
+and use the
+network)
+Anyone can register and
+use. The network is
+directed at the individual
+researcher
+OSU:pro OSU:pro Ohio State University
+No (but
+can be
+licensed)
+Ohio State University
+
+===== PDF_PAGE 60 =====
+- 44 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+Research
+Networking
+Tool
+Link to
+Product Page Developer/Owner Open
+source Adopters
+Pivot Pivot ProQuest, LLC No
+100 university campuses
+and research organizations
+globally
+Portfolio &
+Showroom
+Portfolio &
+Showroom
+University of Applied Arts
+Vienna
+Yes
+(Apache
+License)
+University of Applied Arts
+Vienna, Academy of Fine
+Arts Vienna, Bertha von
+Suttner Privatuniversität,
+Catholic Private University
+of Linz, Mozarteum
+University Salzburg
+(testing), (source code )
+Profiles
+Research
+Networking
+Software
+Profiles Harvard University Yes (BSD
+license)
+Harvard, UCSF, and many
+others (see Profiles users )
+REACH NC
+Life Science
+Experts
+Visualization
+Tool
+REACH NC
+RENCI (Renaissance
+Computing Institute, a
+collaboration between
+University of North Carolina
+at Chapel Hill, Duke
+University and North
+Carolina State University)
+Duke Research Triangle
+Institute, University of North
+Carolina General
+Administration
+No (but
+free to the
+public)
+Appalachian State
+University Duke University
+East Carolina University
+Elizabeth City State
+University Fayetteville
+State University NC A&T
+North Carolina Central
+University North Carolina
+State University RTI
+International
+UNC-Asheville University
+of North Carolina at Chapel
+Hill UNC-Charlotte
+UNC-Greensboro
+UNC-Pembroke
+UNC-Wilmington Western
+Carolina University
+Winston-Salem State
+University
+Research
+Accelerator
+YCCI
+Research
+Accelerator
+ResearchAccelerator.org Unknown Yale University
+ResearcherID ResearcherID Clarivate Analytics
+No (but
+Researcher
+ID network
+is free to
+access and
+use by
+individual
+users)
+N/A (Platform is directed
+toward individual
+researcher use)
+
+===== PDF_PAGE 61 =====
+- 45 -
+제2장 학술 DB 현황과 연구자 정보
+Research
+Networking
+Tool
+Link to
+Product Page Developer/Owner Open
+source Adopters
+ScholarBridge ScholarBridge ScholarBridge LLC No
+14 university members and
+free access for any
+individual student or
+researcher
+SciENcv SciENcv
+A pilot program sponsored
+by the Federal
+Demonstration Partnership
+and the National Science and
+Technology Council (NSTC)
+supported by the STAR
+METRICS program
+Yes
+Sponsored by the Federal
+Demonstration Partnership
+and the NSTC's
+interagency groups:
+Research Business Model
+(RBM) and Science of
+Science Policy (SoSP)
+Symplectic
+Elements
+Symplectic
+Elements Digital Science No
+115+ major research
+institutions around the
+world, including the
+University of Cambridge
+(UK), University of Oxford
+(UK), University of
+Melbourne (AUS), Duke
+University (US), University
+of Auckland (NZ), Tufts
+University (US), and
+University of Michigan (US).
+(see Some of Symplectic's
+clients)
+UNIWeb UNIWeb Proximify No
+University of Ottawa, McGill
+University, Dalhousie
+University, University of
+British Columbia Okanagan
+Campus, École de
+technologie supérieure,
+CIMVHR
+VIVO[1][15] VIVO Lyrasis Yes[16]
+Cornell University,
+University of Florida,
+Washington University in
+St. Louis, Weill Cornell
+Medical College, Indiana
+University, Ponce School of
+Medicine, Scripps Research
+Institute, Duke University,
+University of Colorado at
+Boulder, Northwestern
+University, University of
+Nebraska–Lincoln,
+University of Melbourne,
+
+===== PDF_PAGE 62 =====
+- 46 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+※ 출처: https://en.wikipedia.org/wiki/Comparison_of_research_networking_tools_and_research_profiling_systems
+(2025년 8월 13일 접근)
+Research
+Networking
+Tool
+Link to
+Product Page Developer/Owner Open
+source Adopters
+Griffith University, Chinese
+Academy of Sciences, etc.
+There are currently over 140
+VIVO implementations in
+the United States and
+international VIVO projects
+in over 25 countries.[17]
+WorkWeb WebWork at
+archive.org Columbia University No Columbia University
+Yaffle[18][19] Yaffle Memorial University of
+Newfoundland Yes Memorial University of
+Newfoundland
+
+===== PDF_PAGE 63 =====
+- 47 -
+제2장 학술 DB 현황과 연구자 정보
+<표 2-10> 연구자 네트워킹 도구 – 연구자 속성 등
+Research
+Networking
+Tool
+Profiled User Population
+Can Users
+Update Their
+Own Profile
+Data?
+Type of
+Networking
+(Active or
+Passive)
+Includes
+Functionality to
+Match Expertise
+with Funding
+Opportunities
+Academic
+Room
+Anyone can create a profile.
+Profiled categories include
+"Faculty", "Grad Students",
+"Undergrads", "Professionals"
+Yes Active No
+AcademicLabs
+Research Group profiles and
+profiles for all researchers
+with ORCID, publications,
+patents, clinical trials or
+funded projects.
+Yes Active and
+Passive Yes
+Activity
+Insight
+Faculty, Staff, Graduate
+Students Yes Active and
+Passive Yes
+C-IKNOW Defined using Web of science
+ID or on an ad hoc basis No Active and
+Passive No
+PROFILES by
+Mentis
+(formerly
+Collaborative
+Partnership /
+Profile
+System)
+Faculty, Students, Staff,
+Equipment Owners, Research
+Centers, Facilities,
+Technologies, Units etc. as
+per institution's needs
+Yes Active and
+Passive Yes
+Community
+Academic
+Profiles -
+CAP
+Active Stanford physicians,
+School of Medicine faculty,
+students, staff and postdocs.
+Yes Active and
+Passive Unknown
+Curvita
+Profile
+Manager
+All Unknown No
+networking Unknown
+CUSP -
+Columbia
+University
+Scientific
+Profiles
+All Columbia faculty Yes Active Unknown
+Digital Vita All Yes Passive Unknown
+Elsevier's
+Pure
+Any researchers can be
+included Yes Active and
+Passive
+Yes Funding
+Institution within
+Pure, interacts with
+Pure collecting
+funding
+opportunities to the
+profile researcher
+page with no manual
+effort.
+
+===== PDF_PAGE 64 =====
+- 48 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+Research
+Networking
+Tool
+Profiled User Population
+Can Users
+Update Their
+Own Profile
+Data?
+Type of
+Networking
+(Active or
+Passive)
+Includes
+Functionality to
+Match Expertise
+with Funding
+Opportunities
+Elsevier's
+SciVal All published researchers
+Yes, SciVal links
+to profiles in
+Scopus and
+researchers can
+submit feedback
+on profiles within
+Scopus to have
+papers added or
+removed.
+Passive No
+Epernicus
+Solutions &
+Epernicus
+Network
+Anyone who enters a profile
+(for Epernicus Network)
+Yes (for
+Epernicus
+Network)
+Passive Unknown
+Epistemio Any researcher who creates a
+profile Yes N/A No
+ERIM
+Member
+Profile
+System
+(ERIM MIS)
+Multiple faculties at Erasmus
+use it Unknown Active Unknown
+Esploro Faculty, Staff, Library Staff,
+Graduate Students Yes Active and
+Passive
+Yes (integration
+with Pivot and
+Research
+Professional)
+EUREKA!
+Enhancing
+Student
+Research
+University of Texas at Austin
+faculty Unknown No
+networking Unknown
+Expertise @
+Maryland All Unknown
+Currently
+passive, but
+building active
+Unknown
+Faculty
+Profile
+System
+Any faculty at UC Irvine Yes No
+networking Unknown
+Faculty
+Research
+Information
+Profile
+(FRIP)
+N/A N/A N/A N/A
+Faculty
+Scholarly
+Productivity
+Index
+Federally funded, published
+faculty Unknown No
+networking Unknown
+
+===== PDF_PAGE 65 =====
+- 49 -
+제2장 학술 DB 현황과 연구자 정보
+Research
+Networking
+Tool
+Profiled User Population
+Can Users
+Update Their
+Own Profile
+Data?
+Type of
+Networking
+(Active or
+Passive)
+Includes
+Functionality to
+Match Expertise
+with Funding
+Opportunities
+GENIUS Any faculty member who
+creates a profile on the system Yes Passive Unknown
+Google Anyone can be searched on
+Google N/A No
+networking No
+HUBzero
+Indiana University, Indiana
+University School of
+Medicine, Purdue University,
+U. of Notre Dame, Regenstrief
+Unknown Active Unknown
+iamResearcher Any researcher who creates a
+profile Yes Passive (?) Unknown
+iAMscientist Any researcher who creates a
+profile Yes Passive Unknown
+i2iConnect Industry licensing
+representatives Unknown Passive Unknown
+InCites All published Yes Passive No
+INDURE All faculty at 4 Indiana
+institutions Unknown Passive Unknown
+LatticeGrid
+Currently Medical School
+faculty only. Developed for
+biomedical research
+organizations
+Yes (Users can
+update the
+Medical School
+faculty database,
+which then feeds
+LatticeGrid
+Passive)
+Yes (Connected to a
+Northwestern tool
+called
+FacultyConnect to
+match faculty with a
+special limited set of
+Northwestern-spe
+cific non-federal
+funding
+opportunities in the
+life and biomedical
+sciences domains)
+Lattes
+Database
+Curriculum and institutions
+database of Science and
+Technology areas in Brazil.
+Anyone can create a profile.
+Yes No apparent
+networking Unknown
+The Lens
+Profiles are automatically
+created and can be linked (e.g.
+via ORCID)
+Yes Active and
+Passive Unknown
+LinkedIn Anyone who creates a
+LinkedIn profile Yes Passive and
+Active Unknown
+Life Science
+Network Anyone who creates a profile Yes Active and
+Passive No
+Loki All faculty at University of
+Iowa Yes Passive Unknown
+
+===== PDF_PAGE 66 =====
+- 50 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+Research
+Networking
+Tool
+Profiled User Population
+Can Users
+Update Their
+Own Profile
+Data?
+Type of
+Networking
+(Active or
+Passive)
+Includes
+Functionality to
+Match Expertise
+with Funding
+Opportunities
+Loop Anyone who creates a profile Yes Passive and
+Active Unknown
+Lyterati
+Faculty, academic
+administrators (department
+chairs, deans, provost), center
+directors, grad students, staff
+Yes Active and
+Passive
+Yes (through
+advanced
+searching and web
+profile
+exploration)
+McCormick
+Collaboration
+Visualization
+Tool
+All Northwestern publications
+from Web of Science No Passive No
+MizzouLinks
+Currently a pilot group from
+two Missouri interdisciplinary
+centers
+Unknown Passive Unknown
+MyScience
+Work Anyone who creates a profile Yes Active and
+Passive Unknown
+OSU:pro All OSU faculty Unknown No apparent
+networking Unknown
+Pivot
+3 million profiles (and
+growing, according to the
+publisher). Profiles are
+compiled even without user
+registration, but can only be
+viewed by registered users
+Yes Passive
+Yes through a
+direct connection
+with the COS
+product
+Portfolio &
+Showroom
+All users may be included (as
+defined by the university). Yes Passive and
+Active No
+Profiles
+All users as defined by each
+institution. "Profiles" are also
+created for institutions,
+departments, concepts,
+publications, networks,
+events or any other class
+defined in the ontology
+Yes Passive and
+Active No
+ReachNC
+UNC faculty in various
+disciplines, Duke, and RTI
+Fellows
+Yes Passive No
+Research
+Accelerator
+Any member of the Yale
+research enterprise Yes (?) Passive Unknown
+ResearcherID Anyone who creates a profile Yes Passive and
+Active Unknown
+
+===== PDF_PAGE 67 =====
+- 51 -
+제2장 학술 DB 현황과 연구자 정보
+※ 출처: https://en.wikipedia.org/wiki/Comparison_of_research_networking_tools_and_research_profiling_systems
+(2025년 8월 13일 접근)
+Research
+Networking
+Tool
+Profiled User Population
+Can Users
+Update Their
+Own Profile
+Data?
+Type of
+Networking
+(Active or
+Passive)
+Includes
+Functionality to
+Match Expertise
+with Funding
+Opportunities
+SciENcv Not yet established Not yet
+established
+No apparent
+networking No
+Symplectic
+Elements
+All users may be included (as
+defined by institution).
+Yes (Profiles are
+automatically
+populated with
+data, as dictated
+by internal and
+external data
+feeds. Some
+profile data can
+be manually
+curated by end
+users, proxy
+users, or
+administrators.
+Users can create
+new relationships
+between
+elements.)
+Passive and
+Active
+Yes - Through
+integrations with
+research news and
+funding
+information
+provider
+*Research,
+researchers are
+able to get tailored
+funding
+opportunities
+linked to their
+Elements
+accounts.
+VIVO All users (as defined by the
+institution) Yes Passive and
+Active Possibly
+Yaffle All Memorial University
+faculty Yes Passive Unknown
+
+===== PDF_PAGE 68 =====
+- 52 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+제3절 주요 학술 DB의 연구자 정보
+□ 주요 학술 DB의 연구자 정보
+○ 국제연구 비중이 적었던 과거에는 학술 DB는 연구의 양과 질에 집중이 되었다면, 최근
+공동연구의 비중이 증가하면서 연구자 정보에 제공뿐만 아니라 Lens, Aminer,
+Di-mensions 등 이에 대한 분석을 제공하는 DB에 대한 관심도가 증가하고 있음
+- 학술 DB별 제공하고 있는 연구자 정보를 제시함
+○ (Web of Science)
+- 연구자 검색 기능을 통해 연구자 정보를 제공하고 있으며, 저자의 이름, 저자 식별자
+(ORCID ID 또는 Web of Science Researcher ID), 또는 소속 기관을 통해 다음
+그림과 같이 검색할 수 있음. 또한 일부 식별이 어려울 경우를 대비해 다양한 필터
+(저자, 기관, 연구 분야, 국가/지역 등) 기능을 통한 세부 분석도 지원하고 있음
+※ 출처: https://www.webofscience.com/wos/author/author-search (2025년 8월 15일 접근)
+[그림 2-30] Web of Science 연구자 검색 결과 화면 예시
+- 연구자 프로필은 다음 그림과 같이 제공하고 있으며, 현재 제공하는 정보에는 소속,
+연구 분야, 출판물, 피인용 수, 영향력 지수(h-index, 인용 백분위 수) 등이 있음. 인용
+정보의 경우 분석 보고서(연도 및 논문별 인용 수, 인용 받은 분야 등)을 추가로 제공
+하며, entity 버전을 구독하면 연구 성과에 대한 추가 분석(cited half-life, 상위 1%
+논문 수 및 비중 등)도 제공받을 수 있음
+
+===== PDF_PAGE 69 =====
+- 53 -
+제2장 학술 DB 현황과 연구자 정보
+※ 출처: https://www.webofscience.com/wos/author/record/1881748 (2025년 2월 17일 접근)
+[그림 2-31] Web of Science 연구자 프로필 화면 예시-Prashant Mali
+○ (Google Scholar)
+- 추가적인 검색창이나 필터 기능을 제공하지는 않으며, 학술 검색창에 저자의 이름을
+검색하면, 다음 그림과 같이 사용자의 프로필과 해당 저자가 포함된 학술 문서를 제공
+※ 출처: https://scholar.google.com/ (2025년 2월 17일 접근)
+[그림 2-32] Google Scholar 연구자 검색 결과 화면 예시-Prashant Mali
+
+===== PDF_PAGE 70 =====
+- 54 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+- 사용자 프로필은 다음 그림과 같이 제공하고 있으며, 현재 제공하는 정보에는 소속,
+이메일, 연구 분야, 피인용 수, 공동 저자, 영향력 지수(h-index, i10-index) 등이 있음.
+피인용 수에 한해 연도별 및 논문별 분석 제공
+※ 출처: https://scholar.google.com/citations?hl=ko&user=blY0ilIAAAAJ (2025년 2월 17일 접근)
+[그림 2-33] Google Scholar 연구자 프로필 화면 예시-Prashant Mali
+○ (Scopus)
+- Author search 기능을 통해 연구자 정보를 제공하고 있으며, 저자의 이름, 소속 기관,
+ORCID ID를 통해 다음 그림과 같이 검색할 수 있음. 공개 버전에서는 필터 기능을
+제공하지 않으나, 구독 버전에서는 다양한 필터(저작물 제목, 소속 기관, 도시, 나라
+등) 기능을 통한 세부 분석도 지원하고 있음
+※ 출처: https://www.scopus.com/results/authorNamesList.uri?sort=count-f&src=al&sid=330f75b8dfce2dc0e3c8
+7b2c0839819e&sot=al&sdt=al&sl=42&s=AUTHLASTNAME%28mali%29+AND+AUTHFIRST%28prashant%29
+&st1=mali&st2=prashant&orcidId=&selectionPageSearch=anl&reselectAuthor=false&activeFlag=true&showD
+ocument=false&resultsPerPage=20&offset=1&jtp=false&currentPage=1&previousSelectionCount=0&tooMan
+ySelections=false&previousResultCount=0&authSubject=LFSC&authSubject=HLSC&authSubject=PHSC&auth
+Subject=SOSC&exactAuthorSearch=false&showFullList=false&authorPreferredName=&origin=searchauthorfr
+eelookup&affiliationId=&txGid=51a623d9acb88b6f36316cc0039b46d9 (2025년 2월 17일 접근)
+[그림 2-34] Scopus 연구자 검색 결과 화면 예시-Prashant Mali
+
+===== PDF_PAGE 71 =====
+- 55 -
+제2장 학술 DB 현황과 연구자 정보
+- 연구자 프로필은 다음 그림과 같이 제공하고 있으며, 현재 제공하는 정보에는 소속 기관
+및 지역, 피인용 수, 출판물 수, h-index, 협업 저자 등이 있으나, 공개 버전에는 매우
+간략하게 제공함. 구독 버전에는 협업 저자 리스트, 피인용된 논문 정보, 저자의
+author position 비율 등에 추가 정보를 제공함
+※ 출처: https://www.scopus.com/authid/detail.uri?authorId=57191951310 (2025년 2월 17일 접근)
+[그림 2-35] Scopus 연구자 프로필 화면 예시-Prashant Mali
+○ Lens
+- Lens Profiles 기능을 통해 연구자 정보를 제공하고 있으며, 저자의 이름을 통해 검색할
+수 있음. 동명이인이 존재할 경우, 검색창 아래로 이름과 소속, 출신 학교가 기재된
+여러 프로필이 주어지며, 필터 기능은 제공되지 않음
+- 연구자 프로필을 다음 그림과 같이 제공하고 있으며, 현재 제공하는 정보에는 근무 이력,
+출신 학교, 협업 저자 목록, 저작물 정보 등이 있음. 학술 정보에 대해서는 간단한 요약
+통계(저작물 수, 공개 비율, 협력 비율, h-index, 피인용 수 등)도 제공
+※ 출처: https://www.lens.org/lens/orcid/0000-0002-8677-4562/scholar (2025년 8월 13일 접근)
+[그림 2-36] Lens 연구자 프로필 화면 예시-Prashant Mali
+
+===== PDF_PAGE 72 =====
+- 56 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ Dimensions
+- Researcher를 선택한 뒤, View more를 통해 다음 그림과 같이 연구자 정보를 찾을
+수 있음. 필터 기능을 제공하지 않으며, 동명이인의 경우 소속 기관을 통해 구분 가능
+※ 출처: https://app.dimensions.ai/discover/publication?search_mode=content (2025년 8월 13일 접근)
+[그림 2-37] Dimensions 연구자 검색 화면 예시-Prashant Mali
+- 연구자 프로필을 다음 그림과 같이 제공하고 있으며, 현재 제공하는 정보에는 소속 기관,
+소속 지역, 저작물, 자금 규모, 특허 수, 피인용 수, 연구 분야, 협업 저자 수 등을 제공
+※ 출처: https://app.dimensions.ai/details/entities/publication/author/ur.0667466715.32 (2025년 8월 13일 접근)
+[그림 2-38] Dimensions 연구자 프로필 화면 예시-Prashant Mali
+
+===== PDF_PAGE 73 =====
+- 57 -
+제2장 학술 DB 현황과 연구자 정보
+- 대부분은 정보는 무료로 제공하나, 협업 저자 네트워크 및 자금 이력들에 대한 세부
+정보는 구독 버전에서만 제공함. 그 예시들은 다음 그림과 같음
+※ 출처: Dimensions 홈페이지 제공 (2025년 2월 17일 접근)
+[그림 2-39] Dimensions 연구자 네트워크 화면 예시
+※ 출처: Dimensions 홈페이지 제공 (2025년 2월 17일 접근)
+[그림 2-40] Dimensions 자금 이력 화면 예시
+
+===== PDF_PAGE 74 =====
+- 58 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ OpenAlex
+- 연구자 검색 기능을 제공하고 있으며, 이를 이용하면 다음 그림과 같이 연구자 목록을
+확인할 수 있음. 식별이 어려울 경우를 대비하여 필터(소속 기관, 소속 국가) 기능을
+통한 세부 분석도 지원하고 있음
+※ 출처: https://openalex.org/authors?page=1&filter=default.search:prashant+mali(2025년 8월 13일 접근)
+[그림 2-41] OpenAlex 연구자 검색 결과 화면 예시-Prashant Mali
+- 연구자 프로필은 다음 그림과 같이 제공하고 있으며, 현재 제공하는 정보에는 전현직
+소속 기관, 영향력 지수(h-index, i10-index), 연구 분야, 연구물 수 및 피 인용 수
+등을 제공
+※ 출처: https://openalex.org/authors/a5102747646(2025년 8월 13일 접근)
+[그림 2-42] OpenAlex 연구자 프로필 화면 예시-Prashant Mali
+
+===== PDF_PAGE 75 =====
+- 59 -
+제2장 학술 DB 현황과 연구자 정보
+○ Semantic Scholar
+- 논문 및 저자 검색을 통해 다음과 같이 연구자의 논문 관련 지표, 저자의 논문뿐만 아니라
+해당 저자가 인용한 저자, 해당 저자를 인용한 저자, 공동 저자도 파악할 수 있음
+※ 출처: https://www.semanticscholar.org/author/P.-Mali/48833445 (2025년 8월 13일 접근)
+[그림 2-43] Semantic Scholar 연구자 프로필 화면 예시-Prashant Mali
+○ Matilda
+- 논문 및 저자 검색을 통해 다음과 같이 저자의 ORCID 번호, 다른 이름, 소속 기관과
+저자의 논문 목록을 확인할 수 있음
+[그림 2-44] Matilda 연구자 프로필 화면 예시-Prashant Mali
+
+===== PDF_PAGE 76 =====
+- 60 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ Xueshu Baidu
+- 논문 및 저자 검색을 통해 다음과 같은 저자 정보를 제공하고 있으며, 현재는 중국
+연구자만 정보 제공. 분야와 논문 수, H-index, G-Index 등 연구자 지표와 함께
+협력 연구자 및 협력 기관도 제공하고 있음
+※ 출처: https://xueshu.baidu.com/scholarID/CN-BX74XKFJ 중국어 원문을 구글 한글 번역한 것임.
+[그림 2-45] Xueshu Baidu 연구자 프로필 화면 예시-유자궈
+○ AMiner
+- 논문 및 저자 검색을 통해 연구자의 프로파일(교육 및 경력), 주요 연구 주제, 논문, 특허,
+프로젝트, 공동 저자, 공동연구기관 등을 포함해 연구자 개인에 대한 다양한 지표를
+제공하고 있음
+
+===== PDF_PAGE 77 =====
+- 61 -
+제2장 학술 DB 현황과 연구자 정보
+※ 출처: https://www.aminer.cn/profile/prashant-mali/53f43994dabfaedd74dbe1e3(2025년 8월 13일 접근)
+[그림 2-46] Aminer 연구자 프로필 화면 예시-Prashant Mali
+□ 국내 학술 DB
+○ 추후 연구자 DB를 구축할 때, 기존에 국내에 존재하는 DB를 활용하기 위해, 앞선 예시와
+유사한 연구자 프로필을 제공하는 학술 사이트를 추가로 기재하였음
+- 한국학술지인용색인의 경우, 학술지 정보에 집중되어 있으며, ScienceOn의 경우
+연구자의 연구 성과에 집중하고 있음
+○ 한국학술지인용색인
+- 학술지의 인용 정보를 통해 질이나 영향력을 평가하는 것이 주 목적이나, 국내 학술지에
+등재한 연구자에 대한 프로필도 추가로 제공하고 있음. 통합 검색창의 저자 항목에
+입력할 경우, 다음 그림과 같이 해당 저자가 작성한 논문의 결과가 제공됨. 추가적인
+식별을 위해 필터(주제, 학술지, 발행 연도, 소속 기관 등) 기능을 통한 세부 분석도 지원
+하고 있음. 이를 통해, 해당 저자가 발행한 논문을 찾고, 이름을 누르면 연구자 프로필로
+연결됨
+
+===== PDF_PAGE 78 =====
+- 62 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+※ 출처: https://www.kci.go.kr/kciportal/po/search/poTotalSearList.kci(2025년 8월 13일 접근)
+[그림 2-47] 한국학술지인용색인 연구자 검색 결과 화면 예시 – 김빛내리
+- 연구자 프로필은 다음 그림과 같이 제공하고 있으며, 연구자 소속, 논문 수, 피인용 횟수,
+h지수, 공저자 비율, 자주 등재하는 학술지 목록 등 연구 성과와 관련한 정보들을 제공함
+※ 출처: https://www.kci.go.kr/kciportal/po/citationindex/poCretDetail.kci?citationBean.cretId=CRT001624360&
+amp;citationBean.artiId=ART003166814 (2025년 8월 13일 접근)
+[그림 2-48] 한국학술지인용색인 연구자 프로필 화면 예시 – 김빛내리
+
+===== PDF_PAGE 79 =====
+- 63 -
+제2장 학술 DB 현황과 연구자 정보
+○ ScienceON
+- 국가 연구 성과 관리 시스템으로 한국에서 진행된 연구 프로젝트나 연구자의 성과를
+관리하고, 이를 공개적으로 제공함. 검색창을 통해 연구자 이름을 검색하여 다음
+그림과 같은 화면을 얻을 수 있음. 국내 활동이 있다면 발표 논문, 특허, 보고서, 동향도
+함께 나오며, 동명이인이 존재 시 연구자 리스트(소속 기관, 영문 표기, 연구 분야, 연구
+성과 등)가 추가로 표기하여 찾을 수 있게 구현함
+[그림 2-49] ScienceOn 연구자 검색 결과 화면 예시 – 김빛내리
+- 연구자 프로필은 다음 그림과 같이 제공하고 있으며, 소속 기관, 주요 연구 분야, ISNI
+넘버, 논문 및 특허, 보고서 등을 제공함
+[그림 2-50] ScienceOn 연구자 프로필 화면 예시 – 김빛내리
+
+===== PDF_PAGE 80 =====
+- 64 -
+데이터 기반의 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+□ 기타 DB
+※ 아래의 학술 관련 사이트들은 다수의 연구자가 사용하는 오픈 소스로 연구자 성과 데이터를 쌓을 수 있을
+것으로 예상됨. 그러나 2025년 8월 기준, 학술 자료 외의 연구자 정보는 제공하지 않아 간단한 설명으로
+대체
+○ Crossref
+- 학술 출판물들의 DOI(Digital Object Identifier)를 등록하고 관리하는 비영리
+개방형 디지털 인프라 조직. 연구 논문이나 학술 자료에 고유한 식별자인 DOI를 부여
+하며, 이를 통해 해당 자료에 대한 정확한 참조와 추적을 가능하게 함
+○ arXiv, bioRxiv, medRxiv
+- 특정 분야에 대한 프리프린트 사이트. arXiv는 물리학, 수학, 컴퓨터 과학 등 분야,
+bioRxiv는 생물학 분야, medRxiv는 의학 및 건강학 분야에 대한 연구 논문을 다룸
+○ OSF Preregistration
+- 연구 데이터를 관리하고 공개하는 플랫폼. 그 중, Preregistration 기능을 이용하면
+연구자가 실험이나 연구 계획을 사전에 등록하는 것이 가능해지며, 이는 연구 결과가
+투명하게 보고할 수 있도록 돕는 역할
+○ SciELO
+- 라틴 아메리카, 카리브해, 스페인, 포르투갈을 포함한 지역의 학술 저널을 제공하는
+Open Access 사이트. 여러 분야의 연구 논문을 포함하고 있으며, 해당 지역 내의
+연구를 국제적으로 알리는 데 사용되는 사이트
+※ 이전에 언급한 DB 중 일부가 제공하는 정보를 표 2-10로 정리
+
+===== PDF_PAGE 81 =====
+<표 2-11> 사이트별 저자 정보 정리
+사이트명 연구자 기본정보 저자의 출판물 정보 피인용 및 영향력 저자의 협업 정도
+Web of Science
+이름
+소속 기관
+citation topic
+(micro/meso)
+출판물 수 및 제목
+각 출판물 피인용 수
+게재한 저널 목록
+발행 연도
+주제 및 분야
+피인용 수
+(총 피인용 수, 자기인용 제외 피인용 수,
+평균 피인용 수)
+영향력 지표(h-index)
+협력 기관 및 협력 저자
+자금조달 기관Hot papers의 수 및 비중
+* ESI 기준 최근 2개월간 피인용 상위 0.1%에
+속한 논문
+피인용 수 상위 1% 논문의 수 및 비중
+피인용 수 상위 10% 논문의 수 및 비중
+영향력 지표
+(impact factor, Journal Citation Indicator,
+Cited Journal Rank, Cited Half-Life,
+Eigenfactor Score)
+Google Scholar
+이름
+소속 기관
+홈페이지
+이메일
+주요 연구 분야
+출판물 개수 및 제목
+각 출판물 피인용 수
+(Open access만 제공됨)
+전체 피인용 수
+(전체 기간/최근 5년)
+영향력 지표
+(h-index, i10-index)
+(전체 기간/최근 5년)
+협력 저자 목록
+재정 지원 기관
+Scopus
+이름
+소속 기관
+주요 연구 분야
+출판물 개수 및 제목
+각 출판물 피인용 수
+게재한 저널 목록
+해당 연구자의 논문을 피인용 한 논문 목록
+총 피인용 수
+영향력 지표(h-index)
+협력 저자 목록
+과거 소속 기관 이력
+저자 위치(제1저자, 제2저자, 교신저자 등)
+논문을 게재한 저널의 Impact factor,
+SJR, CiteScore, Top cited documents
+인용 추세 분석표
+(연도별 인용 횟수･트렌드, 연평균 인용
+수, 전체 인용 추이 및 영향력), i10-index
+Lens
+이름
+소속 기관
+주요 연구 분야
+출판물 개수 및 제목
+특허 출원 및 인용 개수 전체 피인용 수
+협력 저자 목록
+기관 및 타 연구자와의
+협업 관계
+출판물 관계 지도
+(논문과 특허, 연구 프로젝트 사이 상관관계)
+특정 주제의 연구 트렌드 변화 분석
+시간에 따른 피인용 변화
+저자 간 공동연구
+관계
+특정 저자･기관 간 연구
+네트워크 형성 정도
+- 65-
+
+===== PDF_PAGE 82 =====
+- 66-
+※ 출처: 각 사이트 내용을 저자가 정리
+사이트명 연구자 기본정보 저자의 출판물 정보 피인용 및 영향력 저자의 협업 정도
+Dimensions
+이름
+소속 기관
+주요 연구 분야
+출판물 개수 및 제목
+각 출판물 피인용 수 전체 피인용 수 협력 저자 목록
+타 연구자와의 성과 비교
+전체 출판물 목록
+(Open access가 아닌 출판물도 확인 가능)
+저자 위치
+(제1저자, 제2저자, 교신저자 등)
+영향력 지표
+(h-index, i10-index, 연도별 h-index 변화)
+인용 트렌드 및
+연도별 인용 변화
+분야별･주제별
+피인용 정도 분석
+영향력 정도
+* h-index, i10-index, CiteScore, Altmetric
+점수 기반으로 평가됨
+특정 저자･기관과의
+협업 강도 및 빈도
+국제 협업 패턴
+OpenAlex
+이름
+소속 기관
+주요 연구 분야
+타 연구자와의 성과 비교
+APC sum
+* 논문 게재 비용
+출판물 개수 및 제목
+게재한 저널
+각 논문 피인용 수
+CWTS Core Source 저널 여부
+전체 피인용 수
+연도별 피인용 수
+연도별 인용 트렌드
+영향력 지표(h-index, FWCI)
+협력 저자 목록
+협력 기관
+한국학술지
+인용색인
+이름
+소속 기관
+학위
+주요 연구 분야
+출판물 개수 및 제목
+각 논문 피인용 수
+전체 피인용 수
+평균 피인용 수
+단독 논문-협력 논문
+개수 및 비율
+ScienceON
+이름
+소속 기관
+주요 연구 분야
+출판물 개수 및 제목
+각 논문 피인용 수
+전체 피인용 수
+영향력 지표(h-index)
+Crossref 출판물에 대한 data base 사이트
+arXiv, bioRxiv,
+medRxiv
+특정 분야에 대한 프리프린트 사이트
+(arXiv: 물리학, 수학, 컴퓨터 과학 등 분야, bioRxiv: 생물학 분야, medRxiv: 의학 및 건강학 분야)
+OSF
+Preregistration 연구 설계, 가설, 분석 계획 등을 공개 등록하는 사이트
+SciELO 라틴 아메리카, 카리브해, 스페인, 포르투갈을 포함한 지역의 학술 저널을 제공하는 Open Access 사이트
+
+===== PDF_PAGE 83 =====
+제2장 학술 DB 현황과 연구자 정보
+□ 주요 학술 정보의 영구 식별자((Persistent Identifiers, PIDs) 구축 필요성
+○ 연구자･기관･국가 단위에서 통계 분석의 정확도를 제고하고 데이터 간 연계 분석을
+위해서는 식별자가 매우 중요함. 이에 따라 글로벌 단위에서 식별자에 대한 연구가 다양
+하게 수행되고 있음(표 2-11 참조)
+<표 2-12> 다양한 연구 식별자 요약
+대상(Research Entity) PID 유형 PID 인프라 성숙도
+Publication
+DOI, accession number, handle, URN, Scopus EID,
+Web of Science UID, PMID, PMC, arXiv identifier,
+BibCode, ISSN, ISBN, PURL
+mature
+Citation OCI32) (secondary aggregation of information) emerging
+Conference DOI, accession number emerging
+Researcher (or scholar) ORCID IDs, ISNI (also DAIs, VIAFs, arXivIDs,
+OpenIDs, ResearcherIDs, ScopusIDs) mature
+Organization DOI, ISNI, GRID, Ringgold IDs, ROR IDs emerging
+Data DOI, accession number, handle, PURL, URN, ARK mature
+Data repository none immature
+Grants DOI, PURL emerging
+Project local identifier, accession number, RaiD emerging
+Experiment none immature
+Investigation DOI, accession number emerging
+Analysis GitHub gist immature
+Software DOI, SHA-1 hash emerging
+Computer simulation UUID emerging
+Software license none immature
+Equipment / /
+Instrument, device, sensor,
+platform, research facility DOI, RRID, UID emerging
+Archival/storage facility URI, DOI, UUID emerging
+Field station none immature
+Sample / /
+Geological or biological sample accession number, RRID, DOI, IGSN emerging
+Cultural artifact DOI, URN, accession number emerging
+Historical or mythical person URI emerging
+Temporal period and historical place ARK, URI, accession number immature
+Study Registration / /
+Clinical trial; non-clinical
+registration accession number, DOI immature
+Data management plan DOI immature
+Workflow URI, DOI immature
+Protocol DOI immature
+※ 출처: Cousijn et al.(2020)의 “Table 1. A Landscape Analysis of Research Entities, Identifying PID Types and
+Infrastructure Maturity (as of May 2018)”, KISTI 글로벌R&D분석센터(2021)에서 재인용.
+32) 향후 기획사업에서 중요한 인용식별자의 구체적인 내용은 Shotton et al.(2020), In-Text Reference Pointer Identifiers –
+InTRePIDs, PIDapalooza 2020, Lisobon, 30 January 2020 참조.
+- 67 -
+
+===== PDF_PAGE 84 =====
+- 68 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+□ 글로벌 주요 연구기관 정보
+○ ROR(Research Organization Registry)은 글로벌 연구 관련 기관의 고유 식별자를
+제공하는 데이터베이스로 연구자 식별정보인 ORCID, 문서 식별정보인 DOI와 함께
+최근 기관 식별정보의 표준으로 자리 잡고 있음33)34)
+[그림 2-51] ROR 기관 정보 사례- KISTI
+○ 2025년 8월 7일 공개된 버전에는 전 세계 117,552개 기관이 등록되어 있으며, 등록된 기관
+상위 30개 국가와 등록된 기관 수는 다음 표와 같음. 한국의 경우 1,386개 기관이 등록되어
+있으나, 전 세계에서 차지하는 위상에 비해 낮은 수의 기관만 등록되어 있음.
+<표 2-13> 국가별 ROR 등록된 기관 수
+33) https://en.wikipedia.org/wiki/Research_Organization_Registry 참조.
+34) 기관별 제공 정보는 https://ror.readme.io/docs/ror-data-structure 참조.
+순위 국가 기관 수 순위 국가 기관 수
+1 미국 32,655 16 스위스 1,804
+2 영국 7,746 17 네덜란드 1,743
+3 독일 5,483 18 호주 1,584
+4 프랑스 5,367 19 스웨덴 1,550
+5 캐나다 3,687 20 대한민국 1,386
+6 중국 3,558 21 폴란드 1,258
+7 일본 3,392 22 벨기에 981
+
+===== PDF_PAGE 85 =====
+- 69 -
+제2장 학술 DB 현황과 연구자 정보
+※ 출처: https://zenodo.org/records/16762508 데이터 재가공
+○ ROR은 최근 글로벌 학술 DB의 기관명에 대한 식별정보의 표준으로 자리 잡고 있는
+상황에서 한국 기관의 ROR 등록은 상대적으로 저조함. 예컨대, 체코, 스위스, 네덜란드,
+스웨덴에 비해 등록된 기관 수가 적은 데, 이러한 이유로 한국 기관의 글로벌 가시성이 낮음
+- 현재 KISTI 글로벌R&D분석센터가 국내 기관의 ROR 등록을 주요 사업으로 일부
+진행하고 있지만 현재보다 체계적이고 안정적인 지원 필요
+- 향후 글로벌 학술 DB와 국내 학술 DB와 연계를 위해서 국내 학술 DB에도 ROR 연계
+필요
+□ 연구자 식별과 연구자 프로파일
+○ 현재까지 학술논문 혹은 특허에서 저자 혹은 발명인을 자동으로 식별하는 것은 매우
+어려운 작업으로 알려져 있음. 소규모 데이터가 아니라 대규모의 문헌 빅데이터를 대상
+으로 하는 저자 식별 연구로는 다음이 있음
+<표 2-14> 대규모 데이터의 저자 식별 연구
+연구 데이터 식별
+단위
+유사도
+측정
+연구자
+수
+Torvik & Smalheiser(2009), Author name disambiguation, in
+MEDLINE, ACM Trans. Knowl. Discov. Data 3(3), 11–40. Medline 저자 동시출현 6.7M
+Li et al.(2014), Disambiguation and co-authorship networks of
+the U.S. patent inventor database (1975–2010), Res. Policy 43,
+941–955.
+USPTO 저자 동시출현 2.67M
+Liu et al.(2014), Author name disambiguation for PubMed, J.
+Assoc. Inf. Sci. Technol. 65(4), 765–781. PubMed 저자 동시출현 10.2M
+Schulz et al.(2014), Exploiting citation networks for largescale
+author name disambiguation, EPJ Data Sci. 1, 11. WoS 저자 동시출현 6.M, h>1
+Caron & van Eck(2014), Large scale author name disambiguation
+using rule-based scoring and clustering. In: Proc. Sci. Technol.
+Indic. Conf., Leiden, pp. 79–86
+WoS 저자 동시출현 All WoS
+※ 출처: Boyack and Klavans(2019), KISTI 글로벌R&D분석센터(2021) 재인용.
+순위 국가 기관 수 순위 국가 기관 수
+8 체코 2,863 23 인도네시아 856
+9 인도 2,823 24 멕시코 830
+10 이탈리아 2,238 25 핀란드 818
+11 러시아 2,135 26 오스트리아 803
+
+===== PDF_PAGE 86 =====
+- 70 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+- 특히 2010년대 이후 학술논문과 저자 수가 기하급수적으로 증가함에 따라 저자명
+식별 과정에 대한 자동화에 대한 필요성은 더욱 커지고 있으나 정확도와 신뢰성은
+여전히 의문시되고 있으며, 저자명 식별의 주요 과제는 다음과 같음(Robinson-Garcia
+et al., 2025)
+ 글로벌 수준에서 저자 인명부를 구축할 유인 체계가 부족함. 특히 산발적으로 논문을 발표
+하거나 생산성이 낮은 저자들의 경우 그러한 참여 동기가 거의 없으며, 이들은 과학기술
+인력의 상단 부분을 차지하고 있음
+ 대규모 서지 데이터베이스나 컬렉션에서 저자 데이터를 수작업으로 정제하기 위한 기술적･
+실행 가능성 측면의 문제
+ 비지도 학습 기반의 머신러닝 접근법을 평가하고 검증하는 데 따르는 어려움.
+ 식별 과정에 활용할 수 있는 특징(feature)을 포괄적으로 추출하기에 서지 메타데이터가
+갖는 한계(예: 분류 정보, 저자-소속 연계 정보, 저자 이메일 등)
+○ Robinson-Garcia et al. (2025)는 저자명 식별 방법을 크게 ‘저자 군집화 방법(author
+grouping methods)’과 ‘저자 할당 방법(author assignment methods)’으로 구분하고
+있음
+○ 저자명 식별 알고리즘은 연구자 프로파일의 생성과 구축을 용이하게 만들었음. 최근
+글로벌 학술 DB에서는 자체 저자명 식별 알고리즘을 통해 다양한 연구자 프로파일
+정보를 제공해 주고 있음(Robinson-Garcia et al., 2025)
+- Scopus는 2006년에 Author ID를 도입하였고, Web of Science는 2008년에
+ResearchID를 도입하였음
+- 한편, 2011년 Google Scholar Citation의 도입은 연구자 프로파일의 중요한 이정표가
+되었는데, 이 무료 서비스를 통해 연구자는 스스로 자신의 프로파일을 생성할 수 있었음
+- 2012년에 도입된 ORCID ID는 연구자 식별자와 여러 학술 DB를 연동하여 상호운
+용성을 높이고, 연구자들이 수동으로 프로필을 정제할 수 있음. 아울러, 학력, 경력,
+연구비 등 정보도 등록할 수 있음. 하지만, 전체 연구자 수에 비해 커버리지가 매우 낮아
+다양한 통계 분석에서는 충분히 활용되지 않고 있음
+- 이를 포함하여 현재 이용 가능한 연구자 프로파일 데이터의 특징은 표 2-14와 같음
+
+===== PDF_PAGE 87 =====
+- 71 -
+제2장 학술 DB 현황과 연구자 정보
+<표 2-15> 주요 연구자 프로파일 개요
+Researcher
+Profile
+출시
+연도 ID 구조 업데이트
+방식 적용 범위 소유자 개별 수준
+정보 상호운용성
+ORCID ID 2012 영숫자 수동 정제 포괄적 ORCID
+약력, 경력,
+연구비, 지표
+없음
+CrossRef,
+DataCite, 기타 학술
+데이터베이스와
+통합, 내보내기 가능
+Scopus Author
+ID 2006 숫자
+알고리즘
+기반 자동
+업데이트
+Scopus 색인
+기반 Elsevier
+기본 약력,
+소속,
+h-지수, 인용
+ORCID와 제한적
+통합, 내보내기 가능
+Web of
+Science
+Researcher ID
+2008 영숫자 감독된
+자동화
+Web of
+Science 색인
+기반
+Clarivate
+약력, 경력,
+논문,
+h-지수, 인용
+Publons와 통합,
+내보내기 가능
+Dimensions
+Researcher ID 2018 영숫자
+알고리즘
+기반 자동
+업데이트
+Dimensions
+색인 기반
+Digital
+Science
+기본 약력,
+소속, 인용,
+대체 지표
+ORCID와 통합,
+내보내기 가능
+Google Scholar
+Profile 2011 영숫자 감독된
+자동화 포괄적 Google
+약력, 경력,
+연구 관심사,
+h-지수, 인용
+제한적 통합,
+내보내기 가능
+ResearchGate
+ID 2008 영숫자 감독된
+자동화 포괄적 Research
+Gate GmbH
+약력, 경력,
+논문, 연구
+관심사, RG
+점수, 인용
+제한적 통합,
+내보내기 가능
+Academia.edu
+ID 2008 영숫자 수동 정제 포괄적 Academia.
+edu
+약력, 경력,
+논문, 연구
+관심사, 지표
+없음
+제한적 통합,
+내보내기 가능
+CRIS Profiles - 영숫자 수동 및
+감독 정제
+기관
+데이터베이스
+기반
+Institutional
+databases
+약력, 경력,
+연구비, 논문
+약력, 경력, 연구비,
+논문 포함 포괄적
+정보
+○ 연구자 식별의 정확도 혹은 신뢰도와 연구자 프로파일과 학술 DB 연계는 별도의 문제임
+- 한국, 중국 등 일부 국가의 경우 연구자 식별의 정확도가 높지 않기 때문에 현존
+하는 한국, 중국의 연구자 식별 데이터에 기반한 연구 결과에 대한 신뢰도도 낮음
+※ 특히 한국인의 경우, 동명이인이 많고 통용되는 연구자 식별코드가 없음
+- 장기적으로 국내 연구자 정보(연구재단, IRIS)와 글로벌 연구자 식별정보(ORCID 등),
+주요 학술 데이터베이스의 연구자 식별정보(Scopus Author ID, WoS Researcher
+ID, OpenAlex Author)의 연계 필요
+- 연구자 식별의 정확도를 높이기 위한 알고리즘 개발 등에 대한 꾸준한 연구 필요
+
+===== PDF_PAGE 88 =====
+- 72 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+□ 학술 DB 기반 연구자 평가지표
+○ 연구자 프로파일과 이와 연계된 학술논문(혹은 특허) DB를 통해 궁극적으로 이용자의
+수요에 따라 다양한 연구자 평가지표의 개발과 활용이 필요함
+○ 연구자 개인 수준에서 평가지표는 덴마크 Wildgaard 그룹에서 활발히 수행하였는데,
+초기 연구에서는 연구자 개인 평가에 유용한 114개의 지표를 성과(output), 결과
+(outcome), 질(quality), 인프라(research infrastructure), 영향력(impact), 혁신
+및 사회적 이익(Innovation and social benefits), 지속성(Sustainability)으로 구분
+하여 제시하였음35). 아울러 각 지표 계산에 필요한 데이터 수집과 계산의 복잡성을
+1~5점 척도로 제시하였음36)
+<표 2-16> 연구자의 성과량 평가를 위한 서지분석 지표
+성과 지표 해석 복잡성
+자료수집 계산
+P(총 출판물) 공식적 학술교류에서 사용되는 산출물 집계 1 1
+Pisi(ISI에서 다루어지는 출판물) ISI 인용 자료를 토대로 세부 분야의 전체 인용 평균과 비교한 영향력 계산 1 2
+Pts(특정 출처의 출판물) 연구자 소속 기관에서 중요성을 인정한 특정 출처에서 출간된
+출판물의 수 1 2
+공동-출판 부서 간, 기관 간, 국가 간 협력 및 네트워크 확인 1 1
+논문의 비율 집계 공저자 논문은 협력 논문보다 비협력 논문일 때 더 큰 가중치 부여 1 2
+비례 또는 산술 집계 공저자 논문 (1저자에 최고 가중치, 마지막 저자에 최저 가중치
+부여) 1 2
+기하 집계 바이라인(by-line)에 기재된 저자 순위는 각자의 기여도를
+정확하게 반영한다고 가정함 1 2
+조화 집계 1저자는 2저자보다 2배의 점수를, 2저자는 3저자보다 1.5배의
+점수를, 3저자는 4저자보다 1.33배의 점수를 더 얻는 것임 1 2
+노블리스 오블리제 논문이 산출된 연구과제(프로젝트)의 수행에 기여한 저자를 마지막
+저자로 기재하여 그 중요성을 나타냄 1 2
+FA(1저자 집계) 1저자에게만 점수를 부여 1 1
+가중 출판 집계 문서 양식의 차이에 따라 신뢰성 있게 구별 1 1
+35) 이후 Wildgaard(2019)는 저자 수준의 지표를 1) 논문 수 기반 성과지표, 2) 인용 기반 성과 지표, 3) 혼합 성과지표로 구분하고 69개
+지표의 정의, 장점, 단점, 타당성을 분석하여 제시하였음.
+36) 아래 표의 출처는 Larsen et al.(2014)로 KISTI 과학계량연구실(2016)에서 재인용한 것임. 보다 자세한 내용은 Larsen et al.(2014)
+및 KISTI 과학계량연구실(2016)를 참조할 것.
+
+===== PDF_PAGE 89 =====
+- 73 -
+제2장 학술 DB 현황과 연구자 정보
+<표 2-17> 연구자의 성과에 관한 결과 (인용 집계) 평가를 위한 서지분석 지표
+결과 지표 해석 복잡성
+자료수집 계산
+C + sc(총인용, 자기인용 포함) 전체 분석기간 동안의 모든 사용을 표시함 3 1
+C (WOS에서의 인용,
+자기인용 제외)
+분석을 위한 수용 기준. 전체 분석기간 동안의 관련자가
+사용하는 것을 표시함 2 2
+스키마고(Scimago) 총인용(STC) 전체 분석기간 동안의 관련자가 사용한 것을 나타냄 2 1
+C - sc(총인용, 자기인용 제외) 전체 분석기간 동안의 사용을 측정함 3 2
+자기인용 비율 (% SELFCIT) 자기 출판물에 대한 인용 부분 3 2
+논문당 인용
+(CPP: cites per paper) 시간에 따라 인용이 어떻게 변화하는지 보여 줌 3 2
+상위 출판물의 비율 (Ptop:
+percent top publication)
+특정 출판연도에 주제별, 분야별로 출판물이 가장 인용 빈도가
+높은 논문의 상위 20%, 10%, 5%, 1%에 속하는지를 확인 3 3
+분야 상위 % (인용 참조 값) 동일한 시기, 양식, 분야에서 높은 인용 빈도를 기준으로
+n%의 인용 문턱값 위에 있는 출판물의 전세계 점유분 3 3
+상위 출판물 비율 기대치
+(E(Ptop): expected % top
+publications)
+참조값: 연구기관에서 발간한 논문 수에 근거하여 인용
+빈도가 높을 것으로 기대되는 논문 수 3 3
+기대치 대비 실비율
+(A/E(Ptop): ratio actual to
+expected)
+연도, 분야, 문헌양식 관련 전세계적으로 가장 인용
+빈도가 높은 상위 20%, 10%, 5%, 2%, 1% 출판물에 대한
+상대적 기여도
+3 3
+인용 수명(Age of citation) 인용 횟수가 높은 이유가 더 이상 존재하지 않으나 오래 전에
+쓰여졌기 때문인지 아니면 계속 인용되고 있기 때문인지를 확인함 3 1
+주요 논문의 수
+(Number of significant paper) 광범위하고 지속적인 영향력을 미치고 있음을 나타냄 3 1
+연령과 생산성
+(Age and Productivity)
+(Costas, van Leeuwen, &
+Bordons, 2010a)
+생산성과 영향력에 미치는 학자의 연령 효과를 나타냄 2 3
+비인용 비율
+(%Pnc: percent not cited)
+특정 기간 이후에 자기 인용을 제외하고 한 번도 인용되지
+않는 출판물의 점유 부분 3 1
+
+===== PDF_PAGE 90 =====
+- 74 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+<표 2-18> 연구자의 성과에 관한 질 평가를 위한 서지분석 지표
+질 지표 해석 복잡성
+자료수집 계산
+h-인덱스
+(Hirsch, 2005) 누적 업적 3 2
+g-인덱스
+(Egghe, 2006) 과학자 순위 구분 (Egghe, 2006; Harzing, 2008) 3 3
+b-인덱스 (Brown, 2009) h-인덱스에 미치는 자기 인용 효과 및 특정 분야에서 상위
+n%에 속하는 논문이 수록된 출판물에서의 논문 수 확인 3 4
+일반화된 h-인덱스
+hf(Radicchi, Fortunatoa, &
+Castellano, 2008)
+특정 분야의 편차로 인한 개별 논문의 인용율을 교정하여
+동료 연구자에 대한 비교를 가능케 함 3 4
+h-인덱스 서열 및 매트릭스
+(Liang, 2006)
+서로 다른 연구 영역을 대상으로 개별 과학자의 인용
+패턴에서 주요 변이 요인을 선별 3 4
+Hg-인덱스 (Alonso,
+Cabrerizo, Herrera-Viedma,
+& Herrera, 2009b)
+h-지표와 g-지표가 비슷한 연구자들의 비교에서 비교 단위 크기
+(granularity) 확대 3 3
+hα (Eck & Waltman, 2008) 누적 업적, 저명 과학자에 유리 3 4
+Gα (Eck & Waltman, 2008) g-지표와 개념이 동일하나, 수가 적은 논문과 인용의 성과를
+정확하게 측정할 수 있게 함 3 4
+표준화된 h-인덱스
+(Sidiropoulos, Katsaros, &
+Maolopoulos, 2007)
+h-인덱스를 표준화하여 전체 연구 분야에서 과학자들의 업적을
+비교할 수 있게 함 3 3
+H(2) 인덱스
+(Kosmulski, 2006)
+아주 생산적인 논문에 가중치를 부여하며, 이 인덱스에 포함되기
+위해서는 높은 수준의 인용도가 필요함 3 3
+A-인덱스 (Jin, 2006;
+Rousseau, 2006)
+개별 연구자의 히트 논문의 중요도를 기술하는 것으로,
+A-인덱스가 크다는 것은 어떤 논문이 나머지 논문에 비해 인용
+회수가 많다는 것을 의미함 (Schreiber, Malesios, & Psarakis,
+2012)
+3 3
+R-인덱스 (Jin, Liang,
+Rousseau, & Egghe, 2007) 인용 강도(intensity) 및 A-인덱스의 민감도와 차별성 개선 3 3
+인용 가중 h-인덱스 (hw)
+(Egghe & Rousseau, 2008)
+인용을 편중하여 반영한 순위로, h-core 인용의 전체 숫자와
+h-core 내의 인용 분포를 설명함 3 4
+ħ-인덱스 (Miller, 2006) 논문 인용의 전체 구조를 포괄적으로 측정함 3 3
+m-인덱스 (Bornmann, Mutz,
+& Daniel, 2008) h-core에 속해 있는 논문의 영향력 3 2
+π-인덱스 (Vinkler, 2009) 출판물 생산과 과학자의 영향력 3 4
+테이퍼드 h-인덱스(hT:
+Tapered h-index)
+(Anderson, Hankin, &
+Killworth, 2008)
+생산과 영향력 지수로 모든 인용을 고려하나, h-core의 기여도는
+변하지 않음 3 5
+비율 h-지표 hrat 인덱스
+(Rational h-indicators hrat
+index) (Ruane & Tol, 2008)
+h와 h+1의 사이를 보간하여 더 높은 h-인덱스까지의
+거리를 나타냄. h+1은 h-인덱스를 1 단위 증가시키는 데
+필요한 최대 인용량을 말함 (Alonso et al 2009)
+3 5
+
+===== PDF_PAGE 91 =====
+- 75 -
+제2장 학술 DB 현황과 연구자 정보
+<표 2-19> 연구자의 성과에 관한 인프라구조의 평가를 위한 서지분석 지표
+질 지표 해석 복잡성
+자료수집 계산
+비율 g-인덱스 grat (Rational
+g-index grat) (Schrreiber,
+2008a; Tol, 2008)
+더 높은 g-인덱스까지의 거리를 나타냄 3 5
+e-인덱스 (Zhang, 2009) 과잉 인용의 무시로 인한 h-인덱스를 보완함 3 2
+f-인덱스 (Tol, 2009) 인용에 가중치/값을 부여함. 논문의 가장 높은 숫자는 f 또는 평균
+이상의 인용을 받은 것임 3 4
+t-인덱스 (Tol, 2009) 인용에 가중치/값을 부여함. 논문의 가장 높은 숫자는 t 또는 평균
+이상의 인용을 받은 것임 3 4
+Hmx-인덱스
+(Sanderson, 2008) 모든 인용 데이터베이스를 활용하여 학계에서의 순위를 매김 3 2
+w-인덱스 (Wu, 2008) 연구자가 발표한 우수 논문의 종합적 영향력 3 2
+질 및 생산성 인덱스(Index of
+Quality and Productivity)
+(Antonakis & Lalive, 2008)
+질 참조값; 연구자의 논문이 해당 분야에서 평균 이상의
+질이라고 가정했을 때, 그 논문이 받는 전세계적인 인용
+수를 알아보는 것임
+3 3
+x-인덱스 (Claro & Costra,
+2011)
+연구 수준을 나타냄. 생산성이 높은 코어의 양과 질을 보여
+주며, 동료 간 비교를 가능케 함 3 4
+10년당 H (H per decade)
+(Hpd-index) (Kosmulski,
+2009)
+상이한 연령대의 과학자들의 성과물을 비교함. 연공서열에
+독립적인 Hirsch형 인덱스 3 4
+Q2-인덱스 (Cabrerizoa,
+Alonso, Herrera-Viedmac,
+& Herrerac, 2012)
+연구자의 서로 다른 2개의 생산성 차원, 즉 논문의 수와 논문의
+영향력을 결부시키는 것임 3 3
+연구 인프라 지표 해석 복잡성
+자료수집 계산
+공저자의 수 (Number of
+co-authors) 국가 및 국가 간 협력 및 이의 증가를 나타냄 1 1
+동시인용
+(Co-citations) 연구자의 연구 주제 및 영향력을 나타냄 3 1
+인용의 분할 집계 (Fractional
+counting on citations) 공저자에 대한 의존성을 제거하기 위함 (Egghe, 2008) 3 2
+hi-인덱스 (Batista, Camiteli,
+Kinouchi, & Martinez, 2006)
+과학자가 단독으로 연구했다고 가정하고 과학자의 논문
+중 최소한의 h 인용을 갖는 논문의 수를 나타냄 3 3
+POP 변이 개인 H-인덱스 (POP
+variation individual H-index)
+(Harzing, 2008)
+공저자의 효과를 설명함 3 3
+n-인덱스 (Namazi, &
+Fallahzadeh, 2010) 서로 다른 분야에서 연구하는 연구자를 비교 가능케 함 2 2
+Hm-인덱스
+(Schreiber, 2008b) 복수 저자 논문에서 저자들의 효과를 감소시킴 3 4
+
+===== PDF_PAGE 92 =====
+- 76 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+<표 2-20> 연구자의 성과에 관한 영향력 평가를 위한 서지분석 지표
+연구 인프라 지표 해석 복잡성
+자료수집 계산
+대안 H 인덱스 (Alternative H
+index) (Batista et al., 2006)
+연구자가 단독으로 연구했다고 가정하고 전체 연구 기간
+동안에 작성했을 논문의 수를 나타냄 3 2
+순 h-인덱스 (Pure h-index
+(Hp)) (Wan, Hua, &
+Rousseau, 2007)
+공저자의 수로 인한 개별 h-점수를 보정함 3 3
+순 h-인덱스 조정(Adapted
+pure H-index (hap)) (Chai,
+Hua, Rousseau, & Wan, 2008)
+새로운 h-코어를 사용하여 공저자의 수로 인한 개별
+h-점수를 세밀하게 보정함 3 5
+인지적 정향
+(Cognitive orientation)
+과학자의 논문 출판 빈도와 다양한 분야에서 논문의 인용도를
+확인함; 주요 분야와 주변 분야에서의 가시성/활용성을 나타냄 3 1
+가시적 재현 기술 (Visual
+representation techniques)
+서지도식적 자료를 이용하여 연구 분야에서의 출판,
+협력, 인용, 성장, 활성도에 관한 도식적 재현을 산출함 3 1
+영향력 지표 해석
+복잡성
+자료수집 계산
+ISI JIF(SIF)
+동기적 IF
+(Synchronous IF)
+ISI 문서 양식과 주제 분야에 국한되어 특정 저널에
+수록된 하나의 출판물이 받은 평균 인용 수 2 1
+통시적 IF
+(Diachronous IF)
+(Ingwersen, Larsen,
+Rousseau, & Russell, 2001)
+일련의 논문(a set of papers)의 시간에 따른 영향력의 발달을
+나타냄 3 2
+저널 등급에 관한 가중 페이지
+서열 평가 (Weighted PageRank
+rating of journal status) (Bollen,
+Rodriguez, & Van, 2006)
+저널 인용 네트워크 내에서 저널의 상대적 중요성을 나타냄 2 5
+Y 인자 (Y factor) (Bollen,
+Rodriguez, & Van, 2006) 대중성과 권위를 결합한 것으로서의 과학적 영향력 2 2
+스키마고 저널 등급 (Scimago
+Journal Rank (SJR))
+스코푸스(Scopus) 인용 자료를 근거로 하는 논문
+페이지랭크(PageRank) 당 평균값 2 1
+아이겐 인자 (Eigen Factor) 과학 공동체에 부여되는 저널의 총 중요성 2 1
+논문 영향력 점수 (Article
+influence score) (AI) 저널의 논문 인용 영향력 당 평균값을 측정 2 1
+공저자 네트워크 분석
+(Co-authorship network
+analysis) (Yan & Ding,
+2011)
+관련 저자 공동체 내에서의 개별 저자의 영향력 2 5
+표준화된 저널 영향력
+(Normalized journal impact)
+한 저널에 수록된 논문에 대한 모든 표준화된 인용 수치의 평균
+영향력 값 2 2
+
+===== PDF_PAGE 93 =====
+- 77 -
+제2장 학술 DB 현황과 연구자 정보
+영향력 지표 해석
+복잡성
+자료수집 계산
+저널의 분야 영향력 점수 (Journal
+to field impact score) (JFIS)
+(van Leeuwen & Moed, 2002)
+저널의 상대적 중요성을 나타냄 3 2
+분야 영향력 인자 (Discipline
+impact factor) (DIF) (Hirst,
+1978)
+전체 ISI 저널이 아니라 특정 세부 분야의 핵심 문헌에서 한
+저널이 인용되는 횟수 2 3
+중앙값 영향력 인자 (Median
+impact factor) (IF med) 주제 범주(subject category)에 대한 종합적 영향력 인자 2 2
+표준화된 저널 순위 (Normalised
+journal position) (NJP)
+(Bordons & Barrigon, 1992)
+분야 전체에 걸쳐 저널의 명성을 비교함 2 2
+항목 지향적 분야의 표준화된
+인용점수 평균 (Item oriented
+field normalized citation score
+average) (cf) (Lundberg,
+2009)
+항목 지향적 분야의 표준화 된 인용 점수 3 4
+분야 인용 점수 (Field citation
+score) (FCS)
+같은 연도의 특정 분야 내의 모든 저널에서 발행한 동일
+양식의 논문에서 기대되는 인용 수를 나타냄 2 3
+분야 인용 점수 평균 (Field
+Citation Score mean) (FCSm)
+서로 다른 세부 분야에서 영향력을 비교하기 위한
+가중치 평균값 2 3
+JSCS/JRV 저널 인용 점수 (저널
+참조값) 양식과 연령에 따른 출판물의 세계 평균 인용 2 3
+표준화된 저널 인용 점수
+(Normalised Journal Citation
+Score) (JSCm)
+논문 출간 연도와 논문 양식을 고려한 참조 값 2 3
+JCSM/FCSm (Costas,
+Bordons, van Leeuwen, & van
+Raan, 2009)
+세부 분야의 평균 인용 점수로 비교한 개별 연구자를
+대상으로 저널에 근거한 전세계적 일반 영향력 평균 3 2
+크라운 지표 CPP/FCSm
+(Crwon indicator CPP/FCSm)
+동일한 문서 양식, 연령, 세부분 야의 출판물에 대한 세계
+인용 평균을 기준으로 비교한 개인 성과 3 3
+논문 영향력 예측 (Prediction
+of article impact) (Levitt &
+Thelwall, 2011)
+장기간 인용에 관한 예측 변수 2 4
+Ptj (주요 저널에서 발간한 출판물
+publications in selected
+journals)
+분야 또는 기관에 중요한 저널에 수록된 논문의 성과 1 2
+CPP/JCSm 개인의 성과가 저널의 평균 인용율보다 높은지 낮은지를 나타냄 3 2
+JCSm/FCSm (Gaemers, 2007) 저널이 속해 있는 세부 분야와 비교한 저널의 상대적 영향력 수준 2 3
+
+===== PDF_PAGE 94 =====
+- 78 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+<표 2-21> 연구자의 성과에 관한 혁신 및 사회적 이익의 평가를 위한 서지분석 지표
+혁신 및 사회적 이익 지표 해석 복잡성
+자료수집 계산
+지식 교환(knowldege exchange)
+(Mostert, Ellenbroek, Meijer, van A., &
+Klasen, 2010)
+지식생산, 지식 교환, 지식 사용, 역량 획득 1 1
+공공영역에서의 확산
+(Dissemination in public sphere) (Mostert,
+Ellenbroek, Meijer, van A., & Klasen, 2010)
+공공영역에서의 영향력과 사용 (지식 이전) 1 1
+지식 활용(Knowledge use) (Mostert,
+Ellenbroek, Meijer, van A., & Klasen, 2010) 이해 당사자 환경의 학습에 미치는 효과 5 1
+특허 출원 (Patent applications) (Okubu, 1997) 혁신 1 1
+특허 인용 (Citations in patents) (Okubu, 1997) 새로운 혁신의 사용과 이에 미치는 영향력 5 1
+과학적 근접성 (Scientific proximity) (Okubu, 1997) 산업 기술적 활동의 강도 5 2
+활용 로그 데이터 (Usage log data) (Bollen,
+Biet-Arie, & Van de Sompel, 2006) 이해 또는 선호를 나타내는 사용자의 활동 5 3
+사회적 적합성 측정 수단 (Tool to measure
+societal relevance) (Niederkrotenthaler,
+Dorner, & Maier, 2011)
+출판 효과의 수준을 높이거나 출판의 원래
+목적의 수준을 높이는 것을 의도함 1 1
+<표 2-22> 연구자의 성과에 관한 지속성 평가를 위한 서지분석 지표
+영향력 지표 해석
+복잡성
+자료수집 계산
+C/FCSm (van Leeuwen,
+Visser, Moed, Nederhof, &
+Raan, 2003)
+한 개의 논문(또는 여러 개의 논문)의 영향력 점수를
+연구자가 발표한 분야의 일반 평균값에 적용하는 것임 3 2
+대수 기반 인용 z-점수
+(Logarithm based citation
+z-score) (Lundberg, 2009)
+서로 다른 분야에서의 인용율 변화도 및 항목 수준에서 출판물의
+편향된 인용 분포를 고려하는 것임 3 5
+활용 영향력 인자 (Usage Impact
+Factor) (UIF) (Bollen &
+Sompel van de, 2008)
+저널에 발표된 논문에 대한 부분적 평균 활용율 4 5
+지속성 지표 해석 복잡성
+자료수집 계산
+인용 수명 (Citation age c(t)) (Egghe
+& Rousseau, 2000) 연구자의 업적에 관한 인용 수명 3 3
+노화 속도 (Aging rate a(t)) (Egghe &
+Rousseau, 2000) 출판물의 노화 속도 3 4
+현 h-인덱스 (Contemporary h-index hc)
+(Sidiropoulos, Katsaros, & Manolopoulos, 2007) h-코어에 속해 있는 논문의 통용 3 4
+
+===== PDF_PAGE 95 =====
+- 79 -
+제2장 학술 DB 현황과 연구자 정보
+○ Larsen et al.(2014)는 보고서에 제시한 114개의 지표 중에서 30개는 비록 탁월한 측정
+지표라 할지라도 계산에 특별한 소프트웨어가 필요하거나 제한된 자료에 접근해야
+하거나 계산량이 대단히 많음(복잡성 점수가 4점 이상). 따라서 이들 지표는 개별 연구
+자가 자기 평가하는데 유용하지 않다고 판단하고, 나머지 84개 지표는 복잡성 점수가
+3점 이하로 개별 연구자에게 유용하다고 판단함(KISTI 과학계량연구실, 2016)
+- 그러나 21개의 영향력 지표 중에서 20개는 원래 저널이나 그룹의 영향력을 측정하려
+고안된 것임. 개인이라는 미시 수준의 성과를 평가하는데 유용한지에 관해서는 후속
+연구가 필요함
+- 질과 연구 인프라 범주 중 17개의 지표는 h-의존적이며 따라서 h가 갖는 한계를 그대로
+갖고 있음
+지속성 지표 해석 복잡성
+자료수집 계산
+경향 H 인덱스 (Trend H index ht)
+(Sidiropoulos, Katsaros, &
+Manolopoulos, 2007)
+논문 및 인용의 수명 3 4
+동적 H-타입 인덱스 (Dynamic H-type
+index) (Rousseau & Ye, 2008)
+h-코어의 크기와 내용, 획득 인용 수,
+h-속도(velocity)를 나타냄 3 4
+M-지수 (M-quotient) (Hirsch, 2005) H 타입 인덱스로, 과학자의 경력 기간을 설명함 3 2
+AR-인덱스 (AR-index) (Jin, Liang,
+Rousseau, & Egghe, 2007) 코어 내의 인용 강도와 출판물 수명을 설명함 3 2
+할인 누적 영향력 (Discounted Cumulated
+Impact) (DCI) (Ahlgrena & Järvelin,
+2010, Järvelin & Person, 2008)
+완만하고 매개변수화 방식으로 오래된 인용은 평가
+절하하고, 출판물의 통용을 보여 주기 위해 인용
+출판물에 인용 가중치를 부여하여 인용을 고려하는 것임
+3 5
+프라이스 인덱스 (Price index - PI)
+(Price, 1970)
+인용 출처의 발행 시기에서 5년이 되지 않은
+문서에 대한 % 참조값 3 2
+즉시 지수 (Immedicacy index) 저널에 수록된 평균적 논문이 발간되는 해당 연도에
+인용되는 속도 2 2
+총합 즉시 지수 (Aggregate Immedicacy
+Index) (AII)
+어떤 주제에 속해 있는 논문이 얼마나 빨리
+인용되는가를 나타냄 2 2
+인용반감기 및 총합 인용반감기 (Cited
+half-life (CHL) & Aggregate Cited
+Half-Life (ACHL))
+한 저널에 있는 인용된 논문의 수명에 관한 기준을
+나타냄 2 2
+내구성 분류화 (Classification of
+durability) (Costas, van Leeuwen, &
+Bordons, 2010; 2010b; 2011)
+서로 다른 분야에서 시간에 따라 인용 분포에 관한
+문헌의 내구성 2 3
+수명 가중 인용율 (Age-weighted citation
+rate (AWCR, AW & per-author AWCR)
+(Hazing, 2012)
+개별 논문의 수명을 감안하여 전체 연구 업적에
+대한 인용 횟수를 측정함 2 3
+
+===== PDF_PAGE 96 =====
+- 80 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+- 45개의 지표는 순전히 이론적인 것이며 실제 평가에서는 쓰이지 않아서 개인의 성과에
+미치는 지표의 효과는 불분명함
+- 또한 지표 도출 모델의 복잡성과 자료 수집의 어려움 때문에 22개만이 연구자가 자기
+평가하는데 유용한 것으로 판단하였음
+- 22개는 연령과 생산성(Age and Productivity) (결과 범주), hg, 표준화된 h, h2, A, R,
+ћ, m, e, hmx, w, 질 및 생산성 인덱스(Index of Quality and Productivity), Q2
+(질 범주), hi, n, 대안적 h, 순수 h (연구 인프라구조 범주), 사회적 적합성 측정 수단
+(혁신 및 사회적 이익 범주), m-지수, AR-인덱스, 현 h-인덱스, AWCR 파생형 (지속성
+범주)임
+○ 향후 글로벌 연구자 DB 구축을 위해서는 Larsen et al.(2014) 이외에도 최근에 개발
+되고 활용되는 다양한 연구자 수준의 평가지표에 대한 면밀한 검토를 통해, 첫째, 연구
+자 DB의 사용 목적을 충분히 반영하고, 둘째, 사용 목적에 부합되는 글로벌 학술 DB와
+연계를 통해, 셋째, 연구자 DB의 업데이트 주기와 결합하여 지속 가능한 평가지표를 선정
+하여 서비스해야 할 것임
+
+===== PDF_PAGE 97 =====
+연구 인력 DB
+체계화와
+연구자 단위 지표 활용
+제3장
+제1절 연구 인력 DB 체계화
+제2절 연구자 단위 지표 활용
+
+===== PDF_PAGE 98 =====
+
+
+===== PDF_PAGE 99 =====
+- 83 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+제1절 연구 인력 DB 체계화
+□ 연구 인력 DB 체계화에서 고려할 사항
+○ 연구자 정보
+- 제공할 연구자 정보의 범위(연구 분야, h-index, 총 피인용 수, 협력네트워크 등)
+* 융복합 연구를 수행할 시 해당 연구자의 주 연구 분야를 결정 방안 고려
+- 기존에 식별된 데이터 활용이 적합
+※ 연구자 식별의 정확도 혹은 신뢰도의 문제는 별도의 문제로 꾸준한 개선 연구 필요
+○ 연구 분야
+- 연구 분야 선정 기준 설정 시 논문 수를 고려하고 연구자의 주요 연구 분야를 어떻게
+정의할지 고려 필요
+※ 연구 분야를 너무 세부적인 것으로 설정하면 논문 수가 급격하게 줄어드는 문제가 발생할 수 있고
+융복합 연구를 수행할 시 해당 연구자의 주 연구 분야를 결정이 어려움
+- 최근 융복합 연구가 증가하는 추세에 따라 하나의 연구가 중복으로 기록되거나, 연구
+분야가 누락 될 가능성이 존재
+※ 특정 연구자가 융복합 연구를 수행할 경우, 어떤 분야와 자주 협업을 하였는지에 대한 통계 자료 제공
+※ (연구 복합도 항목) 해당 연구자가 단일 분야에 대한 연구를 선호하는지 연구자인지, 융복합연구를 선호
+하는지에 대한 평가 항목 제공(융복합 연구에 대한 선호도가 높다는 것은, 연구 협력으로 이어질 가능성이
+있다는 것을 의미할 수 있음)
+○ 공동연구자
+- 연구자의 협력 정도*, 매칭 서비스** 등 연구자 네트워크
+* 협력 연구 빈도, 공저자 수 등의 항목을 통해 저자의 협력 정도를 평가한 지표 제공
+** 최근 학술 DB 사이트의 경우, 특정 분야의 연구 트렌드에 대한 정보도 함께 제공(해당 트렌드의 우수
+연구자 목록화 및 이를 통한 연구자 매칭 서비스 제공)
+
+===== PDF_PAGE 100 =====
+- 84 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ 부가 서비스 제공
+- 최신 연구 알림*, 자금 지원 알림**, 세미나 및 학회 알림***
+ * 특정 분야에 대한 연구 트렌드 분석 및 해당 트렌드 관련 최신 연구 알림 서비스 제공. 혹은 관심 있는
+우수연구자가 새롭게 연구를 발표할 경우, 이에 대한 알림 제공.
+ ** 연구자들에게 연구 자금을 지원받을 수 있는 기회에 대한 알림 제공. 이를 통해 연구 환경 개선 및 활성화
+*** 연구자가 참여할 수 있는 세미나나 학회 추천, 알림을 제공. 혹은 해당 학회 및 세미나에서 발표된 유력
+연구에 대한 요약 서비스 제공
+○ 데이터양과 비용 문제
+- 전체 데이터에 대한 분석에서 최소 논문 수(예: 2편 이하)를 작성한 연구자 제외
+※ 현재 학계에 없는 연구자를 제외할 필요가 있고, 다만 소수의 권위 있는 논문이 있는 연구자가 있을 수
+있어 피인용 횟수로 모니터링 필요(업데이트도 고려 필요)
+□ 연구자 정보 모델 기획
+○ 연구자 DB의 주요 정보와 정보 관계 등 정의
+- 연구자 엔티티(Entity) 표준화: 연구자 고유 식별번호에 따른 국문/현지/영문 이름, 출생
+연도, 학력 및 졸업 연도, 연도별 소속 기관 및 국가, 논문 및 특허 연계 정보 등
+※ 연구자 고유 식별번호의 ISNI(International Standard Name Identifier), ORCID, Web of Science
+ResearchID, Scoups Author ID, OpenAlex Authors 등과 연계 여부 고려
+※ (예) 국내 연구자의 경우 NTIS 정보와 연계 여부 고려
+※ (예) 소속 기관 등 개별 속성에 대한 표준화가 필요한 경우, ROR(Research Organization Registry)37)
+등과 연계 여부 고려
+○ 연구자 단위의 지표 정의
+- 개별 논문 및 특허에서 계산된 결과값을 활용하여 연구자 단위에서 수요자 니즈에
+적합한 지표 및 계산 정의
+※ 논문 수, 피인용 횟수, 상위 1%, 5%, 10% 논문 비율, 저자 역할, 국제협력 논문 비율 등
+- 지표 이외에도 연구자 단위에서 제공되어야 하는 정보 정의
+※ 공저자, 공동연구기관, 주요 수상 실적 등
+○ 연구자 데이터와 논문 및 특허 DB 연계
+- 연구자의 전문성 등을 판단하기 위한 지표(혹은 통계) 개발에 적합한 연계 논문 및 특허
+DB 선정
+- 선정된 논문 및 특허 DB 내에서 개별 문헌별 지표(혹은 통계) 계산
+37) https://ror.org/
+
+===== PDF_PAGE 101 =====
+- 85 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+- 전체 서지정보에 대한 개별 논문 단위 지표(혹은 통계)값 계산 필요
+- 개별 연구자별 논문․특허․(펀딩) 문헌 연계 및 DB화
+- 기존 식별자를 활용하여 논문․특허․(펀딩) 문헌 연계할 경우 정확도 낮을 것으로 예상
+※ 별도로 연구자-문헌 매칭 알고리즘 개발 및 매칭 정확도 개선 필요
+□ 사이트별 구성 정보와 표준화
+○ Web of Science 외 9개 사이트의 구성 인력 정보와 출판 정보를 검토하고, 연구 인력
+DB 메타(논리적 변수)를 도출
+- 사이트 별 구성 정보에서 정리한 각 항목을 연구자 DB 메타정보(논리적 변수)로 정의
+하고 9개 사이트에서 과반 수 이상 사용하는 변수를 선별(표준화)
+※ 연구자 DB 메타정보의 정의를 1단계에서서 공통적인 변수(저자 구분, 연구자 기본 정보, 소속기관, 연구 분야,
+연구자 이력 정보, 출판 정보, 인용 정보 등)를 우선적으로 식별하고 향후 변수를 늘려 표준화 범위 확대 가능
+구분 세부 구분 Web of
+Science
+Google
+Scholar Scopus Lens Dimen
+sions
+Open
+Alex KCI Science
+ON IRIS aminer 사용
+여부
+연구자
+기본정보
+연구자ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+이름 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+홈페이지 　 ○ 　 　 　 　 　 　 　 ○ 미사용
+이메일 　 ○ 　 　 　 　 　 　 ○ 　 미사용
+학위 　 　 　 　 　 　 ○ 　 　 　 미사용
+성별 　 　 　 　 　 　 　 　 　 　 사용
+연령 　 　 　 　 　 　 　 　 　 　 사용
+국가ID 　 　 　 　 　 　 　 　 　 　 사용
+소속기관
+(대학,
+연구기관)
+기관 ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+기관구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+기관 명 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+기관주소 　 　 　 　 　 　 　 　 ○ 　 미사용
+기관
+홈페이지 　 　 　 　 　 　 　 　 ○ 　 미사용
+연구자
+이력정보
+연구자ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+이력구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+이력일련
+번호 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+소속ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+수상ID ○ 　 　 　 　 　 　 　 　 ○ 미사용
+연구분야
+ID ○ ○ ○ ○ ○ ○ ○ ○ ○ 　 사용
+진행여부 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+<표 3-1> 연구 인력 DB 논리적 변수 선정
+
+===== PDF_PAGE 102 =====
+- 86 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+구분 세부 구분 Web of
+Science
+Google
+Scholar Scopus Lens Dimen
+sions
+Open
+Alex KCI Science
+ON IRIS aminer 사용
+여부
+연구분야
+분야 ID ○ ○ ○ ○ ○ ○ ○ ○ ○ 　 사용
+상위 분야
+ID ○ ○ ○ ○ ○ ○ ○ ○ ○ 　 사용
+분야 명 ○ ○ ○ ○ ○ ○ ○ ○ ○ 　 사용
+분야설명 ○ ○ ○ ○ ○ ○ ○ ○ ○ 　 사용
+수상정보
+수상 ID ○ 　 　 　 　 　 　 　 　 ○ 미사용
+국가 ID ○ 　 　 　 　 　 　 　 　 ○ 미사용
+수상처 ○ 　 　 　 　 　 　 　 　 ○ 미사용
+수상명 ○ 　 　 　 　 　 　 　 　 ○ 미사용
+국가정보 국가ID ○ 　 　 　 　 　 　 　 　 ○ 사용
+국가명 ○ 　 　 　 　 　 　 　 　 ○ 사용
+출판정보
+자료번호 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료명 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+초록 ○ 　 　 　 　 ○ 　 　 　 ○ 미사용
+출처유형 　 　 ○ 　 　 　 　 　 　 　 미사용
+인용수 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+발행연도 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+발행일자 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+저널등급 　 　 ○ 　 　 　 　 　 　 　 미사용
+핵심단어 　 　 　 　 　 　 　 　 　 ○ 미사용
+저자구분
+저자구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료번호 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+연구자ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+특허정보
+특허구분
+코드 　 　 　 ○ 　 　 　 　 　 　 미사용
+자료번호 　 　 　 ○ 　 　 　 　 　 　 미사용
+자료구분 　 　 　 ○ 　 　 　 　 　 　 미사용
+인용정보
+자료번호 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+인용순번 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+인용
+자료명 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+
+===== PDF_PAGE 103 =====
+- 87 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+○ 저자 구분, 연구자 기본 정보, 소속기관, 연구 분야, 연구자 이력 정보, 출판 정보, 인용
+정보 등을 기반으로 DB 테이블 설계 및 DB 테이블에 대한 개체-관계(Entity Relation)
+모델 설계
+- (연구자 대입) 선별한 변수의 특성을 고려하여, DB 테이블을 설계하고 해당 테이블에
+우수 연구자(김빛내리 박사) 데이터를 대입하여, 정보 구성 및 실증
+- (DB 테이블 구성) 저자 구분, 연구자 기본 정보, 소속기관, 연구 분야, 연구자 이력 정보,
+출판 정보, 인용 정보에 대한 DB 테이블로 구성되며, 향후 유연한 구조를 보장할 수
+있는 모델 설계(그림 3-1 참조)
+저자구분 연구자 기본정보 소속기관(대학, 연구기관) 연구분야
+※ 출판물별 가장 상위에 있는 연구자 '김빛내리' ※ 김빛내리 : 기본 연구자명 ※ 김빛내리 박사의 소속기관 목록만 작성 ※ 김빛내리 박사의 연구분야 작성
+※ 저자를 연구자ID로 작성해야 해서, 연구자 기본정보에 연구자 목록 추가 ※ 그 외 연구자 : 김빛내리 박사 이외의 저자 목록
+저자구분 자료번호 자료구분 연구자ID 연구자ID 이름 기관 ID 기관 구분 기관 명 분야 ID 상위 분야 ID 분야 명 분야 설명
+제1저자 DT00000001 저널 RS00000001 RS00000001 김빛내리 IN00000001 연구기관 한국생명공학연구원 RF00000001 MicroRNA in disease regulation
+제1저자 DT00000001 저널 RS00000002 RS00000002 Sunyoung Kim IN00000002 연구기관 한국과학기술원 RF00000002 RNA Research and Splicing
+제2저자 DT00000001 저널 RS00000003 RS00000003 Yoontae Lee IN00000003 대학 뒤스부르크-에센대학교 RF00000003 RNA modifications and cancer
+제2저자 DT00000001 저널 RS00000004 RS00000004 Chiyoung Ahn IN00000004 연구기관 기초과학연구원 RF00000004 RNA Interference and Gene Delivery
+제2저자 DT00000001 저널 RS00000005 RS00000005 Jinju Han IN00000005 대학 서울대학교
+제2저자 DT00000001 저널 RS00000006 RS00000006 Hyounjeong Choi
+제2저자 DT00000001 저널 RS00000007 RS00000007 Jaekwang Kim
+제2저자 DT00000001 저널 RS00000008 RS00000008 Jeongbin Yim
+제2저자 DT00000001 저널 RS00000009 RS00000009 Junho Lee
+제2저자 DT00000001 저널 RS00000010 RS00000010 Patrick Provost
+제2저자 DT00000001 저널 RS00000011 RS00000011 Olof Rådmark
+제1저자 DT00000002 저널 RS00000001 RS00000012 Kyu-Hyeon Yeom
+제2저자 DT00000002 저널 RS00000005 RS00000013 Jin‐Wu Nam
+제2저자 DT00000002 저널 RS00000003 RS00000014 Inha Heo
+제2저자 DT00000002 저널 RS00000012 RS00000015 Je‐Keun Rhee
+제2저자 DT00000002 저널 RS00000013 RS00000016 Sun Young Sohn
+제2저자 DT00000002 저널 RS00000014 RS00000017 Yunje Cho
+제2저자 DT00000002 저널 RS00000015 RS00000018 Byoung-Tak Zhang
+제2저자 DT00000002 저널 RS00000016 RS00000019 Gideon Dreyfuss
+제2저자 DT00000002 저널 RS00000017 RS00000020 Naoyuki Kataoka
+제2저자 DT00000002 저널 RS00000018 RS00000021 Minju Ha
+제1저자 DT00000003 리뷰 RS00000001 RS00000022 Soochul Shin
+제2저자 DT00000003 리뷰 RS00000019 RS00000023 Yoonseok Jung
+제2저자 DT00000003 리뷰 RS00000020 RS00000024 Heesoo Uhm
+제1저자 DT00000004 리뷰 RS00000001 RS00000025 Minseok Song
+제2저자 DT00000004 리뷰 RS00000021 RS00000026 Soomin Son
+제1저자 DT00000005 저널 RS00000001 RS00000027 Jiyoung Goo
+제2저자 DT00000005 저널 RS00000021 RS00000028 Cherlhyun Jeong
+제2저자 DT00000005 저널 RS00000022 RS00000029 Ji‐Joon Song
+제2저자 DT00000005 저널 RS00000023 RS00000030 Sungchul Hohng
+제2저자 DT00000005 저널 RS00000024
+제2저자 DT00000005 저널 RS00000025 연구자 이력정보
+제2저자 DT00000005 저널 RS00000026 ※ 김빛내리 박사의 과거 소속기관 이력과 연관된 연구분야 목록 작성
+제2저자 DT00000005 저널 RS00000027 연구자ID 이력구분 이력일련번호 소속ID 진행여부
+제2저자 DT00000005 저널 RS00000028 RS00000001 소속이력 1 IN00000001 N
+제2저자 DT00000005 저널 RS00000029 RS00000001 소속이력 2 IN00000002 N
+제2저자 DT00000005 저널 RS00000030 RS00000001 소속이력 3 IN00000003 N
+RS00000001 소속이력 4 IN00000004 N
+RS00000001 소속이력 5 IN00000005 Y
+RS00000001 연구분야 1 RF00000001 Y
+RS00000001 연구분야 2 RF00000002 Y
+RS00000001 연구분야 3 RF00000003 Y
+RS00000001 연구분야 4 RF00000004 Y
+RS00000001 연구분야 5 RF00000005 Y
+출판정보 인용정보
+※ 김빛내리 박사의 출판물 목록 작성 ※ 김빛내리 박사의 출판물에서 인용한 참고 문헌 목록(출판물별 5건씩 예시 작성)
+자료번호 자료구분 자료명 인용수 발행연도 발행일자 자료번호 자료구분 자료명
+DT00000001 저널 The nuclear RNase III Drosha initiates microRNA processing4,339 2003 2003-09-01 DT00000001 저널 V. The C. elegans heterochronic gene lin-4 encodes small RNAs with antisense complementarity to lin-14. Cell 75, 843–854
+DT00000002 저널 Molecular Basis for the Recognition of Primary microRNAs by the Drosha-DGCR8 Complex1,525 2006 2006-06-01 DT00000001 저널 The 21-nucleotide let-7 RNA regulates developmental timing in Caenorhabditis elegans. Nature 403, 901–906
+DT00000003 리뷰 Messenger-RNA-binding proteins and the messages they carry1,419 2002 2002-03-01 DT00000001 저널 T. Identification of novel genes coding for small expressed RNAs. Science 294, 853–858
+DT00000004 리뷰 Regulation of microRNA biogenesis5,008 2014 2014-07-16 DT00000001 저널 D. P. An abundant class of tiny RNAs with probable regulatory roles in Caenorhabditis elegans. Science 294, 858–862
+DT00000005 저널 Quantification of purified endogenous miRNAs with high sensitivity and specificity93 2020 2020-11-27 DT00000001 저널 V. An extensive class of small RNAs in Caenorhabditis elegans. Science 294, 862–864
+DT00000001 저널 Z. et al. miRNPs: a novel class of ribonucleoproteins containing numerous microRNAs. Genes Dev. 16, 720–728
+DT00000002 저널 MicroRNAs: genomics, biogenesis, mechanism, and function
+DT00000002 저널 Human let-7 stem-loop precursors harbor features of RNase III cleavage products
+DT00000002 저널 Crystallographic and modeling studies of RNase III suggest a mechanism for double-stranded RNA cleavage
+DT00000002 저널 Exportin 5 is a RanGTP-dependent dsRNA-binding protein that mediates nuclear export of pre-miRNAs
+DT00000002 저널 Human microRNAs are processed from capped, polyadenylated transcripts that can also function as mRNAs
+DT00000003 리뷰 C. G. hnRNP proteins and the biogenesis of mRNA. Annu. Rev. Biochem. 62, 289?321
+DT00000003 리뷰 M. S. hnRNP complexes: composition, structure, and function. Curr. Opin. Cell Biol. 11, 363?371
+DT00000003 리뷰 M. F. The double lives of shuttling mRNA binding proteins. Cell 102, 135?138
+DT00000003 리뷰 G. Cell type-specific expression of hnRNP proteins. Exp. Cell Res. 221, 187?196
+DT00000003 리뷰 A. R. Regulated tissue-specific expression of antagonistic pre-mRNA splicing factors. RNA 4, 430?444
+[그림 3-1] 연구 인력 DB 테이블
+
+===== PDF_PAGE 104 =====
+- 88 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ 선별한 변수를 기반으로 DB 테이블에 대한 개체-관계 모델을 설계(그림 3-2 참조)하여
+연구자 기본 정보에 대한 연계 정보의 관계를 제시함(이를 통해 통계 시각화 가능)
+- 제한된 연구 인력 DB 메타정보로 연구자 기본 정보에 대한 연계 정보의 시각화에
+한계가 있어 4장에서 타 학술 DB 사례를 참고하여 연구 인력 DB 검색 시스템을 통해
+예시하고자 함
+- 또한 연구 인력 DB 체계화와 더불어 연구 인력 DB 활용 시 기본이 되는 연구자 단위의
+주요 지표에 대한 활용을 다음 2절에서 기술하고자 함
+[그림 3-2] 연구 인력 DB 개체-관계 다이어그램(ERD)
+
+===== PDF_PAGE 105 =====
+- 89 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+제2절 연구자 단위 지표 활용
+□ 연구자 단위 주요 지표
+※ 주요 지표는 Open Alex 데이터를 활용해서 김빛내리(V.Narry Kim/Viktoria Kim) 교수의 관련 연구 분야
+에서 협력 연구자 후보를 검토하는 상황을 가정
+※ 대표적으로 Open Alex에서 확인되는 관련분야 상위 인용 연구자 중에서 Zefang Tang과 Adam
+Frankish의 지표를 비교하는 상황 위주로 제시함
+○ 연구자 인용지수 산출 시 고려 사항
+- 연구자 인용지수는 개별 연구자의 학술적 영향력과 연구 성과를 정량적으로 평가
+하는 도구로 개별 연구자의 연구 성과를 평가하는 양적 지표로는 오랫동안 논문 수와
+총 인용 빈도, 평균 인용 빈도 등과 같은 단순 지표만이 사용됨.
+- h-지수(Hirsch, 2005)가 발표된 이후 h-지수와 그 변형 지수들이 급속히 확산
+되었으며 연구자 인용지수 산출에 있어서 주로 고려하는 요소는 연구의 양, 연구의
+질, 연구 활동 기간, 학문 분야별 특성, 저자기여도, 자기 인용 등이 존재함
+○ 연구자 인용지수 산출에서 가장 기본적으로 고려되는 요소는 연구자가 발표한 논문 수임
+- 논문 발표 편수는 연구자의 연구 생산성을 나타내는 직접적인 지표로서, 얼마나 활발
+하게 연구 활동을 수행했는가를 보여 줌
+- 하지만 논문 수로는 연구의 질적 수준을 파악하기 어렵기 때문에 연구 생산성을 나타
+내는 지표로만 논문 수를 사용
+- 물론 평균 인용 빈도, h-지수 등의 다른 에서는 논문 수를 평균 지수를 산출하는 과정
+에서 반영하거나, 인용 빈도와 함께 복합적으로 반영
+○ 연구의 질은 주로 피인용 횟수를 통해 측정
+- 연구자가 발표한 논문들이 후속 연구에서 얼마나 자주 인용되는지는 해당 연구의
+학술적 영향력과 중요성을 반영
+- 특히 높은 인용을 받는 논문의 존재는 연구자의 학문적 기여도를 보여 주는 중요한 지표
+- 일부 지수에서는 고인용 논문 위주로 지수값을 산출하여 연구의 질적 우수성을 강조
+하기도 함
+
+===== PDF_PAGE 106 =====
+- 90 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ 연구자의 연구 경력 기간은 인용지수 해석에서 매우 중요한 요소
+- 연구 활동을 시작한 지 오래된 연구자는 축적된 논문이 많고 인용 받을 시간적 여유가
+있어 상대적으로 높은 지수를 획득할 수 있는 반면에 신진 연구자가 발표한 논문들은
+인용 받을 기회가 충분하지 않아서 낮은 인용지수에 머무는 경우가 흔함
+- 일부 연구자 인용지수에서는 이런 편향을 보정하기 위해 연구 활동 연수를 지표 산출
+과정에 반영하거나, 일정 기간 동안의 발표 논문만 고려하는 방법을 채택하기도 함
+○ 학문 분야에 따라 인용 관행과 연구 패턴이 현저히 다르다는 점도 중요한 고려사항
+- 의학이나 공학 분야는 일반적으로 높은 인용 빈도를 보이지만 수학이나 인문학 분야는
+상대적으로 인용 빈도가 낮고 심지어는 같은 학문 분야 내에서도 세부 연구 분야에
+따라 인용 수준이 큰 차이를 보이는 경우도 있음
+- 또한 분야별로 논문 발표 주기, 참고문헌 수, 연구자 간 협력 패턴이 다르기 때문에 서로
+다른 분야 연구자의 인용지수를 직접 비교하는 것은 부적절함
+○ 현대에는 모든 학문 분야에서 공동연구와 복수저자 논문이 증가하고 있어 공저자 수와
+저자기여도 고려 필요
+- 1980년부터 2016년까지 Web of Science 주요 분야의 논문 당 저자 수 평균 변화를
+조사한 연구(nature index, 2018)에 따르면, 재료과학 분야가 1.97명에서 5.15명
+으로 증가, 경제학 분야가 1.29명에서 3.02명으로 증가하는 등 모든 분야에서 논문 당
+저자 수가 크게 증가한 것으로 나타남
+- 이처럼 공저자가 많은 논문이 일반적이므로, 단독으로 저술한 논문과 공저자가 많은
+논문의 영향력을 공정하게 비교하는 것이 필요
+- 제1저자, 교신저자, 공저자의 역할과 기여도가 다름에도 불구하고 많은 인용지수들은
+이를 구분하지 않고 동일하게 계산하여 이러한 한계를 보완하기 위해 저자 순서나
+기여도를 고려한 수정된 지표들이 제안되고 있지만 아직까지는 공저를 고려하지 않은
+인용지수가 주로 사용
+- 반면에 연구 성과의 양적인 측면만을 반영하는 지표 산출 과정에는 공저자 수나 제1
+저자 여부 등이 흔히 고려되고 있고, 한편 h-지수와 같은 연구자 인용지수에서도
+공저자 수를 고려한 hc-지수 등이 제안
+○ 연구자가 자신의 이전 연구를 인용하는 자기인용(self-citation) 문제도 고려해야 할 요소
+- 적절한 수준의 자기인용은 연구의 연속성을 보여 주는 긍정적 측면이 있지만, 과도한
+자기인용은 인용지수를 인위적으로 부풀린다는 오해를 받을 수 있음
+
+===== PDF_PAGE 107 =====
+- 91 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+- 따라서 일부 데이터베이스에서는 자기인용을 제외한 인용지수를 별도로 제공하기도 함
+□ 연구자 인용지수 사례
+○ 발표한 연구 성과의 건수는 연구 생산성을 반영하는 지표
+- 분석 대상 연구자 후보군을 선정하려고 할 때, 최소 기준에도 못 미치는 연구자를
+제외하는 용도로는 유용하게 활용할 수 있음
+- 그러나 어느 수준 이상이 되면 논문 수 차이를 성과의 차이로 해석하는 것은 적절하지
+않음
+○ 발표한 논문의 인용 빈도 합계(총 인용 빈도)는 연구자의 전체 연구 성과가 가진 영향력을
+나타내는 지표
+- 간단하게 산출할 수 있기에 흔히 활용되는 지표
+- 하지만 연구의 양, 주제 분야나 출판 후 경과 시간에 크게 좌우되며, 연구자가 대형
+연구팀에 속해서 공동연구자가 많을수록 더 높은 값이 산출될 수 있으므로 순수한
+질적 성과지표로 보기는 어려움
+○ 총 인용 빈도를 총 논문 수로 나눈 값인 논문당 인용 빈도는 연구 성과의 질적 수준을
+나타내는 대표적인 지표
+- 발표한 논문 수 대비 영향력을 파악할 수 있지만 소위 빅히트 논문, 즉 예외적으로
+많이 인용된 일부 논문에 의해 평균이 부풀려질 수 있다는 단점이 있음
+- 또한 주제 분야나 출판 후 경과 시간에 심하게 좌우되며, 리뷰 논문 등과 같은 유형의
+논문을 발표한 연구자에게 유리할 수도 있으므로 유의해야 함
+○ 문헌 유형(연구 논문, 리뷰 등)과 주제 분야, 출판 후 경과 시간 등을 고려하여 발행 시기에
+따른 차이와 연구 분야별 차이를 보정하기 위해서 논문의 인용 빈도를 해당 분야의 동일
+연도 평균 인용 횟수로 나누는 방식을 Mean Normalized Citation Score(MNCS)을 활용
+- 흔히 연도만 아니라 논문 유형(학술지 연구 논문, 학술지 리뷰 논문, 학술대회 논문
+등)도 동일 유형으로 정규화 산출 범위를 제한하기도 함
+- 연구자 평가를 위해 MNCS 지수를 산출할 때는 먼저 각 논문에 대해 정규화된 인용
+점수를 계산한 다음, 이의 평균값으로 질적 성과를 나타내며, 연구자의 MNCS 값이
+1이면 해당 연구자의 논문들이 평균적인 수준만큼 인용된 것을 의미하며, 2이면 평균
+대비 두 배 많이 인용된 것을 의미
+
+===== PDF_PAGE 108 =====
+- 92 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+- MNCS에 해당하는 실제 정규화된 인용 지표로 Web of Science의 CNCI(Category
+Normalized Citation Impact)와 Scopus의 FWCI(Field Weighted Citation
+Indicator)가 있으며 이들은 논문 단위의 정규화 지표로서, 연구자를 평가할 경우에
+는 발표한 논문들의 CNCI나 FWCI의 평균을 지표로 사용하면 됨
+- MNCS 평균으로 연구자의 질적 성과를 비교하면 분야 간 차이나 연구 활동기간의
+차이, 연구 생산성의 차이를 극복할 수 있다는 장점이 있으나 논문의 인용 횟수는
+빈익빈 부익부 현상을 보이므로 타 분야에 비해서 학술지 종수가 많고 논문이 많이
+발표되는 분야의 최상위 논문은 평균 MNCS도 일부 과대 평가될 위험이 있음
+- 어떤 분야에서는 평균보다 10배 이상 인용되는 논문이 드물지만, 다른 분야에서는
+흔할 수도 있는 것으로 논문당 인용 빈도와 마찬가지로 빅히트 논문 한두 편에 의해서
+연구자의 평균 MNCS도 부풀려질 수 있는 것에 유의해야 함
+○ 퍼센타일(percentile)은 특정 논문 집합(주로 동일 연도 동일 분야 논문)의 논문들
+중에서 인용 빈도 순위의 백분율(백분위 순위)을 산출하는 방식의 지표
+- 퍼센타일 지표는 MNCS와 마찬가지로 논문의 인용 성과를 동일한 분야, 출간 연도,
+논문 유형의 다른 모든 논문과의 상대적 위치로 표현하되, 평균이 아닌 백분위 순위를
+활용하는 일종의 비모수 통계량에 해당
+- 예를 들어, 90 퍼센타일은 해당 논문이 유사한 논문들 중 상위 10%에 속함을 의미
+하며 연구자 평가에 적용할 경우에는 일반적으로 Top 1% 논문 수, Top 10% 논문
+수와 같이, 일정 수준 이상의 논문 수를 집계하여 지표로 삼음
+- 양적 요소를 배제하고 순수한 질적 수준을 비교하고자 할 경우에는 Top 1% 논문
+비중, Top 10% 논문 비중과 같이 발표한 논문 중에서 일정 수준 이상의 논문이 차지
+하는 비중을 산출하여 지표로 삼으나, 다만 발표 논문이 많지 않은 신진 연구자의
+경우에는 비중을 따지는 것이 어려울 수 있음
+- 퍼센타일을 연구자 평가에 적용하면 ‘상위 몇 %에 속한다’라는 직관적인 해석이 가능
+하며, MNCS와 달리 순위 기반 지표이므로 극단치의 영향을 덜 받음
+- 또한 상위 1%, 10%, 25% 등과 같이 기준을 변경하면서 다양한 수준의 우수성을 측정
+할 수 있다는 장점도 있으나 다만 예외적으로 매우 특출난 논문을 발표했더라도 해당
+논문이 1위보다 더 높은 평가를 받을 수는 없다는 것이 단점이 될 수도 있음
+○ h-지수는 연구자의 양적 성과와 질적 성과를 종합적으로 반영하는 복합지표로 물리
+학자인 Hirsch가 제안한 지표(Hirsch, 2005)
+- Hirsch(2005)가 h-지수를 정의한 문장은 다음과 같음
+
+===== PDF_PAGE 109 =====
+- 93 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+- “어떤 과학자의 Np개 논문 중에서 h개의 논문은 최소 h번 이상씩 인용되었고, 나머지
+Np-h개 논문은 모두 개별 인용 빈도가 h번 이하이면 그의 h-지수는 h이다”
+- 즉, 어떤 연구자의 논문을 인용 빈도가 높은 순부터 나열했을 때 논문의 인용 빈도가
+논문의 순위보다 크거나 같은 마지막 논문의 순위가 h-지수이다(이재윤, 2006). 공식
+으로 표현해보면 인용 빈도 내림차순으로 r번째 논문의 인용 빈도를 citr이라고 할 때
+다음과 같음(이재윤, 2016)
+max
+
+  ≧
+- Zefang Tang과 Adam Frankish의 경우 h-지수는 각각 다음 표에서와 같이 산출
+되며, Tang은 인용 빈도 16위 논문이 17회로 순위보다 높지만, 17위 논문은 15회로
+순위보다 인용 빈도가 낮아 Tang의 h-지수는 16임
+- Frankish는 인용 빈도 60위 논문이 63회로 순위보다 높지만, 61위 논문은 58회로
+순위보다 인용 빈도가 낮아서 Frankish의 h-지수는 60임
+인용 빈도 순위 인용 빈도 저자 수
+1 8,420 6
+2 3,740 5
+3 594 10
+4 387 5
+5 163 26
+6 134 7
+7 131 15
+8 126 20
+9 117 13
+10 69 10
+11 42 13
+12 37 11
+13 33 5
+14 32 11
+15 20 7
+16 17 15
+17 15 6
+18 14 10
+19 11 7
+20 9 6
+<표 3-2> Z. Tang의 h-지수 산출표
+
+인용 빈도 순위 인용 빈도 저자 수
+1 5,166 100명 이상
+2 4,673 41
+3 2,844 55
+4 2,634 57
+5 1,727 95
+6 1,479 79
+7 1,247 51
+8 1,144 100명 이상
+9 1,112 56
+10 1,099 76
+11 901 68
+... (중간 생략) ...
+57 73 8
+58 72 17
+59 63 6
+60 63 3
+61 58 13
+62 58 13
+63 57 91
+64 55 17
+<표 3-3> A. Frankish의 h-지수 산출표
+
+===== PDF_PAGE 110 =====
+- 94 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+- h-지수는 원래 개별 연구자의 연구 성과를 평가하기 위해 개발된 지표로서 산출방식이
+단순하면서도 강건하다는 특성을 갖는다. h-지수의 주요 장점은 다음과 같음
+ 산출의 용이성 : 논문별 인용 빈도를 내림차순으로 정렬하면 손쉽게 산출할 수 있음
+ 직관적 해석 가능 : h-지수는 그 결과값이 정수로 표현되고 ‘h회 이상 인용된 논문이 h건’
+이라는 식으로 의미가 쉽게 전달됨
+ 복합적인 단일 지표 : 연구 성과의 양과 질에 해당하는 출판량과 인용량을 복합적으로 고려한
+단일 지표
+ 확장성 : h값 산출의 적용 대상과 범위의 조정이 쉬움. 즉, 목적에 따라 개별연구자/연구집단
+/연구기관/국가 등으로 산출 대상을 통합 및 확대할 수도 있고, 출판 및 인용 데이터 수집
+기간을 전체/10년/5년/3년 등으로 분할 및 축소할 수도 있음
+ 강건성(robustness) : 데이터 수집 과정에서 오탈자에 의한 오류 데이터 또는 표기 통일
+미비로 인해 정확한 식별이 어려워 누락된 데이터가 일부 존재하더라도 결과적인 h값에
+크게 영향을 미치지 않아 인용색인 데이터베이스가 완전하게 구축되지 않은 상황에서도
+연구 성과의 영향력을 측정하는 유용한 도구로 사용할 수 있음
+- 하지만 h-지수의 이런 장점들은 관점에 따라서 단점이 되기도 하며 h-지수의 주요
+단점은 다음과 같음
+ 연구 생산성에 좌우됨 : h-지수는 산출의 기본 단위가 되는 대상이 출판한 전체 생산 건수를
+넘지 못하는 한계가 있고 특정 연구자의 h-지수는 그 사람이 출판한 전체 논문 수를 넘지
+못함. 이로 인해 출판 건수가 상대적으로 적은 신진 연구자, 뛰어난 소수의 논문만 선별적
+으로 발표하는 신중한 연구자에게 불리
+ 자기-인용의 영향 : h-지수는 자기-인용을 포함하여 계산하므로 이의 영향을 받고 이러한
+맥락에서 단일 저자들에 비해 공저자들이(많은 협력 파트너를 가진 과학자들)이 많은 자기-
+인용을 받을 수 있어 상대적으로 유리할 수 있음
+ 낮은 변별력 : h-지수는 영향력이 예외적으로 큰 최상위 소수 논문의 가치를 제대로 반영
+하지 못함
+ 분야 종속 : 다른 인용 지표와 마찬가지로 h-지수도 인용 관행이 다른 분야 간에 직접적인
+비교가 불가능함. 분야별 참고문헌 수 차이나 공저자 수 차이 등이 특히 큰 영향을 끼치며,
+어떤 분야에서는 h-지수 30이 흔하지만 다른 분야에서는 드문 수치일 수 있음
+ 둔감성(insensibility) : h-지수 산출의 기초가 되는 h-코어에 속한 논문들의 인용 빈도가
+아무리 크게 증가하더라도 h-지수는 변화하지 않으며, 또한 h-코어에 속하지 못한 논문이
+조금씩 추가로 인용되는 것도 대부분 반영하지 않음. 지난 1년 동안 두 연구자가 동일하게
+100회씩의 인용이 증가했다고 하더라도 어느 순위의 논문이 인용되었는가에 따라서 한
+연구자는 h-지수가 상당히 향상되는 반면에 다른 연구자는 h-지수가 전혀 변화하지 못할
+수도 있음
+
+===== PDF_PAGE 111 =====
+- 95 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+○ 일단 h지수 산정에 포함된 인용 빈도 상위 논문이 추가로 인용되더라도 지수의 향상에
+전혀 기여하지 못하는 점을 보완한 지수가 g-지수(Egghe, 2006)
+- 인용 빈도 상위 g개 논문의 인용 빈도 합이 g의 제곱 이상인 최하위 순위 g가 g-지수
+이며 이 경우 상위 g+1개 논문의 인용 빈도 합은 (g+1)의 제곱보다 작음
+- 쉽게 풀어보면, 인용 빈도 상위 g개 논문의 평균 인용 빈도가 g보다 크거나 같은 마지막
+순위가 해당 연구자의 g-지수
+- 즉 g-지수가 20이라면 상위 20개 논문의 인용 빈도 평균이 20 이상이라고 이해할 수
+있지만 g-지수는 오히려 최상위 소수 논문의 인용 빈도에 너무 좌우된다는 것이 약점
+으로 지적
+○ i10-지수는 Google Scholar에서 사용되는 지표
+- 10회 이상 인용된 논문의 수를 뜻하며 가장 단순하게 산출할 수 있는 지표이지만
+결국 연구의 질적인 수준보다는 연구 생산성을 주로 반영한다는 한계가 있음
+- 또한 학문 분야에 따라 10회라는 기준이 전혀 다른 의미를 가지게 되는 것이 약점
+○ hc-지수는 공저자 수를 반영하지 않는 h-지수의 단점을 보완하기 위해서 제안된 지표
+로서 공저 보정 h-지수(co-authorship corrected h-index)의 약자(이재윤, 2016)
+- 논문의 인용 빈도를 논문의 저자 수로 나눈 값을 원래의 인용 빈도 대신 사용한다는
+점을 제외하면 h-지수와 산출 과정은 동일
+- 먼저 각 논문의 인용 빈도를 공저자 수로 나눈 보정 인용 빈도를 산출한 후에 보정 인용
+빈도 내림차순으로 논문의 순위를 동률 순위 없이 산출하고, 순위가 보정 인용 빈도보다
+작거나 같은 가장 큰 순위를 hc-지수로 삼고 Zefang Tang과 Adam Frankish의 경우
+hc-지수는 각각 다음 표에서와 같이 Tang이 7(h-지수는 16), Frankish가 17(h-
+지수는 60)로 산출
+
+===== PDF_PAGE 112 =====
+- 96 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+인용 빈도 저자 수 공저보정
+인용 빈도 순위
+8,420 6 1,403.3 1
+3,740 5 748.0 2
+387 5 77.4 3
+594 10 59.4 4
+134 7 19.1 5
+117 13 9.0 6
+131 15 8.7 7
+69 10 6.9 8
+33 5 6.6 9
+126 20 6.3 10
+163 26 6.3 11
+37 11 3.4 12
+42 13 3.2 13
+<표 3-4> Z. Tang의 hc-지수 산출표
+인용 빈도 저자 수 공저보정
+인용 빈도 순위
+4,673 41 114.0 1
+551 5 110.2 2
+530 9 58.9 3
+262 5 52.4 4
+2,844 55 51.7 5
+5,166 100 이상 51.7 6
+... (중간 생략) ...
+63 3 21.0 14
+1,112 56 19.9 15
+1,479 79 18.7 16
+1,727 95 18.2 17
+30 2 15.0 18
+1,099 76 14.5 19
+<표 3-5> Frankish의 hc-지수 산출표
+
+□ 공동연구 지표
+○ 공동연구를 수행한 공저자의 총 수는 연구자의 공동연구 성향에 대한 양적인 지표가 될
+수 있음
+- 이는 공저 네트워크에서 평가 대상 연구자와 연결된 공저자의 수, 즉 연결정도
+(degree)와 같음
+- 공저자 수는 간단하게 산출이 가능하지만, 대규모의 연구팀이 참여한 한두 편의 논문
+때문에 값이 부풀려질 수 있는 문제가 있음
+- 10명과 각각 1편씩 공저를 발표한 경우와, 10명과 함께 한 편의 논문을 발표한 경우를
+구분하지 못하므로 공동연구 성향을 세밀하게 반영하지도 못함
+○ 연구자의 공저 성향을 나타내는 지표로는 공저자 총 수보다는 논문 당 공저자 수가 더
+적절함
+- 평균적으로 한 편의 논문에서 몇 명과 공동연구를 수행했는가를 나타내므로 직관적
+으로 연구자의 공동연구 성향을 반영할 수 있음
+- 그러나 대규모의 연구팀이 참여한 한두 편의 논문 때문에 공동연구 성향이 높게 측정
+될 수 있는 문제를 역시 가지고 있음
+
+===== PDF_PAGE 113 =====
+- 97 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+○ 평균 협력 기관 수, 평균 협력 국가 수
+- 연구자가 참여한 논문의 저자들이 속한 기관의 수를 논문마다 산출한 후 평균을 낸
+것이 평균 협력 기관 수이며 이는 해당 연구자가 기관 간 협력에 얼마나 활발하게
+참여하는가를 나타냄
+- 마찬가지로 연구자가 참여한 논문의 저자들이 속한 국가의 수를 논문마다 산출한 후
+평균을 낸 것이 평균 협력 국가 수이고, 이는 해당 연구자가 국가 간 협력에 얼마나
+활발하게 참여하는가를 나타냄
+- Open Alex 데이터로 Tang과 Frankish의 평균 협력 국가 수와 평균 협력 기관 수를
+산출해 본 결과는 다음 표와 같음
+<표 3-6> Open Alex 데이터로 산출한 Tang과 Frankish의 평균 협력 국가 수와 평균 협력 기관 수
+구분 Z. Tang A. Frankish
+평균 협력 국가 수 1.27 3.75
+평균 협력 기관 수 3.22 10.61
+○ 연구자가 다양한 연구자와 지속적으로 공동연구를 수행한 정도를 측정하기 위한 지표가
+공동연구 h-지수(collaboration h-index)
+- 공저자 총 수나 논문 당 공저자 수와 같은 빈도 기반의 지표로는 동일한 연구팀에
+속해서 계속 논문을 발표하는 연구자와, 여러 연구팀과 다양한 공동연구를 수행한
+연구자를 구분하지 못함
+- 해당 지수는 Hirsh(2005)의 h-지수를 공동연구 네트워크에 응용한 것으로서(Lee &
+Choi, 2013) 다음과 같이 정의할 수 있음
+- 특정 연구자가 공동연구자와 수행한 개별 공동연구 건수를 내림차순으로 정렬한 후 공동
+연구 건수보다 작거나 같은 마지막 순위가 해당 연구자의 공동연구 h(col-h)임
+- 공동연구 h-지수는 여러 연구자와 다수의 공동연구를 수행하는 연구자가 높게 나타
+나며, 공동연구의 상대가 특정 연구자로만 국한되거나 여러 연구자와 한두 차례씩만
+공동연구를 수행한 경우에는 낮게 측정됨
+○ 가중 페이지랭크 공식은 페이지랭크 공식을 변형한 것으로서, 공동연구를 활발하게
+수행하는 연구자와의 공동연구를, 그렇지 못한 연구자와의 공동연구보다 더 중요한 것
+으로 간주하여 판정하는 방식
+- 가중 페이지랭크 공식을 공동연구 네트워크에 적용하는 형태로 나타내면 다음과 같음
+(이재윤, 2014)
+
+===== PDF_PAGE 114 =====
+- 98 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+    
+∙ 
+ 
+
+ 
+
+- 이 공식에서 각 항의 의미는 다음과 같음
+ WPRi - 연구자 i의 가중 페이지랭크
+ COji - 연구자 j와 연구자 i의 공저 횟수
+ Cj – 연구자 j가 다른 연구자와 공저한 개별 횟수의 합계
+ d - 상수, 보통은 0.85
+ N – 전체 연구자 수
+- 가중 페이지랭크는 중요한 연구자와 공동연구를 많이 수행한 연구자를 중요한 연구자로
+판정하는 방식으로 해당 연구자가 공동연구 관계에서 중심적인 입지를 차지했는가를
+구조적으로 판정해주는 방식이라고 할 수 있음
+- 산출 과정에서 전체 공동연구 네트워크를 분석해야 하므로 계산량이 상당히 소요되는
+것이 단점이라 데이터를 지속적으로 축적한 후에 정기적으로 값을 재산출하는 것이
+바람직함
+○ c-지수(c-index)의 c는 collaboration competence를 의미하며 연구자의 공저자
+수와 공저 횟수, 그리고 공저자의 공저 역량까지 고려하도록 고안된 지표(Yan, Zhai, &
+Fan, 2013)
+- c-지수는 h-지수(Hirsch, 2005)의 개념을 응용하고 있으므로 정의도 h-지수처럼
+다음과 같은 문장으로 제안됨
+- 노드(연구자) x의 협동 능력 지수 c(x)는 노드 x와 연결된 이웃 노드의 중요도와 연결
+된 링크의 강도를 곱한 값이 c보다 크거나 같은 가장 큰 정수 c이며 여기에서 어떤
+연구자의 중요도는 공저자와의 공저 횟수 합계, 즉 연결된 링크 가중치의 합계로 나타냄
+- c-지수를 h-지수에 비유해서 설명하자면, 한 연구자에 대해서 연결된 이웃 연구자의
+중요도와 해당 이웃 연구자와의 링크 강도를 곱한 값을 큰 값부터 정렬한 후 h-지수
+처럼 값이 순위보다 크거나 같은 마지막 순위를 산출한 것이 c-지수에 해당
+- 연구자 x가 d명의 연구자와 공저를 발표했을 때, 각 공동연구자마다 중요도와 공동연구
+횟수를 곱한 값들이 모두 d보다 크다면 연구자 x의 c-지수는 연결 정도와 같은 d가 되고,
+따라서 어떤 연구자의 c-지수 상한값은 해당 연구자의 공동연구자 수와 같음
+- 예를 들어 공동연구를 1명하고만 수행한 연구자는 함께 100회 공동연구를 수행
+하였더라도 c-지수는 1이 됨(이재윤, 2014)
+
+===== PDF_PAGE 115 =====
+- 99 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+○ 공동연구 네트워크에서 공동연구의 폭과 공동연구의 강도를 복합적으로 반영하는 매우
+간단한 지표가 SSR(Sum of Square Roots)
+- 이는 공동연구 횟수가 연구 활동이 활발할수록 빈익빈 부익부 현상을 보인다는 것을
+전제로 하여 공동연구 횟수를 그대로 지수에 반영하지 않고 루트 변환에 해당하는
+제곱근을 취한 값으로 지수에 반영하는 방식
+- 연구자 i의 제곱근합 지수 SSR은 다음과 같이 각 공동연구자와의 협력 건수 COij의
+제곱근을 모두 합하는 것으로 산출(이재윤, 2014)
+  
+- SSR은 공동연구자가 많을수록, 공동연구 횟수가 높을수록, 여러 공동연구자와 비슷한
+정도로 고르게 공동연구를 수행했을수록 높게 측정
+□ 생산성 지표 활용
+○ 성과물 유형 정보는 논문 이외에 데이터셋, 단행본 챕터 등의 유형별 성과 건수를 보여줌
+- 이는 대상 연구자가 연구 논문 이외에 연구 데이터 공개와 같이 오픈 사이언스 측면의
+개방성이 어느 정도인가를 보여 줄 수 있음
+- 이를 통해서 연구 데이터 활용을 통한 간접 연구 협력 가능성을 검토해 볼 수 있음
+[그림 3-3] Open Alex의 성과물 유형 정보
+(Zefang Tang의 사례)
+
+[그림 3-4] Open Alex의 성과물 유형 정보
+(Adam Frankish의 사례)
+
+===== PDF_PAGE 116 =====
+- 100 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ 연구 분야 정보는 어떤 연구 분야에 속한 연구 성과가 몇 건인가를 보여 줌
+- 이는 대상 연구자의 주력 연구 활동 분야를 파악할 수 있게 함
+[그림 3-5] Open Alex의 연구 분야 정보
+(Zefang Tang의 사례)
+
+[그림 3-6] Open Alex의 연구 분야 정보
+(Adam Frankish의 사례)
+○ 연구 주제 정보 활용을 위해 연구 협력 후보자로 검토하는 연구자에 대해서 우선 검토해야
+하는 것은 그 연구자의 연구 주제가 필요한 영역에 부합하는지를 파악하는 것
+- 연구자의 연구 성과에 대한 키워드 정보로 대상 연구자의 주요 연구 주제를 파악하는
+것을 지원할 수 있으며 Open Alex의 경우 다음 그림과 같이 연구자의 성과물에 자주
+등장하는 키워드 상위 5개씩을 보여줌
+[그림 3-7] Open Alex의 연구 키워드 정보
+(Zefang Tang의 사례)
+
+[그림 3-8] Open Alex의 연구 키워드 정보
+(Adam Frankish의 사례)
+
+===== PDF_PAGE 117 =====
+- 101 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+- ‘More...’ 버튼을 클릭하면 더 많은 키워드 목록을 아래와 같이 제시함
+[그림 3-9] Open Alex의 연구 키워드 추가 정보(Adam Frankish의 사례)
+- 하지만 키워드 목록만으로는 연구자의 연구 주제가 세밀하게 드러나지 못할 수 있으며,
+키워드 간의 동시 출현 관계를 이용하면 키워드 동시 출현 네트워크를 아래와 같이 구
+축해서 서비스할 수 있음
+[그림 3-10] Adam Frankish의 연구 키워드 데이터를 분석해서 구축한 키워드 네트워크
+
+===== PDF_PAGE 118 =====
+- 102 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+- Adam Frankish의 사례에서 키워드는 96종이 추출되어서 96종 키워드 동시 출현
+네트워크를 구축하였으나, 그런데 키워드 네트워크는 너무 복잡할 경우 오히려 핵심
+정보가 잘 드러나지 않는 문제가 발생하고 구축을 위한 데이터 처리 시간도 오래 걸리게 됨
+- 따라서 연구자마다 많이 해당하는 키워드 상위 100개 이내에서 키워드를 추출해서
+처리하거나, 1~2회만 출현한 키워드는 제외하고 네트워크를 구축하는 것이 바람직함
+- Adam Frankish의 사례에서 1회만 출현한 키워드를 제외하고 구축한 네트워크와 2회
+이하 출현한 키워드를 제외하고 구축한 네트워크는 각각 아래의 두 그림과 같음
+[그림 3-11] Adam Frankish의 연구 키워드 중에서 2회 이상 출현한 키워드 40개만으로 구축한 키워드 네트워크
+[그림 3-12] Adam Frankish의 연구 키워드 중에서 3회 이상 출현한 키워드 21개만으로 구축한 키워드 네트워크
+
+===== PDF_PAGE 119 =====
+- 103 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+- 경우에 따라 이와 같은 키워드 필터링을 통해서 네트워크를 간략하게 압축하는 옵션을
+서비스에 추가하는 것도 유용함
+□ 인용 지표 활용
+○ 연구 논문의 인용 횟수를 활용하여 해당 논문에 부여된 키워드의 인용 지표로 삼을 수 있음
+- 이를 이용하면 분석하는 연구자가 많이 발표하는 연구 주제와 영향력이 큰 연구 주제를
+구분하여 살펴보도록 서비스하는 것이 가능함
+- 예를 들어 A. Frankish의 연구 성과 건수 상위 키워드는 왼쪽 표와 같은데, 인용 빈도
+상위 키워드를 별도로 집계해보면 오른쪽 표와 같이 순위가 달라지며, 이를 통해 A.
+Frankish가 활발히 연구한 주제는 Ensembl 이외에 Gene Annotation이 대표적
+이지만, 영향력이 큰 주제는 Ensembl 다음으로는 Genome browser임을 알 수 있음
+키워드 성과 건수
+Ensemble 34
+Gene Annotation 29
+Pseudogene 25
+Coding region 16
+ENCODE 15
+Genome browser 13
+Gene prediction 12
+Gene nomenclature 10
+RefSeq 10
+Human genetics 9
+<표 3-7> A. Frankish의 성과 건수 상위 키워드
+
+키워드 총 인용 빈도
+Ensemble 19,756
+Genome browser 14,501
+Gene Annotation 14,063
+ENCODE 11,783
+RefSeq 10,097
+Replication timing 5,166
+Gene prediction 3,975
+Perl 3,745
+Gene nomenclature 3,456
+Epigenomics 2,634
+<표 3-8> A. Frankish의 인용 빈도 상위 키워드
+- 키워드별 인용 지표를 성과 건수 지표와 함께 사용해서 다음 그림과 같이 연구자가 주로
+연구하는 주제와 영향력이 큰 주제를 비교해서 살필 수 있도록 제시할 수도 있음
+- 그림에서 가로축은 각 키워드에 해당하는 연구 성과 건수이고 세로축은 각 키워드가
+사용된 연구 성과의 총 인용 횟수이며, 가로축으로 오른쪽에 위치할수록 주로 연구
+하는 주제이고 세로축으로 위에 위치할수록 영향력이 큰 주제임
+- A. Frankish의 경우 오른쪽 상단에 위치한 Ensembl 주제는 연구량과 영향력이
+모두 최고인 주제이고, 오른쪽 하단에 위치한 Pseudogene는 연구량이 많으나 영향력은
+높지 않은 주제이며, 왼쪽 중상부에 위치한 Genome browser나 RefSeq 그리고
+Replication timing은 연구량에 비해서 영향력이 큰 주제임
+
+===== PDF_PAGE 120 =====
+- 104 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+[그림 3-13] A. Frankish의 연구 키워드의 성과 발표 건수와 총 인용 횟수
+○ 특정 키워드에 해당하는 연구 성과가 발표된 출판 시기의 평균을 산출해서 연구량과
+함께 제시하는 서비스를 제공할 수 있음
+- 협력 연구를 원하는 연구 주제와 관련하여 연구 성과가 뛰어난 후보 연구자가 있다고
+하더라도, 오래 전의 연구 주제였고 현재는 다른 주제를 주로 연구하는 상황일 수도
+있다. 따라서 상대 연구자가 어느 시기에 주로 해당 키워드와 관련된 연구를 수행
+했는지를 알 필요가 있음
+- 키워드 연구 시기 정보 서비스는 연구 축적량과 연구 시기를 한꺼번에 다루는 일종의
+전략 다이어그램(이재윤 외, 2011)
+- A. Frankish의 연구 성과에 3회 이상 부여된 키워드를 대상으로 발표한 연구 성과
+건수를 가로축으로, 발표 논문의 출판연도 평균을 세로축으로 하여 키워드의 위치를
+나타내면 아래 그림과 같으며 이 그림에서 원의 크기는 인용 빈도에 비례하도록 표현함
+- 이를 통해 A. Frankish가 Ensembl, Gene Annotation, Genome browser, RefSeq에
+대한 연구를 최근까지도 활발하게 발표하면서 높은 영향력도 가지고 있음을 알 수 있음
+
+===== PDF_PAGE 121 =====
+- 105 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+- 반면에 ENCODE 관련 연구는 2010년대에 초중반까지 발표한 이후 최근까지 상당히
+인용되고는 있지만, A. Frankish 본인이 최근에는 ENCODE를 연구하지는 않음을
+알 수 있으며, 오히려 발표 건수는 적지만 RNA-Seq나 Cell type에 대한 연구가 최근
+관심사에 포함된 것으로 나타남
+[그림 3-14] A. Frankish의 연구 키워드의 성과 건수와 평균 출판년도(원의 크기는 총 인용 빈도에 비례함)
+□ 공동연구 지표 활용
+○ 공동연구자 명단은 기본적인 공동연구 동향을 보여 주는 정보임
+- 어떤 연구자와 어느 정도로 공동연구를 수행하고 있는지를 드러내며, Open Alex
+에서는 다음 그림과 같이 특정 연구자의 연구 성과를 검색하면, 해당 연구자의 공동
+연구자를 공동연구 건수와 함께 제시함
+- 이를 보면 Z. Tang의 경우 주로 중국계 연구자들과 공동연구를 수행한 것을 알 수 있음
+
+===== PDF_PAGE 122 =====
+- 106 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+[그림 3-15] Open Alex의 상위 공동연구자
+명단 정보(Z. Tang의 공동연구자)
+
+[그림 3-16] Open Alex의 상위 공동연구자
+명단 정보(A. Frankish의 공동연구자)
+○ (공동연구 국가 정보) 연구자가 발표한 연구에 어떤 국가의 연구자가 참여했는지를
+제공하는 것은 협력 후보자와의 접촉 가능성에 힌트를 제공하는 서비스가 됨
+- Open Alex에서 Z. Tang의 연구 성과를 검색하면 아래와 같이 주로 중국과 미국
+연구자가 참여하는 연구 활동을 수행한 것을 알 수 있음
+- 반면에 A. Frankish의 연구 성과를 검색하면 UK를 중심으로 USA, Spain, Germany
+등 다양한 서구 국가 연구자가 참여하는 연구 네트워크를 가지고 있음을 알 수 있음
+[그림 3-17] Open Alex의 공동연구 국가 정보
+(Z. Tang의 공동연구 국가)
+
+[그림 3-18] Open Alex의 공동연구 국가 정보
+(A. Frankish의 공동연구 국가)
+□ 연구자가 공동연구를 수행한 공저자들과 연결 관계를 네트워크로 서비스할 수 있음
+- 이러한 공동연구 네트워크 시각화 서비스는 협력 대상 연구자의 공동연구 패턴을 파
+악하는데 도움이 됨
+- 전체 공동연구 관계를 모두 파악하여 네트워크를 시각화하는 것은 시스템에 큰 부하
+를 지우므로, 대상 연구자의 연구 실적에 나타난 공동연구 관계만 표현하는 것이 현실
+적이며, 이를 에고 네트워크라고 부름
+
+===== PDF_PAGE 123 =====
+- 107 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+- A. Frankish와 같이 공동연구자가 매우 많은 경우에는 n회 이상 공동연구를 수행한
+연구자만 포함하도록 에고 네트워크를 구축하는 것이 바람직함
+- 예를 들어 A. Frankish와 10회 이상 공동연구를 수행한 연구자들과의 공동연구
+네트워크를 구축하여 시각화하면 다음 그림과 같으며 A. Frankish와 다른 연구자
+사이를 이어주는 주요 공동연구자인 J. Harrow를 그림 위쪽에서 확인할 수 있음
+[그림 3-19] A. Frankish와 10회 이상 공동연구를 수행한 연구자들과의 공동연구 네트워크
+□ 복합 지표를 활용한 연구자 유형 구분 서비스
+※ 연구자의 경력에서 산출되는 양적 지표, 질적 지표, 연구 협력 지표 등 다양한 특성을 이용해서 연구자를
+일정한 유형으로 분류하여 서비스할 수 있음
+※ 간단하게는 연구 생산성이 높거나 낮은 연구자로 이분법적으로 구분할 수도 있지만, 보통 두 가지 상호보완
+적인 지표를 활용하여 2×2로 사분할하는 유형 분류를 하는 경우가 많음
+※ 동일한 주제 분야에서 활동하는 연구자들의 지표를 산출한 후, 지표의 중앙값이나 평균을 기준으로 연구자
+유형을 나눔
+
+===== PDF_PAGE 124 =====
+- 108 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ 양적 지표와 질적 지표를 조합한 연구자 유형 분석
+- 연구 성과의 양적 지표와 질적 지표를 조합하여 연구자를 4가지 유형으로 구분할 수 있으며,
+Costas와 Bordons(2008)가 제안한 연구자 유형 구분 모델은 다음 그림과 같음
+[그림 3-20] 양적 지표와 질적 지표를 조합한 연구자 유형 구분 모델
+- Costas와 Bordons(2008)의 모델에서는 연구 성과의 양과 질이 모두 높으면 Top
+researchers, 연구 성과의 양만 높으면 Big producers, 연구 성과의 질만 높으면
+Selective researchers, 양과 질이 모두 낮으면 Low producers 유형으로 구분함
+○ 공동연구 성향 기준 연구자 유형 분석
+- 연구 성과 지표가 아닌 공동연구 지표를 활용하여 연구자 유형을 구분할 수도 있으며,
+연구자의 공동연구 범위(extent of research collaboration)와 공동연구 패턴
+(Research collaboration pattern)을 기준으로 공동연구 특성에 따른 연구자 유형을
+4가지로 아래와 같이 구분할 수 있음(이재윤, 2023)
+※ 출처: 이재윤(2023)의 Figure 3, 공동연구 특성에 따른 연구자 유형 구분 모델,
+[그림 3-21] 공동연구 특성에 따른 연구자 유형 구분 모델(이재윤, 2023)
+
+===== PDF_PAGE 125 =====
+- 109 -
+제3장 연구 인력 DB 체계화와 연구자 단위 지표 활용
+- 공동연구 범위는 연구자가 얼마나 많은 연구자와 공동연구를 수행하는가를 나타내는
+특성으로서 공동연구 네트워크에서 연결 정도 중심성(degree)으로 측정함
+- 분석 대상 연구자 집단에서 연결 정도 중심성의 평균보다 높은 연구자는 공동연구 범위가
+넓은 연구자, 평균 이하의 연구자는 공동연구 범위가 좁은 연구자로 구분함
+- 공동연구 패턴은 연구자가 특정 연구 집단 내에 종속되어 활동하는지 여부를 나타내는
+특성으로서 공동연구 네트워크에서 군집화계수 CC로 측정하며, 군집화계수는 0에서
+1 사이로 측정되는데 0.5보다 큰 연구자는 자신의 공동연구자들끼리도 서로 공동연구
+관계인 밀집된(dense) 공동연구 관계를 유지하는 연구자이고, 0.5 이하인 연구자는
+자신의 공동연구자들끼리는 관계가 없는 희박한(sparse) 공동연구 네트워크에 속한
+연구자임
+- 군집화계수가 0.5보다 높으면서 공동연구 범위가 넓은 연구자는 Dense & Wide
+Collaborator라고 할 수 있으며 약칭으로 DW 유형이라고 부름(<그림>의 오른쪽
+위에 위치하고 있으며 많은 연구자가 서로 공동연구 관계로 얽힌 큰 연구 집단에 속한
+연구자일 가능성이 높음)
+- 군집화계수가 0.5보다 높으면서 공동연구 범위가 좁은 연구자는 Dense & Narrow
+Collaborator라고 할 수 있으며 약칭으로 DN 유형이라고 부름(<그림>의 왼쪽 위에
+위치하고 있으며 소수의 연구자가 서로 공동연구 관계로 얽힌 작은 연구팀에 속한
+연구자일 가능성이 높음)
+- 군집화계수가 0.5 이하이면서 공동연구 범위가 넓은 연구자는 Sparse & Wide
+Collaborator라고 할 수 있으며 약칭으로 SW 유형이라고 부름(<그림>의 오른쪽
+아래에 위치하고 있으며, 다수의 연구팀과 함께 공동연구를 수행하는데 각 연구팀들
+사이에는 공동연구 관계가 없는 경우이며, 이들 중에 일부는 여러 연구팀 각각과 개별적
+으로 공동연구를 수행하는 연구 집단 리더인 경우도 포함됨)
+- 군집화계수가 0.5 이하이면서 공동연구 범위가 좁은 연구자는 Sparse & Narrow
+Collaborator라고 할 수 있으며 약칭으로 SN 유형이라고 부름(<그림>의 왼쪽 아래에
+위치하고 있으며 적은 수의 연구자 각자와 개별적으로 공동연구를 수행하는 경우이며,
+이들은 공동연구를 거의 하지 않는 독자적 연구자이거나 소수의 제자를 지도하면서
+각자와 개별적으로 공동연구 성과를 발표하는 멘토 유형의 연구자일 수도 있음)
+
+===== PDF_PAGE 126 =====
+
+
+===== PDF_PAGE 127 =====
+연구 인력 DB
+활용 방안
+제4장
+제1절 연구 인력 DB 검색 시스템
+제2절 연구자 추천시스템
+
+===== PDF_PAGE 128 =====
+
+
+===== PDF_PAGE 129 =====
+- 113 -
+제4장 연구 인력 DB 활용 방안
+제4장 연구 인력 DB 활용 방안
+제1절 연구 인력 DB 검색 시스템
+□ 연구 인력 DB 설계 모델에 기반한 검색 시스템 예시
+○ 설계된 모델과 분석자료를 기반으로, 대표적인 해외 3개 사이트, ‘Dimensions’,
+‘OpenAlex’, ‘Aminer’의 서비스 화면을 벤치마킹하여 예시함
+- 본 연구에서 정의한 연구 인력 DB 모델을 벤치마킹 대상 사이트(표 4-1 참조)에 대입
+하여 향후 우리 서비스 형태를 미리 추론함
+<표 4-1> 벤치마킹 대상 사이트
+Dimensions OpenAlex Aminer
+https://www.dimensions.ai https://openalex.org https://www.aminer.cn
+연구 문헌 및 자료 통합 검색 플랫폼
+연구 문헌 외 연구보조금 등의 정보 제공
+AI를 활용한 요약 기능 제공
+다양한 학술 자료 출처에서 데이터를
+통합하여 제공하는 플랫폼
+구독기반의 타 플랫폼에 비해 개방적
+이고 접근이 용이한 데이터 제공
+OpenAlex는 Microsoft Academic
+Graph와 Crossref 데이터베이스
+에서 데이터의 통합과 표준화를 통한
+연구정보를 제공
+소셜 네트워크 분석을 사용하여 연구자,
+학회 및 출판물 간의 연결을 식별하여
+인터넷의 학술 출판물에 대한 데이터
+마이닝 작업을 검색할 수 있도록 제공
+하는 플랫폼
+가장 많은 정보를 서비스하고 있으며,
+플랫폼 이용자가 급속도로 증가하는
+추세
+○ Dimensions 사례
+- ‘Dimensions’ 사이트의 화면 구성 정보: 연구자 정보, 소속기관, 국가, 보유 자료
+건수 / 연구자료 / 연구분야 / 인용정보 /공동 연구자정보
+- 연구자 정보 클릭 시 제공되는 상세 정보: 연구자 이름, 소속기관, 국가, 자료 건수,
+인용 건수, 데이터셋, 보조금, 펀딩, 특허, 임상실험, 타 사이트 게시, 발행연도별 연구
+자의 학술 추이 시각화, 연구분야별 자료
+- ‘Dimensions’에서 제공하고 있는 항목 중 연구 인력 DB 모델에서 정의한 데이터를
+대입하였을 때, 8개 항목을 제외하고 모두 추출 및 서비스 가능함
+- 그 외 ‘데이터셋, 보조금, 펀딩, 특허, 임상실험 건수, 타 사이트 이용 여부’의 경우
+연구자 개인이 동의하는 경우 수집이 가능한 정보에 해당함
+- ‘자료별 연구분야’의 경우 DB 모델 항목을 추가하여 표현 가능함
+
+===== PDF_PAGE 130 =====
+- 114 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+[그림 4-1] Dimensions 사이트 화면 구성
+
+===== PDF_PAGE 131 =====
+- 115 -
+제4장 연구 인력 DB 활용 방안
+[그림 4-2] Dimensions 사이트 화면 구성에 대입한 화면
+
+===== PDF_PAGE 132 =====
+- 116 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ OpenAlex 사례
+- ‘OpenAlex’ 사이트의 화면 구성 정보
+- 연구자 정보, 소속기관, 국가, 보유 자료 건 수, 인용 건 수 / 연구자료 / 연구분야별
+자료 건수 / 자료구분 별 자료 건 수
+- ‘OpenAlex’ 에서 제공하고 있는 모든 항목은 ‘연구자인력DB’ 1차 DB모델에서
+정의한 데이터를 이용 모두 추출 및 서비스 가능함
+- 제공하는 정보가 가장 단순한 형태로 구성되어 있으며, 연구자들의 정보가 정확히
+수집되지 않은 것으로 판단됨
+[그림 4-3] OpenAlex 사이트 화면 구성
+
+===== PDF_PAGE 133 =====
+- 117 -
+제4장 연구 인력 DB 활용 방안
+[그림 4-4] OpenAlex 사이트 화면 구성에 대입한 화면
+○ Aminer 사례
+- ‘Aminer’ 사이트의 화면 구성 정보
+- 연구자이름, 연구자에대한 요약, 연구자 관심분야, 연구 관심사 시각화, 논문분야,
+논문등급, 공동연구자, 소속기관, 발행연도별 자료 건수, 연구자료, 연구자의 활동
+분야, 공동저자, 공동기관, 유사저자
+- 벤치마킹 비교 대상 중 가장 많은 항목을 서비스 하고 있으며, AI를 이용한 요약정보
+및 시각화 정보 제공
+- ‘Aminer’에서 제공하고 있는 항목 중 ‘연구자인력DB’ 1차 DB모델에서 정의한 데이터를
+대입하였을 때, 7개 항목을 제외하고 모두 추출 및 서비스 가능함
+- 그 외 ‘연구자에 대한 요약, 연구자 관심분야, 연구 관심사 시각화, 연구자의 활동분야,
+유사저자, 논문등급’의 경우 현재로서는 기술적 한계 및 연구자 개인이 정보를 제공
+해야만 서비스가 가능함
+
+===== PDF_PAGE 134 =====
+- 118 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+[그림 4-5] Aminer 사이트 화면 구성
+[그림 4-6] Aminer 사이트 화면 구성에 대입한 화면
+
+===== PDF_PAGE 135 =====
+- 119 -
+제4장 연구 인력 DB 활용 방안
+○ 향후 서비스할 플랫폼 구성 예시
+- 연구자 기본정보 : 성별, 연령, 국가, 소속, 보유자료 수, 인용 건 수
+- 연구자 이력정보 : 과거 소속기관, 연구자의 제1 저자 연구자료
+- 연구자(출판정보)
+- 공동연구내용 : 공동저자목록, 공동기관 목록, 공동연구자료 목록
+[그림 4-7] 향후 서비스 플랫폼 구성 예시
+
+===== PDF_PAGE 136 =====
+- 120 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ 향후 서비스할 모니터링 서비스 예시
+- 분야별 연구자 분포 세계지도
+[그림 4-8] 분야별 연구자 분포 세계지도
+- 분야별 연구자 수 비교
+[그림 4-9] 분야별 연구자 수 분포
+
+===== PDF_PAGE 137 =====
+- 121 -
+제4장 연구 인력 DB 활용 방안
+- 분야별 연구자 수(소속기관 별)
+[그림 4-10] 분야별 연구자 수(기관소속별)
+□ 연구 인력 데이터에 기반한 통계 예시
+○ 국가별 연구자의 유입 및 유출, 양자 간 연구자의 유입 및 유출에 대해 조사(OECD, 2017)
+[그림 4-11] 연구 저자의 국제 이동성
+
+===== PDF_PAGE 138 =====
+- 122 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+[그림 4-12] 국가간 연구 인력 유･출입
+
+===== PDF_PAGE 139 =====
+- 123 -
+제4장 연구 인력 DB 활용 방안
+○ 다양한 경력 이동 분석
+- 최근 기술이 상용화되는 속도가 빨라진 AI 분야의 산학 간 인재 유･출입 변화
+Dayton, L.(2020)
+[그림 4-13] 국가별 산학 연구 인력 이동
+- 대학 연구 인력이 산업으로 진출하는 비율의 변화(Jurowetzki. R. et al., 2021)
+
+===== PDF_PAGE 140 =====
+- 124 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+※ 출처: : Jurowetzki, R. etal.(2021)의 Figure 5. Researcher transition between education and industry (blue area)
+and industry and education (orange area). Net flow inblack bars.
+[그림 4-14] AI 분야의 산학간 인력 이동
+※ 출처: : Jurowetzki, R. etal.(2021)의 Figure 6. Share of all transitions form education to industry by year and position
+of university in Nature University ranking.
+[그림 4-15] 연도별 대학 AI분야 연구 인력의 산업 진출 비율 변화
+
+===== PDF_PAGE 141 =====
+- 125 -
+제4장 연구 인력 DB 활용 방안
+※ 출처: : Jurowetzki, R. etal.(2021)의 Figure 7. Share of all transitions form a source academic institution (vertical
+axis) accounted by a destination company (horizontal axis) in pre-2015 and post-2015 period.
+[그림 4-16] AI 분야 연구 인력의 기업별 진출 변화
+
+===== PDF_PAGE 142 =====
+- 126 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+제2절 연구자 추천시스템
+□ 연구자 추천시스템 개요
+○ 연구자 추천시스템에 대한 전반적인 추세
+- Maphosa and Maphosa(2023) 연구는 고등교육시스템의 연구자 추천시스템 관련
+연구를 리뷰하여 교육 분야에서 연구자 추천시스템이 코스 선택, 학생 성과 예측,
+행정 지원 등의 분야에서 광범위하게 응용될 잠재력이 있다는 점을 강조함
+- Zhang et al. (2023)은 연구(자) 추천 관련 연구 225편을 PRISMA 방식으로 문헌분석
+하였음. 이 연구에서는 연구(자) 추천 시스템의 활용례를 크게 문헌 추천, 협업자 추천, 심사
+자 추천, 학회 또는 학술지 추천, 기타 데이터셋이나 연구비 추천 등으로 분류함
+- 세 가지 주요 추천시스템으로 유사한 사용자의 선호도에 기반하여 항목을 추천하는
+협업 필터링(Collaborative Filtering, CF); 사용자의 과거 행동 및 프로필 속성에
+기반하여 항목을 추천하는 콘텐츠 기반(Content-Based, CB); 그리고 두 방법을 결합
+하여 개별적인 한계를 극복하는 하이브리드(Hybrid) 접근 방식으로 정리
+<표 4-2> 관련 주요 문헌 요약
+연구 범위･대상 방법론/접근법 주요 기여
+Wagner (2006) 국제 과학기술 협력
+네트워크 전반
+네트워크 분석
+(노드･엣지･밀도･중심성 등)
+국제 공동연구의 구조적 특성
+규명
+Wagner et al. (2017) 6개 전문분야 국제
+공동연구
+국가 간 네트워크 분석,
+FWCI-협력관계 정량 분석
+분야별 국제화 수준 및 영향도
+연관성 제시
+Zhang et al. (2016) 신입 연구학생 지도교수
+추천
+RAF-E: 연관성･연결성･성과
+질 통합 + 소셜네트워크 활용
+맞춤형 다면 추천모델 구현 및
+플랫폼 개발
+Bozeman and Corley
+(2004)
+협력 전략과
+인적자본(STHC) 형성
+설문･인터뷰 기반 전략 분류
+분석
+협력의 경력･지식 확산 기능
+강조
+Chen et al. (2019) 국제 공동연구와 혁신 서지･키워드 네트워크 분석 혁신･지식 네트워크･가치사슬
+융합 분석
+Ebadi and
+Schiffauerova (2015) 영향력 있는 연구자 요인 중심성 지표 기반 회귀분석 영향력이 네트워크 구조에 의해
+형성됨
+Maphosa and
+Maphosa (2023)
+고등교육 추천시스템
+15년 트렌드 문헌 체계적 리뷰 추천 대상을 맞춤형 →
+매칭형으로 확장
+Newman (2004) 공저자 생태 네트워크
+구조 분석 스몰월드 특성 분석 지식 확산 패턴 및 구조적 특성
+파악
+
+===== PDF_PAGE 143 =====
+- 127 -
+제4장 연구 인력 DB 활용 방안
+○ 내용 기반 필터링 (Content-Based Filtering: CBF)
+- 정의
+ 사용자의 과거 행동 및 프로필 속성에 기반하여 항목을 추천
+ 사용자–아이템(user-item) 모델 기반으로, 논문의 텍스트･키워드･주제 등을 ‘아이템’으로
+간주
+ 사용자 관심 주제와 타깃 논문의 주제 유사도를 측정해 추천
+- 주요 활용 사례
+ TF-IDF + Cosine Similarity: 사용자 프로필(키워드 기반)과 논문 주제 유사도를 계산해
+초기 추천
+ Serendipity 향상: 서로 다른 두 도메인 간의 논문 추천(BisoNets + TF-IDF). Co-Author
+Network(CAN)와 결합
+ 고급 기법: 언어 모델, 맥락 유사도, 주제 관련성을 반영한 종속성 특징 모델
+ 인기도 반영: 참고문헌 중심성 지표, CombMNZ(유사도+인기도 결합), PRF(Pseudo
+Relevance Feedback) + 이종 서지 그래프 메타패스 등 활용
+- 장점
+ 사용자별 개별 모델 생성 → 맞춤형 추천 가능
+ 자동 생성된 사용자 모델 활용 시 초기 분류 비용･시간 절감
+- 한계
+ 각 아이템 특징 분석･사용자 모델 구축에 높은 계산 자원 필요
+ 인기･평가 정보를 직접 반영하기 어려움
+ 초기 입력(예: 대표 참고문헌) 필요
+○ 협업필터링(Collaborative Filtering: CF)
+- 정의
+ 유사한 취향을 가진 다른 사용자의 과거 선택 데이터를 기반으로 추천.
+ 콘텐츠 자체를 분석하지 않고, 사용자의 행위 패턴을 비교
+ Model-based: 행렬 분해(Matrix Factorization, SVD 등)로 사용자･아이템 잠재 요인 추출
+ Memory-based: kNN, Cosine Similarity, LSI 등 단순 계산 기반
+- 주요 활용 사례
+ LDA 기반 주제 유사도 변환 후 item-based CF. SVD 기반 신규 논문 추천. PageRank로
+인기도 반영. 공저자 네트워크 기반 우연성(serendipity) 추천.
+
+===== PDF_PAGE 144 =====
+- 128 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+- 장점
+ 콘텐츠 독립적 → 아이템 분석 비용 절감
+ 인기･품질 요인 반영 용이
+ 우연적 추천 가능성 높음
+- 한계
+ Cold Start: 초기 데이터 부족 시 성능 저하
+ Data Sparsity: 평점/행동 데이터의 희소성 문제
+ 확장성 문제 → 계산 자원 소모
+○ 혼합접근법(Hybrid Approaches)
+- 정의
+ CBF와 CF의 장점을 결합한 방식
+- 결합 구조
+ Separate & Combine: CBF･CF 각각 수행 후 결과 병합
+ CBF→CF 통합: CF에 콘텐츠 특징 주입
+ CF→CBF 통합: CBF에 사용자 행동 특징 주입
+ Unified Model: 콘텐츠･협력 특징을 동시에 포함하는 단일 모델 구축
+- 주요 활용 사례
+ 연관 규칙 마이닝으로 인용 문맥 기반 CF. Linked Data 기반 다기준 CBF+CF. 공동 태그
+기반 의미 유사도 계산. 과학 지식의 계층 구조 활용 다중 스케일 추천. 논문 개념 추출 기반
+CF 단순화. 커뮤니티 분할 기반 권위 있는 논문 추천. 콘텐츠･저자･인용･협력 네트워크
+통합 그래프 모델. 키워드 검색+인용/저자/출처 분석+신규 지표(DSI, ItIF) 결합
+- 장점
+ CBF･CF의 단점을 상호 보완
+ 데이터 다양성･추천 품질 향상
+ 신규･희소 데이터 상황에서도 효과적
+- 한계
+ 모델 복잡도 증가 → 구현･유지비용 상승
+ 통합 가중치･결합 방식 설계 필요
+
+===== PDF_PAGE 145 =====
+- 129 -
+제4장 연구 인력 DB 활용 방안
+□ AI 기반 연구자 추천시스템 고도화 방안
+○ 대규모 언어 모델(LLM)
+- LLM은 단순한 키워드 매칭을 넘어, 논문의 맥락, 서사 구조, 심지어 감정적 요소까지
+분석하여 사용자의 연구 관심사를 더 정교하게 식별함
+- 특히, 협업 필터링 모델에서 추출한 사용자 선호 정보를 LLM에 주입하는 하이브리드
+기술을 통해 추천 정확도를 획기적으로 향상시킬 수 있음
+○ 그래프 신경망(GNN)
+- GNN은 연구자, 논문, 기관, 키워드 간의 복잡한 관계를 그래프 구조로 모델링하여
+분석하는 데 매우 효과적임
+- 연구자 협업 네트워크의 '스몰월드(small-world)' 특성과 같은 구조적 특징을 학습
+하여 기존 방법으로 파악하기 어려운 숨겨진 협력 기회를 발굴하는 데 유용함
+○ 강화학습(RL)
+- 사용자의 클릭, 조회 시간 등 실시간 행동 데이터를 보상으로 활용하는 강화학습 알고
+리즘을 적용하여 추천 정책을 지속적으로 개선함
+- 새로운 사용자나 논문에 대한 추천이 어려운 '콜드 스타트(cold start)' 문제를 완화
+하고, 추천의 역동성을 높이는 데 필수적임
+○ '설명 가능성'과 '사용자 중심 UX'
+- 딥러닝 모델의 예측 결과는 종종 해석하기 어려운 '블랙박스'라는 한계를 가짐
+- AI 기반 추천시스템의 신뢰를 확보하기 위해서는 단순히 결과를 제시하는 것이 아니라,
+"왜 이 연구자가 추천되었는지"에 대한 명확한 이유를 제공하는 '설명 가능성(Ex-
+plainability)'이 필수적임
+- DB의 실질적인 활용도를 높이기 위해서는 사용자 데이터를 기반으로 최적의 UI를
+정의하고, 실제 사용자의 요구와 경험을 반영하는 사용자 중심의 UX/UI 설계가 중요함
+
+===== PDF_PAGE 146 =====
+- 130 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+□ DB를 활용한 추천 서비스 예시
+○ (인용 수) 유망한 연구자를 찾고자 하는 경우, 피인용 수를 보는 것이 가장 보편적이며,
+이 경우, 총 피인용 수를 확인할 수도 있으며, h-index를 참고할 수도 있음
+- 다만 신진 연구자의 경우, 발표한 논문이 적고, 이에 따라 피인용 수도 적은 것이 일반적
+이기 때문에 h-index를 살펴보는 것이 적합함
+- 다만 일부 연구자의 경우 특정 논문이 많은 인용을 받은 양질의 논문인 반면, 나머지
+논문은 인용 수가 적을 수 있음
+※ 이럴 경우 h-index가 높음에도 신뢰성이 낮아진다고 할 수 있어, i10-index를 함께 살펴보는 것도
+좋은 방법일 수 있음.
+- 총 피인용 수는 앞서 언급한 학술 사이트들 중 연구자 정보를 제공하는 모든 사이트들
+에서 확인할 수 있으며, 다만 h-index의 경우, Web of Science, Google Scholar,
+Scopus, Open Alex, ScienceON에서 확인할 수 있으며, i10-index는 Google
+Scholar만 제공함
+- 이 외에 Web of Science를 구독할 경우, Hot papers(최근 2개월간 피인용 상위
+0.1%에 속한 논문)의 수 및 비중, 피인용 수 상위 1%, 10% 논문의 수 및 비중도 알 수
+있음(이 경우, 역시 유망한 연구자를 찾는데 도움이 됨)
+○ (기고한 저널) 연구자가 논문을 기고한 저널이 해당 분야에서 영향력이 높거나 평가가
+좋은 저널이 많다면 우수한 연구자일 수 있으며, 특히 신진 연구자의 경우에는 논문 수가
+적어 정성적 평가의 비중이 커질 수 있음
+- 이런 경우 기고한 저널의 종류가 지표가 될 수 있으며 일반적으로 저널의 랭킹이 높을
+경우 심사 과정도 더 엄격하기 때문에, 높은 impact factor를 가진 저널, 높은 랭킹에
+기록된 저널에 투고한 논문이 많을수록 우수한 연구자라고 할 수 있음
+- 하지만 연구 분야에 따라 높은 수준의 저널이더라고 impact factor나 랭킹이 낮을
+수 있으며, 이는 해당 분야의 연구자 수가 작은 경우 종종 발생함(따라서 각 분야의 좋은
+저널을 확인하는 것도 중요)
+- 이렇게 저널의 수준에 대한 지표를 제공하는 사이트는 Web of Science(impact
+factor, Journal Citation Indicator, Cited Journal Rank, Eigenfactor Score),
+Scopus(Impact factor, SJR, CitedScore), OpenAlex(CWTS Core Source 포함
+여부, FWCI)가 있음
+- 그러나 Web of Science와 Scopus의 경우 구독을 해야지만 해당 정보들을 제공받을
+수 있다는 것이 단점
+
+===== PDF_PAGE 147 =====
+- 131 -
+제4장 연구 인력 DB 활용 방안
+○ (연구 트렌드) 특정 분야의 연구 트렌드에 맞는 연구를 하는지도 우수한 연구자 선정
+기준일 수 있음
+- 기술이 발전함에 따라 주목받지 않았던 기술이 주목을 받거나 새로운 기술이 개발되
+기도 하며, 그것이 유망한 종류의 기술일 경우 해당 기술을 주제로 한 연구가 많이 진행
+되고, 논문이 게재됨
+- 신진 연구자라서 게재한 논문의 총량이 적을지라도 주요 연구 분야의 트렌드에 맞는
+연구를 주력으로 하는 연구자라면 추후 업계에서 주목받는 연구자가 될 확률이 높음
+- 그렇다면 현재 특정 분야의 연구 트렌드가 어떤지 추적할 수 있어야 하며, 이런 연구
+트렌드를 추적해 주는 사이트는 Web of Science, Scopus, Lens, Dimensions,
+OpenAlex가 있음
+- 그러나 OpenAlex를 제외하고는 서비스 구독을 해야지만 제공한다는 단점이 있고,
+이외에도 arXiv(bioRxiv, medRxiv)의 “arXiv Trending” 또는 “Most popular”
+에서는 최근 많이 읽히거나 다운로드 된 논문들을 확인할 수 있어, 해당 세션을 확인
+하는 것도 연구 트렌드를 추적하는 것에 도움이 될 수 있음
+○ (연구 기금 내역) 연구자가 수주한 연구 자금의 규모와 수 역시도 연구자의 유망함을 간
+접적으로 알아볼 수 있음
+- 큰 연구 기금을 받았다는 것은 연구의 중요성이나 신뢰성을 나타낼 수 있고, 또한 여러
+곳에서 연구 기금을 받았다는 것은 해당 연구자의 신뢰성을 나타냄과 동시에 수행한
+연구들이 자주 사용된다는 것을 의미하기도 함
+- 특히 방위, 항공･우주, 양자 컴퓨팅과 같이 국가와 산업에 미칠 영향이 큰 분야들은
+연구 기금을 받았다는 것이 곧 연구자의 연구의 독창성과 실현 가능성을 입증함과
+동시에 연구자가 신뢰성이 있고, 영향력이 있다는 것을 의미함
+- 이렇게 연구 기금 내역에 대한 정보를 제공하는 사이트에는 Dimensions, Lens,
+OpenAlex가 있으며, 이 중 Dimensions와 Lens의 경우 유료 버전을 이용할 경우,
+기금의 규모뿐만 아니라 해당 기금을 지원한 기관의 종류, 연구 프로젝트 등을 확인할
+수 있음
+- 특히 Dimensions Plus의 경우 특정 기관의 기금 지원 경향이나 지원 규모, 그리고
+특정 연구 프로젝트에 지원한 비율 등 상세한 데이터를 시각화하여 제공하고 있어 연구
+기금 추적에 도움을 받을 수 있음
+- 이 외에도 Web of science와 Google Scholar 역시 기금 정보를 제공하기는 하지만
+제공받은 기관의 항목 정도만 확인할 수 있으며, 일부 연구의 경우 기금 정보가 누락됨
+
+===== PDF_PAGE 148 =====
+- 132 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+○ (연구 네트워크) 좋은 연구 네트워크를 가지고 있는 것도 우수한 연구자 선정 기준일 수
+있으며, 여기서 좋은 연구 네트워크를 가지고 있다는 것은 높은 전문가 평가를 받았거나,
+높은 학술대회에서 발표한 횟수, 다양한 국제 협업 등이 될 수 있음
+- 전문가 평가는 연구자가 권위 있는 연구자나 전문가들에게 좋은 평가나 추천을 받았거나
+특정 분야 내에서 인정을 받고 있는지를 확인하는 것이 될 수 있으며, 다만 이를 객관적
+으로 확인하는 것은 쉽지 않음
+※ 전문가 평가의 경우 대부분의 사이트들에서 제공하지 않으며 전문가와의 협업이나 인용 여부 등 간접적인
+방법을 통해 확인할 수 있음
+※ 또한 연구자가 경험이 풍부하고 영향력이 큰 연구자에게 지도를 받은 이력이 있다면 다른 연구자에
+비해 성장할 수 있는 환경이 좋은 연구자가 될 수 있음
+- 국내외 학술대회에서 여러 번 발표했다는 것은 해당 연구가 학술적으로 중요한 위치에
+있음을 의미할 수 있고, 특히 신진 연구자의 경우는 연구 네트워크나 영향력보다 연구
+자의 역량이 초청의 주요 요인이기 때문에 좀 더 객관적인 지표가 될 수 있음
+※ 국내외 학술대회 참석 빈도의 경우 자동으로 추적하는 시스템은 제한적이며, 대부분 저자가 직접 기록할
+경우에만 확인할 수 있으며, 간접적으로는 Google Scholar, Scopus, Dimensions 등이 학술대회에서
+발표한 연구가 논문으로 등재되었을 경우 저자의 이력에 해당 학술대회에 참석했다고 표시하고 있음
+- 마지막으로 국제 협업을 많이 하는 연구자는 넓은 연구 네트워크를 가질 가능성이 크며,
+다른 국가나 기관과의 공동연구 또는 프로젝트 참여 횟수가 높다면 더 넓은 네트워크를
+가지게 될 것으로 예상됨
+- 이 경우 이미 우수한 역량을 지닌 연구자일 수도 있으나, 역량이 비교적 낮더라도 여러
+프로젝트를 통해 성장할 가능성이 큰 연구자가 될 수 있음
+※ 국제 협업의 경우 대부분의 학술 정보 사이트들에서 확인할 수 있으나, Lens premium과 Dimensions
+Plus의 경우 특정 저자간 연구 협업의 강도와 빈도 등을 도식화하여 더 자세히 제공함
+□ 호라이즌 유럽 추천 서비스 예시
+○ 호라이즌 유럽의 경우 개인의 협력 네트워크를 통한 컨소시엄 구성이 어려운 연구자를
+위해, 온라인 플랫폼･Matchmaking Event･NCP 컨택 등 다양한 방법을 통해 협력
+파트너를 찾을 수 있도록 지원(한국연구재단, 2025)
+○ EU에서 제공하는 F&T Portal(Funding&Tenders Portal)이 구현하고자 하는 추천
+시스템과 유사함
+- F&T Portal에서 접근하면 다음 그림과 같은 화면을 볼 수 있으며, 왼쪽의 필터(키워드,
+기관, 연구자, 주제, 전문가 프로필 등) 기능을 통해 세부적인 매칭을 지원함
+
+===== PDF_PAGE 149 =====
+- 133 -
+제4장 연구 인력 DB 활용 방안
+※ 출처: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/partner-search?is
+ExactMatch=true&type=ORGANISATION,PERSON&order=DESC&pageNumber=1&pageSize=50&sortBy=last
+Modified (2025년 08월 21일 접근)
+[그림 4-17] EU Funding & Tenders Portal
+○ 또한 Pluto사에서 개발한 scinapse의 경우, AI를 활용해 연구자의 문헌 검토를 용이하게
+하는 것이 주목적이나, 연구 동향 파악, 협업 대상 탐색 등의 기능도 추가로 지원
+- 현재 협업 대상 탐색 기능에서 제공하고 있는 필터는 h-index, 논문 수, 인용 수, 소속
+기관 및 국가, 연구 활동 기간으로 한정되어 있으나, 직접적인 매칭을 지원하지는 않음
+- 또한, Research intelligence 기능을 활용하면, 연구 분야 내 핵심 인물, 영향력 있는
+논문, 트렌드를 시각적으로 제시하기 때문에, 간접적으로 도움을 받을 수 있음
+
+===== PDF_PAGE 150 =====
+- 134 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+※ 출처: https://insights.pluto.im/using-ai-for-research-collaboration/?utm_source (2025년 08월 21일 접근)
+[그림 4-18] scinapse의 전문가 찾기 기능
+
+===== PDF_PAGE 151 =====
+결론
+제5장
+제1절 연구 주요 결과
+제2절 향후 과제와 시사점
+
+===== PDF_PAGE 152 =====
+
+
+===== PDF_PAGE 153 =====
+- 137 -
+제5장 결론
+제5장 결론
+제1절 연구 주요 결과
+□ 연구 인력 DB 체계화를 위해 기존 학술 DB 현황과 각 DB가 수집하고 제공하는
+정보에 기초하여 연구자 정보와 지표를 검토함
+○ Web of Science, Scopus, OpenAlex 등 기존 학술 DB는 별도의 식별코드를 가지고
+있으며, 이에 기초하여 각 연구자의 정보를 제공하고 있음
+○ 연구 네트워크 도구는 연구 분야의 지식 관리 시스템으로 사람과 자원에 대한 학술 정보를
+식별, 위치 파악 및 활용하는 데 사용됨
+○ 학술 DB별 별도의 분류체계에 따라 수집하는 연구자 정보 또한 다양한 형태로 구성되며
+주요 사이트에서 수집, 분석, 및 제공하는 연구자 정보는 표 5-1과 같음
+<표 5-1> 주요 학술 DB에 포함된 연구자 정보
+사이트명 연구자 기본정보 저자의 출판물 정보 피인용 및 영향력 저자의 협업 정도
+Web of
+Science
+이름
+소속기관
+citation topic
+(micro/meso)
+출판물 수 및 제목
+각 출판물 피인용 수
+게재한 저널 목록
+발행연도
+주제 및 분야
+피 인용수
+(총 피인용 수, 자가인용제외
+피인용 수,
+평균 피인용 수)
+영향력 지표(h-index) 협력 기관 및 협력
+저자
+자금조달 기관Hot papers의 수 및 비중
+* ESI 기준 최근 2개월 간 피인용
+상위 0.1%에 속한 논문
+피인용수 상위 1% 논문의 수
+및 비중 피인용수 상위 10%
+논문의 수 및 비중
+영향력 지표
+(impact factor, Journal
+Citation Indicator,
+Cited Journal Rank, Cited
+Half-Life,
+Eigenfactor Score)
+Google
+Scholar
+이름
+소속기관
+홈페이지
+이메일
+주요 연구 분야
+출판물 개수 및 제목
+각 출판물 피인용 수
+(Open access만 제공됨)
+전체 피인용 수
+(전체 기간/최근 5년)
+영향력 지표
+(h-index, i10-index)
+(전체 기간/최근 5년)
+협력 저자 목록
+재정 지원 기관
+Scopus
+이름
+소속기관
+주요 연구 분야
+출판물 개수 및 제목
+각 출판물 피인용 수
+게재한 저널 목록
+해당 연구자의 논문을
+피인용한 논문 목록
+총 피인용 수
+영향력 지표(h-index)
+협력 저자 목록
+과거 소속기관
+이력
+저자 위치(제1저자, 제2저자,
+교신저자 등)
+인용 추세 분석표
+(연도별 인용 횟수･트렌드, 연평균
+
+===== PDF_PAGE 154 =====
+- 138 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+사이트명 연구자 기본정보 저자의 출판물 정보 피인용 및 영향력 저자의 협업 정도
+논문을 게재한 저널의
+Impact factor, SJR,
+CiteScore
+Top cited documents
+인용 수, 전체 인용 추이 및 영향력)
+i10-index
+Lens
+이름
+소속기관
+주요 연구 분야
+출판물 개수 및 제목
+특허 출원 및 인용 개수 전체 피인용 수
+협력 저자 목록
+기관 및 타
+연구자와의 협업
+관계
+출판물 관계 지도
+(논문과 특허, 연구 프로젝트
+사이 상관관계)
+특정 주제의 연구 트렌드 변화
+분석
+시간에 따른 피인용 변화
+저자 간 공동 연구
+관계
+특정 저자･기관
+간 연구 네트워크
+형성 정도
+Dimensions
+이름
+소속기관
+주요 연구 분야
+출판물 개수 및 제목
+각 출판물 피인용 수 전체 피인용 수 협력 저자 목록
+타 연구자와의
+성과 비교
+전체 출판물 목록
+(Open access가 아닌
+출판물도 확인 가능)
+저자 위치
+(제1저자, 제2저자, 교신저자 등)
+영향력 지표
+(h-index, i10-index, 연도별
+h-index 변화)
+인용 트렌드 및 연도별 인용 변화
+분야별･주제별 피인용 정도 분석
+영향력 정도
+* h-index, i10-index, CiteScore,
+Altmetric 점수 기반으로 평가됨
+특정
+저자･기관과의
+협업 강도 및 빈도
+국제 협업 패턴
+OpenAlex
+이름
+소속기관
+주요 연구 분야
+타 연구자와의
+성과 비교
+APC sum
+* 논문 게재 비용
+출판물 개수 및 제목
+게재한 저널
+각 논문 피인용 수
+CWTS Core Source 저널
+여부
+전체 피인용 수
+연도별 피인용 수
+연도별 인용 트렌드
+영향력 지표(h-index, FWCI)
+협력 저자 목록
+협력 기관
+한국학술지
+인용색인
+이름
+소속기관
+학위
+주요 연구분야
+출판물 개수 및 제목
+각 논문 피인용 수
+전체 피인용 수
+평균 피인용 수
+단독 논문-협력
+논문 개수 및 비율
+ScienceON
+이름
+소속기관
+주요 연구분야
+출판물 개수 및 제목
+각 논문 피인용 수
+전체 피인용 수
+영향력 지표(h-index)
+Crossref 출판물에 대한 data base 사이트
+arXiv,
+bioRxiv,
+medRxiv
+특정 분야에 대한 프리프린트 사이트
+(arXiv: 물리학, 수학, 컴퓨터 과학 등 분야, bioRxiv: 생물학 분야, medRxiv: 의학 및 건강학 분야)
+OSF
+Preregistra
+tion
+연구 설계, 가설, 분석 계획 등을 공개 등록하는 사이트
+SciELO 라틴 아메리카, 카리브해, 스페인, 포르투갈을 포함한 지역의 학술 저널을 제공하는 Open Access
+사이트
+
+===== PDF_PAGE 155 =====
+- 139 -
+제5장 결론
+□ 연구자 정보의 공통적인 사항을 우선적인 논리적 변수(Entity)로 정의(표준화)하여
+개체-관계(Entity Relation) 모델을 설계하였고, 연구자 지표를 통해 연구자 기본
+정보와 연계 정보의 관계를 검토함
+○ 체계화된 연구 인력 DB를 구축하기 위해 연구자 정보 중 공통되는 내용(저자 구분, 연구자
+기본 정보, 소속기관, 연 구분야, 연구자 이력 정보, 출판 정보, 인용 정보, 국가 정보 등)을
+우선적인 논리적 변수(연구 인력 DB 메타)로 정의함
+구분 세부 구분 Web of
+Science
+Google
+Scholar Scopus Lens Dimen
+sions
+Open
+Alex KCI Science
+ON IRIS aminer 선정
+여부
+연구자
+기본정보
+연구자ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+이름 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+홈페이지 　 ○ 　 　 　 　 　 　 　 ○ 미사용
+이메일 　 ○ 　 　 　 　 　 　 ○ 　 미사용
+학위 　 　 　 　 　 　 ○ 　 　 　 미사용
+성별 　 　 　 　 　 　 　 　 　 　 사용
+연령 　 　 　 　 　 　 　 　 　 　 사용
+국가ID 　 　 　 　 　 　 　 　 　 　 사용
+소속기관
+(대학,
+연구기관)
+기관 ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+기관구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+기관 명 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+기관주소 　 　 　 　 　 　 　 　 ○ 　 미사용
+기관
+홈페이지 　 　 　 　 　 　 　 　 ○ 　 미사용
+연구자
+이력정보
+연구자ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+이력구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+이력일련
+번호 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+소속ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+수상ID ○ 　 　 　 　 　 　 　 　 ○ 미사용
+연구분야 ID ○ ○ ○ ○ ○ ○ ○ ○ ○ 　 사용
+진행여부 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+연구분야
+분야 ID ○ ○ ○ ○ ○ ○ ○ ○ ○ 　 사용
+상위 분야
+ID ○ ○ ○ ○ ○ ○ ○ ○ ○ 　 사용
+분야 명 ○ ○ ○ ○ ○ ○ ○ ○ ○ 　 사용
+분야설명 ○ ○ ○ ○ ○ ○ ○ ○ ○ 　 사용
+<표 5-2> 연구 인력 DB 논리적 변수 선정
+
+===== PDF_PAGE 156 =====
+- 140 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+구분 세부 구분 Web of
+Science
+Google
+Scholar Scopus Lens Dimen
+sions
+Open
+Alex KCI Science
+ON IRIS aminer 선정
+여부
+수상정보
+수상 ID ○ 　 　 　 　 　 　 　 　 ○ 미사용
+국가 ID ○ 　 　 　 　 　 　 　 　 ○ 미사용
+수상처 ○ 　 　 　 　 　 　 　 　 ○ 미사용
+수상명 ○ 　 　 　 　 　 　 　 　 ○ 미사용
+국가정보
+국가ID ○ 　 　 　 　 　 　 　 　 ○ 사용
+국가명 ○ 　 　 　 　 　 　 　 　 ○ 사용
+출판정보
+자료번호 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료명 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+초록 ○ 　 　 　 　 ○ 　 　 　 ○ 미사용
+출처유형 　 　 ○ 　 　 　 　 　 　 　 미사용
+인용수 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+발행연도 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+발행일자 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+저널등급 　 　 ○ 　 　 　 　 　 　 　 미사용
+핵심단어 　 　 　 　 　 　 　 　 　 ○ 미사용
+저자구분
+저자구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료번호 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+연구자ID ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+특허정보
+특허구분
+코드 　 　 　 ○ 　 　 　 　 　 　 미사용
+자료번호 　 　 　 ○ 　 　 　 　 　 　 미사용
+자료구분 　 　 　 ○ 　 　 　 　 　 　 미사용
+인용정보
+자료번호 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+자료구분 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+인용순번 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+인용자료명 ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 사용
+
+===== PDF_PAGE 157 =====
+- 141 -
+제5장 결론
+○ 논리적 변수 간 관계를 개체-관계 모델(ERM)로 설계하여 연구자 기본 정보에 대한 연계
+정보를 보여줌(이를 기반으로 통계 시각화 가능)
+[그림 5-1] 연구 인력 DB의 개체-관계 모델(ERM)
+○ 향후 구현될 연구 인력 DB의 활용 시 기본이 되는 연구자 인용 지표, 공동연구 지표,
+생산성 지표 등 연구자 단위 지표의 활용이 검토됨
+[그림 5-2] 공동연구 지표 활용한 공동연구 네트워크 예시
+
+===== PDF_PAGE 158 =====
+- 142 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+□ 연구 인력 DB의 활용을 위해 연구 인력 DB 검색 시스템을 예시하고, 연구자 추천
+시스템을 검토함
+○ 연구 인력 DB 객체-관계(ER) 모델에 기반하여 대표적인 해외 사이트를 활용하여 검색
+시스템과 향후 서비스할 플랫폼 구성을 예시함
+[그림 5-3] 향후 서비스 플랫폼 구성 예시
+○ 주요 연구자 추천시스템으로 협업 필터링(Collaborative Filtering, CF), 콘텐츠 기반
+(Content-Based, CB); 그리고 두 방법을 결합하여 개별적인 한계를 극복하는 하이브
+리드(Hybrid) 접근 방식으로 구분됨
+○ 문헌 추천, 협업자 추천, 심사자 추천, 학회 또는 학술지 추천, 기타 데이터셋이나 연구비
+추천 등으로 활용될 수 있으며, 향후 AI 기반 연구자 추천시스템으로 고도화가 가능함
+○ 또한 인용수, 기고한 저널, 연구 트렌드, 연구기금 내역, 연구자 네트워크 등 DB 기반
+활용한 추천 서비스와 호라이즌 유럽 Funding & Tenders Portal의 파트너 서치 기능을
+예시함
+
+===== PDF_PAGE 159 =====
+- 143 -
+제5장 결론
+제2절 향후 과제와 시사점
+□ 연구 인력 DB의 체계화를 위한 기존 학술 DB 현황과 DB 내 연구자 정보를 분석함
+○ 기존 학술 DB의 경우 상업용 DB의 경우, 데이터의 규모가 크고 신뢰성이 높은 반면,
+공개적 활용에 한계가 존재하여 개방된 DB 활용과 이의 검증을 통한 신뢰성 제고가
+필요함
+○ 연구자 정보의 경우, 연구자의 식별에 한계가 있어 근본적인 제약이 존재하므로 연구자
+식별에 대한 추가적인 연구가 필요하며 특히, 한국인의 동명이인에 대한 식별이 고려
+되어야 함
+□ 연구 인력 정보 구성과 표준화를 통한 연구 인력 DB 체계화와 연구 인력 DB 활용 시
+기본이 되는 연구자 단위의 주요 지표에 대한 활용을 검토함
+○ 주요 학술 DB에서 제공하고 있는 인력 정보 중 공통적인 내용을 중심으로 인력 정보를
+구성하고 논리 ER 모델을 설계하였고 데이터의 부족으로 시각화에 한계가 존재함
+○ 실제적인 연구 인력 DB 구현을 위해서는 연구자 데이터의 확보가 우선적으로 필요하고
+이를 바탕으로 연구 인력 DB ER 모델 개선이 필요함
+□ 연구자에 대한 네트워킹 지원 강화를 위해 연구 인력 DB 검색 시스템을 예시하였고
+연구자 추천시스템 등 활용 방안을 검토함
+○ 연구 인력 DB 활용을 위해 요구되는 연구 인력의 속성과 지표의 설계를 위한 사전 기획
+연구와 명확한 정책목표에 따른 설계 전략이 요구됨
+○ 연구 인력 DB 활용을 통해 연구 분야별 유출입 규모, 특정 분야의 부족한 인력 파악과
+해당 분야에 인재 유치 등 새로운 인력 정책이나 지원에 근거를 제공할 수 있음
+
+===== PDF_PAGE 160 =====
+- 144 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+참고문헌
+이재윤 (2006). 연구성과 측정을 위한 h-지수의 개량에 관한 연구. 정보관리학회지, 23(3), 167-186.
+이재윤 (2014). 공동연구 네트워크 분석을 위한 중심성 지수에 대한 비교 연구. 정보관리학회지, 31(3),
+153-179.
+이재윤 (2016). 공저자 수를 고려한 h-지수 산출. 정보관리학회지, 33(3), 7-29.
+이재윤 (2023). 공동연구 특성을 고려한 연구자 유형 구분에 대한 연구. 정보관리학회지, 40(2),
+59-80.
+이재윤, 김판준, 강대신, 김희정, 유소영, 이우형 (2011). 계량서지적 기법을 활용한 LED 핵심 주제
+영역의 연구 동향 분석. 정보관리연구, 42(3), 1-26.
+한국연구재단(2025), 호라이즌 유럽 가이드북, 49-63.
+KISTI 과학계량연구실(2016), S&T 매크로모니터링 및 과학지식의 영향력 측정 연구기반 구축,
+한국과학기술정보연구원.
+KISTI 글로벌R&D분석센터(2021), 『AI기반 과학기술 이종데이터 분석모델 개발』 상세기획보고서,
+한국과학기술정보연구원.
+KISTI 글로벌R&D분석센터(2024), 『AI기반 과학기술 이종데이터 분석모델 개발』 단계보고서,
+한국과학기술정보연구원.
+Azoulay, P., Ganguli, I., & Graff Zivin, J. (2017). The mobility of elite life scientists: Pro-
+fessional and personal determinants. Research Policy, 46(3), 573-590.
+Boyack and Klavans(2019), Creation and Analysis of Large-Scale Bibliometric Networks,
+in Glanzel et al. (eds.), Springer Handbook of Science and Technology Indicators,
+Springer.
+Bozeman, B., & Corley, E. (2004). Scientists’ collaboration strategies: Implications for
+scientific and technical human capital. Research Policy, 33(4), 599-616.
+Chen, K., Zhang, Y., & Fu, X. (2019). International research collaboration: An emerging
+domain of innovation studies? Research Policy, 48(1), 149-168.
+Costas, R. & Bordons, M. (2008). Is g-index better than h-index? An exploratory study at
+the individual level. Scientometrics, 77(2), 267-288.
+Cousijn et al.(2020), Connected Research: The Potential of the PID Graph, Pattern, 2(1),
+100180.
+
+===== PDF_PAGE 161 =====
+- 145 -
+참고문헌
+Dayton, L.(2020), How South Korea made itself a global innovation leader, Nature,
+581(7809), S54-S54.
+Ding, J., Yang, L., & Liu, Q. (2013). Measuring the academic impact of researchers by
+combined citation and collaboration impact. Proceedings of the 2013 ISSI Conference,
+1177-1187.
+Ebadi, A., & Schiffauerova, A. (2015). How to become an important player in scientific
+collaboration networks? Journal of Informetrics, 9(4), 809-825.
+Edler, J., Fier, H., & Grimpe, C. (2011). International scientist mobility and the locus of
+knowledge and technology transfer. Research Policy, 40(6), 791-805.
+Egghe, L. (2006). An improvement of the H-index: the G-index. ISSI Newsletter, 2(1), 8-9.
+Freeman, R. B., Ganguli, I., & Murciano-Goroff, R. (2014). Why and wherefore of
+increased scientific collaboration. In The changing frontier: Rethinking science and
+innovation policy University of Chicago Press, 17-48.
+Gusenbauer, M. (2024). Beyond Google Scholar, Scopus, and Web of Science: An
+evaluation of the backward and forward citation coverage of 59 databases' citation
+indices. Research Synthesis Methods, 15(5), 802-817.
+Hirsch, J. E. (2005). An index to quantify an individual's scientific research output.
+Proceedings of the National Academy of Sciences of the United States of America,
+102(46), 16569-16572.
+Jurowetzki, R. etal.(2021), The Privatization of AI Research (-ers): Causes and Potential
+Consequences - From university-industry interaction to public research brain-drain?.
+Larsen, B., Wildgaard, L. and Schneider, J. W.(2014), D5.8 – Novel bibliometri indicators,
+ACUMEN.
+Lee, Jae Yun, & Choi, Sanghee (2013). Collaboration networks and document networks
+in informetrics research from 2001 to 2011. Journal of the Korean Society for
+Information Management, 30(1), 179-191.
+Leydesdorff, L., & Wagner, C. S. (2008). International collaboration in science and the
+formation of a core group. Journal of Informetrics, 2(4), 317-325.
+Liu, M., & Hu, X. (2022). Movers’ advantages: The effect of mobility on scientists’
+productivity and collaboration. Journal of Informetrics, 16(3), 101311.
+Maphosa, V., & Maphosa, M. (2023). Fifteen years of recommender systems research in
+higher education: Current trends and future direction. Applied Artificial Intelligence,
+37(1), 2175106.
+
+===== PDF_PAGE 162 =====
+- 146 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+Newman, M. E. J. (2004). Coauthorship networks and patterns of scientific collaboration.
+Proceedings of the National Academy of Sciences of the United States of America,
+101(Suppl 1), 5200-5205.
+OECD (2017), OECD Science, Technology and Industry Scoreboard 2017: The digital
+transformation, OECD Publishing, Paris
+Orazbayev, S. (2017). International knowledge flows and the administrative barriers to
+mobility. Research Policy, 46(9), 1655-1665.
+Paper authorship goes hyper: A single field is behind the rise of thousand-author papers.
+(2018, January 30). nature index.
+https://www.nature.com/nature-index/news-blog/paper-authorship-goes-hyper
+Robinson-Garcia, N., Corona-Sobrino, C., Chinchilla-Rodriguez, Z., Torres-Salinas, D.,
+& Costas, R. (2025). The use of informetric methods to study diversity in the scientific
+workforce: A literature review. Quantitative Science Studies, 1-34.
+Visser, M., Van Eck, N. J., & Waltman, L. (2021). Large-scale comparison of bibliographic
+data sources: Scopus, Web of Science, Dimensions, Crossref, and Microsoft Academic.
+Quantitative science studies, 2(1), 20-41.
+Wagner, C. S. (2006). International collaboration in science and technology: Promises and
+pitfalls. In L. Box & R. Engelhard (Eds.), Science and technology policy for development,
+dialogues at the interface. Anthem Press.
+Wagner, C. S., Whetsell, T. A., & Leydesdorff, L. (2017). Growth of international colla-
+boration in science: Revisiting six specialties. Scientometrics, 110(3), 1633-1652.
+Wildgaard, L. (2019). An overview of author-level indicators of research performance.
+Springer handbook of science and technology indicators, 361-396.
+Wuchty, S., Jones, B. F., & Uzzi, B. (2007). The increasing dominance of teams in pro-
+duction of knowledge. Science, 316(5827), 1036-1039.
+Yan, X., Zhai, L., & Fan, W. (2013). C-index: A weighted network node centrality measure
+for collaboration competence. Journal of Informetrics, 7(1), 223-239.
+Zhang, M., Ma, J., Liu, Z., Sun, J., & Silva, T. (2016). A research analytics framework-
+supported recommendation approach for supervisor selection. British Journal of
+Educational Technology, 47(2), 403-420.
+
+===== PDF_PAGE 163 =====
+- 147 -
+참고 Website
+참고 Website
+https://app.dimensions.ai/
+https://app.dimensions.ai/details/entities/publication/author/ur.0667466715.32
+https://app.dimensions.ai/discover/publication?search_mode=content
+https://arxiv.org/
+https://arxiv.org/category_taxonomy
+https://clarivate.libguides.com/librarianresources/coverage
+https://docs.dimensions.ai/dsl/data-sources.html
+https://docs.google.com/document/d/1bDopkhuGieQ4F8gGNj7sEc8WSE8mvLZS/edit
+#heading=h.5w2tb5fcg77r
+https://en.wikipedia.org/wiki/Comparison_of_research_networking_tools_and_resear
+ch_profiling_systems
+https://en.wikipedia.org/wiki/Dimensions_(database)
+https://en.wikipedia.org/wiki/Google_Scholar
+https://en.wikipedia.org/wiki/Research_Organization_Registry
+https://en.wikipedia.org/wiki/The_Lens
+https://explore.openaire.eu/
+https://help.openalex.org/hc/en-us/articles/24736129405719-Topics
+https://images.webofknowledge.com/images/help/WOS/hp_research_areas_easca.html
+https://images.webofknowledge.com/images/help/WOS/hp_subject_category_terms_t
+asca.html
+https://incites.zendesk.com/hc/en-gb/articles/22514077746961-Citation-Topics
+https://insights.pluto.im/using-ai-for-research-collaboration/?utm_source
+https://matilda.science/
+https://openalex.org/
+https://openalex.org/authors/a5102747646
+https://openalex.org/authors?page=1&filter=default.search:prashant+mali
+https://openalex.org/stats
+
+===== PDF_PAGE 164 =====
+- 148 -
+데이터 기반 해외 우수연구자 탐색 및 네트워킹 지원체계 구축
+https://openalex.org/works?page=1&filter=title_and_abstract.search:artificial+intelligence
+https://osf.io/
+https://scholar.google.com/
+https://scholar.google.com/citations?hl=ko&user=blY0ilIAAAAJ
+https://scholar.google.com/intl/en/scholar/about.html
+https://scielo.org/en/
+https://scienceon.kisti.re.kr/
+https://search.crossref.org/
+https://service.elsevier.com/app/answers/detail/a_id/15181/supporthub/scopus/
+https://zenodo.org/records/16762508
+https://www.aminer.cn/
+https://www.aminer.cn/profile/prashant-mali/53f43994dabfaedd74dbe1e3
+https://www.biorxiv.org/
+https://www.biorxiv.org/
+https://www.dimensions.ai/dimensions-data/
+https://www.elsevier.com/products/scopus/content
+https://www.kci.go.kr/kciportal/main.kci
+https://www.kci.go.kr/kciportal/po/citationindex/poCretDetail.kci?citationBean.cretId=
+CRT001624360&amp;citationBean.artiId=ART003166814
+https://www.kci.go.kr/kciportal/po/search/poTotalSearList.kci
+https://www.lens.org/lens/orcid/0000-0002-8677-4562/scholar
+https://www.lens.org/lens/search/patent/structured
+https://www.lens.org/lens/search/scholar/structured
+https://www.lens.org/lens/search/scholar/list?q=artificial%20intelligence
+https://www.octopus.ac/search/publications
+https://www.scopus.com/authid/detail.uri?authorId=57191951310
+https://www.scopus.com/results/authorNamesList.uri?sort=count-f&src=al&sid=330f7
+5b8dfce2dc0e3c87b2c0839819e&sot=al&sdt=al&sl=42&s=AUTHLASTNAME%28mali%
+29+AND+AUTHFIRST%28prashant%29&st1=mali&st2=prashant&orcidId=&selectionP
+ageSearch=anl&reselectAuthor=false&activeFlag=true&showDocument=false&results
+
+===== PDF_PAGE 165 =====
+- 149 -
+참고 Website
+PerPage=20&offset=1&jtp=false&currentPage=1&previousSelectionCount=0&tooMan
+ySelections=false&previousResultCount=0&authSubject=LFSC&authSubject=HLSC&a
+uthSubject=PHSC&authSubject=SOSC&exactAuthorSearch=false&showFullList=false
+&authorPreferredName=&origin=searchauthorfreelookup&affiliationId=&txGid=51a
+623d9acb88b6f36316cc0039b46d9
+https://www.semanticscholar.org/
+https://www.semanticscholar.org/author/P.-Mali/48833445
+https://www.webofscience.com/wos/author/author-search
+https://www.webofscience.com/wos/author/record/1881748
+https://x.com/isidroaguillo/status/1951219977597419759
+https://xueshu.baidu.com/
+https://xueshu.baidu.com/scholarID/CN-BX74XKFJ
+https://xueshu.baidu.com/usercenter/data/authorchannel?cmd=frontpage
+
+===== PDF_PAGE 166 =====

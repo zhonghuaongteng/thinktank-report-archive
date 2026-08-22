@@ -37,8 +37,9 @@ def expected_catalog_size(
     crds_asset_count: int = 0,
     nistep_asset_count: int = 0,
     stepi_asset_count: int = 0,
+    kistep_asset_count: int = 0,
 ) -> int:
-    return seed_count + catalog_asset_count + early_asset_count + cset_asset_count + atlantic_asset_count + belfer_asset_count + nbr_asset_count + merics_asset_count + bruegel_asset_count + crds_asset_count + nistep_asset_count + stepi_asset_count
+    return seed_count + catalog_asset_count + early_asset_count + cset_asset_count + atlantic_asset_count + belfer_asset_count + nbr_asset_count + merics_asset_count + bruegel_asset_count + crds_asset_count + nistep_asset_count + stepi_asset_count + kistep_asset_count
 
 
 def main() -> None:
@@ -75,6 +76,9 @@ def main() -> None:
         "59_CRDS_NISTEP科技主题与机构功能对照.csv",
         "60_STEPI韩文科技与中国专题增补台账.csv", "61_STEPI韩文科技与中国专题增补结果.md",
         "62_STEPI韩文科技与中国主题索引.csv", "63_STEPI韩文科技与中国复用矩阵.csv",
+        "64_KISTEP韩文正式报告总目录与重点附件台账.csv", "65_KISTEP韩文正式报告总目录与重点附件结果.md",
+        "66_KISTEP韩文科技与中国主题索引.csv", "67_KISTEP韩文科技与中国复用矩阵.csv",
+        "68_智库分层与转向节点采集矩阵.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -345,6 +349,33 @@ def main() -> None:
     stepi_catalog = [r for r in catalog if r["报告ID"].startswith("C-STEPI-")]
     assert len(stepi_catalog) == len(stepi_assets)
     assert all(r["机构观点等级"] == "机构正式研究" for r in stepi_catalog)
+    kistep_assets = rows(root / "64_KISTEP韩文正式报告总目录与重点附件台账.csv")
+    assert len(kistep_assets) == 1174, len(kistep_assets)
+    assert sum(bool(r["本地原始资产"]) for r in kistep_assets) == 48
+    assert sum(r["文本质量"] == "可检索文本" for r in kistep_assets) == 44
+    assert sum(r["文本质量"] == "图像型PDF，OCR待补" for r in kistep_assets) == 4
+    assert sum(r["文本质量"] == "官方目录无本地正文" for r in kistep_assets) == 1126
+    assert sum(r["观察窗"] == "W1" for r in kistep_assets) == 36
+    assert sum(r["观察窗"] == "W2" for r in kistep_assets) == 496
+    assert sum(r["观察窗"] == "W3" for r in kistep_assets) == 642
+    assert sum(r["科技关联层级"] == "核心科技直接材料" for r in kistep_assets) == 197
+    assert sum("中国科技与国际比较" in r["主题标签"] for r in kistep_assets) == 24
+    assert sum(r["下载优先级"] == "P0-China-tech" for r in kistep_assets) == 5
+    assert sum(r["下载优先级"] == "P0-core-tech" for r in kistep_assets) == 194
+    assert sum(r["下载优先级"] == "P1-global-STI" for r in kistep_assets) == 125
+    assert sum(r["下载优先级"] == "P2-STI-baseline" for r in kistep_assets) == 850
+    assert len(rows(root / "66_KISTEP韩文科技与中国主题索引.csv")) == 2091
+    assert len(rows(root / "67_KISTEP韩文科技与中国复用矩阵.csv")) == 312
+    assert all(
+        r["本地原始资产"] and Path(r["本地原始资产"]).exists()
+        and r["本地文本"] and Path(r["本地文本"]).exists()
+        and r["本地切片"] and Path(r["本地切片"]).exists()
+        and len(r["SHA256"]) == 64 and int(r["PDF页数"]) > 0
+        for r in kistep_assets if r["本地原始资产"]
+    )
+    kistep_catalog = [r for r in catalog if r["报告ID"].startswith("C-KISTEP-")]
+    assert len(kistep_catalog) == len(kistep_assets)
+    assert all(r["机构观点等级"] == "机构正式研究" for r in kistep_catalog)
     assert len(catalog) == expected_catalog_size(
         seed_count=len(seeds),
         catalog_asset_count=len(catalog_assets),
@@ -358,6 +389,7 @@ def main() -> None:
         crds_asset_count=len(crds_catalog),
         nistep_asset_count=len(nistep_catalog),
         stepi_asset_count=len(stepi_catalog),
+        kistep_asset_count=len(kistep_catalog),
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -374,6 +406,7 @@ def main() -> None:
             (crds_assets, ("本地原始资产",)),
             (nistep_assets, ("本地原始资产",)),
             (stepi_assets, ("本地原始资产",)),
+            (kistep_assets, ("本地原始资产",)),
         )
         for row in ledger
         for field in fields
@@ -385,6 +418,9 @@ def main() -> None:
     image_pdf_paths = {
         Path(r["本地原始资产"]).resolve()
         for r in stepi_assets if r["文本质量"] == "图像型PDF，OCR待补"
+    } | {
+        Path(r["本地原始资产"]).resolve()
+        for r in kistep_assets if r["文本质量"] == "图像型PDF，OCR待补"
     }
     for pdf in pdfs:
         assert pdf.read_bytes()[:4] == b"%PDF", pdf
@@ -450,13 +486,18 @@ def main() -> None:
         ("61_STEPI韩文科技与中国专题增补结果.md", "国际科技智库观点演变_STEPI韩文科技与中国专题增补结果.md"),
         ("62_STEPI韩文科技与中国主题索引.csv", "国际科技智库观点演变_STEPI韩文科技与中国主题索引.csv"),
         ("63_STEPI韩文科技与中国复用矩阵.csv", "国际科技智库观点演变_STEPI韩文科技与中国复用矩阵.csv"),
+        ("64_KISTEP韩文正式报告总目录与重点附件台账.csv", "国际科技智库观点演变_KISTEP韩文正式报告总目录与重点附件台账.csv"),
+        ("65_KISTEP韩文正式报告总目录与重点附件结果.md", "国际科技智库观点演变_KISTEP韩文正式报告总目录与重点附件结果.md"),
+        ("66_KISTEP韩文科技与中国主题索引.csv", "国际科技智库观点演变_KISTEP韩文科技与中国主题索引.csv"),
+        ("67_KISTEP韩文科技与中国复用矩阵.csv", "国际科技智库观点演变_KISTEP韩文科技与中国复用矩阵.csv"),
+        ("68_智库分层与转向节点采集矩阵.md", "国际科技智库观点演变_智库分层与转向节点采集矩阵.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv"))
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "06_数据资产" / "数据资产清单.csv"))
     print("viewpoint_research_validation=ok")
-    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)} crds_assets={len(crds_assets)} nistep_assets={len(nistep_assets)} stepi_assets={len(stepi_assets)}")
+    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)} crds_assets={len(crds_assets)} nistep_assets={len(nistep_assets)} stepi_assets={len(stepi_assets)} kistep_assets={len(kistep_assets)}")
 
 
 if __name__ == "__main__":
