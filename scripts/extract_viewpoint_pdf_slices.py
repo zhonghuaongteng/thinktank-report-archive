@@ -121,10 +121,18 @@ def main() -> int:
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--text-dir", type=Path, required=True)
     parser.add_argument("--slice-dir", type=Path, required=True)
+    parser.add_argument("--stems", default="", help="comma-separated PDF stems; default processes all PDFs")
     args = parser.parse_args()
     args.text_dir.mkdir(parents=True, exist_ok=True)
     args.slice_dir.mkdir(parents=True, exist_ok=True)
-    for path in sorted(args.input.glob("*.pdf")):
+    selected = {value.strip() for value in args.stems.split(",") if value.strip()}
+    paths = sorted(args.input.glob("*.pdf"))
+    if selected:
+        paths = [path for path in paths if path.stem in selected]
+        missing = selected - {path.stem for path in paths}
+        if missing:
+            raise ValueError(f"selected PDF stems missing: {sorted(missing)}")
+    for path in paths:
         process_pdf(path, args.text_dir, args.slice_dir)
     return 0
 

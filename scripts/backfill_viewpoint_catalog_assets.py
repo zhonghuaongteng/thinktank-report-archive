@@ -29,6 +29,32 @@ STEPI_DOWNLOAD_RE = re.compile(
     re.I | re.S,
 )
 DIRECT_OVERRIDES: dict[str, str] = {}
+OFFICIAL_PDF_OVERRIDES = {
+    "C-OECD-DOI-7CC876F7-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/08/optimising-the-operation-and-use-of-national-research-infrastructures_fcf87118/7cc876f7-en.pdf",
+    "C-OECD-DOI-0002217C-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/05/an-industrial-policy-framework-for-oecd-countries_233e3061/0002217c-en.pdf",
+}
+
+
+def load_light_catalog_overrides(root: Path) -> dict[str, str]:
+    """Reuse official attachment URLs already verified in lightweight ledgers."""
+    overrides: dict[str, str] = {}
+    for name in (
+        "64_KISTEP韩文正式报告总目录与重点附件台账.csv",
+        "75_CSET_2023-2024正式报告轻量目录.csv",
+        "82_ITIF科学技术创新节点轻量目录.csv",
+        "84_Fraunhofer_ISI创新系统政策分析轻量目录.csv",
+        "86_Stanford_HAI科学技术创新轻量目录.csv",
+        "88_美国OSTP科学技术创新政策轻量目录.csv",
+    ):
+        path = root / name
+        if not path.exists():
+            continue
+        for row in read_csv(path):
+            report_id = row.get("统一目录报告ID") or row.get("报告ID", "")
+            direct = row.get("官方PDF入口") or row.get("官方附件") or ""
+            if report_id and direct:
+                overrides[report_id] = direct
+    return overrides
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -245,20 +271,17 @@ def main() -> int:
     parser.add_argument("--workers", type=int, default=6)
     parser.add_argument("--roles", default="本地近期候选")
     parser.add_argument("--priority", default="")
+    parser.add_argument("--ids", default="", help="comma-separated report IDs; overrides role selection")
     parser.add_argument("--retry-web", action="store_true")
     parser.add_argument("--reset-ids", default="")
     args = parser.parse_args()
     root = args.research.resolve()
     catalog_path = root / "05_报告总目录.csv"
     catalog = read_csv(catalog_path)
-    stepi_downloads = load_stepi_downloads()
-    for row in catalog:
-        if row["机构ID"] != "stepi":
-            continue
-        match = re.search(r"[?&]reIdx=(\d+)", row["原文链接"])
-        if match and match.group(1) in stepi_downloads:
-            DIRECT_OVERRIDES[row["报告ID"]] = stepi_downloads[match.group(1)]
+    DIRECT_OVERRIDES.update(OFFICIAL_PDF_OVERRIDES)
+    DIRECT_OVERRIDES.update(load_light_catalog_overrides(root))
     roles = {value.strip() for value in args.roles.split(",") if value.strip()}
+    selected_ids = {value.strip() for value in args.ids.split(",") if value.strip()}
     for row in catalog:
         row.setdefault("本地原始资产路径", "")
         row.setdefault("原始资产状态", "")
@@ -269,12 +292,28 @@ def main() -> int:
             row["原始资产状态"] = ""
     targets = []
     for row in catalog:
-        if row["样本角色"] not in roles:
+        if selected_ids and row["报告ID"] not in selected_ids:
+            continue
+        if not selected_ids and row["样本角色"] not in roles:
             continue
         missing = not row["本地原始资产路径"]
         web_only = row["原始资产状态"].startswith("无独立PDF")
         if missing or (args.retry_web and web_only):
             targets.append(row)
+    if selected_ids:
+        missing_ids = selected_ids - {row["报告ID"] for row in targets} - {
+            row["报告ID"] for row in catalog if row["报告ID"] in selected_ids and row["本地原始资产路径"]
+        }
+        if missing_ids:
+            raise ValueError(f"selected report IDs missing from catalog: {sorted(missing_ids)}")
+    if any(row["机构ID"] == "stepi" for row in targets):
+        stepi_downloads = load_stepi_downloads()
+        for row in targets:
+            if row["机构ID"] != "stepi":
+                continue
+            match = re.search(r"[?&]reIdx=(\d+)", row["原文链接"])
+            if match and match.group(1) in stepi_downloads:
+                DIRECT_OVERRIDES[row["报告ID"]] = stepi_downloads[match.group(1)]
     if args.priority:
         priorities = {value.strip() for value in args.priority.split(",") if value.strip()}
         targets = [row for row in targets if row["优先级"] in priorities]
