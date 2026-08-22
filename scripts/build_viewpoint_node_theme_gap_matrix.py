@@ -130,7 +130,7 @@ KNOWN_PROJECT_START = {
     "ifp": 2021,
     "stanford-hai": 2019,
 }
-NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1, "eu-eis": 1, "unesco-science": 1, "unctad-tir": 1, "wipo-wipr": 1, "nesta": 1, "rathenau": 1}
+NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1, "eu-eis": 1, "unesco-science": 1, "unctad-tir": 1, "wipo-wipr": 1, "nesta": 1, "rathenau": 1, "ifp": 1}
 CATALOG_NODE_EXEMPTIONS = {("unctad-tir", "N2")}
 KNOWN_SERIES_NEXT_RELEASE = {"eu-srip": "2026-10-01"}
 
@@ -222,6 +222,7 @@ def fulltext_queue_suppressed(row: dict[str, str]) -> bool:
     return (
         "连续系列已完成跨期抽样" in status
         or "机构跨期精选已完成；低增量节点保留轻量目录" in status
+        or "机构精选已完成；其余正式成果保留轻量目录" in status
     )
 
 

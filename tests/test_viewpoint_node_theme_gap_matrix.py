@@ -102,6 +102,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
     def test_sampled_annual_series_stays_out_of_fulltext_queue(self) -> None:
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；连续系列已完成跨期抽样"}))
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "机构跨期精选已完成；低增量节点保留轻量目录"}))
+        self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "IFP官方网页与附件入口已保存；机构精选已完成；其余正式成果保留轻量目录"}))
         self.assertFalse(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；未下载全文"}))
 
     def test_nesta_uses_observed_publication_volume_after_complete_site_scan(self) -> None:
@@ -109,6 +110,9 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
 
     def test_rathenau_uses_observed_publication_volume_after_complete_archive_scan(self) -> None:
         self.assertEqual(catalog_minimum_for("rathenau", "A"), 1)
+
+    def test_ifp_uses_observed_publication_volume_after_complete_api_scan(self) -> None:
+        self.assertEqual(catalog_minimum_for("ifp", "B"), 1)
         self.assertEqual(catalog_minimum_for("oecd-sti", "A"), 5)
 
     def test_biennial_series_does_not_create_a_false_missing_publication_node(self) -> None:
@@ -168,6 +172,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertEqual(tier_for("wipo-wipr"), "A")
         self.assertEqual(tier_for("nesta"), "A")
         self.assertEqual(tier_for("rathenau"), "A")
+        self.assertEqual(tier_for("ifp"), "B")
         self.assertEqual(tier_for("ifp"), "B")
         self.assertEqual(tier_for("stanford-hai"), "B")
         self.assertEqual(tier_for("rand"), "C")

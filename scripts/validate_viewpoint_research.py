@@ -68,6 +68,27 @@ def expected_rathenau_selected_ids() -> set[str]:
     }
 
 
+def expected_ifp_selected_ids() -> set[str]:
+    return {
+        "C-IFP-2022-FUND-ORGANIZATIONS-NOT-PROJECTS-DIVERSIFYING-AMERICAS-INNOVATION-ECOSYSTEM-WITH-A-",
+        "C-IFP-2022-PILOTING-AND-EVALUATING-NSF-SCIENCE-LOTTERY-GRANTS",
+        "C-IFP-2022-SEMICONDUCTOR-INVESTMENTS-WONT-PAY-OFF-IF-CONGRESS-DOESNT-FIX-THE-TALENT-BOTTLENEC",
+        "C-IFP-2022-HOW-DO-WE-MAKE-AN-ENTREPRENEURIAL-STATE",
+        "C-IFP-2023-BUILDING-A-BETTER-NIH",
+        "C-IFP-2023-TO-SPEED-UP-SCIENTIFIC-PROGRESS-WE-NEED-TO-UNDERSTAND-SCIENCE-POLICY",
+        "C-IFP-2023-WHERE-CAN-FEDERAL-AI-RD-FUNDING-GO-THE-FURTHEST",
+        "C-IFP-2024-COMPUTE-IN-AMERICA",
+        "C-IFP-2024-NIST-FOUNDATION",
+        "C-IFP-2024-MAXIMIZING-THE-SCIENTIFIC-ROI-FROM-INTERNATIONAL-PHDS",
+        "C-IFP-2025-CATALYZING-A-GOLDEN-AGE",
+        "C-IFP-2025-INDIRECT-COST-RECOVERY-AND-AMERICAN-INNOVATION",
+        "C-IFP-2025-SCALING-MATERIALS-DISCOVERY-WITH-SELF-DRIVING-LABS",
+        "C-IFP-2025-AMERICAN-SCIENCE-SHOULD-TAKE-A-LOT-MORE-RISKS",
+        "C-IFP-2026-SCIENCE-AGENCIES-NEED-METASCIENCE-UNITS",
+        "C-IFP-2026-PREPARING-FOR-AI-RESEARCH-AUTOMATION",
+    }
+
+
 def expected_catalog_size(
     seed_count: int,
     catalog_asset_count: int,
@@ -173,6 +194,8 @@ def main() -> None:
         "160_Nesta科技创新与中国比较跨期精选全文台账.csv", "161_Nesta科技创新与中国比较跨期精选全文结果.md",
         "162_Rathenau英文正式报告近十年轻量总目录.csv", "163_Rathenau英文正式报告近十年轻量总目录结果.md",
         "164_Rathenau科技创新与中国比较跨期精选全文台账.csv", "165_Rathenau科技创新与中国比较跨期精选全文结果.md",
+        "166_IFP科技创新正式成果轻量总目录.csv", "167_IFP科技创新正式成果轻量总目录结果.md",
+        "168_IFP科技创新机制与中国比较精选全文台账.csv", "169_IFP科技创新机制与中国比较精选全文结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -638,6 +661,27 @@ def main() -> None:
         and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
         for r in rathenau_selected
     )
+    ifp_light = rows(root / "166_IFP科技创新正式成果轻量总目录.csv")
+    assert len(ifp_light) == 155
+    assert sum(r["科技创新相关度"] == "核心" for r in ifp_light) == 106
+    assert sum(r["科技创新相关度"] == "支撑" for r in ifp_light) == 39
+    assert sum(r["科技创新相关度"] == "语境" for r in ifp_light) == 10
+    assert sum(r["中国关联"] == "是" for r in ifp_light) == 55
+    assert all(r["官方落地页"].startswith("https://ifp.org/") for r in ifp_light)
+    ifp_selected = rows(root / "168_IFP科技创新机制与中国比较精选全文台账.csv")
+    assert {r["报告ID"] for r in ifp_selected} == expected_ifp_selected_ids()
+    assert sum(r["原始资产类型"] == "PDF" for r in ifp_selected) == 1
+    assert sum(r["原始资产类型"] == "WEB" for r in ifp_selected) == 15
+    assert sum(r["中国关联"] == "是" for r in ifp_selected) == 8
+    assert sum(int(r["PDF页数"]) for r in ifp_selected) == 5
+    assert sum(int(r["字节数"]) for r in ifp_selected) == 7859215
+    assert sum(int(r["提取文本字符数"]) for r in ifp_selected) == 409705
+    assert sum(int(r["China词形命中数"]) for r in ifp_selected) == 87
+    assert all(
+        Path(r["本地原始资产"]).exists() and Path(r["本地文本"]).exists()
+        and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
+        for r in ifp_selected
+    )
     stepi_assets = rows(root / "60_STEPI韩文科技与中国专题增补台账.csv")
     assert len(stepi_assets) == 518, len(stepi_assets)
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 476
@@ -692,7 +736,7 @@ def main() -> None:
     gap_matrix = rows(root / "69_机构节点主题覆盖缺口矩阵.csv")
     targeted_queue = rows(root / "70_定点补源优先队列.csv")
     catalog_queue = rows(root / "72_轻量目录扩展优先队列.csv")
-    assert len(gap_matrix) == 990
+    assert len(gap_matrix) == 1020
     assert {r["战略主题"] for r in gap_matrix} == {
         "T1_科学体系与基础研究", "T2_技术创新与关键技术", "T3_创新政策与研发治理",
         "T4_人才大学与科研组织", "T5_产业创新转化与区域生态", "T6_国际合作开放科学与比较",
@@ -788,7 +832,10 @@ def main() -> None:
     assert len(rathenau_light) == 75
     assert sum(r["全文策略"].startswith("已进入精选全文") for r in rathenau_light) == 13
     assert sum(r["全文策略"].startswith("总目录保留") for r in rathenau_light) == 62
-    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 990
+    assert len(ifp_light) == 155
+    assert sum(r["全文策略"].startswith("已进入精选全文") for r in ifp_light) == 16
+    assert sum(r["全文策略"].startswith("总目录保留") for r in ifp_light) == 139
+    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1020
     assert len(rows(root / "70_定点补源优先队列.csv")) == 0
     assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 0
     review = rows(root / "92_定点全文候选证据增量复核台账.csv")
@@ -865,7 +912,7 @@ def main() -> None:
         nistep_asset_count=len(nistep_catalog),
         stepi_asset_count=len(stepi_catalog),
         kistep_asset_count=len(kistep_catalog),
-        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5 + 6 + 6 + 15 + 118 + 75,
+        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5 + 6 + 6 + 15 + 118 + 75 + 155,
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -895,6 +942,7 @@ def main() -> None:
             (nsf_science_innovation, ("本地PDF",)),
             (nesta_selected, ("本地PDF",)),
             (rathenau_selected, ("本地原始资产",)),
+            (ifp_selected, ("本地原始资产",)),
             (stepi_assets, ("本地原始资产",)),
             (stepi_series, ("本地原始资产",)),
             (kistep_assets, ("本地原始资产",)),
@@ -1079,6 +1127,10 @@ def main() -> None:
         ("163_Rathenau英文正式报告近十年轻量总目录结果.md", "国际科技智库观点演变_Rathenau英文正式报告近十年轻量总目录结果.md"),
         ("164_Rathenau科技创新与中国比较跨期精选全文台账.csv", "国际科技智库观点演变_Rathenau科技创新与中国比较跨期精选全文台账.csv"),
         ("165_Rathenau科技创新与中国比较跨期精选全文结果.md", "国际科技智库观点演变_Rathenau科技创新与中国比较跨期精选全文结果.md"),
+        ("166_IFP科技创新正式成果轻量总目录.csv", "国际科技智库观点演变_IFP科技创新正式成果轻量总目录.csv"),
+        ("167_IFP科技创新正式成果轻量总目录结果.md", "国际科技智库观点演变_IFP科技创新正式成果轻量总目录结果.md"),
+        ("168_IFP科技创新机制与中国比较精选全文台账.csv", "国际科技智库观点演变_IFP科技创新机制与中国比较精选全文台账.csv"),
+        ("169_IFP科技创新机制与中国比较精选全文结果.md", "国际科技智库观点演变_IFP科技创新机制与中国比较精选全文结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
