@@ -4,6 +4,7 @@ import argparse
 import csv
 import hashlib
 import logging
+import re
 import zipfile
 from pathlib import Path
 
@@ -89,6 +90,8 @@ def main() -> None:
         "81_科学技术创新主轴采集规则.md",
         "82_ITIF科学技术创新节点轻量目录.csv", "83_ITIF科学技术创新节点轻量目录结果.md",
         "84_Fraunhofer_ISI创新系统政策分析轻量目录.csv", "85_Fraunhofer_ISI创新系统政策分析轻量目录结果.md",
+        "86_Stanford_HAI科学技术创新轻量目录.csv", "87_Stanford_HAI科学技术创新轻量目录结果.md",
+        "88_美国OSTP科学技术创新政策轻量目录.csv", "89_美国OSTP科学技术创新政策轻量目录结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -375,8 +378,8 @@ def main() -> None:
         "T1_科学体系与基础研究", "T2_技术创新与关键技术", "T3_创新政策与研发治理",
         "T4_人才大学与科研组织", "T5_产业创新转化与区域生态", "T6_国际合作开放科学与比较",
     }
-    assert len(targeted_queue) == 28
-    assert len(catalog_queue) == 10
+    assert len(targeted_queue) == 43
+    assert len(catalog_queue) == 4
     assert not any(r["战略主题"] == "T7_安全供应链与治理边界" for r in gap_matrix)
     assert not any(r["报告名称"] == "China’s Military AI Roadblocks" for r in targeted_queue)
     stepi_catalog = [r for r in catalog if r["报告ID"].startswith("C-STEPI-")]
@@ -414,6 +417,8 @@ def main() -> None:
     itif_series_light = rows(root / "79_ITIF中国先进产业创新系列轻量目录.csv")
     itif_node_light = rows(root / "82_ITIF科学技术创新节点轻量目录.csv")
     fraunhofer_light = rows(root / "84_Fraunhofer_ISI创新系统政策分析轻量目录.csv")
+    stanford_hai_light = rows(root / "86_Stanford_HAI科学技术创新轻量目录.csv")
+    ostp_light = rows(root / "88_美国OSTP科学技术创新政策轻量目录.csv")
     assert len(cset_light) == 60
     assert len(oecd_light) == 445
     assert len({r["统一目录报告ID"] for r in oecd_light}) == 445
@@ -421,10 +426,14 @@ def main() -> None:
     assert len(itif_node_light) == 5
     assert len(fraunhofer_light) == 47
     assert sum(r["统一目录报告ID"].startswith("C-FRAUNHOFER-ISI-DP-") for r in fraunhofer_light) == 45
-    assert all(r["全文策略"].startswith("不自动下载") for ledger in (cset_light, oecd_light, itif_series_light, itif_node_light, fraunhofer_light) for r in ledger)
+    assert len(stanford_hai_light) == 15
+    assert sum("AI Index Report" in r["报告名称"] for r in stanford_hai_light) == 9
+    assert len(ostp_light) == 64
+    assert not any(re.search(r"national security|cybersecurity|nuclear defense|security and integrity|electromagnetic pulses", r["报告名称"], re.I) for r in ostp_light)
+    assert all(r["全文策略"].startswith("不自动下载") for ledger in (cset_light, oecd_light, itif_series_light, itif_node_light, fraunhofer_light, stanford_hai_light, ostp_light) for r in ledger)
     assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 720
-    assert len(rows(root / "70_定点补源优先队列.csv")) == 28
-    assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 10
+    assert len(rows(root / "70_定点补源优先队列.csv")) == 43
+    assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 4
     assert len(catalog) == expected_catalog_size(
         seed_count=len(seeds),
         catalog_asset_count=len(catalog_assets),
@@ -439,7 +448,7 @@ def main() -> None:
         nistep_asset_count=len(nistep_catalog),
         stepi_asset_count=len(stepi_catalog),
         kistep_asset_count=len(kistep_catalog),
-        light_catalog_count=60 + 443 + 10 + 5 + 45,
+        light_catalog_count=60 + 443 + 10 + 5 + 45 + 15 + 64,
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -559,6 +568,10 @@ def main() -> None:
         ("83_ITIF科学技术创新节点轻量目录结果.md", "国际科技智库观点演变_ITIF科学技术创新节点轻量目录结果.md"),
         ("84_Fraunhofer_ISI创新系统政策分析轻量目录.csv", "国际科技智库观点演变_Fraunhofer_ISI创新系统政策分析轻量目录.csv"),
         ("85_Fraunhofer_ISI创新系统政策分析轻量目录结果.md", "国际科技智库观点演变_Fraunhofer_ISI创新系统政策分析轻量目录结果.md"),
+        ("86_Stanford_HAI科学技术创新轻量目录.csv", "国际科技智库观点演变_Stanford_HAI科学技术创新轻量目录.csv"),
+        ("87_Stanford_HAI科学技术创新轻量目录结果.md", "国际科技智库观点演变_Stanford_HAI科学技术创新轻量目录结果.md"),
+        ("88_美国OSTP科学技术创新政策轻量目录.csv", "国际科技智库观点演变_美国OSTP科学技术创新政策轻量目录.csv"),
+        ("89_美国OSTP科学技术创新政策轻量目录结果.md", "国际科技智库观点演变_美国OSTP科学技术创新政策轻量目录结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
