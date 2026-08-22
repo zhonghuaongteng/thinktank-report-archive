@@ -1,0 +1,2204 @@
+
+===== PDF_PAGE 1 =====
+OECD Science, Technology and Industry Working Papers
+2022/04
+Micro-data based insights
+on trends in business R&D
+performance and funding:
+Findings from the OECD
+microBeRD+ project
+Silvia Appelt,
+Matej Bajgar,
+Chiara Criscuolo,
+Fernando Galindo-Rueda
+https://dx.doi.org/10.1787/4805d3f5-en
+
+===== PDF_PAGE 2 =====
+2  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+OECD Science, Technology and Industry Working Papers
+
+OECD Working Papers should not be reported as representing the official views of the
+OECD or of its member countries. The opinions expressed and arguments employed are
+those of the authors. Working Papers describe preliminary results or research in progres s
+by the author(s) and are published to stimulate discussion on a broad range of issues on
+which the OECD works. Comments on Working Papers are welcomed, and may be sent to
+OECD Directorate for Science, Technology and Innovation, OECD, 2 rue André -Pascal,
+75775 Paris Cedex 16, France; e-mail: sti.contact@oecd.org.
+
+Note to Delegations:
+This document is also available on O.N.E under the reference code:
+DSTI/STP/NESTI(2021)5/FINAL
+
+This document, as well as any data and any map included herein, are without prejudice to
+the status of or sovereignty over any territory, to the delimitation of international frontiers
+and boundaries and to the name of any territory, city or area.
+
+The statistical data for Israel are suppl ied by and under the responsibility of the relevant
+Israeli authorities. The use of such data by the OECD is without prejudice to the status of
+the Golan Heights, East Jerusalem and Israeli settlements in the West Bank under the terms
+of international law.
+
+© OECD (2022)
+
+The use of this work, whether digital or print, is governed by the Terms and Conditions to
+be found at http://www.oecd.org/termsandconditions.
+
+===== PDF_PAGE 3 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  3
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Micro-data based insights on trends in business R&D performance and
+funding: findings from the OECD microBeRD+ project
+
+Silvia Appelt, Matej Bajgar, Chiara Criscuolo, and Fernando Galindo-Rueda (OECD)
+
+This report presents new insights on trends in business R&D performance and fundin g,
+drawing on the micro -aggregated R&D and tax relief statistics collected for 21 OECD
+countries as part of the OECD microBeRD project. Micro-aggregated statistics provide an
+important input for policy analysis, highlighting important variations in busines s R&D
+performance and funding across industries and different types of firms that are hard to
+uncover based on aggregate R&D and tax relief statistics. They shed light on country and
+industry specific trends in the concentration of R&D activity, business R&D dynamics, the
+structure of R&D performance among different types of firms and the way that they fund
+their R&D activities. Such evidence can be relevant in assessing the contribution of
+different types of firms (e.g. young firms, foreign-controlled affiliates) and individuals (e.g.
+female R&D staff, doctorate holders) to research and development in the business sector
+and designing business R&D support policies.
+Keywords: Research and development, government support, tax incentives, impacts,
+additionality
+JEL Codes: O38, H25, L25
+
+===== PDF_PAGE 4 =====
+4  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Acknowledgements
+This report has been prepared by Silvia Appelt, Matej Bajgar, Chiara Criscuolo and
+Fernando Galindo-Rueda, who are responsible within the OECD Secretariat for the design
+and implementation of the microBeRD project. This project adopts a distributed approach
+towards the analysis of business R&D microdata, characterised by a collaboration between
+the OECD Secretariat and designated official national experts with access to the
+confidential R&D and publi c support microdata. This unique arrangement allows the
+implementation of a common and centrally -developed code which provides the basis for
+the harmonised analysis of cross-country microdata while respecting access conditions to
+nationally held, confidential business microdata. Figures may differ or appear to differ from
+official R&D statistics owing to different methodologies adopted for the purpose of micro-
+data analysis. The estimates presented should be taken as experimental and are not intended
+as substitutes for existing official statistics.
+The authors would like to thank all the national experts from the microBeRD network
+which comprised 21 OECD countries in the first phase of the microBeRD project:
+Australia, Austria, Belgium, Canada, Chile, the Cz ech Republic, France, Germany,
+Hungary, Ireland, Israel, Italy, Japan, the Netherlands, New Zealand, Norway, Portugal,
+Spain, Sweden, Switzerland, and the United Kingdom. This project and the results
+contained in this report would not have been possible without their knowledge, dedication,
+and patience.
+
+microBeRD expert network – first project phase, 2016-19
+
+Australia Sasan Bakhtiari, Australian Department of Industry, Innovation and Science
+ Rowan Hethey, Australian Bureau of Statistics
+Bucifal Stan, Australian Department of Industry, Innovation and Science
+Austria Andreas Schiefer, Statistics Austria
+Belgium Karl Boosten, Belgian Science Policy
+Michel Dumont, Federal Planning Bureau Belgium
+Canada Ivan Carillo, Statistics Canada
+Ryan Kelly, Innovation, Science and Economic Development Canada
+Haig Mc Carrell, Statistics Canada
+Pierre Therrien, Innovation, Science and Economic Development Canada
+Chile Maria Jose Bravo Pizarro, Ministry of Economy, Development and Tourism Chile
+Heinz Rodrigo Doebbel Aponte, Ministry of Economy, Development and Tourism
+Chile
+Antonio Martner, Ministry of Economy, Development and Tourism Chile
+Czech Republic Martin Mana, Czech Statistical Office
+Martin Srholec, CERGE-EI and Czech Statistical Office
+France Justin Quemener, French Ministry of Higher Education, Research and Innovation
+Camille Schweitzer, French Ministry of Higher Education, Research and Innovation
+Lisa Kerboul, French Ministry of Higher Education, Research and Innovation
+Geraldine Seroussi, French Ministry of Higher Education, Research and Innovation
+Germany Thu-Van Nguyen, Stifterverband Germany
+Hungary Tibor Keresztély, Hungarian Ministry for National Economy
+Katalin Horváth, Hungarian Ministry for National Economy
+Péter Tóth, Hungarian Ministry for National Economy
+Ilona Cserháti, Hungarian Ministry for National Economy
+
+===== PDF_PAGE 5 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  5
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Ireland Donough Lawlor, Revenue Commissioners
+Jean Acheson, Revenue Commissioners
+Keith Walsh, Revenue Commissioners
+Israel Evyatar Kirschberg, Central Bureau of Statistics of Israel
+Italy Antonella Caiumi, Italian National Institute of Statistics
+Valeria Mastrostefano, Italian National Institute of Statistics
+Japan Tomohiro Ijichi, Japanese National Institute of Science and Technology Policy
+Yuya Ikeda, Japanese National Institute of Science and Technology Policy
+Netherlands Piet Donselaar, Ministry of Economic Affairs and Climate Policy
+Jamie Graham, Statistics Netherlands
+New Zealand Michelle Morris, (independent contractor for New Zealand Ministry of Business,
+Innovation and Employment)
+Simon Wakeman, New Zealand Ministry of Business, Innovation and Employment
+Norway Diana-Cristina Iancu, Statistics Norway
+Arvid Raknerud, Statistics Norway
+Marina Rybalka, Statistics Norway
+Portugal Filomena Oliveira, Portuguese Directorate General of Education and Science
+Statistics
+Alexandre Paredes, Portuguese Directorate General of Education and Science
+Statistics
+Spain Joseba Sanmartín Sola, Spanish Foundation for Science and Technology
+Cecilia Cabello Valdés, Spanish Foundation for Science and Technology
+Sweden Petter Ehn Wingårdh, Statistics Sweden
+Switzerland Elisabeth Pastor, Federal Statistical Bureau Switzerland
+Sandra Plaza, Federal Statistical Bureau Switzerland
+United Kingdom Khalid Khan, UK Department for Business, Energy & Industrial Strategy
+Joshua Sarracino, UK Department for Business, Energy & Industrial Strategy
+Armand Viaje-Balog, UK Department for Business, Energy & Industrial Strategy
+Josh Martin, UK Office for National Statistics
+Russell Black, UK Office for National Statistics
+Emma Hickman, UK Office for National Statistics
+Laura Hill, UK Office for National Statistics
+
+This work has benefitted from voluntary contribution funding from the European Union's
+Horizon 2020 research and innovation programme under grant agreement No 101004099,
+supporting the CSTP -CIIE project in their Programme of Work and Budget on the
+incidence and impact of public support for business R&D.
+
+===== PDF_PAGE 6 =====
+6  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Executive summary
+Investment in research and development (R&D) is a key factor driving innovation and
+economic growth. Digital technologies, globalisation, economic framework conditions and
+other factors a re changing the organisation of R&D activities (e.g. R&D location and
+collaboration) and R&D funding. This has important implications for the design of R&D
+support policies. However, it is hard to observe these changes in aggregate -level cross-
+country datasets. In order to shed light on the distribution and structure of business R&D
+(BERD) and the heterogeneity in the use and impact of tax and direct support measures for
+BERD across different types of firms and countries, the OECD carried out the microBeRD
+project from 2016 to 2019 with support from the EU Horizon 2020 programme.
+microBeRD applies a “distributed” approach to the analysis of business R&D and tax
+relief micro data. This approach, characterised by a collaboration between the OECD
+secretariat and national experts with access to the confidential R&D and public support
+microdata within participating countries, ensures data confidentiality and facilitates a co-
+ordinated and harmonised analysis of R&D and tax relief microdata across countries.
+With continued support from the European Commission, microBeRD+ - the second phase
+of the microBeRD project (2020-23), aims to extend and deepen the existing descriptive
+and impact-oriented analysis (OECD, 2020a and OECD, 2020b) undertaken in the first
+phase of the project. This includes a more in-depth, descriptive analysis of business R&D
+performance (e.g. R&D expenditure, R&D employment) and funding, leveraging the
+micro-aggregated data collected in the first phase of the project . This report – the first
+microBeRD+ project output – highlights novel and stylised facts about business R&D
+performance and funding that are hard to uncover based on aggregate R&D and tax relief
+statistics on a cross -country basis. It provides a detailed description of country - and
+industry-specific trends in the concentration of R&D activity, the structure of R&D
+performance (e.g. type of R&D, type of costs) among different types of firms (e.g. firm size
+and age) and the way that different types of firms fund their R&D activities.
+This first descriptive ana lysis undertaken as part of microBeRD+ covers altogether 21
+countries (Australia, Austria, Belgium, Canada, Chile, the Czech Republic , France,
+Germany, Hungary, Ireland, Israel, Italy, Japan, the Netherlands, New Zealand, Norwa y,
+Portugal, Spain, Sweden , Switzerland, and the United Kingdom) and focusses on 12
+industry classes (STAN A38 industry classification ) that together account for over three
+quarters of total R&D expenditure in countries on average.
+The key findings from the first microBeRD+ analysis can be summed up as follows:
+ R&D concentration: business R&D is strongly concentrated at country, and in
+particular industry level, but there is large variation in the rate of R&D
+concentration across different industries, whether measured by the share of the 10
+largest R&D performers in an industry or by the Herfindahl index. Available results
+further suggest that the within-industry, within-country concentration of R&D has
+declined over time and that the decline of R&D concentration at country level is
+positively correlated with the increasing adoption and generosity of R&D tax
+incentives. These results, thus, seem to suggest that these incentives encourage
+R&D investment among existing and new R&D performers (OECD, 2020a).
+ R&D performance and funding of foreign-controlled affiliates: While foreign-
+controlled firms account for a significant share of business R&D expenditure in
+many OECD economies, they tend to receive proportionally less R&D support
+
+===== PDF_PAGE 7 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  7
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+through direct funding (e.g. R&D grants, government procurement of R&D
+services) compared to their share in total R&D expenditure.
+ R&D performance and funding of small and young firms: SMEs tend to account
+for a disproportionally higher share in direct funding compared to their contribution
+to business R&D expenditure in most industries, but the difference is particularly
+large in Mining and Pharmaceuticals. As expected for market -based and less
+discretionary support measures, the SME share in R&D tax relief tends to match
+more closely the SME share in R&D expenditure across different industries. In
+terms of the relative importance of public support for R&D for firms of different
+size, smaller firms rely to a larger extent on public support for financing their R&D
+investments, both in terms of direct and tax support. An interesting difference also
+exists between young and old small firms in this context: while young small firms
+rely, more than any other type of firms, on direct support almost as much as on tax
+support, for older s mall firms tax incentives are noticeably more important than
+direct support. The stronger reliance of y oung firms on direct support might be
+related to the earlier timing with which firms typically receive direct vis-à-vis tax
+support or demonstration effects connected to the receipt of direct funding.
+ Orientation of R&D by industry: Overall, although there are some cross-industry
+differences in the share of basic and applied research versus experimental
+development, they do not tend to be particularly large. Research (basic and applied)
+accounts for close to 40% to 60% of all R&D expenditure in all main R&D
+industries except for Transport equipment, where it accounts for less than 30% of
+total R&D. Basic research represents a minor share of total R&D in all industries.
+It is most important in Scientific R&D and Pharmaceuticals , with a share in total
+intramural R&D expenditure of close to 10%.
+ Female R&D employees and R&D staff with a doctorate degree by industry:
+Large differences are found in the share of female R&D employees and share of
+R&D staff with a doctorate degree in R&D employment across industries. Women
+represent over one third of R&D employees in Chemicals, Scientific R&D and
+Food & beverages and more than 50% of R&D employees i n Pharmaceuticals.
+However, 10% or less of R&D employees in Transport equipment, Metal products
+and Machinery and equipment are women. Likewise, a high share of doctorate
+holders among R&D staff can be found in science -based industries such as
+Pharmaceuticals, Scientific R&D and Chemicals.
+The new micro -aggregated statistics provide an important input for policy analysis,
+pointing out important variations in business R&D performance and funding across
+industries and different types of firms that are hard to uncover based on aggregate R&D
+statistics. These can reveal stylised facts that either confirm or challenge assumptions about
+how policies work, helping refine policy research questions for analysis. The microBeRD
+approach enables the exploration of diffe rent data perspectives beyond established
+tabulations that countries regularly submit to the OECD. The latter, as the implementation
+of the Frascati Manual 2015 has shown, are difficult to change in a sufficiently responsive
+fashion due to a combination of factors. microBeRD helps demonstrate how it is possible
+to enhance the range of policy relevant indicators while protecting business respondent
+confidentiality.
+
+===== PDF_PAGE 8 =====
+8  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Table of contents
+Acknowledgements ................................................................................................................................ 4
+Executive summary ............................................................................................................................... 6
+1. Introduction and background ........................................................................................................ 10
+2. The distributed approach explained .............................................................................................. 12
+2.1. Distributed microdata analysis .................................................................................................... 12
+2.2. Microdata inputs ......................................................................................................................... 13
+2.3. Micro-aggregated statistics ......................................................................................................... 14
+3. Coverage and representativeness of micro-aggregated statistics ................................................ 16
+4. R&D performance and funding: new findings based on micro-data .......................................... 19
+4.1. R&D concentration at country and industry levels ..................................................................... 19
+4.2. Performance and funding of R&D by foreign-controlled affiliates ............................................ 26
+4.3. Business R&D activity and funding across industries ................................................................ 28
+4.4. The role of small and young R&D performers ........................................................................... 37
+5. Conclusion and next steps ............................................................................................................... 43
+Endnotes ............................................................................................................................................... 45
+References ............................................................................................................................................ 47
+Annex A. Data ...................................................................................................................................... 48
+Annex B. Additional results ................................................................................................................ 49
+
+Tables
+Table 1. Availability of micro-aggregated statistics by source of data 14
+Table 2. Business R&D expenditure totals derived by microBeRD relative to aggregate data 16
+Table 3. Public funding for business R&D expenditure in microBeRD relative to aggregate data 18
+Table 4. Distribution of intramural R&D and direct and tax support for BERD by industry 35
+
+Table A A.1. Country-years included in the descriptive analysis based on micro-aggregated data 48
+Table A B.1. R&D expenditure in microBeRD relative to aggregate data by firm size 49
+
+Figures
+Figure 1. Concentration of business R&D performance across OECD countries 20
+Figure 2. Within-industry concentration of business R&D 21
+Figure 3. Concentration of business R&D by industry 22
+Figure 4. Trends in business R&D concentration within 2-digit industries 23
+Figure 5. Trends in business R&D concentration within countries 24
+Figure 6. Trends in business R&D concentration by industry 25
+Figure 7. Changes in business R&D concentration and the cost of R&D (B-Index) 26
+Figure 8. Share of foreign-owned firms in business R&D expenditure and funding 27
+Figure 9. Trends in the share of foreign-owned firms in business R&D expenditure and funding 28
+Figure 10. Distribution of R&D intensity (among R&D performers) by industry 29
+Figure 11. SME share in R&D firms, R&D performance and R&D support by industry 30
+Figure 12. Intramural R&D expenditure by industry and type of R&D 31
+
+===== PDF_PAGE 9 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  9
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 13. Full time engagement in R&D and R&D unit labour costs by industry 32
+Figure 14. Share of female R&D employees and R&D staff with doctorate degree by industry 32
+Figure 15. Within-firm growth in R&D performance by industry 33
+Figure 16. Direct and tax support for business R&D as a share of R&D expenditure by industry 34
+Figure 17. Distribution of R&D intensity among R&D performers by firm size and age 37
+Figure 18. Orientation of intramural R&D expenditure by firm size and age 38
+Figure 19. R&D employment and unit labour costs by firm size and age 39
+Figure 20. Share of female R&D employees and R&D staff with a doctorate degree 39
+Figure 21. Outsourced R&D as share of total intramural and extramural R&D expenditure 40
+Figure 22. Within-firm growth in R&D expenditure by firm size and age 40
+Figure 23. Government direct funding and tax support for business R&D by size and age 41
+Figure 24. Trends in government direct and tax support for business R&D by size 42
+
+Figure A B.1. SME share in R&D firms, R&D performance and R&D support by country and industry 50
+Figure A B.2. Ratios of direct funding and R&D tax relief to R&D expenditure by industry and country 52
+Figure A B.3. Ratios of direct funding and R&D tax relief to R&D expenditure by country and firm size 53
+
+===== PDF_PAGE 10 =====
+10  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+1. Introduction and background
+Investment in research and development (R&D) is a key factor driving innovation and
+economic growth. Digital technologies, globalisation, economic framework conditions and
+other factors are changing the organisation of R&D activities (e.g. R&D location and
+collaboration) and R&D funding. This has important implications for the design of R&D
+support policies. However, it is hard to observe these changes in aggregate -level cross-
+country datasets. In order t o shed light on the distribution and structure of business R&D
+(BERD) and the heterogeneity in the use and impact of tax and direct support measures for
+BERD across different types of firms and countries, the OECD carried out the microBeRD
+project from 2016 to 2019 with support from the EU Horizon 2020 programme.
+MicroBeRD is a joint project of the OECD Committee on Industry, Innovation and
+Entrepreneurship (CIIE) and the Committee for Scientific and Technological Policy
+(CSTP) carried out under the lead of its Working Party of National Experts on Science and
+Technology Indicators (NESTI). microBeRD relies on a “distributed” approach for the
+empirical analysis of micro -data, undertaken in collaboration with national experts with
+access to confidential R&D and public support micro-data. This approach facilitates a co-
+ordinated statistical analysis of the impact of tax relief design features and their interaction
+with direct forms of public R&D funding by exploiting variation in support within and
+across countries, while preserving the confidentiality of the business -level microdata that
+remain secure within national databases.
+With continued support from the European Commission, the second phase of the
+microBeRD project (microBeRD+ , 2020 -23) aims to extend and deepen the existing
+descriptive and impact-oriented analysis (OECD, 2020a) undertaken in the first phase of
+the project. microBeRD+ envisages:
+a) a more in -depth, descriptive analysis of busine ss R&D performance (i.e. R&D
+performed by companies) and funding, leveraging the micro -aggregated data
+collected in the first phase of the project, and
+b) an extension of the existing micro-data based analysis of the effect of R&D support
+policies on business R&D investment to further explore the impact of direct funding
+and R&D tax support on innovation outputs (e.g. introducing new products and
+services, filing patents) and economic outcomes (e.g. employment and productivity
+growth).
+This report – the first microBeRD+ project output – explores possible applications of R&D
+and tax relief microdata to complement and extend existing evidence based on official
+R&D statistics as those found in the OECD R&D Statistics (RDS), OECD ANBERD and
+OECD R&D Tax Incentives databases. It provides a detailed description of country and
+industry specific trends in the concentration of R&D activity, the structure of R&D
+performance (e.g. type of R&D, type of costs) among different types of firms (e.g. firm size
+and age) and the way that different types of firms fund their R&D activities. Using micro-
+aggregated data, this descriptive analysis helps highlight not only average trends across
+countries and the heterogeneity of country experiences but also within-country and within-
+industry heterogeneity in business R&D performance and funding across different types of
+firms. It further provides a number of new insights on structural aspects of business R&D
+dynamics that are important for policy makers and researchers alike. Such evidence can be
+relevant in assessing the contribution of different types of firms (e.g. young firms, foreign-
+controlled affiliates) and individuals (e.g. female R&D staff, doctorate holders) to research
+
+===== PDF_PAGE 11 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  11
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+and development in the business sector and effectively designing business R&D support
+policies with a view to potentially directing government support towards certain types of
+firms and industries.
+The remainder of the report is structured as follows. Section 2. introduces the distributed
+approach to microdata analysis, describes the R&D microdata used within the microBeRD
+project and summarises the micro-aggregated indicators generated through the microBeRD
+distributed code. Section 3. explores the coverage and representativeness of the micro-
+aggregated data, using aggregated business R&D and tax relief statis tics as benchmark.
+Section 4. highlights the new insights that micro -aggregated data can deliver about the
+concentration, structure and distribution of business R&D performance and funding.
+Section 5. concludes by summarising the main findings of the report , highlighting their
+practical significance for policy analysis and R& D statistics, and points out potential
+avenues for future work.
+
+===== PDF_PAGE 12 =====
+12  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+2. The distributed approach explained
+In recent years, the policy and research communities’ interest in the use of harmonised
+cross-country business microdata has increased significantly. This has been partly driven
+by improvements in computing power and storage capacity but, fundamentally, reflects the
+recognition that microdata are needed for understanding the growing complexity in the way
+economies work and the heterogeneity in economic outcomes. Significant access obstacles
+remain, however, that prevent the transnational use of official microdata. As a result, and
+with few exceptions, cross-country studies based on the analysis of official business
+microdata are rare, particularly in the area of science, technology and innovation.
+The microBeRD project adopts a distributed approach towards the analysis of business
+R&D microdata, characterised by a collaboration between the OECD secretariat and
+national experts with access to the confidential R&D and public support microdata within
+participating countries. This unique arrangement allows the implementation of a common
+and centrally -developed code which provides the basis for the harmonised analysis of
+cross-country microdata while respecting access conditions to nationally held, confidential
+business microdata.
+2.1. Distributed microdata analysis
+The distributed microdata analysis is a method of analysing microdata held in separate
+locations by means of a common, centrally designed routine. This routine is automated and
+flexible enough to run on different data sources in different countries and take into account
+some of their idiosyncrasies. It relies on the collaboration of an international network of
+national experts, with each national team having legal access to their respective national
+microdata. The use of harmonised cleaning, statistical and estimation routines ensures the
+generation of harmonised, microdata -based outputs which, designed and checked to be
+non-disclosive, do not present disclosure concerns. Examples include the custom
+production of summary statistics for the relevant population and subgroups, as well as
+statistical inference indicators, for example, regression coefficients and related measures
+of precision.
+The harmonisation procedures ensure that sample composition (e.g. coverage of firm size
+classes and industries)1 and methodological choices will be identical or at least mutually
+consistent, thus ensuring, to the extent possible, the cross-country comparability of results.
+The generic microdata approach for the analysis of business data was pioneered in the
+beginning of the 2000s in a series of cross -country projects on firm demographics and
+productivity (Bartelsman, Scarpetta, et al., 2005; Bartelsman, Haltiwanger, et al., 200 9).
+Over recent years, the OECD has built expertise in implementing distributed microdata
+approach through the Innovation in firms project (OECD, 2009), the DynEmp (Criscuolo
+et al., 2014) and MultiProd (Berlingieri et al., 2017) projects.2
+The distributed method , ensuring a high degree of cross -country harmonisation and
+comparability, also yields considerable benefits to aggregate R&D data producers and users
+as it provides an additional and highly complementary source of validation and data quality
+assessment. Compared to issuing generic requests for indicators from countries, this
+approach places a lower burden on national statistical agencies and limits the running costs
+of data collection endeavours. Moreover, it highlights hitherto unidentif ied cross-country
+differences in data coverage (e.g. firm age and ownership) and methodology which can
+help spur further harmonisation and statistical development. For example, microBeRD has
+
+===== PDF_PAGE 13 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  13
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+been particularly useful in exploring avenues for implementing the recommendations in the
+latest edition of the OECD Frascati Manual (OECD, 2015) on key areas of public support
+for R&D and R&D globalisation. The use of a distributed approach in the analysis of R&D
+statistics has also contributed to promote awareness of the existence of rich microdata
+sources and their potential utility for domestic research and policy analysis. The use of
+organisational microdata is recommended in both the Frascati and Oslo Manuals (OECD,
+2015 and OECD/Eurostat, 2018), especially in the latter which outlines the possible use of
+distributed approaches to examine the impact of R&D and innovation policies, as presented
+in the first microBeRD project publication (OECD, 2020a).
+2.2. Microdata inputs
+The microdata approach depends on the availability of sufficiently comparable microdata,
+containing variables following the same definitions and based on populations with a
+sufficient degree of commonality. MicroBeRD relies on official business R&D survey data,
+complemented for some countries with administrative R&D tax relief microdata wherever
+available and accessible for analytical purposes.
+Microdata on business R&D are collected through national business R&D surveys in line
+with the international standards and guidelines for measurin g and reporting R&D as laid
+out in the OECD Frascati Manual (OECD, 2015) .3 They serve as a basis for official
+statistics of R&D carried out within countries. For each firm 4, they contain basic
+demographic information (employment, industry of main activity and, where available,
+also age, sales and type of ownership) together with detailed information on the firm’s
+R&D. This includes, most importantly, information on R&D performed (intramurally) and
+funded (extramurally -performed), the type of R&D performed ( basic research, applied
+research, experimental development), sources of funding (e.g. own, other business,
+government), the structure of R&D costs (e.g. labour, current consumption of goods and
+services, capital) and R&D employment (expressed in headcount and full -time
+equivalents).
+Business R&D surveys are generally designed to be representative of the population of
+R&D performing and funding firms in each country. Some countries do not collect
+information on R&D performers with fewer than 5 or 10 employee s, applying another
+minimum firm-size criterion or exclude certain industries (e.g. agriculture). BERD surveys
+tend to combine census and sampling survey features to ensure near exhaustive coverage
+at the aggregate level of an activity which is rather asym metrically distributed, i.e. a few
+companies tend to account for a large share of BERD and therefore, known large R&D
+performers tend to be sampled with certainty. Countries with a sampling framework
+generally provide ex-ante or ex-post (adjusted for survey-non-response) sampling weights.
+These allow for the computation of suitably weighted R&D statistics.
+Several steps are undertaken in the data preparation phase to ensure data harmonisation and
+support a robust analysis across countries. Firstly, only firms that actually filled in the R&D
+survey are kept in the dataset; imputed observations are dropped and the remaining
+observations are reweighted accordingly. Secondly, micro -firms with fewer than 10
+employees, which several countries do not cover in their BERD surveys, are dropped from
+the analysis. Thirdly, country -level statistics focus on industries whi ch are generally
+covered in the R&D surveys of all countries: ISIC Rev.4 industries 5-72, excluding 45, 47,
+55-56 and 68-69. 5 Automated checks are carried out to identify and drop outliers.6
+Administrative microdata on tax relief provide information on the amount of R&D tax
+benefits received by corporate tax relief recipients, a subset of the population of R&D
+performing firms. In some cases, they also include information about the total amount of
+
+===== PDF_PAGE 14 =====
+14  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+qualifying R&D expenditure (by type of cost) which may enco mpass both intramural and
+extramural R&D. In addition, these administrative data sources typically contain some
+information about the characteristics of firms (e.g. employment, sales). Prior to applying
+the microBeRD code, the tax relief microdata are matc hed by experts within countries to
+the R&D survey data at the firm-level using unique firm identifiers. By matching business
+R&D and tax relief microdata, it is possible to identify the corporate R&D performers that
+make use of R&D tax incentive support and exploit information on the uptake of R&D tax
+incentives in the analysis.
+2.3. Micro-aggregated statistics
+The microBeRD code prepared by the OECD secretariat and implemented by national
+experts within the OECD microBeRD network generates two types of harmoni sed, non-
+confidential, microdata -based outputs. This includes micro -aggregated statistics and
+regression outputs from firm-level analyses within countries (OECD, 2020a).
+Micro-aggregated indicators capture rich information on R&D performance, funding and
+employment, the theoretical implied marginal R&D tax subsidy rates (based on the B -
+Index) and actual amounts of R&D tax relief received by firms, where relevant tax relief
+microdata are available. They mainly consist of statistical moments – counts, means and
+percentiles (10th, 25th, 50th, 75th and 90th) – of the underlying variables. These can apply
+to the primary variables collected in surveys, or derived ratios thereof, such as firm -level
+R&D intensity (R&D as percentage of sales). The micro-aggregated indicators also include
+measures of dispersion (standard deviation) and concentration.
+The statistics are calculated for all firms and various subgroups of firms defined, for
+example, by STAN A38 industry classification, 7 size class (small, medium -sized, large),
+age (young, old), ownership (part of group, foreign-owned) or various interactions of these
+characteristics. Table 1 provides an overview of the status of data availability across
+countries, distinguishing between the two types of microdata sources employed in the
+distributed analysis.
+Table 1. Availability of micro-aggregated statistics by source of data
+ Micro-aggregated indicators
+Source of
+microdata
+R&D survey 8 countries
+AUT, CHE, DEU, ESP, GBR, ISR, JPN, NZL
+R&D survey + tax relief data 12 countries
+AUS, BEL, CAN, CHL, CZE, FRA, HUN, ITA, NLD, NOR, PRT, SWE
+Tax relief data 1 country
+IRL
+Note: This table reports the status of data availability across microBeRD member countries, drawing on the
+micro-aggregated data collected in the latest distributed analysis carried ou t as part of the first phase of the
+microBeRD project.
+Source: OECD microBeRD project, http://oe.cd/microberd, November 2021.
+Twenty countries completed the final round of distributed analysis undertaken as part of
+the first phase of the microBeRD project (2016-19), and one country (Ireland) additionally
+completed the distributed analysis in 2021 . These 21 countries are included in the
+descriptive analysis, based on micro -aggregated data, reported in Section 4. , namely:
+Australia, Austria, Belgium, Canada, Chile, the Czech Republic, France, Germany,
+Hungary, Ireland, Israel, Italy, Japan, the Netherlands, New Zealand, Norway , Portugal,
+Spain, Sweden , Switzerland, and the United Kingdom . All of the countries provided
+
+===== PDF_PAGE 15 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  15
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+financial support for business R&D through a combination of direct funding and R&D tax
+incentive support during the time period considered in this study (2000 -2016), with the
+exception of two countries (Germany and Switzerland) that did not provide R&D tax
+incentives during these years. Table A A.1 in Annex A shows the countries and years which
+are included in the analysis based on micro-aggregated R&D and tax relief data. Thirteen
+out of the nineteen countries that offered R&D tax support during the 2000-16 period were
+able to extend the analysis to R&D tax relief microdata. As Ireland is currently not able to
+additionally include R&D survey data in the distributed analysis, statistics have been
+calculated exclusively based on tax relief data. For this reason, the results for Ireland should
+be treated as experimental and not directly comparable with the R&D microdat a-based
+results reported for other countries participating in the microBeRD project.
+
+===== PDF_PAGE 16 =====
+16  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+3. Coverage and representativeness of micro-aggregated statistics
+This section explores the coverage and representativeness of the micro-aggregated statistics
+compiled as part of the microBeRD analysis by benchmarking the implied total R&D
+expenditure and total R&D tax support from the microBeRD results against corresponding
+aggregate statistics collected by the OECD, which are used a s benchmarks. For the
+microdata-based analysis to serve its analytical purposes, the relevant micro -aggregated
+indicators need to be as representative of the population of R&D performing firms as
+possible. For several coverage and procedural reasons, the a nalytical microBeRD
+indicators may not perfectly match national official figures. The purpose of the exercise
+presented in this section is to document the coverage and overall representativeness of the
+microBeRD data and to inform about possible data quality improvements in the future.
+Table 2 shows total R&D expenditure derived from microBeRD statistics as a ratio of total
+R&D expenditure as reported in the OECD R&D S tatistics (RDS) and OECD ANBERD
+databases8 for each country and year covered in the descriptive analysis (2000-2016). For
+most countries, the microdata-based figures match official statistics rather well. In 13 out
+of 20 countries, the ratio of microdata based to aggregate R&D figures ranges on average
+between 0.95 and 1.05 (i.e. within 5% difference). For Australia, total R&D expenditure
+estimated by microBeRD is below the official figures in the first two to three years but the
+match improves s ubstantially over time. For Belgium, microBeRD estimates are around
+20% greater than their official counterparts which is related to the differences in the
+reweighting of observations for unknown R&D performers where imputation is required.9
+In the case of Japan, microBeRD underestimates total R&D expenditure by about 20% on
+average; this is due to the fact that the microBeRD data for small firms in Japan are based
+on a sample where no weights are available. microBeRD also somewhat underestimates
+total R&D expenditure for Norway and New Zealand an d slightly overestimates it in the
+case of the Netherlands.10
+Table 2. Business R&D expenditure totals derived by microBeRD relative to aggregate data
+
+Note: For each country and year, the table shows the ratio of the total R&D expenditure derived by microBeRD
+based on weighted micro -aggregated data and the total R&D expenditure as reported in the OECD R&D
+Statistics.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+
+Year AUS AUT BEL CAN CHE CHL CZE DEU ESP FRA HUN IRL ISR ITA JPN NLD NOR NZL PRT SWE
+2000 100 98 92
+2001 116 99 97 98 87 77 99
+2002 100 99 98 100 78 82
+2003 101 99 98 100 98 69 82 100
+2004 100 99 100 98 72 82 86
+2005 59 99 99 98 99 99 79 80 100
+2006 75 101 100 100 102 82 86 82
+2007 79 101 137 100 101 98 100 96 102 96 74 85 102
+2008 82 100 99 101 100 97 100 98 69 107 89 86 97
+2009 89 100 129 100 100 102 100 101 50 97 94 80 100 78 99
+2010 89 99 91 104 100 58 98 94 77 105 87 86 102
+2011 94 99 138 99 83 103 101 97 65 99 97 88 108 79 101 97
+2012 96 99 100 101 103 101 64 99 94 73 111 86 89 102
+2013 100 113 98 101 90 101 103 114 96 96 73 111 81 97
+2014 102 93 95 99 100 123 97 94 83 113 81 81
+2015 99 99 100 101 100 101 94 102 100 80 112 87 95
+2016 92 99 100 100 100 72 95 73 80
+Average 86 100 119 99 99 96 99 99 100 100 98 81 99 95 78 108 83 84 100 96
+
+===== PDF_PAGE 17 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  17
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Table A B.1 (Annex B) provides a similar comparison to Table 2 based on a decomposition
+by firm size. Overall, there is not much evidence of systematic differences in the coverage
+of microBeRD across firm size classes. Exceptions include Japan and Ireland. In the case
+of Japan, the lack of weights for the sample of small R&D performers leads to a stronger
+underestimation of R&D expenditure for small and medium -sized firms than for large
+firms, and to an underestimation of total R&D expenditure in Japan by around 20% as
+aforementioned. In the case of Ireland, the use of tax relief data to approximate information
+on R&D performance leads to a severe underestimation of R&D expenditure by small and
+medium-sized firms and a significant overestimation of R&D expenditure by large firms.
+Table 3 documents the coverage of microBeRD in terms of public funding for business
+R&D – government-financed BERD (direct funding), as reported in national R&D surveys,
+and R&D tax support, based on administrative tax relief microdata . For most countries,
+total direct funding by government is similarly well captured as total R&D expenditure. In
+the case of Switzerland, total direct funding derived based on microBeRD statistics fall
+below official R&D estimates in 2008 but come close to official figures in t he next two
+years for which relevant data are available. In other countries, the microdata based R&D
+figures match official data well but direct funding falls below its official counterpart to
+some extent. This includes France, Hungary and Norway, where microBeRD direct support
+figures fall short of official figures more strongly than those based on R&D expenditure.
+In the case of the Netherlands, the relative magnitude of the microBeRD direct support
+figures is very volatile, falling short of official statistics in some years and surpassing them
+in others.
+R&D tax relief figures are derived by microBeRD in two ways. The first approach compiles
+total tax relief figures for the population of R&D-performing firms as targeted by the R&D
+survey. It focuses on firms that appear in the survey and applies weights where appropriate.
+The second approach fully focuses on the administrative corporate tax relief data and
+estimates total tax relief for all corporate tax relief recipients. As the data should in principle
+cover all firms receiving R&D tax relief, no weights are applied. The first approach – based
+on the R&D survey population –underestimates the total R&D tax relief in a majority of
+countries, and overestimates it for Australia, Belgium, Canada and Ireland. T he second
+approach based on corporate tax relief microdata leads to accurate estimates for France,
+Norway and Portugal, but keeps underestimating total R&D tax support in the case of
+Hungary and Italy and overestimating it in the case of Australia, Ireland and, to a lesser
+extent, Canada. This may be explained, at least in part, by differences in the scope of R&D
+tax incentives covered in the micro -data based analysis (e.g. exclusion of social security
+exemptions in case of Hungary) and the aggregate R&D tax relief statistics. Also, in some
+cases (e.g. Ireland) micro-aggregated tax relief statistics refer to R&D tax incentive claims
+(i.e. earned credits, including carry-forwards from previous periods) rather than the actual
+cost of R&D tax support (sum of tax offsets and refunds, where applicable) to government
+in the accounting period, leading to a deviation of micro-aggregated from official R&D tax
+relief statistics.
+
+===== PDF_PAGE 18 =====
+18  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Table 3. Public funding for business R&D expenditure in microBeRD relative to aggregate data
+
+Note: For each country and year, this table shows the ratio of microdata -based (microBeRD) to official
+aggregated R&D and tax relief statistics as reported in the OECD R&D Statistics and R&D Tax Incentives
+database. Ratios are presented for total R&D expenditure, direct funding of business R&D and R&D tax
+support. The microBeRD figures of “R&D tax support (BERD population)” are calculated as weighted statistics
+based on the records of firms that appear in both the R&D survey and corporate tax data. The microBeRD
+figures of “R&D tax support (tax population)” are calculated as unweighted statistics based on the records of
+all firms listed in the corporate tax relief microdata.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+
+AUS AUT BEL CAN CHE CHL CZE DEU ESP FRA HUN IRL ISR ITA JPN NLD NOR PRT SWE
+2000 85 63
+2001 147 82 68 116 93 70 101
+2002 108 82 100 89
+2003 128 83 76 81 96 64 100
+2004 116 91 81 92
+2005 80 104 102 97 92 88 45 100
+2006 82 102 107 50 86 36
+2007 111 104 106 111 94 100 64 99 88 55 100
+2008 119 65 107 100 46 99 87 52 98
+2009 101 140 134 100 108 101 78 101 82 37 101
+2010 100 64 112 69 108 102 85 40 100
+2011 89 86 69 107 109 108 75 119 104 96 91 32 100 104
+2012 100 106 114 96 102 87 653 44 101
+2013 79 123 100 109 106 94 100 98 91 104 38 100
+2014 98 114 88 73 98 97 84 47 40
+2015 98 100 99 100 100 87 49 100 84 31 51
+2016 100 104 100 64 96 86
+Average 97 104 116 88 97 101 93 100 81 62 103 100 87 185 46 100 102
+2000 118
+2001 115
+2002 118 38
+2003 120 84 45
+2004 107 60 51
+2005 173 114 119 60 39
+2006 223 126 66 53
+2007 261 159 109 67 66 0 45 52
+2008 250 115 75 62 47 42 59 60
+2009 199 156 108 70 70 63 37 53 68
+2010 228 113 62 73 42 59 62
+2011 239 163 112 56 76 47 44 65
+2012 139 101 59 82 44 58 65
+2013 191 99 49 81 47 45
+2014 184 56 75 71 66 48
+2015 65 81 93 65 64
+2016 129 68 42
+Average 202 157 112 62 71 65 37 52 51 62 64
+2000 132
+2001 127
+2002 129 100
+2003 131 105 99
+2004 114 84 105
+2005 389 127 83 89
+2006 368 129 88 92 99
+2007 406 114 88 0 98 99
+2008 409 116 94 100 46 96 97
+2009 315 110 91 179 62 98 97
+2010 350 113 92 204 98 95
+2011 346 110 92 212 98 99
+2012 170 102 100 216 98 98
+2013 98 92 214 98
+2014 260 89 77 207 98
+2015 83 168 98
+2016 210 50 146
+Average 322 115 92 70 183 36 97 98
+Direct support
+Tax support (tax population)
+Tax support (BERD population)
+
+===== PDF_PAGE 19 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  19
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+4. R&D performance and funding: new findings based on micro-data
+The distributed analysis facilitates the production of a range of new types of descriptive
+R&D statistics. While selected micro-data based indicators such as country-level indicators
+on t he concentration of business R&D feature on the OECD microBeRD website
+(https://oe.cd/microberd), in the latest OECD microBeRD project publication (OECD,
+2020a) and OECD flagship publications such as 2017 OECD Science, Technology and
+Industry Scoreboard (OECD, 2017), this report presents the most comprehensive selection
+of microdata-based indicators to date. Leveraging the power of micro-aggregated data, this
+document highlights novel and stylised facts about business R&D performance and funding
+that have not been previously documented on a cross-country basis.
+The statistics contained in this report represent average values over the period 2011-2016,
+with the exc eption of time-series figures that show the evolution of business R&D
+performance and funding over time. This period has been chosen to include countries for
+which the more recent years are not available. , and the averaging helps make the
+documented patterns more robust. To account for the role of sample composition – not all
+statistics and decompositions (e.g. by industry and firm size, age etc.) are available for all
+countries -, country specific effects are controlled for, subtracting the country-specific
+means from each micro-aggregated statistic and adding back its population mean.11
+Those statistics that are decomposed by industry are shown for a group of altogether 12
+industry classes defined based on the STAN A38 industry classifications that, on average
+across countries, contribute most to national business R&D performance. These 12
+industries taken together account for over three quarters of total R&D expenditure in
+microBeRD data in countries on average.12
+4.1. R&D concentration at country and industry levels
+Indicators on the concentration of R&D performance can be helpful for understanding the
+role of competition, for example by comparing them with other measures of economic
+concentration (e.g. labour or product market concentration) at industry or country level
+which may display different patterns in reflection of the extent of specialisation,
+internalisation and economies of scale and scope in a particular market segment s. These
+indicators may also help shed light on recent and expected trends in R&D concentration.
+This section examines the concentration of business R&D performance and employment,
+comparing concentration levels and trends across countries and industries.
+The results from the latest distributed analysis undertaken in the first phase of the
+microBeRD project provide a picture of the degree of the R&D concentration both in terms
+of business R&D performance (intramural R&D) and R&D employment (headcounts). The
+microdata-based indicators (Figure 1) quantify the extent to which aggregate R&D
+performance (left Panel) is driven by a small number of top R&D performers and the rate
+of concentration in the market for research and development as measured by the Herfindahl
+index (right panel)13, also known as Herfindahl-Hirschman Index, which ranges from 0 to
+1 (or 0 to 10 000 points if the calculation is based on percentage points).
+
+===== PDF_PAGE 20 =====
+20  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 1. Concentration of business R&D performance across OECD countries
+2011-2016 average
+
+Note: The figure shows R&D concentration across firms (establishments in the case of Israel) in the entire
+economy. It displays average values across all years available for a given country in the period 2011-2016. The
+micro-aggregated statistics reported for Ireland are based on tax relief microdata and not directly comparable
+with the R&D survey-based results reported for other countries. For Canada, only the measure of R&D
+concentration is available at the time of reporting.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+As Figure 1 (left panel ) shows, R&D is highly concentrated, with the 10 largest R&D
+performers accounting for around one third of total R&D expenditure and a fifth of total
+R&D employment in most countries . However, significant differences exist across
+countries. While the 10 lar gest performers account for more than half of all R&D
+expenditure in Sweden and Switzerland, they account for less than one fifth in France and
+Spain. This is an interesting pattern worth investigating. R&D employment generally tends
+to be significantly less concentrated than R&D expenditure, indicating that the largest R&D
+performers tend to spend more on R&D for each R&D employee, either because of higher
+wages paid to R&D workers , potentially reflecting their higher average skills, or because
+of complementary non-labour related expenditure for R&D.
+The Herfindahl index ( Figure 1, right panel) similarly displays a large variation in the
+concentration of business R&D a nd R&D employment across countries, whereby the
+former again exceeds the latter. The ranking of countries remains consistent across the two
+measures of concentration used. Indeed, it only changes slightly, when comparing the rate
+of R&D concentration based on the share of the 10 largest R&D performers vis -à-vis
+Herfindahl index. The Herfindahl index for business R&D expenditure (R&D employment)
+varies from 0.02 (0.004) in Spain to close to 0.06 (0.032) in Sweden. For comparison, in
+the context of sales concentration in a well-defined market, a Herfindahl index below 0.01
+indicates a highly competitive market while an index between 0.15 and 0.25 points to a
+moderate rate of concentration; finally an index above 0.25 points to a high rate of
+concentration.
+R&D is even more concentrated at the level of individual industries within each country
+(Figure 2). In most countries, the 10 largest R&D performers account on average for about
+60% of total R&D expenditure within a 2-digit industry. The Herfindahl index computed
+at country -industry level similarly exceeds the one at the level of the entire economy
+(Figure 1), with an average value of 0.14 (0.09) for R&D expenditure (R&D employment)
+across countries.
+
+===== PDF_PAGE 21 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  21
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 2. Within-industry concentration of business R&D
+Weighted mean across industries (2011-2016 average)
+
+Note: The figure shows R&D concentration across firms (establishments in the case of Israel) within A38
+industries. For each country, it displays weighted averages across industries, using each industry’s share in the
+total R&D expenditure of the country a s weight. It is based on average values across all years available for a
+given country-industry in the period 2011-2016. The micro-aggregated statistics reported for Ireland are based
+on tax relief microdata and not directly comparable with the R&D survey-based results reported for other
+countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+Figure 3 provides insights into the concentration of business R&D across 12 industries that
+on average contribute most to national business R&D performance. It shows the average
+share of R&D expenditure (R&D employment) accounted for by the 10 largest R&D
+performers (R&D employers) by industry, and the co rresponding Herfindahl Index for
+R&D expenditure and R&D employment.
+As Figure 3 (left and right panel) shows, R&D in Mining, Finance and Pharmaceuticals is
+noticeably more concentrated than in other industries, looking at R&D investment or R&D
+employment. By contrast, Food & beverages and Information & communication are among
+those industries that show the least concentration of R&D investment and employment.
+
+===== PDF_PAGE 22 =====
+22  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 3. Concentration of business R&D by industry
+Mean values across countries adjusted for country compositional effects (2011-2016 average)
+
+Note: The figure shows R&D concentration across firms (establishments in the case of Israel) for selected A38
+industries. For each industry, it displays averages across countries. Country-specific effects have been removed
+by subtracting country-specific means and replacing them with the overall population mean. The figure is based
+on average values across all years available for a given country -industry in the period 2011 -2016. Countries:
+AUS, AUT, BEL, CHE, CHL, CZE, DEU, ESP, FRA, HUN, IRL, ISR, ITA, JPN , NLD, NOR, NZL, PRT,
+SWE. The micro -aggregated statistics reported for Ireland are based on tax relief microdata and not directly
+comparable with the R&D survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+In recent years, a lot of attention has been given to rising industry concentration (in terms
+of sales) in some countries. Recent evidence for an increase in industry sales concentration
+in some OECD countries is provided by Bajgar et al. (2019). The microBeRD data offer a
+unique opportunity to see if similar trends can also be observed in terms of R&D
+concentration. Figure 4 indicates that, on av erage, within both countries and industries,
+R&D concentration has actually steadily decreased over time, whether measured by the
+share of the 10 largest R&D performers in an industry or by the Herfindahl index.
+However, at least t hree important qualifica tions are warranted. Firstly, the “firms” or
+economic units in the microBeRD data are enterprises (establishments in the case of
+Israel).14 If R&D performing firms increasingly form part of enterprise groups,
+concentration measured at the group level could be flat or even increasing while enterprise-
+level concentration is declining. Secondly, the metrics presented here show R&D
+concentration within individual countries. Global business concentration of R&D could
+follow very different trends, as the largest global groups can own R&D performing
+enterprises with in many different countries. Thirdly, the distinction between R&D
+performance and ownership is important. In the presence of intense takeover activity a nd
+markets for IP as well as R&D outsourcing, a decline in the concentration of R&D
+performance could run in parallel with a rising concentration of ownership if the rights to
+use outcomes of R&D are ultimately acquired by a small group of companies. Subje ct to
+the availability and linkability of relevant patent microdata, microBeRD+ may further
+explore and provide additional insights into the concentration of R&D activity vs. IP
+ownership over time.
+
+===== PDF_PAGE 23 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  23
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 4. Trends in business R&D concentration within 2-digit industries
+Weighted mean across industries and countries
+
+Note: The figure shows R&D concentration across firms (establishments in the case of Israel) within A38
+industries. It displays the cumulative average change in concentration across countries and industries. In each
+year, a weighted average annual change i n concentration is calculated across all country -industries with the
+change observed in a given year, using each industry’s share in the total R&D of a given country as weight.
+The average annual changes are then cumulatively added over time. Countries: AUS, AUT, BEL, CHE, CHL,
+CZE, DEU, ESP, FRA, HUN, IRL, ISR, ITA, JPN, NLD, NOR, NZL, PRT, SWE. The micro -aggregated
+statistics reported for Ireland are based on tax relief microdata and not directly comparable with the R&D
+survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+For several countries – Belgium, Chile, the Czech Republic, France and Norway – a decline
+in the concentration of R&D performance (intramural R&D expenditure) can be witnessed
+(Figure 5), while R&D concentration is flat in most other countries. The only country with
+a clearly increasing trend in R&D concentration is Japan. However, this result should be
+taken with some caution given the incomplete coverage of SMEs in the data (see Section
+3. ).
+As Figure 6 shows, t he decline in R&D performance concentration has been primarily
+driven by the Information & communication industry, where the share of the largest 10
+R&D performing firms within countries has declined by about 40 percentage points
+between 1997 and 2016. Other important R&D industries that have witnessed a substantial
+decline in industry concentration are Finance and Scientific R&D. In most other industries,
+industry concentration has been flat or mildly declining, with the exception of Machinery
+& equipment where a noticeable increase in the share of R&D held by the ten largest
+performers can be observed.
+
+===== PDF_PAGE 24 =====
+24  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 5. Trends in business R&D concentration within countries
+Weighted mean across industries
+
+Note: The figure shows R&D concentration across firms (establishments in the case of Israel) within A38
+industries. For each country, it displays the cumulative average change in concentration across industries. In
+each year, a weighted average annual change in concentration is calculated across all industries with the change
+observed in a given year, using each industry’s share in the total R&D of a given country as weight. The average
+annual changes are then cumulatively added over time. The micro-aggregated statistics reported for Ireland are
+based on tax relief microdata and not directly comparable with the R&D survey-based results reported for other
+countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+
+===== PDF_PAGE 25 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  25
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 6. Trends in business R&D concentration by industry
+Mean across countries
+
+Note: The figure shows R&D concentration across firms (establishments in the case of Israel) within A38
+industries. For each indus try, it displays the cumulative average change in concentration across countries. In
+each year, an average annual change in concentration is calculated across all countries with the change observed
+in a given year. The average annual changes are then cumul atively added over time. Countries: AUS, AUT,
+BEL, CHE, CHL, CZE, DEU, ESP, FRA, HUN, IRL, ISR, ITA, JPN, NLD, NOR, NZL, PRT, SWE. The
+micro-aggregated statistics reported for Ireland are based on tax relief microdata and not directly comparable
+with the R&D survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+An important question is to what extent the observed trends in R&D concentration might
+have been influenced by R&D support policies, and R&D tax incentives more specifically.
+To explore this question, Figure 7 plots for each country the change in R&D concentration
+over the entire period for which relevant data available against the log change in the average
+B-Index over the same period. The approach adopted in the microBeRD project is to
+estimate the implications of R&D tax relief provisions through the calculation of the B -
+Index at the level of e ach firm (OECD, 2020a). The B-Index is a key R&D tax incentive
+indicator (Appelt et al., 2019) that specifies the cost of R&D to business when investing
+one additional monetary unit in R&D.
+Figure 7 shows a link between a decrease in tax relief related cost of R&D and a decrease
+in R&D concentration: countries that have seen the largest increases in tax support (i.e. the
+strongest declines in B-Index) have also seen the sharpest declines in R&D concentration.
+In a specular way, the few countries that have seen a decline in support, and therefore an
+increase in the B-Index, such as Netherlands, Spain, Hungary, and to a lesser extent Italy,
+have seen an increase in R&D concentration. This is in line with evidence from the initial
+microBeRD cross-country study (OECD, 2020a), which showed that tax incentives induce
+additional entry into R&D performance as well as additional R&D investment amon g
+existing R&D performers whereby smaller firms respond more strong ly to R&D tax
+incentives than larger firms.
+This stylised correlation does not have direct policy implications since there are multiple
+mechanisms that connect public support and the observed R&D concentration patterns. The
+design features of tax support may in some instances induce different R&D funding and
+performance arrangements. In addition, measurement and sampling concerns can also arise
+if the introduction of R&D tax incentives helps R&D surveys identify smaller R&D -
+
+===== PDF_PAGE 26 =====
+26  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+performing firms. This would reduce the measured R&D concentration even if the actual
+R&D concentration remains unchanged.
+Figure 7. Changes in business R&D concentration and the cost of R&D (B-Index)
+Change between the first and the last year for each country
+
+Note: For each country, the figure plots a change in national R&D concentration across firms (establishments
+in the case of Israel) against the log change in the average B -Index. The changes are calculated between the
+first and last year available in the data for each country. The micro-aggregated statistics reported for Ireland are
+based on tax relief microdata and not directly comparable with the R&D survey-based results reported for other
+countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+4.2. Performance and funding of R&D by foreign-controlled affiliates
+The microBeRD analysis also provides insights into the role that foreign-controlled
+affiliates15 play as R&D performers in different countries. Figure 8 describes the share of
+foreign-owned firms in the R&D sector – relative to the population of R&D performing
+firms, total R&D expenditure, and R&D employment as well as direct and tax support for
+business R&D – for each country where foreign ownership information is available.
+Figure 8 (left panel) shows that more than 40% of R&D -performing firms in Sweden are
+foreign-owned, whereas less than 20% of R&D-performing firms are foreign-owned in the
+case of Spain, Portugal, and France. However, the share of foreign-owned firms in the total
+number of R&D performing firms is not necessarily very informative about the overall
+importance of foreign -owned firms in terms of total R&D expenditure because foreign-
+owned firms tend to be disproportionally large companies (see middle panel) and in many
+cases (e.g. Portugal; Ireland; Israel) foreign-controlled firms account for double the share
+in terms of R&D expenditure or R&D employment than in terms of number of R&D
+performing firms. Indeed, their share in total business R&D expenditure is more than 40%
+in the median country (Sweden) and ranges from just above 20% in Portugal to around 70%
+in Israel. Foreign-owned firms also account for a large share of business R&D expenditure
+in the Czech Republic and Austria, whereas they play a comparatively more limited role in
+Spain, Portugal, and France. The corresponding figures for R&D employment support this
+finding.
+
+===== PDF_PAGE 27 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  27
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Interestingly, foreign-owned firms tend to receive proportionally less R&D support through
+direct funding (Figure 8 right panel) compared to their share in total R&D expenditure,
+with the exception of France and, to a lesser extent, Spain. By contrast, in all three countries
+(Czech Republic, France, Portugal) where matched R&D and tax data are available together
+with foreign ownership information, foreign-owned firms account for a slightly greater
+share of R&D tax relief than R&D expenditure. This might be due to foreign-owned firms
+being more likely to actually apply for R&D tax relief or being more likely to receive
+support (e.g. more likely to be profitable). Other factors such as the presence and relative
+magnitude of ceilings on the amount of qualifying R&D expenditure or value of R&D tax
+benefits may also play a role. In the case of Ireland, where micro-aggregated statistics rely
+exclusively on tax relief data, foreign -owned firms account for over 80% of qualifying
+R&D expenditure and over 40% of R&D tax support claimed (i.e. earned credits, including
+carry-forwards from previous periods). This figure differs from the actual value of R&D
+tax support paid out to firms (sum of tax offsets and refunds, where applicable) in the
+accounting period.
+Figure 8. Share of foreign-owned firms in business R&D expenditure and funding
+2011-2016 average
+
+Note: For each country, the figure shows the share of foreign -owned firms in business R&D in terms of R&D
+performing firms, performance and funding. It displays average values across all years available for a given
+country in the period 2011 -2016. The micro-aggregated statistics reported for Ireland are based on tax relief
+microdata and not directly comparable with the R&D survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+Figure 9 displays how the share of foreign-owned firms in business R&D expenditure and
+R&D funding – direct vs tax support – has evolved over time in different countries. In the
+Czech Republic and Spa in, the importance of foreign -owned firms as corporate R&D
+performers has seen a steady increase over time, while their importance has been relatively
+stable in France and Portugal.16
+
+===== PDF_PAGE 28 =====
+28  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 9. Trends in the share of foreign-owned firms in business R&D expenditure and funding
+
+Note: For each country, the figure shows the evolution of the share of foreign -owned firms in business R&D
+in terms of R&D expenditure and funding of business R&D. The micro -aggregated statistics reported for
+Ireland are based on tax relief microdata and not directly comparable with the R&D survey-based results
+reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+4.3. Business R&D activity and funding across industries
+This section uses the rich detail of the micro -aggregated data produced by microBeRD to
+offer new insights into differences in the distribution, structure and orientation of business
+R&D across industries. As Figure 10 shows, there are substantial differences in the R&D
+intensity of R&D-performing firms across industries, with R&D intensity being defined as
+the ratio of R&D expenditure to sales.
+Importantly, Figure 10 documents R&D intensity of firms conditional on these firms
+having a strictly positive R&D expenditure. R&D performers in the Scientific R&D
+industry tend to have a much higher R&D intensity (median at 70%, 75 th percentile at
+270%) than R&D performers in any other industry. This is because R&D service providers
+are likely to reflect in their scope and type of R&D activity the dominant use industry (e.g.
+pharma) in a given country.
+The R&D intensity of a median R&D performing firm is highest in Information &
+communication with 21% and Computer & electronics with about 8%. In most other
+industries, the median R&D intensity is below 5%, and it is lowest in Foo d & beverages
+and Mining (1.5%). However, there are also important differences beyond the median firm.
+In particular, in Finance and in Mining, firms at the 75 th percentile of R&D intensity are
+highly R&D -intensive even though the median firm has, relative to all other sectors,
+average R&D intensity in Finance and low R&D intensity in Mining.
+
+===== PDF_PAGE 29 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  29
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 10. Distribution of R&D intensity (among R&D performers) by industry
+Panel 1: Average of percentiles across countries (2011-2016 average).
+
+Panel 2: The same as Panel 1 but excluding Scientific R&D.
+
+Note: The figure shows the distribution (25th, 50th and 75th percentile across firms) of R&D intensity (R&D
+expenditure divided by sales and profits in the case of Ireland) for selected A38 industries (two-digit A38 codes
+in squared brackets). For each ind ustry, it displays (unweighted) averages across countries. It is based on
+average values across all years available for a given country-industry in the period 2011-2016. Countries: AUS,
+AUT, BEL, CHL, CZE, DEU, ESP, FRA, IRL, ISR, JPN, NZL, PRT, SWE. The m icro-aggregated statistics
+reported for Ireland are based on tax relief microdata and not directly comparable with the R&D survey-based
+results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+Industries also differ widely in terms of the contribution that SMEs make to national
+business R&D performance (Figure 11). As with the s hare of foreign -owned firms, the
+differences are not so important in terms of the number of R&D performers as the majority
+of R&D-performing firms are SMEs in all industries, but they become significant when
+focusing on the share of R&D expenditure and R&D employment accounted for by SMEs.
+SMEs account for around half of total business R&D expenditure and R&D employment
+in Scientific R&D and Information & communication, but for only around 10% of total
+business R&D expenditure and about 20-25% of R&D employment in Pharmaceuticals and
+Transport equipment.
+
+===== PDF_PAGE 30 =====
+30  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 11. SME share in R&D firms, R&D performance and R&D support by industry
+Mean across countries adjusted for country compositional effects (2011-2016 average)
+
+Note: For selected A38 industries, the figure shows the share of SMEs (10 -249 employees) in business R&D
+in terms of firm count, performance and funding. For each industry, it displays averages across countries.
+Country-specific effects have been removed by subtracting country-specific means and replacing them with the
+overall population mean. The figure is based on average values across all years available for a given country -
+industry in the period 2011 -2016. Countries: AUS, AUT, BEL, CAN, CHE, CHL, CZE, D EU, ESP, FRA,
+GBR, IRL, ISR, ITA, JPN, NLD, NOR, NZL, PRT, SWE. Countries (direct support): AUS, AUT, BEL, CHE,
+CHL, CZE, DEU, ESP, FRA, HUN, ISR, ITA, JPN, NLD, NOR, NZL, PRT, SWE. Countries (tax support):
+AUS, BEL, CAN, CZE, FRA, HUN, IRL, NLD, NOR, PRT, SWE The micro-aggregated statistics reported for
+Ireland are based on tax relief microdata and not directly comparable with the R&D survey-based results
+reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+SMEs tend to account for a disproportionally higher share of direct funding, reflecting the
+more discretionary nature of this form of support, compared to their contribution to
+business R&D performance in most industries, but the difference is particularly large in
+Mining and Pharmaceuticals. As expected for market-based and less discretionary support
+measures, such as R&D tax credits, the SME share in R&D tax relief tends to match more
+closely the SME share in R&D expenditure across all industries. Figure A B.1 provides
+complementary, country specific inform ation on the SME shares in population of R&D
+firms, R&D performance and support by industry for the subset of countries that offer R&D
+tax incentives and have available matched R&D and tax relief microdata.
+Although the industry composition of R&D differs in terms of basic and applied research
+versus experimental development, the cross -sectoral differences are on average of a
+moderate scale (Figure 12). Basic and applied research accounts for between 40% and 60%
+of all R&D expenditure in all main R&D industries except for Transport equipment, where
+it accounts for less than 30% of total R&D. Basic research represents a minor share of total
+R&D in all industries, and it is most important in Scientific R&D and Pharmaceuticals.
+Compared to official R&D statistics by the US National Science Foundation on business
+R&D in the United States by industry and type of R&D for 2018, 17 the micro-data based
+industry-level shares of exp erimental development (Figure 12) averaged across countries
+where relevant data are available, are somewhat lower (around 60%) than those found for
+the United States (60-85%), although the overall pattern looks qualitatively similar.
+
+===== PDF_PAGE 31 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  31
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 12. Intramural R&D expenditure by industry and type of R&D
+Mean across countries adjusted for country compositional effects (2011-2016 average)
+
+Note: For selected A38 industries, the figure shows the orientation of R&D. For each industry, it displays
+unweighted averages across countries. Country -specific effects have been removed by subtracting country -
+specific means and replacing them with the overall popu lation mean. The figure is based on average values
+across all years available for a given country -industry in the period 2011 -2016. Countries: AUS, AUT, BEL,
+CHE, CHL, CZE, DEU, ESP, FRA, ISR, ITA, JPN, NLD, NOR, PRT, SWE.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+The nature of R&D in different industries can also be characterised according to the type
+of R&D employment (Figure 13). For instance, the ratio of R&D employment measured in
+full-time equivalents to R&D employment measured in headcounts indicates whether most
+R&D employees in a given industry work on R&D projects on a full-term basis or devote
+only a part of their working time to R&D (or work only part -time). In S cientific R&D,
+Computer & electronics and Pharmaceuticals, employees involved in R&D seem more
+likely to be fully dedicated to work on R&D projects . In Finance, M ining and Metal
+products, by contrast, it seems relatively common for employees to devote only part of their
+time to R&D.
+Another way to characterise R&D employment in different industries is to look at the
+relative wages of R&D workers, as approximated by R&D unit labour costs, i.e. the ratio
+of total labour R&D expenditure to total number of R&D employees. T o abstract from
+differences in labour costs across countries and look only at relative differences within
+countries, R&D wages are norm alised to one in the Pharmaceuticals industry in each
+country. Figure 13 documents that r esearchers in Pharmaceuticals, Finance and
+Information and Communication are paid 40-50% more than researchers in Metal products
+and Food & beverages.
+Finally, the share of female R&D employees and share of R&D staff with a doctorate
+degree can also provide important insights into industry specific differences in R&D
+employment ( Figure 14). Women represent over one third of R&D employees in
+Chemicals, Scientific R&D and Food & beverages and more than 50% of R&D employees
+in Pharmaceuticals. By contracts, 10% or fewer of R&D employees in Transport
+equipment, Metal products and Mach inery and equipment are women. Likewise, a high
+share of doctorate holders among R&D staff can be found in science-based industries such
+as Pharmaceuticals, Scientific R&D and Chemicals.
+
+===== PDF_PAGE 32 =====
+32  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 13. Full time engagement in R&D and R&D unit labour costs by industry
+Mean across countries adjusted for country compositional effects (2011-2016 average)
+
+Note: For selected A38 industries, the figure d ocuments the characteristics of R&D employment. The first
+measure is calculated as the ratio of R&D employment defined in full-time equivalents and R&D employment
+defined in headcounts. The second measure is calculated as the ratio of total labour R&D expe nditure to total
+number of R&D employees, normalised to be 1 in pharmaceuticals. For each industry, the figure displays
+averages across countries. Country-specific effects have been removed by subtracting country -specific means
+and replacing them with the overall population mean. The figure is based on average values across all years
+available for a given country-industry in the period 2011-2016. Countries: AUT, BEL, CHE, CHL, CZE, DEU,
+ESP, FRA, HUN, ITA, NLD, NOR, PRT.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+Figure 14. Share of female R&D employees and R&D staff with doctorate degree by industry
+Mean across countries adjusted for country compositional effects (2011-2016 average)
+
+Note: For selected A38 industries, the figure shows the share of women and of doctorate-level workers among
+R&D employees. For each industry, the figure displays averages across countries. Country-specific effects have
+been removed by subtracting country-specific means and replacing them with the overall population mean. The
+figure is based on average values across all years available for a given country -industry in the period 2011 -
+2016. Countries: AUT, BEL, CHL, CZE, ESP, ISR, ITA, JPN, PRT.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+
+===== PDF_PAGE 33 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  33
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+The micro -aggregated structure of the microBeRD data also permits looking at the
+distribution of within -firm growth in R&D expenditure. Figure 15 shows that in all
+industries, R&D expenditure is highly volatile from year to year, with an annual growth
+rate of around -35% at the 25th percentile and around 50% at the 75th percentile. With the
+exception of Mining, a positive within-firm annual growth rate in R&D expenditure can be
+observed for the median firm (50th percentile) in all industries, ranging from 1.6% in Food
+& beverages to 7.6% in Scientific R&D.
+Figure 15. Within-firm growth in R&D performance by industry
+Means of R&D expenditure growth percentiles across countries (2011-2016 average)
+
+Note: For selected A38 industries, the figure shows the 25th, 50th and 75th percentile of the distribution of the
+within-firm annual growth (log change) in R&D expenditure across firms. For each industry, it displays
+averages across countries. The figure is based on average values across all years available for a given country-
+industry in the period 2011-2016. Countries: AUS, AUT, BEL, CAN, CHL, CZE, DEU, FRA, HUN, IRL, ISR,
+ITA, JPN, NLD, NOR, NZL, PRT, SWE. The micro-aggregated statistics reported for Ireland are based on tax
+relief microdata and not directly comparable with the R&D survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+Industries also differ in the amount of direct funding and tax support that R&D performing
+firms receive. Figure 16 shows the average ratios of direct and tax support R&D to business
+R&D expenditure by industry. Firms in the Scientific R&D sector benefit comparatively
+most from direct funding with a direct funding to R&D expenditure ratio close to 13%.
+Scientific R&D is the only sector where firms rely more on direct funding than R&D tax
+incentives on average (across the countries included in the sample) . By contrast, only a
+very small fraction of business R&D is financially supported through direct funding in the
+Finance sector. The industries that rely most on R&D tax support according to the ratio of
+R&D tax support to business R&D expenditure – a proxy measure for the average R&D
+tax subsidy – include Metal products (16%), Food & beverages (14%) and Pharmaceuticals
+(14%). Figure A B.2 (Annex B) provides complementar y information on the relative
+importance of direct funding and tax support for business R&D separately for each industry
+and country, pointing to a large variation in the amount of direct and tax support that R&D
+performers in different industries receive on average across countries (relying on
+differences in average ratios of direct and tax support for R&D relative to business R&D
+expenditure).
+
+===== PDF_PAGE 34 =====
+34  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 16. Direct and tax support for business R&D as a share of R&D expenditure by industry
+Mean across countries adjusted for country compositional effects (2011-2016 average)
+
+Note: For selected A38 industries, the figure shows the ratios of direct and tax support to business R&D
+expenditure. For each industry, the figure displays averages across countries. Country -specific composition
+effects have been removed by subtracting country -specific means and replacing them with the overall
+population mean. The figure is based on average values across all years available for a given count ry-industry
+in the period 2011 -2016. Countries (direct support): AUS, AUT, BEL, CHE, CHL, CZE, DEU, ESP, FRA,
+HUN, ISR, ITA, JPN, NLD, NOR, NZL, PRT, SWE. Countries (tax support): AUS, BEL, CAN, CZE, FRA,
+HUN, IRL, NLD, NOR, PRT, SWE. The micro-aggregated statistics reported for Ireland are based on tax relief
+microdata and not directly comparable with the R&D survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+How public support for business R&D is distributed across industries does not only depend
+on the share of government -financed R&D in each industry but also on each industry’s
+share in total business R&D expenditure. Table 4 documents large cross -country
+differences in how direct support is distributed across industries. In Belgium, for example,
+the distribution of direct funding of business R&D across the main R&D industries is
+remarkably even. By contrast, in several countries, a large proportion of direct support is
+concentrated in Scientific R&D or Transport equipment. The distribution of R&D tax relief
+across industries in each country is shown in Table 4, based on matched R&D and tax relief
+microdata. Compared to direct funding, R&D tax relief tends to be more evenly distributed
+across industries and better reflect industry shares in the total R&D expenditure, which is
+to be expected given the non -discretionary, market-based nature of R&D tax incentives.
+Table 4 also presents a micro-data based version of the official R&D statistics on intramural
+business R&D by industry, as found in the OECD ANBERD database. As discussed in
+Section 3. , such analytical microBeRD indicators may not perfectly match national official
+figures for several reasons.
+
+===== PDF_PAGE 35 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  35
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Table 4. Distribution of intramural R&D and direct and tax support for BERD by industry
+Mean across countries (2011-2016 average)
+Country
+Variable
+Mining
+Food &
+beverages
+Chemicals
+Pharmaceutic
+als
+Metal
+products
+Computer &
+electronics
+Electrical
+equipment
+Machinery &
+equipment
+Transport
+equipment
+Information &
+communicatio
+n
+Finance
+Scientific R&D
+Other
+AUS Intramural
+R&D
+20% 4% 5% 4% 8% 6% 10% 20% 23%
+
+Direct
+support
+2% 2% 2% 4% 8% 52% 11% 2% 16%
+
+Tax support 17% 7% 4% 9% 8% 2% 11% 14% 28%
+AUT Intramural
+R&D
+0% 1% 3% 4% 5% 10% 11% 14% 9% 5% 0% 14% 25%
+
+Direct
+support
+0% 0% 1% 0% 3% 7% 5% 6% 3% 4% 0% 52% 19%
+BEL Intramural
+R&D
+0% 1% 5% 31% 3% 4% 3% 5% 4% 8% 3% 9% 23%
+
+Direct
+support
+0% 2% 5% 3% 4% 9% 6% 5% 6% 10% 0% 10% 40%
+
+Tax support 0% 1% 9% 34% 3% 5% 5% 3% 1% 13% 1% 8% 17%
+CAN Intramural
+R&D
+10% 1% 1% 4% 4% 19% 1% 3% 12% 9% 2% 8% 25%
+Tax support 5% 1% 1% 4% 5% 17% 1% 4% 11% 14% 2% 7% 28%
+CHE Intramural
+R&D
+ 0% 3% 36% 3% 13% 2% 8% 2% 2% 13% 17%
+
+Direct
+support
+ 0% 1% 1% 4% 3% 1% 2% 12% 2% 65% 9%
+CHL Intramural
+R&D
+2% 12% 9% 7% 3% 0% 1% 8% 7% 9% 40%
+Direct
+support
+0% 10% 3% 4% 2% 0% 1% 7% 1% 28% 44%
+CZE Intramural
+R&D
+0% 1% 3% 3% 3% 3% 6% 9% 18% 15% 2% 14% 24%
+
+Direct
+support
+0% 0% 2% 2% 4% 5% 2% 8% 6% 18% 0% 31% 22%
+
+Tax support 0% 1% 3% 2% 5% 4% 9% 16% 30% 11% 6% 3% 9%
+DEU Intramural
+R&D
+0% 1% 6% 8% 2% 14% 3% 10% 37% 5% 1% 3% 10%
+
+Direct
+support
+0% 0% 3% 1% 5% 12% 2% 5% 27% 6% 0% 19% 20%
+ESP Intramural
+R&D
+0% 3% 4% 9% 3% 3% 3% 3% 13% 9% 2% 22% 26%
+
+Direct
+support
+0% 2% 1% 1% 3% 2% 1% 3% 19% 9% 0% 40% 17%
+FRA Intramural
+R&D
+0% 1% 5% 4% 2% 12% 3% 3% 18% 6% 1% 11% 33%
+
+Direct
+support
+0% 0% 4% 0% 1% 23% 1% 2% 47% 3% 0% 7% 10%
+
+Tax support 0% 2% 6% 5% 3% 12% 3% 3% 12% 8% 2% 14% 30%
+HUN Intramural
+R&D
+ 1% 1% 18% 1% 2% 6% 13% 7% 23% 28%
+Direct
+support
+ 2% 1% 6% 2% 1% 9% 3% 15% 31% 30%
+Tax support 0% 0% 29% 0% 2% 2% 42% 2% 4% 19%
+
+===== PDF_PAGE 36 =====
+36  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Country
+Variable
+Mining
+Food &
+beverages
+Chemicals
+Pharmaceutic
+als
+Metal
+products
+Computer &
+electronics
+Electrical
+equipment
+Machinery &
+equipment
+Transport
+equipment
+Information &
+communicatio
+n
+Finance
+Scientific R&D
+Other
+IRL Intramural
+R&D
+ 2% 1% 13% 1% 15% 1% 2% 11% 1% 5% 47%
+Tax support 2% 2% 11% 1% 14% 1% 3% 15% 1% 6% 45%
+ISR Intramural
+R&D
+ 0% 1% 1% 17% 0% 2% 37% 36% 6%
+Direct
+support
+ 1% 1% 2% 30% 1% 2% 16% 41% 7%
+ITA Intramural
+R&D
+1% 1% 3% 5% 3% 13% 4% 12% 23% 5% 1% 6% 21%
+Direct
+support
+0% 0% 1% 1% 2% 17% 1% 3% 39% 7% 0% 22% 8%
+JPN Intramural
+R&D
+0% 2% 15% 2% 4% 19% 9% 8% 18% 0% 0% 3% 18%
+Direct
+support
+0% 0% 5% 1% 5% 14% 10% 3% 6% 0% 0% 4% 53%
+NLD Intramural
+R&D
+1% 5% 6% 4% 2% 8% 7% 14% 3% 8% 2% 21% 18%
+Direct
+support
+0% 1% 0% 0% 0% 7% 1% 0% 1% 3% 0% 61% 26%
+Tax support 0% 8% 6% 7% 4% 12% 12% 22% 7% 8% 0% 11% 2%
+NOR Intramural
+R&D
+9% 2% 4% 2% 8% 7% 2% 4% 4% 12% 0% 4% 41%
+Direct
+support
+2% 2% 5% 1% 13% 5% 3% 6% 4% 1% 1% 9% 46%
+Tax support 1% 6% 3% 1% 6% 6% 2% 7% 4% 6% 0% 4% 54%
+NZL Intramural
+R&D
+ 8% 1% 1% 2% 5% 10% 6% 1% 21% 1% 12% 32%
+Direct
+support
+ 0% 0% 0% 2% 5% 9% 5% 0% 14% 0% 27% 38%
+PRT Intramural
+R&D
+0% 5% 2% 8% 3% 2% 4% 1% 4% 8% 15% 3% 45%
+Direct
+support
+0% 2% 1% 33% 5% 3% 3% 1% 1% 18% 1% 7% 26%
+Tax support 0% 5% 4% 21% 5% 3% 5% 2% 8% 11% 1% 2% 33%
+SWE Intramural
+R&D
+ 0% 2% 3% 7% 21% 3% 1% 11% 50%
+Direct
+support
+ 0% 0% 2% 0% 79% 0% 0% 14% 4%
+Tax support 0% 5% 10% 0% 10% 0% 19% 56%
+Note: For each country, the figure shows the distribution of intramural R&D expenditure, direct funding of
+business R&D and government R&D tax relief across A38 industries, and reflects for a given country-industry
+an average value across all years where r elevant data are available in the period 2011 -2016. The micro -
+aggregated statistics reported for Ireland are based on tax relief microdata and not directly comparable with the
+R&D survey-based results reported for other countries. With the exception of Ireland, the distribution R&D tax
+relief is calculated based on the matched BERD and tax relief sample and may deviate from official R&D tax
+relief statistics that are based on the whole population of R&D tax relief recipients. The micro -aggregated
+statistics reported for Ireland are based on tax relief microdata and not directly comparable with the R&D
+survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+
+===== PDF_PAGE 37 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  37
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+4.4. The role of small and young R&D performers
+Evidence on how R&D performance patterns vary across different business characteristics,
+especially those not usually captured by available statistics (e.g. firm age), is essential for
+understanding the stru cture and dynamics of R&D performance across countries . In
+addition to industry classification, firm size and firm age are key dimensions in which R&D
+performing firms – and their R&D activities – differ. This section presents novel microdata
+based statist ics that provide new evidence on the distribution of R&D across firms of
+different size and age , the role of small and young firms as R&D performers across
+industries and the variation in R&D intensity by firm size and age.
+Figure 17 plots the distribution of R&D intensity (R&D expenditure-sales ratio) among
+R&D performers by firm size and firm age. Small R&D-performing firms tend to have a
+higher R&D intensity than m edium-sized and large firms, looking at the median R&D
+intensity (50 th percentile) within each size class. However, this is conditional on firms
+having strictly positive R&D and it does not imply that small firms are in general more
+R&D intensive than larger ones. Small firms younger than 5 years show particularly high
+R&D intensity, which is at least partially linked to the limited sales that such firms generate
+in the early years of operation.18
+Figure 17. Distribution of R&D intensity among R&D performers by firm size and age
+Panel 1: By firm size – mean across countries (2011-2016 average)
+
+Panel 2: Small firms by age – mean across countries (2011-2016 average) - ex
+
+Note: The figure shows the distribution (25th, 50th and 75th percentile across firms) of R&D intensity (R&D
+expenditure divided by sales) by firm size and age. It displays averages across countries. It is based on average
+values across all years available for a given country in the period 2011 -2016. Countries: AUS, AUT, BEL,
+CHL, CZE, DEU, ESP, FRA, IRL, ISR, JPN, NZL, PRT, SWE. "Young" firms are defined as those with less
+than 5 years of age and old" firms as those that are five years and older. The micro-aggregated statistics reported
+for Ireland are based on tax relief microdata and not directly comparable with the R&D survey-based results
+reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+
+===== PDF_PAGE 38 =====
+38  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Small firms, and particularly young small firms, also invest the largest share of their
+business R&D expenditure into basic and applied research, but the differences are not large
+(Figure 18). These differences may be more pronounced for one country than another
+possibly also reflecting differences in the typical size of companies within each size class.
+Official R&D statistics by the US National Science Foundation on business R&D
+expenditure by firm size and type of R&D for 2018, 19 for instance, point to more marked
+differences in the share of basic and applie d research for small companies (31%) and
+medium-sized (27%) vis-à-vis large firms (21%).
+Figure 18. Orientation of intramural R&D expenditure by firm size and age
+Mean across countries adjusted for country compositional effects (2011-2016 average)
+
+Note: The figure shows the composition of R&D expenditure in terms of the type of R&D by firm size and age.
+The figure displays averages across countries. Country -specific effects have been removed by subtracting
+country-specific means and replacing them with the overall population mean. The figure is based on averag e
+values across all years available for a given country-industry in the period 2011-2016. Countries: AUS, AUT,
+BEL, CHE, CHL, CZE, DEU, ESP, FRA, ISR, ITA, JPN, NLD, NOR, PRT, SWE.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+Larger R&D performers in turn exhibit a somewhat higher rate of full time dedication to
+R&D by R&D staff (ratio of R&D employment in full -time equivalents to R&D
+employment in headcounts), and they also pay substantial ly higher wages (Figure 19), as
+measured by R&D unit labour costs (ratio of total labour R&D expenditure to total number
+of R&D employees). R&D unit labour costs are actually about 50% higher for large firms
+than for small firms, with medium-sized firms placed in between.
+Looking at differences in the composition of the R&D work force (Figure 20), young firms
+have on average the highest share of R&D employees with a doctorate degree, but they also
+have the lowest share of female R&D employees. Large firms have the highest share of
+female R&D employees.
+Large firms also outsource R&D twice as much as small and medium -sized firms , as
+measured by the ratio of extramural to total (intramural and extramural) R&D expenditure
+(Figure 21).
+In terms of the importance of public support for R&D for firms of different size (Figure 23),
+smaller firms rely to a larger extent on public support for R&D in financ ing their R&D
+investments, both in terms of direct and tax support.
+
+===== PDF_PAGE 39 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  39
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 19. R&D employment and unit labour costs by firm size and age
+Mean across countries adjusted for country compositional effects (2011-2016 average
+
+Note: The figure documents the characteristics of R&D employment by firm size and age. The first measure is
+calculated as the ratio of R&D employment defined in full-time equivalents and R&D employment defined in
+headcounts. The second measure is calculated as t he ratio of total labour R&D expenditure to total number of
+R&D employees, normalised to be 1 in pharmaceuticals. The figure displays averages across countries.
+Country-specific effects have been removed by subtracting country-specific means and replacing them with the
+overall population mean. The figure is based on average values across all years available for a given country -
+industry in the period 2011-2016. Countries: AUT, BEL, CHE, CHL, CZE, DEU, ESP, FRA, HUN, ITA, NLD,
+NOR, PRT.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+Figure 20. Share of female R&D employees and R&D staff with a doctorate degree
+Mean across countries adjusted for country compositional effects (2011-2016 average
+
+Note: The figure shows the share of women and of doctorate-holders among R&D employees by firm size and
+age. The figure displays averages across countries. Country-specific effects have been removed by subtracting
+country-specific means and replacing them with the population mean. The figure is based on average values
+across all years available for a given country -industry in the period 2011 -2016. Countries: AUT, BEL, CHL,
+CZE, ESP, ISR, ITA, JPN, PRT.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+
+===== PDF_PAGE 40 =====
+40  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 21. Outsourced R&D as share of total intramural and extramural R&D expenditure
+Mean across countries adjusted for country compositional effects (2011-2016 average)
+
+Note: The figure shows the share of extramural R&D expenditure in the combined intramural and extramural
+R&D expenditure by firm size and age. The figure displays averages across countries. Country-specific effects
+have been removed by subtracting country-specific means and replacing them with the overall population mean.
+The figure is based on average values across all years available for a given country-industry in the period 2011-
+2016. Countries: AUT, BEL, CAN, CHE, CHL, CZE, DEU, ESP, FRA, HUN, IRL, ISR, ITA, JPN, NLD,
+NOR, NZL, PRT, SWE. The micro-aggregated statistics reported for Ireland are based on tax relief microdata
+and not directly comparable with the R&D survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+Figure 22. Within-firm growth in R&D expenditure by firm size and age
+Mean of growth quantiles across countries (2011-2016 average)
+
+Note: The figure shows the 25th, 50th and 75th percentile of the distribution in firm R&D expenditure annual
+growth (log change) across firms by firm size. The figure displays averages across countries. The figure is
+based on average values across all y ears available for a given country -industry in the period 2011 -2016.
+Countries: AUS, AUT, BEL, CAN, CHL, CZE, DEU, FRA, HUN, IRL, ISR, ITA, JPN, NLD, NOR, NZL,
+PRT, SWE. The micro -aggregated statistics reported for Ireland are based on tax relief microdata and not
+directly comparable with the R&D survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+The distribution of within -firm growth in R&D expen diture is also quite similar across
+firms of different size, although small firms have a greater dispersion, as shown by the
+larger interquartile range (ration of p75 to p25) of the rate of growth (Figure 22).
+
+===== PDF_PAGE 41 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  41
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 23. Government direct funding and tax support for business R&D by size and age
+As a share of total bus. R&D expenditure, mean across countries adjusted for country compositional effects
+(2011-16 avg)
+
+Note: The figure shows the ratio of direct and tax support to R&D expenditure by firm size and age. The figure
+displays averages across countries. Country-specific effects have been removed by subtracting country-specific
+means and replacing them with the overall population mean. The figure is based on average values across all
+years available for a given country-industry in the period 2011-2016. Tax support figures are calculated based
+on the matched BERD and tax relief sample and may deviate from official R&D tax relief statistics that are
+based on the whole population of R&D tax relief recipients. Countries (direct support): AUS, AUT, BEL, CHE,
+CHL, CZE, DEU, ESP, FRA, HUN, ISR, ITA, JPN, NLD, NOR, NZL, PRT, SWE. Countries (tax su pport):
+AUS, BEL, CAN, CZE, FRA, HUN, IRL, NLD, NOR, PRT, SWE. The micro -aggregated statistics reported
+for Ireland are based on tax relief microdata and not directly comparable with the R&D survey-based results
+reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+An interesting difference also exists between young and old small firms in terms of the
+relative importance of the two types of support: while young small firms rely on direct
+support almost as much as on tax support, and this more than any other set of fi rms, for
+older small firms tax incentives are noticeably more important than direct support, on
+average. Medium -sized and particularly larger firms receive substantially less direct
+support compared to their R&D expenditure than small firms. The same is tr ue also for
+R&D tax relief, albeit to a lesser extent. Around 11% (13%) of R&D expenditure is
+financed through direct (tax) support in the case of small firms, compared to 7% (11%) for
+medium-sized and 5% (8%) for large enterprises. The stronger reliance of young firms on
+direct support might be related to the earlier timing with which firms typically receive direct
+vis-à-vis tax support or demonstration effects connected to the receipt of direct funding.The
+importance of the two types of public funding for firms of different size are also shown
+separately for each country in Figure A B.3 of Annex B.
+Figure 24 shows how the importance of direct funding and tax support has evolved over
+time for firms of different sizes. For small firms, the importance of direct funding has
+remained stable from 2000 to 2016, with exception of a short-term peak during the global
+financial crisis. For both medium -sized and large firms, the importance of direct funding
+as a source of R&D funding declined over the 2000 -2016 period. In sharp contrast, the
+importance of tax incentive as source of R&D funding has increased sharply for al l size
+classes over the time period considered.
+
+===== PDF_PAGE 42 =====
+42  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure 24. Trends in government direct and tax support for business R&D by size
+As a share of total business R&D expenditure, mean across countries (2011-2016 average)
+
+Note: The fig ure shows the ratio of direct and tax D support to R&D expenditure by firm size over time. It
+displays the cumulative average change in each ratio across countries. In each year, a weighted average annual
+change in each ratio is calculated across all count ries based on the changes observed in a given year. Average
+annual changes are then added up over time. Changes in the ratio of tax support to R&D expenditure are
+calculated based on the matched BERD and tax relief sample and may deviate from official R&D tax relief
+statistics that are based on the whole population of R&D tax relief recipients. Countries (direct support): AUS,
+AUT, BEL, CHE, CHL, CZE, DEU, ESP, FRA, HUN, ISR, ITA, JPN, NLD, NOR, NZL, PRT, SWE. Countries
+(tax support): AUS, BEL, CAN, CZE, F RA, HUN, IRL, NLD, NOR, PRT, SWE. The micro -aggregated
+statistics reported for Ireland are based on tax relief microdata and not directly comparable with the R&D
+survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+
+===== PDF_PAGE 43 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  43
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+5. Conclusion and next steps
+Drawing on the micro -aggregated statistics collected as part of the first phase of the
+microBeRD project (2016-19), this report highlights novel and stylised facts about business
+R&D performance and funding that aggregate R&D and tax relief statistics have not
+previously documented on a cross-country basis. Following an analysis of the coverage and
+representativeness of micro-aggregated R&D and tax relief data vis-à-vis aggregate R&D
+and tax relief statistics, it describes recent and long -term trends in business R&D
+performance and funding across countries and industries, exploring differences across
+firms of different size, age and foreign ownership. This includes trends in the concentration
+of R&D activity, intensity and structure of R&D performance (e.g. orien tation of R&D),
+R&D employment and the way different types of firms fund their R&D activities.
+The micro -data based findings highlight the strong concentra tion of business R&D at
+country, and in particular industry level, but also point to a variation in the rate of R&D
+concentration across different industries, whether measured by the share of 10 largest R&D
+performers in an industry or by the Herfindahl index. Available results further suggest that
+the within industry concentration of R&D has remained stable or, more often, declined over
+time and that this decline is, at country level, positively correlated with the increasing
+adoption and generosity of R&D tax incentives, that reduce the cost of R&D and encourage
+R&D investment among existing and new R&D performers, especially the smaller ones
+(OECD, 2020a).
+The micro-aggregated statistics also provide new insights into the role of foreign-controlled
+affiliates and young and small firms as R&D performers, looking at R&D expenditure and
+employment, as well as their reliance on public support for business R&D through direct
+funding and R&D tax incentives. While foreign-controlled firms account for a significant
+share of business R&D expenditure in many OECD economies, they tend to receive
+proportionally less R&D support through direct funding compared to their share in total
+R&D expenditure. By contrast, SMEs tend to account for a disproportionally higher share
+in direct funding compared to their contribution to business R&D performance in most
+industries, but the difference is particularly large in Mining and Pharmaceuticals. As
+expected for market-based and less discretionary support measures, the SME share in R&D
+tax relief tends to match more closely the SME share in R&D expenditure across different
+industries. An interesting difference also exists between young and old small firms in terms
+of the relative importance of the two typ es of support: while young small firms rely on
+direct support almost as much as on tax support, and this more than any other set of firms,
+for older small firms tax incentives are noticeably more important than direct support, on
+average.
+The micro-aggregated statistics presented in this report also show how the orientation of
+R&D differs across industries. Overall, cross-industry differences in the share of basic and
+applied research versus experimental development can be found, although they do not tend
+to be particularly large. Research (basic and applied) accounts for close to 40% to 60% of
+all R&D expenditure in all main R&D industries except for Transport equipment, where it
+accounts less than 30% of total R&D. Basic research represents a minor share of total R&D
+in all industries. It is most important in Scientific R&D and Pharmaceuticals with a share
+in intramural R&D expenditure of close to 10%.
+Large differences are found in the share of female R&D employees and share of R&D staff
+with a doctorate degree in R&D employment across industries. Women represent over one
+third of R&D employees in Chemicals, Scientific R&D and Food & beverages and more
+
+===== PDF_PAGE 44 =====
+44  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+than 50% of R&D employees in Pharmaceuticals. 10% or less R&D employees in
+Transport equipment, Metal products and Machinery and equipment are women. Likewise,
+a high share of doctorate holders among R&D staff can be found in science-based industries
+such as Pharmaceuticals, Scientific R&D and Chemicals.
+These new micro -aggregated statistics provide an importa nt input for policy analysis,
+pointing to important variations in business R&D performance and funding across
+industries and different types of firms that are hard to uncover based on aggregate R&D
+statistics. These can reveal new evidence that either conf irms or challenges existing
+assumptions about how policies work, helping refine policy research questions for analysis.
+The microBeRD approach enables the exploration of different data beyond established
+tabulations that countries regularly submit to the OECD. The latter, as the implementation
+of the Frascati Manual 2015 has shown, are difficult to change in a sufficiently responsive
+fashion due to a combination of factors. microBeRD helps demonstrate how it is possible
+to enhance the range of policy releva nt indicators while protecting business respondent
+confidentiality.
+As the microBeRD+ project progresses, by incorporating new countries in the analysis,
+expanding data linking activities, the work of micro-aggregated R&D statistics will further
+advance to shed new light on key trends in the innovation and economic performance of
+R&D performing firms across different countries and industries.
+
+===== PDF_PAGE 45 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  45
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Endnotes
+1 To ensure cross -country comparability, the analysis focuses o n small, medium -sized and large
+firms. Many countries do not cover micro firms with less than 10 employees in business R&D
+surveys.
+2 See http://www.oecd.org/sti/inno/oecdinnovationmicrodataproject.htm,
+http://www.oecd.org/sti/ind/multiprod.htm and http://www.oecd.org/sti/dynemp.htm.
+3 Most of the data available for this study are based on guidance within the 2002 edition of the OECD
+Frascati Manual. Data fully consistent with the most recent 2015 update are now becoming available.
+4 Different enterprise concepts – variably defined ente rprise units, plants and establishments or
+enterprise groups – exist and may be adopted by countries in business R&D surveys and the
+computation of R&D tax benefits at firm level. This has implications for the comparability of
+indicators collected in regul ar data collections as well as those compiled by microBeRD (e.g.
+concentration statistics). While warnings flags are provided in this report, whenever country-specific
+enterprise definitions were reported, further OECD work aims to investigate this issue in more detail.
+This includes the collection of additional metadata and review of the existing firm size definitions.
+5 The excluded industries are “Wholesale and retail trade and repair of motor vehicles and
+motorcycles” (45), “Retail trade, except of mot or vehicles and motorcycles” (47),
+“Accommodation” (55),“ Food and beverage service activities” (56),“ Real estate activities” (68)
+and “Legal and accounting activities” (69).
+6 Observations are considered as outliers and dropped (a) if the logarithm of R&D intensity is more
+than 5 standard deviations above the mean (within a given country and year), or (b) if the ratio of
+labour R&D expenditure and R&D employment is more than 5 standard deviations above or below
+the mean.
+7 Throughout the report, industrie s are defined in the STAN A38 industry classification, which
+consists of ISIC rev. 4 2-digit industries, some of which have been aggregated together.
+8 See https://oe.cd/anberd and https://oe.cd/rds
+9 The microBeRD code drops imputed observations and reweights the remaining observations,
+assuming that the imputed observations perform the same amount of R&D as the non -imputed
+observations in the same industry and size class. In the case of Belgium, the imputed firms perform
+on average less R&D than non-imputed firms in the same industry and size class, which leads to an
+overestimation of total R&D by microBeRD. This issue does not arise for other countries as they
+either do not use imputation or seem to satisfy the above-mentioned assumption.
+10 Both the official R&D statistics and microBeRD totals for business for R&D expenditure and
+direct support of business R &D presented for the Netherlands in this report are based on an earlier
+time-series of business R&D survey data. They are thus not directly comparable with the newly
+revised official R&D statistics for the Netherlands, reported by the OECD since March 2021 . In
+2019, the Netherlands revised their R&D statistics for BERD to capture from 2013 onwards R&D
+activities undertaken by hired personnel as part of a company’s own R&D and those of public
+entities that acquire a large share of income on the market. For a dditional details (in Dutch), see
+https://www.cbs.nl/nl-nl/achtergrond/2020/02/research-en-development-revisie-2019.
+11 Average mean value of a statistic or d ecomposition ( e.g. i ndustry, firm size, age etc.) across
+countries.
+12 In an average year during the period 2011-2016.
+
+===== PDF_PAGE 46 =====
+46  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+13 The Herfindahl index for R&D is the sum, across R&D performing firms, of their squared shares
+in in total intramural R&D expenditure. The Herfindahl Index ranges from 1/N to one, where N is
+the number of firms
+14 An enterprise is the view of any institutional unit – not necessarily within what the Frascati
+Manual defines as the Business enterprise sector – as a producer of goods and services (See SNA).
+The term enterprise may refer to a corporation, a quasi -corporation, a non -profit institution or an
+unincorporated enterprise. An enterprise is an economic transactor with autonomy in respect of
+financial and investment decision -making, as we ll as authority and responsibility for allocating
+resources for the production of goods and services. It may be engaged in one or more economic
+activities at one or more locations. An enterprise may be a sole legal unit. An enterprise group is a
+set of ent erprises controlled by the group head. The group head is a parent legal unit that is not
+controlled either directly or indirectly by any other legal unit. It can have more than one decision -
+making centre, especially for the policy on production, sales and profits, or it may centralise certain
+aspects of financial management and taxation. It constitutes an economic entity that is empowered
+to make choices, particularly concerning the units that it comprises. An establishment is an
+enterprise, or part of an e nterprise, that is situated in a single location and in which only a single
+productive activity is carried out or in which the principal productive activity accounts for most of
+the value added. Establishments are sometimes referred to as local kind -of act ivity units. See
+https://www.oecd.org/sti/inno/Frascati-2015-Glossary.pdf
+15 Foreign-controlled affiliates (FCA) are the fully consolidated enterprise group within the
+compiling count ry that are majority -owned members of foreign MNEs (thus majority -owned by
+their foreign parent companies (OECD, 2015).
+16 The trends in Austria, Israel and Sweden are less informative due to relatively short time series.
+17 See https://ncses.nsf.gov/pubs/nsf21312/table/12#data-tables
+18 R&D intensity based on overall company costs may be another relevant indicator for very young
+firms.
+19 See https://ncses.nsf.gov/pubs/nsf21312/table/12#data-tables
+
+===== PDF_PAGE 47 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  47
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+References
+Appelt, S., F. Galindo-Rueda, and A. C. González (2019), “Measuring R&D tax support: Findings from the new
+OECD R&D Tax Incentives Database”, in OECD Science, Technology and Industry Working Papers , No.
+2019/06, OECD Publishing, Paris, https://doi.org/10.1787/18151965
+Bajgar, M., Berlingieri, G., Calligaris, S., Criscuolo, C. and Timmis, J. (2019), ‘Industry Concentration in Europe
+and North America’, Productivity Working Paper No. 18, OECD. https://doi.org/10.1787/2ff98246-en
+Bartelsman, E., S. Scarpetta, and F. Schivardi (2005), “Comparative Analysis of Firm Demographics and Survival:
+Evidence from Micro-Level Sources in OECD Countries.” Industrial and Corporate Change, Vol. 14/3, pp.
+365–91, https://doi.org/10.1093/icc/dth057.
+Bartelsman, E., J. Haltiwanger, and S. Scarpetta (2009), “Measuring and Analyzing Cross-Country Differences in
+Firm Dynamics” in Producer Dynamics: New Evidence from Micro Data, 15 –76, University of Chicago Press,
+https://www.nber.org/chapters/c0480.
+Berlingieri, G., P. Blanchenay, S. Calligaris, and C. Criscuolo (2017), “The MultiProd Project: A Comprehensive
+Overview”, OECD Science, Technology and Industry Working Papers, No. 2017/04, OECD Publishing, Paris,
+https://doi.org/10.1787/18151965.
+Criscuolo, C., P. N. Gal, and C. Menon (2014), “The Dynamics of Employment Growth: New Evidence from 18
+Countries”, OECD Science, Technology and Industry Policy Papers, No. 14, OECD Publishing, Paris,
+https://doi.org/10.1787/5jz417hj6hg6-en
+OECD (2020a), “The effects of R&D tax incentives and their role in the innovation policy mix: Findings from the
+OECD microBeRD project, 2016-19”, OECD Science, Technology and Industry Policy Papers, No. 92, OECD
+Publishing, Paris, https://doi.org/10.1787/65234003-en
+OECD (2020b), “How effective are R&D tax incentives? New evidence from the OECD microBeRD project”,
+Directorate for Science, Technology and Innovation Policy Note, OECD, Paris,
+http://www.oecd.org/sti/microberd-policy-note.pdf
+OECD/Eurostat (2018), Oslo Manual 2018: Guidelines for Collecting, Reporting and Using Data on Inno vation, 4th
+Edition, The Measurement of Scientific, Technological and Innovation Activities, OECD Publishing,
+Paris/Eurostat, Luxembourg. https://doi.org/10.1787/9789264304604-en.
+OECD (2017), OECD Science, Technology and Industry Scoreboard 2017: The digital transformation, OECD
+Publishing, Paris. http://dx.doi.org/10.1787/9789264268821-en.
+OECD (2015), Frascati Manual 2015: Guidelines for Collecting and Reporting Data on Research and Experimental
+Development, The Measurement of Scientific, Technological and Innovation Activities, OECD Publishing,
+Paris, http://dx.doi.org/10.1787/9789264239012-en.
+OECD (2009), Innovation in Firms: A Microeconomic Perspective, OECD Publishing, Paris,
+http://dx.doi.org/10.1787/9789264056213-en.
+
+===== PDF_PAGE 48 =====
+48  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Annex A. Data
+Table A A.1. Country-years included in the descriptive analysis based on micro-aggregated data
+Year AUS AUT BEL CAN CHE CHL CZE DEU ESP FRA GBR HUN IRL ISR ITA JPN NLD NOR NZL PRT SWE
+2000
+
+
+
+
+
+
+
+
+
+2001
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+2002
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+2003
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+2004
+
+
+
+
+
+
+
+ 
+
+
+
+   
+
+2005 
+
+
+
+ 
+
+ 
+
+
+
+  
+
+
+
+2006  
+
+
+
+
+
+ 
+
+
+
+   
+
+2007    
+
+    
+
+    
+
+
+
+2008 
+
+ 
+
+
+
+  
+
+
+
+   
+
+
+
+2009    
+
+  
+
+ 
+
+     
+
+
+
+2010 
+
+
+
+ 
+
+ 
+
+       
+
+2011    
+
+  
+
+ 
+
+     
+
+ 
+2012 
+
+   
+
+ 
+
+
+
+     
+
+2013
+
+  
+
+  
+
+ 
+
+
+
+   
+
+
+2014 
+
+ 
+
+         
+
+2015
+
+
+
+  
+
+     
+
+  
+
+
+2016 
+
+ 
+
+
+
+   
+
+
+
+
+
+Source: OECD microBeRD project, http://oe.cd/microberd, November 2021
+
+===== PDF_PAGE 49 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  49
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Annex B. Additional results
+Table A B.1. R&D expenditure in microBeRD relative to aggregate data by firm size
+
+Note: For each firm size class, country and year, the table shows the ratio of the total R&D expenditure derived
+by microBeRD based on weighted micro -aggregated data and the total R&D expenditure as reported in the
+OECD R&D Statistics. The micro -aggregated statistics reported for Ireland a re based on tax relief microdata
+and not directly comparable with the R&D survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+AUS AUT BEL CAN CHE CHL CZE DEU ESP GBR IRL ITA JPN NLD NOR PRT SWE
+2000 100 86
+2001 101 89 100
+2002 103 100 101
+2003 57 100 101 90 154 88 100
+2004 101 100 105 312
+2005 79 56 100 101 87 241 91 89 100
+2006 92 99 100 106 340
+2007 78 100 100 101 118 94 100 428 76 86 89 100
+2008 99 100 96 110 100 245 100 123 101
+2009 101 98 95 100 100 99 96 272 98 92 87 98
+2010 90 100 99 127 212 91 132 91 99
+2011 82 97 114 100 100 121 98 181 90 46 119 92 100 87
+2012 100 99 98 126 190 93 38 111 91 99
+2013 97 91 100 100 126 99 207 94 39 100 93 90
+2014 99 112 188 93 36 109 91
+2015 96 99 100 98 100 215 38 23 104 91 83
+2016 93 99 100 204 28
+Average 89 99 85 100 98 99 107 94 100 242 92 35 107 90 100 87
+2000 102 99
+2001 102 98 31 90
+2002 99 100 96 34
+2003 93 101 101 86 136 34 76 100
+2004 97 100 101 171 33
+2005 71 88 100 95 84 165 31 87 68 100
+2006 85 100 102 95 215 32
+2007 86 99 145 105 94 93 100 248 101 33 98 72 100
+2008 89 102 102 100 100 202 106 34 117 100
+2009 90 98 128 103 100 105 96 279 101 39 94 69 99
+2010 89 100 100 101 239 102 38 118 72 99
+2011 111 95 114 100 100 108 100 201 103 68 103 69 101 111
+2012 100 100 100 105 198 102 67 107 73 100
+2013 97 100 100 101 95 99 254 99 65 108 72 101
+2014 100 110 244 101 55 105 69
+2015 100 100 99 101 100 249 47 58 107 71 83
+2016 100 104 100 248 58
+Average 89 98 111 101 101 100 101 93 100 218 102 44 105 71 99 98
+2000 106 100
+2001 100 99 102
+2002 100 101 99
+2003 117 103 98 102 124 80 100
+2004 100 104 101 110
+2005 51 115 98 99 100 120 83 84 100
+2006 69 101 102 100 128
+2007 78 101 141 103 102 98 100 130 98 90 92 102
+2008 80 101 99 100 100 130 98 93 95
+2009 88 100 134 102 100 102 100 138 94 97 80 100
+2010 92 102 86 101 131 94 86 79 103
+2011 97 101 150 102 73 95 101 129 98 89 123 80 102 96
+2012 104 100 101 98 132 94 74 127 79 103
+2013 101 121 100 101 81 101 125 97 73 128 82 97
+2014 89 84 121 93 85 131 83
+2015 100 99 100 102 100 129 146 82 131 81 98
+2016 101 99 100 125 74
+Average 79 100 130 102 100 94 98 100 100 127 96 80 109 82 101 97
+Small firms
+Medium firms
+Large firms
+
+===== PDF_PAGE 50 =====
+50  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure A B.1. SME share in R&D firms, R&D performance and R&D support by country and industry
+2011-2016 average
+
+===== PDF_PAGE 51 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  51
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Note: For countries with both direct support and tax support data available in the period 2011 -2016 and for
+selected A38 industries, the figure shows the share of SMEs (10-249 employees) in business R&D in terms of
+firm count, performance and funding. The figure is based on average values across all years available for a
+given country-industry in the period 2011-2016.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+
+===== PDF_PAGE 52 =====
+52  MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure A B.2. Ratios of direct funding and R&D tax relief to R&D expenditure by industry and
+country
+2011-2016 average
+
+Note: For selected A38 industries, the figure shows the ratios of direct and tax support to business R&D
+expenditure. The figure is based on average values across all years available for a given country-industry in the
+period 2011-2016. Countries (direct s upport): AUS, AUT, BEL, CHE, CHL, CZE, DEU, ESP, FRA, HUN,
+ISR, ITA, JPN, NLD, NOR, NZL, PRT, SWE. Countries (tax support): AUS, BEL, CAN, CZE, FRA, HUN,
+IRL, NLD, NOR, PRT, SWE. The micro -aggregated statistics reported for Ireland are based on tax relief
+microdata and not directly comparable with the R&D survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.
+
+===== PDF_PAGE 53 =====
+MICRO-DATA BASED INSIGHTS ON TRENDS IN BUSINESS R&D PERFORMANCE AND FUNDING  53
+OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS
+
+Figure A B.3. Ratios of direct funding and R&D tax relief to R&D expenditure by country and firm
+size
+2011-2016 average
+
+Note: Separately for each country, the figure shows the ratio of direct and tax R&D support to R&D expenditure
+for different firm size classes. The figure is based on average values across all years available for a given
+country-industry in the period 2011-2016. The micro-aggregated statistics reported for Ireland are based on tax
+relief microdata and not directly comparable with the R&D survey-based results reported for other countries.
+Source: OECD microBeRD project, https://oe.cd/microberd, November 2021.

@@ -34,7 +34,15 @@ OFFICIAL_PDF_OVERRIDES = {
     "C-OECD-DOI-0002217C-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/05/an-industrial-policy-framework-for-oecd-countries_233e3061/0002217c-en.pdf",
     "C-OECD-DOI-154981D7-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/12/identifying-and-characterising-ai-adopters_adad5b31/154981d7-en.pdf",
     "C-OECD-DOI-EBC2DEBE-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/01/digital-technology-diffusion-in-the-age-of-ai_7f11be5d/ebc2debe-en.pdf",
+    "C-OECD-DOI-65234003-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/09/the-effects-of-r-d-tax-incentives-and-their-role-in-the-innovation-policy-mix_b7f9884d/65234003-en.pdf",
+    "C-OECD-DOI-7B43B038-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/06/measuring-the-ai-content-of-government-funded-r-d-projects_9a5d3e6c/7b43b038-en.pdf",
+    "C-OECD-DOI-4805D3F5-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/09/micro-data-based-insights-on-trends-in-business-r-d-performance-and-funding_20404405/4805d3f5-en.pdf",
+    "C-OECD-DOI-4889F5F2-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/10/measuring-governments-r-d-funding-response-to-covid-19_4ded1500/4889f5f2-en.pdf",
+    "C-STANFORD-HAI-AI-INDEX-2017": "https://hai.stanford.edu/assets/files/ai-index-2017-annual-report.pdf",
     "C-STANFORD-HAI-AI-INDEX-2019": "https://hai.stanford.edu/assets/files/ai_index_2019_report.pdf",
+    "C-STANFORD-HAI-AI-INDEX-2021": "https://hai.stanford.edu/assets/files/2021-ai-index-report_master.pdf",
+    "C-STANFORD-HAI-AI-INDEX-2024": "https://hai.stanford.edu/assets/files/hai_ai-index-report-2024-smaller2.pdf",
+    "C-STANFORD-HAI-AI-INDEX-2026": "https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf",
     "C-STANFORD-HAI-WHITE-PAPER-BUILDING-NATIONAL-AI-RESEARCH-RESOURCE": "https://hai.stanford.edu/sites/default/files/2021-10/HAI_NRCR_2021_0.pdf",
 }
 

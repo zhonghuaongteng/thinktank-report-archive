@@ -95,6 +95,7 @@ def main() -> None:
         "90_Belfer_MERICS科学技术创新缺口轻量目录.csv", "91_Belfer_MERICS科学技术创新缺口轻量目录结果.md",
         "92_定点全文候选证据增量复核台账.csv", "93_定点全文候选证据增量复核结果.md",
         "94_第二批定点全文候选证据增量复核台账.csv", "95_第二批定点全文候选证据增量复核结果.md",
+        "96_第三批定点全文候选证据增量复核台账.csv", "97_第三批定点全文候选证据增量复核结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -114,8 +115,8 @@ def main() -> None:
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in assets) >= 46
     assert all(len(r["SHA256"]) == 64 for r in assets if r["本地PDF"])
     catalog_assets = rows(root / "21_非锚点全文补存台账.csv")
-    assert len(catalog_assets) == 135, len(catalog_assets)
-    assert sum(r["资产类型"] == "PDF" for r in catalog_assets) == 132
+    assert len(catalog_assets) == 147, len(catalog_assets)
+    assert sum(r["资产类型"] == "PDF" for r in catalog_assets) == 144
     assert sum(r["资产类型"] == "官方网页" for r in catalog_assets) == 3
     assert all(r["本地资产"] and Path(r["本地资产"]).exists() for r in catalog_assets)
     assert not any(r["本地状态"] == "获取失败" for r in catalog_assets)
@@ -381,7 +382,7 @@ def main() -> None:
         "T1_科学体系与基础研究", "T2_技术创新与关键技术", "T3_创新政策与研发治理",
         "T4_人才大学与科研组织", "T5_产业创新转化与区域生态", "T6_国际合作开放科学与比较",
     }
-    assert len(targeted_queue) == 30
+    assert len(targeted_queue) == 20
     assert len(catalog_queue) == 0
     assert not any(r["战略主题"] == "T7_安全供应链与治理边界" for r in gap_matrix)
     assert not any(r["报告名称"] == "China’s Military AI Roadblocks" for r in targeted_queue)
@@ -390,10 +391,10 @@ def main() -> None:
     assert all(r["机构观点等级"] == "机构正式研究" for r in stepi_catalog)
     kistep_assets = rows(root / "64_KISTEP韩文正式报告总目录与重点附件台账.csv")
     assert len(kistep_assets) == 1174, len(kistep_assets)
-    assert sum(bool(r["本地原始资产"]) for r in kistep_assets) == 48
-    assert sum(r["文本质量"] == "可检索文本" for r in kistep_assets) == 44
-    assert sum(r["文本质量"] == "图像型PDF，OCR待补" for r in kistep_assets) == 4
-    assert sum(r["文本质量"] == "官方目录无本地正文" for r in kistep_assets) == 1126
+    assert sum(bool(r["本地原始资产"]) for r in kistep_assets) == 52
+    assert sum(r["文本质量"] == "可检索文本" for r in kistep_assets) == 47
+    assert sum(r["文本质量"] == "图像型PDF，OCR待补" for r in kistep_assets) == 5
+    assert sum(r["文本质量"] == "官方目录无本地正文" for r in kistep_assets) == 1122
     assert sum(r["观察窗"] == "W1" for r in kistep_assets) == 36
     assert sum(r["观察窗"] == "W2" for r in kistep_assets) == 496
     assert sum(r["观察窗"] == "W3" for r in kistep_assets) == 642
@@ -439,7 +440,7 @@ def main() -> None:
     assert not any(re.search(r"national security|cybersecurity|nuclear defense|security and integrity|electromagnetic pulses", r["报告名称"], re.I) for r in ostp_light)
     assert all(r["全文策略"].startswith("不自动下载") for ledger in (cset_light, oecd_light, itif_series_light, itif_node_light, fraunhofer_light, stanford_hai_light, ostp_light, belfer_merics_light) for r in ledger)
     assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 720
-    assert len(rows(root / "70_定点补源优先队列.csv")) == 30
+    assert len(rows(root / "70_定点补源优先队列.csv")) == 20
     assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 0
     review = rows(root / "92_定点全文候选证据增量复核台账.csv")
     assert len(review) == 43
@@ -451,8 +452,17 @@ def main() -> None:
     assert sum(r["复核结论"] == "第二批精选全文" for r in second_review) == 12
     assert sum(r["全文状态"] == "本地资产已保存" for r in second_review) == 12
     assert sum(r["中国关联"] == "是" and r["复核结论"] == "第二批精选全文" for r in second_review) == 3
+    third_review = rows(root / "96_第三批定点全文候选证据增量复核台账.csv")
+    assert len(third_review) == 30
+    assert sum(r["复核结论"] == "第三批精选全文" for r in third_review) == 12
+    assert sum(r["全文状态"] == "本地资产已保存" for r in third_review) == 12
+    assert sum(r["中国关联"] == "是" and r["复核结论"] == "第三批精选全文" for r in third_review) == 4
     selected_light_asset_ids = {
-        r["报告ID"] for ledger, decision in ((review, "本轮精选全文"), (second_review, "第二批精选全文"))
+        r["报告ID"] for ledger, decision in (
+            (review, "本轮精选全文"),
+            (second_review, "第二批精选全文"),
+            (third_review, "第三批精选全文"),
+        )
         for r in ledger if r["复核结论"] == decision
     }
     assert selected_light_asset_ids <= {r["报告ID"] for r in catalog_assets}
@@ -600,6 +610,8 @@ def main() -> None:
         ("93_定点全文候选证据增量复核结果.md", "国际科技智库观点演变_定点全文候选证据增量复核结果.md"),
         ("94_第二批定点全文候选证据增量复核台账.csv", "国际科技智库观点演变_第二批定点全文候选证据增量复核台账.csv"),
         ("95_第二批定点全文候选证据增量复核结果.md", "国际科技智库观点演变_第二批定点全文候选证据增量复核结果.md"),
+        ("96_第三批定点全文候选证据增量复核台账.csv", "国际科技智库观点演变_第三批定点全文候选证据增量复核台账.csv"),
+        ("97_第三批定点全文候选证据增量复核结果.md", "国际科技智库观点演变_第三批定点全文候选证据增量复核结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
