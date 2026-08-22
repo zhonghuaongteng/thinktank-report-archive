@@ -120,6 +120,8 @@ def main() -> None:
         "140_欧盟EIS创新记分牌跨期节点全文台账.csv", "141_欧盟EIS创新记分牌跨期节点全文结果.md",
         "142_UNESCO全球科学体系近十年轻量目录.csv", "143_UNESCO全球科学体系近十年轻量目录结果.md",
         "144_UNESCO全球科学体系跨期节点全文台账.csv", "145_UNESCO全球科学体系跨期节点全文结果.md",
+        "146_UNCTAD技术与创新报告近十年轻量目录.csv", "147_UNCTAD技术与创新报告近十年轻量目录结果.md",
+        "148_UNCTAD技术与创新报告跨期节点全文台账.csv", "149_UNCTAD技术与创新报告跨期节点全文结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -479,6 +481,25 @@ def main() -> None:
         and Path(r["本地切片"]).exists() and sha(Path(r["本地PDF"])) == r["SHA256"]
         for r in unesco_fulltext
     )
+    unctad_light = rows(root / "146_UNCTAD技术与创新报告近十年轻量目录.csv")
+    assert len(unctad_light) == 5
+    assert {r["发布日期"][:4] for r in unctad_light} == {"2015", "2018", "2021", "2023", "2025"}
+    assert sum(r["全文策略"] == "边界目录" for r in unctad_light) == 1
+    assert sum("全文节点" in r["全文策略"] for r in unctad_light) == 4
+    unctad_fulltext = rows(root / "148_UNCTAD技术与创新报告跨期节点全文台账.csv")
+    assert len(unctad_fulltext) == 4
+    assert {r["报告ID"] for r in unctad_fulltext} == {
+        "C-UNCTAD-TIR-2018", "C-UNCTAD-TIR-2021", "C-UNCTAD-TIR-2023", "C-UNCTAD-TIR-2025",
+    }
+    assert sum(int(r["PDF页数"]) for r in unctad_fulltext) == 749
+    assert sum(int(r["字节数"]) for r in unctad_fulltext) == 30813413
+    assert sum(int(r["提取文本字符数"]) for r in unctad_fulltext) == 2297750
+    assert sum(int(r["China词形命中数"]) for r in unctad_fulltext) == 769
+    assert all(
+        Path(r["本地PDF"]).exists() and Path(r["本地文本"]).exists()
+        and Path(r["本地切片"]).exists() and sha(Path(r["本地PDF"])) == r["SHA256"]
+        for r in unctad_fulltext
+    )
     stepi_assets = rows(root / "60_STEPI韩文科技与中国专题增补台账.csv")
     assert len(stepi_assets) == 518, len(stepi_assets)
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 476
@@ -533,7 +554,7 @@ def main() -> None:
     gap_matrix = rows(root / "69_机构节点主题覆盖缺口矩阵.csv")
     targeted_queue = rows(root / "70_定点补源优先队列.csv")
     catalog_queue = rows(root / "72_轻量目录扩展优先队列.csv")
-    assert len(gap_matrix) == 870
+    assert len(gap_matrix) == 900
     assert {r["战略主题"] for r in gap_matrix} == {
         "T1_科学体系与基础研究", "T2_技术创新与关键技术", "T3_创新政策与研发治理",
         "T4_人才大学与科研组织", "T5_产业创新转化与区域生态", "T6_国际合作开放科学与比较",
@@ -624,7 +645,7 @@ def main() -> None:
     assert sum(r["全文策略"].startswith("不自动下载") for r in oecd_light) == 443
     assert sum(r["全文策略"].startswith("已按连续序列缺口定点下载") for r in stanford_hai_light) == 3
     assert sum(r["全文策略"].startswith("不自动下载") for r in stanford_hai_light) == 14
-    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 870
+    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 900
     assert len(rows(root / "70_定点补源优先队列.csv")) == 0
     assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 0
     review = rows(root / "92_定点全文候选证据增量复核台账.csv")
@@ -701,7 +722,7 @@ def main() -> None:
         nistep_asset_count=len(nistep_catalog),
         stepi_asset_count=len(stepi_catalog),
         kistep_asset_count=len(kistep_catalog),
-        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5,
+        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5,
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -725,6 +746,7 @@ def main() -> None:
             (eu_srip_fulltext, ("本地PDF",)),
             (eu_eis_fulltext, ("本地PDF",)),
             (unesco_fulltext, ("本地PDF",)),
+            (unctad_fulltext, ("本地PDF",)),
             (stepi_assets, ("本地原始资产",)),
             (stepi_series, ("本地原始资产",)),
             (kistep_assets, ("本地原始资产",)),
@@ -889,6 +911,10 @@ def main() -> None:
         ("143_UNESCO全球科学体系近十年轻量目录结果.md", "国际科技智库观点演变_UNESCO全球科学体系近十年轻量目录结果.md"),
         ("144_UNESCO全球科学体系跨期节点全文台账.csv", "国际科技智库观点演变_UNESCO全球科学体系跨期节点全文台账.csv"),
         ("145_UNESCO全球科学体系跨期节点全文结果.md", "国际科技智库观点演变_UNESCO全球科学体系跨期节点全文结果.md"),
+        ("146_UNCTAD技术与创新报告近十年轻量目录.csv", "国际科技智库观点演变_UNCTAD技术与创新报告近十年轻量目录.csv"),
+        ("147_UNCTAD技术与创新报告近十年轻量目录结果.md", "国际科技智库观点演变_UNCTAD技术与创新报告近十年轻量目录结果.md"),
+        ("148_UNCTAD技术与创新报告跨期节点全文台账.csv", "国际科技智库观点演变_UNCTAD技术与创新报告跨期节点全文台账.csv"),
+        ("149_UNCTAD技术与创新报告跨期节点全文结果.md", "国际科技智库观点演变_UNCTAD技术与创新报告跨期节点全文结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1

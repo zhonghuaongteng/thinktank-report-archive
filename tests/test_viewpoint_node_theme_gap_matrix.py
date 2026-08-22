@@ -8,6 +8,7 @@ from scripts.build_viewpoint_node_theme_gap_matrix import (
     COVERAGE_THEMES,
     STRATEGIC_THEMES,
     china_relevance,
+    catalog_node_exempt,
     candidate_priority_score,
     classify_themes,
     evidence_status,
@@ -101,6 +102,10 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；连续系列已完成跨期抽样"}))
         self.assertFalse(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；未下载全文"}))
 
+    def test_biennial_series_does_not_create_a_false_missing_publication_node(self) -> None:
+        self.assertTrue(catalog_node_exempt("unctad-tir", "N2"))
+        self.assertFalse(catalog_node_exempt("unctad-tir", "N3"))
+
     def test_evidence_status_distinguishes_three_layers(self) -> None:
         self.assertEqual(evidence_status(3, 0, 0, "A"), "仅目录候选")
         self.assertEqual(evidence_status(3, 1, 0, "A"), "原文待文本化")
@@ -150,6 +155,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertEqual(tier_for("eu-srip"), "A")
         self.assertEqual(tier_for("eu-eis"), "A")
         self.assertEqual(tier_for("unesco-science"), "A")
+        self.assertEqual(tier_for("unctad-tir"), "A")
         self.assertEqual(tier_for("ifp"), "B")
         self.assertEqual(tier_for("stanford-hai"), "B")
         self.assertEqual(tier_for("rand"), "C")

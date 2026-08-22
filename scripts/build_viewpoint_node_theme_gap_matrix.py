@@ -94,7 +94,7 @@ FAMILY_ALIASES = {"merics-tech": "merics"}
 
 TIER_A = {
     "oecd-sti", "cset", "merics", "jst-crds", "nistep", "stepi", "kistep", "fraunhofer-isi", "wipo-gii",
-    "nsf-nsb-sei", "eu-srip", "eu-eis", "unesco-science",
+    "nsf-nsb-sei", "eu-srip", "eu-eis", "unesco-science", "unctad-tir",
 }
 TIER_B = {
     "belfer",
@@ -130,7 +130,8 @@ KNOWN_PROJECT_START = {
     "ifp": 2021,
     "stanford-hai": 2019,
 }
-NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1, "eu-eis": 1, "unesco-science": 1}
+NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1, "eu-eis": 1, "unesco-science": 1, "unctad-tir": 1}
+CATALOG_NODE_EXEMPTIONS = {("unctad-tir", "N2")}
 KNOWN_SERIES_NEXT_RELEASE = {"eu-srip": "2026-10-01"}
 
 
@@ -171,6 +172,10 @@ def tier_for(institution_id: str) -> str:
     if institution_id in TIER_B:
         return "B"
     return "C"
+
+
+def catalog_node_exempt(institution_id: str, node: str) -> bool:
+    return (institution_id, node) in CATALOG_NODE_EXEMPTIONS
 
 
 def classify_themes(row: dict[str, str], index_tags: set[str] | None = None) -> set[str]:
@@ -497,6 +502,8 @@ def build_outputs(
             continue
         minimum = NODE_CATALOG_MINIMUM.get(family, 5 if tier == "A" else 3)
         for node, label in NODE_LABELS.items():
+            if catalog_node_exempt(family, node):
+                continue
             start_year = KNOWN_PROJECT_START.get(family, 0)
             if start_year and NODE_END_YEAR[node] < start_year:
                 continue
