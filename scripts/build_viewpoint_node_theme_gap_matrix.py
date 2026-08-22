@@ -6,6 +6,7 @@ import math
 import re
 from collections import defaultdict
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
 
 
@@ -93,7 +94,7 @@ FAMILY_ALIASES = {"merics-tech": "merics"}
 
 TIER_A = {
     "oecd-sti", "cset", "merics", "jst-crds", "nistep", "stepi", "kistep", "fraunhofer-isi", "wipo-gii",
-    "nsf-nsb-sei",
+    "nsf-nsb-sei", "eu-srip",
 }
 TIER_B = {
     "belfer",
@@ -129,7 +130,8 @@ KNOWN_PROJECT_START = {
     "ifp": 2021,
     "stanford-hai": 2019,
 }
-NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1}
+NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1}
+KNOWN_SERIES_NEXT_RELEASE = {"eu-srip": "2026-10-01"}
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -500,6 +502,9 @@ def build_outputs(
                 continue
             current = family_node_counts[(family, node)]
             if current >= minimum:
+                continue
+            next_release = KNOWN_SERIES_NEXT_RELEASE.get(family)
+            if current == 0 and next_release and date.today().isoformat() < next_release:
                 continue
             gap = minimum - current
             score = TIER_WEIGHT[tier] + NODE_WEIGHT[node] + gap
