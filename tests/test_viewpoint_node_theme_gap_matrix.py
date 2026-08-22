@@ -103,6 +103,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；连续系列已完成跨期抽样"}))
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "机构跨期精选已完成；低增量节点保留轻量目录"}))
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "IFP官方网页与附件入口已保存；机构精选已完成；其余正式成果保留轻量目录"}))
+        self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "ITIF跨期精选已完成；其余正式报告保留轻量目录"}))
         self.assertFalse(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；未下载全文"}))
 
     def test_nesta_uses_observed_publication_volume_after_complete_site_scan(self) -> None:

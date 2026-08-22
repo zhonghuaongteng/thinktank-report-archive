@@ -223,6 +223,7 @@ def fulltext_queue_suppressed(row: dict[str, str]) -> bool:
         "连续系列已完成跨期抽样" in status
         or "机构跨期精选已完成；低增量节点保留轻量目录" in status
         or "机构精选已完成；其余正式成果保留轻量目录" in status
+        or "ITIF跨期精选已完成；其余正式报告保留轻量目录" in status
     )
 
 

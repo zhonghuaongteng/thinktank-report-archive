@@ -1,0 +1,128 @@
+---
+title: "The 2021 Global Energy Innovation Index: National Contributions to the Global Clean Energy Innovation System"
+summary: |-
+  To meet growing global demand for energy services while averting the worst consequences of climate change, the world must accelerate clean energy innovation. Western Europe contributes most to this global process. The United States has faltered. And China has a long way to go.
+date: "2021-10-18"
+issues: ["Clean Energy Innovation"]
+authors: ["Chad Smith", "David M. Hart"]
+content_type: "Reports & Briefings"
+canonical_url: "https://itif.org/publications/2021/10/18/2021-global-energy-innovation-index-national-contributions-global-clean/"
+---
+
+# The 2021 Global Energy Innovation Index: National Contributions to the Global Clean Energy Innovation System
+
+## Key Takeaways
+
+- National governments are the most important contributors to global energy innovation. Their aggregated contributions indicate a lack of urgency, which undermines progress toward net-zero emissions by 2050.
+- The 34 countries covered by the Index make widely varying contributions to the global system. As such, their rankings frequently differ dramatically across subindices measuring diverse knowledge, market, and social factors.
+- Finland, Denmark, Sweden, and the United Kingdom are the pacesetters in ITIF’s Global Energy Innovation Index. 
+- Switzerland, Belgium, the Netherlands, Germany, Canada, France, and Norway form a stable second tier of contributors behind the top four, while Japan, Austria, South Korea, Australia, the Czech Republic, and the United States are in the third tier.
+- The 2021 rankings are quite similar to those for 2016.
+- Together, the 34 national governments in the Index invested over $27 billion in clean energy R&D in the most recent year for which data are available—but as a share of their economies, this investment has not grown since 2015.
+- The flow of early-stage venture capital into clean energy start-ups, and their ability to exit via private equity buy-out, merger or acquisition, or IPO, are bright spots for the global energy innovation system.
+
+[Executive Summary](#_Toc84604181)
+
+[The Rankings](#_Toc84604182)
+
+[Key Findings](#_Toc84604183)
+
+[Read More](#_Toc84604184)
+
+# Executive Summary
+
+Innovation is the only way that the massive global demand for energy can be met while averting the worst consequences of climate change. National governments are the most important contributors to global energy innovation. The 2021 edition of the Information Technology and Innovation Foundation’s (ITIF’s) Global Energy Innovation Index (GEII) provides a multifaceted assessment of national contributions to the global energy innovation system.
+
+While public investment in clean energy research, development, and demonstration (RD&D) is essential, a host of additional steps must be taken to turn that investment into outcomes that matter in the real world. The GEII uses 20 indicators that measure both the level of the most recent year for which data is available and the change over recent years. They are aggregated into 10 functional categories and 3 subindices.
+
+European nations dominate the top ranks of the GEII, with Finland topping it. Denmark, Sweden, and the United Kingdom rank second, third, and fourth, respectively. Canada, South Korea, Japan, the United States, and Australia fill out the top half along with other European nations.
+
+The GEII reveals the varied contributions nations make to the global innovation system. Denmark leads on the Knowledge Development and Diffusion subindex, while Finland ranks first for entrepreneurial experimentation and market formation, and the United Kingdom sets the pace for social legitimation and international collaboration. Japan, South Korea, and China contribute more through knowledge development and diffusion than other innovation system functions. The United States performs well in the entrepreneurial ecosystem category relative to its contributions to social legitimation.
+
+> The Global Energy Innovation Index provides a multifaceted assessment of national contributions to the global energy innovation system.
+
+A version of the Index using data that would have been available in 2016 is quite similar to the 2021 version ([table 1](#_Ref83796760)). Half the nations moved no more than three places up or down. Norway improved the most, rising from 23rd to 11th. The United States fell the most, dropping 13 spots from 4th to 17th. Its rank fell across all three subindices, with the greatest decline (nine places) being in social legitimation and international collaboration.
+
+# The Rankings
+
+**Table 1: 2021 Global Energy Innovation Index rankings compared with 2016**
+
+| **2021 Rank** | **Country** | **2016 Rank** | **Change** |
+| --- | --- | --- | --- |
+| 1 | Finland | 1 | 0 |
+| 2 | Denmark | 2 | 0 |
+| 3 | Sweden | 3 | 0 |
+| 4 | United Kingdom | 9 | +5 |
+| 5 | Switzerland | 8 | +3 |
+| 6 | Belgium | 10 | +4 |
+| 7 | Netherlands | 5 | -2 |
+| 8 | Germany | 11 | +3 |
+| 9 | Canada | 13 | +4 |
+| 10 | France | 6 | -4 |
+| 11 | Norway | 23 | +12 |
+| 12 | Japan | 19 | +7 |
+| 13 | Austria | 12 | -1 |
+| 14 | South Korea | 22 | +8 |
+| 15 | Australia | 17 | +2 |
+| 16 | Czech Republic | 18 | +2 |
+| 17 | United States | 4 | -13 |
+| 18 | Portugal | 7 | -11 |
+| 19 | Italy | 16 | -3 |
+| 20 | Slovak Republic | 24 | +4 |
+| 21 | Hungary | 25 | +4 |
+| 22 | Spain | 21 | -1 |
+| 23 | Ireland | 14 | -9 |
+| 24 | Lithuania | 34 | +10 |
+| 25 | China | 30 | +5 |
+| 26 | Poland | 15 | -11 |
+| 27 | Brazil | 26 | -1 |
+| 28 | Greece | 31 | +3 |
+| 29 | Mexico | 27 | -2 |
+| 30 | Estonia | 20 | -10 |
+| 31 | Chile | 29 | -2 |
+| 32 | India | 33 | +1 |
+| 33 | New Zealand | 28 | -5 |
+| 34 | Turkey | 32 | -2 |
+
+# Key Findings
+
+- Innovation is the only way that the massive global demand for energy in the present and future can be met while averting the worst consequences of climate change. National governments are the most important contributors to global energy innovation. Their aggregated contributions indicate a lack of urgency, which is needed to accelerate progress toward net-zero emissions by 2050.
+- ITIF’s GEII provides a multifaceted assessment of national contributions to the global energy innovation system. The 34 countries covered make contributions that vary widely in degree and function.
+- The GEII rests at its base on 20 indicators that measure both the level of the most recent year for which data is available and the change over recent years. They are aggregated into 10 functional categories and 3 subindices.
+- The GEII weights the Knowledge Development and Diffusion subindex at 40 percent, the Entrepreneurial Experimentation and Market Formation subindex at 40 percent, and the Social Legitimation and International Collaboration subindex at 20 percent.
+- Finland is the top-ranked contributor to the global energy innovation system. Denmark, Sweden, and the United Kingdom rank second, third, and fourth, respectively. The top four rankings are remarkably stable across differing weightings of the three subindices.
+- Three different nations top the three subindex rankings. Denmark ranks first for knowledge development and diffusion, Finland is tops for entrepreneurial experimentation and market formation, and the United Kingdom sets the pace for social legitimation and international collaboration.Only Denmark and the United Kingdom rank in the top 10 across all 3 subindices.
+- Other Western European countries, including Switzerland, Belgium, the Netherlands, Germany, France, and Norway, along with Canada, form a stable second tier of contributors behind the top four on the GEII.
+- South Korea, Japan, the United States, and Australia, along with the Czech Republic and Austria, comprise the third tier of contributors. Japan and South Korea rank in the top five for knowledge development and diffusion, but their relatively poor scores in the other two subindices pull down their overall rankings.
+- The 2016 rankings are quite similar to those for 2021. Half of the nations moved no more than three places up or down. Norway improved the most, rising from 23rd to 11th. The United States fell the most, dropping 13 spots from 4th to 17th.
+- The 34 national governments included in the GEII together invested over $27 billion in clean energy research and development (R&D) in the most recent year for which data is available. This figure has grown by more than 25 percent since 2015. However, when scaled by the size of the combined economies of these countries, it has been essentially flat. Total clean energy publications are up almost 40 percent, but clean energy inventions are down almost 20 percent.
+- The flow of early-stage venture capital into clean energy start-ups, and their ability to exit via private equity buyout, merger or acquisition, or initial public offering (IPO), are bright spots for the global energy innovation system as a whole. In absolute terms, the flow of venture capital more than tripled between 2015 and 2020, and it rose as a share of the economy by an impressive 25 percent per year in that period.
+- The general trends in the indicators included in the Social Legitimation and International Collaboration subindex have mostly been positive, but not by much. Effective carbon prices, for instance, rose in most nations from 2012 to 2018, but typically at low single-digit rates. While most nations have adopted more stringent regulations, national commitments under the Paris Agreement remain insufficient.
+- The United States is the leading contributor to the resource mobilization, knowledge development and diffusion, and entrepreneurial experimentation functions in absolute terms, as its public investments in RD&D and venture capital dwarf the others. However, its rank fell across all three subindices, including nine places on social legitimation and international collaboration.
+- China ranks 25th in the GEII, but it scores well in knowledge development and diffusion, ranking second only to the United States in the absolute level of its public RD&D investments. It has grown more rapidly on this indicator as a share of gross domestic product (GDP) than the vast majority of other nations, and its venture capital investments grew by 43 percent per year as well.
+- If the European Union were ranked as a single nation, it would make the top 10 on the GEII. (We measure the European Union as the aggregate contributions of all nations that were member states during the years covered by the Index, including the United Kingdom, plus the contributions of the European Commission.)
+
+# Read More
+
+- [Download the full report (PDF)](https://itif.org/sites/default/files/2021-global-energy-innovation-index.pdf).
+- [Explore the interactive dataviz](https://itif.org/2021-global-energy-innovation-index-interactive-dataviz).
+
+### Acknowledgments
+
+The authors would like to thank the CleanTech Group for providing data, and Rob Atkinson, Stefan Koester, and Linh Nguyen for helpful feedback.
+
+### About the Authors
+
+Chad A. Smith (@chadasmith36) is a Ph.D. student in the Public Policy doctoral program at George Mason University’s Schar School of Policy ad Government where he focuses on science, technology, and innovation policy and entrepreneurship, growth, and public policy. Smith earned an M.A. in Global Environmental Policy from American University’s School of International Service and an M.A. in Political Science from George Mason University’s College of Humanities and Social Sciences. He also served as a DOE Scholar at the U.S. Department of Energy.
+
+David M. Hart (@ProfDavidHart) is a senior fellow at ITIF, where he directs the Center for Clean Energy Innovation, and professor of public policy at George Mason University’s Schar School of Policy and Government. Hart is the author of numerous ITIF reports, academic journal articles, and books, including *Energizing America* (Columbia University Center for Global Energy Policy, coauthored with Varun Sivaram, Colin Cunliff, Julio Friedmann, and David Sandalow) and *Unlocking Energy Innovation* (MIT Press, coauthored with Richard K. Lester).
+
+### About ITIF
+
+The Information Technology and Innovation Foundation (ITIF) is an independent, nonprofit, nonpartisan research and educational institute focusing on the intersection of technological innovation and public policy. Recognized by its peers in the think tank community as the global center of excellence for science and technology policy, ITIF’s mission is to formulate and promote policy solutions that accelerate innovation and boost productivity to spur growth, opportunity, and progress.
+
+For more information, visit [itif.org](http://www.itif.org).
+
+---
+*Source: Information Technology & Innovation Foundation (ITIF)*
+*URL: https://itif.org/publications/2021/10/18/2021-global-energy-innovation-index-national-contributions-global-clean/*

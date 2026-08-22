@@ -1,0 +1,86 @@
+---
+title: "The Foundation for Energy Security and Innovation: A Flexible New Tool to Build the Economy, Strengthen Science, and Fight Climate Change"
+summary: |-
+  In July 2022, Congress authorized DOE to establish and collaborate closely with a new non-profit Foundation for Energy Security and Innovation (FESI), an idea that the Center developed over the previous five years. ITIF is working to ensure that FESI gets off to a fast start and contributes to DOE’s vital missions right away.
+date: "2022-08-02"
+issues: ["Clean Energy Innovation"]
+authors: ["Kerry C. Duggan", "David M. Hart"]
+content_type: "Reports & Briefings"
+canonical_url: "https://itif.org/publications/2022/08/02/foundation-for-energy-security-and-innovation/"
+---
+
+# The Foundation for Energy Security and Innovation: A Flexible New Tool to Build the Economy, Strengthen Science, and Fight Climate Change
+
+# Introduction
+
+The U.S. Department of Energy (DOE) drives action toward many of the United States’ most vital goals: a strong, secure economy; global leadership in science and technology; eliminating climate pollution at home and around the world, and much more. Congress seized an historic opportunity to accelerate progress toward these goals by authorizing DOE to establish and collaborate closely with a new non-profit Foundation for Energy Security and Innovation (FESI). FESI, like similar foundations affiliated with other federal agencies, will partner with DOE to advance all of its missions, and especially to help it bring new technology to the market more quickly.
+
+ITIF has championed the concept of a DOE-related foundation for nearly a decade. Bipartisan and bicameral bills were introduced during the last three Congresses to authorize it. Senators Chris Coons (D-DE), Ben Ray Luján (D-NM), and Lindsey Graham (R-SC), along with Representatives Melanie Stansbury (D-NM) and Young Kim (R-CA) and three other members of the House Science Committee, including the Ranking Member and Chair, led the push in the 117th Congress. The two chambers separately passed these members’ bills with bipartisan support, and it was incorporated into the “Chips Plus Science” act, which was signed into law this month.
+
+Now that the legislative process has reached a successful conclusion, ITIF is working to ensure that FESI gets off to a fast start and contributes to DOE’s vital missions right away. Our key action items include engaging and activating stakeholders and identifying promising projects. This post describes where the idea for FESI came from, what it might do, and how it will work.
+
+# Agency-Related Foundations: Surprisingly Common, Highly Diverse
+
+Numerous federal agencies have Congressionally authorized non-governmental foundations that work with them to advance their missions. The [National Park Foundation](https://www.nationalparks.org/) (NPF) is the oldest, dating back to 1935.[<sup><sup>[1]</sup></sup>](#_edn1) Anyone who wants to support a particular national park, or the system as a whole, can do so through a contribution to NPF. Similarly, donors who care about public health can give to the [CDC Foundation](https://www.cdcfoundation.org/) (CDC Foundation) or the [Foundation for NIH](https://fnih.org/) (FNIH).[<sup><sup>[2]</sup></sup>](#_edn2) A 2021 report by the [National Academy of Public Administration (NAPA)](https://napawash.org/academy-studies/an-assessment-of-the-value-of-a-non-profit-foundation-to-promote-department-of-energy-technology-transfer-to-the-marketplace), which recommended establishing a foundation for DOE, reviews a wide range of agency-related foundations.[<sup><sup>[3]</sup></sup>](#_edn3)
+
+As the NAPA report described, all of these foundations leverage federal investment with private contributions to complement and supplement their agency affiliate, while guarding against potential conflict of interest. Yet, more remarkable than this commonality among is the foundations’ diversity. Each seeks to complement and supplement its partner agency, but because each agency has a different mission, structure, and functions, each affiliated foundation is unique.
+
+FESI will likely have most in common with the FNIH. Like NIH, DOE is a major research funder that advances a critical national mission. Like NIH, DOE must rely on the private sector to turn advances made possible by the R&D it funds into technologies that make a difference on the ground. FNIH’s contributions to fighting the pandemic illustrate how having a flexible non-profit partner for an agency can advance the agency’s mission in a moment of need. Its [Pandemic Response Fund](https://www.fnih.org/our-programs/pandemic-response-fund) and [Accelerating COVID-19 Therapeutic Interventions and Vaccines](https://fnih.org/our-programs/ACTIV) (ACTIV) partnership with NIH, private firms, other federal agencies, and allied governments, aids the search for treatments and vaccines and prepares the nation to defend against future pandemics.[4](#_edn4)
+
+# A Foundation for DOE—a Brief History
+
+The idea of a new foundation to work with DOE first emerged in energy policy circles with the 2014 creation of the [Foundation for Food and Agriculture Research](https://foundationfar.org/), which works with the U.S. Department of Agriculture.[5](#_edn5) The [Berkeley Lab Foundation](http://www.berkeleylabfoundation.org/), which works with the government-owned, contractor-operated Lawrence Berkeley National Laboratory, was founded in 2015, the first of four such lab-affiliated foundations. ITIF independently advanced the idea for a DOE foundation in a [December 2016 report](https://www2.itif.org/2016-localizing-economic-impact.pdf?_ga=2.200359470.1037096097.1652717642-1909340859.1620831812).[6](#_edn6)
+
+The concept gained traction in 2017 when it was championed by Senators Coons and Graham and Representatives Lujan (D-NM) and Joe Wilson (R-SC) during the 115th Congress. Their bill was re-introduced in the 116th Congress, during which it received a hearing and then passed the House of Representatives. The House Select Committee on the Climate Crisis also weighed in with its support for a DOE-affiliated foundation that year.
+
+In the meantime, ITIF advanced the concept in a series of [publications](https://itif.org/publications/2017/12/20/department-energy-foundation-idea-whose-time-has-come/) and [events](https://itif.org/events/2018/06/27/new-ideas-strengthening-partnerships-doe-national-labs/).[7](#_edn7) Building on two stakeholder workshops and hundreds of interviews, the effort culminated in May 2020’s “[Mind the Gap](https://itif.org/publications/2020/05/11/mind-gap-design-new-energy-technology-commercialization-foundation/)” report, which called for the creation of an Energy Technology Commercialization Foundation.[8](#_edn8) Other energy innovation experts concurred. During a series of [public workshops](https://www.nap.edu/catalog/25973/enhancing-federal-clean-energy-innovation-proceedings-of-a-workshop) conducted by the National Academies of Science, Engineering, and Medicine in July 2020, DOE Under Secretary for Science Paul Dabbar stated that a DOE foundation could “raise private-sector funds and create and manage alliances with public and private institutions.”[9](#_edn9) This sentiment was echoed during the same event by Arun Majumdar, a senior DOE official during the Obama administration. NAPA’s January 2021 report added to the consensus.
+
+The 117th Congress of 2021-2022 passed the Partnerships for Energy Security and Innovation Act, which added a new name to the lexicon, the Foundation for Energy Security and Innovation. The Senate gave its OK by a vote of 83-14 in June 2021. The House then incorporated an authorization for FESI in its companion bill, America COMPETES, in February 2022, setting the stage for final passage in July 2022.
+
+# FESI’s Mission and Purposes
+
+Because DOE’s missions are broad and complex, ranging from protecting national security to advancing science to tackling climate change and because a foundation working with DOE is such a flexible entity, FESI could do many things.
+
+[Our vision](https://itif.org/publications/2020/05/11/mind-gap-design-new-energy-technology-commercialization-foundation/) of its role focuses on accelerating innovation to support the global transition to low-carbon energy.[10](#_edn10) FESI should help move clean energy and climate technologies more quickly across the infamous “valley of death” between proof of concept and early adoption in the market than DOE can on its own. It should catalyze public-private collaborations involving DOE’s massive network of experts and innovators that target cross-cutting national challenges and strengthen regional energy innovation ecosystems. FESI’s statute calls out this collaborative role in enumerating the foundation’s mission and purposes.
+
+Congress also specified a range of other purposes for FESI, reflecting the potential that many other stakeholders have seen in such an organization. For example, FESI may seek to broaden participation in energy technology development from historically underrepresented groups and regions. It may offer fellowships at the national laboratories and other DOE grantee institutions to advance R&D, utilize laboratory facilities, and demonstrate, mature and commercialize DOE-supported technologies. In all of these activities, FESI should seek to support and work closely with the independent foundations affiliated with DOE’s national laboratories.
+
+# How FESI Will Work
+
+FESI, paralleling other agency-affiliated foundations, will be an independent non-profit (501(c)(3)) organization that has a unique relationship with DOE. It will be governed, in the first instance, by a board made up of individuals identified by the National Academies of Science, Engineering, and Medicine, and appointed by the Secretary of Energy. The legislation requires the board to be diverse, representing “a broad cross-section of stakeholders from academia, National Laboratories, industry, nonprofit organizations, State or local governments, the investment community, and the philanthropic community.” The Secretary and other senior DOE officials will also serve as ex officio members of FESI’s board.
+
+FESI’s board will set its agenda. Like the FNIH, we expect ideas for activities to emanate from inside and outside DOE, reflecting the board’s diversity and FESI’s broad mission and purposes. Its activities must complement, rather than substitute for DOE’s, adding value through its capacity to catalyze, convene, and foster collaboration across sectoral lines. For instance, FESI might be alert to opportunities to create private-sector consortia to advance energy technologies that it can incubate until they are mature enough for DOE to fully take on. Or, it might help convene regional stakeholders to develop strategic plans to strengthen clean energy innovation ecosystems that a variety of partners, including DOE, can act on.
+
+FESI will receive a small appropriation from the federal government to support its core staff and expenses. The bulk of its funding, however, will be raised from philanthropic and private sources. We hope this funding will be substantial and serve as powerful force multiplier for DOE’s own investments.
+
+# Next Steps
+
+The time has come to turn the DOE foundation idea into something real: FESI! ITIF will continue its work with a large and growing body of stakeholders to create the organization, draft a strategic plan for the new board to consider, and identify promising initial projects that it might pursue. We will also work closely with DOE leadership to ensure that FESI will work smoothly with the Department.
+
+We hope to see a modest appropriation to jumpstart FESI in DOE’s budget for fiscal year 2024, which Congress should act on. By this time next year, we expect FESI to begin making a difference for energy, climate, science, national security, and the economy. We invite anyone interested in making FESI a success to get in touch with us to support the effort.
+
+# Endnotes
+
+[1](#_ednref1). National Parks Foundation, [https://www.nationalparks.org/](https://www.nationalparks.org/).
+
+[2](#_ednref2). CDC Foundation, [https://www.cdcfoundation.org/](https://www.cdcfoundation.org/); Foundation for NIH, [https://fnih.org/](https://fnih.org/) (FNIH).
+
+[3](#_ednref3). National Academy of Public Administration, “An Innovation Foundation for DOE: Roles and Opportunities,” January 2021, [https://napawash.org/academy-studies/an-assessment-of-the-value-of-a-non-profit-foundation-to-promote-department-of-energy-technology-transfer-to-the-marketplace](https://napawash.org/academy-studies/an-assessment-of-the-value-of-a-non-profit-foundation-to-promote-department-of-energy-technology-transfer-to-the-marketplace).
+
+[4](#_ednref4). Pandemic Response Fund, [https://www.fnih.org/our-programs/pandemic-response-fund](https://www.fnih.org/our-programs/pandemic-response-fund); Accelerating COVID-19 Therapeutic Interventions and Vaccines (ACTIV), [https://fnih.org/our-programs/ACTIV](https://fnih.org/our-programs/ACTIV).
+
+[5](#_ednref5). Foundation for Food and Agriculture Research, [https://foundationfar.org/](https://foundationfar.org/).
+
+[6](#_ednref6). Berkeley Lab Foundation, [http://www.berkeleylabfoundation.org/](http://www.berkeleylabfoundation.org/); Stephen Ezell and Scott M. Andes, “Localizing the Economic Impact of Research and Development: Policy Proposals for the Trump Administration and Congress” (ITIF, December 2016), [https://itif.org/publications/2016/12/07/localizing-economic-impact-research-and-development-policy-proposals-trump/](https://itif.org/publications/2016/12/07/localizing-economic-impact-research-and-development-policy-proposals-trump/).
+
+[7](#_ednref7). Stephen Ezell and David M. Hart, “A Department of Energy Foundation: An Idea Whose Time Has Come,” *The Hill*, December 20, 2017, [http://thehill.com/opinion/energy-environment/365850-a-department-of-energy-foundation-an-idea-whose-time-has-come](http://thehill.com/opinion/energy-environment/365850-a-department-of-energy-foundation-an-idea-whose-time-has-come); “New Ideas for Strengthening Partnerships at DOE National Labs,” ITIF event, June 27, 2018, [https://itif.org/events/2018/06/27/new-ideas-strengthening-partnerships-doe-national-labs/](https://itif.org/events/2018/06/27/new-ideas-strengthening-partnerships-doe-national-labs/).
+
+[8](#_ednref8). Jetta Wong and David M. Hart, “Mind the Gap: A Design for a New Energy Technology Commercialization Foundation” (ITIF, May 2020), [https://itif.org/publications/2020/05/11/mind-gap-design-new-energy-technology-commercialization-foundation/](https://itif.org/publications/2020/05/11/mind-gap-design-new-energy-technology-commercialization-foundation/).
+
+[9](#_ednref9). National Academies, “Enhancing Federal Clean Energy Innovation,” workshop, July 2020, [https://nap.nationalacademies.org/catalog/25973/enhancing-federal-clean-energy-innovation-proceedings-of-a-workshop](https://nap.nationalacademies.org/catalog/25973/enhancing-federal-clean-energy-innovation-proceedings-of-a-workshop).
+
+[10](#_ednref10). Jetta Wong and David M. Hart, “Mind the Gap,” op. cit.
+
+---
+*Source: Information Technology & Innovation Foundation (ITIF)*
+*URL: https://itif.org/publications/2022/08/02/foundation-for-energy-security-and-innovation/*
