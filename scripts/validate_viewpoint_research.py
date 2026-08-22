@@ -163,6 +163,21 @@ def expected_csis_rai_selected_ids() -> set[str]:
     }
 
 
+def expected_eu_stoa_selected_ids() -> set[str]:
+    return {
+        "C-EU-STOA-EPRS-STU-2016-563501", "C-EU-STOA-EPRS-STU-2017-603183",
+        "C-EU-STOA-EPRS-STU-2017-614531", "C-EU-STOA-EPRS-STU-2018-614537",
+        "C-EU-STOA-EPRS-STU-2018-614546", "C-EU-STOA-EPRS-STU-2019-634444",
+        "C-EU-STOA-EPRS-STU-2019-634447", "C-EU-STOA-EPRS-IDA-2020-641542",
+        "C-EU-STOA-EPRS-IDA-2020-641543", "C-EU-STOA-EPRS-STU-2021-690029",
+        "C-EU-STOA-EPRS-STU-2021-697184", "C-EU-STOA-EPRS-STU-2021-697197",
+        "C-EU-STOA-EPRS-STU-2022-697218", "C-EU-STOA-EPRS-STU-2022-737114",
+        "C-EU-STOA-EPRS-STU-2023-740259", "C-EU-STOA-EPRS-STU-2023-753166",
+        "C-EU-STOA-EPRS-STU-2024-757813", "C-EU-STOA-EPRS-STU-2024-762848",
+        "C-EU-STOA-EPRS-STU-2025-765780", "C-EU-STOA-EPRS-STU-2026-774682",
+    }
+
+
 def expected_catalog_size(
     seed_count: int,
     catalog_asset_count: int,
@@ -276,6 +291,8 @@ def main() -> None:
         "176_FAS科技创新机制与中国比较跨期精选全文台账.csv", "177_FAS科技创新机制与中国比较跨期精选全文结果.md",
         "178_CSIS_RAI科技创新项目轻量总目录.csv", "179_CSIS_RAI科技创新项目轻量总目录结果.md",
         "180_CSIS_RAI科学技术创新机制与中国比较跨期精选全文台账.csv", "181_CSIS_RAI科学技术创新机制与中国比较跨期精选全文结果.md",
+        "182_欧洲议会STOA科技评估近十年轻量总目录.csv", "183_欧洲议会STOA科技评估近十年轻量总目录结果.md",
+        "184_欧洲议会STOA科技创新与技术评估跨期精选全文台账.csv", "185_欧洲议会STOA科技创新与技术评估跨期精选全文结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -286,7 +303,7 @@ def main() -> None:
     evidence = rows(root / "09_观点变化证据表.csv")
     assert len(seeds) == 49, len(seeds)
     assert len(evidence) == 24, len(evidence)
-    assert len(list((root / "02_机构轨迹卡").glob("*.md"))) == 12
+    assert len(list((root / "02_机构轨迹卡").glob("*.md"))) == 13
     pdfs = list((root / "03_证据底稿" / "原文PDF").glob("*.pdf"))
     assert len(list((root / "03_证据底稿" / "文本").glob("*.txt"))) >= len(pdfs)
     assert len(list((root / "03_证据底稿" / "切片").glob("*.md"))) >= len(pdfs)
@@ -840,6 +857,26 @@ def main() -> None:
         and sha(Path(r["本地原始资产"])) == r["SHA256"]
         for r in csis_rai_selected
     )
+    eu_stoa_light = rows(root / "182_欧洲议会STOA科技评估近十年轻量总目录.csv")
+    assert len(eu_stoa_light) == 243
+    assert sum(r["科技创新相关度"] == "核心" for r in eu_stoa_light) == 182
+    assert sum(r["科技创新相关度"] == "支撑" for r in eu_stoa_light) == 39
+    assert sum(r["科技创新相关度"] == "语境" for r in eu_stoa_light) == 22
+    assert sum(r["中国直接信号"] == "是" for r in eu_stoa_light) == 1
+    assert {r["发布日期"][:4] for r in eu_stoa_light} == {str(year) for year in range(2016, 2027)}
+    eu_stoa_selected = rows(root / "184_欧洲议会STOA科技创新与技术评估跨期精选全文台账.csv")
+    assert {r["报告ID"] for r in eu_stoa_selected} == expected_eu_stoa_selected_ids()
+    assert sum(int(r["页数"]) for r in eu_stoa_selected) == 1609
+    assert sum(int(r["字节数"]) for r in eu_stoa_selected) == 45648866
+    assert sum(int(r["清洗文本字符数"]) for r in eu_stoa_selected) == 3994298
+    assert sum(int(r["China词形命中数"]) for r in eu_stoa_selected) == 401
+    assert sum(int(r["China词形命中数"]) > 0 for r in eu_stoa_selected) == 14
+    assert all(
+        Path(r["本地原始PDF"]).exists() and Path(r["本地页面HTML"]).exists()
+        and Path(r["本地文本"]).exists() and Path(r["本地切片"]).exists()
+        and sha(Path(r["本地原始PDF"])) == r["SHA256"]
+        for r in eu_stoa_selected
+    )
     stepi_assets = rows(root / "60_STEPI韩文科技与中国专题增补台账.csv")
     assert len(stepi_assets) == 518, len(stepi_assets)
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 476
@@ -894,7 +931,7 @@ def main() -> None:
     gap_matrix = rows(root / "69_机构节点主题覆盖缺口矩阵.csv")
     targeted_queue = rows(root / "70_定点补源优先队列.csv")
     catalog_queue = rows(root / "72_轻量目录扩展优先队列.csv")
-    assert len(gap_matrix) == 1080
+    assert len(gap_matrix) == 1110
     assert {r["战略主题"] for r in gap_matrix} == {
         "T1_科学体系与基础研究", "T2_技术创新与关键技术", "T3_创新政策与研发治理",
         "T4_人才大学与科研组织", "T5_产业创新转化与区域生态", "T6_国际合作开放科学与比较",
@@ -997,7 +1034,7 @@ def main() -> None:
     assert sum(r["全文策略"].startswith("总目录保留") for r in itif_light) == 651
     assert sum(r["全文策略"].startswith("已进入精选全文") for r in csis_rai_light) == 21
     assert sum(r["全文策略"].startswith("总目录保留") for r in csis_rai_light) == 155
-    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1080
+    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1110
     assert len(rows(root / "70_定点补源优先队列.csv")) == 0
     assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 0
     review = rows(root / "92_定点全文候选证据增量复核台账.csv")
@@ -1074,7 +1111,7 @@ def main() -> None:
         nistep_asset_count=len(nistep_catalog),
         stepi_asset_count=len(stepi_catalog),
         kistep_asset_count=len(kistep_catalog),
-        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5 + 6 + 6 + 15 + 118 + 75 + 155 + 646 + 625 + 176,
+        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5 + 6 + 6 + 15 + 118 + 75 + 155 + 646 + 625 + 176 + 243,
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -1106,6 +1143,7 @@ def main() -> None:
             (rathenau_selected, ("本地原始资产",)),
             (ifp_selected, ("本地原始资产",)),
             (csis_rai_selected, ("本地原始资产",)),
+            (eu_stoa_selected, ("本地原始PDF",)),
             (stepi_assets, ("本地原始资产",)),
             (stepi_series, ("本地原始资产",)),
             (kistep_assets, ("本地原始资产",)),
@@ -1306,13 +1344,17 @@ def main() -> None:
         ("179_CSIS_RAI科技创新项目轻量总目录结果.md", "国际科技智库观点演变_CSIS_RAI科技创新项目轻量总目录结果.md"),
         ("180_CSIS_RAI科学技术创新机制与中国比较跨期精选全文台账.csv", "国际科技智库观点演变_CSIS_RAI科学技术创新机制与中国比较跨期精选全文台账.csv"),
         ("181_CSIS_RAI科学技术创新机制与中国比较跨期精选全文结果.md", "国际科技智库观点演变_CSIS_RAI科学技术创新机制与中国比较跨期精选全文结果.md"),
+        ("182_欧洲议会STOA科技评估近十年轻量总目录.csv", "国际科技智库观点演变_欧洲议会STOA科技评估近十年轻量总目录.csv"),
+        ("183_欧洲议会STOA科技评估近十年轻量总目录结果.md", "国际科技智库观点演变_欧洲议会STOA科技评估近十年轻量总目录结果.md"),
+        ("184_欧洲议会STOA科技创新与技术评估跨期精选全文台账.csv", "国际科技智库观点演变_欧洲议会STOA科技创新与技术评估跨期精选全文台账.csv"),
+        ("185_欧洲议会STOA科技创新与技术评估跨期精选全文结果.md", "国际科技智库观点演变_欧洲议会STOA科技创新与技术评估跨期精选全文结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv"))
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "06_数据资产" / "数据资产清单.csv"))
     print("viewpoint_research_validation=ok")
-    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=12 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)} crds_assets={len(crds_assets)} nistep_assets={len(nistep_assets)} stepi_assets={len(stepi_assets)} kistep_assets={len(kistep_assets)}")
+    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=13 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)} crds_assets={len(crds_assets)} nistep_assets={len(nistep_assets)} stepi_assets={len(stepi_assets)} kistep_assets={len(kistep_assets)}")
 
 
 if __name__ == "__main__":

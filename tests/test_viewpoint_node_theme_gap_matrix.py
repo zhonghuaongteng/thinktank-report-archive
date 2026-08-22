@@ -106,6 +106,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "ITIF跨期精选已完成；其余正式报告保留轻量目录"}))
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "FAS跨期精选已完成；其余报告与政策备忘录保留轻量目录"}))
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "CSIS RAI跨期精选已完成；其余Report/Article保留轻量目录"}))
+        self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "STOA跨期精选已完成；其余成果保留轻量目录"}))
         self.assertFalse(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；未下载全文"}))
 
     def test_nesta_uses_observed_publication_volume_after_complete_site_scan(self) -> None:
@@ -175,6 +176,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertEqual(tier_for("wipo-wipr"), "A")
         self.assertEqual(tier_for("nesta"), "A")
         self.assertEqual(tier_for("rathenau"), "A")
+        self.assertEqual(tier_for("eu-stoa"), "A")
         self.assertEqual(tier_for("ifp"), "B")
         self.assertEqual(tier_for("ifp"), "B")
         self.assertEqual(tier_for("stanford-hai"), "B")
