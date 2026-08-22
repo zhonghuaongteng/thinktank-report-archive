@@ -1,0 +1,296 @@
+# C-WIPO-WIPR-2022 原文切片
+
+- 原文：`03_证据底稿\原文PDF\C-WIPO-WIPR-2022.pdf`
+- PDF页数：98
+- 页码口径：PDF物理页码；正式引用时仍需核对印刷页码。
+
+## 执行摘要与开篇候选
+
+### PDF页 4
+
+Table of contents
+Foreword 4
+Acknowledgements 6
+Executive summary 7
+Technical notes 90
+Acronyms 96
+Introduction 14
+What is the direction of innovation? 14
+Chapter 1 18
+Setting a course for the
+direction of innovation 18
+1.1 Social and private returns 18
+1.2 Interactions within
+innovation ecosystems 20
+1.3 The economic forces at work 22
+1.4 How can policy shape the
+direction of innovation? 27
+1.5 Developing economies and
+the direction of innovation 30
+1.6 The future direction of innovation 32
+Chapter 2 42
+What history tells us about the
+direction of innovation 42
+2.1 Second World War 42
+2.2 Space industry 47
+2.3 Rise of IT in East/uni00A0Asian countries 52
+2.4 Chapter summary and conclusions 56
+Chapter 3 61
+The direction of innovation:
+future challenges 61
+3.1 The lessons of COVID-19 62
+3.2 Addressing the climate
+change imperative 65
+3.3 Digitalization is changing the world 73
+3.4 Public policy can harness innovation
+to address the challenges 78
+
+### PDF页 8
+
+7
+What economists de/f_ine as the
+“direction of innovation” – the theme
+of this report – is the combination or
+sum of all the decisions individuals,
+/f_irms, universities and governments
+make on which technological
+opportunities to pursue at any one time.
+It is not only a question of how
+much economies invest in new
+ideas. The allocation of human
+and /f_inancial resources to
+different innovation activities can
+set the direction of innovation of
+communities, countries and even
+the world for decades to come.
+Executive summary
+
+### PDF页 11
+
+10
+World Intellectual Property Report 2022
+The direction of innovation is
+not decided single-handedly;
+it is the result of the dynamic
+interaction of multiple decisions
+by entrepreneurs, researchers,
+consumers and policy makers
+The direction of innovation is constantly changing. It
+is in/f_luenced by the choices and interactions of public
+and private stakeholders looking to benefit from
+innovation. It is this innovation ecosystem that sets
+the direction of innovation. Curiosity guides research-
+ers to explore new scienti /f_ic /f_ields and engineers
+to experiment with new technologies. Companies,
+entrepreneurs and governments alike identify innova-
+tion opportunities based on predictions of potential
+private and social returns.
+Private stakeholders seize innovation opportunities
+more quickly when the expected returns are both fore-
+seeable and easy to capture in monetary terms. They
+are also drawn to short-term innovation projects where
+the risks of failure are lower. But longer-term, riskier
+opportunities frequently hold the greatest potential for
+positive social returns.
+Innovation ecosystems set the direction
+of innovation for decades to come
+Figure 4 Conceptual summary of interactions
+between innovation ecosystem stakeholders
+Governments must promote both the social and private
+returns of innovation. They often do this by centralizing
+activities and resources for innovations which affect
+the public good – goods or services freely available to
+all, such as national defense or pandemic prevention.
+They can also be the main source of demand for inno-
+vative technologies. Governments will design policies
+to in/f_luence the provision of public goods related to
+health, security or education.
+Much of the direction of innovation is set by the knowl-
+edge gained by industries through their operating
+experience or their supply chains. Knowledge and
+innovation /f_lows across /f_ields and industries provide
+scientists, engineers and entrepreneurs with strong
+incentives to move to new /f_ields and industries, apply-
+ing the technologies they already master, rearranging
+the allocation of resources and ultimately affecting the
+direction of innovation.
+Public and private motivations
+to innovate are not necessarily
+aligned, but they can be leveraged
+for the common good
+Social and private returns of technologies steer inno-
+vation. Innovations can have a transformative effect
+– for better or for worse – on the environment, public
+health, local communities, or on speci/f_ic demograph-
+ics, to name just a few examples. These are the social
+returns of innovation. If a technology is environmentally
+friendly, it will bring socioeconomic bene /f_its to the
+wider community; conversely, a cheaper but more
+polluting new technology may have a negative socio-
+economic impact.
+The social returns of innovation can differ substan -
+tially from the private returns reaped by commercially-
+driven innovators, as manifested by the development
+of COVID-19 vaccines. Our research estimates that
+the social bene /f_it of vaccine innovation amounts to
+USD/uni00A070.5 trillion globally, exceeding its private bene/f_it
+by a factor of 887. This large social bene/f_it re/f_lects the
+value of saved lives, avoided health impairments and
+the lifting of lockdown measures, which far outweighs
+the revenues generated by vaccine manufacturers.
+Public–private innovation is vital
+to leverage the common good
+Figure 5 Estimates of social and private bene /f_its
+of COVID-19 vaccine development
+Innovation needs differ
+around the world
+The ability of developing economies to either gener -
+ate new technological solutions or absorb existing
+solutions in order to address their specific socio-
+economic needs depends on their local innovation
+ecosystems and how connected they are to global
+innovation networks.
+Companies
+Government
+Academia
+Researchers
+Entrepreneurs
+Policy-
+makers
+Economic flows
+Knowledge flows
+COVID-19 vaccines
+generated equivalent
+of 83% of global GDP
+USD 80 billion
+Private benefit of
+COVID-19 vaccines
+USD 71 trillion
+Social benefit of
+COVID-19 vaccines
+
+## T1_科学体系与基础研究
+
+- PDF页10：ecosystems’ stakeholders. Governments and policymakers are usually called on to act in the face of priority-changing shocks. For instance, as a direct result of the Second World War, the U.S. Government mobilized civilian science to address wartime needs by creating and funding public research organizations, for example, the U.S. National Institute of Health (NIH). More than seven decades later, many of the medical innovations developed during that period are now part of standard hospital practice. The Second World War created the demand for new technological solutions to problems such as treating wounded soldiers and reducing mortality rates. During the war, the U.S. Government allocated a large sum of money to its research and development (R&D) budget, almost 100 times what it had been investing in sc
+
+- PDF页16：Understanding innovation ecosystems is crucial for the design of innovation policies that ef/f_iciently allocate resources to induce and direct innovation toward the concrete needs of the world. Past scienti/f_ic discoveries contribute to tomorrow’s new innovative products. The basic research done over the years, and the advances achieved in biology and genetics made it possible to develop COVID-19 vaccines so quickly (see Chapter 3). Government and private consumer choices inform engineers and entre- preneurs on what new products to develop. Today there are several technologies on the verge of producing great transformations: renewable energies, gene editing and nanotechnologies, for example. A new industrial revolution based on digital technologies is already bringing profound changes to the global e
+
+- PDF页19：ding on the wider economy and the envi- ronment, and not just the effect on corporate bottom lines. The concept incorporates all innovation bene/f_its or pro/f_its accruing to private companies, together with scienti/f_ic and technological innovations created in universities and public research organizations. The latter feed into private sector innovation, including through university-launched start-ups and spin-off /f_irms. Innovations can have a transformative socioeconomic effect – for the better or the worse – on, for example, the environment, public health, local communities, or on speci/f_ic demographics. In many cases, such an effect – an aspect of social returns – would not have been taken into consideration by the private sector when pursuing a given line of innovation. Economists categorize suc
+
+- PDF页20：dif/f_icult mission for governments. They often choose to do this by centralizing activities and resources on innovations that affect the public good, that is, goods or services made freely available to all, such as national defense or knowledge. Governments, for instance, fund public research and education in order to enhance the provision of new scienti/f_ic knowledge and disseminate it more widely. They are also the main source of demand for innovative technologies in given strategic industries like defense or health.2 A clear and recent example involves different government initiatives – for example, Operation Warp Speed in the United States of America/uni00A0(U.S.) – facili- tating and accelerating the development, manufacturing and distribution of COVID-19 vaccines, therapeutics and diagnostics (s
+
+- PDF页21：ation-related outcomes and, consequently, the direction of innovation. Stakeholders include /f_irms, ranging from specialized suppliers to end-consumer manufacturers or retailers, and, as noted, institutions with a scienti /f_ic and technological mission, such as universities or public research organizations. But ecosystems also can involve institutions without a primary scienti /f_ic or technological mission, such as government agencies, /f_inancial institutions or intel - lectual property/uni00A0(IP) of/f_ices, to name a few. The degree of articulation of an innovation environment is de/f_ined not only by the degree to which its institutions are developed, but also by their interactions. The choices and interactions that occur within the ecosystem will heavily in/f_luence the direction of innovation. E
+
+- PDF页22：ons Source: Adapted from (Schmookler, 1962a) and (Kline and Rosenberg, 1986). Note: B2C, business-to-consumer; B2B, business-to-business; B2G, business-to-government. Industry - Companies - Entrepreneurs Knowledge - Skilled labor - Technological capital Academia - Universities - Public research organizations (PROs) - Technical training Demand - Consumers (B2C) - Companies (B2B) - Governments (B2G) Knowledge /f_lows Expected innovation cost Expected innovation income = Expected innovation returns Economic /f_lows
+
+- PDF页23：evelop innovation in the /f_ields of robotics and automation for other industries. Similarly, the cost of transport can trigger innovation in containerization or three-dimensional/uni00A0(3D) printing technologies. Governments’ participation in innovation incorpo - rates funding public research and education as well as being the main source of demand for innovation technologies in strategic industries. Government policies frequently induce and support changes in academic programs to increase the supply of skilled labor. This was the case for government research institutes created in the Republic of Korea in the 1960s and 1970s; for example, the Korea Institute of Science and Technology (see Chapter 2). There are also examples from China dating from the 1990s onward. In both cases, institutions fostered t
+
+- PDF页29：Discovery-inducing policies Scienti/f_ic and technological discovery-stimulating poli- cies are most needed when innovation uncertainty and risk are at their greatest. The most typical example of such a policy is publicly-funded research carried out in academic institutions and public research organiza- tions. Through such a policy instrument, governments can exert a great deal of in /f_luence over the potential direction of innovation, prioritizing one /f_ield over anoth- er. But governments may need to fund programs for years in order for a commercially promising discovery to arise. Before resources are allocated there needs to be a dialogue between policymakers and the scienti/f_ic community about what direction to take. A more direct approach is through government purchases. For instance, government
+
+## T2_技术创新与关键技术
+
+- PDF页9：r from the pandemic-provoked slump of 2020. The long-term impact of the direction of innovation – in terms of both the returns or pro /f_its to companies and the bene/f_its, or lack of them, to society – is less predictable. For example, it is dif/f_icult to predict which of the technological innovations limiting climate change will prove most effective. Innovation has increased exponentially over the past 100 years, with very different technological catalysts Over the last century, innovation decisions have cumu- lated in shifting technological trajectories. Technologies related to combustion engines, transport and other mechanical machines dominated the innovation landscape in the early decades of the past century. Biopharma technologies boomed thanks to pharma - ceuticals in the 1930s and to biotechnologies si
+
+- PDF页9：arly decades of the past century. Biopharma technologies boomed thanks to pharma - ceuticals in the 1930s and to biotechnologies since the 1990s. And in the /f_inal decades of the 20th century, there was a big shift towards information and commu- nication technologies (ICTs) and semiconductors, which accounted for a quarter of all patents in the 30 years between 1990 and 2010. This increase in ICT patent share was mostly at the expense of “traditional,” mechanical machine technologies. Diverse technologies have driven innovation growth over the past 100 years Figure 1 Top growing technological /f_ields in patent /f_ilings, 1895-2020 Today, the direction of innovation is at a crossroads where promising new technologies are booming As we enter the third decade of the 21 st century, new and powerful force
+
+- PDF页9：private sector, research institutions and universities, international communities, non-governmental organizations (NGOs), including philanthropic foundations. Digital technologies ICTsBiopharma Engine & Transport 1895–1925 1930–1960 1965–2000 2000–2020 Digital technologies +172% Artificial intelligence +718% Cloud computing +122% Big data +699% Internet of Things -81% Autonomous systems +109%
+
+- PDF页10：Many changes were already underway, but the pandemic highlighted the urgency to “go digital” and created opportunities to introduce operational improve- ments, such as virtual medical consultations. But the fast deployment of COVID-19 vaccines and the wide adoption of underlying biotechnology tools are not without challenges in the short term. Creating and rolling out the vaccines using the new technology required a highly skilled labor force and well-equipped research labs. Moreover, the speed of COVID-19 vaccine development and medical trials came at the expense of delaying the approval of other medicines in the pipeline. In addition, the focus on vaccines and treatments to /f_ight COVID-19 pandemic may hurt other lines of medical research for a number of years. Societies’ demands for innovation can
+
+- PDF页12：ged to fully integrate into the global economy as core and active participants in international value chains. Their respective industrial policies facilitated their jump into cutting edge IT in just a few decades. The 1980s saw the East Asians enter the markets for PCs (personal computers), VCRs (videocassette recorders), audio cassette players and telecom equipment. In the 1990s came memory chips and wireless cell phones, and the 2000s brought various digital products, including digital TVs, wireless telecommunication systems and smart phones. The development of all East Asian economies has common elements. These include economic catch-up, the fast technological progress of private /f_irms and industries, and government policies to reduce the risks involved for /f_irms in entering new industries
+
+- PDF页15：Revolution, rapid technological advances have driven ever more widespread economic growth, bene /f_itting countries and economic stakeholders around the globe. Today, the world is at the outset of a new industrial revolution – the Fourth – based on digital technologies, such as robotics, arti /f_icial intelligence/uni00A0and big data. How much and how fast countries, industries and companies invest in transforming research and devel- opment/uni00A0(R&D) resources, both human and /f_inancial, into new technologies will in large part determine future economic growth, standards of living and overall global welfare. However, not all decisions on innovation – understood as commercialized new products and processes – are simple to make. At any given moment, existing tech- nologies compete with promisin
+
+- PDF页19：r the impact of innovations on society at large, including on the wider economy and the envi- ronment, and not just the effect on corporate bottom lines. The concept incorporates all innovation bene/f_its or pro/f_its accruing to private companies, together with scienti/f_ic and technological innovations created in universities and public research organizations. The latter feed into private sector innovation, including through university-launched start-ups and spin-off /f_irms. Innovations can have a transformative socioeconomic effect – for the better or the worse – on, for example, the environment, public health, local communities, or on speci/f_ic demographics. In many cases, such an effect – an aspect of social returns – would not have been taken into consideration by the private sector when pursuing a given
+
+- PDF页23：22 World Intellectual Property Report 2022 instance, the more proficient computer scientists and engineers and advanced computing hardware there are in an innovation ecosystem, the more likely it is that entrepreneurs and companies will pursue ICT-related innovation. Conversely, a lack of capital or labor can also serve to motivate innovation opportunities. A shortage of advanced computing-related hardware can itself create innovation opportunities for specialized suppliers in the ICT industry like those offering shared computing and storage capacity services. The cost of specialized labor too
+
+## T3_创新政策与研发治理
+
+- PDF页10：g that period are now part of standard hospital practice. The Second World War created the demand for new technological solutions to problems such as treating wounded soldiers and reducing mortality rates. During the war, the U.S. Government allocated a large sum of money to its research and development (R&D) budget, almost 100 times what it had been investing in science in prior years. This concerted surge in public effort aided and supported the mass production of penicillin, the development of blood substitutes and the creation and production of vaccines, along with research on hormones and numerous other medical breakthroughs. This opened avenues for further research and medical improvements that reached far into the future. Penicillin research efforts were the precursor of antibiotics’ development by pharmac
+
+- PDF页10：or further research and medical improvements that reached far into the future. Penicillin research efforts were the precursor of antibiotics’ development by pharmaceutical companies during the post-war decades. Similarly, the Cold War led to an expansion in U.S. federally funded R&D into new domains, such as its mission to the Moon. In 1957, the Soviet Union became the /f_irst country to launch a satellite into low-Earth orbit. The U.S. responded in 1961 with a program to put a man on the Moon within a decade. Great political commitment, a large budget and scienti/f_ic and engineering technical ability saw the goal achieved in October 1969. By the end of the 20th century, U.S. “mission-oriented” R&D funding into space programs had led to the development of telecommunications satellite technol
+
+- PDF页10：orbit. The U.S. responded in 1961 with a program to put a man on the Moon within a decade. Great political commitment, a large budget and scienti/f_ic and engineering technical ability saw the goal achieved in October 1969. By the end of the 20th century, U.S. “mission-oriented” R&D funding into space programs had led to the development of telecommunications satellite technolo- gies and eventually fueled commercial involvement in space activities. Advanced industrial economies have become increasingly dependent on space systems for their information technology, remote sensing imagery, PNT (position, navigation and timing) data and other applications. A new space race between the U.S. and China may trigger innovative – and unpredictable – technologies in the decades to come. Space innovation:
+
+- PDF页12：on of innovation will depend on inter- national and multilateral policies to address “grand challenges,” such as access to education and health and climate-change mitigation. The successful public–private collaboration in quickly identifying COVID-19 vaccine candidates shows how mission-oriented policies can be useful in generating important changes. Similar to the wartime efforts during the 1940s, these collaborations relied on exist- ing science and technologies, proving that they work and ensuring the swift and large-scale production and deployment of vaccines. Can “mission-oriented” policies be used to address the major and complex social, environmental and economic challenges that face the world? Policies based on centralized decision-making and the concen- tration of resources on one speci /f_ic goa
+
+- PDF页12：ironmental and economic challenges that face the world? Policies based on centralized decision-making and the concen- tration of resources on one speci /f_ic goal were very useful in the case of NASA’s space program to reach the Moon and of COVID-19 vaccine development. But even mission-oriented policies may not be enough. Some observers see government policies as just one element of any solution, which will also require the efforts of all stakeholders of the innovation ecosystem, including consumers. Clean technologies boomed after oil price shock, but it might not be enough... Figure 7 Growth of global environmental related technologies, 1973-2017 Deepening commitments to sustainability at public, private and even consumer levels is changing how businesses conduct activities such as shifting to renewabl
+
+- PDF页13：seen with a sharp increase in related patenting. This is also the case of enabling technologies, such as batteries, hydrogen and smart grids. However, technologies that are at the early stages of development – basic or applied research stages – tend to be riskier and so require public funding to mitigate these risks. Carbon-removal technologies, for example, are expensive to build and maintain. In addition, perception of the risks associated with global warming changes gradually. The incentive for private stakeholders to invest in developing clean technologies relies on such predicted demand. Can policy help in shaping the direction of innovation? Public policy can shape the direction of innovation in several ways: Scienti/f_ic and technological discovery-stimulating policies are most needed when innov
+
+- PDF页13：tainty and risk are greatest. For instance, govern - ments use direct purchases regularly to assist the development of defense and aerospace technolo - gies. Risk-mitigating policies are likely to be most effec- tive in the early phases of development after an initial discovery. R&D subsidies, soft loans and R&D tax incentives are typical risk-mitigating policy instru - ments. Early-adoption policies aim not only at reducing innovation risk but also at increasing the number of companies using a given technology. Governments can step in to boost production of a given tech - nology and by so doing ensure suf /f_icient scale is achieved for it to be pro/f_itable. Governments can also reduce risk or incentivize adoption indirectly by inducing consumption of goods and services containing a desired
+
+- PDF页15：rld is at the outset of a new industrial revolution – the Fourth – based on digital technologies, such as robotics, arti /f_icial intelligence/uni00A0and big data. How much and how fast countries, industries and companies invest in transforming research and devel- opment/uni00A0(R&D) resources, both human and /f_inancial, into new technologies will in large part determine future economic growth, standards of living and overall global welfare. However, not all decisions on innovation – understood as commercialized new products and processes – are simple to make. At any given moment, existing tech- nologies compete with promising new ones in terms of potential returns. The steam engine, electricity and the Internet all had viable alternatives that could have replaced them or blocked their devel
+
+## T4_人才大学与科研组织
+
+- PDF页6：nd other events that can alter society’s demand for innovation in a blink of an eye. This process is the theme of the World Intellectual Property Report 2022. Our aim is to shine a light on how the decisions of various actors within innovation ecosystems, including policymakers, researchers, enterprises, entrepreneurs and consumers, come together to shape the future trajectory not only of innovation, but of economies and societies around the world. The report begins with a discussion of the main factors that govern the direction of innovation, including the relationship between social and private returns. While public and private motivations are not always aligned, the report shows that they can be leveraged effectively for the common good. In keeping with previous editions of this report, we supple
+
+- PDF页7：llow), and Prince Oguguo (Young Expert Fellow), all from WIPO’s Department for Economics and Data Analytics (DEDA). The report drew on various commissioned back - ground papers: Chapter 1: Carsten Fink provided inputs on the social estimates of COVID-19 vaccines, and Xiaolan Fu (University of Oxford) and Liu Shi (University of Oxford) on the perspectives of developing countries. Chapter 2: Henry Hertzfeld (George Washington University), Benjamin Staats (George Washington University) and George Leaua (George Washington University) provided background research on space; Bhaven Sampat (Columbia University) on antibiot- ics; and Keun Lee (Seoul National University) on information technology in East Asia. Chapter 3: Joëlle Noailly (Graduate Institute, Vrije Universiteit Amsterdam, Tinbergen Institute) co
+
+- PDF页7：ersity of Oxford) on the perspectives of developing countries. Chapter 2: Henry Hertzfeld (George Washington University), Benjamin Staats (George Washington University) and George Leaua (George Washington University) provided background research on space; Bhaven Sampat (Columbia University) on antibiot- ics; and Keun Lee (Seoul National University) on information technology in East Asia. Chapter 3: Joëlle Noailly (Graduate Institute, Vrije Universiteit Amsterdam, Tinbergen Institute) contrib- uted background research on low-carbon technolo- gies; and Manuel Trajtenberg (Tel Aviv University) on digital general-purpose technologies. The report team benefited greatly from external reviews and comments. Richard R. Nelson (Columbia University) provided comments and feedback on the chapters of the report.
+
+- PDF页7：cs; and Keun Lee (Seoul National University) on information technology in East Asia. Chapter 3: Joëlle Noailly (Graduate Institute, Vrije Universiteit Amsterdam, Tinbergen Institute) contrib- uted background research on low-carbon technolo- gies; and Manuel Trajtenberg (Tel Aviv University) on digital general-purpose technologies. The report team benefited greatly from external reviews and comments. Richard R. Nelson (Columbia University) provided comments and feedback on the chapters of the report. In addition, reviews of the background papers were provided by Suma Athreye (University of Essex), Dominique Foray (École Polytechnique Fédérale de Lausanne), Lisa L. Ouellette (Stanford Law School), Can Huang (Zhejiang University), Andrea Sommariva (SDA Bocconi School of Management) and Valeria Costanti
+
+- PDF页9：an innovation model to build on. The COVID-19 pandemic generated and, in part, accelerated demand for new technologies to combat it. The COVID-19 crisis prompted responses to /f_ind solutions urgently from all actors in the innovation ecosystem – governments, the private sector, research institutions and universities, international communities, non-governmental organizations (NGOs), including philanthropic foundations. Digital technologies ICTsBiopharma Engine & Transport 1895–1925 1930–1960 1965–2000 2000–2020 Digital technologies +172% Artificial intelligence +718% Cloud computing +122% Big data +699% Internet of Things -81% Autonomous systems +109%
+
+- PDF页10：tems’ stakeholders. Governments and policymakers are usually called on to act in the face of priority-changing shocks. For instance, as a direct result of the Second World War, the U.S. Government mobilized civilian science to address wartime needs by creating and funding public research organizations, for example, the U.S. National Institute of Health (NIH). More than seven decades later, many of the medical innovations developed during that period are now part of standard hospital practice. The Second World War created the demand for new technological solutions to problems such as treating wounded soldiers and reducing mortality rates. During the war, the U.S. Government allocated a large sum of money to its research and development (R&D) budget, almost 100 times what it had been investing in science in prio
+
+- PDF页11：10 World Intellectual Property Report 2022 The direction of innovation is not decided single-handedly; it is the result of the dynamic interaction of multiple decisions by entrepreneurs, researchers, consumers and policy makers The direction of innovation is constantly changing. It is in/f_luenced by the choices and interactions of public and private stakeholders looking to benefit from innovation. It is this innovation ecosystem that sets the direction of innovation. Curiosity guides research- ers to explore new scienti /f_ic /f_ields and engineers to experiment with new technologies. Companies, entrepreneurs and governments alike identify innova- tion opportunities based on predictions of potential private
+
+- PDF页11：ovision of public goods related to health, security or education. Much of the direction of innovation is set by the knowl- edge gained by industries through their operating experience or their supply chains. Knowledge and innovation /f_lows across /f_ields and industries provide scientists, engineers and entrepreneurs with strong incentives to move to new /f_ields and industries, apply- ing the technologies they already master, rearranging the allocation of resources and ultimately affecting the direction of innovation. Public and private motivations to innovate are not necessarily aligned, but they can be leveraged for the common good Social and private returns of technologies steer inno- vation. Innovations can have a transformative effect – for better or for worse – on the environment, public he
+
+## T5_产业创新与成果转化
+
+- PDF页4：ces at work 22 1.4 How can policy shape the direction of innovation? 27 1.5 Developing economies and the direction of innovation 30 1.6 The future direction of innovation 32 Chapter 2 42 What history tells us about the direction of innovation 42 2.1 Second World War 42 2.2 Space industry 47 2.3 Rise of IT in East/uni00A0Asian countries 52 2.4 Chapter summary and conclusions 56 Chapter 3 61 The direction of innovation: future challenges 61 3.1 The lessons of COVID-19 62 3.2 Addressing the climate change imperative 65 3.3 Digitalization is changing the world 73 3.4 Public policy can harness innovation to address the challenges 78
+
+- PDF页6：bal innovation. Digital technologies such as arti/f_icial intelligence, big data, cloud computing and the Internet of Things are booming. These rapidly emerging tech- nologies have the potential to transform large swathes of the global economy, spark new growth opportunities for startups and businesses and empower people and communities in all regions of the world. But while the positive impact of new ideas, products and services is well understood, the broader decision- making environment behind innovation is subject to far less analysis. To a large extent, this is a re /f_lection of the wide vari - ety of factors at play. Decisions on innovation are often complex and involve a cross-section of differ - ent stakeholders and interests. For instance, while new scienti /f_ic and technological oppor
+
+- PDF页9：such as the Internet of Things. Digitalization has the potential to spur economic growth, but risks exacerbating inequalities. AI, automation and other digital general-purpose technologies can spur economic growth when they generate innovation that complements and enhances human productivity. But they risk worsening economic inequality when inno - vation simply replaces people. They will make certain occupations obsolete and give rise to new ones that require different sets of skills. While they may create leapfrogging opportunities for some less-developed economies, others may miss out due to a lack of large capital investments and the high-skilled labor force necessary for these technologies to thrive. Digital-related innovation has grown 172% faster than all patents in the past five years Figure 2
+
+- PDF页9：cine success is an innovation model to build on. The COVID-19 pandemic generated and, in part, accelerated demand for new technologies to combat it. The COVID-19 crisis prompted responses to /f_ind solutions urgently from all actors in the innovation ecosystem – governments, the private sector, research institutions and universities, international communities, non-governmental organizations (NGOs), including philanthropic foundations. Digital technologies ICTsBiopharma Engine & Transport 1895–1925 1930–1960 1965–2000 2000–2020 Digital technologies +172% Artificial intelligence +718% Cloud computing +122% Big data +699% Internet of Things -81% Autonomous systems +109%
+
+- PDF页10：9 World Intellectual Property Report 2022 The scale of the pandemic and the fact that it affected a large share of the global population created an important incentive for the private sector. In addition, several governments gave signi/f_icant /f_inancial support to the private sector, including for clinical trials and for vaccine developers with promising vaccine candidates to build large-scale manufacturing capacity. Moreover, the special emergency authorization and coordination efforts provided by relevant national and international government agencies allowed for a faster deployment of the vaccines worldwide. The successful public–private collaboration in quickly identifying and developing COVID-1
+
+- PDF页12：es in the middle- income bracket, innovation ecosystems may unblock unprecedented innovative ability by leveraging scien- ti/f_ic capacity, technological capital and skilled labor to narrow the technological gap between them and the most advanced economies. In the case of the IT industry in East Asia, for example, Japan, the Republic of Korea and China managed to fully integrate into the global economy as core and active participants in international value chains. Their respective industrial policies facilitated their jump into cutting edge IT in just a few decades. The 1980s saw the East Asians enter the markets for PCs (personal computers), VCRs (videocassette recorders), audio cassette players and telecom equipment. In the 1990s came memory chips and wireless cell phones, and the 2000s brought
+
+- PDF页13：g a desired innova - tion. They can provide subsidies to producers to keep prices down or to consumers to encourage them to buy. They can in/f_luence adoption through publicly-funded education programs to cut the cost and increase the availability of skilled labor and to promote entrepreneurship in selected /f_ields. Regulation of digital technologies – including how access to data is governed – plays an important role in sustaining a competitive marketplace that promotes and rewards innovation. As digital tech- nologies evolve at a fast pace, many governments around the world are currently considering adapting their regulatory toolbox. The world’s grand challenges – addressing climate change, reducing inequality, ensuring food security, preventing pandemics – are public goods, and the private sector on i
+
+- PDF页13：nologies evolve at a fast pace, many governments around the world are currently considering adapting their regulatory toolbox. The world’s grand challenges – addressing climate change, reducing inequality, ensuring food security, preventing pandemics – are public goods, and the private sector on its own is unlikely to allocate enough innovation resources to resolve them. Nor can climate change be addressed by private and public-sector efforts within individual economies. It is only through a multi-stakeholder, internationally coordinated effort that we will be able to solve these global challenges.
+
+## T6_国际合作开放科学与比较
+
+- PDF页10：idates to build large-scale manufacturing capacity. Moreover, the special emergency authorization and coordination efforts provided by relevant national and international government agencies allowed for a faster deployment of the vaccines worldwide. The successful public–private collaboration in quickly identifying and developing COVID-19 vaccine candi - dates shows how policies can be useful in redirecting innovation efforts toward a common goal. COVID-19 vaccine development has had an impact on medical research and practice. The success of the mRNA vaccine platform for COVID-19 has provided strong evidence that the technology works well and could have applications for other diseases. This could also signal the beginning a new golden era for vaccine development, similar to the one during the Second Wo
+
+- PDF页12：en when this is taken into account. More impor- tantly, innovation does not have to be cutting-edge to be socially valuable. Technologies to address major challenges, such as climate change, are greatly needed The future direction of innovation will depend on inter- national and multilateral policies to address “grand challenges,” such as access to education and health and climate-change mitigation. The successful public–private collaboration in quickly identifying COVID-19 vaccine candidates shows how mission-oriented policies can be useful in generating important changes. Similar to the wartime efforts during the 1940s, these collaborations relied on exist- ing science and technologies, proving that they work and ensuring the swift and large-scale production and deployment of vaccines. Can “mission-
+
+- PDF页12：tion and health and climate-change mitigation. The successful public–private collaboration in quickly identifying COVID-19 vaccine candidates shows how mission-oriented policies can be useful in generating important changes. Similar to the wartime efforts during the 1940s, these collaborations relied on exist- ing science and technologies, proving that they work and ensuring the swift and large-scale production and deployment of vaccines. Can “mission-oriented” policies be used to address the major and complex social, environmental and economic challenges that face the world? Policies based on centralized decision-making and the concen- tration of resources on one speci /f_ic goal were very useful in the case of NASA’s space program to reach the Moon and of COVID-19 vaccine development. But even missio
+
+- PDF页29：direction to take. A more direct approach is through government purchases. For instance, governments use regular direct purchases to stimulate the development of defense and aerospace technologies. Contracts can be awarded in different ways, so as to allow either competition or collaboration among the different innovation stakeholders. An example of the latter is when specialized companies and universities come together to create consortia to deliver the innovative good demanded. Yet, this instrument requires a government to have an in-depth technical knowledge of the speci/f_ic deliverable and be able to handle not only technically complex contracts but also follow- up compliance. Academic prizes – such as the Nobel Prizes in differ- ent scienti/f_ic /f_ields – or patents can also act indirectly as d
+
+- PDF页31：nism (or several) to help coordinate the priorities and resource allocation of individual initiatives. Unfortunately, there is not yet a complete example of a grand challenge having been successfully addressed by innovation policies alone. Nonetheless, steps under- taken through international cooperation and agree - ments highlight the necessity for concerted efforts worldwide to address these challenges. For example, the United Nations Framework Convention on Climate Change/uni00A0(UNFCCC) or the International Civil Aviation Organization’s/uni00A0(ICAO) sustainable aviation fuel initia - tives show the international commitment to meeting the goals of reducing carbon emission and addressing climate change. 1.5 Developing economies and the direction of innovation There are arguably two main routes for innovation in
+
+- PDF页33：services /uni00A0(SMS) mobile phone technology to enable secure electronic cash transfer on almost all mobile phones. The rapid uptake of M-PESA was due to the innovation being tailored to the demands of a local market eager to access a /f_inancial system.59 This private–public partnership – including a foreign company, a local subsidiary, a local micro - /f_inance institution and an established East African bank – was developed in consultation with market and non-markets actors, such as micro/f_inance institutions, NGOs and industry regulators. The Communications Authority of Kenya, the country’s ICT regulatory body, was crucial in helping to legitimize the platform and promote its diffusion.60 Developing economies may also often lack institutions to facilitate and support innovation, leaving such
+
+- PDF页45：f compounds to explore, the CMR had to coordinate the research efforts of individual /f_irms and academic laboratories, making sure there was no excess duplication of effort, but also that there were no major holes. As with penicillin, it tried to promote information-sharing and collaboration without compromising proprietary interests. Surprisingly, the drug eventually used was Atabrine. Research had shown that it was “relatively non-toxic”’ after all. The breakthrough on one of the molecules studied, chloroquine, came too late to be useful during the war effort but chloroquine would become a revolutionary malaria treatment in the years immediately afterwards. Research on this and other lead compounds of interest identi - /f_ied during the war continued.14 Other compounds with links to the wartime effo
+
+- PDF页45：ts. It also coordinated decentralized R&D efforts, supporting not just research but also downstream production and product adoption and generally prioritizing time (rapid crisis resolution) over money. In addition to national efforts, the OSRD was also in charge of international collaboration, including, for example, cooperation between British and U.S. scientists in penicillin research.
+
+## T7_中国科技横向维度
+
+- PDF页10：l involvement in space activities. Advanced industrial economies have become increasingly dependent on space systems for their information technology, remote sensing imagery, PNT (position, navigation and timing) data and other applications. A new space race between the U.S. and China may trigger innovative – and unpredictable – technologies in the decades to come. Space innovation: government funding paved the way for new technologies and industries Figure 3 Space funding by NASA and U.S. private investors, 2010–2019 2010–2014 2015–2019 NASA outlays Private outlays 92% 67% 33% 8%
+
+- PDF页12：nprecedented innovative ability by leveraging scien- ti/f_ic capacity, technological capital and skilled labor to narrow the technological gap between them and the most advanced economies. In the case of the IT industry in East Asia, for example, Japan, the Republic of Korea and China managed to fully integrate into the global economy as core and active participants in international value chains. Their respective industrial policies facilitated their jump into cutting edge IT in just a few decades. The 1980s saw the East Asians enter the markets for PCs (personal computers), VCRs (videocassette recorders), audio cassette players and telecom equipment. In the 1990s came memory chips and wireless cell phones, and the 2000s brought various digital products, including digital TVs, wireless telecomm
+
+- PDF页12：itiga- tion technologies to reduce their carbon footprint. By using subsidies, regulations and standards to promote environmental technologies, governments are helping mitigate some of the risks and uncertainties associated 1975 1985 1995 20152005 Japan 51% Republic of Korea 15% China 14% % of global ICT patents 1973 2012 1975 1985 1995 2005 2015 1973–2011: 6% annual growth 2012–2017: 0% annual growth
+
+- PDF页23：es in academic programs to increase the supply of skilled labor. This was the case for government research institutes created in the Republic of Korea in the 1960s and 1970s; for example, the Korea Institute of Science and Technology (see Chapter 2). There are also examples from China dating from the 1990s onward. In both cases, institutions fostered the train- ing of a specialized workforce for the IT industry. Areas where governments serve as the main source of demand for innovation technologies include defense, health, education and agriculture.14 1.3 The economic forces at work Decisions made by an innovation ecosystem’s stake- holders constantly change the direction of innovation. This section explores how they “deepen” or “widen” it. “Deepening” the direction of innovation Economic resour
+
+- PDF页31：rages follow-on innovation along new ones, thereby reinforcing the conservative dynamic.37 To conclude, innovation policy neutrality seems to be at odds with general practice. Several of the most industrialized economies – the United States, Western European countries, Japan and China, to name a few – have historically directed a large portion of public investment in R&D into either creating or stimulating speci/f_ic technologies and their complementary markets in /f_ields such as national defense, public health or agri- culture.38 Likewise, policymakers have in recent years been more inclined to provide direct /f_inancial support to those R&D-intensive sectors critical for national security, such as semiconductors.39 As a result, more and more, scholars agree that innova- tion policies have to
+
+- PDF页32：the most advanced economies. This was the case of the IT industry in the many East Asian economies – as further discussed in Chapter 2 – that managed to fully integrate into the global economy as core and active participants in international value chains.49 A handful – including China and India – have become sources of innovation in several technological /f_ields and participate actively in global innovation networks by contributing scienti/f_ic knowledge, technologies and technologically- advanced goods and equipment.50 Adapting foreign technologies Adapting foreign technologies to the needs of devel- oping-economy markets tends to be incremental, with limited improvements added to the original technology. But not all foreign technologies can be easily trans - posed to developing economies. No
+
+- PDF页32：d taking account of local needs and purchasing power.54 One example of “frugal” innovation is Transsion – a Chinese mobile phone manufacturer and service provider based in Shenzhen – which adapted mobile phones speci/f_ically for the African market. While rela- tively unknown in China, Transsion has captured over 40 percent of the mobile phone market in Africa, outperforming the likes of Apple, Huawei, Nokia, Developing economies’ ability to absorb or generate technological solutions with which to address their speci/f_ic socio-economic needs depends on their local innovation ecosystem and how connected it is to global innovation networks
+
+- PDF页33：32 World Intellectual Property Report 2022 Samsung and Xiaomi, particularly in the lower cost segment.55 This Chinese company understood the demand of many African consumers for low-cost mobile phones, but with a technology that addressed issues such as weak network signals and coverage and unreliable access to electricity, among others. Transsion produced price-accessible phones with an effective signal reception, long battery life and apps speci/f_ically designed for local market preferences.56 Developing economies are also highly heterogeneous, with a large gap between fast-growing emerging econ- omies and the least developed
