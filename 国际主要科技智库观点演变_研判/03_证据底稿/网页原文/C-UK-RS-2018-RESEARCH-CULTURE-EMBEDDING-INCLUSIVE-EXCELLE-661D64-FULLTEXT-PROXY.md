@@ -1,0 +1,1677 @@
+Title: Research culture: embedding inclusive excellence - workshop report
+
+URL Source: http://royalsociety.org/-/media/policy/publications/2018/research-culture-workshop-report.pdf
+
+Published Time: Thu, 23 Nov 2023 14:54:11 GMT
+
+Number of Pages: 18
+
+Markdown Content:
+Research culture
+
+# embedding inclusive
+
+# excellence
+
+# Insights on the future culture of research Cover image
+
+Young’s Translator (2031) , by Stephen Bennett and Amy Starmar,
+
+from the Museum of Extraordinary Objects. Research culture
+
+Research culture encompasses the behaviours, values,
+
+expectations, attitudes and norms of our research
+
+communities. It influences researchers’ career paths
+
+and determines the way that research is conducted
+
+and communicated.
+
+The UK has a long history of shaping global research
+
+culture, from the times of the Enlightenment scientists,
+
+the foundation of the Royal Society and the frameworks
+
+of publishing and peer review, through to its recent
+
+leadership in championing science as an open enterprise.
+
+Building on this history and the strengths of research culture
+
+today, the Society has started a programme of work to
+
+explore how the UK can promote the cultural conditions that
+
+will best enable excellent research and researchers here
+
+and elsewhere to flourish in the future 1. The focus of this
+
+programme is on the assessment of research and
+
+researchers, researcher career development, and open
+
+science. The work builds on the recommendations of a
+
+project led by the Nuffield Council on Bioethics in which
+
+the Society was a partner 2.
+
+The UK’s research ecosystem is evolving in ways that
+
+provide new opportunities and new challenges. These
+
+include the creation of UK Research and Innovation, the
+
+development of an Industrial Strategy and the UK’s
+
+departure from the EU. In a world where the research
+
+budgets of the US, China, Germany and many other
+
+countries are greater than the UK’s, it is more important
+
+than ever to understand how the UK’s research culture
+
+can be developed and used to its strategic advantage,
+
+to attract and retain talent and support continued
+
+research excellence.
+
+This document captures the insights and ideas generated
+
+through twelve  Visions of 2035  workshops held across
+
+the UK, together with insights from a range of other
+
+conferences and discussion meetings held over the last
+
+year 3. In total, over 1,000 individuals from government,
+
+industry, academia and the professional research services
+
+participated in what the Society hopes is just the beginning
+
+of a sustained national conversation.
+
+The 12 workshops explored and reimagined 4 existing
+
+research funding and assessment systems. Five common
+
+themes emerged:
+
+• Recognition and Esteem
+
+• Setting Culture
+
+• A Culture of Mobility
+
+• Open Science
+
+• Fostering Scientific Leadership
+
+Each thematic area was typically explored through
+
+two lenses:
+
+• ‘Top-down’ – the role that public policy, funding and
+
+research assessment frameworks play in setting the
+
+incentives that shape research culture;
+
+• ‘Bottom-up’ – the potential for researchers to catalyse
+
+behavioural and attitudinal change at the level of
+
+research groups and institutions, and how this might
+
+bubble up to form new social norms.
+
+The ideas and opinions presented in this document range
+
+from those expressed by single individuals to those that
+
+were almost universally held and we have tried to
+
+distinguish between these.
+
+Participants made a number of assumptions about the future
+
+of research culture. For example, most assumed that the
+
+research community of 2035 would be much more diverse
+
+than it is today, including individuals from a wide range of
+
+backgrounds, perspectives and experiences. They expected
+
+that boundaries between scientific disciplines would be more
+
+permeable. The elements of culture discussed in this
+
+document would help to achieve these conditions.
+
+There was clear consensus amongst participants that a
+
+change in today’s research culture is necessary to ensure
+
+the conditions for excellence. Some aspects of the current
+
+research ecosystem that are essential for sustainable
+
+delivery of excellent research are undervalued. In setting
+
+out the needs and aspirations of the research community,
+
+this document begins to identify ways in which the Society
+
+and others can further support excellence in the research
+
+community. It highlights areas where action is needed and
+
+invites discussion on the forms that action might take.
+
+> 1. www.royalsociety.org/researchculture
+> 2. http://nuffieldbioethics.org/project/research-culture
+> 3. A range of futures techniques were used to develop conversations, including using artefacts from the Museum of Extraordinary Objects.
+> These are pictured throughout this document. More information on this can be found at www.royalsociety.org/changingexpectations
+> 4. https://royalsociety.org/topics-policy/projects/research-culture/changing-expectations/visions-of-2035/
+> Research culture: Embedding inclusive excellence 3
+
+# Recognition and esteem
+
+A crucial strand to the discussions was to retain and
+
+enhance an environment where the best science can be
+
+pursued. Participants highlighted the importance of being
+
+given the time and the space to do blue skies, risky
+
+research as well as synthesis and replicability studies.
+
+Central to this being achieved was the need for the value
+
+of these activities to be more widely recognised.
+
+Participants reported a perception that current measures
+
+of recognition and esteem in the academic environment
+
+were disproportionately based on quantitative metrics
+
+such as grant income, citation counts and the impact factor
+
+of the journals in which they published. There is
+
+widespread recognition that these metrics do not
+
+adequately capture research excellence, and many leading
+
+organisations, including the Royal Society, have signed the
+
+San Francisco Declaration on Research Assessment
+
+(DoRA) which sets out good practice in this area 5.
+
+Narrow approaches to assessment based on publication
+
+metrics risk promoting an environment in which systemic
+
+pressures may incentivise individuals to compromise on the
+
+rigour and integrity of their research. Senior staff
+
+participants from a number of UK universities were clear that
+
+individuals’ broader contributions to teaching, research and
+
+other strategic endeavours do inform decisions on
+
+promotion and advancement. Participants from the Early
+
+Career Researcher (ECR) community typically had a different
+
+perception of what is required of them: across the course of
+
+the workshop ECR participants spoke of the pressure to
+
+‘publish early and often’ in order to secure promotion. The
+
+Royal Society has reinforced others’ calls for transparent
+
+promotion and progression criteria for all research staff 6.
+
+> Image
+> Interdisciplinary Collaboration Wheel (2028) , by Neus Torres Tamarit
+> and Reggy Liu, from the Museum of Extraordinary Objects.
+> 5. http://www.ascb.org/wp-content/uploads/2017/07/sfdora.pdf
+> 6. https://royalsociety.org/topics-policy/publications/2017/consultation-response-second-research-excellence-framework-REF/
+> Research culture: Embedding inclusive excellence 4
+
+Some participants’ beliefs that quantitative metrics of
+
+research impact were the only measures of their potential
+
+that mattered seemed to be influenced by their
+
+understanding of the Research Excellence Framework
+
+(REF). For example, the fact that the REF 2014 guidelines
+
+explicitly excluded consideration of journal impact factors
+
+did not appear to be well known. The engrained social
+
+norms about REF and their divergence from the rules by
+
+which the REF operates is discussed in the Nuffield
+
+Council of Bioethics 2014 report  The Culture of Scientific
+
+Research in the UK  7.
+
+The Royal Society has called for an institutionally-focussed
+
+REF, where a portfolio of outputs from the institution would
+
+be submitted. This portfolio, along with examples of research
+
+impact, would provide evidence of the quality of the research
+
+environment created by the institution. The uncoupling of
+
+publications from individuals might reduce pressure on
+
+individuals to produce ‘REF-able’ outputs, benefitting
+
+ambitious, longer-term and collaborative research. It would
+
+also emphasise the productivity of the institution as a whole,
+
+valuing the contributions of support staff and technical
+
+specialists as well as Principal Investigators (PIs).
+
+# “Diversity is being crushed by narrower and
+
+# narrower criteria for assessing success.”
+
+Dame Ottoline Leyser FRS.
+
+Idea
+
+A standardised short format academic CV: Most
+
+funders require a short version of an applicant’s CV as
+
+part of grant applications. Some participants agreed
+
+that a sector-wide standardised short format CV that
+
+emphasises wider contributions to the research system
+
+could increase the value associated with these
+
+activities, but would need to be carefully introduced so
+
+as not to create additional burdens on researchers.
+
+Some of the activities that could be considered for
+
+inclusion in this are discussed in the European
+
+Commission’s statement on  Evaluation of Research
+
+Careers fully acknowledging Open Science Practices 9.
+
+The use of DOIs 10  and the addition of a summary
+
+sentence for publications could reduce the emphasis
+
+on the journal in which a paper is published, and
+
+refocus attention on its contribution to the field. This
+
+short format CV could be incorporated into current
+
+contribution record platforms such as ORCiD 11 .
+
+Example
+
+Parent, Carer, Scientist  8 is a collection of 150 personal
+
+stories from scientists who are combining a career in
+
+research with their roles as parents and carers, each in
+
+their own way. Through this initiative the Royal Society
+
+is making visible the diversity of individuals who
+
+perform research, and their varied other commitments,
+
+to establish new norms and shape a more inclusive
+
+research culture.
+
+> 7. http://nuffieldbioethics.org/wp-content/uploads/Nuffield_research_culture_full_report_web.pdf
+> 8. https://royalsociety.org/topics-policy/diversity-in-science/parent-carer-scientist/
+> 9. https://ec.europa.eu/research/openscience/pdf/os_rewards_wgreport.pdf (pp6 and 7)
+> 10. A digital object identifier (DOI) is a unique alphanumeric string assigned by a registration agency (the International DOI Foundation) to identify content
+> and provide a persistent link to its location on the Internet. The publisher assigns a DOI when an article is published and made available electronically.
+> 11. https://orcid.org/
+> Research culture: Embedding inclusive excellence 5
+
+# Setting culture
+
+Leaders of scientific institutions play a pivotal role in
+
+shaping culture. Participants consistently spoke about
+
+how leaders who invest time in developing a positive
+
+research culture influence others to do the same. There
+
+was an appetite for such a focus to be an explicit and
+
+embedded part of the ‘day job’ for all researchers and
+
+research leaders.
+
+Consistent messaging is crucial to catalysing a cultural
+
+shift. A number of participants suggested that individuals
+
+in leadership roles could better use the full range of
+
+communication channels open to them, from email
+
+signatures to governance and corporate social
+
+responsibility reports. Diversity of communication could
+
+ensure consistent and wide-reaching messaging and
+
+reinforce action to develop and embed positive values
+
+and behaviours.
+
+Senior leaders need to practice what they preach.
+
+Participants gave a number of examples of research
+
+leaders taking small but impactful steps to improve
+
+wellbeing in the workplace. This included keeping regular
+
+hours to re-set the belief that only academics working
+
+long hours could be successful.
+
+Research culture is also strongly affected by a changing
+
+funding landscape. For example, there is a movement in
+
+the UK towards fellowships and associated programme
+
+grants and away from project grants. A few participants
+
+felt the balance between these different types of funding
+
+should be carefully monitored to ensure the most effective
+
+promotion of excellent science.
+
+# “Cultures are not set by policy statements
+
+# or by distributing a leaflet, but through the
+
+# people with whom we meet in thousands
+
+# of seemingly insignificant interactions on
+
+# perfectly ordinary days. We should all ask
+
+# ourselves whether we display the
+
+# characteristics that we value and want to see
+
+# embedded within the cultures in which we
+
+# work. Some people are more visible than
+
+# others, but none of us are invisible and we all
+
+# have a part to play in developing an inclusive
+
+# and supportive research culture for all.”
+
+Professor Tom Welton OBE.
+
+> Image
+> Memorial to Mars Mission, 2027 (2032) by Helen Cawley, Priya Odedra
+> and Josh Bourke, from the Museum of Extraordinary Objects.
+> Research culture: Embedding inclusive excellence 6
+
+# A culture of mobility
+
+Mobility refers to the ability of individuals in the research
+
+community to move between roles and careers and, in
+
+some cases, to follow ‘braided career paths’ combining
+
+academic and other work at the same time. Participants
+
+saw mobility as including movement in and out of careers
+
+in charitable organisations, the public sector and teaching,
+
+as well as industry.
+
+96% of science PhD graduates do not end up holding a
+
+permanent academic research position 12 , and there was
+
+much discussion about how best to continue to encourage
+
+the brightest undergraduates to take on PhD studies while
+
+also designing environments that enabled them to make
+
+the best possible choices about their future careers during
+
+their graduate training. Individuals must take responsibility
+
+for their own careers and, to do this, they require the time
+
+and resource to understand the full and diverse range of
+
+career options open to them. This might be made available
+
+through greater institutional commitment to supporting
+
+non-academic careers or braided career paths inside and
+
+outside of academic research.
+
+Enabling mobility
+
+A culture that supports mobility would be characterised by
+
+opportunities for people to gain experience in different
+
+disciplines and organisations. Longer term industry-
+
+academic collaborations and external mentoring for
+
+researchers and research staff were given by participants
+
+as examples of what ‘excellent’ might look like. The value
+
+of these experiences in supporting career development
+
+as well as enabling research that crosses the boundaries
+
+between disciplines and organisations was highlighted in
+
+the British Academy’s report  Crossing Paths: Interdisciplinary
+
+Institutions, Careers, Education and Applications 13 .
+
+Supporting collaborations and interactions between
+
+researchers in different sectors could also help bridge a
+
+perceived cultural divide in terms of the timescales that
+
+individuals and their organisations work to. Academia was
+
+suggested as being ‘too fast’ for industry, with a focus only on
+
+the next publication and the next grant. This was thought to
+
+drive a culture of selfishness and short termism that would be
+
+prohibitive to productive collaboration. By contrast, academia
+
+was sometimes considered ‘too slow’ by government which
+
+could not often wait the lifetime of an academic 2 – 5 year
+
+grant for outcomes to address evidential needs.
+
+> Image
+> The New Career Map (2027) by Liv Bargman and Stephen Bennett,
+> from the Museum of Extraordinary Objects.
+> 12. https://royalsociety.org/~/media/Royal_Society_Content/policy/publications/2010/4294970126.pdf
+> 13. https://www.britac.ac.uk/sites/default/files/Crossing%20Paths%20-%20Full%20Report.pdf
+> Research culture: Embedding inclusive excellence 7
+
+Engineering mobility
+
+Rotating individuals through different disciplines and
+
+sectors as a core and embedded part of their research
+
+activities might begin to bridge the cultural divide between
+
+different research environments. GlaxoSmithKline hosting
+
+researchers in its Open Lab, BP’s International Centre for
+
+Advanced Materials (ICAM) collaboration and the
+
+Heilbronn Institute, a collaboration between UK GCHQ
+
+and the University of Bristol, are examples of this 14 .
+
+A changing conversation
+
+The ‘push’ to introduce structured mobility opportunities into
+
+the research system needs to be met by demand ‘pull’ if
+
+they are to deliver real and sustained change. There was a
+
+perception that institutional conversations around careers in
+
+research mitigated against generating this demand.
+
+Participants reported their being perceived as ‘failing’
+
+should they decide to pursue a career outside of academic
+
+research. This was often reinforced by language around
+
+other career options being framed in terms of ‘alternative’,
+
+‘Plan b’ or ‘selling out’ in the context of moving to industry.
+
+Changing the language used to discuss research careers
+
+is a long standing issue, but it is important for both the
+
+community and the individual. The personal crush
+
+associated with moving away from academia was
+
+rationalised by ‘scientist’ being a strong part of researchers’
+
+identity. Changing career direction involved self-evaluation
+
+and uncertainty that act as a barrier. It also personalised
+
+failure and ‘unsuccessful’ research in a way that might
+
+incentivise poor practice and compromise research integrity.
+
+Workshop participants felt that normalising and valuing
+
+participation in a greater range of activities throughout
+
+research careers might help to dispel these attitudes.
+
+Despite the sense that current incentives are not aligned
+
+to support mobility, individuals do transition from academic
+
+research to lead rewarding, productive and successful
+
+careers in other sectors. The Royal Society’s  Changing
+
+expectations 15  case studies showcase individuals who
+
+have benefited from pursuing non-traditional or braided
+
+careers. By focussing on diverse contributions, aligning
+
+cultures across research environments and changing
+
+attitudes towards “failure”, we might empower a cohort of
+
+researchers to do the same. The Royal Society is working
+
+to achieve this, and is ready to build on these efforts with
+
+help from others invested in influencing research culture.
+
+Example
+
+The Royal Society supports the mobility of researchers
+
+between academia and industry through its Industry
+
+Fellowship Scheme. Since 1998, this scheme has helped
+
+nearly 200 scientists and engineers working on
+
+collaborative projects between a business and a
+
+university. Recently, this has been expanded with an
+
+award of further funding, offering more flexible
+
+Fellowships and to launch a new Entrepreneur in
+
+Residence programme. This will support senior industrial
+
+scientists and entrepreneurs to work at a university to
+
+impact research, teaching and commercialisation and help
+
+grow a more entrepreneurial culture within academia.
+
+Example
+
+Where will your career take you? These 23 career case
+
+studies are the first stage of the Royal Society’s
+
+Changing expectations  project, and inspire researchers
+
+to think differently about blinkered definitions of
+
+success and to challenge ideas about what skills and
+
+achievements should be valued.
+
+# “I think it’s a little odd that in academia
+
+# people talk about ‘academia’ and ‘industry’
+
+# as if they are the only two options out
+
+# there, and everything that isn’t academia
+
+# is industry.”
+
+Dr Amber Griffiths, founding director at FoAM Kernow.
+
+> 14. http://www.icam-online.org/about-us/the-icam-story/; http://www.openlabfoundation.org/about.html; https://heilbronn.ac.uk/about/
+> 15. www.royalsociety.org/changingexpectations
+> Research culture: Embedding inclusive excellence 8
+
+# Open Science
+
+Open science encompasses research that is accessible
+
+to all, as discussed in the Royal Society’s previous report
+
+Science as an open enterprise 16 . This includes making
+
+research papers available at zero cost to the reader.
+
+Openness also requires ways of enabling the public and
+
+other non-academic audiences such as decision-makers, to
+
+understand and engage with research. This in turn requires
+
+initiatives such as summaries tailored to the audience, and
+
+public engagement programmes 17 . A global push to make
+
+science more open is underway, driven both by demand for
+
+publicly-funded research to be publicly available and by the
+
+increasing ease with which individuals can share information
+
+digitally. These ideas underpin the Responsible Research
+
+and Innovation (RRI) framework approach 18 .
+
+Research is also being carried out in new environments
+
+and in new ways. This often does not align with traditional
+
+publishing models. Some participants felt there was an
+
+opportunity to reimagine the mechanisms for the
+
+dissemination of research findings, to prioritise their
+
+usefulness to the entire research community, to reduce
+
+delays involved in journal publication and break the links
+
+between publishing metrics and assessment. The Royal
+
+Society is helping to drive change in open science by
+
+publishing two fully open access journals, with strong data
+
+sharing policies and the use of open peer review 19 .
+
+> Image
+> Science Funding Referendum, Public Ballot Voting Form (2025)
+> by Tere Chad, from the Museum of Extraordinary Objects.
+> 16. https://royalsociety.org/topics-policy/projects/science-public-enterprise/report/
+> 17. http://www.rcuk.ac.uk/documents/documents/concordatonopenresearchdata-pdf/; http://www.rcuk.ac.uk/Publications/policy/perConcordat/;
+> The Royal Society and Academy of Medical Sciences will publish a report on evidence synthesis for policy in 2018.
+> 18. https://www.rri-tools.eu/about-rri
+> 19. https://royalsociety.org/journals/; https://royalsociety.org/journals/ethics-policies/data-sharing-mining/;
+> http://rsos.royalsocietypublishing.org/open-peer-review
+> Research culture: Embedding inclusive excellence 9
+
+Research findings are disseminated in different ways by
+
+different sectors and even disciplines. This means
+
+knowledge stock becomes available at different rates, with
+
+different time lags. In industry, there was a perception that
+
+research findings were primarily communicated internally,
+
+and that incentives to share them with the wider
+
+community were limited because of concerns about IP and
+
+commercial advantage. By contrast, whilst academic
+
+papers are widely available, there was a perception that
+
+they might sometimes be structured and presented with
+
+professional advancement and personal progression in
+
+mind. In discussions it was widely agreed that the primary
+
+incentives for disseminating research findings should be
+
+the benefit to the community as a whole, and the
+
+advancement of the research enterprise.
+
+Integrity and emergent funding
+
+In the UK, the outputs of all publicly-funded research must be
+
+made openly available. No such mandate exists for research
+
+funded by other routes, including new and emerging models
+
+such as the growing citizen science movement. Currently,
+
+researchers perceive some disincentives to open science
+
+given the time it takes to prepare and publish open data, and
+
+the lack of clarity in terms of its status in grant applications.
+
+Transparency, in terms of the research being done and the
+
+discrete contributions supporting it, was believed to be the
+
+best way to embed a culture of integrity in these new
+
+approaches 20 . It might also guard against supporting
+
+unnecessary duplication of research within the wider
+
+research system. Transparency was one important aspect
+
+outlined in the Royal Society’s research integrity statement,
+
+which sets out the key principals and behaviours expected
+
+in a culture of scientific integrity  21 .
+
+Whilst existing governmental, industrial and major charity
+
+funding streams will continue to dominate the funding
+
+landscape, some participants raised the possibility that the
+
+diverse set of emerging, small-scale funding models could
+
+offer opportunities to open up the scientific endeavour in
+
+ways not previously possible. The emergence of
+
+crowdfunded research, with some platforms now having
+
+engaged over one million users, was thought to be a way
+
+to support research of immediate interest and usefulness
+
+to a wide audience. This might connect new audiences to
+
+the process of research, helping to convey the value of
+
+research and innovation as a whole.
+
+Crowdfunding was not widely thought to be suitable for
+
+all kinds of research, for example speculative, ambitious
+
+research, and therefore it could only make a partial
+
+contribution to a balanced research portfolio. Participants
+
+were also concerned that research rigour might be put
+
+under pressure, given the need for accountability to many
+
+individuals and the demand to demonstrate short term
+
+progress. At the same time some participants suggested
+
+that crowdfunding platforms could benefit the integrity of
+
+such research, for example “crowd.science” 22  provides a
+
+buffer layer between funders and researchers and makes
+
+visible to users the research history of those involved.
+
+Idea
+
+Living publication: Many participants discussed ‘Living’
+
+publications. These would be augmented and altered
+
+in real time and were proposed as having many
+
+benefits as a model of sharing findings. Moving
+
+towards this model, increasing numbers of researchers
+
+are using the preprints movement to share information.
+
+Rapid dissemination of research findings, transparent,
+
+continuing peer review, and greater visibility around
+
+the correction of unintentional errors were all identified
+
+as advantages. The increasing availability of data and
+
+power of algorithms might in the future allow AI to
+
+contribute to assessment of the rigour of the research
+
+published in this way.
+
+Idea
+
+Integrity kitemarks: Several participants suggested
+
+that for crowdfunded projects, the research idea
+
+and proposed methodology should be subject to
+
+expert peer review and approval conferring an
+
+‘integrity kitemark’ before it received funding, as a
+
+way of embedding good practice from the earliest
+
+possible stages.
+
+> 20. http://www.universitiesuk.ac.uk/policy-and-analysis/reports/Documents/2012/the-concordat-to-support-research-integrity.pdf
+> 21. https://royalsociety.org/topics-policy/publications/2017/research-integrity-statement/
+> 22. https://crowd.science/
+> Research culture: Embedding inclusive excellence 10
+
+Research Workspaces
+
+Research is an inherently creative endeavour. There are
+
+excellent examples of how large and central facilities such
+
+as DIAMOND, ISIS and CERN have supported staff to
+
+undertake ground-breaking research, to benefit from
+
+planned and serendipitous meetings with others from the
+
+same and different disciplines, and to build on the findings
+
+and approaches of current and future leaders in their fields.
+
+Workspace design plays an important role in driving creativity
+
+and innovation. The academic and industrial laboratories
+
+where research has traditionally taken place will continue to
+
+dominate, but the growth of interdisciplinarity and emergence
+
+of new and highly-specialised skills and resources mean that
+
+workspace design is evolving to support researchers to
+
+perform all aspects of the work they undertake across an
+
+increasingly diverse research community.
+
+Participants felt in the future, demand for flexible access
+
+to a variety of workspaces might best be served by a ‘hub
+
+and spoke model’. Individuals primarily based in the
+
+research facilities of a core institution or organisation (the
+
+hub) would additionally access a network of specialised
+
+workspaces (the spokes). These ‘spokes’ could be tailored
+
+to specific activities ranging from public engagement to
+
+cutting-edge specialised analyses. ‘Spokes’ might be
+
+shared, in a similar way to existing regional or national
+
+research facilities; affiliated, as with the Reach Out lab on
+
+Imperial College London’s South Kensington campus; or
+
+designed into the core institution, as with education
+
+outreach spaces within the Crick Institute. Harnessing the
+
+potential of these bespoke spaces would require them to
+
+have a strong relationship to their various hubs, as well as
+
+connections to the wider research system.
+
+Dedicated workspaces for academic researchers to
+
+interface with businesses and investors are increasingly
+
+common. The growing appetite for entrepreneurship and
+
+commercialisation has contributed to a 110% rise in the
+
+number of UK incubators and accelerators since 2011 24 .
+
+Imperial College London’s White City Incubator, which
+
+provides support for early stage technology led start-ups,
+
+and I-HUB, a shared workspace targeted at a later stage of
+
+translation and innovation are examples. Merging research
+
+with design and manufacture is taking place in dedicated
+
+Hackspaces and in the maker community. This has been
+
+enabled by easy access to equipment, new digital
+
+technologies and in some cases, dedicated technician
+
+support. Workshop participants wanted to leverage their
+
+existing research to explore translation, reducing the
+
+barriers to taking advantage of the benefits these
+
+spaces offer.
+
+Idea
+
+The academic filter bubble: Recommender algorithms
+
+sift vast numbers of papers to identify those that might
+
+be most relevant to a researcher, for example, the
+
+Mendeley ‘Suggest’ feature. It is possible that a facility
+
+could emerge in the future that effectively synthesised
+
+the key messages of many papers into a single
+
+document 23 . This could flag papers and findings that
+
+might otherwise be missed, but it should not be a
+
+mechanism relied on by researchers as it risks
+
+distorting how a field is depicted, and losing the
+
+nuance of different and divergent arguments. A few
+
+participants felt transparency around the application of
+
+these methods to filtering research information would
+
+be crucial to the integrity of the research system.
+
+> 23. https://blog.mendeley.com/2015/11/03/new-research-features-on-mendeley-com/;
+> https://buildingrecommenders.wordpress.com/2016/10/10/mendeley-suggest-architecture/
+> 24. https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/608409/business-incubators-accelerators-uk-report.pdf
+> Research culture: Embedding inclusive excellence 11
+
+Shared spaces
+
+Many participants described how spaces for discussion
+
+and social interaction could have a particularly positive
+
+effect on creative, ambitious thinking during the early
+
+stages of a project. The possibilities for conversations that
+
+sparked collaborations or interdisciplinary work were cited
+
+as benefits of communal areas. Through the frequent
+
+conversations they enable, these spaces were also seen
+
+as beneficial for propagating good practice.
+
+Teaching, mentoring and collaborating require access to
+
+meeting rooms and spaces. A number of participants
+
+reported that more of such spaces were needed. Coffee
+
+shops and other public spaces were being used for
+
+student supervisions and classes. Participants identified
+
+the TEF and corresponding emphasis on assessing the
+
+quality and value of teaching as possible incentives for
+
+the investment in new, dedicated teaching space.
+
+Private workspace
+
+Shared work spaces are necessary but not sufficient.
+
+A number of activities were identified as requiring access
+
+to quiet, personal space, such as management of data,
+
+writing grant applications and drafting manuscripts. It was
+
+suggested that an individual’s home might be one ‘spoke’
+
+available to meet this demand. However, normalising
+
+homeworking divided opinion. Some participants thought
+
+more should be done to unlock the benefits of home
+
+working for researchers, others saw it as a slippery slope
+
+to extending working hours further, which might negatively
+
+affect individuals’ wellbeing. The Society commissioned
+
+work exploring the specific mental health needs of
+
+researchers, to develop understanding of how they
+
+might best be met 25 .
+
+The need for flexibility underpinned all these discussions.
+
+Access to workspaces that suit both research-focussed and
+
+non-research-focussed activities, personality type and
+
+personal circumstances was believed to support people to
+
+produce excellent research. Within the new research spaces
+
+becoming accessible, establishing a strong, consistent
+
+culture of integrity through an emphasis on training and
+
+learning was felt to be important – which might itself be
+
+designed into the research environment through provision
+
+of learning and development focussed workspace.
+
+Idea
+
+Library of things: An initiative suggested by one
+
+participant to support decentralisation of research into
+
+new environments, widening participation. Items from a
+
+collection of equipment and apparatus can be loaned
+
+to a local research workspace on writing a successful
+
+proposal. Users also input into how the collection is
+
+expanded, to tailor it to their needs. The set of suitable
+
+equipment and the range of disciplines this model
+
+would suit is limited.
+
+# “At the Institute of Making, we’ve seen
+
+# first-hand how the open and collaborative
+
+# nature of a makespace can dramatically
+
+# reduce the friction to knowledge exchange”
+
+Liz Corbin, researcher
+
+Example
+
+The Royal Academy of Engineering, through its
+
+Enterprise Hub which could itself be considered a
+
+‘spoke’, supports entrepreneurial engineering at all
+
+stages of a research career. Enterprise Fellowships
+
+provide funding and support to outstanding
+
+engineering entrepreneurs. As Hub Members, they
+
+have access to the Taylor Centre, the Hub’s physical
+
+space in London. They also receive continuing support
+
+and mentoring from the Academy’s Fellowship, some of
+
+the most successful technology entrepreneurs and
+
+business leaders in the UK and beyond.
+
+> 25. https://royalsociety.org/topics-policy/diversity-in-science/understanding-mental-health-in-the-research-environment/
+> Research culture: Embedding inclusive excellence 12
+
+# Fostering scientific leadership
+
+Participants often distinguished between the role of
+
+individuals as scientific leaders and as leading scientists.
+
+Leading scientists were described in terms of individuals
+
+pushing the boundaries of research in academia and
+
+industry. As examples of the latter, IBM and Microsoft have
+
+distinguished scientists whose deep technical expertise
+
+drives cutting-edge research across the organisation and
+
+beyond. There was general agreement that these
+
+individuals had a responsibility to be ambassadors for the
+
+research system they depend on, but ambivalence as to
+
+whether they should play any corporate role within their
+
+institution. Many participants suggested this model could
+
+also apply to senior researchers in academia who do not
+
+wish to become PIs. The possibility of a career of this type
+
+in academia was considered to have some distinct
+
+advantages as part of the wider mix.
+
+By contrast, scientific leaders of research groups,
+
+programmes and institutions were identified as having a
+
+responsibility to advocate for the researchers of the future
+
+and develop the talents and skills of their research teams.
+
+Many participants reported an increasing expectation that
+
+researchers be both excellent researchers and excellent
+
+leaders, with the requirement to fulfil both these
+
+functions simultaneously.
+
+> Image
+> The Noble Award for Team Science (2030) by Hazel Ching-Hsuan
+> Chiang, from the Museum of Extraordinary Objects.
+> Research culture: Embedding inclusive excellence 13
+
+The primary function of higher education and research
+
+institutions will always be excellent teaching and research.
+
+However, organisations are rightly embracing a broader
+
+agenda that includes, for example, enterprise and outreach.
+
+This means that scientific leadership often extends beyond
+
+an institution’s borders. The Society has previously called
+
+for institutions to have strategies that enable their staff to
+
+connect and share their research with a variety of
+
+audiences, including the public, schools, industry and
+
+policymakers 26 . Workshop participants generally welcomed
+
+this proposition, and believed these activities could benefit
+
+both the research community and wider society. However,
+
+there was a perception that these activities may not be
+
+valued by their home institution or within the wider research
+
+system. Participants felt that social incentives, from personal
+
+thanks to departmental awards, would be one effective way
+
+to influence behaviour.
+
+Leaders who had successfully founded companies, advised
+
+policymakers or undertaken public engagement projects
+
+were perceived as being the most effective in empowering
+
+others to do the same. In addition to leveraging professional
+
+networks, they gave ECRs confidence that pursuing these
+
+activities could have a positive impact on career progression,
+
+irrespective of whether their future career lay inside or
+
+outside of research. Participants suggested that a critical
+
+mass of individuals involved in activities from policy advice to
+
+public engagement and commercialisation was needed so as
+
+to normalise these roles and, in turn, foster respect for them.
+
+Future leaders
+
+There will always be a need to support talented individuals
+
+who pursue excellent research. Research institutions and
+
+funders provide training to support the development of
+
+core skills, for example, grant writing and review. This was
+
+consistently welcomed as invaluable in supporting
+
+career development.
+
+Some ECR participants suggested that there was a need
+
+to complement the range of training developed with the
+
+independent scientist in mind, with training focused on
+
+enabling effective collaborations. This reflected a rise in
+
+‘team science’ and a keenness to participate in
+
+international and interdisciplinary research programmes.
+
+Many of these themes have been highlighted for specific
+
+disciplines, for example in the Academy of Medical
+
+Sciences report  Improving recognition of team science
+
+contributions in biomedical research careers 27 .
+
+In addition to conducting excellent research and showing
+
+leadership in research, ECRs often lead small teams. Some
+
+participants perceived that leadership and associated
+
+management skills (such as financial management) were
+
+not sufficiently valued in the academic environment. This is
+
+an issue that the Society is starting to explore, and one
+
+that is discussed in the RCUK’s  Statement of Expectations
+
+for Research Fellowships and Future Research Leaders 28 .
+
+ECRs require leadership skills in multiple aspects of their
+
+role. Beyond their leadership in research, ECRs are often
+
+expected to lead in roles such as teaching and outreach.
+
+A wider and deeper approach to skills development would
+
+further support them in these broader responsibilities as a
+
+researcher, and in pursuing and progressing their careers
+
+along diverse paths. This would connect up different
+
+sectors and roles in the research system, and would help
+
+to put the hierarchies of academic research and career
+
+pathways in a wider context.
+
+> 26. https://royalsociety.org/topics-policy/publications/2017/consultation-response-second-research-excellence-framework-REF/
+> 27. https://acmedsci.ac.uk/file-download/38721-56defebabba91.pdf
+> 28. http://www.rcuk.ac.uk/documents/skills/fellowshipstatement-pdf/
+> Research culture: Embedding inclusive excellence 14
+
+Incentivising change
+
+Participants recognised the benefits of investing in the
+
+talents of ECRs for career trajectories both inside and
+
+outside of academia. But many also highlighted that the
+
+complex and interdependent nature of the relationship
+
+between the ECR and Principal Investigator (PI) means
+
+that it can be difficult to dedicate time to professional
+
+development. Support for postdocs may not have an
+
+immediate pay-off for PIs, who often rely on short-term
+
+grants and might only employ them for 12 months.
+
+It was suggested that ‘soft’ regulation could signal the
+
+importance of skill development and successfully shift
+
+behaviour. For example, postdoc contracts at Imperial
+
+College London include the right to 10 days training
+
+and development per year. This was thought to have
+
+empowered them to take up opportunities relevant to
+
+long-term career development, and created a helpful
+
+framing for conversations with their PIs. The introduction
+
+of the Teaching Excellence and Student Outcomes
+
+Framework (TEF) was cited as a signal about the
+
+importance of a skill set, teaching, which had led to
+
+institutions introducing formalised teacher education.
+
+The introduction of compulsory three month professional
+
+placements for BBSRC funded PhDs was also seen to be
+
+a positive step 29 .
+
+More generally, funders were identified as having an
+
+important role changing the research landscape and in
+
+incentivising uptake of activities beyond research. Ideas
+
+included providing opportunities for ECRs to apply for a
+
+grant extension (of weeks to several months) to participate
+
+in policy or public engagement work.
+
+Sustaining and supporting science
+
+Professional research service roles are essential to the
+
+whole research enterprise. They offer technical assistance
+
+and expertise, provide support with the ‘business’ aspects
+
+of conducting research, from finance to HR, and connect
+
+researchers to investors, industry and the public. Many
+
+participants felt that there were opportunities for better
+
+communication between researchers and these staff.
+
+Participants recognised the need for greater value to be
+
+placed on professional roles, such as technology transfer,
+
+enterprise or analysis, essential to support the delivery
+
+of excellent research, its reach and impact.
+
+With respect to technical staff, there is great diversity in
+
+backgrounds and responsibilities, ranging from animal
+
+research technicians to those with deep technical expertise
+
+in one analytical technique. Participants discussed how the
+
+boundary between what technical staff do and what
+
+researchers do is often blurred, and suggested that shared
+
+responsibilities should be more widely acknowledged.
+
+The ambition of the Technician Commitment, launched at
+
+the Higher Education Technicians Summit, is to ensure
+
+better visibility and recognition of the roles and
+
+contributions of technical staff 30 .
+
+# “It’s a prisoners dilemma – everyone could
+
+# benefit, but the short term disincentives
+
+# need to be bridged”
+
+Dr Richard Massey, Royal Society URF
+
+> 29. http://www.bbsrc.ac.uk/skills/investing-doctoral-training/pips/
+> 30. http://technicians.org.uk/techniciancommitment/
+> Research culture: Embedding inclusive excellence 15
+
+Driving cultural change
+
+This document contains new and consolidated thinking
+
+from the breadth and depth of the research community.
+
+The insights and aspirations collected here are a record of
+
+some of the concerns that currently exist, the areas where
+
+change is believed to be most urgently required, and
+
+emerging ideas about how change can be driven.
+
+The Society’s programme is building throughout the year
+
+towards a conference in Autumn 2018, which will bring
+
+together intertwined debates around research
+
+assessment, career progression, researcher development,
+
+research dissemination and research integrity. This
+
+conference will showcase initiatives and work across the
+
+research landscape to continue to create and improve the
+
+cultural conditions and environments in which excellent
+
+research and researchers can flourish.
+
+Example
+
+As part of a broader training package, the Royal
+
+Society provides opportunities for its funded
+
+researchers to gain policy skills and experience.
+
+Through initiatives such as the Policy Associate
+
+Scheme, which offers ECRs the opportunity to work in
+
+government on public policy issues; the policy primer,
+
+which equips ECRs with the basic knowledge and skills
+
+to interact effectively with decision makers; and the
+
+pairing scheme, which connects researchers to
+
+individuals in government, the Society is supporting
+
+individuals to move between these two worlds 31 .
+
+Example
+
+The Concordat to Support the Career Development of
+
+Researchers sets out clear standards that research staff
+
+can expect from the institution that employs them, as
+
+well as their responsibilities as researchers 32 . It is
+
+credited with having helped to develop the
+
+infrastructure that exists to support researchers in the
+
+UK higher education system. The Concordat is currently
+
+being reviewed to ensure it fulfils its intended purpose
+
+from 2018 onwards 33 .
+
+> Image
+> Lab Cab, Transporter Container (2026) by Julie Light,
+> from the the Museum of Extraordinary Objects.
+> 31. https://royalsociety.org/grants-schemes-awards/policy-secondment-programme/;
+> https://royalsociety.org/grants-schemes-awards/science-policy-primer/; https://royalsociety.org/grants-schemes-awards/pairing-scheme/
+> 32. https://www.vitae.ac.uk/policy/vitae-concordat-vitae-2011.pdf
+> 33. http://www.rcuk.ac.uk/skills/frameworks/review-of-the-concordat-to-support-the-career-development-of-researchers/
+> Research culture: Embedding inclusive excellence 16
+
+# Changing expectations
+
+# Changing expectations is an ambitious programme of work that
+
+# aims to understand how best to steward research culture through
+
+# a shifting research landscape.
+
+Through a national dialogue with the research community,
+
+by drawing on the experiences of our past and present,
+
+and exploring potential futures, Changing expectations
+
+will investigate the evolving relationship between the
+
+research community and the wider research system.
+
+Research culture: embedding inclusive excellence
+
+Across 20 events in 15 locations with over 1,000 people
+
+and 2,000 hours of face-to-face conversations the Royal
+
+Society has gathered together the ideas featured in this
+
+booklet on what a future research culture could look like.
+
+These ideas will be the platform upon which the Royal
+
+Society builds, working towards a landmark conference
+
+on research culture taking place in Autumn 2018.
+
+To find out more about the programme, visit:
+
+royalsociety.org/changingexpectations
+
+or email:  researchculture@royalsociety.org
+
+Share your ideas on the future of research culture:
+
+#SciCulture
+
+> Research culture: Embedding inclusive excellence 17
+
+The Royal Society is a self-governing Fellowship
+
+of many of the world’s most distinguished scientists
+
+drawn from all areas of science, engineering, and
+
+medicine. The Society’s fundamental purpose, as it
+
+has been since its foundation in 1660, is to recognise,
+
+promote, and support excellence in science and to
+
+encourage the development and use of science for
+
+the benefit of humanity.
+
+The Society’s strategic priorities emphasise its
+
+commitment to the highest quality science, to
+
+curiosity-driven research, and to the development
+
+and use of science for the benefit of society.
+
+These priorities are:
+
+• Promoting excellence in science
+
+• Supporting international collaboration
+
+• Demonstrating the importance of science to everyone
+
+For further information
+
+The Royal Society
+
+6 – 9 Carlton House Terrace
+
+London SW1Y 5AG
+
+T +44 20 7451 2500
+
+W royalsociety.org
