@@ -97,6 +97,15 @@ class StepiKoreanCollectionTests(unittest.TestCase):
         self.assertEqual(classify(1600, 8, True), "可检索文本")
         self.assertEqual(classify(0, 0, False), "官方目录无PDF正文")
 
+    def test_existing_korean_ocr_quality_survives_catalog_rebuild(self) -> None:
+        preserve = getattr(stepi, "preserve_ocr_quality", None)
+        self.assertIsNotNone(preserve, "OCR preservation helper is not implemented")
+        self.assertEqual(
+            preserve("可检索文本", "官方PDF已保存并完成韩文OCR"),
+            "韩文OCR可检索文本",
+        )
+        self.assertEqual(preserve("可检索文本", "官方PDF已保存并校验"), "可检索文本")
+
     def test_observation_window_and_id_are_stable(self) -> None:
         self.assertIsNotNone(stepi, "STEPI collector module is not implemented")
 

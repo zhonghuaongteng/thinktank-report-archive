@@ -103,6 +103,7 @@ def main() -> None:
         "106_第八批科技创新与中国比较全文候选复核台账.csv", "107_第八批科技创新与中国比较全文候选复核结果.md",
         "108_第九批科学体系与创新政策纵向全文候选复核台账.csv", "109_第九批科学体系与创新政策纵向全文候选复核结果.md",
         "110_第十批OECD科学体系与科研机制纵向全文候选复核台账.csv", "111_第十批OECD科学体系与科研机制纵向全文候选复核结果.md",
+        "112_STEPI韩文扫描件OCR补全台账.csv", "113_STEPI韩文扫描件OCR补全结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -342,7 +343,8 @@ def main() -> None:
     assert all(r["机构观点等级"] == "作者讨论论文" for r in nistep_catalog if r["报告类型"] == "讨论论文")
     stepi_assets = rows(root / "60_STEPI韩文科技与中国专题增补台账.csv")
     assert len(stepi_assets) == 518, len(stepi_assets)
-    assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 481
+    assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 476
+    assert sum(r["本地状态"] == "官方PDF已保存并完成韩文OCR" for r in stepi_assets) == 5
     assert sum(r["本地状态"] == "官方目录无PDF" for r in stepi_assets) == 37
     assert not any(r["本地状态"] == "获取失败" for r in stepi_assets)
     assert sum(r["韩文报告类型"] == "정책연구" for r in stepi_assets) == 296
@@ -355,15 +357,24 @@ def main() -> None:
     assert sum(r["科技关联层级"] == "核心科技直接材料" for r in stepi_assets) == 66
     assert sum("中国科技与国际比较" in r["主题标签"] for r in stepi_assets) == 104
     assert sum(r["文本质量"] == "可检索文本" for r in stepi_assets) == 476
-    assert sum(r["文本质量"] == "图像型PDF，OCR待补" for r in stepi_assets) == 5
+    assert sum(r["文本质量"] == "韩文OCR可检索文本" for r in stepi_assets) == 5
+    assert sum(r["文本质量"] == "图像型PDF，OCR待补" for r in stepi_assets) == 0
     assert sum(r["文本质量"] == "官方目录无PDF正文" for r in stepi_assets) == 37
     assert all(
         r["本地原始资产"] and Path(r["本地原始资产"]).exists()
         and r["本地文本"] and Path(r["本地文本"]).exists()
         and r["本地切片"] and Path(r["本地切片"]).exists()
         and len(r["SHA256"]) == 64 and int(r["PDF页数"]) > 0
-        for r in stepi_assets if r["本地状态"] == "官方PDF已保存并校验"
+        for r in stepi_assets
+        if r["本地状态"] in {"官方PDF已保存并校验", "官方PDF已保存并完成韩文OCR"}
     )
+    stepi_ocr = rows(root / "112_STEPI韩文扫描件OCR补全台账.csv")
+    assert len(stepi_ocr) == 5
+    assert {r["报告ID"] for r in stepi_ocr} == {
+        r["报告ID"] for r in stepi_assets if r["文本质量"] == "韩文OCR可检索文本"
+    }
+    assert sum(int(r["PDF页数"]) for r in stepi_ocr) == 45
+    assert sum(int(r["OCR字符数"]) for r in stepi_ocr) == 42085
     assert all(
         not r["本地原始资产"] and not r["SHA256"] and not r["官方PDF"]
         for r in stepi_assets if r["本地状态"] == "官方目录无PDF"
@@ -669,6 +680,8 @@ def main() -> None:
         ("109_第九批科学体系与创新政策纵向全文候选复核结果.md", "国际科技智库观点演变_第九批科学体系与创新政策纵向全文候选复核结果.md"),
         ("110_第十批OECD科学体系与科研机制纵向全文候选复核台账.csv", "国际科技智库观点演变_第十批OECD科学体系与科研机制纵向全文候选复核台账.csv"),
         ("111_第十批OECD科学体系与科研机制纵向全文候选复核结果.md", "国际科技智库观点演变_第十批OECD科学体系与科研机制纵向全文候选复核结果.md"),
+        ("112_STEPI韩文扫描件OCR补全台账.csv", "国际科技智库观点演变_STEPI韩文扫描件OCR补全台账.csv"),
+        ("113_STEPI韩文扫描件OCR补全结果.md", "国际科技智库观点演变_STEPI韩文扫描件OCR补全结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1

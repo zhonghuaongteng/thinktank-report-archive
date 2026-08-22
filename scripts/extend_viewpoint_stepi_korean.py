@@ -152,6 +152,12 @@ def classify_text_quality(chars: int, pages: int, has_asset: bool) -> str:
     return "可检索文本"
 
 
+def preserve_ocr_quality(classified: str, status: str) -> str:
+    if status == "官方PDF已保存并完成韩文OCR":
+        return "韩文OCR可检索文本"
+    return classified
+
+
 def observation_window(published: str) -> str:
     year = int(published[:4])
     return "W1" if year <= 2018 else "W2" if year <= 2021 else "W3"
@@ -375,7 +381,9 @@ def main() -> int:
 
         tech_layer = classify_technology_scope(entry.title_ko)
         themes = classify_themes(entry.title_ko, evidence_text)
-        text_quality = classify_text_quality(chars, pages, bool(local_asset))
+        text_quality = preserve_ocr_quality(
+            classify_text_quality(chars, pages, bool(local_asset)), status
+        )
         catalog_row = {
             "报告ID": report_id,
             "机构ID": "stepi",
@@ -386,9 +394,10 @@ def main() -> int:
             "报告名称": entry.title_ko,
             "报告类型": f"STEPI {entry.report_type}",
             "原文链接": landing_url(entry),
-            "本地路径": "",
+            "本地路径": local_text if text_quality == "韩文OCR可检索文本" else "",
             "正文完整度": (
                 "官方图像型PDF已保存，OCR待补" if text_quality == "图像型PDF，OCR待补"
+                else "本地韩文OCR全文已保存" if text_quality == "韩文OCR可检索文本"
                 else "本地韩文原文已保存" if local_asset
                 else "官方目录元数据，正文待补"
             ),
@@ -473,7 +482,7 @@ def main() -> int:
         f"- 政策研究：{categories['정책연구']}项；调查研究：{categories['조사연구']}项；政策资料：{categories['정책자료']}项；其他研究：{categories['기타연구']}项。",
         f"- W1：{windows['W1']}项；W2：{windows['W2']}项；W3：{windows['W3']}项。",
         f"- 核心科技直接材料：{core_count}项；中国科技与国际比较材料：{china_count}项。",
-        f"- 可检索PDF正文：{statuses['官方PDF已保存并校验'] - image_pdf_count}项；图像型PDF、OCR待补：{image_pdf_count}项。",
+        f"- 可检索PDF正文：{statuses['官方PDF已保存并校验'] - image_pdf_count + statuses['官方PDF已保存并完成韩文OCR']}项；其中韩文OCR补全：{statuses['官方PDF已保存并完成韩文OCR']}项；图像型PDF、OCR待补：{image_pdf_count}项。",
         f"- {result_summary(statuses)}",
         f"- 报告总目录现为：{len(merged)}项。", "",
         "## 纳入边界", "",
