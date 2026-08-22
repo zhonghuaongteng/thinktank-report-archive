@@ -5,14 +5,17 @@ import unittest
 from pathlib import Path
 
 from scripts.build_viewpoint_node_theme_gap_matrix import (
+    COVERAGE_THEMES,
     STRATEGIC_THEMES,
     china_relevance,
     candidate_priority_score,
     classify_themes,
     evidence_status,
+    fulltext_axis_eligible,
     is_security_dominant,
     node_for_date,
     priority_score,
+    tier_for,
 )
 
 
@@ -53,6 +56,10 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertFalse(china_relevance(row, {"人工智能、数据与数字技术"}))
         self.assertIn("T2_技术创新与关键技术", themes)
 
+    def test_prc_is_a_direct_china_signal(self) -> None:
+        row = {"报告名称": "The PRC research ecosystem", "示踪问题": "", "预期用途": "", "样本角色": ""}
+        self.assertTrue(china_relevance(row, set()))
+
     def test_security_policy_basic_study_is_not_a_science_priority(self) -> None:
         row = {
             "报告名称": "국가R&D 보안정책 설계를 위한 기초연구",
@@ -61,7 +68,20 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
             "样本角色": "",
         }
         title_themes = classify_themes(row, set())
-        self.assertTrue(is_security_dominant(title_themes))
+        self.assertFalse(is_security_dominant(title_themes))
+        self.assertTrue(fulltext_axis_eligible(row["报告名称"], title_themes))
+
+    def test_military_ai_title_stays_out_of_fulltext_queue(self) -> None:
+        title = "China's Military AI Roadblocks"
+        themes = classify_themes({"报告名称": title, "示踪问题": ""}, set())
+        self.assertIn("T2_技术创新与关键技术", themes)
+        self.assertIn("T7_安全供应链与治理边界", themes)
+        self.assertFalse(fulltext_axis_eligible(title, themes))
+
+    def test_security_context_can_enter_when_innovation_mechanism_is_explicit(self) -> None:
+        title = "Research security and the national innovation system"
+        themes = classify_themes({"报告名称": title, "示踪问题": ""}, set())
+        self.assertTrue(fulltext_axis_eligible(title, themes))
 
     def test_evidence_status_distinguishes_three_layers(self) -> None:
         self.assertEqual(evidence_status(3, 0, 0, "A"), "仅目录候选")
@@ -88,8 +108,29 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         )
         self.assertGreaterEqual(score, 20)
 
-    def test_seven_strategic_themes_are_stable(self) -> None:
+    def test_security_context_is_downgraded_below_fulltext_threshold(self) -> None:
+        score = candidate_priority_score(
+            "A",
+            "N4",
+            {"T1_科学体系与基础研究", "T7_安全供应链与治理边界"},
+            False,
+            "P2-STI-baseline",
+            [17],
+            security_context=True,
+        )
+        self.assertEqual(score, 0)
+
+    def test_six_science_innovation_axes_and_one_context_theme_are_stable(self) -> None:
         self.assertEqual(len(STRATEGIC_THEMES), 7)
+        self.assertEqual(len(COVERAGE_THEMES), 6)
+        self.assertNotIn("T7_安全供应链与治理边界", COVERAGE_THEMES)
+
+    def test_institution_tiers_follow_science_innovation_fit(self) -> None:
+        self.assertEqual(tier_for("fraunhofer-isi"), "A")
+        self.assertEqual(tier_for("ifp"), "B")
+        self.assertEqual(tier_for("stanford-hai"), "B")
+        self.assertEqual(tier_for("rand"), "C")
+        self.assertEqual(tier_for("csis"), "C")
 
 
 if __name__ == "__main__":

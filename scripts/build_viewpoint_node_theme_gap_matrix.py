@@ -12,13 +12,13 @@ from pathlib import Path
 NODE_LABELS = {
     "N1": "2016—2018 科学体系与开放创新基线",
     "N2": "2019—2020 使命导向与技术创新能力",
-    "N3": "2021—2022 科研体系、产业转化与韧性叠加",
+    "N3": "2021—2022 科研体系与产业转化能力强化",
     "N4": "2023—2024 战略技术、AI与创新政策重组",
-    "N5": "2025—2026 科学能力、技术应用与合作边界",
+    "N5": "2025—2026 科学能力、技术应用与全球协作重构",
 }
 
 CHINA_PATTERN = re.compile(
-    r"中国|中國|China|Chinese|중국|미중|한중|中美|中欧|中歐|对华|對華|涉华|涉華",
+    r"中国|中國|China|Chinese|\bPRC\b|People['’]s Republic of China|중국|미중|한중|中美|中欧|中歐|对华|對華|涉华|涉華",
     re.I,
 )
 
@@ -69,25 +69,37 @@ STRATEGIC_THEMES = {
         r"研究安全|科研安全|연구안보|보안정책|research security|供应链|供應鏈|공급망|サプライチェーン|supply chain|"
         r"经济安全|經濟安全|경제안보|economic security|export control|出口管制|輸出管理|수출통제|"
         r"韧性|韌性|resilien|脱钩|脫鉤|decoupl|디커플링|投资审查|投資審査|"
-        r"军民融合|軍民融合|민군|国防|國防|국방|防衛|defen[cs]e|双用途|兩用|dual[- ]use|"
+        r"军民融合|軍民融合|민군|国防|國防|국방|防衛|defen[cs]e|military|双用途|兩用|dual[- ]use|"
         r"数字治理|數字治理|digital governance|网络安全|網絡安全|cyber|사이버|サイバー|"
         r"标准|標準|표준|standard|规制|規制|regulation|治理边界|governance boundary",
         re.I,
     ),
 }
 
+# 安全、供应链与治理只保留为解释创新条件变化的语境标签，不构成独立覆盖目标。
+COVERAGE_THEMES = tuple(theme for theme in STRATEGIC_THEMES if not theme.startswith("T7_"))
+SECURITY_CONTEXT_THEME = "T7_安全供应链与治理边界"
+SCIENCE_INNOVATION_MECHANISM = re.compile(
+    r"基础研究|基礎研究|기초연구|basic research|fundamental research|科学体系|科學體系|science system|"
+    r"research ecosystem|research infrastructure|研究开发|研究開発|研发|研發|연구개발|(?<![A-Za-z])R&D(?![A-Za-z])|"
+    r"innovation|创新|創新|혁신|technology development|technological development|"
+    r"科研组织|科研組織|research organization|大学|大學|university|talent|人才|人材|인재|"
+    r"funding|资助|資助|产业创新|產業創新|industrial innovation|commerciali[sz]|技术转移|技術移転",
+    re.I,
+)
+
 FAMILY_ALIASES = {"merics-tech": "merics"}
 
-TIER_A = {"oecd-sti", "cset", "merics", "jst-crds", "nistep", "stepi", "kistep"}
+TIER_A = {
+    "oecd-sti", "cset", "merics", "jst-crds", "nistep", "stepi", "kistep", "fraunhofer-isi",
+}
 TIER_B = {
-    "atlantic-council-geotech",
     "belfer",
-    "rand",
-    "csis",
-    "aspi",
     "itif",
     "bruegel",
-    "nbr",
+    "ifp",
+    "stanford-hai",
+    "us-ostp",
 }
 
 TIER_LABEL = {
@@ -109,7 +121,12 @@ THEME_WEIGHT = {
 NODE_WEIGHT = {"N1": 2, "N2": 4, "N3": 4, "N4": 4, "N5": 3}
 TIER_WEIGHT = {"A": 5, "B": 3, "C": 0}
 NODE_END_YEAR = {"N1": 2018, "N2": 2020, "N3": 2022, "N4": 2024, "N5": 2026}
-KNOWN_PROJECT_START = {"cset": 2019, "atlantic-council-geotech": 2020}
+KNOWN_PROJECT_START = {
+    "cset": 2019,
+    "atlantic-council-geotech": 2020,
+    "ifp": 2021,
+    "stanford-hai": 2019,
+}
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -174,14 +191,16 @@ def china_relevance(row: dict[str, str], index_tags: set[str] | None = None) -> 
 
 
 def is_security_dominant(themes: set[str]) -> bool:
-    innovation_themes = {
-        "T2_技术创新与关键技术",
-        "T3_创新政策与研发治理",
-        "T4_人才大学与科研组织",
-        "T5_产业创新转化与区域生态",
-        "T6_国际合作开放科学与比较",
-    }
-    return "T7_安全供应链与治理边界" in themes and not bool(themes & innovation_themes)
+    return SECURITY_CONTEXT_THEME in themes and not bool(themes & set(COVERAGE_THEMES))
+
+
+def fulltext_axis_eligible(title: str, themes: set[str]) -> bool:
+    """Keep security-led titles in the light catalog unless they expose an STI mechanism."""
+    if not themes.intersection(COVERAGE_THEMES):
+        return False
+    if SECURITY_CONTEXT_THEME not in themes:
+        return True
+    return bool(SCIENCE_INNOVATION_MECHANISM.search(title))
 
 
 def evidence_status(catalog_count: int, asset_count: int, searchable_count: int, tier: str) -> str:
@@ -281,20 +300,25 @@ def candidate_priority_score(
     china: bool,
     priority: str,
     cell_scores: list[int],
+    security_context: bool = False,
 ) -> int:
     score = max(cell_scores, default=0)
-    if not china:
-        return score
-    priority_points = 5 if priority.startswith("P0") else 2 if priority.startswith("P1") else 0
-    direct_score = (
-        TIER_WEIGHT[tier]
-        + NODE_WEIGHT[node]
-        + max((THEME_WEIGHT[theme] for theme in themes), default=0)
-        + 4
-        + priority_points
-        + min(2, len(themes))
-    )
-    return max(score, direct_score)
+    if china:
+        priority_points = 5 if priority.startswith("P0") else 2 if priority.startswith("P1") else 0
+        direct_score = (
+            TIER_WEIGHT[tier]
+            + NODE_WEIGHT[node]
+            + max((THEME_WEIGHT[theme] for theme in themes), default=0)
+            + 4
+            + priority_points
+            + min(2, len(themes))
+        )
+        score = max(score, direct_score)
+    if security_context:
+        score -= 6
+        if score < 14:
+            return 0
+    return score
 
 
 def build_outputs(
@@ -334,7 +358,7 @@ def build_outputs(
     for family in sorted(families):
         tier = tier_for(family)
         for node, node_label in NODE_LABELS.items():
-            for theme in STRATEGIC_THEMES:
+            for theme in COVERAGE_THEMES:
                 items = buckets.get((family, node, theme), [])
                 catalog_ids = {item["row"]["报告ID"] for item in items}
                 asset_ids = {item["row"]["报告ID"] for item in items if item["asset"]}
@@ -388,7 +412,7 @@ def build_outputs(
             {"报告名称": row["报告名称"], "示踪问题": ""},
             set(),
         )
-        if is_security_dominant(title_themes) and not report["china"]:
+        if is_security_dominant(title_themes) or not fulltext_axis_eligible(row["报告名称"], title_themes):
             continue
         cell_scores = [
             priority_score(
@@ -401,6 +425,7 @@ def build_outputs(
                 len({item["row"]["报告ID"] for item in buckets[(family, report["node"], theme)] if item["china"]}),
             )
             for theme in themes
+            if theme in COVERAGE_THEMES
         ]
         score = candidate_priority_score(
             tier,
@@ -409,6 +434,7 @@ def build_outputs(
             bool(report["china"]),
             row.get("优先级", ""),
             cell_scores,
+            SECURITY_CONTEXT_THEME in title_themes,
         )
         if not score:
             continue
@@ -503,7 +529,7 @@ def build_outputs(
         "# 机构—转向节点—战略主题覆盖缺口结果",
         "",
         f"- 统一总目录：{len(catalog)}条。",
-        f"- 纳入矩阵的机构家族：{len(families)}个；节点：{len(NODE_LABELS)}个；战略主题：{len(STRATEGIC_THEMES)}条。",
+        f"- 纳入矩阵的机构家族：{len(families)}个；节点：{len(NODE_LABELS)}个；科学技术创新主轴：{len(COVERAGE_THEMES)}条。",
         f"- 覆盖矩阵单元：{len(matrix)}个。",
         f"- 证据状态：充分{status_counts['充分']}个、可用{status_counts['可用']}个、原文待文本化{status_counts['原文待文本化']}个、仅目录候选{status_counts['仅目录候选']}个、空白{status_counts['空白']}个。",
         f"- 定点补源候选：{len(queue)}份；每机构最多8份、每机构每节点最多3份。",
@@ -524,7 +550,7 @@ def build_outputs(
             "",
             "## 使用边界",
             "",
-            "矩阵以科学体系、基础研究、技术创新、创新政策、人才与科研组织、产业转化及国际合作为主轴；安全、供应链与治理边界只作为解释创新条件变化的辅助主题。中国关联作为独立交叉维度统计。目录命中只表示题名、关键词或既有主题索引显示该机构关注相关议题。机构立场、因果解释和政策主张必须回查本地全文、原句与页码。‘空白’优先触发轻量目录扩展；‘仅目录候选’才可能触发精选全文补取；‘充分’单元停止扩张并转入观点编码。",
+            "矩阵只计算科学体系与基础研究、技术创新与关键技术、创新政策与研发治理、人才大学与科研组织、产业创新转化与区域生态、国际合作开放科学与比较六条主轴。安全、供应链与治理仅保留为语境标签，不生成独立覆盖缺口，也不单独触发全文补取；只有题名明确涉及科研投入、创新体系、人才组织、技术开发或成果转化机制时，相关材料才可进入全文候选。中国关联作为独立交叉维度统计。目录命中只表示题名、关键词或既有主题索引显示该机构关注相关议题。机构立场、因果解释和政策主张必须回查本地全文、原句与页码。‘空白’优先触发轻量目录扩展；‘仅目录候选’才可能触发精选全文补取；‘充分’单元停止扩张并转入观点编码。",
             "",
             "定点队列是下载前复核清单。候选仍须检查官方落地页、附件类型、重复度和对战略转向证据链的增量，不能把队列自动解释为必须全部下载。",
         ]

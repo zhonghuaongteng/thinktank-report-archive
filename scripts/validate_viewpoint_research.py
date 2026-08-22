@@ -38,8 +38,9 @@ def expected_catalog_size(
     nistep_asset_count: int = 0,
     stepi_asset_count: int = 0,
     kistep_asset_count: int = 0,
+    light_catalog_count: int = 0,
 ) -> int:
-    return seed_count + catalog_asset_count + early_asset_count + cset_asset_count + atlantic_asset_count + belfer_asset_count + nbr_asset_count + merics_asset_count + bruegel_asset_count + crds_asset_count + nistep_asset_count + stepi_asset_count + kistep_asset_count
+    return seed_count + catalog_asset_count + early_asset_count + cset_asset_count + atlantic_asset_count + belfer_asset_count + nbr_asset_count + merics_asset_count + bruegel_asset_count + crds_asset_count + nistep_asset_count + stepi_asset_count + kistep_asset_count + light_catalog_count
 
 
 def main() -> None:
@@ -82,6 +83,12 @@ def main() -> None:
         "69_机构节点主题覆盖缺口矩阵.csv", "70_定点补源优先队列.csv",
         "71_覆盖缺口结果.md", "72_轻量目录扩展优先队列.csv",
         "73_STEPI中国先进技术连续序列附卷台账.csv", "74_STEPI中国先进技术连续序列结果.md",
+        "75_CSET_2023-2024正式报告轻量目录.csv", "76_CSET_2023-2024正式报告轻量目录结果.md",
+        "77_OECD_STI正式系列轻量目录.csv", "78_OECD_STI正式系列轻量目录结果.md",
+        "79_ITIF中国先进产业创新系列轻量目录.csv", "80_ITIF中国先进产业创新系列轻量目录结果.md",
+        "81_科学技术创新主轴采集规则.md",
+        "82_ITIF科学技术创新节点轻量目录.csv", "83_ITIF科学技术创新节点轻量目录结果.md",
+        "84_Fraunhofer_ISI创新系统政策分析轻量目录.csv", "85_Fraunhofer_ISI创新系统政策分析轻量目录结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -137,7 +144,7 @@ def main() -> None:
     assert cset_matrix
     assert {r["材料类型"] for r in cset_topics} == {"CSET原创研究报告", "中国科技政策英译", "涉华科技政策证词"}
     cset_catalog = [r for r in catalog if r["报告ID"].startswith("C-CSET-")]
-    assert len(cset_catalog) == len(cset_assets)
+    assert {r["报告ID"] for r in cset_assets}.issubset({r["报告ID"] for r in cset_catalog})
     assert all(r["机构观点等级"] == "翻译材料，不代表机构观点" for r in cset_catalog if r["报告类型"] == "中国科技政策英译")
     atlantic_assets = rows(root / "31_Atlantic_Council涉华科技专题增补台账.csv")
     assert len(atlantic_assets) == 95, len(atlantic_assets)
@@ -363,10 +370,15 @@ def main() -> None:
     gap_matrix = rows(root / "69_机构节点主题覆盖缺口矩阵.csv")
     targeted_queue = rows(root / "70_定点补源优先队列.csv")
     catalog_queue = rows(root / "72_轻量目录扩展优先队列.csv")
-    assert len(gap_matrix) == 840
-    assert len(targeted_queue) == 8
-    assert len(catalog_queue) == 19
-    assert all(r["机构ID"] == "kistep" for r in targeted_queue)
+    assert len(gap_matrix) == 720
+    assert {r["战略主题"] for r in gap_matrix} == {
+        "T1_科学体系与基础研究", "T2_技术创新与关键技术", "T3_创新政策与研发治理",
+        "T4_人才大学与科研组织", "T5_产业创新转化与区域生态", "T6_国际合作开放科学与比较",
+    }
+    assert len(targeted_queue) == 28
+    assert len(catalog_queue) == 10
+    assert not any(r["战略主题"] == "T7_安全供应链与治理边界" for r in gap_matrix)
+    assert not any(r["报告名称"] == "China’s Military AI Roadblocks" for r in targeted_queue)
     stepi_catalog = [r for r in catalog if r["报告ID"].startswith("C-STEPI-")]
     assert len(stepi_catalog) == len(stepi_assets)
     assert all(r["机构观点等级"] == "机构正式研究" for r in stepi_catalog)
@@ -397,6 +409,22 @@ def main() -> None:
     kistep_catalog = [r for r in catalog if r["报告ID"].startswith("C-KISTEP-")]
     assert len(kistep_catalog) == len(kistep_assets)
     assert all(r["机构观点等级"] == "机构正式研究" for r in kistep_catalog)
+    cset_light = rows(root / "75_CSET_2023-2024正式报告轻量目录.csv")
+    oecd_light = rows(root / "77_OECD_STI正式系列轻量目录.csv")
+    itif_series_light = rows(root / "79_ITIF中国先进产业创新系列轻量目录.csv")
+    itif_node_light = rows(root / "82_ITIF科学技术创新节点轻量目录.csv")
+    fraunhofer_light = rows(root / "84_Fraunhofer_ISI创新系统政策分析轻量目录.csv")
+    assert len(cset_light) == 60
+    assert len(oecd_light) == 445
+    assert len({r["统一目录报告ID"] for r in oecd_light}) == 445
+    assert len(itif_series_light) == 10
+    assert len(itif_node_light) == 5
+    assert len(fraunhofer_light) == 47
+    assert sum(r["统一目录报告ID"].startswith("C-FRAUNHOFER-ISI-DP-") for r in fraunhofer_light) == 45
+    assert all(r["全文策略"].startswith("不自动下载") for ledger in (cset_light, oecd_light, itif_series_light, itif_node_light, fraunhofer_light) for r in ledger)
+    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 720
+    assert len(rows(root / "70_定点补源优先队列.csv")) == 28
+    assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 10
     assert len(catalog) == expected_catalog_size(
         seed_count=len(seeds),
         catalog_asset_count=len(catalog_assets),
@@ -411,6 +439,7 @@ def main() -> None:
         nistep_asset_count=len(nistep_catalog),
         stepi_asset_count=len(stepi_catalog),
         kistep_asset_count=len(kistep_catalog),
+        light_catalog_count=60 + 443 + 10 + 5 + 45,
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -519,6 +548,17 @@ def main() -> None:
         ("72_轻量目录扩展优先队列.csv", "国际科技智库观点演变_轻量目录扩展优先队列.csv"),
         ("73_STEPI中国先进技术连续序列附卷台账.csv", "国际科技智库观点演变_STEPI中国先进技术连续序列附卷台账.csv"),
         ("74_STEPI中国先进技术连续序列结果.md", "国际科技智库观点演变_STEPI中国先进技术连续序列结果.md"),
+        ("75_CSET_2023-2024正式报告轻量目录.csv", "国际科技智库观点演变_CSET_2023-2024正式报告轻量目录.csv"),
+        ("76_CSET_2023-2024正式报告轻量目录结果.md", "国际科技智库观点演变_CSET_2023-2024正式报告轻量目录结果.md"),
+        ("77_OECD_STI正式系列轻量目录.csv", "国际科技智库观点演变_OECD_STI正式系列轻量目录.csv"),
+        ("78_OECD_STI正式系列轻量目录结果.md", "国际科技智库观点演变_OECD_STI正式系列轻量目录结果.md"),
+        ("79_ITIF中国先进产业创新系列轻量目录.csv", "国际科技智库观点演变_ITIF中国先进产业创新系列轻量目录.csv"),
+        ("80_ITIF中国先进产业创新系列轻量目录结果.md", "国际科技智库观点演变_ITIF中国先进产业创新系列轻量目录结果.md"),
+        ("81_科学技术创新主轴采集规则.md", "国际科技智库观点演变_科学技术创新主轴采集规则.md"),
+        ("82_ITIF科学技术创新节点轻量目录.csv", "国际科技智库观点演变_ITIF科学技术创新节点轻量目录.csv"),
+        ("83_ITIF科学技术创新节点轻量目录结果.md", "国际科技智库观点演变_ITIF科学技术创新节点轻量目录结果.md"),
+        ("84_Fraunhofer_ISI创新系统政策分析轻量目录.csv", "国际科技智库观点演变_Fraunhofer_ISI创新系统政策分析轻量目录.csv"),
+        ("85_Fraunhofer_ISI创新系统政策分析轻量目录结果.md", "国际科技智库观点演变_Fraunhofer_ISI创新系统政策分析轻量目录结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
