@@ -97,6 +97,7 @@ TIER_A = {
     "nsf-nsb-sei", "eu-srip", "eu-eis", "unesco-science", "unctad-tir", "wipo-wipr", "nesta", "rathenau",
     "eu-stoa",
     "eu-jrc",
+    "de-efi",
 }
 TIER_B = {
     "belfer",
@@ -135,7 +136,7 @@ KNOWN_PROJECT_START = {
     "stanford-hai": 2019,
     "csis-rai": 2021,
 }
-NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1, "eu-eis": 1, "unesco-science": 1, "unctad-tir": 1, "wipo-wipr": 1, "nesta": 1, "rathenau": 1, "ifp": 1, "eu-stoa": 1, "eu-jrc": 1}
+NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1, "eu-eis": 1, "unesco-science": 1, "unctad-tir": 1, "wipo-wipr": 1, "nesta": 1, "rathenau": 1, "ifp": 1, "eu-stoa": 1, "eu-jrc": 1, "de-efi": 1}
 CATALOG_NODE_EXEMPTIONS = {("unctad-tir", "N2")}
 KNOWN_SERIES_NEXT_RELEASE = {"eu-srip": "2026-10-01"}
 
@@ -233,6 +234,7 @@ def fulltext_queue_suppressed(row: dict[str, str]) -> bool:
         or "CSIS RAI跨期精选已完成；其余Report/Article保留轻量目录" in status
         or "STOA跨期精选已完成；其余成果保留轻量目录" in status
         or "JRC跨期精选已完成；其余成果保留轻量目录" in status
+        or "EFI跨期精选已完成；其余成果保留轻量目录" in status
     )
 
 
