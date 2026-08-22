@@ -12,6 +12,7 @@ from scripts.build_viewpoint_node_theme_gap_matrix import (
     classify_themes,
     evidence_status,
     fulltext_axis_eligible,
+    fulltext_queue_suppressed,
     is_security_dominant,
     node_for_date,
     priority_score,
@@ -96,6 +97,10 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         innovation_themes = classify_themes({"报告名称": innovation_title, "示踪问题": ""}, set())
         self.assertTrue(fulltext_axis_eligible(innovation_title, innovation_themes))
 
+    def test_sampled_annual_series_stays_out_of_fulltext_queue(self) -> None:
+        self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；连续系列已完成跨期抽样"}))
+        self.assertFalse(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；未下载全文"}))
+
     def test_evidence_status_distinguishes_three_layers(self) -> None:
         self.assertEqual(evidence_status(3, 0, 0, "A"), "仅目录候选")
         self.assertEqual(evidence_status(3, 1, 0, "A"), "原文待文本化")
@@ -140,6 +145,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
 
     def test_institution_tiers_follow_science_innovation_fit(self) -> None:
         self.assertEqual(tier_for("fraunhofer-isi"), "A")
+        self.assertEqual(tier_for("wipo-gii"), "A")
         self.assertEqual(tier_for("ifp"), "B")
         self.assertEqual(tier_for("stanford-hai"), "B")
         self.assertEqual(tier_for("rand"), "C")

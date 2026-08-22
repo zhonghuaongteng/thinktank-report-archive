@@ -92,7 +92,7 @@ SCIENCE_INNOVATION_MECHANISM = re.compile(
 FAMILY_ALIASES = {"merics-tech": "merics"}
 
 TIER_A = {
-    "oecd-sti", "cset", "merics", "jst-crds", "nistep", "stepi", "kistep", "fraunhofer-isi",
+    "oecd-sti", "cset", "merics", "jst-crds", "nistep", "stepi", "kistep", "fraunhofer-isi", "wipo-gii",
 }
 TIER_B = {
     "belfer",
@@ -128,6 +128,7 @@ KNOWN_PROJECT_START = {
     "ifp": 2021,
     "stanford-hai": 2019,
 }
+NODE_CATALOG_MINIMUM = {"wipo-gii": 1}
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -202,6 +203,10 @@ def fulltext_axis_eligible(title: str, themes: set[str]) -> bool:
     if SECURITY_CONTEXT_THEME not in themes:
         return True
     return bool(SCIENCE_INNOVATION_MECHANISM.search(title))
+
+
+def fulltext_queue_suppressed(row: dict[str, str]) -> bool:
+    return "连续系列已完成跨期抽样" in row.get("原始资产状态", "")
 
 
 def evidence_status(catalog_count: int, asset_count: int, searchable_count: int, tier: str) -> str:
@@ -406,7 +411,7 @@ def build_outputs(
         row = report["row"]
         family = report["family"]
         tier = tier_for(family)
-        if tier == "C" or report["asset"]:
+        if tier == "C" or report["asset"] or fulltext_queue_suppressed(row):
             continue
         themes = report["themes"]
         title_themes = classify_themes(
@@ -487,7 +492,7 @@ def build_outputs(
         tier = tier_for(family)
         if tier == "C":
             continue
-        minimum = 5 if tier == "A" else 3
+        minimum = NODE_CATALOG_MINIMUM.get(family, 5 if tier == "A" else 3)
         for node, label in NODE_LABELS.items():
             start_year = KNOWN_PROJECT_START.get(family, 0)
             if start_year and NODE_END_YEAR[node] < start_year:
