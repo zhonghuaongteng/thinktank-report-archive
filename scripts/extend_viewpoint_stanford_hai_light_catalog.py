@@ -54,6 +54,22 @@ def annual(year: int) -> HaiItem:
 
 ITEMS = tuple(annual(year) for year in (2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026)) + (
     HaiItem(
+        "2020-01-01", "Stanford HAI 2019–2020 Annual Report",
+        "https://hai.stanford.edu/sites/default/files/2021-02/hai-2020-annual-report_1.pdf",
+        "机构早期研究计划、跨学科组织与公共算力活动记录",
+        ("科学体系与基础研究", "技术创新与关键技术", "创新政策与研发治理", "人才大学与科研组织", "产业创新转化与区域生态", "国际合作开放科学与比较"),
+        "含全球AI研究和机构活动；具体中国内容须回查正文",
+        "学年；统一目录以2020年1月1日作排序占位，不代表实际发布日期",
+        "https://hai.stanford.edu/sites/default/files/2021-02/hai-2020-annual-report_1.pdf",
+    ),
+    HaiItem(
+        "2020-09-01", "AI's Promise and Peril for the U.S. Government",
+        "https://hai.stanford.edu/policy/policy-brief-ais-promise-and-peril-us-government",
+        "公共部门AI应用、内部技术能力与政府创新",
+        ("技术创新与关键技术", "创新政策与研发治理", "人才大学与科研组织", "产业创新转化与区域生态"),
+        "否；美国公共部门技术创新样本",
+    ),
+    HaiItem(
         "2021-05-01", "Policy Strategies for Harnessing the Productivity Potential of AI in the U.S.",
         "https://hai.stanford.edu/policy/policy-brief-policy-strategies-harnessing-productivity-potential-ai-us",
         "AI通用技术、互补创新与生产率机制",
@@ -211,7 +227,7 @@ def main() -> int:
     china_count = sum("中国科技横向维度" in item.themes for item in ITEMS)
     result = f"""# Stanford HAI科学技术创新轻量目录增补结果
 
-- 正式年度报告或政策研究：{len(ITEMS)}项；其中AI Index连续年度报告{annual_count}项。
+- 正式年度报告或政策研究：{len(ITEMS)}项；其中AI Index连续年度报告{annual_count}项，另含2019—2020机构年度报告与公共部门AI政策简报。
 - 与既有统一目录关联：{linked}项；新增统一总目录：{added}项。
 - 中国横向维度：{china_count}项；本轮未下载正文。
 

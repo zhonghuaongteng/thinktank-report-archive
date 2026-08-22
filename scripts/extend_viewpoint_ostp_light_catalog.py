@@ -148,6 +148,30 @@ BIDEN_ITEMS = (
 )
 
 
+CURRENT_ITEMS = (
+    OstpItem(
+        "2025-06-23",
+        "Agency Guidance for Implementing Gold Standard Science in the Conduct & Management of Scientific Activities",
+        "https://www.whitehouse.gov/wp-content/uploads/2025/03/OSTP-Guidance-for-GSS-June-2025.pdf",
+        "https://www.whitehouse.gov/ostp/information-resources/",
+        "2025—2026现行OSTP官方资源",
+        "联邦科学活动的研究设计、同行评议、可重复性与公开传播规范",
+        ("科学体系与基础研究", "创新政策与研发治理", "人才大学与科研组织", "国际合作开放科学与比较"),
+    ),
+    OstpItem(
+        "2026-01-01",
+        "Trump Administration Science & Technology Highlights: Year One",
+        "https://www.whitehouse.gov/wp-content/uploads/2026/01/WHOSTP-2025-Wins.pdf",
+        "https://www.whitehouse.gov/ostp/information-resources/",
+        "2025—2026现行OSTP官方资源",
+        "年度科技创新政策、任务导向研发与公私协同进展",
+        ("科学体系与基础研究", "技术创新与关键技术", "创新政策与研发治理", "人才大学与科研组织", "产业创新转化与区域生态", "国际合作开放科学与比较"),
+        china_relation="全球技术与创新政策背景；中国命题须回查正文",
+        precision="月；以1月1日作排序占位，不代表实际发布日期",
+    ),
+)
+
+
 def stable_report_id(item: OstpItem) -> str:
     slug = urlsplit(item.url).path.strip("/").split("/")[-1].rsplit(".", 1)[0]
     return "C-US-OSTP-" + item.published[:4] + "-" + re.sub(r"[^a-z0-9]+", "-", slug.lower()).strip("-").upper()
@@ -180,7 +204,7 @@ def main() -> int:
     trump_items = parse_trump_archive(source_bytes.decode("utf-8"))
     if len(trump_items) < 25:
         raise ValueError(f"expected at least 25 innovation-led Trump OSTP records; found {len(trump_items)}")
-    items = sorted((*OBAMA_ITEMS, *trump_items, *BIDEN_ITEMS), key=lambda row: (row.published, row.title))
+    items = sorted((*OBAMA_ITEMS, *trump_items, *BIDEN_ITEMS, *CURRENT_ITEMS), key=lambda row: (row.published, row.title))
     selected_ids = {stable_report_id(item) for item in items}
 
     catalog_path = root / "05_报告总目录.csv"
@@ -257,7 +281,7 @@ def main() -> int:
     china_count = sum("中国科技横向维度" in item.themes for item in items)
     result = f"""# 美国OSTP科学技术创新政策轻量目录增补结果
 
-- 正式科技政策文件：{len(items)}项；Obama时期{len(OBAMA_ITEMS)}项、Trump时期{len(trump_items)}项、Biden时期{len(BIDEN_ITEMS)}项。
+- 正式科技政策文件：{len(items)}项；Obama时期{len(OBAMA_ITEMS)}项、Trump第一任期{len(trump_items)}项、Biden时期{len(BIDEN_ITEMS)}项、2025—2026现行OSTP资源{len(CURRENT_ITEMS)}项。
 - 观察窗分布：W1（2016—2018）{node_counts['W1']}项；W2（2019—2021）{node_counts['W2']}项；W3（2022—2026）{node_counts['W3']}项。
 - 与既有统一目录关联：{linked}项；新增统一总目录：{added}项；明确中国横向关联：{china_count}项。
 - Trump时期官方索引快照SHA256：`{source_hash}`；本轮未下载正文。

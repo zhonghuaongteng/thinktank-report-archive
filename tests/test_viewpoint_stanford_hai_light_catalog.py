@@ -12,7 +12,7 @@ class StanfordHaiLightCatalogTests(unittest.TestCase):
         self.assertTrue(all(item.url.startswith("https://hai.stanford.edu/ai-index/") for item in annual))
 
     def test_items_are_science_innovation_led(self) -> None:
-        self.assertEqual(len(ITEMS), 15)
+        self.assertEqual(len(ITEMS), 17)
         self.assertTrue(all("安全供应链与治理边界" not in item.themes for item in ITEMS))
         self.assertTrue(all(any(theme in item.themes for theme in ("科学体系与基础研究", "技术创新与关键技术", "创新政策与研发治理")) for item in ITEMS))
 

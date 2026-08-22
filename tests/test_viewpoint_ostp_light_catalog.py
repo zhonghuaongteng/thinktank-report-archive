@@ -4,6 +4,7 @@ import unittest
 
 from scripts.extend_viewpoint_ostp_light_catalog import (
     BIDEN_ITEMS,
+    CURRENT_ITEMS,
     OBAMA_ITEMS,
     observation_window,
     parse_trump_archive,
@@ -28,8 +29,9 @@ class OstpLightCatalogTests(unittest.TestCase):
     def test_static_items_cover_three_observation_windows_with_sti_focus(self) -> None:
         self.assertEqual(len(OBAMA_ITEMS), 7)
         self.assertEqual(len(BIDEN_ITEMS), 9)
+        self.assertEqual(len(CURRENT_ITEMS), 2)
         self.assertEqual({observation_window(item.published) for item in (*OBAMA_ITEMS, *BIDEN_ITEMS)}, {"W1", "W2", "W3"})
-        self.assertTrue(all("安全供应链与治理边界" not in item.themes for item in (*OBAMA_ITEMS, *BIDEN_ITEMS)))
+        self.assertTrue(all("安全供应链与治理边界" not in item.themes for item in (*OBAMA_ITEMS, *BIDEN_ITEMS, *CURRENT_ITEMS)))
 
     def test_theme_labels_do_not_add_security_axis(self) -> None:
         themes = theme_labels("National Artificial Intelligence R&D Strategic Plan")
