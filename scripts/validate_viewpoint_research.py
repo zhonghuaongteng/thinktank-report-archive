@@ -107,6 +107,7 @@ def main() -> None:
         "114_KISTEP高价值韩文扫描件OCR补全台账.csv", "115_KISTEP高价值韩文扫描件OCR补全结果.md",
         "116_KISTEP科技政策与AI半导体扫描件OCR补全台账.csv", "117_KISTEP科技政策与AI半导体扫描件OCR补全结果.md",
         "118_KISTEP全球健康与先进生物合作扫描件OCR补全台账.csv", "119_KISTEP全球健康与先进生物合作扫描件OCR补全结果.md",
+        "120_NISTEP科技创新主轴补充证据台账.csv", "121_NISTEP科技创新主轴补充证据结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -344,6 +345,19 @@ def main() -> None:
     nistep_catalog = [r for r in catalog if r["报告ID"].startswith("C-NISTEP-")]
     assert len(nistep_catalog) == len(nistep_assets)
     assert all(r["机构观点等级"] == "作者讨论论文" for r in nistep_catalog if r["报告类型"] == "讨论论文")
+    nistep_support = rows(root / "120_NISTEP科技创新主轴补充证据台账.csv")
+    assert len(nistep_support) == 3
+    assert sum(r["资产类型"] == "正式PDF补充证据" for r in nistep_support) == 2
+    assert sum(int(r["PDF页数"]) for r in nistep_support) == 25
+    assert sum(int(r["提取文本字符数"]) for r in nistep_support) == 47919
+    assert {r["关联正式报告"] for r in nistep_support} == {"NR:187；NR:196", "RM:348", "DP:192"}
+    assert all(
+        Path(r["本地原始资产"]).exists()
+        and Path(r["本地文本"]).exists()
+        and Path(r["本地切片或转写"]).exists()
+        and len(r["SHA256"]) == 64
+        for r in nistep_support
+    )
     stepi_assets = rows(root / "60_STEPI韩文科技与中国专题增补台账.csv")
     assert len(stepi_assets) == 518, len(stepi_assets)
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 476
@@ -578,6 +592,7 @@ def main() -> None:
             (bruegel_assets, ("本地原始资产",)),
             (crds_assets, ("本地原始资产",)),
             (nistep_assets, ("本地原始资产",)),
+            (nistep_support, ("本地原始资产",)),
             (stepi_assets, ("本地原始资产",)),
             (stepi_series, ("本地原始资产",)),
             (kistep_assets, ("本地原始资产",)),
@@ -716,6 +731,8 @@ def main() -> None:
         ("117_KISTEP科技政策与AI半导体扫描件OCR补全结果.md", "国际科技智库观点演变_KISTEP科技政策与AI半导体扫描件OCR补全结果.md"),
         ("118_KISTEP全球健康与先进生物合作扫描件OCR补全台账.csv", "国际科技智库观点演变_KISTEP全球健康与先进生物合作扫描件OCR补全台账.csv"),
         ("119_KISTEP全球健康与先进生物合作扫描件OCR补全结果.md", "国际科技智库观点演变_KISTEP全球健康与先进生物合作扫描件OCR补全结果.md"),
+        ("120_NISTEP科技创新主轴补充证据台账.csv", "国际科技智库观点演变_NISTEP科技创新主轴补充证据台账.csv"),
+        ("121_NISTEP科技创新主轴补充证据结果.md", "国际科技智库观点演变_NISTEP科技创新主轴补充证据结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1

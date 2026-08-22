@@ -366,8 +366,60 @@ def acquire(candidate: Candidate, mirror_url: str, cache_dir: Path) -> Acquisiti
             result.source = "NISTEP官方HTML版报告"
             result.status = "官方HTML版报告已保存"
             return result
-        release_text, release_url = fetch_official_release_page(candidate)
-        if len(release_text) >= 180:
+        if not candidate.record_id:
+            release_text, release_url = fetch_official_release_page(candidate)
+            if len(release_text) >= 180:
+                report_id = stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)
+                proxy_cache = cache_dir / f"{report_id}.txt"
+                page_cache = cache_dir / f"{report_id}-release.md"
+                proxy_cache.write_text(release_text, encoding="utf-8")
+                page_cache.write_text(release_text, encoding="utf-8")
+                result.proxy_cache = str(proxy_cache)
+                result.oai_cache = str(page_cache)
+                result.source = "NISTEP官方发布页摘要"
+                result.status = "官方发布页摘要已保存"
+                result.pdf_url = ""
+                return result
+            if archive_text:
+                proxy_cache = cache_dir / f"{stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)}.txt"
+                proxy_cache.write_text(archive_text, encoding="utf-8")
+                result.proxy_cache = str(proxy_cache)
+                result.source = "NISTEP官方发布页全文"
+                result.status = "官方网页全文已保存"
+                return result
+            raise RuntimeError("repository record id unavailable")
+        try:
+            oai_text = fetch_jina(oai_proxy_url(candidate.record_id), timeout=120)
+            oai_cache = cache_dir / f"{stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)}-oai.md"
+            oai_cache.write_text(oai_text, encoding="utf-8")
+            result.oai_cache = str(oai_cache)
+            result.pdf_url = select_full_pdf_url(oai_text)
+            if not result.pdf_url:
+                raise RuntimeError("OAI metadata contains no report PDF")
+            exact_mirror = probe_mirror(candidate, [Path(urlsplit(result.pdf_url).path).name])
+            if exact_mirror:
+                result.pdf_url = exact_mirror
+                pdf_data = fetch_pdf(exact_mirror, candidate.landing_url)
+                if pdf_data:
+                    pdf_cache = cache_dir / f"{stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)}.pdf"
+                    pdf_cache.write_bytes(pdf_data)
+                    result.pdf_cache = str(pdf_cache)
+                    result.source = "NISTEP主站官方PDF"
+                    result.status = "官方PDF已保存并校验"
+                    return result
+            time.sleep(3.1)
+            proxy_text = fetch_jina(f"https://r.jina.ai/{result.pdf_url}", timeout=180)
+            if len(proxy_text) < 400:
+                raise RuntimeError(f"thin repository PDF proxy text: {len(proxy_text)}")
+            proxy_cache = cache_dir / f"{stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)}.txt"
+            proxy_cache.write_text(proxy_text, encoding="utf-8")
+            result.proxy_cache = str(proxy_cache)
+            result.source = "NISTEP官方仓储PDF的Jina代理全文"
+            result.status = "官方仓储PDF代理全文已保存"
+        except Exception as repository_exc:
+            release_text, release_url = fetch_official_release_page(candidate)
+            if len(release_text) < 180:
+                raise repository_exc
             report_id = stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)
             proxy_cache = cache_dir / f"{report_id}.txt"
             page_cache = cache_dir / f"{report_id}-release.md"
@@ -377,44 +429,7 @@ def acquire(candidate: Candidate, mirror_url: str, cache_dir: Path) -> Acquisiti
             result.oai_cache = str(page_cache)
             result.source = "NISTEP官方发布页摘要"
             result.status = "官方发布页摘要已保存"
-            result.pdf_url = release_url
-            return result
-        if not candidate.record_id:
-            if archive_text:
-                proxy_cache = cache_dir / f"{stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)}.txt"
-                proxy_cache.write_text(archive_text, encoding="utf-8")
-                result.proxy_cache = str(proxy_cache)
-                result.source = "NISTEP官方发布页全文"
-                result.status = "官方网页全文已保存"
-                return result
-            raise RuntimeError("repository record id unavailable")
-        oai_text = fetch_jina(oai_proxy_url(candidate.record_id), timeout=120)
-        oai_cache = cache_dir / f"{stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)}-oai.md"
-        oai_cache.write_text(oai_text, encoding="utf-8")
-        result.oai_cache = str(oai_cache)
-        result.pdf_url = select_full_pdf_url(oai_text)
-        if not result.pdf_url:
-            raise RuntimeError("OAI metadata contains no report PDF")
-        exact_mirror = probe_mirror(candidate, [Path(urlsplit(result.pdf_url).path).name])
-        if exact_mirror:
-            result.pdf_url = exact_mirror
-            pdf_data = fetch_pdf(exact_mirror, candidate.landing_url)
-            if pdf_data:
-                pdf_cache = cache_dir / f"{stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)}.pdf"
-                pdf_cache.write_bytes(pdf_data)
-                result.pdf_cache = str(pdf_cache)
-                result.source = "NISTEP主站官方PDF"
-                result.status = "官方PDF已保存并校验"
-                return result
-        time.sleep(3.1)
-        proxy_text = fetch_jina(f"https://r.jina.ai/{result.pdf_url}", timeout=180)
-        if len(proxy_text) < 400:
-            raise RuntimeError(f"thin repository PDF proxy text: {len(proxy_text)}")
-        proxy_cache = cache_dir / f"{stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)}.txt"
-        proxy_cache.write_text(proxy_text, encoding="utf-8")
-        result.proxy_cache = str(proxy_cache)
-        result.source = "NISTEP官方仓储PDF的Jina代理全文"
-        result.status = "官方仓储PDF代理全文已保存"
+            result.pdf_url = ""
     except Exception as exc:
         result.status = "获取失败"
         result.error = f"{type(exc).__name__}: {exc}"
@@ -500,6 +515,12 @@ def main() -> int:
         action="store_true",
         help="retry rows that currently have only an official release-page summary",
     )
+    parser.add_argument(
+        "--report-number",
+        action="append",
+        default=[],
+        help="limit summary retries to one or more formal report numbers, for example NR:187",
+    )
     args = parser.parse_args()
     root = args.research.resolve()
     directories = {
@@ -516,13 +537,23 @@ def main() -> int:
     catalog = read_csv(root / "05_报告总目录.csv")
     # A catalog row with no local asset is an acquisition placeholder, not a
     # completed item.  Keep it eligible for retry on later runs.
+    retry_numbers = {value.strip().upper() for value in args.report_number if value.strip()}
+    normalized_retry_numbers = {number.replace(":", "") for number in retry_numbers}
+
+    def should_retry_summary(row: dict[str, str]) -> bool:
+        if not args.retry_summaries or row.get("原始资产状态") != "官方发布页摘要已保存":
+            return False
+        if not retry_numbers:
+            return True
+        return row.get("报告ID", "").split("-", 3)[2].upper() in normalized_retry_numbers
+
     existing_by_url = {
         row["原文链接"].strip(): row
         for row in catalog
         if (row.get("机构ID") == "nistep" or row.get("报告ID", "").startswith("C-NISTEP-"))
         and row.get("本地原始资产路径", "").strip()
         and Path(row["本地原始资产路径"]).exists()
-        and (not args.retry_summaries or row.get("原始资产状态") != "官方发布页摘要已保存")
+        and not should_retry_summary(row)
     }
     ledger_path = root / "55_NISTEP日文科技与中国专题增补台账.csv"
     if ledger_path.exists():
@@ -530,9 +561,17 @@ def main() -> int:
         for item in read_csv(ledger_path):
             catalog_row = catalog_by_id.get(item.get("报告ID", ""))
             if catalog_row and catalog_row.get("本地原始资产路径", "").strip() and Path(catalog_row["本地原始资产路径"]).exists():
-                if not args.retry_summaries or catalog_row.get("原始资产状态") != "官方发布页摘要已保存":
+                if not should_retry_summary(catalog_row):
                     existing_by_url[item["官方落地页"].strip()] = catalog_by_id[item["报告ID"]]
-    targets = [candidate for candidate in candidates if candidate.landing_url.strip() not in existing_by_url]
+    targets = [
+        candidate
+        for candidate in candidates
+        if candidate.landing_url.strip() not in existing_by_url
+        and (
+            not normalized_retry_numbers
+            or f"{candidate.report_type}{candidate.number}" in normalized_retry_numbers
+        )
+    ]
     mirror_urls: dict[str, str] = {}
     with ThreadPoolExecutor(max_workers=20) as executor:
         futures = {executor.submit(probe_mirror, candidate): candidate for candidate in targets}

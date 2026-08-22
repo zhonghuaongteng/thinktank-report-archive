@@ -97,7 +97,7 @@ class NistepJapaneseCollectionTests(unittest.TestCase):
         self.assertEqual(result.source, "NISTEP官方HTML版报告")
         self.assertTrue(result.proxy_cache)
 
-    def test_acquire_saves_release_page_as_summary_before_repository(self) -> None:
+    def test_acquire_uses_repository_fulltext_before_release_summary(self) -> None:
         candidate = nistep.Candidate(
             "RM", "284", "2018-08-01", "地域科学技術指標2018", "http://hdl.handle.net/11035/x", "2000084"
         )
@@ -110,12 +110,33 @@ class NistepJapaneseCollectionTests(unittest.TestCase):
                 "## SOURCE https://www.nistep.go.jp/archives/41356/\n\n" + "official release evidence " * 20,
                 "https://www.nistep.go.jp/archives/41356/",
             ),
-        ), patch.object(nistep, "fetch_jina", side_effect=AssertionError("repository fallback should not run")):
+        ), patch.object(
+            nistep,
+            "fetch_jina",
+            side_effect=[
+                "https://nistep.repo.nii.ac.jp/record/2000084/files/NISTEP-RM284-FullJ.pdf",
+                "repository fulltext evidence " * 30,
+            ],
+        ), patch.object(nistep, "probe_mirror", return_value=""):
+            result = nistep.acquire(candidate, "", Path(temp_dir))
+        self.assertEqual(result.status, "官方仓储PDF代理全文已保存")
+        self.assertEqual(result.source, "NISTEP官方仓储PDF的Jina代理全文")
+        self.assertTrue(result.proxy_cache)
+        self.assertTrue(result.oai_cache)
+
+    def test_acquire_falls_back_to_release_summary_when_repository_has_no_pdf(self) -> None:
+        candidate = nistep.Candidate(
+            "RM", "284", "2018-08-01", "地域科学技術指標2018", "http://hdl.handle.net/11035/x", "2000084"
+        )
+        release = "## SOURCE https://www.nistep.go.jp/archives/41356/\n\n" + "official release evidence " * 20
+        with tempfile.TemporaryDirectory() as temp_dir, patch.object(
+            nistep, "fetch_indicator_html_report", return_value=("", "")
+        ), patch.object(
+            nistep, "fetch_official_release_page", return_value=(release, "https://www.nistep.go.jp/archives/41356/")
+        ), patch.object(nistep, "fetch_jina", return_value="metadata without pdf"):
             result = nistep.acquire(candidate, "", Path(temp_dir))
         self.assertEqual(result.status, "官方发布页摘要已保存")
         self.assertEqual(result.source, "NISTEP官方发布页摘要")
-        self.assertTrue(result.proxy_cache)
-        self.assertTrue(result.oai_cache)
 
     def test_status_summary_reports_official_html_separately(self) -> None:
         formatter = getattr(nistep, "nistep_status_summary", lambda *_: "")
