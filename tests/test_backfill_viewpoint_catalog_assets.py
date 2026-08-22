@@ -3,10 +3,20 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from scripts.backfill_viewpoint_catalog_assets import load_light_catalog_overrides
+from scripts.backfill_viewpoint_catalog_assets import OFFICIAL_PDF_OVERRIDES, load_light_catalog_overrides
 
 
 class LightCatalogOverrideTests(unittest.TestCase):
+    def test_oecd_science_system_overrides_use_official_pdf_host(self) -> None:
+        for report_id in (
+            "S-OECD-2021-01",
+            "S-OECD-2023-01",
+            "C-OECD-DOI-06913B3B-EN",
+            "C-OECD-DOI-DC21227A-EN",
+        ):
+            self.assertIn(report_id, OFFICIAL_PDF_OVERRIDES)
+            self.assertTrue(OFFICIAL_PDF_OVERRIDES[report_id].startswith("https://www.oecd.org/content/dam/oecd/"))
+
     def test_loads_pdf_and_attachment_columns(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

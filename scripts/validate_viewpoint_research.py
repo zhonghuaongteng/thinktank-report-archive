@@ -102,6 +102,7 @@ def main() -> None:
         "104_第七批中国科技创新全文候选复核台账.csv", "105_第七批中国科技创新全文候选复核结果.md",
         "106_第八批科技创新与中国比较全文候选复核台账.csv", "107_第八批科技创新与中国比较全文候选复核结果.md",
         "108_第九批科学体系与创新政策纵向全文候选复核台账.csv", "109_第九批科学体系与创新政策纵向全文候选复核结果.md",
+        "110_第十批OECD科学体系与科研机制纵向全文候选复核台账.csv", "111_第十批OECD科学体系与科研机制纵向全文候选复核结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -121,8 +122,8 @@ def main() -> None:
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in assets) >= 46
     assert all(len(r["SHA256"]) == 64 for r in assets if r["本地PDF"])
     catalog_assets = rows(root / "21_非锚点全文补存台账.csv")
-    assert len(catalog_assets) == 215, len(catalog_assets)
-    assert sum(r["资产类型"] == "PDF" for r in catalog_assets) == 212
+    assert len(catalog_assets) == 231, len(catalog_assets)
+    assert sum(r["资产类型"] == "PDF" for r in catalog_assets) == 228
     assert sum(r["资产类型"] == "官方网页" for r in catalog_assets) == 3
     assert all(r["本地资产"] and Path(r["本地资产"]).exists() for r in catalog_assets)
     assert not any(r["本地状态"] == "获取失败" for r in catalog_assets)
@@ -388,7 +389,7 @@ def main() -> None:
         "T1_科学体系与基础研究", "T2_技术创新与关键技术", "T3_创新政策与研发治理",
         "T4_人才大学与科研组织", "T5_产业创新转化与区域生态", "T6_国际合作开放科学与比较",
     }
-    assert len(targeted_queue) == 12
+    assert len(targeted_queue) == 11
     assert len(catalog_queue) == 0
     assert not any(r["战略主题"] == "T7_安全供应链与治理边界" for r in gap_matrix)
     assert not any(r["报告名称"] == "China’s Military AI Roadblocks" for r in targeted_queue)
@@ -446,7 +447,7 @@ def main() -> None:
     assert not any(re.search(r"national security|cybersecurity|nuclear defense|security and integrity|electromagnetic pulses", r["报告名称"], re.I) for r in ostp_light)
     assert all(r["全文策略"].startswith("不自动下载") for ledger in (cset_light, oecd_light, itif_series_light, itif_node_light, fraunhofer_light, stanford_hai_light, ostp_light, belfer_merics_light) for r in ledger)
     assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 720
-    assert len(rows(root / "70_定点补源优先队列.csv")) == 12
+    assert len(rows(root / "70_定点补源优先队列.csv")) == 11
     assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 0
     review = rows(root / "92_定点全文候选证据增量复核台账.csv")
     assert len(review) == 43
@@ -488,6 +489,10 @@ def main() -> None:
     assert len(ninth_review) == 20
     assert sum(r["复核结论"] == "第九批精选全文" for r in ninth_review) == 14
     assert sum(r["全文状态"] == "本地资产已保存" for r in ninth_review) == 14
+    tenth_review = rows(root / "110_第十批OECD科学体系与科研机制纵向全文候选复核台账.csv")
+    assert len(tenth_review) == 28
+    assert sum(r["复核结论"] == "第十批精选全文" for r in tenth_review) == 16
+    assert sum(r["全文状态"] == "本地资产已保存" for r in tenth_review) == 16
     selected_light_asset_ids = {
         r["报告ID"] for ledger, decision in (
             (review, "本轮精选全文"),
@@ -499,6 +504,7 @@ def main() -> None:
             (seventh_review, "第七批精选全文"),
             (eighth_review, "第八批精选全文"),
             (ninth_review, "第九批精选全文"),
+            (tenth_review, "第十批精选全文"),
         )
         for r in ledger if r["复核结论"] == decision
     }
@@ -661,6 +667,8 @@ def main() -> None:
         ("107_第八批科技创新与中国比较全文候选复核结果.md", "国际科技智库观点演变_第八批科技创新与中国比较全文候选复核结果.md"),
         ("108_第九批科学体系与创新政策纵向全文候选复核台账.csv", "国际科技智库观点演变_第九批科学体系与创新政策纵向全文候选复核台账.csv"),
         ("109_第九批科学体系与创新政策纵向全文候选复核结果.md", "国际科技智库观点演变_第九批科学体系与创新政策纵向全文候选复核结果.md"),
+        ("110_第十批OECD科学体系与科研机制纵向全文候选复核台账.csv", "国际科技智库观点演变_第十批OECD科学体系与科研机制纵向全文候选复核台账.csv"),
+        ("111_第十批OECD科学体系与科研机制纵向全文候选复核结果.md", "国际科技智库观点演变_第十批OECD科学体系与科研机制纵向全文候选复核结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1

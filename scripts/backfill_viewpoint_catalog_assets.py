@@ -53,6 +53,21 @@ OFFICIAL_PDF_OVERRIDES = {
     "C-OECD-DOI-D725304C-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/03/challenges-and-opportunities-of-mission-oriented-innovation-policy-in-korea_22a1c12e/d725304c-en.pdf",
     "C-OECD-DOI-5E55E7AB-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/12/an-overview-of-national-strategies-and-policies-for-quantum-technologies_33a0b249/5e55e7ab-en.pdf",
     "S-OECD-2025-01": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/10/oecd-science-technology-and-innovation-outlook-2025_bae3698d/5fe57b90-en.pdf",
+    "S-OECD-2021-01": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/01/oecd-science-technology-and-innovation-outlook-2021_3f424d14/75f79015-en.pdf",
+    "S-OECD-2023-01": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/03/oecd-science-technology-and-innovation-outlook-2023_fb6e6c20/0b55736e-en.pdf",
+    "C-OECD-DOI-235C9806-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/how-is-research-policy-across-the-oecd-organised_59a9420f/235c9806-en.pdf",
+    "C-OECD-DOI-0D057DA7-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2019/03/public-research-and-innovative-entrepreneurship_639026ff/0d057da7-en.pdf",
+    "C-OECD-DOI-66A3BD38-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2019/04/science-industry-knowledge-exchange_de2b8676/66a3bd38-en.pdf",
+    "C-OECD-DOI-A4C9197A-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2019/10/policy-initiatives-to-enhance-the-impact-of-public-research_1830bd0b/a4c9197a-en.pdf",
+    "C-OECD-DOI-18D3BF19-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/04/the-2018-oecd-international-survey-of-scientific-authors_0f370bbf/18d3bf19-en.pdf",
+    "C-OECD-DOI-1B06C47C-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/04/charting-the-digital-transformation-of-science_b5405fa4/1b06c47c-en.pdf",
+    "C-OECD-DOI-0CA0CA45-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/06/addressing-societal-challenges-using-transdisciplinary-research_41211835/0ca0ca45-en.pdf",
+    "C-OECD-DOI-E08AA3BB-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/07/building-digital-workforce-capacity-and-skills-for-data-intensive-science_746c62c4/e08aa3bb-en.pdf",
+    "C-OECD-DOI-06913B3B-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/05/effective-policies-to-foster-high-risk-high-reward-research_131670a3/06913b3b-en.pdf",
+    "C-OECD-DOI-0F8BD468-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/05/reducing-the-precarity-of-academic-research-careers_2d4e2194/0f8bd468-en.pdf",
+    "C-OECD-DOI-4D787B35-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/12/improving-knowledge-transfer-and-collaboration-between-science-and-business-in-spain_a3d74d85/4d787b35-en.pdf",
+    "C-OECD-DOI-9EB9A85B-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/05/public-research-funding-in-sweden_2836f27f/9eb9a85b-en.pdf",
+    "C-OECD-DOI-DC21227A-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/09/promoting-diverse-career-pathways-for-doctoral-and-postdoctoral-researchers_9fdc38f5/dc21227a-en.pdf",
     "C-STANFORD-HAI-AI-INDEX-2017": "https://hai.stanford.edu/assets/files/ai-index-2017-annual-report.pdf",
     "C-STANFORD-HAI-AI-INDEX-2019": "https://hai.stanford.edu/assets/files/ai_index_2019_report.pdf",
     "C-STANFORD-HAI-AI-INDEX-2021": "https://hai.stanford.edu/assets/files/2021-ai-index-report_master.pdf",
@@ -430,8 +445,8 @@ def main() -> int:
     ]
     log_path = root / "21_非锚点全文补存台账.csv"
     previous = read_csv(log_path) if log_path.exists() else []
-    merged = {row["报告ID"]: row for row in previous}
-    merged.update({row["报告ID"]: row for row in output})
+    merged = {row["报告ID"]: row for row in previous if row.get("本地资产")}
+    merged.update({row["报告ID"]: row for row in output if row.get("本地资产")})
     ordered = [merged[row["报告ID"]] for row in catalog if row["报告ID"] in merged]
     write_csv(log_path, ordered, fields)
     print(f"targets={len(targets)} pdf={sum(bool(r.pdf_data) for r in results)} html={sum(bool(r.html_data) and not r.pdf_data for r in results)} failed={sum(not r.pdf_data and not r.html_data for r in results)}")
