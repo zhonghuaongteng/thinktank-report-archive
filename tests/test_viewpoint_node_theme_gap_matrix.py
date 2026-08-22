@@ -146,6 +146,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
     def test_institution_tiers_follow_science_innovation_fit(self) -> None:
         self.assertEqual(tier_for("fraunhofer-isi"), "A")
         self.assertEqual(tier_for("wipo-gii"), "A")
+        self.assertEqual(tier_for("nsf-nsb-sei"), "A")
         self.assertEqual(tier_for("ifp"), "B")
         self.assertEqual(tier_for("stanford-hai"), "B")
         self.assertEqual(tier_for("rand"), "C")

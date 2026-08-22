@@ -93,6 +93,7 @@ FAMILY_ALIASES = {"merics-tech": "merics"}
 
 TIER_A = {
     "oecd-sti", "cset", "merics", "jst-crds", "nistep", "stepi", "kistep", "fraunhofer-isi", "wipo-gii",
+    "nsf-nsb-sei",
 }
 TIER_B = {
     "belfer",
@@ -128,7 +129,7 @@ KNOWN_PROJECT_START = {
     "ifp": 2021,
     "stanford-hai": 2019,
 }
-NODE_CATALOG_MINIMUM = {"wipo-gii": 1}
+NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1}
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
