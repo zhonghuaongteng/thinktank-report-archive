@@ -106,6 +106,9 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
 
     def test_nesta_uses_observed_publication_volume_after_complete_site_scan(self) -> None:
         self.assertEqual(catalog_minimum_for("nesta", "A"), 1)
+
+    def test_rathenau_uses_observed_publication_volume_after_complete_archive_scan(self) -> None:
+        self.assertEqual(catalog_minimum_for("rathenau", "A"), 1)
         self.assertEqual(catalog_minimum_for("oecd-sti", "A"), 5)
 
     def test_biennial_series_does_not_create_a_false_missing_publication_node(self) -> None:
@@ -164,6 +167,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertEqual(tier_for("unctad-tir"), "A")
         self.assertEqual(tier_for("wipo-wipr"), "A")
         self.assertEqual(tier_for("nesta"), "A")
+        self.assertEqual(tier_for("rathenau"), "A")
         self.assertEqual(tier_for("ifp"), "B")
         self.assertEqual(tier_for("stanford-hai"), "B")
         self.assertEqual(tier_for("rand"), "C")

@@ -50,6 +50,24 @@ def expected_nesta_selected_ids() -> set[str]:
     }
 
 
+def expected_rathenau_selected_ids() -> set[str]:
+    return {
+        "C-RATHENAU-2015-RD-GOES-GLOBAL",
+        "C-RATHENAU-2016-PUBLIC-KNOWLEDGE-ORGANISATIONS-NETHERLANDS",
+        "C-RATHENAU-2016-SHAPING-INNOVATION-THROUGH-POLICY",
+        "C-RATHENAU-2018-REGIONAL-INNOVATION",
+        "C-RATHENAU-2018-INDUSTRY-SEEKING-UNIVERSITY",
+        "C-RATHENAU-2020-EUROPEAN-RESEARCH-AND-INNOVATION-NEW-GEOPOLITICAL-ARENA",
+        "C-RATHENAU-2021-PERSPECTIVES-FUTURE-OPEN-SCIENCE",
+        "C-RATHENAU-2022-RESEARCH-PROGRAMMES-MISSION",
+        "C-RATHENAU-2022-TOTAL-INVESTMENT-RESEARCH-AND-INNOVATION-2020-2026",
+        "C-RATHENAU-2024-NWO-PROGRAMMES-CURIOSITY-DRIVEN-RESEARCH",
+        "C-RATHENAU-2024-KNOWLEDGE-FUTURE",
+        "C-RATHENAU-2025-CHINA-SCIENTIFIC-SUPERPOWER",
+        "C-RATHENAU-2026-GEOPOLITICS-SCIENCE-POLICY",
+    }
+
+
 def expected_catalog_size(
     seed_count: int,
     catalog_asset_count: int,
@@ -153,6 +171,8 @@ def main() -> None:
         "156_NSF_NSB科学体系人才转化跨期专题全文台账.csv", "157_NSF_NSB科学体系人才转化跨期专题全文结果.md",
         "158_Nesta科技创新报告近十年轻量目录.csv", "159_Nesta科技创新报告近十年轻量目录结果.md",
         "160_Nesta科技创新与中国比较跨期精选全文台账.csv", "161_Nesta科技创新与中国比较跨期精选全文结果.md",
+        "162_Rathenau英文正式报告近十年轻量总目录.csv", "163_Rathenau英文正式报告近十年轻量总目录结果.md",
+        "164_Rathenau科技创新与中国比较跨期精选全文台账.csv", "165_Rathenau科技创新与中国比较跨期精选全文结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -595,6 +615,29 @@ def main() -> None:
         and Path(r["本地切片"]).exists() and sha(Path(r["本地PDF"])) == r["SHA256"]
         for r in nesta_selected
     )
+    rathenau_light = rows(root / "162_Rathenau英文正式报告近十年轻量总目录.csv")
+    assert len(rathenau_light) == 75
+    assert sum(r["报告类型"] == "Report" for r in rathenau_light) == 74
+    assert sum(r["报告类型"] == "Factsheet" for r in rathenau_light) == 1
+    assert sum(r["科技创新相关度"] == "核心" for r in rathenau_light) == 40
+    assert sum(r["科技创新相关度"] == "支撑" for r in rathenau_light) == 17
+    assert sum(r["科技创新相关度"] == "语境" for r in rathenau_light) == 18
+    assert sum(r["中国关联"] == "是" for r in rathenau_light) == 5
+    assert all(r["官方落地页"].startswith("https://www.rathenau.nl/") for r in rathenau_light)
+    rathenau_selected = rows(root / "164_Rathenau科技创新与中国比较跨期精选全文台账.csv")
+    assert {r["报告ID"] for r in rathenau_selected} == expected_rathenau_selected_ids()
+    assert sum(r["原始资产类型"] == "PDF" for r in rathenau_selected) == 12
+    assert sum(r["原始资产类型"] == "WEB" for r in rathenau_selected) == 1
+    assert sum(r["中国关联"] == "是" for r in rathenau_selected) == 5
+    assert sum(int(r["PDF页数"]) for r in rathenau_selected) == 666
+    assert sum(int(r["字节数"]) for r in rathenau_selected) == 14097105
+    assert sum(int(r["提取文本字符数"]) for r in rathenau_selected) == 1604122
+    assert sum(int(r["China词形命中数"]) for r in rathenau_selected) == 401
+    assert all(
+        Path(r["本地原始资产"]).exists() and Path(r["本地文本"]).exists()
+        and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
+        for r in rathenau_selected
+    )
     stepi_assets = rows(root / "60_STEPI韩文科技与中国专题增补台账.csv")
     assert len(stepi_assets) == 518, len(stepi_assets)
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 476
@@ -649,7 +692,7 @@ def main() -> None:
     gap_matrix = rows(root / "69_机构节点主题覆盖缺口矩阵.csv")
     targeted_queue = rows(root / "70_定点补源优先队列.csv")
     catalog_queue = rows(root / "72_轻量目录扩展优先队列.csv")
-    assert len(gap_matrix) == 960
+    assert len(gap_matrix) == 990
     assert {r["战略主题"] for r in gap_matrix} == {
         "T1_科学体系与基础研究", "T2_技术创新与关键技术", "T3_创新政策与研发治理",
         "T4_人才大学与科研组织", "T5_产业创新转化与区域生态", "T6_国际合作开放科学与比较",
@@ -742,7 +785,10 @@ def main() -> None:
     assert sum(r["全文策略"].startswith("不自动下载") for r in stanford_hai_light) == 14
     assert len(nesta_light) == 118
     assert all(r["全文策略"].startswith("不自动下载") for r in nesta_light)
-    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 960
+    assert len(rathenau_light) == 75
+    assert sum(r["全文策略"].startswith("已进入精选全文") for r in rathenau_light) == 13
+    assert sum(r["全文策略"].startswith("总目录保留") for r in rathenau_light) == 62
+    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 990
     assert len(rows(root / "70_定点补源优先队列.csv")) == 0
     assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 0
     review = rows(root / "92_定点全文候选证据增量复核台账.csv")
@@ -819,7 +865,7 @@ def main() -> None:
         nistep_asset_count=len(nistep_catalog),
         stepi_asset_count=len(stepi_catalog),
         kistep_asset_count=len(kistep_catalog),
-        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5 + 6 + 6 + 15 + 118,
+        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5 + 6 + 6 + 15 + 118 + 75,
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -848,6 +894,7 @@ def main() -> None:
             (nsf_topic_fulltext, ("本地PDF",)),
             (nsf_science_innovation, ("本地PDF",)),
             (nesta_selected, ("本地PDF",)),
+            (rathenau_selected, ("本地原始资产",)),
             (stepi_assets, ("本地原始资产",)),
             (stepi_series, ("本地原始资产",)),
             (kistep_assets, ("本地原始资产",)),
@@ -1028,6 +1075,10 @@ def main() -> None:
         ("159_Nesta科技创新报告近十年轻量目录结果.md", "国际科技智库观点演变_Nesta科技创新报告近十年轻量目录结果.md"),
         ("160_Nesta科技创新与中国比较跨期精选全文台账.csv", "国际科技智库观点演变_Nesta科技创新与中国比较跨期精选全文台账.csv"),
         ("161_Nesta科技创新与中国比较跨期精选全文结果.md", "国际科技智库观点演变_Nesta科技创新与中国比较跨期精选全文结果.md"),
+        ("162_Rathenau英文正式报告近十年轻量总目录.csv", "国际科技智库观点演变_Rathenau英文正式报告近十年轻量总目录.csv"),
+        ("163_Rathenau英文正式报告近十年轻量总目录结果.md", "国际科技智库观点演变_Rathenau英文正式报告近十年轻量总目录结果.md"),
+        ("164_Rathenau科技创新与中国比较跨期精选全文台账.csv", "国际科技智库观点演变_Rathenau科技创新与中国比较跨期精选全文台账.csv"),
+        ("165_Rathenau科技创新与中国比较跨期精选全文结果.md", "国际科技智库观点演变_Rathenau科技创新与中国比较跨期精选全文结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
