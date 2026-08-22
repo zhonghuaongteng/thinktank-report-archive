@@ -1,0 +1,2271 @@
+
+===== PDF_PAGE 1 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+
+Definition of the research and innovation field of
+"Artificial Intelligence" and approaches to
+determining quality
+
+Bernd Beckert and Henning Kroll
+
+Location: Karlsruhe
+Date: November 2024
+
+===== PDF_PAGE 2 =====
+Responsible for the content of the text
+Bernd Beckert, bernd.beckert@isi.fraunhofer.de
+Citation recommendation
+Beckert, Bernd; Kroll, Henning (2024): Definition of the research and innovation field "Artificial Intelligence" and
+approaches to determining quality. (Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis
+No. 87). Karlsruhe: Fraunhofer ISI
+Published
+November 2024
+ISSN
+1612-1430
+Doi
+10.24406/publica-3792
+
+===== PDF_PAGE 3 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | I
+
+Contents
+Summary ........................................................................................................................................ 1
+Summary in German ................................................................................................................... 2
+Acknowledgments ....................................................................................................................... 3
+1 Research question and method ................................................................................ 4
+2 Bibliometric definitions of AI ..................................................................................... 6
+2.1 OECD 2020: Starting point for a basic definition of AI ............................................................ 6
+2.2 Liu, Shapira and Yue 2021: Three keyword lists for the definition of AI ............................ 11
+2.3 Gao and Ding 2022: Basic definition and top increaser ........................................................ 14
+2.4 CSET 2023: Most elaborated basic definition of AI ................................................................ 17
+2.5 Zeta Alpha 2023: Current edge of AI research ....................................................................... 20
+2.6 Würzburg Group 2023: AI topic areas ...................................................................................... 22
+2.7 NLLG 2023: Focus on language models ................................................................................... 24
+2.8 OECD.ai: Focus on application .................................................................................................... 26
+3 Analysis of the classification of ML models ......................................................... 31
+3.1 Epoch 2024: Detailed analysis of ML systems .......................................................................... 31
+4 Summary of the results and presentation of the ISI list ................................... 37
+5 Country comparisons and research profiles ....................................................... 40
+5.1 Liu, Shapira and Yue 2021 ............................................................................................................ 40
+5.2 Gao and Ding 2022 ........................................................................................................................ 42
+5.3 AI Index Report 2023 and 2024 .................................................................................................. 42
+5.4 Zeta Alpha 2023 .............................................................................................................................. 50
+5.5 Würzburg Group 2023 .................................................................................................................. 53
+5.6 OECD.AI country comparisons .................................................................................................... 54
+5.7 NLLG 2023 ........................................................................................................................................ 58
+5.8 Epoch AI ............................................................................................................................................ 59
+6 Summary of the country comparisons and outlook ..........................................63
+7 Literature ...................................................................................................................... 64
+
+===== PDF_PAGE 4 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | II
+
+List of tables
+Table 1: The OECD 2020 keyword list ......................................................................................................... 7
+Table 2: AI definition and clusters according to the OECD 2023 patent analysis ..................... 9
+Table 3: The 28 AI keywords from the expanded definition by Liu, Shapira and
+Yue 2021 ............................................................................................................................................. 12
+Table 4: The 62 additional AI keywords ("Include") of the definition by Liu,
+Shapira and Yue 2021 .................................................................................................................... 12
+Table 5: AI publications in the CSET Merged Corpus by search strategy ................................... 18
+Table 6: CSET 2023 keyword list (104 entries) ....................................................................................... 19
+Table 7: Screenshot of the query options on the OECD "Live Data" web tool
+based on OpenAlex data .............................................................................................................. 26
+Table 8: Screenshot of the query options on the OECD "Live Data" web tool
+based on Scopus data ................................................................................................................... 27
+Table 9: ISI keyword list for defining the research field "artificial intelligence" ....................... 38
+Table 10: Country shares by citations according to Liu, Shapira and Yue 2021 ......................... 41
+Table 11: Top 15 patent holders in the field of AI between 2000 and 2019
+according to Gao and Ding 2022 .............................................................................................. 42
+
+List of figures
+Figure 1: Screenshot of the query mask for the AI author rankings by publications .............. 23
+Figure 2: Result list of a query in the web tool AI author rankings by publications ................ 23
+Figure 3: Influential AI models and techniques in 2023 according to Zhang et al.
+2023 ...................................................................................................................................................... 25
+Figure 4: "AI publications time series by country": Share of the top 10 countries in
+all AI publications between 2010-2023 Data from OpenAlex ........................................ 27
+Figure 5: "AI research publications time series by country": Share of the top 10
+countries in all AI publications between 2010-2023. Data from Scopus ................... 28
+Figure 6: Trends in AI research application areas, publications, all countries 2000-
+2022 ...................................................................................................................................................... 28
+Figure 7: Trends on AI subtopics over time, data from Scopus (2010-2022) ............................. 29
+Figure 8: AI-generated AI topics according to OpenAlex (excerpt)................................................ 30
+Figure 9: Development of computing capacities for training machine learning
+models since 2012 ........................................................................................................................... 31
+Figure 10: Relevant AI models ("notable AI models") according to Epoch AI since
+1950 ...................................................................................................................................................... 32
+Figure 11: Screenshot of the Epoch AI database with relevant ML models and their
+assignment to application fields or "domains" .................................................................... 33
+Figure 12: Cumulative number of relevant ML models by domain since 1990 ............................ 33
+
+===== PDF_PAGE 5 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | III
+
+Figure 13: Development of computing capacities for the training of ML models ...................... 35
+Figure 14: Development of the share of AI articles in the top 10 countries between
+1991 and 2020 according to Liu, Shapira and Yue 2021 .................................................. 41
+Figure 15: Country shares of global AI publications between 2010 and 2021
+according to the AI Index Report 2023 ................................................................................... 43
+Figure 16: Country shares of global citations of AI publications between 2010 and
+2021 according to the AI Index Report 2023........................................................................ 43
+Figure 17: Country shares of global AI conference publications between 2010 and
+2021 according to the AI Index Report 2023........................................................................ 44
+Figure 18: Country shares of global citations of AI conference publications between
+2010 and 2021 according to the AI Index Report 2023 ................................................... 45
+Figure 19: Country shares of global citations of AI conference publications between
+2010 and 2021 according to the AI Index Report 2022 ................................................... 45
+Figure 20: Country shares of AI articles published in AI repositories between 2010
+and 2021 according to the AI Index Report 2023 ............................................................... 46
+Figure 21: Country shares of citations of AI articles in AI repositories between 2010
+and 2021 according to the AI Index Report 2023 ............................................................... 47
+Figure 22: AI patents granted by country between 2010 and 2021 according to the
+AI Index Report 2024 ..................................................................................................................... 48
+Figure 23: Patents granted by population size, 2022 ............................................................................. 48
+Figure 24: "Vibrancy" of the USA as a location for innovation according to the AI
+Index Report 2023 ........................................................................................................................... 49
+Figure 25: "Vibrancy" of the innovation location China according to the AI Index
+Report 2023 ....................................................................................................................................... 50
+Figure 26: The 100 most cited AI articles in AI repositories for 2020-2022 by
+country according to Zeta Alpha 2023 ................................................................................... 51
+Figure 27: The 100 most cited AI articles in AI repositories for 2020-2022 by
+organization type according to Zeta Alpha 2023 ............................................................... 52
+Figure 28: USA vs. China for key company-related AI indicators ....................................................... 53
+Figure 29: Country comparison of AI publications between 2013 and 2022
+according to the Würzburg Group ........................................................................................... 54
+Figure 30: "Research application areas" of the OECD web tool OECD.ai "Live Data" ................ 55
+Figure 31: "Computer vision", 2002-2022 all publications ................................................................... 55
+Figure 32: "Artificial neural network", 2002-2022 all publications ..................................................... 56
+Figure 33: "Natural Language Processing", 2002-2022 all publications .......................................... 56
+Figure 34: "Robot", 2002-2022 all publications ........................................................................................ 57
+Figure 35: "Automation", 2002-2022 all publications ............................................................................. 57
+Figure 36: Top 40 cited AI articles in 2023 by country and assignment to industry or
+university/ research according to NLLG 2023 ...................................................................... 58
+
+===== PDF_PAGE 6 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | IV
+
+Figure 37: Number of relevant ML models by country in 2023 according to Epoch
+2023 ...................................................................................................................................................... 59
+Figure 38: Development of relevant ML models by country between 2003 and 2023 ............. 60
+Figure 39: Development of LLMs by country between 2002 and 2022 according to
+Epoch AI .............................................................................................................................................. 61
+Figure 40: LLMs by country. Development from 2017 to 2024 according to Epoch AI ............ 61
+Figure 41: Major language models by country, here excluding USA, China and
+multinational (2024) ....................................................................................................................... 62
+
+===== PDF_PAGE 7 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 1
+
+Summary
+In the race for international leadership in the field of artificial intelligence, China has been in first
+place for years - both in terms of the number of AI research contributions and of citations. Since
+the publication of ChatGPT at the end of 2022 at the latest, this contradicts the general impression
+that the main AI innovations are currently coming from the USA rather than China, as well as the
+general assessment that German and European research is also making important contributions to
+the AI development. One reason for this divergence is the fact that AI is a very heterogeneous field
+of research and innovation that consists of different technologies, methods and applications. A
+standardized definition does not yet exist. However, adequate research field definitions are essen-
+tial for country comparisons based on bibliometric and patent analyses.
+This discussion paper is intended as a contribution to the definition of the research and innovation
+field of "artificial intelligence" and to the question of the extent to which AI technologies can be
+classified as "advanced" or "less advanced". This is because the development of this field of research
+is very dynamic and is characterized by leaps in innovation . The nature of these changes can only
+be understood by taking a closer look at the technologies themselves which in turn contributes to
+a better understanding of the bibliometric figures.
+To answer the research questions, eight relevant bibliometric studies and the currently best-known
+classification scheme for machine learning (ML) systems are first analyzed. At the same time, infor-
+mation is collected to answer the question of quality levels. In addition to the literature review, the
+structures of AI textbooks and AI degree programs w ere analyzed. And a total of 18 expert inter-
+views were conducted between March and September 2024 with the aim of gaining a deeper un-
+derstanding of the research subject and its historical development.
+As a result, this study presents its own keyword list with 19 main entries and 72 subentries, which
+reflects the current status of the research and innovation field of AI. The list represents a synthesis
+of the studies examined, as it was found that none of the existing lists fully cover the field of re-
+search as it currently presents itself. Our own keyword list covers both the established AI research
+areas (symbolic AI) and the machine learning -based research fields that are currently in the fore-
+ground (statistical AI). It also takes into account central application fields of AI, such as robotics,
+automation, facial recognition or machine translation, which are also important for the develop-
+ment of AI technologies in addition to basic research. With regard to the question of the quality
+levels of AI technologies, specific combinations of keywords from the list can be used for further
+analyses.
+The research shows that generative AI and large language models are currently the most advanced
+areas of AI research. The development of large language models require s extensive know-how,
+enormous computing capacities and the processing of enormous amounts of data . However, ac-
+cording to the conclusion of the discussion on approaches to determining quality levels, the current
+dominance of language models should not obscure the fact that the older AI research areas, which
+are now referred to as good -old-fashioned AI (GOFAI), also contribute to progress and should
+therefore be given appropriate consideration when comparing national research profiles and per-
+formances.
+
+===== PDF_PAGE 8 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 2
+
+Summary in German
+Im Wettlauf um die internationale Führungsrolle im Bereich „Künstliche Intelligenz“ liegt China seit
+Jahren auf Platz 1 – und zwar sowohl im Hinblick auf die Anzahl der KI-Forschungsbeiträge als auch
+bei den Zitationen. Dies widerspricht spätestens seit der Veröffentlichung von ChatGPT Ende 2022
+dem generellen Eindruck, dass die wesentlichen KI -Innovationen derzeit nicht aus China, sondern
+aus den USA kommen sowie der allgemeinen Einschätzung, dass auch die deutsche und europäi-
+sche Forschung wichtige Beiträge zur KI-Entwicklung liefern. Ein Grund für dieses Auseinanderklaf-
+fen ist die Tatsache, dass KI ein sehr heterogenes Forschungs - und Innovationsfeld ist, das aus
+verschiedenen Technologien, Methoden und Anwendungen besteht. Eine einheitliche Definition
+gibt es bisher nicht. Für Ländervergleiche, die auf bibliometrischen Analysen und auf Patentauswer-
+tungen basieren, sind adäquate Forschungsfelddefinitionen aber essentiell.
+Dieses Discussion Paper versteht sich als Beitrag zum einen zur Eingrenzung des Forschungs- und
+Innovationsfeldes „Künstliche Intelligenz“ und zum anderen zur Frage, inwiefern man KI-Technolo-
+gien als „fortgeschritten“ oder „weniger fortgeschritten“ klassifizieren kann. Denn die Entwicklung
+des Forschungsfeldes verläuft sehr dynamisch und ist von Innovationssprüngen geprägt, die sich
+nicht alleine über Publikations- und Patentanalysen erschließen.
+Zur Beantwortung der Forschungsfragen werden zunächst acht einschlägige bibliometrische Stu-
+dien sowie das derzeit bekannteste Klassifikationsschema für Machine-Learning (ML)-Systeme ana-
+lysiert. Dabei werden gleichzeitig Hinweise zur Beantwortung der Frage nach den Qualitätsleveln
+gesammelt. Zusätzlich zur Literaturauswertung wurde die Struktur von KI-Lehrbüchern und KI-Stu-
+diengänge analysiert. Und es wurden zwischen März und September 2024 insgesamt 18 Experten-
+interviews mit dem Ziel geführt, ein tieferes V erständnis des Forschungsgegenstands und seiner
+historischen Entwicklung zu erhalten.
+Im Ergebnis präsentiert diese Untersuchung eine eigene Keywordliste mit 19 Haupt - und 72 Un-
+tereinträgen, welche den aktuellen Stand des Forschungs - und Innovationsfeldes KI abbildet. Die
+Liste stellt eine Synthese aus den untersuchten Studien dar, denn es zeigte sich, dass keine der
+existierenden Listen das Forschungsfeld vollständig abdecken. Die eigene Keywordliste deckt so-
+wohl die etablierten KI -Forschungsbereiche (symbolische KI) als auch die aktuell im Vordergrund
+stehenden Machine Learning-basierten Forschungsfelder (statistische KI) ab. Außerdem berücksich-
+tig sie zentrale Anwendungsfelder der KI, wie z.B. robotics, automation, facial recognition oder ma-
+chine translation, die neben der Grundlagenforschung ebenfalls für die Entwicklung von KI -Tech-
+nologien von Bedeutung sind. Zur Vertiefung der Frage nach den Qualitätsleveln von KI-Technolo-
+gien kann sie außerdem als Ausgangspunkt für weitere Analysen verwendet werden.
+Die Recherche zeigt, dass Generative KI bzw. Large Language Models derzeit die anspruchsvoll -
+sten KI-Forschungsgebiete sind. Erforderlich sind hier neben umfangreichem Know -How enorme
+Rechenkapazitäten und die Verarbeitung enormer Datenmengen. Allerdings, so unser Fazit der Dis-
+kussion um Ansätze zur Bestimmung von Qualitätsleveln, sollte die aktuelle Dominanz von Sprach-
+modellen nicht darüber hinwegtäuschen, dass auch die älteren KI -Forschungsbereiche, die inzwi-
+schen als Good-old-fashioned AI (GOFAI) bezeichnet werden, zum Fortschritt beitragen und des-
+halb bei Performance-Vergleichen entsprechende Beachtung finden sollten.
+
+===== PDF_PAGE 9 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 3
+
+Acknowledgments
+This paper was written as part of the project „Privatheit, Demokratie und Selbstbestimmung im
+Zeitalter von Künstlicher Intelligenz und Globalisierung (PRIDS)” (Privacy, Democracy and Self-De-
+termination in the Age of Artificial Intelligence and Globalization), funded by the BMBF under the
+reference 16KIS1374K. The authors would like to thank the BMBF for funding and the experts inter-
+viewed for their advice, assessments and valuable comments. Special thanks go to: Aljoscha Bur-
+chardt, Andrea Zielinski, Bernhard Nebel, Christian Elmmauer, Djerdj Horvat, Frank Ebbers, Frederik
+M. Metzger, Jakub Zavrel, Kinga Schumacher, L. Wolfgang Bibel, Michael Friedewald, Murat
+Karaboga, Phil Shapira, Philine Warnke and Sonia Gruber. Parts of the paper were originally written
+in German and then translated into English by Deepl.com.
+
+===== PDF_PAGE 10 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 4
+
+1 Research question and method
+"Artificial intelligence ” is a heterogeneous field of research consisting of various technologies,
+methods and applications. To date, there is no uniform definition for this field of research. Never-
+theless, country comparisons on the performance of the respective AI research are presented reg-
+ularly (see e.g. AI Index Report 2024 or OECD 2024). The country comparisons are usually based on
+publication data derived from keyword searches in literature databases. Or research field definitions
+("subject areas" or "fields") are used, which can be selected in the respective literature databases.
+In many cases, it is not made transparent how the research field "artificial intelligence" is defined,
+which sub-areas it comprises and which it does not. Accordingly, the structure and dynamics of the
+research field of AI remain in the dark, and the country comparisons often contribute little to an
+understanding of the development of artificial intelligence beyond the ranking.
+In terms of content, it is noticeable in the country comparisons that China has been in first place
+for years - both in terms of the number of AI research articles and of citations. Since the publication
+of ChatGPT at the end of 2022 at the latest, this contradicts the general impression that the main
+AI innovations are currently coming from the USA rather than China, as well as the general assess-
+ment that German and Europe an research is also making important contributions to AI develop-
+ment (see Bitkom 2023).
+It has been suggested that the reason for this contradiction is primarily a size effect, as there are
+many more AI researchers active in China than in other regions of the world. However, it has also
+been claimed that Chinese research contributions lack "r eal substance" and that they actually lag
+two to three years behind US research (see Toner, Xia, Ding 20231 ). Others, on the other hand, do
+not want to write China off too early in the competition for AI leadership (e.g. Brainard; Normile
+2022 or Min et al. 2023). The central question that studies such as these leave unanswered is: What
+is high-quality or advanced AI research? What characterizes it and how well do the proposed met-
+rics cover the entire AI development process?
+This working paper is intended as a contribution to the current discussion about an adequate def-
+inition of the research field of "artificial intelligence" and to the question of the extent to which AI
+technologies can be classified as "advanced" or "less advanced". The aims of this paper are there-
+fore to identify and compile a keyword list that can be used as a basic definition for the research
+field of AI and is also suitable for further analysis, as well as to discuss approaches to defining
+advanced or "high-level" AI as opposed to “less advanced” or "standard AI".
+To answer the two research questions, eight relevant bibliometric studies and the currently best -
+known classification scheme for machine learning (ML) systems are first analyzed.
+The starting point for the bibliometric analysis is the frequently cited OECD expert study from 2020
+entitled "Identifying and measuring developments in artificial intelligence: Making the impossible
+possible". At first glance, the keyword list used there with its 168 entries appears to be very broad
+and unspecific in parts. A step-by-step delimitation and concretization of the AI sub-areas is then
+attempted on the basis of the work of Liu, Shapria, and Yue 2021, Gao and Ding 2022, CSET 2023,
+Zeta Alpha 2023 and the Würzburg Group 2023.
+The work of NLLG 2023 and Epoch AI 2024 places a special focus on machine learning models and
+large language models (LLMs). The OECD evaluations for the OECDS.ai web tool focus on the spe-
+cific fields of application of AI (OECD.ai 2024).
+
+1 Toner, Xia, Ding 2023 claim that “Chinese LLMs are at least two or three years behind their state -of-the-art counterparts in the United States (...).
+Worse, advances in China rely a great deal on reproducing and tweaking research published abroad".
+
+===== PDF_PAGE 11 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 5
+
+The studies mentioned are analyzed below with a view to an "ideal" basic definition of AI, a defini-
+tion that is broad enough to cover the entire field including current developments and at the same
+time specific enough to generate as few false hits as possible.
+When analyzing the methodological and comparative studies, attention was paid to indications that
+could provide answers to the question of what distinguishes high -quality AI from standard AI . In
+addition, AI textbooks and AI degree courses were analyzed with regard to their respective struc-
+turing of the research area. And a total of 18 expert interviews were conducted between March and
+September 2024 (in person, by telephone or in writing by email). The aim of the interviews was to
+gain a deeper understandi ng of the research subject, the structure of the research field and the
+respective contexts and to obtain further information on possible distinctions between quality lev-
+els. The results of the interviews do not form a separate chapter in this paper, but are included at
+various points in the evaluation of the studies and when compiling our own keyword list.
+The most important finding of this part of the research is that the currently most challenging area
+of AI research is also the area that is currently attracting the most attention from researchers and
+the public: The field of generative AI, or large language models. This area is particularly challenging
+because, in addition to extensive expertise in neural networks, it requires enormous computing
+capacities and the processing of huge amounts of data. However, AI research also encompasses
+other sub-areas, such as knowledge ontologies or rule -based decision support systems. These AI
+research areas, which existed before the current hype surrounding large language models, are now
+referred to as Good-Old-Fashioned AI (GOFAI, see e.g. Morris 2023).
+In fact, the current dominance of language models should not obscure the fact that these other
+areas of AI research have also contributed to progress and will continue to do so in the future.
+Combinations with GOFAI technologies are particularly promising in research work that is currently
+dealing with the weaknesses of large language models, namely their unreliability and "hallucina-
+tion", or in specialized applications that require fewer resources to develop. Accordingly, a consid-
+eration of relevant AI research and innovation areas should take into account new and old research
+areas as well as purely fundamental areas and specific applications.
+
+===== PDF_PAGE 12 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 6
+
+2 Bibliometric definitions of AI
+2.1 OECD 2020: Starting point for a basic definition of AI
+The starting point for the investigation of bibliometric definitions of AI research is the much-cited
+OECD study from 2020 with the revealing title "Identifying and measuring developments in artificial
+intelligence: Making the impossible possible" (OECD 2020). According to the authors, the definition
+of AI research seems impossible because methods and findings from different scientific disciplines
+are used in this research area, because some AI technologies have developed into their own sub -
+areas that are highly visible in the community and others have not ; because there have been re-
+peated fundamental changes of directions and because AI technologies have also developed fur-
+ther within application areas, such as genetics or robotics, and can no longer be considered sepa-
+rated from these (OECD 2020, p. 12f).
+In order to make the seemingly impossible possible, the authors of the OECD study used a text
+mining approach to identify similar scientific articles and contributions and describe them by using
+keywords. In addition to scientific publications, sources for the text mining procedure included pa-
+tents and software (which were published on the Github platform, see OECD 2020, p. 12). As a
+result, the OECD study presents a list of 168 keywords, ranging from "action recognition" to
+"xgoost" (see Table 1).
+Of the 168 keywords, 39 were described as "somewhat general" in a subsequent expert review
+process (OECD 2020, p. 67), including keywords such as "brain -computer interface", "image pro-
+cessing", "text mining" or "robot". And even without these somewhat general keywords - which
+would generate a large number of non-AI-related hits in a corresponding search - the OECD's key-
+word list appears to be very broad and partly unspecific.
+Since the publication of the keyword list , the OECD itself has not made any attempts to create a
+more concise list. However, in a follow-up study on AI patents from 2023, it defined eleven generic
+terms for AI technologies in order to narrow down the field of research. These were published in
+the report "What technologies are at the core of AI? An exploration based on patent data" (OECD
+2023). The eleven generic terms are as follows:
+• Algorithms,
+• Chatbot,
+• Autonomous driving,
+• Computer or image vision,
+• Feature engineering,
+• General AI,
+• Networks (deep learning),
+• Natural language processing,
+• Recognition or detection,
+• Robotics and
+• Speech (see Table 2).
+
+===== PDF_PAGE 13 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 7
+
+Table 1: The OECD 2020 keyword list
+
+===== PDF_PAGE 14 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 8
+
+Source: OECD 2020, p. 66f.
+The 168 keywords from the 2020 list were assigned to the above listed eleven generic terms, so
+that the 2023 definition does not differ from the 2020 definition at the level of individual technol-
+ogies. However, the introduction of eleven topic clusters represents a conceptually interesting fo-
+cus. According to the OECD, clustering is based on an iterative process in which results from word
+pair analyses were evaluated by experts (OECD 2023, p. 19f). According to the OECD, the eleven AI
+topic clusters identified in this way are the "AI main topics" (see Table 2).
+
+===== PDF_PAGE 15 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 9
+
+Table 2: AI definition and clusters according to the OECD 2023 patent analysis
+
+===== PDF_PAGE 16 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 10
+
+Source: OECD 2023, p. 42f
+Although patent data was only available up to 2018, the cluster list includes topics such as "chat-
+bot", "natural language processing" and "speech", i.e. topics that have only subsequently attracted
+greater attention in the scientific community and, since the publication of ChatGPT at the end of
+2022, in the wid er public. On the other hand, the list lacks keywords that could address current
+developments more specifically, such as "large language models", "generative AI" or "transformer".
+The OECD has become an important point of contact for AI analyses and AI country comparisons
+in the areas of regulation, governance analysis and trustworthy AI. A large number of studies and
+policy papers have been published in recent years (see www.oecd.org/en/topics/policy-issues/arti-
+ficial-intelligence.html). Since the beginning of 2024, a web tool called "Live data" has been availa-
+ble at the web address https://oecd.ai/en, which enables country comparisons of scientific perfor-
+mance in selected AI research fields. The evaluations are based on data from Scopus and OpenAlex.
+This web tool is discussed in more detail in section 2.8.
+However, following the fundamental 2020 study and the 2023 study, which focused on patent ana-
+lyses, the OECD did not undertake any further bibliometric work of its own to define AI. In March
+2024, it did publish an "Explanatory Memorandum on the updated OECD definiton of an AI system"
+(OECD 2024a) entitled "Update". However, this "update" does not refer to the definition of AI re-
+search fields, but to another strand of the OECD's involvement with AI, which is concerned with the
+verbal definition of AI and i ts functions and applications. A verbal description of what AI systems
+are and what they can do is a precondition for an governing and regulating the technology and its
+applications. Accordingly, the 2024 update does not refer to the 2020 methodological report, but
+to the 2019 OECD Guidelines for Trustworthy AI (OECD 2019).
+In the 2024 update of these guidelines, the OECD took into account the fact that AI systems can
+continue to develop even after their implementation, which has corresponding implications for
+regulation (see also OECD 2022). In addition, the updated definition should reflect that AI systems
+can also produce text, speech or images (i.e. "content"), an aspect that was missing in the 2019
+definition.
+The updated verbal definition of AI is:
+"An AI system is a machine-based system that, for explicit or implicit objec-
+tives, infers, from the input it receives, how to generate outputs such as pre-
+dictions, content, recommendations, or decisions that can influence physical
+or virtual environments. Different AI systems vary in their levels of autonomy
+and adaptiveness after deployment." (OECD 2024a, p. 4).
+
+===== PDF_PAGE 17 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 11
+
+The distinction between autonomy and adaptivity introduced here seems particularly interesting
+for the more precise definition of AI technologies. This is because AI systems with a high degree of
+autonomy and adaptivity differ from simple AI systems or from non-AI systems that work with fixed
+rules. The extent to which such conceptual distinctions are helpful in guiding bibliometric studies
+on AI research will not be discussed in depth here. However, it is clear that AI systems can have
+different levels of quality resulting from the interaction of specific AI technologies.
+For a more precise definition of the AI research field, further bibliometric studies are consulted
+below, which were carried out after the 2020 OECD study.
+2.2 Liu, Shapira and Yue 2021: Three keyword lists for the defini-
+tion of AI
+The first study was conducted by Liu, Shapira and Yue and was published in Scientometrics in 2021
+under the title "Tracking developments in artificial intelligence research: Constructing and applying
+a new search strategy". The methods section comprises ju st under 20 pages, the analysis section
+(country comparison of output and citations, top institutions, collaboration patterns, funding spon-
+sors, scientific disciplines involved) 11 pages.
+In order to characterize the research field of AI, a multi -stage procedure was used, which mainly
+aims at completeness, i.e. with aims to identiy all AI research areas, even those that don't look like
+it at first glance (Liu, Shapira and Yue 2021, p. 3156f). The starting point for the research was scien-
+tific articles from eight Web of Science (WoS) subject categories and from 19 high-ranking scientific
+journals. From the more than 40,000 documents (published between 2010 and 2020), "author key-
+words" and "keywords plus" were then extracted and displayed according to frequency. The result
+is a list of 204 keyword candidates, which was further specified. For this purpose, all 204 high -
+frequency terms were combined with all ten keywords from the previously obtai ned "core lexical
+list" (co-occurance analysis). The ten "core lexical keywords" are:
+• Artifcial Intelligen*,
+• Neural Net*,
+• Machine* Learning,
+• Expert System$,
+• Natural Language Processing,
+• Deep Learning,
+• Reinforcement Learning,
+• Learning Algorithm$,
+• Supervised Learning,
+• IntelligentAgent* (Liu, Shapira and Yue 2021, p. 3160).
+The co-occurance analysis resulted in a so -called hit ratio, i.e. a percentage value that indicated
+how many of the terms from the core lexical list were found in the corresponding article or in the
+extended publication pool. A threshold value was then def ined, above which a specific keyword
+from the list of the 204 candidates should be included in the final keyword list: From a threshold
+value of 70% the keyword was directly included in the final list (result: 28 keywords, see Table 3), at
+a threshold value between 30% and 70% a manual review decided on the inclusion (result: 62 key-
+words included, see Table 4).
+
+===== PDF_PAGE 18 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 12
+
+Table 3: The 28 AI keywords from the expanded definition
+by Liu, Shapira and Yue 2021
+
+Source: Liu, Shapira and Yue 2021, p. 3161f (list of 28 with a hit ratio between 100 and 70%, all "included")
+Table 4: The 62 additional AI keywords ("Include") of the definition by Liu, Shapira
+and Yue 2021
+
+===== PDF_PAGE 19 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 13
+
+===== PDF_PAGE 20 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 14
+
+Source: Liu, Shapira and Yue 2021, p. p. 3163-66 (list of 62 with a hit ratio between 70% and 30%, only keywords marked with
+"Include" were counted)
+The results of this extensive research were therefore three keyword lists, the core lexical keywords
+(10 entries, see list above), the keywords taken directly from the co -occurance check (28 entries,
+see Table 3) and the additional 62 keywords with lower co-occurance values after manual checking
+(see Table 4).
+The broad, multi-level approach suggests that these three lists comprehensively represent the AI
+research field (at the time of the survey). For example, care was also taken to ensure that Chinese
+reference sources were taken into account when selecting the overall corpus (p. 3158). At the same
+time, the keyword set of Liu, Shapira and Yue appears more precise than that of the OECD of 2020,
+not only because it uses fewer terms overall, but also because it contains fewer terms that could
+overlap with non-AI research areas.
+However, some terms that had a major impact on the AI debate in 2024 did not make it onto Liu,
+Shapira and Yue's list. They were either excluded because there were too few articles on these topics
+at the time of the survey or because they did not yet form their own research areas. Exa mples of
+keywords that are relevant in 2024 but were excluded by Liu, Shapira and Yue in 2021 because they
+did not meet the threshold are: "computer vision", "natural language generation", "generative
+model" or "chatbots". Examples of terms that were not yet research areas in their own right at the
+time of the survey and therefore could not appear as keyword candidates are : "large language
+models", "transformer" or "generative AI".
+Furthermore, there is no evaluation of the development of the strength of the research fields over
+time. The authors fail to answer the obvious question of how the individual, elaborately identified
+research areas have developed over the 10 years under rev iew, which sub -areas have become
+stronger and which weaker.
+2.3 Gao and Ding 2022: Basic definition and top increaser
+One study that set out to do exactly this, namely to determine the dynamics in the field of AI re-
+search, is the study by Gao and Ding, which was published in the journal "Multimedia Tools and
+Applications" in 2022 under the title "The research landscape on the artificial intelligence: A bibli-
+ometric analysis of recent 20 years".
+As in the OECD study 2020 and in Liu, Shapira and Yue 2021, a multi-stage keyword analysis pro-
+cess is used to first try to define the research field of artificial intelligence comprehensively and
+specifically at the same time. The starting point is again scientific articles from the Scopus data-
+base; the first selection round is based on the three keywords "artificial intelligence", "machine in-
+telligence" and "machine learning". Articles submitted to 15 different renowned AI conferences
+
+===== PDF_PAGE 21 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 15
+
+were also analyzed. In addition, Gao and Ding consider patent data from the Derwent Innovation
+Index (DII) (Gao; Ding 2022, p. 12975f).
+As a result of their multi-stage extraction process, Gao and Ding present a keyword list that char-
+acterizes AI research in the years between 2015 and 2019. The list consists of 20 entries:
+• Machine Learning,
+• Learning algorithm,
+• Artificial intelligence,
+• Support vector machine,
+• Classification,
+• Neural network,
+• Artificial neural network,
+• Prediciton,
+• Random forest,
+• Feature selection,
+• Deep learning,
+• Data mining,
+• Deep neural network,
+• Supervised learning,
+• Computer vision,
+• Reinforcement learning,
+• Big data,
+• Generic algorithm,
+• Decision tree,
+• Natural language processing (Gao; Ding 2022, Table 6, p. 12990, 2015-2019).
+In principle, this list could also be used as a basic definition for AI, although it is noticeable that it
+has fewer entries and is also less specific than the keyword set from Liu, Shapira and Yue 2021
+presented above. Entries such as "classification", "prediction", "data mining" or "big data" also ap-
+pear as entries that are also relevant outside the AI research field and could therefore result in many
+non-AI hits in a separate evaluation.
+The comparison of the lists also shows that the keyword lists can generally turn out differently, even
+though the chosen approach is similar. Slight variations in the type of restriction or in the setting
+of threshold values for cluster creation can lead to very different results.
+Following the compilation of the keyword list, Gao and Ding examine the question of which AI
+research fields contain the most publications, i.e. the question of which research topics the AI com-
+munity has focused on in different time periods.2
+For that matter they carry out a co-citation analysis of the 200 most-cited AI articles. The resulting
+co-citation clusters show the AI subdomains in which research activities are concentrated. Accord-
+ing to Gao and Ding, these are the following four areas for the period 2010 to 2019:
+• Random forest (Numerical computation classification, distribution, prediction, regularization,
+regression tree),
+• Deep learning (neural network, dimension reduction, tree search, visual/speech recognition),
+• Evolving fuzzy grammar (image features, face detection, pattern recognition, natural language
+processing, transfer learning, text expression),
+
+2 Although Liu, Shapira and Yue 2021 did not explicitly pursue this question, but their tables show that the top 4 topics are " Support Vector ma-
+chine", "Random Forest", "Learning Model" and "Perception" (column "B" in table 2 and 3 in Liu, Shapria, Yue 2021) .
+
+===== PDF_PAGE 22 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 16
+
+• Machine learning (comparison, data clustering, data mining, representation learning, text cat-
+egorization) (see Table 5 in Gao and Ding 2022, p. 12984f, the terms in brackets are called
+"topics" by the authors).3
+Gao and Ding do not limit themselves to simply listing relevant keywords, but also attempt to trace
+a development over the last years. To this end, they present a list of AI research fields that they
+refer to as "top increasers". These are topics that have recently been discussed more frequently in
+scientific journal articles ("journals"), but especially at scientific conferences ("conferences"), than in
+previous periods. Their survey covers the years 2015 to 2019.
+Conference papers are regarded as an early indicator for the development of a research field in the
+technical disciplines and especially in the field of computer science, because articles can be pub-
+lished more easily and quickly. It can therefore be expected that these topics will also be dealt with
+in the journals with a time delay.
+Gao and Ding identify the following 21 AI fields, which they refer to as "top increasers", as the main
+or future topics of AI for the period between 2015 and 2019:
+• Supervised Learning,
+• Transfer Learning,
+• Mobile Robot,
+• Human-agent interaction,
+• Humanoid Robot,
+• 3D Architecture
+• Image Segmentation
+• Action Recognition
+• Machine Translation,
+• Smart Grid
+• Convolutional Neural Network CNN,
+• Deep Learning,
+• Deep Neural Network,
+• Generative Adversarial Network GAN,
+• Recurrent Neural Network RNN
+• Robotics
+• Image Processing
+• Training Data
+• Computational Intelligence
+• Object detection
+• Pattern recognition (Gao; Ding 2022: list of "burst terms" on p. 12992 plus "top increaser"
+2015-2019 read from fig 7 on p. 12994).
+Gao and Ding's basic definition with the 20 keywords and the 21 "Top Increasers" could also be
+used for your own research; Gao and Ding proceed with great methodological care and document
+their sub-steps in detail, so that it becomes clear how they arrived at which results. However, the
+limitations and boundaries of their analyses also become apparent.
+The most obvious limitation is the fact that Gao and Ding´s list differ greatly from the other lists
+presented here. Although there are overlaps for top terms such as "artificial intelligence", "machine
+learning", "deep learning" or "neural network", the collections of terms vary greatly as a whole.
+
+3 The difference to the ranking of Liu, Shapira and Yue 2021 is obvious, there is only one overlap with "Random forest", all other terms are different.
+
+===== PDF_PAGE 23 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 17
+
+Another limitation is of a temporal nature, because the analysis of publication data is by nature
+past-oriented and therefore the current edge of AI development is disregarded. In the OECD study
+from 2020, as well as in Liu, Shapira and Yue from 2021 and again in Gao and Ding 2022, some of
+the AI topics that appear to be particularly relevant in 2024 did not make it into the keyword lists.
+For Gao and Ding, these are: multi -agent systems, natural language processing, computer vision,
+face recognition, image analysis, image classification and sentiment analysis. According to Gao and
+Ding, although there has been increased activity in these AI research fields in recent years ("key-
+words with strong bursts"), these terms did not make it above the set threshold in the co-occurance
+analysis ("[did] not reach the threshold", Gao; Ding 2022, p. 12987).
+2.4 CSET 2023: Most elaborated basic definition of AI
+Probably the most elaborate basic definition of AI comes from the US Center for Security and
+Emerging Technology (CSET) and was published in July 2023 under the title "Identifying AI Re-
+search" (CSET 2023). According to Wikipedia, CSET is a "think tank dedicated to policy analysis at
+the intersection of national and international security and emerging technologies, based at
+Georgetown University's School of Foreign Service" (Wikipedia "Center for Security and Emerging
+Technology"). CSET focuses on technologi es that are of strategic importance to the USA or that
+have important security policy implications. Analyzing the performance of AI research and AI inno-
+vations in international competition is a central topic of the CSET departments "Compete" and "As-
+sessment", in which, according to the CSET website, eight scientists are active. They are supported
+by a "data team” consisting of 15 scientists (see https://cset.georgetown.edu/research-topic).
+The CSET analyses are a central source for the annual AI Index Report which has been published
+annually since 2017 by the University of Stanford (AI Index Report 2023). As this report is now
+regarded as the standard work for country comparisons in the field of AI and is therefore often
+cited, the analysis of the CSET methodology is particularly interesting.
+The 2023 CSET paper is a methods paper in which four different AI classification options are com-
+pared with each other. The aim of the comparison is to find out which classifications best describe
+the AI research field, i.e. which search strategies can be used to find the most relevant publications.
+The classification options investigated are as follows:
+• a keyword-based search based on the keyword list that CSET compiled manually in 2020 and
+which contains a total of 104 English entries (Approach 1),
+• a "Fields of Study"-based search, which is based on the 19 top-level and 34 subfield categories
+of the "Microsoft Academic Graph" (MAG) platform, which existed until 2021
+(Approach 2),
+• an "ArXiv Classifier"-based search based on the six ArXiv categories "artificial intelligence",
+"computation and language", "computer vision", "machine learning", "multiagent systems" and
+"robotics" (Approach 3),
+• a "Map of Science Research Clusters"-based search in which the 120,000 research clusters of the
+Emerging Technologies Observatories (ETO) were used for mapping AI research (Approach 4).
+All four search strategies were applied to the so-called "CSET Merged Corpus" - partly with the help
+of an AI tool that was trained for the automatic assignment of unclassified articles. The "CSET
+Merged Corpus" is an internal database in which more than 70 million AI-relevant publications have
+been recorded since 2010. According to CSET 2023, the CSET Merged Corpus consists of "journal
+
+===== PDF_PAGE 24 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 18
+
+articles, conference proceedings, dissertations, thesis papers, books, and other scientific docu-
+ments" (p. 34). This means that all publications listed on the ArXiv platform and all publications
+from relevant AI conferences are included in the CSET Merged Corpus and can be searched there.4
+The first step focused on the number of relevant hits: The results show that the fields-of-study and
+ArXiv classifier search strategies generate the most hits (2.7 million each). The keyword -based
+search identified 2.5 million relevant articles. The Map of Science search strategy produced only 1.7
+million hits (see Table 5).
+Table 5: AI publications in the CSET Merged Corpus by search strategy
+
+Source: CSET 2023, Table 3, p. 10
+Further comparisons were made with regard to the availability of country information, research insti-
+tutions and languages (English, Chinese, other languages). The different strategies show various ad-
+vantages and disadvantages. The authors conclude that different search strategies should be used
+depending on the research question: "the divergence in results from these four methods (…) indicates
+that analytic results will often be sensitive to the choice of method for identifying AI/ML - relevant
+publications" (CSET 2023, p. 14).
+In the second step, the comparison of the search strategies focused on the overlap of the hit lists. It
+turned out that the ArXiv classifier is best suited to finding articles published by the relevant AI con-
+ference platforms (81%). The keyword search performs rather poorly in this comparison with only 50%
+of articles found. This means that ArXiv and AI conference platforms only represent a section of AI
+research and are not representative of the entire AI research landscape (CSET 2023, p. 5 and 14). The
+aforementioned repositories are increasingly dealing with emerging AI research topics for which there
+may not yet be any equivalents in existing keyword lists or subfield categories.
+As a result, the CSET keyword list seems best suited to structuring the AI research space, firstly because
+it contains the categories of other search strategies and secondly because it was created on the basis
+of an extremely extensive overall corpus. Acco rding to CSET 2023, the keyword list was compiled
+manually ("manual curation", p. 6) and is continuously supplemented and edited. 5 It forms the basis
+
+4 A more detailed description of the Merged Corpus can be found at https://eto.tech/dataset -docs/mac/#identifying-subjects. The corpus is ap-
+parently updated on a weekly basis.
+5 A manual comparison of the CSET keyword lists from 2022 (CSET 2022, Appendix D) and 2023 (CSET 2023, Appendix C) revealed eig ht additional
+entries and five deletions in the more recent version.
+
+===== PDF_PAGE 25 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 19
+
+for many evaluations and, according to CSET, represents a "straightforward solution" that is easy to
+implement (CSET 2023, p. 6). The list consists of a total of 104 English keywords (see Table 6).
+Table 6: CSET 2023 keyword list (104 entries)
+- active learning
+- adaptive learning
+- anomaly detection
+- artificial intelligence
+- artificial neural network
+- associative learning
+- autoencoder
+- autonomous navigation
+- autonomous system*
+- autonomous vehicle*
+- average link clustering
+- back propagation/ Backpropagation
+- binary classification
+- bioNLP
+- boltzmann machine
+- character recognition
+- classification algorithm
+- classification label*
+- clustering method*
+- complete link clustering
+- computer aided diagnosis
+- computer vision
+- convolutional neural network
+- deep learning
+- ensemble learning
+- evolutionary algorithm
+- fac* expression recognition
+- fac*identification
+- fac* recognition
+- feature extraction
+- feature learning
+- feature matching
+- feature selection
+- feature vector
+- feedforward network
+- feedforward neural network
+- fuzzy clustering
+- generative adversarial network
+- gradient algorithm
+- incremental clustering
+- information extraction
+- information fusion
+- information retrieval
+- k-nearest neighbor
+- knowledge-based system*
+- knowledge discovery
+- knowledge representation
+- language identification
+- machine learning
+- machine perception
+- machine translation
+- multi-class classification
+- multi-label classification
+- multitask learning
+- natural language generation
+- natural language processing
+- natural language understanding
+- neural network
+- object recognition
+- one-shot learning
+- pattern matching
+- pattern recognition
+- random forest
+- recommend* system*
+- recurrent network
+- recurrent neural network
+- reinforcement learning
+- restricted Boltzmann machine
+- scene* classification
+- scene* understanding
+- self-driving car*
+- semi-supervised learning
+- sentiment classification
+- single link clustering
+- spatial learning
+- speech processing
+- speech recognition
+- speech synthesis
+
+===== PDF_PAGE 26 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 20
+
+- graph matching
+- graphical model
+- handwriting recognition
+- hierarchical clustering
+- hierarchical model
+- human robot
+- image annotation
+- image classification
+- image matching
+- image processing
+- image registration
+- image representation
+- image retrieval
+- statistical learning
+- strong artificial learning
+- supervised learning
+- support vector machine
+- text mining
+- text processing
+- transfer learning
+- translation system
+- unsupervised learning
+- video classification
+- video processing
+- weak artificial interlligence
+- zero shot learning
+Source: CSET 2023, Appendix C
+However, a closer look at CSET's keyword list also reveals that the latest AI keywords such as "trans-
+former", "chatbots" and "large language models" are missing, i.e. terms that have had a major im-
+pact on AI development since 2022. The CSET experts themsel ves address the need for regular
+updates in the 2023 study: "...developing, evaluating, and maintaining performant queries is a time-
+intensive undertaking. The terms most associated with AI/ML research in 2022 will be different from
+relevant terms in 2012" (p. 6). It can be assumed that the CSET keyword list will be updated in the
+foreseeable future. In contrast to the other studies considered here, which are one-off studies, the
+CSET list is continuously being complemented.
+2.5 Zeta Alpha 2023: Current edge of AI research
+While the studies considered so far have analyzed longer periods of time, there are a number of
+studies that focus on more recent developments in the field of AI. One of these studies was pub-
+lished by Zeta Alpha 2023 under the title "Must read: the 100 mos t cited AI papers in 2022" (Zeta
+Alpha 2023). It deals with the global AI research output between 2020 and 2023.
+Zeta Alpha is a software company from Amsterdam that has been operating a digital platform on
+the topics of AI and neuroscience since 2019. Zeta Alpha calls its platform the "Neural Discovery
+Platform for AI and beyond" (www.zeta -alpha.com, see also Fadaee , Gureenkova, Barrera et al.
+2020). Scientists can enter their research and interest profiles on the platform, and a weekly news-
+letter then alerts them to new publications in their respective research areas. In 2023, the company
+used its expertise in keywo rding and thematic clustering of research articles to characterize the
+research landscape based on the 100 most cited AI articles in 2020, 2021 and 2022.
+It is rather unusual in bibliometric studies to count citations of articles published in the same year
+(plus the first three months of the following year, according to Zeta Alpha). However, if one accepts
+the argument that research in the field of AI is extremely dynamic and that current work is mainly
+based on the latest research results, it is nevertheless interesting to take a look at the method and
+results of Zeta Alpha's study.
+The articles analyzed are articles that were published on the community platform ArXiv, i.e. pre -
+prints, as well as articles that are searchable via the Semantic Scholar platform. In addition to pre -
+prints, journal and conference articles are also available on the Semantic Scholar platform. The rea-
+son for focusing on these two platforms , according to Zeta Alpha is that current AI research is
+
+===== PDF_PAGE 27 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 21
+
+increasingly taking place outside of traditional publication formats. The explosive growth of these
+platforms speaks for their increasing relevance for the global AI research community.
+The procedure for identifying the top 100 cited AI articles is relatively simple, as ArXiv and Semantic
+Scholar already offer rankings according to citations ("sort by relevance"/ "sort by citation count"/
+"sort by most influential papers"). However, the number of citations is not thoroughly shown. Miss-
+ing information was thus was added using the ArXiv API or by manual lookups via Google Scholar.
+The results of the searches were evaluated with regard to the country distribution, the involved
+research institutions and the extent to which companies were involved (see the USA -China com-
+parison in section 5.4).
+Unfortunately, the published study by Zeta Alpha does not contain a more in-depth analysis of the
+content of the top 100 papers, which could provide information about the research topics of the
+community. However, an inquiry to Zeta Alpha revealed that there was an internal thematic clus-
+tering of the top 100 cited articles for the year 2022. This is because the top 100 articles - like all
+other AI articles analyzed for the company's own platform - were assigned to specific AI topics by
+Zeta Alpha. The corre sponding tagging process was developed and refined by Zeta Alpha over
+several years. It is based on a machine learning process in which a so-called Statistical Named Entity
+Recognizer (NER) was trained with 1,000 possible AI concepts (see Fadaee, Gureenkova; Barrera et
+al. 2020, p. 2). The trained algorithm was then applied to new articles to classify them thematically.6
+The analysis of the 100 most cited articles in 2022 results in a total of 45 AI topics. The topics are
+presented in varying degrees of detail, e.g. in the topic "Large Language Models LLMs" there are
+10 subcategories (LLMs -Open Source, LLMs -Code Generation, LLMs -MLOps etc.), in the topic
+"Graph Neural Networks GNN" there is only one (GNN-Molecules). A summary of the topics on the
+first content level results in a total of 22 topics. According to Zeta Alpha, the 100 most cited AI
+articles in 2022 deal with the following topics (sorted by frequency of citation):
+• Large Language Models (LLMs),
+• Multimodal AI,
+• Transformers,
+• Reinforcement Learning,
+• Diffusion Models for ML
+• AI Image Generation,
+• Convolutional Neural Network (CNN or ConvNet),
+• AI for Protein Models,
+• Deep learning,
+• Computer Vision,
+• Graph Neural Networks (GNN),
+• DeepFakes,
+• Machine Learning Operations (MLOps),
+• Large-Scale Weak Supervision Learning,
+• Imitation Learning – Robotics,
+• Genetic Algorithm in Machine Learning – Robotics,
+• Recurrent Neural Network (RNN) Robotics,
+• AI for Tabular Data,
+
+6 Interview with Jakub Zavrel on 1.12. 2023 and personal communication with Mathias Parisot on 5.12.2023.
+
+===== PDF_PAGE 28 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 22
+
+• AI Code Generation,
+• AI Cyber Attack Detection,
+• AI Nuclear Fusion Control,
+• AI Social Media Analysis.
+These 22 topics provide information on the AI subjects that were relevant for the AI community in
+2022. Large language models, multimodal AI and transformers were of particular importance. Half
+of the 100 most-cited papers in 2022 dealt with these three topics.
+However, no corresponding analyses are available for the years 2020 and 2021, and there is no
+corresponding evaluation for 2024 either. It is therefore not possible to carry out evaluations over
+several years to show topic trends. Zeta Alpha has recently started to produce monthly reports on
+the most relevant AI publications (see the "Trends in AI" series at www.zeta-alpha.com/blog-1)
+which indicates a high level of dynamism in the field.
+There are also methodological limitations. Firstly, the focus on the years 2020-2022 means that all
+topics that were important in the past were more or less ignored. Secondly, it is unclear which of
+the identified articles will actually develop into high -impact articles and which will not. This is be-
+cause 14 months is a very short period of time for measuring citation rates. It is well known that
+good research needs time to be noticed by the community; the longer the period of time consid-
+ered, the more citations can be expected for important publications.
+2.6 Würzburg Group 2023: AI topic areas
+An interesting approach to structuring AI research and measuring research output has been imple-
+mented by a group of computer scientists at the University of Würzburg with the web tool "A.I.
+Author Rankings by Publications" (https://airankings.professor-x.de). The web tool is based on data
+from the computer science literature database dblp (database systems and logic programming,
+https://dblp.uni-trier.de), which is operated by the University of Trier and the Leibnitz Center for
+Informatics Schloss Dagstuhl. The dblp database now contains more than seven million entries7 of
+scientific articles in the field of computer science that have been published in international journals
+and at conferences. It also contains monographs and entries from repositories, such as the Com-
+puting Research Repository (CoRR, but not from ArXive) . The dblp database is used by around
+750,000 scientists from all over the world every month. The dblp team curates large parts of the
+database and also provides an API for specific evaluations.
+The background to the Würzburg group's "A.I. Author Ranking" web tool was the desire to obtain
+a quick and up-to-date overview of who is conducting research in which AI research fields and how
+relevant the respective research work is (source: https://airankings.professor-x.de). While the dblp
+database could be used for the former, an auxiliary variable had to be used for the question of
+relevance, namely the h -index of the respective authors. The h -index is reported by Semantic
+Scholar and was combined with the dblp data by the Würzburg researchers.
+A simple search mask (see Figure 1) can be used to select the country and the time period to which
+the query should refer.
+
+7 https://blog.dblp.org/2024/01/01/7-million-publications/
+
+===== PDF_PAGE 29 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 23
+
+Figure 1: Screenshot of the query mask for the AI author rankings by publications
+
+Source: https://airankings.professor-x.de
+As a result, the tool displays the names of scientists who publish in the field of artificial intelli-
+gence, the number of publications and the h-index of each person (see Figure 2).
+Figure 2: Result list of a query in the web tool AI author rankings by publications
+
+Source: https://airankings.professor-x.de
+In addition to the selection of country and time period, the tool enables a narrowing down to a
+specific AI research field. This narrowing down is done by selecting journals and conference publi-
+cations, which the Würzburg group has grouped into nine subject areas. The basis for the thematic
+grouping was the classification used in the international standard AI textbook by Russel and Norvig
+(Kersting et al. 2019). This classification of the AI research field has the advantage that it reflects
+both symbolic AI (today often referred to as "good old -fashioned AI", see Morris et al. 2023) and
+statistical AI (especially machine learning and LLMs, see section 2.7).
+The AI topic areas are:
+• Artificial Intelligence (Core),
+• Problem solving,
+• Knowledge representation and reasoning,
+
+===== PDF_PAGE 30 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 24
+
+• Uncertainty in AI, Probabilistic Models,
+• Machine learning and mata mining,
+• Computer Vision,
+• Natural Language Processing, Computational Linguistics,
+• Human-machine interactions,
+• Robotics,
+• AI and Ethics.
+With the help of the data structured in this way, it would in principle be possible to carry out a
+country-specific evaluation for each of the nine AI research fields and thus to display detailed re-
+search profiles. 8 However, such an analysis currently do not exist.
+What is available, however, is a count of the number of AI publications across all areas by country
+(publications from 2013 to 2022), which was carried out by Brühl (2023) for the journal
+Wirtschaftsdienst (see section 5.5). One problem that arises with the evaluations via this web tool
+is that the data is personal. Brühl notes: "We have also compiled rankings of researchers according
+to the various AI segments, but have not published them here, as this is not about the individual
+excellence of researchers in a specific field, but rather an indicator of research productivity in the
+field of AI as a whole" (Brühl 2023, p. 522). Any further evaluation would therefore have to be carried
+out with aggregated data without reference to individuals.
+2.7 NLLG 2023: Focus on language models
+The importance of large language models, multimodal AI and transformer models for current AI
+research is confirmed and further specified by a study by the Natural Language Learning Group
+(NLLG) at the University of Mannheim. Their study was published on ArXiv in December 2023 under
+the title "What are the most influential current AI Papers?" (Zhang et al. 2023). The Natural Language
+Learning Group is a group of researchers applying bibliometric methods to provide other AI re-
+searchers and experts with guidance in a dynamic research environment. To this end, the 40 most
+cited AI articles published on ArXiv in 2023 were identified and analyzed.
+Similar to the Zeta Alpha analysis, which covers the period from January 2022 to March 2023, the
+NLLG analysis looks at a very short period. The NLL Group focuses on the period between January
+and September 2023. Its analyses are based on 47,331 articles that were published in the selected
+period in the ArXiv-subcategories of Computer Science (CS), Artificial Intelligence (cs.AI), Computer
+Vision and Pattern Recognition (cs.CV), Natural Language Processing (cs.CL) and Machine Learning
+(cs.LG). The citation analysis was performed using Semantic Scholar counts, which were normalized
+by the group using the Newman Z -score (see Zhang et al. 2023, p. 3). Normalization is necessary
+to eliminate cumulative effects that arise when an article appears early in the period under consid-
+eration and thus has more time to be cited.
+The list of the 40 most cited AI articles in the first three quarters of 2023 is reproduced in Zahng et
+al. 2023 with the respective title, publication date and citation values. The list is headed by a tech-
+nical article on ChatGPT, in which Open AI employees document, among other things, how they
+have trained ChatGPT to respond in a socially undesirable way. The article received 1,573 citations
+and a Z-score of 35.1 in the period under review, followed in second place with 778 citations and a
+Z-score of 34.3 by an article on the fine-tuning of Llama 2.
+
+8 According to the Würburg Group, the XML dump of the dblp does contain information about affiliations and their location. This information
+could be used to create country profiles for the AI subject areas used. Email communication from September 23, 2024 with the Data S cience
+Chair of the University of Würzburg.
+
+===== PDF_PAGE 31 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 25
+
+Taken as a whole, the 40 most -cited articles in 2023 deal with topics that can be described using
+these five keywords:
+• LLM,
+• ChatGPT,
+• GPT,
+• LlaMA,
+• Multimodality (Zhang et al. 2023, p. 13).
+In fact, the keyword LLM covers 90% of all top 40 articles: 36 of the 40 most cited papers deal with
+large language models. This AI research topic is listed in the Arxiv database in the Natural Language
+Processing (NLP) category. It is interesting to compare the published and cited articles: While only
+16% of all articles published on ArXiv have NLP as their main category, 50% of the most cited papers
+have NLP as their primary category. And of these papers, 90% deal with LLMs. This shows the cur-
+rent dominance of the AI research field of NLP and large language models.
+Zhang et al. 2023 also show which language models received particular attention from AI research-
+ers in the first three quarters of 2023 (see Figure 3)
+Figure 3: Influential AI models and techniques in 2023 according to Zhang et al. 2023
+
+Source: Zhang et al. 2023, p. 2.9
+
+9 The explanation in the original reads: "Timeline of influential models and techniques from our top -40 list based on normalized citation counts.
+The height of each node is related to the corresponding rank".
+
+===== PDF_PAGE 32 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 26
+
+The analysis of the NLL group shows the paramount importance of language models in current AI
+research. Despite a more sophisticated methodology, however, the same limitations apply here as
+in the analysis of Zeta Alpha: a large part of AI research is ignored because the selected time period
+only covers the past year. However, the study draws attention to specific language models and their
+significance for the AI community.
+2.8 OECD.ai: Focus on application
+The OECD's "Live Data" web tool (https://oecd.ai) offers a special focus on AI applications such as
+robotics or automation. The visualization tool is based on two data sources, the literature database
+OpenAlex (https://openalex.org) and the Scopus database from Elsevier (www.scopus.com).
+Various queries can be sent to the OECD web tool under the menu item "AI Research", such as
+which countries have published the most AI articles in the last 10 years ("AI research publications
+time series by country"). This query, as well as the other selection options shown in Table 7, access
+the OpenAlex dataset.
+Table 7: Screenshot of the query options on the OECD "Live Data" web tool based
+on OpenAlex data
+
+Source: https://oecd.ai/en/data?selectedArea=ai-research
+Similar queries are possible in the second area, here, however, the visualization tool uses Scopus
+as the data basis. A special feature of Scopus is that it allows queries according to the gender of
+authors (see Table 8).
+
+===== PDF_PAGE 33 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 27
+
+Table 8: Screenshot of the query options on the OECD "Live Data" web tool based
+on Scopus data
+
+Source: https://oecd.ai/en/data?selectedArea=ai-research
+To display the countries with the most AI publications the entry point "Top countries in AI publi-
+cations in time" in both areas is be used. Comparing the results on the question of which country
+most AI publications come from, there are only slight differences between the OpenAlex and Sco-
+pus data (Figs. 4 and 5).
+Figure 4: "AI publications time series by country": Share of the top 10 countries in all
+AI publications between 2010-2023 Data from OpenAlex
+
+Source: OECD.ai, basis: OpenAlex, retrieved on 24.9.2024
+
+===== PDF_PAGE 34 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 28
+
+Figure 5: "AI research publications time series by country": Share of the top 10 coun-
+tries in all AI publications between 2010-2023. Data from Scopus
+
+Source: OECD.ai, basis: Scopus, retrieved on 24.9.2024
+The OECD data draws attention to the importance of AI fields of application: Not only basic com-
+puter science research with the development of complex ML models or the optimization of learning
+processes play an important role in the innovation process, but also implementations in application
+fields such as robotics, automation or in the healthcare sector (Figure 6).
+Figure 6: Trends in AI research application areas, publications,
+all countries 2000-2022
+
+Source: OECD.ai, data: OpenAlex, retrieved on 24.9.2024
+
+===== PDF_PAGE 35 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 29
+
+Important AI research is also being carried out in these fields of application, which remains hidden
+if only basic research is considered. Bibliometrically, this can be brought to light by combining
+keywords, as the OECD does with the areas of robotics and automation.
+Another methodological finding from the analysis of the OECD data is that AI-based topic modeling
+methods or automated classifications into research fields are not always helpful or accurate. Figure
+7 shows the top 10 AI research fields and their development since 2010.
+Figure 7: Trends on AI subtopics over time, data from Scopus (2010-2022)
+
+Source: OECD.ai, basis: Scopus, retrieved on 24.9.2024
+The methodological note under the graphic reads: "Data downloads provide a snapshot in time.
+Caution is advised when comparing different versions of the data, as the AI-related concepts iden-
+tified by the machine learning algorithm may evolve in time."
+While AI research areas such as "Deep Learning", "Object Detection" or "Data Mining" are compre-
+hensible, it is questionable why IOU10 appears here. Also, "Prediction" which is a very general term,
+only generates a few hits. A keywords search in OpenAlex (https://openalex.org) yields completely
+different results.11
+It is also possible to display additional topics in the OECD tool, which can be selected via the pull-
+down list (“add topic”). However, for many of the topics that can be selected there, an AI reference
+is not directly recognizable, including topics such as "ACS Aircraft" or "Zebrafish". If these topics
+are selected, only a few hits are found in the OECD evaluation, but Elsevier's algorithm apparently
+identified them as AI sub-areas.
+An alternative is offered by OpenAlex, the other OECD source. The topics ("children") generated by
+OpenAlex with the help of AI are more specific and directly related to AI (Figure 8).
+
+10 Intersection-over-Union (IoU) deals with the evaluation of the overlap between two areas in image processing and object tracking. It is often
+used to measure the accuracy of object recognition models. While Scopus shows around 22,000 publications on this topic for the year 2022 in
+the chart above, OpenAlex, with its far more extensive database, only found 2,204 publications on IoU in the same year (full -text search with the
+combination: 2nd intersection-over-union AND "artificial intelligence").
+11 Prediction AND "Artificial Intelligence" generates 36,150 hits in OpenAlex for the year 2022.
+
+===== PDF_PAGE 36 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 30
+
+Figure 8: AI-generated AI topics according to OpenAlex (excerpt)
+
+Source: OpenAlex.org, for the method see "OpenAlex: End-to-End Process for Topic Classification", https://docs.open-
+alex.org/api-entities/topics, accessed September 20, 2024.
+It is worth taking a look at the total of 76 OpenAlex topics because they contain many specific
+application combinations that are derived directly from the various AI research areas ( Figure 8
+shows an excerpt from the keyword list).
+
+===== PDF_PAGE 37 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 31
+
+3 Analysis of the classification of ML models
+3.1 Epoch 2024: Detailed analysis of ML systems
+Epoch AI is a private research initiative dedicated to the documentation and evaluation of machine
+leaning (ML) models12 (https://epochai.org). In contrast to the studies examined so far, Epoch data
+is not bibliometric data, but data on ML models that have been evaluated individually by experts.
+Since ML models were already mentioned in the Zeta Alpha and NLLG studies and corresponding
+keywords were listed, the presentation of the Epoch AI results does not serve to expand the AI
+keyword list. Rather, the analysis of the Epoch data provides further indications of quality differ-
+ences in AI research because ML models, including language models, can have different perfor-
+mance levels.
+Since 2022, a 13-member Epoch AI expert group has been evaluating ML models in terms of the
+computational power (“compute”) required and the size of the training data set used. Thousands
+of research articles have been analyzed for this purpose. In addition, the team documents the au-
+thors' affiliation to institutions, their nationality, research collaborations, etc. and enters this infor-
+mation into a database. This database now contains evaluations for 800 ML models that were de-
+veloped between 2003 and 2024 (Hensall 2024).
+Figure 9: Development of computing capacities for training machine learning models
+since 2012
+
+Source: AI Index Report 2024, p. 51.
+To be included in the Epoch AI database, an ML model must fulfill the following criteria: There must
+be documentation of the model, the model must contain a learning component, i.e. it must not be
+a "non-learned algorithm“, and it must have been trained with data, i.e. it must be more than a
+purely theoretical description (see Epoch AI 2024). In addition, the model must meet the following
+
+12 Machine learning models are algorithms that learn from data in order to make predictions or decisions. They can be used for v arious tasks, such
+as image classification, recommendation systems or language processing.
+
+===== PDF_PAGE 38 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 32
+
+notability criteria: It must have been cited over 1 ,000 times in literature, the training costs must
+exceed 5 million US dollars and it must have more than 1 million active users per month.
+The AI Index Report of 2024 presents various analyses of Epoch AI data, including how the compu-
+ting capacity requirements for the training ("training compute") of selected ML models have devel-
+oped since 2012 (see Figure 9). The graph shows that powerful ML models require computing ca-
+pacities beyond 1 million pentaFLOPS.
+And Figure 10 shows that the so-called "deep learning era" only began in 2010, although machine
+learning models have been around since the 1960s.
+Figure 10: Relevant AI models ("notable AI models") according to Epoch AI since 1950
+
+Source: https://epochai.org/data/notable-ai-models
+The ML model "AlexNet" is highlighted in color in the figure because it is the ML model described
+by Alex Krizhevsky, Ilya Sutskever and Geoffrey Hinton in their 2012 paper "ImageNet Classification
+with Deep Convolutional Neural Networks", which is commonly regarded as the beginning of the
+new era in AI development (see e.g. Boqiang & Henry 2024).
+All ML models documented by Epoch AI are assigned to so -called "domains", i.e. to research and
+application fields within which they were developed. Figure 11 shows a screenshot of the Epoch AI
+database, in which all 18 domains are listed. Not all domains are equally relevant; in some there are
+few ML models, in others many. If we summarize the most important domains, we can see that by
+far the most ML models have been developed in the areas of "Language" and "Visi on" in recent
+years (see Figure 12).
+
+===== PDF_PAGE 39 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 33
+
+Figure 11: Screenshot of the Epoch AI database with relevant ML models and their as-
+signment to application fields or "domains"
+
+Source: https://airtable.com/appDFXXgaG1xLtXGL/shrhzolGiQCVnwOY5/tbleYEsZORsiYRVTM,
+reference form the Epoch website: https://epochai.org/data/epochdb/documentation.
+Figure 12: Cumulative number of relevant ML models by domain since 1990
+
+Source: Epoch AI, https://ourworldindata.org/grapher/share-of-ai-systems-by-domain
+
+===== PDF_PAGE 40 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 34
+
+The following list, taken from the documentation page of the Epoch AI database, explains the do-
+mains in more detail:
+• Vision: Software for image labeling and picture identification
+• Speech: Interactive voice response systems and models that comprehend and produce spo-
+ken language
+• Games: Models that acquire the skills to compete against proficient adversaries in games
+• Recommendation systems offer suggestions based on user preferences, prominently seen in
+online shopping and media streaming. For instance, Netflix's movie suggestions or Amazon's
+product recommendations are powered by algorithms that analyze users' preferences and
+past behaviors.
+• Robotics systems combine AI with mechanical engineering to create autonomous robots for
+various industries.
+• Image Generation: Systems that convert text instructions into visuals (such as DALL-E, Fotor,
+MidJourney)
+• Multimodal: Systems that amalgamate text, visuals, and sound (like ChatGPT, Microsoft CoPi-
+lot, Google Bard/Gemini)
+• Language: Models that comprehend and convert language (like Google Translate, DeepL, Mi-
+crosoft Translate)
+• Other: Models for 3D visualization, self-driving technology, audio and video manipulation,
+and search optimization algorithms
+• Biology: Models developed for scientific research and studies.
+• Video systems analyze and generate video content, aiding in editing, surveillance, and con-
+tent creation.
+• Audio systems process and generate sound, with applications in music composition, signal
+processing, and sound recognition.
+In addition to the thematic classification of current AI developments, the Epoch AI data offers the
+opportunity to rank ML models according to their requirements: ML models can be considered mire
+advanced the more computer computing capacity is required for training. This is a relatively simple
+parameter that can also be expressed in terms of cost.
+And indeed, this quantitative measure has been used to evaluate AI models in current regulation:
+both the European AI Act and the US Executive Order on AI follow this approach and have defined
+thresholds for computing capacity above which stricter rules fo r language models apply. "Epoch
+AI's database of AI models has been an invaluable resource for policymakers making such endeav-
+ors, says Lennart Heim, a researcher at nonprofit think tank the RAND Corporation (...) 'I think then
+it's fair to say there is no other database in the world which is that exhaustive and rigorous.'" (Hen-
+sall 2024).
+A detailed illustration of the development of required computing capacities is shown in Figure 13.13
+
+13 For the meaning of FLOPS, see e.g. Heim 2023
+
+===== PDF_PAGE 41 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 35
+
+Figure 13: Development of computing capacities for the training of ML models
+
+Source: Roser 2022 on the basis of Epoch AI data
+
+===== PDF_PAGE 42 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 36
+
+Ranking on the basis of computing power has the advantage that the data is easy to collect. How-
+ever, the method has its limits, firstly because computing capacity cannot be increased endlessly
+and secondly because there may be models in the future that require less computing power for the
+same performance.14
+Furthermore, only the large language models are considered here. However, there are many other
+specialized ML models that require less computing power but can still perform highly complex,
+demanding tasks. While LLMs are "generalists", capable of handling many different tasks, special-
+ized AI models are trained with domain knowledge and can be used, for example, in the fields of
+medicine, production, logistics and so on. It is currently unclear which direction the development
+will take. There are areas in which specialized models are superior to large language models (see
+e.g. Drinkall et al. 2024) and there are combinations of LLMs and specialized ML models (see e.g.
+Goncalves). This means that looking at the large language models alone is not enough to determine
+high-quality AI.
+It should also be mentioned that, in addition to rankings based on computing capacity for training,
+there are other technical methods for determining high -performance AI. Since the emergence of
+large language models, various performance -based approaches ha ve been developed in the AI
+community, most of which work with accuracy values. This involves determining accuracy and pre-
+cision in classification tasks, answering questions on a closed text basis, argumentation and rea-
+soning, reading comprehension and inf erence (see e.g. Hahn 2023, Aleph Alpha 2023 or Zhang,
+Michael 2023).
+However, performance-based rankings of ML models have their own limitations. On the one hand,
+no standard method has yet been established in the community, and on the other, minor changes
+to the algorithm or new combinations of training data pools can have a great impact on perfor-
+mance. The accuracy value often used in the AI community for language models therefore fluctu-
+ates from version to version and is therefore also only suitable as a benchmark for ranking AI mod-
+els to a limited extent.
+In summary, it can be stated that the current rankings of AI systems are rather short -lived due to
+the highly dynamic nature of research and development. The assessments of which models or re-
+search groups are currently leading change in rapid succession, meaning that top positions resem-
+ble a challenge cup that often has to be passed on to others (Wasner 2024). And there is also a lot
+of methodological flux; the AI Index Report concludes that the evaluation of AI models is currently
+“somewhat subjective”.15
+
+14 For example, version o1 of Open AI´s ChatGPT presented in September 2024 requires less computing power for training, but more for interfer-
+ence. Nevertheless, ChatGPT o1 has higher performance values than all previous GPT models (see White 2024).
+15 "Admittedly what constitutes advanced or frontier research is somewhat subjective. Frontier research could reflect a model po sing a new state-
+of-the-art result on a benchmark, introducing a meaningful new architecture, or exercising some impressive capabil ities." (AI Index Report 2024,
+p. 19)
+
+===== PDF_PAGE 43 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 37
+
+4 Summary of the results and presentation of the ISI list
+The aim of the analysis was to firstly develop a keyword-based basic definition of the research field
+of AI that can be used to describe the entire research area while minimizing the number of false
+hits. Secondly, the question was investigated as to whether quality levels can be distinguished in AI
+technologies and, if so, which keywords can be used to distinguish sophisticated AI from standard
+AI.
+For this purpose, eight relevant bibliometric studies and the Epoch classification scheme of ML
+systems were analyzed. Keywords or keyword sets were taken from these sources for our own list.
+It became apparent that none of the existing keyword lists could be used without changes or addi-
+tions. The studies analyzed were either published before the boom in machine learning and large
+language models and therefore underestimated or even ignored these fields of research. Or they
+were published afterwards and focused only on these new fields, thus ignoring those AI areas that
+are older but still represent relevant AI research today and could become important in the future.
+Step by step, our own list of keywords was compiled that covers both current and long-established
+fields of artificial intelligence research. In addition, terms such as "robotics" or "automation" were
+included to reflect the fact that AI research encompasses not only basic computer science research,
+but also application-oriented research.
+In addition to analyzing existing studies, a total of 18 expert interviews were conducted. The inter-
+views also contributed keywords for our own list as well as insights into how to distinguish quality
+levels.
+It turned out that there is a spectrum of AI technologies ranging from rule -based systems, expert
+systems and knowledge ontologies to machine learning and natural language processing. This
+spectrum is complex because the technologies used are often combine d and high -performance
+systems make use of different technologies.
+Although starting points for distinguishing between complex and simple AI could be identified, it
+turned out that each distinction in itself is incomplete, provisional or cannot be generalized. As a
+result, it is necessary to approach the differentiation of AI quality levels specifically and to determine
+quality measures specifically and with regard to the respective question.
+The keyword list created can be used as a starting point for this, as it covers the entire spectrum of
+AI technologies: Keywords in the list such as "hybrid AI" already indicate sophisticated AI. Also,
+combinations of keywords in the list can be used to identify sophisticated AI. In addition, combina-
+tions with terms such as "high performance computing", "complex setting", "advanced machine
+learning" etc. can be used to specifically describe higher quality levels.
+The list created was tested and sharpened in trial runs - keywords with very few hits were removed,
+keywords with an unexpectedly high number of unspecific hits were supplemented with AND links.
+Finally, our own results were compared with partial results from other studies to check their plau-
+sibility. Table 9 shows the ISI keyword list with a total of 19 main entries and 72 subentries.
+
+===== PDF_PAGE 44 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 38
+
+Table 9: ISI keyword list for defining the research field "artificial intelligence"
+
+0 Artificial intellgence
+1 Machine Learning
+2 Deep learning
+3 Artificial Neural Network*
+deep neural network*,
+convolutional neural network*,
+graph neural network*,
+recurrent neural network*,
+genetic algorithm*,
+evolutionary algorithm*
+evolving fuzzy clustering,
+classification algorithm*,
+predict* AND model* AND artificial intelli-
+gence,
+support vector machine,
+supervised learning,
+semi-supervised learning,
+random forest,
+inference learning,
+AutoML,
+protein AND artificial intelligence
+4 Unsupervised learning
+feature selection AND machine learning,
+feature engineering,
+autoencoder,
+q-learning,
+policy gradient method,
+federated learning,
+meta-learning
+5 Reinforcement learning
+6 Transfer learning AND machine learn-
+ing
+domain adaptation AND machine learning,
+hybrid AI
+7 Natural language processing
+natural language understanding,
+machine translation,
+feature extraction AND artificial intelligence,
+speech-to-text,
+multimodal AND AI,
+multimodal AND LLM,
+chatbot*
+8 Generative AI
+large language models,
+foundation models,
+generative adversarial networks,
+synthetic data AND deep learning,
+
+*shot learning,
+self-attention generative,
+retrieval\-augmented generat%,
+multimodal AND artificial intelligence
+9 Computer vision
+pattern recognition AND artificial intelli-
+gence,
+image recognition AND artificial intelligence,
+image classification,
+fac* recognition,
+image processing AND deep learning,
+video analysis AND artificial intelligence,
+object recognition, AND artificial intelli-
+gence,
+action recognition AND artificial intelligence.
+Cyber\- attack AND artificial intelligence
+10 Explainable AI
+responsible AI,
+trustworthy AI,
+AI ethics,
+neurosymbolic
+11 Big data analytics
+12 Knowledge Graph*
+knowledge representation AND AI,
+ontology-based AND AI,
+problem solving AND AI,
+Uncertainty AND AI
+13 Logical reasoning AI
+fuzzy logic AND AI
+14 Decision Support System*
+expert systems AND information systems,
+case-based reasoning,
+recommender system*,
+automated decision making
+15 Computational Neuroscience
+16 Artificial General Intelligence
+general AI,
+human-level AI
+17 AI for Robotics
+developmental robotics,
+embodied AI,
+humanoid robot*,
+mobile robot*,
+imitation learning AND robot*,
+computational intelligence,
+automation AND AI
+18 Quantum comput* AND AI
+
+Source: Fraunhofer ISI, as of September 25, 2024
+
+===== PDF_PAGE 45 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 39
+
+The difference to other AI keyword lists can be summarized as follows:
+• The ISI list covers both the established AI research areas (symbolic AI) and the ML-based re-
+search fields that are currently in the foreground (statistical AI).
+• It contains some of the most important fields of application (robotics, automation, facial
+recognition, machine translation, etc.), which are also important for the development of AI
+technologies in addition to basic research.
+• With "hybrid AI", "embodied AI", "transfer learning" AND AI or multimodal AND "artificial in-
+telligence", it contains keywords or keyword combinations that indicate high-level AI. In a sec-
+ond step, the list can be used as a basis for further analyses in which individual keywords are
+combined with terms that in turn imply high quality levels, such as "high performance compu-
+ting", "complex setting", "advanced machine learning", etc.
+Although the ISI keyword list was compiled with great care and taking into account bibliometric
+and content-related AI expertise, it is also a time-dependent snapshot of the AI development. The
+analysis has shown that AI development is extremely dynamic and is characterized in part by leaps
+in innovation that cannot be predicted. This list is dated November 2024 and must be continuously
+reviewed and, if necessary, updated to include the latest developments.
+
+===== PDF_PAGE 46 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 40
+
+5 Country comparisons and research profiles
+After the analysis of bibliometric classifications of AI, the results of the country comparisons are
+presented and analyzed in this section. The focus is initially on the China -USA comparison. The
+second part then focuses on European countries and attempts to determine an AI research profile
+for Europe with the help of OECD.ai data.
+The country comparisons originate from the studies that were examined in section 2 of this paper
+with regard to their suitability for describing the research field of AI. From all studies examined for
+their methodological approach in section 2, the resulting country comparisons are presented in this
+section. Two studies are not included, hower: The results of the OECD study from 2020 are based
+on data from 2018 and therefore have historical value, but are less suitable for describing the cur-
+rent situation. And the CSET study is purely a methodological study ("Identifying AI Research") that
+does not make its own country comparisons. However, as the CSET-keyword list is the basis for the
+AI Index Reports, their work in presented in this section as well.
+5.1 Liu, Shapira and Yue 2021
+Liu, Shapira and Yue (2021) apply their methodology to come up with a series of country compar-
+isons. Two of these will be presented here, firstly the development of the share of global AI re-
+search from 1991 to 2020 (Figure 14) and secondly the development of citation rates since 2000
+(Table 10).
+The chart shows that China overtook the USA in terms of the number of published AI papers in
+2011 and is the undisputed leader in 2020 with more than twice as many AI articles. If we look at
+the relevance of the published articles, a different picture emerges however.
+As Table 10 shows, China has also caught up in terms of citations in recent years, although the US
+sill ranking on place one in the most recent period under review (2015-2019). Despite the enor-
+mous increase in research papers, China was therefore unable to keep up with the relevance of
+these papers.
+Iran (7.7 percentage points) and Italy (3.8 percentage points) stand out with strong increases be-
+tween the first phase under review and the most recent phase.
+
+===== PDF_PAGE 47 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 41
+
+Figure 14: Development of the share of AI articles in the top 10 countries between
+1991 and 2020 according to Liu, Shapira and Yue 2021
+
+Source: Liu, Sharpira and Yue 2021, p. 3178, Basis: WoS (SCI-E and SSCI)
+Table 10: Country shares by citations according to Liu, Shapira and Yue 2021
+
+Source: Liu, Shapira and Yue 2021, p. 3180
+
+===== PDF_PAGE 48 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 42
+
+5.2 Gao and Ding 2022
+The analysis by Gao and Ding 2022 was important for the classification of the research field of AI,
+particularly with regard to the emergence of new topics. Their analysis does not focus on country
+comparisons. However, they identify a top 15 list of companies that own AI patents , which shows
+that US companies are clearly leading in this area (see Table 11).
+Table 11: Top 15 patent holders in the field of AI between 2000 and 2019 according
+to Gao and Ding 2022
+
+Source: Gao and Ding 2022, p. 12995, "Burst" values are calculated using the burst detection technique. A burst indicates abrupt
+changes of events (p. 12978).
+However, Gao and Ding put the dominance of US companies in AI patents into perspective by
+pointing out that in China it is not the companies that apply for patents, but predominantly the
+universities and research institutions.
+The patent figures were determined on the basis of an expanded definition of AI, which in addition
+to "artificial intelligence" and "machine learning" also includes fields of application such as "natural
+language processing", "smart robot", "video recognit ion" and "gesture control" (Gao and Ding
+2022, p. 12976).
+5.3 AI Index Report 2023 and 2024
+An important source for the country comparison is the A I Index Report from Stanford University,
+which has been published annually since 2017. For bibliometric and patent analyses, the AI Index
+Report uses the keyword list and the corpus of the Center for Security and Emerging Technology
+(CSET), which was analyzed in detail in section 2.
+The 2023 AI Index Report (which presents results from 2022, which in turn are based on figures from
+2020-21) determines the strength of AI research in China, the USA and Europe based on both the ab-
+solute number of research articles and citations. Interesting differences emerge depending on whether
+journals, conference papers or pre-print repositories (ArXiv, Semantic Scholar) are considered.
+In the more recent 2024 edition of the report, the publication and citation figures broken down by
+country are missing, so the 2023 report is used. The 2024 report again contains interesting patent
+analyses, which are presented at the end of this section.
+According to the AI Index Report 2023, China ranks first in terms of the absolute number of AI
+journal articles, well ahead of Europe and the United States (Figure 15).
+
+===== PDF_PAGE 49 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 43
+
+Figure 15: Country shares of global AI publications between 2010 and 2021 according
+to the AI Index Report 2023
+
+Source: AI Index Report 2023, p. 34
+In terms of citations, China has been ahead of Europe and the USA since 2016, according to the AI
+Index Report (see Figure 16).
+Figure 16: Country shares of global citations of AI publications between 2010 and
+2021 according to the AI Index Report 2023
+
+Source: AI Index Report 2023, p. 35
+
+===== PDF_PAGE 50 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 44
+
+If we only look at conference publications, i.e. publications that are presented at scientific confer-
+ences and are published more quickly than journal articles, the country ranking is the same accord-
+ing to the AI Index Report: China is again ahead of the USA, but the gap between the two countries
+is smaller than for journal publications (see Figure 17). Interestingly, the EU countries and the UK
+are still ahead of the USA in this statistic (and also in terms of the absolute number of publications).
+Figure 17: Country shares of global AI conference publications between 2010 and
+2021 according to the AI Index Report 2023
+
+Source: AI Index Report 2023, p. 37
+The situation is different for citations of conference publications (see Figure 18). Here, the USA was
+just ahead of China in 2021 (23.86%, USA to 22.02%, China).
+
+===== PDF_PAGE 51 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 45
+
+Figure 18: Country shares of global citations of AI conference publications between
+2010 and 2021 according to the AI Index Report 2023
+
+Source: AI Index Report 2023, p. 39
+Interestingly, the previous year's edition of the AI Index Report 2022 showed values that were much
+further apart (29.52%, USA to 15.32%, China, see Figure 19). This difference is not addressed in the
+text of the 2023 report, meaning that the (methodological or actual) reasons for the rapid catch-up
+process within just one year remain unclear.
+Figure 19: Country shares of global citations of AI conference publications between
+2010 and 2021 according to the AI Index Report 2022
+
+Source: AI Index Report 2022, p. 31
+
+===== PDF_PAGE 52 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 46
+
+According to analysis of the AI Index Report 2023, the USA is still far ahead in terms of the propor-
+tion and citations of articles published on AI community platforms (repositories). These articles are
+preprints, i.e. pre-peer-reviewed papers. The AI Index Report describes the repositories as follows:
+"[AI repositories have] become a popular way for AI researchers to disseminate their work outside
+traditional avenues for publication. These repositories allow researchers to share their findings be-
+fore submitting them to journals and conferences, thereby accelerating the cycle of information
+discovery. The number of AI repository publications grew almost 27 times in the past 12 years" (AI
+Index Report 2023, p. 40).
+Of all 2021 publications in AI community platforms, such as ArXiv, 23.48% are from American sci-
+entists and 11.87% from Chinese scientists (see Figure 20).
+Figure 20: Country shares of AI articles published in AI repositories between 2010 and
+2021 according to the AI Index Report 2023
+
+Source: AI Index Report 2023, p. 42.
+In terms of citations of articles in repositories, the USA also has a lead over China (see Figure 21).
+
+===== PDF_PAGE 53 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 47
+
+Figure 21: Country shares of citations of AI articles in AI repositories between 2010
+and 2021 according to the AI Index Report 2023
+
+Source: AI Index Report 2023, p. 43.
+The following findings emerge from the summary:
+• China is ahead of the USA in terms of the number of traditional publications, i.e. journal arti-
+cles and conference publications. Chinese articles are also cited much more frequently here
+than American ones.
+• If we look at more current AI work, the picture changes: Researchers working at US institu-
+tions clearly lead the field when it comes to AI articles published in repositories and thus re-
+flecting current developments. This is also the case for citations of these articles. However,
+China has also caught up in this area in recent years. China's ascending line in Figure 21 could
+mean that only a few, but very relevant research papers have been published there in recent
+years. Nevertheless, the American research contributions are currently more relevant for the
+international AI community than the Chinese (29.22 USA compared to 20.98 China, see Figure
+21).
+• In summary, it can be said that China is now ahead of all other nations in the classic AI re-
+search areas, but is lagging behind in the newer AI developments, which are determined by
+ML models and LLMs. The figures generally show a high level of research dynamism in the
+countries and suggest a more differentiated view of the research field.
+Another interesting result of the AI Index Report is the development of AI -related patents. Here,
+too, China has now taken over the global leadership role based on the number of patents granted
+and their global share (see Figure 22).
+
+===== PDF_PAGE 54 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 48
+
+Figure 22: AI patents granted by country between 2010 and 2021 according to the AI
+Index Report 2024
+
+Source: AI Index Report 2024, p. 16
+However, if the number of AI patents granted is related to the size of the population, a different
+picture emerges (see Figure 23). This clearly shows the size effect that must generally be taken into
+account when considering China's research and innovation strength. However, the fact that Luxem-
+bourg is in second place in these statistics shows that standardization according to population size
+also has its limitations.
+Figure 23: Patents granted by population size, 2022
+
+Source: AI Index Report 2024, p. 17
+
+===== PDF_PAGE 55 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 49
+
+In addition to bibliometrics and patent analysis, the AI Index Report 2023 attempted to capture
+innovation activity in the field of AI using further indicators. These indicators were as follows:
+• Total AI Private Investment,
+• Newly funded AI companies,
+• AI Hiring Index (LinkedIn AI job postings normalized to all LinkedIn job postings),
+• AI Talent Concentration (LinkedIn profiles with AI reference normalized to all LinkedIn profiles
+of a country),
+• Relative AI Skill Penetration (Linkedin job details with the additional reference to AI skills nor-
+malized to all Linkedin job details).
+The performance of selected countries for these indicators is shown individually in the AI Index
+Report 2023 and only partially in a country comparison (see Chapter 4 "The Economy" of the AI
+Index Report 2023 from p. 168). In the associated web tool "AI Vibrancy Tool", which was online at
+https://aiindex.stanford.edu/vibrancy until summer 2024, it was possible to create country compar-
+isons with an entire set of indicators. The following two figures are screenshots from the AI Vibrancy
+Tool and show the situation for the USA and China in 2021.
+Figure 24: "Vibrancy" of the USA as a location for innovation according to the AI In-
+dex Report 2023
+
+Source: Global AI Vibrancy Tool https://aiindex.stanford.edu/vibrancy/, based on various sources presented in the AI Index Re-
+port 2023 from p. 168.
+
+===== PDF_PAGE 56 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 50
+
+Figure 25: "Vibrancy" of the innovation location China according to the AI Index Re-
+port 2023
+
+Source: Global AI Vibrancy Tool https://aiindex.stanford.edu/vibrancy/, based on various sources presented in the AI Index Re-
+port 2023 from p. 168
+The economic indicators (green bars) show a clear lead for the USA. This applies in particular to the
+absolute number of AI start-ups per year and the total amount of private AI investments in 2021.
+However, the USA is also ahead of China in terms of labor market-related variables (qualifications,
+job advertisements, applicant profiles).
+However, China leads the ranking in terms of research indicators (blue bars), a finding described in
+detail above.
+5.4 Zeta Alpha 2023
+Another source for determining the research strength of different countries in the field of AI is the
+analysis by Zeta Alpha from 2023. Zeta Alpha analyzed the 100 most cited AI articles of 2022,
+based on AI articles published on the community platform ArXiv but also includes articles pub-
+lished on the Semantic Scholar platform.16
+The Zeta Alpha analysis analyzes the period from 2020 to 2022 and shows a clear lead for the USA
+(see Figure 26). It is not possible to determine whether the lead has only recently increased or has
+always been greater due to the different survey method.
+
+16 The focus on community platforms allows a comparison with the results of the AI Index Report from Stanford University (see ab ove). The report
+analyzed repository citations between 2010 and 2021 and determined a share of 29.22% for the USA and 20.98% for Ch ina. In the Zeta Alpha
+analysis, the distance between the US and China is much greater, as Figure 26shows.
+
+===== PDF_PAGE 57 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 51
+
+Figure 26: The 100 most cited AI articles in AI repositories for 2020-2022 by country
+according to Zeta Alpha 2023
+
+Source: Zeta Alpha 2023, p. 1
+Of the most cited articles published on AI platforms in 2022, 68 were written by American scientists
+and 27 by Chinese scientists. The articles were written in the same year (plus January and February
+2023), according to Zeta Alpha. Compared to 2020, the number of American contributions has de-
+creased (2020: 78) and the number of Chinese contributions has remained the same (2020: 27).
+According to Zeta Alpha, the count does not include the nationalities of researchers, but rather the
+country in which their research organization is located.17
+Analyzing the list of the top 100 cited articles in terms of the topics covered, it is evident that many
+of the articles deal with large language models (LLMs) and generative AI. These sub-areas of artifi-
+cial intelligence research have been the subject of much discussion in the research community since
+the publication of ChatGPT in fall 2022. China apparently did not recognize this trend early on;
+observers claim that China was taken by surprise by this development ("ChatGPT took China com-
+pletely by surprise", see Sharma 2023). Chinese researchers are now trying to catch up in the area
+of large language models. According to official figures, there were already 130 Chinese LLMs in
+February 2024 (Sharma 2024). According to a researcher at Tsinghua University, these are at the
+technical level of ChatGPT 3.5 (Dou Dejing cited in Sharma 2024). It is unclear how quickly China
+can catch up in this area (see White 2024). High costs, the lack of graphics chips due to the US
+embargo and the strict censorship of content are cited as barriers.
+Another interesting result of the analysis of the top 100 cited articles by Zeta Alpha is the finding
+that around half of the analyzed articles are written by AI experts who are employed by companies
+(see Figure 27). These companies include Google, Meta, Microsoft, DeepMind, OpenAI and NVIDIA.
+
+17 personal communication with Jakub Zavrel from Zeta Alpha on December 1, 2023.
+
+===== PDF_PAGE 58 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 52
+
+Figure 27: The 100 most cited AI articles in AI repositories for 2020-2022 by organiza-
+tion type according to Zeta Alpha 2023
+
+Source: Zeta Alpha 2023
+The background to the strength of companies in AI research is the need to use large computing
+capacities and access large amounts of data in order to train large language models. US tech com-
+panies such as Google, Meta, Microsoft and Amazon therefore have an advantage in the develop-
+ment of complex AI models.
+An Elsevier analysis commissioned by the Japanese business newspaper Nikkei in 2022 confirms
+this statement and specifies the situation in China in particular: According to this analysis, six out
+of ten of the most cited AI research articles in 2021 were written by researchers working for Amer-
+ican tech companies, four were from the Chinese companies Tencent, Alibaba, Huawei and State
+Grid Corporation of China (Fukuoka; Tabeta; Oikawa 2023). No further details are provided on the
+methodology of the Elsevier evaluation, but the fields of application on which the Chinese compa-
+nies are focusing on were described: "As a government-owned power distributor, State Grid also
+boasts one of the best AI research arms among Chinese corporations. This is made possible by the
+big data collected from hundreds of millions of smart meters. State Grid Corp. is developing tech-
+nology to predict power demand and to detect problems in the electrical grid. Baidu, which pro-
+vides China's leading search engine, came in at 11th place in both the quantity and quality of AI
+research. The tech giant is rolling out a fleet of fully self -driving cabs" (Fukuoka; Tabeta; Oikawa
+2023).
+Calculations by the "Private-sector AI-Related Activity Tracker" (https://parat.eto.tech), a data plat-
+form operated by CSET, come to a very similar conclusion for the year 2023: US companies clearly
+lead the field of the most cited articles from the corpor ate environment with seven companies in
+the top 10 (see Figure 28). In terms of patents, however, Chinese companies (Tencent and Huawei)
+take the lead in this analysis.
+
+===== PDF_PAGE 59 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 53
+
+Figure 28: USA vs. China for key company-related AI indicators
+
+Source: Gibney 2024 based on data from PARAT/ETO/CSET
+5.5 Würzburg Group 2023
+The work of the Würzburg Group was particularly relevant in the previous section with regard to
+the subdivision of AI research areas. It was said that it would in principle be possible to create
+differentiated country-specific research profiles using the data from the Würzburg Group. However,
+such an evaluation currently does not exist. However, a country comparison was carried out across
+all AI segments, including Natural Language Processing, Machine Learning, Problem Solving, Cog-
+nitive AI, Knowledge Representation, Uncertainty, Computer Vision, Robotics. This analysis was pre-
+sented by Volker Brühl 2023 in the journal Wirtschaftsdienst. The evaluation refers to the number
+of all AI publications in the dlpd literature database between 2013 and 2022 and sees the USA
+clearly in the lead with 38.7% of all articles published in this period (see Figure 29).
+
+===== PDF_PAGE 60 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 54
+
+Figure 29: Country comparison of AI publications between 2013 and 2022 according
+to the Würzburg Group
+
+Source: Brühl 2023 based on the web tool of the Würzburg Group, https://airankings.professor-x.de (CHE=Switzerland,
+HKG=Hong Kong, SGP=Singapore, SAU=Saudi Arabia, THA=Thailand)
+Interestingly, the ranking puts Germany in third place, a result that differs significantly from other
+studies such as those by Liu , Shapira and Yue 2021 or the AI Index Report 2023. One explanation
+for this could be found in the text corpus on which the analysis is based on. It is possible that articles
+by German researchers are overrepresented in the dblp. It is also unclear how large the total number
+of articles is in the selected period; although the dblp lists around 200,000 researchers as authors
+of articles, many of them published more than one article.
+Another reason for Germany's good performance could be that Brühl uses cumulative values for
+the years 2013 to 2022, a difference to many other studies. But even this cannot fully explain Ger-
+many's position in the ranking.18
+5.6 OECD.AI country comparisons
+The OECD web tool "Live Data" (https://oecd.ai) uses two different databases to determine the
+country-specific AI research strength, namely Scopus and OpenAlex. As shown in section 2. 8, the
+ranking for 2023 is as follows: China, EU27, USA, India, UK, Germany, Italy and Japan. This ranking
+is based on the shares of total publications in the field of AI according to Openalex.org. Using
+Scopus as a database and also the citations show a similar order.
+An interesting selection option in the OECD web tool is the menu item "Top countries by AI research
+application area". Five AI application areas are offered (see Figure 30), with "Robot" and "Automa-
+tion" referring to specific application areas, while "Computer vision", "Artificial neural network" and
+"Natural language processing" could be assigned to both basic research and applications.
+
+18 A comparative analysis via Openalex.org puts Germany at place five in the ranking, presenting the following order: USA, China , India, UK, Ger-
+many, France. Switzerland in the Openalex-analysis only ranks 17th. This case clearly shows how important the sel ected time period and the
+corpus used are in addition to a suitable keyword list.
+
+===== PDF_PAGE 61 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 55
+
+Figure 30: "Research application areas" of the OECD web tool OECD.ai "Live Data"
+
+Source: Screenshot OECD.ai, "Trends in AI research application areas by country"
+The overall picture shows that "Computer vision" and "Artificial neural network" are the two areas
+in which the most AI articles have been published (approx. 100,000 publications each worldwide in
+2022, see Figure 6: Trends in AI research application areas in section 2. 8). Natural language pro-
+cessing" and "Robot" follow in third and fourth place (approx. 40,000 publications each) and "Au-
+tomation" is in last place with only approx. 5,000 publications in 2022.
+The following figures show the country strengths in all of the five application areas based on the
+number of publications in 2022. The results are presented in detail because the OECD report on AI
+in Germany (OECD 2024), among others, extensively refers to this evaluation.19
+Figure 31: "Computer vision", 2002-2022 all publications
+
+Order: China, USA, India, Japan, Germany. Source: OpenAlex via OECD.AI, retrieved on 4.10.2024.
+
+19 In the report on AI in Germany, the AI publications are cumulated, which puts Germany in third place in the "Automation" fiel d ahead of India
+(and not in fourth place as shown here).
+
+===== PDF_PAGE 62 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 56
+
+Figure 32: "Artificial neural network", 2002-2022 all publications
+
+Order China, USA, India, Korea, Germany, UK. Source: OpenAlex via OECD.AI, accessed on 4.10.2024.
+Figure 33: "Natural Language Processing", 2002-2022 all publications
+
+Order: China, USA, India, Germany, France. Source: OpenAlex via OECD.AI, accessed on 4.10.2024.
+
+===== PDF_PAGE 63 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 57
+
+Figure 34: "Robot", 2002-2022 all publications
+
+Order: China, USA, Japan, Germany, Italy, UK. Source: OpenAlex via OECD.AI, retrieved on 4.10.2024.
+Figure 35: "Automation", 2002-2022 all publications
+
+Order: China, USA, India, Germany, UK, Italy, Russia, Japan. Source: OpenAlex via OECD.AI, retrieved on 4.10.2024.
+The OECD report on AI research in Germany concludes from these figures that Germany is particu-
+larly well placed in the three AI application fields of "natural language processing", "robotics" and
+"automation": "Germany occupies a leading position worldwide and is a leader in robotics, auto-
+mation and AI research in the fields of energy and manufacturing." (OECD 2024, P. 35).
+
+===== PDF_PAGE 64 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 58
+
+Even if the phrase "is the leader" has to be qualified (because China leads by far in all areas in terms
+of the number of publications, followed by the USA and India), the charts show that Germany is
+strong in research and innovation in the three areas mentioned and is in 4th or 5th place in a global
+comparison.
+5.7 NLLG 2023
+The analysis of the Natural Language Learning Group (NLLG) at the University of Mannheim focuses
+in particular on new language models. The NLLG study works with citations and analyzes the list of
+the 40 most -cited AI articles published in the first three quarters of 2023. Figure 36 shows the
+importance of industry research compared to university research in the different countries . The
+orange bars show the number of cited AI articles, the turquoise bars the "fraction score". This is the
+relative contribution of an institution to the individual articles, which is determined by the number
+of authors from the respective field (cf. NLLG 223, p. 14, fn 6).
+Figure 36: Top 40 cited AI articles in 2023 by country and assignment to industry or
+university/
+research according to NLLG 2023
+
+Source: NLLG 2023, p. 18
+The analysis shows that in 2023, AI research was dominated by the United States of America, both
+in the area of corporate research and in academic research. China follows in second place, with the
+UK leading European research into language models, followed by Germany, Spain, Sweden and
+Switzerland.
+
+===== PDF_PAGE 65 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 59
+
+5.8 Epoch AI
+Epoch AI has analyzed its database of the most important ML models ("notable machine learning
+models") by country of origin and created the following ranking (Figure 37).
+Figure 37: Number of relevant ML models by country in 2023 according to Epoch
+2023
+
+Source: AI Index Report 2024, p. 21, based on data from Epoch AI 2023
+Over time, it can be seen that the era of ML models began around 2013 and that US research
+overtook other countries within a few years. In recent years, European countries (including the UK)
+have developed faster in this area than China (Figure 38). For the year 2023, Epoch AI identifies 61
+relevant ML models developed in the USA. In China, there were four times fewer, namely 15. Fance
+and Germany follow on place 4 resp. 5.
+
+===== PDF_PAGE 66 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 60
+
+Figure 38: Development of relevant ML models by country between 2003 and 2023
+
+Source: AI Index Report 2024, p. 21, based on Epoch AI data from 2023
+Another interesting result of the Epoch AI analysis is the finding that relevant ML models and in
+particular large-scale ML models ("significant" or large -scale ML models) are increasingly being
+created by large Internet companies and industrial research in general. This is a recent trend, as
+academic research dominated ML models until around 2014 ( Figure 39). The tech industry now
+dominates this field. In 2022, 32 of a total of 38 ML models described as "significant" were devel-
+oped and published by companies. This shows a concentration of research power in (American)
+tech companies.
+
+===== PDF_PAGE 67 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 61
+
+Figure 39: Development of LLMs by country between 2002 and 2022 according to
+Epoch AI
+
+Source: Stanford University AI Index Report 2023, p. 50, based on Epoch AI data from 2022.
+A more detailed country ranking is provided by two further Epoch analyses, which use cumulative
+figures (see Figure 40 and Figure 41).
+Figure 40: LLMs by country. Development from 2017 to 2024 according to Epoch AI
+
+===== PDF_PAGE 68 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 62
+
+Figure 41: Major language models by country, here excluding USA, China and multi-
+national (2024)
+
+Source for both charts: https://ourworldindata.org/grapher/cumulative-number-of-large-scale-ai-systems-by-country based on
+data from Epoch AI, retrieved on October 7, 2024
+Looking at performance excluding the USA, China and the multinational models, the result is a
+ranking in which France ranks ahead of the UK and Hong Kong (Figure 41). Germany is in last place,
+tied with Finland. However, this ranking may distort the performance of countries in the AI field,
+because while large language models are a very important basis for progress in generative AI, future
+AI innovations may also come from other areas. In addition, the application of AI in the industrial
+environment and in other sectors and fields of application plays an important role (as discussed in
+more detail in section s 3 and 4). It would be interesting to evaluate all relevant ("notable") ML
+models here, not just large language models. However, such an evaluation is not yet available.
+
+===== PDF_PAGE 69 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 63
+
+6 Summary of the country comparisons and outlook
+After analyzing the selected studies, the question of which countries are currently leading in AI
+research can be answered as follows:
+
+→ Current AI research is mainly concerned with large language models, which require large
+amounts of computing capacity and data for training. The United States of America is the
+clear leader in research and innovation in this area of AI. This can be seen, for example, in the
+number of large-scale AI systems developed, such as ChatGPT from Open AI or Gemini from
+Alphabet and Google.
+→ China lags behind the USA in the area of large language models. Depending on the source,
+China needs one to three years to catch up. In order to reach the current level of US models,
+the embargo on American high-performance GPUs today do not seem as important as was
+expected in the past as Chinese researchers are increasinly utilizing distributed computing
+concepts.
+→ Like China, European countries have largely overslept the development of large language
+models. In the statistics of large AI models from Europe, France is in the lead, followed by the
+UK, Israel and Germany, on a par with Finland. However, a catch-up development like in China
+cannot be observed yet in Europe, depite some major government support measures. In Eu-
+rope, there is also a debate as to whether Europe should participate in the race for large-scale
+language models at all, or whether it should instead focus on its own research and implemen-
+tation strategies.
+
+The analysis also revealed approaches to the question of how quality levels can be differentiated in
+AI research. These can be summarized as follows:
+→ Large language models are very demanding in terms of the hardware required and the inte-
+gration of large amounts of data. And they require corresponding expertise in model devel-
+opment. Large language models therefore currently represent the highest level of quality in AI
+research.
+→ AI research is extremely dynamic and is characterized by leaps in innovation. The develop-
+ment of the first large language models based on new machine learning models was one such
+innovative leap. Further leaps can be expected in the future, which will also offer other classifi-
+cations of quality levels. Currently, a combination of modern ML models with older AI re-
+search directions, known as hybrid AI, is expected to drive development forward. If the expec-
+tations for hybrid AI are confirmed, older AI research directions would become more relevant
+again and require a corresponding reassessment of the quality level classification. In addition,
+smaller models that are trained for specific contexts and only reference the large language
+models in the background could lead to decreasing hardware requirements for new systems.
+AI systems could become more powerful and at the same time require less hardware, data
+and training in the future.
+Overall, it has been shown that a detailed analysis of both performance indicators and quality def-
+initions is necessary in order to adequately describe and evaluate the research and innovation field
+of artificial intelligence. Simple indicators often narrow the view and ignore the options that arise
+from new combinations of research fields and application contexts.
+
+===== PDF_PAGE 70 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 64
+
+7 Literature
+AI Index Report (2022): Annual Report. AI Index Steering Committee, Institute for Human-Centered
+AI. Authors: Daniel Zhang, Nestor Maslej, Erik Brynjolfsson et al., Stanford University CA,
+March 2022.
+AI Index Report (2023): Annual Report. AI Index Steering Committee, Institute for Human-Centered
+AI. Authors: Nestor Maslej, Loredana Fattorini, Erik Brynjolfsson et al., Stanford University
+CA, April 2023.
+AI Index Report (2024): Annual Report. AI Index Steering Committee, Institute for Human-Centered
+AI. Authors: Nestor Maslej, Loredana Fattorini, Raymond Perrault et al., Stanford University
+CA, April 2024.
+Alcaraz, Anthony (2023): Knowledge Graph Embeddings as a Bridge between Symbolic and Sub-
+symbolic AI. The Resurgence of Structure. In: Medium, 20 December https://ai.plaineng-
+lish.io/knowledge-graph-embeddings-as-a-bridge-between-symbolic-and-subsymbolic-
+ai-0f37c55de845.
+Aleph Alpha (2023): Luminous Performance Benchmarks. The research compares Luminous to the
+models from GPT -3 and ChatGPT developer OpenAI, among others, https://aleph -al-
+pha.com/luminous-performance-benchmarks/.
+Bardin, Sébastien; Jha, Somesh 2; Ganesh, Vijay (eds.) (2022): Machine Learning and Logical Rea-
+soning: The New Frontier. Report from Dagstuhl Seminar 22291, Dagstuhl Reports, Leibniz-
+Zentrum für Informatik, Vol. 12, Issue 7, pp. 80 –111, https://drops.dagstuhl.de/opus/voll-
+texte/2023/17613/pdf/dagrep_v012_i007_p080_ 22291.pdf.
+Bartolozzi, Chiara; Indiveri, Giacomo; Donati, Elisa (2022): Embodied neuromorphic intelligence. In:
+Nature Communications 13, 1024 (2022). https://doi.org/10.1038/s41467-022-28487-2.
+Bienert, Jörg; Roland Broch; Patrick Bunk et al. (2023): Large AI Models for Germany – Feasibility
+Study 2023, January 24, Akademie für Künstliche Intelligenz AKI gGmbH at the German AI
+Association and German Federal Ministry for Economic Affairs and Clima te Action, Berlin,
+https://leam.ai/feasibility-study-leam-2023.
+Bojinov, Iavor (2023): AI and machine learning. Keep Your AI Projects on Track. Most go off course.
+To make sure yours succeed, consider these five steps. In: Harvard Business Review. No-
+vember-December.
+Boqiang & Henry (2024): The Future of Deep Learning and AI: Ilya Sutskever and Geoffrey Hinton.
+In: The Medium Jun 29, https://medium.com/@lbq999/the -future-of-deep-learning-and-
+ai-ilya-sutskever-and-geoffrey-hinton-f17cbc87b86f.
+Brainard, Jeffrey; Normile, Dennis (2022): China rises to first place in one key metric of research
+impact. In: Science. Vol. 377, Issue 6608, August, www.science.org/doi/epdf/10.1126/sci-
+ence.ade4423.
+Brühl, Volker (2023): Künstliche Intelligenz – wo stehen wir in Deutschland? In: Wirtschaftsdienst,
+103. Jahrgang, 2023 , Heft 8, S. 521–524, www.wirtschaftsdienst.eu/inhalt/jahr/2023/heft/
+8/beitrag/kuenstliche-intelligenz-wo-stehen-wir-in-deutschland.html.
+CSET (2022): Counting AI Research: Exploring AI Research Output in English- and Chinese-Language
+Sources. Center for Security and Emerging Technology (CSET). Author: Daniel Chou, Wash-
+ington, D.C.; CSET, July, https://cset.georgetown.edu/publication/counting-ai-research/.
+
+===== PDF_PAGE 71 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 65
+
+CSET (2023): Identifying AI Research. Data Brief of the Center for Security and Emerging Technology
+(CSET). Authors: Christian Schoeberl, Autumn Toney, James Dunham, CSET: Washington,
+July, https://cset.georgetown.edu/publication/identifying-ai-research/.
+Ding, Jeffrey (2018): Deciphering China’s AI Dream. The context, components, capabilities, and con-
+sequences of China’s strategy to lead the world in AI. University of Oxford, Future of Hu-
+manity Institute, www.fhi.ox.ac.uk/wp-content/uploads/Deciphering_Chinas_AI-Dream.pdf.
+Drinkall, Felix; Pierrehumbert, Janet B.; Zohren, Stefan (2024): Traditional Methods Outperform Gen-
+erative LLMs at Forecasting Credit Ratings. University of Oxford, 24. July
+https://arxiv.org/pdf/2407.17624v1.
+Epoch AI (2024): Parameter, Compute and Data Trends in Machine Learning. Published online at
+https://epochai.org/data/notable-ai-models-documentation#inclusion.
+European Commission (ed.) (2019): 100 radical innovation breakthroughs for the future, DG Re-
+search and Innovation, Report based on the RIBRI Final Report carried out by Fraunhofer
+ISI, Institutul de Prospectivă and the University of Turku. Brussels: Publications Office of the
+European Union. https://data.europa.eu/doi/10.2777/24537.
+Fadaee, Marzieh; Gureenkova, Olga; Barrera, Fernando Rejon; Schnober, Carsten; Weerkamp,
+Wouter; Zavrel Jakub (2020): A New Neural Search and Insights Platform for Navigating and
+Organizing AI Research. Proceedings of the First Workshop on Scholarly Docume nt Pro-
+cessing (SDP) at EMNLP 2020 pp. 207 –213. Association for Computational Linguistics,
+https://aclanthology.org/2020.sdp-1.23.pdf.
+Fallon, Alyssa (2021): Was ist der Unterschied zwischen KI und IT -Automatisierung? In: Computer
+Weeky, 24 Juni 2021, www.computerweekly.com/de/feature/Was-ist-der-Unterschied-zwi-
+schen-KI-und-IT-Automatisierung.
+Fiala, Michael (2024): Clemens Wasner: „Österreich hat die Chance verpasst“. Interview mit der ös-
+terreichischen Zeitschrift Horizont. In: Horizont online, Mittwoch, 29. Mai 2024, www.hori-
+zont.at/digital/news/ai-austria-gruender-clemens-wasner-oesterreich-hat-die-chance-ver-
+passt-94698.
+Foster, Emily; Carew, Joseph M. (2023): Choosing between a rule-based vs. machine learning system.
+Contribution for TechTarget August 2, www.techtarget.com/searchenterpriseai/fea-
+ture/How-to-choose-between-a-rules-based-vs-machine-learning-system.
+Fukuoka, Kotaro; Tabeta; Shunsuke; Oikawa, Akira (2023): China trounces U.S. in AI research output
+and quality. In: Nikkei Asia, January 16, https://asia.nikkei.com/Business/China-tech/China-
+trounces-U.S.-in-AI-research-output-and-quality.
+Gao, Hui; Ding, Xiuhao (2022): The research landscape on the artificial intelligence: A bibliometric
+analysis of recent 20 years. In: Multimedia Tools and Applications (2022) 81: 12973-13001.
+Gartner (2023): What’s New in Artificial Intelligence from the 2023 Gartner Hype Cycle, authors:
+Afraz Jaffri and Svetlana Sicular, August 17, www.gartner.com/en/articles/what -s-new-in-
+artificial-intelligence-from-the-2023-gartner-hype-cycle.
+Gibney, Elizabeth (2024): These AI firms publish the world’s most highly cited work. In: Nature 632,
+487 (2024), August 1, www.nature.com/articles/d41586-024-02515-1.
+Goncalves, Diogo (2024): ML vs. LLM: Is one “better” than the other? Blog at Superwise.ai, January
+31, https://superwise.ai/blog/ml-vs-llm-is-one-better-than-the-other/.
+
+===== PDF_PAGE 72 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 66
+
+Great Learning Team (2023): Top 12 AI Leaders and Researchers you Should Know in 2024, Blogpost
+from November 8, 2023, www.mygreatlearning.com/blog/ai -researchers-and-lead-
+ers/#about-ai-leaders. Selection is based on the number of Twitter followers these leaders
+have online.
+Gu, Nianlong; Hahnloser, Richard H.R. (2023): SCILIT: A Platform for Joint Scientific Literature Dis-
+covery, Summarization and Citation Generation. arXiv preprint arXiv:2306.03535.
+Hahn, Silke (2023): Luminous schließt Europas KI -Lücke: Aleph Alpha auf Augenhöhe mit US -An-
+bietern. In: Heise online, 21. Februar, www.heise.de/news/Luminous -schliesst-Europas-KI-
+Luecke-Aleph-Alpha-auf-Augenhoehe-mit-US-Anbietern-7521254.html.
+Hahn, Silke (2023): Rise of AI: Welche Rolle spielt Deutschland künftig bei KI und Quantencom -
+puting? In: Heise News vom 19.05.2023, https://www.heise.de/hintergrund/Rise-of-AI-Wel-
+che-Rolle-spielt-Deutschland-kuenftig-bei-KI-und-Quantencomputing-9058893.html.
+Heim, Lennart (2023): FLOP for Quantity, FLOP/s for Performance. April 14,
+https://blog.heim.xyz/flop-for-quantity-flop-s-for-performance/.
+Hellwig, Jörg, Huggett, Sarah, Siebert, Mark et al. (2019): Artificial Intelligence: How knowledge is
+created, transferred, and used. Elsevier Report, https://doi.org/10.17632/7ydfs62gd6.2.
+Henshall, Will (2024): The Researcher Trying to Glimpse the Future of AI. In: Time online, June 5,
+https://time.com/6985850/jaime-sevilla-epoch-ai/.
+Kersting, Kristian; Peters, Jan; Rothkopf, Constantin (2019): Was ist eine Professur für Künstliche
+Intelligenz? Methodenpapier der TU Darmstadt, 17. Februar, https://arxiv.org/pdf/
+1903.09516.
+Liu, Na; Shapria, Philip; Yue, Xiaoxu (2021): Tracking developments in artificial intelligence re-search:
+constructing and applying a new search strategy. In: Scientometrics, 2021, Vol. 126., Issue
+4, February, pp. 3153-3192.
+Min, Chao; Zhao, Yi; Bu, Yi, Ding, Ying; Wagner, Caroline S. (2023): Has China caught up to the US
+in AI research? An exploration of mimetic isomorphism as a model for late industrializers.
+In: CoRR abs/2307.10198, https://doi.org/10.48550/arXiv.2307.10198.
+Morris, Meredith Ringel; Sohl -Dickstein, Jascha; Fiedel, Noah et al. (2023): Levels of AGI: Opera -
+tionalizing Progress on the Path to AGI. Google DeepMind, arXiv:2311.02462.
+Nguyen, Chandler (2023): US or China: who is leading in AI research? Weblog of March 7, 2023,
+www.chandlernguyen.com/blog/2023/03/07/us-or-china-who-is-leading-in-ai-research/.
+Nguyen, Thanh Thi (2020): Artificial Intelligence in the Battle against Coronavirus (COVID -19): A
+Survey and Future Research Directions. TechRxiv. Preprint. https://doi.org/10.36227/
+techrxiv.12743933.v1.
+OECD (2019): Recommendation of the Council on Artificial Intelligence, OECD/LEGAL/0449,
+https://legalinstruments.oecd.org/en/instruments/oecd-legal-0449.
+OECD (2020): Identifying and measuring developments in artificial intelligence: Making the im-pos-
+sible possible. Authors: Stefano Baruffaldii, Brigitte van Beuzekom, Hélène Dernis, Dietmar
+Harhoff, Nandan Rao, David Rosenfeld and Mariagrazia Squicciarini. OECD Science, Tech-
+nology and Industry Working Papers, No. 2020/05, Paris: OECD Publishing, May,
+https://doi.org/10.1787/5f65ff7e-en.
+OECD (2022): OECD Framework for the Classification of AI systems. OECD Digital Economy Papers,
+No. 323, OECD Publishing, Paris, https://doi.org/10.1787/cb6d9eca-en.
+
+===== PDF_PAGE 73 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 67
+
+OECD (2023): What technologies are at the core of AI? An exploration based on patent data. Au-
+thors: Flavio Calvino, Chiara Criscuolo, Hélène Dernis, Lea Samek , OECD Artificial Intelli-
+gence Papers, No. 6, OECD Publishing, Paris, https://doi.org/10.1787/32406765-en.
+OECD (2024): OECD -Bericht zu Künstlicher Intelligenz in Deutschland, OECD Publishing, Paris,
+https://doi.org/10.1787/8fd1bd9d-de, basierend auf den „Live data, research“ von OECD.ai.
+OECD (2024a): Explanatory Memorandum on the updated OECD definiton of an AI system. OECD
+Artificial Intelligence Papers No. 8, March, OECD Publishing, Paris.
+Prisznyak, Alexandra (2023): Horizontal and Vertical Value Creation in Bankrobotics and the AI -
+Washing Phenomenon. In: Financial and Economic Review, Magyar Nemzeti Bank (Central
+Bank of Hungary), vol. 22 (3), pages 97-122.
+Roser, Max (2022): The brief history of artificial intelligence. The world has changed fast — what
+might be next?” Published online at https://ourworldindata.org/brief-history-of-ai.
+Russell, Stuart J; Norvig, Peter (2016): Artificial Intelligence. A Modern Approach. Third Edition. Up-
+per Saddle River, New Jersey: Prentice Hall.
+Sarker, Iqbal H. (2022): AI-Based Modeling: Techniques, Applications and Research Issues To-wards
+Automation, Intelligent and Smart Systems. In: Springer Nature (SN) Computer Science 3,
+158 (2022). https://doi.org/10.1007/s42979-022-01043-x.
+Seele, Peter; Schultz, Mario D. (2022): From Greenwashing to Machinewashing: A Model and Future
+Directions Derived from Reasoning by Analogy. In: Journal of Business Ethics 78, pp. 1063–
+1089.
+Sharma, Yojana (2023): ChatGPT shakes up the AI research landscape – but who is ahead? In: Uni-
+versityworldnews, 30 March 2023, www.universityworldnews.com/post.php?story=
+2023033010584787.
+State, Christiana; Chakrabarti, Preetha; Hughes, Dalton; Ripy, Sarah (2023): Everyone’s Talking AI,
+Including the Federal Trade Commission: Key Takeaways from the FTC’s 2023 AI Guidance.
+In: The Journal of Robotics, Artificial Intelligence & Law, 6(4): 265 –269. www.crow-
+ell.com/a/web/jJgxMLt3bJdVTPbGi137sU/everyones-talking-ai-including-the-ftc-key-take-
+aways-from-theftcs-2023-ai-guidance.pdf.
+Toner, Helen; Xiao, Jenny; Ding Jeffrey (2023): The Illusion of China’s AI Prowess. Regulating AI Will
+Not Set America Back in the Technology Race. In: Foreign Affairs, June 2, 2023, www.for-
+eignaffairs.com/china/illusion-chinas-ai-prowess-regulation-helen-toner.
+Villaret, Mateu; Alsinet, Teresa; Fernández, Cèsar; Valls, Aïda (eds.) (2021): Artificial Intelligence Re-
+search and Development. Proceedings of the 23rd International Conference of the Catalan
+Association for Artificial Intelligence, Amsterdam; Berlin; Was hington: IOS Press,
+www.iospress.com/catalog/books/artificial-intelligence-research-and-development-14,
+chapter p. 7-70.
+Wasner, Clemens (2024): Österreich hat die Chance verpasst. Interview von Michael Fiala. In: Hori-
+zont, 29. Mai 2024, https://www.horizont.at/digital/news/ai -austria-gruender-clemens-
+wasner-oesterreich-hat-die-chance-verpasst-94698.
+Weiß, Marcel (2024): o1 ist der Anfang eines neuen Paradigmas. In: FAZ online, D: Economy vom
+18. September 2024.
+Weiß, Marcel (2024): Wie Alibaba und Co. aufholen und überholen. In: FAZ Digital, 2. Oktober,
+https://www.faz.net/pro/digitalwirtschaft/kuenstliche-intelligenz/wie-alibaba-und-co-auf-
+holen-und-ueberholen-110020420.html.
+
+===== PDF_PAGE 74 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 88
+Fraunhofer ISI | 68
+
+White, Sarah K.; Sayer, Peter; Rooney, Paula (2023): Nine ways to avoid falling prey to AI washing.
+In: CIO IT Leadership, May 3, www.cio.com/article/475061/how-the-cio-can-be-a-bulwark-
+against-misleading-ai-claims.html.
+Yang, Jiangjiang; Etzioni, Oren (2021): China is closing in on the US in AI research. Allen Institute for
+AI (AI2) Blog, May 11, https://medium.com/ai2-blog/china-is-closing-in-on-the-us-in-ai-re-
+search-ea5213ae80df.
+Zeta Alpha (2023): Must read: the 100 most cited AI papers in 2022. Weblog of March 2. Author:
+Sergi Castella i Sapé, www.zeta-alpha.com/post/must-read-the-100-most-cited-ai-papers-
+in-2022.
+Zeta Alpha (2024): Trends in AI. Monatliche Übersicht der meistzitierten KI -Paper, www.zeta-al-
+pha.com/blog-1.
+Zhang, Michael (2023): Benchmark of LLMs (Part 2): MMLU, HELM, Eleuthera AI LM Eval. In: Me -
+dium, September 11, https://medium.com/@myschang/evaluation -of-large-language-
+model-llm-introduction-9343424ad253.
+Zhang, Ran; Kostikova, Aida; Leiter, Christoph et al. (2023): What are the most influential current AI
+Papers? NLLG Quarterly arXiv Report 09/23, Natural Language Learning Group (NLLG), Uni-
+versity of Mannheim, https://arxiv.org/abs/2312.05688.

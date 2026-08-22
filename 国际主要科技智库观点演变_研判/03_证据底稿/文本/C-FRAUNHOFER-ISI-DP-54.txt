@@ -1,0 +1,1348 @@
+
+===== PDF_PAGE 1 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 54
+ISSN 1612-1430
+Karlsruhe, March 2016
+
+Concentration on the Few?
+R&D and Innovation in German Firms
+between 2001 and 2013
+
+Christian Rammer1, Torben Schubert2*
+
+Karlsruhe, Fraunhofer ISI
+
+1 Centre for European Economic Research (ZEW), Mannheim, Germany
+2 Fraunhofer Institute for Systems and Innovation Research ISI, Karlsruhe, Germany
+ CIRCLE, Lund University, Lund, Sweden
+ * Corresponding author: Torben.Schubert@isi.fraunhofer.de, Phone: +49 721 6809 357
+
+===== PDF_PAGE 2 =====
+
+
+===== PDF_PAGE 3 =====
+Inhalt I
+Content
+1 Introduction .......................................................................................................... 1
+2 Background – persistence of innovation activities and its relation to
+firm size ................................................................................................................ 3
+3 Data....................................................................................................................... 5
+3.1 The Mannheim Innovation Panel ......................................................... 5
+3.2 Descriptive Statistics on Firms Conducting R&D and
+Innovation Activities ............................................................................. 6
+4 Methodology ...................................................................................................... 10
+4.1 An Introduction to Markov Chains ...................................................... 10
+4.2 Predicting Stationary Distributions ..................................................... 11
+4.3 Firm-specific Transition Probabilities ................................................. 12
+4.4 Main Variables ................................................................................... 13
+5 Results ............................................................................................................... 14
+5.1 Stationary Distributions of R&D and Innovation Activities .................. 14
+5.2 Changing Transition Probabilities and Their Relation to Firm
+Size ................................................................................................... 16
+6 Conclusion ......................................................................................................... 22
+References ................................................................................................................ 25
+
+===== PDF_PAGE 4 =====
+II Inhalt
+Tables
+Table 1: Number of firms and firm-year observations differentiated
+by the number of panel participations during 2001 and
+2013 ................................................................................................ 7
+Table 2: Persistence of R&D and innovation activities differentiated
+by the number of panel participations during 2001 and
+2013 ................................................................................................ 8
+Table 3: Transitions probabilities as function of firm size ............................ 17
+Table 4: Break points in the transition probabilities ..................................... 19
+Table 5: Firm characteristics affecting the transition probabilities
+(R&D) ............................................................................................ 20
+Table 6: Firm characteristics affecting the transition probabilities
+(innovation) ................................................................................... 21
+Figures
+Figure 1: Innovation and R&D activities, and innovation expenditure
+in the German business enterprise sector, 1995-2013 .................... 9
+Figure 2: The stationary distributions of the share of firms conducing
+R&D (top panel) and innovation (bottom panel) in pre-crisis
+and post-crisis periods .................................................................. 15
+
+===== PDF_PAGE 5 =====
+Introduction 1
+1 Introduction
+Innovation expenditures in Germany have increased at an impressive rate in the
+course of the last two decades. Between 1995 and 2013, businesses in Germany
+raised their spending for developing and introducing new products and new processes
+from €60.8bn to €144.6bn resulting in a compound annual growth rate of 4.9% (Ra m-
+mer et al. 2015). While these numbers suggest that German firms have become ever
+more focused on innovation, they hide the fact that this rise h as mainly been driven by
+large firms belonging t o a few sectors. When we look at the above numbers by firm
+size we find that firms with fewer than 500 employees experienced only a very modest
+increase in their innovation expenditures (€25.7bn in 1995 vs. €34.5bn in 2013, i.e.
+1.6% per year) whereas larg e firms with more than 500 employees increased their
+spending from €35.1bn in 1995 to €110.1bn in 2013 (6.6% per year). In line with these
+observations we also find a concentration of the activities on fewer firms. In particular,
+the share of innovators – firms that have introduced at least one product or process
+innovation during the preceding three years – has similarly declined since the late
+1990s. Having reached a peak in 1999 at 55.5%, it dropped to 43.7% in 2007 and fur-
+ther declined to 37.1% in 2013.
+1
+A look at the sector distribution conveys a similar concentration. In 1995, the R&D i n-
+tensive manufacturing sectors (pharmaceuticals, chemicals, electronics, machinery &
+equipment, vehicles) spent €30.9bn on innovation and increased that figure to €92.6bn
+in 2013 (+6.3% per year). Low -tech manufacturing and service sectors expanded their
+innovation expenditure by an average annual rate of 3.1%
+These developments would not be problematic if they were due to firms from high- tech
+sectors growing at an above- average rate. While some well -known examples of this
+phenomenon also exist in Germany, e.g. the software company SAP, the absolute
+numbers of such cases is very limited. Moreover, the share of value added of highly
+R&D-intensive sectors has remained fairly stable in Germany. This makes this explana-
+tion implausible.
+In this article we argue that the phenomenon is more likely to be explained by smaller
+firms withdrawing from innovation activities on a large scale. Such a development
+would be of much greater concern because one of the pillars of the German economy’s
+
+1 A similar decline in the innovation share is also found in other European countries, though
+changes in survey methodologies and the lack of annual surveys limit long- term compari-
+sons. For 12 European countries reporting innovation data for all Community Innovation
+Surveys from 1996 to 2012, the share of innovators fell from 45% in 1996 to 40% in 2006
+and went further down to 37% in 2012.
+
+===== PDF_PAGE 6 =====
+2 Introduction
+competitiveness is seen in its highly innovative SMEs. A withdrawal of these firms from
+innovation would make the German economy considerably more reliant on a set of
+well-known large companies, while grassroot innovation in SMEs may be lost. Mor e-
+over, since choices about innovation activities display a high degree of path depend-
+ence, these developments may easily turn permanent.
+While the aggregate figures from above indeed provide initial evidence of SMEs wit h-
+drawing from innovation, such aggregate indicators can be misleading when processes
+which are taking place simultaneously are left unaccounted. More convincing evidence
+must therefore rely on firm level evidence using methods that can appropri ately ac-
+count for confounding factors. Relying on a panel of all firms that took part in the an-
+nual German Innovation Surveys covering the period from 2001 to 2013 , we employ
+Markov Chain methods that model when and why firms change their innovative beha v-
+iour both in terms of actual innovation outcomes as well as in terms of R&D effort.
+The main results are threefold. By dividing our data into two periods from 2001- 2007
+and 2008-2013, we show that the long -term share of firms engaging in innovation and
+R&D is considerably lower in the second period with an increase of the share of firms
+which are not innovative at all. Second, analyses of the determinants suggest that, as
+expected, smaller firms are more likely to stop innovation activities. We show that they
+are less likely to switch to higher levels of innovative activities (e.g. from non-innovative
+to product or process innovator or from product or process innovator to simultaneous
+product and process innovator). They are also more likely to fall back to lower levels of
+innovativeness. Most importantly this pattern is becoming more pronounced in the lat-
+ter period of 2008 and after. Furthermore, we show that our findings are not a transitory
+short-term shock of the economic crisis, because the declining trend persists even in
+2011 and 2013, which were years of considerable economic growth in Germany. Thus,
+there seems to be a risk that these developments become persistent. We therefore
+analyse the effectiveness of a set of mechanisms potentially offsetting o r at least slow-
+ing down these developments. We show that both public innovation support and better
+financial capabilities increase the chances of moving to higher levels of innovativeness
+and reduce the probability of falling back. We conclude that strengt hening public inno-
+vation support in Germany should be a primary target of economic policy to avoid the
+risk of a permanent withdrawal of German SMEs from innovation.
+
+===== PDF_PAGE 7 =====
+Background – persistence of innovation activities and its relation to firm size 3
+2 Background – persistence of innovation activities
+and its relation to firm size
+Empirical accounts of firms’ innovation activities usually indicate the existence of a core
+of systematically innovating firms surrounded by a larger number of firms conducting
+either no or only very sporadic innovation activities (Bottazzi et al. 2001 ; Cefis 2003;
+Malerba and Orsenigo 1997). Transition rates between the groups of innovation active
+and inactive firms are usually very low, which implies persistent heterogeneity of R&D
+strategies across firms (Dosi 2007; see Crespi and Scelatto 2015 and Latham and Le
+Bas 2006 for an overview).
+This persistence has often been explained with the reference to the cumulative devel-
+opment of organizational routines driving innovation- relevant capabilities (Nelson and
+Winter 1982; Teece et al. 1997). More precisely, a point i s made that past innovation
+activities increase the effectiveness of future innovation activities , making choices
+about innovation (or its absence) persistent and path- dependent (see Nelson and Win-
+ter 1982). This persistence results on the one hand from the fact that by conducting
+innovation in the past, firms learn to manage innovation more effectively in the future.
+On the other hand, a firm’s knowledge stock strongly determines its absorptive capacity
+and eases the acquisition of external knowledge, which provides another stimulus for
+innovation (Cohen and Levinthal 1990). In this respect, innovation is subject to increas-
+ing returns to scale (‘success breeds success’, see Phillips 1971 and Mansfield 1968).
+Persistence may also result from sunk costs or if the factors driving a firm’s decision to
+innovate or not are persistent over time (Peters 2009; Le Bas and Scelatto 2014). Mar-
+ket structure may be such a factor, i.e. firms acting in a highly competi tive environment
+that demands regular innovative advance will tend to innovate continuously (see
+Schmookler 1966 for theoretical arguments and Malerba et al. 1997; Peters 2009 ; Wo-
+erter 2014 for empirical evidence).
+In general, the theoretical predictions on the persistence of innovation activities have
+been corroborated by the empirical literature relying on a variety of different data
+sources.
+2
+
+2 It should be noted, however, that studies using patent application data have often found
+lower levels of persistence (Geroski et al. 1997; Cefis and Orsenigo 2001; Cefis 2003;
+Malerba and Orsenigo 1999). Although, Malerba et al. (1997) and Alfranca et al. (2002)
+find more evidence for persistence, particularly among larger firms and when looking at
+specific fields of technology, Duguet and Monjon (2004) conclude that persistency in pat-
+enting rather reveals persistency in technological leadership than in the decision to inn o-
+vate.
+
+===== PDF_PAGE 8 =====
+4 Background – persistence of innovation activities and its relation to firm size
+Máñez Castillejo et al. (2009; 2014) analysed persistency in R&D for Spanish manufac-
+turing firms and found that past R&D experience positively affected the decision to
+conduct R&D, though the effect of prior R&D experience depreciates fairly quickly over
+time. Persistence seems to be driven both by sunk costs, success-breeds-success and
+demand-pull. Baraldi et al. ( 2013) find that persistence in R&D depends on the market
+structure as only firms in oligopolistic markets (Schumpeter I industries) show persi s-
+tent R&D efforts. Woerter (2014) supports this finding based on Swiss data since per-
+sistence in R&D expenditures is more likely for firms with few competitors.
+Several studies use innovation survey data. They tend to focus on the output of innova-
+tive efforts, i.e. the introduction of new products and new processes, and the direct
+economic outcome in terms of new product sales. These variables are generally found
+to be positively correlated over time (for Finland see Deschryvere 2014; for France see
+Duguet and Monjon 2004; Haned et al. 2014; Lhuillery 2014; for Germany see Peters
+2009; Ganter and Hecker 2013; Hecker and Ganter 2014; for Luxembourg see Le Bas
+et al. 2015; Le Bas and Poussing 2014; for the Netherlands see Raymond et al. 2010;
+for Norway see Clausen 2012; Clausen and Pohjola 2013; for Sweden see Karlsson
+and Tavassoli 2015; Johansson and Lööf 2010; for the UK see Preverzer and Frenz
+2013).
+Another important data source is a panel survey of Spanish manufacturing firms con-
+taining information on innovation (see Máñez 2009; 2014; Martínez-Ros and Labeaga
+2009; Triguero et al. 2014a; 2014b; Triguero and Córcoles 2013). A few other authors
+use case study approaches (Matvejeva 2014), sometimes combined with firm survey
+data (Roper and Hewitt -Dundas 2008). Empirical studies for non- European countries
+are less frequent (see Huang 2008 ; Huang and Yang 2010 ; Jang and Chen 2011 for
+Taiwan; Rogers 2004 for Australia; Suárez 2014 for Argentina).
+Accordingly, the literature survey by Crespi and Scellato (2015) strongly supports the
+finding of persistency. Beyond that several studies show that the degree of persistence
+may depend on firm size.
+This is because the well -documented increasing returns to scale in innovation (see
+Clausen and Pohjola 2013; Lhuillery 2014; Máñez et al. 2014 ; Raymond et al. 2010 ;
+Flaig and Stadler 1994) may be more pronounced for larger firms. In particular, be-
+cause larger firms often possess complementary assets (Teece 1986) and follow more
+elaborated protection strategies of intellectual property (Neuhäusler 2012) necessary
+for privatizing the benefits of innovation, they are often more successful in their innova-
+tion activities.
+
+===== PDF_PAGE 9 =====
+Data 5
+This is likely to induce them to continue their innovation activities. Empirical evidence of
+larger firms showing higher persistence is provided by Roper and Hewitt -Dundas
+(2008) and Antonelli et al. (2013). Also, larger firms follow more complex innovation
+strategies and more complex innovators are less likely to discontinue innovation (Le
+Bas and Poussing 2014).
+This suggests that any events potentially changing the firms’ innovation behaviours
+(e.g. changes in the access to financing or demand side factors) are more likely to lead
+to changes in observed behaviour of small rather than large firms. While we do not
+endeavour to explain the reasons for the trend towards a concentration of innovation
+and R&D activities on a f ew firms, this also means that the concentration may be
+mainly driven by a withdrawal of smaller firms. Based on this, our first aim is to corrobo-
+rate the already described trend of declining overall R&D and innovation engagement
+in a setting controlling f or various confounding factors, such as potential shifts in the
+sectoral composition. By this we intend to show that there was probably some change
+going on in the overall firms’ innovation behaviour. Our second aim is to show that this
+trend was primarily driven by a withdrawal of small to medium -sized firms. Third, we
+aim to contribute to a better understanding of the options policy has to counteract a
+further concentration of innovation and R&D on predominantly large firms. To this end
+we investigate the impact of specific firm characteristics on their likelihood to continue
+or discontinue innovation and R&D. We start with the influence of public innovation
+subsidies as a prime measure to increase and support firms’ innovation and R&D ac-
+tivities. Because public innovation support is usually justified by either strengthening
+the ability to finance innovation or by bringing together complementary resources
+through innovation collaboration we also analyse the influence of innovation collabora-
+tion and financial strength on the likelihood of continuing or discontinuing innovation
+and R&D activities.
+We now continue with a description of the dataset and some more descriptive details
+on the dynamics of the R&D and innovation engagement of German firms in the past
+15-20 years.
+3 Data
+3.1 The Mannheim Innovation Panel
+Our study uses data from the German Innovation Survey which is part of the CIS initi a-
+tive. In contrast to most other national CIS, the German Innovation Survey is an annual
+survey based on a panel sample. It is conducted by the Centre for European Economic
+
+===== PDF_PAGE 10 =====
+6 Data
+Research (ZEW) on behalf of the Federal government. As ZEW is located in the city of
+Mannheim, this panel survey is called the Mannheim Innovation Panel (MIP). The MIP
+applies the common methodology of the CIS in terms of sampling, questionnaire and
+data quality control. It goes beyond the minimum requirements of the CIS in terms of
+size and sector coverage as it also includes very small firms (below 10 employees) and
+covers more service sectors than the core CIS service sector definition would require.
+The MIP questionnaire contains a number of additional questions which are not part of
+the harmonised questionnaire of the CIS, including financial information and more de-
+tailed information on innovation processes and determinants, hence enlarging the ana-
+lytical potential at the expense of imposing a higher response burden on the firms.
+The MIP sample is a panel sample which was drawn in 1993 (for manufacturing) and
+1995 (for services) and has been updated every second year since in order to co m-
+pensate for panel mortality. While the sampling frame is the official business register,
+the registe r is not accessible for drawing a sample. Instead, the firm data base of
+Creditreform, Germany’s largest credit rating agency is used. This data base includes
+all economically active enterprises in Germany and hence includes the same firm
+population as the business register. An advantage of using Creditreform’s data base for
+sampling is the opportunity to add further information to the data, including the credit
+rating of each firm. We are using this opportunity in the present paper.
+Rammer and Peters (2013) provide a comprehensive overview of this survey and its
+panel structure, including a discussion of the persistence of innovative activities. The
+current sample size is around 35,000. As the MIP is a voluntary survey, and owing to
+the high response burden due to the lengthy questionnaire, response rates are compa-
+rably low at 25 to 35%. The panel consists of 5,000 to 8,000 firm observations per year
+based on questionnaire responses. In addition, a large -scale non-response survey of a
+similar size is conducted every year to control for a likely response bias with respect to
+R&D activity and the introduction of product and process innovation. The non-response
+survey is conducted through a telephone interview, using exactly the same definitions
+and questions as used in the questionnaire. For this paper, we use both the R&D and
+innovation information from the questionnaire and the non-response interviews.
+3.2 Descriptive Statistics on Firms Conducting R&D and
+Innovation Activities
+For this paper, we use data for the period 2001 to 2013. We start in 2001 for methodo-
+logical reasons since the question on product and process innovation was re-designed
+in that year, causing a break in the data (with a higher share of firms reporting both
+product and process innovation pr ior to the re -design). Within the 13 year period cov-
+
+===== PDF_PAGE 11 =====
+Data 7
+ered in this study, a total of 49,557 different firms have been part of the sample. 42,247
+firms responded at least one time. 36.8% of the firms were part of the sample at the
+beginning of the period (and hence have the chance to appear in every single year of
+the period covered) while the others entered the sample in later years (between 8 and
+12% for each of the reference years in which the panel sample had been refreshed:
+2002, 2004, 2006, 2008, 2010 and 2012). The total number of responses by the 42,247
+firms is 153,224, giving an average number of responses per firm of 3.6. As usual in
+voluntary firm panel surveys with high panel mortality, the panel is strongly unbalanced.
+Only 0.7% of the firms in our sample responded in each of the 13 years, producing
+2.5% of all firm -year observations. 30% of the firms responded at least 5 times during
+the period 2001 -2013, producing 62% of all observations. Table 1 provides details on
+the panel structure of our sample.
+Table 1: Number of firms and firm-year observations differentiated by the num-
+ber of panel participations during 2001 and 2013
+No. of panel
+participations
+No. of firms Share in all
+firms (%)
+No. of firm-year
+observations
+Share in all
+observations (%)
+1 13,300 31.5 13,300 8.7
+2 7,541 17.8 15,082 9.8
+3 4,961 11.7 14,883 9.7
+4 3,764 8.9 15,056 9.8
+5 2,738 6.5 13,690 8.9
+6 2,481 5.9 14,886 9.7
+7 2,129 5.0 14,903 9.7
+8 1,609 3.8 12,872 8.4
+9 1,274 3.0 11,466 7.5
+10 975 2.3 9,750 6.4
+11 657 1.6 7,227 4.7
+12 525 1.2 6,300 4.1
+13 293 0.7 3,809 2.5
+Total 42,247 100.0 153,224 100.0
+Source: German Innovation Survey, own calculations
+Table 2 gives some descriptive results of the persistence of R&D and innovation activi-
+ties. Following the standard measurement of in- house R&D activities in the CIS, we
+distinguish continuous, occasional and no R&D. Innovation activities are separated by
+product and process innovation. When calculating the share of firms that reports the
+same R&D or innovation status in each year of survey participation, we see that the
+
+===== PDF_PAGE 12 =====
+8 Data
+share falls with the number of participations up to about 8 participations. For firms with
+very frequent responses to the survey, this share does not vary significantly. Among
+the firms participating in each of the 13 years covered by this study, 39% reported the
+same status in terms of product innovation (i.e. either no product innovation in each
+year, or product innovation in every single year) and 36% reported the same status in
+terms of process innovation. For continuous R&D, the share of firms with persistent
+activities is much higher (66% reporting either continuous R&D activities in every single
+year, or never had continuous R&D activities in any of the 13 years) as is the share of
+firms with respect to occasional R&D (57%) and no R&D (56%). One should note that
+the persistence of R&D and innovation activities in CIS -type surveys will be overrated
+owing to the fact that both R&D and innovation activities reported in a certain survey
+year should theoretically refer to activities in the previous three year period. In practice,
+many firms do not seem to follow these instructions but rather report activities for the
+reference year only. This finding is supported both by cognitive testing of CIS survey
+questions, face-to-face interviews with enterprises participating in the survey and panel
+survey results that show responses inconsistent with the three year reference period
+(see Rammer and Peters 2013, for more details).
+Table 2: Persistence of R&D and innovation activities differentiated by the
+number of panel participations during 2001 and 2013
+No. of panel
+participations
+during 2001
+and 2013
+Share of firms not changing their status with respect to ...
+product
+innovation
+process
+innovation
+continuous
+R&D
+occasional
+R&D
+no R&D
+1 100 100 100 100 100
+2 75 72 87 84 83
+3 62 57 74 71 72
+4 53 48 69 63 62
+5 46 38 64 56 54
+6 44 36 61 54 52
+7 41 34 59 52 53
+8 36 28 57 48 47
+9 39 28 57 47 47
+10 37 29 57 47 50
+11 35 25 54 43 48
+12 38 29 59 51 52
+13 39 36 66 57 56
+Source: German Innovation Survey, own calculations
+
+===== PDF_PAGE 13 =====
+Data 9
+When calculating the share of firms with R&D and innovation activities over the 13-year
+period using sample weights (corrected for a likely non- response bias, see Aschhoff et
+al. 2013, for more details), one can observe a distinct downward trend for the share of
+firms having introduced product or process innovation, going down from 52% in 2001 to
+37% in 2013. For continuous R&D we find a much smaller decrease (from 14% to
+12%). The share of firms with occasional R&D is fluctuating somewhat stronger but
+also shows a downward trend (from 10% to 8%). When expanding the observation pe-
+riod back to the mid 1990s, the decrease in the share of innovating firms becomes
+even more salient while the share of firms with continuous or occasional R&D was
+lower in the mid 1990s than in 2013.
+Figure 1: Innovation and R&D activities, and innovation expenditure in the
+German business enterprise sector, 1995-2013
+
+Note: weighted results.
+Source: German Innovation Survey, own calculations
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+'95 '96 '97 '98 '99 '00 '01 '02 '03 '04 '05 '06 '07 '08 '09 '10 '11 '12 '13
+Share in all firms, %
+Product/process innovators
+Continuous R&D
+Occasional R&D
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140
+150
+'95 '96 '97 '98 '99 '00 '01 '02 '03 '04 '05 '06 '07 '08 '09 '10 '11 '12'13
+Innovation Expenditure, billion €
+Large enterprises (500+ employees)
+SMEs (5 to 499 employees)
+
+===== PDF_PAGE 14 =====
+10 Methodology
+The falling share of firms with R&D and innovation activities is sharply contrasted by a
+strong and almost steady increase in total innovation expenditure in the German enter-
+prise sector over the past two decades. Though the data are nominal v alues, the aver-
+age annual rate of growth rate of 4.0% (2001 -2013) indicates a strong real growth of
+innovation budgets. Broken down by size classes one clearly sees that large ente r-
+prises were mainly responsible for that increase (4.9% average annual growt h) while
+small and medium -sized firms have expanded their innovation expenditure at an an-
+nual rate of 1.8% only. These two opposing trends motivate our empirical study.
+4 Methodology
+4.1 An Introduction to Markov Chains
+In order to analyse our main research questions (see Section 2 ) we make use of a set
+of econometric Maximum Likelihood estimators that belong to the class of Markov
+Chain Models. Markov Chains are so- called state-space models, which describe how
+observed units move between a fixed (though possibly large) set of discrete states.
+Focusing on the innovation state, on the input side we will distinguish between different
+states of R&D engagement - specifically "no R&D", "occasional R&D" and "continuous
+R&D". On the output -side we will consider three states of innovation engagement: "no
+innovations", "only product or only process innovations", and "both product and proc-
+ess innovations".
+To facilitate the exposition of the methodology, we refer to the R&D model in the follow-
+ing. The three states constitute the state space. As we have panel data at hand, we
+can construct two pieces of information. The first is the so-called starting vector
+3
+( )0 10 20 30p ppp= (1)
+which simply contains the probabilities in the starting period that a firm was in state 1
+(e.g. not R&D active), state 2 (occasionally R&D performing) or in state 3 (continuously
+R&D performing), where each firm must be in exactly one state.
+
+3 Technically, we use a somewhat more complicated model than the one described above in
+two respects. First we allow for time to pass continuously and second we allow the trans i-
+tion probabilities to depend on firm -specific covariates in all our analyses. But to facilitate
+the presentation of the methodology we will continue with the time- discrete model because
+it is easier to understand while the general mechanics are identical . We also defer the di s-
+cussion of the firm -specific covariates even though they are already used as controls in
+predicting the stationary distributions, which we now turn to.
+
+===== PDF_PAGE 15 =====
+Methodology 11
+The second piece of information that can be gathered from the panel data is how firms
+move between the states over time. This information is usually represented in the tran-
+sition matrix which co ntains in each cell ( , j)i the probability that a firm moves from
+state i to state j. With three states it looks as follows:
+11 12 13
+21 22 23
+31 32 33
+qqq
+Pqqq
+qqq
+
+=
+ (2)
+The diagonal elements will then obviously indicate the probabilities that a firm will re-
+main in the current state indicating the degree of persistence. In the transition matrix all
+rows must add up to one, since each firm attached to one particular state must either
+stay there or move to one of the other states. Furthermore , it is worth noting that panel
+data allows estimating the transition matrix by calculating the shares in which a firm
+from each state i transited to any of the states j.
+Markov Chains can be used for a variety of purposes. For example Tavassoli and
+Karlsson (2015) calculate Eq. (2) for different combinations of innovations and argue
+for heavy persistence in firms’ innovation behaviour based on the observation that the
+diagonal probabilities are much larger than the off-diagonal probabilities.
+Further, under the Mar kov assumption that the current state of the system is only de-
+termined by its directly preceding states, Eq. (1) and Eq. (2) can also be used for pr e-
+diction. In particular, the k-periods-ahead prediction at time t is simply:
+k
+tk tp pP+ = ⋅ (3)
+4.2 Predicting Stationary Distributions
+Eq. (3) is particularly interesting because it allows an assessment of the future distribu-
+tions of firms between the different innovation and R&D engagement classes. In par-
+ticular, it can be shown that under certain conditions
+4 the future distribution in Eq. (3)
+converges to a constant limit. This is called the stationarity property and states that the
+long-run distribution does not depend on the starting vector. It can be shown that the
+stationary distribution for three states is determined by the following formula:
+
+4 We will not state these properties here but they are true in our application.
+
+===== PDF_PAGE 16 =====
+12 Methodology
+1'
+11 12 13
+21 22 23
+31 32 33
+1 1 0 0 111
+1 0 1 0 111
+1 0 0 1 111
+qqq
+p qqq
+qqq
+−
+      
+      = −                  
+ (5)
+In principle we use this formula in Section 5 when we calculate the stationary distribu-
+tions to evaluate whether the innovation behaviour of German firms has changed over
+time. In particular, we will compare the stationary distributions implied in the before
+crisis period (2001- 2007), in the cris is period (2008- 2010) and the post crisis period
+(2011-2013).5
+4.3 Firm-specific Transition Probabilities
+Our second aim is to assess whether small and medium-sized firms are responsible for
+the decline in the observed innovator and R&D-performer rates. Our third aim is to ana-
+lyse whether the fact that a firm received public funding, was involved in innovation
+collaborations, or was financial ly restricted has any consequences on the decision to
+move in or out of innovation and R&D. To analyse these questions we have to allow
+the probabilities in Eq. (2) to depend on firm characteristics. A convenient functional
+form is the hazard rate specification also used in other survival models:
+() e
+ht ijxb
+ij ht ijqx q
+β
+= (6)
+where i and j denote states as before, h indicates a firm, and t the time period. b
+ijq is a
+baseline hazard of moving from i to j, which is modified according to an exponential
+function that depends on firm characteristics htx and parameters ijβ . While maximiza-
+tion occurs over the baseline hazard and the parameter ijβ , it should be noted that the
+main interest is on the latter, since they indicate whether the actual transition probabi l-
+ity for a firm with particular characteristics is below or above the baseline hazard. In
+Section 5 we will therefore report the hazar d rate which represents the percentage i n-
+crease or decline of the baseline hazard due to a marginal increase of the explanatory
+variables.
+For all estimations we have used the msm -package for R, which was provided by
+Jackson (2011).
+
+5 As indicated, we have actually used estimates of the transition matrix that are based on
+size and sector controls. We evaluate the stationary distributions for the mean of the con-
+trol variables. Since the means are calculated over the whole sample period, the results
+are more robust to changes in the sample composition than to use in unconditional models.
+
+===== PDF_PAGE 17 =====
+Methodology 13
+4.4 Main Variables
+Markov Chains in its easiest form only need information on the state space and how
+units change between states. Thus the most important variables are those that define the
+state space. As indicated before, we use a variable for innovation input (conducting R&D
+activities) and innovation output (having introduced a product or process innovation).
+As concerns the R&D variable, firms are asked to report whether they perform R&D on
+an occasional or on a continuous basis or whether they do not have in- house R&D ac-
+tivities. These three answers determine the three states that firms may move between.
+With respect to the innovation output there is information on whether firms have intr o-
+duced no innovation years, whether they have introduced product innovations or
+whether they have introduced process innovations. We construct a three state variable
+from these answers, which is zero if the firm has not been an innovator. It is equal to 1,
+if the firm has introduced either product or process innovations, and equal to 2, if it has
+introduced product or process innovations simultaneously. This definition was chosen
+because the states 1, 2, and 3 can be thought of as reflecting increasing engagement
+in innovation and R&D, with 1 indicating no engagement, 2 indicating intermediate en-
+gagement, and 3 high engagement.
+The second set of variables consists of those that are used to allow for firm -specific
+differences in the transition probabilities. In order to control for sector differences we
+use the OECD tech-level classification to differentiate between medium- high-tech sec-
+tors, medium -low-tech sectors, and services. We will refrain from interpreting these
+variables as they are merely treated as potential confounders. More interesting are th e
+variables on the size of the firm as we have discussed that smaller firms might be more
+at the core of a potential reduction in the share of firms engaged in innovation and
+R&D. In order to investigate how the baseline hazard is affected by the size of the firm
+we include a dummy for small and medium sized companies (1 -499 employees).
+6 The
+baseline category consists of firms with more than 500 employees. Finally we include a
+set of variables that is commonly discussed as promoters of innovation. One variable
+measures whether the firm received public support for R&D or innovation by any public
+funding body inside or outside Germany (state governments and federal government in
+Germany, EU, other national or international sources). The second is equal to 1 if the
+firm was active in innovation partnerships in order to analyse the importance of the
+
+6 We further differentiate between firms that have fewer than 50 employees, those that have
+between 50 and 249, and those that have between 250 and 499. Technically it would have
+been possible to include a continuous measure of size (e.g. number of employees) b ut this
+would have hidden any differences between the classes of the firm.
+
+===== PDF_PAGE 18 =====
+14 Results
+social framing and bidirectional knowledge flows between firms. The third measure is a
+measure of the firm’s financial strength. We use the credit rating index of Creditreform.
+The index is a continuous variable that takes the value of 1 for firms with the best rating
+and 4 with the lowest. Firms in the state of insolvency or bankruptcy get index values 5
+or 6. We invert this measure in order to let larger values denot e a better credit rating in
+order to facilitate interpretation of the coefficients.
+5 Results
+5.1 Stationary Distributions of R&D and Innovation Activi-
+ties
+Going beyond the descriptive accounts of the aggregated share of firms conducting
+innovation and R&D activities, in this section we are particularly interested in predicting
+the long-term evolution of distribution of the firms between the different innovation and
+R&D states in the long -run. This generalises the descriptive findings of the aggregate
+data (Section 3) in one important respect. In particular, investigating actual shares only
+gives information on the contemporary distribution. Analysing stationary dis tributions
+implied by actual transition rates gives information on the long -run distribution. Thus
+the analysis becomes forward-looking.
+We intend to show that the transition matrices in earlier sub- periods of the dataset im-
+plied stationary distributions with higher innovation and R&D engagement than in later
+periods. To this end we subdivide our dataset into a pre- crisis period ranging from
+2001-2007, a crisis-period from 2008-2010 and a post-crisis period from 2011 to 2013.
+Differentiating between a cris is and post -crisis period is primarily done to ensure that
+the declining trends are not only driven by the short-term transitory shock of the ec o-
+nomic crisis in 2008-2010. Instead by showing that the trends also extend to the period
+2011-2013 characterised by a positive economic climate, we intend to demonstrate that
+the concentration trend is permanent and unlikely to be a pure business cycle effect.
+The results can be found in Figure 2.
+Looking at the left panel we observe a clear pattern, which can be described by a con-
+tinuous increase in the share of non- R&D active firms over the three periods, a slightly
+decreasing share of firms that occasionally conduct R&D, and a strongly contracting
+share of firms that continuously do so. This effect is not negligible. While the stationary
+share of continuous R&D performers was still about 28% in 2001- 2007, this share
+drops to 19% in 2011-2013. This corresponds to a relative decline of almost one third.
+As concerns occasional R&D the drop is more modest (from 15% to slightly below
+
+===== PDF_PAGE 19 =====
+Results 15
+14%). Because each firm must be in exactly one state, corresponding to the reduction
+of the shares of R&D active firms we observe an increase of the non- R&D active firms
+from 57% in the pre-crisis period to 67% in the post-crisis period.
+A point of great concern is that these changes cannot easily be interpreted as a crisis -
+induced pro-cyclical phenomenon bec ause instead of returning to the pre- crisis distri-
+bution also in the period 2011- 2013 (a period of economic prosperity in Germany) the
+negative trends seem to amplify even after the crisis.
+Figure 2: The stationary distributions of the share of firms conducting R&D
+(top panel) and innovation (bottom panel) in pre-crisis and post-
+crisis periods
+
+The results for introducing product and process innovations are similar, albeit a little bit
+less drastic. The share of simultaneous pr oduct and process innovators drops from
+15% to 10%, which again corresponds to a 33% relative decrease. The share of prod-
+uct or process innovators stays with about 18% roughly constant, while the non-
+innovators increase from 67% to 72%. In one important respect these results differ
+from changes in the stationary R&D distributions. In particular, while the negative trend
+intensified for R&D, there seems to be a slight trend back towards the pre-crisis values
+for innovation participation at least for the stationary shares of non-innovating firms and
+product or process innovators.
+In summary, we make two important observations. First, firms in Germany retract both
+in terms of innovativeness and in terms of R&D participation. This corroborates the
+findings from aggregate descriptive accounts also in a setting where a number of co n-
+trol variables (e.g. sector composition or size) are included. Thus, there is evidence
+against the argument that changing industry structures or firm growth of particularly
+innovative firms can completely explain the concentration trends. Second, given that
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+No R&D Occasional R&D Continuous R&D
+2001 -2007
+2008 -2010
+2011 -2013
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+Not innovative Product or
+process
+innovator
+Product and
+process
+innovator
+2001 -2007
+2008 -2010
+2011 -2013
+
+===== PDF_PAGE 20 =====
+16 Results
+both for R&D and innovation the trends are not reversed after the crisis – there is even
+intensification for R&D – the transience of these trends can be doubted implying that
+business cycle events are unlikely to be the main cause. This suggests that a change
+in the behaviour of firms than a change in the composition of the sample has occurred
+driving these observations. In the following, we analyse whether small firms have con-
+tributed to this trend in particular. After that we analyse whether there are conceivable
+policy measures to mitigate the decline in the share of R&D and innovation performing
+firms.
+5.2 Changing Transition Probabilities and Their Relation to
+Firm Size
+The aggregate f igures on innovation expenditures suggest that there is a strong con-
+centration on large firms, implying that the declining trend in innovation and R&D en-
+gagement is driven by smaller rather than larger firms. We intend to corroborate this
+view by controlling for confounding factors such as those resulting from changes in
+sector compositions or growth dynamics of particularly innovative firms.
+We start by considering baseline model s. These models analyse whether and how the
+dynamics between the innovation ( non-innovating, product or process innovator, prod-
+uct and process innovator) and R&D states (non R&D active, occasional R&D, continu-
+ous R&D) are different for firms in differing size groups. The results can be found in
+Table 3.7
+
+7 The coefficients represent hazard rates, indicating how a variable affects the likelihood of
+any particular state change as compared to the baseline hazard. For example, the coef fi-
+cient of 0.5209 for the SME (1- 499) variable as concerns the entry S1S2 should be inter-
+preted that an SME with 1- 499 employees is 47.91% (=100- 52.09) less likely to move from
+non-R&D-active to occasional R&D activities as compared to the baseline of large firms
+(500+ employees).
+
+===== PDF_PAGE 21 =====
+Results 17
+Table 3: Transitions probabilities as function of firm size
+
+What we see is that SMEs are approximately 37% less likely to become occasional
+R&D performers if they had not performed R&D before. However, they appear som e-
+what less likely (about 10%) to fall back to no R&D activities, if they were occasional
+R&D performers. Thus, on the lower ranks of R&D activities smaller firms appear to
+switch states less often. Given, in any case, that the hazard rate for staying non- R&D
+active (0.52) is much smaller than the hazard rate for falling back to no R&D activities
+(0.89), the net dynamics will contribute to a higher likelihood to end up as non- R&D
+performing in the long run. Additionally, they are 25% less likely to develop continuous
+R&D activities and are 127% more likely to abandon continuous R&D in favour of oc-
+casional R&D. Comparable results can be found for innovation. SMEs are less likely to
+move upward and more likely to move downward both with respect to state changes
+SME (1-499)
+S1S2 0.5209 *** 0.5934 ***
+S2S1 0.8952 ** 1.4354 ***
+S2S3 0.7519 *** 0.7873 ***
+S3S2 2.2793 *** 2.4985 ***
+SME (1-50)
+S1S2 0.3841 *** 0.5474 ***
+S2S1 0.8062 ** 1.8210 ***
+S2S3 0.6928 *** 0.7311 ***
+S3S2 3.3195 *** 3.7000 ***
+SME (50-249)
+S1S2 0.5422 *** 0.7444 ***
+S2S1 0.8252 ** 1.6027 ***
+S2S3 0.9189 0.8492 ***
+S3S2 3.1651 *** 3.1299 ***
+SME (250-499)
+S1S2 0.7184 *** 0.9439
+S2S1 0.8906 1.4532 ***
+S2S3 1.2001 ** 0.9483
+S3S2 2.5214 *** 2.3449 ***
+MML (500-1000)
+S1S2 0.7457 *** 1.0702
+S2S1 0.8407 1.3628 ***
+S2S3 1.1266 1.0188
+S3S2 1.8689 *** 1.8166 ***
+Med. high-tec man.
+S1S2 2.1267 *** 1.7893 *** 2.1352 *** 1.7671 ***
+S2S1 0.6169 *** 0.5753 *** 0.6244 *** 0.5910 ***
+S2S3 1.0505 1.0084 1.0457 0.9957
+S3S2 0.4997 *** 0.7066 *** 0.5306 *** 0.7442 ***
+Med. low-tech. man.
+S1S2 1.3279 *** 1.2451 *** 1.3521 *** 1.2479 ***
+S2S1 0.7272 *** 0.9146 *** 0.7375 *** 0.9405 **
+S2S3 0.8863 *** 1.0298 0.9022 *** 1.0288
+S3S2 0.9723 0.9053 *** 1.0669 0.9580
+N 126891 183774 126891 183774
+T 13 13 13 13
+LR-test 80108.63*** 10015.46*** 80792.82*** 10996.39***
+Innovation R&D
+hazard ratehazard rate hazard ratehazard rate
+Innovation R&D
+
+===== PDF_PAGE 22 =====
+18 Results
+from no innovation to product or process and from product or process to product and
+process innovations. The hazard rates indicate that also here the effects are quite
+sizeable in particular with respect to the risk of falling back from very broad innovation
+activities (increase of almost 150% as compared to large firms).
+To probe this result we subdivide the SME dummy into the groups 1-49 employees, 50-
+249 employees, and 250- 499 employees. We also allow an additional dummy for m e-
+dium to medium -large companies (500- 999 employees) which are of particular impor-
+tance to the German economy. Basically these findings corroborate the results showing
+that although the patterns are strongest f or the smallest firms and gradually become
+weaker as firm size increases, they do not die out completely for any of the groups.
+Thus, even for the group of firms with 500- 999 employees we can still determine pat-
+terns that hint at an increase in the risk of falling back to lower and lower chances to
+moving to higher categories.
+This finding is interesting in itself because it reveals the dynamics that explain a con-
+centration of R&D and innovation activities on large firms. However, it does not explain
+that this concentration is increasing. For this we have to show that those patterns be-
+came more pronounced over time. This is done in Table 4, where we allow hazard
+rates for the corresponding SME dummy to differ by time period. Following the distinc-
+tion pre-crisis, crisis, and post -crisis-period (see Figure 2), we analyse this using t wo
+comparisons. In the first, we include a time dummy for the compound crisis and post -
+crisis period 2008-2013 and in the second we include a dummy for the post -crisis pe-
+riod only. In either case, if the hypothesis is correct that the decline in the share of firms
+performing innovation and R&D is due to a changing behaviour of SMEs, the interac-
+tion of the SME variable with these dummies should indicate an excess decrease (val-
+ues smaller 1) in the hazards to move to broader innovation or more continuous R&D
+and an excess increase (values larger 1) in the risk of falling to lower categories.
+In particular for R&D, this pattern can be clearly found for both time periods and, in line
+with Figure 2, is it particularly strong for the period 2011- 2013. Firms are less likely to
+move to higher occasional R&D if they were not R&D active, and they are more likely to
+fall back. They are also s ignificantly less likely to perform R&D continuously. A similar,
+though less pronounced pattern is observable for the compound crisis -post-crisis pe-
+riod. The only difference is that the likelihood to move upward to become an occasional
+R&D performer does not significantly differ.
+As concerns innovation, the patterns are in terms of direction of the coefficients rel a-
+tively stable over time. Firms in both periods experience an increased hazard to fall
+back to lower categories. This holds both for state changes from product and process
+
+===== PDF_PAGE 23 =====
+Results 19
+innovations to product or process innovations as well as from product or process inno-
+vations to not innovating. However, there appears to be some tendency that firms in
+both periods became more likely to move from no to product or process innovations
+(though not from product or process to product and process innovations). The net e f-
+fect of the dynamics, nonetheless, is negative because the increase in the chance to
+move from no to product or process innovations was much smaller (13.55% in 2008-
+2013 and 31.68% in 2012-2013) than the increase in the hazard to fall back to no inno-
+vations (28.14% in 2008- 2013 and 65.00% in 2011- 2013). Thus , in either case, the
+dynamics in both periods will result in lower shares of firms performing R&D and inno-
+vation.
+In summary, there is evidence of a change in the behaviour of SMEs towards less
+(broad) innovation and less (continuous) R&D taking place in the observation period.
+Table 4: Break points in the transition probabilities
+
+Finally, we consider whether there are any angles for policy to mitigate these negative
+trends. We have argued in Section 2 that the subsidiaries for innovation and R&D can
+serve this purpose. We have also posited that two major restraining factors are finan-
+cial rest rictions and a lack of internal competences which could be compensated
+SME (1-499)
+S1S2 0.5087 *** 0.5559 *** 0.5252 *** 0.5780 ***
+S2S1 0.8254 *** 1.2688 *** 0.8840 *** 1.3649 ***
+S2S3 0.7863 *** 0.8190 *** 0.7632 *** 0.7833 ***
+S3S2 2.2984 *** 2.3844 *** 2.2793 *** 2.4175 ***
+SME (1-499)*Y08-13
+S1S2 1.0315 1.1355 ***
+S2S1 1.1578 *** 1.2815 ***
+S2S3 0.9151 *** 0.9146 ***
+S3S2 0.9943 1.1122 ***
+SME (1-499)*Y11-13
+S1S2 0.8633 *** 1.3168 ***
+S2S1 1.1264 *** 1.6500 ***
+S2S3 0.8488 *** 1.0090
+S3S2 1.0335 *** 1.4561 ***
+Med.-high-tec man.
+S1S2 2.1224 *** 1.7813 *** 2.1242 *** 1.7887 ***
+S2S1 0.6155 *** 0.5735 *** 0.6174 *** 0.5759 ***
+S2S3 1.0536 1.0084 1.0511 1.0104
+S3S2 0.5001 *** 0.7046 *** 0.5001 *** 0.7083 ***
+Med. low-tech. Man.
+S1S2 1.3278 *** 1.2436 *** 1.3292 *** 1.2465 ***
+S2S1 0.7271 *** 0.9149 *** 0.7292 *** 0.9196 ***
+S2S3 0.8894 *** 1.0316 0.8867 *** 1.0331
+S3S2 0.9744 0.9074 *** 0.9741 0.9131 ***
+N 144891 183774 144891 183774
+T 13 13 13 13
+LR-test 80158.86*** 10266.82*** 80160.09*** 10389.48***
+hazard ratehazard rate hazard ratehazard rate
+Innovation R&D InnovationR&D
+
+===== PDF_PAGE 24 =====
+20 Results
+through innovation cooperation. Because in particular, in program support both short-
+comings can potentially be addressed e.g. through cooperation requirements or
+through additional credit support, we treat these variables as potential angles for policy.
+We summarise the results for R&D in Table 5, where we first treat each variable in a
+separate model and then analyse them jointly as a robustness check. The results for
+subsidies and innovation cooperation are quite consistent. Both increase the likelihood
+to move to occasional R&D (with a 197% increase for cooperation) and they reduce the
+risk of falling back to lower levels (e.g. 67% lower risk of falling back from continuous to
+occasional R&D for cooperation and 46% for to subsidies). Some effects also emerge
+for financial strength as measured by a credit rating index. This works, however, also
+for the top end of the R&D activities, while it does not seem to affect the decision to be
+either non R&D-active vs. occasional R&D performer.
+Table 5: Firm characteristics affecting the transition probabilities (R&D)
+
+If we consider these variables simultaneously, effects are largely corroborated with
+some notable differences. First, the effect of public subsidies is somewhat attenuated,
+though still significant. This is most like ly due to the fact that subsidies in Germany put
+SME (1-499)
+S1S2 0.5688 *** 0.6591 *** 0.5259 *** 0.6541 ***
+S2S1 1.0187 0.8868 * 0.9022 0.9217
+S2S3 0.7266 *** 0.7617 *** 0.7645 *** 0.7394 ***
+S3S2 2.2790 *** 1.9420 *** 2.1893 *** 1.9030 ***
+Subsidies received
+S1S2 1.4524 *** 1.1198 ***
+S2S1 0.6828 *** 0.7668 ***
+S2S3 0.9833 1.0064
+S3S2 0.5395 *** 0.6581 ***
+Innovation cooperations
+S1S2 2.9734 *** 2.7704 ***
+S2S1 0.5831 *** 0.7112 ***
+S2S3 0.9391 0.8476 ***
+S3S2 0.3281 *** 0.4560 ***
+Credit rating
+S1S2 0.9630 0.8864
+S2S1 0.9275 0.8368 **
+S2S3 1.1873 ** 1.0709
+S3S2 0.7131 *** 0.6486 ***
+Med. high-tech. man.
+S1S2 1.9238 *** 1.9845 *** 2.1259 *** 1.8894 ***
+S2S1 0.6235 *** 0.6494 *** 0.6166 *** 0.6448 ***
+S2S3 0.9038 * 0.9977 1.0635 0.9106
+S3S2 0.4481 *** 0.4856 *** 0.5091 *** 0.4699 ***
+Med. low-tech. man.
+S1S2 1.2752 *** 1.2718 *** 1.3243 *** 1.2661 ***
+S2S1 0.7114 *** 0.6807 *** 0.7286 *** 0.7032 ***
+S2S3 0.7466 *** 0.8126 *** 0.8962 *** 0.7431 ***
+S3S2 0.7374 *** 0.8273 *** 0.9885 0.7266 ***
+N 100152 109906 125962 98071
+T 13 13 13 13
+LR test 116006.80*** 105354.80*** 81035.66*** 119480.90***
+R&D
+harzard rate harzard rate harzard rate harzard rate
+R&D R&D R&D
+
+===== PDF_PAGE 25 =====
+Results 21
+great emphasis on cooperative project applications. This means that some of the pr e-
+dictive power of the subsidies actually pertained to the implied increase in cooperative
+propensity. Second, although the cooperation variable largely behaves as before, a
+somewhat puzzling effect emerges indicating a lower likelihood to move from occ a-
+sional to continuous R&D. It is unclear whether this resembles something structural as
+concerns cooperation and R&D, or whether this is simply due to multicollinearity be-
+tween subsidies and the cooperation variable. Third, in this model the effect of better
+credit ratings seems mainly in reducing the chances of discontinuing R&D at any level
+of activity. In any case, it shows that also financial constraints play a role for the dy-
+namics of R&D activities.
+Table 6: Firm characteristics affecting the transition probabilities (innovation)
+
+When turning to innovation ( Table 6) we observe a roughly consistent measure for all
+three variables. In terms of direction, no differences appear for subsidies, which i n-
+crease the likelihood of moving upward to occasional R&D and reduce t he risks of fa l-
+SME (1-499)
+S1S2 0.6142 *** 0.6712 *** 0.5480 *** 0.6276 ***
+S2S1 1.3820 *** 1.2588 *** 1.3285 *** 1.1879 ***
+S2S3 0.7774 *** 0.8014 *** 0.8108 *** 0.8165 ***
+S3S2 2.5450 *** 2.3027 *** 2.4425 *** 2.2678 ***
+Subsidies received
+S1S2 1.5535 *** 1.2564 ***
+S2S1 0.7171 *** 0.8243 ***
+S2S3 1.0292 0.9774
+S3S2 0.7736 *** 0.8479 ***
+Innovation cooperations
+S1S2 2.2914 *** 1.8278 ***
+S2S1 0.5005 *** 0.5841 ***
+S2S3 1.0872 *** 1.0075
+S3S2 0.5776 *** 0.6092 ***
+Credit rating
+S1S2 1.0736 1.1594 ***
+S2S1 0.9207 * 0.9340 *
+S2S3 1.0908 1.0448
+S3S2 0.7966 ** 0.7539 ***
+Med. high-tech. man.
+S1S2 1.6240 *** 1.5976 *** 1.8410 *** 1.5711 ***
+S2S1 0.6560 *** 0.6406 *** 0.5880 *** 0.6975 ***
+S2S3 0.9418 0.9857 1.0299 0.9373
+S3S2 0.7028 *** 0.7424 *** 0.7212 *** 0.7318 ***
+Med. low-tech. man.
+S1S2 1.2180 *** 1.2285 *** 1.2729 *** 1.2338 ***
+S2S1 0.8974 *** 0.8855 *** 0.9295 *** 0.9141 ***
+S2S3 1.0178 1.0291 1.0527 1.0444
+S3S2 0.8999 *** 0.8925 *** 0.9157 *** 0.9031 ***
+N 145338 157999 149200 116761
+T 13 13 13 13
+LR-test 61347.99*** 44937.60*** 28782.43*** 77627.45***
+Innovation
+hazard rate
+Innovation Innovation Innovation
+hazard rate hazard rate hazard rate
+
+===== PDF_PAGE 26 =====
+22 Conclusion
+ling back to lower categories. Also here cooperation seems to very effective, which
+additionally increases the chances of moving upward to continuous R&D strategy.
+Positive effects can also be discerned for the credit rating. If considered s imultane-
+ously, the results remain robust. The only effect that disappears is the increase in the
+likelihood of becoming a simultaneous product and process innovator as implied by
+collaboration activities.
+6 Conclusion
+Persistence is a major characteristic of innovation and R&D processes in firms. This
+can result from path- dependent learning, sunk costs, or strategic commitment. How-
+ever, despite the general feature of persistence descriptive accounts of level and distr i-
+bution of innovation expenditures have demonstrated a strong concentration on large
+firms. SMEs seem to have retracted from innovation and R&D to some degree. In this
+paper we took these descriptive phenomena as the starting point and analysed these
+trends in a multivariate Markov Chain model ling approach. Our results indeed confirm
+the descriptive statistics and show that even after controlling for firm potentially con-
+founding changes in the sector composition or innovation- induced growth processes
+the share of non- innovation/R&D-active firms hav e considerably increased. Likewise,
+the stationary distributions indicate that the share of continuous R&D performers and
+the share of simultaneous product and process innovators decreased by about a third
+in the study period from 2001 to 2013. We also showed that these trends are perm a-
+nent changes rather than transitory shocks induced by the economic crisis in 2008/09.
+This is particularly problematic because persistence in innovation strategies suggests
+that a firm’s decision to move out of innovation and R&D cannot be easily undone. This
+is because of the cumulative nature of innovation processes. In particular, firms discon-
+tinuing innovation and R&D tend to loose the capabilities associated with these activ i-
+ties. Thus, even if the retraction from innovat ion activities may in the short run save
+costs, in the longer term established market positions will erode, if firms to not continu-
+ously improve their products and production processes. While this may be a long and
+drawn-out process, the greatest danger is that firms may not find it easy to restart their
+innovation activities, because they lack the necessary competences (Dosi 1996). Thus,
+there is a danger that firms withdrawing from innovation experience that their estab-
+lished positions gradually wither while they are unable to perform renewal processes
+that could counteract these trends.
+Beyond the corroboration of the descriptive findings, we also provided evidence that
+this concentration trend is the result of the retraction of mainly smaller firms. Whil e
+Germany is often hailed for its highly innovative SME sector, this suggests that the
+
+===== PDF_PAGE 27 =====
+Conclusion 23
+German innovation system is gradually loosing one of its most important pillars. This
+can in the long -run bear considerable systemic risks not only for the smaller firms
+themselves but also for the larger ones. In particular, several authors have highlighted
+the existence of complementarity between small and large firms in innovation (Noot e-
+boom 1999; Tether 1998; Belderbos et al. 2006 ; Nooteboom 2009) that often results
+from a greater organizational flexibility and flat hierarchies in smaller firms (Baier et al.
+2013). In particular, in high-tech sectors large firms "outsource" parts of their innovation
+activities to innovation alliances with smaller firms which experience a lower degree of
+organizational rigidity (Ciborra 1991). However, if such innovation active SMEs become
+increasingly scarce, the potentials using the organizational complementarities in inno-
+vation vanish.
+A further problem of the concentration is related to the hazard of Germany developing
+an industrial monoculture dominated by a few large firms. More precisely, if only a li m-
+ited number of firms mainly located in some key sectors (automobiles, chemistry, and
+machine construction) remain, there is a risk that the sector composition in Germany
+will shift even more towards these selected se ctors. This is because the effect of inno-
+vation is one of creating an asymmetry by making some firms more competitive than
+others (Dosi 1988). The more competitive firms w ill then grow at the expens e of other
+firms. On the sector level this will imply a shift of resources to sectors with higher levels
+of innovativeness (Andries et al. 2015). While the reallocation of resources towards
+more productive uses is certainly desir able, the fact that only a limited number of firms
+are driving this trend, this implies an increasing dependence on few firms and sectors.
+As a consequence the German economy runs a risk of becoming much more vulner-
+able to aggregate technology or demand si de shocks that affect firms in a certain sec-
+tor in a similar way. In this respect, the ongoing concentration processes may in the
+longer term considerably reduce the resilience of the German economy to crises and
+business cycles.
+Thus from a policy perspec tive, there is therefore a strong need to take measures
+against the concentration of innovation and R&D activities on larger firm. Our results
+showed that several firm characteristics considerably moderate the decisions to move
+in or out of innovation and R&D. We have found that public subsidies, innovation coop-
+eration, and better financial positions tend to be associated with lower risks of falling
+back to lower levels of innovation and R&D engagement while they increase the
+chances that firms increase their innovation and R&D engagement. As concerns public
+subsidies this emphasises the effectiveness of the existing project support in Germany
+to keep firms committed to innovation and R&D activities. Indeed, there is considerable
+potential to increase state support still, as Germany is among the countries with the
+lowest shares of state-funded enterprise R&D. More specifically, in 2012 this share was
+slightly above 4% in Germany, while it was almost 8% in France and the UK and more
+
+===== PDF_PAGE 28 =====
+24 Conclusion
+than 10% in the US. Even It aly, heavily hit by the financial crisis, ranked much higher
+with about 7% (Deutsche Telekomstiftung 2014). The beneficial effects of innovation
+cooperation and higher financing capabilities give an indication of the mechanisms
+through which the public innovation and R&D support works. In specific, it is commonly
+argued that project support has at least two beneficial effects. First, it allocates financial
+resources to firms and therefore increases the internal financing capabilities. It may
+also serve as a signal to external financing institutions and therefore may facilitate ac-
+cess to debt financing or the capital markets. Second, innovation project support is
+regularly organised in cooperative projects, which is a further contribution factor to
+staying committed to innovation processes. This may result both from knowledge com-
+plementarities between the partners ( Harrigan 1988; Parkhe 1993; Schubert 2015) or
+from stable institutionalised frameworks for innovation projects (Rammer et al. 2013).
+Accordingly, Rammer et al. (2013) provide empirical evidence that up to 40% of the
+total effect of public support may be attributable to the fact that these programs require
+collaborative projects.
+While this underlines the general benefits of subsidizing collaborative innovation pro-
+jects, Rammer et al. (2013) also emphasise that a selection process in public innov a-
+tion support tends to disadvantage outsiders and newcomers. Accordingly, Peters
+(2009) provides evidence that innovation subsidies tend to become persistent in creat-
+ing funding careers. Having received funding in the past tends to causally increase the
+chances of receiving further funding. A concentration of funds on firms with proven
+track records of successful projects may statically be efficient because the expected
+output is maximised. At the same time it ostracises firms with little or no funding ex-
+perience. However, if the goal is to increase the share of innovators or R&D perfor m-
+ers, then such an allocation is likely to be problematic, because it does li ttle to support
+innovation newcomers. Thus, there is a need to find support schemes that are tailored
+towards firms with little prior innovation and R&D engagement. Rather than the max i-
+mizing outputs per funding volume in the short run, the justification would be to enlarge
+the base of innovation active firms in the economy. Schemes that could contribute to
+this objective could be implemented in several ways. One alternative is to create pr o-
+ject support schemes that are open only to innovation newcomers. A second alterna-
+tive are unconditional tax subsidies for R&D and innovation. Comprehensive empirical
+evidence from different countries and time periods has shown that these tax credits can
+be effective in raising R&D expenditures (Hall 1993; Bloom et al. 2002; Czarnitzki et al.
+2011).
+
+===== PDF_PAGE 29 =====
+References 25
+References
+Alfranca, O., Rama , R., Tunzelmann, N. von (2002): A patent analysis of global food
+and beverage firms: the persistence of innovation, Agribusiness , 18, 349– 368.
+Doi: 10.1002/agr.10021.
+Andries, P., Hoskens , M., Janger, J., Rammer, C., Schubert, T. (2015): The New EU
+2020 Innovation Indicator: A Step Forward in Measuring Innovation Output? Con-
+cordi Conference, Sevilla.
+Antonelli, C., Crespi , F., Scellato, G. (2012): Inside innovation persistence: new ev i-
+dence from Italian micro-data, Structural Change and Economic Dynamics , 23,
+341–353. Doi:10.1016/j.strueco.2012.03.002.
+Antonelli, C., Crespi, F., Scellato, G. (2013): Internal and external factors in innovation
+persistence, Economics of Innovation and New Technology , 22, 256 –280.
+Doi: 10.1080/10438599.2012.708135
+Aschhoff, B., Baier , E. , Crass , D. , Hud , M. , Hünermund , P. , Köhler , C. , Peters , B. ,
+Rammer, C., Schricke, E., Schubert, T., Schwiebacher, F. (2013): Innovation in
+Germany – Results of the German CIS 2006 to 2010, ZEW Documentation 13-
+01, Mannheim.
+Baier, E., Rammer, C., Schubert, T. (2015): The impact of captive innovation offshoring
+on the effectiveness of organizational adaptation, Journal of International Man-
+agement, 21, 150–165. Doi:10.1016/j.intman.2015.03.002.
+Baraldi, A.L., Cantabene, C., Perani, G. (2013): Reverse Causality in the R&D–Patents
+Relationship: An Interpretation of the Innovation Persistence, mimeo, University
+of Naples.
+Belderbos, R., Carree , M., Lokshin, B. (2006 ): Complementarity in R&D cooperation
+strategies, Review of Industrial Organization, 28, 401–426. Doi: 10.1007/s11151-
+006-9102-z.
+Bloom, N., Griffith, R., Reenen, J. van (2002): Do R&D tax credits work? Evidence from
+a panel of countries 1979- 1997, Journal of Public Economics , 85, 1– 31.
+Doi: 10.1016/S0047-2727(01)00086-X.
+Bottazzi, G., Dosi , G., Rocchetti, G. (2001): Modes of knowledge accumulation, entry
+regimes and patterns of industrial evolution, Industrial and Corporate Change, 10,
+609–638. Doi: 10.1093/icc/10.3.609.
+
+===== PDF_PAGE 30 =====
+26 References
+Cefis, E. (2003 ): Is there persistence in innovative activities? International Journal of
+Industrial Organization, 21, 489–515. Doi:10.1016/S0167-7187(02)00090-5.
+Cefis, E., Orsenigo , K. (2001): The persistence of innovative activities. A cross -
+countries and cross -sectors comparative analysis, Research Policy , 30, 1139–
+1158. Doi:10.1016/S0048-7333(00)00139-6.
+Ciborra, C.U. (1991): From Thinking to Tinkering: The Grassroots of Strategic Inform a-
+tion Systems, Proceedings of the Twelfth International Conference on Information
+Systems, New York, 283–291.
+Clausen, H., Pohjola,, M. (2013): Persistence of product innovation: comparing brea k-
+through and incremental product innovation, Technology Analysis & Strategic
+Management, 25, 369–385. Doi: 10.1080/09537325.2013.774344.
+Clausen, T., Pohjola, M., Sappraserty, K., Verspagen, B. (2012): Innovation strategies
+as a source of persistent innovation, Industrial and Corporate Change, 21, 553–
+585. Doi: 10.1093/icc/dtr051.
+Cohen, W., Levinthal , D. (1990): Absorptive capacity: a new perspective on learning
+and innovation, Administrative Science Quarterly , 35, 128– 158. Doi:
+10.2307/2393553.
+Colombelli, A., Quatraro, F. (2014): The persistence of firms' knowledge base: a quan-
+tile approach to Italian data, Economics of Innovation and New Technology , 23,
+585–610. Doi: 10.1080/10438599.2013.871164.
+Crespi, F., Scellato, G. (2015): Knowledge cumulability and path dependence in inno-
+vation persistence, In: Antonelli, C., Link, A.N. (Eds.): Routledge Handbook of the
+Economics of Knowledge, New York: Routledge, 116–134.
+Czarnitzki, D., Hanel , P., Rosa, J.M. (2011): Evaluating the impact of R&D tax credits
+on innovation: a microeconometric study on Canadian firms, Research Policy, 40,
+217–229. Doi:10.1016/j.respol.2010.09.017.
+Deschryvere, M. (2014): R&D, firm growth and the role of innovation persistence: an
+analysis of Finnish SMEs and large firms, Small Business Economics, 43, 767–
+785. Doi: 10.1007/s11187-014-9559-3.
+Deutsche Telekomstiftung (Ed.) (2014): Innovationsindikator 2014, Bonn.
+Dosi, G. (1988 ): Sources, procedures, and microeconomic effects of innovation, Jour-
+nal of Economic Literature, 26, 1120–1171.
+
+===== PDF_PAGE 31 =====
+References 27
+Dosi, G. (2007): Statistical regularities in the evolution of industries – a guide through
+some evidence and challenges for the theory , In: Malerba, F., Brusoni, S. (Eds.):
+Perspectives on Innovation, Cambridge: Cambridge University Press, 152–186.
+Duguet, E., Monjon, S. (2002): Creative Destruction and the Innovative Core: Is Inno-
+vation Persistent at the Firm Level? An Empirical Examination from CIS Data
+Comparing the Propensity Score and Regression Methods , Discussion Papers in
+Economics 02-07, University College London.
+Duguet, E., Monjon, S. (2004): Is Innovation Persistent at the Firm Level? An Econo-
+metric Examination Comparing the Propensity Score and Regression Methods ,
+mimeo, University of Paris I.
+Flaig, G., Stadler, M. (1994): Success breeds success. The dynamics of the innovation
+process, Empirical Economics, 19, 55–68. Doi: 10.1007/BF01205728.
+Frenz, M., Prevezer, M. (2013): What can CIS data tell us about technological regimes
+and persistence of innovation? Industry and Innovation , 19, 285– 306.
+DOI: 10.1080/13662716.2012.694676.
+Ganter, A., Hecker, A. (2013): Persistence of innovation: discriminating between types
+of innovation and sources of state dependence, Research Policy, 42, 1431–1445.
+Doi:10.1016/j.respol.2013.04.001.
+Geroski, P.A., Reenen, J. van, Walters , C.F. (1997): How persistently do firms inno-
+vate? Research Policy, 26, 33–48. Doi:10.1016/S0048-7333(96)00903-1.
+Hall, B.H. (1993): R&D tax policy during the 1980s: success or failure? , In: Poterba, J.
+(Ed.), Tax Policy and the Economy, Volume 7, Cambridge, Ma.: MIT Press, 1–36.
+Haned, N., Mothe, C., Nguyen-Thi, T.U. (2014): Firm persistence in technological inno-
+vation: the relevance of organizational innovation, Economics of Innovation and
+New Technology, 23, 490–516. Doi: 10.1080/10438599.2014.895509.
+Harrigan, K.R. (1988): Strategic alliances and partner asymmetries, In: Contractor, F.,
+Lorange, P. (Eds.): Cooperative Strategies in International Business , Lexington,
+MA: Lexington Books, 53–73.
+Hecker, A., Ganter, A. (2014): Path and past dependence of firm innovation, Econom-
+ics of Innovation and New Technology , 23, 563– 583.
+Doi: 10.1080/10438599.2014.895510.
+Huang, C.H. (2008): A note on the persistence of firms’ innovation behavior: a dynamic
+random effect probit model approach, Economics Bulletin, 15, 1–9.
+
+===== PDF_PAGE 32 =====
+28 References
+Huang, C.-H., Yang, C.-H. (2010): Persistence of innovation in Taiwan’s manufacturing
+firms, Taiwan Economic Review, 38, 199–231.
+Jang, S.-L., Chen, J. H. (2011): What determines how long an innovative spell will last?
+Scientometrics, 86, 65–76. Doi: 10.1007/s11192-010-0247-z.
+Johansson, B., Lööf , H. (2010): Innovation Strategy and Firm Performance - What is
+the Long-run Impact of Persistent R&D? CESIS Electronic Working Paper Series
+240, Royal Institute of Technology, Stockholm.
+Karlsson, C., Tavassoli , S. (2015): Persistence of Various Types of Innovation Ana-
+lysed and Explained, CESIS Electronic Working Paper Series No. 392, Royal I n-
+stitute of Technology, Stockholm.
+Latham, W., Le Bas, C. (2006): The Economics of Persistent Innovation: An Evolution-
+ary View, Berlin: Springer.
+Le Bas, C., Mothe , C., Nguyen, T.U. (2015): The differentiated impacts of organiz a-
+tional innovation practices on technological innovation persistence, European
+Journal of Innovation Management , 18, 110– 127. Doi: 10.1108/EJIM-09-2012-
+0085
+Le Bas, C., Scellato, G. (2014): Firm innovation persistence: a fresh look at the fram e-
+works of analysis, Economics of Innovation and New Technology, 23, 423–446.
+Le Bas, C., Poussing, N. (2014): Are complex innovators more persistent than single
+innovators? An empirical analysis of innovation persistence drivers, International
+Journal of Innovation Management , 18, no paging .
+Doi: 10.1142/S136391961450008X).
+Lhuillery, S. (2014): Marketing and per sistent innovation success, Economics of Inno-
+vation and New Technology, 23, 517–543. Doi: 10.1080/10438599.2014.895512.
+Malerba, F., Orsenigo , L. (1999): Technological entry, exit and survival: an empirical
+analysis of patent data, Research Policy , 28, 643– 660. Doi: 10.1016/S0048-
+7333(99)00005-0.
+Malerba, F., Orsenigo, L., Peretto, P. (1997): Persistence of innovative activities, sec-
+toral patterns of innovation and international technological specialization, Interna-
+tional Journal of Industrial Organization, 15, 801– 826. Doi:10.1016/S0167-
+7187(97)00012-X.
+
+===== PDF_PAGE 33 =====
+References 29
+Máñez Castillejo, J.A., Rochina Barrachina, M.E., Sanchis Llopis , A., Sanchis Llopis ,
+J.A. (2004): A Dynamic Approach to the Decision to Invest in R&D: The Role of
+Sunk Costs, mimeo, University of Valencia.
+Máñez Castillejo, J.A., Rochina Barrachina, M.E., Sanchis Llopis, A., Sanchis Llopis ,
+J.A. (2009): The role of sunk costs in the decision to invest in R&D, Journal of In-
+dustrial Economics, 57, 712–735. Doi: 10.1111/j.1467-6451.2009.00398.x.
+Máñez, J.A., Rochina-Barrachina, M.E., Sanchis-Llopis, A., Sanchis-Llopis, J.A. (2014):
+The determinants of R&D persistence in SMEs, Small Business Economics , 44,
+505–528. Doi: 10.1007/s11187-014-9611-3.
+Mansfield, E. (1968): Industrial Research and Technological Innovation: An Economet-
+ric Analysis, New York: Norton.
+Martínez-Ros, E., Labeaga , J.M. (2009): Product and process innovation: persistence
+and complementarities, European Management Review, 6, 64–75.
+Matvejeva, A. (2014): Determinants of persistence in innovation: evidence from the
+case study of the ‘Eye Microsurgery’ complex, Economics of Innovation and New
+Technology, 23, 544–562. Doi: 10.1080/10438599.2014.895513.
+Napoli, R. (2008): Innovation in the financial sector: persistence and Schumpeterian
+hypotheses – econometric evidence in Germany, Journal of Service Science and
+Management, 1, 215–226. Doi: 10.4236/jssm.2008.13023.
+Nelson, R., Winter , S. (1982): An Evolutionary Theory of Economic Change, Ca m-
+bridge: Belknap Press.
+Neuhäusler, P. (2012 ): The use of patents and informal appropriation mechanisms –
+differences between sectors and among companies, Technovation, 32, 681–693.
+Doi:10.1016/j.technovation.2012.07.004.
+Nooteboom, B. (1999): Innovation, learning and industrial organisation, Cambridge
+Journal of Economics, 23, 127–150. Doi: 10.1093/cje/23.2.127.
+Nooteboom, B. (2009): A Cognitive Theory of the Firm: Learning, Governance and D y-
+namic Capabilities, Cheltenham: Edward Elgar.
+Parkhe, A. (1993): The structuring of strategic alliances: a game theoretic and transac-
+tion-cost examination of interfirm cooperation. Academy of Management Journal ,
+36, 794–829. Doi: 10.2307/256759.
+
+===== PDF_PAGE 34 =====
+30 References
+Peters, B. (2009 ): Persistence of innovation: stylised facts and panel data evidence,
+Journal of Technology Transfer, 34, 226–243. Doi: 10.1007/s10961-007-9072-9.
+Phillips, A. (1971): Technology and Market Structure: A Study of the Aircraft Industry ,
+Lexington: Heath Lexington Books.
+Rammer, C., Peters , B. (2013): Innovation Panel Sur veys in Germany, in: Gault, F.
+(Ed.): Handbook of Innovation Indicators and Measurement , Cheltenham and
+Northampton, Ma.: Edward Elgar, 135–177.
+Rammer, C., Som, O., Kinkel, S., Köhler, C., Schubert, T., Schwiebacher, F., Kirner,
+E., Pesau , A., Murmann , M. (2012): Innovationen ohne Forschung , ZEW Wir t-
+schaftsanalysen, Bd. 101, Baden-Baden: Nomos.
+Raymond, W., Mohnen, P., Palm, F.C., Schim van der Loeff , S. (2010): Persistence of
+innovation in Dutch manufacturing: is it spurious? Review of Economics and Sta-
+tistics, 92, 495–504.
+Rogers, M. (2004): Networks, firm size and innovation, Small Business Economics, 22,
+141–153. Doi: 10.1023/B:SBEJ.0000014451.99047.69.
+Roper, S., Hewitt- Dundas, N. (2008): Innovation persistence: survey and case study
+evidence, Research Policy, 37, 149–162. Doi: 10.1016/j.respol.2007.10.005.
+Schmookler, J. (1966): Invention and Economic Growth, Cambridge, Ma.: Harvard Uni-
+versity Press.
+Schubert, T. (2015): Infringement of intellectual property in innovation partnerships,
+R&D Management, forthcoming (Doi: 10.1111/radm.12128).
+Suárez, D. (2014): Persistence of innovation in unstable environments: Continuity and
+change in the firm’s innovative behavior, Research Policy , 43, 726– 736.
+Doi: 10.1016/j.respol.2013.10.002.
+Sutton, J. (1991): Sunk Costs and Market Structure, Cambridge, Ma.: MIT Press.
+Tether, B.S. (1998): Small and large firms: sources of unequal innovations? Research
+Policy, 27, 725–745. Doi: 10.1016/S0048-7333(98)00079-1.
+Teece, D.J. (1986): Profiting from technological innovation: implications for integration,
+collaboration, licensing and public policy, Research Policy , 15, 285– 305. Doi:
+10.1016/0048-7333(86)90027-2.
+
+===== PDF_PAGE 35 =====
+References 31
+Teece, R., Pisano , G., Shuen, A. (1997): Dynamic capabilities and strategic manag e-
+ment, Strategic Management Journal , 18, 509– 533. Doi: 10.1002/(SICI)1097-
+0266(199708)18:7.
+Triguero, A., Córcoles, D. (2013): Understanding the innovation: an analysis of persi s-
+tence for Spanish manufacturing firms, Research Policy , 42, 340– 352.
+Doi:10.1016/j.respol.2012.08.003.
+Triguero, A., Córcoles, D., Cuerva, M.C. (2014a): Persistence of innovation and firm’s
+growth: evidence from a panel of SME and large Spanish manufacturing firms,
+Small Business Economics, 43, 787–804. Doi: 10.1007/s11187-014-9562-8.
+Triguero, A., Córcoles, D., Cuerva, M.C. (2014b): Measuring the persistence in innova-
+tion in Spanish manufacturing firms: empirical evidence using discrete -time dura-
+tion models, Economics of Innovation and New Technology , 23, 447 –468.
+DOI: 10.1080/10438599.2014.895514.
+Woerter, M. (2014): Competition and persistence of R&D, Economics of Innovation and
+New Technology, 23, 469–489. DOI: 10.1080/10438599.2014.895515.
