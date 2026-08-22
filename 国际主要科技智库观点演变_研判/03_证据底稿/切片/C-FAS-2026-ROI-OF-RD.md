@@ -1,0 +1,48 @@
+# Research Agenda: Estimating the U.S. Government’s Return-on-Investment on Scientific Research & Development
+
+- 报告ID：C-FAS-2026-ROI-OF-RD
+- 官方页面：https://fas.org/publication/roi-of-rd/
+- 科技创新复用角色：政府科学R&D回报率的估计框架与研究议程
+- 主轴：科学体系与基础研究；研发治理与科研组织
+
+## 科技创新与中国定向摘录
+
+nearly $150 billion annually in research and development. Four times ($937 billion in 2023,
+
+) this amount flows from state governments, private foundations, and corporate R&D budgets. These investments are made on the premise that they generate scientific, economic, and social returns. That premise is widely held. However, the supporting evidence generates wildly different estimates depending on the methods and available data.
+
+That evidentiary weakness has always been a limitation. It is now, increasingly, a liability. Federal R&D budgets are subject to scrutiny of an intensity not seen in decades. Longstanding assumptions about the appropriate scale and direction of public investment in science are being actively contested across branches of government. In that environment, the inability to answer basic questions about what research investment produces – for whom, on what timeline, and compared to what alternative – leaves the field without the tools it needs to make its case. This agenda is designed, in part, to begin building those tools.
+
+The literature on the returns to R&D investment has grown substantially over the past three decades. The work began in the 1950s with papers
+
+estimating the social rate of return to research activity. Economists have since
+
+rates of return to federally funded basic research. Health economists have traced the pathway from NIH appropriations to
+
+knowledge spillovers across firms, sectors, and national borders. This body of work has been useful, and has provided important empirical grounding for sustained public investment in science. But it has also left critical questions underexplored, and has not kept pace with the demands that policymakers, funders, and program administrators now place on evidence and evaluation.
+
+Three gaps are especially consequential. First, the existing literature is concentrated on a narrow band of measurable outcomes – financial returns, patent counts, publication rates, and selected health outcomes – while the full range of value that R&D investment generates remains largely unmeasured. Social benefits, distributional effects, environmental outcomes, and the intrinsic value of scientific knowledge itself are acknowledged in principle but rarely captured in practice. The result is an evaluation vocabulary that systematically understates what investing in public research produces, and that is poorly suited to the constituencies who most need to understand it. Further, the paucity of data on the returns on investment in research makes it difficult to make informed decisions on future funding levels and allocations.
+
+Second, the existing literature has made limited progress on the foundational problem of causal attribution. Demonstrating that an investment generated value is not the same as demonstrating that it generated value that would not otherwise have existed. The counterfactual question – what would have happened in the absence of a given funding decision – is rarely, if ever, answered with the rigor that credible evaluation requires. Where causal methods have been applied, they have typically addressed narrow, well-defined questions; broader claims about program or agency-level returns rest on methodological assumptions that are often implicit and rarely interrogated.
+
+Third, the producers and consumers of evidence on the ROI of R&D are poorly connected. Federal agency program officers, congressional appropriators, budget examiners, state science advisors, philanthropic funders, and university research administrators all face versions of the same underlying questions – about returns, timescales, counterfactuals, spillovers, and accountability – but they ask those questions in different registers, with different data needs, on different timelines, and with different tolerances for methodological uncertainty. Research that is designed without these customers in mind and engaged in the process tends to reach only the audiences already most predisposed to engage with it. This means that key decision-makers are often making hard choices with little-to-no high-quality evidence on hand to support their thinking.
+
+This research agenda is a response to those gaps. It was developed through a structured process of stakeholder engagement that surfaced both the range of outcomes that R&D investment is understood to produce and the specific informational needs of the actors responsible for making, evaluating, and defending funding decisions across the public, private, and philanthropic sectors. The result is a set of
+
+, organized from foundational to applied, that together constitute a program of inquiry capable of substantially advancing the field’s ability to measure, attribute, and communicate the returns to R&D investment.
+
+The agenda does not promise that all of these questions can be fully answered. Several of the most important ones – including the construction of credible counterfactuals and the valuation of non-pecuniary returns – pose methodological challenges that current tools can address only partially. A transparent research agenda must acknowledge those limits clearly, both to set appropriate expectations and to direct methodological innovation toward the places where it is most needed. What the agenda does promise is that serious, well-designed inquiry into each of these questions would produce findings that are useful – to researchers, to practitioners, and to the policymakers who ultimately determine the scale and direction of public investment in science.
+
+The primary vehicle for developing this set of research questions was a one-day workshop hosted in February 2026. The workshop convened academics, policymakers, and policy experts to discuss where the literature stands today and where it should head in the future. It was also intended to help launch a new initiative: the
+
+. This initiative, whose first iteration will focus on the ROI of R&D (sometimes called the Griliches Question), will aim to answer many of the questions posed by participants and in this research agenda.
+
+When we consider return-on-investment from R&D, what are the outcomes we should be measuring?
+
+What are the research questions that, if answered, are most likely to inform the decision-making of key stakeholders?
+
+To answer the first question, we asked participants to identify a range of possible outcomes that might be important to someone trying to understand the return of their R&D investments.
+
+To answer the second question, we assigned small groups different “personas” to consider – ranging from Congressional staff to federal agency leaders to universities and the private sector. They grappled with not just the types of research questions that are most novel, but the ones that were most likely to be useful to decision and policy makers.
+
+To supplement the workshop, we also conducted a series of informal one-on-one interviews with experts – researchers who might one day seek to answer questions posed in this agenda, and policymakers who might use the evidence generated.

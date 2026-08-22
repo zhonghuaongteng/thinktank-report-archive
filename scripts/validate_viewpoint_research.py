@@ -112,6 +112,31 @@ def expected_itif_selected_ids() -> set[str]:
     }
 
 
+def expected_fas_selected_ids() -> set[str]:
+    return {
+        "C-FAS-2020-A-CONVERGENCE-DIRECTORATE-AT-THE-NATIONAL-SCIENCE-FOUNDATION",
+        "C-FAS-2020-AMBITIOUS-ACHIEVABLE-AND-SUSTAINABLE",
+        "C-FAS-2020-CLOSING-CRITICAL-GAPS",
+        "C-FAS-2020-FOCUSED-RESEARCH-ORGANIZATIONS-TO-ACCELERATE-SCIENCE-TECHNOLOGY-AND-MEDICINE",
+        "C-FAS-2021-CREATING-A-NATIONAL-DEEPTECH-CAPITAL-FUND",
+        "C-FAS-2021-FORGING-1-000-VENTURE-SCIENTISTS-TO-TRANSFORM-THE-INNOVATION-ECONOMY",
+        "C-FAS-2021-INDUSTRIAL-POLICY-MEMO",
+        "C-FAS-2022-EXPANDING-PATHWAYS-FOR-CAREER-RESEARCH-SCIENTISTS-IN-ACADEMIA",
+        "C-FAS-2022-IMPROVING-RESEARCH-FUNDING-EFFICIENCIES-AND-PROPOSAL-DIVERSITY-THROUGH-NSF-SCIENCE-LOTTERY-GRANTS",
+        "C-FAS-2022-UNLOCKING-FEDERAL-GRANT-DATA-TO-INFORM-EVIDENCE-BASED-SCIENCE-FUNDING",
+        "C-FAS-2023-118TH-CONGRESS", "C-FAS-2023-118TH-CONGRESS-EMERGING-TECH-COMPETITIVENESS",
+        "C-FAS-2023-APPLYING-ARPA-I-A-PROVEN-MODEL-FOR-TRANSPORTATION-INFRASTRUCTURE",
+        "C-FAS-2024-AGENCY-PERSPECTIVES-BIOECONOMY",
+        "C-FAS-2024-CREATING-A-SCIENCE-AND-TECHNOLOGY-HUB-IN-CONGRESS",
+        "C-FAS-2024-MICRO-ARPA", "C-FAS-2024-PREDICTING-PROGRESS-UTILITY-FORECASTING",
+        "C-FAS-2025-CONTAIN-CHINA-ON-LEGACY-CHIPS", "C-FAS-2025-FUELING-THE-BIOECONOMY-CLEAN-ENERGY",
+        "C-FAS-2025-MEASURING-RESEARCH-BUREAUCRACY", "C-FAS-2025-NATIONAL-INSTITUTE-FOR-HIGH-REWARD-RESEARCH",
+        "C-FAS-2025-REBUILD-CORPORATE-RESEARCH", "C-FAS-2026-NATIONAL-AI-LABORATORY-AT-COMMERCE",
+        "C-FAS-2026-REVITALIZING-US-AUTO-INDUSTRY", "C-FAS-2026-ROI-OF-RD",
+        "C-FAS-2026-SUSTAINING-SCIENTIFIC-COLLECTIONS-IN-THE-AGE-OF-AI",
+    }
+
+
 def expected_catalog_size(
     seed_count: int,
     catalog_asset_count: int,
@@ -221,6 +246,8 @@ def main() -> None:
         "168_IFP科技创新机制与中国比较精选全文台账.csv", "169_IFP科技创新机制与中国比较精选全文结果.md",
         "170_ITIF正式报告与简报近十年轻量总目录.csv", "171_ITIF正式报告与简报近十年轻量总目录结果.md",
         "172_ITIF科技创新机制与中国比较跨期精选全文台账.csv", "173_ITIF科技创新机制与中国比较跨期精选全文结果.md",
+        "174_FAS报告与政策备忘录近十年轻量总目录.csv", "175_FAS报告与政策备忘录近十年轻量总目录结果.md",
+        "176_FAS科技创新机制与中国比较跨期精选全文台账.csv", "177_FAS科技创新机制与中国比较跨期精选全文结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -730,6 +757,33 @@ def main() -> None:
         and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
         for r in itif_selected
     )
+    fas_light = rows(root / "174_FAS报告与政策备忘录近十年轻量总目录.csv")
+    assert len(fas_light) == 625
+    assert {year: sum(r["发布日期"].startswith(str(year)) for r in fas_light) for year in range(2016, 2027)} == {
+        2016: 20, 2017: 4, 2018: 0, 2019: 3, 2020: 86, 2021: 103,
+        2022: 46, 2023: 67, 2024: 154, 2025: 96, 2026: 46,
+    }
+    assert sum(r["科技创新相关度"] == "核心" for r in fas_light) == 176
+    assert sum(r["科技创新相关度"] == "支撑" for r in fas_light) == 127
+    assert sum(r["科技创新相关度"] == "语境" for r in fas_light) == 322
+    assert sum(r["中国直接信号"] == "是" for r in fas_light) == 16
+    assert sum(r["官方类型"] == "Report" for r in fas_light) == 109
+    assert sum(r["官方类型"] == "Policy Memo" for r in fas_light) == 502
+    assert sum(r["官方类型"] == "Report + Policy Memo" for r in fas_light) == 14
+    assert len({r["WordPress记录ID"] for r in fas_light}) == 625
+    assert all(r["官方落地页"].startswith("https://fas.org/publication/") for r in fas_light)
+    fas_selected = rows(root / "176_FAS科技创新机制与中国比较跨期精选全文台账.csv")
+    assert {r["报告ID"] for r in fas_selected} == expected_fas_selected_ids()
+    assert sum(r["中国直接信号"] == "是" for r in fas_selected) == 5
+    assert sum(int(r["字节数"]) for r in fas_selected) == 515684
+    assert sum(int(r["字符数"]) for r in fas_selected) == 514001
+    assert sum(int(r["清洗文本字符数"]) for r in fas_selected) == 382801
+    assert sum(int(r["China词形命中数"]) for r in fas_selected) == 133
+    assert all(
+        Path(r["本地原始资产"]).exists() and Path(r["本地文本"]).exists()
+        and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
+        for r in fas_selected
+    )
     stepi_assets = rows(root / "60_STEPI韩文科技与中国专题增补台账.csv")
     assert len(stepi_assets) == 518, len(stepi_assets)
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 476
@@ -784,7 +838,7 @@ def main() -> None:
     gap_matrix = rows(root / "69_机构节点主题覆盖缺口矩阵.csv")
     targeted_queue = rows(root / "70_定点补源优先队列.csv")
     catalog_queue = rows(root / "72_轻量目录扩展优先队列.csv")
-    assert len(gap_matrix) == 1020
+    assert len(gap_matrix) == 1050
     assert {r["战略主题"] for r in gap_matrix} == {
         "T1_科学体系与基础研究", "T2_技术创新与关键技术", "T3_创新政策与研发治理",
         "T4_人才大学与科研组织", "T5_产业创新转化与区域生态", "T6_国际合作开放科学与比较",
@@ -885,7 +939,7 @@ def main() -> None:
     assert sum(r["全文策略"].startswith("总目录保留") for r in ifp_light) == 139
     assert sum(r["全文策略"].startswith("已进入精选全文") for r in itif_light) == 18
     assert sum(r["全文策略"].startswith("总目录保留") for r in itif_light) == 651
-    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1020
+    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1050
     assert len(rows(root / "70_定点补源优先队列.csv")) == 0
     assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 0
     review = rows(root / "92_定点全文候选证据增量复核台账.csv")
@@ -962,7 +1016,7 @@ def main() -> None:
         nistep_asset_count=len(nistep_catalog),
         stepi_asset_count=len(stepi_catalog),
         kistep_asset_count=len(kistep_catalog),
-        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5 + 6 + 6 + 15 + 118 + 75 + 155 + 646,
+        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5 + 6 + 6 + 15 + 118 + 75 + 155 + 646 + 625,
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -1185,6 +1239,10 @@ def main() -> None:
         ("171_ITIF正式报告与简报近十年轻量总目录结果.md", "国际科技智库观点演变_ITIF正式报告与简报近十年轻量总目录结果.md"),
         ("172_ITIF科技创新机制与中国比较跨期精选全文台账.csv", "国际科技智库观点演变_ITIF科技创新机制与中国比较跨期精选全文台账.csv"),
         ("173_ITIF科技创新机制与中国比较跨期精选全文结果.md", "国际科技智库观点演变_ITIF科技创新机制与中国比较跨期精选全文结果.md"),
+        ("174_FAS报告与政策备忘录近十年轻量总目录.csv", "国际科技智库观点演变_FAS报告与政策备忘录近十年轻量总目录.csv"),
+        ("175_FAS报告与政策备忘录近十年轻量总目录结果.md", "国际科技智库观点演变_FAS报告与政策备忘录近十年轻量总目录结果.md"),
+        ("176_FAS科技创新机制与中国比较跨期精选全文台账.csv", "国际科技智库观点演变_FAS科技创新机制与中国比较跨期精选全文台账.csv"),
+        ("177_FAS科技创新机制与中国比较跨期精选全文结果.md", "国际科技智库观点演变_FAS科技创新机制与中国比较跨期精选全文结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
