@@ -1,0 +1,904 @@
+
+===== PDF_PAGE 1 =====
+Issue Br ief
+N o v ember 202 4
+A cq uir ing AI
+Com panies
+T r ac king U .S. AI Mergers
+and A cq uisitions
+Aut hor s
+Jac k Cor r igan
+Ngor L uong
+Chr istian Sc hoeber l
+
+===== PDF_PAGE 2 =====
+Center for Security and Emerging Technology | 1
+Executive Summary
+The commercial artificial intelligence industry is evolving rapidly, and the competition
+dynamics in this burgeoning sector will impact the rate, diversity, and direction of AI
+innovation in the years ahead. Maintaining U.S. technological leadership in the years
+ahead will require policymakers to promote competition in the AI sector and prevent
+incumbent firms from wielding their market power in harmful ways.
+One important component of this effort will be monitoring mergers and acquisitions
+activity in the AI sector. M&A allows companies to gain access to talent, technologies,
+and other resources that may otherwise be out of their reach or too difficult to develop
+in-house. These transactions can allow firms to maintain their technological edge, gain
+economies of scale, and expand their business, all of which can drive growth and
+promote the healthy functioning of a market economy. On the flip side, however, M&A
+can also enable companies to entrench their economic power, reduce incumbent firms’
+incentives to invest in innovation, and hamper the ability of new disruptive firms to
+enter the market.
+This brief seeks to shed light on major trends in M&A activity in the U.S. AI sector
+between 2014 and 2023. Our analysis is based on a dataset of 4,354 M&A
+transactions gathered through PitchBook, a third-party provider of corporate financial
+information. We found:
+1. Annual M&A transactions involving AI companies more than doubled over the
+last decade, from 225 in 2014 to 494 in 2023. However, M&A transactions
+have declined since their peak in 2021 (828).
+2. The proportion of total M&A transactions in which non-AI companies acquired
+AI companies grew from 10 percent in 2014 to 45 percent in 2023. Still, the
+majority of these acquisitions were conducted by other companies in the
+technology industry rather than firms in other sectors.
+3. Large incumbent technology companies rank among the top acquirers of AI
+companies, including Apple (28 transactions), Alphabet (23), Microsoft (18), and
+Meta (16). However, the overall AI M&A activity remains fairly diffuse, with
+1,446 unique acquirers engaging in AI M&A transactions over the past decade.
+4. In U.S. cross-border AI acquisitions, American firms have purchased 503 foreign
+AI companies, while foreign firms have bought 271 American AI companies. U.S.
+firms most frequently acquired AI firms based in the United Kingdom and
+
+===== PDF_PAGE 3 =====
+Center for Security and Emerging Technology | 2
+Canada. Firms in the United Kingdom and Canada were also the most frequent
+foreign acquirers of U.S. AI companies.
+The commercial AI sector is still in its infancy, and the dynamics of market competition
+today can have major effects on the trajectory of AI innovation tomorrow. Continuing to
+monitor the landscape of M&A transactions at home and abroad—particularly those
+involving incumbent technology companies—will be crucial to promoting an innovative
+and dynamic AI ecosystem in the years ahead. Additionally, it will be important for
+competition authorities to update their processes and procedures to appropriately
+scrutinize alternative business arrangements such as “partnerships” between
+incumbent firms and AI startups, which function similarly to traditional acquisitions but
+appear to avoid regulatory frameworks.
+
+===== PDF_PAGE 4 =====
+Center for Security and Emerging Technology | 3
+Table of Contents
+Executive Summary ................................................................................................................................ 1
+Table of Contents ................................................................................................................................... 3
+Introduction ............................................................................................................................................... 4
+Methodology ............................................................................................................................................ 6
+Findings ...................................................................................................................................................... 8
+Top Acquirers of AI Companies .................................................................................................. 12
+U.S. Cross-Border AI Acquisitions ............................................................................................. 16
+Key Takeaways ..................................................................................................................................... 19
+Authors .................................................................................................................................................... 21
+Acknowledgments............................................................................................................................... 21
+Appendix ................................................................................................................................................ 22
+Appendix 1: Selection of AI-Relevant Acquiring Parties and Companies .................... 22
+Appendix 2: Types of AI Mergers and Acquisitions ............................................................. 23
+Appendix 3: Count of Annual AI Acquisitions by Deal Type, 2014–2023 ................... 24
+Appendix 4: Industry Sectors of Non-AI Acquirers of AI Companies ............................. 24
+Endnotes ................................................................................................................................................ 25
+
+===== PDF_PAGE 5 =====
+Center for Security and Emerging Technology | 4
+Introduction
+In the fall of 2010, three London-based technologists and entrepreneurs founded a
+company with the ambitious goal of building the world’s first artificial general
+intelligence (AGI). At the time, AI systems were highly specialized, trained to perform
+discrete tasks within narrowly defined application areas. By employing recent advances
+in deep neural networks and reinforcement learning, the trio believed they could teach
+machines to think more like humans, gathering knowledge from disparate sources and
+applying it across a wide range of domains.1 The founders envisioned AI systems that
+would one day help to solve some of the world’s most pressing scientific and societal
+problems. 2
+Within a few years, the company, named DeepMind, made some major strides. Most
+notably, its researchers developed an AI system that taught itself to play seven classic
+Atari games. In a few of these, including Pong and Breakout, the AI even outperformed
+human experts.3 Though DeepMind had yet to release a product or monetize its AI-
+powered gaming software, it raised more than $26 million by the spring of 2012.4 In
+2014, seeing the promise in its fledgling AI systems, Google (now Alphabet) acquired
+the startup for a then-whopping $650 million.5
+Over the next decade, DeepMind helped cement Alphabet’s reputation as an AI
+pioneer, building systems that could predict the structure of proteins and best the
+world’s top players of chess, Go, and shogi.6 As the race to develop generative AI
+heated up in Silicon Valley, Alphabet merged DeepMind with its other in-house AI
+development team, Brain, to form Google DeepMind.7 Today, this consolidated entity is
+the epicenter of the company’s AI efforts, producing Gemini, Gemma, and other models
+that have made Alphabet a top competitor in the rapidly expanding AI industry. It is
+impossible to know what might have happened had Alphabet not gone through with its
+acquisition of DeepMind, but it is difficult to imagine the tech giant being better off had
+it not acquired the British startup a decade ago.
+Alphabet’s success following the acquisition of DeepMind underscores the critical role
+that mergers and acquisitions can play in shaping the trajectory of an industry. M&A
+allows companies to gain access to talent, technologies, and other resources that
+otherwise may be out of their reach. These transactions can allow firms to maintain
+their technological edge, gain economies of scale, and expand their business, all of
+which can drive growth and promote the healthy functioning of a market economy.8 On
+the flip side, however, M&A can enable companies to entrench their economic power,
+reduce incumbent firms’ incentives to invest in innovation, and hamper the ability of
+new disruptive firms to enter the market.9
+
+===== PDF_PAGE 6 =====
+Center for Security and Emerging Technology | 5
+M&A transactions can also play a role in shaping the landscape of international
+technology competition. The UK government has noted that Google’s acquisition of
+London-based DeepMind may have set back the country’s domestic AI sector, and it
+has subsequently increased its scrutiny of national security-relevant business
+transactions.10 The Committee on Foreign Investment in the United States (CFIUS) has
+similarly intensified its reviews of cross-border transactions involving countries aiming
+to acquire technologies relevant to national security, including AI, biotechnology, and
+quantum computing.11
+As AI systems become increasingly integrated across the global economy, analyzing
+M&A activity in the AI industry will be crucial for maintaining U.S. technological
+leadership, monitoring AI adoption across sectors, and promoting a competitive,
+diversified, and resilient AI ecosystem.12 The federal government’s recent investigations
+into AI industry partnerships and revisions of merger guidelines have renewed
+discussions about the role that M&A plays in shaping emerging technology sectors.13
+We hope to inform those discussions by examining broad trends in M&A activity
+involving AI companies over the last decade.
+We begin by exploring how the number of annual AI M&A transactions has changed
+over time, as well as the types of companies involved in those deals. We then examine
+the top acquirers of AI companies and cross-border M&A transactions involving the
+U.S. and foreign AI markets. We conclude with broad takeaways for policymakers
+looking to promote a dynamic and competitive AI market in the years ahead.
+
+===== PDF_PAGE 7 =====
+Center for Security and Emerging Technology | 6
+Methodology
+This research aims to shed light on the AI-related M&A activity involving U.S.-
+headquartered buyers or targets between 2014 and 2023. Our analysis leverages data
+from PitchBook, which provides corporate and financial information on publicly-traded
+and privately-held companies.14 Using PitchBook data, we determine the location of
+buyers’ and acquired companies’ headquarters, map the relationships between
+corporate subsidiaries and their parent entities, and identify the buyers and targets
+involved in the AI sector. We include M&A transactions in the analysis if either the
+buyer or the target are:
+1. Assigned to PitchBook’s “Artificial Intelligence & Machine Learning” vertical or
+includes an AI-related keyword in their description (see Appendix 1 for more
+details) and;
+2. Headquartered in the United States
+To ensure deals are assigned appropriately, subsidiaries received the headquarters
+locations of their parent entities. If the subsidiary was not AI-relevant but the parent
+company was, then the parent’s designation was used. Lastly, we exclude M&A deals
+involving more than one acquirer, as well as deals in which less than 100% of the
+target company was acquired.15 We manually reviewed a random sample (n=200) of
+the resulting set of deals to ensure relevance to our analytical goals.16
+Using this methodology, we constructed a dataset that includes 4,586 U.S. AI M&A
+transactions conducted over the past ten years.17 This dataset encompasses three
+types of M&A transactions, which we refer to collectively as “AI acquisitions”:*
+1. AI Buyer/AI Target: Transactions in which the acquirer (or its parent entity) is
+designated as AI-relevant, and the company being acquired is also designated
+as AI-relevant.
+2. AI Buyer/Non-AI Target: Transactions in which the acquirer (or its parent entity)
+is designated as AI-relevant, but the company being acquired is not designated
+as AI-relevant.
+
+* See Appendix 2 for more information on the three types of M&A transactions.
+
+===== PDF_PAGE 8 =====
+Center for Security and Emerging Technology | 7
+3. Non-AI Buyer/AI Target: Transactions in which the acquirer (or its parent entity)
+is not designated as AI-relevant, but the company being acquired is designated
+as AI-relevant.
+Our analysis relies on PitchBook, which collects and verifies industry assignments,
+headquarter data, and parent-subsidiary relationships from a variety of sources.
+However, like all data sources, PitchBook is imperfect and has a number of limitations.
+First, PitchBook is unlikely to capture all relevant AI buyers and targets given that the AI
+industry is evolving quickly as new technologies are introduced, new companies adopt
+AI systems, and new investors enter the market. Similarly, there may be M&A deals that
+were not publicly reported on and thus not included within PitchBook. Furthermore, the
+“Verticals” assignment and recorded keywords are subject to PitchBook’s collection
+process, which may favor companies that emphasize their AI capabilities.
+We validated and manually reviewed random samples to ensure the AI-relevance of
+parties and the details of the deals are reliable. Despite these limitations, this report
+provides useful snapshot information about the U.S. AI M&A landscape to further
+inform the competitiveness policy in the near future.
+
+===== PDF_PAGE 9 =====
+Center for Security and Emerging Technology | 8
+Findings
+Our analysis found that overall M&A activity involving U.S. AI companies has trended
+upward over the last decade. The number of annual AI M&A transactions more than
+doubled, rising from 247 in 2014 to 523 in 2023. As Figure 1 shows, the number of
+annual M&A transactions involving U.S. AI companies grew steadily between 2014 and
+2019, plateaued in 2020, and then spiked sharply in 2021, with 871 total deals
+marking an 83 percent increase from the prior year. While the number of transactions
+has fallen since then, overall M&A activity in 2023 was still somewhat higher than
+before the 2021 spike.
+Figure 1. Annual AI M&A Transactions Involving U.S. Companies, 2014–2023
+
+Source: CSET analysis of data provided by PitchBook Data, Inc.
+There are a variety of factors that could have contributed to these trends in AI M&A
+transactions. The steady growth in the number of M&A deals in the latter half of the
+2010s coincided with an expansion of the overall U.S. AI sector.18 As shown in Figure 2,
+the number of new AI companies formed in the United States each year grew 75
+percent between 2014 and 2017, and continued hovering at this elevated level before
+
+===== PDF_PAGE 10 =====
+Center for Security and Emerging Technology | 9
+spiking in 2023 amid the generative AI boom.* Global investment in the AI industry also
+grew significantly during this same period, though we were unable to determine the
+exact number of new global firms based on our data.19 It is perhaps unsurprising that
+we observed an increase in AI M&A transactions as more companies entered the sector
+and the technology underlying their products improved.
+Additionally, the spike and subsequent drop-off in AI acquisitions between 2020 and
+2023 generally tracks broader economy-wide trends in M&A during that same period.
+Analysts at Boston Consulting Group found virtually every industry experienced a
+notable increase in the number of M&A transactions between 2020 and 2021, followed
+by a slight decline in 2022.20 While the trend was more pronounced in our analysis of
+AI acquisitions, it is notable that the AI sector followed similar patterns as other
+industries. There are a number of potential explanations for these economy-wide
+fluctuations in M&A, including changing interest rates and economic disruptions related
+to the COVID-19 pandemic, though determining the exact causes is beyond the scope
+of our analysis.
+Figure 2. Annual U.S. AI Company Formation, 2014–2023
+
+Source: CSET analysis of data provided by PitchBook Data, Inc.
+
+* It is important to recognize that Figure 2 does not reflect the overall size of the U.S. AI market (e.g., it
+does not include company exits). Even so, given the prevalence of U.S. firms in the AI sector, U.S.
+company formation is a useful proxy for overall market size.
+
+===== PDF_PAGE 11 =====
+Center for Security and Emerging Technology | 10
+Beyond the increase in total AI M&A activity, we also observed that the types of
+companies participating in transactions changed over time. As discussed in the
+previous section, our analysis encompasses three different types of AI M&A
+transactions: AI acquirers buying AI companies, non-AI acquirers buying AI companies,
+and AI acquirers buying non-AI companies. Different factors are likely to motivate each
+type of transaction. As with other intra-industry M&A transactions, AI companies may
+acquire other AI companies to gain access to new talent, eliminate competitors, expand
+existing AI products and services, or for a variety of other reasons. Non-AI companies
+may acquire AI companies as a way to quickly adopt AI capabilities without building
+them from scratch. AI companies may purchase non-AI companies in order to augment
+or diversify their existing AI offerings, and potentially to access new distribution
+channels for those products.* One example is Alphabet’s (an AI company) acquisition of
+the healthtech firm FitBit (a non-AI company) in 2021, which allowed Alphabet to offer
+more AI products tailored to healthcare. AI firms may also purchase non-AI firms to
+support non-AI lines of business. Uber’s (an AI company) acquisition of Postmates (a
+non-AI company), which expanded the rideshare company’s food delivery business,
+likely falls into this category.21
+Our analysis found that over the last decade, the most common type of AI acquisition
+involved AI companies buying non-AI companies. This category accounted for 56
+percent of the M&A transactions in our dataset (2,576). Roughly 32 percent of the total
+transactions involved non-AI buyers acquiring AI companies (1,464), and just 12
+percent entailed AI companies buying other AI companies (546).
+However, we also observed that the annual distribution of deal types changed
+dramatically over time. As shown in Figure 3, in 2014 only about 10 percent of M&A
+transactions in our dataset involved non-AI companies buying AI companies, but by
+2023 this category accounted for nearly 45 percent of transactions. During that same
+period, the share of transactions in which AI companies acquired AI companies grew
+
+* Many AI companies are large conglomerates that operate in multiple sectors. Additionally, firms may
+also acquire companies for reasons that have nothing to do with gaining new technological capabilities.
+Industry incumbents may acquire startups to eliminate potential competitors, for example, or private
+equity investors may acquire firms in order to restructure and flip them for a profit or facilitate an
+industry roll-up. Our dataset offers little information on the rationale behind specific acquisitions—the
+discussion here is intended to highlight broad trends and potential capabilities-based reasons why
+different types of firms may engage in AI acquisitions. For more, see: James Chen, “Roll-up Merger:
+Overview, Benefits and Examples,” Investopedia, May 19, 2024, https://www.investopedia.com/roll-up-
+merger-definition-4683958.
+
+===== PDF_PAGE 12 =====
+Center for Security and Emerging Technology | 11
+slightly from 4 percent to 13 percent, and the share involving AI companies buying
+non-AI companies shrunk from 86 percent to 42 percent.*
+Figure 3. Share of Annual AI M&A Transactions by Deal Type, 2014–2023
+
+Source: CSET analysis of data provided by PitchBook Data, Inc.
+The rapid rise in the proportion of deals involving non-AI companies acquiring AI
+companies suggests that firms across the economy are increasingly looking to integrate
+AI into their operations and commercial offerings, and many are turning to M&A to
+acquire those capabilities rather than develop them in-house. Still, this trend should not
+be overstated. Over half of the non-AI companies that acquire AI firms are involved in
+the information technology (IT) sector, and while we do observe acquisitions by firms in
+other sectors such as finance, healthcare, and consumer goods, they account for a
+relatively small share of overall transactions (see Appendix 4 for more information). This
+
+* The total number of transactions between AI acquirers and non-AI companies grew modestly during
+this period, just at a much slower rate than transactions in the other two categories (see Appendix 2).
+
+===== PDF_PAGE 13 =====
+Center for Security and Emerging Technology | 12
+does not necessarily mean that firms in these other sectors are failing to adopt AI, but
+rather that they may more often access AI tools through external IT vendors.*
+The rest of our analyses will focus exclusively on acquisitions of AI companies and
+exclude transactions in which AI companies acquired non-AI companies. Zooming in on
+acquisitions of AI companies allows us to more clearly illuminate trends in the nascent
+AI industry and their implications for market competition and the geopolitical
+landscape.
+Top Acquirers of AI Companies
+Our analysis revealed that many firms have acquired AI companies over the last
+decade, but only a small number have engaged in a significant amount of M&A activity.
+Overall, we found that 1,446 unique companies conducted 2,010 acquisitions of AI
+firms between 2014 and 2023. As shown in Figure 4, the vast majority (82 percent) of
+these acquirers engaged in a single AI acquisition. Of the 262 companies that
+conducted multiple acquisitions of AI firms, only 48 engaged in more than three
+transactions and just 12 companies participated in 10 or more transactions.
+Figure 4. Distribution of Acquirers by Number of AI Acquisitions
+
+Source: CSET analysis of data provided by PitchBook Data, Inc.
+
+* Based on our dataset, we were unable to analyze the specific AI techniques used and the different
+types of products offered by various companies.
+
+===== PDF_PAGE 14 =====
+Center for Security and Emerging Technology | 13
+From a competition policy perspective, there are two broad takeaways from these
+findings. First, the AI ecosystem appears to be relatively diffuse insofar as we see
+acquisitions distributed across a large number of companies. At a high level, we do not
+clearly observe large acquirers attempting to “roll-up” the AI industry through the
+aggressive M&A activity that has plagued the defense industrial base and other sectors
+of the economy, and even amid ongoing acquisitions, the number of companies
+participating in the AI market has increased over time (see Figure 2).22 While these
+findings suggest the overall market for AI systems remains competitive, it is important
+to remember that AI is a general-purpose technology with many different applications,
+and competition dynamics may vary widely across different subsets of the AI sector.
+Additionally, it is worth recognizing that in certain cases a single acquisition, such as
+Google’s purchase of DeepMind, can have an outsized impact on the dynamics of a
+particular product market.
+Second, our analysis shows that while the overall AI M&A landscape is generally
+diffuse, there are a small number of firms with a demonstrated interest in acquiring a
+large number of AI firms. These most prolific acquirers represent a small share of
+overall transactions, but as apparent nodes of economic and technological power, they
+have the potential to alter the dynamics of the AI ecosystem.23
+As shown in Table 1, four U.S. big tech companies—Apple, Microsoft, Alphabet, and
+Meta—rank among the most prolific acquirers of AI companies over the past decade.*
+The fact that these companies top the list is perhaps unsurprising. As some of the most
+valuable corporations in the world, these firms maintain large troves of capital that can
+be used to expand their businesses, enter adjacent markets, and acquire other firms’
+technologies and talent.24 All four are considered leaders within today’s AI industry, and
+it is reasonable to attribute their success at least somewhat to their comparatively
+aggressive approach to AI M&A over the last decade.
+
+* Notably absent from the list of top acquirers is Amazon, which conducted only 6 acquisitions of AI firms
+between 2014 and 2023.
+
+===== PDF_PAGE 15 =====
+Center for Security and Emerging Technology | 14
+Table 1: Acquirers with 10 or More Acquisitions of AI Companies, 2014–2023
+Acquirer Number of AI M&A Deals
+Apple 30
+Microsoft 21
+Alphabet 18
+Intel 17
+Cisco Systems 14
+Meta Platforms 14
+International Business Machines (IBM) 14
+Accenture 11
+ServiceNow 11
+DataRobot 10
+Salesforce 10
+Snap 10
+Source: CSET analysis of data provided by PitchBook Data, Inc.
+Note: U.S. big tech companies are bolded.
+While acquisitions by large incumbents are not inherently problematic, they often
+warrant additional scrutiny from policymakers. As noted in the U.S. government’s latest
+merger guidelines, incumbent firms may use such acquisitions to eliminate competitive
+threats and retain their dominant position, potentially slowing technological
+development in the process.25 Should big tech firms use market power to prevent new
+firms from gaining a foothold in the burgeoning AI market, either through M&A or some
+other means, they could limit the rate, diversity, and direction of AI innovation.26 Indeed,
+many of the companies listed in Table 1 have already faced scrutiny from authorities in
+the United States and abroad for engaging in harmful acquisitions and other anti-
+competitive conduct.27
+We were unable to determine the motivation and competitive effects of the big tech
+platforms’ past acquisitions of AI companies based on our dataset. However, our
+analysis did reveal one notable trend in the firms’ approach to M&A: the AI companies
+acquired by Apple, Microsoft, Alphabet, and Meta tended to be “younger” than those
+acquired by other firms. Specifically, big tech platforms acquired AI companies an
+average of 4.8 years after the company was founded, while other firms acquired AI
+
+===== PDF_PAGE 16 =====
+Center for Security and Emerging Technology | 15
+companies an average of 7.4 years after they were founded. Some may interpret this
+finding as supporting the claim that the big tech companies look to acquire young firms
+before they pose a competitive threat.28 An alternative explanation would be that big
+tech firms have a better understanding of AI systems than other companies, and
+therefore tend to acquire promising technologies and startups earlier in their lifecycle.
+Still, the effects of such deals on competition and innovation would likely be similar
+regardless of the motives driving the acquisition.
+Regulators have recently started investigating the behavior of the incumbent
+technology platforms in the AI market, including the investments that Microsoft,
+Alphabet, and Amazon have made in independent AI labs such as OpenAI and
+Anthropic.29 Though few details on these “partnerships” have been publicly disclosed,
+they appear to offer incumbent firms a way to pull startups under their corporate
+umbrella while avoiding regulatory scrutiny. In January 2023, for instance, Microsoft
+and OpenAI struck a deal in which the tech giant would allocate the lab $10 billion
+worth of cash and cloud credits in exchange for an exclusive license to use OpenAI’s
+models and a substantial stake in the startup’s profits.30 The deal provided Microsoft
+with many of the same benefits it would have gained from a direct acquisition of
+OpenAI, but because it was not technically an M&A deal, it avoided triggering a
+government merger review. These partnerships have become increasingly
+commonplace across the AI industry in recent years, and it will be crucial for the federal
+policymakers to update their processes and procedures to appropriately scrutinize such
+“acquisition-like” investments as well as more traditional M&A deals.31 The vertical
+integration of the big tech companies across the AI supply chain offers them other
+potential opportunities to reduce or eliminate competitive threats, though these
+channels are beyond the scope of this report.*
+
+* The vertical integration of the large tech companies and its effects is beyond the scope of this paper, but
+it will be explored in forthcoming CSET research: Jack Corrigan, “AI Market Powers” (Center for Security
+and Emerging Technology, forthcoming). For additional reading on this topic, see: Tejas Narechania and
+Ganesh Sitaraman, “An Antimonopoly Approach to Governing Artificial Intelligence” (Vanderbilt Policy
+Accelerator for Political Economy and Regulation, 2023), https://cdn.vanderbilt.edu/vu-URL/wp-
+content/uploads/sites/412/2023/10/06212048/Narechania-Sitaraman-Antimonopoly-AI-
+2023.10.6.pdf.pdf; Fernando van der Vlist, Anne Helmond and Fabian Ferrari, “Big AI: Cloud
+Infrastructure Dependence and the Industrialisation of Artificial Intelligence,” Big Data & Society 11, no.
+1 (March 2024), https://journals.sagepub.com/doi/10.1177/20539517241232630; Jai Vipra and Sarah
+Myers West, “Computational Power and AI” (AI Now Institute, September 2023),
+https://ainowinstitute.org/publication/policy/compute-and-ai.
+
+===== PDF_PAGE 17 =====
+Center for Security and Emerging Technology | 16
+U.S. Cross-Border AI Acquisitions
+M&A transactions can also play a role in reshaping the landscape of international
+technology competition. Cross-border M&A deals can offer firms access to new
+markets, customers, talent, technology, and sources of capital. However, the companies
+executing these transactions may also have to navigate new economic, legal, and
+cultural challenges.32
+In this section, we explore the ties between the AI markets in the United States and
+other countries by examining two types of M&A transactions:
+1. Acquisitions involving a U.S. company purchasing a foreign AI company (503
+M&A transactions)
+2. Acquisitions involving a foreign company buying a U.S. AI company (272 M&A
+transactions)
+Over the past decade, U.S. firms have purchased 503 foreign AI companies based in
+more than 50 countries, accounting for 30% of the overall number of AI firms acquired
+by U.S. companies (1,690). More than half of these transactions involved companies in
+just four countries: the United Kingdom, Canada, Israel, and India (see Table 2). U.S.
+acquirers may be particularly drawn to UK and Canadian companies due in part to
+similar investment review regimes and growing tech sectors.33 Israel and India also
+have vibrant AI markets that are drawing attention from U.S.-based firms.34 Looking
+ahead, U.S. firms scanning the global market for promising AI companies should be
+prepared for evolving regulatory environments abroad, as more countries are
+establishing and updating their own inbound investment review regimes.35
+
+===== PDF_PAGE 18 =====
+Center for Security and Emerging Technology | 17
+Table 2. Top Countries From Which U.S. Firms Acquired Foreign AI Companies
+
+ Source: CSET analysis of data provided by PitchBook Data, Inc.
+Foreign firms are also looking to the United States to acquire AI firms. Over the last
+decade, some 272 U.S. AI companies have been acquired by companies based in 30
+different countries. As shown in Table 3, the United Kingdom, Canada, and India are
+among the top locations of foreign firms that have purchased U.S. AI companies. As
+noted above, these three countries are also among the most popular destinations for
+U.S. acquisitions of foreign AI companies.
+Table 3. Top Countries from Which Foreign Firms Acquired U.S. AI Companies
+
+Source: CSET analysis of data provided by PitchBook Data, Inc.
+
+===== PDF_PAGE 19 =====
+Center for Security and Emerging Technology | 18
+Meanwhile, against the backdrop of U.S.-China competition for AI leadership, there are
+growing concerns related to Chinese firms buying U.S. AI companies. CFIUS has
+scrutinized transactions involving technologies that raise national security concerns,
+reviewing a record-high 181 transactions in 2022.36 However, CFIUS also faces
+challenges in determining the risks associated with dual-use technologies like AI.37
+Over the past decade, however, we observed only six instances of Chinese companies
+acquiring U.S.-based AI firms. The latest such transaction—a Chinese company’s
+acquisition of a U.S. software company that develops AI systems to track social media
+influencers—took place in 2021. Notably, we observe no Chinese acquisitions of U.S. AI
+companies in the period after the Biden administration issued its 2022 Executive Order
+expanding CFIUS’ jurisdiction to cover artificial intelligence.38
+
+===== PDF_PAGE 20 =====
+Center for Security and Emerging Technology | 19
+Key Takeaways
+The commercial AI sector is still relatively young. Despite the broad assertions that
+leaders in government, industry, and academia have made regarding AI’s
+transformative potential, there remain many open questions as to how the technology
+and the market surrounding it will evolve in the years ahead. What business models
+will be profitable? What types of models will lead the market? Which AI applications
+are valuable and which are overhyped? The competition dynamics of the AI sector in
+the years ahead will hinge on the answers to these questions.
+Given the uncertainty surrounding AI, it is difficult to determine exactly how M&A
+activity within the industry today will affect the speed and direction of AI innovation
+tomorrow. However, we can derive a few high-level insights from our analysis.
+First, there appears to be demand for AI systems across the economy, and many
+leading global companies seem interested in acquiring at least some AI capabilities
+through M&A. We observe steady growth in AI acquisitions over the last decade, and
+while the number of annual transactions has dropped off since 2021, it is clear that
+corporate interest in the technology remains high.39 Additionally, the share of M&A
+transactions involving non-AI companies acquiring AI companies has increased
+significantly over the past decade. While this finding suggests that more companies are
+looking to gain AI capabilities, it is worth noting that most non-AI acquirers are still
+involved in the IT sector.
+Second, while a wide range of companies have acquired AI companies over the last
+decade, it is notable that large incumbent technology firms including Microsoft,
+Alphabet, Meta, and Apple rank among the top acquirers of AI companies. All of these
+companies produce their own generative AI models and, in the case of Alphabet and
+Microsoft, operate computing infrastructure that other developers rely on to build and
+run AI systems. This vertical integration offers the big tech firms many potential
+opportunities to influence how the AI ecosystem develops in the years ahead.40 Prior
+investigations have accused these firms of using M&A to reduce competition and
+entrench their market positions, and they have an opportunity to extend their
+dominance in the AI industry through direct acquisitions, “acquisition-like” investments,
+and other mechanisms.41 Continuing to monitor the behavior of incumbent technology
+companies and their effects on market competition will be crucial to promoting a fair,
+open, and innovative AI industry.
+Third, policymakers should also continue to track cross-border M&A transactions. Our
+analysis shows U.S. companies have proven keen on obtaining AI capabilities from
+
+===== PDF_PAGE 21 =====
+Center for Security and Emerging Technology | 20
+abroad, with foreign M&A deals accounting for roughly 30% of all acquisitions of AI
+companies by U.S.-based firms. Foreign firms have also shown an interest in buying up
+AI companies based in the United States. Understanding how these cross-border
+acquisitions may impact the economic and national security landscape will be crucial for
+policymakers looking to maintain U.S. technological leadership, likely requiring a case-
+by-case analysis of different transactions. With respect to inbound acquisitions of U.S.
+AI companies, CFIUS will need to increase its capacity and capability to properly review
+“gray-zone” transactions that might not have direct ties to countries of concern such as
+China, in order to prevent the transfer of emerging technologies that are critical to
+national security.42
+M&A transactions involving AI companies have increased significantly over the last
+decade and will likely continue to grow as the AI sector expands and more companies
+across the economy look to adopt the technology. Large incumbent technology firms
+such as Apple, Microsoft, Alphabet, and Meta have been particularly prolific acquirers of
+AI companies, and their deals have tended to target younger-than-average firms. Given
+the incumbents’ existing market power, their outsized influence within the AI supply
+chain, and their past conduct, their activity in the AI industry warrants continued
+scrutiny from competition authorities.43 This will include monitoring both traditional
+M&A transactions, “acquisition-like” investments, and other behavior, and intervening in
+situations when the firms’ activity threatens to undermine market competition.
+Similarly, policymakers should continue scrutinizing cross-border M&A deals on a case-
+by-case basis in order to prevent the United States from losing ground to foreign
+competitors in AI and other emerging technologies.
+
+===== PDF_PAGE 22 =====
+Center for Security and Emerging Technology | 21
+Authors
+Jack Corrigan is a senior research analyst at CSET.
+Ngor Luong completed her contributions to this research while she was a senior
+research analyst at CSET. She is currently detailed to the U.S. Department of State
+under an Intergovernmental Personnel Act agreement with CSET.
+Christian Schoeberl is a data research analyst at CSET.
+The views expressed herein are those of the authors and do not necessarily reflect
+those of the U.S. government.
+Acknowledgments
+For editorial feedback and assistance, we would like to thank Catherine Aiken, Zachary
+Arnold, Sam Bresnick, Pablo Chavez, Shelton Fitch, Eliana Garcés, Margarita Konaev,
+Cole McFaul, Igor Mikolic-Torreira, and Matthias Oschinski. We also thank Cristina
+Caffara, Jai Ramaswamy, and Howard Shelanski for thoughtful conversations that
+informed our research.
+
+© 2024 by the Center for Security and Emerging Technology. This work is licensed
+under a Creative Commons Attribution-Non Commercial 4.0 International License.
+To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/4.0/.
+Document Identifier: doi: 10.51593/20240010
+
+===== PDF_PAGE 23 =====
+Center for Security and Emerging Technology | 22
+Appendix
+Appendix 1: Selection of AI-Relevant Acquiring Parties and Companies
+PitchBook provides industry assignments and keywords for companies covered within
+their dataset, which we used to select acquiring parties (or their parent companies,
+when available) and acquired companies relevant to artificial intelligence and machine
+learning. For our research purposes, we considered a merger and acquisition deal as
+having an AI-relevant investor if either the buyer or the target are assigned to
+PitchBook’s “Artificial Intelligence & Machine Learning” vertical or if either entity
+includes an AI-related keyword (discussed below) in their description. This approach
+captures the companies that self-identify as relevant to the field, as well as those that
+are relevant across other industries (e.g., AI-powered financial services).
+Verticals: From PitchBook’s documentation, “When professionals talk about industries,
+they are referring to a broad group of companies that operate in the same general
+space. For example, business-to-business (B2B), business-to-consumer (B2C), energy
+and healthcare are all well-established industries that represent the breadth of the
+term. An industry vertical, however, is more specific and describes a group of
+companies that focus on a shared niche or specialized market spanning multiple
+industries.” Within PitchBook’s data, 38,599 companies and 2,797 investors are
+assigned to the “Artificial Intelligence & Machine Learning” vertical.
+Keywords: Keywords come from a company’s website, press releases, and product
+types. We include a regular expression search within these keywords for ‘artificial
+intelligence,’ ‘machine learning,’ and the suffixes of ‘ai’ and ‘ml.’ For example, a
+company without a vertical assignment but with a ‘generative ai’ keyword would be
+included as AI-relevant for our research purposes. Through this search, we surfaced an
+additional 2,259 companies and 279 investors.
+We recognize that capturing the full landscape of AI-relevant companies is a difficult
+task. Solutions that are available to other areas of research, such as bibliometric
+research, are not as viable for corporate metadata. For researchers also interested in
+analyzing the activity of AI-relevant companies, please refer to the Emerging
+Technology Observatory’s PARAT tool at parat.eto.tech to see additional
+methodologies in which a company’s AI activity can be recorded.
+
+===== PDF_PAGE 24 =====
+Center for Security and Emerging Technology | 23
+Appendix 2: Types of AI Mergers and Acquisitions
+Category Description # of M&As Example
+AI Acquiring AI Transactions in which the
+acquirer, or its available parent
+entity, is designated as AI-
+relevant, and the company being
+acquired is also designated as AI-
+relevant
+514 Microsoft acquired
+Suplari in 2021.
+AI Acquiring
+Non-AI
+Transactions in which the
+acquirer, or its available parent
+entity, is designated as AI-
+relevant, but the company being
+acquired is not designated as AI-
+relevant
+2,403 Meta acquired
+Giphy in 2020.
+Non-AI
+Acquiring AI
+Transactions in which the
+acquirer, or its available parent
+entity, is not designated as AI-
+relevant, but the company being
+acquired is designated as AI-
+relevant
+1,442 Apple acquired
+Datakalab in
+2023.
+Source: CSET.
+
+===== PDF_PAGE 25 =====
+Center for Security and Emerging Technology | 24
+Appendix 3: Count of Annual AI Acquisitions by Deal Type, 2014–2023
+Year Total Deals AI Acquiring AI AI Acquiring
+Non-AI
+Non-AI
+Acquiring AI
+2014 247 9 212 25
+2015 264 12 225 27
+2016 308 22 237 49
+2017 337 29 209 99
+2018 409 54 230 125
+2019 484 60 251 173
+2020 477 62 238 177
+2021 871 131 426 314
+2022 666 98 326 242
+2023 523 69 222 232
+Total 4,586 546 2,576 1,464
+Source: CSET analysis of data provided by PitchBook Data, Inc.
+Appendix 4: Industry Sectors of Non-AI Acquirers of AI Companies
+
+Source: CSET analysis of data provided by PitchBook Data, Inc.
+
+===== PDF_PAGE 26 =====
+Center for Security and Emerging Technology | 25
+Endnotes
+
+1 David Rowan, “DeepMind: Inside Google’s Super-Brain,” Wired, June 22, 2015,
+https://www.wired.com/story/deepmind/.
+2 Rowan, “DeepMind.”
+3 Volodymyr Mnih, Koray Kavukcuoglu, David Silver, et al., “Playing Atari with Deep Reinforcement
+Learning,” arXiv preprint 1312.5602 (2013), https://arxiv.org/pdf/1312.5602.
+4 PitchBook (not inflation adjusted).
+5 PitchBook (not inflation adjusted).
+6 John Jumper, Richard Evans, Alexander Pritzel, et al., “Highly Accurate Protein Structure Prediction with
+AlphaFold,” Nature 596 (July 2021), 583–589, https://doi.org/10.1038/s41586-021-03819-2; David
+Silver, Thomas Hubert, et al., “Mastering Chess and Shogi by Self-Play with a General Reinforcement
+Learning Algorithm,” arXiv preprint 1712.01815 (2017), https://arxiv.org/abs/1712.01815; David Silver,
+Aja Huang, Chris J. Maddison et al., “Mastering the Game of Go with Deep Neural Networks and Tree
+Search,” Nature 529 (January 2016), 484–489, https://www.nature.com/articles/nature16961; James
+Somers, “How the Artificial Intelligence Program AlphaZero Mastered Its Games,” The New Yorker,
+December 28, 2018,
+https://www.newyorker.com/science/elements/how-the-artificial-intelligence-program-alphazero-
+mastered-its-games.
+7 Sundar Pichai, “Google DeepMind: Bringing Together Two World-Class AI Teams,” Google Blog, April
+20, 2023, https://blog.google/technology/ai/april-ai-update/; Jeremy Kahn, “The Google Brain-DeepMind
+Merger Is Good for Google. It Might Not Be for Us,” Fortune, April 28, 2023,
+https://fortune.com/europe/2023/04/28/the-google-brain-deepmind-merger-alphabet-pichai-risks-eye-
+on-a-i/.
+8 Markus Berger-de León, Paul Jenkins, Jerome Königsfeld, and Lukas Salomon, “Buy and Scale: How
+Incumbents Can Use M&A to Grow New Business,” McKinsey Digital, December 21, 2022,
+https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/buy-and-scale-how-incumbents-
+can-use-m-and-a-to-grow-new-businesses.
+9 U.S. Department of Justice and U.S. Federal Trade Commission, Merger Guidelines (Washington, D.C.;
+U.S. Department of Justice and U.S. Federal Trade Commission, 2023), 40,
+https://www.justice.gov/d9/2023-12/2023%20Merger%20Guidelines.pdf#page=40; Philippe Aghion,
+Nick Bloom, Richard Blundell, Rachel Griffith, and Peter Howitt, “Competition and Innovation: An
+Inverted-U Relationship,” Quarterly Journal of Economics 120, no. 2 (2005), 701–728,
+https://dash.harvard.edu/bitstream/handle/1/4481507/aghion_invertedu.pdf;jsessionid=63D95413D7C4
+F47BE4B179C3FDAC891A?sequence=2; Tim Wu, “Taking Innovation Seriously: Antitrust Enforcement
+If Innovation Mattered Most,” Columbia Law School, 2012,
+https://scholarship.law.columbia.edu/cgi/viewcontent.cgi?article=2768&context=faculty_scholarship;
+
+===== PDF_PAGE 27 =====
+Center for Security and Emerging Technology | 26
+
+Subcommittee on Antitrust, Commercial and Administrative Law of the Committee on the Judiciary,
+Investigation of Competition in Digital Markets: Majority Staff Report and Recommendations.
+10 National Security and Investment Act 2021, https://www.legislation.gov.uk/ukpga/2021/25/contents.
+11 Exec. Order No. 14083, 87 FR 57369 (2022),
+https://www.federalregister.gov/documents/2022/09/20/2022-20450/ensuring-robust-consideration-
+of-evolving-national-security-risks-by-the-committee-on-foreign.
+12 Jack Corrigan, Melissa Flagg, and Dewey Murdick, “The Policy Playbook,” Center for Security and
+Emerging Technology, June 2023, https://cset.georgetown.edu/publication/the-policy-playbook/.
+13 FTC Launches Inquiry into Generative AI Investments and Partnerships (Washington, D.C.: U.S.
+Federal Trade Commission, January 25, 2024),
+https://www.ftc.gov/news-events/news/press-releases/2024/01/ftc-launches-inquiry-generative-ai-
+investments-partnerships; Merger Guidelines.
+14 “Full Capital Markets Coverage—from Alternative Asset Deals to Contact Info for Millions of Industry
+Pros,” PitchBook, accessed March 2024, https://pitchbook.com/data.
+15 A small number of Pitchbook M&A transactions (<20) involved multiple buyers acquiring a particular
+target company. Some researchers may choose to include these deals depending on how they define
+“M&A transactions.” For example, the Human-Centered Artificial Intelligence group at Stanford offers a
+different definition in their 2024 AI Index Report. For more information, see: “Artificial Intelligence Index
+Report 2024” (Stanford University Human-Centered Artificial Intelligence, 2024),
+https://aiindex.stanford.edu/wp-content/uploads/2024/04/HAI_2024_AI-Index-Report.pdf.
+16 This manual review included checking a company’s website and news reports for evidence of AI-
+relevance, verifying headquarters through other datasets and news reports, and ensuring the deal details
+match public reports.
+17 Private equity is a type of M&A and included within our dataset. However, private equity buyers do not
+constitute a sizable portion of our dataset (around 7 percent).
+18 “Artificial Intelligence Index Report 2024,” 243.
+19 “Artificial Intelligence Index Report 2024.”
+20 “M&A Activity by Year: The BCG M&A Report Collection,” Boston Consulting Group, accessed August
+2024, https://www.bcg.com/capabilities/mergers-acquisitions-transactions-pmi/mergers-acquisitions-
+activity-by-year.
+21 Heather Landi, “Google, Fitbit Launch New Cloud Analytics Tools to Help Hospitals Harness
+Wearables Data,” Fierce Healthcare, September 30, 2022, https://www.fiercehealthcare.com/health-
+tech/google-fitbit-launch-new-analytics-tools-help-hospitals-use-wearables-data; Julia Love and Davey
+Alba, “Google Deepens AI Push into Health Care with Fitbit, Screenings,” Bloomberg, March 19, 2024,
+https://www.bloomberg.com/news/articles/2024-03-19/google-deepens-ai-push-into-health-care-with-
+
+===== PDF_PAGE 28 =====
+Center for Security and Emerging Technology | 27
+
+fitbit-screenings; Mike Isaac, Erin Griffith, and Adam Satariano, “Uber Buys Postmates for $2.65 Billion,”
+The New York Times, July 5, 2020, https://www.nytimes.com/2020/07/05/technology/uber-postmates-
+deal.html.
+22 Office of the Under Secretary of Defense for Acquisition and Sustainment, State of Competition within
+the Defense Industrial Base (Arlington, VA; U.S. Department of Defense, February 2022),
+https://media.defense.gov/2022/Feb/15/2002939087/-1/-1/1/STATE-OF-COMPETITION-WITHIN-THE-
+DEFENSE-INDUSTRIAL-BASE.PDF#page=27; Sean Carberry, “Private Equity Fueling Growth of Defense
+Mergers,” National Defense, February 27, 2023,
+https://www.nationaldefensemagazine.org/articles/2023/2/27/private-equity-fueling-growth-of-
+defense-mergers; Matt Stoller, “Weird Monopolies and Roll-Ups: Horse Shows, School Spirit, Settlers of
+Catan, and Jigsaw Puzzles,” BIG, July 18, 2020, https://www.thebignewsletter.com/p/weird-monopolies-
+and-roll-ups-horse; Matt Stoller, “A Land of Monopolists: From Portable Toilets to Mixed Martial Arts,”
+BIG, July 10, 2020, https://www.thebignewsletter.com/p/a-land-of-monopolists-from-portable.
+23 Wu, “Taking Innovation Seriously: Antitrust Enforcement If Innovation Mattered Most”; FTC and DOJ
+Seek Info on Serial Acquisitions, Roll-Up Strategies Across U.S. Economy (Washington, D.C.: U.S. Federal
+Trade Commission, May 23, 2024),
+https://www.ftc.gov/news-events/news/press-releases/2024/05/ftc-doj-seek-info-serial-acquisitions-
+roll-strategies-across-us-economy; Jack Corrigan, “AI Market Powers” (Center for Security and Emerging
+Technology, forthcoming); Christian Schoeberl and Jack Corrigan, “Funding the AI Cloud—Amazon,
+Alphabet, and Microsoft’s Cloud Computing Investments, Part 1,” Center for Security and Emerging
+Technology, October 2024; Christian Schoeberl and Jack Corrigan, “Funding the AI Cloud—Amazon,
+Alphabet, and Microsoft’s Cloud Computing Investments, Part 2,” (Center for Security and Emerging
+Technology, forthcoming); Christian Schoeberl and Jack Corrigan, “Corporate Investments as Funding the
+AI Cloud—Amazon, Alphabet, and Microsoft’s Cloud Computing Investments, Part 3,” (Center for
+Security and Emerging Technology, forthcoming).
+24 Subcommittee on Antitrust, Commercial and Administrative Law, Investigation of Competition in
+Digital Markets; Directorate for Financial and Enterprise Affairs, Serial Acquisitions and Industry Roll-ups
+– Note by the United States (Paris, France: OECD Competition Committee, December 4, 2023),
+https://one.oecd.org/document/DAF/COMP/WD(2023)99/en/pdf; United States v. Google LLC, Case No.
+20-cv-3010 (APM), Case No. 20-cv-3715 (APM),
+https://static01.nyt.com/newsgraphics/documenttools/f6ab5c368725101c/43d7c2a0-full.pdf.
+25 Merger Guidelines.
+
+26 Wu, “Taking Innovation Seriously: Antitrust Enforcement If Innovation Mattered Most”; United States v.
+Google LLC.
+27 United States v. Google LLC; Subcommittee on Antitrust, Commercial and Administrative Law,
+Investigation of Competition in Digital Markets; Justice Department Sues Apple for Monopolizing
+Smartphone Markets (Washington, D.C.: U.S. Department of Justice, March 21, 2024),
+https://www.justice.gov/opa/pr/justice-department-sues-apple-monopolizing-smartphone-markets;
+Ryan Browne, “Meta Accused of Breaching EU Antitrust Rules over Ad-Supported Subscription Service,”
+
+===== PDF_PAGE 29 =====
+Center for Security and Emerging Technology | 28
+
+CNBC, July 1, 2024, https://www.cnbc.com/2024/07/01/meta-accused-of-failing-to-comply-with-eu-
+antitrust-rules.html; Kelvin Chan, “Microsoft Breached Antitrust Rules by Bundling Teams with Office
+Software, European Union Says,” Associated Press, June 25, 2024, https://apnews.com/article/microsoft-
+teams-eu-european-union-antitrust-26d11ada00f504d537d1b054dd6f6bbf; other top acquirers of AI
+companies, namely Intel and IBM, have faced off against government antitrust authorities in the past,
+see: Foo Yun Chen and Bart H. Meijer, “Intel Hit with $400 Million EU Antitrust Fine in Decades-Old
+Case,” Reuters, September 22, 2023, https://www.reuters.com/technology/eu-re-imposes-400-mln-fine-
+intel-abuse-market-power-2023-09-22/; Alec Stapp, “The Ghosts of Antitrust Past: Part 2 (IBM),” Truth
+on the Market, February 3, 2020, https://truthonthemarket.com/2020/02/03/the-ghosts-of-antitrust-
+past-part-2-ibm/; Gilad Edelman, “Why the FTC Wants to Revisit Hundreds of Deals by Big Tech,”
+Wired, February 12, 2020,
+https://www.wired.com/story/ftc-special-order-review-big-tech-killer-acquisitions/.
+28 Willam P. Barr, “Big Tech’s Budding AI Monopoly,” The Wall Street Journal, May 27, 2024,
+https://www.wsj.com/articles/big-techs-budding-ai-monopoly-40280c15; Colleen Cunningham, Florian
+Ederer, and Song Ma, “Killer Acquisitions,” Journal of Political Economy 129, No. 3 (March 2021): 649–
+702, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3241707; Merger Guidelines, 23.
+29 FTC Launches Inquiry into Generative AI Investments and Partnerships; Aoife White, “Microsoft and
+Google AI Deals Get EU Antitrust Scrutiny, Vestager Says,” Politico, June 28, 2024,
+https://www.politico.eu/article/microsoft-google-tech-deal-antitrust-security-open-ai-eu-margrethe-
+vestager/; FTC, DOJ, and International Enforcers Issue Joint Statement on AI Competition Issues
+(Washington, D.C.: U.S. Federal Trade Commission, July 23, 2024), https://www.ftc.gov/news-
+events/news/press-releases/2024/07/ftc-doj-international-enforcers-issue-joint-statement-ai-
+competition-issues.
+
+30 Microsoft and OpenAI have not disclosed the share of the investment that came in the form of cloud
+credits. For more information, see: Reed Albergotti, “OpenAI Has Received Just a Fraction of Microsoft’s
+$10 Billion Investment,“ Semafor, November 18, 2023,
+https://www.semafor.com/article/11/18/2023/openai-has-received-just-a-fraction-of-microsofts-10-
+billion-investment; Tom Warren, “Microsoft Extends OpenAI Partnership in a ‘Multibillion Dollar
+Investment’,” The Verge, January 23, 2023, https://www.theverge.com/2023/1/23/23567448/microsoft-
+openai-partnership-extension-ai.
+31 Isabella Ward and Natalie Lung, “Big Tech’s Year of Partnering Up With AI Startups,” Bloomberg,
+December 18, 2023, https://www.bloomberg.com/news/articles/2023-12-18/big-tech-s-year-of-
+partnering-up-with-ai-startups; John B. Kirkwood, “How Big Tech’s AI Startup Alliances Could Harm
+Competition,” ProMarket, August 29, 2024,
+https://www.promarket.org/2024/08/29/how-big-techs-ai-startup-alliances-could-harm-competition/;
+Schoeberl and Corrigan, “Funding the AI Cloud—Amazon, Alphabet, and Microsoft’s Cloud Computing
+Investments, Part 3.”
+32 “Cross-border M&A: A Springboard to Global Growth” (Deloitte M&A Institute, 2017),
+https://www2.deloitte.com/content/dam/Deloitte/us/Documents/mergers-acqisitions/us-m-a-cross-
+border-pov-spread.pdf; Benjamin Sibbett and Hanah Kim, “Cross-Border M&A: A Checklist of US Issues
+
+===== PDF_PAGE 30 =====
+Center for Security and Emerging Technology | 29
+
+for Non-US Acquirers,” Clifford Chance, 2022,
+https://www.cliffordchance.com/content/dam/cliffordchance/PDFDocuments/2022-01-wolters-kluwer-
+blr-cross-border-m%26a-a-checklist-of-us-issues-for-non-us-acquirers.pdf.
+33 The United Kingdom passed the National Security and Investment Act in 2022 that includes the
+mandatory regime that requires qualifying transactions to be notified for approval and the voluntary
+regime that allows parties to submit transactions for approval on grounds of national security, similar to
+the Committee on Foreign Investment in the U.S. Canada’s National Security Review of Investment
+Modernization Act also includes mandatory pre-closing national security notification. For more
+information, see: “CFIUS’s U.K. Landing Now Complete — The National Security and Investment Act Is
+Now in Full Force,“ Crowell, February 22, 2022, https://www.crowell.com/en/insights/client-alerts/cfius-
+s-u-k-landing-now-complete-the-national-security-and-investment-act-is-now-in-full-force; “Canada:
+Mandatory Filing, Other Reforms Signal a New Era for Foreign Investment,” Baker McKenzie, 2024,
+https://insightplus.bakermckenzie.com/bm/international-commercial-trade/canada-mandatory-filing-
+other-reforms-signal-a-new-era-for-foreign-investment.
+34 Husanjot Chahal, Ngor Luong, Sara Abdulla, and Margarita Konaev, “Quad AI,” Center for Security and
+Emerging Technology, May 2022, https://cset.georgetown.edu/wp-content/uploads/Quad-AI.pdf;
+Anthony Ferrara and Sara Abdulla, “Financing ‘The New Oil,’” Center for Security and Emerging
+Technology, May 2023, https://cset.georgetown.edu/publication/financing-the-new-oil/.
+35 “Every Country Wants Its Own Investment-Screening Regime,” The Economist, November, 23, 2023,
+https://archive.ph/LI3uh.
+36 Committee on Foreign Investment in the United States, Annual Report to Congress CY 2022
+(Washington, D.C.; U.S. Department of the Treasury, 2022), 69,
+https://home.treasury.gov/system/files/206/CFIUS%20-
+%20Annual%20Report%20to%20Congress%20CY%202022_0.pdf.
+37 Emily Kilcrease, “The Role of Investment Security in Addressing China’s Pursuit of Defense
+Technologies,” Testimony to the U.S.-China Economic and Security Review Commission, April 13, 2023,
+https://www.uscc.gov/sites/default/files/2023-04/Emily_Kilcrease_Testimony.pdf.
+38 Exec. Order No. 14083.
+39 Dylan Butts, “AI Is the Talk of the Town, But Businesses Are Still Not Ready for It, Survey Shows,”
+CNBC, March 6, 2023, https://www.cnbc.com/2024/03/06/generative-ai-holds-massive-potential-but-
+businesses-arent-ready-yet.html; “U.S. Companies Ramp Up Automation and AI as Inflation Persists,”
+(Richmond, VA: U.S. Federal Reserve Bank of Richmond, June 20, 2024),
+https://www.richmondfed.org/research/national_economy/cfo_survey/data_and_results/2024/20240620
+_data_and_results; Kristina McElheran et al., “AI Adoption in America: Who, What, and Where,”
+(Cambridge, MA: National Bureau of Economic Research, October 2023),
+https://www.nber.org/system/files/working_papers/w31788/w31788.pdf.
+
+===== PDF_PAGE 31 =====
+Center for Security and Emerging Technology | 30
+
+40 Tejas Narechania and Ganesh Sitaraman, “An Antimonopoly Approach to Governing Artificial
+Intelligence” (Vanderbilt Policy Accelerator for Political Economy and Regulation, 2023),
+https://cdn.vanderbilt.edu/vu-URL/wp-content/uploads/sites/412/2023/10/06212048/Narechania-
+Sitaraman-Antimonopoly-AI-2023.10.6.pdf.pdf; Fernando van der Vlist, Anne Helmond and Fabian
+Ferrari, “Big AI: Cloud Infrastructure Dependence and the Industrialisation of Artificial Intelligence,” Big
+Data & Society 11, no. 1 (March 2024),
+https://journals.sagepub.com/doi/10.1177/20539517241232630.
+41 Subcommittee on Antitrust, Commercial and Administrative Law, Investigation of Competition in
+Digital Markets; Amba Kak, Sarah Myers West, and Meredith Whittaker, “Make No Mistake—AI Is Owned
+by Big Tech,” MIT Technology Review, December 5, 2023,
+https://www.technologyreview.com/2023/12/05/1084393/make-no-mistake-ai-is-owned-by-big-tech/;
+Gerrit De Vynck, “How Big Tech Is Co-opting the Rising Stars of Artificial Intelligence,” The Washington
+Post, October 2, 2023,
+https://www.washingtonpost.com/technology/2023/09/30/anthropic-amazon-artificial-intelligence/;
+Corrigan, “AI Market Powers,”; Schoeberl and Corrigan, “Funding the AI Cloud—Amazon, Alphabet, and
+Microsoft’s Cloud Computing Investments, Part 1”; Schoeberl and Corrigan, “Funding the AI Cloud—
+Amazon, Alphabet, and Microsoft’s Cloud Computing Investments, Part 2”; Schoeberl and Corrigan,
+“Funding the AI Cloud—Amazon, Alphabet, and Microsoft’s Cloud Computing Investments, Part 3.”
+42 U.S. Government Accountability Office, Foreign Investment in the U.S.: Efforts to Mitigate National
+Security Risks Can Be Strengthened (Washington, D.C.; U.S. Government Accountability Office, April
+2024), https://www.gao.gov/products/gao-24-107358; Michael Bow, “US national security committee
+investigates Abu Dhabi investors,” The Telegraph, November 24, 2023,
+https://www.telegraph.co.uk/business/2023/11/24/national-security-committee-investigate-abu-dhabi-
+investors/.
+43 Merger Guidelines; FTC Launches Inquiry into Generative AI Investments and Partnerships; David
+McCabe, “U.S. Clears Way for Antitrust Inquiries of Nvidia, Microsoft and OpenAI,” The New York Times,
+June 5, 2024, https://www.nytimes.com/2024/06/05/technology/nvidia-microsoft-openai-antitrust-doj-
+ftc.html.

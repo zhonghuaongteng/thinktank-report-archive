@@ -1,0 +1,2446 @@
+
+===== PDF_PAGE 1 =====
+OECD Science, Technology and Industry Working Papers
+2025/25
+Assessing the relevance
+of R&D funding towards
+societal goals: Insights from
+new data sources and AI-
+assisted methods
+Leonidas Aristodemou,
+Silvia Appelt,
+Brigitte van Beuzekom,
+Fernando Galindo-Rueda
+https://dx.doi.org/10.1787/bafcdc7b-en
+
+===== PDF_PAGE 2 =====
+2  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+OECD Science, Technology and Industry Working Papers
+
+OECD Working Papers should not be reported as representing the official views of the OECD or of its
+member countries. The opinions expressed and arguments employed are those of the authors.
+Working Papers describe preliminary results or research in progress by the author(s) and are published to
+stimulate discussion on a broad range of issues on which the OECD works. Comments on Working Papers
+are welcomed, and may be sent to Directo rate for Science, Technology and Innovation, OECD, 2 rue
+André-Pascal, 75775 Paris Cedex 16, France.
+
+Note to Delegations:
+This document is also available on O.N.E Members & Partners under the reference code:
+DSTI/STP/NESTI/MARIAD(2024)3/FINAL
+
+© OECD 2025
+ Attribution 4.0 International (CC BY 4.0)
+This work is made available under the Creative Commons Attribution 4.0 International licence. By using this work, you accept to be bound by the terms of this licence
+(https://creativecommons.org/licenses/by/4.0/).
+Attribution – you must cite the work.
+Translations – you must cite the original work, identify changes to the original and add the following text: In the event of any discrepancy between the original work and the
+translation, only the text of the original work should be considered valid.
+Adaptations – you must cite the original work and add the following text: This is an adaptation of an original work by the OECD. The opinions expressed and arguments employed
+in this adaptation should not be reported as representing the official views of the OECD or of its Member countries.
+Third-party material – the licence does not apply to third-party material in the work. If using such material, you are responsible for obtaining permission from the third party and
+for any claims of infringement.
+You must not use the OECD logo, visual identity or cover image without express permission or suggest the OECD endorses your use of the work.
+Any dispute arising under this licence shall be settled by arbitration in accordance with the Permanent Court of Arbitration (PCA) Arbitration Rules 2012. The seat of arbitration
+shall be Paris (France). The number of arbitrators shall be one.
+
+===== PDF_PAGE 3 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  3
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Abstract
+This paper presents and demonstrates a novel approach for assessing the
+relevance of public R&D funding towards societal goals. The approach relies
+on the development of a new machine learning classification model for R&D
+activity descriptions , trained on researchers’ self-assessments about the
+relevance of their R&D activity towards Sustainable Development Goals
+(SDGs). Applied to R&D project descriptions in the OECD Fundstat
+database, the model shows how funding , including for basic research,
+contributes towards societal goals. The analysis allows to compare funding
+portfolios and provides evidence of the interdependencies between societal
+goals served by R&D funding and its potential to contribute to multiple goals.
+
+Authors: Leonidas Aristodemou, Silvia Appelt, Brigitte van Beuzekom, Fernando Galindo-Rueda
+Keywords: Research and Development (R&D), Government R&D funding, Machine Learning, Language
+Models, Sustainable Development Goals (SDGs), Survey data, Classification, Directionality
+JEL codes: O38, O32, C38, C45, Q55
+
+===== PDF_PAGE 4 =====
+4  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Acknowledgements
+This report has been prepared by Leonidas Aristodemou, Silvia Appelt , Brigitte van Beuzekom and
+Fernando Galindo-Rueda at the Science and Technology Policy (STP) Division in the OECD Directorate
+for Science, Technology, and Innovation (DSTI).
+The study has been conducted as part of the Programme of Work and Budget of the Committee for
+Scientific and Technological Policy (CS TP), under the auspices of the OECD Expert Group on the
+Management and Analysis of R&D and Innovation Administrative Data (MARIAD), established by the
+Working Party of National Experts on Science and Technology Indicators (NESTI) to coordinate and
+oversee work on R&D and innovation administrative data. Earlier versions of the document were presented
+for discussion in October 2024 at the NESTI and MARIAD official meetings, and in October 2025 at the
+CSTP official meeting.
+The authors would like to express their gratitude towards a long list of contributors , primarily MARIAD,
+NESTI and CSTP delegates for their constructive feedback. In addition, some of the analysis in this study
+would not have been possible without the assi stance of MARIAD delegates from several countries in
+making R&D project -level funding data available for analysis. The authors are particularly grateful for
+comments from CSTP, NESTI and MARIAD bureau members Miguel Gonçalves, Christian Naczinsky,
+Martine Garnier-Rizet, Yujin Jeong, Michael Lam, Roberta Pattono and Naohiro Shichijo, as well as
+MARIAD delegates Pascale Dengis, Marie-Alexandra Neouze and Kristof Van Criekingen. In addition, the
+authors would like to acknowledge several OECD colleagues . Daniel Sanchez Serra enabled use of the
+2021 OECD International Survey of Science data under strict confidentiality and privacy requirements.
+Fabien Verger and Guillaume Kpodar provided useful comments on GBARD and the OECD RDS and
+OECD MSTI datasets. Petra Kelly provided valuable guidance on Energy and Planet-related R&D funding
+indicators. Stephanie Cairns and Kuniko Matsumoto contributed to the initial scoping of the SDG
+classification work . Colleagues from the OECD Statistics and Data Directorate (SDD) (Eric Anvar and
+Samuel Pinto Ribeiro ), and the OECD Centre on Well -being, Inclusion, Sustainability and Equal
+Opportunity (WISE) (Liva Stoken berga and Ziga Zarnic ), kindly reviewed the document and provided
+valuable additional feedback.
+Selected results from this work are also featured in the OECD Measuring Science and Innovation for
+Sustainable Growth report , with supplementary material available on the OECD Fundstat webpage .
+Further information on the data and methods used in this analysis can be requested to mariad@oecd.org.
+
+===== PDF_PAGE 5 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  5
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Table of contents
+Abstract 3
+Acknowledgements 4
+Table of contents 5
+Executive summary 7
+1 Introduction 9
+2 Mapping the contribution of science, technology and innovation to societal goals 11
+2.1. Perspectives for assessing the directionality and relevance of STI towards societal goals 11
+2.2. SDGs and related work on SDG classification for STI activity 12
+2.2.1. Using SDGs to measure societal goals of R&D 12
+2.2.2. General SDG mapping approaches for STI efforts 13
+2.2.3. Keyword and AI assisted classification approaches 14
+3 Data sources for assessing relevance 16
+3.1. Classification training data 16
+3.1.1. OECD International Survey of Science (ISSA) 16
+3.1.2. Scopus bibliometric database on scientific publications 16
+3.2. Classification evaluation data 17
+3.2.1. OpenAlex database on scholarly metadata 17
+3.2.2. OSDG community dataset on SDG-labelled text excerpts 18
+3.3. Analysis data 18
+3.3.1. OECD Fundstat database on R&D funding awards 18
+3.3.2. Scopus bibliometric database on scientific publications 20
+4 Developing a new classifier for the relevance of R&D to goals 21
+4.1. Model development 21
+4.2. Model evaluation 23
+4.2.1. Alignment of self-assessed with other science SDG classifiers 23
+4.2.2. Evaluation with generic SDGs tagged content 24
+5 Results 25
+5.1. Relevance of R&D funding and scientific publications towards goals 25
+5.1.1. Results across funding sources 25
+5.1.2. Mapping the R&D funding landscape according to societal goals 27
+5.1.3. Profiling of funding sources by societal goals 28
+5.1.4. Experimental results by geographical areas 31
+5.1.5. Relevance trends for R&D funding and scientific publications 33
+5.2. SDG R&D topics and interdependencies 38
+5.2.1. Topic modelling of R&D projects relevant to Energy and Planet SDGs 38
+5.2.2. Interdependencies in R&D funding between SDGs 40
+
+===== PDF_PAGE 6 =====
+6  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+6 Concluding remarks 41
+References 43
+Annex A. The OECD Fundstat database 50
+A.1. Data sources in the OECD Fundstat database 50
+A.2. Benchmark analysis of the OECD Fundstat database 52
+A.3. Comparing the thematic orientation of R&D funding in Fundstat and GBARD 53
+Annex B. Supplementary methodological information 55
+Annex C. Supplementary results 58
+
+Tables
+Table 2.1. Mapping of socio-economic objectives (SEOs) for R&D to SDG thematic clusters 14
+Table 2.2. SDG classification methods in the literature 15
+Table 3.1. Most relevant SDG reported by 2021 ISSA respondents engaged in research activities 17
+Table 3.2. R&D funding in the OECD Fundstat database, 2015-2023 19
+Table 5.1. Estimates of R&D projects, R&D funding and scientific publications by SDG & SDG group 34
+
+Table A.1. Data sources in the OECD Fundstat database, 2015-2023 50
+Table B.1. Distribution of labels of sustainable development goals (SDGs) across the datasets 55
+
+Figures
+Figure 2.1. Conceptualising and measuring the direction of R&D funding towards societal goals 11
+Figure 4.1. Comparison of SDG self-assessed classification with OpenAlex textual content classifier 24
+Figure 5.1. SDG group distribution of R&D funding by source, 2015-2023 26
+Figure 5.2. Two-dimensional structure of the R&D funding landscape according to SDG relevance 27
+Figure 5.3. Thematic structure and proximity of R&D funding devoted to different SDGs, 2015-2023 29
+Figure 5.4. Visualising and comparing R&D funding portfolios for selected UKRI bodies, 2015-2023 30
+Figure 5.5. SDG Distribution of Fundstat R&D project funding by country/area, 2015-2023 32
+Figure 5.6. SDG group distribution of R&D project funding by country/area, 2015-2023 33
+Figure 5.7. SDG group distribution of scientific publications and funding awards’ counts and values 35
+Figure 5.8. Scientific publications, R&D funding and R&D projects by SDG group, 2015-2023 36
+Figure 5.9. Trends in shares of R&D funding, awards and publications by SDG group, 2015-2023 37
+Figure 5.10. Topics in R&D projects relevant to Energy and Planet related SDGs, 2020-2023 39
+Figure 5.11. SDG relevance of R&D funding, by dominant SDG group in R&D awards, 2010-2023 40
+
+Figure A.1. Coverage of government R&D funding in the 2024 OECD Fundstat database, 2010-2023 52
+Figure A.2. Share of R&D funding by theme in Fundstat and GBARD for 19 OECD countries, 2021 54
+Figure B.1. Out-of-sample SDG label classifier prediction on the OSDG dataset (n=8 768) 57
+Figure C.1. SDG distribution of R&D projects, R&D funding and scientific publications, 2015-2023 58
+Figure C.2. Distribution of R&D funding and R&D projects by SDG, 2015-2023 59
+Figure C.3. Distribution of R&D funding and projects by SDG & data source, 2015-2023 60
+Figure C.4. Distribution of R&D funding and projects by SDG & data source, 2015-2023 (continued) 61
+Figure C.5. SDG group distribution of R&D projects by data source, 2015-2023 62
+Figure C.6. Total R&D funding, R&D projects and scientific publications by SDG, 2015-2023 63
+
+Boxes
+Box 4.1. Language models for societal goals classification 22
+
+===== PDF_PAGE 7 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  7
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Executive summary
+What do billions of government investment in research and development (R&D) across OECD countries
+contribute to? Traditionally, such question was only addressed through the prism of established
+classifications at a high level of aggregation . Available statistics, whilst providing a comprehensive
+benchmark, leave unanswered several questions about the relevance of R&D funding towards specific and
+evolving societal goals.
+To respond to such needs, the OECD has developed the Fundstat analytical infrastructure to develop and
+demonstrate approaches for working with administrative R&D microdata and AI tools for analysis of
+quantitative and qualitative dat a in conjunction with traditional methods. This paper presents a decisive
+step in the Fundstat initiative towards developing tools that can help provide evidence on the directionality
+and relevance of R&D funding.
+Evidence on the potential contribution of R&D to different societal goals is crucial for assessing the balance
+and orientation of R&D and innovation policies. Yet, providing informative indicators remains challenging
+because support for R&D can influence the attainment of such goals through multi ple and often indirect
+channels. AI-based classification methods applied to administrative data, while promising, are often reliant
+on superficial text features and tend to equate lexical similarity with relevance. Moreover, the widespread
+absence of expli cit “goal” language in R&D activity descriptions leads to low measured rates of SDG
+relevance. Such approaches may understate the relevance of R&D, particularly basic and some forms of
+applied research, to outcomes that indirectly advance societal objectives.
+To overcome these limitations, this study introduces a n AI-based approach that is trained on effective
+domain-informed assessments of goal relevance for R&D. Close to 2 000 participants in the 2021 OECD
+International Survey of Science (ISSA2021) reported which Sustainable Development Goal ( SDG), or
+none, they contributed to with their research. As it touches on virtually all areas of government policy, the
+UN SDG framework provides a convenient and relevant use case in the classification of unstructured R&D
+activity by goals. The survey data helped label a corpus of over 1 1 000 academic publications , which
+served in turn as the training dataset for fine -tuning SciBERT, a pre-trained domain-specific transformer-
+based language model (trained on a large corpus of scientific literature), into predicting goal relevance
+probability for a given text description. This yield ed a model capturing relationships between research
+content and relevance towards the 17 SDG objectives, as well as the absence of SDG relevance.
+The classifier, deployed on the Scopus custom database of scientific publications and the latest version of
+the OECD Fundstat , provides a basemap for the R&D landscape comprising approximately 2.1 million
+government-funded R&D project awards across 19 OECD countries and the European Union (EU)
+programmes implemented by the European Commission (EC ), accounting for approximately USD 1.5
+trillion in public R&D funding, between 2015-2023.
+The results indicate that over half of total R&D funding between 2015 -2023 is estimated to be relevant to
+two Sustainable Development Goals: SDG 9 (Industry, innovation and infrastructure: 30%) and SDG 3
+(Good health and well -being: 23%). These goals dominate both in terms of funding volume and project
+counts. SDG 4 (Quality education: 8%), SDG 7 (Affordable and clean energy: 5%), and SDG 13 (Climate
+
+===== PDF_PAGE 8 =====
+8  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+action: 4%) follow as the next most prominent areas o f R&D funding. Notably, only a small share of R&D
+funding (3%) is classified as having no SDG relevance (6% for scientific publication output) , much less
+than estimated by previous literature. Whilst th is might overstate genuine impacts on goals, these new
+results are more plausible since the UN SDG framework, SDG 9 (Industry, innovation and infrastructure)
+contains total R&D expenditure (as proportion of GDP) as an indicator towards target 9.5. As a result, any
+R&D activity could in principle contribute to SDG 9. This reflects a significant degree of ambiguity in the
+SDG framework with respect to R&D and innovation activity , which is not present in measurement
+frameworks designed for classification purposes.
+Over one-third (37%) of total R&D funding recorded in Fundstat over the 2015–2023 period is found to be
+attributable to the “Prosperity” cluster of SDGs (SDGs 8, 9, 10, 11), followed by “Health” (SDGs 1, 2, 3, 5)
+at 29%, and “Planet” (SDGs 6, 12, 13, 14, 15) at 15%. Given their clear financial opportunity cost, budgeted
+or awarded amounts provide more meaningful measures of policy priorities than simple counts of activities
+or outputs, such as the number of funded projects or related scientific publications, also offering valuable
+insights into the breadth and intensity of research activity. Considering all three dimensions together helps
+to account for differences in cost structures across research domains, where some areas, such as health
+or infrastructure, are typically more capital -intensive than others. Viewed jointly, these measures provide
+a more comprehensive picture of the directionality of R&D funding and its alignment with societal goals.
+Recent trends also point to a shift towards fewe r but larger R&D awards, as well as modest realignments
+in priorities in response to the COVID-19 crisis.
+This paper also explores the advantages of granular data and AI tools to examine the R&D topics being
+funded within projects that score highly on envi ronmental and energy goals. An unsupervised topic
+modelling exercise reveals research themes attracting public investment, with the topic structure is
+consistent with the selected goals (projects exhibit combinations of energy and environmental topics) and
+the types of project descriptions that underpin projects relevant to such goals (project descriptions exhibit
+different combinations of topics that describe the nature of the R&D, such as scientific topics and
+technology domains, on the one hand, and application areas that relate to goals, on the other).
+The results also shed light on the synergies between different goals. Awards that primarily related to a
+given SDG also make very significant contributions towards other goals. For example, R&D projects
+primarily related to (economic) “Prosperity” goals ( e.g., innovation and economic growth) often also
+contribute to environmental a nd health goals. Health -related R&D projects are in turn more narrowly
+focused but still show links to Planet and Prosperity related goals . Projects with environmental related
+goals in the SDG cluster “Planet” are particularly cross -cutting with R&D funding contributing to several
+other SDGs. These findings reflect the interconnected nature of societal challenges and highlight the
+potential for R&D investments to support multiple goals at once.
+These results are no substitutes for studies of causal impact of R&D on outcomes; impact requires
+separate ex-post outcome analysis and counterfactuals. These new findings and methods are expected to
+equip policymakers, R&D funders, and other relevant stakeholders with evidence to support both strategic
+and operational purposes. In addition to extending the scope of Fundstat, possible avenues for future work
+include extending the application of this SDG classifier to other scientific data sources and exploring its
+use in mapping policy -relevant research portfolios, su ch as in health, climate, or energy domains , and
+assessing in more detail the orientations of support for emerging technologies .
+
+===== PDF_PAGE 9 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  9
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Science, technology, and innovation (STI) play a pivotal role in addressing global challenges by
+documenting their nature, scale and features, as well as by facilitating new solutions that overcome critical
+and hard to accept trade -offs under the state of the art of knowledge and technology . Evidence on the
+contribution of research and development (R&D) , i.e., activity aiming to create and develop brand new
+knowledge and solutions (OECD, 2015[1]), to a wide range of societal goals is crucial for assessing the
+balance and orientation of STI policies. It also plays a key part in communicating the return to public
+investments in R&D. Yet providing informative indicators and analysis on the goals of R&D is challenging
+because of the multiple channels through which support for R&D is intended to and ultimately impacts on
+the attainment of such goals.
+OECD’s long-standing work on classifying government budgets for R&D across societal goals focuses on
+assessing government’s overarching aims as the result of the political process of setting the national
+budget. National experts report data to the OECD according to internationally agreed standards, matching
+budgetary lines to a defined range of “socioeconomic” objectives that closely match government functions
+like defence and health, and which include public goods such as the general advancement of knowledge
+(OECD, 2015[1]). However, several policy questions require identifying what publicly funded R&D can be
+ultimately relevant for, regardless of the high -level stated aims and independently of any given
+classification framework. This requires having flexible allocation and classification mechanisms as well as
+data enabling granular analysis to serve different user needs . The OECD has recently developed the
+Fundstat analytical infrastructure with such an objective, working with R&D project award level microdata
+and using AI tools for analysing unstructured text descriptions of such awards . Examples of recent
+applications of Fundstat include studies that focus on both content , relevance and directionality of R&D
+funding, such as artificial intelligence (AI) development (Yamashita et al., 2021 [2]) and COVID-19
+(Aristodemou et al., 2023[3]).
+In the absence of formal requirements for disclosing in a structured fashion what STI activities are relevant
+for, the key conceptual and practical measurement challenge is identifying goals from information available
+about STI activities, such as data on inputs from R&D project funding awards, or outputs such as scientific
+publications. This stands in contrast with patented inventions, where requests for protection must disclose
+their potential applications, claims which are further assessed by expert independent patent examiners.
+AI-based analysis of text descriptions needs to be adequately guided (i.e., trained) to reflect not only on
+the content of the STI activity but also consider how knowledge outputs can be key inputs for other STI
+activities that ultimately contribute to societal goals. For example, a summary description of research into
+properties of new materials may not necessarily disclose that such properties may play a critical for
+applications in areas such as health, defence or energy. An appropriate degree of domain expertise is thus
+a necessary input into the training of reliable AI-based classification methods.
+This paper uses the United Nations (UN) Sustainable Development Goals (SDGs) framework as a
+demonstration use case for a n ovel classification approach for R&D goals . The SDGs were adopted in
+2015 to focus action towards addressing the world’s most urgent economic, social, and environmental
+challenges. The 2015 OECD Daejeon Declaration on Science, Technology and Innovation (STI) Policies
+for the Global and Digital Age (OECD, 2015[4]) underscored the importance of Science, technology, and
+innovation in achieving sustainable development , emphasising that STI is not just an engine of economic
+1 Introduction
+
+===== PDF_PAGE 10 =====
+10  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+growth but also a powerful tool for fostering sustainability and social well-being. Nearly a decade later, the
+2024 OECD Declaration on Transformative Science, Technology, and Innovation Policies for a Sustainable
+and Inclusive Future (OECD, 2024[5]) reinforced the necessity of transformative STI policies to address the
+SDGs, urging countries to reorient their STI policies to better address systemic issues like climate change,
+inequality, and resource depletion (OECD, 2024[6]; OECD, 2024[7]).
+SDG allocation and classification methods used to date, typically based on keyword -matching or natural
+language processing (NLP), rely heavily on surface -level text features and equate lexical similarity with
+conceptual alignment. Recent studies have mapped the contribution of STI to the SDGs (Kashnitsky et al.,
+2024[8]), by applying transformer-based SDG classifiers to scientific publications . As they have been
+applied to indicators of STI activity such as scientific publications’ abstracts, the widespread lack of explicit
+“SDG” language in R&D activity descriptions tends to result in low rates of SDG relevance which understate
+the potential contribution of R&D, especially basic research and research applied to outcomes that may
+indirectly contribute to the goals.
+This study introduces an AI-based probabilistic classification approach that is trained on effective domain-
+informed assessments of goal relevance for research. The applied model captures relationships between
+research content and relevance towards the 17 SDG objectives, as well as the absence of SDG relevance.
+The classifier has been deployed on the Scopus custom database of scientific publications (v.1.2024) and
+the latest version of the OECD Fundstat database (v.2024), which compri ses approximately 2.1 million
+government-funded R&D project awards across 19 OECD countries and the European Union (EU)
+programmes implemented by the European Commission (EC) , between 2015 and 2023. These awards
+accounted for approximately USD 1.5 trillion in government R&D funding over this period . This dual
+application to scientific publications and R&D awards data provides a view of R&D relevance towards
+societal goals, proxied using the SDG framework.
+The remainder of the paper is organised as follows:
+• Section 2 introduces the conceptual and empirical approaches adopted in mapping the
+contributions of science, technology and innovation (STI) to societal goals, taking the Sustainable
+Development Goals (SDGs) as reference framework. This is followed by a review of existing SDG
+classification methods, including keyword-based and AI-assisted approaches.
+• Section 3 presents the data sources used for model development, evaluation, and analysis.
+• Section 4 details the methodology for developing the SDG relevance classifier applied to R&D -
+related text. It discusses model training and evaluation, including validation with external SDG -
+labelled content and alignment with existing classification systems.
+• Section 5 applies the SDG classifier to the Fundstat and Scopus databases to assess the relevance
+of R&D funding awards and scientific publication output. It also provides exploratory evidence on
+the thematic structures and interdependencies in R&D funding across different societal goals.
+• Section 6 concludes with some potential implications and suggestions for future work.
+
+===== PDF_PAGE 11 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  11
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+2.1. Perspectives for assessing the directionality and relevance of STI towards
+societal goals
+There are different ways to conceptualise and measure the direction and relevance of R&D funding towards
+policy goals, contrasting the ex-ante or planned directionality (i.e. the intention to direct) and effective ex-
+post directionality (the attribute of h aving a direction) of R&D funding. Based on related OECD work
+documenting the multifaceted nature of directionality (OECD, 2023[9]; OECD, 2023 [10]; OECD, 2024 [11]),
+Figure 2.1 outlines those by distinguishing between the measurement of stated policy goals, content and
+features of the funded R&D work, its potential relevance to the policy goal, and the ultimate impact of
+funded R&D activity on the policy goal.
+Figure 2.1. Conceptualising and measuring the direction of R&D funding towards societal goals
+
+Source: OECD own compilation
+Present official measures of R&D directionality principally capture top -down budgetary processes that
+reflect ex-ante directionality. For classification purposes, they draw on the “ Nomenclature for the analysis
+and comparison of scientific programmes and budgets” (NABS) and originally developed for STI
+measurement purposes but closely inspired by generic classifications of functions of government . The
+focus is on top-level policy societal or economic goals of R&D funding , irrespective of the content of the
+funded R&D and its potential relevance towards secondary goals, since the aim is allocation of financial
+2 Mapping the contribution of
+science, technology and innovation
+to societal goals
+
+===== PDF_PAGE 12 =====
+12  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+resources (budgeted amounts of potentially expenditure) towards mutually exclusive categories to avoid
+double counting in the reporting of Government Budgets for R&D (GBARD) . Analysis of these data
+highlights that a major share of GBARD in many OECD countries falls under the category of General
+advancement of knowledge, which implies a low degree of ex-ante directionality towards specific societal
+goals. However, this does not imply that R&D budgets have a low degree of relevance towards such goals.
+To analyse the content and characteristics of R&D support, other classifications are required,
+encompassing elements such as target beneficiaries ( e.g., firms, universities), support conditions ( e.g.,
+type of STI activity), and type of instrument (e.g., grants, tax incentives) (OECD, 2015[1]; OECD, 2023[10];
+OECD/Eurostat, 2018[12]). While such information does not directly indicate stated goals, it can provide
+insights into implied direction. For example, R&D support targeted at start-ups in the pharmaceutical sector
+may suggest an underlying objective rel ated to health or SME development. When combined with
+additional contextual information or assumptions, content -based classifications may support inferences
+about the ex-ante policy intentions behind R&D funding interventions. This information may not be known
+by the top-level budgetary authorities, who often grant a degree of decision -making autonomy in the use
+of funds not only to beneficiaries, such as universities, but also to intermediary bodies such as funding
+bodies, and those in turn to funding committees and panels.
+Many policy questions require identifying what goals publicly funded R&D may be ultimately relevant for,
+regardless of the stated high-level objectives or the classification system applied. Assessing relevance to
+goals goes beyond state d intent and demands more detailed information about the nature and potential
+applications of the funded R&D, which government ministries and R&D and innovation funding bodies may
+not always have at their disposal. R&D activities can contribute to multiple societal goals, both directly and
+indirectly, including through intermediary applications or spillovers into other domains. Capturing this
+multidimensional relevance requires flexible classification approaches, access to granular data, and the
+integration of domain expertise, particularly when using AI -based methods for text analysis. Such models
+must be trained not only to interpret the immediate content of R&D activities but also to infer potential
+downstream contributions.
+Assessing the impact of the funded R&D work on policy goals represents the final and most challenging
+element in measuring the direction of STI towards goals. It relies on the measurement of ex -post R&D,
+innovation and broader socio-economic outcomes and the ability to establish causal links between funded
+R&D work and those outcomes. The level and timing of the outcomes of this R&D work are highly uncertain
+ex-ante. Moreover, due to limited data availability and/or coverage, trade-offs may need to be made in the
+scale and scope of measurement and analytical efforts with a view to addressing the key policy questions
+at hand. To gauge the causal impact of R&D on the policy goal, the outcomes of interest would ideally be
+directly compared with their level in the counterfactual scenario in which no R&D support is provided . A
+fundamental estimation challenge arises as it is not possible to observe the “counterfactual”, i.e., how much
+R&D would R&D support recipients have performed had they not received this support. Being unable to
+observe the counterfactual directly, the best alternative is to compare R&D performers that receive support
+with those that do not but are otherwise as similar as possible , a strategy also adopted in related OECD
+distributed analysis on the impact of public support for business R&D (OECD, 2023[13]; OECD, 2020[14]).
+2.2. SDGs and related work on SDG classification for STI activity
+2.2.1. Using SDGs to measure societal goals of R&D
+The sustainable development goals (SDGs) were adopted by the United Nations (UN) in 2015 as a
+comprehensive framework designed to address the world’s most urgent economic, social, and
+environmental challenges, setting a broader, more inclusive vision for sustainable development. The
+framework comprises 17 interrelated goals that cover areas ranging from poverty, education, and gender
+
+===== PDF_PAGE 13 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  13
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+equality to climate action and sustainable economic growth. Together, the SDGs reflect a universal call to
+end poverty, protect the planet, and ensure prosperity for all by 2030, emphasising the need for a balanced
+and collaborative approach to global development and economic growth. The global SDG indicator
+framework was developed by the Inter -agency and E xpert Group on SDG Indicators (IAEG -SDGs) and
+adopted by the UN General Assembly in 2017 with a view to guiding the development of indicators and
+statistical data to monitor progress towards the SDGs and inform decision making in this area (UN,
+2017[15]). Each SDG is accompanied by targets that provide measurable steps toward achieving the
+broader goal (UN, 2024 [16]; UN, 2024 [17]). These tar gets are further monitored through 231 indicators,
+enabling countries and international organisations to track progress on each goal (UN, 2024[18]). Building
+on the UN framework, the OECD has developed a methodology to measure the distance that OECD
+countries need to travel to achieve the SDG targets (OECD, 2019[19]; OECD, 2025[20]). A dedicated OECD
+hub on SDGs (OECD, 2025 [21]) provides access to the OECD SDG indicator infrastructure to inform
+countries about their position in achieving the SDGs and highlight critical data gaps that hinder their
+effective implementation. The SDG framework effectively covers a comprehensive range of societal goals
+that resembles existing classifications of generic functions of government. For this reason , and given its
+widespread recognisability, it provides a relevant test case in classification towards societal goals in
+general and for monitoring R&D efforts in particular.
+2.2.2. General SDG mapping approaches for STI efforts
+The positioning of Science, Technology, and Innovation (STI) within the SDG framework is a complex one.
+Since the headline indicator of gross domestic R&D expen diture is one among several used to monitor
+SDG 9 “Industry, innovation and infrastructure ”, in principle all government (and private) funding of R&D
+then contributes to SDG 9. However, STI efforts can contribute towards any of the thematic goals rather
+beyond SDG 9, so a more interesting question is how government funding for R&D contributes to the
+different SDGs. For this reason, the OECD Directorate for Science, Technology and Innovation publishes
+within its GBARD statistics a set of indicators that clus ter data by socioeconomic objectives into four
+clusters that are thematically related to groups of SDGs, tentatively mapped and named as Health and
+Society (OECD, 2025 [22]), Industry and Knowledge (OECD, 2025[23]), Planet and Infrastructure (OECD,
+2025[24]), and Security (OECD, 2025[25]) (Table 2.1).
+Table 2.1 provides an overview of the tentative mapping of socio-economic objectives (SEOs) to four SDG
+related clusters , including a tentative list of thematically related SDGs for each cluster. GBARD
+measurement appears capable of approximating the SDG framework to some extent, in the case of
+objectives related to Health (NABS07; SDG 3), Education ( NABS09; SDG 4), Energy (NABS05; SDG 7)
+and Environment ( NABS02; SDGs 6, 12, 13, 14, 15) which can be directly connected to their SEO
+counterparts. However, several SEO-SDG correspondences are rather ambiguous. While various SDGs
+(SDG 6, 12, 13, 14, 15) can be incorporated under one SEO in the case of Environment ( NABS02), the
+reverse applies in the case of SDG 9 ( Industry, innovation and infrastructure ) which appears to be
+thematically related to both industry ( NABS11) and infrastructure ( NABS04) related socio -economic
+objectives. Some SDGs such SDG 1 (No poverty), SDG 2 (Zero hunger), SDG 5 (Gender equality), and
+SDG 10 (Reduced inequalities) also remain unmapped, being thematically more distant and not directly
+linkable to the SEO framework applied in reporting R&D budgets . The complexity of correspondences
+between classifications of policy objectives, combined with the fact that R&D funding may be provided with
+a view to achieving multiple, possibly interdependent poli cy goals, highlights the need of a flexible, AI
+assisted approach that draws on domain expertise in mapping the relevance of funded R&D work to policy
+goals such as the UN SDGs.
+
+===== PDF_PAGE 14 =====
+14  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Table 2.1. Mapping of socio-economic objectives (SEOs) for R&D to SDG thematic clusters
+SDG related clusters Socio-Economic Objectives (SEOs) in the NABS classification
+Health and Society
+• SDG 3 (Good health and well-being)
+• SDG 4 (Quality education)
+• SDG 16 (Peace, justice and strong institutions)
+'Education', 'Culture, recreation, religion and mass media', 'Political and social systems,
+structures and processes', 'Health', 'General advancement of knowledge: R&D related
+to Medical and health sciences' (NABS 09-11, 07, 123 and 133)
+Industry and Knowledge
+• SDG 8 (Decent work and economic growth)
+• SDG 9 (Industry, innovation and infrastructure)
+'Industrial production and technology', 'General advancement of knowledge: R&D
+related to Natural sci., Eng. and technology, Social sci. and Humanities and the arts'
+(NABS 06, 121, 122, 125, 126, 131, 132, 135, 136); and R&D tax incentives
+Planet and Infrastructure
+• SDG 6 (Clean water and sanitation)
+• SDG 7 (Affordable and clean energy)
+• SDG 11 (Sustainable cities and communities)
+• SDG 12 (Responsible consumption and production)
+• SDG 13 (Climate action)
+• SDG 14 (Life below water)
+• SDG 15 (Life on land)
+'Exploration and exploitation of the Earth', 'Exploration and exploitation of space',
+'Transport, telecommunication and other infrastructures', 'Environment', 'Energy',
+'Agriculture', and 'General advancement of knowledge: R&D related to Agricultural and
+veterinary sciences'
+(NABS 01-05, 08, 124 and 134)
+Security
+• SDG 16 (Peace, justice and strong institutions)
+• SDG 17 (Partnerships for the goals)
+Defence (NABS 14)
+Note: Mapping of the c lassification of socio-economic objectives (SEOs) based on NABS 2007 onto SDG groups . For some countries, field-
+based subcategories of 'General advancement of knowledge' (NABS12) are not reported, preventing potential alignment with SDG groups other
+than “Industry and knowledge”, which includes under SDG 9 the target of increasing R&D investment.
+Source: OECD (2025[26]).
+2.2.3. Keyword and AI assisted classification approaches
+Several methodologies have been developed at the micro level to map the contribution of scientific
+research (Confraria, Ciarli and Noyons, 2024 [27]), technologies (Massucci and Seri, 2022 [28]; WIPO,
+2024[29]; Hajikhani and Suominen, 2022 [30]) and polic y documents (Wincott, 2024 [31]) to the UN SDGs .
+Approaches have centred on keyword -based and artificial intelligence (AI) methodologies, each offering
+distinct advantages and limitations (Kashnitsky et al., 2024[8]). Benchmarking studies comparing various
+SDG classification approaches, including those developed by Aurora and Elsevier, have shed light on the
+strengths and weaknesses of each method (Armitage, Lorenz and Mikki, 2020 [32]; Kashnitsky et al.,
+2024[8]). While keyword-driven models generally excel in precision, they underperform in recall, i.e., they
+fail to capture the full spectrum of research contributions. In contrast, AI -based models offer better recall
+but introduce interpretability challenges. The combination of keyword -based and AI-driven methods is
+considered to represent the current state-of-the-art (see Table 2.2) (Kashnitsky et al., 2024[8]).
+Keyword-based methods , traditionally the most common and easiest to implement , utilise Boolean
+searches to identify relevant research by filtering specific sections of pu blications, such as titles and
+abstracts, for SDG-aligned keywords. Elsevier, Αurora, and a few others tailored SDG-specific queries that
+incorporate controlled vocabularies and expert -validated keyword combinations. Despite the utility of
+keyword-driven a pproaches, they are inherently limited by the complexity of SDG -related themes.
+Keywords can have multiple meanings depending on context. For instance, a publication on “clean energy”
+could be relevant to SDG 7 ( Affordable and clean energy), SDG 13 ( Climate action), or both, making it
+difficult to assign a single, definitive SDG label. Moreover, keyword approaches struggle to capture
+research that indirectly contributes to the SDGs, as they rely heavily on key term matching, often missing
+broader contributions (Purnell, 2022[33]; Bautista-Puig et al., 2021[34]; Romero Goyeneche et al., 2022[35];
+Boudt, Inghels and Spithoven, 2024[36]).
+In response to these limitations, AI methods, including machine learning (ML), transformer-based language
+models, and a variety of others, have emerged as promising complementary approach es to SDG
+
+===== PDF_PAGE 15 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  15
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+classification (Wulff, Meier and Mata, 2024 [37]; LaFleur, 2023 [38]; Ottaviani and Stahlschmidt, 2024 [39]).
+These methods, integrated into systems developed by organisations such as Elsevier and Aurora, have
+enhanced the ability to capture a broader range of SDG-related research outputs (Vanderfeesten, Jaworek
+and Keßler, 2022[40]; Schmidt and Vanderfeesten, 2021[41]). Aurora’s SDG classifier, for instance, is utilised
+by OpenAlex, an open-source bibliographic database (Vanderfeesten, Jaworek and Keßler, 2022 [40]).
+Since 2018, Elsevier’s SDG -specific search queries have been continuously refined using ML methods,
+improving recall while maintaining high precision (Bedard-Vallee Alexandre, James Chris and Roberge
+Guillaume, 2023[42]; Roberge and James, 2025[43]). These models are now employed in assessments such
+as the Times Higher Education Impact Rankings, which evaluate universities based on their research
+contributions toward the SDGs (Elsevier, 2022 [44]). Similarly, OSDG 2.0 combines ML models and
+ontology-based keywords to classify texts into the SDGs (Pukelis et al., 2022[45]), while also OpenAI’s GPT
+model was used alongside similarity measures to classify publications into SDGs (Yin et al., 2023 [46]).
+Additionally, Bayesian network models have been proposed as a method to explore the interrelationships
+between SDGs (Requejo-Castro, Giné-Garriga and Pérez-Foguet, 2020[47]).
+Table 2.2. SDG classification methods in the literature
+Method Selective references Description Results evaluation Advantages Limitations
+Keyword/
+ontology-
+based
+methods (A)
+(Armitage, Lorenz and
+Mikki, 2020[32]; Purnell,
+2022[33]; Schmidt and
+Vanderfeesten, 2021[41])
+Traditional method using
+Boolean searches to filter
+titles and abstracts with
+SDG-aligned keywords.
+Queries developed by
+Elsevier, Aurora, and others.
+• Scientific
+publication dataset
+with expert labels
+• High precision • Low recall
+• Struggles with
+interdisciplinary
+research
+• Context-based
+keyword variations
+AI-related
+methods (B)
+(Wulff, Meier and Mata,
+2024[37]; LaFleur, 2023[38];
+Pukelis et al., 2022[45];
+Ottaviani and
+Stahlschmidt, 2024[39];
+Vanderfeesten, Jaworek
+and Keßler, 2022[40]; Yin
+et al., 2023[46])
+Utilises machine learning
+(ML) and language models
+in supervised and
+unsupervised settings to
+classify research under
+relevant SDGs.
+• Scientific
+publication dataset
+with expert labels
+• Broad coverage
+• Multiple
+languages
+• Enhanced recall
+• Used in global
+rankings
+• Analysis of
+large datasets
+• Complexity
+• High
+computational
+resources
+Combination
+of (A) + (B)
+(Pukelis et al., 2022[45];
+Bedard-Vallee Alexandre,
+James Chris and Roberge
+Guillaume, 2023[42])
+Combine both AI-related
+methods and ontology-
+based keyword matching
+• Crowd sourcing
+• Scientific
+publication dataset
+with expert labels
+• Supports
+multiple
+languages
+• High precision
+• Still under
+development
+• Refinement for
+multilingual
+adaptation
+Note: The primary method is reported in the table and often references deploy more than one method within each category.
+Source: OECD own compilation, based on (Kashnitsky et al., 2024[8]).
+Whilst SDG classification could potentially inform resource allocation (Roy et al., 2018[48]; IPCC, 2021[49];
+IPCC, 2022[50]; IEA, 2021[51]; Borchardt et al., 2023[52]), it is not straightforward to implement for STI activity.
+Classification efforts tend to identify research content with goals . This distinction is crucia l, as current
+classifiers focus heavily on the textual content, what the research is about, but doing so, risk to miss out
+on the utility or societal relevance of the work. Upstream basic research is difficult to assess based on
+content alone, as its goal relevance might not be immediately obvious. Several recent classifiers rely on
+text-based methods that classify research based on abstracts or textual descriptions of the work, with
+expert bibliometricians’ validating the results but not necessarily the research subject-experts themselves.
+While these systems provide valuable insights, they tend to systematically be on the side of caution,
+significantly understating potential relevance. The discrepancies between self -assessed relevance and
+automatic text -based classification underscore the need for clearer formulations of relevance
+measurement objectives and the effective mechanism to bring expert input into the analysis.
+
+===== PDF_PAGE 16 =====
+16  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+3.1. Classification training data
+3.1.1. OECD International Survey of Science (ISSA)
+The primary training dataset to build the SDG classifier is based on responses to the 2021 OECD
+International Survey of Scien ce (ISSA2021) (Bello and Galindo-Rueda, 2020[53]; OECD, 2024[54]; OECD,
+forthcoming[55]). The survey collected data from over 3 000 scientific researchers, who were asked a range
+of questions on working conditions, societal engagement and research relevance, career prospects, and
+other topical subjects like the impact of the COVID -19 pandemic (OECD, 2024 [54]). Under the societal
+engagement and resea rch relevance theme, g iven widespread awareness of the SDG framework,
+respondents were asked about the most relevant SDG for their research activity. The question put forward
+was the following: “You may be aware of the United Nations Sustainable Developmen t Goals (SDGs) set
+in 2015 by the United Nations. In your opinion, does your work relate, directly or indirectly, to any of the
+following goals? Please select the most relevant SDG”. Respondents were able to select only one of the
+17 SDGs or the option of “Not relevant towards any SDG”. Close to 95% of participants (2 911 individuals)
+responded to the question . While ISSA2021was not designed to be representative of a given research-
+connected population, as it used non probabilistic sampling methods, its value for the present study stems
+from its ability to provide an SDG labelled database for research purposes through record linking .
+Accordingly, ISSA2021 is primarily used as a labelling instrument (via record-linkage to publications) rather
+than a vehicle for population inference.
+3.1.2. Scopus bibliometric database on scientific publications
+From the 2 911 individuals that responded to the research SDG relevance question, approximately 75%
+of the respondents (2 171 individuals) were matched to their author profiles in the Scopus custom database
+(v. January 2024) through ORCID IDs, enabling the obtention of information about the research conducted
+by respondents. Table 3.1 outlines the number of respondents to the 2021 ISSA survey, which responded
+to the SDG relevance question and were matched as publication authors to Scopus by each SDG.
+The matched distribution highlights that 26% of the respondents selected SDG 3 (Good health and well -
+being) as the most relevant SDG for their research, followed by 14% for SDG 9 (Industry, innovation, and
+infrastructure), and approximately 13% for SDG 4 (Quality education). Analysis of the responses by
+authors indicating SDG 4 (Quality education) as objective reveal that these do not necessarily correspond
+to research on education but to scholarship -driven research. This goal is more commonly reported by
+researchers in Higher Education , who have teaching duties, involved in basic research and especially in
+the fields of Arts and Humanities and Soc ial Sciences. Approximately 8% of respondents indicated that
+the research is not directly relevant to the 17 SDGs. This is then followed by SDG 7 (Affordable and clean
+energy) with 6%, and SDG 12 (Responsible consumption and production), SDG 15 (Life on land) and SDG
+13 (Climate action) with 5% each. Socially oriented SDGs, such as SDG 5 (Gender equality), SDG 17 (No
+3 Data sources for assessing
+relevance
+
+===== PDF_PAGE 17 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  17
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+poverty reduction), and SDG 1 (No poverty), were less frequently selected, each accounting for about 1%
+of responses. The record linking exercise does not appear to have a material impact on the distribution of
+SDGs, with some relative differences (e.g., record linking increases the relative role of SDG 3 by 3 points,
+while it reduces that of SDG 4 Education by 2 points). Whilst the ISSA survey was not designed for scientific
+researchers alone, this appears to be the dominant group given the high matching rate. A broader ranging
+survey that had captured a higher percentage of researchers in business would probably have resulted in
+a higher SDG 9 share, and record linking to scientific publications then would have reduced that percentage
+in the labelled database.
+Table 3.1. Most relevant SDG reported by 2021 ISSA respondents engaged in research activities
+SDG
+no.
+SDG label ISSA2021
+respondents
+Share (%) ISSA2021 respondents
+matched to Scopus
+Share
+(%)
+3 Good health and well-being 675 23.2 566 26.1
+9 Industry, innovation, and infrastructure 419 14.4 307 14.1
+4 Quality education 431 14.8 276 12.7
+7 Affordable and clean energy 146 5.0 130 6.0
+12 Responsible consumption and production 136 4.7 115 5.3
+15 Life on land 116 4.0 105 4.8
+13 Climate action 124 4.2 98 4.5
+11 Sustainable cities and communities 109 3.7 76 3.5
+14 Life below water 84 2.9 73 3.4
+6 Clean water and sanitation 59 2.0 54 2.5
+2 Zero hunger 60 2.1 51 2.3
+10 Reduced inequalities 67 2.3 41 1.9
+8 Decent work and economic growth 72 2.5 36 1.7
+16 Peace, justice, and strong institutions 69 2.4 30 1.4
+5 Gender equality 57 1.9 26 1.2
+17 Partnership for development 27 0.9 16 0.7
+1 No poverty 20 0.7 7 0.3
+0 Not relevant to any SDG 240 8.2 164 7.6
+Total 2 911 100.0 2 171 100.0
+Note: The table shows the SDG relevance distribution (profiles across the 18 SDG relevance options - 17 SDGs and none) among ISSA2021
+respondents to the SDG item (94% of all respondents), and among those, those who were successfully matched as publication authors to their
+respective Scopus Author (75% of the total response).
+Source: OECD analysis of the 2021 OECD International Survey of Science (ISSA).
+Over the period 2000 –21, over 11 000 publications authored or co -authored by these respondents were
+retrieved from Scopus using their matched Scopus author profile. Each publication was labelled according
+to the most relevant SDG (or alternatively, no SDG relevance) as reported by the linked author in the
+survey, providing the foundation for the training dataset.
+3.2. Classification evaluation data
+3.2.1. OpenAlex database on scholarly metadata
+OpenAlex is an open scholarly metadata database that aggregates metadata on a wide variety of research
+outputs, including articles, books, datasets, and dissertations, while capturing relationships among authors,
+institutions, and citations . OpenAlex provides automated SDG classifications of scientific publications,
+generated through a machine learning transformer-based model developed by the Aurora Universities
+Network (Vanderfeesten, Jaworek and K eßler, 2022 [40]). The OpenAlex SDG Classifier is based on a
+
+===== PDF_PAGE 18 =====
+18  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+multilingual BERT (mBERT) model, which estimates the relevance of research outputs to each of the 17
+SDGs using textual content such as titles and abstracts. Research outputs are tagged with SDG labels
+when the model assigns a prediction score above a defined threshold (0.4 0). The OpenAlex SDG labels
+are compared with ISSA2021 researchers’ self-assessed SDG relevance. The comparison of machine-
+assigned labels to self -reported SDG classificatio ns provides insights into the correspondenc e o f
+automated text-based approaches in capturing the intended societal orientation of scientific research.
+3.2.2. OSDG community dataset on SDG-labelled text excerpts
+The OSDG community dataset is a public dataset that contains SDG-labelled text excerpts, coming from
+various sources, such as reports, policy documents, and scientific publication abstracts, with contributions
+from over 1 400 volunteers (OSDG; UNDP IICPSD SDG AI Lab; PPMI, 2024[56]). The OSDG dataset does
+not contain only text from research -focused content, but other related content (policy, news etc.), which
+makes the out -of-sample test also an out -of-corpus test, i.e., evaluating the SDG classification model’s
+ability to generalise across different types of text. Each text in the OSDG dataset is evaluated based on its
+relevance to one SDG and validated by at least 3 volunteers (Pukelis et al., 2022[45]). To ensure that the
+trained SDG classification model is evaluated using high -confidence data, the OSDG dataset is used as
+an out-of-sample evaluation test, using only those texts: (i) with perfect agreement among volunteers (i.e.,
+100% agreement); (ii) without negative labels (rejections); and (iii) that 5 or more volunteers have agreed
+with the SDG label.
+3.3. Analysis data
+3.3.1. OECD Fundstat database on R&D funding awards
+Fundstat is a novel data infrastructure focused on R&D funding awards developed by the OECD for
+analytical purposes. Administrative data on government R&D project funding offer potential for international
+comparative analysis (OECD, 2015 [1]). Award -level data , containing both quantitative (funding) and
+qualitative information (projec t/activity descriptions) are collected, maintained and often published by
+funding bodies for accountability and transparency. Their international compilation and analysis can
+provide insights into the ex-post directionality of government R&D funds allocate d at project or equivalent
+level, with varying levels of robustness that depend on factors such as the extent to which award/project -
+based funding is representative of public funding R&D within a country as well as the degree of availability
+and completeness of available records. Fundstat has been used for the analysis of R&D funding for AI and
+to address the COVID-19 pandemic (Aristodemou et al., 2023[3]; Yamashita et al., 2021[2]).
+The version of Fundstat (v. 2024) used for this paper comprises data on government R&D funding awards
+for R&D and innovation funding bodies in 19 OECD countries (Australia, Austria, Belgium, Canada,
+Czechia, Estonia, Finland, France, Germany, Japan, Ireland, Latvia, Lithuania, Norway, Portugal, Sweden,
+Switzerland, the United Kingdom, and the United States) and the European Union (EU) – European
+Commission (EC) programmes from 2015 onwards, which have made data available for the analysis
+through either open and restricted channels. Coverage varies widely across countries and sectors,
+depending on factors such as:
+• The relative share of funding allocated via competitive projects vs. institutional block grants.
+• The availability and openness of administrative R&D and innovation funding data from national and
+regional agencies and organisations.
+• The extent of project data/metadata completeness (e.g., funding amount, project description).
+
+===== PDF_PAGE 19 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  19
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Table 3.2. R&D funding in the OECD Fundstat database, 2015-2023
+Country/
+area
+R&D
+project
+awards
+(Of which)
+with missing
+funding
+information
+R&D
+Funding
+(USD PPP
+million)
+Award size
+(USD PPP
+million per
+project)
+GBARD
+Coverage
+2021 (%)
+Selected factors contributing to reduced
+coverage (e.g., missing funding bodies,
+programmes, funding types, etc.)
+AUS 37 731 169 23 530 0.63 72 • Mission R&D programmes
+AUT 9 968 1 175 6 580 0.75 46 • Austrian Research Promotion Agency (FFG)
+• Climate and Energy Fund
+• Institutional funding (e.g., OEAW, ISTA, LBS)
+BEL 58 802 16 603 8 169 0.19 22 • Institutional funding
+CAN 354 864 3 679 55 776 0.16 95 -
+CHE 37 625 1 060 15 712 0.43 49 • Institutional funding
+CZE 16 287 1 253 15 836 1.05 61 • Czech Science Foundation (CSF)
+• Institutional funds (Czech Academy of Science)
+DEU 80 418 476 85 059 1.06 37 • German Research Foundation (DFG)
+• Agency for Renewable Resources (FNR)
+• Federal Office for Agriculture and Food (BLE)
+• Federal Ministry of Defence (BMVg)
+• Institutional funding (e.g., MPS, FhG, HGF)
+EST 5 385 240 1 562 0.30 72 • Institutional funding
+EU-EC 159 096 12 723 208 327 1.42 - • No EC GBARD available for comparison
+FIN 5 203 33 2 462 0.48 28 • Government research institutes
+• Institutional funding
+FRA 25 674 1 535 26 870 1.11 20 • Institutional funding
+• EPST (e.g., CNRS, INSERM, INRIA)
+• EPIC (e.g., CEA, ONERA, BRGM)
+GBR 104 328 39 411 85 850 1.32 96 -
+IRL 8 986 5 486 2 727 0.78 40 • Enterprise Ireland
+• IDA Ireland
+• Teagasc
+• Institutional funding
+JPN 294 889 8 902 91 287 0.32 5 • Agencies (e.g., JST, NARO, JAXA)
+• Institutional funding (e.g., RIKEN, NIMS, AIST)
+• R&D programmes (e.g., Moonshot, SIP, WPI)
+LTU 864 3 295 0.34 39 • Institutional funding
+LVA 10 325 1 887 3 575 0.42 100 -
+NOR 16 845 702 9 306 0.58 58 • Institutional funding
+• Innovation Norway
+• Enova
+PRT 27 498 1 014 4 675 0.18 83 -
+SWE 36 738 1 610 13 856 0.39 71 • Institutional funding
+• Swedish Environmental Protection Agency
+• Sector specific agencies
+USA 856 150 26 480 834 806 1.01 70 • Part of Defence R&D not reported as projects
+• Govt. intramural R&D not covered by project
+funds
+Total 2 147 676 124 441 1 496 262 0.74 51
+Note: Ordered in alphabetical order of column “Country/area”. Percentage coverage (%) of R&D funding in the OECD Fundstat database by
+country quantifies the proportion of R&D funding accessible within that country’s R&D data sources (Table A.1) in the form of R&D project
+awards, relative to the country’s Government Budget Allocations for R&D (GBARD) , excluding the General University Funds (GUF) (OECD,
+2025[57]; OECD, 2025 [58]). The reference year 2021 represents the most recent period for which both Fundstat and GBARD offer high
+completeness and granularity. The calculation of award size (in USD PPP million per project) excludes projects with missing or nil funding
+information. For Belgium (BEL), data on total R&D projects and funding is provided by the Belgian Science Policy Office (BELSPO), and by the
+Department of Economy, Science, and Innovation (EWI) of the Flemish government.
+Source: OECD analysis of the Fundstat database (v.2024) and the Main Science and Technology Indicators (MSTI) database (OECD, 2025[57]).
+
+===== PDF_PAGE 20 =====
+20  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Table 3.2 reports on the within country coverage of the Fundstat database, providing information on key
+factors impacting on the representativity of the available data. Coverage is calculated as the share of R&D
+funding captured in Fundstat relative to each country’s Government Budget Allocations for R&D (GBARD),
+excluding General University Funds (GUF). This benchmark focuses the compar ison on the theoretical
+portion of public R&D funding that could be at best traced through project-level funding records. In 2021,
+the most recent year f or which GBARD data offer high completeness and granularity and Fundstat data
+show stability in terms of completeness and no truncation, Fundstat captures approximately 51% of the
+targeted government R&D funding across the 19 participating countries. Country -level coverage varies
+widely, from high project traceability in the United Kingdom (96%) and Canada (95%), to low coverage in
+Japan (5%), France (20%), and Germany (37%). Countries with high coverage tend to strongly rely on
+competitive project -based funding . The use of centralised and open data reporting systems also
+contributes to observed differences . In contrast, countries with dominant institutional R&D models where
+large public research performing organisations such as CNRS or Fraunhofer receive direct block funding
+are relatively poorly covered in Fundstat. In addition to structural funding pattern s, gaps in data provision
+also reduce coverage, several R&D funding and innovation bodies or ministries missing from the data
+sources in Fundstat (Table A.1). Incomplete data at the project level, another factor influencing reduced
+data coverage, is relatively limited: less than 1% of project awards ( 19 385 out of over 2.1 million) lack
+textual information in either the title or description, while about 7% of project awards (124 441 out of over
+2.1 million) have no available funding information. These entries are typically linked to internal
+amendments, disclosure controls, or administrative placeholders and are excluded from average award
+size calculations.
+To interpret Fundstat outputs appropriately, thematic benchmarking is conducted, comparing the
+distribution of funding across a selection of societal goals in Fundstat and GBARD, identifying potential
+alignment or divergence in R&D funding priorities (see Annex A). Fundstat represents a growing effort to
+increase transparency and analytical depth in the measurement of public R&D funding. While li mitations
+in coverage persist, it complements traditional indicators by providing insight into the granular composition,
+directionality, and relevance of public R&D funding.
+3.3.2. Scopus bibliometric database on scientific publications
+In addition to its role in training the SDG classification model, the Scopus bibliometric database also serves
+as a core analysis dataset for the large -scale application of the classifier. Once the SDG classifier was
+trained using labelled data from the OECD 2021 ISSA survey, it was used to predict the SDG relevance of
+all scientific publications indexed in Scopus between 2000 -2022. Each publication record includes
+structured bibliographic textual information such as titles, abstracts, which serve as input to the classifier
+that generates probabilistic predictions of relevance to each of the 17 SDGs and the No relevance label.
+
+===== PDF_PAGE 21 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  21
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+This section describes the methodology and evaluation techniques adopted in the development of a novel
+classifier for assessing the relevance of R&D to societal goals, taking the UN SDGs as a reference
+framework. This new machine learning classifier , drawing on self-assessments of research relevance by
+scientific authors in the OECD International Survey of Science (ISSA2021) (Section 3.1.1) and textual
+content in scientific publications from the Scopus database (Section 3.1.2), predicts the SDG classification
+of R&D funding awards in the OECD Fundstat database and scientific publications.
+4.1. Model development
+Inferring information about R&D goals from scientific technical documents involves the analysis and
+classification o f specialised scientific language that contains highly technical terminology, discipline -
+specific jargon, and complex sentence structures that differ from general language (Dan Clark et al.,
+2023[59]). Furthermore, conceptual differences between R&D content and goals potentially served by the
+R&D activities also need disentangling . The SDG classification developed in this study relies on
+transformer-based language models, which underpin many of today’s large language models (LLMs ) and
+constitute an integral part of natural language processing (NLP), a branch of artificial intelligence (AI) that
+focuses on the interaction between computers and human languages (Jurafsky and Martin, 2023[60]). NLP
+enables machines to process, analyse, and generate human language in a manner that is meaningful
+(Box 4.1).
+Model development involved two main steps: training and validation. Training a model requires “teaching”
+it to recognise patterns in labelled data so it can make predictions on unseen data. Once the model was
+trained, its performance and generalisability were assessed based on an unseen (validation) data set. The
+dataset for training and validation came from the 2021 OECD ISSA survey (Section 3.1.1), where the
+scientific publications of the matched ISSA respondents to the Scopus author profiles had been labelled
+according to the 17 SDGs and a “No SDG relevance” label. The dataset contained 11 719 scholarly articles
+(OECD, forthcoming[55]). To account of possible changes in relevance of keywords and textual content in
+scientific domains over time and the concentration of the ISSA respondents’ scientific publication activity
+in the years 2016-20, the dataset was limited to the 2010-2021 period. The dataset was then split into the
+training set and the validation set consisting of 1 000 observations (Annex B). This split is essential to
+monitor overfitting and to evaluate how well the model generalises to unseen data. The text dataset was
+then tokenised using SciBERT’s tokeniser, and each article’s SDG labels were one-hot encoded.
+The SciBERT model for multi -label classification (Beltagy, Lo and Cohan, 2019 [61]) was fine-tuned using
+transfer learning to predict the SDG for each article based on its content (Church, Chen and Ma, 2021[62];
+Wang and Chen, 2022[63]; Pan and Yang, 2010 [64]). While the underlying training data structure reveals a
+single most relevant SDG per respondent, rather than responses to 17 different SDG questions, multi-label
+classification (i.e., SDG by SDG prediction) was applied following other related literature (Vanderfeesten,
+Jaworek and Keßler, 2022 [40]; Kashnitsky et al., 2024[8]). In multi-label classification, the model assesses
+4 Developing a new classifier for the
+relevance of R&D to goals
+
+===== PDF_PAGE 22 =====
+22  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+the likelihood of each SDG being relevant to the p roject without considering the presence or absence of
+other SDGs, assuming that each label's probability is independent of the probabilities for other labels. To
+reconcile the different predicted probabilities for each SDG, a post -prediction ad hoc normali sation was
+applied. The raw probabilities of the 18 labels (17 SDGs and the “No SDG relevance” option in the survey)
+were re-scaled to sum to one, producing a normalised probability distribution across these 18 labels. This
+makes it possible to interpret these probabilities as relative weights of the project's contribution to each
+SDG and use them to apply R&D funding to different SDGs on a fractional basis to ensure additivity .
+Box 4.1. Language models for societal goals classification
+Transformer-based language models are pre -trained on large corpora of text data, and during this
+process, they learn general language patterns (Vaswani et al., 2017[65]; Lecun et al., 1998[66]; Devlin
+et al., 2019[67]). They can then be fine -tuned on specific tasks or domains, which leads to improved
+performance in areas like scientific text classificati on. A well -known example is the Bidirectional
+Encoder Representations from Transformers (BERT) and its specialised variants like SciBERT , which
+have enabled machines to understand context, and handle domain -specific language. While BERT is
+pre-trained on general text data such as Wikipedia, its variant SciBERT is trained on a corpus of 1.14
+million scientific papers from Semantic scholar. This makes SciBERT effective for tasks that involve
+academic articles, because of its specialised vocabulary focusing on scientific terminology and
+structures (Beltagy, Lo and Cohan, 2019 [61]). SciBERT’s training on scientific literature enables it to
+better handle the technical vocabulary found in academic research (Ambalavanan and Devarakonda,
+2020[68]). For example, when analysing a scientific publication on advanced materials for renewable
+energy, a general language model might misinterpret the content due to its unfamiliarity with terms like
+“photovoltaic efficiency” or “perovskite solar cells”. On the other hand, SciBERT is better suited to grasp
+these scientific terms and correctly classify the article under SDG 7 (Affordable and clean energy).
+Using SciBERT has many advantages:
+• Domain-specific training: Unlike general language models, SciBERT has been trained on
+scientific texts, making it more adept at understanding specialised terminology.
+• Contextual understanding: The transformer architecture allows SciBERT to understand not just
+the meanings of words, but also their relationships across sentences and paragraphs.
+• Efficient fine-tuning: SciBERT is already pre-trained on general scientific texts, so fine-tuning it
+for SDG classification is faster and computationally efficient than training a model from scratch.
+Source: OECD own compilation.
+A challenge in this classification task is the imbalance of SDG labels. Some SDGs, such as SDG 3 (Good
+health and well -being), are more represented than others, such as SDG 5 (Gender equality). Training a
+model on an imbalanced dataset could lead to poor performance on the under -represented SDGs
+(Johnson and Khoshgoftaar, 2019[69]). To counter this, two strategies were employed:
+• Class weights: Class weights were computed based on the frequency of each SDG. By inversely
+scaling the weights accordi ng to the label frequencies, the model focuse d more on under -
+represented classes during training (Cui et al., 2019[70]; Hu et al., 2025[71]). The use of class weights
+ensured the model did not become biased toward s the frequent classes and paid equal attention
+to under-represented SDGs.
+• Focal loss: The focal loss gave higher importance to misclassified examples, helping the model to
+focus on hard -to-classify instances, by modifying the standard cross -entropy by down -weighting
+well-classified examples and focusing more on difficult ones (Lin et al., 2017[72])
+
+===== PDF_PAGE 23 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  23
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+The model was trained through an iterative optimisation process where its internal parameters ( network
+weights) are updated in response to the prediction error computed by the loss function. Each complete
+pass through the training dataset is known as an “epoch” (LeCun, Bengio and Hinton, 2015[73]). Throughout
+training, the model aimed to minimise the discrepancy between its predictions and the true targets. Model
+performance and generalisability were assessed on a separate validation dataset (not seen during training)
+using standard metrics: accuracy, precision, recall, F1 score, and ROC AUC (Aristodemou, 2020[74]).
+At the end of training, the training loss, which quantifies the model’s prediction error on the training data,
+was 0.003, while the validation loss, which quantifies the model’s prediction error on the validation data,
+was 0.058, suggesting a slight overfit with the moderate difference showing that the model generalises
+acceptably. The resulting precision score was 0.73, meaning that 73% of the SDG predictions classified
+as relevant by the model were indeed correct. The recall score was 0.57, meaning that approximately 57%
+of true relevant SDGs were ca ptured. The F1-score, which balances precision and recall, stands at 0.64
+(64%), suggesting a fair trade -off between identifying relevant SDGs and avoiding false positives . While
+the model was effective at classifying common SDGs (as reflected by the high precision), the recall and
+the F1-score showed that there is still room for improvement to consistently capture all relevant SDG
+categories, especially less frequent SDGs. The ROC-AUC score of 0.78 (78%) indicated that the model
+systematically ranked correct predictions higher than incorrect ones , implying that it could differentiate
+between SDG s with reasonable confidence. Accuracy stood at 60%, and while this may appear as a
+modest performance, it is important to consider that t here are 18 distinct labels, many of which are often
+thematically similar and intertwined.
+4.2. Model evaluation
+4.2.1. Alignment of self-assessed with other science SDG classifiers
+Figure 4.1 compares the alignment between SDGs labels assigned by self -assessment of research
+relevance through the 2021 OECD ISSA survey and those predicted by the text -based classifier, as
+implemented in OpenAlex (Vanderfeesten, Jaworek and Keßler, 2022 [40]). This comparison covers 9 812
+(out of the 11 719) scientific publications authored by respondents to the ISSA survey that were
+successfully matched to OpenAlex via digital object identifiers (DOIs). The row-wise normalised confusion
+matrix facilitates an overview of the degree of alignment and discrepancies (Priem, Piwowar and Orr,
+2022[75]; OECD, forthcoming [55]). A confusion matrix evaluates the performance of a cl assification model
+by comparing the predicted labels to the true labels. Each row of the matrix corresponds to the actual
+classes, while each column represents the predicted classes. The diagonal elements indicate correct
+predictions, while the off -diagonal elements show misclassifications, revealing which classes are most
+frequently confused by the model. Each row represents a self-assessed SDG label, with the corresponding
+normalised values between 0 (no alignment) and 1 (highest alignment), indicating ho w publications within
+that category were labelled by the text -based system. Similarities are observed for certain SDGs: for
+example, SDGs 7, 9 and 14 demonstrate moderate agreement, indicating that both self -assessment and
+automated classification can conv erge in their identification of research relevance for some goals. At the
+same time, the matrix reveals that the two methods can yield different perspectives for other SDGs,
+especially when research is highly interdisciplinary or where relevance may be emb edded in less explicit
+textual cues. For SDGs such as 1, 5, 8, 9, 12, and 13, a greater divergence in classification outcomes can
+be observed, suggesting that each method may capture distinct aspects of research relevance.
+The presence of “no label” (NL) assignments in the text-based classifier implemented in OpenAlex provides
+a valuable perspective on SDG classification. In the OpenAlex approach, a publication is assigned NL
+when its prediction score is less than a threshold (e.g., 0.40). This is the case for 34% of publications, i.e.,
+3 348 out of 9 812 in the matched sample, which are marked with no label, and thus no SDG relevance.
+By contrast, self-assessment labels identified a lower percentage of “no label” publications, namely 8% of
+
+===== PDF_PAGE 24 =====
+24  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+publications, i.e., 780 out of 9 812 in the matched sample. This difference highlights the advantage of
+research relevance self-assessment: researchers are often able to recognise SDG relevance that may not
+be explicitly apparent in textual content alone, especially for interdisciplinary research topics.
+Figure 4.1. Comparison of SDG self-assessed classification with OpenAlex textual content
+classifier
+
+Note: Comparison of SDG classification labels assigned to a matched sample of 9 812 scientific publications. Each publication was authored by
+a respondent to the 2021 OECD ISSA survey and successfully matched to an OpenAlex record using the publication’s digital object identifier
+(DOI). For each publication, two SDG labels are compared: (i) self -assessment-based SDG label, derived from the survey respondent’s own
+indication of the most relevant SDG for their research (as reported in the ISSA survey) (OECD, forthcoming[55]); (ii) text-based SDG label from
+the automatic text SDG classification in OpenAlex (Priem, Piwowar and Orr, 2022[75]) generated automatically by the OpenAlex classifier, which
+uses machine learning and textual analysis of the publication’s content. Each row corresponds to an SDG as identified via self-assessment, and
+each column to the SDG assigned by the OpenAlex text classifier (includi ng “NL” for cases where no SDG label was assigned). Values are
+normalised within each row and range from 0 (no alignment) to 1 (highest alignment) . Individual respondents may be associated with multiple
+publications, so the same self -assessed SDG can be pr opagated to several publications from the same author from the ISSA survey . Higher
+values along the matrix diagonal reflect alignment between the two approaches, while off diagonal values indicate differences.
+Source: OECD analysis of the 2021 OECD International Survey of Science (ISSA) and OpenAlex.
+4.2.2. Evaluation with generic SDGs tagged content
+Model evaluation is the process of assessing how well a trained model performs on new, “unseen” data.
+The aim is to determine whether the model generalises well beyond the training data, ensuring it can be
+reliably used. In this case, following training an d validation, an out -of-sample test is performed on the
+OSDG community dataset. This dataset is used to evaluate the model and assess the effectiveness and
+accuracy of the SDG classifier in classifying text based on their alignment with the SDGs.
+The key issue is whether the SDG classifier reflects the actual utility of the work for SDG goals, not just its
+content. Existing classifiers rely on content-based tagging, which often fails to capture real-world research
+relevance. The SDG classifier developed as part of this study is different, leveraging self -reported
+relevance data from the ISSA2021 survey to provide a more accurate assessment of how work contributes
+to SDG outcomes. It achieves a micro -F1 score of 0.54 and a macro -F1 score of 0.47 against the OSDG
+dataset (Kashnitsky et al., 2024[8]), highlighting the added value of the relevance-based tagging (Annex B,
+Figure B.1).
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 NL
+1 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.2 0.0 0.2 0.0 0.0 0.0 0.0 0.0 0.1 0.1 0.3
+2 0.0 0.2 0.1 0.0 0.0 0.2 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.3
+3 0.0 0.1 0.3 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.4
+4 0.0 0.0 0.1 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.4
+5 0.0 0.0 0.3 0.0 0.1 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.3
+6 0.0 0.0 0.0 0.0 0.0 0.3 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.1 0.0 0.0 0.3
+7 0.0 0.0 0.0 0.0 0.0 0.1 0.3 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.5
+8 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.2 0.0 0.2 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.3
+9 0.0 0.0 0.0 0.0 0.0 0.1 0.1 0.0 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.4
+10 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.2 0.0 0.2 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.3
+11 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.3 0.0 0.1 0.1 0.1 0.0 0.0 0.2
+12 0.0 0.1 0.0 0.0 0.0 0.1 0.1 0.0 0.0 0.0 0.0 0.1 0.0 0.1 0.1 0.0 0.0 0.4
+13 0.0 0.0 0.0 0.0 0.0 0.1 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.1 0.0 0.0 0.5
+14 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.8 0.1 0.0 0.0 0.1
+15 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.4 0.0 0.0 0.2
+16 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.1 0.0 0.2 0.0 0.0 0.0 0.0 0.0 0.3 0.1 0.2
+17 0.0 0.0 0.0 0.0 0.0 0.0 0.2 0.0 0.1 0.0 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.3
+0 0.0 0.0 0.1 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.5
+SDG label based on textual content from OpenAlex
+SDG label based on responses from 2021 ISSA survey
+
+===== PDF_PAGE 25 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  25
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+The section presents the main results from the analysis of SDG relevance of R&D funding at different
+levels of aggregation (funding source, country and overall results). While R&D funding awards descriptions
+differ in many ways from descriptions of scientific research outputs in scientific publications , several
+similarities exist, including their textual language, which supports the decision to apply the same classifier
+to funding awards (Aristodemou et al., 2023[3]). In applying the SDG classifier to Fundstat and the Scopus
+databases, R&D projects and scientific publications are fractionally assigned to multiple SDGs based on
+the normalised probabilities. To minimise the extent to which changes in data coverage influence results,
+the SDG analysis focuses on the 2015-2023 period, where the coverage of Fundstat is stable.
+When reviewing these results, it is important to keep in mind that cross-country differences and limitations
+in the data coverage of Fundstat relative to GBARD (Table 3.2) may shape the identified thematic patterns
+in R&D funding. To contextualise the analysis of R&D project awards by societal goals within the OECD
+Fundstat database, a benchmark comparison with GBARD by Socio-Economic Objective (SEO) (OECD,
+2025[57]) is available in the Annex material to this report.
+5.1. Relevance of R&D funding and scientific publications towards goals
+5.1.1. Results across funding sources
+This section presents results on the relevance of R&D funding at the level of the national data sources
+(often corresponding to funding bodies) covered by the Fundstat database (see Table A.1 for the full
+descriptions of the abbr eviations used in figures and text ). Additional results on the distribution of R&D
+projects and R&D funding by SDG are presented in Annex C.
+For each data source covered by Fundstat, Figure 5.1 displays the estimated distribution of R&D funding
+by SDG group. SDG groups Prosperity and Health account for the bulk of R&D funding across most
+national data sources , followed by SDG groups Planet and Energy. The SDG group Prosperity,
+predominantly characterised by SDG 9 (Industry, innovation, and infrastructure), consistently attracts large
+R&D funding from innovation -oriented data sources, e.g., CAN_GC (45%), FIN_BF (53%),
+JPN_METI_NEDO (72%), USA_Pro curement (60%), EU -EC_Kohesio (46%) etc. The Health group,
+primarily captured by SDG 3 (Good health and well-being) dominates the R&D portfolios of health-focused
+funding bodies, with FRA_HEALTH (85%), AUS_NHMRC (80%), JPN_AMED (80%), FRA_INCA (79%),
+IRL_HBR (73%), CAN_CIHR (73%), GBR_NIHR (73%), and USA_NIH (64%). Funding towards SDG 7
+(Affordable and clean energy) is particularly salient for USA_DOE (18%), AUS_ARENA (25%), IRL_SEAI
+(23%), and FRA_ADEME (23%). R&D funding directed to the SDG group Planet, comprising SDG 13
+(Climate action), SDG 14 (Life below water), SDG 15 (Life on land), and SDG 12 (Responsible
+consumption and production) is most noticeable for IRL_SEAI (37%), followed by IRL_DAFM (34%),
+AUS_ARENA (33%), CAN_NRCan (32%), and FRA_ADEME (29 %). Other data sources with a strong
+environmental focus include NOR_RCN (23%), CAN_NSERC (22%), and EST_ETIS (23%).
+SDG Education (SDG 4) is prominent in data sources with social science funding streams, e.g.,
+AUS_BFDAT (29%), CHE_ARAMIS (22%), and IRL_RI (19%). The Peace group generally attracts lower
+5 Results
+
+===== PDF_PAGE 26 =====
+26  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+levels of R&D funding, ranging from 0% to 6% across data sources. A residual but important category is
+None, which captures the fractional share of each funding item’s probability mass that is not allocated to
+any of the 17 SDGs. Given the post -prediction normalisation step for each project’s 18 predicted
+probabilities to sum to unity, the None category reflects the residual relevance share not attributed to an
+SDG. Across the data sources, the None category accounts for approximately 1 %–8 % of R&D funding.
+Figure 5.1. SDG group distribution of R&D funding by source, 2015-2023
+
+Note: See Table A.1 for more complete details on the funding sources covered in Fundstat corresponding the abbreviations in this figure. The
+analysis excludes projects with missing or nil funding information.
+Source: OECD analysis of Fundstat database (v.2024).
+
+===== PDF_PAGE 27 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  27
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+5.1.2. Mapping the R&D funding landscape according to societal goals
+Mapping tools help investigate the structure of R&D funding devoted to different SDGs. A dimensionality
+reduction method, Principal Component Analysis (PCA) , has been applied to the estimated SDG
+probability profiles for each R&D project in the OECD Fundstat database. The mapping analysis projects
+the 18-dimensional SDG probability vector into data that can be visualised in 2 dimensions . Since each
+award is portrayed by vector with an estimated probability distribution over SDG relevance options , the
+probability values are first transformed through a centred log -ratio transformation. This normalisation
+enables the PCA to capture meaningful axes of variation in the probability structure. The PCA-reduced
+representation is then plotted in a two-dimensional map where projects with similar SDG probability profiles
+tend to orient and cluster together, while more distinct clusters are separated further away from the origin.
+Figure 5.2 depicts the resulting two-dimensional representation of the Fundstat R&D funding landscape ,
+where each point on display corresponds to an award, coloured according to its dominant estimated SDG.
+Figure 5.2. Two-dimensional structure of the R&D funding landscape according to SDG relevance
+
+Note: The two-dimensional map visualises the SDG orientation of government R&D awards with funding information in the OECD Fundstat
+database A compositional centre log ratio transform is applied to the principal component analysis performed on the probabilities predicted by
+the SDG classifier on government-funded R&D projects in the OECD Fundstat database. The PCA identifies two main dimensions as drivers of
+overall data variance, depicted as the main axes, and clusters SDGs accord ing to their commonalities and distinctiveness . The two principal
+components explain 35.5% of the variance in the original data. The coloured points represent projects assigned to their dominant SDG label .
+Clustering reflects thematic relatedness of awards. The visualisation is based on a random sample of 1 million R&D awards.
+Source: OECD analysis of the Fundstat database (v.2024).
+
+===== PDF_PAGE 28 =====
+28  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+The first two principal components of the principal component analysis (PCA) on display explain
+approximately 35.5% of the variance in the SDG relevance profiles for all awards. Principal components
+are not always straightforward to interpret as measures of specific quantities, but they help organise the
+funding landscape around key co-occurrence patterns. Several distinct clusters emerge when considering
+the spatial distribution of awards according to the dominant SDG. For instance, awards scoring highest on
+SDG 3 (Good health and well-being) form a large, cohesive block to the left/ lower left of the figure. Awards
+scoring high in SDG4 education and in “No relevant SDG” probabilities locate in the central region of the
+map, reflecting a lower degree of goal distinctiveness vis a vis the other goals. Indeed, education and
+training themes in the award descripti ons that result in SDG4 classification co-occur with awards related
+to all other SDGs.
+The top right quadrant hosts several SDGs focused on diverse aspects of environmental sustainability,
+namely SDG 12 (Responsible consumption and production), SDG 13 (Climate action), SDG 14 (Life below
+water), and SDG 15 (Life on land). The top left quadrant comprises SDG 9 (Industry, innovation and
+infrastructure) and SDG 7 (Affordable and clean energy) . The latter appears to serve as connection
+between SDG 9 and the cluster of environmental sustainability SDGs on the top right quadrant, consistent
+with the pursuit of “double dividend” projects that aim to achieve both energy transition and industrial
+innovation objectives.
+The bottom right of the chart displays the focal points of clustering for quality and inclusion-themed SDGs,
+namely SDG 1 (No poverty), the bulk of SDG 4 (Quality education), SDG 5 (Gender equality), SDG 8
+(Decent work and economic growth), SDG 10 (Reduced inequalities), and SDG 16 (Peace, justice and
+strong institutions). The location of the Zero hunger SDG in between the environmental sustainability SDGs
+and SDG 10 reveals close connections between both themes
+Like a world map, the limitations of flat 2D visualisation could be potentially overcome in higher dimensional
+spaces. F or example , a spher ical representation allowing connections between the most remotely
+positioned items would allow to show connections between bottom down located goals with those in the
+upper left, thus thematically connecting awards relevant to SDG8 on work and economic growth with those
+on SDG9 Industry. Likewise, awards relating to health would connect with environmental sustainability
+SDGs. These do not emerge in the 2D visualisations because the links are not as strong as those captured
+in the two main principal components.
+5.1.3. Profiling of funding sources by societal goals
+Using the methods and representation tools used for Figure 5.2, Figure 5.3 displays the central points for
+the different SDGs and the funding sources covered in Fundstat. Each light blue bubble in the biplot
+corresponds to SDG loadings on these two principal components and the “bubble” size is proportional to
+its share in the total amount of R&D funding in Fundstat for 2015-2023. The dark blue dots represent the
+funding bodies projected onto the very same space, whereby the coordinates of each R&D funding agency
+represent an R&D project award weighted average of the coordinates derived for th e R&D projects
+managed by the agency in this two-dimensional space. In other words, the positions of SDGs and funding
+sources are overlayed on the SDG-relevance basemap for Fundstat awards.
+The results highlight patterns of thematic R&D specialisation and orientation of funding bodies . For
+example, t he environmental sustainability space in the top right quadrant is populated by sources
+corresponding to specialised bodies such as France’s Environment and Energy Management Agency and
+Ireland’s Department of Agriculture and Sustainable Energy Authority, but there are also sources relating
+to broader goals such as Germany’s Federal Ministry of Education and Research and Lithuania’s open
+R&D projects database . Japan’s METI -NEDO, Business Finland and USA Procurement are salient
+examples of funding sources that populate the top left quadrant that hosts SDG9. Conversely, the SDG 3
+Health space is inhabited by h ealth and biomedical R&D funding agencies such as the US National
+Institutes of Health, Japan’s AMED, the UK National Institute of Health Research and France’s Ministry of
+
+===== PDF_PAGE 29 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  29
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Health. There appear to be relatively fewer funding sources located in the “Inequalities” cluster, such as
+Canada’s Social Sciences and Humanities Research Council and the Swiss National Science Foundation.
+Data sources encompassing funding for a broad range of goals cluster in the centr e of the figure, such as
+the EU Horizon programme. The US National Science Foundation, Japan’s KAKEN and UK Research and
+Innovation are also found in this space with slight differences in orientation away from health topics.
+Figure 5.3. Thematic structure and proximity of R&D funding devoted to different SDGs, 2015-2023
+Principal component analysis (PCA) biplot of estimated SDG relevance probabilities
+
+Note: The PCA is performed on the probabilities predicted by the SDG classifier on government -funded R&D projects in the OECD Fundstat
+database. The PCA identifies two main dimensions as drivers of overall data variance, depicted as the main axes, and clusters SDGs according
+to their commonalities and distinctiveness. Light blue shows the SDG loadings, and darks blue shows the data sources projected on the principal
+components space. Bubble size for the SDGs reflects the estimated share of total R&D funding for each SDG. The two principal components
+shown explain approximately 35.5% of the variance in the original dataset. Analysis limited to R&D projects with available funding information.
+Source: OECD analysis of the Fundstat database (v.2024).
+Using the same base map of awards for all Fundstat, Figure 5.4 presents for illustrative purposes the
+distribution in the SDG space of R&D project awards fo r selected bodies within the United Kingdom
+Research and Innovation (UKRI), which was presented in the previous figure as a single point. The analysis
+conveys the informational value of disaggregated analysis enabled by a micro -based map and metadata
+about the funding awards in the UKRI database.
+
+===== PDF_PAGE 30 =====
+30  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure 5.4. Visualising and comparing R&D funding portfolios for selected UKRI bodies, 2015-2023
+
+Note: The two-dimensional map visualises the orientation of government-funded R&D projects in the OECD Fundstat database with respect to
+the 17 Sustainable Development Goals (SDGs) and the category “no SDG relevance” for a selected sample of UKRI’s research councils, using
+the basemap in Figure 5.3. The light grey background shows the full population of R&D projects, while the blue dots highlight the projects funded
+by UKRI’s specific councils shown in each panel. Labels indicate the major SDGs where projects are most concentrated.
+Source: OECD analysis of Fundstat database (v.2024).
+
+===== PDF_PAGE 31 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  31
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Awards provided by the six selected bodies are highlighted in dark blue dots over the overall landscape in
+grey dots. This visualisation illustrates how the research activities of individual UKRI bodies are distributed
+across the broader landscape of SDG-related research clusters. Prominent clusters are annotated with the
+SDGs most strongly represented in each council’s portfolio. For example, Innovate UK and the Engineering
+and Physical Sciences Research Council (EPSRC) R&D projects are primarily concentra ted in the space
+occupied by SDG 9 (Industry, innovation and infrastructure), SDG 7 (Affordable and clean energy), but are
+also present more sparsely in other ar eas. For instance, Innovate UK appears to have a significant
+presence (in terms of numbers of a wards) in the Education space, through several awards that focus on
+developing technology-based learning tools, as well as in the health innovation space.
+Funding by the Biotechnology and Biological Sciences Research Council (BBSRC) and the Natural
+Environment Research Council (NERC) are principally located in the environmental sustainability space
+but differ in their specific SDG orientation and in terms of connection with health. NERC scores high on
+SDG 13 (Climate action), SDG 14 (Life below water), and SDG 15 (Life on land), whilst BBSRC on SDG 2
+(Zero hunger) and SDG 15 (Life on land) and SDG 3 (Health). The latter is indicative of multiple application
+areas for biological research . Funding provided by the Medical Research Council (MRC) is clearly
+positioned in the SDG3 space, with links to SDG4 Education. Awards provided by the Economic and Social
+Research Council (ESRC) feature across highlight ed societal dimensions, with relatively high
+concentrations in SDG 16 (Peace, justice and strong institutions) and SDG 11 (Sustainable cities and
+communities) in addition to SDG4 Education.
+Visualisation tools such as those provide in this example highlight how the goal relevance classificatio n
+analysis can be used for providing intuitive comparisons of relevance profiles that, while these may often
+confirm funding agency mandates and calls, can also illustrate complementarities, as later discussed in
+section 5.2.
+5.1.4. Experimental results by geographical areas
+While differences in data coverage by country/area in the OECD Fundstat database (Table 3.2) call for
+caution when reviewing and comparing aggregated results, these are still worth examining as they convey
+information about policy priorities in the use of discretionary project-based R&D funding
+Figure 5.5 shows that SDG 9 (Industry, innovation and infrastructure) and SDG 3 (Good health and well -
+being) account for a significant share of total R&D funding and R&D project counts over t he 2015-2023
+period across most of the economies on display. SDG 9 accounts for around 50% of R&D funding in Japan,
+and 30% in the United States and EC programmes. SDG 3 accounts for nearly 30% in the United States,
+and close to 15% in the case of Japan an d EU-EC programmes. SDG 7 ( Affordable and clean energy )
+accounts for the largest share in the R&D funding portfolio of Lithuania (11%), Germany (10%) and Norway
+(9%). Similarly to data at the level of funding source, estimates for project counts and fundin g amounts
+differ for several countries, owing to significant differences in the average funding amount per award.
+The results at SDG category level (Figure 5.6) show that the SDG groups of Prosperity and Health account
+for the largest share of R&D funding across countries (Figure 8a). Over 2015-2023, Prosperity represents
+a core priority area in the -available for analysis- R&D funding portfolios of Germany, United States, Japan,
+and EC. The share of R&D funding attributable to Prosperity ranges from 20% in Lithuania to 50% in Japan,
+while for Health this value ranges from 10% in Germany to 41% in Australia.
+
+===== PDF_PAGE 32 =====
+32  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure 5.5. SDG Distribution of Fundstat R&D project funding by country/area, 2015-2023
+
+Note: Experimental estimates. Results may not be fully comparable because of limited R&D funding coverage for specific countries in Fundstat.
+The analysis excludes projects with missing or nil funding information, which obey disclosure controls or database entries intended to register
+project modifications without funding implications.
+Source: OECD analysis of Fundstat database (v.2024).
+
+===== PDF_PAGE 33 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  33
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure 5.6. SDG group distribution of R&D project funding by country/area, 2015-2023
+
+Note: Experimental estimates. Results may not be fully comparable because of limited R&D funding coverage for specific countries in Fundstat.
+The analysis excludes projects with missing or nil funding information, which obey disclosure controls or database entries in tended to register
+project modifications without funding implications. Please refer to Table 5.1 for the definition of SDG groups.
+Source: OECD analysis of Fundstat database (v.2024).
+5.1.5. Relevance trends for R&D funding and scientific publications
+As most studies on SDG directionality for STI have been conducted on scientific publication data, it is
+pertinent to compare results for R&D funding and scientific publications . Table 5.1 shows the distribution
+of R&D projects and level of R&D funding in the OECD Fundstat database (all sources in the database) ,
+and the number of scientific publications in the Scopus database by SDG and SDG group. It is important
+to note that there are differences hampering effective comparisons between funding and bibliometric
+results, the most important of which is that Fundstat only covers a subset of OECD countries, while the
+publication analysis does not distinguish by country affiliation of authors. Analysis of the SDG relevance of
+
+===== PDF_PAGE 34 =====
+34  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+scientific publications at the level of countries using the SDG classifier is available online as part of the
+OECD Bibliometric Indicators website (OECD, 2025[76]). One salient finding is that counting projects
+(awards) or scientific publications yields SDG 3 as the largest individual SDG and Health as the largest
+SDG group with 39% of awards and 38% of publications (see also Figure 5.7). However, coun ting the
+value of funding awards yields a different picture, with SDG 9 and SDG Group Prosperity as the largest in
+terms of funding (37%), followed by Health with 29% . This reflects significant higher average value of
+funding per award under SDG9, 1.5 times as large as for any other SDG.
+Table 5.1. Estimates of R&D projects, R&D funding and scientific publications by SDG & SDG
+group
+Estimates of R&D funding for 2015-2023 and scientific publications for 2015-2022
+# Label Fundstat # R&D
+awards with
+funding info
+[2015-2023]
+Fundstat R&D
+funding (USD PPP
+million)
+[2015-2023]
+Fundstat
+average funding
+per award (USD
+PPP million)
+[2015-2023]
+All Scopus
+# Scientific
+publications
+[2015-2022]
+SDG
+9 9. Industry, innovation and infrastructure 310 582 446 660 1.44 3 805 844
+3 3. Good health and well-being 667 734 342 183 0.51 7 542 997
+4 4. Quality education 187 431 121 007 0.65 1 691 629
+7 7. Affordable and clean energy 81 351 70 120 0.86 1 781 232
+13 13. Climate action 96 051 64 703 0.67 1 196 128
+12 12. Responsible consumption and production 83 231 62 403 0.75 1 069 786
+11 11. Sustainable cities and communities 67 123 46 323 0.58 750 876
+15 15. Life on land 84 142 44 810 0.69 794 655
+2 2. Zero hunger 55 699 35 441 0.53 663 097
+5 5. Gender equality 42 548 30 765 0.64 476 363
+14 14. Life below water 43 439 30 724 0.72 489 816
+17 17. Partnerships for the goals 40 856 30 164 0.71 473 294
+10 10. Reduced inequalities 40 698 26 331 0.74 453 046
+16 16. Peace, justice and strong institutions 38 320 24 726 0.65 421 181
+8 8. Decent work and economic growth 43 653 23 093 0.65 491 365
+1 1. No poverty 29 431 20 158 0.53 311 569
+6 6. Clean water and sanitation 30 052 18 646 0.68 548 173
+0 No SDG relevance 81 233 47 012 0.62 1 429 712
+SDG group
+D Prosperity (SDGs 8, 9, 10, 11) 462 056 542 407 1.17 5 501 131
+C Health (SDGs 1, 2, 3, 5) 795 413 428 548 0.54 8 994 026
+A Planet (SDGs 6, 12, 13, 14, 15) 336 914 221 286 0.66 4 098 558
+E Education (SDG 4) 187 431 121 007 0.65 1 691 629
+B Energy (SDG 7) 81 351 70 120 0.86 1 781 232
+F Peace (SDGs 16, 17) 79 176 54 891 0.69 894 475
+G None (SDG 0) 81 233 47 012 0.58 1 429 712
+Total 2 023 574 1 485 270 0.73 24 390 764
+Note: Sorted by column “Fundstat R&D funding (USD PPP million)” in descending order. The calculation of award size (in USD PPP million per
+project) excludes projects with missing or nil funding information, which often obey to disclosure controls or database entries intended to register
+project modifications without funding implications (zero additional funding). The indicators on publications refer to all citeable publications in
+Scopus, regardless of country of author affiliation.
+Source: OECD analysis of the Fundstat database (v. 2024) and Scopus database (v. January 2024).
+
+===== PDF_PAGE 35 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  35
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Another salient result is that the estimate share of non-SDG relevant publications of 6% is higher than that
+of project awards ( 4%) and funding amounts ( 3%). Whilst this might hint that s cientific publications
+supported by institutional funds m ight exhibit lower directionality towards societal goals , further work is
+needed to confirm that this is not driven by differences in country and thematic coverage across databases.
+Figure 5.7. SDG group distribution of scientific publications and funding awards’ counts and
+values
+As a share of total Scopus database publications and R&D funding in the OECD Fundstat database
+
+Note: The calculation of award size (in USD PPP million per project) excludes projects with missing or nil funding information, which often obey
+to disclosure controls or database entries intended to register project modifications without funding implicati ons (zero additional funding). The
+indicators on publications refer to all citeable publications in Scopus, regardless of country of author affiliation.
+Source: OECD analysis of the Fundstat database (v. 2024) and Scopus database (v. January 2024).
+Figure 5.8 and 5.9 provide more detailed trend data over the 2015-2023 period at the level of SDG groups
+for the three variables, in absolute terms and as shares of all possible SDGs (include no SDG option).
+Results at the SDG level are available in Annex C. Total R&D funding increased from ca USD 112 billion
+in 2015 to close to USD 200 billion in 2023, with a short-term peak of nearly USD 224 billion in 2020 most
+likely in response to COVID-19 crisis . The increase reported in 2020 was not principally driven by a
+combined surge in R&D funding directed towards SDG 9 (Industry, innovation and infrastructure) and SDG
+3 (Health), more pronounced for the former . The share of R&D funding attributable to Prosperity goals
+increased from around 32% in 2015 to reach 39% in 2023. In contrast, total R&D project count increased
+up until 2020 and has declined since and was lower in 2023 than at the beginning of the period at slightly
+over 190 thousand awards. This appears to be related to an increased preference among funders for
+awards with higher levels of funding.
+Estimates of trends in scientific publications exhibit similar behaviour to project counts as shares of total
+publications but exhibited continuous growth . Areas like Energy, despite exhibiting strong relative growth
+in publication counts ( e.g., Energy publications grew by 38% over 2015-2023), remain marginal in terms
+of total publication share. In short, count-based indicators appear to be more stable in their goal relevance
+distribution than funding-based indicators regardless of whether these are input or output based. This
+appears to call for in depth analysis of the relationship between inputs, outputs and impacts.
+
+===== PDF_PAGE 36 =====
+36  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure 5.8. Scientific publications, R&D funding and R&D projects by SDG group, 2015-2023
+
+Note: The analysis excludes projects with missing or nil funding information, which obey disclosure controls or database entries in tended to
+register project modifications without funding implications (zero additional funding).
+Source: OECD analysis of the Fundstat database (v. 2024) and Scopus database (v. January 2024).
+
+===== PDF_PAGE 37 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  37
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure 5.9. Trends in shares of R&D funding, awards and publications by SDG group, 2015-2023
+
+Note: Fractional counts for numbers of awards and scientific publications. The analysis excludes projects with missing or nil funding information,
+which obey disclosure controls or database entries registering project modifications without funding implications (zero additional funding).
+Source: OECD analysis of the Fundstat database (v. 2024) and Scopus database (v. January 2024).
+
+===== PDF_PAGE 38 =====
+38  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+5.2. SDG R&D topics and interdependencies
+5.2.1. Topic modelling of R&D projects relevant to Energy and Planet SDGs
+In addition to the visualisation and analysis opportunities provided by the funding landscape an alysis in
+the earlier section, o ne additional key advantage of working with granular semantic data in combination
+with funding values is the ability to explore detailed R&D topics within specific areas, highlighting what are
+the issues that R&D funders are grappling with to support. In other words, what are R&D funders supporting
+through projects that are relevant to specific societal goals? As a demonstration example, this subsection
+explores the funding awards that score highly on the probability of being relevant towards Energy and
+Planet SDGs.
+A probabilistic topic-modelling methodology (Aristodemou et al., 2023[3]) was applied to the relevant subset
+of “energy and environmental” award descriptions in the OECD Fundstat database for 2020-23. The model
+was calibrated to balance thematic granularity and interpretability and achieve a manageable number of
+topics. The analysis yielded 37 latent research topics. Each R&D project’s funding is fractionally
+apportioned across these 37 topics according to the model’s normalised posterior probabilities. To ensure
+contextually relevant descriptors, topic labels are generated and refined via OpenAI’s GPT -4.5 using the
+topic generated top 10 keywords and a sample o f project titles and abstracts for each topic (OpenAI,
+2025[77]). For visualisation purposes, Figure 5.10 shows the result of implementing a subsequent Principal
+Component Analysis (PCA) on the topic probability distributions for the selected awards and plotting the
+topics. The PCA reduces th e 37‑dimensional thematic space to two orthogonal components, which
+combined account for 27.5% of the data variance.
+The first principal component , displayed on the horizontal axis in the biplot, explains about 15.0% of the
+variance in the data . Topics with h igh positive loadings on component 1 include biotechnology,
+photocatalysis, (energy efficient) neuromorphic computing and precision combustion. Negative loadings
+on this factor are found for topics such as Low-emission transportation, Green finance and Climate-efficient
+infrastructure.
+While it is not straightforward to interpret PCA factors, it might appear as if Component 1 helps distinguish
+between topics that spell out scientific evidence or technologies that are or may be relevant for societal
+energy or environmental goals, and topics that directly speak to the energy and environmental challenges
+that R&D projects aim to address , and may touch for example on issues of technology adoption and
+diffusion. It is important to note that that any specific project will potentially combine those different types
+of topics to a varying degree. This confirms that the language in project desc riptions (and in the text in
+scientific publication abstracts) may combine elements about the substance of the R&D work and their
+relevance towards societal goals.
+Turning to the second component (vertical axis), topics with p ositive loadings include Marine and
+aquaculture, Ecosystems and climate and E nvironmental and ecosystem health , whilst negative scores
+are found for Electric vehicles, Solar and battery technologies, Agroenergy and Propulsion . A somewhat
+crude interpretation would be that this dimen sion helps differentiate across environmental (top) and
+energy-(bottom) focused topics, indeed reflecting the choice made of analysing projects scoring high on
+relevance towards either . Again, any given project may contain a mix of both types of topics, but the
+emphasis will differ across the funding portfolios.
+
+===== PDF_PAGE 39 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  39
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure 5.10. Topics in R&D projects relevant to Energy and Planet related SDGs, 2020-2023
+Principal component analysis (PCA) biplot of estimated topic relevance probabilities
+
+Note: Results of topic modelling for R&D awards with high scores on energy and environmental SDG relevance. The analysis is limited to R&D
+projects with available funding information. The topic model (Aristodemou et al., 2023 [3]) identifies 37 topics. Awards are probabilistic ally
+assigned to topics based on standardised probabilities predicted by the topic model. Topic labelling has been performed using OpenAI’s GPT-
+4.5 using the topic generated top 10 keywords and a sample of project titles and abstracts for each topic. The visualisation presents the loadings
+for the 37 topics on the first two factors extracted via principal component analysis (PCA), depicted as the main axes. T he two main principal
+components explain 27.5% of the variance in the data. Bubble size reflects the estimated share of total R&D funding for each topic.
+Source: OECD analysis of the OECD Fundstat database (v.2024).
+
+===== PDF_PAGE 40 =====
+40  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+5.2.2. Interdependencies in R&D funding between SDGs
+SDG interdependencies may arise as R&D awards contribute towards multiple policy goals. One way to
+think about this is to consider how funding is distributed across projects depending on their dominant SDG
+group, and then within those projects across both dominant and other SDGs. Figure 5.11 visualises how
+the funding of R&D projects distributes across multiple SDG groups, as the areas represent the total
+volume of funding attributed to each dominant SDG group (columns of varying width) and, within those,
+how much is relevant to each SDG group (within columns with dominant SDG at the bottom).
+Figure 5.11. SDG relevance of R&D funding, by dominant SDG group in R&D awards, 2010-2023
+Distribution of funding relevance within projects’ dominant SDG groups (horizontal), as % of dominant
+
+Dominant SDG group (funding distribution proportional to width)
+Note: The Marimekko chart shows how projects principally under a SDG group contribute other secondary SDG groups. The x-axis represents
+different dominant (primary) SDG groups. The y-axis shows the relative distribution of secondary SDG groups within each dominant (primary)
+group. The analysis is limited to R&D projects with available fund ing information. How to read: Within “Health” dominated R&D awards, 26%
+(100-74%) of funding is relevant towards other SDG groups (of which 9% is Planet).
+Source: OECD analysis of the OECD Fundstat database (v.2024).
+The analysis shows there are substantial relevance synergies with R&D awards notionally under a
+dominant SDG group contributing to other SDGs. In the case of R&D projects that feature Prosperity as
+the dominant SDG group, nearly 20% of their R&D funding is directed towards goals such as Plane t and
+Health. Projects predominantly assigned to Health goals, which are the least overlapping of all, are still
+estimated to contribute to other SDGs with 26% of their funds ( 9% to the SDG group P lanet and 7% to
+Prosperity). Within funding for Planet-dominated R&D projects, 18% contributes to Prosperity and 14% to
+Health. 14% of Energy-dominated funding is oriented towards the SDG group Planet and 10% to
+Prosperity. Importantly, smaller shares of R&D funding across most (dominant) SDG groups are also
+connected to Peace-related goals, albeit at lower levels.
+
+===== PDF_PAGE 41 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  41
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+This report presents a novel method for attributing societal goal relevance to public investments in research
+and development (R&D). Using the UN SDGs as illustrative reference framework, it documents how it was
+possible to develop a conceptually relevant goal classifier for R&D activity descriptions that is informed by
+a domain-specific training database. This approach brings together the relative strengths of survey-based
+tools, different administrative data sources (both bibliographic and funding databases), and large language
+models, facilitating a balanced assessment of the relevance of R&D towards societal goals in ways that
+such methods, in isolation, cannot provide. While this paper’s approach might overstate the effective final
+contribution of R&D towards the SDGs, it s analysis provides a sound and plausible set of estimates of
+potential relevance which does not understate the foundational contribution of basic rese arch towards
+addressing major socioeconomic and environmental challenges.
+Whilst potentially not representative of the full bread th of governmental R&D funding across all countries
+in the analysis , the results provide evidence on the direction of R&D funding channelled via individually
+identifiable awards. The results help characterise the funding portfolios of R&D funding bodies, their implicit
+priorities, and provide a guide towards strategic positioning and strategy implementation.
+These results on the relevance of R&D funding are also complemented by evidence from the body of
+scientific publications, calculated using identical methods. The additional results suggest that, contrary to
+previous literature, most of the scientific literature can be deemed relevant towards SDGs, and not just the
+fraction that includes explicit language that enables a direct connection to the SDGs as they are currently
+formulated.
+The approaches developed in this paper also help spell out the advantages of working with statistical and
+administrative microdata coupled with flexible categorisation tools. The results show the potential to
+investigate what topics are being addressed under R&D projects relevant to specifi c SDGs, a particularly
+valuable form of timely STI intelligence since R&D funding precedes publications and other STI outputs.
+Furthermore, the micro -based and flexible probabilistic approach developed in this paper demonstrates
+synergies across different goals regardless of the need to produce meaningful additive breakdowns for
+funding amounts and project counts.
+This study provides experimental evidence for aligning public project-based R&D funding with societal
+goals. By combining domain -informed resear cher inputs with machine -learning classification, the study
+offers a n informed and interpretable mapping of R&D to wards societal goals. The application of the
+classifier to Fundstat and Scopus facilitates an assessment of how current R&D portfolios contribute to the
+achievement of these goals . Policymakers and funding bodies may leverage these results to identify
+possible R&D funding gaps and encourage R&D investments with multiple interconnected goals. Cross-
+country differences in the ex-ante and ex-post directionality of R&D funding towards societal goals imply
+opportunities for policy learning and international coordination.
+There are multiple possible avenues for future work by OECD and other parties. There is indeed
+considerable potential to use these methods to assist in the reporting of R&D statistics and the
+development of relevant quality guidelines . The methods develope d can add significant versatility in
+reporting beyond fixed high level classification schemas. All this requires the continued development of
+6 Concluding remarks
+
+===== PDF_PAGE 42 =====
+42  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+the Fundstat data infrastructure as the most sophisticated AI-based analysis are only as good as the
+underlying data beneath. This requires a continued distributed effort within and across countries.
+This work can also help inform the development and update of R&D classification schemas, showing
+inconsistencies, overlaps, blind spots and gaps. Standard R&D classifications need updating and stress
+testing so that they can be used with different types of data. Given the difficulties in reaching international
+consensus on R&D classification hierarchies for either socioeconomic objectives or fields of R&D , data-
+informed methods are a necessary tool to facilitate such a process.
+Furthermore, there is a significant need for practical experience in making informed decisions on the
+potential degree of automatization in AI-based model development and inference when it comes to STI
+analysis. This paper has shown that expert training input was a necessary part for the classification of
+project descriptions to societal goals, but this does not need to be the case for other features of interest.
+There are also major policy-oriented research opportunities through the e xamination of other dimensions
+of R&D activity in conjunction with societal goals. Potential areas for additional follow-on work include the
+analysis of Technological Readiness Levels (TRLs) in fund ed R&D activity, conducting deep dives on
+specific goals, assessing novelty in R&D funding and exploring emergence through new topic bursts.
+Improving data coverage and continuing to support, grow and refine AI-based classification tools will be
+necessary for further advancing the existing evidence base on the directionality of R&D funding towards
+societal goals and making STI policy more strategic, targeted, and responsive to long -term sustainability
+challenges.
+
+===== PDF_PAGE 43 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  43
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+References
+
+Ambalavanan, A. and M. Devarakonda (2020), “Using the contextual language model BERT for
+multi-criteria classification of scientific articles”, Journal of Biomedical Informatics, Vol. 112,
+https://doi.org/10.1016/j.jbi.2020.103578.
+[68]
+Aristodemou, L. (2020), Identifying Valuable Patents: A Deep Learning Approach, University of
+Cambridge, Cambridge, https://doi.org/10.17863/CAM.69403.
+[74]
+Aristodemou, L. et al. (2023), “Measuring governments’ R&D funding response to COVID-19: An
+application of the OECD Fundstat infrastructure to the analysis of R&D directionality” , OECD
+Science, Technology and Industry Working Papers, No. 2023/06, OECD Publishing, Paris,
+https://doi.org/10.1787/4889f5f2-en.
+[3]
+Armitage, C., M. Lorenz and S. Mikki (2020), “Mapping scholarly publications related to the
+Sustainable Development Goals: Do independent bibliometric approaches get the same
+results?”, Quantitative Science Studies, Vol. 1/3, pp. 1092-1108,
+https://doi.org/10.1162/qss_a_00071.
+[32]
+Bautista-Puig, N. et al. (2021), “Unveiling the Research Landscape of Sustainable Development
+Goals and Their Inclusion in Higher Education Institutions and Research Centers: Major
+Trends in 2000–2017”, Frontiers in Sustainability, Vol. 2,
+https://doi.org/10.3389/frsus.2021.620743.
+[34]
+Bedard-Vallee Alexandre, James Chris and Roberge Guillaume (2023), “2023 Sustainable
+Development Goals (SDGs) now available on Scopus”, Elsevier Data Repository,
+https://doi.org/10.17632/y2zyy9vwzy.1.
+[42]
+Bello, M. and F. Galindo-Rueda (2020), “Charting the digital transformation of science: Findings
+from the 2018 OECD International Survey of Scientific Authors (ISSA2)”, OECD Science,
+Technology and Industry Working Papers, No. 2020/03, OECD Publishing, Paris,
+https://doi.org/10.1787/1b06c47c-en.
+[53]
+Beltagy, I., K. Lo and A. Cohan (2019), SCIBERT: A pretrained language model for scientific
+text, https://doi.org/10.18653/v1/d19-1371.
+[61]
+Borchardt, S. et al. (2023), Mapping EU policies with the 2030 agenda and SDGs: fostering
+policy coherence through text-based SDG mapping, Publications Office of the European
+Union, https://doi.org/10.2760/110687.
+[52]
+
+===== PDF_PAGE 44 =====
+44  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Boudt, K., Y. Inghels and A. Spithoven (2024), Trac(k)ing the SDG 8 trajectory Trac(k)ing the
+Trajectory: Mapping Sustainable Development Goal 8 in EU-Funded Research Projects,
+Elsevier BV, https://doi.org/10.2139/ssrn.4898389.
+[36]
+Church, K., Z. Chen and Y. Ma (2021), “Emerging trends: A gentle introduction to fine-tuning”,
+Natural Language Engineering, Vol. 27/6, pp. 763-778,
+https://doi.org/10.1017/s1351324921000322.
+[62]
+Confraria, H., T. Ciarli and E. Noyons (2024), “Countries’ research priorities in relation to the
+Sustainable Development Goals”, Research Policy, Vol. 53/3, p. 104950,
+https://doi.org/10.1016/j.respol.2023.104950.
+[27]
+Cui, Y. et al. (2019), “Class-Balanced Loss Based on Effective Number of Samples”, 2019
+IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) , pp. 9260-9269,
+https://doi.org/10.1109/cvpr.2019.00949.
+[70]
+Dan Clark et al. (2023), Artificial Intelligence: Generative AI exists because of the transformer (by
+the visual storytelling team), Financial-Times, https://ig.ft.com/generative-ai/ (accessed on
+26 September 2024).
+[59]
+Devlin, J. et al. (2019), BERT: Pre-training of deep bidirectional transformers for language
+understanding, https://doi.org/10.48550/arXiv.1810.04805.
+[67]
+Elsevier (2022), Times Higher Education Impact Rankings, Scopus and SciVal,
+https://www.elsevier.com/academic-and-government/impact-rankings-data (accessed on
+25 September 2024).
+[44]
+Hajikhani, A. and A. Suominen (2022), “Mapping the sustainable development goals (SDGs) in
+science, technology and innovation: application of machine learning in SDG-oriented artefact
+detection”, Scientometrics, Vol. 127/11, pp. 6661-6693, https://doi.org/10.1007/s11192-022-
+04358-x.
+[30]
+Hu, Q. et al. (2025), “A weighted difference loss approach for enhancing multi-label
+classification”, Scientific Reports, Vol. 15/1, https://doi.org/10.1038/s41598-025-09883-2.
+[71]
+IEA (2021), Net Zero by 2050, IEA, Paris, https://www.iea.org/reports/net-zero-by-2050
+(accessed on 12 September 2024).
+[51]
+IPCC (2022), Climate Change 2022 – Impacts, Adaptation and Vulnerability, Cambridge
+University Press, https://doi.org/10.1017/9781009325844.
+[50]
+IPCC (2021), Climate Change 2021 – The Physical Science Basis, Cambridge University Press,
+https://doi.org/10.1017/9781009157896.
+[49]
+Johnson, J. and T. Khoshgoftaar (2019), “Survey on deep learning with class imbalance”,
+Journal of Big Data, Vol. 6/1, https://doi.org/10.1186/s40537-019-0192-5.
+[69]
+Jurafsky, D. and J. Martin (2023), Speech and Language Processing: An Introduction to Natural
+Language Processing, Computational Linguistics, and Speech Recognition, Pearson
+Education, https://web.stanford.edu/~jurafsky/slp3/ (accessed on 1 May 2023).
+[60]
+Kashnitsky, Y. et al. (2024), “Evaluating approaches to identifying research supportin g the United
+Nations Sustainable Development Goals”, Quantitative Science Studies, Vol. 5/2, pp. 408-
+425, https://doi.org/10.1162/qss_a_00304.
+[8]
+
+===== PDF_PAGE 45 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  45
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+LaFleur, M. (2023), Using Large Language Models to Help Train Machine Learning SDG
+Classifiers, United Nations (UN) Department of Economic and Social Affairs (DESA),
+https://doi.org/10.18356/25206656-180.
+[38]
+LeCun, Y., Y. Bengio and G. Hinton (2015), “Deep learning”, Nature, Vol. 521/7553, pp. 436-444,
+https://doi.org/10.1038/nature14539.
+[73]
+Lecun, Y. et al. (1998), “Gradient-based learning applied to document recognition”, Proceedings
+of the IEEE, Vol. 86/11, pp. 2278-2324, https://doi.org/10.1109/5.726791.
+[66]
+Lin, T. et al. (2017), “Focal Loss for Dense Object Detection”, 2017 IEEE International
+Conference on Computer Vision (ICCV), https://doi.org/10.1109/iccv.2017.324.
+[72]
+Massucci, F. and A. Seri (2022), Exploratory study understanding the SDG alignment along
+research activities and technological innovation of scoreboard companies, Joint Research
+Centre (JRC), Publications Office of the European Union, https://doi.org/10.2760/51016.
+[28]
+OECD (2025), “Analysis of the SDG directionality of scientific publications at the level of
+countries”, OECD Science and bibliometric indicators,
+https://www.oecd.org/en/data/datasets/science-and-bibliometric-indicators.html (accessed on
+4 September 2025).
+[76]
+OECD (2025), “Indicator (C_INDKNOWXGB) on R&D budget for Industry and Knowledge (SDG)
+as a percentage of total Government support”, OECD calculations based on OECD,
+Research and Development Statistics (RDS), http://oe.cd/rds, and OECD, R&D Tax Incentive,
+http://oe.cd/rdtax, Databases, https://stip.oecd.org/stats/SB-
+StatTrends.html?i=C_INDKNOWXGB (accessed on 2 September 2025).
+[23]
+OECD (2025), “Indicator (C_PLANXGB) on R&D budget for Planet and Infrastructure (SDG) as a
+percentage of total Government support”, OECD calculations based on OECD, Research and
+Development Statistics (RDS), http://oe.cd/rds, and OECD, R&D Tax Incentive,
+http://oe.cd/rdtax, Databases, https://stip.oecd.org/stats/SB-StatTrends.html?i=C_PLANXGB
+(accessed on 2 September 2025).
+[24]
+OECD (2025), “Indicator (C_SANTSOCXGB) on R&D budget for Health and Society (SDG) as a
+percentage of total Government support”, OECD calculations based on OECD, Research and
+Development Statistics (RDS), http://oe.cd/rds, and OECD, R&D Tax Incentive,
+http://oe.cd/rdtax, Databases, https://stip.oecd.org/stats/SB-
+StatTrends.html?i=C_SANTSOCXGB (accessed on 2 September 2025).
+[22]
+OECD (2025), “Indicator (C_SECXGB) on R&D budget for Security (SDG) as a percentage of
+total Government support”, OECD calculations based on OECD, Research and Development
+Statistics (RDS), http://oe.cd/rds, and OECD, R&D Tax Incentive, http://oe.cd/rdtax,
+Databases, https://stip.oecd.org/stats/SB-StatTrends.html?i=C_SECXGB (accessed on
+2 September 2025).
+[25]
+OECD (2025), “Main Science and Technology Indicators (MSTI)”, OECD Science, Technology
+and R&D Statistics, https://www.oecd.org/en/data/datasets/main-science-and-technology-
+indicators.html (accessed on 2 May 2025).
+[57]
+
+===== PDF_PAGE 46 =====
+46  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+OECD (2025), Methodology note: Measuring Distance to SDGs,
+https://www.oecd.org/content/dam/oecd/en/data/dashboards/the-oecd-hub-on-measuring-
+distance-to-sdg-
+targets/OECD%20SDG%20Hub%20Methodology%20Note.pdf/_jcr_content/renditions/origina
+l./OECD%20SDG%20Hub%20Methodology%20Note.pdf.
+[20]
+OECD (2025), “R&D spending growth slows in OECD, surges in China; government support for
+energy and defence R&D rises sharply”, Main Science and Technology Indicators, OECD
+Science, Technology and R&D Statistics, https://www.oecd.org/en/data/insights/statistical-
+releases/2025/03/rd-spending-growth-slows-in-oecd-surges-in-china-government-support-for-
+energy-and-defence-rd-rises-sharply.html (accessed on 2 May 2025).
+[58]
+OECD (2025), “Science, Technology and Innovation Scoreboard”, OECD Science, Technology
+and R&D Statistics, https://www.oecd.org/en/data/datasets/science-technology-and-
+innovation-scoreboard.html (accessed on 2 May 2025).
+[26]
+OECD (2025), The OECD Hub on Sustainable Development Goals,
+https://www.oecd.org/en/data/dashboards/the-oecd-hub-on-sustainable-development-
+goals.html (accessed on 20 June 2025).
+[21]
+OECD (2024), “Declaration on Transformative Science, Technology and Innovation Policies for a
+Sustainable and Inclusive Future”, OECD/LEGA/0501,
+https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0501 (accessed on
+10 September 2024).
+[5]
+OECD (2024), How do governments direct support for innovation? Lessons from recent OECD
+measurement and impact analysis (MABIS) work, OECD Publishing, Paris,
+https://doi.org/10.1787/c1d93d1c-en.
+[11]
+OECD (2024), “How to direct research and innovation funding and finance to address the climate
+challenge?”, Shared challenges, transformative actions, OECD Science and Technology
+Policy Ministerial, OECD Publishing, https://cdn-assets.inwink.com/693d4b04-1de5-4c06-
+808d-2f0c6b423782/6aa8eaf8-0fe5-471a-914f-f0ef810635ab?sv=2018-03-
+28&sr=b&sig=yryj3srzMRsviZhwPnpbcw%2FeEyUEe1Z4tpasPsvunJ4%3D&se=9999 -12-
+31T23%3A59%3A59Z&sp=r&rscd=inline%3B%20filename%3D%22MIN24-
+Key%2520Issues%2520Note%2520BRB%2520%28rev1%29.pdf%22 (accessed on
+30 September 2024).
+[7]
+OECD (2024), International Survey of Science (ISSA), 2024,
+https://www.oecd.org/en/data/datasets/international-survey-of-science.html (accessed on
+17 September 2024).
+[54]
+OECD (2024), “OECD Agenda for Transformative Science, Technology and Innovation Policies” ,
+OECD Science, Technology and Industry Policy Papers, No. 164, OECD Publishing, Paris,
+https://doi.org/10.1787/ba2aaf7b-en.
+[6]
+OECD (2023), Government support for business innovation: Results from measurement pilots in
+five OECD countries, https://one.oecd.org/document/DSTI/STP/NESTI(2023)3/FINAL/en/pdf.
+[9]
+OECD (2023), “OECD framework for mapping and quantifying government support for business
+innovation”, OECD Science, Technology and Industry Policy Papers, No. 160, OECD
+Publishing, Paris, https://doi.org/10.1787/f30547e7-en.
+[10]
+
+===== PDF_PAGE 47 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  47
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+OECD (2023), “The Impact of R&D tax incentives: Results from the OECD microBeRD+ project”,
+OECD Science, Technology and Industry Policy Papers, No. 159, OECD Publishing, Paris,
+https://doi.org/10.1787/1937ac6b-en.
+[13]
+OECD (2020), “The effects of R&D tax incentives and their role in the innovation policy
+mix: Findings from the OECD microBeRD project, 2016-19”, OECD Science, Technology and
+Industry Policy Papers, No. 92, OECD Publishing, Paris, https://doi.org/10.1787/65234003-
+en.
+[14]
+OECD (2019), Measuring Distance to the SDG Targets 2019: An Assessment of Where OECD
+Countries Stand, OECD Publishing, Paris, https://doi.org/10.1787/a8caf3fa-en.
+[19]
+OECD (2015), “Daejeon Declaration on Science, Technology and Innovation Policies for the
+Global and Digital Age”, OECD/LEGAL/0416,
+https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0416 (accessed on
+6 September 2024).
+[4]
+OECD (2015), Frascati Manual 2015: Guidelines for Collecting and Reporting Data on Research
+and Experimental Development, The Measurement of Scientific, Technological and
+Innovation Activities, OECD Publishing, Paris, https://doi.org/10.1787/9789264239012-en.
+[1]
+OECD (forthcoming), Science in society in times of crisis: findings from the OECD 2021
+International Survey of Science (ISSA), OECD Publishing, Paris.
+[55]
+OECD/Eurostat (2018), Oslo Manual 2018: Guidelines for Collecting, Reporting and Using Data
+on Innovation, 4th Edition, The Measurement of Scientific, Technological and Innovation
+Activities, OECD Publishing, Paris/Eurostat, Luxembourg,
+https://doi.org/10.1787/9789264304604-en.
+[12]
+OpenAI (2025), Introducing GPT-4.5, OpenAI, https://openai.com/index/introducing-gpt-4-
+5/?utm_source=chatgpt.com.
+[77]
+OSDG; UNDP IICPSD SDG AI Lab; PPMI (2024), OSDG Community Dataset (OSDG-CD)
+(2024.04) [Data set], https://doi.org/10.5281/zenodo.11441197.
+[56]
+Ottaviani, M. and S. Stahlschmidt (2024), “On the performativity of SDG classifications in large
+bibliometric databases”, https://doi.org/10.48550/arXiv.2405.03007.
+[39]
+Pan, S. and Q. Yang (2010), “A Survey on Transfer Learning”, IEEE Transactions on Knowledge
+and Data Engineering, Vol. 22/10, pp. 1345-1359, https://doi.org/10.1109/tkde.2009.191.
+[64]
+Priem, J., H. Piwowar and R. Orr (2022), “OpenAlex: A fully-open index of scholarly works,
+authors, venues, institutions, and concepts”, ArXiv, https://arxiv.org/abs/2205.01833
+(accessed on 17 September 2024).
+[75]
+Pukelis, L. et al. (2022), “OSDG 2.0: a multilingual tool for classifying text data by UN
+Sustainable Development Goals (SDGs)”, https://arxiv.org/abs/2211.11252v1 (accessed on
+11 September 2024).
+[45]
+Purnell, P. (2022), “A comparison of different methods of identifying publications related to the
+United Nations Sustainable Development Goals: Case study of SDG 13—Climate Action”,
+Quantitative Science Studies, Vol. 3/4, pp. 976-1002, https://doi.org/10.1162/qss_a_00215.
+[33]
+
+===== PDF_PAGE 48 =====
+48  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Requejo-Castro, D., R. Giné-Garriga and A. Pérez-Foguet (2020), “Data-driven Bayesian
+network modelling to explore the relationships between SDG 6 and the 2030 Agenda”,
+Science of The Total Environment, Vol. 710, p. 136014,
+https://doi.org/10.1016/j.scitotenv.2019.136014.
+[47]
+Roberge, G. and C. James (2025), “Elsevier 2025 Sustainable Development Goals (SDGs)
+Mapping”, Elsevier Data Repository, V1, https://doi.org/10.17632/p52c7d3hfs.1.
+[43]
+Romero Goyeneche, O. et al. (2022), “Mobilizing the transformative power of research for
+achieving the Sustainable Development Goals”, Research Policy, Vol. 51/10, p. 104589,
+https://doi.org/10.1016/j.respol.2022.104589.
+[35]
+Roy, J. et al. (2018), “Sustainable Development, Poverty Eradication and Reducing Inequalities”,
+in Masson-Delmotte, V. (ed.), Global Warming of 1.5°C. An IPCC Special Report on the
+impacts of global warming of 1.5°C above pre-industrial levels and related global greenhouse
+gas emission pathways, in the context of strengthening the global response to the threat of
+climate change, Cambridge University Press, https://doi.org/10.1017/9781009157940.007.
+[48]
+Schmidt, F. and M. Vanderfeesten (2021), “Evaluation on accuracy of mapping science to the
+United Nations’ sustainable development goals (SDGs) of the Aurora SDG queries”.
+[41]
+UN (2024), SDG Indicators Metadata repository, United Nations, Department of Economic and
+Social Affairs (DESA), Statistics Division, https://unstats.un.org/sdgs/metadata/ (accessed on
+27 September 2024).
+[18]
+UN (2024), The 17 Sustainable Development Goals (SDG), United Nations, Department of
+Economic and Social Affairs (DESA), https://sdgs.un.org/goals (accessed on
+18 September 2024).
+[16]
+UN (2024), UN Data Commons for the SDGs, United Nations, Department of Economic and
+Social Affairs (DESA), Statistics Division,
+https://unstats.un.org/UNSDWebsite/undatacommons/sdgs (accessed on
+27 September 2024).
+[17]
+UN (2017), 71/313. Work of the Statistical Commission pertaining to the 2030 Agenda for
+Sustainable Development, United Nations General Assembly Resolution,
+https://docs.un.org/en/A/RES/71/313.
+[15]
+Vanderfeesten, M., R. Jaworek and L. Keßler (2022), “AI for mapping multi-lingual academic
+papers to the United Nations’ Sustainable Development Goals (SDGs)”,
+https://doi.org/10.5281/zenodo.6487606.
+[40]
+Vaswani, A. et al. (2017), Attention is all you need, https://doi.org/10.48550/arXiv.1706.03762. [65]
+Wang, J. and Y. Chen (2022), “Pre-Training and Fine-Tuning”, in Machine Learning:
+Foundations, Methodologies, and Applications, Introduction to Transfer Learning , Springer
+Nature Singapore, Singapore, https://doi.org/10.1007/978-981-19-7584-4_8.
+[63]
+Wincott, C. (2024), “SDGs: how do government priorities and research interests align?”, Overton
+blog - Impact tracking, https://www.overton.io/blog/sdgs-how-do-government-priorities-and-
+research-interests-align (accessed on 10 June 2025).
+[31]
+
+===== PDF_PAGE 49 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  49
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+WIPO (2024), “Mapping Innovations: Patents and the Sustainable Development Goals”, WIPO
+Patent Analytics, https://www.wipo.int/en/web/patent-analytics/mapping-innovations-patents-
+sustainable-development-goals (accessed on 10 June 2025).
+[29]
+Wulff, D., D. Meier and R. Mata (2024), “Using novel data and ensemble models to improve
+automated labeling of Sustainable Development Goals”, Sustainability Science, Vol. 19/5,
+pp. 1773-1787, https://doi.org/10.1007/s11625-024-01516-3.
+[37]
+Yamashita, I. et al. (2021), “Measuring the AI content of government-funded R&D projects: A
+proof of concept for the OECD Fundstat initiative”, OECD Science, Technology and Industry
+Working Papers, No. 2021/09, OECD Publishing, Paris, https://doi.org/10.1787/7b43b038-en.
+[2]
+Yin, H. et al. (2023), “Leveraging Artificial Intelligence Technology for Mapping Research to
+Sustainable Development Goals: A Case Study”, https://doi.org/10.48550/arXiv.2311.16162.
+[46]
+
+===== PDF_PAGE 50 =====
+50  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Annex A. The OECD Fundstat database
+A.1. Data sources in the OECD Fundstat database
+Table A.1 provides an overview of the government R&D and innovation funding agencies with data sources
+in each country, in the 19 OECD countries and the European Union (EU) – European Commission (EC) in
+the OECD Fundstat database (v.2024). For 2015-2023, Fundstat contains approximately 2.1 million R&D
+project awards, worth approximately 1.5 billion USD PPP . Less than 1% (19 385) of the R&D project
+awards have no textual information available, in either the title or the description. About 6% (124 441) of
+the R&D project awards have no available funding information.
+Table A.1. Data sources in the OECD Fundstat database, 2015-2023
+ISO
+code
+Country Government R&D and Innovation Funding Organisation /
+Data Source
+Label used for
+abbreviation
+R&D
+project
+awards
+R&D
+funding
+(USD PPP
+million)
+AUS Australia
+
+Australian Research Council AUS_ARC 10 641 5 141
+Australian Renewable Energy Agency AUS_ARENA 399 1 014
+Department of Health and Aged Care AUS_DHAC 1 391 3 036
+GrantConnect AUS_GC 15 881 8 390
+National Health and Medical Research Council AUS_NHMRC 9 419 5 949
+AUT Austria Federal Research Database AUT_BFDAT 2 177 3 460
+Federal Ministry of Agriculture AUT_BML 1 173 n/a-
+Austrian Science Fund AUT_FWF 6 618 3 120
+BEL Belgium
+
+Flanders Research Information Space BEL_FRIS 43 220 6 135
+Belgian Science Policy Office INVENT database BEL_INVENT 15 582 2 034
+CAN Canada Canadian Institute of Health Research CAN_CIHR 26 388 2 098
+Contracts CAN_CON 972 63
+Grant Contributions CAN_GC 54 707 40 372
+Natural Resources Canada CAN_NRCan 68 71
+Natural Sciences and Engineering Research Council CAN_NSERC 197 700 8 354
+Social Sciences and Engineering Research Council CAN_SSHRC 75 029 4 820
+CHE Switzerland Administration Research Actions Management Information Systems CHE_ARAMIS 14 212 7 727
+Switzerland Swiss National Science Foundation CHE_SNSF 23 413 7 985
+CZE Czechia Technology Agency Database CZE_STARFOS 16 287 15 836
+DEU Germany Federal Ministry of Education and Research DEU_FOEKAT 80 418 85 059
+EST Estonia Estonian Research Information System EST_ETIS 5 385 1 562
+EU-
+EC
+European
+Union -
+European
+Commission
+Funding and Tenders Portal EU-EC_FTP 5 871 16 192
+CORDIS - H2020 EU-EC_H2020 34 997 99 576
+CORDIS - HORIZON EU-EC_HORIZON 8 505 39 804
+Kohesio EU-EC_Kohesio 109 723 52 754
+FIN Finland Business Finland FIN_BF 1 347 642
+Research Council Finland FIN_RCF 3 856 1 821
+FRA France French Environment and Energy Management Agency FRA_ADEME 5 995 4 821
+National Research Agency FRA_ANR 16 267 20 056
+French Agency for Food, Environmental and Occupational Health FRA_ANSES 314 74
+
+===== PDF_PAGE 51 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  51
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+ISO
+code
+Country Government R&D and Innovation Funding Organisation /
+Data Source
+Label used for
+abbreviation
+R&D
+project
+awards
+R&D
+funding
+(USD PPP
+million)
+and Safety
+Ministry of Health FRA_HEALTH 2 782 1 733
+Ministry of Health - French National Cancer Institute FRA_INCA 316 186
+GBR United
+Kingdom
+Government Grants Information System GBR_GGIS 5 023 26 094
+National Institute for Health Research GBR_NIHR 4 951 5 849
+United Kingdom Research and Innovation Gateway-to-Research GBR_UKRI 94 354 53 907
+IRL Ireland Department of Agriculture, Food and the Marine IRL_DAFM 141 98
+Health Research Board IRL_HBR 789 422
+Irish Research Council IRL_IRC 4 572 -
+Research Ireland IRL_RI 3 127 2 034
+Sustainable Energy Authority of Ireland IRL_SEAI 357 172
+JPN Japan Agency for Medical Research and Development JPN_AMED 16 894 7 940
+Japan Science and Technology Agency JPN_JST 6 222 -
+Database of Grants-in-Aid for Scientific Research JPN_KAKEN 271 643 21 170
+New Energy and Industrial Technology Development Organisation JPN_METI_NEDO 130 62 177
+LTU Lithuania OpenData LTU_OpenData 107 11
+Research Council Lithuania LTU_SPEKTRAS 757 284
+LVA Latvia Latvian Council of Science LVA_NZDIS 10 325 3 575
+NOR Norway Research Council Norway NOR_RCN 16 845 9 306
+PRT Portugal National Register of Science and Technology Funding PRT_SciProj 27 498 4 675
+SWE Sweden Swedish Current Research Information System SWE_SweCRIS 36 738 13 856
+USA United
+States
+Department of Energy USA_DOE 2 825 7 461
+National Institute of Health USA_NIH 605 341 336 214
+National Science Foundation USA_NSF 112 334 64 518
+Federal Procurement Data System USA_Procurement 96 832 344 710
+OtherGrants USA_OtherGrants 38 818 81 902
+Total 2 147 676 1 496 262
+Note: Ordered in alphabetical order of column “Country/area”, followed by “Labe l used for abbeviationl”. Each data source consists of multiple
+sub data sources. For example, UKRI ’s Gateway-to-Research (GtR) includes Innovate UK, ESRC, NERC, EPSRC, BBSRC, MRC, AHRC,
+STFC, NC3Rs, UKRI etc. The total R&D funding project awards are reported regardless of the available funding or descriptive information. For
+Belgium (BEL), data on total R&D projects and funding is provided by the Belgian Science Policy Office (BELSPO), and by the D epartment of
+Economy, Science, and Innovation (EWI) of the Flemish government. For Japan (JPN), the project counts for JPN_METI_NEDO may reflect
+programmes rather than award-level projects, due to linguistic differences in translation from Japanese to English.
+Source: OECD analysis of the Fundstat database (v.2024).
+
+===== PDF_PAGE 52 =====
+52  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+A.2. Benchmark analysis of the OECD Fundstat database
+Over different cohorts since the start of the OECD Fundstat initiative, its working database has
+progressively increased the number of sources and countries covered, enhancing its coverage of national
+government R&D funding as well . The latest available version of the OECD Fundstat database (2024
+version) displays a steady improvement in the coverage of project-level R&D funding data over the period
+2010-2023. As illustrated in Figure A.1, the weighted average coverage according to each country’s
+Government Budget Allocations for R&D (GBARD) relative to the total GBARD for the 19 OECD countries
+in the OECD Fundstat database, excluding General University Funds (GUF), increases from approximately
+27% in 2010 to nearly 51% by 2023. Similarly, when measured as a percentage of the OECD total GBARD
+(excluding GUF), coverage rose from around 22% to nearly 41% over the same period. Improvements in
+the availability and accessibility of administrative data from national funding agencies are likely reasons,
+potentially coupled with changes in funding structures that may be reducing the role of institutional funding.
+Figure A.1. Coverage of government R&D funding in the 2024 OECD Fundstat database, 2010-2023
+
+Note: Percentage coverage of R&D funding in the OECD Fundstat database by country quantifies the proportion of R&D funding accessib le
+within that country’s R&D data sources (Table A.1) in the form of R&D project awards, relative to the country’s Government Budget Allocations
+for R&D (GBAR D), excluding the General University Funds (GUF) . The OECD Fundstat database contains R&D funding project award data
+from 19 OECD countries (AUS, AUT, BEL, CAN, CHE, CZE, DEU, EST, FIN, FRA, GBR, IRL, JPN, LTV, LTU, NOR, POR, SWE, USA) and the
+European Union-European Commission’s programmes. Government Budget Allocations for R&D (GBARD) provisional and estimated data exist
+until 2024 for some countries (OECD, 2025[57]; OECD, 2025[58]).
+Source: OECD benchmark analysis of the OECD Fundstat database (v.2024).
+
+===== PDF_PAGE 53 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  53
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+A.3. Comparing the thematic orientation of R&D funding in Fundstat and GBARD
+Whilst Fundstat allows for significant granularity in its analysis of government R&D funding, the resulting
+analysis may not necessarily be representative of total funding. Thematic comparisons between Fundstat
+and GBARD must be interpreted in account of differences and limitations in data coverage and
+interpretation of directionality.
+Fundstat captures R&D funding in the form of project awards, whereas GBARD reflects the total budgetary
+intent, including institutional funding, support delegated to funding bodies for the general advancement of
+knowledge (part of which can be relevant towards goals like health or clim ate), large R&D infrastructure
+investments, and support for defence-related R&D, that are not necessarily disbursed through competitive
+or traceable project awards (OECD, 2015[1]).
+Countries differ in the extent to wh ich all major R&D funding agencies and programmes are included in
+Fundstat and the degree to which specific domains ( e.g., defence, energy, or mission-oriented initiatives)
+are visible in project award databases may differ. As of 2021, Fundstat captures approximately 51% of the
+R&D funding reported in GBARD (excluding General University Funds) across the 19 OECD countries
+included.
+To contextualise the analysis of R&D project awards by societal goals within the OECD Fundstat database
+and understand potential biases relative to official statistics, a benchmark comparison is conducted against
+Government Budget Allocations for R&D (GBARD) for cases where Socio-Economic Objectives (SEOs)
+(OECD, 2025[57]) are thematically aligned with SDGs. This is not possible for Defence which does not have
+a truly equivalent group in the SDG framework even though the Peace SDG is notionally aligned.
+Figure A.2 provides comparisons between the share of R&D funding in the Fundstat database by country
+and selected SDG thematic groups, relative to the related GBARD allocation for selected SDG related
+clusters (Table 2.1) in 2021, the latest year for which reasonably complete GBARD data was available for
+this analysis:
+• Planet (NABS01, NABS02, NABS03, NABS08, NABS124, NABS134). This thematic area appears
+to be slightly over-represented in Fundstat but without a clear pattern across countries.
+• Energy (NABS04, NABS05). This area appears to be somewhat under -represented in Fundstat.
+This may reflect that public support for Energy R&D is frequently associated with infrastructure
+investments, defence or security -linked programmes, and institutional support to public
+laboratories or utilities, which are typically not awarded as traceable project grants and therefore
+not captured by Fundstat.
+• Health (NABS07, NABS10, NABS11, NABS123, NABS133 ) appears to be systematically over-
+represented on average by a factor of 10 points.
+• Residual (NABS06, NABS121, NABS122, NABS125, NABS126, NABS131, NABS132, NABS135,
+NABS136, NABS14, NABS09, NABS12, NABS13). The residual includes industrial production and
+technology (NABS06), defence (NABS14), education (NABS09), R&D financed from general
+university funds (GUF) (NABS121, NABS122, NABS125, NABS126) and R&D financed from other
+sources than GUF ( NABS131, NABS132, NABS135, NABS136 ). In Fundstat, the SDG groups
+remaining are Prosperity, Education, Peace and none, which appear to be under-represented by
+a factor of 10 points.
+
+===== PDF_PAGE 54 =====
+54  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure A.2. Share of R&D funding by theme in Fundstat and GBARD for 19 OECD countries, 2021
+
+Note: Ordered by country alphabetical order. Government Budget Allocations for R&D (GBARD) provisional and estimated data exist until 2024
+for some countries (OECD, 2025[57]; OECD, 2025[58]). The year 2021 was selected as the reference year for comparison because it represents
+the most recent period for which both Fundstat and GBARD offer high completeness and granularity.
+Source: OECD analysis of the Fundstat database (v.2024) and the Main Science and Technology Indicators (MSTI) database (OECD, 2025[57];
+OECD, 2025[58]).
+
+===== PDF_PAGE 55 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  55
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Annex B. Supplementary methodological
+information
+Table B.1 presents the distribution of scholarly publications labelled by Sustainable Development Goal
+(SDG) relevance, based on matched author -level data from the 2021 OECD International Survey of
+Science (ISSA3). Respondents to the ISSA survey were asked to identify the SDG most relevant to their
+research (see Section 3.1.1). The ir responses were subsequently propagated to their scientific
+publications, which were identified via matched Scopus Author IDs, covering 75% of all survey
+respondents. The dataset comprises 11 719 publications spanning the period 2010 -2021, reflecting the
+most recent decade of scientific output for these researchers. It includes 18 classification labels: 17
+corresponding to the official SDGs and one “No SDG relevance”. The table shows the number of labelled
+publications split between the training dataset ( 10 719 samples) and a held -out validation dataset (1 000
+samples), used to evaluate model generalisation during model development (see Section 4.1).
+Table B.1. Distribution of labels of sustainable development goals (SDGs) across the datasets
+SDG Training
+dataset
+Validation
+dataset
+Total Share of total
+training dataset
+Share of total
+validation dataset
+Share of total dataset
+(rounded to 1 d.p.)
+1 40 4 44 0% 0% 0%
+2 370 35 405 3% 4% 3%
+3 3 006 252 3 258 28% 25% 28%
+4 1 113 103 1 216 10% 10% 10%
+5 48 5 53 0% 1% 0%
+6 248 22 270 2% 2% 2%
+7 634 44 678 6% 4% 6%
+8 143 12 155 1% 1% 1%
+9 1 387 148 1 535 13% 15% 13%
+10 153 11 164 1% 1% 1%
+11 310 34 344 3% 3% 3%
+12 502 46 548 5% 5% 5%
+13 802 87 889 7% 9% 8%
+14 340 36 376 3% 4% 3%
+15 556 55 611 5% 6% 5%
+16 50 6 56 0% 1% 0%
+17 105 13 118 1% 1% 1%
+No SDG 912 87 999 9% 9% 9%
+Total 10 719 1 000 11 719 100% 100% 100%
+Note: The table shows the distribution of publications of matched 2021 ISSA respondents to their respective Scopus Author profiles across the
+17 SDGs and the no SDG label (see Table 3.1).
+Source: OECD analysis of scientific publications of the matched respondents of the OECD International Survey of Science (ISSA 3) and the
+Scopus database (v.1.2024).
+
+===== PDF_PAGE 56 =====
+56  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Model evaluation assesses how effectively a trained model performs on new, “unseen” data. This process
+involves applying various metrics to determine whether the model can generalise beyond the training data
+and produce reliable predictions. In this context, the SDG classifier, trained using labelled research outputs
+from the OECD ISSA3 survey, is evaluated using an external benchmark: the OSDG Community Dataset
+(OSDG-CD). This provides an independent test to assess the classifier’s ability to identify Sustainable
+Development Goal (SDG) relevance in textual excerpts not used during model development (see Section
+3.2.2). The OSDG dataset consists of over 43 000 SDG-labelled excerpts, curated through crowdsourcing
+and expert validation. For evaluation, a high-confidence subset of 8 768 excerpts was selected, comprising
+only entries with full agreement (100%) among five or more volunteers and no disagreement (zero
+rejections).
+The OECD SDG classifier was applied to this dataset to predict the most relevant SDG for each excerpt.
+Its performance is summarised in Figure B.1, which presents three heatmaps measuring:
+• Precision (column-wise normalisation) , indicating the proportion of correct predictions for each
+SDG among all items predicted to belong to that SDG.
+• Recall (row-wise normalisation), indicating the proportion of correctly identified instances for each
+SDG among all true occurrences of that SDG.
+• F1 score (harmonic mean of precision and recall), providing a balanced performance measure.
+Overall, the classifier achieves a micro-averaged F1 score of 0.54 and a macro-averaged F1 score of 0.47,
+marginally outperforming existing approaches (Kashnitsky et al., 2024[8]), underlining the added value of
+research relevance-based data, as collected through the ISSA2021 self-assessment survey.
+As shown in Figure B.1 (panel b), the classifier demonstrates strong recall for several SDGs, including
+SDG 3 (Good health and well -being), SDG 4 (Quality education), SDG 9 (Industry, innovation and
+infrastructure), and SDG 15 (Life on land) , each exceeding or approaching 90%. These results indicate
+the model’s strength in detecting these goals, likely due to distinctive language patterns and abundant,
+high-quality training data. SDGs 2, 6, 7, and 16 also sho w solid recall performance. In contrast, some
+SDGs (e.g., SDG 1, 5, 8, and 12) exhibit lower recall, possibly due to overlapping thematic content or less
+clearly defined text. Precision patterns Figure B.1 (panel a), differ slightly, with SDGs 6, 9, 10, 13, 14, 15,
+and 16 showing particularly high scores. For example, SDG 6 achieves a precision of 90%, meaning the
+classifier is highly accurate when it predicts this SDG. These results suggest that when the classifier
+assigns certain SDGs, it does so with hig h confidence and low false -positive rates. The F1 score, shown
+in Figure B.1 (panel c) , provides a holistic view of classifier performance. The strongest alignment is
+observed along the diagonal, indicating correct label matches. SDGs with high F1 scores reflect both good
+recognition (recall) and precision, while lower F1 scores often reveal an imbalance , either the classifier
+frequently misses the correct label or mislabels content as belonging to that SDG. SDG 0 (No SDG
+relevance) also appears as a classi fier prediction within the OSDG dataset. From an evaluation
+perspective, the classifier very rarely assigns this label, reflecting a low tendency to predict irrelevance.
+This behaviour is consistent with the high-quality nature of the benchmark dataset, which was constructed
+to include only excerpts with strong agreement among raters.
+Performance differences across SDGs can be attributed to a mix of factors, including the clarity and
+distinctiveness of goal-related terminology, training data volume, and the presence of interdisciplinary or
+ambiguous content.
+
+===== PDF_PAGE 57 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  57
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure B.1. Out-of-sample SDG label classifier prediction on the OSDG dataset (n=8 768)
+
+Note: The OSDG Community Dataset (OSDG -CD) is a public dataset that contains SDG-labelled text excerpts, coming from various sources ,
+validated by citizen scientists with respect to SDGs. The original dataset has 43 000 text excerpts and does not contain excerpt s with labels
+SDG 17 or No SDG relevance (SDG 0). The OECD STI team restricted the sample to 8 768 text excerpts representing text with: (i) perfect
+agreement among volunteers (100%), (ii) zero negative labels (rejections), and (iii) which 5 or more volunteers have agreed with.
+Source: OECD analysis of the OECD SDG classifier with the OSDG dataset (OSDG; UNDP IICPSD SDG AI Lab; PPMI, 2024[56]).
+
+===== PDF_PAGE 58 =====
+58  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Annex C. Supplementary results
+Figure C.1. SDG distribution of R&D projects, R&D funding and scientific publications, 2015-2023
+As a share of total R&D funding in the OECD Fundstat database (19 OECD countries and EU-EC programmes)
+
+Source: OECD analysis of the Fundstat database (v.2024) and Scopus database (v.1.2024).
+
+===== PDF_PAGE 59 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  59
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure C.2. Distribution of R&D funding and R&D projects by SDG, 2015-2023
+
+Note: The analysis excludes projects with missing or nil funding information, which obey disclosure controls or database entries in tended to
+register project modifications without funding implications (zero additional funding). Refer to Table 5.1 for the definition of SDG groups.
+Source: OECD analysis of Fundstat database (v.2024).
+
+===== PDF_PAGE 60 =====
+60  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure C.3. Distribution of R&D funding by SDG & data source, 2015-2023
+
+Note: Ordered by country/area code followed by data source in alphabetical order in descending order. The analysis excludes projects with
+missing or nil funding information, which obey disclosure controls or database entries intended to register project modificat ions without funding
+implications (zero additional funding). See Annex B for data source names, and Section 5.1.1 for data source comparisons on R&D funding.
+Source: OECD analysis of Fundstat database (v.2024).
+
+===== PDF_PAGE 61 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  61
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure C.4. Distribution of R&D projects by SDG & data source, 2015-2023
+
+Note: Ordered by country/area code followed by data source in alphabetical order in descending order . The analysis excludes projects with
+missing or nil funding information, which obey disclosure controls or database entries intended to register project modificat ions without funding
+implications (zero additional funding). See Annex B for data source names, and Section 5.1.1 for data source comparisons on R&D funding.
+Source: OECD analysis of Fundstat database (v.2024).
+
+===== PDF_PAGE 62 =====
+62  ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure C.5. SDG group distribution of R&D projects by data source, 2015-2023
+
+Note: Ordered by country/area code alphabetical order in descending order. The analysis excludes projects with missing or nil fun ding
+information. See Annex A for data source names, and Section 5.1.1 for data source comparisons on R&D funding.
+Source: OECD analysis of Fundstat database (v.2024).
+
+===== PDF_PAGE 63 =====
+ASSESSING THE RELEVANCE OF R&D FUNDING TOWARDS SOCIETAL GOALS  63
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+Figure C.6. Total R&D funding, R&D projects and scientific publications by SDG, 2015-2023
+
+Note: The analysis excludes projects with missing or nil funding information, which obey disclosure controls or database entries in tended to
+register project modifications without funding implications (zero additional funding). The Elsevier’s Scopus database is constrained to publication
+articles, review articles, and conference papers.
+Source: OECD analysis of the Fundstat database (v.2024) and Scopus database (v.1.2024).

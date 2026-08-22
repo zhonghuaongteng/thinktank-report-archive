@@ -1,0 +1,1934 @@
+
+===== PDF_PAGE 1 =====
+OECD Science, Technology and Industry Working Papers
+2025/21
+Innovation policy
+transformed? Unveiling a
+new paradigm through
+natural language processing
+Jan Einhoff,
+Caroline Paunov
+https://dx.doi.org/10.1787/5ee60cb5-en
+
+===== PDF_PAGE 2 =====
+2  INNOVATION POLICY TRANSFORMED?
+
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+
+OECD Science, Technology and Industry Working Papers
+OECD Working Papers should not be reported as representing the official views of the OECD or of its
+member countries. The opinions expressed and arguments employed are those of the authors.
+Working Papers describe preliminary results or research in progre ss by the authors and are published to
+stimulate discussion on a broad range of issues on which the OECD works. Comments on Working Papers
+are welcomed, and may be sent to Directorate for Science, Technology and Innovation, OECD, 2 rue
+André-Pascal, 75775 Paris Cedex 16, France.
+
+Note to Delegations:
+This document is also available on O.N.E under the reference code:
+DSTI/STP/TIP(2023)10/REV1/FINAL
+
+© OECD 2025
+
+Attribution 4.0 International (CC BY 4.0)
+This work is made available under the Creative Commons Attribution 4.0 International licence. By using
+this work, you accept to be bound by the terms of this licence
+(https://creativecommons.org/licenses/by/4.0).
+Attribution – you must cite the work.
+Translations – you must cite the original work, identify changes to the original and add the following text:
+In the event of any discrepancy between the original work and the translation, only the text of original work
+should be considered valid.
+Adaptations – you must cite the original work and add the following text: This is an adaptation of an
+original work by the OECD. The opinions expressed and arguments employed in this adaptation should
+not be reported as representing the official views of the OECD or of its Member countries.
+Third-party material – the licence does not apply to third-party material in the work. If using such material,
+you are responsible for obtaining permission from the third party and for any claims of infringe ment. You
+must not use the OECD logo, visual identity or cover image without express permission or suggest the
+OECD endorses your use of the work.
+Any dispute arising under this licence shall be settled by arbitration in accordance with the Permanent
+Court of Arbitration (PCA) Arbitration Rules 2012. The seat of arbitration shall be Paris (France). The
+number of arbitrators shall be one.
+
+===== PDF_PAGE 3 =====
+INNOVATION POLICY TRANSFORMED?  3
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Innovation Policy Transformed? Unveiling a New Paradigm through
+Natural Language Processing
+Jan Einhoff and Caroline Paunov
+Innovation policy is changing. No longer focused solely on growth and
+competitiveness, today’s strategies increasingly address societal challenges
+such as the green transition, digitalisation, and social inclusion. This paper
+provides the quantitative evidence of this shift, analysing STI strategies from
+24 OECD countries using natural language processing techniques. It finds
+that goals linked to societal impact now make up over 40% of strateg ies’
+topics — more than twice that of traditional objectives. New policy
+approaches, including joint governance, foresight, and agility, are also
+gaining ground. This change in innovation policy is mainly driven by the
+prominence of green transition goals in strategies (18.6%), followed by social
+and regional inclusion (9.9%) and digitalisation (9.5%). New STI policy
+approaches are also prominently featured with references to joint
+governance (5.4%), policy agility (5.2%) – such as foresight and evaluation
+– and directional policy (2.3%).
+Key words: innovation and technology policy, natural language processing, topic modelling,
+JEL codes: O38, O31, O25, Q55, L52, C88
+
+===== PDF_PAGE 4 =====
+4  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Acknowledgments
+The authors would like to thank Sandra Planes Satorra, Luke Mackle, Paula Puchol Ledo, Nikolas Schmidt,
+and Isabella López Trejos, from the OECD-TIP team, for providing valuable inputs to the paper.
+The authors would also like to express their sincere gratitude to the TIP delegates for their insightful
+comments during the development of this report, as well as for their support in identifying and validating
+the documents used for the analysis.
+The authors also extend their gratitude to the speakers and participants of workshops organi sed by the
+OECD Working Party on Innovation and Technology Policy (TIP) on the topics discussed in this paper in
+2022 and 2023.
+Additionally, the authors are grateful to Andrew Paterson (OECD), Alexander Lembcke (OECD) and
+Rudiger Ahrend (OECD) for their in-depth review of the paper.
+
+===== PDF_PAGE 5 =====
+INNOVATION POLICY TRANSFORMED?  5
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Table of contents
+Acknowledgments 4
+Executive summary 6
+1 Introduction 8
+2 Conceptual framework 11
+3 Data and empirical strategy 13
+4 Findings 19
+5 Conclusions 27
+References 28
+Annex A. Pre-processing and cleaning steps for the topic modelling 31
+Tables
+Table 1. Descriptive statistics for the final database of STI policy strategy documents 14
+Table 2. Shares of coverage of all topics, themes and categories in the corpus 17
+Table 3. Share of Innovation policy 3.0 across topic number and sample variation 22
+Table 4. Share of green transition goals across topic number and sample variation 23
+Table 5. Distribution of shares of innovation policy 3.0 topics across countries 24
+Table 6. New innovation policy approaches 24
+Table 7. Examples of new innovation policy approaches from the corpus 25
+Figures
+Figure 1. Exclusivity and semantic coherence for distinct numbers of topics 16
+Figure 2. Shares of topic categories across strategies in 24 OECD member countries 19
+Figure 3. Share of topics categories across model variations 20
+Figure 4. Cross-country distribution of the shares of traditional innovation policy goals 21
+Figure 5. Cross-country distribution of the shares of innovation policy 3.0 goals 22
+
+===== PDF_PAGE 6 =====
+6  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Executive summary
+A paradigm shift for STI policy?
+In recent years, STI policies have come under increasing pressure to address a growing set of complex
+challenges, including the digital transformation, the push for environmental sustainability, and the response
+to the COVID -19 pandemic. These challenges carry significant social dimensions —such as the risk of
+labour displacement from advanced digital technologies and the rising frequency of extreme weather
+events—that are prom oting a shift in the rationale for STI policy intervention beyond exclusively
+competitiveness and productivity.
+This evolving approach, where traditional objectives are intertwined with new priorities, is referred to in the
+STI policy literature as ‘Innovation Policy 3.0’. According t o this framework, societal goals —such as
+inclusiveness and environmental sustainability —are placed at the centre of STI efforts. Innovation is no
+longer presumed to be inherently beneficial; instead, it is assessed based on its broader social and
+environmental impacts.
+However, there is still limited evidence on the extent to which countries have adopted this new strategic
+outlook and implemented it in practice —insights that are essential for assessing the current state of STI
+policy and guiding its future direction.
+Leveraging topic modelling for exploring STI policy strategies
+Capturing the global shift in STI policy is difficult with traditional qualitative methods due to the volume of
+policy documents. Topic modelling offers a scalable solution by identi fying patterns and themes across
+large text collections for expert analysis.
+Using this approach, a study of 313 STI strategies —policy frameworks outlining national priorities, goals,
+and actions in STI from 24 OECD countries, validated by national experts—examined whether the stated
+policy goals reflect a shift toward Innovation Policy 3.0 and support the adoption of new implementation
+approaches.
+The approach identified 35 distinct “topics,” where each topic represents a group of words that frequen tly
+appear together and capture a coherent theme within the documents. This allowed for analysing how often
+and where these themes occur across the entire collection of policy texts.
+Green and inclusion goals propel Innovation Policy 3.0 over digital
+STI strategies from 24 OECD countries reveal a strong move toward Innovation Policy 3.0 goals, which
+represent a 41.7% share of the 35 topics that were identified. While traditional objectives such as research,
+business innovation, and productivity remain impo rtant (18.6%), they are now clearly secondary , or
+increasingly pursued in conjunction with new imperatives for STI policy.
+
+===== PDF_PAGE 7 =====
+INNOVATION POLICY TRANSFORMED?  7
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+The green transition is the main driver of this shift (18.6% of topics) . Green transition -related content
+significantly focuses on energy generation, CO₂ emissions, and efficiency, accounting for 7.9% of the total
+mention of topics; sustainable industry accounts for 3.2%; and clean mobility accounts for 3%. However,
+biodiversity, circular economy, and climate resilience are less promin ent, suggesting that these issues
+have yet to gain traction in national STI policy documents relative to other green transition topics.
+Social and regional inclusion also emerge as a priority (9.9% share of the identified 35 topics ), ahead of
+other Innovation Policy 3.0 dimensions like health, knowledge, and technology (3.8% combined). Most
+inclusion content focuses on employment and territorial disparities , while b roader societal aspects (e.g.,
+citizen engagement, ethics, and public trust in technology) remain underrepresented.
+Digital and technological transformation goals make up 9.5% of strategy content (roughly half the focus
+given to green priorities). The relatively lower share may reflect the maturity of digital policy, where issues
+such as co mpetition, ethics, and infrastructure are increasingly addressed outside STI strategies.
+Meanwhile, green STI requires stronger policy intervention and is thus more prominent in current strategic
+thinking.
+New policy approaches are gaining ground
+Strategies also reflect growing attention to how STI policy is implemented. New approaches to STI policy
+– which are included as ‘topics’ for the purpose of the analysis – account for 12.8% of the total topics in
+the corpus. This trend shows STI strategies not just redefining what STI is for, but also how it should be
+governed and delivered.
+These k ey emerging approaches include joint governance mechanisms (5.4%) , including vertical
+coordination and stakeholder consultation ; policy agility (5.1%) , with focus on monitoring, foresight, and
+flexible adaptation; and directional policy tools (2.3%), to steer innovation toward societal outcomes.
+
+===== PDF_PAGE 8 =====
+8  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+In recent years, there has been increasing societal pressure on science, technology, and innovation (STI)
+to accelerate the digital and green transitions. The swift progress of digital technologies, such as AI -
+enabled tools, automation, and social media, has ignited debates over their potential adverse socio -
+economic effects. There is growing policy and academic focus on how governments can steer digital
+technological developments in directions that are beneficial to society (Acemoglu and Johnson, 2023 [1]),
+which follows from a growing recognition following the COVID-19 pandemic of how STI can support social
+and economic resilience beyond the traditional domains of competitiveness (Paunov and Planes-Satorra,
+2021[2]).
+Addressing the complex transitional challenges that societies face implies a major shift of innovation policy
+moving from the first generation, to the second and third. This evolution reflects changes in external drivers,
+scope, directionality and objectives, progressing from a focus on basic research to the invention of “science
+policy” and ultimately to the emergence of new policy imperatives (Grillitsch et al., 2019[3]). Systematic
+empirical evidence to date on where OECD countries’ STI policy goals stand vis-à-vis the new STI policy
+paradigm is limited.
+Despite widespread enthusiasm about STI’s role in addressing complex societal transitions, it remains
+unclear whether the content of national policy frameworks that set national priorities, goals, and actions in
+STI has substantively changed in response. This paper uses topic modelling to analyse 313 STI strategies
+across 24 OECD countries. Validated by national experts and active in 2021, these strategies are
+examined to assess whether the goals the y articulate reflect a shift toward new objectives and in the role
+of STI and whether new approaches to policy design and implementation emerge.
+The contribution of this paper to the literature is twofold. It is the first to provide systematic evidence on
+whether and how STI policy strategies reflect a new societal paradigm . This validates a large body of
+conceptual work on new STI policies (Diercks, Larsen and Steward, 2019 [4]; Asheim, Moodysson and
+Tödtling, 2011[5]; Mazzucato, 2016 [6]). Second, it demonstrates the usefulness of topic modelling for the
+toolbox of STI policy analysis and how to address core methodological challenge these as other tools also
+have. In this way, the paper anticipated the work being done in the context of the European Commission-
+OECD STIP Compass initiative, which has since begun integrating LLM-driven tools for researchers to use
+on the large corpus of policy documents the STIP Compass contains.
+Critical to the approach is methodological validation to control for sample selection. The challenge
+intensifies for international innovation policy documents due to variations in how countries address
+innovation. The number and length of STI strategy documents vary significantly across countries. Not all
+countries have standalone innovation strategies; some incorporate innovation wi thin broader economic
+and industrial strategies, necessitating the inclusion of different documents in the analysis. Sample biases
+are addressed by (i) obtaining validation by country policy experts to ensure that different country practices
+are reflected in the sample , and (ii) conducting various sensitivity tests on the sample to assess the
+robustness of the overall evidence.
+1 Introduction
+
+===== PDF_PAGE 9 =====
+INNOVATION POLICY TRANSFORMED?  9
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Subjectivity biases may also affect the analysis through the selection of labels for identified themes and
+the determination of th e number of themes . These biases are addressed by employing ChatGPT for
+systematic labelling. As to the choice of topics, exclusivity and semantics tests are applied to identify the
+optimal and cohesive number of topics, minimising the risks of excluding relevant themes. In addition, the
+number of topics is also varied to test the robustness of results and identify on that basis dominant themes.
+Seven core findings of the analysis are the following: First, evidence from a sample of 24 OECD countries
+confirms that the majority has embraced the new policy paradigm, with Innovation Policy 3.0 goals
+representing 41.7% of the topics identified in the corpus of documents. There remains a solid focus on
+traditional core issues of research and business matters connected to building productivity and growth
+(18.6%), but at less than half the importance of Innovation Policy 3.0 goals. Moreover, given strategies’
+traditional focus on formulating policy objectives rather than their implementation, that 12.8% of the topics
+in the corpus deal with new approaches to innovation policy is remarkably high . It testifies to growing
+awareness on the implementation challenges with reaching Innovation Policy 3.0 goals.
+Second, the main driver of Innovation Poli cy 3.0’s prominence in strategies is the green transition, which
+represents 18.6% of the 35 topics. Energy generation sources, CO2 emissions, and efficiency are a
+predominant theme, accounting for 7.9% of the topics. Sustainable industries ( 3.2%) and clean mobility
+(3.0%) are also targets. Absent from key themes are biodiversity, circular economy and climate resilience.
+The themes reflect lower prioritisation of certain themes in overall green transition-related policy debates.
+There are also differences across countries in the emphasis set. For instance, Japan’s strategic documents
+emphasise alternative power generation ( 7.6% vs. 2.3% for the average) , a response to the Fukushima
+nuclear accident of 2011.
+Third, digital and technological transformation goals represent about half the share of green transition goals
+(9.5%). The strong emphasis on the green transition compared to digitalisation likely results from the
+needed push in green STI. Due to swift progress on d igitalisation, by contrast, policy actions beyond STI
+on such matters as competition, ethics and infrastructures have been in high demand.
+Fourth, social and regional inclusion is about as prominent as digital and technological transformation goals
+(9.9%), ahead of health, knowledge, and technology ( 3.8%), the last and final theme within Innovation
+Policy 3.0. Within the inclusion theme , questions relate mostly to employment and regional disparities.
+Other topics related to citizens, questions about ethical impacts of technology and innovation, and wider
+issues of citizens’ interactions with STI are not yet among the core priorities of strategies. The health topic
+is directly a reflection of the COVID -19 pandemic that led to a focus on the question within STI strategies
+aside from strategies on health.
+Fifth, new approaches to STI policy reflected in strategies include joint governance ( 5.4%) - comprising
+vertical governance and consultations-, policy agility (5.1%) -with emphasis on monitoring and evaluation
+and foresight-, as well as directional policy ( 2.3%). This is noteworthy and widespread across countries,
+indicating awareness that new goals set need different approaches to implementing STI policy. A closer
+look at specific examples illustrates a rich diversity of approaches implemented by STI policy makers.
+Sixth, a robustness analysis of label accuracy across topic variations highlights the consistency and
+variability in topic representation within the strategies. Innovation Policy 3.0 is the most represented
+category, yet the analysis reveals that the 35-label model ( the baseline) slightly underrepresents its
+prevalence compared to alternative models. Traditional innovation policies and new innovation policy
+approaches vary significantly based on the R&D spending level of the countries, with lower R&D countries
+focusing more on traditional approaches. The inclusion of miscellaneous topics, despite their procedural
+nature, shows significant representation across the corpus, particularly when high-impact countries like the
+United States are excluded.
+
+===== PDF_PAGE 10 =====
+10  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Seventh, methodologically the paper shows that topic modelling can provide valuable comparative insights
+into the policy goals countries discuss in their STI strategies. The strength of this analysis is that it enables
+the identification of dominant discussions and themes across a large volume of documents, reducing
+biases associated with selective reading or purely qualitative approach es. However, topic modelling also
+necessitates extensive document preprocessing, such as the removal of stop words, and requires
+programming skills. Moreover, it relies on human decisions that may introduce subjectivity, particularly in
+selecting the number of topics and interpreting or labelling the results. Additionally, there is a risk of
+overlooking important details and nuances in policies and programmes that may not appear in the final
+topic model.
+The work relates to two strands of literature. The first is the extensive literature on Innovation Policy 3.0,
+including notably several empirical studies. This has been articulated in several contributions by Haddad
+and Bergek (2023[7]), Edler and Boon, (2018[8]), Schlaile et al., (2017[9]), Weber and Rohracher (2012[10])
+and Grillitsch et al. (2019[3]). These STI policy evaluation s rely on qualitative methods such as interviews
+and qualitative document analysis , complemented by using available quantitative indicators . The second
+strand connects to the quickly expanding literature that applies NLP, which is widely used in adjacent fields
+such as in economics (Gentzkow, Kelly and Taddy, 2019[11]) or political sciences (Benoit, 2020[12]), but has
+so far had limited application in innovation policy. In innovation-related works, NLP has also been applied
+widely to patent and publications data analysis (e.g., Arts et al. (2021[13]).
+The remainder of this article proceeds as follows. Section 2 provides a conceptual framework . Section 3
+presents the empirical strategy, the database use d, and some methodological considerations . Section 4
+presents the findings. Section 5 concludes.
+
+===== PDF_PAGE 11 =====
+INNOVATION POLICY TRANSFORMED?  11
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+According to Schot and Steinmueller (2016[14]), the development of innovation policy can be understood
+through the lens of three successive "framings" (Grillitsch et al., 2019[3]). Each framing relates to theoretical
+models that differ in the STI policy goals to be achieved, their underlying rationale and consequently the
+tools required.
+"Innovation Policy 1.0" emerged in the 1960s and was strongly influenced by neo -classical welfare
+economics and growth theories. The model of innovation in Innovation Policy 1.0 is focused on the
+discovery stage because the market may underinvest in such growth-enhancing research (Laranja, Uyarra
+and Flanagan, 2008[15]). Policy interventions in the innovation process are then considered justifiable where
+markets would not invest in basic research due to their inability to privately appropriate the wider societal
+gains from this endeavour (Howlett, Ramesh and Perl, 2020[16]). The main tool applied here is the provision
+of research funding conducted by research institutions and firms.
+During the 1980s, the second framing of innovation policy, "Innovation Policy 2.0," increasingly focused on
+systems of innovation, a “horizontal policy approach that mobilises technology, market mechanisms,
+regulations and social innovations” (OECD, 2015, p. 7[17]). The rationale for policy interventions shifted to
+system failures that emerge from missing or malfunctioning linkages between research institutions and
+firms. New instruments consequently focus on boosting industry-science linkages and knowledge transfer.
+The latest framing of STI policies – Innovation Policy 3.0 – sets societal goals at the heart of STI policy
+(Diercks, Larsen and Steward, 2019 [4]; Asheim, Moodysson and Tödtling, 2011 [5]; Mazzucato, 2016 [6]),
+beyond specific achievements within the STI field as was the case of Innovation Policy 1.0 (boosting basic
+research) and Innovation Policy 2.0 (boosting industry-science linkages). As Schot and Steinmueller (2016,
+p. 17[14]) put it, “innovation policy should focus much less on products, processes, firms, and R&D, but on
+the achievement of system s wide transformations.” The emphasis on “failures” inherent to the first two
+framings is replaced by more pro-active, purposive, and developmental approaches to innovation policies
+(Asheim, Moodysson and Tödtling, 2011[5]; Mazzucato, 2016[6]). Here, the model of innovation emphasises
+socio-technical systems and how processes of innovation and technological change are embedded in
+society. Innovations are not seen as be neficial per se but are judged by their positive or negative
+externalities for society.
+In this Innovation Policy 3.0 period, new policy imperatives for policy become essential (Arnold et al.,
+2023[18]), which are: (i) joint governance, referring to both effective coordination across different levels of
+government but also stakeholder engagement. Joint governance is needed as reaching ambitious societal
+transformation goals needs coordinated government e fforts from local to national levels and working with
+diverse actors in industry, research, government, and society. Other imperatives are (ii) building more agile
+and experimental policies , and (iii) setting policy targets to reach societal goals (directe d policy) .
+Directionality is important as coordinated action to advance STI in specific areas, particularly in green
+innovation, is otherwise not necessarily forthcoming. Furthermore, (iv) policy agility and experimentation
+are also needed as t ransitions a re complex and uncertain processes that require adaptive and flexible
+approaches. Policy experimentation allows for testing and learning from new ideas and interventions,
+essential in a new context with impacts on policies’ success. This generation of poli cies owes its
+2 Conceptual framework
+
+===== PDF_PAGE 12 =====
+12  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+emergence to the twin transition debates marked by the changes introduced by digital technologies and
+the green transition imperative.
+In conclusion, an assessment of Innovation Policy 3.0 would start by identifying the topics specified in
+countries’ STI strategies . These would be societal goals that are ambitious in nature as they look for
+transformations, notably as regards building green futures and shaping digitalisation in societally desirable
+ways. They differ from previous generations of policies that were more inward-focused, relating to business
+and research institutions and their performance, focused on productivity. They would also discuss new
+approaches to policy making.
+
+===== PDF_PAGE 13 =====
+INNOVATION POLICY TRANSFORMED?  13
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+To assess to what extent the new frame of “Innovation Policy 3.0” has been adopted, the paper examines
+national STI strategies of 24 OECD countries.
+Why strategies?
+The analysis focuses on official STI policy strategies issued by national government entities to evaluate
+whether innovation policies shifted to the Innovation Policy 3.0 paradigm. It follows Wauters (2019[19]) in
+defining strategies as: “coherent action, guided by a longer -term sense of direction, to transform value -
+generating processes, undertaken by (a network of) actors, backed by an argument.” In this definition: (1)
+strategy is inextricably related to action; (2) action must be coherent with respect to a long-term objective;
+(3) strategy is related to organising the foundational questions of what government should do (referred to
+as “value-generating processes”) and not to managing the minutiae of regular activity, which Ruegg-Sturm
+(2005[20]) distinguishes as mere “tactics”. Strategy is backed by an argument in favour of how and why it
+occurs. The argument for “why” suggests that a strategy requires an articulation of why the issues it targets
+are important. The argument for “how” relate to what Weiser et al. (2020[21]) call a “theory of change”, which
+is an understanding of how the actions in a strategy cause the desired outcomes.
+Consequently, STI strategy documents were selected for the assessment of Innovation Policy 3.0 as they
+capture governments’ value-embedded, forward-looking, and high-level goals and plans. Moreover, to the
+extent that po licy making is responsive to citizens, STI strategies should also partly reflect societal
+endorsement of the directions of STI policy.
+Database of STI strategy documents
+A total of 313 documents were gathered, representing 24 OECD countries’ STI strategie s up until 2021,
+thus covering the beginning of the COVID-19 pandemic. Strategies were identified based on their contents
+presenting forward-looking goals for future policy actions and priorities. To understand common trends,
+the country selection represen ts the variety of OECD countries across Europe and beyond. In Europe, it
+covers Northern Europe (Finland, Ireland, Sweden, United Kingdom), Western Europe (Austria, Belgium,
+Germany, Luxembourg, Netherlands, Switzerland), Eastern Europe (Hungary, Slovakia) and Southern
+Europe (Greece, Italy, Spain). It also covers North and South America (Canada, Chile, Costa Rica, United
+States) as well as Asia-Pacific (Australia, Korea, Japan, New Zealand). Within those regions, the selection
+was also based on including diverse countries, specifically regarding their sizes.
+Following an initial ide ntification of documents based on the EC -OECD STIP Compass database as well
+as other sources, policy makers from the respective governments validated the selection, identified
+documents that were erroneously included, and provided additional relevant docum ents. The approved
+document list was then used in the analysis.
+3 Data and empirical strategy
+
+===== PDF_PAGE 14 =====
+14  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+The final database is summarised in Table 1 (with the full list of documents provided in the Annex Table 3.
+List of documents analysed). The diversity in terms of total word and document counts across countries is
+substantial, likely due to different ways of issuing and drafting strategies. Also, the time period is shorter
+for countries that frequently issue new strategies replacing old ones and much longer for others.
+Table 1. Descriptive statistics for the final database of STI policy strategy documents
+Country Time period Number of
+documents
+Share in total
+(documents)
+Number of words
+original
+Number of words in
+final corpus
+Share in total
+(words final)
+Australia 2015-2021 14 4.5% 140,320 50,691 1.5%
+Austria 2016-2021 10 3.2% 134,507 45,095 1.3%
+Belgium 2017-2021 7 2.2% 633,403 194,508 5.6%
+Canada 2014-2021 21 6.7% 754,915 221,005 6.4%
+Chile 2015-2021 13 4.2% 343,716 103,955 3.0%
+Costa Rica 2014-2021 16 5.1% 248,469 72,048 2.1%
+Finland 2017-2021 8 2.6% 286,677 120,943 3.5%
+France 2013-2021 11 3.5% 583,469 168,042 4.8%
+Germany 2015-2021 24 7.7% 643,060 236,762 6.8%
+Greece 2014-2021 9 2.9% 674,231 213,209 6.1%
+Hungary 2014-2021 16 5.1% 584,171 231,670 6.7%
+Ireland 2015-2021 15 4.8% 258,242 78,542 2.3%
+Italy 2013-2021 11 3.5% 440,743 152,858 4.4%
+Japan 1995-2021 25 8.0% 345,994 378,435 10.9%
+Korea 2019-2021 7 2.2% 93,839 46,554 1.3%
+Luxembourg 2019-2021 9 2.9% 298,179 92,928 2.7%
+Netherlands 2014-2021 11 3.5% 233,128 74,559 2.1%
+New Zealand 2015-2020 8 2.6% 260,144 77,514 2.2%
+Slovakia 2013-2021 11 3.5% 713,623 267,996 7.7%
+Spain 2015-2021 16 5.1% 689,949 193,046 5.6%
+Sweden 2016-2021 10 3.2% 335,173 122,493 3.5%
+Switzerland 2016-2021 8 2.6% 141,801 38,205 1.1%
+United Kingdom 2019-2021 9 2.9% 152,876 48,046 1.4%
+United States 2017-2021 24 7.7% 762,962 245,518 7.1%
+Total 313 100% 9,753,591 3,474,622 100%
+Source: Authors’ own elaboration.
+Moreover, the types of documents differ and include national STI strategies, sector-specific strategies that
+explicitly refer to STI, strategies of agencies or ministries in charge of STI, legislation on STI policy for
+countries where legislative documents shape STI objectives and, for EU countries, the COVID-19 recovery
+packages and legislative measures given their strong focus on STI.
+To prepare the database, several pre -processing and cleaning steps were applied (see Annex for a full
+description), resulting in 313 text files , each containing the central semantic content but far fewer words
+than the original document s (see Table 1 above). These text files form the final corpus used in the
+subsequent analysis.
+
+===== PDF_PAGE 15 =====
+INNOVATION POLICY TRANSFORMED?  15
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Topic modelling and extraction of relevant text
+For the analysis of the pre-proceed and text files, topic modelling is employed - a natural language
+processing technique that uncovers “topics” within large amounts of textual data (Blei, 2012[22]; Hannigan
+et al., 2019[23]). Topic modelling is an unsupervised machine learning tool, which means that it does not
+require prior data inputs such as hand -labelled text passages but extracts the different topics solely from
+the given textual data. This makes it useful for the analysis of our large and heterogenous corpus that
+cannot be easily and consistently analysed through qualitative reading of each individual documen t.
+Specifically, Structural Topic Modelling (STM) is employed, which is an extension of the often-used Latent
+Dirichlet Allocation (LDA) algorithm. The basic idea behind LDA is to treat documents as a mixture of latent
+topics and words as a distribution of these topics, enabling it to represent each document with a probability
+distribution over topics and each topic with a probability distribution over words (Blei, 2012[22]). By iteratively
+adjusting these probabilities to optimally capture the different topics in a text, LDA identifies the best-fitting
+topics and their corresponding word distributions, generating an overview of documents’ semantic content.
+STM extends LDA to incorporate non -textual information for each document to better capture semantic
+nuances in the textual data and enhance the i nterpretability of topics. STM is particularly useful when
+analysing data with inherent grouping, such as by country and year of publication of the different
+documents in our database. Technically, the STM models the relationship between topic proportions and
+covariates (country and year of publication) through a hierarchical Bayesian framework , and considers
+how document-level covariates influence the se proportions in the process of identifying topics (Roberts,
+Stewart and Tingley, 2019[24]).
+The optimal number of topics for the corpus was determined based on two statistical measures of
+exclusivity and semantic coherence ( Figure 1), and an assessment of the clarity of the topics obtained.
+Exclusivity measures the extent to which the most frequent words in one topic are infrequent in other topics
+as developed by Roberts et al. (2014[25]). As shown in Figure 1, exclusivity decreases with the number of
+topics selected in the corpus. Semantic coherence assesses the extent to whic h the most frequent words
+in a topic co-occur with one another, as proposed by Mimno et al. (2011[26]). The measure evolves reversely
+with the number of topics , since frequent words co -occurrence decreases (increases) wi th more (fewer)
+topics, though not fully linearly. A total of 35 topics were selected, since semantic coherence increases
+substantially over those initial topics but less substantially afterwards while exclusivity does not decrease
+substantially. The number was also suitable in providing clarity of distinct topics.
+
+===== PDF_PAGE 16 =====
+16  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Figure 1. Exclusivity and semantic coherence for distinct numbers of topics
+Source: Authors’ own elaboration.
+Topics were subsequently labelled and grouped into overarching topic areas. For each topic, the list of
+most common words as well as the words that are both frequent and unique for each topic were extracted
+– as measured by the FREX metric (Bischof and Airoldi, 2021[27]). FREX weights the frequency of a word
+occurring in a given topic by its exclusivity in order to identify words that are most “representative” of a
+certain topic (see both lists in the tables below). Using the words with the highest FREX value, labels were
+assigned to capture the semantic content of each of the 35 topics. These topics were then groped into
+broader themes and categories, as shown in Annex Table , with corresponding coverage in the
+corpus as shown in
+-35
+-30
+-25
+-20
+-15
+-10
+-5
+0
+8.7
+8.9
+9.1
+9.3
+9.5
+9.7
+5 10 15 20 25 30 35 40 45 50
+Number of topics
+E xclusivity
+Semantic coherence
+S emantic coherence
+E xclusivity
+
+===== PDF_PAGE 17 =====
+INNOVATION POLICY TRANSFORMED?  17
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Table 2.
+For the analysis, text fragments classified by the topic model as being highly representative of a specific
+theme were extracted based on the maximum a posteriori (MAP) approach. This approach estimates how
+many words in a short fragment of text are assigned to certain topic s. This method was applied to enable
+a more in-depth exploration of new approaches contained in strategies on joint governance, policy agility
+and directional policy. The MAP approach is a useful addition to qualitative analyses because it allows to
+specifically target a certain topic among all 313 STI strategy documents included in the database, without
+reading the entirety of documents or searching for single key words of interest.
+
+===== PDF_PAGE 18 =====
+18  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Table 2. Shares of coverage of all topics, themes and categories in the corpus
+Nb. Topic of 35
+%
+within
+theme
+within
+category
+Theme of 35
+%
+within
+category
+Category
+%
+of 35
+1 COVID-19 recovery and resilience 2.5% 100.0% 51.5% COVID-19 and
+resilience 2.5% 51.5% Context 4.9%
+2 Global energy prices 2.4% 100.0% 48.5% Energy prices 2.4% 48.5%
+3 Growth 4.0% 45.4% 21.8%
+Supporting firms,
+industry and growth 10.8% 58.3% Traditional
+innovation
+policy
+18.6%
+4 Investment and productivity 2.6% 28.6% 13.7%
+5 Conditions for growth 2.3% 26.0% 12.4%
+6 Firms 1.9% 31.1% 10.3%
+7 Research 4.3% 55.6% 23.1% Supporting research
+and industry-science
+linkages
+7.7% 41.7% 8 Support for industry-science linkages 3.5% 45.4% 18.9%
+9 Energy CO2 emissions 3.5% 18.7% 8.3%
+Green transition
+goals 18.6% 44.5%
+Innovation
+policy 3.0 41.7%
+10 Power generation 2.3% 12.5% 5.6%
+11 Energy efficiency 2.1% 11.2% 5.0%
+12 Sustainable industries 3.2% 17.3% 7.7%
+13 Clean mobility 3.0% 16.3% 7.3%
+14 Pollution mitigation 2.2% 12.0% 5.4%
+15 Climate change and adaptation policy 2.2% 11.9% 5.3%
+16 Capacity building 4.1% 40.9% 9.7%
+Social and regional
+inclusion 9.9% 23.7% 17 Inclusion in the labour market 3.9% 39.1% 9.3%
+18 Regional development 2.0% 19.8% 4.7%
+19 Technologies for Industry 4.0 and
+defence
+3.5% 36.9% 8.4%
+Digital and
+technological
+transformation goals
+9.5% 22.7% 20 Digital infrastructure 3.0% 31.5% 7.1%
+21 Data 3.0% 31.7% 7.2%
+22 Health, knowledge and technology 3.8% 100.0% 9.1% Health knowledge
+and technology 3.8% 9.1%
+23 Consultation 3.4% 64.1% 26.9% Joint governance 5.4% 41.8% New
+innovation
+policy
+approaches
+12.8%
+24 Vertical governance 1.9% 35.4% 14.9%
+25 Monitoring and evaluation 2.6% 52.0% 20.6% Policy agility 5.1% 39.9% 26 Foresight 2.5% 48.7% 19.3%
+27 Directional policy 2.3% 100.0% 18.3% Directional policy 2.3% 18.3%
+28 Design 2.5% 22.9% 11.2%
+Strategy and
+procedural aspects 10.8% 48.9%
+Misc. topics 22.0%
+29 Strategy 3.2% 29.6% 14.5%
+30 Documents 3.3% 30.6% 15.0%
+31 Location and time context 1.8% 16.2% 8.0%
+32 Policy intervention 2.7% 23.8% 12.2%
+Government action 11.3% 51.1% 33 Tax 3.9% 34.9% 17.9%
+34 Regulatory and legal reform 2.4% 10.9% 10.7%
+35 Regulation 2.3% 20.1% 10.3%
+Source: Authors’ own elaboration.
+
+===== PDF_PAGE 19 =====
+INNOVATION POLICY TRANSFORMED?  19
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Robustness analysis of label accuracy across topic variations
+In addition to the statistical analysis of exclusivity and semantic coherence for identifying the optimal
+number of topics, a further robustness test was conducted to assess the accuracy of the results and the
+selected baseline of 35 topics (see Figure 3). This test examined how the percentages varied across
+different labels, considering both lower numbers of topics (25 and 30) and higher numbers (40 an d 45).
+To assess the impact of specific countries, the core five identified countries —Canada, Germany, Japan,
+Korea, and the United States—were each excluded separately from the sample during these checks. This
+approach allowed for an analysis of how the i nclusion or exclusion of each country affected the overall
+percentages allocated to the remaining 23 OECD countries.
+Strategic variations in STI policy were also explored under three different scenarios: the top 10 countries
+with the lowest R&D spending in the sample, the top 10 countries with the highest R&D spending, and
+topics based solely on specific STI strategies.
+These variations involved reviewing the percentage allocations for each topic across different topic
+numbers and comparing them with the 35 -topic baseline. The goal was to identify any discrepancies or
+variations, such as the underrepresentation of certain topics, and to assess how these variations impacted
+the model.
+The method for generating the labels remained consistent with the approach used to create the baseline
+model of 35 topics, ensuring comparability across all tests and scenarios.
+Methodological considerations
+The main advantage of topic modelling lies in generating high-level summaries of documents’ contents by
+identifying clusters of co-occurring words that represent key themes in the text. This saves time and avoids
+the biases of human reading and structuring of textual information.
+However, topic modelling also has its limitations. This includes:
+• The need for extensive document preprocessing, such as the removal of stop words, and
+programming skills.
+• Reliance on human decisions that may introduce subjectivity, particularly in selecting the number
+of topics and interpreting or labelling the results.
+• Risk of overlooking important details and nuances in policies and programmes that may not appear
+in the final topic model.
+• Risk of an incomplete or unbalanced document corpus, despite validation efforts, where key texts
+might be missing or irrelevant ones included, potentially limiting the representativeness and
+significance of the policy debate captured.
+Additionally, while topic modelling can process vast amounts of data and avoid the subjectivity of qualitative
+reading, it lacks the interpretative capacities and k nowledge required to assess the rigorousness and
+meanings of as well as the relations between information extracted from documents. Validation of all
+analytical outputs by domain experts is thus necessary to ensure the accuracy and proper contextualisation
+of outputs generated through computational tools.
+
+===== PDF_PAGE 20 =====
+20  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Distribution of discussions in strategy documents
+Looking into the overall distribution of topic categories, goal setting dominates strategy documents over
+discussions on new policy approaches to reach those goals and on the socio-economic context to which
+strategies respond. STI policy objectives – including both those that are traditional and Innovation Policy
+3.0 – represent on average 60.3% of the substantive topics in the corpus of strategies in 24 OECD member
+countries (24 OECD). The combined share of STI policy objectives range from 54.8% to 66.3% across
+countries, driven mainly by stronger (weaker) emphasis on new STI policy approaches where the share is
+lower (higher) (Figure 2).
+Figure 2. Shares of topic categories across strategies in 24 OECD member countries
+Source: Authors’ own elaboration.
+Another substantive topic category relates to new STI policy approaches, representing 12.8% of the total
+topics modelled. While possibly also discussed in other official documents, the lower share suggests that
+4 Findings
+
+===== PDF_PAGE 21 =====
+INNOVATION POLICY TRANSFORMED?  21
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+goal setting is not immediately connected to impleme ntation issues. The goals set out in strategies are
+consequently not necessarily reflected in new ways of implementing innovation policies. Nonetheless, the
+reference in all countries’ corpuses to new approaches – as discussed further below – indicates awareness
+of the policy community that sets goals that new ways of doing STI policy need to be embraced.
+Finally, 22% of topics in documents contain references to procedural dimensions of strategies (design,
+context, etc.) and government actions (tax collection, regulations, etc.) and 4.9% to the for policies (4.9%
+on average), covering mostly introductory sections of strategies. Unsurprisingly, given the period of the
+analysis, these context topics are COVID -19 and building resilience to shocks, including d isturbances to
+international supply chains (Bas, Fernandes and Paunov, 2023 [28]) and the energy crisis. These context
+variables confirm the timely nature of STI strategies intent on responding to societal challenges, rather
+than treating structural features of innovation policies as if they existed in isolation from the broader context.
+Sensitivity tests —varying the number of topics, focusing on top and bottom R&D performers, using
+strategies only, and excluding core countries —highlight the consistency of topic categories. Interestingly,
+the share of Industry 3.0 goals – that is 20 percentage points more important among the top 10 R&D
+innovating countries compared to the baseline, while only 4% of their corpus relate to traditional innovation
+policy topics. Miscellaneous topics (e.g. procedural and governance -related themes) are more important
+when the US data are excluded as compared to the baseline and all other alternative models (35 topics,
+the average for 24 OECD countries; see Figure 3).
+Figure 3. Share of topics categories across model variations
+Source: Authors’ own elaboration.
+Note: The figure shows the percentage of the corpus attributed to Innovation Policy 3.0 under different variations. These include changes in the
+number of topics (from the baseline of 35, adjusted to 30, 25, 40, or 45 topics), analyses limited to the top 10 and bottom 10 R&D -spending
+countries (TOP 10 and LOW 10), and the exclusion of core countries (Canada, Germany, Japan, Korea, and the United States).
+
+===== PDF_PAGE 22 =====
+22  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Traditional and innovation policy 3.0 goals
+Comparing to pics related to goals of Innovation Policy 3.0 with traditional innovation policy, that the
+analysis finds that these are more than twice as important as traditional innovation policy topics ( 41.7%
+versus 18.6% of the total topics modelled ). This applies t o all countries, with a range of the Innovation
+Policy 3.0 share of 13.5 percentage points across the 24 countries (Figure 2). This confirms that 24-OECD
+countries’ strategies have embraced new goals for innovation policy.
+Nonetheless, when varying the sample and considering only those countries with lower level s of R&D
+spending, the representation that traditional innovation gets over the medium is quite significant (around
+six percentage points more – a total of 23.5 %). In accordance, the levels of allocation of the top R&D
+spending countries on traditional policies are lower (fifteen percentage points less than the mean – 3.4%).
+This indicates that countries that have lower levels of R&D spending typically focus more on traditional
+approaches, whereas the ones that have higher levels of spending are more focused on allocating their
+resources towards innovation 3.0 and new innovation policy approaches.
+Traditional innovation policy concerns – relating to industry and research actors and their connection –
+make up 18.6% of the total topics modelled. Within the firms, industry a nd growth theme, the topics are
+businesses (1.9%), growth ( 4%), conditions for growth ( 2.3%) and investment and productivity
+considerations (2.6%) (Figure 4). On the side of research, support for industry -science linkages (3.5%) is
+emphasised, following the recognition of connections that emerged from the national innovation systems
+framework (Nelson, 1993 [29]; OECD, 1997 [30]; Lundvall, 2007 [31]). Variations across countries are small
+across most topics with the largest variation in industry -science linkages – with a range of 4.4% – and to
+a lesser extent research and growth – with ranges of 2.9% and 2.1%, respectively.
+Figure 4. Cross-country distribution of the shares of traditional innovation policy goals
+Source: Authors’ own elaboration.
+Note: The rectangles indicate the median, 75th percentile, and 25th percentile of topic shares among the 24 country corpuses. The upper and
+lower lines represent the maximum and minimum values.
+
+===== PDF_PAGE 23 =====
+INNOVATION POLICY TRANSFORMED?  23
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Robustness tests confirm the strong presence of Innovation Policy 3.0 across a range of model variation ,
+with a mean of 47.4% across all variations (see Table 3). These include changes to the number of topics
+(25, 30, 40, and 45, compared to the baseline of 35), the exclusion of core countries (Canada, Germany,
+Japan, Korea, and the United States), and separate analyses of strategies from the top 10 and bottom 10
+R&D spenders. In fact, the share of Innovation Policy 3.0 is lowest at the baseline of 35 topics and
+increases with all other topic numbers. The share allocated to Innovation Policy 3 .0 ranges from 40.3%
+(when core countries are excluded) to 61.5% (when analysing STI strategies only), When considering only
+topic-number changes, the mean is 46.8%.
+Table 3. Share of Innovation policy 3.0 across topic number and sample variation
+Source: Authors’ own elaboration.
+Note: The table shows the percentage of the corpus attributed to Innovation Policy 3.0 under different variations. These include changes in the
+number of topics (from the baseline of 35, adjusted to 30, 25, 40, or 45 topics), analyses limited to the top 10 and bottom 10 R&D -spending
+countries (Top 10 and Bottom 10), and the exclusion of core countries (Canada, Germany, Japan, Korea, and the United States).
+As to the Innovation Policy 3.0 category, green transition goals (18.6%) dominate, with nearly double the
+importance of other themes and 7 of the 14 topics in this category ( Figure 5). Energy generation sources,
+CO2 emissions, and efficiency are a predominant theme, accounting for 7.9% of the corpus. Sustainable
+industries (3.2%) and clean mobility (3%) are also targets (Table 5).
+Other green strategy topics regard pollution mitigation and climate change and adaptation policies. Absent
+from key themes are biodiversity, circular economy , and climate resilience. The lower share of the latter
+themes is likely a result of a lower prioritisation of certain themes in policy debates on climate change and
+the (perceived) lower contributions of STI towards some of these goals.
+Figure 5. Cross-country distribution of the shares of innovation policy 3.0 goals
+Source: Authors’ own elaboration.
+Note: The rectangles indicate the median, 75th percentile, and 25th percentile of themes’ shares among the 24 country corpuses. The upper
+and lower lines represent the maximum and minimum values.
+Number of topics Corpus selection
+25 30 35 40 45 Top 10 Bottom 10 Strategies Excl. Canada Excl. Germany Excl. Japan Excl. Korea Excl. US
+48.6 44.4 41.7 46.8 52.6 61.5 47.0 50.0 47.8 42.1 47.6 46.0 40.4
+
+===== PDF_PAGE 24 =====
+24  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+There are, however, important differences across countries in the emphasis they set on specific green
+transition topics. For instance, Belgian strategies emphasi se green mobility ( 4.3% of the total topics
+modelled) well above the 24-OECD countries average (3%), while Japan – because of the Fukushima
+nuclear accident of 2 011 – is strongly focusing on power generation ( 7.6%). This extensive focus also
+results in Japan setting more emphasis on the topic of green transitions compared to other countries. This
+underscores that direct country experiences expedite policy action for the green transition as compared to
+policy actions to mitigate anticipated future changes.
+Sensitivity tests confirm the robustness of green transition goals, with some variation observed only when
+Japan is excluded (see Table 4). The importa nce of green goals remains stable across different topic
+selections and among both top and bottom R&D performers . Interestingly , green goals are about 4
+percentage points higher among top innovators as compared to others. Yet, green transition goals drop to
+just 14.2% when Japan is excluded—highlighting Japan’s outsized role in driving the prominence of green
+transition objectives (The exclusion of Germany and Canada reduces the share of green topics by 1.3-1.4
+percentage points compared to the baseline.
+Table 4. Share of green transition goals across topic number and sample variation
+Source: Authors’ own elaboration.
+Note: The table shows the percentage of the corpus attributed to green transition goals under different variations. These include changes in the
+number of topics (from the baseline of 35, adjusted to 30, 25, 40, or 45 topics), analyses limited to the top 10 and bottom 1 0 R&D-spending
+countries (TOP 10 and LOW 10), and the exclusion of core countries (Canada, Germany, Japan, Korea, and the United States).
+Social and regional inclusion topics constitute an important 9.9% of the total topics modelled. This theme
+primarily revolves around labour market issues, focusing on capacity-building endeavours to enhance skills
+(4.1%). It also addresses the challenges of gender, disability, and poverty, reflecting a broader commitment
+to labour market inclusion (3.9%). The analysis also delves into the local and regional dimensions of STI
+policies, crucial conduits that can either foster or hinder inclusion, accounting for 2% of the discussion
+(Table 5).
+In addition, following with further check on reference labels and sample variation s, when examining only
+the top ten R&D spenders, the per centage of representation of social and regional inclusion strategies
+raises sharply – to 22.6%. This indicates that countries that invest a lot on R&D are not only prioritising
+technological aspects but also placing importance on social concerns.
+Equally significant is the 'digital and technological transformation goals' theme, comprising 9.5% of the
+total topics modelled. This theme addresses a range of issues, from the infrastructure needed for digital
+transformation to the use of public data, especially in healthcare, and emerging technologies like quantum
+and AI. The lower emphasis in STI strategies on the digital theme, compared to green transitions, is partly
+because governmental responsibilities are shared, including on regulatory matters r elated to competition
+policy and consumer protection. Green transitions also involve many government entities, but the
+immediate need to foster green STI to support green transitions contributes to their prominence in STI
+strategies. This differs from digital technologies where swift progress requires extensive action on other
+sides, such as regulations and infrastructures, to advance on this transition.
+Number of topics Corpus selection
+25 30 35 40 45 Top 10 Bottom 10 Strategies Excl. Canada Excl. Germany Excl. Japan Excl. Korea Excl. US
+27.6 28.1 18.6 19.2 19.5 23.9 19.5 20.3 17.2 17.3 14.2 22.2 19.4
+
+===== PDF_PAGE 25 =====
+INNOVATION POLICY TRANSFORMED?  25
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+The final theme within the Innovation Policy 3.0 goals agenda refers to health, knowledge, and technology
+(3.8%). The health topic is directly a reflection of the COVID-19 pandemic that led to a focus on the question
+within STI strategies aside from strategies on health.
+Table 5. Distribution of shares of innovation policy 3.0 topics across countries
+Theme Topic Average Median p25 p75 Min. Max. Max. (Country)
+Green transition goals 18.6% 18.0% 17.1% 19.8% 15.1% 27.1% Japan
+Climate change and adaption policy 2.2% 2.2% 2.0% 2.4% 1.8% 2.9% Slovakia
+Pollution mitigation 2.2% 2.3% 2.1% 2.4% 1.9% 2.7% Finland
+Power generation 2.3% 2.2% 1.9% 2.3% 1.5% 7.6% Japan
+Energy efficiency 2.1% 1.8% 1.6% 1.9% 1.3% 6.0% Korea
+Energy CO2 emissions 3.5% 3.3% 3.1% 4.0% 2.3% 5.1% Belgium
+Clean mobility 3.0% 2.9% 2.6% 3.3% 2.2% 4.3% Belgium
+Sustainable industries 3.2% 3.3% 3.0% 3.5% 2.2% 3.9% Costa Rica
+Social and regional inclusion 9.9% 9.8% 9.2% 10.3% 8.3% 12.5% Finland
+Inclusion in the labour market 3.9% 3.9% 3.5% 4.2% 3.0% 5.0% Finland
+Capacity-building 4.1% 4.1% 3.7% 4.4% 2.9% 5.3% Finland
+Regional development 2.0% 1.9% 1.8% 2.1% 1.7% 2.3% Greece
+Digital and technological transformation goals 9.5% 9.2% 8.9% 9.7% 7.8% 12.4% United States
+Technologies for Industry 4.0 and defense 3.5% 3.3% 2.9% 3.7% 2.5% 6.7% United States
+Digital infrastructure 3.0% 3.0% 2.8% 3.2% 2.3% 3.6% Greece
+Data 3.0% 2.9% 2.8% 3.1% 2.6% 3.7% Korea
+Health, knowledge and technology 3.8% 3.7% 3.3% 4.2% 2.6% 5.7% Chile
+Health, knowledge and technology 3.8% 3.7% 3.3% 4.2% 2.6% 5.7% Chile
+Source: Authors’ own elaboration.
+New approaches to reaching “Innovation 3.0” goals
+Aside from goals, new STI policy approaches for reaching Innovation Policy 3.0 goals reflected in the 35
+topics identified are: i) joint governance (5.4%), ii) policy agility (5.1%) and iii) directional policy (2.3%) (see
+Table 6). These topics cover jointly 10.6% of the substantive topics of the strategies. The coverage
+illustrates awareness across countries about the need for new policy approaches so t hat societal goals
+can be reached.
+Table 6. New innovation policy approaches
+Theme Topic Average Median p25 p75 Min. Max. Max. (Country)
+Joint governance 5.4% 5.3% 4.9% 5.6% 4.6% 7.0% Canada
+Consultation 3.4% 3.4% 3.1% 3.6% 2.8% 5.2% Switzerland
+Vertical governance 1.9% 1.8% 1.6% 2.0% 1.4% 3.6% Canada
+Policy agility 5.1% 4.9% 4.5% 5.6% 4.2% 6.3% Slovakia
+Monitoring and evaluation 2.6% 2.7% 2.2% 2.9% 2.0% 3.8% Costa Rica
+Foresight 2.5% 2.3% 2.2% 2.7% 2.1% 3.4% Slovakia
+Directional policy 2.3% 2.2% 2.1% 2.5% 1.8% 3.3% Germany
+Directional policy 2.3% 2.2% 2.1% 2.5% 1.8% 3.3% Germany
+Source: Authors’ own elaboration.
+
+===== PDF_PAGE 26 =====
+26  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Regarding joint governance, the 35 topics modelled contain two related topics i) vertical governance
+(1.9%), i.e. the linkages between national and regional policies , which – as outlined in our conceptual
+framework above –is a key policy imperative to operate in transitions . Unsurprisingly, Canada, a federal
+country where states pl ay important roles in innovation policies features , stands out with an even higher
+share of coverage (of 3.6%). Table 7 provides a few specific examples from the documents on this theme,
+such as an inter -ministerial coordination group on green growth in Finland (a. in Table 7) and municipal
+real laboratories for energy transitions in Germany (b. in Table 7).
+Table 7. Examples of new innovation policy approaches from the corpus
+Issue discussed Country Year Title Institution
+Joint governance
+a. Inter-ministerial coordiantion group
+on green growth
+Finland 2021 Finland's Sustainable Growth Agenda:
+Preliminary Recovery and Reconstruction
+Plan
+Ministry of Finance
+b. Municipal real laboratories for
+Germany energy transition
+experiments
+Germany 2021 Germany Recovery and Resilience Plan Federal Ministry of Finance
+c. Public engagment on nuclear power
+risks and uses
+Japan 2021 Energy Situation and Main Measures Ministry of Economy, Trade and
+Industry
+d. Smart cities collaboration Sweden 2016 Government Research Bill Government of Sweden
+Agility
+e. Development of future scenarios for
+policy for cities exposed to natural
+threats
+Chile 2012 Report Towards a Disaster Resilient
+Chile: An Opportunity
+National Council for Innovation
+for Devleopment
+f. Support for technology foresight
+activities of local decision-makers
+Italy 2020 Horizon 2002 Ministry of Education, University
+and Research
+g. Establishment of a long-term
+evaluation and monitoring system to
+measure the outputs and impacts of
+Hungary's climate action plan
+Hungary 2020 Climate Change Action Plan Ministry of Innovation and
+Technology
+h. Establishment of local climate
+roundtables and use of their data for
+monitoring Belgium's energy and
+climate plan
+Belgium 2019 National Energy-Climate Plan National Climate Commission
+Directional policy
+i. Support for sustainable
+transportation modes in cities
+Costa
+Rica
+2015 Actional Plan for Science. Technology
+and Innovation 2015-2021Ministry of
+Science, Technology and
+Telecomunication
+Ministry of Science, Technology
+and Telecommunication
+j. Energy performance diagnosis
+regulations for housing
+France 2021 National Recovery and Resilience Plan Governemtn of France
+k. Green public procurement in the
+housing sector
+Korea 2020 2050 Carbon Neutral Strategy Government of Korea
+l. Investment in alternatiove more
+energy-efficient heating systems
+Slovakia 2021 Renewal Plan Government of the Slovak
+Republic
+Source: Authors’ own elaboration.
+Note: The original titles for each of the documents listed here are provided in the Annex Table 3. List of documents analysed.
+There is also the more widely discussed theme of ii) consultations ( 3.4%) across institutions and
+stakeholders. Switzerland, a country known for widespread direct democracy pr ocesses, is also not
+surprisingly covering those topics at much larger scale than the average (5.2%). Yet, we see little variation
+on the minimum scale, pointing to the diffusion of joint governance beyond country specificities across all
+
+===== PDF_PAGE 27 =====
+INNOVATION POLICY TRANSFORMED?  27
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+countries. A case in point here is the consultation process with citizens Japan introduced on nuclear power
+risks (c. in Table 7).
+Second, policy agility and setting directions in policy are other core themes in the total topics modelled ,
+focusing on topics of monitoring and evaluation (2.6%) and foresight (2.5%) ( Table 6). Specific examples
+discussed include building future scenarios for regional policies that factor in natural threats in Chile (e. in
+Table 7) and a focus on evaluation for Hungary’s climate action plan (g. in Table 7).
+Third, a topic that receives some coverage is directed policy towards green objectives. This includes, for
+instance, public procurement and regulatory measures for green housing in Korea (k. in Table 7) and
+France (j. in Table 7). Another area regards support f or STI for more sustainable transportation in Costa
+Rica (i. in Table 7).
+Furthermore, in accordance with the relatively high percentage of strategies allocated to traditional
+innovation policies by lower R&D spender countries (23.5%), this group accounts for the lowest percentage
+of new innovation policy approaches – 2%. Conversely, the top 10 R&D spenders hold a percentage share
+for traditional innovation of 3.4% and for new approaches of 11%.
+
+===== PDF_PAGE 28 =====
+28  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+This paper provides quantitative evidence of t he prominence that Innovation Policy 3.0 goals have on
+governments’ STI policy agenda across 24 OECD member countries. Green transition goals dominate the
+shifted STI policy agenda . Social and regional inclusion and digitali sation are also discussed as par t of
+these priorities . Traditional innovation policy goals, which focus on firms, industry and growth and the
+research sector and its linkages with industry, are also dealt with in strategies but at less than half the
+prevalence. The strategies reviewed also incorporate elements related to new policy approaches required
+for STI policy to reach those goals, including joint governance, agility, and directionality.
+From a methodological standpoint, this paper demonstrates the feasibility of conducting extensive
+assessments of qualitative policy data using the topic modelling approach , albeit with certain limitations.
+The role of conceptual thinking and expert analysis remains paramount, as the nuanced nature of language
+and policy discussions demand interpretation, setting it apart from the objectivity of quantitative data
+analysis. AI-based techniques, including the use of generative AI technologies, open even richer avenues
+going forward without negating, however, the importance of conceptual thinking and expert analysis.
+5 Conclusions
+
+===== PDF_PAGE 29 =====
+INNOVATION POLICY TRANSFORMED?  29
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+References
+Acemoglu, D. and S. Johnson (2023), Power and Progress: Our Thousand-Year Struggle Over
+Technology and Prosperity, Public Affairs.
+[1]
+Arnold, E. et al. (2023), Navigating Green and Digital Transitions: Five Imperatives for Effective
+STI Policy, OECD Publishing, https://doi.org/10.1787/dffb0747-en.
+[18]
+Arts, S., J. Hou and J. Gomez (2021), “Natural language processing to identify the creation and
+impact of new technologies in patent text: Code, data, and new measures”, Research Policy,
+Vol. 50/2, p. 104144, https://doi.org/10.1016/j.respol.2020.104144.
+[13]
+Asheim, B., J. Moodysson and F. Tödtling (2011), “Constructing Regional Advantage: Towards
+State-of-the-Art Regional Innovation System Policies in Europe?”, European Planning
+Studies, Vol. 19/7, pp. 1133-1139, https://doi.org/10.1080/09654313.2011.573127.
+[5]
+Bas, M., A. Fernandes and C. Paunov (2023), “How resilient was trade to COVID-19?”,
+Economics Letters, 111080, Chicago.
+[28]
+Benoit, K. (2020), Text as Data: An Overview,
+https://kenbenoit.net/pdfs/CURINI_FRANZESE_Ch26.pdf.
+[12]
+Bischof, J. and E. Airoldi (2021), Summarizing topical content with word frequency and
+exclusivity.
+[27]
+Blei, D. (2012), “Probabilistic topic models”, Communications of the ACM, Vol. 55/4, pp. 77-84,
+https://doi.org/10.1145/2133806.2133826.
+[22]
+Boon, W. and J. Edler (2018), “Demand, challenges, and innovation. Making sense of new
+trends in innovation policy”, Science and Public Policy, Vol. 45/4, pp. 435-447,
+https://doi.org/10.1093/scipol/scy014.
+[8]
+Camarg, B. and A. Justo (2016), IRaMuTeQ: R INTERFACE for multidimensional analysis of
+texts and questionnaires, IRaMuTeQ,
+http://iramuteq.org/documentation/fichiers/IRaMuTeQ%20Tutorial%20translated%20to%20En
+glish_17.03.2016.pdf.
+[32]
+David Mimno, H. (2011), Optimizing Semantic Coherence in Topic Models,
+https://aclanthology.org/D11-1024/.
+[26]
+
+===== PDF_PAGE 30 =====
+30  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Diercks, G., H. Larsen and F. Steward (2019), “Transformative innovation policy: Addressing
+variety in an emerging policy paradigm”, Research Policy, Vol. 48/4, pp. 880-894,
+https://doi.org/10.1016/j.respol.2018.10.028.
+[4]
+Gentzkow, M., B. Kelly and M. Taddy (2019), “Text as Data”, Journal of Economic Literature,
+Vol. 57/3, pp. 535-574, https://doi.org/10.1257/jel.20181020.
+[11]
+Grillitsch, M. et al. (2019), “Innovation policy for system-wide transformation: The case of
+strategic innovation programmes (SIPs) in Sweden”, Research Policy, Vol. 48/4, pp. 1048-
+1061, https://doi.org/10.1016/j.respol.2018.10.004.
+[3]
+Haddad, C. and A. Bergek (2023), “Towards an integrated framework for evaluating
+transformative innovation policy”, Research Policy, Vol. 52/2, p. 104676,
+https://doi.org/10.1016/j.respol.2022.104676.
+[7]
+Hannigan, T. et al. (2019), “Topic Modeling in Management Research: Rendering New Theory
+from Textual Data”, Academy of Management Annals, Vol. 13/2, pp. 586-632,
+https://doi.org/10.5465/annals.2017.0099.
+[23]
+Howlett, M., M. Ramesh and A. Perl (2020), Studying public policy: Policy cycles and policy
+subsystems, Toronto: Oxford University Press.
+[16]
+Laranja, M., E. Uyarra and K. Flanagan (2008), “Policies for science, technology and innovation:
+Translating rationales into regional policies in a multi-level setting”, Research Policy,
+Vol. 37/5, pp. 823-835, https://doi.org/10.1016/j.respol.2008.03.006.
+[15]
+Lundvall, B. (2007), “National Innovation Systems—Analytical Concept and Development Tool”,
+Industry &amp; Innovation, Vol. 14/1, pp. 95-119,
+https://doi.org/10.1080/13662710601130863.
+[31]
+Mazzucato, M. (2016), “From market fixing to market-creating: a new framework for innovation
+policy”, Industry and Innovation, Vol. 23/2, pp. 140-156,
+https://doi.org/10.1080/13662716.2016.1146124.
+[6]
+Nelson, R. (ed.) (1993), National innovation systems: a comparative analysis., Oxford University
+Press, USA, 1993.
+[29]
+OECD (2015), Systems Innovation: Synthesis Report, OECD Publishing, Paris. [17]
+OECD (1997), National Innovation Systems, OECD Publishing, Paris. [30]
+Paunov, C. and S. Planes-Satorra (2021), “Science, technology and innovation in the time of
+COVID-19”, OECD Science, Technology and Industry Policy Papers, No. 99, OECD
+Publishing, Paris, https://doi.org/10.1787/234a00e5-en.
+[2]
+Roberts, M., B. Stewart and D. Tingley (2019), “<b>stm</b>: An <i>R</i> Package for Structural
+Topic Models”, Journal of Statistical Software, Vol. 91/2, https://doi.org/10.18637/jss.v091.i02.
+[24]
+Roberts, M. et al. (2014), “Structural Topic Models for Open‐Ended Survey Responses”,
+American Journal of Political Science, Vol. 58/4, pp. 1064-1082,
+https://doi.org/10.1111/ajps.12103.
+[25]
+
+===== PDF_PAGE 31 =====
+INNOVATION POLICY TRANSFORMED?  31
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Rüegg-Stürm, J. (2005), The New St. Gallen Management Model, Palgrave Macmillan UK,
+London, https://doi.org/10.1057/9780230505162.
+[20]
+Schlaile, M. et al. (2017), “Innovation Systems for Transformations towards Sustainability?
+Taking the Normative Dimension Seriously”, Sustainability, Vol. 9/12, p. 2253,
+https://doi.org/10.3390/su9122253.
+[9]
+Schot, J. and W. Steinmueller (2016), Framing innovation policy for transformative change:
+Innovation policy 3.0, SPRU Science Policy Research Unit, University of Sussex: Brighton,
+UK.
+[14]
+Wauters, B. (2019), Strategic management in the public sector and public policy-making: friend
+or foe?, European Social Fund Public Administration and Governance Network,
+https://www.researchgate.net/publication/333774591_Strategic_management_in_the_public_
+sector_and_public_policy-making_friend_or_foe (accessed on 16 November 2021).
+[19]
+Weber, K. and H. Rohracher (2012), “Legitimizing research, technology and innovation policies
+for transformative change”, Research Policy, Vol. 41/6, pp. 1037-1047,
+https://doi.org/10.1016/j.respol.2011.10.015.
+[10]
+Weiser, A. et al. (2020), “Towards a more sustainable metal use – Lessons learned from national
+strategy documents”, Resources Policy, Vol. 68, p. 101770,
+https://doi.org/10.1016/j.resourpol.2020.101770.
+[21]
+
+===== PDF_PAGE 32 =====
+32  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Annex A. Pre-processing and cleaning steps for
+the topic modelling
+To prepare our database for the text analysis, we applied several pre-processing steps. The documents
+were trimmed to remove page margins containing page numbers, repeated references to titles, chapters,
+or the like. The files were then converted from PDF to TXT format, which removes all graphics and
+formatting from the document, leaving only plain text. Where documents were not provided in English, they
+were translated using Google Translate.
+Taking the TXT file for each document, we conducted four basic text cleaning steps:
+Lemmatise words. We reduce words to their “lemma” – their base form without any conjugation or
+pluralisation and expand acronyms like “AI” (artificial intelligence) to their full written form.
+Remove stop words. We remove prepositions, articles, and conjunctions that serve a grammatical function
+but do not contain any semantic information. Common stop words include “the”, “and”, and “of”. Numbers,
+misspelled words, and non-English words are all removed from the corpus.
+• Remove punctuation. Punctuation marks are removed at the end of the process. Line breaks are
+retained, as these prevent concepts from different paragraphs from being mixed incorrectly.
+• Identify compounds. The lemmatised text is analysed for compound expressions. “Climate
+change”, for example, is a compound word composed of “climate” and “change”, which takes on a
+different meaning than the two words individually.
+Annex Table 1. Topics, themes and categories in the corpus
+Number / Topic label Common words FREX words
+Category: Context
+Theme: Crisis recovery and resilience
+1 COVID-19 and resilience impact, covid, economic, social, pandemic,
+crisis, resilience
+covid, pandemic, crisis, shock, health_crisis,
+territorial_cohesion, economic_recovery
+Theme: Energy prices
+2 Global energy markets market, demand, large, supply, price, small,
+country
+market, demand, price, import, service_sector,
+crude_oil_price, barrel
+Category: Traditional innovation policy
+Theme: Firms, industry and growth
+3 Businesses company, make, business, made, form,
+means, hand
+company, make, SMEs, player, choice, good,
+large_company
+4 Growth increase, increased, gdp, expected, average,
+result, number
+gdp, average, percent, percentage, index,
+percentage_point, increased
+5 Conditions for growth support, aim, order, addition, region, country,
+strengthening
+aim, strengthening, promoting, promotion, improving,
+long_term, human_resource
+6 Investment and
+productivity
+investment, sector, economy, term, growth,
+significant, high
+private_investment, public_investment, boosting,
+productivity, job_creation, labour_productivity,
+economic_growth
+
+===== PDF_PAGE 33 =====
+INNOVATION POLICY TRANSFORMED?  33
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Theme: Supporting industry-science linkages
+7 Research research, innovation, r_d, university, science,
+researcher, collaboration
+research, researcher, excellence, research_infrastructure,
+research_result, research_centre, applied_research
+8 Support for industry-
+science linkages
+support, work, community, industry,
+programme, opportunity, business
+engagement, commercialisation, emerging_technology,
+responsive, interagency, suite, research_enterprise
+Category
+Theme: Green transition goals
+9 Climate change and
+adaptation policy
+measure, plan, change, climate,
+climate_change, goal, adopted
+climate, adaptation, climate_policy, climate_protection,
+adaptation_measure, climate_change, effect_of_climate
+10 Pollution mitigation project, operation, end, start, management,
+construction, supported
+project, operation, site, radioactive_waste, spent_fuel,
+call, basin
+11 Power generation base, system, addition, effort, business,
+introduction, power_generation
+power_source, business_operator, stable_supply,
+solar_power_generation, thermal_power_generation,
+distribution_business_operator, adjustment_power
+12 Energy efficiency technology, equipment, utilisation,
+development, field, industry, demonstration
+demonstration, energy_saving, smart_city,
+social_implementation, next_generation, convenience,
+fuel_efficiency
+13 Emissions energy, emission, hydrogen, co2, renewable,
+electricity, fuel
+co2, renewable, heat, energy_source, carbon, fossil_fuel,
+biomass
+14 Clean mobility building, transport, vehicle, mobility, energy,
+construction, renovation
+renovation, road, rail, public_transport, fleet, buses,
+passenger
+15 Sustainable industries sustainable, innovation, industry, economic,
+transition, society, country
+bioeconomy, heritage, tourist, cultural_heritage,
+environmental_sustainability, social_innovation,
+creative_industry
+Theme: Social and regional inclusion
+20 Inclusion in the labour
+market
+employment, people, women, labour_market,
+work, child, worker
+women, worker, family, man, disability, gender, poverty
+21 Capacity-building training, education, skill, student, school,
+programme, learning
+training, education, skill, student, school, teacher,
+educational
+22 Regional development area, resource, related, condition, regional,
+activities, local
+local, municipality, regional, area, resource, condition,
+spatial_planning
+Theme: Digital transformation goals
+16 Technologies for industry
+4.0 and defence
+technology, security, applications, space,
+artificial_intelligence, software, capability
+artificial_intelligence, quantum, defence, intelligence,
+sensor, robotics, attack
+17 Digital infrastructure service, digital, infrastructure, citizen, network,
+access, component
+digitization, digital_transformation, public_service,
+connectivity, digital_infrastructure, digital_service,
+broadband
+18 Data data, information, platform, user, applications,
+online, public
+database, medical, hospital, interface, portal, blockchain,
+web
+Theme: Health knowledge and technology
+19 Health knowledge and
+technology
+world, people, society, technology, human,
+country, knowledge
+disease, therapy, genetic, brain, understand, tissue,
+human
+Category
+Theme: Engagement
+23 Vertical governance government, ensure, support, continue,
+funding, programme, federal
+government, province, federal_government, federal,
+provincial, ongoing, department
+24 Consultation organisation, work, group, practise, institution,
+involved, agreement
+involved, consultation, expert, representative,
+working_group, involvement, association
+Theme: Agility
+25 Monitoring and evaluation implementation, evaluation, monitoring,
+programme, result, carried, document
+implementation, execution, preparation, coordination,
+monitoring, operational_programme, evaluation
+26 Foresight account, target, period, base, reduction,
+scenario, costs
+target, scenario, taking, account, estimate, indicative,
+projection
+Theme: Directional policy
+27 Directional policy future, focus, important, challenge, goal,
+potential, approach
+broad, focus, funding_programme, societal, shaping,
+important_role, field_of_action
+
+===== PDF_PAGE 34 =====
+34  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Annex Table 2. Topics, themes identified in the misc. category
+Number / Topic label Common words FREX words
+Theme: Strategy and procedural aspects
+28 Design development, system, process, base, field, tool,
+design
+design, tool, integrated, process, system,
+development, technical
+29 Strategy national, strategy, policy, objective, priority, set,
+framework
+rdi, national, sectoral, actor, action_plan, theme,
+instrument
+30 Documents report, section, review, authority, information,
+proposal, performance
+report, issued, disclosure, submitted, officer,
+subsection, annual report
+31 Location and time context time, place, state, structure, risk, existing, general place, structure, possibility, state, created, view,
+time
+Theme: Government action
+32 Policy intervention action, objective, aimed, territory, context,
+intervention, guarantee
+transversal, articulation, public_policy,
+line_of_action, incorporation, favour,
+planning_instrument
+33 Tax tax, amount, payment, revenue, grant, employee,
+benefit
+tax, payment, loan, expense, insurance, liability,
+rent
+34 Regulatory and legal reform reform, procedure, control, law, ensure, legislation,
+investment
+court, corruption, simplification, judge,
+money_laundering, state_aid, judiciary
+35 Regulation regulation, order, requirement, standard, principle,
+established, framework
+regulation, regulatory, principle, requirement, legal,
+standard, criteria
+Annex Table 3. List of documents analysed
+Country Document type Nb. Reference (English title [Original title], (Institution, Year))
+Australia Ministerial plan 1. COVID-19: Recovery and resilience (Australia’s National Science Agency, 2020)
+2. CSIRO Corporate Plan 2019-2020 (Australia’s National Science Agency, 2020)
+3. Partnerships for Recovery: Australia's COVID-19 Development Response (Department of
+Foreign Affairs and Trade, 2020)
+4. CSIRO Corporate Plan 2020-2021 (Australia’s National Science Agency, 2021)
+Government
+strategy
+5. Australian Medical Research and Innovation Strategy 2016-2021 (Australian Government, 2016)
+6. Data Strategy 2018-2020 (Department of Industry, Innovation and Science, 2018)
+7. Digital Transformation Agency: Vision 2025 (Digital Transformation Agency, 2018)
+8. Australia's National Hydrogen Strategy (COAG Energy Council, 2019)
+9. Budget 2020-2021 (Australian Government, 2020)
+10. Digital Economy Strategy 2030 (Australian Government, 2021)
+11. Make It Happen: The Australian Government’s Modern Manufacturing Strategy (Australian
+Government, 2021)
+STI strategy 12. National Innovation and Science Agenda (Australian Government, 2015)
+13. Global Innovation Strategy (Australian Government, 2016)
+14. Technology Investment Roadmap (Department of Industry, Science, Energy and Resources,
+2020)
+Austria Government
+strategy
+15. Open Innovation Strategy for Austria [Open Innovation Strategie für Österreich] (Federal Ministry
+of Science and Research, 2016)
+16. Bioeconomy: A Strategy for Austria (Ministry for Sustainability and Tourism, 2019)
+17. National Reform Programme 2019 (Federal Chancellery, 2019)
+18. Digital Action Plan Austria [Digitaler Aktionsplan Austria] (Federal Chancellery, 2020)
+19. STI Strategy for Mobility [FTI-Strategie Mobilität ] (Federal Ministry for Climate Action,
+Environment, Energy, Mobility, Innovation and Technology, 2020)
+20. National Reform Programme 2020 (Federal Chancellery, 2020)
+21. Recovery and Resilience Plan [Österreichischer Aufbau- und Resilienzplan 2020-2026 ]
+(Federal Chancellery, 2021)
+
+===== PDF_PAGE 35 =====
+INNOVATION POLICY TRANSFORMED?  35
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+22. Strategy of the Federal Government for AI [Strategie der Bundesregierung für Künstliche
+Intelligenz ] (Federal Chancellery, 2021)
+23. Circular Economy Strategy [Kreislaufwirtschafts-Strategie] (Federal Chancellery, 2021)
+STI strategy 24. STI Strategy 2030 [FTI-Strategie 2030 ] (Federal Government, 2020)
+Belgium Government
+strategy
+25. Belgian National Adaptation Plan (Federal Government, 2017)
+26. National Energy-Climate Plan [Plan national énergie-climat 2021-2030] (National Climate
+Commission, 2019)
+27. National Reform Programme 2019 (Federal Government, 2019)
+28. Government Agreement [Accord de gouvernement] (Federal Government of Belgium, 2020)
+29. National Reform Programme 2020 (Federal Government of Belgium, 2020)
+30. Cabinet of the State Secretary for Restart and Strategic Investment [Plan national pour la reprise
+et la resilience] (National Plan for Restart and Resilience, 2021)
+31. Scenarios for a climate neutral Belgium by 2050 (DG Environment, 2021)
+Canada Ministerial plan 32. ISED Departmental Plan 2019-20 (Innovation, Science and Economic Development Canada,
+2019)
+33. Responding to Canada's Needs from COVID-19 to Climate Change (National Research Council
+Canada, 2020)
+34. NRC Strategic Plan 2019-2024 (National Research Council Canada, 2020)
+35. NSERC Departmental Plan 2020-21 (Natural Sciences and Engineering Research Council of
+Canada, 2020)
+36. CIHR Departmental Plan 2020-21 (Canadian Institutes of Health Research, 2020)
+37. ISED Departmental Plan 2021-22 (Innovation, Science and Economic Development Canada,
+2021)
+38. NSERC Departmental Plan 2021-22 (Natural Sciences and Engineering Research Council of
+Canada, 2021)
+39. CIHR Strategic Plan 2021-2031 (Canadian Institutes of Health Research, 2021)
+40. CIHR Departmental Plan 2021-22 (Canadian Institutes of Health Research, 2021)
+Government
+strategy
+41. Digital Operations Strategic Plan: 2018-2022 (Treasury Board of Canada Secretariat, 2018)
+42. Building a Nation of Innovators (Innovation, Science and Economic Development Canada, 2019)
+43. Investing in the Middle Class: Budget 2019 (Government of Canada, 2019)
+44. Supporting Canadians and Fighting COVID-19: Fall Economic Statement (Government of
+Canada, 2020)
+45. A Healthy Environment and a Healthy Economy (Environment and Climate Change Canada,
+2020)
+46. Canada’s Climate Actions (Environment and Climate Change Canada, 2021)
+47. Digital Operations Strategic Plan: 2021-2024 (Treasury Board of Canada Secretariat, 2021)
+48. A Recovery Plan for Jobs, Growth, and Resilience: Budget 2021 (Government of Canada, 2021)
+49. Intellectual Property Strategy (Innovation, Science and Economic Development Canada, 2021)
+STI strategy 50. Seizing Canada's Moment: Moving Forward in Science, Technology and Innovation (Industry
+Canada, 2014)
+51. Canada’s Science Vision (Innovation, Science and Economic Development Canada, 2019)
+52. Restart, Recover and Reimagine Prosperity for all Canadians (Industry Strategy Council, 2020)
+Chile Government
+strategy
+53. Report Towards a Disaster Resilient Chile: An Opportunity [Informe Hacia un Chile Resiliente
+frente a Desastres: Una Oportunidad] (National Council for Innovation for Development, 2016)
+54. Science and Innovation for Chile's Water Challenges Report [Informe Ciencia e Innovación para
+los Desafíos del Agua en Chile] (National Council for Innovation for Development, 2017)
+55. Energy 2050: Chile's Energy Policy [Energía 2050: Política Energético de Chile] (Ministeiro de
+Energía, 2017)
+56. National Artificial Intelligence Policy [Política Nacional de Inteligencia Artificial] (Ministry of
+Science, Technology and Innovation, 2019)
+57. Proposal for a Policy on Open Access to scientific information and publicly-funded research data
+from ANID [Propuesta de Política de acceso abierto a la información científica y adatos de
+investigaciónfinanciados con fondos públicos de la ANID] (Ministry of Science, Technology and
+
+===== PDF_PAGE 36 =====
+36  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Innovation, 2020)
+STI strategy 58. A common dream for the future of Chile: Report for the President of the Republic, Michelle
+Bachelet [Un sueño compartido para el futuro de Chile: Informe a la Presidenta de la República,
+Michelle Bachelet] (Presidential Commission Science for Development of Chile, 2015)
+59. Science, technology and innovation in a new pact on sustainable and inclusive development:
+strategic orientations in view of 2030 after a 10-years trajectory [Ciencias, tecnologías e
+innovación para un nuevo pacto de desarrollo sostenible e inclusivo: Orientaciones estratégicas
+de cara a 2030 tras diez años de trayectoria ] (National Council for Innovation for Development,
+2017)
+60. Science, Technology, Knowledge and Innovation in Chile [Ciencia, Tecnología, Conocimiento e
+Innovación para Chile] (National Council for Innovation for Development, 2019)
+61. National Policy on Science, Technology, Knowledge and Innovation [Política nacional de
+ciencia, tecnología, conocimiento e innovación ] (Ministry of Science, Technology and
+Innovation, 2020)
+62. Action Plan: National Policy on Science, Technology, Knowledge and Innovation [Plan de
+acción: Política nacional de ciencia, tecnología, conocimiento e innovación ] (Ministry of
+Science, Technology and Innovation, 2021)
+63. Basis for National Science, Technology, Knowledge and Innovation Strategy [Base para la
+Estrategia Nacional de Ciencia, Tecnología, Conocimiento e Innovación ] (National Council on
+Innovation for Development, 2021)
+64. National Gender Equality Policy in CTCI [Política Nacional de Igualdad de Género en CTCI]
+(Ministry of Science, Technology and Innovation, 2021)
+65. Technology Development and Transfer Strategy for Climate Change [Estrategia de Desarrollo y
+Transferencia Tecnológica para el Cambio Climático] (Ministry of Science, Technology and
+Innovation, 2021)
+Costa Rica Legislation 66. Law 9971 Creation of the Costa Rican Research and Innovation Promotion Agency. [Ley 9971
+Creación de la Promotora Costarricense de Investigación e Innovación] (Ministry of Science,
+Technology and Telecommunication, 2021)
+67. Law 9960 Creation of the Costa Rican Space Agency [Ley 9960 Creación de la Agencia
+Espacial Costarricense] (Ministry of Science, Technology and Telecommunication, 2021)
+Ministerial plan 68. National Entrepreneurship Policy 2018-2022 [Política Nacional de Empresariedad 2018-2022]
+(Ministry of Economics, Industry and Commerce, 2018)
+Government
+strategy
+69. National Telecommunications Development Plan (Ministry of Science, Technology and
+Telecommunication, 2015)
+70. National Decarbonisation Plan 2018-2050 [Plan Nacional de Descarbonización 2018-2050]
+(Ministry of Environment and Energy, 2018)
+71. Digital Transformation Strategy towards Costa Rica of the Bicentennial 4.0 [Estrategia de
+Transformación Digital hacia la Costa Rica del Bicentenario 4.0] (National Government; Ministry
+of Science, Technology and Telecommunication, 2018)
+72. Territorial Economic Strategy for an Inclusive and Decarbonised Economy 2020-2050
+[Estrategia Económica Territorial para una Economía Inclusiva y Descarbonizada 2020-2050]
+(Ministry of National Planification and Economic Policy, 2020)
+73. National Knowledge-Based Economy and Society Policy 2022-2050 [Política Nacional De
+Sociedad y Economía Basadas en el Conocimiento 2022-2050] (Ministry of Science,
+Technology and Telecommunication, 2021)
+74. Methodological Guide for the elaboration and design of the National Telecommunications
+Development Plan 2022-2027 [Guía Metodológica para la elaboración y diseño del Plan
+Nacional de Desarrollo de Telecomunicaciones 2022-2027] (Ministry of Science, Technology
+and Telecommunication, 2021)
+75. Strategy for the Responsible and Ethical Use of AI [Estrategia para el uso responsable y ético
+de la IA] (Ministry of National Planification and Economic Policy, 2021)
+STI strategy 76. Route 2021: Knowledge and Innovation for Competitiveness, Prosperity, and Well-being [Ruta
+2021: Conocimiento e Innovación para la Competitividad, Prosperidad y Bienestar] (Ministry of
+Science, Technology, and Telecommunication, 2014)
+77. National Plan for Science, Technology, and Innovation 2015 - 2021 [Plan Nacional de Ciencia,
+Tecnología e Innovación 2015 - 2021] (Ministry of Science, Technology, and
+Telecommunication, 2015)
+78. Institutional Strategic Plan 2019-2025 [Plan estratégico institucional 2019-2025] (Ministry of
+
+===== PDF_PAGE 37 =====
+INNOVATION POLICY TRANSFORMED?  37
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Science, Technology and Telecommunication; Secretary of Institutional and Sectorial
+Planification, 2019)
+79. National Policy on Knowledge-Based Economy and Society and National Plan for Science,
+Technology and Innovation [Política Nacional de Economía y Sociedad Basada en el
+Conocimiento y Plan Nacional de Ciencia Tecnología e Innovación ] (Ministry of Science,
+Technology and Telecommunication, 2021)
+80. National Science, Technology and Innovation Plan 2022-2027 [Plan Nacional de Ciencia,
+Tecnología e Innovación 2022-2027 ] (Ministry of Science, Technology and Telecommunication,
+2021)
+81. National Bio-economy Strategy 2020-2030 [Estrategia Nacional de Bioeconomía 2020-2030]
+(Ministry of Science, Technology and Telecommunication, 2020)
+Finland Government
+strategy
+82. Inclusive and Competent Finland [Inclusive and Competent Finland] (Finnish Government, 2019)
+83. Finland's National Reform Programme 2019 (Ministry of Finance, 2019)
+84. The regional development decision 2020–2023: Sustainable and vital regions (Ministry of
+Economic Affairs and Employment, 2020)
+85. Government Report on the Implementation of the 2030 Agenda (Prime Minister’s Office, 2020)
+86. National Reform Programme 2020 (Ministry of Finance, 2020)
+87. Finland's sustainable growth agenda: preliminary recovery and reconstruction plan [Suomen
+kestävän kasvun ohjelma – alustava elpymisja palautumissuunnitelma ] (Ministry of Finance,
+2021)
+France STI strategy 88. Vision and road map of the Research and Innovation Council Finland (Research and Innovation
+Council, 2017)
+89. RDI Roadmap: Solutions for a sustainable and developing society (State Council, 2020)
+Ministerial plan 90. Strategic Ambitions 2020-2023 [Ambitions Stratégiques 2020-2023] (BpiFrance, 2020)
+91. 2019: A Year with the CNRS [2019: Une Année avec le CNRS] (CNRS, 2020)
+92. 2020: A Year with the CNRS [2020: Une Année avec le CNRS] (CNRS, 2021)
+Government
+strategy
+93. National Reform Programme 2019 (Prime Minister of France, 2019)
+94. Support Plan for Technology Companies [Plan de Soutien aux Entreprises Technologiques]
+(Ministry of Economy and Finance, 2020)
+95. National Reform Programme 2020 [Programme national de réforme 2020] (Prime Minister of
+France, 2020)
+96. National Recovery and Resilience Plan [Plan National de Relance et de Résilience]
+(Government of France, 2021)
+97. What Place for Skills in Business? New Approaches for Changing Practices [Quelle place pour
+les compétences dans l’entreprise? Renouveler les approches pour refonder les pratiques]
+(Employee Skill Network, 2021)
+STI strategy 98. A Strategic Agenda for Research, Technology Transfer, and Innovation (Ministry of Higher
+Education and Research, 2013)
+99. Innovation: A Major Challenge for France [L’Innovation, un enjeu majeur pour la France]
+(Ministry for a Productive Recovery & Ministry of Higher Education and Research, 2013)
+100. Fifteen years of innovation policy in France [Quinze ans de politiques d’innovation en France]
+(National Commission for Innovation Policy Evaluation, 2016)
+Germany Government
+strategy
+101. Framework programme for sustainable development (FONA) [Rahmenprogramm Forschung für
+Nachhaltige Entwicklung (FONA)] (Federal Ministry for Education and Research, 2015)
+102. Health Research Framework Programme [Rahmenprogramm Gesundheitsforschung] (Federal
+Government, 2018)
+103. Artificial Intelligence Strategy [Strategie Künstliche Intelligenz] (Federal Government, 2018)
+104. Quantum technologies - from the basics to the market [Quantentechnologien - von den
+Grundlagen zum Markt] (Federal Ministry for Economic Affairs and Climate Action, 2018)
+105. STEM Action Plan [MINT-Aktionsplan] (Federal Ministry for Education and Research, 2019)
+106. National Further Education Strategy [Nationale Weiterbildungsstrategie] (Federal Ministry for
+Education and Research, 2019)
+107. Action plan "Research for autonomous driving - an overarching research framework by BMBF,
+BMWi and BMVI". [Aktionsplan „Forschung für autonomes Fahren – ein übergreifender
+Forschungsrahmen von BMBF, BMWi und BMVI“ ] (Federal Ministry for Economic Affairs and
+
+===== PDF_PAGE 38 =====
+38  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+Climate Action, 2019)
+108. Research Factory Battery [Dachkonzepts "Forschungs-fabrik Batterie"] (Federal Ministry for
+Economic Affairs and Climate Action, 2019)
+109. Blockchain Strategy [Blockchain-Strategie] (Federal Ministry for Economic Affairs and Climate
+Action, 2019)
+110. Digital Strategy of the BMBF "Digital Future: Learning. Research. Knowledge. [Digitalstrategie
+des BMBF „Digitale Zukunft: Lernen. Forschen. Wissen.“] (Federal Ministry for Education and
+Research, 2019)
+111. Tackling consequences of the pandemic, securing prosperity, strengthening future prospects
+[Corona-Folgen bekämpfen, Wohlstand sichern, Zukunftsfähigkeit stärken] (Federal Coalition
+Committee, 2020)
+112. From the Idea to Market Succes: Programmes for innovative SMEs [Von der Idee zum
+Markterfolg: Programme für einen innovativen Mittelstand ] (Federal Ministry for Economic
+Affairs and Climate Action, 2020)
+113. Research for Sustainability Strategy (Federal Government, 2020)
+114. National Bioeconomy Strategy [Nationale Bioökonomiestrategie ] (Federal Government, 2020)
+115. The National Reform Programme 2020 [Das Nationale Reformprogramm 2020] (Federal
+Government, 2020)
+116. Artificial Intelligence Strategy - Update [Strategie Künstliche Intelligenz – Fortschreibung]
+(Federal Government, 2020)
+117. Nationale Wasserstoffstrategie [Nationale Wasserstoffstrategie] (Federal Government, 2020)
+118. German Recovery and Resilience Plan (Federal Ministry of Finance, 2021)
+119. National Further Education Strategy [Nationale Weiterbildungsstrategie] (Federal Ministry for
+Education and Research, 2021)
+120. National Reform Programme 2021 [Das Nationale Reformprogramm 2021] (Federal Ministry for
+Economic Affairs and Climate Action, 2021)
+121. Roadmap Quantencomputing [Roadmap Quantencomputing] (Federal Ministry for Economic
+Affairs and Climate Action, 2021)
+122. Shaping the future with technological sovereignty. BMBF Impulse Paper on Technological
+Sovereignty [Technologisch souverän die Zukunft gestalten. BMBF-Impulspapier zur
+technologischen Souveränität] (Federal Ministry for Education and Research, 2021)
+STI strategy 123. Internationalisation of education, science and research [Internationalisierung von Bildung,
+Wissenschaft und Forschung] (Federal Government, 2017)
+124. High-Tech Strategy 2025 [Hightech-Strategie 2025] (Federal Government, 2018)
+Greece Legislation 125. Detailed Description of Actions [Αναλυτική Περιγραφή Δράσεων] (Government of Greece, 2021)
+Ministerial plan 126. Working in the Public Sector through international practice in the era of COVID-19 [Η εργασία
+στονΔημόσιο Τομέα μέσα από την διεθνή πρακτική την εποχή του COVID-19] (Ministry of
+Interior – Innovation Unit, 2020)
+Government
+strategy
+127. Corporate Pact for the Development Framework - NSRF 2014-2020 [Εταιρικό Σύμφωνο για το
+Πλαίσιο Ανάπτυξης – ΕΣΠΑ 2014-2020] (General Secretariat for Public Investment, 2014)
+128. National Research and Innovation Strategy for Smart Specialisation 2014-2020 [Εθνική
+Στρατηγική Έρευνας και Καινοτομίας για την Έξυπνη Εξειδίκευση2014-2020] (Ministry of
+Economy, Infrastructure, Shipping and Tourism, 2014)
+129. Greece: National Strategy for Sustainable and and Fair Development 2030 [Ελλάδα: Εθνική
+Στρατηγική για τη Βιώσιµη και Δίκαιη Ανάπτυξη 2030] (Ministry of Economy and Development,
+2019)
+130. National Reform Programme 2019 (Government of Greece, 2019)
+131. Development Plan for the Greek Economy [Σχέδιο Ανάπτυξης για την Ελληνική Οικονομία]
+(European Commission, 2020)
+132. National Recovery and Resilience Plan [Εθνικο Σχεδιο Ανακαμψησ Και Ανθεκτικοτητασ ]
+(Ministry of Finance, 2021)
+133. Partnership Agreement - Republic of Greece [Συμφωνία εταιρικής σχέσης - Ελληνική
+Δημοκρατία] (Government of the Hellenic Republic, 2021)
+Hungary Government
+strategy
+134. A Change of Pace in Higher Education (Ministry of Human Capacities, 2016)
+135. OGY Decision on the second National Climate Change Strategy 2018-2030 looking ahead to
+2050 [OGY határozat a 2018-2030 közötti időszakra vonatkozó, 2050-ig tartó időszakra
+
+===== PDF_PAGE 39 =====
+INNOVATION POLICY TRANSFORMED?  39
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+kitekintést nyújtó második Nemzeti Éghajlatváltozási Stratégiáról] (Ministry of Innovation and
+Technology, 2018)
+136. National Reform Programme 2019 [2019. évi Nemzeti Reform Programja] (Government of
+Hungary, 2019)
+137. The Strategy for Strengthening Hungarian Micro, Small and Medium Enterprises [Magyarország
+középtávú? Kutatás stratégiája.] (Ministry of Innovation and Technology, 2019)
+138. The Strategy for Strengthening Hungarian Micro, Small and Medium Enterprises [A Magyar
+Mikro-, Kis- És Középvállalkozások Megerősítésének Stratégiája] (Ministry of Innovation and
+Technology, 2019)
+139. Climate Change Action Plan [Éghajlatváltozási Cselekvési Terv] (Ministry of Innovation and
+Technology, 2020)
+140. 2020 National Reform Programme of Hungary (Government of Hungary, 2020)
+141. National Digitisation Strategy 2021-2030 [Nemzeti Digitalizációs Stratégia 2021-2030] (National
+Research, Development and Innovation Office, 2020)
+142. Hungary’s Artificial Intelligence Strategy 2020-2030 (Ministry for Innovation and Technology,
+2020)
+143. Hungary's Recovery and Control Plan [Magyarorszag Helyreallitasi es Ellenallokepessegi Terve]
+(Government of Hungary, 2021)
+144. Hungary's National Reform Programme for 2021 [Magyarország 2021. évi Nemzeti Reform
+Programja] (Government of Hungary, 2021)
+STI strategy 145. National Smart Specialisation Strategy (Ministry of Innovation and Technology, 2014)
+146. National Research Infrastructure Roadmap (Ministry of Innovation and Technology, 2018)
+147. Investing in Knowledge, Investing in the Future [Befektetés A Tudásba, Befektetés A Jövőbe]
+(National Research, Development and Innovation Office, 2018)
+148. National Strategy for Smart Specialisation [Nemzeti Intelligens Szakosodási Stratégia] (Ministry
+of Innovation and Technology, 2021)
+149. Hungary's Research, Development and Innovation Strategy [Magyarország Kutatási, Fejlesztési
+és Innováviós Stratégiája] (Ministry of Innovation and Technology, 2021)
+Ireland Legislation 150. General Scheme of the Higher Education Authority (Government of Ireland, 2021)
+Ministerial plan 151. Science Foundation Ireland Annual Plan 2020 (Science Foundation Ireland, 2020)
+152. Enterprise Ireland’s Strategic Priorities 2021 (Enterprise Ireland, 2021)
+153. Statement of Strategy 2021–2023 (Science Foundation Ireland, 2021)
+Government
+strategy
+154. National Reform Programme April 2019 (Government of Ireland, 2019)
+155. National Reform Programmefor the European Semester April 2020 (Government of Ireland,
+2020)
+156. Irish Research Council Strategic Plan 2020-2024 (Irish Research Council, 2020)
+157. National Recovery and Resilience Plan 2021 (Government of Ireland, 2021)
+158. Economic Recovery Plan (Government of Ireland, 2021)
+159. AI – Here for Good: National AI Strategy for Ireland (Department of Enterprise, Trade and
+Employment, 2021)
+STI strategy 160. Innovation 2020 - Excellence, Talent, Impact: Ireland's Strategy for Research and Development,
+Science, and Technology (Science Foundation Ireland, 2015)
+161. Investing in Business, Enterprise and Innovation2018-2027 (Government of Ireland, 2018)
+162. Research Priority Areas 2018-2023 (Government of Ireland, 2018)
+163. National Research and Innovation Strategy 2021-27 Consultation Paper (Government of Ireland,
+2021)
+164. Shaping Our Future Science Foundation Ireland Strategy 2025 (Science Foundation Ireland,
+2021)
+Italy Ministerial plan 165. Piano Nazionale Industria 4.0 [Piano Nazionale Industria 4.0 ] (Ministry of economic
+development, 2016)
+166. National Strategy for Sustainable Development [Strategia Nazionale per lo sviluppo sostenibile ]
+(Ministry of education, university and research; Ministry of economic development, 2017)
+Government 167. Proposals for an Italian Artificial Intelligence Strategy [Proposte per una Strategia italiana per
+
+===== PDF_PAGE 40 =====
+40  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+strategy l'intelligenza artificiale] (Ministry of economic development, 2020)
+168. The Three-Year Plan for Information Technology in Public Administration [Il Piano Triennale per
+l’informatica nella Pubblica Amministrazione ] (Agency for Digital Italy; Department for Digital
+Transformation, 2020)
+169. National Recovery and Resilience Plan [Piano Nazionale di Ripresa e Resilienza] (Council of
+Ministers, 2021)
+STI strategy 170. Horizon 2020 (Ministry of Education, University and Research, 2013)
+171. National Research Programme 2015-2020 [Programma Nazionale per la Ricerca 2015-2020]
+(Ministry of university and research, 2016)
+172. National Strategy for Smart Specialisation [Strategia nazionale di specializzazione intelligente ]
+(Ministry of the environment and protection of territory and sea, 2016)
+173. National Programme for Research Infrastructures 2014-2020 [Programma Nazionale per le
+Infrastrutture di Ricerca 2014-2020 ] (Ministry of university and research, 2016)
+174. Strategy for technological innovation and digitisation of the country 2025 [Strategia per
+l’innovazione tecnologica e la digitalizzazione del Paese 2025 ] (Ministry of technological
+innovation and digital transition, 2019)
+175. National Research Programme 2021-2027 [Programma Nazionale per la Ricerca 2021-2027 ]
+(Ministry of university and research, 2020)
+Japan Legislation 176. Basic Law on Science, Technology and Innovation [科学技術・イノベーション基本法 ]
+(Parliament of Japan, 1995)
+177. Act on Stimulating the Creation of Science, Technology, and Innovation (Partial Amendment to
+the Act on Strengthening Research and Development Capability) [科学技術・イノベーショ
+ン創出の活性化に関する法律（研究開発力強化法の一部改正）] (Parliament of
+Japan, 2018)
+178. Basic Act on Science, Technology and Innovation (Amendment of the Basic Act on Science,
+Technology and Innovation). [科学技術・イノベーション基本法（科学技術基本法の
+改正）] (Parliament of Japan, 2020)
+179. Partial amendment to the Act on the Stimulation of Science, Technology and Innovation
+Creation. [科学技術・イノベーション創出の活性化に関する法律の一部改正 ]
+(Parliament of Japan, 2020)
+Government
+strategy
+180. Strategic Energy Plan (2018)
+181. Changes to the Declaration on the Creation of the World's Most Advanced Digital Nation and the
+Basic Plan for the Promotion of the Use of Public and Private Data [世界最先端デジタル国
+家創造宣言・官民データ活用推進基本計画の変更について ] (IT Comprehensive
+Strategy Office, 2019)
+182. AI Strategy 2019 (Cabinet Office, 2019)
+183. Emergency Economic Measures to Cope with the Novel Coronavirus (COVID-19)(Cabinet
+Office, 2020)
+184. Comprehensive Economic Measures to Secure People's Lives and Livelihoods toward Relief
+and Hope (Cabinet Office, 2020)
+185. Annual report on energy [エネルギーに関する年次報告] (Ministry of Economy, Trade and
+Industry (METI), 2020)
+186. Basic policy on reforms for the digital society [デジタル社会の実現に向けた改革の基本
+方針] (Cabinet Office, 2020)
+187. Economic Measures for Overcoming COVID-19 and Opening Up a New Era (Cabinet Office,
+2021)
+188. Energy situation and main measures. [エネルギーをめぐる状況と主な対策] (Ministry of
+Economy, Trade and Industry (METI), 2021)
+189. Green growth strategy associated with carbon neutrality in 2050. [2050年カーボンニュート
+ラルに伴うグリーン成長戦略] (Ministry of Economy, Trade and Industry (METI), 2021)
+190. Basic Energy Plan [エネルギー基本計画] (Ministry of Economy, Trade and Industry (METI),
+2021)
+191. Basic policy for Green Innovation Fund projects [グリーンイノベーション基金事業の基
+本方針] (Prime Minister's Office, 2021)
+192. Draft global warming action plan [地球温暖化対策計画（案）] (Ministry of Economy, Trade
+and Industry (METI), 2021)
+
+===== PDF_PAGE 41 =====
+INNOVATION POLICY TRANSFORMED?  41
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+193. National Data Strategy (Digital Agency, 2021)
+194. Semiconductor and digital industry strategy [半導体・デジタル産業戦略] (Ministry of
+Economy, Trade and Industry (METI), 2021)
+STI strategy 195. Science and Technology Basic Plan [科学技術基本計画] (Cabinet Office, 2016)
+196. Integrated Innovation Strategy 2019 [統合イノベーション戦略 2019] (Cabinet Office,
+2019)
+197. Integrated Innovation Strategy 2020 (Cabinet Office, 2020)
+198. Industrial Technology Vision 2020. [産業技術ビジョン2020 ] (Cabinet Office, 2020)
+199. Integrated innovation strategy 2021 [統合イノベーション戦略 2021] (Cabinet Office, 2021)
+200. 6th Science, Technology, and Innovation Basic Plan (Cabinet Office, 2021)
+Korea Ministerial plan 201. 2021 Work Plan [과학기술정보통신부2021년도 업무계획] (Ministry of Science and ICT,
+2021)
+202. Comprehensive Implementation Plan 2021 [2021년도 과학기술정보통신부연구개발사업
+종합시행계획] (Ministry of Science and ICT, 2021)
+Government
+strategy
+203. National Strategy for Artificial Intelligence (Government of Korea, 2019)
+204. Korea's Great Leap Forward as a Leader in Comprehensive Planning for the "Korean New Deal"
+[「한국판 뉴딜」 종합계획선도국가로 도약하는 대한민국 대전환] (Ministry of
+Planning and Finance, 2020)
+205. 2050 Carbon Neutral Strategy (Government of Korea, 2020)
+STI strategy 206. Government R&D in the $20 trillion eraGovernment R&DMid- to long-term investment strategy
+[정부R&D20조원시대의정부R&D중장기투자전략] (Ministry of Science and ICT, 2019)
+207. 2021 Action Plan for Science Gifted and Talented [2021년도 과학영재양성사업 시행계획]
+(Ministry of Science and ICT, 2021)
+Luxembourg Ministerial plan 208. Impact: driving our excellence 2019, Annual Report [L’impact: le moteur de notre excellence,
+Rapport annuel 2019] (Luxembourg Institute of Science and Technology, 2020)
+209. Driving change in a changing world, Annual Report 2020 [Vecteur de changement dans un
+monde en mutation, Rapport annuel 2020] (Luxembourg Institute of Science and Technology,
+2021)
+Government
+strategy
+210. Luxembourg 2030 Third National Plan for Sustainable Development [Luxembourg 2030 3ème
+Plan National pour un Développement Durable] (Luxembourg 2030, 2019)
+211. National Plan for Smart, Sustainable and Inclusive Growth of Luxembourg 2019 (Government of
+the Grand Duchy of Luxembourg, 2019)
+212. National Plan for Smart, Sustainable and Inclusive Growth of Luxembourg 2020 (Government of
+the Grand Duchy of Luxembourg, 2020)
+213. Plan for the Restart and Resilience of the Grand Duchy of Luxembourg [Plan pour la Reprise et
+la Résilience du Grand-Duché de Luxembourg] (Plan for Restart and Resilience of the Grand
+Duchy of Luxembourg, 2021)
+214. National Plan for a Green,Digital and Inclusive Transition (Government of the Grand Duchy of
+Luxembourg, 2021)
+STI strategy 215. The Data-Driven Innovation Strategy for the Development of a Trusted and Sustainable
+Economy in Luxembourg (Ministry of the Economy, 2019)
+216. National Research and Innovation Strategy (Ministry of Higher Education and Research, 2020)
+Netherlands Ministerial plan 217. Flywheel of Innovation in the Netherlands: Strategic Plan 2018-2021 (Netherlands Organisation
+for Applied Scientific Research, 2017)
+218. Connecting Science and Society: NWO Strategy 2019-2022 (Netherlands Organisation for
+Applied Scientific Research, 2018)
+219. Connecting, Changing, Accelerating: TNO Strategy 2022-2025 (Netherlands Organisation for
+Applied Scientific Research, 2021)
+Government
+strategy
+220. Parliament letter with Strategic Action Plan for Artificial Intelligence [Kamerbrief met Strategisch
+Actieplan voor Artificiële Intelligentie] (Ministry of Economic Affairs and Climate Policy, 2019)
+221. Vision on Industry in the Netherlands (Government of the Netherlands, 2020)
+222. National Reform Programme (Government of the Netherlands, 2020)
+223. Integrated National Energy and Climate Plan (Ministry of Economic Affairs and Climate Policy,
+2021)
+
+===== PDF_PAGE 42 =====
+42  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+STI strategy 224. Science Vision 2025, choices for the future [Wetenschapsvisie 2025, keuzes voor de toekomst ]
+(Ministry of Education, Culture and Science, 2014)
+225. Parliamentary letter on innovation policy and the promotion of innovation: towards mission-
+driven innovation policy with impact [Kamerbrief over innovatiebeleid en de bevordering van
+innovatie: naar missiegedreven innovatiebeleid met impact] (Ministry of Economic Affairs and
+Climate Policy, 2018)
+226. Parliamentary letter on long-term growth strategy for the Netherlands [Kamerbrief over
+groeistrategie voor Nederland op de lange termijn] (Ministry of Economic Affairs and Climate
+Policy, 2019)
+227. Dutch Strategy to Strengthen Research and Innovation Ecosystems (Ministry of Economic
+Affairs and Climate Policy, 2021)
+New Zealand Ministerial plan 228. BIE Statement of Intent 2018–2022 (Ministry of Business, Innovation & Employment, 2018)
+229. BIE 2018/19 Annual ReportGrowing New Zealand for All (Ministry of Business, Innovation &
+Employment, 2019)
+230. Callaghan Innovation Annual Report 2019 (Callaghan Innovation, 2019)
+231. BIE 2019/20 Annual ReportGrowing New Zealand for All (Ministry of Business, Innovation &
+Employment, 2020)
+232. Callaghan Innovation Responding to a once-in-a-lifetime challenge (Callaghan Innovation, 2020)
+Government
+strategy
+233. National Statement of Science Investment 2015–2025 (Ministry of Business, Innovation &
+Employment, 2015)
+234. A Refreshed Industry Strategy in Response to COVID-19 (Ministry of Business, Innovation &
+Employment, 2020)
+STI strategy 235. New Zealand’s Research, Science & Innovation Strategy: Draft for Consultation (New Zealand
+Government, 2019)
+Slovakia Government
+strategy
+236. Low-Carbon Development Strategy of the Slovak Republic until 2030 with a View to 2050
+(Ministry of the Environment, 2017)
+237. Strategy for Adaptation of the Slovak Republic to Climate Change [Stratégia Adaptácie
+Slovenskej Republiky na Zmenu Klímy] (Ministry of the Environment, 2018)
+238. Action plan for the digital transformation of Slovakia for 2019 –2022 (Office of the Deputy Prime
+Minister for Investments and Information, 2018)
+239. Strategy of the Digital Transformation of Slovakia 2030 (Office of the Deputy Prime Minister for
+Investments and Information, 2018)
+240. Greener Slovakia: Strategy of the Environmental Policy of the Slovak Republic until 2030
+(Ministry of the Environment, 2019)
+241. National Reform Programme of the Slovak Republic 2019 [Národný program reforiem
+Slovenskej republiky 2019] (Government of Slovak Republic, 2019)
+242. Integrated National Energy and Climate Plan 2021-2030 [Integrovaný národnýenergetický
+aklimatickýplánna roky 2021 - 2030] (Ministry for the Economy, 2019)
+243. National Reform Programme of the Slovak Republic 2020 [Národný program reforiem
+Slovenskej republiky 2020] (Government of Slovak Republic, 2020)
+244. Renewal Plan [Plán Obnovy] (Government of the Slovak Republic, 2021)
+245. Stability programme of the Slovak Republic for the period 2021 to 2024 [Program stability
+Slovenskej republikyna roky 2021 až 2024] (Ministry of Finance, 2021)
+STI strategy 246. Through knowledge towards prosperity -Research and Innovation Strategy for Smart
+Specialisation of the Slovak Republic (Ministry of Investment, Regional Development and
+Informatization of the Slovak Republic, 2013)
+Spain Ministerial plan 247. Strategy Plan of CSIC 2018-2021 [Plan Estratégico del CSIC 2018-2021] (CSIC, 2018)
+248. Annual Action Plan of the State Research Agency for the year 2020 [Plan de Acción Anual de la
+Agencia Estatal de Investigación para el año 2020] (Agencia Estatal de Investigación, 2020)
+249. Annual Action Plan of the State Research Agency for the year 2021 [Plan de Acción Anual de la
+Agencia Estatal de Investigación para el año 2021] (Agencia Estatal de Investigación, 2021)
+250. CSIC Action Plan 2021 [Plan de Acción CSIC 2021] (CSIC, 2021)
+Government
+strategy
+251. The Digital Transformation of the Spanish Industry [La Transformación Digital de la Industria
+Española] (Ministry of Economic Affairs and Digital Transformation, 2015)
+252. National reform programme [Programa Nacional de Reformas] (Government of Spain, 2019)
+
+===== PDF_PAGE 43 =====
+INNOVATION POLICY TRANSFORMED?  43
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+253. Shock Plan for Science and Innovation [Plan de choque para la ciencia y la innovación]
+(Government of Spain, 2020)
+254. National Artificial Intelligence Strategy [Estrategia Nacional de Inteligencia Artificial] (Ministerio
+de Asuntos Económicos y Transformación Digital, 2020)
+255. Hydrogen Roadmap: a commitment to renewable hydrogen [Hoja de Ruta del Hidrógeno: una
+apuesta por el hidrógeno renovable] ( 2020)
+256. National Integrated Energy Plan for Climate 2021 - 2030 [Plan Nacional Integrado de Energía y
+Clima 2021-2030] (Ministerio de Transición Ecológica, 2020)
+257. National Reform Programme [Programa Nacional de Reformas] (Ministerio de Hacienda y
+Función Pública, 2020)
+258. Recovery, Transformation, and Resilience Plan [Plan de Recuperación, Transformación y
+Resiliencia] (Government of Spain, 2021)
+259. National Reform Programme [Programa Nacional de Reformas] (Ministerio de Hacienda y
+Función Pública, 2021)
+STI strategy 260. State Plan for Scientific and Technical Research and Innovation [Plan Estatal de Investigación
+Científica y Técnica y de Innovación] (Ministerio de Ciencia e Innovación, 2018)
+261. Spanish Strategy for Science, Technology, and Innovation 2021-2027 [EECTI Estrategia
+Española de Ciencia, Tecnología e Innovación 2021-2027] (EECTI, 2020)
+262. PEICTI State Plan for Scientific, Technical and Innovation Research 2021-2023 [PEICTI Plan
+Estatal de Investigación Científca, Técnica y de Innovación 2021-2023] (PEICTI, 2021)
+Sweden Legislation 263. Government Research Bill (Government of Sweden, 2016)
+264. Government Research & Innovation Bill (Government of Sweden, 2020)
+Government
+strategy
+265. Roadmap for Fossil Free Competitiveness (Government of Sweden, 2019)
+266. Sweden’s National Reform Programme 2019 (Government of Sweden, 2019)
+267. Sweden’s Trade and Investment Strategy (Government of Sweden, 2019)
+268. Circular Economy – Strategy for the Transition in Sweden (Government of Sweden, 2020)
+269. Strategy for Fossil Fuel Competitiveness: Sustainable Value Battery Chain (Ministry of the
+Environment, 2020)
+270. Sweden’s National Reform Programme 2020 (Government of Sweden, 2020)
+271. Sweden's recovery plan [Sveriges återhämtningsplan] (Government of Sweden, 2021)
+272. A sustainable digitalized Sweden 2030 – a proposal for a strategic programme (Vinnova
+Swedish Innovation , 2021)
+Switzerland Ministerial plan 273. Innosuisse Multiannual programme 2021-2024 [Innosuisse Programme pluriannuel 2021–2024]
+(Innosuisse, 2019)
+274. Innosuisse Annual Report 2019 [Innosuisse Rapport de gestion 2019] (Innosuisse, 2020)
+275. SNF Profile 2019-2020 [SNF Profile 2019-2020] (Swiss National Science Foundation, 2020)
+276. Innosuisse Annual Report 2020 [Innosuisse Rapport de gestion 2020] (Swiss National Science
+Foundation, 2021)
+Government
+strategy
+277. Sustainable Development Strategy 2016-2019 [Stratégie pour le Développement Durable 2016–
+2019] (Federal Council, 2016)
+278. Digital Switzerland Strategy [Stratégie Suisse numérique] (Federal Council, 2016)
+279. 2030 Sustainable Development Strategy [Stratégie pour le développement durable2030]
+(Federal Council, 2021)
+STI strategy 280. Switzerland's International Strategy for Education, Research and Innovation [Stratégie
+internationale de la Suisse dans le domaine formation, recherche et innovation] (Federal
+Council, 2018)
+United Kingdom Ministerial plan 281. UKRI Annual Reports and Accounts 2018-19 (UK Research and Innovation, 2019)
+282. UKRI Annual Reports and Accounts 2019-20 (UK Research and Innovation, 2020)
+Government
+strategy
+283. International Research and Innovation Strategy (HM Government, 2019)
+284. Our plan to re-build: The UK Government’s COVID-19 recovery strategy (HM Government,
+2020)
+285. Design in innovation strategy 2020-2024 (HM Government, 2020)
+286. Covid-19 response? Spring 2021 (HM Government, 2021)
+
+===== PDF_PAGE 44 =====
+44  INNOVATION POLICY TRANSFORMED?
+ OECD SCIENCE, TECHNOLOGY AND INDUSTRY WORKING PAPERS © OECD 2025
+287. UK Plant Science Research Strategy: A Green Roadmap for the Next Ten Years (Professor
+Jane Langdale CBE FRS, University of Oxford, 2021)
+288. Transforming our world with AI UKRI’s role in embracing the opportunity (UK Research and
+Innovation, 2021)
+STI strategy 289. UK Research and Development Roadmap (HM Government, 2020)
+United States Legislation 290. Department of Energy Research and Innovation Act (115th Congress, 2018)
+291. Coronavirus Aid, Relief and Economic Security Act (CARES) (116th Congress, 2020)
+292. American Rescue Plan Act of 2021 (117th Congress, 2021)
+Ministerial plan 293. Creating Technology Breakthroughs and New Capabilities for National Security, 2017 (Defense
+Advanced Research Projects Agency (DARPA), 2017)
+294. Building the Future, Investing in Discovery and Innovation: NSF Strategic Plan for Fiscal Years
+2018-2022 (National Science Foundation, 2018)
+295. Creating Technology Breakthroughs and New Capabilities for National Security, 2019 (Defense
+Advanced Research Projects Agency (DARPA), 2019)
+296. Advanced Research Projects Agency – Energy Annual Report for FY 2018 (Department of
+Energy, 2019)
+297. NIH-wide Strategic Plan: Fiscal Years 2021-2025 (National Institutes of Health, 2020)
+298. NIH-Wide Strategic Plan for COVID-19 Research (Updated) (National Institutes of Health, 2021)
+Government
+strategy
+299. Assessing and Strengthening the Manufacturing and Defense Industrial Base and Supply Chain
+Resiliency of the United States (Interagency Task Force in Fulfilment of Executive Order 13806,
+2018)
+300. National Strategic Computing Initiative Update: Pioneering the Future of Computing (National
+Science and Technology Council, 2019)
+301. The National Artificial Intelligence Research and Development Strategic Plan: 2019 Update
+(National Science and Technology Council, 2019)
+302. Pioneering the Future Advanced Computing Ecosystem: A Strategic Plan (National Science and
+Technology Council, 2020)
+303. Hydrogen Program Plan (Department of Energy, 2020)
+304. A Strategic Vision for America’s Quantum Networks (The White House National Quantum
+Coordination Office, 2020)
+305. Manufacturing USA Report to Congress Fiscal Year 2019 (Manufacturing USA, 2020)
+306. Recommended Practices for Strengthening the Security and Integrity of America’s Science and
+Technology Research Enterprise (National Science and Technology Council, 2021)
+307. Final Report of the National Security Commission on Artificial Intelligence (National Security
+Commission on Artificial Intelligence, 2021)
+308. Building Resilient Supply Chains, Revitalizing American Manufacturing, and Fostering Broad-
+Based Growth (White House, 2021)
+309. Manufacturing USA Report to Congress Fiscal Year 2020 Including COVID-19 Emergency
+Response Highlights (Manufacturing USA, 2021)
+STI strategy 310. Fiscal Year 2021 Administration Research and Development Budget Priorities (Office of
+Management and Budget and Office of Science and Technology Policy, 2019)
+311. Fiscal Year (FY) 2022 Administration Research and Development Budget Priorities and Cross-
+cutting Actions (Office of Management and Budget and Office of Science and Technology
+Policy, 2020)
+312. Multi-Agency Research and Development Priorities for the FY 2023 Budget (Executive Office of
+the President, 2021)
+313. A Letter to Dr. Eric S. Lander, the President’s Science Advisor and Nominee as Director of the
+Office of Science and Technology Policy (White House, 2021)
