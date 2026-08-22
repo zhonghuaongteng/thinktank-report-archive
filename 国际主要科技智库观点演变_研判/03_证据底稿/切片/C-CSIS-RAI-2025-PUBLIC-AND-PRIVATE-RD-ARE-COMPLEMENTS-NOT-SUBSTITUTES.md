@@ -1,0 +1,33 @@
+# Public and Private R&D Are Complements—Not Substitutes
+
+- 报告ID：C-CSIS-RAI-2025-PUBLIC-AND-PRIVATE-RD-ARE-COMPLEMENTS-NOT-SUBSTITUTES
+- 科技创新复用角色：公共研发与企业研发互补关系及其创新外溢机制
+- 主轴：科学体系与研发投入；技术创新与产业转化
+
+## 科学技术创新与中国定向摘录
+
+The U.S. research and development (R&D) enterprise is a vital component of the United States’ innovation ecosystem, powering advances in science and technology that translate into economic and national security advantages for the nation.
+
+Over the past several decades, private sector R&D investment has grown rapidly, far outpacing federal spending in dollar terms. This is good news. The private sector not only has access to more capital, but its focus on commercialization delivers tangible benefits through new products and services.
+
+At the same time, government support remains an essential part of the U.S. innovation ecosystem. Public and private R&D funding are complementary, and both are necessary to sustain the United States' long-term technological leadership.
+
+Understanding the role of each funding source starts with a clear view of the three types of R&D:
+
+Basic research, which seeks to generate new knowledge without necessarily having a specific application in mind; Applied research, which uses that knowledge to solve real-world problems; and Experimental development, which turns discoveries into new or improved products, tools, or technologies.
+
+For example, basic research explores how computers can learn, reason, and understand language. Applied research builds on that by developing practical capabilities like speech recognition, image processing, and translation. And experimental development turns those advances into real-world tools—like chatbots—that bring artificial intelligence to consumers.
+
+While both the public and private sectors fund all three types of research, their proportion of funding for each varies significantly. Private firms tend to invest most heavily in applied research and experimental development, where outcomes are more immediate and commercially viable. They invest fewer resources in basic research, which is riskier, longer-term, and harder to monetize.
+
+The federal government, on the other hand, is the principal funder of basic research. It supports work that may be difficult to commercialize quickly, yet is essential for generating new knowledge. Publicly funded basic research, in turn, promotes private investment into applied research and experimental development, “crowding in” funding as firms work to transform scientific insights into new capabilities and products.
+
+This dynamic is reflected in the overall makeup of U.S. R&D. As the private sector dominates R&D investment, and largely focuses on applied research and experimental development, overall U.S. R&D funding skews heavily towards later stage research. In 2023, the United States invested over four times as much in experimental development as it did in basic research, making public investments in basic research that much more vital.
+
+When the private sector does fund basic research, differing incentives with the public sector lead to different approaches and outcomes. Private research tends to be more narrowly focused, less widely shared, and concentrated in sectors like information technology and pharmaceuticals, as firms aim to capture the returns of their investments. Public research, by contrast, is broadly distributed, openly published, and spans a wide range of scientific fields—fueling downstream innovation across academia, startups, and industry.
+
+Though this downstream innovation is not always immediate, it nonetheless strengthens the economy and improves lives over time. For instance, studies of frog skin secretions led to oral rehydration therapy, a simple but life-saving treatment credited with preventing over 50 million deaths. Research into Gila monster venom helped pave the way for GLP-1 drugs like Ozempic, now revolutionizing diabetes and obesity care. And investigations into fly reproduction led to the sterile screwworm fly—an elegant, low-tech solution that saves U.S. ranchers $200 million annually. In each case, after basic research generated new knowledge, applied research and experimental development built on that knowledge to deliver transformative new products.
+
+As China and other nations increasingly invest in innovation, the United States needs sustained investment at scale across all three stages of R&D to remain globally competitive. The recent update to the R&D tax credit in the reconciliation bill is a positive step toward strengthening private-sector investment. But federal support, particularly for basic research, remains irreplaceable. It provides the foundation for the United States’ technological and economic strength today, and is its path to growth and security in the future.
+
+Image Chris Borges Fellow and Senior Program Manager, Economic Security and Technology Department PROGRAMS & PROJECTS Renewing American Innovation Economic Security and Technology R&D Infrastructure & Innovation

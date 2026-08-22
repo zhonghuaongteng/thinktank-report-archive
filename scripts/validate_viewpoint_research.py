@@ -137,6 +137,32 @@ def expected_fas_selected_ids() -> set[str]:
     }
 
 
+def expected_csis_rai_selected_ids() -> set[str]:
+    return {
+        "C-CSIS-RAI-2021-WHY-RENEWING-AMERICAN-INNOVATION-ENDLESS-FRONTIER-ACT-AND-BIDENS-BID-MAINTAINING-US-GLOBAL",
+        "C-CSIS-RAI-2021-US-COMPETITIVENESS-WHERE-DO-WE-STAND-WHAT-DO-WE-DO-NOW",
+        "C-CSIS-RAI-2021-WINNING-TECH-TALENT-COMPETITION",
+        "C-CSIS-RAI-2022-WILL-AMERICA-SQUANDER-ITS-NEW-SPUTNIK-MOMENT",
+        "C-CSIS-RAI-2022-UNTAPPED-INNOVATION",
+        "C-CSIS-RAI-2023-CHINAS-DRIVE-LEADERSHIP-GLOBAL-RESEARCH-AND-DEVELOPMENT",
+        "C-CSIS-RAI-2023-IMPLEMENTING-CHIPS-ACT-SEMATECHS-LESSONS-NATIONAL-SEMICONDUCTOR-TECHNOLOGY-CENTER",
+        "C-CSIS-RAI-2023-INCLUSIVE-INNOVATION-US-ECONOMIC-GROWTH-AND-RESILIENCY",
+        "C-CSIS-RAI-2023-QUANTUM-CANT-BE-BUSINESS-USUAL-ISSUES-REAUTHORIZATION-NATIONAL-QUANTUM-INITIATIVE-ACT",
+        "C-CSIS-RAI-2024-FRENCH-MODEL-COOPERATIVE-SEMICONDUCTOR-RESEARCH-LESSONS-CEA-LETI",
+        "C-CSIS-RAI-2024-INVESTING-SCIENCE-AND-TECHNOLOGY",
+        "C-CSIS-RAI-2024-UNDERSTANDING-US-BIOPHARMACEUTICAL-INNOVATION-ECOSYSTEM",
+        "C-CSIS-RAI-2024-IMEC-WORLD-LEADING-COOPERATIVE-RESEARCH-CENTER-MICROELECTRONICS",
+        "C-CSIS-RAI-2025-ALBANY-NANOTECHS-POTENTIAL-SUPPORT-NATIONAL-SEMICONDUCTOR-TECHNOLOGY-CENTER",
+        "C-CSIS-RAI-2025-NETHERLANDS-INNOVATION-LANDSCAPE",
+        "C-CSIS-RAI-2025-INNOVATION-LIGHTBULB-EXAMINING-CHINAS-STRATEGIC-REGIONAL-INNOVATION-AND-RD-DISTRIBUTION",
+        "C-CSIS-RAI-2025-PUBLIC-AND-PRIVATE-RD-ARE-COMPLEMENTS-NOT-SUBSTITUTES",
+        "C-CSIS-RAI-2025-COMPETING-CHINAS-PUBLIC-RD-MODEL-LESSONS-AND-RISKS-US-INNOVATION-STRATEGY",
+        "C-CSIS-RAI-2026-UNDERSTANDING-CHINAS-QUEST-QUANTUM-ADVANCEMENT",
+        "C-CSIS-RAI-2026-LEVERAGING-SBIR-QUANTUM-COMMERCIALIZATION-AND-SUPPLY-CHAIN-GROWTH",
+        "C-CSIS-RAI-2026-POWERING-INNOVATION-DATA-CENTERS-COMPUTE-AND-US-COMPETITIVENESS",
+    }
+
+
 def expected_catalog_size(
     seed_count: int,
     catalog_asset_count: int,
@@ -248,6 +274,8 @@ def main() -> None:
         "172_ITIF科技创新机制与中国比较跨期精选全文台账.csv", "173_ITIF科技创新机制与中国比较跨期精选全文结果.md",
         "174_FAS报告与政策备忘录近十年轻量总目录.csv", "175_FAS报告与政策备忘录近十年轻量总目录结果.md",
         "176_FAS科技创新机制与中国比较跨期精选全文台账.csv", "177_FAS科技创新机制与中国比较跨期精选全文结果.md",
+        "178_CSIS_RAI科技创新项目轻量总目录.csv", "179_CSIS_RAI科技创新项目轻量总目录结果.md",
+        "180_CSIS_RAI科学技术创新机制与中国比较跨期精选全文台账.csv", "181_CSIS_RAI科学技术创新机制与中国比较跨期精选全文结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -258,7 +286,7 @@ def main() -> None:
     evidence = rows(root / "09_观点变化证据表.csv")
     assert len(seeds) == 49, len(seeds)
     assert len(evidence) == 24, len(evidence)
-    assert len(list((root / "02_机构轨迹卡").glob("*.md"))) == 11
+    assert len(list((root / "02_机构轨迹卡").glob("*.md"))) == 12
     pdfs = list((root / "03_证据底稿" / "原文PDF").glob("*.pdf"))
     assert len(list((root / "03_证据底稿" / "文本").glob("*.txt"))) >= len(pdfs)
     assert len(list((root / "03_证据底稿" / "切片").glob("*.md"))) >= len(pdfs)
@@ -784,6 +812,34 @@ def main() -> None:
         and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
         for r in fas_selected
     )
+    csis_rai_light = rows(root / "178_CSIS_RAI科技创新项目轻量总目录.csv")
+    assert len(csis_rai_light) == 176
+    assert {year: sum(r["发布日期"].startswith(str(year)) for r in csis_rai_light) for year in range(2021, 2027)} == {
+        2021: 16, 2022: 35, 2023: 32, 2024: 36, 2025: 35, 2026: 22,
+    }
+    assert sum(r["官方内容类型"] == "Report" for r in csis_rai_light) == 43
+    assert sum(r["官方内容类型"] == "Article" for r in csis_rai_light) == 133
+    assert sum(r["科技创新相关度"] == "核心" for r in csis_rai_light) == 156
+    assert sum(r["科技创新相关度"] == "支撑" for r in csis_rai_light) == 6
+    assert sum(r["科技创新相关度"] == "语境" for r in csis_rai_light) == 14
+    assert sum(r["中国直接信号"] == "是" for r in csis_rai_light) == 35
+    assert len({r["官方落地页"].rstrip("/") for r in csis_rai_light}) == 176
+    assert all(r["官方落地页"].startswith(("https://www.csis.org/", "https://features.csis.org/")) for r in csis_rai_light)
+    csis_rai_selected = rows(root / "180_CSIS_RAI科学技术创新机制与中国比较跨期精选全文台账.csv")
+    assert {r["报告ID"] for r in csis_rai_selected} == expected_csis_rai_selected_ids()
+    assert sum(r["资产类型"] == "官方PDF" for r in csis_rai_selected) == 16
+    assert sum(r["资产类型"] == "官方网页正文" for r in csis_rai_selected) == 5
+    assert sum(r["中国直接信号"] == "是" for r in csis_rai_selected) == 10
+    assert sum(int(r["页数"]) for r in csis_rai_selected) == 260
+    assert sum(int(r["字节数"]) for r in csis_rai_selected) == 15118044
+    assert sum(int(r["清洗文本字符数"]) for r in csis_rai_selected) == 723777
+    assert sum(int(r["China词形命中数"]) for r in csis_rai_selected) == 737
+    assert all(
+        Path(r["本地原始资产"]).exists() and Path(r["本地页面HTML"]).exists()
+        and Path(r["本地文本"]).exists() and Path(r["本地切片"]).exists()
+        and sha(Path(r["本地原始资产"])) == r["SHA256"]
+        for r in csis_rai_selected
+    )
     stepi_assets = rows(root / "60_STEPI韩文科技与中国专题增补台账.csv")
     assert len(stepi_assets) == 518, len(stepi_assets)
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 476
@@ -838,7 +894,7 @@ def main() -> None:
     gap_matrix = rows(root / "69_机构节点主题覆盖缺口矩阵.csv")
     targeted_queue = rows(root / "70_定点补源优先队列.csv")
     catalog_queue = rows(root / "72_轻量目录扩展优先队列.csv")
-    assert len(gap_matrix) == 1050
+    assert len(gap_matrix) == 1080
     assert {r["战略主题"] for r in gap_matrix} == {
         "T1_科学体系与基础研究", "T2_技术创新与关键技术", "T3_创新政策与研发治理",
         "T4_人才大学与科研组织", "T5_产业创新转化与区域生态", "T6_国际合作开放科学与比较",
@@ -939,7 +995,9 @@ def main() -> None:
     assert sum(r["全文策略"].startswith("总目录保留") for r in ifp_light) == 139
     assert sum(r["全文策略"].startswith("已进入精选全文") for r in itif_light) == 18
     assert sum(r["全文策略"].startswith("总目录保留") for r in itif_light) == 651
-    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1050
+    assert sum(r["全文策略"].startswith("已进入精选全文") for r in csis_rai_light) == 21
+    assert sum(r["全文策略"].startswith("总目录保留") for r in csis_rai_light) == 155
+    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1080
     assert len(rows(root / "70_定点补源优先队列.csv")) == 0
     assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 0
     review = rows(root / "92_定点全文候选证据增量复核台账.csv")
@@ -1016,7 +1074,7 @@ def main() -> None:
         nistep_asset_count=len(nistep_catalog),
         stepi_asset_count=len(stepi_catalog),
         kistep_asset_count=len(kistep_catalog),
-        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5 + 6 + 6 + 15 + 118 + 75 + 155 + 646 + 625,
+        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5 + 6 + 6 + 15 + 118 + 75 + 155 + 646 + 625 + 176,
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -1047,6 +1105,7 @@ def main() -> None:
             (nesta_selected, ("本地PDF",)),
             (rathenau_selected, ("本地原始资产",)),
             (ifp_selected, ("本地原始资产",)),
+            (csis_rai_selected, ("本地原始资产",)),
             (stepi_assets, ("本地原始资产",)),
             (stepi_series, ("本地原始资产",)),
             (kistep_assets, ("本地原始资产",)),
@@ -1243,13 +1302,17 @@ def main() -> None:
         ("175_FAS报告与政策备忘录近十年轻量总目录结果.md", "国际科技智库观点演变_FAS报告与政策备忘录近十年轻量总目录结果.md"),
         ("176_FAS科技创新机制与中国比较跨期精选全文台账.csv", "国际科技智库观点演变_FAS科技创新机制与中国比较跨期精选全文台账.csv"),
         ("177_FAS科技创新机制与中国比较跨期精选全文结果.md", "国际科技智库观点演变_FAS科技创新机制与中国比较跨期精选全文结果.md"),
+        ("178_CSIS_RAI科技创新项目轻量总目录.csv", "国际科技智库观点演变_CSIS_RAI科技创新项目轻量总目录.csv"),
+        ("179_CSIS_RAI科技创新项目轻量总目录结果.md", "国际科技智库观点演变_CSIS_RAI科技创新项目轻量总目录结果.md"),
+        ("180_CSIS_RAI科学技术创新机制与中国比较跨期精选全文台账.csv", "国际科技智库观点演变_CSIS_RAI科学技术创新机制与中国比较跨期精选全文台账.csv"),
+        ("181_CSIS_RAI科学技术创新机制与中国比较跨期精选全文结果.md", "国际科技智库观点演变_CSIS_RAI科学技术创新机制与中国比较跨期精选全文结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv"))
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "06_数据资产" / "数据资产清单.csv"))
     print("viewpoint_research_validation=ok")
-    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=11 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)} crds_assets={len(crds_assets)} nistep_assets={len(nistep_assets)} stepi_assets={len(stepi_assets)} kistep_assets={len(kistep_assets)}")
+    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=12 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)} crds_assets={len(crds_assets)} nistep_assets={len(nistep_assets)} stepi_assets={len(stepi_assets)} kistep_assets={len(kistep_assets)}")
 
 
 if __name__ == "__main__":

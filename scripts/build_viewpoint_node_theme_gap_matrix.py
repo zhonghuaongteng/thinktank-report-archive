@@ -104,6 +104,7 @@ TIER_B = {
     "stanford-hai",
     "us-ostp",
     "fas",
+    "csis-rai",
 }
 
 TIER_LABEL = {
@@ -130,6 +131,7 @@ KNOWN_PROJECT_START = {
     "atlantic-council-geotech": 2020,
     "ifp": 2021,
     "stanford-hai": 2019,
+    "csis-rai": 2021,
 }
 NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1, "eu-eis": 1, "unesco-science": 1, "unctad-tir": 1, "wipo-wipr": 1, "nesta": 1, "rathenau": 1, "ifp": 1}
 CATALOG_NODE_EXEMPTIONS = {("unctad-tir", "N2")}
@@ -226,6 +228,7 @@ def fulltext_queue_suppressed(row: dict[str, str]) -> bool:
         or "机构精选已完成；其余正式成果保留轻量目录" in status
         or "ITIF跨期精选已完成；其余正式报告保留轻量目录" in status
         or "FAS跨期精选已完成；其余报告与政策备忘录保留轻量目录" in status
+        or "CSIS RAI跨期精选已完成；其余Report/Article保留轻量目录" in status
     )
 
 
