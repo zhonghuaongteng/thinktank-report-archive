@@ -94,7 +94,7 @@ FAMILY_ALIASES = {"merics-tech": "merics"}
 
 TIER_A = {
     "oecd-sti", "cset", "merics", "jst-crds", "nistep", "stepi", "kistep", "fraunhofer-isi", "wipo-gii",
-    "nsf-nsb-sei", "eu-srip",
+    "nsf-nsb-sei", "eu-srip", "eu-eis",
 }
 TIER_B = {
     "belfer",
@@ -130,7 +130,7 @@ KNOWN_PROJECT_START = {
     "ifp": 2021,
     "stanford-hai": 2019,
 }
-NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1}
+NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1, "eu-eis": 1}
 KNOWN_SERIES_NEXT_RELEASE = {"eu-srip": "2026-10-01"}
 
 
