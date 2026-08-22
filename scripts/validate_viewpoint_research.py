@@ -105,6 +105,7 @@ def main() -> None:
         "110_第十批OECD科学体系与科研机制纵向全文候选复核台账.csv", "111_第十批OECD科学体系与科研机制纵向全文候选复核结果.md",
         "112_STEPI韩文扫描件OCR补全台账.csv", "113_STEPI韩文扫描件OCR补全结果.md",
         "114_KISTEP高价值韩文扫描件OCR补全台账.csv", "115_KISTEP高价值韩文扫描件OCR补全结果.md",
+        "116_KISTEP科技政策与AI半导体扫描件OCR补全台账.csv", "117_KISTEP科技政策与AI半导体扫描件OCR补全结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -412,10 +413,10 @@ def main() -> None:
     assert len(kistep_assets) == 1174, len(kistep_assets)
     assert sum(bool(r["本地原始资产"]) for r in kistep_assets) == 61
     assert sum(r["文本质量"] == "可检索文本" for r in kistep_assets) == 55
-    assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in kistep_assets) == 59
-    assert sum(r["本地状态"] == "官方PDF已保存并完成韩文OCR" for r in kistep_assets) == 2
-    assert sum(r["文本质量"] == "韩文OCR可检索文本" for r in kistep_assets) == 2
-    assert sum(r["文本质量"] == "图像型PDF，OCR待补" for r in kistep_assets) == 4
+    assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in kistep_assets) == 57
+    assert sum(r["本地状态"] == "官方PDF已保存并完成韩文OCR" for r in kistep_assets) == 4
+    assert sum(r["文本质量"] == "韩文OCR可检索文本" for r in kistep_assets) == 4
+    assert sum(r["文本质量"] == "图像型PDF，OCR待补" for r in kistep_assets) == 2
     assert sum(r["文本质量"] == "官方目录无本地正文" for r in kistep_assets) == 1113
     assert sum(r["观察窗"] == "W1" for r in kistep_assets) == 36
     assert sum(r["观察窗"] == "W2" for r in kistep_assets) == 496
@@ -440,6 +441,13 @@ def main() -> None:
     assert sum(int(r["PDF页数"]) for r in kistep_ocr) == 282
     assert sum(int(r["OCR字符数"]) for r in kistep_ocr) == 231869
     assert {r["报告ID"] for r in kistep_ocr} == {
+        "C-KISTEP-RES0220200140", "C-KISTEP-RES0220260109"
+    }
+    kistep_ocr_second = rows(root / "116_KISTEP科技政策与AI半导体扫描件OCR补全台账.csv")
+    assert len(kistep_ocr_second) == 2
+    assert sum(int(r["PDF页数"]) for r in kistep_ocr_second) == 624
+    assert sum(int(r["OCR字符数"]) for r in kistep_ocr_second) == 512245
+    assert {r["报告ID"] for r in kistep_ocr + kistep_ocr_second} == {
         r["报告ID"] for r in kistep_assets if r["文本质量"] == "韩文OCR可检索文本"
     }
     kistep_catalog = [r for r in catalog if r["报告ID"].startswith("C-KISTEP-")]
@@ -695,6 +703,8 @@ def main() -> None:
         ("113_STEPI韩文扫描件OCR补全结果.md", "国际科技智库观点演变_STEPI韩文扫描件OCR补全结果.md"),
         ("114_KISTEP高价值韩文扫描件OCR补全台账.csv", "国际科技智库观点演变_KISTEP高价值韩文扫描件OCR补全台账.csv"),
         ("115_KISTEP高价值韩文扫描件OCR补全结果.md", "国际科技智库观点演变_KISTEP高价值韩文扫描件OCR补全结果.md"),
+        ("116_KISTEP科技政策与AI半导体扫描件OCR补全台账.csv", "国际科技智库观点演变_KISTEP科技政策与AI半导体扫描件OCR补全台账.csv"),
+        ("117_KISTEP科技政策与AI半导体扫描件OCR补全结果.md", "国际科技智库观点演变_KISTEP科技政策与AI半导体扫描件OCR补全结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
