@@ -10,6 +10,7 @@ from scripts.build_viewpoint_node_theme_gap_matrix import (
     china_relevance,
     catalog_node_exempt,
     candidate_priority_score,
+    catalog_minimum_for,
     classify_themes,
     evidence_status,
     fulltext_axis_eligible,
@@ -100,7 +101,12 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
 
     def test_sampled_annual_series_stays_out_of_fulltext_queue(self) -> None:
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；连续系列已完成跨期抽样"}))
+        self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "机构跨期精选已完成；低增量节点保留轻量目录"}))
         self.assertFalse(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；未下载全文"}))
+
+    def test_nesta_uses_observed_publication_volume_after_complete_site_scan(self) -> None:
+        self.assertEqual(catalog_minimum_for("nesta", "A"), 1)
+        self.assertEqual(catalog_minimum_for("oecd-sti", "A"), 5)
 
     def test_biennial_series_does_not_create_a_false_missing_publication_node(self) -> None:
         self.assertTrue(catalog_node_exempt("unctad-tir", "N2"))
@@ -157,6 +163,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertEqual(tier_for("unesco-science"), "A")
         self.assertEqual(tier_for("unctad-tir"), "A")
         self.assertEqual(tier_for("wipo-wipr"), "A")
+        self.assertEqual(tier_for("nesta"), "A")
         self.assertEqual(tier_for("ifp"), "B")
         self.assertEqual(tier_for("stanford-hai"), "B")
         self.assertEqual(tier_for("rand"), "C")

@@ -94,7 +94,7 @@ FAMILY_ALIASES = {"merics-tech": "merics"}
 
 TIER_A = {
     "oecd-sti", "cset", "merics", "jst-crds", "nistep", "stepi", "kistep", "fraunhofer-isi", "wipo-gii",
-    "nsf-nsb-sei", "eu-srip", "eu-eis", "unesco-science", "unctad-tir", "wipo-wipr",
+    "nsf-nsb-sei", "eu-srip", "eu-eis", "unesco-science", "unctad-tir", "wipo-wipr", "nesta",
 }
 TIER_B = {
     "belfer",
@@ -130,7 +130,7 @@ KNOWN_PROJECT_START = {
     "ifp": 2021,
     "stanford-hai": 2019,
 }
-NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1, "eu-eis": 1, "unesco-science": 1, "unctad-tir": 1, "wipo-wipr": 1}
+NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1, "eu-eis": 1, "unesco-science": 1, "unctad-tir": 1, "wipo-wipr": 1, "nesta": 1}
 CATALOG_NODE_EXEMPTIONS = {("unctad-tir", "N2")}
 KNOWN_SERIES_NEXT_RELEASE = {"eu-srip": "2026-10-01"}
 
@@ -178,6 +178,10 @@ def catalog_node_exempt(institution_id: str, node: str) -> bool:
     return (institution_id, node) in CATALOG_NODE_EXEMPTIONS
 
 
+def catalog_minimum_for(institution_id: str, tier: str) -> int:
+    return NODE_CATALOG_MINIMUM.get(institution_id, 5 if tier == "A" else 3)
+
+
 def classify_themes(row: dict[str, str], index_tags: set[str] | None = None) -> set[str]:
     text = " ".join(
         [
@@ -214,7 +218,11 @@ def fulltext_axis_eligible(title: str, themes: set[str]) -> bool:
 
 
 def fulltext_queue_suppressed(row: dict[str, str]) -> bool:
-    return "连续系列已完成跨期抽样" in row.get("原始资产状态", "")
+    status = row.get("原始资产状态", "")
+    return (
+        "连续系列已完成跨期抽样" in status
+        or "机构跨期精选已完成；低增量节点保留轻量目录" in status
+    )
 
 
 def evidence_status(catalog_count: int, asset_count: int, searchable_count: int, tier: str) -> str:
@@ -500,7 +508,7 @@ def build_outputs(
         tier = tier_for(family)
         if tier == "C":
             continue
-        minimum = NODE_CATALOG_MINIMUM.get(family, 5 if tier == "A" else 3)
+        minimum = catalog_minimum_for(family, tier)
         for node, label in NODE_LABELS.items():
             if catalog_node_exempt(family, node):
                 continue
