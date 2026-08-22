@@ -223,6 +223,14 @@ def expected_royal_society_selected_ids() -> set[str]:
     }
 
 
+def expected_acatech_selected_ids() -> set[str]:
+    return {
+        "C-DE-ACATECH-2791", "C-DE-ACATECH-2786", "C-DE-ACATECH-2739", "C-DE-ACATECH-2638",
+        "C-DE-ACATECH-18133", "C-DE-ACATECH-21040", "C-DE-ACATECH-27003", "C-DE-ACATECH-37012",
+        "C-DE-ACATECH-44304", "C-DE-ACATECH-51945", "C-DE-ACATECH-54254", "C-DE-ACATECH-60073",
+    }
+
+
 def expected_catalog_size(
     seed_count: int,
     catalog_asset_count: int,
@@ -346,6 +354,8 @@ def main() -> None:
         "196_RIETI科学技术创新机制与中国比较跨期精选全文台账.csv", "197_RIETI科学技术创新机制与中国比较跨期精选全文结果.md",
         "198_英国皇家学会科学技术创新专题轻量总目录.csv", "199_英国皇家学会科学技术创新专题轻量总目录结果.md",
         "200_英国皇家学会科学体系与技术创新跨期精选全文台账.csv", "201_英国皇家学会科学体系与技术创新跨期精选全文结果.md",
+        "202_acatech科学与技术创新正式成果轻量总目录.csv", "203_acatech科学与技术创新正式成果轻量总目录结果.md",
+        "204_acatech工程科学与技术创新跨期精选全文台账.csv", "205_acatech工程科学与技术创新跨期精选全文结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -356,7 +366,7 @@ def main() -> None:
     evidence = rows(root / "09_观点变化证据表.csv")
     assert len(seeds) == 49, len(seeds)
     assert len(evidence) == 24, len(evidence)
-    assert len(list((root / "02_机构轨迹卡").glob("*.md"))) == 17
+    assert len(list((root / "02_机构轨迹卡").glob("*.md"))) == 18
     pdfs = list((root / "03_证据底稿" / "原文PDF").glob("*.pdf"))
     assert len(list((root / "03_证据底稿" / "文本").glob("*.txt"))) >= len(pdfs)
     assert len(list((root / "03_证据底稿" / "切片").glob("*.md"))) >= len(pdfs)
@@ -1019,6 +1029,24 @@ def main() -> None:
         and hashlib.sha256(Path(r["本地全文代理"]).read_text(encoding="utf-8").encode("utf-8")).hexdigest() == r["SHA256"]
         for r in royal_society_selected
     )
+    acatech_light = rows(root / "202_acatech科学与技术创新正式成果轻量总目录.csv")
+    assert len(acatech_light) == 416
+    assert sum(r["科技创新相关度"] == "核心" for r in acatech_light) == 166
+    assert sum(r["科技创新相关度"] == "支撑" for r in acatech_light) == 221
+    assert sum(r["科技创新相关度"] == "语境" for r in acatech_light) == 29
+    assert sum(r["中国直接信号"] == "是" for r in acatech_light) == 1
+    acatech_selected = rows(root / "204_acatech工程科学与技术创新跨期精选全文台账.csv")
+    assert {r["报告ID"] for r in acatech_selected} == expected_acatech_selected_ids()
+    assert sum(int(r["页数"]) for r in acatech_selected) == 799
+    assert sum(int(r["字节数"]) for r in acatech_selected) == 34202051
+    assert sum(int(r["清洗文本字符数"]) for r in acatech_selected) == 2627140
+    assert sum(int(r["China词形命中数"]) > 0 for r in acatech_selected) == 7
+    assert not any(re.search(r"sicherheit|militär|verteidigung|souveränität|resilienz", r["报告名称"], re.I) for r in acatech_selected)
+    assert all(
+        Path(r["本地原始PDF"]).exists() and Path(r["本地文本"]).exists() and Path(r["本地切片"]).exists()
+        and sha(Path(r["本地原始PDF"])) == r["SHA256"]
+        for r in acatech_selected
+    )
     stepi_assets = rows(root / "60_STEPI韩文科技与中国专题增补台账.csv")
     assert len(stepi_assets) == 518, len(stepi_assets)
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 476
@@ -1073,7 +1101,7 @@ def main() -> None:
     gap_matrix = rows(root / "69_机构节点主题覆盖缺口矩阵.csv")
     targeted_queue = rows(root / "70_定点补源优先队列.csv")
     catalog_queue = rows(root / "72_轻量目录扩展优先队列.csv")
-    assert len(gap_matrix) == 1230
+    assert len(gap_matrix) == 1260
     assert {r["战略主题"] for r in gap_matrix} == {
         "T1_科学体系与基础研究", "T2_技术创新与关键技术", "T3_创新政策与研发治理",
         "T4_人才大学与科研组织", "T5_产业创新转化与区域生态", "T6_国际合作开放科学与比较",
@@ -1176,7 +1204,7 @@ def main() -> None:
     assert sum(r["全文策略"].startswith("总目录保留") for r in itif_light) == 651
     assert sum(r["全文策略"].startswith("已进入精选全文") for r in csis_rai_light) == 21
     assert sum(r["全文策略"].startswith("总目录保留") for r in csis_rai_light) == 155
-    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1230
+    assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1260
     assert len(rows(root / "70_定点补源优先队列.csv")) == 0
     assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 0
     review = rows(root / "92_定点全文候选证据增量复核台账.csv")
@@ -1253,7 +1281,7 @@ def main() -> None:
         nistep_asset_count=len(nistep_catalog),
         stepi_asset_count=len(stepi_catalog),
         kistep_asset_count=len(kistep_catalog),
-        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5 + 6 + 6 + 15 + 118 + 75 + 155 + 646 + 625 + 176 + 243 + 3743 + 152 + 224 + 42,
+        light_catalog_count=60 + 443 + 10 + 5 + 45 + 17 + 66 + 2 + 11 + 6 + 5 + 11 + 5 + 5 + 6 + 6 + 15 + 118 + 75 + 155 + 646 + 625 + 176 + 243 + 3743 + 152 + 224 + 42 + 416,
     ), len(catalog)
     expected_pdf_paths = {
         Path(value).resolve()
@@ -1289,6 +1317,7 @@ def main() -> None:
             (eu_jrc_selected, ("本地原始PDF",)),
             (efi_selected, ("本地原始PDF",)),
             (rieti_selected, ("本地原始PDF",)),
+            (acatech_selected, ("本地原始PDF",)),
             (stepi_assets, ("本地原始资产",)),
             (stepi_series, ("本地原始资产",)),
             (kistep_assets, ("本地原始资产",)),
@@ -1509,13 +1538,17 @@ def main() -> None:
         ("199_英国皇家学会科学技术创新专题轻量总目录结果.md", "国际科技智库观点演变_英国皇家学会科学技术创新专题轻量总目录结果.md"),
         ("200_英国皇家学会科学体系与技术创新跨期精选全文台账.csv", "国际科技智库观点演变_英国皇家学会科学体系与技术创新跨期精选全文台账.csv"),
         ("201_英国皇家学会科学体系与技术创新跨期精选全文结果.md", "国际科技智库观点演变_英国皇家学会科学体系与技术创新跨期精选全文结果.md"),
+        ("202_acatech科学与技术创新正式成果轻量总目录.csv", "国际科技智库观点演变_acatech科学与技术创新正式成果轻量总目录.csv"),
+        ("203_acatech科学与技术创新正式成果轻量总目录结果.md", "国际科技智库观点演变_acatech科学与技术创新正式成果轻量总目录结果.md"),
+        ("204_acatech工程科学与技术创新跨期精选全文台账.csv", "国际科技智库观点演变_acatech工程科学与技术创新跨期精选全文台账.csv"),
+        ("205_acatech工程科学与技术创新跨期精选全文结果.md", "国际科技智库观点演变_acatech工程科学与技术创新跨期精选全文结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv"))
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "06_数据资产" / "数据资产清单.csv"))
     print("viewpoint_research_validation=ok")
-    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=17 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)} crds_assets={len(crds_assets)} nistep_assets={len(nistep_assets)} stepi_assets={len(stepi_assets)} kistep_assets={len(kistep_assets)}")
+    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=18 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)} crds_assets={len(crds_assets)} nistep_assets={len(nistep_assets)} stepi_assets={len(stepi_assets)} kistep_assets={len(kistep_assets)}")
 
 
 if __name__ == "__main__":

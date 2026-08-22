@@ -63,7 +63,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         row = {"报告名称": "The PRC research ecosystem", "示踪问题": "", "预期用途": "", "样本角色": ""}
         self.assertTrue(china_relevance(row, set()))
 
-    def test_security_policy_basic_study_is_not_a_science_priority(self) -> None:
+    def test_security_policy_basic_study_requires_manual_review(self) -> None:
         row = {
             "报告名称": "국가R&D 보안정책 설계를 위한 기초연구",
             "示踪问题": "",
@@ -72,7 +72,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         }
         title_themes = classify_themes(row, set())
         self.assertFalse(is_security_dominant(title_themes))
-        self.assertTrue(fulltext_axis_eligible(row["报告名称"], title_themes))
+        self.assertFalse(fulltext_axis_eligible(row["报告名称"], title_themes))
 
     def test_military_ai_title_stays_out_of_fulltext_queue(self) -> None:
         title = "China's Military AI Roadblocks"
@@ -81,10 +81,10 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertIn("T7_安全供应链与治理边界", themes)
         self.assertFalse(fulltext_axis_eligible(title, themes))
 
-    def test_security_context_can_enter_when_innovation_mechanism_is_explicit(self) -> None:
+    def test_security_context_never_enters_the_automatic_fulltext_queue(self) -> None:
         title = "Research security and the national innovation system"
         themes = classify_themes({"报告名称": title, "示踪问题": ""}, set())
-        self.assertTrue(fulltext_axis_eligible(title, themes))
+        self.assertFalse(fulltext_axis_eligible(title, themes))
 
     def test_generic_global_topics_do_not_create_innovation_fulltext_candidates(self) -> None:
         for title in (
@@ -111,6 +111,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "EFI跨期精选已完成；其余成果保留轻量目录"}))
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "RIETI跨期精选已完成；其余成果保留轻量目录"}))
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "Royal Society跨期精选已完成；其余成果保留轻量目录"}))
+        self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "acatech跨期精选已完成；其余正式成果保留轻量目录"}))
         self.assertFalse(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；未下载全文"}))
 
     def test_nesta_uses_observed_publication_volume_after_complete_site_scan(self) -> None:
@@ -184,6 +185,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertEqual(tier_for("eu-jrc"), "A")
         self.assertEqual(tier_for("de-efi"), "A")
         self.assertEqual(tier_for("uk-royal-society"), "A")
+        self.assertEqual(tier_for("de-acatech"), "A")
         self.assertEqual(tier_for("jp-rieti"), "B")
         self.assertEqual(tier_for("ifp"), "B")
         self.assertEqual(tier_for("ifp"), "B")

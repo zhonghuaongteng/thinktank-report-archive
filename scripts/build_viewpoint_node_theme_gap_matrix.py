@@ -81,14 +81,6 @@ STRATEGIC_THEMES = {
 # 安全、供应链与治理只保留为解释创新条件变化的语境标签，不构成独立覆盖目标。
 COVERAGE_THEMES = tuple(theme for theme in STRATEGIC_THEMES if not theme.startswith("T7_"))
 SECURITY_CONTEXT_THEME = "T7_安全供应链与治理边界"
-SCIENCE_INNOVATION_MECHANISM = re.compile(
-    r"基础研究|基礎研究|기초연구|basic research|fundamental research|科学体系|科學體系|science system|"
-    r"research ecosystem|research infrastructure|研究开发|研究開発|研发|研發|연구개발|(?<![A-Za-z])R&D(?![A-Za-z])|"
-    r"innovation|创新|創新|혁신|technology development|technological development|"
-    r"科研组织|科研組織|research organization|大学|大學|university|talent|人才|人材|인재|"
-    r"funding|资助|資助|产业创新|產業創新|industrial innovation|commerciali[sz]|技术转移|技術移転",
-    re.I,
-)
 
 FAMILY_ALIASES = {"merics-tech": "merics"}
 
@@ -99,6 +91,7 @@ TIER_A = {
     "eu-jrc",
     "de-efi",
     "uk-royal-society",
+    "de-acatech",
 }
 TIER_B = {
     "belfer",
@@ -138,7 +131,7 @@ KNOWN_PROJECT_START = {
     "stanford-hai": 2019,
     "csis-rai": 2021,
 }
-NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1, "eu-eis": 1, "unesco-science": 1, "unctad-tir": 1, "wipo-wipr": 1, "nesta": 1, "rathenau": 1, "ifp": 1, "eu-stoa": 1, "eu-jrc": 1, "de-efi": 1, "uk-royal-society": 1}
+NODE_CATALOG_MINIMUM = {"wipo-gii": 1, "nsf-nsb-sei": 1, "eu-srip": 1, "eu-eis": 1, "unesco-science": 1, "unctad-tir": 1, "wipo-wipr": 1, "nesta": 1, "rathenau": 1, "ifp": 1, "eu-stoa": 1, "eu-jrc": 1, "de-efi": 1, "uk-royal-society": 1, "de-acatech": 1}
 CATALOG_NODE_EXEMPTIONS = {("unctad-tir", "N2")}
 KNOWN_SERIES_NEXT_RELEASE = {"eu-srip": "2026-10-01"}
 
@@ -217,12 +210,10 @@ def is_security_dominant(themes: set[str]) -> bool:
 
 
 def fulltext_axis_eligible(title: str, themes: set[str]) -> bool:
-    """Keep security-led titles in the light catalog unless they expose an STI mechanism."""
+    """Keep security-context titles out of the automatic full-text queue."""
     if not themes.intersection(COVERAGE_THEMES):
         return False
-    if SECURITY_CONTEXT_THEME not in themes:
-        return True
-    return bool(SCIENCE_INNOVATION_MECHANISM.search(title))
+    return SECURITY_CONTEXT_THEME not in themes
 
 
 def fulltext_queue_suppressed(row: dict[str, str]) -> bool:
@@ -239,6 +230,7 @@ def fulltext_queue_suppressed(row: dict[str, str]) -> bool:
         or "EFI跨期精选已完成；其余成果保留轻量目录" in status
         or "RIETI跨期精选已完成；其余成果保留轻量目录" in status
         or "Royal Society跨期精选已完成；其余成果保留轻量目录" in status
+        or "acatech跨期精选已完成；其余正式成果保留轻量目录" in status
     )
 
 
@@ -594,7 +586,7 @@ def build_outputs(
             "",
             "## 使用边界",
             "",
-            "矩阵只计算科学体系与基础研究、技术创新与关键技术、创新政策与研发治理、人才大学与科研组织、产业创新转化与区域生态、国际合作开放科学与比较六条主轴。安全、供应链与治理仅保留为语境标签，不生成独立覆盖缺口，也不单独触发全文补取；只有题名明确涉及科研投入、创新体系、人才组织、技术开发或成果转化机制时，相关材料才可进入全文候选。中国关联作为独立交叉维度统计。目录命中只表示题名、关键词或既有主题索引显示该机构关注相关议题。机构立场、因果解释和政策主张必须回查本地全文、原句与页码。‘空白’优先触发轻量目录扩展；‘仅目录候选’才可能触发精选全文补取；‘充分’单元停止扩张并转入观点编码。",
+            "矩阵只计算科学体系与基础研究、技术创新与关键技术、创新政策与研发治理、人才大学与科研组织、产业创新转化与区域生态、国际合作开放科学与比较六条主轴。安全、供应链与治理仅保留为语境标签，不生成独立覆盖缺口，也不由题名关键词自动触发全文补取；即使题名同时出现创新或研发词，也须经人工核验正文确实解释科研投入、人才与科研组织、技术路线、成果转化或国际科研合作机制后，才可定点纳入。中国关联作为独立交叉维度统计。目录命中只表示题名、关键词或既有主题索引显示该机构关注相关议题。机构立场、因果解释和政策主张必须回查本地全文、原句与页码。‘空白’优先触发轻量目录扩展；‘仅目录候选’才可能触发精选全文补取；‘充分’单元停止扩张并转入观点编码。",
             "",
             "定点队列是下载前复核清单。候选仍须检查官方落地页、附件类型、重复度和对战略转向证据链的增量，不能把队列自动解释为必须全部下载。",
         ]
