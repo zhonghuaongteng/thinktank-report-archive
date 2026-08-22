@@ -1,0 +1,1434 @@
+
+===== PDF_PAGE 1 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+
+Does New Public Management repel Talent?
+Findings from a Choice Experiment among
+German Researchers
+
+Torben Schubert, Henning Kroll, Maria Karaulova, Knut Blind
+
+Place: Karlsruhe
+Date: August 2024
+
+===== PDF_PAGE 2 =====
+Responsible for content
+Torben Schubert, torben.schubert@isi.fraunhofer.de; Henning Kroll, henning.kroll@isi.fraunhofer.de, Maria Karau-
+lova, maria.karaulova@isi.fraunhofer.de; Knut Blind, knut.blind@isi.fraunhofer.de
+Recommended citation
+Schubert, T.; Kroll, H.; Karaulova, M.; Blind, K. (2024): Does New Public Management repel Talent? Findings from a
+Choice Experiment among German Researchers, Discussion Papers Innovation Systems and Policy Analysis No. 84.
+Karlsruhe: Fraunhofer ISI.
+Published
+August 2024
+ISSN
+1612-1430
+Doi
+10.24406/w-34207
+
+===== PDF_PAGE 3 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | I
+
+Contents
+Abstract .......................................................................................................................................... 3
+1 Introduction.................................................................................................................... 4
+2 Theory .............................................................................................................................. 7
+2.1 The NPM approach in University Governance ........................................................................... 7
+2.2 Researchers' Job Decisions and NPM .......................................................................................... 7
+2.3 The Hypotheses ................................................................................................................................. 8
+2.3.1 Reliance on Third Party Funding ................................................................................................................................................ 9
+2.3.2 Performance-based pay .............................................................................................................................................................. 10
+2.3.3 Administrative Burden .................................................................................................................................................................. 12
+3 Data and Methodology ............................................................................................. 14
+3.1 Generating the email contacts ..................................................................................................... 14
+3.2 Survey design and data generation ............................................................................................ 14
+3.3 Design of the Choice experiment ................................................................................................ 14
+3.3.1 Estimation specification and identification strategy ....................................................................................................... 16
+4 Results ............................................................................................................................ 17
+4.1 Descriptive results ........................................................................................................................... 17
+4.2 Regression results ........................................................................................................................... 18
+4.3 Robustness checks .......................................................................................................................... 21
+5 Discussion .....................................................................................................................25
+6 Conclusions................................................................................................................... 27
+Literature ......................................................................................................................................28
+
+===== PDF_PAGE 4 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | II
+
+List of figures
+Figure 1: Visualization of the moderation effects .................................................................................. 20
+
+List of tables
+Table 1: The Set of Alternatives in the Choice Experiment............................................................... 15
+Table 2: Summary statistics .......................................................................................................................... 17
+Table 3: Baseline regression results (raw coefficients) ....................................................................... 18
+Table 4: Baseline results (STEM & computer science) ........................................................................ 21
+Table 5: Baseline results (social sciences and humanities) ............................................................... 22
+Table 6: Testing the IIA assumption with a nested logit model ..................................................... 23
+
+===== PDF_PAGE 5 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 3
+
+Abstract
+This paper analyses the factual effects of new public management governance on academics' job
+choice. Based on a large -scale choice experiment carried out with faculty from Germany's nine
+leading technical universities, we find that working environments characterised by levels of admin-
+istrative burden and high expectations concerning third party funding acquisition are detrimental
+to self-actualisation and hence tend to repel potential candidates. More specifically, we find this
+effect to be most pronounced for those candidates that universities would be strategically most
+interested in: researchers with a strong track record and an interdisciplinary profile. Not denying
+potential benefits of external incentives for existing faculty, we therefore suggest to acknowledge
+intrinsic motivation as the key driving factor of academics choices and to design future governance
+structures accordingly.
+
+===== PDF_PAGE 6 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 4
+
+1 Introduction
+The new public management (NPM) reforms have substantially transformed governance in public
+research organizations, universities implying a higher degree of managerial management and fi-
+nancialization . (Boer et al. 2007) . Their intention was to strengthen performance incentives and
+strategic managerial control (Enders et al. 2008; Boer et al. 2007), and indeed some empirical works
+provide evidence that there can be positive performance effects (Schubert 2009b; Bolli and Somogyi
+2011; Sandström and van den Besselaar 2018). Yet, the reforms also brought considerable structural
+changes (Muller-Camen and Salzgeber 2005; Hicks 2012) , revealing complexities and tensions of
+performance-oriented research governance (Bogt and Scapens 2012; Diefenbach 2009; Butler and
+Spoelstra 2014; Rebora and Turri 2013). As such, the effectiveness of NPM remains controversial. In
+particular it is notable that the frequent harsh criticism and resistance comes from the academic
+community itself, i.e. the very employees who are affected by these changes. It thus seems that the
+higher degree of financialization, competition and bureaucratization may not be well aligned with
+researchers' preference structures concerning their working environment (Thomas and Davies 2005;
+Leišytė and Gozlan 2023; Uljens et al. 2016). Irrespective of their potentially positive incentivization
+effects on existing faculty, we therefore suggest that an unintentional side-effect of NPM-inspired
+reforms is that it becomes unattractive for researchers to accept job offers in universities strongly
+relying on managerialized governance mechanisms. Thus, these may lose their competitive edge
+on the academic labour market and limit their own capacity to strategically develop through talent
+attraction. If present, this effect which is not yet documented in the existing literature is of critical
+importance for the strategic management of universities with potentially long -lasting effects on
+performance.
+Clearly NPM is not an unambiguously defined governance style and indeed differs strongly de-
+pending on the organizational and country contexts (Boer et al. 2007). Performance-based resource
+allocation, competitive third-party funding mechanisms and the increase in the reporting and other
+kinds of administrative burdens are among the most characteristic consequences of the implemen-
+tation of the NPM governance framework in public research organisations. A steadily growing
+stream of literature has examined the impact of high ly powered incentives on research efficiency,
+identifying positive effects at least under certain conditions (Schubert 2009b; Bolli and Somogyi
+2011; Bolli et al. 2016; Sandström and van den Besselaar 2018; Schmoch and Schubert 2009; Jansen
+et al. 2007; Beerkens 2013). However, a number of studies have also reported unintended negative
+consequences, especially those affecting the working environment in the scholarly community
+(Teelken 2012; Kallio et al. 2016; Chandler et al. 2002) . The negative effects on the work environ-
+ments seem to be in -line with the oftentimes fierce opposition to more manageriali zed govern-
+ance-styles from within the ranks of researchers, which may result from an incongruence with pro-
+fessional identities in the academic community (Morrish 2017). Particularly, Leišytė and Gozlan
+(2023) document the emergence of resistance platforms against new public management in the
+UK, France, the Netherlands and Belgium.
+To make the point that NPM is often incongruent with the work conditions researchers seek , we
+build on Self Determination Theory (SDT) and argue that researchers seek work environments that
+align with their personal values and interests, fostering a sense of professional fulfilment and satis-
+faction (Sheldon et al. 2020). According to SDT, jobs offering higher possibilities to experience au-
+tonomy, competence and relatedness also increase intrinsic motivation (Ryan and Deci 2000) . In
+this respect, the NPM's focus on introducing highly powered incentives and managerial orientation
+emphasises competitive elements which may increase extrinsic motivation. However, this may come
+at the expense of intrinsic motivation. Thus, when able to choose, SDT suggests that researchers
+
+===== PDF_PAGE 7 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 5
+
+will place a penalty on job o ffers characterised more by managerialized forms of governance be-
+cause they score lower on the level of intrinsic motivation (Potekhina and Blind 2020).
+Extending our argument, we expect considerable heterogeneity. The preferences of two groups of
+researchers are of particular interest here: researchers with a strong track record and interdiscipli-
+nary researchers. These two groups bring value to universities in the form of research grants, highly
+cited publications, novel research and linkages with societal actors. Universities rely on the contri-
+butions and strategic competence of such researchers and attracting them is among the top prior-
+ities in recruitment strategies. Recruiting researchers with strong track records is particularly desir-
+able for universities with subject performance-based governance, because such researchers in-
+crease the score highly in metrics-based evaluative environments. However, these two critical re-
+searcher groups may be particularly motivated by the desire for self-determination and autonomy,
+potentially escalating the tension between intrinsic motivation and high ly powered performance
+incentives. Interdisciplinary researchers could be affected even more strongly, because their re-
+search output often falls outside standardized disciplinary benchmarking standards . (Kroll and
+Schubert 2023) hence put them at a disadvantage in the benchmarking exercises underlying per-
+formance-based incentivization.
+To test our hypotheses, we draw on the results of a large scale choice experiment conducted in
+spring 2023 among all researchers of leading technical universities in Germany ("TU9"). Choice ex-
+periments are survey-based experimental designs presenting researchers with a set of hypothetical
+choice alternatives. While they have only recently come into use in science studies (Janger and
+Nowotny 2016; Rincke 2023; van Rijnsoever and Hessels 2021) , the alternatives in choice experi-
+ments are exogenously given to the respondents, implying that the results of well -crafted choice
+experiments are not riddled by selection issues or omitted variable biases and can be considered
+to reflect causal knowledge about the respondents preference structures. Our results confirmed the
+baseline hypothesis that high reliance on third party funds and high administrative burdens reduce
+the likelihood of choosing an alternative by 24% and 13% respectively. Moreover, we showed evi-
+dence of heterogeneity in the responses, which were particularly pertinent in the natural and engi-
+neering sciences: More senior researchers and those with stronger track records were more likely
+to accept higher third-party funding requirements, while for them the negative effect of adminis-
+trative requirements was inflated. Finally, performance -pay did on average not affect the choice,
+with the exception of highly interdisciplinary researchers who refrained from such arrangements.
+This paper makes a contribution in several ways. On the conceptual level, we build on an emerging
+literature on the determinants of job choice in academia (Rincke 2023; Janger et al. 2019b; Janger
+and Nowotny 2016). This literature has largely focused on general determinants such as pay-level,
+access to strong peers, or teaching burden. There is little knowledge on how governance affects
+job choice. This constitutes a considerable gap with a view to evaluating the strategic appropriate-
+ness of different governance styles. In turn, the extant literature on the directly observable effects
+of governance has focused on individual, organizational or system-wide performance (Jansen 2007;
+Schmoch and Schubert 2009; Bolli and Somogyi 2011; Sandström and van den Besselaar 2018) .
+However, this literature did not consider the effects of governance on job choice. If the attractive-
+ness of the labour market is significantly affected by governance, however, this may significantly
+affect university strategic development capacities and thus have long-term implications on perfor-
+mance. Indeed, our findings suggest that there is a significant penalty exerted by higher reliance
+on competitive funds and higher administrative burdens. In terms of size, these considerable effects
+range between -13% and -24%.
+A far-reaching implication of this finding is that in order to understand the effects of governance
+changes, it is important to distinguish between governance systems' de facto effects on current,
+
+===== PDF_PAGE 8 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 6
+
+observable behaviour, e.g. the performance gains achieved via incentivization and its more funda-
+mental impact on motivations which become apparent if researchers are given a choice (Ryan and
+Deci 2000). While optimistic accounts of NPM suggested that resistance would remain temporary,
+seeing it as a natural phenomenon during periods of institutional change, this paper's findings
+imply that the problem is more fundamental. According to SDT, the observed poor alignment be-
+tween managerial governance structures and researchers' preference structures favouring auton-
+omy, competence and relatedness (Gagné and Deci 2005) must be considered as structural. Hence,
+it is unlikely that academics' resistance will diminish as researchers get more used to the new gov-
+ernance system. Rather they may choose to play by the rules when required, but to opt out when-
+ever given the choice, as our job experiment demonstrated.
+Finally, we provided evidence of non -trivial patterns of heterogeneity, which universities can take
+into account depending on the type of positions they seek to fill. Notably, when a specific job
+opening targets more senior researchers at the higher end of the performance distribution, the
+penalty from external funding requirements is lower while that of administrative tasks is higher. In
+particular, as the performance pay contingent on the additional reporting does not increase attrac-
+tiveness substantially. As researchers avoid academic jobs involving high administration and exter-
+nal funding requirements, we argue that alleviating such burden constitutes an important lever to
+increase job market attractiveness. On the other side of the coin, universities might reduce their
+attractiveness by an overt focus on performance-based tools in particular when positions for more
+senior staff or high-performers are to be filled.
+
+===== PDF_PAGE 9 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 7
+
+2 Theory
+2.1 The NPM approach in University Governance
+The NPM governance model of the public services rose to prominence in the 1990s. NPM govern-
+ance aims to organise universities more managerially and rests on several main tenets, among
+which is the bestowal of university managers with stronger decision -making powers; introducing
+more binding systems of incentivization, such as rewards for performance and sanctions for under-
+performance; and rule-based allocation of resources among others. Conceptually, all of those rely
+on the understanding of university governance primarily informed by principle agent theory, which
+suggests that introducing high-powered performance incentives and competition for resources will
+increase efficiency (Schubert 2009b). With its emphasis on clear goal-setting, control, resource op-
+timisation, and performance evaluation, NPM has found wide-ranging implementation across pub-
+lic service domains worldwide, including higher education (Diefenbach 2009).
+The impact of NPM on the research system has been profound. Universities received much broader
+operational autonomy under the new framework while the government, as the representative of
+the broader society, assumed a strategic priority setting role, but i ts operative decision -making
+capacity was greatly reduced. At the same time, the government increased its ability to steer re-
+search by decreasing long-term basic funding of universities and, correspondingly, increasing the
+size of competitive funding programmes (Hicks 2012). The decrease in basic funds has incentivised
+universities to make efforts to improve the efficiency of their operations and also to optimise re-
+sources in order to be competitive in the NPM governance framework. This has led to significant
+structural changes, which include, among others, the widespread use of performance-based goal-
+setting and budgeting, introduction of performance-based incentives for staff, the implementation
+of control, monitoring and evaluation mechanisms.
+Whether these reforms have overall contributed to increasing efficiency of academic sciences has
+been up for debate. While a few quantitative studies have indeed provided evidence of increases
+in research efficiency under specific conditions (Schmoch and Schubert 2009; Schubert 2009b; Jan-
+sen et al. 2007; Bolli and Somogyi 2011; Bolli et al. 2016; Sandström and van den Besselaar 2018),
+in particular affected scientists who have also complained about the associated side effects result-
+ing from increased competitive pressure, bureaucratization and administrative burdens (Teelken
+2012; Chandler et al. 2002; Craig et al. 2014). While this disapproval may say little about the actual
+performance effects, it nonetheless begs the question how researchers react when offered choices.
+Notably, when making job choices researchers may be biased against work environments shaped
+by managerialism, resource competition and bureaucratization.
+2.2 Researchers' Job Decisions and NPM
+Rooted in the principal-agent-theory, the governance logic of NPM starts off from the basic prem-
+ise that high effort levels require high degrees of extrinsic motivation. It posits that in the circum-
+stances when principals set out specific goals, but are not able to closely monitor how agents fulfil
+them − similarly to how public bodies are not able to directly assess the quality of scientific
+knowledge − controls and performance incentives need to be set up to improve the efficiency of
+task execution. Without such extrinsic motivation (e.g. in the form of financial incentives) agents
+will display opportunistic tendencies, exert low levels of effort and engagement (Ward 2007; Tolo-
+fari 2005; Schubert 2009b).
+
+===== PDF_PAGE 10 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 8
+
+Researchers' job decisions, however, are affected by many factors, including considerations of ca-
+reer opportunities, professional considerations, practical and family factors, as well as personal pref-
+erences. In labour psychology, several theoretical approaches have been developed to understand
+how individuals make job choices under such conditions of complexity.
+In knowledge intensive contexts, self-determination theory is particularly useful because of its focus
+on intrinsic motivation resulting from experienced autonomy, competence and relatedness (Niemiec
+and Ryan 2009; Cerasoli et al. 2016; Marshik et al. 2017). Considerable evidence shows that job choice
+is systematically linked to the anticipated levels of autonomy, competence and relatedness (Sheldon
+et al. 2020; Chen 2017; Chantara et al. 2011; Guay et al. 2003).
+A number of studies argue that the possibility to experience autonomy, competence and related-
+ness are particularly important in sciences. Notably, a strand of the literature emphasizes that aca-
+demic identities are largely build on autonomy because academics are obliged to value scientific
+truth (McInnis 2009; Archer 2008; Henkel 2005). Accordingly, academics are heavily driven by per-
+sonal curiosity (Strandburg 2005; Lindholm 2018) drawing them to research questions that align
+with their interests and passions and allowing them to autonomously shape their own research
+agendas.
+Furthermore, scientists are motivated by the desire to contribute meaningfully to their field, advancing
+knowledge and making significant discoveries (Painter 2011). Pursuing a scientific career allows indi-
+viduals to engage in activities that challenge their intellect and skills, providing a sense of accomplish-
+ment and mastery.
+On the community level, scientific research has been self-organised and self-managed by commu-
+nity members (Polanyi et al. 2000). To be a scientist is to pursue own interests and passions while
+adhering to the norms of the community (Whitley 2000). Such work is rewarded by community
+recognition, which is expressed in the accumulation of scientific reputation. The community-based
+nature of scientific research makes it inherently collaborative (Meier 2023; Kroll and Schubert 2023;
+Kornfeld and Hewitt 1981) , emphasizing the importance of relatedness in the career choices of
+scientists. Collaboration fulfils the need for social connections and shared goals. Accordingly, sci-
+entists often choose career paths that allow them to engage in collaborative endeavours, fostering
+a sense of community and mutual support (Darner 2014; Lemke 2002). We do not claim that SDT
+with its focus on intrinsic motivation applies universally to all contexts. In more hierarchical contexts
+with more sizeable wage disparities such as trading or consultancy SDT may indeed underestimate
+the power of extrinsic motivational factors. Academics, however, have usually opted into the science
+system for intrinsic motivations in the first place and often intentionally renounced alternatives with
+higher earnings. Hence, they will tend to uphold intrinsic motivation as the central criterion for all
+subsequent job choices. Thus, SDT presents a good framework to explain job choices in academia.
+Applied to the context of academia, it suggests that researchers seek to make job choices that align
+with their personal values and interests, fostering a sense of fulfilment and satisfaction in their work.
+2.3 The Hypotheses
+As already argued, NPM reflects a set of governance principles that have been widely implemented
+in many Western higher education systems over the last decades. While national contexts matter
+(Boer et al. 2007), all national implementations of NPM have in common that they emphasize in-
+creased competition for resources and individual-level incentivisation as its guiding principles (Enders
+et al. 2008; Bleiklie et al. 2016). In the wake of these reforms, in particular as the role of competition
+via increased reliance on third party funds and performance pay has increased, both of which can
+have considerable leverage to incentivize certain behaviours by instilling extrinsic motivation. As dis-
+
+===== PDF_PAGE 11 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 9
+
+cussed previously, they may have negative effects on intrinsic motivation. Moreover, both incentivi-
+sation mechanisms and the allocation of third-party funds require some form assessment of antici-
+pated or realized performance. This diverts considerable academic resources towards monitoring and
+benchmarking exercises in the form of peer reviews, evaluations or indicator -based assessments.
+Since many of these tasks cannot be easily delegated to administrative staff, NPM has inadvertently
+also increased the share of administrative routine tasks to researchers. In addition to the evaluation,
+also the drafting of research proposals, of which often only a minority are granted, has led to a further
+diversion of academic resources (García and Sanz-Menéndez 2005; Schweiger 2023).
+In the following, we will discuss how these changes in governance are expected to affect academics'
+job choice. Beyond the mere baseline effects , we acknowledge heterogeneity: researchers differ
+fundamentally in their research focus and capabilities and these characteristics may give rise to
+relevant ramifications in the effects. Spec ifically, we will look at how the researchers' track -record
+and their interdisciplinary focus affect their willingness to take on jobs with NPM-aligned types of
+governance. Detailed knowledge about researchers with a strong track-record and interdisciplinary
+research approaches is particularly relevant also for universities due to their potential to contribute
+to high-quality or high-novelty research.
+2.3.1 Reliance on Third Party Funding
+Arguably, the reliance on third party funding as a n option for researchers to develop his or her
+working group and standing within the university is the most essential novelty introduced by NPM
+inspired management reforms (Hornbostel 2001; Jansen et al. 2007; Schmoch and Schubert 2009;
+Bolli and Somogyi 2011; Bolli et al. 2016). While the acquisition of external funds has always had a
+(substantive) direct effect, NPM augments this effect by connecting third party funding perfor-
+mance to the allocations of basic funding (Christensen 2011; Enders et al. 2008; Boer et al. 2007)
+and to success in subsequent appointment procedures (Lutter and Schröder 2016; Schulze et al.
+2008; Hamann 2019; Kleimann and Hückstädt 2021).
+Nonetheless, following SDT, we still expect that researchers, who are primarily intrinsically moti-
+vated, will prefer financial research autonomy, i.e. a sound endowment with basic resources without
+strings attached (Janger et al. 2019a; Janger and Nowotny 2016) . One reason for this is that de-
+pendence on external resources implies that scientists lose a substantial degree of autonomy in
+particular with respect to designing their research agendas (Miller 2004). Moreover, since funding
+applications are often unsuccessful, the pursuit of a research agenda is made erratic, reducing sci-
+entists' ability to autonomously develop long -term research lines. In addition, the evaluation of
+funding applications is performed by researchers and is a time-consuming process that cannot be
+delegated. The result is that, researchers expend time evaluation peer proposal and on writing their
+own applications, which gives them only a certain probability to pursue the proposed research line.
+This also reduces available resources and therefore their research autonomy (Aczel et al. 2021;
+Weissberg 2013; Gordon and Poulin 2009). Thus, we propose our first hypothesis:
+H1: Scientists are less likely to choose jobs involving higher needs to acquire third-party funds.
+While high reliance on external funds may compromise autonomy, their successful acquisition may
+offer an experience of competence resulting from the applied positive peer feedback and the as-
+sociated increase in reputation and status (García and Sanz -Menéndez 2005; Münch 2009) . The
+extrinsic motivation to secure third party funding may also reinforce intrinsic motivation of re-
+searchers to further their research lines, thanks to the recognition of their work by their peers, the
+university and the public. Since this effect relies on the experience of actual success, it is more likely
+to be relevant for researchers with a higher previous success rate. The success rates , however, are
+
+===== PDF_PAGE 12 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 10
+
+not uniform across researchers, but are likely to depend on the researchers' track record of suc-
+cessful research (Laudel 2006). Their success rate and abi lity to comply with governance require-
+ments is higher, thus easing the burden of needing to spend time to write proposals and to acquire
+funding (Graber and Wälde 2008; Fitzenberger and Schulze 2014; Fernandes and Walter 2023). Suc-
+cessful acquisition of third party funding also increases prestige and can at times be equivalent to
+that of publications, even in appointment procedures (Hicks 2012).
+Another intervening factor is organisational seniority. With increasing seniority the tasks of proposal
+writing, processing of grants and reports can often be delegated to junior and administrative staff,
+while the reputational benefit primarily accrues to the principal investigator. Therefore, at later
+stages, researchers may still prefer full freedom provided by basic funding, yet at the same time
+accept the need to acquire third-party funds, which they can be more confident to obtain due to
+their competence, experience and resources. Hence, we offer the following hypothesis:
+H1a: The willingness to accept job offers with higher third-party funding requirements is moder-
+ated negatively by the researchers i) track records and ii) their seniority.
+Interdisciplinarity is also likely to affect a researcher's willingness to accept a job offer with higher
+third-party requirements. The reason is that many third-party funded projects are at least to some
+degree collaborative. Interdisciplinary researchers usually build their research approach on con-
+necting otherwise separated communities through the development of interdisciplinary research
+activities (Gentzler 2003; Siedlok and Hibbert 2014) . Therefore, interdisciplinary researchers may
+have an advantage in third party funding acquisition thanks to their diverse networks that allow for
+building novel research proposals, which link previously unconnected pools of knowledge (Brown
+et al. 2019; Fontana et al. 2020; Wagner et al. 2019).
+In the case of interdisciplinary researchers, the extrinsic motivation provided by third-party funding
+acquisition may reinforce their intrinsic motivation to work in diverse collaborations, which are more
+convenient to organise in joint projects. Each joint project has the opportunity to develop proposals
+across disciplines as such researchers have access to a broader range of funders, including those in
+the non-scientific domain (Kaufmann and Kasztler 2009). Accordingly, they will feel a greater sense
+of agency and self-actualisation as, for them, third party funding does not depend on the idiosyn-
+cratic decisions of single selection panels in research councils (a situation that their more monodis-
+ciplinary colleagues may be facing) but instead opens up an array of options about which they can
+decide in a self-determined way.
+Considering that university departments are still to a large extent discipline-based, interdisciplinary
+researchers often find it difficult to gain recognition for their achievements within disciplinary silos
+(Ryan and Neumann 2013; Bergland 2018). They may lose out on the allocation of long-term basic
+funds compared to their mono-disciplinary colleagues. In these circumstances, successful acquisi-
+tion of third party funding can help interdisciplinary researchers demonstrate that their research is
+valuable as certified by the peer community. Summarising, we propose that:
+H1b: The willingness to accept job offers with higher third-party funding requirements will be
+less negatively affected for researchers with a strong interdiscplinarity focus.
+2.3.2 Performance-based pay
+Ex-post financial incentivization schemes have a significant function in the NPM governance. Pre-
+vious research has shown that academics care about personal income and choose thematic spe-
+cialisation and career paths based on their preferences for monetary compensation (Janger et al.
+2019a; Agarwal and Ohyama 2013) . Financial incentives play a role in researchers' strategies to
+publish papers in specific journals and affect their productivity (Quan et al. 2017; Franzoni et al.
+
+===== PDF_PAGE 13 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 11
+
+2011). Commercialisation of research results and academic spin-offs also offer financial incentives,
+a significant motivation for researchers to engage in these activities (Bozeman 2000).
+Although SDT typically argues for the superiority of int rinsic motivational factors, these different
+empirical findings on the effectiveness of financial incentivization are not inconsistent with the the-
+ory. The fact, however, that incentivization can induce high performance levels at different levels by
+raising extrinsic motivation says little about the researchers' principal willingness to select into such
+high-powered arrangements. More specifically, their willingness will depend much on their individ-
+ual anticipated reward prospects. In an effort to create cost -neutral financial incentives, many in-
+centivization schemes that are de -facto implemented at universities display characteristics of a
+zero-sum-game, i. e. over performers gained more and underperformers gained less as for example
+the German performance pay-scheme for professors ("W-Besoldung") has been criticized by (Eck-
+ardstein 2003; Hornung et al. 2015) . Thus the willingness to select into high-powered incentive
+schemes is likely to be heterogeneous across individuals and will depend on whether they perceive
+themselves as over performers (expecting gains) or underperformers (expecting losses). When as-
+sessing the average effects of financial incentive schemes across both groups, these effects should
+cancel each other out − as the 'average researcher' neither gains nor loses in the zero -sum game
+and hence his or her willingness to go into job environments thus governed should be unaffected.
+Nevertheless, the expectation of no effect holds only on average and conceals a considerable degree
+of heterogeneity across individual researchers, whose willingness to accept high-powered incentivi-
+zation schemes will depend on their prospective gains or losses. Here we can distinguish between
+researchers with strong track-records, professor-level researchers and interdisciplinary researchers.
+The former will be expected to maintain their strong track record and consistently receive positive
+evaluations based on their metric-based performance. Such researchers will be rewarded for the tasks
+that they already perform while motivated intrinsically. Therefore, we expect that researchers with
+strong track records are likely to display an acceptance of stronger financial incentivization. Following
+a similar logic, a similar effect is expected to hold for researchers who already have a professorial
+position. We summarise that:
+H2a: The likelihood to accept high-powered incentive schemes is moderated positively by re-
+searchers' i) strong track records and ii) seniority.
+The opposite may be true for interdisciplinary researchers, NPM-oriented evaluative practices in fact
+reinforce disciplinary silos in departments (Ryan and Neumann 2013). Interdisciplinary research has
+become a risky strategy in terms of organisational career development, because disciplinary evalua-
+tion systems are unable to fully honour the value, contributions and impacts of interdisciplinary re-
+search (Fini et al. 2023; Bromham et al. 2016; Wagner et al. 2011). Most likely, they would primarily be
+connected to publication output, a dimension on which monodisciplinary researchers are known to
+perform better than multidisciplinary ones in pure quantitative terms (van Rijnsoever and Hessels
+2011). Hence, we expect interdisciplinary researchers to be more likely to perceive themselves as 'un-
+derperformers' not likely to receive performance-based bonuses. The result is that, they will feel more
+deterred by such schemes than researchers with lower interdisciplinarity focus.
+H2b: The likelihood to accept high-powered incentive schemes is moderated negatively by the
+researchers' interdisciplinarity focus.
+
+===== PDF_PAGE 14 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 12
+
+2.3.3 Administrative Burden
+As discussed previously, NPM governance emphasizes the importance of post-hoc monitoring and
+performance measurement, which typically rely on a range of indicators, regular formal evaluations
+and reporting (Boer et al. 2007; Schubert 2009a; Bleiklie et al. 2016; Field 2015; van Looy and Shafa-
+gatova 2016; Schubert 2009b; Bogt and Scapens 2012). Establishing and maintaining post-hoc per-
+formance measurements is costly, time -consuming and requires routinized administrative tasks
+(Maeder 2001). Such tasks divert researchers' resources from scientific work. They come in addition
+to the substantial burden associated with the governance of the collegiate- and consensus-based
+administration of loosely-coupled university structures (Woelert 2023; Bentley and Kyvik 2013).
+As a rule, researchers aim to minimise the amount of admin work they need to do (Bozeman et al.
+2021). Although some tasks can be delegated, the evidence shows that tenured faculty in universi-
+ties still spend an ever -increasing amount of their time performing routine administrative tasks
+(Barham et al. 2014) . Administrative burden s have the overall detrimental effect on researchers'
+other duties and ambitions. Routine tasks do not instil intrinsic motivation and do not provide a
+sense of fulfilment for scientists (Ranz 2015; Torp et al. 2016; Niemiec and Ryan 2009). As adminis-
+trative tasks are unlikely to offer experiences of competence even in the case of success, scientists
+may not even consider them part of their work duties (Torp et al. 2016). In consequence, researchers
+will seek to avoid jobs in which extensive reporting requirements add to an already high baseline
+administrative burden (Herbert et al. 2013a; Herbert et al. 2013b).
+H3: Scientists are less likely to choose jobs involving high administrative requirements.
+Since administrative tasks do not lead to a greater experience of competence, but, quite the oppo-
+site, are considered outside of what is regarded the 'scientific profession', we expect that research-
+ers with stronger track -records could be even less inclined to accept jobs char acterized by high
+administrative requirements (García-Gallego et al. 2015). Strong track records are the result of both
+high research competence and of an intrinsically higher preference for research -related tasks.
+Higher research competence increases the opportunity costs of administrative tasks because of the
+ceteris paribus higher external value of research tasks that could have been performed instead.
+The burden of administrative duties weighs down heavily on researchers occupying higher positions
+in the university hierarchy. For example, the baseline burden of meetings intensifies as academics
+develop their careers moving from 'ordinary' professor to head of institute or dean (Bozeman et al.
+2021). The more managerial duties a specific researcher assumes, the smaller the share of his or her
+time can be placed on research (Barham et al. 2014) − to the possible detriment of the research
+output (Thelwall and Fairclough 2020). Hence, the prospect of facing further administrative duties
+will weigh down more heavily on senior academics whose time allocated to research is already
+limited. Summarising:
+H3a: The willingness to accept job offers with higher shares of administrative tasks is moderated
+negatively by the researchers' i) track records and ii) their seniority.
+Researchers' interdisciplinarity focus could have similar preferences. It is well-known that maintain-
+ing an interdisciplinary focus is costly and requires substantial effort when managing heterogene-
+ous connections (Kroll and Schubert 2023) . On the level of the actual research tasks, difficulties
+result for example from bridging differences in assumptions, values, and approaches across disci-
+plines. Moreover, interdisciplinary researchers are often penalized by their more disciplinary peers,
+which implies that they have to pursue their research agendas against organizational resistances
+(van Rijnsoever and Hessels 2011; Bromham et al. 2016; Fini et al. 2023) . Both aspects may imply
+
+===== PDF_PAGE 15 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 13
+
+that interdisciplinary researchers may already have a higher share of non-research tasks. Thus, their
+willingness to accept further administration tasks may be lower.
+H3b: The willingness to accept job offers with higher shares of administrative tasks is moderated
+negatively by the researchers' interdisciplinary focus.
+
+===== PDF_PAGE 16 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 14
+
+3 Data and Methodology
+The dataset is based on a survey of researchers employed in the alliance leading TU9 − German
+Universities of Technology in April -June of 2023. This TU9 is an alliance of large and research -in-
+tensive technological universities in Germany, comprising the RWTH Aachen, TU Berlin, University
+of Braunschweig, Karlsruhe Institute of Technology, Technical University of Darmstadt, TU Dresden,
+Leibniz University Hannover, University of Stuttgart, and Technical University of Munich.
+3.1 Generating the email contacts
+Except for professors, currently no up -to-date large scale register of email contacts for German
+scientists exists. Since our survey intentionally targets also more junior scholars, we have decided
+to collect email contacts from the universities' web pages1 using web scraping2 techniques. The web
+pages refer to faculty home pages and department sub-pages that were manually identified. From
+there, Python scripts were customized to meet the layout characteristics of each university web
+page and collect the email address along wit h name and title. The title was used to distinguish
+academic staff. Contacts without academic title information (e.g. Dr. or Prof. Dr.) were removed.
+After cleaning and remov ing redundant data, the survey was distributed to 4832 university re-
+searchers. Excluding invalid, unreachable email addresses and email addresses that rejected the
+invitation, the email was delivered to 4,350 addresses. The initial invitation was followed up by two
+reminders. Since the contact list contained details of non -research staff and non -research active
+staff (e.g. adjunct staff, emerita professors), we included several filtering questions in the question-
+naire. Respondents who were not affiliated with one of the TU9 members, respondents without a
+doctorate and non-researchers were filtered out.
+3.2 Survey design and data generation
+The survey consisted of three parts: demographic questions, the choice experiment and a number
+of questions regarding respondents' attitudes towards university governance. The language of the
+survey was German. Each invitation contained an individual link to access the survey in the EFS
+Tivian interface. Prior to starting the survey, each participant had to acknowledge the consent form,
+which included the consent for their bibliometric track record in Scopus to be matched with their
+responses and used in the analysis (20 respondents declined to consent and were not allowed to
+proceed to the survey). After the completion of the survey, participant data was matched to their
+bibliometric records in Scopus.
+3.3 Design of the Choice experiment
+To test our hypotheses, we designed a choice experiment, where survey respondents were con-
+fronted with four consecutive decision scenarios each comprised two juxtaposed hypothetical job
+offers differing in specific governance characteristics. In each of th e four decision scenarios, the
+respondents were told to select one of the two presented alternatives. All respondents were con-
+
+1 Contact addresses could not be gathered for the University of Stuttgart, Karlsruhe Institute of Technology, Technische Univer-
+sität Dresden and Technische Universität Berlin, because their web-pages block or encrypt staff email addresses.
+2 Web scraper: Python package used for data collection: https://github.com/dglttr/scrawler
+
+===== PDF_PAGE 17 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 15
+
+fronted with the same decision scenarios. The advantage of the choice experiment is the oppor-
+tunity to estimate the importance of each specific governance characteristics without confounding
+factors (van Rijnsoever and Hessels 2021).
+To define the relevant governance dimensions characterising the alternatives a literature review was
+performed where specified. They refer to the financial autonomy measured by the availability of
+base funds, the degree of the administrative burden and two for the degree of incentivization via
+performance-pay components and personnel endowment. Each of these dimensions was described
+by two dichotomous alternatives. A summary of the dimensions and alternative characteristics is
+found in Table 1.
+Table 1: The Set of Alternatives in the Choice Experiment
+Governance dimension/survey item Characteristics
+Financial research autonomy - An operational research group can be financed at the new chair
+largely from basic funds
+- An operational research group can only be financed at the new
+chair through continuous acquisition of third-party funds.
+Administrative burden - Administrative-formal tasks can be delegated predominantly
+(~10% of your personal working time is required for this)
+- Administrative-formal tasks often have to be done by yourself
+(~30% of your personal working time is required for this)
+Incentivization - performance pay - You will receive 10% guaranteed bonuses on top of your base
+salary
+- Bonuses on top of your base salary are only awarded after cer-
+tain performance targets have been reached
+(0% for low target achievement, 10% for normal target achieve-
+ment, 20% for high target achievement).
+Incentivization - personnel endowment - You will receive 25% guaranteed, further positions in addition to
+the base position
+- Additional positions will be allocated only after certain perfor-
+mance targets are met (0% for low target achievement, 25% for
+normal target achievement, 50% for high target achievement).
+Based on these dimensions and alternatives admissible choice alternatives were defined as represent-
+ing each dimension by one alternative. We then defined a choice scenario by the juxtaposition of two
+choice alternatives out of which respondents were to select one. A combinatorially complete choice
+experiment would then imply 16 different choice alternatives, or, 8 different choice scenarios. It is
+clear that 8 different choice scenarios would result in a very high response burden potentially com-
+promising the overall response quality. To circumvent this problem, we decided to restrict the number
+of choice scenarios to four. Because this limitation leads to a loss of information, we used an optimal
+design by the modified Fedorov algorithm as implemented in the R-package idefix (Traets et al. 2020).
+This algorithm requires making a priori assumptions on the preference weights of the dimensions.
+We assumed that researchers uniformly prefer lower administrative burdens and higher basefunding
+implying weights that do not differ in sign between researchers. We drew weights from a zero-trun-
+cated normal distribution with standard deviation one. For the incentivi zation dimensions, we as-
+sumed that potentially some researchers may prefer low -powered over high-powered incentives,
+while others may prefer the opposite. We therefore drew weights from a standard normal distribution
+− where both positive and negative weights may occur. The resulting set of choice scenarios then
+
+===== PDF_PAGE 18 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 16
+
+represents the discrete choice design a so-called d-efficient design that minimizes the information
+loss resulting from the limitation of the number of choice scenarios to four.
+3.3.1 Estimation specification and identification strategy
+The analysis of the data resulting from the choice experiment seeks to determine the specific weight
+of the alternative characteristics from observing which alternative is picked in a specific scenario
+where two different alternatives are available. The approach is thus based on the notion of revealed
+preferences within a random utility framework. Specifically, we assume that the utility of a choice
+alternative representing a job offer on a structural part and an error term:
+𝑈𝑖𝑗 = 𝑉𝑖𝑗 + 𝑒𝑖𝑗 , 𝑖 = 1, … , 𝑁, 𝑗 = 1, … , 𝐽 (1)
+where 𝑖 indexes individuals, 𝑗 indexes the alternatives. Moreover, we assume that structural part depends
+linearly on a vector of characteristics 𝑥𝑖𝑗 describing the alternative: 𝑉𝑖𝑗 = 𝑥𝑖𝑗𝛽 . Central interest then lies in
+the 𝛽 vector, which represents the preference weights. They are to be estimated.
+It is clear that the probability that one alternative ℎ is preferred over another alternative 𝑘 is equal
+to 𝑃(𝑈𝑖ℎ > 𝑈𝑖𝑘). To evaluate this expression and to obtain a likelihood function, we need to make
+an assumption about the error terms. If 𝑒 follows an extreme value distribution, we obtain the fol-
+lowing conditional logit expression (McFadden 1974):
+𝑃(𝑦𝑖ℎ = 1|𝑥𝑖ℎ) =
+exp (𝑥𝑖ℎ𝛽)
+∑ exp (𝑥𝑖𝑗𝛽)𝐽
+𝑗=1
+ (2)
+where 𝑦𝑖ℎ is an indicator that equals 1 if individual 𝑖 chooses alternative ℎ. To estimate Eq. (1), we
+use the conditional logit expression with clustering at the individual level. From Eq. (2) we see that
+any variables that solely depend on the individual, i.e. variables for which 𝑥𝑖ℎ = 𝑥𝑖 holds, will drop
+out because they can be drawn before the summation in the denominator and before the expo-
+nential expression in the numerator. Thus, individual level variables may only affect the probability
+in Eq. (2) inasmuch they interact with alternative specific variables but not in isolation. This is why
+the conditional logit is sometimes said to include fixed effects.
+In the baseline regression, in Eq. (2) we include only three baseline characteristics, where we note
+that we decided to drop the incentivization by additional personnel endowments which turned out
+to be insignificant in all specifications. To test for the moderation factors, we additionally include
+interactions with the respondents' individual level characteristics as discussed in Section 2. The fol-
+lowing individual-level characteristics were included in the analysis:
+The data about respondents' professorship position was assigned to respondents who indicated
+that they are full professors (excluding junior professors).
+The interdisciplinary focus was derived from survey question s, in which the respondents were
+asked to assess on a Likert scale the extent to which their research was interdisciplinary, with 0
+being extremely disciplinary and 4 being extremely interdisciplinary.
+Researchers with the strong track record were identified by the number of publications among
+the 10% top-cited publications in the research field defined by the Scopus classification.
+
+===== PDF_PAGE 19 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 17
+
+4 Results
+4.1 Descriptive results
+In total, the survey was answered by 490 respondents. From these we dropped all respondents
+without publications to exclude non -publication active researchers for which an academic career
+might not be the aspired goal lead ing to a total of 354 respondents, or 8.1% response rate. This
+response rate was on average expected for the academic survey. Such response rate is expected in
+surveys that use broad contact lists and include persons outside of the core target population. The
+respondents worked mainly at the RWTH Aachen and at the Leibniz University of Hannover (32%
+each), followed by the TU Munich (15%), TU Darmstadt (10%) and TU Braunschweig (5.6%). The
+share of other TU9 universities among the respondents was negligible.
+We further restricted the sample so that all variables used in this analysis were complete. This en-
+sured a common sample for all estimations. The resulting sample comprises data on 2812 ranked
+choice alternatives (20 choice alternatives were missing due to item-non-response). For this final
+estimation sample, key descriptive statistics are presented in Table 2. By construction in the d -
+efficient survey design, 50% of alternatives had high third-party fundingrequirements, high admin-
+istrative requirements and high wage incentivization.
+The average scientific age of the respondents was around 18 years and the median scientific age was
+16 years, which means that the majority completed their doctorates in the early 2000s. About 57% of
+the respondents were professors. The remaining 43% had completed their PhD but did not hold a
+professorial position. Thus, in this study the perspectives of more senior researchers are represented,
+which is expected since the questions cover the issues of university governance and the organisation
+of project leaders' research groups, which is the domain of more experienced scientists.
+15% of the respondents were from the social sciences and humanities. The remaining 85% scattered
+over the other fields including the natural sciences, mathematics, engineering, medicine and com-
+puter sciences. Among them, 10.5% identified their field as med ical science, 8.5% identified it as
+electrical engineering, 5.4% as civil engineering. The respondents answering the survey on average
+reported aninterdisciplinary focus of 2.36 (Likert scale from 0 (low) to 4 (high)) and the average
+number of top-cited publications was 2.09 (with however substantial heterogeneity and a long tail
+as the maximum of 31 publications shows).
+Table 2: Summary statistics
+Variable Obs Mean Std. Dev. Min Max
+Alt: TPF requirements high 2812 0.50 0.50 0 1
+Alt: Admin requirements high 2812 0.50 0.50 0 1
+Alt: Wage incentivization high 2812 0.50 0.50 0 1
+Interdisciplinarity focus 2812 2.36 0.89 0 4
+No. top-cited publications 2812 2.09 3.75 0 31
+Professor dummy 2812 0.57 0.49 0 1
+Social sciences and humanities 2812 0.15 0.36 0 1
+
+===== PDF_PAGE 20 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 18
+
+4.2 Regression results
+The central regression results are presented in Table 3. In line with our a priori assumptions, which
+are summarized in the baseline hypotheses H1a and H1b, we indeed see that the respondents were
+significantly less likely to choose alternatives which involved a strong need to acquire additional third
+party funds as well as high administrative burdens. These effects are also considerable in terms of
+size. When calculating marginal effects, the TPF-coefficient corresponds to a 24% lower probability to
+choose an alternative characterized by high third party funding requirements. For high administrative
+burdens the decline in the probability amounts to 13%. These findings hold robustly in the baseline
+specification excluding interaction terms (Column 1) and all specifications with interaction terms (Col-
+umns 2-5). It is also interesting to note that in the baseline specification, the performance pay variable
+(high wage incentivization) was not significant, indicating that on average the respondents did not
+systematically prefer alternatives with lower or higher performance pay components.
+Table 3: Baseline regression results (raw coefficients)
+ (1) (2) (3) (4)
+Alt: TPF requirements high -1.25770*** -1.96841*** -1.27793*** -1.26426***
+ (-12.95) (-7.28) (-12.95) (-12.95)
+Alt: Admin requirements high -0.72864*** -0.73739*** -0.11445 -0.73208***
+ (-7.86) (-7.83) (-0.48) (-7.85)
+Alt: Wage incentivization high -0.00609 -0.00620 -0.00614 0.39728***
+ (-0.14) (-0.14) (-0.14) (2.82)
+Alt: TPF requirements high # Professor dummy 0.36570**
+ (2.05)
+Alt: TPF requirements high # No. top-cited publi-
+cations
+ 0.03635*
+ (1.74)
+Alt: TPF requirements high # Interdisciplinarity fo-
+cus
+ 0.17126*
+ (1.78)
+Alt: Admin requirements high # Professor dummy -0.37198**
+ (-2.20)
+Alt: Admin requirements high # No. top-cited
+publications
+ -0.03071*
+ (-1.77)
+Alt: Admin requirements high # Interdisciplinarity
+focus
+ -0.14669
+ (-1.61)
+Alt: Wage incentivization high # Professor dummy -0.22850**
+ (-2.30)
+Alt: Wage incentivization high # No. top-cited
+publications
+ 0.00139
+ (0.13)
+Alt: Wage incentivization high # Interdisciplinarity
+focus
+ -0.11638**
+ (-2.24)
+Observations 2812 2812 2812 2812
+t statistics in parentheses; * p < 0.10, ** p < 0.05, *** p < 0.01
+
+===== PDF_PAGE 21 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 19
+
+Beyond the expected outcomes on the baseline hypotheses, Table 2, however, also demonstrates
+that there are substantial differences in the effects d epending on the respondents' characteristics
+because in Columns 2 to 4 many of the interactions are significant. To explore these interactions,
+we focus, however, on the visualization in Figure 1, because the non -linearity of the conditional
+logit model makes the interpretation of the interactions tedious and unreliable without inspecting
+the marginal effects directly. For each of the nine interactions, we figure two types of valuable
+information. First, the reported delta statistic gives information on by how much the marginal ef-
+fects differ when evaluated at the moderator sample minimum and maximum. A pairwise compar-
+ison test provides information on the statistical significance on the delta value. Second, the confi-
+dence intervals at each moderator level indicate whether the marginal effect is significantly different
+from zero (whenever the confidence interval does not include the zero) or not. This information can
+be used to deduce whether at a specific moderator level a governance characteristic affects the
+probability to accept a job offer positively, negatively or not significantly. To start with, we see that
+the professorial status irrespective of any of the moderators, high TPF requirements will reduce the
+respondents' likelihood to accept a job offer, because in all of the panels in the first row of Figure
+1 the confidence intervals exclude the zero at all moderator values. While uniformly negative, the
+exact size of the effects , however, differs by individual level characteristics. In particular, the first
+panel in the first row shows that non -professorial staff have an about 27% lower probability to
+accept a job offer with high TPF requirements, while for professors the probability is 22 % lower.
+The delta of about 5% is significant at the 5% level as the pairwise comparison test shows. The other
+moderations are not significant at the 5%-level, though the interdisciplinary focus significantly pos-
+itively moderates the marginal effect at the 10% level.
+Concerning the administration requirements in the middle row, we see that all marginal effects are
+downward sloping indicating that professorial researchers, researchers with more top-cited publi-
+cations and researchers with a higher interdisciplinary focus are less likely to accept job offers with
+high admin requirements. The downward pattern is , however, only significant at the 5% -level for
+the professor and the publication moderator, while not for the interdisciplinary focus. Notably, the
+effect of administration on the probability to accept a job offer is almost uniformly negative (con-
+fidence intervals not incorporating the zero) as was also the case for TPF requirements. Yet, we do
+see that for very disciplinarily oriented researchers the admin requireme nts (point estimate: -8%)
+are not significantly different from zero.
+Finally turning to the role of performance pay, which was close to zero and not significant on aver-
+age, we do see some interesting patterns when looking at the interactions. First, professors are
+about 4% less likely to accept jobs with high wage incentivization, an effect that is significant at the
+5% level. Moreover, the effect switches sign (+2% for non -professors, -2% for professors), where
+both effects, though slightly non-significant at the 5%-level, are significant at the 10%-level. A sim-
+ilar switch in sign is visible for the interdisciplinary focus. Very interdisciplinary researchers are about
+4% less likely to accept high performance -pay components. Very disciplinary researchers are 5%
+more likely (both effects significant at the 5% level). Moreover, the delta statistic of -9% is significant
+at the 5%-level as well.
+
+===== PDF_PAGE 22 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 20
+
+Figure 1: Visualization of the moderation effects
+
+*Delta represents the difference in effects at the sample minimum and maximum of the moderating variable: inference based on two-sided z-test.
+
+===== PDF_PAGE 23 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 21
+
+4.3 Robustness checks
+We performed a number of robustness checks. First, we split the sample into researchers from
+social sciences and humanities (15%) and STEM-backgrounds plus computer sciences (85%).
+The baseline effects are significant and robust in both subsample s as Table 4 and Table 5
+show. The interaction terms are in the majority only significant in the STEM sample. In the
+social sciences and humanities none of the interactions was significant at the 5%-level. While
+this may be in parts a small-sample phenomenon, our results may also hint towards yet un-
+derexplored disciplinary differences, which would need further analyses.
+Table 4: Baseline results (STEM & computer science)
+ (1) (2) (3) (4)
+Alt: TPF requirements high -1.28527*** -2.22047*** -1.31962*** -1.29239***
+ (-12.14) (-7.27) (-12.08) (-12.12)
+Alt: Admin requirements high -0.72333*** -0.73993*** 0.01691 -0.72680***
+ (-7.14) (-7.11) (0.07) (-7.13)
+Alt: Wage incentivization high -0.00821 -0.00843 -0.00833 0.38973**
+ (-0.18) (-0.18) (-0.18) (2.57)
+Alt: TPF requirements high # Profes-
+sor dummy
+ 0.62138***
+ (3.11)
+Alt: TPF requirements high # No. top-
+cited publications
+ 0.03675*
+ (1.67)
+Alt: TPF requirements high # Interdis-
+ciplinarity focus
+ 0.19027*
+ (1.81)
+Alt: Admin requirements high # Pro-
+fessor dummy
+ -0.56514***
+ (-3.03)
+Alt: Admin requirements high # No.
+top-cited publications
+ -0.03049*
+ (-1.70)
+Alt: Admin requirements high # Inter-
+disciplinarity focus
+ -0.15129
+ (-1.56)
+Alt: Wage incentivization high # Pro-
+fessor dummy
+ -0.26934**
+ (-2.47)
+Alt: Wage incentivization high # No.
+top-cited publications
+ 0.00438
+ (0.42)
+
+===== PDF_PAGE 24 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 22
+
+ (1) (2) (3) (4)
+Alt: Wage incentivization high # In-
+terdisciplinarity focus
+ -0.10611*
+ (-1.86)
+Observations 2394 2394 2394 2394
+t statistics in parentheses; * p < 0.10, ** p < 0.05, *** p < 0.01
+Table 5: Baseline results (social sciences and humanities)
+ (1) (2) (3) (4)
+Alt: TPF requirements high -1.10521*** -1.06089* -1.12323*** -1.11552***
+ (-4.48) (-1.76) (-4.43) (-4.54)
+Alt: Admin requirements high -0.75890*** -0.78925*** -0.61200 -0.76483***
+ (-3.23) (-3.25) (-0.87) (-3.26)
+Alt: Wage incentivization high 0.00336 0.00367 0.00327 0.54359
+ (0.03) (0.03) (0.03) (1.41)
+Alt: TPF requirements high
+# Professor dummy
+ -0.82473*
+ (-1.88)
+Alt: TPF requirements high
+# No. top-cited publications
+ -0.09410
+ (-0.69)
+Alt: TPF requirements high
+# Interdisciplinarity focus
+ 0.18072
+ (0.76)
+Alt: Admin requirements high
+# Professor dummy
+ 0.54987
+ (1.35)
+Alt: Admin requirements high
+# No. top-cited publications
+ 0.02415
+ (0.20)
+Alt: Admin requirements high
+# Interdisciplinarity focus
+ -0.19365
+ (-0.77)
+Alt: Wage incentivization high
+# Professor dummy
+ -0.02896
+ (-0.12)
+Alt: Wage incentivization high
+# No. top-cited publications
+ -0.12535
+ (-1.21)
+Alt: Wage incentivization high
+# Interdisciplinarity focus
+ -0.16164
+ (-1.33)
+Observations 418 418 418 418
+t statistics in parentheses; * p < 0.10, ** p < 0.05, *** p < 0.01
+
+===== PDF_PAGE 25 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 23
+
+A further important robustness check concerns the question of the so -called independence
+of irrelevant alternatives (IIA) assumption, which is implicit in the conditional logit model. The
+IIA implies that any ranking between two alternatives depends only on the characteristics of
+the two concerned alternatives and not on the absence or presence of other alternatives.
+Concretely, if A is preferred over B in a direct comparison of A and B, t his preference order
+does not depend on whether an alternative C exists or not. The IIA assumption looks innoc-
+uous but can be violated in practice. Important cases are for example strategic voting. Assume
+that a voter wants to prevent candidate C under all circumstances, then whether A is preferred
+over B may dependent on whether C is an available alternative or not. In our case, the artificial
+construction of our alternative do es not probably give rise to strong strategic incentives.
+However, it is still worth inspecting whether our results are robust to failures of the IIA. One
+possibility to generalize models is to create a nesting structure, where we assume independ-
+ence within specified groups but allow for dependence across groups and then to use nested
+logit. We decided to create a nesting structure that relies on whether an alternative is char-
+acterized by high basic funds or not, which splits the 8 alternatives into two equally sized
+groups. The results are found in Table 6. While the significances somewhat decline, most of
+the findings remain robust, which overall confirms our findings.
+Table 6: Testing the IIA assumption with a nested logit model
+ (1) (2) (3) (4)
+Alt: TPF requirements
+high
+-1.27823*** -1.98106*** -1.29373*** -1.29174***
+ (-13.21) (-7.27) (-12.44) (-12.43)
+Alt: Admin requirements
+high
+-0.73253*** -0.74166*** -0.13376 -0.73554***
+ (-7.32) (-7.77) (-0.56) (-7.79)
+Alt: Wage incentivization
+high
+-0.01643 -0.00449 -0.01242 0.36756***
+ (-0.22) (-0.09) (-0.24) (2.59)
+Alt: TPF requirements
+high # Professor dummy
+ 0.37804**
+ (2.09)
+Alt: TPF requirements
+high # No. top-cited pub-
+lications
+ 0.03707*
+ (1.72)
+Alt: TPF requirements
+high # Interdisciplinarity
+focus
+ 0.16927*
+ (1.75)
+Alt: Admin requirements
+high # Professor dummy
+ -0.36678**
+ (-2.14)
+
+===== PDF_PAGE 26 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 24
+
+ (1) (2) (3) (4)
+Alt: Admin requirements
+high # No. top-cited pub-
+lications
+ -0.03134*
+ (-1.77)
+Alt: Admin requirements
+high # Interdisciplinarity
+focus
+ -0.14086
+ (-1.54)
+Alt: Wage incentivization
+high # Professor dummy
+ -0.23760**
+ (-2.29)
+Alt: Wage incentivization
+# No. top-cited publica-
+tions
+ 0.00335
+ (0.33)
+Alt: Wage incentivization
+# Interdisciplinarity focus
+ -0.11075**
+ (-2.12)
+High_TPF_requirements
+Academic age 0.00112 -0.00019 0.00067 0.00194
+ (0.34) (-0.09) (0.30) (0.84)
+/type
+Low_TPF_require-
+ments_tau
+1.00000 1.00000 1.00000*** 1.00000*
+ (0.00) (0.37) (3.40) (1.72)
+High_TPF_require-
+ments_tau
+1.00000 1.00000 1.00000 1.00000
+ (0.00) (0.25) (1.56) (0.42)
+Observations 2780 2780 2780 2780
+t statistics in parentheses; * p < 0.10, ** p < 0.05, *** p < 0.01
+In a final robustness check we replaced the publications as an indicator of the strength of the
+track record by excellence rate, i.e. the share of the researcher's publication in the 10% most
+cited publications world-wide. The results were robust to this change and were even becom-
+ing more significant.
+
+===== PDF_PAGE 27 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 25
+
+5 Discussion
+In line with SDT assumptions, our analysis confirmed earlier findings in the literature with
+regard to researchers' dislike of administrative burden s (Bozeman et al. 2021; Barham et al.
+2014; Ranz 2015; Niemiec and Ryan 2009) (Torp et al. 2016) as well as their preference to
+conduct science freely without having to bother with proposal writing (Janger and Nowotny
+2016; Janger et al. 2019a). The seeming contrast of these observations to som e established
+findings that new public management does increase performance, can well be explained
+based on the premise that researchers are primarily intrinsically motivated. Once on the job,
+and exposed to changes in university governance, researchers ha ve little option but to join
+in playing the new game. They might deplore the change in conditions, as many have
+(Thomas and Davies 2005), but in their majority as well chose to play it successfully. In the
+terms of SDT, their intrinsic motivation in this situation will be to retain and create room for
+self-actualisation in a given system, that, for different external reasons, they may not be in a
+position to readily leave. Given the circumstances, this may well prompt them to play by the
+rules effectively. Once that system itself become s the object of choice, however, individuals
+will come to very different conclusions and the intrinsic com ponent of their criteria reveal s
+itself more clearly. Seen through the lens of SDT, this seeming contradiction in empirical find-
+ings can thus be easily resolved at a conceptual level.
+From a different angle, SDT allows us to understand why an at least limited responsiveness
+to wage incentives could not be confirmed. While this finding is at odds with some sugges-
+tions in the existing literature ( Janger et al. 2019a; Agarwal and Ohyama 2013), it stands to
+reason given the specific empirical situation in Germany. Different from other countries, there
+is very limited variance in the pay -schemes of scientists, even professors. Until the very late
+career stages, when universities actively seek to convince high performers to stay and others
+to lure them away, meaningful top-ups to standard paygrades are rare. And even then, star
+scientists would typically be rewarded by funds that they are free to dispose of (Mueller and
+Schnurbus 2023) rather than through performance pay schemes, which are simply not very
+prevalent. Mor e profoundly, however, wage incentives neither increase not decrease re-
+searchers' options for self-actualisations and hence will not substantially affect intrinsic deci-
+sions. When its external component is, in addition, very limited, it is completely conclusive
+that no general effect can be found.
+Overall, three initial findings thus corroborate that SDT appears as a suitable conceptual
+choice to explain job choices. More so, this comes to bear with regard to the more specific
+contribution of this paper, the exceptions from the above rules that may apply to certain,
+relevant subgroups. For example, the finding that high prior performance tends to increase
+researchers' acceptance for TPF performance-based systems, aligns with the assumption that
+they can fulfil its demands more easily so that it weighs less on their capacity for self-actual-
+isation (Graber and Wälde 2008; Fitzenberger and Schulze 2014; Fernandes and Walter 2023;
+Herbert et al. 2013a; Herbert et al. 2013b). Where this is not the case, as in the social sciences
+and humanities, the assumption does not hold. At the same time, it tends to decrease their
+acceptance of (further) administrative burden s, in line with the assumption that those with
+more limited freedom in their daily work will react to such a burden more strongly (Bozeman
+
+===== PDF_PAGE 28 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 26
+
+et al. 2021; Barham et al. 2014; Thelwall and Fairclough 2020) . Likewise, it confirms the as-
+sumption, first fully developed in this paper, that researchers' breadth of disciplinary orienta-
+tion also increases their readiness to accept more TPF performance-based systems. This con-
+firms SDT-based assumptions regarding the greater degree of self -actualisation that they
+may experience in such an environment. This is rem arkable as it stands in contrast to other
+assumptions to different effect. Among them e.g. interdisciplinary researchers' assumed lack
+of confidence to be able to comply with different disciplines' parallel expectations and obtain
+external rewards. This, however, may still come to bear, and be reflected in our findings con-
+cerning their greater aversion to administrative burdens. Just like seniority, interdisciplinarity
+orientation is likely to increase the baseline necessity to engage with various processes at
+once, and make researchers more sensitive to any further increase in it. In light of the addi-
+tional burden attached to every additional proposal, the first, positive, finding on third-party
+funding requirements stands out as even more remarkable.
+In summary, our application of the self-determination theory to job choices in academia has
+allowed us to not only confirm a number of existing assumptions but to explain them better
+and in a conceptually much better grounded way. In addition, we could demonstrate that
+SDT-based reasoning allows us to correct predictions concerning specificities where princi-
+ple-agent theory would have suggested different, here not confirmed, assumptions.
+
+===== PDF_PAGE 29 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 27
+
+6 Conclusions
+Apart from its distinct and case-specific empirical contribution, this paper has demonstrated
+that and why self -determination theory should become an indispensable complement in
+framing our conceptual understanding of researchers' behaviour. While we do no t dispute
+earlier studies' findings that researchers may be receptive to external incentives, we suggest
+to see this openness as contingent on context and as secondary to intrinsic motivation. Even
+if to a degree willing to abide by new rules in given envi ronments, researchers will tend to
+prioritise freedom over reward once given the choice of context. Conceptually, there may
+thus not even be a fundamental contradiction in assumptions between principle-agent the-
+ories focussing on extrinsic motivation, and self-determination theory highlighting intrinsic
+motivation. For good reasons, psychological research has consistently seen them as factors
+influencing the same individual simultaneously (Ryan and Deci 2000, 2019) . In addition, we
+believe that our findings are of direct relevance to university managers. Increasingly con-
+fronted with funders' shifting perception of universities' role in society, the strategic and last-
+ing repositioning of their organisation − not least by hiring capable scientists − may be as
+high on their agenda as any increase in performance. In this situation, they need to under-
+stand that new public management, if unintended, has consequences with the potential to
+negatively affect these strategic efforts.
+Having explored this field for the first time, we concede potential limitations resulting from
+the specific sample on which we have worked and leave it to future research to establish
+whether a more general heuristic for academic career choices can be deve loped on their
+basis.
+
+===== PDF_PAGE 30 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 28
+
+Literature
+Aczel, Balazs; Szaszi, Barnabas; Holcombe, Alex O. (2021): A billion-dollar donation:
+estimating the cost of researchers’ time spent on peer review. In Research Integrity
+and Peer Review 6 (1), pp. 1–8.
+Agarwal, Rajshree; Ohyama, Atsushi (2013): Industry or Academia, Basic or Applied? Career
+Choices and Earnings Trajectories of Scientists. In Management Science 59 (4),
+pp. 950–970. DOI: 10.1287/mnsc.1120.1582.
+Archer, Louise (2008): Younger academics’ constructions of ‘authenticity’,‘success’ and
+professional identity. In Studies in Higher Education 33 (4), pp. 385–403.
+Barham, Bradford L.; Foltz, Jeremy D.; Prager, Daniel L. (2014): Making time for science. In
+Research policy 43 (1), pp. 21–31. DOI: 10.1016/j.respol.2013.08.007.
+Beerkens, Maarja (2013): Facts and fads in academic research management: The effect of
+management practices on research productivity in Australia. In Research policy 42 (9),
+pp. 1679–1693. DOI: 10.1016/j.respol.2013.07.014.
+Bentley, Peter James; Kyvik, Svein (2013): Individual Differences in Faculty Research Time
+Allocations Across 13 Countries. In Res High Educ 54 (3), pp. 329–348. DOI:
+10.1007/s11162-012-9273-4.
+Bergland, Brita (2018): The incompatibility of neoliberal university structures and
+interdisciplinary knowledge: A feminist slow scholarship critique. In Educational
+Philosophy and Theory 50 (11), pp. 1031–1036. DOI: 10.1080/00131857.2017.1341297.
+Bleiklie, Ivar; Enders, Jürgen; Lepori, Benedetto; Musselin, Christine (2016): NPM, network
+governance and the university as a changing professional organization. In : The
+Ashgate research companion to new public management: Routledge, pp. 161–176.
+Boer, Harry de; Enders, Jürgen; Schimank, Uwe (2007): On the way towards new public
+management? The governance of university systems in England, the Netherlands,
+Austria, and Germany. In New forms of governance in research organizations, pp. 137–
+152.
+Bogt, Henk J. ter; Scapens, Robert W. (2012): Performance management in universities:
+Effects of the transition to more quantitative measurement systems. In European
+accounting review 21 (3), pp. 451–497.
+Bolli, Thomas; Olivares, Maria; Bonaccorsi, Andrea; Daraio, Cinzia; Aracil, Adela Garcia;
+Lepori, Benedetto (2016): The differential effects of competitive funding on the
+production frontier and the efficiency of universities. In Economics of Education
+Review 52, pp. 91–104.
+Bolli, Thomas; Somogyi, Frank (2011): Do competitively acquired funds induce universities
+to increase productivity? In Research policy 40 (1), pp. 136–147.
+Bozeman, Barry (2000): Technology transfer and public policy: a review of research and
+theory. In Research policy 29 (4-5), pp. 627–655. DOI: 10.1016/S0048-7333(99)00093-
+1.
+
+===== PDF_PAGE 31 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 29
+
+Bozeman, Barry; Youtie, Jan; Jung, Jiwon (2021): Death by a Thousand 10-Minute Tasks:
+Workarounds and Noncompliance in University Research Administration. In
+Administration & Society 53 (4), pp. 527–568. DOI: 10.1177/0095399720947994.
+Bromham, Lindell; Dinnage, Russell; Hua, Xia (2016): Interdisciplinary research has
+consistently lower funding success. In Nature 534 (7609), pp. 684–687.
+Brown, Rebekah; Werbeloff, Lara; Raven, Rob (2019): Interdisciplinary research and impact.
+In Global Challenges 3 (4).
+Butler, Nick; Spoelstra, Sverre (2014): The Regime of Excellence and the Erosion of Ethos in
+Critical Management Studies. In British J of Management 25 (3), pp. 538–550. DOI:
+10.1111/1467-8551.12053.
+Chandler, John; Barry, Jim; Clark, Heather (2002): Stressing Academe: The Wear and Tear of
+the New Public Management. In Human Relations 55 (9), pp. 1051–1069. DOI:
+10.1177/0018726702055009019.
+Chantara, Soontornpathai; Kaewkuekool, Sittichai; Koul, Ravinder (2011): Self-determination
+theory and career aspirations: A review of literature. In institutions 7, p. 9.
+Chen, Charles P. (2017): Career self-determination theory. In Psychology of career
+adaptability, employability and resilience, pp. 329–347.
+Christensen, Tom (2011): University governance reforms: potential problems of more
+autonomy? In Higher Education 62 (4), pp. 503–517. DOI: 10.1007/s10734-010-9401-z.
+Craig, Russell; Amernic, Joel; Tourish, Dennis (2014): Perverse Audit Culture and
+Accountability of the Modern Public University. In Financ Acc Manag 30 (1), pp. 1–24.
+DOI: 10.1111/faam.12025.
+Darner, Rebekka (2014): Influences on Students' Environmental Self Determination and
+Implications for Science Curricula. In International Journal of Environmental and
+Science Education 9 (1), pp. 21–39.
+Diefenbach, T. (2009): New Public Management In Public Sector Organizations: The Dark
+Sides Of Managerialistic ‘Enlightenment’. In Public Administration 87 (4), pp. 892–909.
+DOI: 10.1111/j.1467-9299.2009.01766.x.
+Eckardstein, Dudo von (2003): Leistungsvergütung für Professoren: möglichkeiten und
+Probleme der Umsetzung auf Fachbereichsebene. In Hochschulmanagement, pp. 97–
+116.
+Enders, Jürgen; Boer, Harry de; Leisyte, Liudvika (2008): On Striking The Right Notes: Shifts
+In Governance And The Organisational Transformation Of Universities. In Alberto
+Amaral (Ed.): From Governance to Identity. Singapore: Springer Singapore Pte. Ltd,
+pp. 113–129.
+Fernandes, Mario; Walter, Andreas (2023): The times they are a-changin’: profiling newly
+tenured business economics professors in Germany over the past thirty years. In J Bus
+Econ 93 (5), pp. 929–971. DOI: 10.1007/s11573-022-01132-6.
+Field, Laurie (2015): Appraising academic appraisal in the new public management
+university. In Journal of Higher Education Policy and Management 37 (2), pp. 172–189.
+
+===== PDF_PAGE 32 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 30
+
+Fini, Riccardo; Jourdan, Julien; Perkmann, Markus; Toschi, Laura (2023): A new take on the
+categorical imperative: Gatekeeping, boundary maintenance, and evaluation penalties
+in science. In Organization Science 34 (3), pp. 1090–1110.
+Fitzenberger, Bernd; Schulze, Ute (2014): Up or Out: Research Incentives and Career
+Prospects of Postdocs in Germany. In German Economic Review 15 (2), pp. 287–328.
+DOI: 10.1111/geer.12010.
+Fontana, Magda; Iori, Martina; Montobbio, Fabio; Sinatra, Roberta (2020): New and atypical
+combinations: An assessment of novelty and interdisciplinarity. In Research policy 49
+(7), p. 104063.
+Franzoni, Chiara; Scellato, Giuseppe; Stephan, Paula (2011): Science policy. Changing
+incentives to publish. In Science (New York, N.Y.) 333 (6043), pp. 702–703. DOI:
+10.1126/science.1197286.
+García, Clara Eugenia; Sanz-Menéndez, Luis (2005): Competition for funding as an indicator
+of research competitiveness. In Scientometrics 64 (3), pp. 271–300.
+García-Gallego, Aurora; Georgantzís, Nikolaos; Martín-Montaner, Joan; Pérez-Amaral,
+Teodosio (2015): (How) Do research and administrative duties affect university
+professors’ teaching? In Applied Economics 47 (45), pp. 4868–4883.
+Gentzler, Edwin (2003): Interdisciplinary connections. In Perspectives: Studies in Translatology
+11 (1), pp. 11–24.
+Gordon, Richard; Poulin, Bryan J. (2009): Cost of the NSERC science grant peer review
+system exceeds the cost of giving every qualified researcher a baseline grant. In
+Accountability in Research 16 (1), pp. 13–40.
+Graber, Michael; Wälde, Klaus (2008): Publish or Perish? The Increasing Importance of
+Publications for Prospective Economics Professors in Austria, Germany and
+Switzerland. In German Economic Review 9 (4), pp. 457–472. DOI: 10.1111/j.1468-
+0475.2008.00448.x.
+Guay, Frédéric; Senécal, Caroline; Gauthier, Lysanne; Fernet, Claude (2003): Predicting career
+indecision: A self-determination theory perspective. In Journal of counseling
+psychology 50 (2), p. 165.
+Hamann, Julian (2019): The making of professors: Assessment and recognition in academic
+recruitment. In Social studies of science 49 (6), pp. 919–941. DOI:
+10.1177/0306312719880017.
+Henkel, Mary (2005): Academic identity and autonomy in a changing policy environment. In
+Higher Education 49, pp. 155–176.
+Herbert, Danielle L.; Barnett, Adrian G.; Clarke, Philip; Graves, Nicholas (2013a): On the time
+spent preparing grant proposals: an observational study of Australian researchers. In
+BMJ open 3 (5). DOI: 10.1136/bmjopen-2013-002800.
+Herbert, Danielle L.; Barnett, Adrian G.; Graves, Nicholas (2013b): Funding: Australia's grant
+system wastes time. In Nature 495 (7441), p. 314. DOI: 10.1038/495314d.
+
+===== PDF_PAGE 33 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 31
+
+Hicks, Diana (2012): Performance-based university research funding systems. In Research
+policy 41 (2), pp. 251–261. DOI: 10.1016/j.respol.2011.09.007.
+Hornbostel, Stefan (2001): Third party funding of German universities. An indicator of
+research activity? In Scientometrics 50 (3), pp. 523–537.
+Hornung, Klaus; Leesen, Hans-Joachim von; Schultze-Rhonhof, Gerd (2015): Liebe Leser!
+Janger, Jürgen; Campbell, David F. J.; Strauss, Anna (2019a): Attractiveness of jobs in
+academia: a cross-country perspective. In Higher Education 78 (6), pp. 991–1010. DOI:
+10.1007/s10734-019-00383-7.
+Janger, Jürgen; Campbell, David F. J.; Strauss, Anna (2019b): Attractiveness of jobs in
+academia: A cross-country perspective. In Higher Education 78, pp. 991–1010.
+Janger, Jürgen; Nowotny, Klaus (2016): Job choice in academia. In Research policy 45 (8),
+pp. 1672–1683.
+Jansen, Dorothea (2007): New forms of governance in research organizations. Disciplinary
+approaches, interfaces and integration. Dordrecht: Springer.
+Jansen, Dorothea; Wald, Andreas; Franke, Karola; Schmoch, Ulrich; Schubert, Torben (2007):
+Third party research funding and performance in research. On the effects of
+institutional conditions on research performance of teams: Zum Einfluss von
+Rahmenbedingungen auf Forschungsleistung. In KZfSS Kölner Zeitschrift für Soziologie
+und Sozialpsychologie 59, pp. 125–149.
+Kallio, Kirsi-Mari; Kallio, Tomi J.; Tienari, Janne; Hyvönen, Timo (2016): Ethos at stake:
+Performance management and academic work in universities. In Human Relations 69
+(3), pp. 685–709. DOI: 10.1177/0018726715596802.
+Kleimann, Bernd; Hückstädt, Malte (2021): Selection criteria in professorial recruiting as
+indicators of institutional similarity? A comparison of German universities and
+universities of applied sciences. In Quality in Higher Education 27 (2), pp. 168–183.
+DOI: 10.1080/13538322.2021.1889760.
+Kornfeld, William A.; Hewitt, Carl E. (1981): The scientific community metaphor. In IEEE
+Transactions on Systems, Man, and Cybernetics 11 (1), pp. 24–33.
+Kroll, Henning; Schubert, Torben (2023): Can University Leaders Effectively Promote
+Research on Complex Societal Challenges? A Change-Agency Perspective. In Higher
+Education Policy, pp. 1–18.
+Laudel, Grit (2006): The ‘quality myth’: Promoting and hindering conditions for acquiring
+research funds. In Higher Education 52, pp. 375–403.
+Leišytė, Liudvika; Gozlan, Clémentine (2023): The emergence of academic resistance
+platforms against new public management: towards" new" forms of movement
+organizing? In : Research Handbook on the Transformation of Higher Education:
+Edward Elgar Publishing, pp. 127–141.
+Lemke, Jay L. (2002): Becoming the village: Education across lives. In Learning for life in the
+21st century: Sociocultural perspectives on the future of education, pp. 34–45.
+
+===== PDF_PAGE 34 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 32
+
+Lutter, Mark; Schröder, Martin (2016): Who becomes a tenured professor, and why? Panel
+data evidence from German sociology, 1980–2013. In Research policy 45 (5), pp. 999–
+1013. DOI: 10.1016/j.respol.2016.01.019.
+Maeder, Christoph (2001): Der moralische Kreuzzug des „New Public Management “in der
+Schweiz. In sozialer sinn 2 (1), pp. 191–204.
+McFadden, Daniel (1974): The measurement of urban travel demand. In Journal of public
+economics 3 (4), pp. 303–328.
+McInnis, Craig (2009): Traditions of academic professionalism and shifting academic
+identities. In : Academic and professional identities in higher education: Routledge,
+pp. 165–184.
+Meier, Frank (2023): The Agency of Scientific Disciplines. In Historical Social Research 48 (3),
+pp. 277–295.
+Miller, Judi H. (2004): Third-party funding and counselling in New Zealand: Implications for
+counselling services and professional autonomy. In International Journal for the
+Advancement of Counselling 26, pp. 285–299.
+Morrish, Liz (2017): Academic identities in the managed university: Neoliberalism and
+resistance at Newcastle University, UK. In TheAustralian Universities' Review 59 (2),
+pp. 23–35.
+Mueller, Elisabeth F.; Schnurbus, Joachim (2023): Heeding the call of science: What leads
+PhD graduates to pursue an academic career? In Academy of Management Learning &
+Education 22 (4), pp. 681–701.
+Muller-Camen, Michael; Salzgeber, Stefan (2005): Changes in Academic Work and the Chair
+Regime: The Case of German Business Administration Academics. In Organization
+Studies 26 (2), pp. 271–290. DOI: 10.1177/0170840605049802.
+Münch, Richard (2009): Stratifikation der Hochschullandschaft: Zwischen
+Leistungswettbewerb und Machtlogik. In Zeitschrift für Pädagogik 55 (2), pp. 258–273.
+Niemiec, Christopher P.; Ryan, Richard M. (2009): Autonomy, competence, and relatedness
+in the classroom: Applying self-determination theory to educational practice. In
+Theory and research in Education 7 (2), pp. 133–144.
+Painter, Jason (2011): Autonomy, competence, and intrinsic motivation in science education:
+A self-determination theory perspective.
+Polanyi, M.; Ziman, J.; Fuller, S. (2000): The Republic Of Science: Its Political And Economic
+Theory. In Minerva 38 (1), pp. 1–32. Available online at
+http://www.jstor.org/stable/41821153.
+Potekhina, Anna; Blind, Knut (2020): What motivates the engineers to patent? A study at the
+Chinese R&D laboratories of a European MNC. In The Journal of Technology Transfer
+45, pp. 461–480.
+Quan, Wei; Chen, Bikun; Shu, Fei (2017): Publish or impoverish. In AJIM 69 (5), pp. 486–502.
+DOI: 10.1108/AJIM-01-2017-0014.
+
+===== PDF_PAGE 35 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 33
+
+Ranz, Manuel (2015): The impact of gamification on intrinsic motivation: An experimental
+study of administrative tasks.
+Rebora, Gianfranco; Turri, Matteo (2013): The UK and Italian research assessment exercises
+face to face. In Research policy 42 (9), pp. 1657–1666. DOI:
+10.1016/j.respol.2013.06.009.
+Rincke, Johannes (2023): Nicht-monetäre Anreize bei Berufungsangeboten. In Forschung &
+Lehre 8/23.
+Ryan, Richard M.; Deci, Edward L. (2000): Intrinsic and extrinsic motivations: Classic
+definitions and new directions. In Contemporary educational psychology 25 (1),
+pp. 54–67.
+Ryan, Richard M.; Deci, Edward L. (2019): Brick by brick: The origins, development, and
+future of self-determination theory. In : Advances in motivation science, vol. 6:
+Elsevier, pp. 111–156.
+Ryan, Suzanne; Neumann, Ruth (2013): Interdisciplinarity in an era of new public
+management: a case study of graduate business schools. In Studies in Higher
+Education 38 (2), pp. 192–206. DOI: 10.1080/03075079.2011.571669.
+Sandström, Ulf; van den Besselaar, Peter (2018): Funding, evaluation, and the performance
+of national research systems. In Journal of Informetrics 12 (1), pp. 365–384. DOI:
+10.1016/j.joi.2018.01.007.
+Schmoch, Ulrich; Schubert, Torben (2009): Sustainability of incentives for excellent
+research—The German case. In Scientometrics 81 (1), pp. 195–218.
+Schubert, Torben (2009a): Empirical observations on new public management to increase
+efficiency in public research—Boon or bane? In Research policy 38 (8), pp. 1225–1234.
+Schubert, Torben (2009b): Empirical observations on New Public Management to increase
+efficiency in public research—Boon or bane? In Research policy 38 (8), pp. 1225–1234.
+DOI: 10.1016/j.respol.2009.06.007.
+Schulze, Günther G.; Wiermann, Christian; Warning, Susanne (2008): What and How Long
+Does It Take to Get Tenure? The Case of Economics and Business Administration in
+Austria, Germany and Switzerland. In German Economic Review 9 (4), pp. 473–505.
+DOI: 10.1111/j.1468-0475.2008.00449.x.
+Schweiger, Gerald (2023): Can’t We Do Better? A cost-benefit analysis of proposal writing in
+a competitive funding environment. In Plos one 18 (4), e0282320.
+Sheldon, Kennon M.; Holliday, Greyson; Titova, Liudmila; Benson, Craig (2020): Comparing
+Holland and Self-Determination Theory measures of career preference as predictors
+of career choice. In Journal of Career Assessment 28 (1), pp. 28–42.
+Siedlok, Frank; Hibbert, Paul (2014): The organization of interdisciplinary research: modes,
+drivers and barriers. In International Journal of Management Reviews 16 (2), pp. 194–
+210.
+
+===== PDF_PAGE 36 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 34
+
+Teelken, Christine (2012): Compliance or pragmatism: how do academics deal with
+managerialism in higher education? A comparative study in three countries. In Studies
+in Higher Education 37 (3), pp. 271–290. DOI: 10.1080/03075079.2010.511171.
+Thelwall, Mike; Fairclough, Ruth (2020): All downhill from the PhD? The typical impact
+trajectory of U.S. academic careers. In Quantitative Science Studies 1 (3), pp. 1334–
+1348. DOI: 10.1162/qss_a_00072.
+Thomas, Robyn; Davies, Annette (2005): Theorizing the micro-politics of resistance: New
+public management and managerial identities in the UK public services. In
+Organization Studies 26 (5), pp. 683–706.
+Tolofari, Sowaribi (2005): New public management and education. In Policy futures in
+education 3 (1), pp. 75–89.
+Torp, Steffen; Vinje, Hege Forbech; Haaheim-Simonsen, Hedvik Kamilla (2016): Work, well-
+being and presence among researchers. In International Journal of Mental Health
+Promotion 18 (4), pp. 199–212.
+Traets, Frits; Sanchez, Daniel Gil; Vandebroek, Martina (2020): Generating optimal designs
+for discrete choice experiments in R: the idefix package. In Journal of Statistical
+Software 96, pp. 1–41.
+Uljens, Michael; Wolff, Lili-Ann; Frontini, Sara (2016): Finland: NPM resistance or towards
+European neo-welfarism in education? In : New public management and the reform
+of education: Routledge, pp. 39–52.
+van Looy, Amy; Shafagatova, Aygun (2016): Business process performance measurement: a
+structured literature review of indicators, measures and metrics. In SpringerPlus 5 (1),
+pp. 1–24.
+van Rijnsoever, Frank J.; Hessels, Laurens K. (2011): Factors associated with disciplinary and
+interdisciplinary research collaboration. In Research policy 40 (3), pp. 463–472.
+van Rijnsoever, Frank J.; Hessels, Laurens K. (2021): How academic researchers select
+collaborative research projects: a choice experiment. In J Technol Transf 46 (6),
+pp. 1917–1948. DOI: 10.1007/s10961-020-09833-2.
+Wagner, Caroline S.; Roessner, J. David; Bobb, Kamau; Klein, Julie Thompson; Boyack, Kevin
+W.; Keyton, Joann et al. (2011): Approaches to understanding and measuring
+interdisciplinary scientific research (IDR): A review of the literature. In Journal of
+Informetrics 5 (1), pp. 14–26. DOI: 10.1016/j.joi.2010.06.004.
+Wagner, Caroline S.; Whetsell, Travis A.; Mukherjee, Satyam (2019): International research
+collaboration: Novelty, conventionality, and atypicality in knowledge recombination.
+In Research policy 48 (5), pp. 1260–1270.
+Ward, Robert C. (2007): The outsourcing of public library management: An analysis of the
+application of new public management theories from the principal-agent perspective.
+In Administration & Society 38 (6), pp. 627–648.
+Weissberg, Robert (2013): The hidden costs of journal peer review. In Academic Questions
+26 (2), pp. 157–166.
+
+===== PDF_PAGE 37 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 84
+Fraunhofer ISI | 35
+
+Whitley, Richard (2000): The intellectual and social organization of the sciences. 2nd ed.
+Oxford England, New York: Oxford University Press.
+Woelert, Peter (2023): Administrative burden in higher education institutions: a
+conceptualisation and a research agenda. In Journal of Higher Education Policy and
+Management 45 (4), pp. 409–422. DOI: 10.1080/1360080X.2023.2190967.

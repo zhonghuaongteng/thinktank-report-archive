@@ -32,6 +32,10 @@ DIRECT_OVERRIDES: dict[str, str] = {}
 OFFICIAL_PDF_OVERRIDES = {
     "C-OECD-DOI-7CC876F7-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/08/optimising-the-operation-and-use-of-national-research-infrastructures_fcf87118/7cc876f7-en.pdf",
     "C-OECD-DOI-0002217C-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/05/an-industrial-policy-framework-for-oecd-countries_233e3061/0002217c-en.pdf",
+    "C-OECD-DOI-154981D7-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/12/identifying-and-characterising-ai-adopters_adad5b31/154981d7-en.pdf",
+    "C-OECD-DOI-EBC2DEBE-EN": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/01/digital-technology-diffusion-in-the-age-of-ai_7f11be5d/ebc2debe-en.pdf",
+    "C-STANFORD-HAI-AI-INDEX-2019": "https://hai.stanford.edu/assets/files/ai_index_2019_report.pdf",
+    "C-STANFORD-HAI-WHITE-PAPER-BUILDING-NATIONAL-AI-RESEARCH-RESOURCE": "https://hai.stanford.edu/sites/default/files/2021-10/HAI_NRCR_2021_0.pdf",
 }
 
 
