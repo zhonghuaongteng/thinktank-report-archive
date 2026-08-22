@@ -168,6 +168,12 @@ def priority_rank(priority: str) -> int:
     }.get(priority, 9)
 
 
+def preserve_ocr_quality(classified: str, status: str) -> str:
+    if status == "官方PDF已保存并完成韩文OCR":
+        return "韩文OCR可检索文本"
+    return classified
+
+
 def should_download(entry: Entry, include_p1: bool = False) -> bool:
     if not entry.download_path:
         return False
@@ -246,6 +252,10 @@ def main() -> int:
     args = parser.parse_args()
 
     root = args.research.resolve()
+    previous_ledger_path = root / "64_KISTEP韩文正式报告总目录与重点附件台账.csv"
+    previous_by_id = {
+        row["报告ID"]: row for row in read_csv(previous_ledger_path)
+    } if previous_ledger_path.exists() else {}
     directories = {
         "pdf": root / "03_证据底稿" / "原文PDF",
         "text": root / "03_证据底稿" / "文本",
@@ -308,15 +318,21 @@ def main() -> int:
                 pages = pages or measured_pages
                 evidence_text = Path(local_text).read_text(encoding="utf-8", errors="replace")
                 status = "官方PDF已保存并校验"
+                previous = previous_by_id.get(report_id, {})
+                if (
+                    previous.get("本地状态") == "官方PDF已保存并完成韩文OCR"
+                    and "===== OCR_PAGE " in evidence_text
+                ):
+                    status = "官方PDF已保存并完成韩文OCR"
             except Exception as exc:
                 error = f"{type(exc).__name__}: {exc}"
                 status = "本地衍生处理失败"
         themes = classify_themes(entry.title_ko, entry.keywords, evidence_text)
-        text_quality = (
+        text_quality = preserve_ocr_quality((
             "官方目录无本地正文" if not local_asset
             else "图像型PDF，OCR待补" if not pages or chars / pages < 200
             else "可检索文本"
-        )
+        ), status)
         ledger_rows.append({
             "报告ID": report_id,
             "官方记录ID": entry.record_id,
@@ -365,9 +381,10 @@ def main() -> int:
             "报告名称": row["韩文题名"],
             "报告类型": f"KISTEP {row['韩文报告类型']}",
             "原文链接": row["官方落地页"],
-            "本地路径": "",
+            "本地路径": row["本地文本"] if text_quality == "韩文OCR可检索文本" else "",
             "正文完整度": (
                 "官方图像型PDF已保存，OCR待补" if text_quality == "图像型PDF，OCR待补"
+                else "本地韩文OCR全文已保存" if text_quality == "韩文OCR可检索文本"
                 else "本地韩文原文已保存" if row["本地原始资产"]
                 else "官方目录元数据，正文待补"
             ),
@@ -414,7 +431,7 @@ def main() -> int:
         f"- W1：{windows['W1']}项；W2：{windows['W2']}项；W3：{windows['W3']}项。",
         f"- 核心科技直接材料：{core_count}项；中国科技与国际比较：{china_count}项。",
         f"- P0中国科技：{priorities['P0-China-tech']}项；P0核心技术：{priorities['P0-core-tech']}项；P1全球科技创新：{priorities['P1-global-STI']}项。",
-        f"- 本批官方PDF保存：{statuses['官方PDF已保存并校验']}项；附件非PDF或获取失败：{statuses['附件非PDF或获取失败']}项。", "",
+        f"- 本批官方PDF保存：{statuses['官方PDF已保存并校验'] + statuses['官方PDF已保存并完成韩文OCR']}项；其中韩文OCR补全：{statuses['官方PDF已保存并完成韩文OCR']}项；附件非PDF或获取失败：{statuses['附件非PDF或获取失败']}项。", "",
         f"- 报告总目录现为：{len(merged)}项。", "",
         "## 类型分布", "",
     ]

@@ -13,8 +13,8 @@ KOREAN_TERMS = (
 )
 
 
-def ocr_engine_kwargs() -> dict[str, object]:
-    return {
+def ocr_engine_kwargs(detection_model: str = "") -> dict[str, object]:
+    kwargs: dict[str, object] = {
         "lang": "korean",
         "ocr_version": "PP-OCRv5",
         "use_doc_orientation_classify": False,
@@ -22,6 +22,12 @@ def ocr_engine_kwargs() -> dict[str, object]:
         "use_textline_orientation": False,
         "enable_mkldnn": False,
     }
+    if detection_model:
+        kwargs.pop("lang")
+        kwargs.pop("ocr_version")
+        kwargs["text_detection_model_name"] = detection_model
+        kwargs["text_recognition_model_name"] = "korean_PP-OCRv5_mobile_rec"
+    return kwargs
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -111,6 +117,7 @@ def main() -> int:
     parser.add_argument("--ledger", required=True)
     parser.add_argument("--ids", required=True)
     parser.add_argument("--scale", type=float, default=2.0)
+    parser.add_argument("--detection-model", default="")
     parser.add_argument("--max-pages", type=int, default=0)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
@@ -134,7 +141,7 @@ def main() -> int:
     if missing:
         raise ValueError(f"selected IDs missing from ledger: {sorted(missing)}")
 
-    engine = PaddleOCR(**ocr_engine_kwargs())
+    engine = PaddleOCR(**ocr_engine_kwargs(args.detection_model))
     completed = 0
     for report_id in sorted(selected):
         row = indexed[report_id]

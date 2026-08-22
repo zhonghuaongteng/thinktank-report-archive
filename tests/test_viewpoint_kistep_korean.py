@@ -98,6 +98,15 @@ class KistepKoreanCollectionTests(unittest.TestCase):
         self.assertLess(kistep.priority_rank("P0-core-tech"), kistep.priority_rank("P1-global-STI"))
         self.assertLess(kistep.priority_rank("P1-global-STI"), kistep.priority_rank("P2-STI-baseline"))
 
+    def test_existing_korean_ocr_quality_survives_catalog_rebuild(self) -> None:
+        preserve = getattr(kistep, "preserve_ocr_quality", None)
+        self.assertIsNotNone(preserve, "OCR preservation helper is not implemented")
+        self.assertEqual(
+            preserve("可检索文本", "官方PDF已保存并完成韩文OCR"),
+            "韩文OCR可检索文本",
+        )
+        self.assertEqual(preserve("可检索文本", "官方PDF已保存并校验"), "可检索文本")
+
 
 if __name__ == "__main__":
     unittest.main()

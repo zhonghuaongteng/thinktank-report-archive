@@ -35,6 +35,11 @@ class KoreanOcrTests(unittest.TestCase):
     def test_disables_mkldnn_for_paddle_331_windows_inference(self) -> None:
         self.assertIs(ocr_engine_kwargs()["enable_mkldnn"], False)
 
+    def test_mobile_detection_keeps_korean_recognition_model(self) -> None:
+        kwargs = ocr_engine_kwargs("PP-OCRv5_mobile_det")
+        self.assertEqual(kwargs["text_detection_model_name"], "PP-OCRv5_mobile_det")
+        self.assertEqual(kwargs["text_recognition_model_name"], "korean_PP-OCRv5_mobile_rec")
+
     def test_filters_low_confidence_lines(self) -> None:
         self.assertEqual(result_lines(FakeResult()), ["과학기술 정책"])
 
