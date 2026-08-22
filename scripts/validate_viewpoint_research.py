@@ -108,6 +108,7 @@ def main() -> None:
         "116_KISTEP科技政策与AI半导体扫描件OCR补全台账.csv", "117_KISTEP科技政策与AI半导体扫描件OCR补全结果.md",
         "118_KISTEP全球健康与先进生物合作扫描件OCR补全台账.csv", "119_KISTEP全球健康与先进生物合作扫描件OCR补全结果.md",
         "120_NISTEP科技创新主轴补充证据台账.csv", "121_NISTEP科技创新主轴补充证据结果.md",
+        "122_Stanford_HAI_AI_Index连续序列定点全文台账.csv", "123_Stanford_HAI_AI_Index连续序列定点全文结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -358,6 +359,17 @@ def main() -> None:
         and len(r["SHA256"]) == 64
         for r in nistep_support
     )
+    stanford_series = rows(root / "122_Stanford_HAI_AI_Index连续序列定点全文台账.csv")
+    assert len(stanford_series) == 3
+    assert {r["年份"] for r in stanford_series} == {"2018", "2022", "2025"}
+    assert sum(int(r["PDF页数"]) for r in stanford_series) == 781
+    assert sum(int(r["提取文本字符数"]) for r in stanford_series) == 1356077
+    assert all(
+        Path(r["本地PDF"]).exists() and Path(r["本地文本"]).exists()
+        and Path(r["本地切片"]).exists() and len(r["SHA256"]) == 64
+        and sha(Path(r["本地PDF"])) == r["SHA256"]
+        for r in stanford_series
+    )
     stepi_assets = rows(root / "60_STEPI韩文科技与中国专题增补台账.csv")
     assert len(stepi_assets) == 518, len(stepi_assets)
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 476
@@ -417,7 +429,7 @@ def main() -> None:
         "T1_科学体系与基础研究", "T2_技术创新与关键技术", "T3_创新政策与研发治理",
         "T4_人才大学与科研组织", "T5_产业创新转化与区域生态", "T6_国际合作开放科学与比较",
     }
-    assert len(targeted_queue) == 11
+    assert len(targeted_queue) == 2
     assert len(catalog_queue) == 0
     assert not any(r["战略主题"] == "T7_安全供应链与治理边界" for r in gap_matrix)
     assert not any(r["报告名称"] == "China’s Military AI Roadblocks" for r in targeted_queue)
@@ -498,9 +510,11 @@ def main() -> None:
     assert sum("正式" in r["资料层级"] for r in belfer_merics_light) == 2
     assert sum("机构评论" in r["资料层级"] for r in belfer_merics_light) == 1
     assert not any(re.search(r"national security|cybersecurity|nuclear defense|security and integrity|electromagnetic pulses", r["报告名称"], re.I) for r in ostp_light)
-    assert all(r["全文策略"].startswith("不自动下载") for ledger in (cset_light, oecd_light, itif_series_light, itif_node_light, fraunhofer_light, stanford_hai_light, ostp_light, belfer_merics_light) for r in ledger)
+    assert all(r["全文策略"].startswith("不自动下载") for ledger in (cset_light, oecd_light, itif_series_light, itif_node_light, fraunhofer_light, ostp_light, belfer_merics_light) for r in ledger)
+    assert sum(r["全文策略"].startswith("已按连续序列缺口定点下载") for r in stanford_hai_light) == 3
+    assert sum(r["全文策略"].startswith("不自动下载") for r in stanford_hai_light) == 14
     assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 720
-    assert len(rows(root / "70_定点补源优先队列.csv")) == 11
+    assert len(rows(root / "70_定点补源优先队列.csv")) == 2
     assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 0
     review = rows(root / "92_定点全文候选证据增量复核台账.csv")
     assert len(review) == 43
@@ -593,6 +607,7 @@ def main() -> None:
             (crds_assets, ("本地原始资产",)),
             (nistep_assets, ("本地原始资产",)),
             (nistep_support, ("本地原始资产",)),
+            (stanford_series, ("本地PDF",)),
             (stepi_assets, ("本地原始资产",)),
             (stepi_series, ("本地原始资产",)),
             (kistep_assets, ("本地原始资产",)),
@@ -733,6 +748,8 @@ def main() -> None:
         ("119_KISTEP全球健康与先进生物合作扫描件OCR补全结果.md", "国际科技智库观点演变_KISTEP全球健康与先进生物合作扫描件OCR补全结果.md"),
         ("120_NISTEP科技创新主轴补充证据台账.csv", "国际科技智库观点演变_NISTEP科技创新主轴补充证据台账.csv"),
         ("121_NISTEP科技创新主轴补充证据结果.md", "国际科技智库观点演变_NISTEP科技创新主轴补充证据结果.md"),
+        ("122_Stanford_HAI_AI_Index连续序列定点全文台账.csv", "国际科技智库观点演变_Stanford_HAI_AI_Index连续序列定点全文台账.csv"),
+        ("123_Stanford_HAI_AI_Index连续序列定点全文结果.md", "国际科技智库观点演变_Stanford_HAI_AI_Index连续序列定点全文结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1

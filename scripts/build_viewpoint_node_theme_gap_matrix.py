@@ -61,7 +61,8 @@ STRATEGIC_THEMES = {
     "T6_国际合作开放科学与比较": re.compile(
         r"国际合作|國際合作|국제협력|国際協力|international cooperation|科技外交|기술외교|science diplomacy|"
         r"开放科学|開放科學|open science|国际比较|國際比較|국제비교|国際比較|international comparison|"
-        r"全球|global|글로벌|科学交流|科學交流|研究交流|合作网络|協力ネットワーク|共同研究|공동연구|"
+        r"全球科研|全球科学|全球科技|全球创新|global research|global science|global technolog|global innovation|"
+        r"科学交流|科學交流|研究交流|合作网络|協力ネットワーク|共同研究|공동연구|"
         r"跨国|跨國|transnational|多边|多邊|multilateral",
         re.I,
     ),

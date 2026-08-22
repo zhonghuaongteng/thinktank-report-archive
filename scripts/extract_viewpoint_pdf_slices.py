@@ -9,33 +9,33 @@ from pypdf import PdfReader
 
 
 KEYWORDS = {
-    "T1_国家研发与方向设定": [
-        "government", "public investment", "public funding", "state role", "directionality",
-        "mission-oriented", "industrial strategy", "industrial policy",
+    "T1_科学体系与基础研究": [
+        "basic research", "fundamental research", "scientific research", "science system",
+        "research infrastructure", "public research", "research funding", "open science",
     ],
-    "T2_市场与产业政策边界": [
-        "market failure", "market forces", "business r&d", "private sector", "competition policy",
-        "picking winners", "commercialisation", "commercialization",
+    "T2_技术创新与关键技术": [
+        "technology innovation", "technological innovation", "artificial intelligence", "machine learning",
+        "semiconductor", "quantum", "biotechnology", "robotics", "advanced materials", "compute",
     ],
-    "T4_国际合作与开放": [
+    "T3_创新政策与研发治理": [
+        "innovation policy", "science policy", "research and development", "r&d", "public investment",
+        "public funding", "mission-oriented", "policy mix", "foresight", "priority setting",
+    ],
+    "T4_人才大学与科研组织": [
+        "researcher", "scientist", "doctoral", "phd", "talent", "university", "laboratory",
+        "research organization", "research institution", "academic", "workforce", "mobility",
+    ],
+    "T5_产业创新与成果转化": [
+        "business r&d", "private sector", "startup", "entrepreneurship", "commercialisation",
+        "commercialization", "technology transfer", "industry", "manufacturing", "productivity",
+    ],
+    "T6_国际合作开放科学与比较": [
         "international cooperation", "international co-operation", "open science", "openness",
-        "allies", "partnership", "multilateral", "collaboration",
+        "partnership", "multilateral", "collaboration", "cross-border", "global research",
     ],
-    "T5_供应链与技术依赖": [
-        "supply chain", "dependency", "dependence", "resilience", "self-sufficiency",
-        "technological sovereignty", "strategic autonomy", "de-risk",
-    ],
-    "T7_管制与研究安全": [
-        "export control", "investment screening", "research security", "securitisation",
-        "securitization", "economic security", "technology control",
-    ],
-    "T8_新兴技术治理": [
-        "technology governance", "responsible innovation", "responsible research", "shared values",
-        "artificial intelligence", "emerging technolog", "ethics", "trust",
-    ],
-    "T10_预见与优先领域": [
-        "foresight", "horizon scanning", "strategic intelligence", "priority setting",
-        "critical technolog", "key technolog", "scenario",
+    "T7_中国科技横向维度": [
+        "china", "chinese", "people's republic of china", "prc", "beijing", "shanghai",
+        "hong kong", "taiwan", "sino-", "u.s.-china", "us-china",
     ],
 }
 

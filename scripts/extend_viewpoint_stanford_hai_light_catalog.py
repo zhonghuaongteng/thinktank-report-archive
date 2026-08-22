@@ -38,6 +38,13 @@ CORE = (
     "人才大学与科研组织", "产业创新转化与区域生态", "国际合作开放科学与比较",
 )
 
+ANNUAL_PDF_URLS = {
+    2018: "https://hai.stanford.edu/assets/files/ai_index_2018_annual_report.pdf",
+    2022: "https://hai.stanford.edu/assets/files/2022-ai-index-report_master.pdf",
+    2023: "https://hai.stanford.edu/assets/files/hai_ai-index-report_2023.pdf",
+    2025: "https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf",
+}
+
 
 def annual(year: int) -> HaiItem:
     return HaiItem(
@@ -48,7 +55,7 @@ def annual(year: int) -> HaiItem:
         CORE + ("中国科技横向维度",),
         "全球指标体系含中国及中美比较；具体数值与命题须回查当年正文",
         "年；统一目录以1月1日作排序占位，不代表实际发布日期",
-        "https://hai.stanford.edu/assets/files/hai_ai-index-report_2023.pdf" if year == 2023 else "",
+        ANNUAL_PDF_URLS.get(year, ""),
     )
 
 

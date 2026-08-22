@@ -83,6 +83,19 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         themes = classify_themes({"报告名称": title, "示踪问题": ""}, set())
         self.assertTrue(fulltext_axis_eligible(title, themes))
 
+    def test_generic_global_topics_do_not_create_innovation_fulltext_candidates(self) -> None:
+        for title in (
+            "Estimating the global economic impacts of international tourism",
+            "Measuring greenhouse gas footprints in global production networks",
+            "Unlocking potential in the global scrap steel market",
+        ):
+            themes = classify_themes({"报告名称": title, "示踪问题": ""}, set())
+            self.assertFalse(fulltext_axis_eligible(title, themes), title)
+
+        innovation_title = "Global research collaboration and open science"
+        innovation_themes = classify_themes({"报告名称": innovation_title, "示踪问题": ""}, set())
+        self.assertTrue(fulltext_axis_eligible(innovation_title, innovation_themes))
+
     def test_evidence_status_distinguishes_three_layers(self) -> None:
         self.assertEqual(evidence_status(3, 0, 0, "A"), "仅目录候选")
         self.assertEqual(evidence_status(3, 1, 0, "A"), "原文待文本化")
