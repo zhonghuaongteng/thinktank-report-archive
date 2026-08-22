@@ -79,6 +79,9 @@ def main() -> None:
         "64_KISTEP韩文正式报告总目录与重点附件台账.csv", "65_KISTEP韩文正式报告总目录与重点附件结果.md",
         "66_KISTEP韩文科技与中国主题索引.csv", "67_KISTEP韩文科技与中国复用矩阵.csv",
         "68_智库分层与转向节点采集矩阵.md",
+        "69_机构节点主题覆盖缺口矩阵.csv", "70_定点补源优先队列.csv",
+        "71_覆盖缺口结果.md", "72_轻量目录扩展优先队列.csv",
+        "73_STEPI中国先进技术连续序列附卷台账.csv", "74_STEPI中国先进技术连续序列结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -318,8 +321,8 @@ def main() -> None:
     assert all(r["机构观点等级"] == "作者讨论论文" for r in nistep_catalog if r["报告类型"] == "讨论论文")
     stepi_assets = rows(root / "60_STEPI韩文科技与中国专题增补台账.csv")
     assert len(stepi_assets) == 518, len(stepi_assets)
-    assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 476
-    assert sum(r["本地状态"] == "官方目录无PDF" for r in stepi_assets) == 42
+    assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in stepi_assets) == 481
+    assert sum(r["本地状态"] == "官方目录无PDF" for r in stepi_assets) == 37
     assert not any(r["本地状态"] == "获取失败" for r in stepi_assets)
     assert sum(r["韩文报告类型"] == "정책연구" for r in stepi_assets) == 296
     assert sum(r["韩文报告类型"] == "조사연구" for r in stepi_assets) == 111
@@ -330,9 +333,9 @@ def main() -> None:
     assert sum(r["观察窗"] == "W3" for r in stepi_assets) == 213
     assert sum(r["科技关联层级"] == "核心科技直接材料" for r in stepi_assets) == 66
     assert sum("中国科技与国际比较" in r["主题标签"] for r in stepi_assets) == 104
-    assert sum(r["文本质量"] == "可检索文本" for r in stepi_assets) == 471
+    assert sum(r["文本质量"] == "可检索文本" for r in stepi_assets) == 476
     assert sum(r["文本质量"] == "图像型PDF，OCR待补" for r in stepi_assets) == 5
-    assert sum(r["文本质量"] == "官方目录无PDF正文" for r in stepi_assets) == 42
+    assert sum(r["文本质量"] == "官方目录无PDF正文" for r in stepi_assets) == 37
     assert all(
         r["本地原始资产"] and Path(r["本地原始资产"]).exists()
         and r["本地文本"] and Path(r["本地文本"]).exists()
@@ -345,7 +348,25 @@ def main() -> None:
         for r in stepi_assets if r["本地状态"] == "官方目录无PDF"
     )
     assert len(rows(root / "62_STEPI韩文科技与中国主题索引.csv")) == 2401
-    assert len(rows(root / "63_STEPI韩文科技与中国复用矩阵.csv")) == 228
+    assert len(rows(root / "63_STEPI韩文科技与中国复用矩阵.csv")) == 222
+    stepi_series = rows(root / "73_STEPI中国先进技术连续序列附卷台账.csv")
+    assert len(stepi_series) == 10
+    assert sum(r["卷别"] == "主卷" for r in stepi_series) == 5
+    assert sum(r["卷别"] == "附卷" for r in stepi_series) == 5
+    assert {r["年份"] for r in stepi_series} == {"2017", "2018", "2019", "2020", "2021"}
+    assert all(
+        Path(r["本地原始资产"]).exists() and Path(r["本地文本"]).exists()
+        and Path(r["本地切片"]).exists() and len(r["SHA256"]) == 64
+        and int(r["PDF页数"]) > 0 and r["文本质量"] == "可检索文本"
+        for r in stepi_series
+    )
+    gap_matrix = rows(root / "69_机构节点主题覆盖缺口矩阵.csv")
+    targeted_queue = rows(root / "70_定点补源优先队列.csv")
+    catalog_queue = rows(root / "72_轻量目录扩展优先队列.csv")
+    assert len(gap_matrix) == 840
+    assert len(targeted_queue) == 8
+    assert len(catalog_queue) == 19
+    assert all(r["机构ID"] == "kistep" for r in targeted_queue)
     stepi_catalog = [r for r in catalog if r["报告ID"].startswith("C-STEPI-")]
     assert len(stepi_catalog) == len(stepi_assets)
     assert all(r["机构观点等级"] == "机构正式研究" for r in stepi_catalog)
@@ -406,6 +427,7 @@ def main() -> None:
             (crds_assets, ("本地原始资产",)),
             (nistep_assets, ("本地原始资产",)),
             (stepi_assets, ("本地原始资产",)),
+            (stepi_series, ("本地原始资产",)),
             (kistep_assets, ("本地原始资产",)),
         )
         for row in ledger
@@ -491,6 +513,12 @@ def main() -> None:
         ("66_KISTEP韩文科技与中国主题索引.csv", "国际科技智库观点演变_KISTEP韩文科技与中国主题索引.csv"),
         ("67_KISTEP韩文科技与中国复用矩阵.csv", "国际科技智库观点演变_KISTEP韩文科技与中国复用矩阵.csv"),
         ("68_智库分层与转向节点采集矩阵.md", "国际科技智库观点演变_智库分层与转向节点采集矩阵.md"),
+        ("69_机构节点主题覆盖缺口矩阵.csv", "国际科技智库观点演变_机构节点主题覆盖缺口矩阵.csv"),
+        ("70_定点补源优先队列.csv", "国际科技智库观点演变_定点补源优先队列.csv"),
+        ("71_覆盖缺口结果.md", "国际科技智库观点演变_覆盖缺口结果.md"),
+        ("72_轻量目录扩展优先队列.csv", "国际科技智库观点演变_轻量目录扩展优先队列.csv"),
+        ("73_STEPI中国先进技术连续序列附卷台账.csv", "国际科技智库观点演变_STEPI中国先进技术连续序列附卷台账.csv"),
+        ("74_STEPI中国先进技术连续序列结果.md", "国际科技智库观点演变_STEPI中国先进技术连续序列结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
