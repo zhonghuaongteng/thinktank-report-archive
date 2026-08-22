@@ -1,0 +1,866 @@
+
+===== PDF_PAGE 1 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Measuring the Causal Economic Effects of Scientific
+Research
+Evidence from the Staggered Foundation of the SENAI Innovation In-
+stitutes in Brazil
+Torben Schubert, Denilton Darold, Markus Will
+Place: Karlsruhe
+Date: November 2024
+
+===== PDF_PAGE 2 =====
+Responsible for content
+Torben Schubert, torben.schubert@isi.fraunhofer.de; Denilton Darold, denilton.darold@isi.fraunhofer.de; Markus
+Will, markus.will@ipk.fraunhofer.de
+Recommended citation
+Schubert, T.; Darold, D.; Will, M. (2024): Measuring the Causal Economic Effects of Scientific Research – Evidence
+from the Staggered Foundation of the SENAI Innovation Institutes in Brazil, Discussion Papers Innovation Systems
+and Policy Analysis No. 87. Karlsruhe: Fraunhofer ISI
+Published
+November 2024
+ISSN
+1612-1430
+Doi
+10.24406/publica-3768
+
+===== PDF_PAGE 3 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | I
+Contents
+Abstract ........................................................................................................................................... 1
+1 Introduction .................................................................................................................... 2
+2 Background ..................................................................................................................... 3
+2.1 The Macroeconomic Returns of Scientific Research ................................................................... 3
+2.2 History and Role of the SENAI Innovation Institutes (ISI) .......................................................... 4
+2.3 Locational Choice in the SENAI ISI Case and the Parallel Trends Assumption ...................... 5
+3 Data and Methodology ................................................................................................ 7
+3.1 Econometric Identification Strategy ............................................................................................... 7
+3.1.1 The Logics of Difference-in-Differences Estimation .......................................................................................................... 7
+3.2 Treatment Definition in the SENAI Case ........................................................................................ 8
+4 Results ............................................................................................................................ 10
+4.1 The Evolution and the Development of SENAI .......................................................................... 10
+4.2 The Economic Effects of SENAI ..................................................................................................... 13
+4.2.1 The Importance of Staggered Roll-out ................................................................................................................................. 13
+4.2.2 Estimating the Baseline Effects on GDP per Capita ......................................................................................................... 14
+4.2.3 Assessing the Stable Unit of Treatment Value Assumption ......................................................................................... 17
+4.3 The Overall Macroeconomic Value of SENAI ............................................................................. 19
+5 Discussion and Conclusion ........................................................................................20
+6 Publication Bibliography ............................................................................................22
+
+===== PDF_PAGE 4 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | II
+List of figures
+Figure 1: Population density and ISI institutes ....................................................................................... 10
+Figure 2: Project numbers per region ........................................................................................................ 11
+Figure 3: Project numbers over time .......................................................................................................... 13
+Figure 4: Project numbers over time .......................................................................................................... 14
+Figure 5: Event-study plots of the baseline DiD estimations ............................................................ 16
+Figure 6: Event-study plots of the baseline DiD estimations by project type ............................ 18
+List of tables
+Table 1: Summary of project statistics...................................................................................................... 12
+Table 2: Project revenue per service type ............................................................................................... 12
+Table 3: Staggered DiD estimation ............................................................................................................ 15
+Table 4: Staggered DiD estimation (continuous treatment) ............................................................ 19
+Table 5: Share of Brazilian GDP explained by SENAI .......................................................................... 19
+
+===== PDF_PAGE 5 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 1
+Abstract
+How to estimate the economic returns of public science is a longstanding but equally challenging
+topic in quantitative science studies. In this paper, we exploit the staggered foundation of the SENAI
+Innovation Institutes (ISI) in Brazil since 2012, to estimate their effects on GDP using a difference-
+in-differences (DiD) approach. Building on historical and institutional insights from interviews on
+the foundation process, we unravel the conditions under which the parallel trends assumption is
+likely to hold. Our analysis reveals that these institutes significantly contribute to GDP per capita,
+with an average treatment effect of 985 BRL (approximately €160). Moreover, by relying on detailed
+project-level data, we were able to show that the effects come almost exclusively from genuine
+research projects and not from the provision of scientific services, such as metrology. Finally, ten-
+tative calculations suggest that the SENAI institutes may account for about 0.66% of Brazil's overall
+GDP, emphasising the importance of applied science in regional economic development and
+providing insights into effective collaboration between research and industry.
+
+===== PDF_PAGE 6 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 2
+1 Introduction
+The analysis of the economic returns and effects of science has a long tradition in quantitative
+science studies. Almost 70 years ago, Zvi Griliches (1958) analysed the social returns of hybrid corn-
+related innovations by comparing the costs of their development with market values. Extending this
+idea, many studies since the 1970s have sought ways to measure the economic returns of science
+with various methodologies, including multiplier analyses (Glückler et al. 2015), regression ap-
+proaches (Schubert and Kroll 2016b; Bertoletti et al. 2022; Agasisti and Bertoletti 2022) or macroe-
+conomic simulation models (Allan et al. 2022). Yet, while these methods come with their specific
+advantages and disadvantages, they all face the pressing need to establish causality. In the context
+of the economic effects of science, credibly claiming causal links is, however, notoriously difficult
+because scientific organisations are usually not randomly located across space; they are deeply
+intertwined with and embedded in economic and cultural centres with whom they co-evolve, over
+the course of decades, if not centuries. Hence, causes and effects are blurred in a by nature deeply
+co-evolutionary process, even at a level of substance. Irrespective of the level of statistical sophis-
+tication, it is therefore usually not only technically almost impossible to identify causal economic
+effects of science, it would also conceptually be besides the point. Nonetheless, it remains a prob-
+lematic fact that the numbers reported in most existing analyses reflect – to a not insubstantial
+degree – associations rather than causation remains problematic. Specifically with a view to the
+potential setting up of new institutions or sites, a methodology that identifies the potential direct,
+causal effect of interventions not yet decided would add much, specifically from a policy perspec-
+tive.
+In this paper, we seek to address this gap by exploiting evidence from a unique case: the SENAI
+Innovation Institutes (ISI) in Brazil. The ISI institutes are private, not-for-profit research institutes
+focusing on applied sciences – mostly in natural sciences, engineering and life sciences – which
+make revenues by cooperating with contracting firms, for which they provide various types of re-
+search-related services. 27 ISI institutes have been founded sequentially since 2011 (26 up to 2019)
+and they are spread over the country. The staggered foundation offers a unique opportunity of a
+quasi-experimental setting usually unavailable in the studies analysing the effects of public science.
+Specifically, we will make a case that the characteristics of the regional selection process was driven
+by fixed effects like selection based on long-term regional characteristics and therefore satisfy con-
+ditions under which parallel trends will hold (Ghanem et al. 2022). Thus, the characteristics of the
+foundation process – specifically, how regions were selected – allow us to estimate the causal effects
+of the SENAI ISI institutes on regional GDP. Moreover, our detailed data allows us to separate the
+effects based on the types of collaboration projects with firms, which gives us unique insights into
+which types engender the strongest economic effects.
+Our results suggest that the staggered foundation of the SENAI institutes had substantial economic
+effects in terms of GDP. Overall, we estimate the average treatment effect on the treated regions
+(ATT) in terms of GDP per capita to be 985 BRL. This effect comes almost exclusively from genuine
+research projects involving R&D, while more service-oriented projects such as metrology or tech-
+nical consultancy appeared to cause little or no effect. Finally, we provide some tentative macroe-
+conomic projections, which suggest that the SENAI institutes may be causally linked to about 0.66%
+of the overall Brazilian GDP.
+
+===== PDF_PAGE 7 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 3
+2 Background
+Studies measuring the economic value of public science can be subdivided into microeconomic
+studies that measure the effects of firm performance and macroeconomic studies that measure the
+effects on whole economies, such as regions or countries. While the former group of studies is
+broad (Robin and Schubert 2013b; Maietta 2015; Comin et al. 2019), they rely on very different
+kinds of datasets and thus identifying assumptions. We will therefore omit this group from our
+review and focus on studies estimating macroeconomic returns in the next section.
+2.1 The Macroeconomic Returns of Scientific Research
+Most analyses estimating the macroeconomic effects of public research have relied on multiplier
+analysis, using either Keynesian or input-output multipliers (Glückler et al. 2015). These studies rely
+on taking into account clearly identifiable and attributable expenditure streams, such as induced
+investments or consumption by staff or students, to which, in turn, multipliers are applied. While
+estimating rates of returns, typically defined as GDP increase divided by costs, these studies contain
+several sources of bias that limit their economic interpretability (Schubert and Kroll 2015). The
+measurement of expenditure that flows into the region is, in many cases, economically problematic
+for the purpose of measuring social returns. For example, the increase induced by student con-
+sumption in the host region seems hardly interpretable. The students would have consumption
+expenditures in their home region irrespective of their student status. So, what is calculated is value
+of the university is merely a regional redistribution and from a welfare aspect ceteris paribus a zero-
+sum game. Moreover, multiplier analyses ignore the value of knowledge (Glückler et al. 2015), which
+is arguably the most genuine contribution of scientific organisations. In particular, the latter as-
+sumption is conceptually hard to defend and, within the methodological framework, impossible to
+tackle. A number of studies have specifically tried to address both problems by resorting to econ-
+ometric estimations of the macroeconomic effects of public science organisations. In this setting,
+some sort of regression approach is used to allow an economic outcome variable in a given region
+(often GDP) to be explained by variables measuring the activity of public science organisations in
+the same regression. Studies falling into this category include Schubert and Kroll (2013), Schubert
+and Kroll (2016b), Bertoletti et al. (2022), Agasisti and Bertoletti (2022) and Allan et al. (2022). A
+common finding of these studies is that estimated returns are much larger than those resulting
+from multiplier analyses, underscoring the paramount importance of knowledge generation as a
+contribution of science. For example, Schubert and Kroll (2013) – using fixed-effects panel regres-
+sions for German NUTS 3 regions – estimate that about 8% of German GDP is attributable to its
+university system.
+Nonetheless, while conceptually clearer in their interpretation, these studies are also subject to
+methodological criticisms. Notably, like all regression approaches, the key challenge is to establish
+causality – a non-trivial task with field data, which is subject to various sorts of selection effects.
+While these studies make considerable econometric efforts to ensure causality – e.g., in their study
+of the economic effects of the Fraunhofer Society in Germany, Allan et al. (2022) provide a series of
+confirming placebo tests – ultimately, the ability to provide causal effects rather than mere associ-
+ations requires the identification of some sort of exogenous variation. Thus, even when studies rely
+on DiD estimations (Schlegel et al. 2022; Pfister et al. 2021), their reliability rests less on their choice
+of econometric estimators and more on whether the specific case is likely to provide such a source
+of exogenous variation. In the next section, we will explain the institutional and historical details of
+the foundation of the SENAI institutes in Brazil to argue that this case appropriately provides such
+exogenous variation.
+
+===== PDF_PAGE 8 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 4
+2.2 History and Role of the SENAI Innovation Institutes (ISI)
+The SENAI ISIs ( SENAI Innovation Institutes, or Institutos SENAI de Inovação ) were established by
+SENAI (Serviço Nacional de Aprendizagem Industrial, or National Service for Industrial Training) as a
+response to the evolving needs of the Brazilian industrial sector with regard to advanced research
+and development capabilities. The foundation of these institutes marked a significant shift in the
+country's approach to industrial innovation, aiming to bolster competitiveness through cutting-
+edge technology and applied research.
+SENAI itself is the largest private vocational education complex in Latin America. Since its creation
+in 1942, it has trained more than 73 million workers in 28 industry areas. It is present in more than
+2000 Brazilian municipalities and offers a wide variety of courses at all levels of professional and
+technological education. Additionally, it offers technological services, metrology, consulting
+through SENAI ISTs (SENAI Technology Institutes, or Institutos SENAI de Tecnologia ) and, more re-
+cently, applied research and innovation through the establishment of SENAI ISIs.
+The establishment of the SENAI ISI institutes in 2011 represented an important evolution of SENAI's
+mission. It started in 2011, driven by a comprehensive dialogue with over 50 business leaders –
+organised by the MEI (Mobilização Empresarial pela Inovação, or Business Mobilization for Innova-
+tion) – which highlighted the need for a more robust infrastructure dedicated to industrial innova-
+tion. The National Confederation of Industry (CNI) led this initiative, selecting SENAI as the primary
+institution due to its extensive experience, established credibility and deep-rooted connections
+within the Brazilian industrial sector. With its 70-year legacy, SENAI was well-positioned to lead the
+creation of a national network of applied research institutes through the SENAI ISIs.
+The development of the SENAI ISI network was not merely an infrastructural endeavour but one
+that required significant intellectual capital, including business processes and human and relational
+resources. SENAI partnered with the Fraunhofer Society, a global leader in industrial research and
+development, to plan, implement and operationalise the ISI network. This collaboration facilitated
+the determination of actual industrial demand through workshops with over 300 companies across
+12 Brazilian states.
+When comparing the SENAI ISI network to other research and technology organisations globally,
+key similarities and distinctions emerge. Modelled after Germany's Fraunhofer Society, SENAI ISIs
+focus on high-impact industrial projects and emphasise collaboration with both large and small
+enterprises. Similarly, the Dutch TNO, the Canadian National Research Council (NRC) and the Finn-
+ish Technical Research Centre (VTT) highlight the importance of broad scope, national impact and
+transforming economies through innovation. The SENAI ISI network, with its well-planned estab-
+lishment and strategic focus, mirrors these successful international models, with the aim of posi-
+tioning itself as a vital component of Brazil's national innovation system.
+The strategic focus was on creating a demand-driven network, ensuring sustainability and broad
+national coverage. Financially, the infrastructure part of the project was supported by investments
+from SENAI and loans from the Brazilian Development Bank (BNDES), worth approximately
+R$ 1 billion in initial investments and R$ 2.2 billion up to now. By 2024, 27 of the 28 planned inno-
+vation institutes were operational, employing over 1500 researchers. These institutes have collec-
+tively executed projects worth R$ 1.9 billion in partnership with more than 800 industrial companies
+by 2021.
+The ISIs are also integrated into broader national and international research frameworks, with 18
+institutes accredited as EMBRAPII units, 23 recognised by the ANP and 14 accredited by CATI. No-
+tably, 56% of the R&D&I projects involve startups and small to medium enterprises, fostering a
+robust ecosystem of innovation. The network has connected over 185 startups with 90 larger com-
+panies through technological challenges.
+
+===== PDF_PAGE 9 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 5
+The impact of the SENAI ISI network extends beyond immediate project outcomes. It has facilitated
+the practical application of scientific research, translating theoretical knowledge into tangible in-
+dustrial solutions. This role as an intermediary between universities, research centres and the in-
+dustry is crucial for maintaining the flow of innovation within Brazil's economic framework.
+Therefore, the SENAI ISI network is an exemplary case for measuring the economic effects of scien-
+tific research due to its unique setup. The staggered establishment of the institutes across diverse
+regions provides exogenous variation, ideal for applying the difference-in-differences (DiD) method
+to estimate causal impacts. This setting minimises pre-existing regional differences, ensuring cred-
+ible results. Additionally, the institutes' focus on applied research and industry collaboration directly
+ties economic effects to scientific advancements. The comprehensive data available from their in-
+ception further strengthens the analysis. Thus, the SENAI ISI network offers a robust framework for
+evaluating the true economic returns of scientific research and innovation.
+2.3 Locational Choice in the SENAI ISI Case and the Parallel Trends
+Assumption
+Measuring the causal effects of the foundation of SENAI ISI institutes using a DiD approach depends
+crucially on the validity of the parallel trends assumption, which means that in the absence of treat-
+ment, both treated and non-treated regions would have displayed parallel trends in the outcome
+variable in the post-treatment period. The parallel trends assumption is obviously defined partly in
+terms of unobservable counterfactuals, since all treated regions in the post-treatment period are
+only observed in their treated and not in their hypothetical non-treated state. This unobservability
+makes it impossible to test empirically, but we can theoretically assess its plausibility. Whether it
+holds or not obviously depends on the locational choice. For example, if the SENAI ISI institutes
+had been randomly allocated to regions, then randomisation of the locational choice would imply
+that treatment and non-treatment regions would probabilistically not differ in any respect except
+for the treatment status. Needless to say, randomisation is an unreasonable assumption in our case,
+as the locations for establishing the institutes were strategically chosen. However, while – at a trivial
+level – randomisation implies the validity of DiD, the parallel trend can also hold under weaker
+assumptions, too, as shown by Ghanem et al. (2022).
+One of the conditions under which it can hold is that the locational choice depended only (poten-
+tially unobservable within the context of the study) on fixed effects of the regions, i.e., locational
+choices were made based on (roughly) time-constant structural characteristics of the regions. Ex-
+amples of such characteristics include economic power, established presence of potential collabo-
+ration partners, presence of other scientific organisations, local demand/economic structures or
+human capital endowments. Based on desk research and insights from SENAI management, we will
+now make a case that the locational choice was, as expected, non-random and made in a way to a)
+strategically maximise the prospective success of the institutes and b) achieve a certain level of
+regional balance. Both mechanisms worked in a way where the key decision-makers relied on stable
+regional characteristics, which they used as proxies. Thus, our key argument is that the selection
+was based on fixed effects and consistency conditions – as defined by Ghanem et al. (2022) – can
+be credibly assumed to apply.
+Qualitative Evidence on Locational Choice for SENAI ISI Institutes
+To better understand the context and circumstances of SENAI ISI's conception and the selection
+criteria for branch establishment across the country, an interview was conducted in September 2024
+with the current SENAI general director, who has been directly involved in the whole foundation
+process since its inception.
+
+===== PDF_PAGE 10 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 6
+According to him, the selection of institutes followed a structured process that combined both
+technical and political considerations. Initially, the primary criterion for selecting locations was the
+technical capacity of pre-existing local SENAI institutes. The goal was to ensure that these institutes,
+focused on vocational training, had the necessary infrastructure, expertise and administrative capa-
+bility to support R&D activities in specific technological areas. In his words, "institutes with high
+performance willing to implement R&D." Next, thematic competence was assessed, where compe-
+tencies that have already been developed converge with priority technologies. SENAI sought to
+align the institutes with fields deemed as national priorities, or "promising technologies," based on
+international benchmarks, ensuring that emerging technologies would be the focus.
+The first institutes were initially concentrated in Brazil's coastal regions, where most of the popula-
+tion and major cities are located. The existing institutes had more developed technical capabilities
+and administrative infrastructure, making them natural candidates. However, aligned with the Na-
+tional Confederation of Industry (CNI), the assessment was that the geographic distribution was
+imbalanced. It was, in his words, "muito litorâneo," or "too coastal." This imbalance reflects neither
+the internal political structure, as SENAI is a federated organisation, nor the underlying policy goals
+of regional development.
+To address this geographic imbalance, a political element was introduced into the selection process.
+This shift led to the prioritisation of inland regions when the technical criteria had been exhausted.
+The rationale behind this decision was both pragmatic and political. From a development perspec-
+tive, investing in economically weaker regions was seen as a way to foster innovation across the
+entire country, not just in areas that were already well-established. Politically, it was important to
+maintain equity within SENAI's federative system, which included balancing investments among the
+various state industry federations to ensure regional representation and support.
+Thus, the second phase of the selection process involved directing funds to inland states like Ama-
+zonas, Pará and Mato Grosso do Sul. This phase sought to ensure that the benefits of the SENAI ISI
+network extended beyond the country's more developed coastal regions, helping to promote R&D
+activities in underdeveloped areas. It is important to note that the institutes were thematically ori-
+ented, meaning their focus was on specific technological fields rather than serving only local indus-
+tries. As a result, their client base was often scattered across the country, and their location was
+largely independent of where their industrial partners were based.
+In sum, the location of SENAI ISI institutes was driven by two main factors: pre-existing technical
+capabilities/proximity to economic centres and the political will for geographic distribution. Both
+selection mechanisms were implemented by the key decision-makers' reliance on stable regional
+characteristics, which gives us a good a priori confidence that parallel trends (potentially conditional
+on covariates) are likely to hold in our setting.
+
+===== PDF_PAGE 11 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 7
+3 Data and Methodology
+We utilised two primary data sources: regional macroeconomic statistics and administrative data
+from SENAI. The regional macroeconomic statistics, which include GDP per micro-region and pop-
+ulation data, were sourced from the Brazilian Institute of Geography and Statistics (IBGE). The IBGE
+is the official government agency responsible for the collection of statistical, geographic, carto-
+graphic, geodetic and environmental information in Brazil. The second data source was provided
+by the SENAI administration and includes detailed administrative data of all SENAI institutes, their
+projects, respective categories and client locations. This comprehensive dataset encompasses vari-
+ous aspects of SENAI's operations, offering insights into the specific competencies of each institute
+and the geographical distribution of their clients.
+To construct the dataset for econometric analysis, we merged the macroeconomic statistics with
+the SENAI administrative data using the micro-region as the key. This approach allows us to analyse
+the economic impact at the regional level, taking into account both the locations of the institutes
+and their clients, who are spread across the country. This widespread distribution is attributed to
+each institute's specialisation, which focuses on specific areas of competence rather than regional
+allocation or concession.
+3.1 Econometric Identification Strategy
+Our econometric identification strategy aims to estimate the causal effects of SENAI ISI's establish-
+ment on regional economic outcomes. To achieve this, we employ a difference-in-differences (DiD)
+methodology, leveraging the staggered introduction of SENAI ISI institutes across various micro-
+regions in Brazil.
+Our identification strategy benefits from the quasi-experimental setting provided by the non-ran-
+dom and staggered placement of the institutes. The non-random placement relied, as we explained
+in Section 2.3, largely on regional fixed effects, which is one of the conditions under which the
+crucial parallel trends assumption of DiD is met. To rule out the possibility that any short-term
+dynamics in the GDP growth path would bias the estimates, we also included one-year leads and
+lags of growth in GDP per capita. Moreover, since we know the SENAI ISI institutes, despite being
+founded equitably across the Brazilian states, were located in urban areas in the states, we also
+included the population of the hosting municipality. Thus, we ultimately employ a conditional DiD
+approach, where the central identifying assumption is that parallel trends hold conditionally on
+leads and lags in GDP per capita and population growth.
+3.1.1 The Logics of Difference-in-Differences Estimation
+As we saw in Section 2.2, 27 SENAI institutes – spread over the country – have formally commenced
+operations since 2011, of which 26 were operational by the end of our observation period in 2019.
+Since our exposition suggested that the location of the individual institutes was to a non-negligible
+degree based on a principle seeking regional proportionality, we may be tempted to conclude that
+strategic locational selection of the a priori strongest regions may be less pertinent than in many
+other countries where public/private research organisations have been founded on a large scale in
+a short time. In order to fully exploit the opportunities associated with the (at least partly) experi-
+mental setting, a staggered difference-in-differences approach is a natural choice.
+In general, DiD approaches can be applied when there is data on both a treated and an untreated
+group of units, for which observations exist for at least one pre-treatment and one post-treatment
+unit. In the simplest setting of a two-period unstaggered design, treatment occurs at a fixed time
+
+===== PDF_PAGE 12 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 8
+and affects only a part of the overall sample, e.g., a policy change affecting only observations in
+one state but not in another. The idea of DiD is then to determine changes and pre- and post-
+treatment trends in the outcomes for both the untreated and the treated observations. If these
+changes differ between the groups, DiD would attribute the differences to the policy change.
+While DiD has become a particularly influential method in causal treatment studies using field data,
+recent advances have made clear that there are many pitfalls associated with its use requiring spe-
+cific care. First and probably most importantly, attributing the group differences in pre- and post-
+treatment changes to the policy measures obviously requires non-trivial assumptions, specifically
+the non-anticipation assumption and the parallel trend assumption. The latter assumption states
+that both the treatment and control groups would exhibit the same trends post-treatment if both
+were untreated. Obviously, this assumption involves unobservable counterfactuals because the
+treatment group is only observed in its treated and not its hypothetical untreated state. To assess
+the validity of the common trends and the non-anticipation assumption, it has therefore become
+customary to compare the pre-treatment trends between the groups (in which both were de-facto
+untreated), asserting that common trends are indicative of a non-violation of the common (post-
+treatment) trend assumption. Needless to say, this reasoning – inferred from the observable equal-
+ity of pre-treatment trends and applied to the non-observable equality of post-treatment trends –
+is inductive and may fail in practice. Nonetheless, it is a tangible and intuitive assumption and,
+paired with institutional insights into the case, can add great credibility, which more opaque iden-
+tification assumptions (such as zero correlation between structural error terms and explaining var-
+iables) cannot easily do.
+A second important aspect concerns the design of the DiD setting. While originally, DiD was devel-
+oped for the canonical two-periods-two-groups setting, it has also been used in more complex
+situations, particularly in cases of staggered designs, i.e., when treatment occurs at different times
+and even when units can switch back and forth between treatment and control group. Recent re-
+search by Goodman-Bacon et al. (2019), however, makes clear that although the conceptual logics
+of DiD extend to more complex designs such as these, the classical regression-based two-way fixed
+effects (TWFE) estimator will be either not at all consistent or only consistent under very restrictive
+assumptions. A host of staggered DiD estimators have been developed to address the shortcom-
+ings of TWFE.
+3.2 Treatment Definition in the SENAI Case
+The specifics of the staggered foundation of the SENAI Innovation Institutes suggest an intuitive
+approach to defining treatment and control groups. Exploiting the foundation dates, it is straight-
+forward to assign the treatment status to all regions that are home to at least one SENAI institute
+from the year of foundation of the earliest institute in the region. Suppose a region is home to two
+SENAI institutes, one of which was founded in 2014 and the other in 2015; the region would be
+considered as treated from 2014 onwards and untreated before. To define what we consider the
+home region, we draw on insights from the literature on the geography of knowledge spillovers,
+which suggests that knowledge spillovers are often localised but may well reach beyond very nar-
+row geographic boundaries. For example, Anselin et al. (1997) provide evidence for the US that
+academic spillovers will often reach beyond the boundaries of metropolitan statistical areas (de-
+fined as at least one metropolitan agglomeration and at least 50,000 inhabitants). Similar findings
+for Germany suggest that up to 90% of the economic effects for universities originate outside the
+boundaries of the local community (Schubert and Kroll 2016a). Thus, it seems necessary to define
+the home region in sufficiently broad terms. In our case, we opted for the state level, of which there
+are 26 in Brazil. For instance, we consider a region treated if there is at least one SENAI institute in
+the same state. The resulting design has the form of a standard staggered DiD approach, which we
+
+===== PDF_PAGE 13 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 9
+can essentially estimate by using any of the recent DiD estimators, which are robust to staggered
+roll-out, the most common of which is the estimator by Callaway and Sant'Anna (2021).
+Obviously, the notion of a home region still rests on the assumption that the economic effects occur
+on the basis of geographic proximity as reflected by administrative borders. While this assumption
+is reasonable, it neglects the fact that the geographic patterns of interaction between science or-
+ganisations and firms that give rise to economic effects can be substantially more complex. In par-
+ticular, this could be the case for the SENAI institutes. An important reason for complex geographic
+interaction patterns is that the SENAI institutes are very specialised in terms of topics. Thus, for any
+firm with a certain activity profile, the institutes are not interchangeable. If the firm sees value in
+collaborating with SENAI, it can reasonably be expected to select a thematically appropriate insti-
+tute as a partner, rather than just selecting the closest. While there is certainly a significant distance
+decay component, because firms may be reluctant to enter into collaborations with partners located
+very far away, we would expect cooperation patterns to be more spread out than for public science
+organisations covering a much broader range of activities, notably universities. One way to address
+this point is to use the location of the cooperating firms rather than the location of the institute.
+Based on this information, we define treated regions as those regions that, in a given year, were
+home to at least one firm that had a contractual relationship with a SENAI institute (irrespective of
+where the latter was located). Because our database covers more than 25,000 different contracts,
+we define the home region of the firm relatively narrowly by the 5-digit regions, of which there are
+510 in Brazil. This regional treatment definition based on partner firm location gives a very fine-
+grained account based on actual interaction patterns that are not biased by ad-hoc assumptions
+regarding regional proximity.
+However, it does not result in a standard staggered DiD design because, obviously, regions can,
+depending on the start and end of individual projects, switch arbitrarily back and forth between
+treated and untreated states. The estimator provided by Callaway and Sant'Anna (2021) is not fit
+for such a design. However, Chaisemartin and d'Haultfoeuille (2024) provided an extension of a
+staggered DiD estimator that can handle such complex intertemporal treatment situations along-
+side simpler settings, including the standard staggered design. For the sake of comparability, we
+used the estimator by Chaisemartin and d'Haultfoeuille (2024) throughout and reported the one by
+Callaway and Sant'Anna (2021) only as a point of comparison for the treatment definition based on
+the location of the institutes. The choice of estimator, however, did not seem to have much influ-
+ence in the cases where both should be applicable.
+
+===== PDF_PAGE 14 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 10
+4 Results
+4.1 The Evolution and the Development of SENAI
+The SENAI ISI network currently consists of 28 operational institutes, the first of which was founded
+in 2012. These institutes are distributed across 13 federal states, with some states – such as Bahia
+and Rio de Janeiro – hosting multiple institutes established in different years during the study pe-
+riod. Initially, the institutes were concentrated in densely populated coastal regions, where the larg-
+est vocational training centres were located, before gradually expanding to inland areas, which is
+in line with the two phases of the foundation process we described in Section 2.3. Figure 1 illustrates
+Brazil's population density along with the locations of the institutes, labelled with their respective
+foundation years.
+Figure 1: Population density and ISI institutes
+Source: own calculations
+To better understand our definition of treatment, it would be useful to take a closer look at the
+official regional classification in Brazil. While there are 26 states at the top level, these are hierar-
+chically divided into 126 intermediate regions, 510 immediate (or micro) regions and 5570 munici-
+palities. While the 26 states were used to define treatment using the location of institutes, we opted
+to draw on the 510 micro-regions to define treatment based on project locations with ISI clients,
+i.e., companies that have ordered or commissioned projects with ISI institutes. Of the 510 immediate
+regions, 313 have at least one project listed, as can be seen in Figure 2, showing the geographic
+outreach of the institutes' client base.
+
+===== PDF_PAGE 15 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 11
+Figure 2: Project numbers per region
+Source: own calculations
+Figure 2 reveals a high regional concentration of the projects. While most regions have only a small
+number of projects, a few regions exhibit disproportionately high project counts and revenues. The
+top region has 7391 projects, and the leading client accounts for 915 projects. Similarly, revenue
+per project varies widely, with most generating modest amounts, though a few outliers greatly
+inflate the average, with one project earning over R$ 25 million as Table 1 shows. This highlights
+the fact that a small number of high-impact projects and regions account for a disproportionate
+share of overall activity and financial returns. The figures are interesting because they can imply
+challenges for DiD estimation, which implicitly assumes that treatment is equally sized. We come
+back to this issue later with additional robustness checks allowing for continuous treatment.
+
+===== PDF_PAGE 16 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 12
+Table 1: Summary of project statistics
+Regions Clients Revenue
+per Project
+Count 313 7402 43.64
+Mean 147.00 6.22 23.17
+Std Dev 692.61 23.76 329.80
+Min 1 1 -1181.14
+25% 3 1 0.25
+Median 11 2 0.6
+75% 56 4 1.54
+Max 7391 915 25594.35
+Note: Revenue in thousand $
+Source: own calculations
+Examining the revenue grouped by service types provides us with further details, as seen in Table
+2. R&D stands out with the highest average revenue by far, confirming that R&D projects tend to
+be the most financially impactful, though the variation is substantial, as seen in the large standard
+deviation and a maximum value of R$ 25.5 million. Technology Consulting shows the highest outlier
+at over R$ 2.5 million, though it also has a wide range of outcomes. Metrology, with the most
+entries, has a lower average revenue but a broad range, while specialised services show notable
+extremes, with a maximum of over R$ 2.3 million. Overall, a small number of high-revenue projects,
+particularly in R&D, drive much of the financial impact.
+Table 2: Project revenue per service type
+Technology
+Consultancy Metrology R&D Complemen-
+tary Services
+Specialised
+Technical
+Services
+Count 1,380.00 38,435.00 2,080.00 39.00 1,709.00
+Mean 22,204.52 1,963.12 422,883.19 52,582.76 13,844.97
+Std 109,713.31 22,559.62 1,445,190.35 135,812.16 103,146.88
+Min -
+1,181,149.90 -960.00 0.00 480.00 0.00
+25% 1,980.00 229.50 11,660.00 3,630.00 450.00
+Median 5,515.00 510.00 78,079.46 19,199.81 1,250.00
+75% 20,000.00 1,196.50 320,660.49 51,653.47 3,600.00
+Max 2,527,547.10 2,190,876.00 25,594,357.26 843,579.87 2,375,021.00
+Source: own calculations
+Regarding the evolution over time, there is a consistent upward trend of projects across all service
+types from 2013 to 2019 and then stabilisation until 2023, as seen in Figure 3. The majority are
+metrology services, followed by R&D, consultancy and specialised services. The slight dip in 2020
+was driven by a decrease in metrology projects, whereas R&D presented a consistent increase over
+the whole period, peaking in 2022.
+
+===== PDF_PAGE 17 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 13
+Figure 3: Project numbers over time
+Source: own calculations
+These descriptive statistics lay the groundwork for the subsequent analysis of the economic effects
+of SENAI ISI institutes, including a macroeconomic perspective.
+4.2 The Economic Effects of SENAI
+4.2.1 The Importance of Staggered Roll-out
+Goodman-Bacon et al. (2019) have shown that the regular TWFE estimator of the average treatment
+effect of the treated group (ATT) is a weighted sum of all constituent 2x2 DiD designs. Out of these
+2x2 designs, the particularly problematic cases are those where later treatment groups are com-
+pared to earlier treatment groups. Bias arises unless treatment effects are constant over time. The
+decomposition results by Goodman-Bacon et al. (2019) make it possible to analyse the significance
+of these potentially bias-inducing later-vs.-earlier comparisons by calculating the ATT for each in-
+dividual 2x2 design alongside the aggregation weight. Problems are likely if i) treatment effects
+differ strongly over the 2x2 designs and ii) if the problematic later-vs.-earlier comparisons have high
+weights.
+
+===== PDF_PAGE 18 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 14
+Figure 4: Project numbers over time
+Source: own calculations
+The results from the Bacon decomposition are shown in Figure 4, where the label "Timing groups"
+refers to a set of potentially problematic later-vs.-earlier comparisons. As we can see, the overall
+TWFE DiD estimate corresponds to a 442 BRL increase in GDP per capita following the foundation
+of an institute, which, from a normal TWFE regression, would obtain a p-value of 6.7%. We should
+note that this effect does not include any control variables and is merely a point of reference. More-
+over, we can see that the individual ATTs differ substantially as there are, besides many positive
+ATTs, also a larger number of negative effects. Most importantly, however, the potentially bias-
+inducing later-vs.-earlier comparisons are - with one exception - all negative, and two of them have
+very high weights of about 11% each. Thus, the Bacon decomposition suggests that the treatment
+effects are heterogeneous over time and that they have most likely induced a negative bias. Indeed,
+when using only the later-vs.-earlier comparisons to estimate the overall treatment effect, we obtain
+an estimate of 691 BRL, which is thus likely to be more significant than the baseline TWFE estimate,
+including the biasing comparisons. Overall, the results from the Bacon decomposition suggest that
+it is highly important to rely on estimators that are robust to heterogeneous treatment effects in
+staggered designs. We present the results of these estimations in the next subsection.
+4.2.2 Estimating the Baseline Effects on GDP per Capita
+As discussed in Section 3.2, our data allowed us to define treatment either by relying on foundation
+dates in combination with institute location or alternatively based on the location of the cooperat-
+ing firms. The baseline results of these estimations are presented in Table 3.
+In the first row, we show the results for the treatment definition based on institute location using
+the estimators. We can see that the estimates are positive and significant (ATT=1210 BRL,
+pval<0.01). It is, as suggested by the Bacon decomposition, also larger than the naive TWFE esti-
+mate of 442 BRL, which confirms the downward bias of the time-heterogeneous treatment effects
+in our case. Most importantly, when looking at the placebo test of the joint common trend and
+
+===== PDF_PAGE 19 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 15
+non-anticipation assumption, there is no strong evidence of the violation with a p-value of the joint
+nullity of the pre-treatment effects of 0.12. Indeed, when using the estimator provided by Callaway
+and Sant'Anna (2021) with the doubly robust option based on inverse probability weighting of
+tilting (Sant'Anna and Zhao 2020), we obtain similar results (ATT= 936, pval<0.05, pval placebo
+test=0.20). When looking at the alternative treatment definition based on the firm location, we can
+only meaningfully provide the estimator by Chaisemartin and d'Haultfoeuille (2024), because of the
+complex intertemporal treatment assignment, which Callaway and Sant'Anna (2021) do not allow
+for. The results are, however, quite similar both in terms of size and significance level (C&H firm:
+985 BRL, pval<0.01). It should be noted that in this latter case, the test of the common trend as-
+sumption does not reach the 5% significance level, even though it is close. In any case, overall, our
+findings are highly robust to quite different specifications of treatment, providing strong evidence
+that the foundation of the SENAI institutes has contributed positively to GDP.
+Table 3: Staggered DiD estimation
+Treatment ATT SE z-val. p-val. placebo
+Institute location 1210.49 ** 381.86 3.17 0.12
+Firm location 985.08 ** 339.39 2.90 0.06
+* p<0.05, ** p<0.01, *** p<0.001
+Source: own calculations
+Event-study representations of the two DiD estimations are presented in Figure 5. What is interest-
+ing about these figures is that the effects are increasing over time, with the first two treatments
+being small and insignificant and the latter being the largest, at more than 5000 BRL. This is well in
+line with the intuitive principle that the effects of scientific research on the economy do not occur
+instantaneously and will take time to unfold.
+
+===== PDF_PAGE 20 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 16
+Figure 5: Event-study plots of the baseline DiD estimations
+Source: own calculations
+
+===== PDF_PAGE 21 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 17
+4.2.3 Assessing the Stable Unit of Treatment Value Assumption
+An important objection that could be raised against the implementation of the DiD design is a
+violation of the Stable Unit of Treatment Value Assumption (SUTVA). This assumption ensures that
+received treatments are homogenous across units. Random controlled trials are usually tightly mon-
+itored and harmonised across recipients. For example, a fixed dosage of a certain drug is adminis-
+tered to patients. However, in our case, treatment differs both qualitatively and in intensity. To
+assess the influence of such differences, we first analyse whether the effects differ by type of pro-
+ject/contract. Secondly, we assess the influence of intensity by explicitly allowing treatments to be
+continuous to reflect differences in "dosage." While these analyses confirm the robustness of our
+previous findings overall, they also deliver additional valuable insights about the mechanisms un-
+derlying the effects as well as their size.
+4.2.3.1 Effects by Project Type
+As we have seen, the SENAI institutes cover quite a large portfolio of activities that range from
+consultancy projects and technical services such as metrology to genuine R&D projects. The bulk
+of these activities corresponded to the second category of metrology. An important question from
+the policy as well as from the managerial side is whether the effects differ by type of project. The
+treatment definition based on firm location allows for an easy test of differential effects by splitting
+the treatment definition by project type; i.e., in one variant, the definition of treatment would be
+based only on consultancy projects, in another, only on metrology projects, and so on. If treatment
+effects were homogenous, all estimated ATTs would not differ substantially.
+Figure 6 presents the associated event-study plots by project type. Although there are a few signif-
+icant spikes – for consultancy and metrology projects at least – only R&D projects show a clear
+positive pattern. Indeed, the overall ATTs are only significant for this group of projects (ATT=1800
+BRL, pval<0.001), while the ATTs of the other project categories are not. Thus, the results suggest
+that the overall positive effects of the SENAI institutes are, by far and large, driven by more basic
+R&D projects rather than consultancy or technical services such as metrology. Such a finding is also
+in line with findings that the value of scientific organisations comes from their ability to create and
+make available fundamental advanced knowledge and technologies rather than to generate income
+from side hustles.
+
+===== PDF_PAGE 22 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 18
+Figure 6: Event-study plots of the baseline DiD estimations by project type
+Source: own calculations
+4.2.3.2 Differences in Dosage
+We know from the descriptive statistics that the intensity of treatment differs considerably between
+the treated units. In some regions, the treatment is assigned on the basis of just one institute. In
+other treated regions, such as São Paulo, there are several institutes. Also, there are differences
+concerning the contract location. In some regions that have been assigned a positive treatment
+status, there are only one or a few contracts, while the observed maximum is 1209. In simple terms,
+the treatment "dosage" differs substantially. A solution that has been established so far to address
+this issue is to define treatment status based on varying cut-offs. Yet this approach remains, of
+course, arbitrary. However, the estimator by Chaisemartin and d'Haultfoeuille (2024) allows for an
+extension of dichotomous treatment logics of DiD to the continuous case. We see in Table 4 that
+the overall results are confirmed, documenting a positive and significant effect overall, with the
+estimates indicating that an additional institute, on average, raises GDP per capita by 356 BRL and
+an additional contract by 51 BRL. The p-values on the placebo tests are, as before, not significant
+and therefore do not provide strong evidence against the common trend and non-anticipation
+assumptions.
+
+===== PDF_PAGE 23 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 19
+Table 4: Staggered DiD estimation (continuous treatment)
+Treatment ATT SE z-val.+ p-val. placebo
+Number of institutes 356.67 * 149.39 2.39 0.17
+Number of contracts 51.84 ** 20.51 2.53 0.06
+* p<0.05, ** p<0.01, *** p<0.001
++ There is currently no proven asymptotic normality result for the continuous DiD estimator of the ATT. The z-values
+and resulting significance levels are reported only as points of reference.
+Source: own calculations
+4.3 The Overall Macroeconomic Value of SENAI
+Like the study by Schubert and Kroll (2016a), our data represents a regional breakdown of a total
+economy and thus does not represent a mere sample. This feature is desirable in order to derive
+simple estimates of the overall value of SENAI for the Brazilian economy as opposed to just the
+treated regions. It is, for example, straightforward to provide results for the share of Brazilian GDP
+explained by the presence of SENAI institutes. It is, however, important to emphasise that these
+calculations are tentative and should be seen as indicative of the range of the effect size rather than
+exact estimates.
+Table 5: Share of Brazilian GDP explained by SENAI
+2011-2020
+ATT: GDP per capita 985.00
+Average share of treated regions 13.45%
+Average population 399,705
+Average population in treated regions 1,060,365
+Population-weighted share of treated regions 35.68%
+ATE (Brazil) 351.48
+Average GDP per capita Brazil in 2011-2022 52,894.74
+Share of explained GDP per capita 0.66%
+Sources: own calculations, Worldbank
+Such a calculation is presented in Table 5. We assume the lowest estimated ATT resulting from contractor
+locations of 985 BRL. Over the course of the observation period, an average of 13% of the regions were
+treated each year. However, since these regions were, on average, larger by a factor of about 2.65, the
+population-weighted share of treated regions was 36%. Assuming that the treatment effect of the un-
+treated is zero,1 we can calculate an estimate of the average treatment effect for Brazil (ATE) by multi-
+plying the ATT by the population-weighted share of treated regions. If we compare the ATE to the overall
+average GDP of 52,894 BRL, we find that approximately 0.66% of the Brazilian GDP can be attributed to
+SENAI. This estimate is substantial, particularly in comparison to the overall budget. However, it falls well
+in line with, for example, the results for the (admittedly much larger) Fraunhofer Society in Germany, to
+which 1.6% of total GDP (Allan et al. 2022) and 0.55% of labour productivity may be attributed (Comin
+et al. 2019). It is also in line with research indicating that the returns on innovation-related expenditures
+may induce multipliers that are often in the double digits (Jones and Summers 2020) 2.
+1 This assumption is an approximation and may be violated if, for example, treatment leads to relocation of economic activities to treated regions
+(negative regional spillovers) or if induced economic activities in treated regions also drive economic activities in untreated regions (positive
+regional spillovers).
+2 We refrain, however, from reporting such multipliers because of quality concerns about cost data in the internal bookkeeping system.
+
+===== PDF_PAGE 24 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 20
+5 Discussion and Conclusion
+The literature on the economic effects of science is well established and has mostly pointed to
+substantial effects for a wide array of variables, including GDP (Schubert and Kroll 2016b; Agasisti
+and Bertoletti 2022; Glückler et al. 2015), productivity (Comin et al. 2019; Fritsch and Wyrwich 2018)
+and innovativeness (Robin and Schubert 2013a). However, generating credible causal evidence has
+always been a non-trivial challenge because scientific organisations tend to have long histories,
+often coevolving with or sometimes even creating their environments. This coevolution tends to
+blur clear cause-and-effect relationships and makes it difficult to understand the direction of cau-
+sality. It has therefore been hard to establish causality in most settings trying to estimate the eco-
+nomic effects of public research.
+Recently, a few studies have employed the foundation of scientific organisations in difference-in-
+differences approaches (Pfister et al. 2021; Schlegel et al. 2022), which provides a promising frame-
+work to address the endogeneity challenges. These studies are, however, still limited in number and
+naturally focus on very specific cases, all of them in Western economies. Our work adds to this
+stream of literature in two important ways. Firstly, our unique institutional insights into the historic
+locational selection processes allow us to make a very credible case for the validity of the parallel
+trends assumption going beyond mere empirical corroboration by placebo tests. So far, existing
+studies have focussed on broader types of organisations, such as the Universities of Applied Sci-
+ences in Switzerland, which, despite sharing a common organisational form, are heterogeneous and
+highly independent of each other from a legal perspective. Thus, in these studies, an institutional
+assessment of locational selection criteria naturally faces limitations. Secondly, our specific setting
+of the SENAI ISI institutes is one of the very few instances where evidence is provided for a catch-
+up economy.
+Overall, our results confirm that public research organisations can have profound impacts on the
+economy. Focusing on productivity, we estimated the average treatment effect on the treated re-
+gions (ATT) in terms of GDP per capita to be at least 985 BRL. This effect was robust in the light of
+various specification alternatives. It is also economically substantial, given that it implies that about
+0.66% of the total Brazilian GDP can be attributed to the SENAI ISI institutes. Indeed, this effect may
+appear very large given the fact that investment levels are still rather limited, leading to enormous
+returns on investment. Yet, at the same time, it is known that the returns on innovation and
+knowledge-related activities are very large. Jones and Summers (2020) report high multipliers of
+10–30. In an emerging economy such as Brazil, these effects may even be amplified because, up to
+now, organisations closing the gap between universities and firms, which are an established part of
+innovation systems in most advanced economies, have been largely absent. Thus, it is not unrea-
+sonable to assume that the SENAI ISI institutes closed a systemic gap in the Brazilian innovation
+system, which explains the considerable returns. Needless to say, decreasing returns may, of course,
+set in once the ISI activities are sufficiently expanded. However, at least while spending remains at
+its current limited level, our results suggest that increased investments appear to be economically
+warranted.
+A highly important observation with regard to high-relevance public research organisations in gen-
+eral concerns the question of which types of projects cause the effects. Most public research or-
+ganisations – including those in other countries, e.g., Fraunhofer in Germany, SINTEF in Norway,
+TNO in the Netherlands or RISE in Sweden – engage in a wide variety of activities ranging from
+genuine research and technological development projects to the provision of technical services,
+such as metrology, or consultancy. All of these activities can potentially provide benefits for indus-
+trial partners. However, our results suggest that, in this case, the economic effects almost exclusively
+
+===== PDF_PAGE 25 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 21
+result from research projects. Thus, the social or economic value of public research organisations
+seems to be associated with their capacity to contribute to research, technology development and
+innovation. It is apparently much less related to their capacity to provide technical services or con-
+sultancy, which commercial actors could also provide. Interestingly, the finding that a higher re-
+search focus is associated with higher effects seems to extend beyond the specific Brazilian case.
+Findings for the Fraunhofer-Gesellschaft in Germany for example suggest that collaborations have
+a higher effect of firm productivity if the projects aim at technology generation rather than the
+application of existing technologies (Comin et al. 2019).
+This is not to say that public research organisations, such as SENAI, should not engage in these
+activities. One argument is also that these activities allow for the efficient utilization of technical
+infrastructures which can be essential in research context. However, it does have important impli-
+cations for management and policy. Concerning the managerial aspects, the provision of technical
+services should not be a goal in itself, but a means to sustain a scientific organisation that sees its
+ultimate objective as providing collaborative applied research with and for industrial partners.
+Among other things, it can have the functions to establish first relations with industrial partners and
+sound out their needs – to subsequently then engage in deeper and technologically more advanced
+collaboration which might also be economically more impactful. As concerns policy, our results
+suggest that public funding should for the SENAI institutes should for the moment primarily be
+linked to the performance of research-oriented activities. The case for funding technical services or
+consultancy, which can essentially also be provided by commercial suppliers, is probably less com-
+pelling.
+
+===== PDF_PAGE 26 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 22
+6 Publication Bibliography
+Agasisti, Tommaso; Bertoletti, Alice (2022): Higher education and economic growth: A longitudinal
+study of European regions 2000–2017. In Socio-Economic Planning Sciences 81, p. 100940.
+Allan, Grant; Figus, Gioele; Schubert, Torben (2022): Understanding the Macroeconomic Effects of
+Public Research: An Application of a Regression Microfounded CGE-Model to the Case of
+the Fraunhofer-Gesellschaft in Germany.
+Anselin, Luc; Varga, Attila; Acs, Zoltan (1997): Local geographic spillovers between university
+research and high technology innovations. In Journal of urban economics 42 (3), pp. 422–
+448.
+Bertoletti, Alice; Berbegal-Mirabent, Jasmina; Agasisti, Tommaso (2022): Higher education systems
+and regional economic development in Europe: A combined approach using econometric
+and machine learning methods. In Socio-Economic Planning Sciences 82, p. 101231.
+Callaway, Brantly; Sant’Anna, Pedro H. C. (2021): Difference-in-differences with multiple time
+periods. In Journal of econometrics 225 (2), pp. 200–230.
+Chaisemartin, Clément de; d'Haultfoeuille, Xavier (2024): Difference-in-differences estimators of
+intertemporal treatment effects. In Review of Economics and Statistics, pp. 1–45.
+Comin, Diego; Licht, Georg; Pellens, Maikel; Schubert, Torben (2019): Do companies benefit from
+public research organizations? The impact of the Fraunhofer Society in Germany. In The
+Impact of the Fraunhofer Society in Germany, 19-006.
+Fritsch, Michael; Wyrwich, Michael (2018): Regional knowledge, entrepreneurial culture, and
+innovative start-ups over time and space – an empirical investigation. In Small Business
+Economics 51, pp. 337–353.
+Ghanem, Dalia; Sant'Anna, Pedro H. C.; Wüthrich, Kaspar (2022): Selection and parallel trends. In
+arXiv preprint arXiv:2203.09001.
+Glückler, Glückler; Panitz, Robert; Wuttke, Christian (2015): Die wirtschaftliche Wirkung der
+Universitäten im Land Baden-Württemberg. In Raumforschung und Raumordnung| Spatial
+Research and Planning 73 (5), pp. 327–342.
+Goodman-Bacon, Andrew; Nichols, Austin; Goldring, Thomas (2019): Bacon decomposition for
+understanding differences-in-differences with variation in treatment timing. In NBER
+Working Paper (25018).
+Griliches, Zvi (1958): Research costs and social returns: Hybrid corn and related innovations. In
+Journal of political economy 66 (5), pp. 419–431.
+
+===== PDF_PAGE 27 =====
+Fraunhofer ISI Discussion Papers Innovation Systems and Policy Analysis No. 87
+Fraunhofer ISI | 23
+IBGE (2024a): Estimates of Resident Population for Municipalities and Federation Units. Available
+online at https://www.ibge.gov.br/en/statistics/social/population/18448-estimates-of-
+resident-population-for-municipalities-and-federation-units.html, checked on 17-Oct-2024.
+IBGE (2024b): GDP grows 2.9% in 2023, closes the year at R$ 10.9 trillion. Available online at
+https://agenciadenoticias.ibge.gov.br/en/agencia-press-room/2185-news-agency/releases-
+en/39309-gdp-grows-2-9-in-2023-closes-year-at-r-10-9-trillion, checked on 17-Oct-24.
+Jones, Benjamin F.; Summers, Lawrence H. (2020): A calculation of the social returns to innovation:
+National Bureau of Economic Research.
+Maietta, Ornella Wanda (2015): Determinants of university–firm R&D collaboration and its impact
+on innovation: A perspective from a low-tech industry. In Research Policy 44 (7), pp. 1341–
+1359.
+Pfister, Curdin; Koomen, Miriam; Harhoff, Dietmar; Backes-Gellner, Uschi (2021): Regional
+innovation effects of applied research institutions. In Research Policy 50 (4), p. 104197.
+Robin, Stéphane; Schubert, Torben (2013a): Cooperation with public research institutions and
+success in innovation: Evidence from France and Germany. In Research Policy 42 (1), pp.
+149–166.
+Robin, Stéphane; Schubert, Torben (2013b): Cooperation with public research institutions and
+success in innovation: Evidence from France and Germany. In Research Policy 42 (1), pp.
+149–166.
+Sant’Anna, Pedro H. C.; Zhao, Jun (2020): Doubly robust difference-in-differences estimators. In
+Journal of econometrics 219 (1), pp. 101–122.
+Schlegel, Tobias; Pfister, Curdin; Harhoff, Dietmar; Backes-Gellner, Uschi (2022): Innovation effects
+of universities of applied sciences: an assessment of regional heterogeneity. In The Journal
+of Technology Transfer 47 (1), pp. 63–118.
+Schubert, Torben; Kroll, Henning (2013): Endbericht zum Projekt „Hochschulen als regionaler
+Wirtschaftsfaktor“. In Im Auftrag von Stifterverband für die Deutsche Wissenschaft.
+Karlsruhe.
+Schubert, Torben; Kroll, Henning (2015): Ökonomischer Wert der Relativitätstheorie? Nur Papier
+und Bleistift? In Wissenschaftsmanagement.
+Schubert, Torben; Kroll, Henning (2016a): Universities’ effects on regional GDP and
+unemployment: The case of Germany. In Papers in Regional Science 95 (3), pp. 467–490.

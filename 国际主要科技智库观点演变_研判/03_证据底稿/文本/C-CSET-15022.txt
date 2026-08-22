@@ -1,0 +1,1216 @@
+
+===== PDF_PAGE 1 =====
+P olicy Br ief
+August 2023
+U nderst anding
+t he Global
+Gain-of-F unction
+R esear c h Landscape
+Aut hor s
+Car oline Sc huerger
+S t ephanie Bat alis
+K at her ine Quinn
+R onnie Kinoshit a
+Ow en J. Daniels
+Anna Puglisi
+
+===== PDF_PAGE 2 =====
+Center for Security and Emerging Technology | 1
+
+Executive Summary
+Gain-of-function (GOF) and loss-of-function (LOF) research are two valuable
+methodologies that allow scientists to study pathogens. These interconnected
+research approaches alter pathogens’ genomes to add or subtract functionality,
+allowing scientists to examine and better understand how pathogens function and
+develop new vaccines and therapies.
+Despite its widely recognized value for science, gain-of-function research has attracted
+attention and concern from U.S. policymakers due to what some see as inherent risks
+in this methodology, particularly following the outbreak and debated origins of the
+COVID-19 pandemic. The risk that gain-of-function research could inadvertently
+contribute to pandemics or widespread illness has sparked discussion about new
+regulations. LOF research results in weakened pathogens—and thus does not impart
+the same risks as GOF research—and is rarely mentioned in policy debates in the same
+way as GOF research.
+In this report, we map the gain- and loss-of-function global research landscape using a
+quantitative approach that combines machine learning with subject-matter expert
+review. We identify about 7,000 PubMed research papers related to our criteria for
+GOF and LOF research, published between 2000 and mid-2022. Our research shows
+that GOF and LOF research are intertwined; they are conducted using the same
+experimental procedures and thus would both be impacted by any future regulations.
+As such, throughout this report, the two types of research are often discussed in
+tandem. Our aim is to help policymakers understand the research landscape in order to
+more effectively mitigate risks without impacting beneficial GOF and LOF research.
+Our key findings include:
+1. Gain- and loss-of-function research is ongoing, global, and collaborative with
+U.S.-affiliated researchers contributing to approximately half of identified
+publications between 2000 and mid-2022.
+2. Gain- and loss-of-function research frequently co-occur in the same study.
+That said, LOF research appears in more publications than GOF research.
+3. Gain- and loss-of-function research is conducted over a range of different
+experimental methodologies, pathogens, and applications.
+• Methodologies: GOF and LOF research does not require cutting-edge
+gene-editing technologies; 21 percent of all publications we identified for
+this report use serial passaging instead of other more technically
+
+===== PDF_PAGE 3 =====
+Center for Security and Emerging Technology | 2
+
+sophisticated techniques such as CRISPR. The use of serial passage is
+more frequent in GOF publications than LOF publications.
+• Pathogens: GOF and LOF research involves pathogens that span the four
+biosafety levels (BSLs), with nearly all research being conducted on
+pathogens that are categorized as BSL-2, BSL-2+, or BSL-3.
+• Applications: a range of research topics involve GOF and LOF research.
+For example, approximately 24 percent of the identified publications were
+related to vaccine development and the most-studied pathogens are
+those that cause high global health burdens.
+Based on our analysis, we assess that GOF and LOF research will be difficult to
+regulate because:
+1. Gain- and loss-of-function research are widely used in public health
+applications. Regulations will need to target the types of research that cause
+the most risk without impeding disease research or therapy development.
+2. Gain- and loss-of-function research are intertwined. Regulations that restrict
+GOF research will also restrict less risky LOF research, potentially delaying
+public health developments without achieving the desired safety enhancements.
+3. Researchers cannot always predict whether an experiment will cause a
+pathogen to become more or less virulent. Experiments that were not
+anticipated to be GOF research may not be prevented by proactive regulatory
+requirements.
+4. Gain-of-function research can be conducted without access to gene editing
+technologies. Regulating gene editing technologies, including CRISPR or DNA
+synthesis, would not affect the approximately 21 percent of experiments that
+were conducted using serial passaging.
+5. Risk varies among GOF studies, and should not be uniformly regulated. The
+risk level of GOF and LOF research changes based on experimental factors
+including the pathogen’s biosafety level, methodology, and the animal model(s)
+used. Regulations will need to target the types of research that cause the most
+risk rather than impose a one-size-fits-all regulatory policy that does not
+account for these vital differences.
+
+===== PDF_PAGE 4 =====
+Center for Security and Emerging Technology | 3
+
+Table of Contents
+Executive Summary ............................................................................................................................... 1
+Introduction .............................................................................................................................................. 4
+Structure of Report ............................................................................................................................ 5
+Background and Context ..................................................................................................................... 6
+What is Gain-of-Function and Loss-of-Function Research? ................................................ 6
+Why Do Researchers Genetically Alter Pathogens? .............................................................. 7
+How do Researchers Conduct Gain- and Loss-of-Function Research? ........................... 8
+Policy Landscape: Current Guidelines and Regulations .......................................................... 10
+Methodology .......................................................................................................................................... 12
+Results ..................................................................................................................................................... 13
+Scope and Scale of Gain- and Loss-of-Function Research ................................................ 13
+Gain- versus Loss-of-Function Research ................................................................................. 16
+Gain- and Loss-of-Function Research in Public Health ...................................................... 17
+Gain- and Loss-of-Function Research Methodologies ........................................................ 21
+Types of Pathogens Used in Gain- and Loss-of-Function Research ............................... 25
+Regulatory Considerations: Why it Will be Difficult to Regulate Gain-of-Function
+Research ................................................................................................................................................. 27
+Conclusion .............................................................................................................................................. 29
+Authors .................................................................................................................................................... 30
+Acknowledgments ............................................................................................................................... 30
+Appendix A: Gain-of-Function Research Policies, Regulations, and Guidelines ............. 31
+Appendix B: Text Classification Methodology ............................................................................ 33
+Appendix C: Survey Methodology .................................................................................................. 36
+Survey Deployment and Characteristics .................................................................................. 36
+Survey Analysis ................................................................................................................................ 36
+Survey Findings ................................................................................................................................ 37
+Endnotes ................................................................................................................................................. 40
+
+===== PDF_PAGE 5 =====
+Center for Security and Emerging Technology | 4
+
+Introduction
+Altering a pathogen’s genome is an established way to study gene function, including
+how a pathogen’s genetic code impacts its ability to cause infection. Experiments that
+result in pathogens with additional functionality are categorized as gain-of-function
+(GOF) research, while genetic changes that result in weakened pathogens are
+categorized as loss-of-function (LOF) research.
+GOF and LOF research is not new. In the late 1800s, Louis Pasteur created the first
+vaccines for chicken cholera, anthrax, and rabies using LOF experiments.1 Since then,
+both GOF and LOF research have led to landmark scientific breakthroughs in vaccine
+development, genetic research, and gene therapy. Today, scientists continue to rely on
+these methods to augment our understanding of disease transmission and the
+relationships between genes and physical traits, among other uses.
+A subset of GOF and LOF research involves high-risk, highly virulent pathogens that
+are capable of spreading widely among humans. This research can be scientifically
+valuable for understanding how to fight and prevent diseases and to study new,
+virulent pathogens. The COVID-19 pandemic and the associated theory that it
+originated from GOF research at the Wuhan Institute of Virology in China has sparked
+renewed policymaker interest and debate about the risks and benefits of this kind of
+research. In the United States, on a federal level, Congress has considered reducing
+National Institutes of Health (NIH) funding for GOF pandemic preparedness research
+while at the state level, Florida has banned GOF research.2
+In March 2023, the National Science Advisory Board for Biosecurity (NSABB)
+published a new proposed oversight framework to assess, regulate, and mitigate risks
+from potential pandemic pathogens. The proposed framework led to debate among
+scientists about the scope and scale of future regulations with some believing GOF
+research should be halted altogether and others arguing for more effective regulation
+to enable safe research with potentially significant societal benefits.3
+Given the ongoing debate and the benefits and risks involved in GOF research, CSET
+researchers aimed to map the landscape, including the scale and scope, of both GOF
+and LOF published research. While LOF research results in weakened pathogens—and
+thus does not impart the same risks as GOF research—CSET researchers chose to
+characterize both GOF and LOF research because they are conducted using the same
+experimental procedures and thus could both be impacted by future regulations.
+Policymakers seeking to regulate GOF methodologies need to first understand this
+
+===== PDF_PAGE 6 =====
+Center for Security and Emerging Technology | 5
+
+landscape in order to more effectively regulate this research without preventing
+beneficial gain- and loss-of-function research. They must also understand what
+constitutes cutting-edge of research, where regulatory gaps may exist, and how
+restricting certain types of high-risk GOF research would impact a wide range of
+experimental methodologies that are used in all types of biological scientific research.
+Structure of Report
+In the remainder of this Policy Brief, we provide background on gain- and loss- of
+function research and why and how researchers conduct this kind of work; describe the
+current policies and regulations governing this kind of research; describe our
+methodology and results in greater detail; and conclude with policy considerations and
+recommendations for U.S. policymakers interested in regulating this kind of research,
+
+===== PDF_PAGE 7 =====
+Center for Security and Emerging Technology | 6
+
+Background and Context
+What is Gain-of-Function and Loss-of-Function Research?
+Definitions for GOF and LOF research vary widely, but, at its core, this research
+changes an organism’s genome to add or subtract biological functions. While scientists
+can manipulate any organism’s genome via GOF or LOF techniques, this report focuses
+on pathogens, organisms that can cause disease. Experiments that increase a
+pathogen’s ability to cause disease—through increased virulence, pathogenicity, or
+transmissibility—are classified collectively as gain-of-function research. In contrast,
+experiments that decrease a pathogen’s ability to cause disease are classified as loss-
+of-function research. These two outcomes are interconnected; GOF and LOF research
+use the same methods, equipment, and techniques. Moreover, in many cases,
+researchers may not be able to predict whether an experiment will make a pathogen
+more or less able to cause disease.
+In this report, we used the definition provided by the NSABB to inform our working
+definition of GOF or LOF research as any study that altered any of the following
+pathogen characteristics:4
+1. Pathogen production, replication, or growth rates,
+2. Survival rate or symptom severity in infected cells or organisms,
+3. Transmission (for example altering the route or rate of spread, or modifying
+pathogens to infect new cells, tissues, or animals),
+4. Susceptibility to immune mechanisms; or,
+5. Resistance to drugs, vaccines, therapeutics, or diagnostics.
+A subset of GOF and LOF research involves high-risk pathogens that are capable of
+spreading widely among humans. This subset has garnered increased attention from
+news media, lawmakers, and other officials, particularly following the outbreak of the
+COVID-19 pandemic, for the potential societal risks stemming from such research.
+Gain-of-function research on certain pathogens may also be called dual-use research
+of concern (DURC), gain-of-function research of concern (GOFROC), or enhanced
+potential pandemic pathogen (ePPP) research. As we discuss below, existing
+regulations applicable to GOF/LOF research generally target one of these three.
+
+===== PDF_PAGE 8 =====
+Center for Security and Emerging Technology | 7
+
+Why Do Researchers Genetically Alter Pathogens?
+Researchers conduct GOF and LOF research to learn how pathogens function and to
+develop new therapeutic treatments and preventative measures. Modifying pathogens
+can help researchers understand the relationship between specific genes and physical
+traits, develop altered pathogens with therapeutic benefits, and determine which
+mutations are likely to make a pathogen more dangerous in order to prioritize public
+health efforts. For example, researchers may conduct GOF or LOF research to:
+● Learn what a gene does. A researcher may determine that deleting a specific
+gene causes a particular virus to replicate more slowly. This loss-of-function
+experiment would indicate that the deleted gene is important for viral
+Box 1. Definitions of DURC, GOFROC, and ePPP
+● Dual-Use Research of Concern (DURC): “a subset of dual use research
+defined as life sciences research that, based on current understanding, can be
+reasonably anticipated to provide knowledge, information, products, or
+technologies that could be directly misapplied to pose a significant threat
+with broad potential consequences to public health and safety, agricultural
+crops and other plants, animals, the environment, materiel, or national
+security.” From the United States Government Policy for Oversight of Life
+Sciences Dual Use Research of Concern.5
+● Gain-Of-Function Research Of Concern (GOFROC): “research that could
+generate a pathogen that is: 1) highly transmissible and likely capable of wide
+and uncontrollable spread in human populations; and 2) highly virulent and
+likely to cause significant morbidity and/or mortality in humans." From the
+National Science Advisory Board for Biosecurity’s Recommendations for The
+Evaluation and Oversight of Proposed Gain-Of-Function Research (2016).6
+● Enhanced Potential Pandemic Pathogen (ePPP): “a PPP [potential pandemic
+pathogen] resulting from the enhancement of the transmissibility and/or
+virulence of a pathogen. Enhanced PPPs do not include naturally occurring
+pathogens that are circulating in or have been recovered from nature,
+regardless of their pandemic potential.” Defined by The NIH’s Framework for
+Guiding Funding Decisions about Proposed Research Involving Enhanced
+Potential Pandemic Pathogens.7
+
+===== PDF_PAGE 9 =====
+Center for Security and Emerging Technology | 8
+
+replication and may be a good therapeutic target. For example, the discovery
+that a specific viral protein is important for influenza A infection led to the
+development of the drug peramivir.8
+● Study a pathogen in a model organism. A researcher, who has developed a
+new antiviral drug, may want to collect more data in living organisms before
+testing the drug in humans. The researcher may decide to mutate the virus so
+that it can infect mice in a GOF experiment. Mouse-adapted H1N1 is frequently
+used to study influenza antivirals in mice.9
+● Develop a new vaccine strain. A pharmaceutical company may develop a
+weakened strain of a specific virus to use as a vaccine. Researchers in this
+situation would conduct loss-of-function studies to create a virus strain that
+causes mild or no symptoms, but protects against future infection—also called a
+live attenuated vaccine. This is how chickenpox vaccines were developed.10
+How do Researchers Conduct Gain- and Loss-of-Function Research?
+Researchers can genetically alter pathogens using a variety of methods, each of which
+requires different resources, materials, techniques, and skills. The following are several
+of the most common techniques that can be used for both GOF and LOF experiments:
+● Serial passaging involves deliberately passing a particular pathogen through a
+series of cells, tissues, or animals one after the other, using the pathogen from
+one round of infection to start the next. Sequentially infecting organisms in this
+way results in an evolved pathogen with new characteristics, similar to what
+happens when a pathogen spreads naturally among a population.11 Researchers
+can select pathogens that have characteristics of interest during each round of
+infection; for example, researchers can isolate antibiotic-resistant bacteria by
+selecting the bacteria that are able to survive in antibiotic-treated mice.
+● Reverse genetics (also called virus rescue) is a technique that lets researchers
+engineer new viruses by designing nucleic acids (DNA or RNA) in the laboratory
+that encode the instructions for a virus. Researchers then introduce this newly
+designed genome, or viral “blueprint,” into cells, where cellular machinery reads
+the blueprint and constructs the desired virus.
+● Adding, modifying, or removing genes from existing pathogens can alter a
+pathogen's characteristics. For example, researchers can add a new specific
+
+===== PDF_PAGE 10 =====
+Center for Security and Emerging Technology | 9
+
+gene to an existing bacterial strain by introducing a plasmid—a circular segment
+of DNA that carries the desired gene sequence—to living bacteria.12 Researchers
+can also mutate individual genes, either to generate a modified version of the
+gene or to deactivate a gene by disrupting its genetic code.
+● Pathogen recombination is a technique in which two pathogen strains are
+combined to create a third that consists of a mixture of genes from the two
+pathogen parents.13 Researchers can generate new gene combinations by
+mixing two pathogen strains in the same environment, for instance, by co-
+infecting host cells or animals with two pathogen strains. For example, two
+bacterial strains can pass DNA to each other in a process called genetic transfer,
+while two viral strains can exchange genes if they both infect the same cell.
+
+===== PDF_PAGE 11 =====
+Center for Security and Emerging Technology | 10
+
+Policy Landscape: Current Guidelines and Regulations
+Despite its widely recognized value for public health and scientific progress, GOF
+research has attracted attention and concern from scientists, politicians, and
+policymakers due to what some see as inherent risks. The possibility of starting a
+pandemic or causing widespread illness, either deliberately or inadvertently due to
+accidental release of an enhanced pathogen, has drawn media coverage and sparked
+debate, particularly given claims that GOF research may have created the SARS-CoV-
+2 virus that triggered the COVID-19 pandemic.14 Such concerns, however, predate
+COVID-19. For instance, in 2011-2012, studies related to H5N1 avian influenza virus
+transmissibility and other unrelated biosecurity incidents triggered debate and
+attracted public scrutiny that led the Obama administration to temporarily pause
+federal funding for GOF research experiments on influenza, severe acute respiratory
+syndrome (SARS), and Middle East respiratory syndrome (MERS) viruses in October
+2014.15 During this pause, an evaluation by the National Science Advisory Board for
+Biosecurity (NSABB) informed the new framework, “Recommendations For The
+Evaluation And Oversight Of Proposed Gain-Of-Function Research and P3CO,” which
+was implemented to guide federal funding decisions when the moratorium was lifted
+in 2017.16 Subsequent policy guidance from the U.S. government has attempted to
+further address safety concerns through methods such as enacting review and
+reporting processes for GOF and LOF research. Most recently, in 2022, the NSABB
+was charged by the U.S. government to evaluate the existing regulations; the final
+report’s findings and recommendations have been sent to the Department of Health
+and Human Services to inform potential new policy guidelines.17 For a full overview of
+existing regulations, see Appendix A.
+Meanwhile, members of the scientific community have repeatedly pointed out that the
+politically charged spotlight on GOF has made it difficult to rationally discuss the risks
+and benefits of such research. For example, in January 2023, over 150 experts signed
+onto a commentary published by the American Society for Microbiology, calling for a
+more nuanced, evidence-based discourse.18 Overall, the scientific community has
+expressed a range of opinions about how and whether gain-of-function research on
+potential pandemic pathogens should be regulated. Some researchers are concerned
+that proposed regulations are too far-reaching and will cause a “chilling effect” that
+inhibits scientific progress. Others argue that GOF research on potential pandemic
+pathogens does not provide adequate benefit to justify the risk and should be
+stopped.19
+
+===== PDF_PAGE 12 =====
+Center for Security and Emerging Technology | 11
+
+In between these two viewpoints are those who recognize that GOF studies are
+essential for public health and basic science, and should be allowed to continue but
+only with additional clarity, risk mitigation, oversight, and an expansion or overhaul of
+flawed existing regulations.20 Indeed, there are a number of problems with the current
+policies and guidelines that regulate GOF research. For one, these various policies do
+not clearly or consistently define what constitutes GOF research, or which subsets or
+aspects of GOF research are considered risky.21 Some of these regulations also hinge
+on being able to predict the results of an experiment before it is conducted, or in other
+words, knowing in advance that a particular modification of a pathogen will increase
+(rather than decrease) its ability to cause disease, which is something scientists are
+often unable to do. Another challenge is that current policies, other than the list-based
+Select Agents Program, only apply to federally-funded research and have no bearing
+on the research conducted in the private sector. Therefore, regardless of whether
+additional regulations are enacted, the current, ambiguous policies already make it
+difficult for researchers to know whether or how their work is affected, limited, or
+entirely prohibited.
+
+Box 2. Attitudes Within the Scientific Community
+Given the sensitivity and charged nature of debate around GOF research, CSET
+researchers conducted a survey to gauge how practicing scientists engage with the
+topic. Surveyed experts shared their experiences on the impact that this contested
+discourse has had on their work, citing uninformed regulators, polarized
+bureaucracy, and inadequate communication of scientific information as constricting
+mechanisms for their work. Given the survey responses, we believe that researchers
+might be hesitant to become public advocates or educators of GOF research for fear
+of losing access to research resources, like funding and public support. The full
+survey and results are in Appendix C.
+
+===== PDF_PAGE 13 =====
+Center for Security and Emerging Technology | 12
+
+Methodology
+To better understand the GOF and LOF research landscape, CSET used a quantitative
+approach that combines a machine learning classifier with subject-matter expert
+review. Our primary data source was PubMed/MEDLINE, a publicly available database
+of about 37 million English-language biomedical citations and abstracts provided by
+the National Center for Biotechnology Information (NCBI).22
+Subject-matter experts first identified publications that fit our criteria of GOF and LOF
+research to train a machine learning classifier. This definition was informed by prior
+guidelines developed by the National Science Advisory Board for Biosecurity
+(NSABB).23 As previously noted, we defined GOF and LOF research as experimental
+work that increases or decreases pathogenic function with any of five changes: altered
+virulence, pathogenicity, transmissibility, infectivity, or host range.
+We then applied machine-learning methods to surface approximately 7,000
+publications that are likely to contain our definition of GOF or LOF research, published
+between 2000 and mid-2022. The subject-matter experts then further analyzed a
+representative sample of 488 of these publications to determine the proportion of
+gain- vs. loss-of-function research and additional relevant characteristics including
+pathogen type, experimental method, vaccine relevance, and animal use. (Appendix B
+provides more details on methodology.)
+Our methodology has a number of limitations. Our classifier surfaced GOF and LOF
+research from a corpus of English-language publications that does not represent all of
+the possible experiments that could be occurring globally. This excludes studies from
+researchers that don’t publish their findings in peer-reviewed journals or studies
+published in a language other than English. For example, industry researchers may not
+publish their findings in order to protect intellectual property. This analysis is intended
+as a starting point to understand the GOF and LOF research landscape, while
+recognizing that it cannot exhaustively describe every experiment that is conducted.
+The following discussion highlights the findings from our analysis.*
+
+* This analysis captures GOF and LOF research on all pathogens, not just those defined as “high risk” or
+potential pandemic pathogens (PPP).
+
+===== PDF_PAGE 14 =====
+Center for Security and Emerging Technology | 13
+
+Results
+Scope and Scale of Gain- and Loss-of-Function Research
+GOF and LOF research is ongoing, global, and collaborative, with U.S.-affiliated
+researchers contributing to approximately half of identified publications. We estimate
+that there are about 7,000 papers published between 2000 and 2022 that meet our
+GOF and LOF pathogen research criteria on PubMed (Figure 1). Researchers from U.S.-
+based institutions contributed to about 53 percent of these publications, while
+researchers from Chinese institutions authored about 21 percent of the GOF and LOF
+research papers in our dataset.
+Figure 1: U.S.-affiliated Researchers Contributed to More than Half of Gain- and Loss-
+of-Function English-language Research Publications between 2000-2022
+
+Source: CSET classifier on PubMed data between 2000-mid 2022.
+Note: Percentages sum to more than 100 percent because many publications are collaborations
+between authors in different countries; these publications are counted for each country with a
+contributing author. Shaded portions of each bar show the 95 percent confidence interval based on
+subject matter expert annotation of representative samples of papers identified by the classifier . For
+methodological details, see Appendix B.
+
+===== PDF_PAGE 15 =====
+Center for Security and Emerging Technology | 14
+
+GOF and LOF research is highly collaborative, as about 67 percent of identified
+publications involved a collaboration between researchers at multiple institutions
+(Figure 2a, next page), with collaborations between authors from at least two U.S.
+institutions being the most common type (Figure 2b, next page). U.S.-international
+collaborations occur most frequently between U.S. and Chinese institutions (Figure
+2b).
+
+===== PDF_PAGE 16 =====
+Center for Security and Emerging Technology | 15
+
+Figure 2: The Majority of Gain- and Loss-of-Function Research was Conducted
+Collaboratively Across Multiple Institutions
+
+Source: CSET classifier on PubMed data between 2000-mid 2022.
+Note: Shaded portions of each bar show the 95 percent confidence interval based on subject matter
+expert annotation of representative samples of papers identified by the classifier .
+
+Source: CSET classifier on PubMed data between 2000-mid 2022. Shaded portions of each bar show
+the 95 percent confidence interval based on subject matter expert annotation of representative samples
+of papers identified by the classifier.
+
+===== PDF_PAGE 17 =====
+Center for Security and Emerging Technology | 16
+
+Gain- versus Loss-of-Function Research
+Gain- and loss-of-function research are interconnected and often conducted in the
+same study. We estimate that approximately one-third (29 percent) of the 7,000
+identified publications in PubMed include both GOF and LOF research. Meanwhile,
+there are nearly twice as many studies that result in LOF as there are publications that
+result in GOF (Figure 3). As such, while the public debate is largely focused on GOF,
+our data indicates that GOF and LOF research are intertwined and that are many more
+studies focused on LOF research than GOF research.
+Figure 3: Distribution of Gain- vs. Loss-of-Function Research
+
+Source: CSET classifier on PubMed data between 2000-mid 2022. Shaded portions of each bar show
+the 95 percent confidence interval based on subject matter expert annotation of representative samples
+of papers identified by the classifier.
+
+===== PDF_PAGE 18 =====
+Center for Security and Emerging Technology | 17
+
+Gain- and Loss-of-Function Research in Public Health
+Gain- and loss-of-function research is conducted to better understand how pathogens
+cause disease and to develop therapies for pathogens with a high global health
+burden. Accordingly, the pathogens that we encountered most frequently in
+publications identified for this study are viruses within families that infect a sizeable
+fraction of the world’s population or cause livestock loss, such as orthomyxoviridae
+(influenza), herpesviridae (herpes simplex virus), flaviviridae (yellow and dengue fever),
+and coronaviridae (SARS, MERS, COVID-19). We estimate that nearly one-third of
+GOF and LOF studies in our dataset are conducted on bacteria, which could reflect
+efforts to combat health concerns posed by antimicrobial resistance (Figure 4).27
+Box 3. Examples of Gain- and Loss-of-Function Studies
+Below are examples of each type of research found during the SME review of
+selected publications:
+● Loss-of-function: Researchers deleted genes from African swine fever virus
+to develop a weakened version of the virus; this attenuated virus fully
+protected pigs from lethal African swine fever infection when used as a
+vaccine.24
+● Gain-of-function: Researchers infected mice with the bacteria Pseudomonas
+aeruginosa, that normally does not naturally infect mice, to investigate how
+the bacteria interacts with a host in an animal system.25
+● Gain- and loss-of-function: Scientists changed the sequence of different
+strains of the fungus Aspergillus fumigatus to determine what causes the
+fungus to become resistant to antifungal therapies. Some of the mutations
+caused new fungus strains to not grow at all in mice, while other new strains
+grew faster in mice than the original fungus stain.26
+
+===== PDF_PAGE 19 =====
+Center for Security and Emerging Technology | 18
+
+Figure 4: Gain- and Loss-of-Function Research, Categorized by Pathogen Type
+
+Source: CSET classifier on PubMed data between 2000-mid 2022. Percentages sum to more than 100
+because some publications use more than one pathogen. Percentages of virus breakdown sum to 99
+percent rather than 100 percent of the viruses represented, due to rounding. Shaded portions of each
+bar show the 95 percent confidence interval based on subject matter expert annotation of
+representative samples of papers identified by the classifier.
+
+===== PDF_PAGE 20 =====
+Center for Security and Emerging Technology | 19
+
+In addition to studying diseases, researchers conduct GOF and LOF research to
+develop new preventative medical countermeasures like vaccines. An estimated 24
+percent of all identified publications in our dataset are directly involved in research or
+development of vaccines (Figure 5a). We further find that LOF research is more closely
+related to vaccine development than GOF research; approximately 35 percent of the
+publications that result in LOF alone are related to vaccine development, compared to
+15 percent of publications that result in both LOF and GOF and 13 percent of
+publications that result in only GOF (Figure 5b). We only identified publications as
+“vaccine-related” if they were explicitly developing or testing a vaccine; there are
+additional foundational research publications that could contribute to vaccine
+development but may be missed by our specific criteria.
+
+===== PDF_PAGE 21 =====
+Center for Security and Emerging Technology | 20
+
+Figure 5: Gain- and Loss-of-Function Publications Related to Vaccine Development
+
+Source: CSET classifier on PubMed data 2000-mid 2022. In Figure 5(a), shaded portions of each bar
+show the 95 percent confidence interval based on subject matter expert annotation of representative
+samples of papers identified by the classifier.
+
+===== PDF_PAGE 22 =====
+Center for Security and Emerging Technology | 21
+
+Gain- and Loss-of-Function Research Methodologies
+Gain- and loss-of-function studies serve a range of research applications, from basic
+research in the laboratory to experiments that use animals to test how pathogens
+function in living organisms. Basic research studies build foundational knowledge,
+while animal models translate these results to more complex living organisms.
+GOF and LOF research are conducted in both basic laboratory settings and in animal
+studies. Mice, the most commonly-used animal model in research, are used in an
+estimated 49 percent of GOF and LOF publications (Figure 6). 28 Chickens are the next
+most-common animal model (about 8 percent), which reflects the frequency of studies
+on avian flu or studies that use chicken eggs to develop vaccines. We estimate that
+pigs, non-human primates, rabbits, and ferrets are each used in less than 5 percent of
+identified publications. About 29 percent of publications do not include research on
+animal models.
+The type of animal model used can increase the risks associated with GOF research.
+The more biologically similar an animal model is to humans, the greater the likelihood
+that the research will translate to humans but also the greater the risk of unintended
+animal-to-human transmission. Non-human primates and pigs are often used to study
+human diseases because they are physiologically and genetically similar to people.29
+However, this similarity also means that the pigs, nonhuman primates, and humans
+can be infected by similar pathogens, increasing the risk that these studies may
+accidentally infect human researchers and handlers.
+About 4 percent of the identified GOF and LOF publications involved experiments that
+infect pigs while approximately 3 percent involved experiments that infect nonhuman
+primates (Figure 6). Ferret research is frequently cited in policy discussions after two
+high-profile studies modified H5N1 influenza to spread between ferrets due to the
+similarities between human and ferret lungs.30 However, we found that only 2 percent
+of identified publications relate to research that infects ferrets.
+
+===== PDF_PAGE 23 =====
+Center for Security and Emerging Technology | 22
+
+Figure 6: Gain- and Loss-of-Function Research, Classified by Use of Animals
+
+Source: CSET classifier on PubMed data between 2000-mid 2022. Percentages sum to more than 100
+because some research is conducted on more than one animal species. Shaded portions of each bar
+show the 95 percent confidence interval based on subject matter expert annotation of representative
+samples of papers identified by the classifier.
+While much of the attention has focused on sophisticated gene editing technologies
+such as CRISPR, it is important to understand that the highest-risk GOF research can
+be conducted even without access to advanced gene-editing technologies because
+researchers can use other methods including serial passaging to alter pathogen
+genomes. Serial passage sequentially infects cells, tissues, or animals with a pathogen
+over time, and can result in an evolved pathogen with new characteristics under
+suitable scientific conditions.31 The method requires basic laboratory equipment and
+does not rely on more advanced and expensive methods such as CRISPR, DNA
+synthesis, or genetic engineering. We found that 21 percent of all identified
+publications used serial passaging (Figure 7a). Serial passaging frequently resulted in
+GOF genome alterations; 42 percent of identified publications that include only GOF
+
+===== PDF_PAGE 24 =====
+Center for Security and Emerging Technology | 23
+
+were conducted using serial passage, compared to 22 percent of publications that
+result in both GOF and LOF and 10 percent of publications that result in only LOF,
+respectively (Figure 7b). It is also worth noting that when serial passaging is conducted
+in animals, the likelihood of animal-to-human transmission, and thus, risk, may
+increase.
+Figure 7: Gain- and Loss-of-Function Research, Categorized by Use of Serial Passaging
+
+Source: CSET classifier on PubMed data between 2000-mid 2022. Shaded portions of each bar show
+the 95 percent confidence interval based on subject matter expert annotation of representative samples
+of papers identified by the classifier.
+
+===== PDF_PAGE 25 =====
+Center for Security and Emerging Technology | 24
+
+Box 4. Examples of Serial Passage
+Serial passaging is a common technique to genetically manipulate pathogens. Some
+illustrative examples of its use include:
+● Loss-of-function: Researchers serial-passaged a strain of Porcine Epidemic
+Diarrhea Virus, resulting in a virus that induced milder symptoms and
+exhibited decreased viral shedding in pigs. This new strain is a potential
+attenuated vaccine candidate, which could help alleviate livestock losses due
+to the virus’s high mortality rate.32
+● Gain-of-function: Researchers investigated how a common antiviral drug
+inhibits herpes simplex virus by serial-passaging the virus in cells until it was
+resistant to the antiviral, to better understand why treatments sometimes
+fail.33
+● Gain- and loss-of-function: Researchers serial-passaged dengue virus in
+mosquito and mammalian cells to understand how the virus evolved to be
+able to infect both mosquitoes and humans. Some of the newly-evolved
+viruses gained the ability to replicate more efficiently, while other viruses
+replicated less efficiently; the researchers compared the gene sequences of
+the differently evolved viruses to understand how dengue virus adapts to new
+hosts.34
+
+===== PDF_PAGE 26 =====
+Center for Security and Emerging Technology | 25
+
+Types of Pathogens Used in Gain- and Loss-of-Function Research
+GOF and LOF research varies in risk level depending on the pathogen that is being
+manipulated. The CDC stratifies a variety of pathogens into biosafety containment
+levels (BSLs) 1-4, which represent recommended best practices for safe research
+based on a protocol-based risk assessment.* We mapped the recommended biosafety
+levels to the publications based on the pathogen(s) used in each of the 488
+publications we inspected manually during our research process. Some papers
+explored pathogens not assigned a biosafety level by the CDC, which we labeled as
+"unknown." Note that the CDC biosafety levels are recommended, and that we were
+unable to confirm whether the research covered in these papers was conducted in the
+appropriate biosafety level laboratories. Almost all of the publications for which we
+were able to assign a biosafety level (460 out of 488 manually inspected publications)
+were performed on pathogens that are categorized at BSL-2 (58 percent), BSL-2+ (10
+percent), or BSL-3 (25 percent) (Figure 8). Very few publications involved pathogens
+that are categorized as BSL-1 (1 percent) or BSL-4 (<1 percent).
+
+* Center for Disease Prevention and Control Biosafety Level Definitions:
+Biosafety Level 1 (BSL-1): appropriate for defined and characterized strains of viable biological agents
+that are not known to cause disease in immunocompetent adult humans.
+Biosafety Level 2 (BSL-2): appropriate for handling moderate-risk agents that cause human disease of
+varying severity by ingestion or through percutaneous or mucous membrane exposure.
+Biosafety Level 3 (BSL-3): appropriate for agents with a known potential for aerosol transmission, for
+agents that may cause serious and potentially lethal infections, of indigenous or exotic origin.
+Biosafety Level 4 (BSL-4): appropriate for exotic agents that pose a high individual risk of life-
+threatening disease by infectious aerosols and for which no treatment is available.
+“Biosafety in Microbiological and Biomedical Laboratories 6th Edition.” Centers for Disease Control and
+Prevention. https://www.cdc.gov/labs/pdf/CDC-BiosafetyMicrobiologicalBiomedicalLaboratories-2020-
+P.pdf.
+
+===== PDF_PAGE 27 =====
+Center for Security and Emerging Technology | 26
+
+Figure 8: Gain- and Loss-of-Function Research, Classified by CDC-recommended
+Pathogen Biosafety Level.
+
+Source: CSET classifier on PubMed data between 2000-mid 2022.
+Note: Percentages sum to more than 100 percent due to rounding. Shaded portions of each bar show
+the 95 percent confidence interval based on subject matter expert annotation of representative samples
+of papers identified by the classifier.
+In summary, we find that gain- and loss-of-function studies are conducted globally,
+with applications ranging from public health research to vaccine development. These
+studies vary widely, and it’s important to understand that attributes from the type of
+pathogen used to the research methodology employed can convey different levels of
+risk. The varied and sometimes interconnected nature of the research ecosystem
+means that policymakers, particularly potential regulators, must carefully consider the
+unique benefits and risks of certain types of GOF and LOF research and how restricting
+one type might affect another.
+
+===== PDF_PAGE 28 =====
+Center for Security and Emerging Technology | 27
+
+Regulatory Considerations: Why it Will be Difficult to Regulate Gain-of-
+Function Research
+Our findings highlight the complexities of regulating GOF and LOF research. Based on
+our analysis, we identified different facets of GOF and LOF research that should be
+considered when designing or modifying rules, recommendations, and regulations:
+1. GOF and LOF research are widely used in public health applications.
+● Approximately 25 percent of GOF and LOF studies are involved in vaccine
+research and development, and the most frequently studied pathogens are
+those that cause widespread disease.
+● Researchers frequently modify pathogens in order to understand how diseases
+function or to develop vaccines and medical countermeasures. Regulations will
+need to target the types of research that cause the most risk without impeding
+disease research or therapy development.
+2. Gain- and loss-of-function research are intertwined.
+● Approximately 30 percent of the studies in our dataset resulted in both GOF
+and LOF.
+● LOF research does not create enhanced pathogens, and is frequently conducted
+to develop vaccines and therapies. Regulations that restrict GOF research based
+on methods, techniques, or resources used in the course of research may also
+restrict LOF research because the two use the same methods, techniques, and
+resources. This may delay public health developments without necessarily
+achieving the desired safety enhancements.
+3. Researchers cannot always predict whether an experiment will cause a pathogen
+to become more or less virulent.
+● In addition to GOF and LOF being intertwined, we encountered several studies
+in which researchers determined what a gene does by deleting the gene and
+measuring the impact on the pathogen’s function. The goal of this experiment is
+to investigate cause and effect, and thus the output is not always anticipated.
+● Scientists do not have complete knowledge of gene function or biological
+pathways, which prevents them from being able to accurately predict the
+
+===== PDF_PAGE 29 =====
+Center for Security and Emerging Technology | 28
+
+results of every experiment. Experiments that were not anticipated to be GOF
+research may not be prevented by proactive regulatory requirements.
+4. Gain-of-function research can be conducted without access to advanced gene
+editing technologies.
+● Over 20 percent of GOF or LOF research we identified for this study was
+conducted without access to gene editing technologies. For instance, 21 percent
+of the studies used more basic techniques like serial passage, albeit the use of
+this technique is more frequent in GOF research than LOF research.
+● Researchers have a variety of experimental methods to conduct GOF research,
+some of which require only basic laboratory equipment. Regulating gene editing
+technologies, including CRISPR or DNA synthesis, would not prevent all GOF
+experiments.
+5. Risk varies among GOF and LOF studies, and such studies should not be
+uniformly regulated.
+● GOF and LOF publications spanned the full extent of biosafety levels, animal
+usage, and experimental methods, indicating a range of different risk factors.
+● The risk level of GOF and LOF research changes based on experimental factors.
+For example, some pathogens, like common lab strains of Escherichia coli, are
+relatively benign while others can cause severe or fatal disease. Similarly, using
+research animals that are biologically similar to humans may increase the risk of
+a modified pathogen accidentally transferring to humans.
+Whether or not U.S. policymakers decide to pursue regulations on GOF research,
+international coordination, transparency, and trust-building between scientific, public,
+and policy communities will be necessary to build a comprehensive strategy for
+scientific research governance.
+
+===== PDF_PAGE 30 =====
+Center for Security and Emerging Technology | 29
+
+Conclusion
+CSET’s examination of about 7,000 gain- and loss-of-function research publications,
+drawing on a database of roughly 37 million biomedical citations and abstracts,
+indicates that the nature of this research is global, ongoing, collaborative and diverse.
+While the riskier methods involving gain of function are overrepresented in today’s
+policy discussions, our research shows that it is not as prevalent across the larger
+research ecosystem examined. This brief aims to help policymakers ground the current
+discussion and debate in the context of the scale, scope and complexity of this
+research. It also maps the policy and academic landscapes to help policymakers weigh
+how best to regulate this research and address regulatory gaps.
+Gain- and loss-of-function research methods are complex and nuanced and any
+regulations of these methods need to be as well. Ultimately, different gain-of-function
+research approaches contain different levels of risks that are important to understand
+in order to create effective regulations. For example, some cutting-edge research may
+rely more heavily on advanced gene editing technologies or animal studies, but these
+tools are unnecessary for other basic gain- or loss-of-function research. Painting these
+methods with a broad brush could inadvertently impede scientific progress. As such,
+one-size-fits all policies aimed at mitigating dangers from one approach could limit
+other, less-risky research, and overly broad regulations could ultimately limit the
+scientific community’s ability to prepare for future disease outbreaks. Effective policies
+will need to clearly define the subset of research that poses the greatest risk in order
+to develop targeted regulations. This brief will hopefully help policymakers address
+this important topic, armed with knowledge and factual insights.
+
+===== PDF_PAGE 31 =====
+Center for Security and Emerging Technology | 30
+
+Authors
+Caroline Schuerger and Steph Batalis are biotechnology research fellows, Katherine
+Quinn is a data scientist, Ronnie Kinoshita is a survey research analyst, Owen J. Daniels
+is the Andrew W. Marshall Fellow, and Anna Puglisi is a senior fellow at CSET.
+Acknowledgments
+The authors would like to thank James Dunham for their data work. For their feedback
+and assistance, the authors would like to thank Catherine Aiken, Vikram Venkatram,
+Margarita Konaev, and Igor Mikolic-Torreira. The authors are especially grateful to
+Michael Imperiale, Christine Parthemore, and Gigi Kwik Gronvall for their
+comprehensive reviews. Finally, we thank Matt Mahoney for his fact-checking and
+Tessa Baker for their editorial support.
+
+© 2023 by the Center for Security and Emerging Technology. This work is licensed
+under a Creative Commons Attribution-Non Commercial 4.0 International License.
+To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/4.0/.
+Document Identifier: doi: 10.51593/###
+
+===== PDF_PAGE 32 =====
+Center for Security and Emerging Technology | 31
+
+Appendix A: Gain-of-Function Research Policies, Regulations, and
+Guidelines
+We provide examples of policies or guidelines that encompass aspects of GOF and
+LOF research below.
+Federal Select Agent Program (FSAP) (Reviewed regularly)35
+Joint program between the CDC and USDA that oversees the possession, use, and
+transfer of select agents and toxins that “have the potential to pose a severe threat to
+public health and safety.” The policy only applies to a specific list of agents and toxins,
+so pathogens that are not on the list at that time are not subject to regulation (the list
+is updated several times a year).
+
+U.S. Policy for Institutional Oversight of Life Sciences Dual Use Research of
+Concern (DURC) (Effective 2015)36
+An institutional oversight requirement for a list of 15 agents and seven types of
+experiments that are considered “high risk”. The policy only applies to a specific list of
+agents and toxins, so pathogens that are not on the list at that time are not subject to
+regulation. The policy requires each federal institution to create their own guidelines
+for regulating DURC-related research funding.
+
+Framework for Guiding Funding Decisions about Proposed Research Involving
+Enhanced Potential Pandemic Pathogens (2017)37
+A review process for NIH-funded studies on “enhanced potential pandemic pathogens”
+(ePPPs), defined as an enhancement to a pathogen that is:
+1. Likely highly transmissible and likely capable of wide and uncontrollable spread
+in human populations; and
+2. Likely highly virulent and likely to cause significant morbidity and/or mortality in
+humans.
+PPPs themselves are defined as pathogens that are likely “highly transmissible” and
+“highly virulent;” the term “highly” is subjective and the requirement to report if a study
+has “reasonable anticipation” of a risk is unclear. The Framework is guided by the
+proposed Recommendations for the Evaluation and Oversight of Proposed Gain-of-
+Function Research (2016) by the National Science Advisory Board on Biosecurity. 38
+
+===== PDF_PAGE 33 =====
+Center for Security and Emerging Technology | 32
+
+NIH Guidelines for Research Involving Recombinant or Synthetic Nucleic Acid
+Molecules (2019)39
+NIH guidance, as a condition of receiving funding from the NIH, for laboratory safety
+and containment practices. The guidelines pertain to research that was developed with
+NIH funding or conducted at institutions that receive NIH funding on studies that use
+recombinant or synthetic nucleic acid molecules.
+
+Biosafety in Microbiological and Biomedical Laboratories (BMBL) Guidelines (Most
+recent revision, 2020)40
+NIH/CDC laboratory guidance that recommends biosafety and biocontainment
+procedures to safely conduct research on different pathogens by categorizing
+pathogens by biosafety levels.
+
+Proposed Biosecurity Oversight Framework for the Future of Science (2023)41
+2023 updated guidance from the National Science Advisory Board on Biosecurity that
+evaluates the effectiveness of U.S. policies governing ePPP and DURC research and
+provides updated recommendations to increase research transparency, expand the
+pathogens that are subject to review, and further define the roles of research
+institutions in self-reporting ePPP research. If implemented, the framework would also
+remove exemptions for vaccine development and pathogen surveillance.
+
+===== PDF_PAGE 34 =====
+Center for Security and Emerging Technology | 33
+
+Appendix B: Text Classification Methodology
+We applied machine learning methods to develop a classifier that identified the
+numerous gain- and loss-of-function research and publications available in PubMed.
+This methodology was chosen because identifying thousands of relevant articles from
+millions of publications was not a feasible task for manual inspection, and
+unfortunately there was no reliable way of using the associated Medical Subject
+Headings (MeSH terms) to simply select gain- or loss-of-function research.
+Development of our text-based classifier consisted of several stages. The first was to
+identify a corpus of candidate research papers, while balancing the benefits of a large
+dataset with the need to eliminate irrelevant papers. We selected the following criteria
+from the PubMed metadata to isolate articles of potential interest:
+1. An article needed to be published no earlier than 2000;
+2. The publication type for an article should be associated with grant-supported
+research, such as “Journal Article”, and not be labeled as “Review”, “News” or
+contain any other non-experimental designation;
+3. The MeSH tags for an article should include “Animals” or any of the 221 specific
+animal and taxonomic categories of animals;
+4. The MeSH tags of an article should also include any of the possible 556 viruses,
+777 infections, or 115 pathogens terms;
+5. The article could not be missing a title or abstract.
+As a result of our criteria, 159,227 candidate publications in PubMed were identified as
+the basis for our corpus.
+Based on a literature review of over 300 papers of relevant work, we then developed
+stringent criteria for gain- or loss-of-function research, along with criteria for specifying
+non-gain- or loss-of-function research. Seminal papers included Imai et al. 2012 and
+Herfst et al. 2012,42 which reported gain of function in the lab-modified H5N1 flu virus
+among ferrets in the form of new modes of transmission. Documents from the National
+Science Advisory Board for Biosecurity (NSABB) defined parameters for risk-benefit
+analysis,43 provided an annotated bibliography of gain-of-function research and
+alternatives including loss-of-function,44 and recommendations for evaluation and
+oversight.45 These works allowed us to adopt a narrow but well-specified working
+
+===== PDF_PAGE 35 =====
+Center for Security and Emerging Technology | 34
+
+definition for gain- and loss-of-function as experimental research that seeks to either
+increase or decrease pathogenic function. We slightly modified the definition set forth
+by NSABB to define gain- or loss-of-function research as any study that:
+1. Enhanced (or decreased) pathogen production as a result of changes in the
+replication cycle or growth.
+2. Enhanced (or decreased) survival rate or symptom severity in appropriate cells
+or animal models.
+3. Enhanced (or decreased) transmission (e.g., for example altering the route or
+rate of spread, or modifying pathogens to infect new cells, tissues, or animals).
+4. Evasion of (or reduced ability to evade) existing natural or induced immunity.
+5. Change in resistance to drugs or evasion of other medical countermeasures such
+as vaccines, therapeutics, diagnostics.
+The collection of criteria for identification of relevant research lend itself to the use of
+weak supervision with a large language model.46 We made use of the Snorkel Flow
+platform at this stage. Here, we defined a set of heuristics for relevant documents that
+were encoded as 201 labeling functions. For example, text including the term
+“recombinant” has a high likelihood of describing gain-of-function research, whereas a
+phrase such as “human trial” would suggest non-gain-of-function research. These
+functions, when aggregated for each publication in our corpus, generated a set of weak
+labels on over 900,000 documents, where each of these documents was weakly
+labeled as either gain-of-function or non-gain-of-function. The collection of labeled
+documents served as the training data for our discriminative classification model, a
+deep neural network.
+We first evaluated the performance of our classifier by having a stratified random
+sample of 200 documents manually annotated by CSET domain experts. Based on this
+evaluation, we estimate the recall of our model to be 0.80. In addition, each annotator
+independently analyzed the same 50 documents to evaluate inter-annotator
+agreement and ensure the robustness of the annotation process.* We conducted a
+second round of evaluation using a second stratified random sample of 1,000
+
+* Inter-annotator agreement was quite high with Krippendorff’s ɑ = .85.
+
+===== PDF_PAGE 36 =====
+Center for Security and Emerging Technology | 35
+
+documents, which were again manually annotated by CSET domain experts. From this
+second evaluation, we estimated the precision of our model to be 0.58.
+With the collection of relevant research publications identified by our classifier, CSET
+domain experts annotated the second round sampled research papers to further
+disentangle gain-of-function research, loss-of-function research, or both; characterize
+research to identify: pathogen types and families; use of animals, including non-human
+primates; research methodologies such as serial passaging and genetic engineering;
+the biosafety level of the pathogen under research; and finally to analyze author
+affiliations to characterize work conducted at a single institution or collaboratively
+across multiple institutions, and find country associations.
+
+===== PDF_PAGE 37 =====
+Center for Security and Emerging Technology | 36
+
+Appendix C: Survey Methodology
+We designed a survey fielded in fall 2022 to ask researchers with expertise in
+biotechnology how they define and perceive gain-of-function research via email
+distribution. Our survey sought to garner insight on what experts deem to be GOF
+research, including identifying GOF research experiments and perspectives on its
+purposes.
+Survey Deployment and Characteristics
+We define our population of interest as individuals who authored a GOF-relevant in
+PubMed and a targeted group of researchers and industry professionals who have
+been identified by the CSET research team as performing GOF research or have
+expertise in a field related to gain-of-function research. As this population is fairly
+small, we supplemented our sample of academic researchers performing gain-of-
+function research with targeted outreach and a snowball sample of U.S. professionals
+who work in fields that may include policy, biosafety/bioethicists professionals. In total,
+we received 14 responses (9 complete and 5 partial) for a response rate of 4.05
+percent.* The median response time was 10 minutes. We asked questions about:
+1. individuals' definitions of GOF research for a variety of audiences,
+2. merits and risks of performing GOF research; and,
+3. comments on existing definitions of GOF research.
+Survey Analysis
+Two members of the research team extracted themes from survey open-responses
+through focused coding and constant comparison methods to analyze these responses.
+We documented ideas, questions, and comments, and created a list of themes. After
+initial familiarization with the responses, the same two members of the research team
+independently engaged in open coding to extract and determine individual themes
+using thematic analysis. We developed a codebook on the basis of agreement of two
+members of the research team. We do not report agreement metrics as both
+researchers coded all responses and resolved any discrepancies. Our extracted themes
+mapped onto survey topics and included the categories in Table 1.
+
+* The response rate for this survey aligns with similar survey response rates.
+
+===== PDF_PAGE 38 =====
+Center for Security and Emerging Technology | 37
+
+Table 1: Survey Coding Categories
+GOF research implications
+public health applications
+scientific end means
+societal implications
+scientific communication
+processes and methodologies
+GOF research definitions
+miscellaneous inflammatory statements
+safety concerns
+Source: CSET survey analysis
+Survey Findings
+Generally, respondents agreed upon the following descriptors to characterize GOF
+research: alterations to the genome of an organism that may or may not result in
+enhanced functionality. They also typically scoped GOF research to work on viruses as
+well as gaining characteristics of transmissibility, virulence, and pathogenicity.
+Several respondents gave examples of GOF research, “A great example is making a
+plant more drought tolerant through genetic modification. On the virus and bacteria
+side of things, there is the potential to understand how they fundamentally do certain
+things such as invade cells or avoid the immune system.” When we asked respondents
+to note strengths and weaknesses in an existing definition of GOF research as
+proposed by the National Science Advisory Board for Biosecurity, many respondents
+expressed that this definition was limited to what they consider GOF research and that
+this definition has had a negative impact on research regulation. One respondent
+stated, “While I think that GOF should be defined as noted on the previous page,
+common usage is not always the same, and the NIH has also changed its definition
+somewhat. Uniformity and clarity would be very helpful.” When we solicited
+
+===== PDF_PAGE 39 =====
+Center for Security and Emerging Technology | 38
+
+definitions of GOF research, we anticipated that respondents would provide different
+definitions or language for different audiences, however, many respondents noted,
+sometimes explicitly, that they would describe this type of research using the same
+language to all audiences, “I would use the same definition” or “Please see my former
+answer. It applies to all audiences.”
+To the question about longer terms implications of GOF research, respondents
+mentioned topics such as advancing science, as well as societal, policy, and public
+health implications. When discussing the potential merits of GOF research, many
+respondents noted advancing scientific progress: “We can learn how biological
+systems work, with the potential benefit that we can improve human, animal, or plant
+health.” Comments on advancing science ranged from general statements such as “the
+benefits of gain-of-function research is to understand the function of specific genes
+and assess whether genes are essential, necessary but not sufficient cell survival, or
+not necessary for cell survival” to specific scientific advancements in a specific subfield
+of biology such as, “identifying mutations that make a gene work better; where
+mapping and studying these changes will identify critical control sites in genes.” Many
+respondents noted public health implications, including “gain-of-function research…is
+especially important for understanding how viruses evolve to evade the defense of the
+immune system. It is also so important for studying how and why bacterial pathogens
+develop antibiotic resistance. This work will directly inform the development of specific
+treatments for such superbugs.” One respondent noted directly a potential merit of
+GOFR is the “ability to design new therapeutics and medical countermeasures.”
+We extracted issues of scientific communication from respondents' comments. Many
+respondents noted the term GOF research was not created by the scientists
+performing this type of research. This has led to increasing frustration with
+communicating to decision-makers and the general public about regulation on GOF
+research, noting that “people who opine on these GOF topics are not qualified to
+understand how blurry these categories are in practice.” One respondent explicitly
+mentioned the impact of scientific communication surrounding GOF research, “…forever
+in biosecurity contexts the more general concept of gain-of-function is linked to
+research with pathogens that result in new or enhanced functions.” A few respondents
+mentioned the difficulty of dealing with the ambiguity of performing GOF research,
+“the problem with the term is that as it wasn't created by scientists, it doesn't
+adequately describe what scientists might be doing and is super vague.”
+
+===== PDF_PAGE 40 =====
+Center for Security and Emerging Technology | 39
+
+The full text of the survey can be found at https://github.com/georgetown-cset/gain-
+of-function-survey/tree/main.
+
+===== PDF_PAGE 41 =====
+Center for Security and Emerging Technology | 40
+
+Endnotes
+
+1 Caroline Barranco. “The First Live Attenuated Vaccines.” Nature Research, September 28, 2020.
+https://www.nature.com/articles/d42859-020-00008-5
+2 Florida Bill CS/CS/HB 1387: Department of Health. 2023.
+https://www.flsenate.gov/Session/Bill/2023/1387/BillText/er/PDF .; “Governor Ron DeSantis Signs the
+Strongest Legislation in the Nation for Medical Freedom.” Flgov.com. May 11, 2023.
+https://flgov.com/2023/05/11/governor-ron-desantis-signs-the-strongest-legislation-in-the-nation-for-
+medical-freedom/.
+3 National Science Advisory Board on Biosecurity. “Proposed Biosecurity Oversight Framework for the
+Future of Science.” March 2023. https://osp.od.nih.gov/wp-content/uploads/2023/03/NSABB-Final-
+Report-Proposed-Biosecurity-Oversight-Framework-for-the-Future-of-Science.pdf.; Esvelt, Kevin M.
+2021. “Manipulating Viruses and Risking Pandemics Is Too Dangerous. It’s Time to Stop.” Washington
+Post, October 7, 2021. https://www.washingtonpost.com/opinions/2021/10/07/manipulating -viruses-
+risking-pandemics-is-too-dangerous-its-time-stop/.; Gregory D. Koblentz, and Rocco Casagrande. 2023.
+“Opinion.” The New York Times, February 20, 2023.
+https://www.nytimes.com/2023/02/20/opinion/biology-is-dangerously-outpacing-policy.html.
+4National Science Advisory Board for Biosecurity. “Framework for Conducting Risk and Benefit
+Assessments of Gain-Of-Function Research,” May 2015. https://osp.od.nih.gov/wp-
+content/uploads/NSABB_Framework_for_Risk_and_Benefit_Assessments_of_GOF_Research -
+APPROVED.pdf.
+5 The United States Government, United States Government Policy for Institutional Oversight of Life
+Sciences Dual Use Research of Concern, September 25, 2015,
+https://www.phe.gov/s3/dualuse/Documents/durc-policy.pdf
+6 National Science Advisory Board on Biosecurity. “Recommendations for the Evaluation and Oversight
+of Proposed Gain-Of-Function Research.” May 2016. https://osp.od.nih.gov/wp-
+content/uploads/2016/06/NSABB_Final_Report_Recommendations_Evaluation_Oversight_Proposed_G
+ain_of_Function_Research.pdf.
+7 National Institutes of Health. “Framework for Guiding Funding Decisions about Proposed Research
+Involving Enhanced Potential Pandemic Pathogens.” 2017.
+https://www.phe.gov/s3/dualuse/Documents/P3CO.pdf
+8 Malak M Alame, Elie Massaad, and Hassan Zaraket. 2016. “Peramivir: A Novel Intravenous
+Neuraminidase Inhibitor for Treatment of Acute Influenza Infections.” Frontiers in Microbiology 7: 450.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4815007/.
+
+===== PDF_PAGE 42 =====
+Center for Security and Emerging Technology | 41
+
+9 Smee, Donald F., and Dale L. Barnard. “Methods for Evaluation of Antiviral Efficacy Against Influenza
+Virus Infections in Animal Models.” In Antiviral Methods and Protocols, edited by Edwin Yunhao Gong,
+407–25. Methods in Molecular Biology. Totowa, NJ: Humana Press, 2013.
+https://link.springer.com/protocol/10.1007/978-1-62703-484-5_31#Bib00311.
+10 “Safety Information for Chickenpox (Varicella) Vaccines | Vaccine Safety | CDC,” December 22, 2022.
+https://www.cdc.gov/vaccinesafety/vaccines/varicella-vaccine.html; Takahashi, Michiaki, Terumasa
+Otsuka, Yoshiomi Okuno, Yoshizo Asano, Takehiko Yazaki, and Shin Isomura. “LIVE VACCINE USED TO
+PREVENT THE SPREAD OF VARICELLA IN CHILDREN IN HOSPITAL.” The Lancet 304, no. 7892
+(November 30, 1974): 1288–90. https://www.thelancet.com/journals/lancet/article/PIIS0140-
+6736(74)90144-5/fulltext.
+11 Hyung Jun Woo, and Jaques Reifman. “Quantitative Modeling of Virus Evolutionary Dynamics and
+Adaptation in Serial Passages Using Empirically Inferred Fitness Landscapes.” Journal of Virology 88, no.
+2 (January 2014): 1039–50. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3911671/.
+12 Chen, Inês, and David Dubnau. “DNA Uptake during Bacterial Transformation.” Nature Reviews
+Microbiology 2, no. 3 (March 2004): 241–49. https://www.nature.com/articles/nrmicro844
+13 Hyung Jun Fleischmann, W. Robert. “Viral Genetics.” In Medical Microbiology, edited by Samuel Baron,
+4th ed. Galveston (TX): University of Texas Medical Branch at Galveston, 1996.
+http://www.ncbi.nlm.nih.gov/books/NBK8439/.
+14 Todd Kuiken. “Oversight of Gain of Function Research with Pathogens: Issues for Congress.”
+Congressional Research Service, May 26, 2022. https://crsreports.congress.gov/product/pdf/R/R47114.
+15 Todd Kuiken. “Global Pandemics: Gain-of-Function Research of Concern.” Congressional Research
+Service, November 21, 2022. https://crsreports.congress.gov/product/pdf/IF/IF12021.
+16 Sara Reardon. “US Government Lifts Ban on Risky Pathogen Research.” Nature 553, no. 7686
+(December 19, 2017): 11–11. doi:https://www.nature.com/articles/d41586-017-08837-7.
+17 National Science Advisory Board on Biosecurity. “Proposed Biosecurity Oversight Framework for the
+Future of Science.” January 2023. https://osp.od.nih.gov/wp-content/uploads/2023/01/DRAFT-NSABB-
+WG-Report.pdf.
+18 Felicia Goodrum, Anice C. Lowen, Seema Lakdawala, James Alwine, Arturo Ca sadevall, Michael J.
+Imperiale, Walter Atwood, et al. “Virology under the Microscope—a Call for Rational Discourse.” MBio
+14, no. 1 (January 26, 2023): https://journals.asm.org/doi/10.1128/mbio.00188-23.
+19 Washington Post. “Opinion | Manipulating Viruses and Risking Pandemics Is Too Dangerous. It’s Time
+to Stop.,” October 6, 2021. https://www.washingtonpost.com/opinions/2021/10/07/manipulating-
+viruses-risking-pandemics-is-too-dangerous-its-time-stop/.
+
+===== PDF_PAGE 43 =====
+Center for Security and Emerging Technology | 42
+
+20 Gregory D. Koblentz, and Rocco Casagrande. “Opinion | Biology Is Dangerously Outpacing Policy. ”
+The New York Times, February 20, 2023, sec. Opinion.
+https://www.nytimes.com/2023/02/20/opinion/biology-is-dangerously-outpacing-policy.html.
+21 Kelsey Lane Warmbrod, Michael G Montague, and Gigi Kwik Gronvall. “COVID‐19 and the Gain of
+Function Debates.” EMBO Reports 22, no. 10 (October 5, 2021):
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8490979/.
+22 National Center for Biotechnology Information (NCBI), U.S. National Library of Medicine, publications
+between 2000- mid 2022, accessed 2022. https://www.ncbi.nlm.nih.gov/
+23 National Science Advisory Board for Biosecurity. “Framework for Conducting Risk and Benefit
+Assessments of Gain-Of-Function Research,” May 2015. https://osp.od.nih.gov/wp-
+content/uploads/NSABB_Framework_for_Risk_and_Benefit_Assessments_of_GOF_Research -
+APPROVED.pdf.
+24 Weiye Chen, Dongming Zhao, Xijun He, Renqiang Liu, Zilong Wang, Xianfeng Zhang, Fang Li, et al. “A
+Seven-Gene-Deleted African Swine Fever Virus Is Safe and Effective as a Live Attenuated Vaccine in
+Pigs.” Science China. Life Sciences 63, no. 5 (May 2020): 623–34. https://doi.org/10.1007/s11427-020-
+1657-9.
+25 Markus Allewelt, Fadie T. Coleman, Martha Grout, Gregory P. Priebe, and Ge rald B. Pier. “Acquisition
+of Expression of the Pseudomonas Aeruginosa ExoU Cytotoxin Leads to Increased Bacterial Virulence in
+a Murine Model of Acute Pneumonia and Systemic Spread.” Infection and Immunity 68, no. 7 (July 2000):
+3998–4004. https://journals.asm.org/doi/10.1128/IAI.68.7.3998-4004.2000.
+26 S. Krishnan Natesan, Wenjuan Wu, J. L. Cutright, and P. H. Chandrasekar. “In Vitro -in Vivo Correlation
+of Voriconazole Resistance Due to G448S Mutation (Cyp51A Gene) in Aspergillus Fumigatus.”
+Diagnostic Microbiology and Infectious Disease 74, no. 3 (November 2012): 272 –77.
+https://doi.org/10.1016/j.diagmicrobio.2012.06.030.
+27 “Antimicrobial (Drug) Resistance | NIH: National Institute of Allergy and Infectious Diseases.”
+Accessed April 15, 2023. https://www.niaid.nih.gov/research/antimicrobial-resistance.
+28 S.Hickman, J. Johnson, T. H. Vemulapalli, J. R. Crisler, and R. Shepherd. “Chapter 7 - Commonly Used
+Animal Models.” In Principles of Animal Research for Graduate and Undergraduate Students, edited by
+Mark A. Suckow and Kay L. Stewart, 117–75. Boston: Academic Press, 2017.
+https://www.sciencedirect.com/science/article/pii/B9780128021514000074?via%3Dihub .
+29 François Meurens, Artur Summerfield, Hans Nauwynck, Linda Saif, and Volker Gerdts. “The Pig: A
+Model for Human Infectious Diseases.” Trends in Microbiology 20, no. 1 (January 2012): 50 –57.
+https://pubmed.ncbi.nlm.nih.gov/22153753/; Estes, Jacob D., Scott W. Wong, and Jason M. Brenchley.
+
+===== PDF_PAGE 44 =====
+Center for Security and Emerging Technology | 43
+
+“Nonhuman Primate Models of Human Viral Infections.” Nature Reviews. Immunology 18, no. 6 (June
+2018): 390–404. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5970954/.
+30 Sander Herfst, Eefje J. A. Schrauwen, Martin Linster, Salin Chutinimitkul, Emmie de Wit, Vincent J.
+Munster, Erin M. Sorrell, et al. 2012. “Airborne Transmission of Influenza A/H5N1 Virus between
+Ferrets.” Science (New York, N.Y.) 336 (6088): 1534–41. https://doi.org/10.1126/science.1213362.;
+Masaki Imai, Tokiko Watanabe, Masato Hatta, Subash C. Das, Makoto Ozawa, Kyoko Shinya, Gongxun
+Zhong, et al. 2012. “Experimental Adaptation of an Influenza H5 HA Confers Respiratory Droplet
+Transmission to a Reassortant H5 HA/H1N1 Virus in Ferrets.” Nature 486 (7403): 420–28.
+https://doi.org/10.1038/nature10831.
+31 Hyung Jun Woo, and Jaques Reifman. “Quantitative Modeling of Virus Evolutionary Dynamics and
+Adaptation in Serial Passages Using Empirically Inferred Fitness Landscapes.” Journal of Virology 88, no.
+2 (January 2014): 1039–50. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3911671/
+32 Yen-Chen Chang, Chi-Fei Kao, Chia-Yu Chang, Chian-Ren Jeng, Pei-Shiue Tsai, Victor Fei Pang, Hue-
+Ying Chiou, Ju-Yi Peng, Ivan-Chen Cheng, and Hui-Wen Chang. “Evaluation and Comparison of the
+Pathogenicity and Host Immune Responses Induced by a G2b Taiwan Porcine Epidemic Diarrhea Virus
+(Strain Pintung 52) and Its Highly Cell-Culture Passaged Strain in Conventional 5-Week-Old Pigs.”
+Viruses 9, no. 5 (May 19, 2017): 121. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5454433/.
+33 Darrell R. Thomsen, Nancee L. Oien, Todd A. Hopkins, Mary L. Knechtel, Roger J. Brideau, Michael W.
+Wathen, and Fred L. Homa. “Amino Acid Changes within Conserved Region III of the Herpes Simplex
+Virus and Human Cytomegalovirus DNA Polymerases Confer Resistance to 4 -Oxo-Dihydroquinolines, a
+Novel Class of Herpesvirus Antiviral Agents.” Journal of Virology 77, no. 3 (February 2003): 1868 –76.
+https://pubmed.ncbi.nlm.nih.gov/12525621/.
+34 Sergio M. Villordo, Claudia V. Filomatori, Irma Sánchez-Vargas, Carol D. Blair, and Andrea V.
+Gamarnik. “Dengue Virus RNA Structure Specialization Facilitates Host Adaptation.” PLoS Pathogens
+11, no. 1 (January 30, 2015): e1004604. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4311971/.
+35 Centers for Disease Control and Prevention and the U.S. Department of Agriculture. “Select Agents
+and Toxins | Federal Select Agent Program,” September 10, 2020.
+https://www.selectagents.gov/sat/index.htm.
+36 The United States Government, United States Government Policy for Institutional Oversight of Life
+Sciences Dual Use Research of Concern, September 25, 2015,
+https://www.phe.gov/s3/dualuse/Documents/durc-policy.pdf.
+37 National Institutes of Health. “Framework for Guiding Funding Decisions about Proposed Research
+Involving Enhanced Potential Pandemic Pathogens.” 2017.
+https://www.phe.gov/s3/dualuse/Documents/P3CO.pdf.
+
+===== PDF_PAGE 45 =====
+Center for Security and Emerging Technology | 44
+
+38 National Science Advisory Board on Biosecurity. “Recommendations for the Evaluation and Over sight
+of Proposed Gain-Of-Function Research.” May 2016. https://osp.od.nih.gov/wp-
+content/uploads/2016/06/NSABB_Final_Report_Recommendations_Evaluation_Oversight_Proposed_G
+ain_of_Function_Research.pdf.
+39 National Institutes of Health.“NIH Guidelines For Research Involving Recombinant Or Synthetic
+Nucleic Acid Molecules (NIH Guidelines)”. 2019. https://osp.od.nih.gov/wp-
+content/uploads/NIH_Guidelines.pdf.
+40 Centers for Disease Control and Prevention. “Biosafety in Microbiological and Biomedical Laboratories
+6th Edition.” 2020. https://www.cdc.gov/labs/pdf/CDC-BiosafetyMicrobiologicalBiomedicalLaboratories-
+2020-P.pdf.
+41 National Science Advisory Board on Biosecurity. 2023. “Proposed Biosecurity Oversight Frame work
+for the Future of Science.” January 2023. https://osp.od.nih.gov/wp-content/uploads/2023/01/DRAFT-
+NSABB-WG-Report.pdf.
+42 Masaki Imai, Tokiko Watanabe, Masato Hatta, Subash C. Das, Makoto Ozawa, Kyoko Shinya, Gongxun
+Zhong, et al. “Experimental Adaptation of an Influenza H5 HA Confers Respiratory Droplet Transmission
+to a Reassortant H5 HA/H1N1 Virus in Ferrets.” Nature 486, no. 7403 (May 2, 2012): 420–28.
+https://pubmed.ncbi.nlm.nih.gov/22722205/.; Sander Herfst, Eefje J. A. Schrauwen, Martin Linster, Salin
+Chutinimitkul, Emmie de Wit, Vincent J. Munster, Erin M. Sorrell, et al. “Airborne Transmission of
+Influenza A/H5N1 Virus Between Ferrets.” Science 336, no. 6088 (June 22, 2012): 1534 –41.
+https://www.science.org/doi/abs/10.1126/science.1213362.
+43 National Science Advisory Board for Biosecurity, “Framework for Conducting Risk and Benefit
+Assessments of Gain-of-Function Research: Recommendations of the National Science Advisory Board
+for Biosecurity.”
+44 Corey Meyer. “Risk & Benefit Analysis of Gain of Function Research.” Prepared by Gryphon Scientific,
+January 4, 2016. http://gryphonsci.wpengine.com/wp-content/uploads/2018/12/BA-Supplemental-
+Landscape-of-GoF-and-Alt-GoF-Research.pdf. (See Supplemental Material: Landscape of GoF and Alt-
+GoF Research)
+45 National Science Advisory Board for Biosecurity, “Recommendations for the Evaluation and Oversight
+of Proposed Gain-Of-Function Research.”
+46 Alexander Ratner, Stephen H. Bach, Henry Ehrenberg, Jason Fries, Sen Wu, and Christopher Ré.
+“Snorkel: Rapid Training Data Creation with Weak Supervision.” Proceedings of the VLDB Endowment
+11, no. 3 (November 2017): 269–82. https://dl.acm.org/doi/10.14778/3157794.3157797.
