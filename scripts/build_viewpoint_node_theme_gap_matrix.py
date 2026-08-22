@@ -108,6 +108,7 @@ TIER_B = {
     "us-ostp",
     "fas",
     "csis-rai",
+    "jp-rieti",
 }
 
 TIER_LABEL = {
@@ -235,6 +236,7 @@ def fulltext_queue_suppressed(row: dict[str, str]) -> bool:
         or "STOA跨期精选已完成；其余成果保留轻量目录" in status
         or "JRC跨期精选已完成；其余成果保留轻量目录" in status
         or "EFI跨期精选已完成；其余成果保留轻量目录" in status
+        or "RIETI跨期精选已完成；其余成果保留轻量目录" in status
     )
 
 
