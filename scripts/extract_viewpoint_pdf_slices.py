@@ -42,6 +42,7 @@ KEYWORDS = {
 
 def clean(text: str) -> str:
     text = text.replace("\x00", " ")
+    text = re.sub(r"[\ud800-\udfff]", "\ufffd", text)
     text = text.replace("\r\n", "\n").replace("\r", "\n")
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r" +\n", "\n", text)
