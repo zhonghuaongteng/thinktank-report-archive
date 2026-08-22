@@ -99,6 +99,7 @@ def main() -> None:
         "98_第四批定点全文候选证据增量复核台账.csv", "99_第四批定点全文候选证据增量复核结果.md",
         "100_第五批定点全文候选证据增量复核台账.csv", "101_第五批定点全文候选证据增量复核结果.md",
         "102_第六批定点全文候选证据增量复核台账.csv", "103_第六批定点全文候选证据增量复核结果.md",
+        "104_第七批中国科技创新全文候选复核台账.csv", "105_第七批中国科技创新全文候选复核结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -118,8 +119,8 @@ def main() -> None:
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in assets) >= 46
     assert all(len(r["SHA256"]) == 64 for r in assets if r["本地PDF"])
     catalog_assets = rows(root / "21_非锚点全文补存台账.csv")
-    assert len(catalog_assets) == 167, len(catalog_assets)
-    assert sum(r["资产类型"] == "PDF" for r in catalog_assets) == 164
+    assert len(catalog_assets) == 185, len(catalog_assets)
+    assert sum(r["资产类型"] == "PDF" for r in catalog_assets) == 182
     assert sum(r["资产类型"] == "官方网页" for r in catalog_assets) == 3
     assert all(r["本地资产"] and Path(r["本地资产"]).exists() for r in catalog_assets)
     assert not any(r["本地状态"] == "获取失败" for r in catalog_assets)
@@ -473,6 +474,10 @@ def main() -> None:
     assert len(sixth_review) == 15
     assert sum(r["复核结论"] == "第六批精选全文" for r in sixth_review) == 3
     assert sum(r["全文状态"] == "本地资产已保存" for r in sixth_review) == 3
+    seventh_review = rows(root / "104_第七批中国科技创新全文候选复核台账.csv")
+    assert len(seventh_review) == 32
+    assert sum(r["复核结论"] == "第七批精选全文" for r in seventh_review) == 18
+    assert sum(r["全文状态"] == "本地资产已保存" for r in seventh_review) == 18
     selected_light_asset_ids = {
         r["报告ID"] for ledger, decision in (
             (review, "本轮精选全文"),
@@ -481,6 +486,7 @@ def main() -> None:
             (fourth_review, "第四批精选全文"),
             (fifth_review, "第五批精选全文"),
             (sixth_review, "第六批精选全文"),
+            (seventh_review, "第七批精选全文"),
         )
         for r in ledger if r["复核结论"] == decision
     }
@@ -637,6 +643,8 @@ def main() -> None:
         ("101_第五批定点全文候选证据增量复核结果.md", "国际科技智库观点演变_第五批定点全文候选证据增量复核结果.md"),
         ("102_第六批定点全文候选证据增量复核台账.csv", "国际科技智库观点演变_第六批定点全文候选证据增量复核台账.csv"),
         ("103_第六批定点全文候选证据增量复核结果.md", "国际科技智库观点演变_第六批定点全文候选证据增量复核结果.md"),
+        ("104_第七批中国科技创新全文候选复核台账.csv", "国际科技智库观点演变_第七批中国科技创新全文候选复核台账.csv"),
+        ("105_第七批中国科技创新全文候选复核结果.md", "国际科技智库观点演变_第七批中国科技创新全文候选复核结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
