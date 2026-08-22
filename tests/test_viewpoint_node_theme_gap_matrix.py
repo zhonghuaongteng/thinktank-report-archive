@@ -149,6 +149,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertEqual(tier_for("nsf-nsb-sei"), "A")
         self.assertEqual(tier_for("eu-srip"), "A")
         self.assertEqual(tier_for("eu-eis"), "A")
+        self.assertEqual(tier_for("unesco-science"), "A")
         self.assertEqual(tier_for("ifp"), "B")
         self.assertEqual(tier_for("stanford-hai"), "B")
         self.assertEqual(tier_for("rand"), "C")
