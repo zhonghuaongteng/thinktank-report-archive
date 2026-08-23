@@ -402,6 +402,7 @@ def main() -> None:
         "226_基础研究资助科研评价与创新联系定点增补台账.csv", "227_基础研究资助科研评价与创新联系定点增补结果.md",
         "228_技术前瞻公共研发优先级与中国比较定点增补台账.csv", "229_技术前瞻公共研发优先级与中国比较定点增补结果.md",
         "230_开放科学科研基础设施与技术平台定点增补台账.csv", "231_开放科学科研基础设施与技术平台定点增补结果.md",
+        "232_使命导向创新重大研发计划与组织机制定点增补台账.csv", "233_使命导向创新重大研发计划与组织机制定点增补结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -880,7 +881,7 @@ def main() -> None:
     assert sum(r["科技创新相关度"] == "核心" for r in ifp_light) == 106
     assert sum(r["科技创新相关度"] == "支撑" for r in ifp_light) == 39
     assert sum(r["科技创新相关度"] == "语境" for r in ifp_light) == 10
-    assert sum(r["中国关联"] == "是" for r in ifp_light) == 55
+    assert sum(r["中国关联"].startswith("是") for r in ifp_light) == 55
     assert all(r["官方落地页"].startswith("https://ifp.org/") for r in ifp_light)
     ifp_selected = rows(root / "168_IFP科技创新机制与中国比较精选全文台账.csv")
     assert {r["报告ID"] for r in ifp_selected} == expected_ifp_selected_ids()
@@ -1072,6 +1073,26 @@ def main() -> None:
         Path(r["本地原始资产"]).exists() and Path(r["本地文本"]).exists()
         and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
         for r in open_science_infrastructure
+    )
+    mission_oriented_rd = rows(root / "232_使命导向创新重大研发计划与组织机制定点增补台账.csv")
+    assert len(mission_oriented_rd) == 6
+    assert {r["机构ID"] for r in mission_oriented_rd} == {"itif", "fas", "fraunhofer-isi", "ifp", "oecd-sti", "eu-jrc"}
+    assert sum(r["资产类型"] == "官方PDF" for r in mission_oriented_rd) == 3
+    assert sum(r["资产类型"] == "官方Markdown网页正文" for r in mission_oriented_rd) == 1
+    assert sum(r["资产类型"] == "官方WordPress网页正文" for r in mission_oriented_rd) == 2
+    assert sum(int(r["页数或网页数"]) for r in mission_oriented_rd) == 94
+    assert sum(int(r["字节数"]) for r in mission_oriented_rd) == 3744281
+    assert sum(int(r["清洗文本字符数"]) for r in mission_oriented_rd) == 319662
+    assert sum(int(r["China词形命中数"]) for r in mission_oriented_rd) == 8
+    assert sum(int(r["China词形命中数"]) > 0 for r in mission_oriented_rd) == 1
+    assert not any(
+        re.search(r"military|export control|supply chain|national security", r["报告名称"], re.I)
+        for r in mission_oriented_rd
+    )
+    assert all(
+        Path(r["本地原始资产"]).exists() and Path(r["本地文本"]).exists()
+        and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
+        for r in mission_oriented_rd
     )
     fas_light = rows(root / "174_FAS报告与政策备忘录近十年轻量总目录.csv")
     assert len(fas_light) == 625
@@ -1268,18 +1289,26 @@ def main() -> None:
     assert sum(int(r["网页归档字节数"]) for r in nasem_selected) == 7243099
     assert sum(int(r["清洗文本字符数"]) for r in nasem_selected) == 6132897
     progress_text = (root / "210_本地资料库实时进度看板.md").read_text(encoding="utf-8")
-    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2131条", "仅目录与官方入口：8268条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：747条"):
+    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2136条", "仅目录与官方入口：8263条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：748条"):
         assert marker in progress_text
     institution_progress = rows(root / "211_机构采集进度.csv")
     assert len(institution_progress) == 46
     nasem_progress = next(r for r in institution_progress if r["institution"] == "National Academies of Sciences, Engineering, and Medicine")
     assert (nasem_progress["catalog"], nasem_progress["local_assets"], nasem_progress["light_only"]) == ("253", "25", "228")
     jrc_progress = next(r for r in institution_progress if r["institution"] == "European Commission Joint Research Centre (JRC)")
-    assert (jrc_progress["catalog"], jrc_progress["local_assets"], jrc_progress["light_only"]) == ("3743", "57", "3686")
+    assert (jrc_progress["catalog"], jrc_progress["local_assets"], jrc_progress["light_only"]) == ("3743", "58", "3685")
     stoa_progress = next(r for r in institution_progress if r["institution"] == "European Parliament Panel for the Future of Science and Technology (STOA)")
     assert (stoa_progress["catalog"], stoa_progress["local_assets"], stoa_progress["light_only"]) == ("243", "22", "221")
     fas_progress = next(r for r in institution_progress if r["institution"] == "Federation of American Scientists")
-    assert (fas_progress["catalog"], fas_progress["local_assets"], fas_progress["light_only"]) == ("625", "27", "598")
+    assert (fas_progress["catalog"], fas_progress["local_assets"], fas_progress["light_only"]) == ("625", "28", "597")
+    itif_progress = next(r for r in institution_progress if r["institution"] == "Information Technology and Innovation Foundation")
+    assert (itif_progress["catalog"], itif_progress["local_assets"], itif_progress["light_only"]) == ("670", "58", "612")
+    oecd_progress = next(r for r in institution_progress if r["institution"] == "OECD")
+    assert (oecd_progress["catalog"], oecd_progress["local_assets"], oecd_progress["light_only"]) == ("453", "51", "402")
+    ifp_progress = next(r for r in institution_progress if r["institution"] == "Institute for Progress")
+    assert (ifp_progress["catalog"], ifp_progress["local_assets"], ifp_progress["light_only"]) == ("155", "17", "138")
+    fraunhofer_progress = next(r for r in institution_progress if r["institution"] == "Fraunhofer Institute for Systems and Innovation Research ISI")
+    assert (fraunhofer_progress["catalog"], fraunhofer_progress["local_assets"], fraunhofer_progress["light_only"]) == ("50", "34", "16")
     rathenau_progress = next(r for r in institution_progress if r["institution"] == "Rathenau Instituut")
     assert (rathenau_progress["catalog"], rathenau_progress["local_assets"], rathenau_progress["light_only"]) == ("75", "14", "61")
     rieti_progress = next(r for r in institution_progress if r["institution"] == "Research Institute of Economy, Trade and Industry (RIETI)")
@@ -1454,7 +1483,8 @@ def main() -> None:
         "C-FRAUNHOFER-ISI-DP-83",
     }
     assert {r["统一目录报告ID"] for r in fraunhofer_light if r["全文策略"] == "已按科技创新机制跨期增量定点下载"} == fraunhofer_selected
-    assert all(r["全文策略"].startswith("不自动下载") for r in fraunhofer_light if r["统一目录报告ID"] not in fraunhofer_selected)
+    assert sum(r["全文策略"].startswith("已进入使命导向创新") for r in fraunhofer_light) == 1
+    assert all(r["全文策略"].startswith("不自动下载") for r in fraunhofer_light if r["统一目录报告ID"] not in fraunhofer_selected | {"S-FISI-2022-01"})
     assert {r["报告ID"] for r in fraunhofer_selected_fulltexts} == fraunhofer_selected
     assert sum(int(r["页数"]) for r in fraunhofer_selected_fulltexts) == 130
     assert sum(int(r["字节数"]) for r in fraunhofer_selected_fulltexts) == 2482710
@@ -1462,7 +1492,8 @@ def main() -> None:
     assert sum(r["全文策略"] == "已按真实科技创新机制缺口定点下载" for r in oecd_light) == 2
     assert sum(r["全文策略"].startswith("已进入跨机构中国科技创新机制定点全文") for r in oecd_light) == 1
     assert sum(r["全文策略"].startswith("已进入AI for Science与公共科研基础设施定点全文") for r in oecd_light) == 2
-    assert sum(r["全文策略"].startswith("不自动下载") for r in oecd_light) == 440
+    assert sum(r["全文策略"].startswith("已进入使命导向创新") for r in oecd_light) == 1
+    assert sum(r["全文策略"].startswith("不自动下载") for r in oecd_light) == 439
     assert sum(r["全文策略"].startswith("已按连续序列缺口定点下载") for r in stanford_hai_light) == 3
     assert sum(r["全文策略"].startswith("不自动下载") for r in stanford_hai_light) == 14
     assert len(nesta_light) == 118
@@ -1473,9 +1504,11 @@ def main() -> None:
     assert sum(r["全文策略"].startswith("已进入开放科学") for r in rathenau_light) == 1
     assert len(ifp_light) == 155
     assert sum(r["全文策略"].startswith("已进入精选全文") for r in ifp_light) == 16
-    assert sum(r["全文策略"].startswith("总目录保留") for r in ifp_light) == 139
+    assert sum(r["全文策略"].startswith("已进入使命导向创新") for r in ifp_light) == 1
+    assert sum(r["全文策略"].startswith("总目录保留") for r in ifp_light) == 138
     assert sum(r["全文策略"].startswith("已进入精选全文") for r in itif_light) == 34
-    assert sum(r["全文策略"].startswith("总目录保留") for r in itif_light) == 635
+    assert sum(r["全文策略"].startswith("已进入使命导向创新") for r in itif_light) == 1
+    assert sum(r["全文策略"].startswith("总目录保留") for r in itif_light) == 634
     assert sum(r["全文策略"].startswith(("已进入精选全文", "已进入中国科技创新测量")) for r in csis_rai_light) == 28
     assert sum(r["全文策略"].startswith("总目录保留") for r in csis_rai_light) == 148
     assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1290
@@ -1601,6 +1634,7 @@ def main() -> None:
             (research_funding_evaluation, ("本地原始资产",)),
             (technology_foresight_priorities, ("本地原始资产",)),
             (open_science_infrastructure, ("本地原始资产",)),
+            (mission_oriented_rd, ("本地原始资产",)),
             (acatech_selected, ("本地原始PDF",)),
             (fraunhofer_selected_fulltexts, ("本地原始PDF",)),
             (stepi_assets, ("本地原始资产",)),
@@ -1853,6 +1887,8 @@ def main() -> None:
         ("229_技术前瞻公共研发优先级与中国比较定点增补结果.md", "国际科技智库观点演变_技术前瞻公共研发优先级与中国比较定点增补结果.md"),
         ("230_开放科学科研基础设施与技术平台定点增补台账.csv", "国际科技智库观点演变_开放科学科研基础设施与技术平台定点增补台账.csv"),
         ("231_开放科学科研基础设施与技术平台定点增补结果.md", "国际科技智库观点演变_开放科学科研基础设施与技术平台定点增补结果.md"),
+        ("232_使命导向创新重大研发计划与组织机制定点增补台账.csv", "国际科技智库观点演变_使命导向创新重大研发计划与组织机制定点增补台账.csv"),
+        ("233_使命导向创新重大研发计划与组织机制定点增补结果.md", "国际科技智库观点演变_使命导向创新重大研发计划与组织机制定点增补结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name), source_name
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
