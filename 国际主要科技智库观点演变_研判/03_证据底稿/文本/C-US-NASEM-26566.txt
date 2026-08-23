@@ -1,0 +1,1860 @@
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**Machine Learning
+
+ and Artificial Intelligence
+
+ to Advance Earth
+
+ System Science**
+
+Opportunities and Challenges
+
+_____
+
+Rachel Silvern, _Rapporteur_
+
+Board on Atmospheric Sciences and Climate
+
+Board on Earth Sciences and Resources
+
+Ocean Studies Board
+
+Division on Earth and Life Studies
+
+Board on Mathematical Sciences and Analytics
+
+Computer Science and Telecommunications Board
+
+Division on Engineering and Physical Sciences
+
+Proceedings of a Workshop
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**THE NATIONAL ACADEMIES PRESS 500 Fifth Street, NW Washington, DC 20001**
+
+This activity was supported by contracts between the National Academy of Sciences and the National Aeronautics and Space Administration, the National Oceanic and Atmospheric Administration, and the National Science Foundation. Any opinions, findings, conclusions, or recommendations expressed in this publication do not necessarily reflect the views of any organization or agency that provided support for the project.
+
+International Standard Book Number-13: 978-0-309-68853-6
+
+ International Standard Book Number-10: 0-309-68853-1
+
+ Digital Object Identifier: https://doi.org/10.17226/26566
+
+Additional copies of this publication are available from the National Academies Press, 500 Fifth Street, NW, Keck 360, Washington, DC 20001; (800) 624-6242 or (202) 334-3313; http://www.nap.edu.
+
+Copyright 2022 by the National Academy of Sciences. All rights reserved.
+
+Printed in the United States of America
+
+Suggested citation: National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges_. Washington, DC: The National Academies Press. https://doi.org/10.17226/26566.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+The **National Academy of Sciences** was established in 1863 by an Act of Congress, signed by President Lincoln, as a private, nongovernmental institution to advise the nation on issues related to science and technology. Members are elected by their peers for outstanding contributions to research. Dr. Marcia McNutt is president.
+
+The **National Academy of Engineering** was established in 1964 under the charter of the National Academy of Sciences to bring the practices of engineering to advising the nation. Members are elected by their peers for extraordinary contributions to engineering. Dr. John L. Anderson is president.
+
+The **National Academy of Medicine** (formerly the Institute of Medicine) was established in 1970 under the charter of the National Academy of Sciences to advise the nation on medical and health issues. Members are elected by their peers for distinguished contributions to medicine and health. Dr. Victor J. Dzau is president.
+
+The three Academies work together as the **National Academies of Sciences, Engineering, and Medicine** to provide independent, objective analysis and advice to the nation and conduct other activities to solve complex problems and inform public policy decisions. The National Academies also encourage education and research, recognize outstanding contributions to knowledge, and increase public understanding in matters of science, engineering, and medicine.
+
+Learn more about the National Academies of Sciences, Engineering, and Medicine at **www.nationalacademies.org**.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**Consensus Study Reports** published by the National Academies of Sciences, Engineering, and Medicine document the evidence-based consensus on the study’s statement of task by an authoring committee of experts. Reports typically include findings, conclusions, and recommendations based on information gathered by the committee and the committee’s deliberations. Each report has been subjected to a rigorous and independent peer-review process and it represents the position of the National Academies on the statement of task.
+
+**Proceedings** published by the National Academies of Sciences, Engineering, and Medicine chronicle the presentations and discussions at a workshop, symposium, or other event convened by the National Academies. The statements and opinions contained in proceedings are those of the participants and are not endorsed by other participants, the planning committee, or the National Academies.
+
+**Rapid Expert Consultations** published by the National Academies of Sciences, Engineering, and Medicine are authored by subject-matter experts on narrowly focused topics that can be supported by a body of evidence. The discussions contained in rapid expert consultations are considered those of the authors and do not contain policy recommendations. Rapid expert consultations are reviewed by the institution before release.
+
+For information about other products and activities of the National Academies, please visit www.nationalacademies.org/about/whatwedo.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## PLANNING COMMITTEE ON MACHINE LEARNING AND ARTIFICIAL INTELLIGENCE TO ADVANCE EARTH SYSTEM SCIENCE: OPPORTUNITIES AND CHALLENGES—A WORKSHOP
+
+**L. RUBY LEUNG (NAE)**1_(Chair)_, Pacific Northwest National Laboratory
+
+**ANN BOSTROM**, University of Washington
+
+**PATRICK HEIMBACH**, University of Texas at Austin
+
+**AMY MCGOVERN**, University of Oklahoma
+
+**DIEGO MELGAR**, University of Oregon
+
+**AARTI SINGH**, Carnegie Mellon University
+
+**LAURE ZANNA**, New York University
+
+#### _National Academies of Sciences, Engineering, and Medicine Staff_
+
+**RACHEL SILVERN**, Program Officer
+
+**KYLE ALDRIDGE**, Program Assistant
+
+**RITA GASKINS**, Administrative Coordinator
+
+**ROB GREENWAY**, Program Associate
+
+**LINNEA SABY**, Christine Mirzayan Science & Technology Fellow (_until November 2021_)
+
+___________________
+
+1 NAE, National Academy of Engineering
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## BOARD ON ATMOSPHERIC SCIENCES AND CLIMATE
+
+**MARY GLACKIN** (_Chair_), The Weather Company, an IBM Business (retired)
+
+**CYNTHIA S. ATHERTON**, Heising-Simons Foundation
+
+**CECILIA BITZ**, University of Washington
+
+**JOHN C. CHIANG**, University of California, Berkeley
+
+**BRADLEY R. COLMAN**, The Climate Corporation
+
+**BART E. CROES**, California Air Resources Board (retired)
+
+**ROBERT B. DUNBAR**, Stanford University
+
+**EFI FOUFOULA-GEORGIOU (NAE)**2, University of California, Irvine
+
+**PETER C. FRUMHOFF**, Union of Concerned Scientists
+
+**VANDA GRUBIŠIĆ**, National Center for Atmospheric Research
+
+**ROBERT KOPP**, Rutgers, The State University of New Jersey
+
+**L. RUBY LEUNG (NAE)**, Pacific Northwest National Laboratory
+
+**JONATHAN MARTIN**, University of Wisconsin—Madison
+
+**AMY MCGOVERN**, University of Oklahoma
+
+**JONATHAN PATZ**, University of Wisconsin—Madison
+
+**J. MARSHALL SHEPHERD (NAS/NAE)**, University of Georgia
+
+**ALLISON STEINER**, University of Michigan
+
+**DAVID W. TITLEY**, U.S. Navy (ret.), Pennsylvania State University
+
+**ARADHNA TRIPATI**, University of California, Los Angeles
+
+**DUANE E. WALISER**, Jet Propulsion Laboratory
+
+**ELKE WEBER**, Princeton University
+
+#### _National Academies of Sciences, Engineering, and Medicine Staff_
+
+**AMANDA STAUDT**, Senior Board Director
+
+**APURVA DAVE**, Senior Program Officer
+
+**LAURIE GELLER**, Senior Program Officer
+
+**APRIL MELVIN**, Senior Program Officer
+
+**AMANDA PURCELL**, Senior Program Officer
+
+**STEVEN STICHTER**, Senior Program Officer
+
+**ALEX REICH**, Program Officer
+
+**RACHEL SILVERN**, Program Officer
+
+**PATRICIA RAZAFINDRAMBININA**, Associate Program Officer
+
+**RITA GASKINS**, Administrative Coordinator
+
+**BRIDGET MCGOVERN**, Research Associate
+
+**AMY MITSUMORI**, Research Associate
+
+**ROB GREENWAY**, Program Associate
+
+**KYLE ALDRIDGE**, Program Assistant
+
+**LINDSAY MOLLER**, Program Assistant
+
+**SABAH RANA**, Program Assistant
+
+___________________
+
+2 NAE, National Academy of Engineering; NAS, National Academy of Sciences.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## Acknowledgments
+
+This Proceedings of a Workshop was reviewed in draft form by individuals chosen for their diverse perspectives and technical expertise. The purpose of this independent review is to provide candid and critical comments that will assist the National Academies of Sciences, Engineering, and Medicine in making each published proceedings as sound as possible and to ensure that it meets the institutional standards for quality, objectivity, evidence, and responsiveness to the charge. The review comments and draft manuscript remain confidential to protect the integrity of the process.
+
+We thank the following individuals for their review of this proceedings:
+
+Erin K. Chiou, Arizona State University
+
+Tyler Kloefkorn, American Mathematical Society
+
+L. Ruby Leung (NAE), Pacific Northwest National Laboratory
+
+Amy McGovern, University of Oklahoma
+
+Although the reviewers listed above provided many constructive comments and suggestions, they were not asked to endorse the content of the proceedings nor did they see the final draft before its release. The review of this proceedings was overseen by William B. Gail, Google. He was responsible for making certain that an independent examination of this proceedings was carried out in accordance with standards of the National Academies and that all review comments were carefully considered. Responsibility for the final content rests entirely with the rapporteur and the National Academies.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+This page intentionally left blank.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## Contents
+
+**Overview**
+
+**Introduction**
+
+Overview of State-of-the-Art Use of ML/AI for Earth System Science
+
+**Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science**
+
+Emerging Approaches for Using and Interpreting ML/AI
+
+Emerging Opportunities from Social and Human Engineered Systems
+
+**Challenges and Risks of Using ML/AI for Earth System Science**
+
+Responsible and Ethical Use and Diversity, Equity, Inclusion, and Justice Issues for ML/AI in Earth System Science
+
+Workforce Development Capacity and Skill Sets
+
+Challenges and Opportunities for Earth Science Technology and Data
+
+**Identifying Future Opportunities to Accelerate Progress**
+
+Using ML/AI for Data-Driven Decision Making
+
+Novel Funding Mechanisms, Partnerships, and Knowledge Transfer among Academia, Industry, Nonprofits, and Government
+
+**Closing Thoughts**
+
+Emerging ML/AI Approaches and Opportunities for Multidisciplinary Collaboration
+
+Facilitating Open Science
+
+Responsible and Ethical Use of ML/AI Approaches
+
+Educating the Workforce at the Intersection of ML/AI and Earth System Science
+
+Using ML/AI for Data-Driven Decision Making
+
+Funding Opportunities to Accelerate Progress
+
+**References**
+
+**Appendix A: Statement of Task**
+
+**Appendix B: Planning Committee Biographies**
+
+**Appendix C: Workshop Agenda**
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+This page intentionally left blank.
+
+Next Chapter: Overview
+
+[](https://www.nationalacademies.org/)
+*
+### Dropdown items
+
+### My Academies
+
+    *   Login
+    *   Personal Library
+    *   Account settings
+    *   Logout
+
+# Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop(2022)
+
+## Chapter: Overview
+
+*   Get this book
+
+ Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+<< Previous Chapter: Front Matter
+
+ Page 1 ShareCiteBookmark
+
+**Suggested Citation:** "Overview." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Save
+
+Cancel
+
+# Overview
+
+The Earth system—the atmosphere, ocean, cryosphere, biosphere, and geosphere that cycle energy, water, nutrients, and other trace substances—is a large, complex, not linear, multiscale system in space and time that involves human and natural system interactions. Understanding and predicting such a system presents an enormous computing and analysis challenge. Machine learning (ML) and artificial intelligence (AI) offer opportunities to tackle these challenges. Researchers are actively exploring ways to use ML/AI approaches to advance scientific discovery, make computation faster and cheaper, provide new system understanding, and link disparate scientific communities.
+
+The National Academies of Sciences, Engineering, and Medicine convened a workshop on February 7, 10, and 11, 2022, on the opportunities and challenges of using ML/AI to advance Earth system science, including their ethical development and use. The workshop convened experts in all components of the Earth system, ML/AI researchers, social and behavioral scientists, ethicists, and decision makers across sectors to explore how these approaches can contribute to improving understanding, analysis, modeling, prediction, and decision making.
+
+Workshop discussions highlighted the benefits of bringing together Earth system science and ML/AI experts. These two communities have different philosophies, vocabularies, and practices, which could be bridged through more robust interactions. In addition, off-the-shelf ML/AI approaches are often not sufficient for Earth system science applications, and domain scientists could benefit from engaging in the design of ML/AI tools and contributing their scientific knowledge. Opportunities exist to create better educational pathways for students and researchers who understand Earth system science to innovate in ML/AI.
+
+Participants explained the high stakes for doing ethical and responsible ML/AI for Earth system science. Ethical choices are being made in the deployment of ML/AI, and these choices could be better explained, recognized, and improved. Particular challenges for applications to Earth system science include biases in training data and AI models. Opportunities also exist to develop sustainable AI—elevating smaller models and accounting for carbon efficiency—and to deploy responsible AI for climate action by ensuring that AI-for-climate applications are pursued fairly, accountably, transparently, and equitably. Participants also discussed how the interpretability of ML/AI tools could be a design goal from the outset of their development, and explainable and interpretable AI could be used for knowledge discovery, to build trust, and to uncover problematic algorithms.
+
+Current Earth system science workflows present barriers to collaboration and inclusion, limit knowledge transfer, and may not scale to future data needs. While many current applications of ML/AI can exacerbate challenges in the existing paradigm, participants identified opportunities to build new infrastructure based on open science and open data principles. In order to achieve a system of truly open knowledge, participants suggested efforts to encourage contributions to community code, build capacity to enable equitable access to science, and foster an inclusive open source community. Infrastructure to support open science for ML/AI and Earth system science could support multisector collaborations, spur innovation, and benefit the entire community that is interested in using these tools and data.
+
+Educational opportunities for those entering the workforce and those already working who want to continue their education at the intersection of ML/AI and Earth system science were raised throughout the workshop. Employers in the private sector are looking for workers
+
+ Page 2 ShareCiteBookmark
+
+**Suggested Citation:** "Overview." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Save
+
+Cancel
+
+with production level skills who can optimize, automate, and process large amounts of data. Participants highlighted the value of early data literacy, interdisciplinary skills, and the development of learning communities. Speakers recognized the importance of diversifying the Earth system science and ML/AI communities and identified room for improvement in ensuring that these spaces are inclusive. Continued investment in broadening the workforce could include deeper partnerships between academia and the private sector, paid internships, and the expansion of existing programs like the National Science Foundation’s Research Experiences for Undergraduates.
+
+In order for scientific advances at the intersection of ML/AI and Earth system science to be useful for decision making, participants discussed opportunities for further research on how end users understand information provided by an ML/AI algorithm and how best to communicate uncertainty. Earth system science has large and rapidly growing datasets that have enabled the effective use of ML/AI, and an opportunity exists to progress from success with simple problems to the use of ML/AI tools to model and predict complex scenarios. ML/AI tools are promising for producing probabilistic forecasts and integrating physical models and data; however, there are barriers to entry to learn and modify ML/AI methods, and further research may be needed to appropriately incorporate the robustness of ML/AI tools into decision making.
+
+ Page 1 ShareCiteBookmark
+
+**Suggested Citation:** "Overview." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Save
+
+Cancel
+
+ Page 2 ShareCiteBookmark
+
+**Suggested Citation:** "Overview." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Save
+
+Cancel
+
+Next Chapter: Introduction >>
+
+Subscribe to Emails from the National Academies
+
+ Stay up to date on activities, publications, and events by subscribing to email updates.
+
+Subscribe
+
+[](https://www.nationalacademies.org/)
+
+Driving progress for the benefit of society by providing independent, objective advice to advance science, engineering, and medicine.
+
+### The National Academies
+
+*   National Academy of Sciences
+*   National Academy of Engineering
+*   National Academy of Medicine
+*   Careers
+*   National Academies Press (NAP)
+*   Transportation Research Board Reports
+*   MyAcademies Accounts
+*   Contact Us
+
+### Journals and Periodicals
+
+*   PNAS
+*   PNAS Nexus
+*   ILAR Journal
+*   Issues in Science and Technology
+*   Transportation Research Record: Journal of the Transportation Research Board
+*   TR News
+
+### Visit
+
+*   Visit Us Information
+*   Current Operating Status
+*   Beckman Center
+*   Archives
+
+### Legal
+
+*   Policies and Procedures
+*   Legal Information
+*   Privacy Statement
+*   Terms of Use
+
+© 2026 National Academy of Sciences. All Rights Reserved.
+
+[](https://www.facebook.com/NationalAcademies/)[](https://www.linkedin.com/company/the-national-academies/posts/?feedView=all)[](https://x.com/TheNASEM)
+
+[](https://www.nationalacademies.org/)
+
+# Mobile Navigation
+
+## Primary Mobile Navigation
+
+*   ### Discover
+
+Trending Topics TransportationArtificial IntelligenceSpace, Security, and Conflicts See All Topics Our Work Consensus StudiesOutreach ActivitiesStanding Committees See All Work  Our Publications Our peer-reviewed reports present the evidence-based consensus of committees of experts.Explore the Latest News and Stories The latest news and stories, with context you can trust.
+*   ### Events
+
+Convening Activities Roundtables and ForumsWorkshopsSeminar/Webinar/Lecture Series  Events Upcoming eventsReplay See all events  Right Now & Next Up Stay in the loop with can’t-miss sessions, live events, and activities happening over the next two days.TRB Webinars Webinars are based on work from TRB Standing Technical Committees & the Cooperative Research Programs
+*   ### Engage
+
+Work with us Sponsoring a ProjectContribute ExpertiseCareers  Opportunities Engagement ProgramsGrants, Fellowships and AwardsScience Communication Awards   Congressional and Government Affairs Connecting policymakers with the National AcademiesBased On Science Answers to everyday science and health questions
+*   ### About
+
+National Academies PurposeProcess  Our People LeadershipProgram CentersCareers  Get in touch Press and MediaContact Us   Members Learn about membership to the three AcademiesCurrent Operating Status Information on building access, visitor requirements, and facility operations.
+
+### My Academies
+
+*   Login
+*   Personal Library
+*   Account settings
+*   Logout
+
+Donate
+
+Loading...
+
+# Subscribe
+
+## Subscribe
+
+1.    First Name
+2.    Last Name
+3.    Email  (required)
+4.   - [x]  I agree to receive emails from the National Academies  (required)
+
+Subscribe
+
+We respect your privacy and will never share your information.
+
+# Contents
+
+## Contents
+
+ Search this publication
+
+*   Front Matter i-x
+*   Overview 1-2
+*   Introduction 3-8
+*   Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science 9-18
+*   Challenges and Risks of Using ML/AI for Earth System Science 19-30
+*   Identifying Future Opportunities to Accelerate Progress 31-38
+*   Closing Thoughts 39-42
+*   References 43-48
+*   Appendix A: Statement of Task 49-50
+*   Appendix B: Planning Committee Biographies 51-54
+*   Appendix C: Workshop Agenda 55-58
+
+# Log In
+
+## Log In
+
+Sign in to access your saved publications, downloads, and email preferences.
+
+Former MyNAP users: You'll need to reset your password on your first login to MyAcademies. Click "Forgot password" below to receive a reset link via email. Having trouble? Visit our FAQ page to contact support.
+
+1.    Email  (required)
+2.    Password  (required)
+Forgot password
+
+Log In
+
+Don't have an account? Sign up
+
+# Register
+
+## Register
+
+1.    Email  (required)
+2.    New password  (required)
+3.    Retype password  (required)  Password must be at least 8 characters
+4.   - [x]  I agree to receive emails from the National Academies
+5.   - [x]  I accept the terms of use  I accept the  terms of use
+
+Sign Up
+
+# Download as a Guest
+
+## Download as a Guest
+
+While logged on as a guest, you can download any of our free PDFs on nationalacademies.org . You will remain logged in until you close your browser.
+
+1.    Email  (required)
+2.   - [x]  Yes, send me emails when similar titles are published
+3.   - [x]  Yes, I accept the terms of use  Yes, I accept the  terms of use
+
+Continue
+
+Sign up for MyAcademies
+
+# Thank You
+
+## Thank You
+
+Thank you for creating a MyAcademies account!
+
+Enjoy free access to thousands of National Academies' publications, a 10% discount off every purchase, and build your personal library.
+
+# Forgot Password
+
+## Forgot Password
+
+Enter the email address for your MyAcademies (formerly MyNAP) account to receive password reset instructions.
+
+1.    Email  (required)
+
+Continue
+
+# Reset Requested
+
+## Reset Requested
+
+We sent password reset instructions to your email . Follow the link in that email to create a new password. Didn't receive it? Check your spam folder or contact us for assistance.
+
+Log In
+
+# Reset Password
+
+## Reset Password
+
+1.    New password  (required)
+2.    Retype password  (required)  Password must be at least 8 characters
+
+Reset Password
+
+# Reset Password
+
+## Reset Password
+
+Your password has been reset.
+
+Log In
+
+# Verify email
+
+## Verify email
+
+Verify Your Email Address
+
+We sent a verification link to your email. Please check your inbox (and spam folder) and follow the link to verify your email address. If you did not receive the email, you can request a new verification link below
+
+Resend Verification Email
+
+# Looking for other ways to read this?
+
+## IN ADDITION TO READING ONLINE, THIS TITLE IS AVAILABLE IN THESE FORMATS:
+
+PDF FREE DownloadPaperback $22.00 Add to CartEbook $17.99 Add to Cart
+
+MyNAP members **SAVE 10%** off online.
+
+ Not a MyNAP member yet? Register for a free account to start saving and receiving special member only perks.
+
+No thanks. I'll keep reading
+
+*   Contents
+*   Previous chapterChapterNext chapter
+*   Previous page Page  of 58 Next page
+*   Original Pages Text Pages
+*    Search this publication
+
+## Privacy Preference Center
+
+When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.
+
+More information
+
+Allow All
+### Manage Consent Preferences
+
+#### Strictly Necessary Cookies
+
+Always Active
+
+These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.
+
+#### Functional Cookies
+
+- [x] Functional Cookies
+
+These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.
+
+#### Performance Cookies
+
+- [x] Performance Cookies
+
+These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.
+
+#### Targeting Cookies
+
+- [x] Targeting Cookies
+
+These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+
+### Performance Cookies
+
+Clear
+
+- [x] checkbox label label
+
+Apply Cancel
+
+Consent Leg.Interest
+
+- [x] checkbox label label
+
+- [x] checkbox label label
+
+- [x] checkbox label label
+
+Reject All Confirm My Choices
+
+[](https://www.onetrust.com/products/cookie-consent/)
+
+This site uses cookies. For more information on cookies visit:https://www.nationalacademies.org/legal/privacy
+
+Continue
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+Previous Chapter: Overview
+
+**Suggested Citation:** "Introduction." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## Introduction
+
+Machine learning and artificial intelligence (ML/AI) techniques have advanced considerably across many domains and applications in recent years, and the field of Earth system science is increasingly utilizing ML/AI tools. Earth system analysis and prediction has been a major user and driver of advanced computing dating back to the mid-20th century, when early weather and climate models were first built. Simulations of Earth system processes—for example, weather, climate, biosphere, hydrologic, and geophysical processes—have routinely pushed capabilities of computing systems to their limits; today, models and observing systems are being linked to examine Earth system-wide problems and interactions among different parts of the system. Interest is increasing in near- to long-term forecasts of the Earth system at higher spatiotemporal resolution to support decision making.
+
+Future progress in advancing scientific understanding and in providing reliable and high-quality Earth system science forecasts and data products to a wide range of users will require access to adequate computing resources and use of cutting-edge analytical capabilities. Several trends in Earth system simulation—for example, the growing complexity of science models aimed at improving accuracy, the desire for higher resolution simulations, the use of ensembles for uncertainty quantification, and the incorporation of growing volumes of data from new observing platforms—all point to the importance of more powerful and efficient tools and techniques, and expanded computing and analytical capabilities.
+
+ML/AI offer the potential to advance capabilities for Earth system observing, modeling, analysis, prediction, understanding, and decision making in various ways, including optimizing automated simulation workflows, providing new ways to simulate and predict the behavior of physical systems, and improving parameterizations of physical and chemical processes. While the Earth system science community has made good use of many statistical and modeling methods, ML/AI techniques could help transform difficult computational problems into those that can better exploit ongoing advances in information frameworks and computer architectures optimized for ML/AI computation.
+
+In addition to these opportunities and emerging approaches for using ML/AI to advance Earth system science, there are a number of challenges and risks including technical and data challenges, such as the interoperability of data and the integration of ML/AI tools with existing infrastructure; necessary workforce development; and the “last mile” problem of making forecasts useful for a wide array of users and decision makers. Developing and using the algorithms ethically includes acknowledging the implicit biases and historical lack of diversity in Earth system science communities: biases in human experts and ML/AI outputs may have implications for the use and acceptance of ML/AI tools and applications. The evolving nature of the public-private-academic interface has also created a complicated landscape for the application of ML/AI in Earth system science. While the government was formerly the only entity that could support and maintain large observing and modeling systems, the paradigm is shifting as data, models, and computing resources are becoming more accessible to many. Cloud-based providers are beginning to cultivate scientists and federal agencies as customers especially around data storage and analysis, and increasingly for some types of computationally intensive workloads. Private companies and nongovernmental organizations are launching a next generation of observing systems, generating large amounts of proprietary data to be used for analysis and prediction.
+
+**Suggested Citation:** "Introduction." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+In February 2022, the Board on Atmospheric Sciences and Climate together with the Board on Mathematical Sciences and Analytics, the Computer Science and Telecommunications Board, the Board on Earth Sciences and Resources, and the Ocean Studies Board of the National Academies of Sciences, Engineering, and Medicine convened a workshop on the opportunities and challenges of using ML/AI to advance Earth system science, including their ethical development and use. The workshop convened Earth system science experts, ML/AI researchers, social and behavioral scientists, ethicists, and decision makers across sectors to explore how these approaches can contribute to improving understanding, analysis, modeling, prediction, and decision making. Key terms used throughout the proceedings are defined in Box 1. See Appendix A for the statement of task to the workshop planning committee; see Appendix B for biographical sketches of the planning committee members; and see Appendix C for the workshop agenda.
+
+**Suggested Citation:** "Introduction." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+The structure of the proceedings largely follows the workshop agenda (see Appendix C). The 3 days of the workshop were organized around 3 broad themes:
+
+1.   Emerging approaches for using, interpreting, and integrating ML/AI for Earth system science;
+2.   Challenges and risks of using ML/AI for Earth system science; and
+3.   Future opportunities to accelerate progress.
+
+This proceedings summarizes workshop presentations and discussions in the plenary sessions. This proceedings has been prepared by the workshop rapporteur as a factual summary of what occurred at the workshop. The planning committee’s role was limited to planning and convening the workshop. Funding for this workshop was provided by the National Aeronautics and Space Administration (NASA), the National Oceanic and Atmospheric Administration (NOAA), and the National Science Foundation (NSF) through the core sponsorship provided to the National Academies’ Board on Atmospheric Sciences and Climate.
+
+## OVERVIEW OF STATE-OF-THE-ART USE OF ML/AI FOR EARTH SYSTEM SCIENCE
+
+**Peter Dueben, European Centre for Medium-Range Weather Forecasts (ECMWF**), provided a broad overview of how ML/AI approaches are currently being used for Earth system science, including conceptual and technical challenges for using ML/AI and opportunities to address those challenges. The Earth system is a large, complex system that is chaotic and not linear with many interacting components, making it difficult to simulate with models. At the same time, between both observational and model data, a rich set of information is available about the Earth system. ML is an important tool for Earth system science, Dueben explained, because ML has the power to extract information from existing data and make sense of it in areas where conventional models struggle (Box 2).
+
+Dueben identified four high-level categories of how ML/AI have been or currently are used in Earth system science: (1) improve understanding of the system (e.g., fusing of information from different sources, causal discovery, uncertainty quantification); (2) speed up simulations and green computing (e.g., emulation of model components, data compression); (3) improve models (e.g., learn components from observations, correct biases); and (4) link communities (e.g., health, energy, transportation). Using the ECMWF workflow as an example, Dueben emphasized that rather than a single ML/AI workflow, there are many ML/AI applications throughout the numerical weather prediction workflow, from observations to data assimilation and numerical weather prediction forward modeling and post-processing.
+
+Dueben provided a vision for making the most of ML/AI in the mid-term future. He suggested getting organized as a community as a first step, and he showed the 10-year roadmap that was developed at ECMWF as an example (Figure 1; Dueben et al., 2021). In the United States, NOAA has developed an AI strategic plan (NOAA, 2021), and NSF is in the process of doing
+
+**Suggested Citation:** "Introduction." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**FIGURE 1** European Centre for Medium-Range Weather Forecasts (ECMWF) timeline of machine learning developments with individual milestones (M; top), and five objectives to enable the weather and climate modeling community to utilize machine learning. NOTE: AI, artificial intelligence; HPC, high performance computing; IoT, Internet of Things; ITT, Invitation to Tender. SOURCE: ©2021 European Centre for Medium-Range Weather Forecasting.
+
+**Suggested Citation:** "Introduction." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+the same.3 As a next step, Dueben suggested designing software to make it easy for domain scientists to get started. For example, CliMetLab is an effort to share boilerplate code so that domain scientists can focus on the ML code (Raoult and Pinault, 2022). In order to advance science, Dueben identified the need to build ML tools applicable to the Earth science domain (e.g., Adewoyin et al., 2021), learn how to use ML at scale (e.g., the MAELSTROM project4), and combine operational models with ML (e.g., Laloyaux et al., 2022).
+
+Additionally, in order to facilitate innovation and open science, Dueben suggested making ML developments comparable using benchmark datasets specific to the Earth sciences. Benchmark datasets are useful because they allow quantitative evaluation of ML approaches, access to relevant data, and separation of concerns between domain scientists and ML and high-performance computing experts. Ideal benchmark datasets would include a problem statement; data that are available online; python code or Jupyter5 notebooks; a reference ML solution; quantitative evaluation metrics; visualization, diagnostics, and robustness tests; and computational benchmarks.
+
+___________________
+
+3 See https://www.nsf.gov/cise/ai.jsp
+
+4 See https://www.maelstrom-eurohpc.eu
+
+5 See https://jupyter.org
+
+**Suggested Citation:** "Introduction." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+This page intentionally left blank.
+
+Next Chapter: Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+Previous Chapter: Introduction
+
+**Suggested Citation:** "Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science
+
+In the context of the active use of ML/AI for Earth system science, many conceptual, technical, educational, and cultural challenges remain, as well as emerging approaches and opportunities to address these challenges. One key theme raised throughout the following sessions was the importance of multidisciplinary collaboration in a concerted way, and the need to integrate Earth system and ML/AI practices and approaches to better support the scientific and technical needs of Earth system science applications. Humans are also a crucial driver of uncertainty in the future of the Earth system, and participants discussed how to learn from and integrate knowledge of social and human engineered systems into ML/AI applications.
+
+## EMERGING APPROACHES FOR USING AND INTERPRETING ML/AI
+
+This session considered unique challenges in Earth system science that emerging ML/AI approaches could help to address. Specific approaches discussed included the integration of physics, expert knowledge, multiple modalities of data, and ML/AI techniques; explainable and interpretable AI; and data assimilation (see Box 1 for definitions of key terms).
+
+### Challenges for Using ML in Earth System Science Applications
+
+**Pierre Gentine, Columbia University**, focused his remarks on identifying four science challenges for building and using ML at scale within Earth system science, with a focus on climate modeling. The first challenge is that standard ML algorithms do not respect physical laws (e.g., Rasp et al., 2018), inhibiting their use for applications to climate and other Earth science studies. One solution would be to embed physical laws (e.g., mass and energy conservation) within ML algorithms (Beucler et al., 2021a). A second challenge identified by Gentine is that ML algorithms have been trained on existing data and have a difficult time handling situations the algorithms have not encountered before, such as distributional shifts evident in modeling climate change or extreme events. One way to address this challenge would be to develop algorithms that support out-of-sample distributions, which would require strong collaborations between ML experts and domain scientists to understand the inputs and outputs of a model (Beucler et al., 2021b).
+
+Another challenge for the community that Gentine identified is how to utilize ML tools to make more accurate climate projections. Typically in a modeling system, the sources of errors are the initial conditions, parameter interference, and model structure. For weather prediction, the data assimilation community uses observations to nudge the (incorrect) model state toward the observations when the latter are available, but this methodology is not sufficient for climate predictions and projections for which only historical observations are available, and the model is not completely accurate. Gentine suggested that the community work on developing new ML algorithms to assimilate data in order to correct structure, to better represent physical and biological processes, and to produce accurate projections (Figure 2).
+
+**Suggested Citation:** "Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**FIGURE 2** A conceptual diagram of using new machine learning algorithms to handle sparse, noisy, and heterogeneous data in order to integrate high-fidelity simulations and observations to make more accurate projections for climate. SOURCE: Columbia University’s Fu Foundation School of Engineering and Applied Science.
+
+### Explainable and Interpretable AI for Earth System Science
+
+**Elizabeth Barnes, Colorado State University**, focused her remarks on explainable and interpretable AI for Earth system science. Earth scientists already have a large set of tools to sift through data, find relationships, and make predictions, and Barnes sees ML as one additional tool to add to the existing suite. For Earth system science in particular, ML methods can be used to enhance existing research, make computation faster or cheaper, or enable knowledge discovery.
+
+ML algorithms are often put into a “black box,” and advances in explainable and interpretable AI can help to open the “black box,” specifically for the geosciences (e.g., Ebert-Uphoff and Hilburn, 2020; McGovern et al., 2019; Toms et al., 2020). Many different explainable AI (XAI) methods exist, and Barnes showed Layerwise Relevant Propagation as one example, in which a probability value predicted by a neural network gets propagated back through the neural network to produce a heat map of the most relevant regions of the input for each prediction (Figure 3). Barnes has found this XAI method to be particularly useful because these heat maps are largely consistent with how climate scientists ask their research questions.
+
+Beyond better understanding the Earth system, XAI can help identify problematic methods in ML algorithms, such as when neural networks trained to do image recognition get the right answer for the wrong reasons—for example, learning to recognize a copyright symbol on a series of training images of horses instead of identifying the horse itself (Lapuschkin et al., 2019). XAI can also be utilized to gauge general trust in an algorithm, choose a general approach, and enable knowledge discovery. For example, Barnes has used XAI to understand how to predict temporary slowdowns in global mean surface temperature (Labe and Barnes, 2021).
+
+XAI methods are simplifications of an AI model and are by definition not precisely faithful to what the original model computes. Thus, the success of XAI approaches is typically assessed by human judgment, which can be difficult for Earth system applications for which the right answer is often unknown. Echoing Dueben’s remarks about benchmarking ML methods,
+
+**Suggested Citation:** "Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**FIGURE 3** Visual representation of Layerwise Relevant Propagation computational flow. A prediction for the class “cat” is obtained by forward propagation of the pixel values (_x p_), and the output neuron (_x f_) is assigned a relevance score (_R f_ = _x f_) representing total evidence for the class “cat.” The relevance is back-propagated down to the input, where _R p_ is the pixel-wise relevance scores visualized as a heat map. SOURCE: Montavon et al. (2017).
+
+Barnes emphasized the importance of benchmarking XAI approaches for Earth science applications in order to understand each method’s successes and failures (e.g., Mamalakis et al., 2021, 2022). Overall, she stated that the best approach would be to use multiple AI methods to provide a more holistic understanding of a scientific problem.
+
+Barnes noted that while XAI is useful, knowing where in an algorithm the decisions were made does not reveal how decisions were made (Rudin, 2019), and this is where interpretable AI comes in. Interpretable AI approaches are built to explicitly incorporate the decision-making process into their structure. Barnes suggested that scientists should work toward building AI models that mimic scientific human reasoning to improve intrinsic interpretability. If interpretable ML is built to be understood from start to finish, it has the potential to be easily understood by a wider audience.
+
+Building on the ideas Gentine raised about bringing physical constraints into ML algorithms, Barnes suggested that physical knowledge should be brought into the entire AI design framework. Echoing Dueben’s comments, Barnes agreed that the Earth system science community should move away from off-the-shelf approaches, and in order to make substantial progress, Earth system scientists should be a part of the development of AI tools to fit their unique needs. For example, because the Earth system is complex and chaotic, making it difficult to predict, she noted the need for methods that extract signals when they are present instead of waste energy learning unpredictable samples (Albers and Newman, 2019, 2021; Mayer and Barnes, 2021). While many complex AI methods exist, sometimes simple approaches can be the best—for example, for uncertainty quantification (e.g., Barnes et al., 2021).
+
+**Suggested Citation:** "Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+### Using Data Assimilation and ML/AI for Earth System Prediction
+
+**Stephen Penny, Sofar Ocean**, focused on how data assimilation can be combined with ML/AI for Earth system prediction. Given a set of noisy observations and imperfect theoretical understanding of a physical system, data assimilation is used to reconstruct a four-dimensional trajectory of the system dynamics, or a probability distribution of such trajectories, and make predictions of that system. Because of the many similarities between data assimilation and ML/AI formalisms (e.g., Abarbanel et al., 2018), there is an opportunity to use ML/AI to re-evaluate the fundamental assumptions and formulations in the field of data assimilation.
+
+While an ultimate research goal is to solve a data assimilation and forecasting problem statement directly with one single solution, a more attainable goal in the near term is to strategically replace the most expensive components of the data assimilation cycle with ML/AI approaches. One way to do this would be to leverage “data generators,” in which the vast quantities of model simulation data and historical reconstructions of past Earth system states that have already been produced and archived could be used as data inputs to ML models. Another approach would be to try to learn model dynamics directly from observational data, though this approach would have minimum data requirements. As one example of using ML/AI in the data assimilation workflow, Penny showed how surrogate models can be used to replace an expensive forecast model with low-cost ML/AI models that can be trained in advance and updated, designed for specialized hardware, and hold a possibility of building in physical constraints (e.g., Arcomano et al., 2020; Lin and Penny, 2021; Penny et al., 2021).
+
+Penny noted that some key challenges already have effective solutions—for example, utilizing ML/AI models that are successful at reproducing intransient properties of dynamical systems, such as the average error growth rate in a system (Penny et al., 2021; Platt et al., 2021). However, challenges in the details of scaling up ML/AI methods and handling noisy real-world data remain. In order to best utilize all available Earth science information, Penny identified a number of needs including new global optimization methods; robust ML/AI methods that are less sensitive to noise and biases in training data; the ability to scale to high dimensions; and the identification of the best types of training data.
+
+Penny concluded with an example of the transformational potential of using data assimilation and ML/AI together. In the current data assimilation workflow (Figure 4, top), an increasing volume of observations has been used to learn and understand the Earth system, partial differential equation (PDE) models have been developed, and data assimilation has been used to combine information from observations and models. Re-analysis datasets are a product that describe the history of the system and can be used to make forecasts of the future. Moving forward, Penny showed how data assimilation, PDE models, and ML/AI could be integrated into a single approach that takes observations from the historical record and builds a scientifically validated history of the Earth system (Figure 4, bottom).
+
+### Bridging the Gap between Domain and ML/AI Scientists
+
+Several participants emphasized the importance of bringing together domain and ML/AI scientists in order to achieve progress. Gentine raised the challenge of making connections between ML/AI experts and domain scientists, whose fields historically have been distinct with different vocabularies and limited collaboration. In Dueben’s opinion, the single most important
+
+**Suggested Citation:** "Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**FIGURE 4** Conceptual model of the current data assimilation workflow (top) and a vision for how data assimilation, partial differential equation (PDE) models, and machine learning and artificial intelligence (ML/AI) models could be integrated into a single system in the future (bottom). SOURCE: Stephen Penny presentation.
+
+development to achieve progress would be to bring domain scientists and ML/AI scientists together in the next 2–5 years to cultivate ML/AI domain scientists. To underscore why domain scientists should to be part of the ML/AI conversation, Barnes noted that for Earth system applications, scientists would rather trade 1 percent of accuracy for getting the answer right for the right reasons, which is not typically factored into the way the commercial sector is using ML/AI tools and calls for a new way of thinking.
+
+With respect to education, Barnes suggested moving beyond ML/AI short courses for early career scientists and fully embracing data science as fundamental to Earth system science education. In practice, that could include incorporating data science and statistics into academic classes and structures in a fundamental way rather than as an afterthought. Barnes offered a vision in which all scientists across the career spectrum would have basic working knowledge of data science tools by offering and incentivizing training for all career levels. Dueben added that in order to train ML domain scientists, the Earth science community could train domain scientists to
+
+**Suggested Citation:** "Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+become ML/AI experts, attract ML/AI scientists to work on Earth science applications, and work with the private sector to facilitate this exchange. Gentine shared the example of the new NSF Center for Learning the Earth with Artificial Intelligence and Physics6 that aims to forge a new climate data science discipline and develop a convergence approach between education and research. The other objective of this center is to increase the representation of underrepresented minorities in climate data science in order to have the broadest reach required to tackle climate change, which is affecting everyone.
+
+## EMERGING OPPORTUNITIES FROM SOCIAL AND HUMAN ENGINEERED SYSTEMS
+
+Panelists in this session discussed opportunities for using ML/AI to understand social and human engineered systems, and the prospects for using ML/AI to integrate social and human engineered system science into Earth system science. Panelists were specifically asked to provide examples of emerging or future opportunities for using ML/AI to understand human and engineered systems, explore the prospects for using ML/AI to integrate social and human engineered system science into Earth system science, and consider how ML/AI could bridge the gap between physical and social sciences to advance Earth system science.
+
+**Auroop Ganguly, Northeastern University and Pacific Northwest National Laboratory (PNNL)**, discussed how ML/AI in combination with science, engineering, social science theory, and policy frameworks can tackle the challenging complexities at the intersection of coupled natural, human-engineered, and social systems. Trends and natural variability in Earth and natural systems impact and are impacted by human engineered systems (e.g., infrastructure, energy, transportation), and natural and human engineered systems interact with social or human systems (e.g., financial services, regulatory frameworks, governance mechanisms). Physics-guided, uncertainty aware, spatiotemporal ML methods have shown promise in natural and Earth systems in translating predictive understanding to stakeholder-relevant products (e.g., Reichstein et al., 2019). Probabilistic, graphical ML methods have the potential to interlink infrastructure and social systems (e.g., Buldyrev et al., 2010). Agent-based models, gaming exercises, and participatory modeling have made strides in the human and social sciences (e.g., Ganguly et al., 2018; Pagan and Dörfler, 2019). However, Ganguly argued that holistic risk and resilience frameworks that consider the flow of uncertainty and causality are still lacking.
+
+Ganguly shared the example of risQ,7 a climate analytics startup (subsequently acquired by a Fortune 500 company) that has been attempting to develop real-world solutions at the intersection of climate and cities. risQ develops three product suites: (1) physics-guided data sciences to ground climate model simulations and observations in the needs of urban stakeholders, (2) climate-risk-to-investment benchmarking through economics informed data sciences, and (3) climate justice products that examine social impacts on underserved populations based on geospatial data sciences. Ganguly shared a lesson learned through his experience with risQ: Solutions should be developed in tandem with incentives and social impacts.
+
+The work of **Abigail Snyder, PNNL**, looks at integrated human-Earth systems modeling through the Global Change Intersectoral Modeling System,8 which includes a multisector model
+
+___________________
+
+6 See https://leap.columbia.edu
+
+7 See https://www.risq.io
+
+8 See https://gcims.pnnl.gov/global-change-intersectoral-modeling-system
+
+**Suggested Citation:** "Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+that integrates representations of both human and physical systems and their interactions. Snyder emphasized that humans are the largest driver of uncertainty in the future of the Earth system because humans are affected by and can affect the dynamics of the Earth system. There has been extensive work on how human decisions and systems impact the physical Earth system, and how changes in the environment impact human systems and behaviors. Two-way feedbacks and coupling between human and Earth systems are more challenging to study, and ML/AI tools offer the opportunity to develop new models and datasets to better understand these interconnections.
+
+Snyder shared several emerging opportunities for ML/AI tools to represent interactions between human and Earth systems. The first is the emulation of Earth system model outputs and other human-relevant process models for more computationally efficient coupling or integration. ML can be a helpful tool to represent systems for which researchers lack hypotheses in the structure of input-output relationships. Snyder echoed other workshop speakers by discussing the value of developing these system representations in collaboration with domain experts and the importance of interpretable and trustworthy AI when doing human-relevant modeling. Another emerging approach would be to use unsupervised learning on large ensembles of model results for knowledge discovery—an area of focus for the multisector research community.
+
+**David Rolnick, McGill University**, distilled many of the session ideas in a recent report (Rolnick et al., 2022; Figure 5) about opportunities for AI in advancing climate science, mitigation, and adaptation, part of the greater Climate Change AI global initiative.9 AI is a powerful tool that can distill raw data into actionable information, improve predictions, optimize complex systems, and accelerate scientific modeling and discovery. Beyond applying existing AI tools to climate problems, climate-relevant problems can also be valuable in motivating fundamental innovations in AI, creating valuable use cases for hybrid physical models, transfer learning, interpretable and causal ML, and uncertainty quantification. However, Rolnick cautioned that AI is not applicable in every context, and simple methods may be sufficient in some cases. AI may provide incorrect information if the question has not been framed properly, highlighting the importance of developing close collaborations among experts in AI, experts in Earth sciences, and additional stakeholders.
+
+**FIGURE 5** Selected strategies to accelerate societal adaptation to climate change using machine learning. SOURCE: Rolnick et al. (2022).
+
+___________________
+
+9 See https://www.climatechange.ai
+
+**Suggested Citation:** "Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**Jennifer Chayes, University of California, Berkeley**, described a vision for creating an integrated ML climate platform that includes not only physical laws and technical solutions but also behavioral changes, economic constraints, and geopolitical factors (Figure 6). Chayes highlighted the “Jupyter meets the Earth” project funded by the NSF EarthCube program10 that is using geoscience use cases to drive the advancement of computational technologies for interactive geoscience research characterized by large datasets and computationally complex models. There are many examples of applying ML/AI tools to, for example, identify extreme climate events, predict the economics of renewable energy, and understand the economic impacts of climate change. Chayes offered a vision that would bring together these different applications in a single platform where users would have similar sets of tools and could utilize different model outputs as inputs, and, for example, use reinforcement learning—a type of ML—to look at behavioral changes. Furthermore, such a platform would have a low code/no code front end that would allow decision makers to have the best available predictions about a type of policy intervention.
+
+**FIGURE 6** A vision for an integrated machine learning climate platform, bringing together these five domains. SOURCE: Jennifer Chayes presentation.
+
+Ganguly explained that scientists are interested in characterizing uncertainty for a number of reasons: to support the credibility of a discovery, to help make risk-informed decisions, and to translate scientific outcomes to multi-stakeholder acceptance. In an effort to better understand the large uncertainties in human behavior, Chayes suggested using massive multiplayer games to see how individuals react and make decisions, including the unintended consequences of a policy intervention. Ganguly agreed that further opportunities exist to use participatory modeling and games in the climate action space to involve stakeholders and early adopters directly.
+
+More broadly, the panelists agreed that attention should be paid to the ways problems at the intersection of human and Earth systems are being framed. Rolnick pointed out that there are AI and climate problems not being adequately studied because problem definitions and priorities can be skewed by the people involved—for example, more attention has been given to using AI to forecast and respond to forest fires, which often affect the Global North, than to
+
+___________________
+
+10 See https://www.nsf.gov/awardsearch/showAward?AWD_ID=1928374
+
+**Suggested Citation:** "Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+forecasting and preventing locust outbreaks, which tend to affect the Global South. Snyder added that in order to address biases in the regions scientists choose to study, large ensembles of scenario modeling could be useful, in which perturbations across different variables in different sectors could generate a large ensemble of model outputs, upon which unsupervised ML methods can be deployed. Snyder suggested that instead of using models that do not currently represent all types of processes simply as tools for prediction, models can be thought of as tools to provide an array of possible futures that interact with each other.
+
+**Suggested Citation:** "Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+This page intentionally left blank.
+
+Next Chapter: Challenges and Risks of Using ML/AI for Earth System Science
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+Previous Chapter: Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science
+
+**Suggested Citation:** "Challenges and Risks of Using ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## Challenges and Risks of Using ML/AI for Earth System Science
+
+A number of challenges and risks are associated with the use of ML/AI, especially as these tools are applied to Earth system science. Issues of bias in ML/AI have been identified across domains, and Earth system science data, models, and problem selection all pose particular challenges with implications for diversity, equity, inclusion, justice, and ethics. Relatedly, as expertise at the intersection of ML/AI and Earth system science emerges, consideration may be required to equip the current workforce and the next generation of workers with new skill sets, and employers may need to build capacity to tackle emerging problems. In addition, as new ML/AI tools are developed, strategies may be needed to interface these new tools with existing Earth system science hardware, software, and data.
+
+## RESPONSIBLE AND ETHICAL USE AND DIVERSITY, EQUITY, INCLUSION, AND JUSTICE ISSUES FOR ML/AI IN EARTH SYSTEM SCIENCE
+
+Panelists in this session considered what ethical standards should guide Earth system science, and how such standards relate to the lenses of diversity, equity, inclusion, and justice. Panelists also discussed potential biases in ML/AI approaches for Earth system science and promising ways to avoid those biases.
+
+### Ethical and Value Judgments Are Inherent in Earth System Science and the Deployment of ML/AI
+
+**David Danks, University of California, San Diego**, began by challenging a common set of assumptions that ML/AI models—or computational systems and algorithms more generally—are “just math” or “just 1s and 0s,” which leads to the thinking that ethics and values matter only for the use of these models, while the algorithms themselves are objective and value-neutral. Danks explained that in fact, values are ubiquitous in ML/AI methods and there are many places throughout the pipeline of developing ML/AI systems where value choices are being made, even if they are not recognized by users that way.
+
+Before building an ML/AI algorithm, values and ethical choices are made in how a problem is identified and specified. For example, decisions about the resolution of a model, what errors are acceptable, and what counts as success in an optimization problem are values choices that insert biases and preferences into a modeling system. After building an ML algorithm, there are nonpolicy values and ethics choices as well, including who has access to model outputs and descriptions and the reasons for making updates and revisions to a model. Danks emphasized that scientists are already engaged in ethics; he suggested that the scientific community recognize why various choices are being made, explain why they were defensible choices, and collaborate to improve those choices.
+
+While ethical considerations have long been a part of Earth science in terms of problem identification and specification, panelists discussed how the use of ML/AI in Earth system science raises new and different challenges. **Imme Ebert-Uphoff, Colorado State University**, identified a concern that ethical decisions could be made by AI experts rather than the Earth system
+
+**Suggested Citation:** "Challenges and Risks of Using ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+scientists who have specific domain expertise. **Abhishek Gupta, Montreal AI Ethics Institute**, noted that the use of AI makes the scale and pace of impact for any application much larger. **Priya Donti, Carnegie Mellon University**, added that the use of ML/AI can accelerate existing systems and can create feedback loops that exacerbate inequalities and ethical failures, and the use of ML/AI tools may obscure or obfuscate important value discussions and divorce the models from important underlying value judgments and human decisions. Danks agreed and added that the use of ML/AI can introduce new opportunities to answer scientific questions in areas of Earth system science where difficult discussions about how to handle ethical issues have not yet been had.
+
+### Identifying and Addressing Biases in Data and ML/AI Methods
+
+Ebert-Uphoff outlined the need for ethical, responsible, and trustworthy AI for environmental sciences. While AI can be a tool to advance environmental justice, the use of AI can also create new problems if scientists are not proactive (Box 3). Ebert-Uphoff provided examples of issues around biased training data that can lead to coded biases. Human-labeled data—for example, human-reported data of hail and tornadoes (Allen and Tippett, 2015; Potvin et al., 2019)—can create unintentional biases in which an ML algorithm would only predict hail and tornadoes in populated areas. Biases are also present in observations—for example, training data derived from sensors, because sensor networks often do not cover all populations equally, can be difficult to deploy in remote regions, and may only make measurements during daylight hours (Figure 7). Donti echoed the ways that datasets can be biased—for example, building
+
+**Suggested Citation:** "Challenges and Risks of Using ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+data that reflect the history of housing discrimination and redlining. There are also issues with AI algorithms themselves, including choices made during model development that can have a large impact on the result and AI algorithms learning undesired strategies (e.g., Lapuschkin et al., 2019), raising the question of who gets to make these decisions and how these decisions should be made. For example, in a task of detecting the locations of urban heat islands, the choice of spatial resolution would overlook small neighborhoods (low resolution) or introduce noise (high resolution), or sub-seasonal weather models may perform better in the mid-latitudes but not as well in other regions around the globe.
+
+Panelists discussed possible strategies to address biases due to sparse spatial and temporal sampling in Earth system science data. Ebert-Uphoff suggested that the first step should be to come up with standard practices that can be applied to datasets to document and reveal the biases that exist but often go unrecognized. Relatedly, while open source and open science can help democratize AI, Danks noted that substantive metadata (e.g., the datasheet framework; see Gebru et al., 2020) will be required so that AI tools are not misinterpreted and misused. Donti added that the ML community is accustomed to using clean benchmark data to do algorithmic innovation and will require a culture shift to focus on questions around imperfect Earth science and climate change–related data. While existing methods already deployed in Earth sciences such as interpolation and imputation could be used to address sparse data problems, Danks explained that assumptions in those methods would also require thought so as not to introduce new biases. Domain-informed AI approaches, such as physics-informed ML, could embed nondata knowledge into a modeling system. Approaches from other domains such
+
+**FIGURE 7** An example of nonrepresentative data: coverage of the national Doppler weather network (green and yellow circles) overlaid with the Black population in the southeast United States. SOURCE: Jack Sillin, as cited by McGovern et al. (2022).
+
+**Suggested Citation:** "Challenges and Risks of Using ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+as active learning in computer science—a form of ML in which an algorithm can choose which data it wants to learn from11—could use ML algorithms to identify locations where additional sampling or sensors would be beneficial. However, Danks cautioned that not every problem is solvable with ML/AI, and, in some cases, the answer may be that more instruments or sensors are needed to improve measurement capabilities.
+
+### Intersections among AI, Climate, and Sustainability
+
+Donti discussed the intersection of AI, climate change, and values, and identified two ways to consider climate change and responsible AI: (1) employ AI in the context of climate action in a way that is fair, accountable, transparent, and equitable; and (2) make climate change a consideration for responsible AI by ensuring AI is broadly aligned with climate-relevant goals (Kaack et al., 2021). Donti broadened the discussion of bias to include three ways that AI can interact with or exacerbate issues of equity and justice: (1) large stakeholders in industrial agriculture have the resources to use AI methods to optimize a given problem, whereas smaller stakeholders may not have access to such resources, potentially exacerbating divides between industrial agriculture and smallholder farms; (2) ML/AI tools are readily available to entities with the most power in society and are often provided to a small set of powerful stakeholders, which could, for example, trap cities with costly urban analytics services (i.e., create a risk of “capture”); and (3) populations with fewer privacy regulations in place could be experimented on and taken advantage of.
+
+Ebert-Uphoff cautioned that while XAI methods can be applied to weather applications, XAI is not sufficient to guarantee trustworthiness. Donti added that when employing AI for climate action, trustworthiness and accountability should be improved. For example, ensuring the safety and robustness of AI methods would be critical when optimizing electric power systems, and interpretability and auditability would be important in the context of high-stakes decisions about climate policy. Donti also explained how AI can be used in ways that directly facilitate climate change mitigation and adaptation strategies; however, AI can also be used in ways that accelerate or increase energy consumption and greenhouse gas emissions, and there is an energy cost associated with using computationally intensive AI models.
+
+Gupta argued that scientists have an imperative to create sustainable AI systems, tying together responsible AI with the environmental impacts of deploying different technologies. Under the current paradigm, there has been a push toward larger AI models, which promote exploitative data practices, centralize power and homogeneity, and create a massive energy footprint. Gupta defined sustainable AI as a cohesive framework to mitigate the negative environmental and societal impacts of AI systems as they are designed, developed, and deployed. Several paths forward include elevating smaller models, creating alternative deployment strategies, increasing carbon efficiency and carbon awareness, and normalizing the accounting and reporting of carbon impacts of AI systems.
+
+___________________
+
+11https://deepai.org/machine-learning-glossary-and-terms/active-learning
+
+**Suggested Citation:** "Challenges and Risks of Using ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**FIGURE 8** Areas of action for governments in supporting the responsible use of artificial intelligence (AI) in the context of climate change. SOURCE: Clutton-Brock et al. (2021).
+
+### Enforcing Ethics and Responsible AI
+
+Panelists discussed how ethics and responsible AI could be enforced practically. Danks noted that market forces require a backdrop of standards, audits, and other mechanisms for transparency, including regulation and other frameworks. Donti agreed that policy and regulation have a role to play and that allowing tech-oriented companies and entities to act on good faith alone is not sufficient. Beyond public policy, organizations make many kinds of policy decisions about incentives, rules, and transparency requirements on small and large scales, and Donti shared the Global Partnership in AI12 multi-stakeholder effort that is making recommendations about how to embed values and ethics into the development of AI in the context of climate change (Figure 8).
+
+Gupta provided examples of small-scale actions that can be taken now. ML/AI journals and conferences could require broader impact statements that would force scientists to consider the ethical impacts of the systems they are developing. Ebert-Uphoff added that journals and editors have an important role to play in setting standards for disclosure and transparency in algorithms and value decisions as part of the article submission and acceptance process.
+
+### Linking Communities
+
+Danks shared examples from the design and technology design communities for ensuring that values and interests of made-vulnerable populations are represented in ML/AI for
+
+___________________
+
+12 See https://gpai.ai
+
+**Suggested Citation:** "Challenges and Risks of Using ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Earth system science. These approaches include community-supported and community-engaged design processes. One of the lessons from these approaches is that community-engaged design is an iterative, cyclical process that never ends because scientists are continually learning from communities about their values and reinforcing those values through science and technology. Gupta agreed that meaningfully involving stakeholders is an outstanding challenge that is essential to pursue.
+
+Donti emphasized that responsible AI in the Earth system and climate change–related context would require bringing together different research perspectives including stakeholders’ lived experiences, respecting bodies of knowledge that already exist in these domains, and respecting different ways of thinking. Danks expanded the idea of domain-informed and domain-educated ML/AI researchers, suggesting that Earth scientists collaborate with not only AI researchers but also ethicists and sociologists. Many domains and sectors are tackling these same challenges and could benefit from building collaborations and integrating the perspectives, frameworks, and techniques of different disciplines.
+
+## WORKFORCE DEVELOPMENT CAPACITY AND SKILL SETS
+
+Conversationalists in this session discussed gaps in education for those working at the intersection of ML/AI and Earth system science, needs and strategies for the private sector and academia in workforce development, the role of continued education for the current workforce, and capacity building at earlier educational stages.
+
+### Gaps in Training and Opportunities for Continuing Education
+
+The panelists began by discussing gaps in education among students just entering the workforce. **Hamed Alemohammad, Radiant Earth Foundation**, echoed the gap discussed throughout the workshop between domain scientists who have only used ML tools “off the shelf” and computer scientists who are not knowledgeable about the Earth science domain, forcing employers to choose between the two in the hiring process. **Terri Adams, Howard University**, explained that this gap points to a need for interdisciplinary education and training, and **Lak Lakshmanan, Google**, added that competency with industrial-scale datasets is also an educational gap that should be filled. Building interdisciplinary educational programs offers an opportunity to think about how ML can be adapted for Earth system science. Professional societies could also play a role in convening the Earth system science community to identify educational needs on a 5- to 10-year time horizon.
+
+Lakshmanan noted that computer science courses are often more project-driven than those in the Earth sciences, and the Earth sciences could require code submission and verification or forecasting competitions to build skills more common in data science fields. Alemohammad agreed that teaching coding and programming as part of an Earth science curriculum is key; research and production level code could be brought closer together in the classroom by teaching reproducible coding, for example, and software development could be incorporated into proposals so that there would be resources allocated toward learning those skills. Adams noted the challenges of only being able to spend a limited time with students in the classroom over a semester or quarter, as well as the importance of continual dialogue with the private sector to understand its needs. **Rebecca Nugent, Carnegie Mellon University**,
+
+**Suggested Citation:** "Challenges and Risks of Using ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+encouraged educators to incorporate ML/AI and data science concepts into curricula early, utilize known pedagogical tools, and document and share best practices with the community.
+
+Nugent shared that many companies in private industry are asking universities to design professional development programs for employees at every level in their workforces. Panelists discussed existing continuing education resources as both experiential learning programs that are part of learning communities, as well as online courses or certificates that can be done independently (Box 4). Alemohammad noted that many of these courses are restricted to computer science; there is a need for the development of interdisciplinary courses that focus on adapting ML/AI for Earth system science applications rather than adopting them.
+
+### Sparking Interest from Early Ages
+
+Adams shared an example of summer camps for high school students interested in weather or climate through the NOAA Cooperative Science Center for Atmospheric Sciences and Meteorology. Adams saw those students pursue degrees in atmospheric science or meteorology in college or graduate school, and suggested that this may be a good model to expose students
+
+**Suggested Citation:** "Challenges and Risks of Using ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+to fields they may not have otherwise considered. Nugent added that beyond coding camps that have become more prevalent, data literacy—including collecting and organizing data and drawing conclusions—should be incorporated into education starting at an early age, and activities could put these ideas in the context of Earth system science. Adams agreed that connecting younger learners with applications in their everyday lives (e.g., how AI is used in their smart home devices) could help to cultivate their interest in these subjects.
+
+### Cultivating Diversity in the Workforce and Strategies to Build Capacity
+
+Panelists began by acknowledging the concept of the leaky pipeline at all stages of the career track and the importance of providing educational and career opportunities to a diverse population. Panelists discussed the need for continued investment in programs that have demonstrated success—for example, NOAA Cooperative Science Centers include workforce development as part of their core mission, and NSF’s Research Experience for Undergraduates (REU) program has expanded access to research experiences for students at smaller undergraduate institutions. Nugent challenged the community to expand the reach of REU programs to benefit broader populations by providing more accessibility, for example, through virtual research opportunities. Alemohammad suggested that private employers should think about how they can help provide opportunities at the university level for underrepresented minorities so that the applicant pool is diversified by the time they reach the hiring stage. Panelists agreed that one concrete step would be to ensure that internships are paid in order to make these opportunities available to students beyond those who can do unpaid work.
+
+## CHALLENGES AND OPPORTUNITIES FOR EARTH SCIENCE TECHNOLOGY AND DATA
+
+During this session, panelists considered open data, standards, and platforms to facilitate open science for ML/AI and Earth system science as well as technology development, funding models, and education challenges and opportunities for Earth system science technology and data. Panelists were asked to consider the following questions: What have open data enabled for ML/AI that would otherwise not be feasible? What are the main stumbling blocks to advance open science data in support of ML/AI applications? What are potential top priorities to tackle over the next 5–10 years with respect to Earth system science technology and data? In this panel, the current realities of public and private organizations each building their own ML/AI for Earth system science “data platforms” met visions of an open, inclusive, and integrated platform for big-data Earth system science.
+
+### Challenges of the Current Paradigm
+
+**Ryan Abernathey, Columbia University**, observed that the data-intensive nature of ML/AI research has forced the scientific community to confront the limitations of current data infrastructure and software in Earth system science. While the volume of Earth science datasets is expected to grow dramatically, the current data infrastructure assumes scientists will download and analyze data on their local computers (Figure 9). **Ana Pinheiro Privette, Amazon Sustainability Data Initiative (ASDI)**, agreed that because Earth science data are highly
+
+**Suggested Citation:** "Challenges and Risks of Using ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**FIGURE 9** Volume of data in the National Aeronautics and Space Administration’s Earth Observing System Data and Information System archive from 2015 to 2025 (left), “download and analyze workflow” (middle), and the limitations of the current data infrastructure (right). SOURCE: Ryan Abernathey presentation.
+
+distributed, every user who wants to apply ML/AI to Earth system science is required to identify the critical datasets and acquire, store, and clean the data—all before using the data—which accounts for about 80 percent of a user’s effort (Patil and Mason, 2014). **Katie Dagon, National Center for Atmospheric Research (NCAR)**, reiterated how time intensive it currently is to identify and prepare data, the need to share and reuse parts of the data analysis work flow, and how confronting these challenges will enable the research community to better apply ML/AI tools for modeling and analysis. Abernathey argued that the current framework also limits ambitious ML/AI research and inclusion within the geosciences because only privileged research institutions have the capabilities to do research at the scale required. ML/AI tools are exacerbating existing infrastructure challenges because researchers now want to download entire datasets to train their ML models.
+
+**Jason Hickey, Google**, outlined trends in Earth science technology including sustained investment in Earth observing systems and environmental data systems—satellites, ground stations, airplanes, vehicles, buoys, etc. While there has been a large growth in the amount of data being collected, these data are not being used; for example, Hickey stated that only 3-5 percent of satellite data are being used in weather forecasting. ML/AI tools could be critical for managing these massive amounts of data.
+
+At the same time, Hickey recognized the growth of scalable cloud platforms that are globally accessible and generally publicly available. **Chelle Gentemann, Farallon Institute**, shared how advances in technology have transformed her workflows such that she can access a coding environment through a web browser on an internet-connected device and connect quickly to a massive server farm, petabytes of data, and other hubs (Figure 10). However, she noted that the real goal would be to bring together groups of people with different expertise to work together to increase the pace and expand the impact of the science.
+
+### Promising Paths Forward
+
+Each of the panelists shared their own examples of ways to build open science platforms and infrastructure to overcome barriers of the current tools and systems. Abernathey shared Pangeo13 as an example of an open science data community that is prototyping a way of working
+
+___________________
+
+13 See https://pangeo.io
+
+**Suggested Citation:** "Challenges and Risks of Using ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**FIGURE 10** Cloud computing is bringing together data, software, and computers, enabling scientists to access massive cloud computing resources through a web browser window. NOTE: HPC, high performance computing. SOURCE: Gentemann et al. (2021).
+
+for building data-intensive software and infrastructure. Pangeo centers on scientific users and use cases, contributes to existing open source software, and deploys that infrastructure in various cloud computing and high-performance computing environments.
+
+Federal agencies are also investing in the ML/AI and data space and integrating open science principles. For example, NASA’s Transform to OPen Science (TOPS)14 program is a 5-year, $40 million investment to increase understanding and adoption of open science standards and techniques. Gentemann explained that the objectives of the program are to increase understanding and adoption of open science, accelerate major scientific discoveries, and broaden participation by underrepresented communities.
+
+Privette shared the example of how ASDI is using cloud computing to democratize the ML/AI space by significantly reducing the cost, time, and technical barriers associated with analyzing large datasets to generate sustainability insights. ASDI is identifying critical datasets needed to solve climate and sustainability challenges, subsidizing the data storage, making the data easily accessible on Amazon’s cloud platform, and enabling users to experiment by offsetting the cost of experimentation through dedicated cloud grants.
+
+At NCAR, Earth System Data Science (ESDS),15 an interdisciplinary grassroots project, formed with the vision to increase the effectiveness of the NCAR workforce by promoting deeper collaboration centered on analytics and big data, which would allow scientists to serve the
+
+___________________
+
+14 See https://github.com/nasa/Transform-to-Open-Science
+
+15 See https://ncar.github.io/esds
+
+**Suggested Citation:** "Challenges and Risks of Using ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+university community and deliver actionable, reproducible science. Dagon explained that, practically, this effort has required building a community and overcoming cultural, communication, and scientific challenges. The ESDS approach has been to cultivate a community of practice focusing on core software development and computing, training and education, and communication and best practices.
+
+### Longer-term Visions for the Future of Open Science
+
+Imagining the landscape in 20 years, Hickey suggested that open, collaborative science will allow teams to share data and models efficiently. In terms of environmental information delivery, Hickey suggested imagining a more personalized and immersive experience where, for example, digital twins—models of the Earth as it is—can be used in a massive multiplayer online game for play and information delivery. Hickey emphasized the importance of fostering environmental justice and making information open to all communities so that underserved communities have equal access to information.
+
+Abernathey shared a vision for an extensible, interconnected federation of high-performance Earth system data analytics environments to which scientists and institutions could bring capacity, data, and computing (Abernathey et al., 2021; de La Beaujardière, 2019; Gentemann et al., 2021). Abernathey also emphasized that realizing the potential of ML/AI in Earth system science will require prioritizing data and software engineering and development as much as the private sector does (Sambasivan et al., 2021). Additionally, Dagon outlined how journals, funding agencies, and performance evaluations can play a role in balancing the culture of static scientific publishing with the dynamic expectations of open science and development by creating incentives.
+
+### Opportunities to Shift Culture
+
+Participants discussed existing barriers and strategies to overcome them to realize the open science future imagined by the panelists. Given the significant computing skills that ML/AI require, Dagon suggested creating and sharing analysis workflows for ML tasks using a set of best practices and examples, as well as developing benchmark datasets to facilitate wider application of ML/AI tools. Abernathey challenged the community to reject “not invented here” syndrome—the tendency to discount existing solutions that do not strictly meet the needs of a new project—and collaborate to extend existing open source software to focus on delivering on community needs rather than branding a product as one’s own. Gentemann identified a need to motivate substantial contributions to open source infrastructure that is underlying so much science; the involvement of federal agencies and their workforce could be a powerful way to stabilize and advance open source infrastructure. Hickey added from the private sector perspective: For-profit organizations like Google actively promote the development and information sharing of their open source community without sacrificing their for-profit motive in the process.
+
+Panelists acknowledged the importance of making the open science community more diverse and inclusive. Gentemann added that as the community transitions from local infrastructure to cloud computing, care and strategy will be required to avoid replicating existing inequalities. In order to realize a vision of an open science platform accessible to all, Hickey recognized that there will be a cost associated with using the platform, and equitable science will
+
+**Suggested Citation:** "Challenges and Risks of Using ML/AI for Earth System Science." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+require subsidies to empower science in underfunded countries. Panelists agreed that cloud access and cloud storage and computing credits are not enough for equitable access; developing a global infrastructure and building capacity to help communities use these resources will also be critical.
+
+Relatedly, with respect to the large amount of ML/AI courses and trainings available, Dagon identified the challenge to provide accessibility and entry points for both domain scientists and ML/AI experts. Abernathey suggested offering data engineering courses and degrees and working with industry to identify needed skills and training. Hickey added that the cloud—an open science platform—also enables education about the use of open science that can become globally available.
+
+Next Chapter: Identifying Future Opportunities to Accelerate Progress
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+Previous Chapter: Challenges and Risks of Using ML/AI for Earth System Science
+
+**Suggested Citation:** "Identifying Future Opportunities to Accelerate Progress." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## Identifying Future Opportunities to Accelerate Progress
+
+With the increasing interest in and adoption of ML/AI approaches to advance Earth system science, there are opportunities for disruptions to lead to rapid scientific, societal, or institutional progress in the Earth system science field. Ultimately, the interactions between scientific advances and the needs of decision makers—both individual users and policymakers—can enrich the development of operational tools, and questions remain about how decision makers could be engaged in the development of ML/AI tools for Earth system science applications. In addition, funding and structures that can facilitate the exchange of ideas underlie any vision for progress. Participants discussed opportunities to consider new models that could enable convergent science, knowledge transfer, and partnerships to support science at the intersection of ML/AI and Earth system science.
+
+## USING ML/AI FOR DATA-DRIVEN DECISION MAKING
+
+Speakers in this session discussed the role of ML/AI at the interface of predictive physical models and real-time decision making. Discussions in this session also considered how to handle uncertainties in applications where mistakes can be costly, and the remaining science, engineering, societal, and ethical challenges of using ML/AI for data-driven decision making. Each speaker considered a particular case study through which they examined these critical questions.
+
+### ML Applications for Improved Earthquake Hazard Decision Making
+
+**Elizabeth Cochran, U.S. Geological Survey (USGS)**, outlined the many different earthquake-related products that USGS provides to aid in decision making by emergency managers, government officials, and the public including long-term forecasts before an earthquake, earthquake early warning, and products looking at the impacts and potential aftershocks after an earthquake happens (Figure 11). Currently, state-of-the-art real-time applications of ML are used for earthquake detection. Sensors distributed across the United States and globally provide a time series of ground motion—if that motion is an earthquake, then scientists can tell how big the earthquake was, as well as where and what time the earthquake occurred. Historically, this work was done by hand; starting several decades ago, computer algorithms were created to automate this process, but these algorithms were not very reliable. Over the past decade, ML approaches have been developed using deep neutral networks to identify seismic phases (Ross et al., 2018). Cochran explained that these algorithms, built off high-quality hand-curated datasets, have yielded great results. ML tools can be powerfully applied to increasingly large datasets from sensors, telecommunications fiber optic cables, and cell phones (Allen, 2012; Brooks et al., 2021; Cochran, 2018; Lindsey et al., 2020). Furthermore, ML tools used for earthquake detection also allow scientists to better understand the physics of
+
+**Suggested Citation:** "Identifying Future Opportunities to Accelerate Progress." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**FIGURE 11** Suite of U.S. Geological Survey earthquake information products, all of which can include machine learning applications. From the left are applications for earthquake forecasting moving forward in time to analysis of impacts after an earthquake. SOURCE: Elizabeth Cochran presentation.
+
+earthquake processes—for example, detecting and understanding very small events (e.g., Ross et al., 2020), and revealing fault zones where critical infrastructure should not be built.
+
+Earthquake early warning—sending alerts to areas likely to experience damaging shaking—is a challenging problem that requires quickly detecting an event and its evolution. ML classifiers for signal versus noise detection can remove signals that are not of interest (e.g., Li et al., 2018; Meier et al., 2019) and can improve location estimates using real-time identification (e.g., Mousavi et al., 2020; Ross et al., 2018). Graph neural networks can incorporate information across a seismic network rather than just from a single station, which could allow for estimating source information and predicting shaking amplitudes (van den Ende and Ampuero, 2020).
+
+Additional ML applications for earthquake information include ShakeMap, which aims to quickly identify the distribution of shaking (Kubo et al., 2020); PAGER, which looks at building responses and other impacts from ground motions (Xie et al., 2020); and improved earthquake forecasts to predict the time of the next earthquake (Rouet-Leduc et al., 2017). Remaining challenges include overcoming the lack of high-quality datasets and potentially biased data for complex earthquake hazard applications (e.g., seismic fragility, forecasting), and the consideration of benefits versus costs in the integration of these ML methods into an operational system.
+
+### Challenges in Employing ML/AI for Nowcasting
+
+**Daniel Rothenberg, Waymo**, focused his remarks on examples related to nowcasts—short-term weather forecasts primarily focused on the next few hours—to examine the role that AI plays in data-driven decision making. Nowcasts are generally focused on a specific set of weather hazards or impacts with the potential to impact people, a place, or an asset, and are strongly constrained by current or recent weather conditions (e.g., tornado warnings, precipitation nowcasts). Classical nowcasting approaches (Figure 12) are highly data driven and rely on several approaches: radar extrapolation techniques that use computer vision to analyze patterns of motions and currents and historical radar imageries to extrapolate them into the
+
+**Suggested Citation:** "Identifying Future Opportunities to Accelerate Progress." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**FIGURE 12** Examples of classical nowcasting approaches. SOURCE: Adapted from Daniel Rothenberg presentation; (left) pySTEPS Intiative, https://pysteps.github.io; (center) Aeris Weather; (right) TropicalTidbits.
+
+future to predict near-term storm patterns; identification of specific storm cells or hazards that are apparent in radar imagery and project where they are likely to move over the short term; and full complexity simulations of the atmosphere, including numerical weather prediction, to create short-term forecasts.
+
+Precipitation nowcasting has been a target for early applications of AI in the weather domain because of the apparent simplicity of the problem from a technical perspective—predicting future images given a sequence of recent radar imagery (e.g., Klocek et al., 2021; Ravuri et al., 2021; Sønderby et al., 2020). Nowcasting involves pattern recognition and extrapolation from recent data, which makes it a good problem for well-established AI technologies that typically excel at image processing, segmentation, and classification. AI can augment and complement the capabilities of more traditional data-driven approaches. Rothenberg noted that nontraditional stakeholders in the weather and climate enterprise have driven many of these advances.
+
+Rothenberg asserted that weather data and weather forecasts have no intrinsic value; rather, the processes that lead to decisions to protect life and property are where value creation happens. The utility of an AI tool at the interface of traditional physical modeling in support of a decision-making process is tied to whether or not the AI tool can improve the outcome of that process in a meaningful way. Rothenberg described the limitations of using AI for precipitation nowcasts. For example, specialized AI tools have been developed to represent nonlinear weather changes (e.g., convective initiation), but AI-based precipitation nowcasts generally do not have this capability. Additionally, most AI applications in nowcasting still heavily rely on numerical weather prediction systems to augment data for training or at time-of-inference, which introduces a question of whether AI-based systems are worthy of further investment or if classical techniques should continue to receive investments.
+
+Open challenges remain in applying AI to precipitation nowcasting. AI requires a tremendous amount of high-quality data, though there is a lack of common datasets for benchmarking (Veillette et al., 2020), and, as other participants noted, not all data are equitably distributed geographically, which may introduce bias to the decision-making process. Rothenberg emphasized that if AI is the future of precipitation nowcasting, then it would be critical to move beyond the data-rich regions of the United States and Europe and develop solutions for poorly
+
+**Suggested Citation:** "Identifying Future Opportunities to Accelerate Progress." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+observed parts of the world. As a first step, the community could determine whether existing data (e.g., existing satellite constellations) could be used if they were more accessible, or if new technologies such as space-borne radars would need to be launched.
+
+### Learning Dynamical Models, Uncertainty Quantification, and Intelligent Sampling and Autonomy
+
+**Pierre Lermusiaux, Massachusetts Institute of Technology**, outlined several dynamical model learning approaches, from a more traditional Earth science case in which prior information is known from long-term datasets and knowledge of a model prior, to approaches for which there is no prior knowledge and ML tools estimate model equations and parameters (Figure 13). In between these two approaches is the growing field of scientific ML, where data-driven, explainable models can incorporate prior domain knowledge.
+
+Lermusiaux considered examples of learning bottom gravity current models relevant for coastal and climate predictions and of learning biogeochemical dynamics—ultimately important not only for modeling the Earth system but also for understanding the world’s food system. In this latter Bayesian learning example, scientists can discover ecosystem reaction functions with Bayesian ML that assimilates observations in all of the possible candidate models, revealing the best model as well as the equations of a priori unknown model formulations, all with estimates of their uncertainties (Gupta et al., 2019; Haley et al., 2020; Lermusiaux et al., 2020; Lu and Lermusiaux, 2021). Next, Lermusiaux considered a deep learning example of neural closure models in which scientists may have some data and a simple model—for example, for climate prediction—and the goal is to add a closure rate to increase reliability without increasing computational cost (e.g., Gupta and Lermusiaux, 2021; Kulkarni et al., 2020; San and Maulik, 2018; Wan et al., 2018; Wang et al., 2020).
+
+Turning from model optimization toward data optimization, Bayesian and ML adaptive sampling can be used to predict future observations that would optimally maximize information. Lermusiaux explained that such an approach could answer questions about where, when, and
+
+**FIGURE 13** Summary of Bayesian learning and deep learning of dynamical models. NOTE: PDF, probability density function. SOURCE: Adapted from Pierre Lermusiaux presentation.
+
+**Suggested Citation:** "Identifying Future Opportunities to Accelerate Progress." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+what to observe to provide the most information; how much information is needed for ML methods; and how long such a system would remain predictable (Lermusiaux et al., 2017a,b). Example applications that he showed include optimizing where to release drifters—oceanographic floating devices that measure currents and other parameters—considering the reachability of the research ship releasing the drifters. Another example he presented is predicting the path of a tanker that would optimize energy use and safety, avoiding waves or bad weather.
+
+### Conveying Information and Uncertainty to End Users
+
+Panelists discussed the challenges of conveying uncertainty to users and decision makers and outstanding gaps in making the information from ML/AI methods understandable. Rothenberg emphasized the importance of first understanding the end users and how they go about calculating risk and making decisions, and then mapping ML/AI capabilities to information that can be used to make effective decisions. Perhaps, for example, information about a weather nowcast could be distilled down to a binary “yes” or “no” reported with some confidence level. Cochran shared that for earthquake early warning, certain information has been removed from the product that ultimately gets used by the public because users only have seconds to take an action. Lermusiaux added that there are opportunities for funding agencies to connect social science researchers with Earth system science and modeling researchers to facilitate information exchange not only at the university and national laboratory levels but also at the high school level in efforts to educate the public on new concepts of Earth system modeling, data science, ML, probability, and uncertainty.
+
+Panelists also discussed the range of stakeholder needs they consider in their work. At USGS, Cochran considers multiple products and users who all require different kinds of information: public-facing earthquake information, technical users including emergency managers and government officials, and private companies that may use USGS information to understand or reduce their earthquake hazard. From the perspective of the private sector and product management, Rothenberg shared that, in his experience, understanding end user priorities and decision-making processes is critical to conceptualize and ultimately deliver a data product or tool that might be used in a consumer context. He emphasized the importance of training a workforce that understands both the research and operations sides, both in Earth system science as well as ML/AI.
+
+## NOVEL FUNDING MECHANISMS, PARTNERSHIPS, AND KNOWLEDGE TRANSFER AMONG ACADEMIA, INDUSTRY, NONPROFITS, AND GOVERNMENT
+
+Conversationalists shared their knowledge, ideas, and creative approaches to create mechanisms for funding opportunities, partnerships, and knowledge transfer among academia, industry, nonprofits, and government. In the context of opportunities and challenges for using ML/AI to advance Earth system science raised throughout the workshop—promising avenues for research, responsible and ethical use of AI, the urgency to diversify these fields, and strategies for training the workforce—several participants emphasized the need to develop sustainable mechanisms and funding sources to make progress in these areas. This final session brought
+
+**Suggested Citation:** "Identifying Future Opportunities to Accelerate Progress." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+together panelists across sectors to discuss funding considerations and possibilities to enhance cross-disciplinary and cross-sector collaborations.
+
+### Funding Considerations to Advance ML/AI for Earth System Science
+
+Participants discussed funding priorities over the next 5-10 years to make progress in ML/AI for Earth system science. **Lynne Parker, White House Office of Science and Technology Policy**, highlighted the importance of investing in frameworks that support large-scale interdisciplinary research. An example in the AI space, the National AI Research Institutes16 are funded by NSF and a number of other federal agencies and are inherently interdisciplinary, bringing together different academic fields and industry partners. Parker added that a network of institutes could add value, allowing institutes to share resources, best practices, and lessons learned.
+
+Reflecting on the discussions around information exchange throughout the workshop, **David Spergel, Simons Foundation**, suggested that the movement of people and ideas between academia and industry would advance ML for Earth system science. Spergel noted that financial incentives and structures could encourage universities to embrace different career models—for example, an academic gaining real-world experience with ML applications in industry and then returning to academia with the insights and tools to train the next generation of scientists. **Qingkai Kong, Lawrence Livermore National Laboratory**, added that funding may also be needed to take ideas from academia or published in the scientific literature and develop and implement those tools to test them in real-world settings. Such mechanisms or incentives would facilitate knowledge transfer from the academic community toward products and the private sector.
+
+Participants also reiterated discussions throughout the workshop about the opportunity to create an education track that would also allow Earth system scientists to train in ML/AI and open science. Kong shared his experience as an early career scientist trained in seismology and ML who could not find enough opportunities to marry the two communities in the past, and he suggested providing more opportunities for PhD students to explore career opportunities outside of academia.
+
+Participants discussed the need for long-term support of software in the ML/AI and Earth system science space and for possibilities to advance its infrastructure. Chayes suggested building a dynamic infrastructure that scales to enable Earth system science—for example, built on an open science platform, such as a Jupyter, enabling transparency and collaboration. Spergel noted that the academic community often does not support careers that develop and maintain tools valuable to the community. Software support may also fall between the cracks at federal agencies where long-term software development is not incentivized or rewarded in the proposal process. Spergel suggested that there may be a role for science philanthropy to support this type of work. **Gary Hattem, Independent Advisor**, stressed that in order to attract investors who are interested in solving problems with a market return as well as philanthropists and high-net-worth individuals who are interested in interventions that benefit vulnerable communities, scientists should clearly define the constituency for the applications of their work and build trust with those communities that can advocate for new types of partnerships.
+
+___________________
+
+16 See https://beta.nsf.gov/funding/opportunities/national-artificial-intelligence-research-institutes
+
+**Suggested Citation:** "Identifying Future Opportunities to Accelerate Progress." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+### Leveraging Resources to Diversify ML/AI for Earth System Science
+
+Participants identified the need to diversify the spaces that are tackling ML/AI and Earth system science issues. Chayes shared her experience at Berkeley where the data science major is growing faster than any other major and has allowed a wide cross-section of students to discover an interest and aptitude in data science by taking an entry-level course. In order to provide support and retain students in the program, Chayes gave the example of a data science scholars program that focuses on Pell Grant and first-generation students, offering a community of students extra help with course material. Spergel suggested providing a wider variety of on-ramps that would allow students to get expertise in data science in different ways—for example, fully funding master’s programs in data science or ML at minority-serving institutions, which would remove the cost barrier. Beyond providing grants, Spergel stressed the importance of developing strong programs and building capacity in these fields at Historically Black Colleges and Universities, Tribal Colleges and Universities, and other minority-serving institutions, and creating opportunities for experts in these domains to train the next generation.
+
+Parker emphasized the importance of making infrastructure available to advance equity and diversity in AI. The National AI Research Resource Task Force17 was directed by Congress to design an implementation plan for a large-scale federated set of resources that would be widely accessible. The concept is to make resources available through a single tool with user and educational resources and provide access through a proposal system for data and computing resources. Parker explained that such a national resource would not only stimulate innovation but also diversify the students who can be trained and do research in the AI space.
+
+### Enhancing Multisector and Interdisciplinary Collaborations
+
+Participants emphasized the importance of multisector meetings and platforms among academia, the private sector, and government to create positive feedback loops for interdisciplinary collaboration. Infrastructure to facilitate incentives and training could enable the ML/AI and Earth system science communities to come together to address societally relevant questions. Hattem suggested developing successful models of multisector and interdisciplinary collaborations that can be incrementally built on and socialized to introduce common languages and new ways of working. Furthermore, Hattem encouraged bringing people together who are mission-motivated through the development of new models that would harness the capabilities of local communities; organizing a social enterprise structure with continual impacts could garner investments from philanthropy and development banks. Stepping back, Spergel recognized that advances in ML/AI provide opportunities to make progress and gain deeper insights into climate and other pressing issues, particularly for students and professionals who are just starting their careers.
+
+___________________
+
+17 See https://www.ai.gov/nairrtf
+
+**Suggested Citation:** "Identifying Future Opportunities to Accelerate Progress." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+This page intentionally left blank.
+
+Next Chapter: Closing Thoughts
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+Previous Chapter: Identifying Future Opportunities to Accelerate Progress
+
+**Suggested Citation:** "Closing Thoughts." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## Closing Thoughts
+
+The workshop underscored broad interest in and unique challenges for using ML/AI approaches to advance Earth system science and its applications. At the same time, the dialogue among Earth system science experts, ML/AI researchers, social and behavioral scientists, ethicists, and decision makers from academia, government, and the private sector facilitated by this workshop also surfaced challenges and risks ranging from data and technology issues to ethical and workforce considerations. Overall, participants recognized opportunities for the convergence of ML/AI approaches with the Earth system science field to facilitate knowledge discovery; improve the usability and accessibility of existing Earth science data workflows; and address the information needs of decision makers, communities, and other stakeholders.
+
+## EMERGING ML/AI APPROACHES AND OPPORTUNITIES FOR MULTIDISCIPLINARY COLLABORATION
+
+Earth system science presents enormous computing and analysis challenges. Using ML/AI tools offer opportunities to improve predictive models, utilize computing resources in a way that is faster and less costly, improve understanding of the Earth system, and bring together disparate fields of study. For Earth system science applications, participants discussed the importance of benchmark datasets, which allow a quantitative evaluation of ML approaches and a separation of concerns among domain scientists, ML experts, and high-performance computing experts. Participants also emphasized the importance of embedding physical laws and prior knowledge within ML algorithms, especially in fields such as climate science where researchers seek to detect small signals in a noisy system and regimes may shift; these considerations are not typically accounted for in conventional ML approaches. Participants also discussed how ML/AI could be incorporated into the traditional data assimilation framework used in Earth system science.
+
+ML/AI tools could also be used to understand and integrate social and human engineered systems into Earth system science. Participants noted that these types of applications would be highly relevant to advancing climate change decision support specifically and could help illuminate the socioeconomic asymmetries that will be exacerbated by climate change. Key gaps were identified, such as the flow of uncertainty, causality and linkages between the different parts of the complex Earth system, the ultimate connection between these physical models and risk, and how to account for uncertainties in human behavior.
+
+As Earth system scientists increasingly incorporate ML/AI methods into their work, several participants emphasized that XAI—insights into where decisions are being made in AI algorithms—and interpretable AI—understanding of how and why decisions are made by an algorithm—are approaches that offer opportunities to uncover problematic strategies, build trust, choose appropriate tools or algorithms, and learn something new. Several workshop participants suggested that interpretability of an ML/AI method should be a design goal from the outset of a workflow in order to advance science.
+
+Several participants noted that a central challenge in using ML/AI to advance Earth system science is bridging the gap between domain scientists and ML/AI experts in the philosophy, vocabulary, practices, purposes, and benchmarks of the two communities. Off-the--
+
+**Suggested Citation:** "Closing Thoughts." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+shelf ML tools are often not sufficient for Earth system applications. Thus, engaging domain scientists in the design of ML/AI approaches from the beginning could bring physical and prior scientific knowledge into the ML/AI design. Participants identified an opportunity to develop and foster “ML domain scientists” who would have expertise in both of these fields.
+
+## FACILITATING OPEN SCIENCE
+
+Advances in data, software, and computing are enabling transformational changes in the way science is done. Participants shared visions of scientists with different areas of expertise working together to increase the pace and impact of the science being done at the intersection of Earth system science and ML/AI. Current workflows for data analysis—including highly distributed data, time intensive data wrangling, and limited sharing and reuse of the data analysis workflow—are inefficient and present barriers to collaboration, inclusion, and knowledge transfer. The data-intensive nature of ML/AI research exacerbates these problems, forcing the Earth system science community to confront the limitations of the current paradigm. In recent years, there has been a sustained investment in Earth observing systems and models, as well as the growth of global, scalable cloud storage, computing, and infrastructure. Participants explained that these capabilities are not yet being utilized effectively, and open science provides an opportunity to support global creativity and a more broadly inclusive research community. However, making data open is not the same as fully democratizing science—participants identified other steps that could be useful, including preparing data for analysis, offsetting the cost of experimentation, and bringing communities together to address blind spots and biases to cultivate an inclusive community of practice.
+
+In order to achieve open data, open source, and open knowledge, many participants identified the need for a culture shift that rejects the “not invented here” attitude and encourages inclusion and collective contributions to community code. Much of the data and computing tools are publicly generated, and both the public and private sector would likely benefit from a common unified infrastructure that supports multisector collaborations. Participants also suggested building capacity and making subsidies for resources like cloud computing available to enable equitable access and avoid replicating existing inequalities.
+
+## RESPONSIBLE AND ETHICAL USE OF ML/AI APPROACHES
+
+Workshop participants highlighted the importance of ethical and responsible use of ML/AI in Earth system science. Values and ethical choices are already being made before and after ML/AI tools are introduced, and participants discussed the importance of recognizing, explaining, and improving these choices. Specifically for Earth system science, there are ethical challenges with training data, ML/AI models, workforce training, and interactions with society. Several participants identified a need for sustainable AI to address challenges with the current paradigm (e.g., exploitative data practices, barriers to entry, energy footprint) as well as opportunities to integrate responsible AI into goals for climate action. Ethical questions at the intersection of ML/AI and Earth system science pose unique and urgent challenges: The scale and pace of impact of ML/AI approaches may be larger than existing Earth system science tools; ethical decisions about Earth system science issues may be made by nonexperts; ML/AI have the
+
+**Suggested Citation:** "Closing Thoughts." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+capacity to create feedback loops and exacerbate disparities; and ML/AI could open new science questions for which ethical dimensions may not have been considered.
+
+## EDUCATING THE WORKFORCE AT THE INTERSECTION OF ML/AI AND EARTH SYSTEM SCIENCE
+
+Several educational challenges and opportunities at the intersection of Earth system science and ML/AI were raised throughout the workshop. Participants identified gaps in education for those entering the workforce at the intersection of ML/AI and Earth system science. Employers are looking for production level skills and workers who know how to optimize, automate, and process large amounts of data. Those entering the workforce would likely benefit from training on tools that scale to real-world datasets. A vision was suggested in which data science would be fully embraced as part of a domain science curriculum in order to ensure that ML/AI are properly leveraged. Such a curriculum could include, for example, requiring learning the fundamentals of data analysis, statistics, and scientific computing as a basis for launching into an ML/AI application, as well as developing a climate or Earth system data science discipline. Software development and data science could be incorporated as part of proposals and projects instead of treated as an afterthought, and experiential learning through partnerships with industry could be valuable. While many online courses and tutorials are available in ML/AI, there is a lack of Earth science applications featured in these resources, and building learning communities to develop the workforce was suggested.
+
+An urgent need was also identified by many participants to broaden the participation of minoritized groups given the lack of diversity and equity in the geosciences and computer sciences. In order to prioritize diversity, equity, and inclusion in the workforce, participants discussed the need for continued investment and the creation of pathways. While many strategies would be needed to create pathways into the workforce, examples may include paid internships; creative teaching approaches and curricula; and partnerships with industry to adopt, adapt, and improve strategies. Participants discussed potential roles for federal agencies and professional organizations to address workforce development challenges, strengthen partnerships between academia and the private sector, and expand the accessibility of existing programs like NSF’s REUs.
+
+## USING ML/AI FOR DATA-DRIVEN DECISION MAKING
+
+One application of Earth system science is real-time decision making, and participants discussed the role of ML/AI in bringing together physical models, prior knowledge, and data-driven mechanisms to serve the needs of end users. Rapidly growing large and structured datasets have enabled ML/AI to be used effectively, particularly when coupled with physics-based models. ML could be an important tool to produce probabilistic forecasts, including uncertainty quantification about the likelihood of a forecast, which can inform decision making. Many challenges in this space remain, including advancing from success with simple problems to more complex problems, breaking down barriers to entry for learning ML/AI methods, and considering the fragility and robustness of ML/AI when making decisions. Participants also discussed how to meet the needs of the end user—for example, how much information to provide and which decision metrics to use—and the remaining challenges of translating research advances into operational practice.
+
+**Suggested Citation:** "Closing Thoughts." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## FUNDING OPPORTUNITIES TO ACCELERATE PROGRESS
+
+Participants discussed funding considerations to make progress in research, applications, and education at the intersection of ML/AI and Earth system science. Mechanisms may be needed to facilitate large-scale interdisciplinary work through novel partnerships with government agencies, academia, private industry, and nonprofits. The expansion of interdisciplinary homes for young scholars may require incentives to break down disciplinary silos in academia. Diversifying the fields of ML/AI and Earth system science was a repeated theme in the funding context—particularly providing a wider variety of on-ramps and offsetting the costs of training or retraining students. The role of private foundations was described as playing a different but complementary role with government in order to improve the overall operational structure. In addition, participants highlighted opportunities for philanthropists and development banks to fund projects with social impacts.
+
+***
+
+Enthusiastic participation of both the Earth system science and ML/AI communities in the workshop indicates wide interest in fostering collaborations and knowledge exchange between these domains. Participants anticipated that ML/AI methods will ultimately be tools that will be used in combination with, for example, inverse methods and data assimilations, rather than a magic bullet to solve every Earth system science problem. Participants offered actionable steps to make progress, including creating educational pathways so that students and professionals who understand Earth system science can innovate in ML/AI, incorporating ethical and responsible AI into Earth system science applications, institutionalizing the use of open science and open data, pursuing research in how people make decisions, and developing infrastructure to support these innovations. The intersection of ML/AI and Earth system science is ripe for creative thinking around partnerships, knowledge transfer, and funding mechanisms to support advancements in societally relevant science.
+
+Next Chapter: References
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## References
+
+Abarbanel, H. D. I., P. J. Rozdeba, and S. Shirman. 2018. “Machine Learning: Deepest Learning as Statistical Data Assimilation Problems.” _Neural Computation_ 30(8):2025–2055. https://doi.org/10.1162/neco_a_01094.
+
+Abernathey, R. P., T. Augspurger, A. Banihirwe, C. C. Blackmon-Luca, T. J. Crone, C. L. Gentemann, J. J. Hamman, N. Henderson, C. Lepore, T. A. McCaie, N. H. Robinson, and R. P. Signell. 2021. "Cloud-Native Repositories for Big Scientific Data." _Computing in Science & Engineering_ 23(2):26–35. https://doi.org/10.1109/MCSE.2021.3059437.
+
+Adewoyin, R. A., P. Dueben, P. Watson, Y. He, and R. Dutta. 2021. “TRU-NET: A Deep Learning Approach to High Resolution Prediction of Rainfall.” _Machine Learning_ 110:2035–2062. https://doi.org/10.1007/s10994-021-06022-6.
+
+Albers, J. R., and M. Newman. 2019. “A Priori Identification of Skillful Extratropical Subseasonal Forecasts.” _Geophysical Research Letters_ 46(21):12527–12536. https://doi.org/10.1029/2019gl085270.
+
+Albers, J. R., and M. Newman. 2021. “Subseasonal Predictability of the North Atlantic Oscillation.” _Environmental Research Letters_ 16:044024. https://doi.org/10.1088/1748-9326/abe781.
+
+Allen, J., and M. Tippett. 2015. “The Characteristics of United States Hail Reports: 1955–2014.” _Journal of Severe Storms Meteorology_ 10:1–31.
+
+Allen, R. 2012. “Transforming Earthquake Detection?” _Science_ 335(6066):297–298. https://doi.org/10.1126/science.1214650.
+
+Arcomano, T., I. Szunyogh, J. Pathak, A. Wikner, B. R. Hunt, and E. Ott. 2020. “A Machine Learning-based Global Atmospheric Forecast Model.” _Geophysical Research Letters_ 47:e2020GL087776. https://doi.org/10.1029/2020GL087776.
+
+Barnes, E. A., R. J. Barnes, and N. Gordillo. 2021. “Adding Uncertainty to Neural Network Regression Tasks in the Geosciences.” https://arxiv.org/abs/2109.07250.
+
+Beucler, T., M. Pritchard, S. Rasp, J. Ott, P. Baldi, and P. Gentine. 2021a. “Enforcing Analytic Constraints in Neural Networks Emulating Physical Systems.” _Physical Review Letters_ 126:098302. https://doi.org/10.1103/PhysRevLett.126.098302.
+
+Beucler, T., M. Pritchard, J. Yuval, A. Gupta, L. Peng, S. Rasp, F. Ahmed, P. A. O’Gorman, J. D. Neelin, N. J. Lutsko, and P. Gentine. 2021b. “Climate-Invariant Machine Learning.” arXiv preprint. https://doi.org/10.48550/arXiv.2112.08440.
+
+Brooks, B. A., M. Protti, T. Ericksen, J. Bunn, F. Vega, E. S. Cochran, C. Duncan, J. Avery, S. E. Minson, E. Chaves, J. C. Baez, J. Foster, and C. L. Glennie. 2021. “Robust Earthquake Early Warning at a Fraction of the Cost: ASTUTI Costa Rica.” _AGU Advances_ 2:e2021AV000407. https://doi.org/10.1029/2021AV000407.
+
+Buldyrev, S., R. Parshani, G. Paul, H. E. Stanley, and S. Havlin. 2010. “Catastrophic Cascade of Failures in Interdependent Networks.” _Nature_ 464:1025–1028. https://doi.org/10.1038/nature08932.
+
+Clutton-Brock, P., D. Rolnick, P. L. Donti, and L. H. Kaack. 2021. _Climate Change and AI: Recommendations for Government Action._ Global Partnership on AI Report. https://www.gpai.ai/projects/climate-change-and-ai.pdf.
+
+Cochran, E. S. 2018. “To Catch a Quake.” _Nature Communications_ 9(1):1–4. https://doi.org/10.1038/s41467-018-04790-9.
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+de La Beaujardière, J. 2019. “A Geodata Fabric for the 21st Century.” _Eos_ 100. https://doi.org/10.1029/2019EO136386.
+
+Dueben, P., U. Modigliani, A. Geer, S. Siemen, F. Pappenberger, P. Bauer, A. Brown, M. Palkovic, B. Raoult, N. Wedi, and V. Baousis. 2021. “Machine Learning at ECMWF: A Roadmap for the Next 10 Years.” Technical Memorandum No. 878. https://doi.org/10.21957/ge7ckgm.
+
+Ebert-Uphoff, I., and K. Hilburn. 2020. "Evaluation, Tuning, and Interpretation of Neural Networks for Working with Images in Meteorological Applications." _Bulletin of the American Meteorological Society_ 101(12):E2149–E2170. https://doi.org/10.1175/BAMS-D-20-0097.1.
+
+Ganguly, A. R., E. Kodra, U. Bhatia, M. E. Warner, K. Duffy, A. Banerjee, and S. Ganguly. 2018. "Data-driven Solutions." _Climate 2020: Degrees of Devastation_ 82–85.
+
+Gebru, T., J. Morgenstern, B. Vecchione, J. W. Vaughan, H. Wallach, H. Daumé III, and K. Crawford. 2020. “Datasheets for Datasets.” _ArXiv:1803.09010 [Cs]_. http://arxiv.org/abs/1803.09010.
+
+Gentemann, C. L., C. Holdgraf, R. Abernathey, D. Crichton, J. Colliander, E. J. Kearns, Y. Panda, and R. P. Signell. 2021. “Science Storms the Cloud.” _AGU Advances_ 2:e2020AV000354. https://doi.org/10.1029/2020AV000354.
+
+Gupta, A., P. J. Haley, D. N. Subramani, and P. F. J. Lermusiaux. 2019. “Fish Modeling and Bayesian Learning for the Lakshadweep Islands.” _OCEANS ’19 MTS/IEEE Seattle_. https://doi.org/10.23919/OCEANS40490.2019.8962892.
+
+Gupta, A., and P. F. J. Lermusiaux. 2021. “Neural Closure Models for Dynamical Systems.” _Proceedings of The Royal Society A_ 477(2252):1–29. https://doi.org/10.1098/rspa.2020.1004.
+
+Haley, Jr., P. J., A. Gupta, C. Mirabito, and P. F. J. Lermusiaux. 2020. “Towards Bayesian Ocean Physical-Biogeochemical-Acidification Prediction and Learning Systems for Massachusetts Bay.” _OCEANS ’20 IEEE/MTS_, 1–9. https://doi.org/10.1109/IEEECONF38699.2020.9389210.
+
+Kaack, L., P. Donti, E. Strubell, G. Kamiya, F. Creutzig, and D. Rolnick. 2021. “Aligning Artificial Intelligence with Climate Change Mitigation.” _HAL Open Science._https://hal.archives-ouvertes.fr/hal-03368037/document.
+
+Klocek, S., H. Dong, M. Dixon, P. Kanengoni, N. Kazmi, P. Luferenko, Z. Lv, S. Sharma, J. Weyn, and S. Xiang. 2021. “MS-nowcasting: Operational Precipitation Nowcasting with Convolutional LSTMs at Microsoft Weather.” NeurIPS 2021 Workshop on Tackling Climate Change with Machine Learning. https://www.climatechange.ai/papers/neurips2021/19.
+
+Kubo, H., T. Kunugi, W. Suzuki, S. Suzuki, and S. Aoi. 2020. “Hybrid Predictor for Ground-motion Intensity with Machine Learning and Conventional Ground Motion Prediction Equation.” _Scientific Reports_ 10:11871. https://doi.org/10.1038/s41598-020-68630-x.
+
+Kulkarni, C. S., A. Gupta, and P. F. J. Lermusiaux. 2020. “Sparse Regression and Adaptive Feature Generation for the Discovery of Dynamical Systems.” In _DDDAS 2020: Dynamic Data Driven Application Systems. Lecture Notes in Computer Science_ 12312:208–216, edited by F. Darema, E. Blasch, S. Ravela, and A. Aved. https://doi.org/10.1007/978-3-030-61725-7_25.
+
+Labe, Z. M., and E. A. Barnes. 2021. “Predicting Slowdowns in Decadal Climate Warming Trends with Explainable Neural Networks.” Earth and Space Science Open Archive preprint. https://doi.org/10.1002/essoar.10508874.1.
+
+Laloyaux, P., T. Kurth, P. D. Dueben, and D. Hall. 2022. “Deep Learning to Estimate Model Biases in an Operational NWP Assimilation System.” Earth and Space Science Open Archive preprint. https://doi.org/10.1002/essoar.10510309.1.
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Lapuschkin, S., S. Wäldchen, A. Binder, G. Montavon, W. Samek, and K.-R. Müller. 2019. “Unmasking Clever Hans Predictors and Assessing What Machines Really Learn.” _Nature Communications_ 10:1096. https://doi.org/10.1038/s41467-019-08987-4.
+
+Lermusiaux, P. F. J., P. J. Haley Jr., S. Jana, A. Gupta, C. S. Kulkarni, C. Mirabito, W. H. Ali, D. N. Subramani, A. Dutt, J. Lin, A. Y. Shcherbina, C. M. Lee, and A. Gangopadhyay. 2017a. “Optimal Planning and Sampling Predictions for Autonomous and Lagrangian Platforms and Sensors in the Northern Arabian Sea.” _Oceanography_ 30(2):172–185. https://doi.org/10.5670/oceanog.2017.242.
+
+Lermusiaux, P. F. J., D. N. Subramani, J. Lin, C. S. Kulkarni, A. Gupta, A. Dutt, T. Lolla, P. J. Haley Jr., W. H. Ali, C. Mirabito, and S. Jana. 2017b. “A Future for Intelligent Autonomous Ocean Observing Systems.” _Journal of Marine Research_ 75(6):765–813. https://doi.org/10.1357/002224017823524035.
+
+Lermusiaux, P. F. J., C. Mirabito, P. J. Haley, Jr., W. H. Ali, A. Gupta, S. Jana, E. Dorfman, A. Laferriere, A. Kofford, G. Shepard, M. Goldsmith, K. Heaney, E. Coelho, J. Boyle, J. Murray, L. Freitag, and A. Morozov. 2020. “Real-time Probabilistic Coupled Ocean Physics-Acoustics Forecasting and Data Assimilation for Underwater GPS.” _OCEANS ’20 IEEE/MTS_, 1–9. https://doi.org/10.1109/IEEECONF38699.2020.9389003.
+
+Li, Z., M. A. Meier, E. Hauksson, Z. Zhan, and J. Andrews. 2018. “Machine Learning Seismic Wave Discrimination: Application to Earthquake Early Warning.” _Geophysical Research Letters_ 45(10):4773–4779. https://doi.org/10.1029/2018GL077870.
+
+Lin, H., and S. G. Penny. 2021. “Fourier Reservoir Computing for Data-Driven Prediction of MultiScale Coupled Quasi-geostrophic Dynamics.” Earth and Space Science Open Archive preprint. https://doi.org/10.1002/essoar.10509867.1.
+
+Lindsey, N. J., H. Rademacher, and J. B. Ajo-Franklin. 2020. “On the Broadband Instrument Response of Fiber-optic DAS Arrays.” _Journal of Geophysical Research: Solid Earth_ 125:e2019JB018145. https://doi.org/10.1029/2019JB018145.
+
+Lu, P., and P. F. J. Lermusiaux. 2021. “Bayesian Learning of Stochastic Dynamical Models.” _Physica D_ 427:133003. https://doi.org/10.1016/j.physd.2021.133003.
+
+Mamalakis, A., I. Ebert-Uphoff, and E. A. Barnes. 2021. “Neural Network Attribution Methods for Problems in Geoscience: A Novel Synthetic Benchmark Dataset.” https://arxiv.org/abs/2103.10005.
+
+Mamalakis, A., E. A. Barnes, and I. Ebert-Uphoff. 2022. “Investigating the Fidelity of Explainable Artificial Intelligence Methods for Applications of Convolutional Neural Networks in Geoscience.” https://arxiv.org/abs/2202.03407.
+
+Mayer, K. J., and E. A. Barnes. 2021. “Subseasonal Forecasts of Opportunity Identified by an Explainable Neural Network.” _Geophysical Research Letters_ 48:e2020GL092092. https://doi.org/10.1029/2020GL092092.
+
+McGovern, A., R. Lagerquist, D. J. Gagne II, G. E. Jergensen, K. L. Elmore, C. R. Homeyer, and T. Smith. 2019. "Making the Black Box More Transparent: Understanding the Physical Implications of Machine Learning." _Bulletin of the American Meteorological Society_ 100(11):2175–2199. https://doi.org/10.1175/BAMS-D-18-0195.1.
+
+McGovern, A., I. Ebert-Uphoff, D. Gagne, and A. Bostrom. 2022. “Why We Need to Focus on Developing Ethical, Responsible, and Trustworthy Artificial Intelligence Approaches for Environmental Science.” _Environmental Data Science_ 1:E6. https://doi.org/10.1017/eds.2022.5.
+
+Meier, M. A., Z. E. Ross, A. Ramachandran, A. Balakrishna, S. Nair, P. Kundzicz, Z. Li, J. Andrews, E. Hauksson, and Y. Yue. 2019. “Reliable Real-time Seismic Signal/Noise Discrimination with
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Machine Learning.” _Journal of Geophysical Research: Solid Earth_, 124(1):788–800. https://doi.org/10.1029/2018JB016661.
+
+Miller, T. 2019. “Explanation in Artificial Intelligence: Insights from the Social Sciences.” _Artificial Intelligence_: 267:1–38. https://doi.org/10/gfwcxw.
+
+Montavon, G., S. Lapuschkin, A. Binder, W. Samek, and K. Müller. 2017. “Explaining Nonlinear Classification Decisions with Deep Taylor Decomposition.” _Pattern Recognition_ 65:211–222. https://doi.org/10.1016/j.patcog.2016.11.008.
+
+Mousavi, S. M., W. L. Ellsworth, W. Zhu, L. Y. Chuang, and G. C. Beroza. 2020. “Earthquake Transformer—An Attentive Deep-learning Model for Simultaneous Earthquake Detection and Phase Picking.” _Nature Communications_ 11(1):1–12. https://doi.org/10.1038/s41467-020-17591-w.
+
+NASEM (National Academies of Sciences, Engineering, and Medicine). 2021. _Next Generation Earth Systems Science at the National Science Foundation_. Washington, DC: The National Academies Press. https://doi.org/10.17226/26042.
+
+NASEM. 2022. _Human-AI Teaming: State-of-the-Art and Research Needs._ Washington, DC: The National Academies Press. https://doi.org/10.17226/26355.
+
+NOAA (National Oceanic and Atmospheric Administration). 2021. “NOAA Artificial Intelligence Strategic Plan 2021-2025: Analytics for Next-Generate Earth Science.” https://sciencecouncil.noaa.gov/Portals/0/Artificial%20Intelligence%20Strategic%20Plan_Final%20Signed.pdf?ver=2021-01-19-114254-380.
+
+Olson, R. S., W. La Cava, P. Orzechowski, R. J. Urbanowicz, and J. H. Moore. 2017. “PMLB: A Large Benchmark Suite for Machine Learning Evaluation and Comparison.” _BioData Mining_ 10:36. https://doi.org/10.1186/s13040-017-0154-4.
+
+Pagan, N., and F. Dörfler. 2019. “Game Theoretical Inference of Human Behavior in Social Networks.” _Nature Communications_ 10:5507. https://doi.org/10.1038/s41467-019-13148-8.
+
+Patil, D. J., and H. Mason. 2014. “Data Driven: Creating a Data Culture.” O’Reilly, December 14. https://www.oreilly.com/content/data-driven.
+
+Penny, S. G., T. A. Smith, T. Chen, J. A. Platt, H. Lin, M. Goodliff, and H. D. I. Abarbanel. 2021. “Integrating Recurrent Neural Networks with Data Assimilation for Scalable Data-Driven State Estimation.” https://doi.org/10.48550/arXiv.2109.12269.
+
+Platt, J. A., A. Wong, R. Clark, S. G. Penny, and H. D. I. Abarbanel. 2021. "Robust Forecasting Using Predictive Generalized Synchronization in Reservoir Computing." _Chaos_ 31:123118. https://doi.org/10.1063/5.0066013.
+
+Potvin, C. K., C. Broyles, P. S. Skinner, H. E. Brooks, and E. Rasmussen. 2019. “A Bayesian Hierarchical Modeling Framework for Correcting Reporting Bias in the U.S. Tornado Database.” _Weather and Forecasting_ 34:15–30. https://doi.org/10.1175/WAF-D-18-0137.1.
+
+Raoult, B., and F. Pinault. 2022. “CliMetLab: A Python Package to Support the Development of Machine Learning Applications Based on Climate and Weather Data.” 12th Symposium on Advances in Modeling and Analysis Using Python. Houston, January 24, 2022.
+
+Rasp, S., M. S. Pritchard, and P. Gentine. 2018. “Deep Learning to Represent Subgrid Processes in Climate Models.” _Proceedings of the National Academy of Sciences_ 115(39):9684–9689. https://doi.org/10.1073/pnas.1810286115.
+
+Ravuri, S., K. Lenc, M. Willson, D. Kangin, R. Lam, P. Mirowski, M. Fitzsimons, M. Athanassiadou, S. Kashem, S. Madge, R. Prudden, A. Mandhane, A. Clark, A. Brock, K. Simonyan, R. Hadsell, N. Robinson, E. Clancy, A. Arribas, and S. Mohamed. 2021. “Skillful Precipitation Nowcasting Using Deep Generative Models of Radar.” _Nature_ 597:672–677. https://doi.org/10.1038/s41586-021-03854-z.
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Reichstein, M., G. Camps-Valls, B. Stevens, M. Jung, J. Denzler, N. Carvalhais, and Prabhat. 2019. “Deep Learning and Process Understanding for Data-driven Earth System Science.” _Nature_ 566:195–204. https://doi.org/10.1038/s41586-019-0912-1.
+
+Rolnick, D., P. L. Donti, L. H. Kaack, K. Kochanski, A. Lacoste, K. Sankaran, A. S. Ross, N. Milojevic-Dupont, N. Jaques, A. Waldman-Brown, A. Luccioni, T. Maharaj, E. D. Sherwin, S. K. Mukkavilli, K. P. Kording, C. Gomes, Y. Ng, D. Hassabis, J. C. Platt, F. Creutzig, J. Chayes, and Y. Bengio. 2022. “Tackling Climate Change with Machine Learning.” _ACM Computing Surveys_ 55(2):1–96. https://doi.org/10.1145/3485128.
+
+Ross, Z. E., M. Men-Andrin, E. Hauksson, and T. Heaton. 2018. “Generalized Seismic Phase Detection with Deep Learning.” _Bulletin of the Seismological Society of America_ 108 (5A):2894–2901.
+
+Ross, Z. E., E. S. Cochran, D. T. Trugman, and J. D. Smith. 2020. “3D Fault Architecture Controls the Dynamism of Earthquake Swarms.” _Science_ 368(6497):1357–1361. https://doi.org/10.1126/science.abb0779.
+
+Rouet-Leduc, B., C. Hulbert, N. Lubbers, K. Barros, C. J. Humphreys, and P. A. Johnson. 2017. “Machine Learning Predicts Laboratory Earthquakes.” _Geophysical Research Letters_ 44:9276–9282. https://doi.org/10.1002/2017GL074677.
+
+Rudin, C. 2019. “Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead.” _Nature Machine Intelligence_ 1:206–215. https://doi.org/10.1038/s42256-019-0048-x.
+
+Sambasivan, N., S. Kapania, H. Highfill, D. Akrong, P. K. Paritosh, and L. M. Aroyo. 2021. “Everyone Wants to Do the Model Work, Not the Data Work": Data Cascades in High-Stakes AI. In _Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI ’21)_. Association for Computing Machinery, 39, 1–15. https://doi.org/10.1145/3411764.3445518.
+
+San, O., and R. Maulik. 2018. “Machine Learning Closures for Model Order Reduction of Thermal Fluids.” _Applied Mathematical Modelling_ 60:681–710. https://doi.org/10.1016/j.apm.2018.03.037.
+
+Sønderby, C. K., L. Espeholt, J. Heek, M. Dehghani, A. Oliver, T. Salimans, S. Agrawal, J. Hickey, and N. Kalchbrenner. 2020. “MetNet: A Neural Weather Model for Precipitation Forecasting.” arXiv preprint. arXiv:2003.12140.
+
+Toms, B. A., E. A. Barnes, and I. Ebert-Uphoff. 2020. “Physically Interpretable Neural Networks for the Geosciences: Applications to Earth System Variability.” _Journal of Advances in Modeling Earth Systems_ 12:e2019MS002002. https://doi.org/10.1029/2019MS002002.
+
+van den Ende, M. P. A., and J.-P. Ampuero. 2020. “Automated Seismic Source Characterization Using Deep Graph Neural Networks.” _Geophysical Research Letters_ 47:e2020GL088690. https://doi.org/10.1029/2020GL088690.
+
+Veillette, M., A. Samsi, and C. Mattioli. 2020. “SEVIR: A Storm Event Imagery Dataset for Deep Learning Applications in Radar and Satellite Meteorology.” _Advances in Neural Information Processing Systems_ 33:22009–22019.
+
+Wan, Z. Y., P. Vlachas, P. Koumoutsakos, and T. Sapsis. 2018. “Data-assisted Reduced-order Modeling of Extreme Events in Complex Dynamical Systems.” _PLOS ONE_ 13(5):e0197704. https://doi.org/10.1371/journal.pone.0197704.
+
+Wang, L., A. H. Hakim, J. Ng, C. Dong, and K. Germaschewski. 2020. “Exact and Locally Implicit Source Term Solvers for Multifluid-Maxwell Systems.” _Journal of Computational Physics_ 415:109510. https://doi.org/10.1016/j.jcp.2020.109510.
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Xie, Y., M. Ebad Sichani, J. E. Padgett, and R. DesRoches. 2020. “The Promise of Implementing Machine Learning in Earthquake Engineering: A State-of-the-Art Review.” _Earthquake Spectra_ 36(4):1769–1801. https://doi.org/10.1177/8755293020919419.
+
+[](https://www.nationalacademies.org/)
+*
+### Dropdown items
+
+### My Academies
+
+    *   Login
+    *   Personal Library
+    *   Account settings
+    *   Logout
+
+# Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop(2022)
+
+## Chapter: Appendix A: Statement of Task
+
+*   Get this book
+
+ Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+<< Previous Chapter: References
+
+ Page 49 ShareCiteBookmark
+
+**Suggested Citation:** "Appendix A: Statement of Task." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Save
+
+Cancel
+
+# Appendix A: Statement of Task
+
+The National Academies of Sciences, Engineering, and Medicine will organize a workshop to bring together experts to explore the opportunities and challenges of machine learning and artificial intelligence (ML/AI) to advance Earth system science. The workshop will explore how these approaches can contribute to improving understanding, analysis, modeling, prediction, and decision making. Specific topics to be addressed could include:
+
+*   Review **current** applications of ML/AI to Earth system science.
+*   Survey **emerging** ML/AI technologies and approaches that could be useful for Earth system science, such as:
+    *   Integrating physics, expert knowledge, and ML/AI techniques to enrich models and forecasts;
+    *   Understanding and interpreting results produced by ML models; and
+    *   Bridging research and operations to support decisionmaking.
+
+*   Consider **challenges and risks** of using ML/AI for Earth system science, and discuss ways to mitigate these risks, such as:
+    *   Justice, equity, diversity, and inclusion (JEDI) and ethical implications;
+    *   The interface of ML/AI with existing and emerging hardware, software, tools, and approaches;
+    *   Workforce capacity and skill sets; and
+    *   Data requirements and limitations.
+
+*   Identify **future opportunities** to accelerate progress, such as:
+    *   Novel funding mechanisms and partnerships; and
+    *   Potential disruptions that could lead to rapid scientific, societal, and/or institutional progress.
+
+ Page 50 ShareCiteBookmark
+
+**Suggested Citation:** "Appendix A: Statement of Task." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Save
+
+Cancel
+
+This page intentionally left blank.
+
+ Page 49 ShareCiteBookmark
+
+**Suggested Citation:** "Appendix A: Statement of Task." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Save
+
+Cancel
+
+ Page 50 ShareCiteBookmark
+
+**Suggested Citation:** "Appendix A: Statement of Task." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+Save
+
+Cancel
+
+Next Chapter: Appendix B: Planning Committee Biographies >>
+
+Subscribe to Emails from the National Academies
+
+ Stay up to date on activities, publications, and events by subscribing to email updates.
+
+Subscribe
+
+[](https://www.nationalacademies.org/)
+
+Driving progress for the benefit of society by providing independent, objective advice to advance science, engineering, and medicine.
+
+### The National Academies
+
+*   National Academy of Sciences
+*   National Academy of Engineering
+*   National Academy of Medicine
+*   Careers
+*   National Academies Press (NAP)
+*   Transportation Research Board Reports
+*   MyAcademies Accounts
+*   Contact Us
+
+### Journals and Periodicals
+
+*   PNAS
+*   PNAS Nexus
+*   ILAR Journal
+*   Issues in Science and Technology
+*   Transportation Research Record: Journal of the Transportation Research Board
+*   TR News
+
+### Visit
+
+*   Visit Us Information
+*   Current Operating Status
+*   Beckman Center
+*   Archives
+
+### Legal
+
+*   Policies and Procedures
+*   Legal Information
+*   Privacy Statement
+*   Terms of Use
+
+© 2026 National Academy of Sciences. All Rights Reserved.
+
+[](https://www.facebook.com/NationalAcademies/)[](https://www.linkedin.com/company/the-national-academies/posts/?feedView=all)[](https://x.com/TheNASEM)
+
+[](https://www.nationalacademies.org/)
+
+# Mobile Navigation
+
+## Primary Mobile Navigation
+
+*   ### Discover
+
+Trending Topics TransportationArtificial IntelligenceSpace, Security, and Conflicts See All Topics Our Work Consensus StudiesOutreach ActivitiesStanding Committees See All Work  Our Publications Our peer-reviewed reports present the evidence-based consensus of committees of experts.Explore the Latest News and Stories The latest news and stories, with context you can trust.
+*   ### Events
+
+Convening Activities Roundtables and ForumsWorkshopsSeminar/Webinar/Lecture Series  Events Upcoming eventsReplay See all events  Right Now & Next Up Stay in the loop with can’t-miss sessions, live events, and activities happening over the next two days.TRB Webinars Webinars are based on work from TRB Standing Technical Committees & the Cooperative Research Programs
+*   ### Engage
+
+Work with us Sponsoring a ProjectContribute ExpertiseCareers  Opportunities Engagement ProgramsGrants, Fellowships and AwardsScience Communication Awards   Congressional and Government Affairs Connecting policymakers with the National AcademiesBased On Science Answers to everyday science and health questions
+*   ### About
+
+National Academies PurposeProcess  Our People LeadershipProgram CentersCareers  Get in touch Press and MediaContact Us   Members Learn about membership to the three AcademiesCurrent Operating Status Information on building access, visitor requirements, and facility operations.
+
+### My Academies
+
+*   Login
+*   Personal Library
+*   Account settings
+*   Logout
+
+Donate
+
+Loading...
+
+# Subscribe
+
+## Subscribe
+
+1.    First Name
+2.    Last Name
+3.    Email  (required)
+4.   - [x]  I agree to receive emails from the National Academies  (required)
+
+Subscribe
+
+We respect your privacy and will never share your information.
+
+# Contents
+
+## Contents
+
+ Search this publication
+
+*   Front Matter i-x
+*   Overview 1-2
+*   Introduction 3-8
+*   Emerging Approaches for Using, Interpreting, and Integrating ML/AI for Earth System Science 9-18
+*   Challenges and Risks of Using ML/AI for Earth System Science 19-30
+*   Identifying Future Opportunities to Accelerate Progress 31-38
+*   Closing Thoughts 39-42
+*   References 43-48
+*   Appendix A: Statement of Task 49-50
+*   Appendix B: Planning Committee Biographies 51-54
+*   Appendix C: Workshop Agenda 55-58
+
+# Log In
+
+## Log In
+
+Sign in to access your saved publications, downloads, and email preferences.
+
+Former MyNAP users: You'll need to reset your password on your first login to MyAcademies. Click "Forgot password" below to receive a reset link via email. Having trouble? Visit our FAQ page to contact support.
+
+1.    Email  (required)
+2.    Password  (required)
+Forgot password
+
+Log In
+
+Don't have an account? Sign up
+
+# Register
+
+## Register
+
+1.    Email  (required)
+2.    New password  (required)
+3.    Retype password  (required)  Password must be at least 8 characters
+4.   - [x]  I agree to receive emails from the National Academies
+5.   - [x]  I accept the terms of use  I accept the  terms of use
+
+Sign Up
+
+# Download as a Guest
+
+## Download as a Guest
+
+While logged on as a guest, you can download any of our free PDFs on nationalacademies.org . You will remain logged in until you close your browser.
+
+1.    Email  (required)
+2.   - [x]  Yes, send me emails when similar titles are published
+3.   - [x]  Yes, I accept the terms of use  Yes, I accept the  terms of use
+
+Continue
+
+Sign up for MyAcademies
+
+# Thank You
+
+## Thank You
+
+Thank you for creating a MyAcademies account!
+
+Enjoy free access to thousands of National Academies' publications, a 10% discount off every purchase, and build your personal library.
+
+# Forgot Password
+
+## Forgot Password
+
+Enter the email address for your MyAcademies (formerly MyNAP) account to receive password reset instructions.
+
+1.    Email  (required)
+
+Continue
+
+# Reset Requested
+
+## Reset Requested
+
+We sent password reset instructions to your email . Follow the link in that email to create a new password. Didn't receive it? Check your spam folder or contact us for assistance.
+
+Log In
+
+# Reset Password
+
+## Reset Password
+
+1.    New password  (required)
+2.    Retype password  (required)  Password must be at least 8 characters
+
+Reset Password
+
+# Reset Password
+
+## Reset Password
+
+Your password has been reset.
+
+Log In
+
+# Verify email
+
+## Verify email
+
+Verify Your Email Address
+
+We sent a verification link to your email. Please check your inbox (and spam folder) and follow the link to verify your email address. If you did not receive the email, you can request a new verification link below
+
+Resend Verification Email
+
+# Looking for other ways to read this?
+
+## IN ADDITION TO READING ONLINE, THIS TITLE IS AVAILABLE IN THESE FORMATS:
+
+PDF FREE DownloadPaperback $22.00 Add to CartEbook $17.99 Add to Cart
+
+MyNAP members **SAVE 10%** off online.
+
+ Not a MyNAP member yet? Register for a free account to start saving and receiving special member only perks.
+
+No thanks. I'll keep reading
+
+*   Contents
+*   Previous chapterChapterNext chapter
+*   Previous page Page  of 58 Next page
+*   Original Pages Text Pages
+*    Search this publication
+
+## Privacy Preference Center
+
+When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.
+
+More information
+
+Allow All
+### Manage Consent Preferences
+
+#### Strictly Necessary Cookies
+
+Always Active
+
+These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.
+
+#### Functional Cookies
+
+- [x] Functional Cookies
+
+These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.
+
+#### Performance Cookies
+
+- [x] Performance Cookies
+
+These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.
+
+#### Targeting Cookies
+
+- [x] Targeting Cookies
+
+These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+
+### Performance Cookies
+
+Clear
+
+- [x] checkbox label label
+
+Apply Cancel
+
+Consent Leg.Interest
+
+- [x] checkbox label label
+
+- [x] checkbox label label
+
+- [x] checkbox label label
+
+Reject All Confirm My Choices
+
+[](https://www.onetrust.com/products/cookie-consent/)
+
+This site uses cookies. For more information on cookies visit:https://www.nationalacademies.org/legal/privacy
+
+Continue
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+Previous Chapter: Appendix A: Statement of Task
+
+**Suggested Citation:** "Appendix B: Planning Committee Biographies." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## Appendix B: Planning Committee Biographies
+
+**L. Ruby Leung** (_Chair_) is a Battelle Fellow at Pacific Northwest National Laboratory. Her research broadly cuts across multiple areas in modeling and analysis of climate and water cycle including orographic precipitation, monsoon climate, extreme events, land surface processes, land-atmosphere interactions, and aerosol-cloud interactions. Leung is the chief scientist of the U.S. Department of Energy’s (DOE’s) Energy Exascale Earth System Model, a major effort to develop state-of-the-art capabilities for modeling human-Earth system processes on DOE’s next generation high-performance computers. She has organized several workshops sponsored by DOE, the National Science Foundation, the National Oceanic and Atmospheric Administration, and the National Aeronautics and Space Administration to define gaps and priorities for climate research. She currently serves as a member of the Board on Atmospheric Sciences and Climate of the National Academies of Sciences, Engineering, and Medicine and as an editor of the American Meteorological Society (AMS) _Journal of Hydrometeorology_. She has published more than 425 papers in peer-reviewed journals. Leung is an elected member of the National Academy of Engineering and Washington State Academy of Sciences and a fellow of AMS, the American Association for the Advancement of Science, and the American Geophysical Union (AGU). She is the recipient of the AGU Global Environmental Change Bert Bolin Award and Lecture in 2019, the AGU Atmospheric Science Jacob Bjerknes Lecture in 2020, DOE Distinguished Scientist Fellow in 2021, and the AMS Hydrologic Sciences Medal in 2022.
+
+**Ann Bostrom** is the Weyerhaeuser Endowed Professor in Environmental Policy in the Evans School of Public Policy & Governance at the University of Washington. She studies risk perception with a focus on mental models of hazardous processes, risk and science communication, and decision making under uncertainty. Dr. Bostrom is a fellow of the American Association for the Advancement of Science (AAAS) and of the Washington State Academy of Sciences (WSAS), and a fellow and former president of the Society for Risk Analysis. She is also currently serving as an elected board member for both AAAS and WSAS. She is a member of the leadership team and co-leads risk communication research in the National Science Foundation-funded AI Institute for Research on Trustworthy AI in Weather, Climate, and Coastal Oceanography (AI2ES), and is a co-principal investigator of the Cascadia CoPes Hazards Research Hub. Dr. Bostrom completed postdoctoral studies in cognitive aspects of survey methodology at the Bureau of Labor Statistics, and in engineering and public policy at Carnegie Mellon University, after earning her Ph.D. there in policy analysis. She also holds an M.B.A. from Western Washington University and a B.A. in English from the University of Washington. She is currently serving as a member of the national Advisory Committee on Earthquake Hazards Reduction.
+
+**Patrick Heimbach** is a computational oceanographer and W. A. “Tex” Moncrief, Jr., Chair III in Simulation-Based Engineering and Sciences at the University of Texas at Austin. His research focuses on ocean and ice dynamics and their role in the global climate system. He is an expert on the use of inverse methods applied to ocean and sea ice model parameter and state estimation, uncertainty quantification, and observing system design. Heimbach earned his Ph.D. in 1998 from the Max-Planck-Institute for Meteorology and the University of Hamburg, Germany. Among his professional activities, Heimbach serves on the National Academies of Sciences, Engineering, and Medicine’s Ocean Studies Board; the National Science Foundation’s Advisory Committee for
+
+**Suggested Citation:** "Appendix B: Planning Committee Biographies." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+the Office of Polar Programs; the CLIVAR/CliC Northern Ocean Regional Panel; and the U.S. CLIVAR Ocean Uncertainty Quantification working group.
+
+**Amy McGovern** is the Lloyd G. and Joyce Austin Presidential Professor in the School of Computer Science and School of Meteorology at the University of Oklahoma. She is also the director of the National Science Foundation’s AI Institute for Research on Trustworthy AI in Weather, Climate, and Coastal Oceanography. Dr. McGovern’s Ph.D. is in computer science from the University of Massachusetts (2002). She also has an M.S. in computer science from the University of Massachusetts Amherst (1998) and a B.S. (honors) in math/computer science from Carnegie Mellon University (1996). She has worked in the intersection of artificial intelligence and meteorology since 2005, when she joined the University of Oklahoma as faculty. Dr. McGovern became a fellow of the American Meteorological Society in 2021.
+
+**Diego Melgar** is the Ann and Lew Williams Chair of Earth Sciences and an assistant professor of geophysics in the Department of Earth Sciences at the University of Oregon. His research focuses on large earthquakes. He works on understanding the physics of faults using many diverse kinds of on-shore and off-shore data. He researches the hazards associated with these large events, working on tsunami modeling and coastal impacts, as well as studying how strong shaking can be forecast. Dr. Melgar was awarded the 2016 Charles Richter early career award from the Seismological Society of America. He is also a member of the National Academies of Sciences, Engineering, and Medicine’s Committee on Solid Earth Geophysics. Prior to joining the University of Oregon, he spent 3 years at the University of California, Berkeley’s, Seismological Laboratory. He earned his B.Eng. in geophysics from the Universidad Nacional Autónoma de México and his M.S. and Ph.D. in geophysics from the Scripps Institution of Oceanography.
+
+**Aarti Singh** is an associate professor in the Machine Learning Department at Carnegie Mellon University (CMU). Her research lies at the intersection of machine learning, statistics, and signal processing, and focuses on designing statistically and computationally efficient algorithms that can interactively leverage inherent structure in the data, and its application to scientific domains. She received a B.E. in electronics and communication engineering from the University of Delhi in 1997, and an M.S. and Ph.D. in electrical engineering from the University of Wisconsin—Madison in 2003 and 2008, respectively. Dr. Singh was a postdoctoral research associate at the Program in Applied and Computational Mathematics at Princeton University, before joining CMU in 2009. Her work is recognized by a National Science Foundation (NSF) Career Award, a U.S. Air Force Young Investigator Award, A. Nico Habermann Junior Faculty Chair Award, Harold A. Peterson Best Dissertation Award, and four best student paper awards. Her service honors include serving as program chair for the International Conference on Machine Learning 2020; program chair for Artificial Intelligence and Statistics 2017 conference; associate editor for _IEEE Transactions on Information Theory_ and _IEEE Transactions on Signal and Information Processing over Networks_; expert team member for The Minerals, Metals & Materials Society’s science and technology study on artificial intelligence for materials and manufacturing innovation, sponsored by the Office of Naval Research/National Institute of Standards and Technology; steering committee for NSF innovation laboratory on data-driven chemistry; and the National Academies of Sciences, Engineering, and Medicine’s Committee on Applied and Theoretical Statistics.
+
+**Laure Zanna** is a professor in mathematics and atmosphere/ocean science at the Courant Institute, New York University (NYU). Her research focuses on the dynamics of the climate
+
+**Suggested Citation:** "Appendix B: Planning Committee Biographies." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+system, and the main emphasis of her work is to study the influence of the ocean on local and global scales. Prior to NYU, she was a faculty member at the University of Oxford until 2019 and obtained her Ph.D. in 2009 in climate dynamics from Harvard University. She was the recipient of the 2020 Nicholas P. Fofonoff Award from the American Meteorological Society “for exceptional creativity in the development and application of new concepts in ocean and climate dynamics.” She is the lead principal investigator of the National Science Foundation-National Oceanic and Atmospheric Administration Climate Process Team on Ocean Transport and Eddy Energy, and M2LInES—an international effort to improve climate models with scientific machine learning. She currently serves as an editor for the _Journal of Climate_, a member on the International CLIVAR Ocean Model Development Panel, and a member of the Community Earth System Model Advisory Board.
+
+**Suggested Citation:** "Appendix B: Planning Committee Biographies." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+This page intentionally left blank.
+
+Next Chapter: Appendix C: Workshop Agenda
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+Previous Chapter: Appendix B: Planning Committee Biographies
+
+**Suggested Citation:** "Appendix C: Workshop Agenda." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+## Appendix C: Workshop Agenda
+
+**Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges—A Workshop**
+
+**February 7, 10, and 11, 2022 | 1:00-4:00 pm (All times EST)**
+
+**Workshop Goal:** This workshop will consider the opportunities and challenges of using machine learning and artificial intelligence (ML/AI) to advance Earth system science, including their ethical development and use. The workshop will convene Earth system science experts, ML and AI researchers, social and behavioral scientists, ethicists, and decision makers across sectors to explore how these approaches can contribute to improving understanding, analysis, modeling, prediction, and decision making. Workshop discussions will examine state-of-the-art approaches for using ML/AI for Earth system science, consider challenges and ways to mitigate risks of using ML/AI, and identify future opportunities to accelerate progress.
+
+1:00 pm**Welcome and Opening Remarks**
+Ruby Leung, Planning Committee Chair, Pacific Northwest National Laboratory
+
+**Session 1: Overview of State-of-the-Art Use of ML/AI for Earth System Science**
+
+_Moderators: Amy McGovern, University of Oklahoma, and Ruby Leung, PNNL_
+
+Session 1 will provide a broad overview of how ML/AI are currently being used for Earth system science, remaining conceptual and technical challenges, and opportunities to address those challenges.
+
+1:10 pm _20-minute talk followed by discussion_
+**Peter Dueben**, European Centre for Medium-Range Weather Forecasts
+1:40 pm Break
+
+**Session 2: Emerging Approaches for Using and Interpreting ML/AI**
+
+_Moderators: Patrick Heimbach, UT Austin, and Aarti Singh, CMU_
+
+Session 2 will consider unique challenges in Earth system science that emerging ML/AI approaches can help to address. Specific approaches will include integrating physics, expert knowledge, multiple modalities of data, and ML/AI techniques; explainable AI and interpretable ML; and data assimilation.
+
+1:45 pm _12-minute talks followed by discussion_
+*   **Pierre Gentine**, Columbia University
+
+**Suggested Citation:** "Appendix C: Workshop Agenda." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+*   **Elizabeth Barnes**, Colorado State University
+*   **Stephen Penny**, Sofar Ocean
+2:45 pm Break
+
+**Session 3: Emerging Opportunities from Social and Human Engineered Systems**
+
+_Moderators: Ann Bostrom, UW, and Ruby Leung, PNNL_
+
+Session 3 panelists will discuss opportunities for using ML/AI to understand social and human engineered systems, and the prospects for using ML/AI to integrate social and human engineered system science into Earth system science.
+
+3:00 pm _5-minute panelist remarks followed by discussion_
+*   **Auroop Ganguly**, Northeastern University
+*   **Abigail Snyder**, Pacific Northwest National Laboratory
+*   **David Rolnick**, McGill University
+*   **Jennifer Chayes**, UC Berkeley
+3:50 pm**Closing Remarks and Plans for Day 2**
+Amy McGovern, University of Oklahoma
+4:00 pm Adjourn
+
+1:00 pm**Welcome and Opening Remarks**
+Ruby Leung, Committee Chair, Pacific Northwest National Laboratory
+1:10 pm**Recap of Workshop Day 1**
+Patrick Heimbach, UT Austin, and Diego Melgar, U of Oregon
+
+**Session 1: Responsible and Ethical Use and JEDI Issues for ML/AI in Weather, Climate, and Earth System Science**
+
+_Moderators: Amy McGovern, University of Oklahoma, and Ann Bostrom, UW_
+
+Session 1 panelists will consider what ethical standards should guide Earth system science, and how such standards relate to the lenses of justice, equity, diversity, and inclusion (JEDI). Panelists will also discuss potential biases in ML/AI for Earth system science and promising ways to avoid those biases.
+
+1:20 pm _5-minute panelist remarks followed by discussion_
+*   **David Danks**, UC San Diego
+*   **Imme Ebert-Uphoff**, Colorado State University
+*   **Priya Donti**, Carnegie Mellon University
+*   **Abhishek Gupta**, Montreal AI Ethics Institute
+
+**Suggested Citation:** "Appendix C: Workshop Agenda." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+2:10 pm Break
+
+**Session 2: Workforce Development Capacity and Skill Sets**
+
+_Moderators: Diego Melgar, U of Oregon, and Amy McGovern, University of Oklahoma_
+
+Session 2 conversationalists will discuss gaps in education for those working at the intersection of ML/AI and Earth system science, needs and strategies for the private sector and academia in workforce development, the role of continued education in the current workforce, and capacity building at earlier educational stages.
+
+2:20 pm _Brief introductions followed by conversation_
+*   **Lak Lakshmanan**, Google
+*   **Hamed Alemohammad**, Radiant Earth
+*   **Terri Adams**, Howard University
+*   **Rebecca Nugent**, Carnegie Mellon University
+
+**Session 3: Challenges and Opportunities for Earth Science Technology and Data**
+
+_Moderators: Patrick Heimbach, UT Austin, and Laure Zanna, NYU_
+
+Session 3 panelists will consider open data, standards, and platforms to facilitate open science for ML/AI and Earth system science as well as technology development, funding models, and education challenges and opportunities for Earth system science technology and data.
+
+3:00 pm _5-minute panelist remarks followed by discussion_
+*   **Ryan Abernathey**, Columbia University
+*   **Chelle Gentemann**, Farallon Institute
+*   **Jason Hickey**, Google
+*   **Ana Privette**, Amazon Sustainability Data Initiative
+*   **Katie Dagon**, National Center for Atmospheric Research
+3:50 pm**Closing Remarks and Plans for Day 3**
+Laure Zanna, NYU
+4:00 pm Adjourn
+
+1:00 pm**Welcome and Opening Remarks**
+Ruby Leung, Committee Chair, Pacific Northwest National Laboratory
+1:10 pm**Recap of Workshop Day 2**
+Ruby Leung, PNNL, and Ann Bostrom, UW
+
+**Suggested Citation:** "Appendix C: Workshop Agenda." National Academies of Sciences, Engineering, and Medicine. 2022. _Machine Learning and Artificial Intelligence to Advance Earth System Science: Opportunities and Challenges: Proceedings of a Workshop_. Washington, DC: The National Academies Press. doi: 10.17226/26566.
+
+**Session 1: Using ML/AI for Data-Driven Decision Making**
+
+_Moderators: Ann Bostrom, UW, and Diego Melgar, University of Oregon_
+
+Session 1 speakers will discuss the role of ML/AI at the interface of predictive physical models and real-time decision making, handling uncertainties, and the remaining scientific, engineering, societal, and ethical challenges in this space.
+
+1:20 pm _12-minute talks followed by discussion_
+*   **Elizabeth Cochran**, U.S. Geological Survey
+*   **Pierre Lermusiaux**, MIT
+*   **Daniel Rothenberg**, Waymo
+2:20 pm Break
+
+**Session 2: Novel Funding Mechanisms, Partnerships, and Knowledge Transfer Between Academia, Industry, Nonprofits, and Government**
+
+_Moderators: Aarti Singh, CMU, and Laure Zanna, NYU_
+
+Session 2 conversationalists will consider funding opportunities, effective mechanisms, and creative new approaches to facilitate partnerships and knowledge transfer among academia, industry, nonprofits, and government to advance ML/AI for Earth system science.
+
+2:40 pm _Brief introductions followed by conversation_
+*   **Lynne Parker**, White House Office of Science and Technology Policy
+*   **Gary Hattem**, Independent Advisor
+*   **Jennifer Chayes**, UC Berkeley
+*   **Qingkai Kong**, Lawrence Livermore National Laboratory
+*   **David Spergel**, Simons Foundation
+3:40 pm**Summary of Workshop Day 3**
+Aarti Singh, CMU, and Amy McGovern, University of Oklahoma
+3:50 pm**Closing Remarks**
+Ruby Leung, Committee Chair, Pacific Northwest National Laboratory
+4:00 pm Adjourn
