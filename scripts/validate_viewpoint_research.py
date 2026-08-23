@@ -399,6 +399,7 @@ def main() -> None:
         "212_Fraunhofer_ISI科技创新机制跨期增补全文台账.csv", "213_Fraunhofer_ISI科技创新机制跨期增补全文结果.md",
         "222_AI_for_Science与公共科研基础设施定点增补台账.csv", "223_AI_for_Science与公共科研基础设施定点增补结果.md",
         "224_科学外交开放科研合作与中国参与机制定点增补台账.csv", "225_科学外交开放科研合作与中国参与机制定点增补结果.md",
+        "226_基础研究资助科研评价与创新联系定点增补台账.csv", "227_基础研究资助科研评价与创新联系定点增补结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -699,7 +700,7 @@ def main() -> None:
     assert len(nsf_nsb_light) == 6
     assert {r["发布日期"][:4] for r in nsf_nsb_light} == {"2016", "2018", "2020", "2022", "2024", "2026"}
     assert sum(r["全文策略"] == "已定点下载" for r in nsf_nsb_light) == 4
-    assert sum("连续系列已完成跨期抽样" in r["全文策略"] for r in nsf_nsb_light) == 2
+    assert sum(r["全文策略"].startswith("已进入基础研究资助") for r in nsf_nsb_light) == 2
     nsf_nsb_fulltext = rows(root / "132_NSF_NSB科学与工程指标跨期节点全文台账.csv")
     assert len(nsf_nsb_fulltext) == 4
     assert {r["报告ID"] for r in nsf_nsb_fulltext} == {
@@ -1013,6 +1014,26 @@ def main() -> None:
         and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
         for r in science_diplomacy
     )
+    research_funding_evaluation = rows(root / "226_基础研究资助科研评价与创新联系定点增补台账.csv")
+    assert len(research_funding_evaluation) == 6
+    assert {r["机构ID"] for r in research_funding_evaluation} == {
+        "eu-jrc", "nsf-nsb-sei", "de-efi", "jp-rieti", "us-nasem"
+    }
+    assert sum(r["资产类型"] == "官方PDF" for r in research_funding_evaluation) == 5
+    assert sum(r["资产类型"] == "官方逐章网页Markdown转写" for r in research_funding_evaluation) == 1
+    assert sum(int(r["页数或章节数"]) for r in research_funding_evaluation) == 1255
+    assert sum(int(r["字节数"]) for r in research_funding_evaluation) == 30970310
+    assert sum(int(r["清洗文本字符数"]) for r in research_funding_evaluation) == 3057703
+    assert sum(int(r["China词形命中数"]) for r in research_funding_evaluation) == 894
+    assert not any(
+        re.search(r"military|export control|supply chain|national security", r["报告名称"], re.I)
+        for r in research_funding_evaluation
+    )
+    assert all(
+        Path(r["本地原始资产"]).exists() and Path(r["本地文本"]).exists()
+        and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
+        for r in research_funding_evaluation
+    )
     fas_light = rows(root / "174_FAS报告与政策备忘录近十年轻量总目录.csv")
     assert len(fas_light) == 625
     assert {year: sum(r["发布日期"].startswith(str(year)) for r in fas_light) for year in range(2016, 2027)} == {
@@ -1093,7 +1114,7 @@ def main() -> None:
     assert sum(r["科技创新相关度"] == "核心" for r in eu_jrc_light) == 2381
     assert sum(r["科技创新相关度"] == "支撑" for r in eu_jrc_light) == 1335
     assert sum(r["科技创新相关度"] == "语境" for r in eu_jrc_light) == 27
-    assert sum(r["中国直接信号"] == "是" for r in eu_jrc_light) == 95
+    assert sum(r["中国直接信号"].startswith("是") for r in eu_jrc_light) == 96
     assert all(r["官方PDF入口"].startswith("https://publications.jrc.ec.europa.eu/repository/bitstream/") for r in eu_jrc_light)
     assert not any("%2520" in r["官方PDF入口"] for r in eu_jrc_light)
     assert {r["发布日期"][:4] for r in eu_jrc_light} == {str(year) for year in range(2016, 2027)}
@@ -1208,16 +1229,16 @@ def main() -> None:
     assert sum(int(r["网页归档字节数"]) for r in nasem_selected) == 7243099
     assert sum(int(r["清洗文本字符数"]) for r in nasem_selected) == 6132897
     progress_text = (root / "210_本地资料库实时进度看板.md").read_text(encoding="utf-8")
-    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2113条", "仅目录与官方入口：8286条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：743条"):
+    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2119条", "仅目录与官方入口：8280条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：743条"):
         assert marker in progress_text
     institution_progress = rows(root / "211_机构采集进度.csv")
     assert len(institution_progress) == 46
     nasem_progress = next(r for r in institution_progress if r["institution"] == "National Academies of Sciences, Engineering, and Medicine")
-    assert (nasem_progress["catalog"], nasem_progress["local_assets"], nasem_progress["light_only"]) == ("253", "22", "231")
+    assert (nasem_progress["catalog"], nasem_progress["local_assets"], nasem_progress["light_only"]) == ("253", "23", "230")
     jrc_progress = next(r for r in institution_progress if r["institution"] == "European Commission Joint Research Centre (JRC)")
-    assert (jrc_progress["catalog"], jrc_progress["local_assets"], jrc_progress["light_only"]) == ("3743", "50", "3693")
+    assert (jrc_progress["catalog"], jrc_progress["local_assets"], jrc_progress["light_only"]) == ("3743", "51", "3692")
     rieti_progress = next(r for r in institution_progress if r["institution"] == "Research Institute of Economy, Trade and Industry (RIETI)")
-    assert (rieti_progress["catalog"], rieti_progress["local_assets"], rieti_progress["light_only"]) == ("224", "22", "202")
+    assert (rieti_progress["catalog"], rieti_progress["local_assets"], rieti_progress["light_only"]) == ("224", "23", "201")
     assert sum(int(r["China词形命中数"]) for r in nasem_selected) == 1491
     assert sum(int(r["China词形命中数"]) > 0 for r in nasem_selected) == 17
     assert sum("Protecting U.S. Technological Advantage" == r["报告名称"] for r in nasem_selected) == 1
@@ -1531,6 +1552,7 @@ def main() -> None:
             (science_mobility_transfer, ("本地原始PDF",)),
             (ai_science_infrastructure, ("本地原始资产",)),
             (science_diplomacy, ("本地原始资产",)),
+            (research_funding_evaluation, ("本地原始资产",)),
             (acatech_selected, ("本地原始PDF",)),
             (fraunhofer_selected_fulltexts, ("本地原始PDF",)),
             (stepi_assets, ("本地原始资产",)),
@@ -1777,6 +1799,8 @@ def main() -> None:
         ("223_AI_for_Science与公共科研基础设施定点增补结果.md", "国际科技智库观点演变_AI_for_Science与公共科研基础设施定点增补结果.md"),
         ("224_科学外交开放科研合作与中国参与机制定点增补台账.csv", "国际科技智库观点演变_科学外交开放科研合作与中国参与机制定点增补台账.csv"),
         ("225_科学外交开放科研合作与中国参与机制定点增补结果.md", "国际科技智库观点演变_科学外交开放科研合作与中国参与机制定点增补结果.md"),
+        ("226_基础研究资助科研评价与创新联系定点增补台账.csv", "国际科技智库观点演变_基础研究资助科研评价与创新联系定点增补台账.csv"),
+        ("227_基础研究资助科研评价与创新联系定点增补结果.md", "国际科技智库观点演变_基础研究资助科研评价与创新联系定点增补结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
