@@ -3,10 +3,13 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import io
 import re
 from datetime import date
 from pathlib import Path
 from urllib.parse import quote
+
+from pypdf import PdfReader
 
 try:
     from scripts.extend_viewpoint_itif_reports_catalog import (
@@ -16,6 +19,7 @@ try:
         report_id,
         wait_until,
     )
+    from scripts.extend_viewpoint_csis_rai_selected_fulltexts import browser_pdf
 except ModuleNotFoundError:
     from extend_viewpoint_itif_reports_catalog import (
         CATALOG_FIELDS,
@@ -24,16 +28,26 @@ except ModuleNotFoundError:
         report_id,
         wait_until,
     )
+    from extend_viewpoint_csis_rai_selected_fulltexts import browser_pdf
 
 
 SERIES_ROLE = "ITIF科技创新机制与中国比较跨期精选全文"
 
 
-def _item(published: str, slug: str, title: str, axes: tuple[str, ...], role: str, china: bool = False) -> dict[str, object]:
+def _item(
+    published: str,
+    slug: str,
+    title: str,
+    axes: tuple[str, ...],
+    role: str,
+    china: bool = False,
+    pdf_url: str = "",
+) -> dict[str, object]:
     landing = f"https://itif.org/publications/{published[:4]}/{published[5:7]}/{published[8:10]}/{slug}/"
     return {
         "id": report_id(published, slug), "date": published, "slug": slug, "title": title,
-        "landing": landing, "markdown_url": landing.rstrip("/") + ".md", "axes": axes, "role": role, "china": china,
+        "landing": landing, "markdown_url": landing.rstrip("/") + ".md", "pdf_url": pdf_url,
+        "axes": axes, "role": role, "china": china,
     }
 
 
@@ -68,6 +82,10 @@ SELECTED_ITEMS = (
     _item("2026-05-04", "us-technology-companies-should-keep-operating-in-china", "US Technology Companies Should Keep Operating in China", ("技术创新与产业转化", "国际合作与开放科学"), "跨国科技企业在华经营与研发联系对创新、市场学习和技术生态的影响", True),
     _item("2026-06-08", "how-innovative-is-chinas-space-industry", "How Innovative Is China’s Space Industry?", ("关键与通用技术", "技术创新与产业转化"), "从科研、企业、专利和产业能力评估中国航天创新体系", True),
     _item("2026-06-29", "chinas-burgeoning-biopharmaceutical-competitiveness-demands-us-response", "China’s Burgeoning Biopharmaceutical Competitiveness Demands a US Response", ("关键与通用技术", "科学体系与基础研究", "技术创新与产业转化"), "中国生物医药科研、临床开发、企业能力和成果转化的最新比较节点", True),
+    _item("2020-06-22", "how-chinas-mercantilist-policies-have-undermined-global-innovation-telecom", "How China’s Mercantilist Policies Have Undermined Global Innovation in the Telecom Equipment Industry", ("关键与通用技术", "技术创新与产业转化"), "中国电信设备企业扩张、企业R&D投入与全球技术创新反馈机制", True),
+    _item("2021-04-26", "heading-track-impact-chinas-mercantilist-policies-global-high-speed-rail", "Heading Off Track: The Impact of China’s Mercantilist Policies on Global High-Speed Rail Innovation", ("关键与通用技术", "技术创新与产业转化"), "中国高铁产业政策、市场规模、企业研发与全球轨道交通创新的关系", True, "https://cdn.sanity.io/files/03hnmfyj/production/50fed126d9ea61ccdbfb7a60c6e817ec5650f772.pdf"),
+    _item("2025-09-08", "china-plans-to-dominate-a-key-semiconductor-material", "China Plans to Dominate a Key Semiconductor Material", ("关键与通用技术", "技术创新与产业转化"), "半导体级多晶硅的材料能力、技术门槛、产能扩张与产业政策机制", True),
+    _item("2026-06-15", "comac-chinas-looming-threat-to-global-aviation-industry", "COMAC: China’s Looming Threat to the Global Aviation Industry", ("关键与通用技术", "技术创新与产业转化"), "中国商用航空的系统集成、研发组织、适航认证与产业进入机制", True),
 )
 
 
@@ -115,9 +133,10 @@ def main() -> int:
     args = parser.parse_args()
     root = args.research.resolve()
     web_dir = root / "03_证据底稿" / "网页原文"
+    pdf_dir = root / "03_证据底稿" / "原文PDF"
     text_dir = root / "03_证据底稿" / "文本"
     slice_dir = root / "03_证据底稿" / "切片"
-    for directory in (web_dir, text_dir, slice_dir):
+    for directory in (web_dir, pdf_dir, text_dir, slice_dir):
         directory.mkdir(parents=True, exist_ok=True)
     catalog_path = root / "05_报告总目录.csv"
     light_path = root / "170_ITIF正式报告与简报近十年轻量总目录.csv"
@@ -131,41 +150,69 @@ def main() -> int:
     ledger: list[dict[str, str]] = []
     for item in SELECTED_ITEMS:
         rid = str(item["id"])
-        asset_path = web_dir / f"{rid}.md"
+        pdf_url = str(item.get("pdf_url", ""))
+        asset_type = "ITIF官方PDF全文" if pdf_url else "ITIF官方Markdown全文"
+        pdf_pages = 0
+        asset_path = (pdf_dir / f"{rid}.pdf") if pdf_url else (web_dir / f"{rid}.md")
+        page_path = web_dir / f"{rid}.md"
         text_path = text_dir / f"{rid}.txt"
         slice_path = slice_dir / f"{rid}.md"
-        if asset_path.exists():
-            content = asset_path.read_text(encoding="utf-8", errors="replace")
+        if pdf_url:
+            if not page_path.exists():
+                page_content = fetch_markdown(str(item["markdown_url"]))
+                page_path.write_text("\n".join(line.rstrip() for line in page_content.splitlines()) + "\n", encoding="utf-8", newline="\n")
+            if asset_path.exists():
+                payload = asset_path.read_bytes()
+            else:
+                opened = _proxy_json("/new?url=" + quote(str(item["landing"]), safe=""))
+                target = str(opened["targetId"])
+                try:
+                    payload = browser_pdf(target, pdf_url)
+                finally:
+                    try:
+                        _proxy_json("/close?target=" + target)
+                    except Exception:
+                        pass
+                asset_path.write_bytes(payload)
+            reader = PdfReader(io.BytesIO(payload))
+            pdf_pages = len(reader.pages)
+            content = "\n\n".join((page.extract_text() or "").strip() for page in reader.pages)
+            content = re.sub(r"\n{3,}", "\n\n", content).strip() + "\n"
         else:
-            fetched = fetch_markdown(str(item["markdown_url"]))
-            content = "\n".join(line.rstrip() for line in fetched.splitlines()) + "\n"
+            if asset_path.exists():
+                content = asset_path.read_text(encoding="utf-8", errors="replace")
+            else:
+                fetched = fetch_markdown(str(item["markdown_url"]))
+                content = "\n".join(line.rstrip() for line in fetched.splitlines()) + "\n"
+                asset_path.write_text(content, encoding="utf-8", newline="\n")
+            payload = content.encode("utf-8")
         if len(content) < 1_000:
-            raise RuntimeError(f"official markdown too short: {rid} {len(content)}")
-        if not asset_path.exists():
-            asset_path.write_text(content, encoding="utf-8", newline="\n")
+            raise RuntimeError(f"official asset text too short: {rid} {len(content)}")
         searchable_text = "\n".join(line.rstrip() for line in content.splitlines()) + "\n"
         text_path.write_text(searchable_text, encoding="utf-8", newline="\n")
         slice_path.write_text(selected_slice(item, content), encoding="utf-8", newline="\n")
-        payload = content.encode("utf-8")
         lower = content.lower()
         china_hits = lower.count("china") + lower.count("chinese") + lower.count("prc")
         row = by_id[rid]
         row["本地路径"] = str(asset_path)
-        row["正文完整度"] = "ITIF官方Markdown全文已保存"
+        row["正文完整度"] = f"{asset_type}已保存"
         row["优先级"] = "P0-China-STI-node" if item["china"] else "P1-STI-node"
         row["示踪问题"] = "；".join(item["axes"]) + ("；中国科技横向维度" if item["china"] else "")
         row["样本角色"] = SERIES_ROLE
         row["编码状态"] = "全文待观点编码"
         row["预期用途"] = str(item["role"])
         row["本地原始资产路径"] = str(asset_path)
-        row["原始资产状态"] = "ITIF官方Markdown原始资产已获取；已生成文本与科技创新定向切片"
+        status_asset_type = "ITIF官方PDF全文" if pdf_url else "ITIF官方Markdown"
+        row["原始资产状态"] = f"{status_asset_type}原始资产已获取；已生成文本与科技创新定向切片"
         if rid in light_by_id:
             light_by_id[rid]["中国直接信号"] = "是" if item["china"] else light_by_id[rid]["中国直接信号"]
             light_by_id[rid]["全文策略"] = "已进入精选全文；按本地原始资产、文本和切片调用"
         ledger.append({
             "报告ID": rid, "发布日期": str(item["date"]), "报告名称": str(item["title"]),
-            "官方落地页": str(item["landing"]), "官方Markdown入口": str(item["markdown_url"]),
+            "官方落地页": str(item["landing"]), "官方原始资产入口": pdf_url or str(item["markdown_url"]),
             "本地原始资产": str(asset_path), "本地文本": str(text_path), "本地切片": str(slice_path),
+            "本地页面概要": str(page_path) if pdf_url else "",
+            "资产类型": asset_type, "PDF页数": str(pdf_pages),
             "字节数": str(len(payload)), "字符数": str(len(content)), "China词形命中数": str(china_hits),
             "SHA256": hashlib.sha256(payload).hexdigest(), "中国直接信号": "是" if item["china"] else "否",
             "科技创新主轴": "；".join(item["axes"]), "科技创新复用角色": str(item["role"]),
@@ -187,7 +234,7 @@ def main() -> int:
     }
     (root / "173_ITIF科技创新机制与中国比较跨期精选全文结果.md").write_text(
         "# ITIF科技创新机制与中国比较跨期精选全文结果\n\n"
-        f"- 从669项近十年正式报告轻量目录中精选保存{len(ledger)}项ITIF官方Markdown全文，共{totals['bytes']:,}字节、{totals['chars']:,}字符。\n"
+        f"- 从669项近十年正式报告轻量目录中精选保存{len(ledger)}项ITIF官方原始资产，其中Markdown全文{sum(not item.get('pdf_url') for item in SELECTED_ITEMS)}项、PDF全文{sum(bool(item.get('pdf_url')) for item in SELECTED_ITEMS)}项、PDF {sum(int(row['PDF页数']) for row in ledger)}页，共{totals['bytes']:,}字节、{totals['chars']:,}字符。\n"
         f"- 直接中国比较材料{totals['direct']}项，China/Chinese/PRC词形命中{totals['china']}次；中国维度覆盖国家创新体系、AI能力、清洁能源、生物医药、数字经济、先进产业与企业R&D。\n"
         "- 跨期机制主线覆盖创新基础设施、R&D溢出、技术示范、产学合作、国家创新体系、科研资助、算力设施、大学商业化、生物医药公私R&D，以及规模扩张对全球创新路径的影响。\n"
         "- 安全、反垄断、隐私和一般贸易材料未进入本批精选；其题名与摘要继续保留于轻量总目录。\n",

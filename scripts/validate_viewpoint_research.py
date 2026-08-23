@@ -121,6 +121,10 @@ def expected_itif_selected_ids() -> set[str]:
         "C-ITIF-RB-2026-US-TECHNOLOGY-COMPANIES-SHOULD-KEEP-OPERATING-IN-CHINA",
         "C-ITIF-RB-2026-HOW-INNOVATIVE-IS-CHINAS-SPACE-INDUSTRY",
         "C-ITIF-RB-2026-CHINAS-BURGEONING-BIOPHARMACEUTICAL-COMPETITIVENESS-DEMANDS-US-RESPONSE",
+        "C-ITIF-RB-2020-HOW-CHINAS-MERCANTILIST-POLICIES-HAVE-UNDERMINED-GLOBAL-INNOVATION-TELECOM",
+        "C-ITIF-RB-2021-HEADING-TRACK-IMPACT-CHINAS-MERCANTILIST-POLICIES-GLOBAL-HIGH-SPEED-RAIL",
+        "C-ITIF-RB-2025-CHINA-PLANS-TO-DOMINATE-A-KEY-SEMICONDUCTOR-MATERIAL",
+        "C-ITIF-RB-2026-COMAC-CHINAS-LOOMING-THREAT-TO-GLOBAL-AVIATION-INDUSTRY",
     }
 
 
@@ -901,10 +905,13 @@ def main() -> None:
     assert all(r["官方落地页"].startswith("https://itif.org/publications/") for r in itif_light)
     itif_selected = rows(root / "172_ITIF科技创新机制与中国比较跨期精选全文台账.csv")
     assert {r["报告ID"] for r in itif_selected} == expected_itif_selected_ids()
-    assert sum(r["中国直接信号"] == "是" for r in itif_selected) == 17
-    assert sum(int(r["字节数"]) for r in itif_selected) == 1743211
-    assert sum(int(r["字符数"]) for r in itif_selected) == 1735233
-    assert sum(int(r["China词形命中数"]) for r in itif_selected) == 1968
+    assert sum(r["中国直接信号"] == "是" for r in itif_selected) == 21
+    assert sum(int(r["字节数"]) for r in itif_selected) == 3486984
+    assert sum(int(r["字符数"]) for r in itif_selected) == 2171157
+    assert sum(int(r["China词形命中数"]) for r in itif_selected) == 3322
+    assert sum(r["资产类型"] == "ITIF官方PDF全文" for r in itif_selected) == 1
+    assert sum(int(r["PDF页数"]) for r in itif_selected) == 102
+    assert all(not r["本地页面概要"] or Path(r["本地页面概要"]).exists() for r in itif_selected)
     assert all(
         Path(r["本地原始资产"]).exists() and Path(r["本地文本"]).exists()
         and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
@@ -1105,7 +1112,7 @@ def main() -> None:
     assert sum(int(r["网页归档字节数"]) for r in nasem_selected) == 7243099
     assert sum(int(r["清洗文本字符数"]) for r in nasem_selected) == 6132897
     progress_text = (root / "210_本地资料库实时进度看板.md").read_text(encoding="utf-8")
-    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2076条", "仅目录与官方入口：8323条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：735条"):
+    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2080条", "仅目录与官方入口：8319条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：738条"):
         assert marker in progress_text
     institution_progress = rows(root / "211_机构采集进度.csv")
     assert len(institution_progress) == 46
@@ -1287,8 +1294,8 @@ def main() -> None:
     assert len(ifp_light) == 155
     assert sum(r["全文策略"].startswith("已进入精选全文") for r in ifp_light) == 16
     assert sum(r["全文策略"].startswith("总目录保留") for r in ifp_light) == 139
-    assert sum(r["全文策略"].startswith("已进入精选全文") for r in itif_light) == 30
-    assert sum(r["全文策略"].startswith("总目录保留") for r in itif_light) == 639
+    assert sum(r["全文策略"].startswith("已进入精选全文") for r in itif_light) == 34
+    assert sum(r["全文策略"].startswith("总目录保留") for r in itif_light) == 635
     assert sum(r["全文策略"].startswith("已进入精选全文") for r in csis_rai_light) == 27
     assert sum(r["全文策略"].startswith("总目录保留") for r in csis_rai_light) == 149
     assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1290
@@ -1399,6 +1406,7 @@ def main() -> None:
             (nesta_selected, ("本地PDF",)),
             (rathenau_selected, ("本地原始资产",)),
             (ifp_selected, ("本地原始资产",)),
+            (itif_selected, ("本地原始资产",)),
             (csis_rai_selected, ("本地原始资产",)),
             (eu_stoa_selected, ("本地原始PDF",)),
             (eu_jrc_selected, ("本地原始PDF",)),

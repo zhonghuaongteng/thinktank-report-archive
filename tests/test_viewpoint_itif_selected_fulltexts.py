@@ -16,7 +16,8 @@ class ItifSelectedFulltextsTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_selected_set_is_small_and_covers_every_year(self):
-        self.assertEqual(len(SELECTED_ITEMS), 30)
+        self.assertEqual(len(SELECTED_ITEMS), 34)
+        self.assertLess(len(SELECTED_ITEMS), 40)
         self.assertEqual({int(item["date"][:4]) for item in SELECTED_ITEMS}, set(range(2016, 2027)))
 
     def test_selected_ids_follow_light_catalog_rule(self):
@@ -32,7 +33,20 @@ class ItifSelectedFulltextsTests(unittest.TestCase):
         self.assertIn("研发治理与科研组织", axes)
         self.assertIn("技术创新与产业转化", axes)
         self.assertIn("关键与通用技术", axes)
-        self.assertEqual(sum(bool(item["china"]) for item in SELECTED_ITEMS), 17)
+        self.assertEqual(sum(bool(item["china"]) for item in SELECTED_ITEMS), 21)
+
+    def test_china_advanced_industry_followup_is_exactly_four(self):
+        expected = {
+            "C-ITIF-RB-2020-HOW-CHINAS-MERCANTILIST-POLICIES-HAVE-UNDERMINED-GLOBAL-INNOVATION-TELECOM",
+            "C-ITIF-RB-2021-HEADING-TRACK-IMPACT-CHINAS-MERCANTILIST-POLICIES-GLOBAL-HIGH-SPEED-RAIL",
+            "C-ITIF-RB-2025-CHINA-PLANS-TO-DOMINATE-A-KEY-SEMICONDUCTOR-MATERIAL",
+            "C-ITIF-RB-2026-COMAC-CHINAS-LOOMING-THREAT-TO-GLOBAL-AVIATION-INDUSTRY",
+        }
+        previous = expected_itif_selected_ids() - expected
+        actual = {item["id"] for item in SELECTED_ITEMS}
+        self.assertEqual(actual - previous, expected)
+        self.assertTrue(all(item["china"] for item in SELECTED_ITEMS if item["id"] in expected))
+        self.assertTrue(all("工业间谍" not in item["role"] and "出口管制" not in item["role"] for item in SELECTED_ITEMS[-4:]))
 
     def test_independent_thinktank_china_innovation_followup_is_exactly_six(self):
         expected = {
@@ -65,10 +79,18 @@ class ItifSelectedFulltextsTests(unittest.TestCase):
 
     def test_selected_assets_use_official_markdown_interface(self):
         for item in SELECTED_ITEMS:
-            self.assertEqual(item["markdown_url"], item["landing"].rstrip("/") + ".md")
+            if not item.get("pdf_url"):
+                self.assertEqual(item["markdown_url"], item["landing"].rstrip("/") + ".md")
+
+    def test_high_speed_rail_uses_the_official_pdf_instead_of_thin_markdown(self):
+        item = next(item for item in SELECTED_ITEMS if "HIGH-SPEED-RAIL" in item["id"])
+        self.assertEqual(
+            item["pdf_url"],
+            "https://cdn.sanity.io/files/03hnmfyj/production/50fed126d9ea61ccdbfb7a60c6e817ec5650f772.pdf",
+        )
 
     def test_curated_axes_make_each_followup_item_visible_to_china_technology_coverage(self):
-        for item in SELECTED_ITEMS[-6:]:
+        for item in SELECTED_ITEMS[-4:]:
             row = {
                 "报告名称": item["title"],
                 "示踪问题": "；".join(item["axes"]) + "；中国科技横向维度",

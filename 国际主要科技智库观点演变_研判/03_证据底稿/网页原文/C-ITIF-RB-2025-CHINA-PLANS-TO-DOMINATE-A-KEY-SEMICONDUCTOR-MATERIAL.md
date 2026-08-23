@@ -1,0 +1,128 @@
+---
+title: "China Plans to Dominate a Key Semiconductor Material"
+summary: |-
+  Beijing has provided significant support to its domestic polysilicon industry in a drive to establish Chinese firms as the dominant global suppliers of solar-grade polysilicon—and it wants its firms to expand their share of semiconductor-grade polysilicon.
+date: "2025-09-08"
+issues: ["National Competitiveness", "Manufacturing"]
+authors: ["Alex Rubin"]
+content_type: "Reports & Briefings"
+canonical_url: "https://itif.org/publications/2025/09/08/china-plans-to-dominate-a-key-semiconductor-material/"
+---
+
+# China Plans to Dominate a Key Semiconductor Material
+
+## Key Takeaways
+
+- Polysilicon is often described as one of the purest materials on Earth. It is used as the substrate material for a range of products, most importantly chips and solar panels.
+- Beijing has provided significant support to its domestic polysilicon industry to establish Chinese firms as the dominant global suppliers of solar-grade polysilicon and is seeking to push its firms to expand their share of semiconductor-grade polysilicon.
+- Chinese overproduction of polysilicon and silicon carbide is causing the global price for these materials to crater, undermining the short- and long-term financial viability of leading firms in the United States and allied countries.
+- Forced labor has already been linked to China’s critical minerals sector, in particular rare earth mining and refining, increasing the likelihood that forced labor is integrated into China’s polysilicon supply chain.
+- The Commerce Department has launched a Section 232 investigation into polysilicon and derivative products, providing a unique opportunity to ensure that critical infrastructure supply chains do not become dependent on Chinese inputs.
+- The administration should prohibit imports of Chinese-origin or -linked polysilicon or derivative products, and require products containing Chinese-origin or -linked polysilicon to document that no forced labor was used in their production.
+- The departments of Commerce, Defense, and Treasury should support U.S.-based expansion of polysilicon and silicon-carbide production capacity.
+
+# Key Takeaways
+
+# Introduction
+
+The Chinese government is positioning Chinese firms to dominate the global market for polysilicon—a key material used in chip manufacturing. Polysilicon is the main substrate material used to manufacture wafers used in nearly every semiconductor fabrication facility (fab) around the world.
+
+When Congress passed the CHIPS and Science Act of 2022, it appropriated $53 billion to both increase the United States’ ability to manufacture chips and develop a robust and resilient supply chain.[1](#_edn1) The act arguably succeeded in incentivizing the construction of new, or expansion of existing, chip fabrication clusters in Arizona, Texas, New York, and elsewhere to build up a U.S.-based fab capacity. However, as U.S.-based chip fabrication capacity has improved, it has only revealed additional dependencies further upstream in the chip supply chain that remain vulnerable to disruption by foreign adversaries, China chief among them.
+
+Through government incentives and support, and massive overcapacity, Chinese polysilicon producers have flooded the global market with cheap polysilicon, endangering the viability of many U.S. and partner companies in this critical sector.[2](#_edn2) The global polysilicon industry relies on the sale of solar-grade (less refined) polysilicon to maintain the economies of scale to enable production of semiconductor-grade (more refined) polysilicon. Chinese firms have particularly focused their production expansion in this less refined polysilicon for now, threatening the financial viability of U.S. and partner polysilicon firms. Without near-term U.S. government action, U.S.-fabricated chips could find themselves reliant on Chinese-produced materials, effectively nullifying gains otherwise achieved to U.S. supply chain resiliency from the CHIPS and Science Act.
+
+# What is Polysilicon and Why Does It Matter?
+
+Polysilicon is often described as one of the purest materials on Earth. It is the actual semiconducting material and therefore the enabler of chips and solar panels. The key difference between these two is that polysilicon is less refined for solar cells than it is for chips, averaging about 99.9999999 percent pure (“nine nines” or 9N) silicon for solar and 99.9999999999 percent pure (12N) for chips.[3](#_edn3) Without a steady supply of polysilicon, companies would not have wafers upon which they could “print” chips. Additionally, the U.S. defense industry relies on polysilicon for critical defense applications, including sensors, radars, and high-voltage electrical systems used in fighter jets, tanks, and drones.
+
+Polysilicon production facilities must manufacture both solar- and semiconductor-grade products in order to remain economically viable, as solar-grade accounts for at least 95 percent of the global market.[4](#_edn4) China’s efforts to control the solar-grade market threaten the semiconductor supply chain. Despite operating at a loss, Chinese-linked producers continue to expand production, including through facilities in Africa, India, and the Middle East, while simultaneously effectively blocking U.S. polysilicon exports to China.
+
+The polysilicon and wafer supply chain is global and contains many unique chokepoints. To start, quartz is extracted from mines, which are widely available. Quartz contains about 98 to 99 percent silicon dioxide (SiO<sub>2</sub>). A more specialized form of quartz—high-purity quartz (HPQ)—is used in the refining process for polysilicon and is heavily concentrated in a mine in Spruce Pine, North Carolina.[5](#_edn5) Once quartz is extracted, it goes through an initial reduction process into silicon metal by removing the oxygen content, resulting in about 98 to 99.5 percent pure silicon. Silicon metal has many uses in industrial processes, including aluminum smelting, to produce silicones such as lubricants, sealants, and adhesives, and as an intermediate component in the chemical industry.
+
+The silicon metal is then further refined into polysilicon, either to solar-grade or semiconductor-grade. The market for solar-grade polysilicon is heavily concentrated in Chinese companies, which have leveraged the benefits of state support to outpace many foreign competitors. The market for semiconductor-grade polysilicon is at a transition point, not yet dominated by Chinese companies but susceptible to the same dynamics as the solar-grade market.
+
+**Figure 1: Leading producers of solar- and semiconductor-grade polysilicon (metric tons, 2024)[6](#_edn6)**
+
+![image](https://itif-publications-production.s3.amazonaws.com/China%20Polysilicon%20v07%202025-09-05%20final%20HTML_files/image001.png)
+
+Certain military products also use a specialized form of ultra-pure polysilicon known as “float zone” polysilicon, which is useful for military optical devices, sensors, radars, and devices operating in extreme environmental conditions or at high voltages.[7](#_edn7)
+
+After polysilicon is refined from quartz and silicon metal, it is turned into chunks of varying sizes that are then melted and formed into ingots, which are sliced into blank wafers used in chip fabrication processes. The global wafer fabrication market is heavily concentrated in Germany, Japan, South Korea, and Taiwan, with only a nascent production capacity in the United States as of earlier this year.
+
+**Figure 2: Approximate shares of the blank wafer fabrication market (2024)[8](#_edn8)**
+
+![image](https://itif-publications-production.s3.amazonaws.com/China%20Polysilicon%20v07%202025-09-05%20final%20HTML_files/image002.png)
+
+# What is China Doing to Dominate the Market for Chip-Grade Polysilicon?
+
+Beijing has provided significant support to its domestic polysilicon industry to establish Chinese firms as the dominant global suppliers of solar-grade polysilicon and is seeking to push its firms to expand their share of semiconductor-grade polysilicon. The Chinese government provides its firms with a range of support that enables them to expand their production capacity while selling polysilicon—and derivative materials such as silicon carbide—at below market value, often selling at a loss in exchange for increasing their market share. Beijing’s support for its firms includes financial subsidies and incentives, infrastructure and land support, and strategic national plans.
+
+For example, China’s leading producer Tongwei has received approximately $301 million in government grants and tax concessions since 2009, with more than half provided in the last year as the firm rapidly expanded its production capacity.[9](#_edn9) More recently, the Chinese government has sought to limit the negative impacts of overcapacity in China’s polysilicon industry, which has driven prices for Chinese polysilicon below even those firms’ production costs. China’s leading polysilicon producers are in talks to create a $7 billion fund to acquire and shut down roughly one-third of production capacity, in line with the government’s efforts to curb harmful overcapacity.[10](#_edn10) If successful, this would create an OPEC-like consortium able to set the global price for solar-grade polysilicon at levels profitable for Chinese firms but prohibitively low for U.S. and partner firms.
+
+Beijing has supported its polysilicon industry through access to cheap electricity, which accounts for more than 40 percent of total polysilicon production cost in China.[11](#_edn11) This percentage can be lower in more-advanced, energy-efficient industries such as in Europe or the United States, where electricity’s percentage of total production cost is lower but the per unit cost of electricity is much higher than in China.[12](#_edn12) China’s polysilicon industry—which is concentrated in the Xinjiang Uyghur Autonomous Region (XUAR)—benefits from low energy prices, driven by government support and coal-fired power. For example, rates in XUAR for producers can be as low as $0.03 per kilowatt-hour (kWh), compared with $0.06/kWh in central China.[13](#_edn13) In comparison, industrial producers in the U.S. and Europe pay on average $0.08/kWh and $0.20/kWh, respectively.[14](#_edn14)
+
+> Chinese-linked companies are also expanding overseas. For example, United Solar Polysilicon, a Chinese-invested and -linked entity, is developing a new $1.6 billion polysilicon facility in Oman that is expected to produce 100,00 metric tons of polysilicon.
+
+Finally, Beijing provides generous land acquisition incentives that have benefitted the domestic polysilicon industry. Local governments, particularly in less-industrialized provinces such as XUAR, leverage their control over public land allocation to offer industrial land at below-market prices to incentivize industrial development and attract investment. Local governments additionally develop related industrial infrastructure to make new factories more successful, developing transportation, electricity, and communications networks.[15](#_edn15)
+
+Chinese-linked companies are also expanding overseas. For example, United Solar Polysilicon, a Chinese-invested and -linked entity, is developing a new $1.6 billion polysilicon facility in Oman that is expected to produce 100,00 metric tons (mt) of polysilicon.[16](#_edn16) On August 8, 2025, the International Finance Corporation (IFC) approved a loan and investment worth up to $250 million in this facility, over the objections of IFC’s U.S. executive director and the abstention of three other directors representing Germany, the Netherlands, and the Nordic countries.[17](#_edn17)
+
+Access to direct subsidies, cheap electricity, and cheaply developed land allows Chinese polysilicon manufacturers to expand their scale and reduce their costs.
+
+# Chinese Unfair Competition Leading to Decline in U.S., Partner Industries
+
+Chinese overproduction of polysilicon, and derivatives such as silicon carbide, is causing the global price for these materials to crater, undermining the short- and long-term financial viability of leading firms in U.S. and partner countries. From 2016 to 2024, China’s polysilicon production capacity increased from 0.21 million mt to 3.25 million mt and its utilization rate dropped from 92 percent to 56 percent.[18](#_edn18)
+
+The U.S. National Renewable Energy Laboratory has estimated the fair market price for polysilicon to be $24/kg; Chinese firms are selling at approximately $5/kg, about $1 below their production cost.[19](#_edn19) Chinese firms reported a loss of $40 billion in 2024. This has prompted the effort by China’s Ministry of Industry and Information Technology to curb overproduction and stabilize prices.[20](#_edn20)
+
+Over the last few months, various market leaders have announced closures or postponed expansion plans because of the unfavorable market dynamics in silicon carbide and polysilicon. Wolfspeed, the leading U.S. silicon carbide producer, closed two U.S. fabrication facilities and postponed expansion at its Germany fab in 2024.[21](#_edn21) In June, the firm filed for bankruptcy because of unfair Chinese competition.[22](#_edn22) REC Silicon, a U.S.-based, Norway-listed producer, halted its polysilicon production in the United States because of low prices, closing facilities in Montana and Washington.[23](#_edn23)
+
+> The U.S. National Renewable Energy Laboratory has estimated the fair market price for polysilicon to be $24/kg; Chinese firms are selling at approximately $5/kg, about $1 below their production cost.
+
+Left unchecked, China’s existing dominance in solar-grade polysilicon, overcapacity in silicon carbide, and burgeoning production capacity in semiconductor-grade polysilicon will drive companies in the United States and partner nations to declare bankruptcy or close production facilities, leaving U.S. supply chains, and those of partner nations, reliant on Chinese companies for a key critical upstream input.
+
+# Chinese Polysilicon Links To Potential Forced Labor
+
+China’s polysilicon industry is concentrated in Xinjiang, increasing the likelihood that there is a forced labor connection. However, China produces enough polysilicon outside Xinjiang that Chinese firms could probably supply foreign markets without sourcing from Xinjiang facilities, only making enforcement and documentation more critical.[24](#_edn24) Xinjiang’s cheap production of electricity also feeds into China’s national grid system, indicating that companies manufacturing outside Xinjiang still benefit from the region’s cheaper electricity, including that produced by companies that use forced labor. For example, the U.S. Forced Labor Enforcement Task Force has added eight Xinjiang-based polysilicon manufacturers to the Uyghur Forced Labor Prevention Act (UFLPA) Entity List for their use of forced labor, including five in January 2025.
+
+Forced labor has already been linked to China’s critical minerals sector, in particular rare earth mining and refining, increasing the likelihood that forced labor is integrated into China’s polysilicon supply chain. Research from Sheffield Hallam University studying solar supply chains reveals evidence of links to Xinjiang, particularly in the sourcing and refinement of silicon used in the production of polysilicon.[25](#_edn25)
+
+Additionally, there are reports of official labor transfer schemes to move minority forced labor out of Xinjiang in order to obfuscate its use, which only increases the risk. The Bureau of Investigative Journalism—working with the *New York Times* and *Der Spiegel*—found that the Chinese government coerces Uyghurs, Kyrgyz, and Kazakh people into labor transfer schemes. This program moves thousands of ethnic minorities from Xinjiang to factories more than 2,000 miles away in the country’s biggest industrial zones. Numerous media outlets, academic studies, and investigative reports have documented extensive involvement by major state-owned enterprises in the region in state-sponsored labor transfer programs, especially in the extraction and processing of minerals such as nickel, copper, and zinc.[26](#_edn26)
+
+# Policy Recommendations
+
+On July 1, 2025, the U.S. Department of Commerce launched a Section 232 investigation into polysilicon and derivative products, providing a unique opportunity for the U.S. government to take actions in the short-term to protect the U.S. and partner-nation polysilicon industry and ensure that critical infrastructure supply chains do not become dependent on Chinese inputs.
+
+First, the Department of Commerce should recommend that the president **prohibit importing any Chinese-origin or Chinese-linked polysilicon or any derivative products containing those**. Due to the significant price difference between Chinese polysilicon and U.S. and partner polysilicon, a tariffs-based approach is likely to fall short of providing a secure domestic market for U.S. and partner polysilicon and silicon carbide producers.
+
+Second, the Department of Homeland Security, through the Forced Labor Enforcement Task Force and Customs and Border Protection (CBP), should work with technical standard-setting bodies—such as ASTM International—to **develop traceability standards and require any products containing Chinese-origin or Chinese-linked polysilicon to provide a hardware bill of materials documenting that no forced labor was used in their production**. Barring positive proof that forced labor was not used, CBP should operate under a presumption that forced labor was involved and issue withhold release orders seizing shipments and preventing them from entering the U.S. market.
+
+Third, the departments of Commerce, Defense, and Treasury should consider leveraging existing sources of financial support—including the CHIPS Act, the Office of Strategic Capital, the Defense Production Act, and other sources as available—to **support U.S.-based expansion of polysilicon and silicon carbide production capacity** to ensure that commercial and military customers maintain secure access to this critical input.
+
+### About the Author
+
+Alex Rubin is a visiting fellow at the Hoover Institution’s Tech Policy Accelerator. He was previously an analyst at the CIA’s China Mission Center for 10 years, leading the Agency’s analysis of PRC technology topics.
+
+### About ITIF
+
+The Information Technology and Innovation Foundation (ITIF) is an independent 501(c)(3) nonprofit, nonpartisan research and educational institute that has been recognized repeatedly as the world’s leading think tank for science and technology policy. Its mission is to formulate, evaluate, and promote policy solutions that accelerate innovation and boost productivity to spur growth, opportunity, and progress. For more information, visit [itif.org/about](https://itif.org/about/).
+
+# Endnotes
+
+[1](#_ednref1). White House, “Fact Sheet: Two Years After the CHIPS and Science Act, Biden-⁠Harris Administration Celebrates Historic Achievements in Bringing Semiconductor Supply Chains Home, Creating Jobs, Supporting Innovation,” August 9, 2024, [https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2024/08/09/fact-sheet-two-years-after-the-chips-and-science-act-biden-%E2%81%A0harris-administration-celebrates-historic-achievements-in-bringing-semiconductor-supply-chains-home-creating-jobs-supporting-inn/](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2024/08/09/fact-sheet-two-years-after-the-chips-and-science-act-biden-%E2%81%A0harris-administration-celebrates-historic-achievements-in-bringing-semiconductor-supply-chains-home-creating-jobs-supporting-inn/).
+
+[2](#_ednref2). Stephen Ezell, “Moore’s Law Under Attack: The Impact of China’s Policies on Global Semiconductor Innovation” (ITIF, February 2021), [https://itif.org/publications/2021/02/18/moores-law-under-attack-impact-chinas-policies-global-semiconductor/](https://itif.org/publications/2021/02/18/moores-law-under-attack-impact-chinas-policies-global-semiconductor/); Future Market Insights, “Polysilicon Market,” industry report, accessed September 4, 2025, [https://www.futuremarketinsights.com/industry reports/polysilicon-market](https://www.futuremarketinsights.com/reports/polysilicon-market); IMARC Group, “Polysilicon Market,” industry report, accessed September 4, 2025, [https://www.imarcgroup.com/polysilicon-market](https://www.imarcgroup.com/polysilicon-market?utm_source=chatgpt.com).
+
+[3](#_ednref3). Global Market Insights, “Polysilicon Market,” industry report, accessed September 4, 2025, [https://www.gminsights.com/industry-analysis/polysilicon-market](https://www.gminsights.com/industry-analysis/polysilicon-market?utm_source=chatgpt.com).
+
+[4](#_ednref4). Straits Research, “Polysilicon Market,” industry report, accessed September 4, 2025, [https://straitsresearch.com/industry report/polysilicon-market](https://straitsresearch.com/report/polysilicon-market); Market.us News, “Polysilicon Market News,” accessed September 4, 2025, [https://www.news.market.us/polysilicon-market-news/](https://www.news.market.us/polysilicon-market-news/?utm_source=chatgpt.com); Bernreuter Research, “Polysilicon Industry Is Risking New Shortage,” press release, April 25, 2024, [https://www.bernreuter.com/newsroom/press-releases/polysilicon-industry-is-risking-new-shortage/](https://www.bernreuter.com/newsroom/press-releases/polysilicon-industry-is-risking-new-shortage/?utm_source=chatgpt.com).
+
+[5](#_ednref5). “North Carolina Quartz Plant Pauses as Hurricane Nears,” Associated Press, September 4, 2025, [https://apnews.com/article/north-carolina-quartz-hurricane-57153eaba12ba9dcb87bf618d72364ec](https://apnews.com/article/north-carolina-quartz-hurricane-57153eaba12ba9dcb87bf618d72364ec?utm_source=chatgpt.com); IndustryARC, “Polysilicon Market,” industry report, accessed September 4, 2025, [https://www.industryarc.com/Industry report/16456/polysilicon-market.html](https://www.industryarc.com/Report/16456/polysilicon-market.html?utm_source=chatgpt.com).
+
+[6](#_ednref6). “China’s Polysilicon Output Surges 86% in First 11 Months of 2024 as New Plants Go Into Operation,” Yicai Global, December 26, 2024, [https://www.yicaiglobal.com/star50news/2024_12_266774986944536379396](https://www.yicaiglobal.com/star50news/2024_12_266774986944536379396?utm_source=chatgpt.com); “OCI Increases Production Capacity at Malaysian Polysilicon Factory,” *PV Magazine*, April 26, 2024, [https://www.pv-magazine.com/2024/04/26/oci-increases-production-capacity-at-malaysian-polysilicon-factory-2/](https://www.pv-magazine.com/2024/04/26/oci-increases-production-capacity-at-malaysian-polysilicon-factory-2/?utm_source=chatgpt.com); “The Top Ten Ranking of the World’s Largest Polysilicon Manufacturers,” Bernreuter Research, accessed September 4, 2025, [https://www.bernreuter.com/polysilicon/manufacturers/#the-top-ten-ranking-of-the-world-s-largest-polysilicon-manufacturers](https://www.bernreuter.com/polysilicon/manufacturers/?utm_source=chatgpt.com#the-top-ten-ranking-of-the-world-s-largest-polysilicon-manufacturers).
+
+[7](#_ednref7). Wafer World, “The Hidden Powers of Float Zone Wafers,” blog post, July 19, 2021, [https://www.waferworld.com/post/the-hidden-powers-of-float-zone-wafers](https://www.waferworld.com/post/the-hidden-powers-of-float-zone-wafers?utm_source=chatgpt.com); “Microelectronics,” RTX, accessed September 4, 2025, [https://www.rtx.com/raytheon/what-we-do/advanced-technology/microelectronics](https://www.rtx.com/raytheon/what-we-do/advanced-technology/microelectronics); Wafer World, “Float Zone Wafer: Float Zone Silicon Wafer Properties and Uses,” blog post, September 27, 2021, [https://www.waferworld.com/post/float-zone-wafer-float-zone-silicon-wafer-properties-and-uses](https://www.waferworld.com/post/float-zone-wafer-float-zone-silicon-wafer-properties-and-uses?utm_source=chatgpt.com).
+
+[8](#_ednref8). Compiled from publicly available information, all data is approximate. (* GlobalWafers’ U.S. subsidiary—GlobalWafers America—operates a $3.5 billion facility in Texas and announced in May that it would invest an additional $4 billion to expand the facility.)
+
+[9
