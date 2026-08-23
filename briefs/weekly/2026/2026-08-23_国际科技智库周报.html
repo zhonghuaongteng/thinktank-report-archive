@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>国际科技智库周报（2026-08-23）</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+@page { size: A4; margin: 13mm 12mm; }
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
+  color: #172026; margin: 0; background: #eef1f4; line-height: 1.66; font-size: 10.5pt;
+}
+main { max-width: 186mm; margin: 0 auto; background: #ffffff; }
+@media screen { main { margin: 24px auto; box-shadow: 0 18px 48px rgba(23,32,38,.14); } body { padding: 0 12px; } }
+@media print { body { background: #ffffff; } main { max-width: none; } }
+h1, h2, h3 { font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", serif; }
+a { color: #14456e; text-decoration: none; }
+
+.page { padding: 10mm 11mm; }
+.pagebreak { page-break-after: always; }
+.avoid-break { page-break-inside: avoid; break-inside: avoid; }
+
+.brandbar { display: flex; height: 7px; }
+.brandbar span:nth-child(1) { flex: 4; background: #1f5f8b; }
+.brandbar span:nth-child(2) { flex: 2; background: #b84c3d; }
+.brandbar span:nth-child(3) { flex: 3; background: #4f7d5a; }
+
+.cover-kicker { letter-spacing: .35em; font-size: 8.5pt; color: #b84c3d; font-weight: 700; margin: 6mm 0 2.4mm; text-transform: uppercase; }
+.cover h1 { font-size: 26pt; margin: 0 0 3.2mm; color: #14456e; line-height: 1.2; }
+.cover .issue-meta { color: #5f6b75; font-size: 10pt; border-top: 1.4pt solid #172026; border-bottom: .4pt solid #c7d0d8; padding: 2.6mm 0; display: flex; gap: 6mm; flex-wrap: wrap; }
+.situation { background: #f2f6f9; border-left: 3pt solid #1f5f8b; padding: 3.2mm 4.2mm; margin: 4.6mm 0; }
+.situation h2, .top-reads h2, .viewpoints > h2, .toc h2, .comic-lead h2 { font-size: 13.5pt; color: #14456e; margin: 0 0 3mm; }
+.situation p { margin: 0; font-size: 10pt; }
+
+.top-reads ol { margin: 0; padding: 0; list-style: none; counter-reset: reads; }
+.top-reads li { counter-increment: reads; display: flex; gap: 3.4mm; padding: 3mm 0; border-bottom: .4pt dashed #c7d0d8; page-break-inside: avoid; }
+.top-reads li::before { content: counter(reads, decimal-leading-zero); font-family: Georgia, serif; font-size: 13pt; color: #b84c3d; font-weight: 700; min-width: 8mm; }
+.top-reads .read-title { display: block; font-family: "Source Han Serif SC", "Noto Serif CJK SC", SimSun, serif; font-weight: 800; font-size: 11pt; line-height: 1.45; margin-bottom: 1.2mm; }
+.top-reads .read-digest, .top-reads .read-evidence { display: block; font-size: 9.2pt; line-height: 1.55; margin-top: .8mm; }
+.top-reads .read-digest b, .top-reads .read-evidence b { color: #b84c3d; }
+.top-reads .meta { display: block; color: #5f6b75; font-size: 8.5pt; margin-top: 1mm; }
+
+.viewpoints .chapter { margin: 0 0 5mm; page-break-inside: avoid; }
+.viewpoints h3 { font-size: 11pt; color: #ffffff; background: #14456e; display: inline-block; padding: 1mm 4mm; border-radius: 2pt; margin: 0 0 2.4mm; }
+.viewpoints ul { margin: 0; padding-left: 0; list-style: none; }
+.viewpoints li { padding: 1.6mm 0 1.6mm 4mm; border-left: 1.6pt solid #d8e0e7; font-size: 9.5pt; }
+.viewpoints li b { color: #b84c3d; }
+
+.toc ul { margin: 0; padding: 0; list-style: none; column-count: 2; column-gap: 8mm; }
+.toc li { font-size: 9pt; padding: 1.4mm 0; border-bottom: .4pt dotted #c7d0d8; break-inside: avoid; }
+.toc .pri { font-weight: 700; color: #b84c3d; margin-right: 2mm; }
+
+.comic-lead figure { margin: 0 0 3mm; }
+.comic-lead img { width: 100%; border: .6pt solid #d7dee5; }
+.comic-lead .note { font-size: 9pt; color: #40505c; background: #faf6ee; border-left: 2.4pt solid #c89b52; padding: 3mm 4mm; margin: 0 0 5mm; }
+
+.topic-card { padding: 8mm 10mm 9mm; page-break-before: always; break-before: page; }
+.topic-card .card-head { display: flex; align-items: center; gap: 3mm; margin-bottom: 3mm; }
+.chip { font-size: 8pt; font-weight: 700; padding: .8mm 3mm; border-radius: 999px; }
+.chip.pri-P0 { background: #b84c3d; color: #fff; }
+.chip.pri-P1 { background: #e9d9d5; color: #8b2f2a; }
+.chip.chapter { background: #eef3f7; color: #14456e; border: .5pt solid #c7d7e3; }
+.card-head .idx { margin-left: auto; color: #9aa7b1; font-size: 8.5pt; }
+.topic-card h3 { font-size: 15pt; margin: 0 0 1.6mm; line-height: 1.35; }
+.topic-card h3 a { color: #14456e; }
+.topic-card .meta { color: #5f6b75; font-size: 8.5pt; margin-bottom: 3mm; }
+.topic-card figure.comic { margin: 0 0 4mm; }
+.topic-card figure.comic img { width: 100%; border: .6pt solid #d7dee5; border-radius: 2pt; }
+.judgment-box { background: #14456e; color: #ffffff; padding: 4mm 5mm; border-radius: 2pt; margin-bottom: 3mm; page-break-inside: avoid; }
+.judgment-box .label { font-size: 8pt; letter-spacing: .25em; color: #bcd2e4; display: block; margin-bottom: 1.2mm; }
+.judgment-box p { margin: 0; font-size: 10.5pt; font-weight: 700; line-height: 1.55; }
+.topic-analysis .analysis-kicker { margin: 1mm 0 4mm; color: #b84c3d; font-weight: 800; letter-spacing: .18em; font-size: 9pt; }
+.evidence { margin: 0; page-break-inside: avoid; }
+.evidence .label { font-size: 10.5pt; font-weight: 800; color: #b84c3d; letter-spacing: .12em; }
+.evidence ul { margin: 2mm 0 4mm; padding-left: 0; list-style: none; }
+.evidence li { position: relative; padding: 1.5mm 0 1.5mm 5mm; font-size: 10pt; line-height: 1.65; }
+.evidence li::before { content: ""; position: absolute; left: 1mm; top: 2.7mm; width: 2mm; height: 2mm; background: #c89b52; }
+.twin { display: flex; gap: 4mm; page-break-inside: avoid; }
+.twin .box { flex: 1; border-radius: 2pt; padding: 3.6mm 4.2mm; font-size: 9.5pt; line-height: 1.65; }
+.twin .box h4 { margin: 0 0 1.6mm; font-size: 10.5pt; }
+.twin .advice { background: #f0f6f0; border-top: 2.4pt solid #4f7d5a; }
+.twin .advice h4 { color: #3c6246; }
+.twin .reference { background: #fbf1ee; border-top: 2.4pt solid #b84c3d; }
+.twin .reference h4 { color: #8b2f2a; }
+.tracking { margin-top: 3.6mm; font-size: 8.5pt; color: #5f6b75; border-top: .4pt dashed #c7d0d8; padding-top: 2.2mm; }
+.footer-note { color: #9aa7b1; font-size: 8pt; text-align: right; padding: 0 11mm 6mm; }
+</style>
+</head>
+<body>
+<main>
+<div class="brandbar"><span></span><span></span><span></span></div>
+<div class="page cover pagebreak">
+<p class="cover-kicker">Global Tech Think Tank Watch</p>
+<h1>国际科技智库周报</h1>
+<div class="issue-meta"><span>2026-08-23</span><span>新增 19 条</span><span>P0/P1 重点 7 条</span><span>覆盖机构 6 家</span></div>
+<section class="situation avoid-break"><h2>本周态势</h2><p>本周形成 7 条 P0/P1 重点，议题集中在AI、数字基础设施与技术治理、科研体系、人才与创新政策。产业链、制造与能源信号 1 条；AI 与数字基础设施信号 4 条。</p></section>
+</div>
+<div class="page top-reads-page pagebreak">
+<section class="top-reads"><h2>本周必读</h2><ol>
+<li><span><span class="read-title"><a href="https://www.rand.org/pubs/research_reports/RRA4999-1.html">AI时代生物安全需要纵深防御体系</a></span><span class="read-digest"><b>研判</b>　RAND主张建立纵深防御体系，将模型层安全措施、核酸合成筛查、实验室与供应链控制、公共卫生监测等机制组合使用。</span><span class="read-evidence"><b>证据</b>　报告逐项比较不同措施的有效范围、部署条件与可能被规避的方式，并强调需要依据能力进步持续调整防线。</span><span class="meta">RAND · P0 · AI、数字基础设施与技术治理</span></span></li>
+<li><span><span class="read-title"><a href="https://www.csis.org/analysis/presidential-memo-combating-transnational-cybercrime-implications-industry-and-government">美国打击跨国网络犯罪备忘录的政企影响</a></span><span class="read-digest"><b>研判</b>　文章认为，该举措向对手释放美国将提高网络威慑强度的信号，并把部分行动能力和基础设施协同需求推向私营部门。</span><span class="read-evidence"><b>证据</b>　CSIS评析美国总统关于打击跨国网络犯罪的备忘录，关注政府强化进攻性网络行动时企业承担的角色与风险。</span><span class="meta">Center for Strategic and International Studies · P1 · AI、数字基础设施与技术治理</span></span></li>
+<li><span><span class="read-title"><a href="https://itif.org/publications/2026/08/19/comments-to-nih-on-measuring-and-rewarding-scientific-impact/">NIH应扩展科研影响评价与激励框架</a></span><span class="read-digest"><b>研判</b>　ITIF在提交NIH的意见中认为，以论文和学术引用为中心的评价体系无法完整反映公共科研投入产生的社会与产业影响。</span><span class="read-evidence"><b>证据</b>　该方案试图增强科研与产业、临床和人才体系的联系，但也意味着数据归因、时间滞后和不同学科可比性将成为实施难点。</span><span class="meta">Information Technology and Innovation Foundation · P1 · 科研体系、人才与创新政策</span></span></li>
+<li><span><span class="read-title"><a href="https://itif.org/publications/2026/08/19/canadas-ai-strategy-focuses-on-wrong-firms/">加拿大AI战略选错了重点企业</a></span><span class="read-digest"><b>研判</b>　ITIF认为，加拿大AI战略即使完成企业采用率目标，也可能无法兑现生产率增长承诺，因为采用数量不能替代采用深度。</span><span class="read-evidence"><b>证据</b>　其判断建立在企业规模、资本投入、数据基础和组织变革能力之间的差异上。</span><span class="meta">Information Technology and Innovation Foundation · P1 · AI、数字基础设施与技术治理</span></span></li>
+<li><span><span class="read-title"><a href="https://itif.org/publications/2026/08/17/canada-cant-subsidize-its-way-to-ai-adoption/">加拿大不能只靠补贴推动AI采用</a></span><span class="read-digest"><b>研判</b>　ITIF肯定加拿大提高企业AI采用率的目标，但认为政策误把购买成本视为主要障碍。</span><span class="read-evidence"><b>证据</b>　文章判断，多数企业更根本的困难在于识别具有商业价值的应用场景，并把工具嵌入既有流程与组织结构。</span><span class="meta">Information Technology and Innovation Foundation · P1 · AI、数字基础设施与技术治理</span></span></li>
+</ol></section>
+</div>
+<div class="page pagebreak">
+<section class="viewpoints"><h2>议题观点速览</h2>
+<div class="chapter">
+<h3>AI、数字基础设施与技术治理（2 条）</h3><ul>
+<li><b>RAND</b>：RAND主张建立纵深防御体系，将模型层安全措施、核酸合成筛查、实验室与供应链控制、公共卫生监测等机制组合使用。</li>
+<li><b>Center for Strategic and International Studies</b>：文章认为，该举措向对手释放美国将提高网络威慑强度的信号，并把部分行动能力和基础设施协同需求推向私营部门。</li>
+</ul></div>
+<div class="chapter">
+<h3>科研体系、人才与创新政策（2 条）</h3><ul>
+<li><b>RAND</b>：RAND指出，镜像生物学已被识别为潜在高后果风险，但国际社会尚缺少可实际执行的协同治理安排。</li>
+<li><b>Information Technology and Innovation Foundation</b>：ITIF在提交NIH的意见中认为，以论文和学术引用为中心的评价体系无法完整反映公共科研投入产生的社会与产业影响。</li>
+</ul></div>
+<div class="chapter">
+<h3>产业链、制造与能源基础设施（1 条）</h3><ul>
+<li><b>Information Technology and Innovation Foundation</b>：文章将这一趋势与非贸易部门生产率改善形成对照，认为制造业竞争力不能以就业数量单独衡量。</li>
+</ul></div>
+</section>
+</div>
+<div class="page pagebreak"><section class="toc"><h2>本期目录</h2><ul>
+<li><span class="pri">P0</span><a href="#topic-01">主题 01｜AI时代生物安全需要纵深防御体系</a></li>
+<li><span class="pri">P1</span><a href="#topic-02">主题 02｜美国打击跨国网络犯罪备忘录的政企影响</a></li>
+<li><span class="pri">P1</span><a href="#topic-03">主题 03｜加拿大AI战略选错了重点企业</a></li>
+<li><span class="pri">P1</span><a href="#topic-04">主题 04｜加拿大不能只靠补贴推动AI采用</a></li>
+<li><span class="pri">P1</span><a href="#topic-05">主题 05｜镜像生物学研究的分级操作治理框架</a></li>
+<li><span class="pri">P1</span><a href="#topic-06">主题 06｜NIH应扩展科研影响评价与激励框架</a></li>
+<li><span class="pri">P1</span><a href="#topic-07">主题 07｜美国制造业就业快于产出暴露生产率问题</a></li>
+</ul></section></div>
+<section class="topic-card topic-primary" id="topic-01">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 01 / 07</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA4999-1.html">AI时代生物安全需要纵深防御体系</a></h3>
+<p class="meta">RAND｜AI治理, 科技创新｜2026-08-18</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-23/pages/01-topic-building-a-defense-in-depth-biosecurity-strategy-for-the-ai-era.jpg" alt="主题 01 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>RAND主张建立纵深防御体系，将模型层安全措施、核酸合成筛查、实验室与供应链控制、公共卫生监测等机制组合使用。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P0">P0</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 01 / 07 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/research_reports/RRA4999-1.html">AI时代生物安全需要纵深防御体系</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>RAND讨论生成式AI降低生物知识与实验能力门槛后，单一控制点难以覆盖从模型访问、设计、合成到实验实施的完整风险链。</li>
+<li>RAND判断，各项缓释措施均有盲区，但可通过相互补位降低单点失效导致的系统性风险。</li>
+<li>报告逐项比较不同措施的有效范围、部署条件与可能被规避的方式，并强调需要依据能力进步持续调整防线。</li>
+<li>RAND同时指出，过度限制可能压缩正常生物医学研究与创新空间，因此治理应根据风险证据和技术成熟度校准。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>RAND建议将模型安全、合成筛查、实验室治理和公共卫生准备纳入统一的纵深防御框架，并通过持续评估修正各层措施之间的空隙。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-02">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 02 / 07</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/presidential-memo-combating-transnational-cybercrime-implications-industry-and-government">美国打击跨国网络犯罪备忘录的政企影响</a></h3>
+<p class="meta">Center for Strategic and International Studies｜国防AI, 数字经济｜2026-08-20</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-23/pages/02-topic-the-presidential-memo-on-combating-transnational-cybercrime-impl.jpg" alt="主题 02 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>文章认为，该举措向对手释放美国将提高网络威慑强度的信号，并把部分行动能力和基础设施协同需求推向私营部门。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 02 / 07 · 论证页</span>
+</div>
+<h3><a href="https://www.csis.org/analysis/presidential-memo-combating-transnational-cybercrime-implications-industry-and-government">美国打击跨国网络犯罪备忘录的政企影响</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>CSIS评析美国总统关于打击跨国网络犯罪的备忘录，关注政府强化进攻性网络行动时企业承担的角色与风险。</li>
+<li>其主要论据是关键网络、威胁情报和大量技术能力掌握在企业手中，政府行动难以脱离政企协作。</li>
+<li>Center for Strategic and International Studies同时警告，政策效果取决于授权边界、责任分配、信息共享和行动规则能否清晰落地。</li>
+<li>企业风险偏好、法律责任和潜在报复风险若未被纳入设计，进攻性行动可能造成执行落差。</li>
+</ul></div>
+</section>
+<section class="topic-card topic-primary" id="topic-03">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 03 / 07</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/19/canadas-ai-strategy-focuses-on-wrong-firms/">加拿大AI战略选错了重点企业</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜AI治理, 数字经济｜2026-08-19</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-23/pages/03-topic-canada-s-ai-strategy-focuses-on-the-wrong-firms.jpg" alt="主题 03 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>ITIF认为，加拿大AI战略即使完成企业采用率目标，也可能无法兑现生产率增长承诺，因为采用数量不能替代采用深度。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 03 / 07 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/19/canadas-ai-strategy-focuses-on-wrong-firms/">加拿大AI战略选错了重点企业</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>文章批评政策资源过度集中于中小企业，而大型企业才具备在复杂流程中规模化部署AI并形成显著生产率收益的能力。</li>
+<li>其判断建立在企业规模、资本投入、数据基础和组织变革能力之间的差异上。</li>
+<li>Information Technology and Innovation Foundation主张将政策重点转向大型企业的深度采用，通过监管确定性和更有利的AI部署税收待遇降低长期投资障碍。</li>
+<li>文章并未否认中小企业数字化的重要性，但认为普遍补贴会把“采用”简化为工具购买，难以形成可测量的产出改进。</li>
+</ul></div>
+</section>
+<section class="topic-card topic-primary" id="topic-04">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 04 / 07</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/17/canada-cant-subsidize-its-way-to-ai-adoption/">加拿大不能只靠补贴推动AI采用</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜AI治理, 数字经济｜2026-08-17</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-23/pages/04-topic-canada-can-t-subsidize-its-way-to-ai-adoption.jpg" alt="主题 04 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>ITIF肯定加拿大提高企业AI采用率的目标，但认为政策误把购买成本视为主要障碍。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">AI、数字基础设施与技术治理</span>
+<span class="idx">主题 04 / 07 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/17/canada-cant-subsidize-its-way-to-ai-adoption/">加拿大不能只靠补贴推动AI采用</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>文章判断，多数企业更根本的困难在于识别具有商业价值的应用场景，并把工具嵌入既有流程与组织结构。</li>
+<li>单纯补贴采购可能增加软件购买量，却无法保证形成稳定使用、流程改造或生产率提升。</li>
+<li>Information Technology and Innovation Foundation主张政府把支持方式转向需求诊断、技术选择、实施辅导和示范扩散，帮助企业找到适合自身业务的AI工具。</li>
+<li>文章的隐含反方是降低价格仍可能帮助资金不足企业入门，但作者认为缺乏应用能力时补贴的边际效果有限。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>文章建议把公共支持从普遍采购补贴转向应用场景识别、实施服务和组织能力建设，并以持续采用和生产率结果检验政策效果。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-05">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 05 / 07</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/perspectives/PEA4952-1.html">镜像生物学研究的分级操作治理框架</a></h3>
+<p class="meta">RAND｜科技创新｜2026-08-18</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-23/pages/05-topic-mirror-biology-research-implications-for-operational-governance.jpg" alt="主题 05 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>RAND指出，镜像生物学已被识别为潜在高后果风险，但国际社会尚缺少可实际执行的协同治理安排。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 05 / 07 · 论证页</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/perspectives/PEA4952-1.html">镜像生物学研究的分级操作治理框架</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>RAND依据研究活动距离可自我复制镜像细胞的技术里程碑，将研究划分为六类，并把治理强度设置为社区自律、机构与资助方监督、监管和供应链控制、禁止四级。</li>
+<li>其核心原则是风险越接近完整复制能力，责任主体越应从研究共同体外移至国家监管和国际协调层级。</li>
+<li>RAND强调，分类只描述技术活动与关键屏障的关系，具体治理强度仍需结合潜在收益、可替代路径和证据变化校准。</li>
+<li>报告也承认天然手性研究、检测工具和既有镜像组件存在边界问题，过宽控制可能抑制有益研究，过窄控制则会留下能力迁移通道。</li>
+</ul></div>
+</section>
+<section class="topic-card topic-primary" id="topic-06">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 06 / 07</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/19/comments-to-nih-on-measuring-and-rewarding-scientific-impact/">NIH应扩展科研影响评价与激励框架</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜科技人才｜2026-08-19</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-23/pages/06-topic-comments-to-nih-on-measuring-and-rewarding-scientific-impact.jpg" alt="主题 06 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>ITIF在提交NIH的意见中认为，以论文和学术引用为中心的评价体系无法完整反映公共科研投入产生的社会与产业影响。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">科研体系、人才与创新政策</span>
+<span class="idx">主题 06 / 07 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/19/comments-to-nih-on-measuring-and-rewarding-scientific-impact/">NIH应扩展科研影响评价与激励框架</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>其建议把新药开发、企业对大学科研的投入、发现向商业和临床成果的转化、国际科研伙伴关系深度以及生物医学人才管线纳入评价。</li>
+<li>文章的核心判断是，评价指标决定机构和研究者的激励方向，过窄指标会低估转化、合作和人才培养活动。</li>
+<li>Information Technology and Innovation Foundation据此主张联邦科研机构建立多维指标体系，并使资助和奖励机制与更广泛的影响结果相连接。</li>
+<li>该方案试图增强科研与产业、临床和人才体系的联系，但也意味着数据归因、时间滞后和不同学科可比性将成为实施难点。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>意见书建议NIH及其他联邦机构采用覆盖产业产出、临床转化、国际合作和人才管线的多维科研影响评价，并据此调整资助与奖励机制。</div>
+</div>
+</section>
+<section class="topic-card topic-primary" id="topic-07">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 07 / 07</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/18/us-manufacturing-employment-growing-faster-than-output-thats-a-problem/">美国制造业就业快于产出暴露生产率问题</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜先进制造｜2026-08-18</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-08-23/pages/07-topic-us-manufacturing-employment-is-growing-faster-than-output-that-s.jpg" alt="主题 07 漫画"></figure>
+<div class="judgment-box">
+<span class="label">核心判断</span>
+<p>文章将这一趋势与非贸易部门生产率改善形成对照，认为制造业竞争力不能以就业数量单独衡量。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="chip chapter">产业链、制造与能源基础设施</span>
+<span class="idx">主题 07 / 07 · 论证页</span>
+</div>
+<h3><a href="https://itif.org/publications/2026/08/18/us-manufacturing-employment-growing-faster-than-output-thats-a-problem/">美国制造业就业快于产出暴露生产率问题</a></h3>
+<p class="analysis-kicker">论证与政策含义</p>
+<div class="evidence"><span class="label">主要论据</span><ul>
+<li>ITIF指出，美国制造业就业增长快于产出，表明新增劳动投入并未转化为相应的生产率提升。</li>
+<li>Information Technology and Innovation Foundation判断，，长期产业领导力依赖每名劳动者创造的产出以及企业持续采用先进技术的能力。</li>
+<li>Information Technology and Innovation Foundation主张政策激励制造商采用自动化、数字化和其他提高生产率的技术，而非把政策目标局限于扩大就业。</li>
+<li>文章隐含回应了“制造业岗位增长即复兴”的观点，指出低生产率扩张会削弱工资、投资和国际竞争力的可持续性。</li>
+</ul></div>
+<div class="twin">
+<div class="box advice"><h4>政策建议</h4>文章建议将制造业支持政策与自动化、数字化和生产率提升挂钩，以产出和效率指标约束单纯追求就业数量的政策偏向。</div>
+</div>
+</section>
+<p class="footer-note">国际科技智库周报 · 2026-08-23 · 私有归档，仅限内部研判使用</p>
+</main>
+</body>
+</html>
