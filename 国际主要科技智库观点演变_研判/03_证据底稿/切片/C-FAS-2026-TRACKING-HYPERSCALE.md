@@ -1,0 +1,58 @@
+# Tracking Hyperscale AI Data Center Growth with Satellite Imagery
+
+- 报告ID：C-FAS-2026-TRACKING-HYPERSCALE
+- 机构：Federation of American Scientists
+- 科技创新复用角色：以卫星图像建立AI数据中心规模、建设进度和全球基础设施比较方法的2026测量节点
+- 主轴：卫星图像；AI数据中心；基础设施测量；开放情报方法；规模识别；中国科技横向维度
+
+## 科学技术创新定向摘录
+
+While multiple research organizations have utilized satellite imagery to track construction and ongoing activity at hyperscale data center facilities, no baseline assessment of its benefits and limitations is available in the public sphere. This research addresses that gap with two case studies: Khazna’s Ajman data center facility in the United Arab Emirates (UAE) and xAI’s Colossus data center site in Memphis, Tennessee. These examples reveal inconsistencies between commercial announcements and on-the-ground activity visible in satellite imagery, showing that official construction timelines, infrastructure permits, and company publications cannot be relied upon exclusively for insights into data center development. Satellite imagery provides a layer of independent verification that can be integrated to overall assessments of data centers, and this study illuminates where this imagery adds insight to inform future AI policy efforts. In particular, as discussions of international AI governance evolve, satellite imagery can be integrated as one verification method in a wider toolkit supporting the monitoring and implementation of future AI-focused agreements.
+
+This work draws on Epoch AI’s Frontier Data Centers Hub project—an effort to which the author contributed as a Supervised Program for Alignment Research (SPAR) Fellow—and builds on information originally collected by other members of the project that was further expanded upon for the research. This report was written for and funded by the 2025 GovAI Fall Fellowship.
+
+Data centers are an integral part of the AI ecosystem and impact finance, the environment, and international strategy. The total expected financial investment into data centers spans billions of dollars—and is
+
+. Thus, data centers have significant economic and industrial ramifications as they continue to be developed. The sheer size and scale of these facilities requires high amounts of energy, with these needs driving environmental concerns regarding the overall impact of AI. The Electric Power Research Institute in particular forecasts that data centers will use 9-17% of total U.S. electricity by 2030
+
+(an increase from 4-5% today). In addition, on the international stage, high levels of AI technology have increasingly been seen as a marker for technological supremacy, with countries prioritizing not only the development of AI models themselves but their integration into military systems as national priorities. All of these elements have caused a degree of public backlash regarding data center construction across the globe, reflecting local concerns about energy needs and fears surrounding the unregulated advancement of AI having significant geopolitical destabilizing effects.
+
+). Other aggregators such as Data Center Map, Baxtel, and Pacific Northwest National Laboratory’s Open Source Data Center Atlas independently use permits, news articles, and other open source information to collect information and display data center locations. However, the completeness and accuracy of these listings vary. Thus, satellite imagery is one additional layer of independent information that can provide credibility to existing geographical information on data center facilities.
+
+Therefore, while there is a clear interest in this type of analysis, there is still ample space to expand upon the impacts satellite imagery analysis can have in the AI field. This research provides a broad overview of satellite imagery’s capabilities for hyperscale data center tracking, providing an assessment of its benefits and limitations.
+
+of U.S.-based data centers on satellite imagery. This displays an appetite in the public sphere for visual representations of data center expansion. Articles such as these lack the detail of traditional imagery analysis, and could benefit from additional context that formal analyses can provide. More generally, satellite imagery data is useful for a variety of stakeholders: governments can use satellite imagery of data centers to inform policy decisions regarding AI-related infrastructure expansion in the face of perceived international competition and strain on electricity grids. Frontier AI labs can integrate imagery assessments to stay informed of the progress of their (and their competitors’) data center development. In addition, the public can harness satellite imagery to increase transparency of local development projects and ensure that companies are adhering to their permit terms and legal obligations. This research in particular addresses the latter, displaying how
+
+Among researchers, some skepticism remains about the use of satellite imagery to track data center construction. In late 2024, Lennart Heim and Konstantin Pilz argued that satellite imagery of data centers can be limited in its usefulness to
+
+. Their assessment took a conservative view of satellite imagery’s utility, stating that elements such as chip quantity, chip type, and power consumption levels are difficult to extract. While it is true that EO imagery cannot directly observe GPUs or other indoor hardware, this research argues that satellite imagery is valuable for independent verification of visible infrastructure and construction progress, and for making broad data center capacity estimates.
+
+For this research, the author first assesses the principles underpinning the analysis of electro-optical (EO) imagery, outlining how it could reveal physical infrastructural patterns at data center facilities. The author then applies these concepts to two case studies: the Ajman Data Center in the UAE (to track buildout and construction) and xAI’s Colossus data center facility in Memphis, Tennessee (to illustrate feature identification). Note that this research focuses primarily on hyperscale data centers (i.e. those with at least 50-100 MW capacity). These types of facilities have a large geographic footprint—often spanning tens to hundreds of football fields—and are easier to visualize in publicly-available EO imagery than medium- to small-scale data centers. These might be housed in existing buildings or urban centers and therefore might not have the clearly-identifiable visual signatures expected at hyperscale data center campuses.
+
+A Guide to Satellite Imagery in the Nuclear Age: Assessing China’s CFR-600 Reactor Facility
+
+Fig. 2. Example of satellite imagery used to identify features at China’s CFR-600 nuclear reactor facility. Source:
+
+A Guide to Satellite Imagery in the Nuclear Age: Assessing China’’s CFR-600 Reactor Facility
+
+Fig. 5. Alibaba Zhangbei Data Center, Zhangjiakou, China, November 7, 2024. Coordinates: 41°11’34.73″N, 114°41’53.37″E. Image: Google © 2025 Airbus
+
+Fig. 10: Examples of chillers. Left: Digital Realty ORD10 / Lakeside Technology Center, Chicago, Illinois, U.S.A, August 7, 2025. Coordinates: 41°51’14.35″N, 87°37’5.70″W. Image: Google © 2025 Airbus
+
+Commercial announcements cannot be solely relied upon for accuracy regarding the actual development of a data center site. Accuracy may be low due to changing construction plans, unscheduled delays, or intentional obfuscation. Early announcements can also function as publicity events. In the case of Ajman, illustrating that the “steel structures” claim is not consistent with ground truth helps to establish Khazna’s credibility and the reliability of future construction milestone announcements. In addition, these kinds of claims show that there could be a misalignment between understood definitions of “steel structures.” While they might refer to overall support structures, they might also be referring to other elements not yet visible at the site. This analysis ties the imagery observations to wider industry norms and shows that standard industry construction timelines are more realistic. Satellite imagery verification, therefore, reinforces these basic industry norms.
+
+In addition, the analysis of satellite imagery itself is a complicated art. The author is a trained imagery analyst and has years of professional experience with image interpretation. Understanding how to accurately analyze satellite imagery may be a barrier to entry for newcomers to the field, but this research is intended to serve as a starting point for those interested in developing these skills.
+
+Recommendation 1. AI researchers and analysts can use this report as a guide for assessing data center buildout and operation.
+
+Using both the established construction milestones and the identifiable features at completed data centers, the AI research community can reproduce these methodologies to compare construction milestones to commercial announcements, identify data center features, estimate buildout timelines, and evaluate potential energy usage requirements.
+
+This is particularly useful for monitoring the progress of lower-transparency countries such as China, Saudi Arabia, and the UAE.
+
+Additional research could also involve assessing the utility of other imagery sensors, such as synthetic aperture radar (SAR), multispectral, and hyperspectral imagery for tracking data center buildout and operation. On a larger scale, another avenue of research could explore how to potentially automate the detection of data centers; however, this would require high quantities of imagery for training data and a specifically-trained, accurate model. The difficulties of systematically distinguishing data centers from other industrial facilities is an additional challenge. Thus, while automated data center detection could be highly-desired as model capabilities develop, its practical implementation remains primarily conceptual at present.
+
+Future research could also include comparing infrastructure of hyperscale data centers between different companies or different countries. For example, the infrastructural features at U.S.-based sites might have different overall patterns than those in the UAE or China. Satellite imagery provides a unique look into low-transparency countries, and understanding the infrastructure of international data center sites would provide insights as to the energy usage and overall capacities of existing and future facilities.
+
+Data center facilities are critical to the successful operation of AI models, and their recent expansion reflects high interest in the continued development of these systems. However, despite public attention, key elements of data center construction and operation remain poorly understood due to a lack of publicly-available information, with corporate announcements being scarce and commercial timelines not necessarily reflecting true on-the-ground activity. This research demonstrates that EO satellite imagery can provide an independent, credible layer of insight regarding data center layouts, making it a valuable tool for verifying construction milestones and the presence of visible infrastructure rather than for measuring compute or internal activities.
+
+These findings provide assessments to address global competition concerns, support evidence-based planning of industrial policies, and can contribute to longer-term international discussions of transparency and verification of AI-related infrastructure. From individual researchers to international organizations, satellite imagery can be integrated at many levels to support verification efforts as one facet of a larger toolkit of transparency-building measures.

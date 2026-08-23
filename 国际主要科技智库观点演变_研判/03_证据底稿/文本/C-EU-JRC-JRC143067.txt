@@ -1,0 +1,1708 @@
+ISSN 1831-9424
+
+Technical and Operational Considerations
+AI Super-Resolution of Satellite Imagery:
+The Evidential Paradigm Shift in CAP
+Monitoring
+
+2025
+Pekel Jean-François., Kayitakire François.
+
+ EUR 40397
+
+https://joint-research-centre.ec.europa.eu
+JRC143067
+EUR 40397
+PDF  ISBN 978-92-68-30328-3  ISSN 1831-9424  doi:10.2760/3068818  KJ-01-25-392-EN-N
+Luxembourg: Publications Office of the European Union, 2025
+© European Union, 2025
+
+The reuse policy of the European Commission documents is implemented by the Commission Decision 2011/833/EU of 12 December 2011
+on the reuse of Commission documents (OJ L 330, 14.12.2011, p. 39). Unless otherwise noted, the reuse of this document is authorised
+under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence (https://creativecommons.org/licenses/by/4.0/). This means that
+reuse is allowed provided appropriate credit is given and any changes are indicated.
+For any use or reproduction of photos or other material that is not owned by the European Union permission must be sought directly from
+the copyright holders.
+Figure 1: Source: X.com, © 2020 X.com/@Chicken3gg
+Figure 2, 3, 5 and 6 : Source: © 2025 DigiFarm AS - All Rights Reserved
+Figure 4: Source: SR4RS © 2022, Rémi Cresson –INRAE.
+
+The examples presented are for illustrative purposes only and do not constitute endorsement of any commercial products or services.
+How to cite this report: Pekel, J.-F. and Kayitakire, F., AI Super-Resolution of Satellite Imagery: The Evidential Paradigm Shift in CAP Monitoring
+- Technical and Operational Considerations, Publications Office of the European Union, Luxembourg, 2025,
+https://data.europa.eu/doi/10.2760/3068818, JRC143067
+This document is a publication by the Joint Research Centre (JRC), the European Commission’s science and knowledge
+service. It aims to provide evidence-based scientific support to the European policymaking process. The contents of this
+publication do not necessarily reflect the position or opinion of the European Commission. Neither the European
+Commission nor any person acting on behalf of the Commission is responsible for the use that might be made of this
+publication. For information on the methodology and quality underlying the data used in this publication for which the
+source is neither Eurostat nor other Commission services, users should contact the referenced source. The designations
+employed and the presentation of material on the maps do not imply the expression of any opinion whatsoever on the
+part of the European Union concerning the legal status of any country, territory, city or area or of its authorities, or
+concerning the delimitation of its frontiers or boundaries.
+
+EU Science Hub
+
+https://joint-research-centre.ec.europa.eu
+
+Contents
+Abstract ...................................................................................................................................................................................................... 1
+Acknowledgements .............................................................................................................................................................................. 2
+Executive summary .............................................................................................................................................................................. 3
+1 Introduction: The Evolution of Agricultural Monitoring ............................................................................................. 4
+2 Technical Foundations: Evolution and State-of-the-Art in AI Super-Resolution Technology .............. 5
+2.1 Conceptual Framework ..................................................................................................................................................... 5
+2.1.1 Understanding AI Super-Resolution: Technical Reality vs. Common Perception ................ 5
+2.1.2 Evidential Implications: The Paradigm Shift in Regulatory Evidence ....................................... 6
+2.2 Technological Evolution and Deep Learning Approaches: Overview....................................................... 7
+3 Fundamental Constraints and Technical Boundaries in AI Super-Resolution Technology .................... 9
+3.1 Scaling Limitations ............................................................................................................................................................. 9
+3.2 Validation Requirements .............................................................................................................................................. 11
+4 Implementation Considerations: A Structured Evaluation Approach ............................................................. 12
+4.1 Strategic Evaluation: Decision Framework and Resource Considerations ........................................ 12
+4.2 Regulatory Compliance and Certification Considerations .......................................................................... 13
+4.3 Emerging Validation and Certification Research ............................................................................................ 14
+4.4 Framework Evaluation Criteria .................................................................................................................................. 14
+5 Operational Impacts of AI Super-Resolution Technology on CAP Monitoring ........................................... 15
+5.1 Production and Update of Parcel Borders .......................................................................................................... 15
+5.2 Identification and Monitoring of Landscape Features ................................................................................. 16
+5.3 Agricultural Practices Monitoring ............................................................................................................................. 18
+5.4 AI-Based Super-Resolution Integration within CAP Monitoring Systems: Technical and
+Operational Framework ........................................................................................................................................................... 18
+6 Evidential Value and Certification Framework ........................................................................................................... 20
+6.1 The Changing Nature of Image Evidence ........................................................................................................... 20
+6.2 Certification Requirements: Establishing Evidence Reliability ................................................................. 20
+6.3 Artifact Detection and Validation Methodology for AI-Enhanced Imagery...................................... 21
+6.4 Quality Assurance Framework: Evidential Value and Compliance Standards ................................ 22
+6.5 Metadata Architecture: Documentation and Traceability Protocols ..................................................... 22
+
+7 Conclusions ..................................................................................................................................................................................... 23
+References ............................................................................................................................................................................................. 24
+List of abbreviations and definitions ...................................................................................................................................... 25
+List of figures ....................................................................................................................................................................................... 29
+Annexes ................................................................................................................................................................................................... 30
+Annex 1. Technical Foundations: Deep Learning Architectures for Super-Resolution .......................... 31
+Annex 2. Sentinel-2 Platform: Specifications and Operational Parameters .............................................. 34
+Annex 3. Implementation Frameworks: Strategic Analysis and Technical Options ............................... 36
+Annex 4. Certification and Validation Framework: Technical Specifications for Regulatory
+Compliance ..................................................................................................................................................................................... 40
+Annex 5. Emerging Validation Technologies: Research Trajectories and Implementation
+Timelines…………………………………………………………………………………………………………………….………………………47
+
+1
+Abstract
+This report examines AI-based super-resolution (AI-SR) technology within Common Agricultural
+Policy (CAP) monitoring systems, analysing its paradigm shift in satellite-based evidence. This
+technology represents a fundamental change, as satellite imagery evolves from direct
+documentation of physical reality to enhanced representations that may incorporate visually
+convincing but non-existent features. This transformation creates specific considerations regarding
+evidential reliability and regulatory compliance. The report proposes a certification framework to
+ensure compliance with Articles 10(3) and 11 of Implementing Regulation (EU) 2022/1173, which
+stipulate that alternative data sources must offer at least equivalent value for the purpose intended
+and ensure sufficient assurance on the accuracy of the area declared and on compliance with the
+relevant obligations. Through examination of technical foundations, performance boundaries,
+operational impacts, and deployment strategies, this analysis provides Member States' paying
+agencies with a structured evaluation framework. This guidance aims to facilitate evidence-based
+decision-making, ensuring that AI-enhanced imagery can be responsibly and reliably integrated into
+CAP monitoring systems.
+
+2
+Acknowledgements
+The authors are grateful to Markus Luczfalvy Jancso, Francisco Javier Rojo Revilla, Davide Muraro,
+Daniele Borio, Philippe Loudjani, Ferdinando Urbano, Gilbert Voican, and all other colleagues for
+their constructive feedback, which significantly contributed to this report's development.
+We extend particular appreciation to DigiFarm AS for providing examples of AI-based super-
+resolution imagery for this technical report. Their contribution reflects a commitment to transparent
+technical discourse and the collaborative advancement of agricultural monitoring technologies.
+Providing operational examples that illustrate both capabilities and current constraints shows
+commendable openness, which advances collective understanding within the agricultural monitoring
+community.
+We also thank the SR4RS framework developers for the publicly available imagery examples used
+from their documentation.
+
+Authors
+Jean-François Pekel, François Kayitakire
+
+3
+Executive summary
+As CAP monitoring systems increasingly rely on satellite-based remote sensing for efficient, data-
+driven agricultural monitoring, the emergence of AI-based super-resolution (AI-SR) technology
+offers new opportunities by artificially enhancing spatial resolution, potentially addressing Sentinel-
+2's main limitation, leading to expectations of improved monitoring capabilities.
+While promising, this technology involves a fundamental trade-off between enhanced spatial
+resolution and evidentiary data integrity. This constitutes a paradigm shift that transforms the
+evidential trustworthiness of satellite imagery.
+Traditional satellite imagery has been inherently trusted as evidence because it provides direct
+capture of ground conditions through well-understood optical and electronic processes.
+In contrast, AI-SR generates partially synthetic imagery through statistical inference. Specifically, AI-
+SR does not recover "hidden" details from low-resolution images; instead, it makes educated
+guesses to create details based on what it learned from thousands of paired low and high-
+resolution satellite images. Unfortunately, this process can inadvertently introduce non-existent
+features or eliminate/replace actual features, producing imagery that appears visually convincing
+but may not accurately represent actual ground conditions.
+Given these evidential challenges, this report establishes a systematic evaluation framework for
+assessing AI-SR technology within CAP monitoring systems. Recognising that this paradigm shift
+necessitates analysis of evidential value implications, the framework provides methodologies for
+evaluating technical constraints, evidential requirements, and operational considerations, enabling
+paying agencies to make informed decisions.
+The analysis examines four critical dimensions: (1) technical foundations of AI-SR, including its
+evolution to advanced deep learning architectures and inherent limitations illustrated through
+operational examples; (2) performance boundaries that establish relationships between
+enhancement factors and output reliability; (3) operational impacts on key monitoring functions,
+from parcel boundary update to agricultural practice verification; and (4) certification frameworks to
+establish the evidentiary value of enhanced imagery.
+Within this analytical context, Implementing Regulation (EU) 2022/1173 permits Member States to
+utilize alternative data sources provided they "offer at least equivalent value for the purpose
+intended" (Article 10(3)) while ensuring "sufficient assurance on the accuracy of the area declared
+and on compliance with the relevant obligations" (Article 11). Data quality adequacy is determined
+through Member States' established quality assurance processes. The complete regulatory
+framework is available through the EUR-Lex portal (https://eur-
+lex.europa.eu/eli/reg_impl/2022/1173/oj/eng)
+To support this systematic evaluation process, this report employs a tiered information architecture
+designed for different purposes and levels of detail. Paying agency decision-makers can focus on
+the main body (Sections 1-7) for strategic analysis of capabilities, limitations, and regulatory
+implications essential for policy and implementation decisions. Technical experts can access
+technical details and methodological frameworks through the systematically organized Annexes (1-
+5), which are referenced throughout the main text. This approach ensures paying agencies can
+efficiently access information appropriate to their specific needs and responsibilities.
+
+4
+1 Introduction: The Evolution of Agricultural Monitoring
+The implementation of the Common Agricultural Policy (CAP) has undergone a fundamental
+transformation through the integration of satellite-based remote sensing and complementary
+technologies, shifting from traditional spot checks to systematic, data-driven assessment of
+agricultural practices and compliance. This evolution demands efficient, accurate, and cost-effective
+monitoring systems capable of operating at large scales. As monitoring becomes more
+sophisticated, advances in satellite imaging and artificial intelligence present both opportunities and
+challenges. Within this context, paying agencies may wonder whether AI-based super-resolution (AI-
+SR) technology might address resolution limitations in freely available satellite imagery, particularly
+from the Sentinel-2 platform.
+To address these considerations systematically, this report examines whether and how AI-SR
+technology could enhance CAP monitoring frameworks, while considering technical constraints,
+implementation challenges, and quality assurance considerations. The analysis focuses on three
+fundamental questions:
+— How might AI super-resolution technology enhance the utility of Sentinel-2 imagery within CAP's
+monitoring system while ensuring reliability in an operational framework ?
+— What are the inherent limitations and potential risks of this technology in agricultural
+monitoring applications, and how can these risks be mitigated ?
+— What certification and quality assurance frameworks would be appropriate to establish the
+evidential value of AI-enhanced imagery?
+
+These questions guide the report's analytical structure:
+— Technical Foundations (Section 2): Analyses AI super-resolution technology's development,
+tracing its evolution from early computational approaches to advanced deep learning
+architectures while identifying characteristic constraints that shape implementation possibilities.
+— Fundamental Constraints and Technical Boundaries (Section 3): Establishes a systematic
+framework for understanding AI-SR limitations, addressing the Sentinel-2 platform's
+characteristics and the relationship between scaling factors and monitoring reliability.
+— Implementation Considerations (Section 4) : Provides paying agencies with evaluation
+frameworks to inform decision-making processes, with technical details of both open-source
+frameworks and commercial solutions provided in Annexes 3.2 and 3.3.
+— Operational Impacts (Section 5) : Assesses how AI-SR's technical limitations specifically
+affect key CAP monitoring functions - from parcel boundary update to landscape feature
+identification and agricultural practice monitoring.
+— Evidential Value and Certification (Section 6): Proposes a certification framework with
+structured artifact detection methodologies, validation protocols, and quality standards
+necessary to reestablish enhanced imagery's evidentiary value.
+Through this structured evaluation approach, paying agencies can assess AI-SR within their specific
+operational contexts while maintaining the reliability and evidential value essential for compliance -
+supporting informed technology decisions rather than prescribing specific implementation pathways.
+
+5
+2 Technical Foundations: Evolution and State-of-the-Art in AI Super-
+Resolution Technology
+2.1 Conceptual Framework
+As Earth observation applications increasingly demand detailed spatial information, the ability to
+enhance image resolution has become more desirable. Advanced technologies like super-resolution
+(SR) may - up to a certain point - enable this enhancement. Understanding how these technologies
+actually function is essential for evaluating their potential role within the CAP monitoring
+frameworks.
+2.1.1 Understanding AI Super-Resolution: Technical Reality vs. Common
+Perception
+AI-based super-resolution represents a domain where popular understanding may diverge from the
+underlying technical reality. This section addresses fundamental conceptual assumptions to
+establish an appropriate analytical framework for subsequent technical assessment.
+Low-resolution imagery fundamentally lacks detailed spatial information - a critical technical
+constraint that underlies all AI-SR applications. The resolution of an acquisition device (camera or
+satellite sensor) directly determines the level of detail captured during image acquisition. When
+imagery is acquired at low resolution, fine details below the sensor's resolving capability are not
+recorded - they are not merely "hidden" but absent from the digital representation. This information
+loss during acquisition represents an irreversible process, rendering it physically impossible to
+recover details that were never captured by the sensing apparatus.
+Despite this fundamental physical constraint, a persistent misconception regarding AI-SR technology
+suggests that it extracts or uncovers details that exist but remain imperceptible in low-resolution
+imagery. This interpretation fundamentally mischaracterizes the operational principles of AI-SR
+systems.
+Rather than extracting or recovering "hidden" details, an AI-SR model uses statistical inference to
+generate plausible missing details based on patterns learned during training. In essence, the system
+performs a form of "informed guessing" - it makes educated predictions about what high-resolution
+details might look like based on patterns of correlation learned from thousands of paired datasets
+of low and high-resolution training images.
+Figure 1 demonstrates this principle through a compelling empirical example. The low-resolution
+image on the left depicts former U.S. President Barack Obama, recognizable despite significant
+pixelation. However, the AI-enhanced image on the right, which is the output of the super-resolution
+process, reveals an entirely different individual with facial features that, while realistic and well-
+defined, do not represent Obama or any actual person.
+
+6
+Figure 1. Comparison of a low-resolution image of Barack Obama (left) with its AI super-resolution output
+(right), generated using PULSE, a GAN-based super-resolution model, demonstrating how AI-SR generates new
+features rather than recovering actual information.
+
+Source: X.com, © @Chicken3gg, (June 20, 2020)
+This transformation conclusively illustrates that AI-SR generates synthetic content through pattern-
+based inference rather than recovering actual information. The enhanced output represents a
+statistical prediction based on limited input data rather than an accurate representation of how
+Obama would appear if photographed with a high-resolution camera. While more advanced AI-SR
+models trained on larger datasets might produce more visually convincing results, the fundamental
+principle remains unchanged: all enhanced details are synthetically generated, not recovered from
+the original image. This fundamentally challenges the misinterpretation that AI-SR outputs
+constitute "true" high-resolution representations of the original scene.
+The underlying principle applies universally across AI-SR implementations, whether for portrait
+photography or satellite imagery: these systems analyse low-resolution data to identify basic
+structures, then generate plausible details based on training patterns. The algorithm produces
+synthetic details through statistical inference, not by revealing hidden information.
+Understanding the distinction between information recovery and synthetic generation is essential
+for proper implementation of AI-SR within the CAP monitoring frameworks, particularly for
+applications where the distinction between actual and synthetically generated details may have
+significant implications for eligibility assessment or compliance monitoring.
+These fundamental principles of statistical inference manifest across various operational contexts,
+from infrastructure recognition challenges (Section 3.1, Figure 2) to boundary precision issues in
+parcel delineation (Section 5.1, Figure 3) and small landscape feature preservation (Section 5.2,
+Figure 4).
+2.1.2 Evidential Implications: The Paradigm Shift in Regulatory Evidence
+Image-based evidence, including satellite imagery, aerial photography, and ground-based
+photography, has historically formed a cornerstone of regulatory and evidential frameworks.
+Traditional imagery content has historically been inherently trusted to accurately represent ground
+reality because it stems from direct capture of actual conditions through well-understood optical
+and electronic processes. This deterministic mechanism produces a systematic, physically traceable
+
+7
+relationship between the photons received by the sensor and the pixel values recorded, preserving a
+continuous chain of causality from scene to sensor.
+The emergence of AI-based enhancement technologies represents a fundamental paradigm shift in
+the nature of image-based evidence. Unlike traditional imagery that captures actual ground
+conditions, AI-SR generates partially synthetic content through statistical inference rather than
+direct observation. This transformation means that enhanced imagery cannot be assumed to
+maintain the inherent trustworthiness of traditional satellite data, as the enhancement process may
+introduce features that appear contextually plausible but do not constitute a rigorous representation
+of the actual ground reality. Consequently, the use of AI-enhanced imagery within regulatory
+frameworks requires establishing specific safeguards and validation protocols to ensure appropriate
+evidential value. This report provides technical guidance and certification frameworks to support
+paying agencies in addressing these evidential considerations and ensuring that AI-enhanced
+imagery meets the 'equivalent value' standard established in Implementing Regulation (EU)
+2022/1173.
+2.2 Technological Evolution and Deep Learning Approaches: Overview
+The evolution of super-resolution technology has progressed from simple mathematical
+interpolation methods to sophisticated AI-driven approaches. This section provides a summary of
+key developments and current state-of-the-art techniques. For technical details on deep learning
+architectures used in AI-based super-resolution (AI-SR) technology, including SRCNN, VDSR, SRGAN,
+and specialized frameworks for satellite imagery, please refer to Annex 1.1: Technical Foundations:
+Deep Learning Architectures for Super-Resolution.
+Early super-resolution techniques used mathematical interpolation methods to predict what new
+pixels should look like when expanding a low-resolution image to a larger size, applying
+mathematical functions (like cubic polynomials) to nearby pixels in the original version. These
+methods essentially 'filled in the gaps' by averaging neighbouring pixel values, producing blurry,
+unrealistic images that failed to capture fine details or preserve the spectral characteristics
+essential for satellite imagery analysis.
+The field underwent significant transformation with machine learning and deep learning
+approaches, which enabled the pattern-based inference methods described in Section 2.1.1.
+Current deep learning architectures have shown capabilities in improving image resolution while
+facing inherent limitations regarding reliability and authenticity. These approaches introduce specific
+challenges through potential hallucination effects (where AI models generate plausible but non-
+existent features) and memorization effects (where models reproduce training patterns rather than
+generalizing effectively).
+Research has established fundamental limitations in the scaling capabilities of super-resolution
+models. Recent reviews and empirical studies in the field of super-resolution (e.g., Wang et al.,
+2020; Yang et al., 2019) have established that performance tends to degrade significantly as
+scaling factors increase. This is due to the growing loss of information in the low-resolution input
+and the increased risk of generating hallucinated or non-existent details, which undermines the
+reliability of the enhanced output. For satellite imagery, Lanaras et al. (2018) similarly note that
+scaling factors above 4× are generally avoided due to these reliability concerns, with the magnitude
+and characteristics of this degradation varying based on multiple influential factors as discussed in
+Section 3.2.1.
+
+8
+Specialized architectures have emerged to address constraints specific to satellite imagery
+applications, incorporating techniques such as physics-guided training to mitigate atmospheric
+effects and preserve spectral relationships. Current development trajectories focus on model
+stability enhancement, computational efficiency, and physics-guided approaches.
+
+9
+3 Fundamental Constraints and Technical Boundaries in AI Super-
+Resolution Technology
+The application of AI-SR technology to Sentinel-2 imagery operates within specific technical
+constraints that shape its utility for CAP monitoring applications. Understanding these performance
+boundaries and the mitigation strategies available enables paying agencies to make informed
+implementation decisions while demonstrating compliance with the "equivalent value" standard
+established in Implementing Regulation (EU) 2022/1173. This section examines the scaling
+constraints that influence enhancement reliability alongside the validation frameworks and decision
+protocols that can address these limitations within regulatory monitoring contexts.
+3.1 Scaling Limitations
+As established in Section 2.2, AI-SR performance exhibits progressive degradation as enhancement
+factors increase, with the empirical guideline of 4×enhancement. When operating at higher
+enhancement factors, AI models may generate significantly more hallucination effects - visually
+convincing and contextually plausible but factually incorrect features - that could compromise
+monitoring reliability, and potentially affecting the accuracy of eligibility assessment or compliance
+monitoring.
+Nevertheless, this 4× threshold represents a general guideline rather than an absolute limit. The
+relationship between enhancement factors and output reliability follows a non-linear pattern
+influenced by several variables:
+— Information Limitation and Exponential Scaling Constraints: Image resolution
+enhancement inherently creates quadratic scaling in synthetic content generation. As
+enhancement factors increase, AI models must generate progressively more synthetic content
+based on increasingly limited source data. The mathematical relationship is straightforward:
+each enhancement factor requires quadratic growth in pixel generation. For example, a 4×
+enhancement requires generating 16 pixels (4×4 grid) from each original pixel. This quadratic
+scaling relationship, combined with the diminishing information foundation, increasingly
+challenges output reliability as applied scaling factors increase.
+— Image Content Complexity: Enhancement performance characteristics vary significantly
+depending on landscape characteristics and observation conditions:
+• Homogeneous agricultural landscapes with regular patterns may support higher
+enhancement factors (e.g., large cereal fields, uniform vineyard rows, extensive
+monoculture crops)
+• Areas with distinct boundaries and strong contrast features demonstrate better
+enhancement performance (e.g., field edges adjacent to roads, crop boundaries against
+water bodies, forest-cropland transitions)
+• Heterogeneous regions containing diverse landscape features, fine-scale elements, or
+complex textures typically exhibit more pronounced deterioration at higher
+enhancement factors (e.g., mixed farming systems, small-parcel agriculture,
+agroforestry areas, complex mosaic landscapes), with operational implications for
+boundary delineation illustrated in Section 5.1 (Figure 3)
+
+10
+• Seasonal variations and atmospheric conditions affect enhancement reliability across
+temporal sequences (e.g., varying cloud cover, seasonal haze, crop phenology stages,
+changing illumination angles)
+— Architectural Constraints: Higher enhancement factors require increasingly complex neural
+network architectures to generate the additional synthetic content. These deeper, more complex
+networks are more difficult to train reliably and more prone to generating artifacts, as detailed
+in Annex 1.1.
+— Training Dataset Composition and Representativeness: The scope, quality, and diversity of
+training datasets directly influence model generalisation capabilities at higher enhancement
+factors. Models trained on datasets with insufficient geographical coverage, seasonal diversity,
+or spectral variability may exhibit reduced reliability when applied to diverse operational
+contexts, with performance characteristics varying significantly across different enhancement
+factors and application domains. These theoretical constraints manifest observably in
+operational implementations, particularly when enhancement algorithms encounter features
+that diverge from typical training data distributions. Figure 2 provides empirical evidence of this
+phenomenon through comparative analysis of photovoltaic infrastructure - a relatively recent
+addition to agricultural landscapes that may be underrepresented in training datasets compiled
+from historical imagery.
+Figure 2: Comparison of very high-resolution reference imagery from ESRI base map (left) with Sentinel-2
+AI-SR enhanced output (right) for agricultural parcels containing photovoltaic installations. The left panel
+displays the ground reference condition where solar panel arrays are clearly visible as regular geometric
+patterns with distinct boundaries. The right panel shows the same area as processed through AI -SR
+enhancement of Sentinel-2 imagery.
+
+Source: © 2025 DigiFarm AS1 - All Rights Reserved
+
+1 The example provided by DigiFarm AS serves an educational purpose, representing the operational output of a
+technology undergoing continuous development and refinement. The authors acknowledge that AI-SR technology is a
+rapidly evolving field where today's constraints may be addressed through tomorrow's innovations. This example
+should not be interpreted as an evaluation of a specific commercial product, but rather as an illustrative case that
+enhances understanding of fundamental AI-SR operational principles.
+
+11
+The comparison between reference imagery and AI-SR output in Figure 2 reveals how statistical
+inference-based enhancement responds to underrepresented features. The algorithm, lacking
+sufficient training examples of photovoltaic installations with their distinctive linear arrangements
+and uniform reflectance patterns, reconstructs these areas using learned representations from
+more prevalent agricultural features. This manifests as observable smoothing and textural
+modification - the sharp geometric boundaries and regular panel arrays clearly visible in the
+reference imagery are replaced with organic patterns more consistent with “traditional” agricultural
+land cover.
+This transformation exemplifies a fundamental principle in AI-SR implementation: enhancement
+reliability directly correlates with training data representativeness. While the enhanced imagery
+maintains visual plausibility and general landscape context, specific details essential for accurate
+land use documentation may undergo alteration in the enhanced output, potentially affecting land
+use classification and monitoring accuracy.
+Contemporary commercial AI-SR solutions actively address this challenge through iterative training
+data expansion, systematically incorporating emerging agricultural infrastructure patterns as they
+become more prevalent in the landscape. This ongoing adaptation represents the technology's
+current maturation phase, where the temporal lag between infrastructure innovation and training
+data incorporation creates temporary but manageable limitations in reconstruction accuracy.
+3.2 Validation Requirements
+The synthetic nature of AI-SR outputs necessitates structured validation protocols proportional to
+the enhancement factor applied. Implementation requires:
+— Systematic Artifact Detection: Methodologies for identifying potential hallucination effects
+through both computational metrics and expert analysis, as described in Section 6.3: Artifact
+Detection and Validation Methodology and further detailed in Annex 4.1: Metric-Based Detection
+Approaches for Certification Requirements.
+— Multi-Source Verification: Validation of enhanced imagery through complementary reference
+data sources that may include native Very High Resolution (VHR) satellite imagery (0.3-0.5m),
+orthorectified aerial photography, ground-based observations, and where available, LiDAR or
+hyperspectral data. This verification approach enables identification of potential divergence
+between AI-generated content and actual ground conditions. The technical architecture for
+reference data integration is documented in Annex 4.5: Reference Data Integration.
+— Decision Framework for Uncertainty Management: An analytical approach for addressing
+cases where enhanced imagery exhibits potential artifacts or ambiguities. This framework may
+incorporate tiered assessment protocols based on the criticality of the monitoring task and the
+degree of uncertainty in the enhanced outputs, as detailed in Annex 4.3: Metric Aggregation and
+Anomaly Prioritization for Certification Workflows.
+When validation reveals ambiguities affecting eligibility assessment or compliance monitoring,
+native VHR imagery or field observations serve as authoritative references.
+The validation methodologies outlined above establish a technical framework for maintaining
+evidentiary integrity within the CAP monitoring framework. These methodologies form the technical
+foundation for the quality assurance protocols detailed in Section 6: Evidential Value and
+Certification Framework.
+
+12
+4 Implementation Considerations: A Structured Evaluation Approach
+Super-resolution technology constitutes a rapidly evolving domain with applications extending far
+beyond agricultural contexts. The field benefits from substantial research contributions across
+multiple disciplines including computer vision, machine learning, and remote sensing. This breadth
+of development establishes a comprehensive technical foundation for evaluating potential
+relevance to CAP monitoring while introducing specific considerations for quality assurance
+integration and operational reliability that paying agencies should assess.
+The technical landscape has evolved from primarily academic research to operational applications.
+This evolution has been facilitated by significant advances in deep learning architectures and
+increasing availability of high-performance computing resources, both factors influencing
+evaluation and potential implementation decisions for paying agencies considering AI-SR
+technology.
+4.1 Strategic Evaluation: Decision Framework and Resource
+Considerations
+Integration of AI-based super-resolution technology within CAP monitoring systems necessitates
+systematic evaluation of both strategic implications and implementation pathways. Such
+consideration represents a significant organisational decision requiring comprehensive assessment
+of institutional capabilities and resource requirements.  Developing specialized expertise for
+managing AI-enhanced imagery and associated quality control protocols remains essential to
+demonstrate the 'equivalent value' established in Implementing Regulation (EU) 2022/1173.
+When evaluating AI-SR technology, paying agencies should consider the fundamental relationship
+between enhancement factors and output reliability established in Section 3.1.  Higher
+enhancement factors increase synthetic content generation, potentially compromising evidential
+value and quality assurance standards. This relationship necessitates structured risk management
+frameworks in any evaluation process.
+In evaluating AI-SR technology, paying agencies can assess two distinct implementation
+approaches, each presenting different trade-offs regarding technical control, resource requirements,
+and implementation timelines:
+— Open-source frameworks provide greater technical control and customisation potential but
+require substantial internal expertise for development, testing, and maintenance. These
+solutions offer maximum flexibility but demand significant technical resources throughout the
+implementation lifecycle. Implementation involves considerable investment in specialized staff
+competencies across deep learning, remote sensing, and large-scale data processing. For
+detailed technical specifications and resource requirements of open-source solutions, please
+refer to Annex 3.2: Open-Source Solutions: Capabilities and Resource Requirements.
+
+13
+— Commercial solutions offer more immediate implementation potential with reduced technical
+overhead, though potentially limiting customisation options and future adaptability. These
+solutions generally provide streamlined integration with existing monitoring systems but may
+introduce vendor dependencies. Commercial solutions typically involve lower initial
+implementation complexity but may entail higher long-term operational costs through service
+agreements. For detailed analysis of service models and integration approaches for commercial
+solutions, please refer to Annex 3.3: Commercial Solutions: Service Models and Integration
+Approaches.
+The assessment of these potential implementation approaches would benefit from systematic
+analysis of:
+— Technical capabilities: Current institutional expertise versus required competencies
+— Resource availability: Budget constraints, infrastructure capacity, and staff resources
+— Operational requirements: Monitoring priorities, implementation timelines, and performance
+expectations
+— Risk management framework: Processes for managing uncertainty in enhanced imagery
+— Long-term sustainability: Continued maintenance, periodic revalidation, and technical
+evolution
+AI-SR integration requires a hierarchical decision framework providing clear protocols for resolving
+ambiguities in enhanced imagery. Such a framework needs to explicitly designate original high-
+resolution imagery or field observations as authoritative references when enhanced imagery
+exhibits uncertainty in areas affecting eligibility or compliance assessment.
+Resource planning should consider the complete lifecycle of potential implementation, including:
+— Infrastructure requirements: Computing resources and storage systems
+— Personnel development: Training programs, expertise acquisition, and operational staff
+— Quality control systems: Validation frameworks, uncertainty management, and audit
+protocols
+— Documentation systems: Metadata management, processing records, and traceability
+mechanisms
+ For detailed implementation guidance, please refer to Annex 3.1.
+4.2 Regulatory Compliance and Certification Considerations
+AI-SR technology adoption necessitates integration within quality assurance frameworks. Building
+upon the paradigm shift considerations established in Section 2.1.2, this report recommends
+implementing certification frameworks that serve dual purposes: distinguishing between native and
+AI-enhanced imagery, and ensuring that any synthetic content undergoes systematic quality control
+to demonstrate compliance with the "equivalent value" standard established in Implementing
+Regulation (EU) 2022/1173. For AI-enhanced imagery, achieving this regulatory standard involves
+systematic validation protocols that verify enhanced outputs maintain comparable reliability to
+established monitoring methodologies, thereby supporting the evidential integrity essential for
+regulatory compliance.
+
+14
+Implementation involves certification methodologies that support Member States' quality assurance
+systems by establishing:
+— Authentication protocols for distinguishing native from AI-enhanced imagery
+— Validation methodologies for systematic detection of potential artifacts
+— Documentation standards maintaining complete processing records
+— Chain of evidence procedures ensuring traceability for regulatory purposes
+The certification and validation frameworks establish the evidential value of enhanced imagery
+within quality assurance systems, ensuring reliable utility for compliance monitoring and eligibility
+determination.  The certification framework outlined in Section 6 provides an analytical framework
+for establishing the evidential value of enhanced imagery.
+Technical implementation details are provided in Annex 4.
+4.3 Emerging Validation and Certification Research
+Technological evaluation must consider current capabilities and limitations, while acknowledging
+ongoing research suggesting potential future advancements in certification and validation
+methodologies that may eventually address limitations discussed in Section 6 on evidential value
+and certification. These developments remain in research stages with potential operational
+readiness timelines extending beyond 2026-2027. Near-term assessment should therefore focus
+on the certification frameworks and validation methodologies detailed in Section 6.3 on artifact
+detection and validation methodology.
+Further details are provided in Annex 5.
+4.4 Framework Evaluation Criteria
+Integration of AI-SR within CAP monitoring systems requires a systematic approach to evaluating
+potential implementation frameworks, balancing technical capabilities, resource constraints, and
+operational requirements. This evaluation examines:
+— Enhancement factor considerations: Implementation decisions should account for the
+scaling constraints detailed in Section 3.2, with particular scrutiny for applications requiring
+enhancement factors beyond practical reliability thresholds
+— Infrastructure integration assessment: Evaluation would need to examine compatibility
+with data management systems, processing workflows, and metadata architectures.
+— Validation and certification framework compatibility: The methodologies outlined in
+Section 6.3 on artifact detection and validation methodology establish a foundation for
+identifying potentially erroneous synthetic features.
+— System adaptability and future readiness: This includes consideration of modular
+architectures that could accommodate improved validation techniques and enhanced processing
+capabilities as they become available.
+For detailed implementation frameworks, please refer to Annex 3.
+
+15
+5 Operational Impacts of AI Super-Resolution Technology on CAP
+Monitoring
+This section examines the practical implications of AI-SR's technical characteristics for key
+monitoring activities, building upon the performance boundaries established in Section 3.2 and the
+implementation frameworks outlined in Section 4, with particular attention to three critical areas of
+CAP monitoring.
+5.1 Production and Update of Parcel Borders
+Maintaining accurate and up-to-date parcel boundaries through the Land Parcel Identification
+System (LPIS) constitutes a foundational element of the CAP implementation. Current approved
+approaches rely on high-resolution imagery (<0.5 m) as authoritative input for the Geo-Spatial
+Application System (GSA).
+When considering AI-SR technology for parcel delineation, technical parameters require evaluation:
+Sentinel-2's baseline 10-meter resolution would require a scaling factor of approximately 20× to
+approach the 0.5-meter resolution required for accurate boundary delineation. This substantially
+exceeds the reliability constraints discussed in Section 3.2.1, requiring generation of 400 synthetic
+pixels (20×20 grid) from each original pixel, impacting output evidential value and quality assurance
+standards.
+Precise delineation serves two distinct but equally critical functions:
+— Parcel boundary identification: Defining the outer limits of agricultural parcels eligible for
+CAP payments
+— Ineligible feature detection: Identifying features within parcels that must be excluded from
+payment area calculations (e.g., water bodies)
+
+In that context, the synthetic nature of AI-enhanced imagery introduces significant evidentiary
+considerations as the enhancement process can generate hallucinated features that create
+uncertainties about:
+— Commission errors: The presence of ineligible features in the enhanced image that do not
+actually exist on the ground
+— Omission errors: The unintentional replacement of ineligible features with eligible ones
+— Boundary distortion: Inaccurate parcel boundary representation affecting area measurements
+These uncertainties may impact the accuracy of eligible area calculations and, consequently, the
+areas reported for the interventions under CAP regulations.
+Boundary distortion becomes particularly evident when AI-SR processes interfaces between
+spectrally similar land cover types. Figure 3 provides empirical evidence of this challenge through
+comparative analysis of forest-grassland boundaries, demonstrating how enhancement processing
+may affect the precise delineation critical for parcel identification.
+
+16
+Figure 3: Comparison of very high-resolution reference imagery from ESRI base map (left) with Sentinel-2 AI-
+SR enhanced output (right) depicting forest and grassland parcels. The left panel displays clear boundary
+delineation between forest and grassland at sub-meter resolution. The right panel presents the same area
+after AI-SR enhancement of Sentinel-2 imagery, illustrating characteristic boundary interpretation when
+processing spectrally similar land covers.
+
+Source: © 2025 DigiFarm AS2 - All Rights Reserved.
+Figure 3 illustrates how AI-SR algorithms interpret transitional zones between spectrally similar land
+covers through statistical inference. In such cases, the enhancement process may generate
+graduated boundaries that differ from the discrete ecological transitions visible in reference
+imagery. For parcel boundary identification - where precise delineation determines eligible areas for
+CAP payments - these processing characteristics, when they occur, introduce operational
+considerations that paying agencies can address through appropriate validation protocols.
+To mitigate these challenges and enhance the reliability of AI-SR for parcel delineation, paying
+agencies may consider AI-SR technology for enhancing imagery from sources with resolution closer
+to the required standard. For example, moderate-resolution satellite imagery with a native
+resolution of 1 meter could be enhanced with scaling factors of 2× to approach the required
+resolution while operating within the reliability parameters discussed in Section 3.2.1. This
+application would require thorough validation to demonstrate compliance with quality assurance
+requirements in operational contexts.
+Additionally, strategic acquisition timing - selecting periods when land cover types exhibit maximum
+spectral contrast, such as autumn when deciduous forests and grasslands are most distinct - may
+improve boundary definition in both source imagery and subsequent AI-SR processing.
+5.2 Identification and Monitoring of Landscape Features
+Small Landscape Features (SLFs) play a crucial role in biodiversity conservation and ecological
+balance within CAP's environmental objectives. The fundamental challenge in landscape feature
+monitoring stems from their often-limited spatial extent, complex morphology, and variable spectral
+signatures - characteristics that create specific detection challenges.
+This is particularly significant for features that approach or fall below the native resolution of
+Sentinel-2 imagery, where enhancement algorithms must generate synthetic content based on
+
+2 DigiFarm AS examples shown for educational purposes; see Figure 2, footnote 1 for full disclaimer.
+
+17
+limited information in the original data. These technical constraints manifest in landscape
+monitoring through several distinct mechanisms:
+— Substitution Effects: AI-SR may transform actual landscape elements into different feature
+types based on statistical patterns rather than actual characteristics (as illustrated with
+photovoltaic infrastructure in Section 3.1, Figure 2), creating challenges for habitat
+classification.
+— Commission Errors: AI-SR may generate contextually plausible but non-existent landscape
+features that appear consistent with surrounding ecological patterns, creating artificial habitat
+continuity.
+— Omission Errors: Enhancement processes may fail to preserve actual small landscape
+features, particularly those with limited contrast against surrounding vegetation, artificially
+simplifying landscape complexity. These omission effects are particularly evident for linear
+landscape features that fall near the resolution threshold of the source imagery. Figure 4
+illustrates this issue through the inadequately reconstructed tree row in AI-SR enhanced
+imagery, showing how structural definition essential for feature identification has been
+significantly reduced.
+Figure 4: Comparison of very high-resolution reference imagery from ESRI base map (left) with Sentinel-2
+AI-SR enhanced output (right) showing agricultural parcels with a linear tree feature. The left panel clearly
+displays a mature tree row forming a field boundary with distinct canopy structure. The right panel shows the
+same area after Sentinel-2 AI-SR enhancement where the tree row's linear structure and defining
+characteristics have been impaired.
+Source: © 2025 DigiFarm AS3 - All Rights Reserved.
+
+The reconstruction challenges illustrated in Figure 4 exemplify a significant consideration for SLF
+monitoring. While AI-SR processing attempts to preserve linear features, the resulting output may
+lack the spatial precision necessary for reliable identification. Features such as tree rows,
+hedgerows, and buffer strips may become ambiguous in their ecological function and regulatory
+
+3 DigiFarm AS examples shown for educational purposes; see Figure 2, footnote 1 for full disclaimer.
+
+18
+status, presenting particular challenges for automated detection systems where partial visibility
+impedes confident classification and compliance assessment.
+The operational implications extend beyond technical assessment to encompass evidential value
+and regulatory considerations. Inaccurate feature detection may affect compliance determination
+with environmental conditionality criteria and eligible area calculations. Conversely, incomplete
+detection of existing landscape features could impact the protection of ecologically significant
+elements, potentially affecting CAP's environmental objectives.
+For paying agencies considering AI-SR implementation, these challenges necessitate robust
+safeguards, with particular emphasis on the validation protocols established in Section 6.3. The
+resource requirements for appropriate safeguards represent an important consideration when
+evaluating the overall operational benefits of AI-SR technologies.
+5.3 Agricultural Practices Monitoring
+Sentinel-2's primary monitoring strength derives from its high temporal frequency (detailed in
+Annex 2), enabling robust time-series analysis that compensates for moderate spatial resolution in
+specific applications. The value proposition of AI-SR should therefore be evaluated within this
+context of existing temporal capability.
+For large-scale agricultural practices monitoring - including crop diversification, winter soil cover,
+conventional tillage operations, catch crops, nitrogen-fixing crops, and fallow land management -
+temporal analysis of native resolution Sentinel-2 imagery, potentially combined with Sentinel-1
+data, provides sufficient information for monitoring purposes.  These practices typically exhibit
+distinctive spectral-temporal signatures effectively captured at current resolution. For parcels of
+adequate size, higher spatial resolution imagery may be less critical, potentially reducing the need
+for spatial resolution enhancement.
+For agricultural parcels too small to be effectively monitored with Sentinel-2 imagery, AI-SR offers
+limited advantage due to spectral mixing. The mixed spectral signatures from adjacent land covers
+within individual pixels cannot be reliably unmixed through AI-SR techniques, as the algorithm lacks
+the information necessary to accurately disaggregate these composite signals.
+Within the CAP monitoring framework, fine-scale agricultural elements present distinct analytical
+challenges. For practices requiring high spatial resolution monitoring (e.g., buffer strips, landscape
+features, and riparian buffer zones), enhanced spatial detail would theoretically offer monitoring
+benefits. However, these applications would necessitate enhancement factors that substantially
+exceed the reliability boundaries discussed in Section 3.1, making native VHR imagery (0.3-0.5m) or
+field observations more practical alternatives given the extensive validation requirements needed to
+establish the evidential value of such highly enhanced imagery.
+The comprehensive validation requirements detailed in Section 4.2 represent an important factor in
+evaluating the overall value proposition for these specific monitoring applications.
+5.4 AI-Based Super-Resolution Integration within CAP Monitoring Systems:
+Technical and Operational Framework
+The integration of AI-SR technology into existing CAP monitoring systems represents a strategic
+decision for paying agencies that involves systematic coordination across regulatory, technical, and
+operational dimensions to safeguard monitoring reliability and the integrity of the CAP framework.
+
+19
+Meeting regulatory requirements is the primary consideration for AI-SR implementation, as it
+directly affects whether enhanced imagery can serve as acceptable evidence in CAP monitoring.
+Integration involves certification protocols and a hierarchical evidence framework, designating
+native imagery (unenhanced) or field observations as authoritative references while defining
+specific validation requirements for enhanced imagery to attain evidentiary status. Implementation
+should incorporate the certification framework detailed in Section 6 to ensure enhanced imagery
+maintains appropriate evidential value for CAP monitoring.
+At the technical level, integration with LPIS and GSA systems necessitates architectural
+considerations that account for the relationship between enhancement factors and output reliability
+established in Section 3.2. Technical implementation should incorporate enhancement factor
+constraints ensuring reliability remains demonstrably high, while maintaining comprehensive
+documentation of enhancement parameters, model characteristics, and processing decisions as
+outlined in Section 6.5 on metadata architecture and traceability protocols.
+The operational dimension focuses on process adaptation that acknowledges the fundamental
+distinction between traditional satellite imagery (direct optical capture) and AI-enhanced imagery
+(partially synthetic representation).
+Effective implementation requires phased deployment, beginning with low-risk applications and
+expanding to comprehensive monitoring functions as the system demonstrates reliability. This
+integration process demands a holistic approach that prioritizes regulatory compliance while
+optimizing technical and operational elements to preserve the fundamental integrity of CAP
+monitoring processes.
+Ultimately, paying agencies retain autonomy in determining appropriate implementation pathways,
+tailored to their specific operational contexts, and risk management frameworks, while always
+prioritising the robust maintenance of regulatory standards.
+
+20
+6 Evidential Value and Certification Framework
+Implementing Regulation (EU) 2022/1173 permits Member States to utilize data of "at least
+equivalent value" for Area Monitoring System applications (Articles 10(3) and 11), with data quality
+adequacy determined through Member States' established quality assurance processes.
+This section proposes a certification framework that supports Member States in establishing the
+evidential value of AI-SR imagery within their quality assurance systems. The framework provides
+structured technical guidance for implementation.
+6.1 The Changing Nature of Image Evidence
+Building on the paradigm shift established in Section 2.1.2, the practical implications of this
+transition from direct capture to synthetic content within regulatory contexts manifest through
+specific mechanisms detailed in the technical limitations established in Section 3.2 on performance
+boundaries and scaling constraints:
+AI enhancement introduces inherent uncertainties through potential hallucination and memorization
+effects, where the enhancement process may generate features that appear contextually plausible
+but do not correspond to actual ground conditions
+Modern AI-enhanced imagery has reached a level of sophistication where distinguishing between
+native and enhanced imagery through visual inspection alone has become increasingly challenging.
+This transformation highlights the importance of three important considerations: a robust
+certification framework to distinguish native from AI-enhanced imagery (Section 6.2 on certification
+requirements), comprehensive technical validation protocols (Section 6.3 on artifact detection and
+validation methodology), and clear quality requirements for enhanced imagery's evidential status
+(Section 6.4 on Quality Assurance Framework). These elements represent important considerations
+for maintaining reliable image-based evidence in CAP monitoring, where accuracy directly
+influences regulatory and financial outcomes.
+6.2 Certification: Establishing Evidence Reliability
+With the ongoing advancement of AI-based image processing technologies, certification offers
+pathways for establishing the evidential value of imagery used for compliance verification. A
+certification framework would establish either that an image has maintained its original
+characteristics without any AI enhancement, or that any AI enhancement applied has been
+systematically validated to ensure sufficient reliability relative to actual ground conditions.
+This is particularly important for CAP implementation, where imagery serves as primary evidence
+for regulatory compliance and financial decisions; Certification approaches would strengthen, or re-
+establishes, trust in the imagery used, enabling its continued use in regulatory frameworks while
+fostering confidence in robust CAP implementation.
+
+21
+6.3 Artifact Detection and Validation Methodology for AI-Enhanced
+Imagery
+Identifying artifacts in AI-enhanced imagery is technically challenging due to the inherent nature of
+AI super-resolution technology. As discussed in Section 2.1.1, contemporary AI-SR architectures are
+specifically designed to generate photorealistic details that appear convincing to human perception
+but may not always represent actual ground conditions. This creates a complex validation problem:
+the visually plausible nature of AI-generated artifacts makes them exceedingly difficult to identify
+through conventional visual inspection, particularly when operating at scale across vast and
+heterogeneous agricultural landscapes. This validation challenge is not merely theoretical. As
+demonstrated in Section 3.1's photovoltaic infrastructure analysis, contemporary AI-SR systems can
+generate compelling visual representations that misrepresent actual ground features.
+This technological challenge directly drives the need for the certification requirements established in
+Section 6.2 as the reliability of enhanced imagery depends fundamentally on distinguishing
+between authentic features and AI-generated artifacts. Establishing the evidential value of
+enhanced imagery through systematic validation protocols enables demonstration of the 'equivalent
+value' required under Implementing Regulation (EU) 2022/1173.
+A robust methodological framework addresses these challenges through the integration of
+quantitative metrics with systematic expert analysis across three interconnected components:
+— Metric-Based Detection: Specialized metrics detect anomalies that might escape human
+perception by evaluating structural patterns, perceptual characteristics, and statistical properties
+of enhanced imagery. These metrics provide quantitative assessment that can direct specialist
+attention toward regions requiring detailed evaluation.
+— Prioritization: A systematic aggregation framework transforms multiple metric outputs into
+structured information that highlights potential artifacts. This process establishes a multi-tiered
+review framework (standard monitoring, enhanced verification, and critical investigation) based
+on statistical thresholds, enabling efficient allocation of expert analysis resources.
+— Expert-Driven Visual Analytics: Interactive visualization systems enable experts to conduct
+detailed examination of prioritized regions through multi-source reference data integration,
+synchronised temporal analysis, and comprehensive documentation capabilities.
+These components work together to establish the evidentiary value of enhanced imagery, ensuring
+that CAP monitoring systems maintain their reliability while potentially benefiting from resolution
+enhancement capabilities. Through structured validation procedures, the framework creates a
+systematic path for enhanced imagery to establish regulatory credibility - translating enhanced
+visual detail into reliable evidence for compliance verification and eligibility determinations.
+This approach enables paying agencies to maintaining regulatory compliance. The system
+fundamentally recognises the irreplaceable value of human expertise in artifact validation while
+providing Visual Analytics tool to augment and focus expert analysis. The framework incorporates
+multi-source reference data, including satellite imagery, orthophotos, LiDAR data, and ground-level
+photography to enable comprehensive verification of enhanced imagery.
+For comprehensive technical specifications of the artifact detection and validation methodology,
+including detailed descriptions of metric-based approaches, aggregation frameworks, visual
+analytics systems, and reference data integration, please refer to Annex 4: Technical Specifications.
+
+22
+6.4 Quality Assurance Framework: Evidential Value and Compliance
+Standards
+The quality assurance framework should now account for this new reality in image-based evidence.
+It provides specific recommendations for CAP implementation, defining guidelines for image quality
+and accuracy regardless of the processing method. The framework incorporates multiple verification
+layers, including automated systems and expert reviews.
+Expert testimony takes on increased importance, with technical experts needed to communicate not
+only about image enhancement processes but also about certification procedures and validation
+results. The documentation creates a complete audit trail that includes:
+— Systematic identification of any AI enhancement applied
+— For in-house implementations: Model specifications and performance metrics; For commercial
+services: Provider identification, algorithm version, service specifications, and available
+performance metrics
+— For in-house implementations: Training data characteristics and detailed validation results; For
+commercial services: Available quality assessments, validation results, and/or provider
+certifications
+— Processing chain documentation
+— Quality control measures and results
+6.5 Metadata Architecture: Documentation and Traceability Protocols
+Comprehensive metadata management constitutes a critical component of a certification
+framework. Its importance stems from two fundamental requirements: maintaining complete
+traceability of enhancement processes for quality assurance compliance and enabling systematic
+diagnostic procedures when enhanced outputs exhibit unexpected behavioral patterns or deviate
+from expected quality metrics.
+The metadata framework documents two essential domains. First, enhancement process
+documentation record model specifications and processing parameters, including specific settings
+that address the fundamental limitations discussed in Section 3.2 on performance boundaries and
+scaling constraints. Second, quality control documentation maintains detailed records of validation
+processes, reference data sources, and decision criteria applied.
+This metadata management approach enables rapid identification of potential issues and maintains
+audit trails for compliance requirements. It provides essential documentation for expert testimony
+within quality assurance frameworks, as discussed in Section 6.4.
+
+23
+7 Conclusions
+While Sentinel-2 imagery offers valuable temporal coverage and spectral capabilities for
+agricultural monitoring, its 10-meter spatial resolution presents a constraint for specific
+applications. This technical gap has driven the evaluation of AI-based Super-Resolution as a
+potential enhancement, necessitating a systematic analysis of its capabilities and implementation
+within CAP regulatory frameworks.
+AI-SR enables spatial resolution enhancement while fundamentally transforming the evidential
+nature of satellite imagery. AI-SR implements statistical inference to generate realistic details. This
+process transforms satellite imagery from direct optical documentation of physical reality to
+enhanced representation that incorporates synthetically generated content. This represents a
+paradigm shift where satellite imagery transitions from being inherently trustworthy evidence of
+ground conditions to partially synthetic representation that requires validation to establish its
+evidential reliability.
+Evidential value decreases as enhancement factors increase because higher scaling factors require
+generating progressively more synthetic content from increasingly limited original information.
+Reliability is influenced by multiple interdependent factors: enhancement magnitude, landscape
+complexity, training dataset representativeness, atmospheric conditions, and temporal variations. A
+4× threshold serves as general technical guidance where these various factors typically converge to
+maintain acceptable performance boundaries.
+Establishing the evidential value of AI-enhanced imagery becomes essential for regulatory
+compliance, particularly to address the requirement for "at least equivalent value" specified in
+Implementing Regulation (EU) 2022/1173. The certification framework proposed provides structured
+methodologies for distinguishing between native satellite imagery and AI-enhanced outputs, while
+systematically validating enhanced imagery evidential value. This framework integrates artifact
+detection protocols, identifying potential hallucination and memorisation effects, along with multi-
+source verification procedures using reference datasets, and structured uncertainty management
+protocols.
+Implementation of AI-SR technology within CAP monitoring requires comprehensive metadata
+architecture and traceability protocols to maintain transparency and accountability throughout the
+enhancement process. Quality assurance systems should systematically document enhancement
+parameters, model specifications, processing decisions, and validation outcomes. The proposed
+framework supports both operational quality control and regulatory compliance, ensuring that
+enhanced imagery maintains appropriate evidential standards when used for compliance
+verification or eligibility determinations.
+The report provides paying agencies with an evaluation framework for systematically assessing AI-
+SR technology within their specific operational contexts. The examination encompasses technical
+foundations, performance boundaries, implementation pathways, operational impacts, certification
+requirements, and deployment strategies, enabling informed decision-making based on technical
+capabilities, resource requirements, and regulatory compliance considerations.
+Paying agencies are empowered with complete implementation autonomy, with this analytical
+framework serving as technical guidance, recognising that optimal implementation approaches
+correspond to institutional capabilities, monitoring requirements, and operational constraints.
+
+24
+References
+Baker, S. and Kanade, T., Limits on super-resolution and how to break them, IEEE Transactions on
+Pattern Analysis and Machine Intelligence, 2002, 24(9), 1167-1183.
+Chen, L., Zhang, R. and Thompson, K., Enhanced Structural Similarity Metrics for AI-Generated Image
+Detection, IEEE Transactions on Image Processing, 2022, 31(4), 1522-1535.
+Cuomo, S., Di Cola, V.S., Giampaolo, F. et al., Scientific Machine Learning Through Physics-Informed
+Neural Networks: Where we are and What's Next, Journal of Scientific Computing, 2022, 92, 88.
+Dong, C., Loy, C.C., He, K. and Tang, X., Learning a Deep Convolutional Network for Image Super-
+Resolution, in Fleet, D., Pajdla, T., Schiele, B. and Tuytelaars, T. (eds), Computer Vision -- ECCV 2014,
+Springer, Cham, 2014, pp. 184-199, https://doi.org/10.1007/978-3-319-10593-2_13.
+Dong, C., Loy, C.C., He, K. and Tang, X., Image Super-Resolution Using Deep Convolutional Networks,
+IEEE Transactions on Pattern Analysis and Machine Intelligence, 2016, 38(2), 295-307,
+arXiv:1501.00092.
+European Space Agency, Sentinel-2 User Handbook, ESA Standard Document, 2021.
+Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A. and Bengio,
+Y., Generative Adversarial Nets, in Ghahramani, Z. et al. (eds), Advances in Neural Information
+Processing Systems 27, Curran Associates, 2014, pp. 2672-2680.
+Greza, M., Bhattacharya, I., Hoegner, L. and Jutzi, B., GAN-Based Dual Image Super Resolution for
+Satellite Imagery Decreasing Radiometric Uncertainty, ISPRS Annals of the Photogrammetry,
+Remote Sensing and Spatial Information Sciences, 2024, X-3-2024, 155-162.
+Johnson, J., Alahi, A. and Fei-Fei, L., Perceptual Losses for Real-Time Style Transfer and Super-
+Resolution, in Leibe, B., Matas, J., Sebe, N. and Welling, M. (eds), European Conference on Computer
+Vision (ECCV) 2016, Springer International Publishing, 2016, pp. 694-711.
+Lanaras, C. et al., Super-Resolution of Sentinel-2 Images: Learning a Globally Applicable Deep
+Neural Network, ISPRS Journal of Photogrammetry and Remote Sensing, 2018, 146, 305-319.
+Li, J., Fang, H., Sun, H. and Du, B., Deep learning for remote sensing image super-resolution: A survey,
+ISPRS Journal of Photogrammetry and Remote Sensing, 2022, 183, 63-85,
+https://doi.org/10.1016/j.isprsjprs.2021.11.013.
+Wang, Z., Chen, J. and Hoi, S.C.H., Deep Learning for Image Super-resolution: A Survey, IEEE
+Transactions on Pattern Analysis and Machine Intelligence, 2020, 43(10), 3365-3387,
+https://doi.org/10.1109/TPAMI.2020.2982166.
+Yang, W. et al., Deep Learning for Single Image Super-Resolution: A Brief Review, IEEE Transactions
+on Multimedia, 2019, 21(12), 3106-3121, https://doi.org/10.1109/TMM.2019.2919431.
+
+25
+List of abbreviations and definitions
+Abbreviations Definitions
+AI Artificial Intelligence: Computational systems that
+simulate human cognitive functions using algorithms
+and neural networks.
+CAP Common Agricultural Policy: the EU's agricultural
+framework implementing market interventions,
+direct payments, and rural development programs
+while establishing regulatory standards for
+agricultural practices.
+CNN
+
+Convolutional Neural Network: deep learning
+architecture utilizing convolution operations and
+hierarchical feature extraction for processing grid-
+structured data, optimized for computer vision tasks.
+ESSIM Enhanced Structural Similarity Index: Advanced
+image comparison metric that evaluates structural
+elements, textures, and contrast patterns to assess
+image quality and detect artifacts in enhanced
+imagery.
+FPS Feature Persistence Score: Validation metric that
+quantifies the consistency of landscape features
+across different data sources and temporal
+conditions to identify potential AI-generated
+artifacts.
+GAN Generative Adversarial Network: Machine learning
+framework where generator and discriminator
+networks compete to produce synthetic images
+indistinguishable from authentic samples through
+adversarial training.
+
+26
+Abbreviations Definitions
+GLCM
+
+GSA
+Gray Level Co -occurrence Matrix: Statistical method
+for examining texture by considering the spatial
+relationship of pixels, used in remote sensing
+applications for analyzing pattern distributions and
+detecting anomalies in enhanced imagery.
+Geo-Spatial Aid Application System: Digital platform
+that allows farmers to graphically declare and visually
+indicate agricultural areas for which they apply for
+CAP aid, integrated with LPIS for verification and
+payment processing.
+IACS Integrated Administration and Control System: EU -
+wide digital system managing and controlling CAP
+payments to farmers through interconnected
+databases including LPIS and GSA, ensuring
+standardized payment administration across Member
+States.
+LFAS Local Feature Alignment Score: Metric that evaluates
+the spatial coherence of landscape features with their
+surroundings, focusing on the natural alignment of
+elements such as hedgerows, streams, and field
+boundaries within the broader landscape context.
+LPIS Land Parcel Identification System: EU's geographical
+information system designed as the main instrument
+for implementing CAP direct payments, identifying
+and quantifying agricultural land eligible for payments
+through spatial parcel registration and update.
+PHD Perceptual Hash Distance: Validation metric that
+creates unique pattern fingerprints to detect
+unnaturally repeated or copied features in AI -
+enhanced imagery.
+
+27
+Abbreviations Definitions
+RSR-TransUNet Hybrid neural architecture combining transformer
+mechanisms with U-Net structure for multi -spectral
+satellite imagery super -resolution, preserving
+spectral-spatial information.
+SGGAN Satellite-Guided GAN: GAN variant incorporating
+physics-guided training for satellite imagery
+enhancement, ensuring physically consistent  results
+while preserving spectral characteristics
+SLFs Small Landscape Features: Landscape elements
+including hedgerows, ditches, and isolated trees that
+enhance biodiversity and ecosystem services.
+SR Super-Resolution: Computational techniques for
+enhancing image resolution through advanced
+interpolation and reconstruction methods, utilizing
+deep learning or physics-based approaches.
+SRCNN Super-Resolution CNN: Pioneering CNN architecture
+for super -resolution implementing end -to-end
+mapping between low  and high -resolution images
+through convolutional layers.
+SRGAN Super-Resolution GAN: GAN -based architecture
+optimized for photo-realistic image super-resolution,
+utilizing perceptual loss functions and adversarial
+training.
+TCI Texture Coherence Index: Statistical metric using
+GLCM analysis to assess texture pattern consistency
+and identify artificial uniformity in landscape imagery.
+TLIR Transformer Lightweight Image Restoration: Efficient
+transformer architecture for remote sensing image
+restoration, employing lightweight self -attention
+mechanisms for computational efficiency.
+
+28
+Abbreviations Definitions
+VDSR Very Deep Super Resolution: Deep learning
+architecture utilizing residual connections and very
+deep networks (20+ layers) for enhanced detail
+reconstruction in super-resolution tasks.
+VHR Very High -Resolution: Satellite imagery with spatial
+resolution finer than 1 meter per pixel, enabling
+detailed analysis of small-scale ground features.
+
+29
+List of figures
+
+Figure 1. Comparison of a low-resolution image of Barack Obama (left) with its AI super-resolution
+output (right), generated using PULSE, a GAN-based super-resolution model, demonstrating how AI-
+SR generates new features rather than recovering actual information. ................................................................ 6
+Figure 2: Comparison of very high-resolution reference imagery from ESRI base map (left) with
+Sentinel-2 AI-SR enhanced output (right) for agricultural parcels containing photovoltaic
+installations. The left panel displays the ground reference condition where solar panel arrays are
+clearly visible as regular geometric patterns with distinct boundaries. The right panel shows the
+same area as processed through AI-SR enhancement of Sentinel-2 imagery. Source: © 2025
+DigiFarm AS - All Rights Reserved ............................................................................................................................................ 10
+Figure 3: Comparison of very high-resolution reference imagery from ESRI base map (left) with
+Sentinel-2 AI-SR enhanced output (right) depicting forest and grassland parcels. The left panel
+displays clear boundary delineation between forest and grassland at sub-meter resolution. The right
+panel presents the same area after AI-SR enhancement of Sentinel-2 imagery, illustrating
+characteristic boundary interpretation when processing spectrally similar land covers. Source: ©
+2025 DigiFarm AS - All Rights Reserved. .............................................................................................................................. 16
+Figure 4: Comparison of very high-resolution reference imagery from ESRI base map (left) with
+Sentinel-2 AI-SR enhanced output (right) showing agricultural parcels with a linear tree feature. The
+left panel clearly displays a mature tree row forming a field boundary with distinct canopy
+structure. The right panel shows the same area after Sentinel-2 AI-SR enhancement where the tree
+row's linear structure and defining characteristics have been impaired. Source: © 2025 DigiFarm AS
+- All Rights Reserved. ........................................................................................................................................................................ 17
+Figure 5. Comparison of native Sentinel-2 imagery (left) and enhanced imagery (right) processed
+using SR4RS open-source framework trained on pansharpened Spot-6/7 data. ........................................... 37
+Figure 6. Comparison of native Sentinel-2 imagery (left) and enhanced imagery (right) processed
+by a commercial AI-SR service. ................................................................................................................................................... 38
+
+30
+Annexes
+This section provides a systematic guide to the technical annexes supporting this report. The
+annexes follow a progressive structure from foundational concepts to implementation frameworks,
+certification methodologies, and future research directions. Each annex addresses specific
+dimensions of AI-SR technology within CAP monitoring contexts, documenting technical
+specifications, implementation parameters, and analytical frameworks relevant to regulatory
+considerations.
+Annexes 1 & 2 document the technical foundations of AI super-resolution and Sentinel-2 platform
+specifications.
+Annex 3 examines the implementation frameworks, including strategic decision frameworks, open-
+source solutions, and commercial options.
+Annex 4 details certification and validation methodologies for establishing the evidentiary value of
+enhanced imagery.
+Annex 5 explores emerging validation technologies with implementation timelines beyond 2026-
+2027.
+These annexes are systematically referenced throughout the main text to provide access to detailed
+technical information as needed, while maintaining the strategic focus of primary analysis.
+
+31
+Annex 1. Technical Foundations: Deep Learning Architectures for Super-Resolution
+This annex provides technical details on the evolution of deep learning frameworks used in super-
+resolution technology. It documents specific neural network architectures, their operational
+principles, and characteristic constraints that shape implementation possibilities. This technical
+foundation is essential for understanding the capabilities and limitations of AI-SR within agricultural
+monitoring applications.
+
+Evolution of Deep Learning Architectures for Super-Resolution
+The progression of deep learning approaches represents a fundamental transformation in super-
+resolution technology, introducing new capabilities while establishing inherent limitations that
+directly impact regulatory applications. While these architectures demonstrate significant
+advancement in resolution enhancement, they simultaneously introduce specific constraints through
+hallucination effects (generation of plausible but non-existent features) and memorization effects
+(reproduction of training patterns rather than effective generalization).
+The foundation of contemporary AI-SR technology emerged with Dong et al.'s (2014) introduction of
+the Super-Resolution Convolutional Neural Network (SRCNN). This pioneering architecture
+demonstrated that convolutional neural networks could learn complex mapping functions between
+low-resolution and high-resolution images, effectively modeling relationships between
+corresponding resolution pairs. Kim et al. (2016) advanced this approach with the Very Deep Super
+Resolution (VDSR) network, implementing residual learning to focus specifically on high-frequency
+details like textures and edges while maintaining structural fidelity.
+A significant paradigm shift occurred with Ledig et al.'s (2017) introduction of SRGAN (Super-
+Resolution Generative Adversarial Network), which applied Goodfellow et al.'s (2014) GAN
+framework to super-resolution tasks. SRGAN's dual-network architecture fundamentally
+transformed the enhancement approach:
+— The generator network transforms low-resolution inputs into higher-resolution outputs
+through convolutional layers and up-sampling operations, progressively building detail from
+broad structural elements to finer textures.
+— The discriminator network evaluates enhanced images by comparing them against authentic
+high-resolution samples, effectively learning to distinguish between real and synthetically
+generated imagery.
+— The competitive interaction between these networks creates a self-improving system where
+the generator continuously refines its enhancement capabilities to overcome the discriminator's
+increasingly sophisticated detection abilities. The training process theoretically concludes when
+the system reaches Nash equilibrium - the point where the generator produces images so
+convincingly realistic that the discriminator can no longer reliably distinguish them from
+authentic high-resolution images.
+This adversarial training process drives the generator to produce increasingly realistic high-
+resolution images. SRGAN also introduced perceptual loss functions that evaluate differences in
+high-level feature representations rather than pixel-by-pixel comparisons. This approach aligns
+more closely with human visual perception and produces more visually convincing outputs, though
+not necessarily more accurate representations of ground conditions - a distinction with significant
+implications for regulatory applications.
+
+32
+
+Performance Boundaries and Fundamental Limitations
+Research has established scaling limitations in super-resolution models that directly impact
+agricultural monitoring applications. Multiple studies, including Li et al. (2022) and Lanaras et al.
+(2018) demonstrated that enhancement performance deteriorates significantly as scaling factors
+increase beyond 4×, creating a technical constraint for implementation within CAP monitoring
+frameworks. This performance boundary stems from two fundamental limitations:
+— Information Limitation: Low-resolution input images contain finite information. As
+enhancement factors increase, the system must generate progressively more synthetic content
+based on increasingly limited source data, directly affecting output reliability.
+— Architectural Constraints: Higher enhancement factors require deeper neural network
+architectures, which introduce training instability and increased potential for hallucination
+effects, where the model generates contextually plausible but factually incorrect features.
+These limitations establish a non-linear relationship between enhancement factors and output
+reliability, with significantly diminished reliability as enhancement factors increase. This relationship
+forms a critical technical parameter for regulatory applications where accuracy directly affects
+compliance assessment and payment determination.
+
+Specialized Architectures for Earth Observation Applications
+Recent advances have produced architectures specifically optimized for satellite imagery
+applications, addressing domain-specific challenges not present in general computer vision tasks.
+These specialized frameworks implement technical approaches directly relevant to agricultural
+monitoring applications:
+— Wang et al. (2022) Satellite-Guided GAN incorporated physics-guided training to mitigate
+atmospheric scattering effects, demonstrating improved performance in variable atmospheric
+conditions.
+— Liu et al. (2023) RSR-TransUNet architecture simultaneously preserves both spectral
+relationships across different wavelength bands and spatial details within each band,
+maintaining the spectral integrity essential for agricultural classification.
+— Zhang et al. (2023) TLIR (Transformer Lightweight Image Restoration) framework implements
+efficient self-attention mechanisms for computational optimisation in resource-constrained
+environments.
+Current development trajectories focus on three critical technical domains:
+— Model Stability Enhancement: Addressing the inherent limitations of deeper neural
+architectures, particularly regarding training stability and artifact reduction.
+— Computational Efficiency: Developing streamlined architectures and high-performance
+memory management strategies for practical deployment within infrastructure constraints.
+— Physics-Guided Approaches: Integrating atmospheric scattering models and seasonal
+illumination compensation to improve performance across variable environmental conditions.
+
+33
+These specialized architectures provide technical capabilities for enhancing satellite imagery while
+establishing fundamental constraints on performance reliability. The interplay between
+enhancement capabilities and reliability limitations directly impacts the evidentiary value of
+enhanced imagery within quality assurance systems as discussed in Section 6.1 on the changing
+nature of image evidence.
+
+34
+Annex 2. Sentinel-2 Platform: Specifications and Operational Parameters
+This annex provides comprehensive technical specifications of the Sentinel-2 satellite platform and
+its Multi-Spectral Instrument (MSI). It documents the platform's spatial, spectral, and temporal
+resolution characteristics that fundamentally shape its capabilities and limitations for agricultural
+monitoring applications. This detailed examination establishes the technical context necessary for
+evaluating enhancement requirements and implementation possibilities within CAP monitoring
+frameworks.
+Sentinel-2 constitutes a foundational component of contemporary agricultural monitoring
+infrastructure, distinguished by its technical architecture and operational framework. Operating
+within the European Union's Copernicus program, the platform implements an open data policy that
+fundamentally transforms access dynamics to Earth observation data. This accessibility, combined
+with systematic acquisition strategies, ensures comprehensive coverage of agricultural areas
+throughout growing seasons. The constellation achieves a baseline revisit time of 5 days (at the
+equator) via the combined operation of Sentinel-2A (launched June 2015), Sentinel-2B (March
+2017), and the recently launched Sentinel-2C (September 2024). Notably, the revisit time
+significantly improves over European territories, achieving more frequent revisit of 2-3 days due to
+orbital convergence at higher latitudes and the resultant overlap between adjacent orbital tracks.
+This enhanced temporal performance, achieved through coordinated orbital configurations, proves
+particularly effective for agricultural monitoring across European latitudes.
+The Multi-Spectral Instrument (MSI) onboard Sentinel-2 captures electromagnetic radiation through
+thirteen spectral bands optimized for Earth Observation applications. The instrument's spectral
+architecture is organised as follows: four bands at 10-meter spatial resolution (covering
+wavelengths from 443 nm to 945 nm), six bands at 20-meter resolution (spanning from 703 nm to
+2190 nm), and three bands at 60-meter resolution (ranging from 443 nm to 1375 nm) specifically
+designed for atmospheric correction.
+The MSI's technical specifications enable comprehensive agricultural monitoring through precisely
+calibrated spectral responses. The system enables efficient crop classification through the
+combination of multi-temporal and multi-spectral analysis, facilitates agricultural practice
+monitoring through temporal analysis, and supports environmental compliance monitoring.
+However, the platform's spatial resolution characteristics impose specific operational constraints.
+While the 10-meter resolution in key bands constitutes a significant advancement in freely
+available High Resolution Earth Observation data, it proves insufficient for specific CAP monitoring
+requirements. The resolution limitation affects the monitoring of agricultural parcels below 0.5
+hectares and prevents an accurate detection of small landscape features.
+These constraints impact CAP implementation capabilities, limiting the accurate detection and
+measurement of small landscape features and parcel boundaries that require sub-meter
+observation capabilities, as detailed in Section 4.2 on emerging validation and certification
+approaches. Consequently, paying agencies need commercial very high-resolution (VHR) satellite
+imagery (<0.5m resolution) to fulfill regulatory compliance requirements where Sentinel-2's 10-
+meter resolution proves inadequate.
+The interplay between Sentinel-2's specifications and CAP monitoring requirements presents a
+complex technical landscape. While the platform's spectral bands and temporal resolution enable
+systematic agricultural monitoring, its spatial resolution characteristics necessitate consideration of
+enhancement methodologies and complementary data sources. This technical framework provides
+
+35
+essential context for analyzing super-resolution technology integration potential, establishing a
+foundation for subsequent technical discussions throughout this report.
+
+36
+Annex 3. Implementation Frameworks: Strategic Analysis and Technical Options
+This annex provides a comprehensive assessment of implementation pathways for AI-SR
+technology within CAP monitoring systems. It documents the strategic implications, resource
+requirements, and organisational considerations associated with both open-source and commercial
+implementation options. This analysis enables paying agencies to evaluate implementation
+approaches against their specific technical capabilities, resource constraints, and operational
+requirements.
+
+Strategic Decision Framework for Implementation
+The integration of AI-based super-resolution technology within CAP monitoring systems involves
+evaluation of both strategic implications and implementation pathways. Implementation represents
+an organisational commitment requiring assessment of institutional capabilities and resource
+requirements.
+Successful implementation necessitates developing specialised expertise for managing AI-enhanced
+imagery and associated quality control protocols discussed in Section 3.2 on performance
+boundaries and scaling constraints, while maintaining compliance with regulatory standards
+detailed in Section 5. Resource requirements extend beyond initial acquisition costs to encompass
+continuous quality control processes and staff training, which must be weighed against operational
+efficiencies such as reduced dependence on traditional VHR imagery.
+Paying agencies may consider two distinct implementation pathways: open-source frameworks or
+commercial solutions. Open-source implementation offers greater control and customization
+potential but demands substantial internal technical expertise for development, testing, and
+maintenance. Conversely, commercial solutions provide more immediate implementation potential
+with reduced technical overhead, though potentially limiting customization options and future
+adaptability.
+The selection between these pathways should emerge from analysis of technical capabilities,
+resource availability, and operational requirements. This includes evaluation of both current
+expertise and potential skill development, alongside consideration of implementation costs and
+long-term sustainability. The chosen approach should align with both immediate operational
+capabilities and long-term monitoring objectives while ensuring sustainable implementation within
+available resources.
+
+Open-Source Solutions: Capabilities and Resource Requirements
+This annex documents the technical landscape of open-source frameworks for AI super-resolution,
+with particular emphasis on implementations relevant to remote sensing applications. It analyses
+architectural approaches, optimisation strategies, and computational requirements associated with
+frameworks like ESRGAN, SRCNN, Sen2Res, and SR4RS. This technical assessment enables paying
+agencies to evaluate open-source implementation options against their specific infrastructure
+capabilities and operational requirements.
+Several frameworks have emerged as particularly relevant to remote sensing applications, each
+demonstrating distinct architectural approaches and optimization strategies. While general-purpose
+implementations like ESRGAN (https://github.com/xinntao/ESRGAN) and SRCNN
+
+37
+(http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html) have gained widespread adoption, specialised
+frameworks targeting remote sensing applications have emerged to address domain-specific
+challenges. The Sen2Res framework (https://step.esa.int/main/snap-supported-plugins/sen2res/),
+developed by researchers at the INRIA, specifically addresses Sentinel-2 imagery enhancement.
+Similarly, the SR4RS framework (https://github.com/remicres/sr4rs), maintained by an international
+consortium of remote sensing specialists, provides specialized architectures for agricultural feature
+enhancement (Figure 5), often utilizing enhanced Sentinel-2 imagery as input. One such
+enhancement model is S2DR3 (https://medium.com/@ya_71389/sentinel-2-deep-resolution-3-0-
+c71a601a225), which represents a major update designed to upscale all 12 spectral bands of a
+single Sentinel-2 L2A (or L1C) scene from the original 10, 20, and 60 m/px spatial resolution to a
+target 1 m/px. This model is specifically optimized to preserve subtle spectral variations of soil and
+vegetation across all 12 multi-spectral bands of Sentinel-2 L2A and can reconstruct objects and
+textures with individual spatial features.
+Figure 5. Comparison of native Sentinel-2 imagery (left) and enhanced imagery (right) processed using
+SR4RS open-source framework trained on pansharpened Spot-6/7 data.
+Source: © 2025.SR4RS
+These open-source implementations typically involve substantial technical infrastructure
+considerations, where computational requirements scale exponentially with the enhancement
+factors outlined in Section 2.3. The relationship between model complexity and computational
+demands influences implementation planning, particularly regarding memory allocation and
+processing capacity.
+The processing pipeline typically involves access to high-resolution satellite imagery or
+orthophotography for model training, alongside substantial computational resources. While cloud
+computing platforms have made these resources more accessible, implementation typically involves
+considerable technical complexity. Paying agencies considering open-source solutions may wish to
+evaluate their capacity for developing expertise in deep learning, remote sensing, and large-scale
+data processing.
+
+38
+Commercial Solutions: Service Models and Integration Approaches
+This annex examines the commercial landscape for AI super-resolution technology within
+agricultural monitoring contexts. It documents service architectures, integration capabilities, and
+operational considerations associated with turnkey commercial solutions. This analysis provides
+paying agencies with essential information for evaluating commercial implementation pathways,
+particularly regarding reduced implementation complexity and technical expertise requirements
+compared to open-source alternatives.
+Building upon the foundation established by open-source developments, the commercial landscape
+for super-resolution technology offers operational alternatives that translate theoretical capabilities
+into practical monitoring tools. This evolution from research frameworks to commercial products
+represents a significant technological maturation characterized by architectural adaptations that
+balance enhancement capabilities with operational reliability.
+ Figure 6. Comparison of native Sentinel-2 imagery (left) and enhanced imagery (right) processed by a
+commercial AI-SR service.
+Source: © 2025 DigiFarm AS - All Rights Reserved
+These commercial implementations leverage deep neural network architectures to achieve
+automated field boundary delineation, delivering improved spatial resolution compared to native
+Sentinel-2 imagery. In contrast to open-source alternatives requiring specialised technical expertise,
+commercial providers offer turnkey solutions that significantly reduce implementation complexity
+for paying agencies, encompassing the complete processing chain from data acquisition to analysis-
+ready outputs. However, their practical utility requires systematic evaluation within the context of
+the limitations discussed in Section 3.2 on performance boundaries and scaling constraints,
+particularly regarding the risk of generated features that appear contextually plausible but do not
+reflect ground reality.
+Commercial platforms implement multilayer service architectures:
+— Cloud-based processing infrastructure handles large-scale satellite imagery enhancement
+operations.
+
+39
+— Specialised agricultural monitoring modules such as parcel segmentations.
+— Standardised API interfaces facilitate integration with existing monitoring systems.
+— This approach promotes operational efficiency while requiring an enhanced verification
+framework to ensure compliance with regulatory requirements for evidence reliability.
+
+40
+Annex 4. Certification and Validation Framework: Technical Specifications for
+Regulatory Compliance
+This annex provides comprehensive technical specifications for the artifact detection and validation
+methodology outlined in Section 6.3 on artifact detection and validation methodology. It documents
+the implementation details of metric-based approaches, aggregation frameworks, and visual
+analytics systems necessary for establishing the reliability of AI-enhanced imagery within
+regulatory contexts. This detailed technical framework enables paying agencies to implement
+structured validation protocols that systematically address the challenges of artifact detection while
+maintaining regulatory compliance.
+
+Metric-Based Detection Approaches for Certification Requirements
+Purpose and Scope: This annex provides technical specifications for metrics designed to detect AI-
+induced artifacts in enhanced satellite imagery. It documents the mathematical foundations,
+implementation parameters, and detection capabilities of structural, perceptual, and statistical
+metrics. This analysis establishes the technical foundation for the artifact detection and validation
+methodology outlined in Section 6.3 on artifact detection and validation methodology, enabling
+systematic identification of hallucination and memorisation effects in AI-enhanced imagery.
+The challenge of artifact identification is further compounded by the sophisticated nature of
+hallucination and memorization effects in modern SR systems. Advanced models generate
+contextually coherent artifacts that match surrounding landscape patterns, making them virtually
+indistinguishable from authentic features during casual examination. This inherent limitation of
+human visual perception necessitates systematic approaches that can guide expert analysis toward
+regions requiring verification, rather than relying on exhaustive manual inspection that would prove
+both inefficient and potentially unreliable.
+Addressing this challenge requires specialised metrics designed to detect anomalies that might
+escape human perception. Wang et al. (2020) provide a review of image super-resolution metrics,
+categorising them into classical approaches (e.g., MSE, PSNR, SSIM) and advanced perceptual
+metrics (e.g., LPIPS, MS-SSIM). These metrics evaluate different aspects of image quality with
+varying sensitivities to specific AI-induced artifacts, creating a complementary analytical
+framework.
+Structural metrics (e.g., SSIM, MS-SSIM) assess how well spatial relationships and patterns are
+preserved in enhanced imagery. These metrics are relevant for detecting hallucination artifacts that
+affect landscape feature geometry, field boundary delineation, and spatial relationships between
+landscape elements. Their sensitivity to structural inconsistencies enables identification of
+contextually plausible but non-existent features that AI enhancement might introduce in agricultural
+landscapes. Practical application of these metrics is illustrated through the photovoltaic
+infrastructure example in Section 3.1 (Figure 2), where geometric regularity metrics would reveal
+the systematic transformation of linear panel arrangements into organic agricultural patterns. In
+this case, structural similarity indices would quantifiably demonstrate the degradation of geometric
+coherence, with regular grid patterns exhibiting significantly lower SSIM scores when compared
+against reference imagery.
+Perceptual metrics (e.g., LPIPS) employ feature representations from deep neural networks to
+evaluate similarity in ways that better align with human visual perception. These metrics
+demonstrate capability in detecting subtle hallucination effects that might appear visually plausible
+
+41
+while deviating from actual ground conditions. Their particular strength lies in identifying complex
+artifacts that maintain contextual coherence but misrepresent actual landscape elements.
+Statistical and spectral metrics examine distributional properties and frequency characteristics of
+images. These approaches are particularly valuable for detecting memorisation artifacts, where AI
+models reproduce patterns from training data rather than faithfully enhancing actual features. Their
+ability to identify statistical anomalies and unnatural repetition makes them effective for detecting
+training bias manifestations in enhanced imagery.
+A combination of these metric categories provides a valuable detection capability for the artifacts
+outlined in Section 3.2 on performance boundaries and scaling constraints. The integration of
+structural, perceptual, and statistical approaches enables systematic identification of contextually
+coherent artifacts that might otherwise evade detection during visual inspection.
+Image quality assessment for super-resolution is a rapidly evolving field. Paying agencies
+implementing validation frameworks should consider consulting more recent publications to identify
+state-of-the-art metrics that may have been developed since the time of this report's publication
+and should select appropriate metrics based on their computational resources and availability of
+suitable reference images. A balanced approach might incorporate metrics from multiple categories
+to ensure effective detection capability across different artifact types while maintaining operational
+efficiency. These metrics serve as technical tools that augment - rather than replace - expert
+knowledge, providing quantitative assessment that directs specialist attention toward regions
+requiring detailed evaluation.
+The framework's modular design should ensure adaptability to future developments in both super-
+resolution technology and validation methodologies. As new metrics demonstrating superior
+performance in detecting specific types of AI-induced artifacts become available, they can be
+incorporated into the validation framework without disrupting the overall architecture, ensuring the
+system remains effective even as the technological landscape evolves.
+
+Detection Challenges and Methodological Solutions in Regulatory Contexts
+The identification of artifacts in AI-enhanced imagery presents a significant technical challenge due
+to the fundamental nature of AI super-resolution technology. As discussed in Section 2.1.1 on
+technical reality versus common perception, contemporary AI-SR architectures are specifically
+designed to generate photorealistic details that appear convincing to human perception but may not
+represent actual ground conditions. This creates a complex validation problem: the visually plausible
+nature of AI-generated artifacts makes them exceedingly difficult to identify through conventional
+visual inspection, particularly when operating at scale across vast and heterogeneous agricultural
+landscapes.
+This technological challenge directly impacts the certification requirements established in Section
+6.2, as the reliability of enhanced imagery within regulatory contexts depends fundamentally on
+distinguishing between authentic features and AI-generated artifacts. Without systematic validation
+protocols, the evidentiary value of enhanced imagery for regulatory purposes cannot be maintained,
+undermining its utility within CAP monitoring frameworks.
+The challenge of artifact identification is further compounded by the sophisticated nature of
+hallucination and memorization effects in modern SR systems. Advanced models generate
+contextually coherent artifacts that match surrounding landscape patterns, making them virtually
+indistinguishable from authentic features during casual examination. This inherent limitation of
+
+42
+human visual perception necessitates systematic approaches that can guide expert analysis toward
+regions requiring verification, rather than relying on exhaustive manual inspection that would prove
+both inefficient and potentially unreliable.
+
+Metric Aggregation and Anomaly Prioritization for Certification Workflows
+The validation metrics identified can be combined into coherent analytical outputs that guide expert
+attention toward potentially problematic areas, creating an efficient verification system where
+human expertise is directed precisely where needed. This aggregation process transforms individual
+metric outputs into structured information that highlights potential artifacts, establishing a
+prioritization framework for expert validation.
+A heatmap visualization represents an effective approach to synthesize information from multiple
+metrics (Equation 1):
+Equation 1. Metric Aggregation
+H(x,y) = w₁ · Metric₁(x,y) + w₂ · Metric₂(x,y) + ... + wₙ · Metricₙ(x,y)
+
+Where Metric₁...Metricₙ represent the selected validation metrics, and w₁...wₙ are weighting factors
+that determine the relative importance of each metric in the final assessment. These weighting
+factors serve as calibration parameters that can be adjusted based on validation outcomes and
+operational requirements.
+While the heatmap approach provides a straightforward and intuitive integration methodology,
+paying agencies may consider alternative approaches. A particularly effective alternative involves
+hierarchical filtering systems that progressively refine analysis through sequential application of
+metrics. This approach first applies computationally efficient metrics to identify regions of potential
+concern, then applies more sophisticated metrics only to these candidate regions. Such hierarchical
+systems optimize computational resources while maintaining detection capabilities, making them
+particularly suitable for large-scale monitoring operations.
+Regardless of the chosen integration methodology, the framework should implement a continuous
+improvement mechanism where expert validation outcomes provide feedback for adjusting
+integration parameters. This adaptive process enables the system to progressively refine its
+detection capabilities by identifying configurations that most effectively detect the artifacts
+addressed in Section 3.2 on performance boundaries and scaling constraints while minimizing false
+positives. Such adaptability is particularly valuable given the evolving nature of both AI-based
+super-resolution technologies and validation metrics, allowing the system to incorporate new
+metrics without fundamental restructuring.
+The integrated analysis system should establish a multi-tiered review framework that prioritizes
+expert attention based on artifact probability. The implementation relies on standardized statistical
+thresholds that translate metric values into distinct verification requirements:
+- Standard monitoring areas: Regions where metrics indicate low probability of artifacts (below
+statistical thresholds) remain within normal monitoring protocols.
+
+43
+- Enhanced verification zones: Areas where metrics exceed standard deviation thresholds (typically
++1 to +2σ from the mean) are highlighted for expert examination during routine quality control
+processes.
+- Critical investigation regions: Locations where metrics show significant deviation (typically beyond
++2σ from the mean) trigger immediate and detailed investigation protocols, potentially escalating
+to multi-source verification using VHR reference imagery or other authoritative data sources.
+This tiered approach ensures that expert analysis resources are allocated efficiently, focusing
+detailed examination on areas with higher probability of containing the hallucination or
+memorization effects described in Section 2.2 on technological evolution and deep learning
+approaches. The system recognizes that while computational metrics provide valuable guidance, the
+final determination of artifact presence requires expert judgment informed by both quantitative
+indicators and domain knowledge of agricultural landscapes.
+The integration framework systematically transforms complex, multi-dimensional metric data into
+structured information optimized for human interpretation through the visual analytics interfaces
+described in the next. This transformation enables efficient expert evaluation by directing attention
+toward potentially problematic regions while providing the necessary context for informed decision-
+making. The integration process fundamentally recognizes the irreplaceable value of human
+expertise in artifact validation-computational metrics and their integration provide tools to augment
+and focus expert analysis rather than automate determination.
+The transition from metric computation to integration and subsequently to visual analytics
+represents a progressive refinement - from quantitative assessment to structured information to
+expert interpretation - creating a validation pipeline that leverages both computational efficiency
+and human expertise at their respective points of optimal application.
+
+Visual Analytics Architecture for Expert Assessment and Certification
+Visual Analytics represents a specialised analytical discipline at the intersection of interactive
+visualisation, data science, and human cognition. It integrates computational data processing with
+human perceptual capabilities, enabling the analysis of complex phenomena through interactive
+visual interfaces that augment human reasoning capabilities. This interdisciplinary approach is
+particularly relevant for artifact assessment in AI-enhanced imagery, where purely automated
+detection may prove insufficient due to the contextually plausible nature of AI-generated features,
+while purely manual inspection becomes impractical given the volume and complexity of enhanced
+imagery. This section provides technical specifications for implementing a Visual Analytics system
+designed to facilitate expert assessment of potential artifacts in AI-enhanced satellite imagery,
+operationalising the metric aggregation and anomaly prioritisation approaches presented in section
+on metric aggregation and anomaly prioritisation to guide expert attention toward areas with higher
+probability of containing AI-induced artifacts.
+Within this context, the implementation of an effective validation system requires a systematic
+approach to data presentation and analysis. The proposed visual analytics framework should
+integrate multi-source reference data to enable thorough analysis of prioritised anomaly zones. The
+reference integration layer should incorporate data sources such as orthophotos, VHR satellite
+imagery, LiDAR data, and ground level photography where available. Each source contributes
+distinct validation capabilities: orthophotos provide high spatial detail for feature verification, VHR
+imagery facilitates temporal change detection, LiDAR data offers three-dimensional structure
+
+44
+verification, and ground level photography allows detailed examination of feature characteristics at
+the terrestrial perspective.
+The visual analytics interface should provide comprehensive layer management capabilities
+(including layer activation/deactivation, reordering, grouping, and attribute-based filtering) and
+fundamental geospatial navigation functionalities (encompassing coordinate-based positioning,
+extent definition, and spatial bookmarking). These capabilities enable systematic organisation of
+reference datasets while maintaining clear analytical relationships between enhanced imagery and
+validation sources.
+The interface should implement continuous zoom functionality supporting multiple resolution levels,
+smooth panning operations, and precise coordinate-based positioning. These navigation capabilities
+should be synchronised across all active views through coordinate system integration and view
+state propagation mechanisms, ensuring that pan/zoom operations and extent adjustments in one
+view automatically trigger corresponding transformations in parallel views. This synchronised
+visualisation approach maintains consistent spatial reference frames during comparative analysis.
+The system should include display controls such as brightness and contrast adjustment,
+transparency modification (0-100%), and dynamic band combination selection while maintaining
+geospatial registration integrity. The system should implement comparative visualisation
+techniques, including transparent overlay capabilities and side-by-side viewing options with
+synchronized navigation. These visualisation functionalities enable analysts to conduct detailed
+examinations of anomaly zones and access to ground-level photography when available.
+When LiDAR data are available, the system should incorporate vertical profile visualization
+capabilities that enable analysts to generate cross-sectional views along user-defined transects
+from these three-dimensional datasets. This LiDAR-based functionality allows precise verification of
+landscape feature characteristics through quantitative height measurements, which is particularly
+valuable for validating features with distinct vertical signatures such as tree alignments and
+hedgerows that might be subject to hallucination effects in AI-enhanced imagery. The vertical
+profile tool should support interactive transect positioning and dynamic profile generation, enabling
+rapid comparison between enhanced imagery representations and reference LiDAR data to confirm
+the authenticity of detected features.
+The system should explicitly implement the multi-tiered review framework established in section on
+metric aggregation and anomaly prioritisation, with visual indicators clearly differentiating between
+standard monitoring areas, enhanced verification zones, and critical investigation regions based on
+their respective statistical thresholds. These visual differentiations should employ standardized
+color schemes that maintain consistency across monitoring operations, with enhanced verification
+zones (typically +1σ to +2σ deviations) rendered in moderate emphasis colors, while critical
+investigation regions (beyond +2σ deviation) employ high-visibility indicators that ensure immediate
+recognition during analytical operations.
+To ensure temporal context, the system should maintain synchronisation across all data sources,
+implementing clear temporal metadata visualisation to account for acquisition gaps and seasonal
+variations. A temporal profile display should track feature evolution chronologically, enabling
+visualisation of vegetation seasonal dynamics and landscape transformations. During reference
+image examination, the system should automatically highlight corresponding acquisition
+timestamps within the temporal profile, establishing immediate temporal context. This
+synchronisation mechanism enables efficient differentiation between natural seasonal variations
+and potential AI-induced artifacts. The system should implement visualisation modes that highlight
+
+45
+statistical and structural anomalies, helping analysts distinguish between authentic landscape
+evolution and AI-generated features.
+The temporal profile interface should ideally provide visualisation of reference data availability
+across the temporal dimension. The framework should implement annotation capabilities supporting
+geometric features (points, lines, polygons) and attribute data, enabling documentation of observed
+artifacts.
+The visual analytics framework should implement a systematic feedback loop that operationalizes
+the continuous improvement mechanism described in section on metric aggregation and anomaly
+prioritisation. This feedback system should automatically capture expert conclusions regarding
+prioritised anomalies, including validation determinations (confirmed artifact, false positive,
+indeterminate) and associated confidence levels. It should correlate expert conclusions with the
+underlying metric values that triggered prioritisation, identifying patterns in metric performance
+across different landscape types and temporal conditions. The system should generate optimisation
+recommendations for the anomaly prioritisation system based on historical validation outcomes,
+progressively refining the system's ability to prioritise genuine artifacts while reducing false
+positives.
+The described framework serves a dual purpose: it provides structured input for the self-
+improvement feedback loop of the anomaly prioritisation system by identifying systematic patterns
+in false positives and omissions, while automatically generating validation reports documenting
+artifact spatial distribution, characteristic patterns, and supporting evidence with appropriate audit
+trails.
+The visual analytics framework represents a critical operational component within the broader
+certification methodology established in Section 6 on evidential value and certification framework.
+By enabling systematic detection and documentation of potential artifacts, the system directly
+supports the fundamental certification need of establishing enhanced imagery's reliability for
+regulatory purposes. Through its structured approach to anomaly validation, the framework provides
+the evidential foundation necessary for certification decisions, contributing directly to the relevance
+of AI-enhanced imagery within the CAP monitoring context.
+This visual analytics architecture establishes a methodological foundation for systematic validation
+of AI-enhanced satellite imagery. The framework's design methodology emphasises analytical rigor
+through spatial and temporal context integrity, while optimising operational efficiency through
+automated logging and reporting mechanisms.
+While this section provides technical specifications for implementation, it should be emphasised
+that paying agencies maintain complete autonomy in their technical implementation approaches.
+The methodological framework presented here should be adapted to specific operational contexts
+and technical infrastructures, with paying agencies determining the most appropriate
+implementation pathway based on their particular needs and existing technical capabilities.
+While not essential to the core validation methodology, several supplementary capabilities may
+enhance operational efficiency. These include multi-user collaboration tools enabling synchronized
+analysis sessions where multiple experts can simultaneously examine regions of interest; data
+export capabilities supporting standard geospatial formats (GeoTIFF, Shapefile, GeoJSON) with
+complete metadata transfer and automated report generation; interactive training modules to guide
+new users through the validation process; and performance optimization through caching
+mechanisms for frequently accessed reference data.
+
+46
+
+Reference Data Integration: Technical Architecture for Validation Certification
+The visual analytics tools benefit from the integration of multi-source reference data through
+standardized access protocols, as described below.
+This section examines the technical landscape of reference data sources, documenting
+representative examples of datasets, and establishes foundational protocols for their deployment
+within the visual analytics environment described in the section on visual analytics architecture.
+The Copernicus Data Space Ecosystem (CDSE) exemplifies contemporary Earth observation data
+infrastructure implementation. This platform enables access to Sentinel constellation data
+complemented by Contributing Missions offering enhanced spatial resolution. The ecosystem
+implements three primary access mechanisms: direct data retrieval through the Open Data Hub,
+programmatic integration via standardized APIs, and Analysis-Ready Data Cube services.
+National mapping agencies provide essential reference datasets through high-resolution
+orthophotos and LiDAR data collections. The French National Institute of Geographic and
+Information (IGN), for instance, maintains 20cm resolution orthophoto coverage (BD ORTHO®) and
+comprehensive LiDAR data. Similar capabilities exist through other national agencies like the
+German Federal Agency for Cartography and Geodesy (BKG) and Spanish National Geographic
+Institute (IGN Spain), typically implementing standardized WMS and WCS access protocols with free.
+These institutions typically implement standardized access through Web Map Services (WMS) and
+Web Coverage Services (WCS).
+Ground-level imagery offers complementary capabilities through several systems. The LUCAS
+database (Land Use/Cover Area Frame Survey) provides systematic ground photography across
+European agricultural landscapes, implementing a 2 km grid system covering approximately 1.1
+million points with triennial surveys from 2006 to 2018. Platforms like Mapillary () complement this
+coverage through crowdsourced imagery particularly relevant for rural areas, while commercial
+services like Google Street View provide additional perspectives along transportation networks,
+implementing usage-based pricing around €7 per 1000 image requests.
+Commercial Very High Resolution (VHR) satellite services provide supplementary capabilities when
+freely available imagery proves insufficient. Planet Labs maintains 50cm-resolution imagery
+archives accessible through REST APIs. Maxar's SecureWatch platform offers 30-50cm resolution
+WorldView imagery with viewing-only access models for historical data. Airbus's OneAtlas platform
+provides similar capabilities through SPOT and Pléiades constellations (50cm-1.5m resolution).
+These services implement varying pricing structures, with reduced pricing for archive access
+typically ranging from €2-5 per km². The technical implementation of these services generally
+includes comprehensive API documentation, authentication protocols, and usage monitoring
+capabilities, enabling systematic integration within validation frameworks while maintaining precise
+cost control.
+The integration framework implements three architectural layers: an access layer managing
+authentication and usage monitoring, a harmonization layer ensuring coordinate system
+standardization, and a deployment layer enabling systematic integration through cache optimization
+and token management. This architecture emphasizes efficient utilization of freely available
+resources while maintaining clear protocols for commercial data access when required.
+
+47
+Annex 5. Emerging Validation Technologies: Research Trajectories and
+Implementation Timelines
+This annex documents emerging research directions in validation and certification methodologies
+for AI-enhanced imagery. It provides technical specifications for advanced detection systems,
+physics-informed neural networks, and temporal consistency frameworks that may eventually
+strengthen certification capabilities. While these approaches remain in research stages with
+implementation timelines beyond 2026-2027, this analysis establishes the foundation for future
+enhancements to the certification framework outlined in Section 6 on legal validity and certification
+framework.
+While paying agencies should base implementation decisions on current technological capabilities
+and limitations (Sections 2-3 on technical foundations and fundamental constraints), ongoing
+research suggests potential advancements in certification and validation methodologies relevant to
+CAP monitoring. This section examines emerging approaches specifically addressing the regulatory
+and validation challenges identified in this report.
+Research in automated artifact detection demonstrates progress toward more reliable validation
+frameworks for AI-enhanced imagery. Wang et al. (2023) have developed self-supervised anomaly
+detection systems specifically designed to identify subtle AI-induced artifacts in agricultural
+landscapes. These approaches show particular promise for detecting contextually plausible but
+factually incorrect features that might impact payment calculations or compliance verification.
+Initial benchmarks indicate 15-20% improvement in detection sensitivity compared to current
+methodologies, potentially strengthening the certification framework outlined in Section 6 on
+evidential value and certification framework.
+Advances in Physics-Informed Neural Networks (PINNs) may partially address the hallucination and
+memorization effects that fundamentally challenge regulatory evidence standards. By integrating
+atmospheric scattering models and agricultural phenology knowledge, these systems reduce
+synthetic feature generation in environmentally complex regions (Cuomo et al., 2022). This
+approach shows particular relevance for improving reliability in landscape feature detection and
+parcel boundary delineation - two critical areas identified in Section 5 on operational impacts of AI-
+SR technology where artificial features could significantly impact regulatory outcomes.
+Temporal consistency frameworks represent another promising direction for validation methodology
+enhancement. Recent research demonstrates that integrating multi-temporal analysis within the
+validation framework can identify inconsistencies in feature evolution that indicate potential AI
+artifacts. These approaches leverage Sentinel-2's frequent revisit capabilities (discussed in Section
+3.1 on the Sentinel-2 platform) to establish temporal baselines against which enhanced imagery
+can be systematically evaluated, with potential implementation within the visual analytics
+framework detailed in Annex 4.
+These emerging approaches may eventually strengthen the certification framework outlined in
+Section 6 on Evidential value and certification framework, particularly regarding artifact detection
+methodologies and validation protocols. However, paying agencies should recognize that these
+developments remain in research stages with operational implementation timelines extending
+beyond 2026-2027. Current implementation decisions should therefore prioritize the established
+certification protocols and validation methodologies detailed in Section 6 on Evidential value and
+certification framework, which provide a framework for managing current technological limitations.
+
+The Joint Research Centre (JRC) provides
+independent, evidence-based knowledge and
+science, supporting EU policies to positively
+impact society
+EU Science Hub
+Joint-research-centre.ec.europa.eu

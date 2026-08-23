@@ -1,0 +1,1839 @@
+Cold atom interferometry for
+Earth observation
+Perspectives for satellite-
+based quantum gravimetry
+
+Travagnin, M.
+2020
+EUR 30371 EN
+
+This publication is a Technical report by the Joint Research Centre (JRC), the European Commission’s science
+and knowledge service. It aims to provide evidence -based scientific support to the European policymaking
+process. The scientific output expressed d oes not imply a policy position of the European Commission. Neither
+the European Commission nor any person acting on behalf of the Commission is responsible for the use that
+might be made of this publication.
+
+Contact information
+Name: Martino Travagnin
+Email: Martino.Travagnin@ec.europa.eu
+
+EU Science Hub
+https://ec.europa.eu/jrc
+
+JRC121833
+
+EUR 30371 EN
+
+PDF ISBN 978-92-76-21686-5 ISSN 1831-9424 doi:10.2760/225071
+
+Luxembourg: Publications Office of the European Union, 2020
+© European Union
+
+The reuse policy of the European Commission is implemented by the Commission Decision 2011/833/EU of 12
+December 2011 on the reuse of Commission documents (OJ L 330, 14.12.2011, p. 39). Except otherwise noted,
+the reuse of this document is authorised under the Creative Commons Attribution 4.0 International (CC BY 4.0)
+licence (https://creativecommons.org/licenses/by/4.0/). This means that reuse is allowed provided appropriate
+credit is given and a ny changes are indicated. For any use or reproduction of photos or other material that is
+not owned by the EU, permission must be sought directly from the copyright holders.
+
+All content © European Union, 2020
+
+How to cite this report:
+
+M. Travagnin, Cold atom interferometry for Earth observation : Perspectives for satellite -based quantum
+gravimetry, 2020, EUR 30371 EN, Publications Office of the European Union, Luxembourg, 2020, ISBN 978-92-
+76-21686-5, doi:10.2760/225071, JRC121833
+
+i
+Contents
+Acknowledgements ................................................................................................ 2
+Abstract ............................................................................................................... 3
+1 Introduction ...................................................................................................... 4
+2 State of the field................................................................................................ 6
+3 Science and policy targets for future gravity missions .......................................... 10
+4 Evolution of existing technologies ...................................................................... 14
+4.1 GRACE-like concept ................................................................................... 14
+4.2 GOCE-like concept ..................................................................................... 15
+4.3 Electrostatic accelerometers ........................................................................ 17
+5 Cold Atom Interferometry for future gravity missions ........................................... 20
+5.1 Hybrid electrostatic – CAI accelerometer ...................................................... 20
+5.2 Correlated CAI accelerometers .................................................................... 24
+5.3 Satellite-based CAI gravity gradiometers ...................................................... 26
+5.3.1 Carraz 2014: a spaceborne CAI gravity gradiometer .............................. 27
+5.3.2 Douch 2018: field recovery performances ............................................. 29
+5.3.3 Trimeche 2019: concept study and preliminary design ........................... 32
+5.3.4 Migliaccio 2019: satellite mission concept ............................................. 36
+6 Glossary ......................................................................................................... 41
+7 Conclusions .................................................................................................... 43
+References ......................................................................................................... 45
+List of abbreviations and definitions ....................................................................... 47
+
+2
+Acknowledgements
+This work has been done in the framework of the SynQArc administrative arrangement
+between DG JRC and DG DEFIS . I am glad to acknowledge continuous help from my JRC
+colleague Adam Lewis, and useful conversations with several DG DEFIS colleagues.
+
+3
+Abstract
+This report provides an assessment on cold atom interferometry (CAI) gravity sensing for
+Earth Observation (EO), and is intended as an instrument to facilitate the interactions
+between the different communities involved in the definition of a related satellite mission.
+Indeed, the definition of the objectives of future gravity missions and of the technologies
+needed for their implementation is the result of complex negotiations and compromises :
+geodesy and geophysics researchers detail the scientific requirements  dictated by their
+investigation areas (e.g. solid Earth dynamics, ocean mass and heat transport,  ic e
+sheets and glaciers evolution), policymakers express their concerns and their priorities
+(e.g. natural hazards risk assessment, ground water monitoring, floods and droughts
+forecast), engineers  and technology experts  devise and implement the most suitabl e
+techniques to actually build the satellite and its gravity sensing payload.
+As we will show in this report, the scientific consensus is that the scientific objectives of a
+next generation gravity mission (NGGM) to be deployed within a ~10 year timeframe  can
+be achieved by upgrading established technologies already used in gravity-measuring
+satellites. Transformative technologies such as CAI-based gravity sensors leveraging
+Bose Einstein Condensates (BEC) of ultra -cold atoms  may come to play a role  in the
+longer term, provided that several technology challenges are overcome; in addition,
+further interdisciplinary work and the simulation of detailed mission scenarios are needed
+to fully establish t heir actual usefulness with regards to the attainment  of future gravity
+missions scientific objectives.
+The scientific community seems to agree on the opportunity of a n intermediate stepping
+stone, which could take the form of a scientific mission with a dedicated satellite, in order
+to test and prove the in-space feasibility and the actual usefulness of CAI-based gravity
+sensors.
+
+4
+1 Introduction
+This technical  report addresses the possible use of cold atom interferometry  (CAI) for
+Earth observation, and more specifically for satellite -based gravimetry. It is the third one
+in a series which is intended to provide a guide for policymaking in a rapidly evolving
+area of quantum technologies , cold atom interferometry sensing, which holds the
+promises for applications in fields where the EU has well established prog rammes, or
+plans to upscale its action 1,2. Although an effort has been made to make the report self-
+contained, the reader interested in a  basic understanding of the phenomena leveraged
+for the applications here analysed is addressed to th e physics and tech nologies
+background described in the first one in the series, JRC121223.
+We emphasize that the present work does not cover t he use of space-based
+interferometry with cold or ultra-cold atoms for scientific missions aimed at fundamental
+physics experiments : in the last ~20 years an extremely rich scientific literature
+flourished to explore this theme  and several proposals have been advanced by the
+scientific communit y, which are now at various implementation stages; to cap this all,
+space-based technology t ests have recently been performed . Indeed, earthbound CAI is
+already a well -established tool for scientific investigation s, and since its deployment in
+the microgravity environment enabled by deployment in space would allow a notable
+increase of sensitivity, it is all too natural for scientist in terested in testing fundamental
+physics theories to be keen on it. Conversely, the use of space-based CAI for Earth
+observations aimed at eminently practical applications has a much less rich and
+articulated history, having started only recently to attract the interest of researchers and
+policymakers. In part for this, but in part maybe also for deeply-rooted technical reasons,
+its actual in-field advantages with respect to existing and evolving consolidated
+technologies have not yet been firmly established.
+Let us recall that the definition of future Earth observation gravity missions implies a
+number of quite complex interactions: indeed, on one side there are the different
+scientific communities which study the various phenomena that can be monitored thanks
+to space-based gravity measurements, and on the other hand we have the policymakers
+who are called to define on a much wider scene the environmental and societal priorities
+that the scientific work has to  help achiev ing. In more concrete terms, the scientific
+objectives of future gravity missions are to be determined by geophysics and geodesy
+researchers which measure mass distribution and monitor mass transport processes
+which take place on solid Earth, o ceans, cryosphere, atmosphere and hydrosphere.  In
+the meanwhile, policymakers express their concerns on concrete problems such as floods
+and droughts forecasting, coastal vulnerability , climate impact on ice sheets , water
+management, ground water monitoring, natural hazards risk assessment, etc.: managing
+these issues require the backing of  reliable and long-term data, which are expected in
+great part to come from space -based gravity missions . Interfacing these political
+priorities with the scientific ones allows defining the objectives of future space gravimetry
+missions, whose actual implementation is a task left to a wide array of technology
+experts, covering the different disciplines needed to build a satellite -based gravity
+sensor. The main aim of this report is to establish an objective and unbiased background
+to help this policy-science-technology trilogue, highlighting the potentials of satellite -
+based CAI gravity sensors without hiding the ir expected limitations and the challenges to
+be overcome for their actual adoption.
+The report starts by presenting in Section 2  a brief recap of the most recent satellite -
+based gravimetry mission s, which constitute the backdrop point against which the
+
+1 “Cold atom interferometry sensors: physics and technologies. A scientific background for EU policymaking”, M.
+Travagnin, JRC121223, 2020; https://ec.europa.eu/jrc/en/publication/cold-atom-interferometry-sensors-
+physics-and-technologies
+
+2 “Cold atom interferometry for inertial navigation sensors. Technology assessment: space and defence
+applications”, M. Travagnin, JRC121225, 2020; (Sensitive, limited distribution)
+
+5
+performances of future gravity missions have to be defined. In Section3 it summarizes
+the work and the activities which in the last decades have taken place to define the
+scientific objectives of so-called next generation gravity missions (NGGM), showing how
+the various scientific communities interested in monitoring d ifferent phenomena have
+often express differing and sometimes contrasting desires, which have then also to be
+weighted in terms of their impact for the priorities  expressed by policymakers . A
+delicately-balanced synthesis therefore defines the objectives of future gravity missions,
+and the panorama is still not clearly defined, especially when the time horizon extends
+beyond the next ~10 years. In Section 4 we show how the scientific consensus is that a
+smooth and continuous evolution of existing technologies already deployed in space could
+meet the technological requirements needed to fulfil the scientific aims of NGGM in the
+next ~10 years, while CAI -based gravimetry could play a role in the longer term. In
+Section 5 we review the main proposals which have been advanced on the use of CAI
+sensors for future gravity missions, and we assess the state of the art. A brief glossary to
+help the reader with the most cryptic technical expression is provided  in Section 6 , and
+the work conclusions are summarized in Section 7.
+
+6
+2 State of the field
+In this paragraph we provide the essential backdrop against which a gravimetry m ission
+must be assessed, by giving some basic information about  the past dedicated gravity
+missions CHAMP, GRACE and GOCE.
+CHAMP was a DLR mission, operating in 2000-2010. It consisted in a single satellite, with
+onboard accelerometer s and high -low satellite -satellite tracking.  In simpler terms, t his
+means that the position of the CHAMP satellite was determined by u sing a positioning
+system based on the GPS constellation. The initial orbital height was 450km, which
+diminished as the mission progressed.  The gravity field was obtained by comparing the
+expected satellite position with the actual one, and taking into ac count the non -
+gravitational contribution of the acceleration, as measured by the on -board
+accelerometers and as deduced by appropriate physical models. The Earth dynamical
+gravity field was retrieved with a ~700km spatial resolution, a seasonal (some month s)
+temporal resolution, and a geoid accuracy of some centimetres.  We recall that the geoid
+is a surface of equal gravitational potential which, over the oceans, corresponds to mean
+sea-level.
+The GRACE mission, by NASA and DLR, took place in 2002-2017, and  a very similar
+GRACE-FO (follow -on) mission, started in 2018, is now operational. GRACE employs a
+pair of satellites, orbiting at a height of ~500 km at a distance of ~220 km. It also makes
+use of onboard accelerometers and satellite tracking. The gravity field is deduced from
+the distance between the satellites, which is measured via a microwave interferometric
+link (with a precision of ~10µm). Laser interferometry (precision ~1µm) is deployed as
+technological demonstrator in the GRACE -FO satellites. The geoid is obtained with a
+spatial resolution of 300 -500km and a sub seasonal (monthly) temporal resolution , with
+a ~1cm accuracy.
+GOCE was an ESA mission, consisting in a single satellite orbiting at low altitude
+(~260km) from 2009 to 2013. The main satellite instrument was a gravity gradiometer,
+which measured the variations of all the acceleration components along three different
+directions. GOCE also used satellite -to-satellite tracking, with reference to GPS satellites,
+to measure non -gravitational accelerations. From the gravity gradiometer signal, and a
+precise attitude o f positioning of the satellite, the stationary gravity field was obtained
+with a ~100km resolution and a geoid accuracy better than 1cm.
+We have therefore seen that o ne of the main aims of satellite -based gravity missions is
+the precise determination of the geoid, which is the smooth but irregular surface
+determined by the uneven distribution of mass below and on the surface of Earth, see
+Fig. 1.
+
+Fig. 1: Map of geoid undulations determined by gravity field anomalies, measured in milliGalileo (mGal). We
+recall that 1mGal  = 10-3Gal = 10-5m/s2  10-6g, where g   9.81m/s2 is the gravity acceleration on the Earth
+surface. A gravity anomaly of 1 milliGal (=1µg) roughly corresponds to a geoid height of 1cm. The last ~20
+years of satellite observations allowed determining the geoid with an accuracy of ~1cm (~1mGal, ~10 -6g).
+Figure source: https://earthobservatory.nasa.gov/features/GRACE/page3.php.
+
+7
+By taking into account only rotation and self -gravitation, and under several simplifying
+assumptions, the pl anet gravity field is described by an ellipsoid of revolution. The
+gravity anomaly is defined as the difference in any given point on the planet's surface
+between the observed gravity (i.e. the free -fall acceleration), and the corresponding
+value predicted  by the reference ellipsoid. Gravity anomalies have the most disparate
+causes, which are the objects of disciplines such as geodesy and geophysics.
+In Fig. 2 we give a pictorial representation of the phenomena which can be monitored
+with the time and space resolution achieved by the CHAMP, GRACE, and GOCE missions.
+
+Fig. 2: Geophysical phenomena monitored by satellite gravity missions. Time and space resolution achieved by
+the CHAMP, GRACE and GOCE missions are shown. The thick red line delimits the area thought to become
+accessible in next generation gravity missions based on existing technological building blocks3
+
+3 “The ESA Earth Observation Programmes Activities for the Preparation of the Next Ge neration Gravity
+Mission”, L. Massotti et at., Guidance, Navigation, and Control Conference, 2013
+https://www.researchgate.net/publication/268469839_The_ESA_Earth_Observation_Programmes_Activities_for
+_the_Preparation_of_the_Next_Generation_Gravity_Mission
+
+8
+In mathematical terms, spherical harmonics (SH) are usually used to approximate the
+shape of the geoid,  by expanding the corresponding gravity potential as the sum of a
+series:
+
+𝑉(𝑟, 𝜗, 𝜆) = 𝐺𝑀
+𝑅 ∑ (𝑅
+𝑟 )
+𝑛+1
+∑ [𝐶̅𝑛𝑚 cos 𝑚𝜆 + 𝑆̅𝑛𝑚 sin 𝑚𝜆]
+𝑛
+𝑚=0
+𝑁
+𝑛=0
+𝑃̅𝑛𝑚(cos 𝜗)
+
+Here 𝐺𝑀 is the gravitational constant of the Earth, 𝑅 is the radius of Earth, (𝑟, 𝜗, 𝜆) are
+spherical coordinates of a point on the Earth surface (radius,  co-latitude,  longitude),
+𝑛, 𝑚  denote SH degree and order, 𝑁 denotes the maximum degree of the model
+expansion (in theory ∞), 𝑃̅𝑛𝑚(cos 𝜗) are the fully normalized associated Legendre
+functions, and 𝐶̅𝑛𝑚, 𝑆̅𝑛𝑚 are the normalized SH coefficients, which are the unknowns of
+the gravity field solution.  The higher the degree of the expansion, the higher the spatia l
+resolution of the gravity potential, as can be deduced from Fig. 3.
+
+Fig. 3: Examples of spherical harmonic functions, which constitute the basis for the series expansion of the
+gravity potential. Higher spherical harmonic degrees correspond to better spatial resolution4.
+In Fig. 4 we show the cumulative geoid error height of the three missions, as a function
+of the spherical harmonic degree. It can be seen that GRACE improves the performance
+of CHAMP for all the SH degrees, meaning for all spatial resolutions. GOCE ensures lower
+error than GRACE at SH degree s higher than ~60 , meaning that it is able to reach finer
+spatial detail, at the price of not being able to provide their temporal variation. Grace can
+provide extremely accurate description (i.e. with low geoid errors) of g lobal scal e
+phenomena, which occur on large spatial scale , as can be deduced from its low error
+level at low SH degrees. We recall (see also Fig. 2) that GRACE provides also a monthly
+retrieval of the gravity field, as compared by the CHAMP seasonal retrieval. GOCE
+guaranteed an even higher spatial resolution, but only for quasi -stationary gravity field
+(secular time resolution).  GRACE-FO will constitute a substantial improvement both with
+respect to GOCE (especially at lower degrees) and with respect to GRACE (espec ially at
+higher degrees). To make more intuitive the interpretation of the figure, we report in the
+following Table 1 the correspondence between some values of spherical degree and the
+spatial resolution.
+
+ Spherical degree 20 30 80 100 200 300
+Spatial resolution (km) 1000 650 250 200 100 70
+Table 1: Half-wavelength spatial resolution corresponding to increasing spherical degrees
+
+4 “Lectures on gravity field basics and GRACE”, R. Forsberg, ESA Cryosphere Training Course, 2016
+http://seom.esa.int/cryotraining2016/files/CTC16/Day4/3_Forsberg_grace_sep2016%202.pdf
+
+9
+
+Fig. 4: Cumulative geoid error height of the CHAMP, GRACE, GOCE, and GRACE-FO missions as a function of
+the spherical harmonic degree. As a general rule the error increases with the degree, meaning that the
+magnitude of small-scale features will be affected by a higher uncertainty5.
+As we have already seen in a previous report, and as we will see later in greater detail,
+atomic interferometry can be leveraged to build absolute accelerometers based on the
+inertial properties of atoms, with distinctive advantages in terms of sensitivity and long
+term stability. Since accelerometers lay at th e core of a gravity mission, there is a clear
+potential for the use of CAI accelerometers in future gravity missions . The main point to
+be addressed is: to wh ich extent exploiting novel t echnologies based on atomic
+interferometry can actually guarantee a lower geoid error, fo r which range of spherical
+harmonic degrees and with which temporal resolution? As we will see, to answer these
+questions a narrow assessment of the technology itself does not suffice, and the view
+must be broadened to include full mission simulations.
+
+5 “Progress in satellite gravity recovery from  implemented CHAMP, GRACE and GOCE and future  GRACE-FO
+missions”, Zheng Wei et al., Geodesy and Geodynamics, Vol. 6, No. 4, 2015
+https://www.sciencedirect.com/science/article/pii/S1674984715000506
+
+10
+3 Science and policy targets for future gravity missions
+Establishing the priorities of a satellite -based gravity mission is both a scientific and a
+policy issue. Broadly speaking, such missions are intended to measure mass distribution
+and monitor mass transport processes  which take place on different time scales on the
+solid Earth , o ceans, c ryosphere, a tmosphere and h ydrosphere. Several scientific
+challenges can be addressed, each on them  linked to political prioritie s. A possible
+graphic representation is provided by the double -shell graph shown in Fig. 5 : to give an
+example, the politica l priority of addressing costal vulnerability will require the data
+provided by several scientific topics, such as monitoring the sea level rise, separating
+natural and anthropogenic processes, investigating heat transport in the ocean mass, and
+many others. Historically, a methodology emerged by which the  different scientific
+communities involved put forward their  target proposals, wh ich are then discussed in
+view of the possible technological implementation. A widely shared understanding is the
+need for data consistency and long -term continuity, in addition with improved accuracy.
+The relative importance of higher space resolution and  higher temporal resolution
+depends on the particular science objective being pursued.
+
+Fig. 5: Schematic representation of some of the scientific (outer shell) and policy (inner shell) priorities which
+may play a role in the definition of a gravity mission. The figure is taken from the IUGG 2015 study, see
+later for more details.
+A first example of this approach is a 2013 ESA preparatory study, which involved ~70
+representatives from earth -related disciplines  (geophysics and geodesy) and experts in
+space technologies 6. As shown in Table 2, s ome use-cases were prioritized, along with
+the necessary spatial resolution, temporal resolution, and signal magnitude, expressed in
+term of the cumulative geoid error ( CGE). To comment on a  particular use case, let’s
+take the case of melting of ice sheets. The clause “with separation of glacial isostatic
+adjustment (GIA)” means that the ongoing movement of land once burdened by ice -age
+glaciers must also be monitored. This is a very slow effect, which takes place on a secular
+timescale; on the other side, the ice melting is affected also by seasonal phenomena.
+Therefore, this use case requires two distinct temporal resolutions, seasonal and secular,
+and a spatial resolution of 100 to 1,000 km. The magnitude of the signal to be
+monitored, expressed in geoid height, is expected to be in the range of 1mm for yearly
+
+6 “Next Generation Gravity Mission”, Stefano Cesare and Gianfranco Sechi, Space Technology Library, Vol. 31,
+2013; https://link.springer.com/chapter/10.1007/978-1-4614-4541-8_20
+
+11
+variations, much smaller for variations on the secular timescale. Such considerations
+yield the gravity mission requirements detailed in the subsequent Table  3: for a gravity
+field retrieved with a monthly frequency, the CGE must be smaller than 0.1mm  in the
+spherical harmonic range between degree 20 and 200.  It can be seen from Fig. 4 that
+GRACE-FO falls short of this requirement, especially at the higher spherical harmonic
+degree end.
+
+Table 2: Fields of prioritisation for the NGGM , including the required spatial and temporal resolution and the
+approximate signal magnitudes.
+
+Table 3: Requirements in terms of maximum cumulative geoid error (CGE) for monthly gravity field retrievals .
+The numbers in the grey boxes correspond to the use cases represented in Table 2, and the shaded areas on
+the right mark the spatial resolution range which is not realistically accessible for a  monthly gravity field. Note
+that the spherical harmonic degree here indicated with ℓ corresponds to the index n in the gravity field potential
+expansion given in the previous Section.
+Again from the ESA -funded 2013 study, we read “ To satisfy the requirements  of the
+geophysical applications (solid -earth science, glaciology, hydrology, oceanography,
+atmosphere circu lation, etc.), the NGGM must provide the temporal  variations of the
+Earth’s gravity field over a long time span (possibly covering a  complete solar cycle: ~11
+years) with high spatial resolution (comparable to that  provided by GOCE) and high
+temporal resolution (weekly or better), so as to reduce  the level of aliasing of the high
+frequency phenomena found in the time series of the  Earth’s gravity field variation
+provided by GRACE, and to improve the separability  of the observed geophysical signals .
+Moreover, the NGGM shall be able to  provide the following CGEs from monthly solutions
+of the Earth gravity field:
+ CGE  0.1 mm at degree 150 (spatial resolution 133 km),
+ CGE  1 mm at degree 200 (spatial resolution 100 km),
+ CGE  10 mm at degree 250 (spatial resolution 80 km).
+From the wavelengths of the geopotential spher ical harmonics to be monitored, the
+measurement bandwidth (MBW) of the NGGM has been preliminarily  established between
+
+12
+1 and 100 mHz (corresponding to a spatial sampling along  the orbit between ~77 and
+~7,700 km).  The LL -SST (low-low satellite -satellite tracking) is in practice the only
+observing technique potentially capable of  detecting the time variable gravity signal with
+the required resolution.”
+The Council of the International Union of Ge odesy and Geophysics  (IUGG) published in
+2015 a study summarizing the desiderata of a large representation of the scientific
+communities involved in gravity mission proposals7. To summarize the received
+specifications, the authors produced a graph spanning at least three orders of
+magnitudes of spatial resolution and six orders of magnitudes with respect to the
+magnitude of the signal to be detected, see Fig. 6.  This clearly evidences how strongly
+the performance requirements suggested for a gravity  mission depend on the
+phenomena it is intended to investigate.
+
+Fig. 6: The coloured lines show the various science requirements derived in previous studies for individual fields
+of applications. The light and dark grey curves show two scenarios for the consolidated requirements derived in
+the IUGG  2015 study. SL: sea level;  IMB: ice mass balance;  GIA: glacial isostatic adjustment. The IUGG
+document reports in an appendix the table of equivalences between Equivalent Water Height ( EWH in meters)
+of and gravity anomaly (in milliGals), for which an analytical relation is not available.
+The IUGG made an effort to translate these requirements in a compact form. From one
+side, it identified a “threshold scenario”, broadly corresponding to significant but not
+transformative improvements with respect to the present situation. Broadly speaking, the
+threshold scenario (represented by the dark grey line in Fig. 6) involves a 5x
+improvement with respect to the current situation. The IUGG proposes also a “target
+scenario” (show by the clear grey line in Fig. 6), which roughly corresponds to a 50x
+improvement with respect to the current situation, and whose implementation would
+allow transformative applications of satellite -based gravimetry. In a compact clause, the
+IUGG states that “the required target performance in terms of equivalent water height
+has been identified as 5 cm for monthly fields and 0.5 cm/year for long -term trends at a
+spatial resolution of 150 km”. No attempt is made to identify the necessary technol ogies:
+it is only en passant said that while the threshold scenario can conceivably be attained by
+improving existing techniques, the target one will likely require a completely new set of
+technologies; no reference to atomic interferometry as a possible t echnology for future
+gravity mission is made.
+
+7 “Science and User Needs for Observing Global Mass Transport to Understand Global Change and to Benefit
+Society”, R. Pail et al., Surv. Geophys. 36, 2015; https://link.springer.com/article/10.1007/s10712-015-9348-9
+
+13
+The IUGG document provides several examples of the improvements enabled by the
+threshold and target scenarios. In Fig. 7 we show for example the improved mapping of
+the mass variation in west Antarctica , while in Fig. 8 it is shown how the two scenarios
+would allow monitoring even weaker earthquakes than now possible.
+
+Fig. 7: Illustration of ice sheet mass change signal content and signal omission for different spatial resolutions.
+For this simulation, elevation trends from ICESat laser altimetry are used as a proxy for the spatial patterns and
+spectral properties of the actual mass change signal. (a) Signal retained by different spatial resolutions for the
+example of the Amundsen Sea Sector of West A ntarctica. (b) Signal omitted due to the respective resolution
+limits. The sum of (a) and (b) in each column gives the full signal. The first three columns illustrate the
+resolution at which the three scenarios ‘‘GRACE’’, ‘‘Threshold’’ and ‘‘Target’’ may r esolve long-term trends with
+a 5 cm EWH/yr accuracy. [Text reported verbatim from IUGG 2015].
+
+Fig. 8: Earthquake monitoring from space. Grace allows detecting quakes of magnitude larger than  8.6, the
+implementation of the “threshold” scenario would allow observing eart hquakes stronger than 7.8, while the
+“target” scenario would allow observing events stronger than 7.0.
+
+14
+4 Evolution of existing technologies
+4.1 GRACE-like concept
+In a 2020 paper, ESA stated that “Scientific objectives for N ext Generation Grav ity
+Missions are the measurement of the geoid  with an accuracy of 1mm at a spatial
+resolution of 500km every 3 days and 150km every 10 days”  8. The paper describes the
+likely technological improvement necessary to attain this scientific objective. In the
+conclusive remarks, they state that “In the near future, concepts based on laser ranging
+between low -flying pairs of satellites offer the most mature solution for measuring the
+time-variable gravity field. The required technological and scientific developm ents are on-
+going and it seems theoretically to be feasible to implement such a mission within the
+next decade”. It is also added that “For the far future, CAI (cold atom interferometry)
+offers an interesting perspective for measuring the time -variable gravity field as well as
+the mean gravity field with improved measurement system performance”.
+In Fig. 9 the working principles of GR ACE-like gravity mission is briefly recalled. Gravity
+is obtained by measuring the variations in the distance between the sate llites, which
+have on-board accelerometers to measure non-gravitational pull (due e.g. to atmospheric
+drag, radiation pressure, etc), and compensate it by driving the attitude and orbit control
+system (AOCS). A microwave link between the satellites ensures  a ~10µm precision in
+the distance measure. Grace FO has also laser ranging as technology demonstrator,
+which is planned to increase the distance measurement precision by an order of
+magnitude. This would allow reducing the cumulative geoid error from ~1cm to 1mm, or
+equivalently improving the accuracy of the gravity anomaly measurement from 1mGal to
+100µGal.
+
+Fig. 9: Representation of the working principle of a GRACE-like gravity mission. The gravitational effect of the
+mountains and of the ice covering them is translated into the distance between the two orbiting satellites.
+The emerging consensus for a Grace-like Next Generation Gravity Mission to be flown in
+the next ~10 years foresees a constellation of several pairs of satellites, at a lower orbit
+(~350km) and at a smaller distance (~100km). A favourite configuration is the so called
+“Bender”, shown in Fig. 10.  Laser interferometry will be used to improve inter-satellite
+distance measurements, precise satellite location will be ensured not only by GNSS
+satellite-to-satellite tracking but also by laser ranging from ground stations, and on -
+board accelerometers will still be used to measure non -gravitational pull, as shown in
+Fig. 11.
+
+8 “ESA’s next ‑generation gravity mission concepts”, R. Haagmans et al., R endiconti Lincei. Scienze Fisiche e
+Naturali, Rend. Fis. Acc. Lincei, 2020 ; https://link.springer.com/article/10.1007/s12210-020-00875-0
+
+15
+
+Fig. 10: Single-pair and two-pairs satellite constellations for future GRACE-like gravity missions.
+
+Fig. 11: In a next generation GRACE-like gravity mission laser interferometry would be used to improve the
+precision of the inter-satellite distance measurement.
+
+4.2 GOCE-like concept
+Gravity gradiometry measures the variation of acceleration  by using pairs of
+accelerometers slightly displaced in space.  The driving idea is that if the accelerometers
+are identical the common -source disturbances affecting the gravity signal will be
+recorded in in the same way by the two devices, and will therefore disappear from the
+differential signal. GOCE gradiometer is  formed by three pairs of t ree-axis
+accelerometers, each one providing the three linear and the three angular components of
+the acceleration. From the differences between the accelerations, the six different
+components of the symmetric gravity gradient t ensor can be obtained. The derivation is
+however affected by several factors: for example, an extremely accurate calibration of
+the accelerometers is needed, and the angular position and motion of the satellite needs
+to be known with great accuracy. To this aim, the rotation angles and their time
+derivatives are obtained both from the gradiometer itself and from additional equipment
+on-board the satellite, such as a star sensor. The components of the gravity gradient
+tensor are therefore calculated, and addit ional elaborations yield a gravity anomaly map,
+as shown in Fig. 12 . The acceleration 𝒂 measured by each one of the accelerometers,
+located in 𝒓, is given by9
+𝒂 = −𝑽 ∙ 𝒓 + 𝝎̇ × 𝒓 + 𝝎 × (𝝎 × 𝒓)
+This is a highly idealized expression, which for example does not take into account the
+sensor bias and scale factor drifts, its misalignment, the displacement of its centre of
+
+9 “GOCE gradiometer – a guide for users”, C. Stummer et al, FGS workshop, 2008;
+http://www.fs.wettzell.de/veranstaltungen/fgs/workshop2008/poster/FGS2008_Stummer.pdf
+
+16
+mass, etc. The first term in the second hand side is the linear acceleration ex perienced
+by the sensors because of the gravity  gradient tensor  𝑽, the second is the linear
+acceleration induced by the satellite angular acceleration 𝝎̇ , and the third is the
+acceleration induced on the sensor by the satellite angular rotation 𝝎. All th e
+components of the acceleration differences can be deduced by this formula. For example,
+𝑎1,𝑧 − 𝑎4,𝑧 = 𝐿𝑥(−𝑉𝑧𝑥 − 𝜔𝑦̇ + 𝜔𝑥𝜔𝑧)
+So the gravity gradient component 𝑉𝑧𝑥 can be deduced from the differential signal 𝑎1,𝑧 −
+𝑎4,𝑧 given by the instrument (h ere the subscripts 1 and 4 refer to two particular
+accelerometers, the ones displaced along the x axis in Fig. 12), provided that the angular
+acceleration component 𝜔𝑦̇  and the angular rates 𝜔𝑥 and 𝜔𝑧 are known. These are usually
+obtained by combining  the output of the gradiometer accelerometers with those of the
+star tracking system. Note that minimal variations in the distance between the
+accelerometer pairs (𝐿𝑥 in this particular case) must be ensured. In GOCE, the distance is
+50cm and its variati on is of the order of 1% of an Å, over a time interval of three
+minutes. A scheme of the instrument is shown in Fig. 13, with its noise properties.
+
+Fig. 12: GOCE gravity gradiometer, the six component of the symmetric gravity tensor, and the geoid10.
+To better appreciate the performance of GOCE, let us compare them with the ones of a
+Superconducting Gravity Gradiometers which is being developed by  the Department of
+Physics in the University of Maryland  (Gravitation Experiment Group, see
+http://www.physics.umd.edu/GRE/SGGs.htm). They report that “several versions of the
+superconducting gravity gradiometer (SGG) have been developed. A three -axis in -line
+component SGG with a baseline of 1 9 cm, developed with NASA support, reached a
+performance level of 2·10 -11 s-2 Hz-1/2 in the laboratory, which is three orders of
+magnitude more sensitive than the demonstrated sensitivities of atom gravity
+gradiometers to date.” The reported prototype sensitivity of 2·10-11 s-2 Hz-1/2 corresponds
+to GOCE performance of 20 mE Hz -1/2, given that 1E=10-9 s-2 and thus 10mE = 10 -11 s-2.
+Current portable atomic gravity gradiometers have sensitivities which are approximately
+three orders of magnitude lower, i.e. ~10E Hz-1/2. To give an idea of their possible
+applications, a  1Eötvös gradiometer can resolve a 10cm void at a depth of 1m . An
+instrument with a sensitivity of 10E  could be employed to detect relatively large
+underground features, and therefore can be of interest to civil engineering.
+
+10 “Goce gravity mission”, ESA publication office, 2006; http://www.esa.int/esapub/br/br209/br209.pdf
+
+17
+
+Fig. 13: GOCE gravity gradiometer (180Kg, 100W) and its noise characteristics, determined by the electrostatic
+accelerometers it employs (see next subsection) . The noise amplitude exhibits a flat spectral density of 10 to
+20 mE Hz-1/2 in the frequency range 2 to100 mHz, and a large increase below 2mHz. More in detail, the gravity
+gradient components Vxx and Vyy reach a noise level of about 10  mE Hz-1/2, while for Vzz and Vxz we have
+~20mE Hz-1/2 11.
+4.3 Electrostatic accelerometers
+All the gravity missions described until now used electrostatic accelerometers
+manufactured by Onera, with the following sensitivities
+ CHAMP mission, 2000-2010: “Star” accelerometer, ~10-9 m/s2
+ GRACE mission, 2002-2017: “SuperStar” accelerometer, ~10-10 m/s2
+ GOCE mission, 2009-2013: “Gradio” accelerometer, ~10-12 m/s2
+ Grace FO 2018: evolved SuperStar, with similar performances
+To give a concrete example, i n Fig. 14 it is shown the SuperStar accelerometer. The
+acceleration (linear and angular components along the three axes) is deduced by the
+electrostatic fields needed to keep a proof mass suspended inside a case. The distances
+between the mass and the case are measured by electrodes, whose signal drives th e
+fields.
+
+Fig. 14: Superstar electrostatic accelerometer by Onera. The proof mass is a 40x40x10mm gold-coated titan
+cube of 72g.  In GOCE, the accelerometer proof mass is a platinum-rhodium alloy, 40x40x10mm, 320grams12.
+
+11 “GOCE gravitational gradiometry”, Reiner Rummel, Weiyong Yi, and Claudia Stummer, Journal of Geodesy
+Vol. 85, No. 777, 2011; https://link.springer.com/article/10.1007/s00190-011-0500-0
+
+12 “The GRACE Gravity Sensor System ”,    Björn Frommknecht et al., System Earth via Geodetic -Geophysical
+Space Techniques, 105-118, 2010; https://link.springer.com/chapter/10.1007/978-3-642-10228-8_9
+
+18
+The noise properties of the ES accelerometers used in the GRACE Follow -On mission and
+in the GOCE mission are represented in Fig. 15. It can be noted that in both cases the
+total noise i ncreases at low frequencies (i.e. below ~mHz). It can be noted that th e
+figure of merit of the Gradio accelerometers used in GOCE is almost an order of
+magnitude better than the one of the accelerometers used for GRACE -FO. Gradio is
+therefore often taken as a reference against which define the requirements for new
+accelerometers.
+
+Fig. 15: Noise properties of the Onera electrostatic accelerometers used in GRACE-FO and in GOCE13.
+In particular, the following requirements have been identified for Next Generation Gravity
+Mission accelerometers:
+ Noise level between 1.5·10-12 m/s2/Hz1/2 and 4·10-11 m/s2/Hz1/2 over 1–10mHz;
+ Improvement of the low-frequency noise (below 1mHz) with respect to GOCE;
+ Identical performance along the three directions;
+ Accurate angular acceleration to complement star trackers for the attitude control
+Onera has already developed a prototype, called Micro Star, which satisfies the above
+specifications, see Fig. 16. It weighs 0.98kg, with dimensions of 90x90x70mm, and 2W
+power requirements. The proof mass is 18gr, and the gap dimension can be selected
+from 50μm to 300μm, depending on the mission requirements.
+
+Fig. 16: Onera MicroStar accelerometer14.
+
+13 “Gravitation and Geodesy with Inertial Sensors, from Ground to Space”, P. Touboul et al., Journal of
+aerospace Lab, Issue 12, 2016;
+http://www.aerospacelab-journal.org/sites/www.aerospacelab-journal.org/files/AL12-11.pdf
+
+14 “A new generation of ultra-sensitive electrostatic accelerometers for GRACE Follow-on and towards the next
+Generation gravity missions”, B. Christophe et al., Acta Astronautica  117, 1 -7, 2015;
+https://www.sciencedirect.com/science/article/abs/pii/S0094576515002660
+
+19
+
+We conclude this section with a figure representing the surface gravity magnitude of
+several geophysical phenomena, and a brief overview of the main techniques that can be
+used to monitor them.
+
+Fig. 17: Gravity impact of several geophysical phenomena15
+
+Current satellite -based gravity measurement reaches sensitivity of ~1mGal, and next
+generation gravity mission aim at improvements in the range of 5x to 50x, so that
+sensitivities in the 20-200µGal interval can be reached. Note from the following Table 4
+that on -ground instrument s (even commercial ones) can deliver much higher
+sensitivities. The best gravity measurement has been obtained with the 8-meters cold
+atom fountain at Stanford, which reaches sub-nanogal sensitivity. A second thing to be
+noted is  that satellite -based gravity missions have a typical field retrieval time of a
+month or so. This means that phenomena which take place over faster time scales and
+are strong enough to be detectable would need an accurate modelling, to avoid signal
+aliasing. If future satellite gravity observation missions were to reach sensitivities better
+that ~10µgal, Atmospheric -Oceanic (AO) noise in particular would need to be taken into
+account.
+
+ Detectable gravity
+anomalies (gal)
+Accuracy
+(g/g)
+Measurement
+duration
+Current satellite gravimetry 1mgal 10-6 Seasonal
+Next Generation Gravity Missions 50µgal - 500µgal  10-7 Sub-seasonal
+Falling  corner cube absolute
+gravimeter ~ 1 µgal 10-9 Days/hours
+CAI portable gravimeter (muQuans) ~ 1 µgal 10-9 ~1hour
+Stanford ~10m fountain CAI
+accelerometer ~ 1 ngal 10-12
+10-13
+Single-shot
+~1hour
+
+Table 4: order of magnitude of the gravity measurements capability of (i) current satellite gravity missions (ii)
+Next generation satellite gravity missions (iii) high-end standard reference commercial absolute instrument (iv)
+portable CAI gravimeter, and (v) non-portable CAI gravimeter.
+
+15 “The measurement of surface gravity ”, David Crossley et al., Reports on Progress in Physics, Vol. 76,
+No. 046101, 2013; https://iopscience.iop.org/article/10.1088/0034-4885/76/4/046101
+
+20
+5 Cold Atom Interferometry for future gravity missions
+There are s everal different ways in which cold atom interferometry can be usefully
+employed in the context o f a satellite gravity mission  for Earth observation . As we have
+seen, a ccelerometers play an essential role in any such mission, and CAI -based
+accelerometers have peculiar advantages over conventional ones: in particular, a flat
+noise spectrum . Hybrid accelerometers which combine the properties of classical and
+atomic interferometric systems are therefore being studied , which could be used in the
+context of a future GRACE-like mission, to measure non -gravitational pull. A second ide a
+is to correlate the signal of two CAI accelerometers placed in two dist inct satellites by
+means of a laser interferometric link. Such a mission has some elements of G RACE (the
+use of a pair of satellites ) and of G OCE (a component of the gravity tensor wi ll actually
+be measured), since it would yield a gravity gradiometer with an extremely long baseline.
+A third possibility, which seems to have elicited the interest of several research groups, is
+to develop a CAI -based gravity gradiometer, to be flown in a  satellite with the aim of
+improving the GOCE performances. In the following subsections we review the status of
+these lines of activity.
+
+5.1 Hybrid electrostatic – CAI accelerometer
+Onera is working with ESA funding on a hybrid accelerometer 16, composed of an
+electrostatic accelerometer and a cold atom interferometry accelerometer. Indeed, as
+shown in the previous section (see e.g. Fig. 16) electrostatic accelerometers have
+reached extremely high sensitivity level, but are intrinsically affected by a non -flat noise
+response and bias drift. On the other side, a CAI -based accelerometer is characterized by
+white noise and very good bias stability. Onera has been developing and characterizing a
+hybrid system where the proof mass of the electrostatic accelerometer is the Raman
+mirror of the atom interferometer. The CAI system measures atomic acceleration relative
+to proof mass acceleration, or conversely the acceleration of the proof mass with respect
+to the atom s inside the atomic interferometer, which constitute an inertial system of
+reference.
+
+Fig. 18: concept and prototype of hybrid accelerometer
+
+16 “Status of Development of the Future  Accelerometers for Next Generation Gravity Missions”,  B. Christophe
+et al., International Symposium on Advancing Geodesy in a Changing World, pp. 85 -89, 2018;
+https://link.springer.com/chapter/10.1007/1345_2018_42
+
+21
+A feedback loop can therefore be implemented, by which the signal coming from the CAI
+accelerometer is used to drive the field keeping suspended the proof mass in such a way
+that all the l ow-frequency noise components (e.g. vibrations, thermal drifts ) are
+suppressed in the electrostatic accelerometer. In Fig. 19 it is shown how the disturbances
+introduce by a purposely-introduced sinusoidal vertical excitation can be suppressed, so
+that once the right feedback is found (red line) the atomic signal falls back to the region
+where it was before the excitation was applied (green line)
+
+Fig. 19: suppression of vertical oscillations in a hybrid accelerometer.
+In Fig. 20 it is shown how the noise spectra of the hybrid system changes. The low
+frequency noise of the composed device is flat, instead of rising as the black one of the
+ES accelerometer alone.
+
+Fig. 20: noise spectrum of the hybrid accelerometer
+A comparison of Fig. 20 with Fig. 16 shows however that this constitutes just a proof -of
+principle demonstration. The low -frequency flat noise spectrum of the hybrid system has
+a noise level of ~10 -4/10-5 ms-2/HZ1/2, to be compared with a requirement of
+~10-11/10-12, if the noise spectrum of an actual ES accelerometer such as the microStar is
+to be made flat. However, it should be taken into account that p erformances at 0g are
+expected to be much better than at 1g, both because of the longer interrogation time  in
+the atomic interferometer, and because the proof-mass would be suspended under the
+optimized conditions of a 0-Volt field, since no static bias field would be required to keep
+the mass suspended in the absence of gravity. Future plans include the test of
+compensation of static and dynamic rotations. The plan of the work can be found e.g. in
+an ESA presentation, where further details about the instrument have also been
+presented, see Fig. 21.
+
+22
+
+Fig. 21: architecture of the hybrid instrument; work carried on thanks to ESA funding for Onera hybrid
+accelerometers. 17
+The impact that a hybrid accelerometer like the one being developed by Onera may have
+in a GRACE -like mission has been explored in terms of the improvement in the geoid
+accuracy18 by a group composed by researchers form Technische Universität München,
+ONERA, Université Paris -Saclay, and RHEA fo r ESA . In Fig. 22 we show how different
+performance assumptions (left -hand side) im pact on the geoid accuracy (right -hand
+side).
+
+Fig. 22: Performances assumption on the hybrid accelerometers and simulated improvement on geoid at
+different spherical harmonic degrees. LRI means laser ranging interferometer. The noise associated with LRI
+sets the ultimate limit for the geoid accuracy.
+
+17 “Cold Atom Interferometers for Future In ertial Sensors and Gradiometers”, O. Carraz, Alpbach Summer
+School presentation, 2019; https://www.summerschoolalpbach.at/docs/2019/lectures/Carraz_QT_ESA.pdf
+
+18 “Impact of a novel hybrid accelerometer on satellite gravimetry performance”, P. Abrykosov et al., Advances
+in Space Research 63, 3235–3248, 2019; https://hal.archives-ouvertes.fr/hal-02315304/document
+
+23
+It is apparent that for the hybrid system to yield an appreciable improvement, a
+completely flat noise spectrum is necess ary. This is acknowledged by the authors, which
+write “while a low CAI performance (10 -8 to 10 -9 m/s2/Hz1/2) does not lead to any gains
+compared to a stand-alone EA, a sufficiently high one (10 -11 m/s2/Hz1/2) may improve the
+retrieval performance by over one order of magnitude”. This ideal flat noise spectrum is,
+in their own assessment, more than very optimistic. Other factors come also into play:
+for example “t he accelerometer performance seems to play a less prominent role if the
+overall observation geometry is improved as it is the case for a Bender -type mission ”,
+and “the impact of the accelerometer measurements diminishes further when temporal
+variations of the gravity field are introduced, pointing out the need fo r proper de-aliasing
+techniques”. This implies that, even if the low -frequency noise component of the
+accelerometer is improved by several order of magnitude, the impact in a fully -simulated
+mission context can be much less significant than expected. In particular, a perfectly f lat
+noise spectrum would bring an improvement only in the long wavelength spectrum of the
+gravity field  (i.e. spherical harmonic degree lower than ~2 0), which are of interest for
+global mass transport studies but would not improve the system spatial resolution.
+There is an additional element which the authors bring to the attention of the reader ,
+when they write that “in order to maximize [the hybrid accelerometer ’s] potential, the
+application of de -aliasing techniques, especially for non -tidal AO signals and the tid al
+component of the gravity field, shall be a decisive factor. This is a reasonable demand for
+the upcoming decades, as first results by Daras and Pail (2017) as well as Hauk and Pail
+(2018) have shown” . This statement points to the fact that deploying on a satellite a
+better instrument (in this case, one with lower low -frequency noise) is not per se a
+guarantee of better gravity measurements. As can be seen in Fig. 23, an improvement of
+the field retrieved performance with respect to GRACE and GOCE require s a very
+accurate modelling of several phenomena which occur on fast time scales and therefore
+induce aliasing noise disturbances on the retrieved field.
+
+Fig. 23: Magnitudes of different source of errors affecting GRACE and GOCE measurements, at different
+spherical harmonic degrees.19
+
+19 “The gravity field and the Global Geodetic Observing System GGOS”, Journal of Geodynamics Vol. 40, No. 4 -
+5, 387-393, 2005;
+https://www.sciencedirect.com/science/article/abs/pii/S0264370705000700?via%3Dihub
+
+24
+5.2 Correlated CAI accelerometers
+GRICE ( Gradiométrie à Interféromètres quantiques Corrélés pour l’Espace)  is an
+assessment study by the French space agency CNES, whose concept occupies a middle
+space between GRACE and GOCE. As in GRACE, we have a pair of s paceships connected
+by a laser link; as in GOCE, the gravity gradient is actually measured. Since each satellite
+hosts an accelerometer, t he gravity gradiometer baseline is of the order of ~100km
+instead of the GOCE 50cm . This would increase the sensitivity of the instrument by
+several orders of magnitudes.  In addition, atomic interferometry is exploited to o btain a
+gravity gradient measurement insensitive from the non -gravitational forces acting on the
+satellites. GRICE is assu med to be a 5 years mission, and it is forecasted to produce a
+gravity field map with a spatial resolution of 100km and a temporal resolution of 10 days.
+The system is represented in Fig. 24: t wo satellites on a p olar orbit at ~370km height
+carry a cold atom accelerometer each, and the distance between the reference mirrors of
+the two accelerometers is measured via a laser link , so that a  correlated differential
+acceleration measurement is obtained.
+
+Fig. 24: Gravity gradient measurement concept in GRICE 20. Having called x the axis connecting the satellites,
+the two CAI accelerometers measure the x component of the acceleration s of the atoms inside the satellites,
+with respect to the reference mirrors M1 and M2.
+The signal S 1 from the first CAI accelerometer gives the acceleration of the atoms in
+satellite 1 with respect to mirror 1, while the signal S 2 from the second CAI
+accelerometer gives the acceleration of the atoms in satellite 2 with respect to mirror 2.
+By taking the second derivative of the satellite distance  L, measured by means of a laser
+interferometric system, we obtain the acceleration of mirror 1 with respect to  mirror 2.
+The variation of the x components of the acceleration along the x axis is given by:
+𝜕𝑎𝑥
+𝜕𝑥 =  1
+𝐿 (𝑆1 − 𝑆2 + 𝐿̈ ) = 1
+𝐿 [(𝑎1 − 𝑎𝑀1) − (𝑎2 − 𝑎𝑀2) + (𝑎𝑀1 − 𝑎𝑀2)] = 1
+𝐿 (𝑎1 − 𝑎2)
+It is important to note that non -gravitational forces such as the atmospheric drag which
+acts on the satellites (and therefore on the mirrors) do not affect the accelerations of the
+cold ato ms, which are the only one contributing to the above formula. Using CAI
+accelerometers therefore allows eliminating in a very natural way non -gravitational pull
+effects. However, in the proposed architecture only a pair of accelerometers is used, each
+of them measuring only one acceleration component: consequently, only one component
+of the gravity field gradient can be retrieved.
+
+20 “Correlated atom accelerometers for mapping the Earth gravity field from Space ”, T. Lévèque et al.,
+Proceedings Volume 11180, International Conferen ce on Space Optics — ICSO 2018 , 111800W, 2019;
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11180/111800W/Correlated-atom-
+accelerometers-for-mapping-the-Earth-gravity-field-from/10.1117/12.2535951.full?SSO=1
+
+25
+The following Table 5 summarizes the characteristics of the CAI accelerometers and their
+performance. Note that to reach an acc eleration sensitivity of 6·10 -10 ms-2Hz-1/2 the
+atoms must be cooled to 50p°K : to give a comparison, the most recent experiments
+performed on the ISS by the Cold Atom Laboratory demonstrated a BEC condensate with
+a temperature of 17n°K, while in the Maius sounding rocket experiment a BEC at 100n°K
+was obtained21,22.
+
+Table 5: specs and performance of the CAI accelerometers for GRICE
+The gravity gradient sensitivity is determined, also by the properties of the laser link. The
+overall sensitivity is represented by the blue line in Fig. 25. It can be noted that the
+system is theoretically t hree orders of magnitude more sensitive than GOCE , and is not
+affected by the low -frequency increase of noise.  As can be seen in Fig. 13  (and later on
+in Fig. 27) , the noise in GOCE is ~1 0-30 mE Hz-1/2 (=1-3·10-11 s-2Hz-1/2), and steeply
+increases below 1mHz : however, it must be stressed that from its 6 accelerometers all
+the components of the gravity gradient tensor can be obtained.
+
+Fig. 25: GRICE expected sensitivity to gravity gradient.
+GRICE has been devised to obtain a better spatial resolution of the temporal variations of
+the high harmonics of the Earth gravity field . To assess to which extent this objective can
+be attained, its proponents acknowledg e that it is still necessary to (1) s imulate the
+gravity field recovery (2) develop specific data processing method ologies (3) validate the
+instrument sensitivity and (4) assess impact of mission parameters.
+
+21 “Observation of Bose–Einstein condensates in an Earth-orbiting research lab”, David C. Aveline et al., Nature,
+Vol. 582, pages 193–197, 2020; https://www.nature.com/articles/s41586-020-2346-1
+https://www.researchgate.net/publication/342102533_Observation_of_Bose-
+Einstein_condensates_in_an_Earth-orbiting_research_lab
+
+22 “Space-borne Bose -Einstein condensation for  precision interferometry”, D. Becker et al ., Nature
+volume 562, pages 391–395, 2018; https://www.nature.com/articles/s41586-018-0605-1
+https://arxiv.org/pdf/1806.06679.pdf
+
+26
+
+5.3 Satellite-based CAI gravity gradiometers
+As we have seen in Section 3, the 2013 preparatory study for the Next Generation
+Gravity Mission promoted and funded by  ESA (see footnote 6)  concludes that the “the
+low-low satellite -satellite tracking ( LL-SST) is in practice the only observing technique
+potentially capable of detecting the time variable gravity signal with the required
+resolution”, which clearly points towards an expansion of the GRACE mission concept. In
+2015 t his conclusion has been reinterpreted in the sense that “t he gradiometer is
+interesting for monitoring mass transport only with a largely better performance than
+GOCE, or for low -cycle (4 -day) gravity field retrieval (with GOCE performance
+gradiometer)” (quote from paper referenced to in footnote 14). These statements seem
+to have spurred the interest for CAI-based gravity gradiometry, which at least in principle
+could achieve the hoped for “largely better” performances than GOCE.
+We recall that GOCE allowed determining the geoid with an accuracy of 1 to 2 cm for a
+spatial resolution of ~100 km. Differential accelerations were measured on-board a single
+satellite with ultra -sensitive electrostatic accelerometers: all the components of the
+gravity gradient tensor were measured with sensitivities in the range of 10 –20 mE Hz -1/2
+in the 5–100 mHz measurement bandwidth, and used to reconstruct the gravity field.
+Due to intrinsic limitations of its electrostatic accelerometers, the GOCE gravity gradients
+performed poorly i n the lower frequency band, where the noise power spectral density
+(PSD) increases with the inverse of the frequency. To counteract the low-frequency noise
+impact on the gravity field recovery  performance, special ly-tailored decorrelation filters
+had to be  used for whitening the GOCE gradiometer noise. Conversely, a  gravity
+gradiometer based on  a cold atom interferometer would naturally provide gravity
+gradients with white noise at  all the frequencies relevant for gravity field recovery from
+space, and is expected to provide gravity gradients with a sensitivity level of the order of
+~5 mE Hz-1/2.
+As explained in a previous technical report  [1], a CAI gravimeter is based on (i) a
+sequence of three Raman pulses provid ing a single gravity acceleration measurement (ii)
+a repetition of t he measurement sequence to improve statistical uncertainty . S ince
+different measurements are averaged incoherently , th e statistical improvement follows
+the square root of the repetition rate . A CAI gravity gradiometer measures differential
+acceleration using two spatially separated atomic interferometers : the gravity gradient is
+obtained from the simultaneous acceleration measurement of two spatially separated
+atomic clouds in free fall.  In each interferometer, an acceleration 𝑎 along the direction of
+the Raman laser beams introduces between the two interferometric paths a phase
+difference given by Φ = 𝑘𝑎𝑇2, where  ℏ𝑘 is the momentum imparted by the Raman
+transitions onto the atoms and 𝑇 is the free evolution time between two  consecutive
+Raman pulses , also known as interrogation time . A differential acceleration
+measurements with two such interferometers separated by a distance 𝐷 (instrument
+baseline) allows extracting the gravity gradient 𝛾 from the d ifferential phase shift  ΔΦ =
+Φ2 − Φ1 = 𝑘(𝑎2 − 𝑎1)𝑇2 = 𝑘𝛾𝐷𝑇2, where 𝑎1 and 𝑎2 are the accelerations experienced by the
+atomic clouds in the two interferometers.
+The use of the same atom optics tool to manipulate the atomic wave -packet of the two
+clouds ensures that effects which are common to both clouds cancel out in the differential
+acceleration; in other terms a gravity gradiometer enables a high rejection ratio of the
+common mode noise sources (e.g. the vibrations of the mirror). The sensitivity of current
+ground-based CAI gravity gradiometers reaches a few tens of E  Hz-1/2, one major
+limitation being the limited interrogation time due to the free fall of atoms in a 1 -g
+environment. An improvement of several orders of magnitude is expected in a
+microgravity environment, since t he sensitivity scales as the square of the interaction
+time. An additional improvement can follow from replacing the Raman splitters with
+sequences of light pulses which impart multiple photon recoils, thus increasing the
+separation between atomic trajectories in the interferometer.
+
+27
+It must be pointed out that an increase in the inter rogation time has an immediate
+impact on the instrument repetition rate , and therefore degrades the statistical
+uncertainty if the total time dedicated to each gravity measurement is to be left
+unaltered. It can be calculated that a typical interferometer phase noise at the mrad/shot
+level implies a sensitivity to the gravity gradient in the mE/shot range, for a n
+interrogation time of 5 s and an instrument baseline of 0.5 m. To take advantage of such
+a high single-shot sensitivity  a high measurement rate is necessary, which can be
+achieved by interrogating several atomic clouds at the  same time , i.e. by using an
+interleaved scheme. Such an approach requires producing cold atom clouds with a cycle
+time significantly shorter than the interferometer interrogation time. A production time of
+~1 s would yield a sensitivity in the low mE Hz-1/2. In addition to high sensitivity, such an
+atom gradiometer would offer  excellent long term stability. This last feature follows from
+its well defined and stable scale factor , which is determined by the precision with which
+the frequency of the laser employed to split the atomic wavefunction can be controlled.
+Absolute accurate measurem ents, with  no calibration need, can therefore be realized.
+The absence of uncontrolled drifts would also result in an instrument noise characterized
+by a flat amplitude spectral density at low frequencies ( i.e. below 1 mHz) , in contrast
+with electrostatic accelerometers which feature a fast increase in the  measurement noise
+below 10 mHz.
+We now review some of the proposals which have been advanced along this line, to
+provide a  technology assessment of satellite-based CAI gravity gradiometers  and their
+expected performance in a simulated mission scenario.
+5.3.1 Carraz 2014: a spaceborne CAI gravity gradiometer
+Building on a 2012 paper23, staff from the ESA -ESTEC stated in 2015 that “future Earth
+gravity missions will require gradiometers with sensitivity  in the order of 1mE Hz-1/2 over
+a wide spectral range”, and forecasted that “a tom interferometers with a baseline in the
+range of 1 meter are expected to meet this requirement and can be used for the
+realization of next-generation gravity gradiometer payloads”  24. They therefore propose a
+gravity gradiometer concept which in one dimension is schem atized as shown in Fig. 26.
+By using two MOT and two BEC cooling stages, it generate s two co unter-propagating
+atomic clouds to measure one diagonal element of the gravity t ensor ( Vzz), and the
+rotation rate along the x-axis. In order to obtain the full diagonal elements of the gravity
+gradient tensor and the full angular rate vector  the scheme must be replicated to the
+other two dimensions.
+High recoil laser pulse s are used to split each cloud of atom in two and to transport the
+four clouds to the interferometer rooms along the z -axis, which defines the gradient axis.
+A second high recoil pulse brings them back to a parallel launch. Cold atoms can be
+prepared during the interferometric sequence to reduce the cycling time below the time
+of the interferometer measurement. It is thus possible to have a quasi -continuous
+measurement by launching atoms at a high frequency, limited by the time Tcycle
+necessary to produce co ld atoms: in other terms, the interferometer will operate in an
+interleaved way. Best experimental results published in the literature report of a BEC of
+104 atoms loaded in 1 s, and it can be expected in the not-too-far future to have a BEC of
+a few 106 atoms loaded in Tcycle = 1 s. A Bose Einstein Condensate (BEC) is required for
+an interrogation time of T= 5 s ; in addition, to avoid loss of contrast due to the initial
+velocity distribution of the atom source, a point source interferometry (PSI) scheme must
+be used to detect the differential acceleration of 2 clouds of atoms. The authors
+acknowledge that, due to force gradient, the interferometer is not perfectly closed: in
+
+23 “The Future of the Satellite Gravimetry after the GOCE Mission”, P. Silvestrin et al., International Association
+of Geodesy Symposia, Vol. 136, 223-230, 2012; https://link.springer.com/chapter/10.1007%2F978-3-642-
+20338-1_27
+
+24 “A spaceborne gravity gradiometer concept based on cold atom interferometers for measuring Earth’s gravity
+field”, O. Carraz et al, Microgravity Science and Technology, Vol. 26, 2014;
+https://link.springer.com/article/10.1007/s12217-014-9385-x
+
+28
+other terms, th e atomic clouds at the output are not completely superimposed, whi ch
+reduces the signal visibility. However, they do not study in detail this effect.
+
+Fig. 26: One dimensional gravity gradiometer: the red arrows represent the Raman beams, the blue arrows the
+light pulse giving the transverse velocity , and the green arr ows the light pulses guiding the atoms from the
+cooling chamber to the interferometer chamber. T he blue rectangle is the mirror, representing the inertial
+reference. By carefully implementing a simultaneous detection in the 4 outputs of the interferometers , a
+differential signal is obtain which guarantees a high level of suppression in common noise sources, such as
+mirror vibration.
+By using a BEC 0.4n°K with an interrogation time of 5s, a sensitivity of ~3.5 mE Hz-1/2 is
+predicted, with a flat noise power spectral density at low frequencies, see Fig. 27.
+
+Fig. 2 7: Simulated noise level of the CAI gravity gradiometer (black line), as compared with GOCE’s
+performances. Note that the CAI -based instrument noise does not increase at low frequencies. PSD: power
+spectral density. PSD1/2: amplitude spectral density. In the figure, PSD1/2=3.5 mE Hz-1/2.
+The authors acknowledge that the instrument would not be sensitive enough to provide
+sufficient signal-to-noise ratio on a monthly basis, so that only the static field would be
+recoverable. They add that “ Estimation of the Earth gravity field model from the new
+gravity gradiometer concept has to be evaluated  taking into account different system
+parameters such as attitude control, altitude of the satellite, time  duration of the mission,
+etc.”, and suggest that “hybridization between quantum and classical techniques could be
+an option to improve the performance of accelerometers on next  generation gravity
+missions”, to correct  the spectrally  colored noise of the ele ctrostatic accelerometers in
+the lower frequencies, as already explained in Section 5.1.
+
+29
+5.3.2 Douch 2018: field recovery performances
+Following the design proposed by Carraz 2014 (see previous subsection), a group
+composed by researchers from Leibniz Universit y (Hannover) and LNE -SYRTE (Paris)
+simulated the performances of t he CAI gravity gradiometer in an actual mission
+scenario25. The authors note that although the various proposals for future space gravity
+missions emphasize the need to sustain a continuous monitoring of the time -variable
+gravity field, a CAI gradiometer like the one proposed by Carraz is not sensitive enough
+to detect the corresponding signals with a sufficient signal -to-noise ratio on a monthly
+basis. Indeed, s tarting from t he monthly time-variable gravitational signal computed
+from the ESA Earth System Model (which contains the contribution of the atmosphere,
+oceans, cryosphere, land hydrology and solid Earth ), they demonstrate that to detect the
+time variable gravity gradient components Vxx, Vyy, and Vzz with an SNR larger than 1, an
+instrument with a  sensitivity better than 0.1 mE Hz -1/2 is required: conversely, the CAI
+gravity gradiometer proposed by Carraz has a sensitivity of 3 .5 mE Hz-1/2. The study is
+therefore focused on the ability of a CAI gradiometer mission to recover the static  gravity
+field: the GOCE mission represents therefore the right benchmark to evaluate the
+performance of the CAI  gradiometer and to quantify precisely how it can improve the
+knowledge of the static field.
+The gradiometer configuration shown in Fig. 28 enables a measurement of the gravity
+gradient along the direction of l, which constitutes the gradiometer baseline. Such
+configuration must be rep licated along the other two axe s if a 3 -dimensional
+measurement is desired.
+
+Fig. 28 : Atom interferometry scheme for gradiometric measurements as proposed in Carraz et al. (2014).
+During the preparation time t prep an atomic ensemble is generated, split into two clouds separated by l (the
+instrument baseline), and injected into the two atomic interferometers with forward velocity 𝐯. With tprep shorter
+than 2T, two or more clouds can be at different stage of the interferometric sequence (interleaving), thus
+increasing the measurement rate. In this representation, the atomic ensembles are in free fall , so they follow
+linear trajectories. The red stripes in the figure represents the interferometers laser beams, which cause in the
+atoms stimulated Raman transitions with an associated atomic   momentum change ℏ𝒌𝒆𝒇𝒇 in the same direction
+of the laser beams. The instrument has a sensitivity of 3.5 mE Hz-1/2, which corresponds to a white noise with a
+one-sided amplitude spectral density (ASD) of 3.5 √2 ≅ 5 mE Hz-1/2.
+
+25 “Simulation-based evaluation of a cold ato m interferometry gradiometer concept for gravity field recovery”,
+K. Douch et al., Advances in Space Research 61 1307–1323, 2018
+https://hal.sorbonne-universite.fr/hal-01826234/document
+
+30
+To understand the issues analyzed in the paper, we need to introduce some p reliminary
+concepts on the orientation of the satellite and of the on-board gradiometer. The pointing
+mode of a n orbiting satellite is determined by the needs of its  specific mission : as
+depicted on the left side of Fig. 29 we can have target pointing, nadir pointing, or inertial
+pointing. Target pointing is obviously adopted when the object of interest is located in a
+fixed location on the Ea rth surface. In inertial pointing the satellite orientation is kept
+constant during the orbital motion , in order to obtain in it a  quasi-inertial system of
+reference; such a pointing is technically quite difficult, and has been used only for very
+specific scientific missions. Gravity observations typically use nadir pointing: the satellite
+is kept orientated along the vertical direction, which implies a continuous rotation during
+its orbital motion.  On the right side of Fig. 29 we introduce the three axes x, y, and z
+which determine respectively the along -track, cross-track and nadir directions
+determined by the orbital plane.
+
+Fig. 29: Left: different possible pointing options of a satellite. Right: representation of the axis indicating the
+along track (x), cross-track (y), and nadir (z) directions.
+A typical GOCE -like orbit would imply a  rotation rate of  ~ 1 mrad /s affecting the
+interferometers oriented in the along-track and in the nadir direction s. This rotation
+prevents the atomic trajectories from closing at the third interferometric pulse: indeed, it
+can be calculated that the separation between the clouds of atoms which have followed
+the upper and the lower path in each one of the two interferometers is larger than the
+dimension of the atomic clouds themselves. The fringe contrast therefore diminishes to
+the point that no output signal is recorded  by the interferometer: i t has been calculated
+that a reduction of the rotation rate by a factor of ~1000 is required to recover the
+contrast.
+Let us also recall (see e.g. [1]) that the interferometric phase shift is determined by two
+contributions, respectively associated to linear acceleration and to rotation
+ΔΦ = Φ𝒂 + Φ𝛀 = 𝒌eff ∙ 𝒂 𝑇2 + 2𝒌eff ∙ (𝛀 × 𝒗) 𝑇2
+A rotation-induced phase shift  Φ𝛀 therefore appears whenever a drift velocity 𝒗 is
+present. In the original Carraz proposal, the atoms are launched into the interferometer
+with a forward drift velocity  𝒗 ~2.4cm/s. This shift is cancelled in  the differential signal
+between the accelerometers which  contains the information of the gradient, but only if
+the forward drift velocities are the same for both. Due to the  velocity spread and the
+finite number of atoms per  ensemble, a random velocity uncertainty which  is
+uncorrelated between the interferometers will remain . This limits the maximum rotation
+rate compatible with shot-noise-limited performances to ~1 µrad/s, a value similar to the
+requirement for closing the interferometer.
+It is also to be observed that the velocity distribution  in each atomic cloud implies a
+velocity-dependent dephasing, so that the signal over any output port becomes spatially
+fringe-patterned if the rotation rate significantly exceeds ~ 1 µrad/s: as a consequence,
+the signal given by the atom population count at the port vanishes . An antidote could be
+
+31
+a mirror c ounter-rotation which cancels the satellite rotation rate , but the interleaved
+operation mode and the dynamic range requirements prevent pursuing this option . It is
+finally to be noted that also a gravity gradient parallel to 𝒌eff leads to a non -closed atom
+interferometer, with a displacement at the last beam splitter pulse parallel to 𝒌eff.
+Summarizing, the component of the angular velocity perpendicular to the measurement
+axis must be smaller than 1µrad/s: as a consequence, o nly nadir pointing and quasi -
+inertial pointing modes are possible.  If the nadir pointing mode is chosen, a  maximum
+rotation rate of ~1 µrad/s can only be maintained in the cross -track y direction. If quasi-
+inertial pointing mode is chosen, a maximum spurious rotation rate of 1 µrad/s along all
+three axes must be ensured . With nadir pointing a 1-axis instrument is to be adopted,
+since only the V yy component of the Gravity Gradient Tensor can be measured ; in this
+configuration, t he laser beams and the instrument baseline l are directed in the cross -
+track y direction, and the y component of the acceleration is measured at the two
+interferometers to produce the differential signal.  With q uasi-inertial pointing a 3-axis
+instrument could produce all the diagonal components V xx, V yy and V zz of the gravity
+gradient tensor.
+An 8-months mission is simulated for an altitude orbit of 239 km. In addition to the orbit
+and its precision (2.6cm, as in GOCE), other input parameters include the noise of the
+star tracker, the noise of the gyroscopes, and the gravity  gradiometer noise , which is
+taken to be 5 mE Hz -1/2. The results of the gravity field recovery performance are shown
+in Fig.30 in terms of geoid height degree variance. The GOCE solution error is obtained
+by computing a gravity model based on the three diagonal gravitational gradients of the
+whole GOCE mission period (November 2009 – October 2013, about 47 months), and it
+is compared to two different reference gravity mod els, namely EIGEN-6C4 and
+GOCO05S.
+
+Fig. 30: Gravity field recovery performance for the CAI gravity gradiometer and for GOCE. EIGEN -6C4 and
+GOCO05S indicate two well-established reference gravity models. “Comb” means the GGT solution in which the
+three gravity gradients are combined to produce a single synthetic indicator. Solid curves represent the true
+errors (i.e. the differences between the recovered gravity field coefficients and the input background model)
+and dashed curves are formal errors (i.e. th e accompanied standard deviations of the parameters).  The
+gradiometer nominal noise is 5 mE Hz -1/2. It can be noted that the black curves corresponding to EIGEN-6C4
+and GOCO05S are identical, so we can suspect a mistake here. A curve for EIGEN-6C4 is given also in Fig. 35.
+The nadir mode does not allow outperforming GOCE under identical orbit and
+measurement timespan , while t he solution in the quasi -inertial mode is significantly
+better than the nadir mode one, especially above the spherical harmonic degree  ~50. As
+a consequence, the nadir mode should be discarded in favor of the quasi -inertial mode.
+The 8 -month quasi -inertial solution is better than the GOCE solution for the whole
+mission period. An 8 -month mission at an altitude of 239 km and using a 3 -axis CAI
+gradiometer with a nominal white noise of 5 mE  Hz-1/2 in the quasi -inertial mode would
+outperform the full GOCE mission and eventually yields a more precision gravity field
+model. Nonetheless, it should be borne in mind in this comparison that the GO CE satellite
+
+32
+was most of its lifetime at a higher altitude than 239 km ; for a fairer comparison,  the
+GOCE solution  is also plotted,  for the 8 months during which the satellite was at an
+altitude equal or lower than 239 km. Again, the 8 -month quasi -inertial solution at a
+constant altitude yields a slightly better solution despite the fact that the 8 -month GOCE
+solution is partly based on gravity gradients measured at a lower altitude.
+The authors acknowledge that, a mong the various assumptions made in th eir study, the
+attitude control requirements and the quasi -inertial mode are particularly challenging,
+especially at such a low altitude where the atmospheric drag may cause variations on the
+satellite angular velocity greater than 1 µrad/s. Indeed, i nertial pointing satellites are
+rather uncommon although control feedback strategies to maintain such pointing have
+been studied. We conclude by quoting verbatim their main conclusions:
+“Our simulations show that the nadir mode does not allow to clearly outperfor m GOCE.
+The results are more promising in the case of the quasi -inertial mode where the
+gradiometer can measure the three diagonal components of the GGT. To outperform the
+whole GOCE mission in term of geoid accuracy, we conclude that a 3 -axis CAI
+gradiometer with a nominal white noise of 5mE/√Hz is required, at an altitude of 240
+km, in quasi -inertial mode, for at least 8 months . […] Although the quasi -inertial mode
+proved to be the best operating mode for the CAI gradiometer considered in this study,
+keeping such a pointing seems technically challenging. Therefore we recommend to
+investigate whether it is possible to modify the design of the CAI gradiometer so that the
+3 diagonal elements of the GGT can be measured in the nadir mode. In other words, an
+improved interferometer architecture that allows the atoms to interfere in an almost
+uniform rotation reference frame is highly desirable.”
+5.3.3 Trimeche 2019: concept study and preliminary design
+The outcome of the previous study led its authors to collaborate with researchers from
+LP2N (Bordeaux), ZARM  and DLR (Bremen), ISMO CNRS (Orsay), to investigate how to
+fly the gradiometer in the nadir mode by correct ing its angular rotation 26. They propose a
+compensation of all the angular  rotations in the n adir pointing mode by tilting the three
+interferometric mirrors, both statically and dynamically.  To our knowledge, this is the
+most complete study of a CAI gravity gradiometer published until now : only the most
+significant conclusions o f its detailed technical analysis are reported here. The overall
+scheme of the instrument and some details of its components are shown in Fig. 31.
+The interferometer is linked to the satellite frame, which orbits at a fixed altitude with a
+constant orbiti ng frequency orb. The measurement  axis, which is the one along which
+the laser beams propagate, is taken in the orbital plane; the rotation rates of the satellite
+along the along-track (x), cross-track (y), and nadir (z) directions are  x, y, and z, as
+shown in Fig. 29. In the case of nadir pointing, y = orb and x  z  0, while for inertial
+pointing x  y  z  0. For an altitude of 250 km, orb = 1.2 mrad s−1.
+The rotation of the satellite  must be compensated in order to obtain mirrors with a fixed
+orientation in the frame of the atoms. This can be obtained by tilting the first and the last
+retro-reflecting mirrors of the interferometric sequence by angles ± = ±yT, where y is
+the rotation rate along the  cross-track axis y and T is th e time separation between two
+successive interferometric pulses,  see Fig. 32. T his configuration removes the sensitivity
+of the interferometer to centrif ugal and Coriolis accelerations. The phase shift induced by
+the gravity gradient must also be compensat ed, which can be done by changing the
+Raman wavevector of the second pulse by an adequate amount k.
+
+26 “Concept study and preliminary design of a cold atom interferometer for space gravity gradiometry ”, A.
+Trimeche et al., Class. Quantum Grav. 36, 215004, 2019
+https://iopscience.iop.org/article/10.1088/1361-6382/ab4548
+
+33
+
+Fig. 31:(a) Global s cheme of the gravity gradiometer , which relies on the double diffraction interferometric
+technique (b) The BEC source, based on an optimized atomic chip design, generates ~106 atoms which are then
+magnetically evaporated, displaced and collimated to form clouds at ~100p °K (c) Horizontal transport  to the
+interferometry chamber (d) The BEC is split in two by the  combination of a double Raman diffraction and a
+twin-lattice technique feeding both interferometers. In total, the entire process of production, manipulation and
+transport of the BEC takes 1.4 s.  A new magneto -optical trap (MOT) production can start as soon as the
+previous produced BEC has been loaded into the vertical lattices resulting in an effective cycle time of only  1.2
+s, which combined with an interrogation time of 10 s allows interleaving up to 8 measurements.
+
+Fig. 32: Tilted mirrors in the three-pulse interferometric sequence. The relative angle between two consecutive
+reference mirrors is ∼7 mrad, corresponding to the mean rotation rate of the satellite. The first and the third
+mirror in the Figure are fo r the /2 pulses: such mirrors are fixed on piezoelectric tip -tilt mounts to allow the
+fine control of the relative angle betw een the three reference mirrors . A dynamic range of ±30 μrad and an
+accuracy of 10 nrad is needed, specs which which according to the authors are “ slightly beyond ” the
+technological state-of-the-art.
+The general architecture of the system to be employed to measure the gravity gradient
+tensor components Tzz and T xx is represented in Fig. 33 . For each 1 -D instrument, f our
+mirrors are fixed inside the vacuum system: one for the two vertical Bloch lattices and
+three tilted reference mirrors for the interferometer , which compensate the satellite
+rotation and its associated bias and contrast loss. The 1-D interferometer to be used for
+the Tyy component needs a single reference mirror for the splitting and the interferometer
+pulses, and no tip-tilt mount is necessary.
+A careful error budgeting analysis is performed, whose details are outside the scope of
+the present Report. We report verbatim one of its main conclusions: “w hile the
+requirements on the control and knowledge of x and z can be met with current
+
+34
+technologies, using for instance fiber optic gyroscopes of the Astrix class, the ones of the
+rotation rate y, and of the mismatch of the mirror with respect to the ideal tilt, are very
+stringent, and cannot presently  be met, even with the best space qualified gyroscopes.
+Instead we propose to use the mathematical  properties of the gravity tensor, and its null
+trace, to estimate y, or at least its fluctuations.”
+
+Fig. 33: Architecture of the 1-D instrument to be used for Tzz and Txx. An atom beam is produced in the 2D MOT
+chamber and used to load a mirror 3D MOT on a chip in the BEC chamber, where the ultra -cold atom source is
+achieved. The atom cloud is then launched thanks to a Raman pulse and horizontal Bloch lattices  towards the
+CAI chamber where the differential interferometer is produced. The atom  cloud is slowed down thanks to
+horizontal Bloch lattices, then split and transported at  the ent rance of the interferometer area by applying
+vertical Bloch lattices. The detection is achieved in a separated small chamber in order to avoid parasitic light in
+the CAI interferometric chamber.
+
+Fluorescence detection  is employed for atomic counting at each of the interferometers
+output; CCD cameras are used to obtain spatial resolution, which is necessary to prevent
+the contrast loss determined by the inhomogeneous  dephasing due to initial velocity and
+position distribution . It also allows the extraction  of information  on velocity dependent
+phase shifts. In Fig. 34 it is shown how the count  spatial distribution at an output port
+depend on y. It can be seen that a suboptimal compensation of the rotation destroys
+the output signal.
+
+Fig. 34: Simulation of interferometer fringes expected to be obtained for a point-source atomic cloud in the x–y
+plane for different values of y. From left to the right: 1 × 10 −6 rad s−1, 1 × 10−5 rad s−1, 1 × 10−4 rad s−1, and
+1.17 × 10−3 rad s−1= orb.
+The paper provides a design of the instrument and its main subsystems, including the
+laser sources (based on telecom technologies and second harmonic generation), the
+mirrors, the magnetic field and the magnetic shields. The main characteristics of the
+instrument are summarized below , and t he g lossary in Section 6 provides a brief
+explanation of the technical terms:
+
+35
+
+• BEC of ~106 atoms generated from an atomic chip
+• Further cooling to T < 100p°K via magnetic evaporation
+• BEC splitting by combination of double Raman transitions and twin Bloch lattice
+• Interrogation time 2T=10s, cycle time: Tc=1.2s, 8 interleaved measures;
+• Delta-kick atomic cloud collimation
+• Horizontal and vertical Bloch optical lattices for atomic transport
+• Nadir pointing enabled by static & dynamic tilting mirrors
+• Pointing errors <1 mrad
+• Attitude control x, y − orb, z < 10−6 rad s−1
+• Mirror tilt stability  < 5 nrad
+• Spatially resolved detection
+• Sensitivity: 3.5 mE at 1 s
+• Noise: 5 mE/Hz1/2
+• 239km height orbit, 8 months mission
+• Three axis instrument: 800kg, 3000W, 1x1x1.6m
+A performance analysis via a closed -loop simulator which allows to precisely quantify the
+errors in the gravity field solutions is also included, assuming that the instrument with a
+nominal white noise of 5 mE Hz -1/2 will be used in an 8-month mission at an altitude of
+239 km. As shown in Fig. 35  (to be compared with Fig. 30 of the previous subsection) ,
+the CAI solution for the three -axis nadir pointing mode would perform better than the
+GOCE solution for the whole mission period.
+
+Fig. 35: Geoid height error for the nadir -pointing gravity gradiometer, assuming an 8 -month mission at an
+altitude of 239 km and using an instrument with a nominal white noise of 5 mE Hz-1/2. It is evident that a 1-axis
+instrument would not outperform the GOCE satellite gravity gradiometer (SGG) . Conversely, the  CAI
+gradiometer in the three-axis nadir mode at a constant altitude yields a better solution than GOCE, despite the
+fact that the 8 month GOCE solution is partly based on gravity gradients measured at a lower altitude.
+
+36
+The development of such an instrument represents a non -minor technological challenge,
+as the authors themselves acknowledge: “ The determination of the optimal gain requires
+a realistic mission scenario, which remains to be investigated. As inputs, such mission -
+oriented study would use the constraints which we have determined for the attitude
+control and the overall size, weight and power (SWaP) budget of the total instrument.
+This budget has been established considering existing and available technology, and
+certainly needs to be reduced to end up with a more reasonable load. Possible
+modifications to the design, such as sharing subsystems between the instruments, would
+certainly he lp, but it is clear that a number of specific technological and engineering
+efforts are  also required, in particular directed towards the optimization of the power
+consumption. This challenging task motivates on -going and future research and
+development activities. This concerns not only the technological efforts mentioned above,
+to improve for instance the generation of BEC sources on atom chips or the compactness
+and power consumption of fiber -based laser systems, but also the validation of the
+instrument concept. Indeed, if the key scientific methods, such as Bloch-lattice transport,
+double Raman diffraction or interleaved measurements, have for most of them been
+demonstrated individually, demonstration activities combining several, and in the end all,
+of them in a single setup in a representative environment, need to be pushed. This calls
+for carrying prototyping activities, such as developing an elegant breadboard model of
+the sensor and characterizing it in a relevant environment. A thorough assessment of the
+performances of such a prototype will establish gradiometers based on cold atom
+interferometry as appealing sensors for future gravity missions aiming at improving our
+knowledge of the Earth’s gravity field.”
+5.3.4 Migliaccio 2019: satellite mission concept
+This study27 analyses a CAI gravity gradiometer to conclude that an improvement  with
+respect to GOCE could be obtained in the estimate of the static gravity field over  all the
+harmonic spectrum , and that r esults are promising also for the time-variable gravity
+field, although GRACE would still be performing better at very low degrees. The paper
+also simulates geophysical phenomena such as mass changes due to hydrology, glaciers
+and tectonic effects : by taking into account the expected gravi ty change -rates, time
+constants and spatial frequencies, it shows that signals invisible to past satellites could
+now be detected. This study is less focused on the CAI gradiometer technological aspects
+than on its performances in a whole simulation missio n, thus taking into account the
+point of view of the actual users of the mission data.
+An inter -pulse separation T = 5 s and a repetition  rate of 1 Hz as in Carraz 2014 is
+assumed. The authors acknowledge that o perating an atom interferometer in a rotating
+frame requires a counter-rotation in  the Raman wave -vector to compensate for the
+Coriolis acceleration, which is not compatible with the use of counter-propagating atom
+clouds, as originally proposed by Carraz  to implement rotation rate  measurements. A
+simplified setup ( see Fig. 36) with a  single pair of atom clouds pr opagating in the same
+direction is therefore considered. A passive, static  counter-rotation of the laser wave -
+vector is used to compensate the average value of the  satellite rotation rate,
+implementing the angular dynamic range ( ΩorbT ≈ 7 mrad)  required for rotation
+compensation. The authors assume that s mall residual rotation errors can be
+compensated by active tip-tilt actuation on the last retro-reflection mirror, without giving
+any demonstration of its technological feasibility.
+To ensure a high enough S/N ratio a tom clouds at nanokelvin temperatures  are required.
+Their generation involves using a high-flux atomic source such as a 2D -MOT, which loads
+a three-dimensional magneto -optical trap (3D -MOT) where trapping and cool ing to
+microkelvin temperatures is performed . The atoms are further cooled to form a Bose–
+Einstein condensate (BEC) at nanokelvin temperature using delta-kick cooling . Such
+
+27 “MOCASS: A Satellite Mission Concept Using Cold Atom Interferometry for Measuring the Earth Gravity Field”,
+F. Migliaccio et al., Surveys in Geophysics, 40, 2019
+https://link.springer.com/article/10.1007/s10712-019-09566-4
+
+37
+ultra-cold atoms are then sent to the main vacuum chamber with a velocity of ~25 mm/s
+using an optical lattice to impart several photon recoils in a direction orthogonal to the
+gradiometer sensitive axis. In the main chamber, the atoms are illuminated with a
+sequence of two optical lattice pulses along the gradiometer sensitive axis, to split the
+atoms into two clouds with a separation of d ≈ 50 cm. The two atomic clouds are
+simultaneously illuminated with Raman light pulses to implement the interferometric
+sequence and are finally detected with fluorescence imaging.
+
+Fig. 36: (a) The CAI space gradiometer payload: solid black lines indicate the mechanical structure of the
+vacuum chamber; dashed black lines indicate the trajectories of atom clouds;  yellow lines indicate laser beams
+for delta -kick cooling (DKC) and optical lattices providing precise  momentum kicks to the atoms; red lines
+indicate Raman laser beams for the atom interferometry splitters.  (b) Static compensation for spacecraft
+rotation in order to cancel Coriolis acceleration: mirro rs are aligned to form an angle Ω orbT between the Raman
+wave-vectors at successive pulses.
+A radial cold atom gradiometer is considered , meaning that the sensitive axis
+(determined by the direction of the Raman wave -vector as well as by the separation of
+the two atomic clouds ) is approximately along z, and the launch velocity of the atom
+clouds is along the x-axis. If the Raman beam is counter-rotated at an angular rate ∼−,
+the atom interferometer phase depends on the residual rotation rate δ  of the opt ical
+wavevector. For simplicity, the only non -vanishing component of the residual rotation is
+assumed to be δΩ y, i.e. the one along y only, which gives the major contribution. Under
+these assumptions, the gradiometer phase turns out to be
+
+Φ = 2𝑘𝑒𝑓𝑓𝑇2𝑇𝑧𝑧𝑑 + 𝑘𝑒𝑓𝑓𝑇2𝑇𝑧𝑧(𝛿𝑧 + 𝛿𝜈𝑧𝑇) + 2𝑘𝑒𝑓𝑓𝑇2𝑑𝛿Ω𝑦
+2 + 4𝑘𝑒𝑓𝑓𝑇2𝛿𝜈𝑥𝛿Ω𝑦
+2
+Here 𝑑 is the interferometer baseline, 𝑇𝑧𝑧 the diagonal component in the z -direction of
+the gravity gradient tensor, while  𝛿𝑧 and  𝛿𝜈𝑖 indicate errors on the d ifferential position
+and velocity of the two atom clouds.  The first term represents the gradiometer readout
+signal, the following  terms are the main error contributions due to local gradient,
+centrifugal acceleration and  Coriolis acceleration.  In particula r, the second and fourth
+phase terms depend on the coupling of gravity  gradient and angular velocity components
+respectively with the components of atomic differential  positions and velocities. Such
+
+38
+terms produce both errors in the gradient measurement,  due to non -vanishing mean
+values of the differential position and/or velocities of the  atomic clouds, and a loss of
+contrast in the atom interferometer due to the finite temperature  of the atoms. The
+centrifugal acceleration term produces errors in the gra dient measurement. The Coriolis
+and centrifugal terms can be largely mitigated with counter -rotation of the Raman wave-
+vector across the interferometric sequence , while t he noise  term due to local gradient
+can be efficiently mitigated with a suitable chirp  of the Raman laser frequency during the
+interferometric sequence.
+The amplitude spectral density  (ASD) of the gravity gradient noise for the CAI
+interferometer is shown in Fig. 3 7, which is to be compared with the one reported in
+Fig. 27 for GOCE and for the Carraz 2014 proposal.
+
+Fig. 37: Total amplitude spectral density of the gravity gradient noise with its dominant components, in the
+nadir-pointing mode and radial (z) sensitive axis . Main assumption for the simulations are f luctuations of 10
+μm/s R MS for the residual velocity difference between atom clouds, a typical GOCE -like orbit , and a
+compensation of the rotation rate at the level of 10–8 rad/s.
+To explore and quantify the advantages that MOCASS could provide with respect to
+previous gravity missions, several simulations have been carried out and the data have
+been analyzed. The technical details of the simulation procedures are outside the scope
+of the present Report, and we just mention that t wo different cold atom interferometer
+configurations have been considered:  (1) a single-arm gradiometer, which measures the
+gradient of the potential in one direction  (𝑇𝑥𝑥, 𝑇𝑦𝑦, or 𝑇𝑧𝑧) and (2) a do uble-arm
+gradiometer, which measures 𝑇𝑧𝑧 and 𝑇𝑥𝑥, or 𝑇𝑧𝑧 and 𝑇𝑦𝑦.
+For the payload, the outcome from the computations of the cold atom interferometer
+sensitivity in the different possible configurations has been used in the form of error  PSD.
+For the orbit data, the parameters of the GOCE orbit have been applied regarding altitude
+and inclination of the mission, namely almost -circular Sun -synchronous orbit at two
+different altitudes: “high” (~ 259 km) and “low” ( ~ 239 km). The time span of the
+simulation is 2 months, and the static gravity field is sampled from the EIGEN_6C4 global
+model. Two possible pointing modes have been considered: the nadir -pointing mode and
+the inertial  one. I t is understood that the inertial -pointing mode at such low alti tude
+would be extremely challenging from a space system engineering point of view.  The RMS
+of the predicted errors are summarized in Table 6, which shows that the nadir -pointing is
+expected to give better performance anyway.
+
+39
+
+Table 6: Errors forecasted in the gravity gradient components, for single arm and double arm gradiometer in
+different orbit configurations.
+To appreciate the impact of these numbers in the reconstruction of a global gravity
+model, Fig. 38  shows the error degree v ariances for MOCASS for a 2 -month mission in
+high orbit with a single -arm gradiometer in the case of T zz observations (nadir-pointing
+mode) or T yy observations (inertial -pointing mode). The curves are compared with the
+corresponding curves for the GRACE an d GOCE error degree variances and show the
+improved behaviour of the MOCASS results, apart from the low -frequency spherical
+harmonics, where GRACE results remain superior. However, MOCASS would sti ll not
+provide much extra resolution of the hydrological signal.
+
+Fig. 38 Error degree variances in terms of reconstruction of a global gravity model for a  2-month MOCASS
+mission in high orbit and observations of  a single -arm gradiometer; as a  comparison, 2 -month GOCE and
+GRACE solutions are represented, as well as the degree variances of the static gravity signal and the hydrology
+signal.
+
+For a static gravity field model, the quality of the solution improves by exploiting a  much
+longer observation period, as shown in Fig. 39 (left) which displays the gra vity anomaly
+error Δg at ground level for mission periods of 1, 2 and 5 years. The right side of Fig. 38
+shows the level of accuracy attainable by MOCASS in estimating the time -variable gravity
+signals, by displaying the cumulative errors in estimating a l inear trend of gravity
+anomalies, with monthly solutions.
+In the same Fig. 39 the performance of GOCE and Grace are also reported. For the static
+gravity field , an improvement with respect to GOCE performances is seen over all the
+harmonic spectrum (error of ~ 1.4 mGal at degree 300, ~ 0.9 mGal at degree 250 for a
+5-year-mission). F or the time -variable gravity field: the MOCASS error estimates are
+
+40
+promising (the 2-month solution is better than the GRACE one already  above degree 40,
+while in the  case of GOCE this occurs above degree 90). However, the accuracy at very
+low degrees  seems to be still insufficient for this type of applications . It has to be
+stressed that a mission in nadir - or inertial-pointing mode at su ch altitude, including the
+required attitude control, is very challenging from the engineering point of view.
+
+Fig. 3 9: Left: stationary field recovery performance of MOCASS with respect to GOCE . Right: monthly field
+recovery performance of MOCASS with respect to GOCE .  Missions with durations of 1, 2 and 3 years are
+considered, using a Tzz instrument in high orbit nadir-pointing mode.
+
+A significant part of the study is dedicated to the evaluation of the impact of the mission
+for the improvement in the detection and monitoring of geophysical phenomena,
+estimating the progress that could be achieved. Simulations of different phenomena were
+performed, including (i) deglaciation in High Mountain  of Asia (HMA)  (ii) mountain
+building proces ses (tectonic) , (iii) continental hydrology , and (iv) volcanic eruptions
+leading to growing seamounts. For each of these phenomena, the increase of signal
+detectability with respect to GRACE or GOCE was estimated. As an example, Fig. 40
+shows the progress in glacier monitoring which would be made possible by MOCASS.
+
+Fig. 40: An example of geophysical phenomena previously undetectable
+
+41
+6 Glossary
+The reader is referred to our background technical report on CAI sensing [1] for a basic
+understanding of the physics and the technologies which are commonly employed to
+leverage cold atoms properties. Here we provide a very basic glossary to cover ultra -cold
+atoms and more advanced technologies, which have largely been used only i n
+laboratories.
+
+Bose-Einstein condensate
+State of matter  formed when an ensemble of atoms at low densit y is cooled to
+temperatures very close to absolute zero . In these conditions, most atoms occupy the
+lowest quantum state, and the whole system is described by a single wavefunction. This
+allows observ ing at a macroscopic scale quantum phenomena, such as wavefunction
+interference, which are typical of the microscopic quantum world . It is common to
+employ the “cold” label to indicate at oms at temperature low enough (i.e. ~°K) to allow
+interference in the wavefunction of each single atom : in this case, the overall signal
+generated by the atomic cloud is given by the incoherent contribution s of each atom, so
+that it will scale with the square root of the n umber of atoms.  Conversely,   the label
+“ultra-cold” is used for atoms at temperature s so low (i.e. ~n°K) that a Bose -Einstein
+condensate is formed , so that interference takes place in the overall wavefunction
+describing the entire condensate: the contribution of each atom contributes coherently to
+the total signal, which will therefore scale linearly with the number of atoms.
+
+Molasses cooling, optical molasses, magneto-optical trap
+With molasses cooling is indicated a t echnique used to cool atoms by using laser beams
+and exploiting Doppler effect. In one dimension, an optical molasses consists of two
+counter-propagating beams, with frequency tuned slightly below an atomic absorption
+resonance. The motion of an atom along the direction of the beams will lead to a Doppler
+shift, so that the absorption rate of the photons travelling in the direction opposed to the
+atomic motion is increased, whereas the absorption rate of the photons travelling in the
+other direction is reduced. The momentum exchanged between atoms and laser photons
+therefore creates a force which is always directed against the motion.  A three -
+dimensional optical molasses can be made with six laser beams, propagating e.g. in
+three orthogonal directions, and w ill reduce the velocity in any direction of space , thus
+reducing the temperature of an atomic cloud , typically to the ~°K range. It is to be
+noted that optical cooling does not confine atoms, so that a magnetic field is typically
+employed to prevent the d ispersion of the atomic cloud. The combination of magnetic
+confinement with a laser cooling mechanism is commonly known as magneto -optic trap
+(MOT).
+
+Evaporative cooling, delta-kick cooling, delta-kick collimation
+The further cooling needed to obtain ul tra-cold atoms from cold ones can be
+accomplished by s everal different techniques. In evaporative cooling the overall
+temperature of the cloud is reduced by removing the hottest atoms: this is accomplished
+by decreasing the trap depth, so that the atoms with the highest kinetic energy leave it.
+The technique is analogous to cooling a hot  cup of coffee by blowing on it, and the price
+to be paid is a reduction in the number of atoms.
+In delta-kick cooling the harmonic potential of the confining trap is repeatedly switched
+on and off.  During the switched-off intervals the atomic cloud expands, and atoms with
+differing momentum separate in space. A hotter atom, i.e. one with higher momentum,
+will travel further afield, and when the confining potential is switched-on back again it will
+receive a stronger kick directed towards the center of the trap. If the pulse width is set to
+
+42
+an appropriate value determined by the free expansion rate, the atomic momentum will
+be changed by an amount proportional to the distanc e the atom has traveled, and all the
+atoms will be nearly at  rest after the kick.  In practice, several factors prevent this ideal
+behaviour and the procedure must be repeated : the process is therefore slow, but the
+advantage is the number of atoms remains approximately constant.  Variations on the
+delta-kick technique theme allow controlling the expansion dynamics of an atomic cloud,
+keeping it collimated.
+
+Optical Bloch lattices
+Optical lattices are created by the interference of counter-propagating laser beams: the
+resulting standing wave induces an AC-Stark shift in atoms and acts  as a periodic atomic
+trap. Optical lattices are very versatile  tools, easily tuned via the laser setup , and allow
+unprecedented control over the quan tum state of the atoms : as a  consequence, they
+gave rise to a thriving line of research. Atoms loaded from a BEC  are densely packed in
+an optical lattice, and in practice all of them occupy the  lowest Bloch band  – hence the
+moniker. By rapidly switching on and off an optical lattice,  the atomic wavefunction can
+be split, and a condensate can thus be divided in two. If the frequencies of the counter-
+propagating laser beams are slightly detuned a travelling wave is generated  instead of
+the standing one , and an optical Bloch lattice can be employed to transport a Bose -
+Einstein condensate, e.g. from the atomic cooling stages into an interferometer, and then
+along it.
+
+Large momentum transfer atom optics, high recoil laser pulse, double Raman transition
+Several techniques are being develop ed to enhance the sensitivity of a CAI
+interferometer by increasing the separation of the atomic wavepackets , which  can be
+accomplished by implementing large momentum transfer at the atomic beam splitters: if
+N photon momenta are transferred, an N -fold increase in sensitivity follows28. A quick list
+of possibilities  to implement such high -recoil laser pulses includes double Raman
+transitions, double Bragg diffraction, high -order Bragg diffraction, sequences of Bragg
+pulses, Bloch oscillations in accelerat ed optical lattices, combination of Bloch oscillation
+and high -order Bragg pulses, and frequency -swept rapid adiabatic passage 29. Different
+levels of performances have been reached, using techniques at different maturity levels.
+A double Raman transition make use of two pairs of counter -propagating pulses for each
+of the three transitions necessary to have a /2--/2 interferometer 30: at each beam
+splitter an atom interacts with four laser beams, which drive two simultaneous Raman
+transitions and achieve a symmetric momentum -space splitting of 4ℏ𝑘 instead of 2ℏ𝑘,
+thus doubling the interferometer area and thus its sensitivity . By using multi-pulse
+sequence technique s the  scheme can  be extended to perform a 4𝑁ℏ𝑘 momentum
+splitting.
+
+28 “Taking atom interferometric quantum sensors from the laboratory to real -world applications”, Kai Bongs et
+al, Nat. Rev. Phys. Vol.1, 731–739 (2019)
+https://www.nature.com/articles/s42254-019-0117-4?proof=true&draft=collection%3Fproof%3Dtrue
+
+29 “High-accuracy inertial measurements with co ld-atom sensors” , R. Geiger et al., AVS Quantum Sci. 2,
+024702 (2020), https://avs.scitation.org/doi/10.1116/5.0009093
+
+30 “Enhancing the Area of a Raman Atom Interferometer Using a Versatile Double-Diffraction Technique”, T.
+Lévèque, A. Gauguet, F. Michaud, F. Pereira Dos Santos, and A. Landragin, Phys. Rev. Lett. 103, 080405, 2009
+https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.103.080405
+
+43
+7 Conclusions
+An analysis of the published peer-reviewed scientific literature evidences a widespread
+consensus that satellite-based gravity missions to be deployed within the next ~10 years
+will make use of enhanced versions of already deployed technologies. In the meanwhile,
+cold atom interferometry will start to b e employed in space for dedicated scientific
+missions aimed at testing fundamental assumptions of theoretical physics: in this regard,
+several proposals have been elaborated, which are now at different implementation
+stages. Conversely, the use of cold atom interferometry for an Earth Observation gravity
+mission aimed at geophysics and geodesy scientific objectives with concrete applications
+is to be considered a long -term challenge, and  the scientific community working on
+space-bound CAI-based gravity sensing has agreed on the following points:
+ Ultra-cold atoms in Bose-Einstein condensates (BEC) must be used, and all the most
+advanced techniques for controlling and detecting the atomic wavefunction (e.g. sub-
+n°K temperatures, delta -kick cooling, optical lattices, interleaving, point -source
+interferometry) will be required, which have never been employed simultaneously in
+laboratory experiments. Therefore, any available assessment on the performance of a
+CAI-based solution for satellite -based gravity sensing is founded on theoretical
+assumptions and numerical simulations.
+ The deployment of CAI gravity sensors for EO will require the support of conventional
+technologies to build subsystems and devices (e.g. tilting mirrors, gyroscopes,
+attitude and orbit control systems) with functional specification which are, to different
+degrees, beyond the present state of the art . In other terms, several “classical”
+technologies must improve and enhance their performances beyond what is presently
+doable to allow the exploitation of the expected performances o f a CAI-based
+solution.
+ The actual advantages of CAI -based sensors in terms of gravity field recovery ( e.g.
+the geoid error hei ght at the various spherical degrees , the spatial and temporal
+resolution, etc .) have not  yet been clearly assessed by detailed mission simulation
+scenarios. Further work and interdisciplinary collaborations  are needed, involving not
+only technology experts but also the scientific communities who make actual use of
+satellite data to develop models of geophysics and geodesy phenomena.
+ Hybrid accelerometers, in which CAI is leveraged to provide a flat noise spectrum and
+a high bias stability to conventional accelerometers, are presently being developed
+and could possibly be employed in a shorter timescale . However, available
+simulations show that they will have an appreciable impact  on the gravity field
+recovery performa nce only if they can reach a quasi-ideal behaviour. Although in
+principle possible in a microgravity environment, the actual achievability of the
+required performances level is very hard to demonstrate via experiments conducted
+in the presence of gravity.
+In the international scene, the USA is playing an important role in the use of CAI for
+scientific missions aimed at fundamental physics, and has deployed and successfully
+operated a dedicated Cold Atom Laboratory in the ISS  where a BEC has recently been
+generated (see e.g. https://coldatomlab.jpl.nasa.gov/). However, only low -key
+preparatory activities seem to be pursued in view of the possible use of CAI for a gravity
+EO mission: for example, gravity gradiometers prototypes are being developed by NASA-
+funded projects at CalTech and at Stanford, via the start -up AOSense31, although some
+of these groups seem not to have been active for more than 10 years. A detailed v ision
+
+31 https://quantum.jpl.nasa.gov/?page_id=133 (2007);
+“Towards a space -borne quantum gravity gradiometer: progress in laboratory demonstration ” Nan Yu, James
+M. Kohel, James R. Kellogg, and Lute Maleki, Jet Propulsion Laboratory  and California Institute of Technology,
+https://www.semanticscholar.org/paper/Progress-towards-a-space-borne-quantum-gravity-Yu-
+Kohel/761c9b17e55a08ac747159f32e6329282ddb68f0; (2004)
+NASA-Goddard & AOSense: CAI gravity gradiometer https://www.nasa.gov/feature/goddard/2018/nasa-
+industry-team-creates-and-demonstrates-first-quantum-sensor-for-satellite-gravimetry (2018)
+
+44
+for the future was expected at the “ 2020 NASA Fundamental Physics and Quantum
+Technology Workshop”  (see https://www.aps.org/units/damop/nasa-workshop.cfm)
+which should have taken place on  April 5 -7, 2020  in Ventura (CA), but the event has
+been postponed due to the Coronavirus emergency.
+With regards to China, d espite all the support the government is giving to quantum
+technologies (including satellite-based quantum communications ) and the publicity
+usually given to its quantum projects, we have not been able to find any information on
+activities or plans for a satellite-based CAI gravimetry  mission. However, i t must be
+acknowledged that several Chinese research institutions have in the last years reached
+the capability to obtain ultra -cold atoms at p°K temperatures, and an atomic cooling
+experiment seems to be planned for the Chinese Space Station (expected to launch in
+2022), with a target temperature of below 100 p°K32,33. In addition, an analysis of patent
+applications on cold atom interferometry indicated that China has acquired significant
+capabilities in the field, especially about the related enabling technologies 34.
+We emphasise that  the above statements on China and the USA are based solely on an
+analysis of the available published scientific literature. A complete picture about their
+plans for possible gravimetry mission s exploiting cold atom interferometry would require
+access to policy sources and preparatory scientific debates, which – if existent - are likely
+to be outside the public domain.
+The ESA has several running programmes which foresee the use of CAI in the framework
+of scientific missions: coherently, it is pursuing a detailed technology development
+roadmap, which includes support for enabling technologies, development of
+accelerometers and gravity gradiometers, and mission simulations. ESA is also analysing
+the fe asibility of a CAI accelerometer for  an atmospheric drag  mission based on a
+CubeSat, with the objective of studying thermospheric density and winds . In addition to
+technology testing, the scientific results of this mission will have important implications
+for any future gravity mission, which w ill unavoidably r ely on low -flying satellite s.
+Additionally, ESA has highlighted the opportunity of establishing a dedicated microgravity
+laboratory, where CAI techniques to be used in space could be tested in gravity
+conditions similar to the ones in which they will actually be employed.
+As we have seen, several European national space agencies are funding research projects
+which involve the use of CAI in space. T he French CNES is proposing to make use of CAI
+in its “Programme Physique F ondamentale et Mesures de Précision ”, while the German
+DLR and the Italian ASI are funding research activities on space -based CAI gravity
+sensing. Indeed, a wide scientific community agrees that a CAI technology demonstration
+science mission to be deployed in the next ~5 years would be an important milestone ,
+whose result s will have important implications for the definition of a full -fledged CAI
+gravity mission. The EU could consider providing support to such endeavour, which will
+contribute to pave the way for a CAI gravimetry Earth Observation mission.
+
+32 “The Emergence of Pico -Kelvin Physics”, Xuzong Chen and Bo Fan, Reports on Progres s in Physics, Volume
+83, Number 7, 2020, https://arxiv.org/ftp/arxiv/papers/2005/2005.01304.pdf
+
+33 “Comparison of different techniques in optical trap for generating picokelvin 3D atom cloud in microgravity”,
+Hepeng Yao, Tian Luan, Chen Li, Yin Zhang, Zhaoyuan Ma, Xuzong Chen, Optics Communications, Volume 359,
+Pages 123-128, 2016, https://www.sciencedirect.com/science/article/abs/pii/S0030401815301449?via%3Dihub
+
+34 “Patent analysis of selected quantum technologies”, M. Travagnin, 2019, JRC115251
+https://ec.europa.eu/jrc/en/publication/patent-analysis-selected-quantum-technologies
+
+45
+References
+[1] “Cold atom interferometry sensors: physics and technologies. A scientific background for EU policymaking”,
+M. Travagnin, JRC121223, 2020; https://ec.europa.eu/jrc/en/publication/cold-atom-interferometry-sensors-
+physics-and-technologies
+
+[2] “Cold atom interferometry for inertial navigation sensors. Technology assessment: space and defence
+applications”, M. Travagnin, JRC121225, 2020; (Sensitive, limited distribution)
+
+[3] “The ESA Earth Observation Programmes Activities for the Preparation of the Next Generation Gravity
+Mission”, L. Massotti et at., Guidance, Navigation, and Control Conference, 2013
+https://www.researchgate.net/publication/268469839_The_ESA_Earth_Observation_Programmes_Activities_for
+_the_Preparation_of_the_Next_Generation_Gravity_Mission
+
+[4] “Lectures on gravity field basics and GRACE”, R. Forsberg, ESA Cryosphere Training Course, 2016
+http://seom.esa.int/cryotraining2016/files/CTC16/Day4/3_Forsberg_grace_sep2016%202.pdf
+
+[5] “Progress in satellite gravity recovery from implemented CHAMP,  GRACE and GOCE and future GRACE -FO
+missions”, Zheng Wei et al., Geodesy and Geodynamics, Vol. 6, No. 4, 2015
+https://www.sciencedirect.com/science/article/pii/S1674984715000506
+
+[6] “Next Generation Gravity Mission”, Stefano Cesare and Gianfranco Sechi, Space Technology Library, Vol.
+31, 2013; https://link.springer.com/chapter/10.1007/978-1-4614-4541-8_20
+
+[7] “Science and User Needs for Observing Global Mass Transport to Understand Global Change and to Benefit
+Society”, R. Pail et al., Surv. Geophys. 36, 2015; https://link.springer.com/article/10.1007/s10712-015-9348-9
+
+[8] “ESA’s next ‑generation gravity mission concepts”, R. Haagmans et al., R endiconti Lincei. Scienze Fisiche e
+Naturali, Rend. Fis. Acc. Lincei, 2020 ; https://link.springer.com/article/10.1007/s12210-020-00875-0
+
+[9] “GOCE gradiometer – a guide for users”, C. Stummer et al, FGS workshop, 2008;
+http://www.fs.wettzell.de/veranstaltungen/fgs/workshop2008/poster/FGS2008_Stummer.pdf
+
+[10] “Goce gravity mission”, ESA publication office, 2006; http://www.esa.int/esapub/br/br209/br209.pdf
+
+[11] “GOCE gravitational gradiometry”, Reiner Rummel, Weiyong Yi, and Claudia Stummer, Journal of Geodesy
+Vol. 85, No. 777, 2011; https://link.springer.com/article/10.1007/s00190-011-0500-0
+
+[12] “The GRACE Gravity Sensor System”,    Björn Frommknecht et al., System Earth via Geodetic -Geophysical
+Space Techniques, 105-118, 2010; https://link.springer.com/chapter/10.1007/978-3-642-10228-8_9
+
+[13] “Gravitation and Geodesy with Inertial Sensors, from Ground to Space”, P. Touboul et al., J ournal of
+aerospace Lab, Issue 12, 2016;
+http://www.aerospacelab-journal.org/sites/www.aerospacelab-journal.org/files/AL12-11.pdf
+
+[14] “A new generation of ultra -sensitive electrostatic accelerometers for GRACE Follow -on and towards the
+next generation gravity missions”, B. Christophe et al., Acta Astronautica 117, 1 -7, 2015;
+https://www.sciencedirect.com/science/article/abs/pii/S0094576515002660
+
+[15] “The measurement of surface gravity”, David Crossley et al., Reports on Progress in Physics, Vol. 76,
+No. 046101, 2013; https://iopscience.iop.org/article/10.1088/0034-4885/76/4/046101
+
+[16] “Status of Development of the Future  Accelerometers for Next Generation Gravity Missions”, B. Christophe
+et al., International Symposium on Adv ancing Geodesy in a Changing World, pp. 85 -89, 2018;
+https://link.springer.com/chapter/10.1007/1345_2018_42
+
+[17] “Cold Atom Interferometers for Future Inertial Sensors and Gradiometers ”, O. Carraz, Alpbach Summer
+School presentation, 2019; https://www.summerschoolalpbach.at/docs/2019/lectures/Carraz_QT_ESA.pdf
+
+[18] “Impact of a novel hybrid accelerometer on satellite gravimetry performance”, P. Abrykosov et al.,
+Advances in Space Research 63, 3235–3248, 2019; https://hal.archives-ouvertes.fr/hal-02315304/document
+
+[19] “The gravity field and the Global Geodetic Observing System (GGOS)”, Journal of Geodynamics Vol. 40,
+No. 4-5, 387-393, 2005;
+https://www.sciencedirect.com/science/article/abs/pii/S0264370705000700?via%3Dihub
+
+[20] “Correlated atom accelerometers for mapping the Earth gravity field from Space”, T. Lévèque et al.,
+Proceedings Volume 11180, International Conference on Space Optics — ICSO 2018, 111800W, 2019;
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11180/111800W/Correlated-atom-
+accelerometers-for-mapping-the-Earth-gravity-field-from/10.1117/12.2535951.full?SSO=1
+
+46
+[21] “Observation of Bose –Einstein condensates in an Earth -orbiting research lab”, David C. Aveline et al.,
+Nature, Vol. 582, pages 193–197, 2020; https://www.nature.com/articles/s41586-020-2346-1
+https://www.researchgate.net/publication/342102533_Observation_of_Bose-
+Einstein_condensates_in_an_Earth-orbiting_research_lab
+
+[22] “Space -borne Bose -Einstein condensation for precision interferometry”, D. Becker et al ., Nature
+volume 562, pages 391–395, 2018; https://www.nature.com/articles/s41586-018-0605-1
+https://arxiv.org/pdf/1806.06679.pdf
+
+[23] “The Future of the Satellite Gravimetry after the GOCE Mission”, P. Silvestrin et al., International
+Association of Geodesy Symposia, Vol. 136, 223-230, 2012;
+https://link.springer.com/chapter/10.1007%2F978-3-642-20338-1_27
+
+[24] “A spaceborne gravity gradiometer concept based on cold atom interferometers for measuring Earth’s
+gravity field”, O. Carraz et al, Microgravity Science and Technology, Vol. 26, 2014;
+https://link.springer.com/article/10.1007/s12217-014-9385-x
+
+[25] “Simulation -based evaluation of a cold atom interferometry gradiometer concept for gravity field
+recovery”, K. Douch et al., Advances in Space Research 61 1307–1323, 2018
+https://hal.sorbonne-universite.fr/hal-01826234/document
+
+[26] “Concept study and preliminary design of a cold atom interferometer for space gravity gradiometry”, A.
+Trimeche et al., Class. Quantum Grav. 36, 215004, 2019
+https://iopscience.iop.org/article/10.1088/1361-6382/ab4548
+
+[27] “MOCASS: A Satellite Mission Concept Using Cold Atom Interferometry for Measuring the Earth Gravity
+Field”, F. Migliaccio et al., Surveys in Geophysics, 40, 2019
+https://link.springer.com/article/10.1007/s10712-019-09566-4
+
+[28] “Taking atom interferometric quantum sensors from the laboratory to real -world applications”, Kai Bongs
+et al, Nat. Rev. Phys. Vol.1, 731–739, 2019
+https://www.nature.com/articles/s42254-019-0117-4?proof=true&draft=collection%3Fproof%3Dtrue
+
+[29] “High-accuracy inertial measurements with cold -atom sensors”, R. Geiger et al., AVS Quantum Sci. 2,
+024702 (2020), https://avs.scitation.org/doi/10.1116/5.0009093
+
+[30] “Enhancing the Area of a  Raman Atom Interferometer Using a Versatile Double -Diffraction Technique”, T.
+Lévèque, A. Gauguet, F. Michaud, F. Pereira Dos Santos, and A. Landragin, Phys. Rev. Lett. 103, 080405, 2009
+https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.103.080405
+
+[31] https://quantum.jpl.nasa.gov/?page_id=133, 2007;
+Jet Propulsion Laboratory and California Institute of Technology : “ Towards a space -borne quantum gravity
+gradiometer: progress in laboratory demonstration”,  Nan Yu et al., 2004
+https://www.semanticscholar.org/paper/Progress-towards-a-space-borne-quantum-gravity-Yu-
+Kohel/761c9b17e55a08ac747159f32e6329282ddb68f0;
+NASA-Goddard & AOSense: CAI gravity gradiometer https://www.nasa.gov/feature/goddard/2018/nasa-
+industry-team-creates-and-demonstrates-first-quantum-sensor-for-satellite-gravimetry, 2018
+
+[32] “The Emergence of Pico-Kelvin Physics”, Xuzong Chen and Bo Fan, Reports on Progress in Physics, Volume
+83, Number 7, 2020, https://arxiv.org/ftp/arxiv/papers/2005/2005.01304.pdf
+
+[33] “Comparison of different techniques in optical trap for generating picokelvin 3D atom cloud in
+microgravity”, Hepeng Yao, Tian Luan, Chen Li, Yin Zhang, Zhaoyuan Ma, Xuzong Chen, Optics
+Communications, Volume 359, Pages 123-128, 2016
+https://www.sciencedirect.com/science/article/abs/pii/S0030401815301449?via%3Dihub
+
+[34] “Patent analysis of selected quantum technologies”, M. Travagnin, JRC115251, 2019
+https://ec.europa.eu/jrc/en/publication/patent-analysis-selected-quantum-technologies
+
+47
+List of abbreviations and definitions
+
+A-O noise:  Atmospheric-Oceanic noise
+ADS:   Amplitude Spectral Density
+AOCS:  Attitude and Orbit Control System
+ASI:   Agenzia Spaziale Italiana
+BEC:   Bose-Einstein Condensate (or Condensation)
+CAI:   Cold Atom Interferometry
+CGE:   Cumulative Geoid Error
+CHAMP:  Challenging Minisatellite Payload
+CNES:   Centre national d'études spatiales
+DKC:   Delta Kick Cooling
+DLR:   Deutschen Zentrum für Luft und Raumfahrt (German Aerospace Center)
+EO:   Earth Observation
+ESTEC:  European Space Research and Technology Centre (of ESA)
+GIA:   Glacial Isostatic Adjustment
+GGT:   Gravity Gradient Tensor
+GOCE:  Gravity field and steady-state Ocean Circulation Explorer
+GRACE:  Gravity Recovery And Climate Experiment
+GRACE-FO:  GRACE follow-on
+GRICE:  Gradiométrie à Interféromètres quantiques Corrélés pour l’Espace
+IMB:   Ice Mass Balance
+IUGG:   International Union of Geodesy and Geophysics
+LL-SST:  Low-Low Satellite-Satellite Tracking
+LNE:   Laboratoire National de Métrologie et d'Essais
+MOCASS:  Mass Observation with Cold Atom Sensors in Space
+MOT:   Magneto-Optical Trap
+NGGM:  Next Generation Gravity Mission
+ONERA:  Office National d'Etudes et de Recherches Aérospatiales
+PSI:   Point Source interferometry
+PSD:   Power Spectral Density
+SGG              Satellite gravity gradiometry
+SH:   Spherical Harmonic
+SL:   Sea Level
+SST               Satellite-to-satellite tracking
+SWaP:  Size, Weight and Power
+SYRTE:  Systèmes de Référence Temps-Espace
+ZARM:  Zentrum für Angewandte Raumfahrttechnologie und Mikrogravitation
+(Center of Applied Space Technology and Microgravity)
+
+GETTING IN TOUCH WITH THE EU
+In person
+All over the European Union there are hundreds of Europe Direct information centres. You can find the
+address of the centre nearest you at: https://europa.eu/european-union/contact_en
+On the phone or by email
+Europe Direct is a service that answers your questions about the European Union. You can contact this
+service:
+- by freephone: 00 800 6 7 8 9 10 11 (certain operators may charge for these calls),
+- at the following standard number: +32 22999696, or
+- by electronic mail via: https://europa.eu/european-union/contact_en
+FINDING INFORMATION ABOUT THE EU
+Online
+Information about the European Union in all the official languages of the EU is available on the Europa
+website at: https://europa.eu/european-union/index_en
+EU publications
+You can download or order free and priced EU publications from EU Bookshop at:
+https://publications.europa.eu/en/publications. Multiple copies of free publications may be obtained by
+contacting Europe Direct or your local information centre (see https://europa.eu/european-
+union/contact_en).
+
+KJ-NA-30371-EN-N
+doi:10.2760/225071
+ISBN 978-92-76-21686-5
