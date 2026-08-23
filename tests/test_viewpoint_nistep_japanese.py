@@ -124,6 +124,26 @@ class NistepJapaneseCollectionTests(unittest.TestCase):
         self.assertTrue(result.proxy_cache)
         self.assertTrue(result.oai_cache)
 
+    def test_acquire_uses_repository_summary_when_full_pdf_proxy_is_unavailable(self) -> None:
+        candidate = nistep.Candidate(
+            "DP", "242", "2025-11-01", "博士人材調査", "https://nistep.repo.nii.ac.jp/records/2000273", "2000273"
+        )
+        oai = "https://nistep.repo.nii.ac.jp/record/2000273/files/NISTEP-DP242-FullJ.pdf"
+        with tempfile.TemporaryDirectory() as temp_dir, patch.object(
+            nistep, "fetch_indicator_html_report", return_value=("", "")
+        ), patch.object(
+            nistep, "fetch_official_release_page", return_value=("", "")
+        ), patch.object(
+            nistep,
+            "fetch_jina",
+            side_effect=[oai, RuntimeError("full PDF proxy unavailable"), "official summary evidence " * 40],
+        ), patch.object(nistep, "probe_mirror", return_value=""):
+            result = nistep.acquire(candidate, "", Path(temp_dir))
+        self.assertEqual(result.status, "官方仓储概要PDF代理文本已保存")
+        self.assertIn("概要PDF", result.source)
+        self.assertTrue(result.proxy_cache)
+        self.assertTrue(result.pdf_url.endswith("NISTEP-DP242-FullJ.pdf"))
+
     def test_acquire_falls_back_to_release_summary_when_repository_has_no_pdf(self) -> None:
         candidate = nistep.Candidate(
             "RM", "284", "2018-08-01", "地域科学技術指標2018", "http://hdl.handle.net/11035/x", "2000084"
@@ -140,9 +160,10 @@ class NistepJapaneseCollectionTests(unittest.TestCase):
 
     def test_status_summary_reports_official_html_separately(self) -> None:
         formatter = getattr(nistep, "nistep_status_summary", lambda *_: "")
-        summary = formatter(Counter({"官方PDF已保存并校验": 2, "官方HTML版报告已保存": 3, "官方发布页摘要已保存": 4, "获取失败": 1}))
+        summary = formatter(Counter({"官方PDF已保存并校验": 2, "官方HTML版报告已保存": 3, "官方发布页摘要已保存": 4, "官方仓储概要PDF代理文本已保存": 1, "获取失败": 1}))
         self.assertIn("官方HTML版报告：3项", summary)
         self.assertIn("官方发布页摘要：4项", summary)
+        self.assertIn("仓储概要PDF代理文本：1项", summary)
         self.assertIn("失败：1项", summary)
 
     def test_crds_nistep_comparison_preserves_role_and_asset_boundaries(self) -> None:

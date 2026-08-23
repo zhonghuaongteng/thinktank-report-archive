@@ -58,6 +58,12 @@ def build_progress(research_root: Path) -> dict[str, object]:
         "local_assets": local_assets,
         "light_only": len(catalog) - local_assets,
         "explicit_failures": sum(1 for row in catalog if row.get("原始资产状态", "").strip() == "获取失败"),
+        "partial_assets": sum(
+            1
+            for row in catalog
+            if row.get("本地原始资产路径", "").strip()
+            and row.get("原始资产状态", "") in {"官方发布页摘要已保存", "官方仓储概要PDF代理文本已保存"}
+        ),
         "fulltext_queue": _queue_count(research_root / "70_定点补源优先队列.csv"),
         "catalog_queue": _queue_count(research_root / "72_轻量目录扩展优先队列.csv"),
         "china_catalog": china_catalog,
@@ -82,6 +88,7 @@ def render_markdown(progress: dict[str, object], generated_at: str) -> str:
         f"- 资产密度：{density:.2f}%；该指标只反映本地落盘比例，不等同于任务完成率。",
         f"- 真实待补队列：{true_queue}；其中定点全文{int(progress['fulltext_queue'])}、轻量目录扩展{int(progress['catalog_queue'])}。",
         f"- 明确获取失败：{int(progress['explicit_failures'])}条。",
+        f"- 仅摘要或概要资产：{int(progress.get('partial_assets', 0))}条；具备本地检索入口，完整全文仍按具体项目证据缺口触发。",
     ]
     china_catalog = int(progress.get("china_catalog", 0))
     if china_catalog:

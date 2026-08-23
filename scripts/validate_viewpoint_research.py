@@ -575,9 +575,10 @@ def main() -> None:
     assert len(nistep_assets) == 283, len(nistep_assets)
     assert sum(r["本地状态"] == "官方PDF已保存并校验" for r in nistep_assets) == 150
     assert sum(r["本地状态"] == "官方仓储PDF代理全文已保存" for r in nistep_assets) == 100
+    assert sum(r["本地状态"] == "官方仓储概要PDF代理文本已保存" for r in nistep_assets) == 1
     assert sum(r["本地状态"] == "官方HTML版报告已保存" for r in nistep_assets) == 6
     assert sum(r["本地状态"] == "官方发布页摘要已保存" for r in nistep_assets) == 26
-    assert sum(r["本地状态"] == "获取失败" for r in nistep_assets) == 1
+    assert sum(r["本地状态"] == "获取失败" for r in nistep_assets) == 0
     assert sum(r["报告类型"] == "NISTEP正式报告" for r in nistep_assets) == 48
     assert sum(r["报告类型"] == "政策研究" for r in nistep_assets) == 1
     assert sum(r["报告类型"] == "调查资料" for r in nistep_assets) == 111
@@ -595,7 +596,14 @@ def main() -> None:
         and len(r["SHA256"]) == 64
         for r in nistep_assets if r["本地状态"] != "获取失败"
     )
-    assert all(not r["本地原始资产"] and not r["SHA256"] for r in nistep_assets if r["本地状态"] == "获取失败")
+    dp242 = next(r for r in nistep_assets if r["报告ID"] == "C-NISTEP-DP242-6EEE0740")
+    assert dp242["本地状态"] == "官方仓储概要PDF代理文本已保存"
+    assert dp242["官方PDF"] == "https://nistep.repo.nii.ac.jp/record/2000273/files/NISTEP-DP242-FullJ.pdf"
+    assert dp242["提取文本字符数"] == "15308"
+    assert dp242["SHA256"] == "6f23ae64b4283a1757a5eafa204d85632ec9b7de690c14c4726088f4680b6eb7"
+    assert (root / "03_证据底稿" / "网页快照" / "C-NISTEP-DP242-6EEE0740.md").exists()
+    assert (root / "03_证据底稿" / "网页文本" / "C-NISTEP-DP242-6EEE0740.txt").exists()
+    assert (root / "03_证据底稿" / "网页转写" / "C-NISTEP-DP242-6EEE0740.md").exists()
     assert len(rows(root / "57_NISTEP日文科技与中国主题索引.csv")) == 1601
     assert len(rows(root / "58_NISTEP日文科技与中国复用矩阵.csv")) == 272
     comparison = rows(root / "59_CRDS_NISTEP科技主题与机构功能对照.csv")
@@ -1072,7 +1080,7 @@ def main() -> None:
     assert sum(int(r["网页归档字节数"]) for r in nasem_selected) == 7243099
     assert sum(int(r["清洗文本字符数"]) for r in nasem_selected) == 6132897
     progress_text = (root / "210_本地资料库实时进度看板.md").read_text(encoding="utf-8")
-    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：1995条", "仅目录与官方入口：8404条", "真实待补队列：0", "明确获取失败：1条", "中国关联目录材料：712条"):
+    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：1996条", "仅目录与官方入口：8403条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：712条"):
         assert marker in progress_text
     institution_progress = rows(root / "211_机构采集进度.csv")
     assert len(institution_progress) == 46

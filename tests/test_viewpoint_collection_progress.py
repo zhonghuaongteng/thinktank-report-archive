@@ -35,6 +35,7 @@ class ViewpointCollectionProgressTests(unittest.TestCase):
             self.assertEqual(progress["local_assets"], 1)
             self.assertEqual(progress["light_only"], 2)
             self.assertEqual(progress["explicit_failures"], 1)
+            self.assertEqual(progress["partial_assets"], 0)
             self.assertEqual(progress["fulltext_queue"], 0)
             self.assertEqual(progress["catalog_queue"], 0)
             self.assertEqual(progress["institutions"][0], {"institution": "Alpha", "catalog": 2, "local_assets": 1, "light_only": 1})
@@ -45,6 +46,7 @@ class ViewpointCollectionProgressTests(unittest.TestCase):
             "local_assets": 2,
             "light_only": 8,
             "explicit_failures": 0,
+            "partial_assets": 1,
             "fulltext_queue": 0,
             "catalog_queue": 0,
             "institutions": [],
@@ -53,6 +55,7 @@ class ViewpointCollectionProgressTests(unittest.TestCase):
         self.assertIn("资产密度：20.00%", output)
         self.assertIn("不等同于任务完成率", output)
         self.assertIn("真实待补队列：0", output)
+        self.assertIn("仅摘要或概要资产：1", output)
 
 
 if __name__ == "__main__":

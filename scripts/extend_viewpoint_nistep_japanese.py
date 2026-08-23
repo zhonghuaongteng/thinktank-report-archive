@@ -408,7 +408,21 @@ def acquire(candidate: Candidate, mirror_url: str, cache_dir: Path) -> Acquisiti
                     result.status = "官方PDF已保存并校验"
                     return result
             time.sleep(3.1)
-            proxy_text = fetch_jina(f"https://r.jina.ai/{result.pdf_url}", timeout=180)
+            try:
+                proxy_text = fetch_jina(f"https://r.jina.ai/{result.pdf_url}", timeout=180)
+            except Exception:
+                summary_url = re.sub(r"-FullJ\.pdf$", "-SummaryJ.pdf", result.pdf_url, flags=re.I)
+                if summary_url == result.pdf_url:
+                    raise
+                proxy_text = fetch_jina(f"https://r.jina.ai/{summary_url}", timeout=180)
+                if len(proxy_text) < 400:
+                    raise RuntimeError(f"thin repository summary PDF proxy text: {len(proxy_text)}")
+                proxy_cache = cache_dir / f"{stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)}.txt"
+                proxy_cache.write_text(proxy_text, encoding="utf-8")
+                result.proxy_cache = str(proxy_cache)
+                result.source = "NISTEP官方仓储概要PDF的Jina代理文本；完整报告PDF入口已核验"
+                result.status = "官方仓储概要PDF代理文本已保存"
+                return result
             if len(proxy_text) < 400:
                 raise RuntimeError(f"thin repository PDF proxy text: {len(proxy_text)}")
             proxy_cache = cache_dir / f"{stable_report_id(candidate.report_type, candidate.number, candidate.landing_url)}.txt"
@@ -450,6 +464,7 @@ def nistep_status_summary(statuses: Counter) -> str:
         f"官方PDF保存：{statuses['官方PDF已保存并校验']}项；"
         f"同版PDF关联：{statuses['关联既有官方PDF']}项；"
         f"仓储PDF代理全文：{statuses['官方仓储PDF代理全文已保存']}项；"
+        f"仓储概要PDF代理文本：{statuses['官方仓储概要PDF代理文本已保存']}项；"
         f"官方HTML版报告：{statuses['官方HTML版报告已保存']}项；"
         f"官方网页全文：{statuses['官方网页全文已保存']}项；"
         f"官方发布页摘要：{statuses['官方发布页摘要已保存']}项；"
@@ -494,7 +509,7 @@ def build_crds_nistep_comparison(crds_rows: list[dict[str, str]], nistep_rows: l
             "网页或代理全文": str(
                 statuses["官方仓储PDF代理全文已保存"] + statuses["官方HTML版报告已保存"] + statuses["官方网页全文已保存"]
             ),
-            "待补全文": str(statuses["获取失败"] + statuses["官方发布页摘要已保存"]), "使用边界": boundary,
+            "待补全文": str(statuses["获取失败"] + statuses["官方发布页摘要已保存"] + statuses["官方仓储概要PDF代理文本已保存"]), "使用边界": boundary,
         }
 
     output: list[dict[str, str]] = []
