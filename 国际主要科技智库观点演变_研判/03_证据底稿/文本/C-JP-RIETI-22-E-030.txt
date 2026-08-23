@@ -1,6 +1,6 @@
 %1
 RIETI Discussion Paper Series 22-E-030
-Government R&D spending as a driving force of technology 
+Government R&D spending as a driving force of technology
 convergence
 CHEN, Zhu
 Tokyo University
@@ -9,1366 +9,1366 @@ RIETI
 The Research Institute of Economy, Trade and Industry
 https://www.rieti.go.jp/en/
 
-RIETI Discussion Paper Series 22-E-030 
-April 2022 
-Government R&D spending as a driving force of technology convergence1 
- 
-Zhu Chen (University of Tokyo)   Kazuyuki Motohashi (RIETI) 
- 
-Abstract 
-This paper investigates the impact of government R&D spending on promoting technology convergence. We test 
-the hypotheses that a government funding program has a positive effect on technology convergence and the 
-effects are heterogenous on different participants (i.e., academic, and industrial inventors). To investigate this, 
-our empirical test applies the Advanced Sequencing Technology Program (ASTP) as one example. We develop 
-a novel dataset by linking the ASTP grantee information with the PATSTAT patent database. Based on this, we 
-create inventor-level characteristics to implement propensity score matching, selecting an appropriate control 
-group of inventors who are comparable to those enrolled in the ASTP. We then employ DiD models to evaluate 
-the impact of the program on the matched sample. The results confirm that the program is a driving force of 
-technology convergence. The findings also indicate that the program is more influential to industry inventors 
-than to their academic counterparts. Additionally, we conceptualize a ‘leverage effect’ of the program and show 
-it can attract many external industrial inventors. The work contributes to better understanding the role of a 
-government-funded program in encouraging convergence and providing implications fo r developing 
-convergence-related R&D programs in the future. 
- 
-Keywords: technology convergence, NIH program, policy analysis 
-JEL codes: O33, O38 
- 
-The RIETI Discussion Paper Series aims at widely disseminating research results in the form of professional 
-papers, with the goal of stimulating lively discussion. The views expressed in the papers are solely those of 
-the author(s), and neither represent those of the organization (s) to which the author(s) belong(s) nor the  
-Research Institute of Economy, Trade and Industry. 
- 
- 
- 
- 
-1  This study is conducted as a part of the Project “Research on innovation ecosystem formation processes” 
+RIETI Discussion Paper Series 22-E-030
+April 2022
+Government R&D spending as a driving force of technology convergence1
+
+Zhu Chen (University of Tokyo)   Kazuyuki Motohashi (RIETI)
+
+Abstract
+This paper investigates the impact of government R&D spending on promoting technology convergence. We test
+the hypotheses that a government funding program has a positive effect on technology convergence and the
+effects are heterogenous on different participants (i.e., academic, and industrial inventors). To investigate this,
+our empirical test applies the Advanced Sequencing Technology Program (ASTP) as one example. We develop
+a novel dataset by linking the ASTP grantee information with the PATSTAT patent database. Based on this, we
+create inventor-level characteristics to implement propensity score matching, selecting an appropriate control
+group of inventors who are comparable to those enrolled in the ASTP. We then employ DiD models to evaluate
+the impact of the program on the matched sample. The results confirm that the program is a driving force of
+technology convergence. The findings also indicate that the program is more influential to industry inventors
+than to their academic counterparts. Additionally, we conceptualize a ‘leverage effect’ of the program and show
+it can attract many external industrial inventors. The work contributes to better understanding the role of a
+government-funded program in encouraging convergence and providing implications fo r developing
+convergence-related R&D programs in the future.
+
+Keywords: technology convergence, NIH program, policy analysis
+JEL codes: O33, O38
+
+The RIETI Discussion Paper Series aims at widely disseminating research results in the form of professional
+papers, with the goal of stimulating lively discussion. The views expressed in the papers are solely those of
+the author(s), and neither represent those of the organization (s) to which the author(s) belong(s) nor the
+Research Institute of Economy, Trade and Industry.
+
+
+
+
+1  This study is conducted as a part of the Project “Research on innovation ecosystem formation processes”
 undertaken at the Research Institute of Economy, Trade and Industry (RIETI).
 
-1 
- 
-1. Introduction 
- 
-Technology convergence refers to the phenomenon of emerging overlapping trends 
-among at least two technological fields. Following Kodama’s (1995) seminal perspective, 
-which states that the combination of existing technologies could spawn novel ones, 
-techno logy convergence is considered as a source of innovation. Noteworthily, given the 
-complementary nature of contemporary general -purpose technologies (e.g., 
-nanotechnology, information technology, etc.), it is expectable that new technologies will 
+1
+
+1. Introduction
+
+Technology convergence refers to the phenomenon of emerging overlapping trends
+among at least two technological fields. Following Kodama’s (1995) seminal perspective,
+which states that the combination of existing technologies could spawn novel ones,
+techno logy convergence is considered as a source of innovation. Noteworthily, given the
+complementary nature of contemporary general -purpose technologies (e.g.,
+nanotechnology, information technology, etc.), it is expectable that new technologies will
 be developed through the form of convergence. Indeed, the concept of innovation -as-
-combination can be traced back to Schumpeter’s notion (1939): ‘… innovation combines 
-factors in a new way, or that it consists in carrying out new combinations.’ By 
-emphasizing innova tion as the sine qua non of economic development and firms as a 
-carrier of implementing innovation, he metaphorizes firms as human beings that are 
-constantly being born and destined to die. In the case of firms, they die as they are unable 
-to maintain the pace in innovating themselves and then will be eventually overturned by 
-others. For this reason, both policymakers and firm leaders (e.g., entrepreneurs) need to 
-keep an eye on technology convergence, as one of the roots of innovation, to promote 
-economic growth and stay ahead of the competition. 
- 
-Several researchers have laid the theoretical foundation for technological converg ence 
-and taxonomies (Curran and Leker, 2011; Karvonen and Kässi, 2013), while others 
-contributed to methodological development for either understanding the historical 
-patterns or forecasting the future convergence chances (Preschitschek et al., 2013; Ko et 
-al., 2014; Kim et al., 2014; Passing and Moehrle, 2015; Zhou et al., 2019; Eilers et al., 
-2019; Kim and Lee, 2017; Kim et al., 2019; Lee et al., 2020; Kim and Sohn, 2020). One 
-of the primary goals of comprehending technology convergence is to help business 
-entities to sense and exploit new opportunities, organize R&D activity, and survive in the 
-present dynamic business environment. On the other hand, as a source of innovation, the 
-convergence processes can give birth to innovation that can either create untapped niche 
-markets or transform people’s lives tremendously.  
- 
-The perceived importance of technology convergence, as well as the academic endeavors 
-to conceptualize and quantify it, may point to a more fundamental and pivotal question 
-of what drives technology convergence (Jeong and Lee, 2015; Sick and Bröring, 2021). 
-Drawing on Curran’s four -stage sequential process (science, tech nology, market, and 
+combination can be traced back to Schumpeter’s notion (1939): ‘… innovation combines
+factors in a new way, or that it consists in carrying out new combinations.’ By
+emphasizing innova tion as the sine qua non of economic development and firms as a
+carrier of implementing innovation, he metaphorizes firms as human beings that are
+constantly being born and destined to die. In the case of firms, they die as they are unable
+to maintain the pace in innovating themselves and then will be eventually overturned by
+others. For this reason, both policymakers and firm leaders (e.g., entrepreneurs) need to
+keep an eye on technology convergence, as one of the roots of innovation, to promote
+economic growth and stay ahead of the competition.
+
+Several researchers have laid the theoretical foundation for technological converg ence
+and taxonomies (Curran and Leker, 2011; Karvonen and Kässi, 2013), while others
+contributed to methodological development for either understanding the historical
+patterns or forecasting the future convergence chances (Preschitschek et al., 2013; Ko et
+al., 2014; Kim et al., 2014; Passing and Moehrle, 2015; Zhou et al., 2019; Eilers et al.,
+2019; Kim and Lee, 2017; Kim et al., 2019; Lee et al., 2020; Kim and Sohn, 2020). One
+of the primary goals of comprehending technology convergence is to help business
+entities to sense and exploit new opportunities, organize R&D activity, and survive in the
+present dynamic business environment. On the other hand, as a source of innovation, the
+convergence processes can give birth to innovation that can either create untapped niche
+markets or transform people’s lives tremendously.
+
+The perceived importance of technology convergence, as well as the academic endeavors
+to conceptualize and quantify it, may point to a more fundamental and pivotal question
+of what drives technology convergence (Jeong and Lee, 2015; Sick and Bröring, 2021).
+Drawing on Curran’s four -stage sequential process (science, tech nology, market, and
 industry), the growing cross-disciplinary research collaborations will erode the boundary
 
-2 
- 
-and reduce the distance between science areas, reaching technology convergence (Curran 
-and Leker, 2011). The framework implies that convergence ca n be driven by both 
-scientific push and market pull. Song et al. (2017) classify convergence drivers into four 
-categories: technological advancement, regulation and policy, market expectation, and 
-social environment change. While these works leave a clue f or investigating the drivers 
-of convergence, only a few studies have provided empirical evidence and explanations 
-on what triggers the convergence (Jeong and Lee, 2015, Caviggioli, 2016). Moreover, 
-previous research on this topic has yielded only broad conclusions, stating convergence 
-can be driven by closely related technological fields, a lower technology readiness level, 
-and a longer R&D time horizon. This study aims to contribute to this emerging research 
-field by empirically demonstrating and explaining government R&D spending as one of 
-the drivers of technology convergence, as well as by attempting to understand the 
-underlying mechanism by which a government -funded program can affect the behavior 
-of industrial and academic inventors, who are main pilla rs engaging in the convergence 
-process.  
- 
-The program we explore in this study is the Advanced Sequencing Technology Prog ram 
-(ASTP), (or the Advanced Sequencing Technology awards) funded by the US National 
-Human Genome Research Institute (NHGRI). While the program has been credited with 
-its contribution to the success of reducing the costs of genome sequencing, it is also noted 
-as an endeavor that constantly accentuated the multidisciplinary collaborations and 
-steered public -private partnerships (Hayden, 201 4). Several of the program’s distinctive 
-features, such as mandatory grantee meetings, also benefit knowledge transfer throug hout 
-the sectors and promote information dissemination to external entities. In these respects, 
-ASTP is a better match for our obje ctive of examining the effects of government R&D 
-investment in encouraging technological convergence.  
- 
-The remainder of this paper is organized as follows: in Section 2 we provide a review of 
-the literature on technology convergence and its drivers, and the hypotheses of the paper; 
-in Section 3 we provide an overview of the programme under study and illustrate the 
-process for constructing the dataset and the models for analyzing the ASTP; Section 4 is 
-dedicated to the illustration the empirical results and analysis of the impact of government 
-R&D spending as well as its implications; finally, we conclude the paper by summing up 
+2
+
+and reduce the distance between science areas, reaching technology convergence (Curran
+and Leker, 2011). The framework implies that convergence ca n be driven by both
+scientific push and market pull. Song et al. (2017) classify convergence drivers into four
+categories: technological advancement, regulation and policy, market expectation, and
+social environment change. While these works leave a clue f or investigating the drivers
+of convergence, only a few studies have provided empirical evidence and explanations
+on what triggers the convergence (Jeong and Lee, 2015, Caviggioli, 2016). Moreover,
+previous research on this topic has yielded only broad conclusions, stating convergence
+can be driven by closely related technological fields, a lower technology readiness level,
+and a longer R&D time horizon. This study aims to contribute to this emerging research
+field by empirically demonstrating and explaining government R&D spending as one of
+the drivers of technology convergence, as well as by attempting to understand the
+underlying mechanism by which a government -funded program can affect the behavior
+of industrial and academic inventors, who are main pilla rs engaging in the convergence
+process.
+
+The program we explore in this study is the Advanced Sequencing Technology Prog ram
+(ASTP), (or the Advanced Sequencing Technology awards) funded by the US National
+Human Genome Research Institute (NHGRI). While the program has been credited with
+its contribution to the success of reducing the costs of genome sequencing, it is also noted
+as an endeavor that constantly accentuated the multidisciplinary collaborations and
+steered public -private partnerships (Hayden, 201 4). Several of the program’s distinctive
+features, such as mandatory grantee meetings, also benefit knowledge transfer throug hout
+the sectors and promote information dissemination to external entities. In these respects,
+ASTP is a better match for our obje ctive of examining the effects of government R&D
+investment in encouraging technological convergence.
+
+The remainder of this paper is organized as follows: in Section 2 we provide a review of
+the literature on technology convergence and its drivers, and the hypotheses of the paper;
+in Section 3 we provide an overview of the programme under study and illustrate the
+process for constructing the dataset and the models for analyzing the ASTP; Section 4 is
+dedicated to the illustration the empirical results and analysis of the impact of government
+R&D spending as well as its implications; finally, we conclude the paper by summing up
 and discussing our findings in Section 5.
 
-3 
- 
-2. Literature review  
- 
-2.1. Technology convergence and its drivers 
- 
-While the notion of technology convergence varies according to managerial scope 
-(Hacklin, 2007), we refer to it in this study as the blending of existing technologies. When 
-different technological boundaries erode, spillovers between fields eventually lead to 
-conver gence. Unlike the conventional approach, which seeks breakthroughs via a linear 
-R&D pattern, the convergence approach focuses on spawning new technologies by 
-combining distinct ones. Hence, it is more complementary and collaborative in nature 
-(Kodama, 1992). Additionally, Schumpeter (1934) maintained in his seminal work, The 
-Theory of Economic Development, that innovation is a combination of existing resources. 
-Technology convergence could be seen as an instance of the combinatorial process in this 
-context by explicitly emphasizing hybrid technologies. Evidently, the rising exposure of 
-the phenomenon of convergence can be observed in the demise of the adage “one 
-technology, one industry” (Kodama, 1992).  
- 
-Sick and Bröring (2021) conducted a thorough review of  the literature on convergence 
-from the standpoint of technology and innovation management. Among the prior works 
-on technological convergence, great efforts have been made in methodological 
-development to identify historical convergence patterns or antici pate future convergence 
-possibilities through patent analysis (Preschitschek et al., 2013; Karvonen and Kässi, 
-2013; Ko et al., 2014, Eilers et al., 2019). Surely admitted their great implications to both 
-enterprise and policymakers, it is also necessary t o return to the central topic in 
-convergence research, namely, which drivers promote the convergence process. From an 
-evolutionary perspective, Hacklin (2007) conceptualized the convergence process into 
-four phases: knowledge, technological, applicational, and industrial convergence. Curran 
-et al. (2010) subsequently presented a four -stage model, illustrating the chronological 
-order of science, technology, market, and industry convergence. The model implicitly 
-suggests that technological convergence might be fueled by science/technology-push and 
-market-pull, which have been addressed as innovation drivers by Mowery and Rosenberg 
-(1979). Given the numerous factors which can contribute to the convergence, Song et al. 
-(2017) proposed a taxonomy consisting of four groups: technological progress, regulation 
-and policy, market expectation, and social change. In terms of technological progress, the 
-rapid growth of the ICT industry can be viewed as the primary source and driver of 
+3
+
+2. Literature review
+
+2.1. Technology convergence and its drivers
+
+While the notion of technology convergence varies according to managerial scope
+(Hacklin, 2007), we refer to it in this study as the blending of existing technologies. When
+different technological boundaries erode, spillovers between fields eventually lead to
+conver gence. Unlike the conventional approach, which seeks breakthroughs via a linear
+R&D pattern, the convergence approach focuses on spawning new technologies by
+combining distinct ones. Hence, it is more complementary and collaborative in nature
+(Kodama, 1992). Additionally, Schumpeter (1934) maintained in his seminal work, The
+Theory of Economic Development, that innovation is a combination of existing resources.
+Technology convergence could be seen as an instance of the combinatorial process in this
+context by explicitly emphasizing hybrid technologies. Evidently, the rising exposure of
+the phenomenon of convergence can be observed in the demise of the adage “one
+technology, one industry” (Kodama, 1992).
+
+Sick and Bröring (2021) conducted a thorough review of  the literature on convergence
+from the standpoint of technology and innovation management. Among the prior works
+on technological convergence, great efforts have been made in methodological
+development to identify historical convergence patterns or antici pate future convergence
+possibilities through patent analysis (Preschitschek et al., 2013; Karvonen and Kässi,
+2013; Ko et al., 2014, Eilers et al., 2019). Surely admitted their great implications to both
+enterprise and policymakers, it is also necessary t o return to the central topic in
+convergence research, namely, which drivers promote the convergence process. From an
+evolutionary perspective, Hacklin (2007) conceptualized the convergence process into
+four phases: knowledge, technological, applicational, and industrial convergence. Curran
+et al. (2010) subsequently presented a four -stage model, illustrating the chronological
+order of science, technology, market, and industry convergence. The model implicitly
+suggests that technological convergence might be fueled by science/technology-push and
+market-pull, which have been addressed as innovation drivers by Mowery and Rosenberg
+(1979). Given the numerous factors which can contribute to the convergence, Song et al.
+(2017) proposed a taxonomy consisting of four groups: technological progress, regulation
+and policy, market expectation, and social change. In terms of technological progress, the
+rapid growth of the ICT industry can be viewed as the primary source and driver of
 convergence, as evidenced by the recent digital transformation (Han and Sohn, 2016).
 
-4 
- 
-Besides, other General -Purpose Technologies (GPTs), including information technolog y 
-and nanotechnology, thanks to the nature of great  technological generality (Gambardella 
-and Giarratana, 2013), may serve as a vital knowledge provider to different fields (Appio 
-et al., 2017). In the view of market expectation, it stresses the convergence driven by the 
-demand -side. Dowling et al. (1998) claimed that the purchasing power may create a 
-significant market need fo r products with integrated functions, which would then 
-motivate firms to adopt and coordinate a variety of technologies. When it comes to social 
-change, convergence is propelled by the challenges and needs that society faces. For 
-example, the recent growth  of green technology requires the convergence of different 
-GPTs1. 
- 
-2.2. Policy and Tech nology convergence 
- 
-The policy can be designed to remove both artificial and technological barriers among 
-different technological fields. For removing the artificial ba rriers, one example would be 
-the Telecommunications Act of 1996, which unlocked the restriction between the 
-telephone sector and the IT industry. In this case, policymaking may be more closely 
-aligned with deregulation. The technological barriers, on the other hand, may refer to the 
+4
+
+Besides, other General -Purpose Technologies (GPTs), including information technolog y
+and nanotechnology, thanks to the nature of great  technological generality (Gambardella
+and Giarratana, 2013), may serve as a vital knowledge provider to different fields (Appio
+et al., 2017). In the view of market expectation, it stresses the convergence driven by the
+demand -side. Dowling et al. (1998) claimed that the purchasing power may create a
+significant market need fo r products with integrated functions, which would then
+motivate firms to adopt and coordinate a variety of technologies. When it comes to social
+change, convergence is propelled by the challenges and needs that society faces. For
+example, the recent growth  of green technology requires the convergence of different
+GPTs1.
+
+2.2. Policy and Tech nology convergence
+
+The policy can be designed to remove both artificial and technological barriers among
+different technological fields. For removing the artificial ba rriers, one example would be
+the Telecommunications Act of 1996, which unlocked the restriction between the
+telephone sector and the IT industry. In this case, policymaking may be more closely
+aligned with deregulation. The technological barriers, on the other hand, may refer to the
 technological distance among distinct domains, and costs for combining them. Discipline-
-specific vocabulary, theories, and cognitive differences can lead to huge transaction costs 
-associated with achieving convergence in a multi disciplinary setting (Nordmann, 2004). 
-In addition, Jeong et al. (2011) claimed that, in a situation where the level of technolog y 
-readiness is high, researchers, even within the same organization, are reluctant to work 
-with colleagues with different backgrounds. In this scenario, policy refers to public R&D 
-funding or a multidisciplinary incentive program. According to Littler and Coombs 
-(1988), government -supported programs typically cover a wider range of technical fields 
-than private sector projects but developed with a modest speed. Even if Metzger and Zare 
-(1999) cast doubt on the effectiveness of such programs in fostering technological 
-convergence, Jeong and Lee (2015) empirically showed that government -funded R&D 
-initiatives with a longer timespan or a lower budget had a positive impact on convergence. 
-In addition, Kim et al. (2017) showed that standards can also be a driving force of 
-technology convergence through guiding the technological trajectories.  
- 
- 
+specific vocabulary, theories, and cognitive differences can lead to huge transaction costs
+associated with achieving convergence in a multi disciplinary setting (Nordmann, 2004).
+In addition, Jeong et al. (2011) claimed that, in a situation where the level of technolog y
+readiness is high, researchers, even within the same organization, are reluctant to work
+with colleagues with different backgrounds. In this scenario, policy refers to public R&D
+funding or a multidisciplinary incentive program. According to Littler and Coombs
+(1988), government -supported programs typically cover a wider range of technical fields
+than private sector projects but developed with a modest speed. Even if Metzger and Zare
+(1999) cast doubt on the effectiveness of such programs in fostering technological
+convergence, Jeong and Lee (2015) empirically showed that government -funded R&D
+initiatives with a longer timespan or a lower budget had a positive impact on convergence.
+In addition, Kim et al. (2017) showed that standards can also be a driving force of
+technology convergence through guiding the technological trajectories.
+
+
 1 OEC D: https://www.innovationpolicyplatform.org/www.innovationpolicyplatform.org/content/bio-
 nano -and-converging-technologies-green-innovation/index.html
 
-5 
- 
-Apart from these two barriers, it is also nec essary to mention the uncertainties and costs 
-that usually come along with the convergence. Ambiguity in the market and technological 
-scope are two types of uncertainty that have been often highlighted. Technological 
-uncertainty refers to the incapacity to  fathom some facets in technological environments 
-(Song and Montoya-Weiss, 2001) which is common in the context since convergence has 
-the potential to unite previously unrelated fields (Hacklin et al., 2013). On the other hand, 
-market uncertainty raises co ncern because too innovative products may initially only 
-attract the least lucrative customers (Bores et al., 2003). Besides, the fulfillment of 
-convergence potential requires a considerable initial investment, which may cause 
+5
+
+Apart from these two barriers, it is also nec essary to mention the uncertainties and costs
+that usually come along with the convergence. Ambiguity in the market and technological
+scope are two types of uncertainty that have been often highlighted. Technological
+uncertainty refers to the incapacity to  fathom some facets in technological environments
+(Song and Montoya-Weiss, 2001) which is common in the context since convergence has
+the potential to unite previously unrelated fields (Hacklin et al., 2013). On the other hand,
+market uncertainty raises co ncern because too innovative products may initially only
+attract the least lucrative customers (Bores et al., 2003). Besides, the fulfillment of
+convergence potential requires a considerable initial investment, which may cause
 enterprises to reallocate their resources to other endeavors (e.g., more promising near -
-term product development). Companies may then suspend or even kill these initiatives to 
-avoid potential market failure, resulting in under -investment in knowledge creation 
-through convergence. From  this perspective, government -supported programs featured 
-with university -industry knowledge exchange help reduce R&D market failures and 
-ensure the benefits of the investments (Martin and Scott, 2000). The peer-review process 
-adopted by government agencie s such as the National Science Foundation (NSF) and the 
-National Institutes of Health (NIH) has also been cited as a critical factor to success 
-(Metzger and Zare, 1999).  
- 
-To sum up, the existing literature on the impact of government policy on technolog y 
-convergence leaves a clue that deregulations and public funding programs can be a 
-potential driver of the convergence. However, we found that the related empirical works 
-on this topic are still rare, which motivated us to devote efforts to this field.  
- 
-2.3. Hypotheses 
- 
-The literature review presented in Section 2.2 shows that scholars have investigated the 
-relationship between government funding programs and technology convergence. One of 
-the most critical specificities of technology convergence is multidisciplinary cooperation, 
-which provides a knowledge foundation for convergence. The participation of specialists 
-from a variety of backgrounds may spark novel ideas and inspirations while collaborating . 
+term product development). Companies may then suspend or even kill these initiatives to
+avoid potential market failure, resulting in under -investment in knowledge creation
+through convergence. From  this perspective, government -supported programs featured
+with university -industry knowledge exchange help reduce R&D market failures and
+ensure the benefits of the investments (Martin and Scott, 2000). The peer-review process
+adopted by government agencie s such as the National Science Foundation (NSF) and the
+National Institutes of Health (NIH) has also been cited as a critical factor to success
+(Metzger and Zare, 1999).
+
+To sum up, the existing literature on the impact of government policy on technolog y
+convergence leaves a clue that deregulations and public funding programs can be a
+potential driver of the convergence. However, we found that the related empirical works
+on this topic are still rare, which motivated us to devote efforts to this field.
+
+2.3. Hypotheses
+
+The literature review presented in Section 2.2 shows that scholars have investigated the
+relationship between government funding programs and technology convergence. One of
+the most critical specificities of technology convergence is multidisciplinary cooperation,
+which provides a knowledge foundation for convergence. The participation of specialists
+from a variety of backgrounds may spark novel ideas and inspirations while collaborating .
 However, a multidisciplinary configuration also implies that developing convergence -
-related projects would be more hazardous and time -consuming (Schmoch et al., 1994): 
-participants need more time to familiarize themselves with people from diverse 
-backgrounds and more cycles of test and failure to identify suita ble solutions. As a result 
+related projects would be more hazardous and time -consuming (Schmoch et al., 1994):
+participants need more time to familiarize themselves with people from diverse
+backgrounds and more cycles of test and failure to identify suita ble solutions. As a result
 of these uncertainties and risks, both academic and industrial participants are more
 
-6 
- 
-inclined to shift their focus to short -term and insured undertakings. In this regard, the 
-government funding programs, which offer longer-than-usual grant durations, can enable 
-researchers to conduct in -depth studies rather than seeking quick success. Indeed, since 
-the early decades of the twenty-first century, government-supported initiatives (e.g., held 
-by the National Science Foundation, the Na tional Institutes of Health, etc.), which have 
-incorporated a multidisciplinary setup (with a particular focus on the convergence of 
+6
+
+inclined to shift their focus to short -term and insured undertakings. In this regard, the
+government funding programs, which offer longer-than-usual grant durations, can enable
+researchers to conduct in -depth studies rather than seeking quick success. Indeed, since
+the early decades of the twenty-first century, government-supported initiatives (e.g., held
+by the National Science Foundation, the Na tional Institutes of Health, etc.), which have
+incorporated a multidisciplinary setup (with a particular focus on the convergence of
 nanotechnology, biotechnology, and information technology), usually offered a long -
-term funding plan (Roco and Bainbridge, 2002).  
- 
-Besides, since technological convergence is essentially commercially oriented in nature, 
-it also necessitates the commercial potential and feasibility of interdisciplinary knowledge. 
-In this light, the experience can be learned from the U.S. government innovation programs, 
-which fostered the commercial applications and attracted nonfederal investment in R&D 
-through promoting university-industry (U -I) collaborations or directly sponsoring 
-industrial enterprises (Roessner, 1989). The inclusion of industrial entities underlines the 
-commercial viability of developed projects, promoting technological development. In 
-addition, industry-university collaborations enhance academia-industry knowledg e 
-diffusion. The influence of this might be bidirectional. On the one hand, firms can stay 
+term funding plan (Roco and Bainbridge, 2002).
+
+Besides, since technological convergence is essentially commercially oriented in nature,
+it also necessitates the commercial potential and feasibility of interdisciplinary knowledge.
+In this light, the experience can be learned from the U.S. government innovation programs,
+which fostered the commercial applications and attracted nonfederal investment in R&D
+through promoting university-industry (U -I) collaborations or directly sponsoring
+industrial enterprises (Roessner, 1989). The inclusion of industrial entities underlines the
+commercial viability of developed projects, promoting technological development. In
+addition, industry-university collaborations enhance academia-industry knowledg e
+diffusion. The influence of this might be bidirectional. On the one hand, firms can stay
 aware of cutting-edge academic research findings and recruit highly competent and well-
-matched personnel. On the other hand, academic scholars can get insight into what is 
-happening in the industry sector, understanding potenti al applications of their work. 
-Moreover, this may allow certain academic workers to shift from pure scientific 
-exploration to technological research. Based on these, we, therefore, propose the 
-following hypothesis:  
- 
-Hp 1. A government -funded R&D program ha s a positive impact on promoting 
-technology convergence.  
- 
-Secondly, university and industry are regarded as two of the most important pillars of 
-technological advancement. Hence, we want to further break down the analysis to 
-investigate the roles of academ ic and industry inventors in the convergence process, 
-respectively. While government -funded R&D programs are usually accompanied with an 
-explicit goal of knowledge creation, but their management practices (e.g., reciprocal 
-information sharing mechanisms) c ould also facilitate a mutual learning process across 
-disciplines and sectors, which has the potential to lessen the cognitive distance for both 
+matched personnel. On the other hand, academic scholars can get insight into what is
+happening in the industry sector, understanding potenti al applications of their work.
+Moreover, this may allow certain academic workers to shift from pure scientific
+exploration to technological research. Based on these, we, therefore, propose the
+following hypothesis:
+
+Hp 1. A government -funded R&D program ha s a positive impact on promoting
+technology convergence.
+
+Secondly, university and industry are regarded as two of the most important pillars of
+technological advancement. Hence, we want to further break down the analysis to
+investigate the roles of academ ic and industry inventors in the convergence process,
+respectively. While government -funded R&D programs are usually accompanied with an
+explicit goal of knowledge creation, but their management practices (e.g., reciprocal
+information sharing mechanisms) c ould also facilitate a mutual learning process across
+disciplines and sectors, which has the potential to lessen the cognitive distance for both
 academic and industrial participants. The shortened cognitive distance will enable
 
-7 
- 
-companies to gain higher abs orptive capacity, which then allows them to acquire new 
-value or knowledge and translate it into innovation quickly (Cohen and Levinthal, 1990). 
-In addition, in comparison to science -based knowledge, which is sufficiently codifiable, 
-firm-based knowledge i s more implicit, making dissemination more challenging (Kani 
-and Motohashi, 2018; Kogut and Zander, 1992). Also, as opposed to scientific knowledg e, 
-which is regarded as a global public good, technological knowledge is often protected by 
-intellectual property laws, which contributes to transmission difficulty as well. In this 
-sense, we anticipate that government -funded R&D programs, which aid in the spread of 
-knowledge, would have a greater policy shock on industry inventors than on univer sity 
-inventors.  
- 
-On the other hand, the efficacy of reduced cognitive distance to university scholars m ay 
-be impeded in several ways. Despite several efforts have been made to foster 
-multidisciplinary collaboration in universities, current assessment mechanisms still place 
-a premium on individual accomplishment, which disincentivizes faculty and departments 
-to work across fields (Klein and Falk-Krzesinski, 2017; Pfirman and Martin 2017). As 
-noted by Arnold et al. (2021), compared to a multidisciplinary sett ing, tenure/promotion 
-committees may assess an academic worker more objectively in a uni-disciplinary context 
-by comparing the productivity and impact of scholarly work to that of colleagues within 
-a discipline. Also, it is risky for an academic researcher  to jump into an unfamiliar field. 
-Furthermore, technological convergence inherently bears a commercial purpose. In this 
-sense, researchers inside universities often place a high value on publishing activity, since 
-it carries a higher degree of prestige th an commercialization (Sauermann and Stephan, 
-2013). However, companies typically put a priority on the commercialization potential of 
-technology. And programs that support industry for convergence -related projects would 
-incentivize businesses to move away from short -run projects and toward long -run 
-convergence innovation activities, which are previously less likely to be performed by 
-firms due to the risks and expensive initial expenditure (Feldman and Kelley, 2006). 
-Therefore, firms are more urgent and hav e more motivation to engage in technolog y 
-development and patenting activities. This leads to our second hypothesis:  
- 
-Hp 2. Among the funded inventors, a government -funded R&D program has a greater 
-impact on industrial inventors than university inventors.  
- 
-The second hypothesis targets delineating the behaviors of the funded inventors. We then 
+7
+
+companies to gain higher abs orptive capacity, which then allows them to acquire new
+value or knowledge and translate it into innovation quickly (Cohen and Levinthal, 1990).
+In addition, in comparison to science -based knowledge, which is sufficiently codifiable,
+firm-based knowledge i s more implicit, making dissemination more challenging (Kani
+and Motohashi, 2018; Kogut and Zander, 1992). Also, as opposed to scientific knowledg e,
+which is regarded as a global public good, technological knowledge is often protected by
+intellectual property laws, which contributes to transmission difficulty as well. In this
+sense, we anticipate that government -funded R&D programs, which aid in the spread of
+knowledge, would have a greater policy shock on industry inventors than on univer sity
+inventors.
+
+On the other hand, the efficacy of reduced cognitive distance to university scholars m ay
+be impeded in several ways. Despite several efforts have been made to foster
+multidisciplinary collaboration in universities, current assessment mechanisms still place
+a premium on individual accomplishment, which disincentivizes faculty and departments
+to work across fields (Klein and Falk-Krzesinski, 2017; Pfirman and Martin 2017). As
+noted by Arnold et al. (2021), compared to a multidisciplinary sett ing, tenure/promotion
+committees may assess an academic worker more objectively in a uni-disciplinary context
+by comparing the productivity and impact of scholarly work to that of colleagues within
+a discipline. Also, it is risky for an academic researcher  to jump into an unfamiliar field.
+Furthermore, technological convergence inherently bears a commercial purpose. In this
+sense, researchers inside universities often place a high value on publishing activity, since
+it carries a higher degree of prestige th an commercialization (Sauermann and Stephan,
+2013). However, companies typically put a priority on the commercialization potential of
+technology. And programs that support industry for convergence -related projects would
+incentivize businesses to move away from short -run projects and toward long -run
+convergence innovation activities, which are previously less likely to be performed by
+firms due to the risks and expensive initial expenditure (Feldman and Kelley, 2006).
+Therefore, firms are more urgent and hav e more motivation to engage in technolog y
+development and patenting activities. This leads to our second hypothesis:
+
+Hp 2. Among the funded inventors, a government -funded R&D program has a greater
+impact on industrial inventors than university inventors.
+
+The second hypothesis targets delineating the behaviors of the funded inventors. We then
 want to study how a program may influence the behaviors of inventors outside the
 
-8 
- 
-program, which can also be divided into university and industry groups. The following  
-three reasons lead us to expect that an R&D program may have a significant impact on 
-attracting external industrial inventors than academic inventors. First, an R&D program 
-that provides funding to not only traditional academic researchers but also compan ies 
-maintains the commercial feasibility of developed projects. The commercialization 
-relevance has a greater chance of attracting the attention of outside firms. Second, 
-although many naysayers in the private sector may be reluctant to or even go against the 
-convergence ideas initially, new markets and demands created later through converg ed 
+8
+
+program, which can also be divided into university and industry groups. The following
+three reasons lead us to expect that an R&D program may have a significant impact on
+attracting external industrial inventors than academic inventors. First, an R&D program
+that provides funding to not only traditional academic researchers but also compan ies
+maintains the commercial feasibility of developed projects. The commercialization
+relevance has a greater chance of attracting the attention of outside firms. Second,
+although many naysayers in the private sector may be reluctant to or even go against the
+convergence ideas initially, new markets and demands created later through converg ed
 technologies are very appealing to firms (Park, 2017). In this regard, the scholarly peer -
-review process inside a program increases the authority of the concepts, whic h further 
-helps to convince partners for commercialization. Also, the program per se can act as a 
-conduit for the external audience to see and acquire reassurance about associated results 
-and accomplishments, changing their mindset from risk-averse to risk-neutral. We further 
-conceptualize the attractive force to external players as ‘leverage effects,’ in which the 
-government takes the initiative to invest in convergence ideas and then discloses internal 
-progress and conclusions to grab the attention of externally prospective parties. Given the 
-enormous costs associated with developing technologies through convergence, althoug h 
-the government spending might be only a drop in the bucket, the government can adopt a 
-funding program as a lever to amplify the input force (government R&D spending) to 
-provide a greater output force (potential private investors, industrial and academic 
-participants), thereby achieving the social benefits. Due to the commercial nature of 
-technology convergence, the corresponding lever age effects are expected to be more 
-visible to external industrial inventors than university inventors. Finally, w e propose the 
-following hypothesis:  
- 
-Hp 3. Government spending on R&D has a more significant impact on attracting external 
-industrial inventor s than academic inventors. In other words, the leverage effects of a 
-program are more effective/visible to external industrial inventors than university 
-inventors.  
- 
-2.4. Conceptualization  
- 
-This section presents the positions of the three hypotheses in Figure 1. While convergence 
-can generate new technologies, it often comes with barriers, uncertainties, and substantial 
-initial investments. In this study, we argue that a government -funded R&D program can 
+review process inside a program increases the authority of the concepts, whic h further
+helps to convince partners for commercialization. Also, the program per se can act as a
+conduit for the external audience to see and acquire reassurance about associated results
+and accomplishments, changing their mindset from risk-averse to risk-neutral. We further
+conceptualize the attractive force to external players as ‘leverage effects,’ in which the
+government takes the initiative to invest in convergence ideas and then discloses internal
+progress and conclusions to grab the attention of externally prospective parties. Given the
+enormous costs associated with developing technologies through convergence, althoug h
+the government spending might be only a drop in the bucket, the government can adopt a
+funding program as a lever to amplify the input force (government R&D spending) to
+provide a greater output force (potential private investors, industrial and academic
+participants), thereby achieving the social benefits. Due to the commercial nature of
+technology convergence, the corresponding lever age effects are expected to be more
+visible to external industrial inventors than university inventors. Finally, w e propose the
+following hypothesis:
+
+Hp 3. Government spending on R&D has a more significant impact on attracting external
+industrial inventor s than academic inventors. In other words, the leverage effects of a
+program are more effective/visible to external industrial inventors than university
+inventors.
+
+2.4. Conceptualization
+
+This section presents the positions of the three hypotheses in Figure 1. While convergence
+can generate new technologies, it often comes with barriers, uncertainties, and substantial
+initial investments. In this study, we argue that a government -funded R&D program can
 be a driver of technology convergence (hypothesis 1).  To explain why it is the case, we
 
-9 
- 
-focus on the program’s impact on the behaviors of internal and external participants in 
-the scenario of convergence, which is illustrated by hypotheses 2 and 3. Hypothesis 2 
-states that the program will encourage academic and industrial inventors to engage in 
-convergence activities, fostering technological development and research. Hypothesis 3, 
-on the other hand, is concerned with the external participants, declaring  that the prog ram 
-per se could be a crucial channel for disseminating internal knowledge and assuring 
-authorities of convergence concepts by which motivate external players to take part. As 
-we suspect that its impact will be significant on external industrial players and only 
-limited on external academic resear chers, we further conceptualize these as a ‘leverag e 
-effect’ for industry and an ‘eye -catching effect’ for academia. 
- 
- 
-Figure 1. Conceptualization of the role of a  government R&D spending in promoting 
-technology convergence  and the position of each hypothesis 
- 
-3. Data source and methodology 
- 
-Our empirical test relies on the Advanced Sequencing Technology Program (ASTP) at 
-the National Institutes of Health (NIH). In the next section, we first present the context of 
-ASTP that is considered as a potential convergence driver under this study.  
- 
-3.1. Advanced Sequencing Technology Program from 2004 to 2014 
- 
-When the Human Genome Project (HGP) was completed in April 2003, the total cost of 
+9
+
+focus on the program’s impact on the behaviors of internal and external participants in
+the scenario of convergence, which is illustrated by hypotheses 2 and 3. Hypothesis 2
+states that the program will encourage academic and industrial inventors to engage in
+convergence activities, fostering technological development and research. Hypothesis 3,
+on the other hand, is concerned with the external participants, declaring  that the prog ram
+per se could be a crucial channel for disseminating internal knowledge and assuring
+authorities of convergence concepts by which motivate external players to take part. As
+we suspect that its impact will be significant on external industrial players and only
+limited on external academic resear chers, we further conceptualize these as a ‘leverag e
+effect’ for industry and an ‘eye -catching effect’ for academia.
+
+
+Figure 1. Conceptualization of the role of a  government R&D spending in promoting
+technology convergence  and the position of each hypothesis
+
+3. Data source and methodology
+
+Our empirical test relies on the Advanced Sequencing Technology Program (ASTP) at
+the National Institutes of Health (NIH). In the next section, we first present the context of
+ASTP that is considered as a potential convergence driver under this study.
+
+3.1. Advanced Sequencing Technology Program from 2004 to 2014
+
+When the Human Genome Project (HGP) was completed in April 2003, the total cost of
 this project was approximately 3 billion dollars. In the same year, the National Human
 
-10 
- 
-Genome Research Institute (NHGRI), an institute of NIH, announced two broad visions 
-for the future genomics research: ‘elucidating the structure and function of genomes’ and 
-‘translating genome -based knowledge into health benefits,’ highlighting the potential of 
-revolutionizing biomedical and clinical practice if the costs of sequencing can be 
-significantly reduced (Collins et al., 2003). For this reason, in 2004, the NHGRI launched 
-a funding program with an expli cit goal of reducing costs by two to four orders of 
-magnitude. This program is formally known as the Advanced Sequencing Technolog y 
-Program (ASTP), which consists of two requests for applications (RFAs): ‘Near -Term 
+10
+
+Genome Research Institute (NHGRI), an institute of NIH, announced two broad visions
+for the future genomics research: ‘elucidating the structure and function of genomes’ and
+‘translating genome -based knowledge into health benefits,’ highlighting the potential of
+revolutionizing biomedical and clinical practice if the costs of sequencing can be
+significantly reduced (Collins et al., 2003). For this reason, in 2004, the NHGRI launched
+a funding program with an expli cit goal of reducing costs by two to four orders of
+magnitude. This program is formally known as the Advanced Sequencing Technolog y
+Program (ASTP), which consists of two requests for applications (RFAs): ‘Near -Term
 Technology Development for Genome Sequencing’ (the $100,000 genome
-2 ) and 
-‘Revolutionary Genome Sequencing Technologies’ (the $1000 genome 3). Even thoug h 
-the explicit goal for the project was to reduce the costs, the NHGRI emphasized that the 
-goal should be achieved through multidisciplinary team collaborations, which can be seen 
-from the three characteristics of the program. First, the ASTP calls for participation by 
-multidisciplinary investigator teams, including biochemistry, chemistry, physics, 
-mathematical modeling, software development, and  so on. Second, unlike the traditional 
-funding programs, which are exclusively awarded for academia, the ASTP offers grants 
-to academic, industry, and foreign investigators, which can be seen from most grants were 
-allocated to academia researchers and small companies, and even several research 
-projects inside big companies (e.g., Intel and IBM) can also receive the funds. Finally, 
-annual grantee meetings were held by NHGRI, mandatorily requiring entities sponsored 
-by ASTP to share their findings, which also served as a bridge role in facilitating the 
-knowledge diffusion between academic and industry investigators. Noticeably, the 
-grantee meetings were considered a major feature of the program, and the participators 
-were later extended to people outside the program, including investigators, investors, and 
-so on. In addition, the ASTP also had a high tolerance to accept risky ideas, which were 
-atypical of other NIH grants. Given these exceptional features of the ASTP, we expect 
-this government funding program could be a potential driver of the convergence process. 
- 
-The Sanger-based sequencing approach (i.e., capillary array electrophoresis (CAE)) was 
-employed for the HGP, which was heavily dependent upon the field of biochemistry and 
-is also referred to as First Generation Sequencing (Schloss, 2008). While the Sanger CAE 
-method achieved high-quality results, the use of electrophoresis only allowed for a limited 
-degree of parallelization, translating into comparably low efficiency and expensive 
- 
-2 https://grants.nih.gov/grants/guide/rfa-files/RFA-HG-04-002.html  
+2 ) and
+‘Revolutionary Genome Sequencing Technologies’ (the $1000 genome 3). Even thoug h
+the explicit goal for the project was to reduce the costs, the NHGRI emphasized that the
+goal should be achieved through multidisciplinary team collaborations, which can be seen
+from the three characteristics of the program. First, the ASTP calls for participation by
+multidisciplinary investigator teams, including biochemistry, chemistry, physics,
+mathematical modeling, software development, and  so on. Second, unlike the traditional
+funding programs, which are exclusively awarded for academia, the ASTP offers grants
+to academic, industry, and foreign investigators, which can be seen from most grants were
+allocated to academia researchers and small companies, and even several research
+projects inside big companies (e.g., Intel and IBM) can also receive the funds. Finally,
+annual grantee meetings were held by NHGRI, mandatorily requiring entities sponsored
+by ASTP to share their findings, which also served as a bridge role in facilitating the
+knowledge diffusion between academic and industry investigators. Noticeably, the
+grantee meetings were considered a major feature of the program, and the participators
+were later extended to people outside the program, including investigators, investors, and
+so on. In addition, the ASTP also had a high tolerance to accept risky ideas, which were
+atypical of other NIH grants. Given these exceptional features of the ASTP, we expect
+this government funding program could be a potential driver of the convergence process.
+
+The Sanger-based sequencing approach (i.e., capillary array electrophoresis (CAE)) was
+employed for the HGP, which was heavily dependent upon the field of biochemistry and
+is also referred to as First Generation Sequencing (Schloss, 2008). While the Sanger CAE
+method achieved high-quality results, the use of electrophoresis only allowed for a limited
+degree of parallelization, translating into comparably low efficiency and expensive
+
+2 https://grants.nih.gov/grants/guide/rfa-files/RFA-HG-04-002.html
 3 https://grants.nih.gov/grants/guide/rfa-files/RFA-HG-04-003.html
 
-11 
- 
-sequencing costs. C ompared to traditional Sanger sequencing, next -generation 
+11
+
+sequencing costs. C ompared to traditional Sanger sequencing, next -generation
 sequencing (NGS), which employs massively parallel techniques (also known as cyclic -
-array strategies), enables significantly  increased data throughput, scalability, and 
-efficiency (Shendure and Ji, 2008). The success of NGS implementation is dependent on 
-a synergy of biochemistry, information technology, and nanotechnology. For example, 
-information technology is involved in library preparation, which is typically the initial 
-stage in a sequencing operation (van Dijk et al., 2014). Furthermore, the expanding 
-volume of NGS data presents challenges for bioinformatics in areas such as sequence 
-quality assessment, alignment (i.e., re -sequencing), assembly, and data analysis. In this 
-regard, we might refer to the evolution of NGS as a ‘convergence age.’  
- 
-3.2 Data and measures  
- 
-In studies of technology convergence, patent data, which indicate the knowledg e 
-accumulation and development in a specific technical field, are frequently used as a proxy 
-for monitoring the convergence (Karvonen and Kässi, 2013). In this work, the technology  
-convergence is measured by the inter-field citations between information technology (IT) 
-and biotechnology (BT), which are two main technologies used by the Next -Generation 
-Sequencing (NGS). We extract the IT and BT patent data and citation information from 
-the PATSTAT 2020 Autumn version, noting all collected patents are published from the 
-US patent office. To define the boundary of IT and BT patents, we use the concepts of 
-technology classification issued by WIPO. The time window of the data is set from 1996 
-to 2019 to gather sufficient information for constructing patent indicators. As for the 
-ASTP data, the grant lists are scraped from the NHGRI’s websites, which provided 
-detailed records for the ASTP awards from 2004 to 2014. We manually disambiguate the 
-ASTP inventors and then link them to the PATSTAT database. The process for collecting 
+array strategies), enables significantly  increased data throughput, scalability, and
+efficiency (Shendure and Ji, 2008). The success of NGS implementation is dependent on
+a synergy of biochemistry, information technology, and nanotechnology. For example,
+information technology is involved in library preparation, which is typically the initial
+stage in a sequencing operation (van Dijk et al., 2014). Furthermore, the expanding
+volume of NGS data presents challenges for bioinformatics in areas such as sequence
+quality assessment, alignment (i.e., re -sequencing), assembly, and data analysis. In this
+regard, we might refer to the evolution of NGS as a ‘convergence age.’
+
+3.2 Data and measures
+
+In studies of technology convergence, patent data, which indicate the knowledg e
+accumulation and development in a specific technical field, are frequently used as a proxy
+for monitoring the convergence (Karvonen and Kässi, 2013). In this work, the technology
+convergence is measured by the inter-field citations between information technology (IT)
+and biotechnology (BT), which are two main technologies used by the Next -Generation
+Sequencing (NGS). We extract the IT and BT patent data and citation information from
+the PATSTAT 2020 Autumn version, noting all collected patents are published from the
+US patent office. To define the boundary of IT and BT patents, we use the concepts of
+technology classification issued by WIPO. The time window of the data is set from 1996
+to 2019 to gather sufficient information for constructing patent indicators. As for the
+ASTP data, the grant lists are scraped from the NHGRI’s websites, which provided
+detailed records for the ASTP awards from 2004 to 2014. We manually disambiguate the
+ASTP inventors and then link them to the PATSTAT database. The process for collecting
 data is visualized in Figure 2.
 
-12 
- 
- 
-Figure 2. Data collection and processing  
- 
-3.3. Reduction of selection bias using propensity score matching 
- 
-Before testing the first hypothesis of the causality effects of government R&D spending 
-on promoting technology convergence, which can be reflected from the inventors enrolled 
-in the program becoming more likely to form inter -field backward citations and receive 
-inter-field forward citations, we need to alleviate the bias induced by the selection process 
-of ASTP review offices. Applicants for the ASTP needed to undergo a peer review 
-process, which was assessed based on five criteria by review panels: Significance, 
+12
+
+
+Figure 2. Data collection and processing
+
+3.3. Reduction of selection bias using propensity score matching
+
+Before testing the first hypothesis of the causality effects of government R&D spending
+on promoting technology convergence, which can be reflected from the inventors enrolled
+in the program becoming more likely to form inter -field backward citations and receive
+inter-field forward citations, we need to alleviate the bias induced by the selection process
+of ASTP review offices. Applicants for the ASTP needed to undergo a peer review
+process, which was assessed based on five criteria by review panels: Significance,
 Approach, Innovation, Investigator, Environment
-4. The first three criteria are relevant to 
-the project outlined in the RFA, while the rest two tie into the investigator per se (i.e., the 
-experience level) and their surrounding community (i.e., collaborativeness of the 
-surrounding environment). We select a nd design variables based on these criteria and 
-implement the propensity score matching with the dependent variable ASTP (1 to denote 
-if a given individual is enrolled in the program and 0 otherwise). The selected covariates 
-can be categorized into patent portfolio-level, inventor-level, and environment-level. The 
-descriptions for each group of variables are given as follows.  
- 
-Patent portfolio -level variables are relevant to the first three criteria. For example, in 
-terms of innovation, it is asked for ‘doe s the project employ novel concepts, approaches 
-or methods?’ and ‘are the aims original and innovative?’, which are evaluated on the 
- 
+4. The first three criteria are relevant to
+the project outlined in the RFA, while the rest two tie into the investigator per se (i.e., the
+experience level) and their surrounding community (i.e., collaborativeness of the
+surrounding environment). We select a nd design variables based on these criteria and
+implement the propensity score matching with the dependent variable ASTP (1 to denote
+if a given individual is enrolled in the program and 0 otherwise). The selected covariates
+can be categorized into patent portfolio-level, inventor-level, and environment-level. The
+descriptions for each group of variables are given as follows.
+
+Patent portfolio -level variables are relevant to the first three criteria. For example, in
+terms of innovation, it is asked for ‘doe s the project employ novel concepts, approaches
+or methods?’ and ‘are the aims original and innovative?’, which are evaluated on the
+
 4 These criteria are the same for the a bovementioned two RFAs.
 
-13 
- 
-project sketched in the RFA. However, we are not able to rate the quality of the project 
-based on these criteria and the data for the reviewing results are not disclosed either, and 
-more importantly, such information is nonexistent for people who never apply for the 
-program. Therefore, we assume some of the metrics can be reflected in one’s past works. 
-For example, we estimate an inventor’s innovativeness by aggregating (i.e., average) the 
-innovative scores over his or her past patent portfolio. Based on this, four variables are 
-created: originality, radicalness, number of coinventors , and  number of institutions . 
-Trajtenberg et al. (1997) designed an indicator to measure the originality of a patent by 
-arguing an invention depending on diverse knowledge sources (i.e., a wide range of 
-technology fields) is more likely to be original. The radicalness index originated from 
-Shane (2001)’s idea, which states that the more radical an innovation is, the more it is 
-based on paradigms that are not the same as the one to which it is applied. For 
-variable number of coinventors,  we set up a set of ASTP inventors coinventors, and then 
-each person will be measured by the number of coinventors that in that set. The idea is 
-that if a person co -authored with the ASTP inventors’ coinventors, he or she may share 
-similar characteristics with the ASTP inventors. And for the variable  number of 
-institutions, it is similar to coinventors, but in this case, we consider the ASTP inventors’ 
-institutions associated with the patent assignee information. Note that these variables will 
-be first examined at the patent -level, and then aggregated to person-level based on one’s 
-patent portfolio.  
- 
-Inventor -level variables are related to the criterion of Investigator . In this group, six 
-variables are designed: experience, degree centrality, betweenness centrality, PageRank, 
-local betweenness centrality , and local PageRa nk. Variable experience refers to the 
-number of patents published until the given timestamp. The remaining five variables are 
-network statistics derived from an undirected coinventor network. Specifically, degree 
-centrality (number of collaborators), betwe enness centrality  (role as a bridge), and 
-PageRank  (importance of an inventor) are referred to as global measures, which are 
-obtained from the global coinventor network. The global coinventor network can further 
-be decomposed into several connected compone nts, which we call local networks or 
-communities. local betweenness centrality  (role as a bridge within his/her community) 
-and local PageRank  (importance of an inventor (node) within his/her community) are 
-local network statistics computed from these conne cted components. The reason for 
-creating both global and local network statistics is to take into account the situation where 
-one may have a relatively small value of PageRank  (global importance) but actively act 
+13
+
+project sketched in the RFA. However, we are not able to rate the quality of the project
+based on these criteria and the data for the reviewing results are not disclosed either, and
+more importantly, such information is nonexistent for people who never apply for the
+program. Therefore, we assume some of the metrics can be reflected in one’s past works.
+For example, we estimate an inventor’s innovativeness by aggregating (i.e., average) the
+innovative scores over his or her past patent portfolio. Based on this, four variables are
+created: originality, radicalness, number of coinventors , and  number of institutions .
+Trajtenberg et al. (1997) designed an indicator to measure the originality of a patent by
+arguing an invention depending on diverse knowledge sources (i.e., a wide range of
+technology fields) is more likely to be original. The radicalness index originated from
+Shane (2001)’s idea, which states that the more radical an innovation is, the more it is
+based on paradigms that are not the same as the one to which it is applied. For
+variable number of coinventors,  we set up a set of ASTP inventors coinventors, and then
+each person will be measured by the number of coinventors that in that set. The idea is
+that if a person co -authored with the ASTP inventors’ coinventors, he or she may share
+similar characteristics with the ASTP inventors. And for the variable  number of
+institutions, it is similar to coinventors, but in this case, we consider the ASTP inventors’
+institutions associated with the patent assignee information. Note that these variables will
+be first examined at the patent -level, and then aggregated to person-level based on one’s
+patent portfolio.
+
+Inventor -level variables are related to the criterion of Investigator . In this group, six
+variables are designed: experience, degree centrality, betweenness centrality, PageRank,
+local betweenness centrality , and local PageRa nk. Variable experience refers to the
+number of patents published until the given timestamp. The remaining five variables are
+network statistics derived from an undirected coinventor network. Specifically, degree
+centrality (number of collaborators), betwe enness centrality  (role as a bridge), and
+PageRank  (importance of an inventor) are referred to as global measures, which are
+obtained from the global coinventor network. The global coinventor network can further
+be decomposed into several connected compone nts, which we call local networks or
+communities. local betweenness centrality  (role as a bridge within his/her community)
+and local PageRank  (importance of an inventor (node) within his/her community) are
+local network statistics computed from these conne cted components. The reason for
+creating both global and local network statistics is to take into account the situation where
+one may have a relatively small value of PageRank  (global importance) but actively act
 as a bridge in his or her community (large value of local betweenness centrality).
 
-14 
- 
-Environment -level or community-level variables tied to the criterion of Environment. The 
-network statistics in the previous section are calculated with respect to a node. In this 
-section, we create environment -level variables using network statistics with respect to a 
-connected component (community). In this manner, we propose four variables: diameter 
-(the size of the community), average clustering coefficient  (the likeliness that two 
-neighbors of an inventor are also connected within the community), efficiency  (how 
-efficiently an inventor can reach others within the community), and community diversity. 
-The first three are commonly used network statistics. The last one is inspired by Aggarwal 
-et al.’s (2020) work, wher e they demonstrated a method for measuring within-team 
-knowledge diversity and across -team knowledge diversity. In our case, each inventor in 
-a community would be first represented by a characteristic vector, where each element 
-shows his or her experience in each International Patent Classification (IPC) subgroup. 
-The cosine diversity score is then calculated to measure the degree of diversity for a 
-community (as described in further detail later in the Appendix). As all variables 
-constructed in this group are network -level statistics, inventors within the same 
-community will share the same values.  
- 
-The matching process will be conducted based on these fourteen variables and 
-implemented for each year separately as the ASTP had multiple application receipt dates. 
-Also, one inventor may receive the ASTP award more than one time, and in this case, we 
-only count the earliest time for each inventor being enrolled in the ASTP. For each year, 
-these fourteen variables will be recomputed based on the information before that 
-timestamp. We carry on an optimal pair matching strategy using the R package ‘MatchIt,’ 
-where the sum of the pairwise distances in the matched sample will be minimized. Each 
-treated observation would be matched with two control observations. After that, we pool 
-together the matched sample for each year into a whole dataset. The overall flowch art is 
+14
+
+Environment -level or community-level variables tied to the criterion of Environment. The
+network statistics in the previous section are calculated with respect to a node. In this
+section, we create environment -level variables using network statistics with respect to a
+connected component (community). In this manner, we propose four variables: diameter
+(the size of the community), average clustering coefficient  (the likeliness that two
+neighbors of an inventor are also connected within the community), efficiency  (how
+efficiently an inventor can reach others within the community), and community diversity.
+The first three are commonly used network statistics. The last one is inspired by Aggarwal
+et al.’s (2020) work, wher e they demonstrated a method for measuring within-team
+knowledge diversity and across -team knowledge diversity. In our case, each inventor in
+a community would be first represented by a characteristic vector, where each element
+shows his or her experience in each International Patent Classification (IPC) subgroup.
+The cosine diversity score is then calculated to measure the degree of diversity for a
+community (as described in further detail later in the Appendix). As all variables
+constructed in this group are network -level statistics, inventors within the same
+community will share the same values.
+
+The matching process will be conducted based on these fourteen variables and
+implemented for each year separately as the ASTP had multiple application receipt dates.
+Also, one inventor may receive the ASTP award more than one time, and in this case, we
+only count the earliest time for each inventor being enrolled in the ASTP. For each year,
+these fourteen variables will be recomputed based on the information before that
+timestamp. We carry on an optimal pair matching strategy using the R package ‘MatchIt,’
+where the sum of the pairwise distances in the matched sample will be minimized. Each
+treated observation would be matched with two control observations. After that, we pool
+together the matched sample for each year into a whole dataset. The overall flowch art is
 depicted in Figure 3.
 
-15 
- 
- 
-Figure 3.  Flowchart of implementation of propensity score matching  
- 
-3.4. Matching results 
- 
-After estimating the propensity scores, one treated observation is matched with two 
-control observations for each year. In our sampl e, there are cases that a non -treated 
-observation is being matched multiple times to treated observations in different years. 
-Hence, in the final combining process, we only keep unique individuals by removing the 
-repeated non -treated observations. Also, there are two special cases where ASTP 
+15
+
+
+Figure 3.  Flowchart of implementation of propensity score matching
+
+3.4. Matching results
+
+After estimating the propensity scores, one treated observation is matched with two
+control observations for each year. In our sampl e, there are cases that a non -treated
+observation is being matched multiple times to treated observations in different years.
+Hence, in the final combining process, we only keep unique individuals by removing the
+repeated non -treated observations. Also, there are two special cases where ASTP
 inventors are matched into control groups before they are enrolled in the program
-5. For 
-these two cases, we simply delete them from the control group. In total, we get 54 
-observations in the treatment group and 70 obse rvations in the control group. Table 1 
-reports the results before and after matching for the first year (2004), where propensity 
-scores differ quite substantially between treated and untreated inventors before the 
-matching. After matching, the gap of prope nsity scores between treated and untreated 
-units is well alleviated, which can also be seen from other variables. Besides, the 
-distribution of propensity scores after matching is presented in Figure 4, which also 
-evidently proves the quality of matching. In particular, the mean values for the treatment 
- 
-5 Leamon, John H. and Korlach, Jonas are being matched as untreated units to sample of 2004 and 2005, 
-and both of them later received the grants in 2009 and 2010, respectively. This also somehow proved the 
+5. For
+these two cases, we simply delete them from the control group. In total, we get 54
+observations in the treatment group and 70 obse rvations in the control group. Table 1
+reports the results before and after matching for the first year (2004), where propensity
+scores differ quite substantially between treated and untreated inventors before the
+matching. After matching, the gap of prope nsity scores between treated and untreated
+units is well alleviated, which can also be seen from other variables. Besides, the
+distribution of propensity scores after matching is presented in Figure 4, which also
+evidently proves the quality of matching. In particular, the mean values for the treatment
+
+5 Leamon, John H. and Korlach, Jonas are being matched as untreated units to sample of 2004 and 2005,
+and both of them later received the grants in 2009 and 2010, respectively. This also somehow proved the
 quality of selected variables for the matching process.
 
-16 
- 
-and control groups before matching reveal some characteristics of the selected ASTP 
-inventors in that year. In terms of the past patent portfolio, the ASTP inventors, on 
-average, have relatively lower originality and radicalness values than inventors outside 
-the program. Also, it is noted that ASTP inventors are more likely to act as a ‘bridge’ than 
-others from the larger values of betweenness centrality (normalized) and local 
-betweenness centrality. Finally, in terms of the community environment, the table shows 
-that ASTP inventors are in a more extensive and more diversified community than 
-external inventors on average.  
- 
- 
+16
+
+and control groups before matching reveal some characteristics of the selected ASTP
+inventors in that year. In terms of the past patent portfolio, the ASTP inventors, on
+average, have relatively lower originality and radicalness values than inventors outside
+the program. Also, it is noted that ASTP inventors are more likely to act as a ‘bridge’ than
+others from the larger values of betweenness centrality (normalized) and local
+betweenness centrality. Finally, in terms of the community environment, the table shows
+that ASTP inventors are in a more extensive and more diversified community than
+external inventors on average.
+
+
 Table 1. Before and after matching results of the sample in 2004
 
-17 
- 
- 
-Figure 4. Distribution of propensity scores after matching  
- 
- 
-3.5. Regression models 
- 
-We expect that a government R&D program can promote technology convergence, which 
-can be observed from the increasing number of inter -field citations of inventors after 
-being enrol led in the program. We further divide the inter -field citations into backward 
-and forward citations, where the backward citations exhibit the engagement of inter-field 
-innovation activities, and the forward citations manifest their impact on the external 
+17
+
+
+Figure 4. Distribution of propensity scores after matching
+
+
+3.5. Regression models
+
+We expect that a government R&D program can promote technology convergence, which
+can be observed from the increasing number of inter -field citations of inventors after
+being enrol led in the program. We further divide the inter -field citations into backward
+and forward citations, where the backward citations exhibit the engagement of inter-field
+innovation activities, and the forward citations manifest their impact on the external
 environment. As the ASTP had multiple application receipt dates, we adopt a difference-
-in-differences (DiD) specification with multiple periods to estimate the relation between 
-the ASTP and the inter-field citation counts. The regression set-up is given as follows: 
- 
+in-differences (DiD) specification with multiple periods to estimate the relation between
+the ASTP and the inter-field citation counts. The regression set-up is given as follows:
+
 log(1 + 𝑌𝑌
-𝑖𝑖𝑖𝑖) = 𝛼𝛼 + 𝛽𝛽𝐷𝐷𝑖𝑖𝑖𝑖 + 𝛿𝛿𝑋𝑋𝑖𝑖𝑖𝑖 + 𝜇𝜇𝑖𝑖 + 𝜆𝜆𝑖𝑖 + 𝜖𝜖𝑖𝑖𝑖𝑖,
-𝑖𝑖 = 1, … , 124; 𝑡𝑡 = 2000, … , 2019 
- 
-In the above equation, 𝑌𝑌𝑖𝑖𝑖𝑖 is a measure of technology convergence of person 𝑖𝑖 in year 𝑡𝑡, 
-which can be either inter -field backward or forward citation  counts. Both backward and 
-forward citations are first counted at the patent level and then aggregated into inventor 
+𝑖𝑖𝑖𝑖 ) = 𝛼𝛼 + 𝛽𝛽𝐷𝐷𝑖𝑖𝑖𝑖 + 𝛿𝛿𝑋𝑋𝑖𝑖𝑖𝑖 + 𝜇𝜇𝑖𝑖 + 𝜆𝜆𝑖𝑖 + 𝜖𝜖𝑖𝑖𝑖𝑖 ,
+𝑖𝑖 = 1, … , 124; 𝑡𝑡 = 2000, … , 2019
+
+In the above equation, 𝑌𝑌𝑖𝑖𝑖𝑖 is a measure of technology convergence of person 𝑖𝑖 in year 𝑡𝑡,
+which can be either inter -field backward or forward citation  counts. Both backward and
+forward citations are first counted at the patent level and then aggregated into inventor
 level by taking the sum over one’s patent portfolio. When dealing with the forward
 
-18 
- 
-citations, we adopt a fixed window patent citation count (count f orward citation accrued 
-to the patent of interest from the patent application date to 5 years thereafter). 𝜆𝜆𝑖𝑖 and 𝜇𝜇𝑖𝑖 
-are year and individual fixed effects, 𝜖𝜖𝑖𝑖𝑖𝑖 is the error term. The variable of interest is 𝐷𝐷𝑖𝑖𝑖𝑖, 
-a dummy variable that equals one in the years after person first being enrolled in the 
-ASTP and zero otherwise. The coefficient, 𝛽𝛽, therefore indicates the impact of the ASTP 
-on technology convergenc e. 𝑋𝑋𝑖𝑖𝑖𝑖 is a set of time -varying person-level control variables. 
-Control variables are employed to secure a reliable estimate of the impact of ASTP on 
-enrolled inventors. The variables are selected to control three aspects: an inventor’s patent 
-quality, an inventor’s characteristics in the global and local network, and the 
-characteristics of an inventor’s surrounding network. Most of the variables are selected 
-from those being used for matching.  In addition, we need to control for the increase in 
-total citation counts. Furthermore , we include variable science, which represents the 
-number of backward citations of non -patent literature (NPL), to control for the effects of 
-citing scientific papers. Karvonen and Kässi (2013) suggest the count of NPL evaluates 
-the proximity between technological innovation and scientific research, which can be 
-used to measure the science-technology linkage to some extent. With that being said, 
-Meyer (2000) raises caution that NPL can be added by applicants to intentionally enhance 
-the breadth of patent coverage or due to the standard conduct of examiners.  
- 
-4. Results 
- 
-4.1. Empirical results  
- 
-Our first analysis is to show the effects of a government funding program on promoting 
+18
+
+citations, we adopt a fixed window patent citation count (count f orward citation accrued
+to the patent of interest from the patent application date to 5 years thereafter). 𝜆𝜆𝑖𝑖 and 𝜇𝜇𝑖𝑖
+are year and individual fixed effects, 𝜖𝜖𝑖𝑖𝑖𝑖 is the error term. The variable of interest is 𝐷𝐷𝑖𝑖𝑖𝑖,
+a dummy variable that equals one in the years after person first being enrolled in the
+ASTP and zero otherwise. The coefficient, 𝛽𝛽, therefore indicates the impact of the ASTP
+on technology convergenc e. 𝑋𝑋𝑖𝑖𝑖𝑖 is a set of time -varying person-level control variables.
+Control variables are employed to secure a reliable estimate of the impact of ASTP on
+enrolled inventors. The variables are selected to control three aspects: an inventor’s patent
+quality, an inventor’s characteristics in the global and local network, and the
+characteristics of an inventor’s surrounding network. Most of the variables are selected
+from those being used for matching.  In addition, we need to control for the increase in
+total citation counts. Furthermore , we include variable science, which represents the
+number of backward citations of non -patent literature (NPL), to control for the effects of
+citing scientific papers. Karvonen and Kässi (2013) suggest the count of NPL evaluates
+the proximity between technological innovation and scientific research, which can be
+used to measure the science-technology linkage to some extent. With that being said,
+Meyer (2000) raises caution that NPL can be added by applicants to intentionally enhance
+the breadth of patent coverage or due to the standard conduct of examiners.
+
+4. Results
+
+4.1. Empirical results
+
+Our first analysis is to show the effects of a government funding program on promoting
 technology convergence. Table 2 and 3 report the impact of the ASTP on change of inter-
 field citations. The model 1 -5 show that the coefficients of treated variable 𝐷𝐷
-𝑖𝑖𝑖𝑖 are 
-statistically significant at the 5% significance level when considering the inter -f ield 
-backward citations. Thus, we found evidence showing that the enrollment encouraged the 
-inventors to engage in multidisciplinary innovation activities. For model 2 and model 5, 
-variable science has statistically significant positive coefficients, suggesting inventors 
-who tend to cite more NPL are more likely to form inter-field backward citations. As for 
-the inter -field forward citations, we found that the coefficients of 𝐷𝐷 𝑖𝑖𝑖𝑖 are statistically 
-significant in terms of model 6, 8 , 9 and 10, while it become s insignificant when we are 
-controlling the patent quality. For variable science, it is significant (at the 1% level) and 
-positive again, in this case, indicating inventors who tend to cite more NPL are more 
+𝑖𝑖𝑖𝑖 are
+statistically significant at the 5% significance level when considering the inter -f ield
+backward citations. Thus, we found evidence showing that the enrollment encouraged the
+inventors to engage in multidisciplinary innovation activities. For model 2 and model 5,
+variable science has statistically significant positive coefficients, suggesting inventors
+who tend to cite more NPL are more likely to form inter-field backward citations. As for
+the inter -field forward citations, we found that the coefficients of 𝐷𝐷 𝑖𝑖𝑖𝑖 are statistically
+significant in terms of model 6, 8 , 9 and 10, while it become s insignificant when we are
+controlling the patent quality. For variable science, it is significant (at the 1% level) and
+positive again, in this case, indicating inventors who tend to cite more NPL are more
 likely to receive inter -field forward citations. However, when considering the forward
 
-19 
- 
-citations, both community efficiency and community diversity show negative coefficients, 
-suggesting locating in a diversified community may not increase the forward citations. In 
-summary, we found strong evidence that the program encouraged inventors to engag e in 
-multidisciplinary innovation activities, while relatively weak evidence for its influences 
-on the inventors outside the program.  
- 
- Model 1 
-log(#InterBWD+1) 
-Model 2 
-log(#InterBWD+1) 
-Model 3 
-log(#InterBWD+1) 
-Model 4 
-log(#InterBWD+1) 
-Model 5 
-log(#InterBWD+1) 
-treated  0.2822* * 
-(0.1246)  
-0.2114* * 
-(0.0941)  
-0.2361* * 
-(0.1109)  
-0.2289* * 
-(0.1096)  
-0.1713* * 
-(0.0858)  
-log(#TotalBWD+1)  0.5016***  
-(0.0475)  
-0.3617***  
-(0.0552)  
-0.4992***  
-(0.0500)  
-0.6031***  
-(0.0567)  
-0.4357***  
-(0.0552)  
-originality   2.1380***  
-(0.6213)  
-  2.6407***  
-(0.5364)  
-radicalness   0.1538  
-(0.2673)  
-  0.3549  
-(0.2357)  
-science   0.0738***  
-(0.0109)  
-  0.0584***  
-(0.0094)  
-degCentNorm    0.6346  
-(3.0947)  
- 2.5546  
-(2.1819)  
-btwnCentNorm   0.0678* * 
-(0.0300)  
- 0.0240 * 
-(0.0125)  
-btwnCentLocal    -0.1641  
-(0.3086)  
- 0.0636  
-(0.2476)  
-pagerank   1.6467  
-(5.2970)  
- -0.9004  
-(3.6013)  
-pagerankLocal    -1.3559* * 
-(0.5704)  
- -1.7171  
-(1.1311)  
-community diame ter    0.0009  
-(0.0053)  
-0.0007  
-(0.0069)  
-community avgcluster    -0.3793* * 
-(0.1803)  
--0.5364 * 
-(0.3044)  
-community efficie ncy    -0.3902* * 
-(0.1588)  
-0.2533  
-(0.4915)  
-community diversity     -0.2370  
-(0.3620)  
--0.2360  
-(0.2551)  
-constant  -0.0615  
-(0.0646)  
--0.0653  
-(0.0546)  
--0.0381  
-(0.0742)  
-0.0639  
-(0.0714)  
-0.0187  
-(0.0607)  
-N 
-adj. R2 
-AIC 
-BIC 
-2480  
-0.6973 
-3700  
-3900  
-2480  
-0.7838 
-2900  
-3000  
-2480  
-0.7208 
-3600  
-3700  
-2480  
-0.7260 
-3500  
-3600  
-2480  
-0.8023 
-2700  
-2900  
-Standard errors in parentheses 
-* p<0.10, ** p<0.05, *** p<0.01 
- 
+19
+
+citations, both community efficiency and community diversity show negative coefficients,
+suggesting locating in a diversified community may not increase the forward citations. In
+summary, we found strong evidence that the program encouraged inventors to engag e in
+multidisciplinary innovation activities, while relatively weak evidence for its influences
+on the inventors outside the program.
+
+ Model 1
+log(#InterBWD+1)
+Model 2
+log(#InterBWD+1)
+Model 3
+log(#InterBWD+1)
+Model 4
+log(#InterBWD+1)
+Model 5
+log(#InterBWD+1)
+treated  0.2822* *
+(0.1246)
+0.2114* *
+(0.0941)
+0.2361* *
+(0.1109)
+0.2289* *
+(0.1096)
+0.1713* *
+(0.0858)
+log(#TotalBWD+1)  0.5016***
+(0.0475)
+0.3617***
+(0.0552)
+0.4992***
+(0.0500)
+0.6031***
+(0.0567)
+0.4357***
+(0.0552)
+originality   2.1380***
+(0.6213)
+  2.6407***
+(0.5364)
+radicalness   0.1538
+(0.2673)
+  0.3549
+(0.2357)
+science   0.0738***
+(0.0109)
+  0.0584***
+(0.0094)
+degCentNorm    0.6346
+(3.0947)
+ 2.5546
+(2.1819)
+btwnCentNorm   0.0678* *
+(0.0300)
+ 0.0240 *
+(0.0125)
+btwnCentLocal    -0.1641
+(0.3086)
+ 0.0636
+(0.2476)
+pagerank   1.6467
+(5.2970)
+ -0.9004
+(3.6013)
+pagerankLocal    -1.3559* *
+(0.5704)
+ -1.7171
+(1.1311)
+community diame ter    0.0009
+(0.0053)
+0.0007
+(0.0069)
+community avgcluster    -0.3793* *
+(0.1803)
+-0.5364 *
+(0.3044)
+community efficie ncy    -0.3902* *
+(0.1588)
+0.2533
+(0.4915)
+community diversity     -0.2370
+(0.3620)
+-0.2360
+(0.2551)
+constant  -0.0615
+(0.0646)
+-0.0653
+(0.0546)
+-0.0381
+(0.0742)
+0.0639
+(0.0714)
+0.0187
+(0.0607)
+N
+adj. R2
+AIC
+BIC
+2480
+0.6973
+3700
+3900
+2480
+0.7838
+2900
+3000
+2480
+0.7208
+3600
+3700
+2480
+0.7260
+3500
+3600
+2480
+0.8023
+2700
+2900
+Standard errors in parentheses
+* p<0.10, ** p<0.05, *** p<0.01
+
 Table 2. DiD estimation results of backward inter -field citations
 
-20 
- 
- Model 6 
-log(#InterFWD+1) 
-Model 7 
-log(#InterFWD+1) 
-Model 8 
-log(#InterFWD+1) 
-Model 9 
-log(#InterFWD+1) 
-Model 10 
-log(#InterFWD+1) 
-treated  0.1283**  
-(0.0807)  
-0.1086  
-(0.0818)  
-0.1458*  
-(0.0807)  
-0.1821**  
-(0.0754)  
-0.1397**  
-(0.0763)  
-log(#TotalFWD+1)  0.5179***  
-(0.0361)  
-0.4099***  
-(0.0402)  
-0.5064***  
-(0.0357)  
-0.5092***  
-(0.0357)  
-0.4298***  
-(0.0389)  
-originality   0.1884  
-(0.2604)  
-  0.2765  
-(0.2750)  
-radicalness   -0.2016*  
-(0.1132)  
-  0.1747  
-(0.1105)  
-science   0.0394***  
-(0.0104)  
-  0.0327***  
-(0.0104)  
-degCentNorm    -2.2677  
-(1.7502)  
- -1.1640  
-(1.4680)  
-btwnCentNorm   0.0461  
-(0.0305)  
- 0.0176  
-(0.0183)  
-btwnCentLocal    -0.5500**  
-(0.2691)  
- -0.2127  
-(0.2841)  
-pagerank   2.8892  
-(2.6612)  
- 2.0277  
-(2.4623)  
-pagerankLocal    -0.2944  
-(0.2559)  
- 0.4113  
-(0.7421)  
-community diameter    0.0100**  
-(0.0048)  
-0.0035  
-(0.0049)  
-community avgcluster    -0.0036  
-(0.1080)  
-0.0765  
-(0.1741)  
-community efficie ncy    -0.1348  
-(0.0993)  
--0.4262  
-(0.3066)  
-community diversity     -0.8221***  
-(0.2319)  
--0.7176***  
-(0.2356)  
-constant  -0.0773*  
-(0.0423)  
--0.0681  
-(0.0449)  
--0.0631  
-(0.0495)  
--0.0330  
-(0.0436)  
--0.0332  
-(0.0453)  
-N 
-adj. R2 
-AIC 
-BIC 
-2480  
-0.6619 
-2400  
-2600  
-2480  
-0.6969 
-2200  
-2300  
-2480  
-0.6751 
-2300  
-2500  
-2480  
-0.6847 
-2300  
-2400  
-2480  
-0.7154 
-2000  
-2200  
-Standard errors in parentheses 
-* p<0.10, ** p<0.05, *** p<0.01 
- 
-Table 3. DiD estimation results of forward inter -field citations 
- 
-4.2. Dynamics of Enrollment  
- 
-In this section, we examine the causality effects of the program by incorporating a series 
-of dummy variables to trace the year -by-year effects of the enrollment. We do this by 
-fitting the regression model: 
- 
+20
+
+ Model 6
+log(#InterFWD+1)
+Model 7
+log(#InterFWD+1)
+Model 8
+log(#InterFWD+1)
+Model 9
+log(#InterFWD+1)
+Model 10
+log(#InterFWD+1)
+treated  0.1283**
+(0.0807)
+0.1086
+(0.0818)
+0.1458*
+(0.0807)
+0.1821**
+(0.0754)
+0.1397**
+(0.0763)
+log(#TotalFWD+1)  0.5179***
+(0.0361)
+0.4099***
+(0.0402)
+0.5064***
+(0.0357)
+0.5092***
+(0.0357)
+0.4298***
+(0.0389)
+originality   0.1884
+(0.2604)
+  0.2765
+(0.2750)
+radicalness   -0.2016*
+(0.1132)
+  0.1747
+(0.1105)
+science   0.0394***
+(0.0104)
+  0.0327***
+(0.0104)
+degCentNorm    -2.2677
+(1.7502)
+ -1.1640
+(1.4680)
+btwnCentNorm   0.0461
+(0.0305)
+ 0.0176
+(0.0183)
+btwnCentLocal    -0.5500**
+(0.2691)
+ -0.2127
+(0.2841)
+pagerank   2.8892
+(2.6612)
+ 2.0277
+(2.4623)
+pagerankLocal    -0.2944
+(0.2559)
+ 0.4113
+(0.7421)
+community diameter    0.0100**
+(0.0048)
+0.0035
+(0.0049)
+community avgcluster    -0.0036
+(0.1080)
+0.0765
+(0.1741)
+community efficie ncy    -0.1348
+(0.0993)
+-0.4262
+(0.3066)
+community diversity     -0.8221***
+(0.2319)
+-0.7176***
+(0.2356)
+constant  -0.0773*
+(0.0423)
+-0.0681
+(0.0449)
+-0.0631
+(0.0495)
+-0.0330
+(0.0436)
+-0.0332
+(0.0453)
+N
+adj. R2
+AIC
+BIC
+2480
+0.6619
+2400
+2600
+2480
+0.6969
+2200
+2300
+2480
+0.6751
+2300
+2500
+2480
+0.6847
+2300
+2400
+2480
+0.7154
+2000
+2200
+Standard errors in parentheses
+* p<0.10, ** p<0.05, *** p<0.01
+
+Table 3. DiD estimation results of forward inter -field citations
+
+4.2. Dynamics of Enrollment
+
+In this section, we examine the causality effects of the program by incorporating a series
+of dummy variables to trace the year -by-year effects of the enrollment. We do this by
+fitting the regression model:
+
 log(1 + 𝑌𝑌
-𝑖𝑖𝑖𝑖) = 𝛼𝛼 + 𝛽𝛽1𝐷𝐷𝑖𝑖𝑖𝑖
-−3 + 𝛽𝛽1𝐷𝐷𝑖𝑖𝑖𝑖
-−2+ ⋯+ 𝛽𝛽1𝐷𝐷𝑖𝑖𝑖𝑖
-+15+𝜇𝜇𝑖𝑖 + 𝜆𝜆𝑖𝑖 + 𝜖𝜖𝑖𝑖𝑖𝑖 , 
- 
-where the dummy variable 𝐷𝐷−𝑗𝑗 equals one for persons in the 𝑗𝑗th year before enrollment, 
-while 𝐷𝐷+𝑗𝑗  equals one for persons in the 𝑗𝑗th year after enrollment. It equals zero 
-otherwise. We exclude the first year (2000), thus the dynamic effects of enrollment, the 
+𝑖𝑖𝑖𝑖) = 𝛼𝛼 + 𝛽𝛽1 𝐷𝐷𝑖𝑖𝑖𝑖
+−3 + 𝛽𝛽1 𝐷𝐷𝑖𝑖𝑖𝑖
+−2 + ⋯ + 𝛽𝛽1𝐷𝐷𝑖𝑖𝑖𝑖
++15+𝜇𝜇𝑖𝑖 + 𝜆𝜆𝑖𝑖 + 𝜖𝜖𝑖𝑖𝑖𝑖  ,
+
+where the dummy variable 𝐷𝐷−𝑗𝑗 equals one for persons in the 𝑗𝑗th year before enrollment,
+while 𝐷𝐷+𝑗𝑗  equals one for persons in the 𝑗𝑗 th year after enrollment. It equals zero
+otherwise. We exclude the first year (2000), thus the dynamic effects of enrollment, the
 𝐷𝐷’s, are estimated with respect to the first year. Figures 5 and 6 plot the estimated results
 
-21 
- 
-and the 95% confidence intervals for inter -field backward and forward citations, 
-respectively.  
- 
- 
-Figure 5. The dynamic impact of enrollment on backward inter -field citation counts. 
- 
- 
-Figure 6. The dynamic impact of  enrollment on forward inter-field citation counts. 
- 
- 
-Figure 5 reveals two important observations. First, the estimated coefficients do not 
-significantly differ from zero in the three years before being enrolled in ASTP, 
-eliminating the concern of reverse causality that the ASTP might have selected 
-multidisciplinary inventors at the beginning. Second, the impact of the ASTP materializes 
-very fast, which can be seen from the estimated coefficients as well as the corresponding 
-confidence intervals quickly shi ft from zero. The quick responses are probably driven by 
-the stringent milestone system of the National Advisory Council for Human Genome 
-Research. The stringent milestone system has been an effective tool for NHGRI staff to 
+21
+
+and the 95% confidence intervals for inter -field backward and forward citations,
+respectively.
+
+
+Figure 5. The dynamic impact of enrollment on backward inter -field citation counts.
+
+
+Figure 6. The dynamic impact of  enrollment on forward inter-field citation counts.
+
+
+Figure 5 reveals two important observations. First, the estimated coefficients do not
+significantly differ from zero in the three years before being enrolled in ASTP,
+eliminating the concern of reverse causality that the ASTP might have selected
+multidisciplinary inventors at the beginning. Second, the impact of the ASTP materializes
+very fast, which can be seen from the estimated coefficients as well as the corresponding
+confidence intervals quickly shi ft from zero. The quick responses are probably driven by
+the stringent milestone system of the National Advisory Council for Human Genome
+Research. The stringent milestone system has been an effective tool for NHGRI staff to
 plan and monitor progress, whic h was also incorporated as a condition of award. In
 
-22 
- 
-addition, this could be also credited to the ‘Mandatory Annual Grantee Meetings’ held by 
-NHGRI, where ASTP inventors had to regularly report and share their progress.  
- 
-On the other hand, for the inter -field backward citations in figure 6, the estimates 
-coefficients show no effects in the three years before being enrolled in ASTP. And even 
-in the first two years after being enrolled in the ASTP, the coefficients still do not 
-significantly differ from zero (confidence intervals contain zero). While starting from the 
-third year after being enrolled, we can see gradually increasing effects on the number of 
-inter-field forward citations (confidence intervals shift from zero). The lagged effects of 
-the program on the external environment are probably due to external players needing 
-time to sense and assess the ASTP inventors’ works. Besides, the gradual increase in 
-estimated coefficients proved its impact of promoting external multidisciplinary 
-innovation activities. The annual grantee meetings, which is a distinct and innovative 
-feature of ASTP, could be one of the key factors that impel and foster the process. The 
-meeting had been limited to the ASTP inventors and only a small group of selected 
-participants durin g the first years of the program, but then extended to a large group of 
-audience from representatives of large companies to young scholars and students. The 
-collegial nature of the meetings facilitates knowledge sharing and forms a channel for 
-attracting e xperts in different fields, which in turn enhances its impact on nurturing 
-multidisciplinary collaborations.  
- 
-To sum up, our results confirm what was hypothesized: government R&D spending has 
-a positive impact on promoting technology convergence, which can be seen from the 
-significant positive values of treated variables on both inter -field backward and forward 
-citations. However, the impact might be heterogeneous from different groups of people 
-(i.e., university and industry). Therefore, in the next section, we further break down the 
-analysis to see its impact on the university and industry inventors.  
- 
-4.3. Impact of government R&D spending  
- 
-The ASTP supported both academic and industrial inventors. In this section, we test the 
-remaining two hypotheses. To test the second hypothesis, we labeled the ASTP inventors 
-in our dataset into two groups: university and industry. And for testing the third one, we 
+22
+
+addition, this could be also credited to the ‘Mandatory Annual Grantee Meetings’ held by
+NHGRI, where ASTP inventors had to regularly report and share their progress.
+
+On the other hand, for the inter -field backward citations in figure 6, the estimates
+coefficients show no effects in the three years before being enrolled in ASTP. And even
+in the first two years after being enrolled in the ASTP, the coefficients still do not
+significantly differ from zero (confidence intervals contain zero). While starting from the
+third year after being enrolled, we can see gradually increasing effects on the number of
+inter-field forward citations (confidence intervals shift from zero). The lagged effects of
+the program on the external environment are probably due to external players needing
+time to sense and assess the ASTP inventors’ works. Besides, the gradual increase in
+estimated coefficients proved its impact of promoting external multidisciplinary
+innovation activities. The annual grantee meetings, which is a distinct and innovative
+feature of ASTP, could be one of the key factors that impel and foster the process. The
+meeting had been limited to the ASTP inventors and only a small group of selected
+participants durin g the first years of the program, but then extended to a large group of
+audience from representatives of large companies to young scholars and students. The
+collegial nature of the meetings facilitates knowledge sharing and forms a channel for
+attracting e xperts in different fields, which in turn enhances its impact on nurturing
+multidisciplinary collaborations.
+
+To sum up, our results confirm what was hypothesized: government R&D spending has
+a positive impact on promoting technology convergence, which can be seen from the
+significant positive values of treated variables on both inter -field backward and forward
+citations. However, the impact might be heterogeneous from different groups of people
+(i.e., university and industry). Therefore, in the next section, we further break down the
+analysis to see its impact on the university and industry inventors.
+
+4.3. Impact of government R&D spending
+
+The ASTP supported both academic and industrial inventors. In this section, we test the
+remaining two hypotheses. To test the second hypothesis, we labeled the ASTP inventors
+in our dataset into two groups: university and industry. And for testing the third one, we
 classified the backward and forward citations accrued to the ASTP inventors by using the
 
-23 
- 
-attribute psn_sect or provided by PATSTAT 6. Explicitly, hypotheses 2 and 3 focus on 
-internal and external inventors, respectively.  
- 
-4.3.1. Direct influences on the internal inventors  
- 
-To see the program’s heterogeneous impact on enrolled academic and industrial groups, 
-we conduct the DiD estimations on these two groups, respectively. And in this case, we 
-are interested in backward citations only, as backward citations reflected how ASTP  
-shaped the behaviors of inventors who were participants in the program. Table 4 
-summarizes the regression results on two groups of people. The coefficients of the treated 
-variable are positive and significant for almost all scenarios, indicating the progr am 
-encouraged both parties to engage in technology convergence activities. However, we 
-found the coefficients for industrial groups are larger than that of academic groups, 
-regardless of inclusion of controlled variables, suggesting the program has greater impact 
-on industrial inventors than university inventors. Therefore, the results support the second 
-hypothesis.  
- 
- Panel A: ASTP university inventors Panel B: ASTP industrial inventors 
-log(#InterBWD+1) log(#InterBWD+1) log(#InterBWD+1) log(#InterBWD+1) 
-treated 0.4603** 
-(0.2007) 
-0.1631 
-(0.1104) 
-1.0401*** 
-(0.2312) 
-0.2951** 
-(0.1162) 
-Constant 0.0813 
-(0.0793) 
--0.0049 
-(0.0743) 
-0.1086 
-(0.0829) 
-0.0272 
-(0.0646) 
-     
-Control  Yes  Yes 
-Year FE Yes Yes Yes Yes 
-Individual FE Yes Yes Yes Yes 
-Observations 
-Adj-R2 
-AIC 
-BIC 
-1900 
-0.3401 
-3700 
-3800 
-1900 
-0.7541 
-1900 
-2000 
-1980 
-0.4287 
-4100 
-4200 
-1980 
-0.7852 
-2200 
-2400 
-Standard errors in parentheses 
-* p<0.10, ** p<0.05, *** p<0.01 
-Table 4. DiD estimation results for the ASTP university and industry inventors  
- 
-6 In PATSATA, each applicant has been assigned to one or more sectors, including individual, company, 
-unknown, government, non-profit organization, university, and hospital. In our sample, the appli cants of 
-backw ard and forw ard citations are mainly from the sectors of company, university, a nd individual. In the 
-following analyses, we will focus on the sectors of company and university, and use ‘industry’ as an 
+23
+
+attribute psn_sect or provided by PATSTAT 6. Explicitly, hypotheses 2 and 3 focus on
+internal and external inventors, respectively.
+
+4.3.1. Direct influences on the internal inventors
+
+To see the program’s heterogeneous impact on enrolled academic and industrial groups,
+we conduct the DiD estimations on these two groups, respectively. And in this case, we
+are interested in backward citations only, as backward citations reflected how ASTP
+shaped the behaviors of inventors who were participants in the program. Table 4
+summarizes the regression results on two groups of people. The coefficients of the treated
+variable are positive and significant for almost all scenarios, indicating the progr am
+encouraged both parties to engage in technology convergence activities. However, we
+found the coefficients for industrial groups are larger than that of academic groups,
+regardless of inclusion of controlled variables, suggesting the program has greater impact
+on industrial inventors than university inventors. Therefore, the results support the second
+hypothesis.
+
+ Panel A: ASTP university inventors Panel B: ASTP industrial inventors
+log(#InterBWD+1) log(#InterBWD+1) log(#InterBWD+1) log(#InterBWD+1)
+treated 0.4603**
+(0.2007)
+0.1631
+(0.1104)
+1.0401***
+(0.2312)
+0.2951**
+(0.1162)
+Constant 0.0813
+(0.0793)
+-0.0049
+(0.0743)
+0.1086
+(0.0829)
+0.0272
+(0.0646)
+
+Control  Yes  Yes
+Year FE Yes Yes Yes Yes
+Individual FE Yes Yes Yes Yes
+Observations
+Adj-R2
+AIC
+BIC
+1900
+0.3401
+3700
+3800
+1900
+0.7541
+1900
+2000
+1980
+0.4287
+4100
+4200
+1980
+0.7852
+2200
+2400
+Standard errors in parentheses
+* p<0.10, ** p<0.05, *** p<0.01
+Table 4. DiD estimation results for the ASTP university and industry inventors
+
+6 In PATSATA, each applicant has been assigned to one or more sectors, including individual, company,
+unknown, government, non-profit organization, university, and hospital. In our sample, the appli cants of
+backw ard and forw ard citations are mainly from the sectors of company, university, a nd individual. In the
+following analyses, we will focus on the sectors of company and university, and use ‘industry’ as an
 interchangeable word for company.
 
-24 
- 
-In addition, as the backward citations depicted the knowledge flows in, we can, therefore, 
-also track the source of knowledge of the ASTP inventors. Specifically, we look at four 
-different channels that knowledge flows to inventors inside the program, which are 
-represented by four arrows in figure 7 . The thickness of each arrow is proportional to the 
-citation counts shown in figure 9. In figure 7 and 9, the sector of industry plays a dominant 
-role in exploiting multidisciplinary knowledge from outside. This probably can be 
-explained as, by receiving funding from the ASTP, companies can shift from near -term 
-product development and to devote resources to innovative early-stage projects. In figure 
-9, even the trend of ASTP university inventors is lower than their industrial counterparts, 
-we still can observe a clear growing pattern after being enrolled in the program. This may 
-be explained as the ASTP buttressed regular academic sections to participate in 
-technological development projects, which are generally overlooked in a lab since these 
-are typically just seen as non -hypothesis-driven, and massive data-gath ering exercises 
-(Schloss et al., 2020). Additionally, when looking at the knowledge source of the ASTP  
-university inventors, we found they cited a comparable number of patents from the 
-industry. This result is somewhat interesting because the university ha s always been 
-considered as one of the major knowledge sources for industry. The reverse relationship, 
-in this case, leaves a clue for government intervention can forward technological research. 
-And the phenomenon might also be interpreted as the effects of the grantee meeting s, 
-which facilitated the knowledge diffusion between industrial and academic groups, and 
-in turn let university research perceive knowledge in the industry sector.  
- 
- 
+24
+
+In addition, as the backward citations depicted the knowledge flows in, we can, therefore,
+also track the source of knowledge of the ASTP inventors. Specifically, we look at four
+different channels that knowledge flows to inventors inside the program, which are
+represented by four arrows in figure 7 . The thickness of each arrow is proportional to the
+citation counts shown in figure 9. In figure 7 and 9, the sector of industry plays a dominant
+role in exploiting multidisciplinary knowledge from outside. This probably can be
+explained as, by receiving funding from the ASTP, companies can shift from near -term
+product development and to devote resources to innovative early-stage projects. In figure
+9, even the trend of ASTP university inventors is lower than their industrial counterparts,
+we still can observe a clear growing pattern after being enrolled in the program. This may
+be explained as the ASTP buttressed regular academic sections to participate in
+technological development projects, which are generally overlooked in a lab since these
+are typically just seen as non -hypothesis-driven, and massive data-gath ering exercises
+(Schloss et al., 2020). Additionally, when looking at the knowledge source of the ASTP
+university inventors, we found they cited a comparable number of patents from the
+industry. This result is somewhat interesting because the university ha s always been
+considered as one of the major knowledge sources for industry. The reverse relationship,
+in this case, leaves a clue for government intervention can forward technological research.
+And the phenomenon might also be interpreted as the effects of the grantee meeting s,
+which facilitated the knowledge diffusion between industrial and academic groups, and
+in turn let university research perceive knowledge in the industry sector.
+
+
 Figure 7. Channels for inflow knowledge (directions for backward cit ations)
 
-25 
- 
- 
-Figure 8. Channels for outflow knowledge (directions for forward citations)  
- 
- 
-Figure 9. Decomposition of citation counts  
- 
- 
-4.3.2. Influences on the external inventors  
- 
-For the third hypothesis, we argue that the program has a more significant impact on 
-attracting external industrial inventors than academic inventors, which can be traced by 
-the forward citations received by the ASTP inventors. Since the forward citations trace 
-the trajectory of knowledge flows out, it is equivalent t o expect th at these forward 
-citations are mainly cited by external industrial entities. Figure 8 delineates the four 
-channels that knowledge flows from the ASTP inventors to inventors outside the program, 
-where the thickness of each arrow is proportionate to the forward citation counts shown 
-in figure 9 . In figure 8 and 9, the results suggest that the external industrial players are 
-the main audience to program. Table 5 presents the statistical comparison of the forward 
+25
+
+
+Figure 8. Channels for outflow knowledge (directions for forward citations)
+
+
+Figure 9. Decomposition of citation counts
+
+
+4.3.2. Influences on the external inventors
+
+For the third hypothesis, we argue that the program has a more significant impact on
+attracting external industrial inventors than academic inventors, which can be traced by
+the forward citations received by the ASTP inventors. Since the forward citations trace
+the trajectory of knowledge flows out, it is equivalent t o expect th at these forward
+citations are mainly cited by external industrial entities. Figure 8 delineates the four
+channels that knowledge flows from the ASTP inventors to inventors outside the program,
+where the thickness of each arrow is proportionate to the forward citation counts shown
+in figure 9 . In figure 8 and 9, the results suggest that the external industrial players are
+the main audience to program. Table 5 presents the statistical comparison of the forward
 citations made by the external univer sity and industry players. The results again confirm
 
-26 
- 
-that forward citations made by external industrial inventors are significantly greater than 
-that of external university inventors on average.  
- 
-Table 5. Forward citations made by external university and industry players  
- 
-As we mentioned earlier, the attractive force to external inventors can also be 
-conceptualized as the ‘leverage effects’ of the program. The results suggest that the 
-‘leverage effects’ are more effective to external industr ial inventors, indicating the 
-program per se can be considered as a ‘lever’ to attract other industrial players (e.g., 
-investors) coming on board, bringing extra resources to the table for further development 
-and commercialization. While for the external academic inventors, the limited ‘leverage 
-effect’ is observed. And that might be because the costs for developing the related 
-technologies go beyond the affordability of most laboratories. Also, as we explained 
-before, external academic inventors may have less motivation to directly the convergence 
-activities. 
- 
-5. Conclusion and discussion 
- 
-This paper has investigated the impact of a government funding program (i.e., ASTP ) on 
-promoting technological convergence. We hypothesize that a government -supported 
-program has a positive effect on promoting technology convergence and the program has 
-a greater impact on industrial inventors than university inventors. Also, we conceptualize 
+26
+
+that forward citations made by external industrial inventors are significantly greater than
+that of external university inventors on average.
+
+Table 5. Forward citations made by external university and industry players
+
+As we mentioned earlier, the attractive force to external inventors can also be
+conceptualized as the ‘leverage effects’ of the program. The results suggest that the
+‘leverage effects’ are more effective to external industr ial inventors, indicating the
+program per se can be considered as a ‘lever’ to attract other industrial players (e.g.,
+investors) coming on board, bringing extra resources to the table for further development
+and commercialization. While for the external academic inventors, the limited ‘leverage
+effect’ is observed. And that might be because the costs for developing the related
+technologies go beyond the affordability of most laboratories. Also, as we explained
+before, external academic inventors may have less motivation to directly the convergence
+activities.
+
+5. Conclusion and discussion
+
+This paper has investigated the impact of a government funding program (i.e., ASTP ) on
+promoting technological convergence. We hypothesize that a government -supported
+program has a positive effect on promoting technology convergence and the program has
+a greater impact on industrial inventors than university inventors. Also, we conceptualize
 a ‘leverage effect’ of the program and hypothesize that it is more effective to ex ternal
 
-27 
- 
-industrial inventors than their academic counterparts. To investigate this, we developed a 
-novel dataset by linking the ASTP grantee information provided by NHGRI with the 
-PATSTAT patent database. Based on this, we created inventor-level characteristics to do 
-propensity score matching, establishing a control group of inventors who are comparable 
-to those enrolled in the ASTP. We then evaluated the impact of the ASTP through DiD 
-models on the matched sample. Our results provided evidence that the ASTP encouraged 
-the enrolled inventors and external inventors to engage in multidisciplinary innovation 
-activities. We then illustrated the program’s heterogeneous effects on different groups of 
-grantees. The results confirmed our second hypothesis that it has  a greater impact on 
-industrial inventors than university inventors. Finally, we also showed the ‘leverag e 
-effects’ of the program are more effective to external companies than academic 
-institutions. 
- 
-Some of the results of this work are in line with previous theoretical and empirical studies 
-(e.g., Karvonen and Kässi, 2013; Hacklin, 2007). The regression table suggests that the 
-number of non-patent citations is positively correlated to the forming of both inter -f ield 
-backward and forward citations. This ec hoes the previous literature (e.g., Curran and 
-Leker, 2011), which states scientific research provides a knowledge base for convergence. 
-However, Caviggioli (2016) demonstrates that new convergence is more likely to occur 
-among fields that are less anchored in scientific research. This calls for more research to 
-explore the relation of scientific knowledge to convergence. Besides, it is interesting but 
-natural to discover that, in the case of the forward citations, the treatment effects became 
-insignificant when patent quality was controlled, suggesting future research should 
-include this factor.  
- 
-5.1. Government R&D spending as a convergence driver  
- 
-Unlike a conventionally linear R&D activity, which impels technological advancement 
-by deepening the investig ation within a single area, convergence creates novel 
-technologies through combining knowledge from various domains. The inherent 
-multidisciplinary nature implies that convergence requires a long-run development and is 
-usually associated with uncertainties  and risks, which is a major hindrance to daunt 
-potential private investors. In this sense, as innovation and management scholars 
-discussed, government -supported programs with distinct features help remove barriers, 
-reduce R&D market failures, and ensure t he benefits of the investments (Littler and 
+27
+
+industrial inventors than their academic counterparts. To investigate this, we developed a
+novel dataset by linking the ASTP grantee information provided by NHGRI with the
+PATSTAT patent database. Based on this, we created inventor-level characteristics to do
+propensity score matching, establishing a control group of inventors who are comparable
+to those enrolled in the ASTP. We then evaluated the impact of the ASTP through DiD
+models on the matched sample. Our results provided evidence that the ASTP encouraged
+the enrolled inventors and external inventors to engage in multidisciplinary innovation
+activities. We then illustrated the program’s heterogeneous effects on different groups of
+grantees. The results confirmed our second hypothesis that it has  a greater impact on
+industrial inventors than university inventors. Finally, we also showed the ‘leverag e
+effects’ of the program are more effective to external companies than academic
+institutions.
+
+Some of the results of this work are in line with previous theoretical and empirical studies
+(e.g., Karvonen and Kässi, 2013; Hacklin, 2007). The regression table suggests that the
+number of non-patent citations is positively correlated to the forming of both inter -f ield
+backward and forward citations. This ec hoes the previous literature (e.g., Curran and
+Leker, 2011), which states scientific research provides a knowledge base for convergence.
+However, Caviggioli (2016) demonstrates that new convergence is more likely to occur
+among fields that are less anchored in scientific research. This calls for more research to
+explore the relation of scientific knowledge to convergence. Besides, it is interesting but
+natural to discover that, in the case of the forward citations, the treatment effects became
+insignificant when patent quality was controlled, suggesting future research should
+include this factor.
+
+5.1. Government R&D spending as a convergence driver
+
+Unlike a conventionally linear R&D activity, which impels technological advancement
+by deepening the investig ation within a single area, convergence creates novel
+technologies through combining knowledge from various domains. The inherent
+multidisciplinary nature implies that convergence requires a long-run development and is
+usually associated with uncertainties  and risks, which is a major hindrance to daunt
+potential private investors. In this sense, as innovation and management scholars
+discussed, government -supported programs with distinct features help remove barriers,
+reduce R&D market failures, and ensure t he benefits of the investments (Littler and
 Coombs, 1988; Jeong and Lee, 2015; Martin and Scott, 2000). Specifically, the
 
-28 
- 
-multidisciplinary configuration establishes a knowledge foundation for the convergence, 
-and the longer -than-usual grant durations allow 1) industrial players to shift back from 
+28
+
+multidisciplinary configuration establishes a knowledge foundation for the convergence,
+and the longer -than-usual grant durations allow 1) industrial players to shift back from
 guaranteed near -term product development and 2) academic researchers to conduct in -
-depth research rather than ‘muddle through’ the problem. Although the program’s direct 
-impact, namely, propelling participants to engage in convergence activities, might only 
-induce a few initial sparks in the existing technological space, its ripple effects could start 
-a prairie fire. First, the program itself could be a route for increasing the exposure of 
-internal discoveries. In addition, the peer-review mechanism ensures scientific credibility 
-and standards, which can help to convince external parties. Moreover, with the 
-involvement of industrial participants, which facilitates the demonstration of 
-commercialization potentials, it may attract more private investors to join in (or even 
-induce social bubbles) and then speed up the development of converged technologies. 
-The joint force may eventually create a significant transformation in the technological 
-space (e.g., converged tech nologies become mainstream, for example, next generation 
-sequencing in this work).  
- 
-5.2. Implications  
- 
-As the ASTP was successful in achieving its goal through fostering multidisciplinary 
-collaboration and facilitating the commercialization of the NGS (Hayden, 2014; Nature 
-2014), this study contributes to an empirical demonstration of how a government funding 
-program can promote technology convergence. For explicitly promoting innovation 
-through the channel of technology convergence, a large-scale convergence-oriented R&D 
-program is needed (Jeong and Lee, 2015). In this study, the results suggest that industrial 
-inventors under such a program are more actively engaging in convergence activities than 
-academic counterparts. Also, the involvement of industrial participants underscores the 
-commercial viability of the projects, which may motivate universities to take on 
-technological research rather than pure scientific exploration. This gives the suggestion 
-of when designing technology convergence -oriented R&D programs, policymakers 
-should consider the effects of the inclusion of industrial entities. In addition, scholars 
-have raised concerns about the impact of such programs (Metzger and Zare, 1999; Jeong 
-and Lee, 2015) may be only marginal. Our work shows that a government R&D prog ram 
-can serve as a channel for disclosure and propagandize internal findings and as suring 
-authorities of incipient and risky convergence concepts, which may lead to ‘leverag e 
-effects’ enticing outside private investors and industrial players on board. However, such 
+depth research rather than ‘muddle through’ the problem. Although the program’s direct
+impact, namely, propelling participants to engage in convergence activities, might only
+induce a few initial sparks in the existing technological space, its ripple effects could start
+a prairie fire. First, the program itself could be a route for increasing the exposure of
+internal discoveries. In addition, the peer-review mechanism ensures scientific credibility
+and standards, which can help to convince external parties. Moreover, with the
+involvement of industrial participants, which facilitates the demonstration of
+commercialization potentials, it may attract more private investors to join in (or even
+induce social bubbles) and then speed up the development of converged technologies.
+The joint force may eventually create a significant transformation in the technological
+space (e.g., converged tech nologies become mainstream, for example, next generation
+sequencing in this work).
+
+5.2. Implications
+
+As the ASTP was successful in achieving its goal through fostering multidisciplinary
+collaboration and facilitating the commercialization of the NGS (Hayden, 2014; Nature
+2014), this study contributes to an empirical demonstration of how a government funding
+program can promote technology convergence. For explicitly promoting innovation
+through the channel of technology convergence, a large-scale convergence-oriented R&D
+program is needed (Jeong and Lee, 2015). In this study, the results suggest that industrial
+inventors under such a program are more actively engaging in convergence activities than
+academic counterparts. Also, the involvement of industrial participants underscores the
+commercial viability of the projects, which may motivate universities to take on
+technological research rather than pure scientific exploration. This gives the suggestion
+of when designing technology convergence -oriented R&D programs, policymakers
+should consider the effects of the inclusion of industrial entities. In addition, scholars
+have raised concerns about the impact of such programs (Metzger and Zare, 1999; Jeong
+and Lee, 2015) may be only marginal. Our work shows that a government R&D prog ram
+can serve as a channel for disclosure and propagandize internal findings and as suring
+authorities of incipient and risky convergence concepts, which may lead to ‘leverag e
+effects’ enticing outside private investors and industrial players on board. However, such
 ‘leverage effects’ are only limited to academic players. In terms of the limitations and
 
-29 
- 
-future, the paper mentioned that several program settings and management practices may 
-also contribute to the positive impact of convergence; however, the prominence of these 
-features may need to be addressed in future studies.  
- 
-Appendix 
-Table A.1. Measuring the degree of diversity for a community 
- 
-The characteristic vector for inventor 𝑖𝑖  is formed based on their patents in each class, 
+29
+
+future, the paper mentioned that several program settings and management practices may
+also contribute to the positive impact of convergence; however, the prominence of these
+features may need to be addressed in future studies.
+
+Appendix
+Table A.1. Measuring the degree of diversity for a community
+
+The characteristic vector for inventor 𝑖𝑖  is formed based on their patents in each class,
 which can be represented by 𝑥𝑥
-𝑖𝑖. And then the degree of diversity for a community is 
-given as  
+𝑖𝑖. And then the degree of diversity for a community is
+given as
 1 −
 1
-𝑛𝑛(𝑛𝑛−1) [∑ 𝑠𝑠�𝑥𝑥𝑖𝑖, 𝑥𝑥𝑗𝑗�𝑖𝑖,𝑗𝑗 − 𝑛𝑛], 
-where function 𝑠𝑠 is the cosine similarity. For the given two examples, the degree of 
-diversity for the community I is 0.059, and 0.251 for the community II.  
- 
- 
-References  
- 
-Kodama, F., 1995. Emerging Patterns of Innovation:  sources of Japan's Technological 
-Edge. Harvard Business School Press.  
+𝑛𝑛(𝑛𝑛−1) [∑ 𝑠𝑠�𝑥𝑥𝑖𝑖, 𝑥𝑥𝑗𝑗�𝑖𝑖,𝑗𝑗 − 𝑛𝑛],
+where function 𝑠𝑠 is the cosine similarity. For the given two examples, the degree of
+diversity for the community I is 0.059, and 0.251 for the community II.
+
+
+References
+
+Kodama, F., 1995. Emerging Patterns of Innovation:  sources of Japan's Technological
+Edge. Harvard Business School Press.
 Schumpeter, J., 1939. Business Cycles. Mcgraw-Hill Book Company, Inc., New York.
 
-30 
- 
-Curran, C.S., Leker, J., 2011. Patent indicators for monitoring convergence –  examples 
-from NFF and ICT. Technol. Forecast. Soc. Change 78, 256-273.  
-Karvonen, M., Kässi, T., 2013. Patent citations as a tool for analysing the early stag es of 
-convergence. Technol. Forecast. Soc. Change 80, 1094 -1107. 
-Preschitschek, N., Niemann, H., Leker, J., Moehrle, M.G., 20 13. Anticipating industry 
-convergence: semantic analyses vs IPC co -classification analyses of patents. Foresight 
-15 (6), 446– 464. 
-Ko, N., Yoon, J., Seo, W., 2014. Analyzing interdisciplinarity of technology fusion 
-using knowledge flows of patents. Expert Syst. Appl. 41 (4), 1955-1963. 
-Kim, E., Cho, Y., Kim, W., 2014. Dynamic patterns of technological convergence in 
-printed electronics technologies: patent citation network. Scientometrics 98, 975 -998. 
-Passing, F., Moehrle, M.G., 2015. Measuring technological  convergence in the field of 
-smart grids: A semantic patent analysis approach using textual corpora of technologies. 
-In: Proceedings of the International Conference on Management of Engineering and 
-Technology (PICMET), 2015 Portland. IEEE, pp. 559-570.  
-Zhou, Y., Dong, F., Kong, D., Liu, Y., 2019. Unfolding the convergence process of 
-scientific knowledge for the early identification of emerging technologies. Technol. 
-Forecast. Soc. Change 144, 205 -220. 
-Eilers, K., Frischkorn, J., Eppinger, E., Waltera, L., Moehrlea, M.G., 2019. Patent-based 
-semantic measurement of one-way and two -way technology convergence: The case of 
+30
+
+Curran, C.S., Leker, J., 2011. Patent indicators for monitoring convergence –  examples
+from NFF and ICT. Technol. Forecast. Soc. Change 78, 256-273.
+Karvonen, M., Kässi, T., 2013. Patent citations as a tool for analysing the early stag es of
+convergence. Technol. Forecast. Soc. Change 80, 1094 -1107.
+Preschitschek, N., Niemann, H., Leker, J., Moehrle, M.G., 20 13. Anticipating industry
+convergence: semantic analyses vs IPC co -classification analyses of patents. Foresight
+15 (6), 446– 464.
+Ko, N., Yoon, J., Seo, W., 2014. Analyzing interdisciplinarity of technology fusion
+using knowledge flows of patents. Expert Syst. Appl. 41 (4), 1955-1963.
+Kim, E., Cho, Y., Kim, W., 2014. Dynamic patterns of technological convergence in
+printed electronics technologies: patent citation network. Scientometrics 98, 975 -998.
+Passing, F., Moehrle, M.G., 2015. Measuring technological  convergence in the field of
+smart grids: A semantic patent analysis approach using textual corpora of technologies.
+In: Proceedings of the International Conference on Management of Engineering and
+Technology (PICMET), 2015 Portland. IEEE, pp. 559-570.
+Zhou, Y., Dong, F., Kong, D., Liu, Y., 2019. Unfolding the convergence process of
+scientific knowledge for the early identification of emerging technologies. Technol.
+Forecast. Soc. Change 144, 205 -220.
+Eilers, K., Frischkorn, J., Eppinger, E., Waltera, L., Moehrlea, M.G., 2019. Patent-based
+semantic measurement of one-way and two -way technology convergence: The case of
 ultraviolet light emitting diodes (UV-LEDs). Technol. Forecast. Soc. Change 140, 341-
-353. 
-Kim, J., Lee, S., 2017. Forecasting and identifying multi-technology convergence based 
-on patent data: the case of IT and BT industries in 2020. Scientometrics 111, 47-65.  
-Kim, J., Kim, S., Lee, C., 2019. Anticipating technological convergence: Link 
-prediction using Wikipedia hyperlinks. Technovation 79, 25-34.  
-Lee, C., Hong, S., Kim, J., 2020. Anticipating multi ‑technology convergence: a machine 
-learning approach using patent information. Scientometrics 126,1867-1896.  
-Kim, T.S., Sohn, S.Y., 2020. Machine -learning-based deep semantic analysis approach 
-for fo recasting new technology convergence. Technol. Forecast. Soc. Change 157, 
-120095.  
-Jeong, S., Lee, S., 2015. What drives technology convergence? Exploring the influence 
-of technological and resource allocation contexts. J. Eng. Tech. Manage. 36, 78– 96. 
-Sick, N., Bröring, S., 2021. Exploring the research landscape of convergence from a 
-TIM perspective: A review and research agenda. Technol. Forecast. Soc. Change, 
+353.
+Kim, J., Lee, S., 2017. Forecasting and identifying multi-technology convergence based
+on patent data: the case of IT and BT industries in 2020. Scientometrics 111, 47-65.
+Kim, J., Kim, S., Lee, C., 2019. Anticipating technological convergence: Link
+prediction using Wikipedia hyperlinks. Technovation 79, 25-34.
+Lee, C., Hong, S., Kim, J., 2020. Anticipating multi ‑technology convergence: a machine
+learning approach using patent information. Scientometrics 126,1867-1896.
+Kim, T.S., Sohn, S.Y., 2020. Machine -learning-based deep semantic analysis approach
+for fo recasting new technology convergence. Technol. Forecast. Soc. Change 157,
+120095.
+Jeong, S., Lee, S., 2015. What drives technology convergence? Exploring the influence
+of technological and resource allocation contexts. J. Eng. Tech. Manage. 36, 78– 96.
+Sick, N., Bröring, S., 2021. Exploring the research landscape of convergence from a
+TIM perspective: A review and research agenda. Technol. Forecast. Soc. Change,
 121321.
 
-31 
- 
-Song, C.H., Elvers, D., Leker, J., 2017. Anticipation of converging technology areas — 
-A refined approach for the identification of attractive fields of innovation. Technol. 
-Forecast. Social Change 116, 98– 115. 
-Caviggioli, F., 2016. Technology fusion: Identification and analysis of the drivers of 
-technology convergence using patent data. Technovation 55, 22–32. 
-Hayden, E.C., 2014. Technology: the $1000 genome. Nature 507, 294– 295. 
-Hacklin, F., 2007. Management of Convergence in Innovation: Strategies and 
-Capabilities for Value Creation Beyond Blurring Industry Boundaries. Springer Science 
-& Business Media. 
-Kodama, F., 1992. Technology fusion and the new research -and-development. 
-Harv.Bus. Rev. 70 (4), 70– 78. 
-Schumpeter, J.A 1934. The Theory of Economic Development. Boston, MA: Harvard 
-Univer-sity Press. 
-Curran, C.S., Bröring, S., Leker, J., 2010. Anticipating converging industries using 
-publicly available data. Technol. Forecast. Soc. Change 77, 385 -395. 
-Mowery,  D.C.,  Rosenberg,  N.,  1979.  The  influence  of  market  demand  upon  
-innovation: a  critical  review  of  some  empiric al studies. Res. Policy 8, 102– 153. 
-Han, E.J., Sohn, S.Y., 2016. Technological convergence in standards for information 
-and communication technologies. Technol. Forecast. Soc. Chang. 106, 1– 10. 
-Gambardella, A., Giarratana, M.S., 2013. General technological  capabilities, product 
-market fragmentation, and markets for technology. Res. Policy 42 (2), 315 –325. 
+31
+
+Song, C.H., Elvers, D., Leker, J., 2017. Anticipation of converging technology areas —
+A refined approach for the identification of attractive fields of innovation. Technol.
+Forecast. Social Change 116, 98– 115.
+Caviggioli, F., 2016. Technology fusion: Identification and analysis of the drivers of
+technology convergence using patent data. Technovation 55, 22–32.
+Hayden, E.C., 2014. Technology: the $1000 genome. Nature 507, 294– 295.
+Hacklin, F., 2007. Management of Convergence in Innovation: Strategies and
+Capabilities for Value Creation Beyond Blurring Industry Boundaries. Springer Science
+& Business Media.
+Kodama, F., 1992. Technology fusion and the new research -and-development.
+Harv.Bus. Rev. 70 (4), 70– 78.
+Schumpeter, J.A 1934. The Theory of Economic Development. Boston, MA: Harvard
+Univer-sity Press.
+Curran, C.S., Bröring, S., Leker, J., 2010. Anticipating converging industries using
+publicly available data. Technol. Forecast. Soc. Change 77, 385 -395.
+Mowery,  D.C.,  Rosenberg,  N.,  1979.  The  influence  of  market  demand  upon
+innovation: a  critical  review  of  some  empiric al studies. Res. Policy 8, 102– 153.
+Han, E.J., Sohn, S.Y., 2016. Technological convergence in standards for information
+and communication technologies. Technol. Forecast. Soc. Chang. 106, 1– 10.
+Gambardella, A., Giarratana, M.S., 2013. General technological  capabilities, product
+market fragmentation, and markets for technology. Res. Policy 42 (2), 315 –325.
 Appio, F.P., Martini, A., Fantoni, G., 2017. The light and shade of knowledge re -
-combination: insights from a general -purpose technology. Technol. Forecast. 
-Soc.Chang. 125, 154 –165. 
-Dowling, M., Lechner, C., Thielmann, B., 1998.Convergence —innovation and change 
+combination: insights from a general -purpose technology. Technol. Forecast.
+Soc.Chang. 125, 154 –165.
+Dowling, M., Lechner, C., Thielmann, B., 1998.Convergence —innovation and change
 of market structures between television and online services. Electron. Mark. 8 (4),31–
-35. 
-Nordmann, A., 2004. Converging Technologies: Shaping the Future of European 
-Societies. Office for Official Publications of the  European Communities (EUR 21357), 
-Luxembourg.  
-Jeong, S., Choi, J.Y., Kim, J., 2011. The determinants of research collaboration modes: 
-exploring the effects of research and  researcher char acteristics on coauthorship. 
-Scientometrics 89, 967– 983. 
-Littler, D., Coombs, R., 1988. Current and future trends in European technological 
+35.
+Nordmann, A., 2004. Converging Technologies: Shaping the Future of European
+Societies. Office for Official Publications of the  European Communities (EUR 21357),
+Luxembourg.
+Jeong, S., Choi, J.Y., Kim, J., 2011. The determinants of research collaboration modes:
+exploring the effects of research and researcher char acteristics on coauthorship.
+Scientometrics 89, 967– 983.
+Littler, D., Coombs, R., 1988. Current and future trends in European technological
 development: new patterns in the funding of R&D. Eur. Manage. J. 6 (2), 102– 113.
 
-32 
- 
-Metzger, N., Zare, R.N., 1999. Scie nce policy – interdisciplinary research: from belief 
-to reality. Science 283, 642– 643. 
-Kim, D.-h., Lee, H., Kwak, J., 2017. Standards as a driving force that influences 
-emerging technological trajectories in the converging world of the Internet and things:  
-an investigation of the M2M/IoT patent network. Res. Policy 46, 1234– 1254. 
-Song, M., Montoya -Weiss, M. M., 2001. The effect of perceived technological 
-uncertainty on Japanese new product development. Academy of Management Journal, 
-44(1), 61-80.  
+32
+
+Metzger, N., Zare, R.N., 1999. Scie nce policy – interdisciplinary research: from belief
+to reality. Science 283, 642– 643.
+Kim, D.-h., Lee, H., Kwak, J., 2017. Standards as a driving force that influences
+emerging technological trajectories in the converging world of the Internet and things:
+an investigation of the M2M/IoT patent network. Res. Policy 46, 1234– 1254.
+Song, M., Montoya -Weiss, M. M., 2001. The effect of perceived technological
+uncertainty on Japanese new product development. Academy of Management Journal,
+44(1), 61-80.
 Hacklin, F., Battistini, B., von Krogh, G., 2013. Strategic choices in converging in-
-dustries. MIT Sloan Manag. Rev. 55 (1), 65–73. 
-Bores, C., Saurina, C., Torres, R., 2003. Technological convergence: a strategic 
-perspective. Technovation 23, 1-13.  
-Martin, S., Scott, J.T., 2000. The nature of innovation market failure & the design of 
-public support for private innovation. Res. Policy 29 (4/5), 437 –448. 
+dustries. MIT Sloan Manag. Rev. 55 (1), 65–73.
+Bores, C., Saurina, C., Torres, R., 2003. Technological convergence: a strategic
+perspective. Technovation 23, 1-13.
+Martin, S., Scott, J.T., 2000. The nature of innovation market failure & the design of
+public support for private innovation. Res. Policy 29 (4/5), 437 –448.
 Schmoch, U., Breiner, S., Cuhls, K., Hinze, S., Mu  ̈nt, G., 1994. Interdisciplinary Co-
-operation of Research Teams in Science Intensive Areas of Technology. Final Report to 
-the Commission of the European Union. Fraunhofer Institute for Systems  and 
-Innovation Research, Karlsruhe, Germany.  
-Roco, M.C., Bainbridge, W.S., 2002. Converging Technologies for Improving Human 
-Performance. National Science Foundation, Arlington, VA.  
-Roessner,   D.,   1989.   Evaluating   government   innovation   pro-grammes: 
-lessons from the US experience. Res. Policy 18 (6).  
-Cohen, W.M., Levinthal, D.A., 1990. Absorptive capacity: a new perspect ive on 
-learning and innovation. Admin. Sci. Q. 35, 128– 152. 
-Kogut, B., 1988. Joint ventures: theoretical and empirical perspectives. Strategic 
-Management Journal, 9(4): 319 -332. 
-Kani, M., Motohashi, K., 20 18. Technology Sourcing in New Product Development 
+operation of Research Teams in Science Intensive Areas of Technology. Final Report to
+the Commission of the European Union. Fraunhofer Institute for Systems  and
+Innovation Research, Karlsruhe, Germany.
+Roco, M.C., Bainbridge, W.S., 2002. Converging Technologies for Improving Human
+Performance. National Science Foundation, Arlington, VA.
+Roessner,   D.,   1989.   Evaluating   government   innovation   pro-grammes:
+lessons from the US experience. Res. Policy 18 (6).
+Cohen, W.M., Levinthal, D.A., 1990. Absorptive capacity: a new perspect ive on
+learning and innovation. Admin. Sci. Q. 35, 128– 152.
+Kogut, B., 1988. Joint ventures: theoretical and empirical perspectives. Strategic
+Management Journal, 9(4): 319 -332.
+Kani, M., Motohashi, K., 20 18. Technology Sourcing in New Product Development
 Projects: When and how to use external resources? RIETI Discussion Paper Series 18-
-E-042. 
-Klein, J.T., Falk-Krzesinski, H.J., 2017. Interdisciplinary and collaborative work: 
-Framing promotion and tenure practices and policies. Res. Policy 46 (6), 1055 –1061. 
-Pfirman, S., Martin, P., 2017. Facilitating Interdisciplinary Scholars, 1. Oxford 
-University Press. https://doi.org/10.1093/oxfordhb/9780198733522.013.47. R. 
+E-042.
+Klein, J.T., Falk-Krzesinski, H.J., 2017. Interdisciplinary and collaborative work:
+Framing promotion and tenure practices and policies. Res. Policy 46 (6), 1055 –1061.
+Pfirman, S., Martin, P., 2017. Facilitating Interdisciplinary Scholars, 1. Oxford
+University Press. https://doi.org/10.1093/oxfordhb/9780198733522.013.47. R.
 Frodeman.
 
-33 
- 
-Arnold, A., Cafer, A., Green, J., Haines, S., Mann, G., Rosenthal, M., 2021. 
-“Perspective: Promoting and fostering multidisciplinary research in universities”. Res. 
-Policy 50 (9), 104334.  
-Sauermann, H., Stephan, P., 2013. Conflicting logics? A multidimensional view of 
-industrial and academ ic science. Organization Science 24 (3),889–909. 
-Feldman, M.P., Kelley, M.R., 2006. The ex ante assessment of knowledge  
-spillovers:government  R&D  policy,  economic  incentives  and  private  firm  
-behavior.Research Policy 35 (10), 1509 –1521. 
-Park, H.S., 2017. Technology convergence, open innovation, and dynamic economy. J. 
-open innov. 3, 24.  
-Collins, F. S., Green, E. D., & Guttmacher, A. E. Guyer, M. S. 2003. A vision for the 
-future of genomics research: A  blueprint for the genomic era. Nature 422, 835 –847. 
-Schloss, J.A., 2008. How to get genomes at one ten-thousandth the cost. Nature 26, 
-1113– 1115. 
-Shendure, J., Ji, H., 2008. Next -generation DNA sequencing. Nature 26, 1135–1145. 
+33
+
+Arnold, A., Cafer, A., Green, J., Haines, S., Mann, G., Rosenthal, M., 2021.
+“Perspective: Promoting and fostering multidisciplinary research in universities”. Res.
+Policy 50 (9), 104334.
+Sauermann, H., Stephan, P., 2013. Conflicting logics? A multidimensional view of
+industrial and academ ic science. Organization Science 24 (3),889–909.
+Feldman, M.P., Kelley, M.R., 2006. The ex ante assessment of knowledge
+spillovers:government  R&D  policy,  economic  incentives  and  private  firm
+behavior.Research Policy 35 (10), 1509 –1521.
+Park, H.S., 2017. Technology convergence, open innovation, and dynamic economy. J.
+open innov. 3, 24.
+Collins, F. S., Green, E. D., & Guttmacher, A. E. Guyer, M. S. 2003. A vision for the
+future of genomics research: A blueprint for the genomic era. Nature 422, 835 –847.
+Schloss, J.A., 2008. How to get genomes at one ten-thousandth the cost. Nature 26,
+1113– 1115.
+Shendure, J., Ji, H., 2008. Next -generation DNA sequencing. Nature 26, 1135–1145.
 van Dijk, E. L., Auger, H., Jaszczyszyn, Y., Thermes, C., 2014. Ten years of next -
-generation sequencing technology, Trends Genet. 30.  
-Trajtenberg, M., Henderson, R., Jaffe, A., 1997. University versus corporate patents: a 
-window on the basicness of invention. Econ. Innov. New Technol. 5 (1), 19– 50. 
-Shane, S., 2001. Technological Opportunities and New Firm Creation. Manage. Sci. 47, 
-205-220.  
-Aggarwal, V.A., Hsu, D.H., Wu, A., 2020. Organizing Knowledge Production Teams 
-Within Firms for Innovation. Strategy Science 5 (1), 1-16.  
-Meyer, M., 2000. Does science push technology? Patents ci ting scientific literature. 
-Res. Policy 29 (3), 409– 434. 
-Schloss, J.A., Gibbs, R.A., Makhijani, V.B., Marziali, A., 2020. Cultivating DNA 
-sequencing technology after the Human Genome Project. Annu Rev Genomics Hum 
-Genet. 21, 117– 138. 
+generation sequencing technology, Trends Genet. 30.
+Trajtenberg, M., Henderson, R., Jaffe, A., 1997. University versus corporate patents: a
+window on the basicness of invention. Econ. Innov. New Technol. 5 (1), 19– 50.
+Shane, S., 2001. Technological Opportunities and New Firm Creation. Manage. Sci. 47,
+205-220.
+Aggarwal, V.A., Hsu, D.H., Wu, A., 2020. Organizing Knowledge Production Teams
+Within Firms for Innovation. Strategy Science 5 (1), 1-16.
+Meyer, M., 2000. Does science push technology? Patents ci ting scientific literature.
+Res. Policy 29 (3), 409– 434.
+Schloss, J.A., Gibbs, R.A., Makhijani, V.B., Marziali, A., 2020. Cultivating DNA
+sequencing technology after the Human Genome Project. Annu Rev Genomics Hum
+Genet. 21, 117– 138.
 Nature 2014. How to get ahead. Nature 507, 273–274.

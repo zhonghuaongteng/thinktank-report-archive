@@ -1,0 +1,1453 @@
+%1
+RIETI Discussion Paper Series 17-E-111
+Accounting for the Role of Information and Communication
+Technology in China's Productivity Growth
+Harry X. WU
+Hitotsubashi University
+David T. LIANG
+Hitotsubashi University
+The Research Institute of Economy, Trade and Industry
+http://www.rieti.go.jp/en/
+
+1
+
+RIETI Discussion Paper Series 17-E-111
+August 2017
+
+ACCOUNTING FOR THE ROLE OF INFORMATION AND COMMUNICATION
+TECHNOLOGY IN CHINA'S PRODUCTIVITY GROWTH*
+Harry X. WU（Hitotsubashi University）
+David T. LIANG （Hitotsubashi University）
+ABSTRACT
+Applying the Jorgensonian aggregate production possibility frontier (APPF) model to the China Industrial
+Productivity (CIP) data set constructed in the principle of KLEMS, we scrutinize the role  of information and
+communication technology (ICT) industries in China’s post -reform growth from 1981 to 2012. In the absence of a
+direct measure of ICT assets, we group Chinese industries into ICT-specific groups following the criteria used in the
+U.S. case (Jorgenson et al. 2005 a), and apply the APPF industry origin of productivity framework, incorporating
+Domar weights for industry aggregation, to the grouped CIP industry data. This allows us to decompose China’s
+productivity growth into the contribution  of the ICT -specific groups and the factor reallocation effect across the
+groups. Our preliminary results show that Chinese ICT-producing and ICT-using manufacturing industries appear
+to be the most important driver of China’s productivity growth over the entire period in question. While sharing 29%
+of China’s 9.38% annual value added growth, these industries contributed 149% to China’s 0.83% annual aggregate
+total factor productivity ( TFP) growth. This, together with a strong gain from the labor reallocation effect across
+industries, has enabled the economy to compensate for its heavy productivity losses by non -ICT services and the
+economy-wide misallocation of capital resources.
+Keywords: Information and communication technology (ICT ), Aggregate production possibility function (APPF ),
+Domar weights, Total factor productivity (TFP).
+JEL Classification: C82, E22, E24, O47
+
+
+
+*The earlier versions of this paper were presented in seminars at RIETI and OECD. Helpful comments and
+suggestions from Kyoji Fukao and Colin Webb as well as participants in seminars are gratefully acknowledged. The
+interim results of the China Industrial Productivity (CIP) Database Project supported by RIETI’s Asian Industrial
+Productivity Program and the IER of Hitotsubashi University are reported in this paper.
+RIETI Discussion Papers Series aims at widely disseminating research  results in the form of professional papers,
+thereby stimulating lively discussion. The views expressed in the papers are solely those of the author(s), and neither
+represent those of the organization to which the author(s) belong(s) nor the  Research Institute of Economy, Trade
+and Industry.
+
+Page 2
+1. INTRODUCTION
+Since the 1990s, the world economy has been driven by two most important and mutually
+enhancing engines, that is, globalization through trade and direct investment, thanks to the
+market-oriented reforms in emerging economies especially China,  and information and
+communication technologies (ICT) that have been quickly maturing for the majority of
+manufacturing industries as a result of the rapid decline in the prices of ICT equipment.
+ Figure
+1 shows a time profile of China’s dynamic production growth of personal computers, integrated
+circuits and semi-conductors vis-à-vis the gross output of manufacturing industries as a whole
+over the period 1990-2015. The annual compound growth rate of these ICT products is indeed
+very impressive as 40.7, 31.8 and 22.7 percent respectively, compared to 14.7 percent of the
+manufacturing sector as a whole.
+China’s rapid emergence as the world largest manufacturing
+powerhouse cannot be appropriately assessed without understanding the role of ICT in China’s
+output and productivity growth.
+FIGURE 1
+CHINA'S PRODUCTION OF ICT PRODUCTS VIS-À-VIS GROSS OUTPUT OF MANUFACTURING
+(2015 = 100)
+Sources: Authors’ calculation based on official data in physical units (NBS
+2013: 515, updated). Manufacturing gross output data are measured at 1990
+prices, based on CIP 3.0.
+In one of pioneer studies that account for the role of ICT in advanced economies,
+Jorgenson (2001) shows that the growth of ICT capital services in the US jumped from 11.5
+percent per annum over the period 1990-1995 to 19.4 percent over the period 1995-1999, which
+was in a sharp contrast to the growth of non-ICT capital services increasing merely from 1.7
+to 2.9 percent. Particularly over the period 1995-1999, ICT products (both equipment and
+software) contributed 0.5 percentage points (ppts) out of 0.75
+-percent annual TFP growth,
+accounting for nearly 67 percent of the aggregate TFP, despite it only accounted for 29 percent
+of the US 4.08-percent annual GDP growth.
+In the case of Europe, O’Mahony and van Ark (2003) show that for 15 EU member states
+during the period 1995-2001, ICT-producing industries enjoyed a labor productivity growth of
+7.5 percent per annum, much faster than that of the total economy of 1.7 percent per annum.
+Focusing on ICT investment and economic growth in nine OECD countries, Colecchia and
+Schreyer (2002) also find that along with a significant decline in the prices of ICT capital goods
+0.0
+0.1
+1.0
+10.0
+100.0
+1990
+1991
+1992
+1993
+1994
+1995
+1996
+1997
+1998
+1999
+2000
+2001
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+Semi-conductors Integrated Circuits
+Personal Computers Manufacturing
+
+Page 3
+
+over the period 1980-2000, all these countries experienced a remarkable increase in the rate of
+investment in ICT equipment. On average, ICT capital contributed between 0.2 and 0.5 ppts to
+annual economic growth, ranging from 2.0 to 3.8 percent per annum. Particularly for the second
+half of the 1990s, this rose to 0.3 to 0.9 ppt s per year out of 1.0 to 5.6 -percent annual output
+growth. In a comparative study between Japan and South Korea, Fukao et al. (2009) also find
+that the growth of ICT investment in the two economies wa s phenomenal during the period
+1995-2005 by 13.1 and 15.5 percent per annum respectively. However, it concludes that
+aggregate TFP appears to be more attributable to ICT-producing industries than to ICT-using
+industries for both Japan and Korea.
+However, lack of statistics on ICT investment at industry level has prevented us from
+directly identifying and measuring individual Chinese industries with a specific role and a level
+of importance in ICT. We therefore adopt an indirect approach t o bypass this problem  by
+reclassifying all the 37 industries in the CIP data set into ICT -specific groups using the ICT-
+making and asset-based ICT-using criteria in the US case (Jorgenson et al. 2005a). Obviously,
+in doing so we arbitrarily assume that the extent to which individual industries are exposed to
+the impact of ICT, either producing or using, is the same in China as in the US. This is by no
+means an ideal solution to the ICT data problem, but it provides an important pe rspective for
+examining the role of ICT in the Chinese economy.
+We examine t he so -grouped CIP data in a growth accounting model a la  Jorgenson
+(Jorgenson 2001, Jorgenson et al. 2005a) that specifies the role of individual industries in an
+aggregate produc tion possibility frontier  (APPF) framework and also incorporates Domar
+aggregation to account for the interactions of individual industries  within the system . This
+model allows us to decompose China’s productivity growth into the contribution of ICT -
+specific groups and the factor reallocation effect across the groups.  Our preliminary results
+have shown that ICT -producing and using manufacturing industries appear to be the most
+important driver of China’s productivity growth over the entire period 1981-2012. While
+sharing 29 percent of China’s 9.38 -percent annual value added growth, these industries
+contributed 149 percent to China’s 0.83-percent annual aggregate TFP growth.
+The rest of the paper is organized as follows. Section 2 introduces the aggregate production
+possibility frontier framework incorporating Domar weights for industry aggregation,
+especially designed for ICT-specific grouping. Section 3 explains the updated and revised CIP
+data and the ICT-specific industry grouping in this study. Section 4 reports and interprets the
+growth accounting results. Section 5  concludes this study  with prioritized tasks for future
+research.
+2. ACCOUNTING FOR THE INDUSTRY ORIGIN OF TFP1
+The role of ICT in an economy can be more possibly examined by Jorgenson’s aggregate
+production possibility frontier (APPF) framework that incorporates Domar weights for
+industry aggregation to account for the industry origin of growth and productivity. The widely
+used aggregate production functio n (APF) approach to TFP analysis is implicitly subject to
+very stringent assumptions that for all (underlying) industries “value-added functions exist and
+are identical across industries up to a scalar multiple” and “the aggregation of heterogeneous
+types of capital and labor must receive the same price in each industry” ( Jorgenson, Ho and
+Stiroh 2005 a). Given heavy government interventions and institutional set -ups that cause
+
+1 Adopted mainly from Wu (2016).
+
+Page 4
+
+market imperfections in China, the APF approach is undoubtedly inappropriate for the growth
+accounting exercise of the economy, especially when the performances of specified industries
+are to be compared economy wide.
+The APPF approach in growth accounting relaxes the strong assumption that all industries
+are subject to the same value -added production function to account for the industry origin of
+aggregate growth (Jorgenson 1966). The Domar  weights-based aggregation was introduced
+into the APPF framework in Jorgenson, Gollop and Fraumeni (1987) to exercise direct
+aggregation across industries to account for the role of American industries in the changes of
+aggregate inputs. This approach has been used in Jorgenson and Stiroh (2000), Jorgenson (2001)
+and Jorgenson, Ho and Stiroh (2005 a, 2005b) to quantify the role of information technol ogy
+(IT)-producing and IT-using industries in the US economy.
+To illustrate this aggregation methodology, let us begin with a production function where
+industry gross output is a function of capital, labour, intermediate inputs and technology
+indexed by time. We use individual industries as building blocks which allow us to explicitly
+trace the sources of the aggregate productivity growth and input accumulation to the underlying
+industries. Focusing on an industry-level gross output production function given by equation
+(1), each industry, denoted by a subscript j, purchases distinct intermediate inputs, capital and
+labour services to produce a set of products:
+(1)
+),,,( TXLKfY jjjjj 
+where Y is output, K is an index of capital service flows, L is an index of labour service flows
+and X is an index of intermediate inputs  including energy, materials and services , purchased
+from domestic and/or international markets. Note that all input variables are indexed by time
+but this is suppressed for notational convenience.
+Under the assumptions of competitive factor markets, full input utilization and constant
+returns to scale, the growth of output can be expressed in the cost-weighted growth of inputs
+and technological change:
+(2)
+T
+jj
+X
+jj
+L
+jtj
+K
+jj vXvLvKvY  lnlnlnln
+where
+K
+jv ,
+L
+jv and
+X
+jv are two -period averages of nominal weights of input
+j
+Y
+j
+j
+K
+jK
+j
+YP
+KPv  ,
+j
+Y
+j
+j
+L
+jL
+j
+YP
+LPv 
+and
+j
+Y
+j
+j
+X
+jX
+j
+YP
+XPv  , respectively . Note that under constant returns to scale
+1 X
+j
+L
+j
+K
+j vvv
+, which is controlled by the industry production accounts in nominal terms .
+Each element in the right-hand side of equation (2) indicates the proportion of output growth
+accounted for respectively by the growth of capital service s (
+j
+K
+j Kv ln ), labour services
+(
+j
+L
+j Lv ln ), intermediate materials (
+j
+X
+j Xv ln ) and total factor productivity (
+T
+jv ).
+Clearly, equation (2) requires a proper measure of input services by different types of each
+input. For example, it requires a measure for labor services provided by different types of labor
+with specific demographic, educational and industrial attributes , as discussed in pioneering
+studies by Griliches (1960), Denison (1962) and Jorgenson and Griliches (1967). In doing so,
+
+Page 5
+
+it relaxes the usual strong assumption that treats numbers employed or hours worked as if they
+are homogenous. The growth of total labor input is hence defined as a Törnqvist quantity index
+of individual labour types as follows:
+(3a)
+jhh jhj HvL ,, lnln  
+where
+jhH ,ln  indicates the growth of hours worked by each labour type h (with specific
+gender, age and educational attainment) and its cost weights
+jhv ,  given by two-period average
+shares of each type in the nominal value of labour compensation controlled by the labor income
+of industry production accounts.
+The same user-cost approach is also applied to K and X to account for the contribution of
+different types of cap ital asset (
+kZ ) and intermediate input (
+xX ) in production  with type-
+specific, two-period average cost weight defined as
+jkv , and
+jxv , , respectively:
+(3b)
+jkk jkj ZvK ,, lnln   , and
+(3c)
+jxx jxj XvX ,, lnln  
+It should be noted that the equations from (2) through the whole set of (3) also explicitly
+express the methodological framework for the CIP industry -level data construction that is
+linked to and controlled by the national production and income accounts.
+Using the value-added concept, equation (2) can be rewritten as:
+(4)
+j
+X
+jj
+V
+jj XvVvY lnlnln 
+where
+jV  is the real value -added in j and
+V
+jv  is the nominal share of value -added in industry
+gross output.
+Through rearranging equations (2) and (4), we can obtain an expression for the sources of
+industry value-added growth (i.e. measured in terms of input contributions):
+(5)
+T
+jV
+j
+jV
+j
+L
+j
+jV
+j
+K
+j
+j v
+v
+L
+v
+vK
+v
+vV 1lnlnln 
+Growth of aggregate value-added by the APPF approach is expressed as weighted industry
+value-added in a Törnqvist index:
+(6)
+ 
+j
+jj VwV lnln
+where
+jw  is the share of industry value -added in aggregate value -added. With ICT-specific
+grouping, we can rewrite equation (6) as:
+
+Page 6
+
+(6a)
+ 
+ 121
+lnlnlnlnln
+NonICTj
+jj
+UICTj
+jj
+UICTj
+jj
+PICTj
+jj VwVwVwVwV
+
+
+
+
+32
+lnln
+NonICTj
+jj
+NonICTj
+jj VwVw
+where the grouping notation ICT-P stands for ICT-producing industries, ICT-U1 for ICT-using
+in manufacturing and ICT-U2 for ICT-using in services, and where NonICT-1 stands for non-
+ICT group in manufacturing, NonICT-2 for non-ICT in services and NonICT-3 in others (see
+next section for the grouping and Appendix Table for the details of industries in each group).
+By combining equations (5) and (6), we can have a new expression of aggregate value -
+added growth by weighted contribution of industry capital grow th, industry labor growth and
+TFP growth:
+(7)
+ 
+
+
+
+
+
+
+j
+T
+jV
+j
+jjV
+j
+L
+j
+jjV
+j
+K
+j
+j
+j
+jj vvwLv
+vwKv
+vwVwV 1lnlnlnln
+Through this new expression, we have introduced the well -known Domar weights in our
+industry aggregation (Domar 1961), i.e. a ratio of each industry’s share in total value -added
+(
+jw ) to the proportion of the industry’s value-added in its gross output (
+V
+jv ).
+If we maintain the stringent assumption that capital and labour inputs have the same
+marginal productivity in all industries we can define aggregate TFP growth as:
+(8)
+LvKvVwv LK
+j
+jj
+T lnlnln 
+However, this assumption is not likely to hold particular ly in the case of China as argued
+above. It is therefore interesting to look at the difference of the two measurement approaches.
+By subtracting equation (7) from equation (8) and rearranging, we can show how the aggregate
+TFP growth is attributed to Domar-weighted industry TFP growth and to the effect of factor
+reallocation across industries (Jorgenson, Ho and Stiroh 2005a):
+(9)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LvLv
+vw
+KvKv
+vw
+vv
+wv
+L
+j
+jV
+j
+L
+j
+j
+K
+j
+jV
+j
+K
+j
+j
+j
+T
+jV
+j
+jT
+lnln
+lnln
+The reallocation terms in the second and third brackets can be simplified as:
+(9’)
+ 
+j
+LKT
+jV
+j
+jT v
+v
+wv 
+
+Page 7
+
+It should be noted  that the Domar-weighted industry TFP growth term
+
+j
+T
+jV
+j
+j
+vv
+w can also be
+expressed as the Domar-weighted sum of ICT-specific group TFP growth (see equation 6a for
+group denotation):
+
+ 
+ 121 NonICTj
+T
+jV
+j
+j
+UICTj
+T
+jV
+j
+j
+UICTj
+T
+jV
+j
+j
+PICTj
+T
+jV
+j
+j
+j
+T
+jV
+j
+j v
+v
+wv
+v
+wv
+v
+wv
+v
+wv
+v
+w
+
+
+
+
+32 NonICTj
+T
+jV
+j
+j
+NonICTj
+T
+jV
+j
+j v
+v
+wv
+v
+w
+Equation (9) expresses the aggregate TFP growth in terms of three sources: Domar -
+weighted industry TFP growth, reallocation of capital and reallocation of labor across
+industries. This Domar weighting scheme (
+V
+jj vw / ), originated by Domar (1961), plays a key
+role in the direct aggregation across industries of the Jorgensonian growth accounting
+framework. A direct consequence of the Domar-aggregation is that the weights do not sum to
+unity, implying that aggregate productivity growth amounts to more than the weighted average
+of industry -level productivity growth  (or less, if negative) . This reflects the fact that
+productivity change in the production of intermediate inputs do not only have an “own” effect
+but in addition they lead to reduced or increased prices in downstream industries, and that effect
+accumulates through vertical links.  As elaborated by Hulten (1978), the Domar aggregation
+method establishes a consistent link between the industry level productivity growt h and the
+aggregate productivity growth. Productivity gains of the aggregate economy may exceed the
+average productivity gains across industries because flows of intermediate inputs between
+industries contribute to aggregate productivity by allowing produc tivity gains in successive
+industries to augment one another. The same logic can explain productivity losses.
+The next two terms reflect the impact on aggregate TFP growth of the reallocation effect
+of capital (
+K ) and labor (
+L ) across industries, respectively. Each of the reallocation term is
+obtained by subtracting cost-weighted aggregate factor (capital or labor) input growth from the
+Domar-weighted input growth across industries. It should be noted that both theoretically and
+methodologically, when these terms are not negligible,  it indicates that industries do not face
+the same factor costs, which suggests a violation of the assumption of the widely used
+aggregate approach. However, one should not expect a signi ficant reallocation effect in an
+economy where there is a well developed market system. This is a very useful analytical tool
+for the Chinese case where strong government interventions in resource allocation may have
+caused severe market distortions (Hsieh and Klenow 2009; Wu 2016).
+3. DATA AND ICT-SPECIFIC INDUSTRY GROUPING
+The CIP dataa brief introduction
+This study uses updated and revised CIP (China Industrial Productivity) data based on the
+publically available CIP 3.0 (see Wu 2015; Wu and Ito 2015; Wu, Yue and Zhang 2015 for the
+construction of the CIP data  and details of data sources and problems ). The principle of the
+CIP data construction adheres to the underlying theory as expressed in equation (2) as well as
+in the set of equation (3). This means that in the case of input and output data the CIP industry
+accounts are made coherently consistent with the Chinese national accounts as control totals as
+
+Page 8
+
+given in the official input-output system, reconstructed and interpolated for the time series of
+the accounts (Wu and Ito 2015) . It should be noted that in constructing industry accounts we
+do not, or are unable to, challenge the official national accounts data except for necessary
+consistency adjustments. Therefore, the widely reported and discussed data falsification
+problems should be born in mind when interpreting our results.2
+In the case of employment data , the CIP industry accounts are built on all available
+employment statistics and surveys , reconstructed to ensure consistency with population
+censuses as control totals. Workers include both employees as well as self-employed (farming
+households and self-employed retailers and transporters), cross -classified by gender, age and
+educational level. Besides, the labor compensation at industry level is controlled by the national
+income accounts (Wu, Yue and Zhang 2015) . In the absence of national investment matrix,
+however, despite tremendous efforts have been made to reconstruct industry investment flows,
+the lack of coherence between individual industries and the national accounts has remained as
+a major obstacle to establishing economy-wide consistency in the productivity analysis for the
+Chinese economy (Wu 2015).
+The revision of the nominal input and output data is based on the lately available Chinese
+2012 input-output tables. Accordingly, updated national accounts data for the period 2007 -
+2012 are used to interpolate the input-output series between the 2007 and 2012 tables replacing
+the extrapolated series from 2007 onwards in CIP 3.0. The nominal accounts are double-
+deflated by a producer price index (PPI)  matrix, constructed based on official PPIs for the
+agricultural and industrial sectors and relevant components of consumer price index (CPI) for
+service industries (Wu and Ito 2015). However, our PPI revision is still domestic transactions-
+based by nature, that is, has not yet been able to take into account the effect of the price changes
+of imported intermediate inputs. This may however induce some biases to industries that have
+been heavily depending on imported materials, including many Chinese ICT producers.
+ICT-specific industry grouping
+Since we are interested in how ICT has affected the productivity performance in the
+Chinese economy, the whole economy could be divided into two large sectors, ICT sector and
+non-ICT sector. This kind of technology is diffused among industries by means of ICT capital
+assets and skilled labor. Therefore, to explore the role of ICT we may consider distinguishing
+industries that are highly related to information technology from those are not through their
+intensity of using ICT equipment. The ICT intensity is defined as the share of ICT capital stock
+on total equipment capital stock.
+In the absence of ICT equipment data, we opt for using the US criteria for ICT intensity
+in capital stock in the present study. This is justifiable b ecause empirical studies have shown
+that the diffusion of ICT has similarities across countries (van Ark et al. 2002; O’Mahony and
+De Boer 2002). We may also argue that the rapid globalization through direct investment and
+trade in manufacturing has enhanced such diffusion. Following Jorgenson, Ho and Stiroh
+(2005a), we first take the median of ICT intensity of all industries in 1995 as the benchmark
+
+2 China’s official estimates of GDP growth have  long been challenged for upw ard bias (see Wu 2013 and
+2014). Alternative estimates have indeed shown slower growth rates than the official accounts. The most affected
+sectors are manufacturing and so -called “non -material services” (including non -market se rvices). Wu (2013)
+shows that the official industrial output index has substantially moderated the impact of external shocks. Besides,
+Wu (2014) also shows that the 5 -6 percent annual growth of labor productivity in “non -material services” based
+on official data appears to be too good to be true if considering the international norm of between -1 and +1
+percent per annum in the literature (Griliches 1992; van Ark 1996).
+
+Page 9
+
+and then define the industries whose ICT intensity exceeds the median as intensive users of
+ICT and those below the median as non -ICT industries. Besides, ICT producers should be
+distinguished from ICT  users. As explained by Jorgenson (2001), on the one hand, as ICT -
+producing industries become more efficient, more ICT equipment and software can be
+produced using the same cost. This raises the productivity of ICT producers and contributes to
+aggregate TFP growth  through ICT users . On the other hand , investment in ICT equipment
+leads to the growth of productive capability in ICT -using industries as labor is working with
+more efficient equipment. Such an increase in the deployment of ICT affects TFP growth only
+if there are spillovers from ICT producers to ICT users.
+To better investigate the industry origin of the ICT impact on the aggregate TFP
+performance, we also feel necessary to distinguish manufacturing and ser vices industries in
+ICT users and non -ICT users. Therefore, we categorize the 37 CIP industries into six groups
+as defined in equation (6a), namely ICT-producing, ICT-using in manufacturing, ICT-using in
+services, non-ICT manufacturing, services and others (see Table A1 for details). This grouping
+is guided by our desire to study di fferences across industries that vary in ICT -using intensity.
+Although such breakdown is somewhat subjective, causal inspection suggests that it is
+reasonable.
+For example, three industries, “electronic and telecommunication equipment ” (CIP21),
+“instruments and office equipment ” (CIP22)  and “post and telecommunication services”
+(CIP30) are primary producers of ICT capital goods and should be distinguished from ICT
+users and non-ICT users. Industries such as “e lectric equipment” (CIP20) and Transport and
+Storage (CIP29) are considered most ICT-intensive users, hence should be labeled as ICT -
+using in manufacturing and ICT-using in services respectively. Industries like “coal mining”
+(CIP02) and “real estate activities” (CIP32) are not ICT-intensive and hence are grouped into
+non-ICT in manufacturing and non-ICT in services accordingly. Finally, to differentiate non-
+ICT-intensive agriculture and construction from the above groups, we put them into the non-
+ICT group in “other industries”.
+Based on the above discussion, we conjecture that the productivity growth of ICT-
+producing and ICT-using manufacturing groups may generally outperform the rest groups. We
+may also expect the latter group , as the one using ICT equipment most intensively and
+benefited by the spillover effect of the former , growing more rapidly than the former group ,
+hence being the most important contributor to the aggregate TFP growth.
+4. EMPIRICAL RESULTS
+Sources of gross output growth by ICT-specific group
+Let us begin with an examination of ICT-specific group level sources of growth as reported
+in Table 1 for each sub -period based on a gross output production function as expressed in
+equation (2). In Figure 2 we depict the gross output-based TFP in index for each group. Note
+that the so-estimated group TFP is not intended to be analytical with any theoretical
+underpinning; rather it serves as a residual indicator ignoring any connection with other
+industry or the rest of the economy. This is however a necessary starting point because in the
+ultimate analysis these groups are used as building blocks of the national economy and
+originators of aggregate productivity growth.
+
+Page 10
+
+FIGURE 2
+TOTAL FACTOR PRODUCTIVITY INDEX BY ICT-SPECIFIED GROUP
+(1981 = 100)
+
+Source: As Table 1.
+Notes: ICT -P: producing; ICT -U1: using in manufacturing; ICT -U2: using in
+services; non-ICT1: manufacturing; non-ICT2: services; non-ICT3: others.
+As shown in Figure 2, among the six groups only the ICT-producing and the ICT-using
+manufacturing demonstrate a positive linear trend in the growth of total factor productivity,
+but the former was twice as fast as the latter over the entire period in question (as suggested
+by the estimated coefficients from the simple regression models in  Figure 2). Such a gap in
+TFP performance between the two groups may reflect that the price decline of ICT components,
+which were mainly used by Chinese ICT makers, was faster than that of ICT equipment facing
+Chinese ICT users.
+It is also interesting to see that in the case of the ICT -producing group there was a short -
+term jump in TFP growth following China’s WTO entry implying that this group was likely
+benefitted by the WTO -induced greater exposure to the world ICT market  albeit shocked by
+the global financial crisis (GFC). There were nonetheless no WTO and GFC effects observed
+in the ICT-using manufacturing group that appears to have undergone along a much steadier
+TFP trend. In sharp contrast, all other groups including the ICT-using services group generally
+experienced little TFP improvement following China’s WTO entry.
+The estimated sources of gross output growth in Table 1 and their relative contributions
+expressed in percentage shares in Figure 3 can help better understand the TFP indices presented
+in Figure 2. Based on these estimates, we can summarize three worth noting points. Firstly,
+ICT-related sectors were indeed outstanding performers in terms of gross output growth. The
+ICT-producing group was the champion over each sub-period despite radical policy regime
+shifts or macroeconomic shocks . This group was followed by the ICT -using manufacturing
+group before the GFC shock. During China’s post-WTO period 2001-2007, these two groups
+achieved a very high growth rate of 25.8 and 18.5 percent per annum r espectively. However,
+in the wake of GFC while they lost steam like many others and considerably slowed down to
+13.0 and 11.9 percent, the ICT-using services group accelerated (Table 1).
+Secondly, even in the case of outstanding output growth, the ICT-related industries were
+still increasingly driven by the rise of intermediate inputs , reflected by a rising ratio of input
+y = 126.93e 0.0451x
+R² = 0.9546 y = 116.52e 0.0213x
+R² = 0.9265
+10
+100
+1000
+1981
+1983
+1985
+1987
+1989
+1991
+1993
+1995
+1997
+1999
+2001
+2003
+2005
+2007
+2009
+2011
+ICT-P
+ICT-U1
+ICT-U2
+Non-ICT1
+Non-ICT2
+Non-ICT3
+China
+post-
+WTO, pre-
+GFC
+
+Page 11
+
+materials growth to gross output growth, i.e.
+jj YX ln/ln  using our denotations. In the case
+of ICT-producing, based on Table 1, the
+jj YX ln/ln  ratio rose from 0.42 in 1981-1991 to
+0.63 in 1991-2001, 0.68 in 2001-2007 and further 0.76 in 2007-2012. In the case of ICT-using
+manufacturing, this ratio also rose from 0.52 to 0.67, 0.73 and 0.75 accordingly. In these two
+cases, since the contribution to gross output growth by labor and capital inputs was more or
+less stable over time, this implies an inevitable decline in the TFP growth, that is, as reported
+in Table 1, 6.69, 5.55, 4.46 and 0.83 percent per annual for the former over each sub-period
+and 3.95, 1.99, 2.22 and 0.98 percent per annum for the latter (see Figure 3 for relative factor
+contributions).
+This was also generally phenomenal in other groups mainly services, though there was no
+clear trend in some cases. For example, a similar rise in
+jj YX ln/ln  is also observed in
+non-ICT other sectors covering mainly agriculture and construction , from 0.46 in 1981-1991
+to 0.64 in 1991 -2001, and then further to an average of 0.83 over the rest through 2012.
+Consequently, this group’s TFP growth declined from 1.94 percent in 1981 -1991 to 0.85 in
+1991-2001, -0.48 in 2001-2007, and further to -1.34 percent in 2007 -2012 (Table 1 and also
+see Figure 3).
+Thirdly, while both ICT and non -ICT manufacturing industries experienced a decline or
+sometime stability in the ratio of capital input growth to gross output growth , i.e.
+jj YK ln/ln 
+, both ICT and non -ICT services experienced a rise of  the ratio  rather
+substantially in some cases. We could observe that over the entire period, the
+jj YK ln/ln 
+ratio of the ICT -producing group declined from 0.17 to 0.13 and in the case of ICT -using
+manufacturing it stayed at around 0.16. But, in sharp contrast, it rose from 0.32 to 0.44 in the
+case of ICT-using services and from 0.44 to 0.81 in the case of non-ICT services. This largely
+explains their poor TFP performances over time (Table 1 and Figure 3).
+
+Page 12
+
+
+TABLE 1
+SOURCES OF GROSS OUTPUT GROWTH IN CHINA BY ICT-SPECIFIC INDUSTRY GROUP
+(Gross output-weighted annual growth rate in percent)
+ Y L1 K1 X2 TFP  Y L1 K1 X2 TFP
+Group 1981-1991  1991-2001
+ICT-producing 21.21  0.53  3.55  10.45  6.69   26.12  0.61  3.44  16.52  5.55
+ICT-using manufacturing  13.32  0.30  2.13  6.94  3.95   12.85  0.06  2.24  8.56  1.99
+ICT-using services 9.84  1.66  3.15  4.60  0.43   7.08  0.92  5.03  4.38  -3.26
+Non-ICT manufacturing  7.97  0.42  2.82  6.08  -1.36   10.92  0.13  1.64  7.06  2.09
+Non-ICT services 6.98  1.09  3.05  3.63  -0.79   9.30  2.44  4.39  7.10  -4.63
+Non-ICT other sectors 6.94  0.55  1.27  3.18  1.94   9.02  0.37  2.04  5.76  0.85
+ 2001-2007  2007-2012
+ICT-producing 25.76  0.87  3.05  17.37  4.46   13.01  0.59  1.72  9.88  0.83
+ICT-using manufacturing  18.49  0.43  2.39  13.45  2.22   11.92  0.07  1.95  8.92  0.98
+ICT-using services 12.09  0.72  4.54  5.79  -0.48   12.99  0.66  5.77  7.29  -0.73
+Non-ICT manufacturing  15.04  0.51  2.26  11.68  0.58   11.39  0.03  2.52  8.14  0.69
+Non-ICT services 10.53  1.61  5.66  4.80  -1.54   6.62  1.53  5.38  2.49  -2.77
+Non-ICT other sectors 8.31  -0.44  2.36  6.86  -0.48   7.61  -0.63  3.37  6.21  -1.34
+Source: Authors’ calculation based equation (2) using updated and revised CIP 3.0 data.
+Notes: 1) All primary factor inputs are measured in flows of factor services rather than stocks. 2) Intermediate inputs include all materials, energy and services
+that are purchased by producers.
+
+Page 13
+
+FIGURE 3
+SOURCES OF GROSS OUTPUT GROWTH IN CHINA BY ICT-SPECIFIC INDUSTRY GROUP
+(Gross output growth = 100%)
+
+Source: Authors’ calculation based Table 1.
+Notes: ICT-P: producing; ICT-U1: using in manufacturing; ICT-U2: using in services; non-ICT1: manufacturing; non-ICT2: services;
+non-ICT3: others.
+
+
+-40%
+-20%
+0%
+20%
+40%
+60%
+80%
+100%
+ICT-P ICT-U1 ICT-U2 Non-ICT1 Non-ICT2 Non-ICT3
+1981-1991
+TFP
+X
+K
+L
+-40%
+-20%
+0%
+20%
+40%
+60%
+80%
+100%
+ICT-P ICT-U1 ICT-U2 Non-ICT1 Non-ICT2 Non-ICT3
+1991-2001
+TFP
+X
+K
+L
+-40%
+-20%
+0%
+20%
+40%
+60%
+80%
+100%
+ICT-P ICT-U1 ICT-U2 Non-ICT1 Non-ICT2 Non-ICT3
+2001-2007
+TFP
+X
+K
+L
+-40%
+-20%
+0%
+20%
+40%
+60%
+80%
+100%
+ICT-P ICT-U1 ICT-U2 Non-ICT1 Non-ICT2 Non-ICT3
+2007-2012
+TFP
+X
+K
+L
+
+Page 14
+
+ICT-specific group contribution to aggregate growth and source of growth
+The above observations provide what the CIP data may imply in a less analytical manner
+or largely in a descriptive way in that there is no connection whatsoever between industries
+economy-wide through market and government industry -specific policies as well as affected
+by institutional deficiencies. However, from the observations, we have see n that these ICT -
+specific groups have performed very differently in their output growth and sources of the
+growth over time, which well justifies the importance of taking into account industry
+heterogeneity as discussed in our methodological section a la Jorgenson (2001). We devote
+this sub-section to examine group contributions to China’s aggregate value added growth that
+is made through the gross output growth of individual groups and industries, in parallel to the
+scrutiny of the sources of the aggrega te value added growth. The results are summarized in
+Table 2.
+TABLE 2
+SOURCES OF AGGREGATE VALUE-ADDED GROWTH IN CHINA, 1981-2012
+(Contributions are share-weighted growth rate in percent)
+ 1981-1991 1991-2001 2001-2007 2007-2012 1981-2012
+ Industry contribution to value-added growth
+Value-added growth due to (%) 8.81  8.85  11.37  9.22  9.38
+   -ICT-producing  0.52  0.67  1.25  0.68  0.74
+   -ICT-using manufacturing 2.15  1.86  2.34  1.37  1.97
+   -ICT-using services 1.37  0.99  2.82  2.74  1.75
+   -Non-ICT manufacturing 1.73  3.10  2.55  3.04  2.54
+   -Non-ICT services 0.79  0.41  1.48  0.72  0.79
+   -Non-ICT other sectors 2.25  1.81  0.93  0.68  1.60
+ Factor contribution to value-added growth
+Value-added growth due to (%) 8.81  8.85  11.37  9.22  9.38
+   - Capital input: 5.82  7.00  9.45  10.39  7.64
+      - Stock 5.83  7.08  9.54  10.38  7.68
+      - Capital quality (composition) -0.01  -0.08  -0.09  0.02  -0.04
+   - Labor input: 1.12  1.12  0.59  0.25  0.88
+      - Homogeneous hours 1.07  0.69  0.54  -1.00  0.51
+      - Labor quality (composition) 0.06  0.43  0.05  1.26  0.37
+   - Aggregate TFP 1.86  0.72  1.32  -1.42  0.86
+Source: Authors’ estimates.
+
+As shown in the first panel of Table 2, adopting double-deflation procedures and using the
+industry weights from our ICT-specific industry grouping, the Chinese economy achieved a
+real value added growth of 9.38-percent per annum over the period 198 1-2012. On average,
+the three ICT-related groups made up 47 percent of China’s GDP growth (4.46 ppts out of the
+9.38-percent of annual growth), or 29 percent if focusing only on ICT-related manufacturing.
+This 29-percent contribution is represented by 2.71 ppts out of the 9.38-percent annual growth,
+of which 0.74 ppts could be attributed to ICT-producing and 1.97 to ICT-using manufacturing.
+As expected, the latter group, as the one using ICT equipment most intensively and benefited
+by the spillover effect of the former, indeed  expanded more rapidly, hence being the most
+important contributor to the aggregate GDP and TFP growth (see Table 4 on TFP growth).
+The largest GDP contributor was nevertheless the non-ICT manufacturing group that
+accounted for 27 percent (2.54 ppts) of the GDP growth. This should not be a big surprise given
+the nature of China’s catch up through export -oriented manufacturing. It is clear now that the
+estimates of gross output growth in Table 1 cannot be easily translated into the estimates of
+value added g rowth in Table 2 without properly considering the different roles of industries
+interacted and connected through their intermediate inputs.
+
+Page 15
+
+The estimated TFP performance was highly unstable over time with the highest TFP growth
+achieved in the initial reform stage in the 1980s and the worst in the wake of GFC .3 Of the
+economy-wide 9.38-percent annual value added growth for the entire period, the contribution
+of capital input was 7. 64 ppts, labor input 0. 88 ppts, and TFP growth 0.86 ppts on average.
+This means that the Chinese economy relied 81.4 percent of its real value-added growth on the
+growth of capital input, 9.4 percent on the growth of labor input, and the rest 9.2 percent on
+total factor productivity growth. Over time, t he contribution of capital input increased from
+66.1 percent in the 1980s to 83.1 percent post WTO and then even jumped to 112.7 percent
+post GFC (10.39 capital input growth versus 9.22 value added growth in 2007-2012, Table 2).
+On the other hand, the contribution of labor input declined from 12.8 percent in the 1980s
+to 5.2 percent post WTO and then dropped to only 2.7 percent post GFC. In fact, the decline in
+hours worked was substantial by 1 .0 ppt per annum  in 2007 -2012. This was nonetheless
+cancelled off by labor quality improvement by 1.26 ppts. The contribution of the quality of
+capital was insignificant on average.4
+
+FIGURE 4
+AN INDEX OF CHINA’S AGGREGATE TOTAL FACTOR PRODUCTIVITY
+(1981 = 100)
+
+Source: Based on results reported in Table 2.
+
+If the  estimated annual aggregate TFP growth rates are translated into an index
+benchmarked on the initial year 198 1 as shown in Figure 4, we observe a very volatile TFP
+performance around its underlying trend  (level not rate) with substantial shocks. Using the
+trend line as a yardstick to identify major shocks, one may find that the shocks are largely
+institutional. The first TFP drive was observed in the early 1980s associated with China’s
+agricultural reform and more or less maintained by early industrial reform from the mid 1980s.
+The TFP collapsed following the 1989 political crisis but somewhat recovered in the early
+1990s in response to Deng’s call for bolder reforms  in 1992. But this did not last long before
+
+3 Table A2 reports the details for individual industries.
+4 This might be due to the lim ited set of asset types ( “structures” and “equipment” ) that is available in the
+current CIP data base. If a distinction between ICT and non -ICT assets could be made, a higher measured
+contribution is to be expected, see Jorgenson and Vu (2013).
+100
+105
+110
+115
+120
+125
+130
+135
+140
+145
+1981
+1982
+1983
+1984
+1985
+1986
+1987
+1988
+1989
+1990
+1991
+1992
+1993
+1994
+1995
+1996
+1997
+1998
+1999
+2000
+2001
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+Agricultural
+reform, followed
+by early
+industrial
+reform
+China post-
+WTO & pre-
+GFC
+SOE reform
+(1993...)
+
+Page 16
+
+it lost steam along with the SOE reform in 1994. It began to accelerate following China’s WTO
+entry and peaked by the eve of the global financial crisis. Note that the current CIP data is not
+yet long enough for us to sufficiently examine the post -GFC decline in TFP growth and if it
+had indeed turned positive after 2010.
+TABLE 3
+DECOMPOSITION OF AGGREGATE LABOR PRODUCTIVITY GROWTH IN CHINA
+(Contributions are weighted growth in percent)
+ 1981-1991 1991-2001 2001-2007 2007-2012 1981-2012
+ Growth of Labor Productivity
+Value-Added Growth (APPF) 8.81  8.85  11.37  9.22  9.38
+   -Value added per hour worked 6.26  7.26  10.08  11.55  8.18
+   - Natural hours1 2.55  1.59  1.28  -2.33  1.21
+ Factor Contribution
+Value-Added per hour worked 6.26  7.26  10.08  11.55  8.18
+   - Capital deepening 4.34  6.10  8.71  11.72  6.94
+   - Labor quality 0.06  0.43  0.05  1.26  0.37
+   - TFP growth 1.86  0.72  1.32  -1.42  0.86
+Source: Authors’ estimates.
+Note: 1) Different from user cost-weighted homogeneous hours in Table 2.
+
+Table 3 presents the results of a decomposition of China’s aggregate value-added per hour
+worked into changes in capital deepening, labor quality and TFP. This enables us to separate
+the contribution of hours worked from the contribution of genuine labor producti vity
+improvement and its sources. The Chinese economy once benefited significantly from the
+increase in hours worked or the so -called “demographic dividend”. This has, however,
+declined overtime as shown in Table 3  from 2.55 percent per annum in 198 1-91 to  1.28
+following China’s WTO entry. However, in the last period 2007 -2012, the growth of hours
+worked turned negative and dropped substantially by 2.33 per annum . This clearly indicates
+the complete loss of the “demographic dividend”. Although the growth of  value-added per
+hour worked increased from 6.25 to 11.55 percent per annum, it appeared to be increasingly
+relying on the growth of capital deepening ranging from 4.34 to 11.72 percent per annum. In
+fact, Table 3  shows that the TFP growth was not necessar ily in line with , or completely
+contradictory to, the pace of capital deepening, which suggests serious misallocation of
+resources.
+The ICT-specific industry origin of aggregate TFP growth
+In order to explicitly account for differences across ICT -specific groups and their impact
+on China’s aggregate TFP performance, we now introduce the Domar aggregation approach
+to the APPF framework as given in equation (9) following the ICT studies on the US economy
+by Jorgenson, Ho and Stiroh (2005a and 2005b) . This i s to account for genuine TFP
+improvement within industries and factor reallocation effects across industries . The results
+presented in the first line of Table 4 are estimated with the stringent assumption that marginal
+productivities of capital and labour are the same across all industries, which are the same as
+those presented in Table 2 and Table 3 above. As expressed in equation (9), if using Domar
+weights such an aggregate TFP growth rate can be decomposed into three additive components,
+i.e. 1) the change of aggregate TFP originated in industries summed up by Domar weights; 2)
+the change of capital reallocation  across industries; and 3) the change of labor reallocation
+across industries.
+
+Page 17
+
+On average of the entire period 1981 -2012, China’s Domar -weighted TFP growth is
+estimated at 0.63 percent per annum, compared to the aggregate TFP growth of 0. 86 percent
+per annum. This implies a net factor reallocation effect of 0. 23 ppts. Table 4 also shows the
+contribution of each industrial group to the Domar -weighted annual TFP growth (see Table
+A2 for the results of individual industries).  The biggest contributor to the Domar -weighted
+aggregate TFP growth was the ICT -using manufacturing group, contributing 0. 92 ppts. The
+ICT-producing group contributed 0.37 ppts. The non-ICT using in services was the worst
+performer, dragging down the Domar weighted TFP growth by 0. 99 ppts (Table 4). Such a
+sharp contrast across industry groups in TFP performance can also be observed over different
+sub-periods, which clearly sugg ests that treating individual industries homogenous in the
+growth accounting can substantially distort our view of the productivity performance of the
+Chinese economy, and give no vision of the industry origin of the aggregate TFP performance.
+TABLE 4
+DECOMPOSITION OF CHINA’S AGGREGATE TOTAL FACTOR PRODUCTIVITY GROWTH:
+DOMAR-AGGREGATION VIS-À-VIS FACTOR REALLOCATION EFFECTS
+(In percentage points except aggregate TFP growth in percent per annum and)
+ 1981-91 1991-01 2001-07 2007-12 1981-12
+Aggregate TFP growth  1.86  0.72  1.32  -1.42  0.86
+  1. Domar-weighted TFP growth 1.47  0.63  1.47  -2.08  0.63
+      -ICT-producing  0.35  0.32  0.56  0.28  0.37
+      -ICT-using manufacturing 1.33  0.99  0.92  -0.06  0.92
+      -ICT-using services 0.14  -1.08  1.00  -0.18  -0.14
+      -Non-ICT manufacturing -1.05  1.42  -0.05  0.18  0.14
+      -Non-ICT services -0.28  -1.41  -0.94  -1.66  -0.99
+      -Non-ICT other sectors 0.96  0.41  -0.01  -0.65  0.33
+  2. Reallocation of K (K) -0.26  -0.35  -1.33  -0.08  -0.47
+  3. Reallocation of L (L) 0.65  0.44  1.19  0.74  0.70
+Source: Authors’ estimates following equation (9).
+In terms of Domar-weighted TFP growth, both the period of the 1980s and the period post
+WTO were equally appraisable with a very impressive 1.47-percent annual growth. The ICT-
+producing and manufacturing groups were the key TFP contributors during the former period
+and all the three ICT-related groups were positive and significant TFP drivers during the latter
+period. The post -GFC period 2007 -2012 however saw a considerable TFP decline by 2.08
+percent per annum, worst throughout the whole period in question. Yet, the ICT -producing
+group, together with the non -ICT manufacturing group (0.18), still registered a positive TFP
+growth of 0.28 percent per annum (Table 4).
+The effect of factor reallocation
+The slower Domar-weighted TFP growth (0. 63) compared to the aggregate TFP growth
+(0.86) implies that the net reallocation of capital and labor is positive. Following equation (9),
+in Table 4 we show that this effect consists of a positive labor reallocation effect (L) of 0.70
+ppts, yet a negative capital reallocation effect ( K) of -0.47 ppts. Figure 5  depicts the two
+reallocation effects as indices benchmarked on the initial time point 1981.
+It should be noted that such a magnitude of reallocation effect is typically not observed in
+market economies. Based on their empirical work on the US economy in 1977-2000, Jorgenson,
+Ho and Stiroh (200 5a) showed that first, the reallocation effect was generally negligible and
+second, if it was non-negligible for some sub-periods, the capital and labor reallocation effects
+
+Page 18
+
+generally moved in opposite directions. Jorgenson, Gollop and Fraumeni (1987) also reported
+the reallocation of capital that was typically positive and the reallocation of labor that was
+typically negative for the US economy for the period 1948 -79. This is because capital grew
+more rapidly in industries with high capital service prices,  hence high returns on capital,
+whereas labor grew relatively slowly in industries with high marginal compensation.
+In the case of China, such a large magnitude and unexpected sign of capital and labor
+reallocation effects have two important implications. First, individual industries indeed face
+significantly different marginal factor productivities suggesting that there are barriers to factor
+mobility which cause misallocation of resources in the economy. The flip -side of this finding
+is that corrections to the distortions can potentially be productivity -enhancing, which is good
+news in terms of much talked and long awaited structural reforms.
+FIGURE 5
+DOMAR AND NON-DOMAR WEIGHTED FACTOR INPUT INDICES AND REALLOCATION EFFECTS
+(1981 = 100)
+
+Source: Based on results reported in Table 4.
+We find that the effect of labor reallocation remained generally positive over time. This
+suggests that labor market was much less distorted than the capital market benefitting from
+increasing labor mobility along with reforms. Notably, the post-WTO period experienced the
+most significant productivity gain attributable to labor reallocation ( 1.19 in 2001-07) which
+could be driven by the rapid expansion of export -oriented, labor-intensive industries that was
+in line with China’s comparative advantage. Besides, the effect of labor reallocation was also
+strong in the wake of the global financial crisis (0. 74 in 2007 -12) reflecting that labor
+responded more quickly to the changes of market conditions.
+The case of capital reallocati on is different. It maintained a negative reallocation effect
+throughout the entire period with the period of post -WTO the worst (-1.33). This may reflect
+local governments’ increasing engagement in GDP race by promoting local urbanization and
+a new round of extensive heavy industrialization that has been criticized as repetitious and
+redundant (Wu 2008).
+
+80
+85
+90
+95
+100
+105
+0
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+1100
+1981
+1983
+1985
+1987
+1989
+1991
+1993
+1995
+1997
+1999
+2001
+2003
+2005
+2007
+2009
+2011
+K input (non-Domar)
+K input (Domar weighted)
+K Reallocation effect (RHS)
+Post WTO
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+1981
+1983
+1985
+1987
+1989
+1991
+1993
+1995
+1997
+1999
+2001
+2003
+2005
+2007
+2009
+2011
+L input (non-Domar)
+L input (Domar weighted)
+L Reallocation effect (RHS)
+Post WTO
+
+Page 19
+
+5. Concluding Remarks
+In this study, w e apply Jorgensonian APPF industry origin of productivity framework,
+incorporating Domar weights for industry aggr egation, to Chinese ICT-specific industry
+groups in China’s post-reform growth from 1981 to 2012. In the absence of a direct measure
+of ICT asset, our ICT -specific industry grouping adopts the ICT-intensity criteria used in the
+US case (Jorgenson et al. 2005), assuming that the similarities found in the ICT intensity across
+industries across countries can be reasonably held for China . This allows us to decompose
+China’s productivity growth into the contribution of the so-grouped ICT industries and the
+factor reallocation effects across the groups.
+We show that Chinese ICT-producing and using manufacturing groups appear to be the
+most important driver of China’s productivity growth over the entire period in question ,
+although we cannot rule out that the so-grouping may to some extent be mixed up with China’s
+most dynamic and productive downstream industries that are close to the most competitive end
+market and thus less exposed to government direct interventions (Wu 2016). However, ICT-
+related industries are by nature more market based and more open to international competition
+than other industries.
+We find that while sharing 29 percent of China’s 9.38-percent annual value added growth,
+these industries contributed 149 percent to China’s 0.83-percent annual aggregate TFP growth.
+This, together with a strong gain from the labor reallocation effect across industries, has
+enabled the economy to compensate for its heavy productivity losses by services and the
+economy-wide misallocation of capital resources. This could be good news to Chinese policy
+makers who have been searching for new engines of China’s growth and hoping that
+technological innovation  is the way out for the currently overcapacity and inefficiency -
+burdened real sector.
+This ever first endeavor could be further improved by several challenging data works. The
+top priority is a proper construction of productive ICT assets for individual industries,
+controlled by the industry-specific total equipment as currently available i n the CIP database.
+While working on this paper we did explore a commodity flow approach but failed to find a
+way to allocate ICT commodities among industries. We then attempted to empirically model
+the relationship between changes in skilled labor and changes in ICT assets using the US data,
+but not yet successful. We do hope that the Chinese statistical authority could listen to
+researchers’ long appeal for establishing national investment matrix that is coherently linked
+to the national accounts.
+Besides, we could consider further improving the CIP industry -specific producer price
+index to incorporate price changes of imported materials. This is not only to make the price
+matrix more realistic and reflect the true intermediate costs facing Chinese producers, but more
+importantly to improve our measure of the real value added growth for industries that heavily
+rely on imported parts and materials, among which ICT -related industries should be
+unquestionably on the top of the list.
+
+Page 20
+
+Appendix
+Table A1
+CIP/China KLEMS Industrial Classification and ICT-Specific Grouping
+CIP EU-
+KLEMS Grouping Industry
+01 AtB Non-ICT3 Agriculture, Forestry, Animal Husbandry and Fishery AGR
+02 10  Non-ICT1 Coal mining CLM
+03 11  Non-ICT1 Oil and gas extraction PTM
+04 13  Non-ICT1 Metal mining MEM
+05 14  Non-ICT1 Non-metallic minerals mining NMM
+06 15  Non-ICT1 Food and kindred products F&B
+07 16  Non-ICT1 Tobacco products TBC
+08 17  Non-ICT1 Textile mill products TEX
+09 18  Non-ICT1 Apparel and other textile products WEA
+10 19  Non-ICT1 Leather and leather products LEA
+11 20  Non-ICT1 Saw mill products, furniture, fixtures W&F
+12 21t22 ICT-U1 Paper products, printing & publishing P&P
+13 23  Non-ICT1 Petroleum and coal products PET
+14 24  Non-ICT1 Chemicals and allied products CHE
+15 25  Non-ICT1 Rubber and plastics products R&P
+16 26  Non-ICT1 Stone, clay, and glass products BUI
+17 27t28 Non-ICT1 Primary & fabricated metal industries MET
+18 27t28 Non-ICT1 Metal products (excl. rolling products) MEP
+19 29  ICT-U1 Industrial machinery and equipment MCH
+20 31  ICT-U1 Electric equipment ELE
+21 32  ICT-P Electronic and telecommunication equipment ICT
+22 30t33 ICT-P Instruments and office equipment INS
+23 34t35 ICT-U1 Motor vehicles & other transportation equipment TRS
+24 36t37 ICT-U1 Miscellaneous manufacturing industries OTH
+25 E ICT-U1 Power, steam, gas and tap water supply UTL
+26 F Non-ICT3 Construction CON
+27 G ICT-U2 Wholesale and Retail Trades SAL
+28 H Non-ICT2 Hotels and Restaurants HOT
+29 I ICT-U2 Transport and Storage T&S
+30 64  ICT-P Post and Telecommunications P&T
+31 J ICT-U2 Financial Intermediation FIN
+32 K Non-ICT2 Real Estate Activities REA
+33 71t74 ICT-U2 Leasing, Technical, Science & Business Services  BUS
+34 L Non-ICT2 Public Administration and Defense ADM
+35 M Non-ICT2 Education EDU
+36 N Non-ICT2 Health and Social Security HEA
+37 O&P Non-ICT2 Other Services SER
+Source: See Wu and Ito (2015) for CIP classification.
+Notes: ICT-P: producing; ICT-U1: using in manufacturing; ICT-U2: using in services; non -ICT1: manufacturing; non-
+ICT2: services; non-ICT3: others.
+
+Page 21
+
+
+TABLE A2
+INDUSTRY CONTRIBUTIONS TO VALUE-ADDED AND TOTAL FACTOR PRODUCTIVITY GROWTH
+1981-2012
+ Value-Added  Total Factor Productivity
+ VA
+weight
+VA
+growth
+Contribution
+to aggregate
+VA growth
+ Domar
+weight
+TFP
+growth
+Contribution
+to aggregate
+TFP growth
+AGR 0.195 5.02 1.09  0.313 0.45 0.32
+CLM 0.016 4.98 0.07  0.032 -0.03 -0.02
+PTM 0.017 -7.34 -0.12  0.026 -12.88 -0.32
+MEM 0.005 9.84 0.05  0.014 0.64 0.01
+NMM 0.006 10.00 0.06  0.013 2.16 0.03
+F&B 0.027 11.35 0.30  0.128 0.29 0.03
+TBC 0.012 9.37 0.10  0.018 -3.59 -0.08
+TEX 0.026 11.33 0.29  0.112 1.10 0.10
+WEA 0.009 15.15 0.13  0.037 1.22 0.04
+LEA 0.004 13.95 0.06  0.020 0.84 0.02
+W&F 0.007 14.84 0.11  0.027 1.36 0.04
+P&P 0.011 13.60 0.15  0.040 1.32 0.05
+PET 0.011 -0.37 -0.04  0.047 -3.98 -0.17
+CHE 0.036 15.51 0.55  0.139 1.75 0.23
+R&P 0.012 19.10 0.22  0.050 2.43 0.11
+BUI 0.025 11.39 0.28  0.079 0.82 0.09
+MET 0.031 8.62 0.24  0.140 -0.49 -0.07
+MEP 0.012 18.77 0.23  0.052 2.64 0.11
+MCH 0.034 14.81 0.53  0.123 3.12 0.34
+ELE 0.015 21.24 0.30  0.068 3.08 0.14
+ICT 0.015 37.76 0.51  0.079 6.78 0.31
+INS 0.003 13.48 0.05  0.011 1.82 0.02
+TRS 0.018 21.63 0.40  0.079 3.46 0.22
+OTH 0.016 19.78 0.31  0.046 3.81 0.18
+UTL 0.027 9.55 0.28  0.109 -0.52 -0.02
+CON 0.055 9.48 0.51  0.213 0.13 0.02
+SAL 0.077 8.70 0.64  0.144 -0.21 -0.07
+HOT 0.019 9.32 0.17  0.053 -1.38 -0.06
+T&S 0.051 8.24 0.42  0.105 -1.18 -0.11
+P&T 0.013 13.56 0.18  0.024 0.78 0.04
+FIN 0.048 10.88 0.44  0.074 2.95 0.05
+REA 0.039 9.53 0.36  0.056 -7.71 -0.43
+BUS 0.023 8.25 0.25  0.059 -0.90 -0.01
+ADM 0.032 11.61 0.38  0.062 1.03 0.07
+EDU 0.025 -6.17 -0.16  0.043 -7.33 -0.31
+HEA 0.012 -6.20 -0.07  0.032 -5.31 -0.17
+SER 0.017 4.27 0.11  0.038 -4.02 -0.10
+Sum 1.000
+
+9.38  2.707
+
+0.63
+Source:  See Tables 2 and 4.
+Notes:  See Table A1 for industry abbreviation. Value added and TFP growth rates are annualized raw growth
+rates in percent. Industry contribution to VA and TFP growth is weighted growth rate in percentage
+points. See equation (9) for Domar aggregation.
+
+Page 22
+
+REFERENCES
+Colecchia, Alessandra and Paul Schreyer, 2002. “ICT Investment and Economic Growth in the
+1990s: Is the United States a Unique Case? A Co mparative Study of Nine OECD
+Countries”, Review of Economic Dynamics, Vol. 5, pp. 408-442.
+Denison, Edward F. 1962. The Sources of Economic Growth in the United States and the
+Alternative before Us. New York: Committee on Economic Development.
+Domar, Evsey. 1961. “On the Measurement of Technological Change”, Economic Journal 71
+Fukao, Kyoji, Tsutomu Miyagawa, Hak K. Pyo and Keun H. Rhee, 2009. “Estimates of
+Multifactor Productivity, ICT Contributions and Resource Reallocation Effects in Japan
+and Korea”, RIETI Discussion Papers, 09-E-021
+Griliches, Zvi. 1960. Measuring Inputs in Agriculture: A Critical Survey. Journal of Farm
+Economics 40 (5): 1398-1427.
+Griliches, Zvi. 1992. Introduction in Griliches (ed.) Output Measurement in the Service Sectors,
+University of Chicago Press
+Hsieh, C. and Klenow, P.J. 2009. Misallocations and Manufacturing TFP in China and India,
+Quarterly Journal of Economics, Vol. CXXIV, No.4: 1403-1448
+Hulten, Charles. 1978. “Growth Accounting with Intermediate Inputs”, Review of Economic
+Studies 45
+Jorgenson, Dale W. 1966. “The Embodiment Hypothesis”, Journal of Political Economy  74
+(1): 1-17
+Jorgenson, Dale W. 2001. “Information Technology and the U.S. Economy”, The American
+Economic Review, Vol. 91 (1), pp. 1-32.
+Jorgenson, Dale W. and Griliches, Z., 1967. “The explanation of productivity change”, Review
+of Economic Studies, vol. 34 (3), pp. 249–83.
+Jorgenson, Dale W., Frank Gollop and Barbara Fraumeni. 1987. Productivity and U.S.
+Economic Growth, Harvard University Press, Cambridge, MA
+Jorgenson, Dale W.  and Kevin J. Stiroh . 2000. “Raising the Speed Limit: U.S. Economic
+Growth in the Information Age,” Chapter 3 in Dale W. Jorgenson (2001a), pp. 71-150.
+Jorgenson, Dale W., Mun S. Ho and Kevin J. Stiroh, 2005 a. Information Technology and the
+American Growth Resurgence, Productivity Volume 3. Cambridge, MA: MIT Press.
+Jorgenson, Dale W., Mun S. Ho and Kevin J. Stiroh, 2005b. “Growth of the US Industries and
+Investments in Information Technology and Higher Education. In Carol Corrado, John
+Haltiwanger and Daniel Sichel (eds.), Measuring Capital in a New Economy. University of
+Chicago Press.
+Jorgenson, Dale  W. and Khuong Vu . 2013. The Emergence of the New Economic Order:
+Growth in the G7 and the G20. Journal of Policy Modeling, 35(3), 389-399.
+
+Page 23
+
+
+O'Mahony, M., and De Boer, 2002. Britain's Relative Productivity Performance: Has Anything
+Changed?. National Institute Economic Review, 179, 38-43.
+O’Mahony, M. and B art van Ark, eds., 2003. E uropean Union Productivity and
+Competitiveness: An Industry Perspective. Can Europe Resume the Catching-up Process?,
+DG Enterprise, European Union, Luxembourg
+(http://www.ggdc.net/pub/EU_productivity_and_competitiveness.pdf).
+van Ark, Bart. 1996. “Sectoral Growth Accounting and Structural Change in Postwar Europe”
+pp. 84 -164 in B. van Ark & N. Crafts, Quantitative Aspects of post -war European
+Economic Growth, Cambridge University Press.
+van Ark, Bart, Johanna Melka, Nanno Mulder, Marcel Timmer and Gerard Ypma, 2002. “ICT
+Investment and Growth Accounts for the European Union, 1980 -2000”.  Final Report on
+ICT and Growth Accounting for the DG Economics and Finance of the European
+Commission, Brussels.
+Wu, Harry X. 2013. “How Fast Has Chinese Industry Grown? – The Upward Bias Hypothesis
+Revisited”, China Economic Journal, Vol. 6 (2-3): 80-102
+Wu, Harry X. 2014. “The growth of ‘non-material services’ in China – Maddison’s ‘zero-labor-
+productivity-growth’ hypothesis revisited”, The Economic Review , Institute of Economic
+Research, Hitotsubashi University, Vol. 65 (3)
+Wu, Harry X. 2015. “Constructing China’s Net Capital Stock and Measuring Capital Service
+in China”, RIETI Discussion Papers, 15-E-006
+Wu, Harry X. 2016. “On China’s strategic move for a new stage of development – a
+productivity perspective”, in Jorgenson, D.W., Fukao, K., and Timmer, M.P. (eds.) The
+World Economy: Growth or Stagnation?  Cambridge: Cambridge University Press, pp.
+153–198.
+Wu, Harry X. and Keiko Ito, 201 5. Reconstruction of Chin a’s National Output and Income
+Accounts and Supply -Use and Input -Output Accounts in Time Series,  RIETI Discussion
+Papers, 15-E-004
+Wu, Harry X., Ximing Yue and George G. Zhang. 201 5. Constructing Employment and
+Compensation Matrices and Measuring Labor Inp ut in China,  RIETI Discussion Paper s,
+15-E-005
+Wu, Jinglian. 2008. The Choice of China’s Growth Model [Zhongguo zengzhang moshi jueze).
+Shanghai: Yuandong Book Press

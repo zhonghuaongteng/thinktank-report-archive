@@ -34,7 +34,7 @@ def _item(code: str, published: str, title: str, axes: tuple[str, ...], role: st
 SELECTED_ITEMS = (
     _item("16-E-041", "2016-03-01", "Role of Public Research Institutes in National Innovation Systems in Industrialized Countries: The cases of Fraunhofer, NIST, CSIRO, AIST, and ITRI", ("科学体系与科研能力", "研发投入与创新政策"), "公共科研机构在国家创新体系中的功能比较基线"),
     _item("17-E-056", "2017-03-01", "Measuring Science Intensity of Industry using Linked Dataset of Science, Technology and Industry", ("创新测量与政策方法", "科学体系与科研能力", "产业创新与成果转化"), "连接论文、专利与产业数据测量科学密集度的方法节点"),
-    _item("18-P-012", "2018-07-01", "The Regional Innovation System in China: Regional comparison of technology, venture financing, and human capital focusing on Shenzhen", ("国际合作与中国比较", "产业创新与成果转化", "科技人才与技能"), "深圳区域创新系统、技术融资与人力资本的中国直接材料"),
+    _item("18-P-012", "2018-07-01", "The Regional Innovation System in China: Regional comparison of technology, venture financing, and human capital focusing on Shenzhen", ("国际合作与中国比较", "产业创新与成果转化", "科技人才与技能"), "深圳区域创新系统、技术融资与人力资本的中国直接材料", True),
     _item("19-E-095", "2019-11-01", "Determinants and Impacts of Incorporation of Local Public Technology Transfer Organizations: Evidence from Japan's Kohsetsushi", ("产业创新与成果转化", "科学体系与科研能力"), "地方公共技术转移组织及其中小企业技术扩散机制"),
     _item("20-E-058", "2020-06-01", "Incentive or Disincentive for Disclosure of Research Data? A Large-Scale Empirical Analysis and Implications for Open Science Policy", ("科学体系与科研能力", "研发投入与创新政策", "创新测量与政策方法"), "科研数据披露激励与开放科学政策节点"),
     _item("21-E-026", "2021-03-01", "Chasing Two Hares at Once? Effect of Joint Institutional Change for Promoting Commercial Use of University Knowledge and Scientific Research", ("产业创新与成果转化", "科学体系与科研能力"), "大学知识与科研成果商业化的制度联动节点"),
@@ -43,8 +43,14 @@ SELECTED_ITEMS = (
     _item("24-E-013", "2024-02-01", "Economic Growth through Basic Research by Firms: A science linkage approach", ("科学体系与科研能力", "产业创新与成果转化", "创新测量与政策方法"), "企业基础研究、科学关联与经济增长节点"),
     _item("25-E-089", "2025-09-01", "Do Corporate Scientists Contribute to Firm Innovation? Empirical analysis by using linked dataset of research papers and patents in Japanese firms", ("科技人才与技能", "科学体系与科研能力", "产业创新与成果转化"), "企业科学家连接论文、专利与企业创新的近期证据"),
     _item("26-E-021", "2026-03-01", "Design Right Commercialization by Public Technology Transfer Organizations: Disseminating design knowledge in regional innovation systems", ("产业创新与成果转化", "科学体系与科研能力"), "公共技术转移组织推动设计知识商业化的最新节点"),
+    _item("17-E-111", "2017-08-01", "Accounting for the Role of Information and Communication Technology in China's Productivity Growth", ("关键与新兴技术", "产业创新与成果转化", "创新测量与政策方法", "国际合作与中国比较"), "ICT资本与中国生产率增长的长期测量证据", True),
+    _item("17-E-126", "2017-12-01", "Innovation Responses of Japanese Firms to Chinese Import Competition", ("产业创新与成果转化", "国际合作与中国比较"), "中国进口竞争如何改变日本企业创新响应", True),
     _item("20-E-045", "2020-05-01", "Technological Competitiveness of China's Internet Platforms: Comparison of Google and Baidu Using Patent Text Information", ("关键与新兴技术", "国际合作与中国比较", "创新测量与政策方法"), "基于专利文本比较中国互联网平台技术竞争力", True),
+    _item("21-J-052", "2021-12-01", "Industrial Subsidies and Firm Innovation: New Evidence from China", ("研发投入与创新政策", "产业创新与成果转化", "创新测量与政策方法", "国际合作与中国比较"), "产业补贴影响中国企业创新的微观证据", True),
+    _item("23-J-015", "2023-04-01", "Why is China Building a New System for Mobilizing Resources Nationwide for Scientific and Technological Innovation? A comparative study of the Chinese system and the EU system of scientific and technological innovation", ("科学体系与科研能力", "关键与新兴技术", "产业创新与成果转化", "国际合作与中国比较"), "中国新型举国科技创新体制与欧盟体系的比较", True),
+    _item("23-J-020", "2023-06-01", "The Impact of Robot Imports on the Performance of Chinese Firms", ("关键与新兴技术", "产业创新与成果转化", "创新测量与政策方法", "国际合作与中国比较"), "机器人进口影响中国企业绩效与技术吸收的证据", True),
     _item("24-E-075", "2024-10-01", "Quantifying the Differences in Innovation Processes in China, Japan and the United States by Document Level Concordance between Patents and Web Contents", ("创新测量与政策方法", "国际合作与中国比较"), "利用专利与网页内容比较中日美创新过程", True),
+    _item("25-J-005", "2025-02-01", "An Equilibrium Point between Regulations and Innovation Found in the Chinese Regulation of Generative Artificial Intelligence: A study towards grasping China’s AI strategy", ("关键与新兴技术", "产业创新与成果转化", "国际合作与中国比较"), "中国生成式AI监管与创新平衡及其AI战略", True),
 )
 
 
@@ -64,7 +70,14 @@ def write_csv(path: Path, rows: list[dict[str, str]], fields: list[str]) -> None
 def sanitize_extracted_text(text: str) -> str:
     marker = "[REDACTED_CREDENTIAL_SHAPED_EXAMPLE]"
     text = re.sub(r"AKIA[0-9A-Z]{16}", marker, text)
-    return "\n".join(marker if re.fullmatch(r"[A-Za-z0-9/+=]{40}", line.strip()) else line for line in text.split("\n"))
+    return "\n".join(
+        (marker if re.fullmatch(r"[A-Za-z0-9/+=]{40}", line.strip()) else line).rstrip()
+        for line in text.split("\n")
+    )
+
+
+def sanitize_html_snapshot(html: str) -> str:
+    return "\n".join(re.sub(r"^ +\t", "\t", line.rstrip()) for line in html.split("\n"))
 
 
 def extract_pdf_text(path: Path) -> tuple[str, int]:
@@ -148,7 +161,7 @@ def main() -> int:
             pdf_path = pdf_dir / f"{rid}.pdf"
             text_path = text_dir / f"{rid}.txt"
             slice_path = slice_dir / f"{rid}.md"
-            html_path.write_text(page_html(target, source["官方落地页"]), encoding="utf-8", newline="\n")
+            html_path.write_text(sanitize_html_snapshot(page_html(target, source["官方落地页"])), encoding="utf-8", newline="\n")
             if not pdf_path.exists():
                 pdf_path.write_bytes(browser_pdf(target, pdf_url))
             pdf_data = pdf_path.read_bytes()
@@ -202,7 +215,7 @@ def main() -> int:
     china_docs = sum(int(row["China词形命中数"]) > 0 for row in ledger)
     result_path.write_text(
         "# RIETI科学技术创新机制与中国比较跨期精选全文结果\n\n"
-        f"- 从224项轻量目录中选择{len(ledger)}份官方全文：2016—2026年每年一个科技创新机制节点，另补两个中国技术创新比较节点。\n"
+        f"- 从224项轻量目录中选择{len(ledger)}份官方全文：2016—2026年每年一个科技创新机制节点，并定点补充中国科技创新机制材料。\n"
         f"- 共{totals['页数']:,}页、{totals['字节数']:,}字节、提取文本{totals['清洗文本字符数']:,}字符；{china_docs}份出现China/Chinese/PRC词形，共{totals['China词形命中数']:,}次。\n"
         "- 覆盖公共科研机构、科技创新测量、区域创新系统、技术转移、开放科学、大学知识商业化、政府研发支出、基础研究、企业科学家及中国技术创新比较。\n"
         "- 安全、出口管制、脱钩和一般供应链议题未进入精选全文。讨论论文观点继续按作者归因。\n",

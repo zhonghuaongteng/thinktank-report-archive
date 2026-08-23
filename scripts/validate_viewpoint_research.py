@@ -199,10 +199,13 @@ def expected_efi_selected_ids() -> set[str]:
 
 def expected_rieti_selected_ids() -> set[str]:
     return {
-        "C-JP-RIETI-16-E-041", "C-JP-RIETI-17-E-056", "C-JP-RIETI-18-P-012",
+        "C-JP-RIETI-16-E-041", "C-JP-RIETI-17-E-056", "C-JP-RIETI-17-E-111",
+        "C-JP-RIETI-17-E-126", "C-JP-RIETI-18-P-012",
         "C-JP-RIETI-19-E-095", "C-JP-RIETI-20-E-045", "C-JP-RIETI-20-E-058",
-        "C-JP-RIETI-21-E-026", "C-JP-RIETI-22-E-030", "C-JP-RIETI-23-E-053",
+        "C-JP-RIETI-21-E-026", "C-JP-RIETI-21-J-052", "C-JP-RIETI-22-E-030",
+        "C-JP-RIETI-23-E-053", "C-JP-RIETI-23-J-015", "C-JP-RIETI-23-J-020",
         "C-JP-RIETI-24-E-013", "C-JP-RIETI-24-E-075", "C-JP-RIETI-25-E-089",
+        "C-JP-RIETI-25-J-005",
         "C-JP-RIETI-26-E-021",
     }
 
@@ -1019,11 +1022,11 @@ def main() -> None:
     )
     rieti_selected = rows(root / "196_RIETI科学技术创新机制与中国比较跨期精选全文台账.csv")
     assert {r["报告ID"] for r in rieti_selected} == expected_rieti_selected_ids()
-    assert sum(int(r["页数"]) for r in rieti_selected) == 418
-    assert sum(int(r["字节数"]) for r in rieti_selected) == 17032647
-    assert sum(int(r["清洗文本字符数"]) for r in rieti_selected) == 889874
-    assert sum(int(r["China词形命中数"]) for r in rieti_selected) == 114
-    assert sum(int(r["China词形命中数"]) > 0 for r in rieti_selected) == 6
+    assert sum(int(r["页数"]) for r in rieti_selected) == 606
+    assert sum(int(r["字节数"]) for r in rieti_selected) == 24232401
+    assert sum(int(r["清洗文本字符数"]) for r in rieti_selected) == 1155837
+    assert sum(int(r["China词形命中数"]) for r in rieti_selected) == 407
+    assert sum(int(r["China词形命中数"]) > 0 for r in rieti_selected) == 12
     assert not any(re.search(r"security exception|export restriction|export control|decoupling|trade war", r["报告名称"], re.I) for r in rieti_selected)
     assert all(
         Path(r["本地原始PDF"]).exists() and Path(r["本地页面HTML"]).exists()
@@ -1080,7 +1083,7 @@ def main() -> None:
     assert sum(int(r["网页归档字节数"]) for r in nasem_selected) == 7243099
     assert sum(int(r["清洗文本字符数"]) for r in nasem_selected) == 6132897
     progress_text = (root / "210_本地资料库实时进度看板.md").read_text(encoding="utf-8")
-    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：1996条", "仅目录与官方入口：8403条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：712条"):
+    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2002条", "仅目录与官方入口：8397条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：712条"):
         assert marker in progress_text
     institution_progress = rows(root / "211_机构采集进度.csv")
     assert len(institution_progress) == 46
