@@ -44,13 +44,19 @@ SELECTED_ITEMS = (
     _item("2018-01-08", "industry-funding-university-research-which-states-lead", "Industry Funding of University Research: Which States Lead?", ("人才大学与科研组织", "技术创新与产业转化"), "产业资助大学研究、区域技术经济活动与政策工具"),
     _item("2018-06-04", "why-us-business-rd-not-strong-it-appears", "Why U.S. Business R&D Is Not as Strong as It Appears", ("科学体系与基础研究", "技术创新与产业转化"), "企业R&D结构、基础与应用研究比重及公共支持"),
     _item("2019-09-12", "why-federal-rd-policy-needs-prioritize-productivity-drive-growth-and-reduce", "Why Federal R&D Policy Needs to Prioritize Productivity to Drive Growth and Reduce the Debt-to-GDP Ratio", ("研发治理与科研组织", "技术创新与产业转化"), "生产率导向公共R&D的目标设定与经济评价"),
+    _item("2020-01-06", "innovation-drag-chinas-economic-impact-developed-nations", "Innovation Drag: China’s Economic Impact on Developed Nations", ("技术创新与产业转化", "国际合作与开放科学"), "中国经济扩张对全球创新投入、知识溢出与先进经济体创新能力的影响", True),
+    _item("2020-09-08", "impact-chinas-policies-global-biopharmaceutical-industry-innovation", "The Impact of China’s Policies on Global Biopharmaceutical Industry Innovation", ("关键与通用技术", "技术创新与产业转化"), "中国生物医药政策、研发激励与全球生命科学创新的关联", True),
+    _item("2020-10-05", "impact-chinas-production-surge-innovation-global-solar-photovoltaics", "The Impact of China’s Production Surge on Innovation in the Global Solar Photovoltaics Industry", ("关键与通用技术", "技术创新与产业转化"), "中国光伏制造扩张、成本下降与替代技术路径多样性的关系", True),
     _item("2020-11-02", "understanding-us-national-innovation-system-2020", "Understanding the U.S. National Innovation System, 2020", ("研发治理与科研组织", "技术创新与产业转化"), "国家创新体系结构、政策协调与国际比较", True),
+    _item("2020-11-23", "chinese-competitiveness-international-digital-economy", "Chinese Competitiveness in the International Digital Economy", ("关键与通用技术", "技术创新与产业转化"), "中国数字企业创新能力、平台规模与国际竞争结构", True),
     _item("2020-12-07", "how-united-states-can-increase-access-supercomputing", "How the United States Can Increase Access to Supercomputing", ("关键与通用技术", "科学体系与基础研究"), "超级计算资源、AI研究基础设施与公共投入"),
     _item("2021-01-25", "five-free-market-myths-about-increasing-federal-research-funding", "Five Free-Market Myths About Increasing Federal Research Funding", ("科学体系与基础研究", "研发治理与科研组织"), "联邦科研资助、公私R&D分工与政策正当性"),
+    _item("2021-01-25", "who-winning-ai-race-china-eu-or-united-states-2021-update", "Who Is Winning the AI Race: China, the EU, or the United States? — 2021 Update", ("关键与通用技术", "人才大学与科研组织"), "中美欧AI人才、科研、企业、硬件与应用能力比较", True),
     _item("2021-10-18", "2021-global-energy-innovation-index-national-contributions-global-clean", "The 2021 Global Energy Innovation Index: National Contributions to the Global Clean Energy Innovation System", ("关键与通用技术", "国际合作与开放科学"), "清洁能源创新系统指标、国家贡献与中国比较", True),
     _item("2022-07-19", "industry-university-partnerships-to-create-ai-universities", "Industry-University Partnerships to Create AI Universities: A Model to Spur US Innovation and Competitiveness in AI", ("人才大学与科研组织", "关键与通用技术"), "AI大学、产学合作、人才与算力设备组合"),
     _item("2022-08-02", "foundation-for-energy-security-and-innovation", "The Foundation for Energy Security and Innovation: A Flexible New Tool to Build the Economy, Strengthen Science, and Fight Climate Change", ("研发治理与科研组织", "技术创新与产业转化"), "DOE配套基金会、公私合作与能源技术转化"),
     _item("2023-07-24", "innovation-wars-how-china-is-gaining-on-the-united-states-in-corporate-rd", "Innovation Wars: How China Is Gaining on the United States in Corporate R&D", ("技术创新与产业转化", "关键与通用技术"), "中美先进产业企业R&D强度与结构比较", True),
+    _item("2023-12-13", "2023-hamilton-index", "The Hamilton Index, 2023: China Is Running Away With Strategic Industries", ("技术创新与产业转化", "关键与通用技术"), "中国先进产业增加值、专业化程度与全球产业创新结构比较", True),
     _item("2024-03-13", "federal-funding-for-basic-research-spurs-clean-energy-discoveries-eight-case-studies", "How Federal Funding for Basic Research Spurs Clean Energy Discoveries the World Needs: Eight Case Studies", ("科学体系与基础研究", "关键与通用技术"), "基础研究到能源技术突破的八个机制案例"),
     _item("2025-06-30", "congress-should-fully-fund-nsf-tip-directorate", "Congress Should Fully Fund NSF’s TIP Directorate to Make America More Competitive Versus China", ("研发治理与科研组织", "技术创新与产业转化"), "NSF TIP使命导向研究、产业伙伴与中国R&D比较", True),
     _item("2025-12-15", "how-nih-funded-science-supports-us-biopharmaceutical-innovation", "How NIH-Funded Science Supports US Biopharmaceutical Innovation", ("科学体系与基础研究", "技术创新与产业转化"), "NIH资助科学、生物医药产业R&D与公私互补"),
@@ -170,9 +176,9 @@ def main() -> int:
     }
     (root / "173_ITIF科技创新机制与中国比较跨期精选全文结果.md").write_text(
         "# ITIF科技创新机制与中国比较跨期精选全文结果\n\n"
-        f"- 从669项近十年正式报告轻量目录中新增保存{len(ledger)}项ITIF官方Markdown全文，共{totals['bytes']:,}字节、{totals['chars']:,}字符。\n"
-        f"- 直接中国比较材料{totals['direct']}项，China/Chinese/PRC词形命中{totals['china']}次；中国维度主要用于国家创新体系、清洁能源创新、企业R&D和NSF TIP比较。\n"
-        "- 跨期机制主线覆盖创新基础设施、R&D溢出、技术示范、产学合作、国家创新体系、科研资助、算力设施、大学商业化和生物医药公私R&D。\n"
+        f"- 从669项近十年正式报告轻量目录中精选保存{len(ledger)}项ITIF官方Markdown全文，共{totals['bytes']:,}字节、{totals['chars']:,}字符。\n"
+        f"- 直接中国比较材料{totals['direct']}项，China/Chinese/PRC词形命中{totals['china']}次；中国维度覆盖国家创新体系、AI能力、清洁能源、生物医药、数字经济、先进产业与企业R&D。\n"
+        "- 跨期机制主线覆盖创新基础设施、R&D溢出、技术示范、产学合作、国家创新体系、科研资助、算力设施、大学商业化、生物医药公私R&D，以及规模扩张对全球创新路径的影响。\n"
         "- 安全、反垄断、隐私和一般贸易材料未进入本批精选；其题名与摘要继续保留于轻量总目录。\n",
         encoding="utf-8",
     )

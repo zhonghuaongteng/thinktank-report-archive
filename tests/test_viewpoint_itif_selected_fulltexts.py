@@ -15,7 +15,7 @@ class ItifSelectedFulltextsTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_selected_set_is_small_and_covers_every_year(self):
-        self.assertEqual(len(SELECTED_ITEMS), 18)
+        self.assertEqual(len(SELECTED_ITEMS), 24)
         self.assertEqual({int(item["date"][:4]) for item in SELECTED_ITEMS}, set(range(2016, 2027)))
 
     def test_selected_ids_follow_light_catalog_rule(self):
@@ -31,7 +31,18 @@ class ItifSelectedFulltextsTests(unittest.TestCase):
         self.assertIn("研发治理与科研组织", axes)
         self.assertIn("技术创新与产业转化", axes)
         self.assertIn("关键与通用技术", axes)
-        self.assertGreaterEqual(sum(bool(item["china"]) for item in SELECTED_ITEMS), 4)
+        self.assertEqual(sum(bool(item["china"]) for item in SELECTED_ITEMS), 11)
+
+    def test_bounded_china_innovation_increment_is_present(self):
+        expected_increment = {
+            "C-ITIF-RB-2020-INNOVATION-DRAG-CHINAS-ECONOMIC-IMPACT-DEVELOPED-NATIONS",
+            "C-ITIF-RB-2020-IMPACT-CHINAS-POLICIES-GLOBAL-BIOPHARMACEUTICAL-INDUSTRY-INNOVATION",
+            "C-ITIF-RB-2020-IMPACT-CHINAS-PRODUCTION-SURGE-INNOVATION-GLOBAL-SOLAR-PHOTOVOLTAICS",
+            "C-ITIF-RB-2020-CHINESE-COMPETITIVENESS-INTERNATIONAL-DIGITAL-ECONOMY",
+            "C-ITIF-RB-2021-WHO-WINNING-AI-RACE-CHINA-EU-OR-UNITED-STATES-2021-UPDATE",
+            "C-ITIF-RB-2023-2023-HAMILTON-INDEX",
+        }
+        self.assertTrue(expected_increment.issubset({item["id"] for item in SELECTED_ITEMS}))
 
     def test_security_antitrust_and_privacy_led_reports_are_excluded(self):
         titles = "\n".join(item["title"].lower() for item in SELECTED_ITEMS)

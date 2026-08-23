@@ -97,13 +97,19 @@ def expected_itif_selected_ids() -> set[str]:
         "C-ITIF-RB-2018-INDUSTRY-FUNDING-UNIVERSITY-RESEARCH-WHICH-STATES-LEAD",
         "C-ITIF-RB-2018-WHY-US-BUSINESS-RD-NOT-STRONG-IT-APPEARS",
         "C-ITIF-RB-2019-WHY-FEDERAL-RD-POLICY-NEEDS-PRIORITIZE-PRODUCTIVITY-DRIVE-GROWTH-AND-REDUCE",
+        "C-ITIF-RB-2020-INNOVATION-DRAG-CHINAS-ECONOMIC-IMPACT-DEVELOPED-NATIONS",
+        "C-ITIF-RB-2020-IMPACT-CHINAS-POLICIES-GLOBAL-BIOPHARMACEUTICAL-INDUSTRY-INNOVATION",
+        "C-ITIF-RB-2020-IMPACT-CHINAS-PRODUCTION-SURGE-INNOVATION-GLOBAL-SOLAR-PHOTOVOLTAICS",
         "C-ITIF-RB-2020-UNDERSTANDING-US-NATIONAL-INNOVATION-SYSTEM-2020",
+        "C-ITIF-RB-2020-CHINESE-COMPETITIVENESS-INTERNATIONAL-DIGITAL-ECONOMY",
         "C-ITIF-RB-2020-HOW-UNITED-STATES-CAN-INCREASE-ACCESS-SUPERCOMPUTING",
         "C-ITIF-RB-2021-FIVE-FREE-MARKET-MYTHS-ABOUT-INCREASING-FEDERAL-RESEARCH-FUNDING",
+        "C-ITIF-RB-2021-WHO-WINNING-AI-RACE-CHINA-EU-OR-UNITED-STATES-2021-UPDATE",
         "C-ITIF-RB-2021-2021-GLOBAL-ENERGY-INNOVATION-INDEX-NATIONAL-CONTRIBUTIONS-GLOBAL-CLEAN",
         "C-ITIF-RB-2022-INDUSTRY-UNIVERSITY-PARTNERSHIPS-TO-CREATE-AI-UNIVERSITIES",
         "C-ITIF-RB-2022-FOUNDATION-FOR-ENERGY-SECURITY-AND-INNOVATION",
         "C-ITIF-RB-2023-INNOVATION-WARS-HOW-CHINA-IS-GAINING-ON-THE-UNITED-STATES-IN-CORPORATE-RD",
+        "C-ITIF-RB-2023-2023-HAMILTON-INDEX",
         "C-ITIF-RB-2024-FEDERAL-FUNDING-FOR-BASIC-RESEARCH-SPURS-CLEAN-ENERGY-DISCOVERIES-EIGHT-CASE-STUDIES",
         "C-ITIF-RB-2025-CONGRESS-SHOULD-FULLY-FUND-NSF-TIP-DIRECTORATE",
         "C-ITIF-RB-2025-HOW-NIH-FUNDED-SCIENCE-SUPPORTS-US-BIOPHARMACEUTICAL-INNOVATION",
@@ -880,10 +886,10 @@ def main() -> None:
     assert all(r["官方落地页"].startswith("https://itif.org/publications/") for r in itif_light)
     itif_selected = rows(root / "172_ITIF科技创新机制与中国比较跨期精选全文台账.csv")
     assert {r["报告ID"] for r in itif_selected} == expected_itif_selected_ids()
-    assert sum(r["中国直接信号"] == "是" for r in itif_selected) == 5
-    assert sum(int(r["字节数"]) for r in itif_selected) == 1003714
-    assert sum(int(r["字符数"]) for r in itif_selected) == 998730
-    assert sum(int(r["China词形命中数"]) for r in itif_selected) == 759
+    assert sum(r["中国直接信号"] == "是" for r in itif_selected) == 11
+    assert sum(int(r["字节数"]) for r in itif_selected) == 1472197
+    assert sum(int(r["字符数"]) for r in itif_selected) == 1465824
+    assert sum(int(r["China词形命中数"]) for r in itif_selected) == 1179
     assert all(
         Path(r["本地原始资产"]).exists() and Path(r["本地文本"]).exists()
         and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
@@ -1083,7 +1089,7 @@ def main() -> None:
     assert sum(int(r["网页归档字节数"]) for r in nasem_selected) == 7243099
     assert sum(int(r["清洗文本字符数"]) for r in nasem_selected) == 6132897
     progress_text = (root / "210_本地资料库实时进度看板.md").read_text(encoding="utf-8")
-    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2002条", "仅目录与官方入口：8397条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：712条"):
+    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2008条", "仅目录与官方入口：8391条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：712条"):
         assert marker in progress_text
     institution_progress = rows(root / "211_机构采集进度.csv")
     assert len(institution_progress) == 46
@@ -1252,8 +1258,8 @@ def main() -> None:
     assert len(ifp_light) == 155
     assert sum(r["全文策略"].startswith("已进入精选全文") for r in ifp_light) == 16
     assert sum(r["全文策略"].startswith("总目录保留") for r in ifp_light) == 139
-    assert sum(r["全文策略"].startswith("已进入精选全文") for r in itif_light) == 18
-    assert sum(r["全文策略"].startswith("总目录保留") for r in itif_light) == 651
+    assert sum(r["全文策略"].startswith("已进入精选全文") for r in itif_light) == 24
+    assert sum(r["全文策略"].startswith("总目录保留") for r in itif_light) == 645
     assert sum(r["全文策略"].startswith("已进入精选全文") for r in csis_rai_light) == 21
     assert sum(r["全文策略"].startswith("总目录保留") for r in csis_rai_light) == 155
     assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1290

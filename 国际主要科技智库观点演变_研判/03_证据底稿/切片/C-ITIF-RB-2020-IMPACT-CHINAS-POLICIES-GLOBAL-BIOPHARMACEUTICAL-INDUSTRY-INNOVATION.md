@@ -1,0 +1,31 @@
+# The Impact of China’s Policies on Global Biopharmaceutical Industry Innovation
+
+- 报告ID：C-ITIF-RB-2020-IMPACT-CHINAS-POLICIES-GLOBAL-BIOPHARMACEUTICAL-INDUSTRY-INNOVATION
+- 官方页面：https://itif.org/publications/2020/09/08/impact-chinas-policies-global-biopharmaceutical-industry-innovation/
+- 资料类型：ITIF官方Markdown全文
+
+## 科技创新与中国定向摘录
+
+--- title: "The Impact of China’s Policies on Global Biopharmaceutical Industry Innovation" summary: |- China is striving to become the global leader in biopharmaceuticals, but many of its policy steps are “innovation mercantilist” in nature. This not only is expected to threaten U.S. leadership, but also slow global life sciences innovation, with negative consequences for cures and treatments. date: "2020-09-08" issues: ["Biopharmaceutical Innovation", "Trade"] authors: ["Robert D. Atkinson"] content_type: "Reports & Briefings" canonical_url: "https://itif.org/publications/2020/09/08/impact-chinas-policies-global-biopharmaceutical-industry-innovation/" ---
+
+# The Impact of China’s Policies on Global Biopharmaceutical Industry Innovation
+
+- America leads in drug discovery and production, ranking first in most innovation measures, whereas China’s biopharma industry is still relatively small. But the government’s “Made in China 2025” plan targets it as a key sector for global growth. - Some Chinese policies help global innovation, such as (modest) funding of early stage biomedical research. But many others are harmful—such as weak IP protection, draconian price controls, pressured tech transfers, and discriminatory procurement. - When Chinese firms sell drugs with unfair support from the Chinese government, they reduce the pace of global drug innovation by taking market share and revenue from more innovative non-Chinese firms operating without such support. - Congress and the administration need to be thinking now about actions to help ensure U.S. biopharmaceutical leadership vis-à-vis China over the next two decades. - In the trade arena, the administration should limit Chinese acquisitions and investments in U.S. drug designers and producers; ensure trade negotiations include biopharma issues; and fund the FDA to effectively inspect Chinese exports. - Domestically, Congress should increase NIH funding, expand R&amp;D tax subsidies, support the Bayh-Dole Act, streamline drug approvals, enable data-driven life-science innovation—and, perhaps most importantly, reject draconian drug price controls.
+
+The production of biopharmaceuticals—large-molecule biotech drugs and small-molecule chemical drugs—is one of the most innovation-intensive industries in the world. Worldwide, the industry invests a greater share of sales into research and development (R&D) than any other industry in order to continue to develop and bring to market new drugs and other treatments.
+
+Unlike industries wherein China has already gained significant global market share, including high-speed rail, solar panels, and telecom equipment, China’s global market share and competitiveness in biopharmaceuticals is still quite low, with the global leaders largely in the United States, with Japan and Europe following.
+
+> Competition can drive innovation, but it needs to be market-based competition.
+
+It is for this reason that China has targeted the industry for global competitive advantage, as detailed in a number of government plans, including “Made in China 2025.” China is taking a range of steps to propel itself to become a major global biopharma competitor—starting with developing a world-class generics industry. However, while some of these policy actions are fair and legitimate, many are not, and are “innovation mercantilist” in nature, seeking to unfairly benefit Chinse firms at the expense of more innovative foreign firms.
+
+Competition can drive innovation, but it needs to be market-based competition. When Apple came out with the iPhone and helped drive Blackberry from the market, this advanced innovation, because it was based on consumer demand for a better product, drove the change. In contrast, a Chinese biopharma firm selling a drug largely because it was supported unfairly by the Chinese government likely reduces the pace of global drug innovation by taking market share and revenue away from more innovative non-Chinese firms.
+
+The biopharmaceutical sector includes research, discovery, testing, and manufacturing of medicines and therapeutics that cure disease and improve patient health. The development of new drugs requires years of painstaking, risky, and expensive research that for a new pharmaceutical compound takes on average between 11.5 and 14 years of research, development, and clinical trials at a cost of $1.5 billion to $2.6 billion.[1](#_edn1)
+
+We see this in R&D investment. Large biopharma firms invest considerable resources in R&D, with the top 30 companies globally (ranked by revenue) being responsible for 77 percent of global pharmaceutical R&D funding. The U.S. life-sciences sector, for example, is extremely research intensive, investing over 21 percent of its sales in R&D, while accounting for 23 percent of domestic R&D funded by U.S. businesses—more than any other sector.[2](#_edn2) Measuring R&D expenditures, the U.S. biopharmaceutical sector leads all other U.S. manufacturing sectors, investing more than 10 times the amount of R&D per employee.[<sup>[3]</sup>](#_edn3) And in the United States, companies’ share of R&D classified as basic (14.3 percent) instead of later-stage applied and development is higher than any other U.S. industry—and more than twice as high as the U.S. industry average (6.4 percent).[4](#_edn4)
+
+As companies earn more revenues, they invest more in R&D. As the Organization for Economic Cooperation and Development (OECD) explained, “There is a high degree of correlation between sales revenues and R&D expenditures.”[5](#_edn5) (See [figure 1](#_Ref49254485).) This relationship is tight because pharmaceutical sales are the main source of revenue pharmaceutical companies use to generate the funding needed to finance research into, and development of, future generations of innovative medicines.
+
+**Figure 1: R&D expenditures and sales in the pharmaceutical industry, 2006[6](#_edn6)**
