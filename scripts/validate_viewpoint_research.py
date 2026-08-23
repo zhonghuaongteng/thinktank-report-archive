@@ -407,7 +407,7 @@ def main() -> None:
     evidence = rows(root / "09_观点变化证据表.csv")
     assert len(seeds) == 49, len(seeds)
     assert len(evidence) == 24, len(evidence)
-    assert len(list((root / "02_机构轨迹卡").glob("*.md"))) == 20
+    assert len(list((root / "02_机构轨迹卡").glob("*.md"))) == 21
     pdfs = list((root / "03_证据底稿" / "原文PDF").glob("*.pdf"))
     assert len(list((root / "03_证据底稿" / "文本").glob("*.txt"))) >= len(pdfs)
     assert len(list((root / "03_证据底稿" / "切片").glob("*.md"))) >= len(pdfs)
@@ -935,6 +935,18 @@ def main() -> None:
         and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
         for r in cross_china_innovation
     )
+    china_research_system = rows(root / "216_中国科研体系与企业研发投入定点增补台账.csv")
+    assert len(china_research_system) == 6
+    assert {r["机构ID"] for r in china_research_system} == {"cset", "eu-jrc"}
+    assert sum(int(r["PDF页数"]) for r in china_research_system) == 665
+    assert sum(int(r["字节数"]) for r in china_research_system) == 26400702
+    assert sum(int(r["清洗文本字符数"]) for r in china_research_system) == 1794638
+    assert sum(int(r["China词形命中数"]) for r in china_research_system) == 1548
+    assert all(
+        Path(r["本地原始资产"]).exists() and Path(r["本地文本"]).exists()
+        and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
+        for r in china_research_system
+    )
     fas_light = rows(root / "174_FAS报告与政策备忘录近十年轻量总目录.csv")
     assert len(fas_light) == 625
     assert {year: sum(r["发布日期"].startswith(str(year)) for r in fas_light) for year in range(2016, 2027)} == {
@@ -1130,7 +1142,7 @@ def main() -> None:
     assert sum(int(r["网页归档字节数"]) for r in nasem_selected) == 7243099
     assert sum(int(r["清洗文本字符数"]) for r in nasem_selected) == 6132897
     progress_text = (root / "210_本地资料库实时进度看板.md").read_text(encoding="utf-8")
-    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2085条", "仅目录与官方入口：8314条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：738条"):
+    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2091条", "仅目录与官方入口：8308条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：742条"):
         assert marker in progress_text
     institution_progress = rows(root / "211_机构采集进度.csv")
     assert len(institution_progress) == 46
@@ -1287,7 +1299,10 @@ def main() -> None:
     assert sum("正式" in r["资料层级"] for r in belfer_merics_light) == 2
     assert sum("机构评论" in r["资料层级"] for r in belfer_merics_light) == 1
     assert not any(re.search(r"national security|cybersecurity|nuclear defense|security and integrity|electromagnetic pulses", r["报告名称"], re.I) for r in ostp_light)
-    assert all(r["全文策略"].startswith("不自动下载") for ledger in (cset_light, itif_series_light, itif_node_light, ostp_light) for r in ledger)
+    cset_research_system_ids = {"C-CSET-15208", "C-CSET-15209"}
+    assert {r["报告ID"] for r in cset_light if r["全文策略"].startswith("已进入中国科研体系")} == cset_research_system_ids
+    assert all(r["全文策略"].startswith("不自动下载") for r in cset_light if r["报告ID"] not in cset_research_system_ids)
+    assert all(r["全文策略"].startswith("不自动下载") for ledger in (itif_series_light, itif_node_light, ostp_light) for r in ledger)
     assert sum(r["全文策略"].startswith("已进入跨机构中国科技创新机制定点全文") for r in belfer_merics_light) == 1
     assert sum(r["全文策略"].startswith("不自动下载") for r in belfer_merics_light) == 2
     fraunhofer_selected = {
@@ -1434,6 +1449,7 @@ def main() -> None:
             (efi_selected, ("本地原始PDF",)),
             (rieti_selected, ("本地原始PDF",)),
             (cross_china_innovation, ("本地原始资产",)),
+            (china_research_system, ("本地原始资产",)),
             (acatech_selected, ("本地原始PDF",)),
             (fraunhofer_selected_fulltexts, ("本地原始PDF",)),
             (stepi_assets, ("本地原始资产",)),
@@ -1670,13 +1686,15 @@ def main() -> None:
         ("213_Fraunhofer_ISI科技创新机制跨期增补全文结果.md", "国际科技智库观点演变_Fraunhofer_ISI科技创新机制跨期增补全文结果.md"),
         ("214_跨机构中国科技创新机制定点增补台账.csv", "国际科技智库观点演变_跨机构中国科技创新机制定点增补台账.csv"),
         ("215_跨机构中国科技创新机制定点增补结果.md", "国际科技智库观点演变_跨机构中国科技创新机制定点增补结果.md"),
+        ("216_中国科研体系与企业研发投入定点增补台账.csv", "国际科技智库观点演变_中国科研体系与企业研发投入定点增补台账.csv"),
+        ("217_中国科研体系与企业研发投入定点增补结果.md", "国际科技智库观点演变_中国科研体系与企业研发投入定点增补结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv"))
     assert any(r.get("项目") == "国际主要科技智库观点演变研究" for r in rows(kb / "06_数据资产" / "数据资产清单.csv"))
     print("viewpoint_research_validation=ok")
-    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=20 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)} crds_assets={len(crds_assets)} nistep_assets={len(nistep_assets)} stepi_assets={len(stepi_assets)} kistep_assets={len(kistep_assets)}")
+    print(f"official_seeds={len(seeds)} catalog={len(catalog)} evidence={len(evidence)} institution_cards=21 pdfs={len(pdfs)} non_anchor_assets={len(catalog_assets)} early_assets={len(early_assets)} cset_assets={len(cset_assets)} atlantic_assets={len(atlantic_assets)} belfer_assets={len(belfer_assets)} nbr_assets={len(nbr_assets)} merics_assets={len(merics_assets)} bruegel_assets={len(bruegel_assets)} crds_assets={len(crds_assets)} nistep_assets={len(nistep_assets)} stepi_assets={len(stepi_assets)} kistep_assets={len(kistep_assets)}")
 
 
 if __name__ == "__main__":
