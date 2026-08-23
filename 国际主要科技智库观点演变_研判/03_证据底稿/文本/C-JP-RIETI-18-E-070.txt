@@ -1,0 +1,1223 @@
+%1
+RIETI Discussion Paper Series 18-E-070
+How Does the Global Network of Research Collaboration Affect
+the Quality of Innovation?
+IINO Takashi
+Niigata University
+INOUE Hiroyasu
+University of Hyogo
+SAITO Yukiko Umeno
+RIETI
+TODO Yasuyuki
+RIETI
+The Research Institute of Economy, Trade and Industry
+https://www.rieti.go.jp/en/
+
+1
+
+ RIETI Discussion Paper Series 18-E-070
+October 2018
+
+How Does the Global Network of Research Collaboration Affect
+the Quality of Innovation?
+
+ IINO Takashi INOUE Hiroyasu
+ Niigata University University of Hyogo
+
+ SAITO Yukiko Umeno TODO Yasuyuki
+ RIETI and Waseda University RIETI and Waseda University
+
+Abstract
+This study examines how  the research collaboration of firms affects the quality of their innovation
+outcomes using comprehensive patent data for firms in the world from 1991 to 2010. Identifying research
+collaboration by co-patenting relationships , we find that research collaboration with other firms,
+particularly with foreign firms, leads to substantial improvement in innovation quality. We also observe
+an inverted U-shaped effect of the density of a firm's ego  network and a positive effect of broker age in
+the global network, especially for firms with international collaboration experiences . These results are
+applicable to the effect on the quality of innovation achieved individually without any collaboration,
+suggesting that the knowledge of firms diffuses to and is acquired by their collaboration partners. Finally,
+we find that the collaboration effect is larger in the 2000s than in the 1990s and varies across countries.
+
+Keywords: Research collaboration, Network, Innovation, Co-patenting
+JEL classification: F14, F23, L14
+
+RIETI Discussion Papers Series aims at widely disseminating research results in the form of professional
+papers, thereby stimulating lively discussion. The views expressed in the papers are solely those of the
+author(s), and neither represent those of the organization to which the authors belong nor the Research Institute
+of Economy, Trade and Industry.
+
+ This study is conducted as a part of the Project Research on ‘Global Inter-Firm Networks and Related
+Policies’ undertaken at the Research Institute of Economy, Trade and Industry (RIETI). Financial support
+from JSPS K akenhi Grant Number s JP25101003, 18H03642, 18H00859, and 18K04615 is gratefully
+acknowledged. The authors would like to thank Masayuki Morikawa, Eiichi Tomiura, Makoto Yano, and
+seminar participants at RIETI for helpful comments. The opinions expressed and arguments employed in
+this paper are the sole responsibility of the authors and do not necessarily reflect those of Niigata University,
+RIETI, University of Hyogo, Waseda University, or any institution with which the authors are affiliated.
+
+2
+
+1. Introduction
+Because innovation is mostly generated from a combination of different types of knowledge (Schumpeter 1934),
+knowledge diffusion through networks of individuals, firms, and institutions is an important driver of innovation
+(Jackson 2010). Accordingly, the effect of networks on innovation has recently been examined extensive ly in
+the literature  as surveyed in  Phelps, Heidl, and Wadhwa (2012) . A major type of network for knowledge
+diffusion is research collaboration (Ahuja 2000, Fleming, King III, and Juda 2007, Fleming, Mingo, and Chen
+2007, Forti, Franzoni, and Sobrero 2013, Gonzalez -Brambila, Veloso, and Krackhardt  2013, among many
+others), while some other types, such as supply chains (Fitjar and Rodríguez -Pose 2013, Todo, Matous, and
+Inoue 2016) and interpersonal interactions (Brennecke and Rank 2017, Perry -Smith 2006, Sosa 2011) , can
+facilitate knowledge diffusion. Some of the studi es above examine research collaboration among firms using
+patent data or unique firm -level data on research alliances, while other s investigate collaboration among
+academic researchers using data from academic publications or collaboration among project teams or individual
+workers.
+ Although numerous studies have used various types of agents and collaborations, the literature has not
+reached a consensus about the effect of research collaboration networks on innovation in mainly three aspects.
+First, mixed results have been found concerning the effect of geographically distant ties on innovation.
+Geographically proximate linkages often observed in practice  (D'Este, Guy, and Iammarino 2012, Hoekman,
+Frenken, and Van Oort 2009, Hong and Su 2013)  may facilitate more  knowledge diffusion and thus more
+innovation due to smaller transport costs. However, proximate linkages may also impede innovation due to
+overlapped and redundant knowledge (Berliant and Fujita 2008, Boschma 2005, Boschma and Frenken 2010)
+as a result of regional knowledge diffusion (Audretsch and Feldman 1996, Jaffe, Trajtenberg, and H enderson
+1993, Murata et al. 2014). Empirically, some studies find a positive effect of proximate linkages on innovation
+(Whittington, Owen-Smith, and Powell 2009) , while others find a larger positive effect of non-local linkages
+than of local linkages (Fitjar and Rodríguez -Pose 2013, Todo, Matous, and Inoue 2016) . The effect of
+international research collaboration, a particular type of non-local linkage, is also found to be positive (Briggs
+2015, Gertler and Levitte 2005), negative (Phelps 2010), or conditional (Qiu, Liu, and Gao 2017). The benefits
+of international collaboration are not always realized possibly because linguistic, cultural, and institutional
+barriers hinder knowledge diffusion among collaborators.
+ Second, characteristics of collaboration networks, particularly network density and brokerage, have been
+found to have various effects on innovation. For example, when collaboration partners of the focal agent are
+also connected, the network of the agent, or the agent's egocentric (ego) network, is said to be dense. In a dense
+network, agents are more likely to  trust each other and thus are more willing to share inf ormation (Coleman
+1988), leading to more innovation. However, because the knowledge of agents in a dense network tends to be
+redundant, as in the case of local linkages, dense networks are less effective in the diffusion of new knowledge
+than networks in which agents are connected to diverse partners and bridge a variety of agents in the network
+(Burt 1992, 2004). The empirical literature has shown mixed results, as some studies find a positive correlation
+between network density or knowledge redundancy and innovation performance (Ahuja 2000, Forti, Franzoni,
+and Sobrero 2013, Phelps 2010) , while others find a negative corr elation (Fleming, Mingo, and Chen 2007,
+
+3
+
+Gonzalez-Brambila, Veloso, and Krackhardt 2013).
+ Finally, another issue that has mostly been neglected in the literature is whether or not knowledge
+combined in a research collaboration is in fact acquired by the collaboration partners and effectively utilized in
+subsequent research conducted individually. Most of the existing studies mentioned above examined how
+research collaboration affects innovation without distinguishing between outcomes achieved by collaborative
+and individual research activities. Therefore, although some research collaboration is found to improve the
+quality of innovation achieved by the collaboration, it is still unclear whether or not the knowledge used in the
+collaboration diffuses to and is absorbed by collaboration partners. If such knowledge dif fusion is not
+accomplished, the benefits of research collaboration are realized only during the collaboration but end
+afterwards.
+ The present study examines the se remaining issues in the literature , using a comprehensive firm -level
+dataset of patent -holding firms in the world for the period 1991 –2010. We identify the global research
+collaboration network among firms by patent co-ownership, following Belderbos et al. (2014) and Briggs (2015).
+More specifically, we empirically estimate the effect of the research collaboration and characteristics of each
+firm with the intra- and international collaboration on the quality of innovation measur ed by the number of
+citations received by patents of the firm. We find that research collaboration with other firms, particularly with
+foreign firms, leads to substantial improvement in innovation quality. The relationship between the density of
+the ego network in the international co-ownership relation and innovation quality is inverted U-shaped, implying
+that dense linkages promote trust, knowledge diffusion, and innovation to a certain extent. When a firm bridges
+between a larger variety of firms, its performance is higher, suggesting the important role of diverse linkages in
+knowledge diffusion. These results are applicable to the effect on the quality of innovation achieved individually
+without any collaboration, although the size of the effect on innov ation without collaboration is smaller than
+that with collaboration. H ence, we conclude that the knowledge of firms diffuses to and is absorbed by their
+collaboration partners, at least to some extent. Finally, we find that the collaboration effect is larger in the 2000s
+than in the 1990s and varies across countries.
+ We contribute to the literature on the effect of research collaboration on innovation performance in the
+following four aspects. First, we distinguish between the effect of intra- and international research collaboration,
+finding a substantially larger effect of the latter. This adds to the evidence in the literature supporting a larger
+effect of distant ties than of proximate ties. Second, we also highlight possible differences between intra- and
+international collaboration in the effect of network characteristics. The inverted U-shaped relation between
+network density and innovation performance can be similarly applied to both firms with  only domestic
+collaborations and those with international collaborations. However, brokerage in the international network can
+promote more innovation than brokerage in an intra -national network . Third, we estimate the effect of
+collaboration on the qualit y of innovation achieved individually without collaboration to confirm knowledge
+diffusion through collaboration. This examination has not been conducted, to the best of the authors' knowledge.
+Finally, we carefully investigate cross-country variations in the characteristics of firms' research collaboration
+and the resulting effect on performance. Based on the examination, we provide practical policy implications in
+general as well as specific to some countries.
+ The structure of the paper is as follows. The next section provides testable hypotheses based on
+
+4
+
+theoretical considerations, whereas Section 3 describes the data and variables used in the estimation, including
+cross-country comparison and network structure. Section 4 explains the estimation equation and methodology,
+and Section 5 presents the results. Section 6 summarizes and discuss es the results and provide s policy
+implications.
+2. Conceptual Framework and Hypotheses
+2.1. Effect of inter-firm research collaboration
+Inter-firm research collaboration generates knowledge networks among firms that can be a major channel of
+knowledge diffusion (Owen-Smith and Powell 2004) . Research collaboration enables firms to exchange new
+knowledge and information about scientific and engineering technologies from each other and hence improves
+the quantity and quality of innovation outcomes.
+ This study particularly focuses on possible difference s between intra- and international collaboration.
+Research collaboration is often performed among agents of geographic proximity (D'Este, Guy, and Iammarino
+2012, Hoekman, Frenken, and Van Oort 2009, Hong and Su 2013). However, whether geographically local or
+non-local linkages promote more innovation is theoretically debatable, as argued in the literature. In local
+linkages, knowledge can  diffuse more quickly due to smaller transport costs  (Audretsch and Feldman 1996,
+Jaffe, Trajtenberg, and Henderson 1993, Murata et al. 2014), and thus, innovation can be facilitated. However,
+because of active knowledge diffusion, the knowledge of geographically neighboring agents is often overlapped
+and redundant (Berliant and Fujita 2008, Boschma 2005, Boschma and Frenken 2010). Then, collaboration with
+neighboring partners may combine only similar knowledge and thus gener ate innovation of low quality. By
+contrast, in research collaboration with distant partners, a variety of knowledge is utilized to achieve advanced
+innovation.
+ Empirical evidence on this issue is mixed. Some studies, such as Whittington, Owen-Smith, and Powell
+(2009), find a positive effect of proximate linkages on innovation , while others, such as Todo, Matous, and
+Inoue (2016) and Fitjar and Rodríguez-Pose (2013), find a positive effect of non-local linkages. Several studies
+have examined the effect of international research collaboration on innovation, leading to various results. Briggs
+(2015) and Gertler and Levitte (2005) find a positive effect of international collaboration and foreign researchers,
+respectively. However, the effect of international collaboration is negative in Phelps (2010) and conditional on
+absorptive capacity in Qiu, Liu, and Gao (2017). Accordingly, we propose contrasting hypotheses as follows:
+Hypothesis 1a: The effect of international research collaboration on a firm's innovation quality is higher than
+the effect of domestic collaboration.
+Hypothesis 1b: The effect of international research collaboration on a firm's innovation quality is lower than
+the effect of domestic collaboration.
+2.2. Effect of characteristics of firms' collaboration network
+In addition to whether firms are engaged in research collaboration, the structure of firms' ego network should
+affect the quality of innovation. We particularly focus on the following three characteristics of the ego network
+
+5
+
+often examined in the literature.
+ First, when firms are engaged in research collaboration with more firms, they can obtain more knowledge
+from their partners and hence better improve the quality of their innovation outcomes, as empirically found in
+Ahuja (2000) , Gonzalez-Brambila, Veloso, and Krackhardt (2013) , and Owen-Smith and Powell (2004) .
+However, creating and maintaining many collaboration ties may be too costly in terms of physical transportation,
+social communication, and administration (Phelps, Heidl, and Wadhwa 2012) . Accordingly, several studies,
+such as Guan and Liu (2016)  and McFadyen and Cannella (2004) , find an inverted U-shaped relationship.
+Therefore, our hypotheses consider two possibilities regarding the effect of the number of collaboration links.
+Hypothesis 2a: A firm's innovation quality is higher when it collaborates with more firms.
+Hypothesis 2b: A firm's innovation quality is lower when it collaborates with more firms.
+ Second, the network density may have two opposing effects. On one hand, when the ego network is dense,
+that is, when partners of the focal agent are also mutually connected, the agents trust each other and thus are
+more willing to share knowledge and information (Coleman 1988). Accordingly, in a dense ego-network, more
+knowledge may diffuse among collaborating agents, possibly resulting in innovation of higher quality. On the
+other hand, because the knowledge of agents in a dense network tends to be already shared and hence overlapped
+and redundant, dense networks are less effective in  the diffusion of new knowledge than sparse networks.
+Empirical analysis has shown mixed results. The ego -network density, defined as the ratio of the number of
+actual ties among partners of th e focal agent to all possible ties among the partners, is found to be negatively
+correlated with innovation performance in Fleming, Mingo, and Chen (2007), Gonzalez-Brambila, Veloso, and
+Krackhardt (2013), while the opposite relationship is found in Forti, Franzoni, and Sobrero (2013) , Phelps
+(2010), and Todo, Matous, and Inoue (2016). Bordons et al. (2015) find a negative relationship in some scientific
+fields but an insignificant relationship in others. Rost (2011) and Gilsing et al. (2008) find an inverted U-shaped
+relationship between network density and innovation. That is, the effect of density is positive when the level of
+density is low but negative when it is sufficiently high, and thus, the medium level of density is optimal. Thus,
+we also presume the two possibilities in the following two contrasting hypotheses.
+Hypothesis 3a: A firm's innovation quality is higher when the density of its eg ocentric research collaboration
+network is higher.
+Hypothesis 3b: A firm's innovation quality is higher when the density of its egocentric research collaboration
+network is lower.
+ Third, Burt (1992, 2004)  argues and empirically finds that nodes that are connected with a variety of
+nodes and that bridge different groups of nodes conduct knowledge between groups and perform better. This
+argument is closely related to that of Granovetter (1973), that an individual obtains valuable information more
+easily from weak ties, ties with partners the individual does not frequently meet or does not closely interact with.
+Burt (1992) develops a measure to represent the level of brokerage for each node in a network . The measure,
+Burt's constraint measure, which is  defined in detail in the next section, is negatively related to the level of
+brokerage and thus is small when the focal agent is bridging various types of groups in the network. Burt's
+
+6
+
+constraint measure is positively correlated with innovation performance in Ahuja (2000), implying that more
+clustered networks lead to more innovation. However, the same variable is found to be negatively correlated
+with innovation performance in Gonzalez-Brambila, Veloso, and Krackhardt (2013), implying that brokerage
+of a variety of firms leads to higher performance. The relationship between the constraint measure and creativity
+is inverted U-shaped in Sosa (2011), whereas Rost (2011) and Guan, Yan, and Zhang (2017) find the relationship
+statistically insignificant. These findings imply that network brokerage may positively or negatively affect
+innovation performance, depending on the situation, as suggested by Fleming, Mingo, and Chen (2007) .
+Accordingly, our hypotheses related to network brokerage are as follows:
+Hypothesis 4a: A firm's innovation quality is higher when Burt’s constraint measure is higher.
+Hypothesis 4b: A firm's innovation quality is higher when Burt’s constraint measure is lower.
+2.3. Effect on non-collaborative innovation
+When firms collaborate for particular innovation, they can combine different types of knowledge specific to
+each firm and thus are more likely to achieve innovation of higher quality than when they conduct research
+activities individually. However, this quality improvement from research collaboration does not necessarily
+mean that the knowledge base of each firm in the collaboration network expands because the knowledge
+exchanged in the collaboration may be specific to the innovation and may not be applied to other innovations.
+Alternatively, although various knowledge is utilized for the collaboration, it is not fully disclosed to
+collaboration partners and thus cannot be utilized afterwards. In either case, a firm's research collaboration with
+others may not improve the knowledge capital of the firm or the quality of innovation outcomes achieved by
+the firm's subsequent individual research activities without collaboration. If this is the case,  the benefits of
+research collaboration do not persist in the long term and are quite limited.
+ Although this issue is important , existing studies in the literature typically examine the effect of
+collaboration on innovation performance at the firm  level (Ahuja 2000, Belderbos et al. 2014, Gilsing et al.
+2008, Owen-Smith and Powell 2004, Phelps 2010, Whittington, Owen -Smith, and Powell 2009) , researcher
+level (Fleming, King III, and Juda 2007, Fleming, Mingo, and Chen 2007, Forti, Franzoni, and Sobrero 2013,
+Gonzalez-Brambila, Veloso, and Krackhardt 2013, Rost 2011) , or patent level (Briggs 2015)  and do not
+distinguish between innovation performance from research activities conducted individually and jointly.
+Therefore, this study tests the following contrasting hypotheses.
+Hypothesis 5a: The quality of innovation achieved only by a firm without research collaboration improves
+when the firm is engaged in research collaboration if the firm absorbs knowledge from collaboration partners.
+Hypothesis 5b: The quality of  innovation achieved only by a firm without research collaboration does not
+improve when the firm is engaged in research collaboration if the firm does not absorb knowledge from
+collaboration partners.
+
+7
+
+3. Data
+3.1. Data sources
+To test the hypotheses in the previous section, our empirical analysis utilizes data for patents of firms in the
+world, taken from the Orbis dataset compiled by Bureau van Dijk (BvD). Orbis includes various firm attributes,
+in addition to information on patents granted to each firm that is originally provided by PATSTAT. PA TSTAT is
+the worldwide patent data created by the Organization for Economic Cooperation and Development (OECD) in
+corporation with the Patent Statistics Task Force consisting of patent offices in the world, such as the World
+Intellectual Property Organization (WIPO), the United States Patent and Trademar k Office (USPTO), the
+European Patent Office (EPO), and the Japan Patent Office (JPO), and distributed by the EPO. 1 PA TSTA T
+contains detailed information, such as the identification number, date of filing, name and address of applicants
+and inventors, country code, international patent classification, abstract, and identification numbers of patents
+cited by the focal patent. In the Orbis, because identification numbers of applicant firms are provided in a
+consistent manner, we can aggregate the patent data at the firm-year level.
+ In this study, we utilize data for patents that were applied for from 1991 to 2010 and granted by 2014,
+the final year in our dataset. We exclude patents applied for in the most recent four years because it takes several
+years for an applied patent to be actually granted. Harhoff and Wagner (2009) report that the average duration
+from application of a patent to EPO to its grant was 4.36 and 5.10 year s in 1991 and 1998, respectively.
+Therefore, many patents applied for in recent years have not been granted and thus are not included in our data.
+Because we will eventually aggregate the patent data at the firm level using the firm identification numbers in
+the Orbis data, we focus on the patents owned by firms with an identification number in Orbis. The total number
+of such patents in the period from 1991 to 2010 is 26,181,824, and the number of firms that have been granted
+any patent is 534,569. The number of patents for firms located in each of the top six countries is 8,506,558 for
+Japan, 6,528,207 for the United States (US), 2,833,394 for Germany, 1,547,916 for South Korea, 1,043,371 for
+France, and 972,034 for China. These six countries account for approximately 80% of all patents.
+ Because our dataset includes any firm that has been granted a patent, including small- and medium-sized
+enterprises (SMEs), most firms in our data do not apply for patents frequently but rather once every few years.
+Therefore, rather than using annual panel data, we divide the whole 20-year period into four five-year periods,
+1991–1995, 1996 –2000, 2001 –2005, and 2006 –2010, and use patent data at the firm -period level in our
+estimations later.
+ Our rich dataset allows us to construct a measure of the citations the patents of each firm receive. Because
+a patent cites another patent when the former is influenced by the latter, the number of forward citations and the
+number of forward citations per patent are often regarded as an indicator of the quality of innovation (Griliches
+1998, Nagaoka, Motohashi, and Goto 2010, Trajtenberg 1990) and are used in the literature on the effect of firm
+network on innovation (Belderbos et al. 2014, Briggs 2015, Rost 2011). We first count the number of forward
+citations that the focal patent received from subsequent patents, excluding self-citations (i.e., citations by patents
+granted to the same firm). Because the number of citations tends to be smaller for more recent patents than for
+
+1 The data are available at https://www.epo.org/searching-for-patents/business/patstat.html.
+
+8
+
+earlier ones, we further divide the number of citations by the average number of citations in each year. As a
+result, the average of the standardized citation index for each year is one. Then, we aggregate the standardized
+number of citations per patent at the firm-period level to construct a measure of the quality of innovation at the
+firm level.
+ Although firm attributes, such as sales and the number of employees, are included in the Orbis dataset,
+we have access to information on firm attributes only from 2007 to 2014. Because our patent data from 1991 to
+2010 do not much overlap with the firm attribute data, we do not use any firm attribute information from Orbis
+but only use the location and industry classification of each firm. To overcome possible shortcomings from not
+using standard firm attributes, we will use fixed effects at the firm level and at the country-industry-year level,
+as we will explain later in detail.
+ Using the data described above, we create measures of the co-patenting network of firms, i.e., the network
+in which firms are connected through the co-ownership of patents. Identifying the co -patenting network is
+possible because each owner firm or institution of a patent is provided an identification number in the Orbis
+dataset. Following Belderbos et al. (2014), we regard the co-patenting network as an indication of the research
+collaboration network because collaborating partners are most likely to own a patent together. In practice, firms
+may not co-own patents generated from their research collaboration because of their strategic decision to avoid
+possible complications in co -patenting (Hagedoorn 2003). Therefore, some existing studies utilize firm -level
+data in which researc h alliances are identified by sources other than co -patenting (Ahuja 2000, Owen-Smith
+and Powell 2004, Whittington, Owen-Smith, and Powell 2009). However, these studies must focus on a small
+sample because of the uniqueness of the data. The present study relies on co-patenting links to identify research
+collaboration in order to cover a number of firms around the world.
+ The number of patents  with more than one owner is 959,363, or 3.7% of the total number of patents,
+whereas the number of firms that co-own any patent with other firm or institution is 89,175, or 17% of those
+that own any patent. The total number of links in the co -patenting network is 166,183. The number of patents
+whose owners are located in more than one country, or internationally co-owned patents, is 248,909, or 0.95%
+of all patents, whereas the number of firms that co-own any patent with a foreign firm or institution is 20,445,
+or 3.8% of patent-holding firms.
+3.2. Changes in the global co-patenting network over time by country
+In this subsection, we highlight changes in the global co-patenting network over time and differences across
+countries so that we can later obtain more adequate interpretation and implication from our estimation results
+on the relationship between the network structure and innovation. In particular, we focus on the top six countries
+in terms of the number of patent grants, which represent approximately 80% of all patent grants.
+ Figure 1 shows changes in the number of patents granted by application year from 1991 to 2010. Japanese
+firms are granted the largest number of patents throughout the period, whereas the US is granted the second
+largest number. However, in the last few years of the period examined, the number of patents in both Japan and
+the US reduced, while China emerged as the third largest country. These dynamics in the number of patents for
+each country presented here are mostly consistent with what is reported by the five largest intellectual property
+offices, EPO, JPO, USPTO, the Korean Intellectual Property Office, and the State Intellectual Property Office
+
+9
+
+of the People's Republic of China (IP5 Offices 2012, Figure 3.2). There are slight differences because we focus
+on patents granted to firms and institutions included in the firm -level Orbis dataset. Notably, the number of
+patents granted to China reported in IP5 Offices (2012), 312,507, is larger than that in Figure 1.
+ Figure 2 indicates the changes in the ratio of the average number of citations per patent for a country to
+the overall average number of citations per patent. Note that the ratio is standardized so that the average of this
+ratio in each year is one. Thus, Figure 2 illustrates the average quality of innovation in each country relative to
+other countries. Then, we can see that the US has created innovations of the highest quality, while its relative
+quality declined from 1991 to 2003. This decline is partly because the relative quality of patents granted to
+Japan increased during the same period but later decreased. Thus, we conclude that both the quantity and quality
+of innovation generated by Japanese firms have recently deteriorated. By contrast, Chinese firms have recently
+increased both the quantity and quality of innovation, although the quality measure is the lowest among the six
+countries at the time of the year 2010.
+ Looking at the dynamics in the extent of co-patenting for each country, we illustrate changes in the share
+of co -owned pa tents in all patents in Figure 3 . The overall co -patenting share at the patent level has been
+increasing from 3% in 1990 to 4.3% in 2010, indicating that research collaboration has been increasingly
+performed over time, possibly because of the spreading recognition of the effectiveness of open innovation
+(Chesbrough 2003). The share has been the highest for France in most years during the period examine d,
+increasing substantially. The recent increase in the share of China is also prominent.
+ Furthermore, we focus on the dynamics of international co-patenting in Figure 4. We find that the share
+of patents internationally co -owned in all patents has also been increasing overtime. However, there is a
+substantial gap in the share between Japan and South Korea, the lowest two countries, and the others. Because
+the other four countries, France and China in particular, considerably increased the share of intern ational co-
+patenting in the 2000s, while Japan and South Korea were stagnant, the gap has widened over time. This feature
+of Japan and South Korea will be confirmed in the visualization of the global network in next subsection.
+3.3. Structure of the global co-patenting network
+To provide an overview of the structure of the global co -patenting network of firms, we visualize the network
+using a visualization algorithm, ForceAtlas2 (Jacomy et al. 2014), in Gephi, open-source software for network
+visualization. ForceAtlas2 assume s gravity between linked nodes and repulsion between unlinked nodes.
+Accordingly, a set of nodes linked with each other are located closely together and form a group. Consequently,
+nodes linked with many others, or hubs, tend to be located in the center of the network.
+ Figure 5 shows the visualization in the period 1991 –1995 (Panel [A] ) and 2006 –2010 (Panel [B]) for
+comparison across periods. The figure uses different colors for firms located in each of the top six countries in
+terms of the number of patents granted, Japan (red), the US (blue), Germany (green), South Korea (light blue),
+France (yellow), and China (black), while other firms are colored in gray. In the visualization, we pick up the
+largest connected component, i.e., the largest sub-network in which firms are directly or indirectly linked with
+each other. This is because th ere are many fragmented sub -networks separated from the largest connected
+component and located far away from the center of the visualized space, and they are less important in the big
+picture of the network. However, we use all firms in the estimations conducted in later sections. The share of
+
+10
+
+firms in the largest connected component is 48% and 63% in the periods 1991-1995 and 2006-2010, respectively.
+This share varies across countries. In the period 2006–2010, 91% of Japanese firms are in the largest connected
+component, while the shares are substantially smaller for other countries: 69% for South Korea and China, 64%
+for France, 60% for Germany, and 59% for the US.
+ Figure 5 also illustrates that firms are likely to be linked within each country. In particular, firms in Japan
+and South Korea form two groups that are remarkably separated from firms in other countries. While firms in
+the US, Germany, and France are also located closely together, these clusters are located closely with each other.
+This finding implies that firms in the US, Germany, and France collaborate more across national borders with
+each other, while firms in Japan and South Korea mostly collaborate with other firms in the same country.
+ The c omparison between panels (A) and (B) further indicates the following. First, the isolation of
+Japanese and South Korean firms has remained over time. Second, US, German, and French clusters are more
+closely linked with each other  in the period 2006 –2010 than in the period 1991–1995, implying that firms in
+these countries have become more active in international collaboration. Finally, Chinese firms, the black dots,
+are not clearly visible in the period 1991–1995 but form a cluster located closer to the combination of the US,
+German, and French clusters than to the Japanese and South Korean clusters in the period 2006–2010.
+ We further show the distribution of the number of firms linked with the focal firm, or the degree centrality
+(Newman 2010), in Figure 6. The degree distribution is of great interest because if it follows the power law, i.e.,
+there are a few nodes with an extremely large number of links, or hubs, the network is classified as a scale-free
+network. It is well known that because in a scale-free network, most nodes are indirectly connected with each
+other with a small number of steps through hub nodes, diffusion of information can be quick (Barabási, 2016).
+Many types of networks have been found to be scale free, including firms' transaction networks (Saito, 2015).
+ Panels (A) and (B) of Figure 6 show the cumulative density function (CDF) of the degree centrality by
+period and by country, respectively. P anel (A) illustrates the linear relation ship between the log of the
+cumulative density and the log of degree, indicating that the global research collaboration network in any period
+is scale free. The gradient of the linear relationship is similar, while the size of network (the total number of
+firms) increases over time. Because a smaller gradient (or a larger gradient in absolute term s) of the log -log
+relationship indicates larger heterogeneity in the degree centrality amo ng nodes, and a similar gradient over
+time implies that such heterogeneity is unchanged for the 20 years examined.
+ In panel (B) of Figure 6, we observe that the gradient is different across countries. The gradient calculated
+by a linear regression is the largest (or the smallest in absolute terms) for Japan, −0.91, and the smallest for the
+US, −1.42. This implies that there are more hubs with many links in Japan than in the US and that the median
+firm in Japan has more links than that in the US.  These results suggest that the structure of the research
+collaboration network differs substantially across countries.
+ Finally, we examine the assortativity of nodes, i.e., whether nodes are likely to be connected with others
+with a similar value of degr ee centrality. A ssortativity for a network  can be measured by the correlation
+coefficient of the degrees of all pairs of connected nodes  (Newman 2010) and can be positive or negative,
+depending on the network structure. For example, Bernard, Moxnes, and Saito (2018) find negative assortativity
+in firms' transaction networks in Japan, indicating that hub firms are more likely to transact with firms with a
+small degree. In our research collaboration network, the correlation coefficient is 0.45, indicating positive
+
+11
+
+assortativity. In other words, firms collaborating with many others are more likely to collaborate with each other,
+while firms collaborating with only a few others are likely to collaborate with each other. Figure 7 demonstrates
+the changes in assortativity over time for each country. Here, we use the average of Spearman's rank correlation
+between a firm's own degree and the mean of the degree of firms directly connected with the firm  to define
+country-level assortativity. Assortativity is larger for France, the US, and Germany than for Japan and South
+Korea, whereas it is the smallest for China. The variation in assortativity across countries also suggest that we
+conduct analysis for each country.
+3.4. Variables for co-patenting networks
+This study considers three measures that represent the characteristics of the ego network of each firm in each
+period: the degree centrality, the local clustering coefficient, and Burt's constraint measure. When we construct
+the network measures, we exclude isolates, i.e., firms that do not co-own any patent with others , because the
+measures cannot be defined for isolates.  The co-patenting network is regarded as an undirected graph, i.e., a
+network in which links have no direction.
+ The degree centrality in a network is the number of nodes directly linked to the focal node. In the  co-
+patenting network examined in this study, degree centrality represents the number of firms that co-own any
+patent with the focal firm. The degree centrality is a widely used index that measures the centrality of the focal
+firm in the network  (Ahuja 2000, Whittington, Owen -Smith, and Powell 2009) . When we use the degree
+centrality in the estimation, we take its log because its distribution has a fat tail, as shown in Figure 6.
+ The local clustering coefficient is an index to measure the density of each firm's ego -network (the sub-
+network of the focal firm and its patent co-ownership partners). It is defined as the ratio of the number of pairs
+of firms that are connected with the focal firm and are also connected with each other to the number of all
+possible pairs of firms that are connected with the focal firm. When a firm is linked with only one fi rm, we
+define that its clustering coefficient is zero , following the standard literature (Barabási 2016). Because this
+definition is rather arbit rary, we will include a dummy variable for firms with only one link. The clustering
+coefficient ranges from zero to one, and its higher value indicates that a firm's research collaboration partners
+are also collaborating with each other. This measure has b een used in the literature on the effect of network
+characteristics on innovation (Fleming, Mingo, and  Chen 2007, Gonzalez-Brambila, Veloso, and Krackhardt
+2013, Phelps 2010, Rost 2011).
+ The constraint measure of Burt (1992) for node i is defined as follows:
+
+2
+, , ,
+()
+ii
+ij iq qj
+j V j i q V q i j
+C i p p p
+   
+ 
+ , (1)
+where Vi represents the set of nodes in i's ego network, pij is the relative link strength between nodes i and j
+and is assumed to be 1/Ni for any j  Vi. Ni represents the degree centrality of i. In other words, we assume the
+same weight across links. Everett and Borgatti (2018) show that equation (1) can be rewritten as
+
+2
+22
+, , , , , ,
+1 2 1()
+i i i i
+qj qj
+j V j i q V q i j j V j i q V q i ji ii
+C i p pN NN        
+   
+       (2)
+Thus, the constraint measure for node i is smaller when node i is connected with more nodes (Ni is larger), i's
+
+12
+
+direct neighbors are not connected with each other (pqj is zero), or i is connected with many more others (pqj is
+smaller). In other words, this measure is small when the focal node is connected with a variety of nodes directly
+and indirectly, bridging between different clusters of nodes. When a firm is linked with only one firm, we assume
+that pqj is zero although there is in fact no firm j and thus that this measure is one. Because this definition is
+arbitrary, similar to the case of the clustering coefficient when the degree is one, we will include a dummy for
+firms with one link in the estimations. This measure ranges from zero when a node is connected with an infinite
+number of nodes to 1.125 when a node is connected with two nodes that are also connected (Everett and Borgatti
+2018). Burt's constraint measure is also used in the literature on the effect of networks on innovation (Ahuja
+2000, Gonzalez-Brambila, Veloso, and Krackhardt 2013, Guan, Yan, and Zhang 2017, Rost 2011).
+3.5. Descriptive statistics
+In our estimation, we drop firm-period observations in singleton groups, i.e., groups with only one observation,
+to fully exploit the benefits of using fixed effects at the firm level and at the country -industry-period level
+(Correia 2015). Note that the results are essentially the same if we do not drop singletons. In addition, when we
+estimate the effect of the three network measures on innovation performance, we restrict the observations to
+firms with any co-patenting relationship because these measures can be defined only for these firms. Then, our
+sample contains 356,397 and 48,910 firm -period observations for the estimation of the effect of research
+collaboration and the three network measures, respectively.
+ Table 1 shows the descriptive statistics of the variable used in the estimations  for the sample for
+estimations. Among all firms, the average number of patents granted is 63.8, although its distribution is quite
+skewed, as its median is only 5 and its maximum is 139,275. The number of citations is also skewed: its mean
+is 63.9, whereas its median is 2.41. The number of citations per patent, which can be considered as an indicator
+of innovation quality at the firm level,  is 1. 3, on average. The dummy for firms with any co -patenting
+relationship with other firms or institutions is 0. 2, on average. The dummy for firms with any co-patenting
+relationship with foreign firms or institutions is 0.0 5, on average , indicating  that international research
+collaboration is quite rare. The dummy for firms in the largest connected component of the co-patent network,
+the largest sub-network of firms linked directly and indirectly with each other, is 0.13, on average. Therefore,
+the share of firms in the largest connected component among firms in the sample firms in the  co-patenting
+network is approximately 65% (=0.13/0.20). The lower rows of Table 1 show that firms with a co-patenting
+relationship are more likely to be granted more patents and receive more citations in total and citations per
+patent. Thus, it is inferred that firms that engage in research collaboration with other firms inno vate more in
+terms of both quantity and quality. We will test this inference by econometric analysis later.
+ In addition to the summary statistics of the three network measures in Table 1, we present histograms of
+the distributions for firms in the sample for estimations in Figure 8. The distribution of the degree is shown by
+logarithmic scale in panel (A) of Figure 8. We confirm a power-law distribution, as found for all firms in our
+data before singletons and firms with no link are dropped in Figure 6. The median and mean of the number of
+partners are 2 and 5.36, respectively, indicating that most firms have only a few co -patenting partners. Panels
+(B) and (C) of Figure 8 illustrate the distribution of the clustering coefficient and  Burt's constraint measure,
+respectively. In these figures, we exclude firms with only one partner, which represent 43% of all firms in the
+
+13
+
+estimation sample, because the clustering coefficient and Burt's constraint measure of those firms are arbitrarily
+defined as zero and one, respectively. Neither distribution is standard bell-shaped. The clustering coefficient is
+zero for 32% of firms , whereas it is  one for 17%, of which 78% have two partners . Firms with a clustering
+coefficient between 0.5 and one are scarce. Burt's constraint is 0.5 for 20% of firms, among which all have two
+partners. Firms with Burt's constraint measure between 0.6 and one are scarce.
+ Table 2 indicates the correlation coefficients between the three network measures. Here, as mentioned
+before, we exclude firms with only one link  in common with Panel s (B) and (C) of Figure 8. As implied by
+equation (2), Burt's constraint measure includes the inverse of the degree centrality by definition. Accordingly,
+the correlation coefficient between the two measures is −0.758 and quite high.  We also find a negative
+correlation between the degree and the clustering coefficient, as often found in the literature (Barabási 2016).
+In addition, the correlation coefficient between Burt's constraint measure and the clustering coefficient is 0.588,
+a reasonably high value, because the former is related to the latter, as shown by the second term of equation (2).
+ Table 3 shows international comparison in the number of firm-period observations, the number of patents
+per firm, and the three measures of the global co-patenting network at the firm -period level. This table
+conspicuously shows that Japanese firms are different from firms in other countries. The number of firm-period
+observations for Japan is small, compared with its large number of patents granted. Accordingly, the number of
+patents per firm is substantially larger for Japan than for other countries. The average of the logarithm of the
+degree centrality and the clustering coefficient is the largest for Japan. By contrast, Burt's constraint measure,
+which is smaller when the focal firm bridges different groups of firms, is the smallest for Japan. The evidence
+reveals that in Japan, a limited number of large firms are densely connected with many other domestic firms.
+4. Estimation Method
+4.1. Estimation equation
+To test the hypotheses provided in Section 2, we estimate the following equation that determines the quality of
+innovation:
+
+12ln ln ickt ickt ickt i ckt icktCITATION PATENT NETWORK         .  (3)
+The dependent variable, lnCITATIONickt, is the log of the standardized number of citations that patents owned
+by firm i in country c in industry k during time period t. Alternatively, when we test hypothesis 5 in Section 2,
+i.e., whether knowledge obtained through research collaboration is effectively utilized in the focal firm's
+individual research activities without any collaboration, the dependent variable is the standardized number of
+citations that patents  owned only by the firm receive, excluding citations that co -owned patents receive.
+lnP ATENTickt is the log of the number of patents applied for and owned by the firm during the time period t. We
+include lnP ATENTickt as an independent variable to control for the quantity of innovation and firm size. Because
+equation (1) can be rewritten as
+
+  12ln ( 1)ln ickt ickt ickt ickt i ckt icktCITATION PATENT PATENT NETWORK          ,  (4)
+our specification essentially estimates how the number of citations per patent, a measure of innovation quality
+
+14
+
+at the firm level, is determined, controlling for the size effect. We take a natural logarithm of CITATION and
+P ATENT because these values are quite skewed and fa t-tailed (Section 3.5). Because CITATION is zero when
+no patent of a firm is cited, we add one before taking its log, following the convention.
+ NETWORKickt represents two sets of variables for characteristics of research collaboration at the firm
+level. First, using the sample of firms including those with no collaborator, we utilize  three dummy variables
+for overall co-patenting, international co-patenting and the largest connected component of the co -patenting
+network. In this case, we test hypothesis 1  in Section 2, examining the effect of research collaboration and
+international research collaboration in particular on the quality of innovation. Second, using the sample of firms
+with at least one collaborator, we utilize the three measures of the firm's characteristics in the global co-patenting
+network, i.e., the logarithm of degree centrality, clustering coefficient, and constraint. Here, we test hypotheses
+2–4 and examine the effect of more detailed characteristics of firms in the global co-patenting network on the
+quality of innovation. Because the three measures are correlated with each other, we will incorporate each of
+them in separate estimations. In addition, to examine possible non-linearity of the effect of the network measures
+found in the literature (Guan and Liu 2016, Guan, Yan, and Zhang 2017, McFadyen and Cannella 2004, Rost
+2011, Sosa 2011), we incorporate the squared term of each measure in alternative specifications and compare
+the results with those from  linear specifications . We further check the validity of the quadratic form by
+experimenting with first-, third-, and fourth-order equations. As explained in Section 3.4, the definition of the
+clustering coefficient and Burt's constraint measure is arbitra ry for firms with only one link. Therefore, we
+include the dummy variable for firms with only one link whenever either of the two measures is used.
+ As we mentioned earlier, we cannot control for firm attributes, such as sales, number of employees, and
+research expenditures, due to lack of data in the long term, and hence, we incorporate fixed effects at the firm
+level to control for time-invariant firm attributes. In addition, we include fixed effects at the country-industry-
+period level to control for any common shock in an industry in a country during a time period. The number of
+firms and country-industry-period groups is 139,997 and 2,137, respectively, when the co-patenting dummies
+are used, whereas it is 19,225 and 986, respectively, when the three network measures are used.
+4.2. Estimation method
+We estimate equation (1) by ordinary least squares (OLS) estimations. Standard errors are clustered at the firm
+level, at the country-period level, and at the industry -period level to account for possible correlation between
+the error terms. The number of country-period and industry-period groups is 261 and 82, respectively.
+ There are two concerns about this estimation methodology. First, the dependent variable is zero when the
+firm's patents do not receive any citation. In our benchmark estimations where the key independent variables
+are the two dummies for research collaboration, the log of the standardized number of citations plus one is zero
+for 114,229 among 356,397 observations. When we focus on the sub-sample of co-patenting firms, it is zero for
+5,112 among 48,910 observations. Under these circumstances, we usually use Tobit estimations (Tobin 1958)
+or the extended Tobit estimations that inco rporate fixed effects (Honore 1992). However, because we utilize
+fixed effects at two levels, one with 139,997 groups and the other with 2,137, it is infeasible to achieve
+convergence using Tobit estimations with this large number of fixed effects. When we drop these fixed effects
+at two levels, we find that the results from Tobit and fixed-effect Tobit estimations are mostly consistent with
+
+15
+
+the OLS results but not robust across specifications. Therefore, we will rely on OLS estimations. It should be
+noted that when the dependent variable has many zeros, OLS estimations tend to underestimate the true effect
+of the independent variables. Therefore, the OLS estimates can be viewed as a lower bound of the true effect.
+ Second, the dependent variable, CITATION, and an independent variable, P ATENT, are simultaneously
+determined; hence, estimation results may be biased due to endogeneity. Although the bias may be minimized
+because we control for fixed effects at two levels so that the remaining disturbance is less likely to correlate
+with P ATENT, one may still be concerned about endogeneity bias. Therefore, as an alternative specification, we
+replaced lnP ATENTickt with that in the previous period to alleviate the possible endogeneity bias. However,
+because the results are quite similar to those from equation (1), we focus on the results from equation (1), not
+using lagged P ATENT.
+5. Results
+5.1. Effect of research collaboration
+Table 4 shows the benchmark results from the estimation of equation (1) using various independent variables.
+Column (1) shows the effect of the dummies for co -patenting in general and international co -patenting in
+particular. Because the two dummies are not exclusive ly defined, the coefficient of the co -patenting dummy
+indicates the effect of co-patenting with firms in the same country, whereas the sum of the coefficients of the
+two dummies represents the effect of co-patenting with foreign firms. The results show that the effect of the two
+dummies is positive and highly significant. The size of the coefficients indicates that co-patenting with domestic
+and foreign firms improves the quality of innovation by 13% and 36% (= 0.133 + 0.226), respectively. Therefore,
+our findings imply that research collaboration can lead to substantial improvement in innovation quality most
+likely because  a variety of  knowledge is combined in collaboration . Moreover, the effect of i nternational
+collaboration is considerab ly larger than the effect of domestic collaboration, confirming hypothesis 1a in
+Section 2,  most likely because foreign collaborators are equipped with knowledge that is not available
+domestically. In addition, we incorporate a dummy variable that is one f or firms in the largest connected
+component and zero otherwise and find a positive and significant effect of the dummy, as shown in column (2)
+of Table 4. This is because firms in the largest connected component are indirectly linked with more firms and
+thus can access more knowledge than firms in separate smaller components.
+5.2. Effect of network measures
+We further estimate the effect of each of the three measures of network characteristics, provided that the firm is
+engaged in any collaboration, i.e., using the sub-sample of co-patenting firms. The results in columns (3), (4),
+and (6) of Table 4 show that the effect of the log of the degree centrality (the number of collaboration partners)
+on innovation quality is positive and highly significant, and the effect of the clustering coefficient (a measure
+of network density) and Burt's constraint measure (an inverse measure of brokerage)  is negative and highly
+significant, supporting hypotheses 2a, 3b, and 4b . The size of the effect of the degree centrality and Burt's
+constraint measure is large. When a firm with only one collaboration partner add s one more collaborator or
+increases the degree by 69% of its standard deviation, it can improve innovation quality by 10%. A decrease in
+
+16
+
+Burt's constraint measure of one standard deviation leads to an increase in innovation quality by 18%. By
+contrast, the clustering coefficient has a smaller effect because a one -standard-deviation decrease improves
+innovation quality by only 3%.
+ We further check possible non-linearity of the relationship between the three measures and innovation
+quality using second -, third -, and fourth -order equations. Almost all the coefficients in the higher -order
+specifications are highly significant. Figure 9 illustrates the non-linear relationship between each of the three
+and innovation quality estimated by the linear and higher-order equations. Panel (A) of Figure 9 indicates that
+the effect of the degree centrality is always positive, regardless of the specifications. The U-shaped relationship
+for the degree between one and two in the cases of the third- and fourth-order equations can be ignored because
+the degree must be an integer. However, the results from the higher -order specifications are slightly different
+from the result from the linear specification in that the marginal effect is smaller for smaller degrees, suggesting
+that the marginal effect is increasing with the degree centrality. Panel (C) also shows that the effect of Burt's
+constraint is negative, regardless of specifications employed, although the negative effect is likely to be smaller
+in absolute term s when the measure is close to one. Because the results for the degree centrality and Burt's
+constraint measure from the linear specification are not substantially diff erent from those from higher -order
+specifications, we will stick with the linear specification for simple presentation.
+ However, Panel (B) of Figure 9 indicates that the effect of the clustering coefficient is most likely to be
+inverted U-shaped when it is between zero and 0.5. Because the clustering coefficient rarely takes a value greater
+than 0.5 and less than one (Panel [B] of Figure 8), we can ignore substantial differences across specifications in
+the range between 0.5 and one. Although the coefficient of the first-order term in the quadratic specification is
+only weakly statistically significant (column [5] of Table 4), all other coefficients in all specifications are highly
+significant. To further check the inverted U-shaped relation between the cl ustering coefficient and innovation
+quality, we create dummy variables to indicate the quartile of the clustering coefficient for each firm and
+incorporate the dummies into the estimation. Setting the first quartile as the base case, we find that the
+coefficients of the second, third, and fourth quartile s are 0.23, 0.083, and −0.046, respectively and are highly
+significant. Therefore, we conclude that the relation between the clustering coefficient and innovation quality
+is inverted U-shaped, rather than simply negative, supporting both hypotheses 3a and 3b conditional on the
+current value. Accordingly, we  will show results from linear and quadratic specifications for the clustering
+coefficient in later estimations.
+ The benchmark results suggest that whe n firms collaborate with more firms, they can absorb a larger
+amount of knowledge and thus improve innovation quality. Moreover, when firms are connected directly and
+indirectly wit h more firms, i.e., firms are bridging different groups of firms, they can learn a variety of
+knowledge and thus achieve innovation of higher quality. When the density of a firm's ego network is currently
+small or its collaboration partners are less connected, increasing the density has a positive effect on innovation
+quality possibly because a dense network can nurture trust and thus promote knowledge sharing within the
+network. However, when the density is already sufficiently high, increasing it more deteriorates innovation
+because the knowledge of collaboration partners tends to be overlapped and redundant.
+
+17
+
+5.3. Effect on innovation without collaboration
+Next, we examine whether a firm's research collaboration with others can improve not only the quality of
+innovation resulting from the collaboration but also the quality of innovation resulting from the firm's research
+activities individually conducted without any collaboration. For this purpose, we employ as the dependent
+variable the standardized number of citations received by patents that the firm owns without any co -owner.
+Columns (1) and (2) of Table 5 indicate that the dummies for co-patenting in general, international co-patenting,
+and co-patenting in the largest connected component significantly and positively affect the innovation quality
+of individual research. These effects are slightly smaller in size than the effects on the total number of citations
+(columns [1] and [2] of Table 4). For example, the effect of domestic and international research collaboration
+on the performance of individual research is 0.118 and 0.336, respectively, while their effect on the performance
+of overall research is 0.133 and 0.359, respectively. Thus, the results suggest that the knowledge of collaborating
+firms is partly, not fully, absorbed by their partners and utilized in other research, supporting hypothesis 5a.
+ Columns (3)–(6) of Table 5 show the coefficients of the three network measures. The effect of the log of
+the degree on the quality of innovation without collaboration is positive and highly significant (column [3] of
+Table 5), although it is smaller than the effect on overall innovation quality (column [3] of Table 4). Similarly,
+the effect of Burt's constraint measure is significant (column [6] of Table 5) but smaller in absolute terms than
+the measure in Table 4, although the coefficient of the clustering coefficient in the linear specification is similar
+in column (4) of Tables 4 and 5. The finding that the effect of two of the three measures on individual research
+performance is smaller than that on overall research performance confirms our previous conclusion that part of
+the knowledge used in collaboration can be absorbed by collaboration partners.
+5.4. Comparison between firms with only domestic collaborators and those with foreign collaborators
+In column (1) of Table 4, we find that international research collaboration is more effective than domestic
+collaboration. To examine differences between the two modes of collaboration  further, we incorporate
+interaction terms between the three measures of network characte ristics and the dummy variable for any
+international patent co-ownership link. The coefficient of each network measure alone can be interpreted as the
+effect of characteristics of firms with only domestic collaborators, whereas the sum of the coefficients of each
+network measure and the dummy signifies the effect of firms with foreign collaborators.
+ The results estimated from this specification are shown in Table 6. In column (1) of Table 6, we find that
+the interaction term between the degree centrality and the dummy for any international link is positive and
+significant. This finding suggests a larger effect of the number of collaborators on innovation quality for firms
+with foreign collaborators than for firms with only domestic collaborators, consistent with the previous finding.
+In column (3), the effect s of the interaction term with the clustering coefficient or with its square are not
+statistically significant at the 5% level. This res ult indicates that the inverted U-shaped relationship between
+network density and innovation performance can be applied to both firms with only domestic links and those
+with international links . In other words , trust among firms is nurtured in a dense domestic network, as it is
+nurtured in a dense international network.  The effect of Burt's constraint measure is larger in absolute terms
+when firms collaborate with foreign firms than when they collaborate with only domestic firms (column [4] of
+Table 6). This finding indicates that bridging firms in the global research network can facilitate innovation more
+
+18
+
+than bridging only domestic firms , suggesting the importance of combining a variety of knowledge across
+countries for high-quality innovation.
+5.5. Heterogeneity across time
+In addition, we examine how the effect of research collaboration and network characteristics changes over time.
+Because our data contain four five-year periods, we divide them into two, one in the 1990s and the other in the
+2000s, and incorporate the interaction term between each network measure and the dummy variable for the
+2000s. Thus, the effect in the 1990s is represented by the coefficient of a variable, whereas the effect in the
+2000s is the sum of the coefficients of the variable and the interaction term with the 2000s dummy.
+ The results presented in Table 7 show that the effect of most network variables is larger in absolute terms
+in the 2000s than in the 1990s. For example, column (1) indicates that domestic and international co-patenting
+improves the innovation quality by only 5% and 13%, respectively, in the 1990s but by 19% and 26%,
+respectively, in the 2000s. The coefficient of the log of the degree centrality is 0.09 in the 1990s and increases
+to 0.16 in the 2000s. Using the quadratic specification, the effect of the clustering coefficient is mostly negative
+in the 1990s but becomes inverted U-shaped in the 2000s. The effect of Burt's constraint is insignificant in the
+1990s, while it is negative and highly significant in the 2000s. All of these findings suggest that the effect of
+research collaboration and network characteristics has increased over time.
+5.6. Heterogeneity across countries
+Section 3.2 shows heterogeneity in the characteristics of research collaboration across c ountries. We further
+examine heterogeneity in the effect of network characteristics across countries by applying the same estimation
+method to the subset of firms in each of the top six countries. In these estimations, we keep singleton firms,
+although they have been dropped so far to maximize benefits of using fixed effects. This is because, if we drop
+singletons in country-specific specifications, the number of observations for France and China amounts to only
+several hundreds and is too small.
+ The f irst two rows of Table 8 show the effect  of the two dummies for overall  and international co -
+patenting, corresponding to column (1) of Table 4 . For all countries, the effect of domestic and international
+collaboration is positive and highly significant. The effect is particularly large for China possibly because China
+is still a latecomer in the global research field in the 1900s and 2000s considered in this study and thus can
+benefit substantially from learning from other countries. The effect of international collaboration is also large
+for South Korea, France, and Germany. For South Korea, this is because of the benefit of backwardness as in
+the case of China . For France and Germany, the two most innovative countries in Europe, this is possibly
+because of benefits from collaboration within the European Union, where international collaboration is officially
+subsidized.
+ The lower rows of Table 8 indicate the coefficients of the degree centrality in logs, clustering coefficient,
+and constraint measure from regressions using each of the t hree separately, corresponding to columns (3)–(6)
+of Table 4. For the clustering coefficient, we show the results from the quadratic specification as well. The
+results show that the effect of the degree is the largest for China, followed by Germany, South Korea, France,
+and Japan, and the smallest for the US. The effect of the clustering coefficient and Burt's constraint measure is
+
+19
+
+larger for Germany, France, and South Korea than for other countries. The results indicate an important role of
+both network density and brokerage in innovation in the t hree countries, suggesting that they benefit
+substantially from the global research collaboration network. By contrast, all the results shown in Table 8 imply
+a smaller role of the global network in Japan and the US.
+6. Discussion and Conclusion
+This study examines how the research collaboration of firms affects the quality of their innovation outcomes
+using comprehensive patent data for firms in the world from 1991 to 2010. We identify research collaboration
+by co-patenting relationships. The results above can be summarized as follows.
+ Most importantly, research collaboration substantially improves the quality of innovation of firms by
+combining a variety of knowledge in the collaboration. Further, the knowledge of collaborators is partly
+absorbed by other firms and effectively utilized in subsequent individual research  of other firms. Notably,
+because existing studies have not distinguished between the collaboration effect on  the performance of
+innovation achieved by collaborative and individual research, whether the knowledge of firms used in
+collaboration is indeed acquired by their partners was unclear. However , our results reveal that research
+collaboration is an effective channel of knowledge diffusion among firms.
+ Moreover, we find that three measures of firms' research network greatly affect the outcome of research
+collaboration. First, when firms collaborate with more firms, i.e., when their degree centrality is larger, they are
+exposed to a larger amount of knowledge and thus achieve higher innovation quality. According to our higher-
+order specifications, the positive effect is particularly large when firms are already collab orating with two or
+more firms. This finding  is consistent with the findings of Ahuja (2000) , Gonzalez-Brambila, Veloso, and
+Krackhardt (2013), and Owen-Smith and Powell (2004), although some studies, such as Guan and Liu (2016)
+and McFadyen and Cannella (2004), find an inverted U-shaped relationship because of the costs of creating and
+maintaining many linkages. We find a n increasing ly positive relationship possibly because the benefits of
+collaboration increase as firms experience more research collaboration and thus absorb others' knowledge more
+easily. In other words, the marginal cost of creating and maintaining collaboration ties is likely to be diminishing,
+rather than increasing, as found in Guan and Liu (2016) and others.
+ Second, when the density of a firm's ego network is low, or when many of the firm's collaborators do not
+collaborate with each other , the innovation quality improves as the density increases. This is  because dense
+networks promote trust and knowledge diffusion, as suggested by Coleman (1988). However, when the density
+is already high, increasing density deteriorates innovation possibly because of the redundancy of knowledge in
+a dense network, as suggested by Burt (1992). Our finding suggests that there is an optimal level of density and
+is consistent with Rost (2011) and Gilsing et al. (2008).
+ Third, by expanding the role of brokerage , i.e., connecting with more firms indirectly and bridging a
+variety of firms, firms can achieve a higher quality of innovation. This finding of a positive effect of brokerage
+on innovation performance is consistent with that of Gonzalez-Brambila, Veloso, and Krackhardt (2013), while
+many other studies find either negative, U-shaped, or insignificant effects. Combined with the results on density,
+our results confirm the conjecture of Fleming, Mingo, and Chen (2007)  that both Coleman (1988) and Burt
+
+20
+
+(1992) are right; i.e., dense and strong linkages promote knowledge diffusion in some cases, while linkages to
+a variety of nodes promote it in others.
+ In addition, we find that international research collaboration is substantially 2.7 times more effective than
+domestic research collaboration. We further distinguish between  firms with only domestic collaborators and
+those with foreign collaborators and examine the effect of the network measures for each type of firms. Then,
+we find that the positive effect of the number of collaborators and brokerage of firms  is larger for firms with
+foreign collaborators than for those with only domestic collaborators. These findings suggest that because the
+knowledge of firms around the world varies more than the knowledge of firms in the same country, linking with
+a variety of foreign firms directly and indirectly is a more effective means to high-quality innovation than linking
+with domestic firms. By contrast, the density of the ego network of firms with only domestic collaborators has
+the same effect on innovation quality as that of firms with foreign co llaborators. This evidence highlights that
+the role of trust among domestic firms is as important to knowledge diffusion and innovation as the role of trust
+among firms in different countries. This contrasts with the results from the degree and Burt's cons traint that
+indicate a minor role of domestic collaboration.
+ Finally, we investigate changes in the effect of research collaboration over time and find that the effect
+has intensified in more recent years. This is consistent with Chesbrough (2003), the seminal work in the open-
+innovation literature, who argues that open innovation is more important after the late 1990s than before due to
+the growing mobility of knowledge workers and the availability of venture capital. Rising technological
+complications in the high -technology sectors may also have increased the need to combine  a variety of
+knowledge in innovation.
+ The results suggest a number of policy implications. Generally, our findings emphasize the importance
+of international research collaboration for better innovation performance. However, firms are often connected
+within each country, as shown in Figure 5. Particularly, Japanese and South Korean firms are considerably less
+connected to foreign firms (Figures 4 and 5) than are firms in other countries . As the effect of international
+collaboration is substantially large in South Korea (Table 8), an obvious policy prescription to South Korea is
+to promote international collaboration. In the case of Japan, the effect of international collaboration is the lowest
+among the top six countries (Table 8); therefore, policies should also alleviate barriers to knowledge diffusion
+through international collaboration , e.g., linguistic, cultural, and institutional barriers,  when promoting
+international collaboration. Because the innovation quantity and quality have recently deteriorated in Japan
+(Figures 1 and 2), increasing international collaboration and its effectiveness is an urgent policy agenda. By
+contrast, Chinese firms have actively collaborated with foreign firms ( Figure 4), improving the quantity and
+quality of innovation (Figures 1 and 2), because the effect o f international collaboration on  Chinese firms is
+extremely large (Table 8). European firms are also actively collaborating with foreign firms ( Figure 4) and
+generate a large effect of international coll aboration on innovation (Table 8). Japan and South Korea should
+follow the trajectories of China and Europe.
+ Another important issue is that although a certain level of density maximizes innovation quality, the
+density of most firms in practice is either close  to zero or one  (panel [B] of Figure 8) . Similarly, although a
+smaller value of Burt's constraint measure i s better for higher quality, its  average is 0.64 and relatively high
+(Table 1). Therefore, policies should facilitate the creation of a network for research collaboration that is denser
+
+21
+
+but not too dense and expand the direct and indirect linkages to foreign partners.
+ One caveat of this study should be noted. Although we show the large effect of international collaboration,
+our analysis does not explicitly consider the costs of creating and maintaining linkages. Therefore, it is still
+unclear how we can reduce the costs and thus promote international linkages and whether collaborating with
+foreign firms results in a net positive benefit. We leave this important research agenda to future research.
+
+22
+
+References
+Ahuja, Gautam. 2000. "Collaboration Networks, Structural Holes, and Innovation: A Longitudinal Study."
+Administrative Science Quarterly 45 (3):425-455.
+Audretsch, Dav id B, and Maryann P Feldman. 1996. "R&D Spillovers and the Geography of Innovation and
+Production." The American economic review 86 (3):630-640.
+Barabási, Albert-László. 2016. Network Science. Cambridge: Cambridge University Press.
+Belderbos, Rene, Bruno Cassiman, Dries Faems, Bart Leten, and Bart Van Looy. 2014. "Co-Ownership of Intellectual
+Property: Exploring the Value -Appropriation and Value -Creation Implications of Co -Patenting with
+Different Partners." Research Policy 43 (5):841-852.
+Berliant, Marcus, and Masahisa Fujita. 2008. "Knowledge Creation as a Square Dance on the Hilbert Cube."
+International Economic Review 49 (4):1251-1295.
+Bernard, Andrew B, Andreas Moxnes, and Yukiko U Saito. 2018. "Production Networks, Geography and  Firm
+Performance." Journal of Political Economy forthcoming.
+Bordons, María, Javier Aparicio, Borja González -Albo, and Adrián A Díaz-Faes. 2015. "The Relationship between
+the Research Performance of Scientists and Their Position in Co -Authorship Networks in Three Fields."
+Journal of Informetrics 9 (1):135-144.
+Boschma, Ron. 2005. "Proximity and Innovation: A Critical Assessment." Regional Studies 39 (1):61-74.
+Boschma, Ron, and Koen Frenken. 2010. "The Spatial Evolution of Innovation Networks: A Proximity Perspective."
+In The Handbook of Evolutionary Economic Geography. Edward Elgar Publishing.
+Brennecke, Julia, and Olaf Rank. 2017. "The Firm ’s Knowledge Network and the Transfer of Advice among
+Corporate Inventors—a Multilevel Network Study." Research Policy 46 (4):768-783.
+Briggs, Kristie. 2015. "Co -Owner Relationshi ps Conducive to High Quality Joint Patents." Research Policy  44
+(8):1566-1573.
+Burt, Ronald S. 1992. Structural Holes: The Social Structure of Competition. Cambridge: Harvard University Press.
+Burt, Ronald S. 2004. "Structural Holes and Good Ideas." American Journal of Sociology 110 (2):349-399.
+Chesbrough, Henry William. 2003. Open Innovation: The New Imperative for Creating and Profiting from
+Technology: Harvard Business Press.
+Coleman, James S. 1988. "Social Capital in the Creation of Human Capital." American journal of sociology 94:S95-
+S120.
+Correia, Sergio. 2015. "Singletons, Cluster-Robust Standard Errors and Fixed Effects: A Bad Mix." Technical Note,
+Duke University, http://scorreia.com/research/singletons.pdf.
+D'Este, Pablo, Frederick Guy, and Simona  Iammarino. 2012. "Shaping the Formation of University –Industry
+Research Collaborations: What Type of Proximity Does Really Matter?" Journal of economic geography 13
+(4):537-558.
+Everett, Martin G., and Stephen P Borgatti. 2018. "Unpacking Burt's Constraint Measure." unpublished manuscript.
+Fitjar, Rune Dahl, and Andrés Rodríguez -Pose. 2013. "Firm Collaboration and Modes of Innovation in Norway."
+Research Policy 42 (1):128-138.
+Fleming, Lee, Charles King III, and Adam I Juda. 2007. "Small Worlds and Regiona l Innovation." Organization
+
+23
+
+Science 18 (6):938-954.
+Fleming, Lee, Santiago Mingo, and David Chen. 2007. "Collaborative Brokerage, Generative Creativity, and Creative
+Success." Administrative science quarterly 52 (3):443-475.
+Forti, Enrico, Chiara Franzoni, and Maurizio Sobrero. 2013. "Bridges or Isolates? Investigating the Social Networks
+of Academic Inventors." Research Policy 42 (8):1378-1388.
+Gertler, Meric S, and Yael M Levitte. 2005. "Local Nodes in Global Networks: The Geography of Knowledge Flows
+in Biotechnology Innovation." Industry and Innovation 12 (4):487-507.
+Gilsing, Victor, Bart Nooteboom, Wim Vanhaverbeke, Geert Duysters, and Ad van den Oord. 2008. "Network
+Embeddedness and the Exploration of Novel Technologies: Technological Distance, Betweenness Centrality
+and Density." Research policy 37 (10):1717-1731.
+Gonzalez-Brambila, Claudia N, Francisco M Veloso, and David Krackhardt. 2013. "The Impact of Network
+Embeddedness on Research Output." Research Policy 42 (9):1555-1567.
+Granovetter, Mark S. 1973. "The Strength of Weak Ties." American Journal of Sociology 78 (6):1360-1380.
+Griliches, Zvi. 1998. "Patent Statistics as Economic Indicators: A Survey." In R&D and Productivity: The
+Econometric Evidence, 287-343. University of Chicago Press.
+Guan, Ji ancheng, and Na Liu. 2016. "Exploitative and Exploratory Innovations in Knowledge Network and
+Collaboration Network: A Patent Analysis in the Technological Field of Nano-Energy." Research policy 45
+(1):97-112.
+Guan, Jiancheng, Yan Yan, and Jing Jing Zhang. 2017. "The Impact of Collaboration and Knowledge Networks on
+Citations." Journal of Informetrics 11 (2):407-422.
+Hagedoorn, John. 2003. "Sharing Intellectual Property Rights —an Exploratory Study of Joint Patenting Amongst
+Companies." Industrial and Corporate Change 12 (5):1035-1050.
+Harhoff, Dietmar, and Stefan Wagner. 2009. "The Duration of Patent Examination at the European Patent Office."
+Management Science 55 (12):1969-1984.
+Hoekman, Jarno, Koen Frenken, and Frank Van Oort. 2009. "The Geography of Collaborative Knowledge Production
+in Europe." The Annals of Regional Science 43 (3):721-738.
+Hong, Wei, and Yu -Sung Su. 2013. "The Effect of Institutional Proximity in Non -Local Uni versity–Industry
+Collaborations: An Analysis Based on Chinese Patent Data." Research Policy 42 (2):454-464.
+Honore, Bo E. 1992. "Trimmed Lad and Least Squares Estimation of Truncated and Censored Regression Models
+with Fixed Effects." Econometrica 60 (3):533-565.
+IP5 Offices. 2012. "IP5 Statistics Report." In.
+https://www.fiveipoffices.org/statistics/statisticsreports/statisticsreport2012edition/IP5statistics2012.pdf.
+Jackson, Matthew O. 2010. Social and Economic Networks: Princeton University Press.
+Jacomy, Mathieu, Tommaso V enturini, Sebastien Heymann, and Mathieu Bastian. 2014. "Forceatlas2, a Continuous
+Graph Layout Algorithm for Handy Network Visualization Designed for the Gephi Software." PloS one 9
+(6):e98679.
+Jaffe, Adam B., Manuel Trajtenberg, and R ebecca Henderson. 1993. "Geographic Localization of Knowledge
+Spillovers as Evidenced by Patent Citations." Quarterly Journal of Economics 108 (3):577-598.
+McFadyen, M. Ann, and Albert A. Jr. Cannella. 2004. "Social Capital and Knowledge Creation: Diminishing Returns
+
+24
+
+of the Number and Strength of Exchange Relationships." Academy of management Journal 47 (5):735-746.
+Murata, Yasusada, Ryo Nakajima, Ryosuke Okamoto, and Ryuichi Tamura. 2014. "Localized Knowledge Spillovers
+and Patent Citations: A Distance-Based Approach." Review of Economics and Statistics 96 (5):967-985.
+Nagaoka, Sadao, Kazuyuki Motohashi, and Akira Goto. 2010. "Patent Statistics as an Innovation Indicator." In
+Handbook of the Economics of Innovation, 1083-1127. Elsevier.
+Newman, Mark. 2010. Networks: An Introduction. Oxford: Oxford University Press.
+Owen-Smith, Jason, and Walter W Powell. 2004. "Knowledge Networks as Channels and Conduits: The Effects of
+Spillovers in the Boston Biotechnology Community." Organization science 15 (1):5-21.
+Perry-Smith, Jill E. 2006. "Social yet Creative: The Role of Social Relationships in Facilitating Individual Creativity."
+Academy of Management journal 49 (1):85-101.
+Phelps, Corey C. 2010. "A Longitudinal Study of the Influence of Alliance Network Structure a nd Composition on
+Firm Exploratory Innovation." Academy of Management Journal 53 (4):890-913.
+Phelps, Corey, Ralph Heidl, and Anu Wadhwa. 2012. "Knowledge, Networks, and Knowledge Networks: A Review
+and Research Agenda." Journal of management 38 (4):1115-1166.
+Qiu, Shumin, Xielin Liu, and Taishan Gao. 2017. "Do Emerging Countries Prefer Local Knowledge or Distant
+Knowledge? Spillover Effect of University Collaborations on Local Firms." Research Policy 46 (7):1299-
+1311.
+Rost, Katja. 2011. "The Strength of Strong Ties in the Creation of Innovation." Research Policy 40 (4):588-604.
+Schumpeter, Joseph A. 1934. The Theory of Economic Development: An Inquiry into Profits, Capital, Credit, Interest,
+and the Business Cycle: Harvard University Press.
+Sosa, Manuel E. 2011. "Where Do Creative Interactions Come From? The Role of Tie Content and Social Networks."
+Organization Science 22 (1):1-21.
+Tobin, James. 1958. "Estimation of Relationships for Limited Dependent Variables." Econometrica 26 (1):24-36.
+Todo, Yasuyuki, Petr Matous, and Hiroyasu Inoue. 2016. "The Strength of Long Ties and the Weakness of Strong
+Ties: Knowledge Diffusion through Supply Chain Networks." Research Policy 45 (9):1890-1906.
+Trajtenberg, Manuel. 1990. "A Penny for Your Quotes: Patent Citations and the Value of Innovations." The Rand
+Journal of Economics:172-187.
+Whittington, Kjersten Bunker, Jason Owen -Smith, and Walter W Powell. 2009. "Networks, Propinquity, and
+Innovation in Knowledge-Intensive Industries." Administrative science quarterly 54 (1):90-122.
+
+25
+
+Figure 1: Changes in the Number of Patents Granted
+
+Figure 2: Changes in the Standardized Number of Citations per Patent
+
+26
+
+Figure 3: Changes in the Share of Co-owned Patents among All Patents
+
+Figure 4: Changes in the Share of Internationally Co-owned Patents among All Patents
+
+27
+
+Figure 5: Global Co-patenting Network
+
+     (A) 1991–1995                                (B) 2006–2010
+Note: Each dot represents a firm, and its color indicates the country of the firm shown by the legend. More precisely, firms in
+Japan (JP), the US (US), Germany (DE), South Korea (KR), France (FR), and China (CN) are represented by red, blue,
+green, light blue, yellow, and black, respectively.
+
+28
+
+Figure 6: Degree Distribution
+
+(A) by Period
+
+(B) by country
+
+29
+
+Figure 7: Changes in Spearman’s Rank Correlation Coefficients between Firms' Own Degree and the Mean
+of their Neighbors' Degree
+
+30
+
+Figure 8: Distribution of Network Measures
+
+(A) Degree centrality (log scale)
+
+(B) Clustering coefficient (Firms with two or more links)
+
+(C) Burt's constraint measure (Firms with two or more links)
+
+31
+
+Figure 9: Predicted Relation between Network Measures and Innovation Quality
+(
+2 3 4
+1 2 3 4
+ˆ ˆ ˆ ˆlnCITATION x x x x       )
+
+(A) Degree centrality (log scale)
+(B) Clustering coefficient
+
+(C) Burt's constraint measure
+
+32
+
+Table 1: Descriptive Statistics at the Firm-Period Level
+Variables N Mean Std. Dev. Min. Median Max.
+All firms granted any patent
+# patents granted 356,397 63.82 1,016.31 1 5 139,275
+-- (log) 356,397 1.81 1.57 0 1.61 11.84
+# citations 356,397 63.92 1,215.30 0 2.41 207,851
+-- (log) 356,397 1.57 1.64 0 1.23 12.24
+# citations per patent 356,397 1.32 3.81 0 0.37 475.11
+Dummy for co-patenting  356,397 0.20 0.40 0 0 1
+Dummy for international co-patenting 356,397 0.05 0.22 0 0 1
+Dummy for largest connected component 356,397 0.13 0.34 0 0 1
+Firms with co-patenting relationship
+# patents granted 48,910 371.33 2,718.77 1 24 139,275
+-- (log) 48,910 3.36 2.05 0 3.18 11.84
+# citations 48,910 375.41 3,257.68 0 17.08 207,851
+-- (log) 48,910 3.09 2.12 0 2.89 12.24
+# citations per patent 48,910 1.21 2.59 0 0.65 259.09
+Degree centrality 48,910 5.36 16.81 1 2 599
+-- (log) 48,910 0.85 1.01 0 0.69 6.40
+Clustering coefficient 48,910 0.17 0.31 0 0 1
+Burt’s constraint measure 48,910 0.64 0.36 0.0039 0.61 1.125
+Note: Each period consists of five years.
+
+Table 2: Correlation Coefficients between Network Measures
+
+Firms with two or more links (N = 27,700)
+ Degree
+(log)
+Clustering
+coefficient
+Burt's
+constraint
+Degree centrality (log) 1.0000
+Clustering coefficient −0.2646 1.0000
+Burt's constraint −0.7576 0.5878 1.0000
+
+Table 3: International Comparison of Descriptive Statistics at the Firm-Period Level
+
+No. of firm-
+period
+observations
+No. of patents
+per firm
+Degree
+centrality (log)
+Cluster
+coefficient Burt constraint
+US 29,069 149.7 0.45 0.18 0.84
+Japan 22,392 363.3 0.97 0.20 0.60
+Germany 9,939 193.9 0.45 0.12 0.80
+South Korea 7,446 175.5 0.44 0.14 0.81
+France 2,897 205.5 0.50 0.19 0.79
+China 1,099 333.9 0.40 0.14 0.82
+
+33
+
+Table 4: Effect of Co-patenting Network on Innovation
+Dependent variable: log of the standardized number of citations
+  (1) (2) (3) (4) (5) (6)
+Dummy for co-patenting 0.133*** 0.0552***
+ (0.0129) (0.0114)
+Dummy for international co-patenting 0.226*** 0.214***
+ (0.0246) (0.0242)
+Dummy for largest connected component  0.150***
+  (0.0187)
+Degree centrality (log)   0.140***
+   (0.0119)
+Clustering coefficient    −0.100*** 0.115*
+    (0.0244) (0.0603)
+Clustering coefficient2     −0.221***
+     (0.0591)
+Constraint      −0.504***
+      (0.0500)
+Dummy for degree of 1    −0.0746*** −0.0654*** 0.211***
+    (0.0141) (0.0136) (0.0288)
+log of the number of patents 0.669*** 0.667*** 0.837*** 0.868*** 0.866*** 0.850***
+ (0.0174) (0.0173) (0.0144) (0.0132) (0.0134) (0.0133)
+Firm fixed effects Yes Yes Yes Yes Yes Yes
+Country-industry-period fixed effects Yes Yes Yes Yes Yes Yes
+Observations 356,397 356,397 48,910 48,910 48,910 48,910
+Adjusted R2 0.765 0.766 0.885 0.884 0.884 0.885
+Notes: ***: p < 0.01, **: p < 0.05, *: p < 0.1
+
+34
+
+Table 5: Effect of Co-patenting Network on Innovation without Collaboration
+Dependent variable: log of the standardized number of citations received by patents
+that the firm owns without any co-owner
+  (1) (2) (3) (4) (5) (6)
+Dummy for co-patenting 0.118*** 0.0435***      (0.0117) (0.0126)
+Dummy for international co-patenting 0.218*** 0.207***      (0.0233) (0.0227)
+Dummy for largest connected component  0.139***
+  (0.0178)
+Degree centrality (log)   0.0946***       (0.0123)
+Clustering coefficient    −0.101*** −0.0524      (0.0239) (0.0696)
+Clustering coefficient2     −0.0516
+     (0.0706)
+Constraint      −0.392***
+      (0.0545)
+Dummy for degree of 1    −0.0593*** −0.0571*** 0.182***
+    (0.0149) (0.0152) (0.0320)
+log of the number of patents 0.667*** 0.665*** 0.873*** 0.889*** 0.889*** 0.879***
+ (0.0170) (0.0170) (0.0116) (0.0117) (0.0116) (0.0114)
+Firm fixed effects Yes Yes Yes Yes Yes Yes
+Country-industry-period fixed effects Yes Yes Yes Yes Yes Yes
+Observations 338,392 338,392 37,308 37,308 37,308 37,308
+Adjusted R2 0.765 0.766 0.899 0.899 0.899 0.899
+Notes: ***: p < 0.01, **: p < 0.05, *: p < 0.1
+
+35
+
+Table 6: Comparison between Firms with Only Domestic Collaboration and Those with Foreign
+Collaboration
+Dependent variable: log of the standardized number of citations
+  (1) (2) (3) (4)
+Degree centrality (log) 0.101***
+ (0.0126)
+Degree centrality (log) * dummy for any international link 0.0967***
+ (0.0174)
+Clustering coefficient  −0.0614** 0.161***
+  (0.0254) (0.0574)
+Clustering coefficient2   −0.227***
+   (0.0588)
+Clustering coefficient * dummy for any international link  −0.0978** −0.205*
+  (0.0376) (0.109)
+Clustering coefficient2 * dummy for any international link    0.105
+   (0.122)
+Constraint    −0.403***
+    (0.0454)
+Constraint * dummy for any international link    −0.216***
+    (0.0450)
+Firm fixed effects Yes Yes Yes Yes
+Country-industry-period fixed effects Yes Yes Yes Yes
+Observations 48,910 48,910 48,910 48,910
+Adjusted R2 0.885 0.885 0.885 0.885
+
+Notes: ***: p < 0.01, **: p < 0.05, *: p < 0.1.
+
+36
+
+Table 7: Heterogeneity across Time
+Dependent variable: log of the standardized number of citations
+  (1) (2) (3) (4) (5)
+Dummy for co-patenting 0.0491**
+ (0.0225)
+-- * dummy for 2000s 0.139***
+ (0.0261)
+Dummy for international co-patenting 0.125***
+ (0.0283)
+-- * dummy for 2000s 0.137***
+ (0.0406)
+Degree centrality (log)  0.0904***
+  (0.0174)
+Degree centrality (log) * dummy for 2000s  0.0722***
+  (0.0140)
+Clustering coefficient   −0.108*** −0.317**
+   (0.0321) (0.122)
+Clustering coefficient2    0.236*
+    (0.127)
+Clustering coefficient * dummy for 2000s   0.0124 0.700***
+   (0.0294) (0.135)
+Clustering coefficient2 * dummy for 2000s    −0.738***
+    (0.146)
+Constraint     −0.0660
+     (0.0466)
+Constraint * dummy for 2000s     −0.228***
+     (0.0463)
+Firm fixed effects Yes Yes Yes Yes Yes
+Country-industry-period fixed effects Yes Yes Yes Yes Yes
+Observations 356,397 48,910 48,910 48,910 48,910
+Adjusted R2 0.766 0.885 0.884 0.884 0.885
+Notes: ***: p < 0.01, **: p < 0.05, *: p < 0.1. The log of the number of patents is included as independent variables, but the
+results are not presented for brevity.
+
+37
+
+Table 8: Heterogeneity across Countries
+Dependent variable: log of the standardized number of citations
+  (1) (2) (3) (4) (5) (6)
+ US Japan Germany South
+Korea France China
+Dummy for co-patenting 0.104*** 0.114*** 0.130*** 0.100*** 0.0881*** 0.711***
+ (0.0173) (0.0139) (0.0145) (0.0171) (0.0299) (0.0672)
+Dummy for international co-patenting 0.169*** 0.155*** 0.229*** 0.307*** 0.253*** 0.627***
+ (0.0275) (0.0320) (0.0396) (0.0825) (0.0553) (0.139)
+Number of observations 188,400 45,016 67,794 38,465 18,648 51,019
+
+Degree centrality 0.105*** 0.139*** 0.234*** 0.183*** 0.175*** 0.321***
+ (0.0211) (0.0153) (0.0256) (0.0363) (0.0448) (0.103)
+Clustering coefficient −0.0781* −0.0285 −0.129* −0.153*** −0.227** 0.0444
+ (0.0396) (0.0295) (0.0738) (0.0538) (0.111) (0.346)
+Clustering coefficient 0.111 0.143* 0.360* 0.704*** −0.326 −1.248
+ (0.165) (0.0817) (0.183) (0.220) (0.378) (1.102)
+Clustering coefficient2 −0.191 −0.180** −0.508*** −0.875*** 0.101 1.308
+ (0.158) (0.0824) (0.180) (0.223) (0.365) (1.231)
+Constraint −0.378*** −0.417*** −0.877*** −0.718*** −0.659*** 0.0754
+ (0.0685) (0.0551) (0.155) (0.119) (0.168) (0.625)
+Number of observations 29,069 22,392 9,939 7,446 2,897 1,099
+Firm fixed effects Yes Yes Yes Yes Yes Yes
+Industry-period fixed effects Yes Yes Yes Yes Yes Yes
+Notes: ***: p < 0.01, **: p < 0.05, *: p < 0.1. The log of the number of patents is included as independent variables, but the
+results are not presented for brevity.
