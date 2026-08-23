@@ -1,0 +1,32 @@
+---
+title: "How Experts in China and the United Kingdom View AI Risks and Collaboration"
+summary: |-
+  As AI continues to advance, the technology has created many opportunities and risks. Despite significant geopolitical differences, a series of interviews with AI experts in China and the United Kingdom reveals common AI safety priorities, shared understanding of the benefits and risks of open source AI, and agreement on the merits of closer collaboration—but also obstacles to closer partnerships.
+date: "2024-08-12"
+issues: ["Artificial Intelligence", "Data Innovation", "Privacy", "Public Safety"]
+authors: ["Daniel Castro", "Yanzi Xu"]
+content_type: "Reports & Briefings"
+canonical_url: "https://datainnovation.org/2024/08/how-experts-in-china-and-the-united-kingdom-view-ai-risks-and-collaboration/"
+---
+
+# How Experts in China and the United Kingdom View AI Risks and Collaboration
+
+Recent advances in artificial intelligence (AI) offer many important benefits for society, the economy, and scientific progress. One important factor in these advancements is the development of open source AI: AI technologies whose source code and data are freely available for others to use, study, modify, and distribute. Open source AI is crucial for accelerating innovation through collaborative development, reducing redundancy, and democratizing access to AI capabilities. Since it is available to anyone, it facilitates economic development and social progress, such as by allowing anyone to adapt and fine-tune highly capable AI models for specific tasks. Moreover, global collaboration among researchers, developers, and users on open source AI enables collective progress on shared AI projects and promotes the development of guidelines and best practices for transparency, accountability, and ethics. Finally, by fostering transparency and accountability through accessible code and data, it helps identify and address biases, errors, and ethical concerns in AI and allows users to understand how the technology works.
+
+
+Both China and the United Kingdom are active members of the open source community and pioneers in the field of AI. This history has led them to emerge as leaders in open source AI. For example, the U.K.-based company Stability AI is the developer of many popular open source generative AI tools used for creating images, audio, 3D models, and code. And China has produced some of the top-performing open source large language models (LLMs) in the world, including Qwen (Alibaba) and Yi (01.AI). These open source AI projects provide competition to proprietary (or “closed”) AI where developers restrict public access to the underlying technology.
+
+
+However, open source AI presents unique challenges. First, unlike proprietary AI, where developers can provide oversight of what users do with their technology, once developers make open source AI publicly available, they have little to no control over how others might use their technology. Malicious actors may tamper with open source AI to remove safeguards, manipulate results, and generate inaccurate information. In addition, malicious actors may use the technology for dangerous and illicit purposes, such as to conduct cyberattacks, spread disinformation, commit fraud, create contraband, and engage in other illegal activities. Second, unlike proprietary AI, where the developer is responsible for the technology, there is not always someone responsible for open source AI projects. As a result, the technology may have known bugs or security vulnerabilities that nobody addresses. Similarly, open source AI may be provided without any warranties or guarantees. For example, users may not know if developers trained an open source AI model on poor-quality or illicit data. Finally, the development practices of open source products can create unknown risks, such as if attackers surreptitiously attempt to introduce malicious code or data into an open source project.
+
+
+Addressing risks from AI is an issue of global concern, and one at which both the United Kingdom and China have remained at the forefront, even as they both seek to support their respective firms’ development and use of AI. The United Kingdom convened an AI Safety Summit in 2023, which many countries attended, including China. The summit concluded with the Bletchley Declaration whereby participating countries resolved “to sustain an inclusive global dialogue that engages existing international fora and other relevant initiatives and contributes in an open manner to broader international discussions.” President Xi Jinping later reiterated this call for mutually beneficial cooperation on common interests, including AI, in remarks in San Francisco at a bilateral meeting with the U.S. president. The Chinese Ministry of Foreign Affairs also released a statement in October 2023 that calls for “global collaboration to foster the sound development of AI, share AI knowledge, and make AI technologies available to the public under open source terms.”
+
+
+Despite these high-level government declarations, it is unclear whether the United Kingdom and China can turn their aspirations for closer cooperation in AI into meaningful action. To understand the feasibility of such partnerships, it is important to better understand both whether the concerns and priorities of AI experts outside government align and their experiences to date on collaboration. This report strives to provide insights into these issues.
+
+[Read the report.](https://www2.datainnovation.org/2024-china-uk-perceptions-ai-risks.pdf)
+
+---
+*Source: Information Technology & Innovation Foundation (ITIF)*
+*URL: https://datainnovation.org/2024/08/how-experts-in-china-and-the-united-kingdom-view-ai-risks-and-collaboration/*

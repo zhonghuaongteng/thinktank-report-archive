@@ -62,6 +62,12 @@ SELECTED_ITEMS = (
     _item("2025-12-15", "how-nih-funded-science-supports-us-biopharmaceutical-innovation", "How NIH-Funded Science Supports US Biopharmaceutical Innovation", ("科学体系与基础研究", "技术创新与产业转化"), "NIH资助科学、生物医药产业R&D与公私互补"),
     _item("2026-02-09", "tracking-rd-leadership-us-advantage-narrowing-as-china-gains-ground", "Tracking R&D Leadership: US Advantage Narrowing as China Gains Ground", ("技术创新与产业转化", "关键与通用技术"), "九个先进产业企业R&D与中美成本调整比较", True),
     _item("2026-07-20", "paying-for-outcomes-tying-university-funding-to-commercial-results", "Paying for Outcomes: Tying University Funding to Commercial Results", ("人才大学与科研组织", "技术创新与产业转化"), "大学资助绩效、专利企业与商业化结果激励"),
+    _item("2019-08-12", "chinas-biopharmaceutical-strategy-challenge-or-complement-us-industry", "China’s Biopharmaceutical Strategy: Challenge or Complement to U.S. Industry Competitiveness?", ("关键与通用技术", "技术创新与产业转化", "国际合作与开放科学"), "中国生物医药研发、产业政策与中美创新生态互补竞争的早期节点", True),
+    _item("2024-08-12", "how-experts-china-united-kingdom-view-ai-risks-collaboration", "How Experts in China and the United Kingdom View AI Risks and Collaboration", ("关键与通用技术", "人才大学与科研组织", "国际合作与开放科学"), "中英AI专家对技术风险、科研交流和国际合作条件的比较", True),
+    _item("2025-03-03", "from-fast-follower-to-innovation-leader-restructuring-south-koreas-technology-regulation", "From Fast Follower to Innovation Leader: Restructuring South Korea’s Technology Regulation", ("研发治理与科研组织", "技术创新与产业转化", "国际合作与开放科学"), "韩国由技术追随转向创新引领的监管重构及中国产业竞争参照", True),
+    _item("2026-05-04", "us-technology-companies-should-keep-operating-in-china", "US Technology Companies Should Keep Operating in China", ("技术创新与产业转化", "国际合作与开放科学"), "跨国科技企业在华经营与研发联系对创新、市场学习和技术生态的影响", True),
+    _item("2026-06-08", "how-innovative-is-chinas-space-industry", "How Innovative Is China’s Space Industry?", ("关键与通用技术", "技术创新与产业转化"), "从科研、企业、专利和产业能力评估中国航天创新体系", True),
+    _item("2026-06-29", "chinas-burgeoning-biopharmaceutical-competitiveness-demands-us-response", "China’s Burgeoning Biopharmaceutical Competitiveness Demands a US Response", ("关键与通用技术", "科学体系与基础研究", "技术创新与产业转化"), "中国生物医药科研、临床开发、企业能力和成果转化的最新比较节点", True),
 )
 
 
@@ -128,7 +134,11 @@ def main() -> int:
         asset_path = web_dir / f"{rid}.md"
         text_path = text_dir / f"{rid}.txt"
         slice_path = slice_dir / f"{rid}.md"
-        content = asset_path.read_text(encoding="utf-8", errors="replace") if asset_path.exists() else fetch_markdown(str(item["markdown_url"]))
+        if asset_path.exists():
+            content = asset_path.read_text(encoding="utf-8", errors="replace")
+        else:
+            fetched = fetch_markdown(str(item["markdown_url"]))
+            content = "\n".join(line.rstrip() for line in fetched.splitlines()) + "\n"
         if len(content) < 1_000:
             raise RuntimeError(f"official markdown too short: {rid} {len(content)}")
         if not asset_path.exists():
@@ -143,6 +153,7 @@ def main() -> int:
         row["本地路径"] = str(asset_path)
         row["正文完整度"] = "ITIF官方Markdown全文已保存"
         row["优先级"] = "P0-China-STI-node" if item["china"] else "P1-STI-node"
+        row["示踪问题"] = "；".join(item["axes"]) + ("；中国科技横向维度" if item["china"] else "")
         row["样本角色"] = SERIES_ROLE
         row["编码状态"] = "全文待观点编码"
         row["预期用途"] = str(item["role"])
