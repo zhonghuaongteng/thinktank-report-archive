@@ -1,0 +1,947 @@
+Bertin Martens
+Bo Zhao
+JRC Digital Economy Working Paper 2020-08
+Data access and regime competition
+A case study of car data sharing in China
+December 2020
+
+2
+This publication is a Technical report by the Joint Research Centre (JRC), the European Commission’s science and knowledge service. It aims
+to provide evidence-based scientific support to the European policymaking process. The scientific output expressed does not imply a policy
+position of the European Commission. Neither the European Commission nor any person acting on behalf of the Commission is responsible
+for the use that might be made of this  publication. For information  on the methodology and  quality underlying the data used in this
+publication for which  the source is  neither Eurostat  nor other Commission  services, users should contact the  referenced source. The
+designations employed and the presentation of material on the maps do not imply the expression of any opinion whatsoever on the part of
+the European Union concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its
+frontiers or boundaries.
+Contact information
+Name: Bertin Martens
+Address: Inca Garcilaso 3, 41092 Seville (Spain)
+Email: Bertin.Martens@ec.europa.eu
+EU Science Hub
+https://ec.europa.eu/jrc
+JRC122755
+Seville: European Commission, 2020
+© European Union, 2020
+© European Union
+The reuse policy of the European Commission is implemented by the Commission Decision 2011/833/EU of 12 December 2011 on the reuse
+of Commission documents (OJ L 330,  14.12.2011, p. 39).  Except otherwise noted,  the reuse of this  document is authorised under the
+Creative Commons Attribution 4.0 International (CC BY 4.0) licence (https://creativecommons.org/licenses/by/4.0/). This means that reuse is
+allowed provided appropriate credit is given and any changes are indicated. For any use or reproduction of photos or other material that is
+not owned by the EU, permission must be sought directly from the copyright holders.
+All content © European Union, 2020
+How to cite this report:  Bertin Martens and Bo Zhao (2020) Data access and regime competition: A case study of car data sharing in China,
+Digital Economy Working Paper 2020-08, Joint Research Centre of the European Commission, Seville (Spain), 2020, JRC122755.
+.
+
+3
+Abstract
+We study the case of a Chinese industrial policy, implemented in Shanghai, that makes it mandatory
+for car manufacturers to share electro-mechanical performance and real time navigation data from
+their entire fleet of electric and hybrid vehicles with local and central government authorities. This
+policy seeks to reduce emissions, assess the performance of New Energy Vehicles (NEVs), prevent
+fraud in state subsidies and strengthen the competitiveness of Chinese manufacturers of these
+vehicles. We argue that economies of scope in data aggregation may provide traditional market
+failure arguments for government intervention and mandatory data pooling. Our paper also illustrates
+how data access regulation could be used for economic regime competition.  The EU and China
+pursue very similar data policy goals that hinge on economies of scope in data aggregation.
+However, they follow very different political processes to achieve these goals.
+Key words:  Data access, data regime competition, B2G vehicle data sharing, China
+
+4
+
+Contents
+Abstract .....………………………………………………………………………………….3
+1. Introduction.............................................................................................................. 5
+2. From traditional regime to data regime competition ............................................... 7
+3. Access to automotive data in the EU ..................................................................... 10
+4. Mandatory access to electric vehicle data in China ............................................... 11
+5. The potential economic implications of the NEV database................................... 15
+5.1.           Economies of scope in data aggregation .................................................... ….15
+5.2.           Using pooled car data to promote industrial innovation ................................. 16
+5.3.           Using data to improve the environmental performance of cars and drivers ... 19
+6. Conclusions ........................................................................................................... 21
+Bibliography ......................................................................................................................... 23
+
+5
+
+1. Introduction
+
+During the US Senate hearing on the Cambridge Analytica case in April 2018, Marc Zuckerberg,
+Facebook CEO, argued that, if the US would follow the EU’s strict privacy regulation, Chinese
+competitors may gain the upper hand in technological competition1. While he agreed with the need
+for data regulation, he also suggested privacy carve-outs to enable innovation in the face of rivalry
+from China ((Horwitz, 2018)2.  In short, strong data regulation would give China an advantage and
+thus Zuckerberg urged privacy carve outs to compete with China ((Lomas, 2018).  Zuckerberg’s
+reasoning not only underscores the critical role of data in corporate competition in the digital era.  It
+also draws the attention of policy makers to the importance of data regime competition between
+countries.  Economists have discussed regime competition since the 1950s.  For instance, Tiebout
+(1956) developed a regime competition argument for tax competition between local authorities.
+When people and firms can migrate between jurisdictions this imposes restrictions on policy makers’
+choices in regulatory regimes. Conversely, when they cannot migrate policy makers have more
+freedom of manoeuvre.
+
+This also applies to data protection regimes. Taking a pragmatic approach, data regime competition
+could be defined as the use of data, and data access regulations, to give a competitive advantage to
+firms in the domestic jurisdiction over firms from foreign jurisdictions.  While individuals are
+unlikely to switch countries because of differences in data protection regimes, large global firms may
+prefer to locate data-intensive operations in jurisdictions that allow them to extract more value from
+data, although they will also prefer jurisdictions that offer strong protection of their commercial
+secrets and intellectual property.   Data regulation will depend largely on the nature and
+characteristics of political regimes, including how they account for heterogeneity in domestic
+consumers’ and firms’ preferences, how they trade off private welfare versus overall social welfare,
+and how they deal with this trade-off in a global competition setting.  A proper analysis of data
+regime competition should thus not only compare data regulations between regimes but also the
+outcomes that they produce for firms and consumers.  In this study we show how the effectiveness of
+data regime competition depends on the availability of various knowledge spill-over channels from
+data and to what extent they can be contained to local markets.
+
+1 Similar arguments have been used by Facebook and other American tech corporations to respond to regulatory constraints
+over technological competition and data privacy.  “We understand that we’ve made mistakes. But don’t you realize that if you
+damage us, you’ll just be handing over the future to China? Unlike America, China is standing behind its tech firms, because it
+knows that the competition is global, and it wants to win.” See:  Tim Wu, Don’t Fall for Facebook’s ‘China Argument,’THE NEW
+YORK TIMES, December 10, 2018,https://www.nytimes.com/2018/12/10/opinion/facebook-china-tech-
+competition.html (last visited Jul 23, 2019).
+2 Josh Horwitz, Zuckerberg’s talking points: Breaking up Facebook “strengthens Chinese companies”, QUARTZ
+,https://qz.com/1249660/zuckerbergs-senate-talking-points-breaking-up-facebook-strengthens-
+chinese-companies/ (last visited Jul 23, 2019).
+
+6
+We present a case study of data sharing in the automotive sector in China. In 2017, a Chinese law
+entered into force that makes if mandatory for all manufacturers of New Energy Vehicles (NEV,
+mostly electric and hybrid vehicles) in the country to pool vehicle mechanical and navigation data on
+a government-operated server. While manufacturers are responsible for the transfer of vehicle usage
+data to the government, the transfer includes personal data from drivers. It is thus a combination of
+mandatory business-to-government and consumer-to-government data sharing. Implementation of the
+data collection process has been decentralized to local and regional authorities. We trace the
+implementation of the law in the city of Shanghai.
+
+From an economic perspective, the main advantage of this data sharing regime is the possibility to
+generate economies of scope in data aggregation and accelerate the pace of innovation (a) in the
+electric vehicle industry and (b) in environmental and mobility management. In a free and voluntary
+B2B data sharing market, market failures will occur because asymmetric and incomplete information
+about the performance of innovative electric car technologies remains locked into manufacturers’
+private data silos. Private firms have no incentive to share the information because it may erode their
+innovation rents.  The government’s mandatory data pooling overcomes these obstacles and
+generates economies of scope from the aggregation of complementary datasets.  This B2G data
+regime is in the public interest because it can increase innovation-driven social welfare for all,
+including manufacturers and drivers.  However, the intermediary is not necessarily neutral and may
+create new distortions in the competitive level playing field between manufacturers, in particular
+between domestic and foreign manufacturers, in order to strengthen the position of Chinese
+manufacturers in domestic as well as in foreign markets. We also find that the actual use of the data,
+as far as can be observed from available reports and studies3, remains rather minimal and far below
+its potential with limited evidence to show otherwise
+
+At first sight, one may wonder to what extent this is actually a case of data regime competition
+because neither car drivers nor manufacturers have a choice of jurisdiction. In contemporary platform
+economics jargon: neither consumers nor producers can switch between different data regimes. Car
+drivers are unlikely to move to another country because they do not like the local car data access
+regime. Similarly, car manufacturers will want to be present in the Chinese car market and will not
+withdraw their cars because of this data regime.   We focus on a more indirect channel for data
+regime competition through spill-over’s rather than movement of firms or production processes that
+is the subject of the more traditional regime competition literature.  Contrary to the traditional
+literature, we argue that knowledge and insights obtained from data may, under certain conditions,
+have global spill-over effects that temper regime competition between jurisdictions. Even though
+direct knowledge spill-overs may be contained, there are indirect positive spill-overs outside China
+through knowledge embodied in exported technologies, vehicles and reductions in global emissions.
+Data regime competition can only work if these knowledge spill-overs between firms and/or
+countries can be contained.  We discuss two different cases of spill-over containment with respect to
+the use of the Chinese electric vehicle data.
+
+3 This paper is based on published reports and studies.  The authors have been in contact with relevant Chinese authorities
+but could not access unpublished work.
+
+7
+We compare this case of very wide-reaching B2G automotive data sharing in China with several
+automotive data sharing initiatives in the EU to make better use of car data to improve road security,
+aftermarket services, mobility and the environmental performance of cars. Recently, the EU has
+started to explore policies for B2G data sharing in the public interest 4 that may be more in line with
+the objectives of the Chinese initiative.  Roberts et al. (2019) argue that an important difference
+between EU and Chinese approaches to data regimes is that the EU prioritizes individual privacy 5,
+commercial confidentiality and respect for private interests.  This makes it easier for EU car
+manufacturers to push back against major data sharing initiatives when it does not suit their private
+interests. The emphasis on individual freedoms has been the hallmark of Western economic thinking
+since the Age of Enlightment.  It contrast, the Chinese approach prioritizes collective national and
+societal welfare over individual welfare. Similarly, China seeks to maximize the social value of data,
+even if this may come at the expense of private interests of firms and individuals (Roberts et al.,
+2020).   The more fundamental societal question is whether the Western individualistic approach can
+be maintained in the digital age that puts a premium on data sharing and pooling.  It confines data to
+manufacturers’ silos and impedes reaping the benefits of data aggregation.  That may slow down
+competition, innovation and growth in societal welfare6, and ultimately reduce the competitiveness of
+economic regimes that adhere to this principle.  Answering that question goes far beyond the scope
+of this paper.  Our only intention is to draw attention to this issue of growing importance in a more
+digitalized, connected world.
+The remainder of this paper is structured as follows.  Section 2 gives a short overview of the wider
+literature on regime competition.  Section 3 compares data regulation in general and in the
+automotive sector in the EU and China.  Section 4 describes the specific case of the regulation for
+business-to-government (B2G) data sharing for electric cars in the city of Shanghai.  Section 5
+discusses the economics of data sharing and applies this to the case of electric cars in Shanghai. It
+shows how the Shanghai database could affect electric vehicle manufacturers and consumers in
+China, compared to their counterparts in the EU.   Section 6 examines actual use of the Shanghai
+database.  Section 7 concludes.
+2. From traditional regime to data regime competition
+Regime competition is not a new concept in social science, including in economics and political
+science. We define regime competition as geographic competition between governments with a
+4 On B2G data sharing in the EU, see https://www.euractiv.com/wp-
+content/uploads/sites/2/2020/02/B2GDataSharingExpertGroupReport-1.pdf
+5 Some news media reported the existence of these NEV data platforms. They mostly ignore the industrial applications and
+emphasized potential privacy violations in data collection and use. We focus on industrial policy issues and do not look at
+privacy issues in this paper.
+6 Mann, Savulescu and Sahakian ({Citation}2016) argue that the “duty of rescue” principle prescribes that if an action can
+benefit others and poses little threat to the individual, the ethical option is to complete the action;
+
+8
+policy monopoly in their respective jurisdictions.  The objective can be to ensure that a regime
+prevails and reinforce the economic competitiveness of firms and industries in its jurisdiction.
+Regimes can also compete in terms of social welfare of their citizens to reinforce their legitimacy and
+attract citizens to their jurisdiction.
+Political regime competition emerged between Western liberal democracies and Eastern socialist
+countries during the old Cold War period. Obinger and Schmitt (2011: 301–330) discussed whether
+regime competition is really a causal factor behind the massive post-war growth of the welfare state.
+Budzinski (2008) linked the term to governance of global competition, including regulatory
+competition, that constructs markets for institutions, law, regulation, etc. with governments being
+suppliers and citizens as taxpayers as well as market participants (enterprises, investors, labour,
+consumers) representing the demand side.  A related use of regime competition between countries is
+associated with social dumping and competition in labour law and labour market regulation. This
+came up for example at the time of EU enlargement to refer to competition between existing and new
+Member States in Central and Eastern Europe in labour and product markets. For instance, Streeck
+(1992: 301-330) pointed out that the progressive integration of European product markets would
+increase competition between labour market regimes of individual member states (Simmel, 1906:
+125).  By contrast, Maslauskaite (2013: 52) suggested that there is little space for regime competition
+between the European core and the new Member States.  McDowell and Thom (1999) argued that if
+they would stay outside the EU, they would compete with the EU particularly in the area of labour
+market policy. Marginson and Sisson (2004: 135) suggested that one of the most problematic aspects
+of competitive corporatism is that it transfers the microeconomic logic of competition between
+companies to the macro-level of regime competition between nations. Marginson (2006: 102) argued
+that at macro-level, regime competition between labour market systems has been exacerbated by the
+onset of Economic and Monetary Union; at meso-level, regime competition happens between regions
+and localities in order to attract new investment.
+The EU has a market-driven economic regime where state intervention in the private sector is
+restricted by competition law. EU governments can intervene through taxes and subsidies but this is
+subject to restrictions in order not to distort the normal activities of open markets.   Attempts by
+Member States to distort the level playing field through subsidies to give local firms an advantage in
+international competition are subject to strict state aid rules.  Guidelines on regulatory intervention
+emphasize that this can only happen in cases of demonstrated market failures, regulatory failures or
+equity concerns7.  Intervention can also come in the form of stimulating more competition between
+Member States, for instance, by reducing barriers to trade in the EU Single Market.  In contrast,
+China’s political economy regime allows for stronger state intervention whereby the Communists
+party, the State authorities and industry are closely interwoven and interacting with each other.  The
+government can largely intervene in industry, whether public or private enterprises, whenever it
+deems useful and necessary, without having to provide market failure arguments.  Especially the
+Chinese government has direct control of SOEs (State Owned Enterprises) as a legacy of the old
+7 See European Commission “Better Regulation Toolbox”, 2017, pp 85-92. Available at
+https://ec.europa.eu/info/sites/info/files/better-regulation-toolbox_2.pdf.
+
+9
+socialist economy. They are some of the biggest players in both the domestic and global markets, and
+remain in charge of China’s key industries, pillar industries and other large general industries (Zhang,
+2019). There is strong competition between provincial governments to promote the competitiveness
+of their local firms by means of subsidies and other advantages.  This can also involve interventions
+by local governments.
+
+Regime competition between jurisdictions is a well-known concept in economics.  Thiebout (1956)
+presented a model of tax regime competition between jurisdictions.  As people and firms can migrate
+between jurisdictions this imposes restrictions on policy makers’ choice of tax regime. High taxes
+may motivate firms and people to move to another jurisdiction. The model does not imply that tax
+rates should converge across jurisdictions. Taxpayers will take into account taxation levels but also
+the quantity and quality of public services that they receive in return for their taxes.  This may result
+in sorting of firms and people between jurisdictions in function of their preferences for public
+services. For firms that operate in global markets, local taxes will affect their competitiveness in
+these markets. Local governments have an interest in lowering taxes on these firms in order to
+strengthen their global competitiveness.  Large global digital companies have exploited differences in
+tax regimes to set up tax headquarters in low tax jurisdictions.  This has triggered action from the EU
+competition authority, most famously in the Apple-Ireland tax case8.
+
+Regime competition can also occur with respect to data protection and access to data.  Researchers
+have studied the impact of the entry into force of the new EU General Data Protection Regulation
+(GDPR) in 2018 on the competitiveness of EU firms.  Some have argued that the GDPR may have a
+chilling effect on investment and may be considered as a case of the EU harming itself. For example,
+Layton (2019) explained, among other negative impacts, how the GDPR significantly reduced
+investment in digital start-up firms and hindered innovations (Layton, 2019).  As in the Tiebout
+(1956) model however, costs as well as benefits have to be taken into account, including consumer
+preferences for privacy protection. The positive welfare effect on consumers might exceed the
+chilling investment effect, though we have as yet no evidence on that. There are indications however
+that these preferences are globally shared among consumers, resulting in pressure to adopt GDPR-
+like legislation in jurisdictions outside the EU, including in the US9. That would level the playing
+field again among data-driven firms.
+
+China has also adopted a number of general regulations that include provisions to protect personal
+data, such as in China’s Tort Liability Law (Art. 30), the new E-commerce Law,10 the Cybersecurity
+Law, the recent cross-border data protection draft law (Luo et al., 2019), and a new draft of Personal
+Data protection Law recently released for public consultation (Zhang and Yin, 2020)  They include
+
+8See the European Commission’s decision on Irish illegal tax benefits to Apple worth up to €13 billion
+https://ec.europa.eu/commission/presscorner/detail/en/IP_16_2923
+9The state of California adopted a personal data protection law that has many similarities with the EU GDPR. See
+https://oag.ca.gov/privacy/ccpa  The EU’s normative power extend far beyond data.  See for example Ian Manners (2002)
+Normative Power Europe: A Contradiction in Terms, Journal of Common Market Studies, vol 40(2), pp 235-258.
+10 With Article 18 addressing the issues of consumer profiling and Article 13 requests e-commerce business shall collect or
+use individual information of its users shall follow relative regulations.  Article 24 provides the rights of consumers to access,
+correct, delete their own information registered with service providers and the corresponding duties of the latter. Ibid.
+
+10
+clauses for data protection and legal duties for data controllers and processors11.  Moreover, the State
+has adopted specific measures to strengthen personal data protection in practice, for example the
+revision of national standards for Personal Information Security establishes a data protection
+certification scheme. At the same time, however, these regulations grant state authorities access to all
+data held by private firms12, whether personal or non-personal and for whatever reason deemed in the
+interest of the state.  In the EU, the GDPR does not prevent government access to personal data for
+security reasons but not for economic reasons.
+
+In the EU, government access to firm data is very restricted.  There are some specific legal
+frameworks that allow access for taxation and statistical purposes for example, or for specific reasons
+such as environmental reporting or prudential supervision of banks.  With the rise of digital data,
+however, digital firms often hold data that could be very useful for policy making. In many cases, it
+could be in the public interest if governments could access these data.  The European Commission
+(2020) released a policy report on initiatives to facilitate business-to-government (B2G) data sharing
+that identifies the conditions under which this can be realized13.  Some Member States have been
+pushing ahead. In France for example, the Loi Numérique (2018)14 includes provisions that facilitate
+government access to data held by government-affiliated firms.  The recent Loi sur l’Orientation des
+Mobilités (2019)15 goes a step further and includes access to data from private transport firms. As in
+China, these initiatives have been set up with the public interest in mind, the overall welfare of
+society.  However, unlike in China, they are not designed to promote innovation or industrial
+competition between firms or countries.  Nevertheless, these B2G data sharing initiatives may have
+impact at the firm level when data, or the insights and knowledge derived from data, would spill over
+to other firms or when the policy initiatives to which the data contribute would have a differential
+impact on firms.
+
+3. Access to automotive data in the EU
+
+Modern cars produce substantial volumes of data while driving.  These data can be collected outside
+the car and used for a wide variety of aftersales services as well as for more public services such as
+
+11 For instance, Article 25 of the E-Commerce Law of the PRC. For an English version of the law, see: E-Commerce Law of
+the People’s Republic of China, available at: http://en.pkulaw.cn/display.aspx?cgid=321035&lib=law (last visited Jul 31,
+2019).
+12 For instance, Article 25 of China E-Commerce Law (promulgated in 2019) requests e-commerce operators to provide e-
+commerce data information according to laws and administrative regulations without further illustration of which laws and
+regulations for procedural safeguards of personal data privacy For an English translation (not official), see:
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiQrqyu_Z3tAhWCy6QKHUscC
+asQFjANegQIHBAC&url=https%3A%2F%2Fwww.scmp.com%2Ftech%2Fapps-social%2Farticle%2F2180194%2Fheres-
+how-chinas-new-e-commerce-law-will-affect-consumers-platform&usg=AOvVaw0ncKP-vO22CXl5fsUAoCys.
+13 “Towards a European strategy on business-to-government data sharing for the public interest”, final report prepared by
+the high-level expert group on B2G data sharing.  See also Bertin Martens and Nestor Duch-Brown (2020) The economics of
+business to government data sharing,  JRC Digital Economy working paper, available at
+https://ideas.repec.org/p/ipt/decwpa/202004.html.
+14 https://www.vie-publique.fr/eclairage/20301-loi-republique-numerique-7-octobre-2016-loi-
+lemaire-quels-changements
+15http://www.assemblee-nationale.fr/dyn/15/dossiers/loi_orientation_mobilites
+
+11
+environmental policies and the promotion of innovation in new car technologies.  The use of data
+access and market regulation policies in the automotive sector is likely to have a significant impact
+on innovation in car markets and aftersales services markets and on the environmental performance
+of private car transport.
+Policy makers are aware of this.  In the EU, automotive (and more generally transport and mobility)
+data policies have been geared towards data sharing for a number of years now, including in the
+automotive sector.  However, data sharing initiatives often run into opposition from private firms that
+collect data.  The private incentives to share data for the social benefit of society as a whole are often
+not aligned.  Sharing data may entail not only private production costs for firms.  It may also be used
+by competitors to improve their market position (Carballa, 2018).  In order to overcome market
+failures from incentive misalignment, government intervention with mandatory data sharing rules
+may be required, as in the case of the Chinese electric vehicle data sharing initiative.
+
+B2B car data sharing is not new in the EU. Car manufacturers have to share basic repair and
+maintenance data with service providers under the Type Approval Regulation. The latest revision
+(2018) includes some provisions regarding access to digital data. There are also some mandatory
+B2G data sharing provisions for road safety data, between manufacturers and road traffic authorities
+(Regulation EU 883/2013). Policy initiatives to launch B2B data sharing for connected car data
+started in 2014. The European Commission (EU Commission, 2016) brought together all
+stakeholders under the C-ITS platform (Cooperative Intelligent Transport Systems)  initiative to
+discuss the issues of access to in-vehicle data such as access principles, technical and policy
+solutions, etc. In 2016, an industry working group admitted that conflicting interests between
+stakeholders prevented the realisation of this goal16. Proposals for a common server to collect and
+share car data among car manufacturers and aftermarket service providers have not materialised.
+
+The European Commission’s Third Mobility Package (May 2018) launched more ambitious policy
+proposals for wider data access and sharing between transport devices, infrastructure and mobility
+management services.  In the EU attempts to promote data sharing started with the CITS
+(Cooperative Intelligent Transport Systems) programme in the EU, now followed by the CCAM
+(Cooperative Connected and Automated Mobility) programme(EU Commission, 2016).  These
+programmes seek to promote data sharing among automotive and transport service providers with a
+view to develop more efficient transport and mobility systems.  However, there has been no special
+data policy regulation in this area.  An announced European Commission Recommendation on data
+governance in the mobility sector did not materialize so far.
+
+4. Mandatory access to electric vehicle data in China
+
+16 Final report of CITS Working Group 6, European Commission 2016. See
+https://ec.europa.eu/transport/sites/transport/files/themes/its/doc/c-its-platform-final-report-january-2016.pdf
+
+12
+The Chinese government is aware of the significance of New Energy Vehicles (NEV) for the future
+of China’s car industry, and launched a car data sharing initiative as part of its industrial policy in the
+automotive sector (Heller, 2017). While Western car manufacturers have a comparative advantage in
+combustion engines and car mechanics, the Chinese strategy seeks to leap-frog towards the
+development of electric cars that it sees as the most promising future of car technology. Heller
+documents how the Chinese government has taken five measures to boost China’s NEV sector,
+including tax cuts, government subsidies to consumers and car makers, industrial policy measures
+(including “Made in China 2025”), and mandatory government procurement of NEVs (Heller, 2017).
+These policies explicitly seek to boost domestic NEV manufacturers and enable them to compete
+with top foreign players, on domestic and foreign markets(Xinhuanet, 2018)17.   The most important
+law is the 2014 Provisions on the Market Entry of New Energy Vehicles Manufacturers and
+Products,18 which came into force as of July 1st. 2017.19  Article 3 defines NEVs as vehicles “that
+adopt new types of power systems and that are completely or mainly driven by new types of energy,
+including plug-in hybrid, pure electric and fuel cell vehicles, among others.” This national regulation
+makes it compulsory for all NEV manufacturers, both domestic and foreign, to establish their own
+NEV data platform to monitor the security and operating status of their cars. More importantly, these
+monitoring platforms must be connected to and share their data with both national and local
+platforms as a condition for market entry (Art. 17).
+
+The stated objectives of the 2014 law include the promotion of sustainable economic development
+and carbon emission reductions.  However, other applications are legitimate in the law. This includes
+government oversight of NEV technology developments and enhancing product quality and safety
+for Chinese NEV manufacturers, stimulating the adoption of break-through technologies, improving
+public safety and governance such as land planning for charging stations, and combating fraud in
+applications for NEVs subsidies.  Article 18 mandates NEV producers to collect data over each
+NEV’s lifespan, tracking its driving record, repairs and maintenance, and battery use and recycling. It
+is also mandatory under Article 18 to analyse and synthesize the technical status of their NEVs,
+problems and other major issues, and compile annual reports.  Article 22 allows relevant government
+authorities at provincial level to check the NEV monitoring platforms of all manufacturers and
+request reporting of major changes in technology, security risks in production and management, and
+any breaches of the law to the Ministry of Industry and Information (MITT).  The law has caused
+concern from foreign car manufacturers because it may affect their competitive position and
+commercial secrets, as well as privacy protection for drivers (Kinetz, 2018). 20  While they are forced
+
+17 New Energy Vehicles Opening Big Data Age-Energy Field (新能源汽车开启大数据时代 - 能源界), (2018),
+http://www.nengyuanjie.net/article/14442.html (last visited Jul 30, 2019).
+18   The Directive on Facilitating Promoting New Energy Vehicles (Guabanfa 2014-No. 35), and Notice on Financial Support
+for Facilitating New Energy Vehicles 2016-2020 (Jiancai, 2015-No. 35)《关于加快新能源汽车推广应用的指导意见》
+（国办发2014-35号）和财政部、科技部、工业和信息化部、国家发展改革委《关于2016-2020年新能源汽车推广
+应用财政支持政策的通知》（财建2015-134号）
+19 Chinese text available at: https://www.nengapp.com/news/detail/866720 .
+20 In this paper we do not consider the privacy implications of B2G NEV data collection in China.
+The China Cybersecurity Law allows the government to access personal data collected by digital
+services companies at any time.  The NEV legislation makes it easier for the government to look into
+
+13
+to comply with the law in order to gain access to the world’s largest NEV market (O’Kane, 2018),
+some foreign manufacturers stated that they will not send customer’s personal data to NEV data
+centres to protect privacy.21
+
+China also established a national NEV data centre, the New Energy Vehicle Monitoring and
+Managing Platform, located at the National Engineering Laboratory for Electric Vehicles at the
+Beijing Institute of Technology.  This national centre collects NEV data from all local data centres.
+By July 2018,  1.025 million NEVs were connected to the state data platform, which is over half of
+all NEVs in China and not far from the maximum monitoring capacity of the Centre (about 1.6
+million)(Yulan, 2018).  Some provinces, and even lower level municipalities and local governments,
+established their own NEVs data centres to monitor and analyse vehicle data and to connect to the
+national data centre22.   The local government of Shanghai adopted a temporary policy to encourage
+purchase and use of NEVs in 2016, and more permanent rules as from 201823.  As more or less a
+copy of the national regulation, the 2016 policy provided subsidies for NEV owners (both individuals
+and institutions)  up to 50% of the purchase price. According to Articles 8(2) and 9, subsidies are
+conditional on a remote real-time connection to transfer vehicle data to Shanghai’s NEV data centre.
+Article 9 explains the legal status of the Shanghai Electric Vehicle Development Centre (SHEVDC)
+as an independent institute in charge of establishing Shanghai’s NEV data platform for data
+collection and monitoring, management and operation, data research and information distribution,
+etc.  The data are collected and analysed for the purposes of the government’s oversight, promotion
+and deployment of NEVs, and improving public policies and public services (Yulan, 2018).
+SHEVDC’s responsibilities include: 1) collect data related to NEVs in Shanghai and provide security
+monitoring for NEV promotion; 2) conduct customer behaviour analysis and battery health research;
+3) provide consulting support for NEV promotion, policy making and evaluation, and complementary
+infrastructure planning;  4) establish the Shanghai NEV Data Open Innovation Laboratory and
+explore open data innovations; 5) actively conduct domestic and international cooperation and
+exchange, and build a professional, open and integrated platform for cooperation and exchange24.
+The Centre cannot carry out any for-profit activities connected to the data processing without
+permission of car manufacturers (Article 9 of Shanghai’s 2016 NEV temporary Policy).  The Centre
+has been incorporated into a larger local industrial project by Shanghai Municipality “Xiaozheng
+Strategy” that aims to develop a world-class open data and innovation centre.   Five university data
+
+personal data collected by NEVs because they are centralised on a government-operated server.
+However, the legislation does not fundamentally change government access to personal data.
+21 For instance, Volkswagen said that it ensures protection of personal data such as the identity of the drive, with its own
+systems and claimed that cars would not give away more information than smartphones (SPIEGEL, 2018).
+22  For instance, the provincial capital city of Chengdu makes it mandatory for NEV manufacturers to connect their cars after
+sale to a local monitoring platform, transferring real-time data for 70 items in NEVs. See: A Notification on Connecting
+NEVs and Charging Facilities in Chengdu to Municipal Minotoring Platform 2018 ( 关于成都市新能源汽车及充电设施接
+入市级监测监管平台的通知-文件- 成新汽办〔2018〕10号), at:
+http://gk.chengdu.gov.cn/govInfoPub/detail.action?id=101312&tn=6 (last visited Aug 1, 2019).
+23  2016 A Temporary Policy of Shanghai on Encouraging Purchase and Use of NEVs (上海市鼓励购买和使用新能源汽
+车暂行办法(2016年修订)),   at: http://www.nengyuantoutiao.com/xinnenyuanqiche/20200315/24695.html.
+24See the Center’s website, at: https://www.shevdc.org/zyzn.jhtml
+
+14
+labs and one state-owned local data centre joined the project to set up a data innovation lab within the
+Centre.
+
+The Centre currently collects 44 static data points for each car25, including information on car
+models, registration number, chassis and vehicle identification number, engine and battery types and
+fuel use, mechanical malfunction codes, E-engines and batteries, etc. Furthermore, it collects 61 real
+time dynamic data points  and 19 locally defined real-time data points, covering car navigation,
+engines, batteries, energy consumption, charging status,  alarms in the electric system, etc.  While the
+data do not go down to the level of all individual mechanical and electrical components, key
+components can be identified because the type and brand name of components used in each vehicle
+model are known.  The identities of cars and parts manufacturers are identifiable in the dataset.
+
+The Centre compiles basic analytics of NEV use, including charging and energy consumption
+patterns (Hai, 2017).  It can also provide tailored research reports upon request on market monitoring
+and other special topics, for instance on the second hand NEV market, charging points and charging
+patterns, user behaviour patterns, etc.26  The Centre has a data lab where researchers can access the
+collected data subject to certain conditions27. In principle, any researcher including car
+manufacturers, can access the data provided that permission is granted by the Centre. Access is
+allowed to anonymized data upon payment of a fee28.  The Centre has also organised research
+competitions, for instance to study the performance of batteries, that was open to all university
+researchers29.
+
+According to the Centre’s website, it has published a series of annual reports on NEV use in
+Shanghai (2017 & 2018),30 on Shanghai’s NEVs market characteristics and customer behaviour
+(2014 & 2016), on the state of charge of batteries in NEVs, including the length, time, and charging
+locations, and driver’s charging habits,  on designing and planning of charging stations, and a report
+on consumer awareness and experiences (2015). One report found that for 48% of purely electric cars
+the cruising radius is less than 200 kms31. Besides, the open data competitions will have produced
+research reports that are not published.   The Centre asserts that data are processed with privacy
+
+25 All information is available at SHEVDC’s website, see: http://www.shevdc.org/sysbtp06.jhtml
+26https://www.shevdc.org/sysbtp06.jhtml
+27 Researchers cannot take such data away from the Lab. See the brief introduction by the Centre, at:
+https://www.shevdc.org/sysbtp06.jhtml
+28 The meaning of “anonymization” is ambiguous here.  The identity of the car and driver can be eliminated from the data,
+but any navigation data will usually reveal the home address and regular routes and destinations of the drivers.  Complete
+anonymization would thus require eliminating navigation data.
+29 University Battery Research Open Competition Result Released (高校电池数据研究团队招募结果公布) - SHEVDC |
+上海市新能源汽车公共数据网,  SHEVDC (2019), at: https://www.shevdc.org/laws1/1935.jhtml (last visited Jan 7, 2020).
+The National NEV Data Center at Beijing Institute of Technology organized a similar open competition on NEV data in
+2019  (called NCBDC) focusing on data analysis and algorithms innovation, at:  China’s NEV Big Data Research Report
+Released (新能源汽车大数据研究报告发布), , CHINASCIENCENET (2019),
+http://news.sciencenet.cn/sbhtmlnews/2019/8/348866.shtm (last visited Jan 7, 2020).
+30 See: http://www.shevdc.org/report/original_report/.
+
+15
+protecting measures for these studies32.    We found only one academically published research paper
+that cites the Centre’s research reports as sources (Yang et al., 2018).   It is not clear how the Chinese
+government has used NEV data for economic policy making in the public interest at local or national
+level. While the technical implementation of the central data system seems to be operational, the
+actual use of the data to promote an efficient competition, innovation and welfare-enhancing
+ecosystem is somewhat shrouded in mystery, which is not a rare thing considering the long tradition
+of non- transparency in Chinese bureaucracy.    There are few signs of efficient use of the data pool
+for social welfare and innovation enhancing policies.   Of course, it is equally conceivable that the
+authorities do not give much publicity to technical innovation initiatives, while the collected data
+have been used in secret ways, unknown to the public.
+
+5. The potential economic implications of the NEV database
+
+In this section, we examine the potential economic impact and welfare gains that could be achieved
+through mandatory B2G car data sharing.  We start by pointing out a peculiar economic characteristic
+of non-rival digital data, economies of scope in aggregation of complementary datasets. We argue
+that these externality benefits from data sharing are unlikely to occur in private car data markets
+where data remain confined in manufacturers’ silos. This may constitute a market failure that would
+justify regulatory intervention in the form of mandatory data sharing, similar to the conditions that
+the Chinese government is imposing on car manufacturers.  Data pooling creates a new problem: how
+to allocate the welfare gains from these informational externalities. We discuss two scenarios. The
+first scenario revolves around the production of innovative technologies that are privately
+appropriable by car manufacturers.  In the second scenario, welfare gains dissipate in society through
+the production of pure public goods that cannot be privately appropriated: emission reductions and
+environmental improvements. These two scenarios are explicitly mentioned as policy objectives for
+China’s NEV policy.   The spill-over effects of each of these scenarios beyond Chinese firms and
+consumers are also discussed.
+
+5.1. Economies of scope in data aggregation
+
+Cars are rival goods, like any other good. Cars can only be driven by one driver at the time on one
+route.  Contrary to rival goods data are non-rival.  They can be used for many purposes at the same
+time.  Their use for one purpose does not affect their use for another purpose.  If cars would be non-
+rival, many drivers could use the same car to drive on different routes at the same time.  Cost savings
+would be enormous.  It would suffice to build one car to satisfy the needs of all drivers.  That is
+precisely the promise of non-rival data: they can be used for many purposes at the same time.  For
+example, car data can be used to monitor technical performance and produce efficiency gains in
+maintenance services, improve the technical quality of cars and strengthen the manufacturer’s
+
+32See: http://www.shevdc.org/laws1/1910.jhtml .  (Note: privacy protection means privacy of the driver, not
+the private interests of the manufacturer of the car)
+
+16
+competitive position in the car sales market Martens and Mueller-Langer, 2020; Kerber and Frank,
+2017).  For this reason, non-rivalry is usually associated with economies of scope in re-use of the
+same source for different purposes (Panzar and Willig, 1981; Teece, 1980)
+
+However, a peculiar economic characteristic of non-rival data is that, on top of economies of scope in
+re-use, non-rival data may generate additional economies of scope in data aggregation.  These occur
+because the value of the insights that can be obtained from merging two complementary datasets is
+greater than the sum of the values of insights obtained from separate datasets.  Keeping
+complementary datasets in separate silos entails a loss of knowledge or insights that can be extracted
+from the data (Martens et al, 2020).  Economies of scope in the aggregation of complementary data
+can be traced back to the economics of learning and division of labour (Rosen, 1983).  When two
+datasets are complementary and not entirely separable, applying data analytics – the equivalent of
+learning –  to the merged set will yield more insights and be more productive than applying it to each
+set separately, especially when the marginal cost of applying analytics to a more complex dataset is
+relatively small.  In the case of car data for example, the aggregation of mechanical and electrical
+performance data across car models and brands would produce better insights into the performance of
+different makes and models of batteries and electrical engines, and the overall electro-mechanical
+architecture of different car models, than keeping the data in separate pools for each manufacturer.
+
+5.2. Using pooled car data to promote industrial innovation
+
+The benefits of economies of scope in data aggregation or data pooling between car manufacturers
+are unlikely to occur in a free market setting.  Manufacturers of cars and parts invest in innovation to
+become more competitive and attractive to consumers. Industrial designs and technological
+innovations are non-rival but they can be made excludable, either because they are protected by
+Intellectual Property Rights (IPR, i.e. patents, trademarks, copyright) and/or by asymmetric
+information between competing firms, or by trade secrets.  IPR enable manufacturers to reap the
+innovation rents.   IPR exist to keep a balance between private technology rents and spill-over effects
+to promote innovation.  Although competitors can at least partially observe the technical construction
+of cars and parts, they cannot use this information for commercial purposes. While parts in cars are
+observable for all, the performance of these parts in response to driver behaviour is not readily
+observable or testable in laboratory settings. Digital sensors make it possible to collect that
+information in vivo. This brings faster and more fine-grained feedback to manufacturers to improve
+car design.  Centralizing the data on manufacturers’ servers provides them with exclusive access to a
+performance overview of all cars and parts from their own brand.  They may share some of the
+insights with parts producers to improve the performance of parts.  But they will not share it with
+competing car manufacturers because it erodes their technology rents and may be used against them
+and increase competitive pressure in their markets. Manufacturers know the true performance of their
+cars and parts but not of other cars and parts from other brands. This reduces technology spill-over
+effects and competition in the car market. It results in underinvestment in innovation by
+manufacturers and slows the pace of innovation.
+
+17
+There is consumer demand for better-performing NEVs.  However, incomplete information on the
+performance of cars prior to a purchase may steer consumers towards sub-optimal choices.  They can
+only use general and more subjective car tests in consumer periodicals for example to fill up their
+technology information gaps.  This preserves commercial confidentiality and technology rents for
+manufacturers but lowers competitive pressures, resulting in welfare losses for society.  Many
+technological improvements will therefore remain pure externalities that cannot be monetized by the
+manufacturer through higher prices and sales because the consumer is not aware. At the same time,
+technology laggards may monetise inferior technology through consumer sales.  Manufacturers have
+better information thanks to digital data but cannot credibly signal this to consumers.  They have an
+incentive to exaggerate benefits and understate consumer or social costs33 to strengthen their market
+position and consolidate rents from existing technologies. This leads to adverse selection by
+consumers who will make errors in selecting the car that best matches their technology preferences
+and budget constraints.
+
+Withholding all this information creates information fiction problems in the car market, both for
+consumers and manufacturers.  This is a well-known source of market failure34.  Sharing and pooling
+this information could reduce frictions in markets caused by incomplete, imperfect and asymmetric
+information.  That could boost welfare effects from innovation spill-over’s between competitors,
+speed up innovation and make better-performing technologies more widely and rapidly available.
+Information frictions may be more important even in a fast-moving technology domain like NEVs
+and may lead to more sub-optimal choices by manufacturers and consumers.  It may hold back the
+pace of innovation.
+
+To be sure, the same asymmetric information problem existed in pre-digital car markets and in non-
+electric vehicles.  The arrival of digital data makes it potentially easier to address the problem by
+taking car performance data out of manufacturers' silos into a pool operated by a third party that can
+credibly measure the technical and environmental performance of various NEV models and
+components in a more objective way.  This requires government intervention and mandatory data
+sharing.  A more fundamental question is how far regulators can go in imposing data sharing costs on
+private stakeholders with a view to improve overall welfare for society.  Two different economic
+welfare concepts come into play here: Pareto-optimal policy making versus Kaldor-Hicks policy
+making35.  In the Pareto case, no individual should be made worse off as a result of a policy decision.
+Individuals have the right to defend themselves against government intrusion in their private welfare,
+unless. In the Kaldor-Hicks case, some individuals can be made worse off as long as the overall
+benefit for society increases such that society could, at least theoretically, compensate the losers
+while still keeping a net benefit for society as a whole.  The fine line that separates the two
+approaches in precisely in the policy process that determines how to deal with winners and losers.
+
+33 See for example the VW diesel-gate emissions scandal.  See https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal
+34 The European Commission’s “Better Regulation Toolbox” (2017) identifies asymmetric information as a cause of market
+failure that may require regulatory intervention.
+35 For more explanations, see for example
+https://www.oxfordreference.com/view/10.1093/oi/authority.20110803100028833
+
+18
+China seems to have chosen a top-down approach with a government-imposed regime, while the EU
+prefers a bottom-up approach that seeks a consensus among stakeholders.
+
+How are the benefits from economies of scope in data aggregation and the innovation spill-over
+effects allocated between car manufacturers?  In theory, innovation benefits can be privately
+appropriated by car manufacturers through IP and trade secrets, or they can be shared as public
+knowledge by some or by all.  That depends on access conditions to the data pool.
+
+The Chinese government has designated the Beijing Institute of Technology as the national institute
+that aggregates the data from all regional NEV data centres.  Only the national institute and the local
+data centres have full access to the data. The Shanghai data centre has established research
+agreements with local university labs that oversee the use of the data and can carry out technological
+studies with the data. From current publicly accessible data, it is not clear to what extent these
+research institutes collaborate with NEV manufacturing firms and give them direct access to the data
+or indirectly share technology insights obtained from analysing the data pool in order to help them
+improve their technologies and the quality of their cars.
+
+We have found announcements of research competitions with open access to the datasets.  Moreover,
+according to the data access rules, any researcher could use the data upon payment of a fee. One
+could also imagine a scenario whereby data sharing is extended to all automotive parts and
+components suppliers and aftermarket service providers, or full data sharing across all firms involved
+in the NEV industry ecosystem. The governmental NEV data institutes would then serve as a conduit
+to achieve full B2B NEV data sharing.  This scenario would further increase competitive pressures in
+the NEV industry and accelerate the pace of innovation at the level of components suppliers.  The
+benefits from successful innovations in engines, batteries and other key NEV technologies would
+rapidly spill over to competitors.
+
+It is important to underline the possible negative effects of full NEV B2B data sharing or innovation
+sharing.  Accelerating the pace of innovation also accelerates the rate of depreciation of capital stock
+and intellectual property invested in older technologies. This increases investment costs for car
+manufacturers as well as buyers. To the extent that drivers want to keep up with technological
+innovation, it increases the private capital replacement cost for driver and car owners.  The benefit
+for manufacturers would be increased sales of newer and better-performing models.  A gap may
+occur between the private and socially optimal rate of innovation in society.  As society faces the
+risks of climate change, faster technological progress in emission reduction is desirable and may be
+subsidised by governments.  There is little risk in this case that the desirable socially optimal rate of
+innovation is lower than the private rate and cost of innovation.
+
+We have not found any published reports that document technological innovations extracted from the
+data pools or government-to-industry data sharing policies.  Given the stated objective of the NEV
+law that explicitly seeks to promote industrial innovation in NEVs, and given the strong interaction
+between universities and domestic industries in China, selective and secretive information sharing
+and spill-overs to NEV manufacturers is a more likely scenario.
+
+19
+In line with the objective of the law, it is not clear whether domestic NEV manufacturers get
+privileged access to the data and research findings. Neither is it clear whether foreign car
+manufacturers could be excluded in order to create a competitive advantage for China’s domestic
+manufacturers who could then leverage this advantage in global NEV car markets, putting pressure
+on foreign manufacturers globally.  In other words, there is the possibility that B2G data pool
+operator may act in a non-neutral and discriminatory way, giving some parties privileged access to
+the data.  This mechanism could be used to select "domestic industry champions" and increase data
+regime competition between Chinese and EU/US NEV manufacturers.  The feasibility of such a
+discriminatory approach depends on technology transfers in joint ventures in car manufacturing.
+Almost all major EU (and US) car manufacturers have joint ventures with local Chinese
+manufacturers.  Joint ventures have many ways of allowing or blocking technology transfers and
+spill-overs between the partners.  There is a long history of technology transfers between foreign and
+domestic Chinese care manufacturers (Gallagher, 2016) . Even after China lifted foreign ownership
+restrictions on domestic joint ventures in the car industry (Buckland, 2018), there are still many
+possibilities to block technology transfers and turn data-driven innovations into private intellectual
+property that domestic firms can license to foreign manufacturers.  At the moment, we have no
+information if data accessible from the platform may be  transferred outside  China by  joint
+adventures for global use. If there would be no obstacles to technology transfers, NEV data and
+knowledge would spill over and accelerate innovation among all EU and US car manufacturers who
+have joint venture agreements with Chinese firms.  Since EU (and US) manufacturers have factories
+all over the world, they can transfer the knowledge gained in China to all their factories.  This would
+create a global level playing field in NEV manufacturing and disseminate the welfare effects from
+the China NEV data pool worldwide.  It would eliminate the use of data regimes as a tool for
+industrial competition between China and the EU, or the US for that matter.
+
+In conclusion, the effectiveness of data regime competition depends on the degree of technology
+transfers between domestic and foreign manufacturers and the extent to which the data centres are
+neutral or biased intermediaries that favour domestic researchers and manufacturers.  This will
+require more research and field work.
+
+5.3. Using the data to improve the environmental performance of cars and drivers
+
+This brings us to the use of NEV data for the production of pure public goods such as clean air and
+lower carbon emissions from traffic, an objective that is explicitly mentioned in China’s NEV policy.
+In this case, the positive externalities from economies of scope in data aggregation are dissipated into
+public environmental goods that are non-rival and non-excludable: everyone benefits from it and
+nobody can be excluded from these benefits.  They cannot be privately appropriated by car
+manufacturers or drivers.  Pure public goods normally result in free-riding: nobody wants to pay for
+the cost of emission reduction and everyone benefits from it.
+
+A simple way to overcome this problem is to incentivize private consumers by means of a lump sum
+subsidy for the purchase of NEVs with electric or hybrid engines.  This is what the Chinese
+
+20
+authorities have done in Shanghai and other cities. Local subsidies run the risk of fraudulent use by
+consumers living outside the local area, or fraudulent NEV manufacturers that produce poorly
+performing and environment unfriendly NEVs to benefit from state subsidies.  One of the purposes of
+the NEV database was to set up a system to monitor the effective use of subsidized NEVs in
+Shanghai, to avoid fraudulent subsidy claims. It combines car registration with navigation data
+collected by build-in navigation systems that are a standard feature of modern cars.  This requires
+mandatory B2G navigation data sharing.  However, it does not explicitly involve any economies of
+scope in data aggregation across NEVs since each vehicle is checked individually.
+
+Pooled NEV data could be used however to set up more sophisticated incentive systems to promote
+the use of electric cars.  Data pooling across all NEV manufacturers enables more fine-grained
+monitoring of the entire NEV fleet in a city.  The aggregated data can reveal differences in
+performance between car models, technologies and components used in the vehicle.  Better
+performing cars can be identified and receive a higher subsidy36.  The variable subsidy would
+constitute a credible financial signal to buyers about the environmental quality of the vehicle. For car
+owners and drivers this information could increase transparency and reduce asymmetric information
+in the car market, and help them make more informed choices. It puts pressure on car producers to
+improve the quality of cars and kick poorly performing models out of the subsidy system.  It would
+reinforce feedback from the car aftermarket to the car sales market and thereby validate the so-called
+“Chicago critique” of efficient consumer behaviour that separates the two markets (Posner, 1979).
+Governments can use the information to promote competition between manufacturers, design more
+efficient and mandatory technical standards, and put in place better emission reduction policies and
+technologies.  While manufacturers cannot monetize the positive externalities from better
+environmental policies, or only partially so, society as a whole, benefits from this, although possibly
+at the expense of individual manufacturers.  This requires data pooling and economies of scope in the
+insights extracted from the pooled data.
+
+Moreover, the variable subsidy could take into account the driver’s behaviour, such as maximum use
+of the electric motor in hybrid vehicles, energy-conscious driving when the petrol engine is on, and
+avoidance of rush-hour traffic jams37.   This application would not require data pooling across cars.
+Other data pooling applications include tracking congestion in cities, especially when the density of
+NEVs would increase.  One could argue that this is an expensive duplication effort of data already
+collected by navigation apps.  However, NEV data include additional electro-mechanical parameters
+not usually available in navigation apps, such as the use of electric engines and batteries.  One study
+used the pooled NEV car dataset to estimate the best locations for battery charging stations as public
+facilities(Yang et al., 2018: 20–30).  Apart from this study however, we have found little evidence
+that the data are effectively used to improve and implement environmental policies.  While use of the
+data for technical innovation in the NEV industry can remain hidden, use for public policy purposes
+should be visible.
+
+36 It could also help to avoid fraud in emission reporting by manufacturers, as in the case of the
+Dieselgate scandals. https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal
+37 This is similar to tracking devices by car insurance companies that offer lower insurance
+premiums for safe driving behaviour.
+
+21
+
+6. Conclusions
+
+This paper examines a case of data regime competition. It studies a policy initiative in China that
+makes B2G sharing of  NEV usage data mandatory.  The policy seeks to achieve three objectives:
+prevention of fraud in NEV subsidy applications, the acceleration of innovation in NEV technologies
+in China’s car industry, and the promotion of clean car technologies for environmental purposes.
+The EU pursues similar policy objectives but has so far shied away from mandatory B2G car data
+sharing, except in a few minor cases related to road safety.  EU car manufacturers are resisting any
+measures that might erode their exclusive control over car data, as demonstrated by earlier attempt
+under the EU CITS policy, though some EU industry voices have raised the idea to create a “neutral
+server” to pool car data38.. Mandatory B2G data pooling policy would be perceived as excessively
+interventionist in the EU political economy context that puts more emphasis on industry self-
+regulation and market-driven initiatives to promote technical standards for data sharing, though often
+supported by government subsidies and policy coordination initiatives.  Regulatory intervention is
+possible only in the case of clearly demonstrated market failures. In contrast, the state is a dominant
+player in the Chinese economy and actively intervenes in markets and firms in many ways, far
+beyond what would be politically feasible in the EU.  Paradoxically however, mandatory B2G data
+sharing for the purpose of promoting innovation may be a case of data market failure that could
+justify regulatory intervention.
+
+Data pooling exploits a peculiar economic characteristic of data:  it can generate beneficial welfare
+effects by means of economies of scope in data aggregation. More insights can be obtained from the
+analysis of pooled data, compared to keeping data in manufacturers’ data silos.  Data segmentation
+between car brands creates information friction in car markets and markets for innovative
+technologies, as a result of imperfect and incomplete information and information asymmetries.  That
+slows down innovation.  Mandatory B2G data pooling can potentially overcome inherent B2B data
+market failures that inhibit the realisation of economies of scope in data aggregation. From this
+perspective, the Chinese government’s mandatory B2G data sharing policy initiative is in line with
+traditional market failure criteria for regulatory intervention, including those advocated by the EU39.
+
+We find that this form of data regime competition between China and the EU can give China an
+advantage in terms of promoting  innovation in the electric car industry, especially when there can be
+potential discrimination between domestic and foreign NEV manufacturers in terms of access to the
+data and the knowledge derived from the data.  To what extent this is true is difficult to detect and
+would require further research and field work on access to innovation in joint ventures in China’s car
+industry.
+
+38 See for example the position of the International Automobile Federation on car data sharing,
+https://www.fiaregion1.com/wp-content/uploads/2017/05/20160412fia_policy_brief_on_car_connectivity_fin.pdf
+39See for example European Commission “Better Regulation Toolbox” (2017).
+
+22
+
+The EU has been working for several years on data access and sharing policy initiatives40. All these
+initiatives are explicitly or implicitly based on welfare gains from economies of scope in data
+aggregation and re-use. Regulatory intervention is required because private data holders have no
+incentive to share their data and prefer to keep their data  in inaccessible silos.  Most recently, the
+European Commission proposed a Data Governance Act that seeks to enable common European data
+spaces (European Commission, 2020).  EU-promoted but privately run third-party industrial data
+pools have come up in the context of AI innovation policy initiatives. While the objectives are
+broadly similar, the political process to achieve them is different. China goes for a top-down
+government initiative, while the EU prefers a more bottom-up industry-driven approach.    The EU
+approach is slower because of conflicting interests between private stakeholders that create market
+failures and obstacles to collective action and the realisation of societal welfare goals.  The Chinese
+approach is faster in creating the data pool but shows signs of underperformance in the actual use of
+these advantages.
+
+40An overview of EC data policy initiatives over the last couple of years can be found here:
+https://ec.europa.eu/digital-single-market/en/data-policies-and-legislation
+
+23
+Bibliography
+Buckland K (2018) Chinese Carmakers Under Pressure as Joint-Venture Caps Erased.
+Bloomberg.com, 18 April. Available at: https://www.bloomberg.com/news/articles/2018-04-
+18/tesla-bmw-unshackled-from-jv-era-puts-china-carmakers-on-notice (accessed 1 December
+2020).
+Budzinski O (2008) The Governance of Global Competition: Competence Allocation in International
+Competition Policy. Edward Elgar Publishing.
+European Commission (2016) Cooperative, connected and automated mobility (CCAM). Available
+at: https://ec.europa.eu/transport/themes/its/c-its_en (accessed 30 November 2020).
+European Commission (2020) Data governance and data policies at the European Commission.
+Available at: https://ec.europa.eu/info/publications/data-governance-and-data-policies-
+european-commission_en (accessed 1 December 2020).
+Gallagher, K. S. (2016) “Foreign Technology in China’s Automobile Industry”, China Environment
+series nr 6.
+Hai X (2017) Three Chinese Ministries Issued Notices to Promogulate ‘The (Trial) Regulation on
+Smart Connected Car Road Test’ ( 三部委关于印发《智能网联汽车道路测试管理规范（试
+行）》的通知). Available at:
+http://www.miit.gov.cn/n1146295/n1652858/n1652930/n3757018/c6128243/content.html
+(accessed 2 May 2018).
+Heller  Marika (2017) Chinese Government Support for New Energy Vehicles as a Trade
+Battleground. In: The National Bureau of Asian Research (NBR) . Available at:
+https://www.nbr.org/publication/chinese-government-support-for-new-energy-vehicles-as-a-
+trade-battleground/ (accessed 31 July 2019).
+Horwitz J (2018) Zuckerberg’s talking points: Breaking up Facebook ‘strengthens Chinese
+companies’. Available at: https://qz.com/1249660/zuckerbergs-senate-talking-points-
+breaking-up-facebook-strengthens-chinese-companies/ (accessed 23 July 2019).
+Kerber, Wolfgang and Frank, Jonas, Data Governance Regimes in the Digital Economy: The
+Example of Connected Cars (November 3, 2017). Available at SSRN.
+Kinetz E (2018) In China, your car could be talking to the government. Available at:
+https://apnews.com/4a749a4211904784826b45e812cff4ca (accessed 19 December 2018).
+Layton R (2019) The 10 Problems of the GDPR: The US can learn fromthe EU’s mistakes and
+leapfrog itspolicy. March. Available at:
+https://www.judiciary.senate.gov/imo/media/doc/Layton%20Testimony1.pdf.
+Lomas N (2018) Zuckerberg urges privacy carve outs to compete with China. In: TechCrunch.
+Available at: http://social.techcrunch.com/2018/04/10/zuckerberg-urges-privacy-carve-outs-
+to-compete-with-china/ (accessed 23 July 2019).
+Luo Y, Yu Z and Shepherd N (2019) China Seeks Public Comments on Draft Measures related to the
+Cross-border Transfer of Personal Information. Available at:
+https://www.insideprivacy.com/international/china/china-seeks-public-comments-on-draft-
+measures-on-security-assessment-for-the-cross-border-transfer-of-personal-information/
+(accessed 28 July 2019).
+Marginson P (2006) Between Europeanisation and Regime Competition: Labour Market Regulation
+following EU Enlargement . WARWICK PAPERS IN INDUSTRIAL RELATIONS,
+February. Available at:
+https://www.academia.edu/17161806/Between_Europeanisation_and_Regime_Competition_
+Labour_Market_Regulation_following_EU_Enlargement (accessed 30 November 2020).
+
+24
+Marginson P and Sisson K (2004) European Integration and Industrial Relations: Multi-Level
+Governance in the Making. Springer.
+Martens, Bertin, Frank Mueller-Langer, Access to digital car data and competition in aftermarket
+maintenance services, Journal of Competition Law & Economics, Volume 16, Issue 1, March
+2020, Pages 116–141
+Martens, Bertin & Alexandre de Streel & Inge Graef & Thomas Tombal & Nestor Duch-Brown,
+2020. "Business-to-Business data sharing: An economic and legal analysis," JRC Working
+Papers on Digital Economy 2020-05.Maslauskaite K (2013) Social Competition in the EU:
+Myths and Realities. In: Institut Jacques Delors. Available at:
+https://institutdelors.eu/en/publications/social-competition-in-the-eu-myths-and-realities-3/
+(accessed 30 November 2020).
+McDowell M and Thom R (1999) Eastern Europe: the EU’s frontier – incorporation or regime
+competition? Journal of Economic Studies  26(4/5): 383–403. DOI:
+10.1108/01443589910284930.
+Obinger H and Schmitt C (2011) Guns and Butter? Regime Competition and the Welfare State
+during the Cold War. World Politics 63(02): 246–270. DOI: 10.1017/S0043887111000025.
+O’Kane S (2018) Automakers give the Chinese government access to location data of electric cars.
+Available at: https://www.theverge.com/2018/11/30/18120148/car-companies-china-location-
+data-electric-cars-mercedes-tesla (accessed 30 November 2020).
+Panzar J. and R. D. Willig (1981) Economies of Scope, American Economic Review 71(2), 268-272.
+Posner R (1979) The Chicago School of Antitrust Analysis. University of Pennsylvania Law Review
+127(4): 925.
+Roberts H, Cowls J, Morley J, et al. (2020) The Chinese approach to artificial intelligence: an
+analysis of policy, ethics, and regulation. AI & SOCIETY. DOI: 10.1007/s00146-020-00992-
+2.
+Sherwin Rosen, ‘Specialization and Human Capital’ (1983) Journal of Labour Economics vol 1(43).
+Simmel G (1906) The Sociology of Secrecy and of Secret Societies. American Journal of Sociology
+11(4): 441–498.
+SPIEGEL D (2018) Datenschutz: Deutsche Autobauer liefern Fahrdaten an chinesische Regierung -
+DER SPIEGEL - Mobilität. Available at: https://www.spiegel.de/auto/aktuell/volkswagen-
+bmw-daimler-liefern-daten-an-china-a-1241698.html (accessed 30 November 2020).
+Teece D. (1980) Economies of scope and the scope of the enterprise, Journal of economic behaviour
+and organisation, 223-247.
+Tiebout CM (1956) A Pure Theory of Local Expenditures. Journal of Political Economy 64(5): 416–
+424. DOI: 10.1086/257839.
+Xinhuanet (2018) The Coming of Big Data Age of New Energy Cars (新能源汽车开启大数据时代
+). Available at: http://www.xinhuanet.com/fortune/2018-07/29/c_1123190912.htm (accessed
+29 August 2019).
+Yang J, Dong J, Zhang Q, et al. (2018) An Investigation of Battery Electric Vehicle Driving and
+Charging Behaviors Using Vehicle Usage Data Collected in Shanghai, China. Transportation
+Research Record 2672(24): 20–30. DOI: 10.1177/0361198118759015.
+Yulan L (2018) New Energy Vechiles Opening Big Data Age (新能源汽车开启大数据时代).
+Available at: http://epaper.gmw.cn/gmrb/html/2018-07/29/nw.D110000gmrb_20180729_1-
+04.htm (accessed 30 November 2020).
+Zhang G and Yin K (2020) A look at China’s draft of Personal Data Protection Law. Available at:
+https://iapp.org/news/a/a-look-at-chinas-draft-of-personal-data-protection-law/ (accessed 25
+November 2020).
+
+25
+Zhang ZY (2019) China’s SOE Reforms: Assessing Their Impact on the Market. Available at:
+https://www.china-briefing.com/news/chinas-soe-reform-process/ (accessed 25 November
+2020).
+
+26
+
+27
+
+.
+
+.
+
+28

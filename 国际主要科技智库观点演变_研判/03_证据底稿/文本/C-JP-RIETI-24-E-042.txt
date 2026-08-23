@@ -1,0 +1,2040 @@
+%1
+RIETI Discussion Paper Series 24-E-042
+The Welfare Effects of Government Intervention into the
+Licensing of Standard-essential Patents: An analysis of the
+Chinese smartphone and SoC markets
+WATANABE, Mariko
+Gakushuin University
+KUBO, Kensuke
+Keio University
+The Research Institute of Economy, Trade and Industry
+https://www.rieti.go.jp/en/
+
+RIETI Discussion Paper Series 24-E-042
+March 2024
+
+The Welfare Effects of Government Intervention into the Licensing of
+Standard-Essential Patents:
+An Analysis of the Chinese Smartphone and SoC Markets *
+
+Mariko WA TANABE
+Gakushuin University
+
+Kensuke KUBO
+Keio University
+
+Abstract
+The licensing of standard -essential patents ( “SEPs”) in the cellular communications field has been a
+contentious issue. In particular, Qualcomm’s licensing policies for cellular communication standards have
+been the subject of several lawsuits and episodes of government intervention. We evaluate the impact of
+the most drastic intervention to date: the Chinese government's 2015 decision to forcibly lower Qualcomm
+royalty rates by 1.23 – 1.75 percentage points . Using a simple theoretical model, we argue that such an
+intervention could have ambiguous effects on consumers. To quantify the policy's impact, we construct a
+structural econometric model of the Chinese smartphone and SoC markets which allows for strategic
+pricing in the two vertically-related markets. Counterfactual analysis using the estimated model allows us
+to quantify the intervention’s impact on smartphone manufacturers' marginal costs and product prices. Our
+simulation results indicate that the intervention caused an unequivocal i ncrease in smartphone
+manufacturers' marginal costs (1.1 percent on average). However, this was more than offset by smartphone
+manufacturers' incentive to lower their prices under the reduced royalty rate, leading to a slight reduction
+in smartphone prices  (0.6 percent on average) . Taken together, these results suggest that the Chinese
+government's intervention had the intended effect on social welfare, although its magnitude was fairly
+limited.
+
+Keywords: Patents, Competition Policy, Vertical Restraints, Semiconductor Industry, China
+JEL classification:
+ L42 L63  O34
+
+The RIETI Discussion Paper Series aims at widely disseminating research results in the form of professional
+papers, with the goal of stimulating lively discussion. The views expressed in the papers are solely those of
+the author(s), and neither represent those of the organization(s)  to which the author(s) belong(s) nor the
+Research Institute of Economy, Trade and Industry.
+
+*This study was conducted as a part of the “Global Intelligence Project” undertaken at the Research Institute of
+Economy, Trade and Industry (RIETI). A draft of this paper was presented at the RIETI DP Seminar for this paper.
+We would like to thank participants of the RIETI DP Seminar for their helpful comments. This study utilizes the
+GfK China Smartphone Market Audit Data which was provided by RIETI (for 2011-2014) and Japan Scientific
+Promotion Research Fund (No.17K18567 and 21K18442, represented by Watanabe, for 2015-2018).
+
+1 Introduction
+Technology standards have played an important role in the development of high-tech industries in
+which key innovations are realized by multiple entities. By coalescing around a specific standard,
+different firms can develop products and services that are compatible with each other, generating
+significant benefits to consumers. However, when multiple entities contribute to the development of
+a single standard, the issue of how to compensate each innovator arises. To avoid potential problems
+of hold-up and “royalty stacking” – the phenomenon where each patent holder sets its profit-maximal
+royalty rate and the summed royalty rate becomes prohibitively high – standard-setting organizations
+have required contributing innovators to commit to licensing their standard-essential patents (“SEPs”)
+on a fair, reasonable, and non-discriminatory (“FRAND”) basis.
+In the area of cellular communication, the actual meaning of FRAND has often been the subject of
+legal dispute between SEP holders and the implementers of patented technology. One of the most high-
+profile of these disputes, playing out in multiple jurisdictions over many years, involves Qualcomm and
+its SEPs for cellular communication standards. Qualcomm has held a unique position in this industry,
+as both the largest owner of SEPs and a leading supplier of microchips that enable cellular handsets
+(smartphones and feature phones) to connect to cellular networks. 1 These microchips include both
+standalone modem chips (called “baseband processors”) and System-on-Chips (“SoCs”), which are
+integrated circuits that combine a modem with various other functions. 2
+Qualcomm’s opponents have accused the firm of charging supra-FRAND royalties for its SEPs by
+(i) refusing to license its SEPs to other chipmakers, instead collecting royalties from handset manu-
+facturers regardless of whether or not they use Qualcomm-made chips; and (ii) employing a coercive
+“no chips, no license” policy which made it difficult for handset manufacturers to dispute Qualcomm’s
+licensing terms. According to the Federal Trade Commission (“FTC”), which sued Qualcomm in
+2017, Qualcomm’s elevated royalty rates caused handset prices to increase, thereby causing harm to
+consumers.3
+This paper is motivated by the question of whether Qualcomm’s licensing practices actually harmed
+consumers through higher handset prices. As we show using a simple vertical oligopoly model where
+a supplier of components charges a royalty to manufacturers of the final product, raising the royalty
+rate can either increase or decrease the final product price. This is because the increase in royalty
+rate has two competing effects: (i) it reduces the marginal revenue of final product manufacturers,
+incentivizing them to reduce supply by raising their prices; and (ii) it enables the supplier-licensor and
+its competitors to lower the price of the component, which tends to lower the final product price.
+We explore this research question in the context of the Chinese smartphone and SoC markets.
+Our choice of China as the setting has two motivations. First, the Chinese government’s National
+Development and Reform Commission (“NDRC”) found in 2015 that Qualcomm’s licensing practices
+violated the country’s Anti-Monopoly Law. The NDRC alleged that Qualcomm’s royalty rates were
+1Throughout this paper, we use the terms “handsets” and “smartphones” interchangeably. Although some of the
+handsets appearing in our dataset are feature phones, a large majority of the handsets are smartphones, especially in
+the more recent years.
+2For the most part, we refer to these microchips collectively as SoCs or simply “chips”, but clarify the distinction
+between SoCs and baseband processors whenever necessary.
+3See FTC’s complaint in Federal Trade Commission v. Qualcomm Inc. (N.D. Cal. 2019), available at https:
+//www.ftc.gov/legal-library/browse/cases-proceedings/141-0199-qualcomm-inc
+1
+
+unfairly high, causing rival chipmakers to lose competitiveness and raising the costs faced by handset
+manufacturers. This, in turn, caused an increase in handset prices and harmed consumers, according to
+the NDRC.4 Upon the NDRC’s orders, Qualcomm had to lower the royalty rates charged to smartphone
+manufacturers in China. While other competition agencies such as the FTC and the Korean Fair Trade
+Commission have made similar allegations, at the time of writing, the NDRC is alone in having forced
+a reduction in Qualcomm’s royalty rates. Thus, the NDRC intervention presents a valuable case study
+for examining whether drastic government intervention, in the form of a forcible reduction of royalty
+rates, is justified on consumer welfare grounds.
+The second motivation is the relatively competitive nature of the Chinese SoC market, which
+allows an exogenous change in Qualcomm’s royalty rates, such as that imposed by the NDRC, to have
+a palpable effect on competition. In particular, one of Qualcomm’s rival chipmakers – which we shall
+call M – is a major supplier to many Chinese smartphone manufacturers, all of whom pay royalties to
+Qualcomm.5,6 If, as the NDRC and other competition agencies claim, Qualcomm’s excessive royalties
+had an exclusionary effect on rival chipmakers such as M, the NDRC intervention may have reversed
+it to some extent, causing rival chipmakers’ profits to increase. We aim to quantify this profit increase
+and thereby evaluate the intervention’s role in alleviating exclusionary effects.
+To pursue these aims, we construct a structural econometric model of the Chinese smartphone and
+SoC markets. The demand for smartphones is modeled using a two-level nested logit framework and
+estimated from product-level market share data for individual cities. Smartphone manufacturers, all
+of whom are multi-product firms, are assumed to maximize profit by choosing their product prices.
+The prices of SoCs – whose identities are recorded for each smartphone model in our data – are
+taken as given by the smartphone manufacturers. SoC suppliers, who are also multi-product firms,
+are assumed to maximize profit by choosing their product prices, taking the derived demand from
+smartphone manufacturers as given. To estimate the marginal costs of smartphone manufacturers, we
+use the first-order conditions for profit maximization in the smartphone market. These marginal costs
+include the cost of SoC procurement; we are unable to separate out the SoC cost from non-SoC costs
+because we do not have data on SoC prices. In our analysis of the SoC market, we therefore derive
+the price-cost margins of SoC manufacturers, rather than their marginal costs, using the first-order
+conditions for profit maximization.
+We evaluate the impact of the NDRC intervention in 2015 by conducting counterfactual simu-
+lations for each market. Our counterfactual scenario consists of Qualcomm maintaining the same
+royalty rates that it had in place in 2014 beyond 2015, instead of the reduced rates imposed by the
+intervention. We use the estimated structural model to compute equilibrium price-cost margins in
+the SoC market as well as prices in the smartphone market under the counterfactual scenario. By
+comparing outcomes under the counterfactual scenario against the actual outcomes, we are able to
+quantify the effect of the NDRC intervention. Our results show that SoC manufacturers’ price-cost
+4See National Development and Reform Commission Administrative Sanction Decision No. 1 [2015], dated February
+9, 2015; available from IPR Daily at http://www.iprdaily.cn/article_6967.html.
+5Under the terms of our agreement with GfK, our data provider, we are unable to disclose the full names of the
+companies that appear in our dataset with the exception of Qualcomm.
+6In contrast to China, other countries tend to have SoC markets that are dominated by Qualcomm. For example,
+Yang (2020) notes that in the U.S., most of Qualcomm’s rivals in the SoC market have exited by 2012 and the remaining
+substantial rival, Samsung, is a vertically integrated firm whose smartphone division procures almost half of its SoC
+requirements from Qualcomm.
+2
+
+margins – and by extension, SoC prices – were unequivocally increased by the NDRC intervention,
+conforming with predictions from our theoretical model. The effect of the intervention on smartphone
+prices varies across models in terms of sign, which also conforms with theoretical predictions. However,
+we find that the quantity-weighted average price of smartphones decreased in response to the interven-
+tion in every analyzed market. This translates into a small but significant increase in consumer surplus.
+Relationship to Literature. The behavior of firms that act as both component supplier and patent
+licensor has been analyzed theoretically by Padilla and Wong-Ervin (2017) and Kim (2020). Both
+papers focus on the supplier-licensor’s decision with regard to royalty base – whether to license to
+rival component suppliers or final good manufacturers – and royalty rate. Padilla and Wong-Ervin
+(2017) find that a supplier-licensor’s refusal to license component suppliers (i.e., licensing only to final
+product manufacturers) cannot be anticompetitive in a specific class of vertical oligopoly models.7 Kim
+(2020) examines the supplier-licensor’s incentive to foreclose rival component suppliers by either suing
+them for patent infringement or raising the royalty rate. He finds that the likelihood of foreclosure
+varies with both the royalty base (either components or final products) and the structure of demand
+and supply. In contrast to these papers, we do not focus on the supplier-licensor’s choice of royalty
+base or royalty rate. Rather, we assume that the royalty is assessed on the final product, and that its
+rate is exogenously determined. The exogeneity assumption is motivated by the fact that Qualcomm
+and other SEP holders are bound by FRAND commitments. 8 Our focus is instead on how changes in
+the royalty rate affect the prices of components and final products through the competitive interactions
+among firms.
+Our paper is closest, both in terms of the industry analyzed and research question, to Yang’s
+(2020) empirical study of the U.S. smartphone and SoC markets. His main focus is on how a hypo-
+thetical vertical integration between a supplier-licensor (Qualcomm) and a final product manufacturer
+(HTC) affects innovation and welfare. In one of his counterfactual analyses, Yang (2020) assumes
+that the integrated firm (Qualcomm-HTC) loses all of its royalty revenues from rival final product
+manufacturers after the merger. 9 In the resulting equilibrium, the SoC prices paid by Qualcomm’s
+customers are slightly higher than under the status quo, but it is not clear how much of this is due
+to vertical foreclosure (“raising rivals’ costs” by Qualcomm-HTC) and how much is due to the loss
+of royalty revenues. 10 In contrast to Yang (2020), we explicitly focus on the relationship between
+Qualcomm’s royalty rates on the one hand, and the prices of SoCs and smartphones on the other. Our
+counterfactual analysis is designed to quantify the effect of a relatively small reduction in Qualcomm’s
+royalty rate that was actually enforced by government intervention, rather than the outright loss of
+royalty revenues. Our paper also differs from Yang (2020) in the way the SoC segment is modeled.
+7Padilla and Wong-Ervin (2017) consider a vertical oligopoly model where the quantity of final product (and by
+extension, the quantity of the upstream component) is fixed. This, in effect, assumes away anticompetitive quantity
+reductions.
+8This assumption is also employed by Yang (2020). The various lawsuits faced by Qualcomm creates some doubt
+as to whether Qualcomm’s royalty rates are FRAND-compliant, but it is nevertheless unlikely that the rates are set to
+maximize Qualcomm’s profits.
+9This is presumably because the integrated firm’s rivals in the downstream market move away from the cellular
+standard that relies on Qualcomm’s SEPs.
+10Yang (2020) also simulates a vertical integration scenario where Qualcomm-HTC maintains its royalty revenue. The
+counterfactual equilibrium involves higher SoC prices paid by Qualcomm’s customers, but the increase seems slightly
+smaller than under the scenario where Qualcomm-HTC loses its royalty revenue.
+3
+
+Whereas Yang (2020) models it as a dominant-fringe market with Qualcomm as the dominant firm,
+we allow for strategic interaction among multiple SoC suppliers. This allows us to examine how the
+royalty rate reduction affected SoC pricing by both Qualcomm and its rivals.
+Previous papers that have studied the Chinese smartphone market include Fan and Zhang (2022),
+which examines the price and welfare effects of a subsidy on handsets and Wang (2023), which looks at
+smartphone manufacturers’ product portfolio choices. Our paper is differentiated from theirs through
+our focus on the upstream SoC segment and how it relates to the downstream smartphone market
+through Qualcomm’s licensing practices.
+Finally, our paper builds upon the empirical industrial organization literature on vertical oligopoly.
+Our basic modeling approach follows the dual-Bertrand structure of Berto Villas-Boas (2007) and Bon-
+net and Dubois (2010). Our novel contribution is to incorporate the royalty rate charged by one of
+the upstream suppliers, Qualcomm, into the structural model.
+Road Map. The remainder of this paper is structured as follows. In section 2, we describe the licensing
+of standard-essential patents in the cellular communications area, focusing on the legal controversy sur-
+rounding Qualcomm’s licensing practices and the resulting government intervention. After providing
+a brief description of the Chinese smartphone and SoC markets, we motivate our empirical analysis by
+presenting a simple theoretical model in which a component supplier-cum-technology licensor collects
+royalties from final product manufacturers. We use the model to show that an exogenous reduction
+in royalty rate may increase or decrease the final product price.
+Sections 3 through 6 cover our empirical analysis. Following a description of our data in section
+3, we present our structural econometric model in section 4. Section 5 describes our estimation
+strategy and estimation results. Section 6 contains the results of our counterfactual analysis. Section
+7 concludes.
+4
+
+2 Background and motivation
+A Licensing of Standard-Essential Patents for Cellular Communications
+Many high-tech industries are built upon innovations carried out by multiple entities. Such industries
+often require the standardization of technologies which allows different products and services to be
+mutually compatible. In the cellular communications sector, for instance, firms must coalesce around
+a given standard to allow their products to communicate with each other. To this end, second-
+generation (“2G”) standards including GSM and cdmaOne were developed in the 1990s, followed by
+third-generation (“3G”) standards including WCDMA, CDMA2000, and TD-SCDMA in the 2000s.
+Fourth-generation (“4G”) standards were introduced in the late 2000s and one of them, LTE, became
+the dominant standard worldwide from the mid-2010s. 11
+SEPs that cover the technologies essential to implementing a standard are typically held by several
+different firms. This gives rise to two potential problems. First, individual SEP holders may gain the
+ability to “hold up” the implementation of the standard by refusing to license their patents, allowing
+them to demand excessively high royalties (Shapiro, 2000). This leads to the second problem, known
+as “royalty stacking”, where the sum of the royalty rates of individual SEP holders becomes so high
+that implementation of the standard becomes economically infeasible (Lemley and Shapiro, 2007;
+Lerner and Tirole, 2004). To deal with these potential problems, the organizations that oversee the
+standardization process, called standard-setting organizations (“SSOs”), often restrict the licensing
+terms that SEP holders can set (Lemley, 2002).
+In the case of SSOs overseeing cellular standards such as the Alliance for Telecommunication
+Industry Solutions (“ATIS”), Telecommunications Industry Association (“TIA”), and the European
+Telecommunications Standards Institute (“ETSI”), SEP holders are required to license their SEPs on
+FRAND terms.12 The meaning of FRAND has not been sufficiently clarified by the SSOs, however,
+and this has led to numerous disputes involving SEP holders, their licensees, as well as antitrust
+agencies.
+B Antitrust Scrutiny of Qualcomm’s Licensing Practices
+Our paper focuses on one particular set of disputes regarding cellular SEPs: those involving the licens-
+ing practices of Qualcomm Incorporated. Qualcomm is an American firm that holds a large number of
+SEPs for the 2G (cdmaOne), 3G (CDMA2000 and WCDMA), and 4G (LTE) cellular standards. 13,14
+It is also a supplier of baseband processors and SoCs. While Qualcomm’s cellular SEPs cover the
+technologies embodied in those chips, the company does not grant licenses for the SEPs to rival chip-
+makers. Rather, Qualcomm licenses its SEPs to handset manufacturers and collects royalties from
+them in terms of a fixed percentage of the handset’s net wholesale price. Qualcomm’s royalty rates
+on licenses for the cdmaOne, CDMA2000 and WCDMA standards are typically five percent (subject
+to discounts for specific licensees), while those for the LTE standard are between 3.5 and four percent.15
+11The fifth-generation (“5G”) standard, which began deployment in 2019, is not covered in the dataset used for our
+analysis.
+12Federal Trade Commission v. Qualcomm Inc., 411 F.Supp.3d 658 at 671-672 (N.D. Cal. 2019).
+13The cdmaOne and CDMA2000 standards are sometimes jointly referred to as “CDMA”.
+14Regarding Qualcomm’s SEPs in the 3G sphere, there has been a dispute between Qualcomm and its competitors on
+whether or not those SEPs cover the TD-SCDMA standard. See, for example, RCR Wireless News (2006).
+15411 F.Supp.3d 658 at 673. See also Yang (2020).
+5
+
+Legal Challenges Prior to the NDRC Intervention. Qualcomm’s licensing practices were first chal-
+lenged on antitrust grounds by Broadcom, another American chipmaker, in July 2005. Broadcom
+claimed that Qualcomm violated the antitrust laws by falsely promising to license its WCDMA SEPs
+on FRAND terms during the standardization process, only to charge excessive royalties once the in-
+dustry became locked into the WCDMA standard. A federal district court ruled in favor of Qualcomm,
+but the U.S. Court of Appeals for the Third Circuit reversed and remanded the case to the district
+court, stating that Qualcomm’s conduct may amount to a willful acquisition of monopoly power in
+violation of Section 2 of the Sherman Act. 16 The case never resulted in remedial action against
+Qualcomm’s licensing practices because Broadcom and Qualcomm settled their lawsuit in 2009. 17
+Similar claims against Qualcomm were made by Broadcom, Nokia, and four other firms in a
+complaint filed with the European Commission in October 2005, and a formal investigation by the
+competition branch of the Commission began in October 2007. However, the investigation was closed
+in November 2019 before reaching any conclusion, after Qualcomm settled with each of the com-
+plainants.18 Qualcomm also faced scrutiny from the South Korean and Japanese antitrust authorities
+in the late 2000s. It received a fine from the Korea Fair Trade Commission (KFTC) in 2010 as well
+as a cease-and-desist order from the Japan Fair Trade Commission (JFTC) in 2009. However, these
+actions did not require Qualcomm to fundamentally alter its licensing practices. 19
+The NDRC Intervention. The National Development and Reform Commission (“NDRC”), which
+was one of the Chinese government’s competition agencies at the time, launched an investigation
+into Qualcomm’s licensing practices in November 2013. In February 2015, the NDRC announced
+its decision finding that Qualcomm violated the country’s Anti-Monopoly Law by abusing its SEPs
+for the cdmaOne, CDMA2000, WCDMA and LTE standards, as well as its dominant position in
+the markets for “baseband chips” compliant with the WCDMA and LTE standards. 20 According to
+the NDRC, certain elements of Qualcomm’s licensing practices allowed it to charge excessive royalty
+rates. These include: (i) using the net wholesale price of the handset as the royalty base rather than
+the component price; (ii) failing to exclude expired SEPs from the bundle of licensed patents; (iii)
+bundling non-wireless SEPs toghether with wireless SEPs; (iv) requiring licensees to provide royalty-
+free cross-licenses of their patents to Qualcomm and its customers; and (v) conditioning the supply
+of Qualcomm’s chips on an agreement not to dispute its licensing terms (i.e., the “no license, no
+chips” policy). According to the NDRC’s theory of harm, elements (i) through (iv) worked to elevate
+the effective royalty rate that Qualcomm could charge, while element (v) ensured that Qualcomm
+maintained a strong bargaining position vis-` a-vis licensees. The NDRC claimed that the unfairly high
+royalty rates charged by Qualcomm caused handset manufacturers’ costs to increase, which in turn
+16Broadcom Corporation v. Qualcomm Inc., 501 F.3d 297 (3rd Cir. 2007)
+17See Qualcomm Incorporated. (2009, April 26). Qualcomm and Broadcom Reach Settlement and Patent Agreement
+[Press release].
+18See Qualcomm Incorporated. (2010, January 27). Form 10-q. U.S. Securities and Exchange Commission. https:
+//www.sec.gov/Archives/edgar/data/804328/000095012310005721/a54942e10vq.htm
+19The JFTC order was eventually revoked in 2019 after a successful administrative appeal by Qualcomm. See Qual-
+comm Incorporated. (2019, March 14). JFTC Revokes Order, Finds Qualcomm Licensing Program Lawful[Press release].
+20See National Development and Reform Commission Administrative Sanction Decision No. 1 [2015], dated February
+9, 2015. While not explicitly stated in the decision, “baseband chips” include both baseband processors and SoCs.
+6
+
+caused handset prices to increase and harmed consumers. 21 The NDRC’s decision did not provide
+any empirical evidence to support its claims regarding the effect of Qualcomm’s practices on handset
+prices.
+Unlike in other jurisdictions where it faced antitrust scrutiny, Qualcomm did not challenge the
+NDRC’s findings and agreed to pay a fine of 6.088 billion Chinese RMB (approximately $992 million
+at the exchange rate in February 201522.). It also agreed to alter its licensing practices in the following
+manner: (a) unbundle its valid wireless SEPs from expired patents and non-wireless SEPs before li-
+censing them; (b) not require licensees to grant royalty-free cross-licenses; (c) not condition the supply
+of chips on an agreement to the licensing terms; and (d) lower the royalty base to 65 percent of the net
+wholesale price of handsets. 23 According to legal commentators, a particularly notable aspect of the
+decision was the mandated change in royalty base, which is effectively the same as a forced reduction
+in royalty rates. Assuming handset prices remained constant (an assumption that we do not maintain
+in our analysis), the royalty rate reduction would have caused a 35 percent decrease in Qualcomm’s
+royalty revenue. This action was notable both because it was the first instance of a forcible reduction
+in Qualcomm’s royalty rates, and because Qualcomm was allowed to keep using the handset price
+(albeit a smaller proportion of it) as the royalty base. 24
+Further Antitrust Challenges. The NDRC decision was quickly followed by a March 2015 announce-
+ment by the KFTC that it was starting a new investigation into Qualcomm’s licensing practices. A
+decision was announced in January 2017, finding that Qualcomm violated South Korea’s Monopoly
+Regulation and Fair Trade Act and imposing a 1.03 trillion Korean won (approximately $890 million
+at the exchange rate in January 2017 25) fine on the firm. The KFTC found the following elements to
+be illegal: (i) refusal to license SEPs to rival chipmakers; (ii) the “no license, no chips” policy; and (iii)
+requirement of royalty-free cross-licenses from licensees. The remedies ordered by the KFTC include
+a requirement for Qualcomm to enter into good-faith licensing negotiations with rival chipmakers.
+Qualcomm filed suit in the Seoul High Court to annul the KFTC decision but the court upheld most
+of it, including the order to negotiate with chipmakers. Qualcomm’s subsequent appeal to the Supreme
+Court resulted in an affirmation of the lower court’s ruling in April 2023. 26
+In the U.S., the FTC brought suit against Qualcomm in January 2017, claiming that its licensing
+practices for SEPs led to elevated royalty rates. According to the FTC, this acted as a “tax” on
+chips made by Qualcomm’s rivals, which had the dual effect of excluding those chipmakers from the
+market for baseband chips (both baseband processors and SoCs), and causing handset manufacturers
+to set higher prices at the expense of consumers. The U.S. District Court for the Northern District
+of California found in favor of the FTC, ruling in May 2019 that Qualcomm’s royalty rates were
+unreasonably high, and that as a result, rival chipmakers were being excluded from the market.27 The
+21See Section II(I) of the NDRC Decision.
+22IMF, Exchange Rate Archives by Month
+23See Qualcomm Incorporated. (2019, February 9). Qualcomm and China’s National Development and Reform Com-
+mission Reach Resolution: NDRC Accepts Rectification Plan [Press release].
+24See, for example, Cleary Gottlieb Steen & Hamilton LLP. (2015, March 16) China’s NDRC Concludes Qualcomm
+Investigation, Imposes Changes in Licensing Practices [Memorandum].
+25IMF, Exchange Rate Archives by Month
+26See Qualcomm Incorporated. (2023, May 3). Form 10-q . U.S. Securities and Exchange Commission. https:
+//www.sec.gov/Archives/edgar/data/0000804328/000080432823000023/qcom-20230326.htm
+27FTC v. Qualcomm Inc. , 411 F.Supp.3d 658 (N.D.Cal. 2019).
+7
+
+district court also found that Qualcomm had a duty to license its SEPs to rival chipmakers and that
+failure to do so violated Section 2 of the Sherman Act. 28
+Following an appeal by Qualcomm, the U.S. Court of Appeals for the Ninth Circuit reversed
+the district court decision in August 2020. A key element of the appellate court decision was the
+finding that Qualcomm did not have an “antitrust duty to deal” with its competitors – i.e., it was
+not obligated to license its SEPs to rival chipmakers.29 Interestingly, the decision did not rule out the
+possibility that Qualcomm’s licensing practices had an exclusionary effect on rival chipmakers through
+a “margin squeeze”, admitting the possibility that “Qualcomm uses its licensing royalties to charge
+anticompetitive, ultralow prices on its own modem chips – pushing out rivals by squeezing their profit
+margins”.30 Nevertheless, the appellate court rejected the FTC’s assertion of antitrust liability on the
+grounds that (i) there was no evidence that Qualcomm engaged in predatory pricing in the baseband
+chip market,31 and (ii) there was no evidence that Qualcomm applied discriminatorily higher royalty
+rates to handset manufacturers using non-Qualcomm chips. 32
+C Structure of the Chinese Smartphone and SoC Markets
+The Chinese smartphone and SoC markets were characterized by the coexistence of multiple cellular
+standards during the early 2010s, as can be seen from Figure 1(a) which shows the distribution of
+smartphone models, and Figure 2(a) which shows the distribution of units sold. The latter figure shows
+how the 2G GSM standard quickly lost market share during this period, while the three 3G standards
+– CDMA2000, WCDMA and TD-SCDMA – each gained market share until they were overtaken by
+LTE (4G) from 2014 onward.
+Among the 3G standards, Qualcomm held a dominant share of SEPs for CDMA2000, while those
+for WCDMA were more evenly held by Qualcomm and several other firms including Nokia, Ericsson,
+InterDigital (a so-called “non-practicing entity” that asserts the rights on patents purchased from
+other firms), and LG Electronics (Yang and Jung, 2014). TD-SCDMA is a China-specific standard
+developed jointly by the Chinese Academy of Telecommunications Technology and Siemens AG. While
+Qualcomm has claimed that its patents cover TD-SCDMA technology, it is not clear whether it charges
+royalties on handsets that solely employ the TD-SCDMA standard. 33 For the 4G LTE standard,
+Qualcomm is one of the leading SEP holders along with Nokia, Ericsson, Samsung and Huawei. 34
+Figures 1(b) and 2(b) demonstrate how Qualcomm maintained a significant share of the Chinese
+SoC market throughout the 3G and 4G eras. Measured in terms of the number of smartphone
+models using its chips, Qualcomm’s market share has been matched by that of M; the share of other
+chipmakers have remained much smaller (Figure 1(b)). The picture is somewhat different when shares
+are measured in terms of the number of smartphone units sold (Figure 2(b)). Here, Qualcomm has
+28The district court further found that Qualcomm’s exclusive dealing agreements with one of its customers, Apple,
+violated Sections 1 and 2 of the Sherman Act.
+29See FTC v. Qualcomm Inc. , 969 F.3d 974 (9th Cir. 2020). This ruling was based on the observation that under
+U.S. case law, an antitrust duty to deal is found only in circumstances where a firm’s refusal to deal is purely motivated
+by exclusionary intent. See Aspen Skiing Co. v. Aspen Highlands Skiing Corp. , 472 U.S. 585 (1985).
+30FTC, 969 F.3d, at 1000-1001.
+31FTC, 969 F.3d, at 1001.
+32FTC, 969 F.3d, at 996-997.
+33See RCR Wireless News (2008) on the lack of clarity regarding Qualcomm’s royalty revenues in China from TD-
+SCDMA handsets.
+34See plaintiffs’ second amended complaint in In re Qualcomm Antitrust Litigation (N.D. Cal. 2023), available at
+https://storage.courtlistener.com/recap/gov.uscourts.cand.309826/gov.uscourts.cand.309826.899.0.pdf
+8
+
+maintained the largest share but there are two rival firms in addition to M with significant market
+shares. S maintained a fairly large market share during the 3G period, while H has rapidly gained
+market share from around 2015, just as 3G standards were being replaced by LTE. This period also
+coincides with the NDRC intervention in February 2015.
+Figures 1(c) and 2(c) describes the structure of the Chinese smartphone market. Figure 2(c) shows
+that during the observed period, there were seven leading smartphone manufacturers. 35 Initially, S1
+(which belongs to the same corporate group as chipmaker S) had the largest market share, but it was
+gradually overtaken by the company owning brands O1 and V1, the company owning brands H1 and
+H2, and A1. Smaller brands (the “Others” category) also served a large proportion of demand up to
+2014. From 2015 onward, the market has become more concentrated, with only four manufacturers
+– A1, the owner of brands H1 and H2, the owner of brands O1 and V1, and M1 – maintaining
+significant market shares, and the combined share of smaller brands shrinking over time. Nevertheless,
+the combined presence of smaller brands has remained large when measured in terms of the number
+of models (Figure 1(c)). As can be seen from Figure 1(d), more than half of all smartphone models
+were supplied by smaller brands whose maximum annual sales volume during 2011-2018 was less than
+1 million units.
+The fragmented structure of the smartphone market, as well as the vertical structure of the in-
+dustry, may have contributed to the relatively competitive nature of the Chinese SoC market. Of
+the seven leading smartphone manufacturers, six have procured SoCs from both Qualcomm and M,
+providing both chipmakers with a large customer base. In addition, the company that owns the H1
+and H2 smartphone brands is also the parent company of SoC supplier H. This has likely provided an
+assured demand for the chips manufactured by H. Similarly, SoC supplier S has likely faced assured
+demand for its products from brand S1, which belongs to the same corporate group.
+Against this backdrop, an important question is whether, and to what extent, the NDRC’s inter-
+vention affected the prices and profitability of the SoC manufacturers. Another relevant question is
+how the NDRC intervention, in conjunction with changes in SoC prices, affected the prices of smart-
+phones. Before addressing these questions empirically, we use a theoretical model to sort out the
+economic forces that could drive such price changes.
+35The seven smartphone manufacturers appearing in Figures 1(c) and 2(c) are those with the largest cumulative sales
+volumes during 2011-2018. The abbreviated names appearing in the figures (e.g., A1, H1) represent “brands”. In this
+paper, smartphone brands correspond to smartphone manufacturers except for the following two cases: brands H1 and
+H2 are owned by the same company, and brands O1 and V1 are owned by the same company.
+9
+
+Figure 1: Distribution of Smartphone Models in China, 2011-2018
+(a) By cellular standard
+ (b) By SoC supplier
+(c) By smartphone manufacturer
+ (d) Large vs. small smartphone brands
+Source: Authors’ calculations based on GfK data.
+Note: “Large” brands are defined as those having maximum annual sales volume at or above 1 million units during
+2011-2018; remaining brands are categorized as “small.” Brands H1 and H2 are combined because they are owned by
+the same company. Brands O1 and V1 are combined for the same reason.
+10
+
+Figure 2: Distribution of Smartphones Sold in China, 2011-2018
+(a) By cellular standard
+ (b) By SoC supplier
+(c) By smartphone manufacturer
+ (d) Large vs. small smartphone brands
+Source: Authors’ calculations based on GfK data.
+Note: “Large” brands are defined as those having maximum annual sales volume at or above 1 million units during
+2011-2018; remaining brands are categorized as “small.” Brands H1 and H2 are combined because they are owned by
+the same company. Brands O1 and V1 are combined for the same reason.
+11
+
+D Theoretical Motivation
+The economic rationale for the NDRC intervention was that Quacomm’s licensing practices for SEPs
+led to elevated royalty rates, which in turn caused (i) an increase in smartphone manufacturers’ costs
+and (ii) an increase in smartphone prices. To investigate the validity of these concerns, we use a simple
+theoretical model to describe how the supplier of an intermediate product, who also receives royalty
+payments from manufacturers of the downstream product, responds to an exogenous change in the
+royalty rate. Both the downstream and upstream markets are assumed to be duopolies. Whereas the
+downstream firms supply differentiated products (“smartphones”), the upstream product (“SoCs”)
+is assumed to be homogenous. One of the upstream firms (“supplier-licensor”) holds a portfolio of
+essential patents for the downstream product, and licenses it out for a royalty rate of ϕ ∈ [0, 1] on
+smartphone sales. It is assumed that ϕ is determined exogenously to satisfy the FRAND requirements
+stipulated by SSOs and/or courts. A change in ϕ is assumed occur as a result of intervention by a
+government agency (such as the NDRC) or a court ruling.
+Each downstream firm m ∈ {1, 2} supplies a single smartphone model to consumers. The demand
+function for firm m’s smartphone is given by Qm(pm, pm′) = a − bpm + dpm′, where m′ = 3 − m and
+b > d. For simplicity, we assume that downstream firms’ marginal cost, excluding the cost of SoC, is
+zero.
+Assuming that the downstream firms compete in prices, firm m’s profit maximization problem is
+max
+pm
+[(1 − ϕ)pm − w](a − bpm + dpm′),
+where w denotes the market price of SoC. Firm m’s first-order condition for profit maximization yields
+the reaction function
+pm = R(pm′) = a + dpm′
+2b + w
+2(1 − ϕ). (1)
+Solving the system of equations formed by the two reaction functions, we obtain the equilibrium
+downstream price for each product, expressed as a function of w:
+p∗
+m(w) = 1
+2b − d
+
+a + bw
+1 − ϕ
+
+, m= 1, 2. (2)
+Plugging these into the demand function, we obtain the derived demand function for SoCs used in
+firm m’s smartphones as
+qm(w) = b
+2b − d
+
+a − b − d
+1 − ϕw
+
+.
+We now turn to the upstream SoC market, where SoC suppliers are assumed to engage in price
+competition so that the firm offering the lower price captures the entire market demand. (In the
+event of a tie, we assume that the two SoC suppliers split the market demand evenly.) Denoting the
+supplier-licensor by l and the other SoC supplier by n, n’s profit maximization problem can be written
+as
+max
+wn
+X
+m=1,2
+(wn − c)qr
+mn(wn, wl),
+12
+
+where wn denotes supplier n’s price, c is the marginal cost of SoC supply (assumed to be common to
+both firms), and the residual demand function qr
+mn(wn, wl) is defined as follows (and vice versa for
+qr
+ml(wl, wn)):
+qr
+mn(wn, wl) =
+
+
+
+qm(wn) if wn < wl,
+qm(wn)
+2 if wn = wl,
+0 otherwise .
+Standard Bertrand arguments imply that each SoC supplier has an incentive to undercut its rival’s
+price, as long as it exceeds its marginal cost (including any opportunity cost). When the two firms
+have the same marginal cost, the Nash equilibrium involves both firms setting wn = c so that they
+earn zero profits.
+The supplier-licensor’s profit includes not only its SoC profits but also royalty revenues from the
+two smartphone manufacturers. It faces an extra opportunity cost, in the form of reduced royalty
+income, from lowering its price. In this asymmetric environment, the price equilibrium involves the
+lower-cost firm (firm n) setting a price slightly below the high-cost firm’s (firm l’s) marginal cost and
+capturing the entire market demand. Since the supplier-licensor earns zero profit from SoC supply,
+its profit maximization problem is simply the following royalty revenue maximization problem:
+max
+w
+ϕ
+2b − d
+
+a + bw
+1 − ϕ
+
+× 2b
+2b − d
+
+a − b − d
+1 − ϕw
+
+.
+Leaving only the multiplicative terms containing w, we can rewrite the problem as
+max
+w
+
+a + bw
+1 − ϕ
+
+a − b − d
+1 − ϕw
+
+.
+The first-order condition for profit maximization by the supplier-licensor is
+b
+1 − ϕ
+
+a − b − d
+1 − ϕw
+
+− b − d
+1 − ϕ
+
+a + bw
+1 − ϕ
+
+= 0,
+which simplifies to ad(1 − ϕ) = 2bw(b − d). Solving this for w yields the equilibrium price as
+w = ad(1 − ϕ)
+2b(b − d) . (3)
+Equation (3) indicates that the equilibrium SoC price is a decreasing function of the royalty rate
+charged to smartphone manufacturers. This implies that an exogenous reduction in the royalty rate,
+such as the one imposed by the NDRC, has the effect of increasing the SoC price.
+In this simple model, downstream product prices are independent of the royalty rate ϕ. This can
+be seen by plugging equation (3) into (2) to obtain the following equation, which does not contain ϕ:
+p∗
+m = 1
+2b − d
+
+a + ad
+2(b − d)
+
+. (4)
+Importantly, our independence result embodied in equation (4) suggests that the effect of a reduction
+in ϕ on downstream prices is ambiguous in more complex models – for instance, one where the
+upstream products are product-differentiated. This is because the reduction in ϕ has two opposing
+effects. On the one hand, the resulting increase in SoC price (through equation (3)) raises smartphone
+manufacturers’ marginal cost, which exerts upward pressure on smartphone prices. On the other hand,
+13
+
+the reduction in ϕ increases the marginal revenue of smartphone manufacturers, which incentivizes
+them to increase supply by lowering price. This can be seen by partially differentiating equation (2)
+with respect to ϕ to obtain ∂pm
+∂ϕ = bw
+(2b−d)(1−ϕ)2 > 0. Another interpretation of this effect is a reduction
+in the “perceived marginal cost” of smartphone manufacturers. This can be seen from the downstream
+firms’ reaction function in equation (1), where w
+1−ϕ can be thought of as a perceived marginal cost
+that increases with ϕ. The existence of these opposing effects imply that the directional impact of an
+exogenous reduction on smartphone prices remains an empirical question.
+As for the validity of the NDRC’s theory of harm mentioned at the beginning of this section,
+there is insufficient information in the agency’s decision to conclude that Qualcomm’s elevated royalty
+rates caused smartphone manufacturers’ costs to increase. On the one hand, the elevated royalty
+rates are likely to have increased smartphone manufacturers’ perceived marginal costs, an effect that
+has been claimed in the NDRC decision (as well as in the FTC’s complaint against Qualcomm in
+the U.S. case). On the other hand, the elevated royalty rates are likely to have reduced SoC prices
+(as expressed by equation (3)), both for Qualcomm chips and rival products, exerting downward
+pressure on smartphone manufacturers’ marginal costs. 36 Thus, it appears that the NDRC’s claim –
+that Qualcomm’s elevated royalty rates caused an increase in smartphone prices – was made without
+accounting for all the economic forces at play.
+36Importantly, this possibility was mentioned in the appellate court decision in FTC, 969 F.3d, at 1000-1001.
+14
+
+3 Data
+Our data are sourced from GfK China’s Market Audit Survey for the Chinese smartphone market.
+The original dataset covers all smartphones sold in 20 cities as well as online between 2011 and 2018.37
+In our empirical analysis, we restrict attention to sales at physical stores and do not use data from
+online sales.38 We also do not use data for the two cities of Shenzhen and Guangdong, because the
+sales volumes in these cities were extremely large – almost 4 times their population. It is possible that
+sales figures for these cities contain de facto wholesale transactions which were resold to other regions
+of China or exported
+The resulting dataset, which we used to estimate demand, covers 675 smartphone manufacturers,
+9,593 smartphone models, 22 processor suppliers, and 438 processor models. For each smartphone
+model, we have information on the number of units sold, average price, and various attributes such as
+cellular standard(s), type of operating system, display size, and the identity of the SoC or processor
+installed (supplier and model). Summary statistics of the data are presented in Table 1. All monetary
+figures were deflated to 2011 prices using the consumer price index.
+Table 1: Summary Statistics
+Mean S.D. Min Max
+Sales Units (’000) 1 .64 8 .27 0.00 1351.3
+Price (RMB in 2011 prices) 1344 1322 60 27,999
+cdmaOne 0 .11 0 .32 0 1
+CDMA2000 0 .39 0 .49 0 1
+WCDMA 0 .51 0 .50 0 1
+TD-SCDMA 0 .52 0 .50 0 1
+LTE 0 .44 0 .50 0 1
+Display Size (inch) 4 .63 0 .84 1 6.98
+OS:iOS 0 .02 0 .14 0 1
+OS:Android 0 .94 0 .25 0 1
+OS:Windows 0 .02 0 .15 0 1
+OS:Symbian 0 .01 0 .11 0 1
+OS:Other 0 .01 0 .09 0 1
+Number of observations (model × city × year) 270,301
+Number of markets (city × year) 168
+Source: Authors’ calculation based on GfK data.
+37Geographical distribution of our dataset does not fail to recover the distribution at the national level. The
+Chinese Income Household Project dataset, a representative panel household survey in China, is carefully designed
+to recover the distribution of income and assets in China. The 20 cities in our dataset consist of CHIPS target
+provinces and nontarget one as follows: Beijing(CHIPS), Changsha(CHIPS), Chengdu(CHIPS), Chongqing(CHIPS),
+Dongguan(CHIPS), Guangzhou(CHIPS), Harbin, Hefei(CHIPS), Kunming(CHIPS), Nanjing(CHIPS), Nanning, Ningbo,
+Shanghai, Shenyang(CHIPS), Shenzhen(CHIPS), Shijiazhuang, Suzhou(CHIPS), Tianjin, Xiamen and Xian. We con-
+ducted t-tests at the mean and variance ratios tests with regard to average wage, population, smartphone prices, and
+smartphone price-wage ratio, then found no significant differences existed except a t-test of smartphone price-wage ratio.
+We can regard that our geographical distribution in our dataset follows that of the CHIPS survey and, therefore, that
+of a nation.
+38While products sold online may compete to some extent with those sold in physical stores, we do not have information
+to connect individual online purchases to specific cities. We therefore assume that online and physical stores constitute
+separate markets and focus our attention on the latter.
+15
+
+4 Econometric Model
+A Smartphone Demand
+We assume that in each period, consumers choose whether or not to purchase a smartphone, and if
+they do, the smartphone product generating the highest utility is chosen. The conditional indirect
+utility uijt of consumer i purchasing product j in market t is specified as
+uijt = −αpjt + β′xjt + ξjt + νijt, (5)
+where pjt is the price of product j in market t, xjt is the vector of observable attributes of product
+j in market t, ξjt denotes the effect of unobserved product characteristics, and νijt is an error term
+specific to each consumer. xjt contains observed product characteristics as well as dummy variables
+representing combinations of smartphone brands and SoC suppliers. In the following, we use the
+shorthand δjt := −αpjt + β′xjt + ξjt to denote the portion of indirect utility that does not vary across
+consumers, and call it “mean utility”.
+We assume a two-level choice structure, where products are grouped into generations of cellular
+standards, as well as into brand types within each generation (see Figure 3). To estimate the demand
+system, we assume that the error termνijt has a three-component structure conforming to the two-level
+nested logit model.39 Suppose that product j belongs to a cellular standard of generation g ∈ {2, 3, 4}
+and that its brand is of typeb ∈ {large, small}, where a “large” brand is defined as one whose maximum
+annual sales volume during 2011-2018 was 1 million units or more. Suppressing the consumer and
+market subscripts for brevity, we assume that νj is structured as follows:40
+νj = εg + (1 − σ1)εgb + (1 − σ1)(1 − σ2)εgbj . (6)
+For notational convenience, we use the shorthand 1 − λ := (1 − σ1)(1 − σ2), and assume that σ1
+and σ2 both lie on the unit interval. This implies that 0 ≤ σ1 ≤ λ ≤ 1. The product-specific error
+component εgbj is assumed to be i.i.d. with a standard Gumbel distribution. The other two error
+components are assumed to have specific distributions that lead to the two-level nested logit model. 41
+λ represents the degree to which a consumer’s unobserved preference for smartphone products are
+correlated within the same brand type for a given generation, while σ1 represents the degree to which
+unobserved preferences are correlated within the same generation. 42
+Under our distributional assumptions, an individual consumer’s choice probability of smartphone
+product j, conditional on the consumer choosing generation g and brand type b, is derived as
+39Other papers that use the two-level nested logit model include Verboven (1996), Chatterjee, Kubo, and Pingali
+(2015), Bj¨ ornerstedt and Verboven (2016), and Ciliberto, Moschini, and Perry (2019).
+40This notation partly follows Ben-Akiva and Lerman (1985). Each error component is assumed to vary across
+consumers and markets.
+41Specifically, we assume εgb is distributed such that (1 − σ1)εgb + maxj′∈Jgb [δj′ + (1 − λ)εgbj′ ] is i.i.d. Gumbel with
+location and scale parameters
+
+Igb, 1
+1−σ1
+
+, where Igb is the inclusive value for brand b in generation g, as defined in
+equation (8). We also assume εg is distributed such that εg + maxb′∈Bg
+n
+(1 − σ1)εgb′ + maxj′∈Jgb′ [δj′ + (1 − λ)εgb′j′ ]
+o
+is i.i.d. Gumbel with location and scale parameters ( Ig, 1), where Ig is the inclusive value for generation g, as defined
+in equation (9).
+42From equation (6), we see that νj is perfectly correlated within the same brand type and generation when λ = 1,
+with the correlation decreasing as λ approaches zero. Similarly, νj is perfectly correlated within the same generation
+when σ1 = 1, but the correlation drops as σ1 falls toward zero.
+16
+
+Figure 3: Nesting Structure of Demand Model
+sj|gb =
+exp
+ δj
+1−λ
+
+P
+j′∈Jgb exp
+ δj′
+1−λ
+,
+where Jgb is the set of all products belonging to generation g and brand type b. The probability that
+brand type b is chosen, conditional on generation g being chosen, is derived as
+sb|g =
+hP
+j′∈Jgb exp
+ δj′
+1−λ
+i1−σ2
+P
+b′∈Bg
+hP
+j′∈Jgb′ exp
+ δj′
+1−λ
+i1−σ2
+,
+where Bg is the set of all brand types in generation g. Finally, the probability of generation g being
+chosen is
+sg =
+P
+b′∈Bg
+hP
+j′∈Jgb′ exp
+ δj′
+1−λ
+i1−σ2
+1−σ1
+1 + P
+g′∈G
+P
+b′∈B′g
+hP
+j′∈Jg′b′ exp
+ δj′
+1−λ
+i1−σ2
+1−σ1
+,
+where G is the set of all generations. Combining these results, the unconditional market share of
+smartphone product j is expressed as follows:
+17
+
+sj =
+exp
+ δj
+1−λ
+
+P
+j′∈Jgb exp
+ δj′
+1−λ
+ ×
+hP
+j′∈Jgb exp
+ δj′
+1−λ
+i1−σ2
+P
+b′∈Bg
+hP
+j′∈Jgb′ exp
+ δj′
+1−λ
+i1−σ2
+×
+P
+b′∈Bg
+hP
+j′∈Jgb′ exp
+ δj′
+1−λ
+i1−σ2
+1−σ1
+1 + P
+g′∈G
+P
+b′∈B′g
+hP
+j′∈Jg′b′ exp
+ δj′
+1−λ
+i1−σ2
+1−σ1
+. (7)
+Following Ben-Akiva and Lerman (1985) and Train (2009), let us define the inclusive values for
+each choice level as follows:
+Inclusive value for brand type b in generation g : Igb := (1 − λ) ln
+X
+j′∈Jgb
+exp
+ δj′
+1 − λ
+
+. (8)
+Inclusive value for generation g : Ig := (1 − σ1) ln
+X
+b′∈Bg
+exp
+ Igb′
+1 − σ1
+
+. (9)
+Igb represents the consumer’s “expected utility” after generation g and brand type b have been cho-
+sen.43 Similarly, Ig represents the consumer’s “expected utility” after generation g has been chosen.44
+Using these definitions, equation (7) can be rewritten as
+sj =
+exp
+ δj
+1−λ
+
+P
+j′∈Jgb exp
+ δj′
+1−λ
+ ×
+exp
+ Igb
+1−σ1
+
+P
+b′∈Bg exp
+ Igb′
+1−σ1
+ × exp (Ig)
+1 + P
+g′∈G exp (Ig′). (10)
+This representation makes clear that the unconditional market share is a product of three logit prob-
+abilities: that of choosing product j from all products in Jgb, that of choosing brand type b from all
+brand types in Bg, and that of choosing generation g.
+After applying the steps described in Appendix A to the components of equation (10), our esti-
+mating equation for the two-level nested logit model is derived as follows:
+ln(sj) − ln(s0) = δj + λ ln(sj|gb) + σ1 ln(sb|g)
+= −αpj + β′xj + λ ln(sj|gb) + σ1 ln(sb|g) + ξj,
+(11)
+where s0 is the market share of the outside good.
+43The consumer’s maximal utility from purchasing a product belonging to brand type b in generation g, net of the
+error components whose values are constant within the choice set, is max j′∈Jgb [δj′ + (1 − λ)εgbj′ ]. Given that the
+maximand has a Gumbel distribution with parameters
+
+δj′ , 1
+1−λ
+
+, this quantity has a distribution whose mode is
+(1 − λ) lnP
+j′∈Jgb
+exp
+ δj′
+1−λ
+
+.
+44The consumer’s maximal utility from purchasing a product belonging to generation g, net of the error component
+whose value is constant within the choice set, is maxb′∈Bg
+n
+(1 − σ1)εgb′ + maxj′∈Jgb′ [δj′ + (1 − λ)εgb′j′ ]
+o
+. Given that the
+term in braces has a Gumbel distribution with parameters
+
+Igb, 1
+1−σ1
+
+(see footnote 41), this quantity has a distribution
+whose mode is (1 − σ1) lnP
+b′∈Bg exp
+ Igb′
+1−σ1
+
+.
+18
+
+B Supply
+We begin by defining the set of all smartphone manufacturers byM and the set of all SoC manufactur-
+ers by N. Smartphone manufacturer m’s portfolio of products is assumed to be given exogenously and
+denoted by Jm. The set of all smartphones is J := ∪m∈MJm, and the total number of smartphones
+is J. Similarly, SoC manufacturer n’s portfolio of products is Kn, the set of all SoCs is K := ∪n∈N Kn,
+and the total number of SoCs is K. The function m(j) returns the manufacturer of smartphone j,
+and n(k) returns the manufacturer of SoC k. We define an “allocation vector” a of length J, which
+contains the SoC identities for each smartphone, so that if smartphone j uses SoC k, the jth element
+of a is aj = k.
+We assume that the allocation vector a is exogenously given, meaning that we do not model how
+transaction pairings between smartphone manufacturers and their SoC suppliers are formed. 45 Mar-
+ket outcomes are assumed to be determined through a static two-stage game. In the first stage, SoC
+manufacturers engage in a Bertrand game to set linear prices for their products (Berto Villas-Boas,
+2007; Bonnet and Dubois, 2010). In the second stage, smartphone manufacturers set the retail prices
+for their products, taking the prices of SoCs as given and incorporating those prices into marginal
+costs.46
+Smartphone Prices. In the second stage, smartphone manufacturer m’s profit maximization problem
+can be expressed as follows, where the market subscripts have been suppressed for brevity:
+max
+pj,j∈Jm
+X
+j∈Jm
+[(1 − ϕj)pj − waj − mcs
+j]Msj(p). (12)
+ϕj is the effective per-unit royalty rate for smartphone j charged by Qualcomm, pj is the retail price
+of smartphone j, waj is the price of the SoC installed in smartphone j, mcs
+j is the marginal cost
+for smartphone j excluding the cost of SoC, and M is market size. p is a J-dimensional vector of
+all smartphone prices and sj(p) is the demand function (expressed in terms of market share) for
+smartphone j. We assume the following values for ϕj:
+Before 2015: ϕj =
+
+
+
+0 if j complies only with GSM or TD-SCDMA
+0.035 if j complies only with LTE (or LTE and TD-SCDMA)
+0.05 otherwise
+In or after 2015: ϕj =
+
+
+
+0 if j complies only with GSM or TD-SCDMA
+0.02275 if j complies only with LTE (or LTE and TD-SCDMA)
+0.0325 otherwise
+(13)
+The first-order condition with respect to pj is
+(1 − ϕj)sj(p) +
+X
+h∈Jm(j)
+[(1 − ϕh)ph − wah − mcs
+h]∂sh(p)
+∂pj
+= 0. (14)
+45In ongoing work, we are modeling the process by which smartphone-SoC pairings are endogenously formed in the
+spirit of Eizenberg (2014).
+46The Chinese smartphone market is different from those in the U.S. and other countries in that the handsets are usually
+not bundled with carrier contracts. We therefore follow Wang (2023) in assuming that smartphone manufacturers directly
+control the retail prices faced by consumers.
+19
+
+The first-order conditions with respect to the prices of all products can be combined into the
+following equation:
+diag(1 − ϕ)s(p) + Ωs ◦ ∆s [diag(1 − ϕ)p − Aw − mcs] = 0, (15)
+where ϕ is a J-dimensional vector of royalty rates, the diag(·) function converts a vector into a diagonal
+matrix, s(p) is a vector of demands for all smartphones, and mcs is a vector containing the non-SoC
+marginal costs of all smartphones. w is a K-dimensional vector containing all SoC prices, and A is
+an “allocation matrix” whose elements are
+A(j, k) =
+(
+1 if aj = k
+0 otherwise . (16)
+Ωs is a J-by-J “smartphone ownership matrix” whose ( j, k)th element equals 1 if k ∈ Jm(j) and 0
+otherwise. ∆s is a J-by-J “smartphone response matrix” whose ( j, k)th element equals ∂sk(p)
+∂pj
+, and ◦
+represents the element-wise Hadamard product. We denote the solution to equation (15) by p∗(w, ϕ).
+By manipulating equation (15), we obtain the following expression for the vector of marginal costs
+faced by smartphone manufacturers:
+Aw + mcs = diag(1 − ϕ)p + (Ωs ◦ ∆s)−1 [diag(1 − ϕ)s(p)] (17)
+Note that the right-hand side of equation (17) is a function of p, s, ϕ, and parameters of the demand
+system. Therefore, once we have the demand parameter estimates in hand, we can use equation (17)
+to calculate the implied vector of smartphone manufacturers’ marginal costs.
+SoC Prices. We assume that SoC manufacturers compete in prices to maximize profits. However,
+there is an important difference between Qualcomm and its rival chipmakers. Whereas Qualcomm’s
+rivals maximize their profits from supplying SoCs, Qualcomm maximizes the sum of its SoC profits
+and royalty revenue from smartphone manufacturers. Using the subscript q to denote Qualcomm, the
+profit maximization problem of SoC manufacturer n ̸= q is expressed as
+max
+wk,k∈Kn
+X
+k∈Kn
+(wk − mcc
+k)
+X
+j∈{j:aj=k}
+Msj(p∗(w, ϕ)), (18)
+where mcc
+k is the marginal cost of SoC k and {j : aj = k} is the set of all smartphones that use SoC
+k. The first-order condition for profit maximization with respect to wk is
+X
+j∈{j:aj=k}
+sj(p∗(w, ϕ)) +
+X
+h∈Kn(k)
+(wh − mcc
+h)
+X
+j∈{j:aj=h}
+X
+l∈J
+∂sj(p∗(w, ϕ))
+∂pl
+∂p∗
+l (w, ϕ)
+∂wk
+= 0. (19)
+Meanwhile, Qualcomm’s profit maximization problem is
+max
+wk,k∈Kq
+X
+k∈Kq
+(wk − mcc
+k)
+X
+j∈{j:aj=k}
+Msj(p∗(w, ϕ)) +
+X
+j∈J
+ϕjp∗
+j (w, ϕ)Msj(p∗(w, ϕ)), (20)
+with the second term in the objective function representing the royalty revenues received for all
+smartphones employing the CDMA (excluding TD-SCDMA) or LTE standard, including those that
+20
+
+do not contain Qualcomm’s chips. The first-order condition for profit maximization by Qualcomm
+with respect to wk is
+X
+j∈{j:aj=k}
+sj(p∗(w, ϕ)) +
+X
+h∈Kq
+(wh − mcc
+h)
+X
+j∈{j:aj=h}
+X
+l∈J
+∂sj(p∗(w, ϕ))
+∂pl
+∂p∗
+l (w, ϕ)
+∂wk
++
+X
+j∈J
+ϕj
+"
+∂p∗
+j (w, ϕ)
+∂wk
+sj(p∗(w, ϕ)) + p∗
+j (w, ϕ)
+X
+l∈J
+∂sj(p∗(w, ϕ))
+∂pl
+∂p∗
+l (w, ϕ)
+∂wk
+#
+= 0. (21)
+To solve for SoC manufacturers’ equilibrium price-cost margins, it is necessary to combine the
+first-order conditions represented by (19) and (21) into a single equation. To do so, we define two
+additional objects: a K-by-K “SoC ownership matrix” Ωc, whose (j, k)th element equals 1 if k ∈ Kn(j)
+and 0 otherwise; and a “price pass-through matrix” ∆p, whose ( j, k)th element equals ∂pj
+∂wk
+. With
+these definitions in hand, the SoC manufacturers’ first-order conditions for profit maximization can
+collectively be written as follows:
+A′s(p∗(w, ϕ)) + diag(Ωc(kq, :))
+
+∆′
+pdiag(ϕ)s(p∗(w, ϕ)) + ∆′
+p∆sdiag(ϕ)p∗(w, ϕ)
+
++ Ωc ◦ (∆′
+p∆sA)(w − mcc) = 0, (22)
+where kq ∈ Kq denotes a specific SoC supplied by Qualcomm and Ωc(kq, :) is the kqth row of Ωc.47 By
+manipulating equation (22), we obtain the following expression for the vector of SoC manufacturers’
+price-cost margins:
+w − mcc =
+
+Ωc ◦ (∆′
+p∆sA)
+−1
+×
+
+−A′s(p∗(w, ϕ)) − diag(Ωc(kq, :))
+
+∆′
+pdiag(ϕ)s(p∗(w, ϕ)) + ∆′
+p∆sdiag(ϕ)p∗(w, ϕ)
+
+. (23)
+Following Berto Villas-Boas (2007) and Bonnet and Dubois (2010), the elements of the price
+pass-through matrix ∆p are calculated by applying the implicit function theorem to the smartphone
+manufacturers’ first-order conditions. Denoting the left-hand side of equation (14) by fj(p, w), the
+kth column of ∆p is obtained as
+
+
+∂p1
+∂wk
+...
+∂pJ
+∂wk
+
+ = −
+
+
+∂f1(p,w)
+∂p1
+. . .∂f1(p,w)
+∂pJ
+... ... ...
+∂fJ(p,w)
+∂p1
+. . .∂fJ(p,w)
+∂pJ
+
+
+−1 
+
+∂f1(p,w)
+∂wk
+...
+∂fJ(p,w)
+∂wk
+
+. (24)
+The partial derivatives contained in the right-hand side of equation (24) are derived as follows:
+∂fj(p, w)
+∂ph
+=(1 − ϕj)∂sj(p)
+∂ph
++ Ωs(j, h)(1 − ϕh)∂sh(p)
+∂pj
++
+X
+l∈Jm(j)
+[(1 − ϕl)pl − wal − mcs
+l ] ∂2sl(p)
+∂ph∂pj
+, (25)
+∂fj(p, w)
+∂wk
+=
+X
+l∈Jm(j)
+1(al = k)∂sl(p)
+∂pj
+, (26)
+47Note that Ωc(k, :) takes the same value for all k ∈ Kq.
+21
+
+where Ωs(j, h) represents the (j, h)th element of Ωs, and 1(·) is the indicator function. The first and
+second-order partial derivatives of market share with respect to price are derived in Appendix B for
+the two-level nested logit model.
+5 Estimation
+A Identification of Demand Parameters
+To estimate equation (11), we use the following product attributes in addition to price: display size,
+cellular standard (GSM, cdmaOne, CDMA2000, WCDMA, TD-SCDMA, or LTE), and operating
+system (Android, Windows, Symbian, or other). We also use fixed effects for city and year. In
+addition, we use indicator variables for specific pairs of smartphone brand and SoC supplier. GSM
+and cdmaOne belong to second generation (2G) of cellular standards; CDMA2000, WCDMA and
+TD-SCDMA belong to the third generation (3G); and LTE constitutes the fourth generation (4G).
+Each of these generations constitutes a second-level nest (see Figure 3). The first level of nests are
+defined as “large” and “small” brands. We place 18 brands into the large category, and construct
+a dummy variable for each. 48 The iOS operating system (for iPhones) is not captured by a dummy
+variable, because it is perfectly collinear with the brand dummy for Apple.
+We note that the product-specific error term ξj in equation (11) is observable to smartphone
+manufacturers and consumers, and may therefore affect their decisions. This implies that ξj may be
+correlated with the price variable pj as well as the conditional market shares sj|gb and sb|g. To deal
+with the potential endogeneity bias caused by this, we employ two classes of instrumental variables
+(IVs). The first class of IV is the number of products in each market (Bj¨ ornerstedt and Verboven,
+2016; Miller and Weinberg, 2017). This variable describes the competitive conditions faced by the
+firms in a market, so we expect it to be correlated with prices as well as conditional market shares.
+We assume that manufacturers’ product portfolios in each market are determined before the set of
+ξj, j∈ Jare observed by firms, so that the number of products is uncorrelated with ξj. This variable
+(and other IVs that treat all competing products equally) has the shortcoming that it does not account
+for the “closeness” between products, and hence may not accurately reflect the competitive conditions
+faced by firms. To address the potential problem of weak identification, we use the second class of
+instrumental variables: the “differentiation IVs” initially proposed by Gandhi and Houde (2020) and
+further developed by Michel, Paz y Mi˜ no, and Weiergraeber (forthcoming). This class of IVs also
+captures competitive conditions, but has the advantage that it accounts for the closeness between
+products in a market.
+We employ two types of differentiation IVs. The first type, which can be called “quadratic differ-
+entiation IVs”, are constructed by taking the quadratic distances between products i and j in terms of
+continuous attributes, and summing over the j rival products to measure the competitive conditions
+faced by product i (Gandhi and Houde, 2020). In our application, we use the display size of smart-
+phones as the continuous attribute. The second type, which can be called “promotion differential IVs”,
+are constructed by summing over the promotion activities of rival products j that fall within a certain
+distance range (in terms of a continuous product attribute) from product i (Michel, Paz y Mi˜ no, and
+48The following brands are placed in the large brand category: A1, C1, G1, H1, H2, H3, H4, K1, L1, L2, M1, M2,
+M3, N1, O1, S1, V1, and Z1. The baseline (omitted) brand for estimation purposes is “other brands”, which contains
+all brands belonging to the small brand category.
+22
+
+Weiergraeber, forthcoming). We use the natural logarithm of the sum of the number of city-markets
+in which product j is sold as a proxy for its promotion activities. The two types of differentiation IVs
+are expressed as
+Quadratic Differentiation IV: zq
+it =
+X
+j∈J
+(dx
+ij)2,
+Promotion Differentiation IV: zp
+it =
+X
+j∈J
+1(clb < |dx
+ij| < cub) × nj,
+where dx
+ij = xi −xj measures the distance between products i and j in terms of the continuous product
+attribute x. clb and cub are the lower bound and upper bound, respectively, of the distance range. In
+our application, we use the following pairs for ( clb, cub):
+
+0, maxj(dij)
+3
+
+and
+maxj(dij)
+3 , 2 maxj(dij)
+3
+
+. nj
+is the number of city-markets where product j is sold.
+We estimate equation (11), subject to instrumental variables, using the generalized method of
+moments (GMM).
+B Estimation Results
+Tables 2 and 3 display our estimates for the two-level nested logit demand system. Starting with Table
+2, the price coefficient α is -0.001 and statistically significant at the 1 percent level. The parameter
+λ, which represents the degree to which consumers’ unobserved utility is correlated across products
+within the same brand type for a given generation, is 0.398 and statistically significant. The parameter
+σ1, representing the degree to which unobserved utility is correlated within the same generation, is
+also statistically significant at 0.094. As expected, the estimate for σ1 is smaller than that for λ.
+Turning to the product attributes, we find that larger display size yields higher utility. We also
+find that 3G standards (CDMA2000, WCDMA, and TD-SCDMA) generate higher utility than 2G
+standards (GSM and cdmaOne), and that LTE generates even greater utility. Consumers are found
+to prefer the Android operating standard over Windows, while the Symbian operating system is found
+to generate higher utility than Android. As shown in Table 3, Apple smartphones (which exclusively
+use the iOS operating system) generate greater utility than the baseline category, which is defined as
+“small smartphone brands using the Android operating system and containing SoCs from suppliers
+other than Qualcomm, H, M, and SP”. We cannot separately identify the brand effect of Apple and
+the operating system effect of iOS.
+The other coefficient estimates in Table 3 show that consumers receive higher utility from smart-
+phone products supplied by large brands, relative to smaller brands in the “other brands” category.
+For the smartphone brands marked with a hash symbol (C1, H1, H2, O1, and V1), consumers receive
+similar utility from products containing Qualcomm SoCs and those containing SoCs from M. This
+suggests that for these brands, Qualcomm is in close competition with M.
+23
+
+Table 2: Demand Estimates (1): Overall
+Coefficient S.E.
+price: α −0.001∗∗∗ (0.000)
+ln(sj|bg): λ 0.398∗∗∗ (0.026)
+ln(sb|g): σ1 0.094∗∗ (0.043)
+Display size(inch) 0 .635∗∗∗ (0.031)
+Cellular standard (GSM = 0 )
+cdmaOne 0 .101∗∗∗ (0.016)
+CDMA2000 0 .920∗∗∗ (0.047)
+WCDMA 0 .967∗∗∗ (0.056)
+TD-SCDMA 0 .958∗∗∗ (0.052)
+LTE 1 .486∗∗∗ (0.096)
+Operating System (Android = 0)
+OS:Windows −0.442∗∗∗ (0.034)
+OS:Symbian 0 .462∗∗∗ (0.065)
+OS:Other −0.076 (0.050)
+Smartphone brand dummies × processor brand dummies
+(See Table 3)
+Year dummies Yes
+City dummies Yes
+Constant −9.949∗∗∗ (0.234)
+N 270,301
+R2 0.586
+Hansen′s J chi2(1) = 7.571 p = 0.006
+Note 1: Standard errors in parentheses. ∗ p <0.1, ∗∗ p <0.05, ∗∗∗ p <0.01.
+Note 2: Dummy for iOS of Apple is dropped as it is identical to Apple brand dummy.
+24
+
+Table 3: Demand Estimates (2): Coefficients of Smartphone Brand × SoC Supplier Dummies
+SoC supplier Qualcomm M H SP Other suppliers
+Coef. S.E. Coef. S.E. Coef. S.E. Coef. S.E. Coef. S.E.
+Smartphone brand
+A1 6.177 (.232)
+C1 1 .567# (.026) 1 .597# (.038) 2 .116 (.037) 1 .368 (.035)
+G1 1 .617 (.054) 2 .167 (.029) 1 .932 (.097) 1 .810 (.083)
+H1 1 .809# (.021) 1 .815# (.033) 3 .538 (.088) 1 .639 (.074) 1 .438 (.058)
+H2 1 .964# (.038) 1 .815# (.052) 2 .255 (.028)
+H3 2 .855 (.068) 1 .461 (.243) 3 .010 (.102)
+H4 0 .916 (.059) 0 .675 (.082) 1 .463 (.098) 0 .474 (.095)
+K1 0 .936# (.054) 1 .110# (.082) 1 .380 (.063) 1 .192 (.059)
+L1 1 .438 (.032) 1 .815 (.022) 2 .071 (.061) 1 .631 (.053)
+L2 1 .224 (.092) 1 .644 (.023)
+M1 2 .107 (.025) 1 .800 (.048) 2 .989 (.104)
+M2 1 .972 (.066) 1 .589 (.037) 2 .183 (.065)
+M3 2 .040 (.052) 1 .740 (.223) 2 .621 (.081)
+N1 3 .579 (.094) 1 .740 (.223) 2 .032 (.063)
+O1 3 .063# (.056) 3 .094# (.060) 2 .306 (.191)
+S1 3 .181 (.078) 2 .343 (.103) 2 .568 (.075) 3 .181 (.104)
+V1 2 .925# (.047) 2 .829# (.051)
+Z1 1 .042# (.044) 1 .161# (.046) 1 .628 (.089) 1 .038 (.058)
+Other brands −0.017 (.015) −0.070 (.013) 0 .030 (.024) –
+Note 1: Standard errors in parentheses.
+Note 2: All coefficient estimates are statistically significant with p values lower than 0.01, except terms Other brands× Qualcomm
+(p = 0.286) and Other brands× SP (p = p.220)
+Note 3: The smartphone brands marked with # are those for which the coefficient on the brand-supplier dummy for Qualcomm is
+similar to that on the brand-supplier dummy for M (in the sense that the difference between the two is less than 0.15).
+25
+
+Table 4: Estimated Own Price Elasticities
+Mean S.D. Min Max
+Smartphone brand
+A1 −8.2 3 .2 −21.5 −0.10
+H1+H2 −2.8 2 .3 −31.9 −0.24
+M1 −2.4 1 .3 −10.0 −0.41
+M2 −2.2 1 .1 −7.1 −0.17
+O1 + V1 −3.2 1 .5 −17.1 −0.72
+S1 −4.3 4 .2 −43.8 −0.35
+Table 4 summarizes the estimated own-price elasticities of demand for selected smartphone brands.
+The mean and standard deviation are taken over products and markets. The mean own-price elasiticity
+varies between -8.2 for A1 and -2.2 for M2.
+C Smartphone Marginal Costs
+Using our demand estimates, we are able to calculate the implied marginal costs of smartphones, in-
+clusive of SoC prices, using equation (17). Figure 4 plots the mean of the implied marginal costs, taken
+separately by cellular standard and SoC source (Qualcomm or non-Qualcomm). For the three stan-
+dards in which Qualcomm has a large patent portfolio and charges royalties – CDMA2000, WCDMA,
+and LTE – there appears to be a slight uptick in marginal costs after 2015 for smartphones containing
+Qualcomm chips, against a trend of lowering marginal costs.
+Figure 4: Implied Marginal Costs for Smartphone Manufacturers
+26
+
+6 Counterfactual Analysis
+A Estimating the Impact of the NDRC Intervention
+The antitrust branch of the Chinese government (NDRC) found in February 2015 that Qualcomm’s
+licensing practices for its SEPs covering the cdmaOne, CDMA2000, WCDMA, and LTE standards
+violated the country’s Anti-Monopoly Law. As part of the remedies, Qualcomm was ordered to
+effectively reduce the royalty rates it charges on smartphone sales. This is reflected in equation (13),
+which shows that the effective royalty rates on smartphones compliant with the cdmaOne, CDMA2000,
+and WCDMA standards were reduced from 5 percent to 3.25 percent, while those on smartphones
+compliant only with the LTE standard (or only with the LTE and TD-SCDMA standards) were
+reduced from 3.5 percent to 2.275 percent.
+In our counterfactual analysis, we envision a hypothetical scenario where the NDRC did not
+intervene in this manner. Thus, we allow Qualcomm’s royalty rates to remain at pre-2015 levels
+(5 percent for smartphones compliant with cdmaOne, CDMA2000, and WCDMA; 3.5 percent for
+smartphones compliant only with LTE, or only with LTE and TD-SCDMA) for the years 2015 and
+beyond. We calculate the counterfactual equilibrium, for each city in 2018, by finding the vector of
+price-cost margins for SoC suppliers such that the first-order conditions in equation (23) are satisfied
+under the hypothetical scenario. This is shown in equation (27), where ϕcf denotes Qualcomm’s
+royalty rates under the hypothetical scenario, and ∆ w is the change in SoC prices required to satisfy
+SoC suppliers’ first-order conditions for profit maximization.
+w + ∆w − mcc =
+
+Ωc ◦ (∆′
+p∆sA)
+−1
+×
+n
+− A′s
+
+p∗
+
+w + ∆w, ϕcf
+
+− diag(Ωc(kq, :))
+×
+h
+∆′
+pdiag
+
+ϕcf
+
+s
+
+p∗
+
+w + ∆w, ϕcf
+
++ ∆′
+p∆sdiag
+
+ϕcf
+
+p∗
+
+w + ∆w, ϕcf
+io
+(27)
+While our model allows us to identify SoC suppliers’ price-cost margins, data limitations preclude
+the separate identification of SoC prices and suppliers’ marginal costs. Under the assumption that SoC
+suppliers’ marginal costs are constant, however, we can identify the required change in SoC prices ∆w,
+because it is equivalent to the required change in SoC suppliers’ price-cost margins. Thus, our estimate
+for the NDRC intervention’s effect on SoC prices is given by −∆w, and its effect on smartphone
+manufacturers’ marginal costs is given by −A∆w (recall that A maps SoCs to smartphones).
+Using these results, we can calculate the change in smartphone prices caused by the NDRC in-
+tervention as p∗(w, ϕ) − p∗  
+w + ∆w, ϕcf 
+, where p∗  
+w + ∆w, ϕcf 
+is the solution to the first-order
+conditions for smartphone manufacturers’ profit maximization under the counterfactual, given by:
+diag(1 − ϕ)s(p) + Ωs ◦ ∆s
+h
+diag
+
+1 − ϕcf
+
+p − A(w + ∆w) − mcs
+i
+= 0. (28)
+When solving (28) for p, we estimate smartphone manufacturers’ marginal costs under the counter-
+factual, A(w + ∆w) + mcs, by adding A∆w to our original marginal cost estimates obtained from
+equation (17).
+27
+
+Figure 5: Changes Due to NDRC Intervention: Beijing, 2018
+(a) Smartphone marginal costs
+ (b) Smartphone prices
+(c) Smartphone units sold
+ (d) SoC price-cost margins
+Source: Authors’ estimation.
+Note: The histograms in panels (a) through (c) show the distribution of smartphone products, while the histogram in
+panel (d) shows the distribution of SoC products.
+B Results
+Intervention Impact in a Representative Market. The histograms in panels (a) through (c) of Figure
+5 show the NDRC intervention’s effect on the costs, prices, and quantities of smartphone products
+sold in Beijing in 2018. Panel (a) reveals that, while the impact on smartphone marginal costs varied
+across products, it was almost always positive. This conforms with our theoretical prediction from
+Section 2D that an exogenous reduction in royalty rates causes an increase in SoC prices. The same
+effect is evident in panel (d), which shows that the intervention had a largely positive impact on SoC
+suppliers’ price-cost margins.
+Meanwhile, panel (b) shows that the intervention’s impact on smartphone prices was mostly nega-
+tive. This implies that the price-lowering effect of the royalty reduction – via a reduction in smartphone
+manufacturers’ perceived marginal costs – tended to overwhelm the increase in SoC prices caused by
+the intervention. As a result, for a large number of smartphone products, sales volume increased as
+28
+
+a result of the intervention, as evidenced in panel (c). These results are mirrored in the other cities
+covered by our dataset.49
+Effect on Welfare Measures. Table 5 summarizes our simulation results by city. Column 1 shows
+that the weighted average change in smartphone marginal costs was positive in every city, ranging
+from 0.871 to 1.206 percent. This confirms our theoretical prediction in Section 2D that an exogenous
+reduction in the royalty rate increases the price of SoCs. Meanwhile, column 2 reveals that the
+weighted average change in smartphone prices was negative in every city. While the magnitude of
+price reduction was small, ranging between −0.376 and −0.736 percent (which is understandable
+given that the change in royalties is small relative to smartphone prices), the consistently negative
+sign supports the NDRC’s central theory of harm that Qualcomm’s elevated royalty rates caused
+smartphone prices to increase.
+Consumer surplus increased in every city as a result of the NDRC intervention, as is evident from
+column 4. As shown in column 3, the magnitude of the consumer surplus increase, measured in per-
+smartphone unit terms, varies from RMB 9.7 to 25.6 ( $1.47 to 3.87 at the prevailing exchange rate)
+per year. This amounts to 0.35 to 0.92 percent of the quantity-weighted average price of smartphones
+in 2018 (RMB 2,793) – a small but non-negligible increase.
+With regard to the impact on firm profits, the effect on SoC suppliers’ profit (disregarding the
+effect on Qualcomm’s royalty revenues for now) was positive. Column 5 shows that the combined
+profits from SoC supply (including Qualcomm’s) increased in every city. This is unsurprising, given
+that most SoCs experienced a price increase, and the general decrease in smartphone prices meant
+that the sales volume of SoCs tended to increase. The increase in SoC profits was greater than the
+increase in consumer surplus, ranging from 129 percent of the consumer surplus increase in Beijing,
+to 219 percent of the consumer surplus increase in Nanning.
+The overall effect on smartphone manufacturers’ profits was also positive in every city (column 6),
+although it was smaller than the effect on SoC suppliers’ profits. The intervention allowed smartphone
+manufacturers to earn higher profits, despite having to pay higher SoC prices and charging lower prices
+for their smartphones, because their royalty payments to Qualcomm decreased substantially. This is
+seen in column 7, which shows that the reduction in Qualcomm’s royalty revenue was quite large.
+By summing up the results in columns 4 through 7, we obtain city-wise estimates for the NDRC
+intervention’s effect on total surplus (column 8). It is positive in every city, ranging from RMB 30
+million per year in Xiamen to RMB 376 million per year in Beijing.
+49Histograms for the other cities are available from the authors upon request.
+29
+
+Table 5: Welfare Effects of NDRC Intervention: Changes by City in 2018
+(1) (2) (3) (4) (5) (6) (7) (8)
+Smartphone Smartphone Consumer surplus Overall consumer SoC profit Smartphone Qualcomm’s Total surplusmarginal cost price per smartphone surplus profit royalty revenue
+City (weighted average, %) (weighted average, %) (RMB) (million RMB) (million RMB) (million RMB) (million RMB) (million RMB)
+Beijing 0 .871 −0.720 23 .7 213 275 218 −360 376
+Changsha 1 .182 −0.514 15 .1 24 41 30 −53 43
+Chengdu 0 .964 −0.662 20 .4 73 108 84 −133 133
+Chongqing 1 .176 −0.504 14 .5 43 80 60 −95 88
+Guangzhou 1 .096 −0.545 15 .4 66 103 83 −134 119
+Harbin 1 .050 −0.609 19 .3 42 63 50 −75 80
+Hefei 1 .158 −0.521 14 .5 25 41 30 −53 42
+Kunming 1 .211 −0.447 11 .8 32 64 47 −81 60
+Nanjing 0 .878 −0.736 25 .6 74 97 74 −124 121
+Nanning 1 .309 −0.376 9 .7 16 36 28 −42 37
+Ningbo 1 .130 −0.548 16 .4 22 37 27 −47 39
+Shanghai 0 .901 −0.702 22 .7 196 258 204 −338 320
+Shenyang 1 .206 −0.493 14 .6 29 50 37 −66 51
+Shijiazhuang 1 .153 −0.536 16 .1 20 33 25 −42 37
+Suzhou 0 .948 −0.678 21 .6 45 62 48 −80 75
+Tianjin 1 .058 −0.597 17 .5 70 107 82 −138 122
+Xiamen 1 .152 −0.519 14 .5 18 31 22 −42 30
+Xian 1 .136 −0.520 14 .8 36 61 47 −79 66
+18 cities’ total 1 .085 −0.570 16 .8 1047 1551 1204 −1991 1811
+Note: Changes in smartphone marginal cost (column 1) and smartphone price (column 2) are presented as quantity-weighted averages over products.
+Total surplus (column 8) is calculated as the sum of columns 4 to 7.
+30
+
+Figure 6: Effect of NDRC Intervention on Smartphones: By SoC Source
+(a) Smartphone marginal costs
+ (b) Smartphone prices
+(c) Smartphone profits
+ (d) SoC profits
+Note: Each dot represents a smartphone product, with simple averages taken over the 18 cities shown in Table 5.
+Heterogeneous Impact on Smartphone Manufacturers and SoC Suppliers. The NDRC intervention had
+a heterogenous effect on smartphone manufacturers depending on their source of SoCs. As shown in
+panel (a) of Figure 6, smartphone products containing Qualcomm SoCs tended to experience a larger
+increase in marginal cost (due to higher SoC prices), relative to those containing non-Qualcomm SoCs,
+and as a result their prices were more likely to increase (panel (b)). As a consequence, smartphones
+containing Qualcomm chips were more likely to experience a reduction in profit, relative to smart-
+phones containing non-Qualcomm chips (panel (c)). These results suggest that Qualcomm had a
+greater incentive than other chipmakers to increase the price of SoCs after the intervention. While the
+reduction in royalty rates incentivized all SoC suppliers to increase their prices in the face of increased
+derived demand from smartphone manufacturers, it appears that Qualcomm’s optimal response was
+to raise its SoC prices even further, possibly to stem the fall in royalty revenue. 50
+This effect can be explained using the theoretical model in Section 2D. Equation (3) shows that
+the optimal SoC price for a supplier-licensor increases in response to an exogenous reduction in the
+50In addition, all SoC suppliers, including Qualcomm, are incentivized to increase their prices in response to a price
+increase by rivals; this strategic complementarity is a hallmark of price competition models.
+31
+
+Table 6: Impact of NDRC Intervention on SoC Suppliers’ Profits in 2018
+SoC Supplier H M Qualcomm S
+Change in mil. RMB
+Profit from SoC supply 391 .5 82 .4 367 .8 2 .6
+Royalty revenue - - −1991.5 -
+Percentage change
+Variable profit from SoC supply 4 .9 2 .4 3 .7 3 .5
+Variable profit and royalty revenue - - −6.8 -
+Note: Based on 12,502 observations in 18 cities.
+royalty rate ϕ. The underlying mechanism is as follows. To begin with, the supplier-licensor sets its
+SoC price w with the objective of maximizing royalty revenues, which is equivalent to maximizing
+smartphone revenues (since royalties are a fixed percentage of revenues). Meanwhile, a reduction in
+ϕ enables smartphone manufacturers to lower their prices, as implied by equation (2), and this tends
+to increase the supply of smartphones. Given that smartphone revenues were maximized to begin
+with, a supply increase would cause a reduction in smartphone revenues. The supplier-licensor tries
+to prevent such a reduction by increasing its SoC price. 51
+The higher SoC prices after the intervention, coupled with the tendency of SoC sales volume to
+increase (as a result of lower smartphone prices), increased the profits from SoC supply. Panel (d) of
+Figure 6 as well as Table 6 illustrate this effect for individual SoC suppliers. H was the largest gainer;
+its variable profit (defined as revenue minus variable cost) increased by 4.9 percent as a result of the
+intervention. Qualcomm’s variable profit increased as well, but this was overwhelmed by the reduction
+in royalty revenue (which amounted to RMB 1.99 billion in 2018), causing the sum of Qualcomm’s
+variable profit from SoC supply and royalty revenue to decrease by 6.8 percent.
+The SoC suppliers’ heterogeneous response to the intervention translates into a differential impact
+among smartphone manufacturers. As shown in panel (a) of Figure 7, smartphone brands H1 and H2
+(which are owned by the same company) tended to experience a relatively small percentage increase
+in marginal cost after the NDRC intervention, while brand M1 tended to experience a large increase.
+This can be attributed to a difference in their SoC sourcing strategies. The owner of H1 and H2 has an
+SoC subsidiary, called H, from which the two brands source much of their SoC requirements. 52 This
+has allowed H1 and H2 to limit their dependence on Qualcomm products.53 To a large extent, H1 and
+H2 were able to shield themselves from the drastic increase in SoC price by Qualcomm, so that most
+of their smartphone products experienced a price reduction in response to the intervention, as seen in
+panel (b) of Figure 7. As a result, H1 and H2 were able to increase their profits, as is apparent from
+panel (c) of Figure 7. From the first column of Table 7, we can see that H1 and H2’s profit increase
+was driven by the large reduction in royalty payments to Qualcomm; H1 and H2’s royalty payments
+decreased by 32.8 percent as a result of the intervention, and other smartphone brands’ payments
+51Note, from equation (2), that smartphone prices are increasing in the SoC price at the equilibrium.
+52In 2018, 72.1 percent of H1’s products and 84.2 percent of H2’s products in the 4G category used SoCs supplied by
+H.
+53To illustrate, only 22.6 percent of H1’s products and 13.9 percent of H2’s products in the 4G category used SoCs
+supplied by Qualcomm in 2018.
+32
+
+Figure 7: Effect of NDRC Intervention on Smartphones: By Smartphone Brand
+(a) Smartphone marginal costs
+ (b) Smartphone prices
+(c) Smartphone profits
+ (d) Royalty payments to Qualcomm
+Note: Each dot represents a smartphone product, with simple averages taken over the 18 cities shown in Table 5.
+Brands H1 and H2, and brands O1 and V1 are respectively two brands owned by the same company.
+experienced a similar reduction.
+By contrast, brand M1 has sourced a large share of its SoC requirements from Qualcomm. 54 This
+has resulted in M1’s products experiencing a large post-intervention increase in marginal cost (panel
+(a) of Figure 7), and a relatively large proportion of those products experienced a price increase (panel
+(b)). As a consequence, M1’s profits fell following the NDRC intervention, and this can be seen in
+panel (c) of Figure 7 as well as Table 7.
+Overall, the NDRC intervention’s impact on smartphone manufacturers appears to have varied
+according to the following factors: (i) whether or not the smartphone manufacturer is vertically
+integrated into SoC supply (as in the case of H1 and H2), and (ii) the price range of the smartphone
+manufacturer’s product portfolio. With regard to the latter factor, S1 was able to lower the price for
+most of its products and increase its profit, even though its reliance on Qualcomm chips was fairly high
+(panels (b) and (c) of Figure 7). 55 This is because S1’s product portfolio contains a relatively large
+number of high-priced smartphones, implying that the percentage increase in smartphone marginal
+54In 2018, 87.4 percent of M1’s products in the 4G category used Qualcomm SoCs.
+55In 2018, 87.7 percent of S1’s products in the 4G category used Qualcomm SoCs.
+33
+
+Table 7: Impact of NDRC Intervention on Smartphone Manufacturers’ Profits in 2018
+Smartphone manufacturer H1+H2 M1 M2 O1+V1 S1
+Change in mil. RMB
+Profit from smartphone supply 359 .8 −11.3 5 .2 197 .2 30 .8
+Royalty payment −579.9 −81.1 −19.7 −654.6 −67.8
+Percentage change
+Smartphone marginal cost 0 .7 2 .4 1 .4 1 .3 1 .1
+Smartphone price −0.8 0 .4 −0.2 −0.3 −0.7
+Smartphone units sold 2 .6 −2.0 −0.7 0 .3 5 .4
+Variable profit 4 .5 −0.9 1 .6 2 .0 5 .9
+Royalty payment −32.8 −36.6 −35.3 −35.0 −31.3
+Note: The percentage change in smartphone marginal costs and prices are quantity-weighted averages.
+costs was kept low (panel (a)). 56
+7 Conclusion
+The effect of Qualcomm’s licensing policy for its standard-essential patents (SEPs) on market outcomes
+has been the subject of intense debate and legal dispute. In particular, it has been an open question
+whether the elevated royalty rates charged by Qualcomm had the effect of increasing smartphone
+prices, to the detriment of consumers. Our theoretical analysis revealed that elevated royalty rates
+could lead to either higher or lower smartphone prices, so that the actual effect in a specific market is
+an empirical question.
+The 2015 intervention by China’s antitrust agency, the NDRC, lowered the effective royalty rate
+that Qualcomm charges to smartphone manufacturers by 1.23 - 1.75 percentage points. We evaluated
+the effect of this policy through a counterfactual analysis based on a structural econometric model
+covering the vertically related markets for smartphones and SoCs. Using our estimates for the model,
+we calculated SoC suppliers’ price-cost margins and smartphone prices for each city in 2018, under
+the counterfactual scenario that the NDRC did not intervene. By comparing these results with the
+actual outcomes, we found that the intervention increased smartphone manufacturers’ marginal costs
+by around 1.1 percent on average, and that it lowered smartphone prices by around 0.6 percent on
+average.
+As a result, consumer surplus increased by around RMB 1 billion in 2018 in the 18 cities covered
+by our analysis. SoC suppliers’ profits (excluding Qualcomm’s royalty receipts) increased by around
+RMB 1.6 billion, but the increase in Qualcomm’s SoC profits was overwhelmed by the reduction in its
+royalty revenue (around 2.0 billion). Smartphone manufacturers’ profits increased by around RMB 1.2
+billion, but some manufacturers experienced a reduction in profit. Total surplus increased by around
+RMB 1.8 billion, so that in hindsight, the intervention can be justified on static social welfare grounds.
+56Further details regarding the heterogeneous impact of the intervention on SoC suppliers and smartphone manufac-
+turers are available from the authors upon request.
+34
+
+References
+Ben-Akiva, M., and S. Lerman. 1985. Discrete Choice Analysis: Theory and Application to Travel
+Demand. MIT Press.
+Berto Villas-Boas, S. 2007. “Vertical Relationships between Manufacturers and Retailers: Inference
+with Limited Data.” The Review of Economic Studies 74:625–652.
+Bj¨ ornerstedt, J., and F. Verboven. 2016. “Does Merger Simulation Work? Evidence from the Swedish
+Analgesics Market.” American Economic Journal: Applied Economics 8:125–164.
+Bonnet, C., and P. Dubois. 2010. “Inference on vertical contracts between manufacturers and retailers
+allowing for nonlinear pricing and resale price maintenance.” RAND Journal of Economics 41:139–
+164.
+Chatterjee, C., K. Kubo, and V. Pingali. 2015. “The Consumer Welfare Implications of Governmental
+Policies and Firm Strategy in Markets for Medicines.” Journal of Health Economics 44:255–273.
+Ciliberto, F., G. Moschini, and E.D. Perry. 2019. “Valuing Product Innovation: Genetically Engineered
+Varieties in US Corn and Soybeans.” RAND Journal of Economics 50:615–644.
+Eizenberg, A. 2014. “Upstream Innovation and Product Variety in the U.S. Home PC Market.”Review
+of Economic Studies 81:1003–1045.
+Fan, Y., and G. Zhang. 2022. “The Welfare Effect of a Consumer Subsidy with Price Ceilings: The
+Case of Chinese Cell Phones.” RAND Journal of Economics 53:429–449.
+Gandhi, A., and J.F. Houde. 2020. “Measuring Substitution Patterns in Differentiated-Products In-
+dustries.” Working paper No. w26375, National Bureau of Economic Research, Cambridge, MA.
+Kim, C. 2020. “Incentive to Raise Rivals’ Costs: Patent Licensing in Vertically Integrated Markets.”
+Journal of Economic Theory and Econometrics 31:86–96.
+Lemley, M.A. 2002. “Intellectual Property Rights and Standard-Setting Organizations.” California
+Law Review 90:1889–1980.
+Lemley, M.A., and C. Shapiro. 2007. “Patent Holdup and Royalty Stacking.” Texas Law Review
+85:1991–2049.
+Lerner, J., and J. Tirole. 2004. “Efficient Patent Pools.” American Economic Review 94:691–711.
+Michel, C., J.M. Paz y Mi˜ no, and S. Weiergraeber. 2023. “Estimating Industry Conduct Using Promo-
+tion Data - The Evolution of Pricing Behavior in the U.S. RTE Cereal Industry.” Working paper.
+Miller, N.H., and M.C. Weinberg. 2017. “Understanding the Price Effects of the MillerCoors Joint
+Venture.” Econometrica 85:1763–1791.
+Padilla, J., and K.W. Wong-Ervin. 2017. “Portfolio Licensing to Makers of Downstream End-User
+Devices: Analyzing Refusals to License FRAND-Assured Standard-Essential Patents at the Com-
+ponent Level.” Antitrust Bulletin 62:494–513.
+35
+
+RCR Wireless News. 2006. “Qualcomm’s TD-SCDMA Patent Claims Bear More Weight as
+China Moves Closer to Deployments.” URL: https://www.rcrwireless.com/20060313/archived-
+articles/qualcomms-td-scdma-patent-claims-bear-more-weight-as-china-moves-closer-to-
+deployments.
+—. 2008. “TD-SCDMA Favors Domestic Chinese Vendors: But Brand Power May Favor Global Hand-
+set Firms in Slow Ramp.” URL: https://www.rcrwireless.com/20080602/chips/td-scdma-favors-
+domestic-chinese-vendors.
+Shapiro, C. 2000. “Navigating the Patent Thicket: Cross Licenses, Patent Pools, and Standard Set-
+ting.” Innovation Policy and the Economy 1:119–150.
+Train, K.E. 2009. Discrete Choice Methods with Simulation . CambridgeUniversity Press.
+Verboven, F. 1996. “International Price Discrimination in the European Car Market.” RAND Journal
+of Economics 27:240.
+Wang, P. 2023. “Product Portfolio Choices with Product Life Cycles.” Working paper.
+Yang, C. 2020. “Vertical structure and innovation: A study of the SoC and smartphone industries.”
+RAND Journal of Economics 51:739–785.
+Yang, S., and T. Jung. 2014. “Co-evolution of Markets for Technology and Markets for Products in
+Mobile Telecommunication Standards: Examination of Essential Patents for GSM, WCDMA, and
+LTE Standards.” In Proceedings of PICMT ’14: Infrastructure and Service Integration . pp. 61–67.
+36
+
+Appendix A Derivation of Estimating Equation for the Two-Level
+Nested Logit Demand Model
+Using the definition of the inclusive value for brand type b, the choice probability of product j,
+conditional on brand type b in generation g being chosen, can be rewritten as sj|gb =
+exp
+ δj
+1−λ
+
+exp
+ Igb
+1−λ
+.
+Taking its natural logarithm and rearranging yields
+ln (sj|gb) = δj + λ ln (sj|gb) − Igb.
+Similarly using the definition of the inclusive value for generation g, the choice probability of brand
+type b, conditional on generation g being chosen, can be rewritten as sb|g =
+exp
+ Igb
+1−σ1
+
+exp
+ Ig
+1−σ1
+. Taking its
+natural logarithm and rearranging yields
+ln (sb|g) = σ1 ln (sb|g) + Igb − Ig.
+We also note that ln (sg) = Ig − ln [1 +P
+g′∈G exp (Ig′)] and
+ln (s0) = ln
+"
+1
+1 + P
+g′∈G exp (Ig′)
+#
+= −ln [1 +
+X
+g′∈G
+exp (Ig′)].
+Combining these results, we obtain the estimation equation in (11):
+ln (sj) − ln (s0) = ln (sj|gb) + ln (sb|g) + ln (sg) − ln (s0)
+= δj + λ ln (sj|gb) + σ1 ln (sb|g).
+37
+
+Appendix B Partial Derivatives of Unconditional Market Share
+First-order partial derivatives.
+∂sj
+∂pk
+=
+
+
+
+− αsj
+1−λ
+
+1 − σ2sj|gb − σ1(1 − σ2)sj|gbsb|g − (1 − λ)sj
+
+if k = j
+αsj
+1−λ
+
+σ2sk|gb + σ1(1 − σ2)sk|gbsb|g + (1 − λ)sk
+
+if k ∈ Jgb, k̸= j
+αsj
+1−λ
+
+σ1(1 − σ2)sk|gb′sb′|g + (1 − λ)sk
+
+if k ∈ Jgb′
+αsjsk
+if k ∈ Jg′
+∂sj|gb
+∂pk
+=
+
+
+
+− α
+1−λsj|gb(1 − sj|gb) if k = j
+α
+1−λsj|gbsk|gb if k ∈ Jgb, k̸= j
+0 if k /∈ Jgb
+∂sb|g
+∂pk
+=
+
+
+
+−α(1−σ2)
+1−λ sk|gbsb|g(1 − sb|g) if k ∈ Jgb
+α(1−σ2)
+1−λ sk|gb′sb′|gsb|g if k ∈ Jgb′
+0 if k ∈ Jg′
+38
+
+Second-order partial derivatives.
+∂2sj
+∂pl∂pk
+=
+
+
+
+α2sj
+(1 − λ)2
+
+1 − σ2sj|gb − σ1(1 − σ2)sj|gbsb|g − (1 − λ)sj
+
+×
+
+1 − σ2sj|gb − σ1(1 − σ2)sj|gbsb|g − 2(1 − λ)sj
+
+−
+
+σ2 + σ1(1 − σ2)sb|g
+
+sj|gb(1 − sj|gb)
+−σ1(1 − σ2)2s2
+j|gbsb|g(1 − sb|g)
+
+if k = l = j
+− α2sj
+(1 − λ)2
+
+1 − σ2sj|gb − σ1(1 − σ2)sj|gbsb|g − 2(1 − λ)sj
+
+×
+
+σ2sl|gb + σ1(1 − σ2)sl|gbsb|g + (1 − λ)sl
+
+−
+
+σ2 + σ1(1 − σ2)sb|g
+
+sj|gbsl|gb
++ σ1(1 − σ2)2sj|gbsb|gsl|gb(1 − sb|g)
+
+if k = j, l∈ {Jgb \ j}
+− α2sj
+(1 − λ)2
+
+1 − σ2sj|gb − σ1(1 − σ2)sj|gbsb|g − 2(1 − λ)sj
+
+×
+
+σ1(1 − σ2)sl|gb′ sb′|g + (1 − λ)sl
+
+− σ1(1 − σ2)2sj|gbsb|gsl|gb′ sb′|g
+
+if k = j, l∈ Jgb′
+− α2sjsl
+1 − λ
+
+1 − σ2sj|gb − σ1(1 − σ2)sj|gbsb|g − 2(1 − λ)sj
+
+if k = j, l∈ Jg′
+− α2sj
+(1 − λ)2
+
+1 − σ2sj|gb − σ1(1 − σ2)sj|gbsb|g − 2(1 − λ)sj
+
+×
+
+σ2sk|gb + σ1(1 − σ2)sk|gbsb|g + (1 − λ)sk
+
+−
+
+σ2 + σ1(1 − σ2)sb|g
+
+sj|gbsk|gb
++ σ1(1 − σ2)2sj|gbsb|gsk|gb(1 − sb|g)
+
+if k ∈ {Jgb \ j}, l= j
+α2sj
+(1 − λ)2
+
+σ2sk|gb + σ1(1 − σ2)sk|gbsb|g + (1 − λ)sk
+
+×
+
+σ2sk|gb + σ1(1 − σ2)sk|gbsb|g + 2(1 − λ)sk
+
+−
+
+σ2 + σ1(1 − σ2)sb|g
+
+sk|gb(1 − sk|gb)
+−σ1(1 − σ2)2s2
+k|gbsb|g(1 − sb|g) − (1 − λ)sk
+
+if k ∈ {Jgb \ j}, l= k
+α2sj
+(1 − λ)2
+
+σ2sk|gb + σ1(1 − σ2)sk|gbsb|g + 2(1 − λ)sk
+
+×
+
+σ2sl|gb + σ1(1 − σ2)sl|gbsb|g + (1 − λ)sl
+
++
+
+σ2 + σ1(1 − σ2)sb|g
+
+sk|gbsl|gb
+−σ1(1 − σ2)2sk|gbsb|gsl|gb(1 − sb|g)
+
+if k ∈ {Jgb \ j}, l∈ {Jgb \ {j, k}}
+α2sj
+(1 − λ)2
+
+σ2sk|gb + σ1(1 − σ2)sk|gbsb|g + 2(1 − λ)sk
+
+×
+
+σ1(1 − σ2)sl|gb′ sb′|g + (1 − λ)sl
+
++σ1(1 − σ2)2sk|gbsb|gsl|gb′ sb′|g
+
+if k ∈ {Jgb \ j}, l∈ Jgb′ ,
+α2sjsl
+1−λ
+
+σ2sk|gb + σ1(1 − σ2)sk|gbsb|g + 2(1 − λ)sk
+
+if k ∈ {Jgb \ j}, l∈ Jg′
+39
+
+∂2sj
+∂pl∂pk
+=
+
+
+
+− α2sj
+(1 − λ)2
+
+1 − σ2sj|gb − σ1(1 − σ2)sj|gbsb|g − 2(1 − λ)sj
+
+×
+
+σ1(1 − σ2)sk|gb′ sb′|g + (1 − λ)sk
+
+− σ1(1 − σ2)2sj|gbsb|gsk|gb′ sb′|g
+
+if k ∈ Jgb′ , l= j
+α2sj
+(1 − λ)2
+
+σ1(1 − σ2)sk|gb′ sb′|g + (1 − λ)sk
+
+×
+
+σ2sl|gb + σ1(1 − σ2)sl|gbsb|g + 2(1 − λ)sl
+
++σ1(1 − σ2)2sk|gb′ sb′|gsl|gbsb|g
+
+if k ∈ Jgb′ , l∈ {Jgb \ j}
+α2sj
+(1 − λ)2
+
+σ1(1 − σ2)sk|gb′ sb′|g + (1 − λ)sk
+
+×
+
+σ1(1 − σ2)sk|gb′ sb′|g + 2(1 − λ)sk
+
+− σ1(1 − σ2)sk|gb′ (1 − sk|gb′ )sb′|g
+− σ1(1 − σ2)2s2
+k|gb′ sb′|g(1 − sb′|g)
+−(1 − λ)(1 − σ2sk|gb′ )sk
+
+if k ∈ Jgb′ , l= k
+α2sj
+(1 − λ)2
+
+σ1(1 − σ2)sk|gb′ sb′|g + 2(1 − λ)sk
+
+×
+
+σ1(1 − σ2)sl|gb′ sb′|g + (1 − λ)sl
+
++ σ1(1 − σ2)sk|gb′ sl|gb′ sb′|g
+− σ1(1 − σ2)2sk|gb′ sb′|gsl|gb′ (1 − sb′|g)
++(1 − λ)σ2sksl|gb′
+
+if k ∈ Jgb′ , l∈ {Jgb′ \ k}
+α2sj
+(1 − λ)2
+
+σ1(1 − σ2)sk|gb′ sb′|g + 2(1 − λ)sk
+
+×
+
+σ1(1 − σ2)sl|gb′′ sb′′|g + (1 − λ)sl
+
++σ1(1 − σ2)2sk|gb′ sb′|gsl|gb′′ sb′′|g
+
+if k ∈ Jgb′ , l∈ Jgb′′
+α2sjsl
+1−λ
+
+σ1(1 − σ2)sk|gb′ sb′|g + 2(1 − λ)sk
+
+if k ∈ Jgb′ , l∈ Jg′
+−
+α2sjsk
+1−λ
+
+1 − σ2sj|gb − σ1(1 − σ2)sj|gbsb|g − 2(1 − λ)sj
+
+if k ∈ Jg′b′′ , l= j
+α2sjsk
+1−λ
+
+σ2sl|gb + σ1(1 − σ2)sl|gbsb|g + 2(1 − λ)sl
+
+if k ∈ Jg′b′′ , l∈ {Jgb \ j}
+α2sjsk
+1−λ
+
+σ1(1 − σ2)sl|gb′ sb′|g + 2(1 − λ)sl
+
+if k ∈ Jg′b′′ , l∈ Jgb′
+−
+α2sjsk
+1−λ
+
+1 − σ2sk|g′b′′ − σ1(1 − σ2)sk|g′b′′ sb′′|g′ − 2(1 − λ)sk
+
+if k ∈ Jg′b′′ , l= k
+α2sjsk
+1−λ
+
+σ2sl|g′b′′ + σ1(1 − σ2)sl|g′b′′ sb′′|g′ + 2(1 − λ)sl
+
+if k ∈ Jg′b′′ , l∈ {Jg′b′′ \ k}
+α2sjsk
+1−λ
+
+σ1(1 − σ2)sl|g′b′′′ sb′′′|g′ + 2(1 − λ)sl
+
+if k ∈ Jg′b′′ , l∈ Jg′b′′′
+2α2sjsksl if k ∈ Jg′b′′ , l∈ Jg′′
+40
