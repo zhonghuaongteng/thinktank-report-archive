@@ -1,12 +1,40 @@
+import tempfile
 import unittest
+from pathlib import Path
 
-from scripts.extend_viewpoint_eu_jrc_selected_fulltexts import SELECTED_ITEMS, sanitize_extracted_text, selected_slice
+from scripts.extend_viewpoint_eu_jrc_selected_fulltexts import (
+    SELECTED_ITEMS,
+    reusable_existing_row,
+    sanitize_extracted_text,
+    selected_slice,
+)
 
 
 class EuJrcSelectedFulltextsTests(unittest.TestCase):
     def test_selection_is_small_and_covers_every_year(self):
-        self.assertEqual(len(SELECTED_ITEMS), 22)
+        self.assertEqual(len(SELECTED_ITEMS), 28)
         self.assertEqual({item["date"][:4] for item in SELECTED_ITEMS}, {str(year) for year in range(2016, 2027)})
+
+    def test_bounded_china_innovation_increment_is_present(self):
+        expected_increment = {
+            "C-EU-JRC-JRC101970",
+            "C-EU-JRC-JRC102148",
+            "C-EU-JRC-JRC121184",
+            "C-EU-JRC-JRC133613",
+            "C-EU-JRC-JRC137266",
+            "C-EU-JRC-JRC142637",
+        }
+        self.assertTrue(expected_increment.issubset({item["id"] for item in SELECTED_ITEMS}))
+
+    def test_existing_complete_assets_are_reused(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            paths = [Path(temp_dir) / name for name in ("source.pdf", "page.html", "text.txt", "slice.md")]
+            for path in paths:
+                path.write_text("existing", encoding="utf-8")
+            self.assertTrue(reusable_existing_row({"报告ID": "existing"}, paths))
+            paths[-1].unlink()
+            self.assertFalse(reusable_existing_row({"报告ID": "existing"}, paths))
+            self.assertFalse(reusable_existing_row(None, paths))
 
     def test_selection_covers_science_technology_and_innovation_mechanisms(self):
         axes = {axis for item in SELECTED_ITEMS for axis in item["axes"]}
