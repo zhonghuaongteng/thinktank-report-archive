@@ -55,6 +55,12 @@ SELECTED_ITEMS = (
     _item("C-EU-JRC-JRC144638", 2025, "The 2025 EU Industrial R&D Investment Scoreboard", ("研发投入与创新政策", "国际合作与中国比较"), "最新完整企业研发投入与全球竞争比较节点"),
     _item("C-EU-JRC-JRC145507", 2026, "Tracking country innovation performance: The Innovation Output Indicator 2025", ("创新测量与政策方法", "产业创新与成果转化"), "国家创新绩效最新测量节点"),
     _item("C-EU-JRC-JRC147828", 2026, "Quantum Technologies. Comparative Analysis of Media Narratives and the Scientific Landscape", ("关键与新兴技术", "科学体系与科研能力", "国际合作与中国比较"), "量子科技科学版图与政策叙事的跨国比较节点"),
+    _item("C-EU-JRC-JRC111622", 2018, "Monitoring scientific collaboration trends in wind energy components", ("科学体系与科研能力", "关键与新兴技术", "创新测量与政策方法", "国际合作与中国比较"), "以论文与专利联系观察风能部件科研合作网络及中国位置"),
+    _item("C-EU-JRC-JRC115449", 2019, "Distribution of industrial research & innovation activities: An application of the technology readiness levels", ("研发投入与创新政策", "关键与新兴技术", "产业创新与成果转化", "国际合作与中国比较"), "以技术成熟度分布比较工业研发和创新活动的空间组织"),
+    _item("C-EU-JRC-JRC128744", 2022, "AI Watch Index 2021", ("研发投入与创新政策", "关键与新兴技术", "创新测量与政策方法", "国际合作与中国比较"), "AI能力、科研、人才、投资与产业活动的国际综合测量节点"),
+    _item("C-EU-JRC-JRC137550", 2024, "Diversity in Artificial Intelligence Conferences", ("科学体系与科研能力", "关键与新兴技术", "科技人才与技能", "创新测量与政策方法", "国际合作与中国比较"), "从AI会议参与结构比较科研共同体的地域与人才多样性"),
+    _item("C-EU-JRC-JRC140126", 2025, "Interrogating the research and development pipeline of artificial intelligence (AI) in health: diagnosis and prediction-based diagnosis", ("科学体系与科研能力", "研发投入与创新政策", "关键与新兴技术", "国际合作与中国比较"), "医疗AI从科研产出、临床开发到应用管线的跨国比较"),
+    _item("C-EU-JRC-JRC142609", 2025, "Trends in Patents in Life Sciences: focus on Pharmaceuticals and Medical Technologies", ("科学体系与科研能力", "关键与新兴技术", "产业创新与成果转化", "创新测量与政策方法", "国际合作与中国比较"), "以专利趋势观察生命科学技术能力、转化方向与中国位置"),
 )
 
 

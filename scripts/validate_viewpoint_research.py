@@ -192,6 +192,8 @@ def expected_eu_jrc_selected_ids() -> set[str]:
         "C-EU-JRC-JRC129967", "C-EU-JRC-JRC131882", "C-EU-JRC-JRC133613", "C-EU-JRC-JRC134319", "C-EU-JRC-JRC134544",
         "C-EU-JRC-JRC137266", "C-EU-JRC-JRC137811", "C-EU-JRC-JRC138601", "C-EU-JRC-JRC142093", "C-EU-JRC-JRC142637", "C-EU-JRC-JRC144638",
         "C-EU-JRC-JRC145507", "C-EU-JRC-JRC147828",
+        "C-EU-JRC-JRC111622", "C-EU-JRC-JRC115449", "C-EU-JRC-JRC128744",
+        "C-EU-JRC-JRC137550", "C-EU-JRC-JRC140126", "C-EU-JRC-JRC142609",
     }
 
 
@@ -982,12 +984,12 @@ def main() -> None:
     assert {r["发布日期"][:4] for r in eu_jrc_light} == {str(year) for year in range(2016, 2027)}
     eu_jrc_selected = rows(root / "188_欧委会JRC科学技术创新政策跨期精选全文台账.csv")
     assert {r["报告ID"] for r in eu_jrc_selected} == expected_eu_jrc_selected_ids()
-    assert sum(int(r["页数"]) for r in eu_jrc_selected) == 1867
-    assert sum(int(r["字节数"]) for r in eu_jrc_selected) == 91952810
-    assert sum(int(r["清洗文本字符数"]) for r in eu_jrc_selected) == 4795509
-    assert sum(int(r["China词形命中数"]) for r in eu_jrc_selected) == 3705
-    assert sum(int(r["China词形命中数"]) > 0 for r in eu_jrc_selected) == 22
-    assert sum(r["中国直接信号"] == "是" for r in eu_jrc_selected) == 17
+    assert sum(int(r["页数"]) for r in eu_jrc_selected) == 2133
+    assert sum(int(r["字节数"]) for r in eu_jrc_selected) == 104781564
+    assert sum(int(r["清洗文本字符数"]) for r in eu_jrc_selected) == 5404371
+    assert sum(int(r["China词形命中数"]) for r in eu_jrc_selected) == 3878
+    assert sum(int(r["China词形命中数"]) > 0 for r in eu_jrc_selected) == 28
+    assert sum(r["中国直接信号"] == "是" for r in eu_jrc_selected) == 23
     assert all(
         Path(r["本地原始PDF"]).exists() and Path(r["本地页面HTML"]).exists()
         and Path(r["本地文本"]).exists() and Path(r["本地切片"]).exists()
@@ -1091,7 +1093,7 @@ def main() -> None:
     assert sum(int(r["网页归档字节数"]) for r in nasem_selected) == 7243099
     assert sum(int(r["清洗文本字符数"]) for r in nasem_selected) == 6132897
     progress_text = (root / "210_本地资料库实时进度看板.md").read_text(encoding="utf-8")
-    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2058条", "仅目录与官方入口：8341条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：712条"):
+    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2064条", "仅目录与官方入口：8335条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：712条"):
         assert marker in progress_text
     institution_progress = rows(root / "211_机构采集进度.csv")
     assert len(institution_progress) == 46

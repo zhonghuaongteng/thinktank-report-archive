@@ -1,0 +1,3229 @@
+EUR 40201 
+ISSN 1831-9424 
+Chassaigne, H., Panidis, D., Reina, V., Xyderou, P., 
+Griesinger, C. 
+2025 
+ 
+Interrogating the research and 
+development pipeline of artificial 
+intelligence (AI) in health: diagnosis and 
+prediction-based diagnosis
+
+JRC140126 
+ 
+EUR 40201 
+ 
+ 
+PDF  ISBN 978-92-68-23993-3  ISSN 1831-9424  doi:10.2760/8612579  KJ-01-25-044-EN-N 
+ 
+Luxembourg: Publications Office of the European Union, 2025  
+ 
+© European Union, 2025  
+ 
+ 
+ 
+ 
+ 
+ 
+The reuse policy of the European Commission documents is implemented by the Commission Decision 2011/833/EU of 12 December 2011 
+on the reuse of Commission documents (OJ L 330, 14.12.2011, p. 39). Unless otherwise noted, the reuse of this document is authorised 
+under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence (https://creativecommons.org/licenses/by/4.0/). This means that 
+reuse is allowed provided appropriate credit is given and any changes are indicated.  
+ 
+For a
+ny use or reproduction of photos or other material that is not owned by the European Union permission must be sought directly from 
+the copyright holders. 
+- Cover page illustration, © Suriyo / stock.adobe.com (# 830791375) 
+ 
+How to cite this report: European Commission: Joint Research Centre, Chassaigne, H., Panidis, D., Reina, V., Xyderou, P. and Griesinger, C., 
+Interrogating the research and development pipeline of artificial intelligence (AI) in health: diagnosis and prediction-based diagnosis, 
+Publications Office of the European Union, Luxembourg, 2025, https://data.europa.eu/doi/10.2760/8612579, JRC140126. 
+ 
+This document is a publication by the Joint Research Centre (JRC), the European Commission’s science and knowledge 
+service. It aims to provide evidence-based scientific support to the European policymaking process. The contents of this 
+publication do not necessarily reflect the position or opinion of the European Commission. Neither the European 
+Commission nor any person acting on behalf of the Commission is responsible for the use that might be made of this 
+publication. For information on the methodology and quality underlying the data used in this publication for which the 
+source is neither Eurostat nor other Commission services, users should contact the referenced source. The designations 
+employed and the presentation of material on the maps do not imply the expression of any opinion whatsoever on the 
+part of the European Union concerning the legal status of any country, territory, city or area or of its authorities, or 
+concerning the delimitation of its frontiers or boundaries. 
+ 
+EU Science Hub 
+https://joint-research-centre.ec.europa.eu
+
+1 
+ 
+Contents 
+Abstract ...................................................................................................................................................................................................... 3 
+Executive summary .............................................................................................................................................................................. 4 
+1. Introduction ....................................................................................................................................................................................... 8 
+2. Methods ............................................................................................................................................................................................ 10 
+2.1 Systematic literature search and publication filtering .................................................................................. 11 
+2.1.1 Sources of scientific information .................................................................................................................... 11 
+2.1.2 Scientific literature search protocol .............................................................................................................. 12 
+2.1.3 Scientific literature filtering approach ......................................................................................................... 12 
+2.2 Systematic analysis of the eligible research articles ..................................................................................... 15 
+2.2.1 Pillar 1: Analysis of key attributes ................................................................................................................. 15 
+1) Aboutness: stage within the R&D pipeline ....................................................................................................... 15 
+2) AI solution availability ................................................................................................................................................. 17 
+3) AI technique ....................................................................................................................................................................... 17 
+4) Interpretability / explainabilty of the AI model / system ......................................................................... 17 
+5) Medical field of application ...................................................................................................................................... 18 
+6) Geographic origin of the publication ................................................................................................................... 19 
+2.2.2 Pillar 2: Analysis of reporting of key parameters .................................................................................. 19 
+A) Module: Basic information on the AI model / system ................................................................................ 20 
+B) Module: Field of application ..................................................................................................................................... 21 
+C) Module: Users, operators, monitoring tools and metrics ......................................................................... 21 
+D) Module: Data .................................................................................................................................................................... 22 
+E) Module: AI technique and output ........................................................................................................................... 22 
+2.2.3 Pillar 3. Analysis of case studies .................................................................................................................... 24 
+2.3 Data analysis and visualisation .................................................................................................................................. 25 
+3. Results ............................................................................................................................................................................................... 26 
+3.1 Pillar 1: Analysis of key attributes ............................................................................................................................ 26 
+3.1.1 Aboutness: stage within the R&D pipeline ................................................................................................ 26 
+3.1.2 AI solution availability ........................................................................................................................................... 27 
+3.1.3 AI technique ................................................................................................................................................................ 28 
+3.1.4 Interpretability / explainability of the AI model / system .................................................................. 29
+
+2 
+ 
+3.1.5 Medical field of application ................................................................................................................................ 30 
+3.1.6 Geographic origin of the publication ............................................................................................................ 31 
+3.2 Pillar 2: Analysis of reporting of key parameters............................................................................................. 32 
+3.3 Pillar 3: Analysis of case studies ............................................................................................................................... 33 
+3.3.1 Case study 1: Development of an AI model / system ......................................................................... 33 
+3.3.2 Case study 2: Development and use of an AI model / system ...................................................... 36 
+3.3.3 Case study 3: Use of an AI model / system .............................................................................................. 39 
+3.3.4 Case studies 4 and 5: Use and evaluation of an AI model / system .......................................... 42 
+3.3.5 Case study 6:  Development, use and evaluation of an AI model / system ........................... 48 
+3.4 Limitations of the study ................................................................................................................................................. 51 
+4. Discussion........................................................................................................................................................................................ 52 
+5. Conclusions ...................................................................................................................................................................................... 56 
+References ............................................................................................................................................................................................. 58 
+List of terms / abbreviations and description .................................................................................................................... 62 
+List of figures ....................................................................................................................................................................................... 65 
+List of tables ......................................................................................................................................................................................... 66 
+Annexes ................................................................................................................................................................................................... 67 
+Annex 1. Source of information - Pubmed / MEDLINE database ..................................................................... 67 
+Annex 2. Literature search strategy protocol for application area 1............................................................. 68 
+Annex 3. Interrogation questions for the reporting of key parameters ....................................................... 69 
+Annex 4. Developed list of medical fields of application ..................................................................................... 71 
+Annex 5. Fiche template for collecting and documenting case study information ............................... 72
+
+3 
+Abstract 
+ 
+ 
+Key message 
+Developing trustworthy AI in healthcare requires careful considerations of several critical key 
+elements that impact trust during the R&D stage. The analysis of biomedical literature on AI in the 
+area of diagnosis highlights benefits but also gaps in reporting these elements. 
+ 
+ 
+Despite the potential significant benefits of AI in health and particular in healthcare , its uptake is 
+slow. Main barriers include trust issues, understandability of outputs and patient safety  concerns. 
+While “trustworthy AI“ has been embraced as a policy programme by various global regions, issuing 
+high-level guidance documents, i t is currently unclear to which extent the clinical research 
+community is considering these during early steps of the life cycle. To tackle this evidence gap, we 
+systematically interrogated the biomedical literature over 6 months, focusing on the R&D phase of 
+the life cycle in five health application areas of AI. Our analysis builds on three pillars: 1) concerned 
+key attributes, e.g. AI solution availability, type of AI technology, clarity on interpretability 
+considerations, medical field(s), geographic ori gin. 2) examined awareness and reporting of 
+sensitive concepts related to trustworthy AI. 3) explored case studies, covering various medical 
+fields and development stages. The current report focuses on “diagnosis and prediction -based 
+diagnosis”, summarising results of pillars 1 and 3. We found that t he majority of the research 
+articles focus on developing or fine-tuning existing algorithms, with deep learning techniques being 
+the most commonly used. Typically, the publications did not report why specific methods had been 
+used or whether and how interpretability was considered. Our data show considerable innovation, 
+in particular in China, the EU and USA but highlight that clinical researchers seem insufficiently 
+aware of critical issues including the consequences of AI techniques on interpretability. This might 
+delay or complicate later uptake of such AI solutions.
+
+4 
+Executive summary 
+Background 
+While there is a considerable amount of literature on artificial intell igence (AI) in healthcare and 
+medicine, most of these publications are either view point-type or opinion articles that present specific 
+individual case-studies or reviews that address, on a general level, opportunities and challenges  of 
+rolling out AI in h ealthcare. There is however a notable gap concerning systematic evidence of the 
+dynamics of development of AI in the scientific and clinical research communities, i.e. “research and 
+development” (R&D) pipeline. Thus, there is little systematic information about AI developments per 
+medical fields, to which extent AI models are developed de novo for clinical applications and various 
+other aspects that would inform about the dynamics of the R&D pipeline covering the pre-deployment 
+space of the life cycle, i.e. from conception over development, verification and validation to model 
+assessment or evaluation within limited patient groups. 
+Such evidence would help understanding to which extent scientific and clinical research communities 
+address requirements and good transparency practices that are in line with the ethical and robust 
+translation of AI into practice, conducive to their uptake in health systems and health organisations.  
+Key concerns include the transparency of reporting AI techniques, the extent to which explainable AI 
+is used, in particular for v isual AI which relies heavily on  neural networks that are inherently 
+‘inscrutable’ without additional ‘XAI’ tools (XAI=explainable AI). These considerations have imp ortant 
+ramifications for the willingness of end-user clinicians and stakeholders (namely patients) to take up 
+AI in healthcare and accept AI’s contribution to diagnostics, clinical decision -making or innovative 
+procedures. A recent report commissioned by D G SANTE (European Commission (2022)) highlighted 
+the slow uptake of AI in healthcare, while a review by Muehlematter UJ et al (2021) found that the 
+EU appears to be on an equal footing with the US in regard to the number of AI systems for medical 
+purposes (i.e. AI -based medical devices) that become available on the market. 
+Method of literature search and analysis 
+A research project was undertaken to bridge the knowledge gap concerning the dynamics of research 
+and development (i.e. early stages of the life cycle) in various applications areas in the health sector. 
+We used an adapted approach of the one proposed by the World Health Organization's (WHO, 2021) 
+for categorizing these application areas. Separating diagnosis from clinical care, we use in total five 
+(instead of WHO’s four) application areas: 
+1. Healthcare: diagnosis and prediction-based diagnosis 
+2. Healthcare: clinical care 
+3. Health research and drug development 
+4. Health systems management and planning 
+5. Public health and public health surveillance 
+We selected and made use of the PubMed / MEDLINE biomedical literature database in order to collect 
+relevant data from the publicly accessible R&D pipeline. We developed five customized search strings 
+aligned with the five application areas  outlined above , to identify AI -related research and 
+development articles published between January 1, 2023, and June 30, 2023.  
+This report addresses the results only of application area one, i.e. diagnosis and prediction -based 
+diagnosis. A forthcoming publication will describe all five application areas and include the analysis 
+of ‘key reporting parameters’ captured in 18 so-called ‘interrogation questions’. These were designed 
+to explore to which extent the authors or research publications provide explicit information on key
+
+5 
+issues that are relevant for trustworthy AI, e.g. bias, data origin, intended use, validation processes 
+etc. For detailed information see Annex 3. 
+For application area one (diagnosis and prediction-based diagnosis) we retrieved initially 230 research 
+articles from PubMed  / MEDLINE for the period chosen (6 months) . Our literature screening and 
+filtering approach (e.g. duplication removal, exclusion criter ia) reduced the total number of eligible 
+studies to 88 original research articles.  
+We used two approaches to analyse these data: Pillar 1 concerned six key attributes  (see below), 
+while pillar 3 concerned selected case studies, covering the three stages of the R&D pipeline outlined 
+above as well as different medical fields. 
+The key attributes (pillar 1) were:  
+• stage of the publication within the R&D pipeline , ranging from development over 
+assessment to use in research settings (including for evaluation of models). 
+• availability of AI solution (e.g. ready-to-use or customized developments) 
+• AI technique 
+• Interpretability / explainability of the AI model / system 
+• medical field(s) of application 
+• geographic origin of the publication  
+These attributes were chosen to explore the global innovation landscape, dynamics of specific clinical 
+areas and selected against the background of the fact that the concept of trustworthy AI is bu ilt 
+around ethical principles, e.g. transparency and associated co ncepts such as interpr etability / 
+explainability that are a key concern in healthcare, where AI systems may augment or even replace 
+consequential decision-making by healthcare professionals. 
+ 
+Nr. Attribute Relevance for trustworthy AI, including responsible 
+implementation and safe innovation 
+1 Stage within the R&D 
+pipeline  
+Innovation dynamics; technical maturity; degree of clinical 
+research versus basic model development 
+ 
+2 Availability of AI 
+solution 
+Innovation: customized solutions versus ready-to-use AI 
+systems. Use of large pre-trained models and transfer 
+learning 
+3 AI technique Consequences on intrinsic interpretability or need for 
+explainability techniques. In a wider context: understandability 
+of AI systems and their outputs in the context of informed 
+consent by patients 
+4 Interpretability / 
+explainability 
+• Understandability of AI systems and their outputs in 
+the context of informed consent by patients  
+• Potential pitfalls such as automation bias or 
+automation complacency 
+• Deskilling of healthcare professionals 
+5 Medical field(s) AI research and development per medical area  
+ 
+6 Geographic origin Global innovativeness and competitiveness in the area of 
+diagnostics in healthcare
+
+6 
+Findings and key conclusion 
+In regard to the positioning of the articles within the R&D pipeline we found that  
+• 80.7% of the research articles examined focused on the development of novel AI solutions (either 
+from scratch or by refinement of existing algorithms)  
+• a smaller percentage concerned both development and use of AI models / systems (3.4%) 
+• 4.5% concerned the use of existing / already developed AI model / systems  
+• 9.1% focus on the use and evaluation of an AI model / system, while few articles (2.3%) are about 
+the development, use and evaluation of an AI model / system. 
+The majority of AI solutions being developed for diagnosis and prediction -based diagnosis were 
+custom AI (88.6%)  (75.0%). Many of these concerned the refinement of pre -trained models (e.g. 
+ResNet, DenseNet or EfficientNet) by transfer learning. Ready-to-use products represent 6.8% of the 
+AI solution availability while 2.3% correspond to or a combination of custom AI and ready-to-use AI 
+products. In some cases (2.3%), the AI solution availability is not specified (unknown).  
+We found that the majority of AI techniques being developed or used for diagnosis and prediction -
+based diagnosis correspond to deep learni ng ( ML-DL) with an important percentage of 75.0% . 
+However, we found that 28.8% research articles did not provide clear information on the DL technique 
+used. Machine learning (ML w/o DL) followed deep learning (ML-DL) with 22.7%. A small percentage 
+(2.3%) was found to correspond to hybrid techniques (ML w/o DL-DL). 
+Regarding machine learning (ML w/o DL), 70.0% of the articles refer to interpretable AI models while 
+30.0% do not have the same level of interpretability. Furthermore, we observed that there was a lack 
+of attention to methods of explainable AI (XAI) in the case of using deep learning (ML-DL) approaches, 
+with only 18.2% of eligible studies referring to the explainability of the AI model  / system and 
+describing additional explainability tools. 
+In regard to the medical field (s) of application of AI models  / systems, we found that  the most 
+common fields were oncology (18.2), followed by neurology  (15.9%), cardiology  (13.6%), 
+ophthalmology (12.5%), radiology (11.4%), and dentistry 6.8%), showing the dynamic of development 
+and use of AI over various applications.  
+The research articles originated from a diverse set of countries and global areas, with China (42.0%), 
+the EU  (12.5%), and the USA  (10.5%) contributing the largest share of publication s, indicating 
+potential research priorities and capabilities in those regions. 
+Overall, the research articles covered a wide range of AI model  / system development, use, and 
+assessment across various medical fields and g eographical locations. We found that in some cases 
+there was insufficient information on the precise AI technique used, a lack of transparency concerning 
+the data used for training (in particular also in  cases of ‘transfer learning’) and lack of detail 
+concerning the description of AI techniques (e.g. origin, training of the AI model, etc.). The majority of 
+the studies focused on development including further fine-tuning of existing algorithms, with a 
+significant emphasis on deep learning techniques for diagnosis and prediction -based diagnosis. 
+However, there was a lack of attention to explainable methods in case of development or use of deep 
+learning approaches, with a majority of studies not mentioning explainability  of techniques used. In 
+summary many studies  
+• provided insufficient information about the AI techniques used,  
+• showed a lack of transparency regarding data origin for the training of the AI model / system,  
+• appeared to opt for complex (pre -trained) models without accompanying these choices with 
+sufficient details concerning  interpretability / explainability aspects.
+
+7 
+These findings indicate a lack of awaren ess or sensibility of researchers to the re quirements of 
+trustworthy AI. This may delay or complicate uptake of AI solutions. Our study suggests that more 
+effort is required to ensure that scientific and clinical research communities, early on during the 
+development of AI systems, consider evidence needs for downstream stages of the life cycle that will 
+facilitate trust, uptake and adoption of AI solutions in high -risk applications such as diagnostics or 
+clinical decision making.  Our findings might also indicate that the existing high-level guidance 
+documents on trustworthy AI principles are not sufficiently detailed so that scientific and clinical 
+research communities could translate ethical or value-based principles into practical concepts.
+
+8 
+1. Introduction 
+There are high expectations on what AI could do in healthcare and medicine. However, the rapid 
+advancement of AI applications in this  sector is associated with several underexplored (and 
+underreported) key issues, including the need to comprehend the challenges surrounding the safe and 
+transparent implementation of AI in healthcare (OECD (2024a)). Challenges include privacy of medical 
+and health data, sufficient robustness, discriminatory biases that may stem from a variety of sources 
+(e.g. data, (pre-trained) models, modelling decisions), dignity of patients and healthcare professionals, 
+interoperability problems and integration into existing workflows using legacy devices. In addition, AI 
+requires a highly complex value chain, leading to distributed respon sibilities and concerns regarding 
+liability. 
+There is a plethora of perspective and opinion articles on AI in health. In addition more systematic 
+reviews have tried to delineate in a more evidence-based manner areas of concern versus 
+opportunities. For instance, the reviews by Subbiah V (2023), Wubineh BZ et al (2024) or Srivastava 
+R (2024) address various ways in which AI might augment healthcare and medicine, e.g. by improving 
+patient care and outcomes  and highlight challenges concerning its safe and responsible 
+implementation in healthcare ( see also OECD (2024b)). Subbiah V (2023) highlights the need for 
+healthcare systems to review strategies to address these challenges and fully use the potential of AI. 
+The authors  also emphasizes the importance of collaboration between healthcare professionals, 
+policymakers, and researchers to harness the opportunities of AI in healthcare. Rajpurkar R et al 
+(2022) discusses the potential of AI to transform the healthcare industry. While AI has shown promise 
+in improving healthcare outcomes, enabling novel models of patient care , and reducing costs, there 
+are also issues that need to be addressed. AI can assist with clinical decision -making, optimize 
+healthcare workflows, and improve patient en gagement. Kumar Y et al (2023)  discusses the 
+application of AI in healthcare, specifically in disease diagnosis.  The paper highlights  the need for 
+large amounts of high -quality data, the risk of bias and errors, and the need for transparency and 
+interpretability in AI decision -making. Taken together, these challenges and limitations need to be 
+addressed for leveraging AI’s full potential in health.  
+The general policy programme of “trustworthy AI” has gained considerable global momentum during 
+the last years as a concept of addressing key challenges of AI in general (i.e. not sector -specific) 
+through the formulation of ethical principles or AI principles. Particularly relevant in the present 
+context are the documents by the EU Commission’s high-level expert group, the OECD and WHO. The 
+High-Level Expert Group (HLEG) on Artificial Intelligence set up by the Commission in 2019 published 
+“Ethics Guidelines for Trustworthy AI” (HLEG (2019)). The Guidelines propose seven key requirements, 
+rooted in four ethical principles, which should be addressed when developing trustworthy AI systems. 
+These requirements are intended to inform different stakeholders partaking in AI systems’ life cycle: 
+developers, deployers and end-users, as well as the broader society. An assessment list accompanying 
+this document was published in 2020 (HLEG (2020)). The OECD has outlined in its 2019 five “value-
+based” principles (OECD (2024)). Similar to the HLEG key requirements, these principles aim to outline 
+necessary considerations for trustworthy AI. In 2023 WHO released guidance on ethics and 
+governance of AI for health (WHO ( 2023)), a comprehensive document built around WHO’s own six 
+ethical principles that relate to the bioethical principles of Be auchamp TL and Childress JF (1979); 
+beneficence, non-maleficence, justice and fairness, autonomy. Finally, the EU is the first global region 
+to implement a comprehensive legal framework for AI, the “AI Act”, which entered into force in 2024 
+(AI Act (2024)).
+
+9 
+Despite the potential benefits of AI in healthcare and the policy programme of “trustworthy AI”, the 
+uptake of AI technologies in the health sector is slow (European Commission (2022)) and inconsistent 
+in regard to health settings and / or health systems, leading to health inequality (Mittelstadt B (2021)).  
+There is ongoing debate about the reasons, with efforts trying to identify specific barriers. A recent 
+systematic review of Ahmed MI et al (2023) identifie d seven barriers: ethical, techological, liability, 
+workforce social and patient safety, with some of these overlapping . For instance, an ethical barrier 
+is the lack of transparency and specifically interpretability of algorithms. This issue is also referred to 
+as the ‘black box’ or opacity  problem Chen J et al (2018). Lack of transparency and specifically 
+interpretability (i.e. why and how an algorithm generated a specific output  / recommendation) may 
+have negative consequences on validation, clinical oversight, patient-physician relationship, but which 
+may also lead to safety issues. Lack of transparency is one of the major factors that undermines the 
+trust necessary for adoption; other factors are privacy and accountability.  Ensuring demonstrable 
+patient safety and sufficient understandability of AI outputs is paramount for the successful and 
+responsible implementation of AI in healthcare. The barriers to AI implementation discussed in this 
+review are applicable across various medical fields . O vercoming these would likely accelerate 
+responsible use of AI in health (OECD, 2024), providing potential significant benefits to healthcare. 
+These barriers need to be considered and addressed not only at late stages of the AI life cycle, but, 
+ideally from the very first stages, i.e. conception, development and verification / validation. We refer 
+to these three stages as the ‘development & research’ pipeline. At this stage critical decisions will be 
+taken, e.g. whether to select a complex over a simple model, whether to use a pre-trained large model, 
+whether to use an intrinsically interpretable model (e.g. random forest) over an intrinsic ally 
+‘inscrutable’ model (e.g. convoluted neural network). Other key decisions relate to data collection and 
+compilation and associated privacy issues. We refer to this proce ss towards a usable AI system as 
+‘algorithm-to-model transition’ (Griesinger et al, in preparation). Taking decisions during this process 
+in circumspect way with regard to ethical, technological and patient safety issues is critical for building 
+a ‘trustworthy’ algorithm or AI system. 
+In order to investigate to which extent researchers at this upstream stages are considering above 
+elements, we designed a systematic study of the ‘R&D pipeline’ in health , using ‘ key attributes ’ 
+selected against the background  that trustworthy AI is built around ethical principles. Another 
+motivation for the study was to determine the global innovation landscape and the dynamics per 
+medical fields. For categorizing areas of application, we adapted the WHO’s approach, leading to five 
+areas. This report focuses on the most dynamic area, i.e. diagnosis and prediction -based diagnosis. 
+Utilizing the general PRISMA workflow, we carefully designed five search strings for retrieving relevant 
+publications and devised relevant inclusion / exclusion criteria (‘filtering approach’). Scrutinizing the 
+PubMed / MEDLINE database over a period of six months, we retrieved 88 original research 
+publications in the area of diagnosis.  
+This is, to our knowledge, the first study that systematically examines the research and development 
+pipeline for AI health applications. It is particular timely given that the OECD has published, this year, 
+two important briefings on AI in health  (OECD (2024); OECD (2024b)), emphasizing the need to put 
+ethical principles into practice in order to leverage the significant potential of AI in healthcare while 
+adequately identifying and controlling risks and calling for stronger efforts for collaboration. This 
+study benefitted from the JRC’s expertise in the area of medical devices and innovative devices 
+requiring particular scrutiny.
+
+10 
+2. Methods 
+We explored the available scientific literature with regard to our research topic by applying a certain 
+literature search strategy as explained in detail below. To facilitate the retrieval and categorisation 
+of the relevant information, the literature search strategy was applied separately to pre-selected AI 
+health application areas.- We used an adapted approach of the one proposed by the World Health 
+Organization's (WHO, 2021) for categorising these areas. We use in total five (instead of WHO’s four) 
+application areas: 
+1. Healthcare: Diagnosis and prediction-based diagnosis 
+2. Healthcare: Clinical care  
+3. Health research and drug development  
+4. Health systems management and planning 
+5. Public health and public health surveillance 
+For illustrative purposes these selected application areas in the field of health are depicted in Figure 
+1 in comparison to the 2021 WHO approach. 
+ 
+Figure 1. WHO / JRC classification approach of the AI application areas in the field of health 
+ 
+Source: JRC/Own production 
+Furthermore, we developed a stepwise systematic approach for the analysis of the eligible research 
+articles by interrogating and exploring their content based on the following three pillars: 
+Pillar 1:  In this first pillar we aimed to identify, collect, and analyse a set of key attributes (1-5). 
+These attributes were chosen to explore the global innovation landscape, dynamics of specific clinical 
+areas and selected against the background of the fact t hat the concept of trustworthy AI is built 
+around ethical principles. These key attributes were: stage of the publication within the “research and 
+development” (R&D) pipeline (“ aboutness”), availability of  AI solution, described AI technique,  
+interpretability / explainabilty of the AI model / system , medical field of application and geographic 
+origin of the study.
+
+11 
+Pillar 2: In this second pillar we proceeded with an analysis of the reporting of certain key parameters 
+with the aid of a set of 18 interrogation questions that we developed specifically to this purpose. 
+These questions were organised in five AI-related thematic modules (A-E). This pillar examines the 
+sensitivity of the scientific and clinical research communities in regard to provid ing explicit 
+information on key issues that are relevant for trustworthy AI. These 5 modules are: basic information 
+on the AI model / system, field of application, users, data, and AI technique and output. 
+Pillar 3: Finally, we selected and presented tangible examples that cover the three stages of the R&D 
+pipeline (“aboutness”), also in regard to medical fields.  
+The above described research methodology approach is schematically presented in Figure 2 while 
+more detailed information is provided below in this section of this report. 
+ 
+Figure 2. The three-pillar research methodology approach 
+ 
+Source: JRC/Own production 
+ 
+2.1 Systematic literature search and publication filtering 
+2.1.1 Sources of scientific information  
+PubMed / MEDLINE was identified as the most appropriate  bibliographic information source , i.e. 
+scientific literature database with regard to the subject area and the aim of this research project (for 
+more details see Annex 1). 
+ 
+Aboutness: stage within the 
+R&D pipeline 
+Interrogation questions 
+on the reporting of key 
+parameters
+Medical field(s)
+Geographic origin 
+of the publication
+Availability of AI solution: 
+ready-to-use versus customised 
+(pretrained, de novo)
+AI technique
+Interpretability / 
+explainability
+Systematic 
+literature search 
+and publication 
+filtering
+• PubMed/MEDLINE 
+literature search via 
+pre-defined search 
+queries (+MeSH terms)
+• Exclusion of duplicate 
+publications
+• Application of inclusion 
+and exclusion criteria
+• Examined period: 
+1.1.2023 – 30.6.2023
+• Language of 
+publications: English
+Case study 1
+(Development) 
+Pillar 1
+Analysis of key attributes
+Case study 2
+(Development and use)
+Case study 3
+(Use)
+Pillar 3
+Analysis of case studies
+JRC research methodology
+Data 
+identification and 
+retrieval
+Data analysis
+Pillar 2
+Analysis of reporting
+Case study 4
+(Use and assessment)
+Case study 5
+(Use and assessment)
+Case study 6
+(Development, use and 
+assessment)
+E. AI technique 
+and output
+D. Data
+C. Users
+B. Field of application
+A. AI model / system:
+basic information
+5 modules
+1.
+2.
+3.
+4.
+5.
+6.
+18 questions
+
+12 
+2.1.2 Scientific literature search protocol 
+Our scientific literature search and data retrieval strategy initially comprised of the development of 
+a scientific literature search protocol based on certain PubMed  / MEDLINE search strings / queries 
+that were carefully formulated according to the aim of our study (see below and Annex 2). The first 
+results from the literature search included various types of publications, e.g. original research articles, 
+reviews (including systematic reviews), editorials, perspectives, view articles, letters to the editor , 
+opinions, comments, etc. At the next stage these results were further filtered by following a specific 
+scientific literature filtering approach so that in the end only original scientific research articles 
+relevant to the 5 application areas were eligible for the results analysis s tage (see relevant section 
+2.1.3). 
+ 
+Development of PubMed / MEDLINE search strings 
+We developed a unique PubMed / MEDLINE search string for each of the 5 application areas in order 
+to acquire the most relevant publications and data for each application area. 
+The literature search terms used in  each search string were carefully selected and included both 
+Medical Subject Headings (MeSH) Terms and appropriate keywords All search terms were combined 
+to form the complete search strings using the Boolean terms “AND”, “OR”, “NOT”. 
+The detailed PubMed / MEDLINE literature search queries developed for application area 1 is shown 
+in Annex 2. The same approach was used for other application areas (2-5), however these areas are 
+not subject of this report. 
+ 
+Conduct of systematic literature search 
+A systematic scientific literature search available in PubMed / MEDLINE was conducted for AI-related 
+scientific research articles published during the period January 1, 2023, and June 30, 2023 in the 
+English language. The literature search was performed on July 13, 2023 for application area 1 and 
+on July 18, 2023 for application areas 2, 3, 4 and 5. According to the PubMed User Guide, the PubMed 
+date filter used to select our results (custom time range) counted all publication dates for a citation 
+as supplied by the publisher. This included both electronic (online versions and advanced  / ahead 
+online versions of articles available before they are filtered into a particular journal issue) and print 
+publication dates. 
+The results from each literature search were exported from PubMed / MEDLINE and saved in tabular 
+format (*.csv) in an Excel spreadsheet. Furthermore, the publications identified in the systematic 
+search were uploaded to EndNote reference manage r and duplicates were automatically  identified 
+and deleted. 
+ 
+2.1.3 Scientific literature filtering approach 
+A comprehensive selection of the eligible research articles was carried out in two distinct stages by 
+implementing a literature filtering approach (Figure 3) as explained in more detail below.
+
+13 
+Figure 3. Scientific literature search protocol and filtering approach for application area 1  
+ 
+Source: JRC/Own production 
+ 
+Stage 1: Filtering of the retrieved publications by abstract and title  
+Once all literature search results were obtained from the initial literature search in PubMed / MEDLINE, 
+a staged literature filtering approach was applied in order to exclude irrelevant publications and 
+identify only the eligible articles for this research project, i.e. only original AI research articles in the 
+relevant AI area under examination. The publications filtering was an essential stage as i nitially no 
+filters had been applied in the advanced PubMed / MEDLINE search, which led to the retrieval of other
+
+14 
+various, non -eligible, types of articles , e.g. reviews (including systematic reviews), editorials, 
+perspectives, view articles, letters to the editor, opinions, comments, etc. 
+To this end, we  dedicated time and effort to  filter manually either by article type (as labeled) 
+examination or by content review all the various publications retrieved initially from the PubMed  / 
+MEDLINE search . This is because PubMed filters apparently were not always very efficient to 
+distinguish between original research articles and other publication types which were not properly 
+labelled. 
+In this stage a  careful screening of the  initially retrieved  publications by title and abstract was 
+performed. In case the content of title and abstract was not considered conclusive to decide on the 
+eligibility of the article, a further screening of the full text of the article was performed when it was 
+publicly available (free access publications). Where there was no free access to  the full text of the 
+publication we requested full access to it via the JRC library in order to examine the full paper at the 
+next stage (see stage 2). 
+ 
+Stage 2: Further f iltering of the retrieved literature with focus on certain AI- related 
+inclusion criteria 
+During stage 2 we screened the full text of all publications to which access to the full text of the 
+publication needed to be requested from the JRC library service so that we could decide on the 
+eligibility of the article when this not was possible from the title / abstract review in stage 1. 
+Furthermore, in this stage we carefully reviewed the full text of all research articles selected so far 
+by additionally applying certain AI-related inclusion criteria in order to decide on the final eligibility of 
+each research article. This was a crucial part of the filtering approach which defined the total number 
+of eligible studies for each application area. The research articles were assessed based on the content 
+and the contribution of the full publication tex t to the development of the corresponding AI-related 
+research area of interest for this project.  
+ 
+Inclusion criteria  
+In particular, the following inclusion criteria were applied for considering as eligible each research 
+article per application area: 
+• Research articles dealing with AI applications in the diagnosis and prediction-based diagnosis 
+( eligibility criterion for application area 1) 
+• Research articles dealing with AI applications in clinical care ( eligibility criterion for 
+application area 2) 
+• Research articles dealing with AI applications in health research and drug development 
+(eligibility criterion for application area 3) 
+• Research articles dealing with AI applications in health systems management and planning 
+(eligibility criterion for application area 4) 
+• Research articles dealing with AI applications in public health and public health surveillance 
+(eligibility criterion for application area 5)
+
+15 
+Exclusion criteria 
+Articles that did not include any of the above or had insufficient information regarding AI applications 
+were excluded. Furthermore, publications where AI was briefly mentioned but did not report on AI (e.g. 
+in the text, affiliation) or mentioned AI but for irrelevant to this project purposes were also excluded. 
+Finally, articles with abstract or full text not written in the English language were excluded as well. 
+In all stages we applied the “ 4 eyes Principle ” regarding the critical assessment (screening a nd 
+filtering) of the scientific literature. To this end two reviewers assessed independently all scientific 
+publications retrieved from PubMed  / MEDLINE according to the abovementioned methodo logy. In 
+case of discrepancies during their assessment the two r eviewers put effort to resolve it through 
+discussion and reach consensus. In case of persisting disagreement the reviewers could consult a 
+third reviewer (project leader) in order to make the final decision. 
+Following the above described literature search protocol we managed to retrieve initially 230 articles 
+from PubMed / MEDLINE for application area 1. A total of 177 studies were screened after removal 
+of duplicates. Eligibility screening based on title and abstract led to a total of 152 studies. Each full-
+text articles was screened reducing the total number of eligible studies to 88 ( eligible research 
+articles). The application of the literature search protocol  along with the implemented literature 
+filtering approach is schematically shown in Figure 3. 
+ 
+2.2 Systematic analysis of the eligible research articles 
+We analysed the eligible original research articles using a systematic approach, i.e. in three pillars.  
+2.2.1 Pillar 1: Analysis of key attributes 
+In the first pillar we analysed the eligible research articles with regard to  certain fundamental 
+publication key attributes related to the global innovation landscape, i.e. positioning of the study along 
+the R&D pipeline (“aboutness”), availability of the AI solution, described AI technique, interpretability 
+/ explainabilty of the AI model / system, medical field of application and geographic origin of the study 
+(based on certain criteria regarding the geographic origin of the authors and / or their affiliation). 
+Below more detailed information is provided on each of the publication attributes we selected to 
+analyse for the purpose of this project. 
+1) Aboutness: stage within the R&D pipeline 
+The focus of the research publications is mostly on the early stages of the life cycle of AI model  / 
+systems, which refer to as the R&D  pipeline. This  pipeline includes stages such as concept , 
+development, verification and validation, but does not extend to deployment and post-deployment.  
+With ‘aboutness’ we describe the positioning of the  AI technology described in the research article 
+along this simplified pipeline covering the following “aboutness descriptors”: 
+i) Development of a model or AI system,  
+ii) Use of an already available and developed model or AI system for specific purposes (e.g. diagnostic 
+problem / question), and
+
+16 
+iii) Evaluation (including post processing) of various aspects of an available model or AI system, 
+e.g. comparisons between AI system and human readers or comparisons between AI systems, 
+including evaluation for independent patient groups . Volkinger K et al (2021)  mentions that the 
+evaluation step involves assessing the performance of the model on independent groups of patients. 
+This means that the model is evaluated on patient data that was not used to train the model, and 
+that is representative of the population that the model will be applied to in clinical practice. 
+Figure 4 illustrates the R&D pipeline, including the stages of concept, design, development, 
+verification, validation, and deployment of an AI model or system. 
+ 
+Figure 4. Aboutness: stage within the R&D pipeline 
+ 
+Source: JRC/Own production 
+We used the above three aboutness descriptors to label the eligible research articles based on the 
+concept explained in detail in Table  1. Importantly, we make the assumption that a given research 
+article may be described / presented by more than one aboutness descriptors.  
+Table 1. Aboutness descriptors and their concept 
+Nr. Aboutness 
+descriptors Concept 
+i Development • This descriptor is used for publications that report on the development of an AI 
+model or AI system or several of these.  
+• This involves the use of any machine learning algorithm (either developed from 
+scratch or retrieved from other parties) that is run on data (“training”) to yield a 
+model for a specific real-world problem.  
+• The descriptor also covers situations where pre-trained models were subjected to 
+“transfer learning”.  
+• The descriptor also includes model validation and model testing , commonly 
+seen as part of model development. Notably, model validation includes the fine -
+tuning of parameters (e.g. through “calibration”).  
+ 
+Development Evaluation
+Use
+Research & development pipeline
+
+17 
+ii Use • This descriptor is used for publications that make use of an AI model or AI system 
+or several of these and where the publications describe the application to a 
+relevant real-world problem (e.g. area of diagnosis ) beyond model validation 
+and testing (see descriptor “development”).  
+• This includes publications that make use of commercial or otherwise available AI 
+models or AI systems to address a specific use case. 
+iii Evaluation 
+(including 
+post-
+processing) 
+• This descriptor is used for publications that not only use an AI model or AI system 
+or more than these for a given application but also entail aspects of evaluation 
+of the performance and / or other aspects (e.g. safety, robustness) under 
+use conditions for a given real-world problem. 
+• This includes for example comparative evaluations of different AI models or 
+AI systems for a given purpose or the evaluation of an AI model or AI system 
+in comparison to the performance of human readers. 
+Source: JRC/Own production 
+2) AI solution availability 
+The availability of AI solutions in healthcare and medicine is increasing rapidly, with many AI-powered 
+systems being developed and deployed in various clinical settings. However, there are also challenges 
+regarding the adoption of new or novel AI solutions.  
+We analysed the eligible research articles with regard to the availability of AI solution that has been 
+developed or used for the given application area. The AI solution may include custom AI (untrained or 
+pre-trained, de novo) or ready-to-use AI product / commercial or a combination of the two. 
+3) AI technique 
+AI technique description is an essential aspect of ensuring that AI models / systems are reliable and 
+trustworthy. AI encompasses a wide range of techniques aimed at enabling machines to simulate 
+human-like intelligence and behavior. Some common AI techniques are machine learning (ML w/o DL), 
+deep learning (ML-DL), natural language processing (NLP), etc. These are just  a few examples of AI 
+techniques, and there are many more specialised techniques, e.g. subsets of DL such as convolutional 
+neural network (CNN) or deep neural network (DNN). AI research and development continue to evolve 
+rapidly, with new techniques and advancements emerging regularly. 
+For the purpose of our study we analysed the eligible research articles with regard to the type of AI 
+technique that has been employed in the AI model / system. 
+4) Interpretability / explainabilty of the AI model / system 
+When implementing AI applications in the healthcare domain a key concern is the extent of 
+interpretability or explainability afforded by the models, i.e. to which extent their general functioning 
+and, in particular, how and why they generate specific outputs. This is critical for maintaining informed 
+consent by patients, but also to understand sources of errors or problems (e.g. misclassifications) and 
+be able to trace them with the ultimate aim of rectifying the situation.  
+Many AI models, in particular ne ural networks / deep -learning are not readily interpretable (“black-
+box” models). While their training data may be transparent and while their predictions may be 
+accurate, there is no easy measure for understanding why a model is making a specific prediction. 
+This can be a particular issue in the area of diagnosis, where it is essential to understand the reasoning 
+behind a diagnosis. When the intention is to develop and use a trustworthy AI model, the implemented
+
+18 
+AI technique cannot be left in a  “black box” state, i.e. the black box needs to be ‘opened’ through 
+various explainabiltiy techniques allowing its developers, patients, users (in particular healthcare 
+professionals) and stakeholders to understand how the AI model or system works in order to trust its 
+results. 
+In fact the interpretability / explainability is one of the most heavily debated topics when it comes to 
+the applications of AI in healthcare  (Amann J et al (2020)). Recent review articles emphasise the 
+importance of interpretability / explainability of AI systems (Holzinger A et al (2019); Linardatos P et 
+al (2021); Frasca M et al (2024)). These review s aim to explore the growing impact of machine 
+learning and deep learning algorithms in the medical field, specifically focusing on the critical issues 
+of explainability associated with black -box algorithms. This could lead to the development of more 
+interpretable AI models, enabling clinicians to understand the reasoning behind decisions. The reviews 
+propose distinct concepts for interpretability and explainability, aiming to clarify their implications for 
+the health decision-making.  
+• Interpretability refers to the  human ability to understand the functioning and decision -making 
+process of an AI model (understanding or gaining insight into how it works). Interpretability is often 
+used in the context of models that are intrinsically understandable (or “interp retable by nature” 
+(Burkart N and Huber MF (2021)), such as decision -trees, rule-based models or linear models. 
+However, transparency on the algorithm or the combination of algorithms employed in the AI 
+model / system is a prerequisite for interpretability. 
+• Explainability: The development and/or use of m ore complex AI models  (e.g. deep learning, 
+convolutional neural networks (CNN), graph neural networks (GNN), etc. ) present some 
+advantages. However, such models can be difficult to be interpreted (so-called ‘inscrutable’ (Weld 
+DS and Bansal G (2018) or ‘not intrinsically interpretable models’) and require additional tools for 
+deducing explanations about their functioning and how and why specific outputs are generated 
+under given circumstances. In the area of diagnosis , this is particularly the case of computer 
+vision which relies heavily on neural networks that are impossible to understand  / interpret 
+without additional explainable artificial intelligence (XAI) tools. This approach is captured by the 
+term “explainability”. 
+In our study, information was identified and collected regarding the clarity on interpretability  / 
+explainabilty of the AI model / system presented in the publication:  
+• For models considered interpretable, our analyses focused on whether the publication provided 
+sufficiently clear information about the algorithm(s) –  a prerequisite for interpretability “by 
+nature”.  
+• For ‘inscrutable’ AI techniques, we examined whether the publication provided information about 
+relevant techniques to render the model explainable, captured under the efforts termed 
+“explainable AI (XAI)”. 
+5) Medical field of application 
+The medical field is an essential element as it shows the dynamic of development and use of AI over 
+various applications in healthcare and medicine. Different medical fields have different requirements, 
+challenges, and nuances as well as different clinical contexts, including the types of patients, diseases, 
+and treatments.  
+We identified and collected the available i nformation regarding the medical field for which the AI 
+solution has been developed, used or assessed according to the publication. To this end, we developed
+
+19 
+a customised list with pre-defined medical fields that we used in order to assess and match the most 
+relevant medical field with the available information in the publication. Our customised list with the 
+pre-defined medical fields was largely based on the following two pre-existing lists:  
+a) the list with the medical fields (medical specialties) stated in Annex V of Directive 2005/36/EC on 
+the recognition of professional qualifications in the European Union  (https://eur-lex.europa.eu/legal-
+content/EN/TXT/?uri=CELEX%3A02005L0036-20211210) and  
+b) the list with the medical specialties mentioned in the webpage of the European Union of Medical 
+Specialists (UEMS), i.e. www.uems.eu/our-structure#Medical-specialties. 
+Background information: The aim of Directive 2005 /36/EC was to coordinate the system of mutual 
+recognition of professional qualification in EU /EEA countries. The European Union of Medical 
+Specialists (UEMS) is a professional organisation of doctors presenting medical specialists in the EU. 
+UEMS collaborated with the Commission on the Directive 2005 /26/EC on Professional Qualifications 
+(and its following updates). The most important medical specialties bodies within the UEMS are listed 
+on its website. Due to a substantial overlap between some of the specialties (for example “Emergency 
+Medicine” and “Accident and emergency medicine” refer to a large  degree to the same pattern of 
+practice across the EU) we merged the two lists and provided a final list of medical fields that we 
+used in the present research project (please see Annex 4). 
+6) Geographic origin of the publication 
+Another publication key at tribute is the geographic origin of the publication , i.e. the location of the 
+affiliation of the authors of the published research articles. It is essential to identify and understand 
+potential clusters in regard to AI development and use and especially with regard to potential uptake 
+in the clinical context. 
+Information on the geographic origin (country) of the author(s) of all publications was identified taking 
+into account the following three aspects related to the academic affiliation of the authors: 
+i) location of the academic affiliation of the corresponding author(s),  
+ii) location of the academic affiliation of last (senior) author,  
+iii) location of the academic affiliation of the majority of authors. 
+In cases where different locations were stated  in the publication for the above aspects the final 
+decision on the geographic origin of the publication was made based on the alignment of at least two 
+of the above aspects. 
+ 
+2.2.2 Pillar 2: Analysis of reporting of key parameters 
+Reporting of key parameters following the development and use of interrogation questions 
+It was decided to of establish a list of key parameters for which their reporting in each eligible 
+research article was considered as essential to identify and critically assess the research study.  
+For this purpose existing AI frameworks across sectors were analysed and compared in details as a 
+basis for the identification of a consistent set of publication key parameters of AI system applications. 
+For example, the OECD framework descr ibes and classifies AI systems and applications along the 
+following dimensions: People & Planet, Economic Context, Data & Input, AI Model and Task & Output. 
+Each one has its own properties and parameters (OECD, 2022).
+
+20 
+We developed a relevant comprehensive set of 18 interrogation questions with three fixed possible 
+answers that would enable the reviewers to assess in a systematic way the level of reporting of the 
+key parameters  in each eligible research article . K ey paramet ers along with their corresponding 
+interrogation questions were organised in five AI -related thematic modules as schematically shown 
+in Figure 5. 
+Figure 5. The AI-related thematic modules and the associated key parameters 
+ 
+Source: JRC/Own production 
+ 
+Content of interrogation questions per module 
+As already explained the 18 interrogation questions were assigned to  five (5) AI-related thematic 
+modules. These 18 interrogation questions aimed to facilitate the reviewers to determine the level of 
+reporting on the selected key parameters in each research article. More information on the content 
+of the interrogation questions per module can be found below. 
+ 
+A) Module: Basic information on the AI model / system 
+This module focuses on the identification and examination of  essential information in the eligible 
+research articles on the entity responsible for developing  / using the AI model  / system, and its 
+conceptual foundation / scientific relevance, intended use, use scenario / environment, validation and 
+technical maturity. In particular we examined each research article for the reporting of the following 
+key parameters: 
+ 
+A.1. Entity 
+The research article  was investigated regarding the reporting of information about the entity 
+responsible for developing and / or providing the AI model / system. 
+ 
+ 
+ 
+AI technique and 
+output
+Data
+Users
+Field of application
+AI model / system:
+basic information
+Entity Conceptual foundations / 
+relevance Intended use Use scenarios / 
+environments
+Validation Technical maturity
+Medical fields and/or 
+research areas
+Users User 
+competency
+Training 
+requirements
+Performance monitoring tools / 
+metrics
+Modality of 
+processed data
+Provenance of 
+training data
+Data privacy / 
+identifiability
+Curation of 
+training data
+Potential 
+bias(es) of data
+AI technique Output of AI 
+model / system
+5 modules
+
+21 
+A.2. Conceptual foundations / scientific relevance 
+The research article was investigated regarding the reporting of information on the scientific evidence 
+in relation to the AI model / system's design and its intended use. For application area 1 this includes 
+for instance the relevance of a biomarker or anatomical structure for diagnostic predictions or the 
+established clinical value and / or effectiveness of a specific algorithmic outcome. 
+ 
+A.3. Intended use 
+The research article was investigated regarding the reporting of information on the intended use of 
+the AI model / system. 
+ 
+A.4. Use scenarios / environments 
+The research article was investigated regarding the reporting of information on the specific use 
+scenario(s) and use environment(s) in which the AI model / system is intended to operate. 
+ 
+A.5. Validation 
+The research article was investigated regarding the reporting of information on the extent of the 
+initial quality evaluation of the AI model / system. 
+ 
+A.6. Technical maturity 
+The research article was investigated regarding the reporting of information on the technical maturity 
+of the AI model / system. 
+ 
+B) Module: Field of application 
+This module focuses on the identification and examination of  essential information in the eligible 
+research articles on the medical field and / or the research area related to the described application 
+of the AI model / system. 
+ 
+B1. Medical field and / or research areas 
+The research article was investigated regarding the reporting of information on the medical field(s) 
+and / or research areas to which the AI model / system would apply or / contribute. 
+ 
+C) Module: Users, operators, monitoring tools and metrics 
+This module focuses on the interr ogation of the eligible research articles on the reporting of the 
+following key parameters related to the training of the users with regard to the intended use of the 
+described the AI model / system: 
+ 
+ 
+C.1. Identification of potential users 
+The research article was investigated regarding the reporting of information on the clear identification 
+of the potential users of the AI model / system. 
+ 
+C.2. User competency 
+The research article was investigated regarding the reporting of information on the required user 
+competency. 
+ 
+C.3. Training requirements 
+The research article was investigated regarding the reporting of information on training requirements 
+for the competent and safe intended use of the AI model / system.
+
+22 
+In the context of AI models in healthcare (application area 1), training requirements typically involve: 
+• Understanding the capabilities and limitations of the AI model. 
+• Knowing how to operate the model and interpret its outputs (e.g., Class Activation Mapping). 
+• Integrating the AI model's results with clinical knowledge and patient data for decision-making. 
+• Adhering to relevant safety protocols and privacy regulations when handling patient data. 
+ 
+C.4. Performance monitoring tools / metrics 
+The research article was investigated regarding the reporting of information on the availability of 
+performance monitoring tools  / metrics that should be used by the operators for the AI model  / 
+system. 
+ 
+D) Module: Data 
+This module focuses on the interrogation of the eligible research articles on the reporting of the 
+following key parameters related to the data acquired / used with regard to the training / use of the 
+described AI model / system: 
+ 
+D.1. Modality of processed data 
+The research article was investigated regarding the reporting of information on the data modality or 
+modalities processed by the AI model / system. 
+ 
+D.2. Data provenance of training data 
+The research article was investigated regarding the reporting of information on the provenance of 
+the data employed for training the AI model / system. 
+ 
+D.3. Privacy / handling of personal data 
+The research article was investigated regarding the reporting of information on whether and how 
+personal data issues have been addressed during the development or use of the AI model / system. 
+ 
+D.4. Curation of training data 
+The research article was investigated regarding the reporting of information on the curation of the 
+data employed for training the AI model / system. 
+ 
+D.5. Potential sources of data bias 
+The research article was investigated regarding the reporting of information on potential sources of 
+bias associated to the data handled by the AI model / system. 
+ 
+E) Module: AI technique and output 
+This module focuses on the interrogation of the eligible research articles on the reporting of the 
+following key parameters related to the AI technique and the AI model output: 
+ 
+E.1. AI technique 
+The research article was investigated regarding the reporting of information (clear description) on the 
+AI technique employed, e.g. machine learning (ML w/o DL), deep learning (ML-DL), convolutional neural 
+network (CNN), graph neural network (GNN), etc.
+
+23 
+E.2. Output of AI model / system 
+The research article was investigated regarding the reporting information on the generated output(s) 
+of the AI model / system. 
+ 
+Methodology on the assessment of the interrogation questions 
+All interrogation questions on the reporting of information regarding the above presented key 
+parameters were answered by selecting one of the three following pre-defined options, i.e.:  
+a) “Clear information”, when clear information was reported in the research article regarding the 
+key-parameter under investigation 
+b) “No information”, i.e. there was no information reported in the research article regarding the key 
+parameter under investigation 
+c) “Information with uncertainty” i.e. there was limited or not entirely clear information reported 
+in the research article regarding the key parameter under investigation. 
+A summ ary table with all i nterrogation questions used in our study for the assessment of  the 
+reporting of the key parameters is shown in Annex 3.  
+ 
+Methodology on the assessment of the technical maturity of AI systems 
+In the case of a positive answer (reporting of clear information) provided to question A.6 (Technical 
+maturity) the reviewers attempted to make a subjective assessment with regard to a three level 
+classification of the technical maturity of the AI model or AI solution described in the research article.  
+The technical maturity of AI systems can vary widely. Technology readiness levels (TRLs) can help 
+classify an AI system’s technical maturity. OECD (2022) describes 9 TRL categories. These categories 
+were based on the JRC analysis conducted by Martinez Plumed F et al (2020) (JRC129399) on the 
+levels of maturity and readiness of newly introduced technologies.  
+For the purpose of our study, we simplified the classification and merged the different OECD 
+categories in 3 distinct stages, as follows: 
+• M1 (concept stage): from basic principles observed to experimental proof of concept (TRL 1 to 
+3) 
+• M 2 (research  / validation stage) : from technology validated in the lab to technology 
+demonstrated in a relevant environment (TRL 4 to TRL 6) 
+• M 3 (deployment stage) : from system prototype demonstration in operational environment to 
+actual system proven in operational environment (TRL 7 to 9). 
+In the light of the above when interrogating the research articles with question D.6 on the technical 
+maturity of the described AI system, we provided the following three options for selection and further 
+statistical analysis for the purpose of our project: 
+a) M1 (concept stage) 
+b) M2 (research / validation stage) 
+c) M3 (deployment stage)
+
+24 
+Use of the interrogation questions according to the 4 eyes principle 
+We made use of the table with the interrogation questions and the relevant guidance text (see Annex 
+3) by following again the “4 eyes principle”, i.e. two reviewers assessed (interrogated) independently 
+each eligible research article and selected one of the available three fixed answers , i.e. clear 
+information, no information, information with uncertainty. 
+In case of any discrepancies found during the assessment the two reviewers put effort to resolve it 
+through discussion and consensus. In case of persisting disagreement (usually in complex cases) the 
+reviewers could also request the assistance of a third reviewer (the project leader) to fac ilitate the 
+final decision. 
+For the assessment of the eligible research articles falling under application areas 1-3 the whole set 
+of the 18 interrogation questions was used. For application area 3 (health research and clinical 
+development), some questions were considered, because of their nature, not applicable to the content 
+of the publication in the given application area, i.e. question D.2 on provenance of training data, 
+question D.3 on privacy  / handling of personal data and question D5 on data -based bias in some 
+cases e.g. AI applications for drug design and development. 
+Similarly for application areas 4 and 5 no assessment was performed at all based on the interrogation 
+questions as the latter were considered as not applicable to the content of the pu blications in these 
+two areas. 
+The extent of use of the set of the 18 interrogation questions across the 5 application areas is 
+illustrated in a summative way in Table 2: 
+ 
+Table 2. Interrogation questions used per AI health application area 
+Application area Interrogation questions 
+1. Healthcare: diagnosis and prediction-based diagnosis All 
+2. Healthcare: clinical care All 
+3. Health research and clinical development All except questions D2, D3  
+and D5 (in certain cases 
+4. Health administration / health systems management & 
+planning 
+N/A 
+5. Public health and public health surveillance N/A 
+Source: JRC/Own production 
+ 
+2.2.3 Pillar 3. Analysis of case studies 
+In this stage , we explored the dynamics of AI developments in the different areas of application 
+through case studies. We made a selection of selected tangible examples that cover the three stages 
+of the R&D pipeline (“aboutness”), also in regard to medical fields. 
+Our selection of examples cover the  
+• Development, 
+• development and use,
+
+25 
+• use,  
+• use and evaluation, 
+• development and use and evaluation  
+of an AI model / system.  
+For each case study we looked for and collected information the research articles on the following 
+elements: 
+• Bibliographic information on the published research article 
+• Description of the rationale  / summary of the study  based on the available information in the 
+abstract, introduction, methodology section of the research article 
+• Description of the main findings and conclusion s as presented by the authors in the results and 
+conclusion sections of the research article  
+• Summary of the limitations of the study stated by the authors of the research articles 
+• Description of the key attributes and reporting of key parameters  
+All the above information was systematically collected and documented in a “fiche template”, (see  
+Annex 5) that we developed for this purpose. 
+ 
+2.3 Data analysis and visualisation 
+The extracted data from the analysis of the research publications were analysed and visualised with 
+Qlik Sense® (by Qlik, www. Qlik.com) , a powerful data analytics platform  that is now available to 
+different Commission DGs.  
+Qlik Sense can create personali sed, interactive data visuali sations, reports, and dashboards from 
+multiple data sources with drag-and-drop ease.  
+In particular, Qlik Sense is a client managed solution (in contrast to the Qlik Cloud Analytics - a cloud 
+based-solution) which has been designed for on-premises use in  highly regulated professional 
+environments like the Commission’s DG’s.
+
+26 
+3. Results 
+We present the outcomes of our analysis of the research articles that were classified under the 
+application area 1 , i.e. diagnosis and prediction-based diagnosis. The results of are presented per 
+pillar below and in the same order we explained the corresponding research methodology aspects in 
+the previous section (2). This report is focusing on the results of our analysis of key attributes ((pillar 
+1) and on case studies (pillar 3). A forthcoming study will present the results of all three pillars for all 
+five of the application areas (Chassaigne H et al., in preparation). 
+3.1 Pillar 1: Analysis of key attributes 
+This section aims to demonstrate the outcome of the descriptive statistical analysis of certain 
+fundamental attributes related to the global innovation landscape , i.e. the aboutness, AI solution 
+availability, AI technique, in terpretability / explainability of the AI model / system , medical field of 
+application, as well as the geographic origin of the publication.  
+3.1.1 Aboutness: stage within the R&D pipeline 
+We collected and identified i nformation regarding the aboutness of the research arti cle, i.e. t he 
+positioning of the AI technology along a simplified R&D pipeline. We used the three pre-defined 
+aboutness descriptors to label and categorise the research articles (please see method section 2.2.1 
+for more details on their concept). 
+Figure 6. Stage within the R&D pipeline 
+ 
+Source: JRC/Own production 
+4.5%
+3.4% 2.3%
+Development
+Use and evaluation
+Use
+Development and use
+Development, use and evaluation
+
+27 
+The pie chart (Figure 6) shows that most of the publication focuses on the development of novel AI 
+solutions (either from scratch or by refinement of and / or further development of existing algorithms) 
+(80.7%). Development covers situations where pre -trained models were subjected to “transfer 
+learning”. Figure 6 shows that 3.4% of the studies refer to the development and use of an AI model 
+/ system. The use of existing / already developed AI model / systems represent 4.5% of the eligible 
+studies. The use and evaluation  of an AI model represent 9.1% of the eligible studies. Finally, few 
+articles (2.3%) are about the development, use and evaluation of an AI model / system. 
+ 
+3.1.2 AI solution availability 
+We identified i nformation regarding the AI solution availability  that was developed or  used in the 
+research article. To this aim, we used the pre-defined descriptors, i.e. AI solution that include custom 
+AI or ready-to-use AI product / commercial or a combination of the two (see method section 2.2.1). 
+This pie chart in Figure 7 shows that the majority of AI solution being developed in the application 
+area 1 correspond to custom AI (88.6%). Ready-to-use products represent 6.8% of the solutions while 
+2.3% correspond to or a combination of custom AI and ready -to-use AI products. In  some cases 
+(2.3%), the AI solution is not specified (unknown). 
+ 
+Figure 7. AI solution availability 
+ 
+Source: JRC/Own production 
+ 
+2.3%
+2.3%
+
+28 
+3.1.3 AI technique 
+We found  that the majority (75%) of AI techniques being developed or used for diagnosis and 
+prediction-based diagnosis correspond to deep learning (ML-DL), (Figure 8). Interestingly, among 
+DL models, some techniques were not specified (28.8%). Convolutional neural networks (CNN) were 
+used most commonly for disease diagnosis i.e. algorithms that can analyse medical images and assist 
+healthcare providers in identifying and diagnosing diseases (53.0%). In addition, other neural network 
+models are used, such as artificial neural networks (ANN, 3.0%), deep neural networks (DNN, 1.5%), 
+Fully connected neural network (FCNN, 3.0%), f eedforward neural network (FNN, 3.0%), deep 
+recurrent neural network (DRNN, 1.5%), graph neural network (GNN, 1.5%) and generative adversarial 
+network (GAN, 4.5%).  
+Machine learning without deep-learning (ML w/o DL), i.e. what can be considered “white box” 
+models (Burkart & Huber, 2021) , followed deep learning ( ML-DL) with 22.7% . The most common 
+“white box” machine learning models used in the literature analysed were r andom forest classifier, 
+logistic regression, fuzzy logics, gradient boosting machines, decision tree, K nearest neighbour (KNN), 
+support vector machines (SVM). These were also used in various combinations.  
+A small percentage (2.3%) was found to correspond to hybrid techniques  used combinations of 
+machine learning without deep learning (ML w/o DL) and deep-learning (DL), denoted as “ML w/o DL-
+DL”. 
+ 
+Figure 8. AI technique employed in the AI model / system 
+ 
+Source: JRC/Own production 
+ 
+2.3%
+ML-DL-GNN (1.5%)
+4.5%
+3.0%
+3.0%
+3.0%
+ML-DL-DRNN (1.5%)(1.5%)
+
+29 
+3.1.4 Interpretability / explainability of the AI model / system 
+Next we analysed to which extent research articles addressed the concepts of interpretability  or 
+explainability of the AI system presented or used in the publications. To this end, we used the approach 
+described in the methodology section 2.2.1.  
+22.7% of the studies used “white-box” machine learning (ML w/o DL) approaches. These models have 
+the advantage of having a certain degree of intrinsic interpretability , requiring, however, clarity on 
+what type of model was employed. Thus, we examined whether there was sufficient information on 
+the model and algorithm(s) used in the research article. We found that 70.0% of the studies clearly 
+describe the algorithm or a combination of algorithms employed in the AI model / system while 30.0% 
+of the studies provided scarce or incomplete information on the algorithm(s) with repercussions on 
+interpretability (Figure 9). 
+ 
+Figure 9. Interpretability / explainability of the AI model / system 
+  
+Source: JRC/Own production 
+Explainability (ML-DL)ML-DL
+ML (w/o DL)
+Algorithm(s) description
+(ML w/o DL)
+
+30 
+The majority of studies (77.3%) employed  deep learning (ML -DL) that are intrinsically non -
+interpretable or ‘inscrutable’. These studies also included hybrid AI models / systems.  
+We carefully scrutinized for this group of publications whether there was information on explainability 
+and relevant explainability techniques. As illustrated in Figure 9, the majority of studies (81.2%) do 
+not address explainability of the ‘ inscrutable’ models they present . Only 18.2% of eligible studies 
+refer to the explainabilty of the AI model / system and/or describe additional explainability tools. 
+ 
+3.1.5 Medical field of application 
+Information was identified and collected regarding the medical field for which the AI model / system 
+was developed, used or evaluated according to the research article. To this aim, we used our 
+customised list with pre-defined medical fields (see methodology section 2.2.1) in order to match one 
+of them with the retrieved information from the research article.  
+ 
+Figure 10. Medical field of application 
+ 
+Source: JRC/Own production 
+ 
+Gastroenterology Medical genetics (1.1%)
+Nephrology (1.1%)
+Otorhinolaryngology (1.1%)
+Urology (1.1%)
+3.4%
+2.3%
+2.3%
+2.3%
+2.3%
+2.3%
+(1.1%)
+(1.1%)
+
+31 
+In our study, oncology was found to be the most common (18.2%) medical field of application of AI 
+models / systems with regard to application area 1. It was followed by neurology (15.9%), cardiology 
+(13.6%), ophthalmology (12.5%), radiology (11.4%) and dentistry (6.8%). Other medical fields 
+represent less than 4% of the studi es (clinical biology, clinical radiology, d ental, oral and maxillo -
+facial surgery, dermatology, gastroenterology, infectious diseases, medical genetics, nephrology, 
+orthopaedics, otorhinolaryngology, respiratory medicine and urology ). The total set of capt ured 
+medical fields of application of AI models  / systems in our study along with their representation 
+percentages in the examined research articles are presented graphically in Figure 10. 
+ 
+3.1.6 Geographic origin of the publication 
+The distribution of scientific publications across country may indicate competitiveness and 
+innovativeness and competiti veness in the diagnosis area . To this aim, we collected and analysed 
+information regarding the country of the authors and  / or their affiliation. With regard to the 
+geographical distribution of the affiliated research institutions, it was found that the eligible research 
+articles originated from 9 countries (89.8%).  Major contributors were found to be China (42.0%), the 
+EU (12.5%), the USA (10.5%), South Korea (9.5%), Japan (4.5%), India (3.4%), Turkey (3.4%), Australia 
+(2.3%) and Iran (2.3%). Other contributors represent 10.2% (Figure 11).  
+ 
+Figure 11. Geographic origin of the publication 
+ 
+Source: JRC/Own production
+
+32 
+3.2 Pillar 2: Analysis of reporting of key parameters 
+As already mentioned, the analysis of the reporting of the key parameters based on the interrogation 
+questions is not intended to be part of this report.  
+However, we feel the need to present here the outcome of the interrogation question A.6 regarding 
+the reporting of information on the technical maturity of the AI technique presented in each research 
+article as we would like to connect these findings with the related outcome of our subjective 
+assessment on the technical maturity level of the same AI technique. 
+Furthermore, in the case stud ies that will follow in the next section  3.3 (see Pillar 3) of this report 
+someone can see a part of the data collected via the fiche template (Annex 5) regarding the reporting 
+of the key AI parameters based on the 18 interrogation questions. 
+Our statistical analysis showed that 96.6% of the eligible research articles provided clear information 
+on the technical maturity of the presented AI technique, while only 2.3% pro vided information with 
+uncertainties. Interestingly, the technical maturity of the AI model / system is not explicitly mentioned 
+in 1.1% of the cases (Figure 12). 
+ 
+Figure 12. Technical maturity of the AI model / system 
+ 
+Source: JRC/Own production 
+ 
+Furthermore, we also focused on the outcome of our subjective assessment regarding the 
+classification of the technical maturity level of the presented AI technique  / solution in the research 
+articles based on the methodological approach as previously explained in the methods section 2.2.2. 
+(1.1%)M1 (concept stage) (1.1%)
+M3 (deployment stage)
+M2 (research/validation stage)
+
+33 
+According to the information analysed from each research article, we tentatively classified the 
+corresponding technical maturity of the AI model  / system in three stages, i.e. concept stage (M1), 
+research and validation stage (M2) or deployment stage (M3).  
+Based on this classification model our study showed that the vast majority (85.2%) of the described 
+AI model / systems correspond to research / validation stage (M2), 3.6% to the deployment stage 
+(M3), while 1.1% correspond to the concept stage (M1) (Figure 12). 
+ 
+3.3 Pillar 3: Analysis of case studies  
+We made a selection of case studies from which relevant information was extracted / analysed. The 
+“fiche” template used for collecting and documenting the relevant information  extracted from the 
+selected research articles can be found in Annex 5. 
+3.3.1 Case study 1: Development of an AI model / system 
+The majority of studies include the training, validation and testing of an AI model  / system. 
+Development also covers situations where pre-trained models were subjected to “transfer learning”. 
+Transfer learning is a strategic approach within ML wherein a model developed for a particular task 
+is adapted for a second task (Yu X et al (2022)). 
+For example, we selected the study of Shihabuddin AR et al (2023) which is about the development 
+of an AI model for the detection of mitotic cells in breast cancer histopathology images. It discusses 
+the use of transfer learning as a technique to address the lack of labelled data for training machine 
+learning models in the fi eld of medical imaging. The study describes how pre- trained convolutional 
+neural networks (CNNs) such as VGG16, ResNet50, and DenseNet201 are employed as part of the 
+transfer learning process. These pre -trained models are used to extract features from 
+histopathological images, serving as a method to transfer knowledge from the source domain (where 
+the pre-trained models were originally trained) to the target domain (mitosis detection in medical 
+images). This approach allows the model to leverage the learned representations from the source 
+domain to improve its performance on the target task, despite having limited labelled data. 
+Bibliographic information 
+Title of the publication / study Multi CNN based automatic detection of mitotic nuclei in breast histo-
+pathological images 
+Authors  Abdul Rahim Shihabuddin, Sabeena Beevi K. 
+doi  10.1016/j.compbiomed.2023.106815 
+Study information 
+Rationale / summary 
+In breast cancer diagnosis, the number of mitotic cells in a specific area is 
+an important measure. It indicates how far the tumor  has spread, which 
+has consequences for forecasting the aggressiveness of cancer. Since 
+mitosis is a complicated biological process, current methods cannot 
+reliably identify them. The whole process is time consuming, and 
+observations fluctuate based on the  examiner’s expertise, which affects 
+the final grading process. Alternative methods like the DL appro ach are
+
+34 
+adopted. Convolutional neural n etwork (CNN) works better in analysing 
+images and learns good features from these images automatically. 
+The rationale of the research lies in addressing the challenges of accurately 
+detecting mitotic cells. The study recognises the limitations of existing 
+methods, such as inaccuracies in identifying mitotic cells due to shape 
+alterations and undetectable characteristics . To overcome these 
+limitations, it  adopts a DL approach, leveraging pre -trained CNNs and 
+transfer learning to improve the accuracy and precision of mitosis 
+detection. 
+The proposed multiCNN framework, combined with feature reduction 
+techniques and classifi cation using different classifiers, aims to enhance 
+the robustness and generalisation capability of mitosis detection methods. 
+The application of stain normalisation, feature extraction using pre-trained 
+CNNs, and fine -tuning of networks contribute to the comprehensive 
+approach employed in the study. 
+In summary, the research investigates the performance of a multi -CNN 
+framework in mitosis detection using datasets such as MITOS -ATYPIA-14 
+and TUPAC16.  The application of PCA is shown to enhance performance 
+metrics, and the research highlights the potential of the proposed method 
+in accurately detecting mitotic cells in breast cancer histopathology 
+images. 
+Findings and conclusion 
+The multi -CNN framework, when combined with linear SVM, yields 
+superior precision and F1 -score compared to other combinations, 
+highlighting the efficacy of the proposed method in mitosis detection. The 
+application of PCA  contributes to the improvement in performance 
+metrics, as evidenced by the reduction in the depth of feature vectors and 
+the capture of 95% data variance. The research demonstrates varied 
+performance metrics when applying the proposed method to different 
+datasets, emphasizing the impact of 
+stain variations and structural 
+differences on the detection process. The study provides a comprehensive 
+comparison of the proposed method with existing works in the literature, 
+highlighting the challenges and complexities of mitosis detection and the 
+need for dataset-specific methodologies. 
+The conclusions drawn from the research emphasiz e the potential and 
+significance of the proposed multi -CNN framework in addressing the 
+complexities of mitosis detection in breast cancer diagnosis. Based on the 
+information provided, it appears that the proposed multi -CNN framework 
+demonstrates promising results in the detection of mitotic cells in breast 
+cancer histopathology images. The use of pre-trained convolutional neural 
+networks (CNNs), transfer learning, and feature reduction techniques 
+demonstrates a sophisticated and comprehensive approach to mitosis 
+detection in histopathological images.  The study also outlines potential 
+future research directions, such as extending the classification problem to 
+different phases of mitosis and exploring the use of additional pre -trained 
+CNNs within the multi-CNN framework for further feature extraction. 
+Limitations 
+ 
+- The system's performance may vary based on the specific characteristics 
+and challenges present in diffe rent datasets, as observed in the 
+comparison of results between MITOS-ATYPIA-14 and TUPAC16 datasets. 
+- Difficulty in making fair comparisons with other methods in the literature 
+due to differences in datasets and methodologies may limit the broader 
+assessment of the system's performance.
+
+35 
+- While the system leverages advanced DL techniques, it may still require 
+domain expertise for interpretation and validation of results, especially in 
+the context of medical imaging and cancer diagnosis. 
+- It is important to consider the limitations and the need for further 
+evaluation and validation of the system in real-world clinical settings. 
+Appraisal 
+Aboutness 
+ 
+Tick the appropriate box(es) 
+☒ Development 
+☐ Use 
+☐ Evaluation 
+Technical maturity level of the AI 
+model /system 
+ 
+Tick the box 
+☐ M1 = Concept 
+☒ M2 = Research / development 
+☐ M3 = Deployment 
+AI technique Convolutional neural network (CNN): AI model based on DL, specifically 
+utilising CNNs. It uses a pre -trained CNN models (VGG16, ResNet50, 
+DenseNet201) for feature extraction and transfer learning. Additionally, the 
+application of PCA (Principal Component Analysis) is used for feature 
+reduction, and the classification of mitotic cells is accomplished using 
+classifiers such as LinearSVC, Random Forest, and Adaboost  
+AI solution availability Combination of custom AI and ready -to-use product: use of ready -to-use AI 
+products in the form of pre -trained CNNs such as VGG16, ResNet50, and 
+DenseNet201 (pre -trained CNNs on large -scale image datasets such as 
+ImageNet). Additionally, the use of PCA for feature reduction and classifiers 
+like LinearSVC, Random Forest, and Adaboost can be considered as 
+components of custom AI technique 
+Interpretable model OR non-inter-
+pretable but explainable AI (XAI) 
+No 
+Medical field(s) 
+ 
+Primary medical field 
+Clinical biology 
+Secondary medical field 
+Oncology 
+Key parameters 
+ 
+A) AI model / system foundation 
+Entity   Clear information    
+Conceptual 
+foundation   Clear information    
+Intended use   Clear information    
+Use scenario   Information with uncertainties    
+Validation   Clear information    
+Technical maturity   Information with uncertainties
+
+36 
+B) Medical fields 
+Tick the box 
+☐ No information 
+☐ Information with uncertainties 
+☒ Clear information 
+ 
+C) Users, operators, monitoring tools and metrics 
+Potential users   Clear information    
+User 
+competencies   No information    
+Training 
+requirements   No information    
+Performance 
+monitoring tools   No information    
+ 
+D) Data 
+Modality of 
+processed data   Clear information    
+Data provenance   Clear information    
+Data privacy   Clear information    
+Curation of 
+training data   Clear information    
+Sources of bias   No information    
+ 
+E) AI technique, AI model and output 
+AI technique   Clear information    
+Output of Ai 
+model / system   Clear information    
+  
+ 
+ 
+3.3.2 Case study 2: Development and use of an AI model / system 
+Regarding the development and use of an AI model / system, we can mention the study of Park C et 
+al (2023) which is about the development and application of an AI model / system for predicting 
+tumor-infiltrating lymphocyte (TIL) enrichment in the tumour microenvironment (TME) of non-small 
+cell lung cancer (NSCLC) patients. The stu dy uses radiomic features extracted from computed 
+tomography (CT) images and an AI -powered TIL analysis in hematoxylin and eosin (H&E) stained 
+images to objectively assess TIL enrichment. The main focus of the publication is on the development 
+and application of a single AI model  / system to predict TIL enrichment and its association with the 
+outcomes of immune checkpoint inhibitor (ICI) treatment in NSCLC patients. 
+Bibliographic information 
+Title of the publication / study 
+Tumor-infiltrating lymphocyte enrichment predicted by CT radiomics 
+analysis is associated with clinical outcomes of non-small cell lung can-
+cer patients receiving immune checkpoint inhibitors 
+Authors  Park C, Jeong DY, Choi Y, Oh YJ, Kim J, Ryu J, Paeng K, Lee SH, Ock CY, Lee 
+HY
+
+37 
+doi  10.3389/fimmu.2022.1038089 
+Study information 
+Rationale / summary 
+The aim of the study is to develop a radiomic  model that predicts tumor -
+infiltrating lymphocytes (TIL) enrichment in non- small cell lung cancer 
+(NSCLC) using computed tomography (CT) images. The study aims to 
+overcome the limitations of tissue-based assessment of TIL analysis and to 
+investigate the association of predicted TIL with the outcomes of immune 
+checkpoint inhibitors (ICI) in NSCLC patients. 
+The study uses an AI-powered TIL analysis in hematoxylin and eosin (H&E) 
+images and analyses its association with quantitative radiomic features 
+extracted from CT images. The development of the radiomic model aims 
+to provide a more precise and spatial understanding of TIL enrichment and 
+its potential as a biomarker for ICI response in NSCLC. 
+The radiomic model used two radiomic  features, gray level variance (GLV) 
+and large area low gray level emphasis (LALGLE), both computed from the 
+size-zone matrix, to predict TILes. These features reflect intralesional 
+texture heterogeneity and are associated with TIL enrichment in the tumor 
+microenvironment. 
+In summary, the study demonstrates the potential of radiomics in 
+predicting TIL enrichment and its association with ICI outcomes in NSCLC. 
+The development of a n AI  model for TIL analysis could assist in clinical 
+decisions regarding ICI tr eatment and overcome the limitations of tissue-
+based analysis. 
+Findings and conclusion 
+The model is found to significantly correlate with the outcomes of ICI in 
+NSCLC patients. Patients with high predicted TILes have significantly 
+prolonged progression-free survival compared to those with low predicted 
+TILes. The AI model uses two radiomic features  to predict TILes. These 
+features reflect intralesional texture heterogeneity and are associated with 
+TIL enrichment in the tumor microenvironment. Predicted TIL
+es is 
+significantly associated with progression -free survival independent of PD -
+L1 status, a well-known biomarker for ICI response. 
+In conclusion, the study addresses an important issue in cancer treatment 
+by developing a radiomic model for predicting TIL enrichment and its 
+association with ICI outcomes in NSCLC patients. It leverages AI -powered 
+TIL analysis in H&E  images and quantitative radiomic features extracted 
+from CT images, providing a novel approach to understanding the tumor 
+microenvironment. The study suggests the need for further validation and 
+exploration of the temporal and spatial heterogeneity of tumors using 
+radiomic features. The findings have potential clinical implications, as the 
+radiomic model could assist in decision-making regarding ICI treatment and 
+overcome limitations of tissue-based analysis. 
+Limitations 
+ 
+- The study is retrospective, which may introduce inherent biases and 
+limitations in data collection and analysis. 
+- The study is conducted with a limited number of patients and images, 
+which may affect the generalizability of the findings. 
+- The validation cohort also has a limited number of patients, which could 
+reduce the robustness of the conclusions and limit the ability to generalise 
+the findings to larger populations. 
+-The study did not extensively validate the radiomic model's predictions 
+with tissue samples and tissue biomarkers, especially in advanced cancer 
+patients. 
+- The study was conducted at a single center, whic h may limit the 
+generalisability of the results to other healthcare settings or patient 
+populations.
+
+38 
+Appraisal 
+Aboutness 
+ 
+Tick the appropriate box(es) 
+☒ Development 
+☒ Use 
+☐ Evaluation (including post-processing) 
+Technical maturity level of the AI 
+model / system 
+ 
+Tick the corresponding box 
+☐ M1 = Concept 
+☒ M2 = Research / development 
+☐ M3 = Deployment 
+AI technique Deep learning : use of Lunit  SCOPE IO is specifically designed for use in 
+pathology and histopathology, particularly in the analysis of tissue samples 
+from patients. It utilizes deep learning algorithms to assist pathologists and 
+clinicians in interpreting and diagnosing various type s of tissue specimens, 
+including those stained with hematoxylin and eosin (H&E) 
+AI solution availability Ready-to-use AI product: Lunit SCOPE IO is an AI powered diagnostic solution 
+developed by Lunit, a medical AI company. Lunit  SCOPE IO is specifically 
+designed for use in pathology and histopathology, particularly in the analysis 
+of tissue samples from patients 
+Interpretable model OR non-inter-
+pretable but explainable AI (XAI) 
+No 
+Medical field(s) 
+ 
+Primary medical field 
+Oncology 
+Secondary medical field 
+Choose an item. 
+Key parameters 
+ 
+A) AI model / system foundation 
+Entity   Clear information    
+Conceptual foun-
+dation   Clear information    
+Intended use   Clear information    
+Use scenario   Clear information    
+Validation   Clear information    
+Technical maturity   Clear information    
+ 
+B) Medical fields 
+Tick the box 
+☐ No information 
+☐ Information with uncertainties 
+☒ Clear information 
+ 
+C) Users, operators, monitoring tools and metrics 
+Potential users   Clear information    
+User competen-
+cies   No information    
+Training require-
+ments   No information
+
+39 
+Performance 
+monitoring tools   No information    
+ 
+D) Data 
+Modality of pro-
+cessed data   Clear information    
+Data provenance   Clear information    
+Data privacy   No information    
+Curation of train-
+ing data   Clear information    
+Sources of bias   Clear information    
+ 
+E) AI technique, AI model and output 
+AI technique   Clear information    
+Output of AI 
+model / system   Clear information    
+  
+ 
+ 
+3.3.3 Case study 3: Use of an AI model / system 
+The use of existing / already developed AI model / systems represent 4.5% of the eligible studies. We 
+chose to present the work of Du Y et al (2023) which is about the use of an AI system in the diagnosis 
+of patients with coronary artery disease (CAD). The perivascular fat attenuation index (FAI) is a novel 
+and validated coronary CTA (coronary computed tomography Angiogram) metric that reflects 
+coronary inflammation. It indicates spatial changes in the perivascular fat composition caused by 
+inflammatory signals emitted by inflamed coronary arteries. The aim of this study is to demonstrate 
+the use of perivascular fat attenuation index (FAI) in identifying and tracking coronary inflammation 
+in a patient with IgG4 -related arteritis and coronary artery disease (CAD). The system used in this 
+case study, which includes the AI –enhanced FAI evaluation system, demonstrates its ability to 
+accurately measure and track perivascular inflammation in the patient with IgG4-related arteritis and 
+CAD. The system accurately measured perivascular fat attenuation index (FAI) and provided valuable 
+information on coronary inflammation and response to treatment. The system offers a non-invasive 
+method of evaluating pericoronary inflammation, providing valuable insights without the need for 
+invasive procedures. 
+Bibliographic information 
+Title of the publication / study Perivascular Fat Attenuation Index Mapping and Tracking Immuno-
+globulin G4-Related Coronary Arteritis 
+Authors  Du Y, Zheng Y, Zhang H, Du J, Zhang X, Xu L, Zhou Y, Pan L. 
+doi  10.1161/CIRCIMAGING.122.014912 
+Study information 
+Rationale / summary 
+In patients with coronary artery disease (CAD), the perivascular fat 
+attenuation index (FAI) is a novel and validated coronary CTA (coronary 
+computed tomography Angiogram) metric that reflects coronary 
+inflammation. It indicates spatial changes in the peri vascular fat
+
+40 
+composition caused by inflammatory signals emitted by inflamed coronary 
+arteries. 
+The aim of this study is to demonstrate the use of FAI in identifying and 
+tracking coronary inflammation in a patient with IgG4-related arteritis and 
+CAD. It aims to show the utility of perivascular FAI in evaluating the 
+response to anti-inflammatory treatments and to provide insights into the 
+potential use of this metric in guiding treatment decisions for patients with 
+autoimmune disease and established CAD. 
+In summary, the case study demonstrates the potential of perivascular FAI 
+in measuring and mapping coronary inflammation derived from 
+autoimmune arteritis and tracking anti -inflammatory therapeutic effects. 
+It also emphasises the ability of perivascular FAI to guide treatment 
+decisions for patients with autoimmune disease and established CAD.  
+Findings and conclusion 
+This work investigates the effectiveness of pre -trained multiCNNs in 
+detecting mitotic cells. Experiments on features extracted using various 
+combinations of pre -trained networks are conducted. Combinations of 
+pre-trained CNNs outperform single pre -trained CNNs.  
+The patient 
+presents with exertional fatigue and is found to have significant CAD  and 
+IgG4-related arteritis. Treatment with immune suppressors leads to a 
+reduction in pericoronary inflammation, as evidenced by follow- up 
+perivascular FAI scanning and Fluorine -18 fluorodeoxyglucose positron 
+emission tomography examination. Despite the r eduction in pericoronary 
+inflammation, the patient remains symptomatic, and further evaluation 
+revealed 3-vessel CAD with coronary aneurysms. The combination of AI –
+based technology and routine coronary CTA imaging provides a non-
+invasive and cost -effective 
+method of evaluating pericoronary 
+inflammation, plaque characteristics, and myocardial ischemia 
+simultaneously. The AI system demonstrates its ability to accurately 
+measure and track perivascular inflammation in the patient with IgG4 -
+related arteritis and CAD. The system accurately measured perivascular FAI 
+and provided valuable information on coronary inflammation and 
+response to treatment. 
+In conclusion, the study demonstrates the potential of perivascular FAI in 
+measuring and mapping coronary inflammation derived from autoimmune 
+arteritis and tracking anti -inflammatory therapeutic effects. The findings 
+suggest that perivascular FAI can guide treatment decisions for patients 
+with autoimmune disease and established CAD. The study highlights the 
+predictive value of perivascular FAI on cardiac mortality and its ability to 
+track anti-inflammatory effects of statin therapy in patients with CAD. The 
+patient's case also emphasizes the need for careful consideration and 
+monitoring of CAD in patients with autoimmune diseases undergoing anti-
+inflammatory treatments. The discriminant features from the pre- trained 
+CNNs significantly reduce false positive rates and overcome the need for 
+large labelled data. 
+Limitations 
+ 
+- The evaluation system faces technical challenges in evaluating coronary 
+inflammation using Fluorine -18 fluorodeoxyglucose positron emission 
+tomography due to physiological uptake of the tracer by the myocardium.  
+- The interpretation of the results generated by the system requires 
+expertise and careful consideration, as the findings need to be correlated 
+with the patient's clinical presentation and other diagnostic tests.  
+Appraisal 
+Aboutness 
+ 
+Tick the appropriate box(es) 
+☐ Development 
+☒ Use
+
+41 
+☐ Evaluation (including post-processing) 
+Technical maturity level of the AI 
+model / system 
+ 
+Tick the box 
+☐ M1 = Concept 
+☐ M2 = Research / development 
+☒ M3 = Deployment 
+AI technique Machine Learning: Traditional ML method is employed for evaluating FAI 
+data. 
+AI solution availability Ready-to-use AI product : ML model  from Shukun Technology Co. (doi: 
+10.3389/fcvm.2022.822308). 
+Interpretable model OR non-inter-
+pretable but explainable AI (XAI) 
+Yes 
+Medical field(s) 
+ 
+Primary medical field 
+Cardiology 
+Secondary medical field 
+Coronary artery disease 
+ 
+Key parameters 
+ 
+A) AI model / system foundation 
+Entity   Clear information    
+Conceptual foun-
+dation   No information    
+Intended use   Clear information    
+Use scenario   Clear information    
+Validation   No information    
+Technical maturity   Clear information    
+ 
+B) Medical fields 
+Tick the box 
+☐ No information 
+☐ Information with uncertainties 
+☒ Clear information 
+ 
+C) Users, operators, monitoring tools and metrics 
+Potential users   No information    
+User competen-
+cies   No information    
+Training require-
+ments   No information    
+Performance 
+monitoring tools   No information    
+ 
+D) Data 
+Modality of pro-
+cessed data   No information    
+Data provenance   N.A.    
+Data privacy   No information    
+Curation of train-
+ing data   N.A.
+
+42 
+Sources of bias   No information    
+ 
+E) AI technique, AI model and output 
+AI technique   Clear information    
+Output of Ai 
+model / system   No information    
+ 
+ 
+ 
+3.3.4 Case studies 4 and 5: Use and evaluation of an AI model / system 
+Regarding the use and evaluation (including post-processing) of an AI model (9.1%) we can mention 
+the following two studies. The work of Potretzke TA et al (2023) is about the implementation and 
+assessment of an internally developed AI algorithm for magnetic resonance (MR)-derived total kidney 
+volume (TKV) in autosomal dominant polycystic kidney disease (ADPKD) in a real-life clinical setting. 
+It evaluates the performance of the AI algorithm when used in clinical practice, comparing it to manual 
+editing and other methods for determining TKV. The publication mentions that the AI algorithm for 
+TKV calculation in ADPKD was used by nephrologists who ordered MR imaging for their patients. The 
+algorithm was integrated into the clinical workflow and reviewed by Medical Image Analysts and  
+radiologists. It also mentions the involvement of an integrated IT team for technical deployment and 
+education of stakeholders, including MRI-ordering clinicians, radiologists, and MR technologists. 
+Bibliographic information 
+Title of the publication / study Clinical Implementation of an Artificial Intelligence Algorithm for Mag-
+netic Resonance-Derived Measurement of Total Kidney Volume 
+Authors  
+Potretzke TA, Korfiatis P, Blezek DJ, Edwards ME, Klug JR, Cook CJ, Greg-
+ory AV, Harris PC, Chebib FT, Hogan MC, Torres VE, Bolan CW, Sandra-
+segaran K, Kawashima A, Collins JD, Takahashi N, Hartman RP, Williamson 
+EE, King BF, Callstrom MR, Erickson BJ, Kline TL 
+doi  10.1016/j.mayocp.2022.12.019 
+Study information 
+Rationale / summary 
+The study is designed to address the lack of data on the real -world 
+performance of AI algorithms in clinical settings, particularly in the field of 
+radiology. The implementation of AI algorithms into clinical practice 
+involves various challenges, and there is a need to  understand the factors 
+associated with their successful integration and performance. 
+By evaluating an AI algorithm for total kidney volume (TKV) measurement 
+in autosomal dominant polycystic kidney disease (ADPKD), the study aims 
+to provide insights into t he impact of AI algorithm implementation on 
+patient care and to identify the key factors influencing its real -world 
+performance. 
+The study investigates an internally developed and previously validated AI 
+algorithm for magnetic resonance (MR) derived TKV  in ADPKD when 
+implemented in clinical practice. The study demonstrates the successful 
+technical deployment of the AI algorithm into the clinical workflow, 
+emphasizing the coordination of the interdisciplinary team, education of 
+stakeholders, and the extraction of real -life performance metrics. The AI -
+based TKV measurements are found to be non-inferior to previous non-AI–
+assisted segmentation approaches, and the algorit hm's implementation
+
+43 
+significantly reduces the time required for image processing.  The study 
+highlights the successful technical deployment of the AI algorithm into the 
+clinical workflow, emphasising the coordination of the interdisciplinary 
+team, education  of stakeholders, and the extraction of real -life 
+performance metrics. 
+Findings and conclusion 
+The successful clinical implementation of the AI algorithm for TKV 
+measurement in ADPKD demonstrates its potential impact on patient care 
+and the reduction of image processing time. Performance is assessed by 
+comparing AI-based and manually edited segmentations via measures of 
+similarity and dissimilarity to ensure expected performance. Agreement 
+for disease class between AI -based and manually edited segmentation is 
+high. It finds that scanner information and patient demographic factors do 
+not significantly differ between cases that pass and those that require 
+rework. Patient demographic fact ors, including age, body mass index 
+(BMI), race  / ethnicity, and study imaging date, also do not significantly 
+differ across the pass and rework pathways. However, females are 
+overrepresented in the corrected AI pathway, with significantly lower BMI 
+and sm aller TKVs compared to males. The algorithm's performance is 
+found to be non- inferior to previous non -AI–assisted segmentation 
+approaches, and it significantly reduces the time required for image 
+processing, indicating that it effectively fulfilled its int ended purpose. The 
+study provides valuable insights into the real -world performance of the AI 
+algorithm in a large radiology clinical practice, demonstrating its 
+effectiveness and accuracy in clinical settings.  
+The study concludes that the performance of the AI algorithm in a large 
+radiology clinical practice can be preserved if careful attention is paid to 
+the validation of the algorithm during development and if the 
+implementation environment closely matches the development 
+conditions. The findings provi de valuable insights into the successful 
+clinical implementation of AI algorithms, demonstrating their potential 
+impact on patient care and the reduction of image processing time. The 
+study highlights the importance of careful validation and integration of  AI 
+algorithms into clinical practice for their successful implementation and 
+real-world performance.  It also  
+emphasizes the importance of 
+coordination and education among interdisciplinary stakeholders, 
+including clinicians, technologists, and radiologist s, to ensure the 
+successful implementation and use of the AI algorithm. 
+Limitations 
+ 
+- The overrepresentation of females in the corrected AI pathway raises 
+questions about potential biases or factors influencing the use of the 
+rework pathway. 
+- While the study finds no significant changes in kidney function 
+measurements, the impact of the AI algorithm on ADPKD severity 
+classification is limited, with only a small percentage of rework cases 
+resulting in a change in classification. 
+- The study's findings may be specific to the particular clinical setting and 
+patient population studied, and the generalisability of the results to other 
+settings or populations may be limited. 
+Appraisal 
+Aboutness 
+ 
+Tick the appropriate box(es) 
+☐ Development 
+☒ Use 
+☒ Evaluation (including post-processing)
+
+44 
+Technical maturity level of the AI 
+model / system 
+ 
+Tick the box 
+☐ M1 = Concept 
+☐ M2 = Research / development 
+☒ M3 = Deployment 
+AI technique Convolutional neural network (CNN): the model uses DL techniques, such as 
+CNNs for medical image analysis.  CNNs are used for image segmentation 
+tasks in medical imaging. 
+AI solution availability Custom AI: the model is designed to address the specific needs and 
+challenges associated with ADPKD diagnosis. It uses an internally developed 
+and previously validated algorithm for magnetic resonance (MR) -derived 
+TKV in ADPKD. 
+Interpretable model OR non-inter-
+pretable but explainable AI (XAI) 
+No 
+Medical field(s) 
+ 
+Primary medical field 
+Clinical radiology 
+Secondary medical field 
+Medical imaging 
+Key parameters 
+ 
+A) AI model / system foundation 
+Entity   Clear information    
+Conceptual foun-
+dation   Clear information    
+Intended use   Clear information    
+Use scenario   Clear information    
+Validation   Clear information    
+Technical maturity   Clear information    
+ 
+B) Medical fields 
+Tick the box 
+☐ No information 
+☐ Information with uncertainties 
+☒ Clear information 
+ 
+C) Users, operators, monitoring tools and metrics 
+Potential users   Clear information    
+User competen-
+cies   Clear information    
+Training require-
+ments   Clear information    
+Performance 
+monitoring tools   No information    
+ 
+D) Data 
+Modality of pro-
+cessed data   Clear information    
+Data provenance   N.A.    
+Data privacy   No information    
+Curation of train-
+ing data   N.A.
+
+45 
+Data bias   No information    
+ 
+E) AI technique, AI model and output 
+AI technique   Clear information    
+Output of Ai 
+model / system   Clear information    
+ 
+ 
+ 
+A second example is the work of Krishna H et al (2023) which is about the use and evaluation of a 
+deployed AI too for the evaluation of aortic stenosis (AS) severity. It focuses on the application of the 
+Us2.ai algorithm, an AI -driven solution that automates the interpretation of echocardiograms, to 
+accurately quantify AS severity with no human input beyond image acquisition. The study compares 
+the measurements derived from the AI system to those obtained by experienced human readers, 
+demonstrating strong correlation and agreement between the AI-derived AS parameters and manual 
+measurements. It emphasizes the potential benefits of AI technology in minimizing variability, 
+improving interpretation, and allowing for precise and reproducible identification and management of 
+patients with AS. The AI system, Us2.ai, is design ed to analyse two- dimensional and Doppler 
+echocardiographic images obtained from patients with normal aortic valves and varying degrees of 
+aortic stenosis (AS). 
+Bibliographic information 
+Title of the publication / study Fully Automated Artificial Intelligence Assessment of Aortic Stenosis by 
+Echocardiography, Journal of the American Society of Echocardiography  
+Authors  
+Hema Krishna, Kevin Desai, Brody Slostad, Siddharth Bhayani, Joshua H. 
+Arnold, Wouter Ouwerkerk, Yoran Hummel, Carolyn S.P. Lam, Justin Eze-
+kowitz, Matthew Frost, Zhubo Jiang, Cyril Equilbec, Aamir Twing, Patricia 
+A. Pellikka, Leon Frazin, Mayank Kansa 
+doi  10.1016/j.echo.2023.03.008 
+Study information 
+Rationale / summary 
+The aim of the study is to evaluate the potential of AI, particularly artificial 
+neural networks (ANNs), in accurately quantifying aortic stenosis (AS) 
+severity. By comparing AI -derived measurements to those of experienced 
+human readers, the study aims to determine the capacity of AI to closely 
+mimic human assessment of key hemodynamic parameters relevant to AS 
+severity. The goal is to address limitations in current AS assessment 
+methods, such as time -consuming and expert -dependent transthoracic 
+echocardiography (TTE), and to provide a more efficient and accurate  
+approach to AS evaluation. 
+In summary, the study demonstrates that AI technology, specifically ANNs, 
+has the capability to closely replicate human measurements of essential 
+parameters in the adjudication of AS severity. The application of this AI 
+technology may offer several potential benefits, including minimising 
+interscan variability, improving interpretation and diagnosis of AS, and 
+enabling precise and reproducible identification and management of 
+patients with AS.  
+Findings and conclusion 
+The study finds that ANNs, specifically the Us2.ai algorithm, closely 
+matched expert human measurements of key parameters relevant to AS 
+severity. The Us2.ai system appears to perform as intended in automating
+
+46 
+the interpretation of echocardiograms, includi ng identifying the correct 
+views, determining cardiac structures, and generating decision support 
+outcomes related to cardiac structure and function. The technology 
+demonstrates strong positive correlation and agreement with manual 
+measurements of AS parameters, including aortic valve peak velocity 
+(Vmax), mean pressure gradient (MPG), aortic valve area (AVA), and stroke 
+volume index (SVi) across normal aortic valves and all degrees of AS 
+severity. The study also highlights the potential of AI to quantify AS severity 
+without human input beyond image acquisition. Strengths of the AI system 
+include its ability to automate the entire workflow of echocardiographic 
+analysis and interpretation, providing accurate and reliable measurements 
+of AS parameters. The system has the potential to minimise interscan 
+variability, improve interpretation and diagnosis of AS, and enable precise 
+and reproducible identification and management of patients with AS.  
+The study concludes that ANNs have the capacity to closely mimic human 
+measurement of relevant parameters in the adjudication of AS severity. 
+The findings suggest that integrating AI into the assessment of AS severity 
+has the potential to enhance clinical practice and optimise patient care in 
+the context of valvular heart disease. 
+Limitations 
+ 
+- The exclusion of some studies due to inadequate image quality for certain 
+measurements. In particular, the measurement of left ventricular outflow 
+tract diameter (LVOTd) was identified as a technically challenging aspect of 
+AS assessment, presenting a limitation for both the AI system and human 
+readers.  
+- The system's current inability to exclude post-extrasystolic beats may lead 
+to some disagreement between human and AI measurements in cases with 
+substantial beat-to-beat variability. 
+Appraisal 
+Aboutness 
+ 
+Tick the appropriate box(es) 
+☐ Development 
+☒ Use 
+☒ Evaluation (including post-processing) 
+Technical maturity level of the AI 
+model / system 
+ 
+Tick the box 
+☐ M1 = Concept 
+☐ M2 = Research / development 
+☒ M3 = Deployment 
+AI technique Artificial neural network (ANN): the ANN system is designed to process 
+echocardiographic images and perform a series of quality checks before 
+yielding automated measurements of AS 
+parameters. The network's 
+architecture and algorithms were trained to accura tely measure key 
+hemodynamic parameters for AS severity assessment, with the ability to 
+closely mimic human measurements of relevant parameters in the 
+adjudication of AS severity. 
+AI solution availability Ready-to-use AI product: Us2.ai algorithms have been cleared by the US FDA 
+following validation at the Harvard  / Brigham and Women’s Hospital Echo 
+Core Lab. The platform is described as having been externally validated in 
+diverse real-world cohorts and approved by regulatory authorities, indicating 
+that i
+t is a commercially available and validated AI solution for 
+echocardiographic analysis. 
+Interpretable model OR non-inter-
+pretable but explainable AI (XAI) 
+No 
+Medical field(s) Primary medical field
+
+47 
+ Cardiology 
+Secondary medical field 
+Choose an item. 
+Key parameters 
+ 
+A) AI model / system foundation 
+Entity   Clear information    
+Conceptual foun-
+dation   Clear information    
+Intended use   Clear information    
+Use scenario   Clear information    
+Validation   Clear information    
+Technical maturity   Clear information    
+ 
+B) Medical fields 
+Tick the box 
+☐ No information 
+☐ Information with uncertainties 
+☒ Clear information 
+ 
+C) Users, operators, monitoring tools and metrics 
+Potential users   Clear information    
+User competen-
+cies   Clear information    
+Training require-
+ments   Clear information    
+Performance 
+monitoring tools   No information    
+ 
+D) Data 
+Modality of pro-
+cessed data   Clear information    
+Data provenance   N.A.    
+Data privacy   No information    
+Curation of train-
+ing data   N.A.    
+Data bias   No information    
+ 
+E) AI technique, AI model and output 
+AI technique   Clear information    
+Output of Ai 
+model / system   Clear information
+
+48 
+3.3.5 Case study 6:  Development, use and evaluation of an AI model / system 
+Finally, few articles are about the development, use and evaluation of an AI model / system. For 
+example, the study of Shah AA et al (2023) describes an ensemble deep learning model (EDLM) for 
+the early identification of cholangiocarcinoma. It discusses the development of the EDLM, which 
+consists of three deep learning algorithms — Long Short-Term Memory (LSTM), Gated Recurrent Unit 
+(GRU), and Bi -Directional LSTM (BLSTM) — and its application for the detection of mutations in 
+cholangiocarcinoma. The study also includes a comparative assessment of the performance of the 
+EDLM and standalone deep learning techniques. It evaluates the model using various tests and 
+statistical techniques to assess its accuracy, sensitivity, specificity, and overall performance. 
+Therefore, the paper encompasses both the development, use and evaluation of the AI model, as well 
+as a comparative assessment of multiple models. 
+Bibliographic information 
+Title of the publication / study EDLM: Ensemble Deep Learning Model to Detect Mutation for the Early 
+Detection of Cholangiocarcinoma 
+Authors  Shah AA, Alturise F, Alkhalifah T, Faisal A, Khan YD 
+doi  10.3390/genes14051104 
+Study information 
+Rationale / summary 
+The study focuses on the development of an ensemble deep learning 
+model (EDLM) using three deep learning (DL) algorithms for the early 
+identification of cholangiocarcinoma, a type of cancer affecting the bile 
+duct cells. The researchers collected a comprehensive dataset containing 
+normal and mutated gene sequences related to cholangiocarcinoma. They 
+used advanced feature extraction techniques to prepare the dataset for 
+training and testing. The proposed EDLM was rigorously tested using 
+various validation techniques and evaluated using statistical measures 
+such as accuracy, sensitivity, specificity, and correlation coefficient.  
+The EDLM represents a significant advancement in computationally 
+efficient methods for early cholangiocarcinoma detection, potentially 
+streamlining the diagnostic process.  This study has the potential to 
+significantly impact the early detection and diag nosis of 
+cholangiocarcinoma and other forms of cancer. 
+Findings and conclusion 
+The main findings of the study include the successful development and 
+validation of an EDLM  for the early identification of cholangiocarcinoma . 
+The EDLM, comprising LSTM, GRU, and BLSTM algorithms, demonstrated 
+high accuracy and outperformed individual deep learning models when 
+tested using various validation techniques, indicating its effectiveness in 
+early cancer detection. 
+The study suggests the potential generalisability of the proposed model to 
+other types of cancer datasets, indicating its broad applicability in cancer 
+detection and diagnosis. In conclusion, the study asserts that the proposed 
+EDLM represents a significant advancement in co mputationally efficient 
+methods for early cholangiocarcinoma detection. The findings suggest that 
+the EDLM could be a valuable tool in improving the accuracy and precision 
+of cancer diagnosis. Additionally, the study anticipates the potential for 
+future research to expand the application of the EDLM to identify and 
+diagnose other type of cancer, thereby contributing to advancements in 
+healthcare and medical diagnostics.
+
+49 
+Limitations 
+ 
+- The study primarily focuses on cholangiocarcinoma, and the 
+generalisability of the model to other types of cancer may require further 
+validation and testing. 
+-  The real -world application and integration of the EDLM into clinical 
+settings would require validation in diverse patient populations and 
+healthcare systems. 
+- The implementation of advanced diagnostic tools, such as the EDLM, 
+would require adherence to ethical guidelines and regulatory approval.  
+Overall, the study demonstrates the potential of the EDLM for early cancer 
+detection, but further research and considerations are needed for its 
+practical implementation in clinical settings. 
+Appraisal 
+Aboutness 
+ 
+Tick the appropriate box(es) 
+☒ Development 
+☒ Use 
+☒ Evaluation (including post-processing) 
+Technical maturity level of the AI 
+model / system 
+ 
+Tick the box 
+☐ M1 = Concept 
+☐ M2 = Research / development 
+☒ M3 = Deployment 
+AI technique Deep learning (DL): the AI model employs an ensemble deep learning 
+technique. Specifically, it consists of an ensemble DL  model (EDLM) that 
+integrates three different DL  algorithms— LSTM, GRU, and BLSTM. The use 
+of an ensemble approach combines the strengths of these individual 
+algorithms to create a more robust and accurate predictive model for the 
+early identification of cholangiocarcinoma. 
+AI solution availability Custom AI: the model is designed and trained for the specific application of 
+detecting mutations in cholangiocarcinoma, it details the development and 
+evaluation of this solution. 
+Interpretable model OR non-inter-
+pretable but explainable AI (XAI) 
+No 
+Medical field(s) 
+ 
+Primary medical field 
+Oncology 
+Secondary medical field 
+Choose an item. 
+Key parameters 
+ 
+A) AI model / system foundation 
+Entity   Clear information    
+Conceptual foun-
+dation   Clear information    
+Intended use   Clear information    
+Use scenario   Clear information    
+Validation   Clear information    
+Technical maturity   Clear information    
+ 
+B) Medical fields 
+Tick the box 
+☐ No information
+
+50 
+☐ Information with uncertainties 
+☒ Clear information 
+ 
+C) Users, operators, monitoring tools and metrics 
+Potential users   No information    
+User competen-
+cies   No information    
+Training require-
+ments   No information    
+Performance 
+monitoring tools   No information    
+ 
+D) Data 
+Modality of pro-
+cessed data   Clear information    
+Data provenance   Clear information    
+Data privacy   Information with uncertainties    
+Curation of train-
+ing data   Clear information    
+Data bias   No information    
+ 
+E) AI technique, AI model and output 
+AI technique   Clear information    
+Output of AI 
+model / system   Clear information
+
+51 
+3.4 Limitations of the study  
+Our study has also some intrinsic limitations mainly because of the  nature of the research topic. 
+These can be summarised as follows: 
+ 
+Period covered  
+The period of six months that we covered (January 1, 2023, and June 30, 2023) for our scientific 
+literature search in Pubmed / MEDLINE could be seen as a limitation in regard to whether our findings 
+(e.g. concering the distribution of medical fields or geographic origin) are representative. However, it 
+needs to be considered that a systematic interrogation of the literature constitutes a considerable 
+effort (data retrieval, duplication checking, inclusion criteria etc.) and extending the period would not 
+have allowed us to conduct this study within the envisaged timeframe.  
+Furthermore, there is, in our opinion, no reason to assume that this period does not offer a 
+representative snapshot of the R&D pipeline as evidenced by the substantial amount of articles 
+covering a variety of medical fields, AI techniq ues and availability of AI solutions . It is thus not 
+necessarily plausible to assume that a longer period, e.g. one year, would have led to significantly 
+different results. By making our search strings publicly available, other research can make use of 
+these for future interrogations of the relevant literature. Furthermore, consideration should be given 
+to automate, e.g. using AI, the retrieval and filtering steps as well as a preliminary gathering of key 
+attributes.  
+ 
+Selection and assessment of the publication attributes and key parameters 
+Another potential limitation relates to both the selected publication ‘ attributes’ and ‘interrogation 
+questions’. While these have been matched to pertinent ethical issues in relation to transparency and 
+patient safety (see table in executive summary), there remains a certain arbitrariness concerning both 
+their selection, their phrasing and, most importantly, the analysis. Although conducted using the ‘four 
+eye principle’, variations of interpretation cannot be ruled out.  
+As touched on above, the selected publication attributes and key parameters aimed to cover essential 
+AI-related aspects such as data, technological readiness, and intelligibility issues, which are crucial 
+for AI application in healthcare and medicine. These aspects address important considerations such 
+as privacy, patient consent, understanding of AI systems by healthcare professionals, and maintaining 
+trustful patient-HCP relationships. The subjective assessment of the interrogation questions must be 
+considered expert judgment, carrying inevitably a degree of subjectiveness.
+
+52 
+4. Discussion 
+To our knowledge, this is the first study that adopts a systematic approach in investigating the R&D 
+pipeline for AI health applications in  the area of diagnosis and prediction -based diagnosis . The 
+prototype nature of this scientific work relies largely on the selection and systematic analysis of 
+certain key attributes related to the global innovation landscape. 
+In comparison, a certain number of conducted literature reviews (including systematic reviews) use a 
+series of questions to explore  the scientific literature on the application of AI in disease diagnosis. 
+However, most of these studies are anecdotal, providing an overview of the current state of AI in 
+disease diagnosis and highlighting the potential benefits ( e.g. improving patient outcomes, reducing 
+human errors or enhancing clinical decision-making) as well as certain risks and challenges of using 
+AI. For example, the systematic literature review of Kumar Y et al (2023) provides a comprehensive 
+overview of the current state of AI in disease diagnosis and highlights the potential benefits and 
+challenges of using AI in healthcare. It uses a series of investigations to interrogate the articles and 
+extracted from the included publications such as study characteristics and disease diagnosis outcome 
+measures. 
+In contrast, our work is a systematic approach of exploring various key attributes of AI research 
+publications, including the  positioning of the study along the R&D pipeline (“aboutness”), the AI 
+solution availability, the type of AI technologies employed, the extent to which interpretability / 
+explainability issues were addressed, the applicable medical field(s) and the geographic origin of the 
+publication. Based on our analysis we show some trends and we highlight aspects related to the way 
+of reporting on essential information requiremen ts on AI in the area of diagnosis and prediction-
+based diagnosis. 
+The ultimate objective of this approach is to emphasize the importance of addressing the challenges 
+and limitations of AI health applications early on in the research and development stage, rather than 
+trying to resolve them at a later stage.  In particular, our work demonstrates  the importance of the 
+proper and systematic reporting of certain key attributes of scientific publications on the applications 
+of AI models  / systems under research that are anticipated to be implemented later in the health 
+domain (deployment stage). 
+This report is mainly focusing on the results of our analysis with regard to the key attributes  (pillar 
+1) and the presentation of some interesting case studies (pillar 3).  
+ 
+Discussion points on the outcome of the analysis of the publication key attributes 
+1) Aboutness: stage within the R&D pipeline 
+Our study shows that most of the publications are about development of their own model or system 
+or existing algorithms with further development, i.e. training them with specific data or using / 
+combining / fine tuning the algorithms. Development especially covers situations where pre-trained 
+models are subjected to transfer learning. A representative example of transfer learning is the study 
+of Kao ZK et al ( 2023) is about the development of four pre -trained convolutional neural network 
+(CNNs) models (InceptionResNetV2, InceptionV3, DenseNet169, and VGG16) for the detection and 
+classification of temporomandibular joint disc displacement (TMJDD) from structural magnetic 
+resonance imaging (MRI) images (field of dentistry). The pre-trained models are fine-tuned using the 
+cropped regions of interest. This approach leverages the pre -learned features from a database (the 
+ImageNet dataset) and adapts them to the specific task of TMJDD classification, demonstrating the
+
+53 
+use of transfer learning to improve the performance of deep learning techniques for medical image 
+analysis. 
+A high percentage of publications are also on use and evaluation  of AI model  / systems. A 
+representative example of use and evaluation is the study of  Potretzke TA et al (2023) which is about 
+the assessment and implementation of an AI algorithm for magnetic resonance (MR) -derived total 
+kidney volume (TKV) in a real -life clinical setting (field of clinical radiology). It evaluates the 
+performance of the AI algorithm when used in clinical practice, comparing it to other methods for 
+determining TKV. The algorithm was integrated into the clinical workflow and reviewed by m edical 
+image analysts and radiologists. It also mentions the involvement of an integrated IT team for 
+technical deployment and education of stakeholders, including MRI -ordering clinicians, radiologists, 
+and MR technologists. 
+ 
+2) AI solution availability 
+Regarding the availability of AI solutions  our work shows that the majority of AI solution being 
+developed or used in the diagnosis area corresponds to custom AI solutions. Among custom models, 
+a majority corresponds to untrained or pre -trained models (exist ing algorithm(s) with further 
+development) while few cases refer to de novo models.  
+Pre-trained models can be powerful tools for building AI systems, but they can also have several 
+issues that need to be considered such as biases in the training data. Thi s is because pre -trained 
+models are only as good as the data they were trained on. If the training data are biased, the model 
+will likely learn and replicate those biases. Another issue is the lack of transparency given that pre -
+trained models can be compl ex and difficult to understand, making it challenging to interpret their 
+decisions and identify potential biases (Volkinger K et al (2021). A representative example of pre-
+trained models from the case studies we analysed is the study of Jung W et al (2023) that deals with 
+the development and use of AI models for classifying panoramic in dentistry. The study uses ResNet-
+152 and EfficientNet-B7 in the form of pre-trained convolutional neural network (CNN) models. These 
+two models are part of the wide range of pre-trained models available in the field of computer vision. 
+However, some studies refer to the de novo  solutions, in order to respond to specific needs in the 
+area of diagnosis and prediction -based diagnosis. This observation is of particular relevance as it 
+seems that recent advances in computing power, data harvesting, and algorithm techniques led to an 
+important uptake on the development of novel and powerful AI models  / systems in the diagnosis 
+area. A representative example from the case studies we analysed is the study of Tang Y et al (2023) 
+which is about the development of a novel semi-supervised medical image segmentation method in 
+the field of radiology. It introduces a new approach that incorporates of deep learning, semi -
+supervised learning, adversarial training, and collaborative consistency learning within the model to 
+improve the segmentation accuracy and reliability of supervised information in medical image 
+analysis. 
+ 
+3) AI technique 
+AI technique description is an essential aspect of ensur ing that AI models / systems are reliable 
+and trustworthy. There are issues that might arise with AI techniques in general, and specifically in 
+the area of diagnosis, where it is essential to understand the reasoning behind a diagnosis. Some of 
+these issue s include the lack of transparency on the AI technique developed or used. AI -based
+
+54 
+products and systems may be characterised by various degrees of opacity, making it difficult to trace 
+the AI decision-making process. This can make it challenging to identify biases or errors in the model, 
+and to understand why the AI model is making certain predictions. 
+Our study shows that the majority of AI techniques being developed or used for diagnosis correspond 
+to deep learning ( ML-DL). Among DL models, a significant part does not specify the precise AI 
+technique. Interestingly, Convolutional neural network  (CNN) was the most commonly AI 
+technique used in diagnosis including medical imaging. A representative example from the case 
+studies we analysed is the study of Jung W et al (2023) which is about the development and use of 
+CNN models for classifying panoramic images in dentistry. It involves the development of an AI model 
+using pre-trained ResNet-152 as transfer learning model and further training and evaluation of these 
+models using panoramic radiography data. 
+With regard to the choice of the  technique it is very likely that  that some studies might have 
+prioritised more complex AI model over simpler, more established alternatives, which might have led 
+to similar res ults. In the study of Jung W et al (2023), the choice of ResNet -152 correspond the 
+deepest variant, with the maximum number of layers. More complex tasks may require deeper 
+variants with more layers (ResNet-50/101/152: Deeper variants with more layers, while simpler tasks 
+can be handled by shallower variants (ResNet -18/34: lightweight variants with relatively fewer 
+layers). Investigating whether simpler models can achieve comparable results to more complex ones 
+and exploring model simplification techniques to reduce complexity might be considered. 
+ 
+4) Interpretability / explainability of the AI model / system 
+In our study, we observed in general and inadequate attention to interpretability / explainability 
+aspects, with researchers often opting for complex m ethods without fully considering the potential 
+difficulties that may arise. 
+Regarding traditional machine learning (ML w/o DL) models that are intrinsically interpretable 
+models, our work shows that the majority of publications clearly described the algorithm or 
+combination of algorithm(s) used – a prerequisite for interpretability “by nature”. A typical example is 
+the study of Hoffmann J et al (2023) which is about the development and use of a machine learning 
+(ML) model. The study underscores the ne ed for the AI system to be transparent, providing insight 
+into its decisions and ensuring that its predictions can be easily understood and validated by human 
+experts. The model used ( Cinderella) aims to make the decision -making process of the AI model 
+transparent and interpretable, allowing for plausibility checking by healthcare professionals . Having 
+access to interpretability requires that the algorithm(s) is/are properly described.  
+However, in the case of deep learning techniques (ML-DL) that are intrinsically non-
+interpretable or ‘inscrutable’ models, a main finding is the lack of attention to explainability of 
+the AI model / system. Only few publications refer to it and describe additional explainable tools. A 
+typical example is the study of Jung W et  al (2023) which is about the development and use of 
+convolutional neural network (CNN) models. The study discusses the use of grad -CAM to generate 
+visual descriptions of the decisions made by the CNN -based models. The visualisation  provided by 
+grad-CAM allows for the identification of important regions in the images that contribute to the 
+classification of normal and osteoarthritis cases in the temporomandibular joint panoramic 
+radiographs.
+
+55 
+5) Medical field of application 
+By looking at the medica l field of application, we gain a deeper understanding of the clinical 
+context in which the AI system will be further used. By specifying the medical field of application, the 
+developers can especially ensure that the AI system is designed a nd trained to address the specific 
+needs and challenges of that field, such as diagnostic accuracy, patient safety, and treatment 
+efficacy. 
+With regard to AI health applications in diagnosis and prediction-based diagnosis (area 1) our study 
+showed that oncology was the most common medical field of application of AI models  / systems 
+followed by n eurology and cardiology. These results are considered as expected given the intrinsic 
+depth and variety of pathologie s each of these fields comprise and the importance of the AI 
+assistance has already been acknowledged in the abovementioned medical fields. For example AI is 
+used in oncology for personalis ed treatment recommendations, outcome prediction, and in the 
+development of precision medicine for cancer care (e.g. peri-operative care plans) (Sorin M et al 
+(2023)). AI has been successfully applied in the diagnosis and monitoring of neurological disorders, 
+such as Alzheimer's disease (Lu D et al (2023)) , and in analyzing brai n imaging data  (Fan C et al 
+(2023)). Furthermore, regarding cardiology AI algorithms help in the early detection of heart diseases 
+(Jiang X et al (2023)), analysis of echocardiograms (Krishna H et al (2023)), and risk assessment for 
+patients. 
+Our study found o phthalmology to be the fourth most common medical field of application of AI 
+models / systems which at a first glance w ould not be considered as very expected based on the 
+same abovementioned grounds. However, it seems that ophthalmology is currently considered to be 
+one of the top 7 medical fields impacted by AI according to publicly available information on the web 
+(Asghar T, (2024); Available online: https://www.xevensolutions.com/blog/ai-in-healthcare-transforming-7-
+medical-fields/#Top_7_Medical_Fields_Impacted_by_AI). Moreover, Topol  EJ (2019) previously shared  
+that it is ophthalmology and not radiology  that is leading the AI movement. AI systems are used in 
+ophthalmology to screen and diagnose retinal diseases, including diabetic retinopathy and age -
+related macular degeneration. 
+ 
+6) Geographic origin of the publication 
+By looking at the geographic origin of the publication, we gain a better understanding on potential 
+geographical clusters in regard to AI research and development, investments and expertise as well as 
+on reverberations on competitiveness and innovativeness. Our study showed that China, the EU and 
+the USA have come to dominate the AI healthcare research area in terms of number of publications. 
+It probably reflects the AI research system s in terms of funding and  active scientists  in these 
+geographic areas. 
+In particular, our study  showed that China is  by far the leading country (42%) followed by the EU 
+(12.5%) and the USA (10.5%) with regard to the geographic origin of published original research work 
+on AI health applications with focus on the area of diagnosis and prediction-based diagnosis. Although 
+these results represent a limited 6- months data snapshot between January 1, 2023, and June 30, 
+2023they are well aligned with the results of a 2024 JRC bibliometric research which showed that 
+China is currently the leading country (30%) in terms of number of publications in the last 5 years 
+(2019-2023) in the broader area of AI in healthcare followed closely by EU (28%) and USA (23%). 
+This is actually the outcome a remarkable increase  that China demonstrated in the AI healthcare 
+publication share in the last 5 years (2019 -2023) compared to the previous 5- years span (2013-
+2018), i.e. from 19% to 30%.
+
+56 
+5. Conclusions 
+This is to our knowledge the first study that identifies and analyses in a systematic way  reporting 
+aspects related to the publication of scientific research articles on the development, use and 
+evaluation of AI models / systems in healthcare (R&D pipeline).  
+Our key findings in regard to the examined key attributes are: 
+Stage of the publication within the R&D pipeline: It is not surprising that the majority of the research 
+articles examined focused on the development of novel AI solutions (ca 81%) (i.e. either from scratch 
+or by refinement of existing algorithms) while a small percentage concerned both development and 
+use of AI models / systems (ca 3%). Some articles refer to the use (ca 4%) or the use and evaluation 
+of existing / already developed AI model / systems (ca 9%). Few articles are about the development, 
+use and evaluation of an AI model / system (ca 2%). 
+AI solution availability: The majority of AI solutions  reported are, what we consider, ‘custom -made’ 
+(ca 88%), i.e. these do not concern commercially or otherwise available ready-to-use AI systems. We 
+were surprised that there were not more clinical investigations on such systems. However, of the pool 
+of custom-made solutions, a high proportion relates to untrained or pre -trained models, that are 
+retrievable from relevant model repositories such as GitHub.  Popular models include the ResNet 
+family of neural networks that is heavily used for image analysis. Very few AI solutions were 
+genuinely developed de novo. When used, these seemed to respond to very specific clinical needs (e.g. 
+for complex cases of image segmentation).  
+AI technique: The majority (ca 75%) of AI solutions correspond to variation of deep learning, i.e. 
+artificial neural networks. This is not  surprising given excellent performance of deep-learning based 
+algorithms for visual AI as employed to a large extent in diagnosis. The majority of deep learning 
+approaches concerned convolutional neural networks  (ca 53%) . Importantly, the use of neural 
+networks has consequences for intelligibility of AI outcomes: neural networks are generally not 
+intrinsically  interpretable and require ex post efforts (‘explainable AI’, XAI) methods (e.g. saliency 
+maps) to comprehend why and how models arrived at a given recommendation – as opposed to 
+another one (counterfactual reasoning).  
+Interpretability and explainability:  despite the fact that mostly intri nsically non- interpretable or 
+‘inscrutable’ models were used, very few articles (ca 18%) appeared to tackle explainability. This has 
+important ramifications for trust and, hence, the likelihood of uptake of such models in routine clinical 
+workflows.  
+Medical fields: It is not surprising that the most dynamic medical fields were oncology (ca 18%), 
+neurology (ca 15%), cardiology (ca 13%), ophthalmology (ca 12%), radiology (ca 11%) and dentistry 
+(ca 7%). These fields depend on high- quality medical imaging approaches and benefit clearly from 
+the improved accuracy and predictive capacity of AI approaches. The fact that ‘radiology’ is on the 
+fifth position is not surprising given its horizontal nature. Perhaps more surprisingly, a comparably 
+large number of publications covered ophthalmology and dentistry, while fields such as orthopaedics 
+or internal medicine are less represented. 
+Geographical origin: Not surprisingly, China as a major economy with about one billion citizens, is the 
+country with the highest number of research articles (ca 42%). This may also reflect the strain 
+experienced by Chinese health systems in the light of the fact that China has, within the last years, 
+become a ‘hyperaged’ society. The EU is the second -largest publisher of AI research articles in the 
+diagnosis area (ca 12%), followed very closely by the USA (ca 10%). Notably other Asian economies, 
+South Korea (ca 9%) and Japan (ca 4%), are major contributors.
+
+57 
+Taken together, our study provides robust evidence on the dynamics of research activities in the field 
+of diagnosis. It also shows that scientific and clinical research communities do not appear to have 
+sufficient sensitivity to the obstacles of AI uptake, namely ethical and related patient considerations. 
+Observations include 1) lack of clarity regarding the data used in training models, especially when it 
+comes to transfer learning, 2) rather opaque descriptions of AI techniques, including model origin and 
+training processes, 3) lack of justification why (often) rather complex models were preferred over 
+simpler ones. This concerns also choices within a given family of neural networks: more complicated 
+multi-layered models (e.g. ResNet) were chosen over simpler variants. 4) Lack of clarity and evidence 
+on explainability investigations. This is particularly surprising given the high number of ‘inscrutable 
+black box’ models used. 
+This study is a scientific underpinning work for trustworthy AI in healthcare. It shows that more efforts 
+are needed in regard to bridging the user and developer communities in order to overcome trust 
+issues in regard to AI models t hat, if developed with sufficient circumspection and in line with key 
+ethical principles, might bring substantial benefits to healthcare.
+
+58 
+References 
+1. AI Act (2024), Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 
+June 2024 laying down harmonised rules on artificial intelligence and amending Regulations 
+(EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and 
+(EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828. Available 
+online: 
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689 
+2. HLEG (2019), High-Level Expert Group on AI, Ethics guidelines for trustworthy AI. Available 
+online: https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai 
+3. HLEG (2020), High-Level Expert Group on AI, The Assessment List for Trustworthy Artificial 
+Intelligence (ALTAI) for self assessment. Available online: https://op.europa.eu/en/publication-
+detail/-/publication/73552fcd-f7c2-11ea-991b-01aa75ed71a1 
+4. European Commission (2022) Directorate-General for Health and Food Safety, Lupiáñez-
+Villanueva, F., Gunderson, L., Vitiello, S., Febrer, N. et al., Study on health data, digital health and 
+artificial intelligence in healthcare, Publications Office of the European Union. Available online:  
+https://data.europa.eu/doi/10.2875/702007 
+5. OECD (2022), "OECD Framework for the Classification of AI systems", OECD Digital Economy 
+Papers, No. 323, 2022, OECD Publishing, Paris, Available online: https://doi.org/10.1787/cb6d9eca-
+en 
+6. OECD (2024), “AI in health: Huge potentials, huge risks”, OECD  Policy brief, 2024, OECD 
+Publishing, Paris, Available online: https://www.oecd.org/en/publications/ai-in-health_2f709270-
+en.html 
+7. OECD (2024b), “ Collective action for responsible AI in health”, OECD Artificial intelligence 
+papers, 2024, OECD Publishing, Paris, Available online: 
+https://www.oecd.org/en/publications/collective-action-for-responsible-ai-in-health_f2050177-en.html 
+8. WHO (2021), “Ethics and Governance of Artificial Intelligence for Health”, WHO Guidance. 
+Available online:  
+https://www.who.int/publications/i/item/9789240029200  
+9. WHO (2023) “Regulatory considerations on artificial intelligence for health. World Health 
+Organization”. Available online: 
+https://iris.who.int/handle/10665/373421 
+10. Directive 2005/36/EC of the European Parliament and of the Council of 7 September 2005 on 
+the recognition of professional qualifications, OJ L 255, 30.9.2005, p. 22–142. Available online: 
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02005L0036-20211210 
+11. Ahmed MI, Spooner B, Isherwood J, Lane M, Orrock E, Dennison A (2023) A Systematic Review 
+of the Barriers to the Implementation of Artificial Intelligence in Healthcare. Cureus.; 
+15(10):e46454. Available online: https://doi.org/10.7759/cureus.46454 
+12. Amann J, Blasimme A, Vayena E, Frey D, Madai VI (2020) Precise4Q consortium. Explainability 
+for artificial intelligence in healthcare: a multidisciplinary perspective. BMC Med Inform Decis 
+Mak.; 20(1):310. Available online: 
+https://doi.org/10.1186/s12911-020-01332-6  
+13. Beauchamp TL, Childress JF (1979) Principles of Biomedical Ethics. Oxford: Oxford University 
+Press. 
+14. Burkart N, Huber M (2021) A Survey on the Explainability of Supervised Machine Learning. J. 
+Artif. Intell. Res.; 70:245-317. Available online: 
+https://doi.org/10.1613/jair.1.12228
+
+59 
+ 
+15. Chen J, See KC. (2020) Artificial Intelligence for COVID-19: Rapid Review. J Med Internet Res.; 
+22(10):e21476. Available online: https://doi.org/10.2196/21476 
+16. Du Y, Zheng Y, Zhang H, Du J, Zhang X, Xu L, Zhou Y, Pan L (2023) Perivascular Fat Attenuation 
+Index Mapping and Tracking Immunoglobulin G4-Related Coronary Arteritis. Circ Cardiovasc 
+Imaging.; 16(5):e014912. Available online: https://doi.org/10.1161/CIRCIMAGING.122.01491 
+17. Fan C, Lin H, Qiu Y (2023) U-Patch GAN: A Medical Image Fusion Method Based on GAN. J Digit 
+Imaging.; 36(1):339-355. Available online: https://doi.org/10.1007/s10278-022-00696-7 
+18. Frasca M, La Torre D, Pravettoni G, Cutica I (2024) Explainable and interpretable artificial 
+intelligence in medicine: a systematic bibliometric review. Discov Artif Intell; 4, 15. Available 
+online: 
+https://doi.org/10.1007/s44163-024-00114-7 
+19. Griesinger CB, Reina V, Chassaigne H, Panidis D. An ontology of artificial intelligence (AI) in 
+health: ethical principles and translational concepts for operationalising trustworthy AI (in 
+preparation) 
+20. Hoffmann J, Thrun MC, Röhnert MA, von Bonin M, Oelschlägel U, Neubauer A, Ultsch A, Brendel 
+C. (2023) Identification of critical hemodilution by artificial intelligence in bone marrow 
+assessed for minimal residual disease analysis in acute myeloid leukemia: The Cinderella 
+method. Cytometry A; 103(4):304-312. Available online: 
+https://doi.org/10.1002/cyto.a.24686  
+21. Holzinger A, Langs G, Denk H, Zatloukal K, Müller H (2019) Causability and explainability of 
+artificial intelligence in medicine. Wiley Interdiscip Rev Data Min Knowl Discov; 9(4):e1312. 
+Available online: 
+https://doi.org/10.1002/widm.1312 
+22. Ibrahim H, Liu X, Denniston AK (2021) Reporting guidelines for artificial intelligence in 
+healthcare research. Clin Exp Ophthalmol.; 49(5):470-476. Available online: 
+https://doi.org/10.1111/ceo.13943 
+23. Jiang X, Yu J, Ye J, Jia W, Xu W, Shu Q (2023) A deep learning-based method for pediatric 
+congenital heart disease detection with seven standard views in echocardiography. World J 
+Pediatr Surg.; 6(3):e000580. Available online: 
+https://doi.org/10.1136/wjps-2023-000580 
+24. Jung W, Lee KE, Suh BJ, Seok H, Lee DW (2023) Deep learning for osteoarthritis classification in 
+temporomandibular joint. Oral Dis.; 29(3):1050-1059. Available online: 
+https://doi.org/10.1111/odi.14056 
+25. Kao ZK, Chiu NT, Wu HH, Chang WC, Wang DH, Kung YY, Tu PC, Lo WL, Wu YT (2023) Classifying 
+Temporomandibular Disorder with Artificial Intelligent Architecture Using Magnetic Resonance 
+Imaging. Ann Biomed Eng.; 51(3):517-526. Available online: 
+https://doi.org/10.1007/s10439-022-
+03056-2 
+26. Kolbinger FR, Veldhuizen GP, Zhu J, Truhn D, Kather JN (2024) Reporting guidelines in medical 
+artificial intelligence: a systematic review and meta-analysis. Commun Med (Lond).; 11;4(1):71. 
+Available online: 
+https://doi.org/10.1038/s43856-024-00492-0 
+27. Krishna H, Desai K, Slostad B, Bhayani S, Arnold JH, Ouwerkerk W, Hummel Y, Lam CSP, 
+Ezekowitz J, Frost M, Jiang Z, Equilbec C, Twing A, Pellikka PA, Frazin L, Kansal M (2023) Fully 
+Automated Artificial Intelligence Assessment of Aortic Stenosis by Echocardiography. J Am Soc 
+Echocardiogr.; 36(7):769-777. Available online: 
+https://doi.org/10.1016/j.echo.2023.03.008
+
+60 
+28. Kumar Y, Koul A, Singla R, Ijaz MF (2023) Artificial intelligence in disease diagnosis: a 
+systematic literature review, synthesizing framework and future research agenda. J Ambient 
+Intell Humaniz Comput.; 14(7):8459-8486. Available online: 
+https://doi.org/10.1007/s12652-021-
+03612-z 
+29. Linardatos P, Papastefanopoulos V, Kotsiantis S (2021) Explainable AI: A Review of Machine 
+Learning Interpretability Methods. Entropy; 23, 18. Available online: 
+https://doi.org/10.3390/e23010018 
+30. Lu D, Yue Y, Hu Z, Xu M, Tong Y, Ma H (2023) Effective detection of Alzheimer's disease by 
+optimizing fuzzy K-nearest neighbors based on salp swarm algorithm. Comput Biol Med.; 
+159:106930. Available online: 
+https://doi.org/10.1016/j.compbiomed.2023.106930 
+31. Martinez Plumed F, Caballero Benítez F, Castellano Falcón D, Fernandez Llorca D, Gomez 
+Gutierrez E, Hupont Torres I, Merino L, Monserrat C and Hernández Orallo J (2022) AI Watch: 
+Revisiting Technology Readiness Levels for relevant Artificial Intelligence technologies, EUR 
+31066 EN, Publications Office of the European Union, Luxembourg, ISBN 978-92-76-52328-4, 
+JRC129399, Available online: 
+https://dx.doi.org/10.2760/495140. 
+32. Mittelstadt B (2021) The impact of artificial intelligence on the doctor-patient relationship. 
+Council of Europe. Available online: https://www.coe.int/en/web/bioethics/report-impact-of-ai-on-the-
+doctor-patient-relationship 
+33. Muehlematter UJ, Daniore P, Vokinger KN (2021) Approval of artificial intelligence and machine 
+learning-based medical devices in the USA and Europe (2015-20): a comparative analysis. 
+Lancet Digit Health; 3(3):e195-e203. Available online: https://doi.org/10.1016/s2589-
+7500(20)30292-2  
+34. Park C, Jeong DY, Choi Y, Oh YJ, Kim J, Ryu J, Paeng K, Lee SH, Ock CY, Lee HY (2023) Tumor-
+infiltrating lymphocyte enrichment predicted by CT radiomics analysis is associated with clinical 
+outcomes of non-small cell lung cancer patients receiving immune checkpoint inhibitors. Front 
+Immunol.; 13:1038089. Available online: 
+https://doi.org/10.3389/fimmu.2022.1038089 
+35. Potretzke TA, Korfiatis P, Blezek DJ, Edwards ME, Klug JR, Cook CJ, Gregory AV, Harris PC, 
+Chebib FT, Hogan MC, Torres VE, Bolan CW, Sandrasegaran K, Kawashima A, Collins JD, 
+Takahashi N, Hartman RP, Williamson EE, King BF, Callstrom MR, Erickson BJ, Kline TL (2023) 
+Clinical Implementation of an Artificial Intelligence Algorithm for Magnetic Resonance-Derived 
+Measurement of Total Kidney Volume. Mayo Clin Proc.; 98(5):689-700. Available online: 
+https://doi.org/10.1016/j.mayocp.2022.12.019 
+36. Rajpurkar P, Chen E, Banerjee O, Topol EJ (2022) AI in health and medicine. Nat Med.; 28(1):31-
+38. Available online: https://doi.org/10.1038/s41591-021-01614-0 
+37. Shah AA, Alturise F, Alkhalifah T, Faisal A, Khan YD (2023) EDLM: Ensemble Deep Learning 
+Model to Detect Mutation for the Early Detection of Cholangiocarcinoma. Genes (Basel).; 
+14(5):1104. Available online: https://doi.org/10.3390/genes14051104 
+38. Sorin M, Rezanejad M, Karimi E, Fiset B, Desharnais L, Perus LJM, Milette S, Yu MW, Maritan SM, 
+Doré S, Pichette É, Enlow W, Gagné A, Wei Y, Orain M, Manem VSK, Rayes R, Siegel PM, 
+Camilleri-Broët S, Fiset PO, Desmeules P, Spicer JD, Quail DF, Joubert P, Walsh LA (2023) 
+Single-cell spatial landscapes of the lung tumour immune microenvironment. Nature.; 
+614(7948):548-554. Available online: 
+https://doi.org/10.1038/s41586-022-05672-3
+
+61 
+39. Subbiah V (2023) The next generation of evidence-based medicine. Nat Med.; 29(1):49-58.. 
+Available online: https://doi.org/10.1038/s41591-022-02160-z 
+40. Shihabuddin AR, K SB (2023) Multi CNN based automatic detection of mitotic nuclei in breast 
+histopathological images. Comput Biol Med; 158:106815. Available online: 
+https://doi.org/10.1016/j.compbiomed.2023.106815 
+41. Srivastava R (2024) Applications of Artificial Intelligence in Medicine. Explor Res Hypothesis 
+Med.; 9(2):138-146. Available online: https://doi.org/10.14218/ERHM.2023.00048 
+42. Tang Y, Wang S, Qu Y, Cui Z, Zhang W (2023) Consistency and adversarial semi-supervised 
+learning for medical image segmentation. Comput Biol Med.; 161:107018. Available online: 
+https://doi.org/10.1016/j.compbiomed.2023.107018 
+43. Topol EJ. (2019). Deep Medicine: How Artificial Intelligence Can Make Healthcare Human Again. 
+First edition. New York. 
+44. Vokinger KN, Feuerriegel S, Kesselheim AS (2021) Mitigating bias in machine learning for 
+medicine. Commun Med (Lond).; 1:25. Available online: https://doi.org/10.1038/s43856-021-00028-
+w 
+45. Weld DS, Bansal G (2018) Intelligible Artificial Intelligence. Available online: 
+https://arxiv.org/abs/1803.04263 
+46. Wubineh BZ, Deriba FG, Woldeyohannis MM (2024) Exploring the opportunities and challenges 
+of implementing artificial intelligence in healthcare: A systematic literature review. Urol Oncol.; 
+42(3):48-56. Available online: 
+https://doi.org/10.1016/j.urolonc.2023.11.019 
+47. Jung W, Lee KE, Suh BJ, Seok H, Lee DW (2023) Deep learning for osteoarthritis classification in 
+temporomandibular joint. Oral Dis.; 29(3):1050-1059. Available online: 
+https://doi.org/10.1111/odi.14056 
+48. Yu X, Wang J, Hong Q, Teku R, Wang S, Zhang Y (2022) Transfer learning for medical images 
+analyses: A survey. Neurocomputing; 489, 230–254. Available online: 
+https://doi.org/10.1016/j.neucom.2021.08.159
+
+62 
+List of terms / abbreviations and description 
+Terms / 
+abbreviations 
+Description 
+AI Artificial Intelligence 
+AI algorithm An algorithm is a set of instructions to be followed in calculations or 
+other operations. An AI algorithm is the programming that tells the 
+computer how to learn to operate on its own. 
+AI model An AI model is a program that has been trained on a set of data to 
+recognise certain patterns or make certain decisions without further 
+human intervention. An AI model employs an algorithm , a 
+combination of algorithms or layers of algorithms. 
+AI system An engineered system that generates outputs such as content, 
+forecasts, recommendations or decisions for a given set of human-
+defined objectives (Definition EN ISO / IEC 22989:2023 – Artificial 
+intelligence concepts and terminology). 
+AI system means a machine-based system that is designed to 
+operate with varying levels of autonomy and that may exhibit 
+adaptiveness after deployment, and that, for explicit or implicit 
+objectives, infers, from the input it receives, how to generate outputs 
+such as predictions, content, recommendations, or decisions that can 
+influence physical or virtual environments (Definition AI Act). 
+AI technique AI techniques refer to a set of methods and algorithms used to 
+develop intelligent systems that can perform tasks requiring 
+human-like intelligence. These techniques encompass various 
+approaches like machine learning (ML), natural language processing 
+(NLP), computer vision, and deep learning (DL). 
+Artificial neural 
+network (ANN) 
+ANN is a subset of DL. A neural network (also artificial neural 
+network or neural net, abbreviated ANN or NN) is a model ins pired 
+by the structure and function of biological neural networks in animal 
+brains. 
+Convolutional 
+neural network 
+(CNN) 
+CNN is a subset of DL. A CNN is a regularised type of feed-forward 
+neural network that learns features by itself via filter (or kernel) 
+optimisation. 
+Data processing The user provides the AI model datasets. The data has three 
+processing phases: training, validation, and testing. Throughout the 
+three phases, the AI model interprets the data to draw conclusions.
+
+63 
+Terms / 
+abbreviations 
+Description 
+Deep learning (DL) DL is a type of ML based on artificial neural networks in which 
+multiple layers of processing are used to extract progressively 
+higher level features from data. 
+Deep Neural 
+Network (DNN) 
+DNN is a subset of DL. DNN imitates the human brain with multiple 
+layers for  input variables to pass through. DNN is an ANN with 
+multiple hidden layers of units between the input and output layers, 
+which are composed of multiple linear and non -linear 
+transformations. 
+Deep recurrent 
+neural network 
+(DRNN) 
+DRNN is a subset of DL. Deep RNN is a type of computer program 
+that can learn to recognise patterns in data that occur in a sequence. 
+It works by processing information in layers, building up a more 
+complete understanding of the data with each layer. 
+Feedforward neural 
+network (FNN) 
+FNN is a subset of DL. FNN is one of the two broad types of ANN, 
+characterised by direction of the flow of information between its 
+layers. Its flow is uni-directional, from the input nodes, through the 
+hidden nodes (if any) and to the output nodes, without any cycles or 
+loops, in contrast to recurrent neural networks, which have a bi -
+directional flow 
+Fully connected 
+neural network 
+(FCNN) 
+FCNN is a subset of DL. A fully connected layer refers to a neural 
+network in which each input node is connected to each output node.  
+Generative 
+adversarial network 
+(GAN) 
+GAN is a subset of DL.  GAN is a deep learning architecture. It trains 
+two neural networks to compete against each other to generate 
+more authentic new data from a given training dataset. 
+Graph neural 
+network (GNN) 
+GNN is a subset of DL. GNNs are designed to perform inference on 
+data described by graphs. GNNs are neural networks that can be 
+directly applied to graphs, and provide an easy way to do node-level, 
+edge-level, and graph-level prediction tasks. 
+Intended purpose Intended purpose means the use for which an AI system is intended 
+by the provider, including the specific context and conditions of use, 
+as specified in the information supplied by the provider in the 
+instructions for use, promotional or sales materials and statements, 
+as well as in the technical documentation (Definition AI Act).
+
+64 
+Terms / 
+abbreviations 
+Description 
+Machine learning 
+(ML) 
+The use and development of computer systems that are able to 
+learn and adapt without following explicit instructions, by using 
+algorithms and statistical models to analyse and draw inferences 
+from patterns in data. 
+MEDLINE MEDLINE is the National Library of Medicine’s (NLM) premier 
+bibliographic database that contains more than 31 million 
+references to journal articles in life sciences with a concentration on 
+biomedicine. MEDLINE is a primary component of PubMed and 
+includes literature published from 1966 to present, as well as a 
+selected coverage of literature prior to that period. 
+The PubMed database has been available since 1996 and contains 
+more than 37 million citations and abstracts of biomedical 
+literature. Citations in PubMed primarily stem from the biomedicine 
+and health fields, and related disciplines such as life sciences, 
+behavioral sciences, chemical sciences, and bioengineering. 
+MeSH Medical Subject Headings - MeSH is the NLM controlled vocabulary 
+thesaurus used for indexing articles for PubMed. 
+PubMed PubMed is a free resource supporting the search and retrieval of 
+biomedical and life sciences literature with the aim of improving 
+health–both globally and personally. The PubMed database contains 
+more than 37 million citations and abstracts of biomedical 
+literature. 
+Testing data Data used for providing an independent evaluation of the AI system 
+in order to confirm the expected performance of that system before 
+its placing on the market or putting into service (Definition AI Act). 
+Training data Data used for training an AI system through fitting its learnable 
+parameters (Definition AI Act). 
+Validation data Data used for providing an evaluation of the trained AI system and 
+for tuning its non-learnable parameters and its learning process in 
+order, inter alia, to prevent underfitting or overfitting (Definition AI 
+Act).
+
+65 
+List of figures 
+ 
+Figure 1. WHO / JRC classification approach of the AI application areas in the field of health ............ 10 
+Figure 2. The three-pillar research methodology approach ....................................................................................... 11 
+Figure 3. Scientific literature search protocol and filtering approach for application area 1 ................. 13 
+Figure 4. Aboutness: stage within the R&D pipeline ....................................................................................................... 16 
+Figure 5. The AI-related thematic modules and the associated key parameters .......................................... 20 
+Figure 6. Stage within the R&D pipeline ................................................................................................................................ 26 
+Figure 7. AI solution availability ................................................................................................................................................. 27 
+Figure 8. AI technique employed in the AI model / system ......................................................................................... 28 
+Figure 9. Interpretability / explainability of the AI model / system ........................................................................ 29 
+Figure 10. Medical field of application ................................................................................................................................... 30 
+Figure 11. Geographic origin of the publication ................................................................................................................ 31 
+Figure 12. Technical maturity of the AI model / system .............................................................................................. 32
+
+66 
+List of tables 
+ 
+Table 1. Aboutness descriptors and their concept ........................................................................................................... 16 
+Table 2. Interrogation questions used per AI health application area .................................................................. 24
+
+67 
+Annexes  
+Annex 1. Source of information - Pubmed / MEDLINE database 
+According to the US National Library of Medicine webpage (www.nlm.nih.gov / bsd / difference.html) 
+the following scientific information content is publicly available from the Pubmed  / MEDLINE 
+database: 
+“MEDLINE is the National Library of Medicine’s (NLM) premier bibliographic database that contains 
+more than 31 million references to journal articles in life sciences with a concentration on biomedicine. 
+MEDLINE is a primary component of PubMed and includes literature published from 1966 to present, 
+as well as a selected coverage of literature prior to that period. A distinctive feature of MEDLINE is 
+that the records are indexed with NLM Medical Subject Headings (MeSH). MeSH is the NLM controlled 
+vocabulary thesaurus used for indexing articles for PubMed. 
+PubMed is a free resource supporting the search and retrieval of biomedical and life sciences literature 
+with the aim of improving health– both globally and personally. The PubMed database has been 
+available since 1996 and contains more than 37 million citations and abstracts of biomedical 
+literature. Citations in PubMed primarily stem from the biomedicine and health fields, and related 
+disciplines such as life sciences, behavioral sciences, chemical sciences, and bioengineering. 
+PubMed’s references include the MEDLINE database plus the following types of citations: 
+• In-process citations, which provide records for articles before those records are indexed with 
+Medical Subject Headings (MeSH) or converted to out-of-scope status. 
+• Citations to articles that are out-of-scope (e.g., covering plate tectonics or astrophysics) from cer-
+tain MEDLINE journals, primarily general science and general chemistry journals, for which only 
+the life sciences articles are indexed with MeSH. 
+• "Ahead of Print" citations that precede the article's final publication in a MEDLINE indexed journal. 
+• Citations that precede the date that a journal was selected for MEDLINE indexing (when supplied 
+electronically by the publisher). 
+• Pre-1966 citations that have not yet been updated with current MeSH and converted to MEDLINE 
+status. 
+• Citations to some additional life sciences journals that submit full text to PMC® (PubMed Central®) 
+and receive a qualitative review by NLM. 
+• Citations to author manuscripts of articles published by NIH-funded researchers. 
+• Citations for the majority of books available on the NCBI Bookshelf (a citation for the book and in 
+some cases each chapter of the book). 
+PubMed citations often include links to the full-text article on the publishers' websites and / or in PMC 
+and the Bookshelf. MEDLINE is the largest subset of PubMed. PubMed search retrieval can be limited 
+to MEDLINE citations by restricting the search to the MeSH controlled vocabulary or by using the 
+Journal Categories filter called MEDLINE.
+
+68 
+Annex 2. Literature search strategy protocol for application area 1 
+ 
+Biomedical literature database:  Pubmed / MEDLINE  
+Period: 1 / 1 / 2023 - 30 / 6 / 2023 
+ 
+ 
+("artificial intelligence"[MeSH Terms] OR (“Knowledge bases”[MeSH Terms:NoExp] NOT “sentiment analysis”[MeSH Terms]) OR "artificial 
+intelligence"[ALL Fields])   
+  
+AND   
+  
+("diagnos*"[ALL Fields] OR ("diagnosis"[MeSH Terms] AND “Diagnostic techniques and procedures”[MeSH Terms:NoExp]) OR ("Investigative 
+Technique*"[MeSH Terms] NOT (“population surveillance”[MeSH Terms] OR “drug development”[MeSH Terms] OR “drug discovery”[MeSH 
+Terms] OR “vaccine development”[MeSH Terms])) OR "Genomic*"[MeSH Terms] OR "Metabolomic*"[MeSH Terms] OR “omics-based”[ALL 
+Fields] OR "Image Processing, Computer-Assisted"[MeSH Terms] OR "Immunochemistry"[MeSH Terms] OR ("Microbiology"[MeSH Terms] 
+NOT (“environmental microbiology”[MeSH Terms])) OR “theragnostic*”[ALL Fields] OR “Diagnosis, Computer-Assisted”[MeSH Terms]   
+  
+AND   
+  
+("diseases category"[MeSH Terms] NOT (“animal diseases”[MeSH Terms] OR  
+“Chemically-Induced Disorders”[MeSH Terms] OR “congenital abnormalities”[MeSH Terms] OR “Fetal Diseases”[MeSH Terms] OR “genetic 
+diseases, inborn”[MeSH Terms] OR “Disorders of Environmental Origin”[MeSH Terms] OR “Transfusion Reaction”[MeSH Terms] OR 
+“Occupational Diseases”[MeSH Terms] OR “Morphological and Microscopic Findings”[MeSH Terms] OR “Pathologic Processes”[MeSH Terms] 
+OR “Signs and Symptoms”[MeSH Terms] OR “Wounds and Injuries”[MeSH Terms])  
+OR "disease*"[ALL Fields])  
+  
+AND   
+  
+("Anatomy category"[MeSH Terms] NOT (“Animal Structures”[MeSH Terms] OR “Bacterial Structures”[MeSH Terms] OR “Embryonic 
+Structures”[MeSH Terms] OR “Fungal Structures”[MeSH Terms] OR “Animal scales”[MeSH Terms] OR “Plant Structures”[MeSH Terms] OR 
+“Viral Structures”[MeSH Terms])  
+OR  
+“Anatom*”[ALL Fields])  
+  
+NOT   
+  
+(("healthcare"[ALL Fields] OR "health care"[ALL Fields] OR "Delivery of Health Care"[MeSH Terms] OR "Health Care Sector"[MeSH Terms] 
+OR "Comprehensive Health Care"[MeSH Terms] OR "Internal Medicine"[MeSH Terms] OR "Clinical Medicine"[MeSH Terms] OR 
+"Pediatrics"[MeSH Terms] OR "Surgical Procedures, Operative"[MeSH Terms] OR "Medical Informatics"[MeSH Terms])   
+OR   
+("health research*"[ALL Fields] OR "drug development"[MeSH Terms] OR "drugs, investigational"[MeSH Terms] OR "vaccine research*"[ALL 
+Fields] OR "vaccine development"[MesH Terms] OR "compassionate use"[ALL Fields] OR "health records, personal"[MeSH Terms])  
+OR  
+("health system*"[ALL Fields] OR "health services"[MeSH Terms] OR "health services administration"[MeSH Terms] OR "health 
+planning"[MeSH Terms] OR "health management"[ALL Fields] OR "healthcare management system"[ALL Fields] OR "health system* 
+management"[ALL Fields] OR "healthcare system*"[ALL Fields] OR "telemedicine"[MeSH Terms] OR "equipment and supplies"[MeSH Terms] 
+OR ("health system"[ALL Fields] AND “supply chain"[ALL Fields]) OR “Health Informatics”[ALL Fields])  
+OR  
+( “public health"[ALL Fields] OR "disease outbreak*"[ALL Fields] OR "epidemiolog*"[ALL Fields] OR "public health"[MeSH Terms] OR "public 
+health surveillance"[MeSH Terms] OR "public health informatics"[MeSH Terms]))) 
+  
+AND   
+  
+(2023 / 1 / 1:2023 / 6 / 30[pdat])
+
+69 
+Annex 3. Interrogation questions for the reporting of key parameters 
+ Question Answer level 
+  A. AI model / system: foundations       
+A.1 Entity 
+Is there information about the entity responsible for developing and / or providing 
+the AI model / system? 
+No information Information with 
+uncertainties 
+Clear information 
+A.2 Conceptual foundations / scientific relevance  
+Is there information about the scientific evidence in relation to the AI model / 
+system's design and its intended use?  
+No information Information with 
+uncertainties 
+Clear information 
+A.3 Intended use 
+Is the intended use of the AI model / system described?  
+No information Information with 
+uncertainties 
+Clear information 
+A.4 Use scenario / environments 
+Is there information on the specific use scenario(s) and use environment(s) in which 
+the AI model / system is intended to operate? 
+No information Information with 
+uncertainties 
+Clear information 
+A.5 Validation 
+Is there information on the extent of initial quality evaluation of the AI model / 
+system?  
+No information Information with 
+uncertainties 
+Clear information 
+A.6 Technical maturity 
+Does the publication contain information on the technical maturity of the AI model / 
+system?  
+No information Information with 
+uncertainties 
+Clear information 
+    
+   
+  B. Field of application 
+   
+B.1 Medical fields and / or research areas 
+Is there information on the medical field(s) and / or research areas to 
+which the AI model / system would be applied / contribute?  
+No information Information with 
+uncertainties 
+Clear information 
+    
+   
+  C. Users, operators, monitoring tools and metrics 
+   
+C.1 Potential users 
+Are the potential users of the AI model / system clearly identified? 
+No information Information with 
+uncertainties 
+Clear information 
+C.2 User competency 
+Is the required user competency described? 
+No information Information with 
+uncertainties 
+Clear information
+
+70 
+C.3 Training requirements 
+Are the indications on training requirements for the competent and safe intended 
+use of the AI model / system described? 
+No information Information with 
+uncertainties 
+Clear information 
+C.4 Performance monitoring tools / metrics  
+Is there information on the availability of performance monitoring tools / metrics 
+that should be used by the operators of the AI model / system?  
+No information Information with 
+uncertainties 
+Clear information 
+    
+   
+  D. Data 
+   
+D.1 Modality of processed data  
+Is there information on data modality or modalities processed by the AI model / 
+system? 
+No information Information with 
+uncertainties 
+Clear information 
+D.2 Data provenance of training data 
+Is there information on the provenance of the data employed for training the AI 
+model / system? 
+No information Information with 
+uncertainties 
+Clear information 
+D.3 Privacy / handling of personal data 
+Is there information on whether and how personal data / privacy issues have been 
+addressed during development or use of the AI model / system? 
+No information Information with 
+uncertainties 
+Clear information 
+D.4 Curation of training data 
+Is there information on the curation of the data employed for training the AI model 
+/ system? 
+No information Information with 
+uncertainties 
+Clear information 
+D.5 Potential sources of data bias 
+Are potential sources of data bias discussed in the publication? 
+No information Information with 
+uncertainties 
+Clear information 
+  E. AI technique and output 
+   
+E.1 AI technique 
+Is the AI technique employed clearly described in the publication? 
+No information Information with 
+uncertainties 
+Clear information 
+E.2 Output of AI model / system 
+Is there information on the generated output(s) of the AI model / system? 
+No information Information with 
+uncertainties 
+Clear information
+
+71 
+ 
+Annex 4. Developed list of medical fields of application 
+ 
+1 Anaesthetics 
+2 General surgery 
+3 Neurosurgery 
+4 Obstetrics and gynecology 
+5 Internal medicine 
+6 Ophthalmology 
+7 Otorhinolaryngology 
+8 Paediatrics 
+9 Respiratory medicine 
+10 Urology 
+11 Orthopaedics 
+12 Pathology 
+13 Neurology 
+14 Psychiatry 
+15 Clinical radiology 
+16 Radiotherapy 
+17 Laboratory medicine 
+18 Biological hematology 
+19 Microbiology 
+20 Clinical chemistry 
+21 Clinical biology 
+22 Immunology 
+23 Plastic surgery 
+24 Thoracic surgery 
+25 Paediatric surgery 
+26 Vascular surgery 
+27 Cardiology 
+28 Gastroenterology 
+29 Rheumatology 
+30 General hematology 
+31 Endocrinology 
+32 Physical medicine and rehabilitation 
+33 Stomatology 
+34 Neuro-psychiatry 
+35 Dermato-venerology 
+36 Dermatology 
+37 Venereology 
+38 Radiology 
+39 Tropical medicine 
+40 Child psychiatry 
+41 Geriatrics 
+42 Nephrology 
+43 Infectious diseases 
+44 Public health and Preventive 
+Medicine 
+45 Pharmacology 
+46 Occupational medicine 
+47 Allergology 
+48 Gastro-enterologic surgery 
+49 Nuclear medicine 
+50 Accident and emergency medicine 
+51 Clinical neurophysiology 
+52 Maxillo-facial surgery 
+53 Dental, oral & maxillo-facial surgery 
+54 Podiatric Surgery 
+55 Podiatric Medicine 
+56 General Practice 
+57 Toxicology 
+58 Medical oncology
+
+72 
+ 
+Annex 5. Fiche template for collecting and documenting case study information 
+Bibliographic information 
+Title of the publication / study  
+Authors   
+doi   
+Study information 
+Rationale / summary  
+Findings and conclusion  
+Limitations 
+ 
+(e.g. early study development, readiness level, performing as intended, 
+obstacles, etc.) 
+Appraisal 
+Aboutness 
+ 
+Tick the appropriate box(es) 
+☐ Development 
+☐ Use 
+☐ Evaluation (including post-processing) 
+Technical maturity level of the AI 
+model / system 
+ 
+Tick the box 
+☐ M1 = Concept 
+☐ M2 = Research / development 
+☐ M3 = Deployment 
+AI technique Please specify the type(s) of AI technique is employed in the AI 
+model / system 
+ 
+AI solution availability Please specify the AI solution that is being developed or used. The 
+solution may include custom AI or ready -to-use AI product  / com-
+mercial or a combination of the two 
+ 
+Interpretable model OR non-inter-
+pretable but explainable AI (XAI) 
+Does the study mention explainable AI (XAI)? 
+Medical fields and / or research 
+areas 
+ 
+Primary medical field 
+Choose an item. 
+Secondary medical field 
+Choose an item. 
+Other research area(s) 
+Please specify 
+ 
+Key parameters A) AI model / system foundation
+
+73 
+ 
+ Entity   Choose an item.    
+Conceptual foun-
+dation   Choose an item.    
+Intended use   Choose an item.    
+Use scenario   Choose an item.    
+Validation   Choose an item.    
+Technical maturity   Choose an item.    
+ 
+B) Medical fields and / or research areas 
+Tick the box 
+☐ No information 
+☐ Information with uncertainties 
+☐ Clear information 
+ 
+C) Users, operators, monitoring tools and metrics 
+Potential users   Choose an item.    
+User competen-
+cies   Choose an item.    
+Training require-
+ments   Choose an item.    
+Performance 
+monitoring tools   Choose an item.    
+ 
+D) Data 
+Modality of pro-
+cessed data   Choose an item.    
+Data provenance   Choose an item.    
+Data privacy   Choose an item.    
+Curation of train-
+ing data   Choose an item.    
+Sources of bias   Choose an item.    
+ 
+E) AI technique, AI model and output 
+AI technique   Choose an item.    
+Output of Ai 
+model / system   Choose an item.
+
+Getting in touch with the EU 
+In person 
+All over the European Union there are hundreds of Europe Direct centres. You can find the address of the 
+centre nearest you online (european-union.europa.eu/contact-eu/meet-us_en). 
+On the phone or in writing 
+Europe Direct is a service that answers your questions about the European Union. You can contact this 
+service: 
+— by freephone: 00 800 6 7 8 9 10 11 (certain operators may charge for these calls),  
+— at the following standard number: +32 22999696, 
+— via the following form: european-union.europa.eu/contact-eu/write-us_en. 
+ 
+Finding information about the EU 
+Online 
+Information about the European Union in all the official languages of the EU is available on the Europa 
+website (european-union.europa.eu). 
+EU publications 
+You can view or order EU publications at op.europa.eu/en/publications . Multiple copies of free 
+publications can be obtained by contacting Europe Direct or your local documentation centre ( european-
+union.europa.eu/contact-eu/meet-us_en). 
+EU law and related documents 
+For access to legal information from the EU, including all EU law since 1951 in  all the official language 
+versions, go to EUR-Lex (eur-lex.europa.eu). 
+EU open data 
+The portal data.europa.eu  provides access to open datasets from the EU institutions, bodies and 
+agencies. These can be downloaded and reused for free, for both commercial and non -commercial 
+purposes. The portal also provides access to a wealth of datasets from European countries.
+
+The Joint Research Centre (JRC) provides 
+independent, evidence-based knowledge and 
+science, supporting EU policies to positively 
+impact society 
+EU Science Hub 
+Joint-research-centre.ec.europa.eu
