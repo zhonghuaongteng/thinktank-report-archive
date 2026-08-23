@@ -368,6 +368,7 @@ def main() -> None:
         "204_acatech工程科学与技术创新跨期精选全文台账.csv", "205_acatech工程科学与技术创新跨期精选全文结果.md",
         "206_NASEM科学技术创新政策近十年轻量总目录.csv", "207_NASEM科学技术创新政策近十年轻量总目录结果.md",
         "208_NASEM科学技术创新机制与中国比较跨期精选全文台账.csv", "209_NASEM科学技术创新机制与中国比较跨期精选全文结果.md",
+        "210_本地资料库实时进度看板.md", "211_机构采集进度.csv",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -1070,6 +1071,13 @@ def main() -> None:
     assert sum(int(r["章节数"]) for r in nasem_selected) == 161
     assert sum(int(r["网页归档字节数"]) for r in nasem_selected) == 7243099
     assert sum(int(r["清洗文本字符数"]) for r in nasem_selected) == 6132897
+    progress_text = (root / "210_本地资料库实时进度看板.md").read_text(encoding="utf-8")
+    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：1995条", "仅目录与官方入口：8404条", "真实待补队列：0", "明确获取失败：1条", "中国关联目录材料：712条"):
+        assert marker in progress_text
+    institution_progress = rows(root / "211_机构采集进度.csv")
+    assert len(institution_progress) == 46
+    nasem_progress = next(r for r in institution_progress if r["institution"] == "National Academies of Sciences, Engineering, and Medicine")
+    assert (nasem_progress["catalog"], nasem_progress["local_assets"], nasem_progress["light_only"]) == ("253", "18", "235")
     assert sum(int(r["China词形命中数"]) for r in nasem_selected) == 1491
     assert sum(int(r["China词形命中数"]) > 0 for r in nasem_selected) == 17
     assert sum("Protecting U.S. Technological Advantage" == r["报告名称"] for r in nasem_selected) == 1
@@ -1579,6 +1587,8 @@ def main() -> None:
         ("207_NASEM科学技术创新政策近十年轻量总目录结果.md", "国际科技智库观点演变_NASEM科学技术创新政策近十年轻量总目录结果.md"),
         ("208_NASEM科学技术创新机制与中国比较跨期精选全文台账.csv", "国际科技智库观点演变_NASEM科学技术创新机制与中国比较跨期精选全文台账.csv"),
         ("209_NASEM科学技术创新机制与中国比较跨期精选全文结果.md", "国际科技智库观点演变_NASEM科学技术创新机制与中国比较跨期精选全文结果.md"),
+        ("210_本地资料库实时进度看板.md", "国际科技智库观点演变_本地资料库实时进度看板.md"),
+        ("211_机构采集进度.csv", "国际科技智库观点演变_机构采集进度.csv"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
