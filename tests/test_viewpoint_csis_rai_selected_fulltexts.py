@@ -2,13 +2,35 @@ import unittest
 from unittest.mock import patch
 
 from scripts.extend_viewpoint_csis_rai_selected_fulltexts import SELECTED_ITEMS, browser_pdf, official_pdf_urls
+from scripts.build_viewpoint_node_theme_gap_matrix import COVERAGE_THEMES, china_relevance, classify_themes
 from scripts.validate_viewpoint_research import expected_csis_rai_selected_ids
 
 
 class CsisRaiSelectedFulltextsTests(unittest.TestCase):
     def test_selection_is_small_relative_to_the_light_catalog(self):
-        self.assertEqual(len(SELECTED_ITEMS), 21)
+        self.assertEqual(len(SELECTED_ITEMS), 27)
         self.assertLess(len(SELECTED_ITEMS), 30)
+
+    def test_china_innovation_followup_is_exactly_six(self):
+        expected = {
+            "C-CSIS-RAI-2022-WHAT-CAN-PATENT-DATA-REVEAL-ABOUT-US-CHINA-TECHNOLOGY-COMPETITION",
+            "C-CSIS-RAI-2022-CHINA-INNOVATION-CHALLENGE-CONVERSATION-PROFESSOR-JONATHAN-BARNETT",
+            "C-CSIS-RAI-2024-INTELLECTUAL-PROPERTY-RIGHTS-US-CHINA-INNOVATION-COMPETITION",
+            "C-CSIS-RAI-2024-WHAT-RISC-V-MEANS-FUTURE-CHIP-DEVELOPMENT",
+            "C-CSIS-RAI-2025-INNOVATION-LIGHTBULB-INNOVATION-COMPETITION-CHIP-DESIGN-BETWEEN-US-AND-CHINA",
+            "C-CSIS-RAI-2025-UNITED-STATES-CANNOT-AFFORD-DISARRAY-CHINA-STRENGTHENS-ITS-BIOPHARMACEUTICAL-INDUSTRY",
+        }
+        previous = expected_csis_rai_selected_ids() - expected
+        actual = {item["id"] for item in SELECTED_ITEMS}
+        self.assertEqual(actual - previous, expected)
+        self.assertTrue(all(item["china"] for item in SELECTED_ITEMS if item["id"] in expected))
+
+    def test_followup_items_are_visible_to_china_technology_coverage(self):
+        followup = SELECTED_ITEMS[-6:]
+        for item in followup:
+            row = {"报告名称": item["title"], "示踪问题": "；".join(item["axes"]) + "；中国科技横向维度"}
+            self.assertTrue(china_relevance(row), item["id"])
+            self.assertTrue(classify_themes(row) & set(COVERAGE_THEMES), item["id"])
 
     def test_selection_covers_every_actual_program_year(self):
         self.assertEqual({item["date"][:4] for item in SELECTED_ITEMS}, {"2021", "2022", "2023", "2024", "2025", "2026"})

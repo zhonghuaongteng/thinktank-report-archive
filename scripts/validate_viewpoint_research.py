@@ -172,6 +172,12 @@ def expected_csis_rai_selected_ids() -> set[str]:
         "C-CSIS-RAI-2026-UNDERSTANDING-CHINAS-QUEST-QUANTUM-ADVANCEMENT",
         "C-CSIS-RAI-2026-LEVERAGING-SBIR-QUANTUM-COMMERCIALIZATION-AND-SUPPLY-CHAIN-GROWTH",
         "C-CSIS-RAI-2026-POWERING-INNOVATION-DATA-CENTERS-COMPUTE-AND-US-COMPETITIVENESS",
+        "C-CSIS-RAI-2022-WHAT-CAN-PATENT-DATA-REVEAL-ABOUT-US-CHINA-TECHNOLOGY-COMPETITION",
+        "C-CSIS-RAI-2022-CHINA-INNOVATION-CHALLENGE-CONVERSATION-PROFESSOR-JONATHAN-BARNETT",
+        "C-CSIS-RAI-2024-INTELLECTUAL-PROPERTY-RIGHTS-US-CHINA-INNOVATION-COMPETITION",
+        "C-CSIS-RAI-2024-WHAT-RISC-V-MEANS-FUTURE-CHIP-DEVELOPMENT",
+        "C-CSIS-RAI-2025-INNOVATION-LIGHTBULB-INNOVATION-COMPETITION-CHIP-DESIGN-BETWEEN-US-AND-CHINA",
+        "C-CSIS-RAI-2025-UNITED-STATES-CANNOT-AFFORD-DISARRAY-CHINA-STRENGTHENS-ITS-BIOPHARMACEUTICAL-INDUSTRY",
     }
 
 
@@ -946,13 +952,13 @@ def main() -> None:
     assert all(r["官方落地页"].startswith(("https://www.csis.org/", "https://features.csis.org/")) for r in csis_rai_light)
     csis_rai_selected = rows(root / "180_CSIS_RAI科学技术创新机制与中国比较跨期精选全文台账.csv")
     assert {r["报告ID"] for r in csis_rai_selected} == expected_csis_rai_selected_ids()
-    assert sum(r["资产类型"] == "官方PDF" for r in csis_rai_selected) == 16
-    assert sum(r["资产类型"] == "官方网页正文" for r in csis_rai_selected) == 5
-    assert sum(r["中国直接信号"] == "是" for r in csis_rai_selected) == 10
-    assert sum(int(r["页数"]) for r in csis_rai_selected) == 260
-    assert sum(int(r["字节数"]) for r in csis_rai_selected) == 15118044
-    assert sum(int(r["清洗文本字符数"]) for r in csis_rai_selected) == 723777
-    assert sum(int(r["China词形命中数"]) for r in csis_rai_selected) == 737
+    assert sum(r["资产类型"] == "官方PDF" for r in csis_rai_selected) == 17
+    assert sum(r["资产类型"] == "官方网页正文" for r in csis_rai_selected) == 10
+    assert sum(r["中国直接信号"] == "是" for r in csis_rai_selected) == 16
+    assert sum(int(r["页数"]) for r in csis_rai_selected) == 280
+    assert sum(int(r["字节数"]) for r in csis_rai_selected) == 15550563
+    assert sum(int(r["清洗文本字符数"]) for r in csis_rai_selected) == 812948
+    assert sum(int(r["China词形命中数"]) for r in csis_rai_selected) == 854
     assert all(
         Path(r["本地原始资产"]).exists() and Path(r["本地页面HTML"]).exists()
         and Path(r["本地文本"]).exists() and Path(r["本地切片"]).exists()
@@ -1099,7 +1105,7 @@ def main() -> None:
     assert sum(int(r["网页归档字节数"]) for r in nasem_selected) == 7243099
     assert sum(int(r["清洗文本字符数"]) for r in nasem_selected) == 6132897
     progress_text = (root / "210_本地资料库实时进度看板.md").read_text(encoding="utf-8")
-    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2070条", "仅目录与官方入口：8329条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：724条"):
+    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2076条", "仅目录与官方入口：8323条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：735条"):
         assert marker in progress_text
     institution_progress = rows(root / "211_机构采集进度.csv")
     assert len(institution_progress) == 46
@@ -1283,8 +1289,8 @@ def main() -> None:
     assert sum(r["全文策略"].startswith("总目录保留") for r in ifp_light) == 139
     assert sum(r["全文策略"].startswith("已进入精选全文") for r in itif_light) == 30
     assert sum(r["全文策略"].startswith("总目录保留") for r in itif_light) == 639
-    assert sum(r["全文策略"].startswith("已进入精选全文") for r in csis_rai_light) == 21
-    assert sum(r["全文策略"].startswith("总目录保留") for r in csis_rai_light) == 155
+    assert sum(r["全文策略"].startswith("已进入精选全文") for r in csis_rai_light) == 27
+    assert sum(r["全文策略"].startswith("总目录保留") for r in csis_rai_light) == 149
     assert len(rows(root / "69_机构节点主题覆盖缺口矩阵.csv")) == 1290
     assert len(rows(root / "70_定点补源优先队列.csv")) == 0
     assert len(rows(root / "72_轻量目录扩展优先队列.csv")) == 0

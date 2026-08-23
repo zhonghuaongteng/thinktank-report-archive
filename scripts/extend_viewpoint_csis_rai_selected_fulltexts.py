@@ -49,6 +49,12 @@ SELECTED_ITEMS = (
     _item("C-CSIS-RAI-2026-UNDERSTANDING-CHINAS-QUEST-QUANTUM-ADVANCEMENT", "2026-01-29", "Understanding China’s Quest for Quantum Advancement", ("研发治理与科研组织", "关键与通用技术"), "中国量子科研、人才、平台和产业转化体系的专题分析", True),
     _item("C-CSIS-RAI-2026-LEVERAGING-SBIR-QUANTUM-COMMERCIALIZATION-AND-SUPPLY-CHAIN-GROWTH", "2026-03-30", "Leveraging SBIR for Quantum Commercialization and Supply Chain Growth", ("技术创新与产业转化", "关键与通用技术"), "用小企业创新研究机制推动量子技术商业化和供应能力"),
     _item("C-CSIS-RAI-2026-POWERING-INNOVATION-DATA-CENTERS-COMPUTE-AND-US-COMPETITIVENESS", "2026-08-11", "Powering Innovation: Data Centers, Compute, and U.S. Competitiveness", ("技术创新与产业转化", "关键与通用技术"), "算力基础设施约束、扩张机制与创新竞争力"),
+    _item("C-CSIS-RAI-2022-WHAT-CAN-PATENT-DATA-REVEAL-ABOUT-US-CHINA-TECHNOLOGY-COMPETITION", "2022-09-19", "What Can Patent Data Reveal about U.S.-China Technology Competition?", ("创新政策与研发治理", "国际合作开放科学与比较"), "专利数据衡量中美技术创新能力的适用范围与指标边界", True),
+    _item("C-CSIS-RAI-2022-CHINA-INNOVATION-CHALLENGE-CONVERSATION-PROFESSOR-JONATHAN-BARNETT", "2022-12-09", "The China Innovation Challenge: A Conversation with Professor Jonathan Barnett", ("创新政策与研发治理", "技术创新与产业转化"), "知识产权制度、技术扩散与中国创新能力之间的机制讨论", True),
+    _item("C-CSIS-RAI-2024-INTELLECTUAL-PROPERTY-RIGHTS-US-CHINA-INNOVATION-COMPETITION", "2024-05-16", "Intellectual Property Rights in the U.S.-China Innovation Competition", ("创新政策与研发治理", "技术创新与产业转化"), "中美创新竞争中知识产权保护、研发激励与技术商业化关系", True),
+    _item("C-CSIS-RAI-2024-WHAT-RISC-V-MEANS-FUTURE-CHIP-DEVELOPMENT", "2024-11-13", "What RISC-V Means for the Future of Chip Development", ("关键与通用技术", "国际合作开放科学与比较"), "RISC-V开放指令集、跨国技术生态与中国芯片研发能力", True),
+    _item("C-CSIS-RAI-2025-INNOVATION-LIGHTBULB-INNOVATION-COMPETITION-CHIP-DESIGN-BETWEEN-US-AND-CHINA", "2025-02-21", "Innovation Lightbulb: Innovation Competition in Chip Design Between the U.S. and China", ("关键与通用技术", "技术创新与产业转化"), "中美芯片设计企业数量、能力演进与产业创新生态比较", True),
+    _item("C-CSIS-RAI-2025-UNITED-STATES-CANNOT-AFFORD-DISARRAY-CHINA-STRENGTHENS-ITS-BIOPHARMACEUTICAL-INDUSTRY", "2025-03-18", "The United States Cannot Afford Disarray as China Strengthens Its Biopharmaceutical Industry", ("科学体系与研发投入", "技术创新与产业转化"), "公共科研资助、制度稳定性与中美生物医药创新能力比较", True),
 )
 
 
@@ -188,8 +194,12 @@ def main() -> int:
             pdf_path = pdf_dir / f"{rid}.pdf"
             text_path = text_dir / f"{rid}.txt"
             slice_path = slice_dir / f"{rid}.md"
-            main_html, page_text, pdf_urls = page_detail(target, url)
-            html_path.write_text(main_html, encoding="utf-8", newline="\n")
+            fetched_html, page_text, pdf_urls = page_detail(target, url)
+            if html_path.exists():
+                main_html = html_path.read_text(encoding="utf-8", errors="replace")
+            else:
+                main_html = "\n".join(line.rstrip() for line in fetched_html.splitlines()) + "\n"
+                html_path.write_text(main_html, encoding="utf-8", newline="\n")
             pdf_url = pdf_urls[0] if pdf_urls else ""
             pages = 0
             if pdf_url:
@@ -207,9 +217,13 @@ def main() -> int:
                 asset_path = html_path
                 asset_data = main_html.encode("utf-8")
                 asset_type = "官方网页正文"
+            if text_path.exists():
+                text = text_path.read_text(encoding="utf-8", errors="replace")
+            else:
+                text = "\n".join(line.rstrip() for line in text.splitlines()) + "\n"
+                text_path.write_text(text, encoding="utf-8", newline="\n")
             if len(text) < 300:
                 raise RuntimeError(f"CSIS RAI selected text too short: {rid} {len(text)}")
-            text_path.write_text(text, encoding="utf-8", newline="\n")
             slice_path.write_text(selected_slice(item, text), encoding="utf-8", newline="\n")
             lower = text.lower()
             china_hits = lower.count("china") + lower.count("chinese") + lower.count("prc")
@@ -217,6 +231,7 @@ def main() -> int:
             row["本地路径"] = str(text_path)
             row["正文完整度"] = f"{asset_type}已保存；同时保存官方页面主体HTML、清洗文本和科技创新切片"
             row["优先级"] = "P0-China-STI-node" if item["china"] else "P1-STI-node"
+            row["示踪问题"] = "；".join(item["axes"]) + ("；中国科技横向维度" if item["china"] else "")
             row["样本角色"] = SERIES_ROLE
             row["编码状态"] = "全文待观点编码"
             row["预期用途"] = str(item["role"])
