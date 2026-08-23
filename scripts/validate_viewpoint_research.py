@@ -403,6 +403,7 @@ def main() -> None:
         "228_技术前瞻公共研发优先级与中国比较定点增补台账.csv", "229_技术前瞻公共研发优先级与中国比较定点增补结果.md",
         "230_开放科学科研基础设施与技术平台定点增补台账.csv", "231_开放科学科研基础设施与技术平台定点增补结果.md",
         "232_使命导向创新重大研发计划与组织机制定点增补台账.csv", "233_使命导向创新重大研发计划与组织机制定点增补结果.md",
+        "234_ITIF中国先进产业技术创新能力精选全文台账.csv", "235_ITIF中国先进产业技术创新能力精选全文结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -1094,6 +1095,23 @@ def main() -> None:
         and Path(r["本地切片"]).exists() and sha(Path(r["本地原始资产"])) == r["SHA256"]
         for r in mission_oriented_rd
     )
+    itif_china_industries = rows(root / "234_ITIF中国先进产业技术创新能力精选全文台账.csv")
+    assert len(itif_china_industries) == 6
+    assert {r["技术领域"] for r in itif_china_industries} == {"机器人", "电动车与电池", "生物技术", "半导体", "量子技术", "先进产业综合"}
+    assert sum(int(r["网页数"]) for r in itif_china_industries) == 6
+    assert sum(int(r["字节数"]) for r in itif_china_industries) == 242338
+    assert sum(int(r["清洗文本字符数"]) for r in itif_china_industries) == 240377
+    assert sum(int(r["China词形命中数"]) for r in itif_china_industries) == 1014
+    assert all(
+        Path(r["既有官方PDF"]).exists() and Path(r["新增网页正文"]).exists()
+        and Path(r["本地文本"]).exists() and Path(r["本地切片"]).exists()
+        and sha(Path(r["既有官方PDF"])) == r["既有PDF_SHA256"]
+        and sha(Path(r["新增网页正文"])) == r["SHA256"]
+        for r in itif_china_industries
+    )
+    itif_china_light = rows(root / "79_ITIF中国先进产业创新系列轻量目录.csv")
+    assert len(itif_china_light) == 10
+    assert all("既有官方PDF已复核" in r["全文策略"] for r in itif_china_light)
     fas_light = rows(root / "174_FAS报告与政策备忘录近十年轻量总目录.csv")
     assert len(fas_light) == 625
     assert {year: sum(r["发布日期"].startswith(str(year)) for r in fas_light) for year in range(2016, 2027)} == {
@@ -1467,7 +1485,8 @@ def main() -> None:
     cset_research_system_ids = {"C-CSET-15208", "C-CSET-15209"}
     assert {r["报告ID"] for r in cset_light if r["全文策略"].startswith("已进入中国科研体系")} == cset_research_system_ids
     assert all(r["全文策略"].startswith("不自动下载") for r in cset_light if r["报告ID"] not in cset_research_system_ids)
-    assert all(r["全文策略"].startswith("不自动下载") for ledger in (itif_series_light, itif_node_light) for r in ledger)
+    assert all(r["全文策略"].startswith("既有官方PDF已复核") for r in itif_series_light)
+    assert all(r["全文策略"].startswith("不自动下载") for r in itif_node_light)
     science_diplomacy_ostp_ids = {
         "C-US-OSTP-2016-IWGODSP-PRINCIPLES-0",
         "C-US-OSTP-2024-2024-BIENNIAL-REPORT-TO-CONGRESS-ON-INTERNATIONAL-SCIENCE-TECHNOLOGY-COOPERATION",
@@ -1889,6 +1908,8 @@ def main() -> None:
         ("231_开放科学科研基础设施与技术平台定点增补结果.md", "国际科技智库观点演变_开放科学科研基础设施与技术平台定点增补结果.md"),
         ("232_使命导向创新重大研发计划与组织机制定点增补台账.csv", "国际科技智库观点演变_使命导向创新重大研发计划与组织机制定点增补台账.csv"),
         ("233_使命导向创新重大研发计划与组织机制定点增补结果.md", "国际科技智库观点演变_使命导向创新重大研发计划与组织机制定点增补结果.md"),
+        ("234_ITIF中国先进产业技术创新能力精选全文台账.csv", "国际科技智库观点演变_ITIF中国先进产业技术创新能力精选全文台账.csv"),
+        ("235_ITIF中国先进产业技术创新能力精选全文结果.md", "国际科技智库观点演变_ITIF中国先进产业技术创新能力精选全文结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name), source_name
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1
