@@ -82,10 +82,22 @@ def render_markdown(progress: dict[str, object], generated_at: str) -> str:
     local = int(progress["local_assets"])
     density = local / total * 100 if total else 0.0
     true_queue = int(progress["fulltext_queue"]) + int(progress["catalog_queue"])
+    china_assets = int(progress.get("china_assets", 0))
+    china_texts = int(progress.get("china_texts", 0))
+    china_searchable_rate = china_texts / china_assets * 100 if china_assets else 0.0
+    stop_checks = {
+        "核心机构与议题目录覆盖": int(progress["catalog_queue"]) == 0,
+        "定点全文证据缺口": int(progress["fulltext_queue"]) == 0,
+        "明确获取失败": int(progress["explicit_failures"]) == 0,
+        "中国本地材料可检索率": china_assets > 0 and china_searchable_rate >= 95.0,
+    }
+    general_collection_complete = all(stop_checks.values())
     lines = [
         "# 国际科技智库本地资料库实时进度看板",
         "",
         f"- 生成时间：{generated_at}（Asia/Shanghai）",
+        f"- 通用补库完成度：{'100%（已达到停止条件）' if general_collection_complete else '未达到停止条件'}。",
+        f"- 当前动作：{'停止继续扩主题；后续仅由具体项目证据缺口或定期更新触发。' if general_collection_complete else '只处理下列未满足条件，不扩大采集范围。'}",
         f"- 轻量总目录：{total}条。",
         f"- 已有本地原始资产或官方网页转换资产：{local}条。",
         f"- 仅目录与官方入口：{int(progress['light_only'])}条；按既定分层规则保留，不计作机械下载欠账。",
@@ -99,6 +111,21 @@ def render_markdown(progress: dict[str, object], generated_at: str) -> str:
         lines.append(
             f"- 中国关联目录材料：{china_catalog}条；已有本地原文{int(progress['china_assets'])}条、可检索文本{int(progress['china_texts'])}条。"
         )
+    lines.extend(["", "## 停止条件", "", "| 判定项 | 当前证据 | 状态 |", "|---|---|---|"])
+    stop_evidence = {
+        "核心机构与议题目录覆盖": f"轻量目录扩展队列{int(progress['catalog_queue'])}",
+        "定点全文证据缺口": f"定点全文队列{int(progress['fulltext_queue'])}",
+        "明确获取失败": f"失败{int(progress['explicit_failures'])}条",
+        "中国本地材料可检索率": f"{china_texts}/{china_assets}，{china_searchable_rate:.2f}%",
+    }
+    for label, passed in stop_checks.items():
+        lines.append(f"| {label} | {stop_evidence[label]} | {'已满足' if passed else '未满足'} |")
+    lines.extend(
+        [
+            "",
+            "轻量保留条目只承担议题发现和机构关注方向观察功能，不属于待完成工作。通用补库停止后，只有三类事件重新触发全文获取：具体项目出现页码级证据缺口；既有官方入口失效或出现明确失败；进入约定的定期更新窗口。",
+        ]
+    )
     lines.extend(
         [
             "",
