@@ -1,0 +1,708 @@
+# Adapting to the 21st Century Innovation Environment
+
+<!-- collection-complete: chapter-probe-v2 -->
+
+- 转换说明：以下内容由Jina从NASEM官方在线阅读页转换为Markdown；每章保留官方来源URL。
+
+<!-- source: https://www.nationalacademies.org/read/25384/chapter/1 -->
+
+## 官方在线阅读第1章
+
+[](https://www.nationalacademies.org/)
+*
+### Dropdown items
+
+### My Academies
+
+    *   Login
+    *   [Personal Library](https://www.nationalacademies.org/account/personal-library "Personal Library")
+    *   [Account settings](https://www.nationalacademies.org/account/settings "Account settings")
+    *   Logout
+
+# [Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief](https://www.nationalacademies.org/read/25384/chapter/1)(2019)
+
+## Chapter: Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief
+
+*   Get this book
+
+ Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+ Page 1 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+Proceedings of a Workshop
+
+* * *
+
+IN BRIEF
+February 2019
+
+# Adapting to the 21st Century Innovation Environment
+
+# Proceedings of a Workshop—in Brief
+
+The innovation environment of the 21st century is characterized by disruption, accelerated technology development, and globalized access to information, which is a dramatic shift from the largely government-controlled Cold War innovation environment of the previous century. The shift from an industrial age to an information age has lowered the barriers to entry into the global economy and compelled institutions to respond with greater efficiency and speed. How are companies, universities, and the U.S. government adapting to the accelerated pace of innovation in the current open information age? How are partnerships among the three sectors being utilized to adapt to current innovation conditions, and how can partnerships be fostered more deliberately to increase U.S. competitiveness in the global economy? To address these and related questions, the Government-University-Industry Research Roundtable (GUIRR) held a workshop at the National Academy of Sciences on **October 16–17, 2018**.
+
+**Curt Carlson**, founder and chief executive officer of the Practice of Innovation, LLC, delivered the workshop’s keynote address. He defined invention as “something novel reduced to practice” and innovation as the “creation and delivery of new customer value for society with a model for sustainability.” A global innovation economy embodies exponential progress, intense competition, new business models, and abundant opportunities, he explained. Even so, meaningful jobs continue to be difficult to find, the median income remains stagnant, and companies are frequently disappearing in the United States. He added that U.S. government research and development (R&D) funding has remained flat for more than a decade, while China has become exponentially more competitive with the United States. These factors indicate that the United States must innovate smarter and rich, multidisciplinary challenges and opportunities demand a new approach. By combining a new approach with currently available resources, he asserted that the United States could become two to ten times more innovative.
+
+Improving global competitiveness is one of the nation’s most important challenges, yet innovation and value proposition skills are not often taught to future leaders. Referring to a recent Gallup study, Carlson noted that for approximately every 200 professors and professionals, only one entrepreneur exists; most people are “value creators” and thus should be taught to develop those skills. He also commented that only approximately 20 percent of R&D has any value for stakeholders, likely because a value proposition was not created at the start of each process. Instead of continuing to “fail fast to succeed early,” he suggested that we “learn, search, and create faster to succeed early and keep up with an exponentially advancing world.”
+
+Carlson highlighted a National Academy of Engineering study on value-creation best practices that evaluated the National Science Foundation’s (NSF’s) engineering research centers.[1](https://www.nationalacademies.org/read/25384/chapter/1#pz1-9) The report found that practices from the 1950s that are still in use could be replaced by the implementation of a value-creation playbook. Criteria for value creation include the following:
+
+*   An important initiative that can be scalable and have an impact on society;
+*   A value proposition detailing customer need, approach for addressing this need, benefits and costs, and comparison to competition and alternative options (NABC model); and
+*   The use of comparative learning to solve problems collaboratively and quickly.
+
+__________________
+
+[1](https://www.nationalacademies.org/read/25384/chapter/1#AOn) National Academies of Sciences, Engineering, and Medicine. 2017. _A New Vision for Center-Based Engineering Research_. Washington, DC: The National Academies Press. [https://doi.org/10.17226/24767](https://doi.org/10.17226/24767).
+
+* * *
+
+![Image 1: Image](https://www.nationalacademies.org/read/25384/assets/images/logo.png)
+
+ Page 2 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[He said that companies should ultimately strive to be positioned with access to both capabilities and customers, with minimal competition, and to be able to present one to three reasons why a problem has not yet been solved and one to three possible ways the problem could be solved. Carlson reiterated that a company’s ability to describe its complete value proposition, as opposed to merely its approach, is essential. Once value is created, skilled people and entrepreneurs can efficiently produce high-value innovations with societal impact. He emphasized that in a profoundly competitive world, talent and hard work alone are insufficient; a paradigm shift with a focus on value creation is needed.](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[](https://www.nationalacademies.org/read/25384/chapter/1)
+[Carlson hosts workshops for executives to develop coherent strategies for describing enterprises’ value proposition, which he defines as a fundamental assessment of the societal market, using an NABC model composed of customer need (N), the approach for addressing that need (A), the benefits per cost (B), and the competition and alternatives (C). On the second day of the workshop, Carlson facilitated an exercise in which meeting participants discussed the value proposition of GUIRR in small groups using this NABC model from the perspectives of GUIRR customers—government, university, and industry representatives. The groups’ comments are presented in](https://www.nationalacademies.org/read/25384/chapter/1)[Table 1](https://www.nationalacademies.org/read/25384/chapter/1#tab_1).
+
+**TABLE 1** Assessment of the Value Proposition of GUIRR from Government, University, and Industry Perspectives, using Carlson’s NABC Model.
+
+**Customer N eed****A pproach for Addressing that Need****B enefits per Cost****C ompetition and Alternatives**
+**Value Proposition of GUIRR for Industry Customers**
+*   Access to information for maintaining business status in the marketplace
+*   Access to talent
+*   Access to insight on grand challenges and national priorities
+*   Defining policy issues using a common language
+*   Sustainable partnerships maintained over leadership transitions
+*   Representatives with budget and decision-making authority*   Evaluation of problems and opportunities across sectors
+*   Clarity of sector objectives
+*   Incorporation of data analysis and best practice reviews
+*   Convening without pressures of reaching consensus
+*   Exclusivity*   Trusted relationships and self-education
+*   Connections
+*   Strategic thinking
+*   Affiliation with the National Academies
+*   Intimate group with broad topics
+*   Business outcomes as a result
+*   Time and money*   The Milken Institute
+*   World Economic Forum (Davos)
+*   Industrial Research Institute
+*   Business-Higher Education Forum
+*   University Industry Demonstration Partnership
+*   Professional societies
+**Value Proposition of GUIRR for Academic Customers**
+*   Insights, strategy, and funding opportunities
+*   Collaborator connections
+*   Mutual understanding across and within sectors about challenges*   Three meetings per year with written proceedings
+*   Topical discussions and curated sessions with leaders
+*   Strategy development
+*   University/industry partnerships
+*   Exclusive meetings for members only, but inclusive about which institutions can join as members*   Networking opportunities
+*   Meetings in D.C.
+*   Affiliation with the National Academies
+*   Travel time*   National Association of Corporate Relations Officers
+*   University-Industry Demonstration Partnership
+*   Council on Competitiveness
+
+ Page 3 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+**Value Proposition of GUIRR for Government Customers**
+*   Insights into trends and situational awareness
+*   High-level access to thought leaders
+*   Safe zone for off-the-record discussions*   Members of government, academia, and industry come together at the same place and time, with access to leading-edge analysis and diverse perspectives
+*   Catalyst/convener/initiator
+*   Sharing of timely and relevant information*   Networking with other thought leaders
+*   Collective problem solving
+*   Strategic thinking
+*   Curation/prioritization of the important issues of the nation
+*   Influencing R&D agendas, budgets, and policy across the government
+*   Assessing the regulatory and statutory environment
+*   Building trust and reputation with affiliation with the National Academies*   Council on Competitiveness
+*   Think tanks like Brookings and Center for Strategic and International Studies
+*   National Science Board
+*   White House Office of Science and Technology Policy
+
+## CHARACTERIZING THE CHANGES IN THE U.S. INNOVATION ENVIRONMENT
+
+The second day of the workshop opened with two presentations considering the characteristics of the modern innovation environment, specifically by examining ecosystem trends and the societal challenges created by an age of accelerated innovation. **Wesley Cohen**, professor of economics and management at Duke University, began with a presentation to characterize the innovation ecosystem by exploring the sources of innovation in the U.S. manufacturing sector. He first defined key terms to frame this discussion: invention refers to “coming up with a new product,” and innovation involves “the commercial introduction of a developed invention to the market.” In order to understand the innovation ecosystem, the following questions are worthy of consideration:
+
+*   How often do firms obtain the inventions underlying their new commercialized products (i.e., innovations) from outside sources? How available are inventions within the innovation ecosystem?
+*   Who are the sources of inventions? Are they buyers, users, universities, government laboratories, or other firms in the industry?
+*   Through what channels are innovations acquired? Licensing, cooperative relationships, or other arrangements?
+*   What is the relative value of inventions across sources?
+*   How do firm capabilities affect their acquisitions of inventions and knowledge from the outside?
+
+In thinking about why these questions are important to understanding innovation within an economic system, Cohen referred to Adam Smith’s 1776 belief that the division of labor led to increased productivity. He explained that productivity benefits still exist today with the division of innovative labor (DoIL)—i.e., those most capable of invention are not always best positioned to innovate. The division of innovative labor approach presents opportunities for inventors and innovators to each use their comparative advantage to address complex problems successfully and to stimulate invention and commercialization.
+
+Cohen presented a 2010 survey on product innovation for manufacturing firms and selected service industries. Of the 22,000 who received the survey, 6,685 responded. The survey revealed that approximately 16 percent of manufacturing firms introduced new-to-the-market products from 2007–2009 ([Table 2](https://www.nationalacademies.org/read/25384/chapter/1#tab_2)).
+
+ Page 4 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[**TABLE 2** Rates of Innovation, Imitation, Patenting, and Sales for New or Significantly Improved (NOSI) and New to the Market (NTM) Innovations for U.S. Manufacturing Industries.](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[| **INDUSTRY** | **N** | **% NOSI** | **% NTM** | **Imitation % (NOSI-NTM)** | **% sales from NOSI** | **% sales from focal innovation** | **% NTM patented** | | --- | --- | --- | --- | --- | --- | --- | --- | | **Food & Bev** | 362 | 40 | 13 | 27 | 16 | 9 | 24 | | **Text** | 210 | 38 | 15 | 22 | 19 | 15 | 51 | | **Wood** | 385 | 33 | 8 | 25 | 15 | 7 | 11 | | **Chem** | 365 | 50 | 24 | 25 | 17 | 9 | 42 | | **Pharma** | 128 | 63 | 28 | 33 | 23 | 13 | 61 | | **Plastics** | 340 | 48 | 16 | 31 | 14 | 6 | 42 | | **Minerals** | 323 | 31 | 9 | 21 | 21 | 14 | 35 | | **Metals** | 324 | 38 | 9 | 29 | 14 | 5 | 23 | | **Fab Metals** | 424 | 39 | 10 | 28 | 28 | 8 | 35 | | **Machinery** | 384 | 46 | 20 | 24 | 24 | 14 | 52 | | **Electronic** | 146 | 76 | 33 | 43 | 38 | 9 | 58 | | **Semi Con** | 302 | 61 | 27 | 33 | 29 | 18 | 59 | | **Instrument** | 135 | 60 | 37 | 22 | 17 | 7 | 54 | | **Elec Equip** | 344 | 54 | 26 | 28 | 25 | 13 | 53 | | **Auto** | 339 | 53 | 27 | 23 | 25 | 11 | 34 | | **Med Equip** | 136 | 56 | 22 | 33 | 37 | 31 | 72 | | **Miscl** | 510 | 48 | 19 | 29 | 30 | 10 | 45 | | **All mfg** | **5157** | **43** | **16** | **27** | **22** | **11** | **42** | | **Large (> 1000)** | 1268 | 66 | 38 | 27 | 24 | 10 | 63 | | **Med. Firms** | 945 | 54 | 23 | 31 | 20 | 15 | 47 | | **Small (< 100)** | 2944 | 40 | 13 | 26 | 19 | 12 | 36 | NOTE: Data reflect survey results of over 6000 firms. Data source: Arora, Ashish & M. Cohen, Wesley & P. Walsh, John. (2016). The acquisition and commercialization of Invention in American Manufacturing: Incidence and Impact. _Research Policy_. 45. 1113-1128. SOURCE: Wesley Cohen, Duke University. Cohen’s research also showed that forty-nine percent of innovations originated from external sources, which was surprising to Cohen and his colleagues because it showed extensive reliance on outside sources for inventions and knowledge. The most pervasive source of innovation reported was buyers and customers, but sources varied across industries significantly. Only approximately 5 percent of innovations began in either a university or government laboratory, which Cohen explained is a reflection of these research institutions' function as repositories of expertise and skills. Research institutions are responsible for knowledge flows but are not necessarily producers of prototypes, and therefore they do not appear to be an influential generator of inventions within the survey. The survey also revealed that two thirds of inventions acquired from outside sources were acquired through non-market-based channels (cooperative arrangements, informal exchanges, and other forms of co-invention), demonstrating prevalent cooperation between invention developers and innovating firms. He added that firms with less technical capability often commercialize inventions from external sources, while firms with greater technical capability rely more heavily on outside knowledge, such as that provided from university researchers, in order to invent internally. Cohen concluded that a “reliance on external sources of innovation is pervasive,” which highlights the importance of developing the ability to analyze and adopt knowledge and inventions from external sources. He emphasized the need to implement a “systems perspective” in order to develop and sustain partnerships across these external entities. **Laura Manley**, director of the Technology and Public Purpose Project (TAPP) at Harvard Kennedy School’s Belfer Center for Science and International Affairs, also offered an analysis of the modern innovation environment and the societal implications of technological progress. Led by former secretary of defense Ash Carter, TAPP “ensures that emerging technologies are developed and managed in ways that serve the public good.” Quoting Carter, Manley explained that this is only possible if “the new generation of technology innovators are encouraged and inspired to as-](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Page 5](https://www.nationalacademies.org/read/25384/chapter/1)[Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+sume civic responsibilities that come with creating changes of great consequence.” In other words, Manley continued, “progress should continue with humanity in mind.” She shared the Oxford English Dictionary’s definition of technology, which is “the application of scientific knowledge for practical purposes, particularly in industry.”
+
+The conditions and norms of technological innovation change over time. For example, the technological conditions of today’s innovations include an increased reliance on digital data, mobile interfaces, processing capabilities, and artificial intelligence. Norms dictating behaviors that give rise to these technological conditions include the presence of an accelerationist culture, the prioritization of the needs of specific users, and an application of values and priorities to product development. Underlying innovation in the United States, Manley said, is the belief that “everything that is not forbidden is allowed.” While this mentality may be prevalent, such a desire to push boundaries is complicated by the desire for rapid innovation—surpassing others in competitive markets and progressing in a resource-scarce environment could come with unintended impacts. She presented Uber’s trajectory as an example of what can happen to a company’s value and public perception when it has tried to innovate too quickly without consideration for possible negative outcomes.
+
+Manley described voice cloning technologies developed by Canadian startup Lyrebird as an example of the second norm, in which innovators are tailoring products to fulfill unmet needs of target users. Despite the company’s good intentions, such a technology could be exploited, just as Facebook has been misused as a platform to spread hate speech. Even though it is impossible to predict all such scenarios, Manley asserted that companies can be proactive by implementing safeguards. She explained that technology innovators’ values are also making their way into the products they are developing, such as through algorithms that contain hidden biases. This norm is further complicated with consideration for the role of privacy in technological innovation—for example, is national security or personal security more important?
+
+In its mission to help mitigate the risks of new technologies, TAPP’s approach to technology innovation revolves around four underlying premises:
+
+1.   Technology is neutral;
+2.   Solutions must be technically informed;
+3.   Policy making and regulation must be developed inclusively; and
+4.   The next generation of technology leaders must be enlisted.
+
+Manley concluded by describing several leverage points for including public purpose in technology development in areas from basic science to management, such as technology ethics training for computer scientists and engineers, grant funding requirements to evaluate ethical considerations, tools for start-ups and accelerators to evaluate potential societal risks, and increased institutional training for government decision makers.
+
+## INDUSTRY ADAPTATIONS IN A GLOBAL INNOVATION ECONOMY
+
+A panel of industry representatives discussed their approaches toward global innovation and how their industries have transformed over the last several decades. **Andre Argenton**, vice president of core R&D at the Dow Chemical Company, provided data to show that the chemical industry continues to change as the global innovation environment evolves. For example, of ICIS’s top 20 companies in the chemical industry from 1990–2015, only five remained in 2015—BASF, Dow, DuPont, Mitsubishi, and Akzo. Each company uses particular strategies that have allowed it to endure over time. What remains challenging for companies in the U.S. chemical industry, he continued, is when other nations maintain greater focus and/or receive more government funding (e.g., the success of China’s electrification market). He noted that the innovative spirit of materials companies is often misunderstood; society is “unable to decouple the scientific challenge of solving instrumental materials problems from the impact on innovation.”
+
+An expectation for a constant delivery of short-term gains is also difficult for the chemical industry. Argenton explained that Dow has been successful because of its discipline in manufacturing and its business acumen, as well as its reliance on the “pillars of success”—talented people, world-class capabilities, and differentiated technology solutions. Dow has experienced an evolution in university partnerships, Argenton said. The company has developed a strategic plan with a 10-year initiative (approximately $15 million/year), which includes working with only select university partners, committing to dedicated funding for the life of a student’s thesis, and believing that talent is worth as much as technology. He added that national laboratory partnerships have also played a critical role in Dow’s success.
+
+**Donna Bell**, director of the United States Council for Automotive Research (USCAR) Leadership Group at Ford Motor Company, noted that Ford is moving in a similar direction and experiencing comparable challenges to Dow. Ford has always been focused on strategies to adapt to the global innovation economy. She said that Ford has been a leader in university partnerships over the past six years, and, over the past five years, new partnerships with startups have enabled swift innovation. Bell described Ford’s commitment to the design of smart vehicles for a smart world
+
+ Page 6 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+in terms of its “winning aspiration” that “freedom of movement drives human progress.” In today’s mobility system, everything must speak the same language and communicate across the infrastructure (i.e., pedestrians, traffic lights, cars, bike racks). When the components of the mobility system are connected in this way, commuting can become more efficient.
+
+However, this kind of progress is only possible with a strong team of collaborative scientists and researchers, she continued. Ford developed an advanced competency framework for its technical fellows and specialists. These teams are diverse in level of education, nationality, culture, and geographic location. Bell added that Ford works with universities in four ways—recruitment, philanthropy, continuing education, and R&D. Ford has collaborated with 150 universities throughout the world since the 1950s, and its research program has been in existence for approximately 30 years. In developing effective partnerships, universities are aligned with Ford’s seven technology trends, including:
+
+1.   Revolution in computing and software;
+2.   Data and analytics, artificial intelligence, and visualization;
+3.   Biology and brain machine interface;
+4.   Connectivity networking/Internet of Everything;
+5.   Advanced materials and manufacturing;
+6.   New mobility and autonomy; and
+7.   Clean energy and decarbonization.
+
+Bell also explained that policy has a direct impact on innovation; for example, without a change in existing regulations, Ford’s goal of deploying autonomous vehicles for commercial operation by 2021 could become more difficult to achieve. Bell concluded by providing an overview of Ford’s external partnerships, including those with USCAR, the United States Driving Research and Innovation for Vehicle Efficiency and Energy Sustainability (USDRIVE), the Society of Automotive Engineers, suppliers, and Silicon Valley startups.
+
+**Robie Samanta Roy**, corporate vice president of technology strategy and innovation at Lockheed Martin, explained that in its existence of more than a century Lockheed Martin has seen much disruption across technology areas. In the national security/defense/aerospace environment, in particular, this element of disruption has been notable since the Cold War, when national security was primarily focused on geostrategic competition with the Soviet Union and the time scale of technology development was measured at the decadal level. In the post-Cold War era, he continued, globalization has reduced time scales to the multi-year level, thus driving the pace of innovation.
+
+He noted that complex export controls and regulations, which can impact the ability to respond to the demand for change, present challenges for Lockheed Martin. The United States is losing its competitive technological advantage, he said, and must catch up quickly in a number of areas. He described the “four Ps of innovation” as product, process, people, and places. He added that venture capital plays a role in national security developments, and that Lockheed Martin can make targeted investments to companies who could be strategically important. Unlike Dow and Ford, Samanta Roy noted, 99 percent of Lockheed Martin’s work is done with government clients—a highly regulated environment that is very different from the commercial sector. He described the partnership among the federal government, universities, and national laboratories as a “rich discovery ecosystem,” although he acknowledged that the pace of technology transition to the national security environment could be accelerated. He also emphasized the value of sustaining relationships with universities in resource-limited environments. He said that because the government workforce is aging, new talent must be recruited and retained; however, it is difficult for the government to compete with industry’s job opportunities. Processes for knowledge transfer between those who are retiring and those who are beginning their careers could be implemented to ease this transition.
+
+**JoAnn Suzich,** vice president of R&D at MedImmune, described MedImmune as a large molecule biopharmaceutical company that began as a startup in 1988 and grew into an organization of nearly 3,000 people. In 2007, MedImmune became the biologics arm of AstraZeneca and now has research facilities in the U.K., Maryland, and California. Suzich described its mission to “develop medicines that really impact the lives of people.” She emphasized that pharmaceutical companies strive to “solve problems of human health” and, ultimately, to prevent disease.
+
+Providing a historical overview of the pharmaceutical industry, she noted that, years ago, new product concepts originated in MedImmune’s laboratories or in collaborator laboratories, through literature searches or patent searches, or during meeting discussions, and if preclinical efforts proved successful in mice, products were ready for people. Drug development was a linear process, early clinical studies were focused solely on safety and pharmacokinetics, and the objective was to cure diseases with drugs. Data were never shared, and collaborations were generally either discouraged or ineffective.
+
+Now, she explained, pharmaceutical companies operate in a world of big data, and a wealth of opportunity exists to access, manage, mine, and interpret these data. This allows for more discoveries and new, more reliable
+
+ Page 7 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+modes of preclinical testing using animal models. Drugs are now developed with the patient experience in mind and a consideration for human factors issues (e.g., how to ensure that a patient will take a drug). Multidisciplinary collaboration is essential, Suzich continued. Microbiome and immune system research has changed and expanded, and patient segmentation is occurring more than ever with a movement toward custom therapies. She added that pharmaceutical companies now focus on the development of tools that can track progress so as to give greater confidence in expensive clinical studies.
+
+**Ganesh Thakur**, director of Energy Industry Partnerships at the University of Houston and former vice president and global advisor at Chevron, provided an overview of innovation in the energy industry. To date, one trillion barrels of oil have been produced in the world, with an expectation for another one trillion barrels in the next 30 years. He listed extending the life of current producing assets, improving operational efficiency, accessing new resources, and improving safety as primary motivations for investment in this industry. He said that the United States is the number one producer of oil in the world, owing to the development of hydraulic fracturing. Technology innovation will continue in the industry, he explained, as long as people remain open to failure when taking risks.
+
+Similar to Dow’s pillars of success, Thakur described process, technology, capabilities, collaboration, and smart people as essential for innovation in the energy industry. Recent innovations in the industry include the use of high-performance computing, the ability to drill in deep water with accuracy at the intended location, carbon capture utilization storage and sustainability, the use of nanotechnology and fiber optics, and the emergence and application of big data and artificial intelligence. He emphasized that small companies are enabling the biggest changes in this industry by acting as early adopters of new technologies.
+
+According to Thakur, collaboration among industry, government, and universities in the energy industry is thriving but could be motivated even further to enable progress. In closing, he reiterated that “21st century technologies brought a radical shift in the energy industry and made the United States the number one energy producer in the world.”
+
+After this series of panel presentations, audience members posed questions about strategies for researcher collaboration and retention. Suzich noted the importance of interdisciplinary approaches to problem-solving and emphasized that researchers who initiate new relationships across departments will be the most successful. Samanta Roy explained that researchers who are given opportunities to work on exciting and challenging problems and who are professionally recognized, both internally and externally, at all stages of their careers are likely to stay in the field. Suzich and Bell suggested that attrition could be viewed as a positive both for individuals who investigate new career opportunities and for companies who are in need of new talent to explore emerging technology areas.
+
+## GOVERNMENT SUPPORT FOR RESEARCH IN THE 21ST CENTURY INNOVATION ENVIRONMENT
+
+The final session of the workshop considered the challenges and opportunities facing government agencies adapting policy and funding mechanisms to suit the 21st century innovation environment. **Barry Johnson**, director of the Division of Industrial Innovation and Partnerships at the National Science Foundation, described NSF as an $8 billion/year agency with 95 percent of its funding allocated for basic research. He explained that NSF’s mission has not changed since its inception in 1950: “to promote progress of science; to advance national health, prosperity, and welfare; to secure the national defense; and for other purposes.” However, Johnson continued, NSF creates a new strategic plan every five years. The most recent plan, released in February 2018, calls for “a nation that is the global leader in research and innovation.” Johnson observed that this is the first time “innovation” has appeared in an NSF strategic plan. The plan emphasizes the value of partnerships with the private sector, state agencies, and federal agencies and includes 10 “Big Ideas," six of which are research-related, symbolizing NSF’s commitment to research as a national priority:
+
+1.   Harnessing Data for 21st Century Science and Engineering;
+2.   Work at the Human-Technology Frontier: Shaping the Future;
+3.   Navigating the New Arctic;
+4.   Windows on the Universe: Multi-messenger Astrophysics;
+5.   Quantum Leap: Leading the Next Quantum Revolution;
+6.   Understanding the Rules of Life: Predicting Phenotype;
+7.   Mid-scale Research Infrastructure;
+8.   NSF 2025;
+9.   Growing Convergence Research at NSF; and
+10.   NSF INCLUDES: Enhancing STEM through Diversity and Inclusion.
+
+Johnson next described NSF’s 2026 Idea Machine: Any U.S. citizen or permanent resident over the age of 14 is invited to submit ideas for the next NSF research initiative. Another new NSF approach is the use of convergence
+
+ Page 8 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+accelerators (i.e., moving from fundamental research to societal impact more quickly). With this strategy, teams from multiple disciplines will be working together and supported by seed funding to solve a problem. These teams will then compete for grant funding to support their research. NSF has also created “Bridging the Gap” programs to accelerate research; these programs are motivated by the notion that a collaboration of applied and basic research, surrounded by education, innovation, partnerships, and entrepreneurship, fosters greater achievement and impact ([Figure 1](https://www.nationalacademies.org/read/25384/chapter/1#fig_1)).
+
+![Image 2: images](https://www.nationalacademies.org/read/25384/assets/images/img-8-1.jpg)
+
+**Figure 1** NSF-funded programs to support “Bridging the Gap” initiatives. SOURCE: Barry Johnson, National Science Foundation.
+
+Johnson explained that these programs span all science and engineering disciplines at NSF, and they take on problems in which the private sector is initially unwilling to invest. After research, proof-of-concept, and prototype are complete, the hope is that the private sector will step in to develop and commercialize the technology. Some of the Bridging the Gap programs include the following:
+
+*   _INTERN_ engages graduate students with government or industry laboratories through a six-month funded internship.
+*   _The Industry University Cooperative Research Center_ focuses on long-term partnerships among industry and universities with pre-competitive industry-inspired research conducted by universities. The program hosts 74 active centers, 211 university research sites, and 2,500 graduate students.
+*   _The Partnerships for Innovation_ program funds universities to demonstrate the commercial potential of their basic research.
+*   _The Innovation Corps_ program translates fundamental research to the market.
+*   _The Small Business Innovation Research–Small Business Technology Transfer_ helps to identify start-up companies to stimulate investment from private entities in technological innovation.
+
+**Kacy Gerst**, chief of commercial strategy at the Defense Advanced Research Projects Agency (DARPA), said that “DARPA’s mission is to create and prevent technological surprise.” DARPA has a $3 billion budget and funds early-stage catalytic breakthrough research for national defense. She explained that “time is the most important resource on DARPA’s agenda”; all DARPA technologies will eventually be developed by others throughout the world, so the United States needs to be first in order to give its military a competitive advantage. Gerst described three challenges facing DARPA and the Department of Defense (DOD) more generally:
+
+1.   _Securing technological advantage in the age of the metanational_. DOD no longer leads in the development or pace of global technology. Although DARPA provides funding to develop technologies that become product lines in global companies, it does not sustain partnerships with these companies. DARPA’s goal is
+
+ Page 9 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+to capitalize on these investments and better support national defense by partnering with metanational companies more quickly than its adversaries.
+
+1.   _Ensuring national security through commercial market success_. Military technologies comprise approximately half of DARPA’s portfolio. DARPA is funding dual-use technologies that have large commercial markets as well as working with corporate entities, start-ups, and laboratories. Industries of importance to DOD, such as pharmaceuticals, medical devices, agriculture, infectious diseases, and neurotechnology, require more capital than DARPA can provide to be successful. Since a defense contract does not sustain these companies, they have to go to the commercial market. In the future, DARPA must consider how to support dual-use market entry strategies—an approach that will be explored through DARPA’s business accelerator.
+2.   _Exfiltrating technology_. Chinese venture investment has expanded rapidly because Chinese investors seem to be more willing than U.S. investors to take on both technology risk and business risk. DARPA has to develop guidelines to help evaluate foreign investment in technologies in terms of threats to national security versus smart leverage of available capital; in other words, when is speed of innovation more important than control? The United States has to decide how to protect U.S.-funded national security technologies without decreasing the pace of innovation or collaboration.
+
+After Johnson’s and Gerst’s presentations, discussion ensued among workshop participants and speakers about DARPA’s potential to become a metanationalistic entity as a way to access science and technology better, faster, and cheaper than the competition. Other participants raised questions about NSF’s strategies for job placement and industry engagement. In response, Johnson described ways in which the INTERN program could give Ph.D. students the skills they need to secure employment. He emphasized the value of showing these students where the industry jobs are and training them accordingly. He said that the INTERN program could also offer members of industry the connections needed to identify qualified candidates as well as low-cost or no-cost opportunities to support fundamental research and serve as mentors.
+
+ Page 10 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[**DISCLAIMER:** This Proceedings of a Workshop—in Brief has been prepared by **Linda Casola** as a factual summary of what occurred at the meeting. The committee’s role was limited to planning the meeting. The statements made are those of the author or individual meeting participants and do not necessarily represent the views of all meeting participants, the planning committee, or the National Academies of Sciences, Engineering, and Medicine.](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[**PLANNING COMMITTEE: Stephen Miller** (Chair), Chevron Corporation; **Stephen Cross**, Georgia Institute of Technology; **Jennifer Ozawa**, TEConomy Partners, LLC. **STAFF: Susan Sauer Sloan**, Director, GUIRR; **Megan Nicholson**, Program Officer; **Claudette Baylor-Fleming**, Administrative Coordinator; **Cynthia Getner**, Financial Officer; **Shierra Ramirez**, Financial Assistant. **REVIEWERS:** To ensure that it meets institutional standards for quality and objectivity, this Proceedings of a Workshop—in Brief was reviewed by **Melissa Flagg**, U.S. Army Research Laboratory; **Mridul Gautam**, University of Nevada, Reno; and **Paula Sorrell**, University of Michigan. **Marilyn Baker**, National Academies of Sciences, Engineering, and Medicine, served as the review coordinator. **SPONSORS:** This workshop was supported by the Government-University-Industry Research Roundtable Membership, National Institutes of Health, Office of Naval Research, Office of the Director of National Intelligence, and the United States Department of Agriculture.](https://www.nationalacademies.org/read/25384/chapter/1)
+[For more information, visit](https://www.nationalacademies.org/read/25384/chapter/1)[http://www.nas.edu/guirr](http://www.nas.edu/guirr).
+
+Suggested Citation: National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief._ Washington, DC: The National Academies Press. doi: [https://doi.org/10.17226/25384](https://doi.org/10.17226/25384).
+
+Policy and Global Affairs
+
+![Image 3: images](https://www.nationalacademies.org/read/25384/assets/images/img-10-1.png)
+
+_Copyright 2019 by the National Academy of Sciences. All rights reserved._
+
+ Page 1 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+![Image 4: Page 10](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+ Page 2 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+![Image 5: Page 10](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+ Page 3 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+![Image 6: Page 10](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+ Page 4 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+![Image 7: Page 10](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+ Page 5 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+![Image 8: Page 10](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+ Page 6 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+![Image 9: Page 10](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+ Page 7 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+![Image 10: Page 10](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+ Page 8 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+![Image 11: Page 10](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+ Page 9 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+![Image 12: Page 10](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+ Page 10 [Share](https://www.nationalacademies.org/read/25384/chapter/1# "Share this page")[Cite](https://www.nationalacademies.org/read/25384/chapter/1# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/25384/chapter/1# "Bookmark this page")
+
+**Suggested Citation:** "Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief." National Academies of Sciences, Engineering, and Medicine. 2019. _Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief_. Washington, DC: The National Academies Press. doi: 10.17226/25384.
+
+[Save](https://www.nationalacademies.org/read/25384/chapter/1)
+
+[Cancel](https://www.nationalacademies.org/read/25384/chapter/1)
+
+![Image 13: Page 10](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+Subscribe to Emails from the National Academies
+
+ Stay up to date on activities, publications, and events by subscribing to email updates.
+
+Subscribe
+
+[](https://www.nationalacademies.org/)
+
+Driving progress for the benefit of society by providing independent, objective advice to advance science, engineering, and medicine.
+
+### The National Academies
+
+*   [National Academy of Sciences](https://www.nasonline.org/)
+*   [National Academy of Engineering](https://www.nae.edu/)
+*   [National Academy of Medicine](https://nam.edu/)
+*   [Careers](https://careers.nationalacademies.org/us/en/home)
+*   [National Academies Press (NAP)](https://www.nationalacademies.org/national-academies-press)
+*   [Transportation Research Board Reports](https://www.trb.org/Publications/PubsTRBPublicationsbySeries.aspx)
+*   [MyAcademies Accounts](https://www.nationalacademies.org/myacademies-accounts)
+*   [Contact Us](https://www.nationalacademies.org/contact-us)
+
+### Journals and Periodicals
+
+*   [PNAS](https://www.pnas.org/)
+*   [PNAS Nexus](https://academic.oup.com/pnasnexus)
+*   [ILAR Journal](https://academic.oup.com/ilarjournal)
+*   [Issues in Science and Technology](https://issues.org/)
+*   [Transportation Research Record: Journal of the Transportation Research Board](https://journals.sagepub.com/home/trr)
+*   [TR News](https://trnews.org/)
+
+### Visit
+
+*   [Visit Us Information](https://www.nationalacademies.org/visit)
+*   [Current Operating Status](https://www.nationalacademies.org/current-operating-status)
+*   [Beckman Center](https://www.nationalacademies.org/beckman-center-ca)
+*   [Archives](https://www.nationalacademies.org/archives)
+
+### Legal
+
+*   [Policies and Procedures](https://www.nationalacademies.org/policies-and-procedures)
+*   [Legal Information](https://www.nationalacademies.org/legal-information)
+*   [Privacy Statement](https://www.nationalacademies.org/privacy-statement)
+*   [Terms of Use](https://www.nationalacademies.org/terms-of-use)
+
+© 2026 National Academy of Sciences. All Rights Reserved.
+
+[](https://www.facebook.com/NationalAcademies/)[](https://www.linkedin.com/company/the-national-academies/posts/?feedView=all)[](https://x.com/TheNASEM)
+
+[](https://www.nationalacademies.org/)
+
+# Mobile Navigation
+
+## Primary Mobile Navigation
+
+*   ### Discover
+
+Trending Topics [Transportation](https://www.nationalacademies.org/topics/transportation)[Artificial Intelligence](https://www.nationalacademies.org/topics/artificial-intelligence)[Space, Security, and Conflicts](https://www.nationalacademies.org/topics/space-security-and-conflicts) [See All Topics](https://www.nationalacademies.org/topics) Our Work [Consensus Studies](https://www.nationalacademies.org/projects/consensusadvisory-activity)[Outreach Activities](https://www.nationalacademies.org/projects/educationaloutreach-activity)[Standing Committees](https://www.nationalacademies.org/projects/standing-committee) [See All Work](https://www.nationalacademies.org/projects)  [Our Publications Our peer-reviewed reports present the evidence-based consensus of committees of experts.](https://www.nationalacademies.org/publications/all)[Explore the Latest News and Stories The latest news and stories, with context you can trust.](https://www.nationalacademies.org/news)
+*   ### Events
+
+Convening Activities [Roundtables and Forums](https://www.nationalacademies.org/projects/roundtableforum)[Workshops](https://www.nationalacademies.org/projects/workshop)[Seminar/Webinar/Lecture Series](https://www.nationalacademies.org/projects/seminarwebinarlecture)  Events [Upcoming events](https://www.nationalacademies.org/events)[Replay](https://www.nationalacademies.org/events/archive) [See all events](https://www.nationalacademies.org/events)  [Right Now & Next Up Stay in the loop with can’t-miss sessions, live events, and activities happening over the next two days.](https://www.nationalacademies.org/events/whats-on)[TRB Webinars Webinars are based on work from TRB Standing Technical Committees & the Cooperative Research Programs](https://www.nationalacademies.org/projects/TRB-TRB%20EO-25-P-659)
+*   ### Engage
+
+Work with us [Sponsoring a Project](https://www.nationalacademies.org/sponsor-a-national-academies-project)[Contribute Expertise](https://www.nationalacademies.org/contribute-expertise)[Careers](https://careers.nationalacademies.org/us/en/home)  Opportunities [Engagement Programs](https://www.nationalacademies.org/programs/engagement-programs)[Grants, Fellowships and Awards](https://www.nationalacademies.org/programs)[Science Communication Awards](https://www.nationalacademies.org/programs/NAE-NAM-22-P-489)   [Congressional and Government Affairs Connecting policymakers with the National Academies](https://www.nationalacademies.org/units/NRCEO-NRC%20EO-23-P-592)[Based On Science Answers to everyday science and health questions](https://www.nationalacademies.org/news/based-on-science)
+*   ### About
+
+National Academies [Purpose](https://www.nationalacademies.org/purpose)[Process](https://www.nationalacademies.org/process)  Our People [Leadership](https://www.nationalacademies.org/leadership)[Program Centers](https://www.nationalacademies.org/units)[Careers](https://careers.nationalacademies.org/us/en/home)  Get in touch [Press and Media](https://www.nationalacademies.org/press-and-media)[Contact Us](https://www.nationalacademies.org/contact-us)   [Members Learn about membership to the three Academies](https://www.nationalacademies.org/members)[Current Operating Status Information on building access, visitor requirements, and facility operations.](https://www.nationalacademies.org/current-operating-status)
+
+### My Academies
+
+*   Login
+*   [Personal Library](https://www.nationalacademies.org/account/personal-library "Personal Library")
+*   [Account settings](https://www.nationalacademies.org/account/settings "Account settings")
+*   Logout
+
+[Donate](https://www.nationalacademies.org/donate-today)
+
+Loading...
+
+# Subscribe
+
+## Subscribe
+
+1.    First Name
+2.    Last Name
+3.    Email  (required)
+4.   - [x]  I agree to receive emails from the National Academies  (required)
+
+Subscribe
+
+We respect your privacy and will never share your information.
+
+# Contents
+
+## Contents
+
+ Search this publication
+
+*   [Adapting to the 21st Century Innovation Environment: Proceedings of a Workshop—in Brief 1-10](https://www.nationalacademies.org/read/25384/chapter/1)
+
+# Log In
+
+## Log In
+
+Sign in to access your saved publications, downloads, and email preferences.
+
+Former MyNAP users: You'll need to reset your password on your first login to MyAcademies. Click "Forgot password" below to receive a reset link via email. Having trouble? [Visit our FAQ page](https://www.nationalacademies.org/myacademies-accounts) to contact support.
+
+1.    Email  (required)
+2.    Password  (required)
+Forgot password
+
+Log In
+
+Don't have an account? Sign up
+
+# Register
+
+## Register
+
+1.    Email  (required)
+2.    New password  (required)
+3.    Retype password  (required)  Password must be at least 8 characters
+4.   - [x]  I agree to receive emails from the National Academies
+5.   - [x]  I accept the terms of use  I accept the  [terms of use](https://www.nationalacademies.org/terms-of-use)
+
+Sign Up
+
+# Download as a Guest
+
+## Download as a Guest
+
+While logged on as a guest, you can download any of our free PDFs on [nationalacademies.org](https://www.nationalacademies.org/) . You will remain logged in until you close your browser.
+
+1.    Email  (required)
+2.   - [x]  Yes, send me emails when similar titles are published
+3.   - [x]  Yes, I accept the terms of use  Yes, I accept the  [terms of use](https://www.nationalacademies.org/terms-of-use)
+
+Continue
+
+Sign up for MyAcademies
+
+# Thank You
+
+## Thank You
+
+Thank you for creating a MyAcademies account!
+
+Enjoy free access to thousands of National Academies' publications, a 10% discount off every purchase, and build your personal library.
+
+# Forgot Password
+
+## Forgot Password
+
+Enter the email address for your MyAcademies (formerly MyNAP) account to receive password reset instructions.
+
+1.    Email  (required)
+
+Continue
+
+# Reset Requested
+
+## Reset Requested
+
+We sent password reset instructions to your email . Follow the link in that email to create a new password. Didn't receive it? Check your spam folder or [contact us](https://www.nationalacademies.org/myacademies-accounts) for assistance.
+
+Log In
+
+# Reset Password
+
+## Reset Password
+
+1.    New password  (required)
+2.    Retype password  (required)  Password must be at least 8 characters
+
+Reset Password
+
+# Reset Password
+
+## Reset Password
+
+Your password has been reset.
+
+[Log In](https://www.nationalacademies.org/?login)
+
+# Verify email
+
+## Verify email
+
+Verify Your Email Address
+
+We sent a verification link to your email. Please check your inbox (and spam folder) and follow the link to verify your email address. If you did not receive the email, you can request a new verification link below
+
+Resend Verification Email
+
+# Looking for other ways to read this?
+
+![Image 14: cover image](https://nap.nationalacademies.org/cover/25384/450)
+
+## IN ADDITION TO READING ONLINE, THIS TITLE IS AVAILABLE IN THESE FORMATS:
+
+[PDF FREE Download](https://www.nationalacademies.org/read/25384/chapter/1#)
+
+MyNAP members **SAVE 10%** off online.
+
+ Not a MyNAP member yet? [Register for a free account](https://www.nationalacademies.org/read/25384/chapter/1#) to start saving and receiving special member only perks.
+
+[No thanks. I'll keep reading](https://www.nationalacademies.org/read/25384/chapter/1#)
+
+*   Contents
+*   Chapter
+*   Previous page Page  of 10 Next page
+*   Original Pages Text Pages
+*    Search this publication
+
+## Privacy Preference Center
+
+When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.
+
+[More information](https://cookiepedia.co.uk/giving-consent-to-cookies)
+
+Allow All
+### Manage Consent Preferences
+
+#### Strictly Necessary Cookies
+
+Always Active
+
+These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.
+
+#### Functional Cookies
+
+- [x] Functional Cookies
+
+These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.
+
+#### Performance Cookies
+
+- [x] Performance Cookies
+
+These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.
+
+#### Targeting Cookies
+
+- [x] Targeting Cookies
+
+These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+
+### Performance Cookies
+
+Clear
+
+- [x] checkbox label label
+
+Apply Cancel
+
+Consent Leg.Interest
+
+- [x] checkbox label label
+
+- [x] checkbox label label
+
+- [x] checkbox label label
+
+Reject All Confirm My Choices
+
+[](https://www.onetrust.com/products/cookie-consent/)
+
+This site uses cookies. For more information on cookies visit:[https://www.nationalacademies.org/legal/privacy](https://www.nationalacademies.org/legal/privacy)
+
+Continue

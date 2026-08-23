@@ -1,0 +1,5665 @@
+# International Talent Programs in the Changing Global Environment
+
+<!-- collection-complete: chapter-probe-v2 -->
+
+- 转换说明：以下内容由Jina从NASEM官方在线阅读页转换为Markdown；每章保留官方来源URL。
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/1 -->
+
+## 官方在线阅读第1章
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 1: logo](https://www.nationalacademies.org/read/27787/assets/images/title.jpg)
+
+## **International Talent
+
+ Programs in the
+
+ Changing Global
+
+ Environment**
+
+______
+
+Mark A. Barteau and
+
+ Sarah M. Rovito, _Editors_
+
+Committee on International
+
+ Talent Programs in the
+
+ Changing Global Environment
+
+U.S. Science and Innovation
+
+ Policy Theme
+
+Policy and Global Affairs
+
+**Consensus Study Report**
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**NATIONAL ACADEMIES PRESS 500 Fifth Street, NW Washington, DC 20001**
+
+This activity was supported by a contract between the National Academy of Sciences and the U.S. Department of Defense. Any opinions, findings, conclusions, or recommendations expressed in this publication do not necessarily reflect the views of any organization or agency that provided support for the project.
+
+International Standard Book Number-13: 978-0-309-71959-9
+
+ International Standard Book Number-10: 0-309-71959-3
+
+ Digital Object Identifier: [https://doi.org/10.17226/27787](https://doi.org/10.17226/27787)
+
+ Library of Congress Control Number: 2024948441
+
+This publication is available from the National Academies Press, 500 Fifth Street, NW, Keck 360, Washington, DC 20001; (800) 624-6242; [http://www.nap.edu](http://www.nap.edu/).
+
+Copyright 2024 by the National Academy of Sciences. National Academies of Sciences, Engineering, and Medicine and National Academies Press and the graphical logos for each are all trademarks of the National Academy of Sciences. All rights reserved.
+
+Printed in the United States of America.
+
+Suggested citation: National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment._ Washington, DC: National Academies Press. [https://doi.org/10.17226/27787](https://doi.org/10.17226/27787).
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+The **National Academy of Sciences** was established in 1863 by an Act of Congress, signed by President Lincoln, as a private, nongovernmental institution to advise the nation on issues related to science and technology. Members are elected by their peers for outstanding contributions to research. Dr. Marcia McNutt is president.
+
+The **National Academy of Engineering** was established in 1964 under the charter of the National Academy of Sciences to bring the practices of engineering to advising the nation. Members are elected by their peers for extraordinary contributions to engineering. Dr. John L. Anderson is president.
+
+The **National Academy of Medicine** (formerly the Institute of Medicine) was established in 1970 under the charter of the National Academy of Sciences to advise the nation on medical and health issues. Members are elected by their peers for distinguished contributions to medicine and health. Dr. Victor J. Dzau is president.
+
+The three Academies work together as the **National Academies of Sciences, Engineering, and Medicine** to provide independent, objective analysis and advice to the nation and conduct other activities to solve complex problems and inform public policy decisions. The National Academies also encourage education and research, recognize outstanding contributions to knowledge, and increase public understanding in matters of science, engineering, and medicine.
+
+Learn more about the National Academies of Sciences, Engineering, and Medicine at **[www.nationalacademies.org](http://www.nationalacademies.org/).**
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Consensus Study Reports** published by the National Academies of Sciences, Engineering, and Medicine document the evidence-based consensus on the study’s statement of task by an authoring committee of experts. Reports typically include findings, conclusions, and recommendations based on information gathered by the committee and the committee’s deliberations. Each report has been subjected to a rigorous and independent peer-review process and it represents the position of the National Academies on the statement of task.
+
+**Proceedings** published by the National Academies of Sciences, Engineering, and Medicine chronicle the presentations and discussions at a workshop, symposium, or other event convened by the National Academies. The statements and opinions contained in proceedings are those of the participants and are not endorsed by other participants, the planning committee, or the National Academies.
+
+**Rapid Expert Consultations** published by the National Academies of Sciences, Engineering, and Medicine are authored by subject-matter experts on narrowly focused topics that can be supported by a body of evidence. The discussions contained in rapid expert consultations are considered those of the authors and do not contain policy recommendations. Rapid expert consultations are reviewed by the institution before release.
+
+For information about other products and activities of the National Academies, please visit [www.nationalacademies.org/about/whatwedo](http://www.nationalacademies.org/about/whatwedo).
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## **COMMITTEE ON INTERNATIONAL TALENT PROGRAMS IN THE CHANGING GLOBAL ENVIRONMENT**
+
+**MARK A. BARTEAU** (_Chair_) [NAE],[*](https://www.nationalacademies.org/read/27787/chapter/1#frontmatter03_sfn1) Charles D. Holland ‘53 Chair in Chemical Engineering, Texas A&M University
+
+**CHAOUKI T. ABDALLAH,** Executive Vice President for Research, Georgia Institute of Technology
+
+**HANNAH L. BUXBAUM,** Vice President for International Affairs and Professor of Law and John E. Schiller Chair, Indiana University
+
+**CHRISTOPHER J. CRAMER,** Senior Vice President and Chief Research Officer, UL Research Institutes
+
+**CHRISTOPHER P. FALL,** Vice President for Applied Sciences, The MITRE Corporation
+
+**BRADLEY FARNSWORTH,** Principal, Fox Hollow Advisory
+
+**SURESH V. GARIMELLA,** President, University of Vermont
+
+**XIHONG LIN** [NAS, NAM], Professor of Biostatistics and Coordinating Director of the Program in Quantitative Genomics at the T.H. Chan School of Public Health, and Professor of Statistics at the Faculty of Arts and Sciences, Harvard University
+
+**TSU-JAE K. LIU** [NAE], Dean of the College of Engineering and Distinguished Professor of Electrical Engineering and Computer Sciences, University of California, Berkeley
+
+**PATRICK F. MENSAH,** Professor of Mechanical Engineering and Senior Associate Vice Chancellor for Academic Affairs, Southern University and A&M College
+
+**AMY M. NICE,** Distinguished Immigration Fellow and Visiting Scholar, Cornell University, and Distinguished Immigration Counsel, Institute for Progress
+
+**HARRIS PASTIDES,** Distinguished President Emeritus, University of South Carolina
+
+**KIRON SKINNER,** Research Fellow at the Hoover Institution, Visiting Fellow at the Heritage Foundation, and Faculty Member at the Pepperdine University School of Public Policy
+
+___________________
+
+[*](https://www.nationalacademies.org/read/27787/chapter/1#frontmatter03_sft1)Designates membership in the National Academy of Sciences (NAS), National Academy of Engineering (NAE), or National Academy of Medicine (NAM).
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**HSIAO-WUEN HON,** Corporate Vice President, Microsoft Corporation (Retired) (until March 2024)
+
+**TRACIE B. LATTIMORE,** Senior Director, Biosecurity Solutions, Ginkgo Bioworks, Inc. (until October 2023)
+
+### _Study Staff_
+
+**SARAH M. ROVITO,** Study Director and Senior Program Officer, U.S. Science and Innovation Policy
+
+**TOM WANG,** Policy Theme Lead and Senior Board Director, Committee on Science, Engineering, Medicine, and Public Policy, U.S. Science and Innovation Policy
+
+**MARIA LUND DAHLBERG,** Director, Board on Higher Education and Workforce, U.S. Science and Innovation Policy
+
+**BEAU NIELSEN,** Research Associate, U.S. Science and Innovation Policy
+
+**JORDAN GRAVES,** Program Coordinator, U.S. Science and Innovation Policy
+
+**CLARA HARVEY-SAVAGE,** Senior Finance Business Partner
+
+**SUMAIRA USMAN,** Senior Finance Business Partner
+
+### _Consultant_
+
+**JOE ALPER,** Consulting Writer
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## Reviewers
+
+This Consensus Study Report was reviewed in draft form by individuals chosen for their diverse perspectives and technical expertise. The purpose of this independent review is to provide candid and critical comments that will assist the National Academies of Sciences, Engineering, and Medicine in making each published report as sound as possible and to ensure that it meets the institutional standards for quality, objectivity, evidence, and responsiveness to the study charge. The review comments and draft manuscript remain confidential to protect the integrity of the deliberative process.
+
+We thank the following individuals for their review of this report: **STEWART BARBER,** Synopsys, Inc.; **STEVE CAMAROTA,** Center for Immigration Studies; **CONG CAO,** University of Nottingham; **JOSEPH DeTRANI,** Independent Consultant; **PETER DORHOUT,** Iowa State University; **MARK ELLIOTT,** Harvard University; **MIRIAM FELDBLUM,** Presidents’ Alliance on Higher Education and Immigration; **JANE GATEWOOD,** University of Rochester; **RON HIRA,** Howard University; **JAMES HOLLOWAY,** University of New Mexico; **DOUGLAS KOTHE,** Sandia National Laboratories; **GISELA PEREZ KUSAKAWA,** Asian American Scholar Forum; **KATHRYN MOLER,** Stanford University; **TARA O’TOOLE,** In-Q-Tel; **DICK OBERMANN,** U.S. House of Representatives (ret.); and **AMANDA VERNON,** National Science Foundation.
+
+Although the reviewers listed above provided many constructive comments and suggestions, they were not asked to endorse the conclusions or
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+recommendations of this report nor did they see the final draft before its release. The review of this report was overseen by **ROBERT SPROULL,** University of Massachusetts Amherst, and **ERIC KALER,** Case Western Reserve University. They were responsible for making certain that an independent examination of this report was carried out in accordance with the standards of the National Academies and that all review comments were carefully considered. Responsibility for the final content rests entirely with the authoring committee and the National Academies.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## Acknowledgments
+
+The committee acknowledges the U.S. Department of Defense for its support of this study.
+
+### **ACKNOWLEDGMENT OF PRESENTERS**
+
+The committee gratefully acknowledges the contributions of the following individuals during open, public sessions held in support of the International Talent Programs in the Changing Global Environment consensus study:
+
+**April 28, 2023**
+
+*   **Kristopher Gardner,** Director, Science and Technology Program Protection, Office of S&T Program Protection, U.S. Department of Defense
+*   **Jude Blanchette,** Freeman Chair in China Studies, Center for Strategic and International Studies
+
+**May 30, 2023**
+
+*   **Jason Matheny,** President and Chief Executive Officer, RAND Corporation
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**June 28–29, 2023**
+
+*   **Jeremy Ison,** Senior Policy Advisor, U.S. Department of Energy
+*   **Julie Baer,** Research Specialist, Institute of International Education
+*   **Rebecca Keiser,** Chief of Research Security Strategy and Policy, National Science Foundation
+*   **L. Rafael Reif,** President Emeritus, Massachusetts Institute of Technology
+*   **Kelvin Droegemeier,** Professor of Atmospheric Sciences and Special Advisor to the Chancellor for Science and Policy, University of Illinois at Urbana-Champaign
+*   **Abby Goldman,** Research Staff Member, Institute for Defense Analyses Science and Technology Policy Institute
+*   **Keith Crane,** Research Staff Member, Institute for Defense Analyses Science and Technology Policy Institute
+*   **Anna Puglisi,** Senior Fellow, Center for Security and Emerging Technology, Georgetown University
+*   **Zachary Arnold,** Analytic Lead, Center for Security and Emerging Technology, Georgetown University
+*   **Jacob Feldgoise,** Data Research Analyst, Center for Security and Emerging Technology, Georgetown University
+*   **Ali Crawford,** Research Analyst, Center for Security and Emerging Technology, Georgetown University
+*   **Tina Huang,** Director of Strategic Initiatives, EqualAI
+*   **Remco Zwetsloot,** Co-Founder and Executive Director, Horizon Institute for Public Service
+
+**July 31, 2023**
+
+*   **Celia Merzbacher,** Executive Director, Quantum Economic Development Consortium
+*   **Carl Williams,** Chief Executive Officer, CJW Quantum Consulting, LLC
+
+**August 31, 2023**
+
+*   **Bindu Nair,** Director of Basic Research, Office of the Under Secretary of Defense for Research and Engineering, U.S. Department of Defense
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**October 10–11, 2023**
+
+*   **Divyansh Kaushik,** Associate Director, Emerging Technologies and National Security, Federation of American Scientists
+*   **Jeremy Neufeld,** Senior Immigration Fellow, Institute for Progress
+*   **Caroline Wagner,** Professor, John Glenn School of Public Affairs, The Ohio State University
+*   **Denis Simon,** Former Executive Vice Chancellor, Duke Kunshan University
+*   **David Zweig,** Professor Emeritus, The Hong Kong University of Science and Technology
+*   **Tamara Savage,** Policy Consultant, California Senate Office of Research
+*   **Yu Xie,** Bert G. Kerstetter ‘66 University Professor of Sociology, Princeton University
+*   **Yangyang Cheng,** Research Scholar in Law and Fellow, Paul Tsai China Center, Yale University
+*   **Jeannette Wing,** Executive Vice President for Research, Columbia University
+*   **Peter Michelson,** Luke Blossom Professor in the School of Humanities and Sciences and Professor of Physics, Stanford University
+
+**December 7–8, 2023**
+
+*   **David Bier,** Associate Director, Immigration Studies, CATO Institute
+*   **Florent Bernard,** Counsellor for Research and Innovation, Delegation of the European Union to the U.S.
+*   **Greg Levesque,** Chief Executive Officer and Co-Founder, Strider Technologies
+*   **Diana Gehlhaus,** Senior Advisor for Talent, Chief Digital and Artificial Intelligence Office, U.S. Department of Defense
+*   **Kei Koizumi,** Principal Deputy Director for Policy, White House Office of Science and Technology Policy
+*   **Kathleen Vogel,** Professor, Arizona State University
+*   **Sonia Ben Ouagrham-Gormley,** Associate Professor, George Mason University
+*   **Garrett Berntsen,** Director for Technology and National Security, National Security Council
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**January 31–February 1, 2024**
+
+*   **Stuart Anderson,** Executive Director, National Foundation for American Policy
+*   **Kai Hirabayashi,** Senior Manager for Public Policy, Amazon
+*   **Scott Corley,** Executive Director, Compete America Coalition, President, Corley Consulting LLC
+*   **Matt Turpin,** Visiting Fellow, Hoover Institution
+
+**February 28–29, 2024**
+
+*   **Glenn Tiffert,** Distinguished Research Fellow, Hoover Institution
+*   **Molly Roberts,** Professor of Political Science, University of California, San Diego
+*   **Ruixue Jia,** Associate Professor of Economics, University of California, San Diego
+*   **Yasheng Huang,** Epoch Foundation Professor of Global Economics and Management, MIT Sloan School of Management, Massachusetts Institute of Technology
+*   **Norbert Holtkamp,** Science Fellow, Hoover Institution
+*   **Michael Lauer,** Deputy Director for Extramural Research, National Institutes of Health
+
+**March 12, 2024**
+
+*   FBI Counterintelligence Division
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [Preface](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_prea)
+
+_America Needs Talent!_ While this may not be the title of the next hit TV show, it is a remarkable consensus of industry, academic, and government leaders, as well as think tanks and analysts across the political spectrum. Warnings of talent shortfalls in the hundreds of thousands may grab headlines and draw attention to acute needs for talent in critical fields such as semiconductor manufacturing and artificial intelligence (AI), but they do not capture the breadth, depth, or long-standing nature of the United States’ talent and workforce needs.
+
+Since the end of World War II, the United States has been the preeminent global talent magnet in science, technology, engineering, and mathematics (STEM) and beyond. The intrinsic advantages that this nation has enjoyed in the competition for international talent have included its economic and technological strength, as well as its values of freedom and opportunity that have served as a beacon to the world.
+
+We as a nation miss a vital opportunity and a moral obligation if we do not also act to develop our domestic population, both citizens and noncitizens, particularly by engaging the “missing millions” from underrepresented groups and under-resourced communities. Recruitment and development of domestic talent versus international talent is not an either/or proposition; it is both/and. We need both if the United States is to drive the level of innovation that currently, according to the International Monetary Fund, generates 25 percent of the world’s gross domestic product with only 4 percent of the world’s population.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+The U.S. research enterprise is especially dependent on foreign-born talent with advanced degrees. Roughly half of the faculty members in STEM fields at U.S. universities are foreign born, with higher percentages in fields such as computer science and AI. As one member of this consensus study committee aptly put it, “The United States has a talent recruitment program—it’s called graduate school!” It is in the national interest to provide more certain pathways into our domestic STEM workforce for the students we educate.
+
+The global competition for talent is fiercer than ever. We have already witnessed increasing flows to both allies and potential adversaries resulting in part from more aggressive talent recruitment efforts. Congress’s failure to disentangle visa and immigration policies for students, STEM degree holders, and technology entrepreneurs from the broader challenges of comprehensive immigration reform represents a self-inflicted wound to the continuing scientific and economic leadership of this nation. It also has negative consequences for national security. Research and development in areas directly related to military and national security applications is classified, in accordance with the 1985 National Policy on the Transfer of Scientific, Technical and Engineering Information (NSDD-189). Participation is restricted to U.S. citizens who are able to obtain security clearances. By constricting the pipeline leading to legal permanent residency and ultimately to citizenship for STEM talent, we limit our access to talent in cutting-edge fields where leadership is critical to our national security.
+
+The United States now finds itself engaged in what many see as a great power competition of a scale and scope that it has not previously experienced. The dramatic rise of China as a 21st century economic, technological, and military power presents the most comprehensive set of challenges to U.S. leadership since the end of World War II. It can be difficult to separate national security issues from the large flows of both commerce and talent that connect the United States and China. The flow of information, whether by licit or illicit means, is even more difficult to control. Improper transfers of technology, including intellectual property (IP) and trade secrets, are less dependent on the international movement of people than ever before thanks to electronic communication technologies. Examples of improper IP transfer by individuals and IP theft by remote hacking are well documented. While it is often difficult to determine the economic or security costs of such thefts, the issue is serious and persistent.
+
+One mechanism for acquiring knowledge and, potentially, IP is talent recruitment programs. These seek to attract individuals with desired
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+expertise to contribute to the science and technology enterprise of the sponsoring entity. The best known of these is the Chinese government’s Thousand Talents Program, which spawned hundreds of such programs by provincial governments and other entities in China. Terms of engagement vary, but to the extent these programs conceal improper expectations or contractual obligations as defined by the CHIPS and Science Act of 2022 and subsequent policies, they are defined to be malign. Other countries of concern, including Russia and Iran, have programs to recruit international talent that the United States also defines as malign.
+
+U.S. institutions were slow to recognize the threat posed by foreign talent programs, especially those utilizing practices now regarded as malign. Unfortunately, the China Initiative launched by the U.S. Department of Justice in 2018 was highly problematic, especially in its disproportionate focus on fundamental research in academia. By pursuing criminal actions ahead of policy establishment and communication, it created a climate of uncertainty and fear, especially among Asian American scientists, that persists even now. Moreover, convictions obtained for espionage and IP theft were almost all outside the academic sector.
+
+Federal agencies have since come together to create training programs and establish more uniform disclosure policies regarding foreign activities, including participation in foreign talent programs. Participation is now banned for individuals in federal agencies and national laboratories, and academics are more aware of the risks of participating in these programs. The approach of all parties in the research enterprise—government, business, and academia—must continue to evolve as policies and strategies are recognized as ineffective, counterproductive, or inadequate for responding to emergent issues. It is essential to balance the risks and rewards of international engagements without shredding the culture of collaboration that is firmly woven into scientific practice around the globe.
+
+The decades ahead will likely see talent flows and collaborations grow between the United States and countries in other regions of the world, including the Global South. While these countries are unlikely to pose the national security challenges of great powers, their interests, politics, and cultures will not always align with those of the United States. Science has long proven to be an important tool of diplomacy, and engagement with both developing nations and low- and middle-income countries should be a policy priority. Whether we choose to elevate our level of engagement in developing STEM talent there or not, our competitors surely will.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This committee has benefited from a rich variety of viewpoints and experiences. Members represented industry, academia, professional organizations and think tanks, with members who had served in government under both Republican and Democratic administrations. Our speakers and commissioned paper authors brought an even broader range of perspectives. Our work has taken place against an evolving backdrop. The flood of materials released by federal agencies, as well as analyses of key issues by third parties and news and opinion pieces in the media, has at times seemed overwhelming. The committee is grateful to the National Academies of Sciences, Engineering, and Medicine staff, especially our study director and senior program officer, Sarah Rovito, for managing this flow, as well as for her tireless efforts in support of this study. In this dynamic environment, the committee realizes that some of its recommendations will be overtaken by events, but we hope that others will stand the test of time and will spur policymakers to consider and enact strategic approaches to meeting the nation’s needs for both talent and security.
+
+Mark A. Barteau, _Chair_
+
+ Committee on International Talent Programs in the Changing Global Environment
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/2 -->
+
+## 官方在线阅读第2章
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[Previous Chapter: Front Matter](https://www.nationalacademies.org/read/27787/chapter/1)
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [Summary](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_c00a)
+
+The U.S. science, technology, engineering, and mathematics (STEM) workforce plays a vital role in fostering and sustaining innovation, economic competitiveness, and national security. This workforce currently depends, and for the foreseeable future will depend, on both international and domestic talent. Foreign STEM talent contributes to domestic innovation, economic growth, and U.S. leadership in science and technology and also expands perspectives and networks essential to future scientific collaborations and discoveries.
+
+While the United States has been the destination of choice for the world’s best and brightest students and scholars since World War II, the market for top scientific talent at all levels has become increasingly competitive ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20)). The rise of talent programs around the globe is one indicator of this competition. Many nations recognize the value of high-skilled STEM talent in the current, increasingly complex, geopolitical environment and have developed and implemented programs to recruit and retain talented individuals from abroad, whether diaspora talent or individuals without existing ties. These programs use incentives to attract talented individuals and often provide predictable pathways to permanent residency or citizenship.
+
+Foreign talent recruitment programs, such as those employed by the Five Eyes[1](https://www.nationalacademies.org/read/27787/chapter/2#frontmatter07_fn1) and other nations sharing the United States’ values, are
+
+___________________
+
+[1](https://www.nationalacademies.org/read/27787/chapter/2#frontmatter07_ft1)“Five Eyes” refers to a long-standing intelligence alliance between the United States, the United Kingdom, Canada, Australia, and New Zealand. See [https://www.intelligence.gov/mission/our-values/344-collaboration](https://www.intelligence.gov/mission/our-values/344-collaboration).
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+not regarded as malign.[2](https://www.nationalacademies.org/read/27787/chapter/2#frontmatter07_fn2) These programs respect important core values including openness, transparency, honesty, equity, fair competition, and objectivity, as articulated in the implementation guidance for National Security Presidential Memorandum 33 ([JCORE, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref358)). However, some foreign talent recruitment programs have objectives beyond solely recruiting talent and operate with malign intent. The characteristics of malign foreign talent recruitment programs have been enumerated previously in the CHIPS and Science Act (P.L. 117-167, August 9, 2022) and the February 2024 Office of Science and Technology Policy (OSTP) Memorandum on “Guidelines for Federal Research Agencies Regarding Foreign Talent Recruitment Programs” ([Prabhakar, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref614); [U.S. Congress, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref4)). These programs include schemes executed by the People’s Republic of China (PRC), which is known to use such programs not only to accelerate the acquisition of talent but to unethically or unlawfully acquire technology and intellectual property ([MIT, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref467)). While a malign foreign talent recruitment program can be based in any country, the United States presumes programs operated by government-designated countries of concern to be malign ([MIT, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref467); [Prabhakar, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref614); [U.S. Congress, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref803)).
+
+Meanwhile, the United States does not have a whole-of-government STEM strategy or coordination of existing talent recruitment efforts across federal agencies. The U.S. government does sponsor some incentive programs through federal science agencies that provide direct funding for undergraduate students, graduate students, and postdoctoral researchers, but most require U.S. permanent residency or citizenship. The United States also is failing to fully leverage opportunities to develop domestic STEM talent at all educational and career levels, from K–12 through advanced degrees. The U.S. immigration system is outmoded and rigid, providing limited and highly unpredictable pathways to permanent residency or citizenship. The nation also has had difficulty cultivating research environments that are welcoming and inclusive for all and do not inadvertently discriminate against people on the basis of national origin or ethnicity during, and in the aftermath of, the U.S. Department of Justice’s China Initiative ([Aloe and Guo, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref19); [Lewis-Kraus, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref415); [Redden, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref637); [Widener, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref845)).
+
+___________________
+
+[2](https://www.nationalacademies.org/read/27787/chapter/2#frontmatter07_ft2)The committee is using the term “malign” in this report in the way that the U.S. government has chosen to use it, for a very specific purpose. The reader should be careful to understand this purpose, as opposed to the conventional definition of “malign.” A formal definition of “malign foreign talent recruitment program” as stated in the February 2024 OSTP Memorandum can be found in the Glossary. This definition is similar, but not identical, to the definition present in the CHIPS and Science Act (P.L. 117-167, August 9, 2022).
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Hosting foreign talent in the United States does present risks—risks that vary by discipline and that policies, procedures, and controls can mitigate but never fully eliminate. However, evidence suggests the benefits posed by foreign talent, open research environments, and international research collaborations and partnerships greatly outweigh the risks ([Crane et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref145); [DHS, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref166); [DOS and ED, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref185); [Kerr and Kerr, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref44); [Rovito et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref659); [Watney, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref838); [Zwetsloot, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref897)). Numerous research security policies have been developed at the federal level and implemented by government, academia, and industry during the past few years ([AAU and APLU, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref2); [DHS, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref169); [JCORE, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref358)). This process continues, as some mandated actions will not take effect until 2025 or later. While these policies were created with good intention, the committee notes the potential they create for administrative burden and the need to implement research security policies in a manner that does not impede the flow and exchange of ideas and talent ([Council on Governmental Relations, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref142), [2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref143); [Prabhakar, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref615)).
+
+The committee’s Statement of Task was developed with the U.S. Department of Defense in response to the fiscal year 2021 National Defense Authorization Act (William M. [Mac] Thornberry National Defense Authorization Act for Fiscal Year 2021; P.L. 116-283, January 1, 2021) and directs the committee to review foreign and domestic talent or incentive programs and their corresponding scientific, economic, and national security benefits. This is in service of recommending ways to improve the effectiveness of U.S. mechanisms for attracting and retaining international students and scholars relative to the programs and incentives other nations use to support national research capabilities, especially in national security and defense-related fields. The committee’s recommendations, developed after receiving input from a variety of key individuals and organizations during open and closed committee meetings, are as follows:
+
+**Recommendation 1: The U.S. government, specifically the Office of Science and Technology Policy (OSTP), should oversee the coordination of a whole-of-government talent strategy including national talent recruitment and retention approaches for international researchers at all levels of experience to be implemented by federal departments and agencies.**
+
+**Recommendation 2: The U.S. government, universities, industry, national laboratories, and the broader scientific community should work together to**
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   **continue to advance the robust international research collaborations and talent flows, including of international students, that are an essential part of U.S. leadership in technology and innovation;**
+2.   **insist on openness, transparency, and integrity in these collaborations; and**
+3.   **continue to develop guidance and training on research security, research integrity, and international research collaborations.**
+
+**Recommendation 3: The U.S. government’s approaches for maximizing talent attraction and research collaboration should address national security concerns and risks present in the geopolitical environment.**
+
+1.   **Federal funding agencies should continue to prioritize transparency and consistency as they develop and implement policies on international research collaboration, research exchanges, and assessment tools.**
+2.   **Risk should be assessed at the level of individual projects and programs, not by field, subfield, or researcher demographics.**
+3.   **Steps taken to increase research security should not restrict or unduly inhibit international collaborations involving****_fundamental research._**
+4.   **The priority in addressing security concerns regarding fundamental research should be ensuring compliance with applicable federal funding agency and institutional policies, rather than prosecution.**
+
+**Recommendation 4: All levels of government—federal, state, local, and tribal—and key parties in the private sector should take a forward-looking, proactive approach to developing the nation’s domestic science, technology, engineering, and mathematics (STEM) talent.**
+
+1.   **Domestic STEM talent development must be recognized as a critical component of the national security innovation base and the overall STEM workforce in educational policy at all levels of government.**
+2.   **The barriers preventing equitable access to K–12 and postsecondary education in under-resourced communities must be addressed in order to maximize the development of domestic STEM talent nationwide.**
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   **Federal science funding agencies should include the development of domestic STEM talent as a key component of their respective missions.**
+2.   **Congress should pass legislation modeled on the National Defense Education Act (P.L. 85-864, September 2, 1958) to ensure domestic innovation capacity.**
+
+**Recommendation 5: The U.S. government should build on its relationships with its trusted allies and develop stronger collaborative partnerships to ensure the resilience of international talent capacity in areas of strategic interest.**
+
+**Recommendation 6: To facilitate the development and flow of global talent, ensure the robust exchange of ideas, and support the U.S. innovation ecosystem, the U.S. government should support universities, foundations, and industry in forging strong international research partnerships and building educational and research capacity, including in low- and middle-income countries and less developed countries in the Global South.**
+
+**Recommendation 7: The legislative branch should create easily navigable pathways to permanent residency and citizenship for qualified foreign-born STEM talent. As an immediate priority, Congress should empower government agencies to identify critical areas of science, technology, and engineering vital to their mission. Congress should then authorize additional Green Card numbers for qualified foreign-born experts who work in such areas, subject to normal due diligence. The corresponding legislation should create a new category for permanent residents and should not carry any per-country caps or be subject to existing numerical limitations. Explicit eligibility for international STEM graduates of U.S. institutions should be included.**
+
+**Recommendation 8: The executive branch should maximize the use of all existing authorities to retain foreign-born STEM experts who are already in the United States.**
+
+1.   **Government departments and agencies should increase the use of their authority as interested U.S. federal government agencies to advise the U.S. Departments of Homeland Security and State on applications for permanent residency. The focus of these**
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   **efforts should be on STEM experts working on research that is aligned with the national interest, including research that is vital to the mission of the respective department or agency.**
+2.   **The U.S. Department of Labor should proceed with a new regulation codifying an update to the permanent labor certification process, allowing precertification in certain types of employment. The new regulation should explicitly identify emerging and critical technologies that are in the national interest and where there is a scarcity of U.S. STEM experts.**
+3.   **OSTP should monitor and assess the implementation of the Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence (October 30, 2023), especially provisions related to pathways toward permanent residency in the United States.**
+
+**Recommendation 9: The U.S. government, specifically OSTP and the Departments of Commerce, Homeland Security, Justice, and State, should continue to take measures to address lingering chilling effects of the China Initiative and create an attractive and welcoming environment for domestic and international talent of all races and ethnicities. All efforts should be taken to ensure that programs and policies intended to protect critical research from malign foreign influence do not target or inadvertently discriminate against people on the basis of national origin or ethnicity.**
+
+**Recommendation 10: To assist Congress and the White House with developing immigration-related policies that support recruiting and retaining international talent, the U.S. government should fund a public-facing national dashboard, potentially run by a federally funded research and development center, that collects and aggregates information and showcases important metrics on international talent to include the following:**
+
+1.   **Educational characteristics of all new lawful permanent residents, whether new arrivals or individuals who adjusted status, to include the highest degree earned, field of study, whether the degree is in STEM, and the country where the highest degree was earned.**
+2.   **Characteristics of F-1 student visa and J-1 Research Scholar visa denials, including gender, country of birth, age, major field of**
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   **study, and whether denial was related to financial support or document integrity.**
+2.   **Funding opportunities from the federal government, state governments, industry, and philanthropy for noncitizen STEM experts.**
+3.   **Immediate-term stay-rate characteristics of advanced STEM degree holders, identifying how many international students and scholars who obtain a STEM master’s or Ph.D. in the United States or complete a postdoc in the United States, obtain either O-1A, H-1B, or Lawful Permanent Resident status at the 3-year mark after expiration of their underlying F-1 or J-1 status, and providing gender, country of birth, age, and major field of study.**
+4.   **Benchmarking against other countries in the competition for new international students at the master’s and doctoral levels in critical STEM fields.**
+
+**Recommendation 11: Higher education associations, scientific societies, and industry groups and leaders should engage in efforts to educate federal and state policymakers and staff on issues including the importance of foreign talent, the economic competitiveness and national security value of foreign talent, the importance of an open scientific ecosystem, the importance of international research collaborations, the current models for funding research, and current research security issues.**
+
+This consensus study report puts forward a set of practical recommendations that government decision-makers and policymakers should seriously consider in order to ensure the continued flow of talent, information, and ideas that is so vital to U.S. leadership in science, technology, and innovation and economic and national security.
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.
+
+[Next Chapter: 1 Introduction](https://www.nationalacademies.org/read/27787/chapter/3)
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/3 -->
+
+## 官方在线阅读第3章
+
+**Suggested Citation:** "1 Introduction." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [1 Introduction](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_ch1a)
+
+Talent is a driving force behind the development of new technologies and innovations and economic growth and competitiveness more broadly ([DHS, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref170); [Eggers and Hagel III, 2012](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref195); [JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355); [Leikuma-Rimicane et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref407); [Parilla and Liu, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref604)). Since World War II, the United States has been a magnet for the best and brightest students and scholars worldwide ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20)). The combination of top international talent working alongside domestic talent, coupled with robust government funding and strategic investments by federal agencies and the private sector, has propelled the United States to leadership and dominance in research and innovation. As eloquently stated by the National Science Board, “Talent is the treasure upon which the nation’s science and engineering enterprise rests” ([NSB, 2024c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref562)). Other nations have watched—and sought to emulate—the United States given the abundant scientific breakthroughs, new technologies developed and commercialized, and economic benefit generated here.
+
+Domestic science, technology, engineering, and mathematics (STEM) talent plays a crucial role in meeting U.S. workforce needs. This is particularly true for the national security innovation base, which requires U.S. citizens in a number of roles ([NDIA, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref517); [Nice, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref547); [Ronald Reagan Institute, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref656); [SCSP, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref676); [Tadjdeh, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref738)). There is considerable room for improvement in how the United States cultivates domestic STEM talent, particularly regarding how women and individuals from underrepresented
+
+**Suggested Citation:** "1 Introduction." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+communities are brought into and retained in the STEM workforce.[1](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_fn3) It is also important to recognize that the full impact of systemic improvements takes decades to develop and emerge. The students who will graduate from college with STEM degrees in 2040 are entering primary school today and will largely experience science and mathematics education during their early formative years as it exists today ([Jones, 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref368); [NASEM, 2005](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref483), [2007a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref484)). As stated by the National Science Board, “Dramatically and quickly improving the STEM education trajectories for primary and secondary school students is essential to sustainably addressing our STEM talent crisis in the long-term” ([NSB, 2024c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref562)).
+
+International STEM talent has played an increasingly critical role in meeting U.S. workforce needs over the past three decades, especially at higher degree levels ([NSB, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref554)). With this being said, there are variations in the STEM labor market depending on the specific field and sector ([Xue and Larson, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref872)). For example, the percentage of foreign-born workers in the segment of the STEM workforce holding doctoral degrees has risen from 27 percent in 1993 to 43 percent today and approaches 60 percent in critical fields such as computer science, mathematics, and engineering ([NSB, 2024c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref562)). The growth of the foreign-born share of the STEM workforce has also been dramatic, with the fractions of foreign-born holders of both bachelor’s and master’s degrees more than doubling since 1993. Overall, 26 percent of foreign-born workers in the United States were in STEM occupations in 2021, a greater share than the 24 percent of domestic-born workers in the United States in STEM occupations ([Taylor and Arbeit, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref750)). Foreign-born science and engineering workers provide significant contributions to the U.S. economy and its competitiveness ([NSB, 2024c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref562); [Yoon, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref877)).
+
+Indeed, students and scholars from abroad[2](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_fn4) make an outsized contribution to advances in U.S. science, innovation, and invention, helping to keep the nation at the forefront of technological development ([DOS and ED,](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref185)
+
+___________________
+
+[1](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_ft3)The committee notes the emergence of the concept of the “missing millions” in STEM and a scholarly literature base using the terms “leaky pipeline,” “braided river,” and “hostile obstacle course.”
+
+[2](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_ft4)The committee also notes the importance and contributions of immigrant-origin students, a growing demographic in higher education as well as the domestic workforce ([Batalova et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref53); [Suárez-Orozco, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref721)). First- and second-generation immigrant students accounted for 6.1 million, or over 30 percent, of U.S. college students in 2021, and over 80 percent of these students are people of color ([Batalova and Feldblum, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref51); [Batalova and Fix, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref51); [Higher Ed Immigration Portal, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref50)).
+
+**Suggested Citation:** "1 Introduction." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+[2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref185); [Stephan and Levin, 2001](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref715); [_The Economist,_ 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref759)). For example, as of 2022, 319 of 582 (55 percent) of U.S. startup companies valued at $1 billion or more have at least one immigrant founder. In addition, at least 51 of the 582 startups have founders who were born in the United States to immigrant parents, and almost 80 percent of America’s privately held, billion-dollar companies have an immigrant founder or an immigrant in a key leadership role ([Anderson, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref25)). Over the past two decades, immigrants have won 40 percent of U.S. Nobel Prizes ([Anderson, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref31); [Boundless, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref77); [Kerr, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref390)). [Appendix F](https://www.nationalacademies.org/read/27787/chapter/17#279) provides a profile of one of these individuals, Katalin Karikó, as well as a profile of Fields Medal recipient Terence Tao.[3](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_fn5) A recent estimate finds that by collaborating with their U.S. colleagues, immigrants are indirectly responsible for 36 percent of U.S. innovation, despite making up only 16 percent of inventors ([Bernstein et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref64)). Another recent paper shows that immigrants disproportionately contribute to job creation as entrepreneurs starting high-growth companies ([Azoulay et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref43)).
+
+The continued incorporation of such individuals into the U.S. scientific enterprise is essential to research excellence and productivity, innovation-based economic growth, and national security ([DOS and ED, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref181)). However, the historical ability of the United States—and its competitive advantage—to attract the best and brightest foreign students and scholars in STEM fields is in jeopardy, as global competition for talent has led to stagnating international enrollment in U.S. colleges and universities and a declining share of the Organisation for Economic Co-operation and Development’s internationally mobile student population ([JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355); [Kania and Gorman, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref377); OECD, 2023e).[4](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_fn6) Furthermore, the immigration status of international graduates has grown more tenuous as the share of international graduates on temporary visas (e.g., F-1, J-1, and H-1B visas and extensions of these for Optional Practical Training [OPT]) has grown, while the share obtaining permanent residency or citizenship has fallen. These trends underscore the need for more stable and better pathways for international talent.
+
+Every graduate of the U.S. educational system, regardless of citizenship or visa status, is the beneficiary of both public and private investment in this system. It is imperative for the United States to increase its return
+
+___________________
+
+[3](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_ft5)The Fields Medal is often described as the Nobel Prize for mathematics. See [https://www.mathunion.org/imu-awards/fields-medal](https://www.mathunion.org/imu-awards/fields-medal).
+
+[4](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_ft6)The committee notes that the COVID-19 pandemic disrupted international enrollments and introduced uncertainty in longer-term higher education trends. This is discussed in greater detail in [Chapter 4](https://www.nationalacademies.org/read/27787/chapter/6#77).
+
+**Suggested Citation:** "1 Introduction." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+on this investment. This can occur by increasing the successful completion of studies in STEM fields by all segments of the U.S. population, including women and individuals from underrepresented communities, and by increasing the retention of international recipients of STEM degrees from U.S. universities, especially at the Ph.D. level. The investments made in these students far outstrips the direct support to them by the federal government. The vast majority of international Ph.D. students studying at American universities in STEM fields are funded by research grants and contracts to their institutions from federal, state, industrial, and philanthropic sources, in addition to internal funds. Thus, not only is there a large domestic investment in the education of international STEM Ph.D. students but also given the large fraction of the total graduate student population represented by international students, U.S. institutions of higher education could not sustain current levels of funded research, including research conducted on behalf of the federal government, without their presence.
+
+The goal of the United States should be to maintain and even enhance the nation’s competitive position in attracting and retaining international STEM talent ([Kania and Gorman, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref377)). Success will depend on our nation’s ability to compete on multiple fronts, as other nations present increasingly attractive opportunities. The United States must offer both educational and professional opportunities—to be part of world-leading universities, companies, national laboratories, and entrepreneurial ventures, as well as quality-of-life opportunities for individuals and their families. The policies and investments required to compete as a magnet for global talent go beyond the establishment of talent programs, as other nations have increasingly recognized.[5](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_fn7) As illustrated elsewhere in this report, some incentive programs implemented by other nations aim to exploit unforced errors by the United States rather than to prevail in head-to-head competition for talent. A prime example is the pillar of Canada’s Tech Talent Strategy focusing on “creating a streamlined work permit for H-1B specialty occupation visa holders in the U.S. to apply to come to Canada,”[6](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_fn8) which
+
+___________________
+
+[5](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_ft7)Kerr argues that “America needs to restore the promise of the American dream for it to remain the magnet for global talent. The U.S. economy depends upon it. But it is not just about restoring the American dream to those abroad, as many American citizens have lost their own dreams, too” ([Kerr, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref390)).
+
+[6](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_ft8)The H-1B visa is a nonimmigrant work visa that allows U.S. employers to hire foreign workers with specialized skills to work in the United States for a specific period of time. Typically, the roles require a bachelor’s degree or equivalent. Occupations that qualify for the H-1B visa are typically in fields such as technology, finance, engineering, and architecture.
+
+**Suggested Citation:** "1 Introduction." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+provides greater security with respect to immigration status than the U.S. system is able to achieve ([Government of Canada, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref281)).
+
+Student flows from China to the United States also have fallen dramatically, likely attributable to both the COVID-19 pandemic and to negative perceptions of the U.S. Department of Justice’s China Initiative ([Chen, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref117); [Gilbert, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref267); [Guo et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref295); [Ma, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref10); [Nuwer, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref572); [Tan, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref28)). This initiative produced a measurable shift in collaborations between Chinese scholars and institutions from partners in the United States to partners in Europe. The attractiveness of the United States also has suffered from the unpredictability introduced by the Department of Homeland Security at ports of entry for Chinese students and scholars. There are recent examples where such an individual has sought to enter the United States with a valid visa, only to find out that their visa has been canceled and to be sent home, often with a 5-year ban to reentry ([Hawkins, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref307); [Ip, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref92); [Kaufman, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref382); [Kuo and Cadell, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref399); [Mervis, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref459); [Prasso, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref616); [Yang, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref362); [Zhang, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref882); [Zhang and Wang, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref882)). Cutting off large-scale flows of STEM talent and information from any major source, whether a potential adversary or not, would represent an enormous self-inflicted wound to U.S. leadership in STEM fields.[7](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_fn9) Nevertheless, continued vigilance to ensure that the open culture of research is not exploited by malign actors cannot be neglected ([Puglisi, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref228); [U.S. Senate Permanent Subcommittee on Investigations, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref818)).
+
+### [REPORT PURPOSE, CHARGE, AND APPROACH](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-1a)
+
+The U.S. Department of Defense (DOD), responding to a directive from Congress, tasked the Committee on International Talent Programs in the Changing Global Environment of the National Academies of Sciences, Engineering, and Medicine (the National Academies) to develop a consensus study report (see Statement of Task in [Box 1-1](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_box1-1)). To carry out this charge, the National Academies formed an ad hoc committee of leaders and scholars that included higher education administrators and researchers, science and technology policy experts, international programs and China experts, and national security experts. Members of the committee unanimously recognize the importance of international collaborations and partnerships and the openness and global character of the scientific and research enterprise
+
+___________________
+
+[7](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_ft9)Kania and Gorman write that “[c]utting off the science and technology talent flow from China to the United States would hand China’s party-state the gift of a forfeit in this part of that contest” ([Kania and Gorman, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref377)).
+
+**Suggested Citation:** "1 Introduction." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+#### **BOX 1-1**
+
+**Statement of Task**
+
+A committee of the National Academies of Sciences, Engineering, and Medicine will conduct a study on foreign talent programs and domestic incentive programs that seek to recruit and retain top scientific researchers. The committee will assess the scientific, economic, and national security benefits of and need for these programs to the United States and its allies and partners, and the benefits of and need for these programs in other countries, in particular the People’s Republic of China and Russia. It also will consider models for such programs that advance science and innovation through international mobility while minimizing national security risks.
+
+Specifically, the committee will examine the following areas:
+
+*   Rationales for international mobility and its role in the scientific research ecosystem
+*   The range of programs (structures and incentives) and their scientific, economic, and national security impacts, including: existing U.S. incentive programs; international talent programs of U.S. allies and partners; and international talent programs of strategic competitor nations including the People’s Republic of China and Russia
+*   Implementable, model practices for U.S. programs that address human capital needs, advance scientific collaborations, and minimize national security concerns
+
+The committee will recommend ways to improve the effectiveness of U.S. efforts to attract and retain global scientific talent— including established researchers, scientists, technical experts, and students—to support national research capabilities, particularly in national security or defense-related fields through the use of incentive programs and relative to the United States’ strategic competitors.
+
+in the success of U.S. institutions of higher education. The committee also recognizes the importance of identifying and protecting research with clear national security implications from malign actors and the need to secure research and intellectual property in support of maintaining the nation’s technological advantage.
+
+**Suggested Citation:** "1 Introduction." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+The committee notes the importance of distinguishing between flows of information and flows of people and that the fraction of each of these presenting actual national security concerns and implications is small ([Krige, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref396); [Nowrasteh, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref553); [Redden, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref637); [Simon and Cao, 2009b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref690); [_The Economist,_ 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref759)). It is both impractical and unwise to constrict the large flows of people and information that characterize global science and benefit the United States in order to reduce national security risk. Regarding the international talent programs of strategic competitor nations, the committee chose to focus on programs in the People’s Republic of China rather than Russia. This is based on China being the most prolific user of talent programs, along with the effects of the Russia-Ukraine war on talent flows to and from Russia ([Erudera, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref204)).
+
+An extensive literature review and study of relevant legislation; think tank reports; and recommendations issued by higher education associations, industry groups, and organizations, including Georgetown University’s Center for Security and Emerging Technology, Stanford University’s Hoover Institution, and the JASON independent science advisory group, have informed this study. In addition to considering reports and recommendations from a range of issue experts, the committee commissioned the following five papers to obtain deeper insights on topics, including U.S.-China science and technology cooperation, China’s talent programs, and domestic incentive programs:
+
+*   “International Talent Flows to the United States” by Jeremy Neufeld and Divyansh Kaushik
+*   “China’s Talent Programs: Lessons for the U.S.?” by David Zweig
+*   “China’s Patterns of Cooperation in Science and Technology” by Caroline S. Wagner
+*   “Survey of United States Allies’ Talent Programs” by Taylor A. Grove
+*   “Survey of Current U.S. Programs to Attract and Retain Talent” by Tamara Savage
+
+The committee also received two briefings with insights on “China’s Evolving Talent Situation: Internal and External Dimensions” from Denis Simon.
+
+Even after engaging with these experts, the committee found it difficult to obtain data for how many individuals are participating in both foreign talent programs and domestic incentive programs and encountered limitations regarding data and translated materials during the course of
+
+**Suggested Citation:** "1 Introduction." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+the study.[8](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_fn10) Several documents and data sources regarding Chinese talent programs have been removed from the internet and are no longer accessible ([Brown, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref86); [Mallapaty, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref439); [Normile, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref81); [O’Malley, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref596); [U.S. Senate Permanent Subcommittee on Investigations, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref818); [U.S. Select Committee on Intelligence, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref819); [Weinstein, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref840)).
+
+The National Academies and DOD agreed to conduct this study at the unclassified level to ensure maximum transparency and accessibility and to engender trust between institutions of higher education and the agency. However, this study was conducted in a manner that allowed the committee to access restricted but unclassified information and to hear from speakers in closed session upon receipt of a Federal Advisory Committee Act (P.L. 92-463, October 6, 1972) determination letter containing a Freedom of Information Act (5 U.S. Code § 552, July 4, 1966) exemption. This permitted the committee to engage with the Federal Bureau of Investigation during a closed but unclassified information gathering session.
+
+### [REPORT STRUCTURE](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-2a)
+
+The remainder of this report addresses the committee’s activities, findings, and recommendations. [Chapter 2](https://www.nationalacademies.org/read/27787/chapter/4#19) provides additional background information before a discussion of the national security and defense implications of scientific research and foreign talent in [Chapter 3](https://www.nationalacademies.org/read/27787/chapter/5#57). [Chapter 4](https://www.nationalacademies.org/read/27787/chapter/6#77) provides an overview of how the United States attracts and retains talent. This is followed by a discussion of how other countries attract and retain talent in [Chapter 5](https://www.nationalacademies.org/read/27787/chapter/7#107), and a discussion of the development of talent programs by current countries of concern, including China,[9](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_fn11) in [Chapter 6](https://www.nationalacademies.org/read/27787/chapter/8#139). [Chapter 7](https://www.nationalacademies.org/read/27787/chapter/9#161) presents the committee’s findings, and [Chapter 8](https://www.nationalacademies.org/read/27787/chapter/10#169) presents the committee’s recommendations.
+
+The committee hopes government decision-makers and policymakers seriously consider the findings and recommendations in this report, as they
+
+___________________
+
+[8](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_ft10)The committee is grateful for the wealth of translated materials made publicly available by Georgetown University’s Center for Security and Emerging Technology. See [https://cset.georgetown.edu/publications/?fwp_content_type=translation#publications](https://cset.georgetown.edu/publications/?fwp_content_type=translation#publications).
+
+[9](https://www.nationalacademies.org/read/27787/chapter/3#chapter01_ft11)The committee wants to state upfront that when referring to China, this report is referring to the People’s Republic of China (PRC), the State, which is controlled by the Chinese Communist Party (CCP), and not to its people, many of whom are invaluable contributors to the global scientific enterprise ([Maizland and Albert, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref437); [NASEM, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref505)). The CCP has more than 98 million members as of 2022, while China’s total population is more than 1.4 billion people ([World Bank, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref75); [Xinhua News Agency, 2003](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref870)).
+
+**Suggested Citation:** "1 Introduction." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+are integral to sustaining the flow of talent, information, and ideas that is so vital to the United States’ continued leadership in science, technology, and innovation and economic and national security more broadly.
+
+**Suggested Citation:** "1 Introduction." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/4 -->
+
+## 官方在线阅读第4章
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [2 Background](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_ch2a)
+
+### [THE UNITED STATES IN THE GLOBAL COMPETITION FOR TALENT](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-3a)[1](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn12)
+
+Prior to the 1930s, Americans went to Europe for advanced degrees in science and engineering (S&E), with the vast majority of these individuals returning to the United States upon completing their training. The political climate in Europe in the 1930s drove talented individuals such as Albert Einstein and Enrico Fermi to immigrate to the United States, many of whom played an important role in the war effort and the Manhattan Project ([Atomic Heritage Foundation, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref34); [JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355); [Moser et al., 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref474); [Rovito et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref659); [Shachar and Hirschl, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref679); [Watney, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref838)). Vannevar Bush, director of the U.S. Office of Scientific Research and Development during World War II, emphasized the need to “remove the barriers” and “develop scientific talent” in his postwar tome _Science, The Endless Frontier_ ([Bush, 1945](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref93); [Hira, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref314); [Reif, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref642)). He also called for the U.S. government to “take an active role in promoting the international flow of scientific information” ([Bush, 1945](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref93)).
+
+Foreign talent continued to come to the United States following World War II ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20)). However, the launch of the satellite _Sputnik_ by the Soviet Union in October 1957 served as a drastic wake-up call, as the nation suddenly found itself behind in the space
+
+___________________
+
+[1](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft12)The next several sections incorporate material from the commissioned paper “China’s Patterns of Cooperation in Science and Technology” by Caroline S. Wagner.
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+race ([Deutch, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref162); [Herman, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref311); [Merisotis, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref451); [Xie and Killewald, 2012](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref866)). This sparked Congress to pass the National Defense Education Act (P.L. 85-864, September 2, 1958), which made low-cost student loans available for students pursuing studies in science, mathematics, and foreign languages ([U.S. Senate, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref816)).[2](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn13) Furthermore, immigrant scientists and engineers played a vital role in propelling the United States to the moon during the 1960s ([Rovito et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref659); [Steele, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref712)). In addition to the steady stream of foreign talent coming to the United States, the nation maintained some level of scientific exchanges with the Soviet Union and Eastern Europe throughout the Cold War.
+
+Today, the U.S. research ecosystem relies on the participation of foreign students, scholars, and professionals, as well as on international interactions and collaborations. The number of foreign-born workers holding at least a bachelor’s degree in the U.S. workforce has grown from 2 million in 1993 to 10 million in 2021, as shown in [Figure 2-1](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-1).
+
+Furthermore, international graduates have grown in both absolute terms and relative terms in their role in the U.S. skilled workforce; the science, technology, engineering, and mathematics (STEM) workforce; and the research and development (R&D) workforce. [Box 2-1](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_box2-1) provides additional insight on how STEM is defined by U.S. government agencies. In 2021, 50 percent of the 10 million international graduates in the U.S. workforce held degrees in STEM fields. While the foreign born make up only 14 percent of the U.S. general population, foreign-born degree holders make up 25 percent of workers with STEM degrees, an increase from 16 percent in 1993. The importance of foreign-born college graduates in U.S. R&D is also on the rise. According to the National Survey of College Graduates, in 1993, the foreign-born share of college graduates was only 13 percent, but this figure rose to 23 percent by 2021 ([NCSES, 2021a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref514)). Among STEM graduates working in U.S. R&D, the share of foreign-born college graduates rose from 23 percent in 1993 to 36 percent in 2021 ([NCSES, 2021a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref514)).
+
+In recent years, however, the immigration status of foreign-born STEM graduates has grown more tenuous as fixed numerical limits and per-country caps established by Congress in 1990 have led to growing Green Card backlogs that prevent temporary visa holders from securing U.S. permanent residency and naturalization. In 1993, 31 percent of foreign-born
+
+___________________
+
+[2](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft13)More information about the National Defense Education Act of 1958 is presented in [Box 3-2](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_box3-2).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 1: Foreign-born workers with at least a bachelor’s degree in the U.S. labor force, by field of degree](https://www.nationalacademies.org/read/27787/assets/images/ff2-1.jpg)
+
+**FIGURE 2-1** Foreign-born workers with at least a bachelor’s degree in the U.S. labor force, by field of degree.
+
+ SOURCE: National Survey of College Graduates ([NCSES, 2021a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref514)).
+
+STEM graduates were permanent residents and only 5 percent were nonimmigrants (i.e., present in the United States on temporary visas).[3](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn14) In 2021, the share of foreign-born STEM graduates who are permanent residents had fallen to 19 percent, while the share who are nonimmigrants had tripled to 15 percent. [Figure 2-2](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-2) illustrates this concerning trend.
+
+The U.S. immigration system effectively acts as a funnel, with education and exchange programs offering a wide opening to a great number of people. More competitive temporary visa programs with numerical limits set by Congress in 1990 narrow the flow considerably. In addition, capped permanent residency slots constrict the flow still further ([Hunt and Zwetsloot, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref323)).[4](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn15) The impact of STEM workers on temporary visas being unable to secure U.S. permanent residency because of outdated numerical limits is perhaps felt most directly in projects funded by the Department of
+
+___________________
+
+[3](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft14)This study defines “nonimmigrant” as “a foreign national wishing to enter the United States on a temporary basis, whether for tourism, business, medical treatment, temporary work, or study.”
+
+[4](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft15)In short, outdated immigration policy undermines the United States’ economic and national security.
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+#### **BOX 2-1**
+
+**Defining Science, Technology, Engineering, and Mathematics (STEM)**
+
+The acronym “STEM” was introduced by the U.S. National Science Foundation (NSF) in 2001, replacing the agency’s use of “SMET” to describe its program in education and workforce development in STEM ([Donahoe, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref179); [Hallinen, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref298); [Loewus, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref424); [McComas, 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref447); [Sanders, 2009](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref668)). Over the succeeding decade, the use of the term became ubiquitous as calls to action to invigorate and improve K–12 and postsecondary education in these fields were published ([Boyer Commission on Educating Undergraduates in the Research University, 1998](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref79); Fortenberry, 2005; [NASEM, 2007b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref485); [NSB, 2005](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref554)). This term also began to be applied to describe job and career roles, not just curricular fields ([Butz et al., 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref97); [Kelly et al., 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref97); [Lee and Mossaad, 2010](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref406)).
+
+Ironically, there is no single U.S. government definition of STEM. In reality, defining STEM is much more complex than it might seem, as various federal agencies consider STEM to be inclusive of different academic disciplines and occupations ([Gonzalez and Kuenzi, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref275); [Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595)). NSF supports all science and engineering (S&E) in the United States, including the social sciences but excluding medicine. The U.S. Congress Joint Economic Committee excludes medicine and health care in reporting on STEM education. The Census Bureau considers graduates with STEM degrees not to be employed in STEM if they teach mathematics, work as a patent lawyer, or practice medicine. The Department of Homeland Security Student and Exchange Visitor Program formally defines a STEM field of study as one “included in the Department of Education’s Classification of Instructional Programs taxonomy within the two-digit series containing engineering, biological sciences, mathematics, and physical sciences; or a related field. In general, related fields will include fields involving research, innovation, or development of new technologies using engineering, mathematics, computer science, or natural sciences (including physical, biological, and agricultural sciences” ([Code of Federal Regulations, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref126)). Finally, U.S. Citizenship and Immigration Services (USCIS) determines STEM and non-STEM job categories by classifying job titles from the Bureau of Labor Statistics’ Standard Occupational Classification into STEM and non-STEM.
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 2: STEM graduates in the U.S. workforce, by immigration status](https://www.nationalacademies.org/read/27787/assets/images/ff2-2.jpg)
+
+**FIGURE 2-2** STEM graduates in the U.S. workforce, by immigration status.
+
+ SOURCE: National Survey of College Graduates ([NCSES, 2021a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref514)).
+
+Defense (DOD). While immigrants represent about 14 percent of the U.S. population, they account for 37 percent of the workforce with advanced degrees on DOD-funded projects ([Nice, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref547)).[5](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn16) Of the high-skilled immigrants working on DOD-funded projects, 85 percent are naturalized citizens, reflecting the fact that security clearances are often necessary to work on such projects, and such naturalization is unobtainable without first getting through the Green Card queue ([Nice, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref547)).[6](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn17)
+
+The issues described above have not gone unnoticed by foreign students, scholars, and governments. Talent recruitment programs operated by many U.S. allies date to the mid-2010s, highlighting the fierce competition for STEM talent beginning around this time ([Grove, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref292); [Stephan et al., 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref713)). International talent are voting with their feet, and there is evidence the attractiveness of the United States has shrunk relative to the rest of the
+
+___________________
+
+[5](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft16)In 2021, the American Community Survey estimated 19 percent of all U.S. STEM workers to be foreign-born. However, the 2021 National Survey of College Graduates, which uses a different occupation classification, estimated 23 percent of all U.S. STEM workers to be foreign-born. See [https://ncses.nsf.gov/pubs/nsb20245/assets/nsb20245.pdf](https://ncses.nsf.gov/pubs/nsb20245/assets/nsb20245.pdf).
+
+[6](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft17)The committee notes the existence of guidance for employing foreign scientists and engineers at DOD laboratories, centers, and agencies. See [https://www.ida.org/-/media/feature/publications/g/gu/guidance-for-employing-foreign-citizen-scientists-and-engineers-at-department-of-defense-science-and/ida-d-4786.ashx](https://www.ida.org/-/media/feature/publications/g/gu/guidance-for-employing-foreign-citizen-scientists-and-engineers-at-department-of-defense-science-and/ida-d-4786.ashx).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 3: International students enrolled in OECD countries, 2013 to 2021](https://www.nationalacademies.org/read/27787/assets/images/ff2-3.jpg)
+
+**FIGURE 2-3** International students enrolled in OECD countries, 2013 to 2021.
+
+ SOURCE: [OECD, 2023c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref584).
+
+Organisation for Economic Co-operation and Development (OECD) member countries,[7](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn18) as shown in [Figure 2-3](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-3). 4.3 million international students were attending institutions of higher education in OECD countries in 2021, with 2.1 million or 49 percent of these students studying in a European OECD country and 833,000 or 19 percent of these students studying in the United States ([OECD, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref582)). While international enrollment in U.S. colleges and universities has slowed since 2015, other OECD countries have aggressively competed for international students ([Stephan et al., 2016](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref714)). According to OECD data, the share of international students inbound to OECD countries who enroll in the United States has fallen since 2016, as shown in [Figure 2-3](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-3). Other OECD countries, such as Canada and Germany, are competing actively for talent and have managed to expand their share of international students, cutting into the U.S. share. For example, while the United States managed to increase total enrollment of international students by 8 percent from 2013 to 2021, Germany increased its enrollment by 109 percent, not including students from the United States.
+
+___________________
+
+[7](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft18)The 38 OECD member countries are Austria, Australia, Belgium, Canada, Chile, Colombia, Costa Rica, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Israel, Italy, Japan, Korea, Latvia, Lithuania, Luxembourg, Mexico, the Netherlands, New Zealand, Norway, Poland, Portugal, Slovak Republic, Slovenia, Spain, Sweden, Switzerland, Turkey, the United Kingdom, and the United States.
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 4: International students enrolled in STEM fields in OECD countries, 2013 to 2021](https://www.nationalacademies.org/read/27787/assets/images/ff2-4.jpg)
+
+**FIGURE 2-4** International students enrolled in STEM fields in OECD countries, 2013 to 2021.
+
+ SOURCE: [OECD, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref586).
+
+Furthermore, despite the increasing interest in STEM education by international students coming to study at U.S. colleges and universities, the United States has become a relatively less common destination in the OECD for international students pursuing STEM degrees. According to OECD data, both the United Kingdom and Germany now attract about the same number of international students to their higher education programs in STEM fields as the United States does as shown in [Figure 2-4](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-4). Canada and other OECD countries have made gains, too.
+
+The COVID-19 pandemic significantly affected the recruitment and retention of foreign talent, producing a dramatic drop in the international mobility of students and scholars during the pandemic’s most acute phase. Some measures of international mobility have recovered in the years since 2020, such as the number of students coming from India to study in the United States, while others have not, such as the number of students coming from China to study in the United States ([IIE, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref332)).
+
+The United States is clearly not in the same place today as it was in 2018 or even 2022 in recruiting and retaining foreign STEM talent. Given the current geopolitical environment, it is imperative that the nation re-double its efforts to remain a destination of choice for the world’s best and brightest students and scholars. This is absolutely necessary to ensure
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+the United States’ continued technological leadership, with democratic values at the forefront. The United States also must recognize that there is heterogeneity in need across diverse STEM labor markets depending on field and sector ([Xue and Larson, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref872)). Subsequent chapters address the ways in which the United States and other countries compete for talent. However, given the attention directed toward Chinese talent programs in particular, this report first provides background on the history of U.S.-China cooperation in science and technology (S&T), the rise of China as a science and technology power, talent flows between China and the United States and other countries, and U.S. government actions by the current and previous administrations.
+
+### [HISTORICAL OVERVIEW OF CHINA-U.S. COOPERATION IN SCIENCE AND TECHNOLOGY](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-4a)
+
+Although the Committee on Scholarly Communication with the People’s Republic of China (PRC) was launched in 1966 under the joint sponsorship of the U.S. National Academy of Sciences, the American Council of Learned Societies, and the Social Science Research Council, scientific collaboration between the United States and China was extremely limited in scale and scope prior to the signing of a bilateral S&T cooperation agreement in 1979 ([Millwood, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref466); [Smith, 1998](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref704)). The cooperative relationship began in earnest with the rise to power of Deng Xiaoping and the announcement of China’s “Four Modernizations” to include S&T. Subsequently, China’s government sought out relationships and signed S&T agreements with European nations as well as with the United States during the 1970s. China’s S&T agreements had previously been limited to a handful of eastern European communist countries, including Hungary and Bulgaria, and the Soviet Union ([Wagner and Simon, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref833)).[8](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn19)
+
+Since establishing diplomatic relations and the signing of the U.S.-China S&T Cooperation Agreement in January 1979, abundant research collaborations and student exchanges have taken place between the two countries ([_Nature,_ 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref135)). The nations became each other’s biggest research partner, and more than 3 million Chinese students have studied in the United States over the last 45 years ([Crow, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref146); [_Nature,_ 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref135); [U.S.-China Education Trust, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref792)). Research collaborations with China were
+
+___________________
+
+[8](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft19)S&T agreements between China and these nations were signed during the 1950s.
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+encouraged by multiple sectors, with the U.S. government, universities, and industry all seeking to strengthen ties and leverage the expertise of Chinese scientists, engineers, and technologists ([Crow, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref146)). For example, the U.S.-China Clean Energy Research Centers promoted both academic and industrial collaborations in service of developing clean technologies and strategies applicable worldwide ([Sandalow, 2010](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref667)).
+
+Many U.S. institutions established formal research agreements with Chinese institutions, with some U.S. colleges and universities initiating physical presences (joint venture universities) and degree programs (joint venture programs) in China ([Cao, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref101); [Diamond and Schell, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref171); [Yin, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref304)). Confucius Institutes, Chinese government-funded language and culture centers, were located on more than 100 American campuses during the late 2000s and 2010s ([Diamond and Schell, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref171); [NASEM, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref505)). These were seen by some universities as a way to meet student interest in Chinese language instruction, and a sign of their international stature, enabling the growth of academic and research partnerships ([Diamond and Schell, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref171); [NASEM, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref505)).[9](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn20) These endeavors, along with private-sector efforts such as journals with specific outreach to and editors assigned to China, aimed to increase the quality of Chinese science and to inculcate Western research standards and values. In some cases, talent programs were considered as a positive way to accomplish this.
+
+A paradigm shift occurred when Xi Jinping came to power in China in 2012 ([Council on Foreign Relations, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref32)). Xi made clear through the Chinese Communist Party’s Five-Year Plans and more broadly that “achieving superiority in science and technology is central to his vision of Chinese state power” ([Lester et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref408); [U.S. House of Representatives Committee on Science, Space, and Technology, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref809)). He catalyzed a much more aggressive approach to S&T competition with the West, shifting the Chinese Communist Party to the national strategy of “Military-Civil Fusion” ([DOS, n.d.a.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref181), [2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref183); [Laskai, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref402); [Levesque, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref411); [O’Connor, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref575); [U.S. Senate Permanent Subcommittee on Investigations, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref818)). During Xi’s tenure, China has emerged as a strong and formidable competitor to the United States in S&T as evidenced by publications and patent
+
+___________________
+
+[9](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft20)One key reason for the success of Confucius Institutes is that they filled a pedagogical gap left open by the decreasing resources allocated by the federal government to education in Chinese language ([Diamond and Schell, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref171); [NASEM, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref505)). American students were interested in learning Chinese, and the Chinese government was willing and able to provide funding and other resources to make this happen. The need for more Chinese language training remains in the post–Confucius Institutes environment.
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+output ([NSB, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref560), [2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref561); [Schneider et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref673)).[10](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn21) The nation is quickly approaching the global leading edge of research in many scientific disciplines and critical and emerging technologies, with Chinese advancements matching or exceeding those made by the United States in some fields ([Bradsher, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref80); [Gaida et al., 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref251), [2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref252); [Kelly, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref385); [Lester et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref408); [NASEM, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref502); [Schmidt et al., 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref672); [Tadjdeh, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref738); [Takatsuki, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref741); [_The Economist,_](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref758)[2024a;](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref758)[Toney and Flagg, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref767)).[11](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn22)
+
+While Chinese talent recruitment programs were in place prior to 2012, under Xi Jinping these programs were redirected to serve as a mechanism to “facilitate the transfer of technology” in addition to building human capital ([Lester et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref408); [Priestap, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref619); [Zwetsloot, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref896)). Some of these programs had the ultimate effect of encouraging dishonesty and incentivizing behaviors “inconsistent with scientific values” held by the United States ([Lester et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref408); [Priestap, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref619); [U.S. House of Representatives Committee on Science, Space, and Technology, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref808); [U.S. Senate Permanent Subcommittee on Investigations, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref818); [Wray, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref862)). A 2019 staff report from the U.S. Senate Permanent Subcommittee on Investigations noted how federal agencies have discovered that talent recruitment plan members “downloaded sensitive electronic research files before leaving to return to China, submitted false information when applying for grant funds, and willfully failed to disclose receiving money from the Chinese government on U.S. grant applications” ([U.S. Senate Permanent Subcommittee on Investigations, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref818)).[12](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn23) This report also stated that “the U.S. academic community is in the crosshairs of not only foreign competitors contending for the best and brightest but also of foreign nation states that seek to transfer valuable intellectual capital and steal intellectual property. As the academic community looks to the federal government for guidance and direction on mitigating threats, the U.S. government must provide effective, useful, timely, and specific threat information and tools to counter the
+
+___________________
+
+[10](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft21)The committee acknowledges that this is not necessarily a result of Xi’s leadership and that foundations built with Western assistance in the preceding decades enabled this emergence as a formidable competitor in STEM fields.
+
+[11](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft22)The Third Plenum of China’s Communist Party’s Central Committee announced further education and research-related reforms in July 2024, including “accelerating efforts to build world-class universities and in-demand academic disciplines” and implementing “a national strategy for cultivating top talents” ([Bradsher, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref80); [Wang, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref362)).
+
+[12](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft23)The Hoover Institution’s report _China’s Influence & American Interests: Promoting Constructive Vigilance_ notes that “[o]ne of the most glaring factors that facilitates IP theft is the fact that recipients of Chinese funding programs, such as the Thousand Talents Program…, routinely do not declare their work in China” ([Diamond and Schell, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref171)).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+threats” ([U.S. Senate Permanent Subcommittee on Investigations, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref818)). As such efforts will require a better understanding of the landscape of higher education and scientific research in the PRC, continuing to develop U.S. citizens proficient in Mandarin and to engage with PRC researchers and colleagues is essential to their effectiveness in improving research security ([Haupt and Lee, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref305); [Lee and Haupt, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref405); [Mervis, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref460); [Mui, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref478); [_Nature,_ 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref135); [Richburg, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref652); [Silver, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref686); [Truex, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref769)).[13](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn24)
+
+The U.S. Department of Justice (DOJ) launched the China Initiative during the Trump administration in 2018 with the objective of “countering Chinese national security threats” and reinforcing the President’s national security strategy ([DOJ, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref176)). This was in response to “malign” activities China carried out, including putting in place programs aimed at encouraging Chinese science and engineering (S&E) students to master technologies that may later become critical to key military systems, as well as to growing concern regarding “foreign influence” on American universities ([OTMP, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref601)). Two components of the China Initiative called for (1) developing an “enforcement strategy concerning nontraditional collectors (e.g., researchers in labs, universities, and the defense industrial base) that are being coopted into transferring technology contrary to U.S. interests”; and (2) educating “colleges and universities about potential threats to academic freedom and open discourse from influence efforts on campus” ([Abdelhady, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref5); [DOJ, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref176)).
+
+The Biden administration ended the China Initiative in 2022 ([Aloe and Guo, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref19); [Gerstein, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref263)). While brief in duration, the effort had many indelible effects on academia and the research enterprise writ large, including
+
+*   fostering a period of intense focus on academia, even with few successful prosecutions and convictions, largely for offenses other than intellectual property (IP)-related issues;
+*   creating a climate of fear for Asian American and Pacific Islander researchers and those of Chinese descent in particular ([Xie et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref867));
+
+___________________
+
+[13](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft24)The version of the National Defense Authorization Act for Fiscal Year 2025 (NDAA; H.R. 8070, 118th Cong. [2023–2024]) passed by the House of Representatives contains a provision that prohibits DOD from funding any U.S. university that has a research collaboration with China. At publication in August 2024, it is unclear whether this language will be included in the final version of the NDAA. See [https://www.science.org/content/article/house-defense-bill-would-block-u-s-research-collaborations-china](https://www.science.org/content/article/house-defense-bill-would-block-u-s-research-collaborations-china).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+*   damaging trust between the U.S. government and the academic research community ([DHS, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref169));
+*   increasing compliance burdens, for both federal agencies and institutions of higher education, given an expanded and constantly evolving regulatory landscape;
+*   generating a demonstrable downturn in U.S.-China research collaborations and student exchanges; and
+*   spurring the closure of nearly all Confucius Institutes ([NASEM, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref505)).
+
+To a considerable degree, the implementation of the China Initiative disrupted nearly 50 years of academic and scientific collaboration and student flows between the United States and PRC.
+
+### [THE RISE OF CHINA AS A GLOBAL S&T LEADER](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-5a)
+
+China rose to become a world leader in S&T and the leading international collaborative partner with the United States in just four decades. In 1980, China published 48 indexed scientific articles. In 2023, China was responsible for more than 25 percent of all articles indexed in the Web of Science platform that year ([Adams et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref10)). This accounts for more scientific articles than any other nation, including the United States, which previously held the lead after it surpassed the United Kingdom in 1948. [Figure 2-5](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-5) shows China’s rise in the number of scholarly publications (in red) compared with its rate of participation in international cooperation (in blue). China’s share of the output has risen from 16 percent in 2016 to 27 percent in 2022, overtaking the United States, and equaling the output of the European Union (EU). This stunning achievement resulted from a mix of domestic policies and programs within China, and China’s taking advantage of the openness of the world science system ([Cao et al., 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref102)). China’s domestic process has involved imitation, investment, innovation, technology transfer, and connection to a diaspora of Chinese scientists and engineers around the world ([Cao et al., 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref102)).
+
+A notable aspect of China’s growth has been its connection to the U.S. research enterprise. The United States was the world leader in S&T when China began its quest in earnest to grow its system, providing a model for China. For example, in 2000, China and the United States copublished about 2,000 papers, while in 2022, the number was over 22,000. The number of cooperating authors grew faster than the number of papers, rising
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 5: China’s rise in scientific publication output (red line) and share of that work conducted internationally (blue line), 1995–2023](https://www.nationalacademies.org/read/27787/assets/images/ff2-5.jpg)
+
+**FIGURE 2-5** China’s rise in scientific publication output[_a_](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_c02ffn1) (red line) and share of that work conducted internationally (blue line), 1995–2023.
+SOURCE: Web of Science, [Clarivate, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref124)
+
+__________________
+
+[_a_](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_c02fft1) In this report, “scientific publication output” refers to the number of articles or publications and does not include other bibliometric data.
+
+from about 40,000 cooperating authors in 2000 to more than 1 million in 2022.[14](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn25) Between 1986 and 1997, Chinese-U.S. papers made up about 2.5 percent of U.S. internationally cooperative papers, but this percentage rose to more than 11 percent by 2008 and to 21 percent in 2022.
+
+China boasts a larger population of scientists and engineers and has more registered patents than any other country. According to some quality metrics, China outperformed both the EU and the United States in 2022 in the top 1 percent of the most highly cited works (those considered to be noteworthy by others), although analyses differ depending on the commercial database utilized ([Brainard and Normile, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref81); [NISTEP, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref550); [NSB, 2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref563); [Wagner et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref830)). Cooperative papers between the
+
+___________________
+
+[14](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft25)The American Academy of Arts & Sciences states that “much of the coauthoring is a consequence of Chinese researchers having performed their doctoral studies and/or postdoctoral research in the United States” ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20)).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+United States and China command even greater citation attention from the scientific community, suggesting that both nations benefit from the collaborations.
+
+The global COVID-19 pandemic resulted in a drop in the output of scientific publications in many places around the world, although not in China. The EU and United Kingdom output remained about the same between 2021 and 2022, while China’s output grew as it has year-on-year for over a decade. China’s contributions to article counts in 2022 accounted for 27 percent of the world total, higher now than the United States’ 20 percent share and equal to that of the EU (including the United Kingdom in the historical data). China’s share of global scientific publication output grew from 16 percent in 2016 to 27 percent in 2022, while the U.S. share dropped from 23 percent in 2016 to 20 percent in 2022 (see [Table 2-1](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_tab2-1)). Where U.S. collaborations in Europe are flat, China-EU cooperation has increased by 60 percent since 2016 (see [Figure 2-6](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-6)) ([Wagner and Cai, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref830)).
+
+U.S.-China collaboration also dropped in 2022 and 2023, part of the reduced engagement that began before the pandemic, with China’s share of international collaborations dropping since 2018 and most steeply with the United States at 24 percent ([Wagner, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref828); [Wagner and Cai, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref831)). Assuming a 2- to 4-year lag between initiation of research and published results, the drop in U.S.-China collaboration likely began around 2018.
+
+Although China’s rise in S&T has been exceptional, it has followed some of the patterns of development common across the history of nations growing a science system ([Cao et al., 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref102); [NASEM, 2010](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref486)). With few exceptions, most nations copy the scientific leaders of the day as they build institutional structures, choose areas of S&T investment, and develop research and experimentation programs. These commonalities of policy action include changes to patent and IP law and protection that provide incentives for invention and innovation. It further includes sending out emissaries to study the science system in leading nations and bringing back knowledge physically or linking back at a distance through collaborative research. Domestically, most nations develop deliberate procurement policies to purchase the results of early innovation, regardless of quality, as a common strategy. Beyond these familiar patterns, China’s rapid rise also was fueled by direct transfers of technology by U.S. multinational corporations eager to reduce production costs and access the large, protected Chinese market, along with the deployment by the Chinese government of industrial policies at unprecedented scales ([Bateman, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref55); [Brown and Singh,](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref88)
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**TABLE 2-1 Comparison of Chinese, U.S., and EU-28 Scholarly Publications and Percentages of World Share, 2016 to 2022**
+
+| **Year** | **Total Articles and Reviews Indexed in Web of Science (only)** | **China Publications (Fractional Counts)** | **China Share of World Total** | **USA Publications (Fractional Counts)** | **USA Share of World Total** | **EU-28 Publications (Fractional Counts)** | **EU-28 Share of World Total** | **Rest of World** | **Rest of World Share of World Total** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2016 | 2,006,213 | 323,498 | 16% | 462,887 | 23% | 592,864 | 30% | 626,964 | 31% |
+| 2017 | 2,094,213 | 359,875 | 17% | 474,768 | 23% | 608,466 | 29% | 651,104 | 31% |
+| 2018 | 2,179,530 | 412,197 | 19% | 479,608 | 22% | 617,594 | 28% | 670,131 | 31% |
+| 2019 | 2,068,920 | 503,209 | 24% | 516,576 | 25% | 669,083 | 32% | 380,052 | 18% |
+| 2020 | 2,633,012 | 671,049 | 25% | 554,035 | 21% | 711,279 | 27% | 696,649 | 26% |
+| 2021 | 2,811,357 | 678,517 | 24% | 582,442 | 21% | 677,942 | 24% | 872,456 | 31% |
+| 2022 | 2,486,398 | 681,949 | 27% | 503,768 | 20% | 677,322 | 27% | 623,359 | 25% |
+
+SOURCE: Web of Science, Clarivate.
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 6: Percentage share of coauthorships between China–U.S., China–EU-28, and U.S.–EU-28 in global publications, 2016 to 2021](https://www.nationalacademies.org/read/27787/assets/images/ff2-6.jpg)
+
+**FIGURE 2-6** Percentage share of coauthorships between China–U.S., China–EU-28, and U.S.–EU-28 in global publications, 2016 to 2021.
+
+ SOURCE: Clarivate InCites online, January 28, 2022.
+
+[2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref88); [Hannas and Tatlow, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref301); [Lewis, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref414); [O’Connor, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref575); [Qin, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref630); [Sutter and Sutherland, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref725)).
+
+Under Deng Xiaoping, policy changes and financial investments instituted by the Chinese government led to a rapid rise in the number of scientists and engineers in China. It is unknown how many scientists or engineers were employed in China in 1979, but by early 2020, the reported number of employed scientists and engineers was 5.3 million working in China, with well over 1 million working outside of China. In 2020, China awarded 1.38 million engineering bachelor’s degrees according to the _Asia Times_ ([Jones and Goldman, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref43)). In 2019, the comparable U.S. number according to the National Science Board is 218,000 bachelor’s degrees—129,000 in engineering and 89,000 in computer sciences—or one-seventh of China’s total ([NCES, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20); [Trapani and Hale, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref768)).
+
+China’s spending on R&D, which the government largely shouldered at first, rose from about $375 million on S&T in 1979 to $458.5 billion in 2023, an amount that is second in the world behind the United States ([OECD, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref580); [Xinhua News Agency, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref871)). The Chinese government claims that national corporations now invest 75 percent of the national
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+total R&D spending, although the government provides significant direct and indirect subsidies ([Dou, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref186); [NSB, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref559)).[15](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn26) The government reports spending about 25 percent of total R&D, although these figures cannot be validated independently.[16](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn27) Furthermore, China uses different counting and reporting methods from OECD countries. Should these figures be accurate, China’s corporations would be outpacing the OECD average of a 67/33 corporate/government split in R&D spending.
+
+#### Sino-Soviet Cold War Collaboration
+
+Prior to the dramatic rise of Chinese S&T publication output (see [Figure 2-5](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-5)), China had a brief but intense cooperative relationship with Russia and other Soviet member states before the late 1970s. In 1955, the Soviet Union and China signed a joint diplomatic agreement to cooperate in S&T, and with it, they established a Joint Commission on S&T Cooperation, which met at least once a year to discuss and coordinate cooperative activities. Many exchanges and cooperative activities occurred as a result of the relationship, which along with the “series of triangular U.S.-Soviet-Chinese geopolitical interactions with alternating periods of alliance and hostility” reshaped China’s role in the global scientific enterprise ([Wang, 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref837)).
+
+China took advantage of this diplomatic relationship to learn from and emulate the Soviet science system. The Soviet model emphasized the role of centralized institutions, with less emphasis given to university research than is the case in Europe or North America. The Soviet model motivated China to establish several key scientific research institutions, including the Chinese Academy of Sciences (CAS), founded in 1949. CAS remains an important and prestigious institution and the largest research organization in China, with more than 100 institutes, 3 universities, and 69,000 full-time employees ([_Global Times,_ 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref273); [Leung and Sharma, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref410); [Suttmeier et al., 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref726)). CAS trains more than 79,000 graduate students per year
+
+___________________
+
+[15](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft26)The Rhodium Group has written further on sources of S&T funding in China. See [https://rhg.com/research/spread-thin-chinas-science-and-technology-spending-in-an-economic-slowdown/](https://rhg.com/research/spread-thin-chinas-science-and-technology-spending-in-an-economic-slowdown/).
+
+[16](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft27)The Chinese National Bureau of Statistics reported that the Chinese government’s investment in R&D surpassed 3 trillion yuan ($419.2 billion USD in 2024) in 2022 ([Luong, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref429); [Xinhua News Agency, 2003](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref870)). USD calculated using an exchange rate of 1 USD = 7.156 RMB as of August 6, 2024. See [https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CNY](https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CNY).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+enrolled in its institutes and universities, which include the University of Chinese Academy of Sciences, the University of Science and Technology of China, and the Graduate University of Chinese Academy of Sciences ([_Global Times,_ 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref273); [Leung and Sharma, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref410); [Suttmeier et al., 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref726)).
+
+The Soviet Union provided China with thousands of visiting scientists and engineers who helped with economic development and military modernization. One source suggested that more than 11,000 Soviet specialists were on site in Chinese factories in 1959 ([Frieman, 1989](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref247)). Chinese students traveled to the Soviet Union to study technical subjects, and between 1948 and 1963, China sent nearly 8,000 students to study in the Soviet Union, which constituted close to 80 percent of China’s students studying abroad ([McGuire, 2010](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref448)). Most Chinese students sent to the Soviet Union had attended college in China and were chosen for overseas study based upon top academic achievement. China established a school in Beijing to teach students Russian and mathematics before proceeding to study and train in Soviet institutions. Between two-thirds and three-quarters of these students studied technical subjects and business, much like the Chinese students who traveled to the West in the 1980s and 1990s.
+
+The two countries cooperated on several major scientific and technological projects, such as the development of China’s nuclear weapons program[17](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn28) and its first satellite. The Soviets also helped China develop its aerospace industry by providing the plans and parts for the MiG-15 fighter jet and training Chinese engineers to build military aircraft. The Soviets provided aid to help China develop its heavy industry sector, including its steel and machine-building industries.
+
+Soviet-Chinese diplomatic and political tensions arose beginning in 1960, resulting in the removal from China of most Soviet experts along with their blueprints, plans, and technical libraries ([Bernstein and Li, 2010](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref65)). Unlike China’s experience in the West, none of China’s scientists or engineers remained in the Soviet Union. China’s cooperative educational program with the Soviet Union ended in 1967 due to ideological conflicts, territorial disputes, and political differences.
+
+Soviet-Chinese cooperation played a significant role in the early development of China’s S&T enterprise. It helped China acquire the knowledge and skills necessary to build its own indigenous S&T capabilities. Technical
+
+___________________
+
+[17](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft28)China’s missile program was developed by U.S.-trained scientist Qian Xuesen, whose profile is in [Appendix F](https://www.nationalacademies.org/read/27787/chapter/17#279). Qian is an early case of China realizing the “value and importance of transferring the intellectual capital of overseas technical experts” ([Stoff, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref716)).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+literature, plans, education, training, sales of parts, the purchase of technical goods, and joint projects from the Soviet Union all aided China as it developed a scientific system. China provided the Soviet Union with raw materials in exchange for technology, training, and education, which concerned Chinese officials who worried they were not gaining enough technical knowledge from the arrangement. Mao Zedong’s Cultural Revolution of 1966–1976 disrupted, but did not completely obliterate, these capabilities and skills.
+
+### [THE FLOW OF CHINESE TALENT TO AND FROM THE UNITED STATES](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-6a)
+
+Deng Xiaoping, at the time Chairman of the Chinese People’s Political Consultative Conference, declared in June 1978 that “thousands, or even tens of thousands, [of students] should be sent abroad rather than only a handful” ([China Net Education Channel, 2009](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref107); [Diamond and Schell, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref171); [Li, 2005](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref43); [Strider, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref718)).[18](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn29) While China and the United States were actively negotiating a bilateral S&T agreement in July 1978, White House Science Advisor Frank Press met with Chinese counterparts to negotiate student exchange opportunities. In October 1978, the White House Office of Science and Technology Policy (OSTP) announced an accord signed in China between 11 Chinese officials and scholars and the United States, negotiated as part of a 2-week visit sponsored by the National Science Foundation (NSF). At the opening of the bilateral relationship, 500 to 700 students were expected to enroll in U.S. universities. In 1980, 2,770 arrived, with numbers increasing every year thereafter ([Guo, 2003](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref296); [Luo, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref427); [Ma, 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref15); [Snyder and Hoffman, 1992](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref707); [Sun, 1995](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref723); [Yan and Berliner, 2016](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref873); [Zhao, 1996](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref884)). [Figure 2-7](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-7) shows the number of students visiting the United States in the 1980s and 1990s.
+
+Initially, the U.S.-China educational exchange agreement was meant to apply to graduate students, but undergraduate students joined the flow to the United States as early as 1980. The number of Chinese undergraduate students coming to the United States increased steadily in the 1980s and 1990s. In 1980, there were 2,770 Chinese students enrolled in institutions of higher education in the United States ([Guo,](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref296)
+
+___________________
+
+[18](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft29)The Hoover Institution’s report _China’s Influence & American Interests: Promoting Constructive Vigilance_ notes that since the late 1970s, government authorities in the PRC “have seen American universities as integral to China’s economic and scientific development” ([Diamond and Schell, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref171)).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 7: Number of Chinese students in the United States, 1980s and 1990s](https://www.nationalacademies.org/read/27787/assets/images/ff2-7.jpg)
+
+**FIGURE 2-7** Number of Chinese students in the United States, 1980s and 1990s.
+
+ SOURCE: Institute of International Education ([IIE, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref333)).
+
+[2003](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref296); [Luo, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref427); [Ma, 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref15); [Snyder and Hoffman, 1992](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref707); [Sun, 1995](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref723); [Yan and Berliner, 2016](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref873); [Zhao, 1996](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref884)). By 2021, the number of Chinese undergraduates in the United States had increased to 109,492, with these students accounting for 34.7 percent of all Chinese students studying in the United States ([IIE, 2023d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref335)). Students chose majors in engineering (30 percent), business (25 percent), mathematics and computer science (15 percent), and physical and biological sciences (10 percent) ([Achirri, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref8); [IIE, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref331), [2023d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref335)).
+
+For doctoral students, the emphasis Chinese students placed on technical fields is even more pronounced than for undergraduates. In 2021, 72.9 percent of Chinese doctoral students were in STEM fields, compared with 63.7 percent of U.S. citizen doctoral students. [Figure 2-8](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-8) shows the percentage of the total doctoral degrees awarded by U.S. institutions that were earned by Chinese students. According to an NSF survey, 13.6 percent of doctorates in the United States were earned by Chinese students in 1990. As shown in the figure, this percentage has increased steadily over the years, reaching 32.2 percent in 2021.
+
+Chinese doctoral students also tend to be more likely to complete their doctorates than U.S. citizen doctoral students. In 2021, 85.5 percent of Chinese doctoral students completed their doctorates within 10 years of enrollment, compared with 78.3 percent of U.S. citizen doctoral students.
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 8: Percentage of all doctorates in the United States earned by Chinese nationals](https://www.nationalacademies.org/read/27787/assets/images/ff2-8.jpg)
+
+**FIGURE 2-8** Percentage of all doctorates in the United States earned by Chinese nationals.
+
+ SOURCE: The State of U.S. Science and Engineering ([NSB, 2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref563)).
+
+Many Chinese doctoral awardees choose to remain in the United States if they can gain employment. For every 1 returnee, 1.4 Chinese scientists have remained in the United States over the past decade, while the turnover ratio of returnees to remainers in the EU is roughly 1 to 0.9 ([Cao et al., 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref102)). The most eminent scientists tend to stay in the United States, but the opposite was true for the EU, where even prominent researchers have been returning to China ([Cao et al., 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref102); [Chawla, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref115)). This may be the result of the relative ease of assimilating into U.S. culture compared with European culture. While the majority of those Chinese students who earned doctorates in the United States have opted to remain in the country—the American Academy of Arts & Sciences finds that as high as 80 percent stay—many of the scholars who returned to China retained collaborative relationships with their U.S. counterparts ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20); [Brown and Singh, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref88)). However, as noted previously, the China Initiative has had a demonstrable chilling effect on the continuation of these collaborations and the retention of Chinese scholars ([Conroy, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref135); [Jia et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref362)). Flynn et al. discerned from a differences-in-differences approach in conjunction with CV and publication data that between 2016 and 2019, ethnically Chinese graduate students were 16 percent less likely to pursue a Ph.D. program in the United States, and that those who did
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+were 4 percent less likely to stay in the United States postgraduation ([Flynn et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref242)).
+
+The growth in the number of Chinese students traveling to study in the United States over the past four decades is well documented. The numbers increased almost every year since 1980, although the rate of growth slowed over time and, in a few cases, fell because of economic slowdowns in the economy. Funding for Chinese students studying in the United States at all degree levels typically comes from self-financing (personal and family funding); Chinese government funding, including scholarships from the China Scholarship Council; U.S. government funding, including the Fulbright Program as well as university scholarships, research and teaching assistantships, and financial aid; and other sources, including scholarships from private companies, nongovernmental organizations, and foundations ([Diamond and Schell, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref171); [IIE, 2023c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref334); [Luo, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref428); [Shao, 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref681); [US-China Education Trust, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref792); [Zhu, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref886)).[19](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn30) It is important to note that many undergraduate students are funded by the first two sources on this list (self-financing and Chinese government funding). Students pursuing advanced degrees in STEM fields, especially at the Ph.D. level, are typically funded by sources of research support provided to their institutions, including from the U.S. government in the form of research grants and contracts. The universities that have welcomed the greatest number of Chinese students are presented in [Figure 2-9](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-9).
+
+#### Visiting Scholars and Research Productivity
+
+In addition to students, Chinese-educated researchers come to the United States to study and work as visiting scholars, postdoctoral researchers, and other roles. These scholars have been educated in China and come to the United States for a period of time to collaborate. Estimates based on studies by the China Scholarship Council suggest about 10,000 per year come to the United States, funded mainly by the Chinese government but also by private sources and the U.S. government, such as the Fulbright Program (see [Box 2-2](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_box2-2)).[20](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn31) These scholars are not spread evenly by state, with California,
+
+___________________
+
+[19](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft30)Some examples of foundations providing scholarships to Chinese students include the Ford Foundation, the Asia Foundation, and the Li Ka Shing Foundation.
+
+[20](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft31)The U.S.-China Fulbright Program was suspended by the U.S. government in 2020. See [https://www.federalregister.gov/documents/2020/07/17/2020-15646/the-presidents-executive-order-on-hong-kong-normalization](https://www.federalregister.gov/documents/2020/07/17/2020-15646/the-presidents-executive-order-on-hong-kong-normalization) and [https://www.insidehighered.com/news/2020/07/16/trump-targets-fulbright-china-hong-kong](https://www.insidehighered.com/news/2020/07/16/trump-targets-fulbright-china-hong-kong).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 9: U.S. universities welcoming the largest number of Chinese students.](https://www.nationalacademies.org/read/27787/assets/images/ff2-9.jpg)
+
+**FIGURE 2-9** U.S. universities welcoming the largest number of Chinese students.
+
+ SOURCE: Committee-generated.
+
+Massachusetts, Ohio, Texas, and Washington hosting the greatest number of visiting scholars. The aggregate active number of Chinese scholars working and/or studying in the United States in 2019 was likely about 20,000.
+
+In 2017, it appears that more scholars returned to China than came to the United States. Nearly 10,000 researchers from the United States—and more than 5,000 from the EU—moved to China to work and study, with the majority being researchers of Chinese origin ([Chawla, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref115); [Wagner et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref828)). These figures have risen notably since 2010, when nearly 5,000 scholars moved to China from the United States and around 2,300 moved from the EU ([Chawla, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref115)). As returnee rates increase, the number of entrants has as well. In 2017, nearly 14,000 researchers from China were working in the United States and just under 5,000 researchers from China were working in the EU, up from more than 8,000 and 2,500, respectively, in 2010 ([Chawla, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref115)).
+
+[Table 2-2](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_tab2-2) shows the number of Chinese scholars visiting the United States with the inflow to China and the outflow from China noted in the additional columns. Between 2009 and 2018, the number of researchers moving between China and the United States more than doubled, from about 2,500 (total) in 2009 to about 5,000 (total) in 2018 (see [Figure 2-10](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-10)). The numbers for the outflow and inflow are almost equal. However, it is important to recognize that these numbers pre-date the China Initiative and the COVID-19 pandemic, and flows in both directions have been curtailed since.
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+##### **BOX 2-2**
+
+**The Fulbright Program**
+
+The largest U.S. government–funded program for bringing international students and researchers to the United States is the Fulbright Program, administered by the U.S. Department of State. The Fulbright Program, an international academic exchange program, was founded in 1946 to increase mutual understanding and support friendly and peaceful relations between the people of the United States and the people of other countries. It is one of the largest programs for bringing international students and researchers to the United States and sending U.S. students and scholars abroad. The program is funded by an annual appropriation from Congress to the State Department’s Bureau of Educational and Cultural Affairs and from participating governments, host institutions, corporations, nongovernmental organizations, and foundations providing direct and indirect support.
+
+Approximately 8,000 students, scholars, teachers, artists, and professionals from the United States and 160 countries receive awards from the Fulbright Program each year. This includes approximately 2,000 domestic students and 800 domestic scholars departing the United States to study abroad, and 4,000 foreign students and 900 foreign scholars coming from abroad to study in the United States. These individuals hail from a wide variety of academic disciplines. Fulbright Program participants from abroad enter the United States on an Exchange Visitor J-1 visa subject to the 2-year home country residence requirement. This means that following the completion of a Fulbright Fellowship, foreign students and scholars are generally required to return to their home country for 2 years before they are eligible to apply for a visa to return to the United States. Thus, while Fulbright plays an important role in U.S. leadership in international education, both the number of participants and the home country return requirements mean that it is not a major contributor to STEM talent flows to the United States.
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**TABLE 2-2 Number of Active Researchers and Inflow and Outflow of Visiting Chinese Scholars in the United States by State, 2018**
+
+| **State** | **# Active Researchers** | **Inflows** | **Outflows** |
+| --- | --- | --- | --- |
+| **Total # of all inflows** | **Inflows from China** | **% of all inflows originating in China** | **Total # of all outflows** | **Outflows to China** | **% of all outflows leaving for China** |
+| CA | 129,361 | 14,787 | 739 | 5.00% | 12,372 | 740 | 5.98% |
+| NY | 81,112 | 8,806 | 310 | 3.52% | 9,044 | 352 | 3.90% |
+| MA | 66,624 | 8,251 | 372 | 4.51% | 7,855 | 378 | 4.81% |
+| TX | 62,108 | 6,665 | 377 | 5.65% | 6,553 | 482 | 7.35% |
+| PA | 49,390 | 5,409 | 243 | 4.50% | 5,828 | 250 | 4.28% |
+| MD | 47,202 | 6,000 | 215 | 3.58% | 6,048 | 230 | 3.81% |
+| IL | 38,072 | 4,102 | 201 | 4.90% | 4,686 | 210 | 4.49% |
+| OH | 34,515 | 3,357 | 153 | 4.54% | 3,642 | 147 | 4.04% |
+| FL | 32,645 | 3,725 | 141 | 3.77% | 3,467 | 110 | 3.19% |
+| NC | 32,056 | 3,510 | 138 | 3.93% | 3,472 | 158 | 4.55% |
+| Ml | 31,450 | 3,082 | 172 | 5.58% | 3,362 | 192 | 5.70% |
+| GA | 25,908 | 2,863 | 185 | 6.45% | 2,855 | 167 | 5.83% |
+| VA | 24,216 | 3,191 | 81 | 2.55% | 3,141 | 76 | 2.42% |
+| WA | 22,649 | 2,809 | 143 | 5.10% | 2,601 | 159 | 6.12% |
+| NJ | 21,016 | 2,923 | 99 | 3.40% | 2,725 | 123 | 4.51% |
+| IN | 21,005 | 2,127 | 104 | 4.90% | 2,224 | 109 | 4.88% |
+| MN | 19,194 | 2,099 | 77 | 3.68% | 2,032 | 66 | 3.24% |
+| CO | 18,980 | 2,268 | 45 | 1.99% | 2,081 | 54 | 2.59% |
+| TN | 17,166 | 1,786 | 90 | 5.05% | 1,879 | 95 | 5.07% |
+| MO | 15,414 | 1,748 | 69 | 3.93% | 1,971 | 79 | 4.03% |
+
+SOURCE: [OECD, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref586).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 10: Intensity of inflow of visiting scholars from China to the United States and outflow from the United States to China, 2009 to 2018](https://www.nationalacademies.org/read/27787/assets/images/ff2-10.jpg)
+
+**FIGURE 2-10** Intensity of inflow of visiting scholars from China to the United States and outflow from the United States to China, 2009 to 2018.
+
+ SOURCE: [OECD, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref586).
+
+Analysis conducted on where Chinese scholars visit in the United States did not find a strong correlation between R&D spending in that state and the willingness of scholars to locate there. Instead, the study found a strong correlation between institutional academic reputation and the location of Chinese scholars. This suggests that Chinese scholars visiting the United States seek a reputational advantage in choosing an institution rather than following the largest or latest funding activities ([Wagner et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref828)). Such trends may be self-reinforcing, as students and scholars choose locations where communities of their compatriots are already present.
+
+### [THE LANDSCAPE FOR INTERNATIONAL TALENT POST-CHINA INITIATIVE](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-7a)
+
+U.S. leadership in S&T has benefited substantially from attracting the best global talent. At least 46 percent of S&E Ph.D. recipients in 2020 were from overseas ([Xie et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref867)). Among S&E Ph.D. recipients in 2020 who were on temporary visas, 37 percent of these individuals hailed from China—3 times the proportion from the second largest country, India ([Xie et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref867)). A substantial 87 percent of Chinese recipients of Ph.D.’s from U.S. universities between 2005 and 2015 intended to stay in the U.S. following graduation ([NCSES, 2016](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref513); [Xie et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref867)).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+The landscape for international talent has experienced significant changes in recent years. The DOJ’s China Initiative was perceived as targeting American academic scientists of Chinese descent, resulting in investigations, arrests, and prosecutions of some Chinese American scientists. One of the most prominent cases involved Gang Chen, a distinguished professor at the Massachusetts Institute of Technology (MIT), who was erroneously arrested for grant fraud in January 2021, sparking the nationwide “We Are All Gang Chen” movement ([Fink and Huang, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref231)).[21](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn32) A year later, the DOJ dropped all charges against Chen and terminated the China Initiative shortly thereafter ([Aloe and Guo, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref19); [Barry and Benner, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref48); [DOJ, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref177); [Gerstein, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref263), [2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref264); [Gilbert and Kozlov, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref268); [Guo, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref19); [Kemsley, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref388); [Kivelson and Michelson, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref391); [Larkin, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref401); [Lucas, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref426); [Mervis, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref455); [Nakashima, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref482); [NASEM, 2022c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref503)).
+
+The China Initiative, the issuance of Presidential Proclamation 10043, and other actions, including those taken by the Department of Commerce and the National Institutes of Health (NIH), have had the effect of instilling widespread fear, creating chilling effects among scientists of Chinese descent, and damaging trust between the U.S. government and the academic research community ([Conroy, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref135); [DHS, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref169); [Dolgin, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref178); [Edmondson, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref192); [Flynn et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref242); [Jia et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref362); [Lewis-Kraus, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref415); [Ma, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref10); [Mervis, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref458); [Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595); [Silver et al., 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref159); [Widener, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref845)). Many of these researchers have felt unwelcome and fearful of conducting research, and experienced pressure to either leave the United States or refrain from applying for federal grants ([Dolgin, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref178); [Xie et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref867)).
+
+Analysis of the bibliometric data of more than 200 million scientific papers showed a steady increase in the migration of scientists of Chinese descent from the United States to China and other countries since 2018, reaching more than 1,000 per year ([Xie et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref867)). About 75 percent of the group moved to China (see [Figure 2-11](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-11)).
+
+The OECD identified consistent trends in the international net flow of scientific authors (see [Figure 2-12](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-12)) ([Bier, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref70)). It shows the U.S. gain increased from 2,000 in 2012 to 4,300 in 2017. The number has dropped dramatically since 2018, and became -1,000 in 2022, indicating that the
+
+___________________
+
+[21](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft32)Gang Chen, a member of the National Academy of Sciences and the National Academy of Engineering, discovered a new semiconductor material that was named one of Physics World’s Top 10 Breakthroughs of 2022. See [https://physicsworld.com/a/physics-world-reveals-its-top-10-breakthroughs-of-the-year-for-2022/](https://physicsworld.com/a/physics-world-reveals-its-top-10-breakthroughs-of-the-year-for-2022/).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 11: Top panel: The annual number of scientists of Chinese descent who have left the United States to destination countries: China (mainland and Hong Kong) and other countries. Bottom panel: The annual number of scientists of Chinese descent who have left the United States by discipline](https://www.nationalacademies.org/read/27787/assets/images/ff2-11.jpg)
+
+**FIGURE 2-11** Top panel: The annual number of scientists of Chinese descent who have left the United States to destination countries: China (mainland and Hong Kong) and other countries. Bottom panel: The annual number of scientists of Chinese descent who have left the United States by discipline.
+
+ SOURCE: [Xie et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref867).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 12: International net flows of scientific authors by country](https://www.nationalacademies.org/read/27787/assets/images/ff2-12.jpg)
+
+**FIGURE 2-12** International net flows of scientific authors by country.
+
+ SOURCE: OECD Science, Technology and Innovation Scoreboard ([OECD, n.d.c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref578)).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+United States is losing talent and that other OECD countries and China have surpassed the United States.
+
+Such shifts in talent flows and the resulting distributions of researchers can be especially pronounced in critical technology fields. For example, using the author data on papers presented at Neural Information Processing Systems, or NeurIPS conferences,[22](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn33) the Global Artificial Intelligence (AI) Tracker 2.0 reported that in 2019, 29 percent of the top AI researchers came from the United States, while China accounted for 20 percent ([MacroPolo, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref435)). However, by 2022, China emerged as the leader, producing 47 percent of the top AI talent, significantly outpacing the United States, now with 18 percent of the top AI researchers (see [Figure 2-13](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-13)) ([MacroPolo, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref435)).
+
+The Asian American Scholar Forum (AASF) conducted a national academic climate survey of 1,300-plus faculty of Chinese descent between December 2021 and March 2022 ([Xie et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref867)). While 89 percent of the survey participants said they would like to contribute to U.S. leadership in S&T, 72 percent felt unsafe, and 42 percent felt fearful of conducting research. This fear led 61 percent of the respondents, particularly junior faculty and federal grant awardees, to consider leaving the United States, and 45 percent, particularly engineering and computer science faculty, to consider avoiding applying for federal grants (see [Figure 2-14](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fig2-14)).
+
+Applications for NSF grants declined significantly between 2011 and 2020 ([Mervis, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref454)). While the decline was 17 percent overall, it was 28 percent for Asian American scientists. In addition, there is a notable disparity in grant allocations from NSF for Asian scholars. A recent study cited by the _New York Times_ shows that scholars of Asian descent are 20 percent less likely to receive NSF grants compared with their counterparts from other ethnic groups ([Chang, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref112); [Chen et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref48)).
+
+The departure of scientists of Chinese descent amid increasing U.S.-China geopolitical tensions has garnered significant attention both domestically and internationally ([Hua and Hao, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref62); [Lu and Rathi, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref51); [Quinn, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref633)). Numerous concerns have been raised, including a deepening sense of a suspicious domestic research climate, hurdles in academic research collaboration, the potential loss of talent from the United States to China and other nations, and the ramifications of brain drain on U.S. S&T leadership.
+
+___________________
+
+[22](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft33)NeurIPS is a prominent AI and machine learning conference that tens of thousands of researchers from academia and industry attend annually. See [https://neurips.cc/](https://neurips.cc/).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 13: Countries of origin of top-tier AI researchers as taken from papers presented at NeurIPS conferences](https://www.nationalacademies.org/read/27787/assets/images/ff2-13.jpg)
+
+**FIGURE 2-13** Countries of origin of top-tier AI researchers as taken from papers presented at NeurIPS conferences.
+
+ SOURCE: [MacroPolo at the Paulson Institute, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref435).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 14: Chinese-origin scholars’ perceptions and intentions from the 2022 AASF survey](https://www.nationalacademies.org/read/27787/assets/images/ff2-14.jpg)
+
+**FIGURE 2-14** Chinese-origin scholars’ perceptions and intentions from the 2022 AASF survey.
+
+ SOURCE: [Xie et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref867).
+
+The findings of the AASF study have attracted close attention from the White House and OSTP; federal funding agencies including the DOD, DOE, Department of Homeland Security (DHS), NSF, and NIH; the National Academies of Sciences, Engineering, and Medicine; and members of Congress. AASF has presented these findings numerous times and has worked with federal policymakers, higher education associations such as the Association of American Universities and Association of Public and Land-grant Universities, and university leaders to address these issues, provide feedback on evolving federal funding policies on research security, and develop strategies for retaining and attracting talent.
+
+In March 2024, the White House invited AASF leaders to celebrate their contributions to the United States and to participate in a roundtable to discuss the issues and challenges facing the community. Furthermore, in June 2024, the Federal Bureau of Investigation admitted to making mistakes and vowed to build trust and improve its relationship with researchers of Asian descent at a public forum convened by Rice University’s Baker Institute for Public Policy ([Franklin, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref246); [Razdan, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref636); [Savage, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref669)). The July 2024 OSTP Memorandum “Guidelines for Research Security Programs at Covered Institutions” emphasizes the need to “improve research security while preserving the openness that has long enabled U.S. R&D leadership throughout the world and without exacerbating xenophobia,
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+prejudice, or discrimination” ([Prabhakar, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref615)).[23](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn34) NIH Director Monica Bertagnolli released a statement supporting Asian American, Asian immigrant, and Asian research colleagues in August 2024, noting these individuals’ “extraordinary contributions to advancing science” and emphasizing that “discrimination and harassment are unacceptable” ([NIH, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref549)). The statement also announced measures to repair relationships with the Asian American community and to clarify existing research security policies in the wake of the China Initiative ([Mervis, 2024c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref461)).
+
+However, recent legislative actions at the federal and state levels have intensified the fear scientists of Chinese descent are experiencing. The House of Representatives’ FY 2024 appropriations bill, H.R. 5893 (118th Congress, 2023–2024), had a significant budget for reinstating the China Initiative. Through the joint effort of 50 organizations led by AASF and the Congressional Asian Pacific American Caucus, the explanatory statement released on March 3, 2024, for the FY 2024 Commerce, Justice, Science, and Related Agencies Appropriations Act was revised with the reinstatement language of the controversial China Initiative being removed. The House passed the spending bill without this language. On May 22, 2024, the House Judiciary Committee held a markup vote on H.R. 1398 (118th Congress, 2023–2024), the Protect America’s Innovation and Economic Security from CCP Act, which would reestablish the China Initiative under a new name, the CCP Initiative ([U.S. House Judiciary Committee, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref811)). The passage of such a bill would likely have substantial consequences, especially for Asian American scholars, and a significant influence on the U.S. global talent competition.
+
+Multiple states have passed land bills to prohibit Chinese immigrants from acquiring real estate. The state of Florida has gone beyond this, passing a law in May 2023 that bars Chinese students from accessing academic labs ([Florida State Senate, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref241)). This law prohibits Florida’s 12 public colleges and universities from accepting money from or partnering with entities in China or other designated “countries of concern,” and offering research contracts to individuals from such countries ([Mervis, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref457)). According to one report, exceptions to these prohibitions are allowed only when the
+
+___________________
+
+[23](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft34)The earlier National Security Presidential Memorandum 33 (NSPM-33) implementation guidance from January 2022 contains a requirement that “[a]gencies must implement NSPM-33 provisions and related requirements in a nondiscriminatory manner that does not stigmatize or treat unfairly members of the research community, including members of ethnic or racial minority groups” ([JCORE, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref358)). See [https://www.whitehouse.gov/wp-content/uploads/2022/01/010422-NSPM-33-Implementation-Guidance.pdf](https://www.whitehouse.gov/wp-content/uploads/2022/01/010422-NSPM-33-Implementation-Guidance.pdf).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Board of Governors overseeing higher education in the state decides that the interaction is not detrimental to the safety or security of the United States or its residents ([Qin, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref628)). Waivers would be granted on a case-by-case basis for those seeking a research position as a graduate assistant or postdoc ([Mervis, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref457); [Qin, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref628)). Two University of Florida students and a faculty member, with backing from the American Civil Liberties Union, are currently challenging the validity of this law in court ([Kumar, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref398)).
+
+International collaboration has become more challenging. Papers coauthored by researchers in the United States and China dropped by up to 25 percent in recent years ([Wagner, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref828); [Wagner and Cai, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref831)). There is widespread fear and confusion among both Chinese and non-Chinese researchers regarding what constitutes permissible and impermissible activities in international collaboration, particularly for collaborations with researchers in China. Faculty members are experiencing pressure to disengage from both long-standing and new international collaborations crucial to the goals of institutions and federal agencies ([_Nature,_ 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref101)). What was previously one of the most vibrant, productive, and successful channels of global scientific cooperation is now dwindling rapidly ([American Academy of Arts & Sciences, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref21)).
+
+U.S. Customs and Border Protection frequently stops and interrogates Chinese American scientists when they return from overseas trips ([Fischer, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref236)). Numerous students and postdoctoral fellows have faced intimidation and have been detained or deported as they try to enter the United States to begin or continue their training ([Gewin, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref265); [Prasso, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref616)). There is a pressing need to develop transparent federal international travel policies and to improve coordination between the Department of State and the Department of Homeland Security on the risk factors determining admissibility of students and scholars from China and other countries of concern. Furthermore, there is a need for the U.S. government to “engage with university and Asian-American groups to limit [the] inadvertent harm of policies or enforcement actions on academic researchers” ([DHS, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref169)).
+
+International students and scholars also may encounter pressures to act on behalf of their home country or be subject to political pressures that may be considered transnational repression. Transnational repression refers to the practice by which individuals or groups are targeted by authoritarian regimes beyond their borders, often through extrajudicial means and with the intent of suppressing dissent, silencing opposition, or punishing perceived threats to their power ([DHS, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref169); [Gorokhovskaia and Vaughan, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref276)). This can take the form of harassment, intimidation, surveillance,
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+abduction, unlawful deportation, and even assassination ([DHS, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref169); [Gorokhovskaia and Vaughan, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref276)).
+
+Transnational repression is an emerging and not yet fully understood facet of foreign malign influence—and a national security concern—that universities should be aware of when welcoming and supporting international students and scholars ([DHS, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref169)). There are serious implications for academic freedom and for freedom of expression of targeted students and scholars ([DHS, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref169); [Gorokhovskaia and Vaughan, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref276); [Mandour, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref441)).
+
+### [THE CURRENT GEOPOLITICAL LANDSCAPE](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-8a)
+
+The committee notes this report is being released in August 2024, in the lead up to the November 2024 presidential election. It is expected that congressional focus on national security concerns over China will intensify as 2024 continues, particularly given the ongoing work of the House Select Committee on the Strategic Competition between the United States and the Chinese Communist Party ([Goldstein, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref274); [Tollefson et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref766)). The Select Committee released _RESET, PREVENT, BUILD: A Strategy to Win America’s Economic Competition with the Chinese Communist Party,_ a report containing 150 policy recommendations, in December 2023 ([U.S. Select Committee on the CCP, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref814)). The report contains a key finding that “the PRC exploits the openness of the U.S. research environment to steal U.S. IP and transfer technology to advance its economic and security interests to the detriment of the United States,” which is tied to report Recommendation 4, “Strengthen U.S. research security and defend against malign talent recruitment,” and eight specific policy actions affecting academia and other sectors ([U.S. Select Committee on the CCP, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref814)). This report also notes that the United States “must bolster its unique advantages in technological development by funding research, incentivizing innovation, and attracting global talent in critical areas” ([U.S. Select Committee on the CCP, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref814)).
+
+The Biden administration has adopted a bundle of international STEM talent policies designed to provide more certainty and predictability for foreign-born “STEM scholars, students, researchers and experts to contribute to innovation and job creation efforts across America” ([White House, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref358)). These policy-level actions by the Departments of Homeland Security and State are pursuant to agency regulations under current authorities Congress has already provided federal departments and agencies. While these actions do not replace congressional action to modernize the
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+governing immigration statute, such administrative actions could be consequential, at least in the aggregate. Monitoring the full implementation of such existing authorities at DHS and the State Department, and the effects thereof, could be invaluable in attracting and retaining international scientists, technologists, and engineers ([Rampell, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref635); [Tollefson et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref766)).
+
+International STEM talent policies the Biden administration has announced include the following:
+
+*   Department of State:
+    *   Early-Career STEM Research Initiative, allowing foreign-born STEM experts, at all academic levels, to come to the United States to conduct and participate in STEM R&D efforts, hosted by industry on J-1 visas ([Bureau of Educational and Cultural Affairs, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref89)).[24](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn35)
+    *   Expanding academic training for STEM graduates on J-1 visas, permitting up to 3 years of postcompletion employment authorization for international students earning STEM degrees in the United States on J-1 exchange visitor visas, on par with students with F-1 visas ([Bureau of Educational and Cultural Affairs, n.d.c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref91)).[25](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn36)
+
+*   Department of Homeland Security:
+    *   Update the designated fields list for postcompletion STEM Optional Practical Training in both 2022 (adding 22 fields) and 2023 (adding 8 fields), to reflect new, largely multi-disciplinary fields of study, expanding the STEM fields in which international students may remain in the United States and work, whether in industry, government, or academia, after earning their degree ([DHS, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref164), [2023c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref168)).
+    *   Policy guidance on O-1 visas,[26](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn37) providing written guidance for the first time since the O-1A category was created by
+
+___________________
+
+[24](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft35)The J-1 exchange visitor visa is for educational and cultural exchange programs designated by the Department of State, Bureau of Educational and Cultural Affairs.
+
+[25](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft36)The F-1 academic student visa allows an individual to enter the United States as a full-time student at an accredited college, university, seminary, conservatory, academic high school, elementary school, or other academic institution or in a language training program.
+
+[26](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft37)The O-1 nonimmigrant visa is for an individual who possesses extraordinary ability in the sciences, education, business, or athletics (O-1A), or in arts, including the motion picture or television industry (O-1B), and has been recognized nationally or internationally for those achievements. See [https://www.uscis.gov/working-in-the-united-states/temporary-workers/o-1-visa-individuals-with-extraordinary-ability-or-achievement](https://www.uscis.gov/working-in-the-united-states/temporary-workers/o-1-visa-individuals-with-extraordinary-ability-or-achievement).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+*       *   Congress in 1990 as to how STEM Ph.D.s may qualify, by updating the U.S. Citizenship and Immigration Services (USCIS) Policy Manual, including an appendix table, to clarify for both agency adjudicators and stakeholders how USCIS evaluates evidence to determine eligibility for O-1A nonimmigrants of extraordinary ability ([USCIS, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref797)).
+    *   Policy guidance on national interest waivers, providing written guidance for the first time on how STEM master’s or Ph.D.s may qualify for Green Card eligibility if their work is of substantial merit and in the national interest, by updating the USCIS Policy Manual to address requests for national interest waivers for advanced STEM-degree professionals, providing some objective criteria for when work is typically in the national interest, such as when a noncitizen is working in a critical and emerging technology field[27](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn38) or an endeavor tied to the annual R&D priorities[28](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn39) identified by the OSTP and Office of Management and Budget directors.
+
+President Biden’s Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence (October 30, 2023) also addresses the criticality of international STEM talent ([Biden, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref69)). This executive order includes provisions in Section 5.1 specifying that departments and agencies explore further avenues to facilitate the attraction and retention of foreign-born STEM experts working in AI and other critical and emerging technologies (Section 5.1 incorporates by reference Section 3(h) of the executive order on the Critical and Emerging Technologies List Update developed by the interagency through the National Science and Technology Council) ([Biden, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref69); [NSTC, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref571)). In particular, Executive Order 14410 Section 5.1 mandates include the following:
+
+*   Department of Labor shall consider updating “Schedule A,” which would identify categories of STEM employment where a U.S.
+
+___________________
+
+[27](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft38)The current U.S. government list of critical and emerging technologies is available at [https://www.whitehouse.gov/wp-content/uploads/2024/02/Critical-and-Emerging-Technologies-List-2024-Update.pdf](https://www.whitehouse.gov/wp-content/uploads/2024/02/Critical-and-Emerging-Technologies-List-2024-Update.pdf).
+
+[28](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft39)The U.S. government “Multi-Agency Research and Development Priorities for the FY 2025 Budget” memorandum is available at [https://www.whitehouse.gov/wp-content/uploads/2023/08/FY2025-OMB-OSTP-RD-Budget-Priorities-Memo.pdf](https://www.whitehouse.gov/wp-content/uploads/2023/08/FY2025-OMB-OSTP-RD-Budget-Priorities-Memo.pdf).
+
+**Suggested Citation:** "2 Background." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+*   employer could go directly to DHS to sponsor a foreign STEM expert for Green Card status.
+*   Department of State shall evaluate revising how the 2-year home residency requirement for J-1 visa holders is administered based on the “Skills List” and consider reinstating, and possibly expanding, the domestic visa reissuance program.
+*   DHS shall finalize “H-1B Modernization”[29](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_fn40) and “Adjustment of Status” regulations and ensure fulsome policy implementation for O-1A and National Interest Waivers.
+
+___________________
+
+[29](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_ft40)The H-1B is a temporary (nonimmigrant) visa category that allows employers to petition for highly educated foreign professionals to work in “specialty occupations” that require at least a bachelor’s degree or the equivalent. Jobs in fields such as mathematics, engineering, technology, and medical sciences often qualify. Typically, the initial duration of an H-1B visa classification is 3 years, which may be extended for a maximum of 6 years.
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/5 -->
+
+## 官方在线阅读第5章
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [3 National Security and Defense Implications of Scientific Research and Foreign Talent](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_ch3a)
+
+U.S. technological leadership has been an essential force in driving economic growth and creating and maintaining the nation’s superior defense capabilities. Foreign science, technology, engineering, and mathematics (STEM) talent has played, and will continue to play, a critical role in enabling U.S. leadership in the fields that underpin national security and the defense industrial base ([Ahern et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref13); [Chase and Miles, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref114)). As an Institute for Progress report stated, “The need for STEM talent is especially pronounced in defense-related industries. Not only are STEM workers with advanced degrees disproportionately employed by the defense industrial base, but 50 percent of advanced STEM workers in the defense industrial base are foreign born” ([Neufeld, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref523)). For example, approximately 58 percent of Ph.D.-level computer and mathematical scientists, who drive the development of artificial intelligence and computing technologies, were born outside of the United States ([NSB, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref558)). In contrast, only 34 percent of advanced STEM workers outside of the defense industrial base are foreign born ([Neufeld, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref523)). [Box 3-1](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_box3-1) illustrates the domestic STEM talent pipeline and its relatively low yield of workers in STEM fields, with an estimated 3.2 percent of U.S. high school graduates ultimately entering the STEM workforce ([Verma et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref824)). [Box 3-2](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_box3-2) considers one of the most successful past examples of boosting STEM education in response to national security challenges—the National Defense Education Act (P.L. 85-864, September 2, 1958). These provide important
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+### **BOX 3-1**
+
+**The Domestic STEM Talent Pipeline**
+
+Several efforts, including some funded by the Department of Defense (DOD), have sought to create dynamic models of talent flows through the domestic science, technology, engineering, and mathematics pipeline. This work has been undertaken with the intent of better understanding where losses occur and where interventions may be fruitful, both for increasing the number of students matriculating in STEM and the number of students graduating with STEM degrees ([Kelic and Zagonel, 2009](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref384); [Newton et al., 2009](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref525); [Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595); [Sturtevant, 2008](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref720); [Verma et al., 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref822), [2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref824); [Wells et al., 2007](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref841)).
+
+The overall domestic talent pipeline model developed by the Systems Engineering Research Center for DOD follows in [Figure 3-1](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_fig3-1) ([Verma et al., 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref822)). Using this model, Verma et al. estimate that only 3.2 percent of U.S. high school graduates ultimately enter the STEM workforce ([Verma et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref824)).
+
+Potential opportunities exist at multiple points along the path from K–12 education and onward to increase the flow of domestic talent in the United States into STEM careers. These include (from left to right in the pipeline model above): (1) bolstering K–12 education and increasing the number of “STEM-ready” students; (2) increasing the number of and retaining students who matriculate in STEM so that they graduate with STEM degrees; and (3) increasing the number of and retaining individuals who pursue STEM employment.
+
+![Image 1: Overall talent pipeline model](https://www.nationalacademies.org/read/27787/assets/images/ff3-1.jpg)
+
+**FIGURE 3-1** Overall talent pipeline model.
+
+ SOURCE: [Verma et al., 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref822).
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+A deep examination of the K–12 educational system is beyond the scope of this report. Analyses of this highly complex, often uneven, and essential aspect of domestic STEM talent development, as well as potential recommendations for increasing the number of STEM-ready students, are available ([ED, 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref190); [GAO, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref257); [NSB, 2024c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref562); [NASEM, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref496), [2021b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref500), [2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref507)). These studies draw attention to the wide gaps in opportunities available to students from under-resourced communities. For example, between 10 and 25 percent of high schools in the United States do not offer more than one core course in the standard sequence of math and science education including Algebra I and II, geometry, biology, and chemistry ([ED, 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref190); [Verma et al., 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref823)). Only 50 percent of high schools offer calculus and only 63 percent offer physics ([ED, 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref190); [NSB, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref556); [Verma et al., 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref823)). Access to such courses also varies significantly by ethnicity. A recent study by the U.S. Government Accountability Office (GAO) confirms that many public elementary and secondary schools in the United States remain divided along racial, ethnic, and economic lines ([GAO, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref257)).
+
+Among U.S. high school graduates, over 20 percent matriculate in STEM fields in college, but only 50 percent of students initially pursuing STEM majors ultimately graduate with a STEM major ([Chen and Soldner, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref118); [Verma et al., 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref822)). This varies by demographic factors and by institutional type. For example, according to the National Science Board’s Science and Engineering Indicators, students identifying as American Indian or Alaska Native, Black or African American, and Hispanic or Latino were all underrepresented compared with U.S. populations among recipients of S&E bachelor’s degrees ([NSB, 2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref563)). The scholarly literature base often refers to “leaky pipelines,” “braided rivers,” and “hostile obstacle courses” as ways to illustrate the differential experiences of students within nominally similar systems ([Batchelor et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref54); [Berhe et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref63)). Previous reports from the National Academies and others have discussed both causes and potential recommendations for increasing the number of students matriculating in STEM as well as specific interventions for developing systems to help retain them through graduation ([NASEM, 2011](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref487), [2016](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref489), [2017d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref494), [2019a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref495), [2019c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref497), [2021a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref499); [Verma et al., 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref822), [2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref502); [Witteveen and Attewell, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref855)).
+
+Salzman finds STEM employment to be a “fairly consistent one-third of STEM graduates each year,” while Verma et al. assert that 40 percent of students graduating with a STEM degree take a STEM job ([Salzman, 2007](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref665); [Verma et al., 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref822)). Fourteen percent of all
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+workers holding a bachelor’s degree or higher in the United States work in STEM, with this figure being 12.1 percent for those born in the United States and 22.9 percent for those born abroad ([U.S. Census Bureau, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref791)). Overall, STEM occupations have both higher earnings and lower unemployment than non-STEM occupations and have been growing in proportion to the overall workforce, in both number and percentage ([NSB, 2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref563)). These factors might be expected to make STEM careers attractive to more graduates. Many factors may influence career decisions, including workplace culture, compensation, burnout, skill expectations and hiring, and perceived and actual opportunities ([Conzelmann et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref136); [NASEM, 2016b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref490), [2017a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref491), [2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref498), [2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref504); [Skrentny, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref702)).[_a_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03ffn1) As noted in [Box 2-1](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_box2-1), the definition of STEM fields and STEM jobs varies among different federal agencies and often excludes occupations in health care and education that require STEM degrees ([Fry et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref248)). However, even if all STEM degree holders were employed in STEM jobs, this would still represent less than 10 percent of U.S. high school graduates and an even smaller percentage of the population at large.
+
+__________________
+
+[_a_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03fft1) The committee notes Salzman’s assertion that there is a paucity of “comprehensive, systematic research on how students choose a STEM career, either on the process or the factors that influence these choices” ([Salzman, 2007](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref665)).
+
+context for considering ways to improve the supply of domestic STEM talent as well as the ongoing need for foreign talent.
+
+In a report issued in 2020, the bipartisan House Armed Services Committee Future of Defense Task Force identified STEM immigrants’ contributions to U.S. leadership as “staggering” and noted that “without a new commitment to achieving technological superiority, the successes of the 20th century—the American Century—will no longer be assured” ([U.S. House Armed Services Committee, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref805)). This report, which focused on the state of the nation’s national security innovation base to meet emerging threats, also concluded that “immigration policy hinders the nation’s ability to attract and retain foreign STEM talent that instead flows to other countries, including competitors” ([U.S. House Armed Services Committee, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref805)).
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+### **BOX 3-2**
+
+**The National Defense Education Act of 1958**
+
+The National Defense Education Act (NDEA; P.L. 85-864) was passed by Congress and signed into law by President Eisenhower on September 2, 1958, to ensure the security of the United States and “strengthen the national defense and to encourage and assist in the expansion and improvement of educational programs to meet critical national needs” ([Butz et al., 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref97); [U.S. Congress, 1958](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref799)). The immediate catalyst for the NDEA was the October 1957 launch of the satellite Sputnik by the Soviet Union ([Butz et al., 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref97); [Flattau et al., 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref240); [Granovskiy, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref286); [Herman, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref311); [Merisotis, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref451); [Teitelbaum, 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref753)). Following this disruptive, crisis-level event—which “directly challenged the scientific, technological, and military prowess of the United States” and had major geopolitical implications—it was imperative to “ensure that highly trained individuals would be available to help America compete with the Soviet Union in scientific and technical fields” ([Butz et al., 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref97); [ED, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref11); [Flattau et al., 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref240)). While the launch of Sputnik “crystallized the political support that education reformers had been lacking and demolished their political opposition,” there had been some interest in and movement toward such comprehensive federal education legislation for at least a decade prior ([Butz et al., 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref97); [Clowse, 1981](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref125); [Flattau et al., 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref240); [Urban, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref790)).
+
+The NDEA shifted the relationship of the federal government to education, as the government had previously provided land grants for schools and aid for vocational education, but not funding for general education ([ED, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref11); [Neal et al., 2008](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref519)). The legislation was described as “a composite of programs to strengthen the U.S. education system” ([Butz et al., 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref97)). The NDEA infused resources and provided aid at all levels, including capital funds for low-interest loans to students, to both public and private institutions of higher education and also provided support for improving elementary and secondary education ([Butz et al., 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref97)). In particular, the NDEA contained provisions to provide financial “support for loans to college students, the improvement of science, mathematics, and foreign language instruction in elementary and secondary schools, graduate fellowships, foreign language and area studies, and vocational-technical training” ([ED, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref11)). States received an allocation of funds authorized by the NDEA according to a college population-based formula ([Butz et al., 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref97)).
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Furthermore, the NDEA was accompanied by parallel actions that created NASA as well as the Advanced Research Project Agency (now known as the Defense Advanced Research Projects Agency, or DARPA) and that increased National Science Foundation (NSF) funding ([Herman, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref311); [JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355); [NASEM, 2007b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref485)). While the NDEA was largely superseded by other programs by the 1970s,[_a_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03ffn2) it is widely acknowledged as “an extraordinarily successful legislative initiative” ([AAU, 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref1); [Butz et al., 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref97); [Flattau et al., 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref240); [Urban, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref790)).[_b_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03ffn3) The NDEA’s legacy is evident today in the form of NSF and DOD’s graduate research fellowship programs (NSF’s Graduate Research Fellowships Program and DOD’s National Defense Science and Engineering Graduate Fellowship), the Department of Education’s Title VI international education programs, and the Perkins Loan Program (formerly the National Defense Student Loan Program) ([AAU, 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref1); [NASEM, 2007b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref485); [NSF, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref565)). Intended to improve K-12 science and mathematics education and to produce highly trained scientists, the legislation ultimately benefited higher education writ large, as the initial focus on defense was broadened to encompass most academic disciplines and fields of study ([Butz et al., 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref97); [Neal et al., 2008](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref519); [Parsons, 2005](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref606); [Urban, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref790)).
+
+There was some momentum toward a new or revived NDEA in the 2000s due to concerns about DOD’s science and engineering workforce. Several major studies posited that the number of U.S. graduates in critical disciplines was not sufficient to meet national, homeland, and economic security needs ([AAU, 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref1); [Berry, 2005](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref66); [Business Roundtable, 2005](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref94); [Council on Competitiveness, 2005](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref139); [DOD, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref172); [Jones, 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref368); [NASEM, 2007b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref485); [Sega, 2005](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref677); [TFAI, 2005](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref754)). These reports catalyzed some reforms, including the establishment of the DOD Science, Mathematics, and Research for Transformation (SMART) Scholarship-for-Service Program under the National Defense Education Program and the passage in 2007 and subsequent reauthorization in 2010 of the America Creating Opportunities to Meaningfully Promote Excellence in Technology, Education, and Science Act (or America COMPETES Act) ([Gonzalez and Kuenzi, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref275); [SMART Scholarship, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref703); [Teitelbaum, 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref753); [Urban, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref790); [U.S. Congress, 2007](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref801), [2011](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref802)). S. 3502, the New National Defense Education Act of 2006 was introduced by Senators Edward Kennedy, John Kerry, and Hillary Clinton but ultimately did not advance ([Urban, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref790); [U.S. Congress, 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref800)).
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+The National Security Commission on Artificial Intelligence Final Report, released in 2021, calls upon Congress to “pass a National Defense Education Act II to address deficiencies across the American educational system—from K–12 and job reskilling to investing in thousands of undergraduate- and graduate-level fellowships” in critical and emerging technology fields ([NSCAI, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref564); [SCSP, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref675)). The chair emeritus of the National Science Board (NSB), Daniel Reed, called for the United States to pursue a “National Defense Education Act (NDEA) 2.0” in congressional testimony in 2024, noting that such legislation is not just about investing in the future, but rather “about encouraging and unleashing talent” ([Reed, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref276)). A follow-on op-ed by Reed and current chair of the National Science Board, Dario Gil, suggested that a modern-day NDEA could be one component of a STEM talent strategy to empower the United States to compete against China ([Reed and Gil, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref276)). Furthermore, the National Science Board’s July 2024 policy brief on “A Changed Science and Engineering Landscape” emphasizes the need to rebuild STEM education and a robust, future-capable STEM workforce that engages all Americans through “a new version of the 1958 National Defense Education Act” and making “education a federal, state, and local priority” ([NSB, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref560)).
+
+The committee notes that a new NDEA could potentially reduce the United States’ reliance on foreign STEM talent and could also provide enhanced resources for foreign language instruction, which is no less important in today’s global environment than it was in 1958 ([Neal et al., 2008](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref519)).
+
+__________________
+
+[_a_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03fft2) The NDEA continued in operation until 1973, a period of 15 years ([Teitelbaum, 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref753)).
+
+[_b_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03fft3) A formal evaluation of the NDEA, and individual provisions contained in the NDEA, was never conducted. Butz et al. provide a brief assessment based on earlier work by Forbis ([Butz et al., 2004](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref97); [Forbis, 1982](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref244)). The Institute for Defense Analyses’ Science and Technology Policy Institute addresses the intended and actual effects of selected outcomes of the NDEA in a 2006 report commissioned by the Office of Science and Technology Policy, noting that “without the means to track and analyze outcomes, its effects cannot be quantitatively and qualitatively established with certainty” ([Flattau et al., 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref240)). The number of Ph.D.s awarded annually by U.S. colleges and universities did increase from 8,600 in 1957 to 34,000 in 1973; this growth may stem from provisions in the NDEA ([Greenwood and Riordan, 2002](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref288)).
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Given that technological advancements in artificial intelligence and biotechnology, for example, will have an outsized effect on national security, the dependence of U.S. leadership on foreign STEM talent to meet critical workforce needs, particularly in emerging technologies, presents potential economic and national security risks ([NSB, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref561)). As a report to the White House Office of Science and Technology Policy (OSTP) stated, “Concerns have been voiced about the large numbers [of foreign individuals with STEM degrees]—including those from China—employed in innovation activities in U.S. companies, laboratories, and academic institutions. These individuals are seen as posing risks of misappropriating U.S. trade secrets from important U.S. industries, transferring them to companies in competitor countries. They may also return to their countries of birth with intangible technology that they have acquired in the United States” ([Crane et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref145)). It is important to point out that misappropriation of trade secrets is unethical and unlawful; however, the intangible transfer of knowledge is inherent in international education and scientific collaboration. It is a feature, not a bug, of the values-based order that has served the United States well.
+
+### [RISKS ASSOCIATED WITH FOREIGN TALENT AND OPEN RESEARCH ENVIRONMENTS](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-9a)
+
+International science and technology (S&T) is intensely competitive, both in terms of leadership and credit for scientific discoveries and the economic benefits of innovation and technology developments ([NASEM, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref501)). The value proposition for international talent participation is clear and stark: the United States simply does not, and for the foreseeable future will not, develop sufficient domestic STEM talent at all levels of expertise to fully support the nation’s research and innovation system ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20); [AAU and Business Roundtable, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref4); [DeSilver, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref159); [Herman, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref311); [NASEM, 2007b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref485), [2011](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref487), [2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref495); [NSB, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref555), [2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref563); [Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595); [Reed, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref276)). As a result, the United States needs to attract a great deal of this workforce from abroad.
+
+The quality of talent coming to the United States from abroad is generally good because of the competitive nature of university admissions and the fact that mobility increases with higher levels of talent ([Helms and Spreitzer,](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref310)
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+[2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref310); [Kerr, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref390)).[1](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_fn41) Incoming graduate students hold at least a bachelor’s degree. Furthermore, the cost of travel, tuition, and other expenses can add selective pressure on many potential foreign students in terms of motivation to perform and to succeed ([Swaminathan, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref727)). Consequently, U.S. universities historically have been able to compete for and attract the best talent available worldwide, and so the benefits to the United States of an open science, technology, and innovation system welcoming worldwide talent should be positive in terms of attracting highly motivated and train-able students with superior levels of native intelligence and capability that allows them to produce the highest quality ideas and breakthroughs ([DOS and ED, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref181); [Neal et al., 2008](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref519)).
+
+The benefits of a system so dependent on foreign talent are rooted in the presumption that the system is open, transparent, and fair. It assumes that students coming to the United States are motivated to better themselves, to participate in a robust S&T ecosystem, and to pursue scientific achievement or commercial opportunity free from other agendas. It presumes that foreign talent coming to the United States will embrace the Western system of scientific norms and values, including fairness in assigning credit for advances, and protection of intellectual property (IP) when innovating technology.
+
+The potential risks of an open science, technology, and innovation system based so heavily on the flow of foreign talent are also understandable. If this foreign talent does not ascribe to the same value system, respect IP ownership, or is motivated by incentive or coercion to play by a different set of rules, then much of the value proposition is invalid. In the context of great power competition that includes both military and economic dimensions, a coordinated effort to recruit STEM talent and acquire practical knowledge or more tangible IP might well represent a real danger, precisely because it is the most capable foreign talent that comes to the United States to study.
+
+Determining the actual risk of the U.S. open research ecosystem, one that welcomes talent from around the world, therefore hinges on evaluating these assumptions about the motivations of the foreign STEM talent
+
+___________________
+
+[1](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_ft41)Kerr notes that “[b]usiness leaders and policy makers care deeply about how the skills of immigrants stack relative to natives. Are immigrants the ‘best and brightest’? In Washington, you hear this phrase continually in debates about the merits of immigration reform. If immigrants are the ‘best and brightest,’ it is easier to justify the greater inflows to skeptical Senators and the American public. But if immigrants are less productive than native scientists and engineers, the expanding role of immigrants in U.S. innovation may be a cause for concern if the immigrants are displacing better native talent” ([Kerr, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref390)).
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+diaspora. Is it to seek a better life, intellectual freedom, and opportunity, or is there willing or even unwilling or unwitting participation in malign foreign nation-state agendas? The information and tools to answer these questions about deeper motives do not exist, yet the core assumption remains valid based not just on current domestic STEM educational trends but also on simple population demographics: the United States will have to attract the majority of its STEM talent from abroad to remain competitive in any foreseeable future ([Tiffert, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref763)). The challenge, then, is to accept the risk and to compensate and adjust for it.
+
+One step to address this risk would be for the United States and other democratic nations to promote an international framework to safeguard fundamental research and enable enhanced protection and risk management ([Gamache and Tiffert, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref255); [Holtkamp, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref316); [Turpin, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref774)). This would require the United States and its allies to acknowledge the scope of the threat that China in particular presents regarding the protection of IP ([McMaster, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref449); [U.S. Senate, 2019a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref817), [2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref818)). As a report from the Hoover Institution states, “Neither the U.S. government nor the universities and national laboratories in the [United States] research enterprise are adequately managing the risks posed by research engagements with foreign entities. The task is quite simply falling through the cracks” ([Tiffert, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref255)).[2](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_fn42) Or as another investigator noted, “The lack of understanding of the magnitude and complexity of China’s technology transfer apparatus has resulted in misperceptions, some of which downplay or understate the threats posed by China and/or overestimate the United States’ ability to maintain technological and military superiority. For instance, our views of risks and threats posed by China are too often placed in simplistic, binary terms. The most common of these binary constructs are legal versus illicit activity, international research collaboration versus shutting ourselves off, and openly shared (and published) versus classified research” ([Stoff, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref717)).
+
+Among the risks the Hoover report ([Tiffert, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref255)), a 2020 OSTP report ([OSTP, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref142)), a 2020 American Academy of Arts & Sciences report ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20)), and others identify are as follows:
+
+___________________
+
+[2](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_ft42)_The Los Alamos Club_ report by Strider Technologies, Inc. details how at least 162 scientists working at Los Alamos National Laboratory between 1987 and 2021 were recruited by the People’s Republic of China (PRC) to return and continue their military weapons research programs there. This document was inspired by an earlier article in the _South China Morning Post._ See [https://content.striderintel.com/wp-content/uploads/2022/09/Strider-Los-Alamos-Report.pdf](https://content.striderintel.com/wp-content/uploads/2022/09/Strider-Los-Alamos-Report.pdf) and [https://www.scmp.com/news/china/diplomacy-defence/article/2082738/americas-hidden-role-chinese-weapons-research](https://www.scmp.com/news/china/diplomacy-defence/article/2082738/americas-hidden-role-chinese-weapons-research).
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+*   Conversion of U.S. government-funded research into IP that is then commercialized in the PRC in violation of research grant or university terms and conditions.
+*   Direction or redirection of U.S. research to the PRC government by selectees of the PRC’s state-run talent recruitment programs.
+*   Improper PRC influence over or manipulation of U.S. research grant evaluations and award decisions.
+*   Diversion of U.S. research to PRC defense programs and weapons system development that can undermine or eliminate U.S. military superiority.
+*   Diversion of U.S. research to applications that violate ethical standards or democratic norms and values, such as those that enable or enhance the PRC’s domestic surveillance apparatus and human rights abuses.
+*   Failure to report or misreporting of foreign affiliations, research projects, and additional sources of funding in violation of federal research grant disclosure rules.
+
+China’s rise as an economic and S&T power has involved massive internal investment, as well as resources drawn from outside the country ([Joshi, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref370); [Morrison, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref473); [NASEM, 2010](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref486); [Simon and Cao, 2009a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref689)). These resources include financial investments by businesses, international collaborations, and talent (including returnees) recruited from abroad ([Simon and Cao, 2009a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref689)). While much of this activity has followed the playbook followed by other developing nations, including the United States in the 19th and early 20th centuries, it has been accompanied by other illicit activities that are appropriately characterized as “malign.” Examining the full scope of such activities, which include counterfeiting goods, copyright violations, IP theft, industrial espionage, exfiltration of data and trade secrets, and concealing talent programs, is beyond the scope of this report. The Federal Bureau of Investigation (FBI) has estimated the annual cost to the U.S. economy of counterfeit goods, pirated software, and theft of trade secrets by China at $225 to $600 billion ([Commission on the Theft of American Intellectual Property, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref133); [Deutch, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref162); [FBI, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref225); [Hvistendahl, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref325)). It is important to assess the effect of malign talent programs against this scale. However, implications that this loss reflects substantial thefts of federally funded research, especially from universities, cannot be justified by the original or subsequent analyses.
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+#### A $600 Billion Problem for Federally Funded Research?
+
+The National Science Foundation, in partnership with the National Institutes of Health, the Department of Energy, and the Department of Defense, released a series of four training modules in February 2024.[3](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_fn43) This training “provides recipients of federal research funding with information on risks and threats to the global research ecosystem—and the knowledge and tools necessary to protect against these risks” ([NSF, n.d.b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref566)). Module 1: What is Research Security? includes a discussion of IP and the potential consequences of its theft or loss, stating that “the estimated losses to our researchers and economy approach $600 billion annually” ([NSF, 2024c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref570)). Since the stated audience for this training consists of federally funded researchers and the students and professionals who are part of the research enterprise, one might reasonably conclude that this number reflects the magnitude of the loss from this community. That would be incorrect.
+
+The FBI produces a variety of informational resources and bulletins regarding security issues. Below is illustrated the introductory section of the bulletin “China: The Risk to Academia” (see [Figure 3-2](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_fig3-2) for the bulletin’s introductory text).[4](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_fn44) Again, one might reasonably conclude from the title that the annual cost highlighted is representative of the loss from academic institutions to China, and this would again be incorrect. The same blue box also appears in the FBI’s bulletin China: The Risk to Corporate America ([FBI, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref225)). It is clear that estimates of “the annual cost to the U.S. economy of counterfeit goods, pirated software, and theft of trade secrets” represent an economy-wide impact far beyond the scope of university- or federally-sponsored research ([FBI, 2019a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref224), [2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref225)).[5](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_fn45)
+
+This economic impact estimate is traceable to a 2017 analysis by the Commission on the Theft of American Intellectual Property (IP Commission), released as an update to its original 2013 report ([Commission on the Theft of American Intellectual Property, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref132), [2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref133)). Since then, the $600 billion figure has become ubiquitous, appearing not only in the press and the examples noted above from executive branch agencies but in releases from trade organizations, think tanks, and congressional committees ([Cox,](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref144)
+
+___________________
+
+[3](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_ft43)See [https://new.nsf.gov/research-security/training](https://new.nsf.gov/research-security/training) (accessed April 15, 2024).
+
+[4](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_ft44)See [https://www.fbi.gov/file-repository/china-risk-to-academia-2019.pdf](https://www.fbi.gov/file-repository/china-risk-to-academia-2019.pdf).
+
+[5](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_ft45)Research expenditures by industry (approximately 75 percent of the United States’ R&D portfolio) exceed those of the U.S. government (approximately 20 percent of the United States’ research and development [R&D] portfolio) by a significant margin ([Anderson et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref26); [NSB, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref560)). Further, the value of IP in this sense refers to its market value. Unlike the private sector, universities and national labs do not generally practice their IP or trade secrets.
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 2: Introduction to an FBI bulletin for researchers on China’s risk to academia](https://www.nationalacademies.org/read/27787/assets/images/ff3-2.jpg)
+
+**FIGURE 3-2** Introduction to an FBI bulletin for researchers on China’s risk to academia.
+
+ SOURCE: Federal Bureau of Investigation ([FBI, 2019a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref224)).
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+[2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref144); [EverEdge, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref218)). Such uses are rarely accompanied by any context or consideration of what went into the estimates, nor have the estimates been updated in the intervening years. Nonetheless, $600 billion is a sufficiently large number to attract attention regardless of its source, use, or currency.
+
+What are the numbers behind that number? The IP Commission estimated the value of counterfeit and pirated tangible goods imported into the United States in 2015 to be between $58 billion and $118 billion, and that of counterfeit and pirated U.S. goods sold elsewhere in the world to be $85 billion ([Commission on the Theft of American Intellectual Property, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref133)). The sum of these brackets the estimate of $143 billion by the Organisation for Economic Co-operation and Development and the European Union Intellectual Property Office ([OECD and EUIPO, 2016](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref588)). The IP Commission notes that sales of these goods “did not displace the sale of legitimate goods on a dollar-for-dollar basis,” estimating that “at least 20 percent of the total amount of counterfeit and pirated tangible goods actually displaced legitimate sales. Thus, the cost to the American economy, on the low end of the estimate, is $29 billion” ([Commission on the Theft of American Intellectual Property, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref133)). The commission also noted that China, which accounted for 87 percent of counterfeit goods seized coming into the United States, represented the world’s principal IP infringer ([Commission on the Theft of American Intellectual Property, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref133)).
+
+The commission estimated the economic impacts of other sources of IP theft or piracy based on percentages of the U.S. gross domestic product (GDP). At the time of this analysis, U.S. GDP stood at $18 trillion, and software piracy was estimated to cost American companies at least 0.1 percent of GDP, or $18 billion annually ([Commission on the Theft of American Intellectual Property, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref133)). The largest and most uncertain cost to the U.S. economy was trade secret theft. The commission cited a 2014 publication by the Center for Responsible Enterprise and Trade and PricewaterhouseCoopers estimating the economic impact of trade secret theft to be between 1 percent and 3 percent of GDP, representing a cost to the U.S. economy of $180 billion to $540 billion ([Commission on the Theft of American Intellectual Property, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref133); [Michel et al., 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref465); [Wiseman, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref853)). These values bracket the 2015 estimate from the Office of the Director of National Intelligence that economic espionage through hacking costs the U.S. economy $400 billion annually ([Bingen, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref71)). The combined estimates of the costs of trade secret theft and the impact of counterfeit and pirated goods and software costs the U.S. economy $225 billion to $600 billion annually ([Commission on the Theft of](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref133)
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+[American Intellectual Property, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref133); [FBI, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref225)). In comparison, total U.S. spending on R&D is about 3 percent of GDP, and federal funding of R&D is about 0.6 percent of GDP ([Anderson, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref25); [Anderson and Moris, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref26); [Bradsher, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref80); [Harris et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref303)). In other words, reaching a total annual cost of $600 billion to the United States from counterfeit goods, pirated software, and theft of trade secrets assumes that the value of trade secrets stolen annually is equivalent to the total investment in R&D by both the public and the private sectors.
+
+These estimates of economic losses have not escaped criticism, regarding both their basis (“the figures rest on flimsy evidence derived from dubious ‘proxy modeling’“) or their widespread use ([Cohen, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref130); [Roach, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref655)). An analysis by the Center for Strategic and International Studies (CSIS) suggested that, in the time frame considered in the 2017 IP Commission report, “the United States probably lost between $20 billion and $30 billion annually from Chinese cyber espionage” ([Lewis, 2018b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref413)). CSIS estimated that cybercrime from all sources amounted to 1 percent of global GDP, with IP theft accounting for 25 percent of the total ([Lewis, 2018a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref412)). This is in contrast to the IP Commission’s use of 1 percent to 3 percent of GDP as an estimate of losses from theft of trade secret IP ([Commission on the Theft of American Intellectual Property, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref133)).
+
+Regardless of the reliability of these estimates, it is important to understand where the effects are most prominent. Whether in the popular press or captured by the activities of congressional committees, concerns about economic consequences of IP theft primarily center on business-sector consequences, with special concern for effects on small business ([Rosenbaum, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref657); [U.S. House Foreign Affairs Committee, 2020a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref806); [U.S. Select Committee on the CCP and Committee on Small Business, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref806)). Universities, national laboratories, federally funded research, and talent programs are remarkable for their absence from these discussions on the economic impact of IP theft. Claims that American universities are giving away large amounts of taxpayer-funded research by failing to maintain adequate safeguards are by and large groundless.
+
+### [TALENT PROGRAMS OF COUNTRIES OF CONCERN](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-10a)
+
+The CHIPS and Science Act (P.L. 117-167, August 9, 2022) designated the talent programs of several nations, including China, Russia, Iran, and North Korea, as countries of concern (see [Box 3-3](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_box3-3)). For a variety of reasons, including military, economic, and technological strength, as well as the scale
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+#### **BOX 3-3**
+
+**Countries of Concern**
+
+**Adapted from _Foreign-Funded Language and Culture Institutes at U.S. Institutions of Higher Education: Practices to Assess and Mitigate Risk_ ([NASEM, 2023c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref506))**
+
+Collaborations with some countries pose greater risks than others, so it is imperative for U.S. host institutions to take the partnering foreign nation into account to fully understand, evaluate, and address the risks associated with entering into or continuing such a partnership. The committee notes that “countries of concern” are fluid and change over time. At publication in August 2024, the Massachusetts Institute of Technology (MIT) subjects engagements with China (including Hong Kong), Russia, and Saudi Arabia to additional faculty and administrative review to assist with identifying and managing risks.[_a_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03ffn4) MIT further delineates government-identified Countries of Concern (at publication in August 2024, these include China, Iran, North Korea, and Russia), sanctioned countries (at publication in August 2024, these include the comprehensively sanctioned countries of Iran, Cuba, Syria, North Korea, and The Crimea, Donetsk People’s Republic and Luhansk People’s Republic regions of Ukraine, and the broadly sanctioned countries of Belarus, Russia, and Venezuela), and countries posing elevated risks for research (at publication in August 2024, these include China [including Hong Kong], Russia, and Saudi Arabia)—all of which present compliance as well as travel safety risks.[_b_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03ffn5)
+
+Similarly, the Texas A&M University System Research Security Office reviews and updates countries of concern quarterly, with the current set of countries of concern consisting of China, Iran, North Korea, and Russia. Texas A&M selected these countries based on information present in U.S. government annual reports to Congress and guidance from federal partners, including the Defense Counterintelligence and Security Agency;[_c_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03ffn6) and because “they have demonstrated organized efforts to illicitly acquire intellectual property from other nations, are involved with industrial and/or cyber espionage, and demonstrate efforts to damage U.S. economic and national security” ([TAMU, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref744)).
+
+Sections 10612 and 10638 of the CHIPS and Science Act of 2022[_d_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03ffn7) state that the People’s Republic of China, the Democratic People’s Republic of Korea, the Russian Federation, and the Islamic Republic of Iran are foreign countries of concern, along with any other
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+country determined to be a country of concern by the Department of State. The RESTRICT Act,[_e_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03ffn8) introduced in the U.S. Senate in March 2023, lists “foreign adversary” nations as the People’s Republic of China, including the Hong Kong Special Administrative Region and the Macao Special Administrative Region; the Republic of Cuba; the Islamic Republic of Iran; the Democratic People’s Republic of Korea; the Russian Federation; and the Bolivarian Republic of Venezuela under the regime of Nicolás Maduro Moros. The committee notes that in addition to these six nations, the state of Florida has designated Syria as a “foreign country of concern.”[_f_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03ffn9)
+
+Finally, the definitions of “malign foreign talent recruitment program” in Section 10638(4) of the CHIPS and Science Act of 2022[_d_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03ffn7) and in the February 2024 Office of Science and Technology Policy memorandum[_g_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03ffn10) state that any program sponsored by “a foreign country of concern or an entity based in a foreign country of concern, whether or not directly sponsored by the foreign country of concern” is considered to be a malign foreign talent recruitment program. The latter definition provides a list of international collaboration activities that are _not_ considered to be a “foreign talent recruitment program,” as long as such activities are not funded, organized, or managed by an academic institution or a foreign talent recruitment program on the lists developed in response to Sections 1286(c)(8) and 1286(c)(9) of the John S. McCain National Defense Authorization Act for Fiscal Year 2019[_h_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03ffn11) ([Prabhakar, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref614)).
+
+__________________
+
+[_a_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03fft4) See the MIT Elevated-risk project review process at [https://globalsupport.mit.edu/planning-agreements/elevated-risk-project-review-process/](https://globalsupport.mit.edu/planning-agreements/elevated-risk-project-review-process/).
+
+[_b_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03fft5) See MIT Countries Presenting Added Risk at [https://research.mit.edu/security-integrity-and-compliance/foreign-engagement/regulations-and-references/countries](https://research.mit.edu/security-integrity-and-compliance/foreign-engagement/regulations-and-references/countries).
+
+[_c_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03fft6) The U.S. Department of State maintains a list of countries of particular concern, special watch list countries, and entities of particular concern. See [https://www.state.gov/countriesof-particular-concern-special-watch-list-countries-entities-of-particular-concern/](https://www.state.gov/countriesof-particular-concern-special-watch-list-countries-entities-of-particular-concern/).
+
+[_d_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03fft7) H.R. 4346 – Supreme Court Security Funding Act of 2022, P.L. 117–167, 117th Congress (August 9, 2022) ([U.S. Congress, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref803)).
+
+[_e_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03fft8) RESTRICT Act, S.686, 118th Cong., 1st sess., Congressional Record 169 (2023).
+
+[_f_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03fft9) See [https://www.usg.edu/news/release/board_of_regents_](https://www.usg.edu/news/release/board_of_regents_).
+
+[_g_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03fft10) See “Guidelines for Federal Research Agencies Regarding Foreign Talent Recruitment Programs” at [https://www.whitehouse.gov/wp-content/uploads/2024/02/OSTP-Foreign-Talent-Recruitment-Program-Guidelines.pdf](https://www.whitehouse.gov/wp-content/uploads/2024/02/OSTP-Foreign-Talent-Recruitment-Program-Guidelines.pdf).
+
+[_h_](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_c03fft11) P.L. 115–232,115th Congress (August 13, 2018).
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+of flows of goods and people, the focus has been almost entirely on China. This report reflects that focus, but the committee does not intend to imply that China is the sole country of concern. Talent programs operated by China, Russia, and Iran are described further in [Chapter 6](https://www.nationalacademies.org/read/27787/chapter/8#139).
+
+### [ECONOMIC IMPACTS OF RESTRICTING FOREIGN TALENT FLOWS](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-11a)
+
+Constricting foreign talent flows to the United States, whether to address risks to national security and competitiveness or for other reasons, does affect the domestic economy at both national and regional levels ([Crane et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref145)). There have been numerous studies on the economic effects of immigration in general and the consensus, reflected in a 2017 National Academies of Sciences, Engineering, and Medicine report, is that immigration has an overall positive effect on long-term U.S. economic growth ([NASEM, 2017c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref493)). At the national level, regarding international students, NAFSA: Association of International Educators has estimated that “international students studying at U.S. colleges and universities contributed $40.1 billion and supported 368,333 jobs to the U.S. economy during the 2022–2023 academic year” ([NAFSA, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref480)). As an example of regional effects, research has shown that in cities where companies experience more H-1B visa denials, jobs for U.S. citizens in computer-related industries decline in the years following ([Peri et al., 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref418)). In addition, college-educated U.S. citizens experience slower wage growth in cities that experience more H-1B visa denials ([Peri et al., 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref418)). Another study from the National Foundation for American Policy (NFAP) found that the presence of H-1B visa holders is “associated with lower unemployment rates and faster earnings growth among college graduates” ([Zavodny, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref880)).
+
+Economic effects will also vary among STEM fields depending on the demand for expertise in different industrial sectors. The NFAP found that “being in a field with more H-1B visa holders makes it more likely that U.S.-born young college graduates work in a job closely related to their college major,” and that in general, “an increase in the share of workers with an H-1B visa within an occupation, on average, reduces the unemployment rate in that occupation” and “leads to faster earnings growth for U.S. workers” ([Zavodny, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref880)). These findings suggest that high-skilled foreign workers complement U.S. workers—that American high-skilled workers and foreign high-skilled workers may possess different skill sets that are more effective when combined. Another
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+NFAP study examined the effect of enrolling more international undergraduates in STEM fields ([Zavodny, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref881)). This study found that every 10 bachelor’s degrees awarded across all STEM fields to international students lead to an additional 15 bachelor’s degrees in STEM majors awarded to U.S. students ([Zavodny, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref881)). The author of this study suggested that “colleges and universities that attract more international students likely are devoting more resources to STEM areas, such as increasing the number of courses and adding fields offered within STEM, hiring more faculty, and providing new lab spaces and buildings. To the extent such changes are occurring, they appear to be attractive to U.S. students as well” ([Zavodny, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref881)).
+
+Research also shows that H-1B restrictions and the inability of companies to hire a sufficient number of high-skilled workers in the United States results in offshoring tech jobs and reducing R&D investment in the United States and leads companies to send more jobs, resources, and innovations outside the United States ([Glennon, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref242)). In other words, making the United States less attractive to foreign workers ultimately reduces the ability of companies in the United States to remain competitive in an increasingly global economy. In fact, a recent survey of more than 500 human resources professionals found that restrictions on H-1B visas and immigration led to jobs, workers, and resources being sent outside the United States, with 86 percent of the companies surveyed hiring employees outside the United States for roles originally intended to be based inside the country because of visa-related uncertainties ([Envoy Global, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref200)).
+
+Restricting foreign high-skilled talent not only affects jobs and research investment in the United States but also hampers U.S. innovation and company growth. One study, for example, found that increases in the number of H-1B admissions led to increased worker productivity[6](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_fn46) and company profits, especially in companies that conduct R&D ([Ashraf and Ray, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref33)). The investigators found that U.S. firms dependent on skilled immigrant workers saw a decline in both patents and citations since 2004 following reductions in the cap for H-1B visas.
+
+___________________
+
+[6](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_ft46)The investigators use research and development expenditures as a proxy for innovation.
+
+**Suggested Citation:** "3 National Security and Defense Implications of Scientific Research and Foreign Talent." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/6 -->
+
+## 官方在线阅读第6章
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [4 Attracting and Retaining Foreign Talent in the United States](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_ch4a)[1](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn47)
+
+Unlike other countries with national government programs to attract and retain foreign talent, as described in [Chapters 5](https://www.nationalacademies.org/read/27787/chapter/7#107) and [6](https://www.nationalacademies.org/read/27787/chapter/8#139), the United States does not have a comparable, coordinated program that exists across the federal government, or an overarching office dedicated to this purpose ([Zwetsloot, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref897)). Rather, the United States attracts international science, technology, engineering, and mathematics (STEM) talent because of its research universities, open research environment, free exchange of ideas, and regional innovation clusters ([Stephan et al., 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref713)).[2](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn48) Attracting and retaining talent is thus highly distributed, but both are affected strongly by programs and policies administered by individual federal agencies and departments. These policies touch a multitude of topics, from research funding, priorities, and restrictions to visas, employment, and immigration. This chapter analyzes historical trends in the attraction and retention of foreign STEM talent in the United States, as well as the current state of play.
+
+Graduate study in STEM fields represents a wide funnel through which many talented individuals come to the United States. The principal funding mechanism for graduate students and postdocs, both foreign
+
+___________________
+
+[1](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft47)This chapter incorporates material from the commissioned paper “International Talent Flows to the United States” by Jeremy Neufeld and Divyansh Kaushik.
+
+[2](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft48)The committee notes that the Hefei Statement on The Ten Characteristics of Contemporary Research Universities, developed in 2013, is a valuable resource that articulates the key characteristics that make research universities effective. See [https://www.aau.edu/sites/default/files/AAU-Files/Scholarship/Hefei_statement.pdf](https://www.aau.edu/sites/default/files/AAU-Files/Scholarship/Hefei_statement.pdf).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+and domestic, is via grants and contracts awarded to their institutions by government agencies, nonprofit foundations, and private corporations. Given this, overall research funding levels directly affect the capacity of universities to recruit talent. Some agencies and programs may restrict participation on projects they fund to U.S. citizens and permanent residents ([Elias et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref196)). Although direct fellowship funding to individuals represents a small fraction of the total funding for students and postdocs in STEM fields, the committee compiled examples of such programs and noted which of these opportunities are open to non-U.S. citizens or permanent residents (see [Appendix E](https://www.nationalacademies.org/read/27787/chapter/16#273)). Other than early-career programs for doctoral degree holders in universities and national laboratories, direct federal funding of noncitizens is generally insignificant. The scale and strength of the U.S. research enterprise writ large is much more important to the attraction and retention of talent than are individual programs aimed at talent recruitment. Maintaining the strength of this enterprise is therefore critical to the United States’ competitiveness in attracting and retaining foreign talent.
+
+### [INTERNATIONAL TALENT IN THE UNITED STATES](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-12a)
+
+#### Why Does Foreign Talent Come to the United States?
+
+Higher education is a major recruitment tool for international talent ([Chen, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref117); [Stephan et al., 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref713)). In 2021, 49 percent of foreign-born college graduates in the United States pointed to educational opportunities as a reason for originally coming here ([NCSES, 2021a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref514)). [Figure 4-1](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-1) highlights how educational opportunities, particularly at the graduate level, have become an increasingly important reason for foreign college graduates to come to the United States ([JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355); [Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595)). Among college graduates who arrived in the United States during the 2010s, 71 percent of doctoral degree holders and 59 percent of master’s degree holders pointed to education as motivation for coming to study in the United States, up from 64 percent of doctoral degree holders and 55 percent of master’s degree holders who arrived in the 1980s. The slow downward trend in bachelor’s degree recipients (i.e., those who come to the United States for undergraduate studies) attracted by educational opportunities may reflect the increasing number and quality of universities around the world, including in China and India ([Belkin and Hua, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref62); [Bothwell, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref75); [Jack, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref346); [Morrison, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref472); [Nuwer, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref572); [Tan, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref28)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 1: Share of foreign-born college graduates citing educational opportunities as reason to come to the United States, by decade of arrival](https://www.nationalacademies.org/read/27787/assets/images/ff4-1.jpg)
+
+**FIGURE 4-1** Share of foreign-born college graduates citing educational opportunities as reason to come to the United States, by decade of arrival.
+
+ SOURCE: National Survey of College Graduates ([NCSES, 2021a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref514)).
+
+In addition to educational opportunities, many foreign-born college graduates cite U.S. scientific and professional infrastructure and job and economic opportunities available in the United States as reasons for originally coming here, as shown in [Figures 4-2](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-2) and [4-3](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-3) ([Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595)). Not only has the U.S. government historically invested in cutting-edge research infrastructure, but the United States is home to a vibrant technology sector. As the _Global Innovation Index 2023: Innovation in the Face of Uncertainty_ confirms, when looking at the intensity of science and technology activity around the world, the United States boasts the most clusters of such activity in the top 25 compared with all other countries ([WIPO, 2023d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref852)). The United States has eight clusters (Silicon Valley, California; Cambridge, Massachusetts; Ann Arbor, Michigan; San Diego, California; Seattle, Washington; Raleigh, North Carolina; Minneapolis, Minnesota; and Pittsburgh, Pennsylvania) in the top 25 in terms of high intensity per capita employment, patenting, and publishing in science and technology. China has one cluster, and no countries other than the United States have more than three clusters. If a STEM professional is considering
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+the likelihood of being able to pursue interesting work in an exciting STEM ecosystem, they have many options across the nation. Not surprisingly, it is those pursuing advanced degrees who are most strongly attracted by the United States’ extensive research and innovation infrastructure ([Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595)).
+
+In contrast, as shown in [Figure 4-3](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-3), both undergraduate and graduate students are attracted in roughly equal proportions by job and economic opportunities[3](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn49) in the United States. However, as shown below, those with advanced degrees are much more likely to remain in the United States after completion of their degrees and any optional training.
+
+#### How Much Foreign Talent Is Coming to Study in the United States and at What Educational Level?
+
+U.S. government data on international talent are difficult to obtain online, dispersed among different data sources, and sometimes incomplete ([Neufeld and Kaushik, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref524)). While existing data are typically not classified, securing public access is often a long and difficult process. For example, the Student and Exchange Visitor Information System (SEVIS) data used for this analysis were received via a Freedom of Information Act (FOIA) request. In another case, a private organization also used a FOIA request to obtain data on approval rates for international student (F-1) visa applications. Ideally, a set of government metrics on international talent could be collected, organized, and made publicly available and easily accessible. The United States lacks sufficiently detailed information to assess its competitiveness relative to other countries, including data on the quality and profiles of the international students entering the country, international student outcomes in the United States, and the educational and career paths of international students after they arrive in the United States ([NASEM, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref488)).[4](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn50)
+
+[Figure 4-4](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-4) shows SEVIS data on the number of new international students enrolling in programs at U.S. universities between FY 2004 and
+
+___________________
+
+[3](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft49)_The Economist_ posits that the quality of job opportunities in a country is the most important pull factor ([_The Economist,_ 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref759)).
+
+[4](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft50)The American Council on Education (ACE) convened experts to “develop a research agenda for tracking the career pathways of international students enrolled in U.S. universities” in November 2020 ([Farnsworth, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref221)). This culminated in the release of a report detailing career pathways for international students ([Esaki-Smith, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref205)). See [https://www.acenet.edu/Documents/Career-Pathways-International-Students.pdf](https://www.acenet.edu/Documents/Career-Pathways-International-Students.pdf).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 2: New enrollment in U.S. programs by F-1 students, by pursued degree, FY 2004 to FY 2020](https://www.nationalacademies.org/read/27787/assets/images/ff4-4.jpg)
+
+**FIGURE 4-4** New enrollment in U.S. programs by F-1 students, by pursued degree, FY 2004 to FY 2020.
+
+ SOURCE: SEVIS data ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)).
+
+FY 2020.[5](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn51) The data show that the number of new international students commencing studies at U.S. colleges and universities doubled between 2004 (142,000 students) and 2019 (287,000 students). While this number declined in 2020 (136,000 students) because of the COVID-19 pandemic, F-1 visa issuances suggest that numbers have since recovered.
+
+SEVIS data also show the changing composition of U.S. international enrollment. International enrollment in master’s programs has grown much faster than international enrollment in bachelor’s or doctoral programs. As a share of total international enrollment, master’s enrollment increased from 40 percent in 2004 to 46 percent in 2019. By contrast, bachelor’s enrollment declined from 43 percent to 41 percent over the same period, and doctoral enrollment fell from 17 percent to 12 percent.
+
+___________________
+
+[5](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft51)The SEVIS data provided for this analysis go through only 2020. The committee recognizes that the data from the year 2020 are likely to have been strongly influenced by the COVID-19 pandemic. Nevertheless, the committee concluded that the analysis of the available dataset was important to better understand longer-term trends in U.S. competitiveness for foreign talent.
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+#### From Where Does Foreign Talent Come to Study in the United States?
+
+International students from around the world are drawn to study in the United States, but about half of new F-1 visa enrollees in any given year come from five locations (see [Figure 4-5](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-5)), which, in 2020, were China, India, South Korea, Saudi Arabia, and Taiwan. Japan used to be in the top five locations but has since declined significantly as a source for international students to the United States. Japanese F-1 visa student enrollments numbered 9,044 in 2004, falling to only 3,442 students in 2019.
+
+China grew from the second-highest origin for new enrollees in 2004, when 13,686 Chinese F-1 visa students enrolled in U.S. programs, to become the clear leader. Surpassing India in 2009, it grew to 98,274 students in 2019, before falling to 35,375 students in 2020 because of the COVID-19 pandemic.
+
+Talent from India makes up a significant fraction of annual student intake in the United States, second only to—and quickly approaching—the number of students coming from China ([IIE, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref333); [Kerr, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref390); [Rim, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref654)).[6](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn52) In fact, between the 2021/2022 and 2022/2023 academic years, the number of students coming from India increased by 35 percent, following a 19 percent increase between the 2020/2021 and 2021/2022 academic years. In comparison, the number of students coming from China fell by 0.2 percent between the 2021/2022 and 2022/2023 academic years, coming after a 9.4 decrease between the 2020/2021 and 2021/2022 academic years.[7](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn53) The increase in the proportion of foreign students enrolled at the graduate level is due to the fact that a large number of Indian students pursue master’s degrees, while Chinese students were relatively more likely to pursue undergraduate studies when Chinese enrollment was at its peak ([Fischer, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref237), [2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref238); [Fischer and Bauman, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref236); [IIE, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref333); [Kelchen and Barrett, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref383)).
+
+India is an attractive partner for the United States, both for its deep and rich pool of English-speaking scientific talent and its democratic governance. The Association of American Universities posits that “the United
+
+___________________
+
+[6](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft52)As of 2024, the numbers of students from China and India enrolled at U.S. institutions of higher education are very close. Different data sources disagree on whether India actually has surpassed China, with Department of Homeland Security (DHS) data ([DHS, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref166), [2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)) supporting this argument and IIE OpenDoors 2023 data ([IIE, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref333)) still showing China with a slight edge.
+
+[7](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft53)The committee notes the likelihood of talent flows and collaborations growing in the coming years between the United States and countries in other regions of the world, including Mexico, Brazil, and the Global South ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20); [Oliss et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref594)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 3: Origin of new U.S. Department of State nonimmigrant (F-1) student visa enrollees, 2004 to 2020](https://www.nationalacademies.org/read/27787/assets/images/ff4-5.jpg)
+
+**FIGURE 4-5** Origin of new U.S. Department of State nonimmigrant (F-1) student visa enrollees, 2004 to 2020.
+
+ SOURCE: SEVIS data ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)).
+
+States and India share an opportunity to strengthen both countries’ economies by enhancing educational attainment and investing more in research and development” ([AAU, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref2)). The relative lack of top, research-oriented academic and other institutions at the scale needed to satisfy demand in the country from students and employers is another reason the United States and other more developed countries are attractive to Indian talent.[8](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn54)
+
+Individuals of Indian ancestry in the United States also contribute disproportionately to the innovation, commercialization, and high-tech industry in the United States. For example, as of 2022, Indian immigrants had founded 66 U.S. start-ups valued at over $1 billion, more than from any
+
+___________________
+
+[8](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft54)With this being said, the committee acknowledges the significant investment in higher education currently being made by the Central Government and State governments in India. This includes the establishment of six new Indian Institutes of Technology (IITs) in 2016, followed by an additional three new IITs in 2024 ([_Firstpost,_ 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref235); [Hazra, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref308); [Karunakaran, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref381)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+other country ([Anderson, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref25)). In comparison, Chinese immigrants had founded 21 companies valued at more than $1 billion ([Anderson, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref25)).
+
+After China (289,526 students, or 27.4 percent of all international students, studying in the United States in 2022/2023) and India (268,923 students, or 25.4 percent of all international students studying in the United States in 2022/2023), subsequent source countries are much smaller contributors ([IIE, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref332)). South Korea (43,847 students, or 4.1 percent of all international students studying in the United States in 2022/2023), Canada (27,876 students, or 2.6 percent of all international students studying in the United States in 2022/2023), and Vietnam (21,900 students, or 2.1 percent of all international students studying in the United States in 2022/2023) round out the top five nations from which international talent come to study in the United States ([IIE, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref332)).[9](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn55)
+
+#### What Are International Students Studying in the United States?
+
+STEM education is increasingly important for foreign students studying in the United States. In 2004, only 36 percent of F-1 students enrolling in new programs were pursuing degrees in STEM fields. By 2020, that share had risen to 50 percent. As shown in [Figure 4-6](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-6), interest in pursuing STEM degrees in the United States is strongest among those pursuing doctoral degrees, where over 60 percent of F-1 enrollments are in STEM programs. This share has remained fairly consistent from 2004 to 2020. The interest of master’s degree students in STEM has risen from 37 percent in 2004 to 56 percent by 2020, converging toward the STEM share in doctoral programs. The share of international students studying STEM also has increased in bachelor’s programs, rising from 25 percent to 37 percent.
+
+Looking only at STEM fields reveals broadly similar patterns to those encountered overall (see [Figure 4-7](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-7)). China surpassed India in 2010 and declined from a peak in 2015 at 57,594 new enrollments in STEM fields. South Korea has grown slowly over this period, from 3,526 students studying STEM in 2004 to 5,405 students studying STEM in 2019. Regarding specific areas of study, over half the doctoral students studying engineering were non-U.S. citizens with temporary visas, and approximately half of those studying computer and mathematical sciences were non-U.S. citizens
+
+___________________
+
+[9](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft55)Taiwan is a very close sixth, with 21,834 students, or 2.1 percent of all international students studying in the United States in 2022/2023 ([IIE, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref333)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 4: Field of employment for U.S. doctoral recipients by citizenship and immigration status at time of degree completion](https://www.nationalacademies.org/read/27787/assets/images/ff4-8.jpg)
+
+**FIGURE 4-8** Field of employment for U.S. doctoral recipients by citizenship and immigration status at time of degree completion.
+
+ SOURCE: Survey of Doctorate Recipients ([NCSES, 2021b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref515)).
+
+on temporary visas. U.S. citizens, either native or naturalized, accounted for the majority of students pursuing Ph.D.s in other STEM fields.
+
+[Figure 4-8](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-8) presents fields of employment for U.S. doctoral recipients by citizenship and immigration status at time of degree completion.
+
+### [IMMIGRATION AND VISA-RELATED PROVISIONS FOR RETAINING TALENT](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-13a)
+
+International graduates of U.S. colleges and universities have grown less likely to stay in the United States as naturalized citizens or permanent residents. This is the result of a combination of factors, including the strict numerical limitations on employment-based Green Cards and the increasing foreign-born share of college graduates, given that much of the growth in
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+doctoral degrees in the United States since 1980 has been driven by international students, as shown in [Figures 4-9](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-9) and [4-10](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-10). This trend is likely to continue for the foreseeable future, since the number of international science and engineering graduate students jumped from a pandemic-influenced low of around 200,000 in 2020 to more than 300,000 in 2022 ([NSB, 2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref563)). This enrollment increase will result in a corresponding increase in advanced degrees awarded to international students in the second half of this decade.
+
+The growth of international doctoral degree recipients is not uniform across fields of study. Disciplines such as mathematics and computer science, essential to advances in critical and emerging technologies such as artificial intelligence (AI), have shown much sharper growth in the number of doctoral degrees earned by international students. As illustrated in [Figure 4-10](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-10), the number of foreign recipients of doctoral degrees in math and computer science from U.S. universities now exceeds the corresponding number of U.S. citizens and permanent residents.
+
+#### How Does Foreign Talent in STEM Stay in the United States?
+
+Universities offer significant funding to international students, especially doctoral students, to attract them to their institutions (see
+
+![Image 5: U.S. doctoral recipients by citizenship and immigration status, 1980 to 2022](https://www.nationalacademies.org/read/27787/assets/images/ff4-9.jpg)
+
+**FIGURE 4-9** U.S. doctoral recipients by citizenship and immigration status, 1980 to 2022.
+
+ SOURCE: Survey of Earned Doctorates ([NCSES, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref516)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 6: U.S. doctoral recipients in math and computer science by citizenship and immigration status, 1980 to 2022](https://www.nationalacademies.org/read/27787/assets/images/ff4-10.jpg)
+
+**FIGURE 4-10** U.S. doctoral recipients in math and computer science by citizenship and immigration status, 1980 to 2022.
+
+ SOURCE: Survey of Earned Doctorates ([NCSES, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref516)).
+
+[Figure 4-11](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-11)). Federal research grants, funded by U.S. taxpayer dollars, support many of these students ([Hoff and Kessler, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref315); [NSB, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref561)). In 2021, the U.S. government provided support to 15 percent of full-time science and engineering graduate students, down from a high of 21 percent in 2004 ([NSB, 2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref563)). A much larger share of doctoral students (26 percent) than master’s students (5 percent) are supported by federal funds ([National Science Board, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref561)). These numbers reflect the focus of federal investment in research and research-based degrees. However, the overall investment in international students by U.S. universities is much broader. For example, the initial funding offered by universities to international students in the United States in 2018 amounted to $2.7 billion according to SEVIS data (see [Figure 4-12](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-12)), which includes funding for only that year and does not include the entire funding offered over the course of students’ degree programs. Of that $2.7 billion, $1.2 billion was for doctoral students, $700 million was for master’s students, and $900 million was for bachelor’s students. These numbers include all fields and the support of students via scholarships, non-research assistantships (e.g., teaching assistantships), and other mechanisms. Nevertheless, they are indicative of the substantial investment by domestic sources beyond the
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 7: Initial funding offered to international students by universities, 2004 to 2020](https://www.nationalacademies.org/read/27787/assets/images/ff4-11.jpg)
+
+**FIGURE 4-11** Initial funding offered to international students by universities, 2004 to 2020.
+
+ SOURCE: SEVIS data ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)).
+
+federal government in international students. On the other hand, the more than one million international students studying at U.S. institutions of higher education during the 2022–2023 academic year contributed more than $40 billion to the U.S. economy and supported more than 368,000 jobs ([NAFSA, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref479)).[10](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn56)
+
+Since the 1950s, international students can receive work authorization on their student visas during or after their courses of study, as part of their educational experience. This authorization is known as “practical training” for F-1 students and “academic training” (AT) for J-1 students. Curricular practical training (CPT) is part of the curriculum, necessary for one’s major, and must be conducted during the program. Optional practical training (OPT) must be related to the course of study but is not necessarily tied to the curriculum ([Wilson, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref847)). Both OPT and AT permit participants to work either while they complete their course of study or after graduation. CPT, OPT, and AT all are strictly limited in duration. CPT cannot extend past a program’s end date, AT is capped at 18 months, and OPT is capped
+
+___________________
+
+[10](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft56)This makes higher education the United States’ sixth largest service export per 2020 data ([DOS and ED, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref181); [Raimondo, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref634)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+at 12 months, with a 24-month extension afforded to individuals with STEM degrees ([U.S. ICE, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref812)). Practical training is most common among master’s degree students, then bachelor’s, followed by doctoral students as highlighted by [Figure 4-12](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-12).
+
+CPT, OPT, and AT allow students an opportunity to get valuable work experience and further develop the skills they learned in school. Furthermore, practical training acts as a critical bridge between student and work visas. These programs afford international students the opportunity to contribute to U.S.-based enterprises while they attempt to secure another visa to remain in country. With increasing numbers of master’s-level graduates from India and other countries, who are more likely to fund their degree programs through loans, OPT programs may become more important to attracting and retaining these students ([Swaminathan, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref727)). As explained by the Department of Homeland Security (DHS), “Many employers who hire F-1 students under the OPT program eventually file a petition on the students’ behalf” ([DHS, 2008](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref163); [Neufeld, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref521)). The share of OPT participants requesting status rose from 31 percent in 2004 to 39 percent in 2019. The share requesting status among practical training participants in STEM fields is even higher, at 45 percent in 2019.
+
+As shown in [Figure 4-13](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-13), OPT and CPT have grown significantly in the last 20 years. In 2004, 149,824 foreign-born F-1 visa students were
+
+![Image 8: Practical training participants by degree level, 2004 to 2020](https://www.nationalacademies.org/read/27787/assets/images/ff4-12.jpg)
+
+**FIGURE 4-12** Practical training participants by degree level, 2004 to 2020.
+
+ SOURCE: SEVIS data ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 9: F-1 Students participating in practical training programs, 2004 to 2020](https://www.nationalacademies.org/read/27787/assets/images/ff4-13.jpg)
+
+**FIGURE 4-13** F-1 Students participating in practical training programs, 2004 to 2020.
+
+ SOURCE: SEVIS data ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)).
+
+working in the United States via OPT and CPT, of which 77 percent were on OPT. By 2019, 620,555 F-1 visa students were participating in practical training programs, although the share on OPT fell to 64 percent. This number declined during the COVID-19 pandemic to 571,409 F-1 visa students in 2020.
+
+In 2008, the Bush administration established the STEM OPT extension, allowing F-1 graduates in STEM fields a longer period of work authorization—up to 29 months—on OPT. In 2015, the Obama administration increased the STEM OPT extension to 36 months. The effect has been both to increase the total number of foreign-born graduates working in the United States on OPT and to increase the STEM share of OPT participants ([Demirci, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref156)). The STEM share of OPT participants increased from 42 percent in 2004 to 70 percent in 2020 (see [Figure 4-14](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-14)).
+
+Although practical training programs play an important role in permitting foreign recipients of STEM degrees to remain in the United States and to potentially seek visa status that would permit them to remain after their practical training, they are not without critics. Concerns expressed include the fact that employers do not pay payroll taxes on OPT workers, potentially creating an incentive for hiring such individuals over U.S. citizens,
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 10: STEM share of OPT participants, 2004 to 2020](https://www.nationalacademies.org/read/27787/assets/images/ff4-14.jpg)
+
+**FIGURE 4-14** STEM share of OPT participants, 2004 to 2020.
+
+ SOURCE: SEVIS data ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)).
+
+permanent residents, and those holding work visas ([North, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref552)). Some firms employing OPT workers have violated federal labor laws by withholding wages and utilizing restrictive employment contracts ([Smith et al., 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref705); [Swaminathan, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref727)). Other reports have suggested that the definition of STEM degrees is overly broad, and that the enlargement of the pool of OPT recipients who can subsequently apply for H-1B visas decreases the probability that those in critical and emerging technology fields will obtain work visas under the current lottery-based system, even with its carve-out for advanced degree holders ([Rosenthal, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref658)). Regardless of these issues, it is clear that these programs have become a significant option for international students wishing to remain in the United States after graduation, whether they ultimately seek a different visa status or not.
+
+### [CHALLENGES IN RETAINING INTERNATIONAL STUDENTS](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-14a)
+
+As shown earlier in this chapter, the motivating factors for international students to study in the United States vary with the level and field of the degree being pursued. It is not surprising, therefore, that the desire of international students to remain in the United States after graduation also varies significantly by degree level and field. Doctoral graduates are more likely to be in STEM fields (see [Figure 4-6](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-6)) and are more likely to remain
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+in the United States than international graduates at other levels of education. [Figure 4-15](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-15) highlights that the share of foreign-born Ph.D. recipients intending to stay in the United States has increased over time to more than 70 percent. These intentions closely track with the reality of how many doctoral recipients actually remain in the United States. Of approximately 500,000 doctoral graduates from U.S. institutions in science, engineering, and health fields who were under the age of 76 in 2021, about 359,000 were still living in the United States in 2021, implying a long-term stay rate of about 72 percent. The “true” long-term stay rate may be slightly lower given that more recent graduating cohorts have had less time to depart the United States for other destinations.
+
+One study using National Science Foundation (NSF) Survey of Doctorate Recipients (SDR) data found stay rates to be much higher for those receiving a STEM Ph.D. from a U.S. university between 2000 and 2015, with 77 percent of the 178,000 individuals in this category still in the country as of February 2017 ([Corrigan et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref138); [NCSES, 2021b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref515)). The higher stay rate for STEM Ph.D.s also holds for the 2021 NSF SDR data. Furthermore, the Institute for Defense Analyses’ Science and Technology Policy Institute found that of the 104,000 international STEM students (comprising 30,000 bachelor’s degrees, 60,000 master’s degrees, and 14,000 doctoral degrees) who graduated from U.S. colleges and universities in
+
+![Image 11: Intent-to-stay rates among doctoral graduates](https://www.nationalacademies.org/read/27787/assets/images/ff4-15.jpg)
+
+**FIGURE 4-15** Intent-to-stay rates among doctoral graduates.
+
+ SOURCE: Survey of Earned Doctorates ([NCSES, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref516)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+2021, approximately 75,000 to 76,000 chose to stay in the United States immediately following degree completion via the OPT program ([Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595)). This yields an initial stay rate of 72 to 73 percent, with long-term stay rates for international STEM doctoral recipients known to be around 75 percent ([Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595)).
+
+Stay rates are higher in STEM fields (minus health) than other fields. In the social sciences, psychology, and health fields, 61 percent of the approximately 102,000 graduates remain in the United States as of 2021. A breakdown by graduating cohorts is displayed in [Figure 4-16](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-16) and shows a slight uptick in the stay rate of those receiving STEM degrees over time.
+
+The data presented above demonstrate the level of success that the United States has historically enjoyed with foreign recipients of advanced degrees in STEM fields. However, because of the current lottery-based system for H-1B visas, it is important to consider the broader pool of potential H-1B applicants. Most international students do not stay in the United States following graduation, with family, personal, and cultural factors cited as the primary reasons for leaving ([Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595)). The difficulty of and duration associated with obtaining a temporary work visa or permanent residency can also be a factor, especially for those from China and India ([Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595)). According to SEVIS data, the share of F-1
+
+![Image 12: Share of foreign-born doctoral graduates living in the United States in 2021, by graduation year](https://www.nationalacademies.org/read/27787/assets/images/ff4-16.jpg)
+
+**FIGURE 4-16** Share of foreign-born doctoral graduates living in the United States in 2021, by graduation year.
+
+ SOURCE: Survey of Doctorate Recipients ([NCSES, 2021b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref515)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+students requesting another status (e.g., H-1B, OPT/STEM OPT, O-1, or J-1) peaked in 2007 at 22 percent and has since fallen to 14 percent in 2020. Because students are most likely to request changes in status toward the end of their program of study, shares in recent years would be expected to be held down by students who are still pursuing their courses of study. Nevertheless, negative trends, especially for China, are still evident after taking this into account. While F-1 students may stay in the United States without requesting a change of status (e.g., after temporarily returning home), this is suggestive evidence of low stay rates. This finding is in line with existing indirect estimates of stay rates of foreign graduates in the United States, with one group of economists concluding that “only 10 to 20 percent of foreign graduates work in the United States even in the short run, likely the result of visa and policy restrictions” ([Beine et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref59)). Around 11 percent of international students receiving bachelor’s degrees and 23 percent of international students obtaining master’s degrees stay in the United States after completing their studies, in contrast to the stay rates of STEM Ph.D.s that exceed 70 percent ([Beine et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref59); [Marcus, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref442); [O’Brien, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref573); [Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595); [Sutherland and Chakrabarti, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref724); [Zwetsloot, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref897)).
+
+There is significant variation by country of origin in requests for changing visa status. Indian students are more likely than others to request a change in status, but less than 50 percent of F-1 students from India ever do so. Among Chinese students, the number was comparable to Indian students in 2004, when 36 percent of new Chinese F-1 enrollees went on to request another status. However, that number has declined sharply to about 10 percent.[11](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn57) Only 5 to 10 percent of F-1 students from the rest of the world request a change in status, a rate which has even slightly declined. [Figure 4-17](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-17) tracks the rate of students from China, India, and the rest of the world requesting another visa status from 2004 to 2010.
+
+The declining interest of Chinese students in staying abroad is also evident in statistics from the National Bureau of Statistics of China, which reports figures both on the total number of students studying abroad each year as well as on the number of returning students. As shown in
+
+___________________
+
+[11](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft57)Reasons for the decline in the number of Chinese students requesting a change in visa status (e.g., going from a F-1 visa to an H-1B visa) include but are not limited to COVID-19 pandemic-related visa delays, other attractive educational and employment destinations such as those described in [Chapter 5](https://www.nationalacademies.org/read/27787/chapter/7#107), and the changing geopolitical environment and perception of the United States ([Boundless, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref76); [Groenewegen-Lau and Hmaidi, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref291); [Hua et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref62); [Liu, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref421); [Rim, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref654)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 13: F-1 students requesting another status, 2004 to 2020](https://www.nationalacademies.org/read/27787/assets/images/ff4-17.jpg)
+
+**FIGURE 4-17** F-1 students requesting another status, 2004 to 2020.
+
+ SOURCE: SEVIS data ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)).
+
+[Figure 4-18](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-18), the ratio of returning students to students studying abroad has significantly increased since the early 2000s.
+
+While international education is the United States’ largest recruitment program for high-skilled talent, and OPT and CPT offer some opportunities for work authorization, their limited duration and connection to programs of study make them inadequate for recruitment of talent long-term. Temporary visa programs are the critical on-ramp for international talent.
+
+The H-1B visa for specialty occupations is the largest of these programs for high-skilled talent. For most employers, H-1Bs are capped at 85,000 new visas per year (20,000 of which are reserved for advanced degree holders), but universities and related nonprofit entities, nonprofit research
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 14: Ratio of Chinese students returning to China to Chinese students studying abroad](https://www.nationalacademies.org/read/27787/assets/images/ff4-18.jpg)
+
+**FIGURE 4-18** Ratio of Chinese students returning to China to Chinese students studying abroad.
+
+ SOURCE: [National Bureau of Statistics of China, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20)
+
+organizations, and government research organizations are exempt from this cap. Data on initial H-1B petitions filed reveals fluctuations in the demand for this visa category. Between FY 2011 and FY 2020, initial H-1B petitions hovered around 100,000–150,000 per year (see [Figure 4-19](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-19)).
+
+While F-1 student visas are mostly awarded to individuals outside the United States, the majority of H-1B visas go to individuals already within the United States with a prior visa status, including students. Said differently, the H-1B visa is a retention visa as much as a recruitment visa. Consular processing accounted for 51,329 visa approvals in FY 2022, a significant increase from 42,729 approvals in FY 2021. This indicates a recovery in international mobility following disruptions related to the COVID-19 pandemic. Conversely, approvals for change of status within the United States saw a slight decrease from 80,685 in 2021 to 78,340 in 2022. Nevertheless, 59 percent of H-1Bs were still going to individuals adjusting status (see [Figure 4-20](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-20)).
+
+DHS data also show the distribution of H-1Bs across education levels. As shown in [Figure 4-21](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-21), most H-1Bs go to advanced degree holders. This is largely explained by the 20,000 visas set aside for advanced degree holders, along with cap-exempt employers such as universities being much more likely to hire individuals with advanced degrees than cap-subject
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 15: Education level of H-1B petitioners filing initial petitions](https://www.nationalacademies.org/read/27787/assets/images/ff4-21.jpg)
+
+**FIGURE 4-21** Education level of H-1B petitioners filing initial petitions.
+
+ SOURCE: Department of Homeland Security ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)).
+
+employers. In FY 2022, individuals with a bachelor’s degree accounted for 41,597 approvals, master’s degree holders were the beneficiaries of 34,476, and doctorate holders increased with 16,569 approvals.
+
+The O-1A visa for individuals of extraordinary ability in the sciences, education, business, or athletics is much smaller in scope than the H-1B. However, the O-1A visa is an important pathway for top-tier talent, as an uncapped program for people at the cutting edge of their field. The data on O-1A visa issuance from FY 2019 to FY 2023 reveals an increasing trend in both STEM and non-STEM fields (see [Figure 4-22](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-22)), with STEM seeing a notable rise from 3,270 in 2019 to 4,560 in 2023, and non-STEM increasing from 3,290 to 4,380 during the same period. This upward trend suggests the O-1A visa is becoming an increasingly viable pathway for individuals of extraordinary ability in their respective fields to work in the United States, reflecting growing certainty and predictability after new guidance was issued about the visa in 2022 ([USCIS, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref793)). However, despite modest gains compared to its potential, its use remains low. While the O-1A visa could be better promoted to universities and businesses as an option to retain international talent, it presents known issues that could
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 16: Approvals of O-1A petitions by fiscal year and type of employment sought](https://www.nationalacademies.org/read/27787/assets/images/ff4-22.jpg)
+
+**FIGURE 4-22** Approvals of O-1A petitions by fiscal year and type of employment sought.
+
+ SOURCE: Department of Homeland Security ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)).
+
+make this visa a less attractive option. These include short renewal periods and a lack of employment authorization afforded to spouses and children, unlike with H-1Bs.
+
+For most international talent, staying in the United States long-term requires applying for permanent residency. For example, H-1B holders cannot renew their visas beyond 6 years without first applying for permanent residency. In addition to aiding in the retention of high-skilled immigrants, obtaining permanent residency affords those immigrants more opportunities to contribute to U.S. science and innovation, making it easier to take their talents where they can do the most or even launch ventures of their own.
+
+Employment-based Green Cards are capped at 140,000 per year, with occasional rollovers from other categories (Kahn and MacGarvie, 2018). There are also per-country caps that restrict any one country from contributing more than 7 percent of the total number of Green Cards issued annually, leading to a backlog of 1,058,169 petitioners waiting for an employment-based Green Card to be issued to them ([USCIS, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref794)). The number of unique petitions does not account for spouses and children who would accompany a petitioner and that also count toward the employment-based Green Card cap once a Green Card is issued to a petitioner.
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+The current situation is so dire that if a Nobel Prize–winning chemist or a Turing Award–winning AI scientist born in India were to seek a Green Card today, applying in Employment-Based First Preference Category (EB-1), one would not be available to them despite their exceptional ability and qualifications ([DOS, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref184)). The Congressional Research Service estimates that the wait time for Employment-Based Second Preference Category (EB-2) Green Cards for professionals with advanced degrees or individuals of exceptional ability was 195 years for immigrants from India if they applied in 2020 and is expected to grow to 436 years by 2030 ([Kandel, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref376)). [Figure 4-23](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-23) presents the distribution of employment-based Green Cards across the five priority preference categories.
+
+The number of employment-based Green Cards issued saw an almost 100 percent increase in FY 2022 over the allocated cap of 140,000. This can be attributed to consulate closures in FY 2021 as a result of the COVID-19 pandemic, which led family-based Green Cards to go unused and subsequently resulted in a rollover to the employment-based category in FY 2022. This will return to historical levels in upcoming years. This consensus study report asserts that employment-based Green Cards are mostly about retention rather than recruitment, with most slots going to individuals already in the United States (see [Figure 4-24](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fig4-24)).
+
+![Image 17: Employment-based green cards issued from FY 2011 to FY 2022](https://www.nationalacademies.org/read/27787/assets/images/ff4-23.jpg)
+
+**FIGURE 4-23** Employment-based green cards issued from FY 2011 to FY 2022.
+
+ SOURCE: Department of Homeland Security ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 18: Employment-based Green Card issuance by new arrivals versus those adjusting status (already in the United States), FY 2011 to FY 2022](https://www.nationalacademies.org/read/27787/assets/images/ff4-24.jpg)
+
+**FIGURE 4-24** Employment-based Green Card issuance by new arrivals versus those adjusting status (already in the United States), FY 2011 to FY 2022.
+
+ SOURCE: Department of Homeland Security ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)).
+
+### [PERCEPTIONS ARE CHANGING, AND NOT FOR THE BETTER](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-15a)
+
+While the United States remains a major destination for international talent, to its great benefit, immigration issues and global competition are acting as a drag on recruitment and retention ([Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595)).[12](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn58) This limits the promise that international scientists, engineers, technologists, and others offer the U.S. economy and U.S. scientific enterprise. However, there are policy-based opportunities to bolster its competitive edge in attracting and retaining international talent.
+
+Highly qualified researchers have a choice of where to build their careers, and their decisions rest heavily on considerations related directly to the research environment: the likelihood of robust external funding
+
+___________________
+
+[12](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft58)Lumina Foundation President and CEO Jamie Merisotis writes that “while Washington bickers and fiddles, our global competitors, like sharp human resource managers, are luring away talented men and women who might otherwise arrive on our shores, using smarter and simpler laws” ([Merisotis, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref451)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+support,[13](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn59) salary levels, team quality, and the likelihood of continued professional advancement. They also rest on broader considerations related to quality of life. In all of these respects, the United States has long been perceived as one of the most desirable locations for researchers. The nation’s commitment to open collaboration in basic research is highly attractive to researchers around the world, along with the nation’s commitment to “accountability, objectivity, fairness, and integrity” as key values underpinning the scientific enterprise ([Colglazier, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref131)). The United States is perceived as a country that prizes innovation and entrepreneurship, and it enjoys a long history and tradition of being an immigrant-friendly culture, fostering commitment to the principle of economic opportunity for all ([Allison and Schmidt, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref18)).
+
+Indeed, some of the nation’s most important advantages in attracting and retaining talent are the intangibles: values, freedom, and opportunity. This makes these advantages particularly vulnerable to changes in perception of the United States as an open and welcoming environment for foreign researchers. Unfortunately, developments in recent years have created negative perceptions of the United States as a destination of choice for pursuing a scientific research career and building a personal life and family.[14](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn60)
+
+The overall debate surrounding immigration has created a perception that the United States is increasingly hostile to foreigners ([Ma, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref10); [Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595)). This view is supported by recent changes in (and stress on) the immigration system that have led to long delays in visa processing and in certain areas to a restriction on the availability of Green Cards ([Knox, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref393); [Mitchell, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref471)). To this end, the United States’ talent attractiveness score, as calculated by the Organisation for Economic Co-operation and Development is dragged down by a complex, restrictive, and inefficient immigration system (OECD, 2023e). Between 2019 and 2023, the U.S. attractiveness score decreased from 0.65 to 0.58, dropping the United States from being ranked first to eighth worldwide ([OECD,](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref580)
+
+___________________
+
+[13](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft59)The committee notes the current state of research funding in the United States— namely that “decreased discretionary funding at the federal and state level is creating a hyper-competitive environment between government agencies (e.g., EPA, NIH, CDC), for scientists in these agencies, and for academics seeking funding from all sources” ([Edwards and Roy, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref194)). This is particularly pervasive in the life sciences and biomedical research ([Alberts et al., 2014](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref15); [DORA, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref180); [Fochler et al., 2016](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref243)). Some have argued for the adoption of alternate approaches to allocate research funding, such as lotteries ([_Nature,_ 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref146); [Schaubroeck, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref671)).
+
+[14](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft60)The JASON independent science advisory group states that “[f]or its own sake, the United States should avoid the risk of creating an impression that it is not a welcoming place for foreign students” ([JASON, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref356)).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+[2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref580), 2023e). Furthermore, certain forms of legislation at the state level, such as Florida denying property ownership to Chinese nationals and blocking Chinese students from academic laboratories, have likewise affected perceptions of the welcoming climate, both in general and in connection with research engagement in particular ([Burton and Richardson, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref92); [Hatzipanagos, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref304); [Heidt, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref309); [Li, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref2); [Matat, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref443); [Mervis, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref457); [Ngai, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref545); [Qin, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref628); [Qin and Mazzei, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref629); [Wu, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref188)). Incidents on college campuses and in their surrounding communities, including violence toward foreign students, are affecting the perception of U.S. universities as well.
+
+Finally, Presidential Proclamation 10043[15](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_fn61) and the China Initiative created a climate of fear and uncertainty not only for researchers from China but also for the entire Asian American scientific community ([American Physical Society, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref21); [Anderson, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref25), [2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref30); [Ma, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref10); [Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595); [Xie et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref867)). Evidence suggests that the China Initiative in particular has discouraged talent flow and also contributed to the withdrawal from scientific engagement of current researchers whose contributions the United States can ill afford to lose ([Ma, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref2); [Xie et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref867)).
+
+Perceptions are important at all points of the talent funnel. The United States seeks to attract students, particularly at the graduate student level; recruit highly qualified researchers; and retain talent already contributing at universities and in industry. It will therefore be of critical importance that the nation addresses certain shifts in perception that threaten to diminish our long-standing advantages in international talent development.
+
+___________________
+
+[15](https://www.nationalacademies.org/read/27787/chapter/6#chapter04_ft61)Executive Office of the President. May 29, 2020, Proclamation 10043: Suspension of Entry as Nonimmigrants of Certain Students and Researchers From the People’s Republic of China. Available at [https://www.federalregister.gov/documents/2020/06/04/2020-12217/suspension-of-entry-asnonimmigrants-of-certain-students-and-researchers-from-the-peoples-republic](https://www.federalregister.gov/documents/2020/06/04/2020-12217/suspension-of-entry-asnonimmigrants-of-certain-students-and-researchers-from-the-peoples-republic).
+
+**Suggested Citation:** "4 Attracting and Retaining Foreign Talent in the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/7 -->
+
+## 官方在线阅读第7章
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [5 How Do Other Countries Attract and Retain Talent?](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_ch5a)[1](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn62)
+
+Every nation would like to attract the best and brightest from around the world and to retain its domestic talent, particularly those who have benefited from investment through its educational system. Individual strategies vary with perceptions of need and opportunity, and policy specifics may reflect both long-term strategies and economic and political considerations of the day. They may also align with other national policies on industrial development and education, to the extent that these are emphasized. Because circumstances differ from country to country, there is no one model or set of effective practices that can be prescribed. However, there is a rich variety of approaches to talent attraction and retention around the world, some of which may provide useful lessons for the United States on how it might improve its own talent attractiveness and recruitment.
+
+### [REVIEW OF TALENT ATTRACTIVENESS](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-16a)
+
+The conditions under which students and professionals seek opportunities within their own countries and abroad have become increasingly competitive. Maintaining a competitive edge in innovation and economic growth, both critical elements of national security, has created a greater
+
+___________________
+
+[1](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft62)This chapter incorporates material from the commissioned paper “Survey of United States Allies’ Talent Programs” by Taylor A. Grove.
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+emphasis on attracting and retaining talent from both new and old epicenters of population growth and thought leadership. South Asia (including India and Pakistan), Sub-Saharan Africa (including Nigeria, the Democratic Republic of the Congo, Tanzania, Uganda, and Ethiopia), Indonesia, and the United States will represent 50 percent of the global population by 2050 ([UNDESA, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref784)). The World Intellectual Property Organization Global Innovation Index, most recently updated in 2023, noted that Vietnam, Morocco, Moldova, Senegal, Indonesia, and Pakistan had innovation outputs that overperformed their level of development ([Dutta et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref188)). Future U.S. policies will need to reflect and leverage these population and innovation trends.
+
+[Chapter 4](https://www.nationalacademies.org/read/27787/chapter/6#77) of this report introduced the Organisation for Economic Co-operation and Development (OECD) talent attractiveness score. The OECD developed the Indicators of Talent Attractiveness (ITA) tool to benchmark the capacity of a country to attract and retain talented migrants. The ITA framework focuses on three categories of talented migrants— highly qualified workers (i.e., advanced degree holders), international entrepreneurs, and university students ([OECD, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref580), 2023e). The different emphases that countries place on attracting and retaining these three populations provide important insights into their policy strategies. For example, as discussed in [Chapter 4](https://www.nationalacademies.org/read/27787/chapter/6#77), the United States has historically relied on the strength of its universities to attract international students; on its science and technology infrastructure across industry, academic, and government sectors to attract and retain highly qualified workers; and on its business climate and access to capital to attract entrepreneurs. Since talent flows have typically been into the United States, relatively little effort has been devoted to attracting individuals who have left the country for study or careers elsewhere in the world. In contrast, a major focus of Chinese talent programs has been on attracting students and professionals from the Chinese diaspora to return to China. This includes ethnic Chinese who may not hail from the People’s Republic of China originally. Other countries that send large numbers of students abroad, especially for advanced degrees, also have an interest in returning talents, although the investments to date by countries like India are at a smaller scale than the Chinese example. The European Union and the Five Eyes countries[2](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn63) more closely resemble the United States
+
+___________________
+
+[2](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft63)The Five Eyes countries—the United States, the United Kingdom, Canada, Australia, and New Zealand—have a long-standing intelligence alliance. See [https://www.intelligence.gov/mission/our-values/344-collaboration](https://www.intelligence.gov/mission/our-values/344-collaboration).
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+with respect to their strategies for attracting and retaining talent, although there is a rich variety of policy instruments and programs among individual member states. One thing that differentiates the United States from these allies is that, in the United States, health insurance is generally tied to employment. Health care concerns may play a role in a variety of decisions, including whether to come to the United States and whether to pursue changes of employment when on a nonimmigrant visa, especially if the decision involves health care for accompanying immediate family members.
+
+The OECD’s ITA framework comprises seven dimensions that address economic factors, social integration, and migration policies, each with specific variables tailored to the migrant category. With the two most recent OECD reports straddling the COVID-19 pandemic (2019 and 2023e), the 2023 publication noted the pandemic affected talent mobility and highlighted the reliance on migrant workers for essential services. Migration policy reforms varied globally since the conclusion of the public health emergency, with some countries opening up and others imposing more stringent policies. Policy changes that reduced barriers to entry and offered greater support to target audiences, especially related to postgraduation opportunities, enhanced a country’s attractiveness.
+
+The OECD’s ITA metric named New Zealand, Sweden, Switzerland, Australia, and Norway as the countries with the top five most attractive programs for highly skilled migrants (OECD, 2023e). The United States, while benefiting substantially from foreign workers in the form of increased labor market efficiency and economic growth, was rated less favorably because of restrictive visa policies ([Sherman et al., 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref683)). The five countries with the most attractive programs and environment for international entrepreneurs were Sweden, Switzerland, Canada, Norway, and New Zealand. U.S. visa policies were again the root of its comparatively less attractive programs for entrepreneurs. For international students, however, the United States, Germany, the United Kingdom, Norway, and Australia were the countries with the most attractive programs and policies. Smaller countries such as Norway have become attractive since the 2019 report by instituting lower tuition fees and offering applicants support resources.
+
+Policies aimed at attracting global talent are not always easily comparable, as their target audiences, duration, and level of applicant support vary. However, some key considerations include the specific sector and specializations a policy targets; how the policy approaches diversity and integration, particularly in catering toward developing or developed
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+state audiences; and the degree to which a policy or national strategy is informed or affected by geopolitical competition. The profiles in this chapter also note if a policy is supply-led, in which application pools are broad and often points-based (see [Box 5-1](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_box5-1)), or demand driven, which are more selective in their audience and aim to fill a specific gap within a national economy.
+
+#### **BOX 5-1**
+
+**Points-Based Immigration Systems**
+
+A points-based immigration system is one way to determine eligibility for skills-based immigration. In such a system, a government devises a set of attributes or characteristics that it deems “important for prospective foreign workers … to possess to receive a temporary, provisional, or permanent visa” ([Sumption, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref722)). Different qualifications—including but not limited to education level, employment experience, specialized skills, language proficiency, and age—are assigned a specific point value, and applicants who amass a sufficient number of points are eligible to apply for a visa independent of employment or an employer-sponsored visa ([Holtz-Eakin and Varas, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref317); [Zamora and Mason, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref879)). A points-based immigration system was first used by Canada in the late 1960s and has since been implemented and adapted by additional countries, including Australia, Austria, Denmark, Hong Kong, New Zealand, Singapore, and the United Kingdom ([American Immigration Council, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref22); [Beach, 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref57); [Kerr, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref390); [Sumption, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref722); [_The Economist,_ 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref756)).
+
+Points-based immigration systems have strengths and weaknesses in international talent attraction and retention. A points-based system can favor highly skilled immigrants who can garner high wages ([_The Week,_ 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref760); [Zamora and Mason, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref879)). Points-based immigration systems also are seen as having faster application processing times, being fair and nondiscriminatory, and being transparent, as applicants should be able to review the selection criteria and discern whether they should be able to attain the requisite number of points ([Halse, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref299); [_The Week,_ 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref760)). Such a system, however, requires the collection of large-scale sets of immigration data (and creates associated costs), and may reduce the ability to control or limit migration, as
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+### [PROGRAMS USED BY OTHER NATIONS TO RECRUIT AND RETAIN STEM TALENT](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-17a)
+
+The following section contains an overview of the range of programs, along with their associated structures and incentives, employed by other countries with the goal of recruiting and retaining science, technology, engineering, and mathematics (STEM) talent. While each country tailors programs to its particular situation, it is clear that immigration and visa
+
+well as increase the potential for abuse ([_The Week,_ 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref760)). Moreover, points-based immigration systems do not ensure that selected immigrants have full employment ([Kerr, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref390)). Some also see points-based systems as “grounded more in politics than neutrality,” as the points are devised with attributes of the most desirable foreign nationals while other groups are disadvantaged ([Halse, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref299)).
+
+The United States currently has a policy that includes prioritizing family-based immigration, in which a U.S. citizen or legal permanent resident (an individual holding a Green Card) can sponsor relatives from their country of origin, in addition to employer-led selection, in which an employer determines the workers they need in accordance with government regulations ([Barros, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref47); [Papademetriou and Sumption, 2011](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref603)). The United States does not employ a points-based immigration system—and moving toward such a system would “represent a significant shift in U.S. immigration policy that could have economic and demographic impacts” ([Zamora and Mason, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref879)). President Donald Trump called for such a system, among other immigration-related changes, in his first address to Congress on February 28, 2017.[_a_](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_c05ffn1) This resulted in the introduction of S. 354, The Reforming American Immigration for Strong Employment Act (The RAISE Act) in the Senate in 2017, which would have reduced immigration, ended the prioritization of family sponsorship, and added a points-based component ([American Immigration Council, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref22)). The bill did not advance; other proposed immigration reform legislation over the years that would have included a points-based immigration system has not had success in getting through Congress.
+
+__________________
+
+[_a_](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_c05fft1) See President Trump’s first address to Congress at [https://time.com/4686621/trump-congress-address-transcript/](https://time.com/4686621/trump-congress-address-transcript/).
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+policies that attract highly skilled workers, students, and entrepreneurs are central features of all.
+
+However, immigration policies can be subject to shifts in economic and political conditions, even when there is a recognized need to cultivate talent. The COVID-19 pandemic exposed gaps in meeting workforce needs as well as the fragility of global supply chains. The world’s recovery from the pandemic has raised concerns about issues such as inflation, housing costs, and education access that have become the lens through which immigration policies and their ramifications are viewed by some. Such concerns are not unique to any country, and the post-COVID-19 era has seen more restrictive measures implemented in Australia, Canada, and the United Kingdom, among other countries ([Adams, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref11); [Crowe, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref147); [Government of Canada, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref282); [ICEF Monitor, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref327), [2024c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref329); [Laker, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref400); [Mercer, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref450); [Shorelight, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref685); [Singer, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref698); [UK Government, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref11); [Wesley, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref842)). As one example, the previous government in the United Kingdom instituted rules, effective in 2024, preventing most international students from bringing family members to the country ([Bloch, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref73); [Havergal, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref306); [Jack, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref346); [Shearing, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref682)). This illustrates that the attraction and retention of talent involves more than the researchers alone.
+
+The examples that follow are intended to illustrate policies and programs aimed at the attraction and retention of international talent. Recent changes driven by concerns about immigration in general are noted as appropriate. The European Union (EU) and Five Eyes countries are grouped together to facilitate comparison, followed by additional examples from Asian countries. China, Russia, and Iran are considered separately in [Chapter 6](https://www.nationalacademies.org/read/27787/chapter/8#139) in order to permit a more detailed historical perspective on the rise of talent programs there. The committee is aware of talent recruitment policies and programs in other countries, including Hong Kong,[3](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn64) Israel,[4](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn65)
+
+___________________
+
+[3](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft64)As noted in [Box 3-3](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_box3-3), the Hong Kong Special Administrative Region is considered a country of concern by the U.S. government. Hong Kong operates several different schemes for talent, professionals, and entrepreneurs to work and stay in the Special Administrative Region ([Hong Kong Immigration Department, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref318); [Hong Kong Talent Engage, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref318)). Of particular note is the Top Talent Pass Scheme, which was announced in 2022 with the goal of widely enticing “top-notch talents to Hong Kong” ([European Chamber of Commerce in Hong Kong, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref210)). The China Resources Research Institute of Science & Technology seeks to recruit talent from Hong Kong to engage with the Institute’s main facility in China ([CRRIST, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref149)). The committee notes that Hong Kong is an increasingly attractive destination for students in mainland China ([Nuwer, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref572)).
+
+[4](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft65)Content on Israel’s talent recruitment programs can be found in the commissioned paper by Taylor A. Grove.
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Macau,[5](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn66) Saudi Arabia,[6](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn67) Taiwan,[7](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn68) the United Arab Emirates,[8](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn69) and South American nations,[9](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn70) but has chosen not to include them in the representative sample presented in this report.
+
+#### The European Union
+
+The EU, as a transnational body, facilitates and supports the exchange of students and professionals across its member state borders. In attracting and retaining talent from outside the bloc, however, the EU has successfully implemented several programs that complement the national programs of member nations. EU policy on attracting global talent is focused on student support, family reunification, and certain long-term residency permissions for non-EU citizens to live and work without travel restrictions within EU states.
+
+The EU offers support programs for temporary workers (often low-wage), high-skilled workers, and professionals working for an international company or organization that seek to work temporarily from within
+
+___________________
+
+[5](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft66)As noted in [Box 3-3](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_box3-3), the Macau Special Administrative Region is considered a country of concern by the U.S. government. Macau implemented a new “Legal System for Talent Recruitment,” effective on July 1, 2023 ([Macao Special Administrative Region, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref433)). Three new programs compose the Talent Recruitment System: the High-end Talents Programme, the Outstanding Talents Programme, and the Advanced Professionals Programme ([Macao Special Administrative Region, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref433)). Macau operates a total of nine different talent recruitment programs overall and seeks to attract nonlocal residents ([Macao Special Administrative Region, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref434); [Tu, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref11)). Universities in Macau, which are not ranked as highly as those in Hong Kong, do not require the _kaoyao_ entrance exam, which is mandatory for admittance to master’s or Ph.D. programs in mainland China ([Nuwer, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref572)).
+
+[6](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft67)Content on Saudi Arabia’s talent recruitment programs can be found in [Appendix C](https://www.nationalacademies.org/read/27787/chapter/14#251).
+
+[7](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft68)The Taiwan Employment Gold Card Office, or “Talent Taiwan,” was established in 2018 and has awarded more than 8,000 gold cards, or visas, since then ([Taiwan Employment Gold Card. n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref739); [Talent Taiwan, n.d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref17)). The National Development Council of Taiwan operated a “Key Talent Cultivation and Recruitment Program” from 2021 to 2024, with the goal of turning Taiwan into a global talent hub ([Taiwanese National Development Council, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref740)). The National Development Council is now overseeing the International Industrial Talents Education Special (INTENSE) Program, which provides foreigners with scholarships and a living allowance to study and work in Taiwan for 2 years ([Lin, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref11)). The Talent Circulation Alliance provides additional opportunities for international exchange ([Talent Circulation Alliance, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref17)).
+
+[8](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft69)Content on the United Arab Emirates’ talent recruitment programs can be found in [Appendix C](https://www.nationalacademies.org/read/27787/chapter/14#251).
+
+[9](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft70)South American nations that operate talent recruitment programs include, but are not limited to, Argentina, Brazil, Chile, Colombia, Peru, and Uruguay.
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+the EU ([European Commission, n.d.d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref214)). One of the more popular EU programs is the EU Blue Card, which was rolled out in 2009 ([European Commission, n.d.b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref212)). The Blue Card incentivizes citizens outside the EU to work in any EU country, with similar free movement rights as citizens of the bloc. Obtaining a Blue Card hinges on work offered to the applicant, and access is restricted to specific occupations. The Blue Card is not intended for entrepreneurs, but it does allow extension of visas to dependents of the applicant.
+
+In April 2022, the European Commission, the executive branch of the European Union, launched an effort to build an EU Talent Pool that would reduce strains on EU employers, curtail exploitation of immigration systems, and sharpen the competitiveness of EU talent programs compared with those of other nations ([European Commission, n.d.c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref213); [OECD, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref576)). In December 2023, the commission updated its policy regarding refugees and irregular migration specifically, aiming to balance the burden of cost and responsibility for human flows into the bloc ([European Council, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref217)). The move was met with mixed reactions and came on the heels of a separate policy announcement that served to bolster the European Research Area (ERA) in attracting young and early-career researchers ([European Commission, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref209)). ERA includes programs such as the EURAXESS program, which supports students in key research fields, and the RESAVER program, which is a pension support program that enables EU researchers to maintain a consistent pension arrangement when moving between countries and changing jobs ([EURAXESS, n.d.b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref208); [RESAVER, n.d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref648)).
+
+Student programs include the Marie Skłodowska-Curie Actions program, which supports doctoral education and job hunting for high-level academics, and the Erasmus+ program ([European Commission, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref211); [European Commission, n.d.e](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref215)). Erasmus+ is the most prominent student exchange program in the EU. While focused on opportunities for EU citizens, partner countries around the world can take advantage of certain components of the program. Key functions of the Erasmus+ program foster cultural exchange, innovation, and workforce development in academics, athletics, and higher education.
+
+##### _Finland_
+
+While a smaller country by the number of educational institutions and in gross domestic product (GDP) compared with other EU members discussed in this section, Finland offers a diversity of programs and resources
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+that have made it attractive to international workers and students. Finland is considered one of the happiest countries in the world and boasts some of the strongest academic programs internationally ([Hunter, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref324); [_U.S. News & World Report,_ n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref813)). This has helped drive talent to Finland, a trend the government seeks to accelerate. By 2030, the government wants to triple the number of foreign students and double the number of foreign workers ([Singha, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref700)).
+
+The 2023 OECD report ranked Finland highly in quality of life and family environment for students and workers. The only areas the report highlighted as risk areas for international workers in Finland were in the quality of opportunities and future prospects for people with master’s degrees or Ph.D.s (OECD, 2023e). While Finland has taken steps to assist students in staying in the country postgraduation, tuition increases for students from outside the EU and Switzerland have hurt its standing relative to other countries with similar opportunities (OECD, 2023e).
+
+Finland offers a field guide for navigating the visa process for people who wish to study or work in the country. It has clear bifurcations if the applicant is currently residing in Finland or if they are applying from outside the country. There are additional channels for Nordic citizens, Ukrainian citizens, asylum seekers, EU citizens, United Kingdom citizens, people seeking temporary or permanent work or study status, and for applicants requiring a fast track for any of the visa applications ([Finnish Immigration Service, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref233)). Fast-track visas are available for certain high-skilled specialists, EU Blue Card holders, intra-corporate transfers, top or middle management of a company in Finland, start-up entrepreneurs, and the immediate family members of those in the aforementioned categories ([Finnish Immigration Service, n.d.b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref234)).
+
+To take advantage of its national reputation, build a more inclusive workforce, and counteract brain drain, Finland announced the Talent Boost program in November 2023. The Ministry of Economic Affairs and Employment and the Ministry of Education and Culture run the program, which targets international workers and students alike ([Salonen and Lehto, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref664)). While Finland will seek to fill its skilled worker shortage using EU regional labor, the program aims to broaden the attractiveness of Finnish careers and schooling to audiences beyond the bloc. Although Finland is still rolling out the program, it will include a more synchronized approach to retaining foreign talent using a wider array of government resources ([Finnish Government, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref232)).
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+##### _France_
+
+French programs for attracting students and professionals from abroad are long standing and have shown success. Income potential in France remained a concern in the OECD report across all categories of students and workers. Regardless, French learning institutions are well renowned and offer the option for work-during-study visas. Between the 2019 and 2023 OECD reports, France had the greatest rank drop in its attractiveness rank for students (OECD, 2023e). However, despite the OECD ranking reduction, data have shown that the volume of international students has increased, driven by more EU students ([Erudera, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref201)). In addition to concerns about income potential, the drop in ITA ranking reflects inclusivity and quality of life concerns that can be affected by external variables. France leverages EU policies such as the EU Blue Card and offers its own programs.
+
+Since 1999, the Eiffel Excellence Scholarship has specifically supported foreign students aiming to complete higher-level degree programs in France ([Campus France, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref99)). The associated visa lasts the duration of the applicant’s scholarship. There are allowances for gap years, flexibility to the student’s learning plan, and a buffer year following graduation before the applicant would need to either obtain a new visa or leave France. The Eiffel program does not include tuition support ([Campus France, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref99)).
+
+Worker programs such as one that offers visas for Young Innovative Companies (JEI), which became available starting in 2004, target highly skilled minds seeking to build or attract new business to France ([République Française, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref647)). The government offers classifications for new companies and universities that make substantial investments in research and development. France has a subsection of its Talent Passport that facilitates professionals and students that support JEIs ([République Française, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref645)).
+
+In 2017, France initiated its Talent Passport, a broad program supporting non-Europeans working for more than 3 months in France ([République Française, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref646)). The program is reserved for high-skilled workers, researchers, entrepreneurs, artists, investors, and celebrities. While a VLS-TS residency permit[10](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn71) covers these categories for stays in France for less than 1 year, applicants that are covered by the Talent Passport can apply if their stay is for 1 year or more. Support mechanisms exist within the
+
+___________________
+
+[10](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft71)The VLS-TS (_visa de long séjour valant titre de séjour_) is a long-stay visa equivalent to a residence permit that allows the holder to enter France and live in the country for between 3 and 12 months without applying for a separate residence permit.
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+program for family members of the applicant and clear guidance on pricing for each variation and applicant pipeline is provided.
+
+The French Tech Visa also started in 2017 and is catered specifically to supporting the information technology sector by facilitating the immigration of professionals, investors, and business leaders in the tech sector ([République Française, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref644)). The visa has a longer time horizon of 4 years, offers permissions for immediate family members, and has an indefinite renewal timeline.
+
+##### _Germany_
+
+Between the 2019 and 2023 OECD reports, Germany had a modest attractiveness ranking increase for its student programs but saw a drop in rankings for entrepreneurs and workers (OECD, 2023e). Germany ranked eighth globally in innovation in 2023 but experienced a 0.3 percent drop in GDP by the end of 2023 ([DESTATIS, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref161); [Dutta et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref188)). This coincides with a foreign workforce that has nearly doubled since 2017 in Germany ([DESTATIS, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref160)). Despite this influx, 44 percent of businesses in Germany complain of not having enough skilled workers, a figure that has doubled since 2022 ([Carter, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref104)). Germany remains an economic and industry leader in the EU bloc and maintains several bilateral and global programs to support its workforce and business environment as worker shortages persist. It has been working to expand its offerings for international talent, branching out to offer more direct support for students and workers through bilateral agreements and by transitioning to an applicant-oriented points-based system for immigration.
+
+The German Academic Exchange Service (DAAD) is the primary hub for international student talent to begin or continue their studies in Germany. DAAD has resources for foreigners to find appropriate scholarships ([DAAD, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref150)), working while studying ([DAAD, n.d.c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref152)), and visa requirements by country ([DAAD, n.d.b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref151)). For certain professions and those conducting advanced research, there are additional resources for acclimating to the tax environment, taking full advantage of social benefits, extended family support, and special statuses for refugees and vulnerable groups ([German Federal Ministry of Education and Research, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref157)).
+
+The Alexander von Humboldt Foundation augments government efforts with more than 26 programs facilitating academic, cultural, and innovative exchange ([Alexander von Humboldt Foundation, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref16)). Humboldt primarily supports international professionals and students
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+to conduct research in Germany for a variety of fields, with resettlement support and a diversity of program offerings. The research fellowships under the Foundation’s programming are buttressed by Germany’s national EURAXESS centers for sourcing funding and employment opportunities among other tools ([EURAXESS, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref207)).
+
+For international workers, the job seeker visa was initiated in 2012, and it specifically aims to help professionals outside of the EU work in Germany ([German Federal Foreign Office, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref157)). With a low barrier to obtain, the visa can last for 6 months, allowing applicants to spend time networking and interviewing for a job that would meet the requirements for longer-term residency.
+
+Beyond open programs such as the job seeker visa, Germany has begun building bilateral agreements with certain countries to augment their workforce streams. In 2022, Germany signed its first Migration and Mobility Agreement with India, which facilitates mobility for students and trainees, cultural professionals, journalists, academics, and skilled workers between the two countries ([German Federal Ministry of the Interior and Community, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref103)). The objective of the agreement was to encourage talent in the information technology sector to open positions in Germany, but the benefits of such an agreement can extend to other sectors as well.
+
+In 2022, Germany began rolling out a new immigration system, including its Chancenkarte, or Opportunity Card, which operates in a similar fashion to the U.S. Green Card ([Carter, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref103)). This new points-based immigration system allows workers to arrive without a job and search when in Germany and creates easier pathways to apply for German citizenship ([Chancenkarte Deutschland, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref108)). To obtain an Opportunity Card, applicants must prove German language proficiency or prior residency, have obtained a higher education degree, have at least 3 years of working experience, and be younger than 35. Chancenkarte became available starting in June 2024.
+
+##### _Italy_
+
+Italy ranks 26th in the top 50 high-income economies for innovation but had a 3.8 percent GDP growth in 2022 and a 1.2 percent growth rate in 2023 ([Dutta et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref188); [OECD, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref583)). Between the two OECD reports, Italy’s rankings of its talent programs were stagnant when it came to student talent but had modest increases among worker and entrepreneur talent, driven by future prospects metrics and quality of opportunities in the Italian economy ([OECD, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref583)).
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+The General Directorate of Immigration and Integration Policies, under the Ministry of Labor and Social Policies, manages policies on foreign workers ([Italian Ministry of Labor and Social Policies, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref339)). The country offers foreign workers, who represent 8 percent of the population ([EURES, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref209)), access to national benefits including their National Health Service and social security ([Reuters, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref649)). However, the non-EU foreign labor participation rate stagnated in recent years ([Italian Ministry of Labor and Social Policies, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref340)).
+
+The government offers six types of student visas for various target audiences: students of Italian universities, students attending a single course, postgraduates, participants of exchange or mobility programs, traineeships and apprenticeships, and vocational training ([Italian Foreign Ministry, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref340)). In addition to EU worker and student programs, the government offers a menu of scholarships for foreign students and resources for connecting with private scholarships ([Italian Foreign Ministry, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref339)). Separately, the Eduitalia association is a network of higher education institutions that collectively provide resources to international students staying in Italy ([Eduitalia, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref193)).
+
+For working professionals, Italy offers the Startup Visa Program to support young entrepreneurs from outside the EU ([Italian Foreign & Economic Ministries, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref341)). The program aims to incentivize new business creation in Italy, driven by a 2016 law that improved the environment for new businesses in the country ([Italian Ministry of Economic Development, 2016](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref342)). While Italy has experienced irregular human flows in recent years, its global talent policies reflect a need to fill key positions across many sectors of the economy that remain unfilled. Features in its visa programs include assistance that allows an applicant’s nuclear families to move with them. However, few programs have been authorized recently that capture post-COVID-19 global talent flow trends.
+
+##### _Sweden_
+
+In the 2023 OECD report, Sweden’s policies and conditions for attracting global talent were in the top 25 percent compared with other developed states, driven by the country’s rich skills environment, inclusiveness, and quality of life (OECD, 2023e). Other drivers included opportunities and prospects and family support. Sweden’s education system is considered the best in the world, followed by Finland and Denmark ([_U.S. News & World Report,_ n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref813)). The foreign-born population in Sweden has
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+steadily increased, reaching 2.83 million people in 2022 ([Dyvik, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref189)), and international students in Sweden increased by 19 percent in 2023, with Germany, China, and France representing the largest cohorts ([Erudera, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref202)). Increased demand for workers and researchers in Sweden has prompted the government to begin simplifying some of its visa procedures ([Erudera, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref203)).
+
+Swedish work permits encompass a wide array of applications and have special rules for applicant professional sector and other conditions ([Swedish Migration Agency, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref732)). In most cases, employment offers are required before visa applications. Special pathways are available for those with EU Blue Card status, seasonal workers, athletes, and other roles ([Swedish Migration Agency, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref730)). Additionally, those seeking to fill a position from the regularly updated list of professions experiencing a shortage have a custom application process ([Swedish Migration Agency, 2023c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref733)). Refugees and temporary remote workers also have subsections under the same worker permit authorization mechanism ([Swedish Migration Agency, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref731), [2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref735)).
+
+Students seeking to study in Sweden have access to a unified application portal for undergraduate and graduate programs ([Swedish Council for Higher Education, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref728)). While a menu of scholarships can support a student’s experience, most citizens outside the EU/European Economic Area bloc must pay for tuition and living expenses ([Pop, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref189)).
+
+Despite high tax rates and conventions for employee benefits in Sweden, startups have a high success rate and show fast growth ([Semuels, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref678)). The government offers a resource portal for immigrant entrepreneurs that includes hiring tools, permit guidance, tax assistance, start-up incubator networks, and other tools ([Swedish Institute, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref729)). However, foreigners wanting to start or buy a business in Sweden must prove English or Swedish proficiency, illustrate sufficient starting capital, demonstrate a strong-enough network in Sweden, and possess a compelling curriculum vitae supporting an application ([Swedish Migration Agency, 2023d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref734)).
+
+#### Five Eyes Countries
+
+##### _Australia_
+
+Australia has served as a hub for international students and workers within the East Asia and Pacific region and beyond. Like many countries, the critical role of migrant labor in Australia’s economy became starkly apparent during the COVID-19 pandemic for low-wage and high-skilled
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+workers alike. As travel restrictions eased in 2022, a wave of new workers and students filled many of the gaps. Nevertheless, a late 2023 government review of industries that require more workers stated that “Technicians and Trade Workers, and Professional occupations (health, engineering, information communication technology and science roles) have the highest shortages, particularly in regional and remote areas,” highlighting just some sectors affected by what the government assesses to be a worker shortage in 36 percent of Australia’s occupations ([Jobs and Skills Australia, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref366)).
+
+The surge in asylum claims and immigration has resulted in some backlash, causing the Labor government to backtrack on expanding migration incentives, reducing the maximum number of admitted migrants for 2024, and promising to revise and restrict some post-COVID-19 policies ([Australian Department of Home Affairs, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref37); [Karp, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref380)). Despite the ongoing domestic debate, the establishment and strengthening of research and professional pathways with regional partners will play an important role as worker shortages persist and geopolitical tensions rise ([Universities Australia, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref105)).
+
+Among recent changes, the Endeavour Leadership Program (ELP), which had been in place since 2003 to great effect, was discontinued in 2023. ELP was available only to specific countries through a competitive selection process, and support included extensive financial assistance. ELP had served both Australian and international academics in a two-way exchange that buttressed research in a variety of fields ([Barker, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref46)).
+
+International student programs in Australia include the Research Training Program (RTP), which replaced the Australian Postgraduate Award, or APA; International Postgraduate Research Scholarship, or IPRS; and the Research Training Scheme, or RTS, programs in 2017 ([Australian Department of Education, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref35)). The RTP program offers financial support to domestic and foreign individuals for between 2 and 8 years depending on the scope of academic activities of the applicant. Australia’s Technical and Vocational Education Training (TVET) program offers a blend of student and professional support for foreign citizens interested in technical and low-wage work looking to start a career in Australia. Training through TVET is mostly implemented through Australia’s Technical and Further Education, or TAFE, institutes and ranges in duration from 4 to 36 months ([Study Australia, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref50)).
+
+Australian incentives for workers are often demand-driven and focus on staff shortages experienced by Australia. Visas are offered regionally within Australia, by the duration of stay, and most critically by an applicant’s
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+professional specialization that meets a worker shortage need ([Australian Department of Home Affairs, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref38), [2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref40)). Some skilled worker visas that allow for permanent residency require an invitation from the Australian government to apply ([Australian Department of Home Affairs, 2024c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref39)). The Global Talent Program, which began in 2019, offers professionals who meet minimum income and specialization requirements a permanent visa to live and work in Australia with the aim of boosting innovation within the economy ([Australian Department of Home Affairs, 2024e](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref41)). Lastly, the Skilled Migration Program operates in tandem with the Global Talent Program to support worker shortages and retain talent ([Australian Department of Home Affairs, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref36)). Between the 2019 and 2023 OECD reports, Australia had a modest ranking increase in the attractiveness of its student programs but experienced a drop in ranking for its foreign worker and entrepreneur programs. For entrepreneurs in particular, rankings were hurt by Australia’s income and taxation environment (OECD, 2023e).
+
+##### _Canada_
+
+Canada has positioned itself as a welcoming environment for workers, entrepreneurs, and students alike, with long-standing policies that have shown success as well as new initiatives that seek to capitalize on new talent pools. In the OECD report, Canada ranked highly in its attractiveness for immigrant entrepreneurs and workers but lower in attractiveness for university students because of visa policies and other limitations imposed by the government in recent years (OECD, 2023e). Many of the latest initiatives supporting foreign workers in Canada have been aimed at supporting workforce needs for Canadian companies that have had difficulty filling open positions. In addition, Canadian programs have aimed to establish an edge for Canadian employers among talent pools that receive less targeted attention.
+
+Canada initiated its Global Talent Stream (GTS) program in 2017 to provide an accelerated timeline for worker authorization in Canada in as little as 2 weeks ([Singer, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref697)). GTS is a demand-driven subsidiary initiative of the Temporary Foreign Worker Program, which is Canada’s overarching legislation supporting foreign workers ([Cohen Immigration Law, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref128)). GTS is available for 17-plus professional specializations and for professionals seeking to work for any one of 45 shortlisted employers ([Cohen Immigration Law, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref129)). Canada updates the list of target employers and specializations annually ([Government of Canada, 2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref285)). Quebec maintains some unique modifiers for this program, with any worker applying for work authorization
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+through GTS receiving the same right to health care, safety, and wage expectations as Canadian nationals ([Government of Canada, 2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref285)).
+
+In 2015, Canada started the Express Entry Program, which offers a points-based working opportunity for foreign individuals. This program supports those with prior Canadian work experience, workers with specific academic and language experience, and specific skilled trades. Visas issued under this initiative boast a processing time for no more than 6 months and serve as a complement to region-level programs ([Government of Canada, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref283)).
+
+Announced in June 2023, Canada’s Tech Talent Strategy is another program that aims to fill gaps in Canada’s workforce—particularly for entrepreneurs and those in the information technology space—and facilitate permanent residency for high-skilled professionals ([Allibhai et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref17)). The program takes aim at foreign workers with H1-B visas living in the United States, with streamlined applications for those with visa statuses in other countries.
+
+In 2010, Canada created the Canada Research Chairs Program (CRCP) to support the country’s research and development (R&D) efforts with an annual budget of over $300 million ([Government of Canada, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref19)). This academic incentive program targets students and thought leaders in engineering and the natural sciences, health sciences, humanities, and social sciences. The funding allocation and prioritization for Chairs is updated every 5 years for placements in Canadian institutions. Funding comes from the Canadian Institutes of Health Research, the Natural Sciences and Engineering Research Council, and the Social Sciences and Humanities Research Council ([Government of Canada, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref19)). CRCP allows for the establishment of up to 2,285 Chairs, with 2,148 awarded via regular allocation and 137 awarded via special allocation ([Government of Canada, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref142)).[11](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn72) As of March 2024, there were 2,010 active participants in the CRCP program from 78 different Canadian universities ([Government of Canada, 2024c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref284); [Zweig, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref890)).
+
+The number of Chairs allocated to a specific Canadian university is proportional to the amount of research expenditures from the three Canadian
+
+___________________
+
+[11](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft72)Institutions can be eligible to receive Chairs via both regular and special allocation, and this is indeed the case at some Canadian universities. To receive Chairs via special allocation, an institution must receive more than $100,000 CAD of funding from Canada’s three research funding agencies over 3 years, must receive 1 percent or less of the total funding paid out by the three agencies, and have fewer than 11 Chairs via regular allocation.
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+federal granting agencies[12](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn73) at the institution during the 3 years prior to the year of allocation. Approximately two-thirds of CRCP recipients hail from members of the U15 Group of Canadian Research Universities (U15).[13](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn74) The University of Toronto, University of British Columbia, McGill University, University of Alberta, and Université de Montréal, all U15 member institutions, host the highest number of Chairs. Furthermore, Chairs are allocated by disciplinary area, with 837 Chairs (39 percent) designated for research in natural sciences and engineering, 837 Chairs (39 percent) designated for research in health sciences, and 474 Chairs (22 percent) designated for research in social sciences and humanities ([Government of Canada, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref142)). As shown in [Table 5-1](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_tab5-1), the majority of Chair recipients are Canadians already living and working in Canada.
+
+CRCP uses a two-tier approach. Tier 1 Chairs last 7 years and are renewable one time and twice in exceptional circumstances ([Government of Canada, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref19)). These Chairs are full or associate professors who are broadly acknowledged as outstanding, world-class researchers. A Canadian institution hosting a Tier 1 Chair receives $200,000 CAD ($145,208 USD in 2024)[14](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn75) annually. Tier 2 Ch airs last 5 years and are renewable one time. These Chairs are associate or assistant professors who are perceived as exceptional emerging researchers with the potential to lead in their discipline. Canadian institutions hosting Tier 2 Chairs receive $100,000 CAD ($72,604 USD in 2024) annually. The funds received for each Chair can add to the Chair’s salary, pay for part of the Chair’s existing salary, or fund research. This split, and how the funds are used, varies by institution.
+
+CRCP has been successful in building research teams led by Chair recipients and scientific infrastructure in Canada. However, the value of the award has diminished over time, as the award amount has not changed since 2000. This has resulted in CRCP funds increasingly being used to cover Chair salaries rather than to fund research and has made it more difficult to recruit and retain Chair recipients from abroad. Many CRCP awards went to researchers already in Canada, with the idea that receipt of such an award would prevent them from seeking opportunities abroad. A 2016 evaluation of the program noted the failure to increase the monetary award “may
+
+___________________
+
+[12](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft73)The Natural Sciences and Engineering Research Council of Canada, the Canadian Institutes of Health Research, and the Social Sciences and Humanities Research Council.
+
+[13](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft74)The U15 Canada is a higher education association of 15 leading research-intensive universities in Canada.
+
+[14](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft75)USD calculated using an exchange rate of 1 USD = 1.377 CAD as of August 6, 2024. See [https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CAD](https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CAD).
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**TABLE 5-1 Percentage of Canada Research Chairs Awarded to Canadians Overseas versus Canadians Already in Canada, 2014**
+
+**Number****Percentage of Total**
+Total Number of Canada Research Chairs 1,743 100%
+Non-Canadian 151 8.7%
+Canadian 1,592 91.3%
+Returned from Abroad 127 7.3%
+Already in Canada 1,465 84.1%
+
+SOURCE: [Zweig, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref890).
+
+present a risk to relevance, and may be linked to some observed challenges to program effectiveness, namely challenges in recruitment and turnover among chairholders from abroad, and an increase in Chair vacancies” ([Goss Gilroy Inc., 2016](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref277)).
+
+Canada has maintained programs for students, entrepreneurs, and professionals for many years that have positioned it well to attract talent from around the world, although the Canadian government decided not to raise the cap on the number of foreign students enrolled at Canadian universities ([Basken, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref50); [ICEF Monitor, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref328)). Canada remains one of the most competitive countries in drawing talent from abroad according to a variety of metrics ([Gray, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref287); [IIE, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref330)). It also continues to innovate with new programs like the Tech Talent Strategy.
+
+##### _New Zealand_
+
+In the 2023 OECD report, New Zealand ranked in the top 25 percent in ITA scores for foreign workers and entrepreneurs, driven by strong opportunities, family environments, inclusivity, and quality of life. The country had weaker ratings for its foreign student programs, but those too had strong ratings for inclusivity, opportunities, and skills environment. While New Zealand has implemented more capital requirements for immigrant entrepreneurs, it still is among the top five most attractive countries for both entrepreneurs and skilled workers (OECD, 2023e). Since the country has opened up after COVID-19 shutdowns, immigration has hit an all-time high at a time when Kiwi employers have had difficulty filling open positions with an already low unemployment rate of under 4 percent ([Perry, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref610)).
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+The movement of New Zealanders to Australia in search of better wages has exacerbated the country’s skilled worker shortage ([Perry, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref610)). Based on an existing bilateral agreement, citizens of New Zealand and Australia can travel, live, and work in either country without a visa or other permits, with some exceptions ([New Zealand Government, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref258)).
+
+New Zealand has several visas for international entrepreneurs and workers, as well as supporting visas for their families ([New Zealand MBIE, n.d.m](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref95)). To address worker shortages in the country, the government maintains and regularly updates its Green List, a roster currently listing 193 roles prioritized by immigration officials. Professionals that match the qualifications of one or more of the roles in the Green List can have residency status either immediately or after no longer than 2 years of working in New Zealand ([New Zealand MBIE, n.d.f](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref532)). Those who choose to work in New Zealand are offered the same rights as citizens, including a requirement of written labor contracts, minimum wage, personal time off minimums, and more ([New Zealand MBIE, n.d.g](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref533)).
+
+Programs under which international workers can apply for residency include catered visas for professionals in health care, transportation, arts and entertainment, fishing, religious, culinary, and sports sectors ([New Zealand MBIE, n.d.o](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref541)). There are also 55 country-specific short- and long-term working status programs available. Among the programs attracting workers to New Zealand, the Skilled Migrant Category Resident visa is a points-based program that offers indefinite stay to professionals with a standing job offer in the country ([New Zealand MBIE, n.d.j](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref536)). The Work Exchange Scheme visa is a short turnaround visa that lasts 1 year and is intended for temporary stints in New Zealand, though it has a 1,000-person quota per year ([New Zealand MBIE, n.d.p](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref542)). Another program is the Talent Work visa, which has no cap and has a processing time of around 5 weeks ([New Zealand MBIE, n.d.l](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref538)). Applicants under this program can stay and work for up to 2.5 years as they display exceptional talent in a field of art, sport, or culture, after which time, they can apply to stay indefinitely. Lastly, the Pacific Access Category Resident visa is a regional program that has a permanent residency lottery for English-speaking professionals from Kiribati, Tuvalu, Tonga, or Fiji ([New Zealand MBIE, n.d.h](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref534)). New Zealand raised the quota caps for each country in 2023.
+
+Programs specific to entrepreneurs moving to New Zealand include the Entrepreneur Work visa ([New Zealand MBIE, n.d.b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref528)), which takes 2 years to process and lasts 3 years with the potential to extend indefinitely ([New Zealand MBIE, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref475)). The visa is points-based and is for those who
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+come to set up or buy a business. Those working in science or the information and communications technology sector have the capital benchmark requirement waived and family support is included. Another program is the Global Impact Work visa ([New Zealand MBIE, n.d.e](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref386)), a 3-year visa for investors accepted by the Edmund Hillary Fellowship that can be extended indefinitely at the end of the Global Impact Work period of performance ([New Zealand MBIE, n.d.d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref530)).
+
+International students in New Zealand have increased almost 100 percent since COVID-19 restrictions were removed ([ICEF Monitor, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref326)). The government offers a scholarship and resource database for exchange students ([New Zealand Ministry of Education, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref50)) as well as visas for the guardians and dependents of students ([New Zealand MBIE, n.d.n](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref540)). Student programs in New Zealand include the Exchange Student visa, for full-time students for up to 4 years, which is processed in 2 weeks and features free tuition and work authorization ([New Zealand MBIE, n.d.c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref235)). Another is the Pathway Student visa, which lasts for 5 years and is processed in 6 weeks for the completion of three courses under the Pathway program. Tuition and family visas are not included in this program, but work authorization is an integrated feature ([New Zealand MBIE, n.d.i](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref365)). Lastly, the Student and Trainee Work visa is intended to support traineeships in medical, religious, or other included sectors for anywhere between 6 months and 4 years ([New Zealand MBIE, n.d.k](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref537)).
+
+Overall, New Zealand’s diverse visa offerings to foreign talent feature strong citizen-comparable benefits, along with a clear field guide for finding the right visa pathway. While some professions remain understaffed, an ongoing influx of workers to the country will test immigration protocols and present opportunities for growth in a variety of sectors.
+
+##### _The United Kingdom_
+
+The United Kingdom offers some of the most attractive programs and opportunities for international students according to the OECD 2023 report, driven in part from the pedigree of its educational institutions, but also its family environment and future prospects (OECD, 2023e). According to the ITA metrics since the last report in 2019, the offerings for international workers and entrepreneurs have also improved in the United Kingdom. This resulted in part from removing skilled worker quota caps for visas and improved prospects for immigrant labor as the global economy has reopened after COVID-19. Between the 2019 and 2023 OECD reports,
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+the United Kingdom had the greatest ranking increase in workers and a strong increase in both entrepreneurs and students.
+
+For international workers, the High Potential Individual visa is for highly skilled professionals who have earned a degree from an eligible university within the 5 years prior to applying ([UK Government, n.d.c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref779)). The offering provides immigrants who performed well in their respective academic institutions the opportunity to move to and search for work in the United Kingdom without a standing job offer. The visa lasts for between 2 and 3 years depending on the highest degree of the applicant but cannot be renewed. Continuing to live in the United Kingdom hinges on transferring to another visa category, ideally after having secured stable employment. The visa can extend to the applicant’s nuclear family.
+
+Another UK program is the Global Talent visa, which offers legal residency for up to 5 years for talented workers in science, engineering, medicine, humanities, digital technology, arts, and fashion ([UK Government, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref777)). Global Talent visas require a health care surcharge to have the same benefits as UK citizens, but the program supports families of the applicant as well. The similar Skilled Worker visa is a more expansive work authorization for concentrations less critical to filling skill gaps in the UK economy. Visas are awarded only with a UK job offer in hand and can last for up to 5 years ([UK Government, n.d.d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref780)).
+
+The standard student visa in the United Kingdom is reserved for applicants who have a standing offer at a UK university, have the proven financial means to afford the costs associated with the degree program, and demonstrate English proficiency ([UK Government, n.d.e](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref781)). Processing takes as little as 3 weeks, and the visa can last between 2 to 5 years with the option of an extension. The United Kingdom offers a post-study work visa for between 2 and 3 years, depending on the degree of the student, and allows for full work authorization but does not give the applicant access to social benefits or state pensions ([UK Government, n.d.b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref778)).
+
+Other opportunities for international students include the UK Research and Innovation initiative, which provides research and development investments across nine portfolios ([UKRI, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref783)). The UK Department for Science, Innovation, and Technology is the primary funder for the initiative, which features more than 100 fellowships, grants, and loans. The Chevening Scholarships similarly support a diverse array of concentrations but is exclusively for foreign students completing their master’s degree in the United Kingdom. All expenses are paid, including travel, tuition, and accommodation ([Chevening, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref119)). Commonwealth
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Scholarships are reserved for citizens of Commonwealth countries pursuing graduate or postgraduate degrees in one of six concentrations ([British Council, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref82)). Scholarships include travel, living, and tuition expenses similar to the Chevening program.
+
+#### Asian Countries
+
+##### _India_
+
+India has long been a major contributor to the U.S. STEM workforce, accounting for 29 percent of the foreign-born STEM workers in the United States ([American Immigration Council, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref4)). However, India now has designs to become a leading science hub for the next generation of researchers, according to Srivari Chandrasekhar, secretary of the Indian Department of Science and Technology ([Parishwad, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref605)). India surpassed China in 2023 and now ranks first in terms of the number of international students enrolled at U.S. colleges and universities ([DHS, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref166), [2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref170)).[15](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn76) India is now doing more to retain its best and brightest and compete with the rest of the world for STEM talent.
+
+India’s academic institutions have struggled to compete for Indian Ph.D. students who would rather go abroad (primarily to the United States) for the research facilities and resources, access to cutting-edge research groups, and career opportunities available overseas. The Indian government has made sporadic and limited efforts to engage its diaspora overseas, with most of these efforts taking the form of funded short-term visiting teaching and research opportunities for overseas researchers (see [Table 5-2](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_tab5-2)).
+
+##### _Japan_
+
+Japan has traditionally maintained strict visa policies for those seeking semipermanent or permanent work status. However, given the demographic shifts occurring within the country, filling critical roles has become more difficult and has necessitated a shift in its national talent framework. The demographic-centered pressures experienced in Japan offer one of the more extreme examples of how aging populations among postindustrial
+
+___________________
+
+[15](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft76)As of 2024, the numbers of students from China and India enrolled at U.S. institutions of higher education are very close. Different data sources disagree on whether India actually has surpassed China, with DHS data ([DHS, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref166), [2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref170)) supporting this argument and IIE OpenDoors 2023 data ([IIE, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref333)) still showing China with a slight edge.
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**TABLE 5-2** Active Opportunities for the Indian STEM Diaspora and Foreign Scholars to Conduct Research and Teach in India
+
+Visiting Advanced Joint Research Faculty Scheme (VAJRA)Global Initiative for Academic Networks (GIAN)VaishvikBharatiya Vaigyanik Fellowship (VAIBHAV)Ramanujan Fellowship
+Objective Serve as adjunct/visiting faculty at public Indian research institutions and contribute to R&D Augment India’s existing academic resources, accelerate the pace of quality reform, and elevate India’s S&T enterprise Collaborate and network with Indian institutions to foster a network of research programs aligned with India’s priorities Bring back scientists and engineers from abroad to take up positions in India
+Activities Teaching, Research Teaching, Research Research Research
+Required Degree Ph.D., M.S. in engineering or technology, M.D.
+Contract Duration 1 to 3 months; adjunct position appointment is for 1 year 1 to 2 weeks (short courses)1 week to 2 months per year for up to 3 years 5 years
+Target Audience Overseas scientists, faculty, and R&D professionals including Non-Resident Indians (NRIs), Persons of Indian Origin (PIOs), and Overseas Citizens of India (OCIs)International scientists and entrepreneurs Indian STEM diaspora Scientists and engineers working abroad, with a proven research publication track record, and under 40 years of age
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Remuneration$15,000 USD stipend for first month$8,000 USD for 12 to 14 hours of contact Rs. 1,35,000 per month[_a_](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_c05fnt1)
+
+ ($1,608 USD per month)
+$10,000 USD stipend for following 1 or 2 months Up to $12,000 USD for 20 to 28 hours of contact Rs. 7.00 lakh[_b_](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_c05fnt2) research grant per year
+
+ ($8,339 USD per year)
+Rs. 60,000 overhead per year ($715 USD per year)
+
+[_a_](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_c05ftt1) USD calculated using an exchange rate of 1 USD = 83.944 INR as of August 6, 2024. See [https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=INR](https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=INR).
+
+[_b_](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_c05ftt2) One lakh is equal to 100,000 in the Indian numbering system.
+
+SOURCE: Government of India Department of Science and Technology, [VAJRA, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref820)
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+economies are making it harder to fill entry- and mid-level positions across different sectors ([Statista, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref189)).
+
+With a low unemployment rate, Japan’s need for more plentiful talent has had clear national security implications as workforce availability affects national service. For instance, the Japan Self-Defense Forces have struggled to maintain sufficient recruitment numbers and has expanded efforts to attract more women, mid-career professionals, and other groups that are less represented in its ranks ([Rich and Hida, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref651)).
+
+Japan has offered a plethora of programs for international students, entrepreneurs, and professionals. Between the 2019 and 2023 OECD global talent reports, Japan’s International Trade Administration showed the highest jump in attractiveness ranking for students. However, ratings highlighted challenges in the family environment of international workers ([OECD, 2023d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref585)). Japan’s Ministry of Education, Culture, Sports, Science and Technology (MEXT, or Monbukagakusho) program, operating since 1954, offers specific assistance to higher education students, students from the surrounding East Asian region, and support for students seeking employment in Japan during their studies ([Japanese MEXT, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref351)). The Japan Student Services Organization offers support infrastructure oriented around the United Nations Sustainable Development Goal for international students in Japan and has been in place since 2004 ([JASSO, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref357)). The Japan Exchange and Teaching Program, founded in 1987, engages young professionals from around the world to teach language and other skill sets in Japan, serving both domestic civil service needs and international relations building ([Japan Exchange and Teaching Programme, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref348)). [Box 5-2](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_box5-2) describes the Okinawa Institute of Science and Technology (OIST), a globally focused Japanese research university offering a Ph.D. program in science and engineering, competitive research internships, and support for international students and researchers.
+
+In recent attempts to attract more students, entrepreneurs, and professionals from abroad, Japan instituted the J-Skip visa in April 2023 ([Japanese Ministry of Foreign Affairs, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref352); [NEI Global Relocation, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref520)). The J-Skip visa targets highly skilled professionals and has three subcategories under which individuals can apply. The (i)(a) category is for people with a master’s degree or 10 years of experience and who have a baseline income of at least 20 million JPY ($137,913 USD in 2024).[16](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn77) The (i)(b) category
+
+___________________
+
+[16](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft77)USD calculated using an exchange rate of 1 USD = 145.019 JPY as of August 6, 2024. See [https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=JPY](https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=JPY).
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+##### **BOX 5-2**
+
+**The Okinawa Institute of Science and Technology**
+
+The Okinawa Institute of Science and Technology (OIST) was founded by the Japanese government[_a_](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_c05ffn2) in 2011 to “contribute to science and technology worldwide, attract leading researchers from Japan and around the world to conduct high-quality research, advance the development of a world-class research hub, and nucleate a knowledge cluster that will catalyze technology transfer and industrial innovation” ([OIST, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref589)). The graduate school offers one course of study, a 5-year Ph.D. in science and engineering, and all education and research is conducted in English ([OIST, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref593)). OIST has more than 1,100 employees hailing from 69 different countries and territories ([OIST, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref593)). Sixty-four percent of OIST faculty and 80 percent of OIST Ph.D. students are from abroad ([OIST, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref593)).
+
+In addition to this, OIST offers education and research opportunities in science, technology, engineering, and medicine to foreign students through its Research Internship program. This is a short-term opportunity, typically 2 to 6 months, during which participants contribute to the research activities of OIST under the guidance of a professor ([OIST, n.d.c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref591), [n.d.d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref592)). The program is highly competitive and awards placements twice a year to students in the last 2 years of their bachelor’s degree, students pursuing a master’s degree, and students interested in joining OIST’s doctoral program ([OIST, n.d.b.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref590)). The program provides a nontaxable internship allowance of 2,400 JPY ($17 USD in 2024)[_b_](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_c05ffn3) per working day, a direct round-trip air travel ticket, an OIST shuttle bus pass, and a furnished apartment on or off campus ([OIST, n.d.d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref592)). OIST also assists with “visa acquisition, insurance procedures, and local registration” for students but not for accompanying family members ([OIST, n.d.d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref592)).
+
+__________________
+
+[_a_](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_c05fft2) While OIST receives funds from the Japanese government, it is a private university (specifically, a Special Private School Corporation) ([OIST, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref589)).
+
+[_b_](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_c05fft3) USD calculated using an exchange rate of 1 USD = 145.019 JPY as of August 6, 2024. See [https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=JPY](https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=JPY).
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+is for people pursuing advanced academic research activities or an advanced specialized or technical activity. The (i)(c) category is for people with 5 or more years of experience in business management with annual income of 40 million JPY ($275,867 USD in 2024) or more.
+
+The J-Find visa, also instituted in April 2023, is for recent graduates of highly ranked universities (Japan uses _QS World University Rankings, Times Higher Education World University Rankings,_ and Shanghai Ranking’s _Academic Ranking of World Universities_ to filter qualified candidates) to begin their careers or start a business in Japan ([Japanese Ministry of Foreign Affairs, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref353); [NEI Global Relocation, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref520)). The program includes a 2-year visa for job hunting and preparation for launching a company or venture. The J-Find visa also allows applicants to bring their dependents, such as spouses and children. J-Find applicants must provide proof of at least 200,000 JPY ($1,379 USD in 2024) in savings for living expenses when applying.
+
+Further supporting this effort to build a talent pipeline, Japan’s Council for the Future of Education Creation announced in 2023 that it aimed to further “internationalize” higher education and attract more than 400,000 foreign students from overseas institutions and encourage them to work in Japan after they graduate ([Exum, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref219); [NEI Global Relocation, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref520)). Separately, the Japan International Cooperation Agency, or JICA, offers support specifically for students in developing countries to study in Japan in a wide variety of fields ([Japan International Cooperation Center, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref348)).
+
+Moreover, Japan introduced a new digital nomad program and began issuing such visas on April 1, 2024 ([Japan Immigration Services Agency, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref349); [Japanese Ministry of Foreign Affairs, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref354); [Leasca, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref404); [Symons, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref736)). The program, which seeks to boost tourism as the country continues to reopen post-COVID-19, is also a measure to attract entrepreneurs and skilled talent. While the duration of a nomad visa is for only 6 months, the program matches those of other countries, such as New Zealand, that have been effective at drawing from talent pools that may not have a network in the country. There is a salary minimum, and applicants receive priority if they serve key roles, such as in information technology. Currently, 49 countries are included in the program. While the nomad visa program does not guarantee long-term residency, it may serve as a gateway visa that could encourage talent to stay.
+
+Japan’s latest policy initiatives have expanded the pool from which Japanese universities and companies will be able to attract talent, but
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+baseline thresholds remain, restricting which kinds of individuals are able to benefit from these policies. Japan has made it a clear priority to render its economy and universities attractive to individuals from both developing and developed nations.
+
+##### _Singapore_
+
+While not highlighted in the OECD report, Singapore saw a 10 percent rise in foreign student enrollment in 2022 compared with 2021 ([_Business Times,_ 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref96)). Foreign workers in Singapore also increased by 4 percent from 2019 to 2023 ([Singapore Ministry of Manpower, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref692)). The country relies heavily on their contribution, with foreigners accounting for 36 percent of its workforce ([Hao, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref293)). Singapore remains a beacon of innovation and trade in the Southeast Asian region, with an economy that incentivizes foreign investment in its manufacturing and services industries in particular. R&D in Singapore is also highly active, driven in part by accommodating tax incentives and other policies.
+
+While Singapore remains a global city, restrictions in 2020 saw a reduction in foreign worker quota limits ([Hao, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref293)). However, new initiatives seek to improve the attractiveness of Singapore’s economy to students, entrepreneurs, and workers alike, led by the Singapore Economic Development Board. Singapore offers a variety of work and study programs and support for key sector studies. The government offers the Employment Pass for professionals, the S Pass for mid-skilled workers, the Work Permit for lower-skilled workers, the EntrePass for venture-backed business starters, and the ONE Pass for filling key openings in the country ([Singapore Economic Development Board, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref692)).
+
+Programs incentivizing foreign scholars to study in Singapore include the Singapore International Graduate Award, or SINGA, which caters specifically to postgraduate work and research ([Singapore A*STAR, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref692)), the Student Pass, which offers umbrella coverage for several academic programs ([Singapore Immigration and Checkpoints Authority, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref692)), and various scholarships, including the Association of Southeast Asian Nations Scholarship, offering support for ASEAN (Association of Southeast Asian Nations) regional students on a cyclical basis ([Singapore Ministry of Education, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref692)).
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+##### _South Korea_
+
+South Korea ranked in the top 10 countries in the Global Innovation Index in 2023 ([WIPO, 2023c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref851)), and its GDP grew at a rate of 2.6 percent in 2022 ([World Bank, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref62)). However, the OECD noted the restrictiveness of Korea’s immigration policy keeps it from attracting more talent. Between the 2019 and 2023 OECD reports, South Korea had a slight ranking drop in attractiveness to entrepreneurs and workers but showed a spike in ratings among foreign students (OECD, 2023e).
+
+South Korea aims to increase the international student population in the country by 300,000 students by 2027 ([Jung, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref375)). Included in the government’s offerings for foreign students, South Korea runs the Global Korea Scholarship (GKS) program, which features extensive financial support for international students for different degree programs (GKS Scholarship, 2024). GKS is limited to applicants from certain countries, academic performance, and age. The D-2 visa is the general visa for full-time or exchange programs and can be processed in a matter of days ([Embassy of the Republic of Korea, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref198)).
+
+The government sees foreign workers as an important means by which it can grow its economy aggressively in the face of falling birth rates ([Borowiec, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref74)). The Employment Permit System in South Korea aims to address worker shortages in different industries and is reactive to domestic economic conditions. Started in 2004, the program has serviced tens of thousands of workers on temporary authorizations of up to 5 years ([Global Skills Partnerships, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref50)). Other visa initiatives include the E-7, F-5, and G-1 visas for STEM, permanent worker residency, and entrepreneurs, respectively ([Republic of Korea Ministry of Justice, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref318)). The South Korean government further relaxed visa requirements and expanded the scope of visas for students and researchers in July 2024, with the intent of attracting more talent from overseas ([Jeung, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref360)).
+
+### [LESSONS FOR THE UNITED STATES](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-18a)
+
+Beyond the program availability of different countries and the method by which their policies are evaluated, global talent trends can also be assessed by measuring human flows and identifying where people choose to study and work the most. Based on data from the Institute of International Education, six countries—the United States, the United Kingdom, Canada, France, Australia, and Russia—hosted half the world’s
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+international students ([IIE, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref330)). In 2023, the United States, Australia, the United Kingdom, and Singapore were the countries with the greatest opportunities and potential for startups and entrepreneurs ([Enginsoy, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref199)). Among workers, the United States had more foreign-born residents in 2020 than the next five highest immigrant hosting countries combined ([Wisevoter, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref854)). While several of the country profiles above note the effect of COVID-19 and the subsequent policy reaction to the pandemic’s workforce strains, demographic shifts in postindustrial states will continue to place pressure on the relative success of talent attraction policies of different states ([Indeed and Glassdoor, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref336)).
+
+The push and pull factors behind these trends draw on political, social, and financial pressures. Across many of the countries analyzed in this section, and according to the rating approach of the OECD report, the permissiveness of visa policies is the first determining factor in how a country’s institutions can benefit readily from international talent. However, nations need to pair accessible and permissive visa policies with actions that address transition costs for international students, workers, and entrepreneurs. Tuition expenses or other relocation costs can dilute the prospective benefits of a new career or academic program. Countries that have differentiated themselves and performed better compared with their peers have illustrated flexibility to change and update their visa policies and talent recruitment and retention programs in response to national needs while accounting for domestic and international conditions. Perhaps this is the most important lesson for the United States following this global survey.
+
+What factors into a country’s attractiveness to talent besides national policies?[17](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_fn78) Despite being harder to quantify, social pressures and national reputations are another area that affects global talent flows. For instance, gun violence in the United States is having an increasing effect on how international students evaluate the appeal of going to a U.S. university ([Knox, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref392)). When balancing options in countries competing for the same cream of the crop, systemic issues tie back to how welcoming and safe a country is, or is perceived to be, and can make the difference in an applicant’s decision process ([Obst and Forster, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref574)). Despite issues about hospitableness and safety potentially driving talent away, the United States still enjoys a strong reputation as an academic and business leader globally for now. U.S. favorability generally
+
+___________________
+
+[17](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_ft78)_The Economist_ notes that “[m]any things that make a country attractive are beyond a government’s control,” but “there are plenty of things governments can do to make their countries more appealing to foreign talent” ([_The Economist,_ 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref759)).
+
+**Suggested Citation:** "5 How Do Other Countries Attract and Retain Talent?." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+remains high, and it continues to top many metrics for students and workers ([Wike et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref846)).
+
+Geopolitics are also relevant to the discussion on how talent flow patterns will evolve. Russia’s invasion of Ukraine, China’s posture regarding Taiwan and the Western Pacific, and the reignition of regional violence in the Middle East bring to the fore East-West tensions that have been building for decades. This has drawn into question how allies and rivals should share or curtail workforce development and economic growth. While at the individual level, a worker or student may be more motivated by the affordability or opportunity promise of one talent program over another, national policies are being reconsidered and reshaped through the lens of state competition.
+
+Nationalism and xenophobia also affect international human flows. Today, the narrative that foreign workers and immigration more broadly are driving up housing costs has become a common theme across many countries, including Canada, Australia, and the United States ([Condie, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref134); [Sanchis-Guarner, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref666); [Thanthong-Knight et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref755)).
+
+While improving the resources and policies for international talent at the national level can sharpen U.S. competitiveness relative to other countries, state governments and the private sector can also play a role in separating the United States from the crowd and in creating a more coherent talent-sourcing ecosystem. Regardless of the federal or state policy actions taken or not taken as a result of this study, some questions remain for decision-makers when considering the effects of attracting global talent. What are the short- and long-term implications of siphoning high-skilled talent from other countries, especially among developing nations? Should attracting global talent be seen as an equal exchange or as a zero-sum game? The United States is well positioned to retain its standing as a leading destination for workers, students, and entrepreneurs from around the world. How the United States maintains and leverages this status will likely have ripple effects well beyond its borders.
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/8 -->
+
+## 官方在线阅读第8章
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [6 The Development and Implementation of Talent Programs in Current Countries of Concern](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_ch6a)
+
+This chapter provides an overview of the status of talent recruitment programs developed by current countries of concern[1](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn79) to illustrate the evolution of these programs and aspects that are considered to be malign.
+
+### [CHINA](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-19a)[2](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn80)
+
+In 1994, the People’s Republic of China (PRC)[3](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn81) and the Chinese Communist Party (CCP) intentionally began to generate a “reverse brain drain” when the Chinese Academy of Sciences (CAS) introduced its 100 Talents Plan (_bai ren jihua_) ([Simon and Cao, 2009b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref690)). This was followed by the Diaspora Option in the late 1990s, under which China encouraged former or current citizens living abroad to transfer what they learned during their overseas Ph.D.s and postdoctoral studies or work in industry to institutions
+
+___________________
+
+[1](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft79)“Countries of concern” to the United States are fluid, and the three countries presented in this chapter are considered countries of concern as of August 2024. Additional information on countries of concern can be found in [Box 3-1](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_box3-1).
+
+[2](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft80)This section incorporates material from the commissioned paper “China’s Talent Programs: Lessons for the U.S.?” by David Zweig.
+
+[3](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft81)The committee wants to state upfront that when referring to China, this report is referring to the People’s Republic of China (PRC), the State, which is controlled by the Chinese Communist Party (CCP), and not to its people, many of whom are invaluable contributors to the global scientific enterprise ([Maizland and Albert, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref437); [NASEM, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref505)). The CCP has more than 98 million members as of 2022, while China’s total population is more than 1.4 billion people ([World Bank, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref861); [Xinhua News Agency, 2003](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref870)).
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+in China ([Gaillard and Gaillard, 1997](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref253); [Meyer et al., 1997](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref463)). This knowledge transfer could be made to and through universities, development zones, foreign and domestically run research institutes, global Chinese companies, state-owned enterprises, and the People’s Liberation Army ([Fedasiuk and Feldgoise, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref226); [Zweig, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref890)).
+
+Today, China operates 8 to 10 leading talent programs, but there may be up to several hundred similar efforts if provincial and municipal government talent programs are included ([Hannas et al., 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref300); [Joske, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref373); [Lloyd-Damnjanovic and Bowe, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref423); [U.S. Senate Permanent Subcommittee on Investigations, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref818); [Wang and Bao, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref836); [Weinstein, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref839)). [Appendix C](https://www.nationalacademies.org/read/27787/chapter/14#251) provides a nonexhaustive listing of incentive programs used by China, as well as other nations, to recruit talent at the national and provincial levels.
+
+#### National-Level Talent Programs
+
+Some programs pre-date the CAS’s 100 Talents Plan. For example, beginning in 1987, Chinese ministries and funding organizations introduced incentives to attract researchers educated abroad back to China. That year, the former State Education Commission, now the Ministry of Education (MOE), established the Financial Support for Outstanding Young Professors Programme, which awarded 2,218 returning professors a total of 144 million yuan ($20.1 million USD in 2024) by the end of 2003 ([Zweig, 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref889)).[4](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn82) Other early programs included the Seed Fund for Returned Overseas Scholars (1990) and the Cross-Century Outstanding Personnel Training Programme (1991) ([Zweig, 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref889)). The status of these programs is now unavailable ([Weinstein, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref840)). See [Table 6-1](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_tab6-1) for a list of PRC national-level talent programs.
+
+The Spring Light Program, which brought Chinese researchers educated abroad back to visit China following the Tiananmen Square protests and massacre in 1989, became MOE policy in 1996. The China Overseas Students Services Center (_Zhongguo liuxue fuwu zhongxin_), a unit under the MOE, eventually turned this program into a competition called the Chunhui Cup (_Chunhui bei_) ([China Overseas Network, 2007](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref122); [Spear, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref708)). Working with the Ministry of Human Resources and Social Security, the program arranged meetings between short-term returnees or visitors
+
+___________________
+
+[4](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft82)USD calculated using an exchange rate of 1 USD = 7.156 RMB as of August 6, 2024. See [https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CNY](https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CNY).
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+and officials and business organizations at special fairs throughout China. The Chunhui Cup competition aims to stimulate student innovation and entrepreneurship around the globe. In 2019, the program shortlisted 301 projects, mostly from the United States (80), the United Kingdom (42), Australia (28), Canada (24), France (16), Japan (14), Germany (13), Singapore (10) and Switzerland (10), focusing largely on automation, new materials, new energy, and biotechnology. From 2006 to 2018, 2,528 projects were shortlisted, of which 17 percent relocated to China ([Hannas and Tatlow, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref301)). By 2023, 3,424 projects had been selected ([Global Business College of Australia, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref10)).
+
+The Chinese government and the CCP established and expanded part-time programs for overseas scholars once it became apparent that these would be more attractive than full-time programs. While the Changjiang Scholars Program included a part-time component at the outset, MOE expanded the number of part-time awardees when few people committed to join full-time. China initially believed the CCP’s mobilization skills would ensure the Thousand Talent Program’s (TTP) success,[5](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn83) even with only a full-time component. However, from a sample of 501 of the first 1,500 participants in the program, 73.5 percent of these individuals were participating in a part-time capacity ([Zweig and Wang, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref892); [Zweig et al., 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref891)).
+
+Part-time talent programs proved to be much more problematic for the U.S. government than full-time talent programs ([Zweig and Kang, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref891)). If someone studies in the United States and then returns to China, the knowledge transfer is a one-time event. But knowledge and technology transfer can occur on a regular basis under a part-time program, where the talent program participant is moving back and forth and perhaps setting up a laboratory in China that mirrors their U.S. research lab. A selection of major talent programs run by the Chinese government as of 2018 are presented in [Table 6-1](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_tab6-1).
+
+___________________
+
+[5](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft83)Stoff writes that “[t]he Changjiang Scholars, Hundred Talents, and Thousand Talents programs have had notable success recruiting world-class experts who have made significant contributions to China’s S&T development” and that “[t]hese talent programs were foundational to a monumental policy shift that recognized that human capital investment was key to China’s S&T development” ([Stoff, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref716)). A recent report by the Mercator Institute for China Studies (MERICS) notes that “China is becoming more successful at attracting foreign talent but is still far from competing effectively with other global talent hubs,” including the United States ([Groenewegen-Lau and Hmaidi, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref291)). Shi et al. find that Young Thousand Talent program participants are “associated with a postreturn publication gain across journal-quality tiers,” likely attributable to access to more research funding and larger research teams ([Shi et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref280)).
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**TABLE 6-1 Major PRC National-Level Talent Programs as of 2018**
+
+| **Program** | **Agency in Charge** | **Target of the Program** | **Year Initiated** | **Total Number of Participants** |
+| --- | --- | --- | --- | --- |
+| Hundred Talent Program | CAS | Scientists under 45 years of age (a) | 1994 | 1,930 (b) |
+| National Science Fund for Distinguished Young Scholars | NSFC | Academic leaders under 45 years of age; frontier sciences and technology | 1994 | 3,454 (c) |
+| Chunhui Program and Chunhui Award | MOE | Chinese expatriates for short-term service | 1996 | 3,424 (15,000) (d) |
+| Changjiang Scholar Program | MOE | Endowed professorships for under 45 years of age; extended to 55 years of age in social sciences and humanities | 1998 | 2,948 |
+| Young Changjiang Scholar Program | MOE | Endowed professorships for young scholars at Chinese universities | 2015 | 440 (e) |
+| 111 Program | MOE and SAFEA (f) | 1,000 foreign scholars from top 100 universities and research centers | 2005 | 201 bases (g) |
+| Thousand Talent Program | CLGCTW | 1,000 academics, corporate executives, and entrepreneurs under 55 years of age to return from overseas | 2008 | 7,000 to 8,000 (h) |
+| Young Thousand Talent Program | CLGCTW | Academics under 40 years of age with at least 3 years of postdoctoral research | 2010 | 3,535 (i) |
+| Science Fund for Emerging Distinguished Young Scholars | NSFC | Researchers under 38 years of age to work in academia | 2011 | 2,398 (e) |
+| New Hundred Talent Program | CAS (j) | Renewal of Hundred Talent Program | 2014 | N/A |
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+NOTES: MOE, Ministry of Education; NSFC, National Science Foundation of China; SAFEA, State Administration of Foreign Expert Affairs; CLGCTW, Central Leading Group for the Coordination of Talent Work. (a) The 100 Talents Plan initially included part-time participants, but the CAS changed this policy around 2004. Too many individuals accepted the award, but rarely appeared at the CAS ([Hao Xin, 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref869)). (b) “Two-decade Development of the Hundred Talent Program,” ([Chinese Academy of Sciences, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref123)) reported that 90 percent of the 2,145 total awardees were from abroad, yielding 1,930 program participants. (c) Liu Bin, Qiao Lili, and Zhang Yi, “An Analysis of the Funding Status and Achievement Impact of National Science Fund for Distinguished Young Scholars in the Life Sciences” (in Chinese), Science Funds in China, No. 2 (2016): 122−131. (d) The Spring Light Program brought over 300 delegations to China by the end of 2009. These consisted of 15,000 overseas mainlanders who established over 1,000 projects 赵峰, 苗丹国, 魏祖钰, 程希 (Zhao Feng, Miao Danguo, Wei Zuyu, Cheng Xi), eds., 留学大事概览, 1949–2009 (An Overview of Overseas Study, 1949–2009). 北京： 现代出版社, 2010, 86. From 2006 to 2018, the Chunhui Award (春晖杯) had shortlisted 2,528 projects, of which 448 (17 percent) relocated to China. By 2023, 3,424 “excellent” projects had been selected. See Andrew Spear, “Serve the Motherland while working overseas,” in William C. Hannas and Didi Kirsten Tatlow, eds., China’s Quest for Foreign Technology: Beyond Espionage (London: Routledge, 2020）30–31. (e) SAFEA was closed in 2018 and reconstituted under the MOST. See 2017 Budget of the Former State Administration of Foreign Experts Affairs, CSET, Washington, DC, [https://cset.georgetown](https://cset.georgetown/). edu/publication/2017-budget-of-the-former-state-administration-of-foreign-experts-affairs/. (f) Project 111 “had recruited 39 Nobel Prize winners and 591 academics” by 2009. See [https://www.intelligence.senate.gov/sites/default/files/publications/AP_Report_22-01_R.pdf](https://www.intelligence.senate.gov/sites/default/files/publications/AP_Report_22-01_R.pdf). The names of the 111 Program project bases are posted at [https://opportunities-insight.britishcouncil.org/news/market-news/introduction-china%E2%80%99s-%E2%80%9C111-project%E2%80%9D-0](https://opportunities-insight.britishcouncil.org/news/market-news/introduction-china%E2%80%99s-%E2%80%9C111-project%E2%80%9D-0) ([British Council, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref83)). (g) There were 4,128 TTP awardees at the end of 2014, with an additional 1,028 participants joining TTP in 2015. China’s TTP has attracted 5208 high-end oversea talents’ [Zhongguo “qianrenjihua” yinjin 5206 ming haiwai gaocengci rencai], accessed March 10, 2020, [http://www.gqb.gov.cn/news/2016/0107/37723.shtml](http://www.gqb.gov.cn/news/2016/0107/37723.shtml). The Chinese media estimated 8,000 total TTP awardees in 2018. “Shengdu jiedu: guojia ‘qianrenjihua’ rencai xiangmu shenbao” [‘In-depth interpretation: 2018 national TTP application’], accessed October 2, 2019, [http://www.sohu.com/a/236432599_100103651](http://www.sohu.com/a/236432599_100103651). (h) “An Analysis of the 2015 Youth Thousand Talents Program” (in Chinese), at [http://www.1000plan.org/qrjh/article/60547](http://www.1000plan.org/qrjh/article/60547). Cao accessed it on July 20, 2017, but it is no longer accessible. (i) Cao, Baas, Wagner, and Jonkers present a similar table ([Cao, Baas, Wagner, and Jonkers, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref102); Cao, 2018). Cao Cong, Jeroen Baas, Caroline S. Wagner, and Koen Jonkers, “Returning scientists and the emergence of China’s science system,” Science and Public Policy, 47, 2 (2020): 176, doi: 10.1093/scipol/scz056, present a similar table. See also Cong Cao, “China’s Approaches to Attract and Nurture Young Biomedical Researchers.” A report for the Next Generational Researcher Initiative, U.S. National Academies of Sciences, Engineering, and Medicine (March 2018). (j) The Chinese Academy of Sciences, “Global Recruitment of Pioneer ‘Hundred Talents Program’ of CAS,” available online at [http://english.cas.cn/join_us/jobs/201512/t20151204_157107.shtml](http://english.cas.cn/join_us/jobs/201512/t20151204_157107.shtml) (accessed on July 20, 2017). “An Analysis of the 2015 Youth Thousand Talents Program” (in Chinese) was available at [http://www.1000plan.org/qrjh/article/60547](http://www.1000plan.org/qrjh/article/60547). Cao accessed it on July 20, 2017, but it is no longer accessible.
+
+ SOURCE: [Cao et al., 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref102).
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Chinese talent programs proffered impressive subsidies to returnees. Participants in full-time talent programs received much larger benefits than part-time participants, although the latter were given access to laboratories, grant and funding applications, housing, a monthly stipend, and graduate students who could work as research assistants as shown in [Table 6-2](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_tab6-2). TTP awardees received much more funding than the Changjiang scholars. Regarding direct subsidies, the monies given to “senior academics” under the CAS’ Pioneer Program was the largest grant given to any returnees, reaching RMB 7 million (or $1 million USD in 2024). This money was to be used for starting up a lab, with 1 million RMB more allocated for building a research team. Personnel departments in universities or research institutes could also find jobs for spouses and schools for children, and give start-up grants, relocation funds, and subsidize the purchase of housing.
+
+Following the Trump administration’s interest in TTP participants, China incorporated five subprograms in 2019 under the rubric of the TTP into one program called the High-End Foreign Expert Recruitment Program (_Gaoduan waiguo zhuanjia yinjin jihua_) ([Weinstein, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref839)). These five programs are as follows:
+
+1.   Innovative Talents Plan (Long-Term), the original 2008 plan for academics and scientists in universities and research institutes
+2.   Innovative Talents Plan (Short-Term), the part-time program under which thousands of researchers were able to join the program but return for only 2 to 3 months each year
+3.   Original “Entrepreneurs Components” of the TTP
+4.   Young Thousand Talents Program
+5.   Overseas High-Level Experts Program[6](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn84)
+
+The High-End Foreign Expert Recruitment Program has four foci:
+
+1.   Strategic science and technology (S&T) development, which includes all leading S&T projects such as cutting-edge technologies, among which those with the “potential to make major breakthroughs in critical core technologies and ‘stranglehold’ (_ka bozi_) fields” will be given priority.
+
+___________________
+
+[6](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft84)Researchers at the Moffitt Cancer Research Institute in Tampa, Florida and Charles Lieber at Harvard University, who were found guilty of concealing their respective affiliations with the TTP, participated in the Overseas High-Level Experts program.
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**TABLE 6-2 Level of Funding under Different Chinese National Programs, 1994 to 2014**
+
+| **Program** | **Startup Research Funds** | **Settlement Allowance** | **Extra Salary** | **Housing** |
+| --- | --- | --- | --- | --- |
+| 100 Scholars Plan (HTP) | &gt; 2 million RMB (&gt; $279k USD)[*](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_Sfft1) | 8 to 9 million RMB ($1.1 to $1.2 million USD) | 400,000 RMB per year ($56k USD per year) | Depends on institute |
+| HTP Pioneer Initiative | 7 million RMB ($978k USD), 1 million RMB ($140k USD) for team building (1) |  |  |  |
+| Changjiang Scholar Program Full-time | Usually &gt; 2 million RMB (Usually &gt; $279k USD) | 500,000 to 1 million RMB ($70k to $140k USD) | 200,000 RMB per year ($28k USD per year) | 100 to 200 square meter apartment |
+| Changjiang Scholar Program Part-time | Approximately 300,000 RMB (Approximately $42k USD) | None | 30,000 RMB per month when in China ($4k USD per month) | Usage |
+| TTP Full-time | 3.5 million RMB ($489k USD) | 1 to 1.5 million RMB ($140k to $210k USD) | 400,000 RMB per year ($56k USD per year) | None |
+| TTP Part-time | 500,000 RMB ($70k USD) | None | 30,000 RMB per month when in China ($4k USD per month) | Apartment |
+
+[*](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_Sffn1)USD calculated using an exchange rate of 1 USD = 7.156 RMB as of August 6, 2024. See [https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CNY](https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CNY)
+
+ NOTES: (1) “Academic Leaders” receive funds listed above. A second category, “Technological Excellence,” receives 1 to 2 million RMB and 0.6 million RMB from the CAS for infrastucture construction. For category 3 under Pioneer Program, “Young Talents,” were allocated 800,000 RMB in the first 2years, while the returnees’ institute would provide start-up funding support of no less than 500,000 RMB. After 2 years, all “Young Talents” were reviewed and selectively recruited into the “HTP” with a funding package of 2 million RMB and infrastructure construction funding (likely to be used for setting up a lab) of 600,000 RMB from the CAS ([Department of Education of the Embassy of the People’s Republic of China in the Federal Republic of Germany, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref158)).
+
+ SOURCE: Zweig et al., n.d.
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   Industrial technology innovation, with an emphasis on “transformation and upgrading, innovation-based development, and implementation of the ‘go global’ (_zou quanqiu_) strategy,” as well as “push for new breakthroughs in key technologies, production techniques, and product design,” suggests that it supports Made in China 2025, without mentioning this “no longer to be discussed” project.
+2.   Social and ecological construction, to “continuously promote the healthy development in China of such fields as health care, social security, finance and insurance, laws and regulations, spoken and written languages, culture and the arts, and modern service industries” and with the goal of recruiting foreign experts who can promote green development, solve prominent environmental problems, promote ecosystem protection, and play important roles in the implementation of the regional coordination and sustainable development strategies.”
+3.   Agriculture and rural revitalization, emphasizing talent that can bring in improved foreign breeds, planting and animal husbandry technology, safe production and inspection technology, and advanced production and management methods. This would promote developing high-yield, high-quality, highly efficient, ecologically sustainable, and safe modern agriculture ([Department of Foreign Expert Services of the PRC Ministry of Science and Technology, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref158)).
+
+The CAS and other bureaus are believed to have introduced new programs to “get in line” with, or show support for, the government’s and the CCP’s national program to encourage the return of talent. As of 2019, six national ministries or agencies were operating 13 talent programs, with local governments initiating at least 183 programs to attract international talent.[7](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn85) The proliferation of talent programs at multiple levels of government, as well as renaming of programs to evade external scrutiny, makes it difficult to track China’s talent programs reliably.[8](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn86)[Appendix C](https://www.nationalacademies.org/read/27787/chapter/14#251) contains several
+
+___________________
+
+[7](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft85)These data were accessed by David Zweig at [http://www.1000plan.org.cn/qrjh/section/4/list](http://www.1000plan.org.cn/qrjh/section/4/list) on October 4, 2019, and are no longer available online.
+
+[8](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft86)The Chinese Talent Program Tracker created and maintained by Georgetown University’s Center for Security and Emerging Technology (CSET) classifies Chinese talent programs as “active,” “inactive,” or “absorbed” and provides additional information on Chinese talent programs that may have been renamed or subsumed by another program when available. See [https://chinatalenttracker.cset.tech/](https://chinatalenttracker.cset.tech/).
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+earlier compilations of talent programs. However, the committee notes that the U.S. Department of Defense has stopped updating lists of PRC talent programs because of the frequent changes to the names of these programs.
+
+From their earliest stages, the principal focus of PRC talent programs has been on Chinese nationals and on the global Chinese diaspora as sources of talent and technology ([Xie and Freeman, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref865); [Zweig et al., 2008](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref893)). For example, in early 2007, the MOE put forth a plan to “strengthen the work of attracting excellent talent from overseas” ([PRC Ministry of Education, 2007](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref617)). This program defined three types of talents: international leaders in their fields who have created innovative teams, “Sturdy” (_jieshi_) basic researchers capable of making breakthroughs and becoming top academic leaders, and “Core” (_zhugan_) young professors and researchers who can raise the entire level of research and teaching ([Zweig and Wang, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref892)).
+
+To find such individuals, the MOE called on local governments to create databases listing their needs related to talent in education, research, and innovation and to work those gaps into each locality’s development strategy. Then, after building a citywide database of their needs, they were to introduce new policies that would facilitate the return of talent ([Beijing Municipal Government, 2000](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref58); [van Dongen, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref821)). Education counselors in Chinese embassies and consulates abroad were also expected to build datasets of PRC-born Chinese talent in their locality, find out who among them was “inclined to return,” strengthen links with these people, and then make concrete plans to bring them home ([Zhao and Zhu, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref885); [Zweig et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref895); [Zweig and Wang, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref892)). An online newspaper known as _Shenzhou Xueren_ would be used by the MOE to spread the message about overseas study ([Broaded, 1993](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref84); [Zweig, 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref889)). Various local and overseas returnee organizations were to bridge the population overseas, while the domestic units needing returnees were to meet with groups of overseas scholars whom the ministry would bring back biannually using programs, such as CAS’s 100 Talents Program, the Changjiang Scholars Program, and the Spring Light Program ([Embassy of the People’s Republic of China in the United Kingdom of Great Britain and Northern Ireland, 2007](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref197); [Li et al., 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref123); [Wang and Bao, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref836)).
+
+However, China recognized at the time that its universities remained insufficient to fulfill the goals the MOE established. Instead, China needed “new ways of thinking” (_xin silu_) and “new methods” for bringing back overseas talent ([Zweig and Wang, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref892)). After Li Yuanchao became director of the CCP Organization Department following the 17th Party Congress
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+in 2007, he proposed the Overseas High-Level Talent Recruitment Programs policy (_Haiwai gaocengci rencai yinjin jihua_), or the 1000 Talents Plan, and began a nationwide mobilization to get people to return to China ([Bekkers, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref60); [Zweig and Kang, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref891)). Li was convinced that with Communist Party leadership the sluggish pace of reverse migration could be sped up dramatically and people would return full-time unlike under the Changjiang Scholars Program. Under his leadership, the CCP moved into action, following many of the strategies articulated in the MOE’s plan of 2007.
+
+Under a nationwide mobilization, cities established talent committees under the city’s CCP committees to promote the program, which were expected to create lists of the extant gaps in their talent bases ([General Office of the Central Committee of the Communist Party of China, 2012](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref259)). Cities throughout China were pressured to commit publicly to a target number of highly talented returnees they would recruit ([China Economic Net, 2010](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref120); [Zweig and Wang, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref892)). Beijing promised to deliver 500 new talents from abroad within a 5-year period, while Guangzhou promised to bring home 300 China-born scientists, academics, and businesspeople who were living abroad. Jinan, an inland city home to Shandong University, committed to attracting 150 returnees, a number beyond its capabilities. With the policy under the local CCP committee, pressure to meet commitments increased, though the quotas of returnees to which cities had committed was reportedly “soft” and would not affect people’s careers if they were not accomplished ([Zweig, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref890)).
+
+However, expectations were high for employers, including universities, high-tech parks, research institutes, and state-owned enterprises, that were expected to improve their internal environments so returnees would stay. In December 2009, Shanghai sought to recruit 115 financial sector employees presently located in New York, Toronto, and Singapore to return, a task made easier by the global financial crisis ([Zweig and Kang, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref891); [Zweig and Wang, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref892)). The salary package offered to these individuals was reportedly competitive with overseas salaries, while the city government promised to resolve all housing, education, and health care issues ([CCTV, 2009](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref107); [Dawson, 2010](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref154)). Similarly, officials from Jinan sought to recruit 150 individuals in 5 years under the capital city’s “5-150 jobs campaign,” carrying out recruiting visits in New York, Silicon Valley, and Toronto ([China Economic Net, 2010](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref120); [Zweig and Kang, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref891); [Zweig and Wang, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref892)). Anecdotal evidence suggests that the most effective
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+recruiting was through personal ties rather than publicity or outreach ([Li et al., 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref123); [Peng, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref61)).[9](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn87)
+
+No policy in China can escape having a propaganda component ([Chang, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref109); [Diamond and Schell, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref171)). As mentioned earlier, an online newspaper known as _Shenzhou Xueren_ was established by the MOE in 1994 explicitly to network with PRC-born Chinese people living overseas ([Broaded, 1993](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref84); [Zweig, 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref889)). Besides websites for each of these programs, and for universities and governments who created their own talent programs, this website kept Chinese people overseas abreast of options available for those contemplating returning. The Overseas Edition of the _People’s Daily,_ which reflects CCP policy, published a series of articles over several months commending returnees. Furthermore, the state held conferences to “glorify” those who had returned, with major “laudatory activities” (_biaoyang huodong_) occurring in 1991, 1997, and 2003 ([Miao, 2010](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref464)). The CCP emphasized this type of activity and encouraged competition among government agencies and knowledge-based institutes in establishing contacts with PRC-born scholars working overseas ([Biao, 2005](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref68)). The CCP endowed recipients of the TTP, in particular, with a great deal of prestige. While Changjiang Scholars Program participants were not held in the same esteem as the TTP winners, this designation did help recipients to stand out among their peers ([Jiang, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref363); [Li et al., 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref123); [Li and Tang, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref4)).
+
+To further reduce “transaction costs,” the central government introduced a new “R” visa category especially for high-end foreign talents whose professions and employers are among the lists provided by the central and local governments in September 2013 ([Qian and Elsinga, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref627); [Yin, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref875); [Yu and Wang, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref12)). According to this policy, R visa holders are eligible for a 5-year residence permit without any additional requirements ([Xin, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref868)). The “R” visa category was expanded in 2017 to include “scientists, entrepreneurs, and leading experts in science and technology industries” ([Zwetsloot, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref896)).
+
+As noted in [Chapter 2](https://www.nationalacademies.org/read/27787/chapter/4#19) of this report, in the years following Xi Jinping’s ascension to power in 2012, Chinese talent recruitment programs were
+
+___________________
+
+[9](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft87)A recent report by the Mercator Institute for China Studies (MERICS) notes that “China has not been very successful in attracting high-quality talent who didn’t already have an established link to China” ([Groenewegen-Lau and Hmaidi, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref291)). Establishing personal connections is of paramount importance and often factors into recruitment decisions ([Jia, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref361)). Furthermore, the committee notes China’s use of LinkedIn, a social media platform for networking, to recruit assets abroad ([Tucker, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref773); [U.S. Senate Select Committee on Intelligence, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref819); [Wong, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref858)).
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+reinvented as a lever to “facilitate the transfer of technology” and to cultivate human capital ([Lester et al., 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref408); [Priestap, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref619); [Zwetsloot, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref896)). In 2015, Xi proclaimed that “overseas Chinese students are an important component of the ranks of talent” (_rencai duiwu_) and are “also a new focal point of United Front work” (_ye shi tongzhan gongzuo xin de zhaolidian_) ([Xi, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref864)). This suggested that the CCP would increase its control of activities related to overseas students and scholars and would actively engage Chinese-born individuals in other countries, possibly through embassies and consulates ([Xi, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref864)). After decades of handling ties with the Chinese diaspora, the Overseas Chinese Affairs Office was assimilated into the United Work Front Department[10](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn88) following CCP and government reforms in 2018 ([Joske, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref372); [People’s Republic of China, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref157)).
+
+It has been stated that the original intent of the TTP was to “create an ‘innovative society,’ not to steal U.S. technology” ([Zweig and Kang, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref891)). In the 2010s, however, Chinese talent recruitment programs and similar initiatives began to be seen as problematic by the United States and Australia ([Joske, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref371); [Mervis, 2019a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref452); [Redden, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref638); [Vogel and Ouagrham-Gormley, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref826)).[11](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn89) U.S. government agencies took notice, with the FBI releasing the report _Higher Education and National Security: The Targeting of Sensitive, Proprietary and Classified Information on Campuses of Higher Education_ in April 2011[12](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn90) and a Counterintelligence Strategic Partnership Intelligence Note (SPIN) on Chinese talent programs in September 2015 ([FBI, 2011](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref222), [2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref223)). The National Institutes of Health (NIH) became aware of undue foreign interference in NIH-funded research in 2016 ([NIH, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref548)). The National Science Foundation (NSF) issued a requirement that
+
+___________________
+
+[10](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft88)The United Front Work Department (UFWD) reports directly to the CCP Central Committee ([Fedasiuk, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref226); [Fedasiuk et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref228); [Joske, 2020b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref374); [NASEM, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref505)). The UFWD is the agency responsible for coordinating the CCP’s “United Front” work, which “mostly focuses on the management of potential opposition groups inside China, but … also has an important foreign influence mission” ([Bowe, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref78)).
+
+[11](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft89)Vogel and Ouagrham-Gormley write that “U.S. officials’ view of the TTP started to change under the Donald Trump administration, which reversed position and took a more aggressive policy stance toward China, rooting the TTP in the ongoing fight about China’s infringement on intellectual property rights” ([Vogel and Ouagrham-Gormley, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref826)).
+
+[12](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft90)Furthermore, the report _China’s Program for Science and Technology Modernization: Implications for American Competitiveness_ was prepared by CENTRA Technology, Inc. and delivered to the U.S.-China Economic and Security Review Commission in April 2011. See [https://www.uscc.gov/sites/default/files/Research/USCC_REPORT_China%27s_Program_forScience_and_Technology_Modernization.pdf](https://www.uscc.gov/sites/default/files/Research/USCC_REPORT_China%27s_Program_forScience_and_Technology_Modernization.pdf).
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+all onsite rotators[13](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn91) must be U.S. citizens or have applied for U.S. citizenship in April 2018, and it was reported in March 2019 that the agency was in negotiations with the JASON independent science advisory group to commission a report on the “growing concerns that international [scientific] collaborations pose a security risk to the United States” ([Córdova, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref137); [Mervis, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref453)). The commissioning of the JASON report was formally announced by National Science Foundation (NSF) Director France Córdova in July 2019, and the resulting product, _Fundamental Research Security,_ was released in December 2019 ([Córdova, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref137); [NSF, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref137)).[14](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn92)
+
+In January 2019, the Department of Energy (DOE) issued a policy on foreign government talent recruitment programs, stating that “DOE personnel will be subject to limitations, including prohibitions on their ability currently or in the future to participate in foreign talent recruitment programs of countries determined sensitive by DOE while employed by DOE, or performing work within the scope of a DOE contract” ([Brouillette, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref85); [Mervis and Cho, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref452); [Puko and O’Keeffe, 2019a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref622); [Redden, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref638)). DOE Order 486.1, issued in June 2019, prohibited DOE federal and contractor employees “from participating in certain foreign government talent recruitment programs” ([DOE, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref175); [Puko and O’Keeffe, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref623)). While the order did not list specific countries, it was reported that DOE officials were limiting participation in such programs sponsored by China, Iran, North Korea, and Russia ([Thomas, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref761)).
+
+Meanwhile, in March 2019, the Department of Defense (DOD) stated the need to work with institutions of higher education performing defense research “to limit undue influence, including through foreign talent programs, by countries to exploit United States technology within the Department of Defense research, science and technology, and innovation enterprise” in accordance with the John S. McCain National Defense Authorization Act for Fiscal Year 2019 (10 U.S.C. 4001 note; P.L. 115-232) ([Griffin, 2019a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref289)). This was followed by a letter from Under Secretary of Defense for Research and Engineering Michael Griffin to the academic community in October 2019, in which he asked for “help in developing and implementing solutions and best practices [for research protection] and participating in threat awareness and information sharing” ([Griffin, 2019b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref290)).
+
+___________________
+
+[13](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft91)At NSF, rotators are visiting scientists, engineers, and educators who serve as temporary program directors, typically for 1 to 2 years. See [https://new.nsf.gov/careers/rotator-programs](https://new.nsf.gov/careers/rotator-programs).
+
+[14](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft92)NSF has subsequently commissioned additional reports on the topic of research security from the JASON independent scientific advisory group.
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Sections 10631 and 10632 of the CHIPS and Science Act (P.L. 117-167, August 9, 2022) “provide for covered individuals to disclose if they are a party to any foreign talent recruitment program, and to certify that they are not a party to a malign foreign talent recruitment program” ([Prabhakar, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref614)). These sections ultimately prohibit U.S.-based researchers with federal funding from participating in foreign talent recruitment programs sponsored by China or Russia ([Mervis, 2022c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref456)).
+
+### [RUSSIA](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-20a)
+
+Russia’s S&T prowess peaked in the 1950s and 1960s, when the Soviet Union succeeded at launching the first artificial satellite, _Sputnik,_ into space in 1957 and having the first human, Yuri Gagarin, orbit Earth in 1961. These achievements instilled fear that the United States was falling behind in S&T, leading to significant investment in and the acceleration of U.S. space and weapons programs ([DOS, n.d.b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref182)). The United States ultimately did win the race to the moon, as well as the Cold War, and Russia’s scientific ecosystem, infrastructure, and capacity have languished and declined sharply following the fall of the Soviet Union in 1991 ([Baker, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref44)).
+
+While significantly smaller in scale and scope than China’s talent recruitment programs, Russia did enact strategies and excellence initiatives to elevate its universities and attract foreign talent in the early to mid-2010s. Project 5-100, or the Russian Academic Excellence Initiative, was a program the Russian Ministry of Education and Science established in 2012 ([DCSA, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref155)). Its goal was to improve the prestige of Russian higher education, specifically by elevating at least five Russian universities into the top 100 universities in the world by 2020 ([ACA, 2016](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref6); [Agasisti et al., 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref12); [Crowley-Vigneau et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref148); [DCSA, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref155); [Guo et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref293); [Mäkinen, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref438); [Matveeva et al., 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref444), [2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref445); [Poldin et al., 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref612); [Tsvetkova, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref771)).[15](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn93) While the program ultimately did not reach this goal, it did play an outsize role in increasing the visibility and status of Russian higher education and science ([Guskov and Kosyakov, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref297); [Matveeva et al., 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref444); [Osipian, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref598); [Vorotnikov, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref827)). The Russian Ministry of Education and Science allocated a total of 86 billion rubles ($1 billion USD in 2024)[16](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn94) to 21 Russian universities in support of
+
+___________________
+
+[15](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft93)The top 100 universities in the world as defined by three different ranking systems: (1) Academic Ranking of World Universities (ARWU), (2) Times Higher Education (THE), and (3) Quacquarelli Symonds (QS).
+
+[16](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft94)USD calculated using an exchange rate of 1 USD = 85.5736 RUB as of August 6, 2024. See [https://www.xe.com/currencyconverter/convert/?Amount=1&From=RUB&To=USD](https://www.xe.com/currencyconverter/convert/?Amount=1&From=RUB&To=USD).
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Project 5-100, which required each university “to have at least 10 percent international professors amongst the staff and no less than 15 percent international students” ([_Vestnik Kavkaza,_ 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref825); [Vorotnikov, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref827)). More than 40 percent of all Ph.D. students in Russia studied at these 21 universities ([Maloshonok and Terentev, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref440); [Tsvetkova, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref771)).
+
+The successor excellence initiative to Project 5-100 is the Priority 2030 Strategic Academic Leadership Program (Priority 2030) ([ACA, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref7); [Kochetkov, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref394); [Russian Ministry of Science and Higher Education, 2021a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref661); [Tsvetkova, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref771); [Vorotnikov, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref827)). This program, which is the “largest scale state program in Russian history designed to support Russian universities and drive the competitive quality of Russian education, science and technology” through the creation of more than 100 progressive modern universities in Russia, was launched by the Ministry of Science and Higher Education on June 24, 2021, and will operate until 2030 ([Russian Ministry of Science and Higher Education, 2021b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref662); [TYCYP, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref775), [2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref776); [Vorotnikov, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref827)).[17](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn95) The Russian Ministry of Education and Science will provide at least 100 billion rubles ($1.17 billion USD in 2024)[18](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn96) in funding for the program, with 106 universities selected to participate and receive a basic grant of 100 million rubles per year ($1.17 million USD in 2024) ([Kochetkov, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref394); [Russian Ministry of Science and Higher Education, 2021b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref662); [Vorotnikov, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref827)). The award “may be spent on propitious research and developments, or projects aimed at solving the region’s tasks” ([Priority 2030, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref620)). Forty-six universities were later selected to receive additional grant funding to focus on research leadership or territorial/industry leadership ([Kochetkov, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref394)).
+
+The Skolkovo Institute of Science and Technology (Skoltech) is a Russian graduate university established in 2011 in partnership with the Massachusetts Institute of Technology (MIT). Skoltech was founded to be one of the best science and technology universities in Russia, and its partnership with MIT was essential to its success ([Box 6-1](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_box6-1)). MIT severed its partnership with Skoltech following Russia’s invasion of Ukraine in 2022.
+
+The ITMO (Information Technologies, Mechanics and Optics) Fellowship Program was established in 2014 with the goal of strengthening ITMO University “as a research hub through international academic mobility and
+
+___________________
+
+[17](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft95)Some information regarding the Priority 2030 program has been removed from the internet and is no longer accessible ([Tsvetkova, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref771)).
+
+[18](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft96)USD calculated using an exchange rate of 1 USD = 85.5736 RUB as of August 6, 2024. See [https://www.xe.com/currencyconverter/convert/?Amount=1&From=RUB&To=USD](https://www.xe.com/currencyconverter/convert/?Amount=1&From=RUB&To=USD).
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+#### **BOX 6-1**
+
+**The Skolkovo Institute of Science and Technology**
+
+The Skolkovo Institute of Science and Technology (Skoltech) was founded by the Russian government[_a_](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_c06ffn1) in 2011, in partnership with the Massachusetts Institute of Technology (MIT), “to be one of the best science and technology unversities in Russia and the world, renowned for excellence and impact” ([Skoltech, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref701)). Much like the Okinawa Institute of Science and Technology, which was established the same year, Skoltech offers only graduate degrees, conducts all teaching in English, and is the centerpiece of a nascent innovation hub ([Skoltech, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref701)).
+
+Skoltech’s partnership with MIT was essential to the institution’s success, with MIT faculty assisting with curriculum development and instruction as well as joint faculty hiring efforts ([Hudson, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref322); [MIT Skoltech Program, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref470)). Educational exchanges took place, and Skoltech and MIT researchers published more than 150 joint papers during a 5-year period ([Kuleshov, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref397)).[_b_](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_c06ffn2) MIT ended its involvement with Skoltech following Russia’s invasion of Ukraine in February 2022 ([Basken, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref49); [Hudson, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref322); [MIT Skoltech Program, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref469)).
+
+__________________
+
+[_a_](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_c06fft1) While Skoltech receives funds from the Russian government, it is a private university ([MIT News, 2011](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref468)).
+
+[_b_](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_c06fft2) Between 2017 and 2019, 24 percent of published Russian research papers included foreign collaborators as authors ([Hudson, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref322); [UNESCO, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref786)).
+
+collaboration” ([ITMO Fellowship, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref345)).[19](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn97) The program offers six different tracks (see [Table 6-3](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_tab6-3)), featuring short-term and long-term opportunities and targeting scientists at different points in their careers: visiting lecturer, micro fellowship, postdoc, fellowship, research professorship, and principal investigator and their team ([ITMO Fellowship, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref345)). Applications are assessed six times per year, and there are more than 50 supported applica-
+
+___________________
+
+[19](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft97)ITMO University is a state-supported university and one of Russia’s National Research Universities. Its full name is the Saint Petersburg National Research University of Information Technologies, Mechanics and Optics.
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**TABLE 6-3 Multiple Tracks Available through the ITMO Fellowship Program**
+
+**Visiting Lecturer****Micro Fellowship****Postdoc****Fellowship****Research Professorship**
+Activities Teaching Research Research & minor teaching duties Research & team leadership Research & team leadership
+Required degree Ph.D. preferred Ph.D.Ph.D. (received within max. 5 years)Ph.D.Ph.D.
+h-index 0+5+[*](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_c06sfft1)4+7+20+
+Duration of contract 2-3 weeks 1 month 1-3 years 1-3 years 1-2 years
+Time spent at ITMO required One visit per semester (max. 4 total)One visit 12-month relocation 12-month relocation At least 4 months per year
+Deliverables Lecture course 3 ECTS[**](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_c06sfft2)*   Publication of an article
+*   2 open seminars for students*   Publication of 2 articles
+*   Course for students (3 ECTS)*   Creation/leadership of a scientific team
+*   Publication of 3 articles
+*   Participation in conferences
+*   Application for additional funding
+*   2 master’s theses supervision
+*   Course for students (3 ECTS)*   Creation of a laboratory
+*   Publication of 4 articles
+*   Participation in conferences
+*   2 applications for additional funding
+*   Master’s theses supervision
+*   Course for students (3 ECTS)
+Remuneration 170,000 RUB ($1,967 USD) OR 50,000 RUB ($579 USD) + expenses coverage[***](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_c06sfft3)170,000 RUB ($1,967 USD) + expenses coverage[***](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_c06sfft3)116,500 RUB ($1,339 USD) per month[***](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_c06sfft3)200,000 RUB ($2,287 USD) per month[***](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_c06sfft3)99,333 RUB ($1,136 USD) per month[***](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_c06sfft3)
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+tions annually, with approved applicants invited to begin their collaboration with ITMO University laboratories within 6 months (ITMO Fellowship). Individuals currently work as fellows and professors through the program, with an average h-index of 15.7[20](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn98) for those participating in the program in 2022 ([ITMO Fellowship, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref345)). The ITMO Fellowship Program provides participants with visa, travel, relocation, and adaptation support; insurance; and other benefits ([ITMO Fellowship, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref345)).
+
+### [IRAN](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-21a)
+
+Iran has lost tens of thousands of experts and researchers to North America,[21](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn99) Europe, and other countries since the 1979 Iranian Revolution, with many leaving for better jobs and salaries ([DCSA, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref155); [Motevalli, 2014a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref475), [2014b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref476)).[22](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn100) At least 40 percent of top Iranian students with degrees in science, technology, engineering, and mathematics left the country in pursuit of advanced degrees during the early 2010s ([Motevalli, 2014b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref476)). As a result, the Iranian government founded the National Elites Foundation (INEF) in 2005 to “recognize, organize and support Iran’s elite talents in an effort to prevent ‘brain drain’” ([DCSA, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref155); [Leube, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref409)). INEF employs government-sponsored initiatives to encourage students studying and conducting research abroad to return and share their knowledge ([DCSA, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref155); [_Tehran Times,_ 2018a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref751)). Incentives used by INEF to attract talent back to Iran include scientific resources and facilities, research grants, accommodation and travel allowances, and research opportunities within the armed forces in lieu of military service ([DCSA, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref155); [_Financial Tribune,_ 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref230)). It was reported in 2018 that 450 non-resident Iranian elites returned through INEF, with the expectation of
+
+___________________
+
+[20](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft98)An h-index of 15.7 means the researchers in this program have published an average of 15.7 papers that have each been cited an average of 15.7 times.
+
+[21](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft99)In 2012, the NSF determined that 89 percent of Iranian doctoral degree recipients remained in the United States ([Motevalli, 2014b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref476)).
+
+[22](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft100)Approximately 67,000 Iranian citizens departed the country in the 1970s, 281,000 departed the country in the 1980s, and 2.1 million departed the country in the 1990s ([_Financial Tribune,_ 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref230); [Leube, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref409)). Azadi et al. estimate a cumulative total of 3.1 million Iranian-born people have emigrated from the country as of 2019 ([Azadi et al., 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref42)). The outward flow continues, with Iran experiencing “the fastest growth in the migration rate to wealthy OECD countries between 2020 and 2021” ([Ghaffari, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref266)). Those leaving Iran cite economic, political, and environmental factors ([Azadi et al., 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref42); [Esfandiari, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref206); [Mahmoudi, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref436); [Sinaiee, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref691); [Ziabari, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref888)).
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+using “their talents to encourage entrepreneurship and wealth creation in the country” ([Iran Project, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref338)).
+
+The Iranian government also has promoted international education,[23](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn101) with the explicit goal of cultivating students who will return to Iran and share their innovative knowledge in country ([DCSA, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref155)). Finally, initiatives such as the “cooperation with Iranian expat entrepreneurs and elite plan” seek to attract Iranians abroad to share their knowledge, experience, and technology ideas ([_Tehran Times,_ 2018b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref752)).
+
+### [THE CURRENT STATE OF PLAY](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-22a)
+
+The committee notes that malign foreign talent recruitment programs are fluid and a moving target for several reasons. National-level programs are frequently restructured and rebranded in response to actions taken by the U.S. government ([Weinstein, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref839); [Zhu et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref887)). As presented in [Appendix C](https://www.nationalacademies.org/read/27787/chapter/14#251), the PRC has many additional foreign talent recruitment programs at the provincial and local levels. The committee did not have access to talent program contracts signed by participants currently residing in or with ties to the United States beyond those that are publicly available.[24](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn102) According to Michael Lauer, deputy director for extramural research at the National Institutes of Health, talent program contracts obtained by the agency varied among different Chinese entities and programs, but typically included one or more of the characteristics of a malign foreign talent recruitment program.[25](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn103) It is reasonable to expect that these programs will continue to morph as the United States, and other allies, implement rules and regulations intended to prevent researchers receiving domestic funding from participating in such programs. For this reason, training and continuing information flows to institutions and
+
+___________________
+
+[23](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft101)Azadi et al. estimate that approximately 700,000 Iranian-born individuals have studied at foreign universities, with numbers increasing since the early 2000s ([Azadi et al., 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref42)). Approximately 130,000 Iranian-born students were enrolled at institutions abroad in the late 2010s ([Azadi et al., 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref42)).
+
+[24](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft102)Publicly available contracts include [Appendix A](https://www.nationalacademies.org/read/27787/chapter/12#237) of the U.S. Senate’s Permanent Subcommittee on Investigations’ report on _Threats to the U.S. Research Enterprise: China’s Talent Recruitment Plans._ See [https://www.hsgac.senate.gov/wp-content/uploads/imo/media/doc/2019-11-18%20PSI%20Staff%20Report%20-%20Appendix%20A%20-%20China’s%20Talent%20Recruitment%20Plans.pdf](https://www.hsgac.senate.gov/wp-content/uploads/imo/media/doc/2019-11-18%20PSI%20Staff%20Report%20-%20Appendix%20A%20-%20China%E2%80%99s%20Talent%20Recruitment%20Plans.pdf).
+
+[25](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft103)A definition of “malign foreign talent recruitment program” can be found in the Glossary.
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+researchers about flags to watch for will be imperative.[26](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn104) Resources regarding problematic programs and institutions are likely to become obsolete almost as soon as they are promulgated.
+
+The committee also notes that some nations not designated as countries of concern in [Box 3-3](https://www.nationalacademies.org/read/27787/chapter/5#chapter03_box3-3) have engaged in practices that are defined as malign by provisions contained in the CHIPS and Science Act (P.L. 117-167, August 9, 2022). For example, some universities in Saudi Arabia offered lucrative payments for highly cited researchers to list their institution as a secondary affiliation, or to switch their primary affiliation to their institution, during the 2010s ([Ansede, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref32); [Bhattacharjee, 2011](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref67); [Catanzaro, 2023a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref105), [2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref106)). This was done with the intent of raising the rankings and prestige of Saudi institutions, rather than obtaining information or intellectual property.
+
+Such examples demonstrate that, while some of the characteristics of malign talent programs have potentially direct economic and national security implications, others represent unethical shortcuts to improving competitiveness in the global attraction of talent. Students and researchers are attracted by outstanding universities and a robust S&T ecosystem. The quality of its higher education system and of its research universities in particular is a critical component of a nation’s attractiveness to international talent. While the United States boasts a wealth of research universities that is second to none, global competition is increasing. The Aggregate Ranking of Top Universities, or ARTU, which combines the three major global rankings (Times Higher Education World University Rankings, QS World University Rankings, and ShanghaiRanking’s Academic Rankings of World Universities) shows gains in the number of top 200 universities over the last decade in Australia, China, and Germany, largely at the expense of the United States. In fact, China now ranks third behind the United States and the United Kingdom in the number of its universities ranked in the top 200 ([Jack, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref346); [Morrison, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref472); [Shanghai Ranking, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref680); [Simon, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref136); [Times Higher Education, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref306); [QS World University Rankings, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref632); [UNSW, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref789); [Wagner, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref829)). Furthermore, China reiterated its commitment to building “world-class universities” in support of achieving its ambitious S&T goals in July 2024 ([Wang, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref362)).
+
+___________________
+
+[26](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft104)The NSF, in partnership with the National Institutes of Health, DOE, and DOD, released four research security training modules in January 2024. In accordance with National Security Presidential Memorandum-33 and the CHIPS and Science Act, “covered individuals (senior/key personnel) listed on the application for a research and development award are required to take the training.” See [https://new.nsf.gov/research-security/training](https://new.nsf.gov/research-security/training).
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+As noted previously in this report, increasing international student enrollments is a key component of the talent strategies of many countries. [Chapter 2](https://www.nationalacademies.org/read/27787/chapter/4#19) illustrated the gains in market share of international students by other Organisation for Economic Co-operation and Development (OECD) countries. These data do not capture flows of students to non-OECD countries, which has been increasing faster than those to OECD countries ([OECD, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref581)). Prior to the COVID-19 pandemic, enrollment of international students in institutions of higher education in China reached nearly 500,000, with more than 75 percent of these students coming from Asia and Africa ([PRC Ministry of Education, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref618); [Schulmann and Ye, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref674); [Singh, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref699)). China has not released official data for subsequent years, but the 2018 number placed it third, behind only the United States and the United Kingdom, at that time. Furthermore, attracting international students is an important part of China’s Belt and Road Initiative ([Bela and Peng, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref61); [Hillman and Tippett, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref313); [Jingyi, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref365); [Jingyi and Weilan, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref364); [Qi, 2021a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref625), [2021b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref626); [Rezaei and Mouritzen, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref650); [Richter, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref653); [Ting et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref278)).[27](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_fn105)
+
+When international students return to their home countries after their studies, they serve to expand the knowledge of their host country’s culture and values. While it is therefore tempting to frame the competition for students as a competition for hearts and minds, the United States also needs its domestic students and graduates to understand the culture and values of other nations if it is to respond with agility and expertise to the ever-changing global environment.
+
+___________________
+
+[27](https://www.nationalacademies.org/read/27787/chapter/8#chapter06_ft105)The Belt and Road Initiative is a Chinese development effort with over $1 trillion USD in Chinese investment, with the objective of building influence through connecting infrastructure projects across more than 70 locations, including Mongolia, Russia, Eurasian countries, Central and West Africa, Pakistan, Indian subcontinent countries, and Indochina ([McBride et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref446); [OECD, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref579); [Russel and Berger, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref660); [State Council Information Office, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref710)).
+
+**Suggested Citation:** "6 The Development and Implementation of Talent Programs in Current Countries of Concern." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/9 -->
+
+## 官方在线阅读第9章
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[Previous Chapter: 6 The Development and Implementation of Talent Programs in Current Countries of Concern](https://www.nationalacademies.org/read/27787/chapter/8)
+
+**Suggested Citation:** "7 Findings." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [7 Findings](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_ch7a)
+
+During its discussions and information gathering activities in support of this report, the committee identified several findings on international talent programs. These are grouped into categories, as indicated below.
+
+### [IMPORTANCE OF FOREIGN STEM TALENT TO UNITED STATES NATIONAL SECURITY AND COMPETITIVENESS](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-23a)
+
+1.   The science, technology, engineering, and mathematics (STEM) workforce is of paramount importance to the United States given its direct role in fostering and sustaining innovation, economic competitiveness, and national security ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20); [AAU and Business Roundtable, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref4); [Council on Foreign Relations, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref140); [JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355); [NASEM, 2007b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref485); [NSB, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref561)).
+2.   The demand for STEM talent will continue to exceed the supply produced by the domestic STEM talent pipeline for the foreseeable future. Such shortfalls will be especially critical as they affect emerging technologies vital to continued technological leadership by the United States ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20); [AAU and Business Roundtable, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref4); [DeSilver, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref159); [NASEM, 2007b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref485), [2011](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref487), [2019a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref495); [NSB, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref555), [2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref563); [Olszewski et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref595); [Reed, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref276)).
+
+**Suggested Citation:** "7 Findings." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   Foreign STEM talent is a direct contributor to domestic innovation, economic growth, and leadership in science and technology as evidenced by the number of world-class researchers and entrepreneurs who come to the United States from other countries, either as international students or as direct entrants into the STEM workforce ([JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355); [NSB, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref558), [2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref563)).
+2.   Foreign STEM talent also plays a role in expanding scientific and cultural perspectives and building international networks upon which future scientific collaborations and discoveries benefiting the nation will depend ([American Academy of Arts & Sciences, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref21); [NSB, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref561); [Wagner, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref828)).
+3.   As a result, it is imperative for the United States to continue to attract and retain the best and brightest foreign STEM talent at all levels in order to support its research enterprise, maintain its competitive advantage in technology development and innovation, and protect its economic and national security interests ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20); [DHS, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref170); [U.S. House Armed Services Committee, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref805); [U.S. House Foreign Affairs Committee, 2020b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref807); [NASEM, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref502); [NSB, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref558)).
+
+### [INTERNATIONAL COMPETITION FOR HIGHLY SKILLED STEM TALENT](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-24a)
+
+1.   The market for STEM talent is competitive internationally, and the United States faces serious competition for top talent from both allied and potentially adversarial nations particularly in critical and emerging technology fields ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20); [AAU and Business Roundtable, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref4); [Council on Foreign Relations, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref140); [JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355); [NSB, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref561); [NSTC, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref571); [U.S. Select Committee on the CCP, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref814); [Wagner, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref828); [Zwetsloot, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref897)).
+2.   Other nations realize the importance of international talent to economic growth, innovative capacity, and global leadership in the current, increasingly complex geopolitical environment. Some are implementing initiatives to attract and retain foreign students and scholars, including from the United States ([Council on Foreign Relations, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref140); [JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355); [NASEM, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref502)).
+3.   Despite many positive attributes, the United States’ leadership position with respect to attracting and retaining talent is vulnerable.
+
+**Suggested Citation:** "7 Findings." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   The United States can no longer take for granted that it will remain the destination of choice for the world’s best and brightest students, scholars, and professionals ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20); [Council on Foreign Relations, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref140); [JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355); [U.S. Select Committee on the CCP 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref814); [NSB, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref561)).
+
+### [FOREIGN TALENT PROGRAMS](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-25a)
+
+1.   As part of their efforts to recruit and retain international STEM talent, other nations have implemented intentional talent recruitment programs at the national level and below. These include incentivizing their citizens trained in other countries to return, effectively activating diaspora talent ([Grove, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref292); [NASEM, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref502); [Zweig, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref890)).
+2.   Many competitor nations have immigration systems and schemes that are more flexible and more focused on particular skills than current U.S. immigration policies and that offer predictable pathways to permanent residency or citizenship ([Kerr, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref390); [NASEM, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref502); [Neufeld and Kaushik, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref524); [Rovito et al., 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref659)).
+3.   Many competitor nations convey strong messaging that STEM talent recruitment is a priority and that STEM talent is welcome ([OECD, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref580)).
+4.   Attributes of talent recruitment and incentive programs effectively employed by other countries include the following ([Council on Foreign Relations, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref140); [Zweig, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref890)):
+    1.   Personal remuneration (salary, housing/living stipend)
+    2.   Research resources (research funding, advanced facilities, lab space, personnel including professional staff, postdocs, graduate students, and lab assistants)
+    3.   Access to capital for technology transfer and commercialization
+    4.   Facile pathways for individuals and immediate family members to stay in country long-term
+
+5.   Other nations, including China, have used talent recruitment programs to accelerate the acquisition of technology, intellectual property, and human resources. Characteristics and practices of some talent recruitment programs do not align with the values of the U.S. research enterprise including openness, transparency, and integrity, and have therefore been identified as “malign” ([Council on Foreign Relations, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref140); Diamond and Schell, 2018;
+
+**Suggested Citation:** "7 Findings." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   [DOS, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref181); [JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355), [2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref356); [NASEM, 2017b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref492); [Prabhakar, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref615); [U.S. House Armed Services Committee, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref805); [U.S. House Foreign Affairs Committee, 2020b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref807); [U.S. Select Committee on the CCP, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref814)).
+
+### [TALENT DEVELOPMENT, RECRUITMENT, AND RETENTION IN THE UNITED STATES](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-26a)
+
+1.   The United States does not currently have a whole-of-government STEM talent strategy or significant coordination of existing efforts across federal agencies. The United States has focused its efforts in the past on cultivating and maintaining an attractive research enterprise rather than creating formal talent recruitment programs ([AAU and Business Roundtable, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref4); [Merisotis, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref451); [Smith et al., 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref706); [U.S. Select Committee on the CCP, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref814)).
+2.   Foreign STEM talent is attracted to the United States by its strongly held democratic values; emphasis on openness, transparency, and integrity; abundant opportunities; and intellectual freedom to pursue promising ideas. Furthermore, the United States is attractive because of its leading research universities, cutting-edge scientific infrastructure, and vibrant technology sector. Strong, sustained support of the research enterprise and the talent that drives it is critical in the face of increasing international competition for talent ([DOS, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref181); [JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355); [NASEM, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref502)).
+3.   The United States is missing opportunities to develop domestic STEM talent at all points along the educational and career pipeline, from K–12 through advanced degrees. This includes making more progress in bringing students from underrepresented and disadvantaged communities into STEM ([Merisotis, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref451); [NSB, 2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref563)).
+4.   The U.S. government sponsors programs through federal science agencies that provide direct fellowship funding for undergraduate students, graduate students, and postdoctoral researchers. Many of these incentive programs require U.S. citizenship or permanent residency. A much larger share of the investment in STEM talent development, both foreign and domestic, occurs via institutions of higher education utilizing both institutional funds and externally supported research projects and training programs, including those funded by the federal government ([Savage, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref670)).
+
+**Suggested Citation:** "7 Findings." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   The United States lacks intentional efforts to ensure that foreign STEM talent, particularly individuals educated or trained in the United States, is able to remain, work, and contribute here. While the United States historically has been successful in attracting international talent, it is increasingly challenged in retaining such talent and faces growing competition for talent from both allies and potential adversaries ([NASEM, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref502)).
+2.   Taking action to reduce the barriers to entry for students and professionals in STEM fields, along with barriers to remain and build their careers, is in the national interest of the United States ([NSB, 2024d](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref563)).
+3.   The increasing challenge of sustaining a workforce of advanced STEM degree holders requiring security clearances to conduct research and development activities for the Department of Defense and other agencies is exacerbated when the pipeline for international STEM talent is restricted at the stage of permanent residency ([Nice, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref547)).
+4.   U.S. immigration laws affecting foreign STEM talent primarily consist of provisions for temporary work or study, with limited options for permanent residency that are difficult, frustrating, and unwieldy to navigate. Furthermore, current rules and requirements regarding “nonimmigrant intent” for receiving a visa are counterproductive and incompatible with U.S. STEM talent recruitment goals ([Neufeld and Kaushik, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref524)).
+5.   While several recent presidential administrations from both political parties have sought to affect and adjust high-skilled immigration and visa policy through Executive Orders and other levers, Congress is the main driver of change for STEM immigration. Several recent attempts at immigration reform have failed to advance through Congress ([NASEM, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref488)).
+6.   U.S. government data on international talent, including STEM immigration and visas, are difficult to obtain online, split between different databases, and sometimes incomplete ([Neufeld and Kaushik, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref524)).
+7.   The U.S. Department of Justice’s China Initiative resulted in lingering, chilling effects on attracting and retaining Chinese-origin STEM talent because of a fear of and actual harassment and intimidation. Such chilling effects extend to other vulnerable groups, including both foreign and domestic students and
+
+**Suggested Citation:** "7 Findings." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   professionals, and result in the loss of talent from the United States, avoidance by researchers of some fields of inquiry and the pursuit of federal funding, and reduction of international collaborations ([American Physical Society, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref24); [Conroy, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref135); [Flynn et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref242); [Jia et al., 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref362); [OECD, n.d.b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref577); [Redden, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref639); [Widener, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref845); [Xie et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref867)).
+
+### [INTERNATIONAL COLLABORATION](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_sec1-27a)
+
+1.   Foreign students, open research environments, and international research collaborations and partnerships present both opportunities and risks. While such risks can and should be mitigated, completely eliminating them would require drastic steps that would ultimately overtake the benefits and be detrimental to U.S. economic vitality, national security, and innovation. The benefits of welcoming international students to the United States, maintaining an open research environment, and engaging in international research collaborations and partnerships far outweigh the costs and risks of not doing so and are critical to a high-performing, innovative, and productive research ecosystem, and to U.S. leadership in science and technology ([American Academy of Arts & Sciences, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref20), [2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref21); [JASON, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref355), [2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref356); [NASEM, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref502)).
+2.   International collaborations are firmly woven into the U.S. research enterprise, spanning sectors from academia to industry. From 2013 to 2022, 40 percent of journal articles with U.S.-based authors included one or more coauthors from a foreign institution. Furthermore, international collaborations are vital to tackling problems of global importance ([Adams et al., 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref10); [American Academy of Arts & Sciences, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref21); [NSB, 2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref561)).
+3.   The U.S. government has formally defined “malign foreign talent recruitment programs” and is implementing training, monitoring, and reporting policies regarding international collaborations and talent programs ([Prabhakar, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref614); [U.S. House of Representatives Committee on Science, Space, and Technology, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref640)).
+4.   Key participants in the U.S. research enterprise, including academia, government, and industry, have seen a significant increase in the number and complexity of research security-related policies. While created with good intention, these policies increase administrative burden and cost and, in some cases, reinforce
+
+**Suggested Citation:** "7 Findings." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   fear, confusion, and existing inequities ([JASON, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref356); [NASEM, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref502)).
+2.   Research security-related policies that do not balance risks, benefits, and administrative burdens can impede the “exchange of ideas, participation by other researchers, and international collaboration, slowing the pace of research and making research environments less attractive to talented people.” Furthermore, the perception of increased risk and burdens associated with international collaborations may discourage researchers from engaging in these important activities ([JASON, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref356); [NASEM, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref502); [Prabhakar, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref614)).
+
+**Suggested Citation:** "7 Findings." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.
+
+[Next Chapter: 8 Recommendations](https://www.nationalacademies.org/read/27787/chapter/10)
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/10 -->
+
+## 官方在线阅读第10章
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[Previous Chapter: 7 Findings](https://www.nationalacademies.org/read/27787/chapter/9)
+
+**Suggested Citation:** "8 Recommendations." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [8 Recommendations](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_ch8a)
+
+This chapter provides the committee’s recommendations regarding appropriate actions to improve the effectiveness of U.S. efforts to attract and retain global scientific talent to support national research capabilities, particularly in national security or defense-related fields, and rationales for international mobility and its role in the scientific research ecosystem.
+
+**Recommendation 1: The U.S. government, specifically the Office of Science and Technology Policy (OSTP), should oversee the coordination of a whole-of-government talent strategy including national talent recruitment and retention approaches for international researchers at all levels of experience to be implemented by federal departments and agencies.**
+
+**Recommendation 2: The U.S. government, universities, industry, national laboratories, and the broader scientific community should work together to**
+
+1.   **continue to advance the robust international research collaborations and talent flows, including of international students, that are an essential part of U.S. leadership in technology and innovation;**
+2.   **insist on openness, transparency, and integrity in these collaborations; and**
+3.   **continue to develop guidance and training on research security, research integrity, and international research collaborations.**
+
+**Suggested Citation:** "8 Recommendations." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Recommendation 3: The U.S. government’s approaches for maximizing talent attraction and research collaboration should address national security concerns and risks present in the geopolitical environment.**
+
+1.   **Federal funding agencies should continue to prioritize transparency and consistency as they develop and implement policies on international research collaboration, research exchanges, and assessment tools.**
+2.   **Risk should be assessed at the level of individual projects and programs, not by field, subfield, or researcher demographics.**
+3.   **Steps taken to increase research security should not restrict or unduly inhibit international collaborations involving _fundamental research._**
+4.   **The priority in addressing security concerns regarding fundamental research should be ensuring compliance with applicable federal funding agency and institutional policies, rather than prosecution.**
+
+**Recommendation 4: All levels of government—federal, state, local, and tribal—and key parties in the private sector should take a forward-looking, proactive approach to developing the nation’s domestic science, technology, engineering, and mathematics talent.**
+
+1.   **Domestic STEM talent development must be recognized as a critical component of the national security innovation base and the overall STEM workforce in educational policy at all levels of government.**
+2.   **The barriers preventing equitable access to K–12 and postsecondary education in under-resourced communities must be addressed in order to maximize the development of domestic STEM talent nationwide.**
+3.   **Federal science funding agencies should include the development of domestic STEM talent as a key component of their respective missions.**
+4.   **Congress should pass legislation modeled on the National Defense Education Act (P.L. 85-864, September 2, 1958) to ensure domestic innovation capacity.**
+
+**Recommendation 5: The U.S. government should build on its relationships with its trusted allies and develop stronger collaborative**
+
+**Suggested Citation:** "8 Recommendations." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**partnerships to ensure the resilience of international talent capacity in areas of strategic interest.**
+
+**Recommendation 6: To facilitate the development and flow of global talent, ensure the robust exchange of ideas, and support the U.S. innovation ecosystem, the U.S. government should support universities, foundations, and industry in forging strong international research partnerships and building educational and research capacity, including in low- and middle-income countries and less developed countries in the Global South.**
+
+**Recommendation 7: The legislative branch should create easily navigable pathways to permanent residency and citizenship for qualified foreign-born STEM talent. As an immediate priority, Congress should empower government agencies to identify critical areas of science, technology, and engineering vital to their mission. Congress should then authorize additional Green Card numbers for qualified foreign-born experts who work in such areas, subject to normal due diligence. The corresponding legislation should create a new category for permanent residents and should not carry any per-country caps or be subject to existing numerical limitations. Explicit eligibility for international STEM graduates of U.S. institutions should be included.**
+
+**Recommendation 8: The executive branch should maximize the use of all existing authorities to retain foreign-born STEM experts who are already in the United States.**
+
+1.   **Government departments and agencies should increase the use of their authority as interested U.S. federal government agencies to advise the U.S. Departments of Homeland Security and State on applications for permanent residency. The focus of these efforts should be on STEM experts working on research that is aligned with the national interest, including research that is vital to the mission of the respective department or agency.**
+2.   **The U.S. Department of Labor should proceed with a new regulation codifying an update to the permanent labor certification process, allowing precertification in certain types of employment. The new regulation should explicitly identify emerging and critical technologies that are in the national interest and where there is a scarcity of U.S. STEM experts.**
+
+**Suggested Citation:** "8 Recommendations." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   **OSTP should monitor and assess the implementation of the Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence (October 30, 2023), especially provisions related to pathways toward permanent residency in the United States.**
+
+**Recommendation 9: The U.S. government, specifically OSTP and the Departments of Commerce, Homeland Security, Justice, and State, should continue to take measures to address lingering chilling effects of the China Initiative and create an attractive and welcoming environment for domestic and international talent of all races and ethnicities. All efforts should be taken to ensure that programs and policies intended to protect critical research from malign foreign influence do not target or inadvertently discriminate against people on the basis of national origin or ethnicity.**
+
+**Recommendation 10: To assist Congress and the White House with developing immigration-related policies that support recruiting and retaining international talent, the U.S. government should fund a public-facing national dashboard, potentially run by a federally funded research and development center, that collects and aggregates information and showcases important metrics on international talent to include the following:**
+
+1.   **Educational characteristics of all new lawful permanent residents, whether new arrivals or individuals who adjusted status, to include the highest degree earned, field of study, whether the degree is in STEM, and the country where the highest degree was earned.**
+2.   **Characteristics of F-1 student visa and J-1 Research Scholar visa denials, including gender, country of birth, age, major field of study, and whether denial was related to financial support or document integrity.**
+3.   **Funding opportunities from the federal government, state governments, industry, and philanthropy for noncitizen STEM experts.**
+4.   **Immediate-term stay-rate characteristics of advanced STEM degree holders, identifying how many international students and scholars who obtain a STEM master’s or Ph.D. in the United States or complete a postdoc in the United States, obtain either**
+
+**Suggested Citation:** "8 Recommendations." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+1.   **O-1A, H-1B, or Lawful Permanent Resident status at the 3-year mark after expiration of their underlying F-1 or J-1 status, and providing gender, country of birth, age, and major field of study.**
+2.   **Benchmarking against other countries in the competition for new international students at the master’s and doctoral levels in critical STEM fields.**
+
+**Recommendation 11: Higher education associations, scientific societies, and industry groups and leaders should engage in efforts to educate federal and state policymakers and staff on issues including the importance of foreign talent, the economic competitiveness and national security value of foreign talent, the importance of an open scientific ecosystem, the importance of international research collaborations, the current models for funding research, and current research security issues.**
+
+**Suggested Citation:** "8 Recommendations." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.
+
+[Next Chapter: References](https://www.nationalacademies.org/read/27787/chapter/11)
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/11 -->
+
+## 官方在线阅读第11章
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [References](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_ref1)
+
+AAU (Association of American Universities). 2006. _National Defense Education and Innovation Initiative._ Washington, DC: Association of American Universities. [https://www.aau.edu/sites/default/files/AAU-Files/Key-Issues/National-Defense-Education-And-Innovation-Initiative.pdf](https://www.aau.edu/sites/default/files/AAU-Files/Key-Issues/National-Defense-Education-And-Innovation-Initiative.pdf).
+
+AAU. 2024. _Task Force Report on Expanding U.S.-India Partnerships._ Washington, DC: Association of American Universities. [https://www.aau.edu/sites/default/files/AAU-Files/Key-Issues/International-Partnerships/India%20Task%20Force%20Final%20Report_FINAL_2.pdf](https://www.aau.edu/sites/default/files/AAU-Files/Key-Issues/International-Partnerships/India%20Task%20Force%20Final%20Report_FINAL_2.pdf).
+
+AAU and APLU (Association of Public and Land-Grant Universities). 2024. _Actions Taken to Address Foreign Security Threats, Undue Foreign Interference, and Protect Research Integrity at U.S. Universities._ Washington, DC: Association of American Universities. [https://www.aau.edu/sites/default/files/AAU-Files/Key-Issues/Science-Security/Actions-Taken-Research-Security.pdf](https://www.aau.edu/sites/default/files/AAU-Files/Key-Issues/Science-Security/Actions-Taken-Research-Security.pdf).
+
+AAU and Business Roundtable. 2022. _International Students and American Competitiveness._[https://www.aau.edu/sites/default/files/AAU-Files/Key-Issues/Immigration/International%20Students%20%26%20American%20Competitiveness%20.%20AAU%20BRT%20Report%20.%20October%202022.pdf](https://www.aau.edu/sites/default/files/AAU-Files/Key-Issues/Immigration/International%20Students%20%26%20American%20Competitiveness%20.%20AAU%20BRT%20Report%20.%20October%202022.pdf).
+
+Abdelhady, H. 2019. What academia must know about DOJ’s China initiative. _MassPoint PLLC,_ January 28, 2019. [https://masspointpllc.com/wp-content/uploads/What-Academia-Must-Know-About-DOJs-China-Initiative.pdf](https://masspointpllc.com/wp-content/uploads/What-Academia-Must-Know-About-DOJs-China-Initiative.pdf).
+
+ACA (Academic Cooperation Association). 2016. Good news for Russia’s excellence initiative - continued support by new Minister. _Newsletter Edition 186 - 10/2016._[https://aca-secretariat.be/newsletter/good-news-for-russias-excellence-initiative-continued-support-by-new-minister/](https://aca-secretariat.be/newsletter/good-news-for-russias-excellence-initiative-continued-support-by-new-minister/).
+
+ACA. 2021. Priority 2030: Russia’s new excellence scheme for universities. _Newsletter Edition 246- 10/2021._[https://aca-secretariat.be/newsletter/priority-2030-russias-new-excellence-scheme-for-universities/](https://aca-secretariat.be/newsletter/priority-2030-russias-new-excellence-scheme-for-universities/).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Achirri, K. 2020. “Transformative internationalization through kindness: The experiences of Chinese undergraduate students and their instructors at a U.S. higher education institution.” Doctor of Philosophy, Second Language Studies, Michigan State University. [https://d.lib.msu.edu/etd/48460](https://d.lib.msu.edu/etd/48460).
+
+ACS (American Chemical Society). n.d. Public Policy Fellowship FAQs. [https://www.acs.org/policy/policyfellowships/public-policy-fellowship-faqs.html](https://www.acs.org/policy/policyfellowships/public-policy-fellowship-faqs.html).
+
+Adams, J., R. Fry, D. Pendlebury, R. Potter, and G. Rogers. October 2023. _Global Research Report: China’s Research Landscape._ Institute for Scientific Information, Clarivate. [https://clarivate.com/wp-content/uploads/dlm_uploads/2023/10/XBU1202260247-ISI-GRR-Q4_Chinas-Research-Landscape-Report_DIGITAL.pdf](https://clarivate.com/wp-content/uploads/dlm_uploads/2023/10/XBU1202260247-ISI-GRR-Q4_Chinas-Research-Landscape-Report_DIGITAL.pdf).
+
+Adams, R. 2024. UK universities report drop in international students amid visa doubts. _The Guardian,_ May 13, 2024. [https://www.theguardian.com/education/article/2024/may/13/uk-universities-drop-international-students-visa-doubts](https://www.theguardian.com/education/article/2024/may/13/uk-universities-drop-international-students-visa-doubts).
+
+Agasisti, T., E. Shibanova, D. Platonova, and M. Lisyutkin. 2018. _The Russian Excellence Initiative for Higher Education: An Econometric Evaluation of Short-term Results._ International Transactions in Operational Research. October 21, 2018. [https://onlinelibrary.wiley.com/doi/abs/10.1111/itor.12742](https://onlinelibrary.wiley.com/doi/abs/10.1111/itor.12742).
+
+Ahern, J., N. Augustine, D. Baker, R. Beardsworth, K. Bingen, R. Bonner, M. Chertoff et al. 2022. National Security STEM Talent Letter to Members of the Bipartisan Innovation Act Conference Committee, May 9, 2022. [https://www.politico.com/f/?id=00000180-a5eb-d337-a9cc-bfeb6d8f0000](https://www.politico.com/f/?id=00000180-a5eb-d337-a9cc-bfeb6d8f0000).
+
+[AI.gov](http://ai.gov/). n.d. Join the national AI talent surge. [https://ai.gov/apply](https://ai.gov/apply).
+
+Alberts, B., M. W. Kirschner, S. Tilghman, and H. Varmus. 2014. Rescuing US biomedical research from its systemic flaws. _Proceedings of the National Academy of Sciences_ 111(16): 5773–5777. [https://www.pnas.org/doi/full/10.1073/pnas.1404402111](https://www.pnas.org/doi/full/10.1073/pnas.1404402111).
+
+Alexander von Humboldt Foundation. n.d. About the Foundation. Alexander von Humboldt Stiftung. [https://www.humboldt-foundation.de/en/explore/about-the-humboldt-foundation/about-the-foundation](https://www.humboldt-foundation.de/en/explore/about-the-humboldt-foundation/about-the-foundation).
+
+Allibhai, N., C. Natsuhara, R. Israel, S. Lipstein, and F. Hau. 2023. Canada’s new Tech Talent Strategy. EY Canada. Last modified September 8, 2023. [https://www.ey.com/en_ca/law/canada-s-new-tech-talent-strategy](https://www.ey.com/en_ca/law/canada-s-new-tech-talent-strategy).
+
+Allison, G., and E. Schmidt. 2022. The U.S. Needs a Million Talents Program to Retain Technology Leadership. _Foreign Policy,_ July 16, 2022. [https://foreignpolicy.com/2022/07/16/immigration-us-technology-companies-work-visas-china-talent-competition-universities/](https://foreignpolicy.com/2022/07/16/immigration-us-technology-companies-work-visas-china-talent-competition-universities/).
+
+Aloe, J., and E. Guo. 2022. The US government is ending the China Initiative. Now what? _MIT Technology Review,_ February 23, 2022. [https://www.technologyreview.com/2022/02/23/1046460/us-government-china-initiative-over/](https://www.technologyreview.com/2022/02/23/1046460/us-government-china-initiative-over/).
+
+American Academy of Arts & Sciences. 2020. _America and the International Future of Science._ Cambridge, MA: American Academy of Arts & Sciences. [https://www.amacad.org/sites/default/files/publication/downloads/2020-CISP-Report-1.pdf](https://www.amacad.org/sites/default/files/publication/downloads/2020-CISP-Report-1.pdf).
+
+American Academy of Arts & Sciences. 2021. _Bold Ambition: International Large-Scale Science._ Cambridge, MA: American Academy of Arts & Sciences. [https://www.amacad.org/sites/default/files/publication/downloads/2021-CISP-Report-2_Large-Scale-Science.pdf](https://www.amacad.org/sites/default/files/publication/downloads/2021-CISP-Report-2_Large-Scale-Science.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+American Immigration Council. 2017. The RAISE Act: What lies beneath the proposed points system? Fact Sheet, August 11, 2017. [https://www.americanimmigrattioncouncil.org/research/raise-act](https://www.americanimmigrattioncouncil.org/research/raise-act).
+
+American Immigration Council. June 2022. _Foreign-Born STEM Workers in the United States._[https://www.americanimmigrationcouncil.org/sites/default/files/research/foreign-born_stem_workers_in_the_united_states_final_0.pdf](https://www.americanimmigrationcouncil.org/sites/default/files/research/foreign-born_stem_workers_in_the_united_states_final_0.pdf).
+
+American Physical Society. December 2021. _Impact of US Research Security Policies: US Security and the Benefits of Open Science and International Collaborations._ College Park, MD: APS Government Affairs. [https://res.cloudinary.com/apsphysics/image/upload/v1680709193/research-security-report_mlpjuj.pdf](https://res.cloudinary.com/apsphysics/image/upload/v1680709193/research-security-report_mlpjuj.pdf).
+
+Anderson, G. 2024. _U.S. R&D Increased by $72 Billion in 2021 to $789 Billion; Estimate for 2022 Indicates Further Increase to $886 Billion._ Alexandria, VA: National Science Foundation. [https://ncses.nsf.gov/pubs/nsf24317](https://ncses.nsf.gov/pubs/nsf24317).
+
+Anderson, G., J. Jankowski, and M. Boroush. 2023. _U.S. R&D Increased by $51 Billion in 2020 to $717 Billion; Estimate for 2021 Indicates Further Increase to $792 Billion._ Alexandria, VA: National Science Foundation. [https://ncses.nsf.gov/pubs/nsf23320](https://ncses.nsf.gov/pubs/nsf23320).
+
+Anderson, G., and F. Moris. 2023. _Federally Funded R&D Declines as a Share of GDP and Total R&D._ Alexandria, VA: National Science Foundation. [https://ncses.nsf.gov/pubs/nsf23339](https://ncses.nsf.gov/pubs/nsf23339).
+
+Anderson, S. 2021. Biden keeps costly Trump visa policy denying Chinese grad students. _Forbes,_ August 10, 2021. [https://www.forbes.com/sites/stuartanderson/2021/08/10/biden-keeps-costly-trump-visa-policy-denying-chinese-grad-students/](https://www.forbes.com/sites/stuartanderson/2021/08/10/biden-keeps-costly-trump-visa-policy-denying-chinese-grad-students/).
+
+Anderson, S. 2022. _Immigrant Entrepreneurs and U.S. Billion-Dollar Companies._ NFAP Policy Brief, July 2022. Arlington, VA: National Foundation for American Policy. [https://nfap.com/wp-content/uploads/2022/07/2022-BILLION-DOLLAR-STARTUPS.NFAP-Policy-Brief.2022.pdf](https://nfap.com/wp-content/uploads/2022/07/2022-BILLION-DOLLAR-STARTUPS.NFAP-Policy-Brief.2022.pdf).
+
+Anderson, S. 2023a. Chinese students still denied visas under Trump immigration order. _Forbes,_ April 11, 2023. [https://www.forbes.com/sites/stuartanderson/2023/04/11/chinese-students-still-denied-visas-under-trump-immigration-order/](https://www.forbes.com/sites/stuartanderson/2023/04/11/chinese-students-still-denied-visas-under-trump-immigration-order/).
+
+Anderson, S. 2023b. Immigrant Nobel Prize winners continue to impress. _Forbes,_ October 5, 2023. [https://www.forbes.com/sites/stuartanderson/2023/10/05/immigrant-nobel-prize-winners-continue-to-impress/](https://www.forbes.com/sites/stuartanderson/2023/10/05/immigrant-nobel-prize-winners-continue-to-impress/).
+
+Ansede, M. 2023. Spanish national research council investigates five scientists for manipulating university rankings. _El País,_ November 8, 2023. [https://english.elpais.com/science-tech/2023-11-08/spanish-national-research-council-investigates-five-scientists-for-manipulating-university-rankings.html](https://english.elpais.com/science-tech/2023-11-08/spanish-national-research-council-investigates-five-scientists-for-manipulating-university-rankings.html).
+
+Ashraf, R., and R. Ray. 2017. “Human Capital, Skilled Immigrants, and Innovation.” Social Science Research Network/Elsevier (Amsterdam), September 14, 2017. [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2849089](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2849089).
+
+Atomic Heritage Foundation. n.d. Scientist refugees and the Manhattan Project. [https://ahf.nuclearmuseum.org/scientist-refugees-and-manhattan-project/](https://ahf.nuclearmuseum.org/scientist-refugees-and-manhattan-project/).
+
+Australian Department of Education. 2024. Research Training Program. Last modified January 30, 2024. [https://www.education.gov.au/research-block-grants/research-training-program](https://www.education.gov.au/research-block-grants/research-training-program).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Australian Department of Home Affairs. 2023. Skilled Migration Program. Last modified July 1, 2023. [https://immi.homeaffairs.gov.au/what-we-do/skilled-migration-program/recent-changes](https://immi.homeaffairs.gov.au/what-we-do/skilled-migration-program/recent-changes).
+
+Australian Department of Home Affairs. 2024a. A Migration Strategy for Australia. Last modified February 23, 2024. [https://immi.homeaffairs.gov.au/what-we-do/migration-strategy](https://immi.homeaffairs.gov.au/what-we-do/migration-strategy).
+
+Australian Department of Home Affairs. 2024b. “Regional Migration,” Working in Australia. Last modified March 13, 2024. [https://immi.homeaffairs.gov.au/visas/working-in-australia/regional-migration](https://immi.homeaffairs.gov.au/visas/working-in-australia/regional-migration).
+
+Australian Department of Home Affairs. 2024c. “SkillSelect,” Working in Australia. Last modified February 15, 2024. [https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect](https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect).
+
+Australian Department of Home Affairs. 2024d. “Temporary Work Visas,” Working in Australia. Last modified February 15, 2024. [https://immi.homeaffairs.gov.au/visas/working-in-australia/temporary-work-visas](https://immi.homeaffairs.gov.au/visas/working-in-australia/temporary-work-visas).
+
+Australian Department of Home Affairs. 2024e. “Visas for Innovation,” Working in Australia. Last modified March 27, 2024. [https://immi.homeaffairs.gov.au/visas/working-in-australia/visas-for-innovation/global-talent-independent-program](https://immi.homeaffairs.gov.au/visas/working-in-australia/visas-for-innovation/global-talent-independent-program).
+
+Azadi, P., M. Mirramezani, and M. Mesgaran. April 2020. _Migration and Brain Drain from Iran._ Stanford Iran 2040 Project. [https://iranian-studies.stanford.edu/iran-2040-project/publications/migration-and-brain-drain-iran](https://iranian-studies.stanford.edu/iran-2040-project/publications/migration-and-brain-drain-iran).
+
+Azoulay, P., B. F. Jones, J. D. Kim, and J. Miranda. 2022. Immigration and entrepreneurship in the United States. _American Economic Review: Insights_ 4(1): 71–88. [https://www.aeaweb.org/articles?id=10.1257/aeri.20200588](https://www.aeaweb.org/articles?id=10.1257/aeri.20200588).
+
+Baker, S. 2018. Is Russia’s 5-100 Project working? _Times Higher Education,_ November 1, 2018. [https://www.timeshighereducation.com/features/russias-5-100-project-working](https://www.timeshighereducation.com/features/russias-5-100-project-working).
+
+Balakrishnan, A., S. V. Howieson, and E. C. Lee. 2013. _Guidance for Employing Foreign Citizen Scientists and Engineers at Department of Defense Science and Technology Reinvention Laboratories._ IDA Document D-4786. Institute for Defense Analyses, Science and Technology Policy Institute. [https://www.ida.org/-/media/feature/publications/g/gu/guidance-for-employing-foreign-citizen-scientists-and-engineers-at-department-of-defense-science-and/ida-d-4786.ashx](https://www.ida.org/-/media/feature/publications/g/gu/guidance-for-employing-foreign-citizen-scientists-and-engineers-at-department-of-defense-science-and/ida-d-4786.ashx).
+
+Barker, J. 2019. The End of Endeavour: The short and tumultuous life of “Australia’s Fulbright,” the Endeavour program. _Australian Universities’ Review_ 61(2): 72–77.
+
+Barros, A. 2017. Merit-based versus family-based immigration explained. _Voice of America,_ November 1, 2017. [https://www.voanews.com/a/merit-based-versus-family-baseed-immigration-explained/4095702.html](https://www.voanews.com/a/merit-based-versus-family-baseed-immigration-explained/4095702.html).
+
+Barry, E., and K. Benner. 2022. U.S. drops its case against M.I.T. scientist accused of hiding China links. _New York Times,_ January 20, 2022. [https://www.nytimes.com/2022/01/20/science/gang-chen-mit-china-initiative.html](https://www.nytimes.com/2022/01/20/science/gang-chen-mit-china-initiative.html).
+
+Basken, P. 2022. MIT ends Skoltech partnership over Ukraine war. _Times Higher Education,_ February 28, 2022. [https://www.timeshighereducation.com/news/mit-ends-skoltech-partnership-over-ukraine-war](https://www.timeshighereducation.com/news/mit-ends-skoltech-partnership-over-ukraine-war).
+
+Basken, P. 2024. Canada signals leeway on international student-visa caps. _Inside Higher Ed,_ March 21, 2024. [https://www.insidehighered.com/news/global/study-abroad/2024/03/21/canada-signals-some-leeway-international-student-visa-cap](https://www.insidehighered.com/news/global/study-abroad/2024/03/21/canada-signals-some-leeway-international-student-visa-cap).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Batalova, J., and M. Feldblum. 2023. _Investing in the Future: Higher Ed Should Give Greater Focus to Growing Immigrant-Origin Student Population._ Presidents’ Alliance on Higher Education and Immigration; Higher Ed Immigration Portal; Migration Policy Institute. [https://www.higheredimmigrationportal.org/wp-content/uploads/2023/08/2023-08.02-Immigrant-Origin-Student-Commentary-final-draft.docx-2.pdf](https://www.higheredimmigrationportal.org/wp-content/uploads/2023/08/2023-08.02-Immigrant-Origin-Student-Commentary-final-draft.docx-2.pdf).
+
+Batalova, J., and M. Fix. 2023. _Shared Gains: Immigrant-Origin Students in U.S. Colleges._ Migration Policy Institute. [https://www.migrationpolicy.org/sites/default/files/publications/mpi-college-enrollment-generation-2023_final.pdf](https://www.migrationpolicy.org/sites/default/files/publications/mpi-college-enrollment-generation-2023_final.pdf).
+
+Batalova, J., J. Gelatt, and M. Fix. April 2024. _How Immigrants and Their U.S.-Born Children Fit into the Future U.S. Labor Market._ Migration Policy Institute. [https://www.migrationpolicy.org/sites/default/files/publications/mpi_immigrant-origin-adults-labor-market-2024_final.pdf](https://www.migrationpolicy.org/sites/default/files/publications/mpi_immigrant-origin-adults-labor-market-2024_final.pdf).
+
+Batchelor, R. L., H. Ali, K. G. Gardner-Vandy, A. U. Gold, J. A. MacKinnon, and P. M. Asher. 2021. Reimagining STEM workforce development as a braided river. Eos, April 19, 2021. [https://eos.org/opinions/reimagining-stem-workforce-development-as-a-braided-river](https://eos.org/opinions/reimagining-stem-workforce-development-as-a-braided-river).
+
+Bateman, J. 2022. _U.S.-China Technological “Decoupling” A Strategy and Policy Framework._ Washington, DC: Carnegie Endowment for International Peace. [https://carnegie-production-assets.s3.amazonaws.com/static/files/Bateman_US-China_Decoupling_final.pdf](https://carnegie-production-assets.s3.amazonaws.com/static/files/Bateman_US-China_Decoupling_final.pdf).
+
+BBC. 2020. Qian Xuesen: The man the US deported – who then helped China into space. October 26, 2020. [https://www.bbc.com/news/stories-54695598](https://www.bbc.com/news/stories-54695598).
+
+Beach, C. M. 2006. Employment-Based Permanent Immigration: Examining the Value of a Skills Based Point System. Committee on Health, Education, Labor, and Pensions, United States Senate, 109th Congress, Second Session. Prepared statement on Examining the Value of a Skills-Based Point System Relating to Employment-Based Permanent Immigration, September 14, 2006. [https://www.govinfo.gov/content/pkg/CHRG-109shrg30005/pdf/CHRG-109shrg30005.pdf](https://www.govinfo.gov/content/pkg/CHRG-109shrg30005/pdf/CHRG-109shrg30005.pdf).
+
+Beijing Municipal Government. 2000. Regulations on encouraging Chinese who studied overseas to work or open business in Beijing. _Shenzhou Xueren [Chinese Scholars]._ May 1, 2000, 47.
+
+Beine, M., G. Peri, and M. Raux. 2022. “International College Students’ Impact on the US Skilled Labor Supply.” Working Paper 30431, September 2022. Cambridge, MA: National Bureau of Economic Research. [https://www.nber.org/papers/w30431](https://www.nber.org/papers/w30431).
+
+Bekkers, D. 2017. _China’s Pursuit of Overseas Brains: The 1,000 Talents Policy._ Netherlands Enterprise Agency, January 31, 2017. [https://www.rvo.nl/sites/default/files/2017/01/1000-Talents-Policy-Article.pdf](https://www.rvo.nl/sites/default/files/2017/01/1000-Talents-Policy-Article.pdf).
+
+Bela, V., and D. Peng. 2023. Xi Jinping urges more sci-tech collaboration to further belt and road ambitions. _South China Morning Post,_ October 19, 2023. [https://www.scmp.com/news/china/science/article/3238412/xi-jinping-urges-more-sci-tech-collaboration-further-belt-and-road-ambitions](https://www.scmp.com/news/china/science/article/3238412/xi-jinping-urges-more-sci-tech-collaboration-further-belt-and-road-ambitions).
+
+Belkin, D., and S. Hua. 2022. China’s universities rise in world rankings as American schools continue to falter. _Wall Street Journal,_ October 12, 2022. [https://www.wsj.com/articles/american-universities-continue-to-falter-in-world-rankings-china-rising-11665535646](https://www.wsj.com/articles/american-universities-continue-to-falter-in-world-rankings-china-rising-11665535646).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Berhe, A. A., R. T. Barnes, M. G. Hastings, A. Mattheis, B. Schneider, B. M. Williams, and E. Marín-Spiotta. 2022. Scientists from historically excluded groups face a hostile obstacle course. _Nature Geoscience_ 15(2). [https://doi.org/10.1038/s41561-021-00868-0](https://doi.org/10.1038/s41561-021-00868-0).
+
+Bernstein, S., R. Diamond, A. Jiranaphawiboon, T. McQuade, and B. Pousada. 2022. “The Contribution of High-Skilled Immigrants to Innovation in the United States.” Working Paper No. 3748. Stanford Graduate School of Business. [https://www.gsb.stanford.edu/faculty-research/working-papers/contribution-high-skilled-immigrants-innovation-united-states](https://www.gsb.stanford.edu/faculty-research/working-papers/contribution-high-skilled-immigrants-innovation-united-states).
+
+Bernstein, T. P., and H.-Y. Li, eds. 2010. _China Learns from the Soviet Union, 1949–Present._ Lanham, MD: Lexington Books.
+
+Berry, B. 2005. “National Security Workforce Challenges: Current Initiatives.” Presentation to the Office of the Director Defense Research and Engineering. U.S. Department of Defense, January 15, 2005. [https://slideplayer.com/slide/4575367/](https://slideplayer.com/slide/4575367/).
+
+Bhattacharjee, Y. 2011. Saudi universities offer cash in exchange for academic prestige. _Science_ 334(6061): 1344–1345.
+
+Biao, X. 2005. _Promoting Knowledge Exchange Through Diaspora Networks (The Case of People’s Republic of China)._ Centre on Migration, Policy and Society. [https://www.compas.ox.ac.uk/publication/er-2005-knowledge_exchange_diaspora_china_adb](https://www.compas.ox.ac.uk/publication/er-2005-knowledge_exchange_diaspora_china_adb).
+
+Biden, J. R. 2023. Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence. Executive Order 14110. The White House. October 30, 2023. [https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/](https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/).
+
+Bier, D. J. 2023. Abandoning the US, more scientists go to China. _CATO at Liberty_ (blog), April 11, 2023. Cato Institute. [https://www.cato.org/blog/abandoning-us-more-scientists-go-china](https://www.cato.org/blog/abandoning-us-more-scientists-go-china).
+
+Bingen, K. A. 2023. _Countering Threats from the CCP to the Homeland._ Center for Strategic & International Studies, March 9, 2023. [https://www.csis.org/analysis/countering-threats-ccp-homeland](https://www.csis.org/analysis/countering-threats-ccp-homeland).
+
+Biophysical Society. n.d. Congressional Fellowship Program Eligibility and Requirements. [https://www.biophysics.org/policy-advocacy/congressional-fellowship/program-eligibility-and-requirements](https://www.biophysics.org/policy-advocacy/congressional-fellowship/program-eligibility-and-requirements).
+
+Bloch, B. 2024. New restrictions on overseas students bringing family to UK come into force. _Sky News,_ January 1, 2024. [https://news.sky.com/story/new-restrictions-on-overseas-students-bringing-family-to-uk-come-into-force-13040284](https://news.sky.com/story/new-restrictions-on-overseas-students-bringing-family-to-uk-come-into-force-13040284).
+
+Borowiec, S. 2023. South Korea turns to migrant labor to fuel growth. _Nikkei Asia,_ October 17, 2023. [https://asia.nikkei.com/Spotlight/Asia-Insight/South-Korea-turns-to-migrant-labor-to-fuel-growth](https://asia.nikkei.com/Spotlight/Asia-Insight/South-Korea-turns-to-migrant-labor-to-fuel-growth).
+
+Bothwell, E. 2023. World University Rankings 2024: 20 years tracking global higher education. _Times Higher Education,_ September 13, 2023. [https://www.timeshighereducation.com/world-university-rankings/world-university-rankings-2024-20-years-tracking-global-higher-education](https://www.timeshighereducation.com/world-university-rankings/world-university-rankings-2024-20-years-tracking-global-higher-education).
+
+Boundless. 2022. Number of Chinese students in the U.S. drastically declines. _Boundless_ (blog), August 15, 2022. [https://www.boundless.com/blog/chinese-student-visas-decline/](https://www.boundless.com/blog/chinese-student-visas-decline/).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Boundless. 2023. Immigrants have won 40% of Nobel Prizes awarded to Americans since 2000. _Boundless_ (blog), October 5, 2023. [https://www.boundless.com/blog/u-s-immigrants-awarded-nearly-half-of-nobel-prizes-since-2000/](https://www.boundless.com/blog/u-s-immigrants-awarded-nearly-half-of-nobel-prizes-since-2000/).
+
+Bowe, A. 2018. China’s overseas United Front work: Background and implications for the United States. _U.S.-China Economic and Security Review Commission,_ August 24, 2018. [https://www.uscc.gov/sites/default/files/Research/China%27s%20Overseas%20United%20Front%20Work%20-%20Background%20and%20Implications%20for%20US_final_0.pdf](https://www.uscc.gov/sites/default/files/Research/China%27s%20Overseas%20United%20Front%20Work%20-%20Background%20and%20Implications%20for%20US_final_0.pdf).
+
+Boyer Commission on Educating Undergraduates in the Research University. 1998. _Reinventing Undergraduate Education: A Blueprint for America’s Research Universities._ Stony Brook, NY: State University of New York at Stony Brook for the Carnegie Foundation for the Advancement of Teaching. [https://files.eric.ed.gov/fulltext/ED424840.pdf](https://files.eric.ed.gov/fulltext/ED424840.pdf).
+
+Bradsher, K. 2024. How China built tech prowess: Chemistry classes and research labs. _New York Times,_ August 9, 2024. [https://www.nytimes.com/2024/08/09/business/china-ev-battery-tech.html](https://www.nytimes.com/2024/08/09/business/china-ev-battery-tech.html).
+
+Brainard, J., and D. Normile. 2022. China rises to first place in most cited papers. _Science,_ August 17, 2022. [https://www.science.org/content/article/china-rises-first-place-most-cited-papers](https://www.science.org/content/article/china-rises-first-place-most-cited-papers).
+
+British Council. n.d. Commonwealth Scholarships. [https://study-uk.britishcouncil.org/scholarships-funding/commonwealth-scholarships](https://study-uk.britishcouncil.org/scholarships-funding/commonwealth-scholarships).
+
+British Council. 2017. An Introduction to China’s “111 Project.” _News,_ March 15, 2017. [https://opportunities-insight.britishcouncil.org/news/market-news/introduction-china%E2%80%99s-%E2%80%9C111-project%E2%80%9D-0](https://opportunities-insight.britishcouncil.org/news/market-news/introduction-china%E2%80%99s-%E2%80%9C111-project%E2%80%9D-0).
+
+Broaded, C. M. 1993. China’s response to the brain drain. _Comparative Education Review_ 37(3). [https://www.journals.uchicago.edu/doi/abs/10.1086/447191?journalCode=cer](https://www.journals.uchicago.edu/doi/abs/10.1086/447191?journalCode=cer).
+
+Brouillette, D. 2019. Department of Energy Policy on Foreign Government Talent Recruitment Programs. January 31, 2019. [https://aip.brightspotcdn.com/74/4a/67abd61c3ca5d1cf3db31a9d9c24/doe-memo-on-foreign-goverment-talent-recruitment-programs.pdf](https://aip.brightspotcdn.com/74/4a/67abd61c3ca5d1cf3db31a9d9c24/doe-memo-on-foreign-goverment-talent-recruitment-programs.pdf).
+
+Brown, J. 2019. “Securing the U.S. Research Enterprise from China’s Talent Recruitment Plans.” Statement before the Senate Homeland Security and Governmental Affairs Committee, Permanent Subcommittee on Investigations. November 19, 2019. [https://www.fbi.gov/news/testimony/securing-the-us-research-enterprise-from-chinas-talent-recruitment-plans-111919](https://www.fbi.gov/news/testimony/securing-the-us-research-enterprise-from-chinas-talent-recruitment-plans-111919).
+
+Brown, K. 2009. Qian Xuesen obituary. _The Guardian,_ November 1, 2009. [https://www.theguardian.com/technology/2009/nov/01/qian-xuesen-obituary](https://www.theguardian.com/technology/2009/nov/01/qian-xuesen-obituary).
+
+Brown, M., and P. Singh. 2018. _China’s Technology Transfer Strategy._ Defense Innovation Unit Experimental (DIUx). [https://nationalsecurity.gmu.edu/wp-content/uploads/2020/02/DIUX-China-Tech-Transfer-Study-Selected-Readings.pdf](https://nationalsecurity.gmu.edu/wp-content/uploads/2020/02/DIUX-China-Tech-Transfer-Study-Selected-Readings.pdf).
+
+Bureau of Educational and Cultural Affairs. n.d.a. BridgeUSA Programs. U.S. Department of State. [https://j1visa.state.gov/programs/early-career-stem-research-initiative/](https://j1visa.state.gov/programs/early-career-stem-research-initiative/).
+
+Bureau of Educational and Cultural Affairs. n.d.b. Fulbright Program Overview. U.S. Department of State. [https://eca.state.gov/fulbright/about-fulbright/fulbright-program-overview](https://eca.state.gov/fulbright/about-fulbright/fulbright-program-overview).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Bureau of Educational and Cultural Affairs. n.d.c. Opportunity for Academic Training Extensions for J-1 College and University Students in STEM Fields. U.S. Department of State. [https://j1visa.state.gov/opportunity-for-academic-training-extensions-for-j-1-college-and-university-students-in-stem-fields/](https://j1visa.state.gov/opportunity-for-academic-training-extensions-for-j-1-college-and-university-students-in-stem-fields/).
+
+Burton, J., and C. Richardson. 2024. Red states don’t want Chinese neighbors. _Foreign Policy,_ January 3, 2024. [https://foreignpolicy.com/2024/01/03/chinese-property-homeownership-bans-us-florida-states-desantis-history/](https://foreignpolicy.com/2024/01/03/chinese-property-homeownership-bans-us-florida-states-desantis-history/).
+
+Bush, V. 1945. _Science The Endless Frontier._ A Report to the President by Vannevar Bush, Director of the Office of Scientific Research and Development, July 1945. Washington, DC: United States Government Printing Office. [https://www.nsf.gov/about/history/vbush1945.htm](https://www.nsf.gov/about/history/vbush1945.htm).
+
+Business Roundtable. 2005. _Tapping America’s Potential: The Education for Innovation Initiative._ Washington, DC: Business Roundtable. [https://files.eric.ed.gov/fulltext/ED485768.pdf](https://files.eric.ed.gov/fulltext/ED485768.pdf).
+
+_Business Standard._ 2023. Why UPenn demoted Katalin Kariko for research that won her the Nobel Prize. _World News,_ July 31, 2024. [https://www.business-standard.com/world-news/why-upenn-demoted-katalin-kariko-for-research-that-won-her-the-nobel-prize-123100300595_1.html](https://www.business-standard.com/world-news/why-upenn-demoted-katalin-kariko-for-research-that-won-her-the-nobel-prize-123100300595_1.html).
+
+_Business Times._ 2022. Foreign enrolment in Singapore private schools picks up as borders reopen. June 9, 2022. [https://www.businesstimes.com.sg/singapore/economy-policy/foreign-enrolment-singapore-private-schools-picks-borders-reopen](https://www.businesstimes.com.sg/singapore/economy-policy/foreign-enrolment-singapore-private-schools-picks-borders-reopen).
+
+Butz, W. P., T. K. Kelly, D. M. Adamson, G. A. Bloom, D. Fossum, and M. E. Gross. 2004. _Will the Scientific and Technology Workforce Meet the Requirements of the Federal Government?_ RAND Corporation. [https://www.rand.org/content/dam/rand/pubs/monographs/2004/RAND_MG118.pdf](https://www.rand.org/content/dam/rand/pubs/monographs/2004/RAND_MG118.pdf).
+
+Campus France. n.d. France Excellence Eiffel Scholarship Program. République Française. [https://www.campusfrance.org/en/france-excellence-eiffel-scholarship-program](https://www.campusfrance.org/en/france-excellence-eiffel-scholarship-program).
+
+Campus France. 2023. _Regulations Governing France Excellence Eiffel Scholarship Program for Recipients._ République Française, Ministère de l’Europe et des Affaires Etrangères. [https://www.campusfrance.org/system/files/medias/documents/2024-02/REGLEMENTATION_LAUREATS%20Eiffel_2024_EN.pdf](https://www.campusfrance.org/system/files/medias/documents/2024-02/REGLEMENTATION_LAUREATS%20Eiffel_2024_EN.pdf).
+
+Cao, C. 2017. “China’s Approaches to Attract and Nurture Young Biomedical Researchers.” Commissioned paper for the Next Generation Initiative Study Committee. Washington, DC: National Academies of Sciences, Engineering, and Medicine. [https://sites.nationalacademies.org/cs/groups/pgasite/documents/webpage/pga_184821.pdf](https://sites.nationalacademies.org/cs/groups/pgasite/documents/webpage/pga_184821.pdf).
+
+Cao, C. 2021. Chinese joint-venture universities try for the best of both worlds. _Nature,_ May 26, 2021. [https://www.nature.com/articles/d41586-021-01406-z](https://www.nature.com/articles/d41586-021-01406-z).
+
+Cao, C., J. Baas, C. S. Wagner, and K. Jonkers. 2020. Returning scientists and the emergence of China’s science system. _Science and Public Policy_ 47(2): 172–183. [https://doi.org/10.1093/scipol/scz056](https://doi.org/10.1093/scipol/scz056).
+
+Carter, A. 2022a. Chancenkarte: Germany releases details of new points-based immigration system. _I Am Expat,_ September 8, 2022. [https://www.iamexpat.de/expat-info/german-expat-news/chancenkarte-germany-releases-details-new-points-based-immigration](https://www.iamexpat.de/expat-info/german-expat-news/chancenkarte-germany-releases-details-new-points-based-immigration).
+
+Carter, A. 2022b. Germany’s skilled worker shortage reaches new heights. _I Am Expat,_ June 6, 2022. [https://www.iamexpat.de/career/employment-news/germanys-skilled-worker-shortage-reaches-new-heights](https://www.iamexpat.de/career/employment-news/germanys-skilled-worker-shortage-reaches-new-heights).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Catanzaro, M. 2023a. Saudi universities lose highly cited researchers after payment schemes raise ethics concerns. _Science,_ November 27, 2023. [https://www.science.org/content/article/saudi-universities-lose-highly-cited-researchers-after-payment-schemes-raise-ethics](https://www.science.org/content/article/saudi-universities-lose-highly-cited-researchers-after-payment-schemes-raise-ethics).
+
+Catanzaro, M. 2023b. Saudi universities entice top scientists to switch affiliations – sometimes with cash. _Nature,_ May 5, 2023. [https://www.nature.com/articles/d41586-023-01523-x](https://www.nature.com/articles/d41586-023-01523-x).
+
+CCTV (China Central Television). 2009. Shanghai to recruit overseas financial talents. December 5, 2009. [https://english.cctv.com/20091205/101908.shtml](https://english.cctv.com/20091205/101908.shtml).
+
+Chancenkarte Deutschland. n.d. Working in Germany with the Opportunity Card. [https://chancenkarte.com/en/](https://chancenkarte.com/en/).
+
+Chang, G. G. 2021. China’s Propaganda: Ludicrous, Malicious, Extremely Effective. Hoover Institution, May 5, 2021. [https://www.hoover.org/research/chinas-propaganda-ludicrous-malicious-extremely-effective](https://www.hoover.org/research/chinas-propaganda-ludicrous-malicious-extremely-effective).
+
+Chang, I. 1995. _Thread of the Silkworm._ New York, NY: Basic Books.
+
+Chang, K. 2007. Journeys to the distant fields of prime. _New York Times,_ March 13, 2007. [https://www.nytimes.com/2007/03/13/science/13prof.html](https://www.nytimes.com/2007/03/13/science/13prof.html).
+
+Chang, K. 2023. Asian researchers face disparity with key U.S. science funding source. _New York Times,_ January 4, 2023. [https://www.nytimes.com/2023/01/04/science/asian-scientists-nsf-funding.html](https://www.nytimes.com/2023/01/04/science/asian-scientists-nsf-funding.html).
+
+Chang, M. 2007. Oral History Interview: Morris Chang. Interviewed by A. Patterson, SEMI and Computer History Museum. Recorded August 24, 2007, Taiwan. [https://archive.computerhistory.org/resources/access/text/2013/05/102658129-05-01-acc.pdf](https://archive.computerhistory.org/resources/access/text/2013/05/102658129-05-01-acc.pdf).
+
+Chase, J., and W. Miles. 2023. Leveraging America’s diverse STEM talent. _National Defense Magazine,_ October 27, 2023. [https://www.nationaldefensemagazine.org/articles/2023/10/27/emerging-technology-horizons-leveraging-americas-diverse-stem-talent](https://www.nationaldefensemagazine.org/articles/2023/10/27/emerging-technology-horizons-leveraging-americas-diverse-stem-talent).
+
+Chawla, D. S. 2019. Research returnees boost China’s scientific impact. _Nature Index,_ September 18, 2019. [https://www.nature.com/nature-index/news/research-returnees-united-states-boost-chinas-scientific-impact](https://www.nature.com/nature-index/news/research-returnees-united-states-boost-chinas-scientific-impact).
+
+Chen, C. Y., S. S. Kahanamoku, A. Tripati, R. A. Alegado, V. R. Morris, K. Andrade, and J. Hosbey. 2022. Meta-research: Systemic racial disparities in funding rates at the National Science Foundation. _eLife_ 11:e83071. [https://doi.org/10.7554/eLife.83071](https://doi.org/10.7554/eLife.83071).
+
+Chen, H. 2023. Chinese students cooling on U.S. higher education. _Axios,_ May 8, 2023. [https://www.axios.com/2023/05/08/chinese-students-us-education](https://www.axios.com/2023/05/08/chinese-students-us-education).
+
+Chen, X., and M. Soldner. 2013. _STEM Attrition: College Students’ Paths Into and Out of STEM Fields._ U.S. Department of Education, Institute of Education Sciences, and National Center for Education Statistics. [https://files.eric.ed.gov/fulltext/ED544470.pdf](https://files.eric.ed.gov/fulltext/ED544470.pdf).
+
+Chevening. n.d. Chevening Scholarships. UK Foreign, Commonwealth and Development Office. [https://www.chevening.org/scholarships/](https://www.chevening.org/scholarships/).
+
+China Economic Net. 2010. Chinese job fair in US tried to woo talent. _China Daily,_ April 26, 2010. Accessed 26 April 2010. [http://en.ce.cn/Business/Macro-economic/201004/26/t20100426_21326070.shtml](http://en.ce.cn/Business/Macro-economic/201004/26/t20100426_21326070.shtml).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+China Net Education Channel. 2019. 6 yuè 23 rì, yī gè zhí dé zhōng guó rén jì zhù de rì zǐ (June 23, a Day Worth Remembering by the Chinese People). Excerpt from “liú měi shì wǒ rén shēng zhòng yào de lǐ chéng bēi,” (Studying in the United States is an important milestone in my life), Shenzhou Scholars, Issue 9 (2009).
+
+China Overseas Network. 2007. “chūn huī jì huá” shí nián lì chéng (Ten-year history of “Chunhui Project”).
+
+Chinese Academy of Sciences. n.d. Two-decade Development of the Hundred-Talent Program. [https://english.cas.cn/bcas/2015_1/201503/P020150324534612618850.pdf](https://english.cas.cn/bcas/2015_1/201503/P020150324534612618850.pdf).
+
+Clarivate. n.d. Web of Science. [https://www.webofscience.com/wos/woscc/basic-search](https://www.webofscience.com/wos/woscc/basic-search).
+
+Clowse, B. B. 1981. _Brainpower for the Cold War: The Sputnik Crisis and National Defense Education Act of 1958._ Westport, CT: Greenwood Press.
+
+Code of Federal Regulations. 2024. 8 C.F.R. § 214.2 Special requirements for admission, extension, and maintenance of status. [https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/subpart-A/section-214.2](https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/subpart-A/section-214.2).
+
+Coding It Forward. n.d. Coding it Forward Fellowship. [https://codingitforward.com/fellowship](https://codingitforward.com/fellowship).
+
+Cohen Immigration Law. 2022. Temporary Foreign Worker Program & International Mobility Program. Last modified May 6, 2022. [https://www.canadavisa.com/temporary-foreign-worker-program.html](https://www.canadavisa.com/temporary-foreign-worker-program.html).
+
+Cohen Immigration Law. 2023. Global Talent Stream: Hire Foreign Tech Talent | Get a Free Legal Consultation. Last modified January 3, 2023. [https://www.canadavisa.com/global-talent-stream.html](https://www.canadavisa.com/global-talent-stream.html).
+
+Cohen, M. 2019. The 600 billion dollar China IP echo chamber. _China IPR_ (blog), May 12, 2019. [https://chinaipr.com/2019/05/12/the-600-billion-dollar-china-ipecho-chamber/](https://chinaipr.com/2019/05/12/the-600-billion-dollar-china-ipecho-chamber/).
+
+Colglazier, E. W. 2023. The precarious balance between research openness and security. _Issues in Science and Technology_ 39(3): 87–91.
+
+Commission on the Theft of American Intellectual Property. 2013. _The IP Commission Report._ Seattle, WA: National Bureau of Asian Research. [https://www.nbr.org/wp-content/uploads/pdfs/publications/IP_Commission_Report.pdf](https://www.nbr.org/wp-content/uploads/pdfs/publications/IP_Commission_Report.pdf).
+
+Commission on the Theft of American Intellectual Property. 2017. _The IP Commission Report Update._ Seattle, WA: National Bureau of Asian Research. [https://www.nbr.org/wp-content/uploads/pdfs/publications/IP_Commission_Report_Update.pdf](https://www.nbr.org/wp-content/uploads/pdfs/publications/IP_Commission_Report_Update.pdf).
+
+Condie, S. 2023. Global migration boom keeps housing costs high. _Wall Street Journal,_ July 15, 2023. [https://www.wsj.com/articles/global-migration-boom-keeps-housing-costs-high-5fc84b7f](https://www.wsj.com/articles/global-migration-boom-keeps-housing-costs-high-5fc84b7f).
+
+Conroy, G. 2024. China-US research collaborations are in decline—this is bad news for everyone. _Nature,_ July 19, 2024. [https://www.nature.com/articles/d41586-024-02046-9](https://www.nature.com/articles/d41586-024-02046-9).
+
+Conzelmann, J. G., S. W. Hemelt, B. Hershbein, S. M. Martin, A. Simon, and K. M. Stange. August 2023. _Skills, Majors, and Jobs: Does Higher Education Respond?_ Cambridge, MA: National Bureau of Economic Research. [https://www.nber.org/system/files/working_papers/w31572/w31572.pdf](https://www.nber.org/system/files/working_papers/w31572/w31572.pdf).
+
+Córdova, F. 2019. Dear Colleague Letter: Research Protection. July 11, 2019. [https://www.nsf.gov/pubs/2019/nsf19200/research_protection.pdf](https://www.nsf.gov/pubs/2019/nsf19200/research_protection.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Corrigan, J., J. Dunham, and R. Zwetsloot. 2022. _The Long-Term Stay Rates of International STEM PhD Graduates._ CSET Issue Brief, April 2022. Center for Security and Emerging Technology. [https://cset.georgetown.edu/publication/the-long-term-stay-rates-of-international-stem-phd-graduates/](https://cset.georgetown.edu/publication/the-long-term-stay-rates-of-international-stem-phd-graduates/).
+
+Council on Competitiveness. 2005. _Innovate America: National Innovation Initiative Summit and Report._[https://www.innovationtaskforce.org/docs/NII%20Innovate%20America.pdf](https://www.innovationtaskforce.org/docs/NII%20Innovate%20America.pdf).
+
+Council on Foreign Relations. 2019. _Innovation and National Security: Keeping Our Edge._ Independent Task Force Report No. 77. Updated September 2019. [https://www.cfr.org/report/keeping-our-edge/](https://www.cfr.org/report/keeping-our-edge/).
+
+Council on Foreign Relations. 2023. U.S.-China Relations. [https://www.cfr.org/timeline/us-china-relations](https://www.cfr.org/timeline/us-china-relations).
+
+Council on Governmental Relations. 2021. COGR letter to Dr. Eric Lander, Director, Office of Science and Technology Policy, December 21, 2021. [https://www.cogr.edu/sites/default/files/COGR%20letter%20to%20OSTP%2021%20Dec%202021%20-%20final%20%281%29.pdf](https://www.cogr.edu/sites/default/files/COGR%20letter%20to%20OSTP%2021%20Dec%202021%20-%20final%20%281%29.pdf).
+
+Council on Governmental Relations. 2022. Letter to Linda Lourie and Christina Ciocca Eller, Office of Science and Technology Policy, February 15, 2022, regarding “Comments Concerning the January 2022 Guidance for Implementing NSPM33.” [https://www.cogr.edu/sites/default/files/feb%2015%2022%20letter%20to%20ostp%20re%20nspm33%20implementation%20final.pdf](https://www.cogr.edu/sites/default/files/feb%2015%2022%20letter%20to%20ostp%20re%20nspm33%20implementation%20final.pdf).
+
+Cox, C. 2023. GOP lawmakers urge DOJ to probe Chinese IP theft from U.S. small businesses. _CNBC,_ June 15, 2023. [https://www.cnbc.com/2023/06/15/gop-lawmakers-urge-doj-to-probe-chinese-ip-theft-from-us-small-businesses.html](https://www.cnbc.com/2023/06/15/gop-lawmakers-urge-doj-to-probe-chinese-ip-theft-from-us-small-businesses.html).
+
+Crane, K. W., T. J. Colvin, A. R. Goldman, E. R. Grumbling, and A. B. Ware. 2021. _Economic Benefits and Losses from Foreign STEM Talent in the United States._ Washington, DC: Institute for Defense Analyses. [https://www.ida.org/research-and-publications/publications/all/e/ec/economic-benefits-and-losses-from-foreign-stem-talent-in-the-united-states](https://www.ida.org/research-and-publications/publications/all/e/ec/economic-benefits-and-losses-from-foreign-stem-talent-in-the-united-states).
+
+Crow, J. M. 2022. US-China partnerships bring strength in numbers to big science projects. _Nature_ 603. [https://doi.org/10.1038/d41586-022-00570-0](https://doi.org/10.1038/d41586-022-00570-0).
+
+Crowe, D. 2024. Foreign student visa rejections to cost unis $310m this year. _Sydney Morning Herald,_ February 14, 2024. [https://www.smh.com.au/politics/federal/foreign-student-visa-rejections-to-cost-unis-310m-this-year-20240214-p5f4qg.html](https://www.smh.com.au/politics/federal/foreign-student-visa-rejections-to-cost-unis-310m-this-year-20240214-p5f4qg.html).
+
+Crowley-Vigneau, A., I. A. Istomin, A. A. Baykov, and Y. Kalyuzhnova. 2021. Transnational policy networks and change through internationalization (The Record of Project 5-100). _Polis. Political Studies_ (5): 8-24. [https://doi.org/10.17976/jpps/2021.05.02](https://doi.org/10.17976/jpps/2021.05.02).
+
+CRRIST (China Resources Research Institute of Science and Technology). n.d. Talent Development. [https://www.crrist.com.hk/home/talentplan/index.html](https://www.crrist.com.hk/home/talentplan/index.html).
+
+DAAD (Deutscher Akademischer Austauschdienst).n.d.a. Finding Scholarships. [https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/](https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/).
+
+DAAD. n.d.b. Visas. [https://www.daad.de/en/studying-in-germany/living-in-germany/visa/](https://www.daad.de/en/studying-in-germany/living-in-germany/visa/).
+
+DAAD. n.d.c. Work & Career. [https://www.daad.de/en/studying-in-germany/work-career/](https://www.daad.de/en/studying-in-germany/work-career/).
+
+DARPA (Defense Advanced Research Projects Agency). n.d. “Prize Challenges.” U.S. Department of Defense. [https://www.darpa.mil/work-with-us/public/prizes](https://www.darpa.mil/work-with-us/public/prizes).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Dawson, K. C. 2010. Shanghai employers go to US to hire returning Chinese expats. _China Daily,_ April 26, 2010. [https://www.chinadaily.com.cn/china/2010-04/26/content_9772403.htm](https://www.chinadaily.com.cn/china/2010-04/26/content_9772403.htm).
+
+DCSA (Defense Counterintelligence and Security Agency). April 2021. _Foreign Intelligence Entities’ Recruitment Plans Target Cleared Academia._ U.S. Department of Defense. [https://www.dcsa.mil/Portals/91/Documents/CI/DCSA_AD-21-001_FIE_Recruitment_Plans_Target_Cleared_Academia.pdf](https://www.dcsa.mil/Portals/91/Documents/CI/DCSA_AD-21-001_FIE_Recruitment_Plans_Target_Cleared_Academia.pdf).
+
+Demirci, M. 2019. Transition of international science, technology, engineering, and mathematics students to the U.S. labor market: The role of visa policy. _Economic Inquiry_ 57: 1367–1391. [https://onlinelibrary.wiley.com/doi/abs/10.1111/ecin.12795](https://onlinelibrary.wiley.com/doi/abs/10.1111/ecin.12795).
+
+Department of Education of the Embassy of the People’s Republic of China in the Federal Republic of Germany. n.d. _Global Recruitment of Pioneer ‘Hundred Talents Program’ of CAS._[http://www.de-moe.org/upload/1450689915_file2_1450689915.pdf](http://www.de-moe.org/upload/1450689915_file2_1450689915.pdf).
+
+Department of Foreign Expert Services of the PRC Ministry of Science and Technology. 2019. _2020 National Foreign Expert Project Application Guide._ Translated by Center for Security and Emerging Technology. [https://cset.georgetown.edu/publication/2020-national-foreign-expert-project-application-guide/](https://cset.georgetown.edu/publication/2020-national-foreign-expert-project-application-guide/).
+
+DeSilver, D. 2017. U.S. students’ academic achievement still lags that of their peers in many other countries. _Pew Research Center,_ February 15, 2017. [https://www.pewresearch.org/short-reads/2017/02/15/u-s-students-internationally-math-science/](https://www.pewresearch.org/short-reads/2017/02/15/u-s-students-internationally-math-science/).
+
+DESTATIS. 2023. Sharp rise in labour migration in 2022. Press release, April 27, 2023. [https://www.destatis.de/EN/Themes/Society-Environment/Population/Migration-Integration/_node.html](https://www.destatis.de/EN/Themes/Society-Environment/Population/Migration-Integration/_node.html).
+
+DESTATIS. 2024. National Accounts, Domestic Product. February 23, 2024. [https://www.destatis.de/EN/Themes/Economy/National-Accounts-Domestic-Product/_node.html](https://www.destatis.de/EN/Themes/Economy/National-Accounts-Domestic-Product/_node.html).
+
+Deutch, J. 2018. Is innovation China’s next great leap forward? _Issues in Science and Technology_ 34(4). [https://issues.org/is-innovation-chinas-next-great-leap-forward/](https://issues.org/is-innovation-chinas-next-great-leap-forward/).
+
+DHS (U.S. Department of Homeland Security). 2008. Extending period of optional practical training by 17 months for F-1 nonimmigrant students with STEM degrees and expanding cap-gap relief for all F-1 students with pending H-1B petitions. _Federal Register_ 73(68): 18944. [https://www.federalregister.gov/documents/2008/04/08/E8-7427/extending-period-of-optional-practical-training-by-17-months-for-f-1-nonimmigrant-students-with-stem](https://www.federalregister.gov/documents/2008/04/08/E8-7427/extending-period-of-optional-practical-training-by-17-months-for-f-1-nonimmigrant-students-with-stem).
+
+DHS. 2022a. Update to the Department of Homeland Security STEM Designated Degree Program List. _Federal Register_ 87(14): 3317. [https://www.federalregister.gov/documents/2022/01/21/2022-01188/update-to-the-department-of-homeland-security-stem-designated-degree-program-list](https://www.federalregister.gov/documents/2022/01/21/2022-01188/update-to-the-department-of-homeland-security-stem-designated-degree-program-list).
+
+DHS. 2022b. _Yearbook of Immigration Statistics._ Edited by Office of Homeland Security Statistics. [https://ohss.dhs.gov/topics/immigration/yearbook/2022](https://ohss.dhs.gov/topics/immigration/yearbook/2022).
+
+DHS. 2023a. _SEVIS by the Numbers – 2022 Annual Report._ U.S. Immigration and Customs Enforcement (Student Exchange Visitor Program – SEVP), April 25, 2023. [https://www.dhs.gov/sites/default/files/2024-05/22_0406_hsi_sevp-cy22-sevis-btn.pdf](https://www.dhs.gov/sites/default/files/2024-05/22_0406_hsi_sevp-cy22-sevis-btn.pdf).
+
+DHS. 2023b. Student and Exchange Visitor Information System (SEVIS). U.S. Immigration and Customs Enforcement. Non-public data-encoded CD-ROMs provided by DHS via a Freedom of Information Act request to the Institute for Progress and the Federation of American Scientists.
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+DHS. 2023c. Update to the Department of Homeland Security STEM Designated Degree Program List. _Federal Register_ 88(132): 44381. [https://www.federalregister.gov/documents/2023/07/12/2023-14807/update-to-the-department-of-homeland-security-stem-designated-degree-program-list](https://www.federalregister.gov/documents/2023/07/12/2023-14807/update-to-the-department-of-homeland-security-stem-designated-degree-program-list).
+
+DHS. 2024a. _Homeland Security Academic Partnership Council._ Foreign Malign Influence in Higher Education Subcommittee, Office of Partnership and Engagement, June 3, 2024. [https://www.dhs.gov/sites/default/files/2024-06/24_0612_hsapc_fmi_subcommittee_report.pdf](https://www.dhs.gov/sites/default/files/2024-06/24_0612_hsapc_fmi_subcommittee_report.pdf).
+
+DHS. 2024b. _SEVIS by the Numbers – 2023 Annual Report._ Homeland Security Investigations (Student and Exchange Visitor Program – SEVP), May 10, 2024. [https://www.dhs.gov/sites/default/files/2024-05/24_0510_hsi_sevp-cy23-sevis-btn.pdf](https://www.dhs.gov/sites/default/files/2024-05/24_0510_hsi_sevp-cy23-sevis-btn.pdf).
+
+Diamond, L., and O. Schell. 2019. _China’s Influence & American Interests: Promoting Constructive Vigilance._ Hoover Institution (Stanford University). [https://www.hoover.org/sites/default/files/research/docs/diamond-schell_chineseinfluence_oct2020rev.pdf](https://www.hoover.org/sites/default/files/research/docs/diamond-schell_chineseinfluence_oct2020rev.pdf).
+
+DOD (U.S. Department of Defense). n.d. _National Security Workforce: Challenges and Solutions._[https://web.archive.org/web/20060729111022/http](https://web.archive.org/web/20060729111022/http):/[www.dod.mil/ddre/doc/NDEA_BRIEFING.pdf](http://www.dod.mil/ddre/doc/NDEA_BRIEFING.pdf).
+
+DOD. 2023. _Countering Unwanted Foreign Influence in Department-Funded Research at Institutions of Higher Education._ June 29, 2023. [https://media.defense.gov/2023/Jun/29/2003251160/-1/-1/1/COUNTERING-UNWANTED-INFLUENCE-INDEPARTMENT-FUNDED-RESEARCH-AT-INSTITUTIONS-OF-HIGHER-EDUCATION.PDF](https://media.defense.gov/2023/Jun/29/2003251160/-1/-1/1/COUNTERING-UNWANTED-INFLUENCE-INDEPARTMENT-FUNDED-RESEARCH-AT-INSTITUTIONS-OF-HIGHER-EDUCATION.PDF).
+
+DOD and Office of the Under Secretary of Defense for Research and Engineering. n.d. Vannevar Bush Faculty Fellowship. Basic Research – Research Directorate. [https://basicresearch.defense.gov/Programs/Vannevar-Bush-Faculty-Fellowship/](https://basicresearch.defense.gov/Programs/Vannevar-Bush-Faculty-Fellowship/).
+
+DOE (U.S. Department of Energy). 2019. _Department of Energy Foreign Government Talent Recruitment Programs._[https://research.fiu.edu/wp-content/uploads/2020/01/4-DOE-Foreign-Recruitment-Order-486.1.pdf](https://research.fiu.edu/wp-content/uploads/2020/01/4-DOE-Foreign-Recruitment-Order-486.1.pdf).
+
+DOJ (U.S. Department of Justice). 2021. Information About the Department of Justice’s China Initiative and a Compilation of China-Related Prosecutions Since 2018. justice.gov/archives. Last updated November 19, 2021. [https://www.justice.gov/archives/nsd/information-about-department-justice-s-china-initiative-and-compilation-china-related](https://www.justice.gov/archives/nsd/information-about-department-justice-s-china-initiative-and-compilation-china-related).
+
+DOJ. 2022. Statement from U.S. Attorney Rachael S. Rollins on the Dismissal of the Gang Chen Case. January 20, 2022. [https://www.justice.gov/usao-ma/pr/statement-us-attorney-rachael-s-rollins-dismissal-gang-chen-case](https://www.justice.gov/usao-ma/pr/statement-us-attorney-rachael-s-rollins-dismissal-gang-chen-case).
+
+Dolgin, E. 2019. ‘Psychological fear’: MIT scientists of Chinese origin protest toxic US climate. _Nature,_ July 2, 2019. [https://www.nature.com/articles/d41586-019-02063-z](https://www.nature.com/articles/d41586-019-02063-z).
+
+Donahoe, D. 2013. “The Definition of STEM?” IEEE (Institute of Electrical and Electronics Engineers). Last Modified 01 December 2013. [https://insight.ieeeusa.org/articles/the-definition-of-stem/](https://insight.ieeeusa.org/articles/the-definition-of-stem/).
+
+DORA (Declaration on Research Assessment). 2020. Hypercompetition, Preferential Hiring, and Other Hurdles in Academia. [https://sfdora.org/2020/04/03/hypercompetition-preferential-hiring-and-other-hurdles-in-academia/](https://sfdora.org/2020/04/03/hypercompetition-preferential-hiring-and-other-hurdles-in-academia/).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+DOS (U.S. Department of State). n.d.a. Military-civil fusion and the People’s Republic of China. Fact Sheet, May 28, 2020. Bureau of International Security and Nonproliferation. [https://2017-2021.state.gov/remarks-and-releases-bureau-of-international-security-and-nonproliferation/mcf-and-the-prc/](https://2017-2021.state.gov/remarks-and-releases-bureau-of-international-security-and-nonproliferation/mcf-and-the-prc/).
+
+DOS. n.d.b. Sputnik, 1957. _Milestones: 1953–1960._ Office of the Historian. [https://history.state.gov/milestones/1953-1960/sputnik](https://history.state.gov/milestones/1953-1960/sputnik).
+
+DOS. 2020. _The Chinese Communist Party on Campus: Opporunities & Risks._[https://www.state.gov/wp-content/uploads/2020/09/CCP-on-campus-FINAL.pdf](https://www.state.gov/wp-content/uploads/2020/09/CCP-on-campus-FINAL.pdf).
+
+DOS. 2024. Visa Bulletin for March 2024. No. 87, Vol. X. [https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin/2024/visa-bulletin-for-march-2024.html](https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin/2024/visa-bulletin-for-march-2024.html).
+
+DOS and ED (U.S. Department of State and U.S. Department of Education). 2021. _Joint Statement of Principles in Support of International Education._[https://educationusa.state.gov/sites/default/files/intl_ed_joint_statement.pdf](https://educationusa.state.gov/sites/default/files/intl_ed_joint_statement.pdf).
+
+Dou, S. 2023. Companies account for over 70% of China’s R&D investment, report says. _Yicai,_ March 7, 2023. [https://www.yicaiglobal.com/news/companies-account-for-over-70-of-china-rd-investment-report-says](https://www.yicaiglobal.com/news/companies-account-for-over-70-of-china-rd-investment-report-says).
+
+Dunn, P. 2013. Morris Chang ‘52, SM ‘53, ME ‘55: Transforming the semiconductor industry. _MIT Technology Review,_ December 17, 2013. [https://www.technologyreview.com/2013/12/17/175060/morris-chang-52-sm-53-me-55/](https://www.technologyreview.com/2013/12/17/175060/morris-chang-52-sm-53-me-55/).
+
+Dutta, S., B. Lanvin, L. R. Leon, and S. Wunsh-Vincent, eds. 2023. _Global Innovation Index 2023._ World Intellectual Property Organization. [https://www.wipo.int/edocs/pubdocs/en/wipo-pub-2000-2023-en-main-report-global-innovation-index-2023-16th-edition.pdf](https://www.wipo.int/edocs/pubdocs/en/wipo-pub-2000-2023-en-main-report-global-innovation-index-2023-16th-edition.pdf).
+
+Dyvik, E. H. 2023. Population in Sweden from 2012 to 2022, by Origin. Statista. Last modified August 29, 2023. [https://www.statista.com/statistics/521890/sweden-population-by-origin/](https://www.statista.com/statistics/521890/sweden-population-by-origin/).
+
+ED (U.S. Department of Education). 2014. “Civil Rights Data Collection Data Snapshot: College and Career Readiness.” Issue Brief No. 3, March 2014. U.S. Department of Education Office for Civil Rights. [https://www2.ed.gov/about/offices/list/ocr/docs/crdc-college-and-career-readiness-snapshot.pdf](https://www2.ed.gov/about/offices/list/ocr/docs/crdc-college-and-career-readiness-snapshot.pdf).
+
+ED. 2024. The Federal Role in Education. Last modified May 23, 2024. [https://www2.ed.gov/about/overview/fed/role.html](https://www2.ed.gov/about/overview/fed/role.html).
+
+Edmondson, C. 2021. ‘Rogue’ U.S. agency used racial profiling to investigate Commerce Dept. employees, report says. _New York Times,_ July 16, 2021. [https://www.nytimes.com/2021/07/16/us/politics/commerce-department-senate-report.html](https://www.nytimes.com/2021/07/16/us/politics/commerce-department-senate-report.html).
+
+Eduitalia. n.d. About Us. [https://eduitalia.org/about-us](https://eduitalia.org/about-us).
+
+Edwards, M. A., and S. Roy. 2017. Academic research in the 21st Century: Maintaining scientific integrity in a climate of perverse incentives and hypercompetition. _Environmental Engineering Science_ 34(1): 51–61. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5206685/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5206685/).
+
+Eggers, W. D., and J. Hagel III. 2012. Brawn from Brains: Talent, Policy, and the Future of American Competitiveness. Deloitte, September 28, 2012. [https://www2.deloitte.com/us/en/insights/topics/talent/brawn-from-brains-talent-policy-and-the-future-of-american-competitiveness.html](https://www2.deloitte.com/us/en/insights/topics/talent/brawn-from-brains-talent-policy-and-the-future-of-american-competitiveness.html).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Elias, M. H., K. Sompiyachoke, F. M. Fernández, S. Caroline, and L. Kamerlin. 2024. The ineligibility barrier for international researchers in US academia. _EMBO Reports_ 25(2): 475–458. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10897176/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10897176/).
+
+Embassy of the People’s Republic of China in the United Kingdom of Great Britain and Northern Ireland. 2007. The Education section of the Chinese Embassy held a reception to promote Probation and Employment for Overseas Chinese Students in UK. Last modified November 2, 2007. [http://gb.china-embassy.gov.cn/eng/gdxw/200711/t20071102_3276234.htm](http://gb.china-embassy.gov.cn/eng/gdxw/200711/t20071102_3276234.htm).
+
+Embassy of the Republic of Korea to the Republic of Singapore. 2023. D-2 Student Visa. Consular/Visa Service. Republic of Korea, Ministry of Foreign Affairs. Last modified December 28, 2023. [https://overseas.mofa.go.kr/sg-en/brd/m_2444/view.do?seq=761428&page=2](https://overseas.mofa.go.kr/sg-en/brd/m_2444/view.do?seq=761428&page=2).
+
+Enginsoy, S. 2023. Top Startup Business-Friendly Countries in 2023. Startup Blink. Last modified October 24, 2023. [https://www.startupblink.com/blog/top-startup-business-friendly-countries-in-2023/](https://www.startupblink.com/blog/top-startup-business-friendly-countries-in-2023/).
+
+Envoy Global. 2023. _Immigration Trends Report._ Chicago: Envoy Global. [https://www.envoyglobal.com/resources/pdfs/reports/Envoy-2023-Immigration-Trends-Report.pdf](https://www.envoyglobal.com/resources/pdfs/reports/Envoy-2023-Immigration-Trends-Report.pdf).
+
+Erudera. 2022. France International Student Statistics. [https://erudera.com/statistics/france/france-international-student-statistics/](https://erudera.com/statistics/france/france-international-student-statistics/).
+
+Erudera. 2023a. 19% growth in international student numbers in Sweden. _Erudera News,_ November 27, 2023. [https://erudera.com/news/19-growth-in-international-student-numbers-in-sweden/](https://erudera.com/news/19-growth-in-international-student-numbers-in-sweden/).
+
+Erudera. 2023b. Sweden may soon change residence permit application procedures for international students, researchers. _Erudera News,_ February 24, 2023. [https://erudera.com/news/sweden-may-soon-change-residence-permit-application-procedures-for-international-students-researchers/](https://erudera.com/news/sweden-may-soon-change-residence-permit-application-procedures-for-international-students-researchers/).
+
+Erudera. 2024. Putin wants to have half a million int’l students in Russian universities by 2030. _Erudera News,_ May 10, 2024. [https://erudera.com/news/putin-wants-to-have-half-a-million-intl-students-in-russian-universities-by-2030/](https://erudera.com/news/putin-wants-to-have-half-a-million-intl-students-in-russian-universities-by-2030/).
+
+Esaki-Smith, A. 2021. _Career Pathways for International Students._ American Council on Education. [https://www.acenet.edu/Documents/Career-Pathways-International-Students.pdf](https://www.acenet.edu/Documents/Career-Pathways-International-Students.pdf).
+
+Esfandiari, G. 2004. Iran: Coping with the world’s highest rate of brain drain. _Radio Free Europe/Radio Liberty,_ March 8, 2004. [https://www.rferl.org/a/1051803.html](https://www.rferl.org/a/1051803.html).
+
+EURAXESS. n.d.a. EURAXESS Germany. European Commission. [https://www.euraxess.de/](https://www.euraxess.de/).
+
+EURAXESS. n.d.b. EURAXESS: Researchers in Motion. European Commission. [https://euraxess.ec.europa.eu/](https://euraxess.ec.europa.eu/).
+
+EURES (European Employment Services). 2023. Labour Market Information: Italy. European Union. Last modified September 15, 2023. [https://eures.europa.eu/living-and-working/labour-market-information/labour-market-information-italy_en](https://eures.europa.eu/living-and-working/labour-market-information/labour-market-information-italy_en).
+
+European Chamber of Commerce in Hong Kong. 2022. The Chief Executive of Hong Kong Delivers Policy Address 2022. [https://www.eurocham.com.hk/latest-news/the-chief-executive-of-hong-kong-delivers-policy-address-2022](https://www.eurocham.com.hk/latest-news/the-chief-executive-of-hong-kong-delivers-policy-address-2022).
+
+European Commission. n.d.a. Erasmus+. [https://erasmus-plus.ec.europa.eu/](https://erasmus-plus.ec.europa.eu/).
+
+European Commission. n.d.b. EU Blue Card: Essential information. EU Immigration Portal. [https://immigration-portal.ec.europa.eu/eu-blue-card/essential-information_en](https://immigration-portal.ec.europa.eu/eu-blue-card/essential-information_en).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+European Commission. n.d.c. Legal Migration and Integration. Migration and Home Affairs. [https://home-affairs.ec.europa.eu/policies/migration-and-asylum/legal-migration-and-integration_en](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/legal-migration-and-integration_en).
+
+European Commission. n.d.d. Legal Migration Fitness Check. Migration and Home Affairs. [https://home-affairs.ec.europa.eu/policies/migration-and-asylum/legal-migration-and-integration/legal-migration-fitness-check_en](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/legal-migration-and-integration/legal-migration-fitness-check_en).
+
+European Commission. n.d.e. Marie Skłodowska-Curie Actions. [https://marie-sklodowska-curie-actions.ec.europa.eu/about-msca](https://marie-sklodowska-curie-actions.ec.europa.eu/about-msca).
+
+European Commission. 2023. EU countries agree on steps to attract and retain research talent. Directorate-General for Research and Innovation, December 8, 2023. [https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/eu-countries-agree-steps-attract-and-retain-research-talent-2023-12-08_en](https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/eu-countries-agree-steps-attract-and-retain-research-talent-2023-12-08_en).
+
+European Council. 2024. EU Migration and Asylum Policy. Last modified March 23, 2024. [https://www.consilium.europa.eu/en/policies/eu-migration-policy/](https://www.consilium.europa.eu/en/policies/eu-migration-policy/).
+
+EverEdge. 2019. US$600 billion & rising: Confidential information & trade secret theft. _EverEdge News,_ July 31, 2019. [https://www.everedgeglobal.com/news/us600-billion-rising-confidential-information-trade-secret-theft/](https://www.everedgeglobal.com/news/us600-billion-rising-confidential-information-trade-secret-theft/).
+
+Exum, A. O. 2023. Japan makes renewed push to internationalize higher education. _Japan Times,_ March 29, 2023. [https://www.japantimes.co.jp/news/2023/03/29/national/international-students-increase-plan-2/](https://www.japantimes.co.jp/news/2023/03/29/national/international-students-increase-plan-2/).
+
+Fang, T. 2019. The man who took China to space. _Foreign Policy,_ March 28, 2019. [https://foreignpolicy.com/2019/03/28/the-man-who-took-china-to-space/](https://foreignpolicy.com/2019/03/28/the-man-who-took-china-to-space/).
+
+Farnsworth, B. 2021. Science and Security: Strengthening US-China Research Networks Through University Leadership. _UC Berkeley Center for Studies in Higher Education._[https://escholarship.org/uc/item/3422p80w](https://escholarship.org/uc/item/3422p80w).
+
+FBI (Federal Bureau of Investigation). 2011. _Higher Education and National Security: The Targeting of Sensitive, Proprietary and Classified Information on Campuses of Higher Education._ April 2011. [https://www.fbi.gov/file-repository/higher-education-national-security.pdf](https://www.fbi.gov/file-repository/higher-education-national-security.pdf).
+
+FBI. 2015. _Chinese Talent Programs._ September 2015. [https://info.publicintelligence.net/FBI-ChineseTalentPrograms.pdf](https://info.publicintelligence.net/FBI-ChineseTalentPrograms.pdf).
+
+FBI. 2019a. _China: The Risk to Academia._[https://www.fbi.gov/file-repository/china-risk-to-academia-2019.pdf](https://www.fbi.gov/file-repository/china-risk-to-academia-2019.pdf).
+
+FBI. 2019b. _China: The Risk to Corporate America._[https://www.fbi.gov/file-repository/china-risk-to-corporate-america-2019.pdf](https://www.fbi.gov/file-repository/china-risk-to-corporate-america-2019.pdf).
+
+Fedasiuk, R. 2020. _Putting Money in the Party’s Mouth: How China Mobilizes Funding for United Front Work._ China Brief, September 2020. The Jamestown Foundation. [https://jamestown.org/program/putting-money-in-the-partys-mouth-how-china-mobilizes-funding-for-united-front-work/](https://jamestown.org/program/putting-money-in-the-partys-mouth-how-china-mobilizes-funding-for-united-front-work/).
+
+Fedasiuk, R., and J. Feldgoise. 2020. “The Youth Thousand Talents Plan and China’s Military.” CSET Issue Brief, August 2020. Center for Security and Emerging Technology. [https://cset.georgetown.edu/wp-content/uploads/CSET-Youth-Thousand-Talents-Plan-and-Chinas-Military-1.pdf](https://cset.georgetown.edu/wp-content/uploads/CSET-Youth-Thousand-Talents-Plan-and-Chinas-Military-1.pdf).
+
+Fedasiuk, R., E. Weinstein, and A. Puglisi. May 2021. _China’s Foreign Technology Wish List._ Center for Security and Emerging Technology. [https://cset.georgetown.edu/wp-content/uploads/CSET-Chinas-Foreign-Technology-Wish-List.pdf](https://cset.georgetown.edu/wp-content/uploads/CSET-Chinas-Foreign-Technology-Wish-List.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Federal Highway Administration. 2024. Dwight David Eisenhower Transportation Fellowship Program. U.S. Department of Transportation. Last modified March 12, 2024. [https://highways.dot.gov/careers/dwight-david-eisenhower-transportation-fellowship-program](https://highways.dot.gov/careers/dwight-david-eisenhower-transportation-fellowship-program).
+
+_Financial Tribune._ 2015. Reversing brain drain. December 29, 2015. [https://financialtribune.com/articles/people/33046/reversing-brain-drain](https://financialtribune.com/articles/people/33046/reversing-brain-drain).
+
+Fink, Y., and Y. Huang. 2021. We are all Gang Chen. _MIT Technology Review,_ June 29, 2021. [https://www.technologyreview.com/2021/06/29/1025711/we-are-all-gang-chen/](https://www.technologyreview.com/2021/06/29/1025711/we-are-all-gang-chen/).
+
+Finnish Government. 2023. Talent Boost 2023–2027: Työ- ja koulutusperusteisen maahanmuuton toimenpideohjelma. Finnish Ministry of Economic Affairs and Employment, and Finnish Ministry of Education and Culture. [http://urn.fi/URN:ISBN:978-952-383-550-4](http://urn.fi/URN:ISBN:978-952-383-550-4).
+
+Finnish Immigration Service. n.d.a. I Want to Apply. [https://migri.fi/en/i-want-to-apply](https://migri.fi/en/i-want-to-apply).
+
+Finnish Immigration Service. n.d.b. Residence Permit. [https://migri.fi/en/fast-track](https://migri.fi/en/fast-track).
+
+_Firstpost._ 2015. Cabinet approves six new IITs in AP, Chhatisgarh, Goa, J&K, Kerala and Karnataka. December 2, 2015. [https://www.firstpost.com/india/cabinet-approves-six-new-iits-in-ap-chhatisgarh-goa-jk-kerala-and-karnataka-2530566.html](https://www.firstpost.com/india/cabinet-approves-six-new-iits-in-ap-chhatisgarh-goa-jk-kerala-and-karnataka-2530566.html).
+
+Fischer, K. 2023. Chinese American researchers say they were questioned at the border. _Latitudes,_ March 1, 2023. [https://www.chronicle.com/newsletter/latitudes/2023-03-01](https://www.chronicle.com/newsletter/latitudes/2023-03-01).
+
+Fischer, K. 2024a. A rebound, but not a return to normal. _Latitudes,_ June 12, 2024. [https://www.chronicle.com/newsletter/latitudes/2024-06-12](https://www.chronicle.com/newsletter/latitudes/2024-06-12).
+
+Fischer, K. 2024b. Will your master’s program keep enrollments up? Don’t bet on it. _The Chronicle of Higher Education,_ June 10, 2024. [https://www.chronicle.com/article/will-your-masters-program-keep-enrollments-up-dont-bet-on-it](https://www.chronicle.com/article/will-your-masters-program-keep-enrollments-up-dont-bet-on-it).
+
+Fischer, K., and D. Bauman. 2023. China was long the top source of foreign students in the U.S. Now India has overtaken it. _The Chronicle of Higher Education,_ October 9, 2023. [https://www.chronicle.com/article/china-was-long-the-top-source-of-foreign-students-in-the-u-s-now-india-has-overtaken-it](https://www.chronicle.com/article/china-was-long-the-top-source-of-foreign-students-in-the-u-s-now-india-has-overtaken-it).
+
+Flattau, P. E., J. Bracken, R. Van Atta, A. Bandeh-Ahmadi, R. de la Cruz, and K. Sullivan. 2006. _The National Defense Education Act of 1958: Selected Outcomes._ Washington, DC: Institute for Defense Analyses. [https://www.ida.org/-/media/feature/publications/t/th/the-national-defense-education-act-of-1958-selected-outcomes/d-3306.ashx](https://www.ida.org/-/media/feature/publications/t/th/the-national-defense-education-act-of-1958-selected-outcomes/d-3306.ashx).
+
+Florida State Senate. 2023. Agreements of Educational Entities with Foreign Entities. CS/CS/SB 846. July 1, 2023. [https://www.flsenate.gov/Session/Bill/2023/846](https://www.flsenate.gov/Session/Bill/2023/846).
+
+Flynn, R., B. Glennon, R. Murciano-Goroff, and J. Xiao. June 2024. _Building a Wall Around Science: The Effect of U.S.-China Tensions on International Scientific Research._ Cambridge, MA: National Bureau of Economic Research. [https://www.nber.org/system/files/working_papers/w32622/w32622.pdf](https://www.nber.org/system/files/working_papers/w32622/w32622.pdf).
+
+Fochler, M., U. Felt, and R. Müller. 2016. Unsustainable growth, hyper-competition, and worth in life science research: Narrowing evaluative repertoires in doctoral and postdoctoral scientists’ work and lives. _Minerva_ 54: 175–200. [https://doi.org/10.1007/s11024-016-9292-y](https://doi.org/10.1007/s11024-016-9292-y).
+
+Forbis, J. K. 1982. _Precollege Science and Mathematics Education: Experiences with the National Defense Education Act and the Teacher Institutes Conducted by the National Science Foundation._ Washington, DC: Library of Congress; Congressional Research Service. [https://search.library.yale.edu/catalog/11559636](https://search.library.yale.edu/catalog/11559636).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Fortenberry, N. L. 2000. An examination of NSF’s programs in undergraduate education. _Journal of SMET Education._[https://www.jstem.org/jstem/index.php/JSTEM/article/view/1144/997](https://www.jstem.org/jstem/index.php/JSTEM/article/view/1144/997).
+
+Franklin, A. R. 2024. FBI, AAPI leaders meet at Rice to address discrimination toward Asian American academics. Rice University News and Media Relations Office of Public Affairs, June 18, 2024. [https://news.rice.edu/news/2024/fbi-aapi-leaders-meet-rice-address-discrimination-toward-asian-american-academics](https://news.rice.edu/news/2024/fbi-aapi-leaders-meet-rice-address-discrimination-toward-asian-american-academics).
+
+Frieman, W. 1989. China’s military R&D system: Reform and reorientation. Pp. 251–286 in _Science and Technology in Post-Mao China,_ edited by D. F. Simon and M. Goldman. Cambridge, MA: Harvard University Asia Center.
+
+Fry, R., B. Kennedy, and C. Funk. April 2021. _STEM Jobs See Uneven Progress in Increasing Gender, Racial and Ethnic Diversity._ Pew Research Center. [https://www.pewresearch.org/science/2021/04/01/stem-jobs-see-uneven-progress-in-increasing-gender-racial-and-ethnic-diversity/](https://www.pewresearch.org/science/2021/04/01/stem-jobs-see-uneven-progress-in-increasing-gender-racial-and-ethnic-diversity/).
+
+Fulbright Program. n.d.a. What Is the Fulbright Program? [https://fulbrighttscholars.org/who-we-are/what-fulbright-program](https://fulbrighttscholars.org/who-we-are/what-fulbright-program).
+
+Fulbright Program. n.d.b. FAQ & Contact. [https://www.fulbrightprogram.org/about/faq-contact/](https://www.fulbrightprogram.org/about/faq-contact/).
+
+Gaida, J., J. W. Leung, S. Robin, and D. Cave. 2023a. _ASPI’s Critical Technology Tracker – Sensors & Biotech Updates._ Australian Strategic Policy Institute. [https://www.aspi.org.au/report/critical-technology-tracker](https://www.aspi.org.au/report/critical-technology-tracker).
+
+Gaida, J., J. W. Leung, S. Robin, and D. Cave. 2023b. _ASPI’s Critical Technology Tracker: The Global Race for Future Power._ Australian Strategic Policy Institute. [https://ad-aspi.s3.ap-southeast-2.amazonaws.com/2023-08/ASPIs%20Critical%20Technology%20Tracker.pdf](https://ad-aspi.s3.ap-southeast-2.amazonaws.com/2023-08/ASPIs%20Critical%20Technology%20Tracker.pdf).
+
+Gaillard, J., and A. M. Gaillard. 1997. Introduction: The international mobility of brains: Exodus or circulation? _Science, Technology and Society_ 2(2): 195–228. [https://doi.org/10.1177/097172189700200202](https://doi.org/10.1177/097172189700200202).
+
+GALCIT (Graduate Aerospace Laboratories). n.d. Qian Xuesen (Tsien Hsue-Shen). Legends of GALCIT, California Institute of Technology. [https://www.galcit.caltech.edu/about/legends-of-galcit/qian-xuesen-tsien-hsue-shen](https://www.galcit.caltech.edu/about/legends-of-galcit/qian-xuesen-tsien-hsue-shen).
+
+Gamache, K., and G. Tiffert. 2020. Global engagement: A new paradigm for managing risk. Pp. 105–140 in _Global Engagement: Rethinking Risk in the Research Enterprise,_ edited by G. Tiffert. Stanford, CA: Hoover Institution at Leland Stanford Junior University.
+
+Gantenbein, D. 2021. Five Carnegie Mellon students named Amazon graduate research fellows. _Amazon Science,_ May 20, 2021. [https://www.amazon.science/academic-engagements/five-carnegie-mellon-students-named-amazon-graduate-research-fellows](https://www.amazon.science/academic-engagements/five-carnegie-mellon-students-named-amazon-graduate-research-fellows).
+
+GAO (U.S. Government Accountability Office). 2022. K-12 Education: Student Population Has Significantly Diversified, but Many Schools Remain Divided Along Racial, Ethnic, and Economic Lines. Last Modified July 14, 2022. [https://www.gao.gov/products/gao-22-104737](https://www.gao.gov/products/gao-22-104737).
+
+Garde, D., and J. Saltzman. 2020. The story of mRNA: How a once-dismissed idea became a leading technology in the Covid vaccine race. _STAT,_ November 10, 2020. [https://www.statnews.com/2020/11/10/the-story-of-mrna-how-a-once-dismissed-idea-became-a-leading-technology-in-the-covid-vaccine-race/](https://www.statnews.com/2020/11/10/the-story-of-mrna-how-a-once-dismissed-idea-became-a-leading-technology-in-the-covid-vaccine-race/).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+General Office of the Central Committee of the Communist Party of China. 2012. Woguo xianji yishang difang dangwei jiang jianli rencai gongzuo xiaozu (The Local Party Committees at or above the County Level Will Establish Local Leadership Working Group on Talents). September 26, 2012. [http://www.gov.cn/jrzg/2012-09/26/content_2233646.htm](http://www.gov.cn/jrzg/2012-09/26/content_2233646.htm).
+
+German Federal Foreign Office. n.d. Job Seeker (non-academic). Consular Services Portal. [https://digital.diplo.de/navigator/en/visa/overview/job-seeker-beruf](https://digital.diplo.de/navigator/en/visa/overview/job-seeker-beruf).
+
+German Federal Ministry of Education and Research. n.d. Research in Germany. [https://www.research-in-germany.org/en.html](https://www.research-in-germany.org/en.html).
+
+German Federal Ministry of the Interior and Community. 2022. Germany and India sign migration agreement. Press release, December 5, 2022. [https://www.bmi.bund.de/SharedDocs/pressemitteilungen/EN/2022/12/migration_agreement.html](https://www.bmi.bund.de/SharedDocs/pressemitteilungen/EN/2022/12/migration_agreement.html).
+
+Gerstein, J. 2022a. DOJ shuts down China-focused anti-espionage program. _Politico,_ February 23, 2022. [https://www.politico.com/news/2022/02/23/doj-shuts-down-china-focused-anti-espionage-program-00011065](https://www.politico.com/news/2022/02/23/doj-shuts-down-china-focused-anti-espionage-program-00011065).
+
+Gerstein, J. 2022b. Report details collapse of China Initiative case. _Politico,_ February 18, 2022. [https://www.politico.com/news/2022/02/18/china-initiative-case-00010281](https://www.politico.com/news/2022/02/18/china-initiative-case-00010281).
+
+Gewin, V. 2024. Why the US border remains “a place of terror” for Chinese researchers. _Nature_ 626: 1149–1151. [https://doi.org/10.1038/d41586-024-00546-2](https://doi.org/10.1038/d41586-024-00546-2).
+
+Ghaffari, B. 2023. ‘No hope for the future’: Iran faces brain drain as emigration surges. _Financial Times,_ November 21, 2023. [https://www.ft.com/content/909e0958-54e6-42ec-b879-0fcfe49deb62](https://www.ft.com/content/909e0958-54e6-42ec-b879-0fcfe49deb62).
+
+Gilbert, N. 2023. China Initiative’s shadow looms large for US scientists. _Nature_ 615: 198–199. [https://www.nature.com/articles/d41586-023-00543-x](https://www.nature.com/articles/d41586-023-00543-x).
+
+Gilbert, N., and M. Kozlov. 2022. The controversial China Initiative is ending – researchers are relieved. _Nature_ 603: 214–215. [https://www.nature.com/articles/d41586-022-00555-z](https://www.nature.com/articles/d41586-022-00555-z).
+
+GKS Scholarship. n.d. GKS Scholarship (KGSP). [https://gksscholarship.com/](https://gksscholarship.com/).
+
+Glennon, B. 2024. How do restrictions on high-skilled immigration affect offshoring? Evidence from the H-1B program. _Management Science_ 70(2): 907–930. [https://pubsonline.informs.org/doi/epdf/10.1287/mnsc.2023.4715](https://pubsonline.informs.org/doi/epdf/10.1287/mnsc.2023.4715).
+
+Global Business College of Australia. 2022. Welcome to 2022 Chunhui Cup Entrepreneurship Competition. 17th “Chunhui Cup” Global Students Innovation and Entrepreneurship Competition, July 28, 2022. [https://gbca.edu.au/chunhui-cup-2022/](https://gbca.edu.au/chunhui-cup-2022/).
+
+Global Skills Partnerships. n.d. Employment Permit System (EPS). [https://gsp.cgdev.org/legalpathway/employment-permit-system-eps/](https://gsp.cgdev.org/legalpathway/employment-permit-system-eps/).
+
+_Global Times._ 2023. Top CAS Academicians Prohibited from Publicly Expressing Opinions Unrelated to Their Field. September 6, 2023. [https://www.globaltimes.cn/page/202309/1297659.shtml](https://www.globaltimes.cn/page/202309/1297659.shtml).
+
+Goldstein, M. A. 2024. Congress focuses on China risk at U.S. colleges and universities. _Reuters,_ January 8, 2024. [https://www.reuters.com/legal/legalindustry/congress-focuses-china-risk-us-colleges-universities-2024-01-08/](https://www.reuters.com/legal/legalindustry/congress-focuses-china-risk-us-colleges-universities-2024-01-08/).
+
+Gonzalez, H. B., and J. J. Kuenzi. 05 April 2013. _Science, Technology, Engineering and Mathematics (STEM) Education: A Primer._ Congressional Research Service. [https://www2.law.umaryland.edu/marshall/crsreports/crsdocuments/R42642_04052013.pdf](https://www2.law.umaryland.edu/marshall/crsreports/crsdocuments/R42642_04052013.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Gorokhovskaia, Y., and G. Vaughan. _Addressing Transnational Repression on Campuses in the United States._ Freedom House. [https://freedomhouse.org/sites/default/files/2024-01/TNR_UniversityReport_2024.pdf](https://freedomhouse.org/sites/default/files/2024-01/TNR_UniversityReport_2024.pdf).
+
+Goss Gilroy. 2016. _Evaluation of the Canada Research Chairs Program: Final Report._ Report prepared for the NSERC-SSHRC Evaluation Division, Government of Canada. [https://www.chairs-chaires.gc.ca/about_us-a_notre_sujet/publications/evaluations/chairs_evaluation-chaires_evaluation-eng.aspx](https://www.chairs-chaires.gc.ca/about_us-a_notre_sujet/publications/evaluations/chairs_evaluation-chaires_evaluation-eng.aspx).
+
+Government of Canada. 2021. Method of Allocating Chairs. Canada Research Chairs. Last modified July 29, 2021. [https://www.chairs-chaires.gc.ca/program-programme/allocation-attribution-eng.aspx](https://www.chairs-chaires.gc.ca/program-programme/allocation-attribution-eng.aspx).
+
+Government of Canada. 2022. Canada Research Chairs: About Us. Last modified March 3, 2022. [https://www.chairs-chaires.gc.ca/about_us-a_notre_sujet/index-eng.aspx](https://www.chairs-chaires.gc.ca/about_us-a_notre_sujet/index-eng.aspx).
+
+Government of Canada. 2023a. Canada opens new economic immigration streams for skilled refugees and other displaced people. News release, June 12, 2023. [https://www.canada.ca/en/immigration-refugees-citizenship/news/2023/06/canada-opens-new-economic-immigration-streams-for-skilled-refugees-and-other-displaced-people.html](https://www.canada.ca/en/immigration-refugees-citizenship/news/2023/06/canada-opens-new-economic-immigration-streams-for-skilled-refugees-and-other-displaced-people.html).
+
+Government of Canada. 2023b. “Canada’s Tech Talent Strategy,” Immigration, Refugees and Citizenship. Last modified June 27, 2023. [https://www.canada.ca/en/immigration-refugees-citizenship/news/2023/06/canadas-tech-talent-strategy.html](https://www.canada.ca/en/immigration-refugees-citizenship/news/2023/06/canadas-tech-talent-strategy.html).
+
+Government of Canada. 2024a. Canada to stabilize growth and decrease number of new international student permits issued to approximately 360,000 for 2024. News release, January 22, 2024. [https://www.canada.ca/en/immigration-refugees-citizenship/news/2024/01/canada-to-stabilize-growth-and-decrease-number-of-new-international-student-permits-issued-to-approximately-360000-for-2024.html](https://www.canada.ca/en/immigration-refugees-citizenship/news/2024/01/canada-to-stabilize-growth-and-decrease-number-of-new-international-student-permits-issued-to-approximately-360000-for-2024.html).
+
+Government of Canada. 2024b. How Express Entry Works. Last modified January 4, 2024. [https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/works.html](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/works.html).
+
+Government of Canada. 2024c. “Program Representation Statistics,” Canada Research Chairs. Last modified June 14, 2024. [https://www.chairs-chaires.gc.ca/about_us-a_notre_sujet/statistics-statistiques-eng.aspx](https://www.chairs-chaires.gc.ca/about_us-a_notre_sujet/statistics-statistiques-eng.aspx).
+
+Government of Canada. 2024d. “Program Requirements for the Global Talent Stream,” Employment and Social Development Canada. Last modified March 26, 2024. [https://www.canada.ca/en/employment-social-development/services/foreign-workers/global-talent/requirements.html](https://www.canada.ca/en/employment-social-development/services/foreign-workers/global-talent/requirements.html).
+
+Granovskiy, B. 12 June 2018. _Science, Technology, Engineering, and Mathematics (STEM) Education: An Overview._ Congressional Research Service. [https://sgp.fas.org/crs/misc/R45223.pdf](https://sgp.fas.org/crs/misc/R45223.pdf).
+
+Gray, A. 2018. These countries are the most attractive for foreign workers. World Economic Forum, Jobs and the Future of Work, September 7, 2018. [https://www.weforum.org/agenda/2018/09/worlds-most-attractive-countries-for-foreign-workers/](https://www.weforum.org/agenda/2018/09/worlds-most-attractive-countries-for-foreign-workers/).
+
+Greenwood, M. R. C., and D. G. Riordan. 2002. Research universities in the new security environment. _Issues in Science and Technology_ 18(4). [https://issues.org/p_greenwood/](https://issues.org/p_greenwood/).
+
+Griffin, M. D. 2019a. _Actions for the Protection of Intellectual Property, Controlled Information, Key Personnel and Critical Technologies._ March 20, 2019. [https://rt.cto.mil/wp-content/uploads/USD-RE-Actions-to-Protect-Memo-20Mar2019.pdf](https://rt.cto.mil/wp-content/uploads/USD-RE-Actions-to-Protect-Memo-20Mar2019.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Griffin, M. D. 2019b. _DOD Letter to Universities._ Association of American Universities. October 10, 2019. [https://www.aau.edu/sites/default/files/AAU-Files/Key-Issues/Science-Security/DoD-letter-to-Universities-0102019.pdf](https://www.aau.edu/sites/default/files/AAU-Files/Key-Issues/Science-Security/DoD-letter-to-Universities-0102019.pdf).
+
+Groenwegen-Lau, J., and A. Hmadi. April 2024. _Where China Stands in the Global Race for Talent._ Mercator Institute for China Studies (MERICS). [https://merics.org/sites/default/files/2024-04/WP%20-%20Where%20china%20stands%20in%20the%20global%20race%20for%20talent%20-%20MERICS%20-%20final.pdf](https://merics.org/sites/default/files/2024-04/WP%20-%20Where%20china%20stands%20in%20the%20global%20race%20for%20talent%20-%20MERICS%20-%20final.pdf).
+
+Grove, T. A. 2024. “Survey of United States Allies’ Talent Programs.” Paper commissioned by the International Talent Programs Consensus Study Committee. Washington, DC: National Academies of Sciences, Engineering, and Medicine.
+
+Guo, C., X. Hao, J. Wu, and T. Hu. 2023. The effect of national higher education initiatives on university rankings. _Humanities & Social Sciences Communications_ 10. [https://www.nature.com/articles/s41599-023-02034-w](https://www.nature.com/articles/s41599-023-02034-w).
+
+Guo, E. 2022. All charges against China Initiative defendant Gang Chen have been dismissed. _MIT Technology Review,_ January 20, 2022. [https://www.technologyreview.com/2022/01/20/1043848/china-initative-gang-chen-mit-dismissed/](https://www.technologyreview.com/2022/01/20/1043848/china-initative-gang-chen-mit-dismissed/).
+
+Guo, E., J. Aloe, and K. Hao. 2021. The US crackdown on Chinese economic espionage is a mess. We have the data to show it. _MIT Technology Review,_ December 2, 2021. [https://www.technologyreview.com/2021/12/02/1040656/china-initative-us-justice-department/](https://www.technologyreview.com/2021/12/02/1040656/china-initative-us-justice-department/).
+
+Guo, Y. 2003. Chapitre 11: The Chinese intellectual diasporas. In _Diasporas Scientifiques,_ edited by R. Barré, V. Hernández, J.-B. Meyer, and D. Vinck. Marseille: IRD Éditions.
+
+Guskov, A., and D. Kosyakov. 2018. Boosting research productivity in top Russian universities: the circumstances of breakthrough. _Scientometrics_ 117(6). [https://doi.org/10.1007/s11192-018-2890-8](https://doi.org/10.1007/s11192-018-2890-8).
+
+Hallinen, J. 2024. STEM. Britannica. Last Modified 03 July 2024. [https://www.britannica.com/topic/STEM-education](https://www.britannica.com/topic/STEM-education).
+
+Halse, L. 2023. Points-based immigration: A potential option for the U.S.? _Envoy Global,_ February 23, 2023. [https://resources.envoyglobal.com/global-news-alerts/points-based-immigration-a-potential-option-for-the-u-s/](https://resources.envoyglobal.com/global-news-alerts/points-based-immigration-a-potential-option-for-the-u-s/).
+
+Hannas, W. C., J. Mulvenon, and A. B. Puglisi. 2013. _Chinese Industrial Espionage: Technology Acquisition and Military Modernisation._ Oxfordshire, UK: Routledge.
+
+Hannas, W. C., and D. K. Tatlow. 2021. _China’s Quest for Foreign Technology: Beyond Espionage._ Oxfordshire, UK: Routledge.
+
+Hao, A. W. 2023. _2023 Investment Climate Statements: Singapore._ Washington, DC: U.S. Department of State. [https://www.state.gov/reports/2023-investment-climate-statements/singapore/](https://www.state.gov/reports/2023-investment-climate-statements/singapore/).
+
+Harris, L., L. S. Benson, M. E. Gallo, A. C. Jones, K. Sekar, and J. S. Sussman. 2023. _Federal Research and Development (R&D) Funding: FY2024._ Congressional Research Service, May 19, 2023. [https://crsreports.congress.gov/product/pdf/R/R47564](https://crsreports.congress.gov/product/pdf/R/R47564).
+
+Hatzipanagos, R. 2023. Laws banning Chinese from buying property dredge up old history. _Washington Post,_ August 21, 2023. [https://www.washingtonpost.com/nation/2023/08/18/florida-chinese-land-laws/](https://www.washingtonpost.com/nation/2023/08/18/florida-chinese-land-laws/).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Haupt, J. P., and J. J. Lee. 2023. US-China collaboration in science for the global common good. Pp. 157–175 in _Assessing the Contributions of Higher Education,_ edited by S. Marginson, B. Cantwell, D. Platonova, and A. Smolentseva. Northampton, MA: Edward Elgar Publishing.
+
+Havergal, C. 2024. Dependant restrictions push UK student visa numbers down. _Times Higher Education,_ May 1, 2024. [https://www.timeshighereducation.com/news/dependant-restrictions-push-uk-student-visa-numbers-down](https://www.timeshighereducation.com/news/dependant-restrictions-push-uk-student-visa-numbers-down).
+
+Hawkins, A. 2024. Chinese students in US tell of “chilling” interrogations and deportations. _The Guardian,_ April 20, 2024. [https://www.theguardian.com/us-news/2024/apr/20/chinese-students-in-us-tell-of-chilling-interrogations-and-deportations](https://www.theguardian.com/us-news/2024/apr/20/chinese-students-in-us-tell-of-chilling-interrogations-and-deportations).
+
+Hazra, S. 2024. PM Modi unveils plans for 3 new IITs: A step towards educational excellence! _Vidyamandir Classes_ (blog). [https://blog.vidyamandir.com/pm-modi-unveils-plans-for-3-new-iits-a-step-towards-educational-excellence/](https://blog.vidyamandir.com/pm-modi-unveils-plans-for-3-new-iits-a-step-towards-educational-excellence/).
+
+Heidt, A. 2024. ‘This is exclusion’: Florida law restricts hiring of researchers from seven countries. _Nature,_ February 26, 2024. [https://www.nature.com/articles/d41586-024-00554-2](https://www.nature.com/articles/d41586-024-00554-2).
+
+Helms, R. M., and S. Spreitzer. 2021. _International Student Inclusion and Success: Public Attitudes, Policy Imperatives, and Practical Strategies._ American Council on Education. [https://www.acenet.edu/Documents/International-Student-Inclusion-Success.pdf](https://www.acenet.edu/Documents/International-Student-Inclusion-Success.pdf).
+
+Herman, A. 2019. America’s STEM crisis threatens our national security. _American Affairs_ 3(1). [https://americanaffairsjournal.org/2019/02/americas-stem-crisis-threatens-our-national-security/](https://americanaffairsjournal.org/2019/02/americas-stem-crisis-threatens-our-national-security/).
+
+Higher Ed Immigration Portal. 2024. National Data. [https://www.higheredimmigrationportal.org/national/national-data/](https://www.higheredimmigrationportal.org/national/national-data/).
+
+Hillman, J., and A. Tippett. 2021. “Competing with China: Lessons From the Belt and Road.” Council on Foreign Relations. April 1, 2021. [https://www.cfr.org/blog/competing-china-lessons-belt-and-road](https://www.cfr.org/blog/competing-china-lessons-belt-and-road).
+
+Hira, R. 2022. Is there really a STEM workforce shortage? _Issues in Science and Technology_ 38(4): 31–35. [https://www.jstor.org/stable/27161957](https://www.jstor.org/stable/27161957).
+
+Hoff, R., and R. Kessler. 2024. STEMming the crisis: Immigration and the U.S. national security talent base. War on the Rocks commentary, April 1, 2024. [https://warontherocks.com/2024/04/stemming-the-crisis-immigration-and-the-u-s-national-security-talent-base/](https://warontherocks.com/2024/04/stemming-the-crisis-immigration-and-the-u-s-national-security-talent-base/).
+
+Holtkamp, N. 2024. “The Role of Future International Collaborations: Risks and Opportunities.” Open-session presentation to the Committee on International Talent Programs in the Changing Global Environment, February 28, 2024. Washington, DC: National Academies of Sciences, Engineering, and Medicine.
+
+Holtz-Eakin, D., and J. Varas. 2019. _Building A Pro-Growth Legal Immigration System._ American Action Forum. [https://www.americanactionforum.org/wp-content/uploads/2019/05/AAF-Visa-Reform-Study_Final1.pdf](https://www.americanactionforum.org/wp-content/uploads/2019/05/AAF-Visa-Reform-Study_Final1.pdf).
+
+Hong Kong Immigration Department. 2024. “Introduction of Admission Schemes for Talent, Professionals and Entrepreneurs.” The Government of the Hong Kong Special Administrative Region of the People’s Republic of China. Last modified January 9, 2024. [https://www.immd.gov.hk/eng/useful_information/admission-schemes-talents-professionals-entrepreneurs.html](https://www.immd.gov.hk/eng/useful_information/admission-schemes-talents-professionals-entrepreneurs.html).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Hong Kong Talent Engage. 2024. Talent Admission Schemes. The Government of the Hong Kong Special Administrative Region of the People’s Republic of China. [https://www.hkengage.gov.hk/en/how-to-apply-for-a-visa/talent-admission-schemes/](https://www.hkengage.gov.hk/en/how-to-apply-for-a-visa/talent-admission-schemes/).
+
+Hua, S., and K. Hao. 2022. U.S.-China tensions fuel outflow of Chinese scientists from U.S. universities. _Wall Street Journal,_ September 22, 2022. [https://www.wsj.com/articles/u-s-china-tensions-fuel-outflow-of-chinese-scientists-from-u-s-universities-11663866938](https://www.wsj.com/articles/u-s-china-tensions-fuel-outflow-of-chinese-scientists-from-u-s-universities-11663866938).
+
+Hua, S., K. Hao, and M. Korn. 2022. Chinese student visas to U.S. tumble from prepandemic levels. _Wall Street Journal,_ August 11, 2022. [https://www.wsj.com/articles/chinese-student-visas-to-u-s-tumble-from-prepandemic-levels-11660210202](https://www.wsj.com/articles/chinese-student-visas-to-u-s-tumble-from-prepandemic-levels-11660210202).
+
+Hudson, R. L. 2022. MIT cuts ties to Russian academic partner over Ukraine war. _Science|Business,_ February 27, 2022. [https://sciencebusiness.net/news/mit-cuts-ties-russian-academic-partner-over-ukraine-war](https://sciencebusiness.net/news/mit-cuts-ties-russian-academic-partner-over-ukraine-war).
+
+Hunt, W., and R. Zwetsloot. 2022. Want to secure U.S. supply chains? Reform high-skilled immigration. _The Hill,_ May 20, 2023. [https://thehill.com/opinion/immigration/3495673-want-to-secure-u-s-supply-chains-reform-high-skilled-immigration/](https://thehill.com/opinion/immigration/3495673-want-to-secure-u-s-supply-chains-reform-high-skilled-immigration/).
+
+Hunter, M. 2023. The world’s happiest countries for 2023. CNN, March 20, 2023. [https://www.cnn.com/travel/article/world-happiest-countries-2023-wellness/index.html](https://www.cnn.com/travel/article/world-happiest-countries-2023-wellness/index.html).
+
+Hvistendahl, M. 2017. China’s theft of U.S. trade secrets under scrutiny. _Science,_ February 28, 2017. [https://www.science.org/content/article/china-s-theft-us-trade-secrets-under-scrutiny](https://www.science.org/content/article/china-s-theft-us-trade-secrets-under-scrutiny).
+
+ICEF Monitor. 2023. International student visa holders up 98% in New Zealand since the border reopening. May 17, 2023. [https://monitor.icef.com/2023/05/international-student-visa-holders-up-98-in-new-zealand-since-the-border-reopening/](https://monitor.icef.com/2023/05/international-student-visa-holders-up-98-in-new-zealand-since-the-border-reopening/).
+
+ICEF Monitor. 2024a. Australia: Record-high foreign enrolment but tighter immigration settings now taking hold. April 3, 2024. [https://monitor.icef.com/2024/04/australia-record-high-foreign-enrolment-but-tighter-immigration-settings-now-taking-hold/](https://monitor.icef.com/2024/04/australia-record-high-foreign-enrolment-but-tighter-immigration-settings-now-taking-hold/).
+
+ICEF Monitor. 2024b. Canadian immigration minister releases official cap figures and targets for 2024. April 10, 2024. [https://monitor.icef.com/2024/04/canadian-immigration-minister-releases-official-cap-figures-and-targets-for-2024/](https://monitor.icef.com/2024/04/canadian-immigration-minister-releases-official-cap-figures-and-targets-for-2024/).
+
+ICEF Monitor. 2024c. UK: Home Office data finds a significant drop in student visa applications for first quarter of 2024. May 8, 2024. [https://monitor.icef.com/2024/05/uk-home-office-data-finds-a-significant-drop-in-student-visa-applications-for-first-quarter-of-2024/](https://monitor.icef.com/2024/05/uk-home-office-data-finds-a-significant-drop-in-student-visa-applications-for-first-quarter-of-2024/).
+
+IIE (Institute of International Education). 2022a. Global mobility trends. _Project Atlas._[https://www.iie.org/wp-content/uploads/2023/09/Project-Atlas_Infographic_2022.pdf](https://www.iie.org/wp-content/uploads/2023/09/Project-Atlas_Infographic_2022.pdf).
+
+IIE. 2022b. 2022 Fact sheet: China. _Open Doors._[https://opendoorsdata.org/?download=https](https://opendoorsdata.org/?download=https)://opendoorsdata.[org/wp-content/uploads/2022/11/OD_Country-Sheet_China_2022.pdf](http://org/wp-content/uploads/2022/11/OD_Country-Sheet_China_2022.pdf).
+
+IIE. 2023a. Fast facts. _Open Doors._[https://opendoorsdata.org/fact_sheets/fast-facts/](https://opendoorsdata.org/fact_sheets/fast-facts/).
+
+IIE. 2023b. Open doors. _Open Doors._[https://opendoorsdata.org/](https://opendoorsdata.org/).
+
+IIE. 2023c. Primary source of funding. _Open Doors._[https://opendoorsdata.org/data/international-students/international-students-primary-source-of-funding/](https://opendoorsdata.org/data/international-students/international-students-primary-source-of-funding/).
+
+IIE. 2023d. Student mobility facts and figures 2023: China. _Open Doors._[https://opendoorsdata.org/fact_sheets/student-mobility/](https://opendoorsdata.org/fact_sheets/student-mobility/).
+
+Indeed and Glassdoor. 2023. _Indeed & Glassdoor’s Hiring and Workplace Trends Report 2023._[https://research.glassdoor.com/site-us/wp-content/uploads/sites/2/2022/11/Indeed-Glassdoors-2023-Hiring-Workplace-Trends-Report-Glassdoor-Blog.pdf](https://research.glassdoor.com/site-us/wp-content/uploads/sites/2/2022/11/Indeed-Glassdoors-2023-Hiring-Workplace-Trends-Report-Glassdoor-Blog.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Ip, C. 2024. China urges US to “stop harassing” its students at the border “for no reason.” _South China Morning Post,_ February 19, 2024. [https://www.scmp.com/news/china/diplomacy/article/3252452/china-urges-us-stop-harassing-its-students-border-no-reason](https://www.scmp.com/news/china/diplomacy/article/3252452/china-urges-us-stop-harassing-its-students-border-no-reason).
+
+Iran Project. 2017. 450 Iranian Elites Returned Home: Official. [https://web.archive.org/web/20210926055333/](https://web.archive.org/web/20210926055333/)[https://theiranproject.com/blog/2017/02/09/450-iranianelites-returned-home-official/](https://theiranproject.com/blog/2017/02/09/450-iranianelites-returned-home-official/).
+
+Italian Foreign Ministry (Ministry of Foreign Affairs and International Cooperation). 2024a. “For Foreign Citizens,” Scholarships/Grants. [https://www.esteri.it/en/opportunita/borse-di-studio/per-cittadini-stranieri/](https://www.esteri.it/en/opportunita/borse-di-studio/per-cittadini-stranieri/).
+
+Italian Foreign Ministry. 2024b. Study in Italy. Frequently Asked Questions, URP – Office for Relations with the Public. [https://www.esteri.it/en/sportello_info/domandefrequenti/studiare-in-italia/](https://www.esteri.it/en/sportello_info/domandefrequenti/studiare-in-italia/).
+
+Italian Foreign Ministry and Italian Ministry of Economic Development. n.d. Italia Startup Visa. [https://italiastartupvisa.mise.gov.it/](https://italiastartupvisa.mise.gov.it/).
+
+Italian Ministry of Economic Development. 2016. _Executive Summary of the New Italian Legislation on Innovative Startups._ Italian Startup Act. DG for Industrial Policy Ministry of Economic Development, Competitiveness and SMEs. March 2, 2016. [https://italiastartupvisa.mise.gov.it/media/documents/Executive_Summary_Italy’s_Startup_Act_02_03_2016.pdf](https://italiastartupvisa.mise.gov.it/media/documents/Executive_Summary_Italy%E2%80%99s_Startup_Act_02_03_2016.pdf).
+
+Italian Ministry of Labor and Social Policies. 2024a. “In breve,” Immigration. Presidency of the Council of Ministers. [https://www.lavoro.gov.it/temi-e-priorita/immigrazione/Pagine/orientamento](https://www.lavoro.gov.it/temi-e-priorita/immigrazione/Pagine/orientamento).
+
+Italian Ministry of Labor and Social Policies. 2024b. “Studi e statistiche,” Immigration. Presidency of the Council of Ministers. Last modified January 9, 2024. [https://www.lavoro.gov.it/temi-e-priorita/immigrazione/Pagine/Studi-e-statistiche](https://www.lavoro.gov.it/temi-e-priorita/immigrazione/Pagine/Studi-e-statistiche).
+
+ITMO. n.d. ITMO Fellowship Program. [https://fellowship.itmo.ru/](https://fellowship.itmo.ru/).
+
+Jack, P. 2023. World University Rankings 2024: China creeps closer to top 10. _Times Higher Education,_ September 27, 2023. [https://www.timeshighereducation.com/world-university-rankings/world-university-rankings-2024-china-creeps-closer-top-10](https://www.timeshighereducation.com/world-university-rankings/world-university-rankings-2024-china-creeps-closer-top-10).
+
+Jack, P. 2024. Number of UK study visas granted halves following dependents ban. _Times Higher Education,_ May 23, 2024. [https://www.timeshighereducation.com/news/number-uk-study-visas-granted-halves-following-dependants-ban](https://www.timeshighereducation.com/news/number-uk-study-visas-granted-halves-following-dependants-ban).
+
+Japan Exchange and Teaching Programme. n.d. Welcome to the JET Programme. Council of Local Authorities for International Relations (CLAIR). [https://jetprogramme.org/en/about-jet/](https://jetprogramme.org/en/about-jet/).
+
+Japan Immigration Services Agency. 2024. Status of Residence of “Designated Activities” (for Digital Nomad/Spouse or Child of Digital Nomad). Japanese Ministry of Justice. [https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html](https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html).
+
+Japan International Cooperation Center. n.d. “International Student Service,” What We Do. [https://www.jice.org/en/activities/student/index.html](https://www.jice.org/en/activities/student/index.html).
+
+Japanese MEXT (Ministry of Education, Culture, Sports, Science and Technology). n.d. Study in Japan. [https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm](https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm).
+
+Japanese Ministry of Foreign Affairs. 2023a. “Highly Skilled Professional Visa,” Consular Services. Last modified May 15, 2023. [https://www.mofa.go.jp/j_info/visit/visa/long/visa16.html](https://www.mofa.go.jp/j_info/visit/visa/long/visa16.html).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Japanese Ministry of Foreign Affairs. 2023b. “Specified Visa: Designated Activities (Future Creation Individual, Spouse or Child of Future Creation Individual),” Consular Services. Last modified April 27, 2023. [https://www.mofa.go.jp/ca/fna/page22e_001037.html](https://www.mofa.go.jp/ca/fna/page22e_001037.html).
+
+Japanese Ministry of Foreign Affairs. 2024. “Specified Visa: Designated Activities (Digital Nomad, Spouse or Child of Digital Nomad), Consular Services. Last modified March 31, 2024. [https://www.mofa.go.jp/ca/fna/pagewe_000001_00046.html](https://www.mofa.go.jp/ca/fna/pagewe_000001_00046.html).
+
+JASON. 2019. _Fundamental Research Security._ McLean, VA: JASON, The MITRE Corporation. [https://www.nsf.gov/news/special_reports/jasonsecurity/JSR-19-2IFundamentalResearchSecurity_12062019FINAL.pdf](https://www.nsf.gov/news/special_reports/jasonsecurity/JSR-19-2IFundamentalResearchSecurity_12062019FINAL.pdf).
+
+JASON. 2024. _Safeguarding the Research Enterprise._ McLean, VA: JASON, The MITRE Corporation. [https://nsf-gov-resources.nsf.gov/files/JSR-23-12-Safeguarding-the-Research-Enterprise-Final.pdf](https://nsf-gov-resources.nsf.gov/files/JSR-23-12-Safeguarding-the-Research-Enterprise-Final.pdf).
+
+JASSO (Japan Student Services Organization). n.d. About JASSO. [https://www.jasso.go.jp/en/about/organization/index.html](https://www.jasso.go.jp/en/about/organization/index.html).
+
+JCORE (Joint Committee on the Research Environment Subcommittee on Research Security). 2022. _Guidance for Implementing National Security Presidential Memorandum 33 (NSPM-33) on National Security Strategy for United States Government-Sponsored Research and Development._ Washington, DC: Executive Office of the President of the United States. [https://www.whitehouse.gov/wp-content/uploads/2022/01/010422-NSPM-33-Implementation-Guidance.pdf](https://www.whitehouse.gov/wp-content/uploads/2022/01/010422-NSPM-33-Implementation-Guidance.pdf).
+
+Jet Propulsion Laboratory. n.d. “History,” Who We Are. [https://www.jpl.nasa.gov/who-we-are/history](https://www.jpl.nasa.gov/who-we-are/history).
+
+Jeung, Y. 2024. Visa and residency rule changes to attract global talent. _University World News,_ July 5, 2024. [https://www.universityworldnews.com/post.php?story=20240705071640527](https://www.universityworldnews.com/post.php?story=20240705071640527).
+
+Jia, H. 2018. How to find a job in China. _Nature_ 553 (7688). [https://www.researchgate.net/publication/322600895_How_to_find_a_job_in_China](https://www.researchgate.net/publication/322600895_How_to_find_a_job_in_China).
+
+Jia, R., M. E. Roberts, Y. Wang, and E. Yang. 2024. The impact of US-China tensions on US science: Evidence from the NIH investigations. _Proceedings of the National Academy of Sciences_ 121 (19). [https://doi.org/10.1073/pnas.2301436121](https://doi.org/10.1073/pnas.2301436121).
+
+Jiang, J. 2018. Competition for talent and unequal development of higher education: Evidence from Chang Jiang Scholars Programme. Pp. 21–37 in _Massification of Higher Education in Asia. Higher Education in Asia: Quality, Excellence and Governance,_ edited by A. Wu and J. Hawkins. Singapore: Springer.
+
+Jingyi, C., and Z. Weilan. 2024. Belt and Road International Skills Competition promotes talent training, exchanges. _Global Times,_ June 24, 2024. [https://www.globaltimes.cn/page/202406/1314730.shtml](https://www.globaltimes.cn/page/202406/1314730.shtml).
+
+Jingyi, S. 2019. Belt and Road forges new path to attract international talents. _China Daily,_ June 24, 2019. [https://www.chinadaily.com.cn/a/201906/24/WS5d11bbe7a3103dbf1432a19e.html](https://www.chinadaily.com.cn/a/201906/24/WS5d11bbe7a3103dbf1432a19e.html).
+
+Jobs and Skills Australia. 2023. The 2023 Skills Priority List released. Australian Government Department of Employment and Workplace Relations, October 4, 2023. [https://www.jobsandskills.gov.au/news/2023-skills-priority-list-released-0](https://www.jobsandskills.gov.au/news/2023-skills-priority-list-released-0).
+
+Johnson, C. Y. 2021. A one-way ticket. A cash-stuffed teddy bear. A dream decades in the making. _Washington Post,_ October 1, 2021. [https://www.washingtonpost.com/health/2021/10/01/katalin-kariko-covid-vaccines/](https://www.washingtonpost.com/health/2021/10/01/katalin-kariko-covid-vaccines/).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Jones, R. M. 2004. Future S&T workforce projections: Two perspectives. _FYI: Science Policy News,_ June 29, 2004. [https://ww2.aip.org/fyi/2004/future-st-workforce-projections-two-perspectives](https://ww2.aip.org/fyi/2004/future-st-workforce-projections-two-perspectives).
+
+Jones, H., and D. P. Goldman. 2022. US-China AI rivalry a tale of two talents. _Asia Times,_ July 2, 2022. [https://asiatimes.com/2022/07/a-tale-of-two-talents/](https://asiatimes.com/2022/07/a-tale-of-two-talents/).
+
+Joshi, M. 2019. Invest, Acquire, Dominate: The rise and rise of China tech. Observer Research Foundation. [https://www.orfonline.org/research/invest-acquire-dominate-the-rise-and-rise-of-china-tech](https://www.orfonline.org/research/invest-acquire-dominate-the-rise-and-rise-of-china-tech).
+
+Joske, A. 2018. Picking flowers, making honey. Australian Strategic Policy Institute. [https://www.aspi.org.au/report/picking-flowers-making-honey](https://www.aspi.org.au/report/picking-flowers-making-honey).
+
+Joske, A. 2019. Reorganizing the United Front Work Department: New Structures for a New Era of Diaspora and Religious Affairs Work. China Brief, May 2019. The Jamestown Foundation. [https://jamestown.org/program/reorganizing-the-united-front-work-department-new-structures-for-a-new-era-of-diaspora-and-religious-affairs-work/](https://jamestown.org/program/reorganizing-the-united-front-work-department-new-structures-for-a-new-era-of-diaspora-and-religious-affairs-work/).
+
+Joske, A. 2020a. _Hunting the Phoenix: The Chinese Communist Party’s Global Search for Technology and Talent._ Australian Strategic Policy Institute. [https://www.aspi.org.au/report/hunting-phoenix](https://www.aspi.org.au/report/hunting-phoenix).
+
+Joske, A. 2020b. _The Party Speaks for You: Foreign Interference and the Chinese Communist Party’s United Front System._ Australian Strategic Policy Institute. [https://www.aspi.org.au/report/party-speaks-you](https://www.aspi.org.au/report/party-speaks-you).
+
+Jung, U. 2023. New plan aims at 31% rise in international students by 2027. _University World News,_ August 18, 2023. [https://www.universityworldnews.com/post.php?story=20230818155906138](https://www.universityworldnews.com/post.php?story=20230818155906138).
+
+Kandel, W. A. 2020. _The Employment-Based Immigration Backlog._ Congressional Research Service. [https://crsreports.congress.gov/product/pdf/R/R46291](https://crsreports.congress.gov/product/pdf/R/R46291).
+
+Kania, E. B., and L. Gorman. 2020. The United States can’t afford to turn away Chinese talent. _Foreign Policy,_ May 13, 2020. [https://foreignpolicy.com/2020/05/13/united-states-cant-afford-turn-away-chinese-talent/](https://foreignpolicy.com/2020/05/13/united-states-cant-afford-turn-away-chinese-talent/).
+
+Karikó, K., M. Buckstein, H. Ni, and D. Weissman. 2005. Suppression of RNA recognition by Toll-like receptors: The impact of nucleoside modification and the evolutionary origin of RNA. _Immunity_ 23(2): 165–175. [https://doi.org/10.1016/j.immuni.2005.06.008](https://doi.org/10.1016/j.immuni.2005.06.008).
+
+Karikó, K., A. Kuo, and E. Barnathan. 1999. Overexpression of urokinase receptor in mammalian cells following administration of the in vitro transcribed encoding mRNA. _Gene Therapy_ 6: 1092–1100. [https://doi.org/htps](https://doi.org/htps)://doi.[org/10.1038/sj.gt.3300930](http://org/10.1038/sj.gt.3300930).
+
+Karp, P. 2023. The migration strategy won’t silence Dutton but Labor is backing away from the feared Big Australia. _The Guardian,_ December 10, 2023. [https://www.theguardian.com/australia-news/2023/dec/11/the-migration-strategy-wont-silence-dutton-but-labor-is-backing-away-from-the-feared-big-australia](https://www.theguardian.com/australia-news/2023/dec/11/the-migration-strategy-wont-silence-dutton-but-labor-is-backing-away-from-the-feared-big-australia).
+
+Karunakaran, A. G. K. 2023. Connect with India at the Grassroots Level. [https://indicanews.com/connect-with-india-at-the-grassroots-level/](https://indicanews.com/connect-with-india-at-the-grassroots-level/).
+
+Kaufman, A. 2024. Tighter U.S. immigration controls on inbound Chinese students stoke concern. _China Digital Times,_ April 24, 2024. [https://chinadigitaltimes.net/2024/04/tighter-u-s-immigration-controls-on-inbound-chinese-students-stoke-concern](https://chinadigitaltimes.net/2024/04/tighter-u-s-immigration-controls-on-inbound-chinese-students-stoke-concern).
+
+Kelchen, R., and F. Barrett. 2024. _Exploring the Growth of Master’s Degree Programs in the United States._ Postsecondary Equity & Economics Research Project. April 2024. [https://www.peerresearchproject.org/peer/research/body/PEER_Masters-Degrees_B.pdf](https://www.peerresearchproject.org/peer/research/body/PEER_Masters-Degrees_B.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Kelic, A., and A. Zagonel. 2009. “Science Technology Engineering and Mathematics (STEM) Career Attractiveness.” Paper presented at the Twenty-Seventh International Conference of the System Dynamics Society, Albuquerque, New Mexico, July 26–30, 2009. [https://www.osti.gov/biblio/1142742](https://www.osti.gov/biblio/1142742).
+
+Kelly, C. 2023. Migrants scapegoated as cause of Australia’s housing crisis a “disturbing” trend, advocates say. _The Guardian,_ December 18, 2023. [https://www.theguardian.com/australia-news/2023/dec/19/migrants-being-scapegoated-as-cause-of-australias-housing-crisis-in-disturbing-trend-groups-say](https://www.theguardian.com/australia-news/2023/dec/19/migrants-being-scapegoated-as-cause-of-australias-housing-crisis-in-disturbing-trend-groups-say).
+
+Kelly, D. 2023. New study shows China leading in dozens of critical technologies. _American Edge,_ March 6, 2023. [https://americanedgeproject.org/new-study-shows-china-leading-in-dozens-of-critical-technologies/](https://americanedgeproject.org/new-study-shows-china-leading-in-dozens-of-critical-technologies/).
+
+Kelly, T. K., W. Butz, S. J. Carroll, D. M. Adamson, and G. Bloom. 2004. _The U.S. Scientific and Technical Workforce._ RAND Corporation. [https://www.rand.org/pubs/conf_proceedings/CF194.html](https://www.rand.org/pubs/conf_proceedings/CF194.html).
+
+Kemsley, J. 2022. Charges dismissed against MIT’s Gang Chen over China interactions. _Chemical & Engineering News,_ January 20, 2022. [https://cen.acs.org/research-integrity/misconduct/Charges-dismissed-against-MITs-Gang/100/i3](https://cen.acs.org/research-integrity/misconduct/Charges-dismissed-against-MITs-Gang/100/i3).
+
+Kerr, S. P., and W. R. Kerr. July 2019. “Immigrant Entrepreneurship in America: Evidence from the Survey of Business Owners 2007 & 2012.” Working Paper 24494, NBER Working Paper Series. Cambridge, MA: National Bureau of Economic Research. [https://www.nber.org/system/files/working_papers/w24494/w24494.pdf](https://www.nber.org/system/files/working_papers/w24494/w24494.pdf).
+
+Kerr, W. R. 2018. _The Gift of Global Talent: How Migration Shapes Business, Economy & Society._ Redwood City, CA: Stanford University Press.
+
+Kivelson, S. A., and P. F. Michelson. 2023. The high price of overzealously defending the US research enterprise against theft by China. _Proceedings of the National Academy of Sciences_ 120(48). [https://doi.org/10.1073/pnas.2314168120](https://doi.org/10.1073/pnas.2314168120).
+
+Knox, L. 2023. Is gun violence scaring off international students? _Inside Higher Ed,_ April 10, 2023. [https://www.insidehighered.com/news/global/international-students-us/2023/04/10/gun-violence-scaring-international-students](https://www.insidehighered.com/news/global/international-students-us/2023/04/10/gun-violence-scaring-international-students).
+
+Knox, L. 2024. Indian student visas beset by long delays. _Inside Higher Ed,_ July 10, 2024. [https://www.insidehighered.com/news/quick-takes/2024/07/10/higher-ed-groups-urge-government-ease-student-visa-delays](https://www.insidehighered.com/news/quick-takes/2024/07/10/higher-ed-groups-urge-government-ease-student-visa-delays).
+
+Kochetkov, D. 2022. Priority-2030: the New Excellence Initiative from Russia. Leiden Madtrics (blog), _Centre for Science and Technology Studies (CWTS) at Leiden University._ January 17, 2022. [https://www.leidenmadtrics.nl/articles/priority-2030-the-new-excellence-initiative-from-russia](https://www.leidenmadtrics.nl/articles/priority-2030-the-new-excellence-initiative-from-russia).
+
+Kolata, G. 2021. Long overlooked, Kati Kariko helped shield the world from the coronavirus. _New York Times,_ April 8, 2021; updated October 2, 2023. [https://www.nytimes.com/2021/04/08/health/coronavirus-mrna-kariko.html](https://www.nytimes.com/2021/04/08/health/coronavirus-mrna-kariko.html).
+
+Krige, J. 2020. Scholars or Spies? U.S.-China Tension in Academic Collaboration. _China Currents_ 19(3). [https://www.chinacenter.net/2020/china-currents/19-3/scholars-or-spies-u-s-china-tension-in-academic-collaboration/](https://www.chinacenter.net/2020/china-currents/19-3/scholars-or-spies-u-s-china-tension-in-academic-collaboration/).
+
+Kuleshov, A. 2021. Celebrating a decade of innovation. _Nature._[https://www.nature.com/articles/d42473-021-00507-7](https://www.nature.com/articles/d42473-021-00507-7).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Kumar, D. 2024. Florida law creates “suspicion” of Chinese students and faculty, lawsuit says. _Tampa Bay Times,_ March 25, 2024; updated March 26, 2024. [https://www.tampabay.com/news/education/2024/03/25/florida-law-creates-suspicion-chinese-students-faculty-lawsuit-says/](https://www.tampabay.com/news/education/2024/03/25/florida-law-creates-suspicion-chinese-students-faculty-lawsuit-says/).
+
+Kuo, L., and C. Cadell. 2024. Chinese students, academics say they’re facing extra scrutiny entering U.S. _Washington Post,_ March 14, 2024. [https://www.washingtonpost.com/world/2024/03/14/china-united-states-university-students-border/](https://www.washingtonpost.com/world/2024/03/14/china-united-states-university-students-border/).
+
+Laker, B. 2024. Major blow to U.K. universities: The decline of international students. _Forbes,_ January 28, 2024. [https://www.forbes.com/sites/benjaminlaker/2024/01/28/major-blow-to-uk-universities-the-decline-of-international-students/](https://www.forbes.com/sites/benjaminlaker/2024/01/28/major-blow-to-uk-universities-the-decline-of-international-students/).
+
+Larkin, M. 2022. The government dropped its case against Gang Chen. Scientists still see damage done. _WBUR,_ February 16, 2022. [https://www.wbur.org/news/2022/02/16/china-initiative-fallout](https://www.wbur.org/news/2022/02/16/china-initiative-fallout).
+
+Laskai, L. 2018. Civil-military fusion and the PLA’s pursuit of dominance in emerging technologies. _China Brief_ 18(6). Jamestown Foundation. [https://jamestown.org/program/civil-military-fusion-and-the-plas-pursuit-of-dominance-in-emerging-technologies/](https://jamestown.org/program/civil-military-fusion-and-the-plas-pursuit-of-dominance-in-emerging-technologies/).
+
+Lawrence Livermore National Laboratory. n.d. LLNL Postdoc Opportunities. [https://st.llnl.gov/opportunities/postdocs](https://st.llnl.gov/opportunities/postdocs).
+
+Leasca, S. 2024. Japan is finally releasing a digital nomad visa – but it’s far from ‘easy.’ BBC, February 15, 2024. [https://www.bbc.com/travel/article/20240215-japan-is-finally-releasing-a-digital-nomad-visa-heres-what-you-need-to-know](https://www.bbc.com/travel/article/20240215-japan-is-finally-releasing-a-digital-nomad-visa-heres-what-you-need-to-know).
+
+Lee, J. J., and J. P. Haupt. 2020. Winners and losers in US-China scientific research collaborations. _International Journal of Higher Education Research_ 80: 57–74. [https://link.springer.com/article/10.1007/s10734-019-00464-7](https://link.springer.com/article/10.1007/s10734-019-00464-7).
+
+Lee, M., and N. Mossaad. 2010. _United States STEM Workers Data Sources._ Washington, DC: Population Reference Bureau. [https://www.prb.org/wp-content/uploads/2010/08/unitedstates-stem.pdf](https://www.prb.org/wp-content/uploads/2010/08/unitedstates-stem.pdf).
+
+Leikuma-Rimicane, L., V. Komarova, J. Lonska, N. Selivanova-Fyodorova, and I. Ostrovska. 2021. The role of talent in the economic development of countries in the modern world. _Entrepreneurship and Sustainability Issues_ 9(2): 488–507. [https://doi.org/10.9770/jesi.2021.9.2(32)](https://doi.org/10.9770/jesi.2021.9.2(32)).
+
+Lester, R., L. Tsai, S. Berger, P. Fisher, M. T. Fravel, D. Goldston, Y. Huang, and D. Rus. 2022. _University Engagement with China: An MIT Approach._ Massachusetts Institute of Technology. [https://global.mit.edu/wp-content/uploads/2022/11/FINALUniversity-Engagement-with-China_An-MIT-Approach-Nov2022.pdf](https://global.mit.edu/wp-content/uploads/2022/11/FINALUniversity-Engagement-with-China_An-MIT-Approach-Nov2022.pdf).
+
+Leube, J. S. 2013. Nurturing intellectuals in the Islamic Republic: The National Elites Foundation. _Middle East – Topics & Arguments_ 1(Mai): 46–52. [https://archiv.ub.unimarburg.de/ep/0003/article/view/1039/987](https://archiv.ub.unimarburg.de/ep/0003/article/view/1039/987).
+
+Leung, M., and Y. Sharma. 2022. Chinese Academy of Sciences drops huge research database. _University World News,_ April 20, 2022. [https://www.universityworldnews.com/post.php?story=20220420085758177](https://www.universityworldnews.com/post.php?story=20220420085758177).
+
+Levesque, G. 2019. _Testimony before the U.S.-China Economic and Security Review Commission Hearing on What Keeps Xi Up at Night: Beijing’s Internal and External Challenges._ February 7, 2019. [https://www.uscc.gov/sites/default/files/Levesque_USCC%20Testimony_Final_0.pdf](https://www.uscc.gov/sites/default/files/Levesque_USCC%20Testimony_Final_0.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Lewis, J. 2018a. _Economic Impact of Cybercrime – No Slowing Down._ Santa Clara, CA: McAfee. [https://csis-website-prod.s3.amazonaws.com/s3fs-public/publication/economic-impact-cybercrime.pdf](https://csis-website-prod.s3.amazonaws.com/s3fs-public/publication/economic-impact-cybercrime.pdf).
+
+Lewis, J. A. 2018b. _How much have the Chinese actually taken._ Center for Strategic and International Studies. [https://www.csis.org/analysis/how-much-have-chinese-actually-taken](https://www.csis.org/analysis/how-much-have-chinese-actually-taken).
+
+Lewis, J. A. 2023. _Rethinking Technology Transfer Policy toward China._ Center for Strategic and International Studies. [https://csis-website-prod.s3.amazonaws.com/s3fs-public/2023-11/231117_Lewis_RethinkingTechPolicyTowardChina.pdf?VersionId=2QdO5.uuDzktcERMyET8ymqKPcNd90Qe](https://csis-website-prod.s3.amazonaws.com/s3fs-public/2023-11/231117_Lewis_RethinkingTechPolicyTowardChina.pdf?VersionId=2QdO5.uuDzktcERMyET8ymqKPcNd90Qe).
+
+Lewis-Kraus, G. 2022. Have Chinese spies infiltrated American campuses? _The New Yorker,_ March 14, 2022. [https://www.newyorker.com/magazine/2022/03/21/have-chinese-spies-infiltrated-american-campuses](https://www.newyorker.com/magazine/2022/03/21/have-chinese-spies-infiltrated-american-campuses).
+
+Li, C. 2005. _Bridging Minds Across the Pacific: U.S.-China Educational Exchanges, 1978-2003._ Lanham, MD: Lexington Books.
+
+Li, F., Y. Miao, and C. Yang. 2015. How do alumni faculty behave in research collaboration? An analysis of Chang Jiang Scholars in China. _Research Policy_ 44(2): 438–450. [https://doi.org/10.1016/j.respol.2014.09.002](https://doi.org/10.1016/j.respol.2014.09.002). [https://www.sciencedirect.com/science/article/abs/pii/S0048733314001589](https://www.sciencedirect.com/science/article/abs/pii/S0048733314001589).
+
+Li, F., and L. Tang. 2022. Can overseas experience speed up career advancement?—An empirical study on Changjiang Scholar Program. _Science Research Management_ 43(1): 192–199. [https://www.kygl.net.cn/EN/abstract/abstract22622.shtml](https://www.kygl.net.cn/EN/abstract/abstract22622.shtml).
+
+Li, M. 2024. Chinese students fight Florida law blocking academic lab access. _China Daily,_ April 8, 2024. [https://global.chinadaily.com.cn/a/202404/08/WS66133a01a31082fc043c0a02.html](https://global.chinadaily.com.cn/a/202404/08/WS66133a01a31082fc043c0a02.html).
+
+Lin, R. 2024. Program to lure foreign talent on track: Ministry. _Taipei Times,_ May 14, 2024. [https://www.taipeitimes.com/News/front/archives/2024/05/14/2003817826](https://www.taipeitimes.com/News/front/archives/2024/05/14/2003817826).
+
+Liu, A. 2023. Where have all the Chinese international students gone? _US-China Today,_ May 20, 2023. [https://uschinatoday.org/features/2023/05/20/where-have-all-the-chinese-international-students-gone/](https://uschinatoday.org/features/2023/05/20/where-have-all-the-chinese-international-students-gone/).
+
+Liu, B., L. Qiao, and Y. Zhang. 2016. Analysis on the funding status and achievement impact of National Science Fund for Distinguished Young Scholars in Life Sciences. _Science Funds in China_ 2: 122–131.
+
+Lloyd-Damnjanovic, A., and A. Bowe. 2020. _Overseas Chinese Students and Scholars in China’s Drive for Innovation._ U.S.-China Economic and Security Review Commission. [https://www.uscc.gov/sites/default/files/2020-10/Overseas_Chinese_Students_and_Scholars_in_Chinas_Drive_for_Innovation.pdf](https://www.uscc.gov/sites/default/files/2020-10/Overseas_Chinese_Students_and_Scholars_in_Chinas_Drive_for_Innovation.pdf).
+
+Loewus, L. 2015. When did science education become STEM? _EducationWeek,_ April 2, 2015. [https://www.edweek.org/teaching-learning/when-did-science-education-become-stem/2015/04](https://www.edweek.org/teaching-learning/when-did-science-education-become-stem/2015/04).
+
+Lu, C., and A. Rathi. 2023. Chinese scientists are leaving the United States. _Foreign Policy,_ July 13, 2023. [https://foreignpolicy.com/2023/07/13/chinese-scientists-united-states-research-tech-academia-china-initiative/](https://foreignpolicy.com/2023/07/13/chinese-scientists-united-states-research-tech-academia-china-initiative/).
+
+Lucas, R. 2022. The Justice Department is ending its controversial China Initiative. _NPR,_ February 23, 2022. [https://www.npr.org/2022/02/23/1082593735/justice-department-china-initiative](https://www.npr.org/2022/02/23/1082593735/justice-department-china-initiative).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Luo, D. 2013. “Seeking modernity, brain gain, and brain drain: The historical evolution of Chinese students’ overseas education in the United States since modern China.” Master’s Thesis, Cultural and Educational Policy Studies, Loyola University Chicago. [https://ecommons.luc.edu/cgi/viewcontent.cgi?article=2853&context=luc_theses](https://ecommons.luc.edu/cgi/viewcontent.cgi?article=2853&context=luc_theses).
+
+Luo, T. X. 2024. Chinese students abroad struggle with tuition as economy falters. _Bloomberg,_ January 30, 2024; updated January 31, 2024. [https://www.bloomberg.com/news/articles/2024-01-30/chinese-students-abroad-struggle-with-tuition-as-economy-falters](https://www.bloomberg.com/news/articles/2024-01-30/chinese-students-abroad-struggle-with-tuition-as-economy-falters).
+
+Luong, N. 2024. _Testimony before the U.S.-China Economic and Security Review Commission on “Current and Emerging Technologies in U.S.-China Economic and National Security Competition.”_ Center for Security and Emerging Technology. [https://www.uscc.gov/sites/default/files/2024-02/Ngor_Luong_Testimony.pdf](https://www.uscc.gov/sites/default/files/2024-02/Ngor_Luong_Testimony.pdf).
+
+Ma, W. 2014. “Chinese international undergraduate students at a U.S. university: A mixed methods study of first-year academic experiences and achievement.” Doctor of Philosophy, Department of Educational Leadership and Policy, University of Utah. [https://web.archive.org/web/20200212183833id_/https:/collections.lib.utah.edu/dl_files/f5/04/f504d6250ca51dcd6f6ba10adc63cb389d4bfc16.pdf](https://web.archive.org/web/20200212183833id_/https:/collections.lib.utah.edu/dl_files/f5/04/f504d6250ca51dcd6f6ba10adc63cb389d4bfc16.pdf).
+
+Ma, Y. 2023. How America lost the heart of China’s top talent. _Brookings Institution,_ November 16, 2023. [https://www.brookings.edu/articles/how-america-lost-the-heart-of-chinas-top-talent/](https://www.brookings.edu/articles/how-america-lost-the-heart-of-chinas-top-talent/).
+
+Ma, Y. 2024. US security and immigration policies threaten its AI leadership. _Order from Chaos_ (blog), April 4, 2024, Brookings Institution. [https://www.brookings.edu/articles/us-security-and-immigration-policies-threaten-its-ai-leadership/](https://www.brookings.edu/articles/us-security-and-immigration-policies-threaten-its-ai-leadership/).
+
+Macao Special Administrative Region. 2023. Introduction and Legislation of the Talent Recruitment System by the Macao Special Administrative Region. The Government of the Macao Special Administrative Region of the People’s Republic of China. [https://www.cdqq.gov.mo/en/talent-recruitment-system/](https://www.cdqq.gov.mo/en/talent-recruitment-system/).
+
+Macao Special Administrative Region. 2024. Macao SAR’s New Round of Talent Recruitment Programmes Opens for Applications from May 21. The Government of the Macao Special Administrative Region of the People’s Republic of China. Last modified May 20, 2024. [https://www.gov.mo/en/news/333411/](https://www.gov.mo/en/news/333411/).
+
+MacroPolo at the Paulson Institute. 2023. The Global AI Talent Tracker 2.0. [https://macropolo.org/digital-projects/the-global-ai-talent-tracker/](https://macropolo.org/digital-projects/the-global-ai-talent-tracker/).
+
+Mahmoudi, H. 2021. Iran loses highly educated and skilled citizens during long-running “Brain Drain.” _Migration Policy Institute,_ April 22, 2021. [https://www.migrationpolicy.org/article/iran-brain-drain-emigration](https://www.migrationpolicy.org/article/iran-brain-drain-emigration).
+
+Maizland, L., and E. Albert. 2022. The Chinese Communist Party. Last updated October 6, 2022. _Backgrounder,_ Council on Foreign Relations. [https://www.cfr.org/backgrounder/chinese-communist-party#chapter-title-0-10](https://www.cfr.org/backgrounder/chinese-communist-party#chapter-title-0-10).
+
+Mäkinen, S. 2021. Global university rankings and Russia’s quest for national sovereignty. _Comparative Education_ 57(3): 417–434. [https://doi.org/10.1080/03050068.2021.1926125](https://doi.org/10.1080/03050068.2021.1926125).
+
+Mallapaty, S. 2018. China hides identities of top scientific recruits amidst growing US scrutiny. _Nature,_ October 24, 2018; correction October 26, 2018. [https://www.nature.com/articles/d41586-018-07167-6](https://www.nature.com/articles/d41586-018-07167-6).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Maloshonok, N., and E. Terentev. 2019. National barriers to the completion of doctoral programs at Russian universities. _Higher Education_ 77: 195–211. [https://doi.org/10.1007/s10734-018-0267-9](https://doi.org/10.1007/s10734-018-0267-9).
+
+Mandour, M. 2022. Transnational repression undermines academic freedom in Western universities. Human Rights Program, March 21, 2022. College of Liberal Arts, University of Minnesota. [https://cla.umn.edu/human-rights/news-events/news/transnational-repression-undermines-academic-freedom-western-universities](https://cla.umn.edu/human-rights/news-events/news/transnational-repression-undermines-academic-freedom-western-universities).
+
+Marcus, J. 2023. How other countries are luring workers trained in U.S. universities. _Washington Post,_ June 17, 2023. [https://www.washingtonpost.com/education/2023/06/17/international-students-jobs-visas-recruiting/](https://www.washingtonpost.com/education/2023/06/17/international-students-jobs-visas-recruiting/).
+
+Matat, Stephany. 2024. Attorneys argue that Florida law discriminates against Chinese nationals trying to buy homes. _Associated Press,_ April 19, 2024. [https://apnews.com/article/florida-chinese-citizen-court-desantis-land-agriculture-9c977ca05db001224e2017ad7577c467](https://apnews.com/article/florida-chinese-citizen-court-desantis-land-agriculture-9c977ca05db001224e2017ad7577c467).
+
+Matveeva, N., I. Sterligov, and M. Yudkevich. 2019. _The Russian University Excellence Initiative: Is It Really Excellence That Is Promoted?_ National Research University Higher School of Economics. [https://wp.hse.ru/data/2019/05/20/1509096657/49EDU2018.pdf](https://wp.hse.ru/data/2019/05/20/1509096657/49EDU2018.pdf).
+
+Matveeva, N., I. Sterligov, and M. Yudkevich. 2021. The effect of Russian University Excellence Initiative on publications and collaboration patterns. _Journal of Informetrics_ 15(1). [https://doi.org/10.1016/j.joi.2020.101110](https://doi.org/10.1016/j.joi.2020.101110).
+
+McBride, J., N. Berman, and A. Chatzky. 2023. _China’s Massive Belt and Road Initiative._ Council on Foreign Relations. [https://www.cfr.org/backgrounder/chinas-massive-belt-and-road-initiative](https://www.cfr.org/backgrounder/chinas-massive-belt-and-road-initiative).
+
+McComas, W. F. 2014. STEM: Science, technology, engineering, and mathematics. In _The Language of Science Education._ Rotterdam: SensePublishers.
+
+McGuire, E. 2010. Between revolutions: Chinese students in Soviet institutions. Pp. 353–392 in _China Learns from the Soviet Union, 1949–Present._ Lexington Books.
+
+McMaster, H. R. 2020. Foreword. Pp. vii–xiii in _Global Engagement: Rethinking Risk in the Research Enterprise,_ edited by G. Tiffert. Stanford, CA: Hoover Institution at Leland Stanford Junior University. Hoover Institution Press, Stanford University, Stanford, California.
+
+Mercer, P. 2024. Australia plans limits on international students. _VOA Student Union,_ May 14, 2024. [https://www.voanews.com/a/australia-plans-limits-on-international-students/7610217.html](https://www.voanews.com/a/australia-plans-limits-on-international-students/7610217.html).
+
+Merisotis, J. 2015. _America Needs Talent: Attracting, Educating & Deploying the 21st-Century Workforce._ New York, NY: RosettaBooks.
+
+Mervis, J. 2019a. Chinese ties don’t faze European funders. _Science_ 365(6458): 1068–1069. September 13, 2019. [https://doi.org/10.1126/science.365.6458.1068](https://doi.org/10.1126/science.365.6458.1068).
+
+Mervis, J. 2019b. NSF hopes Jason can lead it through treacherous waters. _ScienceInsider,_ March 18, 2019. [https://www.science.org/content/article/nsf-hopes-jason-can-lead-it-through-treacherous-waters](https://www.science.org/content/article/nsf-hopes-jason-can-lead-it-through-treacherous-waters).
+
+Mervis, J. 2022a. Odds improve for winning NSF grants, but drop in applications troubles some observers. _ScienceInsider,_ May 10, 2022. [https://www.science.org/content/article/odds-improve-winning-nsf-grants-drop-applications-troubles-some-observers](https://www.science.org/content/article/odds-improve-winning-nsf-grants-drop-applications-troubles-some-observers).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Mervis, J. 2022b. Prosecutors drop China Initiative case against MIT’s Gang Chen. _ScienceInsider,_ January 20, 2022. [https://www.science.org/content/article/united-states-drops-case-against-mit-s-gang-chen](https://www.science.org/content/article/united-states-drops-case-against-mit-s-gang-chen).
+
+Mervis, J. 2022c. What a big new U.S. law that reshapes science agencies could mean for researchers. _ScienceInsider,_ July 29, 2022. [https://www.science.org/content/article/what-big-new-u-s-law-reshapes-science-agencies-could-mean-researchers](https://www.science.org/content/article/what-big-new-u-s-law-reshapes-science-agencies-could-mean-researchers).
+
+Mervis, J. 2023a. New Florida law blocks Chinese students from academic labs. _ScienceAdviser,_ December 13, 2023. [https://www.science.org/content/article/scienceadviser-florida-law-blocks-chinese-students-academic-labs](https://www.science.org/content/article/scienceadviser-florida-law-blocks-chinese-students-academic-labs).
+
+Mervis, J. 2023b. Pall of suspicion. _Science,_ March 23, 2023. [https://www.science.org/content/article/pall-suspicion-nihs-secretive-china-initiative-destroyed-scores-academic-careers](https://www.science.org/content/article/pall-suspicion-nihs-secretive-china-initiative-destroyed-scores-academic-careers).
+
+Mervis, J. 2024a. A valid U.S. visa didn’t stop these Chinese graduate students from being deported. _ScienceInsider,_ March 1, 2024. [https://www.science.org/content/article/valid-u-s-visa-didn-t-stop-these-chinese-graduate-students-being-deported](https://www.science.org/content/article/valid-u-s-visa-didn-t-stop-these-chinese-graduate-students-being-deported).
+
+Mervis, J. 2024b. House defense bill would block U.S. research collaborations with China. _ScienceInsider,_ June 17, 2024. [https://www.science.org/content/article/house-defense-bill-would-block-u-s-research-collaborations-china](https://www.science.org/content/article/house-defense-bill-would-block-u-s-research-collaborations-china).
+
+Mervis, J. 2024c. NIH director expresses support for Asian researchers 6 years into its ‘China Initiative.’ _ScienceInsider,_ August 16, 2024. [https://www.science.org/content/article/nih-director-expresses-support-asian-researchers-6-years-china-initiative](https://www.science.org/content/article/nih-director-expresses-support-asian-researchers-6-years-china-initiative).
+
+Mervis, J., and A. Cho. 2019. New DOE policies would block many foreign research collaborations. _ScienceInsider,_ February 8, 2019. [https://www.science.org/content/article/new-doe-policies-would-block-many-foreign-research-collaborations](https://www.science.org/content/article/new-doe-policies-would-block-many-foreign-research-collaborations).
+
+Meyer, J.-B., J. Charum, D. Bernal, J. Gaillard, J. Granés, J. Leon, A. Montenegro, A. Morales, C. Murcia, N. Narvaez-Berthelemot, L. S. Parrado, and B. Schlemmer. 1997. Turning brain drain into brain gain: The Colombian experience of the diaspora option. _Science Technology and Society_ 2(2): 285–315. [https://doi.org/10.1177/097172189700200205](https://doi.org/10.1177/097172189700200205).
+
+Miao, D. 2010. _Chuguo liuxue liushi nian (Sixty Years of Overseas Study)._ Beijing: Central Literature Publishing House.
+
+Michel, M., C. Stronberg, and P. Geday. 2014. _Economic impact of trade secret theft: A framework for companies to safeguard trade secrets and mitigate potential threats._ Center for Responsible Enterprise and Trade (CREATe) & Pricewaterhouse Coopers LLP (PwC). [https://www.innovation-asset.com/hubfs/blog-files/CREATe.org-PwC-Trade-Secret-Theft-FINAL-Feb-2014_01.pdf](https://www.innovation-asset.com/hubfs/blog-files/CREATe.org-PwC-Trade-Secret-Theft-FINAL-Feb-2014_01.pdf).
+
+Millwood, P. 2021. An ‘exceedingly delicate undertaking’: Sino-American science diplomacy, 1966–78. _Journal of Contemporary History_ 56(1). [https://doi.org/10.1177/0022009419888273](https://doi.org/10.1177/0022009419888273).
+
+MIT (Massachusetts Institute of Technology). n.d. Foreign Talent Programs. Office of the Vice President for Research. [https://research.mit.edu/security-integrity-and-compliance/foreign-engagement/regulations-and-references/foreign-talent](https://research.mit.edu/security-integrity-and-compliance/foreign-engagement/regulations-and-references/foreign-talent).
+
+MIT News. 2011. Skolkovo Foundation and MIT to collaborate on developing the Skolkovo Institute of Science and Technology. October 26, 2011. [https://news.mit.edu/2011/skolkovo-agreement-1026](https://news.mit.edu/2011/skolkovo-agreement-1026).
+
+MIT Skoltech Program. 2022. Announcement. Massachusetts Institute of Technology. [https://skoltech.mit.edu/announcement](https://skoltech.mit.edu/announcement).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+MIT Skoltech Program. n.d. History. Massachusetts Institute of Technology. [https://skoltech.mit.edu/about/history](https://skoltech.mit.edu/about/history).
+
+Mitchell, T. 2024. _Letter to Secretary Blinken on Addressing Visa Delays from the American Council on Education,_ July 3, 2024. Washington, DC: American Council on Education. [https://www.acenet.edu/Documents/Letter-State-Visa-Processing-070524.pdf](https://www.acenet.edu/Documents/Letter-State-Visa-Processing-070524.pdf).
+
+Morrison, N. 2023. China on verge of breaking into world university rankings top ten. _Forbes,_ September 27, 2023. [https://www.forbes.com/sites/nickmorrison/2023/09/27/china-on-verge-of-breaking-into-world-university-rankings-top-ten/](https://www.forbes.com/sites/nickmorrison/2023/09/27/china-on-verge-of-breaking-into-world-university-rankings-top-ten/).
+
+Morrison, W. M. 2019. _China’s Economic Rise: History, trends, Challenges, and Implications for the United States._ Congressional Research Service. [https://crsreports.congress.gov/product/pdf/RL/RL33534/98](https://crsreports.congress.gov/product/pdf/RL/RL33534/98).
+
+Moser, P., A. Voena, and F. Waldinger. 2014. “German-Jewish Emigres and U.S. Invention.” Working Paper 19962, NBER Working Paper Series. Cambridge, MA: National Bureau of Economic Research. [https://www.nber.org/system/files/working_papers/w19962/w19962.pdf](https://www.nber.org/system/files/working_papers/w19962/w19962.pdf).
+
+Motevalli, G. 2014a. Brain drain blights Iran’s economy as investors wait in wings. _Bloomberg,_ April 28, 2014. [https://www.bloomberg.com/news/articles/2014-04-28/brain-drain-blights-iran-s-economy-as-investors-wait-in-wings](https://www.bloomberg.com/news/articles/2014-04-28/brain-drain-blights-iran-s-economy-as-investors-wait-in-wings).
+
+Motevalli, G. 2014b. Iran’s brain drain is the West’s gain. _Bloomberg,_ May 9, 2014. [https://www.bloomberg.com/news/articles/2014-05-08/irans-best-engineering-science-grads-take-skills-abroad](https://www.bloomberg.com/news/articles/2014-05-08/irans-best-engineering-science-grads-take-skills-abroad).
+
+Mozur, P., and J. Liu. 2023. The chip titan whose life’s work is at the center of a tech cold war. _New York Times,_ August 4, 2023. [https://www.nytimes.com/2023/08/04/technology/the-chip-titan-whose-lifes-work-is-at-the-center-of-a-tech-cold-war.html](https://www.nytimes.com/2023/08/04/technology/the-chip-titan-whose-lifes-work-is-at-the-center-of-a-tech-cold-war.html).
+
+Mui, C. 2024. Is there a future for U.S.-China research collaboration? _Politico,_ May 13, 2024. [https://www.politico.com/newsletters/digital-future-daily/2024/05/13/is-there-a-future-for-u-s-china-research-collaboration-00157725](https://www.politico.com/newsletters/digital-future-daily/2024/05/13/is-there-a-future-for-u-s-china-research-collaboration-00157725).
+
+NAFSA (National Association for Foreign Student Affairs). 2023. New NAFSA Data Reveal International Student Economic Contributions Continue to Rebound. [https://www.nafsa.org/about/about-nafsa/new-nafsa-data-reveal-international-student-economic-contributions-continue](https://www.nafsa.org/about/about-nafsa/new-nafsa-data-reveal-international-student-economic-contributions-continue).
+
+NAFSA. n.d. International Student Economic Value Tool. [https://www.nafsa.org/policy-and-advocacy/policy-resources/nafsa-international-student-economic-value-tool-v2](https://www.nafsa.org/policy-and-advocacy/policy-resources/nafsa-international-student-economic-value-tool-v2).
+
+Nair, P. 2021. QnAs with Katalin Karikó. _Proceedings of the National Academy of Sciences_ 118(51): e2119757118. [https://doi.org/10.1073/pnas.2119757118](https://doi.org/10.1073/pnas.2119757118).
+
+Nakashima, E. 2022. Charges dismissed against MIT professor accused of hiding research ties to China. _Washington Post,_ January 20, 2022. [https://www.washingtonpost.com/national-security/mit-gang-chen-dismiss/2022/01/20/912f68aa-786b-11ec-bf97-6eac6f77fba2_story.html](https://www.washingtonpost.com/national-security/mit-gang-chen-dismiss/2022/01/20/912f68aa-786b-11ec-bf97-6eac6f77fba2_story.html).
+
+NASEM (National Academies of Sciences, Engineering, and Medicine). 2005. _Enhancing the Community College Pathway to Engineering Careers._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/11438/enhancing-the-community-college-pathway-to-engineering-careers](https://nap.nationalacademies.org/catalog/11438/enhancing-the-community-college-pathway-to-engineering-careers).
+
+NASEM. 2007a. _Controlling the Quantum World._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/11705/controlling-the-quantum-world-the-science-of-atoms-molecules-and](https://nap.nationalacademies.org/catalog/11705/controlling-the-quantum-world-the-science-of-atoms-molecules-and).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+NASEM. 2007b. _Rising Above the Gathering Storm._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/11463/rising-above-the-gathering-storm-energizing-and-employing-america-for](https://nap.nationalacademies.org/catalog/11463/rising-above-the-gathering-storm-energizing-and-employing-america-for).
+
+NASEM. 2010. _S&T Strategies of Six Countries._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/12920/st-strategies-of-six-countries-implications-for-the-united-states](https://nap.nationalacademies.org/catalog/12920/st-strategies-of-six-countries-implications-for-the-united-states).
+
+NASEM. 2011. _Expanding Underrepresented Minority Participation._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/12984/expanding-underrepresented-minority-participation-americas-science-and-technology-talent-at](https://nap.nationalacademies.org/catalog/12984/expanding-underrepresented-minority-participation-americas-science-and-technology-talent-at).
+
+NASEM. 2015. _Immigration Policy and the Search for Skilled Workers._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/20145/immigration-policy-and-the-search-for-skilled-workers-summary-of](https://nap.nationalacademies.org/catalog/20145/immigration-policy-and-the-search-for-skilled-workers-summary-of).
+
+NASEM. 2016a. _Barriers and Opportunities for 2-Year and 4-Year STEM Degrees._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/21739/barriers-and-opportunities-for-2-year-and-4-year-stem-degrees](https://nap.nationalacademies.org/catalog/21739/barriers-and-opportunities-for-2-year-and-4-year-stem-degrees).
+
+NASEM. 2016b. _Promising Practices for Strengthening the Regional STEM Workforce Development Ecosystem._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/21894/promising-practices-for-strengthening-the-regional-stem-workforce-development-ecosystem](https://nap.nationalacademies.org/catalog/21894/promising-practices-for-strengthening-the-regional-stem-workforce-development-ecosystem).
+
+NASEM. 2017a. _Building America’s Skilled Technical Workforce._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/23472/building-americas-skilled-technical-workforce](https://nap.nationalacademies.org/catalog/23472/building-americas-skilled-technical-workforce).
+
+NASEM. 2017b. _Fostering Integrity in Research._ Washington DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/21896/fostering-integrity-in-research](https://nap.nationalacademies.org/catalog/21896/fostering-integrity-in-research).
+
+NASEM. 2017c. _The Economic and Fiscal Consequences of Immigration._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/23550/the-economic-and-fiscal-consequences-of-immigration](https://nap.nationalacademies.org/catalog/23550/the-economic-and-fiscal-consequences-of-immigration).
+
+NASEM. 2017d. _Undergraduate Research Experiences for STEM Students._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/24622/undergraduate-research-experiences-for-stem-students-successes-challenges-and-opportunities](https://nap.nationalacademies.org/catalog/24622/undergraduate-research-experiences-for-stem-students-successes-challenges-and-opportunities).
+
+NASEM. 2019a. _Minority Serving Institutions._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/25257/minority-serving-institutions-americas-underutilized-resource-for-strengthening-the-stem](https://nap.nationalacademies.org/catalog/25257/minority-serving-institutions-americas-underutilized-resource-for-strengthening-the-stem).
+
+NASEM. 2019b. _Science and Engineering for Grades 6–12._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/25216/science-and-engineering-for-grades-6-12-investigation-and-design](https://nap.nationalacademies.org/catalog/25216/science-and-engineering-for-grades-6-12-investigation-and-design).
+
+NASEM. 2019c. _The Science of Effective Mentorship in STEMM._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/25568/the-science-of-effective-mentorship-in-stemm](https://nap.nationalacademies.org/catalog/25568/the-science-of-effective-mentorship-in-stemm).
+
+NASEM. 2020. _Promising Practices for Addressing the Underrepresentation of Women in Science, Engineering, and Medicine._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/25585/promising-practices-for-addressing-the-underrepresentation-of-women-in-science-engineering-and-medicine](https://nap.nationalacademies.org/catalog/25585/promising-practices-for-addressing-the-underrepresentation-of-women-in-science-engineering-and-medicine).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+NASEM. 2021a. _Call to Action for Science Education._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/26152/call-to-action-for-science-education-building-opportunity-for-the](https://nap.nationalacademies.org/catalog/26152/call-to-action-for-science-education-building-opportunity-for-the).
+
+NASEM. 2021b. _Cultivating Interest and Competencies in Computing._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/25912/cultivating-interest-and-competencies-in-computing-authentic-experiences-and-design](https://nap.nationalacademies.org/catalog/25912/cultivating-interest-and-competencies-in-computing-authentic-experiences-and-design).
+
+NASEM. 2022a. _Maintaining U.S. Global Leadership in Science and Technology Requires Greater Focus on Strengthening Innovation, Not Solely on Restricting Access to Specific Technologies._[https://www.nationalacademies.org/news/2022/09/maintaining-u-s-global-leadership-in-science-and-technology-requires-greater-focus-on-strengthening-innovation-not-solely-on-restricting-access-to-specific-technologies](https://www.nationalacademies.org/news/2022/09/maintaining-u-s-global-leadership-in-science-and-technology-requires-greater-focus-on-strengthening-innovation-not-solely-on-restricting-access-to-specific-technologies).
+
+NASEM. 2022b. _Protecting U.S. Technological Advantage._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/26647/protecting-us-technological-advantage](https://nap.nationalacademies.org/catalog/26647/protecting-us-technological-advantage).
+
+NASEM. 2022c. Support for Gang Chen | Committee on Human Rights. [https://www.nationalacademies.org/chr/cases/gang-chen](https://www.nationalacademies.org/chr/cases/gang-chen).
+
+NASEM. 2023a. _Advancing Antiracism, Diversity, Equity, and Inclusion in STEMM Organizations._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/26803/advancing-antiracism-diversity-equity-and-inclusion-in-stemm-organizations-beyond](https://nap.nationalacademies.org/catalog/26803/advancing-antiracism-diversity-equity-and-inclusion-in-stemm-organizations-beyond).
+
+NASEM. 2023b. _Confucius Institutes at U.S. Institutions of Higher Education._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/26747/confucius-institutes-at-us-institutions-of-higher-education-waiver-criteria](https://nap.nationalacademies.org/catalog/26747/confucius-institutes-at-us-institutions-of-higher-education-waiver-criteria).
+
+NASEM. 2023c. _Foreign-Funded Language and Culture Institutes at U.S. Institutions of Higher Education._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/27065/foreign-funded-language-and-culture-institutes-at-us-institutions-of-higher-education](https://nap.nationalacademies.org/catalog/27065/foreign-funded-language-and-culture-institutes-at-us-institutions-of-higher-education).
+
+NASEM. 2024. _Equity in K-12 STEM Education._ Washington, DC: The National Academies Press. [https://nap.nationalacademies.org/catalog/26859/equity-in-k-12-stem-education-framing-decisions-for-the](https://nap.nationalacademies.org/catalog/26859/equity-in-k-12-stem-education-framing-decisions-for-the).
+
+National Bureau of Statistics of China. n.d. State Council of China. [https://www.stats.gov.cn/english/](https://www.stats.gov.cn/english/).
+
+_Nature._ 2021. Research collaborations bring big rewards: the world needs more. _Nature_ editorial 594: 301–302. [https://www.nature.com/articles/d41586-021-01581-z](https://www.nature.com/articles/d41586-021-01581-z).
+
+_Nature._ 2022. The case for lotteries as a tiebreaker of quality in research funding. _Nature_ editorial 609: 653. [https://www.nature.com/articles/d41586-022-02959-3](https://www.nature.com/articles/d41586-022-02959-3).
+
+_Nature._ 2024. Why it would be a dangerous folly to end US-China science pact. _Nature_ editorial 626: 927–928. [https://www.nature.com/articles/d41586-024-00577-9](https://www.nature.com/articles/d41586-024-00577-9).
+
+NCES (National Center for Education Statistics). 2020. Table 325.35. Degrees in computer and information sciences conferred by postsecondary institutions, by level of degree and sex of student: 1964–65 through 2018–19. In _Digest of Education Statistics:_ Institute of Education Statistics, U.S. Department of Education. [https://nces.ed.gov/programs/digest/d20/tables/dt20_325.35.asp](https://nces.ed.gov/programs/digest/d20/tables/dt20_325.35.asp).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+NCSES (National Center for Science and Engineering Statistics). 2016. International students who intend to stay in the United States: What are the overall trends? Arlington, VA: Science and Engineering Doctorates, National Science Foundation. [https://wayback.archive-it.org/5902/20231215231113/https](https://wayback.archive-it.org/5902/20231215231113/https)://[www.nsf.gov/statistics/2017/nsf17306/report/international-students-staying-overall-trends/destination-when-leaving-the-united-states.cfm](http://www.nsf.gov/statistics/2017/nsf17306/report/international-students-staying-overall-trends/destination-when-leaving-the-united-states.cfm).
+
+NCSES. 2021a. National Survey of College Graduates. Alexandria, VA: National Science Foundation. [https://ncses.nsf.gov/surveys/national-survey-college-graduates/2021](https://ncses.nsf.gov/surveys/national-survey-college-graduates/2021).
+
+NCSES. 2021b. Survey of Doctorate Recipients (SDR). Alexandria, VA: National Science Foundation. [https://ncses.nsf.gov/surveys/doctorate-recipients/2021](https://ncses.nsf.gov/surveys/doctorate-recipients/2021).
+
+NCSES. 2022. Survey of Earned Doctorates. Alexandria, VA: National Science Foundation. [https://ncses.nsf.gov/surveys/earned-doctorates/2022](https://ncses.nsf.gov/surveys/earned-doctorates/2022).
+
+NDIA (National Defense Industrial Association). 2020. _Vital Signs 2020: The Health and Readiness of the Defense Industrial Base._[https://www.ndia.org/-/media/sites/ndia/policy/vital-signs/2020/vital-signs_screen_v3.pdf](https://www.ndia.org/-/media/sites/ndia/policy/vital-signs/2020/vital-signs_screen_v3.pdf).
+
+NDSEG (National Defense Science and Engineering Graduate) Program. n.d. About NDSEG. U.S. Department of Defense. [https://ndseg.org/about](https://ndseg.org/about).
+
+Neal, H. A., T. Smith, and J. McCormick. 2008. _Beyond Sputnik: U.S. Science Policy in the 21st Century._ Ann Arbor: University of Michigan Press.
+
+NEI Global Relocation. 2023. New Country Initiatives to Attract Top International Talent. Last modified June 14, 2023. [https://www.neirelo.com/articles/new-country-initiatives-to-attract-top-international-talent](https://www.neirelo.com/articles/new-country-initiatives-to-attract-top-international-talent).
+
+Neufeld, J. 2019. Optional Practical Training (OPT) and international students after graduation. _Niskanen Center._[https://www.niskanencenter.org/wp-content/uploads/old_uploads/2019/03/OPT.pdf](https://www.niskanencenter.org/wp-content/uploads/old_uploads/2019/03/OPT.pdf).
+
+Neufeld, J. 2022a. Immigration powers American progress. _Institute for Progress,_ February 8, 2022. [https://ifp.org/immigration-powers-american-progress/](https://ifp.org/immigration-powers-american-progress/).
+
+Neufeld, J. 2022b. STEM immigration is critical to American national security. _Institute for Progress,_ March 30, 2022. [https://ifp.org/stem-immigration-is-critical-to-american-national-security/](https://ifp.org/stem-immigration-is-critical-to-american-national-security/).
+
+Neufeld, J., and D. Kaushik. 2024. “International Talent Flows to the United States.” Paper commissioned by the International Talent Programs Consensus Study Committee. Washington, DC: National Academies of Sciences, Engineering, and Medicine.
+
+Newton, P. C., M. C. Richey, and M. Mojtahedzadeh. 2009. _STEM Pressures from Birth to Globalization: Five Related Models._ Seattle, WA: The Boeing Company. [https://proceedings.systemdynamics.org/2009/proceed/papers/P1406.pdf](https://proceedings.systemdynamics.org/2009/proceed/papers/P1406.pdf).
+
+New Zealand Government. 2020. Passports and Visas When You Go to Australia, Leaving NZ. Last modified October 9, 2020. [https://www.govt.nz/browse/leaving-nz/travel-or-move-to-australia/passports-and-visas-when-you-go-to-australia/](https://www.govt.nz/browse/leaving-nz/travel-or-move-to-australia/passports-and-visas-when-you-go-to-australia/).
+
+New Zealand MBIE (Ministry of Business, Innovation and Employment). n.d.a. “Entrepreneur Resident Visa,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visas/visa/entrepreneur-resident-visa](https://www.immigration.govt.nz/new-zealand-visas/visas/visa/entrepreneur-resident-visa).
+
+New Zealand MBIE. n.d.b. “Entrepreneur Work Visa,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visas/visa/entrepreneur-work-visa](https://www.immigration.govt.nz/new-zealand-visas/visas/visa/entrepreneur-work-visa).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+New Zealand MBIE. n.d.c. “Exchange Student Visa,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visas/visa/exchange-student-visa](https://www.immigration.govt.nz/new-zealand-visas/visas/visa/exchange-student-visa).
+
+New Zealand MBIE. n.d.d. “Global Impact Permanent Residence Visa,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visas/visa/global-impact-permanent-residence-visa](https://www.immigration.govt.nz/new-zealand-visas/visas/visa/global-impact-permanent-residence-visa).
+
+New Zealand MBIE. n.d.e. “Global Impact Work Visa,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visas/visa/global-impact-work-visa](https://www.immigration.govt.nz/new-zealand-visas/visas/visa/global-impact-work-visa).
+
+New Zealand MBIE. n.d.f. “Green List Roles,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/preparing-a-visa-application/working-in-nz/qualifications-for-work/green-list-occupations](https://www.immigration.govt.nz/new-zealand-visas/preparing-a-visa-application/working-in-nz/qualifications-for-work/green-list-occupations).
+
+New Zealand MBIE. n.d.g. “Hiring Migrants,” Starting Employment. Employment New Zealand. [https://www.employment.govt.nz/starting-employment/hiring/hiring-migrants](https://www.employment.govt.nz/starting-employment/hiring/hiring-migrants).
+
+New Zealand MBIE. n.d.h. “Pacific Access Category Resident,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visas/visa/pacific-access-category-resident-visa](https://www.immigration.govt.nz/new-zealand-visas/visas/visa/pacific-access-category-resident-visa).
+
+New Zealand MBIE. n.d.i. “Pathway Student Visa,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visas/visa/pathway-student-visa](https://www.immigration.govt.nz/new-zealand-visas/visas/visa/pathway-student-visa).
+
+New Zealand MBIE. n.d.j. “Skilled Migrant Category Resident Visa,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa](https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa).
+
+New Zealand MBIE. n.d.k. “Student and Trainee Work Visa,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visas/visa/student-and-trainee-work-visa](https://www.immigration.govt.nz/new-zealand-visas/visas/visa/student-and-trainee-work-visa).
+
+New Zealand MBIE. n.d.l. “Talent (Arts, Culture, Sports) Work Visa,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visas/visa/talent-arts-culture-and-sports-work-to-residence-visa](https://www.immigration.govt.nz/new-zealand-visas/visas/visa/talent-arts-culture-and-sports-work-to-residence-visa).
+
+New Zealand MBIE. n.d.m. “Visas That Allow You to Join Family,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visa-lists/all-family-visas](https://www.immigration.govt.nz/new-zealand-visas/visa-lists/all-family-visas).
+
+New Zealand MBIE. n.d.n. “Visas That Allow You to Study,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visa-lists/all-student-visas](https://www.immigration.govt.nz/new-zealand-visas/visa-lists/all-student-visas).
+
+New Zealand MBIE. n.d.o. “Visas That Allow You to Work,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visa-lists/all-work-visas](https://www.immigration.govt.nz/new-zealand-visas/visa-lists/all-work-visas).
+
+New Zealand MBIE. n.d.p. “Work Exchange Scheme Work Visa,” New Zealand Visas. New Zealand Immigration. [https://www.immigration.govt.nz/new-zealand-visas/visas/visa/work-exchange-scheme-visa](https://www.immigration.govt.nz/new-zealand-visas/visas/visa/work-exchange-scheme-visa).
+
+New Zealand Ministry of Education. 2024. International – Education in New Zealand. Last modified January 8, 2024. [https://www.education.govt.nz/international-students/](https://www.education.govt.nz/international-students/).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+NFAP (National Foundation for American Policy). 2023. _Immigrants and Nobel Prizes: 1901-2023. October 2023._[https://nfap.com/wp-content/uploads/2023/10/Immigrants-and-Nobel-Prizes-1901-to-2023.NFAAP-Policy-Brief.October-2023.pdf](https://nfap.com/wp-content/uploads/2023/10/Immigrants-and-Nobel-Prizes-1901-to-2023.NFAAP-Policy-Brief.October-2023.pdf).
+
+Ngai, M. 2023. Ron DeSantis ‘Banned China from buying land in the state of Florida.’ How did we get here? _New York Times,_ December 11, 2023. [https://www.nytimes.com/2023/12/11/opinion/chinese-people-property-sale.html](https://www.nytimes.com/2023/12/11/opinion/chinese-people-property-sale.html).
+
+NIA (National Institute of Aerospace). n.d. “NASA’S Gateways to Blue Skies Competition.” [https://blueskies.nianet.org/](https://blueskies.nianet.org/).
+
+Nice, A. 2024. “Meeting US Defense Science and Engineering Workforce Needs: A Progress Report.” In _Entrepreneurship and Innovation Policy and the Economy, Volume 4,_ edited by B. Jones and J. Lerner. Cambridge, MA: University of Chicago Press. National Bureau of Economic Research.
+
+NIH (National Institutes of Health). 2024a. About Foreign Interference. Last modified June 6, 2024. [https://grants.nih.gov/policy/foreign-interference/about-foreign-interference](https://grants.nih.gov/policy/foreign-interference/about-foreign-interference). [https://grants.nih.gov/policy/foreign-interference/about-foreign-interference](https://grants.nih.gov/policy/foreign-interference/about-foreign-interference).
+
+NIH. 2024b. NIH Supports Our Valued Asian American, Asian Immigrant and Asian Research Colleagues. August 15, 2024. [https://www.nih.gov/about-nih/who-we-are/nih-director/statements/nih-supports-our-valued-asian-american-asian-immigrant-asian-research-colleagues](https://www.nih.gov/about-nih/who-we-are/nih-director/statements/nih-supports-our-valued-asian-american-asian-immigrant-asian-research-colleagues).
+
+NISTEP (National Institute of Science and Technology Policy of Japan). 2022. _Digest of Japanese Science and Technology Indicators 2022._ Japanese Ministry of Education, Culture, Sports, Science and Technology. [https://www.nistep.go.jp/en/wp-content/uploads/NISTEP-RM318-SummaryE_R.pdf](https://www.nistep.go.jp/en/wp-content/uploads/NISTEP-RM318-SummaryE_R.pdf).
+
+Normile, D. 2022. China falls silent about its recruitment efforts. _Science,_ 375(6578). [https://www.science.org/doi/epdf/10.1126/science.ada0235](https://www.science.org/doi/epdf/10.1126/science.ada0235).
+
+North, D. 2023. Some Foreign Workers Pay Payroll Taxes, Some Do Not: A Puzzling Pattern. _Center for Immigration Studies._ November 8, 2023. [https://cis.org/North/Some-Foreign-Workers-Pay-Payroll-Taxes-Some-Do-Not-Puzzling-Pattern](https://cis.org/North/Some-Foreign-Workers-Pay-Payroll-Taxes-Some-Do-Not-Puzzling-Pattern).
+
+Nowrasteh, A. 2020. Foreign Students Are Not a Serious National Security Threat. _CATO Institute._ July 14, 2020. [https://www.cato.org/blog/foreign-students-are-not-serious-national-security-threat](https://www.cato.org/blog/foreign-students-are-not-serious-national-security-threat).
+
+NSB (National Science Board). 2005. _National Science Board 2020 Vision for the National Science Foundation._ National Science Foundation. [https://www.nsf.gov/pubs/2006/nsb05142/nsb05142.pdf](https://www.nsf.gov/pubs/2006/nsb05142/nsb05142.pdf).
+
+NSB. 2015. _Revisiting the STEM Workforce: A Companion to Science and Engineering Indicators 2014._ National Science Foundation. [https://www.nsf.gov/pubs/2015/nsb201510/nsb201510.pdf](https://www.nsf.gov/pubs/2015/nsb201510/nsb201510.pdf).
+
+NSB. 2018. Elementary and secondary mathematics and science education. Ch. 1 in _Science & Engineering Indicators 2018._[https://www.nsf.gov/statistics/2018/nsb20181/report/sections/elementary-and-secondary-mathematics-and-science-education/student-learning-in-mathematics-and-science](https://www.nsf.gov/statistics/2018/nsb20181/report/sections/elementary-and-secondary-mathematics-and-science-education/student-learning-in-mathematics-and-science).
+
+NSB. 2020. Foreign-born students and workers in the U.S. science and engineering enterprise. _Science & Engineering Indicators 2020._ National Science Foundation. [https://www.nsf.gov/nsb/sei/one-pagers/Foreign-Born.pdf](https://www.nsf.gov/nsb/sei/one-pagers/Foreign-Born.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+NSB. 2022a. _International STEM Talent Is Crucial for a Robust U.S. Economy._ NSB-2022-16. National Science Foundation. [https://www.nsf.gov/nsb/sei/one-pagers/NSB-International-STEM-Talent-2022.pdf](https://www.nsf.gov/nsb/sei/one-pagers/NSB-International-STEM-Talent-2022.pdf).
+
+NSB. 2022b. _The State of U.S. Science and Engineering 2022._ National Science Foundation. [https://ncses.nsf.gov/pubs/nsb20221/](https://ncses.nsf.gov/pubs/nsb20221/).
+
+NSB. 2024a. _A Changed Science and Engineering Landscape._ National Science Foundation. [https://www.nsf.gov/nsb/publications/2024/changedlandscape.pdf](https://www.nsf.gov/nsb/publications/2024/changedlandscape.pdf).
+
+NSB. 2024b. Global competitors outpace U.S. in patents. News release February 29, 2024. [https://www.nsf.gov/nsb/news/news_summ.jsp?cntn_id=309184](https://www.nsf.gov/nsb/news/news_summ.jsp?cntn_id=309184).
+
+NSB. 2024c. _Talent Is The Treasure._ National Science Foundation. [https://www.nsf.gov/nsb/publications/2024/2024_policy_brief.pdf](https://www.nsf.gov/nsb/publications/2024/2024_policy_brief.pdf).
+
+NSB. 2024d. _The State of U.S. Science & Engineering 2024._ National Science Foundation. [https://ncses.nsf.gov/pubs/nsb20243](https://ncses.nsf.gov/pubs/nsb20243).
+
+NSCAI (National Security Commission on Artificial Intelligence). 2021. _Final Report._[https://assets.foleon.com/eu-central-1/de-uploads-7e3kk3/48187/nscai_full_report_digital.04d6b124173c.pdf](https://assets.foleon.com/eu-central-1/de-uploads-7e3kk3/48187/nscai_full_report_digital.04d6b124173c.pdf).
+
+NSF (National Science Foundation). n.d.a. “Graduate Research Fellowship Program.” Graduate Research Fellowship Program. [https://new.nsf.gov/funding/opportunities/nsf-graduate-research-fellowship-program-grfp](https://new.nsf.gov/funding/opportunities/nsf-graduate-research-fellowship-program-grfp).
+
+NSF. n.d.b. “Research Security Training.” Research Security Training. [https://new.nsf.gov/research-security/training](https://new.nsf.gov/research-security/training).
+
+NSF. 2023. GRFP 2019-2023. STEM Education. [https://web.archive.org/web/20231210010526/https](https://web.archive.org/web/20231210010526/https):/[www.nsf.gov/edu/GRFPFacts.jsp](http://www.nsf.gov/edu/GRFPFacts.jsp).
+
+NSF. 2024a. “Graduate Research Fellowship Program (GRFP): Award Offers and Honorable Mentions List.” [Research.gov](http://research.gov/). [https://www.research.gov/grfp/AwardeeList.do?method=-loadAwardeeList](https://www.research.gov/grfp/AwardeeList.do?method=-loadAwardeeList)
+
+NSF. 2024b. GRFP 2020-2024. STEM Education. [https://www.nsf.gov/edu/GRFPFacts.jsp](https://www.nsf.gov/edu/GRFPFacts.jsp).
+
+NSF. 2024c. “Module 1: What Is Research Security?” Introduction to Research Security. [https://rst.nsf.gov/introduction/story.html](https://rst.nsf.gov/introduction/story.html).
+
+NSTC (National Science and Technology Council). 2024. _Critical and Emerging Technologies List Update._ A Report by the Fast Track Action Subcommittee on Critical and Emerging Technologies. Executive Office of the President. [https://www.whitehouse.gov/wp-content/uploads/2024/02/Critical-and-Emerging-Technologies-List-2024-Update.pdf](https://www.whitehouse.gov/wp-content/uploads/2024/02/Critical-and-Emerging-Technologies-List-2024-Update.pdf).
+
+Nuwer, R. 2023. Chinese students stay local as favour falls with study abroad. _Nature Index,_ August 9, 2023; correction August 15, 2023. [https://www.nature.com/articles/d41586-023-02162-y](https://www.nature.com/articles/d41586-023-02162-y).
+
+O’Brien, C. 2024. Most international graduates of American universities ultimately leave the U.S. _Economic Innovation Group,_ June 27, 2024. [https://eig.org/immigrant-retention-estimates/](https://eig.org/immigrant-retention-estimates/).
+
+Obst, D, and J. Forster. 2022. _Perceptions of European Higher Education in Third Countries._ IIE (Institute of International Education). [https://www.iie.org/wp-content/uploads/2022/12/International-Students-in-the-US.pdf](https://www.iie.org/wp-content/uploads/2022/12/International-Students-in-the-US.pdf).
+
+O’Connor, S. 2019. _How Chinese Companies Facilitate Technology Transfer from the United States._ U.S.-China Economic and Security Review Commission. [https://www.uscc.gov/sites/default/files/Research/How%20Chinese%20Companies%20Facilitate%20Tech%20Transfer%20from%20the%20US.pdf](https://www.uscc.gov/sites/default/files/Research/How%20Chinese%20Companies%20Facilitate%20Tech%20Transfer%20from%20the%20US.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+OECD (Organisation for Economic Co-operation and Development). n.d.a. An EU Talent Pool. [https://www.oecd.org/migration/eu-talent-pool.htm](https://www.oecd.org/migration/eu-talent-pool.htm).
+
+OECD. n.d.b. Main Science and Technology Indicators. [https://www.oecd.org/en/data/datasets/main-science-and-technology-indicators.html](https://www.oecd.org/en/data/datasets/main-science-and-technology-indicators.html).
+
+OECD. n.d.c. Science, Technology and Innovation Scoreboard. [https://www.oecd.org/en/data/datasets/science-technology-and-innovation-scoreboard.html](https://www.oecd.org/en/data/datasets/science-technology-and-innovation-scoreboard.html).
+
+OECD. 2018. “The Belt and Road Initiative in the global trade, investment and finance landscape.” In _OECD Business and Finance Outlook 2018._ Paris: OECD Publishing. [https://www.oecd-ilibrary.org/finance-and-investment/oecd-business-and-finance-outlook-2018/the-belt-and-road-initiative-in-the-global-trade-investment-and-finance-landscape_bus_fin_out-2018-6-en](https://www.oecd-ilibrary.org/finance-and-investment/oecd-business-and-finance-outlook-2018/the-belt-and-road-initiative-in-the-global-trade-investment-and-finance-landscape_bus_fin_out-2018-6-en).
+
+OECD. 2019. How do OECD countries compare in their attractiveness for talented migrants? _Migration Policy Debates_ (19). [https://www.oecd.org/migration/mig/migration-policy-debates-19.pdf](https://www.oecd.org/migration/mig/migration-policy-debates-19.pdf).
+
+OECD. 2020. _Education at a Glance 2020._ September 8, 2020. Paris: OECD Publishing. [https://www.oecd.org/en/publications/education-at-a-glance-2020_69096873-en.html](https://www.oecd.org/en/publications/education-at-a-glance-2020_69096873-en.html).
+
+OECD. 2023a. Italy. _OECD Economic Outlook_ 2023(1). [https://www.oecd-ilibrary.org/sites/da6b37c4-en/index.html?itemId=/content/component/da6b37c4-en](https://www.oecd-ilibrary.org/sites/da6b37c4-en/index.html?itemId=/content/component/da6b37c4-en).
+
+OECD. 2023b. OECD Education Statistics. [https://doi.org/10.1787/69096873-en](https://doi.org/10.1787/69096873-en)
+
+OECD. 2023c. Talent Attractiveness: How Does Your Country Compare in Each Dimension? Last modified March 7, 2023. [https://web-archive.oecd.org/temp/2023-03-08/519927-how-does-your-country-compare-in-each-dimension.htm](https://web-archive.oecd.org/temp/2023-03-08/519927-how-does-your-country-compare-in-each-dimension.htm).
+
+OECD. 2023d. What is the best country for global talents in the OECD? _Migration Policy Debates_ (29). [https://web-archive.oecd.org/2023-03-09/652850-What-is-the-best-country-for-global-talents-in-the-OECD-Migration-Policy-Debates-March-2023.pdf](https://web-archive.oecd.org/2023-03-09/652850-What-is-the-best-country-for-global-talents-in-the-OECD-Migration-Policy-Debates-March-2023.pdf)
+
+OECD. 2024a. Enrolment of International Students by Country of Origin. [https://data-explorer.oecd.org/vis?tenant=archive&df[ds]=DisseminateArchiveDMZ&df[id]=DF_EDU_ENRL_MOBILE&df[ag]=OECD&dq=…&lom=LASTNPERIODS&lo=5&to[TIME_PERIOD]=false](https://data-explorer.oecd.org/vis?tenant=archive).
+
+OECD. 2024b. International net flows of scientific authors. OECD calculations based on Scopus Custom Data, Elsevier, Version 1.2024, April 2024. [https://www.oecd-ilibrary.org/science-and-technology/net-flows-of-scientific-authors-top-publishing-countries-2015-and-2021_ab848773-en](https://www.oecd-ilibrary.org/science-and-technology/net-flows-of-scientific-authors-top-publishing-countries-2015-and-2021_ab848773-en).
+
+OECD and EUIPO (European Union Intellectual Property Office). 2016. _Trade in Counterfeit and Pirated Goods._ Paris: OECD Publishing.
+
+OIST (Okinawa Institute of Science and Technology). n.d.a. About OIST. [https://www.oist.jp/about](https://www.oist.jp/about).
+
+OIST. n.d.b. Apply to Research Internship. [https://admissions.oist.jp/apply-research-internship](https://admissions.oist.jp/apply-research-internship).
+
+OIST. n.d.c. Availability of Faculty & Project for Hosting Research Internship Program. [https://admissions.oist.jp/availability-faculty-project-hosting-research-internship-program](https://admissions.oist.jp/availability-faculty-project-hosting-research-internship-program).
+
+OIST. n.d.d. OIST Research Internship Program Description. [https://admissions.oist.jp/oist-research-internship-program-description](https://admissions.oist.jp/oist-research-internship-program-description).
+
+OIST. 2024. Facts and Figures. [https://www.oist.jp/about/facts-and-figures](https://www.oist.jp/about/facts-and-figures).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Oliss, B., C. McFaul, and J. C. Riddick. 2023. _The Global Distribution of STEM Graduates: Which Countries Lead the Way?_ Center for Security and Emerging Technology. [https://cset.georgetown.edu/article/the-global-distribution-of-stem-graduates-which-countries-lead-the-way/](https://cset.georgetown.edu/article/the-global-distribution-of-stem-graduates-which-countries-lead-the-way/).
+
+Olszewski, T. D., J. E. Sabatini, H. L. Kir, G. G. Hazan, and I. Liu. 2024. _Characterizing the Loss of Talent from the U.S. STEM Ecosystem._ Washington, DC: Institute for Defense Analyses. [https://www.ida.org/-/media/feature/publications/C/Ch/Characterizing-the-Loss-of-Talent-From-the-US-STEM-Ecosystem/Product-3001891.pdf](https://www.ida.org/-/media/feature/publications/C/Ch/Characterizing-the-Loss-of-Talent-From-the-US-STEM-Ecosystem/Product-3001891.pdf).
+
+O’Malley, B. 2019. China is ‘systematically stealing US research’ – Senate. _University World News,_ November 22, 2019. [https://www.universityworldnews.com/post.php?story=20191122l45800927](https://www.universityworldnews.com/post.php?story=20191122l45800927).
+
+OPM (U.S. Office of Personnel Management). n.d. Students & Recent Graduates. [https://www.opm.gov/policy-data-oversight/hiring-information/students-recent-graduates/](https://www.opm.gov/policy-data-oversight/hiring-information/students-recent-graduates/).
+
+Osipian, A. L. 2020. Generation 0-100: Russian Universities Fail to Offer World Class Education. _The National Interest,_ October 29, 2020. [https://nationalinterest.org/blog/techland/generation-0-100-russian-universities-fail-offer-world-class-education-171537](https://nationalinterest.org/blog/techland/generation-0-100-russian-universities-fail-offer-world-class-education-171537).
+
+Osnos, E. 2009. The two lives of Qian Xuesen. _The New Yorker,_ November 3, 2009. [https://www.newyorker.com/news/evan-osnos/the-two-lives-of-qian-xuesen](https://www.newyorker.com/news/evan-osnos/the-two-lives-of-qian-xuesen).
+
+OSTP (Office of Science and Technology Policy). 2020. _Enhancing the Security and Integrity of America’s Research Enterprise._ Washington, DC: Office of Science and Technology Policy. [https://trumpwhitehouse.archives.gov/wp-content/uploads/2020/07/Enhancing-the-Security-and-Integrity-of-Americas-Research-Enterprise.pdf](https://trumpwhitehouse.archives.gov/wp-content/uploads/2020/07/Enhancing-the-Security-and-Integrity-of-Americas-Research-Enterprise.pdf).
+
+OTMP (Office of Trade and Manufacturing Policy). 2018. _How China’s Economic Aggression Threatens the Technologies and Intellectual Property of the United States and the World._ The White House, June 18, 2018. [https://trumpwhitehouse.archives.gov/wp-content/uploads/2018/06/FINAL-China-Technology-Report-6.18.18-PDF.pdf](https://trumpwhitehouse.archives.gov/wp-content/uploads/2018/06/FINAL-China-Technology-Report-6.18.18-PDF.pdf).
+
+Overseas Chinese Affairs Office. 2016. Zhongguo “qianrenjihua” yinjin 5206 ming haiwai gaocengci rencai (China’s “Thousand Talents Plan” has attracted 5,208 high-end overseas talents). Last modified January 7, 2016. [http://www.gqb.gov.cn/news/2016/0107/37723.shtml](http://www.gqb.gov.cn/news/2016/0107/37723.shtml).
+
+Papademetriou, D. G., and M. Sumption. June 2011. _Rethinking Points Systems and Employer-Selected Immigration._ Migration Policy Institute. [https://www.migrationpolicy.org/sites/default/files/publications/rethinkingpointssystem.pdf](https://www.migrationpolicy.org/sites/default/files/publications/rethinkingpointssystem.pdf).
+
+Parilla, J., and S. Liu. 2019. Talent-driven economic development: A new vision and agenda for regional and state economies. _Brookings Institution,_ October 15, 2019. [https://www.brookings.edu/articles/talent-driven-economic-development-a-new-vision-and-strategic-agenda-for-regional-and-state-economies/](https://www.brookings.edu/articles/talent-driven-economic-development-a-new-vision-and-strategic-agenda-for-regional-and-state-economies/).
+
+Parishwad, R. 2023. Profile: Srivari Chandrasekhar. March 2, 2023. [https://www.chemistryworld.com/news/india-should-become-the-talent-incubator-for-the-global-south/4017062.article](https://www.chemistryworld.com/news/india-should-become-the-talent-incubator-for-the-global-south/4017062.article).
+
+Parsons, M. D. 2005. Higher education is just another special interest. _The Chronicle of Higher Education,_ February 4, 2005. [https://www.chronicle.com/article/higher-education-is-just-another-special-interest/](https://www.chronicle.com/article/higher-education-is-just-another-special-interest/).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Peng, D. 2023. Shadow agents in China’s talent war help recruit outstanding overseas scientists to boost self-reliance. _South China Morning Post,_ September 4, 2023. [https://www.scmp.com/news/china/science/article/3233108/shadow-agents-chinas-talent-war-help-recruit-outstanding-overseas-scientists-boost-self-reliance](https://www.scmp.com/news/china/science/article/3233108/shadow-agents-chinas-talent-war-help-recruit-outstanding-overseas-scientists-boost-self-reliance).
+
+People’s Republic of China (PRC), 2018, “zhōng gòng zhōng yāng yìn fā 《 shēn huà dǎng hé guó jiā jī gòu gǎi gé fāng àn” (The CPC Central Committee issued the “Plan for Deepening the Reform of Party and State Institutions”). [https://www.gov.cn/zhengce/2018-03/21/content_5276191.htm#1](https://www.gov.cn/zhengce/2018-03/21/content_5276191.htm#1).
+
+Peri, G., K. Shih, C. Sparber, and A. M. Zeitlin. June 2014. _Closing Economic Windows: How H-1B Visa Denials Cost U.S.-Born Tech Workers Jobs and Wages During the Great Recession._ Partnership for a New American Economy. [https://www.immigrationresearch.org/system/files/closing_economic_windows.pdf](https://www.immigrationresearch.org/system/files/closing_economic_windows.pdf).
+
+Perry, N. 2023. New Zealand immigration hits an all-time high as movement surges following pandemic lull. Associated Press, _World News,_ October 11, 2023. [https://apnews.com/article/new-zealand-immigration-jobs-housing-election-8c896fd6ffd4c225c9076c7d6ca03fdc](https://apnews.com/article/new-zealand-immigration-jobs-housing-election-8c896fd6ffd4c225c9076c7d6ca03fdc).
+
+Perry, T. S. 2011. Morris Chang: Foundry father. _IEEE Spectrum,_ April 19, 2011. [https://spectrum.ieee.org/morris-chang-foundry-father](https://spectrum.ieee.org/morris-chang-foundry-father).
+
+Poldin, O., N. Matveeva, I. Sterligov, and M. Yudkevich. 2017. Publication activities of Russian universities: The effects of Project 5-100. _Educational Studies Moscow._[https://econpapers.repec.org/RePEc:nos:voprob:2017:i:2:p:5-100](https://econpapers.repec.org/RePEc:nos:voprob:2017:i:2:p:5-100).
+
+Pop, A. 2022. Tuition Fees and International Scholarships in Sweden. _Studyportals,_ January 13, 2022. [https://www.mastersportal.com/articles/356/tuition-fees-and-international-scholarships-in-sweden.html](https://www.mastersportal.com/articles/356/tuition-fees-and-international-scholarships-in-sweden.html).
+
+Prabhakar, A. 2024a. _Guidelines for federal research agencies regarding foreign talent recruitment programs. Memorandum for the Heads of Federal Research Agencies, February 14, 2024._ Washington, DC: Executive Office of the President. [https://www.whitehouse.gov/wp-content/uploads/2024/02/OSTP-Foreign-Talent-Recruitment-Program-Guidelines.pdf](https://www.whitehouse.gov/wp-content/uploads/2024/02/OSTP-Foreign-Talent-Recruitment-Program-Guidelines.pdf).
+
+Prabhakar, A. 2024b. _Guidelines for research security programs at covered institutions. Memorandum for the Heads of Federal Research Agencies,_ July 9, 2024. Washington, DC: Executive Office of the President, Office of Science and Technology Policy. [https://www.whitehouse.gov/wp-content/uploads/2024/07/OSTP-RSP-Guidelines-Memo.pdf](https://www.whitehouse.gov/wp-content/uploads/2024/07/OSTP-RSP-Guidelines-Memo.pdf).
+
+Prasso, S. 2024. Expulsions of Chinese students spread confusion from Yale to UVA. _Bloomberg,_ May 29, 2024. [https://www.bloomberg.com/news/features/2024-05-29/expulsions-of-chinese-students-spread-confusion-from-yale-to-uva](https://www.bloomberg.com/news/features/2024-05-29/expulsions-of-chinese-students-spread-confusion-from-yale-to-uva).
+
+PRC Ministry of Education. 2007. “Jiaoyu bu guanyu jinyibu jiaqiang yinjin haiwai youxiu liuxue rencai gongzuo de rougan yijian” (Some opinions from the Ministry of Education about progressively strengthening the work on attracting high quality overseas talent). _Jiao wai liu_ (Ministry of Education Foreign Students’ Office), No. 8 (2007), found in _Zhong hong shujuku,_ April 2, 2007.
+
+PRC Ministry of Education. 2019. _Statistical Report on International Students in China for 2018._ (Beijing). [http://en.moe.gov.cn/documents/reports/201904/t20190418_378692.html](http://en.moe.gov.cn/documents/reports/201904/t20190418_378692.html).
+
+Priestap, B. 2018. _China’s Non-Traditional Espionage Against the United States: The Threat and Potential Policy Responses._ FBI Statement before the U.S. Senate Judiciary Committee. December 12, 2018. [https://www.fbi.gov/news/testimony/chinas-non-traditional-espionage-against-the-united-states](https://www.fbi.gov/news/testimony/chinas-non-traditional-espionage-against-the-united-states).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Priority 2030. n.d. Priority 2030. Ministry of Science and Higher Education of the Russian Federation. [https://priority2030.ru/en/](https://priority2030.ru/en/).
+
+Puglisi, A. B. 2021. Chinese students, scholarship, and US innovation. Chapter 16 in _China’s Quest for Foreign Technology: Beyond Espionage,_ edited by W. C. Hannas and D. K. Tatlow. New York, NY: Routledge.
+
+Puko, T., and K. O’Keeffe. 2019a. Energy Department to ban foreign talent-recruitment programs. _Wall Street Journal,_ February 1, 2019. [https://www.wsj.com/articles/energy-department-to-ban-foreign-talent-recruitment-programs-11549052674](https://www.wsj.com/articles/energy-department-to-ban-foreign-talent-recruitment-programs-11549052674).
+
+Puko, T., and K. O’Keeffe. 2019b. U.S. targets efforts by China, others to recruit government scientists. _Wall Street Journal,_ June 10, 2019. [https://www.wsj.com/articles/energy-department-bans-personnel-from-foreign-talent-recruitment-programs-11560182546](https://www.wsj.com/articles/energy-department-bans-personnel-from-foreign-talent-recruitment-programs-11560182546).
+
+Puri, K. 2020. Qian Xuesen: The man the US deported – who then helped China into space. _BBC_, October 26, 2020. [https://www.bbc.com/news/stories-54695598](https://www.bbc.com/news/stories-54695598).
+
+Qi, J. 2021a. China’s international higher education policies 2010–2019: Multiple logics and HEI responses. _Higher Education_ 83: 695–710. [https://link.springer.com/article/10.1007/s10734-021-00695-7](https://link.springer.com/article/10.1007/s10734-021-00695-7).
+
+Qi, J. 2021b. How China has been transforming international education to become a leading host of students. _The Conversation,_ May 12, 2021. [https://theconversation.com/how-china-has-been-transforming-international-education-to-become-a-leading-host-of-students-157241](https://theconversation.com/how-china-has-been-transforming-international-education-to-become-a-leading-host-of-students-157241).
+
+Qian, Z., and S. Elsinga. 2015. Employing foreign nationals in China: Visa procedures. _China Briefing,_ January 14, 2015. [https://www.china-briefing.com/news/employing-foreign-nationals-china-visa-procedures/](https://www.china-briefing.com/news/employing-foreign-nationals-china-visa-procedures/).
+
+Qin, A. 2023. Florida law chills Chinese student recruitment. _New York Times,_ December 15, 2023, updated December 22, 2023. [https://www.nytimes.com/2023/12/15/us/florida-law-chills-chinese-student-recruitment.html](https://www.nytimes.com/2023/12/15/us/florida-law-chills-chinese-student-recruitment.html).
+
+Qin, A., and P. Mazzei. 2024. When buying a home is treated as a national security threat. _New York Times,_ May 6, 2024. [https://www.nytimes.com/2024/05/06/us/florida-land-law-chinese-homes.html](https://www.nytimes.com/2024/05/06/us/florida-land-law-chinese-homes.html).
+
+Qin, J. Y. 2019. Forced technology transfer and the US-China trade war: Implications for international economic law. _Journal of International Economic Law:_ 743–762. [https://doi.org/10.1093/jiel/jgz037](https://doi.org/10.1093/jiel/jgz037).
+
+Qiu, J. 2009. Qian Xuesen (1911–2009). _Nature_ 462: 735. [https://doi.org/https](https://doi.org/https)://doi.[org/10.1038/462735a](http://org/10.1038/462735a).
+
+QS World University Rankings. 2024. QS World University Rankings: Top Global Universities. Quacquarelli Symonds Limited 1994. [https://www.topuniversities.com/qs-world-university-rankings](https://www.topuniversities.com/qs-world-university-rankings).
+
+Quinn, R. 2023. Chinese scientists increasingly leaving U.S. _Inside Higher Ed,_ July 05, 2023. [https://www.insidehighered.com/news/faculty-issues/research/2023/07/05/study-chinese-scientists-increasingly-leaving-us](https://www.insidehighered.com/news/faculty-issues/research/2023/07/05/study-chinese-scientists-increasingly-leaving-us).
+
+Raimondo, G. M., 26 July 2021, Secretary Raimondo Lauds Renewed Commitment to Attract International Students and Bolster U.S. Education Exports. U.S. Department of Commerce. [https://www.commerce.gov/news/press-releases/2021/07/secretary-raimondo-lauds-renewed-commitment-attract-international](https://www.commerce.gov/news/press-releases/2021/07/secretary-raimondo-lauds-renewed-commitment-attract-international).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Rampell, C. 2022. On STEM, give Biden credit for his efforts to repair the national reputation that Trump trashed. _Washington Post,_ January 24, 2022. [https://www.washingtonpost.com/opinions/2022/01/24/stem-give-biden-credit-his-efforts-repair-national-reputation-that-trump-trashed/](https://www.washingtonpost.com/opinions/2022/01/24/stem-give-biden-credit-his-efforts-repair-national-reputation-that-trump-trashed/).
+
+Razdan, K. 2024. FBI official admits mistakes, vows to improve relations with Asian-American communities. _South China Morning Post,_ June 11, 2024. [https://www.scmp.com/news/china/article/3266087/fbi-official-admits-mistakes-vows-improve-relations-asian-american-communities](https://www.scmp.com/news/china/article/3266087/fbi-official-admits-mistakes-vows-improve-relations-asian-american-communities).
+
+Redden, E. 2018. The Chinese student threat? _Inside Higher Ed,_ February 14, 2018. [https://www.insidehighered.com/news/2018/02/15/fbi-director-testifies-chinese-students-and-intelligence-threats](https://www.insidehighered.com/news/2018/02/15/fbi-director-testifies-chinese-students-and-intelligence-threats).
+
+Redden, E. 2019. Science vs. security. _Inside Higher Ed,_ April 15, 2019. [https://stg.insidehighered.com/news/2019/04/16/federal-granting-agencies-and-lawmakers-step-scrutiny-foreign-research](https://stg.insidehighered.com/news/2019/04/16/federal-granting-agencies-and-lawmakers-step-scrutiny-foreign-research).
+
+Redden, E. 2021. A retreat from China collaborations in the face of U.S. scrutiny. _Inside Higher Ed,_ October 28, 2021. [https://www.insidehighered.com/news/2021/10/29/survey-finds-chilling-effect-china-initiative](https://www.insidehighered.com/news/2021/10/29/survey-finds-chilling-effect-china-initiative).
+
+Reed, D. A. 2024. Testimony of Daniel A. Reed, PhD before the Research and Technology Subcommittee, May 16, 2024. U.S. House of Representatives Committee on Science, Space, and Technology. [https://democrats-science.house.gov/imo/media/doc/Reed](https://democrats-science.house.gov/imo/media/doc/Reed%20Written%20Testimony%20May%202024.pdf).
+
+Reed, D., and D. Gil. 2024. It’s time for a U.S. STEM talent strategy to compete with China. _RealClearDefense,_ April 9, 2024. [https://www.realcleardefense.com/articles/2024/04/09/its_time_for_a_us_stem_talent_strategy_to_compete_with_china_1023858.html](https://www.realcleardefense.com/articles/2024/04/09/its_time_for_a_us_stem_talent_strategy_to_compete_with_china_1023858.html).
+
+Reif, L. R. 2020. Symposium at the National Academies: “The Endless Frontier: The Next 75 Years in Science” (speech), February 26, 2020. Massachusetts Institute of Technology. [https://reif.mit.edu/speeches-writing/symposium-national-academies-endless-frontier-next-75-years-in-science](https://reif.mit.edu/speeches-writing/symposium-national-academies-endless-frontier-next-75-years-in-science).
+
+Republic of Korea Ministry of Justice. 2024. “Visa Types by Purpose of Entry,” Korea Visa Portal. [https://www.visa.go.kr/openPage.do?MENU_ID=10102](https://www.visa.go.kr/openPage.do?MENU_ID=10102).
+
+République Française. 2023a. “French Tech Visa,” French Tech Mission. Last modified October 3, 2023. [https://lafrenchtech.gouv.fr/en/come-work-in-france/french-tech-visa/](https://lafrenchtech.gouv.fr/en/come-work-in-france/french-tech-visa/).
+
+République Française. 2023b. Talent Passport–Employee of a Young Innovative Company (JEI). Last modified May 1, 2023. [https://www.welcometofrance.com/en/fiche/talent-passport-jei](https://www.welcometofrance.com/en/fiche/talent-passport-jei).
+
+République Française. 2024a. Talented Passport: Multi-year Residence Card of a Foreigner in France. Last modified January 1, 2024. [https://www.service-public.fr/particuliers/vosdroits/F16922?lang=en](https://www.service-public.fr/particuliers/vosdroits/F16922?lang=en).
+
+République Française. 2024b. Young Innovative Company, Innovative Growth or University (JEI - JEIC - GAME). Taxation, Legal and Administrative Information Directorate, Ministry of Economy. Last modified January 1, 2024. [https://entreprendre.service-public.fr/vosdroits/F31188?lang=en](https://entreprendre.service-public.fr/vosdroits/F31188?lang=en).
+
+RESAVER. n.d. RESAVER. [https://www.resaver.eu/](https://www.resaver.eu/).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Reuters. 2023. Italy to charge foreigners 2,000 euros a year for health service. October 17, 2023. [https://www.reuters.com/world/europe/italy-charge-foreigners-2000-euros-year-health-service-2023-10-16/](https://www.reuters.com/world/europe/italy-charge-foreigners-2000-euros-year-health-service-2023-10-16/).
+
+Rezaei, S., and M. R. Mouritzen. 2021. Talent flowscapes and circular mobility in a Belt and Road (BRI) perspective - Global talent flows revisited. _Asian Journal of Social Science_ 49(4): 188–197. [https://doi.org/10.1016/j.ajss.2021.09.005](https://doi.org/10.1016/j.ajss.2021.09.005).
+
+Rich, M., and H. Hida. 2023. Japan wants a stronger military. Can it find enough troops? _New York Times,_ December 13, 2023. [https://www.nytimes.com/2023/12/13/world/asia/japan-military.html](https://www.nytimes.com/2023/12/13/world/asia/japan-military.html).
+
+Richburg, K. B. 2024. American students have soured on China. That’s bad for the U.S. _Washington Post,_ May 22, 2024. [https://www.washingtonpost.com/opinions/2024/05/22/china-students-exchanges-studies-mandarin-language/](https://www.washingtonpost.com/opinions/2024/05/22/china-students-exchanges-studies-mandarin-language/).
+
+Richter, E. L. 2022. Skilled migration to China and the BRI. Munk School of Global Affairs & Public Policy, University of Toronto. April 13, 2022. [https://munkschool.utoronto.ca/belt-road/research/skilled-migration-china-and-bri](https://munkschool.utoronto.ca/belt-road/research/skilled-migration-china-and-bri).
+
+Rim, C. 2022. Decline In Chinese student visas paints a bigger picture of U.S.-China relations. _Forbes,_ October 19, 2022. [https://www.forbes.com/sites/christopherrim/2022/10/19/decline-in-chinese-student-visas-paints-a-bigger-picture-of-us-china-relations/](https://www.forbes.com/sites/christopherrim/2022/10/19/decline-in-chinese-student-visas-paints-a-bigger-picture-of-us-china-relations/).
+
+Roach, S. S. 2019. America’s false narrative on China. _Project Syndicate,_ April 26, 2019. [https://www.project-syndicate.org/commentary/america-false-china-narrative-by-stephen-s-roach-2019-04](https://www.project-syndicate.org/commentary/america-false-china-narrative-by-stephen-s-roach-2019-04).
+
+Ronald Reagan Institute. 2019. _The Contest for Innovation: Strengthening America’s National Security Innovation Base in an Era of Strategic Competition._[https://www.reaganfoundation.org/media/355297/the_contest_for_innovation_report.pdf](https://www.reaganfoundation.org/media/355297/the_contest_for_innovation_report.pdf).
+
+Rosenbaum, E. 2019. 1 in 5 corporations say China has stolen their IP within the last year: CNBC CFO survey. CNBC, _The Bottom Line,_ March 1, 2019. [https://www.cnbc.com/2019/02/28/1-in-5-companies-say-china-stole-their-ip-within-the-last-year-cnbc.html](https://www.cnbc.com/2019/02/28/1-in-5-companies-say-china-stole-their-ip-within-the-last-year-cnbc.html).
+
+Rosenthal, R. 2021. The STEM graduate system is broken. Here’s how to fix it. _Bloomberg Opinion,_ March 10, 2021. [https://www.bloomberg.com/graphics/2021-opinion-optional-practical-training-problems-stem-graduates-deserve-better-jobs-opportunities/](https://www.bloomberg.com/graphics/2021-opinion-optional-practical-training-problems-stem-graduates-deserve-better-jobs-opportunities/).
+
+Rovito, S. M., D. Kaushik, and S. D. Aggarwal. 2021. The impact of international scientists, engineers, and students on U.S. research outputs and global competitiveness. _MIT Science Policy Review_ 2: 15–25. [https://sciencepolicyreview.org/2021/08/impact-international-scientists-engineers-students-us-research-output/](https://sciencepolicyreview.org/2021/08/impact-international-scientists-engineers-students-us-research-output/).
+
+Russel, D. R., and B. Berger. 2019. _Navigating the Belt and Road Initiative._ New York: Asia Society Policy Institute. [https://asiasociety.org/sites/default/files/2019-06/Navigating%20the%20Belt%20and%20Road%20Initiative_2.pdf](https://asiasociety.org/sites/default/files/2019-06/Navigating%20the%20Belt%20and%20Road%20Initiative_2.pdf).
+
+Russian Ministry of Science and Higher Education. 2021a. Praviel’stvo Rossii utvdilo edinuiu programmu podderzhzhi rossiĭskikh universitetv “PRIORITET - 2030” (The Russian government has approved a unified program to support Russian universities, PRIORITY-2030), [https://www.minobrnauki.gov.ru/press-center/news/novosti-ministerstva/34099/](https://www.minobrnauki.gov.ru/press-center/news/novosti-ministerstva/34099/).
+
+Russian Ministry of Science and Higher Education. 2021b. 106 rossiĭkh universitetv voshli v programmu “Prioritet 2030” (106 Russian universities included in the Priority 2030 program), [https://minobrnauki.gov.ru/press-center/news/novosti-ministerstva/40482/](https://minobrnauki.gov.ru/press-center/news/novosti-ministerstva/40482/).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+SAFEA (PRC State Administration of Foreign Experts Affairs). 2018. _2017 Budget of the Former State Administration of Foreign Experts Affairs._ Translated by Center for Security and Emerging Technology. [https://cset.georgetown.edu/publication/2017-budget-of-the-former-state-administration-of-foreign-experts-affairs/](https://cset.georgetown.edu/publication/2017-budget-of-the-former-state-administration-of-foreign-experts-affairs/).
+
+Salonen, S., and P. Lehto. n.d. Talent Boost. Ministry of Economic Affairs and Employment of Finland. [https://tem.fi/en/talent-boost-en](https://tem.fi/en/talent-boost-en).
+
+Salzman, H. 2007. _Globalization of R&D and Innovation: Implications for U.S. STEM Workforce and Policy._ The Urban Institute (Submitted to the Subcommittee on Technology and Innovation of the Committee on Science and Technology U.S. House of Representatives). November 6, 2007. [https://www.urban.org/sites/default/files/publication/47106/901129-Globalization-of-R-amp-D-and-Innovation-Implications-for-U-S-STEM-Workforce-and-Policy.PDF](https://www.urban.org/sites/default/files/publication/47106/901129-Globalization-of-R-amp-D-and-Innovation-Implications-for-U-S-STEM-Workforce-and-Policy.PDF).
+
+Sanchis-Guarner, R. 2023. Decomposing the impact of immigration on house prices. _Regional Science and Urban Economics_ 100. [https://doi.org/10.1016/j.regsciurbeco.2023.103893](https://doi.org/10.1016/j.regsciurbeco.2023.103893).
+
+Sandalow, D. 2010. The U.S. and China – Advancing clean energy research through cooperation. _The White House_ (blog), September 3, 2010. [https://obamawhitehouse.archives.gov/blog/2010/09/03/us-and-china-advancing-clean-energy-research-through-cooperation](https://obamawhitehouse.archives.gov/blog/2010/09/03/us-and-china-advancing-clean-energy-research-through-cooperation).
+
+Sanders, M. 2009. STEM, STEM Education, STEMmania. _The Technology Teacher_ 68: 20-26. [https://www.teachmeteamwork.com/files/sanders.istem.ed.ttt.istem.ed.def.pdf](https://www.teachmeteamwork.com/files/sanders.istem.ed.ttt.istem.ed.def.pdf).
+
+Savage, N. 2024a. FBI asks scientists for trust in taking anti-Asian bias seriously. _Nature,_ June 7, 2024, correction June 11, 2024. [https://www.nature.com/articles/d41586-024-01704-2](https://www.nature.com/articles/d41586-024-01704-2).
+
+Savage, T. 2024b. “Survey of Current U.S. Programs to Attract and Retain Talent.” Paper commissioned by the International Talent Programs Consensus Study Committee. Washington, DC: National Academies of Sciences, Engineering, and Medicine.
+
+Schaubroeck, T. 2022. Research funding: dial back the competition. _Nature_ 610: 257, October 11, 2022. [https://www.nature.com/articles/d41586-022-03179-5](https://www.nature.com/articles/d41586-022-03179-5).
+
+Schmidt, E., J. Cohen, L. Economy, R. Fontaine, A. Garg, M. Giustina, K. Harris, C. Kirchoff, F. Long, J. Matheny, G. Rieschel, A. Wang, and Z. Weinberg. 2020. _Asymmetric Competition: A Strategy for China & Technology._ China Strategy Group. [https://s3.documentcloud.org/documents/20463382/final-memo-china-strategy-group-axios-1.pdf](https://s3.documentcloud.org/documents/20463382/final-memo-china-strategy-group-axios-1.pdf).
+
+Schneider, B., J. Alexander, and P. Thomas, 2023, _Publications Output: U.S. Trends and International Comparisons._ Science and Engineering Indicators. Alexandria, VA: National Center for Science and Engineering Statistics. [https://ncses.nsf.gov/pubs/nsb202333](https://ncses.nsf.gov/pubs/nsb202333).
+
+Schulmann, P., and Z. C. Ye. 2017. China: Can the world’s top source for international students become its leading destination? _World Education News + Reviews,_ August 16, 2017. [https://wenr.wes.org/2017/08/china-can-the-worlds-top-source-for-international-students-become-its-leading-destination](https://wenr.wes.org/2017/08/china-can-the-worlds-top-source-for-international-students-become-its-leading-destination).
+
+SCSP (Special Competitive Studies Project). 2022. _Economy Panel Interim Panel Report: Restoring the Sources of Techno-Economic Advantage._[https://www.scsp.ai/wp-content/uploads/2022/11/Economy-Panel-IPR-FINAL-Version.pdf](https://www.scsp.ai/wp-content/uploads/2022/11/Economy-Panel-IPR-FINAL-Version.pdf).
+
+SCSP. 2024. _Vision for Competitiveness: Mid-Decade Opportunities for Strategic Victory._[https://www.scsp.ai/wp-content/uploads/2023/04/Vision-for-Competitiveness-1-1.pdf](https://www.scsp.ai/wp-content/uploads/2023/04/Vision-for-Competitiveness-1-1.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Sega, R. M. 2005. “Defense Research and Engineering Update.” Paper presented at the 6th Annual Science and Engineering Technology Conference, Charleston, South Carolina, April 19–21, 2005. [https://ndia.dtic.mil/wp-content/uploads/2005/science/sega.ppt](https://ndia.dtic.mil/wp-content/uploads/2005/science/sega.ppt).
+
+Semuels, A. 2017. Why does Sweden have so many start-ups? _The Atlantic,_ September 28, 2017. [https://www.theatlantic.com/business/archive/2017/09/sweden-startups/541413/](https://www.theatlantic.com/business/archive/2017/09/sweden-startups/541413/).
+
+Shachar, A., and R. Hirschl. 2013. Recruiting “Super Talent:” The new world of selective migration regimes. _Indiana Journal of Global Legal Studies_ 20(1). [https://www.repository.law.indiana.edu/cgi/viewcontent.cgi?article=1499&context=ijgls](https://www.repository.law.indiana.edu/cgi/viewcontent.cgi?article=1499&context=ijgls).
+
+Shanghai Ranking. 2023. 2023 Academic Ranking of World Universities. Shanghai Ranking Consultancy. [https://www.shanghairanking.com/rankings/arwu/2023.html](https://www.shanghairanking.com/rankings/arwu/2023.html).
+
+Shao, H. 2014. Cash heifers are here: The luxurious spending habits of overseas Chinese students. _Forbes,_ January 17, 2014; updated January 21, 2014. [https://www.forbes.com/sites/hengshao/2014/01/17/cash-heifers-are-here-the-luxurious-spending-habits-of-overseas-chinese-students/](https://www.forbes.com/sites/hengshao/2014/01/17/cash-heifers-are-here-the-luxurious-spending-habits-of-overseas-chinese-students/).
+
+Shearing, H. 2024. Visa for overseas graduates should stay - report. _BBC,_ May 11, 2024. [https://www.bbc.com/news/articles/cp9ggmk1zgko](https://www.bbc.com/news/articles/cp9ggmk1zgko).
+
+Sherman, A., D. Trisi, C. Stone, S. Gonzales, and S. Parrott. 2019. _Immigrants Contribute Greatly to U.S. Economy, Despite Administration’s “Public Charge” Rule Rationale._ Center on Budget and Policy Priorities, August 15, 2019. [https://www.cbpp.org/research/immigrants-contribute-greatly-to-us-economy-despite-administrations-public-charge-rule](https://www.cbpp.org/research/immigrants-contribute-greatly-to-us-economy-despite-administrations-public-charge-rule).
+
+Shi, D., W. Liu, and Y. Wang. 2023. Has China’s Young Thousand Talents program been successful in recruiting and nurturing top-caliber scientists? _Science_ 379(6627): 62-65. [https://www.science.org/doi/full/10.1126/science.abq1218](https://www.science.org/doi/full/10.1126/science.abq1218).
+
+Shorelight. 2024. Canada Restricts Student Visas to 35% Fewer than Last Year. Last updated February 29, 2024. [https://shorelight.com/student-stories/canada-restricts-student-visas-to-35-percent-fewer-than-last-year/](https://shorelight.com/student-stories/canada-restricts-student-visas-to-35-percent-fewer-than-last-year/).
+
+Silver, A. 2020. Scientists in China say US government crackdown is harming collaborations. _Nature_ 583: 341–342. [https://www.nature.com/articles/d41586-020-02015-y](https://www.nature.com/articles/d41586-020-02015-y).
+
+Silver, A., J. Tollefson, and E. Gibney. 2019. How US-China political tensions are affecting science. _Nature,_ April 8, 2019, last updated April 23, 2019. [https://www.nature.com/articles/d41586-019-01270-y](https://www.nature.com/articles/d41586-019-01270-y).
+
+Simon, D. 2023. “The Training, Education, and Deployment of Semiconductor/IC Talent in China.” Testimony to the U.S.-China Economic and Security Review Commission, February 24, 2023. [https://www.uscc.gov/sites/default/files/2023-02/Denis_Simon_Testimony.pdf](https://www.uscc.gov/sites/default/files/2023-02/Denis_Simon_Testimony.pdf).
+
+Simon, D. F., and C. Cao. 2009a. China’s future: Have talent, will thrive. _Issues in Science and Technology_ 26(1). [https://issues.org/simon/](https://issues.org/simon/).
+
+Simon, D. F., and C. Cao. 2009b. _China’s Emerging Technological Edge: Assessing the Role of High-End Talent._ New York, NY: Cambridge University Press.
+
+Sinaiee, M. 2024. Iran’s emigration surge: Young professionals lose hope in reforms. _IRAN International,_ April 7, 2024. [https://www.iranintl.com/en/202404041880](https://www.iranintl.com/en/202404041880).
+
+Singapore A*STAR (Agency for Science, Technology and Research). 2024. Singapore International Graduate Award (SINGA). Scholarships, Ministry of Trade and Industry, Singapore. Last modified March 19, 2024. [https://www.a-star.edu.sg/Scholarships/for-graduate-studies/singapore-international-graduate-award-singa](https://www.a-star.edu.sg/Scholarships/for-graduate-studies/singapore-international-graduate-award-singa).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Singapore Economic Development Board. 2024. Hiring Talent in Singapore. Ministry of Trade and Industry, Singapore. Last modified March 25, 2024. [https://www.edb.gov.sg/en/how-we-help/hiring-talent-in-singapore.html](https://www.edb.gov.sg/en/how-we-help/hiring-talent-in-singapore.html).
+
+Singapore Immigration and Checkpoints Authority. 2024. “Becoming a Student’s Pass Holder,” Reside, Study and Work in Singapore. Singapore Ministry of Home Affairs. Last modified March 2, 2024. [https://www.ica.gov.sg/reside/STP/apply](https://www.ica.gov.sg/reside/STP/apply).
+
+Singapore Ministry of Education. 2024. “ASEAN Scholarship,” Awards and Scholarships. Last modified April 1, 2024. [https://www.moe.gov.sg/financial-matters/awards-scholarships/asean-scholarship](https://www.moe.gov.sg/financial-matters/awards-scholarships/asean-scholarship).
+
+Singapore Ministry of Manpower. 2024. Foreign Workforce Numbers. Last modified March 14, 2024. [https://www.mom.gov.sg/documents-and-publications/foreign-workforce-numbers](https://www.mom.gov.sg/documents-and-publications/foreign-workforce-numbers).
+
+Singer, C. R. 2022. Canada work permit: Global Talent Stream. _Immigration.ca,_ December 21, 2022. [https://www.immigration.ca/canada-work-permit-global-talent-stream/](https://www.immigration.ca/canada-work-permit-global-talent-stream/).
+
+Singer, C. R. 2024. Cap on Canada study permits to mean 40% fewer international students. _Immigration.ca,_ March 19, 2024. [https://www.immigration.ca/cap-on-canada-study-permits-to-mean-40-fewer-international-students/](https://www.immigration.ca/cap-on-canada-study-permits-to-mean-40-fewer-international-students/).
+
+Singh, J. N. 2023. Why so many of the world’s students want to go to Chinese universities. _openDemocracy,_ February 1, 2023. [https://www.opendemocracy.net/en/podcasts/podcast-borders-belonging/china-university-student-international-foreign/](https://www.opendemocracy.net/en/podcasts/podcast-borders-belonging/china-university-student-international-foreign/).
+
+Singha, R. 2024. “Study in Finland,” Shiksha Study Abroad. Last modified January 11. 2024. [https://www.shiksha.com/studyabroad/finland](https://www.shiksha.com/studyabroad/finland).
+
+Skoltech (Skolkovo Institute of Science and Technology). n.d. “About | Сколтех**“.**[https://new.skoltech.ru/en/about](https://new.skoltech.ru/en/about).
+
+Skrentny, J. D. 2023. _Wasted Education: How We Fail Our Graduates in Science, Technology, Engineering, and Math._ Chicago, IL: University of Chicago Press.
+
+SMART Scholarship. n.d. “Science, Mathematics, and Research for Transformation (SMART) Scholarship,” Scholarship-for-Service Program. U.S. Department of Defense. [https://www.smartscholarship.org/smart/en](https://www.smartscholarship.org/smart/en).
+
+Smith, K. 1998. The role of scientists in normalizing U.S.-China relations: 1965–1979. _Annals of the New York Academy of Sciences_ 866(1): 114–136. [https://nyaspubs.onlinelibrary.wiley.com/doi/10.1111/j.1749-6632.1998.tb09149.x](https://nyaspubs.onlinelibrary.wiley.com/doi/10.1111/j.1749-6632.1998.tb09149.x).
+
+Smith, M., J. Gollan, and A. Sambamurthy. 2014. Job brokers steal wages and entrap Indian tech workers in US. The Center for Investigative Reporting. _The Guardian,_ October 28, 2014. [https://www.theguardian.com/us-news/2014/oct/28/-sp-jobs-brokers-entrap-indian-tech-workers](https://www.theguardian.com/us-news/2014/oct/28/-sp-jobs-brokers-entrap-indian-tech-workers).
+
+Smith, T., B. Mosley, K. Eberle-Sudré, M. Hourihan, D. Parkes, S. Rovito, A. Scott, S. Shetty, and K. Steen. 2019. _Benchmarks 2019: Second Place America? Increasing Challenges to U.S. Scientific Leadership._ The Task Force on American Innovation. [https://www.innovationtaskforce.org/wp-content/uploads/2019/05/Benchmarks-2019-SPA-Final4.pdf](https://www.innovationtaskforce.org/wp-content/uploads/2019/05/Benchmarks-2019-SPA-Final4.pdf).
+
+Snyder, T. D., and C. M. Hoffman. 1992. _Digest of Education Statistics 1992._ National Center for Education Statistics. [https://nces.ed.gov/pubs92/92097.pdf](https://nces.ed.gov/pubs92/92097.pdf).
+
+Spear, A. 2021. Serve the motherland while working overseas. [Chapter 2](https://www.nationalacademies.org/read/27787/chapter/4#19) in _China’s Quest for Foreign Technology: Beyond Espionage,_ edited by W. C. Hannas and D. K. Tatlow. New York: Routledge.
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+_St. Louis Post-Dispatch._ 1955. US deporting rocket expert. September 13, 1955, p. 13. [https://www.newspapers.com/newspage/139758006/](https://www.newspapers.com/newspage/139758006/).
+
+State Council Information Office of the People’s Republic of China. 2023. The Belt and Road Initiative: A Key Pillar of the Global Community of Shared Future. [http://www.beltandroadforum.org/english/n101/2023/1010/c124-895.html](http://www.beltandroadforum.org/english/n101/2023/1010/c124-895.html).
+
+Statista. 2023. Distribution of the Population in Japan in 1950 and 2022 with a Forecast for 2070, by Age Group. [https://www.statista.com/statistics/606542/japan-age-distribution/](https://www.statista.com/statistics/606542/japan-age-distribution/).
+
+Steele, J. 2015. Book chronicles 218 immigrants who boosted U.S. space program. _University of Alabama in Huntsville,_ March 25, 2015. [https://www.uah.edu/news/people/book-chronicles-218-immigrants-who-boosted-us-space-program](https://www.uah.edu/news/people/book-chronicles-218-immigrants-who-boosted-us-space-program).
+
+Stephan, P., G. Scellato, and C. Franzoni. 2015. International competition for PhDs and postdoctoral scholars: What does (and does not) matter. _Innovation Policy and the Economy_ 15(1): 73–113. [https://doi.org/10.1086/680060](https://doi.org/10.1086/680060).
+
+Stephan, P., C. Franzoni, and G. Scellato. 2016. Global competition for scientific talent: evidence from location decisions of PhDs and postdocs in 16 countries. _Industrial and Corporate Change_ 25(3). [https://academic.oup.com/icc/article-abstract/25/3/457/2357232](https://academic.oup.com/icc/article-abstract/25/3/457/2357232).
+
+Stephan, P. E., and S. G. Levin. 2001. Exceptional contributions to US science by the foreign-born and foreign-educated. _Population Research and Policy Review_ 20: 59–79. [https://link.springer.com/article/10.1023/A:1010682017950](https://link.springer.com/article/10.1023/A:1010682017950).
+
+Stoff, J. 2021. China’s talent programs. [Chapter 3](https://www.nationalacademies.org/read/27787/chapter/5#57) in _China’s Quest for Foreign Technology: Beyond Espionage,_ edited by W. C. Hannas and D. K. Tatlow. New York, NY: Routledge.
+
+Stoff, J. 2022. “Reassessing Threats to US Innovation Posed by China and Implications for Safeguarding Future Supply Chains.” Testimony of Jeffrey Stoff before the U.S.-China Economic and Security Review Commission, Hearing on “U.S.—China Competition in Global Supply Chains,” June 9, 2022. Redcliff Enterprises. [https://www.uscc.gov/sites/default/files/2022-06/Jeff_Stoff_Testimony.pdf](https://www.uscc.gov/sites/default/files/2022-06/Jeff_Stoff_Testimony.pdf).
+
+Strider. 2022. _The Los Alamos Club._ Strider Technologies, Inc. [https://content.striderintel.com/wp-content/uploads/2022/09/Strider-Los-Alamos-Report.pdf](https://content.striderintel.com/wp-content/uploads/2022/09/Strider-Los-Alamos-Report.pdf).
+
+Study Australia. n.d. “Vocational Education and Training (VET),” Australian Government Trade and Investment Commission. [https://www.studyaustralia.gov.au/en/plan-your-studies/vocational-education-and-training](https://www.studyaustralia.gov.au/en/plan-your-studies/vocational-education-and-training).
+
+Sturtevant, D. J. 2008. “America Disrupted: Dynamics of the Technical Capability Crisis.” ESD-WP-2008-21, Working Paper Series. MIT Engineering Systems Division. [https://dspace.mit.edu/bitstream/handle/1721.1/102876/esd-wp-2008-21.pdf](https://dspace.mit.edu/bitstream/handle/1721.1/102876/esd-wp-2008-21.pdf).
+
+Suárez-Orozco, C. 2023. _Recognizing Immigrant-Origin Students in Higher Education._ Harvard University Graduate School of Education. [https://immigrationinitiative.harvard.edu/wp-content/uploads/2023/11/NOVEMBER-2023_RECOGNIZING-IMMIGRANT-ORIGIN-STUDENTS-IN-HIGHER-EDUCATION_final-for-website.pdf](https://immigrationinitiative.harvard.edu/wp-content/uploads/2023/11/NOVEMBER-2023_RECOGNIZING-IMMIGRANT-ORIGIN-STUDENTS-IN-HIGHER-EDUCATION_final-for-website.pdf).
+
+Sumption, M. 2015. Points-based immigration. In _Encyclopedia of Migration._ Springer. [https://link.springer.com/referenceworkentry/10.1007/978-94-007-6179-7_65-2](https://link.springer.com/referenceworkentry/10.1007/978-94-007-6179-7_65-2).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Sun, X. 1995. “Behavioral Differences in the Classroom: U.S. University Teachers and Chinese University Teachers.” Master’s Thesis, Speech Communication, Portland State University. [https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=5993&context=open_access_etds](https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=5993&context=open_access_etds).
+
+Sutherland, P., and M. Chakrabarti. 2023. Why so many U.S.-educated foreign students don’t stay for work. WBUR, _On Point,_ June 26, 2023. [https://www.wbur.org/onpoint/2023/06/26/why-so-many-u-s-educated-foreign-students-dont-stay-for-work](https://www.wbur.org/onpoint/2023/06/26/why-so-many-u-s-educated-foreign-students-dont-stay-for-work).
+
+Sutter, K. M., and M. D. Sutherland. 2018. _China-U.S. Trade Issues._ Congressional Research Service. Updated July 30, 2018. [https://crsreports.congress.gov/product/pdf/RL/RL33536](https://crsreports.congress.gov/product/pdf/RL/RL33536).
+
+Suttmeier, R. P., C. Cao, and D. F. Simon. 2006. Knowledge innovation and the Chinese Academy of Sciences. _Science_ 312 (5770): 58–59. [https://www.science.org/doi/full/10.1126/science.1122280](https://www.science.org/doi/full/10.1126/science.1122280).
+
+Swaminathan, N. 2017. Inside the growing guest worker program trapping Indian students in virtual servitude. _Mother Jones,_ September/October 2017. [https://www.motherjones.com/politics/2017/09/inside-the-growing-guest-worker-program-trapping-indian-students-in-virtual-servitude/](https://www.motherjones.com/politics/2017/09/inside-the-growing-guest-worker-program-trapping-indian-students-in-virtual-servitude/).
+
+Swedish Council for Higher Education. n.d. Apply to Courses and Programmes in All of Sweden. [https://www.universityadmissions.se/intl/start](https://www.universityadmissions.se/intl/start).
+
+Swedish Institute. 2023. Starting a Business in Sweden. Last modified January 24, 2023. [https://sweden.se/work-business/business-in-sweden/starting-a-business-in-sweden](https://sweden.se/work-business/business-in-sweden/starting-a-business-in-sweden).
+
+Swedish Migration Agency. 2022. “Special Rules for Certain Occupations and Citizens of Certain Countries,” Working in Sweden. Last modified September 23, 2022. [https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Employed/Special-rules-for-certain-occupations-and-citizens-of-certain-countries.html](https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Employed/Special-rules-for-certain-occupations-and-citizens-of-certain-countries.html).
+
+Swedish Migration Agency. 2023a. “Former Asylum Seekers Who Have Found Employment and Want to Apply for a Work Permit,” Working in Sweden. Last modified December 20, 2023. [https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Employed/If-you-are-in-Sweden/Asylum-seekers-who-have-a-job.html](https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Employed/If-you-are-in-Sweden/Asylum-seekers-who-have-a-job.html).
+
+Swedish Migration Agency. 2023b. “How to Apply for a Work Permit,” Working in Sweden. Last modified December 15, 2023. [https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Employed/How-to-apply.html](https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Employed/How-to-apply.html).
+
+Swedish Migration Agency. 2023c. “If You Have Visited an Employer in Sweden and Want to Apply for a Work Permit,” Working in Sweden. Last modified November 1, 2023. [https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Employed/If-you-are-in-Sweden/Visiting-an-employer.html](https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Employed/If-you-are-in-Sweden/Visiting-an-employer.html).
+
+Swedish Migration Agency. 2023d. “Residence Permit for People Who Have Their Own Business,” Working in Sweden. Last modified December 21, 2023. [https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Self-employment.html](https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Self-employment.html).
+
+Swedish Migration Agency. 2024. “Working Holiday Visa for Young People,” Working in Sweden. Last modified January 16, 2024. [https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Employed/Special-rules-for-certain-occupations-and-citizens-of-certain-countries/Working-holiday-visa-for-young-people.html](https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Employed/Special-rules-for-certain-occupations-and-citizens-of-certain-countries/Working-holiday-visa-for-young-people.html).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Symons, A. 2024. Always wanted to live in Japan? A new digital nomad visa is launching next month. _Euronews,_ February 5, 2024, updated February 7, 2024. [https://www.euronews.com/travel/2024/02/05/always-wanted-to-live-in-japan-a-new-digital-nomad-visa-is-launching-next-month](https://www.euronews.com/travel/2024/02/05/always-wanted-to-live-in-japan-a-new-digital-nomad-visa-is-launching-next-month).
+
+Systems Plus. n.d. NDSEG: National Defense Science and Engineering Graduate Fellowship Program. [https://ndseg.sysplus.com/](https://ndseg.sysplus.com/).
+
+Tadjdeh, Y. 2020. Defense sector straining to attract STEM talent. _National Defense_ 104 (794): 32–34. [https://www.jstor.org/stable/27022854](https://www.jstor.org/stable/27022854).
+
+Taiwan Employment Gold Card. n.d. Taiwan Gold Card. National Development Council (Taiwan – R.O.C.). [https://goldcard.nat.gov.tw/en/](https://goldcard.nat.gov.tw/en/).
+
+Taiwanese National Development Council. 2024. Key Talent Cultivation and Recruitment Program (2021-2024). National Development Council (Taiwan – R.O.C.). Last Modified August 9, 2024. [https://www.ndc.gov.tw/en/Content_List.aspx?n=-330FEAC25FEBEA3D](https://www.ndc.gov.tw/en/Content_List.aspx?n=-330FEAC25FEBEA3D).
+
+Takatsuki, K. 2023. China leads high-tech research in 80% of critical fields: Report. _Nikkei Asia,_ September 15, 2023. [https://asia.nikkei.com/Business/China-tech/China-leads-high-tech-research-in-80-of-critical-fields-report](https://asia.nikkei.com/Business/China-tech/China-leads-high-tech-research-in-80-of-critical-fields-report).
+
+Talent Circulation Alliance. n.d. About. [https://www.talentcirculationalliance.org/about](https://www.talentcirculationalliance.org/about).
+
+Talent Taiwan. n.d. About. National Development Council (Taiwan – R.O.C.). [https://talent.nat.gov.tw/about?lang=en](https://talent.nat.gov.tw/about?lang=en).
+
+TAMU (Texas A&M University). n.d. “Frequently Asked Questions,” International Collaborations and Other International Activities Involving Countries of Concern. Texas A&M University Division of Research. [https://vpr.tamu.edu/research-security-and-export-controls/international-research-collaboration-foreign-influence/international-collaborations-and-other-international-activities-involving-countries-of-concern/frequently-asked-questions/](https://vpr.tamu.edu/research-security-and-export-controls/international-research-collaboration-foreign-influence/international-collaborations-and-other-international-activities-involving-countries-of-concern/frequently-asked-questions/).
+
+Tan, R. 2021. In China, the dream of an American education loses some of its gleam. _Washington Post,_ August 13, 2021. [https://www.washingtonpost.com/world/asia_pacific/chinese-students-america-university/2021/08/13/6f38368a-ef47-11eb-81b2-9b7061a582d8_story.html](https://www.washingtonpost.com/world/asia_pacific/chinese-students-america-university/2021/08/13/6f38368a-ef47-11eb-81b2-9b7061a582d8_story.html).
+
+Tao, T. n.d. Who I Am. [https://www.math.ucla.edu/%7Etao/whoami.html](https://www.math.ucla.edu/%7Etao/whoami.html).
+
+Tao, T. 2003. Vitae and Bibliography for Terence Tao. Last modified August 21, 2003. [https://www.math.ucla.edu/%7Etao/cv.html](https://www.math.ucla.edu/%7Etao/cv.html).
+
+Tao, T. 2017. Open thread for mathematicians on the immigration executive order. _What’s new_ (blog), January 31, 2017. [https://terrytao.wordpress.com/2017/01/31/open-thread-for-mathematicians-on-the-immigration-executive-order/](https://terrytao.wordpress.com/2017/01/31/open-thread-for-mathematicians-on-the-immigration-executive-order/).
+
+Tao, T. 2024. Does one have to be a genius to do maths? Early Career. _Notices of the American Mathematical Society,_ 71(1). [https://www.ams.org/journals/notices/202401/rnoti-p30.pdf](https://www.ams.org/journals/notices/202401/rnoti-p30.pdf).
+
+Taylor, D., and C. A. Arbeit. 2024. _The STEM Labor Force: Scientists, Engineers, and Skilled Technical Workers._ National Science Board, National Science Foundation. [https://ncses.nsf.gov/pubs/nsb20245](https://ncses.nsf.gov/pubs/nsb20245).
+
+_Tehran Times._ 2018a. Expat experts initiate 62 startups in Iran. May 30, 2018. [https://www.tehrantimes.com/news/424094/Expat-experts-initiate-62-startups-in-Iran](https://www.tehrantimes.com/news/424094/Expat-experts-initiate-62-startups-in-Iran).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+_Tehran Times._ 2018b. Plan for cooperation with expat experts underway. May 26, 2018. [https://www.tehrantimes.com/news/423936/Plan-for-cooperation-with-expat-experts-underway](https://www.tehrantimes.com/news/423936/Plan-for-cooperation-with-expat-experts-underway).
+
+Teitelbaum, M. S. 2014. _Falling Behind?: Boom, Bust, and the Global Race for Scientific Talent._ Princeton, NJ: Princeton University Press.
+
+TFAI (Task Force on the Future of American Innovation). 2005. _The Knowledge Economy: Is the United States Losing Its Competitive Edge?_[http://ipadvocatefoundation.org/mission/pdfs/knowledge%20economy.pdf](http://ipadvocatefoundation.org/mission/pdfs/knowledge%20economy.pdf).
+
+Thanthong-Knight, R., S. Pandey, and T. Rees. 2024. Global housing shortages are crushing immigration-fueled growth. _Bloomberg,_ May 5, 2024. [https://www.bloomberg.com/news/features/2024-05-05/global-housing-crisis-affects-immigration-fueled-growth-living-standards](https://www.bloomberg.com/news/features/2024-05-05/global-housing-crisis-affects-immigration-fueled-growth-living-standards).
+
+_The Economist._ 2015. No country for old men. January 8, 2015. [https://www.economist.com/the-americas/2015/01/08/no-country-for-old-men](https://www.economist.com/the-americas/2015/01/08/no-country-for-old-men).
+
+_The Economist._ 2018. For China’s elite, studying abroad is de rigueur. May 17, 2018. [https://www.economist.com/special-report/2018/05/17/for-chinas-elite-studying-abroad-is-de-rigueur](https://www.economist.com/special-report/2018/05/17/for-chinas-elite-studying-abroad-is-de-rigueur).
+
+_The Economist._ 2024a. China has become a scientific superpower. June 12, 2024. [https://www.economist.com/science-and-technology/2024/06/12/china-has-become-a-scientific-superpower](https://www.economist.com/science-and-technology/2024/06/12/china-has-become-a-scientific-superpower).
+
+_The Economist._ 2024b. Talent is scarce. Yet many countries spurn it. August 15, 2024. [https://www.economist.com/briefing/2024/08/15/talent-is-scarce-yet-many-countries-spurn-it](https://www.economist.com/briefing/2024/08/15/talent-is-scarce-yet-many-countries-spurn-it).
+
+_The Week_ Staff. 2020. The pros and cons of a points-based immigration system. _The Week._ Last updated January 21, 2020. [https://theweek.com/74147/the-pros-and-cons-of-points-based-immigration](https://theweek.com/74147/the-pros-and-cons-of-points-based-immigration).
+
+Thomas, W. 2019. DOE Barring researchers from rival nations’ talent programs. _FYI: Science Policy News,_ June 13, 2019. [https://ww2.aip.org/fyi/2019/doe-barring-researchers-rival-nations-talent-programs](https://ww2.aip.org/fyi/2019/doe-barring-researchers-rival-nations-talent-programs).
+
+Tiffert, G. 2020. _Global Engagement: Rethinking Risk in the Research Enterprise._ Essay, July 30, 2020. Stanford, CA: Hoover Institution Press. [https://www.hoover.org/global-engagement-rethinking-risk-research-enterprise](https://www.hoover.org/global-engagement-rethinking-risk-research-enterprise).
+
+Tiffert, G. 2024. “Perspectives on Great Power Competition, Economic and National Security, and Research Security.” Open-session presentation to the Committee on International Talent Programs in the Changing Global Environment, February 28, 2024. Washington, DC: National Academies of Sciences, Engineering, and Medicine.
+
+Times Higher Education. 2024. World University Rankings. [https://www.timeshighereducation.com/world-university-rankings](https://www.timeshighereducation.com/world-university-rankings).
+
+Ting, H., P. S. Borah, F. Yun, and Z. Liangze. 2021. The impact of belt and road initiative in cultivating international students in Chinese universities. _European Journal of Business and Management_ 13(20). [http://dx.doi.org/10.7176/EJBM/13-20-15](http://dx.doi.org/10.7176/EJBM/13-20-15).
+
+Tollefson, J., N. Gilbert, M. Kozlov, and M. Lenharo. 2024. Trump versus Biden: What the rematch could mean for three key science issues. _Nature,_ March 6, 2024. [https://www.nature.com/articles/d41586-024-00657-w](https://www.nature.com/articles/d41586-024-00657-w).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Toney, A., and M. Flagg. 2021. Comparing the United States’ and China’s leading roles in the landscape of science. _CSET Data Brief,_ June 2021. Center for Security and Emerging Technology. [https://cset.georgetown.edu/publication/comparing-the-united-states-and-chinas-leading-roles-in-the-landscape-of-science/](https://cset.georgetown.edu/publication/comparing-the-united-states-and-chinas-leading-roles-in-the-landscape-of-science/).
+
+Trapani, J., and K. Hale. 2022. Higher Education in Science and Engineering. [https://ncses.nsf.gov/pubs/nsb20223](https://ncses.nsf.gov/pubs/nsb20223).
+
+Truex, R. 2024. Where have all the American China experts gone? _Washington Post,_ January 3, 2024. [https://www.washingtonpost.com/opinions/2024/01/03/us-shortage-china-experts/](https://www.washingtonpost.com/opinions/2024/01/03/us-shortage-china-experts/).
+
+Trump, D. J. 2017. Executive Order Protecting the Nation from Foreign Terrorist Entry into the United States. Executive Order 13769. The White House. March 6, 2017. [https://trumpwhitehouse.archives.gov/presidential-actions/executive-order-protecting-nation-foreign-terrorist-entry-united-states-2/](https://trumpwhitehouse.archives.gov/presidential-actions/executive-order-protecting-nation-foreign-terrorist-entry-united-states-2/).
+
+Tsvetkova, E. 2024. Operationalising university excellence in doctoral education: The case of top-ranked Russian universities. _Higher Education Policy._[https://doi.org/10.1057/s41307-024-00354-3](https://doi.org/10.1057/s41307-024-00354-3).
+
+Tu, T. 2024. New talent recruitment phase aims to attract non-local graduates from SAR universities - Ho. _Macau Business Media,_ April 16, 2024. [https://www.macaubusiness.com/new-talent-recruitment-phase-aims-to-attract-non-local-fresh-graduates-from-sar-universities-ho/](https://www.macaubusiness.com/new-talent-recruitment-phase-aims-to-attract-non-local-fresh-graduates-from-sar-universities-ho/).
+
+Tucker, W. 2020, Message from the Director - Chinese Espionage Cases. Society of Former Special Agents of the Federal Bureau of Investigation, Inc. [https://socxfbi.org/SFSA/SFSA/Featured-Articles/Message-from-the-Director—Chinese-Espionage.aspx](https://socxfbi.org/SFSA/SFSA/Featured-Articles/Message-from-the-Director%E2%80%94Chinese-Espionage.aspx).
+
+Turpin, M. 2024. “Perspectives on Great Power Competition, Economic and National Security, and Research Security.” Open-session presentation to the Committee on International Talent Programs in the Changing Global Environment, February 1, 2024. Washington, DC: National Academies of Sciences, Engineering, and Medicine.
+
+TYCYP (Tomsk State University of Control Systems and Radioelectronics). n.d. Priority 2030. [https://tusur.ru/en/priority-2030](https://tusur.ru/en/priority-2030).
+
+TYCYP. 2022. Priority 2030 Funding for TUSUR Increased for 2023. December 24, 2022. [https://tusur.ru/en/news-and-events/news/item/-/novost-priority-2030-fundingfor-tusur-increased-for-2023](https://tusur.ru/en/news-and-events/news/item/-/novost-priority-2030-fundingfor-tusur-increased-for-2023).
+
+UK Government. n.d.a. “Apply for the Global Talent Visa,” Government Digital Service. [https://www.gov.uk/global-talent](https://www.gov.uk/global-talent).
+
+UK Government. n.d.b. “Graduate Visa,” Government Digital Service. [https://www.gov.uk/graduate-visa](https://www.gov.uk/graduate-visa).
+
+UK Government. n.d.c. “High Potential Individual (HPI) Visa,” Government Digital Service. [https://www.gov.uk/high-potential-individual-visa](https://www.gov.uk/high-potential-individual-visa).
+
+UK Government. n.d.d. Skilled Worker Visa. [https://www.gov.uk/skilled-worker-visa](https://www.gov.uk/skilled-worker-visa).
+
+UK Government. n.d.e. “Student Visa,” Government Digital Service. [https://www.gov.uk/student-visa](https://www.gov.uk/student-visa).
+
+UK Government. 2024. Migration numbers fall further as measures have major impact. May 22, 2024. [https://www.gov.uk/government/news/migration-numbers-fall-further-as-measures-have-major-impact](https://www.gov.uk/government/news/migration-numbers-fall-further-as-measures-have-major-impact).
+
+UKRI (UK Research and Innovation). 2024. Funding Finder. [https://www.ukri.org/opportunity/](https://www.ukri.org/opportunity/).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+UNDESA (United Nations Department of Economic and Social Affairs). n.d. World Population Projected to Reach 9.8 Billion in 2050, and 11.2 Billion in 2100. [https://www.un.org/en/desa/world-population-projected-reach-98-billion-2050-and-112-billion-2100](https://www.un.org/en/desa/world-population-projected-reach-98-billion-2050-and-112-billion-2100).
+
+UNESCO (United Nations Educational, Scientific and Cultural Organization). n.d. Data for the Sustainable Development Goals. UNESCO Institute for Statistics. [https://uis.unesco.org/](https://uis.unesco.org/).
+
+UNESCO. 2021. _UNESCO Science Report 2021._ Paris. [https://www.unesco.org/reports/science/2021/en/report-series](https://www.unesco.org/reports/science/2021/en/report-series).
+
+Universities Australia. 2023. A migration system for the future. Media release, December 11, 2023. [https://universitiesaustralia.edu.au/media-item/a-migration-system-for-the-future/](https://universitiesaustralia.edu.au/media-item/a-migration-system-for-the-future/).
+
+University of Minnesota. 2023. _Representative List of Non-US Talent Programs._ July 2023. [https://drive.google.com/file/d/1idY8N4dJNAp0K20rlLCKqjmsarmnw5Id/view](https://drive.google.com/file/d/1idY8N4dJNAp0K20rlLCKqjmsarmnw5Id/view).
+
+UNSW (University of New South Wales). 2024. Aggregate Ranking of Top Universities. UNSW Sydney. [https://research.unsw.edu.au/artu/indicator](https://research.unsw.edu.au/artu/indicator).
+
+Urban, W. J. 2018. _More Than Science and Sputnik: The National Defense Education Act of 1958._ Tuscaloosa: University Alabama Press.
+
+U.S. Census Bureau. 2021. “From College to Jobs: Pathways in STEM.” Last modified September 12, 2022. [https://www.census.gov/library/visualizations/interactive/from-college-to-jobs-stem.html](https://www.census.gov/library/visualizations/interactive/from-college-to-jobs-stem.html).
+
+U.S.-China Education Trust. n.d. Three Decades of Chinese Students in America, 1991–2021. [https://uscet.org/uscet-releases-three-decades-of-chinese-students-in-america-1991-2021/](https://uscet.org/uscet-releases-three-decades-of-chinese-students-in-america-1991-2021/).
+
+USCIS (U.S. Citizenship and Immigration Services). 2022. O-1 nonimmigrant status for persons of extraordinary ability or achievement. U.S. Department of Homeland Security. _Policy Alert,_ January 21, 2022. [https://www.uscis.gov/sites/default/files/document/policy-manual-updates/20220121-ExtraordinaryAbility.pdf](https://www.uscis.gov/sites/default/files/document/policy-manual-updates/20220121-ExtraordinaryAbility.pdf).
+
+USCIS. 2023a. Number of Form I-140, I-360, I-526 Approved Employment-Based Petitions Awaiting Visa Availability. U.S. Department of Homeland Security. [https://www.uscis.gov/sites/default/files/document/data/eb_i140_i360_i526_performancedata_fy2023_q4.pdf](https://www.uscis.gov/sites/default/files/document/data/eb_i140_i360_i526_performancedata_fy2023_q4.pdf).
+
+USCIS. 2023b. O-1 Visa: Individuals with Extraordinary Ability or Achievement. Working in the United States. Last modified March 3, 2023. [https://www.uscis.gov/working-in-the-united-states/temporary-workers/o-1-visa-individuals-with-extraordinary-ability-or-achievement](https://www.uscis.gov/working-in-the-united-states/temporary-workers/o-1-visa-individuals-with-extraordinary-ability-or-achievement).
+
+USCIS. 2023c. STEM-Related Petition Trends: EB-2 and O-1A Categories FY 2018 - FY 2023. U.S. Department of Homeland Security. [https://www.uscis.gov/sites/default/files/document/reports/stem_related_petition_trends_eb2_and_o1a_categories_factsheet_fy23.pdf](https://www.uscis.gov/sites/default/files/document/reports/stem_related_petition_trends_eb2_and_o1a_categories_factsheet_fy23.pdf).
+
+USCIS. 2024a. [Chapter 4](https://www.nationalacademies.org/read/27787/chapter/6#77) – O-1 beneficiaries. In _Policy Manual._ Last modified May 22, 2024. [https://www.uscis.gov/policy-manual/volume-2-part-m-chapter-4](https://www.uscis.gov/policy-manual/volume-2-part-m-chapter-4).
+
+USCIS. 2024b. Chapter 9 – Admission, extension of stay, change of status, and change of employer. In _Policy Manual._ Last modified May 8, 2024. [https://www.uscis.gov/policy-manual/volume-2-part-m-chapter-9](https://www.uscis.gov/policy-manual/volume-2-part-m-chapter-9).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+U.S. Congress. 1958. H.R. 13247 - _National Defense Education Act._ Public Law 85-864. Enacted September 2, 1958. [https://www.congress.gov/bill/85th-congress/house-bill/13247](https://www.congress.gov/bill/85th-congress/house-bill/13247).
+
+U.S. Congress. 2006. S.3502 - New National Defense Education Act of 2006. Bill. Introduced in Senate 13 June 2006. [https://www.congress.gov/bill/109th-congress/senate-bill/3502](https://www.congress.gov/bill/109th-congress/senate-bill/3502).
+
+U.S. Congress. 2007. H.R. 2272 - _America COMPETES Act._ Public Law 110-69. Enacted August 9, 2007. [https://www.congress.gov/bill/110th-congress/house-bill/2272](https://www.congress.gov/bill/110th-congress/house-bill/2272).
+
+U.S. Congress. 2011. H.R. 5116 _America COMPETES Reauthorization Act of 2010._ Public Law 111-358. Enacted January 4, 2011. [https://www.congress.gov/bill/111th-congress/house-bill/5116](https://www.congress.gov/bill/111th-congress/house-bill/5116).
+
+U.S. Congress. 2022. H.R. 4346 - _CHIPS and Science Act of 2022._ Public Law 117-167. Enacted August 9, 2022. [https://www.congress.gov/bill/117th-congress/house-bill/4346](https://www.congress.gov/bill/117th-congress/house-bill/4346).
+
+USDS (U.S. Digital Service). n.d. Our Mission. [https://www.usds.gov/mission](https://www.usds.gov/mission).
+
+U.S. House of Representatives Committee on Armed Services. 2020. _Future of Defense Task Force._ U.S. Congress, September 23, 2020. [https://houlahan.house.gov/uploadedfiles/future-of-defense-task-force-final-report-2020.pdf](https://houlahan.house.gov/uploadedfiles/future-of-defense-task-force-final-report-2020.pdf).
+
+U.S. House Foreign Affairs Committee (U.S. House of Representatives Committee on Foreign Affairs). 2020a. _Egregious Cases of Chinese Theft of American Intellectual Property._ U.S. Congress, February 2020. [https://foreignaffairs.house.gov/wp-content/uploads/2020/02/Egregious-Cases-of-Chinese-Theft-of-American-Intellectual-Property.pdf](https://foreignaffairs.house.gov/wp-content/uploads/2020/02/Egregious-Cases-of-Chinese-Theft-of-American-Intellectual-Property.pdf).
+
+U.S. House Foreign Affairs Committee. 2020b. _China Task Force Report._ U.S. Congress, September 6, 2020. [https://foreignaffairs.house.gov/wp-content/uploads/2020/11/China-Task-Force-Final-Report-11.6.20.pdf](https://foreignaffairs.house.gov/wp-content/uploads/2020/11/China-Task-Force-Final-Report-11.6.20.pdf).
+
+U.S. House Science Committee (U.S. House of Representatives Committee on Science, Space, and Technology). 2021. “Balancing Open Science and Security in the U.S. Research Enterprise.” House Committee Hearing, 117th Congress, October 5, 2021. [https://democrats-science.house.gov/hearings/balancing-open-science-and-security-in-the-us-research-enterprise](https://democrats-science.house.gov/hearings/balancing-open-science-and-security-in-the-us-research-enterprise).
+
+U.S. House Science Committee. 2023. “The United States, China and the Fight for Global Leadership: Building a U.S. National Science and Technology Strategy.” House Committee Hearing, 118th Congress, February 28, 2023. [https://science.house.gov/2023/2/full-committee-hearing](https://science.house.gov/2023/2/full-committee-hearing).
+
+U.S. House Science Committee. 2024. “Examining Federal Science Agency Actions to Secure the U.S. Science and Technology Enterprise.” House Committee Hearing, 118th Congress, February 15, 2024. [https://science.house.gov/2024/2/full-committee-hearing-examining-federal-science-agency-actions-to-secure-the-u-s-science-and-technology-enterprise](https://science.house.gov/2024/2/full-committee-hearing-examining-federal-science-agency-actions-to-secure-the-u-s-science-and-technology-enterprise).
+
+U.S. House Judiciary Committee (U.S. House of Representatives Committee on the Judiciary). 2024. Protect America’s Innovation and Economic Security from CCP Act. H.R.1398, 118th Congress.
+
+U.S. ICE (U.S. Immigration and Customs Enforcement). n.d. Practical Training. [https://www.ice.gov/sevis/practical-training#wcm-survey-target-id](https://www.ice.gov/sevis/practical-training#wcm-survey-target-id).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+_U.S. News & World Report._ n.d. These countries have the most well-developed public education systems. [https://www.usnews.com/news/best-countries/rankings/well-developed-public-education-system](https://www.usnews.com/news/best-countries/rankings/well-developed-public-education-system).
+
+U.S. Select Committee on the CCP (U.S. House of Representatives Select Committee on the Strategic Competition between the United States and the Chinese Communist Party). 2023. _RESET, PREVENT, BUILD: A Strategy to Win America’s Economic Competition with the Chinese Communist Party._ U.S. Congress. [https://selectcommitteeontheccp.house.gov/sites/evo-subsites/selectcommitteeontheccp.house.gov/files/evo-media-document/reset-prevent-build-scc-report.pdf](https://selectcommitteeontheccp.house.gov/sites/evo-subsites/selectcommitteeontheccp.house.gov/files/evo-media-document/reset-prevent-build-scc-report.pdf).
+
+U.S. Select Committee on the CCP and Committee on Small Business. 2023. Letter to the Attorney General, U.S. Department of Justice, June 15, 2023. [https://smallbusiness.house.gov/uploadedfiles/6.15.2023_-_letter_to_doj_-_china_select_-_cmte._on_small_business.pdf](https://smallbusiness.house.gov/uploadedfiles/6.15.2023_-_letter_to_doj_-_china_select_-_cmte._on_small_business.pdf).
+
+U.S. Senate. n.d. Sputnik spurs passage of the National Defense Education Act. October 4, 1957. [https://www.senate.gov/artandhistory/history/minute/Sputnik_Spurs_Passage_of_National_Defense_Education_Act.htm](https://www.senate.gov/artandhistory/history/minute/Sputnik_Spurs_Passage_of_National_Defense_Education_Act.htm).
+
+U.S. Senate Permanent Subcommittee on Investigations. 2019a. _China’s Impact on the U.S. Education System._ U.S. Congress, February 27, 2019. [https://www.hsgac.senate.gov/wp-content/uploads/imo/media/doc/PSI%20Report%20China’s%20Impact%20on%20the%20US%20Education%20System.pdf](https://www.hsgac.senate.gov/wp-content/uploads/imo/media/doc/PSI%20Report%20China%E2%80%99s%20Impact%20on%20the%20US%20Education%20System.pdf).
+
+U.S. Senate Permanent Subcommittee on Investigations. 2019b. _Threats to the U.S. Research Enterprise: China’s Talent Recruitment Plans._ U.S. Congress, November 18, 2019. [https://china.usc.edu/sites/default/files/article/attachments/us-senate-report-2019-chinese-talent-recruitment-plans.pdf](https://china.usc.edu/sites/default/files/article/attachments/us-senate-report-2019-chinese-talent-recruitment-plans.pdf).
+
+U.S. Senate Select Committee on Intelligence. 2022. _Organizational Assessment: The National Counterintelligence and Security Center._ U.S. Congress, September 2022. [https://www.intelligence.senate.gov/sites/default/files/publications/AP_Report_22-01_R.pdf](https://www.intelligence.senate.gov/sites/default/files/publications/AP_Report_22-01_R.pdf).
+
+VAJRA (Visiting Advanced Joint Research Faculty). n.d. VAJRA (Visiting Advanced Joint Research) Faculty Scheme. Indian Department of Science & Technology. [https://vajra-india.in/](https://vajra-india.in/).
+
+Van Dongen, E. 2022. “New migrant” organisations and the Chinese diaspora state(s) in the twenty-first century: The case of Japan. _China Perspectives_ 17–27. [https://doi.org/https](https://doi.org/https)://doi.[org/10.4000/chinaperspectives.14338](http://org/10.4000/chinaperspectives.14338).
+
+Verma, D., W. Rouse, D. DeLaurentis, J. Main, and J. Lombardi. 2022a. _Policy Innovations to Enhance the STEM Talent Pipeline._ WRT-1042, April 15, 2022. [https://sercproddata.s3.us-east-2.amazonaws.com/technical_reports/reports/1659628543.SERC_A013_WRT%201042_Final%20Technical%20Report.pdf](https://sercproddata.s3.us-east-2.amazonaws.com/technical_reports/reports/1659628543.SERC_A013_WRT%201042_Final%20Technical%20Report.pdf).
+
+Verma, D., W. Rouse, D. DeLaurentis, J. Main, and J. Lombardi. 2022b. Policy innovations to enhance the STEM talent pipeline. In _Annual Research Review 2022._[https://sercproddata.s3.us-east-2.amazonaws.com/publication_documents/reports/1671562935.ARR-22-SERC-T3.1-Policy%20Innovations%20to%20Enhance%20the%20STEM%20Talent%20Pipeline.pdf](https://sercproddata.s3.us-east-2.amazonaws.com/publication_documents/reports/1671562935.ARR-22-SERC-T3.1-Policy%20Innovations%20to%20Enhance%20the%20STEM%20Talent%20Pipeline.pdf).
+
+Verma, D., W. Rouse, D. DeLaurentis, J. Main, and J. Lombardi. 2023. _Policy Innovations to Enhance the STEM Talent Pipeline._ WRT-1068, August 18, 2023. [https://sercproddata.s3.us-east-2.amazonaws.com/technical_reports/reports/SERC_WRT-1068_A013_Final%20Technical%20Report_SERC-2023-TR-009_V2_081823.pdf](https://sercproddata.s3.us-east-2.amazonaws.com/technical_reports/reports/SERC_WRT-1068_A013_Final%20Technical%20Report_SERC-2023-TR-009_V2_081823.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+_Vestnik Kavkaza._ 2015. Russia adopts education development concept till 2020. January 8, 2015. [https://en.vestikavkaza.ru/news/society/64371.html](https://en.vestikavkaza.ru/news/society/64371.html).
+
+Vogel, K. M., and S. B. Ouagrham-Gormley. 2023. Scientists as spies?: Assessing U.S. claims about the security threat posed by China’s Thousand Talents Program for the U.S. life sciences. _Politics and the Life Sciences_ 42(1): 32-64. [https://doi.org/10.1017/pls.2022.13](https://doi.org/10.1017/pls.2022.13).
+
+Vorotnikov, E. 2021. Huge Priority 2030 initiative boosts national, regional universities. _University World News,_ August 18, 2021. [https://www.universityworldnews.com/post.php?story=20210818170111706](https://www.universityworldnews.com/post.php?story=20210818170111706).
+
+Wagner, C. S. 2024a. “China’s Patterns of Cooperation in Science and Technology.” Paper commissioned by the International Talent Programs Consensus Study Committee. Washington, DC: National Academies of Sciences, Engineering, and Medicine.
+
+Wagner, C. 2024b. China’s universities just grabbed 6 of the top 10 spots in one worldwide science ranking - without changing a thing. _The Conversation,_ April 2, 2024; updated April 3, 2024. [https://theconversation.com/chinas-universities-just-grabbed-6-of-the-top-10-spots-in-one-worldwide-science-ranking-without-changing-a-thing-222956](https://theconversation.com/chinas-universities-just-grabbed-6-of-the-top-10-spots-in-one-worldwide-science-ranking-without-changing-a-thing-222956)
+
+Wagner, C. S., and X. Cai. 2022a. Changes in Co-Publication Patterns among China, the European Union (28) and the United States of America, 2016–2021. _Social Science Research Network (SSRN)._[https://dx.doi.org/10.2139/ssrn.4035897](https://dx.doi.org/10.2139/ssrn.4035897).
+
+Wagner, C. S., and X. Cai. 2022b. “Drop in China-USA International Collaboration.” _ISSI Newsletter #69,_ Vol. 18, no. 1. March 2022. [https://www.issi-society.org/media/1434/newsletter69.pdf](https://www.issi-society.org/media/1434/newsletter69.pdf).
+
+Wagner, C. S., X. Cai, and J. Baas. 2024. State level representation of Chinese scholars mobility to and within the United States, 2009 to 2018. _Social Science Research Network (SSRN)._[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4737815](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4737815).
+
+Wagner, C. S., and D. F. Simon. 2023. China’s use of formal science and technology agreements as a tool of diplomacy. _Science and Public Policy_ 50(4): 807–817. [https://academic.oup.com/spp/article/50/4/807/7209674?login=true](https://academic.oup.com/spp/article/50/4/807/7209674?login=true).
+
+Wagner, C. S., L. Zhang, and L. Leydesdorff. 2022. A discussion of measuring the top-1% most-highly cited publications: quality and impact of Chinese papers. _Scientometrics_ 127: 1825–1839. [https://link.springer.com/article/10.1007/s11192-022-04291-z](https://link.springer.com/article/10.1007/s11192-022-04291-z).
+
+Wang, A. 2024. ‘World-class’ universities are at the heart of S&T goals. _University World News,_ July 24, 2024. [https://www.universityworldnews.com/post.php?story=20240724184755854](https://www.universityworldnews.com/post.php?story=20240724184755854).
+
+Wang, H., and Y. Bao. 2015. _Reverse Migration in Contemporary China: Returnees, Entrepreneurship and the Chinese Economy._ Politics and Development of Contemporary China book series. London: Palgrave Macmillan.
+
+Wang, Z. 2014. The Cold War and reshaping of transnational science in China. Pp. 343–370 in _Science and Technology in the Global Cold War,_ edited by N. Oreskes and J. Krige. Cambridge, MA: MIT Press.
+
+Watney, C. 2021. The egghead gap. _The New Atlantis,_ Winter 2021. [https://www.thenewatlantis.com/publications/the-egghead-gap](https://www.thenewatlantis.com/publications/the-egghead-gap).
+
+Weinstein, E. n.d. _Chinese Talent Program Tracker._ Center for Security and Emerging Technology. [https://chinatalenttracker.cset.tech/static/cset_chinese_talent_program_tracker.pdf](https://chinatalenttracker.cset.tech/static/cset_chinese_talent_program_tracker.pdf).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Weinstein, E. 2020. Mapping China’s sprawling efforts to recruit scientists. _Defense One,_ November 30, 2020. [https://www.defenseone.com/ideas/2020/11/mapping-chinas-sprawling-efforts-recruit-scientists/170373/](https://www.defenseone.com/ideas/2020/11/mapping-chinas-sprawling-efforts-recruit-scientists/170373/).
+
+Wells, B. H., H. A. Sanchez, and J. M. Attridge. 2007. Modeling student interest in science, technology, engineering and mathematics. Pp. 1–17 in _2007 IEEE Meeting the Growing Demand for Engineers and their Educators 2010–2020 International Summit._ Proceedings from the conference in Munich, Germany, November 9–11, 2007. [https://ieeexplore.ieee.org/document/4760362](https://ieeexplore.ieee.org/document/4760362).
+
+Wesley, M. 2024. One-size-fits-all caps fail Australia and fail our students. _The Australian,_ July 10, 2024. [https://www.theaustralian.com.au/higher-education/onesizefitsall-caps-fail-australia-and-fail-our-students/news-story/f69e8b06df562eb4406dfeea77dbbf18](https://www.theaustralian.com.au/higher-education/onesizefitsall-caps-fail-australia-and-fail-our-students/news-story/f69e8b06df562eb4406dfeea77dbbf18).
+
+White House. 2021. “President Biden Announces Members of President’s Council of Advisors on Science and Technology.” Briefing Room, September 22, 2021. [https://www.whitehouse.gov/briefing-room/statements-releases/2021/09/22/president-biden-announces-members-of-presidents-council-of-advisors-on-science-and-technology/](https://www.whitehouse.gov/briefing-room/statements-releases/2021/09/22/president-biden-announces-members-of-presidents-council-of-advisors-on-science-and-technology/).
+
+White House. 2022. “Fact Sheet: Biden-Harris Administration Actions to Attract STEM Talent and Strengthen our Economy and Competitiveness.” Briefing Room, January 21, 2022. [https://www.whitehouse.gov/briefing-room/statements-releases/2022/01/21/fact-sheet-biden-harris-administration-actions-to-attract-stem-talent-and-strengthen-our-economy-and-competitiveness/](https://www.whitehouse.gov/briefing-room/statements-releases/2022/01/21/fact-sheet-biden-harris-administration-actions-to-attract-stem-talent-and-strengthen-our-economy-and-competitiveness/).
+
+Widener, A. 2021. Fear and confusion continue over research interactions with China. _Chemical & Engineering News,_ May 7, 2021. [https://cen.acs.org/research-integritty/China-initiative-scientist-research-prosecutions-Biden/99/i17](https://cen.acs.org/research-integritty/China-initiative-scientist-research-prosecutions-Biden/99/i17).
+
+Wike, R., J. Fetterolf, M. Fagan, and S. Gubbala. 2022. International public opinion of the U.S. remains positive. [Chapter 1](https://www.nationalacademies.org/read/27787/chapter/3#9) in _International Attitudes toward the U.S., NATO and Russia in a Time of Crisis._ Pew Research Center. [https://www.pewresearch.org/global/2022/06/22/international-public-opinion-of-the-u-s-remains-positive/](https://www.pewresearch.org/global/2022/06/22/international-public-opinion-of-the-u-s-remains-positive/).
+
+Wilson, J. H. 2024. Optional Practical Training (OPT) for foreign students in the United States. _In Focus,_ April 9, 2024. Congressional Research Service. [https://crsreports.congress.gov/product/pdf/IF/IF12631](https://crsreports.congress.gov/product/pdf/IF/IF12631).
+
+Wines, M. 2009. Qian Xuesen, Father of China’s space program, dies at 98. _New York Times,_ November 3, 2009. [https://www.nytimes.com/2009/11/04/world/asia/04qian.html](https://www.nytimes.com/2009/11/04/world/asia/04qian.html).
+
+WIPO (World Intellectual Property Organization). 2023a. Germany ranking in the Global Innovation Index 2023. _Global Innovation Index Database 2023._[https://www.wipo.int/gii-ranking/en/germany](https://www.wipo.int/gii-ranking/en/germany).
+
+WIPO. 2023b. Italy ranking in the Global Innovation Index 2023. _Global Innovation Index Database 2023._[https://www.wipo.int/gii-ranking/en/italy](https://www.wipo.int/gii-ranking/en/italy).
+
+WIPO. 2023c. Republic of Korea ranking in the Global Innovation Index 2023. _Global Innovation Index Database 2023._[https://www.wipo.int/gii-ranking/en/republic-of-korea](https://www.wipo.int/gii-ranking/en/republic-of-korea).
+
+WIPO. 2023d. Science and technology cluster ranking 2023. Pp. 67–75 in _Global Innovation Index._[https://www.wipo.int/global_innovation_index/en/2023/science-technology-clusters.html](https://www.wipo.int/global_innovation_index/en/2023/science-technology-clusters.html).
+
+Wiseman, D. W. 2024. United States: Trade secrets – policy and latest developments. IAM (Intellectual Asset Management), March 7, 2024. [https://www.iam-media.com/hub/trade-secrets-hub/2024/article/united-states-trade-secrets-policy-and-latest-developments](https://www.iam-media.com/hub/trade-secrets-hub/2024/article/united-states-trade-secrets-policy-and-latest-developments).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Wisevoter. n.d. Immigration by Country. [https://wisevoter.com/country-rankings/immigration-by-country/](https://wisevoter.com/country-rankings/immigration-by-country/).
+
+Witteveen, D., and P. Attewell. 2020. The STEM grading penalty: An alternative to the “leaky pipeline” hypothesis. _Science Education_ 104(4): 714–735. [https://doi.org/https](https://doi.org/https)://doi.[org/10.1002/sce.21580](http://org/10.1002/sce.21580).
+
+Wolpert, S. 2006. Terence Tao, ‘Mozart of Math,’ is first UCLA math prof to win Fields Medal. _UCLA Newsroom,_ August 22, 2006. [https://newsroom.ucla.edu/releases/Terence-Tao-Mozart-of-Math-7252](https://newsroom.ucla.edu/releases/Terence-Tao-Mozart-of-Math-7252).
+
+Wolpert, S. 2019. Mathematician named a Great Immigrant by Carnegie Corporation. _UCLA Newsroom,_ July 15, 2019. [https://newsroom.ucla.edu/dept/faculty/mathematician-terence-tao-named-a-great-immigrant-by-carnegie-corporation-of-new-york](https://newsroom.ucla.edu/dept/faculty/mathematician-terence-tao-named-a-great-immigrant-by-carnegie-corporation-of-new-york).
+
+Wong, E. 2019. How China Uses LinkedIn to Recruit Spies Abroad. _New York Times,_ August 27, 2019; updated October 14, 2021. [https://www.nytimes.com/2019/08/27/world/asia/china-linkedin-spies.html](https://www.nytimes.com/2019/08/27/world/asia/china-linkedin-spies.html).
+
+Wood, S. 2015. Terence Tao: The Mozart of maths. _Sydney Morning Herald,_ March 5, 2015. [https://www.smh.com.au/lifestyle/terence-tao-the-mozart-of-maths-20150216-13fwcv.html](https://www.smh.com.au/lifestyle/terence-tao-the-mozart-of-maths-20150216-13fwcv.html).
+
+World Bank. 2022. GDP growth (annual %) – Korea, Rep. World Bank Group. [https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=KR](https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=KR).
+
+World Bank. 2023. Population, total – China. World Bank Group. [https://data.worldbank.org/indicator/SP.POP.TOTL?locations=CN](https://data.worldbank.org/indicator/SP.POP.TOTL?locations=CN).
+
+Wray, C. 2020. The threat posed by the Chinese government and the Chinese Communist Party to the economic and national security of the United States. _China’s Attempt to Influence U.S. Institutions: A Conversation with FBI Director Christopher Wray._ Hudson Institute, video event, July 7, 2020. [https://www.hudson.org/national-security-defense/transcript-the-threat-posed-by-the-chinese-government-and-the-chinese-communist-party-to-the-economic-and-national-security-of-the-united-states](https://www.hudson.org/national-security-defense/transcript-the-threat-posed-by-the-chinese-government-and-the-chinese-communist-party-to-the-economic-and-national-security-of-the-united-states).
+
+Wu, F. 2023. ‘Can we move?’ Chinese residents are fearful over new US laws banning property ownership. _The Guardian,_ July 26, 2023. [https://www.theguardian.com/us-news/2023/jul/26/florida-law-discrimination-china-immigrant-property-purchase](https://www.theguardian.com/us-news/2023/jul/26/florida-law-discrimination-china-immigrant-property-purchase).
+
+Xi, J. 2015. Consolidate and develop the broadest patriotic united front possible. _Xinhuanet News Agency,_ May 20, 2015. [https://web.archive.org/web/20190326221657/http](https://web.archive.org/web/20190326221657/http):/[www.xinhuanet.com/politics/2015-05/20/c_1115351358.htm](http://www.xinhuanet.com/politics/2015-05/20/c_1115351358.htm).
+
+Xie, Q., and R. B. Freeman. 2020. “The Contributions of Chinese Diaspora Researchers to China’s Catching Up in Global Science and High-Tech Industries.” Working Paper 27169, NBER Working Paper Series. Cambridge, MA: National Bureau of Economic Research. [https://scholar.harvard.edu/files/freeman/files/dash_ms_xie-freeman_contribution_of_chinese_diaspora_researchers_to_china_sci_catchup_3oct2020.pdf](https://scholar.harvard.edu/files/freeman/files/dash_ms_xie-freeman_contribution_of_chinese_diaspora_researchers_to_china_sci_catchup_3oct2020.pdf).
+
+Xie, Y., and Killewald, A. A. 2012. _Is American Science in Decline?_ Cambridge, MA: Harvard University Press.
+
+Xie, Y., X. Lin, J. Li, and J. Huang. 2023. Caught in the crossfire: Fears of Chinese-American scientists. _Proceedings of the National Academy of Sciences_ 120(27): e2216248120. [https://doi.org/10.1073/pnas.2216248120](https://doi.org/10.1073/pnas.2216248120). [https://www.pnas.org/doi/full/10.1073/pnas.2216248120](https://www.pnas.org/doi/full/10.1073/pnas.2216248120).
+
+Xin, C. 2013. Five-year visas for foreigners on way. _China Daily,_ May 4, 2013. [https://www.chinadaily.com.cn/china/2013-05/04/content_16474513.htm](https://www.chinadaily.com.cn/china/2013-05/04/content_16474513.htm).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Xin, H. 2006. Frustrations mount over China’s high-priced hunt for trophy professors. _Science_ 313(5794): 1721–1723. [https://doi.org/10.1126/science.313.5794.1721](https://doi.org/10.1126/science.313.5794.1721).
+
+Xinhua News Agency. 2003. Hu Jintao: Shishi rencai qiangguo zhanlue, jianchi dang guan rencai yuanze (Hu Jintao: Implement the strategy of human resources and a strong country, firmly uphold the principle of the party managing human resources). December 21, 2003. [http://www.china.org.cn/archive/2003-12/21/content_1082972.htm](http://www.china.org.cn/archive/2003-12/21/content_1082972.htm).
+
+Xinhua News Agency, 2024, China’s R&D expenditure exceeds 3.3 trln yuan in 2023: Minister. March 5, 2024. [https://english.news.cn/20240305/d3d97f55bdf44d40a49d9ae2224ce0dc/c.html](https://english.news.cn/20240305/d3d97f55bdf44d40a49d9ae2224ce0dc/c.html).
+
+Xue, Y., and R. C. Larson. 2015. STEM crisis or STEM surplus? Yes and yes. _Monthly Labor Review._[https://doi.org/10.21916/mlr.2015.14](https://doi.org/10.21916/mlr.2015.14).
+
+Yan, K., and D. C. Berliner. 2016. The unique features of Chinese international students in the United States. In _Spotlight on China: Chinese Education in the Globalized World,_ edited by Shibao Guo and Yan Guo. [https://link.springer.com/chapter/10.1007/978-94-6300-669-9_8](https://link.springer.com/chapter/10.1007/978-94-6300-669-9_8).
+
+Yang, L. 2024. Chinese student deportations sign of shift in policy. _China Daily,_ updated March 11, 2024. [https://global.chinadaily.com.cn/a/202403/11/WS65ee4624a31082fc043bbbef.html](https://global.chinadaily.com.cn/a/202403/11/WS65ee4624a31082fc043bbbef.html).
+
+Yin, C. 2013. Visa issues for foreigners resolved in new policy. _China Daily,_ updated August 30, 2013. [http://usa.chinadaily.com.cn/epaper/2013-08/30/content_16932405.htm](http://usa.chinadaily.com.cn/epaper/2013-08/30/content_16932405.htm).
+
+Yin, Q. 2023. Even as tensions grow, U.S.-China joint venture universities have room to develop. _New Perspectives on Asia_ (blog), September 6, 2023. Center for Strategic and International Studies. [https://www.csis.org/blogs/new-perspectives-asia/even-tensions-grow-us-china-joint-venture-universities-have-room](https://www.csis.org/blogs/new-perspectives-asia/even-tensions-grow-us-china-joint-venture-universities-have-room).
+
+Yoon, J. 2024. Foreign-born share of the U.S. STEM workforce. _Innovation Lightbulb,_ April 5, 2024. Center for Strategic and International Studies. [https://www.csis.org/analysis/innovation-lightbulb-foreign-born-share-us-stem-workforce](https://www.csis.org/analysis/innovation-lightbulb-foreign-born-share-us-stem-workforce).
+
+Yu, J., and S. Wang. 2018. R Visa: A New Type of Visa for Foreign Talents in China. [https://www.lexology.com/library/detail.aspx?g=acd0116a-ed17-420e-9293-6e6a3ade5652](https://www.lexology.com/library/detail.aspx?g=acd0116a-ed17-420e-9293-6e6a3ade5652).
+
+Zamora, L., and J. Mason. 2017. Merit-based immigration system. _Bipartisan Policy Center_ (blog), April 11, 2017. [https://bipartisanpolicy.org/blog/merit-based-immigration/](https://bipartisanpolicy.org/blog/merit-based-immigration/).
+
+Zavodny, M. 2020. _The Impact of H-1B Visa Holders on the U.S. Workforce._ NFAP Policy Brief, May 2020. Arlington, VA: National Foundation for American Policy. [https://nfap.com/studies/the-impact-of-h-1b-visa-holders-on-the-u-s-workforce/](https://nfap.com/studies/the-impact-of-h-1b-visa-holders-on-the-u-s-workforce/).
+
+Zavodny, M. 2021. _The Impact on U.S. Men and Women in STEM Fields of increases in International Students._ NFAP Policy Brief, April 2021. Arlington, VA: National Foundation for American Policy. [https://nfap.com/wp-content/uploads/2021/04/International-Students-and-STEM.NFAP-Policy-Brief.April-2021.pdf](https://nfap.com/wp-content/uploads/2021/04/International-Students-and-STEM.NFAP-Policy-Brief.April-2021.pdf).
+
+Zhang, J. 2024. Overblown or legitimate: Are Chinese students targeted by CBP at U.S. airports? _U.S.-China Perception Monitor,_ May 20, 2024. [https://uscnpm.org/2024/05/20/overblown-or-legitimate-are-chinese-students-targeted-by-cbp-at-us-airports/](https://uscnpm.org/2024/05/20/overblown-or-legitimate-are-chinese-students-targeted-by-cbp-at-us-airports/).
+
+Zhang, J., and Z. Wang. 2024. How U.S. Customs shattered Chinese female PhD students’ American Dream. _Pekingnology,_ January 5, 2024. [https://www.pekingnology.com/p/how-us-customs-shattered-chinese](https://www.pekingnology.com/p/how-us-customs-shattered-chinese).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Zhao, D. 1996. Foreign study as a safety-valve: The experience of China’s university students going abroad in the eighties. _Higher Education_ 31(2): 145–163. [https://www.jstor.org/stable/3447882](https://www.jstor.org/stable/3447882).
+
+Zhao, L., and J. Zhu. 2017. China’s talent schemes: Initiatives from central to local governments. _East Asian Policy,_ East Asian Institute, National University of Singapore. [https://research.nus.edu.sg/eai/wp-content/uploads/sites/2/2017/11/Vol1No4_ZhaoLitaoZhuJinjing.pdf](https://research.nus.edu.sg/eai/wp-content/uploads/sites/2/2017/11/Vol1No4_ZhaoLitaoZhuJinjing.pdf).
+
+Zhu, J. 2018. Some Chinese students shun the ‘rich’ title. _Voice of America,_ November 23, 2018. [https://www.voanews.com/a/us-colleges-expensive-for-chinese-students/4671154.html](https://www.voanews.com/a/us-colleges-expensive-for-chinese-students/4671154.html).
+
+Zhu, J., F. Potkin, E. Baptista, and M. Martina. 2023. Insight: China quietly recruits overseas chip talent as US tightens curbs. _Reuters,_ August 24, 2023. [https://www.reuters.com/technology/china-quietly-recruits-overseas-chip-talent-us-tightens-curbs-2023-08-24/](https://www.reuters.com/technology/china-quietly-recruits-overseas-chip-talent-us-tightens-curbs-2023-08-24/).
+
+Ziabari, K. 2023. Iran’s brain drain accelerates as crackdown on dissent intensifies. _Stimson Center,_ May 2, 2023. [https://www.stimson.org/2023/irans-brain-drain-accelerates-as-crackdown-on-dissent-intensifies/](https://www.stimson.org/2023/irans-brain-drain-accelerates-as-crackdown-on-dissent-intensifies/).
+
+Zweig, D. 2006. Competing for talent: China’s strategies to reverse the brain drain. _International Labour Review_ 145. [https://heinonline.org/HOL/Page?handle=hein.journals/intlr145&div=9&g_sent=1&casa_token=&collection=journals](https://heinonline.org/HOL/Page?handle=hein.journals/intlr145&div=9&g_sent=1&casa_token=&collection=journals).
+
+Zweig, D. 2024. “China’s Talent Programs: Lessons for the U.S.?” Paper commissioned by the International Talent Programs Consensus Study Committee. Washington, DC: National Academies of Sciences, Engineering, and Medicine.
+
+Zweig, D., and S. Kang. 2020. _America Challenges China’s National Talent Programs._ Center for Strategic and International Studies. [https://www.csis.org/analysis/america-challenges-chinas-national-talent-programs](https://www.csis.org/analysis/america-challenges-chinas-national-talent-programs).
+
+Zweig, D., and H. Wang. 2013. Can China bring back the best? The Communist Party organizes China’s search for talent. _The China Quarterly_ 215 (September 2013): 590–615. [https://www.jstor.org/stable/23510804](https://www.jstor.org/stable/23510804).
+
+Zweig, D., C. S. Fung, and D. Han. 2008. Redefining the brain drain: China’s “Diaspora Option.” _Science, Technology and Society_ 13(1). First published online May 1, 2008. [https://journals.sagepub.com/doi/10.1177/097172180701300101](https://journals.sagepub.com/doi/10.1177/097172180701300101).
+
+Zweig, D., S. Kang, and H. Wang. 2020. “The best are yet to come”: State programs, domestic resistance and reverse migration of high-level talent to China. _Journal of Contemporary China_ 776–791. [https://doi.org/10.1080/10670564.2019.1705003](https://doi.org/10.1080/10670564.2019.1705003).
+
+Zweig, D., K. S. Tsai, and A. D. Singh. 2021. Reverse entrepreneurial migration in China and India: The role of the state. _World Development_ 138. [https://doi.org/10.1016/j.worlddev.2020.105192](https://doi.org/10.1016/j.worlddev.2020.105192).
+
+Zwetsloot, R. 2020. _China’s Approach to Tech Talent Competition: Policies, Results, and the Developing Global Response._ Brookings Institution in partnership with Center for Security and Emerging Technology. [https://www.brookings.edu/wp-content/uploads/2020/04/FP_20200427_china_talent_policy_zwetsloot.pdf](https://www.brookings.edu/wp-content/uploads/2020/04/FP_20200427_china_talent_policy_zwetsloot.pdf).
+
+Zwetsloot, R. 2021. _Winning the Tech Talent Competition._ Center for Strategic and International Studies, October 28, 2021. [https://www.csis.org/analysis/winning-tech-talent-competition](https://www.csis.org/analysis/winning-tech-talent-competition).
+
+**Suggested Citation:** "References." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/12 -->
+
+## 官方在线阅读第12章
+
+**Suggested Citation:** "Appendix A: Committee Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [Appendix A Committee Biographical Information](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_appAa)
+
+### **MARK A. BARTEAU (CHAIR)**
+
+Mark A. Barteau is the Charles D. Holland ‘53 Chair in Chemical Engineering and professor of chemistry at Texas A&M University, where he previously served as the vice president for research from 2018 to 2021. He was director of the University of Michigan Energy Institute from 2012 to 2018. Prior to that he was the senior vice provost for research and strategic initiatives at the University of Delaware, with appointments as the Robert L. Pigford Endowed Chair of Chemical Engineering and Professor of Chemistry. He was elected to the National Academy of Engineering in 2006 and the National Academy of Inventors in 2018. He received his B.S. degree in chemical engineering from Washington University in St. Louis, and his M.S. and Ph.D. from Stanford. He was a National Science Foundation postdoctoral fellow at the Technische Universität München. Dr. Barteau’s research focuses on chemical reactions at surfaces and their applications in catalysis and energy processes. He has served on numerous boards and committees, including the Board on Chemical Sciences and Technology of the National Academies of Sciences, Engineering, and Medicine; the National Academies’ Chemical Sciences Roundtable (co-chair); the Council of Chemical Sciences of the Department of Energy (DOE) Office of Science (chair); and the science advisory committee for the Environmental Molecular Sciences Lab at Pacific Northwest National Laboratory.
+
+**Suggested Citation:** "Appendix A: Committee Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+### **CHAOUKI T. ABDALLAH**
+
+Chaouki Abdallah is the executive vice president for at the Georgia Institute of Technology. As chief research officer, he provides leadership for $1.3 billion portfolio of research, economic development, and sponsored activities, including the Georgia Tech Research Institute, 10 interdisciplinary research institutes, and related support units. He also serves on the executive committee for the Government-University-Industry Research Roundtable, and the advisory committee for the Center on Measuring University Performance. Since he assumed his role, Tech’s research expenditures increased by 50 percent. Under his leadership, Georgia Tech also launched the Commission on Research Next plan to map a comprehensive future for research at Tech and bolster commercialization and tech transfer initiatives, and grow collaborations with industry, government, the national labs, and foundations. Between 2011 and 2018, he was the provost, and between January 2017 and March 2018, he was the president of the University of New Mexico (UNM). He led academic strategic plans that improved the 4-year graduate rates at UNM by more than 100 percent. His research expertise includes systems theory, research policies, and academic leadership and student success. He is a senior member of the Institute of Electrical and Electronics Engineers (IEEE) and recipient of the IEEE millennium medal. He currently serves on the National Academies’ National Science, Technology, and Security Roundtable.
+
+### **HANNAH L. BUXBAUM**
+
+Hannah Buxbaum is vice president for international affairs at Indiana University (IU). She is also professor of law and John E. Schiller Chair at IU’s Maurer School of Law, where she previously held leadership roles including as interim dean (2012–2014). As vice president, she advances global engagement across IU’s seven campuses, including the Bloomington and Indianapolis campuses, which are home to thousands of international graduate students, visiting scholars, and faculty members. She oversees the offices that manage international admissions and student services, study abroad, international partnerships, and international development, as well as the university’s five Global Gateway offices. Ms. Buxbaum serves on the Fulbright Scholar Council for International Exchange of Scholars Advisory Board and is currently chair of the Big Ten Academic Alliance’s Senior International Officer group. She is a member of the National Academies’
+
+**Suggested Citation:** "Appendix A: Committee Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Ad Hoc Consensus Study Committee on Confucius Institutes. She is an elected member of the American Law Institute and the International Academy of Comparative Law and serves on the U.S. State Department’s Advisory Committee on Private International Law. She holds a B.A. from Cornell University, a J.D. from Cornell Law School, and an LL.M. from the University of Heidelberg.
+
+### **CHRISTOPHER J. CRAMER**
+
+Since 2021, Christopher Cramer has served as senior vice president and the inaugural chief research officer for UL Research Institutes, a nonprofit charitable organization focused on safety-science research. Previously, he spent 29 years in higher education as a faculty member and administrator, culminating in 3 years of service as the University of Minnesota’s vice president for research. Trained as a chemist, Dr. Cramer’s individual interests encompass modeling catalysis to advance sustainable chemistry and chemical processes; molecular and material phenomena associated with solar energy devices and semiconductors; and remediation of environmental contaminants and chemical warfare agents. He has received various recognitions, including the Arthur S. Flemming and Arthur C. Cope Scholar Awards, and he has been named as a fellow by the American Chemical Society, as well as by the Alfred P. Sloan and John Simon Guggenheim foundations. He earned his A.B. in mathematics and chemistry from Washington University in St. Louis and his Ph.D. in chemistry from the University of Illinois at Urbana-Champaign.
+
+### **CHRISTOPHER P. FALL**
+
+Chris Fall is the vice president for applied sciences at the MITRE Corporation. Most recently, he served as the director of the Department of Energy (DOE) Office of Science, which is the United States’ largest supporter of basic research in the physical sciences and is responsible for 10 of the DOE national laboratories. Before leading the Office of Science, he served as a senior advisor to the undersecretary for energy and as acting director of the Advanced Research Projects Agency—Energy. He moved to DOE from the Office of Naval Research (ONR), where he served as acting chief scientist, lead for the research directorate, deputy director of research, director of the International Liaison Office, and the ONR innovation fellow. He also served for 3 years in the White House Office of Science and
+
+**Suggested Citation:** "Appendix A: Committee Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Technology Policy with a variety of responsibilities, including as assistant director for defense programs and then as acting lead for the National Security and International Affairs Division. Dr. Fall came to government service from academia, where his research focus was neurobiology and bioengineering. He earned a Ph.D. in neuroscience and a B.S. in mechanical engineering from the University of Virginia and an M.B.A. from the Kellogg School of Management at Northwestern University.
+
+### **BRADLEY FARNSWORTH**
+
+Bradley Farnsworth is the principal for Fox Hollow Advisory, a consulting firm focusing on strategic planning and international higher education, with an emphasis on engagement with China. He was previously vice president for global engagement at the American Council on Education (ACE). Before ACE, he spent 30 years at Yale University and the University of Michigan as an instructor and director of international programs. He administered more than 100 international research grants to University of Michigan faculty and doctoral students while director of the Center for International Business Education. He taught courses to M.B.A.s, undergraduates, and executives on China, the global economy, international management, and globalization. He also designed and led study abroad programs in China. He recently published a paper through the University of California Berkeley on international research collaboration and research integrity, with a focus on China and its talent programs. He was the lead author for a study on the post-COVID-19 environment for international exchanges, with a chapter devoted to international research collaboration, sponsored by the Konrad Adenauer Foundation. Mr. Farnsworth is a member of the National Committee on U.S.-China Relations and several advisory boards. He has traveled to China regularly, starting in the early 1980s. He earned an M.A. in Chinese studies, an M.B.A. in international business, and a B.A. in history and Asian studies, with honors, all from Washington University in St. Louis.
+
+### **SURESH V. GARIMELLA**
+
+Suresh Garimella is the 27th president of the University of Vermont (UVM). Under his leadership, UVM has underscored its reputation as a premier flagship research university dedicated to providing an outstanding student experience and committed to fulfilling its land-grant mission. As president, he has prioritized access and affordability for UVM students, freezing tuition
+
+**Suggested Citation:** "Appendix A: Committee Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+5 consecutive years, and attracting record numbers of undergraduate applications. His strategic vision likewise promotes UVM’s distinctive research strengths in healthy societies and a healthy environment, driving an increase in research funding over 50 percent, surpassing a quarter-billion dollars for the first time. A passionate educator and mentor and a highly cited scholar and researcher, Dr. Garimella has made seminal contributions to the field of electronics thermal management at micro- and nano-scales, and in sustainable energy systems technology and policy. He is the co-author of more than 625 refereed publications and 16 patents and is an elected fellow of the National Academy of Inventors. He is a member of the National Science Board, which oversees the National Science Foundation and advises the President and Congress on policy matters related to science and engineering. He serves on the research advisory board of Sandia National Laboratories and has also served as a Jefferson Science fellow at the U.S. Department of State. Dr. Garimella came to Vermont from Purdue University, where he was Goodson Distinguished Professor and executive vice president for research and partnerships. He led Purdue’s $660 million research enterprise, reaching 5 consecutive record years in sponsored funding, and helping seed about 50 startups annually. He established comprehensive strategic partnerships with major corporations, nongovernmental organizations, and national governments and institutions in Colombia, India, and the Middle East.
+
+### **XIHONG LIN**
+
+Xihong Lin is professor and former chair of biostatistics, coordinating director of the Program in Quantitative Genomics at the Harvard T. H. Chan School of Public Health, and Professor of Statistics of Harvard University. Dr. Lin’s research interests lie in development and application of scalable statistical and machine learning methods for analysis of massive high-throughput data from genome, exposome and phenome, and complex epidemiological, biobank, and health data. Her research is supported by the Outstanding Investigator Award (R35) (2015–2029) from the National Cancer Institute. She is an elected member of the National Academy of Medicine. She received the 2002 Mortimer Spiegelman Award from the American Public Health Association, the 2006 Presidents’ Award of the Committee of Presidents of Statistical Societies (COPSS), and the 2022 Marvin Zelen Leadership in Statistical Science Award. She is an elected fellow of American Statistical Association, Institute of Mathematical Statistics, and International Statistical Institute. Dr. Lin is the former chair
+
+**Suggested Citation:** "Appendix A: Committee Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+of the COPSS, and a former member of the Committee of Applied and Theoretical Statistics of the National Academy of Sciences. She is the former coordinating editor of _Biometrics_ and the founding co-editor of _Statistics in Biosciences._
+
+### **TSU-JAE K. LIU**
+
+Tsu-Jae King Liu is dean of the College of Engineering and a distinguished professor of electrical engineering and computer sciences (EECS) at University of California, Berkeley. Previously she served as vice provost for academic and space planning, and in this role served as UC Berkeley’s chief international officer overseeing international agreements and partnerships. She also serves as a director of Intel Corp. and as a director of MaxLinear, Inc. Dr. Liu joined the UC Berkeley EECS faculty in 1996, where she has taught and conducted research on semiconductor devices and technology. She is a fellow of Institute of Electrical and Electronics Engineers (IEEE) and the National Academy of Inventors as well as an elected member of the U.S. National Academy of Engineering. Her research contributions have been recognized by many awards, including the DARPA Significant Technical Achievement Award for her role in the development of the FinFET, an advanced transistor design used in all leading-edge computer chips today. For her outstanding contributions as an educator, Dr. Liu was honored with the Semiconductor Research Corporation Aristotle Award and the IEEE Electron Devices Society Education Award. She earned her B.S., M.S., and Ph.D. degrees, all in electrical engineering, from Stanford University.
+
+### **PATRICK F. MENSAH**
+
+Patrick Mensah is a professor of mechanical engineering and serves as the associate dean for research and graduate programs in the College of Sciences and Engineering at Southern University (SU) and A&M College. He worked at the National Science Foundation as a program director (2007— 2009) as the director of the Centers of Research Excellence in Science and Technology and HBCU (Historically Black Colleges and Universities) RISE Program. His research expertise in thermo-mechanical modeling, processing, and characterization of advanced materials has resulted in more than 100 refereed articles. He has served as the chair of American Society of Mechanical Engineers (ASME) K–15 Committee on Transport Phenomena in Materials Processing and Manufacturing. Dr. Mensah currently serves as
+
+**Suggested Citation:** "Appendix A: Committee Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+a member of the Standing Council of the Engineering Research Visioning Alliance funded by the National Science Foundation. His scholarly activities in research and international research community is embodied in the various honors including 2014 Carnegie African Diaspora fellow, 2013 fellow of ASME, 2010 National Role Model Faculty Award presented by Minority Access, 2005 SU Teacher of the Year, 2002 ASME International Eckart Service Award, American Society for Engineering Education membership, and 2002 SU Outstanding Researcher, among others. He received his B.S. and M.S. degrees in mechanical engineering from the University of Wisconsin–Milwaukee and Ph.D. in engineering science from Louisiana State University.
+
+### **AMY M. NICE**
+
+Amy Nice is a distinguished immigration fellow and visiting scholar with Cornell’s Immigration Law and Policy Program, and distinguished immigration counsel with the nonpartisan Institute for Progress that works on innovation policy. She has been an immigration lawyer for 35 years, working full-time in the policy realm since 2010. From June 2021 to January 2023, she served as an assistant director of the White House Office of Science and Technology Policy, responsible for leading efforts on science, technology, engineering, and mathematics (STEM) talent policy. Her policy efforts also encompass supporting coalitions between higher education and industry addressing issues affecting scholars and students during the Trump administration, serving during the last 16 months of the Obama administration at Department of Homeland Security headquarters focused on new policies on practical training for international students in STEM degree programs in the United States, and before that, working as the executive director of immigration policy at the U.S. Chamber of Commerce for almost 5 years, where she primarily pushed legislative reforms including involvement on S. 744, the bipartisan immigration reform bill that passed the U.S. Senate. From October 1989 to December 2010, she practiced immigration law at the Washington, DC, firm of Dickstein Shapiro. She is a Phi Beta Kappa, magna cum laude graduate of Tulane University, where she studied medieval history, including 1 year studying abroad in England, and earned her law degree at George Washington University.
+
+**Suggested Citation:** "Appendix A: Committee Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+### **HARRIS PASTIDES**
+
+Harris Pastides is distinguished president emeritus and distinguished professor emeritus at the University of South Carolina. He has served as the institution’s president and interim president, vice president for research and health sciences, and dean of the Arnold School of Public Health. He chairs the Fulbright Advisory Board and is a member of the Institute for International Education’s Board of Directors and Executive Committee. He is former chair of the Universities Research Association and former board member of the U.S. Council on Competitiveness. He was one of seven Fulbright alumni to receive the inaugural Global Changemaker Award and received the Ellis Island Medal of Honor in 2017. He previously has been a member of or advisor to several National Academy of Sciences committees, including the Board on Science and Technology for International Development.
+
+### **KIRON SKINNER**
+
+Kiron Skinner is the Taube Family Chair of International Relations and Politics at the Pepperdine School of Public Policy at Pepperdine University, a research fellow at the Hoover Institution, and a visiting fellow at the Heritage Foundation. Her expertise is in international relations, national security, great power competition, public policy, and higher education. She contributed to a National Academy of Sciences study on bringing analytical social science to the intelligence community and received the Distinguished Service Award from the Chief of Naval Operations in 2015. She holds an A.B. in political science from Spelman College and an A.M. and a Ph.D. in political science and international relations from Harvard University. She also received an honorary doctorate of laws from Molloy College on Long Island.
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/13 -->
+
+## 官方在线阅读第13章
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[Previous Chapter: Appendix A: Committee Biographical Information](https://www.nationalacademies.org/read/27787/chapter/12)
+
+**Suggested Citation:** "Appendix B: Glossary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [Appendix B Glossary](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_appBa)
+
+| **Term** | **Definition** |
+| --- | --- |
+| Co-publish | To publish (an academic article) jointly |
+| Five Eyes | An intelligence alliance between the United States, the United Kingdom, Canada, Australia, and New Zealand |
+| Foreign talent recruitment program | “Any program, position, or activity that includes compensation in the form of cash, in-kind compensation, including research funding, promised future compensation, complimentary foreign travel, things of non de minimis value, honorific titles, career advancement opportunities, or other types of remuneration or consideration directly provided by a foreign country at any level (national, provincial, or local) or their designee, or an entity based in, funded by, or affiliated with a foreign country, whether or not directly sponsored by the foreign country, to an individual, whether directly or indirectly stated in the arrangement, contract, or other documentation at issue” ([Prabhakar, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref614)) |
+| Fundamental research | Basic or applied research in science and engineering that does not place any restrictions on publication or who may participate, and is not subject to export controls |
+
+**Suggested Citation:** "Appendix B: Glossary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Immigrant A foreign national wishing to enter and remain in the United States on a permanent basis
+Immigrant-origin students Students who are first- or second-generation immigrants to the United States. First-generation immigrants were born abroad and immigrated to the United States, while second-generation students were born in the United States and have at least one parent who is an immigrant
+Malign foreign talent recruitment program“(A) any program, position, or activity that includes compensation in the form of cash, in-kind compensation, including research funding, promised future compensation, complimentary foreign travel, things of non de minimis value, honorific titles, career advancement opportunities, or other types of remuneration or consideration directly provided by a foreign country at any level (national, provincial, or local) or their designee, or an entity based in, funded by, or affiliated with a foreign country, whether or not directly sponsored by the foreign country, to the targeted individual, whether directly or indirectly stated in the arrangement, contract, or other documentation at issue, in exchange for the individual—
+(i) engaging in the unauthorized transfer of intellectual property, materials, data products, or other nonpublic information owned by a United States entity or developed with a Federal research and development award to the government of a foreign country or an entity based in, funded by, or affiliated with a foreign country regardless of whether that government or entity provided support for the development of the intellectual property, materials, or data products;
+(ii) being required to recruit trainees or researchers to enroll in such program, position, or activity;
+(iii) establishing a laboratory or company, accepting a faculty position, or undertaking any other employment or appointment in a foreign country or with an entity
+
+**Suggested Citation:** "Appendix B: Glossary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+based in, funded by, or affiliated with a foreign country if such activities are in violation of the standard terms and conditions of a Federal research and development award;
+(iv) being unable to terminate the foreign talent recruitment program contract or agreement except in extraordinary circumstances;
+(v) through funding or effort related to the foreign talent recruitment program, being limited in the capacity to carry out a research and development award or required to engage in work that would result in substantial overlap or duplication with a Federal research and development award;
+(vi) being required to apply for and successfully receive funding from the sponsoring foreign government’s funding agencies with the sponsoring foreign organization as the recipient;
+(vii) being required to omit acknowledgment of the recipient institution with which the individual is affiliated, or the Federal research agency sponsoring the research and development award, contrary to the institutional policies or standard terms and conditions of the Federal research and development award;
+(viii) being required to not disclose to the Federal research agency or employing institution the participation of such individual in such program, position, or activity; or
+(ix) having a conflict of interest or conflict of commitment contrary to the standard terms and conditions of the Federal research and development award; and
+(B) a program that is sponsored by—
+(i) a foreign country of concern or an entity based in a foreign country of concern, whether or not directly sponsored by the foreign country of concern;
+
+**Suggested Citation:** "Appendix B: Glossary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+(ii) an academic institution on the list developed under section 1286(c)(8) of the John S. McCain National Defense Authorization Act for Fiscal Year 2019 (10 U.S.C. 4001 note; Public Law 115-232); or
+(iii) a foreign talent recruitment program on the list developed under section 1286(c)(9) of the John S. McCain National Defense Authorization Act for Fiscal Year 2019 (10 U.S.C. 4001 note; Public Law 115-232).” ([Prabhakar, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref614))
+Nonimmigrant A foreign national wishing to enter the United States on a temporary basis, whether for tourism, business, medical treatment, temporary work, or study
+Points-based immigration system An immigration system in which a government devises a set of attributes or characteristics that it deems important and that are assigned specific point values; applicants who amass a requisite number of points are eligible to apply for a visa independent of employment or an employer-sponsored visa Additional information available in [Box 5-1](https://www.nationalacademies.org/read/27787/chapter/7#chapter05_box5-1)
+Scientific publication output The number of articles or publications published, does not include other bibliometric data
+STEM Science, technology, engineering, and mathematics Additional information available in [Box 2-1](https://www.nationalacademies.org/read/27787/chapter/4#chapter02_box2-1)
+Talent The individuals who drive the knowledge economy through skills and expertise that they possess, impacting science, engineering, and economic development ([Kerr, 2018](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref390))
+
+**Suggested Citation:** "Appendix B: Glossary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Transnational Repression The practice by which individuals or groups are targeted by authoritarian regimes beyond their borders, often through extrajudicial means, with the intent of suppressing dissent, silencing opposition, or punishing perceived threats to their power
+This can include harassment, intimidation, surveillance, abduction, and assassination
+
+**Suggested Citation:** "Appendix B: Glossary." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.
+
+[Next Chapter: Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States](https://www.nationalacademies.org/read/27787/chapter/14)
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/14 -->
+
+## 官方在线阅读第14章
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[Previous Chapter: Appendix B: Glossary](https://www.nationalacademies.org/read/27787/chapter/13)
+
+**Suggested Citation:** "Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [Appendix C Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_appCa)
+
+The following is a non-exhaustive list of foreign talent recruitment programs that may pose a threat to the national security interests of the United States. Many of the programs listed below originate from a list of nearly 200 talent recruitment schemes released by China’s State Administration of Foreign Experts Affairs in 2018 and presented in Appendix 1 of the Australian Strategic Policy Institute’s _Hunting the Phoenix_ report ([Joske, 2020a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref373)). The committee also reviewed lists of talent programs compiled by Georgetown University’s Center for Security and Emerging Technology, the University of Minnesota Export Controls Office, Jeffrey Stoff at the Center for Research Security & Integrity, and the U.S. government, specifically Table 2: Foreign Talent Programs That Pose a Threat to National Security Interests of the United States in the _Countering Unwanted Foreign Influence in Department-Funded Research at Institutions of Higher Education_ report released by the Department of Defense in June 2023 and the “Guidelines for Federal Research Agencies Regarding Foreign Talent Recruitment Programs” memorandum released by the Office of Science and Technology Policy in February 2024 ([DOD, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref173); [Prabhakar, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref614); [Stoff, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref716); [University of Minnesota, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref788); [Weinstein, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref839)).
+
+The committee notes that “any program that meets one of the criteria contained in Section 10638 (4)(A) and either Section 10638 (4)(B)(i) or (ii) in the _CHIPS and Science Act of 2022”_ or any program that is sponsored by “a foreign country of concern or an entity based in a foreign country of concern, whether or not directly sponsored by the foreign country of concern;
+
+**Suggested Citation:** "Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+an academic institution on the list developed under section 1286(c)(8) of the _John S. McCain National Defense Authorization Act for Fiscal Year 2019_ (10 U.S.C. 4001 note; Public Law 115-232); or a foreign talent recruitment program on the list developed under section 1286(c)(9) of the _John S. McCain National Defense Authorization Act for Fiscal Year 2019_ (10 U.S.C. 4001 note; Public Law 115-232) is considered to be a malign foreign talent recruitment program ([DOD, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref173); [Prabhakar, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref614)).
+
+**China**
+
+**Government of China – Organization Department**
+
+*   Recruitment Program of Global Experts or Thousand Talents Plan
+*   Young Thousand Talents Plan
+
+**Government of China – Ministry of Human Resources and Social Security**
+
+*   Project for Experts’ Return and Settlement in China
+*   Funding Scheme for High-Level Overseas Chinese Students’ Return
+*   Funding Scheme for Outstanding Scientific and Technological Programs by Chinese Students Abroad
+*   Supporting Scheme for Returned Overseas Chinese Students’ Entrepreneurial Start-ups
+*   Project on Postdoctoral International Exchanges
+*   Homeland-Serving Action Plan for Overseas Chinese
+
+**Government of China – State Administration of Foreign Experts Affairs (SAFEA)**
+
+*   High-End Foreign Experts Project
+*   Chinese Government Friendship Award
+*   Program for the Introduction of High-Level Overseas Cultural and Educational Experts
+*   Program for the Introduction of Renowned Overseas Professors
+*   Network in International Centers for Education in China
+*   OEI for Disciplinary Innovation in Universities
+*   OEI under Belt and Road Initiative in Cultural and Educational Sector
+*   Overseas Experts Supporting Programs under National Research Platform
+*   Dialogue with Masters – Nobel Prize Laureates on Campus
+
+**Suggested Citation:** "Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+*   Introduction of Overseas Young Talents in Cultural and Educational Sector
+*   Special Programs with Universities Directly under the Administration of Ministries and Commissions of the Central Government
+*   Project for Chief Foreign Experts
+*   Project for Young Foreign Experts in Economic and Technological Sector
+
+**Government of China – Changjiang Scholars Program**
+
+*   Changjiang Scholars Program
+*   Changjiang Scholars Award Program (Young Scholars)
+*   Changjiang Scholars Award Program (Chair Professor)
+*   Changjiang Scholars Award Program (Distinguished Professor)
+
+**Government of China – Ministry of Agriculture**
+
+*   Young Talents Program under the Chinese Academy of Agricultural Sciences
+
+**Government of China – Ministry of Culture**
+
+*   Recruitment Plan for High-Level Overseas Cultural Talents
+
+**Government of China – Ministry of Education**
+
+*   111 Program, 111 Project, or Project 111
+*   Chunhui Award
+*   Chunhui Program
+*   Sino-US Fulbright Program
+*   Young Changjiang Scholar Program
+
+**Government of China – Ministry of Industry and Information Technology**
+
+*   Qiming Plan
+
+**Government of China – Ministry of Land and Resources**
+
+*   Youth Talent Plan of Huangjiqing
+
+**Government of China – Ministry of Science and Technology**
+
+*   863 Program or State High-Tech Development Plan or National High-Tech R&D Program
+*   973 Program or National Basic Research Program
+*   National Key Technologies R&D Program
+
+**Suggested Citation:** "Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+*   National Science Fund for Distinguished Young Scholars under the National Natural Science Foundation of China
+*   Science Fund for Emerging Distinguished Young Scholars under the National Natural Science Foundation of China
+
+**Government of China – National Health Commission**
+
+*   532 Talents Program under the China National Center for Food Safety Risk Assessment
+
+**Government of China – Chinese Academy of Sciences**
+
+*   Hundred Talent Program
+*   New Hundred Talent Program
+*   Program for Innovation Teams on International Cooperation
+*   Chinese Academy of Sciences Program for Overseas Evaluation Experts
+*   Program for the Introduction of Prominent Technical Talents
+
+**Government of China – China Meteorological Administration**
+
+*   Project for Hundred Talents Introduction and Hundred Talents Selection
+
+**Government of China – State Nuclear Power Technology Corporation**
+
+*   Program for Foreign High-Level Talents Introduction
+
+**Beijing Municipality**
+
+*   Program for Overseas Talents Aggregation
+*   Great Minds Gather in Beijing Plan
+
+**Tianjin Municipality**
+
+*   Tianjin Haihe Friendship Award
+*   Program for Overseas High-Level Talents Introduction
+*   1,000 Foreign Experts Introduction Plan
+*   Tianjin Municipal Distinguished Professor
+*   Plan of Supporting Entrepreneurial Talents Returning from Studying Overseas
+*   Plan of Funding Outstanding Science and Technology Projects Launched by Talents Returning from Studying Overseas
+
+**Suggested Citation:** "Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Hebei Province**
+
+*   100 Talents Plan of Hebei Province
+*   100 Foreign Experts Introduction Plan
+*   Yanzhao Friendship Award
+
+**Shanxi Province**
+
+*   100 Talents Plan on Overseas High-Level Talents Introduction
+*   Shanxi Provincial Friendship Award
+*   Shanxi Province Plan of Funding Outstanding Young Talents
+*   Program for Cultivating Excellent Entrepreneurs
+
+**Inner Mongolia Autonomous Region**
+
+*   Program for Grassland Elite
+*   Inner Mongolia Steed Award
+*   Program for High-Level Talents Introduction
+
+**Liaoning Province**
+
+*   10-100-1,000 Program for High-End Talents Introduction
+*   Friendship Award of Liaoning Province
+*   Program for Key Foreign Experts Introduction
+
+**Shenyang City**
+
+*   Shenyang Rose Award
+*   Program for Overseas Research and Development Team Introduction
+
+**Dalian City**
+
+*   High-Level Talents Introduction Plan
+*   Plan to Promote and Congregate a Gathering of Outstanding Overseas Experts
+*   Overseas High-Level Talents Introduction Plan
+
+**Jilin Province**
+
+*   Program for High-Level Entrepreneurial and Innovative Talents Introduction
+*   Changbai Mountain Friendship Award
+*   Funding Program for Preferential Returned Scientific Research Students Innovative and Start-ups
+*   Funding Program for Preferential Postdoctorate Scientific Research
+
+**Suggested Citation:** "Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Changchun City**
+
+*   Friendship Award
+*   Excellent Foreign Experts
+
+**Heilongjiang Province**
+
+*   1,000 Talent Plan of Heilongjiang
+*   Heilongjiang Belt and Road Talent Introduction Project
+*   Special Supporting Plan for Talents of Science and Technology
+*   Funding Program for Preferential Postdoctorate Scientific Research
+
+**Harbin City**
+
+*   Harbin Talents Aggregation Program
+
+**Shanghai Municipality**
+
+*   Program for High-Level Overseas Talents Introduction
+*   1,000 Talents Plan of Shanghai
+*   Shanghai Outstanding Academic Leaders Plan
+*   Shanghai Magnolia Award
+*   Shanghai Pujiang Program
+*   Shanghai Program for Professor of Special Appointment Eastern Scholar at Shanghai Institutions of Higher Learning
+*   Shanghai Rising-Star Program
+*   Shanghai Excellent Academic/Technology Research Leader Program
+*   Shanghai Financial Talent Project
+
+**Jiangsu Province**
+
+*   Program for High-Level Entrepreneurial and Innovative Talents Introduction
+*   100 Foreign Experts Introduction Plan
+*   Recruitment Program of Returned Overseas Chinese Scholars
+*   Jiangsu Six Talent Peaks Program
+*   Jiangsu Specially Appointed Professor Program
+*   Jiangsu Friendship Award
+
+**Nanjing City**
+
+*   321 Program for Talents Introduction
+*   Venture Nanjing Talent Program
+*   Program for High-Level Talent Team Introduction
+
+**Suggested Citation:** "Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Zhejiang Province**
+
+*   1,000 Talents Plan of Zhejiang Province
+*   Zhejiang Overseas Engineers Program
+*   Zhejiang West Lake Friendship Award for Foreign Experts
+*   Program of Foreign Expertise Introduction of Zhejiang Province
+*   College Elites Aggregation Program of Zhejiang Province
+
+**Hangzhou City**
+
+*   521 Program for Global Talents Introduction
+*   Hangzhou 115 Overseas Talents Introduction Plan
+*   Hangzhou Qianjiang Friendship Award for Foreign Experts
+*   Ningbo City
+*   3315 Talents Program
+*   Ningbo Overseas Engineers Experts Program
+*   Camellia Prize
+
+**Anhui Province**
+
+*   100 Talents Plan of Anhui Province
+*   100 Foreign Experts Introduction Plan
+*   Huangshan Friendship Award
+
+**Fujian Province**
+
+*   Program for High-Level Entrepreneurial and Innovative Talents Introduction
+*   100 Talents Plan Foreign Experts Program
+*   Program for Overseas High-Level Talents Introduction into Fujian Free Trade Pilot Zone
+*   Fujian Province Program for High-Level Talents Introduction (A, B, and C Class)
+*   Program for High-End Foreign Expert Groups Introduction
+*   Program for Young Foreign Experts Introduction
+*   Fujian Friendship Award
+*   Program for Overseas High-Level Talents Introduction
+
+**Xiamen City**
+
+*   Xiamen City Program for ARRIS
+*   Double-Hundred Talents Plan for High-Level Talents Introduction
+*   Egret Friendship Award
+
+**Suggested Citation:** "Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Jiangxi Province**
+
+*   Program for Domestic and Overseas High-Level Technical Talents Introduction
+*   Program for High-End Foreign Experts and Overseas Engineers in Short Supply Introduction
+*   Program for Overseas Medical Research Talents Introduction
+*   Lushan Friendship Award
+*   Program for High-Level Entrepreneurial and Innovative Talents Introduction and High-End Talents Flexible Introduction
+
+**Shandong Province**
+
+*   Taishan Scholars Project
+*   Double-Hundred Talent Plan on 100 Foreign Experts and 100 Foreign Expert Teams Introduction
+*   Shandong Provincial Government Qilu Friendship Award
+
+**Jinan City**
+
+*   5150 Program for Talents Introduction
+*   Quancheng Friendship Award
+*   Quancheng Program for Entrepreneurial and Innovative Talents Introduction
+*   Quancheng Program for High-End Foreign Experts Introduction **Qingdao City**
+*   Program for Entrepreneurial and Innovative Leading Talents
+*   Incentive Plan for High-End Talents
+*   Qindao Award Winner
+*   Aoshan Program for Talents Introduction
+*   Program for Overseas High-Level Experts Introduction
+
+**Henan Province**
+
+*   Program for Overseas High-Level Talents Introduction
+*   100 Talents Plan of Henan Province
+*   Henan Province International Talents Cooperation Program
+*   Distinguished Professor of Henan Province
+
+**Hubei Province**
+
+*   100 Talents Plan on Overseas High-Level Talents Introduction
+*   Chime Bell Award by Hubei Provincial People’s Government
+
+**Suggested Citation:** "Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+*   Chu Talents Program
+*   Talent Introduction Program on High-Levels, Elites, Top-Leadership, and Urgently Needed People
+
+**Wuhan City**
+
+*   Huanghe Talents Plan
+*   Wuhan Yellow Crane Friendship Award
+*   Wuhan City Partner Program
+*   3551 Optics Valley Talent Schema
+
+**Hunan Province**
+
+*   100 Talents Plan on Overseas High-Level Talents Introduction
+
+**Guangdong Province**
+
+*   Guangdong Friendship Award
+*   Guangdong Provincial Pearl River Talents Program
+*   Program for Innovative Research Teams and Leading Talents Introduction
+*   Special Support Plan for High-Level Talents
+*   Sail Plan for Talents Development
+*   Funding Scheme for Short-Term Overseas Experts in Guangdong
+
+**Guangzhou City**
+
+*   Guangzhou Friendship Award
+*   Advanced Foreign Experts Introduction Plan
+*   Guangzhou Talents Green Card
+*   Overseas Talents Entrepreneurial Encouragement Kapok Plan
+*   100 Talents Plan of Entrepreneurial and Innovative Leading Talents
+
+**Shenzhen City**
+
+*   Peacock Program for Overseas High-Level Talents Introduction
+
+**Guangxi Zhuang Autonomous Region**
+
+*   Guangxi Talent Highland
+*   Guangxi BaGui Scholars
+*   Guangxi Specially Invited Experts
+*   100 Talents Plan on the Introduction of High-Level Overseas Talents for Colleges and Universities in Guangxi
+
+**Suggested Citation:** "Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Hainan Province**
+
+*   Measures of Hainan Province to Introduce High-Level Innovative Talents
+*   Measures for the Implementation of Scientific and Technological Innovation Teams in Hainan
+*   Measures for the Implementation of the Introduction of Overseas High-Level Talents in Hainan
+*   Coconut Island Awards of Hainan Province
+
+**Chongqing Municipality**
+
+*   Program for Hundred Overseas High-Level Talents Aggregation
+*   Chongqing Friendship Award
+*   Par-Eu Scholars Program
+*   Chongqing Talents Recruitment Hongyan Plan
+
+**Sichuan Province**
+
+*   Sichuan Friendship Award
+*   1,000 Talents Plan of Sichuan Province
+*   Tianfu Recruitment Program of High-End Foreign Experts
+
+**Chengdu City**
+
+*   Jinsha Friendship Award
+*   Talents Introduction Plan of Chengdu
+
+**Guizhou Province**
+
+*   100-1,000-10,000 Talents Introduction Project
+
+**Yunnan Province**
+
+*   The 100 Talents Plan on Overseas High-Level Talents Recruitment
+*   Yunnan Friendship Award
+*   Yunnan Provincial High-End Foreign Experts Project
+*   Program for High-End Scientific and Technological Talents Recruitment
+
+**Shaanxi Province**
+
+*   100 Talents Plan of Shaanxi Province
+*   Sanqin Friendship Award
+*   Shaanxi Provincial Top Foreign Experts Project
+
+**Suggested Citation:** "Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+**Xi’an City**
+
+*   5211 Program for Talents Introduction
+*   Xi’an Friendship Award
+*   Xi’an Excellent Foreign Experts Award
+*   Program for Overseas High-Level Talents
+
+**Gansu Province**
+
+*   Gansu Provincial Government Foreign Experts Dunhuang Award
+*   Gansu Important Foreign Experts Introduction Program
+*   Gansu Overseas High-Level Talents Introduction Program
+
+**Qinghai Province**
+
+*   Qinghai Provincial High-End and Innovative 1,000 Talents Plan
+
+**Ningxia Hui Autonomous Region**
+
+*   Ningxia Liupan Mountain Friendship Award
+*   100 Talents Plan for Talents Introduction
+
+**Xinjiang Uygur Autonomous Region**
+
+*   Tianshan Prize of People’s Government of Xinjiang Uygur Autonomous Region
+*   High-Level Personnel Introducing Project of Xinjiang Uygur Autonomous Region
+*   Distinguished Experts of Xinjiang Production and Construction Corps
+*   Oasis Friendship Award of Xinjiang Production and Construction Corps
+
+**Other China**
+
+*   River Talents Plan
+
+**Russia**
+
+*   Project 5-100
+*   ITMO University Fellowship and Professorship Program (any track)
+
+**Saudi Arabia**
+
+*   Gold Card
+*   High-Profile Qimam Fellowship Scheme
+
+**Suggested Citation:** "Appendix C: Foreign Talent Programs That May Pose a Threat to the National Security Interests of the United States." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+*   In-Kingdom Retention Initiatives
+*   KAUST Gifted Student Program (KGSP)
+
+**United Arab Emirates**
+
+*   2071 Moonshot Apprenticeship Program
+*   The Edge
+
+[Next Chapter: Appendix D: United States Incentive Programs](https://www.nationalacademies.org/read/27787/chapter/15)
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/15 -->
+
+## 官方在线阅读第15章
+
+**Suggested Citation:** "Appendix D: United States Incentive Programs." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [Appendix D United States Incentive Programs](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_appDa)[1](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_fn106)
+
+### **DOMESTIC INCENTIVE PROGRAMS**
+
+#### **Research Fellowships**
+
+This section provides an overview of research fellowships that are available from government and nongovernment sources for graduate students, postdocs, and faculty.
+
+#### **Survey of Existing Programs and Fellowships**
+
+##### _Graduate Student Research Fellowships_
+
+Many federal scientific agencies offer research fellowships for graduate students to conduct full-time research at their universities (see [Box D-1](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_boxD-1)). These research fellowships generally provide 3 years of support, which usually includes a stipend of $30,000 to $40,000 per year, health insurance, travel funding, and full or partial tuition coverage. Every year, these government programs award fellowships to a few hundred to a few thousand students. They tend to be quite competitive, with about 5 to 20 times as many applicants as available fellowships (see [Figures D-1](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_figD-1) and [D-2](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_figD-2)). The stated missions of many of these programs include language such as “to help
+
+___________________
+
+[1](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_ft106)This appendix incorporates material from the commissioned paper “Survey of Current U.S. Programs to Attract and Retain Talent” by Tamara Savage.
+
+**Suggested Citation:** "Appendix D: United States Incentive Programs." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+##### **BOX D-1**
+
+**Examples of U.S. Government-Sponsored Fellowships**
+
+National Science Foundation—Graduate Research Fellowship Program (NSF GRFP)
+
+Department of Defense—National Defense Science and Engineering Graduate Fellowship Program (DOD NDSEG)
+
+National Institutes of Health—Kirchstein Individual National Research Service Award (NIH F30 & F31)
+
+National Aeronautics and Space Administration—Space Technology Graduate Research Opportunities
+
+Department of Transportation—Dwight D. Eisenhower Transportation Fellowship Program
+
+Department of Energy—Computational Science Graduate Fellowship (DOE CSGF)
+
+![Image 1: NSF Graduate Research Fellowship Program Awards, 2019 to 2024](https://www.nationalacademies.org/read/27787/assets/images/ffD-1.jpg)
+
+**FIGURE D-1** NSF Graduate Research Fellowship Program Awards, 2019 to 2024.
+
+ SOURCE: [NSF, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref112), [2024b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref569).
+
+**Suggested Citation:** "Appendix D: United States Incentive Programs." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 2: NSF Graduate Research Program Fellowship Awards, 1952 to 2024](https://www.nationalacademies.org/read/27787/assets/images/ffD-2.jpg)
+
+**FIGURE D-2** NSF Graduate Research Program Fellowship Awards, 1952 to 2024.
+
+ SOURCE: [NSF, 2024a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref568).
+
+ensure the quality, vitality, and diversity of the scientific and engineering workforce of the United States” and “to attract the nation’s brightest minds to the field of transportation … [and] retain top talent in the U.S. transportation industry” ([Federal Highway Administration, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref229); [NSF, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref565)).
+
+The National Defense Science and Engineering Graduate (NDSEG) Fellowship program was established by Congress in 1989 to increase the number of United States citizens receiving doctoral degrees in science and engineering disciplines of military importance ([NDSEG, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref518); [Systems Plus, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref737)). Since its inception, the highly competitive fellowship program has awarded nearly 4,700 fellowships to U.S. citizens and nationals from more than 70,000 applications. Selected fellows can choose the U.S. institution to attend for pursuit of their doctoral degree. The NDSEG Fellowship is sponsored by the Air Force Office of Scientific Research, the Army Research Office, and the Office of Naval Research under the direction of the Office of the Under Secretary of Defense for Research and Engineering. The NDSEG Fellowship is an equal opportunity program open to all qualified U.S. citizens and U.S. nationals.
+
+The citizenship requirements for these fellowships are not uniform, even among the different U.S. government agencies. For most of these opportunities, applicants need to be a U.S. citizen, national, or permanent resident. However, to be considered for the Department of Transportation’s Dwight D. Eisenhower Transportation Fellowship Program, applicants
+
+**Suggested Citation:** "Appendix D: United States Incentive Programs." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+need only to be a student at a U.S. institution. The programs are also administered differently; some are done entirely in-house (such as the National Institutes of Health fellowships), while some use external contractors to run parts of the application process (such as the National Science Foundation Graduate Research Fellowships Program [NSF GRFP] and Department of Defense [DOD] NDSEG).
+
+There are also fellowships outside of government that are funded and administered by private industry, philanthropy, and nonprofit organizations (see [Box D-2](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_boxD-2)). These fellowships offer approximately the same level of funding per student as the government-funded fellowships, but are usually awarded to fewer students, approximately 20 to 100 students per year. Nongovernment fellowships generally do not have citizenship requirements, so international students studying in the United States are eligible to apply and receive funding. Of the fellowships listed below, only the Hertz Foundation requires applicants to be U.S. citizens.
+
+Fellowships specific to a particular institution, such as the Amazon Fellowship at Carnegie Mellon University, which funds about five students per year and for which international students are eligible ([Gantenbein, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref256)), represent another nongovernment funding mechanism. Other universities have similar fellowships sponsored by various companies that are available only to the students at that institution.
+
+The principal funding mechanism for science, technology, engineering, and mathematics (STEM) graduate student research is through the grants awarded to their principal investigator by government agencies, nonprofit foundations, and private companies. Principal investigators can use these grants to fund graduate research assistants and postdocs. Many students are also funded as teaching assistants by their institutions.
+
+##### **BOX D-2**
+
+**Examples of Nongovernmental Fellowships**
+
+Google Ph.D. Fellowship
+
+Hertz Foundation Fellowship
+
+Meta Research Ph.D. Fellowship (formerly the Facebook Fellowship)
+
+Apple Ph.D. Fellowship in AI/ML
+
+IBM Ph.D. Fellowship
+
+Smithsonian Institution Fellowship Program
+
+**Suggested Citation:** "Appendix D: United States Incentive Programs." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+##### _Opportunities Available to International Students_
+
+Many of the previously mentioned government-funded research fellowships are not available to international students and foreign nationals, but the privately funded fellowships are. One program that brings international students and researchers to the United States is the Fulbright Program ([Bureau of Educational and Cultural Affairs, n.d.b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref90)). The Fulbright Program, an international academic exchange program, was founded in 1946 to increase mutual understanding and support friendly and peaceful relations between the people of the United States and the people of other countries. It is one of the largest programs for bringing international students and researchers to the United States and sending U.S. students and scholars abroad. The program is funded by an annual appropriation from Congress to the State Department’s Bureau of Educational and Cultural Affairs and from participating governments, host institutions, corporations, nongovernmental organizations, and foundations providing direct and indirect support.
+
+The Fulbright Program provides awards to approximately 8,000 students, scholars, teachers, artists, and professionals each year from the United States and 160 countries. This includes approximately 2,000 domestic students and 800 domestic scholars departing the United States to study abroad, and 4,000 foreign students and 900 foreign scholars coming from abroad to study in the United States ([Fulbright Program, n.d.a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref249), [n.d.b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref250)). These individuals hail from a wide variety of academic disciplines. Fulbright Program participants from abroad enter the United States on an Exchange Visitor J-1 visa subject to the 2-year home country residence requirement. This means that following the completion of a Fulbright fellowship, foreign students and scholars are generally required to return to their home country for 2 years before they are eligible to apply for a visa to return to the United States.
+
+For a list of graduate fellowships that international students are eligible for that provide at least 1 year of full-time funding to at least one student, see [Appendix E](https://www.nationalacademies.org/read/27787/chapter/16#273). Additional opportunities that noncitizens are eligible for have been compiled by Johns Hopkins University, the University of Pennsylvania, and the University of Illinois Urbana-Champaign.
+
+##### _Postdoctoral Research Fellowships_
+
+Some government agencies and nonprofit organizations offer postdoctoral research fellowships, with the number of fellowships and the
+
+**Suggested Citation:** "Appendix D: United States Incentive Programs." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+amount of funding dependent on the funding organization and the nature of the proposed research (see [Box D-3](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_boxD-3)). For the fellowships that offer stipends, the pay is usually higher than the graduate student stipends and are usually offered for 1 to 3 years. These fellowships are awarded directly to the researchers and not their institutions. For the government-funded fellowships, applicants generally need to be a U.S. citizen, national, or permanent resident. To be eligible, applicants usually need to have received their Ph.D. within the last few years.
+
+One way for foreign postdoctoral researchers to enter or remain in the United States is to be hired at a Department of Energy (DOE) national lab. Most national labs are federally funded research and development centers, so employees are contractors, not federal government employees, which gives them additional flexibility in hiring ([Lawrence Livermore National Laboratory, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref403)). In addition, these researchers are hired into positions that do not require a security clearance. There are also a small number of circumstances where noncitizens can be hired by DOD Science and Technology Reinvention Laboratories, such as when no qualified citizens are available ([Balakrishnan et al., 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref45)). Postdocs are eligible for Fulbright fellowships. For a list of other postdoctoral fellowships that international students are eligible for that provide at least 1 year of full-time funding to at least one student, see [Appendix E](https://www.nationalacademies.org/read/27787/chapter/16#273).
+
+##### **BOX D-3**
+
+**Examples of Postdoctoral Fellowships**
+
+National Institutes of Health Kirschstein National Research Service Award Postdoctoral Fellowships (F32)
+
+National Science Foundation Postdoctoral Fellowships
+
+Department of Energy ORISE (Oak Ridge Institute for Science and Education)
+
+Postdoctoral Fellowships
+
+NASA Postdoctoral Fellowships
+
+Schmidt Science Fellowships
+
+**Suggested Citation:** "Appendix D: United States Incentive Programs." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+##### _Faculty Research Fellowships_
+
+Following the completion of graduate and postdoctoral studies, many early-career researchers look to programs, fellowships, and other opportunities for research funding or full-time employment to continue their work and provide opportunities to stay in the United States. The U.S. government is a source of some of the largest and most highly funded programs for such individuals.
+
+Some examples of faculty research fellowships include the NSF Faculty Early Career Development Program (NSF CAREER), DOD Vannevar Bush Faculty Fellowship, and the Sloan Foundation Fellowship. Again, the mission statements of these programs include language such as “train the next generation of scientists and engineers” and to exchange “scientific knowledge between the Fellows and the government to benefit the country” ([DOD and Office of the Under Secretary of Defense for Research and Engineering, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref174)). These fellowships are generally quite prestigious and provide significant funding on single-investigator grants. There are about 500 CAREER awards given every year, administered through the directorates at NSF; the amounts are usually around $100,000 per year for 4 or 5 years. The citizenship requirements are again not uniform, as NSF CAREER award applicants do not need to be citizens, just working at an eligible U.S. institution and pre-tenure. The DOD Bush Fellowship awards only 8–10 fellowships per year, but has much higher funding, at $3 million per person. Applicants need to be U.S. citizens or permanent residents and already have tenure. The Sloan Foundation fellowships are $75,000 each, to be used over the course of 1 to 2 years, and with 125 awards per year. Applicants do not need to be a citizen for the Sloan fellowships, but they do need to be pre-tenure at a U.S. or Canadian institution.
+
+##### _Professional Fellowships_
+
+Professional fellowships are opportunities for people who have advanced degrees and/or are already in the workforce to work for the federal government for a limited time. One of the largest professional fellowships is the American Association for the Advancement of Science’s (AAAS) Science and Technology Policy Fellowship. AAAS fellows are typically Ph.D. scientists and engineers who are given 1- or 2-year appointments in the federal government, mostly at the executive branch agencies (with a few in the legislative and judicial branches) to work on science and technology policy
+
+**Suggested Citation:** "Appendix D: United States Incentive Programs." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+issues. The goal of the fellowship is to expose the fellows to policymaking and bring scientific and technical expertise into the federal government. At the end of the 2 years, fellows move on to permanent jobs in academia, industry, and nonprofits, and some are hired on to permanent positions with the government. There are about 250 AAAS fellows per year. Applicants must be U.S. citizens to be eligible to participate in the main fellowship via AAAS, but some partner scientific societies,[2](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_fn107) such as the American Chemical Society and Biophysical Society, do not have citizenship requirements, though they do require proof that they are eligible to work in the United States ([ACS, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref9); [Biophysical Society, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref72)). In addition, several states have science policy fellowships modeled on the AAAS program, where fellows work in state legislatures and agency offices.[3](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_fn108)
+
+The Presidential Innovation Fellows program brings mid-career entrepreneurs, technologists, and designers into government service for yearlong appointments. These fellows use their expertise to help build stronger public services using data science, design, engineering, and systems thinking. The fellows work on projects such as improving data sharing across the healthcare ecosystem, creating more efficient regulatory review processes at the Food and Drug Administration, and improving decision transparency at the Department of Justice. There are about 25 Presidential Innovation fellows per year. Applicants must be U.S. citizens or nationals.
+
+Another professional fellowship is the U.S. Digital Service (USDS), which was started after the problems with the [healthcare.gov](http://healthcare.gov/) website rollout. In this fellowship, technology workers are hired from the private sector to help improve digital government services by making them more user-friendly. One of the USDS’s stated objectives is to “bring top technical talent into civic service” ([USDS, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref804)). Examples of projects USDS fellows have worked on include creating a website to help people find COVID-19 vaccines and modernizing the Medicare payment system. USDS fellows must be U.S. citizens.
+
+___________________
+
+[2](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_ft107)A list of AAAS partner scientific societies is available at [https://www.aaas.org/programs/science-technology-policy-fellowships/partner-societies-st-policy-fellowships?adobe_mc=MCORGID%3D242B6472541199F70A4C98A6%2540AdobeOrg%7CTS%3D1714414687#partner](https://www.aaas.org/programs/science-technology-policy-fellowships/partner-societies-st-policy-fellowships?adobe_mc=MCORGID%3D242B6472541199F70A4C98A6%2540AdobeOrg%7CTS%3D1714414687#partner).
+
+[3](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_ft108)A list of state-level science and technology policy fellowships is available at [https://ccst.us/wp-content/uploads/State-Level-Science-Technology-Policy-Fellowships.pdf](https://ccst.us/wp-content/uploads/State-Level-Science-Technology-Policy-Fellowships.pdf).
+
+**Suggested Citation:** "Appendix D: United States Incentive Programs." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+#### **Hiring Initiatives**
+
+In contrast to the professional fellowships, the purpose of government hiring initiatives is to permanently bring talent into the federal government workforce. Through funding from the Bipartisan Infrastructure Law (P.L. 117-58, November 15, 2021), the DOE launched a hiring initiative called the Clean Energy Corps to hire many new government employees to work on clean energy deployment, decarbonizing the economy, and other aspects of addressing climate change. DOE is looking for new employees from many areas, including engineering, the physical sciences, project management, finance, legal, and communications. DOE has streamlined their hiring process to make it easier and faster to fill hundreds of positions. Potential new employees need to be U.S. citizens.
+
+The Biden administration recently launched a National AI (Artificial Intelligence) Talent Surge to rapidly hire talent to work on many areas of AI technology and governance ([AI.gov, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref14)). The government is hiring for these roles through [USAJobs.gov](http://usajobs.gov/) at a range of federal government agencies, including the Internal Revenue Service, Census Bureau, Department of Commerce, and Department of Energy. These jobs are generally open to U.S. citizens and nationals.
+
+The Federal Trade Commission recently created an Office of Technology to enable the FTC to better keep pace with technology and digital policy issues. The FTC is hiring Technologists in Residence to ensure a vibrant and competitive technology marketplace that benefits consumers. Technologists in Residence are usually experts with experience at technology companies or academic researchers. Applicants must be U.S. citizens and can apply using a streamlined application.
+
+DOD offers the SMART Scholarship-for-Service program, where the agency provides scholarships for undergraduate and graduate students pursuing STEM degrees. DOD pays for recipients’ tuition and stipends and guarantees them employment with the DOD after graduation for the same number of years that the DOD funded their education. Applicants must be citizens of the United States or another Five Eyes country (Australia, Canada, New Zealand, or the United Kingdom).
+
+##### _Internships_
+
+The federal government also offers internship opportunities to STEM students—from high school all the way to graduate school—through the
+
+**Suggested Citation:** "Appendix D: United States Incentive Programs." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Pathways Program, which places students in agencies across the government ([OPM, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref597)). Students who complete Pathways internships are usually eligible to be converted to permanent government employees at the end of their internships.
+
+Coding It Forward is a nonprofit organization that offers summer internships for undergraduate and graduate students in software engineering, data analysis, cybersecurity, and product management ([Coding It Forward, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref127)). Coding It Forward matches students with opportunities in local, state, and federal government offices. International students are eligible for internships with state and local government offices.
+
+The Department of Energy’s Oak Ridge Institute for Science and Education (ORISE) program offers many internships to undergraduate and graduate students during the summer, fall, and spring semesters at the Department of Energy in Washington, DC, and at many national labs. These internships cover topics of interest to the DOE, such as geothermal technologies, energy security, vehicle electrification, environmental management, and energy efficiency. Interns need to be U.S. citizens.[4](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_fn109)
+
+##### _Competitions_
+
+Some government agencies offer competitions where students can compete for prizes both to develop talent and solve government challenges. In the Gateways to Blue Skies competition run by NASA, student teams compete on aerospace challenges to win NASA internships ([NIA, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref546)). The 2024 competition’s project is designing aviation-related systems that could help the government prepare for natural disasters, lessen their impacts, and speed up recovery efforts. International students can participate in the competition, but only U.S. citizens are eligible for the NASA internships. The Defense Advanced Research Projects Agency (DARPA) holds competitions each year called DARPA Challenges ([DARPA, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref153)). In these challenges, student teams compete to solve problems on topics such as robotics and cybersecurity to win cash prizes.
+
+___________________
+
+[4](https://www.nationalacademies.org/read/27787/chapter/15#backmatter05_ft109)Other ORISE research participation programs are open to foreign nationals, with such opportunities categorized into those available to Lawful Permanent Residents and Conditional Permanent Residents ONLY, and those open to everyone (ORISE, n.d.). For example, ORISE sponsors J-1 status for those participating in the Research Scholar and Short-Term Scholar programs on a case-by-case basis for select, eligible participants (ORISE, n.d.).
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/16 -->
+
+## 官方在线阅读第16章
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[Previous Chapter: Appendix D: United States Incentive Programs](https://www.nationalacademies.org/read/27787/chapter/15)
+
+**Suggested Citation:** "Appendix E: United States Incentive Programs Open to Non-U.S. Citizens or Permanent Residents." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [Appendix E United States Incentive Programs Open to Non-U.S. Citizens or Permanent Residents](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_appEa)
+
+The following U.S. science, technology, engineering, and mathematics, or STEM, fellowships are open to international students and postdocs, as indicated by each list. The opportunities included in the lists are usually open to U.S. citizens, U.S. permanent residents, and international students. Each of these fellowships provides a large-enough stipend to support at least one student full-time for at least 1 year. The lists were compiled using the fellowship lists from Johns Hopkins University, the University of Pennsylvania, and the University of Illinois Urbana-Champaign.[1](https://www.nationalacademies.org/read/27787/chapter/16#backmatter06_fn110)
+
+**Graduate Research Fellowships**
+
+*   Children’s Tumor Foundation—Young Investigator Award
+*   American Epilepsy Society—Predoctoral Fellowship
+*   Roberto Rocca Education Fellowship Program
+*   Autism Speaks—Predoctoral Fellowship Program
+*   The Harry Frank Guggenheim Foundation—Emerging Scholars Award
+*   PhRMA Foundation—Predoctoral Fellowship in Value Assessment-Health Outcomes Research
+*   Universities Research Association—Visiting Scholars Program
+
+___________________
+
+[1](https://www.nationalacademies.org/read/27787/chapter/16#backmatter06_ft110)See [https://research.jhu.edu/rdt/funding-opportunities/graduate/](https://research.jhu.edu/rdt/funding-opportunities/graduate/), [https://curf.upenn.edu/sites/default/files/fellowships_grads_alumni.pdf](https://curf.upenn.edu/sites/default/files/fellowships_grads_alumni.pdf), and [https://apps.grad.illinois.edu/fellowship-finder/SearchResult/selectedValues=&SearchBy=](https://apps.grad.illinois.edu/fellowship-finder/SearchResult/selectedValues=&SearchBy=).
+
+**Suggested Citation:** "Appendix E: United States Incentive Programs Open to Non-U.S. Citizens or Permanent Residents." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+*   International OCD Foundation—Michael Jenike Young Investigator Awards
+*   Association of Public Health Laboratories—APHL-CDC Bioinformatics Fellowships Program
+*   Link Foundation—Modeling, Simulation, and Training Fellowship Program
+*   Link Foundation—Ocean Engineering and Instrumentation PhD Fellowship Program
+*   Prevent Cancer Foundation Fellowships
+*   American Heart Association—Predoctoral Fellowship
+*   ChadTough Defeat DIPG Foundation—Fellowship Grant
+*   American Psychological Foundation—Elizabeth Munsterberg Koppitz Child Psychology Graduate Student Fellowship
+*   Open Philanthropy Project—AI Fellowship
+*   National Academies of Sciences, Engineering, and Medicine— NRC Research Associateship Programs
+*   Smithsonian Institute Fellowship Program
+*   Link Foundation—Energy Fellowship Program
+*   Autism Science Foundation—Predoctoral Training Awards
+*   Acoustical Society of America—Stetson Graduate Scholarship in Phonetics and Speech Science
+*   American Educational Research Association/National Science Foundation—Dissertation Grant
+*   American Heart Association—Predoctoral Fellowship
+*   American Psychological Association—Esther Katz Rosen Fund Grants
+*   American Water Works Association—Abel Wolman Fellowship
+*   Center for Engaged Scholarship—Dissertation Completion Fellowship
+*   Children’s Tumor Foundation—Young Investigator Award— Doctoral Fellowships for Neurofibromatosis Research
+*   Educational Testing Services—Harold Gulliksen Dissertation Fellowship in Psychometric Research
+*   Epilepsy Foundation/American Epilepsy Society—Predoctoral Fellowship
+*   Foundation for Food and Agriculture Research—Fellows Program
+*   FRAXA Research Foundation—Research Fellowships
+*   Microsoft Research—AI and Society Fellows Program
+
+**Suggested Citation:** "Appendix E: United States Incentive Programs Open to Non-U.S. Citizens or Permanent Residents." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+*   National Center for Atmospheric Research—High Altitude Observatory—Newkirk Fellowship
+*   National Institute of Environmental Health Sciences— Fellowship in Environmental Medicine
+*   NVIDIA Corporation—Graduate Fellowship Program
+*   Oil Spill Recovery Institute—Graduate Research Fellowship
+*   Open Technology Fund—Information Controls Fellowship Program
+*   PhRMA Foundation—Drug Delivery Dissertation Fellowships
+*   Portland Cement Association—Graduate Research Fellowship Program
+*   The Incredible Egg—Egg Nutrition Center and American Egg Board—Young Investigator Award
+*   Department of Health and Human Services—Administration for Children and Families—Behavioral Interventions Scholars Grant
+*   Department of the Interior—Joint Fire Science Program— Graduate Research Innovation Award
+*   U.S. Science Support Program—Schlanger Ocean Drilling Graduate Fellowship Program
+*   University of Illinois—Beckman Institute—Graduate Fellows Program
+*   Water Environment Federation—Canham Graduate Studies Scholarship
+*   Wilderness Society—Gloria Barron Graduate Scholarship
+
+**Postdoctoral Fellowships**
+
+*   American Federation for Aging Research/Glenn Foundation for Medical Research—Postdoctoral Fellowship for Translational Research on Aging
+*   American Foundation for Suicide Prevention—Postdoctoral Research Fellowship Innovation Grants
+*   American Fund for Alternatives to Animal Research— Postdoctoral Fellowship
+*   American Heart Association—Postdoctoral Fellowship
+*   Cancer Research Institute—Irvington Postdoctoral Fellowship
+*   Children’s Tumor Foundation—Young Investigator Award— Postdoctoral Fellowships for Neurofibromatosis Research
+*   Columbia University Climate School—Earth Institute— Postdoctoral Research Program in Global Sustainable Development
+
+**Suggested Citation:** "Appendix E: United States Incentive Programs Open to Non-U.S. Citizens or Permanent Residents." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+*   Cornell University—Cornell Atkinson Center for Sustainability—Postdoctoral Fellowship
+*   Damon Runyon Cancer Foundation—Postdoctoral/Post-MD Fellowship
+*   Dartmouth College—Neukom Institute for Computational Science—Postdoctoral and Post-MFA Fellowship
+*   Fox Chase Cancer Center—Postdoctoral Research Program
+*   Getty Conservation Institute—Postdoctoral Fellowship in Conservation Science
+*   Harvard University—Center for the Environment— Environmental Fellows Postdoctoral Program
+*   Harvard University—Society of Fellows Program
+*   Human Vaccine Project—Michelson Investigator Prizes
+*   Justice Resource Center—Postdoctoral Fellowships for Psychologists
+*   Juvenile Diabetes Research Foundation—Postdoctoral Fellowship
+*   Life Sciences Research Foundation—Postdoctoral Fellowship Program
+*   National Hemophilia Foundation—Judith Graham Pool Postdoctoral Research Fellowship in Bleeding Disorders
+*   National Multiple Sclerosis Society—Postdoctoral Fellowships
+*   National Radio Astronomy Observatory—Jansky Postdoctoral Fellowship
+*   Parkinson’s Foundation—Postdoctoral Fellowship for Basic Scientists
+*   PhRMA Foundation—Translation Medicine and Therapeutics Postdoctoral Fellowships
+*   Simons Foundation—Postdoctoral Fellowships in Marine Microbial Ecology
+*   Society for Conservation biology—David H. Smith Conservation Research Postdoctoral Fellowships
+*   Space Telescope Science Institute/NASA—Hubble Fellowship Program
+*   Stanford University—Department of Physics—Urbanek and Chodorow Postdoctoral Fellowships
+*   The Tourette Association of America—Young Investigator Award—Postdoctoral Fellowship
+*   University of California—President’s Postdoctoral Fellowship Program for Faculty Diversity
+
+**Suggested Citation:** "Appendix E: United States Incentive Programs Open to Non-U.S. Citizens or Permanent Residents." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+*   University of California, Davis—MIND Institute— Postdoctoral/Post-MD Research Fellowship
+*   University of California, San Francisco—Center for Tobacco Control Research and Education—Postdoctoral Fellowships
+*   University of Illinois—Beckman Institute—Postdoctoral Fellows Program
+*   University of Michigan—President’s Postdoctoral Fellowship Program
+*   University of Michigan Society of Fellows—Postdoctoral Fellowships
+*   U.S. Geological Service—Mendenhall Postdoctoral Research Fellowship Program
+*   Woods Hole Oceanographic Institution—Postdoctoral Scholar Program
+*   IBM Research—Herman Goldstine Postdoctoral Fellowship in Mathematical and Computer Sciences
+*   International OCD Foundation—Michael Jenike Young Investigator Awards
+*   Association of Public Health Laboratories—APHL-CDC Bioinformatics Fellowships Program
+*   ChadTough Defeat DIPG Foundation—Fellowship Grant
+*   National Academies of Sciences, Engineering, and Medicine— NRC Research Associateship Programs
+*   Smithsonian Institute Fellowship Program
+*   Autism Science Foundation—Postdoctoral Training Awards
+*   American Psychological Association—Esther Katz Rosen Fund Grants
+*   FRAXA Research Foundation—Research Fellowships
+*   Microsoft Research—AI and Society Fellows Program
+*   The Incredible Egg—Egg Nutrition Center and American Egg Board—Young Investigator Award
+*   Open Technology Fund—Information Controls Fellowship Program
+*   PhRMA Foundation—Drug Delivery Postdoctoral Fellowships
+
+**Suggested Citation:** "Appendix E: United States Incentive Programs Open to Non-U.S. Citizens or Permanent Residents." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.
+
+[Next Chapter: Appendix F: Profiles of Foreign-Born Scientists](https://www.nationalacademies.org/read/27787/chapter/17)
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/17 -->
+
+## 官方在线阅读第17章
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [Appendix F Profiles of Foreign-Born Scientists](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_appFa)
+
+### **KATALIN KARIKÓ**
+
+> A Nobel Prize winner and pioneer in mRNA therapies who came to the United States from behind the Iron Curtain to perform research leading to the COVID-19 mRNA vaccine.
+
+Katalin Karikó is a Hungarian-born biochemist whose research in ribonucleic acid (RNA) was critical to the development of the COVID-19 vaccine. Dr. Karikó and her colleague Drew Weissman were awarded the Nobel Prize in Physiology or Medicine in 2023 for their groundbreaking work in mRNA-based therapeutics. This accomplishment was due in part to Dr. Karikó’s ability to overcome adversity to live and work in the United States.
+
+Dr. Karikó earned her bachelor’s degree in biology in 1978 at the University of Szeged, Hungary, where she began her work in RNA research. She received her doctorate in biochemistry in 1982 from the University of Szeged and worked as a postdoctoral fellow at the Biological Research Center of the Hungarian Academy of Sciences. The lab lost its funding in 1985, spurring Karikó to search for opportunities abroad. She was granted a postdoctoral position at Temple University and brought her husband, mother, and 2-year-old daughter with her to Philadelphia to begin her career as a foreign scientist in the United States ([Kolata, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref395)).
+
+> _I never wanted to leave Hungary … but when it came time to apply for jobs, I knew I had to leave. –_ Katalin Karikó ([Nair, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref481))
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Karikó worked on Temple University’s biochemistry research team for 3 years. She was briefly employed by the Uniformed Services University of the Health Sciences in Bethesda, Maryland, before accepting a nontenured professorship at the University of Pennsylvania’s medical school in 1989 ([Nair, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref481)). These early years were marked by struggle as she faced pressure to obtain grants or rely on colleagues with extra funding and navigated multiple immigration and visa-related issues. Karikó was pressured to give up her research on mRNA on multiple occasions; however, she persisted with this “impractical” line of research ([Business Standard, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref95)).
+
+> _She was, in a positive sense, kind of obsessed with the concept of messenger RNA. –_ Anthony Fauci ([Kolata, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref395))
+
+New research collaborations and discoveries gradually followed, including the breakthroughs that mRNA could instruct cells to overproduce specific proteins and that mRNA could be modified to produce proteins without activating an immune response ([Karikó et al., 1999](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref379), [2005](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref378)). This culminated in Karikó joining German company Biopharmaceutical New Technologies (BioNTech) as a senior vice president in 2013. BioNTech licensed the mRNA technology earlier patented by Karikó and Weissman ([Garde and Saltzman, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref258)). Karikó lived full time in Germany, only visiting her husband and daughter in the United States for 2 months of the year ([Johnson, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref367)). In 2020, BioNTech partnered with Pfizer to develop an mRNA vaccine to the novel coronavirus using Karikó’s RNA-mediated mechanism.
+
+Karikó’s professional career spans long stretches of barely funded, understaffed research experiments that hopscotched multiple universities and labs—punctuated by multiple immigration-related concerns for both her and her family (see [Figure F-1](https://www.nationalacademies.org/read/27787/chapter/17#backmatter07_figF-1) for a timeline of these events). Had Karikó tried to move to the United States to conduct research today, she would be unlikely to have been able to do so given the current state of the U.S. immigration system ([Neufeld, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref522)).
+
+> _A thriving innovation ecosystem depends on the ability to draw on the world’s talent to work on groundbreaking and pressing problems. That ecosystem is at risk of withering as we’ve complacently let our immigration system collapse. What future crises will we be less prepared for because of current failures on our immigration system? –_ Jeremy Neufeld ([Neufeld, 2022a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref522))
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 1: Timeline of events: Katalin Karikó](https://www.nationalacademies.org/read/27787/assets/images/ffF-1.jpg)
+
+**FIGURE F-1** Timeline of events: Katalin Karikó.
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+### **TERENCE TAO**
+
+> A distinguished mathematician whose intellect captivated the world since he was a precocious child in Australia.
+
+Terence Chi-Shen Tao is an Australian-American mathematician described as “the Mozart of Math.” A child prodigy, Tao had obtained a bachelor’s and master’s degree in mathematics from Flinders University of South Australia by age 17 and was accepted into the Department of Mathematics Ph.D. program at Princeton University. He completed his doctorate at age 20 and immediately joined the faculty at the University of California, Los Angeles (UCLA). He was appointed as a full tenured professor of mathematics at UCLA less than less than 4 years later ([Wolpert, 2006](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref856)).
+
+Tao’s work spans multiple complex mathematical branches, but he is best known for co-inventing the breakthrough Green-Tao theorem with Oxford mathematician Ben Green in 2004 ([Wood, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref859)). He has received myriad awards including the International Mathematical Union’s Fields Medal and a MacArthur Foundation Fellowship ([Wolpert, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref856)). Furthermore, Tao has consulted to U.S. government agencies in the areas of number theory, compressive sensing, and cryptography and currently serves as a member of the President’s Council of Advisors on Science and Technology (see [Figure F-2](https://www.nationalacademies.org/read/27787/chapter/17#backmatter07_figF-2) for a timeline of these events) ([K. Chang, 2007](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref111); [White House, 2021](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref843); [Wood, 2015](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref859)).
+
+To initially be hired as a tenure-track faculty member by UCLA, U.S. immigration officials granted Tao an O-1 visa, for individuals with extraordinary ability or achievement. UCLA submitted a petition to immigration authorities on Tao’s behalf along with written documented evidence of his extraordinary ability ([Tao, 2003](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref747)). The O-1 visa has many rigid renewal requirements and does not provide a pathway to permanent residency. To this end, Tao expressed in an open letter that he had struggled with U.S. immigration bureaucracy, including various glitches in the application and renewal of both his J-1 and O-1 visas ([Tao, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref748)). Tao ultimately was able to apply for permanent residency and U.S. citizenship after marrying his wife, a U.S. citizen ([Tao, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref746)). He currently holds dual U.S. and Australian citizenship.
+
+> _Talent is important, of course; but how one develops and nurtures it is even more so. –_ Terence Tao ([Tao, 2024](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref749))
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Tao has stated publicly that leading global mathematics departments actively recruit top mathematicians regardless of national origin. These institutions also will often retain counsel to ensure that such talent is able to obtain work authorization and residency. He has written about visa- and immigration-related provisions on his blog and advocated against Executive Order 13769 in 2017, arguing that this provision destroyed trust in the U.S. immigration system ([Tao, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref748); [Trump, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref770)).
+
+> _Mathematical research ability is highly non-fungible, and the value added by foreign students and faculty to a mathematics department cannot be completely replaced by an equivalent amount of domestic students and faculty, no matter how large and well educated the country. –_ Terence Tao ([Tao, 2017](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref748))
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 2: Timeline of events: Terence Tao](https://www.nationalacademies.org/read/27787/assets/images/ffF-2.jpg)
+
+**FIGURE F-2** Timeline of events: Terence Tao.
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+### **MORRIS CHANG**
+
+> An engineer, entrepreneur, and titan of industry who reshaped global trade with the invention of the foundry model of semiconductor manufacturing.
+
+Morris Chang overcame humble beginnings in war-torn China— including foreign occupation and a civil war—to study engineering in the United States. By 1955, Chang held three degrees in mechanical engineering from the Massachusetts Institute of Technology (MIT) ([Dunn, 2013](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref187)).
+
+After leaving MIT, Chang pivoted into industry, accepting roles at Sylvania and Texas Instruments that had him working on transistors. His success in improving production yields for an IBM contract landed him a promotion and managerial role, in which he directed his own department of 20 engineers developing germanium transistors. In 1961, Chang entered a Ph.D. program at Stanford University, with his full salary and tuition paid for by Texas Instruments. Chang obtained U.S. citizenship in 1962, and a Ph.D. in electrical engineering from Stanford in 1964. He returned to Texas Instruments to oversee a department of 3,000 employees working on germanium transistors and was in charge of the company’s worldwide semiconductor business by 1972. After his career at Texas Instruments started to decline, Chang resigned and accepted the role of president and chief operating officer at General Instrument Corporation in 1984. However, he resigned this new role after 1 year due to differences in corporate strategy and vision ([M. Chang, 2007](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref113); [Perry, 2011](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref611)).
+
+It was at this point, in 1985, that a Taiwanese government official reached out to Chang to manage the Industrial Technology Research Institute (ITRI). Chang accepted, leaving the United States and moving to Taiwan to serve as president of ITRI. Shortly after, the Taiwanese official came to Chang with another proposal: to start a Taiwanese semiconductor company ([Perry, 2011](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref611)). Chang once again accepted, and in 1987, led the establishment of the Taiwan Semiconductor Manufacturing Company (TSMC) that attracted contracts to produce semiconductors for companies that designed them (see [Figure F-3](https://www.nationalacademies.org/read/27787/chapter/17#backmatter07_figF-3) for a timeline of these events). This business model allowed companies to outsource chip production to TSMC, which was especially beneficial for smaller companies that otherwise would have had to direct significant resources to manufacturing capacity ([Mozur and Liu, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref477)). Year after year, as semiconductors became more complex and expensive to produce, Chang’s foundry model of semiconductor
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+manufacturing eliminated barriers to entry for many companies. TSMC outcompeted other chip manufacturers and attracted customers like Nvidia, whose breakthroughs in generative artificial intelligence were made possible by the large number of semiconductors it purchased. Jensen Huang, the CEO of Nvidia, claims that his company would not exist without TSMC ([Mozur and Liu, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref477)).
+
+The foundry model spearheaded by Chang has had far-reaching implications, influencing industries from consumer electronics to defense. Chang not only revolutionized the manufacturing and technology industries but also changed the global network of trade, played a role in Taiwan’s economic ascent, and fundamentally altered the global geopolitical and geoeconomic landscapes.
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 3: Timeline of events: Morris Chang](https://www.nationalacademies.org/read/27787/assets/images/ffF-3.jpg)
+
+**FIGURE F-3** Timeline of events: Morris Chang.
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+### **QIAN XUESEN**
+
+> Deported from his adoptive country of the United States during the Second Red Scare, Qian invested in China, the country that invested in him, shaping the future of space exploration and national security.
+
+Qian Xuesen (alternative spelling, Tsien Hsue-shen) was born in 1911, in the final year of China’s last imperial dynasty. He graduated from Shanghai Jiao Tong University in 1934 at the top of his class and came to the United States a year later to study aeronautical engineering at the Massachusetts Institute of Technology (MIT) on a Boxer Rebellion Indemnity Scholarship. In 1936, Qian transferred to the California Institute of Technology ([BBC, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref56)).
+
+At Caltech, Qian studied at the Guggenheim Aeronautical Laboratory under its director, Theodore Von Kármán. In 1943, after attracting research funding from the U.S. Army, Caltech established the Jet Propulsion Laboratory, with Von Kármán serving as its inaugural director. Qian was granted a security clearance to work on classified weapons research ([Chang, 1995](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref110)). He participated in the Manhattan Project, and his team provided the Army with a technical analysis of the German V-2 rocket program ([Brown, 2009](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref87); [Kivelson and Michelson, 2023](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref391); [Jet Propulsion Laboratory, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref359)). In 1945, Qian moved to Washington, DC, to serve as a member of the Scientific Advisory Board to the Department of War. Upon achieving victory in Europe, the Pentagon sent Qian on a mission to Germany to inspect captured German military technology and interview Nazi rocket engineers, including Wernher Von Braun ([BBC, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref56)).
+
+In 1947, Qian married in Shanghai, accepted a teaching position at MIT, and was granted permanent residency. Qian gave up his professorship to return to California in 1949 to accept a position as the first director of the Guggenheim Jet Propulsion Center at Caltech. He applied for U.S. citizens hip, but his application was denied ([GALCIT, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref254)). In 1950, Qian was detained by the Federal Bureau of Investigation on charges of espionage and accused of being a member of an organization that advocated the overthrow of the U.S. government by force. The FBI was referring to an American Communist Party document that showed he attended what law enforcement officials believed to be a meeting of members at a Caltech scientist’s residence in 1938 ([Fang, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref220)). Qian denied the accusations, insisting that the event was an innocent social gathering. His colleagues,
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+including Von Kármán wrote to the U.S. government affirming his innocence ([BBC, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref56)). Nevertheless, his security clearance was revoked, and his naturalization application denied. Qian attempted to travel to China to visit his aging parents, but U.S. immigration officials apprehended and arrested him ([_St. Louis Post-Dispatch,_ 1955](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref709)). He would spend the next 2 weeks in prison and the following 5 years under house arrest, only being able to continue teaching at Caltech in a limited capacity under strict supervision ([Qiu, 2009](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref631)).
+
+Qian’s extended detention in the United States was a result of two conflicting orders against him: a deportation order and a travel ban. U.S. officials were concerned that Qian’s work in critical and sensitive areas might have compromised U.S. national security if he were allowed to leave ([Fang, 2019](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref220)). Officials in Washington, DC, lifted Qian’s exit ban in August 1955, as a part of the conditions for China’s releasing several U.S. prisoners of war ([_St. Louis Post-Dispatch,_ 1955](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref709)). Qian’s deportation order was executed 1 month later. He departed the United States in September 1955 via an ocean liner accompanied by his wife and his two American-born children ([Qiu, 2009](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref631)). “I do not plan to come back,” he told reporters. “I have no reason to come back” ([Atomic Heritage Foundation, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref34)).
+
+> _It was the stupidest thing this country ever did. He was no more a communist than I was, and we forced him to go. –_ Dan Kimball ([Osnos, 2009](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref599))
+
+Arriving in Beijing, Qian was asked by government officials to create a missile program. His experience designing weapons and rockets for the United States became integral to China’s technological advancement. In 1956, he established the Institute of Mechanics in the Chinese Academy of Sciences, which later became a global leader in aeronautics education. He introduced policies that reshaped research and development processes and reformed the science and engineering training at Chinese universities ([Qiu, 2009](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref631)).
+
+Qian personally trained the first generation of Chinese aerospace engineers, who in turn, created an industrial base for the design and production of rockets and weaponry. Chinese engineers completed construction on Dongfeng-2, a medium-range ballistic missile, in 1964. That same year, China tested their first nuclear weapon, and in 1966, the nation produced its first intercontinental ballistic missile capable of carrying a nuclear warhead ([Qiu, 2009](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref631)). In 1968, Qian became the director of the Chinese
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+Academy of Space Technology. He retired in 1970, the same year China launched their first satellite into space on the Long March-1, a version of the Dongfeng ballistic missile adapted for space (see [Figure F-4](https://www.nationalacademies.org/read/27787/chapter/17#backmatter07_figF-4) for a timeline of events).
+
+There was never any evidence produced that Qian engaged in espionage or transferred classified information to agents outside of the United States ([BBC, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref56)). Federal agents seized luggage Qian had intended to mail to his Shanghai address in 1950, later admitting that after searching the packages, they did not contain restricted materials ([_St. Louis Post-Dispatch,_ 1955](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref709)). Qian’s contributions to the field of aeronautical engineering transformed the geopolitical landscape and lifted China into the atomic age. His contributions dubbed him “the father of Chinese rocketry” ([Wines, 2009](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref848)).
+
+> _There is no evidence that Qian ever spied for China or was an intelligence agent when he was in the U.S. –_ Zuoyue Wang ([Puri, 2020](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref624))
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+![Image 4: Timeline of events: Qian Xuesen](https://www.nationalacademies.org/read/27787/assets/images/ffF-4.jpg)
+
+**FIGURE F-4** Timeline of events: Qian Xuesen.
+
+**Suggested Citation:** "Appendix F: Profiles of Foreign-Born Scientists." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.
+
+<!-- source: https://www.nationalacademies.org/read/27787/chapter/18 -->
+
+## 官方在线阅读第18章
+
+**Suggested Citation:** "Appendix G: Methodology and Data Sources for Commissioned Papers." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+## [Appendix G Methodology and Data Sources for Commissioned Papers](https://www.nationalacademies.org/read/27787/chapter/1#content-toc_appGa)
+
+### “INTERNATIONAL TALENT FLOWS TO THE UNITED STATES” BY JEREMY NEUFELD AND DIVYANSH KAUSHIK
+
+This paper offers a data-driven examination of international talent flows into the United States, with a specific focus on science, technology, engineering, and mathematics (STEM) talent. The authors show the important role international talent plays in the U.S. research enterprise and in the U.S. skilled workforce and highlight the scale of talent flows through major immigration programs to attract international talent, from student and exchange visitor programs to temporary work visas to permanent residency. Finally, the authors explore headwinds facing international recruitment and retention of foreign-born scientists, engineers, researchers, and other high-skilled individuals driving American technological leadership.
+
+#### **Data Sources for This Work**
+
+##### **Student and Exchange Visitor Information System (SEVIS)**
+
+Much of this analysis relies on data from SEVIS, the Department of Homeland Security’s (DHS) data system for tracking and monitoring students and exchange visitors in the United States. These data were obtained from the Immigration and Customs Enforcement’s Freedom of Information Act Office, with help from the National Academies of Sciences, Engineering, and Medicine. The dataset encompasses detailed records of F-1 student
+
+**Suggested Citation:** "Appendix G: Methodology and Data Sources for Commissioned Papers." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+visa holders from FY 2004 to FY 2020. Throughout, a student listed in SEVIS was considered as pursuing a STEM degree if their first or second major field of study has a Classification of Instructional Programs, or CIP, code that appears on the most recent DHS STEM list ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)).
+
+##### **National Survey of College Graduates (NSCG)**
+
+The Census Bureau, in partnership with the National Center for Science and Engineering Statistics, conducts the NSCG, a rich dataset with information about graduates’ immigration history, field of study, work, and other information ([NCSES, 2021a](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref514)). The authors used the 1993, 2003, 2010, 2013, 2015, 2017, 2019, and 2021 public use files. A graduate is considered as having a STEM degree in the NSCG if their first major in their highest degree is in computer and mathematical sciences, engineering, life sciences, physical and related sciences, or other science and engineering field.
+
+##### **Survey of Earned Doctorates (SED)**
+
+Initiated in 1957, the SED annually compiles data on individuals awarded research doctorates from accredited U.S. institutions within a specific academic year ([NCSES, 2022](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref516)). The survey gathers comprehensive details on recipients’ academic background, demographic information, and postgraduation plans. The insights developed from this survey allowed the authors to evaluate and compare doctoral education trends between U.S. citizens and permanent residents versus those on temporary visas.
+
+##### **Survey of Doctorate Recipients (SDR)**
+
+Since 1973, the SDR has been collecting comprehensive data on individuals in the United States who have earned a research doctorate in science, engineering, or health fields from a U.S. institution ([NCSES, 2021b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref515)). This survey allowed the authors to assess educational achievements, career history, and professional trajectories of U.S.-trained doctoral scientists and engineers, both within the United States and internationally. STEM was assigned the same way as for the NSCG.
+
+**Suggested Citation:** "Appendix G: Methodology and Data Sources for Commissioned Papers." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+##### **Organisation for Economic Co-operation and Development (OECD) Education Statistics**
+
+The OECD Education Statistics dataset combines a number of international datasets on international students from around the world. The authors used this dataset to compare U.S. international education by degree and STEM field to other countries across the OECD ([OECD, 2023c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref584)).
+
+##### **United Nations Educational, Scientific, and Cultural Organization (UNESCO) Institute for Statistics**
+
+Where OECD data on the STEM share of international students by country was missing, the authors supplemented OECD data with UNESCO data on STEM shares by degree level ([UNESCO, n.d.](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref785)).
+
+##### **United States Department of Homeland Security (DHS)**
+
+DHS publishes additional reports that the authors used to supplement the main analysis. H-1B data come from the annual _Characteristics of H-1B Specialty Occupation Workers_ report to Congress ([DHS, 2023b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref167)). Data on employment-based Green Cards come from the DHS _Yearbook of Immigration Statistics_ ([DHS, 2022b](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01_ref165)). Finally, data on O-1A’s come from a U.S. Citizenship and Immigration Services report on _STEM-Related Petition Trends: EB-2 and O-1A Categories FY 2018 - FY 2023_ ([USCIS, 2023c](https://www.nationalacademies.org/read/27787/chapter/11#backmatter01a_ref796)).
+
+### **“CHINA’S TALENT PROGRAMS: LESSONS FOR THE U.S.?” BY DAVID ZWEIG**
+
+This paper details the history of China’s efforts to attract high-skilled individuals back to the nation through talent recruitment schemes at the federal, provincial, and local levels, with the goal of increasing China’s dominance in science and technology and economic prosperity.
+
+Data sources for this work include the Organisation for Economic Co-operation and Development, the Institute for International Education’s (IIE) Project Atlas global research initiative, the World Bank, and other scholarly articles.
+
+**Suggested Citation:** "Appendix G: Methodology and Data Sources for Commissioned Papers." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+### **“CHINA’S PATTERNS OF COOPERATION IN SCIENCE AND TECHNOLOGY” BY CAROLINE S. WAGNER**
+
+This paper provides a historical perspective on science and technology cooperation and collaboration between the United States and China. Cold War–era science and technology partnerships between China and Russia are discussed, along with when, how, and to what extent Chinese students and scholars have come to study in the United States.
+
+Data sources for this work include the Web of Science (a Clarivate product), the IIE’s OpenDoors information resource, the National Science Board’s Science and Engineering Indicators, and Elsevier’s Scopus database.
+
+### **“SURVEY OF UNITED STATES ALLIES’ TALENT PROGRAMS” BY TAYLOR A. GROVE**
+
+This paper assesses the policies of the United States’ allies aimed at attracting global talent and is intended to provide an overview of the status of talent recruitment programs among the United States’ allies, illustrate how to differentiate and evaluate the myriad approaches, and extrapolate lessons for the United States on how it can improve its own talent attractiveness.
+
+The author relied on open source research, interviews with subject-matter experts in talent policies, and interviews with individuals who have migrated because of talent policies. In addition to country-specific data sources, the author used data from the European Commission, the OECD, the IIE’s Project Atlas global research initiative, and the United Nations Department of Economic and Social Affairs.
+
+### **“SURVEY OF CURRENT U.S. PROGRAMS TO ATTRACT AND RETAIN TALENT” BY TAMARA SAVAGE**
+
+This paper reviews existing programs in the United States to attract, develop, and retain STEM talent and focuses on STEM talent development programs for U.S. citizens, highlights which of these programs are available to foreign nationals, and covers talent programs developed by the federal government, private industry, and philanthropic and nonprofit organizations. The paper also includes information on research fellowships,
+
+**Suggested Citation:** "Appendix G: Methodology and Data Sources for Commissioned Papers." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+professional fellowships, government hiring initiatives, internships, and competitions that aim to develop STEM talent.
+
+Data sources for this work include federal government websites and fellowship lists from Johns Hopkins University, the University of Pennsylvania, and the University of Illinois Urbana-Champaign.
+
+**Suggested Citation:** "Appendix G: Methodology and Data Sources for Commissioned Papers." National Academies of Sciences, Engineering, and Medicine. 2024. _International Talent Programs in the Changing Global Environment_. Washington, DC: The National Academies Press. doi: 10.17226/27787.
+
+This page intentionally left blank.

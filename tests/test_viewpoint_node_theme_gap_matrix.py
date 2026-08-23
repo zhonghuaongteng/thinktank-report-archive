@@ -112,6 +112,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "RIETI跨期精选已完成；其余成果保留轻量目录"}))
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "Royal Society跨期精选已完成；其余成果保留轻量目录"}))
         self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "acatech跨期精选已完成；其余正式成果保留轻量目录"}))
+        self.assertTrue(fulltext_queue_suppressed({"原始资产状态": "NASEM跨期精选已完成；其余主题成果保留轻量目录和官方在线全文入口"}))
         self.assertFalse(fulltext_queue_suppressed({"原始资产状态": "官方入口已保存；未下载全文"}))
 
     def test_nesta_uses_observed_publication_volume_after_complete_site_scan(self) -> None:
@@ -186,6 +187,7 @@ class ViewpointNodeThemeGapMatrixTests(unittest.TestCase):
         self.assertEqual(tier_for("de-efi"), "A")
         self.assertEqual(tier_for("uk-royal-society"), "A")
         self.assertEqual(tier_for("de-acatech"), "A")
+        self.assertEqual(tier_for("us-nasem"), "A")
         self.assertEqual(tier_for("jp-rieti"), "B")
         self.assertEqual(tier_for("ifp"), "B")
         self.assertEqual(tier_for("ifp"), "B")

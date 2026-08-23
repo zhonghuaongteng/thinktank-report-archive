@@ -1,0 +1,2790 @@
+# Quadrennial Review of the National Nanotechnology Initiative (2025)
+
+<!-- collection-complete: chapter-probe-v2 -->
+
+- 转换说明：以下内容由Jina从NASEM官方在线阅读页转换为Markdown；每章保留官方来源URL。
+
+<!-- source: https://www.nationalacademies.org/read/29063/chapter/1 -->
+
+## 官方在线阅读第1章
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 1](https://www.nationalacademies.org/read/29063/assets/images/img-1-1.jpg)
+
+**Consensus Study Report**
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+**NATIONAL ACADEMIES PRESS 500 Fifth Street, NW Washington, DC 20001**
+
+This activity was supported by Award Number 2329910 between the National Academy of Sciences and the National Science Foundation. Any opinions, findings, conclusions, or recommendations expressed in this publication do not necessarily reflect the views of any organization or agency that provided support for the project.
+
+International Standard Book Number-13: 978-0-309-73511-7
+
+ Digital Object Identifier: [https://doi.org/10.17226/29063](https://doi.org/10.17226/29063)
+
+This publication is available from the National Academies Press, 500 Fifth Street, NW, Keck 360, Washington, DC 20001; (800) 624-6242; [https://nap.nationalacademies.org](https://nap.nationalacademies.org/).
+
+The manufacturer’s authorized representative in the European Union for product safety is Authorised Rep Compliance Ltd., Ground Floor, 71 Lower Baggot Street, Dublin D02 P593 Ireland; [www.arccompliance.com](http://www.arccompliance.com/).
+
+Copyright 2025 by the National Academy of Sciences. National Academies of Sciences, Engineering, and Medicine and National Academies Press and the graphical logos for each are all trademarks of the National Academy of Sciences. All rights reserved.
+
+Printed in the United States of America.
+
+Suggested citation: National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure._ Washington, DC: National Academies Press. [https://doi.org/10.17226/29063](https://doi.org/10.17226/29063).
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+The **National Academy of Sciences** was established in 1863 by an Act of Congress, signed by President Lincoln, as a private, nongovernmental institution to advise the nation on issues related to science and technology. Members are elected by their peers for outstanding contributions to research. Dr. Marcia McNutt is president.
+
+The **National Academy of Engineering** was established in 1964 under the charter of the National Academy of Sciences to bring the practices of engineering to advising the nation. Members are elected by their peers for extraordinary contributions to engineering. Dr. Tsu-Jae Liu is president.
+
+The **National Academy of Medicine** (formerly the Institute of Medicine) was established in 1970 under the charter of the National Academy of Sciences to advise the nation on medical and health issues. Members are elected by their peers for distinguished contributions to medicine and health. Dr. Victor J. Dzau is president.
+
+The three Academies work together as the **National Academies of Sciences, Engineering, and Medicine** to provide independent, objective analysis and advice to the nation and conduct other activities to solve complex problems and inform public policy decisions. The National Academies also encourage education and research, recognize outstanding contributions to knowledge, and increase public understanding in matters of science, engineering, and medicine.
+
+Learn more about the National Academies of Sciences, Engineering, and Medicine at **[www.nationalacademies.org](http://www.nationalacademies.org/)**.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+**Consensus Study Reports** published by the National Academies of Sciences, Engineering, and Medicine document the evidence-based consensus on the study’s statement of task by an authoring committee of experts. Reports typically include findings, conclusions, and recommendations based on information gathered by the committee and the committee’s deliberations. Each report has been subjected to a rigorous and independent peer-review process and it represents the position of the National Academies on the statement of task.
+
+**Proceedings** published by the National Academies of Sciences, Engineering, and Medicine chronicle the presentations and discussions at a workshop, symposium, or other event convened by the National Academies. The statements and opinions contained in proceedings are those of the participants and are not endorsed by other participants, the planning committee, or the National Academies.
+
+**Rapid Expert Consultations** published by the National Academies of Sciences, Engineering, and Medicine are authored by subject-matter experts on narrowly focused topics that can be supported by a body of evidence. The discussions contained in rapid expert consultations are considered those of the authors and do not contain policy recommendations. Rapid expert consultations are reviewed by the institution before release.
+
+For information about other products and activities of the National Academies, please visit [www.nationalacademies.org/about/whatwedo](http://www.nationalacademies.org/about/whatwedo).
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## COMMITTEE ON THE QUADRENNIAL REVIEW OF THE NATIONAL NANOTECHNOLOGY INITIATIVE (2025)
+
+**VICKI L. COLVIN**, Louisiana State University, _Chair_
+
+**CATHERINE J. MURPHY**, University of Illinois Urbana-Champaign, _Vice Chair_
+
+**CRAIG B. ARNOLD**, Princeton University
+
+**ANGELA M. BELCHER**, Massachusetts Institute of Technology
+
+**STACEY F. BENT**, Stanford University
+
+**HAROLD G. CRAIGHEAD**, Cornell University (emeritus)
+
+**TRAVIS EARLES**, Sonder.Works
+
+**OMOLOLA (LOLA) ENIOLA-ADEFESO**, University of Illinois Chicago
+
+**Y. SHIRLEY MENG**, University of Chicago and Argonne National Laboratory
+
+**CHRISTINE PAYNE**, Duke University
+
+**RICARDO RUIZ**, Lawrence Berkeley National Laboratory
+
+**MICHAEL G. SPENCER**, Morgan State University
+
+**JESSE B. TICE**, Northrop Grumman Corporation
+
+### Study Staff
+
+**BRYSTOL ENGLISH**, Senior Program Officer, National Materials and Manufacturing Board (NMMB), _Study Director_
+
+**MICHELLE SCHWALBE**, Director, NMMB
+
+**ERIK B. SVEDBERG**, Scholar, NMMB
+
+**AMISHA JINANDRA**, Senior Research Analyst, NMMB (_through April 2025_)
+
+**JOE PALMER**, Senior Project Assistant, NMMB
+
+**HEATHER LOZOWSKI**, Senior Finance Business Partner
+
+**SUDHIR SHENOY**, Associate Program Officer (_through December 2024_)
+
+**MASON KLEMM**, Mirzayan Fellow (_March–May 2024_)
+
+**LUKE YARBROUGH**, Research Associate, NMMB (_through March 2025_)
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## NATIONAL MATERIALS AND MANUFACTURING BOARD
+
+**THERESA KOTANCHEK (NAE)**, Evolved Analytics, LLC, _Chair_
+
+**JOHN KLIER (NAE)**, University of Oklahoma, _Vice Chair_
+
+**KEVIN R. ANDERSON (NAE)**, Brunswick Corporation
+
+**FELICIA J. BENTON-JOHNSON**, Georgia Institute of Technology
+
+**WILLIAM B. BONVILLIAN**, Massachusetts Institute of Technology
+
+**GARY S. CALABRESE**, Corning Incorporated (retired)
+
+**JIAN CAO (NAE)**, Northwestern University
+
+**ELLIOT L. CHAIKOF (NAM)**, Harvard University
+
+**JULIE A. CHRISTODOULOU**, Office of Naval Research (retired)
+
+**TERESA CLEMENT**, Raytheon Missile Systems
+
+**AMIT GOYAL (NAE)**, State University of New York at Buffalo
+
+**JULIA R. GREER**, California Institute of Technology
+
+**SATYANDRA K. GUPTA**, University of Southern California
+
+**THOMAS R. KURFESS (NAE)**, Georgia Institute of Technology
+
+**Y. SHIRLEY MENG**, University of Chicago
+
+**OMKARAM (OM) NALAMASU (NAE)**, Applied Materials, Inc.
+
+**THOMAS W. PRETE**, Pratt & Whitney
+
+**STANLEY RENDON**, 3M Company
+
+**JOHN D. RUSSELL**, Fives, Inc.
+
+### Staff
+
+**MICHELLE SCHWALBE**, Director, National Materials and Manufacturing Board and Board on Mathematical Sciences and Analytics
+
+**ERIK SVEDBERG**, Scholar
+
+**JONLYN (BRYSTOL) B. ENGLISH**, Senior Program Officer
+
+**AMISHA JINANDRA**, Senior Research Analyst (_through April 2025_)
+
+**JOSEPH PALMER**, Senior Project Assistant
+
+**HEATHER LOZOWSKI**, Financial Officer
+
+**SUDHIR SHENOY**, Associate Program Officer (_through December 2024_)
+
+**MASON KLEMM**, Mirzayan Fellow (_March–May 2024_)
+
+**LUKE YARBROUGH**, Research Associate (_through March 2025_)
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## Reviewers
+
+This Consensus Study Report was reviewed in draft form by individuals chosen for their diverse perspectives and technical expertise. The purpose of this independent review is to provide candid and critical comments that will assist the National Academies of Sciences, Engineering, and Medicine in making each published report as sound as possible and to ensure that it meets the institutional standards for quality, objectivity, evidence, and responsiveness to the study charge. The review comments and draft manuscript remain confidential to protect the integrity of the deliberative process.
+
+We thank the following individuals for their review of this report:
+
+> **SAMUEL ACHILEFU (NAE)**, University of Texas Southwestern Medical Center
+>
+>
+> **DAVID BISHOP (NAE)**, Boston University
+>
+>
+> **CATO T. LAURENCIN (NAS/NAE/NAM)**, University of Connecticut
+>
+>
+> **QINGHUANG LIN (NAE)**, Canon Nanotechnologies, Inc.
+>
+>
+> **DANIEL LOPEZ**, Pennsylvania State University
+>
+>
+> **JODIE LUTKENHAUS**, Texas A&M University
+>
+>
+> **CELIA MERZBACHER**, SRI International
+>
+>
+> **JEFFREY NEATON**, University of California, Berkeley
+>
+>
+> **TERI W. ODOM (NAS)**, Northwestern University
+>
+>
+> **PAUL WESTERHOFF (NAE)**, Arizona State University
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+Although the reviewers listed above provided many constructive comments and suggestions, they were not asked to endorse the conclusions or recommendations of this report nor did they see the final draft before its release. The review of this report was overseen by **ELSA REICHMANIS (NAE)**, Lehigh University, and **DIANNE CHONG (NAE)**, Boeing Research and Technology (retired). They were responsible for making certain that an independent examination of this report was carried out in accordance with the standards of the National Academies and that all review comments were carefully considered. Responsibility for the final content rests entirely with the authoring committee and the National Academies.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## Acknowledgments
+
+The committee would like to thank the following individuals who added to the members’ understanding of the nation’s nanoscale research and development infrastructure and the communities it is serving: Emmanuel Akala, Howard University; Shyam Aravamudhan, North Carolina Agricultural and Technical State University; Ilke Arslan, Argonne National Laboratory; Osama Awadelkarim, Pennsylvania State University; Joe Baio, Oregon State University; Luke Baldwin, Air Force Research Laboratory; Karl Behringer, University of Washington; Christian Binek, University of Nebraska–Lincoln; Paul Braun, University of Illinois Urbana-Champaign; Judy Cha, Cornell University; Wei Chen, Northwestern University; Jim Ciston, Lawrence Berkeley National Laboratory; Marina Dobrovolskaia, National Institutes of Health; Vinayak Dravid, Northwestern University; Liesl Folks, University of Arizona; David Foord, Thermo Fisher Scientific; Ana Galiano, University of Louisville; Eric Goergen; Thermo Fisher Scientific; David Gottfried, Georgia Institute of Technology; Zachary Gray, Pennsylvania State University; Franklin Hadley, Massachusetts Institute of Technology (MIT); Paula Hammond, MIT; Todd Hastings, University of Kentucky; Alison Hatt, Lawrence Berkeley National Laboratory; Carrie Huguenin, MIT Lincoln Laboratory; Ania Bleszynski Jayich, University of California, Santa Barbara; Kei Koizumi, White House Office of Science and Technology Policy; Rainer Kuemmerle, Bruker BioSpin; Robert Langer, MIT; Robert Lavelle, Pennsylvania State University (former student); Gabriel Montaño, Northern Arizona University; Tyler Myers, Forge Nano; Doug Natelson, Rice University; Jeff Nelson, Sandia National Laboratories and Los Alamos National Laboratory; Sherine Obare, University of North Carolina at Greensboro; Robert J. Pohorenec, JEOL USA, Inc.; Thomas Searles, University of
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+Illinois Chicago; Marc Segers, AIP Publishing; Debbie Senesky, Stanford University; Jonathan (Joff ) Silberg, Rice University; Trevor Thornton, Arizona State University; Rick Vaughn, Rio Salado College; Peter Vikesland, Virginia Polytechnic Institute and State University; Jelena Vučković, Stanford University; Kevin Walsh, University of Louisville; Paul Weiss, University of California, Los Angeles; Jason C. White, Connecticut Agricultural Experimental Station; Stephan Wilhelm, University of Oklahoma; and Victor Zhirnov, Semiconductor Research Corporation. Additionally, the committee would like to thank the many industry, academic, and government representatives who participated in the virtual town hall.
+
+The committee would specifically like to thank those who helped support this study on behalf of the National Science Foundation and the National Nanotechnology Coordination Office, including Khershed Cooper, Mihail Roco, Branden Brough, and Quinn Spadola.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## [Preface](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-2)
+
+Nanotechnology, the science and technology of objects and phenomena at the 1–100 nm length scale, is an iconic example of how the United States has leveraged national science and technology policy to lead in the highly competitive global research market. Two decades after authorization of the National Nanotechnology Initiative, or NNI, the United States can claim multiple Nobel Prizes and diverse technologies that are the envy of the world. This success is a demonstration of what is possible when Congress harnesses the strengths of its many federal agencies and directs them to collaborate in support of an emerging area of knowledge.
+
+Even more is possible now. While nanotechnology is no longer new to scholars, it is far more relevant to the nation. To fully reap its economic, social, and national security benefits, it is essential to make it possible for anyone in the nation to practice nanotechnology at the highest level. Students, entrepreneurs, teachers, and corporate researchers from across the nation are all vital partners for the next chapter of nanotechnology. They will be the users of a nanotechnology infrastructure constructed during the first two decades of nanotechnology investments. This powerful collection of instruments, facilities, and people will train the workforce that the nation needs for nanotechnology’s new industries as well as allow large and small companies to create economic benefits from our nanotechnology research leadership.
+
+**Suggested Citation:** "Front Matter." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+It is fitting that after two decades, this seventh review centers on the preservation and expansion of this nanotechnology infrastructure.
+
+Vicki L. Colvin, _Chair_
+
+ Catherine J. Murphy, _Vice Chair_
+
+ Committee on the Quadrennial Review of the
+
+ National Nanotechnology Initiative (2025)
+
+<!-- source: https://www.nationalacademies.org/read/29063/chapter/2 -->
+
+## 官方在线阅读第2章
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[Previous Chapter: Front Matter](https://www.nationalacademies.org/read/29063/chapter/1)
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## [Summary](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-3)
+
+Twenty years ago, the United States had the foresight to direct billions of dollars into nanotechnology research and development (R&D). As a result, the nation became a global leader in nanotechnology research, and its major industries benefited from the first round of nanotechnology inventions. Many critical and emerging technologies are directly enabled by nanotechnology. These include quantum information and enabling technologies, human–machine interfaces, biotechnologies, such as COVID-19 vaccines and at-home COVID-19 tests, and semiconductors and microelectronics. These and many other commercial outcomes are a clear indication of the National Nanotechnology Initiative’s (NNI’s) economic, societal, and national security benefits.
+
+Unfortunately, just as the nation is beginning to realize the benefit of its research investment, the committee finds that the United States is at risk of losing its leadership in nanotechnology.
+
+It is critical that the United States act swiftly and decisively to preserve and expand its nanotechnology investment and that it do so with a renewed focus on the nanotechnology infrastructure. As described in the 2020 quadrennial review, there is a race among nations for leadership in nanotechnology research, and the global competition for extracting value from nanotechnology’s advances is equally fierce. By centering on sustaining and expanding the nanotechnology infrastructure, which includes human capital, cutting-edge tools, and shared facilities, the nation’s nanotechnology innovation and discovery can remain the best in the world.
+
+This review is pursuant to the authorizing legislation of the NNI, the 21st Century Nanotechnology Research and Development Act (P.L. 108-153), which
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+mandated a periodic review of the NNI. The statement of task of each recent triennial or quadrennial review of the NNI has focused on specific areas or aspects of the program instead of reviewing the overall NNI program. For example, the 2020 report _A Quadrennial Review of the National Nanotechnology Initiative: Nanoscience, Applications, and Commercialization_[1](https://www.nationalacademies.org/read/29063/chapter/2#summary_pz16-5) focused on the relative position of the United States compared to other nations with respect to nanotechnology R&D. This report assessed the current state of nanotechnology, detailing the impact on U.S. economic prosperity and national security, and then considered whether and in what form the NNI should continue. The 2016 report _Triennial Review of the National Nanotechnology Initiative_[2](https://www.nationalacademies.org/read/29063/chapter/2#summary_pz16-6) focused on advanced development, commercialization, and physical and human infrastructure needs. Earlier, the 2013 report _Triennial Review of the National Nanotechnology Initiative_[3](https://www.nationalacademies.org/read/29063/chapter/2#summary_pz16-7) centered on technology transfer, progress toward NNI goals, and evaluation of NNI’s management and coordination of nanotechnology research across the federal agencies.
+
+This review focuses on the infrastructure of the NNI, and the statement of task is reprinted in [Box S-1](https://www.nationalacademies.org/read/29063/chapter/2#summary_box_S-1). The committee recommends a new focus on renewing and expanding the nanotechnology infrastructure, including instruments, facilities, and people, so that the intellectual capital of nanotechnology can be converted into economic, social, and national security gains for the United States. This conclusion reflects a consideration of the suitability of the nation’s existing nanotechnology infrastructure for current and emerging needs in academia and industry. It also rests on the committee’s analysis of the existing nanotechnology infrastructure users in academia and beyond as well as the existing barriers that limit the impact and accessibility of the infrastructure.
+
+To address the statement of task, including the request to “make recommendations … that will improve the value of the NNI’s R&D strategy, portfolio, and infrastructure investments,” this report makes the point that infrastructure impacts what research can be carried out and by whom. Important factors include availability, location, tools, and instruments (current versus outdated), as well as the professional staff that serve to maintain the infrastructure and train the users.
+
+[Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9) is a stage-setting chapter that describes the committee’s analysis of the critical what, where, and who of nanotechnology. While the definition of nanotechnology and related infrastructure is well understood in the nanoscience and technology community, it is important to explore this topic as it is the central
+
+___________________
+
+[1](https://www.nationalacademies.org/read/29063/chapter/2#summary_AMGT)National Academies of Sciences, Engineering, and Medicine (NASEM), 2020, _A Quadrennial Review of the National Nanotechnology Initiative: Nanoscience, Applications, and Commercialization,_ The National Academies Press, [https://doi.org/10.17226/25729](https://doi.org/10.17226/25729).
+
+[2](https://www.nationalacademies.org/read/29063/chapter/2#summary_ANo_)NASEM, 2016, _Triennial Review of the National Nanotechnology Initiative,_ The National Academies Press, [https://doi.org/10.17226/23603](https://doi.org/10.17226/23603).
+
+[3](https://www.nationalacademies.org/read/29063/chapter/2#summary_AqBD)National Research Council, 2013, _Triennial Review of the National Nanotechnology Initiative,_ The National Academies Press, [https://doi.org/10.17226/18271](https://doi.org/10.17226/18271).
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+### BOX S-1
+
+ Statement of Task
+
+The National Academies of Sciences, Engineering, and Medicine will appoint an ad hoc committee to conduct the quadrennial review of the National Nanotechnology Initiative (NNI). The overall objective of this review is to make recommendations to the Nanoscale Science, Engineering, and Technology Subcommittee of the White House National Science and Technology Council and to the National Nanotechnology Coordination Office that will improve the value of the NNI’s research and development strategy, portfolio, and infrastructure investments to enhance economic prosperity and national security of the United States. Toward this objective, this quadrennial NNI review will include the following tasks:
+
+1.   _The committee will explore trends, opportunities, and emerging use cases for nanoscale research and development and examine how well positioned the nation’s nanotechnology-relevant infrastructure—including people, instruments, and facilities—is to be impactful in current and emerging use cases._ Particular attention will be paid to the opportunities and barriers for sustaining and coordinating the nation’s global leadership in nanotechnology infrastructure.
+2.   _Analyze the composition of the science and engineering community currently being served by the nation’s nanotechnology R&D infrastructure._ Particular attention will be paid to exploring how geography, organization type (e.g., R1 vs. non-R1, academia vs. industry), career stage, project focus area, and other factors influence awareness, availability, and opportunity. The metrics used to track and evaluate success may also be considered.
+3.   _Identify barriers to use for communities who are not fully engaging with nanotechnology R&D infrastructure._ This may include, but is not limited to, examining the awareness, interaction models, peer review models, financial and travel logistics, remote access resources, IP and contractual agreements, opportunities to enhance data and resource sharing, and approaches to incentivizing use. If warranted, recommend possible improvements to assist in achieving impactful national engagement in, and use of, existing infrastructure.
+
+This study may make recommendations on the topics listed above.
+
+The statement of task was modified in February 2025.
+
+theme of this review. [Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9) also looks across the United States to identify where users are likely to find nanotechnology infrastructure. This includes the states, regions, and locales, such as institutions of higher education and federal facilities, which host and themselves support facilities broadly available to nanotechnology users. The committee realized that it may be challenging for a researcher to identify and locate specific capabilities or instrumentation within the existing patchwork of nanotechnology infrastructure. For example, there is no single source of information that details the resources available in the nation’s nanotechnology infrastructure. This opening chapter also makes the case that maintaining and expanding the
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+nanotechnology infrastructure is a job too large in scale, and crosses too many sectors, to be delegated to any one federal agency or to industry. These infrastructure resources are relevant to chemistry, physics, engineering, biology, medicine, manufacturing, and more. This disciplinary breadth crosses agencies and conventional academic boundaries, and without interagency coordination nanotechnology’s future will be precarious. Additionally, much like the U.S. interstate highway system, the power of the nanotechnology infrastructure rests on its wide accessibility. It must serve everyone—students, scholars, entrepreneurs, teachers, and industry and corporate researchers from large and small companies alike. The committee found that thousands of academic and industry researchers use the nanotechnology infrastructure every year. These users tapped into experts who operate these facilities and left with the latest knowledge about process integration, materials engineering, and data analysis. For example, most of the cleanrooms found in the nanotechnology infrastructure support sophisticated multi-step processes and the associated cutting-edge characterization tools needed to make the next generation of semiconductor chips. It is important that the NNI continue providing this and other unique expertise.
+
+Also, in [Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9) the committee emphasizes the full picture of U.S. nanotechnology capabilities. While a network of shared infrastructure funded by the National Science Foundation, the Department of Energy, the National Institutes of Health, and the National Institute of Standards and Technology exists, the government focus on nanotechnology in the prior two decades has provided future researchers with a multitude of instruments and facilities at universities and state laboratories that are not currently captured as NNI R&D user facilities. [Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9) highlights how a census that presents a complete picture of these available resources could transform user engagement opportunities. Last, along with other information, this chapter and report take into consideration as part of its analysis and deliberative process the 2023 President’s Council of Advisors on Science and Technology report,[4](https://www.nationalacademies.org/read/29063/chapter/2#summary_pz18-4) which includes a recommendation to sunset or substantially revise the 21st Century Nanotechnology Research and Development Act. This quadrennial review finds that now is not the time to sunset the act, but rather to substantially revise it with an orientation toward nanotechnology infrastructure. Sunsetting the NNI would curtail the blossoming commercial relevance of nanotechnology and limit the many benefits the nation will realize from its years of strategic investment. This conclusion concurs with the recommendations of the 2020 quadrennial review.
+
+While the past 20 years of nanotechnology investment have laid a strong foundation—one that anchors the committee’s findings and recommendations—this
+
+___________________
+
+[4](https://www.nationalacademies.org/read/29063/chapter/2#summary_ArSY)President’s Council of Advisors on Science and Technology, 2023, “The Seventh Assessment of the National Nanotechnology Initiative,” [https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/08/PCAST_NNI_Review_August2023.pdf](https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/08/PCAST_NNI_Review_August2023.pdf).
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+infrastructure is aging. With increasing numbers of users seeking to utilize this infrastructure, which includes the technical expertise of the staff as well as tools and facilities, the committee finds that many facilities struggle with maintenance costs for major equipment and the highly skilled labor needed to train users. The committee identifies alternative funding mechanisms and includes a section on “Funding for Nanotechnology” that notes state, regional, local, industry, and philanthropic sources of funding. The committee also recognizes the importance of public–private partnerships in the future and notes university and corporate collaborations as an area of great importance.
+
+[Chapter 2](https://www.nationalacademies.org/read/29063/chapter/4#38) explores the opportunities and barriers to federal coordination for sustaining and coordinating U.S. global leadership in nanotechnology with respect to its infrastructure. The United States is no longer a leader in key indicators of scientific productivity in areas of science and engineering highly relevant to nanotechnology, including publications and patents. Another barrier is the perception that nanotechnology is a mature field, no longer in need of coordination and dedicated support. Nanotechnology has become even more relevant to the United States as it has accelerated innovation, economic development, and job creation in many different industry sectors. The committee concludes that coordination is critical for researchers and industries to understand the available landscape of U.S. nanotechnology infrastructure offerings. Coordination is also critical for knowledge transfer and training among facilities to develop and drive best operational practices and efficiencies. The committee also explores other barriers, including misaligned infrastructure performance metrics, unaccounted infrastructure depreciation costs, and insufficient support for professional staff.
+
+As discussed in [Chapter 3](https://www.nationalacademies.org/read/29063/chapter/5#56), expanding nanotechnology infrastructure to serve emerging areas of knowledge is key. Nanoscale fabrication now reaches far beyond silicon and encompasses tools to shape and form devices formed from nearly all key electronic and optical materials. Characterization tools are increasingly multi-modal, combining atomic imaging with vibrational spectroscopy, often over many orders of magnitude with respect to length and timescales. Critical new national investments, in areas such as semiconductor manufacturing and quantum devices, use existing nanotechnology infrastructure in ways that place new demands on instrument capabilities and shared facilities. Expansions to nanotechnology infrastructure will be needed to fully capitalize on advances in artificial intelligence and deep learning. Furthermore, nanotechnology infrastructure has a profound impact on energy research by enabling the discovery and development of more efficient energy conversion and storage materials and systems. Researchers studying agriculture and food security are also a growing customer base for nanotechnology infrastructure. Last, the committee explores how nanotechnology has made new tools available to biology researchers that allow imaging and observing biological processes at the molecular scale. Examples of impact and continued opportunity for
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+basic biological studies include single-molecule studies and imaging, nanofabrication of biological and biomimetic structures _,_ and genetic research.
+
+If the first two decades of nanotechnology were about defining and developing nanotechnology specialists, the next two decades center on making the tools and concepts of nanotechnology available to all. [Chapter 4](https://www.nationalacademies.org/read/29063/chapter/6#72) takes up how this could happen and concludes that increasing usage will depend on improved user awareness of the nanotechnology infrastructure. This chapter details how nanotechnology infrastructure facilities should be evaluated in part based on their availability to users and identifies that more support for user travel to facility locations would have great impact. It describes the reason that broad access to nanotechnology infrastructure is so critical: it is essential to both workforce development for the industries of the future as well as commercial expansion of nanotechnology-enabled industry. It then examines how user awareness, use permission agreements and processes, financial and travel logistics, availability of equipment, and intellectual property may present barriers to the use of nanotechnology infrastructure.
+
+Last, [Chapter 5](https://www.nationalacademies.org/read/29063/chapter/7#85) offers concluding remarks on the nation’s nanotechnology infrastructure, as well as a list of all the report’s recommendations. Below is a list of the report’s highest priority recommendations.
+
+> **Recommendation 1.1: In the coming year, the National Nanotechnology Coordinating Office (NNCO) should conduct a census of accessible nanotechnology infrastructure sites (instruments, staff, facilities) and display findings on a public, web-accessible map that includes university, regional, and national resources. This information, which should be maintained annually by NNCO, will enhance the visibility, availability, and impact of these assets.**
+>
+>
+> **Recommendation 1.2: Within 2 years, Congress should reauthorize the National Nanotechnology Initiative as the National Nanotechnology Infrastructure and orient, with the appropriate funding, the National Nanotechnology Coordination Office and agency activity toward the renewal and expansion of infrastructure to serve existing and emerging nanotechnology research and development.**
+>
+>
+> **Recommendation 2.4: Within the next 2 years, the National Nanotechnology Coordination Office should undertake a study to determine the level of resources needed to maintain state-of-the-art nanotechnology infrastructure. The study should include a timeframe, measures of success and efficiency, and accountability measures.**
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+> **Recommendation 3.3: Federal agencies that support nanotechnology infrastructure should within the next year, and periodically thereafter, prioritize investment in new capabilities that advance fabrication, materials synthesis, characterization, and data analysis to support emerging technologies to help the United States maintain its commercial edge.**
+>
+>
+> **Recommendation 4.1: All agencies that fund nanotechnology infrastructure should include in their infrastructure evaluations measures of performance that capture the breadth and heterogeneity of the associated user bases.**
+>
+>
+> **Recommendation 4.5: All agencies that fund nanotechnology infrastructure should increase program funding or provide a competitive travel grant program to include dedicated travel support for users and, where feasible, summer access for academics, researchers, and students who are not from R1 institutions.**
+
+**Suggested Citation:** "Summary." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+This page intentionally left blank.
+
+[Next Chapter: 1 Introduction: What Is the Nation's Nanotechnology Infrastructure?](https://www.nationalacademies.org/read/29063/chapter/3)
+
+<!-- source: https://www.nationalacademies.org/read/29063/chapter/3 -->
+
+## 官方在线阅读第3章
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## [1 Introduction: What Is the Nation’s Nanotechnology Infrastructure?](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-4)
+
+### [STUDY BACKGROUND AND COMMITTEE TASK AND SCOPE OF WORK](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-6)
+
+This report of the Committee on the Quadrennial Review of the National Nanotechnology Initiative (2025) is a quadrennial review of the National Nanotechnology Initiative (NNI) requested by the White House Office of Science and Technology Policy. The National Academies of Sciences, Engineering, and Medicine have delivered reviews of the NNI in 2002, 2006, 2009, 2013, 2016, and 2020. These reviews were mandated by 15 U.S.C. Section 7504, originally enacted in 2003 as the 21st Century Nanotechnology Research and Development Act (P.L. 108-153), which called for triennial reviews by the National Research Council[1](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz23-4) of the NNI efforts. Section 204(d) of the American Innovation and Competitiveness Act (P.L. 114-329) changed this reporting period to quadrennial, so that the most recent report prior to this one was due and submitted to Congress in 2020.
+
+The current review focuses on the composition of the science and engineering community currently being served by the nation’s nanotechnology research and development (R&D) infrastructure, and it also identifies barriers to use for communities who are not fully engaging with this infrastructure. The full statement of task can be found in [Appendix A](https://www.nationalacademies.org/read/29063/chapter/8#91).
+
+___________________
+
+[1](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_A9vv)Effective July 1, 2015, the institution is called the National Academies of Sciences, Engineering, and Medicine. References in this report to the National Research Council are used in an historic context identifying programs prior to July 1, 2015.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+For this review, the National Academies appointed the committee of 13 members with expertise in nanotechnology; materials science and engineering; research management; technology development; technology insertion; manufacturing processes and management; national security; and national user facility experience, education, training and re-training, environment, health and safety, risk assessment, and economics. The committee biographies are provided in [Appendix D](https://www.nationalacademies.org/read/29063/chapter/11#100).
+
+### [STUDY PROCESS AND DATA GATHERING](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-7)
+
+The study was conducted over the course of approximately 9 months and consisted of a series of committee meetings, public data-gathering sessions, one town hall, and data requests to nanotechnology infrastructure facilities funded by the National Science Foundation (NSF) and the Department of Energy (DOE). During this time, the committee held 14 public information-gathering sessions for the committee to deliberate and develop its findings, conclusions, and recommendations.
+
+### [REPORT STRUCTURE](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-8)
+
+The report is divided into five chapters to address the statement of task. [Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9) describes what nanotechnology is, defines the statement of task and the nanotechnology research infrastructure, describes where the nanotechnology research infrastructure is located, and provides snapshots regarding the users and costs of the infrastructure. [Chapter 2](https://www.nationalacademies.org/read/29063/chapter/4#38) addresses the opportunities and barriers for sustaining and coordinating U.S. global leadership in nanotechnology with respect to its infrastructure. [Chapter 3](https://www.nationalacademies.org/read/29063/chapter/5#56) examines trends, opportunities, and emerging use cases in nanotechnology R&D infrastructure. [Chapter 4](https://www.nationalacademies.org/read/29063/chapter/6#72) uncovers the barriers to use for communities that are not fully engaging with the nanotechnology research infrastructure. [Chapter 5](https://www.nationalacademies.org/read/29063/chapter/7#85) provides a conclusion and list of the recommendations that each chapter developed from its findings and conclusions.
+
+### [SHAPING THE CONTEXT FOR NANOTECHNOLOGY INFRASTRUCTURE](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-9)
+
+Fundamental and applied research in nanotechnology, including infrastructure, in the United States has a profound connection to the NNI. The NNI is a federal R&D initiative that “works together toward the shared vision of a future in which the ability to understand and control matter at the nanoscale leads to ongoing revolutions in technology and industry that benefit society.”[2](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz24-8) The NNI was proposed by President Clinton in 2000 and codified in law in 2003 with President Bush’s
+
+___________________
+
+[2](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_A2y)National Nanotechnology Initiative (NNI), n.d., “About the NNI,” [https://www.nano.gov/about-nni](https://www.nano.gov/about-nni), accessed June 3, 2024.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+signing of the 21st Century Nanotechnology Research and Development Act. By bringing together broad agency expertise on nanotechnology and providing a framework for shared goals,[3](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz25-4) priorities, and strategies, the NNI enables agencies to coordinate on developing U.S. leadership in nanotechnology research while leveraging their complementary resources and knowledge.
+
+An important feature of this legislation is that it did not form a new agency to fund nanotechnology research. Rather, the law conceived of the NNI as a means to connect and influence R&D funded by existing federal agencies. As a result, the act dictates that support for the NNI should be drawn from each agency’s existing budget. This approach is also reflected in educational practices for training nanotechnology experts as well; there are few “nanotechnology” bachelor’s, master’s, and PhD programs in the United States. Instead, students develop their knowledge in nanotechnology while receiving degrees in traditional disciplines, such as engineering, physics, chemistry, materials science, and the life sciences.
+
+The broad scope of nanotechnology is inherent in its definition. The topic refers to the study and application of unique phenomena at approximately the 1–100 nm scale, corresponding to matter with ten to thousands of atoms.[4](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz25-13) As will be described in [Chapters 2](https://www.nationalacademies.org/read/29063/chapter/4#38) and [3](https://www.nationalacademies.org/read/29063/chapter/5#56), this focus on physical scale makes nanotechnology highly relevant for many existing and emerging research disciplines. As a result, there are a wide array of federal agencies that support nanotechnology. Their work is governed by the interagency Nanoscale Science, Engineering, and Technology (NSET) Subcommittee of the National Science and Technology Council Committee on Technology ([Figure 1-1](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz26-2)). It is comprised of representatives from the major participating agencies in the NNI. The National Nanotechnology Coordination Office (NNCO) provides technical and administrative support to the NSET, which
+
+___________________
+
+[3](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AdV2)The President’s Budget Supplement points to the goals of the NNI in the 2021 NNI Strategic Plan:
+
+> Goal 1. Ensure that the United States remains a world leader in nanotechnology research and development.
+>
+>
+> Goal 2. Promote commercialization of nanotechnology R&D.
+>
+>
+> Goal 3. Provide the infrastructure to sustainably support nanotechnology research, development, and deployment.
+>
+>
+> Goal 4. Engage the public and expand the nanotechnology workforce.
+>
+>
+> Goal 5. Ensure the responsible development of nanotechnology
+
+(Executive Office of the President, 2021, _National Nanotechnology Initiative Strategic Plan,_ report of the Subcommittee on Nanoscale Science, Engineering, and Technology, Committee on Technology, of the National Science and Technology Council, October, [https://www.nano.gov/sites/default/files/pub_resource/NNI-2021-Strategic-Plan.pdf](https://www.nano.gov/sites/default/files/pub_resource/NNI-2021-Strategic-Plan.pdf), pp. 2–3).
+
+[4](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AF2l)F.C. Klaessig, 2017, “Nanotechnology Definitions at ISO and ASTM International: Origin, Usage, and Relationship to Nomenclature and Regulatory and Metrology Activities,” in _Metrology and Standardization of Nanotechnology_, D.L. Kaiser E. Mansfield, D. Fujita, and M. Van de Voorde, eds.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 1: A diagram of the organizational structure surrounding the National Nanotechnology Initiative (NNI).](https://www.nationalacademies.org/read/29063/assets/images/img-26-1.jpg)
+
+**FIGURE 1-1** A diagram of the organizational structure surrounding the National Nanotechnology Initiative (NNI).
+
+ NOTE: EHS, Environmental, Health, and Safety; OMB, Office of Management and Budget; OSTP, Office of Science and Technology Policy; PCAST, President’s Council of Advisors on Science and Technology.
+
+ SOURCE: National Nanotechnology Coordination Office, n.d., “NNI Organizational Chart,” [https://www.nano.gov/node/1115](https://www.nano.gov/node/1115), accessed May 2, 2025.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+helps to manage U.S.-funded nanotechnology research. Further information on the structure and operating principles of the NNI and NNCO can be found in past National Academies’ reviews of the initiative.[5](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz27-5),[6](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz27-6)
+
+The NNCO also gathers data annually from its agency partners to provide a national snapshot of U.S. government investments in this critical area. These resources support much, but not all, U.S. nanotechnology research and the associated infrastructure of importance to this report. Some of this support is directly geared toward major user facilities, such as DOE’s five Nanoscale Science Research Centers (NSRCs). NSF also supports nanotechnology R&D infrastructure through the National Nanotechnology Coordinated Infrastructure (NNCI) and user facility sites located at 16 different higher-education locations, as well as at various non-NNCI affiliated universities. Instrumentation within shared facilities can also be acquired through other programs at NSF, the National Institutes of Health (NIH), the National Institute of Standards and Technology, or the Department of Defense. Additionally, states have in some cases supported nanotechnology infrastructure relevant for their region’s economic interests. Also notable are shared facilities at R1 research universities. While these university-supported facilities may not label themselves as nanotechnology infrastructure per se, they are often open to users outside of their campuses and are important elements of the U.S. nanotechnology infrastructure.
+
+### [INCREASING RELEVANCE OF NANOTECHNOLOGY](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-10)
+
+According to the NNI, nanotechnology is defined as “the understanding and control of matter at the nanoscale, at dimensions between approximately 1 and 100 nanometers, where unique phenomena enable novel material applications.”[7](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz27-7) The emergent properties of nanoscale or nanostructured materials make possible technologies that would have been unthinkable with conventional “bulk” materials. Since the early 2000s, a myriad of commercial products using nanotechnology have touched every corner of human activity and benefited society. Nanotechnology is now a fact of daily life. As will be discussed further in [Chapter 3](https://www.nationalacademies.org/read/29063/chapter/5#56), its applications have revolutionized a wide range of areas such as microelectronics, biomedicine, homeland security, environmental science, energy production and harvesting, transportation, agriculture, and food security.
+
+___________________
+
+[5](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AeGN)National Research Council, 2013, _Triennial Review of the National Nanotechnology Initiative_, The National Academies Press, [https://doi.org/10.17226/18271](https://doi.org/10.17226/18271).
+
+[6](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AAIK)National Academies of Sciences, Engineering, and Medicine, 2020, _A Quadrennial Review of the National Nanotechnology Initiative: Nanoscience, Applications, and Commercialization_, The National Academies Press, [https://doi.org/10.17226/25729](https://doi.org/10.17226/25729).
+
+[7](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_ARTB)NNI, n.d., “About Nanotechnology,” [https://www.nano.gov/about-nanotechnology](https://www.nano.gov/about-nanotechnology), accessed October 4, 2024.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+All these scientific and technological advances hinge on a vast network of nanotechnology infrastructure. Its critical capabilities, instrumentation, and human expertise are essential for the continuous advancement of nanoscale science and technology. Since the start of the NNI, instrumentation for the characterization and manipulation of matter at the nanoscale has been central for all advancements. For example, improvements in electron microscopy have enabled measurements at the atomic scale ([Figure 1-2](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz28-4)) while nanoscale fabrication methods have enabled devices with new capabilities ([Figure 1-3](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz29-2)). For example, these advancements over time have greatly improved the number of transistors capable of fitting on a chip ([Figure 1-4](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz30-2)). Large-scale industrial manufacturing of computer chips would not be possible without early-stage investment in fabrication and measurement techniques; and, of course, the students who use NNI facilities now are the industrial workers of the future.
+
+Nanotechnology, while no longer an emerging scientific area, has become even more relevant to the United States through its acceleration of innovation, economic development, and job creation in different sectors. Fundamental and applied nanotechnology research, which is the starting point for innovation, continues to grow
+
+![Image 2: (a) Atomic resolution image of bilayer WS2 taken on an annular dark field scanning transmission electron microscope (ADF-STEM) at 500°C. (b)–(d) Magnifications of the regions 1, 2, 3, respectively, showing atoms.](https://www.nationalacademies.org/read/29063/assets/images/img-28-1.jpg)
+
+**FIGURE 1-2** (a) Atomic resolution image of bilayer WS 2 taken on an annular dark field scanning transmission electron microscope (ADF-STEM) at 500°C. (b)–(d) Magnifications of the regions 1, 2, 3, respectively, showing atoms.
+
+ SOURCE: S. Zhou, J. Chen, and J.H. Warner, 2020, “In Situ Atomic Level Studies of Thermally Controlled Interlayer Stacking Shifts in 2D Transition Metal Dichalcogenide Bilayers,” _Journal of Materials Research_ 35:1407–1416, [https://doi.org/10.1557/jmr.2019.399](https://doi.org/10.1557/jmr.2019.399), Springer Nature.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 3: Spatial light modulator that creates a few-photon wavefront focused on a detector to encrypt private messages for asymmetric cryptography.](https://www.nationalacademies.org/read/29063/assets/images/img-29-1.jpg)
+
+**FIGURE 1-3** Spatial light modulator that creates a few-photon wavefront focused on a detector to encrypt private messages for asymmetric cryptography.
+
+ SOURCE: L. Pokrajac, et al., 2021, “Nanotechnology for a Sustainable Future: Addressing Global Challenges with the International Network4Sustainable Nanotechnology,” _ACS Nano_ 15:18608–18623; adapted from the original figure from R. Uppu, T. Wolterink, S. Goorden, B. Chen, B. Skoric, A. Mosk, and P. Pinkse, 2019, “Asymmetric Cryptography with Physical Unclonable Keys,” _Quantum Science and Technology_ 4:045011. [https://doi.org/10.1088/2058-9565/ab479f](https://doi.org/10.1088/2058-9565/ab479f).
+
+([Figure 1-5](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz31-2)) as measured by the number of relevant “nano” publications weighted by all papers in the Scopus database. The rapid growth between 2004 and 2009 reflects the impact of the NNI legislation signed into law in 2003. While the growth rate of nanotechnology publications has slowed, there is still an upward trend in the amount of “nano-work” being shared in research literature.
+
+Moreover, no single area can claim sole ownership of nanotechnology because its impact has been felt broadly in the research enterprise ([Figure 1-6](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz32-2)). This is evident in classifications of nanotechnology publications by subject area ([Figure 1-7a](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz32-4)); no single discipline is overrepresented. Instead, nanotechnology is catalyzed and developed through the crosspollination of different intellectual perspectives. The personal experiences of the committee members, borne out through interviews and presentations, underlined that often these kinds of collaborations occur at the specialized user facilities that form the core of the nanotechnology infrastructure. The intellectually diverse make-up of the user communities at several such facilities is illustrated in [Figure 1-7b](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz32-4).
+
+Unlike other coordinated federal investments in emerging areas of research, continued U.S. investment in nanotechnology is particularly vulnerable going forward. There is no single agency or scientific discipline that will alone advocate for its future in the competitive landscape for federal research dollars.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 4: A semi-log plot of transistor counts for microprocessors against dates of introduction, nearly double every 2 years.](https://www.nationalacademies.org/read/29063/assets/images/img-30-1.jpg)
+
+**FIGURE 1-4** A semi-log plot of transistor counts for microprocessors against dates of introduction, nearly double every 2 years.
+
+ SOURCE: M. Roser, H. Ritchie, and E. Mathieu, 2023, “What Is Moore’s Law?” Our World in Data, March. [https://ourworldindata.org/moores-law](https://ourworldindata.org/moores-law). CC BY 4.0.
+
+Nanotechnology’s groundbreaking scientific impact is also reflected in the following Nobel Prizes that used key ideas, capabilities, and infrastructures of nanotechnology[8](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz30-9):
+
+*   Physics, 2007, “for the discovery of giant magnetoresistance,” which revolutionized magnetic storage.
+*   Physics, 2010, “for groundbreaking experiments regarding the two-dimensional material graphene,” with diverse uses.
+*   Physics, 2014, “for the invention of efficient blue light-emitting diodes which enabled bright and energy-saving white light sources.”
+*   Chemistry, 2016, “for the design and synthesis of molecular machines.”
+
+___________________
+
+[8](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_Av2g)The Nobel Prize, 2025, “All Nobel Prizes,” [https://www.nobelprize.org/prizes/lists/all-nobel-prizes](https://www.nobelprize.org/prizes/lists/all-nobel-prizes).
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 5: Papers that refer to aspects of nanotechnology as a percentage of total published research volume over time.](https://www.nationalacademies.org/read/29063/assets/images/img-31-1.jpg)
+
+**FIGURE 1-5** Papers that refer to aspects of nanotechnology as a percentage of total published research volume over time.
+
+ NOTE: Search terms to display the proportion of papers that include “nano*” in the title, abstract, or keywords. The asterisk (*) signifies that the search results included terms that start with “nano,” such as nanotechnology. Unit terms such as “nanometer,” “nanometre,” and “nanosecond” were excluded.
+
+ SOURCE: Data from Scopus database, [http://www.scopus.com](http://www.scopus.com/).
+
+*   Chemistry, 2017, “for developing cryo-electron microscopy for the high-resolution structure determination of biomolecules in solution.”
+*   Chemistry, 2023, “for the discovery and synthesis of quantum dots.”
+*   Chemistry, 2024, “for computational protein design.”
+*   Physiology or Medicine, 2023, “for their discoveries concerning nucleoside base modifications that enabled the development of effective mRNA vaccines against COVID-19.”
+
+The nanotechnology research that led to these achievements was performed decades before the prizes were awarded. Also notable is the breadth of disciplines that used or developed the nanotechnology research infrastructure to make these discoveries.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 6: The multidisciplinary nature of nanotechnology means that no single discipline dominates the field. International nanotechnology publications per subject area (taken from the large data set used for Figure 1-5).](https://www.nationalacademies.org/read/29063/assets/images/img-32-1.jpg)
+
+**FIGURE 1-6** The multidisciplinary nature of nanotechnology means that no single discipline dominates the field. International nanotechnology publications per subject area (taken from the large data set used for [Figure 1-5](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz31-2)).
+
+![Image 7: (a) Nanotechnology publications per subject area (taken from the large data set used for Figure 1-5, filtered for U.S. responses). (b) Composition of user communities by field of study at the U.S. Nanoscale Science Research Center (NSRC) and National Nanotechnology Coordinated Infrastructure (NNCI) facilities. The NNI user facilities support multidisciplinary research where users from all fields of study converge and exchange ideas.](https://www.nationalacademies.org/read/29063/assets/images/img-32-2.jpg)
+
+**FIGURE 1-7** (a) Nanotechnology publications per subject area (taken from the large data set used for [Figure 1-5](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz31-2), filtered for U.S. responses). (b) Composition of user communities by field of study at the U.S. Nanoscale Science Research Center (NSRC) and National Nanotechnology Coordinated Infrastructure (NNCI) facilities. The NNI user facilities support multidisciplinary research where users from all fields of study converge and exchange ideas.
+
+Nanotechnology has had and continues to have a significant economic impact on both U.S. and global economies. Indeed, the NNI’s assessment of “data from the 2017 Economic Census revealed that over 3,700 companies—with over 171,000 employees—self-identified as primarily being in the business of Nanotechnology R&D” and that “these companies reported $42 billion in revenue” in 2017.[9](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz32-6) A
+
+___________________
+
+[9](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_A7SU)M. Kiley, 2022, “Impact of the NNI on the U.S. Economy: At Least $42 Billion in One Year!,” November 28, [https://www.nano.gov/node/5257](https://www.nano.gov/node/5257).
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+recent independent study commissioned by the NNI noted the aggregated revenues of nanotechnology companies from 2002 to 2022 to be close to a trillion dollars, which represents a significant economic output considering that the U.S. government investment was around $40 billion in the same timeframe.[10](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz33-8)
+
+> Finding 1.1: Nanotechnology is essential to numerous scientific disciplines and relevant to the missions of multiple federal agencies. Its interdisciplinary nature and broad impact means that there is no single home among the various science and engineering communities, nor is it predominantly overseen by any single government agency.
+>
+>
+> Finding 1.2: Nanotechnology research has worldwide impact currently, and its importance will grow as its materials, methods, and infrastructure advances.
+>
+>
+> Finding 1.3: Nanotechnology commercialization is quickly developing following research breakthroughs, and the United States has only just begun to experience the significant economic impact and job creation from its strategic investment in nanotechnology.
+>
+>
+> _Conclusion 1.1: The National Nanotechnology Coordination Office is critically important to the future of nanotechnology in U.S. technological competitiveness._
+
+### [WHAT AND WHERE IS THE U.S. NANOTECHNOLOGY INFRASTRUCTURE?](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-11)
+
+The development of nanoscale science and technology commonly requires expensive equipment and specialized expertise located in dedicated facilities that are, by their nature, expensive to run and maintain. These include, for instance, specialized cleanroom laboratories with low-particle environments housing dedicated lithographic, nanofabrication, and characterization equipment; dedicated electron microscopes with increasingly powerful capabilities; and nanomaterial characterization and synthesis facilities, including those for automated experimentation. One of the pillars of the NNI was the creation and support of a “network of shared infrastructure programs that are funded by several federal agencies and make research capabilities available to the broader community of researchers from academia, government, and industry.”[11](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz33-9)
+
+___________________
+
+[10](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AYki)The Parnin Group, 2023, “Economic Impact Analysis: 20 Years of Nanotechnology Investments,” [https://parningroup.com/wp-content/uploads/2023/11/NSF-Economic-Impact-Analysis_Report_ForDistribution.pdf](https://parningroup.com/wp-content/uploads/2023/11/NSF-Economic-Impact-Analysis_Report_ForDistribution.pdf).
+
+[11](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AIvW)NNI, n.d., “NNI R&D User Facilities,” [https://www.nano.gov/userfacilities](https://www.nano.gov/userfacilities), accessed September 5, 2024.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+In 2025, the federally supported NNI national infrastructure of nanoscale science user facilities open to researchers consists of five NSRCs supported by DOE; an NNCI supported by NSF, consisting of 16 university sites; the Center for Nanoscale Science and Technology operated by the National Institute of Standards and Technology (NIST) and supported by the Department of Commerce (DOC); and the National Cancer Institute’s Nanotechnology Characterization Laboratory, supported by NIH under the Department of Health and Human Services (HHS; see [Table 1-1](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz35-1), [Figure 1-8](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz36-2)). Beyond the infrastructure supported at the federal level by the NNI, nanotechnology facilities and resources at the regional and state level are relatively rare, but one example is California’s NanoSystems Institute.[12](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz34-5)
+
+Much more common are capabilities and facilities at the university level to support research on their campuses. The collective user base for these local facilities is considerable and, as a result, the infrastructure for nanotechnology R&D is far larger than the federally supported facilities (NNCI, NSRCs) would suggest. Notably in almost all cases these facilities have in the past received federal agency support for major equipment or are the legacy of prior investments in nanotechnology or materials research centers. Major research universities with PhD programs in engineering are very likely to have nanotechnology facilities. For these examples, the operations are available to external academic users often at the same rate as internal users, and many of these university facilities welcome corporate users as well. The committee was not able to find comprehensive lists of such infrastructure, but as an example, the major universities listed in [Table 1-2](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz37-1) have their own facilities that collectively appear to support thousands of users per year with hundreds of nanotechnology-relevant tools and dozens of staff members.
+
+The committee realized that it may be challenging for a researcher to identify and locate specific capabilities or instrumentation within the existing patchwork of nanotechnology infrastructure. There is no single source of information combining all of the capabilities of the nation’s nanotechnology infrastructure. At the federal level, potential users have to consult separate websites listing different nanotechnology facilities with different access requirements and protocols. At the regional and local level, information can be even harder to find. Perhaps the best effort in this direction is the NNCI website that provides listings and a search option for tools available within the NSF-supported NNCI network.
+
+> Finding 1.5: There is no single source of information on where particular infrastructure resources are located.
+
+___________________
+
+[12](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AZ4y)California NanoSystems Institute, n.d., “California NanoSystems Institute,” [https://cnsi.ucla.edu/about-us](https://cnsi.ucla.edu/about-us), accessed August 2, 2024.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+**TABLE 1-1** National Nanotechnology User Facilities That Are Part of the National Nanotechnology Initiative, Supported and Organized by Federal Funding Agency
+
+**NNI Network or Nanoscale User Facilities**
+**Department of Energy (NSRCs)**
+Center for Nanoscale Materials (CNM), Argonne National Laboratory, Lemont, IL
+Center for Functional Nanomaterials (CFN), Brookhaven National Laboratory, Upton, NY
+Molecular Foundry, Lawrence Berkeley National Laboratory, Berkeley, CA
+Center for Nanophase Materials Sciences (CNMS), Oak Ridge National Laboratory, Oak Ridge, TN
+Center for Integrated Nanotechnologies (CINT), Sandia National Laboratories and Los Alamos
+National Laboratory, Albuquerque/Los Alamos, NM
+**National Science Foundation (NNCI)**
+Center for Nanoscale Systems (CNS), Harvard University, Cambridge, MA
+Cornell Nanoscale Science and Technology Facility (CNF), Cornell University, Ithaca, NY
+Kentucky Multi-Scale Manufacturing and Nano Integration Node (KY Multiscale), University of Louisville, Louisville, KY
+Mid-Atlantic Nanotechnology Hub (MANTH), University of Pennsylvania, Philadelphia, PA
+Midwest Nanotechnology Infrastructure Corridor (MiNIC), University of Minnesota, Minneapolis, MN
+Montana Nanotechnology Facility (MONT), Montana State University, Bozeman, MT nano@stanford, Stanford University, Stanford, CA
+Nanotechnology Collaborative Infrastructure Southwest (NCI-SW), Arizona State University, Tempe, AZ
+Nebraska Nanoscale Facility (NNF), University of Nebraska–Lincoln, Lincoln, NE
+Northwest Nanotechnology Infrastructure (NNI), University of Washington, Seattle, WA
+Research Triangle Nanotechnology Network (RTNN), North Carolina State University, Raleigh, NC
+San Diego Nanotechnology Infrastructure (SDNI), University of California, San Diego, San Diego, CA
+Soft and Hybrid Nanotechnology Experimental (SHyNE) Resource, Northwestern University, Evanston, IL
+Southeastern Nanotechnology Infrastructure Corridor (SENIC), Georgia Institute of Technology, Atlanta, GA
+Texas Nanofabrication Facility (TNF), University of Texas at Austin, Austin, TX
+National Center for Earth and Environmental Nanotechnology Infrastructure (NanoEarth), Virginia
+Polytechnic Institute and State University, Blacksburg, VA
+**Department of Commerce-National Institute of Standards and Technology**
+Center for Nanoscale Science and Technology (CNST), Gaithersburg, MD
+**Department of Health and Human Services-National Institutes of Health**
+Nanotechnology Characterization Laboratory (NCL), Frederick, MD
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 8: Map showing nanotechnology facilities across the United States—National Science Foundation (NSF) National Nanotechnology Coordinated Infrastructure (NNCI) facility (purple dots), Department of Energy (DOE) Nanoscale Science Research Centers (NSRCs) (blue dots), National Institute of Standards and Technology (NIST) facility (orange dots), and National Institutes of Health (NIH) facility (yellow dots).](https://www.nationalacademies.org/read/29063/assets/images/img-36-1.jpg)
+
+**FIGURE 1-8** Map showing nanotechnology facilities across the United States—National Science Foundation (NSF) National Nanotechnology Coordinated Infrastructure (NNCI) facility (_purple dots_), Department of Energy (DOE) Nanoscale Science Research Centers (NSRCs) (_blue dots_), National Institute of Standards and Technology (NIST) facility (_orange dots_), and National Institutes of Health (NIH) facility (_yellow dots_).
+
+ NOTE: Additional acronyms defined in [Appendix B](https://www.nationalacademies.org/read/29063/chapter/9#93).
+
+ SOURCE: Data from NSRC Portal, “About the NSRC Program,” [https://nsrcportal.sandia.gov](https://nsrcportal.sandia.gov/), and NNCI, “What Is the NNCI?,” [https://nnci.net](https://nnci.net/), both accessed May 2, 2025.
+
+> _Conclusion 1.2: There is a need for a single and comprehensive source of information on what nanotechnology infrastructure is available for shared use and where these resources are located._
+
+#### Technical Staff as Part of the Infrastructure
+
+Just as a car without a driver (human or machine) is not useful for transportation, a tool, such as an aberration-corrected electron microscope, is not useful for basic nanotechnology research unless it has associated technical staff. From its inception, the NNI has recognized that the nanotechnology infrastructure should provide not only cutting-edge tools but also associated world-class experts to develop the tools and educate users. Human talent brings essential knowledge and expertise, provides hands-on training and development, and facilitates education and transfer of knowledge as well as ensuring the continuous and long-term operation of critical instrumentation. During the committee’s information-gathering
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+**TABLE 1-2** Examples of Major Research Universities with Their Own Nanotechnology Facilities That Are Not Part of the NNCI
+
+University Website of Nanotechnology-Related Facilities
+Auburn University[www.eng.auburn.edu/amstc](http://www.eng.auburn.edu/amstc)
+Indiana University[nano.indiana.edu](http://nano.indiana.edu/)
+Iowa State University[biotech.iastate.edu](http://biotech.iastate.edu/)
+Louisiana State University[lsu.edu/nanofabrication/index.php](http://lsu.edu/nanofabrication/index.php)
+Massachusetts Institute of Technology[mitnano.mit.edu](http://mitnano.mit.edu/)
+Michigan State University[nanomsu.org](http://nanomsu.org/)
+Ohio State University[nanotechnology.osu.edu](http://nanotechnology.osu.edu/); [cemas.osu.edu](http://cemas.osu.edu/); [ensl.osu.edu](http://ensl.osu.edu/)
+Pennsylvania State University[mri.psu.edu](http://mri.psu.edu/)
+Purdue University[birck.research.purdue.edu](http://birck.research.purdue.edu/)
+Rice University[https://research.rice.edu/sea](https://research.rice.edu/sea)
+University of Colorado[colorado.edu/facility/cosinc](http://colorado.edu/facility/cosinc)
+University of Florida[www.eng.ufl.edu/nimet](http://www.eng.ufl.edu/nimet)
+University of Illinois Urbana-Champaign[mrl.illinois.edu](http://mrl.illinois.edu/) (see [Box 1-1](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_box_1-1))
+University of Iowa[cmrf.research.uiowa.edu](http://cmrf.research.uiowa.edu/); [matfab.research.uiowa.edu](http://matfab.research.uiowa.edu/)
+University of Michigan[lnf.engin.umich.edu](http://lnf.engin.umich.edu/); [mc2.engin.umich.edu](http://mc2.engin.umich.edu/)
+
+processes, which included a town hall, invited speakers, and user comments, a singular message from all stakeholders was the importance of human talent, including support for the people who use and operate the infrastructure in the resources for infrastructure. Additionally, in any experimental research environment, physical space is at a premium, and keeping shared space for nanotechnology infrastructure available is an ongoing challenge for any facility. For nanotechnology infrastructure—whether it is supported by national, regional, or increasingly university entities, or as is increasingly common a mix of all of these—it is important to recognize its true footprint, which extends beyond the instruments themselves as follows:
+
+Nanotechnology Infrastructure = Tools + People + Space
+
+#### Funding for Nanotechnology
+
+In general, basic research in the United States is funded by a combination of federal, industrial (business), higher education, and philanthropic/other organizations (second bar in [Figure 1-9](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz38-16)). Nanotechnology is no exception, with its funding coming from a variety of federal, state, and local resources.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 9: Types of research and development (R&D) funding in the United States, 2022, by source of funding in percent.](https://www.nationalacademies.org/read/29063/assets/images/img-38-1.jpg)
+
+**FIGURE 1-9** Types of research and development (R&D) funding in the United States, 2022, by source of funding in percent.
+
+ SOURCE: National Center for Science and Engineering Statistics (NCSES), 2024, “Research and Development: U.S. Trends and International Comparisons,” May, [https://ncses.nsf.gov/pubs/nsb20246/trends-in-u-s-r-d-performance#sources-of-r-d-funding](https://ncses.nsf.gov/pubs/nsb20246/trends-in-u-s-r-d-performance#sources-of-r-d-funding).
+
+Federal funding of the NNI over time is displayed in [Figure 1-10](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz39-2). The different colors in this “mountain plot” correspond to the contributions from federal agencies. The black curve corresponds to the percentage of the NNI funding allocated to “research infrastructure and instrumentation” (i.e., Program Component Area 3, or PCA 3). This proportion has stayed relatively constant since 2006 and represents about 11 percent of the total budget of the NNI as shown in [Figure 1-11](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz40-1a) according to the proposed 2024 President’s NNI Budget. [Figure 1-12](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz41-2) shows the breakout for “infrastructure and instrumentation” over time per government agency. Four government agencies (DOE, NSF, DOC, and HHS) support the bulk of the nanotechnology infrastructure budget ([Figure 1-12](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz41-2)).
+
+The committee learned that “infrastructure” does not have a standard definition. The DOE numbers in [Figure 1-12](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz41-2), for example, represent the total cost of running the five NSRCs, including operating costs such as staff salaries, utilities, maintenance, and service contracts, leaving little room for recapitalization costs. The NSRCs dedicate only about 10 percent of their annual budget ($3 million to $5 million for each NSRC) for capital equipment. This limited allocation makes it necessary to supplement recapitalization efforts with additional sources of funding
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 10: Federal funding for the National Nanotechnology Initiative over time. Colored sections represent contributions from federal agencies. The black curve indicates the percentage of the budget allocated to research infrastructure and instrumentation.](https://www.nationalacademies.org/read/29063/assets/images/img-39-1.jpg)
+
+**FIGURE 1-10** Federal funding for the National Nanotechnology Initiative over time. Colored sections represent contributions from federal agencies. The black curve indicates the percentage of the budget allocated to research infrastructure and instrumentation.
+
+ NOTES:
+*   2021–2023 figures include supplemental funding. Biomedical Advanced Research and Development Authority (BARDA) supplemental investments (_red dots_) for COVID-19 related research not included in line graph totals.
+*   2009 figures do not include American Recovery and Reinvestment Act funds for DOE, NSF, NIH, and NIST.
+*   2024 numbers are based on estimated budget appropriations.
+*   Research Infrastructure funding determined from budgetary allocations labeled “Research Infrastructure” (2000–2001); “Major Research Facilities & Instrument Acquisition” (2006–2013); “PCA 4—Research Infrastructure and Instrumentation” (2014–2019); and “PCA 3—Research Infrastructure and Instrumentation” (2020–2024).
+*   FY 2002–2005 Research Infrastructure funding data was not publicly available.
+*   Acronyms defined in [Appendix B](https://www.nationalacademies.org/read/29063/chapter/9#93).
+
+SOURCE: Courtesy of the National Nanotechnology Coordination Office (NNCO), adapted from “The National Nanotechnology Initiative Supplement to the President’s 2024 Budget,” [https://www.nano.gov/sites/default/files/pub_resource/NNI-FY24-Budget-Supplement.pdf](https://www.nano.gov/sites/default/files/pub_resource/NNI-FY24-Budget-Supplement.pdf).
+
+to repair and replace aging equipment, such as the recent Major Items of Equipment project from DOE.[13](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz39-10),[14](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz39-11)
+
+___________________
+
+[13](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_Al5h)Berkeley Lab Molecular Foundry News, 2021, “Nanoscale Science Research Centers Recapitalization Project Reaches ‘CD-1’ Status,” April 28, [https://foundry.lbl.gov/2021/04/28/mie-cd1](https://foundry.lbl.gov/2021/04/28/mie-cd1).
+
+[14](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AQcQ)Department of Energy, 2025, “Project Dashboard—January 2025, POST CD-2 Active Projects,” Office of Project Management, January, [https://www.energy.gov/sites/default/files/2025-02/January%202025%20PM%20Project%20Dashboard.pdf](https://www.energy.gov/sites/default/files/2025-02/January%202025%20PM%20Project%20Dashboard.pdf).
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 11: The total proposed 2024 President’s National Nanotechnology Initiative budget by program component area. See definitions for each program component area in Chapter 2 before Table 2-1. Total proposed budget: $2,163.60 million. Research Infrastructure and Instrumentation accounts for 11 percent.](https://www.nationalacademies.org/read/29063/assets/images/img-40-1.jpg)
+
+**FIGURE 1-11** The total proposed 2024 President’s National Nanotechnology Initiative budget by program component area. See definitions for each program component area in [Chapter 2](https://www.nationalacademies.org/read/29063/chapter/4#38) before Table 2-1. Total proposed budget: $2,163.60 million. Research Infrastructure and Instrumentation accounts for 11 percent.
+
+ SOURCE: Data from National Nanotechnology Coordination Office (NNCO), 2024, “The National Nanotechnology Initiative Supplement to the President’s 2024 Budget,” [https://www.nano.gov/sites/default/files/pub_resource/NNI-FY24-Budget-Supplement.pdf](https://www.nano.gov/sites/default/files/pub_resource/NNI-FY24-Budget-Supplement.pdf).
+
+While DOE has modestly increased its nanotechnology infrastructure budget since 2020, NSF has reduced its investment over the same time period ([Figure 1-12](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz41-2)). NSF’s decreasing contribution ($24.5 million in fiscal year [FY] 2024) is largely taken up by the 16 NNCI sites, which each receive about $1 million. Their main role is nanotechnology education, outreach, and research. The committee noted with concern that it is not possible for any of the NNCI sites to purchase a new major piece of equipment with NSF support alone. As an example, a state-of-the-art transmission electron microscope (TEM) costs $3 million to $4 million; the institution that purchases such a TEM can easily spend $100,000 to $500,000 on room renovations to house it; a service contract for the instrument would cost $200,000 to $300,000 per year; and at least one half-time staff person would be required for maintenance,
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 12: Research infrastructure and instrumentation annual budget by agency during the time period 2006–2024.](https://www.nationalacademies.org/read/29063/assets/images/img-41-1.jpg)
+
+**FIGURE 1-12** Research infrastructure and instrumentation annual budget by agency during the time period 2006–2024.
+
+ NOTES: Research Infrastructure funding determined from budgetary allocations labeled “Major Research Facilities & Instrument Acquisition” (2006–2013), “PCA 4—Research Infrastructure and Instrumentation” (2014–2019), and “PCA 3—Research Infrastructure and Instrumentation” (2020–2024). 2024 numbers are based on estimated budget appropriations. DOC, Department of Commerce; DOD, Department of Defense; DOE, Department of Energy; HHS, Department of Health and Human Services; NIST, National Institute of Standards and Technology; NSF, National Science Foundation.
+
+ SOURCE: Data from National Nanotechnology Coordination Office (NNCO), 2024, “The National Nanotechnology Initiative Supplement to the President’s 2024 Budget,” [https://www.nano.gov/sites/default/files/pub_resource/NNI-FY24-Budget-Supplement.pdf](https://www.nano.gov/sites/default/files/pub_resource/NNI-FY24-Budget-Supplement.pdf).
+
+operations, and training. As a result, the NSF investment in the NNCI sites alone cannot renew the physical infrastructure.
+
+Infrastructure funding comes from other sources in addition to the federal government. Nanotechnology facilities and resources at the state and regional (e.g., crossing several states) level are relatively rare, but one example is California’s NanoSystems Institute. Much more common are investments that individual universities make to support research on their campuses. For state universities, of course, there may be general funding from the state that academic leaders may direct to support technical facilities of all kinds; at private universities, the central research office is generally involved with oversight and management of nanotechnology facilities, given their broad utility. The collective user base for these local facilities is considerable, and thus the infrastructure for nanotechnology R&D is far larger than the federally funded examples (NNCI, NSRCs) would suggest.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+However, while these are university-operated resources, they in almost all cases owe their existence to federal funding and continue to seek partial support for new tool purchase through federal major equipment grants. As an example, a university that wishes to hire an electron microscopist will purchase a state-of-the-art electron microscope using a mix of funds that may include indirect cost recovery from federal grants, philanthropic sources, or new federal funds specific to instrument purchases. [Box 1-1](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_box_1-1) describes funding at the University of Illinois Urbana-Champaign Materials Research Laboratory.
+
+Additionally, industry and the private sector invest substantially in nanotechnology R&D, especially in development, and the committee describes many examples of the co-investment of federal and industry funding throughout the report, especially in [Chapter 3](https://www.nationalacademies.org/read/29063/chapter/5#56) concerning emerging use cases and critical and emerging technologies.
+
+> Finding 1.6: The nation’s nanotechnology infrastructure comprises the sum of people, tools, and space for facilities.
+>
+>
+> Finding 1.7: Maintenance costs for major equipment and labor are part of the U.S. nanotechnology infrastructure.
+>
+>
+> Finding 1.8: There are presently four main agencies (NSF, DOE, DOC, NIH) that support the U.S. nanotechnology infrastructure at the federal level. This is a priority recommendation.
+>
+>
+> **Recommendation 1.1: In the coming year, the National Nanotechnology Coordinating Office (NNCO) should conduct a census of accessible nanotechnology infrastructure sites (instruments, staff, facilities) and display findings on a public, web-accessible map that includes university, regional, and national resources. This information, which should be maintained annually by NNCO, will enhance the visibility, availability, and impact of these assets.**
+
+### [WHO IS USING THE INFRASTRUCTURE?](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-12)
+
+Only two of the national nanotechnology infrastructure networks, funded by NSF and DOE, require that their facilities report usage data. Each use different metrics, which reflect their different missions, making comparisons between the two networks difficult ([Table 1-3](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz44-1)).
+
+Nonetheless, data from the NNCI (NSF) sites and NSRCs (DOE sites) is instructive. [Table 1-4](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz45-1) shows the total number of unique users for the 16 NNCI sites over a 7-year period—nearly 11,000 to more than 13,000 from 2015 through 2022.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+### BOX 1-1
+
+ University of Illinois Urbana-Champaign
+
+As a local example that mirrors the basic research funding trends in [Figure 1-9](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz38-16), the University of Illinois Urbana-Champaign (UIUC) reported total research expenditures of $731 million in fiscal year (FY) 2021; $406 million of this was from the federal government ([Figure 1-1-1](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pAuch))._[a](https://www.nationalacademies.org/read/29063/chapter/3#chapter01\_pAFqD)_ The principle local nanotechnology resource at UIUC is the Materials Research Laboratory (MRL). The MRL started operations in 1963 with direct sponsorship from the Advanced Research Projects Agency (now DARPA) and the Atomic Energy Commission (now the Department of Energy). It is now funded by the university, state, and user fees. In FY 2023, MRL hosted 1,040 active users on its 220 tools, for more than 84,000 hours of usage time. Out of the 1,040 users, 69 percent were graduate students, 20 percent were senior researchers, and 11 percent were undergraduate students. MRL’s FY 2024 expenditures totaled nearly $3.8 million, with more than half of that going to staff salaries, and more than a quarter going to service contracts on major instruments/maintenance and repair of instruments. Furthermore, 9 percent was expended for materials and supplies, 6 percent for equipment, and 0.4 percent for travel.
+
+![Image 13: Total expenditures in fiscal year 2024 at the Materials Research Laboratory (MRL) at the University of Illinois Urbana-Champaign (UIUC), totaling $3.8 million.](https://www.nationalacademies.org/read/29063/assets/images/img-43-1.jpg)
+
+**FIGURE 1-1-1** Total expenditures in fiscal year 2024 at the Materials Research Laboratory (MRL) at the University of Illinois Urbana-Champaign (UIUC), totaling $3.8 million.
+
+ SOURCE: Data from UIUC, 2021, “Research and Innovation Report,” [https://research.illinois.edu/sites/default/files/UIUC_Research-Report_Digital.pdf](https://research.illinois.edu/sites/default/files/UIUC_Research-Report_Digital.pdf).
+
+________
+
+[_a_](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AVep) University of Illinois Urbana-Champaign, 2021, “Research and Innovation Report.” [https://research.illinois.edu/sites/default/files/UIUC_Research-Report_Digital.pdf](https://research.illinois.edu/sites/default/files/UIUC_Research-Report_Digital.pdf).
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+**TABLE 1-3** Statistics Collected by the National Science Foundation (NSF) and the Department of Energy (DOE) for Their Nanotechnology User Facilities
+
+NSF DOE
+Total users Users per state
+Internal users Users by home institution type (national lab, university, etc.)
+External users Users by citizenship
+Total hours Users conducting proprietary research
+Internal hours Source of funding (DOE-BES, NIH, etc.)
+Average monthly users Subject of user project (materials science, chemistry, etc.)
+Average external monthly users Users by career stage (undergrad, grad students, postdoc, etc.)
+New users trained Users by age (optional for users to report)
+New external users trained Users by race/ethnicity and gender (but these are optional and some NSRCs do not track them yet)
+Hours per user (internal)
+Hours per user (external)
+Discipline of users
+
+SOURCE: Data from National Nanotechnology Coordinated Infrastructure, 2024, _NNCI Coordinating Office Annual Report (Year 8)_, adapted from Table 13, NNCI Coordinating Office, and R.L. Rodd, 2024, _DOE Data Days 2023 Report_, Lawrence Livermore National Laboratory.
+
+Each year, the NNCI sites train 4,000–5,000 new users. The average number of users per site, then, has increased 22 percent over time. This is in the same range as the DOE NSRCs ([Table 1-5](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz45-4)).
+
+In terms of the type of user, the NNCI sites also provide data on types of users. [Figure 1-13](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz46-2) shows the affiliation of these users in FY 2022. Nearly 75 percent of the users are local; yet the user base is quite broad. These NNCI-wide users came from 233 U.S. academic institutions, 562 small companies, 189 large companies, 17 government offices, and 37 international institutions. These NNCI users in FY 2022 spanned a large range of disciplines, as demonstrated in [Figure 1-14](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz46-5).
+
+Thus, a broad range of disciplines make use of nanoscale research facilities, from electronics to geology to medicine.
+
+The committee endeavored to learn how users become aware of relevant facilities as this informs analyses related to expanding access, the subject of [Chapter 4](https://www.nationalacademies.org/read/29063/chapter/6#72). Awareness might be measured, for a given nanotechnology resource, in how many visits its webpage receives, or how many email inquiries its staff receives, over a given time. Mechanisms for access to facilities varies broadly across the country. The NSRCs, for example, do not charge for usage, but potential users have to write a proposal that may or may not be approved. NNCI and other facilities charge users
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+**TABLE 1-4** Data from the 8th National Nanotechnology Coordinated Infrastructure Annual Conference
+
+| **NNCI User Statistics Year 1 – Year 7** |
+| --- |
+|  | **Year 1 10/15-9/16** | **Year 2 10/16-9/17** | **Year 3 10/17-9/18** | **Year 4 10/18-9/19** | **Year 5 10/19-9/20** | **Year 6 10/20-9/21** | **Year 7 10/21-9/22** |
+| Unique Facility Users | 10,909 | 12,452 | 13,110 | 13,355 | 10,501 | 11,242 | 13,348 |
+| Unique Ext. Users | 2,567 23.5% | 3,176 25.5% | 3,379 25.8% | 3,852 28.8% | 2,833 27.0% | 2,793 24.8% | 3,381 25.3% |
+| Industry Users | 1,413 | 1,669 | 1,870 | 1,961 | 1,529 | 1,619 | 1,882 |
+| Ext. Academic Users | 1,060 | 1,295 | 1,365 | 1,531 | 1,064 | 964 | 1,238 |
+| Avg Monthly Users | 4,429 | 4,911 | 5,001 | 5,292 | 3,654 | 4,381 | 5,112 |
+| New Users Trained | 4,116 | 4,563 | 4,981 | 5,194 | 2,813 | 4,414 | 5,151 |
+| Facility Hours | 909,151 | 939,230 | 1,006,764 | 1,149,788 | 767,255 | 967,297 | 1,072,332 |
+| Ext. Facilities Hours | 173,511 19.1% | 191,494 20.4% | 228,441 22.7% | 298,986 26.0% | 197,368 25.7% | 242,926 25.1% | 253,667 23.7% |
+| Hours/User | 83 | 75 | 77 | 86 | 73 | 86 | 80 |
+| Total User Fees | $34.3M | $37.5M | $40.5M | $43.7M | $29.4M | $39.7M | $44.5M |
+| $/Hour | $38 | $40 | $40 | $38 | $38 | $41 | $42 |
+
+SOURCE: Data from National Nanotechnology Coordinated Infrastructure (NNCI), 2023, “8th Annual NNCI Conference at Stanford University,” Presented at the 8th Annual NNCI Conference at Stanford University, Stanford University, October 25–27, [https://nnci.net/sites/default/files/inline-files/NNCI%20CO%20Overview%20Oct%202023.pdf](https://nnci.net/sites/default/files/inline-files/NNCI%20CO%20Overview%20Oct%202023.pdf).
+
+**TABLE 1-5** Number of Users at Each of the Five Department of Energy Nanoscale Science Research Centers in Fiscal Year (FY) 2024
+
+Site Number of Users in FY 2024
+Center for Functional Nanomaterials 711
+Brookhaven National Laboratory (Upton, NY)
+Center for Integrated Nanotechnologies 1020
+Sandia National Laboratories (Albuquerque, NM)
+Los Alamos National Laboratory (Los Alamos, NM)
+Center for Nanophase Materials Science 890
+Oak Ridge National Laboratory (Oak Ridge, TN)
+Center for Nanoscale Materials 850
+Argonne National Laboratory (Argonne, IL)
+The Molecular Foundry 1,128
+Lawrence Berkeley National Laboratory (Berkeley, CA)
+
+SOURCE: Data submitted by facilities.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+a fee for service without requiring a formal proposal. In these cases, users may have a wait time depending on the availability of equipment or staff. Opportunity of access depends on facility time and user funding; most user facilities do not cover the costs of travel and lodging at the site, and users have to take time off to visit and collect data at the site.
+
+The NNCI surveyed its users in FY 2022.[15](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz47-10) It received 970 responses; 67 percent of these were affiliated with the NNCI site, 11 percent were academics not at the NNCI site, and 19 percent were from industry. These data show that users of infrastructure are mostly drawn from local affiliations, at least at the NNCI sites. When asked, “How did you find out about the NNCI facilities?” the top five answers, in order, were as follows:
+
+1.   Current/former user
+2.   Referral from users
+3.   University website
+4.   Web search
+5.   Direct contact by facility
+
+The DOE NSRCs do not charge for usage, unlike the NSF-funded NNCI; instead, users write a proposal which undergoes an internal feasibility review and an external peer review by a board or subject-matter experts. As an example, The Molecular Foundry (Foundry) reported in its FY 2025 strategic plan that in FY 2023 it received 609 user proposals (11 percent from industry), of which 80 percent were accepted. A total of 1,090 users were served (792 onsite and 298 remote), plus an additional 439 co-proposers, for a total of 1,529 researchers served.[16](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz47-11) These projects led to 316 subsequent publications, of which 52 percent were in high-impact journals (impact factor [IF] > 7, as defined by DOE). The Foundry in this strategic plan states that 800–1,000 annual users is approximately the maximum it can handle, given the size of the staff and physical facility. This plan also states that “every couple of years, the user program and communications staff work closely to analyze proposal submissions and identify populations, geographic regions, and institutions that might benefit from targeted outreach and support.” As a result, Foundry staff attend conferences and undertake outreach efforts to local institutions in the California State University system.
+
+As another example, the Center for Nanoscale Materials (CNM) at Argonne National Laboratory ([Figure 1-15](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz48-2)) reports that 53 percent of its users are U.S. academics, while Argonne non-CNM researchers are 27 percent with 5 percent from
+
+___________________
+
+[15](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_Af0x)National Nanotechnology Coordinated Infrastructure, 2023, “8th Annual NNCI Conference,” [https://nnci.net/sites/default/files/inline-files/NNCI%20CO%20Overview%20Oct%202023.pdf](https://nnci.net/sites/default/files/inline-files/NNCI%20CO%20Overview%20Oct%202023.pdf).
+
+[16](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AjfyY)Molecular Foundry, 2024, “Five-Year Strategic Plan FY2025,” [https://foundry.lbl.gov](https://foundry.lbl.gov/).
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 14: Institutional affiliations of Center for Nanoscale Materials (CNM) users by affiliation during fiscal year (FY) 2023.](https://www.nationalacademies.org/read/29063/assets/images/img-48-1.jpg)
+
+**FIGURE 1-15**_Left:_ Institutional affiliations of Center for Nanoscale Materials (CNM) users by affiliation during fiscal year (FY) 2023. _Right:_ Fields of research by CNM users during FY 2023.
+
+ SOURCE: Courtesy of Argonne National Laboratory Center for Nanoscale Materials, “Strategic Plan FY2024,” [https://cnm.anl.gov/assets/pdfs/CNM_FY24_strategic_plan.pdf?fd=20250206](https://cnm.anl.gov/assets/pdfs/CNM_FY24_strategic_plan.pdf?fd=20250206).
+
+industry. The breadth of disciplines served by the CNM is also large, with materials science, engineering, and physics the largest groups.
+
+> Finding 1.9: Users of nanotechnology infrastructure tend to come from the local area of where the infrastructure is located.
+>
+>
+> Finding 1.10: Users of nanotechnology infrastructure are most likely to learn of a facility from other users; a secondary source is the university or organization’s website or a search of the web; a tertiary source is outreach from the facility itself.
+
+### [THE INTENTIONAL EVOLUTION OF THE NATIONAL NANOTECHNOLOGY INITIATIVE](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-13)
+
+The U.S. nanotechnology infrastructure is at a critical juncture two decades after the launch of the NNI. Recommendation 1 in a recent President’s Council of Advisors on Science and Technology report was that “the President work with Congress to sunset or substantially revise the 21st Century Nanotechnology Research
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+and Development Act.”[17](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz49-4) Now is not the time to “sunset” this legislation or curtail the blossoming commercial relevance of nanotechnology and limit the many benefits the nation will realize from its years of strategic investment. Now is the time to renew the commitment to this vital and cross-cutting area of research and explore how the government may support it during its new phase of development. Nanotechnology is everywhere—smartphones, computers, medical diagnostics—and many more products are on the horizon. The nanotechnology infrastructure that supports such innovation requires tending, maintenance, and improvements.
+
+Nanotechnology infrastructure and its importance have only grown as nanotechnology has developed. The increasing number of infrastructure users (e.g., [Table 1-4](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz45-1), showing a 22 percent increase over 6 years, in spite of the pandemic), shows that nanotechnology infrastructure is of increasing necessity to the scientific community, which includes large and small companies. While the COVID-19 pandemic made workplaces more versatile with remote activities, lessons from nanotechnology facilities underlined the limitations with respect to infrastructure access. While this trend has its benefits, as discussed in [Chapter 4](https://www.nationalacademies.org/read/29063/chapter/6#72), the importance of in-person and hands-on training for research infrastructures is only more evident post-pandemic.
+
+While federal investment in this area 20 years ago was driven by nanotechnology’s intellectual novelty and technological promise, renewed support for its infrastructure will ensure its ongoing commercial relevance in different sectors enabled by nanoscale science and technology. This importance has only been highlighted since the 2020 NNI quadrennial review.[18](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz49-5) The global COVID-19 pandemic led to the unprecedented and rapid deployment of nanotechnology on a vast scale far beyond the narrow confines of the research laboratory as many of the most successful COVID-19 vaccines were enabled by nanotechnology.[19](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz49-6) These life-saving nanoparticles, which consisted of an mRNA/lipid formulation, could never have been invented, much less produced at scale, without the foundational knowledge of nanotechnology, biotechnology, and nanomedicine. At-home COVID-19 tests use lateral flow assays containing gold nanoparticles that offer shelf-stable and reliable results in the form of pink lines; the pink color comes from the optical properties of nanoscale gold particles. It is expected that real-world applications will follow on from research discoveries, and the past two decades of nanotechnology discoveries are now fueling entirely new solutions to global problems.
+
+___________________
+
+[17](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AXTM)President’s Council of Advisors on Science and Technology, 2023, “The Seventh Assessment of the National Nanotechnology Initiative,” [https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/08/PCAST_NNI_Review_August2023.pdf](https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/08/PCAST_NNI_Review_August2023.pdf).
+
+[18](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AN_8)NASEM, 2020, _A Quadrennial Review of the National Nanotechnology Initiative: Nanoscience, Applications, and Commercialization_, The National Academies Press, [https://doi.org/10.17226/25729](https://doi.org/10.17226/25729).
+
+[19](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_AmGt)R. Tenchov, R. Bird, A.E. Curtze, and Q. Zhou, 2021, “Lipid Nanoparticles—From Liposomes to mRNA Vaccine Delivery, a Landscape of Research Diversity and Advancement,” _ACS Nano_ 15(11):16982–17015.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+Also critical is that the nanotechnology infrastructure be _expanded_ to support its growing relevance to emerging use cases (e.g., biotechnology, semiconductors, agriculture, quantum, and energy) as is discussed in more depth in [Chapter 3](https://www.nationalacademies.org/read/29063/chapter/5#56). The U.S. government made large federal investments in manufacturing, such as the CHIPS and Science Act. The more homegrown and modern semiconductor manufacturing sector envisioned in this legislation deeply depends on nanotechnology. Novel capabilities in shaping chips are enabled by new tools and technologies such as extreme ultraviolet lithography that prints 12-nm linewidth structures in the so-called “3 nm technology node, N3.” This will soon require 8-nm features in the upcoming technology nodes.[20](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz50-3) New phenomena in quantum science (e.g., the electronic properties of twisted bilayer graphene) have come to the fore as well, which led to the National Quantum Initiative. It is important to note that these new initiatives have leveraged and continue to build upon the nanotechnology infrastructure capabilities and expertise of the NNI user facilities. Without the infrastructure network supported by the NNI, these new efforts and future ones would not be possible. Topics which were considered fringe have now risen to importance; one example is the convergence of nanotechnology with agriculture, leading to potential improvements in crop yields and food security.
+
+Just as strong federal support for the original NNI helped make the United States the global leader and beneficiary of nanotechnology, continuing federal support and coordination of its next chapter will also guarantee its ongoing impact. The United States stands to gain an enormous amount from the evolution of this now vital research area. While the United States remains strong in nanotechnology, [Chapter 2](https://www.nationalacademies.org/read/29063/chapter/4#38) explores current U.S. competitiveness in this field. The NNI itself and the power of legislation in science and technology for the nation is clear. Its success has inspired many newer legislative initiatives. NIH’s Brain Initiative is one example, and broader multi-agency activities centered on quantum science (the National Quantum Initiative) and artificial intelligence are others; being new, these exemplify the hallmarks of a true initiative and capture attention and enthusiasm. After 20 years, nanotechnology is no longer an emerging area. It is also not a topic that can be readily absorbed and sustained by one scientific or engineering discipline; it crosses over between chemistry, physics, engineering, biology, medicine, and more. This strength makes its future precarious without evolving coordination and structures that cross agencies and conventional academic boundaries. Legislative action can again ensure that nanotechnology’s connections to many science and engineering disciplines keep growing and that a full complement of federal agencies both oversee and benefit from nanotechnology’s ongoing development. Turning
+
+___________________
+
+[20](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_ADex)International Roadmap for Devices and Systems, 2022, “Lithography,” Institute of Electrical and Electronics Engineers.
+
+**Suggested Citation:** "1 Introduction: What Is the Nation's Nanotechnology Infrastructure?." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+attention toward preservation and renewal of the heavily used and relevant research infrastructure is a logical and important focus for this next stage.
+
+What was once specialized and cutting-edge knowledge known to a small academic community is now a central commodity accessed by nearly all researchers with impacts felt across nearly every discipline and industrial sector.
+
+> Finding 1.11: Research and development related to nanotechnology is increasing over time and has contributed positively to society.
+>
+>
+> Finding 1.12: The successful cross-agency model used for the National Nanotechnology Initiative has been replicated in other emerging areas of research.
+>
+>
+> Finding 1.13: Every year, thousands of academic and industry researchers use the nanotechnology infrastructure.
+>
+>
+> Finding 1.14: Nanofabrication and nanocharacterization infrastructure are essential to support academic and industry research that can advance critical and emerging technology areas like quantum information science and technology, microelectronics, biotechnology, advanced manufacturing, and artificial intelligence.
+
+This is a priority recommendation.
+
+> **Recommendation 1.2: Within 2 years, Congress should reauthorize the National Nanotechnology Initiative as the National Nanotechnology Infrastructure and orient, with the appropriate funding, the National Nanotechnology Coordination Office and agency activity toward the renewal and expansion of infrastructure to serve existing and emerging nanotechnology research and development.**
+
+<!-- source: https://www.nationalacademies.org/read/29063/chapter/4 -->
+
+## 官方在线阅读第4章
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## [2 Opportunities and Barriers for Renewing and Coordinating the Nation’s Global Leadership in Nanotechnology Research and Development Infrastructure](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-14)
+
+In its examination of the position of the nation’s nanotechnology-relevant infrastructure, the committee was tasked to explore the opportunities and barriers for sustaining and coordinating the nation’s global leadership in nanotechnology research and development (R&D) infrastructure.
+
+### [GLOBAL BENCHMARKING ON NANOTECHNOLOGY RESEARCH AND DEVELOPMENT INFRASTRUCTURE](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-18)
+
+The committee recognizes that U.S. success in nanotechnology is linked to the investment in the National Nanotechnology Initiative (NNI), which has a mission to bring multiple federal agencies, academic entities, and the private sector together on a shared vision to understand and deploy knowledge of novel interactions and processes at the nanoscale for generating innovative technologies to benefit societies. Indeed, multiple agencies acknowledge a link to the mission of the NNI. Currently, under the NNI, major federally funded nanotechnology R&D user facilities under the National Science Foundation (NSF), the Department of Energy (DOE), the National Institutes of Health (NIH), and the National Institute
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+of Standards and Technology (NIST) are spread across 18 states[1](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz53-5) in the United States. These facilities are sites for stimulating cross-disciplinary innovation and otherwise unlikely collaborations and discoveries, propelling the United States to an early advantage in nanotechnology-based innovation across various sectors, most notably in energy and transportation and health care (see [Figure 2-1](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz54-3)). At the outset of the program, the easy access to these facilities and the accompanying hands-on training gained by users, many of whom are trainees, made the United States a global leader in skilled nanotechnology workforce.
+
+The uniqueness of this initiative, in particular the industry–academic partnerships and the accompanying massive infrastructure investment, has helped spur new nano-enabled technologies in medicine, electronics, agriculture, transportation, and energy generation and storage, and more. However, the early U.S. lead began to wane in the early 2000s.
+
+In 2020, the Committee on National Nanotechnology Initiative: A Quadrennial Review was charged to evaluate the relative U.S. position compared to other nations with respect to nanotechnology R&D, including trends in the development of nanotechnology science and engineering and the identification of any critical research where the United States should be the world leader to achieve the goals of the program. As outlined in that committee’s report, _A Quadrennial Review of the National Nanotechnology Initiative: Nanoscience, Applications, and Commercialization_ (hereafter the 2020 NNI Quadrennial Review),[2](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz53-6) the United States was an early leader in nanoscience and nanotechnology research and infrastructure and U.S. national investment was on par with other developed nations—notably Western Europe and Japan.
+
+As detailed in the 2020 NNI Quadrennial Review, the United States had a lead in many indicators for research and development leadership, notably in the number of patents and nanotechnology papers. [Figure 2-1](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz54-3) ([Figure 3.1](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz79-2) in the 2020 NNI Quadrennial Review) shows that the United States and the European Union led in the number of nanotechnology papers published in archival journals, with the United States lagging behind the European Union modestly while keeping pace. However, China took a modest lead over the United States and the European Union
+
+___________________
+
+[1](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_AZ4g)The National Science Foundation’s 16 National Nanotechnology Coordinated Infrastructure sites are located in Arizona, California (two sites), Georgia, Illinois, Kentucky, Massachusetts, Minnesota, Montana, Nebraska, New York, North Carolina, Pennsylvania, Texas, Virginia, and Washington. The Department of Energy’s Nanoscale Science Research Centers are located in California, Illinois, New Mexico, New York, and Tennessee; the Center for Nanoscale Science and Technology, funded by the National Institute of Standards and Technology, and the National Cancer Institute’s Nanotechnology Characterization Laboratory are located in Maryland.
+
+[2](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_AQmM)See [Appendix A](https://www.nationalacademies.org/read/29063/chapter/8#91) in National Academies of Sciences, Engineering, and Medicine, 2020, _A Quadrennial Review of the National Nanotechnology Initiative: Nanoscience, Applications, and Commercialization_, The National Academies Press, [https://doi.org/10.17226/25729](https://doi.org/10.17226/25729).
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 1: Global nanotechnology publications recorded, by lead author location. Parts (a–c) were originally included as Figure 3.1 of the 2020 NNI Quadrennial Review. The 2024 data (part d) are collected from Scopus.](https://www.nationalacademies.org/read/29063/assets/images/img-54-1.jpg)
+
+**FIGURE 2-1** Global nanotechnology publications recorded, by lead author location. Parts (a–c) were originally included as [Figure 3.1](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz79-2) of the 2020 NNI Quadrennial Review. The 2024 data (part d) are collected from Scopus.
+
+ SOURCES: (a–c) Reprinted from National Research Council, 2020, _A Quadrennial Review of the National Nanotechnology Initiative: Nanoscience, Applications, and Commercialization_, National Academies Press, based on data from Z. Wang, A.L. Porter, S. Kwon, J. Youtie, P. Shapira, S.F. Carley, and X. Liu, 2019, “Updating a Search Strategy to Track Emerging Nanotechnologies,” _Journal of Nanoparticle Research_ 21(9):199. (d) Data from Scopus database, [http://www.scopus.com](http://www.scopus.com/).
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+in 2013. This lead has since grown exponentially as presented in [Figure 2-1](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz54-3). China now far outpaces the United States and Europe in nanotechnology papers. A similar trend is seen with the number of patents, an indicator of potential commercial impact. China took over the lead from the United States in global nanotechnology patent count in 2010 and has grown the gap substantially since then ([Figures 2-2](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz55-5) and [2-3](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz56-2)). As shown in [Figure 2-4](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz57-2), these trends have not reversed as the U.S. publication rate has remained steady, while China’s continues to grow even through 2022. A similar conclusion can be drawn from Figure 2-5, which shows papers identified as “nanotechnology” related using a bibliometric approach drawn from [Figure 1-5](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz31-2).
+
+Across the board, the United States has seen a flattening of this critical metric for nanotechnology R&D where there was rapid growth from China in the same period. Based on this trend, the 2020 NNI Quadrennial Review concluded that the stagnation experienced by U.S. nanotechnology R&D is likely linked to a stagnation
+
+![Image 2: The number and percentage of nanotechnology patents as recorded to the United States Patent and Trademark Office (USPTO) by lead author, for five regions. This graph is formatted using the structure utilized by the 2020 NNI Quadrennial Review report, as in H. Zhu, S. Jiang, H. Chen, and M.C. Roco, 2017, “International Perspective on Nanotechnology Papers, Patents, and NSF Awards (2000–2016),” Journal of Nanoparticle Research 19:370. According to ISO/TS 18110 (First Edition, August 15, 2015), the definition of nanotechnology patents is “patents that include at least one claim related to nanotechnology or patents classified with an IPC classification code related to nanotechnology such as B82.”](https://www.nationalacademies.org/read/29063/assets/images/img-55-1.jpg)
+
+**FIGURE 2-2** The number and percentage of nanotechnology patents as recorded to the United States Patent and Trademark Office (USPTO) by lead author, for five regions. This graph is formatted using the structure utilized by the 2020 NNI Quadrennial Review report, as in H. Zhu, S. Jiang, H. Chen, and M.C. Roco, 2017, “International Perspective on Nanotechnology Papers, Patents, and NSF Awards (2000–2016),” _Journal of Nanoparticle Research_ 19:370, [https://doi.org/10.1007/s11051-017-4056-7](https://doi.org/10.1007/s11051-017-4056-7). According to ISO/TS 18110 (First Edition, August 15, 2015), the definition of nanotechnology patents is “patents that include at least one claim related to nanotechnology or patents classified with an IPC classification code related to nanotechnology such as B82.”
+
+ SOURCE: Data from StatNano, n.d., “Nanotechnology Patents in USPTO (Patent),” [https://statnano.com/report/s103/4/excel/1](https://statnano.com/report/s103/4/excel/1), accessed May 1, 2025.
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 3: The number and percentage of nanotechnology patents as recorded to the World Intellectual Property Organization (WIPO) by country of registration. This graph is formatted using the structure utilized by in the 2020 NNI Quadrennial Review report, as in H. Zhu, S. Jiang, H. Chen, and M.C. Roco, 2017, “International Perspective on Nanotechnology Papers, Patents, and NSF Awards (2000–2016),” Journal of Nanoparticle Research 19:370. The category “EU27+UK+EPO” has been lumped into one entry to include IP pre- and post-Brexit and the inclusion of patents registered to the European Patent Office (EPO) under WIPO.](https://www.nationalacademies.org/read/29063/assets/images/img-56-1.jpg)
+
+**FIGURE 2-3** The number and percentage of nanotechnology patents as recorded to the World Intellectual Property Organization (WIPO) by country of registration. This graph is formatted using the structure utilized by in the 2020 NNI Quadrennial Review report, as in H. Zhu, S. Jiang, H. Chen, and M.C. Roco, 2017, “International Perspective on Nanotechnology Papers, Patents, and NSF Awards (2000–2016),” _Journal of Nanoparticle Research_ 19:370, [https://doi.org/10.1007/s11051-017-4056-7](https://doi.org/10.1007/s11051-017-4056-7). The category “EU27+UK+EPO” has been lumped into one entry to include IP pre- and post-Brexit and the inclusion of patents registered to the European Patent Office (EPO) under WIPO.
+
+and, in some regards, diminished federal investment in U.S. nano infrastructure (see [Table 2-1-1](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pAejk) in [Box 2-1](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_box_2-1)).
+
+As will be discussed, much of the equipment in federal and academic facilities are aging, and capabilities lag behind due to the lack of current state-of-the-art tools. Stagnation is happening at the same time other countries, such as China, are more heavily investing in their scientific infrastructure. In 2024, the United States is no longer a leader in key indicators of scientific productivity in areas of science and engineering highly relevant to nanotechnology, as shown in [Figures 2-4](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz57-2) and [2-5](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz57-2a).[3](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz56-5) As noted in the caption for [Figure 2-5](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz57-2a), the committee considered papers with the word “nano” in the title, abstract, or keywords. Some papers on quantum may
+
+___________________
+
+[3](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_AJq7)The Economist, 2024, “China Has Become a Scientific Superpower,” _The Economist_, June 12, [https://www.economist.com/science-and-technology/2024/06/12/china-has-become-a-scientific-superpower](https://www.economist.com/science-and-technology/2024/06/12/china-has-become-a-scientific-superpower).
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 4: Articles relevant to science and engineering (S&E) fields from NCSES for the S&E Indicators 2024. In contrast to the bibliographic analyses in Chapter 1, this approach looks broadly at S&E fields to observe broader trends across the research and development workforce between countries, including capabilities in both basic research as well as critical and emerging technologies.](https://www.nationalacademies.org/read/29063/assets/images/img-57-1.jpg)
+
+**FIGURE 2-4** Articles relevant to science and engineering (S&E) fields from NCSES for the S&E Indicators 2024. In contrast to the bibliographic analyses in [Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9), this approach looks broadly at S&E fields to observe broader trends across the research and development workforce between countries, including capabilities in both basic research as well as critical and emerging technologies.
+
+ SOURCE: National Center for Science and Engineering Statistics, 2024, “The State of U.S. Science and Engineering 2024,” [https://ncses.nsf.gov/pubs/nsb20243/translation-u-s-and-global-science-technology-and-innovation-capabilities](https://ncses.nsf.gov/pubs/nsb20243/translation-u-s-and-global-science-technology-and-innovation-capabilities).
+
+be nano related but are not included in the committee’s discussion. While quantum papers may include use of nanotechnology facilities in doing the experiments, the study’s statement of task is on the NNI, so further analysis on quantum and other technologies that exceeds that committee’s work in [Chapter 3](https://www.nationalacademies.org/read/29063/chapter/5#56) is beyond the scope of the study.
+
+For example, the United States now lags other countries in high-impact paper publications as well as nanotechnology patents (see [Figures 1-5](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz31-2), [2-1](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz54-3), and [2-3](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz56-2)). This loss of intellectual leadership has negative consequences for both national security and the U.S. economy.
+
+> Finding 2.1: The United States is losing its leadership in nanotechnology.
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 5: The top 20 countries/regions of origin for papers published on “nano*” from 2020 onward. Countries in the European Union were aggregated to a single entry.](https://www.nationalacademies.org/read/29063/assets/images/img-58-1.jpg)
+
+**FIGURE 2-5** The top 20 countries/regions of origin for papers published on “nano*” from 2020 onward. Countries in the European Union were aggregated to a single entry.
+
+ NOTE: Search to display the proportion of papers that include “nano*” in the title, abstract, or key words. The asterisk (*) signifies that the results included terms that start with “nano,” such as nanotechnology. Unit terms such as “nanometer,” “nanometre,” and “nanosecond” were excluded.
+
+ SOURCE: Scopus database, [http://www.scopus.com](http://www.scopus.com/).
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+### [BARRIER: FALSE PERCEPTION THAT COORDINATION IS NO LONGER NEEDED](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz11-20)
+
+The committee found that while the expansive nanotechnology infrastructure of the United States provides outstanding opportunities for scientific and technology innovation, a number of challenges and barriers have to be recognized and addressed for the United States to regain its leadership and further develop its potential. These challenges are not fundamentally insurmountable, nor are they based on exogenous factors. Rather, they require both financial resources and government-wide coordination to overcome.
+
+One of the challenges facing the national nanotechnology infrastructure is a perception that nanotechnology is a mature field, giving the false impression that coordination and dedicated support are no longer needed. Through numerous committee interviews, the committee found that this perception cannot be further from the truth. The committee identified nanotechnology as a deeply enabling area, one that is central to the continuing growth and evolution of many research disciplines. Experts who spoke to the committee highlighted the need for an agile infrastructure that can support research and commercialization in emerging fields.
+
+As an example of how the user base of nanotechnology facilities has evolved, consider the word cloud diagrams in [Figures 2-6](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_ASPt), [2-7](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_AURy), and [2-8](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz63-2). These capture keywords from nanotechnology publications over 5-year periods starting 2009 through 2024. The evolution and diversification of the keywords is apparent as new fields, such as drug delivery which did not appear until 2014–2024, were enabled by nanotechnology. Growth in nanotechnology-enabled research areas leads to expansion of users from disciplines and sectors that may not have been heavily engaged in the past. These characteristics align with the aspirational goals of the facilities, and as such, support for the diversification of research areas would be a natural focus of the future NNI and an opportunity to strengthen the impact of the nation’s infrastructure.
+
+While some aspects of nanotechnology may be more mature, many related areas require advances to provide the necessary leading-edge capabilities for nanotechnology-related research and commercialization. But perhaps more critically, nanotechnology is by no means a homogeneous field of study. There is a diversity of research areas and commercial development that increasingly, and sometimes unexpectedly, depend on nanotechnology to advance the field or technology. As [Chapter 3](https://www.nationalacademies.org/read/29063/chapter/5#56) indicates, the world of nanotechnology is constantly evolving to address the needs of emerging fields in disciplines across the natural and engineering sciences. Notably, these fields include areas of national security and defense that require the United States to have the most advanced capabilities available.
+
+Similarly, the perception that nanotechnology no longer requires coordination due to its maturity was found to be incorrect. The committee learned through
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+### BOX 2-1
+
+ 2022 Federal Investment in Nanotechnology Research Infrastructure and Instrumentation
+
+[Table 2-1-1](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pAejk) shows federal funding in nanotechnology for 2022 by agency and Program Component Area (PCA), with PCA 3 being for “Research Infrastructure and Instrumentation.”
+
+**TABLE 2-1-1** Actual 2022 Agency Investments by Program Component Area (PCA) (dollars in millions)
+
+| Agency | 1. Foundational Research | 2. Nanotechnology - Enabled Applications, Devices, and Systems | 3. Research Infrastructure and Instrumentation | 4. Education and Workforce Development | 5. Responsible Development | NNI Total |
+| --- | --- | --- | --- | --- | --- | --- |
+| CPSC | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0.2 |
+| DOC/NIST | 15.4 | 9.2 | 28.2 | 0.0 | 3.5 | 56.3 |
+| DOD | 184.0 | 73.8 | 15.1 | 0.0 | 1.2 | 274.1 |
+| DOE | 220.7 | 88.8 | 150.8 | 0.0 | 0.0 | 460.3 |
+| DOI/USBR | 0.0 | 0.3 | 0.0 | 0.0 | 0.0 | 0.3 |
+| DOJ/NIJ | 0.5 | 1.8 | 0.0 | 0.0 | 0.0 | 2.3 |
+| EPA | 0.0 | 0.0 | 0.0 | 0.0 | 4.1 | 4.1 |
+| HHS (total) | 207.4 | 878.1 | 22.4 | 3.6 | 22.5 | 1134.0 |
+| BARDA[*](https://www.nationalacademies.org/read/29063/chapter/4#ft1) | 0.0 | 352.1 | 0.0 | 0.0 | 0.0 | 352.1 |
+| FDA | 0.3 | 4.3 | 1.6 | 0.0 | 1.8 | 7.9 |
+| NIH[**](https://www.nationalacademies.org/read/29063/chapter/4#ft2) | 207.1 | 521.7 | 20.8 | 3.6 | 11.5 | 764.7 |
+| NIOSH | 0.0 | 0.0 | 0.0 | 0.0 | 9.2 | 9.2 |
+| NASA | 1.1 | 10.5 | 0.0 | 0.0 | 0.0 | 11.6 |
+| NSF | 329.8 | 139.5 | 27.7 | 30.9 | 17.3 | 545.1 |
+| USDA (total) | 4.8 | 23.3 | 1.1 | 1.2 | 2.6 | 32.9 |
+| ARS | 0.0 | 5.0 | 0.0 | 0.0 | 0.0 | 5.0 |
+| FS | 0.6 | 4.1 | 1.1 | 0.0 | 0.0 | 5.7 |
+| NIFA | 4.2 | 14.2 | 0.0 | 1.2 | 2.6 | 22.2 |
+| TOTAL [†](https://www.nationalacademies.org/read/29063/chapter/4#ft3) | 963.6 | 1225.2 | 245.3 | 35.7 | 51.5 | 2521.1 |
+
+[*](https://www.nationalacademies.org/read/29063/chapter/4#fn1) BARDA’s 2022 investment includes $350 million in supplemental funding, in PCA 2.
+
+[**](https://www.nationalacademies.org/read/29063/chapter/4#fn2) NIH totals include $2.4 million in supplemental 2022 funding, for PCA 2.
+
+[†](https://www.nationalacademies.org/read/29063/chapter/4#fn3) Totals may not add due to rounding.
+
+NOTE: Acronyms provided in [Appendix B](https://www.nationalacademies.org/read/29063/chapter#app02).
+
+SOURCE: National Nanotechnology Coordination Office (NNCO), 2024, “The National Nanotechnology Initiative Supplement to the President’s 2024 Budget,” [https://www.nano.gov/sites/default/files/pub_resource/NNI-FY24-Budget-Supplement.pdf](https://www.nano.gov/sites/default/files/pub_resource/NNI-FY24-Budget-Supplement.pdf), Table 3. CC BY 3.0.
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+#### **Program Component Area Definitions**
+
+**PCA 1. Foundational Research.** The foundational research under PCA 1 includes the following: (1) discovery and development of fundamental knowledge pertaining to new phenomena in the physical, biological, chemical, and engineering sciences that occur at the nanoscale; (2) elucidation of scientific and engineering principles related to nanoscale structures, processes, and mechanisms; and (3) research aimed at discovery and synthesis of novel nanoscale and nanostructured materials and at a comprehensive understanding of the properties of nanomaterials ranging across length scales, and including interface interactions. This PCA encompasses basic research aimed at addressing national needs and priorities as well as undirected research aimed at expanding the frontiers of science and technology.
+
+**PCA 2. Nanotechnology-Enabled Applications, Devices, and Systems.** PCA 2 covers research and development (R&D) that applies the principles of nanoscale science and engineering to create novel devices and systems, or to improve existing ones. It includes the incorporation of nanoscale or nanostructured materials and the processes required to achieve improved performance or new functionality. This PCA includes metrology, scale-up, manufacturing technology, and nanoscale reference materials and standards. To meet this definition, the enabling science and technology must be at the nanoscale, but the applications, systems, and devices themselves are not restricted to that size.
+
+**PCA 3. Research Infrastructure and Instrumentation.** PCA 3 supports the establishment and operation of user facilities and networks, acquisition of major instrumentation, and other activities that develop, support, or enhance the nation’s physical, data, and cyber infrastructure for nanoscale science, engineering, and technology. It includes R&D pertaining to the tools needed to advance nanotechnology research and commercialization, including informatics tools and next-generation instrumentation for characterization, measurement, synthesis, and design of materials, structures, devices, and systems.
+
+**PCA 4. Education and Workforce Development.** PCA 4 supports research on and development of curriculum and other tools for effective training of students at all stages of education (from K–12 to community colleges and vocational schools, through doctoral and postdoctoral education) in the skills needed to succeed in the nanotechnology workforce. While student support to perform research is captured in other categories, dedicated educational efforts ranging from outreach to advanced training are included here as resources supporting the nanotechnology workforce. PCA 4 also includes support for programs, partnerships, or personnel exchanges among government, academia, and industry to develop the desired workforce skills and competencies. This PCA further encompasses mechanisms for public engagement and informal education.
+
+**PCA 5. Responsible Development.** PCA 5 covers a broad range of activities to ensure responsible development of nanotechnology. Activities include R&D directed at understanding the potential environmental, health, and safety impacts of nanotechnology, and at assessing, managing, and mitigating identified risks. Research addressing the broad implications of nanotechnology for society is also captured in this PCA. Responsible development encompasses efforts to benefit society addressing topics such as social, economic, ethical, and legal considerations. Research integrity, safety, and reproducibility are also captured in PCA 5.
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 6: Word cloud showing keywords from nano* publications during the timespan 2014–2024.](https://www.nationalacademies.org/read/29063/assets/images/img-62-1.jpg)
+
+**FIGURE 2-6** Word cloud showing keywords from nano* publications during the timespan 2014–2024.
+
+ NOTE: Data from a keyword search from Scopus, including “nano*” in the title, abstract, or keywords. The asterisk (*) signifies that the results included terms that start with “nano,” such as nanotechnology. Unit terms such as “nanometer,” “nanometre,” and “nanosecond” were excluded.
+
+ SOURCE: Data from Scopus database, [http://www.scopus.com](http://www.scopus.com/); image courtesy of FreeWordCloud [Generator.com](http://generator.com/).
+
+![Image 7: Word cloud showing keywords from nano* publications during the timespan 2004–2014.](https://www.nationalacademies.org/read/29063/assets/images/img-62-2.jpg)
+
+**FIGURE 2-7** Word cloud showing keywords from nano* publications during the timespan 2004–2014.
+
+ NOTE: Data from a keyword search of Scopus, including “nano*” in the title, abstract, or keywords. The asterisk (*) signifies that the results included terms that start with “nano,” such as nanotechnology. Unit terms such as “nanometer,” “nanometre,” and “nanosecond” were excluded.
+
+ SOURCE: Data from Scopus database, [http://www.scopus.com](http://www.scopus.com/); image courtesy of FreeWordCloud [Generator.com](http://generator.com/).
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 8: Word cloud showing keywords from nano* publications during the timespan 2001–2004.](https://www.nationalacademies.org/read/29063/assets/images/img-63-1.jpg)
+
+**FIGURE 2-8** Word cloud showing keywords from nano* publications during the timespan 2001–2004.
+
+ NOTE: Data from a keyword search of Scopus, including “nano*” in the title, abstract, or keywords. The asterisk (*) signifies that the results included terms that start with “nano,” such as nanotechnology. Unit terms such as “nanometer,” “nanometre,” and “nanosecond” were excluded.
+
+ SOURCE: Data from Scopus database, [http://www.scopus.com](http://www.scopus.com/); image courtesy of FreeWordCloud [Generator.com](http://generator.com/).
+
+interviews and discussions that coordination is needed now more than ever. Good examples of coordinated activities exist throughout the NNI.
+
+> Finding 2.2: The National Nanotechnology Coordination Office hosts many public engagement activities to bring together the nanotechnology community, share information, and carry out outreach to students.
+>
+>
+> Finding 2.3: Concerning user facilities, the NSF-funded National Nanotechnology Coordinated Infrastructure (NNCI) and the DOE Nanoscale Science Research Centers provide extensive coordination and data tracking for the facilities that are a part of their respective networks, not across networks (e.g., NSF and DOE).
+
+For example, in October 2024, the NNCI’s annual conference gathered directors of its nanotechnology user facilities together to discuss best practices and operations. Beyond these networks, the committee found that community-driven efforts such as the biennial University Government Industry Micro/Nanotechnology symposium also provided a forum for sharing ideas and best practices across the U.S. nanotechnology ecosystem. The committee learned in its conversations with leaders and participants in the field that more coordination would be beneficial.
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+> _Conclusion 2.1: Coordination among the different facilities and evolving infrastructure is critical for researchers and industries to understand the available landscape of U.S. nanotechnology infrastructure offerings._
+>
+>
+> _Conclusion 2.2: Coordination is critical for knowledge transfer and training among facilities to develop and drive best operational practices and efficiencies._
+>
+>
+> _Conclusion 2.3: Coordination can lead to greater democratization of access as different agencies and facilities work together to create administrative mechanisms to facilitate access; ensure that tool sets are appropriate for evolving needs; and better track the economic, scientific, and technological impact of the U.S. nanotechnology investment._
+>
+>
+> _Conclusion 2.4: Coordination helps to minimize or avoid duplication of capabilities and thereby to increase the breadth of capabilities and ability to meet the needs of various research communities._
+>
+>
+> **Recommendation 2.1: The National Nanotechnology Coordination Office should continue to annually convene key stakeholders in nanotechnology infrastructure to share best practices, coordinate agency investments, and ensure all facilities have a common connection.**
+
+### [BARRIER: REPORTING VARIABILITY AND ADMINISTRATIVE BURDENS](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-1)
+
+While reporting on infrastructure is valuable, the committee also understands the administrative burdens that it requires. This is a barrier for the nanotechnology infrastructure and it is important that every effort be made to make it simple and efficient for any nanotechnology facility to report on its activities. In addition, the type of metrics used by different agencies vary (e.g., NSF supported, DOE supported, those supported by private and public universities).
+
+The different requirements for different facilities and lack of coordination among facilities can also lead to access challenges. The requirements for access, intellectual property, and training at one facility do not easily translate to another. Potential users who may need to access multiple facilities for their nanotechnology needs have to navigate an administrative and bureaucratic maze that can disincentivize their use of the infrastructure.
+
+While it is important that different facilities be free to select the information of most value to them, the complete uncoupling of the different types of nanotechnology infrastructure facilities creates real challenges for strategic planning. There are commonly desired metrics that transcend all such facilities, such as the types of tools available, user demand, the means to access, and tool up-time. By agreeing
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+on this common set of measures, the U.S. nanotechnology infrastructure can better inform the public of resource availability. It could also identify gaps and needs more strategically, ensuring a high-yield investment in nanotechnology infrastructure.
+
+> Finding 2.4: The impact of the U.S. nanotechnology infrastructure can be challenging to assess owing to the variability in reporting from different facilities and the burdens created by the reporting process.
+>
+>
+> Finding 2.5: While different families of facilities (e.g., NSF-funded NNCI or DOE-funded national laboratories) have centralized databases that show metrics and report on the use and impact of their facilities, the committee could find no such centralized resource that compiles reports from all facilities. See the committee’s recommendation regarding a census in [Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9).
+>
+>
+> _Conclusion 2.5: The lack of centralized data gathering from non–federally supported facilities, such as those privately operated or funded by research universities, leads to an underestimate of the true national and global impact of U.S. nanotechnology infrastructure and creates a barrier to access and use. For instance, simple data such as where a potential user can find a particular tool or facility to access the infrastructure are not readily available._
+>
+>
+> **Recommendation 2.2: Within 2 years, the National Nanotechnology Coordination Office should create and then maintain a facilities reporting and user metrics database for all nanotechnology infrastructure that is streamlined, standardized, and eventually automated.**
+
+### [BARRIER: INSUFFICIENT METRICS](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-2)
+
+The committee further found that in some cases infrastructure metrics themselves are not well aligned with the goal of ensuring U.S. leadership in nanotechnology infrastructure. For instance, many facilities primarily focus their attention on the number of journal papers or the numbers of paper citations of work that used their resources. While productivity and high-impact academic work is important, these metrics do not capture infrastructure use that leads to economic impact or improved and more accessible education and workforce development. As a result, facilities can place enormous emphasis on providing users access for publication-focused research projects instead of balancing their portfolio with higher risk projects, commercial development studies, and/or training efforts.
+
+Regarding funding issues, some of the most pressing challenges and barriers are related to inequalities in financial support that have potentially negative impacts on U.S. nanotechnology infrastructure. The committee recognized that the NNI
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+itself does not directly appropriate funding to support the nanotechnology research and infrastructure. Rather, it provides for the coordination of such resources. As a result, no single agency is responsible for maintaining and cultivating the infrastructure but rather there exists a shared burden among all the agencies. This sense of shared responsibility requires coordination among the agencies so that resources can be most efficiently allocated.
+
+However, such a structure can also create substantial gaps in the funding landscape where varying priorities and needs for a given agency can sometimes mean that no agency is willing to provide the support needed to maintain the infrastructure. This can have a particularly detrimental effect on investments in innovation in infrastructure and tool development. It can also lead to critical needs falling through the cracks, because each agency has other functions to prioritize. As a result, the only way to ensure that the infrastructure remains in top shape and provides the newest and most up-to-date equipment is if the agencies coordinate their efforts and/or if there is centralized financial support for nanotechnology infrastructure.
+
+### [BARRIER: UNACCOUNTED INFRASTRUCTURE DEPRECIATION COSTS](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-3)
+
+Through interviews, the committee also found a general lack of capital depreciation accounting practices (possibly limited by the funding mechanisms), which obscures the true cost to maintain, replace, and upgrade equipment within facilities, along with insufficient support for tool acquisition. As noted in [Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9), Program Component Area (PCA) 3 accounts for only about 10 percent of the overall NNIrelated funding, and this is insufficient to support all infrastructure needs, including operating expenses, new equipment acquisition, repair and upgrade of existing equipment, staff training and support, and other infrastructure needs. For instance, when asked how facilities acquire new instrumentation, even federally supported institutions of higher education rely on internal funding such as donated equipment funds, internal endowment monies, or faculty startup packages, to maintain their equipment. Within national laboratories, similar creativity is required to maintain the tool set.
+
+While support for equipment acquisition is critical to the performance of the nanotechnology infrastructure, less focus has been given to the amortization of equipment and maintenance of the aging infrastructure. It has been estimated that the costs to maintain a tool are approximately 10 to 20 percent of the tools acquisition cost annually. This is a significant burden that cannot always be recovered from the user base without substantial increases in access fees. Such increases would disincentivize the use of the infrastructure for underrepresented groups, small companies, and non-R1 institutional usage. Similarly, issues of tool amortization and rapid technology development (early tool obsolescence) are not typically factored into the costs of capital acquisitions. Better planning for the amortization
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+and maintenance of the tool set is critical to improving the effectiveness and impact of the overall facilities.
+
+> Finding 2.8: Given a levelized amortization of 10 years, approximately 10 percent of the total value of equipment would be needed annually to simply keep pace with the existing infrastructure, much less cover the typically higher cost of next-generation capabilities.
+>
+>
+> **Recommendation 2.3: Any assessment of maintaining the nanotechnology infrastructure should be informed by the depreciated cost and accumulated devaluation of capital equipment, and this data should inform future infrastructure investments made by National Nanotechnology Initiative–supporting agencies.**
+
+This is a priority recommendation.
+
+> **Recommendation 2.4: Within the next 2 years, the National Nanotechnology Coordination Office should undertake a study to determine the level of resources needed to maintain state-of-the-art nanotechnology infrastructure. The study should include a timeframe, measures of success and efficiency, and accountability measures.**
+
+The additional impact of expenses that are not supported by federal funding is that many facilities, faced with tightening budgets, choose to forego “optional” expenses such as continued staff training and equipment service contracts. This leads to difficult decisions on the part of the facility management on how to prioritize their activities. While saving money in the short term, these can have significant impacts on longer-term expenses such as increased unexpected and emergency expenses, increased equipment downtime, and difficulties supporting emerging or nontraditional projects.
+
+While in some cases, agencies can make funds available for new capital purchases, the amounts available are insufficient to address all the capital needs. Furthermore, not all the infrastructure needs are for new capital equipment. It is critical to maintain and support the “work horse” equipment, but at the same time, it is necessary to develop the next-generation tool set to maintain global leadership. Both of these efforts require substantial resources but are often not competitive in these programs. [Chapter 3](https://www.nationalacademies.org/read/29063/chapter/5#56) includes a section on opportunities to expand relationships with industry, including the semiconductor industry, as a means for accelerating innovation into practical outcomes.
+
+Experts noted to the committee that some funding agencies have started making aspects of tool management a required part of the proposal and tool acquisition
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+process. For instance, the NSF-Major Research Instrumentation program and NIH Cryo-EM acquisition programs are two such examples of programs in which plans for the effective management and support for the tool throughout its lifetime have to be considered from the start.
+
+### [BARRIER: INSUFFICIENT SUPPORT FOR STAFF](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-4)
+
+In addition to infrastructure funding for equipment, the committee noted that there is insufficient support for human capital infrastructure, particularly support for the training and education of a multidisciplinary workforce. As with the equipment funds, these types of efforts tend to fall in between funding agencies if there is not sufficient coordination and prioritization of the needs at the facilities. This situation has been somewhat exacerbated as new requirements for education, workforce development, and diversification of users have been included in many new calls for nanotechnology infrastructure, although no new resources have been added for these activities. While PCA 4 captures education and workforce development activities of the NNI, these typically focus on general education and workforce, not specifically the workforce that supports the facilities and users. Companies that are developing advanced technologies, such as microelectronics and quantum, cite lack of hands-on experience as a top challenge in hiring qualified workers.[4](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz68-6) There exists an opportunity for the NNI to better focus efforts on workforce development within core facilities to ensure that users and researchers are able to get the most out of the national infrastructure and remain at the leading edge of innovation in equipment and technique development.
+
+Similarly, there is a great deal of non-uniformity in the support provided to institutions to maintain and operate U.S. infrastructure. In the realm of higher education, some institutions receive directed federal funding such as NNCI support, Materials Research Science and Engineering Centers support, CHIPS and Science Act funding, or other large federal grants to operate facilities, while others with similar needs are left to seek internal institutional support or restrict operations to maintain the necessary equipment and staffing.
+
+The issues of inequality in funding become increasingly apparent when looking at the typical user base at large federally funded facilities. Support for access to the infrastructure is welcome and appropriate, especially support for users who come from other institutions, particularly smaller, non-R1, institutes of higher education or small and mid-size companies and startups, to cover related expenses such as travel or housing. According to the committee’s interviews, this creates a substantial
+
+___________________
+
+[4](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_Aq2f)Quantum Economic Development Consortium, 2023, “Guide to Building a Quantum Technician Workforce,” October, [https://quantumconsortium.org/workforce23](https://quantumconsortium.org/workforce23).
+
+**Suggested Citation:** "2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+barrier to users from underrepresented institutions and regions. More on this topic is discussed in [Chapter 4](https://www.nationalacademies.org/read/29063/chapter/6#72).
+
+The committee agrees with the following finding from the 2016 review of the NNI:
+
+> Finding 2.9: There is a clear lack of identified funds for the development of new leading-edge instrumentation or recapitalization of commercial tools at NNIsponsored user facilities, with the exception of CNST. As a result, there is a real risk of obsolescence of the physical and computation infrastructure available to the nanoscience and technology research enterprise, and a corresponding decrease in the user value.[5](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_pz69-6)
+>
+>
+> **Recommendation 2.5: Federal agencies that support nanotechnology infrastructure should, within 2 years, offer infrastructure funding that includes mechanisms to provide professional staff support.**
+
+While the barriers and challenges listed above provide an overview of the issues faced by U.S. infrastructure, these issues are ones that are within the control of the United States to mitigate. None of these issues are based on fundamental limitations of the U.S. nanotechnology ecosystem, nor are they based on international issues such as access to equipment or supply chains.
+
+___________________
+
+[5](https://www.nationalacademies.org/read/29063/chapter/4#chapter02_AjKi)National Research Council, 2016, _Triennial Review of the National Nanotechnology Initiative_, The National Academies Press, [https://doi.org/10.17226/18271](https://doi.org/10.17226/18271).
+
+<!-- source: https://www.nationalacademies.org/read/29063/chapter/5 -->
+
+## 官方在线阅读第5章
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[Previous Chapter: 2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure](https://www.nationalacademies.org/read/29063/chapter/4)
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## [3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-5)
+
+The National Nanotechnology Initiative (NNI), and its associated infrastructure, has developed in close contact with the leading edges of conventional academic disciplines as well as cutting-edge emerging areas. Its capabilities have expanded to include a wide range of material systems far beyond silicon, fabrication of integrated devices across multiple length scales, and characterization tools that cover vast time and length scales. Nanotechnology infrastructure capabilities have also supported new applications of nanotechnology, which themselves have spawned major new initiatives with significant societal, economic, and national security impact.
+
+All of this evolution has occurred during a time of enormous progress in high-throughput data analysis, laboratory automation, and increased acceptance of remote work. This chapter will explore these trends and opportunities and examine the impact of U.S. nanotechnology–relevant infrastructure on current and emerging use cases.
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+### [FACILITY TRENDS AND OPPORTUNITIES: THE NEED FOR EXPANSION](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-8)
+
+The ability to form and analyze nanoscale structures has evolved substantially in the decades since the founding of the NNI, and this growth has created an acute need for an updated and expanded nanotechnology infrastructure. One trend to address is the identification of nanoscale phenomena and materials in a broader set of phenomena and disciplines than that conceptualized 20 years ago. Research at these interfaces, discussed in the following section, has in turn motivated new developments in nanotechnology infrastructure. Nanoscale fabrication now reaches far beyond silicon and encompasses tools to shape and form devices formed from nearly all key electronic and optical materials. Characterization tools are increasingly multi-modal, combining atomic imaging with vibrational spectroscopy, often over many orders of magnitude with respect to length and timescales. The infusion of nanotechnology into growing numbers of practical applications has also driven tool development for in situ and failure analysis.
+
+Nanotechnology infrastructure facilities have done what they can to seize the opportunities presented by their growing relevance to the U.S. science and technology enterprise. They are well adapted to serve an evergreen clientele of novice researchers exploring how nanoscale phenomena play a role in their disciplines. Because it is the size of nanostructures that matters, the effects of quantum mechanics can significantly affect the properties of these materials. Additionally, in this nanoscale regime, the dimensions are in the range of electron scattering lengths and smaller than wavelengths of electromagnetic radiation of visible light. The characterization of the altered properties of nanostructures, along with the advances in fabrication and analysis, have opened the door to exploitation of nanotechnology in important technological applications of growing impact and importance. Certain areas of nanotechnology research, such as quantum dots, are by now well established, and their related technologies are commercialized in everyday items like television sets. However, as will be described in this chapter, new examples of nanotechnology’s relevance in research are continually revealed, as illustrated by the explosion of interest in nanoscale phenomena and technology in agriculture. By centering its identity on a critical length scale, rather than a phenomenon or material, nanotechnology’s relevance to scientific inquiry as yet has no bounds.
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+The vast majority of technologies on the _Critical and Emerging Technologies List[a](https://www.nationalacademies.org/read/29063/chapter/5#chapter03\_ft1)_ identified by the Office of Science and Technology Policy are directly enabled by nanotechnology. These include quantum information and enabling technologies, human–machine interfaces, biotechnologies, semiconductors, and microelectronics.
+
+________
+
+_[a](https://www.nationalacademies.org/read/29063/chapter/5#chapter03\_fn1)_ Executive Office of the President, 2024, Critical and Emerging Technologies List Update, Fast Track Subcommittee on Critical and Emerging Technologies, National Science and Technology Council, Office of Science and Technology Policy, February.
+
+### [INTEGRATION OF ARTIFICIAL INTELLIGENCE AND NANOTECHNOLOGY](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-9)
+
+Expansions to nanotechnology infrastructure will be needed to fully capitalize on advances in artificial intelligence (AI) and deep learning. Using these computational tools, it is possible to predict thousands of stable chemical materials and identify those that can be candidates for technologies ranging from batteries to solar cells, as discussed below.[1](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz72-5) This is an important trend for nanomaterials and nanomanufacturing. A recent review article “Bridging Nanomanufacturing and Artificial Intelligence—A Comprehensive Review” describes the impact of AI and deep learning for nanomaterials and nanomanufacturing and how it can be applied in medicine, robotics, sensory technology, semiconductors, and consumer electronics.[2](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz72-6) This evolving AI capability will advance the availability of nanotechnology-enabled technologies. Specifically, in nanofabrication as well as in commercial semiconductor fabrication processes, AI is beginning to be utilized for optimizing complex process development. With support for nanotechnology infrastructure expansion, as noted in the priority recommendation of [Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9), these capabilities will impact the evolving processes available in NNI facilities of the future.
+
+The prospect of using closed-loop AI models that learn from laboratory automation is perhaps a more distant opportunity but one that could have profound impact on the entire experimental enterprise, not just nanotechnology. High-throughput screening of material properties, for example, allows researchers to rapidly test and identify key features of nanostructures crucial for applications; retrofits of existing instruments for speed and automation are often needed to acquire the large data sets needed to build accurate models from. Machine learning
+
+___________________
+
+[1](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_A44H)A. Merchant, S. Batzner, S.S. Schoenholz, M. Aykol, G. Cheon, and E.D. Cubuk, 2023, “Scaling Deep Learning for Materials Discovery,” November 29, _Nature_ 624.
+
+[2](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_A_QY)M. Nandipati, O. Fatoki, and S. Desai, 2024, “Bridging Nanomanufacturing and Artificial Intelligence—A Comprehensive Review,” April 2, _Materials_ 17(7).
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+algorithms can analyze vast data sets to predict the properties and performance of new nanomaterials, leading to faster innovation cycles. In addition, automation in synthesis and fabrication processes improves precision and reproducibility, which are crucial for achieving consistent performance in nanostructured devices. The prospect of marrying physics-informed models of material properties with automated synthesis and fabrication tools that can fully explore material production may someday transform experimental science and nanotechnology infrastructure.
+
+### [OPPORTUNITIES TO EXPAND RELATIONSHIPS WITH INDUSTRY](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-10)
+
+As noted in [Chapters 1](https://www.nationalacademies.org/read/29063/chapter/3#9) and [2](https://www.nationalacademies.org/read/29063/chapter/4#38), nanotechnology’s commercialization is developing after its research accomplishments have been recognized, making this the decade for nanotechnology applications to become a visible force in the U.S. economy. The nanotechnology infrastructure is a key element in accelerating innovation into practical outcomes. One clear case study can be found in the semiconductor manufacturing industry. The close link between nanotechnology and electronics was a clear opportunity identified at the inception of the NNI; the predicted trends of electronics following Moore’s law made clear that the future of transistors had to include devices of a few nanometers. The NNI infrastructure has provided a strong base for restoring U.S. integrated circuit manufacturing capabilities with world-leading technological capabilities.
+
+With the recent massive government investments in the microelectronics industry through the CHIPS and Science Act (P.L. 117-167), there are emerging opportunities to expand the already strong relationships between manufacturing companies and nanotechnology infrastructure facilities. Not only can these shared laboratories provide training for a technical workforce skilled in traditional lithography, they can also help shed light on the complex interface between nano- and micro- and mesoscale device structures and phenomena. Furthermore, the nanotechnology infrastructure facilities are uniquely positioned to provide for early-stage pilots of novel processing tools and concepts before they are integrated into full-scale manufacturing sites. Furthermore, the recent report _Strategies to Enable Assured Access to Semiconductors for the Department of Defense_ recommended various strategies to ensure access to chips, including partnering with industry to nimbly adopt emerging technologies.[3](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz73-6) Similar strategies could be implemented for nanotechnology infrastructure facilities.
+
+Other industries also stand to benefit from a strong and expanded national nanotechnology infrastructure. As in the case of electronics manufacturing, the
+
+___________________
+
+[3](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_AZZv)National Academies of Sciences, Engineering, and Medicine, 2024, _Strategies to Enable Access to Semiconductors for the Department of Defense_, The National Academies Press, [https://doi.org/10.17226/27624](https://doi.org/10.17226/27624).
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+nanotechnology infrastructure can provide workforce development, use-inspired research, and testbeds for innovations in processing and control. Biotechnology and biomedical applications, for example, have reached human trials and broad use in diagnostic technology. Similarly, the growing importance of nanomaterials in energy technologies and in the environment has become clearer. Most recently, the powerful utilization of nanotechnology in agriculture and biomaterial design has also become notable. Beyond these industry benefits, an expanded nanotechnology infrastructure also serves the research enterprise of the United States. The committee heard from multiple experts, not specialized in nanotechnology, who made passionate cases for the relevance and role of its infrastructure in their own areas.
+
+### [EMERGING USE CASES FOR NANOTECHNOLOGY INFRASTRUCTURE](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-11)
+
+#### Semiconductors and the Next Generation of Electronic Devices
+
+Humans are living in the information age. That information is doubling every 1 to 2 years with more than 12 million text messages sent every minute of every day. Unlike in the past, when text or illustrations were carved on the walls of caves or printed on paper, today information is stored on silicon and electrons are the ink. The flow of these electrons is manipulated by devices made from semiconductors. Semiconductors are materials whose conductivity is determined by tiny amounts of impurities, which are controllably added. By adjusting the amounts of these impurities, it is possible to change the electrical resistance from that of an insulator to that of a metal leading to conductivity changes more than 10 orders of magnitude. Semiconductors are found in automobiles, cell phones, laptop computers, wearable electronics, pacemakers, deep brain implants, and the spacecraft launched to visit neighboring planets—literally everywhere _._ These materials, also known as “chips,” have become the foundation of the world’s information age economy.
+
+There is a symbiotic relationship between semiconductors and nanotechnology. The original definition of microelectronics came from fabrication of devices with critical dimensions of one micron (1 × 10–6 m). Now critical dimensions have shrunk 1,000 times smaller to 14 nm. It is the micro- and nanotechnology research in unit processes of crystal growth, oxidation, lithography, doping, etching, and deposition that made the massive growth in the semiconductor industry possible. For many years, the microelectronics industry was able to increase speed and complexity and reduce the size of microelectronic devices while reducing the cost. This is no longer the case and according to the Semiconductor Research Corporation roadmap and decadal plan, the industry is facing seismic issues driven by emerging security challenges, memory demands that will outstrip global silicon supply, and rising energy demands for computing that promise to outstrip global energy
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+production in a matter of years.[4](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz75-4) Even with these profound challenges, the most pressing need is for engineers and scientists to work in the microelectronics industry. It is estimated that beginning in 2025 there will be a shortfall of more than 4,000 trained microelectronics engineers per year. Meeting these workforce demands is made that much more challenging by the lack of a robust workforce. Advanced semiconductor research and development (R&D) is a significant part of the CHIPS and Science Act of 2022. There is an enormous need for semiconductor research that will allow leading-edge research to take place in the United States. Even with the advent of new semiconductor manufacturing R&D facilities, including infrastructure in the new National Semiconductor Technology Center, there is also need for fundamental research that the nanotechnology infrastructure is ideally positioned to support. _Strategies to Enable Assured Access to Semiconductors for the Department of Defense_ includes several research and workforce-focused recommendations for the Department of Defense, the Department of Commerce, and the National Science Foundation.[5](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz75-5) NNI facilities that include basic cleanroom operations, nanoscale metrology, and techniques heavily used in the semiconductor industry are an excellent training ground for the next generation of scientists and engineers in this highly competitive space.
+
+#### Quantum Sciences
+
+Nanotechnology is deeply connected to the emerging work in quantum information science and technology. While the study of quantum mechanics and quantum phenomena is by no means new, the prospect of using quantum phenomena more intentionally in electronics and photonics motivated the National Quantum Initiative, a legislative act that followed the model used for the NNI.[6](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz75-6) Quantum science promises to provide the United States with entirely new approaches to computation (quantum computing), for example, based on processes that function with far more efficiency than conventional electronics. These quantum properties typically emerge at extremely small length scales, often involving individual particles or excitations. Advances in nanotechnology are thus crucial for unlocking the full potential of quantum phenomena, as they enable precise structuring and examination of matter at these critical scales. While there is a great deal of diversity in the possible materials and structures used to fully exploit quantum phenomena, all of them rely on foundational fabrication
+
+___________________
+
+[4](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_ALVW)Semiconductor Research Corporation, 2021, “Decadal Plan for Semiconductors,” [https://www.src.org/about/decadal-plan](https://www.src.org/about/decadal-plan).
+
+[5](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_A7De)National Academies of Sciences, Engineering, and Medicine, 2024, _Strategies to Enable Access to Semiconductors for the Department of Defense_, The National Academies Press, [https://doi.org/10.17226/27624](https://doi.org/10.17226/27624).
+
+[6](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_AOKh)P. Stimers, 2019, “The U.S. National Quantum Initiative,” _Computer_ 52(10).
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+and characterization tools found in nanotechnology infrastructure facilities. For example, nanoscale devices play a vital role in quantum metrology, facilitating precise measurements of fundamental quantities such as electric current. Additionally, many examples of solid-state quantum light sources, such as quantum dots and two-dimensional materials, are nanoscale materials and these now offer some of the most promising platforms for advancing quantum photonics.
+
+#### Energy Technology
+
+Nanotechnology infrastructure has a profound impact on energy research by enabling the discovery and development of more efficient energy conversion and storage materials and systems. It facilitates the design of advanced materials at the nanoscale, which can lead to improved solar cells, batteries, and fuel cells. By manipulating materials at the atomic and molecular levels, researchers can enhance properties like electronic conductivity, catalytic activity, thermal stability, and electrochemical stability, leading to innovative solutions for energy sustainability. Additionally, nanotechnology allows for better energy harvesting and management, contributing to the overall efficiency of renewable energy systems.
+
+One example that showcases the importance of nanotechnology infrastructure and the broad impact of nanotechnology is the cathode material found in some lithium-ion batteries, lithium iron phosphate (LiFePO 4). By using nanostructured LiFePO 4 particles of 100–200 nm diameters with uniform thin carbon coatings, it is possible to improve lithium-ion diffusion and conductivity. Researchers have developed nano-sized LiFePO 4 composites, incorporating conductive materials like carbon nanotubes or graphene, which enhance the electrical conductivity of the electrodes. These advancements have resulted in higher energy density and faster charging times, making LiFePO 4 a competitive option for lithium-ion batteries used in electric vehicles and renewable energy storage systems.
+
+Nanostructures also play a role in the stability of perovskite solar cells by enhancing their resistance to environmental factors such as moisture, temperature fluctuations, and ultraviolet radiation. For instance, incorporating nanostructured materials can create a more robust and compact layer that protects the perovskite layer from degradation. Additionally, nanostructured additives can help in reducing the formation of defects and improving the crystallinity of the perovskite material, which further enhances its operational stability and longevity. By optimizing the interface between the perovskite materials and charge transport layers through nanostructures, researchers can reduce ion migration and improve overall device stability. Specific nanomaterials that enhance the stability of perovskite solar cells include titanium dioxide (TiO 2) nanostructures, which provide a protective layer and improve charge transport. Additionally, the use of silicon dioxide (SiO 2) nanoparticles can help encapsulate the perovskite material, shielding it from moisture and environmental
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+degradation. Graphene oxide is another promising nanomaterial, known for its excellent barrier properties against moisture and its ability to improve the electrical conductivity of the cell. Finally, nanocrystalline alumina (Al 2 O 3) can be used to create a robust interface that reduces ion migration and enhances overall stability.
+
+Fuel cell efficiencies have also improved continuously in the past decade through the use of optimized nanostructured catalysts that enhance the electrochemical reaction kinetics. For example, well-dispersed platinum nanoparticles can be used to increase the surface area available for reactions, leading to higher catalytic activity and lower activation energy. This allows for more efficient conversion of chemical energy into electrical energy with less usage of precious metal. By utilizing nanoparticles with a high surface area, researchers can achieve the same level of catalytic activity with less material, which directly lowers the cost of the fuel cell. Additionally, alternative nanomaterials, such as transition metal oxides or non–precious metal catalysts, can be developed to replace expensive platinum entirely, further driving down costs. The improved conductivity and stability provided by nanostructured materials lead to longer lifespans for fuel cells, reducing the need for frequent replacements and maintenance.
+
+Specific nanomaterials being explored as alternatives to platinum in fuel cells include transition metal carbides, such as tungsten carbide (WC) and molybdenum carbide (MoC), which exhibit catalytic properties similar to platinum. Another promising category includes metal-nitrogen-carbon (M-N-C) catalysts, which incorporate transition metals like iron, cobalt, or nickel into a carbon matrix and demonstrate significant activity in oxygen reduction reactions. Additionally, researchers are investigating perovskite oxides and non–precious metal alloy catalysts, which can provide effective performance at a lower cost. Lastly, recently developed nanostructured materials, such as conductive polymers and graphene-based composites, are also showing potential as catalytic supports.
+
+Trends in nanotechnology infrastructure that will drive energy research innovations include the following:
+
+*   Development of hybrid nanomaterials that combine multiple functionalities, enhancing the performance of energy devices.
+*   Increased integration of AI and machine learning to streamline the discovery and optimization of nanomaterials, allowing for faster innovation cycles.
+*   Advancements in scalable nanofabrication techniques, which are expected to lower production costs and improve the accessibility of nanostructured materials.
+*   A growing focus on sustainable and environmentally friendly nanomaterials that can reduce the ecological footprint of energy technologies.
+*   Improvements in automated processing and printing of nanomaterials to ensure robust device performance.
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+Sustainability in nanomaterials for energy is crucial for several reasons. First, it is important that the production and use of nanomaterials minimize environmental impact, which includes using non-toxic, abundant materials and reducing waste during manufacturing. Second, sustainable nanomaterials can enhance the efficiency of energy devices, leading to lower energy consumption and greenhouse gas emissions during operation. Third, developing recyclable or biodegradable nanomaterials can facilitate the circular economy by ensuring that materials can be repurposed or safely decomposed after their life cycle ends. Finally, sustainable practices in nanotechnology can help promote public acceptance and regulatory support for new energy technologies, which is crucial for their adoption.
+
+#### Agriculture and Food
+
+Nanotechnology provides new approaches to address pressing challenges in agriculture and food security. The demand for innovative approaches has grown due to climate change, population growth, and political instability. Nanotechnology is seen as a method to enhance crop yields and improve food safety and availability.
+
+The availability of the U.S. nanofabrication facilities is providing this community with the tools necessary for exploiting the possibilities of nanotechnology to address food availability. Nanotechnology has already begun to revolutionize agriculture and food production in several ways. This is occurring both in the efficiency of crop production and improvement in food safety. [Figure 3-1](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz79-2) illustrates directions of nanotechnology research and use in agriculture.
+
+Applications include the development of nano fertilizers and nano pesticides, which in nano formulations offer more efficient nutrient delivery and pest control compared to traditional chemical formulations. This can enhance the uptake of nutrients by plants, reduce the amount of chemicals needed, and minimize environmental impact of pesticides and fertilizers.[7](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz78-7)
+
+For example, the 2019 publication by Kah, Tufenkii, and White, “Nano-Enabled Strategies to Enhance Crop Nutrition and Protection,” lays out the potential impact of nano-enabled strategies to improve crop production and meet global food needs.[8](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz78-8) They note the need to increase food production by 50 percent by mid-century compared to 2012 levels. This article highlights promising and wide-ranging research in nano-enabled crop nutrition and protection to increase crop yield. One approach, analogous to nanoparticle drug formulations increasing effectiveness of existing drugs, is work under way to use nanoformations to enhance the effectiveness of
+
+___________________
+
+[7](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_AoQK)H. Chen, J.C. White, A.J. Baeumner, and D. Luo, 2022, “Nanoscale Science and Engineering for Agriculture and Food Systems,” June 14, _The Bridge_ 52(2).
+
+[8](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_A_FD)M. Kah, N. Tufenkji, and J.C. White, 2019, “Nano-Enabled Strategies to Enhance Crop Nutrition and Protection,” _Nature Nanotechnology_ 14:532–540.
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 1: Potential applications of nanotechnology in crop agriculture.](https://www.nationalacademies.org/read/29063/assets/images/img-79-1.jpg)
+
+**FIGURE 3-1** Potential applications of nanotechnology in crop agriculture.
+
+ SOURCE: T. Hoffman, G.V. Lowry, S. Ghoshal, et al., 2020, “Technology Readiness and Overcoming Barriers to Sustainably Implement Nanotechnology-Enabled Plant Agriculture,” _Nature Food_ 1:416–425, [https://doi.org/10.1038/s43016-020-0110-1](https://doi.org/10.1038/s43016-020-0110-1), Springer Nature.
+
+pesticides, fungicides, and nutrients. They cite an example of the use of nanoscale materials to improve plant nutrition as a defense against disease. Nanoparticles of copper, zinc, magnesium, and sulfur were used to suppress fungal, viral, and bacterial infection. This article notes the growing number of product registration requests by regulatory agencies and the growing number of patents for nano formulations as an indication of growing interest in and application of nanotechnology for agriculture.
+
+Climate change is impacting global agriculture, including altered weather patterns, increased frequency of extreme weather events, drought, and shifting pest and disease dynamics. Nanotechnology offers potential solutions to mitigate these impacts. For example, nano-enabled sensor-based delivery systems can provide
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+targeted release of agrochemicals, reducing waste and environmental impact. Nanomaterials can also be used to develop drought-resistant crop varieties and improve soil health through enhanced nutrient management. Other opportunities for nano-based solutions for sustainable agriculture include the use of nanomaterials for soil remediation and water purification.
+
+The use of nanosensors to monitor crop health, soil conditions, and environmental factors in real time enables farmers to make data-driven decisions and optimize resource use. These sensor data provide input to AI systems that can help optimize crop management and minimize agrochemical use.
+
+In food science, nanotechnology is being used to improve food safety by improving packaging and extending shelf life. A major effort is directed toward nanosensors that can detect pathogens and contaminants in food products, enabling better monitoring of the food supply and enforcement of safety standards.
+
+Nanotechnology provides a path for transforming agriculture and food production, offering solutions to enhance productivity, sustainability, and crop resilience. As R&D continue to advance, interdisciplinary approaches involving nanotechnology point the way to the needed improvements in sustainable and secure food systems. The support of U.S. nanofabrication facilities and government initiatives will be instrumental in realizing these prospects.
+
+#### Biology, Biotechnology, and Medicine
+
+The advances in nanotechnology have had a striking impact on biology, biotechnology, and medicine. Nanotechnology has made new tools available to biology researchers that allow imaging and observing biological processes at the molecular scale. Devices enabled by nanoscale structures are creating a new class of sensors for chemically probing biological systems and sequencing of DNA and RNA in fundamentally new ways. The delivery of drugs using nanoparticles has revolutionized drug delivery and vaccine development. The advancements in biology and medicine have been supported by access to the most modern nanofabrication and imaging tools made available to this expanding community by the nanotechnology infrastructure. The biology and medical communities have effectively utilized the advances in nanotechnology and infrastructure of the NNI.
+
+Examples of impact and continued opportunity for basic biological studies include the following:
+
+*   _Nanotechnology enables_ s _ingle-molecule studies and imaging_, which is crucial for understanding complex biological mechanisms. Techniques such as atomic force microscopy (AFM), scanning tunneling microscopy (STM), transmission electron microscopy (TEM), and super-resolution fluorescence microscopy allow researchers to image biological structures and engineered
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+*   nanostructures with atomic resolution. Semiconductor quantum dots and metallic nanoparticles can be used to label, identify, and track molecules within cells, providing a unique picture of cellular functions and biomolecular interactions. [Figure 3-2](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz82-2) illustrates three imaging techniques to image lipid nanoparticles.
+*   _Nanofabrication of biological and biomimetic structures_ allows for the precise fabrication of engineered structures that can be used as models to test biological activities. Biomimetic structures that mimic the properties of natural biological systems in other material systems present a path to form functional materials and devices inspired by biological systems. This includes the creation of artificial scaffolds and vascular systems that can be used to study cell function and tissue engineering.
+*   _Genetic research_ has made practical use of a range of nanostructures. For example, nanoparticles are used to deliver genetic material into cells for research on delivery of therapeutic molecules. This is essential for gene editing and gene therapy research, where precise delivery of DNA or RNA is required to modify genetic information within cells. Both nanofabricated and naturally occurring nanopores have been used to directly read the sequence of DNA and RNA molecules, revealing genetic information that would have been obscured with earlier techniques. Advances in the area of genetics and epigenetics continue to be advanced by nanostructure utilization and influence the practice of medicine.
+
+The field of nanomedicine has opened new avenues for disease diagnosis, treatment, and prevention. Nanotechnology has enabled the creation of biosensors and diagnostic devices with unprecedented sensitivity that can detect biomarkers and diagnose diseases at early stages, leading to better patient outcomes. Nanotechnology has facilitated the development of advanced drug delivery systems. The National Cancer Institute “established the Nanotechnology Characterization Laboratory to support the extramural research community to accelerate the progress of nanomedicine by providing preclinical characterization and safety testing of nanoparticles.”[9](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_pz81-5) Nanoparticles can be designed to target drugs to specific cells or tissues, improving the efficacy and reducing the side effects of treatments. The use of lipid nanoparticles to deliver RNA to cells represented a breakthrough in vaccine development that had a profound effect on the world’s response the COVID-19 pandemic and ushered in an entirely new approach to treatment of a
+
+___________________
+
+[9](https://www.nationalacademies.org/read/29063/chapter/5#chapter03_AUOx)National Cancer Institute, n.d., “Nanotechnology Characterization Lab,” [https://ostr.ccr.cancer.gov/resources/provider_details/nanotechnology-characterization-laboratory-ncl](https://ostr.ccr.cancer.gov/resources/provider_details/nanotechnology-characterization-laboratory-ncl), accessed November 14, 2024.
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 2: Many different nanoscale infrastructure tools are used to examine the structure of materials relevant to the COVID-19 vaccine. This figure presents lipid nanoparticles measured by three technologies, atomic force microscopy (AFM), transmission electron microscopy (TEM), and cryogenic-transmission electron microscopy (Cryo-TEM).](https://www.nationalacademies.org/read/29063/assets/images/img-82-1.jpg)
+
+**FIGURE 3-2** Many different nanoscale infrastructure tools are used to examine the structure of materials relevant to the COVID-19 vaccine. This figure presents lipid nanoparticles measured by three technologies, atomic force microscopy (AFM), transmission electron microscopy (TEM), and cryogenic-transmission electron microscopy (Cryo-TEM).
+
+ SOURCE: J. Szebeni, B. Kiss, T. Bozó, K. Turjeman, Y. Levi-Kalisman, Y. Barenholz, and M. Kellermayer, 2023, “Insights into the Structure of Comirnaty COVID-19 Vaccine: A Theory on Soft, Partially Bilayer-Covered Nanoparticles with Hydrogen Bond-Stabilized mRNA–Lipid Complexes,” _ACS Nano_ 17(14):13147–13157, [https://doi.org/10.1021/acsnano.2c11904](https://doi.org/10.1021/acsnano.2c11904). CC BY 4.0. Copyright © 2023 The Authors. Published by American Chemical Society. Scales were added as modifications to the TEM and Cryo-TEM panels.
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+range of diseases. This revolutionary ability to modify the immune system was a direct result of basic science and capabilities to engineer nanoparticles.
+
+The use of nanoparticles has also advanced medical imaging techniques, allowing for more precise and earlier diagnosis of diseases. Nanoparticles can also improve contrast and add chemical information to imaging techniques such as MRI (magnetic resonance imaging) and CT (computed tomography) scans.
+
+### [FUTURE INFRASTRUCTURE PROSPECTS AND CHALLENGES](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-12)
+
+The nanotechnology infrastructure is a national asset that facilitates cross-disciplinary advancement of science and translation of science and technology into areas that significantly impact the economy and wellbeing of Americans. For example, the use of nanotechnology in biology and medicine has dramatically increased understanding of living systems and is enabling new approaches for disease diagnosis and treatment. These advances were facilitated by the robust infrastructure to support nanotechnology R&D in the United States. The National Nanotechnology Coordinated Infrastructure (NNCI), for example, provides researchers with access to state-of-the-art facilities and expertise. These types of facilities provide an opportunity for fields as divergent as microelectronics and medicine to share technology advances.
+
+Despite its strong infrastructure, the United States faces challenges in maintaining its leadership in nanotechnology. One major challenge is global competition as discussed in [Chapter 2](https://www.nationalacademies.org/read/29063/chapter/4#38). Countries like China and South Korea have significantly increased their investments in nanotechnology R&D, narrowing the gap with the United States. This increased competition requires the United States to continuously innovate and invest in cutting-edge research to remain competitive. Failure to support widely used nano infrastructure will inhibit science and technological advances that are important to Americans.
+
+Another challenge, discussed earlier, is funding durability and resource allocation. As noted in [Chapter 2](https://www.nationalacademies.org/read/29063/chapter/4#38), there is a real risk that funding for the U.S. nanotechnology research ecosystem could be diminished, raising concerns about the sustainability and long-term investments in nanotechnology infrastructure. Such investments are vital and ensure that equipment is continually updated and that a steady number of users are trained and available for the U.S. workforce.
+
+This chapter highlights the need for expansion of the infrastructure, so it can be responsive to the needs of emerging areas. Such agility will require attention to several key elements, including the following:
+
+*   Support for expert staff that can train and assist users from different disciplines, beyond nanotechnology, to be effective and efficient;
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+*    Investments in staff training that center on updating their knowledge base, particularly in emerging areas of importance;
+*   Computational resources and AI/machine learning for process development and data analysis will grow in importance;
+*   Adapting lithographic and analytical tools to new materials, with strategies that address materials compatibility, to stimulate wider utilization; and
+*   Novel multiscale fabrication methods to integrate nanostructures with functional macroscopic devices.
+
+The U.S. nanotechnology infrastructure is a critical resource for maintaining U.S. technological leadership, economic growth, and advances in health care. This durable infrastructure has been available to support emerging use areas such as those discussed above. The committee anticipates that unknown opportunities will arise, and to benefit the United States, it will be important to ensure that the nanotechnology infrastructure is renewed and has the capability for agile expansion to meet new demands and bring together those experienced in the use of nanotechnology with emerging areas proven to be effective at harnessing nanotechnology infrastructure in new ways. This has been the case, for example, with the nascent research on nanotechnology and agriculture.
+
+> Finding 3.1: There are many new and emerging areas of science and technology that rely on nanotechnology infrastructure for advancement.
+>
+>
+> Finding 3.2: Nanotechnology integrates knowledge from a broad set of disciplines, and emerging areas of science and technology are leveraging and extending its infrastructures to advance their own disciplines.
+>
+>
+> **Recommendation 3.1: The National Nanotechnology Coordination Office should develop infrastructure gap analyses through annual workshops that engage researchers in relevant emerging areas with nanotechnology infrastructure experts.**
+>
+>
+> Finding 3.3: The existence of an accessible infrastructure with state-of-the-art nanofabrication and characterization facilities, combined with expert staff, is important for supporting emerging science and technology initiatives.
+>
+>
+> Finding 3.4: The existing nanotechnology infrastructure has been available to researchers who otherwise would not consider themselves as working in nanotechnology, and this accessibility has been central to breakthroughs that have impacted the lives of all Americans.
+
+**Suggested Citation:** "3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+> _Conclusion 3.1: Maintaining world-leading facility access is important for the U.S. economy and national security, as well as for ensuring continued leadership in science and engineering research._
+>
+>
+> **Recommendation 3.2: The National Nanotechnology Coordination Office should coordinate and communicate with the National Quantum Coordination Office, the CHIPS Research and Development Office, and the Microelectronics Commons program—all of which have an interest in the scope, size, and support of nanofabrication and nanocharacterization capabilities and access in the United States.**
+
+This is a priority recommendation.
+
+> **Recommendation 3.3: Federal agencies that support nanotechnology infrastructure should within the next year, and periodically thereafter, prioritize investment in new capabilities that advance fabrication, materials synthesis, characterization, and data analysis to support emerging technologies to help the United States maintain its commercial edge.**
+
+[Next Chapter: 4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure](https://www.nationalacademies.org/read/29063/chapter/6)
+
+<!-- source: https://www.nationalacademies.org/read/29063/chapter/6 -->
+
+## 官方在线阅读第6章
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[Previous Chapter: 3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure](https://www.nationalacademies.org/read/29063/chapter/5)
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## [4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-13)
+
+This chapter begins by describing the reason that broad access to nanotechnology infrastructure is so critical: it is essential to both workforce development as well as commercial expansion of nanotechnology-enabled industry. It then examines how awareness, interaction models, peer-review models, financial and travel logistics, remote access resources, intellectual property, and contractual agreements may present barriers to the use of nanotechnology infrastructure. It also explores opportunities to enhance data and resource sharing as well as strategies for incentivizing the use of the nanotechnology infrastructure. To gain clarity into the many complex issues at play in infrastructure access, the committee adopted a framework that considered how awareness, accessibility, and affordability all influence the user experience. Using town halls and invited speakers with firsthand experiences, the committee identified common barriers to use. Its recommendations detail improvements to achieve broad and impactful national engagement in, and use of, existing infrastructure.
+
+### [OUTREACH ACTIVITIES KEY FOR WORKFORCE DEVELOPMENT FOR THE INDUSTRIES OF THE FUTURE](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-15)
+
+Ensuring broad access to nanotechnology infrastructure is important if the nation is to have the skilled workforce it needs to reap the economic benefits of this research. The committee considered information about the users and infrastructure access in part to respond to its task to “improve the value of the NNI’s [National Nanotechnology Initiative’s] research and development strategy, portfolio, and
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+infrastructure investments to enhance economic prosperity and national security of the United States.” The committee agreed that a major success, and important continuing contribution, of the NNI is in enhancing the economic security of the United States. In terms of NNI infrastructure, economic impact results from fundamental research that leads to the creation of new technologies, which companies then develop into commercial products. By supporting each of these activities through its nanotechnology enterprise, the United States can be assured of leadership in critical related areas such as semiconductor manufacturing, quantum computing, and biotechnology. However, these outcomes are at risk if there is not a workforce fully trained in nanotechnology available. Other reports focus specifically on the importance of early STEM (science, technology, engineering, and mathematics) education plus its impact on U.S. economic and national security priorities, including the 2025 report _Scaling and Sustaining Pre-K–12 STEM Education Innovations: Systemic Challenges, Systemic Responses_.[1](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz87-4)
+
+Recent trends suggest that without action the U.S. nanotechnology workforce may not be sufficient to fully capitalize and commercialize applications in many critical and emerging areas. The 2020 NNI Quadrennial Review[2](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz87-5) noted a concern that there may not be enough nanotechnology-literate workers. Four years later, this is still a looming concern. For example, the CHIPS and Science Act of 2022 (P.L. 117-167) promised to generate new jobs, many of them reliant on skills that could be trained in nanotechnology infrastructure facilities. However, the United States does not have the people to fill these jobs; some estimates suggest that by 2030, 1.4 million jobs will go unfilled of the projected demand for computer scientists, engineers, and technicians in advanced technology industries.[3](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz87-6)
+
+Other industries will also need workers skilled in nanotechnology. Data from the 2017 U.S. Economic Census, the latest available data, revealed that there were 3,700 U.S. companies with a primary business focus on nanotechnology research and development (R&D).[4](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz87-7) These companies reported a combined $42 billion in revenue in 2017 and employ 171,000 people. These numbers are expected have grown significantly in the past 5 years as nanomaterials have become more closely integrated and critical in medicine, electronics, energy, personal care, and the environment. This demonstrates that the investment has added important products and workers
+
+___________________
+
+[1](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_AUEn3)National Academies of Sciences, Engineering, and Medicine (NASEM), 2025, _Scaling and Sustaining Pre-K–12 STEM Education Innovations: Systemic Challenges, Systemic Responses_, The National Academies Press, [https://doi.org/10.17226/27950](https://doi.org/10.17226/27950).
+
+[2](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_Acb3)NASEM, 2020, _A Quadrennial Review of the National Nanotechnology Initiative: Nanoscience, Applications, and Commercialization_, The National Academies Press, [https://doi.org/10.17226/25729](https://doi.org/10.17226/25729).
+
+[3](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_ADaq)SIA and Oxford, 2023, _Chipping Away_, p. 10, [https://www.semiconductors.org/wp-content/uploads/2023/07/SIA_July2023_ChippingAway_website.pdf](https://www.semiconductors.org/wp-content/uploads/2023/07/SIA_July2023_ChippingAway_website.pdf).
+
+[4](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_AzDP)United States Census Bureau, 2017, “2017 Economic Census Data,” [https://www.census.gov/programs-surveys/economic-census/data/tables.2017.html](https://www.census.gov/programs-surveys/economic-census/data/tables.2017.html).
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+directly to the U.S. economy. Therefore, continuing to fund and cultivate an environment that promotes invention, innovation, and translations into the economy will ensure U.S. technological leadership and train and support a future workforce.
+
+Shrinking this labor gap is possible by drawing out even more of the best and brightest prospective workers across the United States. STEM education and nanotechnology in particular have to appeal to an expansive workforce that elicits interest to develop enough talent able to work in these lucrative and important emerging industries. Toward this end, staff at nanotechnology infrastructure facilities must also be representative of the population they serve, which is an important consideration in workforce development. Personnel working in infrastructure facilities are essential to training users and engaging the community. These experts can provide a more personal engagement with the nanotechnology infrastructure and can be influential in inspiring the next generation of nanotechnologists. Having transparent recruiting processes and supporting a workforce that captures the broad representation of the U.S. human capital at the facilities themselves will help students and users envision themselves in the nanotechnology workforce.
+
+> Finding 4.1: Nanotechnology infrastructure facilities are critical for training students, postdocs, and other users who will make up the future workforce for nanotechnology and other critical and emerging technologies.
+>
+>
+> Finding 4.2: In addition, outreach activities at the National Science Foundation (NSF) and the Department of Energy (DOE) nanotechnology infrastructure facilities are outstanding in developing a nano-literate workforce. Many sites support a wide array of activities including K–12 programs, community college partnerships, R2 universities, and liberal arts programs.
+>
+>
+> Finding 4.3: These programs are greatly limited in their scale by a lack of funding, which is generally a small proportion of the support for infrastructure facility operation. Staff can be overburdened because these activities add to their research and facility training responsibilities, and the overall numbers of engaged participants is far lower than the projected workforce needs.
+>
+>
+> Finding 4.4: Facilities were not uniformly measured on the success and breadth of their outreach activities. Many infrastructure leaders reported that the quantity and impact level of publications was a primary focus of their evaluations with outreach and training considered but at a secondary level.
+>
+>
+> _Conclusion 4.1: There are evidence-based models for engagement and outreach to allow nanotechnology infrastructure facilities to engage a broader cross section_
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+> _of the population in order to develop a trained workforce for the many industries that rely or will rely on nanotechnology._
+
+The following is a priority recommendation.
+
+> **Recommendation 4.1: All agencies that fund nanotechnology infrastructure should include in their infrastructure evaluations measures of performance that capture the breadth and heterogeneity of the associated user bases.**
+
+### [NANOTECHNOLOGY INFRASTRUCTURE AND USER METRICS](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-17)
+
+The metrics used to measure success, in fundamental or applied research, will in turn provide incentives that then govern actions. For instance, if the number of publications in high-profile journals is the major metric of success for a nanoscale research facility, then projects that are likely to produce such a result would be favored. If a diverse user demographic is a major metric of success, then projects that are likely to produce that result would then be favored. Peer-review models for user proposals face similar issues.
+
+The focus of DOE nanotechnology infrastructure facilities is primarily scientific output, which is certainly important and vital for innovation and commercialization. Their outreach activities are notably less expansive than those described by nanotechnology infrastructure supported by NSF. The National Nanotechnology Coordinated Infrastructure (NNCI) sites, for example, support high-impact research, user training, and broad outreach and are evaluated accordingly. However, many of the NSF NNCI facilities at universities are part of much larger infrastructure operations that receive substantial co-funding from their university. This naturally leads to site usage that is dominated by campus users and can, if not carefully managed, limit access of new and offsite users.
+
+Given the growing importance of workforce, it is important that all nanotechnology infrastructure sites measure and be evaluated on the extent to which they have a broad user base. In [Table 4-1](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz90-1), the committee lists some representative examples of relevant measures and their associated goals.
+
+Ideas explored in other reports, such as federal agencies “ensuring broader access of prototyping facilities for academic researchers and small to medium-sized firms,” may be very useful.[5](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz89-9)
+
+___________________
+
+[5](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_ATl7)National Academies of Sciences, Engineering, and Medicine, 2024, _Strategies to Enable Access to Semiconductors for the Department of Defense_, The National Academies Press, [https://doi.org/10.17226/27624](https://doi.org/10.17226/27624).
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+**TABLE 4-1** Metrics to Enhance Workforce Development and Translation to Industry
+
+Representative Metric Workforce or Translation Goal
+Number of non-R1 users Expand nano-literate workforce beyond research universities
+Number of industry users Accelerate translation of research and the product development cycle, increase access of industry to future employees
+Number of collaborative academic–industry projects Accelerate translation of research and the product development cycle, increase access of industry to future employees
+Extent of K–12 and community outreach Increase interest and awareness of nanotechnology as a career path
+Users’ disciplinary identity Nurture innovation at intersection of conventional disciplines
+Percentage of new users each year Engage users from emerging areas of science and engineering
+Formal agreements with R2 universities, Primarily Undergraduate Institutions, and community colleges (certificate programs)Expand the nano-literate workforce beyond research universities
+
+### [AWARENESS AS A BARRIER TO USE](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-18)
+
+Awareness is the first step in the interaction cycle between a user and an infrastructure facility. The committee’s data-gathering process consisted of a series of public meetings, the collection of information submitted by outside parties, reviews of scientific and analytical data, and individual investigations by committee members and staff. The committee took steps to solicit input from individuals who are involved in various aspects of nanotechnology infrastructure, either as staff/directors or as users, as well as industrial users, equipment developers, and others. For a full list of experts who spoke to the committee, see [Appendix C](https://www.nationalacademies.org/read/29063/chapter/10#96), “Public Meeting Presentations.”
+
+It is important to note that this process was limited as it self-selects for researchers who are already aware of NNI facilities and, in most cases, are established users. A more exhaustive consideration of awareness as a barrier would require a randomized and national-level survey to identify and query potential users who are not aware of the nanotechnology infrastructure. User data of the NNI infrastructure, particularly the NSF-supported NNCI and DOE Nanoscale Science Research Centers (NSRCs), can be found in [Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9) (e.g., [Tables 1-3](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz44-1) and [1-4](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz45-1)). These data were invaluable in characterizing the existing user base but contained only limited demographic data, including distance from the site (urban versus rural), socioeconomics, and other relevant information.
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+With that caveat, it is important that _improving awareness_ of the NNI facilities be a central goal. As noted in [Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9), the majority of users reported that they discovered information about the facilities from conversations with other users. If professional networks are the primary vehicle for advertising the resources, then less well-resourced research institutions are at a disadvantage. The [nano.gov](http://nano.gov/) website has a list of facilities, but this is difficult to find, even for an expert (under Reports and Resources, then under Infrastructure).[6](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz91-6) One can imagine many better ways to increase broad public awareness of the facilities and their instruments. At the very least, this information could be on the landing page of the [nano.gov](http://nano.gov/) website. As one example, the Research Triangle Nano Network provides a list of all equipment in the Research Triangle (Chapel Hill, Durham, and Raleigh, North Carolina) in addition to a list of the facilities.[7](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz91-7) This allows users who are looking for a specific piece of equipment to find it easily. (Although it is important to note that this equipment list does not link to the facility that houses it, making it less useful than it could be.) Similarly, the NNCI has a searchable list of tools, but that list is only accessible to people who know where to look for it. As the home of nanotechnology, the committee encourages [nano.gov](http://nano.gov/) to centralize and highlight tool information.
+
+> Finding 4.5: The National Nanotechnology Coordinating Office (NNCO) and [nano.gov](http://nano.gov/) do not provide an easily accessible list of NNI resources. NNCO structure/responsibilities are challenging to unravel.
+
+As noted in [Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9), the committee recommends that the NNCO should conduct a census of the most significant infrastructure available for public use and create an online map of the resources (see [Figure 1-8](https://www.nationalacademies.org/read/29063/chapter/3#chapter01_pz36-2)). Toward better access through improved awareness, infrastructure needs to be front and center of the NNI/NNCO mission and clearly defined in outward-facing materials.
+
+Beyond an easily accessible list of facilities, each infrastructure site could build its user base by advertising to potential users by reaching out to local communities, schools, and industries. Many of the NNI facility directors the committee met with had good approaches to outreach. Current activities include outreach at conferences, partnerships with R1, R2, and R3 universities, and so on. A good model used by a number of facilities was to leverage host-laboratory user engagement programs.
+
+> Finding 4.6: Facilities benefit from organized meetings and coordination that helps them scale successful outreach programs and share best practices for increasing access with other organizations.
+
+___________________
+
+[6](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_AFYy)National Nanotechnology Initiative, n.d., “NNI R&D User Facilities,” [https://www.nano.gov/userfacilities](https://www.nano.gov/userfacilities), accessed November 15, 2024.
+
+[7](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_A_5s)Research Triangle Nanotechnology Network, n.d., “Facilities,” [https://rtnn.ncsu.edu/facilities](https://rtnn.ncsu.edu/facilities), accessed October 4, 2024.
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+> **Recommendation 4.2: The National Nanotechnology Coordination Office should convene nanotechnology infrastructure site leaders and outreach directors regularly and assist in gathering and promoting evidence-backed best practices to increase awareness of resources in potential user populations and ultimately achieve broader usage.**
+
+Infrastructure facilities’ efforts around awareness can also take the form of broader public awareness, through outreach and training of nontraditional users. Indeed, extensive efforts are already being made on this front. Both the quantity and quality of outreach and training efforts being made by nanotechnology facilities within the U.S. NNI infrastructure to reach people more broadly is remarkable. In a broad generalization, NSF-supported sites are more education-focused in their outreach, while the DOE centers’ outreach is to bring in more users and a more expansive user base. Nevertheless, the overall and individual scope of efforts is impressive. The committee heard of examples ranging from outreach to communities of scientists through attendance at conferences to laboratory internships and fellowships, to mobile van programs such as the “NanoExpress” at Howard University, to development of curricula and certificate programs in nanoscience.[8](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz92-5)
+
+The committee reviewed numerous outstanding outreach programs, with many effective and productive initiatives clearly taking place nationwide. It is important to consider which are unique and, importantly, which are scalable. Here, the committee highlights a few examples. One example was a mobile van called the “NanoExpress” at Howard University (see [Figure 4-1](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz93-2)). Another is traveling nanoscience exhibits developed by the Nebraska Nanoscale Facility. The “Teach the Teacher” workshops for high school teachers, community college instructors, and university instructors held by Pennsylvania State University’s Center for Nanotechnology Education and Utilization was an interesting example of vertical integration of higher education content as well. This type of programming once started can become self-propagating as participants in workshops go on to teach the next generation of users. Other noteworthy programs include internships at the nanotechnology facilities for community college students and a 12-week certificate training program on microelectronics for veterans that leads directly to workforce development in the semiconductor industry.
+
+Despite significant existing efforts, it is clear that more needs to be done. The next-generation nanotechnology R&D infrastructure means not just the physical infrastructure for nanotechnology that leads to new discoveries, new equipment, new technologies, and entire new markets, but also more importantly the human capital: people and expertise. With the CHIPS Act, together with the U.S. focus
+
+___________________
+
+[8](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_A0G2)National Nanotechnology Infrastructure Network, n.d., “Nanoexpress,” [https://www.nnin.org/nanoexpress-0](https://www.nnin.org/nanoexpress-0), accessed October 4, 2024.
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+![Image 1: NanoExpress, operated by Howard University, is a mobile laboratory that presents nanoscience educational experiments to schools in the Washington, DC, area (as well as occasional visits up and down the east coast). It consists of a mobile van with 208 square feet of laboratory space designed to facilitate hands-on experiments, but it is also capable of doing nanotechnology research.](https://www.nationalacademies.org/read/29063/assets/images/img-93-1.jpg)
+
+**FIGURE 4-1** NanoExpress, operated by Howard University, is a mobile laboratory that presents nanoscience educational experiments to schools in the Washington, DC, area (as well as occasional visits up and down the east coast). It consists of a mobile van with 208 square feet of laboratory space designed to facilitate hands-on experiments, but it is also capable of doing nanotechnology research.
+
+ SOURCE: National Nanotechnology Initiative, Educational Resources for K–12 Students, [https://www.nano.gov/education-training/k12](https://www.nano.gov/education-training/k12). CC BY 3.0.
+
+on advanced domestic manufacturing, workforce development is paramount. The United States could lose competitiveness globally if it does not continue to invest in people and training. Increasing public literacy around science, continued outreach efforts to K–12, and even programs aimed at training skilled workforce at the bachelor’s, master’s, and PhD levels, are areas in which the NNI facilities do and can play a central role.
+
+### [ACCESSIBILITY AS A BARRIER TO USE](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-19)
+
+While a user may be aware of a facility, they may not be able to access the resources. Issues that limit accessibility of NNI facilities are numerous and include difficulty obtaining permission to use the facilities, time needed to travel to the site and/or engage in remote access, availability of equipment, proposal success (in the case of DOE), and acceptable intellectual property agreements. The committee evaluated these and other accessibility issues and found several common barriers.
+
+#### Permission for Use
+
+The process for obtaining access to the facilities differs based on funding agency. DOE user facilities use peer review of individual or collaborative proposals. NSF facilities operate independently with each facility determining the best way
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+to match users with equipment. This approach is clearly spelled out by the NNCI, encouraging potential users to contact the facility nearest to them.[9](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz94-6) The National Institute of Standards and Technology (NIST) facility, the Center for Nanoscale Science and Technology, also uses a fee-based model where potential users have early contact with NIST to ensure the NanoFab has the equipment and process to complete the work then submit an application for project approval.[10](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz94-7) Regarding the National Institutes of Health’s Nanotechnology Characterization Laboratory, academic, industry, and government researchers submit applications for various services, including an Assay Cascade Characterization Service (at no cost), sponsor-funded contractor Cooperative Research and Development Agreements, and Technical Services for purchase.[11](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz94-8)
+
+The committee found that, in general, accessibility to time on the instrument, through whatever channel, is not a significant barrier to access. The committee’s analysis focused on the ability of users to access NSF and DOE facilities. A survey of access success rates showed self-reported access rates approaching 100 percent for many facilities, _suggesting that users who try to gain access get instrument time._ For this reason, the committee centered its strongest recommendations on awareness, particularly geared toward nontraditional users.
+
+It is important that DOE and other facilities using peer review use best practices and have transparent review processes to ensure equitable access. Research on double-blind review has identified scoring strategies that increase proposal success for new and diverse users.[12](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_pz94-9) The committee encourages these facilities and funders to optimize their peer review for workforce development and translation.
+
+#### Travel and Remote Access
+
+A surprising discovery by this committee was that in-person, hands-on access was preferred over remote access by the majority of the users and facility staff. This was also echoed by equipment developers and industrial equipment makers. This is the first quadrennial review post-COVID-19, and the committee expected that remote access would be common and normalized. On the one hand, it is true that remote access is important to maintain, especially for instruments like scanning electron microscopes that lend themselves to remote access. Some
+
+___________________
+
+[9](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_AT7l)National Nanotechnology Coordinated Infrastructure, n.d., “Becoming a User,” [https://nnci.net/becoming-user](https://nnci.net/becoming-user), accessed November 13, 2024.
+
+[10](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_AvqH)National Institute of Standards and Technology, 2023, “NIST User NanoFab Project Initiation,” [https://www.nist.gov/cnst/nist-user-project-initiation](https://www.nist.gov/cnst/nist-user-project-initiation).
+
+[11](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_Ag6X)National Cancer Institute, n.d., “Nanotechnology Characterization Laboratory (NCL),” [https://www.cancer.gov/nano/research/ncl](https://www.cancer.gov/nano/research/ncl), accessed December 17, 2024.
+
+[12](https://www.nationalacademies.org/read/29063/chapter/6#chapter04_AzM3)A. Hatt, 2024, “Improving Peer Review at User Facilities,” Presentation to the committee, November 13, National Academies of Sciences, Engineering, and Medicine.
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+facilities reported that a small fraction of their users, maybe as high as 10 percent, can access equipment remotely; in these cases, they emphasized that while this may save time for users, it increases the demands on already overworked technical staff. Remote operation of a cutting-edge electron microscope is not completely automated, for example. Moreover, remote users were generally reported to be the more experienced users that had already logged a great deal of time on the instruments.
+
+The primary outcome of the COVID-19 era is to have underscored for nearly all stakeholders the importance and centrality of in-person access to nanotechnology infrastructure. There are three specific points that were emphasized by the community. First, the goal of workforce development includes the need for hands-on experimental training, which is vital to developing young researchers and teaching experimental design. Second, remote access does not open up more instrument time, because staff are still necessary to carry out the experiments, and experiments are not generally run overnight. Third, several international contributors emphasized that hands-on training is a unique and beneficial aspect of U.S. training. This focus differentiates U.S. students from European and Chinese students in the global marketplace. Hands-on training, while important for workforce development, is not as important for companies. Often they would rather rely on facility staff with expertise to efficiently collect the needed information.
+
+> Finding 4.7: Although the COVID-19 pandemic normalized remote interactions, in-person training and equipment use is preferred for nanotechnology infrastructure facilities.
+>
+>
+> _Conclusion 4.2: Remote access can be effective in some circumstances, especially for more experienced users, but is not a substitute for the hands-on operation and training that are the foundation for developing skilled researchers and the future nanotechnology-literate workforce._
+>
+>
+> **Recommendation 4.3: Within 6 months, federal agencies that fund nanotechnology infrastructure should provide guidance that remote access should complement in-person visits; however, hands-on and onsite training should be prioritized for new users.**
+
+#### Availability of Equipment
+
+Once a user has access to the facilities, it is essential that equipment is up and running. This is especially important for users who travel to the site, in terms of both time and cost. A team traveling from a less research-active university for a week of data collection that encounters an instrument that is down is not likely to be able to return easily. As [Chapter 2](https://www.nationalacademies.org/read/29063/chapter/4#38) notes, this is an increasing risk as the
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+instruments age and there are few mechanisms for renewing the most basic infrastructure. Renewing the existing nanotechnology infrastructure, as recommended in [Chapter 2](https://www.nationalacademies.org/read/29063/chapter/4#38), is also critical for ensuring broader access and the associated workforce development.
+
+The committee also considered the value of expanding access by distributing lower-cost nanotechnology infrastructure tools at a broader range of institutions, including community colleges, non-R1 universities, and even high schools. There are nanotechnology-oriented laboratories, for example, being developed in community colleges that will use inexpensive and tabletop microscopes and 3D printers. While this could be a fruitful direction for developing the workforce, many stakeholders noted significant challenges to pursuing the strategy at scale. Nanotechnology topics are not easily associated with the conventional topics of standard science laboratories, so institutions would need to have nanotechnology-specific degree programs to justify the expense and instructional time for a dedicated class. Instrument upkeep and maintenance can be very challenging at teaching-intensive locations, and experimental nanotechnology is not yet routine, which makes it risky to offer laboratory exercises at scale to hundreds of students. Community college partnerships with major nanotechnology infrastructure facilities could de-risk this approach over time and could be an important element of a site’s outreach strategy. For example, this is the approach taken at the Nanotechnology Collaborative Infrastructure Southwest NNCI site, where Arizona State University is the primary university and affiliated partners are Northern Arizona University, Rio Salado College, and Science Foundation Arizona.
+
+### [INTELLECTUAL PROPERTY AND CONTRACTUAL AGREEMENTS AS A BARRIER TO USE](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-20)
+
+Infrastructure collaboration with industry and startups is beneficial on multiple levels. It gives students exposure to commercialization, internships, and product development. However, intellectual property (IP) agreements can present a potential barrier to use for industries and startup companies. NSF-funded infrastructure sites have been able to overcome this barrier with acceptable use agreements. Due to these favorable IP agreements, projects funded by member companies of the Semiconductor Research Corporation (SRC) are now being executed at six different NSF-supported NNCI sites. A significant contractual barrier for SRC member companies was identified for the DOE NSRCs. This barrier is referred to as the U.S. preference clause, which requires that any company operating there make products that are substantially manufactured in the United States. The clause is impossible for major industries to comply with because many components are manufactured internationally.
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+> Finding 4.8: NSF-sponsored centers appear to not have any significant IP barriers that prevent utilization of their facilities by industry and startup companies. Conversely, significant barriers to use of national laboratory facilities do exist because of the stipulations in IP agreements.
+>
+>
+> **Recommendation 4.4: The Department of Energy should within a year conduct a review of its intellectual property agreements at its nanotechnology infrastructure facilities and endeavor to bring them more in line with the successful agreements used at National Science Foundation facilities, which may lower barriers to utilization of their facilities by industry and startup companies.**
+
+### [FINANCIAL AND TRAVEL LOGISTICS AS A BARRIER TO USE](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-21)
+
+As the committee met with facility users, a recurring theme was the immense challenge of paying for travel and housing necessary for facility users. It was identified by the committee as the most critical barrier to access, especially for those from non-R1 institutions, rural institutions, and those distant from existing infrastructure. While some sites offer travel grants, those funds are generally highly limited. In some cases (e.g., at the Molecular Foundry), users often stay for weeks or months, with the average length of stay approximately 3 months. Affordable nearby lodging and/or significant grants to cover travel and lodging expenses is critical.
+
+Facility directors at both DOE and NSF sites were aware of this issue but had no way to address it, given the constraints of their funding. The lack of support for travel creates a significant problem for broad access, because only those users with substantial support and time available for research can access the nanotechnology infrastructure. The committee heard from users from community colleges and less research-intensive institutions who also noted that time off from teaching was an additional concern. Preferential access during summer months is thus critical for their participation.
+
+The committee considered, and ultimately rejected, the concept of bringing the equipment to the user as a way to facilitate broader access to the nanotechnology infrastructure. One way to accomplish this is via remote access (see above). Another is to decentralize access to tools and facilities (see above). An example of a tool that could lend itself to decentralized access are low-cost commercial scanning electron microscope units. As noted above, the committee found that many less research-intensive institutions could lack sufficient personnel to support its maintenance and operation.
+
+> Finding 4.9: The cost of travel and housing are a major impediment to use of NNI facilities.
+
+**Suggested Citation:** "4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+The following is a priority recommendation.
+
+> **Recommendation 4.5: All agencies that fund nanotechnology infrastructure should increase program funding or provide a competitive travel grant program to include dedicated travel support for users and, where feasible, summer access for academics, researchers, and students who are not from R1 institutions.**
+
+[Next Chapter: 5 Conclusion and List of All Report Recommendations](https://www.nationalacademies.org/read/29063/chapter/7)
+
+<!-- source: https://www.nationalacademies.org/read/29063/chapter/7 -->
+
+## 官方在线阅读第7章
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[Previous Chapter: 4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure](https://www.nationalacademies.org/read/29063/chapter/6)
+
+**Suggested Citation:** "5 Conclusion and List of All Report Recommendations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## [5 Conclusion and List of All Report Recommendations](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-24)
+
+This quadrennial review has described a new orientation for the U.S. nanotechnology enterprise, one that centers on renewing and expanding the instruments, equipment, facilities, and workforce central for converting intellectual capital into economic and social gains for the nation. The United States is in an excellent position to tackle this challenge. Twenty years ago, the United States had the foresight to direct billions of dollars into nanotechnology research and development before any other country, becoming the global leader in this emerging area of research. Resulting advances in science and technology have found their way into applications in therapeutics, batteries, microelectronics, and many other sectors that impact the daily lives of Americans. However, the United States is just at the beginning of realizing the economic and social benefits of its investment.
+
+To lead the next chapter of nanotechnology, it is vital that the United States develop the world’s most capable and accessible nanotechnology infrastructure. Its state-of-the-art tools and expert staff will enable diverse users, even those not specialized in nanotechnology, to shape, discover, and characterize nanoscale matter. Much like the interstate highway system, the infrastructure envisioned here will serve everyone—students, scholars, entrepreneurs, teachers, and researchers from large and small companies alike. Its capabilities will span a broad intellectual map as well, addressing the needs of distinct disciplines as well as federal agencies. This job is too large in scale, and crosses too many sectors, to be delegated to any one agency or one sector.
+
+It is critical that the United States act swiftly and decisively. As described in the 2020 Quadrennial Review, there is an ongoing global race for research leadership in
+
+**Suggested Citation:** "5 Conclusion and List of All Report Recommendations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+nanotechnology, and the competition for extracting economic, societal, and national security value from nanotechnology’s advances is equally fierce. This review offers recommendations that will ensure that the United States retains its leadership role—both in the scholarship of nanotechnology as well as in its application.
+
+_Defining and actively managing our existing nanotechnology infrastructure portfolio is a critical first step._ Over the past 20 years, federal agencies have supported a wide range of nanotechnology instruments and tools, as well as the personnel who maintain and train in user accessible settings. The United States is fortunate to have this patchwork of different user facilities, some currently funded through clear federal directives and others the legacy of past nanotechnology programs. This eclectic mix of resources, however, requires ongoing tracking as well as management to ensure it is fully leveraged.
+
+As the committee discusses in [Chapter 1](https://www.nationalacademies.org/read/29063/chapter/3#9), it is essential that the National Nanotechnology Coordination Office (NNCO) cast a wide net when capturing these shared resources and include university as well as state-operated facilities. There are also many operational models and technical capabilities within this existing nanotechnology infrastructure. National coordination is thus essential in order to harmonize and relate these disparate investments.
+
+Any management of this resource will require a set of common measures to assess information, such as user demand and facility operating capacity. Information gathering for this review, for example, was challenging because the disparate types of data from different facilities was not easily compared, limiting any comprehensive view of the current national nanotechnology infrastructure.
+
+_The second step is to direct resources toward both the renewal and expansion of the nation’s nanotechnology infrastructure._ The National Nanotechnology Initiative (NNI) was developed to ensure U.S. leadership in an emerging research discipline whose future was then uncertain. Nanotechnology is a far more defined endeavor than it was at the start of the NNI. However, as detailed in [Chapter 3](https://www.nationalacademies.org/read/29063/chapter/5#56), it remains highly relevant both in its commercial translation as well as in its continued importance to emerging areas such as quantum science and agricultural research. The multidisciplinary nature and wide-ranging application of nanotechnology, however, means that multiple agencies continue to support the research that makes a cross-agency coordinating office, the NNCO, of ongoing importance, particularly with respect to infrastructure.
+
+Because much of the U.S. nanotechnology infrastructure is now more than a decade old, it is vital to make strategic investments in its preservation and renewal.
+
+Infrastructure is far more than buildings and capital equipment. It is important to also include professional staff dedicated to facility management, user training, instrument maintenance, and new instrument development.
+
+While the United States has a good starting point for nanotechnology infrastructure, future success will depend on the expansion of this infrastructure. As
+
+**Suggested Citation:** "5 Conclusion and List of All Report Recommendations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+described in [Chapter 3](https://www.nationalacademies.org/read/29063/chapter/5#56), nanotechnology has profound relevance to many new research areas of critical national importance. Researchers in these areas will become future users and their needs are important considerations to inspire innovations in tools that become part of the nanotechnology infrastructure.
+
+Many of these emerging use cases are highly interdisciplinary and engage multiple federal agencies. It is important that the NNCO convene the different communities to ensure that expansions in the nanotechnology infrastructure are complementary to existing capabilities and are well aligned with the needs of emerging areas.
+
+_The third and last step is to ensure that the nanotechnology infrastructure is highly accessible._ The next chapter of nanotechnology has broad educational and commercial relevance to the nation. If the first two decades of nanotechnology were about defining and developing nanotechnology specialists, the next two decades will build on this by making the tools and concepts of nanotechnology available to all. It is important that facilities are available to anyone with an interest in nanotechnology research, development, or commercialization. The U.S. interstate highways were designed for maximal accessibility and set up without tolls and along familiar existing routes. Similarly, the nanotechnology infrastructure needs to accessible in terms of geography, access policies, cost, and practicality.
+
+To ensure that the new nanotechnology infrastructure is built for accessibility, it is important to measure and hold sites accountable to this goal. Existing measures reported by nanotechnology infrastructure facilities emphasize the quantity and impact of peer-reviewed publications. The next phase of nanotechnology infrastructure has to have a broader view of success that includes improving the user base with respect to institutional status, geography, and sector. Tracking these and other standardized measures can inform and assess local strategies for broadening access to sites.
+
+While stakeholders reported many challenges in accessing the U.S. nanotechnology infrastructure, nearly all of them agreed that costs associated with travel to infrastructure sites is a significant impediment to access.
+
+Remote access is not widely considered to be a solution for broadening access to nanotechnology infrastructure. The benefits of hands-on training in both instrument operation and data analysis are critically important, particularly for less experienced users. However, monitoring remote access technologies and offering this option, particularly for more experienced users, is important given the rapid advances in this area.
+
+**Suggested Citation:** "5 Conclusion and List of All Report Recommendations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+### [FULL LIST OF RECOMMENDATIONS](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-25)
+
+#### Priority Recommendations
+
+> **Recommendation 1.1: In the coming year, the National Nanotechnology Coordinating Office (NNCO) should conduct a census of accessible nanotechnology infrastructure sites (instruments, staff, facilities) and display findings on a public, web-accessible map that includes university, regional, and national resources. This information, which should be maintained annually by NNCO, will enhance the visibility, availability, and impact of these assets.**
+>
+>
+> **Recommendation 1.2: Within 2 years, Congress should reauthorize the National Nanotechnology Initiative as the National Nanotechnology Infrastructure and orient, with the appropriate funding, the National Nanotechnology Coordination Office and agency activity toward the renewal and expansion of infrastructure to serve existing and emerging nanotechnology research and development.**
+>
+>
+> **Recommendation 2.4: Within the next 2 years, the National Nanotechnology Coordination Office should undertake a study to determine the level of resources needed to maintain state-of-the-art nanotechnology infrastructure. The study should include a timeframe, measures of success and efficiency, and accountability measures.**
+>
+>
+> **Recommendation 3.3: Federal agencies that support nanotechnology infrastructure should within the next year, and periodically thereafter, prioritize investment in new capabilities that advance fabrication, materials synthesis, characterization and data analysis to support emerging technologies to help the United States maintain its commercial edge.**
+>
+>
+> **Recommendation 4.1: All agencies that fund nanotechnology infrastructure should include in their infrastructure evaluations measures of performance that capture the breadth and heterogeneity of the associated user bases.**
+>
+>
+> **Recommendation 4.5: All agencies that fund nanotechnology infrastructure should increase program funding or provide a competitive travel grant program to include dedicated travel support for users, and where feasible, summer access for academics, researchers, and students who are not from R1 institutions.**
+
+**Suggested Citation:** "5 Conclusion and List of All Report Recommendations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+#### Additional Recommendations
+
+> **Recommendation 2.1: The National Nanotechnology Coordination Office should continue to annually convene key stakeholders in nanotechnology infrastructure to share best practices, coordinate agency investments, and ensure all facilities have a common connection.**
+>
+>
+> **Recommendation 2.2: Within 2 years, the National Nanotechnology Coordination Office should create and then maintain a facilities reporting and user metrics database for all nanotechnology infrastructure that is streamlined, standardized, and eventually automated.**
+>
+>
+> **Recommendation 2.3: Any assessment of maintaining the nanotechnology infrastructure should be informed by the depreciated cost and accumulated devaluation of capital equipment, and these data should inform future infrastructure investments made by National Nanotechnology Initiative–supporting agencies.**
+>
+>
+> **Recommendation 2.5: Federal agencies that support nanotechnology infrastructure should, within 2 years, offer infrastructure funding that includes mechanisms to provide professional staff support.**
+>
+>
+> **Recommendation 3.1: The National Nanotechnology Coordination Office should develop infrastructure gap analyses through annual workshops that engage researchers in relevant emerging areas with nanotechnology infrastructure experts.**
+>
+>
+> **Recommendation 3.2: The National Nanotechnology Coordination Office should coordinate and communicate with the National Quantum Coordination Office, the CHIPS Research and Development Office, and the Microelectronics Commons program—all of which have an interest in the scope, size, and support of nanofabrication and nanocharacterization capabilities and access in the United States.**
+>
+>
+> **Recommendation 4.2: The National Nanotechnology Coordination Office should convene nanotechnology infrastructure site leaders and outreach directors regularly and assist in gathering and promoting evidence-backed best practices to increase awareness of resources in potential user populations and ultimately achieve broader usage.**
+
+**Suggested Citation:** "5 Conclusion and List of All Report Recommendations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+> **Recommendation 4.3: Within 6 months, federal agencies that fund nanotechnology infrastructure should provide guidance that remote access should complement in-person visits; however, hands-on and onsite training should be prioritized for new users.**
+>
+>
+> **Recommendation 4.4: The Department of Energy should within a year conduct a review of its intellectual property agreements at its nanotechnology infrastructure facilities and endeavor to bring them more in line with the successful agreements used at the National Science Foundation facilities, which may lower barriers to utilization of their facilities by industry and startup companies.**
+
+[Next Chapter: Appendix A: Statement of Task](https://www.nationalacademies.org/read/29063/chapter/8)
+
+<!-- source: https://www.nationalacademies.org/read/29063/chapter/8 -->
+
+## 官方在线阅读第8章
+
+[](https://www.nationalacademies.org/)
+*
+### Dropdown items
+
+### My Academies
+
+    *   Login
+    *   [Personal Library](https://www.nationalacademies.org/account/personal-library "Personal Library")
+    *   [Account settings](https://www.nationalacademies.org/account/settings "Account settings")
+    *   Logout
+
+# [Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure](https://www.nationalacademies.org/read/29063/chapter/1)(2025)
+
+## Chapter: Appendix A: Statement of Task
+
+*   Get this book
+
+ Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[<< Previous Chapter: 5 Conclusion and List of All Report Recommendations](https://www.nationalacademies.org/read/29063/chapter/7)
+
+ Page 91 [Share](https://www.nationalacademies.org/read/29063/chapter/8# "Share this page")[Cite](https://www.nationalacademies.org/read/29063/chapter/8# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/29063/chapter/8# "Bookmark this page")
+
+**Suggested Citation:** "Appendix A: Statement of Task." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+[Save](https://www.nationalacademies.org/read/29063/chapter/8)
+
+[Cancel](https://www.nationalacademies.org/read/29063/chapter/8)
+
+## [A Statement of Task](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_pz12-27)
+
+The National Academies of Sciences, Engineering, and Medicine will appoint an ad hoc committee to conduct the quadrennial review of the National Nanotechnology Initiative (NNI). The overall objective of this review is to make recommendations to the Nanoscale Science, Engineering, and Technology Subcommittee of the White House National Science and Technology Council and to the National Nanotechnology Coordination Office that will improve the value of the NNI’s research and development strategy, portfolio, and infrastructure investments to enhance economic prosperity and national security of the United States. Toward this objective, this quadrennial NNI review will include the following tasks:
+
+1.   _The committee will explore trends, opportunities, and emerging use cases for nanoscale research and development and examine how well positioned the nation’s nanotechnology-relevant infrastructure—including people, instruments, and facilities—is to be impactful in current and emerging use cases._ Particular attention will be paid to the opportunities and barriers for sustaining and coordinating the nation’s global leadership in nanotechnology infrastructure.
+2.   _Analyze the composition of the science and engineering community currently being served by the nation’s nanotechnology R&D infrastructure._ Particular attention will be paid to exploring how geography, organization type (e.g., R1 vs. non-R1, academia vs. industry), career stage, project focus area, and other factors influence awareness availability and opportunity. The metrics used to track and evaluate success may also be considered.
+
+ Page 92 [Share](https://www.nationalacademies.org/read/29063/chapter/8# "Share this page")[Cite](https://www.nationalacademies.org/read/29063/chapter/8# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/29063/chapter/8# "Bookmark this page")
+
+**Suggested Citation:** "Appendix A: Statement of Task." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+[Save](https://www.nationalacademies.org/read/29063/chapter/8)
+
+[Cancel](https://www.nationalacademies.org/read/29063/chapter/8)
+
+1.   _Identify barriers to use for communities who are not fully engaging with nanotechnology R&D infrastructure._ This may include, but is not limited to, examining the awareness, interaction models, peer-review models, financial and travel logistics, remote access resources, intellectual property and contractual agreements, opportunities to enhance data and resource sharing, and approaches to incentivizing use. If warranted, recommend possible improvements to assist in achieving impactful national engagement in, and use of, existing infrastructure.
+
+This study may make recommendations on the topics listed above.
+
+The statement of task was modified in February 2025.
+
+ Page 91 [Share](https://www.nationalacademies.org/read/29063/chapter/8# "Share this page")[Cite](https://www.nationalacademies.org/read/29063/chapter/8# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/29063/chapter/8# "Bookmark this page")
+
+**Suggested Citation:** "Appendix A: Statement of Task." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+[Save](https://www.nationalacademies.org/read/29063/chapter/8)
+
+[Cancel](https://www.nationalacademies.org/read/29063/chapter/8)
+
+![Image 1: Page 92](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+ Page 92 [Share](https://www.nationalacademies.org/read/29063/chapter/8# "Share this page")[Cite](https://www.nationalacademies.org/read/29063/chapter/8# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/29063/chapter/8# "Bookmark this page")
+
+**Suggested Citation:** "Appendix A: Statement of Task." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+[Save](https://www.nationalacademies.org/read/29063/chapter/8)
+
+[Cancel](https://www.nationalacademies.org/read/29063/chapter/8)
+
+![Image 2: Page 92](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+[Next Chapter: Appendix B: Acronyms and Abbreviations >>](https://www.nationalacademies.org/read/29063/chapter/9)
+
+Subscribe to Emails from the National Academies
+
+ Stay up to date on activities, publications, and events by subscribing to email updates.
+
+Subscribe
+
+[](https://www.nationalacademies.org/)
+
+Driving progress for the benefit of society by providing independent, objective advice to advance science, engineering, and medicine.
+
+### The National Academies
+
+*   [National Academy of Sciences](https://www.nasonline.org/)
+*   [National Academy of Engineering](https://www.nae.edu/)
+*   [National Academy of Medicine](https://nam.edu/)
+*   [Careers](https://careers.nationalacademies.org/us/en/home)
+*   [National Academies Press (NAP)](https://www.nationalacademies.org/national-academies-press)
+*   [Transportation Research Board Reports](https://www.trb.org/Publications/PubsTRBPublicationsbySeries.aspx)
+*   [MyAcademies Accounts](https://www.nationalacademies.org/myacademies-accounts)
+*   [Contact Us](https://www.nationalacademies.org/contact-us)
+
+### Journals and Periodicals
+
+*   [PNAS](https://www.pnas.org/)
+*   [PNAS Nexus](https://academic.oup.com/pnasnexus)
+*   [ILAR Journal](https://academic.oup.com/ilarjournal)
+*   [Issues in Science and Technology](https://issues.org/)
+*   [Transportation Research Record: Journal of the Transportation Research Board](https://journals.sagepub.com/home/trr)
+*   [TR News](https://trnews.org/)
+
+### Visit
+
+*   [Visit Us Information](https://www.nationalacademies.org/visit)
+*   [Current Operating Status](https://www.nationalacademies.org/current-operating-status)
+*   [Beckman Center](https://www.nationalacademies.org/beckman-center-ca)
+*   [Archives](https://www.nationalacademies.org/archives)
+
+### Legal
+
+*   [Policies and Procedures](https://www.nationalacademies.org/policies-and-procedures)
+*   [Legal Information](https://www.nationalacademies.org/legal-information)
+*   [Privacy Statement](https://www.nationalacademies.org/privacy-statement)
+*   [Terms of Use](https://www.nationalacademies.org/terms-of-use)
+
+© 2026 National Academy of Sciences. All Rights Reserved.
+
+[](https://www.facebook.com/NationalAcademies/)[](https://www.linkedin.com/company/the-national-academies/posts/?feedView=all)[](https://x.com/TheNASEM)
+
+[](https://www.nationalacademies.org/)
+
+# Mobile Navigation
+
+## Primary Mobile Navigation
+
+*   ### Discover
+
+Trending Topics [Transportation](https://www.nationalacademies.org/topics/transportation)[Artificial Intelligence](https://www.nationalacademies.org/topics/artificial-intelligence)[Space, Security, and Conflicts](https://www.nationalacademies.org/topics/space-security-and-conflicts) [See All Topics](https://www.nationalacademies.org/topics) Our Work [Consensus Studies](https://www.nationalacademies.org/projects/consensusadvisory-activity)[Outreach Activities](https://www.nationalacademies.org/projects/educationaloutreach-activity)[Standing Committees](https://www.nationalacademies.org/projects/standing-committee) [See All Work](https://www.nationalacademies.org/projects)  [Our Publications Our peer-reviewed reports present the evidence-based consensus of committees of experts.](https://www.nationalacademies.org/publications/all)[Explore the Latest News and Stories The latest news and stories, with context you can trust.](https://www.nationalacademies.org/news)
+*   ### Events
+
+Convening Activities [Roundtables and Forums](https://www.nationalacademies.org/projects/roundtableforum)[Workshops](https://www.nationalacademies.org/projects/workshop)[Seminar/Webinar/Lecture Series](https://www.nationalacademies.org/projects/seminarwebinarlecture)  Events [Upcoming events](https://www.nationalacademies.org/events)[Replay](https://www.nationalacademies.org/events/archive) [See all events](https://www.nationalacademies.org/events)  [Right Now & Next Up Stay in the loop with can’t-miss sessions, live events, and activities happening over the next two days.](https://www.nationalacademies.org/events/whats-on)[TRB Webinars Webinars are based on work from TRB Standing Technical Committees & the Cooperative Research Programs](https://www.nationalacademies.org/projects/TRB-TRB%20EO-25-P-659)
+*   ### Engage
+
+Work with us [Sponsoring a Project](https://www.nationalacademies.org/sponsor-a-national-academies-project)[Contribute Expertise](https://www.nationalacademies.org/contribute-expertise)[Careers](https://careers.nationalacademies.org/us/en/home)  Opportunities [Engagement Programs](https://www.nationalacademies.org/programs/engagement-programs)[Grants, Fellowships and Awards](https://www.nationalacademies.org/programs)[Science Communication Awards](https://www.nationalacademies.org/programs/NAE-NAM-22-P-489)   [Congressional and Government Affairs Connecting policymakers with the National Academies](https://www.nationalacademies.org/units/NRCEO-NRC%20EO-23-P-592)[Based On Science Answers to everyday science and health questions](https://www.nationalacademies.org/news/based-on-science)
+*   ### About
+
+National Academies [Purpose](https://www.nationalacademies.org/purpose)[Process](https://www.nationalacademies.org/process)  Our People [Leadership](https://www.nationalacademies.org/leadership)[Program Centers](https://www.nationalacademies.org/units)[Careers](https://careers.nationalacademies.org/us/en/home)  Get in touch [Press and Media](https://www.nationalacademies.org/press-and-media)[Contact Us](https://www.nationalacademies.org/contact-us)   [Members Learn about membership to the three Academies](https://www.nationalacademies.org/members)[Current Operating Status Information on building access, visitor requirements, and facility operations.](https://www.nationalacademies.org/current-operating-status)
+
+### My Academies
+
+*   Login
+*   [Personal Library](https://www.nationalacademies.org/account/personal-library "Personal Library")
+*   [Account settings](https://www.nationalacademies.org/account/settings "Account settings")
+*   Logout
+
+[Donate](https://www.nationalacademies.org/donate-today)
+
+Loading...
+
+# Subscribe
+
+## Subscribe
+
+1.    First Name
+2.    Last Name
+3.    Email  (required)
+4.   - [x]  I agree to receive emails from the National Academies  (required)
+
+Subscribe
+
+We respect your privacy and will never share your information.
+
+# Contents
+
+## Contents
+
+ Search this publication
+
+*   [Front Matter i-xiv](https://www.nationalacademies.org/read/29063/chapter/1)
+*   [Summary 1-8](https://www.nationalacademies.org/read/29063/chapter/2)
+*   [1 Introduction: What Is the Nation's Nanotechnology Infrastructure? 9-37](https://www.nationalacademies.org/read/29063/chapter/3)
+*   [2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure 38-55](https://www.nationalacademies.org/read/29063/chapter/4)
+*   [3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure 56-71](https://www.nationalacademies.org/read/29063/chapter/5)
+*   [4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure 72-84](https://www.nationalacademies.org/read/29063/chapter/6)
+*   [5 Conclusion and List of All Report Recommendations 85-90](https://www.nationalacademies.org/read/29063/chapter/7)
+*   [Appendix A: Statement of Task 91-92](https://www.nationalacademies.org/read/29063/chapter/8)
+*   [Appendix B: Acronyms and Abbreviations 93-95](https://www.nationalacademies.org/read/29063/chapter/9)
+*   [Appendix C: Public Meeting Presentations 96-99](https://www.nationalacademies.org/read/29063/chapter/10)
+*   [Appendix D: Committee Member Biographical Information 100-106](https://www.nationalacademies.org/read/29063/chapter/11)
+
+# Log In
+
+## Log In
+
+Sign in to access your saved publications, downloads, and email preferences.
+
+Former MyNAP users: You'll need to reset your password on your first login to MyAcademies. Click "Forgot password" below to receive a reset link via email. Having trouble? [Visit our FAQ page](https://www.nationalacademies.org/myacademies-accounts) to contact support.
+
+1.    Email  (required)
+2.    Password  (required)
+Forgot password
+
+Log In
+
+Don't have an account? Sign up
+
+# Register
+
+## Register
+
+1.    Email  (required)
+2.    New password  (required)
+3.    Retype password  (required)  Password must be at least 8 characters
+4.   - [x]  I agree to receive emails from the National Academies
+5.   - [x]  I accept the terms of use  I accept the  [terms of use](https://www.nationalacademies.org/terms-of-use)
+
+Sign Up
+
+# Download as a Guest
+
+## Download as a Guest
+
+While logged on as a guest, you can download any of our free PDFs on [nationalacademies.org](https://www.nationalacademies.org/) . You will remain logged in until you close your browser.
+
+1.    Email  (required)
+2.   - [x]  Yes, send me emails when similar titles are published
+3.   - [x]  Yes, I accept the terms of use  Yes, I accept the  [terms of use](https://www.nationalacademies.org/terms-of-use)
+
+Continue
+
+Sign up for MyAcademies
+
+# Thank You
+
+## Thank You
+
+Thank you for creating a MyAcademies account!
+
+Enjoy free access to thousands of National Academies' publications, a 10% discount off every purchase, and build your personal library.
+
+# Forgot Password
+
+## Forgot Password
+
+Enter the email address for your MyAcademies (formerly MyNAP) account to receive password reset instructions.
+
+1.    Email  (required)
+
+Continue
+
+# Reset Requested
+
+## Reset Requested
+
+We sent password reset instructions to your email . Follow the link in that email to create a new password. Didn't receive it? Check your spam folder or [contact us](https://www.nationalacademies.org/myacademies-accounts) for assistance.
+
+Log In
+
+# Reset Password
+
+## Reset Password
+
+1.    New password  (required)
+2.    Retype password  (required)  Password must be at least 8 characters
+
+Reset Password
+
+# Reset Password
+
+## Reset Password
+
+Your password has been reset.
+
+[Log In](https://www.nationalacademies.org/?login)
+
+# Verify email
+
+## Verify email
+
+Verify Your Email Address
+
+We sent a verification link to your email. Please check your inbox (and spam folder) and follow the link to verify your email address. If you did not receive the email, you can request a new verification link below
+
+Resend Verification Email
+
+# Looking for other ways to read this?
+
+![Image 3: cover image](https://nap.nationalacademies.org/cover/29063/450)
+
+## IN ADDITION TO READING ONLINE, THIS TITLE IS AVAILABLE IN THESE FORMATS:
+
+[PDF FREE Download](https://www.nationalacademies.org/read/29063/chapter/8#)[Paperback $25.00 Add to Cart](https://www.nationalacademies.org/read/29063/chapter/8#)[Ebook $20.99 Add to Cart](https://www.nationalacademies.org/read/29063/chapter/8#)
+
+MyNAP members **SAVE 10%** off online.
+
+ Not a MyNAP member yet? [Register for a free account](https://www.nationalacademies.org/read/29063/chapter/8#) to start saving and receiving special member only perks.
+
+[No thanks. I'll keep reading](https://www.nationalacademies.org/read/29063/chapter/8#)
+
+*   Contents
+*   [Previous chapter](https://www.nationalacademies.org/read/29063/chapter/7 "Previous Chapter")Chapter[Next chapter](https://www.nationalacademies.org/read/29063/chapter/9 "Next Chapter")
+*   Previous page Page  of 106 Next page
+*   Original Pages Text Pages
+*    Search this publication
+
+## Privacy Preference Center
+
+When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.
+
+[More information](https://cookiepedia.co.uk/giving-consent-to-cookies)
+
+Allow All
+### Manage Consent Preferences
+
+#### Strictly Necessary Cookies
+
+Always Active
+
+These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.
+
+#### Functional Cookies
+
+- [x] Functional Cookies
+
+These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.
+
+#### Performance Cookies
+
+- [x] Performance Cookies
+
+These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.
+
+#### Targeting Cookies
+
+- [x] Targeting Cookies
+
+These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+
+### Performance Cookies
+
+Clear
+
+- [x] checkbox label label
+
+Apply Cancel
+
+Consent Leg.Interest
+
+- [x] checkbox label label
+
+- [x] checkbox label label
+
+- [x] checkbox label label
+
+Reject All Confirm My Choices
+
+[](https://www.onetrust.com/products/cookie-consent/)
+
+This site uses cookies. For more information on cookies visit:[https://www.nationalacademies.org/legal/privacy](https://www.nationalacademies.org/legal/privacy)
+
+Continue
+
+<!-- source: https://www.nationalacademies.org/read/29063/chapter/9 -->
+
+## 官方在线阅读第9章
+
+[](https://www.nationalacademies.org/)
+*
+### Dropdown items
+
+### My Academies
+
+    *   Login
+    *   [Personal Library](https://www.nationalacademies.org/account/personal-library "Personal Library")
+    *   [Account settings](https://www.nationalacademies.org/account/settings "Account settings")
+    *   Logout
+
+# [Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure](https://www.nationalacademies.org/read/29063/chapter/1)(2025)
+
+## Chapter: Appendix B: Acronyms and Abbreviations
+
+*   Get this book
+
+ Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[<< Previous Chapter: Appendix A: Statement of Task](https://www.nationalacademies.org/read/29063/chapter/8)
+
+ Page 93 [Share](https://www.nationalacademies.org/read/29063/chapter/9# "Share this page")[Cite](https://www.nationalacademies.org/read/29063/chapter/9# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/29063/chapter/9# "Bookmark this page")
+
+**Suggested Citation:** "Appendix B: Acronyms and Abbreviations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+[Save](https://www.nationalacademies.org/read/29063/chapter/9)
+
+[Cancel](https://www.nationalacademies.org/read/29063/chapter/9)
+
+## [B Acronyms and Abbreviations](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_AV-q)
+
+ADF-STEM annular dark field scanning transmission electron microscopy
+AFM atomic force microscopy
+AIP American Institute of Physics
+ALD atomic layer deposition
+BARDA Biomedical Advanced Research and Development Authority
+BES Basic Energy Sciences (under the Department of Energy)
+BMES Biomedical Engineering Society
+CBEN Center for Biomedical and Environmental Nanotechnology
+CFN Center for Functional Nanomaterials
+CHIPS Creating Helpful Incentives to Produce Semiconductors
+CINT Center for Integrated Nanotechnologies
+CNEU Center for Nanotechnology Education and Utilization
+CNF Cornell Nanoscale Science and Technology Facility
+CNM Center for Nanoscale Materials
+CNMS Center for Nanophase Materials Science
+CNS Center for Nanoscale Systems
+CNST Center for Nanoscale Science and Technology
+CoS Committee on Science (of the National Science and Technology Council)
+CoT Committee on Technology (of the National Science and Technology Council)
+
+ Page 94 [Share](https://www.nationalacademies.org/read/29063/chapter/9# "Share this page")[Cite](https://www.nationalacademies.org/read/29063/chapter/9# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/29063/chapter/9# "Bookmark this page")
+
+**Suggested Citation:** "Appendix B: Acronyms and Abbreviations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+[Save](https://www.nationalacademies.org/read/29063/chapter/9)
+
+[Cancel](https://www.nationalacademies.org/read/29063/chapter/9)
+
+CRS Controlled Release Society
+DARPA Defense Advanced Research Projects Agency
+DNA deoxyribonucleic acid
+DOC Department of Commerce
+DoD Department of Defense
+DOE Department of Energy
+EOP Executive Office of the President
+HHS Department of Health and Human Services
+MANTH Mid-Atlantic Nanotechnology Hub
+MIE Major Items of Equipment
+MIRA Materials Interfaces in Research and Applications
+MIT Massachusetts Institute of Technology
+MONT Montana Nanotechnology Facility
+MRI major research instrumentation
+MRL Materials Research Laboratory
+mRNA messenger ribonucleic acid
+MRSEC Major Research Science and Engineering Centers
+NCI-SW Nanotechnology Collaborative Infrastructure Southwest
+NEHI Nanotechnology Environmental and Health Implications (Working Group)
+NIH National Institutes of Health
+NIST National Institute of Standards and Technology
+NMMB National Materials and Manufacturing Board
+NNCI National Nanotechnology Coordinated Infrastructure
+NNCO National Nanotechnology Coordinating Office
+NNF Nebraska Nanoscale Facility
+NNI National Nanotechnology Initiative
+NRSA National Research Service Award
+NSE Nanoscale Science and Engineering
+NSET Subcommittee on Nanoscale Science, Engineering, and Technology
+NSF National Science Foundation
+NSRC Nanoscale Science Research Center
+NSTC National Science and Technology Council
+OMB Office of Management and Budget
+OSTP Office of Science and Technology Policy
+
+ Page 95 [Share](https://www.nationalacademies.org/read/29063/chapter/9# "Share this page")[Cite](https://www.nationalacademies.org/read/29063/chapter/9# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/29063/chapter/9# "Bookmark this page")
+
+**Suggested Citation:** "Appendix B: Acronyms and Abbreviations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+[Save](https://www.nationalacademies.org/read/29063/chapter/9)
+
+[Cancel](https://www.nationalacademies.org/read/29063/chapter/9)
+
+PCA Program Component Area
+PCAST President’s Council of Advisors on Science and Technology
+R&D research and development
+RNA ribonucleic acid
+RTNN Research Triangle Nanotechnology Network
+SDNI San Diego Nanotechnology Infrastructure
+SEM scanning electron microscopy
+SENIC Southeastern Nanotechnology Infrastructure Corridor
+SPIE Society of Photo-Optical Instrumentation Engineers
+SRC Semiconductor Research Corporation
+STEM scanning transmission electron microscope
+STEM science, technology, engineering, and mathematics
+STM scanning tunneling microscopy
+TEM transmission electron microscopy
+TNF Texas Nanofabrication Facility
+UARC University Affiliated Army Research Center
+UGIM University, Government, Industry, Micro/Nanotechnology
+UIUC University of Illinois Urbana-Champaign
+UNESCO United Nations Educational, Scientific, and Cultural Organization
+USDA U.S. Department of Agriculture
+USPTO U.S. Patent and Trademark Office
+WIPO World Intellectual Property Organization
+
+ Page 93 [Share](https://www.nationalacademies.org/read/29063/chapter/9# "Share this page")[Cite](https://www.nationalacademies.org/read/29063/chapter/9# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/29063/chapter/9# "Bookmark this page")
+
+**Suggested Citation:** "Appendix B: Acronyms and Abbreviations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+[Save](https://www.nationalacademies.org/read/29063/chapter/9)
+
+[Cancel](https://www.nationalacademies.org/read/29063/chapter/9)
+
+![Image 1: Page 95](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+ Page 94 [Share](https://www.nationalacademies.org/read/29063/chapter/9# "Share this page")[Cite](https://www.nationalacademies.org/read/29063/chapter/9# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/29063/chapter/9# "Bookmark this page")
+
+**Suggested Citation:** "Appendix B: Acronyms and Abbreviations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+[Save](https://www.nationalacademies.org/read/29063/chapter/9)
+
+[Cancel](https://www.nationalacademies.org/read/29063/chapter/9)
+
+![Image 2: Page 95](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+ Page 95 [Share](https://www.nationalacademies.org/read/29063/chapter/9# "Share this page")[Cite](https://www.nationalacademies.org/read/29063/chapter/9# "Cite this page")[Bookmark](https://www.nationalacademies.org/read/29063/chapter/9# "Bookmark this page")
+
+**Suggested Citation:** "Appendix B: Acronyms and Abbreviations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+[Save](https://www.nationalacademies.org/read/29063/chapter/9)
+
+[Cancel](https://www.nationalacademies.org/read/29063/chapter/9)
+
+![Image 3: Page 95](blob:http://localhost/4e9e1002e91ab485b8457f6f57173df7)
+
+[Next Chapter: Appendix C: Public Meeting Presentations >>](https://www.nationalacademies.org/read/29063/chapter/10)
+
+Subscribe to Emails from the National Academies
+
+ Stay up to date on activities, publications, and events by subscribing to email updates.
+
+Subscribe
+
+[](https://www.nationalacademies.org/)
+
+Driving progress for the benefit of society by providing independent, objective advice to advance science, engineering, and medicine.
+
+### The National Academies
+
+*   [National Academy of Sciences](https://www.nasonline.org/)
+*   [National Academy of Engineering](https://www.nae.edu/)
+*   [National Academy of Medicine](https://nam.edu/)
+*   [Careers](https://careers.nationalacademies.org/us/en/home)
+*   [National Academies Press (NAP)](https://www.nationalacademies.org/national-academies-press)
+*   [Transportation Research Board Reports](https://www.trb.org/Publications/PubsTRBPublicationsbySeries.aspx)
+*   [MyAcademies Accounts](https://www.nationalacademies.org/myacademies-accounts)
+*   [Contact Us](https://www.nationalacademies.org/contact-us)
+
+### Journals and Periodicals
+
+*   [PNAS](https://www.pnas.org/)
+*   [PNAS Nexus](https://academic.oup.com/pnasnexus)
+*   [ILAR Journal](https://academic.oup.com/ilarjournal)
+*   [Issues in Science and Technology](https://issues.org/)
+*   [Transportation Research Record: Journal of the Transportation Research Board](https://journals.sagepub.com/home/trr)
+*   [TR News](https://trnews.org/)
+
+### Visit
+
+*   [Visit Us Information](https://www.nationalacademies.org/visit)
+*   [Current Operating Status](https://www.nationalacademies.org/current-operating-status)
+*   [Beckman Center](https://www.nationalacademies.org/beckman-center-ca)
+*   [Archives](https://www.nationalacademies.org/archives)
+
+### Legal
+
+*   [Policies and Procedures](https://www.nationalacademies.org/policies-and-procedures)
+*   [Legal Information](https://www.nationalacademies.org/legal-information)
+*   [Privacy Statement](https://www.nationalacademies.org/privacy-statement)
+*   [Terms of Use](https://www.nationalacademies.org/terms-of-use)
+
+© 2026 National Academy of Sciences. All Rights Reserved.
+
+[](https://www.facebook.com/NationalAcademies/)[](https://www.linkedin.com/company/the-national-academies/posts/?feedView=all)[](https://x.com/TheNASEM)
+
+[](https://www.nationalacademies.org/)
+
+# Mobile Navigation
+
+## Primary Mobile Navigation
+
+*   ### Discover
+
+Trending Topics [Transportation](https://www.nationalacademies.org/topics/transportation)[Artificial Intelligence](https://www.nationalacademies.org/topics/artificial-intelligence)[Space, Security, and Conflicts](https://www.nationalacademies.org/topics/space-security-and-conflicts) [See All Topics](https://www.nationalacademies.org/topics) Our Work [Consensus Studies](https://www.nationalacademies.org/projects/consensusadvisory-activity)[Outreach Activities](https://www.nationalacademies.org/projects/educationaloutreach-activity)[Standing Committees](https://www.nationalacademies.org/projects/standing-committee) [See All Work](https://www.nationalacademies.org/projects)  [Our Publications Our peer-reviewed reports present the evidence-based consensus of committees of experts.](https://www.nationalacademies.org/publications/all)[Explore the Latest News and Stories The latest news and stories, with context you can trust.](https://www.nationalacademies.org/news)
+*   ### Events
+
+Convening Activities [Roundtables and Forums](https://www.nationalacademies.org/projects/roundtableforum)[Workshops](https://www.nationalacademies.org/projects/workshop)[Seminar/Webinar/Lecture Series](https://www.nationalacademies.org/projects/seminarwebinarlecture)  Events [Upcoming events](https://www.nationalacademies.org/events)[Replay](https://www.nationalacademies.org/events/archive) [See all events](https://www.nationalacademies.org/events)  [Right Now & Next Up Stay in the loop with can’t-miss sessions, live events, and activities happening over the next two days.](https://www.nationalacademies.org/events/whats-on)[TRB Webinars Webinars are based on work from TRB Standing Technical Committees & the Cooperative Research Programs](https://www.nationalacademies.org/projects/TRB-TRB%20EO-25-P-659)
+*   ### Engage
+
+Work with us [Sponsoring a Project](https://www.nationalacademies.org/sponsor-a-national-academies-project)[Contribute Expertise](https://www.nationalacademies.org/contribute-expertise)[Careers](https://careers.nationalacademies.org/us/en/home)  Opportunities [Engagement Programs](https://www.nationalacademies.org/programs/engagement-programs)[Grants, Fellowships and Awards](https://www.nationalacademies.org/programs)[Science Communication Awards](https://www.nationalacademies.org/programs/NAE-NAM-22-P-489)   [Congressional and Government Affairs Connecting policymakers with the National Academies](https://www.nationalacademies.org/units/NRCEO-NRC%20EO-23-P-592)[Based On Science Answers to everyday science and health questions](https://www.nationalacademies.org/news/based-on-science)
+*   ### About
+
+National Academies [Purpose](https://www.nationalacademies.org/purpose)[Process](https://www.nationalacademies.org/process)  Our People [Leadership](https://www.nationalacademies.org/leadership)[Program Centers](https://www.nationalacademies.org/units)[Careers](https://careers.nationalacademies.org/us/en/home)  Get in touch [Press and Media](https://www.nationalacademies.org/press-and-media)[Contact Us](https://www.nationalacademies.org/contact-us)   [Members Learn about membership to the three Academies](https://www.nationalacademies.org/members)[Current Operating Status Information on building access, visitor requirements, and facility operations.](https://www.nationalacademies.org/current-operating-status)
+
+### My Academies
+
+*   Login
+*   [Personal Library](https://www.nationalacademies.org/account/personal-library "Personal Library")
+*   [Account settings](https://www.nationalacademies.org/account/settings "Account settings")
+*   Logout
+
+[Donate](https://www.nationalacademies.org/donate-today)
+
+Loading...
+
+# Subscribe
+
+## Subscribe
+
+1.    First Name
+2.    Last Name
+3.    Email  (required)
+4.   - [x]  I agree to receive emails from the National Academies  (required)
+
+Subscribe
+
+We respect your privacy and will never share your information.
+
+# Contents
+
+## Contents
+
+ Search this publication
+
+*   [Front Matter i-xiv](https://www.nationalacademies.org/read/29063/chapter/1)
+*   [Summary 1-8](https://www.nationalacademies.org/read/29063/chapter/2)
+*   [1 Introduction: What Is the Nation's Nanotechnology Infrastructure? 9-37](https://www.nationalacademies.org/read/29063/chapter/3)
+*   [2 Opportunities and Barriers for Renewing and Coordinating the Nation's Global Leadership in Nanotechnology Research and Development Infrastructure 38-55](https://www.nationalacademies.org/read/29063/chapter/4)
+*   [3 Trends, Opportunities, and Emerging Use Cases for Next-Generation Research and Development Nanotechnology Infrastructure 56-71](https://www.nationalacademies.org/read/29063/chapter/5)
+*   [4 Barriers to Use for Communities Not Fully Engaging in Nanotechnology Infrastructure 72-84](https://www.nationalacademies.org/read/29063/chapter/6)
+*   [5 Conclusion and List of All Report Recommendations 85-90](https://www.nationalacademies.org/read/29063/chapter/7)
+*   [Appendix A: Statement of Task 91-92](https://www.nationalacademies.org/read/29063/chapter/8)
+*   [Appendix B: Acronyms and Abbreviations 93-95](https://www.nationalacademies.org/read/29063/chapter/9)
+*   [Appendix C: Public Meeting Presentations 96-99](https://www.nationalacademies.org/read/29063/chapter/10)
+*   [Appendix D: Committee Member Biographical Information 100-106](https://www.nationalacademies.org/read/29063/chapter/11)
+
+# Log In
+
+## Log In
+
+Sign in to access your saved publications, downloads, and email preferences.
+
+Former MyNAP users: You'll need to reset your password on your first login to MyAcademies. Click "Forgot password" below to receive a reset link via email. Having trouble? [Visit our FAQ page](https://www.nationalacademies.org/myacademies-accounts) to contact support.
+
+1.    Email  (required)
+2.    Password  (required)
+Forgot password
+
+Log In
+
+Don't have an account? Sign up
+
+# Register
+
+## Register
+
+1.    Email  (required)
+2.    New password  (required)
+3.    Retype password  (required)  Password must be at least 8 characters
+4.   - [x]  I agree to receive emails from the National Academies
+5.   - [x]  I accept the terms of use  I accept the  [terms of use](https://www.nationalacademies.org/terms-of-use)
+
+Sign Up
+
+# Download as a Guest
+
+## Download as a Guest
+
+While logged on as a guest, you can download any of our free PDFs on [nationalacademies.org](https://www.nationalacademies.org/) . You will remain logged in until you close your browser.
+
+1.    Email  (required)
+2.   - [x]  Yes, send me emails when similar titles are published
+3.   - [x]  Yes, I accept the terms of use  Yes, I accept the  [terms of use](https://www.nationalacademies.org/terms-of-use)
+
+Continue
+
+Sign up for MyAcademies
+
+# Thank You
+
+## Thank You
+
+Thank you for creating a MyAcademies account!
+
+Enjoy free access to thousands of National Academies' publications, a 10% discount off every purchase, and build your personal library.
+
+# Forgot Password
+
+## Forgot Password
+
+Enter the email address for your MyAcademies (formerly MyNAP) account to receive password reset instructions.
+
+1.    Email  (required)
+
+Continue
+
+# Reset Requested
+
+## Reset Requested
+
+We sent password reset instructions to your email . Follow the link in that email to create a new password. Didn't receive it? Check your spam folder or [contact us](https://www.nationalacademies.org/myacademies-accounts) for assistance.
+
+Log In
+
+# Reset Password
+
+## Reset Password
+
+1.    New password  (required)
+2.    Retype password  (required)  Password must be at least 8 characters
+
+Reset Password
+
+# Reset Password
+
+## Reset Password
+
+Your password has been reset.
+
+[Log In](https://www.nationalacademies.org/?login)
+
+# Verify email
+
+## Verify email
+
+Verify Your Email Address
+
+We sent a verification link to your email. Please check your inbox (and spam folder) and follow the link to verify your email address. If you did not receive the email, you can request a new verification link below
+
+Resend Verification Email
+
+# Looking for other ways to read this?
+
+![Image 4: cover image](https://nap.nationalacademies.org/cover/29063/450)
+
+## IN ADDITION TO READING ONLINE, THIS TITLE IS AVAILABLE IN THESE FORMATS:
+
+[PDF FREE Download](https://www.nationalacademies.org/read/29063/chapter/9#)[Paperback $25.00 Add to Cart](https://www.nationalacademies.org/read/29063/chapter/9#)[Ebook $20.99 Add to Cart](https://www.nationalacademies.org/read/29063/chapter/9#)
+
+MyNAP members **SAVE 10%** off online.
+
+ Not a MyNAP member yet? [Register for a free account](https://www.nationalacademies.org/read/29063/chapter/9#) to start saving and receiving special member only perks.
+
+[No thanks. I'll keep reading](https://www.nationalacademies.org/read/29063/chapter/9#)
+
+*   Contents
+*   [Previous chapter](https://www.nationalacademies.org/read/29063/chapter/8 "Previous Chapter")Chapter[Next chapter](https://www.nationalacademies.org/read/29063/chapter/10 "Next Chapter")
+*   Previous page Page  of 106 Next page
+*   Original Pages Text Pages
+*    Search this publication
+
+## Privacy Preference Center
+
+When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.
+
+[More information](https://cookiepedia.co.uk/giving-consent-to-cookies)
+
+Allow All
+### Manage Consent Preferences
+
+#### Strictly Necessary Cookies
+
+Always Active
+
+These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.
+
+#### Functional Cookies
+
+- [x] Functional Cookies
+
+These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.
+
+#### Performance Cookies
+
+- [x] Performance Cookies
+
+These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.
+
+#### Targeting Cookies
+
+- [x] Targeting Cookies
+
+These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+
+### Performance Cookies
+
+Clear
+
+- [x] checkbox label label
+
+Apply Cancel
+
+Consent Leg.Interest
+
+- [x] checkbox label label
+
+- [x] checkbox label label
+
+- [x] checkbox label label
+
+Reject All Confirm My Choices
+
+[](https://www.onetrust.com/products/cookie-consent/)
+
+This site uses cookies. For more information on cookies visit:[https://www.nationalacademies.org/legal/privacy](https://www.nationalacademies.org/legal/privacy)
+
+Continue
+
+<!-- source: https://www.nationalacademies.org/read/29063/chapter/10 -->
+
+## 官方在线阅读第10章
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[Previous Chapter: Appendix B: Acronyms and Abbreviations](https://www.nationalacademies.org/read/29063/chapter/9)
+
+**Suggested Citation:** "Appendix C: Public Meeting Presentations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## [C Public Meeting Presentations](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_AAX)
+
+**MARCH 6, 2024**
+
+Branden Brough, Director, National Nanotechnology Coordination Office (NNCO)
+
+Quinn Spadola, Deputy Director, NNCO
+
+**JUNE 6, 2024**
+
+Marina Dobrovolskaia, Co-Director, Director of Operations, and Head of the Immunology Section, Nanotechnology Characterization Laboratory, National Cancer Institute, National Institutes of Health
+
+Jim Ciston, Deputy Director, The Molecular Foundry, Lawrence Berkeley National Laboratory
+
+Jeff Nelson, Director, Center for Integrated Nanotechnologies, Sandia National Laboratories and Los Alamos National Laboratory
+
+Ilke Arslan, Director, Center for Nanoscale Materials, Argonne National Laboratory
+
+David Gottfried, Principal Investigator, Southeastern Nanotechnology Infrastructure Corridor, Georgia Institute of Technology
+
+Judy Cha, Director, Cornell Nanoscale Facility
+
+Vinayak Dravid, Founding Director, Soft and Hybrid Nanotechnology Experimental Resource, Northwestern University
+
+Debbie Senesky, Site Director, nano@stanford, Stanford University
+
+Jelena Vučković, Professor of Electrical Engineering, Stanford University
+
+**Suggested Citation:** "Appendix C: Public Meeting Presentations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+Ania Bleszynski Jayich, Professor and Co-Director, National Science Foundation Quantum Foundry, University of California, Santa Barbara
+
+Jonathan (Joff) Silberg, Professor of BioSciences, Rice University
+
+Jason C. White, Director, Connecticut Agricultural Experimental Station
+
+Peter Vikesland, Professor of Environmental and Water Resources Engineering, Virginia Tech
+
+Tyler Myers, Product Marketing Manager, Forge Nano
+
+Rainer Kuemmerle, Managing Director, Bruker BioSpin
+
+**JUNE 13, 2024**
+
+David Foord, Director of Strategy and Innovation for Materials Science, Thermo Fisher Scientific
+
+Eric Goergen, Strategy and Innovation Manager for Materials Science, Thermo Fisher Scientific
+
+**JUNE 20, 2024**
+
+Victor Zhirnov, Chief Scientist, Semiconductor Research Corporation
+
+**JUNE 27, 2024**
+
+Christian Binek, Director, Nebraska Nanoscale Facility
+
+**JULY 18, 2024**
+
+Robert J. Pohorenec, President, JEOL USA
+
+**JULY 25, 2024**
+
+Trevor Thornton, Site Director, Nanotechnology Collaborative Infrastructure Southwest, Arizona State University
+
+Gabriel Montaño, Director, Center for Materials Interfaces in Research and Applications, Northern Arizona University
+
+**AUGUST 1, 2024**
+
+Paul Weiss, Professor and Director, California Nanosystems Institute, University of California, Los Angeles
+
+**Suggested Citation:** "Appendix C: Public Meeting Presentations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+**AUGUST 8, 2024**
+
+Joe Baio, Assistant Professor, Oregon State University
+
+Karl Bohringer, Professor and Site Director, Northwest Nanotechnology Infrastructure, University of Washington
+
+**AUGUST 22, 2024**
+
+Osama Awadelkarim, Professor and UNESCO Chair, Director, Center for Nanotechnology Education and Utilization (CNEU), Pennsylvania State University
+
+Zachary Gray, Managing Director, CNEU
+
+Rick Vaughn, Faculty Chair-STEM, Rio Salado College
+
+Robert Lavelle, Student, CNEU
+
+**AUGUST 29, 2024**
+
+Kevin Walsh, Overall Site Director, Kentucky Multi-Scale Manufacturing and Nano Integration Node and Deans Office (ECE), University of Louisville
+
+Todd Hastings, UK Director and Cores Lead, Electrical and Computer Engineering, University of Kentucky
+
+Ana Galiano, Program Manager, University of Louisville Engineering
+
+**SEPTEMBER 4, 2024**
+
+Kei Koizumi, Principal Deputy Director for Policy, White House Office of Science and Technology Policy
+
+Sherine Obare, Vice Chancellor for Research and Engagement, Professor, Joint School of Nanoscience and Engineering, University of North Carolina at Greensboro
+
+Shyam Aravamudhan, Director, Joint School of Nanoscience and Engineering’s Institute for Research Technologies, North Carolina Agricultural & Technical State University
+
+Thomas Searles, Associate Professor, Electrical and Computer Engineering, University of Illinois Chicago
+
+Paul Braun, Director, Materials Research Laboratory, University of Illinois Urbana-Champaign
+
+Doug Natelson, Professor, Physics and Astronomy, and Associate Dean for Research, Rice University
+
+**Suggested Citation:** "Appendix C: Public Meeting Presentations." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+Franklin Hadley, Director of Outreach and Communications, Institute for Soldier Technologies (a University Affiliated Army Research Center), Massachusetts Institute of Technology (MIT)
+
+Luke Baldwin, Chemist, Air Force Research Laboratory
+
+Carrie Huguenin, Associate Group Leader, Microelectronics Laboratory, MIT Lincoln Laboratory
+
+Paula Hammond, Institute Professor, Head, Department of Chemical Engineering, and Member, Koch Institute of Integrative Cancer Research, MIT; Member, President’s Council of Advisors on Science and Technology
+
+Liesl Folks, Director for Semiconductor Strategy and Professor, University of Arizona
+
+Wei Chen, Wilson-Cook Professor in Engineering Design, Chair, Department of Mechanical Engineering, Northwestern University
+
+Emmanuel Akala, Professor of Pharmaceutics, Howard University
+
+Stephan Wilhelm, Associate Professor, University of Oklahoma
+
+**SEPTEMBER 5, 2024**
+
+Virtual Town Hall
+
+**SEPTEMBER 12, 2024**
+
+Robert Langer, Institute Professor, MIT
+
+**NOVEMBER 13, 2024**
+
+Marc Segers, Head of Product Innovation, AIP Publishing
+
+Alison Hatt, Energy Sciences Communications Lead, Lawrence Berkeley National Laboratory
+
+[Next Chapter: Appendix D: Committee Member Biographical Information](https://www.nationalacademies.org/read/29063/chapter/11)
+
+<!-- source: https://www.nationalacademies.org/read/29063/chapter/11 -->
+
+## 官方在线阅读第11章
+
+Visit NAP.edu/10766 to get more information about this book, to buy it in print, or to download it as a free PDF.
+
+[Previous Chapter: Appendix C: Public Meeting Presentations](https://www.nationalacademies.org/read/29063/chapter/10)
+
+**Suggested Citation:** "Appendix D: Committee Member Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+## [D Committee Member Biographical Information](https://www.nationalacademies.org/read/29063/chapter/1#content-toc_Aen)
+
+VICKI L. COLVIN, _Chair_, joined Louisiana State University (LSU) in 2024 as the dean of the LSU College of Engineering and the Bert S. Turner Chair. Previously, she was the Victor Kreible Professor of Chemistry and Engineering at Brown University and director of its Institute for Biology, Engineering, and Medicine. Before her return to academic research and teaching, she served as Brown’s provost from 2014 to 2015 and as Rice University’s vice-provost for research from 2010 to 2014. She is an expert in nanoscience and nanotechnology, materials interactions with biology and the environment, and advanced optical and magnetic materials. She received her undergraduate degree in chemistry and physics from Stanford University in 1988 and her PhD in chemistry from the University of California (UC), Berkeley, in 1994. She has previously served on a National Academies of Sciences, Engineering, and Medicine study on National Nanotechnology Initiative (NNI) research related to nanotechnology’s safety and has testified twice before Congress on science policy and nanotechnology. Dr. Colvin was the director of the National Science Foundation (NSF) Center for Biomedical and Environmental Nanotechnology from 2001 to 2011, the nation’s first center devoted to the study of the human health and environmental applications and implications of nanotechnology. Her graduate work on quantum dots and light-emitting diodes laid the foundation for developing quantum dot television sets and related optical devices. She has published more than 200 peer-reviewed papers, holds seven patents, and is a fellow of the American Institute for Medical and Biological Engineering (AIMBE) and the American Association for the Advancement of Science (AAAS). She has been named a Sloan Foundation Fellow and a Chemistry of Materials Highly Cited Researcher,
+
+**Suggested Citation:** "Appendix D: Committee Member Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+among other awards. She currently serves as an associate editor for the American Chemical Society (ACS) journal _Nano Letters_; is a board member of the nonprofit Schlumberger Foundation, which supports the international Faculty for the Future program; and has founded a company, Rhode Island Nanotechnology, that provides expert evaluation of nanotechnology-related intellectual property.
+
+CATHERINE J. MURPHY, _Vice Chair_, is the Larry R. Faulkner Endowed Chair in Chemistry and current head of the Department of Chemistry at the University of Illinois Urbana-Champaign (UIUC). Prior to her appointment at UIUC in 2009, she was on the faculty of chemistry and biochemistry at the University of South Carolina. Dr. Murphy has pioneered the colloidal synthesis of shape-controlled gold nanocrystals in aqueous solution in the 5–100 nm size range, which enables applications in chemical sensing, biological imaging, optical displays, enhanced energy conversion, mechanically improved polymer nanocomposites, and photothermal ablation of pathogenic cells. Her honors include the 2022 Centenary Prize of the Royal Society of Chemistry (RSC) and the 2020 ACS Award in Inorganic Chemistry, among others. She is a member of the U.S. National Academy of Sciences (NAS) and a member of the American Academy of Arts and Sciences. Dr. Murphy earned two BS degrees, one in chemistry and one in biochemistry from UIUC in 1986, and her PhD in chemistry from the University of Wisconsin–Madison in 1990. Dr. Murphy is an associate editor for _Chemistry_ and a member of the editorial board for the _Proceedings of the National Academy of Sciences_. She is a member of the board of directors of the Research Corporation for Science Advancement, the scientific advisory board of the Welch Foundation, and Dow’s Science and Technology Advisory Council. She is a co-author of the best-selling general chemistry textbook _Chemistry: The Central Science_, from the 10th to the present 15th edition.
+
+CRAIG B. ARNOLD is currently the vice dean for innovation at Princeton University and the Susan Dod Brown Professor of Mechanical and Aerospace Engineering and Materials Science. Prior to his service as the vice dean for innovation, he was the director of the Princeton Materials Institute for 7 years where he oversaw Princeton’s micro and nanofabrication facility and its imaging and analysis center. Dr. Arnold’s research focuses on materials processing, including advanced manufacturing and nanostructuring of materials, and he is a fellow of SPIE and Optica. He received his BS in physics and mathematics from Haverford College and his AM and PhD from Harvard University in physics. Dr. Arnold currently serves on the National Academies’ National Materials and Manufacturing Board.
+
+ANGELA M. BELCHER is a biological and materials engineer with expertise in the fields of biomaterials, biomolecular materials, organic–inorganic interfaces, and solid-state chemistry and devices. Her primary research focus is evolving new
+
+**Suggested Citation:** "Appendix D: Committee Member Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+materials for energy, electronics, the environment, and medicine. She received her BS in creative studies from UC Santa Barbara (UCSB). She earned a PhD in inorganic chemistry at UCSB, following with postdoctoral research in electrical engineering at UCSB. She now holds the title of James Mason Crafts Professor of Biological Engineering and Materials Engineering at the Massachusetts Institute of Technology (MIT). She is faculty in the Department of Biological Engineering, Materials Science and Engineering and the Koch Institute of Integrative Cancer Research. She teaches undergraduate subjects in material sciences and engineering and biological engineering. In 2002, she founded the company Cambrios Technologies, Inc., and in 2007 she founded Siluria Technologies, Inc. Some recent awards include the Lemelson-MIT Prize for her inventions, the Eni Prize for Renewable and Non-Conventional Energy, and in 2009 _Rolling Stone_ magazine listed her as one of the top 100 people changing the country. In 2007, _Time_ magazine named her a “Hero” for her research related to climate change. Additionally, she has received many other prestigious awards and is a MacArthur Fellow, a Packard Fellow, an Alfred P. Sloan Fellow, a Bose Fellow, a member of American Academy of Arts and Sciences, a member of the National Academy of Inventors (NAI), a member of the National Academy of Engineering (NAE), and a member of the NAS.
+
+STACEY F. BENT is the Jagdeep and Roshni Singh Professor at Stanford University, where she is a professor of chemical engineering, professor of energy science and engineering, and professor, by courtesy, of chemistry, of materials science and engineering, and of electrical engineering. She currently serves as the vice provost for graduate education and postdoctoral affairs. Prior to Stanford, Dr. Bent was on the faculty of the Department of Chemistry at New York University. She obtained her BS in chemical engineering from UC Berkeley and her PhD in chemistry from Stanford, and she was a postdoctoral fellow at AT&T Bell Laboratories. Dr. Bent’s research interests are in the understanding of surface chemistry and materials synthesis and the application of this knowledge to a variety of problems in sustainable energy, semiconductor processing, and nanotechnology. She has published more than 300 papers and has presented more than 350 invited talks. Dr. Bent was elected to the NAE in 2020. She is also a fellow of ACS and the American Vacuum Society and the recipient of the 2018 ACS Award in Surface Chemistry, the 2020 Semiconductor Research Corporation Technical Excellence Award, the 2021 ALD Innovator Award, and the 2021 Braskem Award for Excellence in Materials Engineering and Science from the American Institute of Chemical Engineers.
+
+HAROLD G. CRAIGHEAD is a professor emeritus of applied and engineering physics and the Charles Lake Jr. Chaired Professor Emeritus of Engineering at Cornell University. He received his PhD in physics in 1980 after which he became
+
+**Suggested Citation:** "Appendix D: Committee Member Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+a member of technical staff at Bell Laboratories and a research manager at Bell-core where he formed the Quantum Structures Research Group. At Cornell, Dr. Craighead served as the director of the National Nanofabrication Facility, founding director of the Nanobiotechnology Center, principal investigator (PI) for the Center on the Microenvironment and Metastasis, and interim dean of engineering. He is a member of the NAE and the NAI. In 2000, Dr. Craighead co-founded the company Nanofluidics, Inc., which is now Pacific Biosciences of California, Inc., a company based on single molecule DNA sequencing technology. His research focused on investigating the fabrication and properties of nanoscale devices and developing new approaches for biomolecular analysis. Research projects include studies of single molecule biophysics, chemical sensors, biomolecular analysis, surface chemical patterning, and the physics of nanoelectromechanical systems. Dr. Craighead was a member of the authoring committee for the National Academies’ 2020 report _Quadrennial Review of the National Nanotechnology Initiative: Nanoscience, Applications, and Commercialization_.
+
+TRAVIS EARLES is the managing partner of Sonder.Works. He previously led tech strategy and innovation for Lockheed Martin (LM) Space, developing technology roadmaps, innovation initiatives, and strategic partnerships critical for securing discriminating capabilities for enterprise platforms and system elements. From 2019 to 2021, he led far-reaching innovation for LM by cultivating a wholistic ecosystem to drive an agile process of ideation to implementation. From 2016 to 2019, Mr. Earles established the digital transformation structure and operations strategy for LM Rotary and Mission Systems, ensuring talent and emerging technologies are aligned to support production, sustainment, and base growth and driving digital transformation toward the future enterprise. Prior to 2016, he led advanced materials and nanotechnology innovation across LM. Before joining Lockheed in 2011, Mr. Earles led nanotechnology and emerging technology policy in the White House Office of Science and Technology Policy, overseeing interagency coordination of the $1.8 billion U.S. National Nanotechnology Initiative. At the National Cancer Institute until 2007, Mr. Earles played a central role launching the $144 million Alliance for Nanotechnology in Cancer, which has generated more than 70 platforms now in clinical use or trials for diagnostic and/or therapeutic applications. His formal training is in biomedical engineering, and he also holds a master’s degree in technology management and an MBA from the University of Maryland.
+
+OMOLOLA (LOLA) ENIOLA-ADEFESO is the dean of the College of Engineering at the University of Illinois Chicago. She was previously the Vennema Endowed Professor of Chemical Engineering and the University Diversity and Social Transformation Professor of Chemical Engineering and Biomedical Engineering at the University of Michigan, Ann Arbor. She received a doctoral degree (2004) in
+
+**Suggested Citation:** "Appendix D: Committee Member Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+chemical and biomolecular engineering at the University of Pennsylvania. She was a postdoctoral associate in pediatrics/leukocyte biology at Baylor College of Medicine. Dr. Eniola-Adefeso joined the faculty of chemical engineering at the University of Michigan in 2006, where she runs the Cell Adhesion and Drug Delivery Laboratory. Since she arrived at University of Michigan, she has received several honors and awards, including the NSF CAREER Award, the American Heart Association (AHA) Innovator Award, and most recently, the Biomedical Engineering Society (BMES) MIDCAREER Award. She is a fellow of AIMBE, the Biomedical Engineering Society, AHA, the Controlled Release Society, a senior member of NAI, and serves as the deputy editor for _Science Advances_. Additionally, she was recently elected to a 2-year term as the president of AIMBE. Her research is currently funded by multiple grants from the National Institutes of Health’s National Heart, Lung, and Blood Institute, AHA, and NSF.
+
+Y. SHIRLEY MENG is a professor at the Pritzker School of Molecular Engineering at the University of Chicago. She serves as the chief scientist of the Argonne Collaborative Center for Energy Storage Science at Argonne National Laboratory. Dr. Meng is the PI of the Laboratory for Energy Storage and Conversion, which was established at UC San Diego (UCSD) since 2009. She held the Zable Chair Professor in Energy Technologies at UCSD from 2017 to 2022. Dr. Meng received several prestigious awards, including the C3E technology and innovation award (2022), the Faraday Medal of RSC (2020), and many others. She is an elected fellow of the Electrochemical Society, a fellow of Materials Research Society (MRS), and a fellow of AAAS. She is the author and co-author of more than 300 peer-reviewed journal articles, two book chapters, and eight issued patents. She is editor-in-chief for the MRS journal _MRS Energy & Sustainability_. Dr. Meng received her PhD in advance materials for micro and nano systems from the Singapore-MIT Alliance in 2005. She received her bachelor’s degree in materials science with first class honor from Nanyang Technological University of Singapore in 2000. Dr. Meng was a member of the Basic Energy Science Advisory Committee (2020–2023) for the Department of Energy (DOE) Office of Science, and she actively participated in the 2021 report _Can the U.S. Compete in Basic Energy Sciences? Critical Research Frontiers and Strategies_.
+
+CHRISTINE PAYNE is the Yoh Family Professor of Mechanical Engineering and Materials Science at Duke University. She began her independent career in the School of Chemistry and Biochemistry at the Georgia Institute of Technology in 2007 and moved to Duke University in 2018. Her research focuses on understanding how cells interact with nanomaterials. This includes fundamental questions of nanoparticle transport within cells, as well as applied research to understand the pulmonary response to the inhalation of nanoparticles in a manufacturing
+
+**Suggested Citation:** "Appendix D: Committee Member Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+setting. Her team uses an interdisciplinary approach that includes elements of materials science, chemistry, biophysics, and laboratory automation. Dr. Payne has received many honors, including an NIH Director’s New Innovator Award in 2009 and a Defense Advanced Research Applications Young Faculty Award in 2011. She is a fellow of RSC and a member of RSC, ACS, BPS, MRS, and the American Society of Mechanical Engineers. She served as a Jefferson Science Fellow with the Department of State in 2024. She earned a BS in chemistry from the University of Chicago (1998) and a PhD in chemistry from UC Berkeley (2003). Dr. Payne spent 2003–2006 as an NIH National Research Service Award postdoctoral fellow at Harvard University.
+
+RICARDO RUIZ is a staff scientist at The Molecular Foundry at Lawrence Berkeley National Laboratory. He is also the director of the Center for High Precision Patterning Science (CHiPPS), a Department of Energy Basic Energy Sciences–funded Energy Frontier Research Center dedicated to advance patterning science in the extreme ultraviolet lithography era for semiconductor manufacturing. Dr. Ruiz is an expert on nanofabrication, patterning, and self-assembly with 15 years of experience in the magnetic storage and semiconductor memory industry. From 2006 to 2019 he held various appointments at Hitachi GST/HGST/Western Digital where he contributed to magnetic bit patterned media and non-volatile memories, and he managed a research group dedicated to block copolymer and nanoparticle lithography. Dr. Ruiz is a fellow of the American Physical Society. He received his PhD in physics from Vanderbilt University in 2003 and he was a postdoctoral fellow at Cornell University and at IBM T.J. Watson. Dr. Ruiz previously served on the National Academies’ Committee for the Quadrennial Review of the National Nanotechnology Initiative in 2019.
+
+MICHAEL G. SPENCER is currently a professor and the chair in the Department of Electrical and Computer Engineering at Morgan State University. He is also a professor emeritus in the Department of Electrical and Computer Engineering at Cornell University. At Cornell, Professor Spencer served as the associate dean for the College of Engineering. Professor Spencer has expertise in electronic materials principally wide bandgap materials silicon carbide, gallium nitride, and cubic boron nitride and two-dimensional materials such as graphene. Prior to teaching at Cornell, Professor Spencer taught at Howard University where he co-founded and ran the Material Science Center of Excellence, which was a member of the first National Nanofabrication Network. Professor Spencer received his BS, MEng, and PhD from Cornell University.
+
+JESSE B. TICE is currently a consulting research scientist at Northrop Grumman Corporation. He has expertise in nanomaterials and nanotechnology research and
+
+**Suggested Citation:** "Appendix D: Committee Member Biographical Information." National Academies of Sciences, Engineering, and Medicine. 2025. _Quadrennial Review of the National Nanotechnology Initiative (2025): Securing U.S. Global Leadership Through Renewed and Expanded Infrastructure_. Washington, DC: The National Academies Press. doi: 10.17226/29063.
+
+development as it relates to aerospace systems. While at Northrop Grumman, he oversees a nanomaterials research laboratory and nanotechnology research portfolio that includes both basic research and applied technology development. Dr. Tice bridges the gap between academic research, small business innovation, and industrial application to both air and space platforms. He has participated in the NAE Frontiers of Engineering symposium. He has been recognized with many innovation accolades at Northrop Grumman during his tenure including invention recognitions and President’s awards. Dr. Tice received his PhD from the Arizona State University School of Molecular Sciences in 2008. He has more than 65 publications and patents with more than 1,300 citations, including review articles related to two-dimensional materials and nanomaterials with applications in aerospace.
