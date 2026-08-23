@@ -22,6 +22,10 @@ def _queue_count(path: Path) -> int:
     return len(read_csv(path)) if path.exists() else 0
 
 
+def _has_local_asset(row: dict[str, str]) -> bool:
+    return bool(row.get("本地原始资产路径", "").strip() or row.get("本地路径", "").strip())
+
+
 def _china_counts(research_root: Path) -> tuple[int, int, int]:
     result_path = research_root / "71_覆盖缺口结果.md"
     if not result_path.exists():
@@ -38,7 +42,7 @@ def build_progress(research_root: Path) -> dict[str, object]:
         institution_id = row.get("机构ID", "")
         institution = row.get("机构英文名") or INSTITUTION_LABELS.get(institution_id) or institution_id or "未标明机构"
         institution_stats[institution]["catalog"] += 1
-        if row.get("本地原始资产路径", "").strip():
+        if _has_local_asset(row):
             institution_stats[institution]["local_assets"] += 1
 
     institutions = [
@@ -51,7 +55,7 @@ def build_progress(research_root: Path) -> dict[str, object]:
         for institution, values in institution_stats.items()
     ]
     institutions.sort(key=lambda row: (-row["catalog"], row["institution"]))
-    local_assets = sum(1 for row in catalog if row.get("本地原始资产路径", "").strip())
+    local_assets = sum(1 for row in catalog if _has_local_asset(row))
     china_catalog, china_assets, china_texts = _china_counts(research_root)
     return {
         "catalog_total": len(catalog),
@@ -61,7 +65,7 @@ def build_progress(research_root: Path) -> dict[str, object]:
         "partial_assets": sum(
             1
             for row in catalog
-            if row.get("本地原始资产路径", "").strip()
+            if _has_local_asset(row)
             and row.get("原始资产状态", "") in {"官方发布页摘要已保存", "官方仓储概要PDF代理文本已保存"}
         ),
         "fulltext_queue": _queue_count(research_root / "70_定点补源优先队列.csv"),

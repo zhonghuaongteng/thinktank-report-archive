@@ -378,6 +378,7 @@ def main() -> None:
         "206_NASEM科学技术创新政策近十年轻量总目录.csv", "207_NASEM科学技术创新政策近十年轻量总目录结果.md",
         "208_NASEM科学技术创新机制与中国比较跨期精选全文台账.csv", "209_NASEM科学技术创新机制与中国比较跨期精选全文结果.md",
         "210_本地资料库实时进度看板.md", "211_机构采集进度.csv",
+        "212_Fraunhofer_ISI科技创新机制跨期增补全文台账.csv", "213_Fraunhofer_ISI科技创新机制跨期增补全文结果.md",
         "从开放创新到受控互赖_国际科技智库十年战略转向专报_2026-08-21.docx",
     ]
     missing = [name for name in required if not (root / name).exists()]
@@ -1090,7 +1091,7 @@ def main() -> None:
     assert sum(int(r["网页归档字节数"]) for r in nasem_selected) == 7243099
     assert sum(int(r["清洗文本字符数"]) for r in nasem_selected) == 6132897
     progress_text = (root / "210_本地资料库实时进度看板.md").read_text(encoding="utf-8")
-    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2014条", "仅目录与官方入口：8385条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：712条"):
+    for marker in ("轻量总目录：10399条", "本地原始资产或官方网页转换资产：2058条", "仅目录与官方入口：8341条", "真实待补队列：0", "明确获取失败：0条", "仅摘要或概要资产：27条", "中国关联目录材料：712条"):
         assert marker in progress_text
     institution_progress = rows(root / "211_机构采集进度.csv")
     assert len(institution_progress) == 46
@@ -1229,6 +1230,7 @@ def main() -> None:
     itif_series_light = rows(root / "79_ITIF中国先进产业创新系列轻量目录.csv")
     itif_node_light = rows(root / "82_ITIF科学技术创新节点轻量目录.csv")
     fraunhofer_light = rows(root / "84_Fraunhofer_ISI创新系统政策分析轻量目录.csv")
+    fraunhofer_selected_fulltexts = rows(root / "212_Fraunhofer_ISI科技创新机制跨期增补全文台账.csv")
     stanford_hai_light = rows(root / "86_Stanford_HAI科学技术创新轻量目录.csv")
     ostp_light = rows(root / "88_美国OSTP科学技术创新政策轻量目录.csv")
     belfer_merics_light = rows(root / "90_Belfer_MERICS科学技术创新缺口轻量目录.csv")
@@ -1246,7 +1248,19 @@ def main() -> None:
     assert sum("正式" in r["资料层级"] for r in belfer_merics_light) == 2
     assert sum("机构评论" in r["资料层级"] for r in belfer_merics_light) == 1
     assert not any(re.search(r"national security|cybersecurity|nuclear defense|security and integrity|electromagnetic pulses", r["报告名称"], re.I) for r in ostp_light)
-    assert all(r["全文策略"].startswith("不自动下载") for ledger in (cset_light, itif_series_light, itif_node_light, fraunhofer_light, ostp_light, belfer_merics_light) for r in ledger)
+    assert all(r["全文策略"].startswith("不自动下载") for ledger in (cset_light, itif_series_light, itif_node_light, ostp_light, belfer_merics_light) for r in ledger)
+    fraunhofer_selected = {
+        "C-FRAUNHOFER-ISI-DP-51",
+        "C-FRAUNHOFER-ISI-DP-53",
+        "C-FRAUNHOFER-ISI-DP-65",
+        "C-FRAUNHOFER-ISI-DP-83",
+    }
+    assert {r["统一目录报告ID"] for r in fraunhofer_light if r["全文策略"] == "已按科技创新机制跨期增量定点下载"} == fraunhofer_selected
+    assert all(r["全文策略"].startswith("不自动下载") for r in fraunhofer_light if r["统一目录报告ID"] not in fraunhofer_selected)
+    assert {r["报告ID"] for r in fraunhofer_selected_fulltexts} == fraunhofer_selected
+    assert sum(int(r["页数"]) for r in fraunhofer_selected_fulltexts) == 130
+    assert sum(int(r["字节数"]) for r in fraunhofer_selected_fulltexts) == 2482710
+    assert sum(int(r["清洗文本字符数"]) for r in fraunhofer_selected_fulltexts) == 306567
     assert sum(r["全文策略"] == "已按真实科技创新机制缺口定点下载" for r in oecd_light) == 2
     assert sum(r["全文策略"].startswith("不自动下载") for r in oecd_light) == 443
     assert sum(r["全文策略"].startswith("已按连续序列缺口定点下载") for r in stanford_hai_light) == 3
@@ -1377,6 +1391,7 @@ def main() -> None:
             (efi_selected, ("本地原始PDF",)),
             (rieti_selected, ("本地原始PDF",)),
             (acatech_selected, ("本地原始PDF",)),
+            (fraunhofer_selected_fulltexts, ("本地原始PDF",)),
             (stepi_assets, ("本地原始资产",)),
             (stepi_series, ("本地原始资产",)),
             (kistep_assets, ("本地原始资产",)),
@@ -1607,6 +1622,8 @@ def main() -> None:
         ("209_NASEM科学技术创新机制与中国比较跨期精选全文结果.md", "国际科技智库观点演变_NASEM科学技术创新机制与中国比较跨期精选全文结果.md"),
         ("210_本地资料库实时进度看板.md", "国际科技智库观点演变_本地资料库实时进度看板.md"),
         ("211_机构采集进度.csv", "国际科技智库观点演变_机构采集进度.csv"),
+        ("212_Fraunhofer_ISI科技创新机制跨期增补全文台账.csv", "国际科技智库观点演变_Fraunhofer_ISI科技创新机制跨期增补全文台账.csv"),
+        ("213_Fraunhofer_ISI科技创新机制跨期增补全文结果.md", "国际科技智库观点演变_Fraunhofer_ISI科技创新机制跨期增补全文结果.md"),
     ):
         assert sha(root / source_name) == sha(kb / "06_数据资产" / kb_name)
     assert len(rows(kb / "09_覆盖核验" / "项目覆盖矩阵.csv")) >= 1

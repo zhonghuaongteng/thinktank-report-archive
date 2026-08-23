@@ -19,11 +19,11 @@ class ViewpointCollectionProgressTests(unittest.TestCase):
             root = Path(temp)
             write_csv(
                 root / "05_报告总目录.csv",
-                ["报告ID", "机构英文名", "本地原始资产路径", "原始资产状态"],
+                ["报告ID", "机构英文名", "本地路径", "本地原始资产路径", "原始资产状态"],
                 [
-                    {"报告ID": "A", "机构英文名": "Alpha", "本地原始资产路径": "a.pdf", "原始资产状态": "官方PDF已保存"},
-                    {"报告ID": "B", "机构英文名": "Alpha", "本地原始资产路径": "", "原始资产状态": "精选已完成；其余保留轻量目录"},
-                    {"报告ID": "C", "机构英文名": "Beta", "本地原始资产路径": "", "原始资产状态": "获取失败"},
+                    {"报告ID": "A", "机构英文名": "Alpha", "本地路径": "", "本地原始资产路径": "a.pdf", "原始资产状态": "官方PDF已保存"},
+                    {"报告ID": "B", "机构英文名": "Alpha", "本地路径": "legacy.pdf", "本地原始资产路径": "", "原始资产状态": "官方PDF全文已保存"},
+                    {"报告ID": "C", "机构英文名": "Beta", "本地路径": "", "本地原始资产路径": "", "原始资产状态": "获取失败"},
                 ],
             )
             write_csv(root / "70_定点补源优先队列.csv", ["报告ID"], [])
@@ -32,13 +32,13 @@ class ViewpointCollectionProgressTests(unittest.TestCase):
             progress = build_progress(root)
 
             self.assertEqual(progress["catalog_total"], 3)
-            self.assertEqual(progress["local_assets"], 1)
-            self.assertEqual(progress["light_only"], 2)
+            self.assertEqual(progress["local_assets"], 2)
+            self.assertEqual(progress["light_only"], 1)
             self.assertEqual(progress["explicit_failures"], 1)
             self.assertEqual(progress["partial_assets"], 0)
             self.assertEqual(progress["fulltext_queue"], 0)
             self.assertEqual(progress["catalog_queue"], 0)
-            self.assertEqual(progress["institutions"][0], {"institution": "Alpha", "catalog": 2, "local_assets": 1, "light_only": 1})
+            self.assertEqual(progress["institutions"][0], {"institution": "Alpha", "catalog": 2, "local_assets": 2, "light_only": 0})
 
     def test_markdown_states_that_asset_density_is_not_completion_rate(self):
         progress = {
