@@ -1,0 +1,50 @@
+---
+institution: RAND
+institution_slug: rand
+institution_type: think_tank
+source_group: core_technology
+content_type: rand_report
+source_completeness: full_text
+english_title: "Breaking Glass, Missing Hands: Addressing Workforce Constraints That Threaten the Resilience of the Space Industrial Base"
+chinese_title: "太空工业劳动力短缺正在削弱战时重建能力"
+published_date: 2026-08-31
+source_url: https://www.rand.org/pubs/research_reports/RRA3665-2.html
+pdf_url: https://www.rand.org/content/dam/rand/pubs/research_reports/RRA3600/RRA3665-2/RAND_RRA3665-2.pdf
+pdf_status: 200 application/pdf
+external_source_url:
+authors: ["Gerber, Alexandra", "Riposo, Jessie", "Zaber, Melanie A.", "Triezenberg, Bonnie L."]
+keywords: ["Satellites", "Space Science and Technology", "Military Satellites", "United States Space Force"]
+subjects: ["Research", "Satellites", "Space Science and Technology", "Military Satellites", "United States Space Force"]
+topic_tags: ["先进制造", "科技创新"]
+priority: P0
+score: 9
+translation_level: full_or_long
+copyright_boundary: private_fulltext_archive
+fetch_status: detail_ok
+---
+
+# 太空工业劳动力短缺正在削弱战时重建能力
+
+## 中文摘要与研判
+
+### 核心观点
+
+报告把美国在近对等冲突后12至24个月内重建太空能力的可行性，直接联系到国防太空工业基础的劳动力储备。三类关键缺口分别是STEM工程师、技术员与装配工，以及光电和抗辐射等需要十五年以上培养的高学历专才。劳工统计与企业访谈显示，太空产业只吸纳约3%的美国工程师，关键技术员年度需求接近合格供给的三倍，安全许可平均半年以上又压缩了可用人才池。报告强调，低速或间歇生产会使技能流失、熟练工转行和组织知识消散，战争后再临时招募难以恢复产能。现有联邦项目提供了奖学金、产业技能和人才管道样板，但协调权威与规模不足，尚不能支撑突发扩产。作者也反驳单纯增加人力即可解决问题的假设，认为机器人、自动化和AI应成为韧性杠杆，但只能补充、不能替代长期人才管道。
+
+### 建议
+
+报告建议由美国太空军建立统一领导和“培养—训练—认证—留用”框架，扩大各层级奖学金、实习、职业教育和高级研究生项目，并发展模块化、可堆叠的技能认证。政府合同应加入扩产规划要求，支持社区学院与企业建设洁净室、半导体加工等训练合作，并以成本分担激励自动化产线提前部署。
+
+## 元数据
+
+- 原始标题：Breaking Glass, Missing Hands: Addressing Workforce Constraints That Threaten the Resilience of the Space Industrial Base
+- 发布日期：2026-08-31
+- 来源链接：https://www.rand.org/pubs/research_reports/RRA3665-2.html
+- PDF链接：https://www.rand.org/content/dam/rand/pubs/research_reports/RRA3600/RRA3665-2/RAND_RRA3665-2.pdf
+- 关键词：Satellites, Space Science and Technology, Military Satellites, United States Space Force
+- 主题标签：先进制造, 科技创新
+- 优先级：P0
+
+## English Source Material
+
+U.S. space defense industrial base workforce shortfalls threaten the ability to reconstitute space capabilities within 12–24 months of a conflict. Critical gaps span STEM engineers, skilled technicians, and electro-optical specialists. Industry needs U.S. Space Force (USSF) coordination to align and scale talent pipeline investments. USSF must invest now in STEM pipelines, technician training, fellowships, and automation to build surge capacity. Breaking Glass, Missing Hands Addressing Workforce Constraints That Threaten the Resilience of the Space Industrial Base Alexandra Gerber , Jessie Riposo , Melanie A. Zaber , Bonnie L. Triezenberg Research Published Aug 31, 2026 Download PDF Share on LinkedIn Share on X Share on Facebook Email The United States’ ability to reconstitute military space capabilities within 12 to 24 months of a near-peer conflict depends critically on the readiness of the space defense industrial base (DIB) workforce. This report presents three categories of critical shortfall: engineers with degrees in science, technology, engineering, and math (STEM); skilled touch labor (technicians and assemblers); and advanced-degree specialists in electro-optical and radiation-hardening fields—workers whose skills can take 15 or more years to develop and who cannot be rapidly replaced during a crisis. Analyses of Bureau of Labor Statistics data and interviews with industry representatives reveal that the space DIB employs only 3 percent of U.S. engineers, faces a technician credentialing gap in which annual industry demand exceeds credentialed supply by nearly three to one, and struggles to recruit cleared STEM talent because clearance delays average six months or more and because foreign nationals receive 70 percent of electrical and computer engineering doctorates. Although existing government initiatives—including the National Imperative for Industrial Skills, the Defense Civilian Training Corps, and the Navy’s Talent Pipeline Program—provide useful models, they lack the coordination and scale needed for a surge. The authors of this report recommend that U.S. Space Force (USSF) invest in scholarships, internships, vocational pipelines, and advanced fellowships within a cultivate–train–qualify–retain framework. Industry must continue investing in training and apprenticeships, but policy coherence requires government leadership. Finally, the authors suggest that stakeholders consider automation as a resilience lever, which can be addressed by embedding surge planning requirements in contracts. Key Takeaways The U.S. space industrial base faces severe workforce shortfalls The U.S. space industry employs approximately 3 percent of all U.S. engineers, and it faces a large credentialing gap for critical skilled technicians. Clearance delays and the prevalence of foreign nationals among workers holding advanced degrees further constrain the classified workforce. Space reconstitution relies on workforce availability and readiness Without a base of continuous production, specialized skills atrophy, and experienced workers migrate to other industries; the institutional knowledge required to rapidly scale manufacturing is then lost, leaving the industrial base unable to respond when demand surges. USSF should invest in pipelines to support reconstitution within a 12-to-24-month window. Workforce strategy must address near-term urgency and long-term development Ongoing efforts should be embedded within a cultivate–train–qualify–retain framework that links early STEM outreach, vocational training, and clear pathways to space careers. Industry should lead, but USSF must provide support The Office of the Assistant Secretary of the Air Force for Space Acquisition and Integration should provide leadership and clear policy to integrate these efforts with U.S. Department of War (DOW) programs, thereby ensuring that workforce development is treated as a matter of defense readiness and not simply as a human resources issue. Workforce debates undervalue automation as a resilience lever Space industry stakeholders prioritize growing the high-touch manufacturing labor supply but should also look to automation, robotics, and artificial intelligence. Current economies of scale discourage that investment, but USSF can incentivize firms to plan ahead by embedding surge clauses in contracts. Recommendations Develop centralized USSF leadership and clear policy authority to integrate space DIB workforce development with DOW priorities and pro Fund additional internships and scholarships for STEM students at vocational, bachelor's, and advanced degree levels. Conduct outreach and recruitment at kindergarten through grade 12, vocational, and university levels to promote space industry careers. Allow Reserve Officers’ Training Corps graduates and specialized program scholars to fulfill service obligations by working in qualifying space DIB firms. Fund National Defense Science and Engineering Graduate fellowships; create a USSF-focused graduate fellowship program. Advocate for the expansion of the National Imperative for Industrial Skills program. Evaluate the Navy’s Talent Pipeline Program as a model; develop modular and stackable training programs for key space trades. Expand employer–community college partnerships in cleanroom technology and semiconductor processing. Establish a new DOW Manufacturing Innovation Institute focused on space manufacturing. Incorporate surge planning requirements into future contracts to incentivize firms to plan for scaling before a crisis. Explore automation incentives (e.g., cost-sharing for robotic assembly and test cells) as a complement to—not a replacement for—workforce pipelines. Commission a study on upskilling workers from technology-intensive industries for surge scenarios. Subscribe to the Policy Currents newsletter Topics Military Satellites Satellites Space Science and Technology United States Space Force Document Details Copyright: RAND Corporation Availability: Web-Only Year: 2026 Pages: 23 DOI: https://doi.org/10.7249/RRA3665-2 Document Number: RR-A3665-2 Citation RAND Style Manual Gerber, Alexandra, Jessie Riposo, Melanie A. Zaber, and Bonnie L. Triezenberg, Breaking Glass, Missing Hands: Addressing Workforce Constraints That Threaten the Resilience of the Space Industrial Base, RAND Corporation, RR-A3665-2, 2026. As of September 1, 2026: https://www.rand.org/pubs/research_reports/RRA3665-2.html Copy Text Chicago Manual of Style Gerber, Alexandra, Jessie Riposo, Melanie A. Zaber, and Bonnie L. Triezenberg, Breaking Glass, Missing Hands: Addressing Workforce Constraints That Threaten the Resilience of the Space Industrial Base. Santa Monica, CA: RAND Corporation, 2026. https://www.rand.org/pubs/research_reports/RRA3665-2.html. Copy Text BibTeX RIS Research conducted by RAND Project AIR FORCE This research was sponsored by the Vice Chief of Space Operations and conducted by RAND Project AIR FORCE . This publication is part of the RAND research report series. Research reports present research findings and objective analysis that address the challenges facing the public and private sectors. All RAND research reports undergo rigorous peer review to ensure high standards for research quality and objectivity. This document and trademark(s) contained herein are protected by law. This representation of RAND intellectual property is provided for noncommercial use only. Unauthorized posting of this publication online is prohibited; linking directly to this product page is encouraged. Permission is required from RAND to reproduce, or reuse in another form, any of its research documents for commercial purposes. For information on reprint and reuse permissions, please visit www.rand.org/pubs/permissions . RAND is a nonprofit institution that helps improve policy and decisionmaking through research and analysis. RAND's publications do not necessarily reflect the opinions of its research clients and sponsors.
