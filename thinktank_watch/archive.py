@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 
 from .models import ArticleCandidate
+from .highlights import validated_highlights_markdown
 from .summary import format_structured_chinese_summary
 
 
@@ -50,9 +51,12 @@ def build_markdown(candidate: ArticleCandidate) -> str:
         candidate.summary = candidate.summary[:800]
         candidate.source_completeness = "summary_only"
         candidate.translation_level = "summary"
+    highlights_markdown = validated_highlights_markdown(candidate)
     title = candidate.chinese_title or candidate.title
     english_title = candidate.title.replace('"', '\\"')
     chinese_title = title.replace('"', '\\"')
+    highlights_title = candidate.highlights_title.replace('"', '\\"').replace("\n", " ")
+    permission_note = candidate.highlights_permission_note.replace('"', '\\"').replace("\n", " ")
     effective_keywords = candidate.keywords or candidate.subjects or candidate.topic_tags
     frontmatter = [
         "---",
@@ -78,6 +82,13 @@ def build_markdown(candidate: ArticleCandidate) -> str:
         f"translation_level: {candidate.translation_level}",
         f"copyright_boundary: {candidate.copyright_boundary}",
         f"fetch_status: {candidate.fetch_status}",
+        *([
+            f'highlights_title: "{highlights_title}"',
+            f"highlights_start_new_page: {str(candidate.highlights_start_new_page).lower()}",
+            f"highlights_usage: {candidate.highlights_usage}",
+            f"highlights_permission_verified: {str(candidate.highlights_permission_verified).lower()}",
+            f'highlights_permission_note: "{permission_note}"',
+        ] if highlights_markdown else []),
         "---",
         "",
     ]
@@ -97,6 +108,7 @@ def build_markdown(candidate: ArticleCandidate) -> str:
         "",
         chinese_summary,
         "",
+        *(["## 精华选编", "", highlights_markdown, ""] if highlights_markdown else []),
         "## 元数据",
         "",
         f"- 原始标题：{candidate.title}",

@@ -56,6 +56,12 @@ class ArticleCandidate:
     copyright_boundary: str = ""
     fetch_status: str = "candidate"
     detail_text: str = ""
+    highlights_markdown: str = ""
+    highlights_title: str = ""
+    highlights_start_new_page: bool = False
+    highlights_usage: str = "editorial"
+    highlights_permission_verified: bool = False
+    highlights_permission_note: str = ""
 
 
 @dataclass(slots=True)

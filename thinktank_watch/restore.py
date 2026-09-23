@@ -88,7 +88,22 @@ def parse_archive_markdown(path: str | Path) -> ArticleCandidate:
         translation_level=data.get("translation_level", "index_only"),
         copyright_boundary=data.get("copyright_boundary", ""),
         fetch_status=data.get("fetch_status", "restored"),
+        highlights_markdown=_highlights_section(text),
+        highlights_title=_scalar(data.get("highlights_title", "")),
+        highlights_start_new_page=data.get("highlights_start_new_page", "false").lower() == "true",
+        highlights_usage=data.get("highlights_usage", "editorial"),
+        highlights_permission_verified=data.get("highlights_permission_verified", "false").lower() == "true",
+        highlights_permission_note=_scalar(data.get("highlights_permission_note", "")),
     )
+
+
+def _highlights_section(text: str) -> str:
+    match = re.search(r"(?m)^## 精华选编\s*$", text)
+    if not match:
+        return ""
+    remainder = text[match.end():]
+    boundary = re.search(r"(?m)^## (?:元数据|English Source Material|中文摘要与研判)\s*$", remainder)
+    return (remainder[:boundary.start()] if boundary else remainder).strip()
 
 
 def rebuild_state_from_archive(archive_root: str | Path, state_path: str | Path) -> int:

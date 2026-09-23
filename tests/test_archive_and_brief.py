@@ -1229,7 +1229,8 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertIn(text, html)
         for text in (judgment, argument):
             self.assertIn(text, markdown)
-        self.assertIn('<div class="evidence"><span class="label">论证与依据</span>\n<p>', html)
+        self.assertIn('<div class="evidence">\n<p>', html)
+        self.assertNotIn("论证与依据", html)
         self.assertNotIn("P.05-06", markdown)
 
     def test_weekly_audit_flags_thin_core_summaries(self):

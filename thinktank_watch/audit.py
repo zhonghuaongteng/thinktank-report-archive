@@ -6,6 +6,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 from .models import ArticleCandidate, Institution
+from .interests import ResearchInterest, match_research_interests
 
 
 AUDIT_FIELDS = [
@@ -100,21 +101,36 @@ def write_audit_report(
     return path
 
 
-def write_editorial_review_queue(path: str | Path, candidates: list[ArticleCandidate], run_date: str, lookback_days: int = 7) -> Path:
-    """Keep broad-source research visible before keyword/profile filtering; never archive it."""
+def write_editorial_review_queue(
+    path: str | Path, candidates: list[ArticleCandidate], run_date: str,
+    lookback_days: int = 7, interests: list[ResearchInterest] | None = None,
+) -> Path:
+    """Keep broad sources and research-interest leads visible before filters; never archive."""
     current = date.fromisoformat(run_date)
-    fields = ["机构slug", "标题", "URL", "发布日期", "原始优先级", "原始得分", "详情状态", "公开摘要", "复核状态", "采纳理由及原文定位"]
+    fields = ["机构slug", "标题", "URL", "发布日期", "原始优先级", "原始得分", "详情状态", "公开摘要",
+              "发现线索", "研究关注层级", "研究关注主题", "命中检索词", "复核状态", "采纳理由及原文定位"]
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
         for item in candidates:
-            if item.source_group not in {"innovation_economy", "enterprise_research"}:
+            matches = match_research_interests(item, interests or [])
+            broad_source = item.source_group in {"innovation_economy", "enterprise_research"}
+            if not broad_source and not matches:
                 continue
-            if item.published_date and not _within_window(item.published_date, current, lookback_days):
+            try:
+                date.fromisoformat((item.published_date or "")[:10])
+                precise_date = True
+            except ValueError:
+                precise_date = False
+            if precise_date and not _within_window(item.published_date, current, lookback_days):
                 continue
             writer.writerow(dict(zip(fields, [item.institution_slug, item.title, item.url, item.published_date,
                 item.priority, item.score, item.fetch_status, item.summary[:800],
-                "待原文复核" if item.published_date else "待核首次发布日期", ""])))
+                "；".join((["经济与企业来源"] if broad_source else []) + (["研究关注词待复核"] if matches else [])),
+                "；".join(dict.fromkeys(interest.level for interest, _ in matches)),
+                "；".join(interest.name for interest, _ in matches),
+                "；".join(dict.fromkeys(alias for _, hits in matches for alias in hits)),
+                "待原文复核" if precise_date else "待核首次发布日期", ""])))
     return path

@@ -9,6 +9,7 @@ from pathlib import Path
 import httpx
 
 from .audit import write_audit_report, write_editorial_review_queue
+from .interests import load_research_interests
 from .archive import write_article
 from .brief import (
     inspect_weekly_comic_report,
@@ -453,6 +454,7 @@ def audit(args: argparse.Namespace) -> int:
     review_path = write_editorial_review_queue(
         output.with_name(output.stem + "_editorial_review.csv"), raw_scored, run_date,
         lookback_days=getattr(args, "lookback_days", DEFAULT_WEEKLY_LOOKBACK_DAYS),
+        interests=load_research_interests(DEFAULT_CONFIG / "research_interests.yaml"),
     )
     print(f"editorial_review={review_path} raw_candidates={len(raw_scored)} profile_candidates={len(scored)}")
     print(f"audit_date={run_date} institutions={len(selected)} candidates={len(scored)} report={path}")
@@ -562,8 +564,9 @@ def check_weekly_comics(args: argparse.Namespace) -> int:
     expected = int(stats["priority_count"])
     for key in ["prompt_count", "comic_count", "md_image_refs", "html_image_nodes", "pdf_image_count"]:
         value = int(stats[key])
-        if value < expected:
-            failures.append(f"{key}={value} < priority_count={expected}")
+        minimum = expected + int(stats.get("selected_chart_count", 0)) if key == "pdf_image_count" else expected
+        if value < minimum:
+            failures.append(f"{key}={value} < expected={minimum}")
     if stats["missing_files"]:
         failures.append("missing_files=" + ";".join(str(item) for item in stats["missing_files"]))
     if stats["blocked_hits"]:

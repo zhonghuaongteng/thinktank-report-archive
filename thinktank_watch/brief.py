@@ -22,6 +22,7 @@ from .focus import (
 )
 from .kb import INDEX_RELATIVE
 from .restore import parse_archive_markdown
+from .highlights import highlights_headings, render_highlights_markdown, validated_highlights_markdown
 from .summary import core_argument_parts, render_summary_bullets, summary_sections
 
 
@@ -194,6 +195,8 @@ def weekly_chapter_name(candidate: ArticleCandidate) -> str:
     tags = set(candidate.topic_tags)
     if "中国与上海相关" in tags:
         return "涉华科技竞争与上海参考"
+    if "经济与企业创新" in tags:
+        return "经济与企业创新"
     if tags & {"半导体", "先进制造"}:
         return "产业链、制造与能源基础设施"
     if tags & {"AI治理", "数字经济", "科技治理", "国防AI"}:
@@ -418,6 +421,7 @@ def inspect_weekly_comic_report(
         "comic_count": comic_count,
         "md_image_refs": md_text.count("![主题 "),
         "html_image_nodes": html_text.count('<figure class="comic"'),
+        "selected_chart_count": html_text.count('<figure class="selected-chart"'),
         "pdf_image_count": pdf_images,
         "blocked_hits": blocked_hits,
         "missing_files": [
@@ -587,6 +591,10 @@ def weekly_argument_parts(candidate: ArticleCandidate) -> tuple[str, list[str]]:
     )
 
 
+def weekly_highlights_markdown(candidate: ArticleCandidate) -> str:
+    return validated_highlights_markdown(candidate)
+
+
 def weekly_judgment_sentence(candidate: ArticleCandidate, limit: int = 110) -> str:
     judgment, _ = weekly_argument_parts(candidate)
     return _short_text(judgment, limit)
@@ -716,6 +724,10 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate])
         comic_src = weekly_topic_comic_markdown_src(date, index)
         if comic_src:
             lines.extend(["", f"![主题 {index:02d} 漫画]({comic_src})", ""])
+        highlights = weekly_highlights_markdown(item)
+        if highlights:
+            lines.extend(["", "#### 摘要导读", "", sections["核心观点"], "", f"#### {item.highlights_title or '精华选编'}", "", highlights, ""])
+            continue
         lines.append(f"- **核心判断**：**{judgment}**")
         if evidence:
             lines.append("- **主要论据**：")
@@ -1177,6 +1189,10 @@ a { color: #14456e; text-decoration: none; }
 .topic-card .meta { color: #5f6b75; font-size: 8.5pt; margin-bottom: 3mm; }
 .topic-card figure.comic { margin: 0 0 3mm; text-align: center; break-inside: avoid; }
 .topic-card figure.comic img { display: block; width: auto; height: auto; max-width: 100%; max-height: 88mm; margin: 0 auto; object-fit: contain; border: .6pt solid #d7dee5; border-radius: 2pt; }
+.topic-primary.selection-on-next-page figure.comic img { max-height: 125mm; }
+.highlights-map { border-top: .5pt solid #c7d0d8; padding-top: 3mm; margin-top: 4mm; font-size: 9pt; }
+.highlights-map h4 { margin: 0 0 1.5mm; color: #14456e; }
+.highlights-map ol { margin: 0; padding-left: 6mm; }
 .judgment-box { background: #14456e; color: #ffffff; padding: 4mm 5mm; border-radius: 2pt; margin-bottom: 3mm; page-break-inside: avoid; }
 .judgment-box .label { font-size: 8pt; letter-spacing: .25em; color: #bcd2e4; display: block; margin-bottom: 1.2mm; }
 .judgment-box p { margin: 0; font-size: 10.5pt; font-weight: 700; line-height: 1.55; }
@@ -1187,6 +1203,22 @@ a { color: #14456e; text-decoration: none; }
 .evidence li { position: relative; padding: 1mm 0 1mm 5mm; font-size: 10pt; line-height: 1.65; orphans: 2; widows: 2; }
 .evidence li::before { content: ""; position: absolute; left: 1mm; top: 2.7mm; width: 2mm; height: 2mm; background: #c89b52; }
 .evidence p { margin: 2mm 0 4mm; font-size: 10pt; line-height: 1.75; orphans: 2; widows: 2; }
+.report-highlights { font-size: 10pt; line-height: 1.75; break-inside: auto; }
+.report-highlights h4, .report-highlights h5, .report-highlights h6 { color: #14456e; font-size: 11pt; margin: 4mm 0 2mm; break-after: avoid; }
+.report-highlights p, .report-highlights blockquote { margin: 2mm 0 4mm; orphans: 2; widows: 2; }
+.report-highlights ul, .report-highlights ol { padding-left: 6mm; break-inside: auto; }
+.report-highlights li { margin: 1.4mm 0; }
+.report-highlights blockquote { border-left: 2pt solid #c89b52; padding-left: 4mm; color: #40505c; }
+.report-highlights table { width: 100%; border-collapse: collapse; font-size: 9pt; margin: 3mm 0 5mm; table-layout: auto; }
+.report-highlights th, .report-highlights td { border: .5pt solid #c7d0d8; padding: 2mm; overflow-wrap: anywhere; vertical-align: top; }
+.report-highlights th { background: #eef3f7; text-align: left; }
+.report-highlights thead { display: table-header-group; }
+.report-highlights tr { break-inside: avoid; }
+.report-highlights pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.selected-chart { margin: 4mm 0; break-inside: avoid; }
+.selected-chart img { display: block; max-width: 100%; max-height: 180mm; width: auto; height: auto; margin: 0 auto; object-fit: contain; }
+.selected-chart figcaption { font-size: 8.5pt; color: #5f6b75; margin-top: 2mm; }
+@media print { .topic-analysis.selection-new-page { page-break-before: always; break-before: page; padding-top: 5mm; } }
 .twin { display: block; page-break-inside: auto; break-inside: auto; }
 .twin .box { border-radius: 2pt; padding: 3mm 4mm; margin-bottom: 3mm; font-size: 9.5pt; line-height: 1.65; page-break-inside: avoid; break-inside: avoid; orphans: 2; widows: 2; }
 .twin .box h4 { margin: 0 0 1.6mm; font-size: 10.5pt; }
@@ -1211,8 +1243,12 @@ def _magazine_topic_card_html(
     url = escape(item.url, quote=True)
     chapter = escape(weekly_chapter_name(item))
     pri = escape(item.priority)
+    highlights = weekly_highlights_markdown(item)
+    lead_class = " has-selection" if highlights else ""
+    if highlights and item.highlights_start_new_page:
+        lead_class += " selection-on-next-page"
     parts = [
-        f'<section class="topic-card topic-primary" id="{_topic_anchor(index)}">',
+        f'<section class="topic-card topic-primary{lead_class}" id="{_topic_anchor(index)}">',
         '<div class="card-head">',
         f'<span class="chip pri-{pri}">{pri}</span>',
         f'<span class="chip chapter">{chapter}</span>',
@@ -1230,16 +1266,34 @@ def _magazine_topic_card_html(
                 f'<figure class="comic"><img src="{escape(comic_src, quote=True)}" alt="主题 {index:02d} 漫画"></figure>',
             ]
         )
-    if judgment:
+    lead_text = sections["核心观点"] if highlights else judgment
+    if lead_text:
         parts.extend(
             [
                 '<div class="judgment-box">',
-                '<span class="label">核心判断</span>',
-                f"<p>{escape(judgment)}</p>",
+                f'<span class="label">{"摘要导读" if highlights else "核心判断"}</span>',
+                f"<p>{escape(lead_text)}</p>",
                 "</div>",
             ]
         )
+    if highlights and item.highlights_start_new_page:
+        headings = highlights_headings(highlights)
+        if headings:
+            parts.append('<nav class="highlights-map" aria-label="精华导览"><h4>精华导览</h4><ol>')
+            for heading_index, heading in enumerate(headings[:6], 1):
+                parts.append(f'<li><a href="#{_topic_anchor(index)}-selection-{heading_index}">{escape(heading)}</a></li>')
+            parts.append('</ol></nav>')
     parts.append("</section>")
+    if highlights:
+        selection_class = " selection-new-page" if item.highlights_start_new_page else ""
+        parts.extend([
+            f'<section class="topic-card topic-analysis highlights-selection{selection_class}">',
+            '<div class="report-highlights">',
+            f'<h4>{escape(item.highlights_title or "精华选编")}</h4>',
+            render_highlights_markdown(highlights, heading_id_prefix=f"{_topic_anchor(index)}-selection"),
+            "</div></section>",
+        ])
+        return "\n".join(parts)
     parts.extend(
         [
             '<section class="topic-card topic-analysis">',
@@ -1252,7 +1306,7 @@ def _magazine_topic_card_html(
         ]
     )
     if evidence:
-        parts.append('<div class="evidence"><span class="label">论证与依据</span>')
+        parts.append('<div class="evidence">')
         parts.append(f"<p>{escape(' '.join(evidence))}</p>")
         parts.append("</div>")
     boxes: list[str] = []
@@ -1474,6 +1528,8 @@ def write_periodic_brief(
         )
         pdf_path = directory / f"{date}_{title}.pdf"
         if not write_pdf_from_html(html_path, pdf_path):
+            if any(weekly_highlights_markdown(item) for item in candidates):
+                raise RuntimeError("Browser PDF rendering is required to preserve authored selections and charts")
             pdf_path = write_weekly_reader_pdf(pdf_path, date, candidates)
     else:
         html_path.write_text(markdown_to_html(markdown, f"{title}（{date}）"), encoding="utf-8")
