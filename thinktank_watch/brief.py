@@ -533,15 +533,6 @@ def weekly_situation_summary(candidates: list[ArticleCandidate]) -> str:
 
 
 _PROFESSIONAL_PREFIXES = (
-    ("作者对", "对"),
-    ("作者采取", "采取"),
-    ("作者持", "持"),
-    ("作者支持", "支持"),
-    ("作者反对", "反对"),
-    ("作者认为", "认为"),
-    ("作者主张", "主张"),
-    ("作者建议", "建议"),
-    ("作者据此判断", "据此判断"),
     ("该章节讨论", "考察"),
     ("该章节构造", "提出"),
     ("该意见书回应", "意见书回应"),
@@ -583,15 +574,13 @@ def _professionalize_weekly_sentence(candidate: ArticleCandidate, value: str) ->
     for prefix, replacement in _PROFESSIONAL_PREFIXES:
         if text.startswith(prefix):
             return f"{institution}{replacement}{text[len(prefix):]}"
-    if text.startswith("作者"):
-        return f"{institution}{text[len('作者'):]}"
     return text
 
 
 def weekly_argument_parts(candidate: ArticleCandidate) -> tuple[str, list[str]]:
     sections = _weekly_summary_sections(candidate)
     core = _weekly_pdf_core_text(sections["核心观点"])
-    judgment, evidence = core_argument_parts(core)
+    judgment, evidence = core_argument_parts(core, max_evidence=None)
     return (
         _professionalize_weekly_sentence(candidate, judgment),
         [_professionalize_weekly_sentence(candidate, point) for point in evidence],
@@ -672,7 +661,6 @@ def weekly_chapter_viewpoints(
 
 def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
     priority_items = weekly_priority_items(candidates)
-    topic_pages, analysis_pages = weekly_pdf_page_plan(candidates)
     top_reads = weekly_top_reads(candidates)
     viewpoints = weekly_chapter_viewpoints(candidates)
 
@@ -684,7 +672,7 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate])
     ]
     for index, item in enumerate(priority_items, 1):
         lines.append(
-            f"- P.{topic_pages[item.url]:02d}-{analysis_pages[item.url]:02d}｜[主题 {index:02d}｜{item.chinese_title or item.title}](#{_topic_anchor(index)})"
+            f"- [主题 {index:02d}｜{item.chinese_title or item.title}](#{_topic_anchor(index)})"
         )
     lines.extend(["", "## 本周态势", "", weekly_situation_summary(candidates), ""])
 
@@ -728,11 +716,11 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate])
         comic_src = weekly_topic_comic_markdown_src(date, index)
         if comic_src:
             lines.extend(["", f"![主题 {index:02d} 漫画]({comic_src})", ""])
-        lines.append(f"- **核心判断**：**{_short_text(judgment, 220)}**")
+        lines.append(f"- **核心判断**：**{judgment}**")
         if evidence:
             lines.append("- **主要论据**：")
             for point in evidence:
-                lines.append(f"  - {_short_text(point, 180)}")
+                lines.append(f"  - {point}")
         if sections["建议"]:
             advice = _professionalize_weekly_sentence(item, sections["建议"])
             lines.append(f"- **政策建议**：{_bold_first_sentence(advice)}")
@@ -843,7 +831,7 @@ def render_weekly_audit_markdown(date: str, candidates: list[ArticleCandidate]) 
         for item in thin_core_items:
             lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
     else:
-        lines.append("- 全部 P0/P1 条目核心观点密度达标。")
+        lines.append("- 全部 P0/P1 条目通过最低文字结构检查；原文证据、亮点保留与可读性仍须逐篇复核。")
     lines.extend(["", "## 完整索引", ""])
     for item in ordered_candidates:
         lines.append(f"- [{item.priority}] {item.institution_name}｜{item.chinese_title or item.title}｜{item.url}")
@@ -1174,29 +1162,33 @@ a { color: #14456e; text-decoration: none; }
 .comic-lead img { width: 100%; border: .6pt solid #d7dee5; }
 .comic-lead .note { font-size: 9pt; color: #40505c; background: #faf6ee; border-left: 2.4pt solid #c89b52; padding: 3mm 4mm; margin: 0 0 5mm; }
 
-.topic-card { padding: 8mm 10mm 9mm; page-break-before: always; break-before: page; }
+.topic-card { padding: 5mm 10mm; break-inside: auto; }
+.topic-primary { page-break-before: auto; break-before: auto; page-break-inside: avoid; break-inside: avoid; padding-bottom: 0; }
+.topic-analysis { page-break-before: auto; break-before: auto; padding-top: 0; }
 .topic-card .card-head { display: flex; align-items: center; gap: 3mm; margin-bottom: 3mm; }
 .chip { font-size: 8pt; font-weight: 700; padding: .8mm 3mm; border-radius: 999px; }
 .chip.pri-P0 { background: #b84c3d; color: #fff; }
 .chip.pri-P1 { background: #e9d9d5; color: #8b2f2a; }
 .chip.chapter { background: #eef3f7; color: #14456e; border: .5pt solid #c7d7e3; }
 .card-head .idx { margin-left: auto; color: #9aa7b1; font-size: 8.5pt; }
+.topic-analysis .card-head, .topic-analysis h3 { display: none; }
 .topic-card h3 { font-size: 15pt; margin: 0 0 1.6mm; line-height: 1.35; }
 .topic-card h3 a { color: #14456e; }
 .topic-card .meta { color: #5f6b75; font-size: 8.5pt; margin-bottom: 3mm; }
-.topic-card figure.comic { margin: 0 0 4mm; }
-.topic-card figure.comic img { width: 100%; border: .6pt solid #d7dee5; border-radius: 2pt; }
+.topic-card figure.comic { margin: 0 0 3mm; text-align: center; break-inside: avoid; }
+.topic-card figure.comic img { display: block; width: auto; height: auto; max-width: 100%; max-height: 88mm; margin: 0 auto; object-fit: contain; border: .6pt solid #d7dee5; border-radius: 2pt; }
 .judgment-box { background: #14456e; color: #ffffff; padding: 4mm 5mm; border-radius: 2pt; margin-bottom: 3mm; page-break-inside: avoid; }
 .judgment-box .label { font-size: 8pt; letter-spacing: .25em; color: #bcd2e4; display: block; margin-bottom: 1.2mm; }
 .judgment-box p { margin: 0; font-size: 10.5pt; font-weight: 700; line-height: 1.55; }
-.topic-analysis .analysis-kicker { margin: 1mm 0 4mm; color: #b84c3d; font-weight: 800; letter-spacing: .18em; font-size: 9pt; }
-.evidence { margin: 0; page-break-inside: avoid; }
+.topic-analysis .analysis-kicker { margin: 1mm 0 2mm; color: #b84c3d; font-weight: 800; letter-spacing: .18em; font-size: 9pt; break-after: avoid; }
+.evidence { margin: 0; page-break-inside: auto; break-inside: auto; }
 .evidence .label { font-size: 10.5pt; font-weight: 800; color: #b84c3d; letter-spacing: .12em; }
-.evidence ul { margin: 2mm 0 4mm; padding-left: 0; list-style: none; }
-.evidence li { position: relative; padding: 1.5mm 0 1.5mm 5mm; font-size: 10pt; line-height: 1.65; }
+.evidence ul { margin: 1mm 0 3mm; padding-left: 0; list-style: none; }
+.evidence li { position: relative; padding: 1mm 0 1mm 5mm; font-size: 10pt; line-height: 1.65; orphans: 2; widows: 2; }
 .evidence li::before { content: ""; position: absolute; left: 1mm; top: 2.7mm; width: 2mm; height: 2mm; background: #c89b52; }
-.twin { display: flex; gap: 4mm; page-break-inside: avoid; }
-.twin .box { flex: 1; border-radius: 2pt; padding: 3.6mm 4.2mm; font-size: 9.5pt; line-height: 1.65; }
+.evidence p { margin: 2mm 0 4mm; font-size: 10pt; line-height: 1.75; orphans: 2; widows: 2; }
+.twin { display: block; page-break-inside: auto; break-inside: auto; }
+.twin .box { border-radius: 2pt; padding: 3mm 4mm; margin-bottom: 3mm; font-size: 9.5pt; line-height: 1.65; page-break-inside: avoid; break-inside: avoid; orphans: 2; widows: 2; }
 .twin .box h4 { margin: 0 0 1.6mm; font-size: 10.5pt; }
 .twin .advice { background: #f0f6f0; border-top: 2.4pt solid #4f7d5a; }
 .twin .advice h4 { color: #3c6246; }
@@ -1243,7 +1235,7 @@ def _magazine_topic_card_html(
             [
                 '<div class="judgment-box">',
                 '<span class="label">核心判断</span>',
-                f"<p>{escape(_short_text(judgment, 220))}</p>",
+                f"<p>{escape(judgment)}</p>",
                 "</div>",
             ]
         )
@@ -1257,22 +1249,20 @@ def _magazine_topic_card_html(
             f'<span class="idx">主题 {index:02d} / {total:02d} · 论证页</span>',
             "</div>",
             f'<h3><a href="{url}">{title}</a></h3>',
-            '<p class="analysis-kicker">论证与政策含义</p>',
         ]
     )
     if evidence:
-        parts.append('<div class="evidence"><span class="label">主要论据</span><ul>')
-        for point in evidence:
-            parts.append(f"<li>{escape(_short_text(point, 240))}</li>")
-        parts.append("</ul></div>")
+        parts.append('<div class="evidence"><span class="label">论证与依据</span>')
+        parts.append(f"<p>{escape(' '.join(evidence))}</p>")
+        parts.append("</div>")
     boxes: list[str] = []
     if sections["建议"]:
         advice = _professionalize_weekly_sentence(item, sections["建议"])
-        boxes.append(f'<div class="box advice"><h4>政策建议</h4>{escape(_short_text(advice, 460))}</div>')
+        boxes.append(f'<div class="box advice"><h4>政策建议</h4>{escape(advice)}</div>')
     if sections["中国/上海参考"]:
         reference = _professionalize_weekly_sentence(item, sections["中国/上海参考"])
         boxes.append(
-            f'<div class="box reference"><h4>中国 / 上海参考</h4>{escape(_short_text(reference, 460))}</div>'
+            f'<div class="box reference"><h4>中国 / 上海参考</h4>{escape(reference)}</div>'
         )
     if boxes:
         parts.extend(['<div class="twin">', *boxes, "</div>"])

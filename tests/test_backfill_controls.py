@@ -692,6 +692,7 @@ class BackfillControlTests(unittest.TestCase):
             institution_type="think_tank",
             title="China AI external story",
             url="https://www.hoover.org/research/external-ai-story",
+            published_date="2026-07-04",
             priority="P1",
             score=8,
             fetch_status="detail_error:ExternalSourceError",

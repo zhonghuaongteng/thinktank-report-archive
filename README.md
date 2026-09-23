@@ -39,7 +39,7 @@ C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli run-weekly --batch 1 --limit 30
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli backfill --batch 1 --limit 5 --min-priority P1 --write-limit 8 --lookback-years 3 --search-profile broad_innovation_support
 C:\Users\WINDOWS\AppData\Local\Programs\Python\Python313\python.exe -m thinktank_watch.cli rebuild-state --archive-root archive --state state\articles.sqlite
-powershell -ExecutionPolicy Bypass -File scripts\run_weekly.ps1 -Batch 1 -Limit 30
+powershell -ExecutionPolicy Bypass -File scripts\run_weekly.ps1 -Date <YYYY-MM-DD> -Python <verified-absolute-python-path> -Batch 1 -Limit 30 -LookbackDays 7
 powershell -ExecutionPolicy Bypass -File scripts\run_backfill_batch.ps1 -Batch 1 -Limit 5 -MinPriority P1 -WriteLimit 8 -LookbackYears 3
 ```
 
@@ -99,3 +99,8 @@ The local Codex automation `国际科技智库每周抓取` runs every Sunday at
 ## Copyright Boundary
 
 The intended GitHub repository is private. Public reuse should only use metadata, source links, short summaries, and original analysis. Commercial or paid sources such as Gartner are tracked as metadata-only unless separately authorized.
+
+
+## Weekly monitoring scope and quality
+
+The current weekly contract is [economic and enterprise research monitoring](docs/weekly_monitoring_contract_2026-09.md). It adds 16 monitored sources, preserves keyword misses for editorial review, uses exactly seven publication dates, retries unarchived detail failures, and records content, synchronization and delivery separately. Source access, full-text evidence and editorial quality require actual verification. See the [five-run audit](docs/audits/2026-09-23_weekly_monitoring_review.md).

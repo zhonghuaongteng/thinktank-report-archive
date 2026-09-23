@@ -251,6 +251,8 @@ def _fallback_advice(candidate: ArticleCandidate, source: str) -> str:
 
 
 def _fallback_china_shanghai_reference(candidate: ArticleCandidate, source: str) -> str:
+    # Bibliographic mentions cannot establish the report's geographic conclusions.
+    source = re.split(r"(?:^|\n)\s*(?:references|bibliography|works cited|参考文献)\s*(?:\n|$)", source, maxsplit=1, flags=re.I)[0]
     sentences = _substantive_sentences(source) if _full_text_available(candidate) else _split_sentences(source)
     shanghai_sentences = [
         sentence
@@ -270,10 +272,7 @@ def _fallback_china_shanghai_reference(candidate: ArticleCandidate, source: str)
         if candidate.chinese_summary or not _full_text_available(candidate):
             return _join_limited(china_sentences, 420)
         reference = _join_limited(china_sentences[:5], 760)
-        return (
-            "对中国/上海研判的参考在于：该材料提供了涉华技术能力、人才流动、产业链位置或政策工具的比较证据。"
-            f"关键原文线索包括：{reference}"
-        )
+        return "原文涉华表述线索（需复核正文语境，不自动构成中国/上海政策建议）：" + reference
     return ""
 
 
@@ -398,7 +397,7 @@ JUDGMENT_CUES = (
 )
 
 
-def core_argument_parts(core_text: str, max_evidence: int = 4) -> tuple[str, list[str]]:
+def core_argument_parts(core_text: str, max_evidence: int | None = 4) -> tuple[str, list[str]]:
     """Split a 核心观点 block into (一句话核心判断, 主要论据 sentences).
 
     The judgment sentence prefers an explicit "核心判断是…" style sentence within
@@ -416,7 +415,7 @@ def core_argument_parts(core_text: str, max_evidence: int = 4) -> tuple[str, lis
             break
     judgment = sentences[judgment_index]
     evidence = [s for i, s in enumerate(sentences) if i != judgment_index]
-    return judgment, evidence[:max_evidence]
+    return judgment, evidence if max_evidence is None else evidence[:max_evidence]
 
 
 def format_structured_chinese_summary(candidate: ArticleCandidate) -> str:

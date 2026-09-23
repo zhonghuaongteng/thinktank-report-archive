@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import copy
 import re
 from pathlib import Path
 
@@ -43,6 +44,12 @@ def yaml_scalar(key: str, value: str) -> str:
 
 
 def build_markdown(candidate: ArticleCandidate) -> str:
+    if candidate.copyright_boundary == "metadata_summary_only":
+        candidate = copy.deepcopy(candidate)
+        candidate.detail_text = ""
+        candidate.summary = candidate.summary[:800]
+        candidate.source_completeness = "summary_only"
+        candidate.translation_level = "summary"
     title = candidate.chinese_title or candidate.title
     english_title = candidate.title.replace('"', '\\"')
     chinese_title = title.replace('"', '\\"')
@@ -75,7 +82,10 @@ def build_markdown(candidate: ArticleCandidate) -> str:
         "",
     ]
     chinese_summary = format_structured_chinese_summary(candidate)
-    if candidate.source_completeness == "full_text" and candidate.detail_text:
+    if candidate.copyright_boundary == "metadata_summary_only":
+        english_material = (candidate.summary or "Public metadata only; consult the original source.")[:800]
+        english_material += "\n\nAccess boundary: limited public abstract only. Full text is not archived."
+    elif candidate.source_completeness == "full_text" and candidate.detail_text:
         english_material = candidate.detail_text
     else:
         english_material = candidate.summary or candidate.detail_text or "No source text extracted."

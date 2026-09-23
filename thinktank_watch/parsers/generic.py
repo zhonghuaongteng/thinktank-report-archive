@@ -560,6 +560,14 @@ def looks_like_detail_url(url: str, text: str = "") -> bool:
     parsed = urlparse(url)
     if parsed.path.lower().endswith(".pdf"):
         return False
+    host = parsed.hostname or ""
+    # Verified publication URL families; do not relax the two-level index guard globally.
+    if host in {"www.bis.org", "bis.org"} and re.fullmatch(r"/publications/working-paper-\d+-.+/?", parsed.path):
+        return True
+    if host in {"cepr.org", "www.cepr.org"} and re.fullmatch(r"/publications/dp\d+(?:-.+)?/?", parsed.path):
+        return True
+    if host in {"www.zew.de", "zew.de"} and re.fullmatch(r"/publikationen/[^/]+/?", parsed.path):
+        return True
     path_segments = [segment for segment in parsed.path.split("/") if segment]
     query = dict(parse_qsl(parsed.query, keep_blank_values=True))
     if query.get("p", "").isdigit():
@@ -616,7 +624,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
         meta_values(soup, "citation_publication_date"),
         meta_values(soup, "article:published_time"),
         meta_values(soup, "date"),
-        json_primary.get("datePublished") or json_primary.get("dateCreated") or json_primary.get("dateModified"),
+        json_primary.get("datePublished") or json_primary.get("dateCreated"),
         time_date,
         visible_date(body_text),
     )
@@ -668,6 +676,8 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
 
 def extract_list_links(html_text: str, base_url: str, limit: int) -> list[str]:
     soup = BeautifulSoup(html_text, "lxml")
+    for node in soup.select("nav, header, footer, [role='navigation']"):
+        node.decompose()
     links: list[str] = []
     seen: set[str] = set()
     for node in soup.find_all("a", href=True):

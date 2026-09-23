@@ -3,7 +3,7 @@ from __future__ import annotations
 from .models import ArticleCandidate
 
 
-INNOVATION_SUPPORT_TAGS = {"科技创新", "半导体", "先进制造", "数字经济", "科技人才", "国防AI"}
+INNOVATION_SUPPORT_TAGS = {"科技创新", "半导体", "先进制造", "数字经济", "科技人才", "国防AI", "经济与企业创新"}
 GOVERNANCE_ONLY_TAGS = {"AI治理", "科技治理"}
 INNOVATION_ENABLING_GOVERNANCE_TERMS = {
     "technology policy",

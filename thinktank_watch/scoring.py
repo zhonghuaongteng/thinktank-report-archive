@@ -230,7 +230,10 @@ def score_candidate(
         if matches:
             topic_scores[topic.name] = topic.weight + min(max(0, matches - 1), TOPIC_MATCH_EXTRA_CAP)
 
-    total = sum(topic_scores.values())
+    # The broad economic discovery lens overlaps existing innovation/talent tags.
+    # It should recover missed research, not award duplicate points to old material.
+    economic_score = topic_scores.get("经济与企业创新", 0)
+    total = max(economic_score, sum(value for name, value in topic_scores.items() if name != "经济与企业创新"))
     if topic_scores:
         if scored.content_type in REPORT_TYPES:
             total += rules.report_bonus

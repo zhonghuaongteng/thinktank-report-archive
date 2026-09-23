@@ -8,7 +8,7 @@ from pathlib import Path
 
 import httpx
 
-from .audit import write_audit_report
+from .audit import write_audit_report, write_editorial_review_queue
 from .archive import write_article
 from .brief import (
     inspect_weekly_comic_report,
@@ -268,6 +268,16 @@ def candidate_within_daily_window(candidate: ArticleCandidate, run_date: str, lo
     return daily_window_start(run_date, lookback_days) <= published <= current
 
 
+def candidate_within_weekly_window(candidate: ArticleCandidate, run_date: str, lookback_days: int) -> bool:
+    if lookback_days < 1:
+        raise ValueError("lookback_days must be positive")
+    published = parse_candidate_date(candidate.published_date)
+    current = parse_candidate_date(run_date)
+    if not published or not current:
+        return False
+    return current - timedelta(days=lookback_days - 1) <= published <= current
+
+
 def sort_for_writing(candidates: list[ArticleCandidate]) -> list[ArticleCandidate]:
     return sorted(
         candidates,
@@ -322,6 +332,13 @@ def write_run_brief(args: argparse.Namespace, run_date: str, written: list[Artic
         indexed = load_daily_brief_candidates(args.archive_root, args.kb_root, run_date)
         if indexed:
             candidates = indexed
+    if getattr(args, "_weekly_run", False):
+        candidates = [
+            item for item in candidates
+            if candidate_within_weekly_window(
+                item, run_date, getattr(args, "lookback_days", DEFAULT_WEEKLY_LOOKBACK_DAYS)
+            )
+        ]
     write_periodic_brief(
         args.brief_root,
         run_date,
@@ -419,24 +436,34 @@ def audit(args: argparse.Namespace) -> int:
     profile = resolve_search_profile(getattr(args, "search_profile", None))
     selected = _select_institutions(institutions, args.batch, args.institution)
     candidates = collect_candidates(selected, args.limit, include_details=not args.no_details)
+    raw_scored = [score_candidate(item, topics, priorities) for item in candidates]
     scored = [
         item
-        for item in [score_candidate(item, topics, priorities) for item in candidates]
+        for item in raw_scored
         if candidate_matches_filters(item, args, profile)
     ]
     output = Path(args.output) if args.output else Path("reports") / f"{run_date}_source_health.csv"
     path = write_audit_report(
         output,
-        scored,
+        raw_scored,
         run_date=run_date,
         lookback_days=getattr(args, "lookback_days", DEFAULT_WEEKLY_LOOKBACK_DAYS),
+        institutions=selected,
     )
+    review_path = write_editorial_review_queue(
+        output.with_name(output.stem + "_editorial_review.csv"), raw_scored, run_date,
+        lookback_days=getattr(args, "lookback_days", DEFAULT_WEEKLY_LOOKBACK_DAYS),
+    )
+    print(f"editorial_review={review_path} raw_candidates={len(raw_scored)} profile_candidates={len(scored)}")
     print(f"audit_date={run_date} institutions={len(selected)} candidates={len(scored)} report={path}")
     return 0
 
 
 def run_daily(args: argparse.Namespace) -> int:
     run_date = args.date or date.today().isoformat()
+    is_weekly = getattr(args, "_weekly_run", False)
+    within_window = candidate_within_weekly_window if is_weekly else candidate_within_daily_window
+    default_lookback = DEFAULT_WEEKLY_LOOKBACK_DAYS if is_weekly else DEFAULT_DAILY_LOOKBACK_DAYS
     institutions, topics, priorities = _load_config()
     profile = resolve_search_profile(getattr(args, "search_profile", None))
     selected = _select_institutions(institutions, args.batch, args.institution)
@@ -457,15 +484,24 @@ def run_daily(args: argparse.Namespace) -> int:
                 continue
             if candidate_is_future(item, run_date):
                 continue
-            if state.seen(item.url) and not args.refresh:
-                continue
-            if detail_fetch_failed(item):
-                state.upsert(item, "")
-                continue
-            if not candidate_within_daily_window(
+            if is_weekly and not within_window(
                 item,
                 run_date,
-                getattr(args, "lookback_days", DEFAULT_DAILY_LOOKBACK_DAYS),
+                getattr(args, "lookback_days", default_lookback),
+            ):
+                continue
+            # Legacy failed detail attempts have empty archive paths and must remain retryable.
+            already_processed = state.archived(item.url) if is_weekly else state.seen(item.url)
+            if already_processed and not args.refresh:
+                continue
+            if detail_fetch_failed(item):
+                if not is_weekly:
+                    state.upsert(item, "")
+                continue
+            if not is_weekly and not within_window(
+                item,
+                run_date,
+                getattr(args, "lookback_days", default_lookback),
             ):
                 continue
             if write_limit_reached(len(written), args.write_limit):
@@ -486,6 +522,12 @@ def run_daily(args: argparse.Namespace) -> int:
 
 
 def run_weekly(args: argparse.Namespace) -> int:
+    if not getattr(args, "date", None) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", args.date):
+        raise ValueError("Weekly runs require an explicit --date in YYYY-MM-DD format")
+    date.fromisoformat(args.date)
+    if getattr(args, "lookback_days", DEFAULT_WEEKLY_LOOKBACK_DAYS) < 1:
+        raise ValueError("lookback_days must be positive")
+    args._weekly_run = True
     args.brief_cadence = "weekly"
     return run_daily(args)
 

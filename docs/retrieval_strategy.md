@@ -1,5 +1,7 @@
 # 国际科技智库检索与识别策略
 
+现行周任务以 [2026-09经济、企业创新与质量规则](weekly_monitoring_contract_2026-09.md) 为准。本文历史优化轮次停止条件仅适用于对应轮次；当前用户已授权的扩源与问题修复按现行规则执行。
+
 ## 目标边界
 
 检索目标以“支撑科技创新发展”为主轴，优先保留能够解释研发体系、创新能力、产业化路径、技术基础设施、科技人才、战略性产业、技术扩散、产业链供应链、创新金融、标准计量测试体系、国防创新和涉华科技竞争的报告、论文、政策简报和高质量分析。
@@ -26,7 +28,7 @@ AI治理仍保留专题价值，但默认检索画像不再让纯治理材料挤
 - 默认画像：`broad_innovation_support`。
 - 专题画像：`ai_governance_watch` 仅用于治理专题复核。
 - 近三年回填：回填窗口以运行日向前3年为硬边界；不再无止境抓取历史材料。
-- 周频增量：默认周日下午14:00运行，周频增量回看14天，依靠 URL 状态库去重。
+- 周频增量：默认周日下午14:00运行，周频窗口为固定业务日期D的[D-6,D]，含两端恰7个日期，依靠已归档URL去重；详情失败保持可重试。
 - 主题保留：科技创新、半导体、先进制造、数字经济、科技人才、国防AI直接视为创新支撑主题。
 - 治理例外：科技治理只有在同时出现创新支撑型信号时进入默认画像，例如技术政策、促进创新的监管、监管沙盒、创新采购、标准基础设施、计量、合格评定、测试验证、公共算力、数据互操作、技术扩散、技术采用。
 - 纯治理降权：只命中 AI治理或缺少创新支撑信号的科技治理候选，不进入默认宽口径画像；必要时保留到专题观察。
@@ -53,7 +55,7 @@ AI治理仍保留专题价值，但默认检索画像不再让纯治理材料挤
 - 策略-only核验：暂停状态下使用 `scripts\run_strategy_review.ps1` 做本地检查；该脚本只运行仓库策略测试、空白检查和归档/状态/知识库计数，不触发候选评估、周报生成或归档写入。
 - 恢复条件：只有在用户明确要求恢复筛选、周报运行或回填时，才允许脱离策略优化模式；恢复前必须重新阅读本文件、`docs\backfill_coverage_audit.md` 和 `docs\multi_agent_execution.md`，并确认 Git 工作区干净。
 - 每周自动运行：北京时间周日14:00。
-- 自动化顺序：确认当前工作分支，`git pull --ff-only`，运行单元测试，执行来源健康审计，运行 `scripts\run_weekly.ps1`；随后运行 `scripts\prepare_weekly_comics.ps1` 生成逐条 P0/P1 漫画提示词，调用 Codex 图片生成能力生成 `comic/weekly-topic-comics-<日期>/pages/*.jpg`，运行 `scripts\render_weekly_brief.ps1` 重建周报，再运行 `scripts\check_weekly_comics.ps1` 核验漫画、周报、归档、知识库索引和状态库，最后提交并推送变更。
+- 自动化顺序：确认当前工作分支，`git pull --ff-only`，运行单元测试，执行来源健康审计，运行 `scripts\run_weekly.ps1 -Date <D> -Python <已验证绝对路径> -LookbackDays 7`；随后运行 `scripts\prepare_weekly_comics.ps1` 生成逐条 P0/P1 漫画提示词，调用 Codex 图片生成能力生成 `comic/weekly-topic-comics-<日期>/pages/*.jpg`，运行 `scripts\render_weekly_brief.ps1` 重建周报，再运行 `scripts\check_weekly_comics.ps1` 核验漫画、周报、归档、知识库索引和状态库，最后提交并推送变更。
 - 覆盖审计：恢复历史回填前先读取 `docs/backfill_coverage_audit.md`，优先处理零覆盖、低覆盖和入口质量问题。
 - 评估方式：新增机构或规则改动前先执行 `evaluate --institution <slug> --limit <n> --backfill --lookback-years 3 --search-profile broad_innovation_support`。`evaluate` 不接受 `--min-priority`，优先级筛选只在评估结果汇总或正式 `backfill` 写入时执行。
 - 多agent方式：需要同时评估多个低覆盖源时，按 `docs/multi_agent_execution.md` 分派只读来源评估agent。评估agent只运行 `evaluate` 或 `scripts\run_evaluate_sources.ps1`，不得写入归档、状态库或知识库 CSV；主控汇总结论后串行回填。

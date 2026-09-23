@@ -1103,7 +1103,7 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("nistep", slugs)
         self.assertLessEqual(slugs.count("merics"), 2)
 
-    def test_weekly_read_summary_uses_institutional_judgment_and_evidence(self):
+    def test_weekly_read_summary_preserves_author_attribution_and_evidence(self):
         from thinktank_watch.brief import weekly_evidence_sentence, weekly_judgment_sentence
 
         candidate = ArticleCandidate(
@@ -1127,9 +1127,9 @@ class ArchiveAndBriefTests(unittest.TestCase):
         judgment = weekly_judgment_sentence(candidate, 220)
         evidence = weekly_evidence_sentence(candidate, 220)
 
-        self.assertTrue(judgment.startswith("RAND"))
+        self.assertTrue(judgment.startswith("作者对"))
         self.assertIn("复杂性", judgment)
-        self.assertNotIn("作者对", judgment)
+        self.assertNotIn("RAND对", judgment)
         self.assertIn("跨国算力", evidence)
         self.assertNotIn("报告依据", evidence)
 
@@ -1198,6 +1198,39 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn('class="topic-card topic-analysis"', html)
         self.assertNotIn('class="topic-card avoid-break"', html)
         self.assertNotIn(".topic-main { display: grid;", html)
+
+    def test_weekly_topic_body_preserves_long_text_and_all_evidence(self):
+        from unittest.mock import patch
+        from thinktank_watch.brief import render_weekly_magazine_html, weekly_argument_parts
+
+        candidate = ArticleCandidate(
+            "example", "Example", "think_tank", "Long research", "https://example.org/long",
+            chinese_title="完整研究正文", priority="P1", topic_tags=["科技创新"],
+            chinese_summary="核心观点：核心判断是必须保留完整研究。" + "".join(
+                f"第{index}项独立证据说明企业创新需要不同的资金和组织条件。" for index in range(1, 8)
+            ),
+        )
+        _, evidence = weekly_argument_parts(candidate)
+        self.assertEqual(len(evidence), 7)
+        self.assertIn("第7项", evidence[-1])
+        judgment = "完整判断" * 80 + "判断结尾。"
+        argument = "完整证据" * 90 + "论据结尾。"
+        advice = "政策建议内容" * 110 + "建议结尾。"
+        reference = "可比研究条件" * 110 + "参考结尾。"
+        with (
+            patch("thinktank_watch.brief.weekly_argument_parts", return_value=(judgment, [argument])),
+            patch("thinktank_watch.brief._weekly_summary_sections", return_value={
+                "核心观点": judgment + argument, "建议": advice, "中国/上海参考": reference,
+            }),
+        ):
+            html = render_weekly_magazine_html("2026-09-20", [candidate])
+            markdown = render_weekly_brief_markdown("2026-09-20", [candidate])
+        for text in (judgment, argument, advice, reference):
+            self.assertIn(text, html)
+        for text in (judgment, argument):
+            self.assertIn(text, markdown)
+        self.assertIn('<div class="evidence"><span class="label">论证与依据</span>\n<p>', html)
+        self.assertNotIn("P.05-06", markdown)
 
     def test_weekly_audit_flags_thin_core_summaries(self):
         from thinktank_watch.brief import render_weekly_audit_markdown
