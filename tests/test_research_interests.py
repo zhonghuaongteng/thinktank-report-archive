@@ -37,12 +37,41 @@ class ResearchInterestReviewTests(unittest.TestCase):
             with path.open(encoding="utf-8-sig", newline="") as handle:
                 rows = list(csv.DictReader(handle))
         self.assertEqual([row["标题"] for row in rows],
-                         ["AI4S laboratories", "Blockchain science", "AI4S month-only issue", "Demand and firms"])
+                         ["AI4S laboratories", "Blockchain science", "AI4S month-only issue", "Demand and firms", "Unrelated"])
         self.assertEqual(rows[0]["原始优先级"], "P3")
         self.assertEqual(rows[0]["研究关注主题"], "AI4S")
         self.assertEqual(rows[1]["复核状态"], "待核首次发布日期")
         self.assertEqual(rows[2]["复核状态"], "待核首次发布日期")
         self.assertEqual(rows[3]["研究关注主题"], "")
+        self.assertEqual(rows[3]["发现线索"], "经济与企业来源；开放发现：未命中现有关注词")
+        self.assertEqual(rows[4]["发现线索"], "开放发现：未命中现有关注词")
+        self.assertEqual(candidates, before)
+
+    def test_open_discovery_keeps_unmatched_other_sources_with_date_gate_and_no_mutation(self):
+        candidates = [
+            self.candidate("New research mechanism", date="2026-09-14", priority="P3", score=-2, source_group="policy_research"),
+            self.candidate("New measurement method", date="", priority="P3", score=0, source_group="policy_research"),
+            self.candidate("Unverified month", date="2026-09", source_group="policy_research"),
+            self.candidate("Outdated unmatched material", date="2026-09-13", source_group="policy_research"),
+            self.candidate("Future unmatched material", date="2026-09-21", source_group="policy_research"),
+        ]
+        before = copy.deepcopy(candidates)
+        with tempfile.TemporaryDirectory() as tmp:
+            path = write_editorial_review_queue(Path(tmp) / "review.csv", candidates,
+                                                 "2026-09-20", interests=self.interests)
+            with path.open(encoding="utf-8-sig", newline="") as handle:
+                rows = list(csv.DictReader(handle))
+            self.assertEqual(list(Path(tmp).iterdir()), [path])
+        self.assertEqual([row["标题"] for row in rows], ["New research mechanism", "New measurement method", "Unverified month"])
+        self.assertEqual(rows[0]["原始优先级"], "P3")
+        self.assertEqual(rows[0]["原始得分"], "-2")
+        self.assertEqual(rows[0]["复核状态"], "待原文复核")
+        self.assertEqual([row["复核状态"] for row in rows[1:]], ["待核首次发布日期"] * 2)
+        for row in rows:
+            self.assertEqual(row["发现线索"], "开放发现：未命中现有关注词")
+            self.assertEqual(row["研究关注层级"], "")
+            self.assertEqual(row["研究关注主题"], "")
+            self.assertEqual(row["命中检索词"], "")
         self.assertEqual(candidates, before)
 
     def test_acronym_boundaries_and_bibliography_do_not_create_matches(self):

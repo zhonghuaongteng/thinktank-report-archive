@@ -105,7 +105,7 @@ def write_editorial_review_queue(
     path: str | Path, candidates: list[ArticleCandidate], run_date: str,
     lookback_days: int = 7, interests: list[ResearchInterest] | None = None,
 ) -> Path:
-    """Keep broad sources and research-interest leads visible before filters; never archive."""
+    """Keep dated and date-unverified candidates from every source before filters; never archive."""
     current = date.fromisoformat(run_date)
     fields = ["机构slug", "标题", "URL", "发布日期", "原始优先级", "原始得分", "详情状态", "公开摘要",
               "发现线索", "研究关注层级", "研究关注主题", "命中检索词", "复核状态", "采纳理由及原文定位"]
@@ -117,8 +117,6 @@ def write_editorial_review_queue(
         for item in candidates:
             matches = match_research_interests(item, interests or [])
             broad_source = item.source_group in {"innovation_economy", "enterprise_research"}
-            if not broad_source and not matches:
-                continue
             try:
                 date.fromisoformat((item.published_date or "")[:10])
                 precise_date = True
@@ -128,7 +126,7 @@ def write_editorial_review_queue(
                 continue
             writer.writerow(dict(zip(fields, [item.institution_slug, item.title, item.url, item.published_date,
                 item.priority, item.score, item.fetch_status, item.summary[:800],
-                "；".join((["经济与企业来源"] if broad_source else []) + (["研究关注词待复核"] if matches else [])),
+                "；".join((["经济与企业来源"] if broad_source else []) + (["研究关注词待复核"] if matches else ["开放发现：未命中现有关注词"])),
                 "；".join(dict.fromkeys(interest.level for interest, _ in matches)),
                 "；".join(interest.name for interest, _ in matches),
                 "；".join(dict.fromkeys(alias for _, hits in matches for alias in hits)),
