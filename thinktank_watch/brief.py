@@ -13,6 +13,10 @@ from pathlib import Path
 from textwrap import wrap
 
 from .models import ArticleCandidate
+from .editorial import (
+    editorial_fingerprint, inspect_weekly_editorial, load_weekly_editorial,
+    render_editorial_html, render_editorial_markdown, validate_weekly_editorial,
+)
 from .focus import (
     GOVERNANCE_ONLY_TAGS,
     INNOVATION_SUPPORT_TAGS,
@@ -424,6 +428,7 @@ def inspect_weekly_comic_report(
         "selected_chart_count": html_text.count('<figure class="selected-chart"'),
         "pdf_image_count": pdf_images,
         "blocked_hits": blocked_hits,
+        "editorial_failures": inspect_weekly_editorial(brief_root, date, candidates, html_text),
         "missing_files": [
             str(path)
             for path in [md_path, html_path, pdf_path]
@@ -432,9 +437,10 @@ def inspect_weekly_comic_report(
     }
 
 
-def _weekly_pdf_toc_entry_lines(index: int, item: ArticleCandidate, page: int) -> list[str]:
+def _weekly_pdf_toc_entry_lines(index: int, item: ArticleCandidate, page: int | None = None) -> list[str]:
     title = item.chinese_title or item.title
-    text = f"P.{page:02d}  主题 {index:02d}｜[{item.priority}] {title}"
+    # Legacy PDF navigation uses real destinations, never estimated page numbers.
+    text = f"主题 {index:02d}｜[{item.priority}] {title}"
     wrapped = wrap(_clean_text(text), width=PDF_TOC_WIDTH_CHARS)
     if len(wrapped) <= 1:
         return wrapped
@@ -456,11 +462,8 @@ def _weekly_pdf_toc_page_count(priority_items: list[ArticleCandidate]) -> int:
 
 
 def weekly_pdf_page_plan(candidates: list[ArticleCandidate]) -> tuple[dict[str, int], dict[str, int]]:
-    priority_items = weekly_priority_items(candidates)
-    # Four fixed front pages: cover/situation, must reads, viewpoints and TOC.
-    topic_pages = {item.url: 5 + index * 2 for index, item in enumerate(priority_items)}
-    analysis_pages = {item.url: 6 + index * 2 for index, item in enumerate(priority_items)}
-    return topic_pages, analysis_pages
+    # Kept for callers of the historical API; flow layout has no predicted pages.
+    return {}, {}
 
 
 def _weekly_summary_sections(candidate: ArticleCandidate) -> dict[str, str]:
@@ -667,45 +670,28 @@ def weekly_chapter_viewpoints(
     return [(chapter, items[:per_chapter]) for chapter, items in ordered]
 
 
-def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
+def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate], editorial: dict | None = None) -> str:
     priority_items = weekly_priority_items(candidates)
-    top_reads = weekly_top_reads(candidates)
-    viewpoints = weekly_chapter_viewpoints(candidates)
-
+    window_start = (Date.fromisoformat(date) - timedelta(days=6)).isoformat()
+    anchors = {item.url: _topic_anchor(index) for index, item in enumerate(priority_items, 1)}
     lines = [
-        f"# 国际科技智库周报（{date}）",
+        f"# 国际科技智库周报（{date}）｜资料窗口：{window_start} 至 {date}",
         "",
-        "## 目录",
+        f"本期收录概况：收录 {len(candidates)} 条｜重点 {len(priority_items)} 条｜本期收录机构 {len({item.institution_slug for item in candidates})} 家。",
         "",
     ]
-    for index, item in enumerate(priority_items, 1):
-        lines.append(
-            f"- [主题 {index:02d}｜{item.chinese_title or item.title}](#{_topic_anchor(index)})"
-        )
-    lines.extend(["", "## 本周态势", "", weekly_situation_summary(candidates), ""])
-
-    if top_reads:
-        lines.extend(["## 本周必读", ""])
-        for index, item in enumerate(top_reads, 1):
-            lines.extend(
-                [
-                    f"{index}. **[{item.chinese_title or item.title}]({item.url})**",
-                    f"   - **研判**：{weekly_judgment_sentence(item, 180)}",
-                    f"   - **证据**：{weekly_evidence_sentence(item, 160)}",
-                    f"   - **来源**：{item.institution_name}｜{item.priority}｜{weekly_chapter_name(item)}",
-                ]
-            )
-        lines.append("")
-
-    if viewpoints:
-        lines.extend(["## 议题观点速览", ""])
-        for chapter, items in viewpoints:
-            lines.extend([f"### {chapter}（{len(items)} 条）", ""])
-            for item in items:
-                lines.append(f"- **{item.institution_name}**：{weekly_judgment_sentence(item, 240)}")
-            lines.append("")
-
-    lines.extend(["## 主题展开", ""])
+    if editorial is not None:
+        validate_weekly_editorial(editorial, date, candidates)
+        lines.extend([f'<!-- weekly-editorial-sha256: {editorial_fingerprint(editorial, candidates)} -->', '', render_editorial_markdown(editorial, anchors), ''])
+    else:
+        lines.extend(["首页编选待完成；当前仅提供本期实际收录篇章的阅读导航。" if priority_items else "本期没有 P0/P1 重点条目。", ""])
+    navigation = ['<a id="reading-navigation"></a>', "## 阅读导航", ""]
+    navigation.extend(f"- [主题 {index:02d}｜{item.chinese_title or item.title}](#{_topic_anchor(index)}) · {item.institution_name}" for index, item in enumerate(priority_items, 1))
+    if editorial is None:
+        lines.extend(navigation)
+    else:
+        lines.extend([f'[完整阅读导航（{len(priority_items)} 篇）](#reading-navigation)', ''])
+    lines.extend(["", "## 主题展开", ""])
     if not priority_items:
         lines.extend(["本周无 P0/P1 重点条目。", ""])
     for index, item in enumerate(priority_items, 1):
@@ -740,6 +726,8 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate])
             reference = _professionalize_weekly_sentence(item, sections["中国/上海参考"])
             lines.append(f"- **中国/上海参考**：{_bold_first_sentence(reference)}")
         lines.append("")
+    if editorial is not None:
+        lines.extend(["", *navigation])
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -763,20 +751,34 @@ def _weekly_core_is_chinese_and_substantive(value: str) -> bool:
 
 
 def weekly_thin_core_items(candidates: list[ArticleCandidate]) -> list[ArticleCandidate]:
-    """P0/P1 items whose 核心观点 is too thin to convey stance and evidence.
+    """Flag structurally thin P0/P1 prose, without certifying its quality.
 
-    A one-line core summary tells readers what a report is about but not what
-    the institution actually argues. These items should be rewritten from the
-    source material before the weekly brief is rendered.
+    Authored selections carry the substantive prose when present; their short
+    guide only needs to remain non-empty, readable Chinese. Legacy cards keep
+    the existing core-text threshold.
     """
     thin: list[ArticleCandidate] = []
     for item in weekly_priority_items(candidates):
         core = _clean_text(summary_sections(item)["核心观点"])
-        sentence_count = len(re.findall(r"[。！？.!?]", core))
+        highlights = weekly_highlights_markdown(item)
+        checked_text = core
+        if highlights:
+            from bs4 import BeautifulSoup
+
+            soup = BeautifulSoup(render_highlights_markdown(highlights), "html.parser")
+            for node in soup.select("figure, pre, code"):
+                node.decompose()
+            checked_text = _clean_text(soup.get_text(" ", strip=True))
+            chinese_core = len(re.findall(r"[\u4e00-\u9fff]", core))
+            latin_core = len(re.findall(r"[A-Za-z]", core))
+            if not core or chinese_core == 0 or chinese_core < latin_core or any(marker in core for marker in _WEEKLY_EDITORIAL_BOILERPLATE):
+                thin.append(item)
+                continue
+        sentence_count = len(re.findall(r"[。！？.!?]", checked_text))
         if (
-            len(core) < THIN_CORE_MIN_CHARS
+            len(checked_text) < THIN_CORE_MIN_CHARS
             or sentence_count < THIN_CORE_MIN_SENTENCES
-            or not _weekly_core_is_chinese_and_substantive(core)
+            or not _weekly_core_is_chinese_and_substantive(checked_text)
         ):
             thin.append(item)
     return thin
@@ -836,8 +838,9 @@ def render_weekly_audit_markdown(date: str, candidates: list[ArticleCandidate]) 
     lines.extend(["", "## 核心观点待充实", ""])
     if thin_core_items:
         lines.append(
-            f"以下 {len(thin_core_items)} 条 P0/P1 条目核心观点过薄（少于 {THIN_CORE_MIN_SENTENCES} 句或 {THIN_CORE_MIN_CHARS} 字），"
-            "只能看出报告主题、看不出机构态度和论据；渲染周报前应回原文补写为「对象与背景、核心判断与态度、主要论据、（如有）争议或反方观点」的结构。"
+            f"以下 {len(thin_core_items)} 条 P0/P1 条目的摘要或正文触发最低文字结构检查。"
+            f"有精华选编时检查完整选编正文是否少于 {THIN_CORE_MIN_SENTENCES} 句或 {THIN_CORE_MIN_CHARS} 字，并核对摘要非空且可读；"
+            "无选编时沿用核心观点检查。请回原文核查内容是否缺失或过薄，不以补足字数代替实质复核。"
         )
         lines.append("")
         for item in thin_core_items:
@@ -856,9 +859,10 @@ def render_periodic_brief_markdown(
     cadence: str = "daily",
     comic_paths: list[str] | None = None,
     comic_notes: list[str] | None = None,
+    editorial: dict | None = None,
 ) -> str:
     if cadence == "weekly":
-        return render_weekly_reader_markdown(date, candidates)
+        return render_weekly_reader_markdown(date, candidates, editorial=editorial)
 
     title = BRIEF_CADENCE_LABELS.get(cadence, BRIEF_CADENCE_LABELS["daily"])
     period_word = "本周" if cadence == "weekly" else "本日"
@@ -994,8 +998,8 @@ def render_daily_brief_markdown(date: str, candidates: list[ArticleCandidate]) -
     return render_periodic_brief_markdown(date, candidates, cadence="daily")
 
 
-def render_weekly_brief_markdown(date: str, candidates: list[ArticleCandidate]) -> str:
-    return render_periodic_brief_markdown(date, candidates, cadence="weekly")
+def render_weekly_brief_markdown(date: str, candidates: list[ArticleCandidate], editorial: dict | None = None) -> str:
+    return render_periodic_brief_markdown(date, candidates, cadence="weekly", editorial=editorial)
 
 
 def load_daily_brief_candidates(
@@ -1148,6 +1152,25 @@ a { color: #14456e; text-decoration: none; }
 .cover-kicker { letter-spacing: .35em; font-size: 8.5pt; color: #b84c3d; font-weight: 700; margin: 6mm 0 2.4mm; text-transform: uppercase; }
 .cover h1 { font-size: 26pt; margin: 0 0 3.2mm; color: #14456e; line-height: 1.2; }
 .cover .issue-meta { color: #5f6b75; font-size: 10pt; border-top: 1.4pt solid #172026; border-bottom: .4pt solid #c7d0d8; padding: 2.6mm 0; display: flex; gap: 6mm; flex-wrap: wrap; }
+.issue-opening { padding: 4mm 1mm; }
+.issue-opening .cover-kicker { margin-top: 2mm; }
+.issue-opening h2 { color: #14456e; font-size: 13pt; margin: 3mm 0 1.6mm; break-after: avoid; }
+.issue-opening h3 { font-size: 10.5pt; margin: 1mm 0; break-after: avoid; }
+.issue-opening p { margin: 1mm 0 1.8mm; orphans: 2; widows: 2; }
+.editorial-lead { border-left: 2pt solid #1f5f8b; padding-left: 4mm; }
+.editorial-lead h2 { font-size: 16pt; line-height: 1.4; }
+.editorial-discovery { border-bottom: .4pt solid #d7dee5; padding: 2.4mm 0; break-inside: auto; }
+.editorial-discovery.with-metric { display: grid; grid-template-columns: 27mm minmax(0, 1fr); gap: 5mm; }
+.editorial-source { font-size: 8.5pt; color: #5f6b75; }
+.editorial-metric strong { display: block; color: #b84c3d; font: 700 23pt/1.25 Georgia, serif; }
+.editorial-metric span { display: block; margin-top: 1.4mm; color: #5f6b75; font-size: 9pt; line-height: 1.5; }
+.editorial-connections { border-left: 2pt solid #4f7d5a; background: #f4f6f2; margin-top: 3mm; padding: 1mm 4mm; }
+.editorial-navigation-link { border-top: .4pt solid #c7d0d8; padding-top: 2mm; text-align: right; }
+.reading-navigation { margin-top: 4mm; border-top: .5pt solid #c7d0d8; padding-top: 1mm; }
+.reading-navigation ol { columns: 2; column-gap: 7mm; list-style: none; padding: 0; margin: 0; }
+.reading-navigation li { font-size: 9pt; line-height: 1.5; margin: 0 0 2mm; break-inside: avoid; }
+.reading-navigation .meta { color: #5f6b75; }
+.editorial-pending { color: #5f6b75; }
 .situation { background: #f2f6f9; border-left: 3pt solid #1f5f8b; padding: 3.2mm 4.2mm; margin: 4.6mm 0; }
 .situation h2, .top-reads h2, .viewpoints > h2, .toc h2, .comic-lead h2 { font-size: 13.5pt; color: #14456e; margin: 0 0 3mm; }
 .situation p { margin: 0; font-size: 10pt; }
@@ -1329,76 +1352,45 @@ def render_weekly_magazine_html(
     candidates: list[ArticleCandidate],
     comic_paths: list[str] | None = None,
     comic_notes: list[str] | None = None,
+    editorial: dict | None = None,
 ) -> str:
     priority_items = weekly_priority_items(candidates)
-    top_reads = weekly_top_reads(candidates)
-    viewpoints = weekly_chapter_viewpoints(candidates, per_chapter=2)
+    window_start = (Date.fromisoformat(date) - timedelta(days=6)).isoformat()
     institutions = len({item.institution_slug for item in candidates})
+    anchors = {item.url: _topic_anchor(index) for index, item in enumerate(priority_items, 1)}
+    if editorial is not None:
+        validate_weekly_editorial(editorial, date, candidates)
 
     body: list[str] = ['<div class="brandbar"><span></span><span></span><span></span></div>']
 
-    # Four fixed front pages keep the three-layer assessment and TOC independent.
-    body.append('<div class="page cover pagebreak">')
+    # One flowing opening, whose length follows the explicitly authored content.
+    body.append('<div class="page cover issue-opening">')
     body.append('<p class="cover-kicker">Global Tech Think Tank Watch</p>')
     body.append("<h1>国际科技智库周报</h1>")
     body.append(
         '<div class="issue-meta">'
-        f"<span>{escape(date)}</span>"
-        f"<span>新增 {len(candidates)} 条</span>"
-        f"<span>P0/P1 重点 {len(priority_items)} 条</span>"
-        f"<span>覆盖机构 {institutions} 家</span>"
+        f"<span>资料窗口 {window_start} 至 {escape(date)}</span>"
+        f"<span>本期收录概况：{len(candidates)} 条 · 重点 {len(priority_items)} 条 · 本期收录机构 {institutions} 家</span>"
         "</div>"
     )
-    body.append(
-        '<section class="situation avoid-break"><h2>本周态势</h2>'
-        f"<p>{escape(weekly_situation_summary(candidates))}</p></section>"
-    )
-    body.append("</div>")
-
-    body.append('<div class="page top-reads-page pagebreak">')
-    if top_reads:
-        body.append('<section class="top-reads"><h2>本周必读</h2><ol>')
-        for item in top_reads:
-            judgment = escape(weekly_judgment_sentence(item, 180))
-            evidence = escape(weekly_evidence_sentence(item, 160))
-            title = escape(_clean_text(item.chinese_title or item.title))
-            url = escape(item.url, quote=True)
-            body.append(
-                "<li><span>"
-                f'<span class="read-title"><a href="{url}">{title}</a></span>'
-                f'<span class="read-digest"><b>研判</b>　{judgment}</span>'
-                + (f'<span class="read-evidence"><b>证据</b>　{evidence}</span>' if evidence else "")
-                + f'<span class="meta">{escape(item.institution_name)} · {escape(item.priority)} · {escape(weekly_chapter_name(item))}</span>'
-                "</span></li>"
-            )
-        body.append("</ol></section>")
-    body.append("</div>")
-
-    # Viewpoints page.
-    body.append('<div class="page pagebreak">')
-    if viewpoints:
-        body.append('<section class="viewpoints"><h2>议题观点速览</h2>')
-        for chapter, items in viewpoints:
-            body.append('<div class="chapter">')
-            body.append(f"<h3>{escape(chapter)}（{len(items)} 条）</h3><ul>")
-            for item in items:
-                body.append(
-                    f"<li><b>{escape(item.institution_name)}</b>："
-                    f"{escape(weekly_judgment_sentence(item, 96))}</li>"
-                )
-            body.append("</ul></div>")
-        body.append("</section>")
-    body.append("</div>")
-
-    # TOC page.
-    body.append('<div class="page pagebreak"><section class="toc"><h2>本期目录</h2><ul>')
+    if editorial is not None:
+        body.append(render_editorial_html(editorial, anchors))
+    else:
+        pending_text = "首页编选待完成；当前仅提供本期实际收录篇章的阅读导航。" if priority_items else "本期没有 P0/P1 重点条目。"
+        body.append(f'<p class="editorial-pending">{pending_text}</p>')
+    navigation = ['<nav class="reading-navigation" id="reading-navigation" aria-label="阅读导航"><h2>阅读导航</h2><ol>']
     for index, item in enumerate(priority_items, 1):
-        body.append(
-            f'<li><span class="pri">{escape(item.priority)}</span>'
-            f'<a href="#{_topic_anchor(index)}">主题 {index:02d}｜'
-            f"{escape(_clean_text(item.chinese_title or item.title))}</a></li>"
+        navigation.append(
+            f'<li><a href="#{_topic_anchor(index)}">{index:02d}｜'
+            f'{escape(_clean_text(item.chinese_title or item.title))}</a> '
+            f'<span class="meta">· {escape(item.institution_name)}</span></li>'
         )
-    body.append("</ul></section></div>")
+    navigation.append("</ol></nav>")
+    if editorial is None:
+        body.extend(navigation)
+    else:
+        body.append(f'<p class="editorial-navigation-link"><a href="#reading-navigation">完整阅读导航（{len(priority_items)} 篇）</a></p>')
+    body.append("</div>")
 
     # Optional front comic lead.
     if comic_paths:
@@ -1419,11 +1411,16 @@ def render_weekly_magazine_html(
     if not priority_items:
         body.append('<div class="page"><h2>本周无 P0/P1 重点条目</h2><p>资料索引仍保留全部新增条目。</p></div>')
 
+    if editorial is not None:
+        body.extend(['<div class="page">', *navigation, '</div>'])
+
     body.append(f'<p class="footer-note">国际科技智库周报 · {escape(date)} · 私有归档，仅限内部研判使用</p>')
 
     return (
         "<!doctype html>\n"
         '<html lang="zh-CN">\n<head>\n<meta charset="utf-8">\n'
+        + (f'<meta name="weekly-editorial-sha256" content="{editorial_fingerprint(editorial, candidates)}">\n' if editorial is not None else '')
+        +
         f"<title>国际科技智库周报（{escape(date)}）</title>\n"
         f"<style>{MAGAZINE_CSS}</style>\n</head>\n<body>\n<main>\n"
         + "\n".join(body)
@@ -1503,7 +1500,11 @@ def write_periodic_brief(
     cadence: str = "daily",
     comic_paths: list[str] | None = None,
     comic_notes: list[str] | None = None,
+    editorial: dict | None = None,
 ) -> tuple[Path, Path, Path]:
+    if cadence == "weekly":
+        editorial = (validate_weekly_editorial(editorial, date, candidates) if editorial is not None
+                     else load_weekly_editorial(root, date, candidates))
     title = BRIEF_CADENCE_LABELS.get(cadence, BRIEF_CADENCE_LABELS["daily"])
     directory_name = BRIEF_CADENCE_DIRECTORIES.get(cadence, BRIEF_CADENCE_DIRECTORIES["daily"])
     year = date[:4]
@@ -1517,19 +1518,20 @@ def write_periodic_brief(
         cadence=cadence,
         comic_paths=comic_paths,
         comic_notes=comic_notes,
+        editorial=editorial,
     )
     markdown_path.write_text(markdown, encoding="utf-8")
     if cadence == "weekly":
         audit_path = directory / f"{date}_{title}_资料索引.md"
         audit_path.write_text(render_weekly_audit_markdown(date, candidates), encoding="utf-8")
         html_path.write_text(
-            render_weekly_magazine_html(date, candidates, comic_paths=comic_paths, comic_notes=comic_notes),
+            render_weekly_magazine_html(date, candidates, comic_paths=comic_paths, comic_notes=comic_notes, editorial=editorial),
             encoding="utf-8",
         )
         pdf_path = directory / f"{date}_{title}.pdf"
         if not write_pdf_from_html(html_path, pdf_path):
-            if any(weekly_highlights_markdown(item) for item in candidates):
-                raise RuntimeError("Browser PDF rendering is required to preserve authored selections and charts")
+            if editorial is not None or any(weekly_highlights_markdown(item) for item in candidates):
+                raise RuntimeError("Browser PDF rendering is required to preserve authored selections, editorial content and charts")
             pdf_path = write_weekly_reader_pdf(pdf_path, date, candidates)
     else:
         html_path.write_text(markdown_to_html(markdown, f"{title}（{date}）"), encoding="utf-8")
@@ -1547,6 +1549,7 @@ def write_weekly_brief(
     candidates: list[ArticleCandidate],
     comic_paths: list[str] | None = None,
     comic_notes: list[str] | None = None,
+    editorial: dict | None = None,
 ) -> tuple[Path, Path, Path]:
     return write_periodic_brief(
         root,
@@ -1555,6 +1558,7 @@ def write_weekly_brief(
         cadence="weekly",
         comic_paths=comic_paths,
         comic_notes=comic_notes,
+        editorial=editorial,
     )
 
 
@@ -1838,7 +1842,6 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
             body_y -= line_height
 
     priority_items = weekly_priority_items(candidates)
-    topic_pages, _ = weekly_pdf_page_plan(candidates)
     chapter_groups: dict[str, list[ArticleCandidate]] = {}
     for item in priority_items:
         chapter_groups.setdefault(weekly_chapter_name(item), []).append(item)
@@ -1995,7 +1998,7 @@ def write_weekly_reader_pdf(path: str | Path, run_date: str, candidates: list[Ar
         pdf.drawString(margin, y, "点击标题跳转至对应主题页")
         y -= 22
         for index, item in enumerate(priority_items, 1):
-            lines = _weekly_pdf_toc_entry_lines(index, item, topic_pages[item.url])
+            lines = _weekly_pdf_toc_entry_lines(index, item)
             needed_height = len(lines) * 13 + 8
             if y - needed_height < 64:
                 new_page()

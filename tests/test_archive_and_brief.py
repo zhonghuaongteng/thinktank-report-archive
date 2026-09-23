@@ -743,8 +743,8 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         brief = render_weekly_brief_markdown("2026-07-05", candidates)
 
-        self.assertLess(brief.index("## 目录"), brief.index("## 本周态势"))
-        self.assertLess(brief.index("## 本周态势"), brief.index("## 主题展开"))
+        self.assertLess(brief.index("本期收录概况"), brief.index("## 阅读导航"))
+        self.assertLess(brief.index("## 阅读导航"), brief.index("## 主题展开"))
         self.assertNotIn("## 新增概览", brief)
         self.assertNotIn("## 最近写入", brief)
         self.assertNotIn("## 导读漫画", brief)
@@ -753,8 +753,8 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertEqual(brief.count('<a id="topic-'), 15)
         self.assertIn("[主题 15｜创新支撑报告15](#topic-15)", brief)
         self.assertIn("[创新支撑报告15](https://example.org/innovation/15)", brief)
-        self.assertIn("## 本周必读", brief)
-        self.assertIn("## 议题观点速览", brief)
+        self.assertNotIn("## 本周必读", brief)
+        self.assertNotIn("## 议题观点速览", brief)
         self.assertIn("**核心判断**", brief)
         self.assertIn("**主要论据**", brief)
 
@@ -931,8 +931,8 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertTrue(audit_path.exists())
             markdown = Path(markdown_path).read_text(encoding="utf-8")
             self.assertIn("# 国际科技智库周报（2026-07-05）", markdown)
-            self.assertIn("## 目录", markdown)
-            self.assertIn("## 本周态势", markdown)
+            self.assertIn("## 阅读导航", markdown)
+            self.assertIn("本期收录概况", markdown)
             self.assertIn("### 主题 01｜[P1] [创新支撑](https://example.org/innovation)", markdown)
             self.assertIn('[主题 01｜创新支撑](#topic-01)', markdown)
             self.assertNotIn("## 新增概览", markdown)
@@ -1133,7 +1133,7 @@ class ArchiveAndBriefTests(unittest.TestCase):
         self.assertIn("跨国算力", evidence)
         self.assertNotIn("报告依据", evidence)
 
-    def test_weekly_pdf_page_plan_reserves_two_pages_per_topic(self):
+    def test_weekly_pdf_page_plan_does_not_fabricate_page_numbers(self):
         from thinktank_watch.brief import weekly_pdf_page_plan
 
         candidates = [
@@ -1155,10 +1155,8 @@ class ArchiveAndBriefTests(unittest.TestCase):
 
         topic_pages, analysis_pages = weekly_pdf_page_plan(candidates)
 
-        self.assertEqual(topic_pages[candidates[0].url], 5)
-        self.assertEqual(analysis_pages[candidates[0].url], 6)
-        self.assertEqual(topic_pages[candidates[1].url], 7)
-        self.assertEqual(analysis_pages[candidates[1].url], 8)
+        self.assertEqual(topic_pages, {})
+        self.assertEqual(analysis_pages, {})
 
     def test_render_weekly_magazine_html_contains_cover_and_cards(self):
         from thinktank_watch.brief import render_weekly_magazine_html
@@ -1184,16 +1182,17 @@ class ArchiveAndBriefTests(unittest.TestCase):
         html = render_weekly_magazine_html("2026-07-05", [candidate])
 
         self.assertIn("@page", html)
-        self.assertIn("本周态势", html)
-        self.assertIn("本周必读", html)
-        self.assertIn("议题观点速览", html)
+        self.assertIn("本期收录概况", html)
+        self.assertIn("阅读导航", html)
+        self.assertNotIn("本周态势", html)
         self.assertIn('id="topic-01"', html)
         self.assertIn("judgment-box", html)
         self.assertIn("核心判断", html)
         self.assertIn('<a href="https://example.org/innovation">创新支撑</a>', html)
         self.assertIn("政策建议", html)
         self.assertIn("中国 / 上海参考", html)
-        self.assertIn('class="page top-reads-page pagebreak"', html)
+        self.assertIn('class="page cover issue-opening"', html)
+        self.assertNotIn('class="page top-reads-page pagebreak"', html)
         self.assertIn('class="topic-card topic-primary"', html)
         self.assertIn('class="topic-card topic-analysis"', html)
         self.assertNotIn('class="topic-card avoid-break"', html)

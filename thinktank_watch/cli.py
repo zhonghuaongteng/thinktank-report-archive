@@ -328,18 +328,23 @@ def should_archive_candidate(candidate: ArticleCandidate) -> bool:
 
 
 def write_run_brief(args: argparse.Namespace, run_date: str, written: list[ArticleCandidate]) -> None:
-    candidates = written
-    if not args.skip_kb:
-        indexed = load_daily_brief_candidates(args.archive_root, args.kb_root, run_date)
-        if indexed:
-            candidates = indexed
     if getattr(args, "_weekly_run", False):
-        candidates = [
-            item for item in candidates
-            if candidate_within_weekly_window(
-                item, run_date, getattr(args, "lookback_days", DEFAULT_WEEKLY_LOOKBACK_DAYS)
-            )
-        ]
+        lookback_days = getattr(args, "lookback_days", DEFAULT_WEEKLY_LOOKBACK_DAYS)
+        # Match the final weekly renderer, including items archived on earlier
+        # days or skipped as already archived during this collection run.
+        candidates = load_weekly_archive_candidates(args.archive_root, run_date, lookback_days)
+        if not candidates:
+            # Preserve the no-archive path for freshly written index-only items.
+            candidates = [
+                item for item in written
+                if candidate_within_weekly_window(item, run_date, lookback_days)
+            ]
+    else:
+        candidates = written
+        if not args.skip_kb:
+            indexed = load_daily_brief_candidates(args.archive_root, args.kb_root, run_date)
+            if indexed:
+                candidates = indexed
     write_periodic_brief(
         args.brief_root,
         run_date,
@@ -571,6 +576,7 @@ def check_weekly_comics(args: argparse.Namespace) -> int:
         failures.append("missing_files=" + ";".join(str(item) for item in stats["missing_files"]))
     if stats["blocked_hits"]:
         failures.append("blocked_hits=" + ";".join(str(item) for item in stats["blocked_hits"]))
+    failures.extend(f"editorial={message}" for message in stats.get("editorial_failures", []))
     for key, value in stats.items():
         print(f"{key}={value}")
     if failures:
@@ -578,6 +584,8 @@ def check_weekly_comics(args: argparse.Namespace) -> int:
         for failure in failures:
             print(f"failure={failure}")
         return 1
+    if expected:
+        print("weekly_editorial_check=structure_and_review_record_only")
     print("weekly_comic_check=ok")
     return 0
 
