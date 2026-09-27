@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import hashlib
+import logging
+from http.client import HTTPException
 from io import BytesIO
 import math
 import re
@@ -26,6 +28,8 @@ from .parsers.generic import (
 )
 from .parsers.rand import parse_rand_detail
 from .parsers.stepi import extract_stepi_publication_candidates, parse_stepi_detail
+
+logger = logging.getLogger(__name__)
 
 
 USER_AGENT = (
@@ -326,7 +330,33 @@ def _date_from_feed(value: str) -> str:
 def fetch_feed_candidates(institution: Institution, limit: int = 20) -> list[ArticleCandidate]:
     candidates: list[ArticleCandidate] = []
     for feed_url in institution.feeds:
-        parsed = feedparser.parse(feed_url)
+        try:
+            # Fetch explicitly: feedparser's URL reader has no per-request timeout.
+            # Reuse the HTTP behavior of the other source readers and keep the
+            # final URL so relative links in feeds still resolve correctly.
+            with make_client() as client:
+                response = client.get(feed_url, timeout=30)
+                response.raise_for_status()
+            headers = dict(response.headers)
+            headers["content-location"] = str(response.url)
+            parsed = feedparser.parse(response.content, response_headers=headers)
+        except (OSError, HTTPException, httpx.HTTPError) as exc:
+            logger.warning(
+                "feed_fetch_failed institution=%s url=%s error=%s status=%s errno=%s; skipping feed",
+                institution.slug, feed_url, type(exc).__name__,
+                getattr(getattr(exc, "response", None), "status_code", "unknown"),
+                getattr(exc, "errno", "unknown"),
+            )
+            continue
+        if parsed.get("status", 200) >= 400 or (
+            not parsed.entries and parsed.get("bozo_exception") is not None
+        ):
+            logger.warning(
+                "feed_fetch_failed institution=%s url=%s status=%s error=%s; skipping feed",
+                institution.slug, feed_url, parsed.get("status", "unknown"),
+                type(parsed.get("bozo_exception")).__name__,
+            )
+            continue
         for entry in parsed.entries[:limit]:
             link = getattr(entry, "link", "") or getattr(entry, "id", "")
             if not link:
@@ -641,7 +671,8 @@ def fetch_list_candidates(
             response = client.get(page, timeout=30)
             response.raise_for_status()
             static_error = False
-        except httpx.HTTPError:
+        except httpx.HTTPError as exc:
+            logger.warning("list_fetch_failed institution=%s url=%s error=%s; continuing other routes", institution.slug, page, type(exc).__name__)
             static_error = True
             response = None
         if response is not None and institution.slug == "stepi":
@@ -694,7 +725,8 @@ def fetch_list_candidates(
         ):
             try:
                 markdown_text = fetch_text_proxy(client, page)
-            except httpx.HTTPError:
+            except httpx.HTTPError as exc:
+                logger.warning("list_proxy_failed institution=%s url=%s error=%s; skipping page", institution.slug, page, type(exc).__name__)
                 markdown_text = ""
             if markdown_text:
                 for label, link in extract_text_proxy_links(markdown_text, page, limit=1000):

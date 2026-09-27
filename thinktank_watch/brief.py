@@ -703,8 +703,7 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate],
                 f'<a id="{_topic_anchor(index)}"></a>',
                 f"### 主题 {index:02d}｜[{item.priority}] {_markdown_link(title, item.url)}",
                 "",
-                f"- **来源**：{item.institution_name}｜**议题**：{weekly_chapter_name(item)}",
-                f"- **主题**：{', '.join(item.topic_tags) or '待分类'}",
+                f"- **来源**：{item.institution_name}｜{item.published_date}",
             ]
         )
         comic_src = weekly_topic_comic_markdown_src(date, index)
@@ -726,6 +725,15 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate],
             reference = _professionalize_weekly_sentence(item, sections["中国/上海参考"])
             lines.append(f"- **中国/上海参考**：{_bold_first_sentence(reference)}")
         lines.append("")
+    short_items = [item for item in candidates if item.priority not in {"P0", "P1"} and item.chinese_summary.strip()]
+    if short_items:
+        lines.extend(["", "## 本期简讯", ""])
+        for item in short_items:
+            lines.extend([
+                f"### {_markdown_link(item.chinese_title or item.title, item.url)}", "",
+                f"{item.institution_name}｜{item.published_date}", "",
+                _weekly_summary_sections(item)["核心观点"], "",
+            ])
     if editorial is not None:
         lines.extend(["", *navigation])
     return "\n".join(lines).rstrip() + "\n"
@@ -1170,6 +1178,7 @@ a { color: #14456e; text-decoration: none; }
 .reading-navigation ol { columns: 2; column-gap: 7mm; list-style: none; padding: 0; margin: 0; }
 .reading-navigation li { font-size: 9pt; line-height: 1.5; margin: 0 0 2mm; break-inside: avoid; }
 .reading-navigation .meta { color: #5f6b75; }
+.issue-opening .reading-navigation .meta { display: none; }
 .editorial-pending { color: #5f6b75; }
 .situation { background: #f2f6f9; border-left: 3pt solid #1f5f8b; padding: 3.2mm 4.2mm; margin: 4.6mm 0; }
 .situation h2, .top-reads h2, .viewpoints > h2, .toc h2, .comic-lead h2 { font-size: 13.5pt; color: #14456e; margin: 0 0 3mm; }
@@ -1197,8 +1206,8 @@ a { color: #14456e; text-decoration: none; }
 .comic-lead img { width: 100%; border: .6pt solid #d7dee5; }
 .comic-lead .note { font-size: 9pt; color: #40505c; background: #faf6ee; border-left: 2.4pt solid #c89b52; padding: 3mm 4mm; margin: 0 0 5mm; }
 
-.topic-card { padding: 5mm 10mm; break-inside: auto; }
-.topic-primary { page-break-before: auto; break-before: auto; page-break-inside: avoid; break-inside: avoid; padding-bottom: 0; }
+.topic-card { padding: 3mm 10mm; break-inside: auto; }
+.topic-primary { page-break-before: always; break-before: page; page-break-inside: avoid; break-inside: avoid; padding-bottom: 0; }
 .topic-analysis { page-break-before: auto; break-before: auto; padding-top: 0; }
 .topic-card .card-head { display: flex; align-items: center; gap: 3mm; margin-bottom: 3mm; }
 .chip { font-size: 8pt; font-weight: 700; padding: .8mm 3mm; border-radius: 999px; }
@@ -1211,12 +1220,12 @@ a { color: #14456e; text-decoration: none; }
 .topic-card h3 a { color: #14456e; }
 .topic-card .meta { color: #5f6b75; font-size: 8.5pt; margin-bottom: 3mm; }
 .topic-card figure.comic { margin: 0 0 3mm; text-align: center; break-inside: avoid; }
-.topic-card figure.comic img { display: block; width: auto; height: auto; max-width: 100%; max-height: 88mm; margin: 0 auto; object-fit: contain; border: .6pt solid #d7dee5; border-radius: 2pt; }
+.topic-card figure.comic img { display: block; width: auto; height: auto; max-width: 100%; max-height: 82mm; margin: 0 auto; object-fit: contain; border: .6pt solid #d7dee5; border-radius: 2pt; }
 .topic-primary.selection-on-next-page figure.comic img { max-height: 125mm; }
 .highlights-map { border-top: .5pt solid #c7d0d8; padding-top: 3mm; margin-top: 4mm; font-size: 9pt; }
 .highlights-map h4 { margin: 0 0 1.5mm; color: #14456e; }
 .highlights-map ol { margin: 0; padding-left: 6mm; }
-.judgment-box { background: #14456e; color: #ffffff; padding: 4mm 5mm; border-radius: 2pt; margin-bottom: 3mm; page-break-inside: avoid; }
+.judgment-box { background: #14456e; color: #ffffff; padding: 3mm 5mm; border-radius: 2pt; margin-bottom: 3mm; page-break-inside: avoid; }
 .judgment-box .label { font-size: 8pt; letter-spacing: .25em; color: #bcd2e4; display: block; margin-bottom: 1.2mm; }
 .judgment-box p { margin: 0; font-size: 10.5pt; font-weight: 700; line-height: 1.55; }
 .topic-analysis .analysis-kicker { margin: 1mm 0 2mm; color: #b84c3d; font-weight: 800; letter-spacing: .18em; font-size: 9pt; break-after: avoid; }
@@ -1227,8 +1236,8 @@ a { color: #14456e; text-decoration: none; }
 .evidence li::before { content: ""; position: absolute; left: 1mm; top: 2.7mm; width: 2mm; height: 2mm; background: #c89b52; }
 .evidence p { margin: 2mm 0 4mm; font-size: 10pt; line-height: 1.75; orphans: 2; widows: 2; }
 .report-highlights { font-size: 10pt; line-height: 1.75; break-inside: auto; }
-.report-highlights h4, .report-highlights h5, .report-highlights h6 { color: #14456e; font-size: 11pt; margin: 4mm 0 2mm; break-after: avoid; }
-.report-highlights p, .report-highlights blockquote { margin: 2mm 0 4mm; orphans: 2; widows: 2; }
+.report-highlights h4, .report-highlights h5, .report-highlights h6 { color: #14456e; font-size: 11pt; margin: 3mm 0 2mm; break-after: avoid; }
+.report-highlights p, .report-highlights blockquote { margin: 2mm 0 3mm; orphans: 2; widows: 2; }
 .report-highlights ul, .report-highlights ol { padding-left: 6mm; break-inside: auto; }
 .report-highlights li { margin: 1.4mm 0; }
 .report-highlights blockquote { border-left: 2pt solid #c89b52; padding-left: 4mm; color: #40505c; }
@@ -1274,11 +1283,10 @@ def _magazine_topic_card_html(
         f'<section class="topic-card topic-primary{lead_class}" id="{_topic_anchor(index)}">',
         '<div class="card-head">',
         f'<span class="chip pri-{pri}">{pri}</span>',
-        f'<span class="chip chapter">{chapter}</span>',
         f'<span class="idx">主题 {index:02d} / {total:02d}</span>',
         "</div>",
         f'<h3><a href="{url}">{title}</a></h3>',
-        f'<p class="meta">{escape(item.institution_name)}｜{escape(", ".join(item.topic_tags) or "待分类")}'
+        f'<p class="meta">{escape(item.institution_name)}'
         + (f"｜{escape(item.published_date[:10])}" if item.published_date else "")
         + "</p>",
     ]
@@ -1386,10 +1394,7 @@ def render_weekly_magazine_html(
             f'<span class="meta">· {escape(item.institution_name)}</span></li>'
         )
     navigation.append("</ol></nav>")
-    if editorial is None:
-        body.extend(navigation)
-    else:
-        body.append(f'<p class="editorial-navigation-link"><a href="#reading-navigation">完整阅读导航（{len(priority_items)} 篇）</a></p>')
+    body.extend(navigation)
     body.append("</div>")
 
     # Optional front comic lead.
@@ -1411,8 +1416,18 @@ def render_weekly_magazine_html(
     if not priority_items:
         body.append('<div class="page"><h2>本周无 P0/P1 重点条目</h2><p>资料索引仍保留全部新增条目。</p></div>')
 
-    if editorial is not None:
-        body.extend(['<div class="page">', *navigation, '</div>'])
+    short_items = [item for item in candidates if item.priority not in {"P0", "P1"} and item.chinese_summary.strip()]
+    if short_items:
+        body.append('<section class="page short-briefs"><h2>本期简讯</h2>')
+        for item in short_items:
+            body.extend([
+                '<article class="short-brief avoid-break">',
+                f'<h3><a href="{escape(item.url, quote=True)}">{escape(item.chinese_title or item.title)}</a></h3>',
+                f'<p class="meta">{escape(item.institution_name)}｜{escape(item.published_date)}</p>',
+                f'<p>{escape(_weekly_summary_sections(item)["核心观点"])}</p>',
+                '</article>',
+            ])
+        body.append('</section>')
 
     body.append(f'<p class="footer-note">国际科技智库周报 · {escape(date)} · 私有归档，仅限内部研判使用</p>')
 

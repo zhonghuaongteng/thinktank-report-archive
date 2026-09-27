@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import logging
 import re
 import sys
 from datetime import date, timedelta
@@ -396,6 +397,10 @@ def collect_candidates(
                         candidate = enrich_detail_text_from_pdf(client, candidate)
                     except httpx.HTTPError as exc:
                         candidate.fetch_status = fetch_status_from_http_error(exc)
+                        logging.getLogger(__name__).warning(
+                            "detail_fetch_failed institution=%s url=%s error=%s; skipping item",
+                            institution.slug, candidate.url, type(exc).__name__,
+                        )
                 collected.append(candidate)
     return collected
 
@@ -776,6 +781,10 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
+    # Source failures are recoverable run diagnostics. Windows PowerShell 5
+    # can turn redirected native stderr into a terminating error under Stop.
+    # Keep these warnings on stdout; genuine failures still return nonzero.
+    logging.basicConfig(stream=sys.stdout, level=logging.WARNING)
     parser = build_parser()
     args = parser.parse_args(argv)
     return args.func(args)

@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="weekly-editorial-sha256" content="c490ce201404cad255bdc9538efc4bbd369d8e3099103058db5aa1d829200774">
+<title>国际科技智库周报（2026-09-27）</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+@page { size: A4; margin: 13mm 12mm; }
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
+  color: #172026; margin: 0; background: #eef1f4; line-height: 1.66; font-size: 10.5pt;
+}
+main { max-width: 186mm; margin: 0 auto; background: #ffffff; }
+@media screen { main { margin: 24px auto; box-shadow: 0 18px 48px rgba(23,32,38,.14); } body { padding: 0 12px; } }
+@media print { body { background: #ffffff; } main { max-width: none; } }
+h1, h2, h3 { font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", serif; }
+a { color: #14456e; text-decoration: none; }
+
+.page { padding: 10mm 11mm; }
+.pagebreak { page-break-after: always; }
+.avoid-break { page-break-inside: avoid; break-inside: avoid; }
+
+.brandbar { display: flex; height: 7px; }
+.brandbar span:nth-child(1) { flex: 4; background: #1f5f8b; }
+.brandbar span:nth-child(2) { flex: 2; background: #b84c3d; }
+.brandbar span:nth-child(3) { flex: 3; background: #4f7d5a; }
+
+.cover-kicker { letter-spacing: .35em; font-size: 8.5pt; color: #b84c3d; font-weight: 700; margin: 6mm 0 2.4mm; text-transform: uppercase; }
+.cover h1 { font-size: 26pt; margin: 0 0 3.2mm; color: #14456e; line-height: 1.2; }
+.cover .issue-meta { color: #5f6b75; font-size: 10pt; border-top: 1.4pt solid #172026; border-bottom: .4pt solid #c7d0d8; padding: 2.6mm 0; display: flex; gap: 6mm; flex-wrap: wrap; }
+.issue-opening { padding: 4mm 1mm; }
+.issue-opening .cover-kicker { margin-top: 2mm; }
+.issue-opening h2 { color: #14456e; font-size: 13pt; margin: 3mm 0 1.6mm; break-after: avoid; }
+.issue-opening h3 { font-size: 10.5pt; margin: 1mm 0; break-after: avoid; }
+.issue-opening p { margin: 1mm 0 1.8mm; orphans: 2; widows: 2; }
+.editorial-lead { border-left: 2pt solid #1f5f8b; padding-left: 4mm; }
+.editorial-lead h2 { font-size: 16pt; line-height: 1.4; }
+.editorial-discovery { border-bottom: .4pt solid #d7dee5; padding: 2.4mm 0; break-inside: auto; }
+.editorial-discovery.with-metric { display: grid; grid-template-columns: 27mm minmax(0, 1fr); gap: 5mm; }
+.editorial-source { font-size: 8.5pt; color: #5f6b75; }
+.editorial-metric strong { display: block; color: #b84c3d; font: 700 23pt/1.25 Georgia, serif; }
+.editorial-metric span { display: block; margin-top: 1.4mm; color: #5f6b75; font-size: 9pt; line-height: 1.5; }
+.editorial-connections { border-left: 2pt solid #4f7d5a; background: #f4f6f2; margin-top: 3mm; padding: 1mm 4mm; }
+.editorial-navigation-link { border-top: .4pt solid #c7d0d8; padding-top: 2mm; text-align: right; }
+.reading-navigation { margin-top: 4mm; border-top: .5pt solid #c7d0d8; padding-top: 1mm; }
+.reading-navigation ol { columns: 2; column-gap: 7mm; list-style: none; padding: 0; margin: 0; }
+.reading-navigation li { font-size: 9pt; line-height: 1.5; margin: 0 0 2mm; break-inside: avoid; }
+.reading-navigation .meta { color: #5f6b75; }
+.issue-opening .reading-navigation .meta { display: none; }
+.editorial-pending { color: #5f6b75; }
+.situation { background: #f2f6f9; border-left: 3pt solid #1f5f8b; padding: 3.2mm 4.2mm; margin: 4.6mm 0; }
+.situation h2, .top-reads h2, .viewpoints > h2, .toc h2, .comic-lead h2 { font-size: 13.5pt; color: #14456e; margin: 0 0 3mm; }
+.situation p { margin: 0; font-size: 10pt; }
+
+.top-reads ol { margin: 0; padding: 0; list-style: none; counter-reset: reads; }
+.top-reads li { counter-increment: reads; display: flex; gap: 3.4mm; padding: 3mm 0; border-bottom: .4pt dashed #c7d0d8; page-break-inside: avoid; }
+.top-reads li::before { content: counter(reads, decimal-leading-zero); font-family: Georgia, serif; font-size: 13pt; color: #b84c3d; font-weight: 700; min-width: 8mm; }
+.top-reads .read-title { display: block; font-family: "Source Han Serif SC", "Noto Serif CJK SC", SimSun, serif; font-weight: 800; font-size: 11pt; line-height: 1.45; margin-bottom: 1.2mm; }
+.top-reads .read-digest, .top-reads .read-evidence { display: block; font-size: 9.2pt; line-height: 1.55; margin-top: .8mm; }
+.top-reads .read-digest b, .top-reads .read-evidence b { color: #b84c3d; }
+.top-reads .meta { display: block; color: #5f6b75; font-size: 8.5pt; margin-top: 1mm; }
+
+.viewpoints .chapter { margin: 0 0 5mm; page-break-inside: avoid; }
+.viewpoints h3 { font-size: 11pt; color: #ffffff; background: #14456e; display: inline-block; padding: 1mm 4mm; border-radius: 2pt; margin: 0 0 2.4mm; }
+.viewpoints ul { margin: 0; padding-left: 0; list-style: none; }
+.viewpoints li { padding: 1.6mm 0 1.6mm 4mm; border-left: 1.6pt solid #d8e0e7; font-size: 9.5pt; }
+.viewpoints li b { color: #b84c3d; }
+
+.toc ul { margin: 0; padding: 0; list-style: none; column-count: 2; column-gap: 8mm; }
+.toc li { font-size: 9pt; padding: 1.4mm 0; border-bottom: .4pt dotted #c7d0d8; break-inside: avoid; }
+.toc .pri { font-weight: 700; color: #b84c3d; margin-right: 2mm; }
+
+.comic-lead figure { margin: 0 0 3mm; }
+.comic-lead img { width: 100%; border: .6pt solid #d7dee5; }
+.comic-lead .note { font-size: 9pt; color: #40505c; background: #faf6ee; border-left: 2.4pt solid #c89b52; padding: 3mm 4mm; margin: 0 0 5mm; }
+
+.topic-card { padding: 3mm 10mm; break-inside: auto; }
+.topic-primary { page-break-before: always; break-before: page; page-break-inside: avoid; break-inside: avoid; padding-bottom: 0; }
+.topic-analysis { page-break-before: auto; break-before: auto; padding-top: 0; }
+.topic-card .card-head { display: flex; align-items: center; gap: 3mm; margin-bottom: 3mm; }
+.chip { font-size: 8pt; font-weight: 700; padding: .8mm 3mm; border-radius: 999px; }
+.chip.pri-P0 { background: #b84c3d; color: #fff; }
+.chip.pri-P1 { background: #e9d9d5; color: #8b2f2a; }
+.chip.chapter { background: #eef3f7; color: #14456e; border: .5pt solid #c7d7e3; }
+.card-head .idx { margin-left: auto; color: #9aa7b1; font-size: 8.5pt; }
+.topic-analysis .card-head, .topic-analysis h3 { display: none; }
+.topic-card h3 { font-size: 15pt; margin: 0 0 1.6mm; line-height: 1.35; }
+.topic-card h3 a { color: #14456e; }
+.topic-card .meta { color: #5f6b75; font-size: 8.5pt; margin-bottom: 3mm; }
+.topic-card figure.comic { margin: 0 0 3mm; text-align: center; break-inside: avoid; }
+.topic-card figure.comic img { display: block; width: auto; height: auto; max-width: 100%; max-height: 82mm; margin: 0 auto; object-fit: contain; border: .6pt solid #d7dee5; border-radius: 2pt; }
+.topic-primary.selection-on-next-page figure.comic img { max-height: 125mm; }
+.highlights-map { border-top: .5pt solid #c7d0d8; padding-top: 3mm; margin-top: 4mm; font-size: 9pt; }
+.highlights-map h4 { margin: 0 0 1.5mm; color: #14456e; }
+.highlights-map ol { margin: 0; padding-left: 6mm; }
+.judgment-box { background: #14456e; color: #ffffff; padding: 3mm 5mm; border-radius: 2pt; margin-bottom: 3mm; page-break-inside: avoid; }
+.judgment-box .label { font-size: 8pt; letter-spacing: .25em; color: #bcd2e4; display: block; margin-bottom: 1.2mm; }
+.judgment-box p { margin: 0; font-size: 10.5pt; font-weight: 700; line-height: 1.55; }
+.topic-analysis .analysis-kicker { margin: 1mm 0 2mm; color: #b84c3d; font-weight: 800; letter-spacing: .18em; font-size: 9pt; break-after: avoid; }
+.evidence { margin: 0; page-break-inside: auto; break-inside: auto; }
+.evidence .label { font-size: 10.5pt; font-weight: 800; color: #b84c3d; letter-spacing: .12em; }
+.evidence ul { margin: 1mm 0 3mm; padding-left: 0; list-style: none; }
+.evidence li { position: relative; padding: 1mm 0 1mm 5mm; font-size: 10pt; line-height: 1.65; orphans: 2; widows: 2; }
+.evidence li::before { content: ""; position: absolute; left: 1mm; top: 2.7mm; width: 2mm; height: 2mm; background: #c89b52; }
+.evidence p { margin: 2mm 0 4mm; font-size: 10pt; line-height: 1.75; orphans: 2; widows: 2; }
+.report-highlights { font-size: 10pt; line-height: 1.75; break-inside: auto; }
+.report-highlights h4, .report-highlights h5, .report-highlights h6 { color: #14456e; font-size: 11pt; margin: 3mm 0 2mm; break-after: avoid; }
+.report-highlights p, .report-highlights blockquote { margin: 2mm 0 3mm; orphans: 2; widows: 2; }
+.report-highlights ul, .report-highlights ol { padding-left: 6mm; break-inside: auto; }
+.report-highlights li { margin: 1.4mm 0; }
+.report-highlights blockquote { border-left: 2pt solid #c89b52; padding-left: 4mm; color: #40505c; }
+.report-highlights table { width: 100%; border-collapse: collapse; font-size: 9pt; margin: 3mm 0 5mm; table-layout: auto; }
+.report-highlights th, .report-highlights td { border: .5pt solid #c7d0d8; padding: 2mm; overflow-wrap: anywhere; vertical-align: top; }
+.report-highlights th { background: #eef3f7; text-align: left; }
+.report-highlights thead { display: table-header-group; }
+.report-highlights tr { break-inside: avoid; }
+.report-highlights pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.selected-chart { margin: 4mm 0; break-inside: avoid; }
+.selected-chart img { display: block; max-width: 100%; max-height: 180mm; width: auto; height: auto; margin: 0 auto; object-fit: contain; }
+.selected-chart figcaption { font-size: 8.5pt; color: #5f6b75; margin-top: 2mm; }
+@media print { .topic-analysis.selection-new-page { page-break-before: always; break-before: page; padding-top: 5mm; } }
+.twin { display: block; page-break-inside: auto; break-inside: auto; }
+.twin .box { border-radius: 2pt; padding: 3mm 4mm; margin-bottom: 3mm; font-size: 9.5pt; line-height: 1.65; page-break-inside: avoid; break-inside: avoid; orphans: 2; widows: 2; }
+.twin .box h4 { margin: 0 0 1.6mm; font-size: 10.5pt; }
+.twin .advice { background: #f0f6f0; border-top: 2.4pt solid #4f7d5a; }
+.twin .advice h4 { color: #3c6246; }
+.twin .reference { background: #fbf1ee; border-top: 2.4pt solid #b84c3d; }
+.twin .reference h4 { color: #8b2f2a; }
+.tracking { margin-top: 3.6mm; font-size: 8.5pt; color: #5f6b75; border-top: .4pt dashed #c7d0d8; padding-top: 2.2mm; }
+.footer-note { color: #9aa7b1; font-size: 8pt; text-align: right; padding: 0 11mm 6mm; }
+</style>
+</head>
+<body>
+<main>
+<div class="brandbar"><span></span><span></span><span></span></div>
+<div class="page cover issue-opening">
+<p class="cover-kicker">Global Tech Think Tank Watch</p>
+<h1>国际科技智库周报</h1>
+<div class="issue-meta"><span>资料窗口 2026-09-21 至 2026-09-27</span><span>本期收录概况：18 条 · 重点 10 条 · 本期收录机构 14 家</span></div>
+<section class="editorial-lead">
+<h2>企业边界、技术采用与社会脱离：本周的几处独立发现</h2>
+<p>本期材料分布在企业组织、产业政策、科研资助、经济测量与青年处境。可先读企业外包边界的竞争机制，再看实验室技术采用如何进入评审；青年调查则提醒，当前状态会遮蔽一段时间内反复出现的困境。各篇分别保留理论、计划设计与已观察事实的边界。</p>
+</section><section class="editorial-discoveries"><h2>值得细读的发现</h2>
+<article class="editorial-discovery">
+<div class="editorial-discovery-body">
+<h3>同样是AI降成本，企业边界可能向两边移动</h3>
+<p>知识取得更便宜，可能削弱外部专业机构的成本优势；交易沟通更便宜，又可能促进外包。初步职业就业证据不能识别AI因果，值得读的是两个机制为何竞争。</p>
+<p class="editorial-source"><a href="https://www.brookings.edu/wp-content/uploads/2026/09/4b_Garicano.pdf">原文：PDF第2—5、13—14页，表1</a> · <a href="#topic-08">阅读全文</a></p></div></article>
+<article class="editorial-discovery">
+<div class="editorial-discovery-body">
+<h3>技术可行与市场采用，被写成两套准备度要求</h3>
+<p>DOE CLIMR要求实验室团队同时说明技术成熟度、客户需求和采用障碍，并设置评审与后续跟踪。这是可核查的资助设计，尚不能当作商业化成效。</p>
+<p class="editorial-source"><a href="https://eere-exchange.energy.gov/FileContent.aspx?FileID=379d6bac-82bd-4bee-857b-d9a6a0f04442">原文：PDF第7—13、44—56页</a> · <a href="#topic-03">阅读全文</a></p></div></article>
+<article class="editorial-discovery">
+<div class="editorial-discovery-body">
+<h3>当下没有脱离，不等于此前没有经历困境</h3>
+<p>RAND对349名已离开高中的18—22岁青年调查显示，调查时脱离教育和就业约14%，此前曾脱离约34%。这是加权样本估计；回忆调查、累计时长与因果解释均有边界。</p>
+<p class="editorial-source"><a href="https://www.rand.org/content/dam/rand/pubs/perspectives/PEA5200/PEA5238-1/RAND_PEA5238-1.pdf">原文：PDF第1—13页，调查设计及脱离经历表</a> · <a href="#topic-06">阅读全文</a></p></div></article>
+</section>
+<nav class="reading-navigation" id="reading-navigation" aria-label="阅读导航"><h2>阅读导航</h2><ol>
+<li><a href="#topic-01">01｜经济安全规则交叠：MERICS如何分析企业合规与供应链困境</a> <span class="meta">· Mercator Institute for China Studies</span></li>
+<li><a href="#topic-02">02｜ARIA植物信号案例：从读出信号到检验田间可用性</a> <span class="meta">· Advanced Research and Invention Agency</span></li>
+<li><a href="#topic-03">03｜DOE实验室商业化资助：同时检验技术与采用准备度</a> <span class="meta">· U.S. Department of Energy</span></li>
+<li><a href="#topic-04">04｜AI评估的测量缺口：开放访问之后还缺什么</a> <span class="meta">· Brookings Institution</span></li>
+<li><a href="#topic-05">05｜德国联合预测的方法发现：资本存量与无形投入的测量边界</a> <span class="meta">· ifo Institute / Joint Economic Forecast institutes</span></li>
+<li><a href="#topic-06">06｜青年脱离教育与工作的持续时间：一次调查的发现与局限</a> <span class="meta">· RAND Corporation</span></li>
+<li><a href="#topic-07">07｜全球失衡的资产负债网络：贸易之外的估值与收益</a> <span class="meta">· Bank for International Settlements</span></li>
+<li><a href="#topic-08">08｜专业化优势为何缩小：AI可能重画企业的外包边界</a> <span class="meta">· Brookings Institution</span></li>
+<li><a href="#topic-09">09｜法国LIVO联合实验室：博士合作后的持续仪器研发</a> <span class="meta">· Agence nationale de la recherche</span></li>
+<li><a href="#topic-10">10｜欧洲汽车转型的政策取舍：保护、价格与竞争力</a> <span class="meta">· Bruegel</span></li>
+</ol></nav>
+</div>
+<section class="topic-card topic-primary has-selection selection-on-next-page" id="topic-01">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="idx">主题 01 / 10</span>
+</div>
+<h3><a href="https://merics.org/en/report/chinas-economic-security-offensive-how-prc-pursues-dominance-industry-trade-and-technology">经济安全规则交叠：MERICS如何分析企业合规与供应链困境</a></h3>
+<p class="meta">Mercator Institute for China Studies｜2026-09-23</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-09-27/pages/01-topic-china-s-economic-security-offensive-how-the-prc-pursues-dominanc.jpg" alt="主题 01 漫画"></figure>
+<div class="judgment-box">
+<span class="label">摘要导读</span>
+<p>MERICS从政策工具和执行机制分析经济安全摩擦，突出企业面对冲突合规要求、供应链依赖及先行动者成本的困境。其结论属于有明确欧洲政策立场的综合研判；工具存在、实际执行和经济效果须分别验证。</p>
+</div>
+<nav class="highlights-map" aria-label="精华导览"><h4>精华导览</h4><ol>
+<li><a href="#topic-01-selection-1">报告怎样组织问题</a></li>
+<li><a href="#topic-01-selection-2">企业为何可能难以单独调整</a></li>
+<li><a href="#topic-01-selection-3">选读时应分开的证据层次</a></li>
+</ol></nav>
+</section>
+<section class="topic-card topic-analysis highlights-selection selection-new-page">
+<div class="report-highlights">
+<h4>从工具清单到企业处境：阅读政策风险报告的三个层次</h4>
+<h6 id="topic-01-selection-1">报告怎样组织问题</h6>
+<p>MERICS将经济安全工具概括为促进、保护、伙伴与惩罚，结合政策文本、案例和二手统计讨论中国与欧洲的摩擦。这是欧洲智库的政策研判，含明确倡议立场，不是企业面板或因果评估。</p>
+<h6 id="topic-01-selection-2">企业为何可能难以单独调整</h6>
+<p>作者强调两类困境：不同法域的合规要求可能相互冲突；率先分散供应链的企业可能承担更高成本，短期竞争力受损。替代生产或研发布局也不必然消除对既有技术、设备和许可的依赖。报告建议欧洲补足支持、信息收集、反制与谈判安排，并区分不可信威胁、有限施压和升级，未认定全部威胁都会兑现。</p>
+<h6 id="topic-01-selection-3">选读时应分开的证据层次</h6>
+<table><thead><tr><th>层次</th><th>能回答什么</th><th>不能直接推出什么</th></tr></thead><tbody>
+<tr><td>工具和规则</td><td>有哪些可用手段</td><td>必然对每家企业使用</td></tr>
+<tr><td>执行案例</td><td>特定条件下怎样行动</td><td>所有行业承受相同影响</td></tr>
+<tr><td>宏观风险研判</td><td>哪些传导渠道值得追踪</td><td>已识别净损失或因果效应</td></tr>
+</tbody></table>
+<p>上表是依据本文材料结构作出的编辑阅读提示，不是作者的计量结果。将制度能力、实际执行与最终效果逐层区分，才能避免把规则数量当作风险强度，或把倡议当作已实施政策。后续核查应落到具体法域、企业约束与事件条件；本文不足以直接替代企业法律判断。</p>
+<p>来源：官网2026年9月23日报告正文，“economic security armory”“punishment doctrine”及“Options for European stakeholders”；网页正文已读，未声称逐项独立核验全部引文或完成PDF图表精读。</p>
+</div></section>
+<section class="topic-card topic-primary has-selection" id="topic-02">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="idx">主题 02 / 10</span>
+</div>
+<h3><a href="https://aria.org.uk/insights/2026/decoding-plant-signals">ARIA植物信号案例：从读出信号到检验田间可用性</a></h3>
+<p class="meta">Advanced Research and Invention Agency｜2026-09-21</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-09-27/pages/02-topic-decoding-plant-signals-a-q-a-with-mycovolt-technologies.jpg" alt="主题 02 漫画"></figure>
+<div class="judgment-box">
+<span class="label">摘要导读</span>
+<p>ARIA根据Mycovolt展示的植物电信号证据追加230万英镑种子支持。信号能被读出是已报告的进展，分类、噪声环境、规模与定位精度仍是下一阶段问题；定点施药和降低成本属于目标。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis highlights-selection">
+<div class="report-highlights">
+<h4>一次种子资助怎样沿着证据继续推进</h4>
+<h6 id="topic-02-selection-1">从小额试探到追加验证</h6>
+<p>选编范围为资助升级与研发协作问答，自撰整理，不是独立成效评估。ARIA于2025年8月首次资助Mycovolt。本周访谈披露230万英镑追加支持：理由是团队连续展示了可读出的植物电信号。后续任务随之转向机器学习分类、复杂噪声下的可靠性、扩大覆盖范围及定位精度。</p>
+<h6 id="topic-02-selection-2">生物问题怎样反馈给硬件</h6>
+<p>团队描述了一个具体循环：在植物上运行电路板24—48小时，生物学分析识别50Hz噪声，硬件工程师调整滤波与设计，一周内取得新板再测。每秒至少200次采样产生大量数据；AI辅助编写分析脚本，但分析框架及输出仍由人监督。</p>
+<h6 id="topic-02-selection-3">尚未回答的问题</h6>
+<p>目标是用传感网络支持农户及时定位胁迫、定点处理。访谈没有提供大规模田间效果、成本下降或减少农药的独立验证，不能把愿景写成结果。相比漫画，本篇保留资助升级的证据要求与实验反馈过程；其价值在于观察下一轮要检验什么。</p>
+<p>来源定位：原文关于“£2.3m seed boost”“wider landscape”“out in a field”的三组问答。</p>
+</div></section>
+<section class="topic-card topic-primary has-selection" id="topic-03">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="idx">主题 03 / 10</span>
+</div>
+<h3><a href="https://eere-exchange.energy.gov/FileContent.aspx?FileID=379d6bac-82bd-4bee-857b-d9a6a0f04442">DOE实验室商业化资助：同时检验技术与采用准备度</a></h3>
+<p class="meta">U.S. Department of Energy｜2026-09-24</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-09-27/pages/03-topic-core-laboratory-infrastructure-for-market-readiness-climr-techno.jpg" alt="主题 03 漫画"></figure>
+<div class="judgment-box">
+<span class="label">摘要导读</span>
+<p>DOE将实验室技术的技术成熟度与采用准备度分别纳入商业化资助，要求申请团队说明市场需求、合作承诺和项目结束后的延续能力。征集预算与启动时间仍有拨款及遴选条件；这些规则是计划设计，不能视为已实现的商业化效果。 DOE将实验室技术的技术成熟度与采用准备度分别纳入商业化资助，要求申请团队说明市场需求、合作承诺和项目结束后的延续能力。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis highlights-selection">
+<div class="report-highlights">
+<h4>从技术可行到市场采用：CLIMR如何设置申请、评审和跟踪</h4>
+<h6 id="topic-03-selection-1">选编范围与阅读价值</h6>
+<p>本篇依据9月24日发布的技术专项征集，选读资格、预算、申请、评审与跟踪条款，不涵盖各技术分领域的全部细则。以下为自撰整理。原文件65页，相关证据位于PDF第1—13、44—56页。它值得展开之处，是把“技术能工作”与“有人愿意采用”分别写成申请与评价要求。</p>
+<h6 id="topic-03-selection-2">经费给谁，资金承诺到哪一步</h6>
+<p>这是DOE国家实验室申报的计划，支持实验室形成的技术继续走向市场。文件将实验室开发技术界定为至少50%的研发在国家实验室完成。预计支持30—50个项目、期限1—3年，估计经费3300万—4100万美元，包含仍取决于国会拨款的FY2027部分。这些数值均为征集预期，尚非确定获批或实际支出。</p>
+<p>企业可以作为外部伙伴参与，市场需求也是项目设计的重要依据，但联邦经费流向实验室，不能把这项计划描述为给创业企业直接发放补助。已有LEEP创业者参与时，还须说明新工作超出原支持范围。默认成本分担为项目总成本的50%；与符合条件的小企业、高校、非营利机构及其他列明伙伴合作时，可申请降低，仍需DOE判断，不能概括为所有项目自动享受豁免。</p>
+<h6 id="topic-03-selection-3">两种准备度回答不同问题</h6>
+<p>通常要求技术至少达到TRL 4，具体领域另有条件。同时，申请应列明起始与结束时的采用准备度ARL，并在项目期间提高它。TRL帮助回答技术在何种环境中得到验证；ARL促使团队说明客户、市场、经济性及其他采用障碍。技术进步不能自动替代市场采用证据，市场兴趣也不能替代技术验证。</p>
+<p>概念申请先接受回应性与可行性审查；获得鼓励的申请才能进入完整申请阶段。完整申请要阐明市场拉动、差异化、合作参与、风险、预算及结束资助后的持续能力。合作方的支持信、客户试验与既有数据可以帮助验证这些主张，但承诺书本身不等于已有市场成功。</p>
+<h6 id="topic-03-selection-4">评审权重与跟踪设计</h6>
+<table><thead><tr><th>评审维度</th><th>权重</th><th>需要回答的主要问题</th></tr></thead><tbody>
+<tr><td>创新与商业影响</td><td>40%</td><td>项目有何差异，能否回应真实市场需求并持续产生价值？</td></tr>
+<tr><td>目标质量与完成可能性</td><td>35%</td><td>目标是否可核验，假设、预算与风险控制是否可信？</td></tr>
+<tr><td>协作与团队能力</td><td>25%</td><td>伙伴是否真实参与，团队与设施是否已经具备？</td></tr>
+</tbody></table>
+<p>以上为征集文件的评审设计，不是成效统计。文件要求至少5项SMART指标，区分活动、产出与结果；按季度报告进度和联邦/分担经费使用，年度指标跟踪持续到授予资助后5年或项目结束后3年，以较晚日期为准。相比只在结项时数专利或合同，这一设计保留了观察商业化后续进展的时间。</p>
+<h6 id="topic-03-selection-5">时间与证据边界</h6>
+<p>概念申请截止2026年11月3日，完整申请计划于2027年3月1日截止。DOE预计在FY2027第四季度完成遴选，项目启动不早于FY2028第二季度，文件明确这些安排可调整。本期能确认的是制度设计及其约束；实际入选、资金兑现与采用效果，需要未来实施证据。</p>
+<p>来源定位：预算和资格见PDF第7—13页；申请与指标见第44—49页；评审权重及项目跟踪见第52—56页。</p>
+</div></section>
+<section class="topic-card topic-primary has-selection selection-on-next-page" id="topic-04">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="idx">主题 04 / 10</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/in-ai-evaluation-access-is-not-evidence/">AI评估的测量缺口：开放访问之后还缺什么</a></h3>
+<p class="meta">Brookings Institution｜2026-09-24</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-09-27/pages/04-topic-in-ai-evaluation-access-is-not-evidence.jpg" alt="主题 04 漫画"></figure>
+<div class="judgment-box">
+<span class="label">摘要导读</span>
+<p>允许外部评估者进入企业，并不自动产生可比较的安全证据。作者提出从披露条件、跨团队比较、共享设施及部署验证四个环节改进评估；这是方法建设建议，尚非已生效统一标准。</p>
+</div>
+<nav class="highlights-map" aria-label="精华导览"><h4>精华导览</h4><ol>
+<li><a href="#topic-04-selection-1">为什么评估者进入企业仍不足够</a></li>
+<li><a href="#topic-04-selection-2">四个相互衔接的建设环节</a></li>
+<li><a href="#topic-04-selection-3">应当测量什么</a></li>
+</ol></nav>
+</section>
+<section class="topic-card topic-analysis highlights-selection selection-new-page">
+<div class="report-highlights">
+<h4>让一次测试成为能够解释、比较和积累的证据</h4>
+<h6 id="topic-04-selection-1">为什么评估者进入企业仍不足够</h6>
+<p>本文为Elham Tabassi的评论，选编其测量问题及四步方法，自撰整理。对同一系统得出不同结论，可能源于版本、配置、访问权限、测试环境或方法差异。若这些条件不公开，读者无法判断分歧究竟反映模型变化还是测量变化。外部身份也不能单独保证独立性：方法、资金、访问及发表权由谁控制，同样需要披露。</p>
+<h6 id="topic-04-selection-2">四个相互衔接的建设环节</h6>
+<table><thead><tr><th>环节</th><th>作者要求</th><th>要避免的误读</th></tr></thead><tbody>
+<tr><td>最低披露</td><td>说明对象、版本、配置、防护、协议、权限、时间、不确定性及资助和发表控制</td><td>统一披露不等于强制统一方法</td></tr>
+<tr><td>同系统比较</td><td>不同团队测试重叠对象，追查一致与分歧来自哪里</td><td>复现同一分数也可能复现同一盲点</td></tr>
+<tr><td>共享设施</td><td>更新测试材料，提供安全环境、参考协议和记录方式</td><td>开发商提供算力不等于控制解释与发表</td></tr>
+<tr><td>部署验证</td><td>将具体失效与部署前测试对象、条件和结果联系起来</td><td>能力测试有效不等于能预测所有事故</td></tr>
+</tbody></table>
+<h6 id="topic-04-selection-3">应当测量什么</h6>
+<p>评估需要覆盖实际部署系统及其防护，而不仅是底层模型。工具、检索、提示与安全措施变化，都会改变被测对象。最后一步尤其慢：事故记录不完整，严重事件稀少，采取缓解措施后又难以观察未干预的反事实。因而，作者提出的是逐步形成测量基础设施，不能把测试次数增加写成安全性已经提高。</p>
+<p>来源定位：原文“4 steps to move from access to evidence”及“How we will know it is working”；评论日期2026年9月24日。</p>
+</div></section>
+<section class="topic-card topic-primary has-selection" id="topic-05">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="idx">主题 05 / 10</span>
+</div>
+<h3><a href="https://www.ifo.de/en/facts/2026-09-24/joint-economic-forecast-autumn-2026-recovery-under-structural-stress-fiscal-policy">德国联合预测的方法发现：资本存量与无形投入的测量边界</a></h3>
+<p class="meta">ifo Institute / Joint Economic Forecast institutes｜2026-09-24</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-09-27/pages/05-topic-joint-economic-forecast-autumn-2026-recovery-under-structural-st.jpg" alt="主题 05 漫画"></figure>
+<div class="judgment-box">
+<span class="label">摘要导读</span>
+<p>联合预测的资本测量章节区分已计入核算的研发、软件与更广泛的培训、流程等无形投入。更细的资本服务测量有解释价值，但现有数据不足以稳定改进潜在产出估计，也不足以确认AI热潮的生产率收益。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis highlights-selection">
+<div class="report-highlights">
+<h4>为什么资本测量更精细，预测却未必更稳健</h4>
+<h6 id="topic-05-selection-1">选读资本测量，而非只摘增长数字</h6>
+<p>9月24日发布的联合预测含专章研究资本与潜在产出。本篇自撰整理该章印刷第72、77—82页，不声称读完92页报告。前言9月17日是编制日期，与正式发布日分开。</p>
+<h6 id="topic-05-selection-2">无形资产不能用研发一项代替</h6>
+<p>核算已覆盖部分研发和软件，但企业培训、流程设计及客户关系等更广义投入仍难完整计量。企业内部生产这些资产，往往缺乏可比市场价格；知识如何折旧也未有统一处理。遗漏可能影响资本存量和国际比较，不能据此断言所有无形投入都未计入。</p>
+<h6 id="topic-05-selection-3">方法改善仍受数据约束</h6>
+<p>资本服务指数按使用成本提高短寿命设备和知识产权的权重，意在接近年度生产贡献。报告检验替代方法后认为，资产寿命与年龄结构等数据仍不足，预测优势不稳定。生产率J曲线也仅是解释假说，当前AI收益尚难可靠估计。漫画之外保留这一反差：概念更合适，不保证现有数据能支持更稳健的测量。</p>
+<p>来源定位：德文PDF第5章，印刷第77—82页；联合作者机构包括DIW、ifo、Kiel、IWH及RWI，按一份作品去重。</p>
+</div></section>
+<section class="topic-card topic-primary has-selection selection-on-next-page" id="topic-06">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="idx">主题 06 / 10</span>
+</div>
+<h3><a href="https://www.rand.org/pubs/perspectives/PEA5238-1.html">青年脱离教育与工作的持续时间：一次调查的发现与局限</a></h3>
+<p class="meta">RAND Corporation｜2026-09-24</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-09-27/pages/06-topic-disconnection-among-american-youth-evidence-on-its-duration-and.jpg" alt="主题 06 漫画"></figure>
+<div class="judgment-box">
+<span class="label">摘要导读</span>
+<p>RAND调查区分当前脱离状态与曾经经历，并指出长期脱离可能伴随社交隔离。样本为349名已离开高中的18—22岁青年；结果属于相关性证据，不能据此认定脱离状态导致心理困扰。</p>
+</div>
+<nav class="highlights-map" aria-label="精华导览"><h4>精华导览</h4><ol>
+<li><a href="#topic-06-selection-1">调查怎样识别脱离状态</a></li>
+<li><a href="#topic-06-selection-2">三个不能混用的比例</a></li>
+<li><a href="#topic-06-selection-3">对项目设计的启发与限制</a></li>
+</ol></nav>
+</section>
+<section class="topic-card topic-analysis highlights-selection selection-new-page">
+<div class="report-highlights">
+<h4>把当下比例、累计经历与长期支持需求分开</h4>
+<h6 id="topic-06-selection-1">调查怎样识别脱离状态</h6>
+<p>选读16页报告正文及方法注释（第1—13页），自撰整理。2026年2—3月，研究者调查349名已离开高中的18—22岁青年，询问离校后第一年每三个月的活动及当前状况。这里的脱离指未参与教育、培训或工作；它与通常失业率口径不同。</p>
+<h6 id="topic-06-selection-2">三个不能混用的比例</h6>
+<table><thead><tr><th>指标</th><th>加权比例</th></tr></thead><tbody>
+<tr><td>调查时处于脱离状态</td><td>14%</td></tr>
+<tr><td>所观察期间曾经历脱离</td><td>34%</td></tr>
+<tr><td>累计脱离至少6个月</td><td>23%</td></tr>
+</tbody></table>
+<p>分母均为研究所代表的已离开高中18—22岁青年，来源为图1；累计时长不必连续。调查没有覆盖所有人离校至今的每个季度，存在回忆误差。</p>
+<h6 id="topic-06-selection-3">对项目设计的启发与限制</h6>
+<p>短暂转换与长期脱离需要不同支持；作者建议测试早期识别工具，并关注教育就业之外的社交联系。社交与心理指标只是相关关系，小亚组尤其不宜外推；当前脱离者仅45人。漫画突出时长区别，选编保留问卷范围、分母和非因果边界，不把干预建议写成已证实效果。</p>
+</div></section>
+<section class="topic-card topic-primary has-selection selection-on-next-page" id="topic-07">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="idx">主题 07 / 10</span>
+</div>
+<h3><a href="https://www.bis.org/publications/working-paper-1379-unraveling-cobweb-global-imbalances-drivers-vulnerabilities-and-adjustment-scenarios">全球失衡的资产负债网络：贸易之外的估值与收益</a></h3>
+<p class="meta">Bank for International Settlements｜2026-09-23</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-09-27/pages/07-topic-unraveling-the-cobweb-of-global-imbalances-drivers-vulnerabiliti.jpg" alt="主题 07 漫画"></figure>
+<div class="judgment-box">
+<span class="label">摘要导读</span>
+<p>论文把对外净投资头寸的变化分解为贸易、投资收益、其他收入与估值效应，说明贸易差额不足以概括外部脆弱性。情景测算用于识别传导渠道，不是预测，也不代表BIS正式立场。</p>
+</div>
+<nav class="highlights-map" aria-label="精华导览"><h4>精华导览</h4><ol>
+<li><a href="#topic-07-selection-1">研究对象与分解方法</a></li>
+<li><a href="#topic-07-selection-2">情景不是预测</a></li>
+<li><a href="#topic-07-selection-3">相近贸易状况，为什么可能对应不同的对外财富轨迹</a></li>
+<li><a href="#topic-07-selection-4">一项情景计算及其不能回答的问题</a></li>
+<li><a href="#topic-07-selection-5">数据决定结论边界</a></li>
+</ol></nav>
+</section>
+<section class="topic-card topic-analysis highlights-selection selection-new-page">
+<div class="report-highlights">
+<h4>先分清存量与流量，再阅读冲击情景</h4>
+<h6 id="topic-07-selection-1">研究对象与分解方法</h6>
+<p>本篇选读84页论文的导论、方法、数据限制及汇率情景，自撰整理，不是全译。作者研究28个经济体1980—2025年的对外头寸，覆盖约85%全球GDP。净国际投资头寸是对外资产减负债的存量；贸易差额只是每年改变它的一条渠道，投资收益和资产价格重估也会改变存量。</p>
+<h6 id="topic-07-selection-2">情景不是预测</h6>
+<p>作者进一步区分汇率、相对回报、初始资产负债规模及组合结构。在美元贬值20%的假设下，币种错配使各国受到不同影响；这种计算保持其他条件，未包含完整的二次反馈。近期金融因素的重要性，也不意味着长期贸易作用消失。</p>
+<h6 id="topic-07-selection-3">相近贸易状况，为什么可能对应不同的对外财富轨迹</h6>
+<p>论文对比说明，贸易差额与对外净资产变化不能一一对应。美国与英国在2010年前都曾通过相对较高的资产收益或估值增益抵消贸易赤字；此后，美国股票的相对强势及美元升值增加了外国持有的美国资产价值，使美国自身的对外负债估值上升。英国的轨迹不同，汇率和本国负债回报较弱仍发挥了缓冲作用。这里的对外净资产恶化，不等于美国居民全部财富同幅下降。</p>
+<p>日本与巴西的另一组比较更能说明存量的作用：即使净贸易大致平衡，已有债权或债务形成的投资收入，仍可能维持较大的经常账户顺差或逆差。作者据此提示，贸易政策只改变一部分流量，不能立即消除历史积累的资产负债结构。</p>
+<h6 id="topic-07-selection-4">一项情景计算及其不能回答的问题</h6>
+<table><thead><tr><th>口径</th><th>2025年基准</th><th>美元对其他货币贬值20%的假设情景</th></tr></thead><tbody>
+<tr><td>美国对外净资产／美国GDP</td><td>-71%</td><td>约-54%</td></tr>
+<tr><td>全球债权、债务净头寸绝对值合计／全球GDP</td><td>41%</td><td>约38%</td></tr>
+</tbody></table>
+<p>来源：PDF第43—45页，图14及相关说明。分母分别是美国GDP和全球GDP，不能把两个变化幅度直接比较。这一计算固定资产负债的货币结构及其他资产价格，仅追踪直接金融效应；未纳入贸易数量反应、政策应对、投资组合重配或危机反馈。它说明大幅汇率调整对某国净头寸和全球总量可能产生不同影响，不是汇率预测，也不证明贬值是无成本解决方案。</p>
+<h6 id="topic-07-selection-5">数据决定结论边界</h6>
+<p>论文采用修订后的美国FDI负债估值；部分币种构成数据止于2020年，金融中心与双边统计存在困难。阅读时应分别核对时期、分母和资产类别，不能把一国净头寸改善直接解释为居民普遍受益。相比漫画，本篇强调识别风险渠道所需的会计区分和假设约束。</p>
+<p>来源定位：PDF第4—8、20—21、43—45页。本文为署名作者分析，不代表BIS及成员央行立场。</p>
+</div></section>
+<section class="topic-card topic-primary has-selection selection-on-next-page" id="topic-08">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="idx">主题 08 / 10</span>
+</div>
+<h3><a href="https://www.brookings.edu/articles/the-vanishing-advantage-of-specialization/">专业化优势为何缩小：AI可能重画企业的外包边界</a></h3>
+<p class="meta">Brookings Institution｜2026-09-23</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-09-27/pages/08-topic-the-vanishing-advantage-of-specialization.jpg" alt="主题 08 漫画"></figure>
+<div class="judgment-box">
+<span class="label">摘要导读</span>
+<p>Garicano区分AI降低知识取得成本与降低交易成本的两种作用，前者可能促使工作回到企业内部，后者可能促进外包。职业就业分布提供初步一致线索，但不能识别AI的因果效果。</p>
+</div>
+<nav class="highlights-map" aria-label="精华导览"><h4>精华导览</h4><ol>
+<li><a href="#topic-08-selection-1">从使用频率解释专业化</a></li>
+<li><a href="#topic-08-selection-2">两种降成本机制方向不同</a></li>
+<li><a href="#topic-08-selection-3">初步就业证据能够说明多少</a></li>
+</ol></nav>
+</section>
+<section class="topic-card topic-analysis highlights-selection selection-new-page">
+<div class="report-highlights">
+<h4>同一种技术，为什么可能推动相反的组织变化</h4>
+<h6 id="topic-08-selection-1">从使用频率解释专业化</h6>
+<p>本篇选读25页会议稿的导论、简化算例与职业分布证据（PDF第2—5、13—14页），不声称全译。专业机构的优势来自把学习一项知识的固定成本分摊给许多客户。客户企业自身也掌握场景知识，但遇到罕见问题较少，常选择购买外部服务。</p>
+<p>作者用一个假设说明边界：维护能力每年需10万美元，客户一年使用10次、专业机构使用1000次，向外部解释问题另需每次2000美元。原先专业机构的分摊优势足够大；若知识维护成本降为1万美元，该优势缩至每次990美元，小于沟通成本，内部完成便可能更划算。这是理论算例，不是实际企业成本调查。</p>
+<h6 id="topic-08-selection-2">两种降成本机制方向不同</h6>
+<p>知识变便宜，客户可能把常见工作收回内部；寻找供应商、签约和沟通变便宜，则可能强化市场外包。最终方向取决于两者的相对变化及知识使用频率，不能用“AI减少成本”直接预测企业规模。外部专家仍可能处理稀少、困难、可靠知识取得成本较高的问题。</p>
+<h6 id="topic-08-selection-3">初步就业证据能够说明多少</h6>
+<table><thead><tr><th>职业</th><th>2022年在主要专业服务行业就业占比</th><th>2025年占比</th></tr></thead><tbody>
+<tr><td>律师</td><td>61.4%</td><td>59.4%</td></tr>
+<tr><td>会计与审计</td><td>24.2%</td><td>22.8%</td></tr>
+<tr><td>软件开发</td><td>34.3%</td><td>30.5%</td></tr>
+<tr><td>管理分析</td><td>26.6%</td><td>24.9%</td></tr>
+</tbody></table>
+<p>口径：作者依据BLS OEWS同方法数据计算，分母为相应职业的受薪就业人数，表1；不包括自雇者。“其他雇主”还包括政府和相邻专业供应商，并不全部等于客户企业内设部门。</p>
+<p>这些变化与理论一致，却也可能受专业服务周期等因素影响。数据不直接观察外包采购或任务分配，作者明确未识别因果。上述机制存在竞争，算例依赖假设，就业分布仍是间接代理变量。</p>
+</div></section>
+<section class="topic-card topic-primary has-selection" id="topic-09">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="idx">主题 09 / 10</span>
+</div>
+<h3><a href="https://anr.fr/en/latest-news/read/news/un-nouveau-laboratoire-commun-public-prive-pour-transformer-lanalyse-des-fluides/">法国LIVO联合实验室：博士合作后的持续仪器研发</a></h3>
+<p class="meta">Agence nationale de la recherche｜2026-09-23</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-09-27/pages/09-topic-un-nouveau-laboratoire-commun-public-priv-pour-transformer-l-ana.jpg" alt="主题 09 漫画"></figure>
+<div class="judgment-box">
+<span class="label">摘要导读</span>
+<p>LIVO把自2018年开始、经两轮Cifre博士研究形成的仪器合作延续为54个月的联合实验室。原有实时测速系统已经销售；新资助支持进一步改进与扩展应用，不能把未来功能当作已实现成效。</p>
+</div>
+</section>
+<section class="topic-card topic-analysis highlights-selection">
+<div class="report-highlights">
+<h4>从两轮博士研究到联合实验室的接续关系</h4>
+<h6 id="topic-09-selection-1">合作先于联合实验室</h6>
+<p>选编范围为法文新闻的合作历程、技术用途与实施边界，以下为自撰整理。CNRS及三所高校的研究团队与中小企业Photon Lines自2018年合作，经两轮Cifre博士研究，将实时光流测速系统纳入企业产品。9月22日揭牌的LIVO获ANR36.3万欧元、54个月支持，任务是改进已有系统及扩展功能。</p>
+<h6 id="topic-09-selection-2">仪器改变哪些工作环节</h6>
+<p>原文将光流法与常用粒子图像测速比较：利用动态纹理图像计算速度场，并在测量过程中即时获得结果，减少事后处理及大量数据储存。研究团队提供流体问题和算法，企业工程团队将其集成到成像平台。这解释了合作怎样进入产品开发，而不仅是签约或揭牌。</p>
+<h6 id="topic-09-selection-3">区分已有产品与后续承诺</h6>
+<p>系统已销售是原文报告的实施进展；更广泛应用和性能提升仍是后续目标。原文没有可比条件下的量化性能基准、销量或收益，故不保留“市场唯一”等宣传判断，也不据此推算企业基础研究投入。比漫画增加的内容是两轮博士研究、仪器工程和长期合作安排之间的接续关系。</p>
+<p>来源定位：首段；“Un partenariat de longue date”；“La vélocimétrie en temps réel”；合作方陈述。</p>
+</div></section>
+<section class="topic-card topic-primary has-selection selection-on-next-page" id="topic-10">
+<div class="card-head">
+<span class="chip pri-P1">P1</span>
+<span class="idx">主题 10 / 10</span>
+</div>
+<h3><a href="https://www.bruegel.org/policy-brief/european-unions-automotive-sector-needs-plan-not-undue-protection">欧洲汽车转型的政策取舍：保护、价格与竞争力</a></h3>
+<p class="meta">Bruegel｜2026-09-22</p>
+<figure class="comic"><img src="../../../comic/weekly-topic-comics-2026-09-27/pages/10-topic-the-european-union-s-automotive-sector-needs-a-plan-not-undue-pr.jpg" alt="主题 10 漫画"></figure>
+<div class="judgment-box">
+<span class="label">摘要导读</span>
+<p>Bruegel作者把汽车转型问题放在需求收缩、电动化和国际竞争交织的背景下，主张支持措施限时并与调整挂钩。本地产地要求可能提高入门车型成本，保护市场与形成出口竞争力之间存在取舍。 Bruegel作者把汽车转型问题放在需求收缩、电动化和国际竞争交织的背景下，主张支持措施限时并与调整挂钩。</p>
+</div>
+<nav class="highlights-map" aria-label="精华导览"><h4>精华导览</h4><ol>
+<li><a href="#topic-10-selection-1">问题并非只来自进口竞争</a></li>
+<li><a href="#topic-10-selection-2">两项政策取舍</a></li>
+<li><a href="#topic-10-selection-3">暂时保护必须服务于调整</a></li>
+</ol></nav>
+</section>
+<section class="topic-card topic-analysis highlights-selection selection-new-page">
+<div class="report-highlights">
+<h4>成本由谁承担，支持是否推动产业调整</h4>
+<h6 id="topic-10-selection-1">问题并非只来自进口竞争</h6>
+<p>选编政策简报19/2026的产业状况及第5—7节，自撰整理。官网正式日期为9月22日；程序曾误取关联文章日期。作者指出，欧洲2025年新车购买量比2019年少约220万辆，需求下降与电动化共同影响产量；下降是暂时还是结构性仍未确定。投资产能不能等同实际生产，产量下降也不直接等同盈利下降。</p>
+<h6 id="topic-10-selection-2">两项政策取舍</h6>
+<p>短期，限制低成本零部件来源可能提高车价，影响消费者转向电动车。长期，保护现有企业可以争取调整时间，却也可能削弱降低成本、技术升级及拓展出口的压力。作者还提示分配问题：既有车企与主要供应商较易得到保护，成本则分散给购车者和纳税人。</p>
+<p>简报框2用一个条件算例说明量级：如果电芯成本从每千瓦时50欧元升到85欧元，一辆采用60千瓦时电池的纯电动车，对应成本差额为2100欧元。它取决于所设电池大小与单位价差，不是所有欧洲车型已经涨价2100欧元，也不能与其他成本或节约值不加区分地相加。</p>
+<h6 id="topic-10-selection-3">暂时保护必须服务于调整</h6>
+<p>作者主张以明确韧性标准替代笼统本地含量要求，改善能源、技能、充电设施和规则可预期性；外资若能带来技术与供应链协作，应逐案评价。贸易工具或谈判安排需设置时限，并与产业提高可负担电动车竞争力的努力相联系。</p>
+<p>这些是作者的政策建议，不能写成欧盟已采纳安排。简报本身承认出口限制可能产生配额租金及WTO合法性争议，也承认部分新安排实施时间太短，尚不能判断效果。漫画给出取舍，选编保留成本算例、分配关系和建议的约束条件。来源定位：第2、5、6、7节及框2；作者依据多种二手统计与既有研究，不是单一因果实验。</p>
+</div></section>
+<section class="page short-briefs"><h2>本期简讯</h2>
+<article class="short-brief avoid-break">
+<h3><a href="https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/food-crises-across-globe-acute-food-insecurity-remains-alarmingly-high-2026-09-21_en">粮食危机年中更新：局部改善与后续风险并存</a></h3>
+<p class="meta">European Commission Joint Research Centre｜2026-09-21</p>
+<p>JRC对年中粮食危机资料的解读显示，2025—2026年17个国家或地区改善、15个恶化，局部最严重等级人数下降并不代表整体危机解除。其数据与后续情景分开：厄尔尼诺、冲突及援助削减可能带来的进一步恶化尚未全部纳入当前估计。这里只摘编9月21日JRC解读，未将关联全球报告计为全文已读。</p>
+</article>
+<article class="short-brief avoid-break">
+<h3><a href="https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/european-water-academy-water-resilient-europe-2026-09-21_en">欧洲水学院启动：连接知识提供者与一线用水管理者</a></h3>
+<p class="meta">European Commission Joint Research Centre｜2026-09-21</p>
+<p>欧委会9月21日启动欧洲水学院，采用跨机构网络连接公共部门、高校、研究组织、水务企业与专业协会。8家初始伙伴承诺提供多语言培训，覆盖污水处理、漏损检测及管道安装等；具体培训计划将后续公布。目前能确认组织设计与伙伴承诺，不能宣称已补齐技能缺口。</p>
+</article>
+<article class="short-brief avoid-break">
+<h3><a href="https://www.cnas.org/publications/cnas-insights/cnas-insights-u-s-china-ai-agreements-need-verification-not-trust">中美AI协议的可验证性：先建设技术条件</a></h3>
+<p class="meta">Center for a New American Security｜2026-09-22</p>
+<p>作者主张把算力申报、审计和多种监测线索结合，为可能出现的AI协议准备验证能力。其目标是让重大违规更难隐藏，不是保证零作弊。原文明确低成本验证基础设施尚未具备所需规模和成熟度；这是研发与谈判准备建议，不能描述为已成立的国际核查机制。</p>
+</article>
+<article class="short-brief avoid-break">
+<h3><a href="https://itif.org/publications/2026/09/22/congress-should-make-chips-acts-investment-tax-credit-permanent/">ITIF主张延长芯片投资税收激励，项目公告不能替代效果评估</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜2026-09-22</p>
+<p>Trelysa Long主张将芯片制造投资税收抵免永久化，理由是建厂决策周期长、临近开工资格截止日可能影响预期。文章引用自2020年起的投资与项目公告，起点早于2022年CHIPS法案；这些是计划口径，不能全部归因于税收抵免，也不等于实际完成投资。本文为政策倡议，未估计激励的净增量效果。</p>
+</article>
+<article class="short-brief avoid-break">
+<h3><a href="https://itif.org/publications/2026/09/22/the-eu-ai-acts-costs-to-american-innovation/">ITIF对欧盟AI合规成本的竞争力担忧</a></h3>
+<p class="meta">Information Technology and Innovation Foundation｜2026-09-22</p>
+<p>作者担忧美国企业在欧洲模型供应中的较大份额，使其承受较多合规成本，并可能影响创新投入。文章提供市场结构与罚款口径讨论，但未估计实际合规支出，也未识别监管导致创新下降的因果效果。本篇作为立场与争议线索，不能把最高罚款、市场份额或预测写成已发生损失。</p>
+</article>
+<article class="short-brief avoid-break">
+<h3><a href="https://www.aspistrategist.org.au/australias-next-interoperability-challenge-is-military-ai/">军用AI互操作还取决于法律判断的协同</a></h3>
+<p class="meta">Australian Strategic Policy Institute｜2026-09-24</p>
+<p>作者指出，即便盟友使用兼容系统，对人工核验、解释与授权的不同要求仍可能造成决策冲突。他建议以具体情景训练识别差异、建立共享术语。这是教育与制度协调主张，未提供已开展培训的成效评估；官网日期为9月24日，纠正程序提取的23日。</p>
+</article>
+<article class="short-brief avoid-break">
+<h3><a href="https://www.aspistrategist.org.au/to-secure-frontier-ai-access-australias-best-bet-is-a-coalition-of-the-dependent/">中等国家如何争取前沿AI访问条件</a></h3>
+<p class="meta">Australian Strategic Policy Institute｜2026-09-25</p>
+<p>作者建议澳大利亚与伙伴协调矿产、芯片、算力与评估能力，以共同的访问条件参与谈判，避免各自为争取投资而降低条件。这是协调机制建议，未形成实际联盟，也没有证明资产组合能带来同等模型访问权。原文正文已读，作为政策观点简讯。 作者建议澳大利亚与伙伴协调矿产、芯片、算力与评估能力，以共同的访问条件参与谈判，避免各自为争取投资而降低条件。</p>
+</article>
+<article class="short-brief avoid-break">
+<h3><a href="https://oecd.ai/en/wonk/governing-with-agentic-ai-when-machines-act-on-governments-behalf">政府智能体：授权边界需随可执行行动设计</a></h3>
+<p class="meta">OECD.AI Policy Observatory｜2026-09-25</p>
+<p>OECD工作组成员以采购、税务等假设场景，区分整理材料与修改正式记录、付款等不同权限。文章汇集各国正在推进的技术与治理安排，强调可审计、暂停及纠错能力。国家案例处于不同阶段，作者也承认公共部门价值尚未得到证明；不能把场景设想或架构目标写成已实现服务效果。</p>
+</article>
+</section>
+<p class="footer-note">国际科技智库周报 · 2026-09-27 · 私有归档，仅限内部研判使用</p>
+</main>
+</body>
+</html>
