@@ -15,18 +15,25 @@ from thinktank_watch.brief import write_pdf_from_html
 CSS = '''
 @page { size:92mm 164mm; margin:6mm 6mm 9mm; }
 * { box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-html { scroll-behavior:smooth; }
+html { scroll-behavior:auto; }
 body { margin:0; color:#182b38; background:#fff; font:12.2pt/1.58 "Microsoft YaHei",sans-serif; }
 main { margin:0 auto; }
 a { color:#155a7e; text-decoration:none; overflow-wrap:anywhere; }
-h1,h2,h3,h4,h5,h6 { line-height:1.38; margin:0 0 3mm; break-after:avoid; font-weight:700; }
+h1,h2,h3,h4,h5,h6 { line-height:1.38; margin:0 0 2.5mm; break-after:avoid; font-weight:700; }
 h1 { font-size:21pt; } h2 { font-size:16pt; } h3,h4,h5,h6 { font-size:14pt; color:#155a7e; }
-p { margin:0 0 3.2mm; orphans:2; widows:2; }
+p { margin:0 0 2.6mm; orphans:2; widows:2; }
 .kicker { font-size:10pt; letter-spacing:.06em; color:#b04d36; margin-bottom:3mm; }
 .meta,.source { font-size:10pt; line-height:1.55; color:#52616c; }
-.meta { break-after:avoid; margin-bottom:4mm; }
+.meta { break-after:avoid; margin-bottom:3mm; }
 .opening { border-top:2mm solid #155a7e; padding-top:4mm; }
 .opening .stats { margin:4mm 0; padding:3mm 0; border-top:.3mm solid #b8c7d2; border-bottom:.3mm solid #b8c7d2; font-size:11pt; }
+.opening.editorial { padding-top:2mm; }
+.opening.editorial h1 { font-size:17pt; margin-bottom:2mm; }
+.opening.editorial .stats { margin:2mm 0; padding:2mm 0; font-size:10pt; }
+.opening.editorial .intro { margin:2mm 0 3mm; }
+.opening.editorial .discovery { margin:0 0 3mm; }
+.opening.editorial .discovery strong { display:block; color:#155a7e; }
+.opening.editorial .opening-links { font-size:11pt; margin:2mm 0 0; }
 .intro { margin:4mm 0; }
 .navigation { break-before:page; }
 .navigation a { display:block; padding:2.2mm 0; border-bottom:.2mm solid #dce4ea; }
@@ -37,10 +44,13 @@ p { margin:0 0 3.2mm; orphans:2; widows:2; }
 .feature { break-before:page; }
 .brief { break-before:page; }
 .brief h2 { font-size:16pt; }
-.summary { border-left:1mm solid #b04d36; padding:0 0 0 3mm; margin-bottom:5mm; }
+.summary { border-left:1mm solid #b04d36; padding:0 0 0 3mm; margin-bottom:3.5mm; }
+.feature h2 a,.brief h2 a { color:inherit; }
+.screen-navigation { display:none; }
 .article-source { font-size:10pt; margin-top:4mm; }
 .back { font-size:10pt; margin-top:4mm; }
 .brief-index { break-before:page; }
+.navigation + .brief-index { break-before:auto; margin-top:5mm; }
 .brief-index a { display:block; padding:2mm 0; line-height:1.45; font-size:11.5pt; break-inside:avoid; border-bottom:.2mm solid #dce4ea; }
 table { width:100%; border-collapse:collapse; font-size:10pt; }
 th,td { padding:2mm; border:.2mm solid #cbd5dd; }
@@ -54,6 +64,7 @@ img { max-width:100%; }
   .feature,.brief,.navigation,.brief-index { margin-top:32px; }
   .meta,.source,.kicker,.back,.article-source,.comic-page .jump { font-size:15px; }
   .brief-index a { font-size:17px; }
+  .screen-navigation { display:flex; position:sticky; bottom:0; justify-content:space-around; background:#fff; border-top:1px solid #cad5df; padding:10px 4px; font-size:15px; }
 }
 '''
 
@@ -81,10 +92,22 @@ def build(source, output, comic_dir, briefs_path, date, edition_path):
 <h1>国际科技<br>智库周报</h1><div class="stats">{e(edition['window_label'])}<br>{feature_count}篇重点 · {brief_count}则简讯 · {edition['institution_count']}家机构</div>
 <p class="intro">{e(edition['intro'])}</p><p>{e(edition['additional_intro'])}</p>
 <p><a href="#contents">进入阅读导航 →</a></p><p><a href="#brief-index">直接读{brief_count}则简讯 →</a></p></section>''']
-    parts.append('<nav class="navigation" id="contents"><p class="kicker">阅读导航</p><h2>重点解读</h2>')
+    compact_editorial = edition.get('editorial')
+    if compact_editorial:
+        assert compact_editorial.get('reviewed') is True, 'Mobile editorial must be reviewed'
+        assert compact_editorial.get('discoveries'), 'Missing mobile discoveries'
+        parts = [f'<section class="opening editorial" id="start"><p class="kicker">{e(date)} · 手机阅读版</p><h1>国际科技智库周报</h1><div class="stats">{e(compact_editorial["stats_line"])}</div><p class="intro">{e(compact_editorial["lead"])}</p>']
+        for discovery in compact_editorial['discoveries']:
+            feature_index = discovery['feature_index']
+            assert isinstance(feature_index, int) and 1 <= feature_index <= feature_count
+            parts.append(f'<p class="discovery"><a href="#feature-{feature_index:02d}"><strong>{e(discovery["title"])}</strong></a>{e(discovery["text"])}</p>')
+        parts.append(f'<p class="opening-links"><a href="#comic-01">开始阅读 →</a> · <a href="#contents">全部篇章 →</a><br><a href="#brief-index">{brief_count}则简讯 →</a></p></section>')
+    navigation = ['<nav class="navigation" id="contents"><p class="kicker">阅读导航</p><h2>重点解读</h2>']
     for i, t in enumerate(short_titles, 1):
-        parts.append(f'<a href="#feature-{i:02d}">{i:02d}　{e(t)}</a>')
-    parts.append(f'<a href="#brief-index">{brief_count}则简讯 →</a></nav>')
+        navigation.append(f'<a href="#feature-{i:02d}">{i:02d}　{e(t)}</a>')
+    navigation.append(f'<a href="#brief-index">{brief_count}则简讯 →</a></nav>')
+    if not compact_editorial:
+        parts.extend(navigation)
     entries = []
     expected = []
     for i, (feature, selection) in enumerate(zip(features, selections), 1):
@@ -96,19 +119,28 @@ def build(source, output, comic_dir, briefs_path, date, edition_path):
         image_path = comic_dir / f'{i:02d}-手机漫画.jpg'
         b64 = base64.b64encode(image_path.read_bytes()).decode()
         parts.append(f'<section class="comic-page" id="comic-{i:02d}"><img alt="{e(short_titles[i-1])}竖版漫画" src="data:image/jpeg;base64,{b64}"><a class="jump" href="#feature-{i:02d}">向后阅读完整解读 →</a></section>')
-        parts.append(f'<article class="feature" id="feature-{i:02d}"><p class="kicker">{i:02d} · 重点解读</p><h2>{e(title)}</h2><p class="meta">{e(meta)}</p><p class="summary">{e(summary)}</p>')
+        parts.append(f'<article class="feature" id="feature-{i:02d}"><p class="kicker">{i:02d} · 重点解读</p><h2><a href="{e(url)}" title="打开原文">{e(title)}</a></h2><p class="meta">{e(meta)}</p><p class="summary">{e(summary)}</p>')
         body = BeautifulSoup(str(selection), 'html.parser').select_one('.report-highlights')
         for heading in body.find_all(['h4','h5','h6']):
             if heading.get_text(strip=True) == '精华选编': heading.decompose()
             else: heading.name = 'h3'
-        for para in body.find_all('p'):
+        paragraphs = body.find_all('p')
+        for para in paragraphs:
+            # The original URL and publication date already appear in the title
+            # link and metadata. Keep in-body chart citations, remove only the
+            # repeated terminal source line to prevent source-only pages.
+            if para is paragraphs[-1] and para.get_text().startswith('来源：') and para.find('a', href=url):
+                para.decompose()
+                continue
             expected.append(para.get_text())
             if para.get_text().startswith(('来源：','本篇为改编','本文据')):
                 para['class'] = 'source'
         expected.extend(x.get_text() for x in body.select('h3,li,th,td'))
         parts.append(body.decode_contents())
-        parts.append(f'<p class="article-source"><a href="{e(url)}">打开原文 ↗</a></p><p class="back"><a href="#contents">返回阅读导航</a> · <a href="#comic-{i:02d}">查看漫画</a></p></article>')
+        parts.append('</article>')
         entries.append([1, title, f'feature-{i:02d}'])
+    if compact_editorial:
+        parts.extend(navigation)
     parts.append(f'<nav class="brief-index" id="brief-index"><p class="kicker">{brief_count}则简讯</p><h2>按题选读</h2>')
     for item in edited:
         parts.append(f'<a href="#brief-{item["index"]:02d}">{item["index"]:02d}　{e(item["title"])}</a>')
@@ -117,13 +149,13 @@ def build(source, output, comic_dir, briefs_path, date, edition_path):
     for original, item in zip(original_briefs, edited):
         assert original.h3.a['href'] == item['url']
         i=item['index']; title=item['title']; meta=original.select_one('.meta').get_text(strip=True)
-        parts.append(f'<article class="brief" id="brief-{i:02d}"><p class="kicker">简讯 {i:02d} / {brief_count}</p><h2>{e(title)}</h2><p class="meta">{e(meta)}</p>')
+        parts.append(f'<article class="brief" id="brief-{i:02d}"><p class="kicker">简讯 {i:02d} / {brief_count}</p><h2><a href="{e(item["url"])}" title="打开原文">{e(title)}</a></h2><p class="meta">{e(meta)}</p>')
         expected.extend([title,meta])
         for paragraph in item['paragraphs']:
             parts.append(f'<p>{e(paragraph)}</p>');expected.append(paragraph)
-        parts.append(f'<p class="article-source"><a href="{e(item["url"])}">打开原文 ↗</a></p><p class="back"><a href="#brief-index">返回简讯目录</a> · <a href="#contents">重点解读</a></p></article>')
+        parts.append('</article>')
         entries.append([2, title, f'brief-{i:02d}'])
-    doc_html = '<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>国际科技智库周报｜手机阅读版</title><style>'+CSS+'</style></head><body><main>'+''.join(parts)+'</main></body></html>'
+    doc_html = '<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>国际科技智库周报｜手机阅读版</title><style>'+CSS+'</style></head><body><main>'+''.join(parts)+'<nav class="screen-navigation"><a href="#start">首页</a><a href="#contents">重点篇章</a><a href="#brief-index">简讯</a></nav></main></body></html>'
     hp=output/f'{date}_国际科技智库周报_手机版.html';hp.write_text(doc_html,encoding='utf-8')
     pdf=hp.with_suffix('.pdf')
     assert write_pdf_from_html(hp,pdf), 'Browser PDF rendering failed'
@@ -136,7 +168,7 @@ def build(source, output, comic_dir, briefs_path, date, edition_path):
     assert 'contents' in destinations, 'Missing rendered contents destination'
     contents_page=destinations['contents']
     toc=[[1,'阅读导航',contents_page+1]]
-    last_page=contents_page+1
+    last_page=0 if compact_editorial else contents_page+1
     for level,title,ident in entries:
         if ident=='brief-index':
             found=[i for i,pg in enumerate(doc) if '按题选读' in pg.get_text()]
