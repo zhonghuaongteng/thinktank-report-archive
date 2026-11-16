@@ -35,7 +35,7 @@ p { margin:0 0 2.6mm; orphans:2; widows:2; }
 .opening.editorial .discovery strong { display:block; color:#155a7e; }
 .opening.editorial .opening-links { font-size:11pt; margin:2mm 0 0; }
 .intro { margin:4mm 0; }
-.navigation { break-before:page; }
+.navigation { break-before:auto; margin-top:5mm; }
 .navigation a { display:block; padding:2.2mm 0; border-bottom:.2mm solid #dce4ea; }
 .navigation h2 { margin-bottom:2mm; }
 .comic-page { break-before:page; break-after:page; height:147mm; display:block; }
@@ -51,7 +51,7 @@ p { margin:0 0 2.6mm; orphans:2; widows:2; }
 .back { font-size:10pt; margin-top:4mm; }
 .brief-index { break-before:page; }
 .navigation + .brief-index { break-before:auto; margin-top:5mm; }
-.brief-index a { display:block; padding:2mm 0; line-height:1.45; font-size:11.5pt; break-inside:avoid; border-bottom:.2mm solid #dce4ea; }
+.brief-index a { display:block; padding:1.2mm 0; line-height:1.45; font-size:11.5pt; break-inside:avoid; border-bottom:.2mm solid #dce4ea; }
 table { width:100%; border-collapse:collapse; font-size:10pt; }
 th,td { padding:2mm; border:.2mm solid #cbd5dd; }
 img { max-width:100%; }
@@ -70,6 +70,10 @@ img { max-width:100%; }
 
 def norm(t):
     return re.sub(r'\s+', '', t).replace('\u00ad', '')
+
+
+def meta_html(text):
+    return re.sub(r'(\d{4}-\d{2}-\d{2})', r'<span style="white-space:nowrap">\1</span>', html.escape(text))
 
 def build(source, output, comic_dir, briefs_path, date, edition_path):
     import pymupdf as fitz
@@ -119,7 +123,7 @@ def build(source, output, comic_dir, briefs_path, date, edition_path):
         image_path = comic_dir / f'{i:02d}-手机漫画.jpg'
         b64 = base64.b64encode(image_path.read_bytes()).decode()
         parts.append(f'<section class="comic-page" id="comic-{i:02d}"><img alt="{e(short_titles[i-1])}竖版漫画" src="data:image/jpeg;base64,{b64}"><a class="jump" href="#feature-{i:02d}">向后阅读完整解读 →</a></section>')
-        parts.append(f'<article class="feature" id="feature-{i:02d}"><p class="kicker">{i:02d} · 重点解读</p><h2><a href="{e(url)}" title="打开原文">{e(title)}</a></h2><p class="meta">{e(meta)}</p><p class="summary">{e(summary)}</p>')
+        parts.append(f'<article class="feature" id="feature-{i:02d}"><p class="kicker">{i:02d} · 重点解读</p><h2><a href="{e(url)}" title="打开原文">{e(title)}</a></h2><p class="meta">{meta_html(meta)}</p><p class="summary">{e(summary)}</p>')
         body = BeautifulSoup(str(selection), 'html.parser').select_one('.report-highlights')
         for heading in body.find_all(['h4','h5','h6']):
             if heading.get_text(strip=True) == '精华选编': heading.decompose()
@@ -149,7 +153,7 @@ def build(source, output, comic_dir, briefs_path, date, edition_path):
     for original, item in zip(original_briefs, edited):
         assert original.h3.a['href'] == item['url']
         i=item['index']; title=item['title']; meta=original.select_one('.meta').get_text(strip=True)
-        parts.append(f'<article class="brief" id="brief-{i:02d}"><p class="kicker">简讯 {i:02d} / {brief_count}</p><h2><a href="{e(item["url"])}" title="打开原文">{e(title)}</a></h2><p class="meta">{e(meta)}</p>')
+        parts.append(f'<article class="brief" id="brief-{i:02d}"><p class="kicker">简讯 {i:02d} / {brief_count}</p><h2><a href="{e(item["url"])}" title="打开原文">{e(title)}</a></h2><p class="meta">{meta_html(meta)}</p>')
         expected.extend([title,meta])
         for paragraph in item['paragraphs']:
             parts.append(f'<p>{e(paragraph)}</p>');expected.append(paragraph)

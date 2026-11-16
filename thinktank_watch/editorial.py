@@ -148,7 +148,7 @@ def render_editorial_html(document: dict, anchors: dict[str, str]) -> str:
         parts.append(render_highlights_markdown(discovery["text"]))
         parts.append(
             f'<p class="editorial-source"><a href="{escape(discovery["source_url"], quote=True)}">'
-            f'原文：{escape(discovery["source_locator"])}</a> · '
+            '来源原文</a> · '
             f'<a href="#{anchors[discovery["article_url"]]}">阅读全文</a></p></div></article>'
         )
     parts.append('</section>')
@@ -173,7 +173,7 @@ def render_editorial_markdown(document: dict, anchors: dict[str, str]) -> str:
         lines.extend([f'### {discovery["title"]}', '', discovery['text'], ''])
         if discovery.get('metric'):
             lines.extend([f'**{discovery["metric"]}** {discovery["metric_label"]}', ''])
-        lines.extend([f'原文：[{discovery["source_locator"]}]({discovery["source_url"]}) · [阅读全文](#{anchors[discovery["article_url"]]})', ''])
+        lines.extend([f'[来源原文]({discovery["source_url"]}) · [阅读全文](#{anchors[discovery["article_url"]]})', ''])
     if document.get('data_markdown'):
         lines.extend([document['data_markdown'], ''])
     if document['connections']:

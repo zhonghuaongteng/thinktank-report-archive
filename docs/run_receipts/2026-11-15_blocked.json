@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-11-15T23:11:54.4120152+08:00",
+  "business_date": "2026-11-15",
+  "window": [
+    "2026-11-09",
+    "2026-11-15"
+  ],
+  "status": "blocked_native_image_generation",
+  "audit": {
+    "complete": true,
+    "institutions": 53,
+    "raw_candidates": 371,
+    "review_queue": 99
+  },
+  "collection": {
+    "complete": true,
+    "session": 30043,
+    "exit_code": 0,
+    "automatic_candidates_written": 12
+  },
+  "blocking_error": "image generation failed: network error: error sending request",
+  "native_image_attempts": 4,
+  "native_images_returned": 0,
+  "content": "partial_reading_and_drafts_not_final",
+  "pdf": "automatic_initial_draft_not_accepted",
+  "html": "automatic_initial_draft_not_accepted",
+  "sync": "not_started",
+  "delivery": "not_attempted",
+  "next_step": "Resume original-text review and remaining official discovery, retry native image generation when service recovers; do not rerun audit or collection.",
+  "current_retry": "g2:3 failed with same request-sending network error; zero images returned",
+  "triage": {
+    "excluded": 55,
+    "final_review": false,
+    "access_blocked": 11,
+    "needs_reading": 33,
+    "file": "docs/run_receipts/2026-11-15_editorial_triage.csv"
+  },
+  "historical_checkpoint": true,
+  "superseded_by": "docs/run_receipts/2026-11-15.json"
+}
