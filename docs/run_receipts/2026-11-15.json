@@ -4,7 +4,7 @@
     "2026-11-09",
     "2026-11-15"
   ],
-  "updated_at": "2026-11-16T08:59:16.485083+08:00",
+  "updated_at": "2026-11-16T09:04:10.695914+08:00",
   "version_gate": {
     "passed": true,
     "initial_head": "13c41e0ed1d673842d557ab757e7eaadcc643858",
@@ -195,8 +195,11 @@
   },
   "sync": {
     "remote": {
-      "status": "ready_to_commit",
-      "target": "origin/codex/backfill-govai-interface-oecd"
+      "status": "verified",
+      "target": "origin/codex/backfill-govai-interface-oecd",
+      "content_commit": "ababcc4fa4504199fb8dc2b1a7b5685f3996d674",
+      "verified_commit": "ababcc4fa4504199fb8dc2b1a7b5685f3996d674",
+      "verified_by": "git ls-remote origin refs/heads/codex/backfill-govai-interface-oecd"
     },
     "onedrive": {
       "status": "blocked_dirty_preserved",
@@ -224,10 +227,10 @@
     }
   },
   "delivery": {
-    "status": "ready_after_push",
+    "status": "sent_verified",
     "recipient": "zhonghualongteng@163.com",
     "subject": "国际科技智库周报｜2026-11-15",
-    "send_attempts": 0,
+    "send_attempts": 1,
     "sent_check_before_send": {
       "matching_messages": 0
     },
@@ -239,11 +242,28 @@
       "attachments": 2,
       "status": "verified_unsent"
     },
-    "retry_limit": 1
+    "retry_limit": 1,
+    "attempt_started_at": "2026-11-16T09:02:05.427003+08:00",
+    "retries": 0,
+    "message_id": "1a1e1e13dc672ca5",
+    "verified_label": "SENT",
+    "verified_recipient": "zhonghualongteng@163.com",
+    "verified_attachments": 2,
+    "verified_pdf_bytes": 6021442,
+    "verified_html_bytes": 7030055,
+    "sent_search_matches": 1,
+    "proof": "2026-11-15_mail_sent.json",
+    "temporary_attachment_draft": "moved_to_trash_after_verified_send"
   },
   "previous_checkpoints": [
     "2026-11-15_restart_preflight.json",
     "2026-11-15_progress.json",
     "2026-11-15_blocked.json"
-  ]
+  ],
+  "completion": {
+    "content": "complete_passed",
+    "remote_content": "pushed_and_verified",
+    "onedrive": "blocked_dirty_preserved",
+    "delivery": "complete_sent_verified"
+  }
 }
