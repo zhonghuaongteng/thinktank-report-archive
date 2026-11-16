@@ -811,18 +811,23 @@ class ArchiveAndBriefTests(unittest.TestCase):
             self.assertEqual(len(prompts), 1)
             text = prompts[0].read_text(encoding="utf-8")
             self.assertIn("不要强行落到中国或上海", text)
-            self.assertIn("模块应突出报告本身的中心结论", text)
-            self.assertIn("信息图式漫画", text)
-            self.assertIn("20-30 个汉字", text)
-            self.assertIn("3-4 个小模块", text)
-            self.assertIn("一图看懂", text)
+            self.assertIn("PC漫画版提示词", text)
+            self.assertIn("多分镜、连续场景或数张连续漫画页", text)
+            self.assertIn("禁止复用同一幅手机图", text)
+            self.assertIn("缩放、裁切、拼贴手机图", text)
+            self.assertIn("人物行动", text)
+            self.assertIn("关键证据", text)
+            self.assertIn("内部待补：尚无完整、已核准的精华正文，暂停绘制", text)
+            self.assertNotIn("3-4 个小模块", text)
+            self.assertNotIn("禁止把画面切成四格", text)
+            self.assertNotIn("读者三秒", text)
+            self.assertNotIn("视觉密度宁低勿高", text)
             self.assertIn("科普化", text)
             self.assertIn("可视化", text)
-            self.assertIn("不需要完整复刻报告论证链", text)
             self.assertIn("报告没有的内容不要虚构", text)
             self.assertIn("不要使用空白白板、空白标牌、空白屏幕或空白标签", text)
             self.assertIn("相关载体应改为图标、纹理、设备或场景背景", text)
-            self.assertIn("允许写入一项关键数据或一句短结论", text)
+            self.assertIn("数字保留单位、时期、样本或分母", text)
             self.assertIn("不要为了压缩字数二次删除已经生成的文字", text)
             self.assertNotIn("全图中文字总量不超过 40 个汉字", text)
             self.assertIn("证据配图转译", text)
@@ -834,6 +839,84 @@ class ArchiveAndBriefTests(unittest.TestCase):
             manifest = prompts[0].parents[1] / "manifest.md"
             self.assertTrue(manifest.exists())
             self.assertIn("科普化、可视化", manifest.read_text(encoding="utf-8"))
+
+    def test_weekly_pc_comic_prompt_preserves_complete_authored_cases_and_evidence(self):
+        from thinktank_watch.brief import weekly_comic_prompt_text
+
+        highlights = (
+            "### 工程师为什么需要共用试验台\n\n"
+            "两家中小企业此前分别采购测试设备，样机排队三周才能进入检测环节。"
+            "报告以这两家企业的试验记录说明问题来自排期，而非研究人员人数。\n\n"
+            "### 从共同排期到分阶段复核\n\n"
+            "实验室先开放设备日历，企业工程师提交样机和测试方案，独立人员再复核结果。"
+            "2025年六个月观察期内，12次测试的中位等待时间由21天降至8天；"
+            "该比较记录等待时间，没有测量量产后的产品收益。\n\n"
+            "### 第二个案例仍处于方案阶段\n\n"
+            "另一地区拟由大学维护设备、企业承担耗材费用，目前只是设计方案，尚未投入运行。"
+        )
+        candidate = ArticleCandidate(
+            institution_slug="example", institution_name="Example Institute", institution_type="think_tank",
+            title="Shared testing arrangements", url="https://example.org/testing", priority="P1",
+            published_date="2026-11-16", chinese_summary="核心观点：试验安排影响企业等待时间。",
+            highlights_markdown=highlights,
+        )
+
+        text = weekly_comic_prompt_text("2026-11-22", 1, candidate)
+
+        self.assertIn(highlights, text)
+        self.assertNotIn("内部待补", text)
+        self.assertIn("source_url: https://example.org/testing", text)
+        self.assertIn("发布日期：2026-11-16", text)
+
+    def test_weekly_comic_continuations_render_in_numeric_order_without_alternatives(self):
+        from contextlib import chdir
+        from thinktank_watch.brief import (
+            render_weekly_magazine_html, weekly_topic_comic_file, weekly_topic_comic_files,
+        )
+
+        candidate = ArticleCandidate(
+            institution_slug="example", institution_name="Example Institute", institution_type="think_tank",
+            title="Testing arrangements", url="https://example.org/testing", priority="P1",
+            published_date="2026-11-16", chinese_summary="核心观点：试验安排影响企业等待时间。",
+            highlights_markdown="### 实际过程\n\n工程师预约设备，实验室执行试验并保留测量记录。",
+        )
+        with tempfile.TemporaryDirectory() as tmp, chdir(tmp):
+            pages = Path("comic/weekly-topic-comics-2026-11-22/pages")
+            pages.mkdir(parents=True)
+            names = [
+                "01-topic-case-page-10.jpg", "01-topic-case-page-02.jpg", "01-topic-case.jpg",
+                "01-z-alternative.jpg", "01-z-alternative-page-02.jpg", "01-topic-case-page-03-alt.jpg",
+            ]
+            for name in names:
+                (pages / name).write_bytes(b"path-selection fixture")
+            expected = [pages / name for name in ("01-topic-case.jpg", "01-topic-case-page-02.jpg", "01-topic-case-page-10.jpg")]
+
+            self.assertEqual(weekly_topic_comic_files("2026-11-22", 1), expected)
+            self.assertEqual(weekly_topic_comic_file("2026-11-22", 1), expected[0])
+            markdown = render_weekly_brief_markdown("2026-11-22", [candidate])
+            html = render_weekly_magazine_html("2026-11-22", [candidate])
+
+            for output in (markdown, html):
+                positions = [output.index(path.name) for path in expected]
+                self.assertEqual(positions, sorted(positions))
+                self.assertNotIn("alternative", output)
+                self.assertNotIn("page-03-alt", output)
+            self.assertEqual(markdown.count("![主题 01 漫画"), 3)
+            self.assertEqual(html.count('<figure class="comic"'), 3)
+            self.assertIn('topic-primary has-selection has-comic-continuations', html)
+
+    def test_weekly_comic_continuation_cannot_replace_missing_primary(self):
+        from contextlib import chdir
+        from thinktank_watch.brief import weekly_topic_comic_file, weekly_topic_comic_files
+
+        with tempfile.TemporaryDirectory() as tmp, chdir(tmp):
+            pages = Path("comic/weekly-topic-comics-2026-11-22/pages")
+            pages.mkdir(parents=True)
+            (pages / "01-topic-case-page-02.jpg").write_bytes(b"orphan continuation")
+            (pages / "01-topic-case-page-03-alt.jpg").write_bytes(b"orphan alternative")
+
+            self.assertEqual(weekly_topic_comic_files("2026-11-22", 1), [])
+            self.assertIsNone(weekly_topic_comic_file("2026-11-22", 1))
 
     def test_weekly_comic_prompts_respect_omitted_markdown_optional_sections(self):
         from thinktank_watch.brief import write_weekly_comic_prompts

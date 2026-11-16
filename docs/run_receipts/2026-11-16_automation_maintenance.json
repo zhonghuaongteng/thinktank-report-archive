@@ -1,0 +1,80 @@
+{
+  "maintenance_date": "2026-11-16",
+  "automation_id": "automation-4",
+  "scope": "后续自动化启动恢复、读者表达与手机/PC漫画双版本交付；未重制或重发已发送周报",
+  "root_cause": {
+    "failed_run_date": "2026-11-08",
+    "entry_head": "3dc604f1252a1d7d9db96743fbeabf10503016a0",
+    "then_target_head": "13c41e0ed1d673842d557ab757e7eaadcc643858",
+    "merge_base": "0d8dd0cc8f2ac0e58a47be5ea32068ce0bd52535",
+    "local_only": 1,
+    "remote_only": 245,
+    "cause": "分支从旧入口HEAD创建后仅设置目标upstream，未从目标提交指定起点；ff-only正常拒绝，旧规则未提供自动恢复。",
+    "local_unique_commit": "2026-07-06旧日报归档，非本轮未提交修改",
+    "evidence": "历史2026-11-08_preflight.json、分支reflog和固定提交Git历史；调度器内部选择入口原因未证实"
+  },
+  "startup_change": {
+    "helper": "scripts/prepare_weekly_worktree.py",
+    "installed_helper": "C:\\Users\\WINDOWS\\.codex\\automations\\automation-4\\helpers\\prepare_weekly_worktree.py",
+    "actions": [
+      "new_from_verified_remote",
+      "resume_existing",
+      "verify_already_sent"
+    ],
+    "retains_entry_files_and_commits": true,
+    "git_sync_does_not_alone_block_accepted_mail": true,
+    "production_resume_check": "旧入口30c5正确定位2026-11-15已发送工作树，返回verify_already_sent，未采集/渲染/发送",
+    "lock_scope": "启动器进程锁只保护工作树准备；后续单任务执行、进程检查、SENT查重和跨接续累计发送尝试由运行规则执行"
+  },
+  "editorial_change": {
+    "reader_text": "主要篇幅讲报告观点、事件前因后果和关键证据；内部核验记录/防御性模板不进入正文",
+    "comic_input": "核准完整正文与证据，PC独立分镜，去掉单一隐喻/禁止四格/固定模块约束",
+    "editions": [
+      "手机版PDF",
+      "手机版HTML",
+      "PC漫画版PDF",
+      "PC漫画版HTML"
+    ],
+    "delivery": "同一封原授权邮件四附件，分别验收，不自动重发历史期"
+  },
+  "automation_update": {
+    "tool": "automation_update",
+    "verified_prompt_matches": true,
+    "prompt_sha256": "24033dd4a1fb03814c068da3e45b1d82a05fdd371fa0820eaa7a5045a8285d03",
+    "preserved_fields": [
+      "schedule",
+      "model",
+      "reasoning_effort",
+      "execution_environment",
+      "status",
+      "notification_policy",
+      "project",
+      "auto_archive"
+    ],
+    "explicit_local_environment_setup": "not_enabled"
+  },
+  "rule_sources": [
+    "C:\\Users\\WINDOWS\\.codex\\docs\\agent-rules\\automations\\automation-4.md",
+    "C:\\Users\\WINDOWS\\.codex\\docs\\agent-rules\\automations\\automation-4-editorial-standard.md",
+    "docs/weekly_editorial_standard_2026-10.md",
+    "docs/weekly_mobile_reading.md",
+    "docs/weekly_comic_reading.md"
+  ],
+  "verification": {
+    "isolated_git_integration_tests": 13,
+    "full_suite_before_comic_template_change": 738,
+    "full_suite_result": "passed",
+    "comic_template_tests": "passed",
+    "full_suite_tests": 741,
+    "comic_template_and_continuation_tests": 44,
+    "continuous_pc_comic_pages": "MD/HTML numeric-order consumption verified with fixtures; no current-issue rerender"
+  },
+  "updated_at": "2026-11-16T09:47:01.957525+08:00",
+  "file_sha256": {
+    "scripts\\prepare_weekly_worktree.py": "9a7050422aad8293e15cd0e9b30b36b22feabed94a585354506ef251c48ea206",
+    "tests\\test_weekly_worktree_bootstrap.py": "b039bfc29abfbb59759eb0d14e4cd1b84cc5c137a93a0fd49f9f9009a75a2c86",
+    "thinktank_watch\\brief.py": "5ecd797e745bc4063ce0e7e66c61f4d9ae234dee4c8320037e48629e26c5d517",
+    "C:\\Users\\WINDOWS\\.codex\\docs\\agent-rules\\automations\\automation-4.md": "9d7f3004e2b7099613d951ad0b507079ff0c7916362b4f884520b6c93354bc9c",
+    "C:\\Users\\WINDOWS\\.codex\\docs\\agent-rules\\automations\\automation-4-editorial-standard.md": "68799932ba3e6b612077d130b9d57c580cac13cfd80fba0f121e414eb024a5dd"
+  }
+}

@@ -233,14 +233,29 @@ def _pdf_topic_key(index: int) -> str:
     return f"topic_{index:02d}"
 
 
-def weekly_topic_comic_file(date: str, index: int) -> Path | None:
+def weekly_topic_comic_files(date: str, index: int) -> list[Path]:
     comic_dir = Path("comic") / f"weekly-topic-comics-{date}" / "pages"
     matches = sorted(
         path
         for path in comic_dir.glob(f"{index:02d}-*")
-        if path.suffix.lower() in WEEKLY_COMIC_SUFFIXES
+        if path.is_file() and path.suffix.lower() in WEEKLY_COMIC_SUFFIXES
     )
-    return matches[0] if matches else None
+    primary_files = [path for path in matches if not re.search(r"-page-\d+(?:-|$)", path.stem)]
+    if not primary_files:
+        return []
+    primary = primary_files[0]
+    continuation_pattern = re.compile(re.escape(primary.stem) + r"-page-(\d+)$")
+    continuations = []
+    for path in matches:
+        match = continuation_pattern.fullmatch(path.stem)
+        if match and int(match.group(1)) >= 2:
+            continuations.append((int(match.group(1)), path))
+    return [primary, *(path for _, path in sorted(continuations))]
+
+
+def weekly_topic_comic_file(date: str, index: int) -> Path | None:
+    files = weekly_topic_comic_files(date, index)
+    return files[0] if files else None
 
 
 def weekly_topic_comic_markdown_src(date: str, index: int) -> str | None:
@@ -301,6 +316,11 @@ def weekly_comic_prompt_text(date: str, index: int, candidate: ArticleCandidate)
     if sections["中国/上海参考"]:
         content_lines.append(f"- 涉华/涉沪内容（报告确有）：{_clean_text(sections['中国/上海参考'])}")
     content_block = "\n".join(content_lines)
+    highlights = weekly_highlights_markdown(candidate)
+    highlights_block = highlights or (
+        "内部待补：尚无完整、已核准的精华正文，暂停绘制。先补齐报告的背景、行动、案例和证据，"
+        "不能只凭摘要、标题或主题标签补造分镜；本条制作状态不得画入读者版漫画。"
+    )
     return f"""---
 date: {date}
 topic_index: {index}
@@ -309,37 +329,48 @@ institution: {candidate.institution_name}
 source_url: {candidate.url}
 output: ../pages/{basename}.jpg
 aspect_ratio: "16:9"
-style: "Codex-generated infographic comic poster"
+edition: "PC comic reading edition"
+style: "Codex-generated narrative knowledge comic"
 ---
 
-# 主题 {index:02d} 漫画提示词（信息图式漫画）
+# 主题 {index:02d} PC漫画版提示词
 
-请生成一张 16:9 横版「信息图式漫画」，用于国际科技智库周报的单篇主题页。目标是"一图看懂"：读者三秒内抓到核心判断，十秒内看懂报告在讲什么。它介于知识漫画和编辑部信息海报之间——保留漫画人物与场景的叙事感，但版面组织服从信息层级，不得画成流程图模板、PPT 示意图或仪表盘。漫画不需要完整复刻报告论证链，重点是用科普化、可视化的视角让读者快速看懂文章观点。
+请为国际科技智库周报制作独立的PC漫画阅读版，以完整核准正文为依据，通过科普化、可视化的场景与分镜讲清问题的前因后果、参与者怎样行动、报告凭什么形成判断。默认采用适合桌面阅读的16:9横向版面，可按材料需要使用多分镜、连续场景或数张连续漫画页；不预设分镜数，不把正文压缩成口号或几个抽象标签。先设计具体分镜与阅读顺序，再生成画面。
 
 ## 报告锚点
 
 - 机构：{candidate.institution_name}
 - 标题：{source_title}
 - 原文链接：{candidate.url}
+- 发布日期：{candidate.published_date}
+- 材料类型：{candidate.content_type}
 - 优先级：{candidate.priority}
 - 主题标签：{tags}
 
 ## 需要表达的核心内容
 
+以下摘要仅用于定位主旨，不能替代后面的完整正文、案例和证据。
+
 {content_block}
 
-## 版面结构（信息层级从上到下）
+## 完整核准正文（分镜与证据依据，内部制作材料）
 
-1. 顶部通栏大标题：用 20-30 个汉字概括核心判断，占画面高度约 15%，粗黑字配米白底，是全图第一视觉焦点。
-2. 主视觉区（占画面约 55%）：一个统一的视觉隐喻场景承载报告观点，主题应从报告自身内容中生长出来——可以是机制剖面、数据景观、人物行动、产业现场、实验台、地图或任何贴合报告叙事的场景；场景要有明确主角和单一焦点，禁止把画面切成四格连环画。
-3. 信息模块条（占画面约 30%）：沿底部或右侧排 3-4 个小模块，每个模块包含图标化小场景、短标签，并允许写入一项关键数据或一句短结论；模块内容只从报告真实提供的信息中选取——关键机制、数据要点、影响对象、争议焦点、趋势信号或应对方向中最有信息量的 3-4 项。
-4. 报告没有的内容不要虚构：报告没有给出政策建议就不画应对方向模块；不要强行落到中国或上海，只有上方"需要表达的核心内容"中出现涉华/涉沪条目时才允许出现中国/上海模块。模块应突出报告本身的中心结论。
-5. 证据配图转译：如果报告正文、摘要或图注中出现图表、数据曲线、地图、技术架构图、供应链图、照片或其他证据配图线索，可将其转译为主视觉中的报告页、屏幕、白板、证据卡或背景装置；后续若自动化提供真实参考图，可作为参考素材纳入，但不得凭空复制未取得的原图。
+{highlights_block}
+
+## 版面结构与叙事安排
+
+1. 标题直接说明具体问题或有证据的判断。分镜从报告自身的现实背景出发：谁在什么情境下遇到了困难，现有做法在哪一步受阻，为什么产生后续行动。
+2. 用人物行动和真实物件展开过程：谁提出、资助、试验、比较、组织或调整，参与者怎样分工，事件先后怎样发生。案例、制度安排和人物对话须有原文依据；需要解释术语时就近讲清，不用抽象标签代替行动。
+3. 把关键证据放进叙事：选取核准正文中有辨识度的案例、数据、对照结果或争议，交代它支持哪个判断。数字保留单位、时期、样本或分母，图表连同解释和来源呈现。原文没有建立因果关系的比较不能画成确定因果箭头；原文只提出方案时画清方案设计，不补画已经成功的结局。
+4. 报告没有的内容不要虚构：不要补造国家、应用场景、参与机构、数字或因果链；没有政策建议就不添加建议场景。不要强行落到中国或上海，只在核准正文或摘要确有相应内容且有助理解时选用。叙事围绕报告自己的问题、发现和证据，不为固定主题或固定模块凑内容。
+5. 证据配图转译：核准正文中的图表、数据曲线、地图、技术架构图、供应链图、照片等，可转译成场景中的报告页、屏幕、记录、证据卡或简洁数据图，保留必要图注与口径；提供了真实参考图时可纳入，不得凭空复制未取得的原图，不用装饰性坐标冒充证据。
+6. 分镜数与连续页数由内容决定。需要多页时保持人物、术语与阅读顺序一致，以增页和重排完整表达案例与证据，不能把小字塞满单张图，也不能为保留单张格式删掉理解过程所必需的信息。
 
 ## 视觉约束
 
-- 风格：清线条知识漫画+信息海报混合，大面积留白，视觉密度宁低勿高。
+- 风格：清线条知识漫画，人物、环境与证据物件具体可辨；用留白和层次区分分镜，内容丰富但阅读顺序清楚，不能只排成标语海报、流程图模板、PPT示意图或仪表盘。
 - 统一配色：米白底（#F7F3EA）、深藏青主色（#1F3A5F）、砖红强调色（#B84C3D）、金褐辅助色（#C89B52），全图不超过这四组颜色加黑白。
+- 手机与PC须分别设计、分别生成。PC版要有独立分镜、场景展开和证据表达；禁止复用同一幅手机图，也不能用改文件名、缩放、裁切、拼贴手机图或改变页面方向冒充PC版。可统一人物和配色，但必须实际复核两版叙述与内容差异。
 - 保留足以独立传达报告判断与证据的中文信息量，关键数字和关键词应放大处理；不得以机械压缩字数为由删去已经生成且可读的有效文字。
 - 不要为了压缩字数二次删除已经生成的文字；需要降低密度时，应重排层级、合并重复表述或减少装饰元素。
 - 不要使用空白白板、空白标牌、空白屏幕或空白标签作为视觉元素；若无需文字，相关载体应改为图标、纹理、设备或场景背景，避免形成类似字体丢失的空白区域。
@@ -348,7 +379,7 @@ style: "Codex-generated infographic comic poster"
 - 不把编辑核验记录画入图片：不写“选编范围”“相比漫画”“已读页数”“自撰整理”，也不添加例行的“不能证明”“不代表立场”“仍须核验”等免责声明。必要的计划、目标或已实施状态用准确动词就近表达。
 - 来源只保留已核准的机构名称、日期及材料类型；不得自行展开缩写、创造外语全称、补写标语或无关装饰文字。错误和无关文字须修正，不适用保留有效文字的要求。
 - 不要出现"主题机制图解""示意图""占位图"等字样。
-- 最终输出为可嵌入周报的单张图片，文件名应为 `{basename}.jpg`。
+- 首张PC漫画文件名为 `{basename}.jpg`；需要连续页时依次保存为 `{basename}-page-02.jpg`、`{basename}-page-03.jpg`等，并将全部连续页按顺序纳入PC版及复核清单，不能只交首张或混入手机漫画。实际页数、分镜说明与来源页段保存于内部制作记录，不画成读者端标语。
 """
 
 
@@ -367,7 +398,7 @@ def write_weekly_comic_prompts(
     manifest_lines = [
         f"# {date} 周报 Codex 漫画生成清单",
         "",
-        "本目录用于未来周报的逐条 P0/P1 Codex 漫画生成。漫画应从科普化、可视化角度突出报告核心观点，不要求完整复刻报告论证链；信息模块只画报告真实包含的内容，不为凑版面生造政策建议或中国/上海关联。",
+        "本目录用于未来周报的逐条 P0/P1 独立PC漫画版生成。以完整核准正文为依据，通过科普化、可视化的分镜展开具体背景、人物行动、事件顺序、案例与关键证据，必要时使用连续页；不得复用或缩放手机图，不为凑版面生造政策建议或中国/上海关联。",
         "",
     ]
     for index, item in enumerate(priority_items, 1):
@@ -709,9 +740,10 @@ def render_weekly_reader_markdown(date: str, candidates: list[ArticleCandidate],
                 f"- **来源**：{item.institution_name}｜{item.published_date}",
             ]
         )
-        comic_src = weekly_topic_comic_markdown_src(date, index)
-        if comic_src:
-            lines.extend(["", f"![主题 {index:02d} 漫画]({comic_src})", ""])
+        for page_index, comic_path in enumerate(weekly_topic_comic_files(date, index), 1):
+            comic_src = "../../../" + comic_path.as_posix()
+            continuation = f" 续页 {page_index}" if page_index > 1 else ""
+            lines.extend(["", f"![主题 {index:02d} 漫画{continuation}]({comic_src})", ""])
         highlights = weekly_highlights_markdown(item)
         if highlights:
             lines.extend(["", "#### 摘要导读", "", sections["核心观点"], "", f"#### {item.highlights_title or '精华选编'}", "", highlights, ""])
@@ -1211,6 +1243,7 @@ a { color: #14456e; text-decoration: none; }
 
 .topic-card { padding: 3mm 10mm; break-inside: auto; }
 .topic-primary { page-break-before: always; break-before: page; page-break-inside: avoid; break-inside: avoid; padding-bottom: 0; }
+.topic-primary.has-comic-continuations { page-break-inside: auto; break-inside: auto; }
 .topic-analysis { page-break-before: auto; break-before: auto; padding-top: 0; }
 .topic-card .card-head { display: flex; align-items: center; gap: 3mm; margin-bottom: 3mm; }
 .chip { font-size: 8pt; font-weight: 700; padding: .8mm 3mm; border-radius: 999px; }
@@ -1225,6 +1258,8 @@ a { color: #14456e; text-decoration: none; }
 .topic-card figure.comic { margin: 0 0 3mm; text-align: center; break-inside: avoid; }
 .topic-card figure.comic img { display: block; width: auto; height: auto; max-width: 100%; max-height: 82mm; margin: 0 auto; object-fit: contain; border: .6pt solid #d7dee5; border-radius: 2pt; }
 .topic-primary.selection-on-next-page figure.comic img { max-height: 125mm; }
+.topic-primary.has-comic-continuations figure.comic img { max-height: 180mm; }
+.topic-primary.has-comic-continuations figure.comic + figure.comic { page-break-before: always; break-before: page; }
 .highlights-map { border-top: .5pt solid #c7d0d8; padding-top: 3mm; margin-top: 4mm; font-size: 9pt; }
 .highlights-map h4 { margin: 0 0 1.5mm; color: #14456e; }
 .highlights-map ol { margin: 0; padding-left: 6mm; }
@@ -1279,9 +1314,12 @@ def _magazine_topic_card_html(
     chapter = escape(weekly_chapter_name(item))
     pri = escape(item.priority)
     highlights = weekly_highlights_markdown(item)
+    comic_paths = weekly_topic_comic_files(date, index)
     lead_class = " has-selection" if highlights else ""
     if highlights and item.highlights_start_new_page:
         lead_class += " selection-on-next-page"
+    if len(comic_paths) > 1:
+        lead_class += " has-comic-continuations"
     parts = [
         f'<section class="topic-card topic-primary{lead_class}" id="{_topic_anchor(index)}">',
         '<div class="card-head">',
@@ -1293,13 +1331,10 @@ def _magazine_topic_card_html(
         + (f"｜{escape(item.published_date[:10])}" if item.published_date else "")
         + "</p>",
     ]
-    comic_src = weekly_topic_comic_markdown_src(date, index)
-    if comic_src:
-        parts.extend(
-            [
-                f'<figure class="comic"><img src="{escape(comic_src, quote=True)}" alt="主题 {index:02d} 漫画"></figure>',
-            ]
-        )
+    for page_index, comic_path in enumerate(comic_paths, 1):
+        comic_src = "../../../" + comic_path.as_posix()
+        continuation = f" 续页 {page_index}" if page_index > 1 else ""
+        parts.append(f'<figure class="comic"><img src="{escape(comic_src, quote=True)}" alt="主题 {index:02d} 漫画{continuation}"></figure>')
     lead_text = sections["核心观点"] if highlights else judgment
     if lead_text:
         parts.extend(
