@@ -35,7 +35,7 @@ p { margin:0 0 2.6mm; orphans:2; widows:2; }
 .opening.editorial .discovery strong { display:block; color:#155a7e; }
 .opening.editorial .opening-links { font-size:11pt; margin:2mm 0 0; }
 .intro { margin:4mm 0; }
-.navigation { break-before:auto; margin-top:5mm; }
+.navigation { break-before:auto; break-inside:avoid; margin-top:5mm; }
 .navigation a { display:block; padding:2.2mm 0; border-bottom:.2mm solid #dce4ea; }
 .navigation h2 { margin-bottom:2mm; }
 .comic-page { break-before:page; break-after:page; height:147mm; display:block; }
