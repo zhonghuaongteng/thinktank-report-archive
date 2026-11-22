@@ -2,8 +2,8 @@
   "business_date": "2026-11-22",
   "window_start": "2026-11-16",
   "window_end": "2026-11-22",
-  "status": "content_complete_wechat_saved_mail_pending",
-  "updated_at": "2026-11-22T17:27:55.799776+08:00",
+  "status": "completed",
+  "updated_at": "2026-11-22T17:32:43.073843+08:00",
   "worktree": "C:\\Users\\WINDOWS\\.codex\\worktrees\\automation-4-2026-11-22-7f7285188b",
   "base_commit": "886153c285dc9c05401fcad275fe634ead5d9120",
   "audit": {
@@ -109,7 +109,14 @@
     "interest_tests_passed": 5,
     "layout_related_tests_passed": 48
   },
-  "remote_sync": "pending_content_commit_push",
+  "remote_sync": {
+    "status": "verified",
+    "remote_head": "1728403f09e6a11aab2226aed17117ae83bb92a0",
+    "local_head_at_check": "1728403f09e6a11aab2226aed17117ae83bb92a0",
+    "content_commit": "1728403f09e6a11aab2226aed17117ae83bb92a0",
+    "target": "origin/codex/backfill-govai-interface-oecd",
+    "checked_at": "2026-11-22T17:32:43.073843+08:00"
+  },
   "onedrive_sync": {
     "status": "blocked_dirty_worktree",
     "entries": 720,
@@ -117,8 +124,11 @@
     "status_sha256": "8358b659013d3c577b718cc2cdef4d4eb94b63808f0943053c2f538dffe798b0"
   },
   "delivery": {
-    "attempts": 0,
-    "status": "not_attempted_quality_gate_failed"
+    "status": "sent_confirmed",
+    "attempts": 1,
+    "message_id": "1a20298640d8e7fd",
+    "attachments": 3,
+    "post_send_dedup_matches": 1
   },
   "wechat": {
     "status": "draft_saved_readback_verified",
@@ -141,5 +151,5 @@
     "old-prompts\\05-topic-eic.md",
     "old-prompts\\06-topic-mext-06.md"
   ],
-  "checkpoint": "final_review_passed"
+  "checkpoint": "delivered_and_wechat_draft_verified"
 }
