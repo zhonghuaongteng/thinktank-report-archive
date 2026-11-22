@@ -1,40 +1,54 @@
 {
   "business_date": "2026-11-22",
-  "authorized_by_user": true,
-  "authorization": "授权尝试内置图片工具",
+  "status": "production_complete_native_only",
   "tool": "image_gen.imagegen",
-  "first_prompt": "comic/weekly-topic-comics-2026-11-22/actual-prompts/01-pc.txt",
-  "attempts": 9,
-  "cell_ids": [
-    "124",
-    "125"
-  ],
-  "errors": [
-    "image generation failed: network error: error sending request",
-    "image generation failed: network error: error sending request"
-  ],
-  "images_returned": 1,
-  "status": "short_diagnostic_only_passed_formal_requests_still_network_failed",
-  "updated_at": "2026-11-22T15:44:29.069195+08:00",
-  "api_quota_issue_resolved": false,
-  "diagnostic_images": 1,
-  "production_images": 0,
-  "latest_diagnostics": "2026-11-22_image_network_diagnosis.json",
-  "latest_turn_calls": [
-    {
-      "cell": "143",
-      "jobs": 2,
-      "result": "network_error"
-    },
-    {
-      "cell": "144",
-      "jobs": 1,
-      "result": "network_error"
-    },
-    {
-      "cell": "157",
-      "jobs": 1,
-      "result": "network_error"
-    }
-  ]
+  "selected_native_scenes": 42,
+  "typeset_comic_pages": 12,
+  "independent_editions": true,
+  "visual_review": "passed",
+  "actual_prompts_and_original_paths": "comic\\weekly-topic-comics-2026-11-22\\native-panels/results",
+  "previous_checkpoint": {
+    "business_date": "2026-11-22",
+    "authorized_by_user": true,
+    "authorization": "授权尝试内置图片工具",
+    "tool": "image_gen.imagegen",
+    "first_prompt": "comic/weekly-topic-comics-2026-11-22/actual-prompts/01-pc.txt",
+    "attempts": 9,
+    "cell_ids": [
+      "124",
+      "125"
+    ],
+    "errors": [
+      "image generation failed: network error: error sending request",
+      "image generation failed: network error: error sending request"
+    ],
+    "images_returned": 1,
+    "status": "short_diagnostic_only_passed_formal_requests_still_network_failed",
+    "updated_at": "2026-11-22T15:44:29.069195+08:00",
+    "api_quota_issue_resolved": false,
+    "diagnostic_images": 1,
+    "production_images": 0,
+    "latest_diagnostics": "2026-11-22_image_network_diagnosis.json",
+    "latest_turn_calls": [
+      {
+        "cell": "143",
+        "jobs": 2,
+        "result": "network_error"
+      },
+      {
+        "cell": "144",
+        "jobs": 1,
+        "result": "network_error"
+      },
+      {
+        "cell": "157",
+        "jobs": 1,
+        "result": "network_error"
+      }
+    ]
+  },
+  "historical_errors_retained": true,
+  "api_used_this_continuation": false,
+  "web_generation_used_this_continuation": false,
+  "updated_at": "2026-11-22T17:27:55.799776+08:00"
 }

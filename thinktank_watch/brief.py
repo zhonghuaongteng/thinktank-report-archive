@@ -1276,6 +1276,8 @@ a { color: #14456e; text-decoration: none; }
 .report-highlights { font-size: 10pt; line-height: 1.75; break-inside: auto; }
 .report-highlights h4, .report-highlights h5, .report-highlights h6 { color: #14456e; font-size: 11pt; margin: 3mm 0 2mm; break-after: avoid; }
 .report-highlights p, .report-highlights blockquote { margin: 2mm 0 3mm; orphans: 2; widows: 2; }
+.report-highlights p:last-child { break-before: avoid; }
+@media screen { .topic-card figure.comic img { width: 100%; max-height: none; } }
 .report-highlights ul, .report-highlights ol { padding-left: 6mm; break-inside: auto; }
 .report-highlights li { margin: 1.4mm 0; }
 .report-highlights blockquote { border-left: 2pt solid #c89b52; padding-left: 4mm; color: #40505c; }

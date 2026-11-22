@@ -50,7 +50,7 @@ p { margin:0 0 2.6mm; orphans:2; widows:2; }
 .article-source { font-size:10pt; margin-top:4mm; }
 .back { font-size:10pt; margin-top:4mm; }
 .brief-index { break-before:page; }
-.navigation + .brief-index { break-before:auto; margin-top:5mm; }
+.navigation + .brief-index { break-before:page; margin-top:0; }
 .brief-index a { display:block; padding:1.2mm 0; line-height:1.45; font-size:11.5pt; break-inside:avoid; border-bottom:.2mm solid #dce4ea; }
 table { width:100%; border-collapse:collapse; font-size:10pt; }
 th,td { padding:2mm; border:.2mm solid #cbd5dd; }
@@ -126,7 +126,7 @@ def build(source, output, comic_dir, briefs_path, date, edition_path):
         parts.append(f'<article class="feature" id="feature-{i:02d}"><p class="kicker">{i:02d} · 重点解读</p><h2><a href="{e(url)}" title="打开原文">{e(title)}</a></h2><p class="meta">{meta_html(meta)}</p><p class="summary">{e(summary)}</p>')
         body = BeautifulSoup(str(selection), 'html.parser').select_one('.report-highlights')
         for heading in body.find_all(['h4','h5','h6']):
-            if heading.get_text(strip=True) == '精华选编': heading.decompose()
+            if heading.get_text(strip=True) == '精华选编' or norm(heading.get_text()) == norm(title): heading.decompose()
             else: heading.name = 'h3'
         paragraphs = body.find_all('p')
         for para in paragraphs:
@@ -139,6 +139,11 @@ def build(source, output, comic_dir, briefs_path, date, edition_path):
             expected.append(para.get_text())
             if para.get_text().startswith(('来源：','本篇为改编','本文据')):
                 para['class'] = 'source'
+            if para is paragraphs[-1] and para.find('a'):
+                para['class'] = 'source'
+                previous = para.find_previous_sibling('p')
+                if previous:
+                    previous['style'] = 'break-after:avoid;'
         expected.extend(x.get_text() for x in body.select('h3,li,th,td'))
         parts.append(body.decode_contents())
         parts.append('</article>')

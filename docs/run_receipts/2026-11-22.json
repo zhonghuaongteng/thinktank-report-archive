@@ -2,8 +2,8 @@
   "business_date": "2026-11-22",
   "window_start": "2026-11-16",
   "window_end": "2026-11-22",
-  "status": "blocked_native_image_network_web_account_unverified",
-  "updated_at": "2026-11-22T15:46:37.642860+08:00",
+  "status": "content_complete_wechat_saved_mail_pending",
+  "updated_at": "2026-11-22T17:27:55.799776+08:00",
   "worktree": "C:\\Users\\WINDOWS\\.codex\\worktrees\\automation-4-2026-11-22-7f7285188b",
   "base_commit": "886153c285dc9c05401fcad275fe634ead5d9120",
   "audit": {
@@ -56,7 +56,7 @@
     "must_not_restart": true
   },
   "content": {
-    "status": "text_reviewed_archive_index_aligned",
+    "status": "complete",
     "items": 26,
     "features": 6,
     "briefs": 20,
@@ -86,9 +86,9 @@
     "volume_check": true,
     "source_prose_review": true,
     "homepage_text_review": true,
-    "actual_pdf_review": false,
-    "comic_review": false,
-    "dual_edition_check": false
+    "actual_pdf_review": true,
+    "comic_review": true,
+    "dual_edition_check": true
   },
   "preservation": {
     "archive": 746,
@@ -96,56 +96,38 @@
     "kb": 759
   },
   "images": {
+    "status": "complete_native_only",
     "expected": 12,
-    "returned": 6,
-    "status": "six_candidates_on_provenance_hold_native_generation_failed",
-    "prepared_prompts": 12,
-    "native_authorized": true,
-    "native_attempts": 5,
-    "native_images_returned": 1,
-    "diagnostic_images": 1,
-    "production_images": 0,
-    "reviewed": 6,
-    "remaining": 6,
-    "completed_indices": [
-      1,
-      2,
-      4
-    ],
-    "remaining_indices": [
-      3,
-      5,
-      6
-    ],
-    "candidate_images": 6,
-    "publication_ready_images": 0,
-    "remaining_ungenerated": 6
+    "publication_ready_images": 12,
+    "selected_native_scenes": 42,
+    "reviewed": 12,
+    "remaining": 0,
+    "web_candidates_used": 0
   },
   "tests": {
     "full_suite_passed": 741,
-    "interest_tests_passed": 5
+    "interest_tests_passed": 5,
+    "layout_related_tests_passed": 48
   },
-  "remote_sync": "not_attempted_content_delivery_gate_pending",
+  "remote_sync": "pending_content_commit_push",
   "onedrive_sync": {
     "status": "blocked_dirty_worktree",
     "entries": 720,
-    "mutations": 0
+    "mutations": 0,
+    "status_sha256": "8358b659013d3c577b718cc2cdef4d4eb94b63808f0943053c2f538dffe798b0"
   },
   "delivery": {
     "attempts": 0,
     "status": "not_attempted_quality_gate_failed"
   },
   "wechat": {
-    "status": "draft_ready_publication_api_restricted",
-    "errcode": 0,
-    "ip": "38.75.136.211",
-    "uploads": 0,
-    "user_reported_whitelist_added": true,
-    "rechecked_at": "2026-11-22T15:17:19.838632+08:00",
-    "latest_errcode": 0,
-    "authentication": true,
-    "draft_count": true,
-    "publication_api_errcode": 48001
+    "status": "draft_saved_readback_verified",
+    "article_count": 7,
+    "draft_media_id": "As4ZnmHVkA9eFxHwVudixynUQW4p_G4W17xr5C28zikJehKMWUfVs7a0JepYBPZX",
+    "draft_submission_attempts": 2,
+    "public_send_attempts": 0,
+    "backend_preview": "pending_user",
+    "publication_status": "not_sent_by_automation"
   },
   "unapproved_auto_outputs_moved": [
     "2026-11-22_国际科技智库周报.html",
@@ -159,5 +141,5 @@
     "old-prompts\\05-topic-eic.md",
     "old-prompts\\06-topic-mext-06.md"
   ],
-  "checkpoint": "local_candidates_saved_pending_commit"
+  "checkpoint": "final_review_passed"
 }
