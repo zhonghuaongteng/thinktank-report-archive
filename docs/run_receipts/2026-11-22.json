@@ -2,8 +2,8 @@
   "business_date": "2026-11-22",
   "window_start": "2026-11-16",
   "window_end": "2026-11-22",
-  "status": "blocked_image_services",
-  "updated_at": "2026-11-22T14:59:30.284048+08:00",
+  "status": "blocked_formal_image_generation",
+  "updated_at": "2026-11-22T15:18:26.547628+08:00",
   "worktree": "C:\\Users\\WINDOWS\\.codex\\worktrees\\automation-4-2026-11-22-7f7285188b",
   "base_commit": "886153c285dc9c05401fcad275fe634ead5d9120",
   "audit": {
@@ -98,11 +98,13 @@
   "images": {
     "expected": 12,
     "returned": 0,
-    "status": "api_quota_exhausted_and_native_network_error",
+    "status": "native_short_test_passed_formal_requests_failed",
     "prepared_prompts": 12,
     "native_authorized": true,
-    "native_attempts": 2,
-    "native_images_returned": 0
+    "native_attempts": 5,
+    "native_images_returned": 1,
+    "diagnostic_images": 1,
+    "production_images": 0
   },
   "tests": {
     "full_suite_passed": 741,
@@ -119,13 +121,16 @@
     "status": "not_attempted_quality_gate_failed"
   },
   "wechat": {
-    "status": "authentication_blocked",
-    "errcode": 40164,
+    "status": "draft_ready_publication_api_restricted",
+    "errcode": 0,
     "ip": "38.75.136.211",
     "uploads": 0,
     "user_reported_whitelist_added": true,
-    "rechecked_at": "2026-11-22T14:58:39.414686+08:00",
-    "latest_errcode": 40164
+    "rechecked_at": "2026-11-22T15:17:19.838632+08:00",
+    "latest_errcode": 0,
+    "authentication": true,
+    "draft_count": true,
+    "publication_api_errcode": 48001
   },
   "unapproved_auto_outputs_moved": [
     "2026-11-22_国际科技智库周报.html",

@@ -1,0 +1,65 @@
+{
+  "business_date": "2026-11-22",
+  "checked_at": "2026-11-22T15:18:26.547628+08:00",
+  "network_settings_changed": false,
+  "user_reports_chatgpt_web_images_work": true,
+  "chatgpt_quota_exhaustion_observed": false,
+  "api_credit_error_is_separate": true,
+  "native_tests": [
+    {
+      "kind": "short_four_panel_no_text",
+      "result": "success",
+      "seconds": 27.7,
+      "image": "reports\\2026-11-22_image_diagnostics\\short_test.png",
+      "production_asset": false
+    },
+    {
+      "kind": "original_full_feature_prompt",
+      "result": "network error: error sending request",
+      "cell_id": "136",
+      "production_asset": false
+    },
+    {
+      "kind": "compact_six_panel_same_feature",
+      "result": "HTTP 520",
+      "cell_id": "137",
+      "cloudflare_ray_id": "a5e624f01b9dfce1",
+      "reported_client_ip": "170.203.120.100",
+      "cloudflare_location": "Houston",
+      "error_summary": "Unknown connection issue between Cloudflare and origin web server",
+      "production_asset": false
+    }
+  ],
+  "local_network": {
+    "astrill_processes_present": [
+      "astrill",
+      "asovpnc",
+      "ASOvpnSvc"
+    ],
+    "environment_proxies": {},
+    "windows_proxy_enabled": false,
+    "wintun_up": true,
+    "wechat_selected_route": {
+      "interface_index": 7,
+      "next_hop": "198.18.0.1",
+      "destination": "0.0.0.0/1"
+    },
+    "ipv4_egress_ipify": "38.75.136.211",
+    "ipv4_egress_amazon": "38.75.136.211",
+    "wechat_seen_ip": "38.75.136.211",
+    "interpretation": "Local WeChat traffic routes through tunnel; image tool error shows a different egress. Do not attribute the native-image upstream failure solely to local VPN."
+  },
+  "wechat_latest": {
+    "checked_at": "2026-11-22T15:17:19.838632+08:00",
+    "authentication": true,
+    "draft_count": true,
+    "publication_api_errcode": 48001,
+    "draft_ready": true
+  },
+  "next_step": "Native image connection remains unreliable for the formal job. ChatGPT image access is available; API top-up is not a prerequisite to troubleshoot native image generation.",
+  "references": [
+    "https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform",
+    "https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-520/",
+    "https://www.astrill.com/features/website-and-app-filter"
+  ]
+}

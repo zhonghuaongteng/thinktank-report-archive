@@ -4,7 +4,7 @@
   "authorization": "授权尝试内置图片工具",
   "tool": "image_gen.imagegen",
   "first_prompt": "comic/weekly-topic-comics-2026-11-22/actual-prompts/01-pc.txt",
-  "attempts": 2,
+  "attempts": 5,
   "cell_ids": [
     "124",
     "125"
@@ -13,8 +13,11 @@
     "image generation failed: network error: error sending request",
     "image generation failed: network error: error sending request"
   ],
-  "images_returned": 0,
-  "status": "blocked_network_error",
-  "updated_at": "2026-11-22T14:59:30.284048+08:00",
-  "api_quota_issue_resolved": false
+  "images_returned": 1,
+  "status": "native_short_test_passed_formal_requests_failed",
+  "updated_at": "2026-11-22T15:18:26.547628+08:00",
+  "api_quota_issue_resolved": false,
+  "diagnostic_images": 1,
+  "production_images": 0,
+  "latest_diagnostics": "2026-11-22_image_network_diagnosis.json"
 }
