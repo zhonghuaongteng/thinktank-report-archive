@@ -1,0 +1,17 @@
+priority_count=6
+prompt_count=6
+comic_count=0
+md_image_refs=0
+html_image_nodes=0
+selected_chart_count=0
+pdf_image_count=0
+blocked_hits=[]
+editorial_failures=['Rendered HTML does not match the current editorial file; render the weekly report again']
+missing_files=['briefs\\weekly\\2026\\2026-11-22_国际科技智库周报.md', 'briefs\\weekly\\2026\\2026-11-22_国际科技智库周报.html', 'briefs\\weekly\\2026\\2026-11-22_国际科技智库周报.pdf']
+weekly_comic_check=failed
+failure=comic_count=0 < expected=6
+failure=md_image_refs=0 < expected=6
+failure=html_image_nodes=0 < expected=6
+failure=pdf_image_count=0 < expected=6
+failure=missing_files=briefs\weekly\2026\2026-11-22_国际科技智库周报.md;briefs\weekly\2026\2026-11-22_国际科技智库周报.html;briefs\weekly\2026\2026-11-22_国际科技智库周报.pdf
+failure=editorial=Rendered HTML does not match the current editorial file; render the weekly report again
