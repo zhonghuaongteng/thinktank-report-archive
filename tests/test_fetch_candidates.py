@@ -1132,7 +1132,7 @@ class FetchCandidateTests(unittest.TestCase):
             institution,
         )
 
-        self.assertEqual(detail.fetch_status, "detail_error:text_proxy_blocked")
+        self.assertEqual(detail.fetch_status, "detail_error:antibot")
 
     def test_parse_text_proxy_detail_does_not_use_nbr_proxy_cache_date(self):
         institution = Institution(

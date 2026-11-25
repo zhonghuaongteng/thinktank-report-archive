@@ -17,6 +17,7 @@ class Institution:
     copyright_boundary: str
     source_group: str = "strategic_context"
     allowed_domains: list[str] = field(default_factory=list)
+    allow_path_segments: list[str] = field(default_factory=list)
     direct_urls: list[str] = field(default_factory=list)
     feeds: list[str] = field(default_factory=list)
     list_pages: list[str] = field(default_factory=list)

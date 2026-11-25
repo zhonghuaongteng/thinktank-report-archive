@@ -556,7 +556,7 @@ def extract_spaced_chinese_translation_title(text: str) -> str:
     return ""
 
 
-def looks_like_detail_url(url: str, text: str = "") -> bool:
+def looks_like_detail_url(url: str, text: str = "", allow_path_segments: list[str] | None = None) -> bool:
     parsed = urlparse(url)
     if parsed.path.lower().endswith(".pdf"):
         return False
@@ -586,7 +586,12 @@ def looks_like_detail_url(url: str, text: str = "") -> bool:
         return False
     if any(token in last_segment for token in EXCLUDED_LAST_SEGMENT_SUBSTRINGS):
         return False
-    if any(segment.lower() in EXCLUDED_PATH_SEGMENTS or segment.lower().startswith("about-") for segment in path_segments):
+    allowed_segments = {segment.lower() for segment in allow_path_segments or []}
+    if any(
+        segment.lower() in (EXCLUDED_PATH_SEGMENTS - allowed_segments)
+        or segment.lower().startswith("about-")
+        for segment in path_segments
+    ):
         return False
     if len(path_segments) == 2 and path_segments[0].lower() == "publications":
         return False
@@ -674,7 +679,9 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
     )
 
 
-def extract_list_links(html_text: str, base_url: str, limit: int) -> list[str]:
+def extract_list_links(
+    html_text: str, base_url: str, limit: int, allow_path_segments: list[str] | None = None,
+) -> list[str]:
     soup = BeautifulSoup(html_text, "lxml")
     for node in soup.select("nav, header, footer, [role='navigation']"):
         node.decompose()
@@ -685,7 +692,7 @@ def extract_list_links(html_text: str, base_url: str, limit: int) -> list[str]:
         text = norm(node.get_text(" "))
         if href in seen or not href.startswith("http"):
             continue
-        if looks_like_detail_url(href, text):
+        if looks_like_detail_url(href, text, allow_path_segments=allow_path_segments):
             seen.add(href)
             links.append(href)
         if len(links) >= limit:

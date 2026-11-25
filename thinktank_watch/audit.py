@@ -122,7 +122,11 @@ def write_editorial_review_queue(
                 precise_date = True
             except ValueError:
                 precise_date = False
-            if precise_date and not _within_window(item.published_date, current, lookback_days):
+            if (
+                item.fetch_status != "detail_error:antibot"
+                and precise_date
+                and not _within_window(item.published_date, current, lookback_days)
+            ):
                 continue
             writer.writerow(dict(zip(fields, [item.institution_slug, item.title, item.url, item.published_date,
                 item.priority, item.score, item.fetch_status, item.summary[:800],

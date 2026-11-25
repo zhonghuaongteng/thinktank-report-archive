@@ -31,6 +31,7 @@ from .fetch import (
     fetch_sitemap_candidates,
     interleave_candidate_groups,
     make_client,
+    source_url_allowed,
 )
 from .focus import innovation_support_sort_rank, is_innovation_support_candidate
 from .kb import append_kb_index, sync_kb_index_metadata, write_institution_table
@@ -359,42 +360,37 @@ def collect_candidates(
     limit: int,
     include_details: bool,
     backfill: bool = False,
+    run_date: str | None = None,
 ) -> list[ArticleCandidate]:
+    run_date = run_date or date.today().isoformat()
     collected: list[ArticleCandidate] = []
     seen_urls: set[str] = set()
     with make_client() as client:
         for institution in institutions:
             item_limit = institution_fetch_limit(institution, limit)
-            if backfill:
-                base = interleave_candidate_groups(
-                    [
-                        fetch_direct_candidates(institution, limit=item_limit),
-                        fetch_feed_candidates(institution, limit=item_limit),
-                        fetch_list_candidates(client, institution, limit=item_limit),
-                        fetch_sitemap_candidates(client, institution, limit=item_limit),
-                    ]
-                )
-            else:
-                base = interleave_candidate_groups(
-                    [
-                        fetch_direct_candidates(institution, limit=item_limit),
-                        fetch_feed_candidates(institution, limit=item_limit),
-                        fetch_list_candidates(client, institution, limit=item_limit),
-                    ]
-                )
-            institution_count = 0
-            for candidate in base:
-                if institution_count >= item_limit:
-                    break
-                if candidate.url in seen_urls:
-                    continue
+            base = interleave_candidate_groups(
+                [
+                    fetch_direct_candidates(institution, limit=item_limit),
+                    fetch_feed_candidates(institution, limit=item_limit),
+                    fetch_list_candidates(client, institution, limit=item_limit),
+                    fetch_sitemap_candidates(
+                        client, institution, limit=item_limit,
+                        run_date=None if backfill else run_date,
+                    ),
+                ]
+            )
+            base = [
+                candidate for candidate in base
+                if candidate.url not in seen_urls and source_url_allowed(candidate.url, institution)
+            ]
+            for candidate in base[:item_limit]:
                 seen_urls.add(candidate.url)
-                institution_count += 1
                 if include_details:
                     try:
                         candidate = fetch_detail(client, institution, candidate)
-                        candidate = check_pdf(client, candidate)
-                        candidate = enrich_detail_text_from_pdf(client, candidate)
+                        if not detail_fetch_failed(candidate):
+                            candidate = check_pdf(client, candidate)
+                            candidate = enrich_detail_text_from_pdf(client, candidate)
                     except httpx.HTTPError as exc:
                         candidate.fetch_status = fetch_status_from_http_error(exc)
                         logging.getLogger(__name__).warning(
@@ -406,17 +402,20 @@ def collect_candidates(
 
 
 def evaluate(args: argparse.Namespace) -> int:
+    run_date = getattr(args, "date", None) or date.today().isoformat()
     institutions, topics, priorities = _load_config()
     profile = resolve_search_profile(getattr(args, "search_profile", None))
     selected = _select_institutions(institutions, args.batch, args.institution)
-    candidates = collect_candidates(selected, args.limit, include_details=not args.no_details, backfill=args.backfill)
+    candidates = collect_candidates(
+        selected, args.limit, include_details=not args.no_details,
+        backfill=args.backfill, run_date=run_date,
+    )
     scored = [
         item
         for item in [score_candidate(item, topics, priorities) for item in candidates]
         if candidate_matches_filters(item, args, profile)
     ]
     if args.backfill:
-        run_date = getattr(args, "date", None) or date.today().isoformat()
         lookback_years = getattr(args, "lookback_years", DEFAULT_BACKFILL_LOOKBACK_YEARS)
         scored = [
             item
@@ -446,7 +445,7 @@ def audit(args: argparse.Namespace) -> int:
     institutions, topics, priorities = _load_config()
     profile = resolve_search_profile(getattr(args, "search_profile", None))
     selected = _select_institutions(institutions, args.batch, args.institution)
-    candidates = collect_candidates(selected, args.limit, include_details=not args.no_details)
+    candidates = collect_candidates(selected, args.limit, include_details=not args.no_details, run_date=run_date)
     raw_scored = [score_candidate(item, topics, priorities) for item in candidates]
     scored = [
         item
@@ -482,7 +481,7 @@ def run_daily(args: argparse.Namespace) -> int:
     state = ArticleState(args.state)
     written: list[ArticleCandidate] = []
     try:
-        candidates = collect_candidates(selected, args.limit, include_details=True)
+        candidates = collect_candidates(selected, args.limit, include_details=True, run_date=run_date)
         scored = balance_limited_write_queue(
             [
                 item
@@ -603,7 +602,7 @@ def backfill(args: argparse.Namespace) -> int:
     state = ArticleState(args.state)
     written: list[ArticleCandidate] = []
     try:
-        candidates = collect_candidates(selected, args.limit, include_details=True, backfill=True)
+        candidates = collect_candidates(selected, args.limit, include_details=True, backfill=True, run_date=run_date)
         scored = balance_limited_write_queue(
             [
                 item

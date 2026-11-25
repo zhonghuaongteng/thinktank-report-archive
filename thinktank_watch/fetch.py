@@ -6,7 +6,7 @@ from http.client import HTTPException
 from io import BytesIO
 import math
 import re
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from email.utils import parsedate_to_datetime
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 
@@ -170,10 +170,17 @@ class ExternalSourceError(httpx.HTTPError):
 
 
 MARKDOWN_LINK_RE = re.compile(r"\[([^\]]{1,240})\]\((https?://[^)\s]+)\)")
-TEXT_PROXY_BLOCKED_MARKERS = (
+ANTIBOT_MARKERS = (
+    "making sure you're not a bot",
+    "client challenge",
+    "enable javascript and cookies",
+    "checking your browser",
     "please wait while your request is being verified",
     "one moment, please",
+    "attention required! | cloudflare",
 )
+# 只在页面标题中判断，避免正文里出现同样字样时误判。
+ANTIBOT_TITLE_MARKERS = ("just a moment", "access denied")
 TEXT_PROXY_TRIM_MARKERS = (
     "About the Authors",
     "About the Author",
@@ -243,7 +250,7 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
     parsed_source = urlparse(url)
     if re.search(r"\.(?:pdf|png|jpe?g|gif|webp|svg|ico)$", parsed_source.path.lower()):
         return False
-    if any(key.lower() == "ecipemediapost" for key, _ in parse_qsl(parsed_source.query, keep_blank_values=True)):
+    if any(key.lower() in {"ecipemediapost", "q", "search", "page"} for key, _ in parse_qsl(parsed_source.query, keep_blank_values=True)):
         return False
     source_host = _normalized_host(parsed_source.netloc)
     allowed_hosts = [_normalized_host(institution.homepage)]
@@ -278,7 +285,8 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
         and ordered_path_segments[:2] == ["news", "publications"]
     ):
         path_segments.discard("news")
-    if path_segments & SOURCE_PATH_DENY_SEGMENTS:
+    allowed_segments = {segment.lower() for segment in institution.allow_path_segments}
+    if path_segments & (SOURCE_PATH_DENY_SEGMENTS - allowed_segments):
         return False
     if last_segment in NON_CONTENT_LAST_SEGMENTS or last_stem in NON_CONTENT_LAST_SEGMENTS:
         return False
@@ -482,14 +490,21 @@ def _authors_from_text_proxy(window: str, title: str) -> list[str]:
     return [norm(part) for part in re.split(r"\s+(?:and|&)\s+|,\s*", match.group(1)) if norm(part)]
 
 
+def _is_antibot(title: str, body: str) -> bool:
+    if any(marker in title.lower() for marker in ANTIBOT_TITLE_MARKERS):
+        return True
+    head = f"{title}\n{body[:2000]}".lower()
+    return any(marker in head for marker in ANTIBOT_MARKERS)
+
+
 def parse_text_proxy_detail(
     markdown_text: str,
     candidate: ArticleCandidate,
     institution: Institution,
 ) -> ArticleCandidate:
-    lowered = markdown_text.lower()
-    if any(marker in lowered for marker in TEXT_PROXY_BLOCKED_MARKERS):
-        candidate.fetch_status = "detail_error:text_proxy_blocked"
+    title_match = re.search(r"^Title:\s*(.+)$", markdown_text, re.MULTILINE)
+    if _is_antibot(title_match.group(1) if title_match else "", _markdown_content(markdown_text)):
+        candidate.fetch_status = "detail_error:antibot"
         candidate.copyright_boundary = institution.copyright_boundary
         return candidate
 
@@ -706,7 +721,10 @@ def fetch_list_candidates(
                 break
             continue
         if response is not None:
-            links = extract_list_links(response.text, page, max(limit * 8, LIST_LINK_EXTRACTION_CAP))
+            links = extract_list_links(
+                response.text, page, max(limit * 8, LIST_LINK_EXTRACTION_CAP),
+                allow_path_segments=institution.allow_path_segments,
+            )
             for link in links:
                 if not source_url_allowed(link, institution):
                     continue
@@ -748,7 +766,9 @@ def fetch_sitemap_candidates(
     client: httpx.Client,
     institution: Institution,
     limit: int = 200,
+    run_date: str | None = None,
 ) -> list[ArticleCandidate]:
+    current = date.fromisoformat(run_date) if run_date else None
     candidates: list[ArticleCandidate] = []
     seen: set[str] = set()
     for sitemap_url in institution.sitemap_urls:
@@ -762,13 +782,20 @@ def fetch_sitemap_candidates(
                 if institution.sitemap_include_keywords:
                     if not any(sitemap_include_keyword_matches(loc, keyword) for keyword in institution.sitemap_include_keywords):
                         continue
-                elif not looks_like_detail_url(loc):
+                elif not looks_like_detail_url(loc, allow_path_segments=institution.allow_path_segments):
                     continue
+                lastmod = canonical_date(node.lastmod.get_text()) if node.lastmod else ""
+                if current is not None:
+                    try:
+                        modified = date.fromisoformat(lastmod)
+                    except ValueError:
+                        continue
+                    if not current - timedelta(days=14) <= modified <= current:
+                        continue
                 key = dedupe_key(loc)
                 if key in seen:
                     continue
                 seen.add(key)
-                lastmod = canonical_date(node.lastmod.get_text()) if node.lastmod else ""
                 candidates.append(
                     ArticleCandidate(
                         institution_slug=institution.slug,
@@ -827,6 +854,15 @@ def sitemap_soups(client: httpx.Client, sitemap_url: str) -> list[BeautifulSoup]
 def fetch_detail(client: httpx.Client, institution: Institution, candidate: ArticleCandidate) -> ArticleCandidate:
     try:
         response = client.get(candidate.url, timeout=30, follow_redirects=True)
+        soup = BeautifulSoup(response.text, "html.parser")
+        title = soup.title.get_text(" ", strip=True) if soup.title else ""
+        body = (soup.body or soup).get_text(" ", strip=True)
+        if _is_antibot(title, body):
+            if institution.text_proxy_fallback:
+                return parse_text_proxy_detail(fetch_text_proxy(client, candidate.url), candidate, institution)
+            candidate.fetch_status = "detail_error:antibot"
+            candidate.copyright_boundary = institution.copyright_boundary
+            return candidate
         response.raise_for_status()
     except httpx.HTTPError:
         if institution.text_proxy_fallback:
