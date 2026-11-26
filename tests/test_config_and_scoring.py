@@ -110,7 +110,6 @@ class ConfigAndScoringTests(unittest.TestCase):
             "csis",
             "ecipe",
             "hoover-tpa",
-            "ida-stpi",
             "nbr",
             "nistep",
             "orf-america",
@@ -121,6 +120,13 @@ class ConfigAndScoringTests(unittest.TestCase):
                 {1},
                 f"{slug} should be in the broad innovation-support daily pool",
             )
+        # 入口失效、无法通过验证或与研究关注无关的来源移出每周抓取（batch 3），配置保留备查。
+        for slug in {"ida-stpi", "ifo", "mckinsey-mgi", "bcg", "pwc-research", "kpmg-venture-pulse",
+                     "deloitte-insights", "bain-research", "eib-research"}:
+            self.assertEqual({item.batch for item in institutions if item.slug == slug}, {3}, slug)
+        for slug in {"royal-society", "nesta", "rieti", "bis-innovation-hub", "ukri", "rori",
+                     "kistep", "ncses", "nasem", "epoch-ai"}:
+            self.assertEqual({item.batch for item in institutions if item.slug == slug}, {1}, slug)
         self.assertEqual(
             {item.institution_type for item in institutions if item.slug == "gartner"},
             {"commercial_research"},
