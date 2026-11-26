@@ -47,8 +47,8 @@
 | 5 选题复核 | Gemini：只看候选池与选题，指出遗漏的重要报告和凑数的弱材料；Claude 逐条采纳或说明不采纳 | selection_review.out |
 | 6 精读与写作 | Claude：逐篇读原文（网页或 PDF），先记要点和出处页码，再写正文 | notes/、issue.md |
 | 7 事实核查 | Gemini 与 GPT 各抽查一半重点篇：对照原文核数字、归属、状态，标出空话和看不懂的句子；Claude 修改，最多一轮 | factcheck_*.out |
-| 8 渲染与验收 | `uv run python scripts/weekly/render_issue.py issue.md <输出目录>`；在浏览器以手机与电脑宽度、深浅色各看一遍，翻看 PDF 全部页面 | HTML、PDF |
-| 9 归档与投递 | 成品存 briefs/weekly/<年>/<D>/，提交并推送本分支；按投递设置发送 | receipt.json |
+| 8 渲染与验收 | `uv run python scripts/weekly/render_issue.py issue.md <输出目录>`；在浏览器以手机与电脑宽度、深浅色各看一遍 | HTML |
+| 9 归档与投递 | Claude：成品存 briefs/weekly/<年>/<D>/，提交并推送本分支；公众号稿用 scripts/weekly/build_wechat.py 编排后上传草稿箱并读回核对；按投递设置发送邮件 | wechat/、receipt.json |
 
 GPT 和 Gemini 的检索结果只作线索，每条入选材料都由 Claude 打开原文核实日期与内容后才能使用。
 

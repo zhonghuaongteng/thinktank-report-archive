@@ -1,4 +1,4 @@
-"""把一期周报正文（Markdown）渲染成自包含网页和手机尺寸 PDF。
+"""把一期周报正文（Markdown）渲染成自包含网页（手机和电脑通用，深浅色自适应）。
 
 用法：uv run python scripts/weekly/render_issue.py <issue.md> <输出目录>
 正文约定：首行 `# 标题`，第二段为刊期说明；`## ` 为栏目，`### ` 为单篇标题。
@@ -46,8 +46,6 @@ figure svg{width:100%;height:auto;display:block}
 figcaption{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.6}
 .toc{background:var(--soft);border-radius:8px;padding:10px 16px;font-size:15px}
 .toc ul{list-style:none;padding:0;margin:0}
-@media print{body{font-size:15.5px}main{padding:0 4px}h2{break-after:avoid}h3{break-after:avoid}
-figure,blockquote{break-inside:avoid}a{border:0}}
 """
 
 HTML = """<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
@@ -73,22 +71,6 @@ def _slug(value: str, separator: str) -> str:
     return value[:60] or "s"
 
 
-def render_pdf(html_path: Path, pdf_path: Path) -> int:
-    from playwright.sync_api import sync_playwright
-
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page(viewport={"width": 420, "height": 900}, color_scheme="light")
-        page.goto(html_path.resolve().as_uri())
-        page.emulate_media(media="print", color_scheme="light")
-        page.pdf(path=str(pdf_path), width="420px", height="900px", print_background=True,
-                 margin={"top": "28px", "bottom": "28px", "left": "16px", "right": "16px"})
-        browser.close()
-    from pypdf import PdfReader
-
-    return len(PdfReader(str(pdf_path)).pages)
-
-
 def main() -> int:
     if len(sys.argv) != 3:
         print(__doc__)
@@ -99,8 +81,7 @@ def main() -> int:
     stem = src.stem
     html_path = out_dir / f"{stem}.html"
     html_path.write_text(html, encoding="utf-8")
-    pages = render_pdf(html_path, out_dir / f"{stem}.pdf")
-    print(f"html={html_path} pdf_pages={pages}")
+    print(f"html={html_path}")
     return 0
 
 

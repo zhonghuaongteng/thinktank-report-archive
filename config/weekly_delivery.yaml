@@ -1,0 +1,6 @@
+# 每周周报投递设置。每期任务读取本文件决定是否投递。
+# email / wechat 为 off 时只生成并归档成品，不对外发送。
+email: off            # on 时向 recipient 发送一封邮件，附件为本期网页版 HTML
+recipient: zhonghualongteng@163.com
+subject: "国际科技智库周报｜{date}"
+wechat_draft: on      # on 时把本期上传到公众号“这事有研究”草稿箱，群发仍由负责人操作
