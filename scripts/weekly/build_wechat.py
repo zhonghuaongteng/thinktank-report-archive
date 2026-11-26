@@ -200,7 +200,7 @@ def main() -> int:
     with sync_playwright() as pw:
         browser = pw.chromium.launch()
         page = browser.new_page(device_scale_factor=2)
-        guide_md = (f'<p class="meta">{label} · 重点解读{len(issue["features"])}篇 · 简讯</p>\n\n'
+        guide_md = (f'<p class="meta">{label} · 重点解读{len(issue["features"])}篇 · 简讯{issue["briefs"].count('<span class="meta">')}则</p>\n\n'
                     f'{issue["lead"]}\n\n## 本周要点\n{issue["points"]}\n\n## 简讯\n{issue["briefs"]}')
         _, guide_urls = first_source(issue["briefs"])
         html, imgs = to_wechat_html(guide_md, out, "01", page)
