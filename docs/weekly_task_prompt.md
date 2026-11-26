@@ -7,6 +7,7 @@
 3. 同时放后台运行两路检索（任务文字写进文件，用 -f 传）：
    - GPT 机构普查：`codex-research -f reports/weekly_runs/D/codex_sweep.md`。任务写明窗口（D-6 至 D）、要逐家检查的机构（docs/weekly_sop.md 的选材范围，以及 docs/source_issues.md 中抓取受阻的来源），要求每条给出机构、原题、日期、具体网址、类型、两三句主要发现，并列出“检查过但无新发布”的机构。
    - Gemini 议题雷达：`agy-ask <工作目录> -f reports/weekly_runs/D/gemini_radar.md`。按 SOP 的重点议题联网检索窗口内新发布，不按机构清单。
+   - GPT 与 Gemini 都是基础会员，有用量上限。任务写窄、一次说清，不重复派同一件事；任何一步提示额度用尽，不等待、不反复重试：已产出的中间线索照用，这一步由你自己完成（检索自己补查，核查自己对照已下载的原文逐条核），并在 receipt.json 和汇报中写明。
 4. 合并三路候选，去掉 state/articles.sqlite 和往期 briefs/weekly 已收录的条目。逐条打开原文核实日期和内容：网页用 WebFetch，被拦截时用 `uv run python scripts/weekly/read_page.py <网址>`，PDF 下载到 C:/tmp/ttsrc/D/ 后用 pypdf 提取文字。打不开原文的不收录。
 5. 选题定稿前，把候选池和选题清单交给 Gemini 复核（agy-ask），逐条采纳或在 selection.md 写明不采纳理由。
 6. 精读并写 briefs/weekly/<年>/D/D_国际科技智库周报.md。格式参照 briefs/weekly/2026/2026-11-25/ 样刊：导语块、本周要点、重点解读（每篇有锚点、meta 行、四格插画、摘要导读、原文链接，有可靠数据时配内联 SVG 图）、按议题分组的简讯。

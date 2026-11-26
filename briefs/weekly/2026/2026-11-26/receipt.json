@@ -1,0 +1,15 @@
+{
+  "issue_date": "2026-11-26",
+  "window": "2026-11-20/2026-11-26 (backfill from 2026-11-12)",
+  "features": ["eba", "trial", "drawer"],
+  "brief_count": 15,
+  "searches": {
+    "local_audit": "completed, 53 institutions, 370 candidates; 20 zero-candidate sources",
+    "gpt_sweep": "partial: usage limit hit mid-run, interim leads used",
+    "gemini_radar": "completed"
+  },
+  "selection_review": "gemini completed; 3 dropped, 3 added",
+  "factcheck": {"gemini": "completed", "gpt": "skipped: usage limit until 13:28; Claude checked that half against downloaded originals"},
+  "blocked_sources": ["nber pdf 403", "oecd cloudflare", "dealroom reports gated by sign-up form", "hoover.org fetch refused", "french MESR 403"],
+  "zero_candidate_sources": ["alan-turing","atlantic-council-geotech","bcg","bis-research","cepr","cset","diw","eu-jrc","eu-stoa","ida-stpi","ifp","kfw-research","korea-msit","kpmg-venture-pulse","mckinsey-mgi","nber","nvca-venture-monitor","oecd-sti","pwc-research","scsp"]
+}
