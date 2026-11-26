@@ -247,3 +247,35 @@ def test_commands_forward_run_date(monkeypatch, institution, tmp_path, command, 
     monkeypatch.setattr(cli, "load_research_interests", lambda *args: [])
     assert getattr(cli, command)(args) == 0
     assert collect.call_args.kwargs["run_date"] == (run_date or date.today().isoformat())
+
+
+def test_blocked_list_page_uses_browser(institution, monkeypatch):
+    import thinktank_watch.fetch as fetch_module
+    from thinktank_watch.fetch import fetch_list_candidates
+    page = replace(institution, list_pages=["https://example.org/publications"], topic_pages=[])
+    html = '<html><title>Publications</title><body><a href="https://example.org/publication/technology-report-one">Technology report one</a></body></html>'
+    monkeypatch.setattr(fetch_module, "browser_html", lambda url: (html, url))
+    with httpx.Client(transport=httpx.MockTransport(lambda request: httpx.Response(403, text="Forbidden"))) as client:
+        result = fetch_list_candidates(client, page, limit=5)
+    assert [c.url for c in result] == ["https://example.org/publication/technology-report-one"]
+    assert result[0].fetch_status == "browser_list_ok"
+
+
+def test_blocked_detail_uses_browser(institution, monkeypatch):
+    import thinktank_watch.fetch as fetch_module
+    item = candidate(institution, "publication/technology-report")
+    html = "<html><head><title>Technology report</title></head><body><h1>Technology report</h1><p>" + "Real body text. " * 40 + "</p></body></html>"
+    monkeypatch.setattr(fetch_module, "browser_html", lambda url: (html, url))
+    with httpx.Client(transport=httpx.MockTransport(lambda request: httpx.Response(403, text="<title>Just a moment...</title>"))) as client:
+        result = fetch_detail(client, institution, item)
+    assert result.fetch_status != "detail_error:antibot"
+    assert result.title == "Technology report"
+
+
+def test_browser_antibot_page_still_marked(institution, monkeypatch):
+    import thinktank_watch.fetch as fetch_module
+    item = candidate(institution, "publication/technology-report")
+    monkeypatch.setattr(fetch_module, "browser_html", lambda url: ("<title>Just a moment...</title>", url))
+    with httpx.Client(transport=httpx.MockTransport(lambda request: httpx.Response(200, text="<title>Just a moment...</title>"))) as client:
+        result = fetch_detail(client, institution, item)
+    assert result.fetch_status == "detail_error:antibot"

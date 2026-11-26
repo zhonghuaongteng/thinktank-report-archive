@@ -21,6 +21,7 @@ from .brief import (
     write_weekly_comic_prompts,
 )
 from .config import load_institutions, load_priority_rules, load_search_profiles, load_topics
+from .browser import close_browser
 from .fetch import (
     check_pdf,
     enrich_detail_text_from_pdf,
@@ -398,6 +399,7 @@ def collect_candidates(
                             institution.slug, candidate.url, type(exc).__name__,
                         )
                 collected.append(candidate)
+    close_browser()
     return collected
 
 

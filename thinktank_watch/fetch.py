@@ -15,6 +15,7 @@ import httpx
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 
+from .browser import browser_html
 from .models import ArticleCandidate, Institution
 from .parsers.generic import (
     NON_CONTENT_LAST_SEGMENTS,
@@ -497,6 +498,36 @@ def _is_antibot(title: str, body: str) -> bool:
     return any(marker in head for marker in ANTIBOT_MARKERS)
 
 
+
+BLOCKED_STATUS = {401, 403, 429, 503}
+
+
+class _Rendered:
+    """浏览器取回的网页，接口与 httpx 响应中用到的部分一致。"""
+
+    def __init__(self, text: str, url: str):
+        self.text, self.url = text, url
+
+
+def _html_title(html: str) -> str:
+    match = re.search(r"<title[^>]*>(.*?)</title>", html, flags=re.I | re.S)
+    return norm(match.group(1)) if match else ""
+
+
+def _blocked(html: str) -> bool:
+    soup = BeautifulSoup(html, "html.parser")
+    title = soup.title.get_text(" ", strip=True) if soup.title else ""
+    return _is_antibot(title, (soup.body or soup).get_text(" ", strip=True))
+
+
+def _render(url: str) -> _Rendered | None:
+    """静态请求被拒时用浏览器再取一次；取回的仍是拦截页则视为失败。"""
+    rendered = browser_html(url)
+    if rendered is None or _blocked(rendered[0]):
+        return None
+    return _Rendered(*rendered)
+
+
 def parse_text_proxy_detail(
     markdown_text: str,
     candidate: ArticleCandidate,
@@ -682,14 +713,23 @@ def fetch_list_candidates(
     pages = [*institution.list_pages[:LIST_PAGE_FETCH_CAP], *institution.topic_pages[:TOPIC_PAGE_FETCH_CAP]]
     for page in pages:
         page_added = 0
+        list_status = "list_ok"
         try:
             response = client.get(page, timeout=30)
-            response.raise_for_status()
-            static_error = False
+            blocked = response.status_code in BLOCKED_STATUS or _blocked(response.text)
+            if not blocked:
+                response.raise_for_status()
+            static_error = blocked
         except httpx.HTTPError as exc:
             logger.warning("list_fetch_failed institution=%s url=%s error=%s; continuing other routes", institution.slug, page, type(exc).__name__)
             static_error = True
             response = None
+        if static_error:
+            rendered = _render(page)
+            response = rendered
+            if rendered is not None:
+                static_error = False
+                list_status = "browser_list_ok"
         if response is not None and institution.slug == "stepi":
             page_candidates = extract_stepi_publication_candidates(response.text, page, institution, limit)
             for candidate in page_candidates:
@@ -732,7 +772,7 @@ def fetch_list_candidates(
                 if key in seen:
                     continue
                 seen.add(key)
-                candidates.append(_list_candidate_from_link(institution, "", link, "list_ok"))
+                candidates.append(_list_candidate_from_link(institution, "", link, list_status))
                 page_added += 1
                 if len(candidates) >= limit:
                     break
@@ -852,23 +892,27 @@ def sitemap_soups(client: httpx.Client, sitemap_url: str) -> list[BeautifulSoup]
 
 
 def fetch_detail(client: httpx.Client, institution: Institution, candidate: ArticleCandidate) -> ArticleCandidate:
+    error: httpx.HTTPError | None = None
+    response = None
     try:
         response = client.get(candidate.url, timeout=30, follow_redirects=True)
-        soup = BeautifulSoup(response.text, "html.parser")
-        title = soup.title.get_text(" ", strip=True) if soup.title else ""
-        body = (soup.body or soup).get_text(" ", strip=True)
-        if _is_antibot(title, body):
+        if response.status_code not in BLOCKED_STATUS and not _blocked(response.text):
+            response.raise_for_status()
+        else:
+            response = None
+    except httpx.HTTPError as exc:
+        error, response = exc, None
+    if response is None:
+        if error is None or isinstance(error, httpx.HTTPStatusError) and error.response.status_code in BLOCKED_STATUS:
+            response = _render(candidate.url)
+        if response is None:
             if institution.text_proxy_fallback:
                 return parse_text_proxy_detail(fetch_text_proxy(client, candidate.url), candidate, institution)
+            if error is not None:
+                raise error
             candidate.fetch_status = "detail_error:antibot"
             candidate.copyright_boundary = institution.copyright_boundary
             return candidate
-        response.raise_for_status()
-    except httpx.HTTPError:
-        if institution.text_proxy_fallback:
-            markdown_text = fetch_text_proxy(client, candidate.url)
-            return parse_text_proxy_detail(markdown_text, candidate, institution)
-        raise
     if not source_url_allowed(str(response.url), institution):
         raise ExternalSourceError(f"detail redirected outside allowed domains: {response.url}")
     if institution.parser == "rand":
