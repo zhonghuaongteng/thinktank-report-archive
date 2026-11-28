@@ -18,6 +18,8 @@ class Institution:
     source_group: str = "strategic_context"
     allowed_domains: list[str] = field(default_factory=list)
     allow_path_segments: list[str] = field(default_factory=list)
+    # 该来源文章所在的路径段：列表页中“该段/文章名”形式的链接直接认作文章。
+    article_path_segments: list[str] = field(default_factory=list)
     direct_urls: list[str] = field(default_factory=list)
     feeds: list[str] = field(default_factory=list)
     list_pages: list[str] = field(default_factory=list)

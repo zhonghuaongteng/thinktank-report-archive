@@ -135,6 +135,7 @@ SOURCE_PATH_DENY_SEGMENTS = {
     "research-area",
     "research-areas",
     "research-event-recordings",
+    "special-initiatives",
 }
 SOURCE_LAST_SEGMENT_DENY = {
     "commentary",
@@ -181,7 +182,7 @@ ANTIBOT_MARKERS = (
     "attention required! | cloudflare",
 )
 # 只在页面标题中判断，避免正文里出现同样字样时误判。
-ANTIBOT_TITLE_MARKERS = ("just a moment", "access denied")
+ANTIBOT_TITLE_MARKERS = ("just a moment", "access denied", "access blocked")
 TEXT_PROXY_TRIM_MARKERS = (
     "About the Authors",
     "About the Author",
@@ -210,7 +211,9 @@ def _normalized_host(value: str) -> str:
 
 def canonical_url(url: str) -> str:
     parsed = urlparse(url.strip())
-    path = re_sub_slashes(parsed.path).rstrip("/") or "/"
+    # 部分网站（如 CSIS）的链接混入编码后的 index.php 段，与正常地址是同一篇。
+    path = re.sub(r"(?i)^/index%2ephp(?=/)", "", parsed.path)
+    path = re_sub_slashes(path).rstrip("/") or "/"
     query_pairs = [
         (key, value)
         for key, value in parse_qsl(parsed.query, keep_blank_values=True)
@@ -247,16 +250,20 @@ def interleave_candidate_groups(groups: list[list[ArticleCandidate]]) -> list[Ar
     return candidates
 
 
+def host_allowed(url: str, institution: Institution) -> bool:
+    source_host = _normalized_host(urlparse(url).netloc)
+    allowed_hosts = [_normalized_host(institution.homepage)]
+    allowed_hosts.extend(_normalized_host(domain) for domain in institution.allowed_domains)
+    return any(source_host == host or source_host.endswith(f".{host}") for host in allowed_hosts)
+
+
 def source_url_allowed(url: str, institution: Institution) -> bool:
     parsed_source = urlparse(url)
     if re.search(r"\.(?:pdf|png|jpe?g|gif|webp|svg|ico)$", parsed_source.path.lower()):
         return False
     if any(key.lower() in {"ecipemediapost", "q", "search", "page"} for key, _ in parse_qsl(parsed_source.query, keep_blank_values=True)):
         return False
-    source_host = _normalized_host(parsed_source.netloc)
-    allowed_hosts = [_normalized_host(institution.homepage)]
-    allowed_hosts.extend(_normalized_host(domain) for domain in institution.allowed_domains)
-    if not any(source_host == host or source_host.endswith(f".{host}") for host in allowed_hosts):
+    if not host_allowed(url, institution):
         return False
     source_canonical = canonical_url(url)
     direct_canonicals = {canonical_url(item) for item in institution.direct_urls}
@@ -316,7 +323,8 @@ def source_url_allowed(url: str, institution: Institution) -> bool:
     if len(last_stem) == 4 and last_stem.isdigit():
         return False
     if len(ordered_path_segments) == 2:
-        if ordered_path_segments[0] == "publications" and institution.slug != "ecipe":
+        if (ordered_path_segments[0] == "publications" and institution.slug != "ecipe"
+                and "publications" not in {seg.lower() for seg in institution.article_path_segments}):
             return False
     if institution.slug == "csis" and len(ordered_path_segments) == 1:
         return False
@@ -518,6 +526,14 @@ def _blocked(html: str) -> bool:
     soup = BeautifulSoup(html, "html.parser")
     title = soup.title.get_text(" ", strip=True) if soup.title else ""
     return _is_antibot(title, (soup.body or soup).get_text(" ", strip=True))
+
+
+def _list_links(html: str, page: str, limit: int, institution: Institution) -> list[str]:
+    return extract_list_links(
+        html, page, max(limit * 8, LIST_LINK_EXTRACTION_CAP),
+        allow_path_segments=institution.allow_path_segments,
+        article_path_segments=institution.article_path_segments,
+    )
 
 
 def _render(url: str) -> _Rendered | None:
@@ -761,10 +777,13 @@ def fetch_list_candidates(
                 break
             continue
         if response is not None:
-            links = extract_list_links(
-                response.text, page, max(limit * 8, LIST_LINK_EXTRACTION_CAP),
-                allow_path_segments=institution.allow_path_segments,
-            )
+            links = _list_links(response.text, page, limit, institution)
+            if not links and list_status == "list_ok":
+                # 页面能打开但没有文章链接，多为脚本加载的列表，改用浏览器渲染后再提取。
+                rendered = _render(page)
+                if rendered is not None:
+                    links = _list_links(rendered.text, page, limit, institution)
+                    list_status = "browser_list_ok"
             for link in links:
                 if not source_url_allowed(link, institution):
                     continue
@@ -822,7 +841,8 @@ def fetch_sitemap_candidates(
                 if institution.sitemap_include_keywords:
                     if not any(sitemap_include_keyword_matches(loc, keyword) for keyword in institution.sitemap_include_keywords):
                         continue
-                elif not looks_like_detail_url(loc, allow_path_segments=institution.allow_path_segments):
+                elif not looks_like_detail_url(loc, allow_path_segments=institution.allow_path_segments,
+                                               article_path_segments=institution.article_path_segments):
                     continue
                 lastmod = canonical_date(node.lastmod.get_text()) if node.lastmod else ""
                 if current is not None:
@@ -913,7 +933,8 @@ def fetch_detail(client: httpx.Client, institution: Institution, candidate: Arti
             candidate.fetch_status = "detail_error:antibot"
             candidate.copyright_boundary = institution.copyright_boundary
             return candidate
-    if not source_url_allowed(str(response.url), institution):
+    # 原文地址在跳转前已按路径规则核对；跳转后只确认仍在本机构域名内（如出版物跳到对应的数据页）。
+    if not host_allowed(str(response.url), institution):
         raise ExternalSourceError(f"detail redirected outside allowed domains: {response.url}")
     if institution.parser == "rand":
         detail = parse_rand_detail(response.text, str(response.url))

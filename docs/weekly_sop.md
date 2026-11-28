@@ -40,7 +40,7 @@
 
 | 步骤 | 执行 | 产出（reports/weekly_runs/D/） |
 |---|---|---|
-| 1 抓取 | 本地程序（静态请求被网站拒绝时自动改用无界面浏览器读取列表页和原文页）：`uv run python -m thinktank_watch.cli audit --batch 1 --limit 30 --lookback-days 14 --date D --output .../audit.csv` | audit.csv、audit.log |
+| 1 抓取 | 本地程序（静态请求被网站拒绝时自动改用无界面浏览器读取列表页和原文页）：`uv run python -m thinktank_watch.cli audit --batch 1 --limit 30 --lookback-days 14 --date D --output .../audit.csv`；零候选的来源用 `--institution <slug>` 单独重跑一次，排除中途断网 | audit.csv、audit.log、rerun_*.csv |
 | 2 机构补查 | GPT：`codex-research -f codex_sweep.md`，逐家检查重点机构与七地区官方科研机构 | codex_sweep.out |
 | 3 议题雷达 | Gemini：`agy-ask <工作树> -f gemini_radar.md`，按议题全网检索 | gemini_radar.out |
 | 4 合并选题 | Claude：合并三路候选、去重、核对日期，按选材规则定重点与简讯 | candidates.md、selection.md |
@@ -55,4 +55,4 @@ GPT 和 Gemini 的检索结果只作线索，每条入选材料都由 Claude 打
 
 ## 来源维护
 
-每期在 receipt.json 记录零候选与受阻来源。同一来源连续两期零候选或受阻，记入 docs/source_issues.md 并逐个排查入口：能修的改订阅源、站点地图或列表页地址；网站已失效、浏览器也无法通过验证或内容与研究关注无关的，把配置的 batch 改为 3 移出每周抓取，并在 notes 写明原因和日期；同时补充同类议题的权威来源。
+每期在 receipt.json 记录零候选与受阻来源。同一来源连续两期零候选或受阻，记入 docs/source_issues.md 并逐个排查入口：能修的改订阅源、站点地图或列表页地址；网站已失效、浏览器也无法通过验证或内容与研究关注无关的，把配置的 batch 改为 3 移出每周抓取，并在 notes 写明原因和日期；同时补充同类议题的权威来源。不经代理或其他方式绕过网站对本机的封锁，受阻内容由 GPT、Gemini 检索补查。

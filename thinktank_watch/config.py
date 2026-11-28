@@ -33,6 +33,7 @@ def load_institutions(config_dir: str | Path) -> list[Institution]:
                 source_group=data.get("source_group", "strategic_context"),
                 allowed_domains=list(data.get("allowed_domains") or []),
                 allow_path_segments=list(data.get("allow_path_segments") or []),
+                article_path_segments=list(data.get("article_path_segments") or []),
                 direct_urls=list(data.get("direct_urls") or []),
                 feeds=list(data.get("feeds") or []),
                 list_pages=list(data.get("list_pages") or []),

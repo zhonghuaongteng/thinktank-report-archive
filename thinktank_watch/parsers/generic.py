@@ -556,7 +556,10 @@ def extract_spaced_chinese_translation_title(text: str) -> str:
     return ""
 
 
-def looks_like_detail_url(url: str, text: str = "", allow_path_segments: list[str] | None = None) -> bool:
+def looks_like_detail_url(
+    url: str, text: str = "", allow_path_segments: list[str] | None = None,
+    article_path_segments: list[str] | None = None,
+) -> bool:
     parsed = urlparse(url)
     if parsed.path.lower().endswith(".pdf"):
         return False
@@ -567,6 +570,8 @@ def looks_like_detail_url(url: str, text: str = "", allow_path_segments: list[st
     if host in {"cepr.org", "www.cepr.org"} and re.fullmatch(r"/publications/dp\d+(?:-.+)?/?", parsed.path):
         return True
     if host in {"www.zew.de", "zew.de"} and re.fullmatch(r"/publikationen/[^/]+/?", parsed.path):
+        return True
+    if host in {"www.kistep.re.kr", "kistep.re.kr"} and parsed.path == "/board.es" and "list_no=" in parsed.query:
         return True
     path_segments = [segment for segment in parsed.path.split("/") if segment]
     query = dict(parse_qsl(parsed.query, keep_blank_values=True))
@@ -593,6 +598,12 @@ def looks_like_detail_url(url: str, text: str = "", allow_path_segments: list[st
         for segment in path_segments
     ):
         return False
+    article_segments = {segment.lower() for segment in article_path_segments or []}
+    # 文章名是含连字符、下划线或编号的长名称；同一路径下的导航短链接（如 /publications/aer）不算。
+    last = path_segments[-1]
+    if (article_segments and any(segment.lower() in article_segments for segment in path_segments[:-1])
+            and len(last) >= 12 and re.search(r"[-_0-9]", last)):
+        return True
     if len(path_segments) == 2 and path_segments[0].lower() == "publications":
         return False
     haystack = f"{path_segments[-1]} {text}".lower()
@@ -681,6 +692,7 @@ def parse_generic_detail(html_text: str, url: str, institution: Institution) -> 
 
 def extract_list_links(
     html_text: str, base_url: str, limit: int, allow_path_segments: list[str] | None = None,
+    article_path_segments: list[str] | None = None,
 ) -> list[str]:
     soup = BeautifulSoup(html_text, "lxml")
     for node in soup.select("nav, header, footer, [role='navigation']"):
@@ -692,7 +704,8 @@ def extract_list_links(
         text = norm(node.get_text(" "))
         if href in seen or not href.startswith("http"):
             continue
-        if looks_like_detail_url(href, text, allow_path_segments=allow_path_segments):
+        if looks_like_detail_url(href, text, allow_path_segments=allow_path_segments,
+                                 article_path_segments=article_path_segments):
             seen.add(href)
             links.append(href)
         if len(links) >= limit:

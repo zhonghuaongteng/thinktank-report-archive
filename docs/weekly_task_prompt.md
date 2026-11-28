@@ -3,7 +3,7 @@
 工作目录：C:/Users/WINDOWS/.claude/worktrees/thinktank-weekly（分支 claude/thinktank-weekly）。先 `git pull --ff-only`（失败则在当前提交上继续，并在汇报中注明）。
 
 1. 读取 docs/weekly_sop.md，严格按其中的选材、成品结构、写法和九步流程执行。业务日期 D 为今天（北京时间，YYYY-MM-DD）。运行目录 reports/weekly_runs/D/，成品目录 briefs/weekly/<年>/D/。
-2. 抓取：`uv run python -m thinktank_watch.cli audit --batch 1 --limit 30 --lookback-days 14 --date D --output reports/weekly_runs/D/audit.csv`，放后台运行。
+2. 抓取：`uv run python -m thinktank_watch.cli audit --batch 1 --limit 30 --lookback-days 14 --date D --output reports/weekly_runs/D/audit.csv`，放后台运行。跑完后对零候选的来源逐个用 `--institution <slug>` 重跑一次（输出到 reports/weekly_runs/D/rerun_<slug>.csv），排除运行中途断网造成的误判，再把仍为零的记入 receipt.json。
 3. 同时放后台运行两路检索（任务文字写进文件，用 -f 传）：
    - GPT 机构普查：`codex-research -f reports/weekly_runs/D/codex_sweep.md`。任务写明窗口（D-6 至 D）、要逐家检查的机构（docs/weekly_sop.md 的选材范围，以及 docs/source_issues.md 中抓取受阻的来源），要求每条给出机构、原题、日期、具体网址、类型、两三句主要发现，并列出“检查过但无新发布”的机构。
    - Gemini 议题雷达：`agy-ask <工作目录> -f reports/weekly_runs/D/gemini_radar.md`。按 SOP 的重点议题联网检索窗口内新发布，不按机构清单。

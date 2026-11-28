@@ -27,11 +27,18 @@ def _page():
     return _state["page"]
 
 
-def browser_html(url: str, wait_ms: int = 2500) -> tuple[str, str] | None:
-    """返回 (渲染后的 HTML, 最终网址)；打不开时返回 None。"""
+def browser_html(url: str, wait_ms: int = 1500, idle_ms: int = 8000) -> tuple[str, str] | None:
+    """返回 (渲染后的 HTML, 最终网址)；打不开时返回 None。
+
+    列表常由脚本延迟加载：先等网络请求停下（最多 idle_ms），再留 wait_ms 给页面渲染。
+    """
     try:
         page = _page()
         page.goto(url, wait_until="domcontentloaded", timeout=45000)
+        try:
+            page.wait_for_load_state("networkidle", timeout=idle_ms)
+        except Exception:  # 有持续轮询的网站等不到空闲，按已加载内容继续
+            pass
         page.wait_for_timeout(wait_ms)
         return page.content(), page.url
     except Exception as exc:  # 浏览器任何失败都退回原路径，不中断整次抓取

@@ -81,7 +81,7 @@ ANTIBOT_CASES = [
     "please wait while your request is being verified", "one moment, please",
     "attention required! | cloudflare",
 ]
-TITLE_ONLY_CASES = ["just a moment", "access denied"]
+TITLE_ONLY_CASES = ["just a moment", "access denied", "access blocked"]
 
 
 @pytest.mark.parametrize(("marker", "location"), [
@@ -279,3 +279,62 @@ def test_browser_antibot_page_still_marked(institution, monkeypatch):
     with httpx.Client(transport=httpx.MockTransport(lambda request: httpx.Response(200, text="<title>Just a moment...</title>"))) as client:
         result = fetch_detail(client, institution, item)
     assert result.fetch_status == "detail_error:antibot"
+
+
+def test_article_path_segments_accept_slugs_but_not_nav_links():
+    from thinktank_watch.parsers.generic import looks_like_detail_url
+    seg = ["publications"]
+    assert looks_like_detail_url("https://www.ukri.org/publications/assessing-economic-impacts-of-research/", article_path_segments=seg)
+    assert looks_like_detail_url("https://www.europarl.europa.eu/stoa/en/document/EPRS_STU(2026)788151", article_path_segments=["document"])
+    assert not looks_like_detail_url("https://www.bis.org/publications/aer", article_path_segments=seg)
+    assert not looks_like_detail_url("https://www.ukri.org/publications/assessing-economic-impacts-of-research/")
+
+
+def test_kistep_board_view_links_are_articles():
+    from thinktank_watch.parsers.generic import looks_like_detail_url
+    assert looks_like_detail_url("https://www.kistep.re.kr/board.es?mid=a10305080000&bid=0002&act=view&list_no=94794")
+    assert not looks_like_detail_url("https://www.kistep.re.kr/board.es?mid=a10305080000&bid=0002")
+
+
+def test_two_level_publications_allowed_only_with_article_segment(institution):
+    url = "https://example.org/publications/technology-report-one"
+    assert not source_url_allowed(url, institution)
+    assert source_url_allowed(url, replace(institution, article_path_segments=["publications"]))
+
+
+def test_special_initiative_pages_are_not_articles(institution):
+    assert not source_url_allowed("https://example.org/special-initiatives/on-china", institution)
+
+
+def test_detail_redirect_within_same_host_is_kept(institution):
+    item = candidate(institution, "publication/technology-report")
+    html = "<html><head><title>Technology report</title></head><body><h1>Technology report</h1><p>" + "Body. " * 60 + "</p></body></html>"
+
+    def handler(request):
+        if request.url.path.endswith("technology-report"):
+            return httpx.Response(301, headers={"Location": "https://example.org/surveys/technology/2024"})
+        return httpx.Response(200, text=html)
+
+    with httpx.Client(transport=httpx.MockTransport(handler), follow_redirects=True) as client:
+        result = fetch_detail(client, institution, item)
+    assert result.title == "Technology report"
+
+
+def test_zero_link_static_page_retries_with_browser(institution, monkeypatch):
+    import thinktank_watch.fetch as fetch_module
+    from thinktank_watch.fetch import fetch_list_candidates
+    page = replace(institution, list_pages=["https://example.org/reports"], topic_pages=[])
+    rendered = '<html><body><a href="https://example.org/publication/technology-report-two">Technology report two</a></body></html>'
+    monkeypatch.setattr(fetch_module, "browser_html", lambda url: (rendered, url))
+    with httpx.Client(transport=httpx.MockTransport(lambda r: httpx.Response(200, text="<html><body>Loading…</body></html>"))) as client:
+        result = fetch_list_candidates(client, page, limit=5)
+    assert [c.url for c in result] == ["https://example.org/publication/technology-report-two"]
+    assert result[0].fetch_status == "browser_list_ok"
+
+
+def test_encoded_index_php_segment_dedupes_with_plain_url():
+    import thinktank_watch.fetch as fetch_module
+
+    plain = "https://www.csis.org/analysis/data-vulnerabilities-us-china-competition"
+    encoded = "https://www.csis.org/index%2ephp/analysis/data-vulnerabilities-us-china-competition"
+    assert fetch_module.dedupe_key(encoded) == fetch_module.dedupe_key(plain)
